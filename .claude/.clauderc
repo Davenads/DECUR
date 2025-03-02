@@ -1,0 +1,89 @@
+{
+  "project": {
+    "name": "DECUR",
+    "description": "Data Exceeding Current Understanding of Reality - Next.js application for exploring UAP/NHI phenomena data"
+  },
+  "context": {
+    "include": [
+      "/components/**/*.tsx",
+      "/pages/**/*.tsx",
+      "/styles/**/*.css",
+      "/public/assets/**/*",
+      "/*.json",
+      "/*.ts",
+      "/*.tsx",
+      "/*.js",
+      "/*.md",
+      "/types/**/*.ts",
+      "/types/**/*.d.ts"
+    ],
+    "exclude": [
+      "/node_modules/**/*",
+      "/.next/**/*",
+      "/coverage/**/*",
+      "/public/assets/images/**/*"
+    ]
+  },
+  "analysis": {
+    "defaultDetailLevel": "medium",
+    "maxFilesToAnalyze": 20,
+    "architecturalFiles": [
+      "/code-structure.json",
+      "/architecture-overview.md",
+      "/component-registry.json",
+      "/api-endpoints.json",
+      "/context-query-examples.md"
+    ]
+  },
+  "codeStyle": {
+    "indentation": "2 spaces",
+    "quotes": "single",
+    "semicolons": true,
+    "componentNaming": {
+      "pattern": "PascalCase",
+      "examples": ["Header", "EntityProfiles", "TimelineConcepts"]
+    },
+    "fileNaming": {
+      "pattern": "PascalCase for components, camelCase for utilities",
+      "examples": ["Header.tsx", "EntityProfiles.tsx", "utils.ts"]
+    },
+    "imports": {
+      "ordering": [
+        "React/Next.js imports",
+        "Type imports",
+        "Third-party libraries",
+        "Local components",
+        "Utilities",
+        "Styles"
+      ]
+    },
+    "typescript": {
+      "interfaces": {
+        "naming": "PascalCase, prefixed with I or not",
+        "examples": ["LayoutProps", "ComponentProps"]
+      },
+      "types": {
+        "naming": "PascalCase with Type suffix, or PascalCase for simplicity",
+        "examples": ["CategoryType", "EntityType"]
+      },
+      "strictNullChecks": true,
+      "noImplicitAny": true
+    }
+  },
+  "terminology": {
+    "entities": "Individuals or groups related to UAP/NHI phenomena",
+    "timeline": "Chronological listing of significant UAP/NHI events",
+    "lotus": "Refers to the Lotus Project findings related to UAP/NHI research",
+    "DECUR": "Data Exceeding Current Understanding of Reality",
+    "UAP": "Unidentified Aerial Phenomena",
+    "NHI": "Non-Human Intelligence"
+  },
+  "commands": {
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "lint": "npm run lint",
+    "test": "npm run test",
+    "typecheck": "npm run typecheck",
+    "check": "npm run check"
+  }
+}
