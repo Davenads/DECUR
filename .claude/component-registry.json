@@ -1,0 +1,114 @@
+{
+  "components": [
+    {
+      "name": "Layout",
+      "filePath": "/components/Layout.tsx",
+      "description": "Main layout wrapper component that provides consistent structure across all pages",
+      "props": {
+        "children": "ReactNode - Content to be rendered within the layout",
+        "title": "string (optional) - Custom page title"
+      },
+      "typeInterface": "interface LayoutProps { children: ReactNode; title?: string; }",
+      "dependencies": ["Header", "Footer"],
+      "usageExample": "// In _app.tsx\nimport Layout from '../components/Layout';\nimport type { AppProps } from 'next/app';\n\nfunction MyApp({ Component, pageProps }: AppProps) {\n  return (\n    <Layout>\n      <Component {...pageProps} />\n    </Layout>\n  );\n}",
+      "performanceConsiderations": "Renders on every page load, should be optimized for performance"
+    },
+    {
+      "name": "Header",
+      "filePath": "/components/Header.tsx",
+      "description": "Navigation header component providing site-wide navigation",
+      "props": {},
+      "typeInterface": "interface NavItem { title: string; path: string; } interface NavSection { title: string; path: string; items: NavItem[]; } interface NavItems { [key: string]: NavSection; } interface DropdownRefs { [key: string]: HTMLDivElement | null; }",
+      "dependencies": ["SearchBar"],
+      "usageExample": "import Header from '../components/Header';\n\nconst Layout: FC<LayoutProps> = ({ children }) => {\n  return (\n    <div>\n      <Header />\n      <main>{children}</main>\n    </div>\n  );\n}",
+      "performanceConsiderations": "Contains navigation state, optimize state updates"
+    },
+    {
+      "name": "Footer",
+      "filePath": "/components/Footer.tsx",
+      "description": "Footer component with site information and links",
+      "props": {},
+      "typeInterface": "FC<{}>", 
+      "dependencies": [],
+      "usageExample": "import Footer from '../components/Footer';\n\nconst Layout: FC<LayoutProps> = ({ children }) => {\n  return (\n    <div>\n      <main>{children}</main>\n      <Footer />\n    </div>\n  );\n}",
+      "performanceConsiderations": ""
+    },
+    {
+      "name": "SearchBar",
+      "filePath": "/components/SearchBar.tsx",
+      "description": "Search input component for site-wide search functionality",
+      "props": {
+        "onSearch": "Function - Callback function when search is submitted"
+      },
+      "typeInterface": "FC<{}>",
+      "dependencies": [],
+      "usageExample": "import SearchBar from '../components/SearchBar';\n\nconst Header: FC = () => {\n  const handleSearch = (query: string) => {\n    // Handle search\n  };\n  \n  return (\n    <header>\n      <SearchBar />\n    </header>\n  );\n}",
+      "performanceConsiderations": "Consider debouncing search input for performance"
+    },
+    {
+      "name": "DataNavigation",
+      "filePath": "/components/data/DataNavigation.tsx",
+      "description": "Navigation component for data categories within the Data page",
+      "props": {
+        "activeCategory": "CategoryType - Currently active data category",
+        "setActiveCategory": "Function - Callback when category is changed"
+      },
+      "typeInterface": "interface DataNavigationProps { activeCategory: CategoryType; setActiveCategory: (category: CategoryType) => void; } type CategoryType = 'entities' | 'timelines' | 'lotus' | 'whistleblowers';",
+      "dependencies": [],
+      "usageExample": "import DataNavigation from '../components/data/DataNavigation';\n\nconst DataPage: NextPage = () => {\n  const [activeCategory, setActiveCategory] = useState<CategoryType>('entities');\n  \n  return (\n    <div>\n      <DataNavigation \n        activeCategory={activeCategory}\n        setActiveCategory={(category) => setActiveCategory(category)}\n      />\n    </div>\n  );\n}",
+      "performanceConsiderations": ""
+    },
+    {
+      "name": "EntityProfiles",
+      "filePath": "/components/data/EntityProfiles.tsx",
+      "description": "Component displaying profiles of entities related to the DECUR project",
+      "props": {},
+      "typeInterface": "interface EntityData { name: string; description: string; characteristics: string[]; society: string; notes: string; } interface EntitiesData { [key: string]: EntityData; } type EntityType = 'p45' | 'p52' | 'orions';",
+      "dependencies": [],
+      "usageExample": "import EntityProfiles from '../components/data/EntityProfiles';\n\nconst DataPage: NextPage = () => {\n  return (\n    <div>\n      {activeCategory === 'entities' && <EntityProfiles />}\n    </div>\n  );\n}",
+      "performanceConsiderations": "Contains potentially large data sets, consider pagination or virtualization"
+    },
+    {
+      "name": "TimelineConcepts",
+      "filePath": "/components/data/TimelineConcepts.tsx",
+      "description": "Component displaying timeline of concepts and events",
+      "props": {},
+      "typeInterface": "FC",
+      "dependencies": [],
+      "usageExample": "import TimelineConcepts from '../components/data/TimelineConcepts';\n\nconst DataPage: NextPage = () => {\n  return (\n    <div>\n      {activeCategory === 'timelines' && <TimelineConcepts />}\n    </div>\n  );\n}",
+      "performanceConsiderations": "Timeline rendering may be performance-intensive, consider lazy loading"
+    },
+    {
+      "name": "LotusFindings",
+      "filePath": "/components/data/LotusFindings.tsx",
+      "description": "Component displaying Lotus project findings and data",
+      "props": {},
+      "typeInterface": "FC, type TabType = 'overview' | 'ganesh' | 'shiva' | 'cellular'",
+      "dependencies": [],
+      "usageExample": "import LotusFindings from '../components/data/LotusFindings';\n\nconst DataPage: NextPage = () => {\n  return (\n    <div>\n      {activeCategory === 'lotus' && <LotusFindings />}\n    </div>\n  );\n}",
+      "performanceConsiderations": "May contain complex visualizations, optimize rendering"
+    },
+    {
+      "name": "ResourceList",
+      "filePath": "/components/resources/ResourceList.tsx",
+      "description": "Component displaying list of resources and reference materials",
+      "props": {
+        "category": "String literal - Either 'materials' or 'transcripts'"
+      },
+      "typeInterface": "interface ResourceListProps { category: 'materials' | 'transcripts'; } interface Material { id: number; title: string; type: string; author: string; year: string; description: string; url: string; } interface Transcript { id: number; title: string; interviewer?: string; date: string; description: string; url: string; }",
+      "dependencies": [],
+      "usageExample": "import ResourceList from '../components/resources/ResourceList';\n\nconst ResourcesPage: NextPage = () => {\n  return (\n    <div>\n      {activeTab === 'materials' && <ResourceList category=\"materials\" />}\n    </div>\n  );\n}",
+      "performanceConsiderations": "For large resource lists, consider pagination"
+    },
+    {
+      "name": "Glossary",
+      "filePath": "/components/resources/Glossary.tsx",
+      "description": "Component displaying glossary of terms and definitions",
+      "props": {},
+      "typeInterface": "interface GlossaryTerm { term: string; definition: string; } interface GroupedTerms { [key: string]: GlossaryTerm[]; }",
+      "dependencies": [],
+      "usageExample": "import Glossary from '../components/resources/Glossary';\n\nconst ResourcesPage: NextPage = () => {\n  return (\n    <div>\n      {activeTab === 'glossary' && <Glossary />}\n    </div>\n  );\n}",
+      "performanceConsiderations": "Consider alphabetical indexing for large glossaries"
+    }
+  ]
+}

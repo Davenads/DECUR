@@ -1,0 +1,70 @@
+{
+  "project": {
+    "name": "DECUR",
+    "description": "Data Exceeding Current Understanding of Reality - Next.js application for exploring UAP/NHI phenomena data"
+  },
+  "context": {
+    "include": [
+      "/components/**/*.js",
+      "/pages/**/*.js",
+      "/styles/**/*.css",
+      "/public/assets/**/*",
+      "/*.json",
+      "/*.js",
+      "/*.md",
+      "/.claude/**/*"
+    ],
+    "exclude": [
+      "/node_modules/**/*",
+      "/.next/**/*",
+      "/coverage/**/*",
+      "/public/assets/images/**/*"
+    ]
+  },
+  "analysis": {
+    "defaultDetailLevel": "medium",
+    "maxFilesToAnalyze": 20,
+    "architecturalFiles": [
+      "/.claude/code-structure.json",
+      "/.claude/architecture-overview.md",
+      "/.claude/component-registry.json",
+      "/.claude/context-query-examples.md"
+    ]
+  },
+  "codeStyle": {
+    "indentation": "2 spaces",
+    "quotes": "single",
+    "semicolons": true,
+    "componentNaming": {
+      "pattern": "PascalCase",
+      "examples": ["Header", "EntityProfiles", "TimelineConcepts"]
+    },
+    "fileNaming": {
+      "pattern": "PascalCase for components, camelCase for utilities",
+      "examples": ["Header.js", "EntityProfiles.js", "utils.js"]
+    },
+    "imports": {
+      "ordering": [
+        "React/Next.js imports",
+        "Third-party libraries",
+        "Local components",
+        "Utilities",
+        "Styles"
+      ]
+    }
+  },
+  "terminology": {
+    "entities": "Individuals or groups related to UAP/NHI phenomena",
+    "timeline": "Chronological listing of significant UAP/NHI events",
+    "lotus": "Refers to the Lotus Project findings related to UAP/NHI research",
+    "DECUR": "Data Exceeding Current Understanding of Reality",
+    "UAP": "Unidentified Aerial Phenomena",
+    "NHI": "Non-Human Intelligence"
+  },
+  "commands": {
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "lint": "npm run lint",
+    "test": "npm run test"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "projectName": "DECUR",
+  "components": {
+    "layout": {
+      "name": "Layout",
+      "path": "/components/Layout.tsx",
+      "children": ["Header", "Footer"],
+      "consumedBy": ["_app.tsx"]
+    },
+    "header": {
+      "name": "Header",
+      "path": "/components/Header.tsx",
+      "parent": "Layout",
+      "dependencies": []
+    },
+    "footer": {
+      "name": "Footer",
+      "path": "/components/Footer.tsx",
+      "parent": "Layout",
+      "dependencies": []
+    },
+    "searchBar": {
+      "name": "SearchBar",
+      "path": "/components/SearchBar.tsx",
+      "consumedBy": ["Header"]
+    },
+    "data": {
+      "name": "DataNavigation",
+      "path": "/components/data/DataNavigation.tsx",
+      "consumedBy": ["data.tsx"],
+      "dependencies": []
+    },
+    "entityProfiles": {
+      "name": "EntityProfiles",
+      "path": "/components/data/EntityProfiles.tsx",
+      "consumedBy": ["data.tsx"],
+      "dependencies": []
+    },
+    "timelineConcepts": {
+      "name": "TimelineConcepts",
+      "path": "/components/data/TimelineConcepts.tsx",
+      "consumedBy": ["data.tsx"],
+      "dependencies": []
+    },
+    "lotusFindings": {
+      "name": "LotusFindings",
+      "path": "/components/data/LotusFindings.tsx",
+      "consumedBy": ["data.tsx"],
+      "dependencies": []
+    },
+    "resources": {
+      "name": "ResourceList",
+      "path": "/components/resources/ResourceList.tsx",
+      "consumedBy": ["resources.tsx"],
+      "dependencies": []
+    },
+    "glossary": {
+      "name": "Glossary",
+      "path": "/components/resources/Glossary.tsx",
+      "consumedBy": ["resources.tsx"],
+      "dependencies": []
+    }
+  },
+  "pages": {
+    "index": {
+      "path": "/pages/index.tsx",
+      "components": [],
+      "dataFlow": "static"
+    },
+    "data": {
+      "path": "/pages/data.tsx",
+      "components": ["DataNavigation", "EntityProfiles", "TimelineConcepts", "LotusFindings"],
+      "dataFlow": "client-state"
+    },
+    "resources": {
+      "path": "/pages/resources.tsx",
+      "components": ["ResourceList", "Glossary"],
+      "dataFlow": "client-state"
+    },
+    "about": {
+      "path": "/pages/about.tsx",
+      "components": [],
+      "dataFlow": "static"
+    }
+  },
+  "specialPages": {
+    "app": {
+      "path": "/pages/_app.tsx",
+      "components": ["Layout"],
+      "purpose": "Application wrapper"
+    },
+    "document": {
+      "path": "/pages/_document.tsx",
+      "purpose": "Custom document"
+    }
+  },
+  "typeDefinitions": {
+    "types": {
+      "path": "/types/index.d.ts",
+      "purpose": "Global type definitions"
+    },
+    "next-env": {
+      "path": "/next-env.d.ts",
+      "purpose": "Next.js TypeScript declarations"
+    },
+    "tsconfig": {
+      "path": "/tsconfig.json",
+      "purpose": "TypeScript configuration"
+    }
+  },
+  "apis": {},
+  "dataFlows": [
+    {
+      "name": "categorySelection",
+      "source": "data.tsx",
+      "target": ["EntityProfiles", "TimelineConcepts", "LotusFindings"],
+      "description": "User selects data category triggering component rendering"
+    },
+    {
+      "name": "resourceTabSelection",
+      "source": "resources.tsx",
+      "target": ["ResourceList", "Glossary"],
+      "description": "User selects resource tab triggering component rendering"
+    }
+  ],
+  "utilities": {},
+  "styleSystem": {
+    "type": "Tailwind CSS",
+    "configPath": "/tailwind.config.js",
+    "globalStyles": "/styles/global.css"
+  }
+}

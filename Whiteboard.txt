@@ -1,0 +1,156 @@
+﻿DECUR: Baseline Build Priorities
+1. HOME (Simplified)
+* Clean landing page with DECUR logo and mission statement
+* Brief introduction to Dan Burisch's work
+* Basic navigation to other sections
+2. DATA (Core Focus)
+Streamlined Structure:
+* Focus on organizing the most well-documented aspects of Burisch's research
+* Initial categories:
+   1. Extraterrestrial Entities - Basic profiles of P-45s, P-52s, and Orions
+   2. Timeline Mechanics - Fundamental concepts of Timeline 1 vs Timeline 2
+   3. Project Lotus - Core findings and basic explanations
+Visualization:
+* Start with static diagrams rather than interactive tools
+* Simple timeline graphics
+* Basic relationship charts
+3. RESOURCES
+* Curated list of primary Dan Burisch materials
+* Organized transcript repository
+* Basic glossary of terms
+4. ABOUT/CONTACT
+* Simple contact form
+* Platform purpose statement
+* Basic information about the project
+Technical Foundation:
+* Mobile-responsive design
+* Basic user authentication
+* Simple search functionality
+* Content management system for easy updates
+Elements to Defer:
+* Community features (forums, collaboration tools)
+* Advanced visualization tools
+* Methodologies section (can be added as the platform matures)
+* Donation infrastructure (add once user base is established)
+This baseline approach focuses on properly organizing and presenting the core Burisch material first, creating a solid foundation that can be expanded incrementally. The primary goal should be to make the information accessible and well-structured before adding interactive or community features.
+—-- More Detailed Expansive whiteboard - see below
+
+
+DECUR: Data Exceeding Current Understanding of Reality
+Platform Whiteboard & Structure
+1. HOME
+* Modern, clean landing page featuring the DECUR logo
+* Brief introduction to the platform's purpose: Cataloging and analyzing data that challenges conventional scientific understanding
+* Featured content carousel highlighting key Dan Burisch discoveries/concepts
+* User testimonials and recent updates section
+* News feed for latest additions to the database
+2. VISION
+* Mission statement: "To categorize, analyze, and make accessible data that extends beyond current scientific paradigms"
+* Explanation of platform neutrality (presenting data without bias)
+* Commitment to scientific rigor and methodology despite unconventional subject matter
+* Goals: creating a comprehensive knowledge base, fostering research community, promoting transparency
+* Historical context of Dan Burisch's work and its significance
+* Future expansion plans beyond the initial Burisch dataset
+3. DATA (Primary Content Hub)
+Left Side: Hierarchical Data Navigation
+* Expandable/collapsible nested structure with checkboxes for selection
+* Main Categories from Burisch Research:
+   1. Extraterrestrial Biological Entities
+      * P-45 J-Rods (characteristics, biology, society)
+      * P-52 J-Rods (characteristics, biological issues, society)
+      * P-52 Orions/Nordics (characteristics, philosophy, society)
+      * Timeline relationships between groups
+      * Documented interactions with humans
+   2. Timeline Mechanics
+      * Timeline 1 vs Timeline 2 split-point theory
+      * Looking Glass technology database
+      * Stargate technology information
+      * Timeline probability calculations
+      * Catastrophic events (2012-2017 window)
+      * Treaty systems information (T-9 treaties, etc.)
+   3. Project Lotus Findings
+      * Ganesh particles documentation
+      * Shiva portals research
+      * Selkie particles data
+      * Silicon oxide experiments
+      * Cellular transformation documentation
+      * Micro-wormhole theory
+      * Anomalous cell growth incidents
+   4. Medical Research
+      * J-Rod neuropathology documentation
+      * Genetic modifications observed
+      * Immunological studies (IGA monoclonal gammopathy)
+      * Chromosome arrangement analysis
+      * Cockayne syndrome parallels
+      * Treatment methodologies attempted
+      * Xenograft experiments
+   5. Historical Incidents
+      * Majestic-12 involvement
+      * Frenchman Mountain experiments
+      * Mae Boyar Park (1973) incident
+      * Egypt stargate incident
+      * Roswell connection (P-24s)
+Right Side: Visualization Area
+* Interactive diagrams showing relationships between data points
+* Timeline visualization tools
+* 3D models of biological entities
+* Microscopic imagery from Project Lotus
+* Video testimonies (where available)
+* Interactive maps of key locations
+4. METHODOLOGIES
+* Detailed explanation of research protocols used by Burisch
+* Replication guidelines for Project Lotus experiments
+* Data collection standards and verification processes
+* Analysis frameworks for evaluating unconventional evidence
+* Cross-referencing system with mainstream scientific literature
+* Peer review process for submitted correlative research
+* Equipment specifications and setup instructions
+5. COMMUNITY
+* Discussion forums organized by research category
+* User profiles with expertise indicators
+* Collaborative research project management tools
+* Video conference capabilities for research teams
+* Contribution submission system with review process
+* Verification tiers for community members
+* Private messaging system
+6. RESOURCES
+* Bibliography of all Dan Burisch materials
+* Related research papers and publications
+* Video archive of interviews and presentations
+* Document repository (PDFs, transcripts)
+* Glossary of specialized terminology
+* Timeline of Dan Burisch's career and discoveries
+* Links to affiliated researchers and organizations
+7. CONTACT/ABOUT
+* Platform creator information
+* Research team profiles
+* Suggestion submission form
+* Bug reporting system
+* Media inquiry contacts
+* Collaboration proposals
+* Privacy policy and terms of use
+8. DONATE
+* PayPal integration
+* Cryptocurrency donation options
+* Transparency reporting on fund allocation
+* Supporter recognition system
+* Funding goals for platform expansion
+* Premium supporter features (early access, expanded storage)
+TECHNICAL REQUIREMENTS
+* Authentication: Google OAuth, standard email registration
+* User roles and permissions system
+* Advanced search functionality with filters
+* Data visualization tools
+* Mobile-responsive design
+* Content management system for administrators
+* API for data access by approved researchers
+* Regular backup systems
+FUTURE EXPANSION
+* Additional researchers beyond Dan Burisch
+* Integration with academic databases
+* Machine learning for pattern recognition in dispersed data
+* AR/VR visualization capabilities for complex concepts
+* Citizen science project integration
+* Expanded laboratory methodology sharing
+* Conference/event organization tools
+This whiteboard outlines a comprehensive platform that organizes Dan Burisch's extensive research into a structured, accessible format while maintaining scientific rigor and providing tools for community engagement and further research development.
