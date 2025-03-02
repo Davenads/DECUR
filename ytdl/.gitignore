@@ -1,0 +1,12 @@
+# Ignore cookies file (contains sensitive data)
+cookies.txt
+
+# Ignore downloaded subtitle files
+subtitle_dls/
+
+# Ignore yt-dlp executable 
+yt-dlp
+yt-dlp.exe
+
+# Ignore node modules
+node_modules/
