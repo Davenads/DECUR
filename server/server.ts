@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger);
 
 // API Routes
-app.use('/api', apiRoutes as any);
+app.use('/api', apiRoutes);
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {

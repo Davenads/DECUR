@@ -373,7 +373,10 @@ async function runWithVideoUrl(videoUrl: string): Promise<void> {
 // Export functions for use in other parts of the application
 export {
   downloadSubtitlesOnly,
-  runWithVideoUrl,
+  runWithVideoUrl
+};
+
+export type {
   TranscriptContent,
   TranscriptMetadata,
   TranscriptSegment

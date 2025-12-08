@@ -51,7 +51,8 @@ export interface TranscriptContent {
 /**
  * Extended transcript that can be used in the data model
  */
-export interface ExtendedTranscript extends DataItem, Transcript {
+export interface ExtendedTranscript extends Omit<DataItem, 'id' | 'date' | 'description'>, Omit<Transcript, 'id'> {
+  id: string | number;
   fullContent?: TranscriptContent;
   sourceUrl: string;
   extractionDate: string;
