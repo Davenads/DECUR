@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+/YTDL_Scripts/node_modules
 /.pnp
 .pnp.js
 
@@ -44,3 +45,14 @@ next-env.d.ts
 # temp files
 .tmp
 .cache
+
+#planning
+RESTRUCTURING-PLAN.md
+
+# YTDL Scripts
+/YTDL_Scripts/cookies.txt
+/YTDL_Scripts/yt-dlp.exe
+/YTDL_Scripts/Subtitles_Only/
+/YTDL_Scripts/output/
+/YTDL_Scripts/downloads/
+/YTDL_Scripts/*.log
