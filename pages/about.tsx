@@ -38,25 +38,24 @@ const About: NextPage = () => {
               <section>
                 <h2 className="text-xl font-bold mb-3">Platform Purpose</h2>
                 <p className="text-gray-700">
-                  DECUR serves as a comprehensive knowledge base beginning with Dr. Dan Burisch's research as our 
-                  foundation, while continuously expanding to include testimony from other credible whistleblowers. 
-                  We present this information with analytical rigor while maintaining neutrality, allowing researchers 
-                  to examine the data and draw their own conclusions about the nature of UAP/NHI phenomena.
+                  DECUR serves as a comprehensive knowledge base cataloging testimony from credible whistleblowers
+                  across military, intelligence, scientific, and government backgrounds. We present this information
+                  with analytical rigor while maintaining neutrality, allowing researchers to examine the data and
+                  draw their own conclusions about the nature of UAP/NHI phenomena.
                 </p>
               </section>
               
               <section>
-                <h2 className="text-xl font-bold mb-3">Featured Whistleblower: Dr. Dan Burisch</h2>
+                <h2 className="text-xl font-bold mb-3">What We Cover</h2>
                 <p className="text-gray-700">
-                  Our initial database focuses on Dr. Dan Burisch, a microbiologist whose controversial research has 
-                  challenged conventional understanding of extraterrestrial biological entities, timeline mechanics, 
-                  and cellular transformation. His accounts of Project Lotus, interactions with various non-human 
-                  entities, and testimony regarding classified programs form the foundation of our initial database.
+                  Our database spans testimony from whistleblowers including military personnel, intelligence officers,
+                  government contractors, and scientific researchers who have come forward with accounts of UAP
+                  encounters, recovered materials, non-human intelligence, and special access programs.
                 </p>
                 <p className="text-gray-700 mt-2">
-                  As DECUR expands, we will incorporate testimony from additional whistleblowers including military 
-                  personnel, intelligence officers, government contractors, and scientific researchers who have come 
-                  forward with accounts of UAP encounters, recovered materials, and special access programs.
+                  Topics include extraterrestrial biological entities, timeline mechanics, advanced propulsion and
+                  energy technologies, cellular and genetic research, and classified program activity. DECUR is
+                  continuously expanding as new testimony and corroborating evidence emerges.
                 </p>
               </section>
               
