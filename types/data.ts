@@ -5,7 +5,7 @@
 /**
  * Represents data category types
  */
-export type CategoryType = 'entities' | 'timelines' | 'lotus' | 'whistleblowers';
+export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news';
 
 /**
  * Expanded sections state for data navigation
