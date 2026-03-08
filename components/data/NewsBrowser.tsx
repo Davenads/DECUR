@@ -1,8 +1,9 @@
 import { useState, useMemo, FC, ChangeEvent } from 'react';
-import { useTimelineData, TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/useTimelineData';
 
-const NewsBrowser: FC = () => {
-  const entries = useTimelineData(['news']);
+interface Props { entries: TimelineEntry[]; }
+
+const NewsBrowser: FC<Props> = ({ entries }) => {
   const [search, setSearch] = useState('');
 
   const filtered = useMemo(() => {

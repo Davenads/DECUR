@@ -1,8 +1,9 @@
 import { useState, useMemo, FC, ChangeEvent } from 'react';
-import { useTimelineData, TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/useTimelineData';
 
-const QuotesBrowser: FC = () => {
-  const entries = useTimelineData(['quotes']);
+interface Props { entries: TimelineEntry[]; }
+
+const QuotesBrowser: FC<Props> = ({ entries }) => {
   const [search, setSearch] = useState('');
 
   const filtered = useMemo(() => {

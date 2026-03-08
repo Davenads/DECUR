@@ -1,4 +1,7 @@
-import { useMemo } from 'react';
+/**
+ * Server-side data utilities for ufotimeline data.
+ * Use these in getStaticProps only -- do NOT import in client components.
+ */
 import rawEntries from '../data/ufotimeline.json';
 
 export interface TimelineEntry {
@@ -7,19 +10,12 @@ export interface TimelineEntry {
   year: number;
   title: string;
   excerpt: string;
-  content?: string;
   categories: string[];
   source_url: string;
+  source?: string;
 }
 
 const entries = rawEntries as TimelineEntry[];
-
-export function useTimelineData(categories?: string[]): TimelineEntry[] {
-  return useMemo(() => {
-    if (!categories || categories.length === 0) return entries;
-    return entries.filter(e => e.categories.some(c => categories.includes(c)));
-  }, [categories]);
-}
 
 export function getAllEntries(): TimelineEntry[] {
   return entries;
@@ -27,4 +23,14 @@ export function getAllEntries(): TimelineEntry[] {
 
 export function getEntriesByCategory(categories: string[]): TimelineEntry[] {
   return entries.filter(e => e.categories.some(c => categories.includes(c)));
+}
+
+export function getCategoryCounts(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  entries.forEach(e => {
+    e.categories.forEach(c => {
+      counts[c] = (counts[c] || 0) + 1;
+    });
+  });
+  return counts;
 }

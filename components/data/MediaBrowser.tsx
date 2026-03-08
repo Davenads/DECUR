@@ -1,5 +1,5 @@
 import { useState, useMemo, FC, ChangeEvent } from 'react';
-import { useTimelineData, TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/useTimelineData';
 
 const TYPE_LABELS: Record<string, string> = {
   'documentaries': 'Documentary',
@@ -11,8 +11,9 @@ const TYPE_COLORS: Record<string, string> = {
   'books-documents': 'bg-teal-100 text-teal-800',
 };
 
-const MediaBrowser: FC = () => {
-  const entries = useTimelineData(['documentaries', 'books-documents']);
+interface Props { entries: TimelineEntry[]; }
+
+const MediaBrowser: FC<Props> = ({ entries }) => {
   const [search, setSearch] = useState('');
   const [selectedType, setSelectedType] = useState<string>('all');
 

@@ -1,8 +1,9 @@
 import { useState, useMemo, FC, ChangeEvent } from 'react';
-import { useTimelineData, TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/useTimelineData';
 
-const KeyFigures: FC = () => {
-  const entries = useTimelineData(['spotlight']);
+interface Props { entries: TimelineEntry[]; }
+
+const KeyFigures: FC<Props> = ({ entries }) => {
   const [search, setSearch] = useState('');
   const [expanded, setExpanded] = useState<number | null>(null);
 
