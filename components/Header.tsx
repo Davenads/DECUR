@@ -185,11 +185,22 @@ const Header: FC<HeaderProps> = () => {
               )}
             </div>
             
-            <Link 
-              href="/about" 
+            <Link
+              href="/timeline"
               className={
-                isActive('/about') 
-                  ? "text-primary font-medium border-b-2 border-primary pb-1" 
+                isActive('/timeline')
+                  ? "text-primary font-medium border-b-2 border-primary pb-1"
+                  : "text-gray-600 hover:text-primary transition-colors"
+              }
+            >
+              Timeline
+            </Link>
+
+            <Link
+              href="/about"
+              className={
+                isActive('/about')
+                  ? "text-primary font-medium border-b-2 border-primary pb-1"
                   : "text-gray-600 hover:text-primary transition-colors"
               }
             >
@@ -314,8 +325,16 @@ const Header: FC<HeaderProps> = () => {
                 )}
               </div>
               
-              <Link 
-                href="/about" 
+              <Link
+                href="/timeline"
+                className={isActive('/timeline') ? "text-primary font-medium" : "text-gray-600"}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Timeline
+              </Link>
+
+              <Link
+                href="/about"
                 className={isActive('/about') ? "text-primary font-medium" : "text-gray-600"}
                 onClick={() => setIsMenuOpen(false)}
               >
