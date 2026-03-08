@@ -1,0 +1,332 @@
+{
+  "profile": {
+    "id": "bob-lazar",
+    "name": "Bob Lazar",
+    "aliases": ["Robert Scott Lazar", "Dennis (anonymous, May 1989)"],
+    "born": "January 26, 1959",
+    "roles": [
+      "Physicist",
+      "S-4 Contractor (claimed)",
+      "UFO Whistleblower",
+      "Co-founder, United Nuclear Scientific Supplies"
+    ],
+    "service_period": "December 1988 – April 1989",
+    "organizations": [
+      "EG&G (contractor, claimed)",
+      "United States Navy (employer, claimed)",
+      "United Nuclear Scientific Supplies (co-founder)"
+    ],
+    "clearance": "Above Top Secret / Majestic-level compartmented (claimed)",
+    "summary": "Physicist and self-described S-4 contractor who publicly disclosed in 1989 that he had worked at a classified facility near Papoose Lake, Nevada, reverse-engineering extraterrestrial propulsion systems. His claims — including the existence of nine alien craft, a gravity wave propulsion system, and a stable isotope of element 115 as fuel — preceded the official synthesis of moscovium (element 115) by 14 years. First came forward anonymously in May 1989 under the name 'Dennis' on KLAS-TV Las Vegas with reporter George Knapp, before being publicly identified in November 1989.",
+    "early_life": [
+      "Raised in Coral Gables, Florida and New York",
+      "Attended Pierce College and California State University, Northridge (per public records)",
+      "Claims to hold degrees from MIT and Caltech — both institutions deny having records of his enrollment",
+      "Worked at Los Alamos National Laboratory circa 1982; listed in local press as 'physicist' and appears in 1982 phone directory as Kirk-Mayer contractor",
+      "Met John Lear through Gene Huff in mid-1988; Lear introduced him to ufology community",
+      "Submitted resume to EG&G in October 1988 following call from Edward Teller"
+    ],
+    "key_events": [
+      { "date": "November 29, 1988", "event": "Edward Teller contacted Lazar and provided EG&G contact for potential employment" },
+      { "date": "December 1, 1988", "event": "First interview at EG&G offices, Las Vegas" },
+      { "date": "December 6, 1988", "event": "First claimed flight to Area 51 / Groom Lake" },
+      { "date": "Mid-December 1988", "event": "First claimed visit to S-4 facility at Papoose Lake" },
+      { "date": "January 16, 1989", "event": "Third S-4 visit; claims first exposure to classified briefing files" },
+      { "date": "March 22, 1989", "event": "First Tikaboo Valley observation of disc test flight with Gene Huff and John Lear" },
+      { "date": "March 29, 1989", "event": "Second Tikaboo Valley observation; disc movement recorded on video" },
+      { "date": "April 5, 1989", "event": "Third Tikaboo Valley observation; group intercepted by guards, questioned by Lincoln County Sheriff" },
+      { "date": "April 6, 1989", "event": "Debriefed at Indian Springs AFB; fired from S-4 project" },
+      { "date": "May 15, 1989", "event": "Anonymous 'Dennis' interview broadcast on KLAS-TV, Las Vegas with George Knapp" },
+      { "date": "November 10, 1989", "event": "Publicly identified and interviewed in UFOs: The Best Evidence series on KLAS-TV" },
+      { "date": "November 14, 1989", "event": "Second KLAS-TV segment airs with additional technical disclosure" },
+      { "date": "December 8, 2018", "event": "Bob Lazar: Area 51 & Flying Saucers documentary released, directed by Jeremy Corbell" },
+      { "date": "June 20, 2019", "event": "Appeared on The Joe Rogan Experience podcast (#1315) with Jeremy Corbell" }
+    ]
+  },
+
+  "facility": {
+    "id": "s4",
+    "name": "S-4 / Papoose Lake Facility",
+    "aliases": ["Sector Four", "S-4 Base"],
+    "location": "Near Papoose dry lake bed, approximately 12–15 miles south-southwest of Area 51 (Groom Lake), Nevada",
+    "construction": "Hangars and buildings built directly into the mountainside; described as camouflaged with corrugated panels matching the mountain slope",
+    "access": "Personnel flown via Boeing 737 to Groom Lake, then transferred to S-4 by bus with blacked-out windows",
+    "security": [
+      "Armed guards stationed at all times; escort required even to restroom",
+      "Optical retinal scans and voice print identification on entry",
+      "Personnel shower, weigh, and decontaminate on entry and exit",
+      "Jumpsuits provided; personal clothing surrendered",
+      "Strict movement corridors; no unsupervised movement permitted"
+    ],
+    "hangar_count": 9,
+    "hangar_notes": "Each hangar bay reported to contain one disc-shaped craft; Lazar primarily worked in the hangar containing the 'Sport Model'",
+    "lazar_account": "Lazar described arriving via bus from Groom Lake with blacked-out windows. He signed non-disclosure agreements and was briefed via paper reports — not electronic — about the nature of the program. He was told to focus solely on propulsion system back-engineering and was not permitted to move freely between hangar bays."
+  },
+
+  "crafts": {
+    "total_count": 9,
+    "primary_studied": "Sport Model",
+    "descriptions": [
+      {
+        "designation": "Sport Model",
+        "description": "Primary craft Lazar worked on; smooth, disc-shaped with a central dome. Later reproduced as a plastic model kit by the Testor Corporation. Lazar personally witnessed a brief, low-altitude test flight of this vehicle.",
+        "diameter_estimate": "52 feet (claimed)",
+        "notes": "Lazar hung upside down through an opening in the craft floor to observe gravity amplifiers on the lower level"
+      },
+      {
+        "designation": "Other 8 craft",
+        "description": "Lazar reports seeing photos of all nine craft in briefing documents. He described varying disc designs across the craft but worked exclusively on the Sport Model. Informal names such as 'Top Hat' and 'Jello Mold' have circulated in secondary sources but were not formally named by Lazar in primary interviews.",
+        "notes": "No verified individual designations for the remaining 8 craft exist in Lazar's primary testimony"
+      }
+    ]
+  },
+
+  "propulsion": {
+    "overview": "Lazar claims the disc propulsion system is fundamentally gravity-based — specifically the amplification and focusing of gravitational waves to distort space-time around the craft, enabling near-instantaneous displacement rather than conventional thrust-based travel.",
+    "fuel": {
+      "element": "Element 115 (Ununpentium / Moscovium)",
+      "claim": "A stable, super-heavy isotope of element 115 functions as the reactor fuel. When bombarded with protons, it produces a continuous release of antimatter which reacts with normal matter to generate the energy needed to power the gravity amplifiers.",
+      "context": "Lazar described this in 1989. Element 115 was officially synthesized in 2003 by Russian and American scientists at Dubna, and named Moscovium in 2016. However, all currently known isotopes of Moscovium are highly unstable with half-lives measured in milliseconds — contradicting Lazar's claim of a stable fuel-class isotope.",
+      "significance": "Lazar's prediction of a super-heavy element with mass number near 115 preceded its laboratory synthesis by 14 years, though no stable fuel-class isotope has been confirmed."
+    },
+    "reactor": {
+      "description": "Small, spherical reactor; approximately the size of a basketball. Located in the lower section of the craft. Fed by the element 115 fuel source.",
+      "output": "Produces a gravity wave which is channeled through wave guides to three gravity amplifiers positioned on the craft's lower disc surface."
+    },
+    "gravity_amplifiers": {
+      "count": 3,
+      "position": "Lower surface of the disc, forming a triangle",
+      "function": "Focus and amplify the gravity wave produced by the reactor; allow the craft to 'latch on' to a celestial body's gravitational field for propulsion",
+      "modes": [
+        {
+          "name": "Omicron Configuration",
+          "description": "All three amplifiers pointed in the same direction (downward); used for low-speed, low-altitude maneuvering and hovering. Produces the characteristic 'belly glow' seen during close-range observation.",
+          "notes": "Mode used during the Tikaboo Valley observations in 1989"
+        },
+        {
+          "name": "Delta Configuration",
+          "description": "All three amplifiers tilted to aim toward a distant target; used for interstellar or high-speed travel. The craft distorts space-time ahead of it, effectively shortening the distance to the destination.",
+          "notes": "Travel appears as 'jumps' rather than smooth continuous motion due to the space-time distortion mechanism"
+        }
+      ]
+    },
+    "space_time_distortion": "Rather than moving through space conventionally, the craft folds or distorts space-time, bringing the destination closer to the craft's position. This allows effective faster-than-light travel without violating relativistic physics in the conventional sense.",
+    "glow_explanation": "The bright glow observed around operating discs results from the gravitational field interacting with the local atmosphere — ionizing air molecules around the hull."
+  },
+
+  "claims": [
+    {
+      "id": "claim-01",
+      "category": "employment",
+      "claim": "Employed as a physicist at S-4 Papoose Lake from December 1988 to April 1989, contracted through EG&G, under the United States Navy.",
+      "status": "unverified",
+      "notes": "EG&G denied having his records in 1989 KLAS reporting. No government employment documents have surfaced."
+    },
+    {
+      "id": "claim-02",
+      "category": "credentials",
+      "claim": "Holds advanced degrees from MIT and Caltech.",
+      "status": "disputed",
+      "notes": "Both MIT and Caltech stated they have no enrollment records for Lazar. Lazar's supporters claim records were expunged by the government."
+    },
+    {
+      "id": "claim-03",
+      "category": "los-alamos",
+      "claim": "Worked at Los Alamos National Laboratory prior to S-4 assignment.",
+      "status": "partially-verified",
+      "notes": "Lazar appears in the 1982 Los Alamos phone directory as a Kirk-Mayer contractor. A Los Alamos Monitor newspaper article from 1982 identifies him as a 'physicist' working there."
+    },
+    {
+      "id": "claim-04",
+      "category": "craft",
+      "claim": "Nine extraterrestrial disc-shaped craft were stored at S-4, one per hangar bay.",
+      "status": "unverified",
+      "notes": "Consistent across all of Lazar's interviews since 1989. No independent corroboration."
+    },
+    {
+      "id": "claim-05",
+      "category": "propulsion",
+      "claim": "Crafts use a gravity wave propulsion system powered by a stable isotope of element 115.",
+      "status": "partially-contradicted",
+      "notes": "Element 115 (Moscovium) was synthesized in 2003, consistent with Lazar's 1989 prediction of its existence. However, no stable fuel-class isotope has been confirmed — all known isotopes decay in milliseconds."
+    },
+    {
+      "id": "claim-06",
+      "category": "briefings",
+      "claim": "Briefing documents at S-4 included information on alien involvement in human history, theology, and origins.",
+      "status": "unverified",
+      "notes": "Lazar reported reading these materials during his work sessions. No documents have been independently verified."
+    },
+    {
+      "id": "claim-07",
+      "category": "observation",
+      "claim": "Witnessed live test flights of the Sport Model disc from Tikaboo Valley on three occasions (March 22, March 29, April 5, 1989).",
+      "status": "partially-corroborated",
+      "notes": "Multiple witnesses were present (Gene Huff, John Lear, others). Group was intercepted on the third visit by guards and the Lincoln County Sheriff."
+    },
+    {
+      "id": "claim-08",
+      "category": "clearance",
+      "claim": "Held a 'Majestic' clearance level, described as above Top Secret.",
+      "status": "unverified",
+      "notes": "No government document has confirmed or denied this clearance designation."
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "1982 Los Alamos phone directory confirms Lazar's presence at LANL as a Kirk-Mayer contractor",
+      "Local Las Vegas newspaper (Los Alamos Monitor) identified him as a physicist at LANL in 1982",
+      "Predicted the existence of element 115 in 1989 — 14 years before its synthesis in 2003",
+      "Craft propulsion description has remained internally consistent across 30+ years of interviews",
+      "Three independent witnesses observed the Tikaboo Valley disc test flights in 1989",
+      "Group was intercepted and questioned by Lincoln County Sheriff on April 5, 1989, corroborating their presence near Area 51",
+      "W-2 tax forms Lazar obtained show 'Department of Naval Intelligence' as employer — an unusual designation"
+    ],
+    "contradicting": [
+      "MIT and Caltech state they have no enrollment or graduation records for Lazar",
+      "EG&G denied employing Lazar in response to 1989 KLAS-TV inquiry",
+      "No government employment documents place him at S-4 specifically",
+      "All known isotopes of element 115 (Moscovium) are highly unstable — no stable fuel-class isotope exists",
+      "CIA declassification of Area 51 history (2013) confirms only spy-plane programs; no mention of S-4",
+      "1990 felony pandering conviction; 2007 federal plea for hazardous materials violations (cited by critics as credibility concerns)",
+      "FBI search of United Nuclear in 2017 (thallium poisoning investigation) — though Lazar was not charged",
+      "No colleague from the alleged S-4 program has independently corroborated his account"
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "KLAS-TV investigative reporter; first to interview and identify Lazar publicly",
+      "relationship": "Primary media contact; conducted and broadcast the 1989 interviews; continues to investigate Lazar's claims"
+    },
+    {
+      "id": "gene-huff",
+      "name": "Gene Huff",
+      "role": "Real estate appraiser; Lazar's closest friend and defender",
+      "relationship": "Witnessed Tikaboo Valley disc observations; authored 'The Lazar Synopsis' supporting Lazar's account; business partner at United Nuclear"
+    },
+    {
+      "id": "john-lear",
+      "name": "John Lear",
+      "role": "Aviation figure and ufologist",
+      "relationship": "Introduced by Gene Huff; introduced Lazar to Area 51 ufology community; witnessed Tikaboo Valley observations; provided early network"
+    },
+    {
+      "id": "jeremy-corbell",
+      "name": "Jeremy Corbell",
+      "role": "Documentary filmmaker",
+      "relationship": "Directed Bob Lazar: Area 51 & Flying Saucers (2018); accompanied Lazar to Joe Rogan podcast appearance (2019); renewed mainstream interest in Lazar's claims"
+    },
+    {
+      "id": "edward-teller",
+      "name": "Dr. Edward Teller",
+      "role": "Physicist; 'father of the hydrogen bomb'",
+      "relationship": "Lazar claims Teller called him on November 29, 1988, and provided the EG&G contact that led to his S-4 employment. Teller neither confirmed nor denied this before his death in 2003."
+    },
+    {
+      "id": "robert-bigelow",
+      "name": "Robert Bigelow",
+      "role": "Aerospace entrepreneur; UAP research funder",
+      "relationship": "Co-founded Zeta Reticuli 2 Corporation with Lazar in January 1990 at $30,000 annual salary"
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "May 15, 1989",
+      "type": "television",
+      "title": "Anonymous 'Dennis' Interview",
+      "outlet": "KLAS-TV, Las Vegas",
+      "interviewer": "George Knapp",
+      "notes": "First public appearance; face obscured, voice altered, pseudonym 'Dennis' used. Described S-4, crafts, and propulsion system."
+    },
+    {
+      "date": "November 10, 1989",
+      "type": "television",
+      "title": "UFOs: The Best Evidence — Part 1",
+      "outlet": "KLAS-TV, Las Vegas",
+      "interviewer": "George Knapp",
+      "notes": "Publicly identified by name. Expanded account of S-4, element 115, and propulsion technology."
+    },
+    {
+      "date": "November 14, 1989",
+      "type": "television",
+      "title": "UFOs: The Best Evidence — Part 2",
+      "outlet": "KLAS-TV, Las Vegas",
+      "interviewer": "George Knapp",
+      "notes": "Second segment; additional technical details and response to initial public reaction."
+    },
+    {
+      "date": "November 21, 1989",
+      "type": "radio",
+      "title": "Billy Goodman Happening",
+      "outlet": "KVEG Radio, Las Vegas",
+      "notes": "First live call-in radio appearance with Gene Huff."
+    },
+    {
+      "date": "December 9, 1989",
+      "type": "television",
+      "title": "On the Record with George Knapp",
+      "outlet": "KLAS morning program",
+      "notes": "Morning program appearance."
+    },
+    {
+      "date": "December 8, 2018",
+      "type": "documentary",
+      "title": "Bob Lazar: Area 51 & Flying Saucers",
+      "outlet": "Netflix / Corbell Films",
+      "interviewer": "Jeremy Corbell (director)",
+      "notes": "Renewed mainstream interest; Lazar gave his most detailed on-camera account to date."
+    },
+    {
+      "date": "June 20, 2019",
+      "type": "podcast",
+      "title": "The Joe Rogan Experience #1315",
+      "outlet": "JRE Podcast",
+      "interviewer": "Joe Rogan",
+      "notes": "Joint appearance with Jeremy Corbell. Full transcript available via singjupost.com."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "The Updated Bob Lazar Timeline",
+      "url": "https://www.papooselake.org/the-updated-bob-lazar-timeline",
+      "type": "timeline-archive",
+      "notes": "121-entry chronological database; primary source for biographical and event data"
+    },
+    {
+      "title": "The Bob Lazar Corner",
+      "url": "https://otherhand.org/home-page/area-51-and-other-strange-places/bluefire-main/bluefire/the-bob-lazar-corner/",
+      "type": "analysis",
+      "notes": "Comprehensive credibility analysis including technical critique by Dr. David Morgan"
+    },
+    {
+      "title": "Bob Lazar — UAPedia",
+      "url": "https://www.uapedia.ai/wiki/bob-lazar-s-4-and-the-uap-info-wars/",
+      "type": "reference",
+      "notes": "Structured claims and credibility assessment"
+    },
+    {
+      "title": "Joe Rogan Experience #1315 — Full Transcript",
+      "url": "https://singjupost.com/transcript-bob-lazar-jeremy-corbell-on-joe-rogan-podcast-1315/",
+      "type": "transcript",
+      "notes": "Complete 2019 interview transcript"
+    },
+    {
+      "title": "Dreamland (1989 Knapp Interview Transcript)",
+      "url": "https://sacred-texts.com/ufo/area51-1.htm",
+      "type": "transcript",
+      "notes": "Original 1989 KLAS interview transcript"
+    },
+    {
+      "title": "Bob Lazar Interview 1989",
+      "url": "https://archive.org/details/bob-lazar-interview-1989",
+      "type": "audio-video",
+      "notes": "Original 1989 interview audio/video archived"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { WhistleblowerEntry } from '../../types/data';
 import WhistleblowerProfile from './WhistleblowerProfile';
+import LazarProfile from './LazarProfile';
 
 interface WhistleblowersListProps {
   entries: WhistleblowerEntry[];
@@ -10,12 +11,16 @@ const WhistleblowersList: FC<WhistleblowersListProps> = ({ entries }) => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const selectedEntry = entries.find(e => e.id === selectedId) ?? null;
+  const onBack = () => setSelectedId(null);
 
   if (selectedEntry?.status === 'detailed') {
+    if (selectedEntry.id === 'bob-lazar') {
+      return <LazarProfile onBack={onBack} />;
+    }
     return (
       <WhistleblowerProfile
         id={selectedEntry.id}
-        onBack={() => setSelectedId(null)}
+        onBack={onBack}
       />
     );
   }

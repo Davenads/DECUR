@@ -649,16 +649,6 @@ const AssessmentTab: FC = () => {
 const WhistleblowerProfile: FC<WhistleblowerProfileProps> = ({ id, onBack }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
-  // Only Burisch is fully implemented; guard for future profiles
-  if (id !== 'dan-burisch') {
-    return (
-      <div className="text-center py-16 text-gray-400">
-        <p className="text-lg font-medium">Profile Coming Soon</p>
-        <button onClick={onBack} className="mt-4 text-sm text-primary hover:underline">← Back</button>
-      </div>
-    );
-  }
-
   const renderTab = () => {
     switch (activeTab) {
       case 'overview':     return <OverviewTab />;

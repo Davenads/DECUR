@@ -32,11 +32,12 @@ export default function Data({ categoryData, whistleblowers, navItems }: DataPag
   const [activeCategory, setActiveCategory] = useState<CategoryType>('events');
 
   useEffect(() => {
+    if (!router.isReady) return;
     const q = router.query.category;
     if (typeof q === 'string' && VALID_CATEGORIES.includes(q as CategoryType)) {
       setActiveCategory(q as CategoryType);
     }
-  }, [router.query]);
+  }, [router.isReady, router.query.category]);
 
   const renderContent = () => {
     switch (activeCategory) {

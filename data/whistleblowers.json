@@ -19,8 +19,8 @@
     "period": "1988–1989",
     "affiliation": "S-4 Facility (Project Galileo) via EG&G",
     "summary": "Physicist who claims to have been contracted to S-4 at Papoose Lake, where he worked on reverse-engineering extraterrestrial propulsion systems. Disclosed the existence of nine alien craft and element 115 (moscovium) as a propulsion fuel source — a claim that preceded element 115's official synthesis by 15 years.",
-    "status": "stub",
-    "tags": ["S-4", "Element 115", "Gravity Wave Propulsion", "Area 51", "Project Galileo", "EG&G"],
-    "data_file": null
+    "status": "detailed",
+    "tags": ["S-4", "Element 115", "Gravity Wave Propulsion", "Area 51", "Project Galileo", "EG&G", "KLAS-TV", "Tikaboo Valley"],
+    "data_file": "lazar.json"
   }
 ]

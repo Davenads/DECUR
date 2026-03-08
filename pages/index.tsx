@@ -40,7 +40,7 @@ const Home: CustomNextPage<HomePageProps> = ({ featuredData = [], recentUpdates 
               DECUR serves as a comprehensive repository for whistleblower testimonies and research involving phenomena that challenge our conventional understanding of reality, including Unidentified Aerial Phenomena (UAP), Non-Human Intelligence (NHI), and advanced technologies.
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Beginning with Dr. Dan Burisch's groundbreaking research as our foundation, we're continuously expanding our archive to include testimony from military personnel, government officials, scientists, and other credible witnesses who have come forward with compelling accounts of encounters and insider knowledge.
+              Our archive draws from firsthand testimony, documented incidents, and primary sources spanning eight decades — from military personnel and government officials to scientists and independent researchers who have come forward with accounts of unconventional phenomena and advanced technologies.
             </p>
           </div>
         </div>

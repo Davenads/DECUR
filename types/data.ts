@@ -193,6 +193,112 @@ export interface MJ12Member {
   notes?: string;
 }
 
+/* ─── Lazar Types ──────────────────────────────────────────────── */
+
+export interface LazarClaim {
+  id: string;
+  category: string;
+  claim: string;
+  status: 'unverified' | 'partially-verified' | 'disputed' | 'partially-contradicted' | 'verified';
+  notes?: string;
+}
+
+export interface LazarDisclosure {
+  date: string;
+  type: 'television' | 'radio' | 'podcast' | 'documentary';
+  title: string;
+  outlet: string;
+  interviewer?: string;
+  notes?: string;
+}
+
+export interface LazarPerson {
+  id: string;
+  name: string;
+  role: string;
+  relationship: string;
+}
+
+export interface LazarSource {
+  title: string;
+  url: string;
+  type: string;
+  notes: string;
+}
+
+export interface LazarGravityMode {
+  name: string;
+  description: string;
+  notes?: string;
+}
+
+export interface LazarData {
+  profile: {
+    id: string;
+    name: string;
+    aliases: string[];
+    born: string;
+    roles: string[];
+    service_period: string;
+    organizations: string[];
+    clearance: string;
+    summary: string;
+    early_life: string[];
+    key_events: Array<{ date: string; event: string }>;
+  };
+  facility: {
+    id: string;
+    name: string;
+    aliases: string[];
+    location: string;
+    construction: string;
+    access: string;
+    security: string[];
+    hangar_count: number;
+    hangar_notes: string;
+    lazar_account: string;
+  };
+  crafts: {
+    total_count: number;
+    primary_studied: string;
+    descriptions: Array<{
+      designation: string;
+      description: string;
+      diameter_estimate?: string;
+      notes?: string;
+    }>;
+  };
+  propulsion: {
+    overview: string;
+    fuel: {
+      element: string;
+      claim: string;
+      context: string;
+      significance: string;
+    };
+    reactor: {
+      description: string;
+      output: string;
+    };
+    gravity_amplifiers: {
+      count: number;
+      position: string;
+      function: string;
+      modes: LazarGravityMode[];
+    };
+    space_time_distortion: string;
+    glow_explanation: string;
+  };
+  claims: LazarClaim[];
+  credibility: {
+    supporting: string[];
+    contradicting: string[];
+  };
+  associated_people: LazarPerson[];
+  disclosures: LazarDisclosure[];
+  sources: LazarSource[];
+}
+
 /**
  * Full Burisch data structure
  */
