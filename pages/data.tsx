@@ -30,18 +30,21 @@ interface DataPageProps {
 export default function Data({ categoryData, whistleblowers, navItems }: DataPageProps) {
   const router = useRouter();
   const [activeCategory, setActiveCategory] = useState<CategoryType>('events');
+  const [sourceFilter, setSourceFilter] = useState<string | undefined>(undefined);
 
   useEffect(() => {
     if (!router.isReady) return;
     const q = router.query.category;
+    const s = router.query.source;
     if (typeof q === 'string' && VALID_CATEGORIES.includes(q as CategoryType)) {
       setActiveCategory(q as CategoryType);
     }
-  }, [router.isReady, router.query.category]);
+    setSourceFilter(typeof s === 'string' ? s : undefined);
+  }, [router.isReady, router.query.category, router.query.source]);
 
   const renderContent = () => {
     switch (activeCategory) {
-      case 'events':  return <EventsList entries={categoryData.events} />;
+      case 'events':  return <EventsList entries={categoryData.events} sourceFilter={sourceFilter} />;
       case 'figures': return <KeyFigures entries={categoryData.figures} />;
       case 'quotes':  return <QuotesBrowser entries={categoryData.quotes} />;
       case 'media':   return <MediaBrowser entries={categoryData.media} />;

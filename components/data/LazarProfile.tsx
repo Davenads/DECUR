@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import Link from 'next/link';
 import { LazarData } from '../../types/data';
 import lazarData from '../../data/lazar.json';
 
@@ -78,7 +79,18 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Events</h3>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-lg font-semibold text-gray-900">Key Events</h3>
+          <Link
+            href="/data?category=events&source=lazar"
+            className="text-xs text-primary hover:underline flex items-center gap-1"
+          >
+            View S-4 timeline events
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
         <div className="space-y-2">
           {profile.key_events.map((ev, i) => (
             <div key={i} className="flex gap-3 text-sm">
