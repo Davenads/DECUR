@@ -197,6 +197,17 @@ const Header: FC = () => {
             </Link>
 
             <Link
+              href="/explore"
+              className={
+                isActive('/explore')
+                  ? "text-primary font-medium border-b-2 border-primary pb-1"
+                  : "text-gray-600 hover:text-primary transition-colors"
+              }
+            >
+              Explore
+            </Link>
+
+            <Link
               href="/about"
               className={
                 isActive('/about')
@@ -331,6 +342,14 @@ const Header: FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Timeline
+              </Link>
+
+              <Link
+                href="/explore"
+                className={isActive('/explore') ? "text-primary font-medium" : "text-gray-600"}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Explore
               </Link>
 
               <Link
