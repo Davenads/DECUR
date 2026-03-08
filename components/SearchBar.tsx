@@ -4,7 +4,8 @@ import { useState, FormEvent, ChangeEvent, FC } from 'react';
 import { useRouter } from 'next/router';
 import { SearchProps } from '../types/components';
 
-const SearchBar: FC<SearchProps> = ({ 
+/* eslint-disable @typescript-eslint/no-empty-function */
+const SearchBar: FC<SearchProps> = ({
   placeholder = 'Search DECUR...',
   onSearch = () => {},
   initialQuery = '',

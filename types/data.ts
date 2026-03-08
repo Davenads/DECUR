@@ -5,7 +5,7 @@
 /**
  * Represents data category types
  */
-export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news';
+export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'whistleblowers';
 
 /**
  * Expanded sections state for data navigation
@@ -60,4 +60,173 @@ export interface LotusFinding extends DataItem {
   participants?: string[];
   outcomes?: string[];
   relatedPrograms?: string[];
+}
+
+/**
+ * Whistleblower index entry (list view)
+ */
+export interface WhistleblowerEntry {
+  id: string;
+  name: string;
+  aliases: string[];
+  role: string;
+  period: string;
+  affiliation: string;
+  summary: string;
+  status: 'detailed' | 'stub';
+  tags: string[];
+  data_file: string | null;
+}
+
+/**
+ * Burisch entity profile
+ */
+export interface BurischEntity {
+  id: string;
+  name: string;
+  designation: string;
+  classification: string;
+  origin: {
+    species: string;
+    timeline: string;
+    home: string;
+    crash_date: string;
+    crash_location: string;
+    crash_cause: string;
+  };
+  physical: Record<string, string>;
+  medical_conditions: string[];
+  communication: string;
+  age: string;
+  name_meaning: string;
+  containment: { facility: string; sphere: string; notes: string };
+  mission: string[];
+  connection_to_burisch: string;
+}
+
+/**
+ * Burisch project entry
+ */
+export interface BurischProject {
+  id: string;
+  name: string;
+  aliases?: string[];
+  parent?: string;
+  classification?: string;
+  established?: string;
+  purpose: string;
+  key_personnel?: string[];
+  location?: string;
+  discoveries?: string[];
+  outcome?: string;
+  notes?: string;
+  admin?: string;
+  documentation?: string;
+  distribution?: string;
+  related_object?: string;
+  director?: string;
+}
+
+/**
+ * Burisch document entry
+ */
+export interface BurischDocument {
+  id: string;
+  designation: string;
+  common_name: string;
+  date?: string;
+  authors?: string[];
+  significance: string;
+  leak_history?: string;
+  status?: string;
+  source_url?: string;
+}
+
+/**
+ * Burisch testimony entry
+ */
+export interface BurischTestimony {
+  id: string;
+  witness: string;
+  real_identity?: string;
+  background: string;
+  introduced_by?: string;
+  key_claims: string[];
+  burisch_connection: string;
+  notes?: string;
+  source?: string;
+}
+
+/**
+ * Burisch argument entry
+ */
+export interface BurischArgument {
+  category: string;
+  claim: string;
+}
+
+/**
+ * Burisch concept entry
+ */
+export interface BurischConcept {
+  id: string;
+  name: string;
+  summary: string;
+  mechanics?: string[];
+  key_claims?: string[];
+  factions?: string[];
+  outcome?: string;
+  framework?: string[];
+  genetic_component?: string[];
+  implication?: string;
+  properties?: string[];
+  research_context?: string;
+}
+
+/**
+ * MJ-12 roster entry
+ */
+export interface MJ12Member {
+  seat: string;
+  name: string;
+  roles: string[];
+  notes?: string;
+}
+
+/**
+ * Full Burisch data structure
+ */
+export interface BurischData {
+  profile: {
+    id: string;
+    name: string;
+    aliases: string[];
+    born: string;
+    roles: string[];
+    service_period: string;
+    organizations: string[];
+    clearance: string;
+    summary: string;
+    early_life: string[];
+    key_events: Array<{ year: string; event: string }>;
+  };
+  entity: BurischEntity;
+  facility: {
+    id: string;
+    name: string;
+    aliases: string[];
+    location: string;
+    construction: string;
+    security: string[];
+    levels: Array<{ designation: string; notes: string }>;
+    notable_equipment: Array<Record<string, unknown>>;
+    notable_visitors: string[];
+  };
+  projects: BurischProject[];
+  documents: BurischDocument[];
+  timeline: Array<{ date: string; event: string; category: string }>;
+  mj12: MJ12Member[];
+  testimonies: BurischTestimony[];
+  arguments: { supporting: BurischArgument[]; against: BurischArgument[] };
+  concepts: BurischConcept[];
 }

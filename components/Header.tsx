@@ -6,9 +6,7 @@ import { useRouter } from 'next/router';
 import SearchBar from './SearchBar';
 import { NavItem, NavSection, NavItems, DropdownRefs } from '../types/navigation';
 
-interface HeaderProps {}
-
-const Header: FC<HeaderProps> = () => {
+const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const dropdownRefs = useRef<DropdownRefs>({});
@@ -53,6 +51,7 @@ const Header: FC<HeaderProps> = () => {
       items: [
         { title: 'Historical Events', path: '/data?category=events' },
         { title: 'Key Figures', path: '/data?category=figures' },
+        { title: 'Whistleblowers', path: '/data?category=whistleblowers' },
         { title: 'Quotes', path: '/data?category=quotes' },
         { title: 'Media & Documents', path: '/data?category=media' },
         { title: 'News', path: '/data?category=news' }

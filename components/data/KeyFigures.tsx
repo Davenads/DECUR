@@ -64,15 +64,9 @@ const KeyFigures: FC<Props> = ({ entries }) => {
               </button>
               {isOpen && (
                 <div className="px-4 pb-4 border-t border-gray-100">
-                  {entry.content ? (
-                    <div className="mt-3 text-sm text-gray-700 prose prose-sm max-w-none"
-                      dangerouslySetInnerHTML={{ __html: entry.content }}
-                    />
-                  ) : (
-                    <p className="mt-3 text-sm text-gray-700"
-                      dangerouslySetInnerHTML={{ __html: entry.excerpt }}
-                    />
-                  )}
+                  <p className="mt-3 text-sm text-gray-700"
+                    dangerouslySetInnerHTML={{ __html: entry.excerpt }}
+                  />
                   <a
                     href={entry.source_url}
                     target="_blank"

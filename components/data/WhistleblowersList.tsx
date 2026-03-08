@@ -1,0 +1,95 @@
+import { FC, useState } from 'react';
+import { WhistleblowerEntry } from '../../types/data';
+import WhistleblowerProfile from './WhistleblowerProfile';
+
+interface WhistleblowersListProps {
+  entries: WhistleblowerEntry[];
+}
+
+const WhistleblowersList: FC<WhistleblowersListProps> = ({ entries }) => {
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+
+  const selectedEntry = entries.find(e => e.id === selectedId) ?? null;
+
+  if (selectedEntry?.status === 'detailed') {
+    return (
+      <WhistleblowerProfile
+        id={selectedEntry.id}
+        onBack={() => setSelectedId(null)}
+      />
+    );
+  }
+
+  return (
+    <div>
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Whistleblowers</h2>
+        <p className="text-sm text-gray-500">
+          Individuals who have provided firsthand testimony regarding classified programs, extraterrestrial phenomena, and advanced technologies.
+        </p>
+      </div>
+
+      <div className="grid gap-4">
+        {entries.map(entry => (
+          <div
+            key={entry.id}
+            className="border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <h3 className="text-lg font-semibold text-gray-900">{entry.name}</h3>
+                  {entry.aliases.length > 0 && (
+                    <span className="text-xs text-gray-400 italic">
+                      aka {entry.aliases.join(', ')}
+                    </span>
+                  )}
+                  {entry.status === 'stub' && (
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 font-medium">
+                      Stub
+                    </span>
+                  )}
+                </div>
+
+                <p className="text-sm font-medium text-primary mb-0.5">{entry.role}</p>
+                <p className="text-xs text-gray-400 mb-3">
+                  {entry.period} &mdash; {entry.affiliation}
+                </p>
+
+                <p className="text-sm text-gray-600 leading-relaxed mb-3">{entry.summary}</p>
+
+                <div className="flex flex-wrap gap-1.5">
+                  {entry.tags.map(tag => (
+                    <span
+                      key={tag}
+                      className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex-shrink-0">
+                {entry.status === 'detailed' ? (
+                  <button
+                    onClick={() => setSelectedId(entry.id)}
+                    className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap"
+                  >
+                    View Case File
+                  </button>
+                ) : (
+                  <span className="px-4 py-2 text-sm font-medium text-gray-400 bg-gray-100 rounded-lg whitespace-nowrap cursor-not-allowed">
+                    Coming Soon
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default WhistleblowersList;

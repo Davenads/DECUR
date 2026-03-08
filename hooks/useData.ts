@@ -87,7 +87,7 @@ const MOCK_DATA: DataItem[] = [
   {
     id: 'entity-p45',
     title: 'P-45 J-Rods',
-    category: 'entities',
+    category: 'figures',
     description: 'Future humans from Timeline 2, approximately 45,000 years in the future.',
     date: '2023-08-10',
     tags: ['j-rod', 'future human', 'timeline-2']
@@ -95,7 +95,7 @@ const MOCK_DATA: DataItem[] = [
   {
     id: 'entity-p52',
     title: 'P-52 J-Rods',
-    category: 'entities',
+    category: 'figures',
     description: 'Future humans from Timeline 1, approximately 52,000 years in the future.',
     date: '2023-08-15',
     tags: ['j-rod', 'future human', 'timeline-1']
@@ -103,7 +103,7 @@ const MOCK_DATA: DataItem[] = [
   {
     id: 'tech-looking-glass',
     title: 'Looking Glass Technology',
-    category: 'timelines',
+    category: 'media',
     description: 'Technology capable of viewing probable future timelines.',
     date: '2023-07-22',
     tags: ['technology', 'temporal viewing', 'ganesh particle']
@@ -111,7 +111,7 @@ const MOCK_DATA: DataItem[] = [
   {
     id: 'project-lotus',
     title: 'Project Lotus',
-    category: 'lotus',
+    category: 'events',
     description: 'Special access program studying interactions with non-human intelligence.',
     date: '2023-09-01',
     tags: ['project', 'classified', 'majestic']

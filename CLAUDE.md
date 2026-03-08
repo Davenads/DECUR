@@ -93,3 +93,110 @@ This platform organizes research into several key areas:
 4. **About/Contact**: Simple contact form and project information
 
 When exploring code or creating new features, start by understanding related components using the `.claude` documentation to navigate the codebase efficiently.
+
+## Playwright Integration for Component Testing
+
+### Component Testing Strategy
+
+**Layout & Navigation Components:**
+- **Header.tsx**: Test dropdown menus (`data`, `resources`), mobile responsive behavior, active states for current page
+- **DataNavigation.tsx**: Test expandable sections (`whistleblowers`, `entities`, `technologies`, `programs`), category selection state changes
+- **SearchBar.tsx**: Test search functionality, input handling, and search callbacks
+- **Layout.tsx**: Test consistent rendering across all pages, title prop handling
+
+**Data Components:**
+- **EntityProfiles.tsx**: Test entity data display, P-45/P-52/Orions profiles, large dataset performance
+- **TimelineConcepts.tsx**: Test timeline visualization interactions, Looking Glass technology display
+- **LotusFindings.tsx**: Test tabbed interface (`overview`, `ganesh`, `shiva`, `cellular`)
+
+**Resource Components:**
+- **ResourceList.tsx**: Test material vs transcript category switching, resource filtering
+- **Glossary.tsx**: Test alphabetical indexing, term lookups, grouped terms display
+
+### Page-Level Testing Patterns
+
+**State-Driven Pages:**
+- **data.tsx**: Test URL query parameter integration (`?category=entities`), activeCategory state management, renderContent() switching
+- **resources.tsx**: Test activeTab state management between `materials`/`transcripts`/`glossary`
+
+**Static Pages:**
+- **index.tsx**: Test landing page elements, mission statement, navigation links
+- **about.tsx**: Test static content rendering, contact information
+
+### DECUR-Specific Test Scenarios
+
+**Navigation Testing:**
+```typescript
+// Test hierarchical navigation in DataNavigation
+await page.click('[data-testid="whistleblowers-section"]');
+await page.click('[data-testid="dan-burisch-link"]');
+expect(page.locator('[data-category="entities"]')).toBeVisible();
+
+// Test Header dropdown navigation
+await page.click('[data-testid="data-dropdown-trigger"]');
+await page.click('[data-testid="nav-nhi-link"]');
+expect(page.url()).toContain('/data?category=entities');
+```
+
+**Component State Testing:**
+```typescript
+// Test data category switching
+await page.click('[data-testid="data-nav-entities"]');
+expect(page.locator('[data-testid="entity-profiles"]')).toBeVisible();
+await page.click('[data-testid="data-nav-lotus"]');  
+expect(page.locator('[data-testid="lotus-findings"]')).toBeVisible();
+expect(page.locator('[data-testid="entity-profiles"]')).not.toBeVisible();
+```
+
+**Responsive Design Testing:**
+```typescript
+// Test mobile navigation dropdown behavior
+await page.setViewportSize({ width: 375, height: 667 });
+await page.click('[data-testid="mobile-menu-toggle"]');
+await page.click('[data-testid="mobile-data-dropdown"]');
+expect(page.locator('[data-testid="mobile-nav-menu"]')).toBeVisible();
+```
+
+### Integration Points
+
+**URL Query Parameter Testing:**
+- Test `/data?category=entities` → EntityProfiles rendering
+- Test `/data?category=timelines` → TimelineConcepts rendering  
+- Test `/data?category=lotus` → LotusFindings rendering
+- Test `/resources?tab=materials` → ResourceList with materials
+- Test browser back/forward navigation with state preservation
+
+**Component Communication Testing:**
+- Test DataNavigation `setActiveCategory` → Data page component rendering
+- Test Header dropdown clicks → Page navigation with correct query params
+- Test responsive state changes (desktop ↔ mobile)
+
+**TypeScript Interface Testing:**
+- Test `CategoryType` constraints ('entities' | 'timelines' | 'lotus' | 'whistleblowers')
+- Test component props match defined interfaces
+- Test state type safety (activeCategory, expandedSections)
+
+### Performance Testing Scenarios
+
+**Large Dataset Components:**
+- Test EntityProfiles with multiple entity types (P-45, P-52, Orions)
+- Test Glossary with extensive UAP/NHI terminology
+- Test TimelineConcepts rendering with complex timeline data
+
+**State Management Testing:**
+- Test useState updates in data.tsx don't cause unnecessary re-renders
+- Test dropdown state management in Header.tsx with multiple concurrent dropdowns
+- Test expandedSections state in DataNavigation.tsx with nested interactions
+
+### Testing Data-Testid Conventions
+
+**Consistent Naming Pattern:**
+- Pages: `[page-name]-page` (e.g., `data-page`, `resources-page`)
+- Navigation: `nav-[item-name]` (e.g., `nav-entities`, `nav-lotus`)
+- Components: `[component-name]` (e.g., `entity-profiles`, `lotus-findings`)
+- Interactive Elements: `[action]-[target]` (e.g., `toggle-dropdown`, `select-category`)
+
+**Component-Specific Testids:**
+- DataNavigation: `data-nav-[category]`, `expand-[section]`
+- Header: `[dropdown-name]-dropdown`, `mobile-[element]`
+- Data Components: `[component-name]`, `[component-name]-[tab/section]`

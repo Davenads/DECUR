@@ -1,0 +1,453 @@
+{
+  "profile": {
+    "id": "dan-burisch",
+    "name": "Dr. Dan Burisch",
+    "aliases": ["Dan Crain", "Dr. Dan Crain"],
+    "born": "1964",
+    "roles": [
+      "Senior Microbiologist",
+      "Majestic-12 Operative (MJ-9 pro-tem, 2005)",
+      "H-1-Maj (Disclosure Officer)",
+      "Chief Scientist, Eagles Disobey Research Consortium"
+    ],
+    "service_period": "1986–2007",
+    "organizations": [
+      "Majestic-12",
+      "Committee of the Majority",
+      "Eagles Disobey Research Consortium"
+    ],
+    "clearance": "Q-clearance equivalent (black/unacknowledged)",
+    "summary": "Microbiologist who claims to have served as a senior operative under Majestic-12 from 1986 to 2007, conducting biological research on extraterrestrial entities at S-4 (Papoose Lake) and leading multiple classified sub-projects under Project Aquarius. Formally authorized to speak publicly in 2005 following Majestic-12's adjournment.",
+    "early_life": [
+      "Worked with Los Angeles Microscopical Society as a child",
+      "Mentored under chief pathologist at Long Beach Memorial at age 8",
+      "Studied under Dr. John Bunyan in England; hypochlorite research recognized in medical literature",
+      "Allegedly abducted by P-45s and J-Rod entity in early 1970s",
+      "Inducted into Majestic-12 in 1986 while a UNLV student",
+      "Completed Ph.D. in microbiology (initially under the name 'Dr. Dan Crain')"
+    ],
+    "key_events": [
+      { "year": "1986", "event": "Inducted into Majestic-12 by Committee of the Majority" },
+      { "year": "1991", "event": "Deployed during Gulf War to counter unauthorized biological warfare" },
+      { "year": "1993–1996", "event": "Assigned to S-4 as Microbiologist V; led J-Rod research under Project Aquarius" },
+      { "year": "1994", "event": "Received ~30 minutes of continuous telepathic information transfer from Chi'el'ah; remained comatose for days" },
+      { "year": "1997–1998", "event": "Co-authored Eagles Disobey: The Case for Inca City, Mars with Marcia McDowell" },
+      { "year": "1998", "event": "Committee of the Majority ordered book suppressed; Burisch refused; Ph.D. nullified; near-fatal heart attack" },
+      { "year": "1999", "event": "Underwent neurochemical memory reconditioning; relocated to Mississippi" },
+      { "year": "2001", "event": "Exchanged timeline data with Chi'el'ah; began documenting Lotus project" },
+      { "year": "2003", "event": "Aided Chi'el'ah's return home via Stargate; Marcia McDowell inducted into Majestic" },
+      { "year": "2005", "event": "Appointed MJ-9 pro-tem and H-1-Maj (disclosure officer); Majestic-12 formally adjourned October 12" },
+      { "year": "2006", "event": "Completed final disclosure orders; retired from service" },
+      { "year": "2007", "event": "Brief classified 'National Security' project, reportedly involving Looking Glass" },
+      { "year": "2008", "event": "Lectured at Caltech's Beckman Auditorium on the Lotus project" },
+      { "year": "2018", "event": "90-minute phone call with researcher Brian Jackson; hoped to advance Lotus toward peer review" }
+    ]
+  },
+
+  "entity": {
+    "id": "chi-elah",
+    "name": "Chi'el'ah",
+    "designation": "J-Rod",
+    "classification": "Extraterrestrial Biological Entity (EBE)",
+    "origin": {
+      "species": "Future human descendants — P+52k-yr lineage",
+      "timeline": "52,000 years in Earth's future (alternate timeline)",
+      "home": "Reticulum (Gliese star system, ~15 light-years from Earth)",
+      "crash_date": "1953",
+      "crash_location": "Near Kingman, Arizona",
+      "crash_cause": "Gravimetric navigation failure during descent; one crew member died"
+    },
+    "physical": {
+      "height": "3.5–4 feet (fully extended)",
+      "posture": "Hunched, praying mantis-like due to neuropathy",
+      "head": "Disproportionately large relative to torso; brain ~1800 cc (vs. human 1350–1400 cc)",
+      "eyes": "Large, black, bulbous; no visible whites",
+      "nose": "Recessed with two small orifices",
+      "mouth": "Extremely small slit; no teeth",
+      "ears": "Small structures with superior hearing capacity",
+      "skin": "Dark brown/ruddy, reticulated lizard-like texture but smooth to touch; highly elastic and hard from solar exposure",
+      "skin_secretion": "Exuded glycoprotein-like material through skin pores",
+      "limbs": "Long arms; four thin, sinuous fingers; four toes with prominent heel knob",
+      "organ": "Single compartmentalized pear-shaped organ functioning as heart, lungs, and stomach",
+      "chromosomes": "19 pairs (vs. human 23) resulting from Robertsonian translocations",
+      "density": "Less dense than humans; greater cellular hydration ('more liquid-like')"
+    },
+    "medical_conditions": [
+      "Severe congenital peripheral neuropathy (extreme pain)",
+      "Chronic immune demyelinating polyneuropathy (CIDP-like)",
+      "Monoclonal gammopathy of uncertain significance (MGUS)",
+      "Cockayne-like syndrome contributing to hunched posture",
+      "Reduced antifreeze-type glycoproteins causing body heat loss"
+    ],
+    "communication": "Primarily telepathic; able to 'entrain' with humans. Burisch reported feeling the entity's pain during procedures.",
+    "age": "622 Earth years old at time of S-4 interaction",
+    "name_meaning": "'Hala' = bread gift (from mother); 'el' = prophet of God; numerological value 33 (Metatron Cube / number 9)",
+    "containment": {
+      "facility": "Los Alamos National Labs, then S-4 Papoose Lake",
+      "sphere": "Clean Sphere — hyperbaric, ~4% hydrogen atmosphere, 20–30°F",
+      "notes": "Considered himself a captive; desired human-like amenities; kept unclothed against his preference"
+    },
+    "mission": [
+      "Originally intended to land at Los Alamos for diplomatic/scientific exchange",
+      "Sought human assistance treating neural degeneration in J-Rod lineage",
+      "Offered back-engineering of craft in exchange for medical cooperation",
+      "Aimed to rectify errors in past genetic manipulation of human ancestors",
+      "Believed present-day humans possessed a unique quality enabling contact with 'root genesis'",
+      "Desired recovery of 'something lost' — possibly spiritual or genetic continuity"
+    ],
+    "connection_to_burisch": "Recognized Burisch from his 1970s abduction; demanded his direct involvement in S-4 research. Relationship evolved into mutual trust; Burisch aided his return via Stargate in 2003."
+  },
+
+  "facility": {
+    "id": "s4",
+    "name": "S-4 / Papoose Lake Facility",
+    "aliases": ["SITE 4", "S2 Alpha", "PS2 Complex", "Dark Side of the Moon", "The Nowhere Place"],
+    "location": "~12 miles southwest of Area 51 (Groom Lake), Nevada; Papoose Lake area",
+    "construction": "Built into Papoose Mountain; multiple underground levels",
+    "security": [
+      "Armed guards stationed throughout",
+      "Optical scans and voice print identification required",
+      "Personnel showered, weighed, shaved, decontaminated on entry/exit",
+      "Jumpsuits provided without underwear",
+      "Blue and red floor lines dictating movement; shoot-to-kill for crossing red lines",
+      "Elevator buttons concealed; guards controlled floor access without revealing destination",
+      "Weight screening conducted in separate hidden location"
+    ],
+    "levels": [
+      { "designation": "4-1 to 4-5", "notes": "At least 5 working levels; Ambassadorial Suite Level (ASL) at lowest operational floor" }
+    ],
+    "notable_equipment": [
+      {
+        "name": "The Clean Sphere",
+        "description": "~52 feet wide, 26 feet tall hyperbaric containment chamber",
+        "atmosphere": "4–5% nitrogen/oxygen mix with ~4% hydrogen",
+        "temperature": "20–30°F",
+        "location": "ASL level; raised/lowered by advanced scissor lift",
+        "purpose": "Designed to slow J-Rod neuropathy progression",
+        "access": "Required Total Encapsulating Suits (TES) for human occupancy"
+      },
+      {
+        "name": "Looking Glass Device",
+        "description": "Reverse-engineered from ancient Sumerian cylinder seals; artificial gravity wave generator",
+        "components": ["Toroidal chamber", "Liquid argon barrel", "Focusing rings", "Energy projection unit"],
+        "operation": "Operated in pairs (one at S-4, one elsewhere on Nevada Test Site)",
+        "function": "Opened a window into quantum probabilities, allowing observation of alternate timeline events",
+        "cost_estimate": "$4 billion",
+        "use": "Used by international leadership to analyze probable future outcomes; components distributed to EU, UN, NATO"
+      }
+    ],
+    "notable_visitors": [
+      "Vice Admiral John 'Mike' McConnell (multiple visits)",
+      "Dr. Dan Burisch (1993–1996, Microbiologist V)",
+      "Dr. Marcia McDowell",
+      "Kewper / 'Stein' (CIA analyst, alleged 1958 visit)"
+    ]
+  },
+
+  "projects": [
+    {
+      "id": "project-aquarius",
+      "name": "Project Aquarius",
+      "classification": "Black / Unacknowledged Special Access Program",
+      "established": "1953",
+      "purpose": "Umbrella project to accumulate data on extraterrestrial biological entities (EBEs) and distribute findings to relevant authorities",
+      "admin": "Initially USAF; later transferred to Navy and NSA cryptology control",
+      "documentation": "Briefing books titled 'Aquarius', marked DTIC (Defense Technical Information Center)"
+    },
+    {
+      "id": "project-sigma",
+      "name": "Project Sigma",
+      "parent": "Project Aquarius",
+      "purpose": "Establish communication with extraterrestrial entities",
+      "outcome": "Achieved 'positive success' in 1959 with primitive contact"
+    },
+    {
+      "id": "project-galileo",
+      "name": "Project Galileo",
+      "parent": "Project Aquarius",
+      "purpose": "Study extraterrestrial and future-terrestrial vehicle propulsion systems",
+      "key_personnel": ["Robert Lazar (gravity wave manipulation)"],
+      "notes": "Direct predecessor to Bob Lazar's claimed S-4 work"
+    },
+    {
+      "id": "project-sidekick",
+      "name": "Project Sidekick",
+      "parent": "Project Aquarius",
+      "purpose": "Develop beam weapons based on alien craft technology"
+    },
+    {
+      "id": "project-looking-glass",
+      "name": "Project Looking Glass",
+      "parent": "Project Aquarius",
+      "purpose": "Artificial gravity wave physics and temporal probability observation",
+      "function": "Showed probable future event outcomes; back-engineered from ancient cylinder seals",
+      "distribution": "Components distributed to EU, UN, NATO",
+      "related_object": "Orion Cube (Yellow Book/Yellow Disc) — 1954 Eisenhower gift from Orion entities; probability projection influenced by human emotions"
+    },
+    {
+      "id": "project-lotus",
+      "name": "Project Lotus",
+      "aliases": ["Starflower", "Licorice"],
+      "parent": "Project Aquarius",
+      "director": "Dan Burisch",
+      "purpose": "Silicate-associated biological phenomenon research; origins of life investigation",
+      "location": "Frenchman Mountain, Nevada; Cabrillo Bay, Los Angeles",
+      "discoveries": ["Ganesh particle", "Ancient viral seeding hypothesis for genesis of life"],
+      "outcome": "Burisch lectured findings at Caltech's Beckman Auditorium (2008)"
+    },
+    {
+      "id": "project-preserve-destiny",
+      "name": "Project Preserve Destiny",
+      "parent": "Project Aquarius",
+      "established": "Pre-1960",
+      "purpose": "Population preparation for anticipated 2012 cataclysmic events"
+    },
+    {
+      "id": "project-preserve-mother",
+      "name": "Project Preserve Mother",
+      "parent": "Project Aquarius",
+      "purpose": "Ganesh particle deployment for ecosystem remediation",
+      "location": "Cabrillo Bay, Los Angeles"
+    },
+    {
+      "id": "raindancer",
+      "name": "Raindancer",
+      "parent": "Project Aquarius",
+      "purpose": "Chemtrail-related aerosolized inoculation using Ganesh particles for bioremediation",
+      "location": "Florida Bay",
+      "notes": "Compartmentalized; Burisch had limited direct involvement"
+    }
+  ],
+
+  "documents": [
+    {
+      "id": "q94",
+      "designation": "Q-94-109A",
+      "common_name": "The Q94 Document",
+      "date": "1994",
+      "authors": ["Dan Burisch", "Steven M. (supervisor)"],
+      "significance": "Primary scientific record of J-Rod biological tissue sampling, neuropathy analysis, and extraterrestrial biology findings from S-4 Clean Sphere work",
+      "leak_history": "Circulated among Burisch researchers; first publicly acknowledged by Bill Hamilton in 1999",
+      "status": "Partially corroborated; original classification unknown"
+    },
+    {
+      "id": "tom-mack-letter",
+      "designation": "The Tom Mack Letter",
+      "common_name": "Tom Mack Letter",
+      "date": "Undisclosed",
+      "significance": "Correspondence corroborating aspects of Burisch's claimed credentials and black-program involvement",
+      "source_url": "https://www.burischarchive.com/the-tom-mack-letter"
+    },
+    {
+      "id": "congressional-record",
+      "designation": "Congressional Record Entry",
+      "common_name": "Congressional Record",
+      "significance": "Official government document cited as supporting Burisch's identity and scientific credibility",
+      "source_url": "https://www.burischarchive.com/congressional-record"
+    },
+    {
+      "id": "eagles-disobey",
+      "designation": "Eagles Disobey: The Case for Inca City, Mars",
+      "common_name": "Eagles Disobey",
+      "date": "1998",
+      "authors": ["Dan Burisch", "Marcia McDowell"],
+      "significance": "Published analysis of NASA imagery anomalies in Martian 'Inca City' region; ordered suppressed by Committee of the Majority; Burisch refused suppression, leading to credential revocation",
+      "status": "Publicly available book"
+    },
+    {
+      "id": "affidavits",
+      "designation": "Sworn Affidavits",
+      "common_name": "Supporting Affidavits",
+      "significance": "Multiple sworn, notarized statements from individuals confirming Burisch's work and credentials",
+      "source_url": "https://www.burischarchive.com/affidavits"
+    }
+  ],
+
+  "timeline": [
+    { "date": "Early 1970s", "event": "Alleged abduction by P-45s and J-Rod entity; Chi'el'ah recognizes Burisch from this encounter", "category": "biography" },
+    { "date": "1986", "event": "Inducted into Majestic-12 while UNLV student; assigned to Committee of the Majority as microbiologist", "category": "biography" },
+    { "date": "1991", "event": "Deployed during Gulf War to counter unauthorized biological warfare use", "category": "operations" },
+    { "date": "1993", "event": "Assigned to S-4 Papoose Lake as Microbiologist V; begins J-Rod research under Project Aquarius", "category": "operations" },
+    { "date": "1994", "event": "Receives ~30-minute continuous telepathic information download from Chi'el'ah after protocol breach; remains comatose for days", "category": "entity-contact" },
+    { "date": "1994", "event": "Co-authors Q-94-109A biological report with supervisor Steven M.", "category": "documents" },
+    { "date": "1997", "event": "Discovers anomalies in NASA imagery of Martian 'Inca City'; co-authors Eagles Disobey with Marcia McDowell", "category": "research" },
+    { "date": "1998", "event": "Eagles Disobey published; Committee of the Majority orders halt; Burisch refuses; Ph.D. nullified; near-fatal heart attack", "category": "biography" },
+    { "date": "1999", "event": "Undergoes neurochemical memory reconditioning; relocated to Mississippi; mind rejects programming; returned to Las Vegas", "category": "biography" },
+    { "date": "2001", "event": "Exchanges time travel and timeline data with Chi'el'ah; begins documenting Lotus project", "category": "research" },
+    { "date": "2003", "event": "Aids Chi'el'ah's return home via Stargate portal; Marcia McDowell inducted into Majestic", "category": "entity-contact" },
+    { "date": "2005-04", "event": "Appointed MJ-9 pro-tem and H-1-Maj (disclosure officer) within Majestic-12", "category": "biography" },
+    { "date": "2005-10-12", "event": "Majestic-12 formally adjourned; Burisch issued final orders to speak publicly", "category": "biography" },
+    { "date": "2006", "event": "Completes final public disclosure orders; retires from Majestic service", "category": "biography" },
+    { "date": "2007", "event": "Brief classified 'National Security' project involving Looking Glass technology", "category": "operations" },
+    { "date": "2008-03", "event": "Lectures at Caltech Beckman Auditorium on Project Lotus findings", "category": "research" },
+    { "date": "2008-06-05", "event": "Provides public updates on Timeline 1, variant 83", "category": "research" },
+    { "date": "2012", "event": "Researcher Brian Jackson begins 13-year investigation into Burisch claims", "category": "archive" },
+    { "date": "2018", "event": "90-minute phone call with Brian Jackson; expresses hope to advance Lotus toward peer review", "category": "research" }
+  ],
+
+  "mj12": [
+    { "seat": "MJ1", "name": "John 'Mike' McConnell", "roles": ["Vice Admiral, US Navy", "NSA Director", "US Director of National Intelligence"] },
+    { "seat": "MJ2", "name": "Dick Cheney", "roles": ["US Vice President", "White House Chief of Staff", "US Representative"] },
+    { "seat": "MJ3", "name": "Porter Goss", "roles": ["CIA Director", "Director of Central Intelligence", "Director of National Intelligence"] },
+    { "seat": "MJ4", "name": "Bobby Ray Inman", "roles": ["Director of Naval Intelligence", "Vice Director DIA", "NSA Director"] },
+    { "seat": "MJ5", "name": "Henry Kissinger", "roles": ["US Secretary of State", "National Security Advisor"] },
+    { "seat": "MJ6", "name": "Zbigniew Brzezinski", "roles": ["Presidential Counselor", "National Security Advisor"] },
+    { "seat": "MJ7", "name": "Richard Myers", "roles": ["US Air Force General", "Chairman of the Joint Chiefs of Staff"] },
+    { "seat": "MJ8", "name": "Sir Kevin Tebbit", "roles": ["UK Secretary of State for Defense", "First Secretary to UK's NATO delegation"] },
+    { "seat": "MJ9", "name": "Carole Thatcher", "roles": ["Daughter of Margaret Thatcher", "English journalist and author"], "notes": "'Seat 9 is reserved for a distinguished member of the public'" },
+    { "seat": "MJ10", "name": "Alan Greenspan", "roles": ["Federal Reserve Chairman", "American economist"] },
+    { "seat": "MJ11", "name": "Harold Varmus", "roles": ["Nobel Prize winner (medicine)", "National Institutes of Health Director"] },
+    { "seat": "MJ12", "name": "Undisclosed", "roles": [], "notes": "Identity not revealed in source material" }
+  ],
+
+  "testimonies": [
+    {
+      "id": "kewper",
+      "witness": "Kewper / 'Stein'",
+      "real_identity": "Unknown; former Army and CIA UFO Analyst",
+      "introduced_by": "Linda Moulton Howe (investigative journalist), 1998",
+      "key_claims": [
+        "Visited S-4 facility at Papoose Lake in August 1958 with five CIA agents",
+        "Observed 7 craft in the S-4 hangars",
+        "Witnessed a living extraterrestrial entity ('Gray') being held at the location",
+        "Delivered 'deathbed confession' video testimony at 2013 Citizens Hearing on Disclosure, Washington D.C."
+      ],
+      "burisch_connection": "Kewper's 1958 S-4 account predates Burisch's 1993 deployment by 35 years, independently placing a living extraterrestrial at Papoose Lake and corroborating the operational timeline back to the Eisenhower era",
+      "notes": "Minor description inconsistency between June 1998 and September 1998 accounts of entity clothing"
+    },
+    {
+      "id": "malmgren",
+      "witness": "Harald Malmgren",
+      "background": "Senior advisor to four US presidents; held Q-clearance; present during Cuban Missile Crisis",
+      "key_claims": [
+        "Publicly stated: 'Your name gets written in all the important books of talent — not only CIA, but you know, all the Majestic'",
+        "First high-level official to publicly acknowledge Majestic-12 as an active talent identification program",
+        "Eventually handled physical UFO debris at Los Alamos"
+      ],
+      "burisch_connection": "Confirms Majestic-12 actively identified and recruited exceptional young scientists — matching the mechanism by which Burisch was purportedly recruited"
+    },
+    {
+      "id": "dan-sherman",
+      "witness": "Dan Sherman",
+      "background": "US Air Force Staff Sergeant; Electronic Intelligence (ELINT) Analyst; NSA operative",
+      "key_claims": [
+        "Covertly inducted into 'Project Preserve Destiny' (PPD) — a classified black operation",
+        "Trained as an 'intuitive communicator' with direct alien interaction protocols",
+        "Claims his mother underwent covert genetic experimentation during pregnancy to enhance psychic potential"
+      ],
+      "burisch_connection": "Both Sherman and Burisch report being guided by government handlers from childhood into classified military programs; parallels in recruitment methodology and program structure"
+    },
+    {
+      "id": "anonymous-engineer",
+      "witness": "Anonymous Electrical Engineer",
+      "background": "~40 years in classified military-industrial roles; waived unacknowledged special access programs (WUSAPs)",
+      "key_claims": [
+        "Built operational gravitational wave generator in BAE lab under $3 million budget",
+        "Identified Vice Admiral John McConnell as UFO secrets gatekeeper and MJ1",
+        "Worked in electrical systems, microelectronics, pulse power, and antigravity experimentation"
+      ],
+      "burisch_connection": "Independently corroborates Burisch's stated close relationship with McConnell and McConnell's role as the primary Majestic authority figure",
+      "source": "4chan leak; anonymized"
+    }
+  ],
+
+  "arguments": {
+    "supporting": [
+      {
+        "category": "Physical Documentation",
+        "claim": "Supporters possess photographs showing Burisch with full hair in 1990, corroborating aspects of timeline; framed Ph.D. degree received by parents"
+      },
+      {
+        "category": "Professional Recognition",
+        "claim": "Channel 8 referred to him as 'Dr. Crain' in broadcasts; NASA allegedly accepted his biological experiment proposal for Mars missions; awarded 'Straight from the Hart Award' on television"
+      },
+      {
+        "category": "Witness Testimony",
+        "claim": "Multiple individuals willing to provide sworn, notarized affidavits confirming his work; Dr. Michael Salla publicly affirmed Burisch's authenticity"
+      },
+      {
+        "category": "Scientific Credibility",
+        "claim": "Early mentorship under chief pathologist at Long Beach Memorial; work with Dr. John Bunyan on hypochlorite research referenced in medical literature"
+      },
+      {
+        "category": "Ethical Standards",
+        "claim": "Reportedly refused to participate in unethical cancer drug research, demonstrating professional integrity over financial gain"
+      }
+    ],
+    "against": [
+      {
+        "category": "Investigative Criticism",
+        "claim": "George Knapp's article identified alleged fabricated details in Burisch's early biographical narrative"
+      },
+      {
+        "category": "Financial Issues",
+        "claim": "Bankruptcy filing cited by critics as undermining credibility and suggesting financial instability"
+      },
+      {
+        "category": "Academic Disputes",
+        "claim": "Conflict with UNLV biology professors over research direction; transfer to psychology department under disputed circumstances"
+      },
+      {
+        "category": "Documentation Gaps",
+        "claim": "Ph.D. from SUNY allegedly disappeared or was removed; limited independent verification of claimed credentials"
+      },
+      {
+        "category": "Methodological Concerns",
+        "claim": "Claims about hypochlorite research lack independent peer-reviewed documentation; scientific work described as misunderstood rather than verified by skeptics"
+      }
+    ]
+  },
+
+  "concepts": [
+    {
+      "id": "dctp",
+      "name": "Doctrine of Convergent Timeline Paradox (DCTP)",
+      "summary": "Theoretical framework proposing that time-traveling entities do not erase their origin timeline but instead converge or superimpose with the present reality, creating a 'chimera' blended state.",
+      "mechanics": [
+        "Reality operates as a 'multi-wave time stream' with multiple causality paths as simultaneous overlays",
+        "Individual consciousness or energy potentially influences which temporal path one aligns with",
+        "Different realities can phase in/out or exist as facets of a larger structure (gemstone analogy)",
+        "Natural 'semi-quiescent convergence' occurs when timelines interact"
+      ],
+      "key_claims": [
+        "J-Rod entities from ~52,000 years in humanity's future traveled backward to prevent catastrophe",
+        "Anticipated disaster centered on 2012 timeframe: pole shifts, solar disruption, 4+ billion casualties",
+        "Moon and Mars ruins are allegedly future cities not yet built in linear timeline",
+        "Post-2012, converged timelines expected to naturally separate and diverge"
+      ],
+      "factions": [
+        "Non-Rogue J-Rods: cooperated with Majestic/humans to avert catastrophe",
+        "Rogue J-Rods: self-interested, opposed disclosure, deployed human hybrids as timeline enforcement agents"
+      ],
+      "outcome": "The 2012 catastrophe did not occur, which proponents interpret as evidence the prevention efforts succeeded"
+    },
+    {
+      "id": "phenotypic-evolution",
+      "name": "Phenotypic Evolution Theory",
+      "summary": "Burisch's framework proposing that present-day humans will evolve into J-Rod morphology over ~52,000 years through a combination of environmental pressures, genetic intervention, and punctuated evolutionary change.",
+      "framework": [
+        "Cites Stephen Jay Gould's punctuated equilibrium — evolution occurs in rapid phases under selective pressure",
+        "Low-light underground/off-world environments drove selection for enlarged eyes",
+        "Chronic skeletal conditions (Cockayne Syndrome-like) caused structural adaptations",
+        "Organ modifications including simplified respiratory/digestive function for energy efficiency"
+      ],
+      "genetic_component": [
+        "J-Rods allegedly manipulated ancient human DNA: 'removed a single strand' enabling interbreeding with Neandertolins",
+        "Implemented artificial selection through arranged marriages and controlled breeding pools",
+        "Used retroviruses and terrestrial papillomavirus for genetic engineering"
+      ],
+      "implication": "The J-Rod neurological degeneration is a consequence of their own ancestors' past genetic interventions — a form of evolutionary blowback"
+    },
+    {
+      "id": "ganesh-particle",
+      "name": "Ganesh Particle",
+      "summary": "Silicate-associated biological phenomenon discovered by Burisch during Project Lotus research at Frenchman Mountain, Nevada. Hypothesized to be a primordial life genesis mechanism.",
+      "properties": [
+        "Associated with silicate substrates",
+        "Hypothesized role in ancient viral seeding of life on Earth",
+        "Deployed in ecosystem remediation programs (Project Preserve Mother, Raindancer)"
+      ],
+      "research_context": "Project Lotus (Starflower/Licorice); presented at Caltech 2008"
+    }
+  ]
+}
