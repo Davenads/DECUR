@@ -32,6 +32,58 @@ const statusConfig: Record<string, { label: string; classes: string }> = {
   'verified':              { label: 'Verified',               classes: 'bg-green-100 text-green-700' },
 };
 
+/* ─── Claims status bar ─────────────────────────────────────── */
+
+const statusBarConfig: Array<{ key: string; label: string; bar: string; dot: string }> = [
+  { key: 'verified',              label: 'Verified',              bar: 'bg-green-500', dot: 'bg-green-500' },
+  { key: 'partially-verified',    label: 'Partially Verified',    bar: 'bg-blue-400',  dot: 'bg-blue-400'  },
+  { key: 'unverified',            label: 'Unverified',            bar: 'bg-gray-300',  dot: 'bg-gray-400'  },
+  { key: 'disputed',              label: 'Disputed',              bar: 'bg-amber-400', dot: 'bg-amber-400' },
+  { key: 'partially-contradicted',label: 'Partially Contradicted',bar: 'bg-red-400',   dot: 'bg-red-400'   },
+];
+
+interface ClaimsStatusBarProps { claims: Array<{ status: string }> }
+
+const ClaimsStatusBar: FC<ClaimsStatusBarProps> = ({ claims }) => {
+  const total = claims.length;
+  const counts = statusBarConfig.map(s => ({
+    ...s,
+    count: claims.filter(c => c.status === s.key).length,
+  })).filter(s => s.count > 0);
+
+  return (
+    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
+      <div className="flex items-center justify-between">
+        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Claims Verification Overview</p>
+        <span className="text-xs text-gray-400">{total} total claims</span>
+      </div>
+
+      {/* Stacked proportion bar */}
+      <div className="flex h-3 rounded-full overflow-hidden gap-px">
+        {counts.map(s => (
+          <div
+            key={s.key}
+            className={`${s.bar} transition-all`}
+            style={{ width: `${(s.count / total) * 100}%` }}
+            title={`${s.label}: ${s.count}`}
+          />
+        ))}
+      </div>
+
+      {/* Legend */}
+      <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+        {counts.map(s => (
+          <div key={s.key} className="flex items-center gap-1.5">
+            <span className={`w-2 h-2 rounded-full shrink-0 ${s.dot}`} />
+            <span className="text-xs text-gray-600">{s.label}</span>
+            <span className="text-xs font-semibold text-gray-800">{s.count}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 /* ─── Sub-views ──────────────────────────────────────────────── */
 
 const OverviewTab: FC = () => {
@@ -294,6 +346,8 @@ const ClaimsTab: FC = () => {
       <p className="text-sm text-gray-500">
         Structured inventory of Lazar&apos;s claims with current verification status.
       </p>
+
+      <ClaimsStatusBar claims={claims} />
 
       <div className="flex flex-wrap gap-1.5">
         <button
