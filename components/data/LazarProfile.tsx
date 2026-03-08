@@ -404,12 +404,56 @@ const DisclosuresTab: FC = () => {
     podcast:     'bg-purple-100 text-purple-700',
     documentary: 'bg-amber-100 text-amber-700',
   };
+  const typeDot: Record<string, string> = {
+    television:  'bg-blue-400',
+    radio:       'bg-green-400',
+    podcast:     'bg-purple-400',
+    documentary: 'bg-amber-400',
+  };
+
+  // Summary stats
+  const years = disclosures.map(d => parseInt(d.date.slice(0, 4))).filter(y => !isNaN(y));
+  const firstYear = Math.min(...years);
+  const lastYear  = Math.max(...years);
+  const typeCounts = disclosures.reduce<Record<string, number>>((acc, d) => {
+    acc[d.type] = (acc[d.type] ?? 0) + 1;
+    return acc;
+  }, {});
 
   return (
     <div className="space-y-4">
       <p className="text-sm text-gray-500">
         Chronological record of Lazar&apos;s public disclosures and media appearances.
       </p>
+
+      {/* Summary panel */}
+      <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
+        <div className="flex items-center justify-between">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Disclosure Activity</p>
+          <span className="text-xs text-gray-400">{disclosures.length} appearances · {firstYear}–{lastYear}</span>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          {Object.entries(typeCounts).sort((a, b) => b[1] - a[1]).map(([type, count]) => (
+            <div key={type} className="flex items-center gap-1.5">
+              <span className={`w-2 h-2 rounded-full shrink-0 ${typeDot[type] ?? 'bg-gray-400'}`} />
+              <span className="text-xs text-gray-600 capitalize">{type}</span>
+              <span className="text-xs font-semibold text-gray-800">{count}</span>
+            </div>
+          ))}
+        </div>
+        {/* Activity bar — one tick per disclosure, colored by type, ordered chronologically */}
+        <div className="flex gap-0.5 h-3 items-end">
+          {disclosures.map((d, i) => (
+            <div
+              key={i}
+              className={`flex-1 rounded-sm ${typeDot[d.type] ?? 'bg-gray-300'}`}
+              style={{ minWidth: '6px', height: '100%' }}
+              title={`${d.date} · ${d.type} · ${d.title}`}
+            />
+          ))}
+        </div>
+      </div>
+
       <div className="relative pl-6 border-l-2 border-gray-100 space-y-4">
         {disclosures.map((d, i) => (
           <div key={i} className="relative">
