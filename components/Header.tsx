@@ -51,10 +51,11 @@ const Header: FC<HeaderProps> = () => {
       title: 'Data',
       path: '/data',
       items: [
-        { title: 'Non-Human Intelligence', path: '/data?category=entities' },
-        { title: 'Advanced Technologies', path: '/data?category=technologies' },
-        { title: 'Special Access Programs', path: '/data?category=programs' },
-        { title: 'Whistleblowers', path: '/data?category=whistleblowers' }
+        { title: 'Historical Events', path: '/data?category=events' },
+        { title: 'Key Figures', path: '/data?category=figures' },
+        { title: 'Quotes', path: '/data?category=quotes' },
+        { title: 'Media & Documents', path: '/data?category=media' },
+        { title: 'News', path: '/data?category=news' }
       ]
     },
     resources: {
