@@ -83,6 +83,14 @@ export const graphData: GraphData = {
     { id: 'project-galileo',     name: 'Project Galileo',      type: 'project',      group: 'lazar',    val: 2 },
     { id: 'project-preserve',    name: 'Project Preserve Destiny', type: 'project',  group: 'burisch',  val: 2 },
     { id: 'aatip',               name: 'AATIP',                type: 'project',      group: 'elizondo', val: 5 },
+    // Gerb-researched programs (mentioned across 5+ videos)
+    { id: 'project-blue-book',   name: 'Project Blue Book',    type: 'project',      group: 'shared',   val: 4 },
+    { id: 'project-grudge',      name: 'Project Grudge',       type: 'project',      group: 'shared',   val: 3 },
+    { id: 'project-sign',        name: 'Project Sign',         type: 'project',      group: 'shared',   val: 3 },
+    { id: 'disclosure-project',  name: 'Disclosure Project',   type: 'project',      group: 'shared',   val: 3 },
+    { id: 'immaculate-constellation', name: 'Immaculate Constellation', type: 'project', group: 'shared', val: 4 },
+    { id: 'project-moondust',    name: 'Project Moon Dust',    type: 'project',      group: 'shared',   val: 3 },
+    { id: 'operation-paperclip', name: 'Operation Paperclip',  type: 'project',      group: 'shared',   val: 3 },
 
     // Concepts
     { id: 'five-observables',    name: '5 Observables',        type: 'concept',      group: 'elizondo', val: 3 },
@@ -159,6 +167,12 @@ export const graphData: GraphData = {
     { source: 'majestic-12',      target: 'project-aquarius',   label: 'oversees' },
     { source: 'majestic-12',      target: 'committee-majority', label: 'evolved into' },
     { source: 'majestic-12',      target: 'som1-01',            label: 'produced' },
+
+    // Gerb-researched program connections
+    { source: 'project-sign',     target: 'project-grudge',     label: 'predecessor of' },
+    { source: 'project-grudge',   target: 'project-blue-book',  label: 'predecessor of' },
+    { source: 'project-moondust', target: 'uap-task-force',     label: 'predecessor of' },
+    { source: 'immaculate-constellation', target: 'uap-task-force', label: 'related program' },
 
     // Project connections
     { source: 'project-aquarius', target: 'project-lotus',      label: 'sub-project' },

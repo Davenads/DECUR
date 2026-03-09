@@ -1,0 +1,1467 @@
+[
+  {
+    "term": "3AF PAN",
+    "definition": "French National Aeronautical and Astronautical Association Unidentified Aerospace Phenomena Division - French organization studying unidentified aerospace phenomena",
+    "source": "gerb"
+  },
+  {
+    "term": "AAF",
+    "definition": "Army Air Forces - The aerial warfare service of the United States Army during and after World War II",
+    "source": "gerb"
+  },
+  {
+    "term": "AARO",
+    "definition": "All-domain Anomaly Resolution Office - Established by the DoD in July 2022 as the centralized office for detecting, identifying, and attributing UAP. Replaced the UAP Task Force. Responsible for producing the 2024 Historical Record Report.",
+    "source": "curated"
+  },
+  {
+    "term": "AATIP",
+    "definition": "Advanced Aerospace Threat Identification Program - A classified Pentagon program that ran from 2007 to 2012 under Defense Intelligence Agency funding, focused on investigating UAP reported by U.S. military personnel. Luis Elizondo claims to have directed it through 2017 under a different organizational umbrella. Publicly confirmed via a 2017 New York Times investigation.",
+    "source": "curated"
+  },
+  {
+    "term": "AAWSAP",
+    "definition": "Advanced Aerospace Weapon System Application Program - The broader predecessor to AATIP, managed by the Defense Intelligence Agency with Bigelow Aerospace Advanced Space Studies (BAASS) as primary contractor. Covered a wider range of anomalous phenomena than AATIP's aerial focus.",
+    "source": "curated"
+  },
+  {
+    "term": "ABMA",
+    "definition": "Army Ballistic Missile Agency - Wernher Von Braun's team that performed advanced aerospace projects and was considered for transfer into a Defense Advanced Research Center",
+    "source": "gerb"
+  },
+  {
+    "term": "ACC",
+    "definition": "Air Combat Command - Air Force Major Command",
+    "source": "gerb"
+  },
+  {
+    "term": "ACNW",
+    "definition": "Aircraft Control and Warning - Radar site designation (767 ACNW was the El Vado radar site protecting Los Alamos)",
+    "source": "gerb"
+  },
+  {
+    "term": "ACOG",
+    "definition": "Not explicitly stated - Advanced Combat Optical Gunsight - rifle optic mentioned on operators' weapons",
+    "source": "gerb"
+  },
+  {
+    "term": "AEC",
+    "definition": "Atomic Energy Commission - Predecessor agency to DOE and NRC; used to misclassify UFO records in 1954 under transclassified foreign nuclear material",
+    "source": "gerb"
+  },
+  {
+    "term": "AFMC",
+    "definition": "Air Force Material Command - Major command of the Air Force",
+    "source": "gerb"
+  },
+  {
+    "term": "AFOIN",
+    "definition": "Air Force Office of Intelligence - Air Force intelligence office that conducted parallel UFO investigations to Project Blue Book",
+    "source": "gerb"
+  },
+  {
+    "term": "AFOSI",
+    "definition": "Air Force Office of Special Investigation - US Air Force agency that investigated Newton and the Aztec case, interrogating witnesses about the crash",
+    "source": "gerb"
+  },
+  {
+    "term": "AFOSIPJ",
+    "definition": "Air Force Office of Special Investigations - Special Projects - Insider and outsider threat protection element for programs focused on non-human technical vehicles",
+    "source": "gerb"
+  },
+  {
+    "term": "AFRL",
+    "definition": "Air Force Research Lab - The primary R&D arm of the Air Force, component of Air Force Material Command",
+    "source": "gerb"
+  },
+  {
+    "term": "AFSOC",
+    "definition": "Air Force Special Operations Command - Air Force Major Command for special operations",
+    "source": "gerb"
+  },
+  {
+    "term": "AFSWP",
+    "definition": "Armed Forces Special Weapons Project - A joint Army and Navy venture established in 1947 to manage nuclear weapons, operated at Sandia Base",
+    "source": "gerb"
+  },
+  {
+    "term": "AFTC",
+    "definition": "Air Force Test Center - Formerly Air Force Flight Test Center (AFFTC), operates test wings",
+    "source": "gerb"
+  },
+  {
+    "term": "AFTEZ",
+    "definition": "Air Force Test and Evaluation - Special Programs Division - Special programs division under Air Force Test and Evaluation",
+    "source": "gerb"
+  },
+  {
+    "term": "AFTTE",
+    "definition": "Air Force Test and Evaluation - Air Force directorate dealing with test and evaluation operations",
+    "source": "gerb"
+  },
+  {
+    "term": "ALC",
+    "definition": "Advanced Learning Course - US Army advanced training course",
+    "source": "gerb"
+  },
+  {
+    "term": "AMC",
+    "definition": "Air Mobility Command - Air Force Major Command",
+    "source": "gerb"
+  },
+  {
+    "term": "AO",
+    "definition": "Area of Operations - A defined geographic area where military operations are conducted",
+    "source": "gerb"
+  },
+  {
+    "term": "APRO",
+    "definition": "Aerial Phenomena Research Organization - A civilian UFO research organization led by retired USMC Major Donald Keyhoe",
+    "source": "gerb"
+  },
+  {
+    "term": "ARL",
+    "definition": "Applied Research Laboratory - Penn State University's Navy-affiliated research center specializing in power systems, electro-optics, and directed energy",
+    "source": "gerb"
+  },
+  {
+    "term": "ARPA",
+    "definition": "Advanced Research Projects Agency - Defense agency that conducted advanced aerospace projects, predecessor organization related to DARPA",
+    "source": "gerb"
+  },
+  {
+    "term": "ARV",
+    "definition": "Alien Reproduction Vehicle - Human-made craft reverse-engineered from extraterrestrial technology",
+    "source": "gerb"
+  },
+  {
+    "term": "ARVS",
+    "definition": "Alien Reproduction Vehicles - Copycat vehicles reverse-engineered from recovered non-human craft",
+    "source": "gerb"
+  },
+  {
+    "term": "ASTRA",
+    "definition": "Advanced Stealth Technology Reconnaissance Aircraft - Codename for the TR-3B program",
+    "source": "gerb"
+  },
+  {
+    "term": "ATC",
+    "definition": "Air Traffic Control - Ground-based personnel who direct aircraft movements and provide traffic information to pilots",
+    "source": "gerb"
+  },
+  {
+    "term": "ATEC",
+    "definition": "Army Test and Evaluation Command - Army organization that spearheads operations at West Desert Test Center",
+    "source": "gerb"
+  },
+  {
+    "term": "ATIC",
+    "definition": "Air Force Technical Intelligence Center - Air Force intelligence center that investigated UFOs and commissioned Project Stork through Battelle",
+    "source": "gerb"
+  },
+  {
+    "term": "AWACS",
+    "definition": "Airborne Warning and Control System - Flying long-range radar and command center that provides tactical command services to units in their network",
+    "source": "gerb"
+  },
+  {
+    "term": "BAT",
+    "definition": "Biometrics and Tracking - A biometrics and tracking system used to scan military IDs",
+    "source": "gerb"
+  },
+  {
+    "term": "BDM",
+    "definition": "Braddock, Dunn and McDonald - Defense contractor purchased by Northrop Grumman with history of UFO legacy program accusations",
+    "source": "gerb"
+  },
+  {
+    "term": "BDU",
+    "definition": "Battle Dress Uniform - Military camouflage fatigues",
+    "source": "gerb"
+  },
+  {
+    "term": "Bigelow Aerospace",
+    "definition": "Bigelow Aerospace Advanced Space Studies (BAASS) - Robert Bigelow's aerospace company that served as the primary contractor for AAWSAP. Senator Harry Reid secured the AATIP funding at Bigelow's request. BAASS reportedly studied materials collected in connection with UAP incidents.",
+    "source": "curated"
+  },
+  {
+    "term": "C4I",
+    "definition": "Command Control Communications Computers and Intelligence - Military systems integrating command, control, communications, computers, and intelligence capabilities",
+    "source": "gerb"
+  },
+  {
+    "term": "C4ISR",
+    "definition": "Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance - The military's nervous system consisting of various electronic equipment and technologies serving to aid the modern warfighter through data and intelligence",
+    "source": "gerb"
+  },
+  {
+    "term": "C5",
+    "definition": "Close Encounter of the Fifth Kind - Human-initiated contact with extraterrestrial intelligence, a practice promoted by Greer",
+    "source": "gerb"
+  },
+  {
+    "term": "CAP",
+    "definition": "Controlled Access Program - Programs with controlled access requirements",
+    "source": "gerb"
+  },
+  {
+    "term": "CAUS",
+    "definition": "Citizens Against UFO Secrecy - UFO research organization co-founded by Brad Sparks",
+    "source": "gerb"
+  },
+  {
+    "term": "CBDP",
+    "definition": "Chemical and Biological Defense Program - Joint Services program that majorly funds the West Desert Test Center",
+    "source": "gerb"
+  },
+  {
+    "term": "CBRN",
+    "definition": "Chemical Biological Radiological Nuclear - Expertise area related to weapons of mass destruction, mentioned in context of Army Test and Evaluation Command studies on recovered UFOs and biologics",
+    "source": "gerb"
+  },
+  {
+    "term": "CENTCOM",
+    "definition": "Central Command - US unified combatant command responsible for military operations in the Middle East",
+    "source": "gerb"
+  },
+  {
+    "term": "CFI",
+    "definition": "Coalition of Freedom of Information - Organization that worked with Leslie Kean to pursue legal action against NASA for Kecksburg documents",
+    "source": "gerb"
+  },
+  {
+    "term": "CFLCC",
+    "definition": "Combined Forces Land Component Command - Military command structure used in coalition operations",
+    "source": "gerb"
+  },
+  {
+    "term": "CGI",
+    "definition": "Computer Generated Imagery - Digital effects technique suggested by some debunkers as explanation for the footage",
+    "source": "gerb"
+  },
+  {
+    "term": "CIA",
+    "definition": "Central Intelligence Agency - US intelligence agency that publicly acknowledged Area 51 in 2013 and showed interest in the 1952 DC UFO incident",
+    "source": "gerb"
+  },
+  {
+    "term": "CIC",
+    "definition": "Counter Intelligence Corps - Army counter intelligence capacity",
+    "source": "gerb"
+  },
+  {
+    "term": "CID",
+    "definition": "Criminal Investigation Division - Army criminal investigation unit",
+    "source": "gerb"
+  },
+  {
+    "term": "COE",
+    "definition": "Corps of Engineers - US Army Corps of Engineers, involved in design and construction of underground military facilities",
+    "source": "gerb"
+  },
+  {
+    "term": "COG",
+    "definition": "Continuity of Government - Sites designed as command centers and survival bunkers for nuclear attacks",
+    "source": "gerb"
+  },
+  {
+    "term": "Crash Retrieval",
+    "definition": "In UAP research, the alleged government practice of recovering downed or crashed non-human craft. David Grusch's 2023 congressional testimony alleged the U.S. has maintained a multi-decade crash retrieval and reverse engineering program concealed from congressional oversight.",
+    "source": "curated"
+  },
+  {
+    "term": "CTR",
+    "definition": "Communication Technician Radio - A US Navy rating/job classification for personnel handling radio communications",
+    "source": "gerb"
+  },
+  {
+    "term": "DAFF",
+    "definition": "Department of the Air Force - The overarching entity encompassing the entirety of the Air Force and Space Force, led by the Secretary of the Air Force",
+    "source": "gerb"
+  },
+  {
+    "term": "DAR",
+    "definition": "Defense Advanced Research Center - Alleged 10-story underground facility near Papoose Lake south of Groom Lake where advanced reverse engineering occurred",
+    "source": "gerb"
+  },
+  {
+    "term": "DARC",
+    "definition": "Defense Advanced Research Center - Alleged facility beneath Groom Lake with at least 10 underground stories where triangular craft reverse engineering reportedly took place",
+    "source": "gerb"
+  },
+  {
+    "term": "DARPA",
+    "definition": "Defense Advanced Research Projects Agency - Agency that spearheads highly classified propulsion and exotic technology projects according to leaked source.",
+    "source": "gerb"
+  },
+  {
+    "term": "DCAA",
+    "definition": "Defense Contract Audit Agency - Internal DoD auditor that reviews contractor transactions, though audits can be waived for unacknowledged SAPs",
+    "source": "gerb"
+  },
+  {
+    "term": "DEW",
+    "definition": "Distant Early Warning - Radar systems located in Canada used to detect aircraft approaching from the north during the Cold War",
+    "source": "gerb"
+  },
+  {
+    "term": "DFARS",
+    "definition": "Defense Federal Acquisition Regulation Supplement - Guidance regulations for federal acquisitions including rules on IRAD cost justification",
+    "source": "gerb"
+  },
+  {
+    "term": "DHS",
+    "definition": "Department of Homeland Security - Government department mentioned in alleged leaked document",
+    "source": "gerb"
+  },
+  {
+    "term": "DIA",
+    "definition": "Defense Intelligence Agency - One of the 'big six' intelligence agencies",
+    "source": "gerb"
+  },
+  {
+    "term": "DIB",
+    "definition": "Defense Industrial Base - Network of organizations, facilities, and resources that provides the US government with defense-related materials, products, and services, encompassing commercial firms, research centers, university laboratories, and government-owned facilities.",
+    "source": "gerb"
+  },
+  {
+    "term": "DIIB",
+    "definition": "Defense Industrial Base - Network of prime contractors involved in legacy programs",
+    "source": "gerb"
+  },
+  {
+    "term": "DIS",
+    "definition": "Defense Investigation Service - Organization that was not allowed to conduct semi-annual inspections of certain Lockheed aerospace contracts",
+    "source": "gerb"
+  },
+  {
+    "term": "DITRA",
+    "definition": "Defense Threat Reduction Agency - Should be spelled DTRA - defense agency mentioned during acronym quiz",
+    "source": "gerb"
+  },
+  {
+    "term": "DNI",
+    "definition": "Director of National Intelligence - Head of the U.S. Intelligence Community",
+    "source": "gerb"
+  },
+  {
+    "term": "DOD",
+    "definition": "Department of Defense - US government department responsible for military matters",
+    "source": "gerb"
+  },
+  {
+    "term": "DOE",
+    "definition": "Department of Energy - US government department involved in energy policy and nuclear weapons; mentioned as playing active role in UAP research and possibly crash retrieval",
+    "source": "gerb"
+  },
+  {
+    "term": "DOE OICI",
+    "definition": "Department of Energy Office of Intelligence and Counter Intelligence - Program protection structure within DOE that may shield UFO programs",
+    "source": "gerb"
+  },
+  {
+    "term": "DOGE",
+    "definition": "Department of Government Efficiency - Proposed government efficiency initiative potentially involving Elon Musk and Vivek Ramaswamy",
+    "source": "gerb"
+  },
+  {
+    "term": "DOPSR",
+    "definition": "Defense Office of Prepublication and Security Review - Office that reviews materials for classified information before publication",
+    "source": "gerb"
+  },
+  {
+    "term": "DPG",
+    "definition": "Dugway Proving Ground - US Army installation in Utah that tests biological and chemical weapons systems",
+    "source": "gerb"
+  },
+  {
+    "term": "DPI",
+    "definition": "Disclosure Project Initiative - Steven Greer's archive of witness documents and testimonies",
+    "source": "gerb"
+  },
+  {
+    "term": "DRES",
+    "definition": "Desert Range Experimental Station - Remote station managed by US Forest Service located southwest of Dugway's West Desert Test Center",
+    "source": "gerb"
+  },
+  {
+    "term": "DS&T",
+    "definition": "Directorate of Science and Technology - CIA directorate dealing with science and technology",
+    "source": "gerb"
+  },
+  {
+    "term": "DSAI",
+    "definition": "Decision Science Applications, Inc. - A technical services company allegedly connected to SAIC with expertise in military command and control systems",
+    "source": "gerb"
+  },
+  {
+    "term": "DSP",
+    "definition": "Defense Support Program - Satellite program for which Sandia fielded payloads and ground processing systems",
+    "source": "gerb"
+  },
+  {
+    "term": "DSRV",
+    "definition": "Deep Submergence Rescue Vehicle - Submersibles allegedly used for undersea UFO crash retrieval operations",
+    "source": "gerb"
+  },
+  {
+    "term": "DSSP",
+    "definition": "Deep Submergence Systems Project - Navy project to increase depth capabilities for undersea engineering and retrieval operations",
+    "source": "gerb"
+  },
+  {
+    "term": "DTICK",
+    "definition": "Defense Technical Information Center - Management information system used to track special access program documents and information",
+    "source": "gerb"
+  },
+  {
+    "term": "DUM",
+    "definition": "Deep Underground Military Base - Secret underground military installations allegedly connected to black budget spending",
+    "source": "gerb"
+  },
+  {
+    "term": "DUMB",
+    "definition": "Deep Underground Military Base - Secret underground facilities allegedly used for black projects and UAP-related work",
+    "source": "gerb"
+  },
+  {
+    "term": "DUMBS",
+    "definition": "Deep Underground Military Bases - Subterranean military facilities allegedly used for classified operations including UFO-related programs",
+    "source": "gerb"
+  },
+  {
+    "term": "EBD",
+    "definition": "Eisenhower Briefing Document - Alleged 1952 Majestic 12 document briefing President Eisenhower on MJ-12 operations",
+    "source": "gerb"
+  },
+  {
+    "term": "EBE",
+    "definition": "Extraterrestrial Biological Entity - Term used to refer to extraterrestrial beings",
+    "source": "gerb"
+  },
+  {
+    "term": "EBEN",
+    "definition": "Extraterrestrial Biological Entity (with N suffix) - Variation of EBE terminology",
+    "source": "gerb"
+  },
+  {
+    "term": "EBOS",
+    "definition": "Extraterrestrial Biological Organisms - Alleged alien biological entities reportedly studied at Battelle according to an unverified online leaker",
+    "source": "gerb"
+  },
+  {
+    "term": "ECM",
+    "definition": "Electronic Counter Measures - Equipment aboard aircraft for electronic reconnaissance that detected radar signals from UFOs",
+    "source": "gerb"
+  },
+  {
+    "term": "ELINT",
+    "definition": "Electronic Intelligence - Intelligence derived from electronic signals, particularly radar",
+    "source": "gerb"
+  },
+  {
+    "term": "EMP",
+    "definition": "Electromagnetic Pulse - Weapon technology allegedly used to bring down UAP craft",
+    "source": "gerb"
+  },
+  {
+    "term": "ENGAD",
+    "definition": "Next Generation Air Dominance - Fighter aircraft program that Boeing won over Lockheed.",
+    "source": "gerb"
+  },
+  {
+    "term": "EOD",
+    "definition": "Explosive Ordnance Disposal - Military unit specializing in explosive ordnance, specifically 52nd EOD works with NEST",
+    "source": "gerb"
+  },
+  {
+    "term": "EPIC",
+    "definition": "El Paso Intelligence Center - Intelligence center established at Fort Bliss in 1974 that may have provided aerial intelligence",
+    "source": "gerb"
+  },
+  {
+    "term": "ESP",
+    "definition": "Extrasensory Perception - According to Dr. Eric Walker, knowledge of ESP was needed to engage in UFO legacy programs; ONR has shown interest in studying this",
+    "source": "gerb"
+  },
+  {
+    "term": "FAA",
+    "definition": "Federal Aviation Administration - US federal agency that tracked the UFO during the Japan Airlines 1628 incident on radar",
+    "source": "gerb"
+  },
+  {
+    "term": "FAP",
+    "definition": "Peruvian Air Force - Peru's military air force",
+    "source": "gerb"
+  },
+  {
+    "term": "FEMA",
+    "definition": "Federal Emergency Management Agency - US government agency that coordinates disaster response",
+    "source": "gerb"
+  },
+  {
+    "term": "FET",
+    "definition": "Field Effect Transistor - Type of transistor first proposed in 1926 but not constructable until later",
+    "source": "gerb"
+  },
+  {
+    "term": "FFRDC",
+    "definition": "Federally Funded Research and Development Center - Government-owned contractor-operated institutions like MITRE, Aerospace Corporation, RAND, and DOE national labs",
+    "source": "gerb"
+  },
+  {
+    "term": "FFRDCS",
+    "definition": "Federally Funded Research and Development Centers - Government-sponsored research institutions that partner with defense contractors on classified projects",
+    "source": "gerb"
+  },
+  {
+    "term": "Five Observables",
+    "definition": "An analytical framework developed by Luis Elizondo describing five consistent flight characteristics observed across UAP encounters studied under AATIP: (1) anti-gravity lift, (2) sudden and instantaneous acceleration, (3) hypersonic velocity without sonic signature, (4) low observability or cloaking, and (5) trans-medium travel. None are consistent with known human aerospace capability.",
+    "source": "curated"
+  },
+  {
+    "term": "FLIR",
+    "definition": "Forward Looking Infrared - Infrared imaging platform used on military aircraft to capture UAP footage",
+    "source": "gerb"
+  },
+  {
+    "term": "FOIA",
+    "definition": "Freedom of Information Act - Law allowing public access to government records, used to get Area 51 acknowledged in 2013",
+    "source": "gerb"
+  },
+  {
+    "term": "FSC",
+    "definition": "Flight Security Controller - Personnel responsible for monitoring security at nuclear missile sites",
+    "source": "gerb"
+  },
+  {
+    "term": "FTD",
+    "definition": "Foreign Technology Division - A division at Wright-Patterson Air Force Base allegedly used as a red herring for UAP investigations",
+    "source": "gerb"
+  },
+  {
+    "term": "GAO",
+    "definition": "General Accounting Office - US government agency that conducted audits finding 1,460 discrepancies in Lockheed's classified document inventory",
+    "source": "gerb"
+  },
+  {
+    "term": "GEOINT",
+    "definition": "Geospatial Intelligence - Intelligence about human activity on earth derived from exploitation and analysis of imagery and geospatial information",
+    "source": "gerb"
+  },
+  {
+    "term": "GSP",
+    "definition": "George St. Pierre - Legendary UFC fighter and two-division champion who is interested in UFOs and appeared at the Montreal show",
+    "source": "gerb"
+  },
+  {
+    "term": "HAF",
+    "definition": "Headquarters of the Air Force - The Air Staff - top military leadership supporting the Secretary of the Air Force",
+    "source": "gerb"
+  },
+  {
+    "term": "ICBM",
+    "definition": "Intercontinental Ballistic Missile - A long-range nuclear missile capable of traveling between continents, designed to deliver nuclear warheads",
+    "source": "gerb"
+  },
+  {
+    "term": "ICIG",
+    "definition": "Intelligence Community Inspector General - The independent oversight body within the U.S. intelligence community. In May 2022, ICIG Thomas Monheim received David Grusch's formal Disclosure of Urgent Concern and deemed it credible and urgent - a formal legal threshold that triggered congressional notification.",
+    "source": "curated"
+  },
+  {
+    "term": "IDA",
+    "definition": "Institute for Defense Analysis - Federally funded research and development center sponsored by DoD",
+    "source": "gerb"
+  },
+  {
+    "term": "IDIQ",
+    "definition": "Indefinite Delivery Indefinite Quantity - Type of government contract that provides for an indefinite quantity of services during a fixed period",
+    "source": "gerb"
+  },
+  {
+    "term": "IMCON",
+    "definition": "Immaculate Constellation - A USAP established in 2017 with the primary mission of collecting imagery intelligence on UAP and ARV/RV using tasked and untasked intelligence resources",
+    "source": "gerb"
+  },
+  {
+    "term": "IMINT",
+    "definition": "Imagery Intelligence - Intelligence derived from imagery collected by satellites, aircraft, or other platforms",
+    "source": "gerb"
+  },
+  {
+    "term": "INDOPACOM",
+    "definition": "Indo-Pacific Command - US military command responsible for the Indo-Pacific region",
+    "source": "gerb"
+  },
+  {
+    "term": "INDSEC",
+    "definition": "Industrial Security - Conducts risk-management activities with respect to the US government's defense industrial base including oversight of facility security clearances and protecting classified information",
+    "source": "gerb"
+  },
+  {
+    "term": "INSCOM",
+    "definition": "Intelligence and Security Command - US Army intelligence organization allegedly associated with UFO crash retrievals",
+    "source": "gerb"
+  },
+  {
+    "term": "Insider",
+    "definition": "On DECUR, an individual with claimed direct access to classified programs who has come forward publicly with testimony regarding UAP, non-human intelligence, or related government programs. Typically current or former military, intelligence, or contractor personnel. Distinct from witnesses and researchers who lack direct program access.",
+    "source": "curated"
+  },
+  {
+    "term": "IPU",
+    "definition": "Interplanetary Phenomenon Unit - A shadowy unit referenced in MJ-12 documents with case protocols and guidelines, predating or concurrent with MJ-12",
+    "source": "gerb"
+  },
+  {
+    "term": "IR MISSILE",
+    "definition": "Infrared missile - A heat-seeking missile that locks onto thermal signatures",
+    "source": "gerb"
+  },
+  {
+    "term": "IRAD",
+    "definition": "Independent Research and Development - Funding mechanism allegedly used to channel additional money to secret programs through defense contractor overcharging",
+    "source": "gerb"
+  },
+  {
+    "term": "ISR",
+    "definition": "Intelligence, Surveillance, and Reconnaissance - Intelligence gathering activities",
+    "source": "gerb"
+  },
+  {
+    "term": "J2",
+    "definition": "Assistant Joint Chief of Staff for Intelligence - Military intelligence position that Wilson held, giving him regulatory authority over special access programs",
+    "source": "gerb"
+  },
+  {
+    "term": "JANAP",
+    "definition": "Joint Army Navy Air Force Publication - Military publication system that issued directives including reporting requirements for airborne and waterborne UFOs",
+    "source": "gerb"
+  },
+  {
+    "term": "JCS",
+    "definition": "Joint Chiefs of Staff - Senior uniformed leaders of the US military branches who advise the President",
+    "source": "gerb"
+  },
+  {
+    "term": "JOPC",
+    "definition": "Joint Overhead Persistent Infrared Center - Joint center providing OPIR sensors, which the NRO is part of",
+    "source": "gerb"
+  },
+  {
+    "term": "JPL",
+    "definition": "Jet Propulsion Laboratory - Research facility at Edwards Air Force Base where Edgar Fouche claimed to work before being recruited to DARC",
+    "source": "gerb"
+  },
+  {
+    "term": "JSOC",
+    "definition": "Joint Special Operations Command - US military command for special operations forces",
+    "source": "gerb"
+  },
+  {
+    "term": "KH",
+    "definition": "Keyhole - NRO's code word for their photo reconnaissance satellite program",
+    "source": "gerb"
+  },
+  {
+    "term": "KONA BLUE",
+    "definition": "A Special Access Program proposal submitted to the Department of Homeland Security that was never approved, funded, or implemented. Referenced in connection with some of David Grusch's reported sources. AARO's 2024 Historical Record Report identified it as evidence that some disclosed programs may reflect misidentified or unfunded proposals.",
+    "source": "curated"
+  },
+  {
+    "term": "LASER",
+    "definition": "Light Amplification by Stimulated Emission of Radiation - Technology allegedly derived from Roswell crash, believed to be EBE communication method",
+    "source": "gerb"
+  },
+  {
+    "term": "LRRP",
+    "definition": "Long Range Reconnaissance Patrol - A special reconnaissance unit in Vietnam that conducted surveillance of enemy supply routes and marked bombing targets, specifically Company E 52nd Infantry attached to the First Cavalry Division",
+    "source": "gerb"
+  },
+  {
+    "term": "LZ",
+    "definition": "Landing Zone - Helicopter landing area where Marines were stationed",
+    "source": "gerb"
+  },
+  {
+    "term": "MAC G28",
+    "definition": "Marine Air Control Group 28 - Marine Corps unit responsible for air control operations",
+    "source": "gerb"
+  },
+  {
+    "term": "MAG",
+    "definition": "Marine Aircraft Control Group - A Marine Corps organizational unit for aircraft operations",
+    "source": "gerb"
+  },
+  {
+    "term": "MAGCOMS",
+    "definition": "Major Commands - Major organizational commands within the Air Force structure",
+    "source": "gerb"
+  },
+  {
+    "term": "Majestic-12",
+    "definition": "An alleged secret committee of scientists, military leaders, and government officials formed in 1947 to oversee UAP investigation and any recovered materials. Existence remains unverified. Referenced extensively in Dan Burisch's testimony. MJ-12 documents surfaced in the 1980s but their authenticity is disputed.",
+    "source": "curated"
+  },
+  {
+    "term": "MANPADS",
+    "definition": "Man Portable Air Defense Systems - Portable surface-to-air missile systems that can be carried and operated by individual soldiers",
+    "source": "gerb"
+  },
+  {
+    "term": "MASINT",
+    "definition": "Measurement and Signature Intelligence - Highly classified intelligence using infrared heat imaging, acoustic signatures, seismic data to detect hidden activities",
+    "source": "gerb"
+  },
+  {
+    "term": "MAW",
+    "definition": "Marine Aircraft Wing - A major aviation unit of the United States Marine Corps",
+    "source": "gerb"
+  },
+  {
+    "term": "MCAS",
+    "definition": "Marine Corps Air Station - A military airfield operated by the United States Marine Corps",
+    "source": "gerb"
+  },
+  {
+    "term": "MERINT",
+    "definition": "Maritime Intelligence - Maritime intelligence reporting system referenced in JANAP 146c for waterborne UFO reports",
+    "source": "gerb"
+  },
+  {
+    "term": "MFD",
+    "definition": "Magnetic Field Disruptor - A circular plasma-filled accelerator ring that creates a magnetic vortex field to neutralize 89% of gravity effects on mass within proximity",
+    "source": "gerb"
+  },
+  {
+    "term": "MIA",
+    "definition": "Missing in Action - Military personnel whose status is unknown during or after combat",
+    "source": "gerb"
+  },
+  {
+    "term": "MIP",
+    "definition": "Military Intelligence Program - Program that receives tactical and strategic intelligence from NRO systems",
+    "source": "gerb"
+  },
+  {
+    "term": "MJ-12",
+    "definition": "Majestic 12 - An organization within the USG established under Truman and handed to Eisenhower, formed around the time of Roswell, reported to be the original crash retrieval and reverse engineering team that operated with Vannevar Bush, Robert J. Oppenheimer, and Albert Einstein",
+    "source": "gerb"
+  },
+  {
+    "term": "MJ12",
+    "definition": "Majestic 12 - Secret organization allegedly created under President Truman to act as the original UFO legacy program",
+    "source": "gerb"
+  },
+  {
+    "term": "MOP",
+    "definition": "Mission-Oriented Protective Posture - Military protective gear including gas masks and rubber suits for hazardous environments",
+    "source": "gerb"
+  },
+  {
+    "term": "MOS",
+    "definition": "Military Occupational Specialty - A code used by the military to identify a specific job or skill set",
+    "source": "gerb"
+  },
+  {
+    "term": "MRTFB",
+    "definition": "Major Range and Test Facility Base - DoD test facility bases such as Dugway Proving Grounds and China Lake",
+    "source": "gerb"
+  },
+  {
+    "term": "MRTFBS",
+    "definition": "Major Range and Test Facility Bases - Air Force testing facilities including Utah Test and Training Range, Nevada Test and Training Range, and Edwards 412th Test Wing",
+    "source": "gerb"
+  },
+  {
+    "term": "MUFON",
+    "definition": "Mutual UFO Network - A nonprofit organization that investigates UFO sightings",
+    "source": "gerb"
+  },
+  {
+    "term": "NARCAP",
+    "definition": "National Aviation Reporting Center on Anomalous Phenomena - Organization that reportedly stored UFO and USO files at Norton Air Force Base",
+    "source": "gerb"
+  },
+  {
+    "term": "NASA",
+    "definition": "National Aeronautics and Space Administration - US government agency responsible for space program and aeronautics research",
+    "source": "gerb"
+  },
+  {
+    "term": "NATDC",
+    "definition": "Northrop Advanced Technology and Design Center - Northrop's 1992 answer to Lockheed's Skunk Works, focused on core key defense programs",
+    "source": "gerb"
+  },
+  {
+    "term": "NCO",
+    "definition": "Not explicitly stated - Non-Commissioned Officer - referenced as being present at briefings",
+    "source": "gerb"
+  },
+  {
+    "term": "NDA",
+    "definition": "Non-Disclosure Agreement - Legal contract preventing disclosure of classified information",
+    "source": "gerb"
+  },
+  {
+    "term": "NDAA",
+    "definition": "National Defense Authorization Act - Annual legislation that authorizes defense spending and policy, referenced regarding 2024 UFO-related provisions",
+    "source": "gerb"
+  },
+  {
+    "term": "NEAC",
+    "definition": "Northeast Air Command - US Air Force command in the northeastern United States",
+    "source": "gerb"
+  },
+  {
+    "term": "NEST",
+    "definition": "Nuclear Emergency Support Team - Nuclear weapons experts who allegedly perform retrieval operations alongside JSOC",
+    "source": "gerb"
+  },
+  {
+    "term": "NGA",
+    "definition": "National Geospatial-Intelligence Agency - One of the 'big six' intelligence agencies",
+    "source": "gerb"
+  },
+  {
+    "term": "NHI",
+    "definition": "Non-Human Intelligence - A broad term used in UAP research to describe intelligent entities not of human origin, without presuming whether they are extraterrestrial, extradimensional, or otherwise. Increasingly used in congressional and government contexts as a more neutral alternative to extraterrestrial.",
+    "source": "curated"
+  },
+  {
+    "term": "NICAP",
+    "definition": "National Investigations Committee on Aerial Phenomena - Organization that Barney Hill reported his abduction experience to",
+    "source": "gerb"
+  },
+  {
+    "term": "NIE",
+    "definition": "National Intelligence Estimate - US intelligence community's authoritative assessment of national security issues",
+    "source": "gerb"
+  },
+  {
+    "term": "NIP",
+    "definition": "National Intelligence Program - Program that receives tactical and strategic intelligence from NRO systems",
+    "source": "gerb"
+  },
+  {
+    "term": "NNSA",
+    "definition": "National Nuclear Security Administration - Department of Energy's semi-autonomous agency responsible for nuclear weapons development and management programs",
+    "source": "gerb"
+  },
+  {
+    "term": "NNSOC",
+    "definition": "US Navy Network and Space Operations Command - According to Gary McKinnon, the command associated with the alleged Solar Warden space program",
+    "source": "gerb"
+  },
+  {
+    "term": "NOAA",
+    "definition": "National Oceanic and Atmospheric Administration - US agency formerly administered by Timothy Gallaudet",
+    "source": "gerb"
+  },
+  {
+    "term": "NORAD",
+    "definition": "North American Aerospace Defense Command - Joint US-Canadian organization for aerospace warning and control that may have space tracking records of the object",
+    "source": "gerb"
+  },
+  {
+    "term": "NPC",
+    "definition": "National Press Club - Location where Greer held a 2023 disclosure event where Herrera first gave testimony",
+    "source": "gerb"
+  },
+  {
+    "term": "NRC",
+    "definition": "Nuclear Regulatory Commission - US agency that regulates nuclear power plants and handles nuclear security; confiscated records from Indian Point incident",
+    "source": "gerb"
+  },
+  {
+    "term": "NREL",
+    "definition": "National Renewable Energy Laboratory - DOE-sponsored laboratory managed by Battelle",
+    "source": "gerb"
+  },
+  {
+    "term": "NRO",
+    "definition": "National Reconnaissance Office - The U.S. intelligence agency responsible for operating reconnaissance satellites. David Grusch served as the NRO's representative to the DoD UAP Task Force, giving him access to intelligence community-wide UAP reporting.",
+    "source": "curated"
+  },
+  {
+    "term": "NRP",
+    "definition": "National Reconnaissance Program - The umbrella funding organization which houses the NRO and its sister agency NURO",
+    "source": "gerb"
+  },
+  {
+    "term": "NSA",
+    "definition": "National Security Agency - Intelligence agency, one of the 'big six'",
+    "source": "gerb"
+  },
+  {
+    "term": "NSC",
+    "definition": "National Security Council - Presidential advisory council on national security matters where Corso served under Eisenhower",
+    "source": "gerb"
+  },
+  {
+    "term": "NSF",
+    "definition": "National Science Foundation - US government agency that supports fundamental research and education in science and engineering",
+    "source": "gerb"
+  },
+  {
+    "term": "NSWC",
+    "definition": "Naval Surface Warfare Center - Navy federal laboratory focused on sensors, electronics, electronic warfare, and special warfare weapons support",
+    "source": "gerb"
+  },
+  {
+    "term": "NTR",
+    "definition": "Nevada Test and Training Range - Major Range and Test Facility Base",
+    "source": "gerb"
+  },
+  {
+    "term": "NTTR",
+    "definition": "Nevada Test and Training Range - Air Force MRTFB that includes Area 51",
+    "source": "gerb"
+  },
+  {
+    "term": "NURO",
+    "definition": "National Underwater Reconnaissance Office - Described as the US's most secret intelligence agency, connected to underwater UFO crash retrievals",
+    "source": "gerb"
+  },
+  {
+    "term": "NVA",
+    "definition": "North Vietnamese Army - Military forces of North Vietnam during the Vietnam War",
+    "source": "gerb"
+  },
+  {
+    "term": "OCRD",
+    "definition": "Office of the Chief of Army R&D - Army office under General Trudeau that consolidated all Army research and development in 1958",
+    "source": "gerb"
+  },
+  {
+    "term": "OGA",
+    "definition": "Office of Global Access - CIA office established in 2003 allegedly participating in foreign UFO crash retrieval operations",
+    "source": "gerb"
+  },
+  {
+    "term": "OICI",
+    "definition": "Office of Intelligence and Counter Intelligence - Department of Energy's intelligence agency",
+    "source": "gerb"
+  },
+  {
+    "term": "ONI",
+    "definition": "Office of Naval Intelligence - Navy intelligence office that assisted with UFO/USO investigations and received thousands of UAP reports",
+    "source": "gerb"
+  },
+  {
+    "term": "ONR",
+    "definition": "Office of Naval Research - Naval research office where undersea craft are allegedly transferred before being handed to defense contractors for analysis",
+    "source": "gerb"
+  },
+  {
+    "term": "OPIR",
+    "definition": "Overhead Persistent Infrared - Space-based infrared sensor systems used for detection and tracking, part of JOPC",
+    "source": "gerb"
+  },
+  {
+    "term": "OPNAV",
+    "definition": "Office of the Chief of Naval Operations - Navy office that issued directive 3820 requiring UAP sightings to be reported to specific intelligence directors",
+    "source": "gerb"
+  },
+  {
+    "term": "OPNAV 3820",
+    "definition": "Not explicitly expanded - A naval regulation restricting maritime UFO reporting",
+    "source": "gerb"
+  },
+  {
+    "term": "OPR",
+    "definition": "Office of Primary Responsibility - Office primarily responsible for a given program or function",
+    "source": "gerb"
+  },
+  {
+    "term": "OPSEC",
+    "definition": "Operational Security - Practices to protect sensitive information from adversaries",
+    "source": "gerb"
+  },
+  {
+    "term": "OSAP",
+    "definition": "Advanced Aerospace Weapon System Applications Program - The actual funded program behind AATIP, initiated with $20 million earmarked funding from Senator Harry Reid",
+    "source": "gerb"
+  },
+  {
+    "term": "OSD",
+    "definition": "Office of the Secretary of Defense - Office supporting the Secretary of Defense",
+    "source": "gerb"
+  },
+  {
+    "term": "OSRD",
+    "definition": "Office of Scientific Research and Development - Vannevar Bush's WWII-era organization that worked with Brown Brothers Harriman and helped create early FFRDCs",
+    "source": "gerb"
+  },
+  {
+    "term": "OSS",
+    "definition": "Office of Strategic Services - Former US intelligence agency that allegedly recovered the Magenta craft from Italy in 1944-1945",
+    "source": "gerb"
+  },
+  {
+    "term": "OTV",
+    "definition": "Outer Tactical Vest - Military body armor vest",
+    "source": "gerb"
+  },
+  {
+    "term": "OUSAT",
+    "definition": "Office of the Under Secretary of Defense for Acquisition and Technology - Pentagon office where special project records groups were housed, mentioned as location Wilson was directed to search",
+    "source": "gerb"
+  },
+  {
+    "term": "OVRA",
+    "definition": "Not explicitly expanded - The Italian secret police (described as 'the Italian Gestapo') that had special RS/33 sections in each provincial capital for handling UFO-related matters",
+    "source": "gerb"
+  },
+  {
+    "term": "PAL",
+    "definition": "Permissive Action Link - An access control security device for nuclear weapons developed by Sandia",
+    "source": "gerb"
+  },
+  {
+    "term": "PC",
+    "definition": "Pilot in Command - The pilot operating the fighter aircraft",
+    "source": "gerb"
+  },
+  {
+    "term": "PE",
+    "definition": "Program Element - Document that codifies the cleared list of contractors allowed to work in specialized program environments",
+    "source": "gerb"
+  },
+  {
+    "term": "PEC",
+    "definition": "Not explicitly stated - Infrared laser illuminator attachment for rifles (PEC-16 mentioned as weapon attachment)",
+    "source": "gerb"
+  },
+  {
+    "term": "PEO",
+    "definition": "Program Executive Officer - Executive officer responsible for program management",
+    "source": "gerb"
+  },
+  {
+    "term": "PLF",
+    "definition": "Programmable Life Form - Artificially created beings designed to look like extraterrestrials, allegedly used for fake abductions",
+    "source": "gerb"
+  },
+  {
+    "term": "POW",
+    "definition": "Prisoners of War - Military personnel captured during armed conflict",
+    "source": "gerb"
+  },
+  {
+    "term": "R&D",
+    "definition": "Research and Development - Military programs focused on developing new technologies and weapons systems",
+    "source": "gerb"
+  },
+  {
+    "term": "R&D BOARD",
+    "definition": "Research and Development Board - Joint defense board under the Truman administration that Sarbacher consulted for, which discussed UFO crash recoveries",
+    "source": "gerb"
+  },
+  {
+    "term": "RAAF",
+    "definition": "Roswell Army Airfield - The Army Air Force base near Roswell, New Mexico where the alleged 1947 crash materials were brought and processed",
+    "source": "gerb"
+  },
+  {
+    "term": "RCO",
+    "definition": "Rapid Capabilities Office - Office that expedites development and fielding of select DoD combat support and weapons systems with accelerated methods outside traditional acquisition",
+    "source": "gerb"
+  },
+  {
+    "term": "RCS",
+    "definition": "Radar Cross Section - Facilities that use high frequency radio waves to test aircraft radar signatures for stealth technology development",
+    "source": "gerb"
+  },
+  {
+    "term": "RDT&E",
+    "definition": "Research, Development, Test, and Evaluation - Category of activities for developing and testing new technologies and systems",
+    "source": "gerb"
+  },
+  {
+    "term": "RIAS",
+    "definition": "Research Institute for Advanced Studies - A research institute where physicist Lou Witten was recruited by George Trimble to help develop anti-gravity technology in 1955",
+    "source": "gerb"
+  },
+  {
+    "term": "ROTHR",
+    "definition": "Relocatable Over-the-Horizon Radar - Radar systems used in counterdrug operations to track aircraft",
+    "source": "gerb"
+  },
+  {
+    "term": "RS/33",
+    "definition": "Gabinetto Ricerche Speciali 33 (Special Research Cabinet 33) - A top secret Italian group established under Mussolini to examine the recovered craft at Magenta, headed by the prime minister and foreign minister with scientific support",
+    "source": "gerb"
+  },
+  {
+    "term": "RV",
+    "definition": "Reproduction Vehicle - Vehicles derived from reverse-engineering non-human technology",
+    "source": "gerb"
+  },
+  {
+    "term": "SAC",
+    "definition": "Strategic Air Command - US Air Force command responsible for nuclear deterrent forces, created elite guard units wearing blue berets",
+    "source": "gerb"
+  },
+  {
+    "term": "SADM",
+    "definition": "Special Atomic Demolition Munition - Suitcase nuclear device (MK-54) theorized to have been used to sterilize the crash site",
+    "source": "gerb"
+  },
+  {
+    "term": "SAF AAH",
+    "definition": "Secretary of the Air Force - Sensitive Activities - Office under administrative assistant to Secretary of the Air Force dealing with sensitive activities",
+    "source": "gerb"
+  },
+  {
+    "term": "SAF AAZ",
+    "definition": "Secretary of the Air Force - Security/Special Programs Oversight/Information Protection - Office dealing with security, special programs oversight, and information protection",
+    "source": "gerb"
+  },
+  {
+    "term": "SAF AQ",
+    "definition": "Secretary of the Air Force for Acquisition - Air Force Acquisition office that oversees research, development, acquisition, and program sustainment activities",
+    "source": "gerb"
+  },
+  {
+    "term": "SAF AQL",
+    "definition": "Secretary of the Air Force - Special Programs - Directorate that manages development and execution of highly classified and sensitive acquisition programs, including SAP advanced technology development programs",
+    "source": "gerb"
+  },
+  {
+    "term": "SAF AQR",
+    "definition": "Secretary of the Air Force - Science, Technology and Engineering - Serves as the Air Force Science and Technology Executive, interfaces with Air Force Research Lab for S&T programs",
+    "source": "gerb"
+  },
+  {
+    "term": "SAF AQX",
+    "definition": "Secretary of the Air Force - Acquisition Integration - Develops and implements plans, policies and procedures related to Air Force acquisition management, reporting, structure and execution",
+    "source": "gerb"
+  },
+  {
+    "term": "SAGE",
+    "definition": "Semi-Automatic Ground Environment - Program to coordinate radars to produce airspace imagery for military",
+    "source": "gerb"
+  },
+  {
+    "term": "SAIC",
+    "definition": "Science Applications International Corporation - Defense contractor described by Greer as a 'crown jewel' in UAP-related work",
+    "source": "gerb"
+  },
+  {
+    "term": "SAM",
+    "definition": "Surface-to-Air Missiles - Missile platforms designed to engage and destroy aircraft",
+    "source": "gerb"
+  },
+  {
+    "term": "SAP",
+    "definition": "Special Access Program - Classified U.S. government programs with access controls beyond standard Top Secret/SCI clearance. Multiple insiders, including Grusch and Elizondo, have alleged UAP-related programs operate as SAPs or within SAP compartments, limiting congressional oversight.",
+    "source": "curated"
+  },
+  {
+    "term": "SAPF",
+    "definition": "SAP Facility - Secure facility for Special Access Programs",
+    "source": "gerb"
+  },
+  {
+    "term": "SAPOC",
+    "definition": "Special Access Program Oversight Committee - Committee responsible for overseeing special access programs, allegedly involved in gatekeeping UFO legacy programs",
+    "source": "gerb"
+  },
+  {
+    "term": "SAPS",
+    "definition": "Special Access Programs - Highly classified programs with compartmentalized information controlled by senior review groups and SAPOC",
+    "source": "gerb"
+  },
+  {
+    "term": "SAW",
+    "definition": "Not explicitly stated - Squad Automatic Weapon - referenced in context of drum pouches for ammunition",
+    "source": "gerb"
+  },
+  {
+    "term": "SBMAGTFX",
+    "definition": "Special Purpose Marine Air Ground Task Force Experimental - Experimental Marine Corps task force unit used in the Hunter Warrior exercise",
+    "source": "gerb"
+  },
+  {
+    "term": "SCEU",
+    "definition": "Scientific Coalition for UAP Studies - Organization that held an event in Huntsville that the hosts attended",
+    "source": "gerb"
+  },
+  {
+    "term": "SCI",
+    "definition": "Sensitive Compartmented Information - A classification level above Top Secret requiring access to specific compartments based on need-to-know. Elizondo and Grusch both held TS/SCI clearances. Much of their testimony concerns programs that operate within SCI compartments.",
+    "source": "curated"
+  },
+  {
+    "term": "SCIF",
+    "definition": "Sensitive Compartmented Information Facility - Secure room for handling classified information",
+    "source": "gerb"
+  },
+  {
+    "term": "SCU",
+    "definition": "Scientific Coalition for UAP Studies - Organization that conducted analysis on UAP footage including the Aguadilla video",
+    "source": "gerb"
+  },
+  {
+    "term": "SDI",
+    "definition": "Strategic Defense Initiative - Program created in 1983 under President Reagan, allegedly used covertly for UFO-related programs",
+    "source": "gerb"
+  },
+  {
+    "term": "SEC",
+    "definition": "Securities and Exchange Commission - Government agency overseeing securities markets and corporate filings",
+    "source": "gerb"
+  },
+  {
+    "term": "SECAF ATNL",
+    "definition": "Secretary of the Air Force for Acquisition, Technology and Logistics - Assistant secretary position heading Air Force acquisition",
+    "source": "gerb"
+  },
+  {
+    "term": "SERE",
+    "definition": "Survival, Evasion, Resistance, and Escape - Military training program for high-risk personnel, with Level C being the most challenging course",
+    "source": "gerb"
+  },
+  {
+    "term": "SES",
+    "definition": "Senior Executive Service - Senior civilian leadership positions in federal government",
+    "source": "gerb"
+  },
+  {
+    "term": "SETI",
+    "definition": "Search for Extraterrestrial Intelligence - Program that searches for signs of extraterrestrial civilizations, primarily using radio signatures to detect communications from other species",
+    "source": "gerb"
+  },
+  {
+    "term": "SIGINT",
+    "definition": "Signals Intelligence - Intelligence derived from intercepted signals and communications",
+    "source": "gerb"
+  },
+  {
+    "term": "SOCOM",
+    "definition": "Special Operations Command - Unified combatant command overseeing special operations forces",
+    "source": "gerb"
+  },
+  {
+    "term": "SOF",
+    "definition": "Special Operations Forces - Elite military units involved in specialized missions including alleged UAP crash retrievals",
+    "source": "gerb"
+  },
+  {
+    "term": "SOUTHCOM",
+    "definition": "US Southern Command - Unified combatant command responsible for US military operations in Central and South America",
+    "source": "gerb"
+  },
+  {
+    "term": "SOVL",
+    "definition": "Short Takeoff and Vertical Landing - Aircraft requiring minimal runway for takeoff but capable of vertical landing",
+    "source": "gerb"
+  },
+  {
+    "term": "SRG",
+    "definition": "Senior Review Group - A group established in 1994 to oversee special access programs, allegedly gatekeeping UFO programs",
+    "source": "gerb"
+  },
+  {
+    "term": "SRT",
+    "definition": "Special Response Team - DOE spec ops group with arrest authority for protection of DOE National Labs and assets",
+    "source": "gerb"
+  },
+  {
+    "term": "STIFF",
+    "definition": "Subterranean Facility - Alternative term for underground military installations, reportedly used by veterans who have traveled to such locations",
+    "source": "gerb"
+  },
+  {
+    "term": "TCPED",
+    "definition": "Tasking Collection Processing Exploitation and Dissemination - The intelligence cycle that Sentient aims to revolutionize across the intelligence community",
+    "source": "gerb"
+  },
+  {
+    "term": "TNO",
+    "definition": "Temporary Non-attributed Objects - A class of objects that temporarily resist prosaic attribution by the initial observer due to environmental or system limitations but nevertheless have a known accepted human origin",
+    "source": "gerb"
+  },
+  {
+    "term": "TOA",
+    "definition": "Total Obligation Authority - Total Air Force budget authority",
+    "source": "gerb"
+  },
+  {
+    "term": "TR-3B",
+    "definition": "Tactical Reconnaissance 3B - Codename for an alleged reverse-engineered triangular craft with anti-gravity capabilities",
+    "source": "gerb"
+  },
+  {
+    "term": "TREAT",
+    "definition": "Tactical Reconnaissance Engineering Assessment Team - An alleged Men in Black-type team that conducted investigations and recovery operations",
+    "source": "gerb"
+  },
+  {
+    "term": "TS SCI",
+    "definition": "Top Secret Sensitive Compartmented Information - High-level security clearance required to access certain classified facilities and information",
+    "source": "gerb"
+  },
+  {
+    "term": "TS/SCI",
+    "definition": "Top Secret Sensitive Compartmented Information - High-level security clearance for accessing classified information",
+    "source": "gerb"
+  },
+  {
+    "term": "TTR",
+    "definition": "Tonopah Test Range - DOE's premier classified weapons testing range where Site 4 is located",
+    "source": "gerb"
+  },
+  {
+    "term": "TTSA",
+    "definition": "To The Stars Academy - Tom DeLonge's organization involving former government officials focused on UFO disclosure and technology development",
+    "source": "gerb"
+  },
+  {
+    "term": "TUO",
+    "definition": "Technology of Unknown Origin - Term for recovered non-human technologies",
+    "source": "gerb"
+  },
+  {
+    "term": "UA",
+    "definition": "Unauthorized Absence - Military term for being absent without authorization; Michael Herrera went UA from his original company before being transferred",
+    "source": "gerb"
+  },
+  {
+    "term": "UAP",
+    "definition": "Unidentified Anomalous Phenomena (previously Unidentified Aerial Phenomena) - The modern government and research term for what were previously called UFOs. Aerial was broadened to Anomalous in the 2023 NDAA to encompass objects observed in space, underwater, and transitioning between domains.",
+    "source": "curated"
+  },
+  {
+    "term": "UAP Disclosure Act",
+    "definition": "The UAP Disclosure Act of 2023, introduced by Senators Schumer and Rounds as an NDAA amendment following David Grusch's congressional testimony. Modeled on the JFK Records Act, it established a presumption of disclosure for UAP-related government records and created a Presidential Review Board. Partially enacted in the 2024 NDAA.",
+    "source": "curated"
+  },
+  {
+    "term": "UAP Task Force",
+    "definition": "Unidentified Aerial Phenomena Task Force - Established by the DoD in August 2020 following Senate Intelligence Committee pressure. Standardized and centralized UAP data collection. Predecessor to AARO. David Grusch served as the NRO's representative to the Task Force from 2019 to 2021.",
+    "source": "curated"
+  },
+  {
+    "term": "UAPDA",
+    "definition": "UAP Disclosure Act - Legislation that could have begun unraveling UAP legacy program secrecy, excluded from FY2025 NDAA",
+    "source": "gerb"
+  },
+  {
+    "term": "UAPTF",
+    "definition": "See UAP Task Force.",
+    "source": "curated"
+  },
+  {
+    "term": "UARC",
+    "definition": "University Affiliated Research Center - Academic institutions that collaborate with defense programs on classified research",
+    "source": "gerb"
+  },
+  {
+    "term": "UAS",
+    "definition": "Unusual Aerial Sighting - Term used by Royal Australian Air Force for anomalous sighting reports",
+    "source": "gerb"
+  },
+  {
+    "term": "UASP",
+    "definition": "Unidentified Aerial/Submerged Phenomena - Term distinguishing between aerial and underwater unidentified phenomena",
+    "source": "gerb"
+  },
+  {
+    "term": "UFO",
+    "definition": "Unidentified Flying Object - An aerial phenomenon that cannot be immediately identified",
+    "source": "gerb"
+  },
+  {
+    "term": "UFO HEAP",
+    "definition": "UFO Hard Evidence Analysis Program - An alleged NASA internal program that conducted UFO hard evidence analysis around the late 1970s",
+    "source": "gerb"
+  },
+  {
+    "term": "UPC",
+    "definition": "Universal Product Code - Barcode system developed with Battelle's involvement",
+    "source": "gerb"
+  },
+  {
+    "term": "URCS",
+    "definition": "University Affiliated Research Centers - Academic institutions engaged in classified defense research",
+    "source": "gerb"
+  },
+  {
+    "term": "USAF",
+    "definition": "United States Air Force - Branch of the US military responsible for aerial warfare and operations",
+    "source": "gerb"
+  },
+  {
+    "term": "USAP",
+    "definition": "Unacknowledged Special Access Program - Special access programs whose existence is not acknowledged",
+    "source": "gerb"
+  },
+  {
+    "term": "USD A&S",
+    "definition": "Under Secretary of Defense for Acquisition and Sustainment - Department under Secretary of Defense overseeing acquisition",
+    "source": "gerb"
+  },
+  {
+    "term": "USG",
+    "definition": "United States Government - The federal government of the United States",
+    "source": "gerb"
+  },
+  {
+    "term": "USMC",
+    "definition": "United States Marine Corps - Branch of the US military specializing in amphibious and expeditionary warfare",
+    "source": "gerb"
+  },
+  {
+    "term": "USO",
+    "definition": "Unidentified Submerged Object - Unidentified craft observed or recovered from underwater environments",
+    "source": "gerb"
+  },
+  {
+    "term": "USP",
+    "definition": "Unidentified Submerged Phenomena - Updated terminology for underwater unidentified objects",
+    "source": "gerb"
+  },
+  {
+    "term": "UTR",
+    "definition": "Utah Test and Training Range - Major Range and Test Facility Base",
+    "source": "gerb"
+  },
+  {
+    "term": "UTTR",
+    "definition": "Utah Test and Training Range - Air Force MRTFB shared between Dugway and Hill Air Force Base",
+    "source": "gerb"
+  },
+  {
+    "term": "VFX",
+    "definition": "Visual Effects - Visual effects artistry, referenced when discussing potential digital manipulation",
+    "source": "gerb"
+  },
+  {
+    "term": "VTOL",
+    "definition": "Vertical Takeoff and Landing - Aircraft capability to take off and land vertically without runway",
+    "source": "gerb"
+  },
+  {
+    "term": "WDTC",
+    "definition": "West Desert Test Center - US Army's Major Range Test Facility Base located at Dugway Proving Ground",
+    "source": "gerb"
+  },
+  {
+    "term": "WINPAC",
+    "definition": "Weapons Intelligence Nonproliferation and Arms Control Center - CIA office allegedly involved in USO material recovery and transfer according to John Ramirez",
+    "source": "gerb"
+  },
+  {
+    "term": "WMD",
+    "definition": "Weapons of Mass Destruction - Nuclear, chemical, biological, or radiological weapons",
+    "source": "gerb"
+  },
+  {
+    "term": "WSO",
+    "definition": "Weapon System Operator - Crew member sitting in the back seat managing some systems",
+    "source": "gerb"
+  }
+]

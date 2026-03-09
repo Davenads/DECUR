@@ -21,6 +21,7 @@
     "gerb:review": "node scripts/gerb/review.js",
     "gerb:review:summary": "node scripts/gerb/review.js --summary",
     "gerb:compile": "node scripts/gerb/compile-contributions.js",
+    "gerb:build-glossary": "node scripts/gerb/build-glossary.js",
     "gerb:pipeline": "node --env-file=.env scripts/gerb/pipeline.js"
   },
   "dependencies": {
