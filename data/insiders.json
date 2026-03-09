@@ -1,5 +1,17 @@
 [
   {
+    "id": "luis-elizondo",
+    "name": "Luis Elizondo",
+    "aliases": ["Lue Elizondo"],
+    "role": "Director, Advanced Aerospace Threat Identification Program (AATIP)",
+    "period": "1994–2017",
+    "affiliation": "Office of the Under Secretary of Defense for Intelligence, Advanced Aerospace Threat Identification Program",
+    "summary": "Former Pentagon intelligence official who claims to have directed AATIP — the classified program investigating military UAP encounters. Resigned in October 2017 citing institutional indifference, simultaneously triggering the New York Times investigation that launched the modern UAP disclosure era. Co-founded To The Stars Academy and has spent seven years building the public and congressional case for UAP transparency.",
+    "status": "detailed",
+    "tags": ["AATIP", "Pentagon", "5 Observables", "Nimitz", "To The Stars Academy", "Congressional Testimony", "NY Times 2017"],
+    "data_file": "elizondo.json"
+  },
+  {
     "id": "dan-burisch",
     "name": "Dr. Dan Burisch",
     "aliases": ["Dan Crain", "Dr. Dan Crain"],

@@ -1,0 +1,330 @@
+{
+  "profile": {
+    "id": "luis-elizondo",
+    "name": "Luis Elizondo",
+    "aliases": ["Lue Elizondo"],
+    "born": "c. 1978 (exact date not publicly confirmed)",
+    "roles": [
+      "Director, Advanced Aerospace Threat Identification Program (AATIP)",
+      "Counterintelligence Operations Officer, U.S. Army",
+      "Senior Intelligence Manager, Office of the Under Secretary of Defense for Intelligence",
+      "Co-Founder / Chief Security Officer, To The Stars Academy"
+    ],
+    "service_period": "1994–2017",
+    "organizations": [
+      "United States Army — Counterintelligence Corps",
+      "Office of the Under Secretary of Defense for Intelligence",
+      "Advanced Aerospace Threat Identification Program (AATIP)",
+      "Defense Intelligence Agency (DIA) — liaison",
+      "To The Stars Academy of Arts and Science"
+    ],
+    "clearance": "Top Secret / SCI with Special Access Program (SAP) access",
+    "summary": "Luis Elizondo is a former U.S. Army counterintelligence officer and career intelligence professional who served in the Office of the Under Secretary of Defense for Intelligence. He claims to have directed the Pentagon's classified Advanced Aerospace Threat Identification Program (AATIP) from approximately 2010 to 2017 — an effort focused on investigating UAP reported by U.S. military personnel. He resigned from the DoD in October 2017, citing institutional resistance to taking the UAP issue seriously, and immediately co-founded To The Stars Academy with former Blink-182 frontman Tom DeLonge. His departure coincided with the release of three classified Navy gun-camera videos (Nimitz, Gimbal, GoFast) and a landmark New York Times investigation that brought the modern UAP disclosure era into public consciousness.",
+    "education": [
+      "B.S. Biology — Florida International University",
+      "U.S. Army Counterintelligence Special Agent training",
+      "Multiple advanced intelligence and special access program courses (classified)"
+    ],
+    "early_career": [
+      "U.S. Army — Counterintelligence Special Agent; served in Afghanistan and Latin America",
+      "Managed sensitive counterintelligence operations involving foreign actors and threat assessments",
+      "Transitioned from Army to civilian intelligence role within Office of the Under Secretary of Defense for Intelligence",
+      "Managed multiple special access programs covering a range of advanced aerospace and national security topics"
+    ],
+    "key_events": [
+      { "year": "1994", "event": "Enlists in U.S. Army; begins career in counterintelligence" },
+      { "year": "2001–2009", "event": "Deploys in support of post-9/11 operations; counterintelligence assignments in Afghanistan, Guantanamo Bay, and Latin America" },
+      { "year": "~2010", "event": "Takes over management of AATIP within the Office of the Under Secretary of Defense for Intelligence; inherits program from its DIA-managed origins" },
+      { "year": "2014–2017", "event": "Attempts to formally brief the Office of the Secretary of Defense on AATIP findings; encounters institutional resistance and bureaucratic indifference" },
+      { "year": "2017-09-16", "event": "Submits formal resignation letter to Secretary of Defense James Mattis, citing the Pentagon's failure to take UAP seriously as a national security issue" },
+      { "year": "2017-10-04", "event": "Resignation from DoD officially effective; immediately joins Tom DeLonge's To The Stars Academy as co-founder and Chief Security Officer" },
+      { "year": "2017-12-16", "event": "New York Times publishes 'Glowing Auras and Black Money: The Pentagon's Mysterious UFO Program' — first mainstream confirmation of AATIP; Elizondo named; Nimitz Tic Tac video published" },
+      { "year": "2018", "event": "Serves as executive producer on History Channel series 'Unidentified: Inside America's UFO Investigation'; begins sustained public media campaign" },
+      { "year": "2019", "event": "Navy formally acknowledges three released videos (FLIR1, Gimbal, GoFast) as authentic gun-camera footage of 'unidentified aerial phenomena'" },
+      { "year": "2020–2021", "event": "Cooperates with congressional UAP efforts; briefs multiple senators and representatives in closed sessions; advocates for UAP reporting protections for military personnel" },
+      { "year": "2022-04-06", "event": "Testifies before Senate Armed Services Subcommittee on Emerging Threats and Capabilities alongside other UAP advocates" },
+      { "year": "2023", "event": "Files Inspector General complaint alleging DoD improperly denied him access to Special Access Programs he was entitled to review as AATIP director" },
+      { "year": "2024", "event": "Publishes 'Imminent: Inside the Pentagon's Hunt for UFOs' — first major book-length account of AATIP and the insider disclosure effort" }
+    ]
+  },
+
+  "aatip": {
+    "full_name": "Advanced Aerospace Threat Identification Program",
+    "established": "2007",
+    "ended_official": "2012",
+    "ended_claimed": "2017",
+    "funding": "$22 million appropriated through Defense Intelligence Agency; secured by Senator Harry Reid at request of aerospace contractor Robert Bigelow",
+    "primary_contractor": "Bigelow Aerospace Advanced Space Studies (BAASS)",
+    "focus": "Investigate UAP reported by U.S. military personnel; assess potential foreign adversary or unknown threat origin; analyze recovered materials",
+    "classification": "Sensitive Compartmented Information (SCI) — above Secret",
+    "key_findings": [
+      "UAP exhibiting flight characteristics beyond known human aerospace capability were being regularly observed by U.S. military aviators",
+      "Reported UAP displayed what Elizondo termed the '5 Observables': anti-gravity lift, sudden and instantaneous acceleration, hypersonic velocity without sonic signature, low observability or cloaking, and trans-medium travel (air-to-sea transitions)",
+      "Military pilots were reluctant to report UAP encounters for fear of professional stigma and grounding",
+      "Some materials allegedly recovered from UAP encounters were studied under AATIP; findings remain classified",
+      "Foreign adversary (China, Russia) explanation was investigated and assessed as inadequate to explain all observed phenomena"
+    ],
+    "controversy": "The DoD has disputed Elizondo's claim that he directed AATIP, stating the program was managed by the Defense Intelligence Agency and that Elizondo's role was in a separate office. Elizondo disputes this characterization, asserting he was the program's final director. A former colleague, Luis Elizondo (Elizondo uses his own name as a reference), has provided corroborating accounts of his management role."
+  },
+
+  "five_observables": [
+    {
+      "name": "Anti-Gravity Lift",
+      "description": "Observed craft appeared to maneuver without visible propulsion, exhaust, or control surfaces — defying conventional aerodynamic explanations."
+    },
+    {
+      "name": "Sudden and Instantaneous Acceleration",
+      "description": "Craft accelerated from stationary or slow movement to extreme velocities instantaneously, without G-force effects that would be fatal to human occupants."
+    },
+    {
+      "name": "Hypersonic Velocity Without Signature",
+      "description": "Craft traveled at hypersonic speeds (Mach 5+) without producing sonic booms, heat signatures, or radar reflections consistent with known hypersonic vehicles."
+    },
+    {
+      "name": "Low Observability (Cloaking)",
+      "description": "Craft frequently appeared to evade or defeat radar, electro-optical, and infrared detection systems — exhibiting active or passive signature management beyond known stealth technology."
+    },
+    {
+      "name": "Trans-Medium Travel",
+      "description": "Craft were observed transitioning seamlessly between air, space, and water — a capability not demonstrated by any known human aerospace platform."
+    }
+  ],
+
+  "claims": [
+    {
+      "id": "aatip-director",
+      "category": "program management",
+      "claim": "Elizondo directed AATIP within the Office of the Under Secretary of Defense for Intelligence from approximately 2010 to 2017, maintaining the program after its official DIA funding period ended in 2012.",
+      "status": "disputed",
+      "notes": "The DoD has stated that Elizondo 'was not the director of AATIP' and that his official duties did not include AATIP. Elizondo maintains he managed the program under a different organizational umbrella after DIA funding lapsed. Former colleagues and congressional members have supported his account. The dispute remains unresolved publicly."
+    },
+    {
+      "id": "institutional-resistance",
+      "category": "government cover-up",
+      "claim": "Senior Pentagon leadership was aware of AATIP's findings and actively suppressed further investigation, preventing Elizondo from briefing the Secretary of Defense and stonewalling requests for resources.",
+      "status": "partially-verified",
+      "notes": "His resignation letter (partially available) references institutional barriers. Multiple congressional members have corroborated that UAP reporting has faced bureaucratic suppression. Senator Harry Reid publicly confirmed funding AATIP and expressed frustration with DoD obstruction of related disclosure efforts."
+    },
+    {
+      "id": "five-observables",
+      "category": "uap characteristics",
+      "claim": "AATIP analysis identified five consistent flight characteristics across UAP encounters that exceed all known human or adversary aerospace capability: anti-gravity lift, instantaneous acceleration, hypersonic velocity without signature, low observability, and trans-medium travel.",
+      "status": "partially-verified",
+      "notes": "The 5 Observables framework is Elizondo's analytical construct, not an official DoD classification. However, the three released Navy videos (Nimitz, Gimbal, GoFast) independently corroborate objects exhibiting several of these characteristics as assessed by Navy pilots. The framework has been adopted by subsequent researchers and government bodies."
+    },
+    {
+      "id": "uap-nsa",
+      "category": "program management",
+      "claim": "Elizondo managed multiple Special Access Programs in his Pentagon role and was denied access to compartments he believed were directly relevant to AATIP's mission — suggesting a deliberate effort to compartmentalize UAP knowledge away from the program tasked with investigating it.",
+      "status": "unverified",
+      "notes": "Raised in his IG complaint filed circa 2023. The specific SAP access denials have not been publicly confirmed or contradicted. The claim is consistent with how Special Access Programs operate structurally."
+    },
+    {
+      "id": "materials-studied",
+      "category": "recovered materials",
+      "claim": "Under AATIP, physical materials reportedly recovered in association with UAP incidents were studied for anomalous properties. Some materials were held by Bigelow Aerospace Advanced Space Studies (BAASS) under contract.",
+      "status": "unverified",
+      "notes": "Elizondo has been circumspect about specifics, citing classification. Senator Harry Reid confirmed BAASS held materials studied under the program. The nature and origin of the materials has not been publicly established."
+    },
+    {
+      "id": "pilot-stigma",
+      "category": "reporting suppression",
+      "claim": "Military pilots experiencing UAP encounters were systematically deterred from official reporting due to fear of career consequences — resulting in massive under-reporting and a gap in institutional awareness.",
+      "status": "verified",
+      "notes": "This claim is the most independently corroborated of Elizondo's assertions. Ryan Graves, David Fravor, and numerous other Navy and Air Force aviators have confirmed the stigma on record. The Navy's 2019 reporting guideline update was a direct institutional response to this problem."
+    },
+    {
+      "id": "not-adversary",
+      "category": "uap origin",
+      "claim": "AATIP investigated and ruled out China and Russia as the origin of the most anomalous observed UAP, based on technical capabilities assessments. The phenomenon is not fully explained by known human technology.",
+      "status": "partially-verified",
+      "notes": "Elizondo has made this claim consistently. It is corroborated by statements from former Deputy Assistant Secretary of Defense Chris Mellon, and has been echoed in classified congressional briefings per member accounts. No public intelligence assessment has formally ruled this in or out."
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "His Pentagon career and security clearances are independently verified through government records and former colleagues",
+      "Senator Harry Reid, who secured AATIP funding, publicly confirmed Elizondo's involvement in the program and expressed frustration with DoD's obstruction of UAP disclosure",
+      "The three Navy UAP videos (Nimitz, Gimbal, GoFast) were declassified and confirmed as authentic by the Pentagon in 2019 — directly corroborating the existence of the encounters AATIP investigated",
+      "His resignation letter from the DoD (partially public) demonstrates he formally raised concerns through proper channels before going public",
+      "The Navy's 2019 update to UAP reporting guidelines directly addressed the pilot stigma he identified — institutional acknowledgment of a core AATIP finding",
+      "Former Deputy Assistant Secretary of Defense Chris Mellon independently corroborates AATIP's findings and the institutional suppression of UAP research",
+      "Multiple U.S. senators and representatives have publicly vouched for Elizondo's credibility and described private briefings consistent with his public claims",
+      "His account has been consistent across years of media appearances, congressional briefs, and his 2024 book without significant contradiction",
+      "The DoD's denial of his AATIP director role is narrow and procedural — they dispute his exact title, not the program's existence or his involvement"
+    ],
+    "contradicting": [
+      "The DoD officially disputed that Elizondo was the director of AATIP, stating his job duties 'did not include' AATIP — a direct public contradiction of his central claim",
+      "AATIP's official funding period ended in 2012; Elizondo's claim that it continued to 2017 under a different structure has not been independently confirmed",
+      "His claims about recovered materials studied under AATIP remain vague and speculative in public statements, with no verifiable specifics",
+      "The transition from Pentagon official to To The Stars Academy — a commercial venture — immediately after resignation creates potential commercial incentive questions",
+      "Some UAP researchers have questioned whether Elizondo conflates AATIP's scope with broader program claims he cannot substantiate in public",
+      "His IG complaint (circa 2023) alleging improper SAP access denial has not resulted in any public resolution or corroboration",
+      "Several high-profile media appearances were on History Channel and similar outlets with entertainment rather than journalistic rigor as primary incentive"
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "tom-delonge",
+      "name": "Tom DeLonge",
+      "role": "Co-Founder / CEO, To The Stars Academy; musician (Blink-182)",
+      "relationship": "Co-founded To The Stars Academy with Elizondo in October 2017; DeLonge initiated contacts with senior government figures before Elizondo's departure; provides public platform and media infrastructure for the broader disclosure effort"
+    },
+    {
+      "id": "chris-mellon",
+      "name": "Christopher Mellon",
+      "role": "Former Deputy Assistant Secretary of Defense for Intelligence; Senior Advisor, To The Stars Academy",
+      "relationship": "Independent corroborator of AATIP's findings and the suppression of UAP research within DoD; worked with Elizondo to bring the Nimitz and other videos to media attention; co-authored op-eds and congressional briefs on UAP transparency"
+    },
+    {
+      "id": "harry-reid",
+      "name": "Senator Harry Reid (D-NV, Ret.)",
+      "role": "Former U.S. Senate Majority Leader",
+      "relationship": "Secured the original $22 million AATIP appropriation in 2007 at the request of Robert Bigelow; publicly confirmed Elizondo's role and expressed frustration with DoD stonewalling of UAP disclosure; advocated for further investigation until his death in 2021"
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold 'Hal' Puthoff",
+      "role": "Physicist; former SRI researcher; co-founder, To The Stars Academy",
+      "relationship": "Long-time UAP researcher and remote viewing program scientist; co-founded TTSA with Elizondo; has claimed to have studied anomalous materials under AATIP and related programs"
+    },
+    {
+      "id": "james-lacatski",
+      "name": "Dr. James T. Lacatski",
+      "role": "Former Defense Intelligence Agency program manager",
+      "relationship": "Managed the original AATIP contract from the DIA side (2007-2012); co-authored 'Skinwalkers at the Pentagon' (2021), which provides the DIA's internal account of AATIP and overlaps significantly with Elizondo's narrative"
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "Former U.S. Navy F/A-18 pilot; Executive Director, Americans for Safe Aerospace",
+      "relationship": "Corroborates pilot stigma and UAP encounter patterns Elizondo identified through AATIP; testified alongside David Grusch at July 2023 House hearing; the UAP his squadron observed off Virginia coast are among the most documented post-AATIP cases"
+    },
+    {
+      "id": "david-fravor",
+      "name": "Commander David Fravor (Ret.)",
+      "role": "Former CO, Strike Fighter Squadron 41, USS Nimitz",
+      "relationship": "Firsthand pilot in the 2004 Tic Tac encounter — the primary case AATIP investigated; independently corroborates the anomalous flight characteristics Elizondo describes in the 5 Observables framework"
+    },
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist",
+      "relationship": "Co-authored the 2017 NY Times article 'Glowing Auras and Black Money' that brought AATIP and Elizondo into public view; her involvement provided journalistic credibility to the initial disclosure"
+    },
+    {
+      "id": "helene-cooper",
+      "name": "Helene Cooper",
+      "role": "Pentagon correspondent, New York Times",
+      "relationship": "Co-authored the December 2017 NY Times AATIP investigation; her Pentagon beat credibility was central to the story's mainstream impact"
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2017-12-16",
+      "type": "print",
+      "title": "Glowing Auras and 'Black Money': The Pentagon's Mysterious UFO Program",
+      "outlet": "The New York Times",
+      "interviewer": "Ralph Blumenthal, Helene Cooper, Leslie Kean",
+      "notes": "Landmark investigation confirming AATIP's existence; Elizondo named as director; Nimitz Tic Tac video published simultaneously. Launched the modern UAP disclosure era. Viewed over 10 million times within days."
+    },
+    {
+      "date": "2017-12-19",
+      "type": "television",
+      "title": "To The Stars Academy Announcement / First Television Interview",
+      "outlet": "CNN, MSNBC (various)",
+      "interviewer": "Multiple correspondents",
+      "notes": "First televised interviews following the NY Times story; Elizondo describes his resignation rationale and AATIP findings in broad terms for the first time"
+    },
+    {
+      "date": "2019",
+      "type": "television",
+      "title": "Unidentified: Inside America's UFO Investigation (Series)",
+      "outlet": "History Channel",
+      "interviewer": "Series (6 episodes, executive producer)",
+      "notes": "Multi-episode investigation series featuring Elizondo's attempts to corroborate AATIP findings with active military witnesses; brought broad public attention but faced criticism for production framing"
+    },
+    {
+      "date": "2020-04-27",
+      "type": "declassification",
+      "title": "Pentagon Declassifies Three UAP Gun-Camera Videos",
+      "outlet": "U.S. Department of Defense",
+      "interviewer": "N/A",
+      "notes": "DoD officially declassified and released FLIR1 (Nimitz/Tic Tac), Gimbal, and GoFast videos — the footage AATIP originally analyzed. Pentagon statement confirmed they depicted 'unidentified aerial phenomena.' A direct validation of AATIP's documentary work."
+    },
+    {
+      "date": "2021",
+      "type": "podcast",
+      "title": "Joe Rogan Experience #1645",
+      "outlet": "Spotify / JRE",
+      "interviewer": "Joe Rogan",
+      "notes": "Wide-ranging 3-hour interview reaching tens of millions; Elizondo's most accessible public disclosure of AATIP methodology, the 5 Observables, and institutional suppression claims"
+    },
+    {
+      "date": "2022-04-06",
+      "type": "congressional-testimony",
+      "title": "Senate Armed Services Subcommittee on Emerging Threats — UAP Briefing",
+      "outlet": "U.S. Senate Armed Services Committee",
+      "interviewer": "Senator Kirsten Gillibrand (Chair) and subcommittee members",
+      "notes": "First formal congressional testimony; advocated for UAP reporting protections for military personnel; described continued institutional barriers to investigation"
+    },
+    {
+      "date": "2023",
+      "type": "formal-complaint",
+      "title": "Inspector General Complaint — SAP Access Denial",
+      "outlet": "Department of Defense Inspector General",
+      "interviewer": "N/A",
+      "notes": "Filed formal IG complaint alleging improper denial of access to Special Access Programs he believed were relevant to AATIP's mission; outcome not publicly resolved as of 2025"
+    },
+    {
+      "date": "2024",
+      "type": "written",
+      "title": "Imminent: Inside the Pentagon's Hunt for UFOs",
+      "outlet": "William Morrow / HarperCollins",
+      "interviewer": "N/A",
+      "notes": "First major book-length account of AATIP from the inside; provides detailed account of program structure, specific case investigations, and Elizondo's personal experience navigating Pentagon bureaucracy. Became a New York Times bestseller."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "New York Times — 'Glowing Auras and Black Money: The Pentagon's Mysterious UFO Program'",
+      "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
+      "type": "article",
+      "notes": "The foundational public disclosure; first mainstream confirmation of AATIP and Elizondo's role"
+    },
+    {
+      "title": "Pentagon Statement on UAP Video Declassification (April 2020)",
+      "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/",
+      "type": "government-document",
+      "notes": "Official DoD statement confirming the three UAP videos as authentic, unidentified"
+    },
+    {
+      "title": "Senate Armed Services Committee — Emerging Threats Subcommittee UAP Hearing (April 2022)",
+      "url": "https://www.armed-services.senate.gov/hearings/to-examine-the-department-of-defenses-actions-regarding-unidentified-aerial-phenomena",
+      "type": "congressional-record",
+      "notes": "First classified and unclassified UAP hearings before Senate Armed Services in the modern era"
+    },
+    {
+      "title": "UAPedia — Luis Elizondo",
+      "url": "https://uapedia.ai/wiki/luis-elizondo/",
+      "type": "structured-reference",
+      "notes": "Structured biography, claims database, and timeline"
+    },
+    {
+      "title": "Imminent: Inside the Pentagon's Hunt for UFOs (2024)",
+      "url": "https://www.harpercollins.com/products/imminent-luis-elizondo",
+      "type": "book",
+      "notes": "Elizondo's first-person account of AATIP; most detailed primary source available"
+    },
+    {
+      "title": "To The Stars Academy — About",
+      "url": "https://home.tothestarsacademy.com",
+      "type": "primary-source",
+      "notes": "TTSA's organizational documentation of Elizondo's role as co-founder"
+    }
+  ]
+}
