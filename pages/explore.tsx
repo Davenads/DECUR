@@ -1,13 +1,17 @@
 import type { NextPage, GetStaticProps } from 'next';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
+import TimelineOverlay, { extractYear, WBEvent } from '../components/explore/TimelineOverlay';
 import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
+import burischJson from '../data/burisch.json';
+import lazarJson from '../data/lazar.json';
 
 interface Props {
   entries: TimelineEntry[];
+  whistleblowerEvents: WBEvent[];
 }
 
-const Explore: NextPage<Props> = ({ entries }) => {
+const Explore: NextPage<Props> = ({ entries, whistleblowerEvents }) => {
   return (
     <div className="container mx-auto px-4">
       <div className="max-w-5xl mx-auto space-y-8">
@@ -26,23 +30,14 @@ const Explore: NextPage<Props> = ({ entries }) => {
           <EventFrequencyChart entries={entries} />
         </section>
 
+        {/* Timeline Overlay */}
+        <section>
+          <TimelineOverlay uapEntries={entries} whistleblowerEvents={whistleblowerEvents} />
+        </section>
+
         {/* Relationship Network Graph */}
         <section>
           <NetworkGraph />
-        </section>
-
-        {/* Placeholder panel for upcoming visualization */}
-        <section>
-          <div className="bg-gray-50 border border-dashed border-gray-200 rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[160px] space-y-2">
-            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 text-lg">
-              ◎
-            </div>
-            <p className="text-sm font-medium text-gray-500">Timeline Overlay</p>
-            <p className="text-xs text-gray-400">
-              Whistleblower key events layered over the global UAP event timeline
-            </p>
-            <span className="text-xs bg-gray-100 text-gray-400 px-2 py-0.5 rounded-full">Coming soon</span>
-          </div>
         </section>
 
       </div>
@@ -52,7 +47,30 @@ const Explore: NextPage<Props> = ({ entries }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const entries = getAllEntries();
-  return { props: { entries } };
+
+  // Burisch timeline events
+  const burischEvents: WBEvent[] = burischJson.timeline.reduce(
+    (acc: WBEvent[], e: { date: string; event: string; category: string }) => {
+      const year = extractYear(e.date);
+      if (year) acc.push({ year, event: e.event, category: e.category, source: 'burisch' });
+      return acc;
+    },
+    []
+  );
+
+  // Lazar key events
+  const lazarEvents: WBEvent[] = lazarJson.profile.key_events.reduce(
+    (acc: WBEvent[], e: { date: string; event: string }) => {
+      const year = extractYear(e.date);
+      if (year) acc.push({ year, event: e.event, source: 'lazar' });
+      return acc;
+    },
+    []
+  );
+
+  const whistleblowerEvents: WBEvent[] = [...burischEvents, ...lazarEvents];
+
+  return { props: { entries, whistleblowerEvents } };
 };
 
 export default Explore;
