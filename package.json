@@ -15,13 +15,13 @@
     "check": "npm run lint && npm run typecheck",
     "transcript:download": "ts-node ytdl/downloadTranscript.ts",
     "transcript:import": "ts-node ytdl/importTranscripts.ts",
-    "gerb:fetch": "node scripts/gerb/fetch-channel.js",
-    "gerb:transcripts": "node scripts/gerb/fetch-transcripts.js",
-    "gerb:extract": "node scripts/gerb/extract.js",
+    "gerb:fetch": "node --env-file=.env scripts/gerb/fetch-channel.js",
+    "gerb:transcripts": "node --env-file=.env scripts/gerb/fetch-transcripts.js",
+    "gerb:extract": "node --env-file=.env scripts/gerb/extract.js",
     "gerb:review": "node scripts/gerb/review.js",
     "gerb:review:summary": "node scripts/gerb/review.js --summary",
     "gerb:compile": "node scripts/gerb/compile-contributions.js",
-    "gerb:pipeline": "node scripts/gerb/pipeline.js"
+    "gerb:pipeline": "node --env-file=.env scripts/gerb/pipeline.js"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

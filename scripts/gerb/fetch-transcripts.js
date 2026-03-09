@@ -2,17 +2,19 @@
  * Fetches YouTube transcripts for all videos in the Gerb index
  * that haven't been transcribed yet.
  *
- * No API key required — uses YouTube's public caption API.
+ * Uses yt-dlp with ios player client to bypass SSAP restrictions.
+ * yt-dlp must be installed: https://github.com/yt-dlp/yt-dlp
  *
  * Usage: node scripts/gerb/fetch-transcripts.js [--limit N]
  *
  * Outputs: data/channels/gerb/transcripts/[video-id].json
  */
-const fs    = require('fs');
-const path  = require('path');
-const cfg   = require('./config');
+const fs            = require('fs');
+const path          = require('path');
+const os            = require('os');
+const { execSync }  = require('child_process');
+const cfg           = require('./config');
 
-// Arg: optional --limit N to process only N videos per run
 const limitArg = process.argv.indexOf('--limit');
 const LIMIT = limitArg !== -1 ? parseInt(process.argv[limitArg + 1]) : Infinity;
 
@@ -20,29 +22,62 @@ function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-async function fetchTranscript(videoId) {
-  // Use youtube-transcript package (handles YouTube's caption API internally)
-  const { YoutubeTranscript } = require('youtube-transcript');
-  try {
-    const segments = await YoutubeTranscript.fetchTranscript(videoId, { lang: 'en' });
-    return segments.map(s => ({
-      text:   s.text,
-      offset: Math.round(s.offset ?? s.start ?? 0),
-      duration: Math.round(s.duration ?? 0),
-    }));
-  } catch (err) {
-    // Auto-generated captions may be in a different lang or disabled
-    try {
-      const segments = await YoutubeTranscript.fetchTranscript(videoId);
-      return segments.map(s => ({
-        text:   s.text,
-        offset: Math.round(s.offset ?? s.start ?? 0),
-        duration: Math.round(s.duration ?? 0),
-      }));
-    } catch {
-      return null; // transcript unavailable
+/**
+ * Parse srv1 XML into [{text, offset, duration}] segments.
+ * Handles HTML entities and strips timing artifacts.
+ */
+function parseSrv1(xml) {
+  const segments = [];
+  const re = /<text start="([\d.]+)" dur="([\d.]+)">([\s\S]*?)<\/text>/g;
+  let m;
+  while ((m = re.exec(xml)) !== null) {
+    const rawText = m[3]
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&#\d+;/g, '')
+      .replace(/<[^>]+>/g, '')   // strip any inline tags (e.g. <font>)
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (rawText) {
+      segments.push({
+        text:     rawText,
+        offset:   Math.round(parseFloat(m[1]) * 1000),
+        duration: Math.round(parseFloat(m[2]) * 1000),
+      });
     }
   }
+  return segments;
+}
+
+function fetchTranscriptYtDlp(videoId) {
+  const tmpBase = path.join(os.tmpdir(), `gerb_${videoId}`);
+  const outFile = `${tmpBase}.en.srv1`;
+
+  // Clean up any previous run
+  if (fs.existsSync(outFile)) fs.unlinkSync(outFile);
+
+  try {
+    execSync(
+      `yt-dlp --extractor-args "youtube:player_client=ios" ` +
+      `--write-auto-sub --sub-format srv1 --skip-download ` +
+      `--sub-langs en -o "${tmpBase}" ` +
+      `"https://www.youtube.com/watch?v=${videoId}"`,
+      { stdio: 'pipe' }
+    );
+  } catch {
+    return null;
+  }
+
+  if (!fs.existsSync(outFile)) return null;
+
+  const xml = fs.readFileSync(outFile, 'utf8');
+  fs.unlinkSync(outFile); // cleanup
+
+  const segments = parseSrv1(xml);
+  return segments.length > 0 ? segments : null;
 }
 
 async function main() {
@@ -68,15 +103,14 @@ async function main() {
     const outFile = path.join(cfg.transcriptsDir, `${video.video_id}.json`);
 
     if (fs.existsSync(outFile)) {
-      // Already on disk but index not updated
       video.transcript_fetched = true;
       processed++;
       continue;
     }
 
-    const segments = await fetchTranscript(video.video_id);
+    const segments = fetchTranscriptYtDlp(video.video_id);
 
-    if (segments && segments.length > 0) {
+    if (segments) {
       const record = {
         video_id:     video.video_id,
         title:        video.title,
@@ -91,7 +125,7 @@ async function main() {
       succeeded++;
       process.stderr.write(`    OK: ${segments.length} segments\n`);
     } else {
-      video.transcript_fetched = true; // mark to avoid re-attempting
+      video.transcript_fetched = true;
       video.transcript_unavailable = true;
       failed++;
       process.stderr.write(`    SKIP: no transcript available\n`);
@@ -101,7 +135,6 @@ async function main() {
     await sleep(cfg.transcriptDelay);
   }
 
-  // Update index with transcript_fetched flags
   fs.writeFileSync(cfg.indexFile, JSON.stringify(index, null, 2));
 
   process.stderr.write(`\n=== Done ===\n`);

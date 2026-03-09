@@ -1,0 +1,245 @@
+[
+  {
+    "id": "aatip",
+    "name": "AATIP",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 16
+  },
+  {
+    "id": "majestic-12",
+    "name": "Majestic 12",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 8
+  },
+  {
+    "id": "immaculate-constellation",
+    "name": "Immaculate Constellation",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
+  },
+  {
+    "id": "strategic-defense-initiative",
+    "name": "Strategic Defense Initiative",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 6
+  },
+  {
+    "id": "tr-3b",
+    "name": "TR-3B",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 6
+  },
+  {
+    "id": "arrow",
+    "name": "Arrow",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 5
+  },
+  {
+    "id": "ufo-legacy-programs",
+    "name": "UFO Legacy Programs",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 4
+  },
+  {
+    "id": "project-red-light",
+    "name": "Project Red Light",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 4
+  },
+  {
+    "id": "interplanetary-phenomenon-unit",
+    "name": "Interplanetary Phenomenon Unit",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 4
+  },
+  {
+    "id": "project-blue-book",
+    "name": "Project Blue Book",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 4
+  },
+  {
+    "id": "aawsap",
+    "name": "AAWSAP",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 4
+  },
+  {
+    "id": "operation-paperclip",
+    "name": "Operation Paperclip",
+    "type": "project",
+    "group": "shared",
+    "val": 3,
+    "source": "gerb-research",
+    "mentioned_in": 3
+  },
+  {
+    "id": "corporate-portfolio-program",
+    "name": "Corporate Portfolio Program",
+    "type": "project",
+    "group": "shared",
+    "val": 3,
+    "source": "gerb-research",
+    "mentioned_in": 3
+  },
+  {
+    "id": "kona-blue",
+    "name": "Kona Blue",
+    "type": "project",
+    "group": "shared",
+    "val": 3,
+    "source": "gerb-research",
+    "mentioned_in": 3
+  },
+  {
+    "id": "project-twinkle",
+    "name": "Project Twinkle",
+    "type": "project",
+    "group": "shared",
+    "val": 3,
+    "source": "gerb-research",
+    "mentioned_in": 3
+  },
+  {
+    "id": "project-sand-dollar",
+    "name": "Project Sand Dollar",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-pounce",
+    "name": "Project Pounce",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-aquarius",
+    "name": "Project Aquarius",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "flux-liner",
+    "name": "Flux Liner",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "sentient",
+    "name": "Sentient",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-gravitar",
+    "name": "Project Gravitar",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "off-world-technologies-division",
+    "name": "Off-World Technologies Division",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-moondust",
+    "name": "Project Moondust",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "manhattan-project",
+    "name": "Manhattan Project",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "armed-forces-special-weapons-project",
+    "name": "Armed Forces Special Weapons Project",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "legacy-program",
+    "name": "Legacy Program",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "skunk-works",
+    "name": "Skunk Works",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  }
+]
