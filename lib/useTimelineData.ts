@@ -17,6 +17,7 @@ export interface TimelineEntry {
   quote_text?: string | null;
   quote_attribution?: string | null;
   topic?: string | null;
+  timestamp?: string | null;
 }
 
 // Merge ufotimeline entries with AoD quotes

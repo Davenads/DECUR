@@ -38,6 +38,7 @@ const platformQuotes = aodQuotes.map(q => {
     categories: ['quotes'],
     source_url: q.source_url,
     source: 'aod',
+    timestamp: q.timestamp,
     quote_text: q.text,
     quote_attribution: `The Age of Disclosure (2024) — ${q.topic}`,
     topic: q.topic,

@@ -3,6 +3,16 @@ import { TimelineEntry } from '../../lib/useTimelineData';
 
 interface Props { entries: TimelineEntry[]; }
 
+// Convert "00:51:43.017" → "51:43"  (drop hours if 0, drop ms)
+function formatTimestamp(ts: string): string {
+  const [hms] = ts.split('.');
+  const parts = hms.split(':');
+  const h = parseInt(parts[0], 10);
+  const m = parts[1];
+  const s = parts[2];
+  return h > 0 ? `${h}:${m}:${s}` : `${parseInt(m, 10)}:${s}`;
+}
+
 const QuotesBrowser: FC<Props> = ({ entries }) => {
   const [search, setSearch] = useState('');
 
@@ -75,14 +85,22 @@ const QuotesBrowser: FC<Props> = ({ entries }) => {
 
             {/* Source link */}
             <div className="mt-3 pt-3 border-t border-gray-100">
-              <a
-                href={entry.source_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-primary hover:underline"
-              >
-                Source: ufotimeline.com ↗
-              </a>
+              {entry.source === 'aod' ? (
+                <span className="text-xs text-gray-400">
+                  {entry.timestamp
+                    ? `${formatTimestamp(entry.timestamp)} — The Age of Disclosure (2024)`
+                    : 'The Age of Disclosure (2024)'}
+                </span>
+              ) : (
+                <a
+                  href={entry.source_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-primary hover:underline"
+                >
+                  Source: ufotimeline.com ↗
+                </a>
+              )}
             </div>
           </div>
         ))}
