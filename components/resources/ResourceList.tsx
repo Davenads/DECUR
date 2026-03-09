@@ -1,213 +1,156 @@
-import { useState, FC, ChangeEvent } from 'react';
+import { useState, FC, ChangeEvent, useMemo } from 'react';
+import resourcesData from '../../data/resources.json';
 
-interface Material {
-  id: number;
+interface Resource {
+  id: string;
   title: string;
-  type: string;
-  author: string;
-  year: string;
+  type?: string;
+  author?: string;
+  source?: string;
+  participants?: string;
+  year?: string;
+  date?: string;
   description: string;
   url: string;
-}
-
-interface Transcript {
-  id: number;
-  title: string;
-  interviewer?: string;
-  date: string;
-  description: string;
-  url: string;
-}
-
-type ResourcesData = {
-  materials: Material[];
-  transcripts: Transcript[];
+  insider: string | null;
+  tags: string[];
 }
 
 interface ResourceListProps {
-  category: 'materials' | 'transcripts';
+  category: 'sources' | 'testimony';
 }
 
 const ResourceList: FC<ResourceListProps> = ({ category }) => {
-  // Mock resources data
-  const resourcesData: ResourcesData = {
-    materials: [
-      {
-        id: 1,
-        title: "Eagles Disobey: The Case for Inca City, Mars",
-        type: "Book",
-        author: "Dan Burisch",
-        year: "1998",
-        description: "Initial publication detailing observations and theories regarding potential artificial structures on Mars.",
-        url: "#"
-      },
-      {
-        id: 2,
-        title: "Project Lotus: Final Report",
-        type: "Research Paper",
-        author: "Dan Burisch",
-        year: "2003",
-        description: "Comprehensive documentation of the Project Lotus experiments, findings, and implications for cellular transformation.",
-        url: "#"
-      },
-      {
-        id: 3,
-        title: "UAP: Preliminary Assessment Report",
-        type: "Government Report",
-        author: "Office of the Director of National Intelligence",
-        year: "2021",
-        description: "Official government assessment of UAP encounters by military personnel, acknowledging the existence of objects displaying advanced technology.",
-        url: "#"
-      },
-      {
-        id: 4,
-        title: "Timeline Divergence Analysis",
-        type: "Research Paper",
-        author: "Dan Burisch",
-        year: "2005",
-        description: "Detailed examination of the Timeline 1 and Timeline 2 split-point theory and supporting evidence.",
-        url: "#"
-      },
-      {
-        id: 5,
-        title: "House Oversight Committee UAP Hearing",
-        type: "Congressional Testimony",
-        author: "Multiple Witnesses",
-        year: "2023",
-        description: "David Grusch and other witnesses testify before Congress regarding UAP recovery programs and insider protection issues.",
-        url: "#"
-      }
-    ],
-    transcripts: [
-      {
-        id: 1,
-        title: "Dan Burisch Interview - Project Camelot",
-        interviewer: "Kerry Cassidy",
-        date: "June 2006",
-        description: "Extensive interview covering J-Rod interactions, Project Lotus, and timeline mechanics.",
-        url: "#"
-      },
-      {
-        id: 2,
-        title: "Testimony Before Majestic-12 Committee",
-        date: "March 2001",
-        description: "Transcript of formal testimony regarding P-45 and P-52 origins and motivations.",
-        url: "#"
-      },
-      {
-        id: 3,
-        title: "Project Lotus Briefing",
-        date: "November 2002",
-        description: "Internal briefing on the progress and discoveries of the Project Lotus experiments.",
-        url: "#"
-      },
-      {
-        id: 4,
-        title: "David Grusch - NewsNation Interview",
-        interviewer: "Ross Coulthart",
-        date: "June 2023",
-        description: "Interview where Grusch first publicly disclosed information about UAP retrieval programs.",
-        url: "#"
-      },
-      {
-        id: 5,
-        title: "Luis Elizondo - 60 Minutes Interview",
-        interviewer: "Bill Whitaker",
-        date: "May 2021",
-        description: "Former AATIP director discusses Pentagon UAP program and encounters by Navy pilots.",
-        url: "#"
-      }
-    ]
-  };
+  const resources: Resource[] = (resourcesData as Record<string, Resource[]>)[category] ?? [];
 
-  // Filter resources based on category
-  const resources = resourcesData[category] || [];
+  const types = useMemo(() => {
+    const seen = new Set<string>();
+    for (const r of resources) {
+      const t = r.type ?? r.source;
+      if (t) seen.add(t);
+    }
+    return Array.from(seen);
+  }, [resources]);
 
-  // Search functionality
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  
-  const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value);
-  };
-  
-  const filteredResources = resources.filter(resource => 
-    resource.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    (resource.description && resource.description.toLowerCase().includes(searchQuery.toLowerCase())) ||
-    ((resource as Material).author && (resource as Material).author.toLowerCase().includes(searchQuery.toLowerCase()))
-  );
+  const [search, setSearch] = useState('');
+  const [activeType, setActiveType] = useState<string | null>(null);
+
+  const filtered = useMemo(() => {
+    const q = search.toLowerCase();
+    return resources.filter(r => {
+      const matchesType = !activeType || r.type === activeType || r.source === activeType;
+      const matchesSearch =
+        !q ||
+        r.title.toLowerCase().includes(q) ||
+        r.description.toLowerCase().includes(q) ||
+        (r.author ?? '').toLowerCase().includes(q) ||
+        (r.participants ?? '').toLowerCase().includes(q);
+      return matchesType && matchesSearch;
+    });
+  }, [resources, search, activeType]);
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6">
-        {category === 'materials' ? 'Primary Materials' : 'Transcripts'}
+      <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">
+        {category === 'sources' ? 'Primary Sources' : 'Testimony & Interviews'}
       </h2>
-      
-      {/* Search bar */}
-      <div className="mb-6">
-        <div className="relative">
-          <input
-            type="text"
-            placeholder={`Search ${category}...`}
-            value={searchQuery}
-            onChange={handleSearchChange}
-            className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-          />
-          <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-gray-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </div>
-        </div>
+      <p className="text-sm text-gray-500 mb-6">
+        {category === 'sources'
+          ? 'Government reports, journalism, and books documenting the UAP disclosure landscape.'
+          : 'Congressional testimony, official hearings, and primary interviews with key figures.'}
+      </p>
+
+      {/* Search */}
+      <div className="relative mb-4">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={search}
+          onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
+          className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+        />
+        <svg
+          className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
       </div>
 
-      {/* Filter note */}
-      <div className="mb-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
-        <p className="text-sm text-blue-800">
-          <span className="font-medium">Note:</span> Currently displaying materials primarily from Dan Burisch's testimony. 
-          Additional insider materials from David Grusch, Luis Elizondo, and others will be added as our archive expands.
-        </p>
-      </div>
-      
-      {/* Resources list */}
-      <div className="space-y-4">
-        {filteredResources.length === 0 ? (
-          <p className="text-gray-500 text-center py-8">No resources found matching your search.</p>
-        ) : (
-          filteredResources.map(resource => (
-            <div key={resource.id} className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">{resource.title}</h3>
-                  <div className="mt-1 text-sm text-gray-500">
-                    {(resource as Material).type && <span className="mr-3">{(resource as Material).type}</span>}
-                    {(resource as Material).author && <span className="mr-3">By: {(resource as Material).author}</span>}
-                    {(resource as Transcript).interviewer && <span className="mr-3">Interviewer: {(resource as Transcript).interviewer}</span>}
-                    <span>{(resource as Material).year || (resource as Transcript).date}</span>
+      {/* Type filter chips */}
+      {types.length > 1 && (
+        <div className="flex flex-wrap gap-1.5 mb-6">
+          <button
+            onClick={() => setActiveType(null)}
+            className={`text-xs px-3 py-1 rounded-full font-medium transition-colors border ${
+              !activeType
+                ? 'bg-primary text-white border-primary'
+                : 'bg-white text-gray-500 border-gray-200 hover:border-gray-300'
+            }`}
+          >
+            All
+          </button>
+          {types.map(t => (
+            <button
+              key={t}
+              onClick={() => setActiveType(activeType === t ? null : t)}
+              className={`text-xs px-3 py-1 rounded-full font-medium transition-colors border ${
+                activeType === t
+                  ? 'bg-primary text-white border-primary'
+                  : 'bg-white text-gray-500 border-gray-200 hover:border-gray-300'
+              }`}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Results */}
+      {filtered.length === 0 ? (
+        <p className="text-gray-500 text-center py-8 text-sm">No results matching your search.</p>
+      ) : (
+        <div className="space-y-4">
+          {filtered.map(r => (
+            <div key={r.id} className="border border-gray-200 rounded-lg p-5 hover:shadow-md hover:border-primary/30 transition-all">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    {(r.type ?? r.source) && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium shrink-0">
+                        {r.type ?? r.source}
+                      </span>
+                    )}
+                    <span className="text-xs text-gray-400">{r.year ?? r.date}</span>
+                  </div>
+                  <h3 className="text-sm font-semibold text-gray-900 leading-snug mb-1">{r.title}</h3>
+                  {r.author && (
+                    <p className="text-xs text-gray-500 mb-2">{r.author}</p>
+                  )}
+                  {r.participants && (
+                    <p className="text-xs text-gray-500 mb-2">{r.participants}</p>
+                  )}
+                  <p className="text-sm text-gray-600 leading-relaxed">{r.description}</p>
+                  <div className="flex flex-wrap gap-1 mt-3">
+                    {r.tags.map(tag => (
+                      <span key={tag} className="text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-500">{tag}</span>
+                    ))}
                   </div>
                 </div>
-                <a 
-                  href={resource.url} 
-                  className="mt-3 md:mt-0 text-sm font-medium text-primary hover:text-primary-dark"
+                <a
+                  href={r.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline whitespace-nowrap shrink-0 flex items-center gap-1"
                 >
-                  View Document →
+                  View ↗
                 </a>
               </div>
-              <p className="mt-2 text-gray-600">{resource.description}</p>
             </div>
-          ))
-        )}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
