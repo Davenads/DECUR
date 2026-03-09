@@ -1,37 +1,138 @@
 [
   {
-    "term": "AARO",
-    "expansion": "All-domain Anomaly Resolution Office",
-    "definition": "Pentagon office formerly headed by Dr. Sean Kirkpatrick to investigate UAP",
+    "term": "3AF PAN",
+    "expansion": "French National Aeronautical and Astronautical Association Unidentified Aerospace Phenomena Division",
+    "definition": "French organization studying unidentified aerospace phenomena",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "9Xk4X41yl2M",
+        "title": "UFO Whistleblowers [Vol.2]",
+        "youtube_url": "https://www.youtube.com/watch?v=9Xk4X41yl2M"
+      }
+    ]
+  },
+  {
+    "term": "AAF",
+    "expansion": "Army Air Forces",
+    "definition": "The aerial warfare service of the United States Army during and after World War II",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
+      }
+    ]
+  },
+  {
+    "term": "AARO",
+    "expansion": "All-domain Anomaly Resolution Office",
+    "definition": "Office that received Eric Taber's memorandum for record regarding Area 51 UFO claims",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "1en219Vk9K4",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 1)",
+        "youtube_url": "https://www.youtube.com/watch?v=1en219Vk9K4"
+      },
+      {
+        "video_id": "1m0oJD59eXQ",
+        "title": "7/20/24 Discussing Cases and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=1m0oJD59eXQ"
+      },
       {
         "video_id": "9p99lTsC7wQ",
         "title": "UFO Legacy Programs - Science Applications International Corporation (SAIC)",
         "youtube_url": "https://www.youtube.com/watch?v=9p99lTsC7wQ"
       },
       {
+        "video_id": "azC7-UBRBSw",
+        "title": "Live with Joey",
+        "youtube_url": "https://www.youtube.com/watch?v=azC7-UBRBSw"
+      },
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
         "video_id": "t85t8QpTsD4",
         "title": "9/29/24 Bush/Cheney Historical Connections to UFO Legacy Crash Retrieval Programs Ft. VolarRecords",
         "youtube_url": "https://www.youtube.com/watch?v=t85t8QpTsD4"
+      },
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
       }
     ]
   },
   {
     "term": "AATIP",
     "expansion": "Advanced Aerospace Threat Identification Program",
-    "definition": "Pentagon program that investigated UAP",
+    "definition": "Referenced via leaked slide 9 from Christopher Mellon discussing effects on human cognition",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      },
+      {
+        "video_id": "GM1Qx9vuo2c",
+        "title": "National Reconnaissance Office - UFO Crash Retrievals, Surveillance, and Legacy Program Gatekeepers",
+        "youtube_url": "https://www.youtube.com/watch?v=GM1Qx9vuo2c"
+      },
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "i6fitvV-aO0",
+        "title": "Incredible UFO Footage - METAPOD",
+        "youtube_url": "https://www.youtube.com/watch?v=i6fitvV-aO0"
+      },
+      {
+        "video_id": "inyw4Vfu7Z0",
+        "title": "The Physics of UFOs– Dr. Kevin Knuth",
+        "youtube_url": "https://www.youtube.com/watch?v=inyw4Vfu7Z0"
+      },
       {
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
         "youtube_url": "https://www.youtube.com/watch?v=jNC-0dmH5BQ"
       },
       {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      },
+      {
         "video_id": "t9cLswYmWzU",
         "title": "Post UAP Hearing Live Stream: Time in DC, Immaculate Constellation, &amp; More",
         "youtube_url": "https://www.youtube.com/watch?v=t9cLswYmWzU"
+      },
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      },
+      {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
       },
       {
         "video_id": "ZQpciFASzPM",
@@ -43,9 +144,19 @@
   {
     "term": "AAWSAP",
     "expansion": "Advanced Aerospace Weapon System Applications Program",
-    "definition": "Related program to AATIP, mentioned in context of drama between Jay Stratton and Lou Elizondo",
+    "definition": "Government program mentioned alongside AATIP in context of UAP study history",
     "confidence": "medium",
     "sources": [
+      {
+        "video_id": "1m0oJD59eXQ",
+        "title": "7/20/24 Discussing Cases and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=1m0oJD59eXQ"
+      },
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
       {
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
@@ -55,6 +166,19 @@
         "video_id": "t9cLswYmWzU",
         "title": "Post UAP Hearing Live Stream: Time in DC, Immaculate Constellation, &amp; More",
         "youtube_url": "https://www.youtube.com/watch?v=t9cLswYmWzU"
+      }
+    ]
+  },
+  {
+    "term": "ABMA",
+    "expansion": "Army Ballistic Missile Agency",
+    "definition": "Wernher Von Braun's team that performed advanced aerospace projects and was considered for transfer into a Defense Advanced Research Center",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
       }
     ]
   },
@@ -85,6 +209,52 @@
     ]
   },
   {
+    "term": "ACOG",
+    "expansion": "Not explicitly stated",
+    "definition": "Advanced Combat Optical Gunsight - rifle optic mentioned on operators' weapons",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "4EMO38JUfVE",
+        "title": "Michael Herrera - Insights into UAP Encounter and Black Program Insiders",
+        "youtube_url": "https://www.youtube.com/watch?v=4EMO38JUfVE"
+      }
+    ]
+  },
+  {
+    "term": "AEC",
+    "expansion": "Atomic Energy Commission",
+    "definition": "Predecessor agency to DOE and NRC; used to misclassify UFO records in 1954 under transclassified foreign nuclear material",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "-DK2u8HlhDE",
+        "title": "UFOs and Nuclear Weapons - A Fascinating Connection",
+        "youtube_url": "https://www.youtube.com/watch?v=-DK2u8HlhDE"
+      },
+      {
+        "video_id": "41V4Pf_8oo4",
+        "title": "The 1953 Kingman, Arizona UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=41V4Pf_8oo4"
+      },
+      {
+        "video_id": "8S9qdRWSnD8",
+        "title": "The 1950s Del Rio, Texas UFO Crashes",
+        "youtube_url": "https://www.youtube.com/watch?v=8S9qdRWSnD8"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
+      }
+    ]
+  },
+  {
     "term": "AFMC",
     "expansion": "Air Force Material Command",
     "definition": "Major command of the Air Force",
@@ -94,6 +264,19 @@
         "video_id": "-IXSZe4xVv4",
         "title": "The Hidden Wing - US Air Force UFO Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
+      }
+    ]
+  },
+  {
+    "term": "AFOIN",
+    "expansion": "Air Force Office of Intelligence",
+    "definition": "Air Force intelligence office that conducted parallel UFO investigations to Project Blue Book",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
       }
     ]
   },
@@ -217,6 +400,19 @@
     ]
   },
   {
+    "term": "ALC",
+    "expansion": "Advanced Learning Course",
+    "definition": "US Army advanced training course",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
+      }
+    ]
+  },
+  {
     "term": "AMC",
     "expansion": "Air Mobility Command",
     "definition": "Air Force Major Command",
@@ -243,6 +439,19 @@
     ]
   },
   {
+    "term": "APRO",
+    "expansion": "Aerial Phenomena Research Organization",
+    "definition": "A civilian UFO research organization led by retired USMC Major Donald Keyhoe",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
+      }
+    ]
+  },
+  {
     "term": "ARL",
     "expansion": "Applied Research Laboratory",
     "definition": "Penn State University's Navy-affiliated research center specializing in power systems, electro-optics, and directed energy",
@@ -258,9 +467,14 @@
   {
     "term": "ARPA",
     "expansion": "Advanced Research Projects Agency",
-    "definition": "Research agency founded in 1958 that clashed with Army R&D",
+    "definition": "Defense agency that conducted advanced aerospace projects, predecessor organization related to DARPA",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      },
       {
         "video_id": "_sv0Otxtcn4",
         "title": "Philip J. Corso - US Army UFO Technology Research &amp; Development",
@@ -271,9 +485,14 @@
   {
     "term": "ARV",
     "expansion": "Alien Reproduction Vehicle",
-    "definition": "Reverse-engineered craft based on recovered non-human technology",
+    "definition": "Human-made craft reverse-engineered from extraterrestrial technology",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
       {
         "video_id": "9p99lTsC7wQ",
         "title": "UFO Legacy Programs - Science Applications International Corporation (SAIC)",
@@ -300,9 +519,19 @@
         "youtube_url": "https://www.youtube.com/watch?v=GM1Qx9vuo2c"
       },
       {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
+      {
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
         "youtube_url": "https://www.youtube.com/watch?v=jNC-0dmH5BQ"
+      },
+      {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
       },
       {
         "video_id": "rePrVmR6a68",
@@ -340,6 +569,11 @@
         "youtube_url": "https://www.youtube.com/watch?v=X6JfbfmvgMo"
       },
       {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
+      },
+      {
         "video_id": "ZQpciFASzPM",
         "title": "David Grusch Fox Interview, Age of Disclosure, Sandia, Current Research, &amp; QnA - UAP Gerb Live",
         "youtube_url": "https://www.youtube.com/watch?v=ZQpciFASzPM"
@@ -361,6 +595,11 @@
         "video_id": "7Ats0lIy3Lo",
         "title": "Deep Underground Military Bases (D.U.M.Bs.) - UFO Legacy Programs",
         "youtube_url": "https://www.youtube.com/watch?v=7Ats0lIy3Lo"
+      },
+      {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
       }
     ]
   },
@@ -378,6 +617,24 @@
     ]
   },
   {
+    "term": "ATC",
+    "expansion": "Air Traffic Control",
+    "definition": "Ground-based personnel who direct aircraft movements and provide traffic information to pilots",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "6cVe-hdMTCE",
+        "title": "Global Air Force UFO Encounters You've Probably Never Heard of",
+        "youtube_url": "https://www.youtube.com/watch?v=6cVe-hdMTCE"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
+      }
+    ]
+  },
+  {
     "term": "ATEC",
     "expansion": "Army Test and Evaluation Command",
     "definition": "Army organization that spearheads operations at West Desert Test Center",
@@ -387,6 +644,65 @@
         "video_id": "rePrVmR6a68",
         "title": "Dugway Proving Ground - UFO Legacy Programs",
         "youtube_url": "https://www.youtube.com/watch?v=rePrVmR6a68"
+      }
+    ]
+  },
+  {
+    "term": "ATIC",
+    "expansion": "Air Force Technical Intelligence Center",
+    "definition": "Air Force intelligence center that investigated UFOs and commissioned Project Stork through Battelle",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "R7DyJRf14nU",
+        "title": "Dr. Robert Sarbacher & the US Government's Secret UFO Crash Retrieval Group",
+        "youtube_url": "https://www.youtube.com/watch?v=R7DyJRf14nU"
+      },
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      },
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      },
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      },
+      {
+        "video_id": "Yn-83KbgRN8",
+        "title": "USO Case Book: Unidentified Submerged Objects Throughout History",
+        "youtube_url": "https://www.youtube.com/watch?v=Yn-83KbgRN8"
+      }
+    ]
+  },
+  {
+    "term": "AWACS",
+    "expansion": "Airborne Warning and Control System",
+    "definition": "Flying long-range radar and command center that provides tactical command services to units in their network",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      }
+    ]
+  },
+  {
+    "term": "BAT",
+    "expansion": "Biometrics and Tracking",
+    "definition": "A biometrics and tracking system used to scan military IDs",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "4EMO38JUfVE",
+        "title": "Michael Herrera - Insights into UAP Encounter and Black Program Insiders",
+        "youtube_url": "https://www.youtube.com/watch?v=4EMO38JUfVE"
       }
     ]
   },
@@ -443,6 +759,19 @@
     ]
   },
   {
+    "term": "C5",
+    "expansion": "Close Encounter of the Fifth Kind",
+    "definition": "Human-initiated contact with extraterrestrial intelligence, a practice promoted by Greer",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      }
+    ]
+  },
+  {
     "term": "CAP",
     "expansion": "Controlled Access Program",
     "definition": "Programs with controlled access requirements",
@@ -462,6 +791,19 @@
         "video_id": "ShoUyC1aip0",
         "title": "1997 ALIEN REPRODUCTION VEHICLE ENCOUNTER AT 29 PALMS, CA - THE TESTIMONY OF SGT RODERICK CASTLE",
         "youtube_url": "https://www.youtube.com/watch?v=ShoUyC1aip0"
+      }
+    ]
+  },
+  {
+    "term": "CAUS",
+    "expansion": "Citizens Against UFO Secrecy",
+    "definition": "UFO research organization co-founded by Brad Sparks",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
       }
     ]
   },
@@ -492,6 +834,19 @@
     ]
   },
   {
+    "term": "CENTCOM",
+    "expansion": "Central Command",
+    "definition": "US unified combatant command responsible for military operations in the Middle East",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      }
+    ]
+  },
+  {
     "term": "CFI",
     "expansion": "Coalition of Freedom of Information",
     "definition": "Organization that worked with Leslie Kean to pursue legal action against NASA for Kecksburg documents",
@@ -505,15 +860,61 @@
     ]
   },
   {
-    "term": "CIA",
-    "expansion": "Central Intelligence Agency",
-    "definition": "US intelligence agency involved in various UFO-related programs",
+    "term": "CFLCC",
+    "expansion": "Combined Forces Land Component Command",
+    "definition": "Military command structure used in coalition operations",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      }
+    ]
+  },
+  {
+    "term": "CGI",
+    "expansion": "Computer Generated Imagery",
+    "definition": "Digital effects technique suggested by some debunkers as explanation for the footage",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "i6fitvV-aO0",
+        "title": "Incredible UFO Footage - METAPOD",
+        "youtube_url": "https://www.youtube.com/watch?v=i6fitvV-aO0"
+      }
+    ]
+  },
+  {
+    "term": "CIA",
+    "expansion": "Central Intelligence Agency",
+    "definition": "US intelligence agency that publicly acknowledged Area 51 in 2013 and showed interest in the 1952 DC UFO incident",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "1en219Vk9K4",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 1)",
+        "youtube_url": "https://www.youtube.com/watch?v=1en219Vk9K4"
+      },
+      {
+        "video_id": "6ZuHLgVtKu8",
+        "title": "MOON DUST - The Pentagon's Secret UFO Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=6ZuHLgVtKu8"
+      },
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
       {
         "video_id": "GM1Qx9vuo2c",
         "title": "National Reconnaissance Office - UFO Crash Retrievals, Surveillance, and Legacy Program Gatekeepers",
         "youtube_url": "https://www.youtube.com/watch?v=GM1Qx9vuo2c"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
       },
       {
         "video_id": "ShoUyC1aip0",
@@ -529,6 +930,11 @@
         "video_id": "wF07QMm6joE",
         "title": "Alien Reproduction Vehicle - the Testimony of Mark McCandlish",
         "youtube_url": "https://www.youtube.com/watch?v=wF07QMm6joE"
+      },
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
       }
     ]
   },
@@ -590,6 +996,19 @@
     ]
   },
   {
+    "term": "CTR",
+    "expansion": "Communication Technician Radio",
+    "definition": "A US Navy rating/job classification for personnel handling radio communications",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      }
+    ]
+  },
+  {
     "term": "DAFF",
     "expansion": "Department of the Air Force",
     "definition": "The overarching entity encompassing the entirety of the Air Force and Space Force, led by the Secretary of the Air Force",
@@ -616,6 +1035,19 @@
     ]
   },
   {
+    "term": "DARC",
+    "expansion": "Defense Advanced Research Center",
+    "definition": "Alleged facility beneath Groom Lake with at least 10 underground stories where triangular craft reverse engineering reportedly took place",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      }
+    ]
+  },
+  {
     "term": "DARPA",
     "expansion": "Defense Advanced Research Projects Agency",
     "definition": "Agency that spearheads highly classified propulsion and exotic technology projects according to leaked source.",
@@ -625,6 +1057,11 @@
         "video_id": "X6JfbfmvgMo",
         "title": "Lockheed Martin - UFO Reverse Engineering, Material Exploitation, &amp; Legacy Programs",
         "youtube_url": "https://www.youtube.com/watch?v=X6JfbfmvgMo"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
       }
     ]
   },
@@ -642,6 +1079,19 @@
     ]
   },
   {
+    "term": "DEW",
+    "expansion": "Distant Early Warning",
+    "definition": "Radar systems located in Canada used to detect aircraft approaching from the north during the Cold War",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "8S9qdRWSnD8",
+        "title": "The 1950s Del Rio, Texas UFO Crashes",
+        "youtube_url": "https://www.youtube.com/watch?v=8S9qdRWSnD8"
+      }
+    ]
+  },
+  {
     "term": "DFARS",
     "expansion": "Defense Federal Acquisition Regulation Supplement",
     "definition": "Guidance regulations for federal acquisitions including rules on IRAD cost justification",
@@ -651,6 +1101,19 @@
         "video_id": "t8GmyGeVGAg",
         "title": "Discussing Lockheed Martin Project + &quot;Sub Rosa: Organized Secrecy&quot; Ft. Guests Rob Jones &amp; Kermit",
         "youtube_url": "https://www.youtube.com/watch?v=t8GmyGeVGAg"
+      }
+    ]
+  },
+  {
+    "term": "DHS",
+    "expansion": "Department of Homeland Security",
+    "definition": "Government department mentioned in alleged leaked document",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
       }
     ]
   },
@@ -666,6 +1129,21 @@
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
       },
       {
+        "video_id": "1m0oJD59eXQ",
+        "title": "7/20/24 Discussing Cases and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=1m0oJD59eXQ"
+      },
+      {
+        "video_id": "6ZuHLgVtKu8",
+        "title": "MOON DUST - The Pentagon's Secret UFO Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=6ZuHLgVtKu8"
+      },
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      },
+      {
         "video_id": "GM1Qx9vuo2c",
         "title": "National Reconnaissance Office - UFO Crash Retrievals, Surveillance, and Legacy Program Gatekeepers",
         "youtube_url": "https://www.youtube.com/watch?v=GM1Qx9vuo2c"
@@ -674,6 +1152,21 @@
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
         "youtube_url": "https://www.youtube.com/watch?v=jNC-0dmH5BQ"
+      },
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
       }
     ]
   },
@@ -700,6 +1193,19 @@
         "video_id": "ZQpciFASzPM",
         "title": "David Grusch Fox Interview, Age of Disclosure, Sandia, Current Research, &amp; QnA - UAP Gerb Live",
         "youtube_url": "https://www.youtube.com/watch?v=ZQpciFASzPM"
+      }
+    ]
+  },
+  {
+    "term": "DIS",
+    "expansion": "Defense Investigation Service",
+    "definition": "Organization that was not allowed to conduct semi-annual inspections of certain Lockheed aerospace contracts",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
       }
     ]
   },
@@ -742,9 +1248,39 @@
   {
     "term": "DOD",
     "expansion": "Department of Defense",
-    "definition": "US federal department overseeing military forces",
+    "definition": "US government department responsible for military matters",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "1en219Vk9K4",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 1)",
+        "youtube_url": "https://www.youtube.com/watch?v=1en219Vk9K4"
+      },
+      {
+        "video_id": "41V4Pf_8oo4",
+        "title": "The 1953 Kingman, Arizona UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=41V4Pf_8oo4"
+      },
+      {
+        "video_id": "6cVe-hdMTCE",
+        "title": "Global Air Force UFO Encounters You've Probably Never Heard of",
+        "youtube_url": "https://www.youtube.com/watch?v=6cVe-hdMTCE"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      },
       {
         "video_id": "wF07QMm6joE",
         "title": "Alien Reproduction Vehicle - the Testimony of Mark McCandlish",
@@ -755,13 +1291,33 @@
   {
     "term": "DOE",
     "expansion": "Department of Energy",
-    "definition": "US government department that succeeded the Atomic Energy Commission, implicated in UFO crash retrieval operations and data classification",
+    "definition": "US government department involved in energy policy and nuclear weapons; mentioned as playing active role in UAP research and possibly crash retrieval",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "-DK2u8HlhDE",
+        "title": "UFOs and Nuclear Weapons - A Fascinating Connection",
+        "youtube_url": "https://www.youtube.com/watch?v=-DK2u8HlhDE"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
       {
         "video_id": "7Jc2G5aEH0A",
         "title": "1997 Peru UFO Crash Retrieval - the Story of Jonathan Weygandt",
         "youtube_url": "https://www.youtube.com/watch?v=7Jc2G5aEH0A"
+      },
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
       },
       {
         "video_id": "ShoUyC1aip0",
@@ -772,6 +1328,11 @@
         "video_id": "t85t8QpTsD4",
         "title": "9/29/24 Bush/Cheney Historical Connections to UFO Legacy Crash Retrieval Programs Ft. VolarRecords",
         "youtube_url": "https://www.youtube.com/watch?v=t85t8QpTsD4"
+      },
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
       },
       {
         "video_id": "wF07QMm6joE",
@@ -812,6 +1373,19 @@
     ]
   },
   {
+    "term": "DOPSR",
+    "expansion": "Defense Office of Prepublication and Security Review",
+    "definition": "Office that reviews materials for classified information before publication",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      }
+    ]
+  },
+  {
     "term": "DPG",
     "expansion": "Dugway Proving Ground",
     "definition": "US Army installation in Utah that tests biological and chemical weapons systems",
@@ -826,10 +1400,15 @@
   },
   {
     "term": "DPI",
-    "expansion": "Disclosure Project Intelligence",
-    "definition": "Steven Greer's archive of UFO/UAP-related documents, communications, and witness testimonies",
+    "expansion": "Disclosure Project Initiative",
+    "definition": "Steven Greer's archive of witness documents and testimonies",
     "confidence": "medium",
     "sources": [
+      {
+        "video_id": "azC7-UBRBSw",
+        "title": "Live with Joey",
+        "youtube_url": "https://www.youtube.com/watch?v=azC7-UBRBSw"
+      },
       {
         "video_id": "U_LSMLGBDNg",
         "title": "UAP Reverse Engineering at Edwards Air Force Base [Redacted List Vol.2]",
@@ -882,6 +1461,11 @@
         "youtube_url": "https://www.youtube.com/watch?v=H9GSqOEvoBE"
       },
       {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
+      },
+      {
         "video_id": "t8GmyGeVGAg",
         "title": "Discussing Lockheed Martin Project + &quot;Sub Rosa: Organized Secrecy&quot; Ft. Guests Rob Jones &amp; Kermit",
         "youtube_url": "https://www.youtube.com/watch?v=t8GmyGeVGAg"
@@ -916,6 +1500,11 @@
         "video_id": "mHkPHd_eOXI",
         "title": "Sandia National Laboratories - UFO Reverse Engineering, Material Exploitation, &amp; Legacy Programs",
         "youtube_url": "https://www.youtube.com/watch?v=mHkPHd_eOXI"
+      },
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
       }
     ]
   },
@@ -984,9 +1573,14 @@
   {
     "term": "DUMB",
     "expansion": "Deep Underground Military Base",
-    "definition": "Subterranean military facilities, also called STFs (Subterranean Facilities)",
+    "definition": "Secret underground facilities allegedly used for black projects and UAP-related work",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
       {
         "video_id": "rePrVmR6a68",
         "title": "Dugway Proving Ground - UFO Legacy Programs",
@@ -1023,9 +1617,14 @@
   {
     "term": "EBE",
     "expansion": "Extraterrestrial Biological Entity",
-    "definition": "Term for recovered non-human beings, specifically mentioned in context of Kingman crash",
+    "definition": "Term used to refer to extraterrestrial beings",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
       {
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
@@ -1035,6 +1634,45 @@
         "video_id": "_sv0Otxtcn4",
         "title": "Philip J. Corso - US Army UFO Technology Research &amp; Development",
         "youtube_url": "https://www.youtube.com/watch?v=_sv0Otxtcn4"
+      }
+    ]
+  },
+  {
+    "term": "EBEN",
+    "expansion": "Extraterrestrial Biological Entity (with N suffix)",
+    "definition": "Variation of EBE terminology",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      }
+    ]
+  },
+  {
+    "term": "EBOS",
+    "expansion": "Extraterrestrial Biological Organisms",
+    "definition": "Alleged alien biological entities reportedly studied at Battelle according to an unverified online leaker",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      }
+    ]
+  },
+  {
+    "term": "ECM",
+    "expansion": "Electronic Counter Measures",
+    "definition": "Equipment aboard aircraft for electronic reconnaissance that detected radar signals from UFOs",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "8S9qdRWSnD8",
+        "title": "The 1950s Del Rio, Texas UFO Crashes",
+        "youtube_url": "https://www.youtube.com/watch?v=8S9qdRWSnD8"
       }
     ]
   },
@@ -1054,9 +1692,19 @@
   {
     "term": "EMP",
     "expansion": "Electromagnetic Pulse",
-    "definition": "Weapons allegedly used in UAP retrieval operations",
+    "definition": "Weapon technology allegedly used to bring down UAP craft",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
       {
         "video_id": "U_LSMLGBDNg",
         "title": "UAP Reverse Engineering at Edwards Air Force Base [Redacted List Vol.2]",
@@ -1078,6 +1726,32 @@
     ]
   },
   {
+    "term": "EOD",
+    "expansion": "Explosive Ordnance Disposal",
+    "definition": "Military unit specializing in explosive ordnance, specifically 52nd EOD works with NEST",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      }
+    ]
+  },
+  {
+    "term": "EPIC",
+    "expansion": "El Paso Intelligence Center",
+    "definition": "Intelligence center established at Fort Bliss in 1974 that may have provided aerial intelligence",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      }
+    ]
+  },
+  {
     "term": "ESP",
     "expansion": "Extrasensory Perception",
     "definition": "According to Dr. Eric Walker, knowledge of ESP was needed to engage in UFO legacy programs; ONR has shown interest in studying this",
@@ -1091,6 +1765,24 @@
     ]
   },
   {
+    "term": "FAA",
+    "expansion": "Federal Aviation Administration",
+    "definition": "US federal agency that tracked the UFO during the Japan Airlines 1628 incident on radar",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "9FL04mqyZxk",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 2)",
+        "youtube_url": "https://www.youtube.com/watch?v=9FL04mqyZxk"
+      },
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      }
+    ]
+  },
+  {
     "term": "FAP",
     "expansion": "Peruvian Air Force",
     "definition": "Peru's military air force",
@@ -1100,6 +1792,19 @@
         "video_id": "7Jc2G5aEH0A",
         "title": "1997 Peru UFO Crash Retrieval - the Story of Jonathan Weygandt",
         "youtube_url": "https://www.youtube.com/watch?v=7Jc2G5aEH0A"
+      }
+    ]
+  },
+  {
+    "term": "FEMA",
+    "expansion": "Federal Emergency Management Agency",
+    "definition": "US government agency that coordinates disaster response",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "9Xk4X41yl2M",
+        "title": "UFO Whistleblowers [Vol.2]",
+        "youtube_url": "https://www.youtube.com/watch?v=9Xk4X41yl2M"
       }
     ]
   },
@@ -1213,6 +1918,81 @@
     ]
   },
   {
+    "term": "FLIR",
+    "expansion": "Forward Looking Infrared",
+    "definition": "Infrared imaging platform used on military aircraft to capture UAP footage",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "i6fitvV-aO0",
+        "title": "Incredible UFO Footage - METAPOD",
+        "youtube_url": "https://www.youtube.com/watch?v=i6fitvV-aO0"
+      }
+    ]
+  },
+  {
+    "term": "FOIA",
+    "expansion": "Freedom of Information Act",
+    "definition": "Law allowing public access to government records, used to get Area 51 acknowledged in 2013",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "1en219Vk9K4",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 1)",
+        "youtube_url": "https://www.youtube.com/watch?v=1en219Vk9K4"
+      },
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
+      }
+    ]
+  },
+  {
+    "term": "FSC",
+    "expansion": "Flight Security Controller",
+    "definition": "Personnel responsible for monitoring security at nuclear missile sites",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "-DK2u8HlhDE",
+        "title": "UFOs and Nuclear Weapons - A Fascinating Connection",
+        "youtube_url": "https://www.youtube.com/watch?v=-DK2u8HlhDE"
+      }
+    ]
+  },
+  {
+    "term": "FTD",
+    "expansion": "Foreign Technology Division",
+    "definition": "A division at Wright-Patterson Air Force Base allegedly used as a red herring for UAP investigations",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      }
+    ]
+  },
+  {
+    "term": "GAO",
+    "expansion": "General Accounting Office",
+    "definition": "US government agency that conducted audits finding 1,460 discrepancies in Lockheed's classified document inventory",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      }
+    ]
+  },
+  {
     "term": "GEOINT",
     "expansion": "Geospatial Intelligence",
     "definition": "Intelligence about human activity on earth derived from exploitation and analysis of imagery and geospatial information",
@@ -1254,9 +2034,19 @@
   {
     "term": "ICBM",
     "expansion": "Intercontinental Ballistic Missile",
-    "definition": "Long-range nuclear missiles capable of reaching targets on other continents.",
+    "definition": "A long-range nuclear missile capable of traveling between continents, designed to deliver nuclear warheads",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "-DK2u8HlhDE",
+        "title": "UFOs and Nuclear Weapons - A Fascinating Connection",
+        "youtube_url": "https://www.youtube.com/watch?v=-DK2u8HlhDE"
+      },
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      },
       {
         "video_id": "X6JfbfmvgMo",
         "title": "Lockheed Martin - UFO Reverse Engineering, Material Exploitation, &amp; Legacy Programs",
@@ -1287,6 +2077,19 @@
         "video_id": "-IXSZe4xVv4",
         "title": "The Hidden Wing - US Air Force UFO Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
+      }
+    ]
+  },
+  {
+    "term": "IDIQ",
+    "expansion": "Indefinite Delivery Indefinite Quantity",
+    "definition": "Type of government contract that provides for an indefinite quantity of services during a fixed period",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
       }
     ]
   },
@@ -1368,9 +2171,19 @@
   {
     "term": "IPU",
     "expansion": "Interplanetary Phenomenon Unit",
-    "definition": "US Department of Counter Intelligence in-house project for UFO-related matters",
+    "definition": "A shadowy unit referenced in MJ-12 documents with case protocols and guidelines, predating or concurrent with MJ-12",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "1m0oJD59eXQ",
+        "title": "7/20/24 Discussing Cases and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=1m0oJD59eXQ"
+      },
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
       {
         "video_id": "mHkPHd_eOXI",
         "title": "Sandia National Laboratories - UFO Reverse Engineering, Material Exploitation, &amp; Legacy Programs",
@@ -1380,6 +2193,19 @@
         "video_id": "QJxbyu-9Tj0",
         "title": "The 1948 Aztec, New Mexico UFO Crash Retrieval",
         "youtube_url": "https://www.youtube.com/watch?v=QJxbyu-9Tj0"
+      }
+    ]
+  },
+  {
+    "term": "IR MISSILE",
+    "expansion": "Infrared missile",
+    "definition": "A heat-seeking missile that locks onto thermal signatures",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "K_BZkOAw6E0",
+        "title": "The First Commercial Flight Grounded Due to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=K_BZkOAw6E0"
       }
     ]
   },
@@ -1428,9 +2254,45 @@
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
       },
       {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      },
+      {
         "video_id": "GM1Qx9vuo2c",
         "title": "National Reconnaissance Office - UFO Crash Retrievals, Surveillance, and Legacy Program Gatekeepers",
         "youtube_url": "https://www.youtube.com/watch?v=GM1Qx9vuo2c"
+      }
+    ]
+  },
+  {
+    "term": "J2",
+    "expansion": "Assistant Joint Chief of Staff for Intelligence",
+    "definition": "Military intelligence position that Wilson held, giving him regulatory authority over special access programs",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
+      }
+    ]
+  },
+  {
+    "term": "JANAP",
+    "expansion": "Joint Army Navy Air Force Publication",
+    "definition": "Military publication system that issued directives including reporting requirements for airborne and waterborne UFOs",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      },
+      {
+        "video_id": "Yn-83KbgRN8",
+        "title": "USO Case Book: Unidentified Submerged Objects Throughout History",
+        "youtube_url": "https://www.youtube.com/watch?v=Yn-83KbgRN8"
       }
     ]
   },
@@ -1461,15 +2323,38 @@
     ]
   },
   {
-    "term": "JSOC",
-    "expansion": "Joint Special Operations Command",
-    "definition": "Elite component command within Special Operations Command",
+    "term": "JPL",
+    "expansion": "Jet Propulsion Laboratory",
+    "definition": "Research facility at Edwards Air Force Base where Edgar Fouche claimed to work before being recruited to DARC",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      }
+    ]
+  },
+  {
+    "term": "JSOC",
+    "expansion": "Joint Special Operations Command",
+    "definition": "US military command for special operations forces",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
       {
         "video_id": "7Jc2G5aEH0A",
         "title": "1997 Peru UFO Crash Retrieval - the Story of Jonathan Weygandt",
         "youtube_url": "https://www.youtube.com/watch?v=7Jc2G5aEH0A"
+      },
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
       },
       {
         "video_id": "E-GleS2aGj0",
@@ -1480,6 +2365,16 @@
         "video_id": "H9GSqOEvoBE",
         "title": "US Navy UFO Crash Retrieval &amp; Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=H9GSqOEvoBE"
+      },
+      {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
       }
     ]
   },
@@ -1506,6 +2401,37 @@
         "video_id": "_sv0Otxtcn4",
         "title": "Philip J. Corso - US Army UFO Technology Research &amp; Development",
         "youtube_url": "https://www.youtube.com/watch?v=_sv0Otxtcn4"
+      }
+    ]
+  },
+  {
+    "term": "LRRP",
+    "expansion": "Long Range Reconnaissance Patrol",
+    "definition": "A special reconnaissance unit in Vietnam that conducted surveillance of enemy supply routes and marked bombing targets, specifically Company E 52nd Infantry attached to the First Cavalry Division",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      }
+    ]
+  },
+  {
+    "term": "LZ",
+    "expansion": "Landing Zone",
+    "definition": "Helicopter landing area where Marines were stationed",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "4EMO38JUfVE",
+        "title": "Michael Herrera - Insights into UAP Encounter and Black Program Insiders",
+        "youtube_url": "https://www.youtube.com/watch?v=4EMO38JUfVE"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
       }
     ]
   },
@@ -1606,6 +2532,19 @@
     ]
   },
   {
+    "term": "MERINT",
+    "expansion": "Maritime Intelligence",
+    "definition": "Maritime intelligence reporting system referenced in JANAP 146c for waterborne UFO reports",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      }
+    ]
+  },
+  {
     "term": "MFD",
     "expansion": "Magnetic Field Disruptor",
     "definition": "A circular plasma-filled accelerator ring that creates a magnetic vortex field to neutralize 89% of gravity effects on mass within proximity",
@@ -1657,13 +2596,33 @@
   {
     "term": "MJ-12",
     "expansion": "Majestic 12",
-    "definition": "Alleged secret committee of scientists, military leaders, and government officials formed to investigate and manage UAP matters",
+    "definition": "An organization within the USG established under Truman and handed to Eisenhower, formed around the time of Roswell, reported to be the original crash retrieval and reverse engineering team that operated with Vannevar Bush, Robert J. Oppenheimer, and Albert Einstein",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "1m0oJD59eXQ",
+        "title": "7/20/24 Discussing Cases and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=1m0oJD59eXQ"
+      },
+      {
+        "video_id": "EKEZ2BClIb0",
+        "title": "UFO Whistleblowers [Vol.1]",
+        "youtube_url": "https://www.youtube.com/watch?v=EKEZ2BClIb0"
+      },
+      {
+        "video_id": "FGiwgyLY7Aw",
+        "title": "The 1933 Magenta, Italy UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=FGiwgyLY7Aw"
+      },
       {
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
         "youtube_url": "https://www.youtube.com/watch?v=jNC-0dmH5BQ"
+      },
+      {
+        "video_id": "R7DyJRf14nU",
+        "title": "Dr. Robert Sarbacher & the US Government's Secret UFO Crash Retrieval Group",
+        "youtube_url": "https://www.youtube.com/watch?v=R7DyJRf14nU"
       },
       {
         "video_id": "rgBTMzFd-hg",
@@ -1758,6 +2717,60 @@
     ]
   },
   {
+    "term": "MUFON",
+    "expansion": "Mutual UFO Network",
+    "definition": "A nonprofit organization that investigates UFO sightings",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "9FL04mqyZxk",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 2)",
+        "youtube_url": "https://www.youtube.com/watch?v=9FL04mqyZxk"
+      },
+      {
+        "video_id": "9Xk4X41yl2M",
+        "title": "UFO Whistleblowers [Vol.2]",
+        "youtube_url": "https://www.youtube.com/watch?v=9Xk4X41yl2M"
+      },
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      }
+    ]
+  },
+  {
+    "term": "NARCAP",
+    "expansion": "National Aviation Reporting Center on Anomalous Phenomena",
+    "definition": "Organization that reportedly stored UFO and USO files at Norton Air Force Base",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      }
+    ]
+  },
+  {
+    "term": "NASA",
+    "expansion": "National Aeronautics and Space Administration",
+    "definition": "US government agency responsible for space program and aeronautics research",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "6ZuHLgVtKu8",
+        "title": "MOON DUST - The Pentagon's Secret UFO Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=6ZuHLgVtKu8"
+      },
+      {
+        "video_id": "9Xk4X41yl2M",
+        "title": "UFO Whistleblowers [Vol.2]",
+        "youtube_url": "https://www.youtube.com/watch?v=9Xk4X41yl2M"
+      }
+    ]
+  },
+  {
     "term": "NATDC",
     "expansion": "Northrop Advanced Technology and Design Center",
     "definition": "Northrop's 1992 answer to Lockheed's Skunk Works, focused on core key defense programs",
@@ -1771,24 +2784,118 @@
     ]
   },
   {
+    "term": "NCO",
+    "expansion": "Not explicitly stated",
+    "definition": "Non-Commissioned Officer - referenced as being present at briefings",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "4EMO38JUfVE",
+        "title": "Michael Herrera - Insights into UAP Encounter and Black Program Insiders",
+        "youtube_url": "https://www.youtube.com/watch?v=4EMO38JUfVE"
+      }
+    ]
+  },
+  {
     "term": "NDA",
     "expansion": "Non-Disclosure Agreement",
-    "definition": "Legal agreement preventing disclosure of classified or sensitive information",
+    "definition": "Legal contract preventing disclosure of classified information",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
+      {
+        "video_id": "azC7-UBRBSw",
+        "title": "Live with Joey",
+        "youtube_url": "https://www.youtube.com/watch?v=azC7-UBRBSw"
+      },
       {
         "video_id": "t9cLswYmWzU",
         "title": "Post UAP Hearing Live Stream: Time in DC, Immaculate Constellation, &amp; More",
         "youtube_url": "https://www.youtube.com/watch?v=t9cLswYmWzU"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
+      }
+    ]
+  },
+  {
+    "term": "NDAA",
+    "expansion": "National Defense Authorization Act",
+    "definition": "Annual legislation that authorizes defense spending and policy, referenced regarding 2024 UFO-related provisions",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "41V4Pf_8oo4",
+        "title": "The 1953 Kingman, Arizona UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=41V4Pf_8oo4"
+      },
+      {
+        "video_id": "6ZuHLgVtKu8",
+        "title": "MOON DUST - The Pentagon's Secret UFO Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=6ZuHLgVtKu8"
+      },
+      {
+        "video_id": "9FL04mqyZxk",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 2)",
+        "youtube_url": "https://www.youtube.com/watch?v=9FL04mqyZxk"
+      },
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      }
+    ]
+  },
+  {
+    "term": "NEAC",
+    "expansion": "Northeast Air Command",
+    "definition": "US Air Force command in the northeastern United States",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "8S9qdRWSnD8",
+        "title": "The 1950s Del Rio, Texas UFO Crashes",
+        "youtube_url": "https://www.youtube.com/watch?v=8S9qdRWSnD8"
       }
     ]
   },
   {
     "term": "NEST",
     "expansion": "Nuclear Emergency Support Team",
-    "definition": "On-site scientific team associated with DOE/NNSA involved in emergency response",
+    "definition": "Nuclear weapons experts who allegedly perform retrieval operations alongside JSOC",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
       {
         "video_id": "mHkPHd_eOXI",
         "title": "Sandia National Laboratories - UFO Reverse Engineering, Material Exploitation, &amp; Legacy Programs",
@@ -1823,6 +2930,11 @@
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
       },
       {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
+      {
         "video_id": "E-GleS2aGj0",
         "title": "UFO Legacy Programs - Northrop Grumman",
         "youtube_url": "https://www.youtube.com/watch?v=E-GleS2aGj0"
@@ -1836,6 +2948,11 @@
         "video_id": "H9GSqOEvoBE",
         "title": "US Navy UFO Crash Retrieval &amp; Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=H9GSqOEvoBE"
+      },
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
       },
       {
         "video_id": "X6JfbfmvgMo",
@@ -1852,18 +2969,53 @@
   {
     "term": "NHI",
     "expansion": "Non-Human Intelligence",
-    "definition": "Extraterrestrial or non-human entities and their associated technologies",
+    "definition": "Term for intelligent beings not of human origin",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
+      {
+        "video_id": "9Xk4X41yl2M",
+        "title": "UFO Whistleblowers [Vol.2]",
+        "youtube_url": "https://www.youtube.com/watch?v=9Xk4X41yl2M"
+      },
       {
         "video_id": "E-GleS2aGj0",
         "title": "UFO Legacy Programs - Northrop Grumman",
         "youtube_url": "https://www.youtube.com/watch?v=E-GleS2aGj0"
       },
       {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "inyw4Vfu7Z0",
+        "title": "The Physics of UFOs– Dr. Kevin Knuth",
+        "youtube_url": "https://www.youtube.com/watch?v=inyw4Vfu7Z0"
+      },
+      {
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
         "youtube_url": "https://www.youtube.com/watch?v=jNC-0dmH5BQ"
+      },
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
+        "video_id": "R7DyJRf14nU",
+        "title": "Dr. Robert Sarbacher & the US Government's Secret UFO Crash Retrieval Group",
+        "youtube_url": "https://www.youtube.com/watch?v=R7DyJRf14nU"
       },
       {
         "video_id": "t85t8QpTsD4",
@@ -1879,6 +3031,42 @@
         "video_id": "ZQpciFASzPM",
         "title": "David Grusch Fox Interview, Age of Disclosure, Sandia, Current Research, &amp; QnA - UAP Gerb Live",
         "youtube_url": "https://www.youtube.com/watch?v=ZQpciFASzPM"
+      }
+    ]
+  },
+  {
+    "term": "NICAP",
+    "expansion": "National Investigations Committee on Aerial Phenomena",
+    "definition": "Organization that Barney Hill reported his abduction experience to",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "1en219Vk9K4",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 1)",
+        "youtube_url": "https://www.youtube.com/watch?v=1en219Vk9K4"
+      },
+      {
+        "video_id": "8S9qdRWSnD8",
+        "title": "The 1950s Del Rio, Texas UFO Crashes",
+        "youtube_url": "https://www.youtube.com/watch?v=8S9qdRWSnD8"
+      },
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
+      }
+    ]
+  },
+  {
+    "term": "NIE",
+    "expansion": "National Intelligence Estimate",
+    "definition": "US intelligence community's authoritative assessment of national security issues",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
       }
     ]
   },
@@ -1919,6 +3107,89 @@
     ]
   },
   {
+    "term": "NNSOC",
+    "expansion": "US Navy Network and Space Operations Command",
+    "definition": "According to Gary McKinnon, the command associated with the alleged Solar Warden space program",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "9FL04mqyZxk",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 2)",
+        "youtube_url": "https://www.youtube.com/watch?v=9FL04mqyZxk"
+      }
+    ]
+  },
+  {
+    "term": "NOAA",
+    "expansion": "National Oceanic and Atmospheric Administration",
+    "definition": "US agency formerly administered by Timothy Gallaudet",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      }
+    ]
+  },
+  {
+    "term": "NORAD",
+    "expansion": "North American Aerospace Defense Command",
+    "definition": "Joint US-Canadian organization for aerospace warning and control that may have space tracking records of the object",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
+      }
+    ]
+  },
+  {
+    "term": "NPC",
+    "expansion": "National Press Club",
+    "definition": "Location where Greer held a 2023 disclosure event where Herrera first gave testimony",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "azC7-UBRBSw",
+        "title": "Live with Joey",
+        "youtube_url": "https://www.youtube.com/watch?v=azC7-UBRBSw"
+      }
+    ]
+  },
+  {
+    "term": "NRC",
+    "expansion": "Nuclear Regulatory Commission",
+    "definition": "US agency that regulates nuclear power plants and handles nuclear security; confiscated records from Indian Point incident",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "-DK2u8HlhDE",
+        "title": "UFOs and Nuclear Weapons - A Fascinating Connection",
+        "youtube_url": "https://www.youtube.com/watch?v=-DK2u8HlhDE"
+      }
+    ]
+  },
+  {
+    "term": "NREL",
+    "expansion": "National Renewable Energy Laboratory",
+    "definition": "DOE-sponsored laboratory managed by Battelle",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      }
+    ]
+  },
+  {
     "term": "NRO",
     "expansion": "National Reconnaissance Office",
     "definition": "Intelligence agency responsible for reconnaissance satellites",
@@ -1933,6 +3204,11 @@
         "video_id": "9p99lTsC7wQ",
         "title": "UFO Legacy Programs - Science Applications International Corporation (SAIC)",
         "youtube_url": "https://www.youtube.com/watch?v=9p99lTsC7wQ"
+      },
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
       },
       {
         "video_id": "E-GleS2aGj0",
@@ -1953,6 +3229,16 @@
         "video_id": "H9GSqOEvoBE",
         "title": "US Navy UFO Crash Retrieval &amp; Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=H9GSqOEvoBE"
+      },
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
       },
       {
         "video_id": "QJxbyu-9Tj0",
@@ -2016,6 +3302,11 @@
         "youtube_url": "https://www.youtube.com/watch?v=GM1Qx9vuo2c"
       },
       {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      },
+      {
         "video_id": "QJxbyu-9Tj0",
         "title": "The 1948 Aztec, New Mexico UFO Crash Retrieval",
         "youtube_url": "https://www.youtube.com/watch?v=QJxbyu-9Tj0"
@@ -2029,6 +3320,11 @@
         "video_id": "wF07QMm6joE",
         "title": "Alien Reproduction Vehicle - the Testimony of Mark McCandlish",
         "youtube_url": "https://www.youtube.com/watch?v=wF07QMm6joE"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
       }
     ]
   },
@@ -2042,6 +3338,32 @@
         "video_id": "_sv0Otxtcn4",
         "title": "Philip J. Corso - US Army UFO Technology Research &amp; Development",
         "youtube_url": "https://www.youtube.com/watch?v=_sv0Otxtcn4"
+      }
+    ]
+  },
+  {
+    "term": "NSF",
+    "expansion": "National Science Foundation",
+    "definition": "US government agency that supports fundamental research and education in science and engineering",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      }
+    ]
+  },
+  {
+    "term": "NSWC",
+    "expansion": "Naval Surface Warfare Center",
+    "definition": "Navy federal laboratory focused on sensors, electronics, electronic warfare, and special warfare weapons support",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
       }
     ]
   },
@@ -2110,6 +3432,19 @@
     ]
   },
   {
+    "term": "NVA",
+    "expansion": "North Vietnamese Army",
+    "definition": "Military forces of North Vietnam during the Vietnam War",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "41V4Pf_8oo4",
+        "title": "The 1953 Kingman, Arizona UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=41V4Pf_8oo4"
+      }
+    ]
+  },
+  {
     "term": "OAP",
     "expansion": "Not explicitly defined in transcript",
     "definition": "Referenced as a congressionally mandated program under Harry Reid's support, likely referring to AAWSAP/AATIP era program",
@@ -2147,6 +3482,11 @@
         "youtube_url": "https://www.youtube.com/watch?v=9p99lTsC7wQ"
       },
       {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
+      },
+      {
         "video_id": "H9GSqOEvoBE",
         "title": "US Navy UFO Crash Retrieval &amp; Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=H9GSqOEvoBE"
@@ -2182,6 +3522,19 @@
     ]
   },
   {
+    "term": "ONI",
+    "expansion": "Office of Naval Intelligence",
+    "definition": "Navy intelligence office that assisted with UFO/USO investigations and received thousands of UAP reports",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      }
+    ]
+  },
+  {
     "term": "ONR",
     "expansion": "Office of Naval Research",
     "definition": "Naval research office where undersea craft are allegedly transferred before being handed to defense contractors for analysis",
@@ -2208,6 +3561,24 @@
     ]
   },
   {
+    "term": "OPNAV",
+    "expansion": "Office of the Chief of Naval Operations",
+    "definition": "Navy office that issued directive 3820 requiring UAP sightings to be reported to specific intelligence directors",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      },
+      {
+        "video_id": "Yn-83KbgRN8",
+        "title": "USO Case Book: Unidentified Submerged Objects Throughout History",
+        "youtube_url": "https://www.youtube.com/watch?v=Yn-83KbgRN8"
+      }
+    ]
+  },
+  {
     "term": "OPNAV 3820",
     "expansion": "Not explicitly expanded",
     "definition": "A naval regulation restricting maritime UFO reporting",
@@ -2230,6 +3601,19 @@
         "video_id": "-IXSZe4xVv4",
         "title": "The Hidden Wing - US Air Force UFO Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
+      }
+    ]
+  },
+  {
+    "term": "OPSEC",
+    "expansion": "Operational Security",
+    "definition": "Practices to protect sensitive information from adversaries",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
       }
     ]
   },
@@ -2275,13 +3659,62 @@
   {
     "term": "OSS",
     "expansion": "Office of Strategic Services",
-    "definition": "The intelligence organization that preceded the CIA, formed by individuals connected to Yale and Skull and Bones",
+    "definition": "Former US intelligence agency that allegedly recovered the Magenta craft from Italy in 1944-1945",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "FGiwgyLY7Aw",
+        "title": "The 1933 Magenta, Italy UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=FGiwgyLY7Aw"
+      },
       {
         "video_id": "t85t8QpTsD4",
         "title": "9/29/24 Bush/Cheney Historical Connections to UFO Legacy Crash Retrieval Programs Ft. VolarRecords",
         "youtube_url": "https://www.youtube.com/watch?v=t85t8QpTsD4"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
+      }
+    ]
+  },
+  {
+    "term": "OTV",
+    "expansion": "Outer Tactical Vest",
+    "definition": "Military body armor vest",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      }
+    ]
+  },
+  {
+    "term": "OUSAT",
+    "expansion": "Office of the Under Secretary of Defense for Acquisition and Technology",
+    "definition": "Pentagon office where special project records groups were housed, mentioned as location Wilson was directed to search",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
+      }
+    ]
+  },
+  {
+    "term": "OVRA",
+    "expansion": "Not explicitly expanded",
+    "definition": "The Italian secret police (described as 'the Italian Gestapo') that had special RS/33 sections in each provincial capital for handling UFO-related matters",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "FGiwgyLY7Aw",
+        "title": "The 1933 Magenta, Italy UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=FGiwgyLY7Aw"
       }
     ]
   },
@@ -2299,6 +3732,19 @@
     ]
   },
   {
+    "term": "PC",
+    "expansion": "Pilot in Command",
+    "definition": "The pilot operating the fighter aircraft",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      }
+    ]
+  },
+  {
     "term": "PE",
     "expansion": "Program Element",
     "definition": "Document that codifies the cleared list of contractors allowed to work in specialized program environments",
@@ -2312,6 +3758,19 @@
     ]
   },
   {
+    "term": "PEC",
+    "expansion": "Not explicitly stated",
+    "definition": "Infrared laser illuminator attachment for rifles (PEC-16 mentioned as weapon attachment)",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "4EMO38JUfVE",
+        "title": "Michael Herrera - Insights into UAP Encounter and Black Program Insiders",
+        "youtube_url": "https://www.youtube.com/watch?v=4EMO38JUfVE"
+      }
+    ]
+  },
+  {
     "term": "PEO",
     "expansion": "Program Executive Officer",
     "definition": "Executive officer responsible for program management",
@@ -2321,6 +3780,24 @@
         "video_id": "-IXSZe4xVv4",
         "title": "The Hidden Wing - US Air Force UFO Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
+      }
+    ]
+  },
+  {
+    "term": "PLF",
+    "expansion": "Programmable Life Form",
+    "definition": "Artificially created beings designed to look like extraterrestrials, allegedly used for fake abductions",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
       }
     ]
   },
@@ -2347,6 +3824,32 @@
         "video_id": "_sv0Otxtcn4",
         "title": "Philip J. Corso - US Army UFO Technology Research &amp; Development",
         "youtube_url": "https://www.youtube.com/watch?v=_sv0Otxtcn4"
+      }
+    ]
+  },
+  {
+    "term": "R&D BOARD",
+    "expansion": "Research and Development Board",
+    "definition": "Joint defense board under the Truman administration that Sarbacher consulted for, which discussed UFO crash recoveries",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "R7DyJRf14nU",
+        "title": "Dr. Robert Sarbacher & the US Government's Secret UFO Crash Retrieval Group",
+        "youtube_url": "https://www.youtube.com/watch?v=R7DyJRf14nU"
+      }
+    ]
+  },
+  {
+    "term": "RAAF",
+    "expansion": "Roswell Army Airfield",
+    "definition": "The Army Air Force base near Roswell, New Mexico where the alleged 1947 crash materials were brought and processed",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "EKEZ2BClIb0",
+        "title": "UFO Whistleblowers [Vol.1]",
+        "youtube_url": "https://www.youtube.com/watch?v=EKEZ2BClIb0"
       }
     ]
   },
@@ -2430,6 +3933,19 @@
     ]
   },
   {
+    "term": "RIAS",
+    "expansion": "Research Institute for Advanced Studies",
+    "definition": "A research institute where physicist Lou Witten was recruited by George Trimble to help develop anti-gravity technology in 1955",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      }
+    ]
+  },
+  {
     "term": "ROTHR",
     "expansion": "Relocatable Over-the-Horizon Radar",
     "definition": "Radar systems used in counterdrug operations to track aircraft",
@@ -2439,6 +3955,19 @@
         "video_id": "7Jc2G5aEH0A",
         "title": "1997 Peru UFO Crash Retrieval - the Story of Jonathan Weygandt",
         "youtube_url": "https://www.youtube.com/watch?v=7Jc2G5aEH0A"
+      }
+    ]
+  },
+  {
+    "term": "RS/33",
+    "expansion": "Gabinetto Ricerche Speciali 33 (Special Research Cabinet 33)",
+    "definition": "A top secret Italian group established under Mussolini to examine the recovered craft at Magenta, headed by the prime minister and foreign minister with scientific support",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "FGiwgyLY7Aw",
+        "title": "The 1933 Magenta, Italy UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=FGiwgyLY7Aw"
       }
     ]
   },
@@ -2465,6 +3994,19 @@
         "video_id": "rgBTMzFd-hg",
         "title": "The 1965 Kecksburg, Pennsylvania UFO Crash",
         "youtube_url": "https://www.youtube.com/watch?v=rgBTMzFd-hg"
+      }
+    ]
+  },
+  {
+    "term": "SADM",
+    "expansion": "Special Atomic Demolition Munition",
+    "definition": "Suitcase nuclear device (MK-54) theorized to have been used to sterilize the crash site",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "bL3tMByq_WM",
+        "title": "The 1974 Coyame, Mexico UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=bL3tMByq_WM"
       }
     ]
   },
@@ -2562,18 +4104,33 @@
   {
     "term": "SAIC",
     "expansion": "Science Applications International Corporation",
-    "definition": "A major Pentagon defense contractor specializing in government science and technology contracting, accused of involvement in UFO legacy programs",
+    "definition": "Defense contractor described by Greer as a 'crown jewel' in UAP-related work",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
       {
         "video_id": "9p99lTsC7wQ",
         "title": "UFO Legacy Programs - Science Applications International Corporation (SAIC)",
         "youtube_url": "https://www.youtube.com/watch?v=9p99lTsC7wQ"
       },
       {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
+      },
+      {
         "video_id": "rePrVmR6a68",
         "title": "Dugway Proving Ground - UFO Legacy Programs",
         "youtube_url": "https://www.youtube.com/watch?v=rePrVmR6a68"
+      },
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
       },
       {
         "video_id": "U_LSMLGBDNg",
@@ -2607,6 +4164,21 @@
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
       },
       {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
+      {
+        "video_id": "6ZuHLgVtKu8",
+        "title": "MOON DUST - The Pentagon's Secret UFO Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=6ZuHLgVtKu8"
+      },
+      {
         "video_id": "9p99lTsC7wQ",
         "title": "UFO Legacy Programs - Science Applications International Corporation (SAIC)",
         "youtube_url": "https://www.youtube.com/watch?v=9p99lTsC7wQ"
@@ -2627,9 +4199,19 @@
         "youtube_url": "https://www.youtube.com/watch?v=Gqw9tnuBrOM"
       },
       {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
+      {
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
         "youtube_url": "https://www.youtube.com/watch?v=jNC-0dmH5BQ"
+      },
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
       },
       {
         "video_id": "mHkPHd_eOXI",
@@ -2637,9 +4219,24 @@
         "youtube_url": "https://www.youtube.com/watch?v=mHkPHd_eOXI"
       },
       {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      },
+      {
+        "video_id": "tVdzvvbbHW4",
+        "title": "UFOs in the Private Sector - Lockheed Martin",
+        "youtube_url": "https://www.youtube.com/watch?v=tVdzvvbbHW4"
+      },
+      {
         "video_id": "X6JfbfmvgMo",
         "title": "Lockheed Martin - UFO Reverse Engineering, Material Exploitation, &amp; Legacy Programs",
         "youtube_url": "https://www.youtube.com/watch?v=X6JfbfmvgMo"
+      },
+      {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
       }
     ]
   },
@@ -2666,6 +4263,42 @@
         "video_id": "9p99lTsC7wQ",
         "title": "UFO Legacy Programs - Science Applications International Corporation (SAIC)",
         "youtube_url": "https://www.youtube.com/watch?v=9p99lTsC7wQ"
+      },
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      }
+    ]
+  },
+  {
+    "term": "SAPS",
+    "expansion": "Special Access Programs",
+    "definition": "Highly classified programs with compartmentalized information controlled by senior review groups and SAPOC",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      }
+    ]
+  },
+  {
+    "term": "SAW",
+    "expansion": "Not explicitly stated",
+    "definition": "Squad Automatic Weapon - referenced in context of drum pouches for ammunition",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "4EMO38JUfVE",
+        "title": "Michael Herrera - Insights into UAP Encounter and Black Program Insiders",
+        "youtube_url": "https://www.youtube.com/watch?v=4EMO38JUfVE"
       }
     ]
   },
@@ -2705,6 +4338,37 @@
         "video_id": "rePrVmR6a68",
         "title": "Dugway Proving Ground - UFO Legacy Programs",
         "youtube_url": "https://www.youtube.com/watch?v=rePrVmR6a68"
+      }
+    ]
+  },
+  {
+    "term": "SCIF",
+    "expansion": "Sensitive Compartmented Information Facility",
+    "definition": "Secure room for handling classified information",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "3iWLTyhdyf4",
+        "title": "9/8/24 Discussing Steven Greer London Live Event",
+        "youtube_url": "https://www.youtube.com/watch?v=3iWLTyhdyf4"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      }
+    ]
+  },
+  {
+    "term": "SCU",
+    "expansion": "Scientific Coalition for UAP Studies",
+    "definition": "Organization that conducted analysis on UAP footage including the Aguadilla video",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "inyw4Vfu7Z0",
+        "title": "The Physics of UFOs– Dr. Kevin Knuth",
+        "youtube_url": "https://www.youtube.com/watch?v=inyw4Vfu7Z0"
       }
     ]
   },
@@ -2773,6 +4437,19 @@
     ]
   },
   {
+    "term": "SERE",
+    "expansion": "Survival, Evasion, Resistance, and Escape",
+    "definition": "Military training program for high-risk personnel, with Level C being the most challenging course",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
+      }
+    ]
+  },
+  {
     "term": "SES",
     "expansion": "Senior Executive Service",
     "definition": "Senior civilian leadership positions in federal government",
@@ -2782,6 +4459,19 @@
         "video_id": "-IXSZe4xVv4",
         "title": "The Hidden Wing - US Air Force UFO Reverse Engineering Programs",
         "youtube_url": "https://www.youtube.com/watch?v=-IXSZe4xVv4"
+      }
+    ]
+  },
+  {
+    "term": "SETI",
+    "expansion": "Search for Extraterrestrial Intelligence",
+    "definition": "Program that searches for signs of extraterrestrial civilizations, primarily using radio signatures to detect communications from other species",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "9FL04mqyZxk",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 2)",
+        "youtube_url": "https://www.youtube.com/watch?v=9FL04mqyZxk"
       }
     ]
   },
@@ -2832,6 +4522,19 @@
     ]
   },
   {
+    "term": "SOF",
+    "expansion": "Special Operations Forces",
+    "definition": "Elite military units involved in specialized missions including alleged UAP crash retrievals",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      }
+    ]
+  },
+  {
     "term": "SOUTHCOM",
     "expansion": "US Southern Command",
     "definition": "Unified combatant command responsible for US military operations in Central and South America",
@@ -2863,6 +4566,19 @@
     ]
   },
   {
+    "term": "SR",
+    "expansion": "Strategic Reconnaissance",
+    "definition": "Term possibly referring to strategic reconnaissance in DSP satellite scanning data",
+    "confidence": "low",
+    "sources": [
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
+      }
+    ]
+  },
+  {
     "term": "SRG",
     "expansion": "Senior Review Group",
     "definition": "A group established in 1994 to oversee special access programs, allegedly gatekeeping UFO programs",
@@ -2872,15 +4588,30 @@
         "video_id": "9p99lTsC7wQ",
         "title": "UFO Legacy Programs - Science Applications International Corporation (SAIC)",
         "youtube_url": "https://www.youtube.com/watch?v=9p99lTsC7wQ"
+      },
+      {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
       }
     ]
   },
   {
     "term": "SRT",
     "expansion": "Special Response Team",
-    "definition": "Department of Energy tactical security teams",
+    "definition": "DOE spec ops group with arrest authority for protection of DOE National Labs and assets",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
+      {
+        "video_id": "mHkPHd_eOXI",
+        "title": "Sandia National Laboratories - UFO Reverse Engineering, Material Exploitation, &amp; Legacy Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=mHkPHd_eOXI"
+      },
       {
         "video_id": "ShoUyC1aip0",
         "title": "1997 ALIEN REPRODUCTION VEHICLE ENCOUNTER AT 29 PALMS, CA - THE TESTIMONY OF SGT RODERICK CASTLE",
@@ -2916,6 +4647,19 @@
         "video_id": "GM1Qx9vuo2c",
         "title": "National Reconnaissance Office - UFO Crash Retrievals, Surveillance, and Legacy Program Gatekeepers",
         "youtube_url": "https://www.youtube.com/watch?v=GM1Qx9vuo2c"
+      }
+    ]
+  },
+  {
+    "term": "TNO",
+    "expansion": "Temporary Non-attributed Objects",
+    "definition": "A class of objects that temporarily resist prosaic attribution by the initial observer due to environmental or system limitations but nevertheless have a known accepted human origin",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
       }
     ]
   },
@@ -2965,6 +4709,32 @@
         "video_id": "B7JP0uX0GwY",
         "title": "Alien Reproduction Vehicle - TR-3B and the Flying Triangles",
         "youtube_url": "https://www.youtube.com/watch?v=B7JP0uX0GwY"
+      }
+    ]
+  },
+  {
+    "term": "TS SCI",
+    "expansion": "Top Secret Sensitive Compartmented Information",
+    "definition": "High-level security clearance required to access certain classified facilities and information",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
+      }
+    ]
+  },
+  {
+    "term": "TS/SCI",
+    "expansion": "Top Secret Sensitive Compartmented Information",
+    "definition": "High-level security clearance for accessing classified information",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "QJ215I85d5M",
+        "title": "Off-World Technologies Division – UAP Technology Reverse Engineering",
+        "youtube_url": "https://www.youtube.com/watch?v=QJ215I85d5M"
       }
     ]
   },
@@ -3031,6 +4801,11 @@
         "youtube_url": "https://www.youtube.com/watch?v=H9GSqOEvoBE"
       },
       {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
         "video_id": "QJxbyu-9Tj0",
         "title": "The 1948 Aztec, New Mexico UFO Crash Retrieval",
         "youtube_url": "https://www.youtube.com/watch?v=QJxbyu-9Tj0"
@@ -3043,11 +4818,54 @@
     ]
   },
   {
-    "term": "UAP",
-    "expansion": "Unidentified Anomalous Phenomena",
-    "definition": "Unexplained aerial phenomena where the origin is unknown - described as 'gray' meaning we don't know at this moment",
+    "term": "UA",
+    "expansion": "Unauthorized Absence",
+    "definition": "Military term for being absent without authorization; Michael Herrera went UA from his original company before being transferred",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "azC7-UBRBSw",
+        "title": "Live with Joey",
+        "youtube_url": "https://www.youtube.com/watch?v=azC7-UBRBSw"
+      }
+    ]
+  },
+  {
+    "term": "UAP",
+    "expansion": "Unidentified Anomalous Phenomena",
+    "definition": "Official government term for unidentified flying objects and related phenomena",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "i6fitvV-aO0",
+        "title": "Incredible UFO Footage - METAPOD",
+        "youtube_url": "https://www.youtube.com/watch?v=i6fitvV-aO0"
+      },
+      {
+        "video_id": "inyw4Vfu7Z0",
+        "title": "The Physics of UFOs– Dr. Kevin Knuth",
+        "youtube_url": "https://www.youtube.com/watch?v=inyw4Vfu7Z0"
+      },
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
+        "video_id": "K_BZkOAw6E0",
+        "title": "The First Commercial Flight Grounded Due to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=K_BZkOAw6E0"
+      },
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      },
       {
         "video_id": "wF07QMm6joE",
         "title": "Alien Reproduction Vehicle - the Testimony of Mark McCandlish",
@@ -3070,6 +4888,19 @@
         "video_id": "jNC-0dmH5BQ",
         "title": "10K Live! UAPDA, Crash Retrieval Research, Q&amp;A and More",
         "youtube_url": "https://www.youtube.com/watch?v=jNC-0dmH5BQ"
+      }
+    ]
+  },
+  {
+    "term": "UAPTF",
+    "expansion": "Unidentified Aerial Phenomena Task Force",
+    "definition": "Government task force for studying UAP, mentioned in context of program history",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "1m0oJD59eXQ",
+        "title": "7/20/24 Discussing Cases and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=1m0oJD59eXQ"
       }
     ]
   },
@@ -3132,6 +4963,89 @@
     ]
   },
   {
+    "term": "UAS",
+    "expansion": "Unusual Aerial Sighting",
+    "definition": "Term used by Royal Australian Air Force for anomalous sighting reports",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "Yn-83KbgRN8",
+        "title": "USO Case Book: Unidentified Submerged Objects Throughout History",
+        "youtube_url": "https://www.youtube.com/watch?v=Yn-83KbgRN8"
+      }
+    ]
+  },
+  {
+    "term": "UASP",
+    "expansion": "Unidentified Aerial/Submerged Phenomena",
+    "definition": "Term distinguishing between aerial and underwater unidentified phenomena",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
+      }
+    ]
+  },
+  {
+    "term": "UCF",
+    "expansion": "Unknown",
+    "definition": "Term appearing on DSP printouts related to fast walker incidents - meaning unclear",
+    "confidence": "low",
+    "sources": [
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
+      }
+    ]
+  },
+  {
+    "term": "UFO",
+    "expansion": "Unidentified Flying Object",
+    "definition": "An aerial phenomenon that cannot be immediately identified",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "6cVe-hdMTCE",
+        "title": "Global Air Force UFO Encounters You've Probably Never Heard of",
+        "youtube_url": "https://www.youtube.com/watch?v=6cVe-hdMTCE"
+      },
+      {
+        "video_id": "K_BZkOAw6E0",
+        "title": "The First Commercial Flight Grounded Due to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=K_BZkOAw6E0"
+      }
+    ]
+  },
+  {
+    "term": "UFO HEAP",
+    "expansion": "UFO Hard Evidence Analysis Program",
+    "definition": "An alleged NASA internal program that conducted UFO hard evidence analysis around the late 1970s",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "DcvuglS7ps4",
+        "title": "\"US Special Forces Confession - I Recovered Crashed UFOs\": Fact or Fiction?",
+        "youtube_url": "https://www.youtube.com/watch?v=DcvuglS7ps4"
+      }
+    ]
+  },
+  {
+    "term": "UPC",
+    "expansion": "Universal Product Code",
+    "definition": "Barcode system developed with Battelle's involvement",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      }
+    ]
+  },
+  {
     "term": "URCS",
     "expansion": "University Affiliated Research Centers",
     "definition": "Academic institutions engaged in classified defense research",
@@ -3147,18 +5061,78 @@
   {
     "term": "USAF",
     "expansion": "United States Air Force",
-    "definition": "Branch of the US military responsible for aerial and space operations",
+    "definition": "Branch of the US military responsible for aerial warfare and operations",
     "confidence": "high",
     "sources": [
+      {
+        "video_id": "41V4Pf_8oo4",
+        "title": "The 1953 Kingman, Arizona UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=41V4Pf_8oo4"
+      },
+      {
+        "video_id": "6cVe-hdMTCE",
+        "title": "Global Air Force UFO Encounters You've Probably Never Heard of",
+        "youtube_url": "https://www.youtube.com/watch?v=6cVe-hdMTCE"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
+      {
+        "video_id": "6ZuHLgVtKu8",
+        "title": "MOON DUST - The Pentagon's Secret UFO Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=6ZuHLgVtKu8"
+      },
+      {
+        "video_id": "9FL04mqyZxk",
+        "title": "The Alien and UFO Obscure Oddities Iceberg (Level 2)",
+        "youtube_url": "https://www.youtube.com/watch?v=9FL04mqyZxk"
+      },
+      {
+        "video_id": "9Xk4X41yl2M",
+        "title": "UFO Whistleblowers [Vol.2]",
+        "youtube_url": "https://www.youtube.com/watch?v=9Xk4X41yl2M"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
+      {
+        "video_id": "inyw4Vfu7Z0",
+        "title": "The Physics of UFOs– Dr. Kevin Knuth",
+        "youtube_url": "https://www.youtube.com/watch?v=inyw4Vfu7Z0"
+      },
       {
         "video_id": "rgBTMzFd-hg",
         "title": "The 1965 Kecksburg, Pennsylvania UFO Crash",
         "youtube_url": "https://www.youtube.com/watch?v=rgBTMzFd-hg"
       },
       {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      },
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
+      },
+      {
         "video_id": "wF07QMm6joE",
         "title": "Alien Reproduction Vehicle - the Testimony of Mark McCandlish",
         "youtube_url": "https://www.youtube.com/watch?v=wF07QMm6joE"
+      },
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
       }
     ]
   },
@@ -3199,6 +5173,11 @@
         "youtube_url": "https://www.youtube.com/watch?v=t9cLswYmWzU"
       },
       {
+        "video_id": "yIqkazIZh9I",
+        "title": "The Wilson Davis Memo and US Secret UFO Reverse Engineering Programs",
+        "youtube_url": "https://www.youtube.com/watch?v=yIqkazIZh9I"
+      },
+      {
         "video_id": "ZQpciFASzPM",
         "title": "David Grusch Fox Interview, Age of Disclosure, Sandia, Current Research, &amp; QnA - UAP Gerb Live",
         "youtube_url": "https://www.youtube.com/watch?v=ZQpciFASzPM"
@@ -3219,6 +5198,62 @@
     ]
   },
   {
+    "term": "USG",
+    "expansion": "United States Government",
+    "definition": "The federal government of the United States",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
+        "video_id": "tISTJRPOqFo",
+        "title": "UFOs in the Private Sector - Battelle Memorial Institute",
+        "youtube_url": "https://www.youtube.com/watch?v=tISTJRPOqFo"
+      },
+      {
+        "video_id": "Tubx-CaAaOs",
+        "title": "FASTWALKERS – UFOs Outside Earth",
+        "youtube_url": "https://www.youtube.com/watch?v=Tubx-CaAaOs"
+      },
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
+      }
+    ]
+  },
+  {
+    "term": "USMC",
+    "expansion": "United States Marine Corps",
+    "definition": "Branch of the US military specializing in amphibious and expeditionary warfare",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "41V4Pf_8oo4",
+        "title": "The 1953 Kingman, Arizona UFO Crash",
+        "youtube_url": "https://www.youtube.com/watch?v=41V4Pf_8oo4"
+      },
+      {
+        "video_id": "6DyTfIV87Ck",
+        "title": "Michael Herrera: UFO Whistleblower (ft. Joeyisnotmyname)",
+        "youtube_url": "https://www.youtube.com/watch?v=6DyTfIV87Ck"
+      },
+      {
+        "video_id": "HnxylCl68Tg",
+        "title": "The Marines Who Got too Close to UFOs",
+        "youtube_url": "https://www.youtube.com/watch?v=HnxylCl68Tg"
+      },
+      {
+        "video_id": "xKArN8S9bnM",
+        "title": "The Origin of the UFO Stigma",
+        "youtube_url": "https://www.youtube.com/watch?v=xKArN8S9bnM"
+      }
+    ]
+  },
+  {
     "term": "USO",
     "expansion": "Unidentified Submerged Object",
     "definition": "Unidentified craft observed or recovered from underwater environments",
@@ -3230,9 +5265,52 @@
         "youtube_url": "https://www.youtube.com/watch?v=H9GSqOEvoBE"
       },
       {
+        "video_id": "hK24ZdkvwN4",
+        "title": "The Modern Day UFO Disinformation Agent - Dr. Sean Kirkpatrick's Lies",
+        "youtube_url": "https://www.youtube.com/watch?v=hK24ZdkvwN4"
+      },
+      {
+        "video_id": "inyw4Vfu7Z0",
+        "title": "The Physics of UFOs– Dr. Kevin Knuth",
+        "youtube_url": "https://www.youtube.com/watch?v=inyw4Vfu7Z0"
+      },
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
+      },
+      {
         "video_id": "t9cLswYmWzU",
         "title": "Post UAP Hearing Live Stream: Time in DC, Immaculate Constellation, &amp; More",
         "youtube_url": "https://www.youtube.com/watch?v=t9cLswYmWzU"
+      },
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      },
+      {
+        "video_id": "Yn-83KbgRN8",
+        "title": "USO Case Book: Unidentified Submerged Objects Throughout History",
+        "youtube_url": "https://www.youtube.com/watch?v=Yn-83KbgRN8"
+      },
+      {
+        "video_id": "ZFUneP18LVI",
+        "title": "9/1/24 Discussing WD Memo, 2004 JSOC Case and Q&A",
+        "youtube_url": "https://www.youtube.com/watch?v=ZFUneP18LVI"
+      }
+    ]
+  },
+  {
+    "term": "USP",
+    "expansion": "Unidentified Submerged Phenomena",
+    "definition": "Updated terminology for underwater unidentified objects",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "kKbSIfc7N7Q",
+        "title": "SOL Foundation: Karl Nell - A Key Figure in UAP Disclosure",
+        "youtube_url": "https://www.youtube.com/watch?v=kKbSIfc7N7Q"
       }
     ]
   },
@@ -3263,6 +5341,19 @@
     ]
   },
   {
+    "term": "VFX",
+    "expansion": "Visual Effects",
+    "definition": "Visual effects artistry, referenced when discussing potential digital manipulation",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "i6fitvV-aO0",
+        "title": "Incredible UFO Footage - METAPOD",
+        "youtube_url": "https://www.youtube.com/watch?v=i6fitvV-aO0"
+      }
+    ]
+  },
+  {
     "term": "VTOL",
     "expansion": "Vertical Takeoff and Landing",
     "definition": "Aircraft capability to take off and land vertically without runway",
@@ -3289,6 +5380,19 @@
     ]
   },
   {
+    "term": "WINPAC",
+    "expansion": "Weapons Intelligence Nonproliferation and Arms Control Center",
+    "definition": "CIA office allegedly involved in USO material recovery and transfer according to John Ramirez",
+    "confidence": "medium",
+    "sources": [
+      {
+        "video_id": "U-jrx_giINA",
+        "title": "USO - Unidentified Submerged Objects",
+        "youtube_url": "https://www.youtube.com/watch?v=U-jrx_giINA"
+      }
+    ]
+  },
+  {
     "term": "WMD",
     "expansion": "Weapons of Mass Destruction",
     "definition": "Nuclear, chemical, biological, or radiological weapons",
@@ -3298,6 +5402,19 @@
         "video_id": "7Jc2G5aEH0A",
         "title": "1997 Peru UFO Crash Retrieval - the Story of Jonathan Weygandt",
         "youtube_url": "https://www.youtube.com/watch?v=7Jc2G5aEH0A"
+      }
+    ]
+  },
+  {
+    "term": "WSO",
+    "expansion": "Weapon System Operator",
+    "definition": "Crew member sitting in the back seat managing some systems",
+    "confidence": "high",
+    "sources": [
+      {
+        "video_id": "qD1KnudMCO0",
+        "title": "Incredible UFO Footage - FLYBY",
+        "youtube_url": "https://www.youtube.com/watch?v=qD1KnudMCO0"
       }
     ]
   }

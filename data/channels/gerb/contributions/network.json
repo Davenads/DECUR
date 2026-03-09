@@ -6,7 +6,16 @@
     "group": "shared",
     "val": 4,
     "source": "gerb-research",
-    "mentioned_in": 16
+    "mentioned_in": 29
+  },
+  {
+    "id": "project-blue-book",
+    "name": "Project Blue Book",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 26
   },
   {
     "id": "majestic-12",
@@ -15,7 +24,97 @@
     "group": "shared",
     "val": 4,
     "source": "gerb-research",
-    "mentioned_in": 8
+    "mentioned_in": 13
+  },
+  {
+    "id": "project-grudge",
+    "name": "Project Grudge",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 11
+  },
+  {
+    "id": "project-sign",
+    "name": "Project Sign",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 11
+  },
+  {
+    "id": "disclosure-project",
+    "name": "Disclosure Project",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 9
+  },
+  {
+    "id": "robertson-panel",
+    "name": "Robertson Panel",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
+  },
+  {
+    "id": "aaro",
+    "name": "AARO",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
+  },
+  {
+    "id": "mj-12",
+    "name": "MJ-12",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
+  },
+  {
+    "id": "interplanetary-phenomenon-unit",
+    "name": "Interplanetary Phenomenon Unit",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
+  },
+  {
+    "id": "aawsap",
+    "name": "AAWSAP",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
+  },
+  {
+    "id": "tr-3b",
+    "name": "TR-3B",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
+  },
+  {
+    "id": "arrow",
+    "name": "Arrow",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 7
   },
   {
     "id": "immaculate-constellation",
@@ -27,6 +126,15 @@
     "mentioned_in": 7
   },
   {
+    "id": "kona-blue",
+    "name": "Kona Blue",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 6
+  },
+  {
     "id": "strategic-defense-initiative",
     "name": "Strategic Defense Initiative",
     "type": "project",
@@ -36,8 +144,8 @@
     "mentioned_in": 6
   },
   {
-    "id": "tr-3b",
-    "name": "TR-3B",
+    "id": "uap-task-force",
+    "name": "UAP Task Force",
     "type": "project",
     "group": "shared",
     "val": 4,
@@ -45,8 +153,26 @@
     "mentioned_in": 6
   },
   {
-    "id": "arrow",
-    "name": "Arrow",
+    "id": "manhattan-project",
+    "name": "Manhattan Project",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 5
+  },
+  {
+    "id": "operation-paperclip",
+    "name": "Operation Paperclip",
+    "type": "project",
+    "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 5
+  },
+  {
+    "id": "project-moondust",
+    "name": "Project Moondust",
     "type": "project",
     "group": "shared",
     "val": 4,
@@ -72,71 +198,161 @@
     "mentioned_in": 4
   },
   {
-    "id": "interplanetary-phenomenon-unit",
-    "name": "Interplanetary Phenomenon Unit",
+    "id": "project-aquarius",
+    "name": "Project Aquarius",
     "type": "project",
     "group": "shared",
     "val": 4,
     "source": "gerb-research",
     "mentioned_in": 4
-  },
-  {
-    "id": "project-blue-book",
-    "name": "Project Blue Book",
-    "type": "project",
-    "group": "shared",
-    "val": 4,
-    "source": "gerb-research",
-    "mentioned_in": 4
-  },
-  {
-    "id": "aawsap",
-    "name": "AAWSAP",
-    "type": "project",
-    "group": "shared",
-    "val": 4,
-    "source": "gerb-research",
-    "mentioned_in": 4
-  },
-  {
-    "id": "operation-paperclip",
-    "name": "Operation Paperclip",
-    "type": "project",
-    "group": "shared",
-    "val": 3,
-    "source": "gerb-research",
-    "mentioned_in": 3
   },
   {
     "id": "corporate-portfolio-program",
     "name": "Corporate Portfolio Program",
     "type": "project",
     "group": "shared",
-    "val": 3,
+    "val": 4,
     "source": "gerb-research",
-    "mentioned_in": 3
+    "mentioned_in": 4
   },
   {
-    "id": "kona-blue",
-    "name": "Kona Blue",
+    "id": "skunk-works",
+    "name": "Skunk Works",
     "type": "project",
     "group": "shared",
-    "val": 3,
+    "val": 4,
     "source": "gerb-research",
-    "mentioned_in": 3
+    "mentioned_in": 4
   },
   {
     "id": "project-twinkle",
     "name": "Project Twinkle",
     "type": "project",
     "group": "shared",
+    "val": 4,
+    "source": "gerb-research",
+    "mentioned_in": 4
+  },
+  {
+    "id": "office-of-global-access",
+    "name": "Office of Global Access",
+    "type": "project",
+    "group": "shared",
     "val": 3,
     "source": "gerb-research",
     "mentioned_in": 3
   },
   {
+    "id": "legacy-programs",
+    "name": "Legacy programs",
+    "type": "project",
+    "group": "shared",
+    "val": 3,
+    "source": "gerb-research",
+    "mentioned_in": 3
+  },
+  {
+    "id": "off-world-technologies-division",
+    "name": "Off-World Technologies Division",
+    "type": "project",
+    "group": "shared",
+    "val": 3,
+    "source": "gerb-research",
+    "mentioned_in": 3
+  },
+  {
+    "id": "project-stork",
+    "name": "Project Stork",
+    "type": "project",
+    "group": "shared",
+    "val": 3,
+    "source": "gerb-research",
+    "mentioned_in": 3
+  },
+  {
+    "id": "condon-committee",
+    "name": "Condon Committee",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "uaptf",
+    "name": "UAPTF",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-blue-beam",
+    "name": "Project Blue Beam",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "moondust",
+    "name": "Moondust",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "blue-book",
+    "name": "Blue Book",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "zodiac",
+    "name": "Zodiac",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "operation-laser-strike",
+    "name": "Operation Laser Strike",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
     "id": "project-sand-dollar",
     "name": "Project Sand Dollar",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-moon-dust",
+    "name": "Project Moon Dust",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "condon-report",
+    "name": "Condon Report",
     "type": "project",
     "group": "shared",
     "val": 2,
@@ -153,8 +369,8 @@
     "mentioned_in": 2
   },
   {
-    "id": "project-aquarius",
-    "name": "Project Aquarius",
+    "id": "project-ufo",
+    "name": "Project UFO",
     "type": "project",
     "group": "shared",
     "val": 2,
@@ -189,8 +405,8 @@
     "mentioned_in": 2
   },
   {
-    "id": "off-world-technologies-division",
-    "name": "Off-World Technologies Division",
+    "id": "atomic-energy-commission",
+    "name": "Atomic Energy Commission",
     "type": "project",
     "group": "shared",
     "val": 2,
@@ -198,8 +414,8 @@
     "mentioned_in": 2
   },
   {
-    "id": "project-moondust",
-    "name": "Project Moondust",
+    "id": "stargate-program",
+    "name": "Stargate Program",
     "type": "project",
     "group": "shared",
     "val": 2,
@@ -207,8 +423,8 @@
     "mentioned_in": 2
   },
   {
-    "id": "manhattan-project",
-    "name": "Manhattan Project",
+    "id": "operation-majestic-12",
+    "name": "Operation Majestic 12",
     "type": "project",
     "group": "shared",
     "val": 2,
@@ -225,6 +441,42 @@
     "mentioned_in": 2
   },
   {
+    "id": "foreign-technology-division",
+    "name": "Foreign Technology Division",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-magnet",
+    "name": "Project Magnet",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "tr-3b-program",
+    "name": "TR-3B program",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-bluefly",
+    "name": "Project Bluefly",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
     "id": "legacy-program",
     "name": "Legacy Program",
     "type": "project",
@@ -234,8 +486,26 @@
     "mentioned_in": 2
   },
   {
-    "id": "skunk-works",
-    "name": "Skunk Works",
+    "id": "aurora",
+    "name": "Aurora",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "astra",
+    "name": "Astra",
+    "type": "project",
+    "group": "shared",
+    "val": 2,
+    "source": "gerb-research",
+    "mentioned_in": 2
+  },
+  {
+    "id": "project-interloper",
+    "name": "Project Interloper",
     "type": "project",
     "group": "shared",
     "val": 2,
