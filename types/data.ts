@@ -5,7 +5,7 @@
 /**
  * Represents data category types
  */
-export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'whistleblowers';
+export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'insiders';
 
 /**
  * Expanded sections state for data navigation
@@ -14,7 +14,7 @@ export interface ExpandedSections {
   entities: boolean;
   technologies: boolean;
   programs: boolean;
-  whistleblowers: boolean;
+  insiders: boolean;
 }
 
 /**
@@ -63,9 +63,9 @@ export interface LotusFinding extends DataItem {
 }
 
 /**
- * Whistleblower index entry (list view)
+ * Insider index entry (list view)
  */
-export interface WhistleblowerEntry {
+export interface InsiderEntry {
   id: string;
   name: string;
   aliases: string[];

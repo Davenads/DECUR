@@ -23,7 +23,7 @@ const About: NextPage = () => {
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-gray-700 mb-4">
                 DECUR (Data Exceeding Current Understanding of Reality) is dedicated to cataloging, analyzing, and 
-                making accessible whistleblower testimony that extends beyond conventional scientific and governmental acknowledgment.
+                making accessible insider testimony that extends beyond conventional scientific and governmental acknowledgment.
                 We focus on Unidentified Aerial Phenomena (UAP), Non-Human Intelligence (NHI), and advanced technologies 
                 as reported by credible witnesses from military, intelligence, scientific, and government backgrounds.
               </p>
@@ -38,7 +38,7 @@ const About: NextPage = () => {
               <section>
                 <h2 className="text-xl font-bold mb-3">Platform Purpose</h2>
                 <p className="text-gray-700">
-                  DECUR serves as a comprehensive knowledge base cataloging testimony from credible whistleblowers
+                  DECUR serves as a comprehensive knowledge base cataloging testimony from credible insiders
                   across military, intelligence, scientific, and government backgrounds. We present this information
                   with analytical rigor while maintaining neutrality, allowing researchers to examine the data and
                   draw their own conclusions about the nature of UAP/NHI phenomena.
@@ -48,7 +48,7 @@ const About: NextPage = () => {
               <section>
                 <h2 className="text-xl font-bold mb-3">What We Cover</h2>
                 <p className="text-gray-700">
-                  Our database spans testimony from whistleblowers including military personnel, intelligence officers,
+                  Our database spans testimony from insiders including military personnel, intelligence officers,
                   government contractors, and scientific researchers who have come forward with accounts of UAP
                   encounters, recovered materials, non-human intelligence, and special access programs.
                 </p>
@@ -133,7 +133,7 @@ const About: NextPage = () => {
                     <div className="mt-2 text-sm text-blue-700">
                       <p>
                         DECUR presents information for educational and research purposes only. We neither endorse nor dismiss 
-                        the claims contained within the whistleblower testimony we archive, but rather provide a platform for organized 
+                        the claims contained within the insider testimony we archive, but rather provide a platform for organized 
                         access to this material. The accounts documented here may challenge conventional understanding and official narratives. 
                         Readers are encouraged to apply critical thinking and draw their own conclusions.
                       </p>

@@ -54,7 +54,7 @@ const Glossary: FC = () => {
     },
     {
       term: "SAP",
-      definition: "Special Access Program - Highly classified government programs with stringent security protocols, compartmentalized information, and restricted personnel access. Multiple whistleblowers have alleged the existence of SAPs related to UAP/NHI research."
+      definition: "Special Access Program - Highly classified government programs with stringent security protocols, compartmentalized information, and restricted personnel access. Multiple insiders have alleged the existence of SAPs related to UAP/NHI research."
     },
     {
       term: "Selkie Particle",
@@ -90,11 +90,11 @@ const Glossary: FC = () => {
     },
     {
       term: "USG",
-      definition: "United States Government - Often referenced in whistleblower testimony regarding knowledge of or involvement with UAP/NHI phenomena."
+      definition: "United States Government - Often referenced in insider testimony regarding knowledge of or involvement with UAP/NHI phenomena."
     },
     {
-      term: "Whistleblower",
-      definition: "An individual who exposes information or activities that are deemed illegal, unethical, or incorrect within an organization. In the context of UAP/NHI research, whistleblowers are typically current or former government, military, or contractor personnel who come forward with information about classified programs related to these topics."
+      term: "Insider",
+      definition: "An individual who exposes information or activities that are deemed illegal, unethical, or incorrect within an organization. In the context of UAP/NHI research, insiders are typically current or former government, military, or contractor personnel who come forward with information about classified programs related to these topics."
     }
   ];
 

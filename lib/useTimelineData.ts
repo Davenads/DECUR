@@ -13,6 +13,8 @@ export interface TimelineEntry {
   categories: string[];
   source_url: string;
   source?: string;
+  quote_text?: string | null;
+  quote_attribution?: string | null;
 }
 
 const entries = rawEntries as TimelineEntry[];

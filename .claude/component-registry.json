@@ -53,7 +53,7 @@
         "activeCategory": "CategoryType - Currently active data category",
         "setActiveCategory": "Function - Callback when category is changed"
       },
-      "typeInterface": "interface DataNavigationProps { activeCategory: CategoryType; setActiveCategory: (category: CategoryType) => void; } type CategoryType = 'entities' | 'timelines' | 'lotus' | 'whistleblowers';",
+      "typeInterface": "interface DataNavigationProps { activeCategory: CategoryType; setActiveCategory: (category: CategoryType) => void; } type CategoryType = 'entities' | 'timelines' | 'lotus' | 'insiders';",
       "dependencies": [],
       "usageExample": "import DataNavigation from '../components/data/DataNavigation';\n\nconst DataPage: NextPage = () => {\n  const [activeCategory, setActiveCategory] = useState<CategoryType>('entities');\n  \n  return (\n    <div>\n      <DataNavigation \n        activeCategory={activeCategory}\n        setActiveCategory={(category) => setActiveCategory(category)}\n      />\n    </div>\n  );\n}",
       "performanceConsiderations": ""

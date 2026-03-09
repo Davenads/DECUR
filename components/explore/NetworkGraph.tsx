@@ -173,7 +173,7 @@ const NetworkGraph: FC = () => {
       <div className="px-6 pt-5 pb-3 space-y-1">
         <h3 className="font-bold text-gray-900 text-lg">Relationship Network</h3>
         <p className="text-sm text-gray-500">
-          Connections between whistleblowers, facilities, entities, organizations, projects, and concepts.
+          Connections between insiders, facilities, entities, organizations, projects, and concepts.
           Hover a node to highlight its connections.
         </p>
       </div>

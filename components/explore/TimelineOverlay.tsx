@@ -16,7 +16,7 @@ export interface WBEvent {
 
 interface Props {
   uapEntries: TimelineEntry[];
-  whistleblowerEvents: WBEvent[];
+  insiderEvents: WBEvent[];
 }
 
 /* ─── Constants ──────────────────────────────────────────────── */
@@ -137,7 +137,7 @@ const SwimlaneTooltip: FC<SwimlaneTooltipProps> = ({ active, payload }) => {
 
 /* ─── Main component ─────────────────────────────────────────── */
 
-const TimelineOverlay: FC<Props> = ({ uapEntries, whistleblowerEvents }) => {
+const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
   const [showAllYears, setShowAllYears] = useState(false);
 
   const yearStart = showAllYears ? 1947 : YEAR_START;
@@ -151,9 +151,9 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, whistleblowerEvents }) => {
     }
   }
 
-  // Build bar chart data with embedded whistleblower events for tooltip
+  // Build bar chart data with embedded insider events for tooltip
   const wbByYear: Record<number, WBEvent[]> = {};
-  for (const e of whistleblowerEvents) {
+  for (const e of insiderEvents) {
     if (e.year >= yearStart && e.year <= yearEnd) {
       (wbByYear[e.year] = wbByYear[e.year] ?? []).push(e);
     }
@@ -176,17 +176,17 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, whistleblowerEvents }) => {
 
   // Scatter data for swimlanes
   const burischDots: Array<WBEvent & { x: number; y: number }> =
-    whistleblowerEvents
+    insiderEvents
       .filter(e => e.source === 'burisch' && e.year >= yearStart && e.year <= yearEnd)
       .map(e => ({ ...e, x: e.year, y: 1 }));
 
   const lazarDots: Array<WBEvent & { x: number; y: number }> =
-    whistleblowerEvents
+    insiderEvents
       .filter(e => e.source === 'lazar' && e.year >= yearStart && e.year <= yearEnd)
       .map(e => ({ ...e, x: e.year, y: 0 }));
 
   const gruschDots: Array<WBEvent & { x: number; y: number }> =
-    whistleblowerEvents
+    insiderEvents
       .filter(e => e.source === 'grusch' && e.year >= yearStart && e.year <= yearEnd)
       .map(e => ({ ...e, x: e.year, y: 2 }));
 
@@ -203,7 +203,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, whistleblowerEvents }) => {
         <div>
           <h3 className="font-bold text-gray-900 text-lg">Timeline Overlay</h3>
           <p className="text-sm text-gray-500 mt-0.5">
-            Whistleblower key events mapped against the global UAP event record
+            Insider key events mapped against the global UAP event record
           </p>
         </div>
         <button
@@ -259,7 +259,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, whistleblowerEvents }) => {
 
       {/* Swimlane scatter panel */}
       <div>
-        <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide font-medium">Whistleblower Events</p>
+        <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide font-medium">Insider Events</p>
         <div style={{ height: 100 }} className="relative">
           {/* Row labels */}
           <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-around pointer-events-none z-10" style={{ width: 8 }}>
@@ -326,7 +326,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, whistleblowerEvents }) => {
       <div className="flex flex-wrap gap-4 text-xs text-gray-400 pt-1 border-t border-gray-100">
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-sm bg-[#0077cc] inline-block" />
-          UAP events in a whistleblower-active year
+          UAP events in an insider-active year
         </span>
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-sm bg-[#93c5e8] inline-block" />

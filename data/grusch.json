@@ -80,7 +80,7 @@
       "category": "retaliation",
       "claim": "After filing protected disclosures with the ICIG, Grusch experienced months of professional retaliation, which he described as 'administrative terrorism.'",
       "status": "partially-verified",
-      "notes": "His ICIG complaint included a Complaint of Reprisal, which the ICIG deemed credible. The retaliation allegation is a protected whistleblower claim under IC statute and was validated at the ICIG level."
+      "notes": "His ICIG complaint included a Complaint of Reprisal, which the ICIG deemed credible. The retaliation allegation is a protected insider claim under IC statute and was validated at the ICIG level."
     },
     {
       "id": "corporate-contractors",
@@ -142,7 +142,7 @@
 
   "credibility": {
     "supporting": [
-      "IC Inspector General Thomas Monheim independently assessed Grusch's complaint as 'credible and urgent' — a formal legal threshold under IC whistleblower statute",
+      "IC Inspector General Thomas Monheim independently assessed Grusch's complaint as 'credible and urgent' — a formal legal threshold under IC insider statute",
       "His credentials are verified: NRO, NGA, UAP Task Force — all confirmed TS/SCI positions with documented SAP access",
       "DoD Office of Prepublication and Security Review cleared his public statements in April 2023 — confirming he did not violate classification",
       "Testified under oath before Congress, carrying perjury liability for false statements",
@@ -223,7 +223,7 @@
       "id": "lue-elizondo",
       "name": "Lue Elizondo",
       "role": "Former Director, Advanced Aerospace Threat Identification Program (AATIP), Pentagon",
-      "relationship": "Part of the broader whistleblower community Grusch is associated with; both independently allege DoD concealment of UAP programs; Elizondo's 2017 disclosures preceded and helped enable Grusch's own"
+      "relationship": "Part of the broader insider community Grusch is associated with; both independently allege DoD concealment of UAP programs; Elizondo's 2017 disclosures preceded and helped enable Grusch's own"
     }
   ],
 
@@ -234,7 +234,7 @@
       "title": "Disclosure of Urgent Concern — IC Inspector General",
       "outlet": "Intelligence Community Inspector General",
       "interviewer": "Thomas Monheim (ICIG)",
-      "notes": "Formal whistleblower complaint filed under IC statute; also included a Complaint of Reprisal for retaliation. Deemed 'credible and urgent.' Congressional intelligence committees notified."
+      "notes": "Formal insider complaint filed under IC statute; also included a Complaint of Reprisal for retaliation. Deemed 'credible and urgent.' Congressional intelligence committees notified."
     },
     {
       "date": "June 5, 2023",
@@ -247,7 +247,7 @@
     {
       "date": "June 2023",
       "type": "television",
-      "title": "UFO Whistleblower: 'Absolutely' Non-Human Craft Recovered",
+      "title": "UFO Insider: 'Absolutely' Non-Human Craft Recovered",
       "outlet": "NewsNation",
       "interviewer": "Ross Coulthart",
       "notes": "First televised interview. Grusch stated he witnessed something 'very disturbing' with his wife but declined to detail it citing classification. Most widely circulated video of his disclosures."

@@ -136,7 +136,7 @@ const OverviewTab: FC = () => {
         <ul className="space-y-1.5">
           {profile.education.map((e, i) => (
             <li key={i} className="text-sm text-gray-700 flex gap-2">
-              <span className="text-gray-300 mt-0.5 shrink-0">—</span>{e}
+              <span className="text-gray-300 mt-0.5 shrink-0">›</span>{e}
             </li>
           ))}
         </ul>
@@ -271,7 +271,7 @@ const LegislativeTab: FC = () => {
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
         <p className="text-xs font-medium text-blue-700 uppercase tracking-wide mb-1">Note</p>
         <p className="text-sm text-blue-900">
-          Grusch&apos;s testimony is the only UAP whistleblower case to directly generate federal legislation and executive agency action. This section documents the concrete institutional response.
+          Grusch&apos;s testimony is the only UAP insider case to directly generate federal legislation and executive agency action. This section documents the concrete institutional response.
         </p>
       </div>
 
@@ -364,7 +364,7 @@ const AssessmentTab: FC = () => {
         <p className="text-sm text-amber-900">
           This section presents documented arguments for and against Grusch&apos;s credibility based on
           verifiable institutional responses, journalistic findings, and official government positions.
-          DECUR does not adjudicate these claims — they are presented for methodological transparency.
+          DECUR does not adjudicate these claims; they are presented for methodological transparency.
         </p>
       </div>
 

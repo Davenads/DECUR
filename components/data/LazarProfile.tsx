@@ -175,7 +175,7 @@ const FacilityTab: FC = () => {
         </div>
         <div className="bg-gray-50 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Hangar Bays</p>
-          <p className="text-sm text-gray-800">{facility.hangar_count} bays — one craft per bay (claimed)</p>
+          <p className="text-sm text-gray-800">{facility.hangar_count} bays, one craft per bay (claimed)</p>
         </div>
         <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Construction</p>
@@ -210,7 +210,7 @@ const CraftTab: FC = () => {
       <div className="bg-gray-50 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Total Craft at S-4</p>
         <p className="text-2xl font-bold text-gray-900">{crafts.total_count}</p>
-        <p className="text-xs text-gray-500 mt-0.5">One per hangar bay — all described as disc-shaped</p>
+        <p className="text-xs text-gray-500 mt-0.5">One per hangar bay, all described as disc-shaped</p>
       </div>
 
       <div>
@@ -569,7 +569,7 @@ const AssessmentTab: FC = () => {
       <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
         <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">Methodology Note</p>
         <p className="text-sm text-amber-900">
-          This section presents documented arguments for and against Lazar&apos;s credibility. DECUR does not adjudicate these claims — they are presented for methodological transparency.
+          This section presents documented arguments for and against Lazar&apos;s credibility. DECUR does not adjudicate these claims; they are presented for methodological transparency.
         </p>
       </div>
 
@@ -657,13 +657,13 @@ const LazarProfile: FC<LazarProfileProps> = ({ onBack }) => {
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Whistleblowers
+          Insiders
         </button>
         <div className="flex items-start justify-between">
           <div>
             <h2 className="text-2xl font-bold font-heading text-gray-900">{data.profile.name}</h2>
             <p className="text-sm text-gray-500 mt-0.5">
-              {data.profile.roles[0]} &mdash; {data.profile.service_period}
+              {data.profile.roles[0]}, {data.profile.service_period}
             </p>
           </div>
           <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium shrink-0">

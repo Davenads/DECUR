@@ -58,6 +58,9 @@ This platform organizes research into several key areas:
 - **Medical Research**: J-Rod neuropathology, genetic modifications, xenograft studies
 - **Historical Incidents**: Majestic-12 involvement, key events and locations
 
+## Writing & Copy Rules
+- **No em dashes** -- do not use `—` (U+2014) anywhere in UI copy, component text, or documentation. Use a regular hyphen-minus `-` or rewrite the sentence instead.
+
 ## Code Style Guidelines
 - **Component Structure**: Functional components with TypeScript and hooks
 - **Naming**: PascalCase for components, camelCase for functions/variables

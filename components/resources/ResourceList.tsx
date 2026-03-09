@@ -74,7 +74,7 @@ const ResourceList: FC<ResourceListProps> = ({ category }) => {
         type: "Congressional Testimony",
         author: "Multiple Witnesses",
         year: "2023",
-        description: "David Grusch and other witnesses testify before Congress regarding UAP recovery programs and whistleblower protection issues.",
+        description: "David Grusch and other witnesses testify before Congress regarding UAP recovery programs and insider protection issues.",
         url: "#"
       }
     ],
@@ -175,7 +175,7 @@ const ResourceList: FC<ResourceListProps> = ({ category }) => {
       <div className="mb-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
         <p className="text-sm text-blue-800">
           <span className="font-medium">Note:</span> Currently displaying materials primarily from Dan Burisch's testimony. 
-          Additional whistleblower materials from David Grusch, Luis Elizondo, and others will be added as our archive expands.
+          Additional insider materials from David Grusch, Luis Elizondo, and others will be added as our archive expands.
         </p>
       </div>
       

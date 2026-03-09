@@ -33,7 +33,7 @@ export async function importTranscript(jsonFilePath: string): Promise<ExtendedTr
       date: metadata.uploadDate,
       description: previewText,
       url: `/assets/documents/transcripts/${path.basename(jsonFilePath)}`,
-      category: 'whistleblowers', // Default category
+      category: 'insiders', // Default category
       sourceUrl: metadata.source,
       extractionDate: metadata.extractionDate,
       duration: metadata.duration,

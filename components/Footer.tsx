@@ -15,7 +15,7 @@ const Footer: FC = () => {
               Data Exceeding Current Understanding of Reality
             </p>
             <p className="mt-4 text-gray-400 text-sm">
-              Documenting whistleblower testimony on UAP, NHI, and advanced technologies.
+              Documenting insider testimony on UAP, NHI, and advanced technologies.
             </p>
           </div>
 
@@ -46,22 +46,22 @@ const Footer: FC = () => {
             </ul>
           </div>
 
-          {/* Whistleblowers */}
+          {/* Insiders */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Whistleblowers</h3>
+            <h3 className="text-lg font-medium mb-4">Insiders</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/data?category=whistleblowers" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/data?category=insiders" className="text-gray-400 hover:text-white transition-colors">
                   Dan Burisch
                 </Link>
               </li>
               <li>
-                <Link href="/data?category=whistleblowers" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/data?category=insiders" className="text-gray-400 hover:text-white transition-colors">
                   Bob Lazar
                 </Link>
               </li>
               <li>
-                <Link href="/data?category=whistleblowers" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/data?category=insiders" className="text-gray-400 hover:text-white transition-colors">
                   David Grusch
                 </Link>
               </li>

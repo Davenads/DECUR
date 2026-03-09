@@ -79,7 +79,7 @@ const Sources: NextPage = () => {
           <SourceCard
             name="Open Minds TV"
             url="https://www.openminds.tv"
-            type="Scraped — WordPress API"
+            type="Scraped - WordPress API"
             typeColor="bg-blue-100 text-blue-700"
             description="Independent UAP research and journalism outlet covering modern cases, government disclosures, military encounters, and analysis from credentialed researchers. Primary source for post-2009 UAP developments."
             entries={1178}
@@ -113,10 +113,10 @@ const Sources: NextPage = () => {
         {/* Case file sources */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-xl font-bold text-gray-900">Whistleblower Case File References</h2>
+            <h2 className="text-xl font-bold text-gray-900">Insider Case File References</h2>
             <p className="text-sm text-gray-500 mt-1">
               Sources consulted in building the manually curated{' '}
-              <Link href="/data?category=whistleblowers" className="text-primary hover:underline">Whistleblower</Link>{' '}
+              <Link href="/data?category=insiders" className="text-primary hover:underline">Insider</Link>{' '}
               case files. These are reference sources, not scraped datasets.
             </p>
           </div>
@@ -139,7 +139,7 @@ const Sources: NextPage = () => {
           />
 
           <SourceCard
-            name="UAPedia — Bob Lazar"
+            name="UAPedia - Bob Lazar"
             url="https://www.uapedia.ai/bob-lazar"
             type="Structured Reference"
             typeColor="bg-teal-100 text-teal-700"
@@ -147,7 +147,7 @@ const Sources: NextPage = () => {
           />
 
           <SourceCard
-            name="Internet Archive — 1989 Lazar Interview"
+            name="Internet Archive - 1989 Lazar Interview"
             url="https://archive.org/details/bob-lazar-1989-interview"
             type="Primary Source"
             typeColor="bg-green-100 text-green-700"
@@ -155,15 +155,15 @@ const Sources: NextPage = () => {
           />
 
           <SourceCard
-            name="Sacred Texts — Dreamland Transcript"
+            name="Sacred Texts - Dreamland Transcript"
             url="https://www.sacred-texts.com/ufo/lazar.htm"
             type="Primary Transcript"
             typeColor="bg-green-100 text-green-700"
-            description="Full transcript of the 1989 KLAS-TV Dreamland interview — Lazar's first public appearance. Primary source for direct quotes and initial disclosure claims documented in the case file."
+            description="Full transcript of the 1989 KLAS-TV Dreamland interview, Lazar's first public appearance. Primary source for direct quotes and initial disclosure claims documented in the case file."
           />
 
           <SourceCard
-            name="SingJuPost — JRE #1315 Transcript"
+            name="SingJuPost - JRE #1315 Transcript"
             url="https://singjupost.com/joe-rogan-and-bob-lazar-transcript-jre-1315/"
             type="Transcript"
             typeColor="bg-gray-100 text-gray-600"
@@ -190,10 +190,10 @@ const Sources: NextPage = () => {
             <div>
               <p className="font-semibold text-gray-900 mb-1">Manually Curated Case Files</p>
               <p>
-                Whistleblower profiles (Dan Burisch, Bob Lazar) are built by hand from multiple
+                Insider profiles (Dan Burisch, Bob Lazar) are built by hand from multiple
                 primary and secondary sources. Claims, timelines, and assessments are structured
                 and organized by DECUR contributors. Supporting and contradicting evidence is
-                documented without adjudication — DECUR does not endorse or dismiss any individual claim.
+                documented without adjudication; DECUR does not endorse or dismiss any individual claim.
               </p>
             </div>
 
@@ -202,7 +202,7 @@ const Sources: NextPage = () => {
               <p>
                 All data presented on DECUR is attributed to its origin. Scraped data retains source
                 metadata. Case file references are documented in each profile. DECUR is a research
-                aggregator — we organize and present information for educational purposes, not as a
+                aggregator; we organize and present information for educational purposes, not as a
                 primary publisher.
               </p>
             </div>

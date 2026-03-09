@@ -19,7 +19,7 @@ const TABS = [
 
 type TabId = typeof TABS[number]['id'];
 
-interface WhistleblowerProfileProps {
+interface InsiderProfileProps {
   id: string;
   onBack: () => void;
 }
@@ -705,7 +705,7 @@ const AssessmentTab: FC = () => {
       <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
         <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">Methodology Note</p>
         <p className="text-sm text-amber-900">
-          This section presents documented arguments for and against Burisch's credibility as compiled by researcher Brian Jackson over 13 years. DECUR does not adjudicate these claims — they are presented for methodological transparency.
+          This section presents documented arguments for and against Burisch's credibility as compiled by researcher Brian Jackson over 13 years. DECUR does not adjudicate these claims; they are presented for methodological transparency.
         </p>
       </div>
 
@@ -744,7 +744,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main Profile Component ─────────────────────────────────── */
 
-const WhistleblowerProfile: FC<WhistleblowerProfileProps> = ({ id, onBack }) => {
+const InsiderProfile: FC<InsiderProfileProps> = ({ id, onBack }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -773,13 +773,13 @@ const WhistleblowerProfile: FC<WhistleblowerProfileProps> = ({ id, onBack }) => 
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Whistleblowers
+          Insiders
         </button>
         <div className="flex items-start justify-between">
           <div>
             <h2 className="text-2xl font-bold font-heading text-gray-900">{data.profile.name}</h2>
             <p className="text-sm text-gray-500 mt-0.5">
-              {data.profile.roles[0]} &mdash; {data.profile.service_period}
+              {data.profile.roles[0]}, {data.profile.service_period}
             </p>
           </div>
           <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium shrink-0">
@@ -811,4 +811,4 @@ const WhistleblowerProfile: FC<WhistleblowerProfileProps> = ({ id, onBack }) => 
   );
 };
 
-export default WhistleblowerProfile;
+export default InsiderProfile;

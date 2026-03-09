@@ -9,10 +9,10 @@ import gruschJson from '../data/grusch.json';
 
 interface Props {
   entries: TimelineEntry[];
-  whistleblowerEvents: WBEvent[];
+  insiderEvents: WBEvent[];
 }
 
-const Explore: NextPage<Props> = ({ entries, whistleblowerEvents }) => {
+const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
   return (
     <div className="container mx-auto px-4">
       <div className="max-w-5xl mx-auto space-y-8">
@@ -33,7 +33,7 @@ const Explore: NextPage<Props> = ({ entries, whistleblowerEvents }) => {
 
         {/* Timeline Overlay */}
         <section>
-          <TimelineOverlay uapEntries={entries} whistleblowerEvents={whistleblowerEvents} />
+          <TimelineOverlay uapEntries={entries} insiderEvents={insiderEvents} />
         </section>
 
         {/* Relationship Network Graph */}
@@ -79,9 +79,9 @@ export const getStaticProps: GetStaticProps = async () => {
     []
   );
 
-  const whistleblowerEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents];
+  const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents];
 
-  return { props: { entries, whistleblowerEvents } };
+  return { props: { entries, insiderEvents } };
 };
 
 export default Explore;

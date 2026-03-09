@@ -3,117 +3,133 @@ import type { FC } from 'react';
 import Head from 'next/head';
 import { CustomNextPage, HomePageProps } from '../types/pages';
 
-const Home: CustomNextPage<HomePageProps> = ({ featuredData = [], recentUpdates = [] }) => {
+const CATEGORIES = [
+  {
+    label: 'Insiders',
+    href: '/data?category=insiders',
+    description:
+      'Firsthand accounts from military personnel, intelligence officers, and government officials who have disclosed involvement in classified programs.',
+    detail: 'Dan Burisch · Bob Lazar · David Grusch · Ross Coulthart',
+  },
+  {
+    label: 'Non-Human Intelligence',
+    href: '/data?category=entities',
+    description:
+      'Documented biological, behavioral, and physiological data on reported non-human entities, drawn from testimony and alleged research records.',
+    detail: 'P-45 · P-52 · J-Rod neuropathology · Orion classification',
+  },
+  {
+    label: 'Technologies & Programs',
+    href: '/data?category=technologies',
+    description:
+      'Accounts of recovered, observed, or reverse-engineered exotic technologies, and the classified programs associated with their study.',
+    detail: 'Looking Glass · Lotus · Project Aquarius · S-4 facility',
+  },
+  {
+    label: 'Timeline & Concepts',
+    href: '/data?category=timelines',
+    description:
+      'Theoretical frameworks recurring across insider accounts, including timeline divergence, Ganesh particles, and treaty history.',
+    detail: 'Timeline 1 / 2 · Shiva portals · Majestic-12 · Treaty of Grenada',
+  },
+];
+
+const Home: CustomNextPage<HomePageProps> = () => {
   return (
     <>
       <Head>
-        <title>DECUR - Data Exceeding Current Understanding of Reality</title>
-        <meta name="description" content="A comprehensive repository documenting whistleblower testimony on UAP, NHI, and advanced technologies." />
+        <title>DECUR: UAP & NHI Research Archive</title>
+        <meta
+          name="description"
+          content="A structured archive of insider testimony, primary documents, and research on UAP, NHI, and classified programs."
+        />
       </Head>
+
       <div className="space-y-16">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-xl overflow-hidden shadow-xl">
-        <div className="container mx-auto px-6 py-16 flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Data Exceeding Current Understanding of Reality
-          </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mb-8">
-            A comprehensive repository documenting whistleblower testimony on Unidentified Aerial Phenomena, Non-Human Intelligence, and advanced technologies.
-          </p>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link href="/data" className="btn bg-white text-indigo-900 hover:bg-blue-50 font-medium text-lg px-8 py-3 rounded-lg shadow-md transition-colors">
-              Explore the Data
-            </Link>
-            <Link href="/about" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 font-medium text-lg px-8 py-3 rounded-lg transition-colors">
-              Learn More
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Introduction Section */}
-      <section className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">Welcome to DECUR</h2>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-gray-700">
-              DECUR serves as a comprehensive repository for whistleblower testimonies and research involving phenomena that challenge our conventional understanding of reality, including Unidentified Aerial Phenomena (UAP), Non-Human Intelligence (NHI), and advanced technologies.
+        {/* Hero */}
+        <section className="border-b border-gray-200 pb-16 pt-12">
+          <div className="max-w-3xl mx-auto px-4">
+            <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-4">
+              DECUR Archive
             </p>
-            <p className="text-lg text-gray-700 mt-4">
-              Our archive draws from firsthand testimony, documented incidents, and primary sources spanning eight decades — from military personnel and government officials to scientists and independent researchers who have come forward with accounts of unconventional phenomena and advanced technologies.
+            <h1 className="text-4xl md:text-5xl font-bold font-heading text-gray-900 leading-tight mb-6">
+              A reference archive for UAP and NHI research
+            </h1>
+            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
+              Structured documentation of insider testimony, primary source material, and
+              research records spanning eight decades, catalogued for analysis, not advocacy.
+            </p>
+            <Link
+              href="/data"
+              className="inline-block px-6 py-3 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-dark transition-colors"
+            >
+              Explore the Archive →
+            </Link>
+          </div>
+        </section>
+
+        {/* Scope note */}
+        <section className="max-w-3xl mx-auto px-4">
+          <div className="flex gap-4 items-start">
+            <div className="w-1 shrink-0 bg-primary/30 rounded-full self-stretch" />
+            <p className="text-sm text-gray-500 leading-relaxed">
+              Source material draws from congressional testimony, document leaks, on-record
+              interviews, and firsthand accounts. DECUR does not adjudicate the truth of any
+              claim; entries are documented with their source, context, and known corroborating
+              or contradicting evidence.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Featured Categories */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Explore Key Research Areas</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Category 1 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-              <div className="h-48 bg-blue-800"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Non-Human Intelligence</h3>
-                <p className="text-gray-600 mb-4">
-                  Documented accounts of various intelligent non-human entities, including their biological 
-                  features, technological capabilities, and interactions with humans.
-                </p>
-                <Link href="/data" className="text-primary font-medium hover:text-primary-dark">
-                  Explore NHI Data →
-                </Link>
-              </div>
-            </div>
-
-            {/* Category 2 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-              <div className="h-48 bg-indigo-800"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Advanced Technologies</h3>
-                <p className="text-gray-600 mb-4">
-                  Whistleblower testimony on recovered or observed exotic technologies including 
-                  propulsion systems, temporal manipulation devices, and energy generation.
-                </p>
-                <Link href="/data" className="text-primary font-medium hover:text-primary-dark">
-                  Explore Technologies →
-                </Link>
-              </div>
-            </div>
-
-            {/* Category 3 */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-              <div className="h-48 bg-purple-800"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Special Access Programs</h3>
-                <p className="text-gray-600 mb-4">
-                  Documentation on classified projects investigating non-conventional phenomena,
-                  including recovered materials and reverse-engineering efforts.
-                </p>
-                <Link href="/data" className="text-primary font-medium hover:text-primary-dark">
-                  Explore Programs →
-                </Link>
-              </div>
-            </div>
+        {/* Categories */}
+        <section className="max-w-3xl mx-auto px-4">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">
+            Research Areas
+          </h2>
+          <div className="divide-y divide-gray-100">
+            {CATEGORIES.map(cat => (
+              <Link
+                key={cat.label}
+                href={cat.href}
+                className="group flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8 py-5 hover:bg-gray-50 -mx-3 px-3 rounded-lg transition-colors"
+              >
+                <div className="sm:w-44 shrink-0">
+                  <span className="font-semibold text-gray-900 group-hover:text-primary transition-colors text-sm">
+                    {cat.label}
+                  </span>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm text-gray-600 leading-relaxed mb-1">{cat.description}</p>
+                  <p className="text-xs text-gray-400">{cat.detail}</p>
+                </div>
+                <div className="hidden sm:flex items-center text-gray-300 group-hover:text-primary transition-colors shrink-0 pt-0.5">
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
+            ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Call to Action */}
-      <section className="container mx-auto px-4 py-8 text-center">
-        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 border border-gray-100">
-          <h2 className="text-2xl font-bold mb-4">Ready to Dive Deeper?</h2>
-          <p className="text-gray-600 mb-6">
-            Explore our curated resources, including transcripts, interviews, and a comprehensive 
-            glossary of terms to enhance your understanding of UAP/NHI phenomena.
-          </p>
-          <Link href="/resources" className="btn btn-primary inline-block px-8 py-3 text-lg">
-            Browse Resources
-          </Link>
-        </div>
-      </section>
-    </div>
+        {/* Resources footer strip */}
+        <section className="border-t border-gray-200 pt-10 pb-4 max-w-3xl mx-auto px-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold text-gray-700">Source Materials & Glossary</p>
+              <p className="text-xs text-gray-400 mt-0.5">
+                Transcripts, interviews, and terminology reference
+              </p>
+            </div>
+            <Link
+              href="/resources"
+              className="text-sm font-medium text-primary hover:underline whitespace-nowrap"
+            >
+              Browse Resources →
+            </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 };

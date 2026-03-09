@@ -9,21 +9,26 @@ const QuotesBrowser: FC<Props> = ({ entries }) => {
   const filtered = useMemo(() => {
     const q = search.toLowerCase();
     return entries
-      .filter(e => !q || e.title.toLowerCase().includes(q) || e.excerpt.toLowerCase().includes(q))
-      .sort((a, b) => b.date.localeCompare(a.date));
+      .filter(e =>
+        !q ||
+        e.title.toLowerCase().includes(q) ||
+        e.excerpt.toLowerCase().includes(q) ||
+        (e.quote_text ?? '').toLowerCase().includes(q)
+      )
+      .sort((a, b) => a.date.localeCompare(b.date));
   }, [entries, search]);
 
   return (
     <div>
       <h2 className="text-2xl font-bold font-heading mb-2">Quotes</h2>
       <p className="text-gray-500 text-sm mb-6">
-        {entries.length} notable statements from government officials, military personnel, researchers, and witnesses.
+        {entries.length} statements from government officials, military personnel, researchers, and witnesses.
       </p>
 
       <div className="relative mb-6">
         <input
           type="text"
-          placeholder="Search quotes..."
+          placeholder="Search by name, role, or quote text..."
           value={search}
           onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
           className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
@@ -37,28 +42,49 @@ const QuotesBrowser: FC<Props> = ({ entries }) => {
 
       <div className="space-y-4">
         {filtered.map((entry: TimelineEntry) => (
-          <a
+          <div
             key={entry.id}
-            href={entry.source_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md hover:border-primary transition-all group"
+            className="bg-white border border-gray-200 rounded-lg p-5"
           >
-            <div className="flex gap-3">
-              <div className="text-3xl text-primary opacity-30 font-serif leading-none select-none">&ldquo;</div>
-              <div className="flex-1">
-                <h3 className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors">
-                  {entry.title}
-                </h3>
+            {/* Speaker header */}
+            <div className="flex items-start justify-between gap-3 mb-3">
+              <div>
+                <p className="text-sm font-semibold text-gray-900">{entry.title}</p>
                 {entry.excerpt && (
-                  <p className="mt-2 text-sm text-gray-600 italic"
-                    dangerouslySetInnerHTML={{ __html: entry.excerpt }}
-                  />
+                  <p className="text-xs text-gray-400 mt-0.5">{entry.excerpt}</p>
                 )}
-                <p className="mt-2 text-xs text-gray-400">{entry.date}</p>
               </div>
+              <span className="text-xs text-gray-400 whitespace-nowrap shrink-0 pt-0.5">{entry.date}</span>
             </div>
-          </a>
+
+            {/* Quote body */}
+            {entry.quote_text ? (
+              <blockquote className="border-l-2 border-primary/30 pl-4 my-2">
+                <p className="text-sm text-gray-700 leading-relaxed italic">
+                  {entry.quote_text}
+                </p>
+                {entry.quote_attribution && (
+                  <cite className="text-xs text-gray-400 not-italic mt-1 block">
+                    {entry.quote_attribution}
+                  </cite>
+                )}
+              </blockquote>
+            ) : (
+              <p className="text-sm text-gray-400 italic">Quote text unavailable.</p>
+            )}
+
+            {/* Source link */}
+            <div className="mt-3 pt-3 border-t border-gray-100">
+              <a
+                href={entry.source_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-primary hover:underline"
+              >
+                Source: ufotimeline.com ↗
+              </a>
+            </div>
+          </div>
         ))}
       </div>
     </div>

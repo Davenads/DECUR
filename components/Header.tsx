@@ -51,7 +51,7 @@ const Header: FC = () => {
       items: [
         { title: 'Historical Events', path: '/data?category=events' },
         { title: 'Key Figures', path: '/data?category=figures' },
-        { title: 'Whistleblowers', path: '/data?category=whistleblowers' },
+        { title: 'Insiders', path: '/data?category=insiders' },
         { title: 'Quotes', path: '/data?category=quotes' },
         { title: 'Media & Documents', path: '/data?category=media' },
         { title: 'News', path: '/data?category=news' }
