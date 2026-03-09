@@ -1,0 +1,341 @@
+{
+  "profile": {
+    "id": "david-grusch",
+    "name": "David Charles Grusch",
+    "aliases": ["Dave Grusch"],
+    "born": "c. 1987 (exact date not publicly confirmed)",
+    "roles": [
+      "NRO Representative to the DoD UAP Task Force",
+      "Senior Technical Advisor, NGA (UAP Analysis)",
+      "Intelligence Officer, National Reconnaissance Office",
+      "Co-Founder / Senior Founding Advisor, Sol Foundation"
+    ],
+    "service_period": "2009–2023",
+    "organizations": [
+      "United States Air Force",
+      "National Reconnaissance Office (NRO)",
+      "Department of Defense UAP Task Force",
+      "National Geospatial Intelligence Agency (NGA)",
+      "All-domain Anomaly Resolution Office (AARO) — liaison role",
+      "Sol Foundation"
+    ],
+    "clearance": "Top Secret / SCI with Special Access Program (SAP) access",
+    "summary": "David Grusch is a former Air Force intelligence officer and NRO veteran who served as the NRO's representative to the DoD UAP Task Force from 2019 to 2021. In May 2022 he filed a Disclosure of Urgent Concern with the Intelligence Community Inspector General, alleging the U.S. government operates a multi-decade crash retrieval and reverse engineering program concealed from Congress. The ICIG deemed his complaint 'credible and urgent.' He testified under oath before the House Oversight Committee on July 26, 2023, alongside Ryan Graves and David Fravor — the most significant public UAP congressional hearing in decades.",
+    "education": [
+      "B.S. Physics — University of Pittsburgh (2009)",
+      "M.A. Intelligence Studies — American Military University (2012)",
+      "Air Force Intelligence Officer training — Goodfellow AFB",
+      "Advanced coursework in orbital mechanics and space operations"
+    ],
+    "early_career": [
+      "21st Operations Group, Peterson Air Force Base — space intelligence roles",
+      "3d Space Experimentation Squadron, Schriever AFB — space situational awareness",
+      "Led intelligence integration for Geosynchronous Space Situational Awareness Program"
+    ],
+    "key_events": [
+      { "date": "2009", "event": "Graduates University of Pittsburgh with B.S. in Physics; begins Air Force career" },
+      { "date": "2012", "event": "Completes M.A. in Intelligence Studies at American Military University" },
+      { "date": "2013", "event": "Joins National Reconnaissance Office; leads Intelligence Integration Division for Space Security and Defense Program" },
+      { "date": "2016", "event": "Promoted to senior intelligence officer on NRO Director's briefing team; manages SAP portfolios; coordinates presidential-level intelligence products" },
+      { "date": "2019", "event": "Detailed to DoD UAP Task Force as NRO representative; begins identifying relevant SAP and CAP compartments related to UAP programs" },
+      { "date": "2021", "event": "Moves to National Geospatial Intelligence Agency (NGA) as Senior Technical Advisor; serves as agency co-lead for UAP and trans-medium object analysis; liaisons with AARO" },
+      { "date": "May 2022", "event": "Files Disclosure of Urgent Concern and Complaint of Reprisal with IC Inspector General Thomas Monheim; complaint deemed 'credible and urgent'; congressional intelligence committees notified" },
+      { "date": "April 2023", "event": "DoD Office of Prepublication and Security Review clears his public statements for publication" },
+      { "date": "April 2023", "event": "Departs government service; joins Sol Foundation as Chief Operating Officer" },
+      { "date": "June 5, 2023", "event": "The Debrief publishes Leslie Kean and Ralph Blumenthal investigation featuring Grusch on the record — first public identification by name" },
+      { "date": "June 2023", "event": "NewsNation airs first televised interview with journalist Ross Coulthart" },
+      { "date": "July 14, 2023", "event": "Senate Majority Leader Chuck Schumer and Senator Mike Rounds introduce UAP Disclosure Act as NDAA amendment, directly in response to Grusch's disclosures" },
+      { "date": "July 26, 2023", "event": "Testifies under oath before House Oversight Subcommittee on National Security, Border, and Foreign Affairs alongside Ryan Graves and David Fravor" },
+      { "date": "August 2023", "event": "House members request detailed ICIG briefing on Grusch's allegations" },
+      { "date": "January 2024", "event": "ICIG Thomas Monheim conducts closed-door House briefing on UAP reporting transparency" },
+      { "date": "March 8, 2024", "event": "Pentagon's AARO releases Historical Record Report Vol. 1 — formally disputes Grusch's claims; concludes no verified evidence of off-world craft or recovered remains" },
+      { "date": "May 2024", "event": "National Archives publishes agency guidance for UAP records collection and review, a direct result of legislative provisions tied to Grusch's testimony" }
+    ]
+  },
+
+  "claims": [
+    {
+      "id": "crash-retrieval-program",
+      "category": "crash retrieval",
+      "claim": "The U.S. government has operated a multi-decade crash retrieval and reverse engineering program involving recovered craft of non-human origin, operating through special access compartments and private defense contractors.",
+      "status": "unverified",
+      "notes": "Grusch was informed of this through official channels during his UAP Task Force role but was denied direct access. No physical evidence has been presented publicly. AARO formally denies any such program exists."
+    },
+    {
+      "id": "non-human-biologics",
+      "category": "non-human materials",
+      "claim": "Recovered materials include 'non-human biologics' — assessments from individuals with direct knowledge who Grusch interviewed over four years.",
+      "status": "unverified",
+      "notes": "Explicitly secondhand. Grusch did not personally observe biologics; this is based on 40+ witness interviews. He used the term 'biologics' deliberately, avoiding 'extraterrestrial' or 'alien.'"
+    },
+    {
+      "id": "congressional-concealment",
+      "category": "government cover-up",
+      "claim": "Elements within the Defense and Intelligence community have illegally withheld UAP information from Congress, operating programs above congressional oversight.",
+      "status": "partially-verified",
+      "notes": "The ICIG independently assessed this component as 'credible and urgent' — a formal legal threshold. Bipartisan congressional response (Schumer-Rounds UAP Disclosure Act) reflects institutional credibility. AARO disputes the substance but does not directly contradict the concealment allegation."
+    },
+    {
+      "id": "retaliation",
+      "category": "retaliation",
+      "claim": "After filing protected disclosures with the ICIG, Grusch experienced months of professional retaliation, which he described as 'administrative terrorism.'",
+      "status": "partially-verified",
+      "notes": "His ICIG complaint included a Complaint of Reprisal, which the ICIG deemed credible. The retaliation allegation is a protected whistleblower claim under IC statute and was validated at the ICIG level."
+    },
+    {
+      "id": "corporate-contractors",
+      "category": "crash retrieval",
+      "claim": "A network of private defense contractors holds recovered craft and materials on behalf of the U.S. government, insulating the program from FOIA and congressional oversight.",
+      "status": "unverified",
+      "notes": "No contractor has been named publicly. AARO's KONA BLUE investigation found that a related DHS proposal was never approved or funded — but KONA BLUE was one program, not the broader contractor network Grusch describes."
+    },
+    {
+      "id": "funding-misappropriation",
+      "category": "government cover-up",
+      "claim": "The crash retrieval program is funded through misappropriation of congressional appropriations, bypassing normal oversight mechanisms.",
+      "status": "unverified",
+      "notes": "Raised in congressional testimony. No budget documents or appropriations records have been publicly identified. Would constitute a federal crime if true."
+    },
+    {
+      "id": "exact-locations-known",
+      "category": "crash retrieval",
+      "claim": "Grusch stated he knows the exact locations where recovered UAPs are currently held.",
+      "status": "unverified",
+      "notes": "Claimed in congressional testimony but not disclosed publicly. Offered to provide locations in a classified setting to appropriate oversight personnel."
+    },
+    {
+      "id": "aaro-access-denied",
+      "category": "government cover-up",
+      "claim": "AARO was denied access to relevant special access programs and thus cannot credibly assess whether those programs exist.",
+      "status": "partially-verified",
+      "notes": "AARO itself acknowledged in its historical report that some programs may exist outside its purview. Multiple congressional members have raised concerns about AARO's access limitations."
+    },
+    {
+      "id": "personnel-injuries",
+      "category": "non-human contact",
+      "claim": "Personnel involved with UAP retrieval have suffered injuries from proximity to recovered craft or materials.",
+      "status": "unverified",
+      "notes": "Raised in testimony. No medical records or named individuals have been publicly identified."
+    },
+    {
+      "id": "nhi-contact",
+      "category": "non-human intelligence",
+      "claim": "When asked whether the U.S. government has made contact with non-human intelligence, Grusch declined to answer in open session, stating it required a classified setting.",
+      "status": "unverified",
+      "notes": "The non-answer under oath is notable — it neither confirms nor denies. His refusal to deny is frequently cited as significant by researchers."
+    },
+    {
+      "id": "human-fatalities",
+      "category": "government cover-up",
+      "claim": "When asked directly under oath whether people had been murdered to cover up UAP programs, Grusch stated he was 'not at liberty to discuss' this publicly.",
+      "status": "unverified",
+      "notes": "Like the NHI contact question, his non-denial under oath is treated as significant. He did not confirm or deny, citing classification restrictions."
+    },
+    {
+      "id": "us-has-uap-possession",
+      "category": "crash retrieval",
+      "claim": "The federal government possesses UAPs (unidentified anomalous phenomena). When asked this directly under oath, Grusch answered 'absolutely.'",
+      "status": "unverified",
+      "notes": "This is his most direct on-record claim. Made under oath, subject to perjury liability. Not corroborated by any physical evidence in the public domain."
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "IC Inspector General Thomas Monheim independently assessed Grusch's complaint as 'credible and urgent' — a formal legal threshold under IC whistleblower statute",
+      "His credentials are verified: NRO, NGA, UAP Task Force — all confirmed TS/SCI positions with documented SAP access",
+      "DoD Office of Prepublication and Security Review cleared his public statements in April 2023 — confirming he did not violate classification",
+      "Testified under oath before Congress, carrying perjury liability for false statements",
+      "Bipartisan congressional action followed his testimony: Schumer-Rounds UAP Disclosure Act, NDAA UAP provisions, National Archives records guidance",
+      "Conducted structured interviews with 40+ witnesses using documentation, photography, and classified oral testimony — not relying on memory alone",
+      "Broke by Leslie Kean and Ralph Blumenthal — the journalists responsible for the 2017 NY Times AATIP story that launched the modern UAP disclosure era",
+      "Maintained consistent allegations across multiple venues, venues, and time periods without significant contradiction",
+      "Repeatedly offered to provide specifics in secure congressional settings — consistent with someone constrained by classification rather than fabricating"
+    ],
+    "contradicting": [
+      "Pentagon (via AARO) explicitly denies crash retrieval claims: 'AARO has not discovered verifiable information to substantiate such programs'",
+      "AARO's Historical Record Report (March 2024) concluded no verified evidence of off-world spacecraft or recovered extraterrestrial remains after reviewing decades of records",
+      "KONA BLUE — a program referenced in connection with Grusch's sources — was traced by AARO to a never-approved, unfunded DHS proposal, suggesting some source information may reflect misidentified programs",
+      "Grusch declined multiple AARO interview invitations for the historical record report, citing 'administrative concerns' — critics argue this undermines his claim that he couldn't access the truth",
+      "All specific claims remain secondhand — Grusch consistently acknowledges he did not personally observe craft or biologics",
+      "No physical evidence has been produced in any public proceeding",
+      "Major news organizations (NY Times, Washington Post, Politico) initially declined to publish the original Debrief story, suggesting editorial skepticism at mainstream outlets",
+      "Grusch publicly disclosed personal mental health struggles (PTSD and other challenges); critics raised this in credibility discussions, though supporters argue it is irrelevant"
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "Former U.S. Navy F/A-18 pilot; Executive Director, Americans for Safe Aerospace",
+      "relationship": "Co-witness at July 26, 2023 House Oversight hearing; documented UAP encounters during active-duty training flights; corroborates the broader UAP phenomenon without directly supporting crash retrieval claims"
+    },
+    {
+      "id": "david-fravor",
+      "name": "Commander David Fravor (Ret.)",
+      "role": "Former CO, Strike Fighter Squadron 41 (VFA-41), USS Nimitz",
+      "relationship": "Co-witness at July 26, 2023 hearing; firsthand witness to the 2004 Tic Tac encounter — the most documented military UAP case in modern history"
+    },
+    {
+      "id": "ross-coulthart",
+      "name": "Ross Coulthart",
+      "role": "Investigative journalist, NewsNation; author of In Plain Sight (2021)",
+      "relationship": "Conducted first televised interview with Grusch in June 2023; longtime UAP investigative reporter who helped shape and contextualize Grusch's public disclosure"
+    },
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist; co-author of 2017 NY Times AATIP article",
+      "relationship": "Co-authored the June 5, 2023 Debrief article that first named Grusch publicly; her involvement lent immediate credibility to his disclosures"
+    },
+    {
+      "id": "ralph-blumenthal",
+      "name": "Ralph Blumenthal",
+      "role": "Former New York Times journalist",
+      "relationship": "Co-authored the June 2023 Debrief piece with Kean; previously covered the 2017 AATIP story"
+    },
+    {
+      "id": "thomas-monheim",
+      "name": "Thomas Monheim",
+      "role": "Intelligence Community Inspector General (ICIG)",
+      "relationship": "Received and assessed Grusch's formal Disclosure of Urgent Concern in May 2022; deemed the complaint 'credible and urgent' and notified congressional intelligence committees"
+    },
+    {
+      "id": "chuck-schumer",
+      "name": "Chuck Schumer",
+      "role": "U.S. Senate Majority Leader",
+      "relationship": "Introduced UAP Disclosure Act as NDAA amendment in July 2023 directly in response to Grusch's congressional testimony; described the legislation as a national security imperative"
+    },
+    {
+      "id": "mike-rounds",
+      "name": "Mike Rounds",
+      "role": "U.S. Senator (R-SD)",
+      "relationship": "Co-introduced the UAP Disclosure Act with Schumer; bipartisan sponsorship underscored the seriousness with which Congress treated Grusch's testimony"
+    },
+    {
+      "id": "tim-burchett",
+      "name": "Tim Burchett",
+      "role": "U.S. Representative (R-TN)",
+      "relationship": "Vocal congressional advocate for UAP transparency following Grusch's testimony; sought ICIG briefings and pressed for declassification"
+    },
+    {
+      "id": "lue-elizondo",
+      "name": "Lue Elizondo",
+      "role": "Former Director, Advanced Aerospace Threat Identification Program (AATIP), Pentagon",
+      "relationship": "Part of the broader whistleblower community Grusch is associated with; both independently allege DoD concealment of UAP programs; Elizondo's 2017 disclosures preceded and helped enable Grusch's own"
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "May 2022",
+      "type": "formal-complaint",
+      "title": "Disclosure of Urgent Concern — IC Inspector General",
+      "outlet": "Intelligence Community Inspector General",
+      "interviewer": "Thomas Monheim (ICIG)",
+      "notes": "Formal whistleblower complaint filed under IC statute; also included a Complaint of Reprisal for retaliation. Deemed 'credible and urgent.' Congressional intelligence committees notified."
+    },
+    {
+      "date": "June 5, 2023",
+      "type": "print",
+      "title": "Intelligence Officials Say U.S. Has Been Secretly Recovering Non-Human Craft for Decades",
+      "outlet": "The Debrief",
+      "interviewer": "Leslie Kean, Ralph Blumenthal",
+      "notes": "First public identification of Grusch by name. DoD had pre-cleared his statements in April 2023. First major outlet to publish his specific allegations."
+    },
+    {
+      "date": "June 2023",
+      "type": "television",
+      "title": "UFO Whistleblower: 'Absolutely' Non-Human Craft Recovered",
+      "outlet": "NewsNation",
+      "interviewer": "Ross Coulthart",
+      "notes": "First televised interview. Grusch stated he witnessed something 'very disturbing' with his wife but declined to detail it citing classification. Most widely circulated video of his disclosures."
+    },
+    {
+      "date": "July 26, 2023",
+      "type": "congressional-testimony",
+      "title": "UAP: Implications on National Security, Public Safety, and Government Transparency",
+      "outlet": "U.S. House Oversight Subcommittee on National Security, Border, and Foreign Affairs",
+      "interviewer": "Multiple representatives",
+      "notes": "Sworn testimony under oath alongside Ryan Graves and David Fravor. Answered 'absolutely' when asked if U.S. possesses UAPs. Declined to answer NHI contact and human fatalities questions in open session citing classification. Offered to provide classified details to appropriate oversight personnel."
+    }
+  ],
+
+  "legislative_impact": {
+    "uap_disclosure_act": {
+      "introduced": "July 14, 2023",
+      "sponsors": ["Chuck Schumer (D-NY)", "Mike Rounds (R-SD)"],
+      "framework": "Modeled on the JFK Records Act — presumption of disclosure for UAP-related government records",
+      "key_provisions": [
+        "Government-wide UAP records collection mandate",
+        "Presumption of disclosure with narrow national security exceptions",
+        "Presidential Review Board for contested records",
+        "Contemplated eminent domain authority over recovered technologies of unknown origin"
+      ],
+      "status": "Partial passage — UAP records provisions included in 2024 NDAA; eminent domain provisions removed"
+    },
+    "ndaa_2024": {
+      "provisions": "Required establishment of UAP records collection at the National Archives",
+      "enacted": "December 2023"
+    },
+    "national_archives": {
+      "guidance_issued": "May 8, 2024",
+      "description": "Agency guidance for UAP records review, collection, and organization — direct result of legislative provisions tied to Grusch's testimony"
+    }
+  },
+
+  "government_response": {
+    "aaro_historical_report": {
+      "released": "March 8, 2024",
+      "conclusion": "No verifiable information to substantiate claims of off-world spacecraft or recovered extraterrestrial remains in U.S. possession",
+      "kona_blue_finding": "KONA BLUE — referenced in connection with Grusch's sources — was a Department of Homeland Security special access program proposal that was never approved, funded, or implemented",
+      "interview_attempts": "AARO made multiple attempts to interview Grusch for the historical record; he declined citing administrative concerns and prior classified disclosures to the ICIG"
+    },
+    "pentagon_statement": "DoD stated AARO had not discovered verifiable information to substantiate claims of crash retrieval programs or non-human biologics",
+    "icig_assessment": {
+      "assessor": "Thomas Monheim, IC Inspector General",
+      "finding": "Grusch's complaint deemed 'credible and urgent'",
+      "action": "Congressional intelligence committees formally notified; closed-door House briefing conducted January 2024"
+    }
+  },
+
+  "sources": [
+    {
+      "title": "UAPedia — David Grusch",
+      "url": "https://uapedia.ai/wiki/david-grusch/",
+      "type": "structured-reference",
+      "notes": "Comprehensive structured biography, claims, and timeline"
+    },
+    {
+      "title": "The Debrief — Intelligence Officials Say U.S. Has Been Secretly Recovering Non-Human Craft",
+      "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-been-secretly-recovering-non-human-craft-for-decades/",
+      "type": "primary-source",
+      "notes": "Original publication breaking Grusch's story by Leslie Kean and Ralph Blumenthal, June 5, 2023"
+    },
+    {
+      "title": "House Oversight Committee — UAP Hearing (July 26, 2023)",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "type": "congressional-record",
+      "notes": "Official hearing page with links to all witness written testimony PDFs"
+    },
+    {
+      "title": "Grusch Written Testimony — House Oversight Committee",
+      "url": "https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf",
+      "type": "primary-source",
+      "notes": "Grusch's full prepared statement submitted to the committee under oath"
+    },
+    {
+      "title": "AARO Historical Record Report Vol. 1",
+      "url": "https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/HRR-VOL-I-REPORT-08-MARCH-2024.PDF",
+      "type": "government-document",
+      "notes": "DoD/AARO formal response to UAP retrieval claims including KONA BLUE investigation"
+    },
+    {
+      "title": "NewsNation — Grusch Interview (Ross Coulthart)",
+      "url": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-says-u-s-has-non-human-craft/",
+      "type": "television-interview",
+      "notes": "First televised interview, June 2023; most widely viewed public disclosure"
+    }
+  ]
+}

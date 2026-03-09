@@ -7,11 +7,13 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'shared';
+
 export interface GraphNode {
   id: string;
   name: string;
   type: NodeType;
-  group: 'burisch' | 'lazar' | 'shared';
+  group: NodeGroup;
   val?: number; // relative size weight
   // injected at runtime by force-graph
   x?: number;
@@ -44,6 +46,9 @@ export const graphData: GraphData = {
     // People
     { id: 'dan-burisch',         name: 'Dan Burisch',          type: 'person',       group: 'burisch', val: 5 },
     { id: 'bob-lazar',           name: 'Bob Lazar',            type: 'person',       group: 'lazar',   val: 5 },
+    { id: 'david-grusch',        name: 'David Grusch',         type: 'person',       group: 'grusch',  val: 5 },
+    { id: 'ross-coulthart',      name: 'Ross Coulthart',       type: 'person',       group: 'grusch',  val: 2 },
+    { id: 'ryan-graves',         name: 'Ryan Graves',          type: 'person',       group: 'grusch',  val: 2 },
     { id: 'george-knapp',        name: 'George Knapp',         type: 'person',       group: 'lazar',   val: 2 },
     { id: 'john-lear',           name: 'John Lear',            type: 'person',       group: 'lazar',   val: 2 },
 
@@ -55,6 +60,10 @@ export const graphData: GraphData = {
     { id: 'area-51',             name: 'Area 51 / Groom Lake', type: 'facility',     group: 'shared',  val: 3 },
 
     // Organizations
+    { id: 'uap-task-force',      name: 'DoD UAP Task Force',   type: 'organization', group: 'grusch',  val: 4 },
+    { id: 'aaro',                name: 'AARO',                 type: 'organization', group: 'grusch',  val: 3 },
+    { id: 'nro',                 name: 'NRO',                  type: 'organization', group: 'grusch',  val: 3 },
+    { id: 'sol-foundation',      name: 'Sol Foundation',       type: 'organization', group: 'grusch',  val: 2 },
     { id: 'majestic-12',         name: 'Majestic-12',          type: 'organization', group: 'burisch', val: 4 },
     { id: 'committee-majority',  name: 'Committee of Majority', type: 'organization', group: 'burisch', val: 3 },
     { id: 'egg-corporation',     name: 'EG&G',                 type: 'organization', group: 'lazar',   val: 2 },
@@ -85,6 +94,15 @@ export const graphData: GraphData = {
   ],
 
   links: [
+    // Grusch personal connections
+    { source: 'david-grusch',    target: 'nro',                label: 'worked at' },
+    { source: 'david-grusch',    target: 'uap-task-force',     label: 'represented NRO on' },
+    { source: 'david-grusch',    target: 'aaro',               label: 'liaised with' },
+    { source: 'david-grusch',    target: 'sol-foundation',     label: 'co-founded' },
+    { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
+    { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
+    { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },
+
     // Burisch personal connections
     { source: 'dan-burisch',      target: 's4-papoose',         label: 'worked at' },
     { source: 'dan-burisch',      target: 'chielah',            label: 'studied' },

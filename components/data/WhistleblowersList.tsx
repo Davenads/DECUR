@@ -2,6 +2,7 @@ import { FC, useState } from 'react';
 import { WhistleblowerEntry } from '../../types/data';
 import WhistleblowerProfile from './WhistleblowerProfile';
 import LazarProfile from './LazarProfile';
+import GruschProfile from './GruschProfile';
 
 interface WhistleblowersListProps {
   entries: WhistleblowerEntry[];
@@ -16,6 +17,9 @@ const WhistleblowersList: FC<WhistleblowersListProps> = ({ entries }) => {
   if (selectedEntry?.status === 'detailed') {
     if (selectedEntry.id === 'bob-lazar') {
       return <LazarProfile onBack={onBack} />;
+    }
+    if (selectedEntry.id === 'david-grusch') {
+      return <GruschProfile onBack={onBack} />;
     }
     return (
       <WhistleblowerProfile

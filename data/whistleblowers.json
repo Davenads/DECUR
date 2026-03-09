@@ -12,6 +12,18 @@
     "data_file": "burisch.json"
   },
   {
+    "id": "david-grusch",
+    "name": "David Grusch",
+    "aliases": ["Dave Grusch"],
+    "role": "NRO Representative to the DoD UAP Task Force / NGA Senior Technical Advisor",
+    "period": "2019–2023",
+    "affiliation": "National Reconnaissance Office, National Geospatial Intelligence Agency, DoD UAP Task Force",
+    "summary": "Former Air Force intelligence officer and NRO veteran who filed a formal Disclosure of Urgent Concern with the IC Inspector General in May 2022, alleging the U.S. government operates a multi-decade crash retrieval and reverse engineering program concealed from Congress. His complaint was deemed 'credible and urgent.' He testified under oath before the House Oversight Committee in July 2023 — the most significant public UAP congressional hearing in modern history.",
+    "status": "detailed",
+    "tags": ["UAP Task Force", "AARO", "NRO", "NGA", "Crash Retrieval", "Congressional Testimony", "Non-Human Biologics", "UAP Disclosure Act", "ICIG", "Sol Foundation"],
+    "data_file": "grusch.json"
+  },
+  {
     "id": "bob-lazar",
     "name": "Bob Lazar",
     "aliases": ["S-4 Physicist", "Dennis (originally)"],

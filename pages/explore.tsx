@@ -5,6 +5,7 @@ import TimelineOverlay, { extractYear, WBEvent } from '../components/explore/Tim
 import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
 import burischJson from '../data/burisch.json';
 import lazarJson from '../data/lazar.json';
+import gruschJson from '../data/grusch.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -68,7 +69,17 @@ export const getStaticProps: GetStaticProps = async () => {
     []
   );
 
-  const whistleblowerEvents: WBEvent[] = [...burischEvents, ...lazarEvents];
+  // Grusch key events
+  const gruschEvents: WBEvent[] = gruschJson.profile.key_events.reduce(
+    (acc: WBEvent[], e: { date: string; event: string }) => {
+      const year = extractYear(e.date);
+      if (year) acc.push({ year, event: e.event, source: 'grusch' });
+      return acc;
+    },
+    []
+  );
+
+  const whistleblowerEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents];
 
   return { props: { entries, whistleblowerEvents } };
 };

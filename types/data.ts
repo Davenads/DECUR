@@ -299,6 +299,87 @@ export interface LazarData {
   sources: LazarSource[];
 }
 
+/* ─── Grusch Types ─────────────────────────────────────────────── */
+
+export interface GruschClaim {
+  id: string;
+  category: string;
+  claim: string;
+  status: 'unverified' | 'partially-verified' | 'disputed' | 'partially-contradicted' | 'verified';
+  notes?: string;
+}
+
+export interface GruschDisclosure {
+  date: string;
+  type: string;
+  title: string;
+  outlet: string;
+  interviewer?: string;
+  notes?: string;
+}
+
+export interface GruschPerson {
+  id: string;
+  name: string;
+  role: string;
+  relationship: string;
+}
+
+export interface GruschSource {
+  title: string;
+  url: string;
+  type: string;
+  notes: string;
+}
+
+export interface GruschData {
+  profile: {
+    id: string;
+    name: string;
+    aliases: string[];
+    born: string;
+    roles: string[];
+    service_period: string;
+    organizations: string[];
+    clearance: string;
+    summary: string;
+    education: string[];
+    early_career: string[];
+    key_events: Array<{ date: string; event: string }>;
+  };
+  claims: GruschClaim[];
+  credibility: {
+    supporting: Array<{ argument: string; weight: string }>;
+    contradicting: Array<{ argument: string; weight: string }>;
+  };
+  associated_people: GruschPerson[];
+  disclosures: GruschDisclosure[];
+  legislative_impact: {
+    uap_disclosure_act: {
+      introduced: string;
+      sponsors: string[];
+      provisions: string[];
+      outcome: string;
+    };
+    ndaa_2024: {
+      section: string;
+      provisions: string[];
+    };
+    national_archives: string;
+  };
+  government_response: {
+    aaro_historical_report: {
+      date: string;
+      title: string;
+      conclusion: string;
+      notes: string;
+    };
+    pentagon_statement: string;
+    icig_assessment: string;
+  };
+  sources: GruschSource[];
+}
+
 /**
  * Full Burisch data structure
  */

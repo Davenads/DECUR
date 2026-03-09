@@ -61,9 +61,9 @@ const Footer: FC = () => {
                 </Link>
               </li>
               <li>
-                <span className="text-gray-500">
-                  David Grusch (Coming Soon)
-                </span>
+                <Link href="/data?category=whistleblowers" className="text-gray-400 hover:text-white transition-colors">
+                  David Grusch
+                </Link>
               </li>
             </ul>
           </div>
