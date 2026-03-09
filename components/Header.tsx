@@ -221,7 +221,7 @@ const Header: FC = () => {
 
           {/* Search */}
           <div className="hidden md:block w-64">
-            <SearchBar onSearch={(query) => console.log('Search:', query)} />
+            <SearchBar onSearch={(query) => router.push(`/search?q=${encodeURIComponent(query)}`)} />
           </div>
 
           {/* Mobile Menu Button */}
@@ -361,7 +361,7 @@ const Header: FC = () => {
               </Link>
               
               <div className="pt-2">
-                <SearchBar onSearch={(query) => console.log('Mobile search:', query)} />
+                <SearchBar onSearch={(query) => router.push(`/search?q=${encodeURIComponent(query)}`)} />
               </div>
             </div>
           </div>

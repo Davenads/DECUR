@@ -12,15 +12,13 @@ const SearchBar: FC<SearchProps> = ({
   className = ''
 }) => {
   const [searchQuery, setSearchQuery] = useState<string>(initialQuery);
-  const _router = useRouter(); // Keeping for future implementation
+  const _router = useRouter();
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    // Call the onSearch function passed as a prop
+    if (!searchQuery.trim()) return;
     onSearch(searchQuery);
-    // In a real app, this would also navigate to search results page
-    console.log('Searching for:', searchQuery);
-    // router.push(`/search?q=${encodeURIComponent(searchQuery)}`);
+    _router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
