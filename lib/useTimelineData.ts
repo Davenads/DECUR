@@ -3,6 +3,7 @@
  * Use these in getStaticProps only -- do NOT import in client components.
  */
 import rawEntries from '../data/ufotimeline.json';
+import aodQuotes  from '../data/aod-quotes-platform.json';
 
 export interface TimelineEntry {
   id: number;
@@ -15,9 +16,14 @@ export interface TimelineEntry {
   source?: string;
   quote_text?: string | null;
   quote_attribution?: string | null;
+  topic?: string | null;
 }
 
-const entries = rawEntries as TimelineEntry[];
+// Merge ufotimeline entries with AoD quotes
+const entries = [
+  ...(rawEntries as TimelineEntry[]),
+  ...(aodQuotes  as TimelineEntry[]),
+];
 
 export function getAllEntries(): TimelineEntry[] {
   return entries;
