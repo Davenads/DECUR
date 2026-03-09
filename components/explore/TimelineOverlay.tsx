@@ -11,7 +11,7 @@ export interface WBEvent {
   year: number;
   event: string;
   category?: string;
-  source: 'burisch' | 'lazar' | 'grusch';
+  source: 'burisch' | 'lazar' | 'grusch' | 'elizondo';
 }
 
 interface Props {
@@ -23,10 +23,11 @@ interface Props {
 
 const YEAR_START = 1985;
 const YEAR_END   = 2025;
-const BURISCH_COLOR = '#8b5cf6'; // purple — matches network graph entity color
-const LAZAR_COLOR   = '#3b82f6'; // blue — matches network graph person color
-const GRUSCH_COLOR  = '#ef4444'; // red
-const UAP_COLOR     = '#93c5e8'; // light blue — matches EventFrequencyChart
+const BURISCH_COLOR   = '#8b5cf6'; // purple — matches network graph entity color
+const LAZAR_COLOR     = '#3b82f6'; // blue — matches network graph person color
+const GRUSCH_COLOR    = '#ef4444'; // red
+const ELIZONDO_COLOR  = '#10b981'; // emerald
+const UAP_COLOR       = '#93c5e8'; // light blue — matches EventFrequencyChart
 
 /* ─── Helpers ────────────────────────────────────────────────── */
 
@@ -43,6 +44,7 @@ interface BarTooltipPayload {
   burischEvents: WBEvent[];
   lazarEvents: WBEvent[];
   gruschEvents: WBEvent[];
+  elizondoEvents: WBEvent[];
 }
 
 interface RechartsTooltipProps {
@@ -84,6 +86,14 @@ const BarTooltip: FC<RechartsTooltipProps> = ({ active, payload }) => {
           ))}
         </div>
       )}
+      {d.elizondoEvents.length > 0 && (
+        <div className="mt-1.5 space-y-0.5">
+          <p className="text-xs font-medium" style={{ color: ELIZONDO_COLOR }}>Elizondo:</p>
+          {d.elizondoEvents.map((e, i) => (
+            <p key={i} className="text-xs text-gray-600 pl-2 leading-tight">· {e.event}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -98,7 +108,7 @@ interface DotProps {
 
 const SwimlaneDot: FC<DotProps> = ({ cx = 0, cy = 0, payload }) => {
   if (!payload) return null;
-  const color = payload.source === 'burisch' ? BURISCH_COLOR : payload.source === 'grusch' ? GRUSCH_COLOR : LAZAR_COLOR;
+  const color = payload.source === 'burisch' ? BURISCH_COLOR : payload.source === 'grusch' ? GRUSCH_COLOR : payload.source === 'elizondo' ? ELIZONDO_COLOR : LAZAR_COLOR;
   return (
     <g>
       <line x1={cx} y1={cy - 8} x2={cx} y2={cy + 8} stroke={color} strokeWidth={1.5} opacity={0.4} />
@@ -117,8 +127,8 @@ interface SwimlaneTooltipProps {
 const SwimlaneTooltip: FC<SwimlaneTooltipProps> = ({ active, payload }) => {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
-  const color = d.source === 'burisch' ? BURISCH_COLOR : d.source === 'grusch' ? GRUSCH_COLOR : LAZAR_COLOR;
-  const sourceName = d.source === 'burisch' ? 'Dan Burisch' : d.source === 'grusch' ? 'David Grusch' : 'Bob Lazar';
+  const color = d.source === 'burisch' ? BURISCH_COLOR : d.source === 'grusch' ? GRUSCH_COLOR : d.source === 'elizondo' ? ELIZONDO_COLOR : LAZAR_COLOR;
+  const sourceName = d.source === 'burisch' ? 'Dan Burisch' : d.source === 'grusch' ? 'David Grusch' : d.source === 'elizondo' ? 'Luis Elizondo' : 'Bob Lazar';
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-xs">
       <div className="flex items-center gap-1.5 mb-1">
@@ -167,9 +177,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
       return {
         year,
         uap: uapByYear[year] ?? 0,
-        burischEvents: yearWB.filter(e => e.source === 'burisch'),
-        lazarEvents:   yearWB.filter(e => e.source === 'lazar'),
-        gruschEvents:  yearWB.filter(e => e.source === 'grusch'),
+        burischEvents:  yearWB.filter(e => e.source === 'burisch'),
+        lazarEvents:    yearWB.filter(e => e.source === 'lazar'),
+        gruschEvents:   yearWB.filter(e => e.source === 'grusch'),
+        elizondoEvents: yearWB.filter(e => e.source === 'elizondo'),
       };
     }
   );
@@ -189,6 +200,11 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
     insiderEvents
       .filter(e => e.source === 'grusch' && e.year >= yearStart && e.year <= yearEnd)
       .map(e => ({ ...e, x: e.year, y: 2 }));
+
+  const elizondoDots: Array<WBEvent & { x: number; y: number }> =
+    insiderEvents
+      .filter(e => e.source === 'elizondo' && e.year >= yearStart && e.year <= yearEnd)
+      .map(e => ({ ...e, x: e.year, y: 3 }));
 
   const xDomain: [number, number] = [yearStart, yearEnd];
   const xTicks = Array.from(
@@ -243,7 +259,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
               <Tooltip content={<BarTooltip />} cursor={{ fill: 'rgba(0,119,204,0.06)' }} />
               <Bar dataKey="uap" radius={[2, 2, 0, 0]} maxBarSize={16}>
                 {barData.map((d, i) => {
-                  const hasWB = d.burischEvents.length > 0 || d.lazarEvents.length > 0 || d.gruschEvents.length > 0;
+                  const hasWB = d.burischEvents.length > 0 || d.lazarEvents.length > 0 || d.gruschEvents.length > 0 || d.elizondoEvents.length > 0;
                   return (
                     <Cell
                       key={i}
@@ -260,7 +276,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
       {/* Swimlane scatter panel */}
       <div>
         <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide font-medium">Insider Events</p>
-        <div style={{ height: 100 }} className="relative">
+        <div style={{ height: 130 }} className="relative">
           {/* Row labels */}
           <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-around pointer-events-none z-10" style={{ width: 8 }}>
           </div>
@@ -279,7 +295,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
               <YAxis
                 dataKey="y"
                 type="number"
-                domain={[-0.5, 2.5]}
+                domain={[-0.5, 3.5]}
                 hide
               />
               <Tooltip content={<SwimlaneTooltip />} cursor={false} />
@@ -298,24 +314,35 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
                 shape={<SwimlaneDot />}
                 name="David Grusch"
               />
+              <Scatter
+                data={elizondoDots}
+                shape={<SwimlaneDot />}
+                name="Luis Elizondo"
+              />
             </ScatterChart>
           </ResponsiveContainer>
           {/* Inline row labels positioned over the chart */}
           <div
             className="absolute pointer-events-none"
-            style={{ left: 10, top: '8%' }}
+            style={{ left: 10, top: '6%' }}
+          >
+            <span className="text-xs font-medium" style={{ color: ELIZONDO_COLOR }}>Elizondo</span>
+          </div>
+          <div
+            className="absolute pointer-events-none"
+            style={{ left: 10, top: '32%' }}
           >
             <span className="text-xs font-medium" style={{ color: GRUSCH_COLOR }}>Grusch</span>
           </div>
           <div
             className="absolute pointer-events-none"
-            style={{ left: 10, top: '42%' }}
+            style={{ left: 10, top: '57%' }}
           >
             <span className="text-xs font-medium" style={{ color: BURISCH_COLOR }}>Burisch</span>
           </div>
           <div
             className="absolute pointer-events-none"
-            style={{ left: 10, bottom: '10%' }}
+            style={{ left: 10, bottom: '8%' }}
           >
             <span className="text-xs font-medium" style={{ color: LAZAR_COLOR }}>Lazar</span>
           </div>
@@ -343,6 +370,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-full inline-block" style={{ backgroundColor: GRUSCH_COLOR }} />
           Grusch key event
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-full inline-block" style={{ backgroundColor: ELIZONDO_COLOR }} />
+          Elizondo key event
         </span>
       </div>
     </div>

@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -44,13 +44,16 @@ export const NODE_COLORS: Record<NodeType, string> = {
 export const graphData: GraphData = {
   nodes: [
     // People
-    { id: 'dan-burisch',         name: 'Dan Burisch',          type: 'person',       group: 'burisch', val: 5 },
-    { id: 'bob-lazar',           name: 'Bob Lazar',            type: 'person',       group: 'lazar',   val: 5 },
-    { id: 'david-grusch',        name: 'David Grusch',         type: 'person',       group: 'grusch',  val: 5 },
-    { id: 'ross-coulthart',      name: 'Ross Coulthart',       type: 'person',       group: 'grusch',  val: 2 },
-    { id: 'ryan-graves',         name: 'Ryan Graves',          type: 'person',       group: 'grusch',  val: 2 },
-    { id: 'george-knapp',        name: 'George Knapp',         type: 'person',       group: 'lazar',   val: 2 },
-    { id: 'john-lear',           name: 'John Lear',            type: 'person',       group: 'lazar',   val: 2 },
+    { id: 'dan-burisch',         name: 'Dan Burisch',          type: 'person',       group: 'burisch',  val: 5 },
+    { id: 'bob-lazar',           name: 'Bob Lazar',            type: 'person',       group: 'lazar',    val: 5 },
+    { id: 'david-grusch',        name: 'David Grusch',         type: 'person',       group: 'grusch',   val: 5 },
+    { id: 'luis-elizondo',       name: 'Luis Elizondo',        type: 'person',       group: 'elizondo', val: 5 },
+    { id: 'chris-mellon',        name: 'Chris Mellon',         type: 'person',       group: 'elizondo', val: 2 },
+    { id: 'ross-coulthart',      name: 'Ross Coulthart',       type: 'person',       group: 'grusch',   val: 2 },
+    { id: 'ryan-graves',         name: 'Ryan Graves',          type: 'person',       group: 'shared',   val: 2 },
+    { id: 'george-knapp',        name: 'George Knapp',         type: 'person',       group: 'lazar',    val: 2 },
+    { id: 'john-lear',           name: 'John Lear',            type: 'person',       group: 'lazar',    val: 2 },
+    { id: 'harry-reid',          name: 'Harry Reid',           type: 'person',       group: 'elizondo', val: 2 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -60,25 +63,30 @@ export const graphData: GraphData = {
     { id: 'area-51',             name: 'Area 51 / Groom Lake', type: 'facility',     group: 'shared',  val: 3 },
 
     // Organizations
-    { id: 'uap-task-force',      name: 'DoD UAP Task Force',   type: 'organization', group: 'grusch',  val: 4 },
-    { id: 'aaro',                name: 'AARO',                 type: 'organization', group: 'grusch',  val: 3 },
-    { id: 'nro',                 name: 'NRO',                  type: 'organization', group: 'grusch',  val: 3 },
-    { id: 'sol-foundation',      name: 'Sol Foundation',       type: 'organization', group: 'grusch',  val: 2 },
-    { id: 'majestic-12',         name: 'Majestic-12',          type: 'organization', group: 'burisch', val: 4 },
+    { id: 'uap-task-force',      name: 'DoD UAP Task Force',   type: 'organization', group: 'shared',   val: 4 },
+    { id: 'aaro',                name: 'AARO',                 type: 'organization', group: 'shared',   val: 3 },
+    { id: 'nro',                 name: 'NRO',                  type: 'organization', group: 'grusch',   val: 3 },
+    { id: 'sol-foundation',      name: 'Sol Foundation',       type: 'organization', group: 'grusch',   val: 2 },
+    { id: 'majestic-12',         name: 'Majestic-12',          type: 'organization', group: 'burisch',  val: 4 },
     { id: 'committee-majority',  name: 'Committee of Majority', type: 'organization', group: 'burisch', val: 3 },
-    { id: 'egg-corporation',     name: 'EG&G',                 type: 'organization', group: 'lazar',   val: 2 },
-    { id: 'los-alamos',          name: 'Los Alamos Lab',       type: 'organization', group: 'lazar',   val: 2 },
-    { id: 'naval-intelligence',  name: 'Naval Intelligence',   type: 'organization', group: 'lazar',   val: 2 },
+    { id: 'egg-corporation',     name: 'EG&G',                 type: 'organization', group: 'lazar',    val: 2 },
+    { id: 'los-alamos',          name: 'Los Alamos Lab',       type: 'organization', group: 'lazar',    val: 2 },
+    { id: 'naval-intelligence',  name: 'Naval Intelligence',   type: 'organization', group: 'lazar',    val: 2 },
+    { id: 'ttsa',                name: 'To The Stars Academy', type: 'organization', group: 'elizondo', val: 3 },
+    { id: 'bigelow-aerospace',   name: 'Bigelow Aerospace',    type: 'organization', group: 'elizondo', val: 2 },
+    { id: 'pentagon-ousd',       name: 'OUSD Intelligence',    type: 'organization', group: 'elizondo', val: 3 },
 
     // Projects
-    { id: 'project-aquarius',    name: 'Project Aquarius',     type: 'project',      group: 'burisch', val: 4 },
-    { id: 'project-lotus',       name: 'Project Lotus',        type: 'project',      group: 'burisch', val: 3 },
-    { id: 'project-crystal',     name: 'Project Crystal',      type: 'project',      group: 'burisch', val: 2 },
-    { id: 'project-galileo',     name: 'Project Galileo',      type: 'project',      group: 'lazar',   val: 2 },
-    { id: 'project-preserve',    name: 'Project Preserve Destiny', type: 'project',  group: 'burisch', val: 2 },
+    { id: 'project-aquarius',    name: 'Project Aquarius',     type: 'project',      group: 'burisch',  val: 4 },
+    { id: 'project-lotus',       name: 'Project Lotus',        type: 'project',      group: 'burisch',  val: 3 },
+    { id: 'project-crystal',     name: 'Project Crystal',      type: 'project',      group: 'burisch',  val: 2 },
+    { id: 'project-galileo',     name: 'Project Galileo',      type: 'project',      group: 'lazar',    val: 2 },
+    { id: 'project-preserve',    name: 'Project Preserve Destiny', type: 'project',  group: 'burisch',  val: 2 },
+    { id: 'aatip',               name: 'AATIP',                type: 'project',      group: 'elizondo', val: 5 },
 
     // Concepts
-    { id: 'looking-glass',       name: 'Looking Glass',        type: 'concept',      group: 'burisch', val: 3 },
+    { id: 'five-observables',    name: '5 Observables',        type: 'concept',      group: 'elizondo', val: 3 },
+    { id: 'looking-glass',       name: 'Looking Glass',        type: 'concept',      group: 'burisch',  val: 3 },
     { id: 'stargates',           name: 'Stargates',            type: 'concept',      group: 'burisch', val: 2 },
     { id: 'timeline-1',          name: 'Timeline 1',           type: 'concept',      group: 'burisch', val: 2 },
     { id: 'timeline-2',          name: 'Timeline 2',           type: 'concept',      group: 'burisch', val: 2 },
@@ -94,6 +102,21 @@ export const graphData: GraphData = {
   ],
 
   links: [
+    // Elizondo personal connections
+    { source: 'luis-elizondo',   target: 'aatip',              label: 'directed' },
+    { source: 'luis-elizondo',   target: 'pentagon-ousd',      label: 'worked within' },
+    { source: 'luis-elizondo',   target: 'ttsa',               label: 'co-founded' },
+    { source: 'luis-elizondo',   target: 'five-observables',   label: 'formulated' },
+    { source: 'luis-elizondo',   target: 'chris-mellon',       label: 'collaborated with' },
+    { source: 'luis-elizondo',   target: 'harry-reid',         label: 'program funded by' },
+    { source: 'luis-elizondo',   target: 'david-grusch',       label: 'contemporary disclosure' },
+    { source: 'luis-elizondo',   target: 'ryan-graves',        label: 'corroborated by' },
+    { source: 'aatip',           target: 'bigelow-aerospace',  label: 'contracted to' },
+    { source: 'aatip',           target: 'uap-task-force',     label: 'predecessor of' },
+    { source: 'aatip',           target: 'five-observables',   label: 'produced' },
+    { source: 'chris-mellon',    target: 'ttsa',               label: 'senior advisor' },
+    { source: 'harry-reid',      target: 'bigelow-aerospace',  label: 'secured funding for' },
+
     // Grusch personal connections
     { source: 'david-grusch',    target: 'nro',                label: 'worked at' },
     { source: 'david-grusch',    target: 'uap-task-force',     label: 'represented NRO on' },

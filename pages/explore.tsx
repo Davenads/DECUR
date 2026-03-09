@@ -6,6 +6,7 @@ import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
 import burischJson from '../data/burisch.json';
 import lazarJson from '../data/lazar.json';
 import gruschJson from '../data/grusch.json';
+import elizondoJson from '../data/elizondo.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -79,7 +80,17 @@ export const getStaticProps: GetStaticProps = async () => {
     []
   );
 
-  const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents];
+  // Elizondo key events (uses 'year' field, not 'date')
+  const elizondoEvents: WBEvent[] = elizondoJson.profile.key_events.reduce(
+    (acc: WBEvent[], e: { year: string; event: string }) => {
+      const year = extractYear(e.year);
+      if (year) acc.push({ year, event: e.event, source: 'elizondo' });
+      return acc;
+    },
+    []
+  );
+
+  const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents];
 
   return { props: { entries, insiderEvents } };
 };
