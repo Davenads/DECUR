@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -54,6 +54,10 @@ export const graphData: GraphData = {
     { id: 'george-knapp',        name: 'George Knapp',         type: 'person',       group: 'lazar',    val: 2 },
     { id: 'john-lear',           name: 'John Lear',            type: 'person',       group: 'lazar',    val: 2 },
     { id: 'harry-reid',          name: 'Harry Reid',           type: 'person',       group: 'elizondo', val: 2 },
+    { id: 'david-fravor',        name: 'David Fravor',         type: 'person',       group: 'fravor',   val: 5 },
+    { id: 'karl-nell',           name: 'Karl Nell',            type: 'person',       group: 'nell',     val: 4 },
+    { id: 'jim-slaight',         name: 'Jim Slaight',          type: 'person',       group: 'fravor',   val: 2 },
+    { id: 'garry-nolan',         name: 'Garry Nolan',          type: 'person',       group: 'nell',     val: 2 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -66,7 +70,9 @@ export const graphData: GraphData = {
     { id: 'uap-task-force',      name: 'DoD UAP Task Force',   type: 'organization', group: 'shared',   val: 4 },
     { id: 'aaro',                name: 'AARO',                 type: 'organization', group: 'shared',   val: 3 },
     { id: 'nro',                 name: 'NRO',                  type: 'organization', group: 'grusch',   val: 3 },
-    { id: 'sol-foundation',      name: 'Sol Foundation',       type: 'organization', group: 'grusch',   val: 2 },
+    { id: 'sol-foundation',      name: 'Sol Foundation',       type: 'organization', group: 'shared',   val: 3 },
+    { id: 'uss-nimitz',         name: 'USS Nimitz Strike Group', type: 'organization', group: 'fravor',  val: 3 },
+    { id: 'vfa-41',             name: 'VFA-41 Black Aces',    type: 'organization', group: 'fravor',   val: 2 },
     { id: 'majestic-12',         name: 'Majestic-12',          type: 'organization', group: 'burisch',  val: 4 },
     { id: 'committee-majority',  name: 'Committee of Majority', type: 'organization', group: 'burisch', val: 3 },
     { id: 'egg-corporation',     name: 'EG&G',                 type: 'organization', group: 'lazar',    val: 2 },
@@ -125,11 +131,28 @@ export const graphData: GraphData = {
     { source: 'chris-mellon',    target: 'ttsa',               label: 'senior advisor' },
     { source: 'harry-reid',      target: 'bigelow-aerospace',  label: 'secured funding for' },
 
+    // Fravor personal connections
+    { source: 'david-fravor',    target: 'uss-nimitz',         label: 'commanding officer on' },
+    { source: 'david-fravor',    target: 'vfa-41',             label: 'commanding officer' },
+    { source: 'david-fravor',    target: 'jim-slaight',        label: 'wingman on Tic Tac' },
+    { source: 'david-fravor',    target: 'aatip',              label: 'encounter investigated by' },
+    { source: 'david-fravor',    target: 'david-grusch',       label: 'testified alongside' },
+    { source: 'david-fravor',    target: 'ryan-graves',        label: 'testified alongside' },
+    { source: 'david-fravor',    target: 'karl-nell',          label: 'testified alongside' },
+    { source: 'uss-nimitz',      target: 'aatip',              label: 'encounter prompted' },
+
+    // Nell personal connections
+    { source: 'karl-nell',       target: 'sol-foundation',     label: 'co-founded' },
+    { source: 'karl-nell',       target: 'david-grusch',       label: 'co-founded Sol Foundation' },
+    { source: 'karl-nell',       target: 'garry-nolan',        label: 'Sol Foundation co-founder' },
+    { source: 'karl-nell',       target: 'ryan-graves',        label: 'testified alongside' },
+
     // Grusch personal connections
     { source: 'david-grusch',    target: 'nro',                label: 'worked at' },
     { source: 'david-grusch',    target: 'uap-task-force',     label: 'represented NRO on' },
     { source: 'david-grusch',    target: 'aaro',               label: 'liaised with' },
     { source: 'david-grusch',    target: 'sol-foundation',     label: 'co-founded' },
+    { source: 'garry-nolan',     target: 'sol-foundation',     label: 'co-founded' },
     { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
     { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
     { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },

@@ -24,6 +24,30 @@
     "data_file": "burisch.json"
   },
   {
+    "id": "david-fravor",
+    "name": "David Fravor",
+    "aliases": ["Dave Fravor", "Fravor"],
+    "role": "Commanding Officer, VFA-41 'Black Aces' Strike Fighter Squadron",
+    "period": "1987–2006",
+    "affiliation": "United States Navy, VFA-41 Black Aces, USS Nimitz Carrier Strike Group",
+    "summary": "Retired U.S. Navy Commander and decorated fighter pilot who, on November 14, 2004, observed a 40-foot white tic-tac-shaped object performing impossible maneuvers off the coast of San Diego. The Nimitz encounter is the most credible documented UAP incident in modern history, corroborated by four aviators, two radar systems, and confirmed authentic by the Pentagon in 2019. Fravor testified under oath before the House Oversight Committee on July 26, 2023 — the first military aviator to do so in a modern congressional hearing.",
+    "status": "detailed",
+    "tags": ["Tic Tac", "USS Nimitz", "Navy", "FLIR", "Congressional Testimony", "Direct Witness"],
+    "data_file": "fravor.json"
+  },
+  {
+    "id": "karl-nell",
+    "name": "Karl Nell",
+    "aliases": ["Colonel Nell", "Karl Nell"],
+    "role": "Retired Army Colonel, INSCOM; Co-Founder, Sol Foundation",
+    "period": "1988–2016 (Army); 2016–present (private sector)",
+    "affiliation": "United States Army INSCOM, Army Special Forces, Raytheon Technologies, Sol Foundation",
+    "summary": "Retired U.S. Army Colonel with 28 years in INSCOM and Special Forces who testified before the House Oversight Committee on July 26, 2023, providing senior military corroboration for the UAP disclosure narrative. Co-founded the Sol Foundation alongside David Grusch and Dr. Garry Nolan — the first seriously academic-affiliated UAP research organization. His most cited statement: 'Non-human intelligence exists and has been interacting with humanity.'",
+    "status": "detailed",
+    "tags": ["SOL Foundation", "Army", "INSCOM", "West Point", "Congressional Testimony", "NHI", "Disclosure"],
+    "data_file": "nell.json"
+  },
+  {
     "id": "david-grusch",
     "name": "David Grusch",
     "aliases": ["Dave Grusch"],

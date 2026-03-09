@@ -1,0 +1,194 @@
+{
+  "profile": {
+    "id": "david-fravor",
+    "name": "David Scott Fravor",
+    "aliases": ["Dave Fravor", "Fravor"],
+    "born": "1963 (exact date not publicly confirmed)",
+    "roles": [
+      "Commanding Officer, VFA-41 'Black Aces' Strike Fighter Squadron",
+      "U.S. Navy Fighter Pilot (F/A-18F Super Hornet)",
+      "Naval Aviator, 18+ years service"
+    ],
+    "service_period": "1987–2006",
+    "organizations": [
+      "United States Navy",
+      "VFA-41 Black Aces (Strike Fighter Squadron 41)",
+      "USS Nimitz Carrier Strike Group"
+    ],
+    "clearance": "Top Secret (active during service)",
+    "summary": "David Fravor is a retired U.S. Navy Commander and decorated fighter pilot with over 18 years of service. On November 14, 2004, while commanding VFA-41 during a routine training exercise off the coast of southern California, he was vectored by USS Princeton to investigate an anomalous radar contact. What he and three other aviators observed — a 40-foot white tic-tac-shaped object with no wings, no exhaust, and instantaneous directional changes — became the most credible documented UAP encounter in modern history. The encounter was corroborated by multiple radar systems, two F/A-18 crews, and later confirmed by the Pentagon as authentic. Fravor testified before the House Oversight Committee on July 26, 2023, making him the first military aviator to testify under oath about a direct UAP encounter in a modern congressional hearing.",
+    "education": [
+      "B.S. — U.S. Naval Academy, Annapolis (1987)",
+      "Naval Aviator flight training, Naval Air Station Meridian",
+      "Naval Fighter Weapons School (TOPGUN)"
+    ],
+    "early_career": [
+      "Graduated U.S. Naval Academy 1987; commissioned as Ensign",
+      "Completed flight training; designated Naval Aviator",
+      "Multiple combat deployments in F/A-18s",
+      "Accumulated 6,000+ flight hours, 2,000+ carrier landings"
+    ],
+    "key_events": [
+      { "date": "1987", "event": "Graduates Naval Academy; begins Navy career" },
+      { "date": "1994–2001", "event": "Multiple combat deployments; becomes CO of VFA-41 Black Aces" },
+      { "date": "November 14, 2004", "event": "The Tic Tac encounter — vectored by USS Princeton CIC to investigate radar anomaly; observes white 40-ft oblong object with no propulsion signature performing impossible maneuvers 80 miles southwest of San Diego; object detected intermittently on radar for weeks prior" },
+      { "date": "November 14, 2004 (later)", "event": "A second F/A-18 crew (Lt. Chad Underwood) captures the FLIR1 footage of a different contact from the same exercise area — this becomes the famous 'Tic Tac video'" },
+      { "date": "2006", "event": "Retires from U.S. Navy after 18+ years; moves to private sector (later runs a catering business in Massachusetts)" },
+      { "date": "December 16, 2017", "event": "New York Times publishes 'Glowing Auras and Black Money' — AATIP confirmed, Nimitz encounter reported publicly for the first time" },
+      { "date": "April 2019", "event": "Pentagon officially acknowledges FLIR1/Nimitz video as authentic Navy gun-camera footage" },
+      { "date": "July 26, 2023", "event": "Testifies under oath before House Oversight Subcommittee on National Security alongside David Grusch and Ryan Graves — first time a military pilot testified under oath about a direct UAP encounter in a modern hearing" },
+      { "date": "December 2023", "event": "Congress releases written transcripts of closed-door classified briefings referencing the Nimitz encounter in program context" }
+    ]
+  },
+
+  "encounter": {
+    "date": "November 14, 2004",
+    "location": "Pacific Ocean, approximately 100 miles southwest of San Diego, California",
+    "vessel": "USS Nimitz Carrier Strike Group (CVN-68)",
+    "detection_platform": "USS Princeton (CG-59) — AN/SPY-1B Aegis Combat System radar",
+    "prior_tracking": "USS Princeton radar tracked unidentified objects descending from 80,000 ft to near sea-level and returning multiple times over approximately 2 weeks before the intercept",
+    "fravor_aircraft": "F/A-18F Super Hornet, VFA-41 Black Aces",
+    "wingman": "Lt. Commander Jim Slaight (with Lt. Cmdr. Alex Dietrich in second aircraft)",
+    "object_description": "Approximately 40 feet long, white, oblong/'tic-tac' shaped. No wings. No tail. No visible propulsion or exhaust. No infrared signature consistent with jet propulsion. Smooth surface.",
+    "observed_behavior": [
+      "Hovering at approximately 50 feet above ocean surface over a disturbed patch of white water",
+      "Mirroring Fravor's aircraft movement when he attempted to cut off the descent",
+      "Instantaneous acceleration away when Fravor rolled inverted and descended toward it",
+      "Accelerated to beyond visual range in under 2 seconds — estimated cover of 60 miles",
+      "Reappeared on USS Princeton radar at CAP point where Fravor's aircraft was originally stationed — 60 miles away — within seconds"
+    ],
+    "flir_footage": "The famous FLIR1 'Tic Tac video' was captured later that day by Lt. Chad Underwood in a different aircraft, on a different contact in the same area. Fravor was not in the aircraft that recorded the video.",
+    "witnesses": [
+      "Commander David Fravor",
+      "Lt. Commander Jim Slaight",
+      "Lt. Commander Alex Dietrich (second aircraft pilot)",
+      "Lt. J.G. (second aircraft WSO)",
+      "USS Princeton CIC radar operators",
+      "multiple USS Nimitz crew"
+    ]
+  },
+
+  "claims": [
+    {
+      "id": "tic-tac-encounter",
+      "category": "direct observation",
+      "claim": "On November 14, 2004, he observed a 40-foot white oblong object performing flight maneuvers impossible by known human technology, including hovering, instantaneous acceleration, and apparent awareness of his aircraft.",
+      "status": "partially-verified",
+      "notes": "Three other aviators corroborate the encounter. USS Princeton radar independently tracked anomalous objects for weeks. Pentagon confirmed the FLIR video authentic. The object's specific capabilities (instantaneous acceleration, trans-medium) remain unexplained by official investigations."
+    },
+    {
+      "id": "no-known-technology",
+      "category": "technology assessment",
+      "claim": "The object displayed flight characteristics — no visible propulsion, no sonic boom, no exhaust plume, extreme acceleration — that are inconsistent with any known U.S., Russian, or Chinese aerospace technology as of 2004 or today.",
+      "status": "partially-verified",
+      "notes": "AARO's 2024 report does not explain the Nimitz encounter. Consistent with the Five Observables framework Elizondo later formulated."
+    },
+    {
+      "id": "object-awareness",
+      "category": "behavior",
+      "claim": "The object appeared to actively respond to and mirror Fravor's aircraft maneuvers, suggesting either controlled operation or autonomous response capability far exceeding known drone technology.",
+      "status": "unverified",
+      "notes": "Fravor's consistent testimony across dozens of interviews. Corroborated by his wingman."
+    },
+    {
+      "id": "radar-tracking",
+      "category": "electronic detection",
+      "claim": "USS Princeton's Aegis radar system tracked anomalous objects descending from 80,000 ft to near sea-level and returning over a period of approximately 2 weeks prior to the visual intercept.",
+      "status": "partially-verified",
+      "notes": "USS Princeton CIC operators corroborate. The radar system is among the most advanced in service. Some radar anomalies attributed to potential software malfunction by AARO."
+    },
+    {
+      "id": "government-awareness",
+      "category": "government knowledge",
+      "claim": "The incident was formally reported up the chain of command and the data was collected. Senior personnel were aware. It was not treated as significant until years later.",
+      "status": "unverified",
+      "notes": "Fravor has stated this in interviews. The footage's subsequent classification and later release via AATIP/Elizondo suggests formal program interest."
+    },
+    {
+      "id": "congressional-testimony-accuracy",
+      "category": "disclosure",
+      "claim": "His July 2023 congressional testimony was accurate and consistent with his account as given in every interview since 2017.",
+      "status": "verified",
+      "notes": "Cross-referencing his 2017-2023 public accounts with his sworn testimony shows remarkable consistency. No material contradictions have emerged."
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "Decorated Navy Commander with 6,000+ flight hours and 2,000+ carrier landings — highly trained observer",
+      "Three additional aviators corroborate the visual encounter in separate accounts",
+      "USS Princeton radar independently tracked anomalous objects for weeks",
+      "Pentagon confirmed the FLIR1 Nimitz video as authentic Navy footage in April 2019",
+      "Consistency of testimony across 6+ years of public interviews with no material contradictions",
+      "No financial motive — testified without payment, runs catering business",
+      "Congressional testimony under oath in 2023 with no recantation"
+    ],
+    "contradicting": [
+      "AARO (2024) suggested some USS Princeton radar anomalies may have been attributable to radar mode switching software — but did not explain the visual encounter"
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO intelligence officer; co-founder, Sol Foundation",
+      "relationship": "Testified alongside Fravor at the July 26, 2023 House Oversight hearing; Grusch's program-level claims provide broader context for the government awareness Fravor described"
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "Former U.S. Navy F/A-18 pilot; Executive Director, Americans for Safe Aerospace",
+      "relationship": "Testified alongside Fravor at the July 26, 2023 House Oversight hearing; independently corroborates UAP encounter patterns and pilot stigma"
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former Director, AATIP; co-founder, To The Stars Academy",
+      "relationship": "Released the FLIR1 Tic Tac video through AATIP and To The Stars Academy in 2017; the Nimitz encounter was the primary case AATIP investigated"
+    },
+    {
+      "id": "jim-slaight",
+      "name": "Jim Slaight",
+      "role": "Lt. Commander, U.S. Navy (Ret.); Fravor's wingman on November 14, 2004",
+      "relationship": "Flew as Fravor's wingman during the Tic Tac encounter; has corroborated the encounter in interviews and congressional record"
+    },
+    {
+      "id": "alex-dietrich",
+      "name": "Alex Dietrich",
+      "role": "Lt. Commander, U.S. Navy (Ret.); second aircraft pilot",
+      "relationship": "Piloted the second F/A-18 during the Tic Tac encounter; provided corroborating account in 60 Minutes interview (2021) — the first time she went on record publicly"
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "December 16, 2017",
+      "type": "print",
+      "title": "New York Times — Nimitz encounter first public report",
+      "outlet": "The New York Times / AATIP reporting",
+      "notes": "Fravor's encounter confirmed through AATIP reporting; first mainstream public account of the Tic Tac incident"
+    },
+    {
+      "date": "April 2019",
+      "type": "declassification",
+      "title": "Pentagon confirmation of authentic FLIR1 footage",
+      "outlet": "U.S. Department of Defense",
+      "notes": "Pentagon officially acknowledged the FLIR1 Nimitz video as authentic Navy gun-camera footage of unidentified aerial phenomena"
+    },
+    {
+      "date": "July 26, 2023",
+      "type": "congressional-testimony",
+      "title": "House Oversight Subcommittee on National Security — UAP Hearing",
+      "outlet": "U.S. House of Representatives",
+      "notes": "Fravor testified under oath alongside Grusch and Graves; first military aviator to testify under oath about a direct UAP encounter in a modern congressional hearing"
+    },
+    {
+      "date": "2017–ongoing",
+      "type": "media",
+      "title": "Multiple media appearances",
+      "outlet": "60 Minutes, Joe Rogan Experience, NewsNation, CNN, Fox News, and others",
+      "notes": "Sustained public media campaign since 2017; no material contradictions have emerged across years of interviews"
+    }
+  ]
+}

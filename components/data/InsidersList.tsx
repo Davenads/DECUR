@@ -4,6 +4,8 @@ import InsiderProfile from './InsiderProfile';
 import LazarProfile from './LazarProfile';
 import GruschProfile from './GruschProfile';
 import ElizondoProfile from './ElizondoProfile';
+import FravorProfile from './FravorProfile';
+import NellProfile from './NellProfile';
 
 interface InsidersListProps {
   entries: InsiderEntry[];
@@ -24,6 +26,12 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
     }
     if (selectedEntry.id === 'luis-elizondo') {
       return <ElizondoProfile onBack={onBack} />;
+    }
+    if (selectedEntry.id === 'david-fravor') {
+      return <FravorProfile onBack={onBack} />;
+    }
+    if (selectedEntry.id === 'karl-nell') {
+      return <NellProfile onBack={onBack} />;
     }
     return (
       <InsiderProfile

@@ -7,6 +7,8 @@ import burischJson from '../data/burisch.json';
 import lazarJson from '../data/lazar.json';
 import gruschJson from '../data/grusch.json';
 import elizondoJson from '../data/elizondo.json';
+import fravorJson from '../data/fravor.json';
+import nellJson from '../data/nell.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -90,7 +92,27 @@ export const getStaticProps: GetStaticProps = async () => {
     []
   );
 
-  const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents];
+  // Fravor key events (uses 'date' field)
+  const fravorEvents: WBEvent[] = fravorJson.profile.key_events.reduce(
+    (acc: WBEvent[], e: { date: string; event: string }) => {
+      const year = extractYear(e.date);
+      if (year) acc.push({ year, event: e.event, source: 'fravor' });
+      return acc;
+    },
+    []
+  );
+
+  // Nell key events (uses 'date' field)
+  const nellEvents: WBEvent[] = nellJson.profile.key_events.reduce(
+    (acc: WBEvent[], e: { date: string; event: string }) => {
+      const year = extractYear(e.date);
+      if (year) acc.push({ year, event: e.event, source: 'nell' });
+      return acc;
+    },
+    []
+  );
+
+  const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents];
 
   return { props: { entries, insiderEvents } };
 };

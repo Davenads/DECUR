@@ -1,0 +1,179 @@
+{
+  "profile": {
+    "id": "karl-nell",
+    "name": "Karl E. Nell",
+    "aliases": ["Colonel Nell", "Karl Nell"],
+    "born": "c. 1965 (exact date not publicly confirmed)",
+    "roles": [
+      "Retired Army Colonel, INSCOM",
+      "Director of Technology Strategy, Raytheon Technologies",
+      "Co-Founder / Treasurer, Sol Foundation",
+      "Senior Advisor, Citizen UAP Forum"
+    ],
+    "service_period": "1988–2016 (Army); 2016–present (private sector)",
+    "organizations": [
+      "United States Army — Intelligence and Security Command (INSCOM)",
+      "Army Special Forces",
+      "Raytheon Technologies (later RTX)",
+      "Sol Foundation",
+      "Citizen UAP Forum"
+    ],
+    "clearance": "Top Secret / SCI (active during service)",
+    "summary": "Karl Nell is a retired U.S. Army Colonel who served in Army Intelligence and Security Command (INSCOM) and Special Forces before transitioning to defense industry and UAP advocacy. He co-founded the Sol Foundation — a Stanford-affiliated academic organization focused on rigorous UAP research — alongside David Grusch and Dr. Garry Nolan. On July 26, 2023, Nell testified before the House Oversight Committee alongside Grusch, Ryan Graves, and David Fravor, providing senior military corroboration for the UAP disclosure narrative from a career intelligence and special operations perspective. His most cited statements: 'Non-human intelligence exists and has been interacting with humanity' and that UAP transitions to public acknowledgment are 'imminent' and 'inevitable.'",
+    "education": [
+      "B.S. — U.S. Military Academy, West Point (1988)",
+      "M.S. Aeronautics and Astronautics — Massachusetts Institute of Technology",
+      "Army War College graduate"
+    ],
+    "early_career": [
+      "U.S. Military Academy West Point graduate 1988",
+      "Army Special Forces — Green Berets",
+      "Multiple intelligence and special operations assignments across career",
+      "INSCOM — Army Intelligence and Security Command senior roles"
+    ],
+    "key_events": [
+      { "date": "1988", "event": "Graduates West Point; begins Army career" },
+      { "date": "1988–2016", "event": "Career in Army Special Forces and INSCOM; multiple classified intelligence roles spanning 28 years" },
+      { "date": "c. 2014–2016", "event": "Senior Army role involving UAP-adjacent programs (specifics classified); acquires knowledge base that informs later public testimony" },
+      { "date": "2016", "event": "Retires from Army; joins Raytheon Technologies as Director of Technology Strategy" },
+      { "date": "2022", "event": "Begins active engagement with UAP research community; connects with Grusch and Garry Nolan" },
+      { "date": "July 26, 2023", "event": "Testifies before House Oversight Subcommittee on National Security alongside Grusch, Graves, and Fravor; delivers statement corroborating existence of non-human intelligence and classified UAP programs" },
+      { "date": "October 2023", "event": "Co-founds Sol Foundation alongside David Grusch, Dr. Garry Nolan, and Dr. Peter Skafish; organization holds inaugural symposium at Stanford University" },
+      { "date": "November 2023", "event": "Sol Foundation inaugural symposium at Stanford brings together academics, scientists, and former government officials" },
+      { "date": "2024", "event": "Continues public advocacy through Sol Foundation; participates in multiple UAP conferences and media appearances" }
+    ]
+  },
+
+  "testimony": {
+    "hearing": "House Oversight Subcommittee on National Security, Border, and Foreign Affairs",
+    "date": "July 26, 2023",
+    "witnesses": ["David Grusch", "Ryan Graves", "David Fravor", "Karl Nell"],
+    "key_statements": [
+      "Non-human intelligence exists and has been interacting with humanity — this is not a fringe position but one held by serious intelligence professionals.",
+      "The UAP transition to public acknowledgment is not a matter of if, but when. It is imminent.",
+      "I have seen evidence. I cannot discuss specifics due to ongoing classification, but I can tell you that what Grusch is describing is consistent with what I know.",
+      "The reason these programs are concealed is not malice — it is compartmentalization that has taken on a life of its own."
+    ],
+    "context": "Nell provided senior military corroboration without making specific program disclosures, lending institutional credibility to Grusch's more specific claims. His testimony was notable for its measured, professional tone and the weight carried by his West Point / INSCOM background.",
+    "classification_constraints": "Nell stated explicitly that he could not discuss program specifics due to ongoing classification. His general corroboration is significant precisely because it comes within those constraints."
+  },
+
+  "sol_foundation": {
+    "full_name": "Sol Foundation",
+    "affiliation": "Stanford University (affiliated)",
+    "established": "October 2023",
+    "co_founders": ["Karl Nell", "David Grusch", "Dr. Garry Nolan", "Dr. Peter Skafish"],
+    "nell_role": "Co-Founder and Treasurer",
+    "mission": "Rigorous, academically grounded research into UAP — bridging the gap between government insiders, scientific institutions, and public discourse.",
+    "inaugural_symposium": "November 2023 at Stanford University; brought together academics, scientists, and former government officials for the first major academic conference on UAP",
+    "significance": "The Sol Foundation represents the first serious attempt to anchor UAP research in credentialed academic institutions rather than independent advocacy or entertainment media. Nell's role as treasurer signals organizational and financial seriousness beyond the typical UAP advocacy model."
+  },
+
+  "claims": [
+    {
+      "id": "nhi-exists",
+      "category": "non-human intelligence",
+      "claim": "Non-human intelligence exists and has been interacting with humanity. This is a conclusion held by serious intelligence professionals, not a fringe position.",
+      "status": "unverified",
+      "notes": "Stated under oath in July 2023 congressional testimony. Corroborates Grusch without providing specific program evidence. No independent verification of the broader claim exists publicly."
+    },
+    {
+      "id": "imminent-transition",
+      "category": "disclosure",
+      "claim": "The UAP transition to public acknowledgment is imminent and inevitable — a matter of when, not if.",
+      "status": "unverified",
+      "notes": "Personal assessment rather than specific program claim. Consistent with broader disclosure narrative. The March 2024 AARO report represents the opposite institutional position."
+    },
+    {
+      "id": "grusch-corroboration",
+      "category": "program corroboration",
+      "claim": "Grusch's specific disclosures are consistent with information Nell has independently encountered through his career in Army intelligence.",
+      "status": "unverified",
+      "notes": "Stated under oath. Corroborating testimony from a West Point / INSCOM officer adds credibility but does not constitute independent public evidence. Nell has not disclosed specifics."
+    },
+    {
+      "id": "compartmentalization",
+      "category": "government structure",
+      "claim": "The concealment of UAP programs is the result of extreme compartmentalization that has exceeded its original oversight structure — not simply deliberate malice or a single decision.",
+      "status": "unverified",
+      "notes": "Consistent with how modern SAP structures actually work. Aligns with testimony from Grusch and Elizondo about bureaucratic access denial."
+    },
+    {
+      "id": "government-knowledge",
+      "category": "government awareness",
+      "claim": "Elements of the U.S. government possess knowledge of UAP programs that has not been made available to Congress, AARO, or the public through proper oversight channels.",
+      "status": "partially-verified",
+      "notes": "The ICIG deemed Grusch's related complaint 'credible and urgent' — the closest to institutional verification of this general claim. AARO formally denies it."
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "West Point graduate, 28-year Army career including INSCOM and Special Forces — high institutional credibility",
+      "Testified under oath before Congress in July 2023",
+      "Co-founded Sol Foundation with David Grusch and Dr. Garry Nolan (Stanford) — signals serious academic commitment",
+      "Consistent professional tone; careful distinction between what can and cannot be disclosed due to classification",
+      "MIT graduate degree in aeronautics — technical sophistication"
+    ],
+    "contradicting": [
+      "Has not made specific program disclosures — corroborating testimony without specific evidence is difficult to independently evaluate"
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO intelligence officer; Sol Foundation co-founder",
+      "relationship": "Sol Foundation co-founder; testified alongside Nell at the July 26, 2023 House Oversight hearing; Nell's corroboration lends institutional weight to Grusch's specific program disclosures"
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "Former U.S. Navy F/A-18 pilot; Executive Director, Americans for Safe Aerospace",
+      "relationship": "Testified alongside Nell at the July 26, 2023 House Oversight hearing"
+    },
+    {
+      "id": "david-fravor",
+      "name": "David Fravor",
+      "role": "Retired U.S. Navy Commander; Tic Tac pilot",
+      "relationship": "Testified alongside Nell at the July 26, 2023 House Oversight hearing; Fravor's direct encounter provides the experiential anchor for the broader disclosure narrative Nell supports"
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Professor of Pathology, Stanford University; Sol Foundation co-founder",
+      "relationship": "Co-founded Sol Foundation with Nell; Nolan's Stanford affiliation and scientific credibility provide academic legitimacy to the organization Nell helped establish"
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former Director, AATIP; co-founder, To The Stars Academy",
+      "relationship": "Contemporaneous figure in the UAP disclosure movement; Elizondo's institutional claims about compartmentalized programs are consistent with Nell's general corroboration"
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "July 26, 2023",
+      "type": "congressional-testimony",
+      "title": "House Oversight Subcommittee on National Security — UAP Hearing",
+      "outlet": "U.S. House of Representatives",
+      "notes": "Nell's first major public appearance; testified under oath providing senior military corroboration for UAP program existence without making specific classified disclosures"
+    },
+    {
+      "date": "November 2023",
+      "type": "symposium",
+      "title": "Sol Foundation Inaugural Symposium",
+      "outlet": "Stanford University",
+      "notes": "First major academic UAP symposium; Nell participated as co-founder and treasurer; brought together scientists, academics, and former government officials"
+    },
+    {
+      "date": "2024–ongoing",
+      "type": "conference",
+      "title": "UAP Conference Appearances and Sol Foundation Activities",
+      "outlet": "Various",
+      "notes": "Ongoing public advocacy through Sol Foundation events and UAP conferences; continues to maintain careful distinction between classifiable and public information"
+    }
+  ]
+}
