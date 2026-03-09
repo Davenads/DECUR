@@ -46,23 +46,23 @@ const Footer: FC = () => {
             </ul>
           </div>
 
-          {/* Data categories */}
+          {/* Whistleblowers */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Featured Whistleblowers</h3>
+            <h3 className="text-lg font-medium mb-4">Whistleblowers</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/data" className="text-gray-400 hover:text-white transition-colors">
-                  Dr. Dan Burisch
+                <Link href="/data?category=whistleblowers" className="text-gray-400 hover:text-white transition-colors">
+                  Dan Burisch
+                </Link>
+              </li>
+              <li>
+                <Link href="/data?category=whistleblowers" className="text-gray-400 hover:text-white transition-colors">
+                  Bob Lazar
                 </Link>
               </li>
               <li>
                 <span className="text-gray-500">
                   David Grusch (Coming Soon)
-                </span>
-              </li>
-              <li>
-                <span className="text-gray-500">
-                  Luis Elizondo (Coming Soon)
                 </span>
               </li>
             </ul>
@@ -74,11 +74,8 @@ const Footer: FC = () => {
             &copy; {currentYear} DECUR. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
-            <Link href="/about" className="text-gray-400 hover:text-white text-sm mx-2">
-              Privacy Policy
-            </Link>
-            <Link href="/about" className="text-gray-400 hover:text-white text-sm mx-2">
-              Terms of Service
+            <Link href="/sources" className="text-gray-400 hover:text-white text-sm mx-2">
+              Data Sources
             </Link>
             <Link href="/about" className="text-gray-400 hover:text-white text-sm mx-2">
               Contact
