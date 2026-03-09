@@ -14,7 +14,14 @@
     "lint:ts": "eslint --ext .ts,.tsx .",
     "check": "npm run lint && npm run typecheck",
     "transcript:download": "ts-node ytdl/downloadTranscript.ts",
-    "transcript:import": "ts-node ytdl/importTranscripts.ts"
+    "transcript:import": "ts-node ytdl/importTranscripts.ts",
+    "gerb:fetch": "node scripts/gerb/fetch-channel.js",
+    "gerb:transcripts": "node scripts/gerb/fetch-transcripts.js",
+    "gerb:extract": "node scripts/gerb/extract.js",
+    "gerb:review": "node scripts/gerb/review.js",
+    "gerb:review:summary": "node scripts/gerb/review.js --summary",
+    "gerb:compile": "node scripts/gerb/compile-contributions.js",
+    "gerb:pipeline": "node scripts/gerb/pipeline.js"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -34,6 +41,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/express": "^5.0.6",
     "@types/fs-extra": "^11.0.4",
@@ -50,6 +58,7 @@
     "postcss-load-config": "^5.0.2",
     "tailwindcss": "^3.3.5",
     "ts-node": "^10.9.1",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "youtube-transcript": "^1.2.1"
   }
 }

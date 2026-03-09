@@ -56,3 +56,8 @@ RESTRUCTURING-PLAN.md
 /YTDL_Scripts/output/
 /YTDL_Scripts/downloads/
 /YTDL_Scripts/*.log
+# Gerb channel pipeline - raw data (large, machine-generated)
+/data/channels/gerb/transcripts/*.json
+/data/channels/gerb/extracted/*.json
+/data/channels/gerb/approved/*.json
+# Keep index, contributions, and .gitkeep files
