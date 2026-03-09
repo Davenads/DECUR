@@ -31,18 +31,21 @@ function get(url) {
 }
 
 async function fetchAllVideos(channelId) {
+  // Use the uploads playlist (UC -> UU) instead of search endpoint.
+  // The search API caps at ~500 results and is incomplete; playlistItems
+  // returns the full unfiltered upload history.
+  const uploadsPlaylistId = 'UU' + channelId.slice(2);
+
   const videos = [];
   let pageToken = '';
   let page = 0;
 
   do {
     const url = [
-      'https://www.googleapis.com/youtube/v3/search',
-      `?channelId=${channelId}`,
-      '&type=video',
+      'https://www.googleapis.com/youtube/v3/playlistItems',
+      `?playlistId=${uploadsPlaylistId}`,
       '&part=snippet',
       '&maxResults=50',
-      '&order=date',
       pageToken ? `&pageToken=${pageToken}` : '',
       `&key=${API_KEY}`,
     ].join('');
@@ -54,12 +57,13 @@ async function fetchAllVideos(channelId) {
     }
 
     for (const item of res.items ?? []) {
+      const snippet = item.snippet;
       videos.push({
-        video_id:      item.id.videoId,
-        title:         item.snippet.title,
-        published_at:  item.snippet.publishedAt,
-        description:   item.snippet.description?.slice(0, 300) ?? '',
-        thumbnail_url: item.snippet.thumbnails?.medium?.url ?? '',
+        video_id:      snippet.resourceId.videoId,
+        title:         snippet.title,
+        published_at:  snippet.publishedAt,
+        description:   snippet.description?.slice(0, 300) ?? '',
+        thumbnail_url: snippet.thumbnails?.medium?.url ?? '',
         transcript_fetched:  false,
         extraction_complete: false,
       });
