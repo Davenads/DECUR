@@ -1,4 +1,4 @@
-import { FC, useRef, useCallback, useState } from 'react';
+import { FC, useRef, useCallback, useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
 
@@ -48,13 +48,26 @@ const NetworkGraph: FC = () => {
     new Set(Object.keys(TYPE_LABELS) as NodeType[])
   );
 
-  // Filter graph data by active type toggles
-  const filteredNodes = graphData.nodes.filter(n => activeTypes.has(n.type));
-  const filteredNodeIds = new Set(filteredNodes.map(n => n.id));
-  const filteredLinks = graphData.links.filter(
-    l => filteredNodeIds.has(resolveId(l.source)) && filteredNodeIds.has(resolveId(l.target))
+  // Memoize filtered data — only recompute when activeTypes changes, NOT on every hover re-render.
+  // Stable object references prevent ForceGraph2D from reheating the physics simulation.
+  const filteredNodes = useMemo(
+    () => graphData.nodes.filter(n => activeTypes.has(n.type)),
+    [activeTypes]
   );
-  const filtered = { nodes: filteredNodes, links: filteredLinks };
+  const filteredNodeIds = useMemo(
+    () => new Set(filteredNodes.map(n => n.id)),
+    [filteredNodes]
+  );
+  const filteredLinks = useMemo(
+    () => graphData.links.filter(
+      l => filteredNodeIds.has(resolveId(l.source)) && filteredNodeIds.has(resolveId(l.target))
+    ),
+    [filteredNodeIds]
+  );
+  const filtered = useMemo(
+    () => ({ nodes: filteredNodes, links: filteredLinks }),
+    [filteredNodes, filteredLinks]
+  );
 
   const handleNodeHover = useCallback((node: object | null) => {
     const gNode = node as GraphNode | null;
