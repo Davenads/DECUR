@@ -276,12 +276,18 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
       {/* Swimlane scatter panel */}
       <div>
         <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide font-medium">Insider Events</p>
-        <div style={{ height: 130 }} className="relative">
-          {/* Row labels */}
-          <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-around pointer-events-none z-10" style={{ width: 8 }}>
+        <div style={{ height: 130 }} className="flex items-stretch">
+          {/* Row labels column — fixed width, never overlaps the chart */}
+          <div className="flex flex-col justify-around shrink-0 pr-2" style={{ width: 56 }}>
+            <span className="text-xs font-medium text-right leading-none" style={{ color: ELIZONDO_COLOR }}>Elizondo</span>
+            <span className="text-xs font-medium text-right leading-none" style={{ color: GRUSCH_COLOR }}>Grusch</span>
+            <span className="text-xs font-medium text-right leading-none" style={{ color: BURISCH_COLOR }}>Burisch</span>
+            <span className="text-xs font-medium text-right leading-none" style={{ color: LAZAR_COLOR }}>Lazar</span>
           </div>
+          {/* Chart — takes remaining width */}
+          <div style={{ flex: 1, height: 130 }}>
           <ResponsiveContainer width="100%" height="100%">
-            <ScatterChart margin={{ top: 8, right: 4, left: -20, bottom: 8 }}>
+            <ScatterChart margin={{ top: 8, right: 4, left: 0, bottom: 8 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
               <XAxis
                 dataKey="x"
@@ -321,30 +327,13 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
               />
             </ScatterChart>
           </ResponsiveContainer>
-          {/* Inline row labels positioned over the chart */}
+          </div>
+          {/* DELETED: old absolute-positioned labels that overlapped dots on mobile */}
           <div
-            className="absolute pointer-events-none"
+            className="hidden"
             style={{ left: 10, top: '6%' }}
           >
             <span className="text-xs font-medium" style={{ color: ELIZONDO_COLOR }}>Elizondo</span>
-          </div>
-          <div
-            className="absolute pointer-events-none"
-            style={{ left: 10, top: '32%' }}
-          >
-            <span className="text-xs font-medium" style={{ color: GRUSCH_COLOR }}>Grusch</span>
-          </div>
-          <div
-            className="absolute pointer-events-none"
-            style={{ left: 10, top: '57%' }}
-          >
-            <span className="text-xs font-medium" style={{ color: BURISCH_COLOR }}>Burisch</span>
-          </div>
-          <div
-            className="absolute pointer-events-none"
-            style={{ left: 10, bottom: '8%' }}
-          >
-            <span className="text-xs font-medium" style={{ color: LAZAR_COLOR }}>Lazar</span>
           </div>
         </div>
       </div>
