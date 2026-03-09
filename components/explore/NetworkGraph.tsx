@@ -17,14 +17,26 @@ const TYPE_LABELS: Record<NodeType, string> = {
   technology:   'Technology',
 };
 
-/* ─── Highlighted node state ─────────────────────────────────── */
+/* ─── Helpers ────────────────────────────────────────────────── */
+
+// force-graph mutates source/target from strings → resolved node objects at runtime.
+// Always extract the string ID regardless of which form it is.
+const resolveId = (val: string | GraphNode | object): string =>
+  typeof val === 'string' ? val : (val as GraphNode).id;
+
+const linkKey = (link: GraphLink | object): string => {
+  const l = link as GraphLink;
+  return `${resolveId(l.source)}-${resolveId(l.target)}`;
+};
+
+/* ─── Highlight state ────────────────────────────────────────── */
 
 interface HighlightState {
-  nodes: Set<string>;
-  links: Set<GraphLink>;
+  nodes: Set<string>;   // highlighted node IDs
+  linkKeys: Set<string>; // "sourceId-targetId" keys
 }
 
-const EMPTY_HIGHLIGHT: HighlightState = { nodes: new Set(), links: new Set() };
+const EMPTY_HIGHLIGHT: HighlightState = { nodes: new Set(), linkKeys: new Set() };
 
 /* ─── Component ──────────────────────────────────────────────── */
 
@@ -40,32 +52,41 @@ const NetworkGraph: FC = () => {
   const filteredNodes = graphData.nodes.filter(n => activeTypes.has(n.type));
   const filteredNodeIds = new Set(filteredNodes.map(n => n.id));
   const filteredLinks = graphData.links.filter(
-    l => filteredNodeIds.has(l.source as string) && filteredNodeIds.has(l.target as string)
+    l => filteredNodeIds.has(resolveId(l.source)) && filteredNodeIds.has(resolveId(l.target))
   );
   const filtered = { nodes: filteredNodes, links: filteredLinks };
 
-  const handleNodeHover = useCallback((node: GraphNode | null) => {
-    setHoveredNode(node ?? null);
-    if (!node) {
+  const handleNodeHover = useCallback((node: object | null) => {
+    const gNode = node as GraphNode | null;
+    setHoveredNode(gNode ?? null);
+    if (!gNode) {
       setHighlight(EMPTY_HIGHLIGHT);
       return;
     }
-    const connectedLinks = filteredLinks.filter(
-      l => (l.source as string) === node.id || (l.target as string) === node.id
-    );
-    const connectedNodeIds = new Set<string>([node.id]);
-    connectedLinks.forEach(l => {
-      connectedNodeIds.add(l.source as string);
-      connectedNodeIds.add(l.target as string);
+    const nodeId = gNode.id;
+    // filteredLinks may have already-resolved objects from a previous render cycle
+    const connectedLinks = filteredLinks.filter(l => {
+      const src = resolveId(l.source);
+      const tgt = resolveId(l.target);
+      return src === nodeId || tgt === nodeId;
     });
-    setHighlight({ nodes: connectedNodeIds, links: new Set(connectedLinks) });
+    const connectedNodeIds = new Set<string>([nodeId]);
+    const keys = new Set<string>();
+    connectedLinks.forEach(l => {
+      const src = resolveId(l.source);
+      const tgt = resolveId(l.target);
+      connectedNodeIds.add(src);
+      connectedNodeIds.add(tgt);
+      keys.add(`${src}-${tgt}`);
+    });
+    setHighlight({ nodes: connectedNodeIds, linkKeys: keys });
   }, [filteredLinks]);
 
   const toggleType = (type: NodeType) => {
     setActiveTypes(prev => {
       const next = new Set(prev);
       if (next.has(type)) {
-        if (next.size > 1) next.delete(type); // always keep at least one active
+        if (next.size > 1) next.delete(type);
       } else {
         next.add(type);
       }
@@ -74,15 +95,15 @@ const NetworkGraph: FC = () => {
   };
 
   const nodeCanvasObject = useCallback(
-    (node: GraphNode, ctx: CanvasRenderingContext2D, globalScale: number) => {
-      const id = node.id as string;
+    (node: object, ctx: CanvasRenderingContext2D, globalScale: number) => {
+      const gNode = node as GraphNode;
+      const id = gNode.id;
       const isHighlighted = highlight.nodes.size === 0 || highlight.nodes.has(id);
-      const baseRadius = Math.sqrt((node.val ?? 1) * 6);
-      const color = NODE_COLORS[node.type] ?? '#9ca3af';
-      const x = node.x as number;
-      const y = node.y as number;
+      const baseRadius = Math.sqrt((gNode.val ?? 1) * 6);
+      const color = NODE_COLORS[gNode.type] ?? '#9ca3af';
+      const x = gNode.x as number;
+      const y = gNode.y as number;
 
-      // Node circle
       ctx.beginPath();
       ctx.arc(x, y, baseRadius, 0, 2 * Math.PI);
       ctx.fillStyle = isHighlighted ? color : `${color}40`;
@@ -94,31 +115,44 @@ const NetworkGraph: FC = () => {
         ctx.stroke();
       }
 
-      // Label — always show for highlighted, show above a scale threshold for others
       if (isHighlighted || globalScale > 1.4) {
         const fontSize = Math.max(10 / globalScale, 2.5);
         ctx.font = `${fontSize}px Inter, sans-serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
         ctx.fillStyle = isHighlighted ? '#1f2937' : '#9ca3af';
-        ctx.fillText(node.name, x, y + baseRadius + 2 / globalScale);
+        ctx.fillText(gNode.name, x, y + baseRadius + 2 / globalScale);
       }
     },
     [highlight]
   );
 
   const linkColor = useCallback(
-    (link: GraphLink) => {
-      if (highlight.nodes.size === 0) return '#e5e7eb';
-      return highlight.links.has(link) ? '#0077cc' : '#f3f4f6';
+    (link: object) => {
+      if (highlight.nodes.size === 0) return '#d1d5db';
+      return highlight.linkKeys.has(linkKey(link)) ? '#0077cc' : '#e9eaec';
     },
     [highlight]
   );
 
   const linkWidth = useCallback(
-    (link: GraphLink) => (highlight.links.has(link) ? 2 : 1),
+    (link: object) => (highlight.nodes.size > 0 && highlight.linkKeys.has(linkKey(link)) ? 2.5 : 1),
     [highlight]
   );
+
+  const particleWidth = useCallback(
+    (link: object) => (highlight.nodes.size > 0 && highlight.linkKeys.has(linkKey(link)) ? 2 : 0),
+    [highlight]
+  );
+
+  // Count connections for the hover info bar (resolve IDs properly)
+  const hoveredConnectionCount = hoveredNode
+    ? filteredLinks.filter(l => {
+        const src = resolveId(l.source);
+        const tgt = resolveId(l.target);
+        return src === hoveredNode.id || tgt === hoveredNode.id;
+      }).length
+    : 0;
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
@@ -156,16 +190,14 @@ const NetworkGraph: FC = () => {
           width={containerRef.current?.clientWidth ?? 800}
           height={520}
           backgroundColor="#fafafa"
-          nodeCanvasObject={nodeCanvasObject as (node: object, ctx: CanvasRenderingContext2D, scale: number) => void}
+          nodeCanvasObject={nodeCanvasObject}
           nodeCanvasObjectMode={() => 'replace'}
-          linkColor={linkColor as (link: object) => string}
-          linkWidth={linkWidth as (link: object) => number}
-          onNodeHover={handleNodeHover as (node: object | null) => void}
+          linkColor={linkColor}
+          linkWidth={linkWidth}
+          onNodeHover={handleNodeHover}
           linkDirectionalParticles={2}
           linkDirectionalParticleSpeed={0.004}
-          linkDirectionalParticleWidth={(link: object) =>
-            highlight.links.has(link as GraphLink) ? 2 : 0
-          }
+          linkDirectionalParticleWidth={particleWidth}
           cooldownTicks={120}
           nodeRelSize={4}
           d3AlphaDecay={0.02}
@@ -184,13 +216,7 @@ const NetworkGraph: FC = () => {
             <span className="text-sm font-semibold text-gray-800">{hoveredNode.name}</span>
             <span className="text-xs text-gray-400 capitalize">{TYPE_LABELS[hoveredNode.type]}</span>
             <span className="text-xs text-gray-300">·</span>
-            <span className="text-xs text-gray-400">
-              {filteredLinks.filter(
-                l =>
-                  (l.source as string) === hoveredNode.id ||
-                  (l.target as string) === hoveredNode.id
-              ).length} connections
-            </span>
+            <span className="text-xs text-gray-400">{hoveredConnectionCount} connections</span>
           </div>
         ) : (
           <p className="text-xs text-gray-400">Hover a node to inspect connections</p>
