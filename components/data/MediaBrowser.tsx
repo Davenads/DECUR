@@ -1,5 +1,6 @@
-import { useState, useMemo, FC, ChangeEvent } from 'react';
+import { useState, useMemo, FC } from 'react';
 import { TimelineEntry } from '../../lib/useTimelineData';
+import BrowserLayout from './shared/BrowserLayout';
 
 const TYPE_LABELS: Record<string, string> = {
   'documentaries': 'Documentary',
@@ -10,6 +11,12 @@ const TYPE_COLORS: Record<string, string> = {
   'documentaries': 'bg-orange-100 text-orange-800',
   'books-documents': 'bg-teal-100 text-teal-800',
 };
+
+const TYPE_FILTER_OPTIONS = [
+  { value: 'all',              label: 'All Types' },
+  { value: 'documentaries',    label: 'Documentaries' },
+  { value: 'books-documents',  label: 'Books & Documents' },
+];
 
 interface Props { entries: TimelineEntry[]; }
 
@@ -31,38 +38,15 @@ const MediaBrowser: FC<Props> = ({ entries }) => {
     e.categories.find(c => ['documentaries', 'books-documents'].includes(c)) ?? e.categories[0];
 
   return (
-    <div>
-      <h2 className="text-2xl font-bold font-heading mb-2">Media & Documents</h2>
-      <p className="text-gray-500 text-sm mb-6">
-        {entries.length} documentaries, books, and official documents related to UAP research and disclosure.
-      </p>
-
-      <div className="flex flex-col sm:flex-row gap-3 mb-6">
-        <div className="relative flex-1">
-          <input
-            type="text"
-            placeholder="Search media..."
-            value={search}
-            onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
-            className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
-        <select
-          value={selectedType}
-          onChange={e => setSelectedType(e.target.value)}
-          className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary bg-white"
-        >
-          <option value="all">All Types</option>
-          <option value="documentaries">Documentaries</option>
-          <option value="books-documents">Books & Documents</option>
-        </select>
-      </div>
-
-      <p className="text-xs text-gray-400 mb-4">{filtered.length} results</p>
-
+    <BrowserLayout
+      title="Media & Documents"
+      description={`${entries.length} documentaries, books, and official documents related to UAP research and disclosure.`}
+      searchValue={search}
+      onSearchChange={setSearch}
+      searchPlaceholder="Search media..."
+      filters={[{ value: selectedType, onChange: setSelectedType, options: TYPE_FILTER_OPTIONS }]}
+      resultCount={filtered.length}
+    >
       <div className="space-y-3">
         {filtered.map((entry: TimelineEntry) => {
           const type = primaryType(entry);
@@ -97,7 +81,7 @@ const MediaBrowser: FC<Props> = ({ entries }) => {
           );
         })}
       </div>
-    </div>
+    </BrowserLayout>
   );
 };
 

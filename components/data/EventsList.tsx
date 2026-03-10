@@ -1,5 +1,6 @@
-import { useState, useMemo, FC, ChangeEvent } from 'react';
+import { useState, useMemo, FC } from 'react';
 import { TimelineEntry } from '../../lib/useTimelineData';
+import BrowserLayout from './shared/BrowserLayout';
 
 const CATEGORY_COLORS: Record<string, string> = {
   'famous-cases': 'bg-red-100 text-red-800',
@@ -63,64 +64,45 @@ const EventsList: FC<Props> = ({ entries, sourceFilter }) => {
   const primaryCat = (e: TimelineEntry) =>
     e.categories.find(c => ['famous-cases', 'sightings'].includes(c)) ?? e.categories[0];
 
+  const sortButton = (
+    <button
+      onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
+      className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-800 transition-colors"
+      title={sortOrder === 'asc' ? 'Currently: oldest first' : 'Currently: newest first'}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={sortOrder === 'asc' ? 'M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12' : 'M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4'} />
+      </svg>
+      {sortOrder === 'asc' ? 'Oldest first' : 'Newest first'}
+    </button>
+  );
+
   return (
-    <div>
-      <h2 className="text-2xl font-bold font-heading mb-2">Historical Events</h2>
-      <p className="text-gray-500 text-sm mb-6">
-        {entries.length} documented cases and sightings.
-      </p>
-
-      {/* Filters row */}
-      <div className="flex flex-col sm:flex-row gap-3 mb-3">
-        <div className="relative flex-1">
-          <input
-            type="text"
-            placeholder="Search events..."
-            value={search}
-            onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
-            className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
-
-        <select
-          value={selectedCategory}
-          onChange={e => setSelectedCategory(e.target.value)}
-          className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary bg-white"
-        >
-          <option value="all">All Types</option>
-          <option value="famous-cases">Famous Cases</option>
-          <option value="sightings">Sightings</option>
-        </select>
-
-        <select
-          value={era}
-          onChange={e => setEra(e.target.value)}
-          className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary bg-white"
-        >
-          {ERA_OPTIONS.map(o => (
-            <option key={o.value} value={o.value}>{o.label}</option>
-          ))}
-        </select>
-      </div>
-
-      {/* Results row */}
-      <div className="flex items-center justify-between mb-4">
-        <p className="text-xs text-gray-400">{filtered.length} results</p>
-        <button
-          onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
-          className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-800 transition-colors"
-          title={sortOrder === 'asc' ? 'Currently: oldest first' : 'Currently: newest first'}
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={sortOrder === 'asc' ? 'M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12' : 'M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4'} />
-          </svg>
-          {sortOrder === 'asc' ? 'Oldest first' : 'Newest first'}
-        </button>
-      </div>
-
+    <BrowserLayout
+      title="Historical Events"
+      description={`${entries.length} documented cases and sightings.`}
+      searchValue={search}
+      onSearchChange={setSearch}
+      searchPlaceholder="Search events..."
+      filters={[
+        {
+          value: selectedCategory,
+          onChange: setSelectedCategory,
+          options: [
+            { value: 'all',           label: 'All Types' },
+            { value: 'famous-cases',  label: 'Famous Cases' },
+            { value: 'sightings',     label: 'Sightings' },
+          ],
+        },
+        {
+          value: era,
+          onChange: setEra,
+          options: ERA_OPTIONS,
+        },
+      ]}
+      headerExtra={sortButton}
+      resultCount={filtered.length}
+    >
       <div className="space-y-3">
         {filtered.map(entry => {
           const cat = primaryCat(entry);
@@ -169,7 +151,7 @@ const EventsList: FC<Props> = ({ entries, sourceFilter }) => {
           );
         })}
       </div>
-    </div>
+    </BrowserLayout>
   );
 };
 
