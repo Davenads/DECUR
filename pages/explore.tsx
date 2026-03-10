@@ -10,6 +10,7 @@ import elizondoJson from '../data/elizondo.json';
 import fravorJson from '../data/fravor.json';
 import nellJson from '../data/nell.json';
 import nolanJson from '../data/nolan.json';
+import puthoffJson from '../data/puthoff.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -114,6 +115,16 @@ export const getStaticProps: GetStaticProps = async () => {
       []
     );
 
+    // Puthoff key events
+    const puthoffEvents: WBEvent[] = puthoffJson.profile.key_events.reduce(
+      (acc: WBEvent[], e: { date: string; event: string }) => {
+        const year = extractYear(e.date);
+        if (year) acc.push({ year, event: e.event, source: 'puthoff' });
+        return acc;
+      },
+      []
+    );
+
     // Nolan key events (uses 'date' field)
     const nolanEvents: WBEvent[] = nolanJson.profile.key_events.reduce(
       (acc: WBEvent[], e: { date: string; event: string }) => {
@@ -124,7 +135,7 @@ export const getStaticProps: GetStaticProps = async () => {
       []
     );
 
-    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents];
+    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents];
 
     return { props: { entries, insiderEvents }, revalidate: 3600 };
   } catch (error) {

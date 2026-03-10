@@ -60,6 +60,18 @@
     "data_file": "grusch.json"
   },
   {
+    "id": "hal-puthoff",
+    "name": "Dr. Harold E. Puthoff",
+    "aliases": ["Hal Puthoff", "H.E. Puthoff"],
+    "role": "Director, STARGATE Remote Viewing Program; Founder, EarthTech International; TTSA Co-Founder",
+    "period": "1960–present",
+    "affiliation": "NSA, SRI International, EarthTech International, To The Stars Academy",
+    "summary": "Physicist with a 50-year thread through U.S. government exotic research: NSA employee (1960s), director of the CIA/DIA-funded STARGATE remote viewing program at SRI International (1972-1985), author of at least 6 of the 38 Pentagon-contracted AAWSAP Defense Intelligence Reference Documents on warp drives and traversable wormholes (2008-2010), and TTSA co-founder alongside Luis Elizondo (2017). The richest verifiable government document trail of any UAP research figure.",
+    "status": "detailed",
+    "tags": ["STARGATE", "Remote Viewing", "SRI International", "AAWSAP", "DIRDs", "Metric Engineering", "Zero-Point Energy", "To The Stars Academy", "NSA", "EarthTech"],
+    "data_file": "puthoff.json"
+  },
+  {
     "id": "garry-nolan",
     "name": "Dr. Garry Nolan",
     "aliases": ["Gary Nolan", "Garry P. Nolan"],

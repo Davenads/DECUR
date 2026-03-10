@@ -1,0 +1,287 @@
+{
+  "profile": {
+    "id": "hal-puthoff",
+    "name": "Dr. Harold E. Puthoff",
+    "aliases": ["Hal Puthoff", "H.E. Puthoff"],
+    "born": "June 20, 1936",
+    "roles": [
+      "Director, STARGATE Remote Viewing Program, SRI International (1972–1985)",
+      "Founder and Director, EarthTech International / Institute for Advanced Studies at Austin",
+      "Co-Founder, To The Stars Academy of Arts and Science",
+      "Author, AAWSAP Defense Intelligence Reference Documents (DIRDs)"
+    ],
+    "service_period": "1960–present",
+    "organizations": [
+      "NSA — Signals Intelligence (1960–1963, employee)",
+      "Stanford Research Institute (SRI International) — Physics and Electronics (1971–1985)",
+      "EarthTech International (1991–present)",
+      "Institute for Advanced Studies at Austin (IASA)",
+      "To The Stars Academy of Arts and Science"
+    ],
+    "clearance": "Top Secret / SCI (held during STARGATE and AAWSAP work; current status unconfirmed)",
+    "summary": "Dr. Harold Puthoff is a physicist whose career spans NSA signals intelligence, Stanford University electrical engineering, CIA/DIA-sponsored research at SRI International, and decades of theoretical work on exotic propulsion and vacuum energy at EarthTech International. He directed the STARGATE remote viewing program from 1972 to 1985 — a genuine, CIA and DIA-funded scientific program eventually declassified in 1995 with more than 270 pages of SRI reports. He authored at least six of the 38 Defense Intelligence Reference Documents (DIRDs) commissioned under the AAWSAP program — Pentagon-contracted technical papers on traversable wormholes, warp drives, and vacuum energy — representing the richest declassified government document trail of any UAP research figure. He co-founded To The Stars Academy in 2017 alongside Luis Elizondo and Tom DeLonge, providing the program's theoretical physics framework. His career bridges the 50-year span from the earliest Cold War-era consciousness research programs through the modern UAP disclosure movement, making him the single figure with the deepest documented government connection to exotic research.",
+    "education": [
+      "B.S. Electrical Engineering — University of Florida (1958)",
+      "M.S. Electrical Engineering — University of Florida (1960)",
+      "Ph.D. Electrical Engineering — Stanford University (1967)",
+      "Postdoctoral research in laser physics — Stanford University"
+    ],
+    "early_career": [
+      "NSA employee in signals intelligence (1960–1963); holds NSA service medal",
+      "Research at Sperry Electronic Tube Division and GTE Sylvania",
+      "Joined Stanford Research Institute (SRI International) Physics and Electronics Department (1971)",
+      "Began collaborating with psychic Ingo Swann; proposed formal scientific investigation to CIA (1972)",
+      "Published standard-model physics papers on zero-point energy and quantum vacuum structure throughout the 1970s–1980s"
+    ],
+    "key_events": [
+      { "date": "1960", "event": "Joins NSA as employee in signals intelligence; begins career in classified government research" },
+      { "date": "1967", "event": "Completes Ph.D. at Stanford University in Electrical Engineering; joins Stanford Research Institute" },
+      { "date": "1972", "event": "Approaches CIA with proposal to scientifically investigate remote viewing following initial experiments with Ingo Swann; CIA funds the SCANATE program at SRI — the origin of STARGATE" },
+      { "date": "1972–1985", "event": "Directs CIA/DIA-funded remote viewing research at SRI; works with Ingo Swann, Pat Price, Russell Targ; program successively known as GONDOLA WISH, GRILL FLAME, CENTER LANE, SUN STREAK, STAR GATE" },
+      { "date": "1975", "event": "Publishes 'Perception of Remote Events' in Nature with Russell Targ — peer-reviewed paper on remote viewing results; establishes scientific legitimacy of the research program" },
+      { "date": "1985", "event": "Transitions out of SRI; STARGATE program continues under other management until 1995 declassification" },
+      { "date": "1991", "event": "Founds EarthTech International in Austin, TX; establishes Institute for Advanced Studies at Austin (IASA) for exotic propulsion and vacuum energy research" },
+      { "date": "1995", "event": "CIA declassifies STARGATE program; 270+ pages of SRI reports become public; American Institutes for Research commissioned review concludes intelligence value was marginal but does not dispute anomalous results" },
+      { "date": "2008–2011", "event": "Contracted by DIA to author technical papers for the AAWSAP program; produces at least 6 of 38 Defense Intelligence Reference Documents covering traversable wormholes, warp drives, and metric engineering" },
+      { "date": "October 2017", "event": "Co-founds To The Stars Academy of Arts and Science with Tom DeLonge, Luis Elizondo, Chris Mellon, Jim Semivan; provides theoretical physics framework for TTSA's research mission" },
+      { "date": "2018–2019", "event": "Presents TTSA's UAP research program at multiple scientific and government venues; briefs congressional staffers on exotic propulsion theory" },
+      { "date": "2019", "event": "Several AAWSAP DIRDs authored by Puthoff released publicly via FOIA; confirm government-funded exotic propulsion research at the theoretical level" },
+      { "date": "2024", "event": "Appears in The Age of Disclosure documentary; among the most senior figures to go on record publicly regarding classified UAP research programs" }
+    ]
+  },
+
+  "stargate": {
+    "official_name": "STAR GATE",
+    "predecessor_programs": ["SCANATE", "GONDOLA WISH", "GRILL FLAME", "CENTER LANE", "SUN STREAK"],
+    "period": "1972–1995",
+    "funding_agencies": ["CIA (1972–1977)", "DIA (1977–1995)"],
+    "location": "Stanford Research Institute (SRI International), Menlo Park, California",
+    "puthoff_role": "Program Director and principal investigator (1972–1985)",
+    "budget": "Approximately $20 million over the full program lifetime (estimated)",
+    "principal_viewers": [
+      "Ingo Swann — credited with developing the Coordinate Remote Viewing (CRV) protocol",
+      "Pat Price — retired police commissioner; produced operationally significant results including Soviet research facility description",
+      "Joe McMoneagle — Army Warrant Officer; produced the most operationally cited results",
+      "Russell Targ — co-investigator with Puthoff at SRI"
+    ],
+    "declassification": "1995 — CIA released approximately 270 pages of SRI research reports; DIA released additional operational records. Program formally closed.",
+    "air_review": "1995 American Institutes for Research (AIR) commissioned review: concluded remote viewing 'has not been demonstrated to have value for intelligence operations' but explicitly noted anomalous statistical results that exceeded chance and could not be explained conventionally. The review itself became controversial.",
+    "key_findings": [
+      "Remote viewing experiments produced statistically significant results across multiple controlled trials; results were replicated at other institutions",
+      "At least 22 operational intelligence targets were reportedly addressed using remote viewing; results were mixed but included several cited as operationally significant",
+      "Soviet equivalent program (MONOLIT / PSYCHOTRONIKA) was actively running in parallel — Puthoff used Soviet program's existence to justify U.S. research",
+      "The CRV (Coordinate Remote Viewing) protocol developed at SRI was adopted by the DIA and trained multiple military viewers",
+      "Results were reviewed by multiple independent scientists including Carl Sagan and a Nobel laureate physicist; statistical anomalies were not dismissed"
+    ],
+    "controversy": "The STARGATE program remains among the most contested in U.S. intelligence history. Critics argue the AIR review demonstrated the program had no operational value. Defenders, including Puthoff, argue the AIR review was methodologically flawed and that the operational record is more positive than the review acknowledged. The program's existence is not disputed; the interpretation of its results is."
+  },
+
+  "aawsap_dirds": {
+    "program": "Advanced Aerospace Weapon System Applications Program (AAWSAP)",
+    "contracting_agency": "Defense Intelligence Agency (DIA)",
+    "period": "2008–2010",
+    "total_dirds": 38,
+    "puthoff_authored": "At least 6 (confirmed by public releases and Puthoff's own statements)",
+    "significance": "The DIRDs represent the U.S. government's most explicit official acknowledgment that exotic propulsion physics — traversable wormholes, warp drives, negative energy, vacuum energy manipulation — was considered a serious research domain worthy of DIA funding. They are genuine government documents, not advocacy materials.",
+    "documents": [
+      {
+        "title": "Traversable Wormholes, Stargates, and Negative Energy",
+        "author": "Dr. Eric Davis (with Puthoff collaboration)",
+        "significance": "Addresses physical possibility of traversable wormholes as spacecraft transit mechanism; reviews negative energy requirements; treated as a legitimate physics topic requiring government-funded analysis"
+      },
+      {
+        "title": "Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions",
+        "author": "Dr. R. Obousy and Dr. Eric Davis",
+        "significance": "Analyzes Alcubierre warp drive metric; explores extra-dimension manipulation as energy source; part of the broader AAWSAP exotic propulsion research portfolio"
+      },
+      {
+        "title": "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering",
+        "author": "Dr. Harold E. Puthoff",
+        "significance": "Puthoff's primary DIRD contribution; argues that vacuum energy (zero-point field) manipulation could enable propulsion systems that bypass conventional rocket physics; foundational to his broader theoretical work at EarthTech"
+      },
+      {
+        "title": "Polarizable-Vacuum (PV) Representations of General Relativity",
+        "author": "Dr. Harold E. Puthoff",
+        "significance": "Theoretical framework treating spacetime as a polarizable vacuum medium; provides the physics basis for Puthoff's metric engineering propulsion concept"
+      },
+      {
+        "title": "Inertia as a Zero-Point-Field Lorentz Force",
+        "author": "Bernhard Haisch, Alfonso Rueda, H.E. Puthoff",
+        "significance": "Peer-reviewed paper proposing inertia emerges from interaction with the quantum vacuum; has implications for propulsion systems that could manipulate inertia; cited in multiple AAWSAP documents"
+      }
+    ]
+  },
+
+  "physics_research": {
+    "primary_focus": "Zero-point energy, vacuum energy manipulation, metric engineering, and exotic propulsion",
+    "earthtech_mission": "EarthTech International investigates unconventional energy and propulsion concepts with potential breakthrough physics implications, operating at the interface of theoretical physics and engineering feasibility",
+    "key_theories": [
+      {
+        "name": "Metric Engineering",
+        "description": "Puthoff's framework for propulsion based on engineering spacetime geometry rather than expelling mass. The core concept: if the vacuum energy (zero-point field) can be manipulated locally, it should be possible to alter the local metric of spacetime, enabling warp-like propulsion without violating general relativity in principle."
+      },
+      {
+        "name": "Polarizable Vacuum Model (PV)",
+        "description": "A reinterpretation of general relativity treating spacetime as a polarizable medium whose optical index can be engineered. Mathematically equivalent to standard GR for most purposes, but conceptually frames gravity and spacetime curvature as emergent properties of vacuum polarization — potentially allowing engineering control."
+      },
+      {
+        "name": "Zero-Point Energy (ZPE) Extraction",
+        "description": "Theoretical basis for drawing usable energy from the quantum vacuum's ground-state energy. While mainstream physics treats ZPE as inaccessible (Casimir effect proves it exists but conventional physics says it cannot be extracted), Puthoff has argued for theoretical pathways toward extraction at macroscopic scales."
+      },
+      {
+        "name": "Inertia as Vacuum Interaction",
+        "description": "Published peer-reviewed work proposing that inertia — an object's resistance to acceleration — arises from interaction with the zero-point field rather than being an intrinsic property of mass. If correct, this implies inertia could in principle be manipulated, with profound propulsion implications."
+      }
+    ],
+    "publications_note": "Puthoff has published in Physical Review, Foundations of Physics, Journal of Scientific Exploration, and other peer-reviewed venues. His ZPE and vacuum energy work is cited in mainstream physics literature though the most exotic propulsion applications remain at the theoretical frontier."
+  },
+
+  "claims": [
+    {
+      "id": "uap-retrieved-craft",
+      "category": "recovered materials",
+      "claim": "The U.S. government has retrieved craft of non-human origin and has been attempting to reverse-engineer their propulsion systems. Puthoff has stated he has been 'in the loop' on this knowledge for decades through his intelligence community relationships.",
+      "status": "unverified",
+      "notes": "Among Puthoff's most direct public claims. He has made this assertion in TTSA-affiliated events and media appearances. His decades of DIA/CIA relationships give the claim unusual credibility relative to most public figures making similar statements. No public documentation exists."
+    },
+    {
+      "id": "metric-engineering-uap",
+      "category": "uap propulsion",
+      "claim": "The flight characteristics observed in UAP encounters — instantaneous acceleration, apparent absence of inertia, trans-medium travel — are consistent with metric engineering: craft that engineer their local spacetime metric rather than using conventional propulsion. This is the physics that his AAWSAP DIRDs explored.",
+      "status": "unverified",
+      "notes": "Puthoff's theoretical contribution is unique: he is the only major UAP figure who has published peer-reviewed physics papers directly relevant to the propulsion anomalies observed. The connection between his theory and UAP observations is compelling but unverified; no recovered craft analysis has been publicly released."
+    },
+    {
+      "id": "bigelow-materials",
+      "category": "recovered materials",
+      "claim": "Materials potentially associated with UAP were held and studied by Bigelow Aerospace Advanced Space Studies (BAASS) under the AAWSAP contract. Puthoff has indicated he had awareness of and involvement with materials analysis during his AAWSAP work.",
+      "status": "partially-verified",
+      "notes": "Senator Harry Reid publicly confirmed that BAASS held materials studied under AAWSAP. Luis Elizondo and David Grusch have corroborated that materials studies occurred. Puthoff's specific role in materials analysis has not been publicly detailed; his AAWSAP involvement is confirmed but materials-specific claims are unverified."
+    },
+    {
+      "id": "stargate-real-effects",
+      "category": "consciousness phenomena",
+      "claim": "The STARGATE remote viewing program produced genuine, statistically significant anomalous results that cannot be explained by conventional psychology or chance. The AIR review's negative conclusion was overstated and methodologically flawed.",
+      "status": "partially-verified",
+      "notes": "The statistical anomalies in STARGATE data are documented in declassified CIA records and were acknowledged even by critics. The 1995 AIR review noted unexplained results but concluded no operational value. The dispute is interpretive, not factual: the data exists, the disagreement is over its significance. Multiple independent replications outside STARGATE produced similar anomalies."
+    },
+    {
+      "id": "decades-loop",
+      "category": "government programs",
+      "claim": "Puthoff has been connected to the U.S. intelligence community's knowledge of UAP phenomena for decades — from CIA STARGATE through DIA AAWSAP through TTSA — representing continuity of government-connected exotic research knowledge spanning more than 50 years.",
+      "status": "partially-verified",
+      "notes": "The institutional continuity is documented: CIA (1972+), DIA (2008+), TTSA (2017+). The specific claim that this represents a single thread of knowledge about UAP phenomena — rather than separate research domains — is Puthoff's interpretation and has not been independently verified."
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "Ph.D. from Stanford University; legitimate career physicist with peer-reviewed publications in Physical Review and other major journals",
+      "NSA service medal holder; worked within the intelligence community at the employee level before becoming a contractor",
+      "STARGATE program was genuine, government-funded, and partially declassified — his role as director is documented in CIA/DIA records",
+      "AAWSAP DIRDs are authentic government-contracted documents; his authorship of multiple papers is confirmed",
+      "His theoretical work (ZPE, metric engineering, vacuum propulsion) maps directly onto the flight anomalies reported in UAP encounters — a unique coherence no other UAP figure possesses",
+      "Consistent across five decades of public and classified work; his positions have not fundamentally shifted despite significant institutional pressure",
+      "TTSA co-founders (Elizondo, Mellon, Semivan) independently corroborate the general framework Puthoff represents",
+      "Has presented his work at conferences including the AIAA (American Institute of Aeronautics and Astronautics), giving it mainstream engineering credibility"
+    ],
+    "contradicting": [
+      "The AIR review of STARGATE concluded it had no demonstrated intelligence value — the most direct public institutional repudiation of his major program",
+      "His more expansive claims about retrieved craft and decades of insider knowledge rest on undisclosed evidence; no public documentation supports them",
+      "Zero-point energy extraction and metric engineering remain highly speculative; while theoretically explored, no experimental demonstration of macroscopic vacuum energy manipulation exists",
+      "His long association with fringe-adjacent research communities (TTSA, parapsychology) has drawn criticism from mainstream physicists who view the association as damaging to legitimate research",
+      "TTSA never delivered on its stated promise to publish breakthrough physics; the organization's lack of concrete research output is a credibility concern for the entire founding team"
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former Director, AATIP; TTSA co-founder",
+      "relationship": "Co-founded TTSA; Elizondo's operational knowledge of UAP programs and Puthoff's theoretical framework for their propulsion are the two complementary pillars of TTSA's research mission"
+    },
+    {
+      "id": "ingo-swann",
+      "name": "Ingo Swann",
+      "role": "Remote viewer; developer of Coordinate Remote Viewing (CRV) protocol",
+      "relationship": "Principal subject in Puthoff's initial SRI remote viewing experiments (1972); Swann's results convinced the CIA to fund the SCANATE/STARGATE program; developed the CRV protocol in collaboration with Puthoff that became the program's standardized methodology"
+    },
+    {
+      "id": "eric-davis",
+      "name": "Dr. Eric Davis",
+      "role": "Physicist; EarthTech International; AAWSAP DIRD author",
+      "relationship": "Longtime EarthTech collaborator; co-authored AAWSAP DIRDs including the traversable wormholes paper; central figure in the Wilson-Davis memo controversy; their theoretical work is closely aligned"
+    },
+    {
+      "id": "christopher-mellon",
+      "name": "Christopher Mellon",
+      "role": "Former Deputy Assistant Secretary of Defense for Intelligence",
+      "relationship": "TTSA co-founder; Mellon's policy and legislative work provided the institutional infrastructure within which Puthoff's physics research could be acted upon"
+    },
+    {
+      "id": "robert-bigelow",
+      "name": "Robert Bigelow",
+      "role": "Aerospace entrepreneur; BAASS founder",
+      "relationship": "Bigelow Aerospace Advanced Space Studies (BAASS) held the primary AAWSAP contract under which the DIRDs were commissioned; Puthoff's work was funded through this arrangement and he may have had direct knowledge of BAASS materials holdings"
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Stanford Professor; CIA UAP consultant",
+      "relationship": "Both operate at the intersection of government-adjacent UAP research and credentialed science; Nolan's biological findings and Puthoff's propulsion theory represent complementary scientific approaches to the same phenomenon"
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "1975",
+      "type": "academic-paper",
+      "title": "Perception of Remote Events (Mind-Reach)",
+      "outlet": "Nature (co-authored with Russell Targ)",
+      "notes": "Peer-reviewed paper presenting SRI remote viewing results in Nature — among the most cited and contested publications in parapsychology history; establishes the scientific documentation trail for STARGATE"
+    },
+    {
+      "date": "1995",
+      "type": "declassification",
+      "title": "STARGATE Program Declassification",
+      "outlet": "CIA / DIA",
+      "notes": "270+ pages of SRI remote viewing reports publicly released; Puthoff's role as director documented; program existence confirmed to the public for the first time"
+    },
+    {
+      "date": "1996",
+      "type": "academic-paper",
+      "title": "CIA-Initiated Remote Viewing at Stanford Research Institute",
+      "outlet": "Journal of Scientific Exploration",
+      "notes": "Puthoff's own account of STARGATE's origins and methodology, written after declassification; primary source document for the program's history"
+    },
+    {
+      "date": "2010",
+      "type": "government-document",
+      "title": "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering",
+      "outlet": "DIA / AAWSAP (DIRD)",
+      "notes": "Puthoff-authored Defense Intelligence Reference Document on metric engineering propulsion; released via FOIA; confirms government funding of exotic propulsion research at the theoretical level"
+    },
+    {
+      "date": "October 2017",
+      "type": "press-release",
+      "title": "To The Stars Academy of Arts and Science Launch",
+      "outlet": "To The Stars Academy",
+      "notes": "Public launch of TTSA; Puthoff serves as VP of Science and Technology; explicitly connects his decades of government-adjacent research to the public UAP disclosure effort"
+    },
+    {
+      "date": "2018",
+      "type": "conference",
+      "title": "SSE/IRVA Conference Presentation",
+      "outlet": "Society for Scientific Exploration / International Remote Viewing Association",
+      "notes": "Puthoff presents on AAWSAP, exotic propulsion theory, and UAP physical characteristics; among the most detailed public accounts of the TTSA research framework"
+    },
+    {
+      "date": "2024",
+      "type": "documentary",
+      "title": "The Age of Disclosure",
+      "outlet": "Documentary Film",
+      "notes": "On-record appearance in the major UAP disclosure documentary; among the most senior figures to go public in the film"
+    }
+  ]
+}
