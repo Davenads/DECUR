@@ -15,8 +15,8 @@ export type CustomNextPage<P = {}> = NextPage<P> & {
  * Home page props
  */
 export interface HomePageProps {
-  featuredData?: any[];
-  recentUpdates?: any[];
+  featuredData?: unknown[];
+  recentUpdates?: unknown[];
 }
 
 /**
@@ -34,7 +34,7 @@ export interface DataPageProps {
  */
 export interface ResourcesPageProps {
   initialTab?: string;
-  resources?: any[];
+  resources?: unknown[];
 }
 
 /**
