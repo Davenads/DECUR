@@ -46,23 +46,23 @@ const Footer: FC = () => {
             </ul>
           </div>
 
-          {/* Insiders */}
+          {/* Explore */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Insiders</h3>
+            <h3 className="text-lg font-medium mb-4">Explore</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/data?category=insiders" className="text-gray-400 hover:text-white transition-colors">
-                  Dan Burisch
+                <Link href="/timeline" className="text-gray-400 hover:text-white transition-colors">
+                  Timeline
                 </Link>
               </li>
               <li>
-                <Link href="/data?category=insiders" className="text-gray-400 hover:text-white transition-colors">
-                  Bob Lazar
+                <Link href="/explore" className="text-gray-400 hover:text-white transition-colors">
+                  Explore
                 </Link>
               </li>
               <li>
-                <Link href="/data?category=insiders" className="text-gray-400 hover:text-white transition-colors">
-                  David Grusch
+                <Link href="/search" className="text-gray-400 hover:text-white transition-colors">
+                  Search
                 </Link>
               </li>
             </ul>
