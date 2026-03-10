@@ -9,13 +9,15 @@ import MediaBrowser from '../components/data/MediaBrowser';
 import NewsBrowser from '../components/data/NewsBrowser';
 import InsidersList from '../components/data/InsidersList';
 import CasesList from '../components/data/CasesList';
+import DocumentsList from '../components/data/DocumentsList';
 import DataNavigation, { NavItemDef } from '../components/data/DataNavigation';
-import { CategoryType, InsiderEntry, CaseEntry } from '../types/data';
+import { CategoryType, InsiderEntry, CaseEntry, DocumentEntry } from '../types/data';
 import { getEntriesByCategory, TimelineEntry } from '../lib/useTimelineData';
 import insidersData from '../data/insiders.json';
 import casesData from '../data/cases.json';
+import documentsData from '../data/documents.json';
 
-const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'insiders', 'cases'];
+const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'insiders', 'cases', 'documents'];
 
 interface DataPageProps {
   categoryData: {
@@ -27,10 +29,11 @@ interface DataPageProps {
   };
   insiders: InsiderEntry[];
   cases: CaseEntry[];
+  documents: DocumentEntry[];
   navItems: NavItemDef[];
 }
 
-export default function Data({ categoryData, insiders, cases, navItems }: DataPageProps) {
+export default function Data({ categoryData, insiders, cases, documents, navItems }: DataPageProps) {
   const router = useRouter();
   const [activeCategory, setActiveCategory] = useState<CategoryType>('events');
   const [sourceFilter, setSourceFilter] = useState<string | undefined>(undefined);
@@ -54,6 +57,7 @@ export default function Data({ categoryData, insiders, cases, navItems }: DataPa
       case 'news':           return <NewsBrowser entries={categoryData.news} />;
       case 'insiders': return <InsidersList entries={insiders} />;
       case 'cases':    return <CasesList cases={cases} />;
+      case 'documents': return <DocumentsList documents={documents} />;
       default:               return <EventsList entries={categoryData.events} />;
     }
   };
@@ -101,6 +105,7 @@ export const getStaticProps: GetStaticProps = async () => {
       { category: 'news',           label: 'News',            description: 'Reports & developments',         count: news.length    },
       { category: 'insiders', label: 'Insiders',  description: 'Firsthand accounts & case files', count: insidersData.length },
       { category: 'cases',    label: 'Cases',     description: 'Documented incidents & evidence',  count: casesData.length    },
+      { category: 'documents', label: 'Documents',  description: 'Primary source documents',          count: documentsData.length },
     ];
 
     return {

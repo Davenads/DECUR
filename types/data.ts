@@ -5,7 +5,7 @@
 /**
  * Represents data category types
  */
-export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'insiders' | 'cases';
+export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'insiders' | 'cases' | 'documents';
 
 /**
  * Expanded sections state for data navigation
@@ -464,4 +464,36 @@ export interface CaseEntry {
     supporting: string[];
     contradicting: string[];
   };
+}
+
+/* ─── Documents Types ──────────────────────────────────────────── */
+
+export type DocumentAuthStatus =
+  | 'confirmed-official'
+  | 'declassified-foia'
+  | 'leaked-disputed'
+  | 'confirmed-leaked';
+
+export type DocumentType =
+  | 'government-report'
+  | 'government-memo'
+  | 'intelligence-report'
+  | 'academic-study'
+  | 'legislation';
+
+export interface DocumentEntry {
+  id: string;
+  name: string;
+  date: string;
+  issuing_authority: string;
+  document_type: DocumentType;
+  authenticity_status: DocumentAuthStatus;
+  page_count: number;
+  public_url: string;
+  summary: string;
+  significance: string;
+  key_findings: string[];
+  provenance: string;
+  insider_connections: string[];
+  limitations: string[];
 }
