@@ -84,6 +84,18 @@
     "data_file": "nolan.json"
   },
   {
+    "id": "eric-davis",
+    "name": "Dr. Eric W. Davis",
+    "aliases": ["Eric Davis", "E.W. Davis"],
+    "role": "Senior Research Physicist, EarthTech International; AAWSAP DIRD Author",
+    "period": "1996–present (private research); 2007–2010 (AAWSAP contractor)",
+    "affiliation": "EarthTech International, Aerospace Corporation, National Institute for Discovery Science (NIDS)",
+    "summary": "Astrophysicist who co-authored at least four classified Defense Intelligence Reference Documents (DIRDs) under the AAWSAP contract, covering traversable wormholes, warp drives, and antigravity. In April 2019 he briefed the Defense Department's Aerospace Science Board and Senate Armed Services Committee in closed session. In October 2020, the New York Times quoted him stating he briefed Congress about 'off-world vehicles not made on this earth.' Best known publicly as the subject of the Wilson-Davis memo - a leaked 2002 document recording Vice Admiral Thomas R. Wilson's account of being denied access to a private aerospace contractor running a UAP crash retrieval program.",
+    "status": "detailed",
+    "tags": ["EarthTech", "AAWSAP", "DIRDs", "Warp Drive", "Wormholes", "Wilson-Davis Memo", "Bigelow", "Congressional Briefings", "Off-World Vehicles"],
+    "data_file": "davis.json"
+  },
+  {
     "id": "chris-mellon",
     "name": "Christopher K. Mellon",
     "aliases": ["Chris Mellon", "C.K. Mellon"],

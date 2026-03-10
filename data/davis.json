@@ -1,0 +1,204 @@
+{
+  "profile": {
+    "id": "eric-davis",
+    "name": "Dr. Eric W. Davis",
+    "aliases": ["Eric Davis", "E.W. Davis"],
+    "born": "c. 1962",
+    "roles": [
+      "Senior Research Physicist, EarthTech International",
+      "Senior Research Physicist, Aerospace Corporation",
+      "Visiting Research Scientist, National Institute for Discovery Science (NIDS)",
+      "AAWSAP Defense Intelligence Reference Document Author"
+    ],
+    "service_period": "1996–present (private research); 2007–2010 (AAWSAP contractor)",
+    "organizations": [
+      "EarthTech International (founded by Hal Puthoff)",
+      "Aerospace Corporation",
+      "National Institute for Discovery Science (NIDS) — Robert Bigelow",
+      "Institute for Advanced Studies at Austin"
+    ],
+    "clearance": "Top Secret / SCI (active during government contracting; classification level inferred from congressional briefing access and AAWSAP contract participation)",
+    "summary": "Dr. Eric Davis is an astrophysicist who has operated at the intersection of theoretical physics and classified U.S. government research for nearly three decades. Working primarily through EarthTech International — Hal Puthoff's research firm — he co-authored at least six of the 38 classified Defense Intelligence Reference Documents (DIRDs) produced under the AAWSAP contract (2007-2010), covering traversable wormholes, warp drives, and antigravity applications. He is best known outside the physics community as the subject of the Wilson-Davis memo: a leaked 2002 document recording Davis's notes from a meeting with Vice Admiral Thomas R. Wilson, in which Wilson described being denied access to a private aerospace contractor running an off-world vehicle reverse engineering program. In April 2019, Davis briefed the Defense Department's Aerospace Science Board and the Senate Armed Services Committee in closed session. In October 2020, the New York Times quoted him confirming he briefed Congress about 'off-world vehicles not made on this earth.' His combination of theoretical physics credentials, classified government contracting history, and documented congressional briefings makes him one of the most substantively credentialed figures in the UAP research ecosystem.",
+    "education": [
+      "B.S. Astronomy — University of Arizona",
+      "Ph.D. Astrophysics — University of Arizona (1991)"
+    ],
+    "early_career": [
+      "Post-doctoral and research positions in theoretical astrophysics",
+      "Joins EarthTech International as Senior Research Physicist (1999); works alongside Hal Puthoff on metric engineering and advanced propulsion concepts",
+      "Visiting research scientist at Robert Bigelow's National Institute for Discovery Science (NIDS) from 1996 to 2002",
+      "Collaborated with Puthoff on zero-point energy extraction theory and warp field metrics",
+      "Became one of the leading civilian researchers on the physics of spacetime engineering and warp drives"
+    ],
+    "key_events": [
+      { "date": "1991", "event": "Receives Ph.D. in Astrophysics from the University of Arizona" },
+      { "date": "1996", "event": "Begins affiliation with Robert Bigelow's National Institute for Discovery Science (NIDS) as visiting research scientist; works on paranormal and UAP phenomenon research alongside Las Vegas-based team" },
+      { "date": "1999", "event": "Joins EarthTech International as Senior Research Physicist; works with Hal Puthoff on metric engineering, zero-point energy, and advanced propulsion theory" },
+      { "date": "October 2002", "event": "Alleged meeting with Vice Admiral Thomas R. Wilson at a Las Vegas EG&G facility following a SAIC briefing — later documented in the Wilson-Davis memo. Wilson describes having been denied access to a private aerospace contractor managing an off-world vehicle program. Davis records the conversation in detailed notes." },
+      { "date": "2007–2010", "event": "Authors and co-authors multiple classified Defense Intelligence Reference Documents (DIRDs) under the AAWSAP contract administered through Bigelow Aerospace Advanced Space Studies (BAASS); topics include traversable wormholes, stargates, warp drives, and antigravity applications" },
+      { "date": "2009", "event": "Co-authors DIRD: 'Traversable Wormholes, Stargates, and Negative Energy' — one of the core theoretical physics papers commissioned by the DIA and widely regarded as among the most technically substantive of the 38 documents" },
+      { "date": "2010", "event": "Co-authors DIRD with R. Obousy: 'Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions' — applies dark energy physics to Alcubierre warp drive conceptual framework" },
+      { "date": "April 2019", "event": "Briefs the Defense Department's Aerospace Science Board in closed session; also provides classified briefings to Senate Armed Services Committee members including staff — the first known classified UAP-related congressional briefing by a private researcher in the modern disclosure era" },
+      { "date": "June 2019", "event": "The Wilson-Davis memo is leaked publicly by anonymous sources and posted to the To The Stars Academy community platform; becomes one of the most debated UAP documents ever released" },
+      { "date": "October 2020", "event": "New York Times article 'No Longer in Shadows, Pentagon's U.F.O. Unit Will Make Some Findings Public' quotes Davis confirming he briefed a Defense Department agency and members of Congress about 'off-world vehicles not made on this earth' and stated the materials were not made on this earth by any means" },
+      { "date": "2021–present", "event": "Continues research at EarthTech International and Aerospace Corporation; remains one of the few named physicists to publicly state that crash-retrieved non-human materials have been scientifically studied under classified programs" }
+    ]
+  },
+
+  "earthtech": {
+    "founded_by": "Dr. Harold E. Puthoff",
+    "location": "Austin, Texas",
+    "also_known_as": "Institute for Advanced Studies at Austin",
+    "mission": "Basic and advanced research in physics relevant to future energy and propulsion technologies, including zero-point energy extraction, metric engineering of spacetime, and warp field theory",
+    "davis_role": "Senior Research Physicist; primary theoretical physics contributor on spacetime engineering and exotic propulsion papers",
+    "nids_connection": "Robert Bigelow's National Institute for Discovery Science (NIDS) provided early research environment; EarthTech overlap created the research network that became the contractor base for AAWSAP",
+    "key_research_areas": [
+      "Metric engineering of spacetime — theoretical framework for manipulating gravitational fields for propulsion",
+      "Zero-point energy (ZPE) extraction — Casimir effect and quantum vacuum energy applications",
+      "Traversable wormhole theory — applying Morris-Thorne wormhole mathematics to potential engineering",
+      "Warp drive theory — Alcubierre metric and its dark energy / negative energy requirements",
+      "Antigravity — theoretical models for gravitational field manipulation"
+    ]
+  },
+
+  "aawsap_dirds": {
+    "contract": "AAWSAP — Advanced Aerospace Weapon System Applications Program",
+    "contractor": "Bigelow Aerospace Advanced Space Studies (BAASS)",
+    "period": "2007–2012",
+    "total_dirds": 38,
+    "davis_authored": [
+      {
+        "title": "Traversable Wormholes, Stargates, and Negative Energy",
+        "year": "2009",
+        "author": "Dr. Eric W. Davis",
+        "summary": "Surveys theoretical physics of Morris-Thorne traversable wormholes, the Krasnikov tube, and traversable Lorentzian wormholes; analyzes energy requirements and exotic matter conditions necessary for hypothetical engineering; assesses whether advanced civilizations could construct stable wormhole transits"
+      },
+      {
+        "title": "Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions",
+        "year": "2010",
+        "author": "Dr. R. Obousy and Dr. Eric W. Davis",
+        "summary": "Applies Kaluza-Klein extra dimension theory to the Alcubierre warp drive metric; proposes that dark energy manipulation via extra dimension compaction could theoretically satisfy the negative energy density requirements of warp drive without requiring impossible amounts of exotic matter"
+      },
+      {
+        "title": "Antigravity for Aerospace Applications",
+        "year": "2009",
+        "author": "Dr. Eric W. Davis",
+        "summary": "Reviews experimental and theoretical basis for gravitational field manipulation; surveys Podkletnov rotation-gravity experiments, Tajmar frame-dragging results, and related anomalies; assesses aerospace applications of gravitational shielding concepts"
+      },
+      {
+        "title": "Concepts for Extracting Energy from the Quantum Vacuum",
+        "year": "2009",
+        "author": "Dr. Eric W. Davis (with Puthoff collaboration)",
+        "summary": "Analyzes the theoretical basis for zero-point energy extraction from the quantum vacuum via Casimir effect engineering; reviews experimental constraints and proposes potential energy generation mechanisms relevant to advanced propulsion"
+      }
+    ]
+  },
+
+  "wilson_davis_memo": {
+    "date": "October 16, 2002",
+    "location": "Las Vegas, Nevada (EG&G Special Technologies facility)",
+    "context": "The meeting occurred following a briefing at SAIC (Science Applications International Corporation) attended by, among others, Eric Davis, Dr. Steven Greer, and Admiral Wilson. Wilson had reportedly been seeking access to a UAP-related special access program after being given a file reference by Greer.",
+    "memo_origin": "Davis recorded his conversation with Wilson on his PDA immediately following the meeting; the resulting 15-page document is a first-person account of what Wilson told him",
+    "wilson_account": "According to the memo, Admiral Wilson (then Director of DIA) described: (1) discovering a reference to an unusual program in a special access program filing system through a 5,000-page index; (2) successfully identifying the program and the corporate contractor running it; (3) requesting formal access and being denied by program managers at the private aerospace company; (4) being told by the company's lawyers and security personnel that he did not have a need-to-know; (5) appealing to the DoD Special Access Program Oversight Committee and being rebuffed; (6) being warned not to pursue the matter further",
+    "program_description": "The program, as relayed by Wilson, involved the reverse engineering of recovered non-human craft by a private aerospace contractor operating under minimal Congressional oversight, self-funding through black budget allocations",
+    "leak_date": "June 2019",
+    "leak_source": "Posted anonymously to the To The Stars Academy (TTSA) online community; authenticated by multiple UAP researchers through content and formatting analysis",
+    "status_disputed": "Wilson has publicly denied the meeting took place as described; Davis has neither confirmed nor denied authorship or the specific contents while the document was circulating. Multiple UAP researchers including Richard Dolan and Grant Cameron have analyzed the document and assessed it as likely authentic based on internal consistency, technical specificity, and corroborating circumstances.",
+    "significance": "If authentic, the Wilson-Davis memo is the most specific documentary evidence of a named senior U.S. official being denied access to a crash retrieval program by private corporate managers — inverting the typical assumption that the government controls classified programs. It names specific individuals, locations, and organizational structures in ways that would be impossible to fabricate without deep access to actual program environments."
+  },
+
+  "claims": [
+    {
+      "claim": "The U.S. government has recovered non-human craft ('off-world vehicles not made on this earth')",
+      "status": "partially-verified",
+      "basis": "Davis stated this on record to the New York Times in October 2020; he also delivered classified congressional briefings on this subject in 2019. David Grusch's later ICIG complaint corroborates the existence of crash retrieval programs.",
+      "notes": "Davis has not testified under oath publicly; his statement to the NYT is the most explicit on-record claim by a named researcher with classified briefing access"
+    },
+    {
+      "claim": "Private aerospace contractors are running reverse engineering programs outside normal Congressional oversight",
+      "status": "partially-verified",
+      "basis": "The Wilson-Davis memo details this specifically; Grusch's 2023 congressional testimony corroborated the private contractor structure independently; Mellon's legislative work identified budget anomalies consistent with this structure",
+      "notes": "Three independent sources now describe the same structural pattern: Wilson (2002), Davis (2019), Grusch (2022-2023)"
+    },
+    {
+      "claim": "Vice Admiral Thomas R. Wilson was denied access to a classified crash retrieval program by private contractors",
+      "status": "disputed",
+      "basis": "The Wilson-Davis memo documents this; Admiral Wilson has publicly denied the meeting occurred as described",
+      "notes": "Wilson's denial does not necessarily invalidate the memo — cleared officials routinely deny classified activities. Multiple document analysts have assessed the memo as internally consistent with authentic program security documentation."
+    },
+    {
+      "claim": "Advanced theoretical physics (wormholes, warp drives) is directly applicable to UAP propulsion understanding",
+      "status": "unverified",
+      "basis": "Davis co-authored four AAWSAP DIRDs making this case; the DIA commissioned and accepted these documents, suggesting institutional credibility; no experimental verification exists",
+      "notes": "The theoretical physics framework Davis applies (Alcubierre metrics, Morris-Thorne wormholes) is legitimate published physics; its application to UAP remains speculative"
+    },
+    {
+      "claim": "Samples of recovered non-human materials have been scientifically studied under classified programs",
+      "status": "partially-verified",
+      "basis": "Davis has stated this in multiple interviews; Grusch corroborated 'non-human biologics' being analyzed in congressional testimony; Garry Nolan's materials analysis work provides an independent intersection point",
+      "notes": "No public scientific analysis of such materials has been published; institutional corroboration exists only from other insider claims"
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "Ph.D. in Astrophysics — genuine credentialed physicist, not a fringe figure; the physics in his DIRDs is peer-reviewable legitimate theoretical physics",
+      "Verified AAWSAP DIRD authorship — DIA documents obtained via FOIA confirm Davis co-authored multiple classified DIRDs; this is one of the most verifiable connections between a named individual and classified UAP research",
+      "New York Times citation (2020) — his statement about 'off-world vehicles not made on this earth' was reported by a major publication after direct interview, not taken out of context",
+      "Classified congressional briefings (2019) — confirmed by Senate Armed Services Committee scheduling records and subsequent member statements",
+      "EarthTech / Puthoff collaboration trail — his institutional position at Puthoff's firm creates a coherent documented network, not isolated claims",
+      "Wilson-Davis memo specificity — the technical and organizational detail in the memo, including specific program security designators and access protocol language, reflects genuine insider familiarity with SAP structures",
+      "Independent corroboration pattern — the contractor structure he describes was independently described by Grusch years later without coordination"
+    ],
+    "contradicting": [
+      "Admiral Wilson's public denial — Wilson has publicly denied the meeting occurred as described; this is the most significant challenge to the memo's credibility",
+      "Has not testified under oath — unlike Grusch, Fravor, Graves, and Nell, Davis has not formally testified to Congress publicly",
+      "No peer-reviewed UAP publications — his physics DIRDs are classified government documents, not peer-reviewed research; his public claims exist only in interviews and leaked documents",
+      "Wilson-Davis memo chain of custody is unknown — the leak mechanism and authentication remain unclear; document provenance cannot be established with certainty",
+      "His claims about materials and biologics are secondhand — he has not stated direct personal observation of recovered materials; his knowledge appears to come from briefings rather than direct access",
+      "NIDS/Bigelow affiliation — his longstanding ties to Robert Bigelow's organizations create a coherent institutional network but also a shared incentive toward UAP advocacy that could color his accounts"
+    ]
+  },
+
+  "associated_people": [
+    { "name": "Hal Puthoff", "relation": "EarthTech founder and longtime collaborator; co-authored multiple AAWSAP DIRDs; aligned on metric engineering theory" },
+    { "name": "Admiral Thomas R. Wilson", "relation": "Subject of the Wilson-Davis memo; former Director of DIA who allegedly described being denied access to a crash retrieval program — Wilson denies the meeting" },
+    { "name": "Robert Bigelow", "relation": "NIDS employer (1996-2002); BAASS administered the AAWSAP contract through which Davis's DIRDs were produced" },
+    { "name": "David Grusch", "relation": "Independently described contractor-run crash retrieval programs consistent with the Wilson-Davis memo structure; their claims are mutually corroborating without apparent coordination" },
+    { "name": "Luis Elizondo", "relation": "AATIP director whose program overlapped with AAWSAP contractor network; Davis briefed government officials Elizondo worked with" },
+    { "name": "Steven Greer", "relation": "Present at the SAIC briefing described in the Wilson-Davis memo; introduced Wilson to the program file reference according to the document's account" }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2007–2010",
+      "type": "Classified Government",
+      "outlet": "Defense Intelligence Agency (AAWSAP)",
+      "description": "Authored and co-authored multiple Defense Intelligence Reference Documents (DIRDs) on traversable wormholes, warp drives, antigravity, and zero-point energy; delivered as classified research products to DIA under the BAASS/AAWSAP contract"
+    },
+    {
+      "date": "April 2019",
+      "type": "Classified Briefing",
+      "outlet": "Defense Department / Senate Armed Services Committee",
+      "description": "Provided classified briefings to the Defense Department's Aerospace Science Board and to Senate Armed Services Committee members and staff on UAP crash retrieval programs and off-world vehicle evidence"
+    },
+    {
+      "date": "June 2019",
+      "type": "Document Leak",
+      "outlet": "TTSA community platform (anonymous leak)",
+      "description": "The Wilson-Davis memo — 15-page document recording a 2002 conversation between Davis and Vice Admiral Thomas R. Wilson about a denied-access crash retrieval program — leaked publicly; Davis neither confirmed nor denied authorship at time of leak"
+    },
+    {
+      "date": "October 26, 2020",
+      "type": "Media",
+      "outlet": "New York Times",
+      "description": "Quoted in 'No Longer in Shadows, Pentagon's U.F.O. Unit Will Make Some Findings Public': confirmed he briefed a Defense Department agency and members of Congress about 'off-world vehicles not made on this earth' and stated samples were not made on this earth by any means currently known"
+    },
+    {
+      "date": "2021",
+      "type": "Media",
+      "outlet": "Multiple outlets",
+      "description": "Multiple extended interviews discussing the physics of UAP propulsion, the AAWSAP DIRDs, and his assessment of recovered materials; provided the most technically detailed public framework for understanding how UAP physics might work"
+    }
+  ]
+}

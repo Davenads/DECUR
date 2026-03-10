@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -59,6 +59,7 @@ export const graphData: GraphData = {
     { id: 'jim-slaight',         name: 'Jim Slaight',          type: 'person',       group: 'fravor',   val: 2 },
     { id: 'garry-nolan',         name: 'Garry Nolan',          type: 'person',       group: 'nolan',    val: 4 },
     { id: 'hal-puthoff',         name: 'Hal Puthoff',          type: 'person',       group: 'puthoff',  val: 4 },
+    { id: 'eric-davis',          name: 'Eric Davis',           type: 'person',       group: 'davis',    val: 4 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -164,6 +165,10 @@ export const graphData: GraphData = {
     { source: 'hal-puthoff',     target: 'luis-elizondo',      label: 'TTSA co-founder' },
     { source: 'hal-puthoff',     target: 'bigelow-aerospace',  label: 'AAWSAP subcontractor' },
     { source: 'hal-puthoff',     target: 'garry-nolan',        label: 'physics research intersection' },
+    { source: 'eric-davis',      target: 'hal-puthoff',        label: 'EarthTech colleague' },
+    { source: 'eric-davis',      target: 'bigelow-aerospace',  label: 'AAWSAP DIRD author; NIDS affiliation' },
+    { source: 'eric-davis',      target: 'aatip',              label: 'DIRD contributor' },
+    { source: 'eric-davis',      target: 'david-grusch',       label: 'corroborating crash retrieval claims' },
     { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
     { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
     { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },
