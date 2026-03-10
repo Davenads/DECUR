@@ -104,6 +104,7 @@ export const getStaticProps: GetStaticProps = async () => {
         insiders: insidersData as InsiderEntry[],
         navItems,
       },
+      revalidate: 3600,
     };
   } catch (error) {
     console.error('[getStaticProps] data.tsx:', error);

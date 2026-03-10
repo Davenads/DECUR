@@ -88,6 +88,7 @@ export const getStaticProps: GetStaticProps<ResourcesProps> = async () => {
     const resourcesData = require('../data/resources.json');
     return {
       props: { glossaryTerms, resourcesData },
+      revalidate: 3600,
     };
   } catch (error) {
     console.error('[getStaticProps] resources.tsx:', error);

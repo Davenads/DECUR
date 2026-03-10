@@ -115,7 +115,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents];
 
-    return { props: { entries, insiderEvents } };
+    return { props: { entries, insiderEvents }, revalidate: 3600 };
   } catch (error) {
     console.error('[getStaticProps] explore.tsx:', error);
     return { notFound: true };

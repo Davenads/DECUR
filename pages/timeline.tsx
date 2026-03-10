@@ -33,6 +33,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const entries: TimelineEntry[] = require('../data/ufotimeline.json');
     return {
       props: { entries },
+      revalidate: 3600,
     };
   } catch (error) {
     console.error('[getStaticProps] timeline.tsx:', error);

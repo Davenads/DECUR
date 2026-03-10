@@ -101,7 +101,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
       });
     }
 
-    return { props: { corpus } };
+    return { props: { corpus }, revalidate: 3600 };
   } catch (error) {
     console.error('[getStaticProps] search.tsx:', error);
     return { notFound: true };
