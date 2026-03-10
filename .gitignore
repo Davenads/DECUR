@@ -49,6 +49,12 @@ next-env.d.ts
 #planning
 RESTRUCTURING-PLAN.md
 
+# screenshots
+/screenshots/
+
+# audit files
+aod-audit-cheatsheet.txt
+
 # YTDL Scripts
 /YTDL_Scripts/cookies.txt
 /YTDL_Scripts/yt-dlp.exe
