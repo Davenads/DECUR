@@ -10,6 +10,7 @@ import NolanProfile from './NolanProfile';
 import PuthoffProfile from './PuthoffProfile';
 import MellonProfile from './MellonProfile';
 import DavisProfile from './DavisProfile';
+import BigelowProfile from './BigelowProfile';
 
 interface InsidersListProps {
   entries: InsiderEntry[];
@@ -48,6 +49,9 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
     }
     if (selectedEntry.id === 'eric-davis') {
       return <DavisProfile onBack={onBack} />;
+    }
+    if (selectedEntry.id === 'robert-bigelow') {
+      return <BigelowProfile onBack={onBack} />;
     }
     return (
       <InsiderProfile

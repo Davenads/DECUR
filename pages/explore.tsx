@@ -13,6 +13,7 @@ import nolanJson from '../data/nolan.json';
 import puthoffJson from '../data/puthoff.json';
 import mellonJson from '../data/mellon.json';
 import davisJson from '../data/davis.json';
+import bigelowJson from '../data/bigelow.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -157,7 +158,17 @@ export const getStaticProps: GetStaticProps = async () => {
       []
     );
 
-    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents, ...mellonEvents, ...davisEvents];
+    // Bigelow key events (uses 'date' field)
+    const bigelowEvents: WBEvent[] = bigelowJson.profile.key_events.reduce(
+      (acc: WBEvent[], e: { date: string; event: string }) => {
+        const year = extractYear(e.date);
+        if (year) acc.push({ year, event: e.event, source: 'bigelow' });
+        return acc;
+      },
+      []
+    );
+
+    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents, ...mellonEvents, ...davisEvents, ...bigelowEvents];
 
     return { props: { entries, insiderEvents }, revalidate: 3600 };
   } catch (error) {

@@ -84,6 +84,18 @@
     "data_file": "nolan.json"
   },
   {
+    "id": "robert-bigelow",
+    "name": "Robert T. Bigelow",
+    "aliases": ["Bob Bigelow", "R.T. Bigelow"],
+    "role": "Founder, NIDS / BAASS; AAWSAP Contract Holder; UAP Research Patron",
+    "period": "1995–2012 (active research funding); 2007–2012 (AAWSAP government contract)",
+    "affiliation": "National Institute for Discovery Science (NIDS), Bigelow Aerospace, BAASS",
+    "summary": "Las Vegas real estate billionaire whose private funding and government contracting activities represent the most significant private investment in classified UAP research in American history. Founded NIDS (1995) - the research organization that bridged the 1990s Las Vegas UAP community (George Knapp, Bob Lazar era) with the modern disclosure ecosystem. His company BAASS received the $22M DIA AAWSAP contract (2007-2012), producing 38 classified DIRDs through Hal Puthoff and Eric Davis. In a May 2017 CBS 60 Minutes interview, stated he is 'absolutely convinced' that ETs exist and have visited Earth.",
+    "status": "detailed",
+    "tags": ["NIDS", "BAASS", "AAWSAP", "Skinwalker Ranch", "DIA Contract", "George Knapp", "60 Minutes", "Research Patron"],
+    "data_file": "bigelow.json"
+  },
+  {
     "id": "eric-davis",
     "name": "Dr. Eric W. Davis",
     "aliases": ["Eric Davis", "E.W. Davis"],

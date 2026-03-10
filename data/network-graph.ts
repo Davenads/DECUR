@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -60,6 +60,7 @@ export const graphData: GraphData = {
     { id: 'garry-nolan',         name: 'Garry Nolan',          type: 'person',       group: 'nolan',    val: 4 },
     { id: 'hal-puthoff',         name: 'Hal Puthoff',          type: 'person',       group: 'puthoff',  val: 4 },
     { id: 'eric-davis',          name: 'Eric Davis',           type: 'person',       group: 'davis',    val: 4 },
+    { id: 'robert-bigelow',      name: 'Robert Bigelow',       type: 'person',       group: 'bigelow',  val: 4 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -81,7 +82,8 @@ export const graphData: GraphData = {
     { id: 'los-alamos',          name: 'Los Alamos Lab',       type: 'organization', group: 'lazar',    val: 2 },
     { id: 'naval-intelligence',  name: 'Naval Intelligence',   type: 'organization', group: 'lazar',    val: 2 },
     { id: 'ttsa',                name: 'To The Stars Academy', type: 'organization', group: 'elizondo', val: 3 },
-    { id: 'bigelow-aerospace',   name: 'Bigelow Aerospace',    type: 'organization', group: 'elizondo', val: 2 },
+    { id: 'bigelow-aerospace',   name: 'Bigelow Aerospace',    type: 'organization', group: 'bigelow',  val: 3 },
+    { id: 'nids',                name: 'NIDS',                 type: 'organization', group: 'bigelow',  val: 3 },
     { id: 'pentagon-ousd',       name: 'OUSD Intelligence',    type: 'organization', group: 'elizondo', val: 3 },
 
     // Projects
@@ -166,9 +168,16 @@ export const graphData: GraphData = {
     { source: 'hal-puthoff',     target: 'bigelow-aerospace',  label: 'AAWSAP subcontractor' },
     { source: 'hal-puthoff',     target: 'garry-nolan',        label: 'physics research intersection' },
     { source: 'eric-davis',      target: 'hal-puthoff',        label: 'EarthTech colleague' },
-    { source: 'eric-davis',      target: 'bigelow-aerospace',  label: 'AAWSAP DIRD author; NIDS affiliation' },
+    { source: 'eric-davis',      target: 'nids',               label: 'visiting research scientist' },
     { source: 'eric-davis',      target: 'aatip',              label: 'DIRD contributor' },
     { source: 'eric-davis',      target: 'david-grusch',       label: 'corroborating crash retrieval claims' },
+    { source: 'robert-bigelow',  target: 'nids',               label: 'founded' },
+    { source: 'robert-bigelow',  target: 'bigelow-aerospace',  label: 'founded' },
+    { source: 'robert-bigelow',  target: 'george-knapp',       label: 'NIDS media partner' },
+    { source: 'robert-bigelow',  target: 'hal-puthoff',        label: 'NIDS / BAASS research partnership' },
+    { source: 'robert-bigelow',  target: 'eric-davis',         label: 'NIDS visiting scientist; BAASS researcher' },
+    { source: 'robert-bigelow',  target: 'harry-reid',         label: 'AAWSAP funding secured by Reid' },
+    { source: 'nids',            target: 'bigelow-aerospace',  label: 'evolved into BAASS' },
     { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
     { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
     { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },
