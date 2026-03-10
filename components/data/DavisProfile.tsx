@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import davisData from '../../data/insiders/davis.json';
-import ProfileTabBar from './shared/ProfileTabBar';
+import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
@@ -367,32 +367,17 @@ const DavisProfile: FC<DavisProfileProps> = ({ onBack }) => {
   };
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <div className="flex items-start gap-4">
-        <button
-          onClick={onBack}
-          className="text-sm text-gray-400 hover:text-gray-600 transition-colors mt-1 shrink-0"
-        >
-          ← Back
-        </button>
-        <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900">{data.profile.name}</h2>
-          <p className="text-sm text-primary font-medium mt-0.5">{data.profile.roles[0]}</p>
-          <p className="text-xs text-gray-400 mt-0.5">{data.profile.service_period}</p>
-        </div>
-      </div>
-
-      {/* Tabs */}
-      <ProfileTabBar
-        tabs={TABS as unknown as Array<{ id: string; label: string }>}
-        activeTab={activeTab}
-        onTabChange={(id) => setActiveTab(id as TabId)}
-      />
-
-      {/* Tab content */}
-      <div>{renderTab()}</div>
-    </div>
+    <ProfileShell
+      name={data.profile.name}
+      role={data.profile.roles[0]}
+      period={data.profile.service_period}
+      tabs={TABS}
+      activeTab={activeTab}
+      onTabChange={(id) => setActiveTab(id as TabId)}
+      onBack={onBack}
+    >
+      {renderTab()}
+    </ProfileShell>
   );
 };
 

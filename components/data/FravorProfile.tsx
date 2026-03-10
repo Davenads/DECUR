@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import fravorData from '../../data/insiders/fravor.json';
-import ProfileTabBar from './shared/ProfileTabBar';
+import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
@@ -328,34 +328,17 @@ const FravorProfile: FC<FravorProfileProps> = ({ onBack }) => {
   };
 
   return (
-    <div>
-      <div className="mb-5">
-        <button
-          onClick={onBack}
-          className="text-sm text-gray-400 hover:text-primary transition-colors mb-3 flex items-center gap-1"
-        >
-          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Insiders
-        </button>
-        <div className="flex items-start justify-between">
-          <div>
-            <h2 className="text-2xl font-bold font-heading text-gray-900">{data.profile.name}</h2>
-            <p className="text-sm text-gray-500 mt-0.5">
-              {data.profile.roles[0]}, {data.profile.service_period}
-            </p>
-          </div>
-          <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium shrink-0">
-            Case File
-          </span>
-        </div>
-      </div>
-
-      <ProfileTabBar tabs={TABS} activeTab={activeTab} onTabChange={setActiveTab} />
-
-      <div>{renderTab()}</div>
-    </div>
+    <ProfileShell
+      name={data.profile.name}
+      role={data.profile.roles[0]}
+      period={data.profile.service_period}
+      tabs={TABS}
+      activeTab={activeTab}
+      onTabChange={(id) => setActiveTab(id as TabId)}
+      onBack={onBack}
+    >
+      {renderTab()}
+    </ProfileShell>
   );
 };
 
