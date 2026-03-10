@@ -45,6 +45,7 @@ next-env.d.ts
 # temp files
 .tmp
 .cache
+nul
 
 #planning
 RESTRUCTURING-PLAN.md

@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { BurischData, BurischProject, BurischDocument, BurischTestimony, BurischConcept, MJ12Member } from '../../types/data';
-import burischData from '../../data/burisch.json';
+import burischData from '../../data/insiders/burisch.json';
 
 const data = burischData as BurischData;
 

@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import nolanData from '../../data/nolan.json';
+import nolanData from '../../data/insiders/nolan.json';
 import ProfileTabBar from './shared/ProfileTabBar';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

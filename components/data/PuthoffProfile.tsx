@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import puthoffData from '../../data/puthoff.json';
+import puthoffData from '../../data/insiders/puthoff.json';
 import ProfileTabBar from './shared/ProfileTabBar';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

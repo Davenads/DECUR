@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import gruschData from '../../data/grusch.json';
+import gruschData from '../../data/insiders/grusch.json';
 import ProfileTabBar from './shared/ProfileTabBar';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

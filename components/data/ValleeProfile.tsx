@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import valleeData from '../../data/vallee.json';
+import valleeData from '../../data/insiders/vallee.json';
 import ProfileTabBar from './shared/ProfileTabBar';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

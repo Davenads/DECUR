@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import fravorData from '../../data/fravor.json';
+import fravorData from '../../data/insiders/fravor.json';
 import ProfileTabBar from './shared/ProfileTabBar';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

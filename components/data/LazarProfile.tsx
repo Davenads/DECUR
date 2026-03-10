@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
 import { LazarData } from '../../types/data';
-import lazarData from '../../data/lazar.json';
+import lazarData from '../../data/insiders/lazar.json';
 import ProfileTabBar from './shared/ProfileTabBar';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

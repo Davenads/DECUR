@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import mellonData from '../../data/mellon.json';
+import mellonData from '../../data/insiders/mellon.json';
 import ProfileTabBar from './shared/ProfileTabBar';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
