@@ -130,5 +130,17 @@
     "status": "detailed",
     "tags": ["S-4", "Element 115", "Gravity Wave Propulsion", "Area 51", "Project Galileo", "EG&G", "KLAS-TV", "Tikaboo Valley"],
     "data_file": "lazar.json"
+  },
+  {
+    "id": "jacques-vallee",
+    "name": "Dr. Jacques F. Vallée",
+    "aliases": ["Jacques Vallee", "J.F. Vallée"],
+    "role": "Astrophysicist, Computer Scientist; Scientific Advisor, NIDS; Author - Forbidden Science",
+    "period": "1963–present (UAP research); 1995–2004 (NIDS scientific advisor)",
+    "affiliation": "Northwestern University (with Hynek), SRI International, NIDS, Sol Foundation",
+    "summary": "French-American astrophysicist and computer scientist who co-developed the first computerized map of Mars at the Paris Observatory, worked alongside J. Allen Hynek on the official U.S. Air Force UAP investigation (Project Blue Book), and has spent six decades as the field's most credentialed scientific voice. Uniquely documented: his Forbidden Science diary series (4 volumes, 1957-2009) records contemporaneous private conversations with government researchers, intelligence officials, and UAP witnesses. Best known for his critique of the extraterrestrial hypothesis in favor of the Control System / Interdimensional Hypothesis, and for co-authoring a peer-reviewed UAP methodology paper in a mainstream aerospace journal with Dr. Garry Nolan (2022).",
+    "status": "detailed",
+    "tags": ["Forbidden Science", "NIDS", "Control System Hypothesis", "IDH", "Hynek", "SRI International", "Peer-Reviewed Research", "Magonia", "Sol Foundation"],
+    "data_file": "vallee.json"
   }
 ]

@@ -14,6 +14,7 @@ import puthoffJson from '../data/puthoff.json';
 import mellonJson from '../data/mellon.json';
 import davisJson from '../data/davis.json';
 import bigelowJson from '../data/bigelow.json';
+import valleeJson from '../data/vallee.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -168,7 +169,17 @@ export const getStaticProps: GetStaticProps = async () => {
       []
     );
 
-    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents, ...mellonEvents, ...davisEvents, ...bigelowEvents];
+    // Vallée key events (uses 'date' field)
+    const valleeEvents: WBEvent[] = valleeJson.profile.key_events.reduce(
+      (acc: WBEvent[], e: { date: string; event: string }) => {
+        const year = extractYear(e.date);
+        if (year) acc.push({ year, event: e.event, source: 'vallee' });
+        return acc;
+      },
+      []
+    );
+
+    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents, ...mellonEvents, ...davisEvents, ...bigelowEvents, ...valleeEvents];
 
     return { props: { entries, insiderEvents }, revalidate: 3600 };
   } catch (error) {

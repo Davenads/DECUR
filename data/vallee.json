@@ -1,0 +1,232 @@
+{
+  "profile": {
+    "id": "jacques-vallee",
+    "name": "Dr. Jacques F. Vallée",
+    "aliases": ["Jacques Vallee", "J.F. Vallée", "J. Vallee"],
+    "born": "September 24, 1939",
+    "roles": [
+      "Astrophysicist and Computer Scientist",
+      "Scientific Advisor, National Institute for Discovery Science (NIDS)",
+      "Author — Forbidden Science diary series",
+      "Venture Capitalist, Infogrames / SRI alumni"
+    ],
+    "service_period": "1963–present (UAP research); 1995–2004 (NIDS); ongoing academic contributions",
+    "organizations": [
+      "Paris Observatory (astronomer, 1961-1962)",
+      "Northwestern University (research with J. Allen Hynek, 1963-1967)",
+      "Stanford Research Institute / SRI International (computer scientist)",
+      "National Institute for Discovery Science (NIDS) — scientific advisor",
+      "Sol Foundation (participant and advisor)"
+    ],
+    "clearance": "No formal government clearance held; engaged as civilian scientific advisor to government UAP research programs through informal channels documented in his contemporaneous diaries",
+    "summary": "Dr. Jacques Vallée is the closest thing to a living institutional memory of U.S. government UAP research. An astrophysicist by training and computer scientist by career — with a Ph.D. from Northwestern and a role in early ARPANET research at SRI — he began formally studying UAP in 1963 alongside J. Allen Hynek and has maintained continuous research engagement across six decades. His four-volume Forbidden Science diary series (covering 1957-1999, published 1992-2021) contains contemporaneous documented accounts of meetings with government officials, CIA contacts, and intelligence insiders about UAP programs — constituting a unique historical record written as events occurred rather than reconstructed from memory. He served as scientific advisor to Robert Bigelow's NIDS and has co-published peer-reviewed UAP methodology papers alongside Garry Nolan in Progress in Aerospace Sciences. He is best known for his theoretical challenge to the extraterrestrial hypothesis, which he considers insufficient to explain UAP phenomenology, and for Passport to Magonia — the 1969 landmark that first systematically compared UAP accounts to historical folklore and changed how researchers framed the question. He is the inspiration for the character Claude Lacombe in Steven Spielberg's Close Encounters of the Third Kind (1977).",
+    "education": [
+      "B.S. Mathematics — Sorbonne, Paris",
+      "M.S. Astrophysics — University of Lille",
+      "Ph.D. Computer Science — Northwestern University (1967)"
+    ],
+    "early_career": [
+      "Astronomer at the Paris Observatory (1961-1962); witnessed senior astronomers destroy computer tapes of Mars positional observations that didn't conform to existing models — formative experience with institutional suppression of anomalous data",
+      "Moved to Northwestern University (1963); introduced to J. Allen Hynek, USAF scientific consultant on Project Blue Book; began systematic UAP research as scientific collaboration",
+      "Joined SRI International as computer scientist; contributed to early ARPANET research while maintaining parallel private UAP research",
+      "Became venture capitalist in Silicon Valley; invested in early-stage technology companies while continuing research and writing",
+      "Published 15+ books on UAP phenomenology spanning 60 years, including the landmark Passport to Magonia (1969) and the Forbidden Science diary series (1992-2021)"
+    ],
+    "key_events": [
+      { "date": "1939", "event": "Born Pontoise, France" },
+      { "date": "1955", "event": "First personal UAP observation as a teenager in Pontoise; the experience is described in Forbidden Science as formative" },
+      { "date": "1961", "event": "Astronomer at the Paris Observatory; witnesses a senior colleague order the destruction of a computer tape containing Mars positional data that didn't match existing models — documents this as his first experience with institutional suppression of anomalous observations" },
+      { "date": "1963", "event": "Arrives at Northwestern University; meets J. Allen Hynek, the USAF scientific consultant on Project Blue Book; begins formal UAP research collaboration. Hynek describes Vallée as the most rigorous scientific mind he encountered in UAP research." },
+      { "date": "1965", "event": "Publishes 'Anatomy of a Phenomenon' — the first serious scientific classification and analysis of UAP reports; establishes him as one of the first credentialed scientists to take UAP research public" },
+      { "date": "1967", "event": "Receives Ph.D. in Computer Science from Northwestern; joins SRI International; contributes to ARPANET early development in parallel with UAP research" },
+      { "date": "1969", "event": "Publishes 'Passport to Magonia' — landmark work cataloging parallels between modern UAP accounts and centuries of folklore, fairy mythology, and religious apparition reports; proposes that the phenomenon predates the industrial era and therefore cannot be explained solely by extraterrestrial spacecraft from distant planets" },
+      { "date": "1975", "event": "Publishes 'The Invisible College' — documents the informal network of credentialed scientists privately studying UAP while avoiding official ridicule; term becomes the label for the serious UAP research community" },
+      { "date": "1977", "event": "Serves as the direct inspiration for the character Claude Lacombe (played by François Truffaut) in Steven Spielberg's 'Close Encounters of the Third Kind'; publicly acknowledged by Spielberg" },
+      { "date": "1988–1991", "event": "Publishes the 'Dimensions,' 'Confrontations,' and 'Revelations' trilogy — systematic examination of UAP physical evidence, close encounter cases, and the landscape of UAP fraud" },
+      { "date": "1992", "event": "Publishes 'Forbidden Science: Journals 1957-1969' — Volume 1 of his diary series documenting his early career, meeting Hynek, interactions with government officials, and the suppression of UAP data. Written contemporaneously, not from reconstruction." },
+      { "date": "1995–2004", "event": "Serves as scientific advisor to Robert Bigelow's National Institute for Discovery Science (NIDS); contributes to the research program and methodology" },
+      { "date": "2008", "event": "Publishes 'Forbidden Science: Journals 1970-1979' (Volume 2) — documents his SRI period, interactions with CIA officials regarding remote viewing and UAP, and the early ARPANET years" },
+      { "date": "2019", "event": "Publishes 'Forbidden Science: Journals 1980-1989' (Volume 3) — documents his interactions with government insiders during the 1980s, including meetings with intelligence officials about UAP programs" },
+      { "date": "2021", "event": "Publishes 'Forbidden Science: Journals 1990-1999' (Volume 4) — covers the NIDS founding period and Bigelow's early research years; simultaneously co-authors 'Trinity: The Best-Kept Secret' with Paola Harris investigating a claimed 1945 New Mexico UAP crash predating Roswell" },
+      { "date": "2021", "event": "Co-authors paper in Progress in Aerospace Sciences alongside Garry Nolan, Beatriz Villarroel, and others: 'Improved Instrumental Methods for the Remote Detection and Measurement of Unidentified Aerial Phenomena' — peer-reviewed UAP methodology paper in a major aerospace journal" },
+      { "date": "2023–present", "event": "Continues as elder statesman of UAP research; participates in Sol Foundation activities alongside Nolan, Grusch, and Nell; maintains that the phenomenon represents a genuine scientific problem requiring rigorous methodology" }
+    ]
+  },
+
+  "forbidden_science": {
+    "series_title": "Forbidden Science: Journals",
+    "volumes": [
+      {
+        "volume": 1,
+        "subtitle": "Journals 1957-1969",
+        "published": 1992,
+        "period_covered": "1957–1969",
+        "summary": "Documents Vallée's formative years: the destruction of anomalous data at the Paris Observatory, meeting Hynek and beginning Project Blue Book-adjacent research, interactions with French and U.S. government officials about UAP, and the intellectual development of his challenge to the ETH. Contains contemporaneous accounts of early government UAP research networks."
+      },
+      {
+        "volume": 2,
+        "subtitle": "Journals 1970-1979",
+        "published": 2008,
+        "period_covered": "1970–1979",
+        "summary": "Documents his SRI period and early Silicon Valley years. Includes documented interactions with CIA officers regarding the intersection of remote viewing research and UAP, accounts of colleagues with classified program access, and his growing conviction that government knowledge of UAP extends far beyond what was publicly acknowledged."
+      },
+      {
+        "volume": 3,
+        "subtitle": "Journals 1980-1989",
+        "published": 2019,
+        "period_covered": "1980–1989",
+        "summary": "Documents his interactions with government insiders during the Reagan era, meetings with intelligence officials about UAP programs, and his growing research network. Contains accounts of researchers describing classified programs that would not become public knowledge until the 2017-2023 disclosure era."
+      },
+      {
+        "volume": 4,
+        "subtitle": "Journals 1990-1999",
+        "published": 2021,
+        "period_covered": "1990–1999",
+        "summary": "Documents the NIDS founding and early operation years, Bigelow's research program, and Vallée's interactions with the Los Alamos and intelligence community figures who participated in 1990s private UAP research. The most directly relevant volume to DECUR's current insider network."
+      }
+    ],
+    "historical_significance": "The Forbidden Science series is unique in UAP documentary evidence because the entries were written contemporaneously as daily diary entries, not reconstructed decades later. This makes them primary historical documents rather than retrospective accounts. The series provides the most detailed available record of the informal scientific and intelligence community network that studied UAP from the 1960s through the 1990s — the same network that produced Puthoff, Davis, and the NIDS/BAASS ecosystem.",
+    "key_figures_documented": [
+      "J. Allen Hynek — USAF Project Blue Book scientific consultant; Vallée's mentor and collaborator",
+      "CIA officers (unnamed) — documented contacts regarding remote viewing and UAP program intersections",
+      "Edward Teller — documented interactions at SRI",
+      "Various unnamed DIA and Air Force intelligence officials — documented meetings about UAP programs",
+      "Aimé Michel — French ufologist and early influence",
+      "Kit Green — CIA physician who later became involved in AAWSAP/BAASS research"
+    ]
+  },
+
+  "theory": {
+    "eth_critique": "Vallée's most influential theoretical contribution is his systematic critique of the Extraterrestrial Hypothesis (ETH). He argues that UAP phenomenology — including instantaneous appearance/disappearance, violation of Newtonian physics, interdimensional-seeming transitions, and the impossibility of biological beings withstanding reported maneuvers — is inconsistent with material spacecraft traveling from distant star systems. He does not argue UAP are not real; he argues they are real but not adequately explained by ETH.",
+    "control_system_hypothesis": "Vallée's own theoretical framework: UAP represent a 'control system' that has interacted with human consciousness and civilization across recorded history, shaping belief systems, mythology, and religious experience. The phenomenon is not a visiting technology but an active influence on human mental and cultural development. This is not widely accepted even within UAP research, but it is rigorously argued from historical data.",
+    "interdimensional_hypothesis": "Parallel to the control system concept: UAP may originate from dimensions or realities orthogonal to our spatial dimensions rather than from distant physical locations. This would explain apparent physics violations and the absence of recovered craft.",
+    "magonia_framework": "From 'Passport to Magonia': medieval accounts of fairy encounters, religious visions, and supernatural experiences share structural and phenomenological features with modern UAP close encounters. This implies either a consistent underlying phenomenon predating modern technology, or a cultural transmission that shapes how humans perceive and report anomalous experiences.",
+    "materials_research_position": "Despite his theoretical skepticism about ETH, Vallée has consistently advocated for rigorous physical evidence collection and analysis. His 2021 Progress in Aerospace Sciences paper co-authored with Nolan explicitly addresses instrumental detection and materials analysis methodology. His 2021 book 'Trinity' investigates what he considers a recovered craft case from 1945.",
+    "key_publications": [
+      { "year": "1965", "title": "Anatomy of a Phenomenon", "significance": "First serious scientific classification system for UAP" },
+      { "year": "1969", "title": "Passport to Magonia", "significance": "Landmark challenge to ETH; folklore-UAP parallel documented" },
+      { "year": "1975", "title": "The Invisible College", "significance": "Documents the informal scientific UAP research network" },
+      { "year": "1979", "title": "Messengers of Deception", "significance": "Analysis of UAP-related disinformation and cult phenomena" },
+      { "year": "1988", "title": "Dimensions", "significance": "Systematic case analysis supporting interdimensional framework" },
+      { "year": "1990", "title": "Confrontations", "significance": "Physical evidence cases; field research in Brazil" },
+      { "year": "1992-2021", "title": "Forbidden Science Vol. 1-4", "significance": "Contemporaneous diary record of 60 years in UAP research" },
+      { "year": "2021", "title": "Trinity: The Best-Kept Secret", "significance": "Investigation of claimed 1945 New Mexico UAP crash with Paola Harris" }
+    ]
+  },
+
+  "nids_role": {
+    "title": "Scientific Advisor",
+    "organization": "National Institute for Discovery Science (NIDS)",
+    "period": "c. 1995–2004",
+    "founder": "Robert Bigelow",
+    "contributions": [
+      "Provided theoretical and methodological framework for NIDS investigation of anomalous phenomena",
+      "Contributed his historical UAP case database to NIDS research efforts",
+      "Advised on research design for Skinwalker Ranch investigation",
+      "Served on scientific advisory board alongside John Alexander and Jacques Vallée; their combined expertise spanned physics, military intelligence, and phenomenological analysis",
+      "His NIDS affiliation created the direct institutional connection between the 1960s Hynek-era government research network and the Bigelow/BAASS era"
+    ],
+    "significance": "Vallée's NIDS advisory role represents the institutional handoff between two generations of UAP research: the Project Blue Book-adjacent network of the 1960s-1970s and the AAWSAP-era private research of the 2000s. His presence at NIDS connects both eras within a single institutional lineage."
+  },
+
+  "claims": [
+    {
+      "claim": "UAP represent a genuine, unexplained phenomenon that has been observed and documented across human history",
+      "status": "verified",
+      "basis": "U.S. government acknowledgment since 2019; six decades of case documentation; peer-reviewed journal coverage including Vallée's own published work",
+      "notes": "The most conservative of his claims; now effectively official government policy"
+    },
+    {
+      "claim": "The extraterrestrial hypothesis alone is insufficient to explain UAP phenomenology",
+      "status": "unverified",
+      "basis": "Theoretical position based on phenomenological analysis; UAP behavior (physics violations, instantaneous appearance, biological impossibility of acceleration tolerances) is argued to be inconsistent with material spacecraft",
+      "notes": "This is a theoretical framework, not a falsifiable claim; it cannot be verified or contradicted by current evidence and remains the subject of scientific debate"
+    },
+    {
+      "claim": "U.S. and French government agencies have possessed and suppressed substantial UAP evidence since at least the 1960s",
+      "status": "partially-verified",
+      "basis": "Documented in contemporaneous Forbidden Science diary entries from interactions with government officials; corroborated by AATIP revelation, Grusch congressional testimony, and DIA FOIA releases",
+      "notes": "The suppression aspect is corroborated; the specific scope of what was known in the 1960s-80s period documented in his diaries cannot be independently verified"
+    },
+    {
+      "claim": "Some UAP incidents have involved physical craft that left recoverable material evidence",
+      "status": "partially-verified",
+      "basis": "His 2021 'Trinity' book investigates a 1945 case; his Progress in Aerospace Sciences paper with Nolan explicitly addresses materials analysis methodology; Grusch's congressional testimony corroborates crash retrieval program existence",
+      "notes": "Vallée has advocated for materials science approaches to UAP; the specific cases he cites (Trinity, Ubatuba) have not been conclusively validated"
+    },
+    {
+      "claim": "The UAP phenomenon has systematically interacted with human consciousness and culture throughout recorded history",
+      "status": "unverified",
+      "basis": "The Control System hypothesis; documented structural parallels between UAP accounts and historical folklore in Passport to Magonia and subsequent works",
+      "notes": "The most controversial of his theoretical positions; accepted by a minority of UAP researchers and not corroborated by government program evidence"
+    }
+  ],
+
+  "credibility": {
+    "supporting": [
+      "Genuine scientific credentials across two disciplines (astrophysics and computer science) — he is one of the very few UAP researchers whose academic background is directly relevant to the physics and data analysis problems UAP presents",
+      "Forbidden Science diary series provides contemporaneous historical documentation — written as events occurred, not reconstructed from memory; the entries have not been publicly contradicted by the named parties",
+      "60-year continuous research record with no major credibility-damaging incidents — his positions have evolved but not reversed; he has admitted errors and updated claims",
+      "Peer-reviewed publication with Garry Nolan in Progress in Aerospace Sciences — institutional academic credibility",
+      "Accurately predicted the government's UAP acknowledgment trajectory decades in advance — his 1975 'Invisible College' described a network of insiders that was confirmed by the 2017-2023 disclosures",
+      "His NIDS affiliation is verifiable through Bigelow's and Kelleher's documented statements",
+      "Was taken seriously enough by Steven Spielberg to serve as the direct model for the scientist character in Close Encounters — a measure of his reputation among serious cultural figures in the 1970s"
+    ],
+    "contradicting": [
+      "His theoretical framework (IDH, Control System) is not falsifiable or testable by current scientific methods — it remains speculative philosophical framework despite its intellectual rigor",
+      "'Trinity: The Best-Kept Secret' (2021) received significant criticism from UAP researchers for relying on testimony from aging witnesses and lacking material corroboration",
+      "Has no claimed access to classified programs — unlike Grusch, Elizondo, or Davis, his knowledge comes from civilian observation and informal government contacts, not formal program access",
+      "His challenge to ETH, while intellectually coherent, is a minority position even within the UAP research community and may reflect personal theoretical preference as much as evidentiary necessity",
+      "Some of his older case analyses (pre-1990s) are based on witness testimony standards that would not meet current scientific documentation requirements",
+      "Lacks the kind of verifiable institutional position (DASD, NRO representative, AATIP director) that provides independent validation of access claims for other DECUR insiders"
+    ]
+  },
+
+  "associated_people": [
+    { "name": "J. Allen Hynek", "relation": "Primary mentor and collaborator at Northwestern (1963-1967); co-developed the CE (Close Encounter) classification system; USAF Project Blue Book scientific consultant whose research Vallée directly participated in" },
+    { "name": "Robert Bigelow", "relation": "NIDS founder; Vallée served as scientific advisor to Bigelow's research organization from c. 1995-2004" },
+    { "name": "Hal Puthoff", "relation": "SRI and NIDS network overlap; both operated in the informal scientific UAP research community from the 1970s forward; Forbidden Science documents interactions with SRI colleagues" },
+    { "name": "Garry Nolan", "relation": "Co-author on the 2021 Progress in Aerospace Sciences UAP methodology paper; both are associated with Sol Foundation" },
+    { "name": "Kit Green", "relation": "CIA physician who later became involved in AAWSAP/BAASS research; documented in Forbidden Science as an intelligence community contact" },
+    { "name": "Colm Kelleher", "relation": "NIDS Research Director; worked within the same institutional structure during the NIDS period" }
+  ],
+
+  "disclosures": [
+    {
+      "date": "1965",
+      "type": "Published Research",
+      "outlet": "Henry Regnery Company",
+      "description": "'Anatomy of a Phenomenon' — first serious scientific taxonomy of UAP; established Vallée as the first credentialed astrophysicist to publicly take UAP classification seriously"
+    },
+    {
+      "date": "1969",
+      "type": "Published Research",
+      "outlet": "Henry Regnery Company",
+      "description": "'Passport to Magonia' — landmark challenge to ETH documenting historical parallels between UAP and folklore; changed the theoretical framework of UAP research permanently"
+    },
+    {
+      "date": "1992",
+      "type": "Primary Historical Record",
+      "outlet": "North Atlantic Books",
+      "description": "'Forbidden Science Vol. 1: Journals 1957-1969' — first volume of contemporaneous diary series documenting early government UAP research; contains documented interactions with government officials written as events occurred"
+    },
+    {
+      "date": "2008–2021",
+      "type": "Primary Historical Record",
+      "outlet": "Anomalist Books / Documatica Research",
+      "description": "Volumes 2-4 of Forbidden Science (1970-1999) — completing the contemporaneous diary record of his 60-year engagement with government and intelligence community figures regarding UAP"
+    },
+    {
+      "date": "2021",
+      "type": "Peer-Reviewed Publication",
+      "outlet": "Progress in Aerospace Sciences",
+      "description": "Co-authored 'Improved Instrumental Methods for the Remote Detection and Measurement of Unidentified Aerial Phenomena' with Garry Nolan, Beatriz Villarroel, and others — peer-reviewed UAP methodology paper in a major aerospace journal"
+    },
+    {
+      "date": "2021",
+      "type": "Published Research",
+      "outlet": "Anomalist Books",
+      "description": "'Trinity: The Best-Kept Secret' with Paola Harris — investigation of a claimed 1945 New Mexico UAP crash predating Roswell; argued as the earliest documented UAP crash retrieval case based on surviving witness testimony"
+    }
+  ]
+}

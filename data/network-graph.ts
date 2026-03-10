@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -61,6 +61,7 @@ export const graphData: GraphData = {
     { id: 'hal-puthoff',         name: 'Hal Puthoff',          type: 'person',       group: 'puthoff',  val: 4 },
     { id: 'eric-davis',          name: 'Eric Davis',           type: 'person',       group: 'davis',    val: 4 },
     { id: 'robert-bigelow',      name: 'Robert Bigelow',       type: 'person',       group: 'bigelow',  val: 4 },
+    { id: 'jacques-vallee',      name: 'Jacques Vallée',       type: 'person',       group: 'vallee',   val: 4 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -178,6 +179,10 @@ export const graphData: GraphData = {
     { source: 'robert-bigelow',  target: 'eric-davis',         label: 'NIDS visiting scientist; BAASS researcher' },
     { source: 'robert-bigelow',  target: 'harry-reid',         label: 'AAWSAP funding secured by Reid' },
     { source: 'nids',            target: 'bigelow-aerospace',  label: 'evolved into BAASS' },
+    { source: 'jacques-vallee',  target: 'nids',               label: 'scientific advisor' },
+    { source: 'jacques-vallee',  target: 'hal-puthoff',        label: 'longtime research collaboration' },
+    { source: 'jacques-vallee',  target: 'garry-nolan',        label: 'co-authored peer-reviewed UAP paper' },
+    { source: 'jacques-vallee',  target: 'sol-foundation',     label: 'senior advisor' },
     { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
     { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
     { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },
