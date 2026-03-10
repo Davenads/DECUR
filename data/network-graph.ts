@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'pope' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -62,6 +62,7 @@ export const graphData: GraphData = {
     { id: 'eric-davis',          name: 'Eric Davis',           type: 'person',       group: 'davis',    val: 4 },
     { id: 'robert-bigelow',      name: 'Robert Bigelow',       type: 'person',       group: 'bigelow',  val: 4 },
     { id: 'jacques-vallee',      name: 'Jacques Vallée',       type: 'person',       group: 'vallee',   val: 4 },
+    { id: 'nick-pope',           name: 'Nick Pope',            type: 'person',       group: 'pope',     val: 4 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -86,6 +87,7 @@ export const graphData: GraphData = {
     { id: 'bigelow-aerospace',   name: 'Bigelow Aerospace',    type: 'organization', group: 'bigelow',  val: 3 },
     { id: 'nids',                name: 'NIDS',                 type: 'organization', group: 'bigelow',  val: 3 },
     { id: 'pentagon-ousd',       name: 'OUSD Intelligence',    type: 'organization', group: 'elizondo', val: 3 },
+    { id: 'mod-ufo-desk',        name: 'MoD UFO Desk',         type: 'organization', group: 'pope',     val: 2 },
 
     // Projects
     { id: 'project-aquarius',    name: 'Project Aquarius',     type: 'project',      group: 'burisch',  val: 4 },
@@ -183,6 +185,9 @@ export const graphData: GraphData = {
     { source: 'jacques-vallee',  target: 'hal-puthoff',        label: 'longtime research collaboration' },
     { source: 'jacques-vallee',  target: 'garry-nolan',        label: 'co-authored peer-reviewed UAP paper' },
     { source: 'jacques-vallee',  target: 'sol-foundation',     label: 'senior advisor' },
+    { source: 'nick-pope',       target: 'mod-ufo-desk',       label: 'ran (1991-1994)' },
+    { source: 'nick-pope',       target: 'luis-elizondo',      label: 'parallel government UAP investigators' },
+    { source: 'nick-pope',       target: 'jacques-vallee',     label: 'cited methodological influence' },
     { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
     { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
     { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },

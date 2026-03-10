@@ -15,6 +15,7 @@ import mellonJson from '../data/mellon.json';
 import davisJson from '../data/davis.json';
 import bigelowJson from '../data/bigelow.json';
 import valleeJson from '../data/vallee.json';
+import popeJson from '../data/pope.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -179,7 +180,17 @@ export const getStaticProps: GetStaticProps = async () => {
       []
     );
 
-    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents, ...mellonEvents, ...davisEvents, ...bigelowEvents, ...valleeEvents];
+    // Pope key events (uses 'date' field)
+    const popeEvents: WBEvent[] = popeJson.profile.key_events.reduce(
+      (acc: WBEvent[], e: { date: string; event: string }) => {
+        const year = extractYear(e.date);
+        if (year) acc.push({ year, event: e.event, source: 'pope' });
+        return acc;
+      },
+      []
+    );
+
+    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents, ...mellonEvents, ...davisEvents, ...bigelowEvents, ...valleeEvents, ...popeEvents];
 
     return { props: { entries, insiderEvents }, revalidate: 3600 };
   } catch (error) {

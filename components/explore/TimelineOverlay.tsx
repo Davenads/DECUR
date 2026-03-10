@@ -11,7 +11,7 @@ export interface WBEvent {
   year: number;
   event: string;
   category?: string;
-  source: 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee';
+  source: 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'pope';
 }
 
 interface Props {
@@ -35,6 +35,7 @@ const MELLON_COLOR    = '#d97706'; // amber-600 — distinct from all others
 const DAVIS_COLOR     = '#f43f5e'; // rose-500 — distinct from all others
 const BIGELOW_COLOR   = '#84cc16'; // lime-400 — distinct from all others
 const VALLEE_COLOR    = '#06b6d4'; // cyan-500 — distinct from all others
+const POPE_COLOR      = '#f97316'; // orange-500 — distinct from all others
 const UAP_COLOR       = '#93c5e8'; // light blue — matches EventFrequencyChart
 
 /* ─── Helpers ────────────────────────────────────────────────── */
@@ -61,6 +62,7 @@ interface BarTooltipPayload {
   davisEvents:    WBEvent[];
   bigelowEvents:  WBEvent[];
   valleeEvents:   WBEvent[];
+  popeEvents:     WBEvent[];
 }
 
 interface RechartsTooltipProps {
@@ -174,6 +176,14 @@ const BarTooltip: FC<RechartsTooltipProps> = ({ active, payload }) => {
           ))}
         </div>
       )}
+      {d.popeEvents.length > 0 && (
+        <div className="mt-1.5 space-y-0.5">
+          <p className="text-xs font-medium" style={{ color: POPE_COLOR }}>Pope:</p>
+          {d.popeEvents.map((e, i) => (
+            <p key={i} className="text-xs text-gray-600 pl-2 leading-tight">· {e.event}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
@@ -188,7 +198,7 @@ interface DotProps {
 
 const SwimlaneDot: FC<DotProps> = ({ cx = 0, cy = 0, payload }) => {
   if (!payload) return null;
-  const color = payload.source === 'burisch' ? BURISCH_COLOR : payload.source === 'grusch' ? GRUSCH_COLOR : payload.source === 'elizondo' ? ELIZONDO_COLOR : payload.source === 'fravor' ? FRAVOR_COLOR : payload.source === 'nell' ? NELL_COLOR : payload.source === 'nolan' ? NOLAN_COLOR : payload.source === 'puthoff' ? PUTHOFF_COLOR : payload.source === 'mellon' ? MELLON_COLOR : payload.source === 'davis' ? DAVIS_COLOR : payload.source === 'bigelow' ? BIGELOW_COLOR : payload.source === 'vallee' ? VALLEE_COLOR : LAZAR_COLOR;
+  const color = payload.source === 'burisch' ? BURISCH_COLOR : payload.source === 'grusch' ? GRUSCH_COLOR : payload.source === 'elizondo' ? ELIZONDO_COLOR : payload.source === 'fravor' ? FRAVOR_COLOR : payload.source === 'nell' ? NELL_COLOR : payload.source === 'nolan' ? NOLAN_COLOR : payload.source === 'puthoff' ? PUTHOFF_COLOR : payload.source === 'mellon' ? MELLON_COLOR : payload.source === 'davis' ? DAVIS_COLOR : payload.source === 'bigelow' ? BIGELOW_COLOR : payload.source === 'vallee' ? VALLEE_COLOR : payload.source === 'pope' ? POPE_COLOR : LAZAR_COLOR;
   return (
     <g>
       <line x1={cx} y1={cy - 8} x2={cx} y2={cy + 8} stroke={color} strokeWidth={1.5} opacity={0.4} />
@@ -207,8 +217,8 @@ interface SwimlaneTooltipProps {
 const SwimlaneTooltip: FC<SwimlaneTooltipProps> = ({ active, payload }) => {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
-  const color = d.source === 'burisch' ? BURISCH_COLOR : d.source === 'grusch' ? GRUSCH_COLOR : d.source === 'elizondo' ? ELIZONDO_COLOR : d.source === 'fravor' ? FRAVOR_COLOR : d.source === 'nell' ? NELL_COLOR : d.source === 'nolan' ? NOLAN_COLOR : d.source === 'puthoff' ? PUTHOFF_COLOR : d.source === 'mellon' ? MELLON_COLOR : d.source === 'davis' ? DAVIS_COLOR : d.source === 'bigelow' ? BIGELOW_COLOR : d.source === 'vallee' ? VALLEE_COLOR : LAZAR_COLOR;
-  const sourceName = d.source === 'burisch' ? 'Dan Burisch' : d.source === 'grusch' ? 'David Grusch' : d.source === 'elizondo' ? 'Luis Elizondo' : d.source === 'fravor' ? 'David Fravor' : d.source === 'nell' ? 'Karl Nell' : d.source === 'nolan' ? 'Garry Nolan' : d.source === 'puthoff' ? 'Hal Puthoff' : d.source === 'mellon' ? 'Chris Mellon' : d.source === 'davis' ? 'Eric Davis' : d.source === 'bigelow' ? 'Robert Bigelow' : d.source === 'vallee' ? 'Jacques Vallée' : 'Bob Lazar';
+  const color = d.source === 'burisch' ? BURISCH_COLOR : d.source === 'grusch' ? GRUSCH_COLOR : d.source === 'elizondo' ? ELIZONDO_COLOR : d.source === 'fravor' ? FRAVOR_COLOR : d.source === 'nell' ? NELL_COLOR : d.source === 'nolan' ? NOLAN_COLOR : d.source === 'puthoff' ? PUTHOFF_COLOR : d.source === 'mellon' ? MELLON_COLOR : d.source === 'davis' ? DAVIS_COLOR : d.source === 'bigelow' ? BIGELOW_COLOR : d.source === 'vallee' ? VALLEE_COLOR : d.source === 'pope' ? POPE_COLOR : LAZAR_COLOR;
+  const sourceName = d.source === 'burisch' ? 'Dan Burisch' : d.source === 'grusch' ? 'David Grusch' : d.source === 'elizondo' ? 'Luis Elizondo' : d.source === 'fravor' ? 'David Fravor' : d.source === 'nell' ? 'Karl Nell' : d.source === 'nolan' ? 'Garry Nolan' : d.source === 'puthoff' ? 'Hal Puthoff' : d.source === 'mellon' ? 'Chris Mellon' : d.source === 'davis' ? 'Eric Davis' : d.source === 'bigelow' ? 'Robert Bigelow' : d.source === 'vallee' ? 'Jacques Vallée' : d.source === 'pope' ? 'Nick Pope' : 'Bob Lazar';
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-xs">
       <div className="flex items-center gap-1.5 mb-1">
@@ -269,6 +279,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
         davisEvents:    yearWB.filter(e => e.source === 'davis'),
         bigelowEvents:  yearWB.filter(e => e.source === 'bigelow'),
         valleeEvents:   yearWB.filter(e => e.source === 'vallee'),
+        popeEvents:     yearWB.filter(e => e.source === 'pope'),
       };
     }
   );
@@ -334,6 +345,11 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
       .filter(e => e.source === 'vallee' && e.year >= yearStart && e.year <= yearEnd)
       .map(e => ({ ...e, x: e.year, y: 11 }));
 
+  const popeDots: Array<WBEvent & { x: number; y: number }> =
+    insiderEvents
+      .filter(e => e.source === 'pope' && e.year >= yearStart && e.year <= yearEnd)
+      .map(e => ({ ...e, x: e.year, y: 12 }));
+
   const xDomain: [number, number] = [yearStart, yearEnd];
   const xTicks = Array.from(
     { length: Math.floor((yearEnd - yearStart) / 5) + 1 },
@@ -387,7 +403,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
               <Tooltip content={<BarTooltip />} cursor={{ fill: 'rgba(0,119,204,0.06)' }} />
               <Bar dataKey="uap" radius={[2, 2, 0, 0]} maxBarSize={16}>
                 {barData.map((d, i) => {
-                  const hasWB = d.burischEvents.length > 0 || d.lazarEvents.length > 0 || d.gruschEvents.length > 0 || d.elizondoEvents.length > 0 || d.fravorEvents.length > 0 || d.nellEvents.length > 0 || d.nolanEvents.length > 0 || d.puthoffEvents.length > 0 || d.mellonEvents.length > 0 || d.davisEvents.length > 0 || d.bigelowEvents.length > 0 || d.valleeEvents.length > 0;
+                  const hasWB = d.burischEvents.length > 0 || d.lazarEvents.length > 0 || d.gruschEvents.length > 0 || d.elizondoEvents.length > 0 || d.fravorEvents.length > 0 || d.nellEvents.length > 0 || d.nolanEvents.length > 0 || d.puthoffEvents.length > 0 || d.mellonEvents.length > 0 || d.davisEvents.length > 0 || d.bigelowEvents.length > 0 || d.valleeEvents.length > 0 || d.popeEvents.length > 0;
                   return (
                     <Cell
                       key={i}
@@ -404,9 +420,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
       {/* Swimlane scatter panel */}
       <div>
         <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide font-medium">Insider Events</p>
-        <div style={{ height: 340 }} className="flex items-stretch">
+        <div style={{ height: 365 }} className="flex items-stretch">
           {/* Row labels column — fixed width, never overlaps the chart */}
           <div className="flex flex-col justify-around shrink-0 pr-2" style={{ width: 56 }}>
+            <span className="text-xs font-medium text-right leading-none" style={{ color: POPE_COLOR }}>Pope</span>
             <span className="text-xs font-medium text-right leading-none" style={{ color: VALLEE_COLOR }}>Vallée</span>
             <span className="text-xs font-medium text-right leading-none" style={{ color: BIGELOW_COLOR }}>Bigelow</span>
             <span className="text-xs font-medium text-right leading-none" style={{ color: DAVIS_COLOR }}>Davis</span>
@@ -421,7 +438,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
             <span className="text-xs font-medium text-right leading-none" style={{ color: LAZAR_COLOR }}>Lazar</span>
           </div>
           {/* Chart — takes remaining width */}
-          <div style={{ flex: 1, height: 340 }}>
+          <div style={{ flex: 1, height: 365 }}>
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart margin={{ top: 8, right: 4, left: 0, bottom: 8 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
@@ -437,7 +454,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
               <YAxis
                 dataKey="y"
                 type="number"
-                domain={[-0.5, 11.5]}
+                domain={[-0.5, 12.5]}
                 hide
               />
               <Tooltip content={<SwimlaneTooltip />} cursor={false} />
@@ -453,6 +470,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
               <Scatter data={davisDots}    shape={<SwimlaneDot />} name="Eric Davis" />
               <Scatter data={bigelowDots}  shape={<SwimlaneDot />} name="Robert Bigelow" />
               <Scatter data={valleeDots}   shape={<SwimlaneDot />} name="Jacques Vallée" />
+              <Scatter data={popeDots}     shape={<SwimlaneDot />} name="Nick Pope" />
             </ScatterChart>
           </ResponsiveContainer>
           </div>
@@ -508,6 +526,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-full inline-block" style={{ backgroundColor: VALLEE_COLOR }} />
           Vallée key event
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-full inline-block" style={{ backgroundColor: POPE_COLOR }} />
+          Pope key event
         </span>
       </div>
     </div>

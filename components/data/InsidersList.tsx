@@ -12,6 +12,7 @@ import MellonProfile from './MellonProfile';
 import DavisProfile from './DavisProfile';
 import BigelowProfile from './BigelowProfile';
 import ValleeProfile from './ValleeProfile';
+import PopeProfile from './PopeProfile';
 
 interface InsidersListProps {
   entries: InsiderEntry[];
@@ -56,6 +57,9 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
     }
     if (selectedEntry.id === 'jacques-vallee') {
       return <ValleeProfile onBack={onBack} />;
+    }
+    if (selectedEntry.id === 'nick-pope') {
+      return <PopeProfile onBack={onBack} />;
     }
     return (
       <InsiderProfile

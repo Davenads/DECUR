@@ -132,6 +132,18 @@
     "data_file": "lazar.json"
   },
   {
+    "id": "nick-pope",
+    "name": "Nick Pope",
+    "aliases": ["The Real Fox Mulder"],
+    "role": "UFO Desk Analyst, UK Ministry of Defence — Secretariat (Air Staff) 2a",
+    "period": "1991–1994 (UFO desk); 1985–2006 (MoD total)",
+    "affiliation": "UK Ministry of Defence, Secretariat (Air Staff) 2a",
+    "summary": "British civil servant who ran the UK Ministry of Defence's official UFO investigation desk from 1991 to 1994 — making him the closest British equivalent to Luis Elizondo. Assigned as a skeptic with Top Secret access to classified military incident reports, radar data, and witness testimony, he emerged from the role concluding that a genuine percentage of cases could not be explained by conventional means. Investigated the Cosford Incident (March 1993), a mass sighting across Shropshire and the West Midlands corroborated by trained military observers, which he assessed as the strongest British UAP case on record. His 1996 book 'Open Skies, Closed Minds' was the first firsthand account ever published by someone who held an actual government UAP investigation desk.",
+    "status": "detailed",
+    "tags": ["MoD", "UK Government", "Cosford Incident", "Rendlesham Forest", "Top Secret", "Government Investigator", "Open Skies Closed Minds"],
+    "data_file": "pope.json"
+  },
+  {
     "id": "jacques-vallee",
     "name": "Dr. Jacques F. Vallée",
     "aliases": ["Jacques Vallee", "J.F. Vallée"],
