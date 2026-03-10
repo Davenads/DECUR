@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -57,7 +57,7 @@ export const graphData: GraphData = {
     { id: 'david-fravor',        name: 'David Fravor',         type: 'person',       group: 'fravor',   val: 5 },
     { id: 'karl-nell',           name: 'Karl Nell',            type: 'person',       group: 'nell',     val: 4 },
     { id: 'jim-slaight',         name: 'Jim Slaight',          type: 'person',       group: 'fravor',   val: 2 },
-    { id: 'garry-nolan',         name: 'Garry Nolan',          type: 'person',       group: 'nell',     val: 2 },
+    { id: 'garry-nolan',         name: 'Garry Nolan',          type: 'person',       group: 'nolan',    val: 4 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -153,6 +153,8 @@ export const graphData: GraphData = {
     { source: 'david-grusch',    target: 'aaro',               label: 'liaised with' },
     { source: 'david-grusch',    target: 'sol-foundation',     label: 'co-founded' },
     { source: 'garry-nolan',     target: 'sol-foundation',     label: 'co-founded' },
+    { source: 'david-grusch',    target: 'garry-nolan',        label: 'Sol Foundation co-founder' },
+    { source: 'garry-nolan',     target: 'luis-elizondo',      label: 'UAP Disclosure Fund board' },
     { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
     { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
     { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },
