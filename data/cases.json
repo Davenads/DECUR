@@ -1,0 +1,580 @@
+[
+  {
+    "id": "nimitz-tic-tac",
+    "name": "USS Nimitz / Tic Tac Encounter",
+    "date": "November 14, 2004",
+    "location": "Pacific Ocean, ~100 miles SW of San Diego, CA",
+    "country": "United States",
+    "category": "military-aviation",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "During a pre-deployment exercise, two F/A-18F Super Hornets from VFA-41 'Black Aces' were directed by USS Princeton radar to investigate an unidentified contact. CDR David Fravor observed a 40-foot white Tic Tac-shaped object with no wings, no exhaust, and no visible means of propulsion performing impossible maneuvers above a churning patch of water. When Fravor attempted to intercept, the object accelerated toward him, then vanished. A second crew captured it on FLIR video minutes later. The Pentagon authenticated the footage in 2020. Fravor testified under oath before Congress in 2023.",
+    "tags": ["military", "FLIR-video", "Pentagon-confirmed", "congressional-testimony", "Navy", "radar-confirmed"],
+    "insider_connections": ["david-fravor"],
+    "overview": {
+      "key_facts": [
+        "Date: November 14, 2004, approximately 2:00 PM local time",
+        "Location: Pacific Ocean, approximately 100 nautical miles southwest of San Diego",
+        "USS Princeton (CG-59) had been tracking anomalous objects on radar for two weeks before this encounter",
+        "The object was described as approximately 40 feet long, white, oblong, with no wings, rotors, or visible propulsion",
+        "It was hovering at approximately 50 feet above a violently churning sea surface",
+        "When Fravor descended to intercept, the object climbed aggressively toward him, then reversed course and accelerated out of sight in under a second",
+        "A second F/A-18 crew captured the object on FLIR video (FLIR1 footage) minutes after Fravor's encounter",
+        "The Pentagon officially authenticated the FLIR1 footage in April 2020",
+        "CDR Fravor, Lt CDR Jim Slaight, CDR Alex Dietrich, and her WSO were all witnesses from the air",
+        "USS Princeton senior radar operator Kevin Day tracked the objects descending from 80,000 ft to sea level with no transient"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "FLIR1 video — Pentagon-authenticated FLIR thermal footage captured by a second F/A-18 crew; released by DoD April 27, 2020",
+        "USS Princeton radar data — raw radar tracks showing objects descending from 80,000 ft with no transient phase",
+        "Multiple aviator testimony under oath — congressional hearing July 26, 2023"
+      ],
+      "documentation": [
+        "Pentagon official statement (April 27, 2020) confirming video authenticity and 'unidentified' classification",
+        "UAP Task Force preliminary assessment (June 2021) referencing Nimitz-class encounters",
+        "Congressional record of July 26, 2023 House Oversight Committee hearing (Fravor sworn testimony)",
+        "Multiple FOIA requests confirming existence of additional classified Nimitz-related documentation"
+      ],
+      "physical": [
+        "Churning white water at the surface below the hovering object — observed by Fravor but no sample recovered",
+        "No sonic boom recorded despite apparent supersonic acceleration — consistent with all five observable characteristics catalogued by AATIP"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "CDR David Fravor",
+        "role": "Commanding Officer, VFA-41 'Black Aces'; lead pilot",
+        "type": "military",
+        "testimony": "I watched a 40-foot Tic Tac-shaped object with no wings, no exhaust, no visible means of propulsion hovering over a churning white-water disturbance. When I descended in a left-hand turn to intercept, it immediately mirrored my turn. When I committed to intercept, it accelerated and was gone. I have no explanation for what I saw. In 26 years of flying, I've never seen anything like it."
+      },
+      {
+        "name": "CDR Alex Dietrich",
+        "role": "Wingman to Fravor; second F/A-18 pilot",
+        "type": "military",
+        "testimony": "It was a Tic Tac-shaped object — elongated, about 40 feet long, no wings, no rotors, no exhaust plume. It had what I can only describe as 'smooth, translucent' movement. It didn't behave like any aircraft I'd ever seen. I was glad I wasn't alone."
+      },
+      {
+        "name": "Lt CDR Jim Slaight",
+        "role": "Fravor's wingman on intercept",
+        "type": "military",
+        "testimony": "There was definitely something there. I saw it. I can't explain what it was — it wasn't a balloon, it wasn't a drone, it wasn't any aircraft I've ever seen or heard of."
+      },
+      {
+        "name": "Kevin Day",
+        "role": "Senior chief petty officer, USS Princeton radar operator",
+        "type": "military",
+        "testimony": "We tracked these objects for two weeks. They would drop from 80,000 feet — which is above the operating ceiling of any known aircraft — to sea level in under a second, with no transient. They had no infrared signature. Nothing in my training or experience explained what we were seeing."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Department of Defense", "Pentagon", "UAP Task Force", "House Oversight Committee"],
+      "statements": [
+        {
+          "source": "Pentagon",
+          "date": "April 27, 2020",
+          "statement": "The Department of Defense has authorized the release of three unclassified Navy videos. The aerial phenomena observed in the videos remain characterized as 'unidentified.' The Navy previously acknowledged these videos in September 2019."
+        },
+        {
+          "source": "House Oversight Committee",
+          "date": "July 26, 2023",
+          "statement": "CDR David Fravor testified under oath alongside David Grusch and Ryan Graves — the first congressional UAP hearing to include direct witness testimony from a military aviator about a specific encounter."
+        },
+        {
+          "source": "UAP Task Force Preliminary Assessment",
+          "date": "June 25, 2021",
+          "statement": "The UAP Task Force was unable to identify 143 of 144 reported incidents. The Nimitz encounter is among the most data-rich cases in the dataset."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Pentagon-authenticated FLIR thermal video confirmed authentic by DoD in April 2020",
+        "Multiple credentialed military witnesses from four different perspectives (two aircraft + ship radar)",
+        "USS Princeton radar tracked objects for two weeks before the intercept — systemic, not isolated observation",
+        "Fravor testified under oath before Congress — legal perjury standard",
+        "Objects exhibited all five Elizondo-formulated 'observables': sudden acceleration, hypersonic velocity without signature, low observability, trans-medium travel, positive lift",
+        "No conventional explanation proposed by Pentagon, AARO, or UAP Task Force"
+      ],
+      "contradicting": [
+        "FLIR1 footage captured by a second crew, not Fravor's aircraft — chain of custody gap",
+        "Original FLIR video may have been compressed or degraded from classification/declassification process",
+        "No physical evidence or material sample recovered from the churning water below the object",
+        "AARO declined to confirm extraterrestrial origin — 'unidentified' does not mean non-human",
+        "Duration of Fravor's direct visual observation was approximately 5 minutes — limited data window"
+      ]
+    }
+  },
+  {
+    "id": "rendlesham-forest",
+    "name": "Rendlesham Forest Incident",
+    "date": "December 26-28, 1980",
+    "location": "Rendlesham Forest, Suffolk, UK — between RAF Woodbridge and RAF Bentwaters",
+    "country": "United Kingdom",
+    "category": "military-ground",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "Over three consecutive nights, USAF personnel stationed at twin RAF bases encountered structured craft in Rendlesham Forest. TSgt Jim Penniston claims to have touched a craft and transcribed symbols from its surface. On the second night, Lt Col Charles Halt — the deputy base commander — led a patrol into the forest and created a 17-minute audio tape recording events in real time, noting radiation readings above background level at the landing site. The Halt memo to the MoD was declassified. Nick Pope's reinvestigation concluded the official MoD dismissal was inadequate. It remains the UK's most documented UAP incident.",
+    "tags": ["military", "physical-evidence", "audio-tape", "radiation", "MoD", "USAF", "UK"],
+    "insider_connections": ["nick-pope"],
+    "overview": {
+      "key_facts": [
+        "First night (December 26): USAF security personnel reported a bright light descending into the forest; TSgt Jim Penniston and SSgt John Burroughs approached a structured craft and observed it at close range",
+        "Penniston claims to have touched the craft and transcribed symbols from its surface over 45 minutes",
+        "Second night (December 27-28): Lt Col Charles Halt led a patrol and created a 17-minute audio tape recording events in real time",
+        "Halt's tape documents radiation readings above background at the landing site and erratic light phenomena in the night sky",
+        "Physical evidence: indentations in the ground at the landing site, radiation readings above background measured by Geiger counter, reported broken tree branches at precise height",
+        "The Halt Memo — Halt's written report to the UK MoD — was declassified and released in 1983",
+        "The UK MoD officially dismissed the incident as having 'no defense significance'",
+        "Nick Pope's reinvestigation in 1993 concluded the dismissal was inadequate given the weight of evidence"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "Halt audio tape — 17-minute real-time audio recording by Lt Col Charles Halt documenting events as they unfolded; authenticated and publicly released",
+        "Multiple subsequent interviews with Penniston, Burroughs, and Halt on record from 1984 onward"
+      ],
+      "documentation": [
+        "Halt Memo (January 13, 1981) — Halt's official report to the UK Ministry of Defence; declassified under FOIA",
+        "UK MoD UFO files released 2009-2013 via National Archives — include Rendlesham-related correspondence",
+        "Radiation readings documented in Halt's tape and subsequent reports; reportedly measured at 25 times background at landing indentation",
+        "Penniston's notebook — contains hand-transcribed symbols he claims to have copied from the craft's surface"
+      ],
+      "physical": [
+        "Three landing indentations in the forest floor — measured and documented; plaster casts taken by USAF personnel",
+        "Broken tree branches at a consistent height ring around the site",
+        "Radiation readings above background measured with Geiger counter at landing site — documented on Halt tape"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "TSgt Jim Penniston",
+        "role": "USAF Security Police, RAF Woodbridge; first-night primary witness",
+        "type": "military",
+        "testimony": "I approached the craft in the forest. It was approximately 9 feet long, triangular in shape, with strange symbols on its surface. I touched it. The surface felt smooth, like glass. I spent 45 minutes examining it before it lifted off and disappeared."
+      },
+      {
+        "name": "SSgt John Burroughs",
+        "role": "USAF Security Police, RAF Woodbridge; first-night witness",
+        "type": "military",
+        "testimony": "I was with Penniston. We saw the craft land. There was a structured object — not a light, a solid object — that we both approached. I can't explain what it was."
+      },
+      {
+        "name": "Lt Col Charles Halt",
+        "role": "Deputy Base Commander, RAF Bentwaters; second-night patrol leader",
+        "type": "military",
+        "testimony": "I was there. I saw it. I've seen a lot of things over 30 years in the Air Force. This was not anything I could explain. We measured radiation at the landing site. I have the tape recording. I made a report to the MoD. Their dismissal was inadequate."
+      },
+      {
+        "name": "Nick Pope",
+        "role": "MoD UFO Desk Analyst; reinvestigated in 1993",
+        "type": "government-investigator",
+        "testimony": "After reviewing the classified MoD files, I concluded that the official position — that this had no defense significance — did not reflect the weight of evidence. A deputy base commander, multiple USAF witnesses, radiation readings, landing marks, and a real-time audio recording. The dismissal was not appropriate."
+      }
+    ],
+    "official_response": {
+      "agencies": ["UK Ministry of Defence", "USAF (RAF Bentwaters/Woodbridge)", "US Department of Defense"],
+      "statements": [
+        {
+          "source": "UK Ministry of Defence",
+          "date": "1983 (declassified)",
+          "statement": "The Halt Memo was received and filed. The MoD's position is that the incident has no defense significance and does not affect the UK's air defenses."
+        },
+        {
+          "source": "Nick Pope, MoD UFO Desk",
+          "date": "1993 (reinvestigation conclusion)",
+          "statement": "Having reviewed the full classified record, I assessed the MoD's dismissal as inadequate. The quality of the witnesses and the physical evidence warranted a more thorough investigation than was conducted."
+        },
+        {
+          "source": "US Department of Defense",
+          "date": "Multiple FOIA releases 1985-2010",
+          "statement": "No additional US government documentation on the Rendlesham Forest incident beyond the Halt Memo has been officially confirmed as declassified."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Lt Col Charles Halt's real-time audio tape is the only known instance of a senior military officer narrating a UAP encounter as it happens",
+        "The Halt Memo is an official government document — signed by a deputy base commander and sent to the MoD",
+        "Physical evidence (indentations, radiation readings) documented by multiple witnesses with Geiger counter measurements on tape",
+        "Witnesses include commissioned and non-commissioned officers across multiple ranks over three separate nights",
+        "John Burroughs later received classified VA medical treatment for radiation-related health effects — implying US government acknowledgment of the incident's physical impact",
+        "UK National Archives FOIA releases confirm ongoing MoD correspondence about the incident"
+      ],
+      "contradicting": [
+        "No physical evidence from the landing site was preserved or independently tested — indentations attributed to landing could have conventional explanations",
+        "MoD's official position was 'no defense significance' and this was never reversed by any subsequent declassification",
+        "Penniston's claims have become progressively more elaborate over decades — binary code story emerged years after the initial account",
+        "Radiation readings were above background but not at dangerous levels; the measurement methodology was not controlled",
+        "No craft was photographed during any of the three nights"
+      ]
+    }
+  },
+  {
+    "id": "uss-theodore-roosevelt",
+    "name": "USS Theodore Roosevelt Encounters",
+    "date": "2014-2015",
+    "location": "US East Coast — Atlantic Ocean and airspace off Virginia/Florida",
+    "country": "United States",
+    "category": "military-aviation",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "Over a sustained period in 2014-2015, multiple F/A-18 pilots attached to the USS Theodore Roosevelt carrier strike group reported near-daily encounters with unidentified objects operating in restricted military airspace. The objects — described as sphere, acorn, or metallic blimp shapes — had no visible propulsion, flew at altitudes from sea level to 30,000 feet, and were tracked on radar. The DoD released three associated videos (Gimbal, GoFast, FLIR1) in 2020. Pilot Ryan Graves testified under oath before Congress in 2023. Elizondo and Mellon facilitated the video release.",
+    "tags": ["military", "FLIR-video", "Pentagon-confirmed", "congressional-testimony", "Navy", "radar-confirmed", "sustained-incidents"],
+    "insider_connections": ["luis-elizondo", "chris-mellon"],
+    "overview": {
+      "key_facts": [
+        "Encounters were near-daily and sustained over approximately one year — not isolated incidents",
+        "Objects operated in restricted military airspace used for training, representing a potential safety and security concern",
+        "Object shapes described as sphere, acorn, or metallic blimp — consistent across multiple pilots",
+        "No visible propulsion, no wings, no exhaust; appeared to operate in all weather conditions",
+        "Altitude range: sea level to 30,000 feet with rapid transitions",
+        "Gimbal video: shows rotation of a thermal object that pilots couldn't explain; released by DoD April 2020",
+        "GoFast video: shows a fast-moving object skimming the ocean surface; released by DoD April 2020",
+        "FLIR1 video: the Nimitz encounter footage also released; sometimes grouped with these incidents",
+        "Ryan Graves testified before Congress July 26, 2023 that pilots were reporting encounters 'every day for years'",
+        "Luis Elizondo (AATIP director) and Chris Mellon (former DASD Intelligence) facilitated video release through TTSA and the New York Times"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "Gimbal video — DoD-authenticated FLIR footage of rotating unidentified object; pilots heard on audio expressing surprise; released April 27, 2020",
+        "GoFast video — DoD-authenticated FLIR footage of fast-moving object near ocean surface; released April 27, 2020",
+        "Multiple pilot audio recordings from cockpit communications during encounters"
+      ],
+      "documentation": [
+        "Pentagon statement (April 27, 2020) authenticating all three released videos as unclassified Navy footage",
+        "Ryan Graves written declaration and sworn testimony, House Oversight Committee, July 26, 2023",
+        "AARO historical record referencing sustained 2014-2015 E-Coast incidents",
+        "New York Times investigation (December 16, 2017) based on TTSA-facilitated video release — first public reporting"
+      ],
+      "physical": [
+        "No physical samples recovered; objects not intercepted",
+        "Consistent radar returns across multiple ship and aircraft radar systems over extended period"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Lt CDR Ryan Graves",
+        "role": "F/A-18F pilot, VFA-11 'Red Rippers'; primary public witness",
+        "type": "military",
+        "testimony": "We were seeing these things every day. Every day. In restricted airspace. They weren't ours, they weren't theirs — there was no explanation. My concern was flight safety. These objects were operating in our airspace with no transponder, no visible propulsion, and no response to our radio calls. A near-miss event was reported."
+      },
+      {
+        "name": "Lt Danny Accoin",
+        "role": "F/A-18F pilot, VFA-11; encountered object twice in two days",
+        "type": "military",
+        "testimony": "Twice in two days I had returns on my radar, picked up the object on FLIR, and flew to within a mile of it. Both times I could see it with instruments but not visually. I've never had that experience in my entire career."
+      },
+      {
+        "name": "Luis Elizondo",
+        "role": "Director, AATIP; investigated on behalf of DoD",
+        "type": "government-investigator",
+        "testimony": "The sustained nature of the Roosevelt incidents is what made them unique. This wasn't a one-time event. We're talking about objects operating in restricted airspace over an extended period, observed by multiple crews, with consistent radar tracks. That has significant national security implications regardless of what the objects are."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Department of Defense", "Pentagon", "AARO", "House Oversight Committee"],
+      "statements": [
+        {
+          "source": "Pentagon",
+          "date": "April 27, 2020",
+          "statement": "The DoD has authorized the release of three unclassified Navy videos. The aerial phenomena observed remain characterized as 'unidentified.'"
+        },
+        {
+          "source": "Navy",
+          "date": "September 18, 2019",
+          "statement": "The Navy acknowledges that these videos circulating in the public domain were never officially authorized for public release. The phenomena observed in the videos remain unidentified."
+        },
+        {
+          "source": "House Oversight Committee",
+          "date": "July 26, 2023",
+          "statement": "Ryan Graves testified that the safety reporting system failed to capture the frequency of encounters, leading to systematic underreporting of UAP incidents by pilots who feared career consequences."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Sustained, near-daily encounters over approximately one year — not a single misidentification event",
+        "Multiple independent pilots and crews reporting consistent object descriptions",
+        "Two DoD-authenticated FLIR videos (Gimbal, GoFast) confirmed released by Pentagon",
+        "Gimbal video includes cockpit audio of pilots reacting in real time, expressing confusion",
+        "Ryan Graves testified under oath before Congress — legal perjury standard",
+        "Near-miss safety event reported — objects operating in active military training airspace"
+      ],
+      "contradicting": [
+        "AARO and independent analysts have proposed that some Gimbal footage may be explained by a thermal artifact of the camera's auto-rotation system — not a physical object",
+        "The exact chain of custody from classified recordings to TTSA to New York Times is not fully documented",
+        "No physical samples, no intercept, no confirmed radar classification beyond 'unidentified'",
+        "Ryan Graves did not directly observe the objects himself during the most-cited incidents — relied on instrument data and peer accounts",
+        "Duration of sustained encounters creates ambiguity — some sightings may have conventional explanations even if others do not"
+      ]
+    }
+  },
+  {
+    "id": "belgian-ufo-wave",
+    "name": "Belgian UFO Wave",
+    "date": "November 1989 – April 1990",
+    "location": "Belgium — Eupen, Liège, and surrounding regions; F-16 intercept over Ardennes",
+    "country": "Belgium",
+    "category": "military-aviation",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "Over five months, thousands of Belgian civilians and police officers reported large triangular objects with three white lights and a central red light flying silently over Belgium. The Belgian Air Force (BAF) scrambled F-16 fighter jets on March 30-31, 1990 and achieved radar lock on an object that demonstrated apparent accelerations exceeding 40G — beyond any human-survivable limit. General Wilfried De Brouwer subsequently held a press conference publicly acknowledging the objects and stating they could not be identified. The BAF investigation is the most transparent official military UAP investigation ever conducted by any government.",
+    "tags": ["military", "radar-confirmed", "mass-witness", "NATO", "government-acknowledged", "Belgium"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "The wave began November 29, 1989 near Eupen and continued through April 1990",
+        "Estimated 13,500 witnesses reported sightings; approximately 2,600 filed written testimony with investigators",
+        "Object descriptions were remarkably consistent: large equilateral triangle, three white lights at corners, one central red light, silent",
+        "Belgian gendarmerie officers were among the earliest witnesses, lending immediate credibility",
+        "Belgian Air Force scrambled F-16s on March 30-31, 1990 in response to ground radar contacts",
+        "F-16s achieved radar lock; the object's apparent behavior during the lock exceeded any known aircraft: speed change from 280 to 1,800 km/h in 2 seconds, drop from 3,000m to 1,700m in 1 second",
+        "Calculated G-force: approximately 40G — far beyond human physiological tolerance",
+        "General Wilfried De Brouwer publicly presented the radar data at a press conference and stated the objects could not be identified",
+        "The BAF released its investigation report publicly — the most transparent official UAP military investigation in history"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "F-16 HUD (heads-up display) video from the March 30-31 intercept — released by Belgian Air Force",
+        "Ground radar recordings from multiple Belgian radar sites tracking the object simultaneously"
+      ],
+      "documentation": [
+        "Belgian Air Force official investigation report — publicly released (unprecedented for a military UAP investigation)",
+        "General Wilfried De Brouwer press conference materials and statements (June 1990)",
+        "Belgian Society for the Study of Space Phenomena (SOBEPS) investigation report — co-produced with BAF",
+        "Written testimony from 2,600 Belgian civilian witnesses on file with SOBEPS"
+      ],
+      "physical": [
+        "No physical evidence recovered",
+        "Radar data from multiple independent ground radar systems and airborne F-16 fire control radar showing simultaneous contacts"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "General Wilfried De Brouwer",
+        "role": "Deputy Chief of the Royal Belgian Air Force; led official investigation",
+        "type": "military",
+        "testimony": "Numerous reports of observed lights in the night sky have reached the Air Force. On March 30th, two F-16 aircraft were scrambled. The pilots confirmed that they had detected an unidentified object. The cause of these events is currently unknown. This is not a cover-up. We genuinely cannot explain what was seen."
+      },
+      {
+        "name": "Belgian Gendarmerie Officers",
+        "role": "First law enforcement responders; multiple officers across two nights",
+        "type": "law-enforcement",
+        "testimony": "We observed a large triangular object moving slowly and silently over Eupen at low altitude. It had three white lights and a central red light. It hovered. It was unlike any aircraft we had ever seen. We filed official reports."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Royal Belgian Air Force", "Belgian Ministry of Defence", "SOBEPS (Belgian UAP research body)"],
+      "statements": [
+        {
+          "source": "General Wilfried De Brouwer, Royal Belgian Air Force",
+          "date": "June 1990",
+          "statement": "The phenomenon is real. The Air Force cannot explain it. We have found no evidence of stealth aircraft, drones, or any known technology that matches what was observed. We will continue to investigate."
+        },
+        {
+          "source": "Belgian Air Force Official Report",
+          "date": "1991",
+          "statement": "After extensive investigation, the Belgian Air Force has not been able to identify the craft observed by numerous witnesses. The behavior of the object during the F-16 radar lock — including apparent acceleration exceeding 40G — is inconsistent with any known aircraft or natural phenomenon."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Most transparently investigated UAP incident in history — Belgian Air Force released its full investigation report publicly",
+        "General-level military officer personally acknowledged the objects as unidentified in a public press conference",
+        "13,500 witnesses including trained law enforcement and military personnel with consistent descriptions",
+        "F-16 HUD video and ground radar data corroborate the airborne encounter",
+        "Radar data from multiple independent systems showing simultaneous contacts eliminates single-system artifact",
+        "40G apparent acceleration during F-16 radar lock exceeds any human-survivable maneuver — no conventional aircraft explanation"
+      ],
+      "contradicting": [
+        "Most photographs from civilian witnesses were subsequently assessed as misidentifications or fabrications — no confirmed authenticated civilian imagery",
+        "The F-16 HUD video is considered ambiguous by some analysts — the radar lock may have been on weather phenomena or ground clutter",
+        "The 40G calculation assumes the object was at the altitude the radar indicated — atmospheric ducting could explain anomalous radar behavior",
+        "No physical material was recovered and no object was visually identified by F-16 pilots despite the radar lock",
+        "The investigation was conducted in 1990 with less advanced analysis tools than are currently available"
+      ]
+    }
+  },
+  {
+    "id": "iranian-f4-incident",
+    "name": "Iranian F-4 Incident",
+    "date": "September 19, 1976",
+    "location": "Tehran, Iran — airspace over Tehran and surrounding regions",
+    "country": "Iran",
+    "category": "military-aviation",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "An Imperial Iranian Air Force F-4 Phantom scrambled to intercept a bright object over Tehran experienced complete electronic failure when approaching the target. A second F-4 also scrambled, achieved radar lock, and attempted to fire an AIM-9 missile — at which point all weapons systems and instrument panels went dark. When the pilot broke off the attack, systems resumed. A declassified Defense Intelligence Agency report documented the incident and assessed it as a genuine encounter with an unknown craft. The DIA document is one of the most specific and compelling official UAP records released by the US government.",
+    "tags": ["military", "DIA-declassified", "weapons-interference", "Iran", "radar-confirmed", "electronics-failure"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: September 19, 1976, approximately 12:30 AM local time",
+        "Initial reports came from civilian phone calls to Mehrabad Air Base reporting a bright object over Tehran",
+        "First F-4 scrambled; pilot reported loss of all instruments and communications when approaching — turned back and systems immediately restored",
+        "Second F-4 scrambled by General Parviz Jafari; achieved radar lock on an object roughly the size of a 707 tanker",
+        "A smaller object separated from the main object and approached the second F-4; Jafari attempted to fire an AIM-9 missile",
+        "At the moment of weapons selection, all systems failed — instruments, radio, weapons control all went dark",
+        "When Jafari broke off the attack and descended, all systems immediately restored",
+        "A second smaller object separated from the main object and impacted the ground with a bright flash but no explosion",
+        "The US Defense Intelligence Agency (DIA) produced a classified report assessing the incident",
+        "The DIA document was later declassified and released — it is considered one of the most specific official UAP documents in the public record"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "No video or audio recordings from the incident — pre-FLIR era"
+      ],
+      "documentation": [
+        "Defense Intelligence Agency classified report: 'Unidentified Flying Object Over Iran' — declassified; states the incident 'was a classic which meets all the criteria necessary for a valid study of the UFO phenomenon'",
+        "Joint Chiefs of Staff and Secretary of State cables referencing the incident",
+        "Iranian Air Force official report filed by General Jafari and the flight crews",
+        "National Security Archive release of the DIA document (1978 declassification)"
+      ],
+      "physical": [
+        "Bright flash on impact at ground level near Shahabad Safid — reported by crews but site investigation inconclusive",
+        "Electronic interference with F-4 weapons and instrument systems — documented in DIA report"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "General Parviz Jafari",
+        "role": "IIAF Phantom pilot; primary witness on second intercept",
+        "type": "military",
+        "testimony": "I acquired radar lock. The object was large — like a 707 tanker. A smaller object separated and came at me. I tried to fire an AIM-9. Nothing. Every system went dark. When I broke off, everything came back immediately. I have been flying for 30 years. I have never experienced anything like this."
+      },
+      {
+        "name": "First F-4 Pilot (unnamed)",
+        "role": "IIAF Phantom pilot; first intercept attempt",
+        "type": "military",
+        "testimony": "As I approached the object, I lost all communications and instruments. I broke off and turned back. Everything came back immediately. Something was interfering with my aircraft."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Defense Intelligence Agency (DIA)", "US Department of State", "Joint Chiefs of Staff"],
+      "statements": [
+        {
+          "source": "Defense Intelligence Agency",
+          "date": "September 1976 (declassified 1978)",
+          "statement": "This case is a classic which meets all the criteria necessary for a valid study of the UFO phenomenon: (a) The object was seen by multiple witnesses from different locations and perspectives. (b) The object was tracked on radar. (c) The object had a definite impact on a military aircraft. (d) The object performed maneuvers that could not be accomplished by conventional aircraft."
+        },
+        {
+          "source": "US Embassy Tehran Cable",
+          "date": "1976",
+          "statement": "The incident is considered reliable. Multiple witnesses corroborate the account. The DIA assessment reflects the consensus view that this event merits serious analysis."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "DIA classified document explicitly states the case 'meets all criteria for a valid study of the UFO phenomenon'",
+        "US government produced an official, classified analytical document about the event — not just a report of a report",
+        "Electronic interference affected two separate aircraft independently — hard to dismiss as instrument error",
+        "Weapons systems failure at the moment of attack selection is a specific, technically verifiable event",
+        "Multiple military witnesses across two aircraft and ground radar",
+        "General Parviz Jafari subsequently gave consistent testimony over decades in interviews"
+      ],
+      "contradicting": [
+        "No physical evidence of the 'impact' site confirmed — ground teams found nothing conclusive",
+        "The incident occurred in 1976 with Cold War geopolitical context — both US and Soviet advanced aircraft were active in Iranian airspace",
+        "Radar equipment of 1976 vintage had significant potential for false locks and ghost returns",
+        "Electronic interference could be explained by high-powered electronic warfare jamming from a US or Soviet asset",
+        "Primary witnesses are Iranian military figures from a country that subsequently underwent revolution — independent corroboration is limited"
+      ]
+    }
+  },
+  {
+    "id": "jal-1628",
+    "name": "JAL Flight 1628",
+    "date": "November 17, 1986",
+    "location": "Alaskan airspace — Anchorage ARTCC coverage, near Ft. Yukon",
+    "country": "United States (incident over Alaska)",
+    "category": "commercial-aviation",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "Japan Air Lines Boeing 747 freighter flight 1628, commanded by Captain Kenju Terauchi, encountered two small objects and then a massive craft over Alaska during a cargo flight from Paris to Tokyo. The FAA confirmed simultaneous radar tracking from both the aircraft and an Air Route Traffic Control Center. Terauchi described the large craft as twice the size of an aircraft carrier. The FAA's investigation was suppressed by internal pressure according to FAA official John Callahan, who later became a Disclosure Project witness. The incident is considered one of the most credible commercial aviation UAP encounters on record.",
+    "tags": ["commercial-aviation", "FAA-confirmed", "radar-confirmed", "pilot-testimony", "Japan", "Alaska"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: November 17, 1986, approximately 5:11 PM local Alaskan time",
+        "Crew: Captain Kenju Terauchi (20 years experience), co-pilot Takanori Tamefuji, flight engineer Yoshio Tsukuba",
+        "Three separate encounters over approximately 50 minutes of flight",
+        "First: two small objects with 'rows of nozzles' emitting light flew alongside the 747 for several minutes",
+        "Second: a massive object described as 'two times bigger than an aircraft carrier' appeared and followed the aircraft",
+        "FAA Anchorage ARTCC radar confirmed a return that followed JAL 1628 for approximately 32 minutes",
+        "Alaska Air Defense Command NORAD radar also detected a return",
+        "Military aircraft scrambled to investigate but found nothing",
+        "FAA conducted an internal investigation; administrator John Callahan later stated the CIA attended the briefing and ordered participants to say nothing",
+        "Captain Terauchi was subsequently grounded — a career consequence that other aviation witnesses have also reported"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "Air traffic control recordings of ground-to-air communications during the encounter",
+        "FAA radio transmissions documenting real-time crew reports"
+      ],
+      "documentation": [
+        "FAA official investigation report — concluded radar returns were 'unidentified'",
+        "FAA Anchorage ARTCC radar data — confirmed corroborating radar return",
+        "NORAD Alaska Air Defense Command radar data — partial confirmation",
+        "John Callahan's testimony and supporting documents released via Disclosure Project (2001)",
+        "Japan Air Lines investigation report"
+      ],
+      "physical": [
+        "No physical evidence recovered"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Captain Kenju Terauchi",
+        "role": "Japan Air Lines 747 Captain; primary witness",
+        "type": "commercial-aviation",
+        "testimony": "The thing was flying as if there was no such thing as gravity. It was moving around, and then it stopped all at once. The large craft that appeared was two times bigger than an aircraft carrier. We saw it for 50 minutes. It followed us."
+      },
+      {
+        "name": "John Callahan",
+        "role": "FAA Division Chief of Accidents and Investigations; investigated the incident",
+        "type": "government",
+        "testimony": "I had the data. I brought it to a briefing. The CIA was there. At the end of the meeting, the CIA officer said: 'This event never happened. We were never here. Don't talk about this to anybody.' I'm here telling you today. That stuff really happened."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Federal Aviation Administration", "NORAD", "Japan Air Lines", "CIA (alleged)"],
+      "statements": [
+        {
+          "source": "FAA",
+          "date": "January 1987",
+          "statement": "FAA radar data confirmed a primary radar return in the vicinity of JAL 1628 for approximately 32 minutes. The return cannot be identified with certainty. The captain's report has been filed."
+        },
+        {
+          "source": "John Callahan, FAA Division Chief",
+          "date": "2001 (Disclosure Project testimony)",
+          "statement": "The CIA attended our internal briefing on this event. They confiscated the data and told everyone present that this never happened. I kept a copy. I'm providing it now."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "FAA confirmed radar return following JAL 1628 for approximately 32 minutes — official government corroboration",
+        "NORAD also detected a return — independent second government radar system",
+        "Captain Terauchi had 29 years of aviation experience — highly trained observer",
+        "Three independent crew members reported consistent observations",
+        "FAA official John Callahan provided supporting documentation as a Disclosure Project witness",
+        "Terauchi's subsequent grounding suggests institutional concern about the report, not dismissal"
+      ],
+      "contradicting": [
+        "Terauchi's description of a craft 'twice the size of an aircraft carrier' is extraordinary and not corroborated by the radar data in scale",
+        "The radar return may have been the military aircraft that scrambled to investigate — not the unknown object",
+        "Callahan's CIA allegation is unverified and he was a single witness to the alleged suppression meeting",
+        "Japan Air Lines grounded Terauchi, which may indicate the airline's own assessment of the captain's reliability",
+        "No independent video or photographic evidence from the encounter"
+      ]
+    }
+  }
+]

@@ -5,7 +5,7 @@
 /**
  * Represents data category types
  */
-export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'insiders';
+export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'insiders' | 'cases';
 
 /**
  * Expanded sections state for data navigation
@@ -416,4 +416,52 @@ export interface BurischData {
   testimonies: BurischTestimony[];
   arguments: { supporting: BurischArgument[]; against: BurischArgument[] };
   concepts: BurischConcept[];
+}
+/* ─── Cases Types ──────────────────────────────────────────────── */
+
+export type EvidenceTier = 'tier-1' | 'tier-2' | 'tier-3';
+export type ClassificationStatus = 'unresolved' | 'explained' | 'disputed';
+
+export interface CaseWitness {
+  name: string;
+  role: string;
+  type: string;
+  testimony: string;
+}
+
+export interface CaseOfficialStatement {
+  source: string;
+  date: string;
+  statement: string;
+}
+
+export interface CaseEntry {
+  id: string;
+  name: string;
+  date: string;
+  location: string;
+  country: string;
+  category: string;
+  evidence_tier: EvidenceTier;
+  classification_status: ClassificationStatus;
+  summary: string;
+  tags: string[];
+  insider_connections: string[];
+  overview: {
+    key_facts: string[];
+  };
+  evidence: {
+    video_audio: string[];
+    documentation: string[];
+    physical: string[];
+  };
+  witnesses: CaseWitness[];
+  official_response: {
+    agencies: string[];
+    statements: CaseOfficialStatement[];
+  };
+  credibility: {
+    supporting: string[];
+    contradicting: string[];
+  };
 }

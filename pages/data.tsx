@@ -8,12 +8,14 @@ import QuotesBrowser from '../components/data/QuotesBrowser';
 import MediaBrowser from '../components/data/MediaBrowser';
 import NewsBrowser from '../components/data/NewsBrowser';
 import InsidersList from '../components/data/InsidersList';
+import CasesList from '../components/data/CasesList';
 import DataNavigation, { NavItemDef } from '../components/data/DataNavigation';
-import { CategoryType, InsiderEntry } from '../types/data';
+import { CategoryType, InsiderEntry, CaseEntry } from '../types/data';
 import { getEntriesByCategory, TimelineEntry } from '../lib/useTimelineData';
 import insidersData from '../data/insiders.json';
+import casesData from '../data/cases.json';
 
-const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'insiders'];
+const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'insiders', 'cases'];
 
 interface DataPageProps {
   categoryData: {
@@ -24,10 +26,11 @@ interface DataPageProps {
     news: TimelineEntry[];
   };
   insiders: InsiderEntry[];
+  cases: CaseEntry[];
   navItems: NavItemDef[];
 }
 
-export default function Data({ categoryData, insiders, navItems }: DataPageProps) {
+export default function Data({ categoryData, insiders, cases, navItems }: DataPageProps) {
   const router = useRouter();
   const [activeCategory, setActiveCategory] = useState<CategoryType>('events');
   const [sourceFilter, setSourceFilter] = useState<string | undefined>(undefined);
@@ -50,6 +53,7 @@ export default function Data({ categoryData, insiders, navItems }: DataPageProps
       case 'media':   return <MediaBrowser entries={categoryData.media} />;
       case 'news':           return <NewsBrowser entries={categoryData.news} />;
       case 'insiders': return <InsidersList entries={insiders} />;
+      case 'cases':    return <CasesList cases={cases} />;
       default:               return <EventsList entries={categoryData.events} />;
     }
   };
@@ -96,12 +100,14 @@ export const getStaticProps: GetStaticProps = async () => {
       { category: 'media',   label: 'Media & Documents',   description: 'Films, books & official docs',   count: media.length   },
       { category: 'news',           label: 'News',            description: 'Reports & developments',         count: news.length    },
       { category: 'insiders', label: 'Insiders',  description: 'Firsthand accounts & case files', count: insidersData.length },
+      { category: 'cases',    label: 'Cases',     description: 'Documented incidents & evidence',  count: casesData.length    },
     ];
 
     return {
       props: {
         categoryData: { events, figures, quotes, media, news },
         insiders: insidersData as InsiderEntry[],
+        cases: casesData as CaseEntry[],
         navItems,
       },
       revalidate: 3600,
