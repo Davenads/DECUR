@@ -1,5 +1,4 @@
 import { useState, FC, ChangeEvent, useMemo } from 'react';
-import resourcesData from '../../data/resources.json';
 
 interface Resource {
   id: string;
@@ -18,10 +17,14 @@ interface Resource {
 
 interface ResourceListProps {
   category: 'sources' | 'testimony';
+  data: {
+    sources: Resource[];
+    testimony: Resource[];
+  };
 }
 
-const ResourceList: FC<ResourceListProps> = ({ category }) => {
-  const resources: Resource[] = (resourcesData as Record<string, Resource[]>)[category] ?? [];
+const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
+  const resources: Resource[] = data[category] ?? [];
 
   const types = useMemo(() => {
     const seen = new Set<string>();

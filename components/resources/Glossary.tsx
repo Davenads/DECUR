@@ -1,5 +1,4 @@
 import { useState, useEffect, FC, ChangeEvent } from 'react';
-import glossaryData from '../../data/glossary.json';
 
 interface GlossaryTerm {
   term: string;
@@ -7,14 +6,16 @@ interface GlossaryTerm {
   source: 'curated' | 'gerb';
 }
 
+interface GlossaryProps {
+  terms: GlossaryTerm[];
+}
+
 interface GroupedTerms {
   [key: string]: GlossaryTerm[];
 }
 
-const TERMS = glossaryData as GlossaryTerm[];
-
-const Glossary: FC = () => {
-  const sorted = [...TERMS].sort((a, b) => a.term.localeCompare(b.term));
+const Glossary: FC<GlossaryProps> = ({ terms }) => {
+  const sorted = [...terms].sort((a, b) => a.term.localeCompare(b.term));
 
   const [search, setSearch] = useState('');
   const [grouped, setGrouped] = useState<GroupedTerms>({});
@@ -49,7 +50,7 @@ const Glossary: FC = () => {
         Key terms and acronyms used across government, military, and insider disclosure contexts.
       </p>
       <p className="text-xs text-gray-400 mb-6">
-        {TERMS.filter(t => t.source === 'curated').length} curated &middot; {TERMS.filter(t => t.source === 'gerb').length} extracted from UAP Gerb research
+        {terms.filter(t => t.source === 'curated').length} curated &middot; {terms.filter(t => t.source === 'gerb').length} extracted from UAP Gerb research
       </p>
 
       {/* Search */}

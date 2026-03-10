@@ -2,10 +2,27 @@ import { useState } from 'react';
 import ResourceList from '../components/resources/ResourceList';
 import Glossary from '../components/resources/Glossary';
 import type { NextPage } from 'next';
+import { GetStaticProps } from 'next';
 
 type TabType = 'sources' | 'testimony' | 'glossary';
 
-const Resources: NextPage = () => {
+interface ResourcesProps {
+  glossaryTerms: Array<{ term: string; definition: string; source: 'curated' | 'gerb' }>;
+  resourcesData: {
+    sources: Array<{
+      id: string; title: string; type?: string; author?: string; source?: string;
+      participants?: string; year?: string; date?: string; description: string;
+      url: string; insider: string | null; tags: string[];
+    }>;
+    testimony: Array<{
+      id: string; title: string; type?: string; author?: string; source?: string;
+      participants?: string; year?: string; date?: string; description: string;
+      url: string; insider: string | null; tags: string[];
+    }>;
+  };
+}
+
+const Resources: NextPage<ResourcesProps> = ({ glossaryTerms, resourcesData }) => {
   const [activeTab, setActiveTab] = useState<TabType>('sources');
 
   return (
@@ -54,13 +71,28 @@ const Resources: NextPage = () => {
 
         {/* Tab Content */}
         <div className="bg-white border border-gray-200 rounded-xl p-6">
-          {activeTab === 'sources' && <ResourceList category="sources" />}
-          {activeTab === 'testimony' && <ResourceList category="testimony" />}
-          {activeTab === 'glossary' && <Glossary />}
+          {activeTab === 'sources' && <ResourceList category="sources" data={resourcesData} />}
+          {activeTab === 'testimony' && <ResourceList category="testimony" data={resourcesData} />}
+          {activeTab === 'glossary' && <Glossary terms={glossaryTerms} />}
         </div>
       </div>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps<ResourcesProps> = async () => {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const glossaryTerms = require('../data/glossary.json');
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const resourcesData = require('../data/resources.json');
+    return {
+      props: { glossaryTerms, resourcesData },
+    };
+  } catch (error) {
+    console.error('[getStaticProps] resources.tsx:', error);
+    return { notFound: true };
+  }
 };
 
 export default Resources;
