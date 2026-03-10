@@ -1,4 +1,4 @@
-import { FC, useRef, useCallback, useState, useMemo } from 'react';
+import { FC, useRef, useCallback, useState, useMemo, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
 
@@ -42,7 +42,20 @@ const EMPTY_HIGHLIGHT: HighlightState = { nodes: new Set(), linkKeys: new Set() 
 
 const NetworkGraph: FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [graphWidth, setGraphWidth] = useState<number>(800);
   const [highlight, setHighlight] = useState<HighlightState>(EMPTY_HIGHLIGHT);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    setGraphWidth(el.clientWidth || 800);
+    const observer = new ResizeObserver(entries => {
+      const w = entries[0]?.contentRect.width;
+      if (w) setGraphWidth(w);
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [activeTypes, setActiveTypes] = useState<Set<NodeType>>(
     new Set(Object.keys(TYPE_LABELS) as NodeType[])
@@ -114,8 +127,9 @@ const NetworkGraph: FC = () => {
       const isHighlighted = highlight.nodes.size === 0 || highlight.nodes.has(id);
       const baseRadius = Math.sqrt((gNode.val ?? 1) * 6);
       const color = NODE_COLORS[gNode.type] ?? '#9ca3af';
-      const x = gNode.x as number;
-      const y = gNode.y as number;
+      const x = gNode.x;
+      const y = gNode.y;
+      if (x == null || y == null) return; // node not yet positioned by simulation
 
       ctx.beginPath();
       ctx.arc(x, y, baseRadius, 0, 2 * Math.PI);
@@ -200,7 +214,7 @@ const NetworkGraph: FC = () => {
       <div ref={containerRef} className="w-full" style={{ height: 520 }}>
         <ForceGraph2D
           graphData={filtered as { nodes: object[]; links: object[] }}
-          width={containerRef.current?.clientWidth ?? 800}
+          width={graphWidth}
           height={520}
           backgroundColor="#fafafa"
           nodeCanvasObject={nodeCanvasObject}
