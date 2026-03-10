@@ -82,26 +82,31 @@ export default function Data({ categoryData, insiders, navItems }: DataPageProps
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const events  = getEntriesByCategory(['famous-cases', 'sightings']);
-  const figures = getEntriesByCategory(['spotlight']);
-  const quotes  = getEntriesByCategory(['quotes']);
-  const media   = getEntriesByCategory(['documentaries', 'books-documents']);
-  const news    = getEntriesByCategory(['news']);
+  try {
+    const events  = getEntriesByCategory(['famous-cases', 'sightings']);
+    const figures = getEntriesByCategory(['spotlight']);
+    const quotes  = getEntriesByCategory(['quotes']);
+    const media   = getEntriesByCategory(['documentaries', 'books-documents']);
+    const news    = getEntriesByCategory(['news']);
 
-  const navItems: NavItemDef[] = [
-    { category: 'events',  label: 'Historical Events',  description: 'Famous cases & sightings',       count: events.length  },
-    { category: 'figures', label: 'Key Figures',         description: 'Researchers, officials & witnesses', count: figures.length },
-    { category: 'quotes',  label: 'Quotes',              description: 'Notable statements',             count: quotes.length  },
-    { category: 'media',   label: 'Media & Documents',   description: 'Films, books & official docs',   count: media.length   },
-    { category: 'news',           label: 'News',            description: 'Reports & developments',         count: news.length    },
-    { category: 'insiders', label: 'Insiders',  description: 'Firsthand accounts & case files', count: insidersData.length },
-  ];
+    const navItems: NavItemDef[] = [
+      { category: 'events',  label: 'Historical Events',  description: 'Famous cases & sightings',       count: events.length  },
+      { category: 'figures', label: 'Key Figures',         description: 'Researchers, officials & witnesses', count: figures.length },
+      { category: 'quotes',  label: 'Quotes',              description: 'Notable statements',             count: quotes.length  },
+      { category: 'media',   label: 'Media & Documents',   description: 'Films, books & official docs',   count: media.length   },
+      { category: 'news',           label: 'News',            description: 'Reports & developments',         count: news.length    },
+      { category: 'insiders', label: 'Insiders',  description: 'Firsthand accounts & case files', count: insidersData.length },
+    ];
 
-  return {
-    props: {
-      categoryData: { events, figures, quotes, media, news },
-      insiders: insidersData as InsiderEntry[],
-      navItems,
-    },
-  };
+    return {
+      props: {
+        categoryData: { events, figures, quotes, media, news },
+        insiders: insidersData as InsiderEntry[],
+        navItems,
+      },
+    };
+  } catch (error) {
+    console.error('[getStaticProps] data.tsx:', error);
+    return { notFound: true };
+  }
 };

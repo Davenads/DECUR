@@ -28,9 +28,14 @@ export default function Timeline({ entries }: TimelinePageProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
-  const entries: TimelineEntry[] = require('../data/ufotimeline.json');
-  return {
-    props: { entries },
-  };
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
+    const entries: TimelineEntry[] = require('../data/ufotimeline.json');
+    return {
+      props: { entries },
+    };
+  } catch (error) {
+    console.error('[getStaticProps] timeline.tsx:', error);
+    return { notFound: true };
+  }
 };

@@ -29,78 +29,83 @@ interface SearchPageProps {
 // ---- getStaticProps --------------------------------------------------------
 
 export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const timeline: Array<{
-    id: number;
-    title: string;
-    year: number;
-    excerpt: string;
-    categories: string[];
-  }> = require('../data/ufotimeline.json');
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const timeline: Array<{
+      id: number;
+      title: string;
+      year: number;
+      excerpt: string;
+      categories: string[];
+    }> = require('../data/ufotimeline.json');
 
-  const corpus: SearchItem[] = [];
+    const corpus: SearchItem[] = [];
 
-  // Insiders
-  for (const ins of insidersData as Array<{
-    id: string; name: string; role?: string; affiliation?: string;
-    summary?: string; tags?: string[];
-  }>) {
-    corpus.push({
-      id: `insider-${ins.id}`,
-      type: 'insider',
-      title: ins.name,
-      subtitle: ins.role ?? ins.affiliation ?? null,
-      description: ins.summary ?? ins.tags?.join(', ') ?? '',
-      href: `/data?category=insiders&insider=${ins.id}`,
-      badge: 'Insider',
-    });
+    // Insiders
+    for (const ins of insidersData as Array<{
+      id: string; name: string; role?: string; affiliation?: string;
+      summary?: string; tags?: string[];
+    }>) {
+      corpus.push({
+        id: `insider-${ins.id}`,
+        type: 'insider',
+        title: ins.name,
+        subtitle: ins.role ?? ins.affiliation ?? null,
+        description: ins.summary ?? ins.tags?.join(', ') ?? '',
+        href: `/data?category=insiders&insider=${ins.id}`,
+        badge: 'Insider',
+      });
+    }
+
+    // Timeline (title + excerpt only -- no full data)
+    for (const entry of timeline) {
+      corpus.push({
+        id: `timeline-${entry.id}`,
+        type: 'timeline',
+        title: entry.title,
+        subtitle: String(entry.year),
+        description: entry.excerpt ?? '',
+        href: `/timeline?year=${entry.year}`,
+        badge: (entry.categories?.[0] ?? 'event').replace(/-/g, ' '),
+      });
+    }
+
+    // Glossary
+    for (const term of glossaryData as Array<{
+      term: string; definition: string; source: string;
+    }>) {
+      corpus.push({
+        id: `glossary-${term.term}`,
+        type: 'glossary',
+        title: term.term,
+        description: term.definition,
+        href: `/resources?tab=glossary`,
+        badge: 'Glossary',
+      });
+    }
+
+    // Resources (sources + testimony)
+    const resources = resourcesData as unknown as {
+      sources: Array<{ id: string; title: string; author?: string; year?: string | number; description: string; type: string }>;
+      testimony: Array<{ id: string; title: string; author?: string; year?: string | number; description: string; type: string }>;
+    };
+    for (const r of [...(resources.sources ?? []), ...(resources.testimony ?? [])]) {
+      corpus.push({
+        id: `resource-${r.id}`,
+        type: 'resource',
+        title: r.title,
+        subtitle: r.author ? `${r.author}${r.year ? ` (${r.year})` : ''}` : null,
+        description: r.description ?? '',
+        href: `/resources`,
+        badge: r.type ?? 'Resource',
+      });
+    }
+
+    return { props: { corpus } };
+  } catch (error) {
+    console.error('[getStaticProps] search.tsx:', error);
+    return { notFound: true };
   }
-
-  // Timeline (title + excerpt only -- no full data)
-  for (const entry of timeline) {
-    corpus.push({
-      id: `timeline-${entry.id}`,
-      type: 'timeline',
-      title: entry.title,
-      subtitle: String(entry.year),
-      description: entry.excerpt ?? '',
-      href: `/timeline?year=${entry.year}`,
-      badge: (entry.categories?.[0] ?? 'event').replace(/-/g, ' '),
-    });
-  }
-
-  // Glossary
-  for (const term of glossaryData as Array<{
-    term: string; definition: string; source: string;
-  }>) {
-    corpus.push({
-      id: `glossary-${term.term}`,
-      type: 'glossary',
-      title: term.term,
-      description: term.definition,
-      href: `/resources?tab=glossary`,
-      badge: 'Glossary',
-    });
-  }
-
-  // Resources (sources + testimony)
-  const resources = resourcesData as unknown as {
-    sources: Array<{ id: string; title: string; author?: string; year?: string | number; description: string; type: string }>;
-    testimony: Array<{ id: string; title: string; author?: string; year?: string | number; description: string; type: string }>;
-  };
-  for (const r of [...(resources.sources ?? []), ...(resources.testimony ?? [])]) {
-    corpus.push({
-      id: `resource-${r.id}`,
-      type: 'resource',
-      title: r.title,
-      subtitle: r.author ? `${r.author}${r.year ? ` (${r.year})` : ''}` : null,
-      description: r.description ?? '',
-      href: `/resources`,
-      badge: r.type ?? 'Resource',
-    });
-  }
-
-  return { props: { corpus } };
 };
 
 // ---- Helpers ---------------------------------------------------------------
