@@ -1,17 +1,8 @@
 import { useState, useMemo, FC, ChangeEvent } from 'react';
 import { TimelineEntry } from '../../lib/useTimelineData';
+import { formatTimestamp } from '../../utils/formatting';
 
 interface Props { entries: TimelineEntry[]; }
-
-// Convert "00:51:43.017" → "51:43"  (drop hours if 0, drop ms)
-function formatTimestamp(ts: string): string {
-  const [hms] = ts.split('.');
-  const parts = hms.split(':');
-  const h = parseInt(parts[0], 10);
-  const m = parts[1];
-  const s = parts[2];
-  return h > 0 ? `${h}:${m}:${s}` : `${parseInt(m, 10)}:${s}`;
-}
 
 const QuotesBrowser: FC<Props> = ({ entries }) => {
   const [search, setSearch] = useState('');

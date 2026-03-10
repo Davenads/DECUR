@@ -1,13 +1,5 @@
 import { FC } from 'react';
-import { CategoryType } from '../../types/data';
-import { DataNavigationProps } from '../../types/components';
-
-export interface NavItemDef {
-  category: CategoryType;
-  label: string;
-  description: string;
-  count: number;
-}
+import { DataNavigationProps, NavItemDef } from '../../types/components';
 
 interface ExtendedProps extends DataNavigationProps {
   navItems: NavItemDef[];

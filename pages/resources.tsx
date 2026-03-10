@@ -3,6 +3,8 @@ import ResourceList from '../components/resources/ResourceList';
 import Glossary from '../components/resources/Glossary';
 import type { NextPage } from 'next';
 import { GetStaticProps } from 'next';
+import glossaryJson from '../data/glossary.json';
+import resourcesJson from '../data/resources.json';
 
 type TabType = 'sources' | 'testimony' | 'glossary';
 
@@ -82,12 +84,11 @@ const Resources: NextPage<ResourcesProps> = ({ glossaryTerms, resourcesData }) =
 
 export const getStaticProps: GetStaticProps<ResourcesProps> = async () => {
   try {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const glossaryTerms = require('../data/glossary.json');
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const resourcesData = require('../data/resources.json');
     return {
-      props: { glossaryTerms, resourcesData },
+      props: {
+        glossaryTerms: glossaryJson as ResourcesProps['glossaryTerms'],
+        resourcesData: resourcesJson as ResourcesProps['resourcesData'],
+      },
       revalidate: 3600,
     };
   } catch (error) {

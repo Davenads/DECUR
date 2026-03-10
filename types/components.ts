@@ -37,6 +37,16 @@ export interface TabProps {
 }
 
 /**
+ * Navigation item definition for Data category nav
+ */
+export interface NavItemDef {
+  category: CategoryType;
+  label: string;
+  description: string;
+  count: number;
+}
+
+/**
  * Props for search functionality
  */
 export interface SearchProps {

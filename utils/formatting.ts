@@ -57,3 +57,19 @@ export function capitalizeWords(text: string): string {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(' ');
 }
+
+/**
+ * Formats a video/audio timestamp string (HH:MM:SS.ms) to a display format
+ * Drops milliseconds, drops the hours component if 0
+ * e.g. "00:51:43.017" → "51:43",  "01:02:30.000" → "1:02:30"
+ * @param ts - Timestamp string in HH:MM:SS.ms format
+ * @returns Formatted timestamp string
+ */
+export function formatTimestamp(ts: string): string {
+  const [hms] = ts.split('.');
+  const parts = hms.split(':');
+  const h = parseInt(parts[0], 10);
+  const m = parts[1];
+  const s = parts[2];
+  return h > 0 ? `${h}:${m}:${s}` : `${parseInt(m, 10)}:${s}`;
+}
