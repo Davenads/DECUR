@@ -1,5 +1,9 @@
 import { FC, useState } from 'react';
 import gruschData from '../../data/grusch.json';
+import ProfileTabBar from './shared/ProfileTabBar';
+import ClaimsStatusBar from './shared/ClaimsStatusBar';
+import CredibilityBalance from './shared/CredibilityBalance';
+import { statusConfig } from './shared/profileConstants';
 
 const data = gruschData as typeof gruschData;
 
@@ -17,98 +21,6 @@ type TabId = typeof TABS[number]['id'];
 interface GruschProfileProps {
   onBack: () => void;
 }
-
-/* ─── Status badge ───────────────────────────────────────────── */
-
-const statusConfig: Record<string, { label: string; classes: string }> = {
-  'unverified':            { label: 'Unverified',             classes: 'bg-gray-100 text-gray-600' },
-  'partially-verified':    { label: 'Partially Verified',     classes: 'bg-blue-100 text-blue-700' },
-  'disputed':              { label: 'Disputed',               classes: 'bg-amber-100 text-amber-700' },
-  'partially-contradicted':{ label: 'Partially Contradicted', classes: 'bg-red-100 text-red-600' },
-  'verified':              { label: 'Verified',               classes: 'bg-green-100 text-green-700' },
-};
-
-/* ─── Claims status bar ──────────────────────────────────────── */
-
-const statusBarConfig: Array<{ key: string; label: string; bar: string; dot: string }> = [
-  { key: 'verified',              label: 'Verified',              bar: 'bg-green-500', dot: 'bg-green-500' },
-  { key: 'partially-verified',    label: 'Partially Verified',    bar: 'bg-blue-400',  dot: 'bg-blue-400'  },
-  { key: 'unverified',            label: 'Unverified',            bar: 'bg-gray-300',  dot: 'bg-gray-400'  },
-  { key: 'disputed',              label: 'Disputed',              bar: 'bg-amber-400', dot: 'bg-amber-400' },
-  { key: 'partially-contradicted',label: 'Partially Contradicted',bar: 'bg-red-400',   dot: 'bg-red-400'   },
-];
-
-interface ClaimsStatusBarProps { claims: Array<{ status: string }> }
-
-const ClaimsStatusBar: FC<ClaimsStatusBarProps> = ({ claims }) => {
-  const total = claims.length;
-  const counts = statusBarConfig
-    .map(s => ({ ...s, count: claims.filter(c => c.status === s.key).length }))
-    .filter(s => s.count > 0);
-  return (
-    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
-      <div className="flex items-center justify-between">
-        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Claims Verification Overview</p>
-        <span className="text-xs text-gray-400">{total} total claims</span>
-      </div>
-      <div className="flex h-3 rounded-full overflow-hidden gap-px">
-        {counts.map(s => (
-          <div key={s.key} className={`${s.bar} transition-all`}
-            style={{ width: `${(s.count / total) * 100}%` }} title={`${s.label}: ${s.count}`} />
-        ))}
-      </div>
-      <div className="flex flex-wrap gap-x-4 gap-y-1.5">
-        {counts.map(s => (
-          <div key={s.key} className="flex items-center gap-1.5">
-            <span className={`w-2 h-2 rounded-full shrink-0 ${s.dot}`} />
-            <span className="text-xs text-gray-600">{s.label}</span>
-            <span className="text-xs font-semibold text-gray-800">{s.count}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-/* ─── Credibility balance ────────────────────────────────────── */
-
-interface CredibilityBalanceProps { supporting: number; contradicting: number }
-
-const CredibilityBalance: FC<CredibilityBalanceProps> = ({ supporting, contradicting }) => {
-  const total = supporting + contradicting;
-  const supPct = total > 0 ? (supporting / total) * 100 : 50;
-  const conPct = total > 0 ? (contradicting / total) * 100 : 50;
-  return (
-    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
-      <div className="flex items-center justify-between">
-        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Credibility Balance</p>
-        <span className="text-xs text-gray-400">{total} arguments documented</span>
-      </div>
-      <div className="flex h-4 rounded-full overflow-hidden gap-px">
-        <div className="bg-green-500 flex items-center justify-center transition-all"
-          style={{ width: `${supPct}%` }} title={`Supporting: ${supporting}`}>
-          {supPct > 15 && <span className="text-xs text-white font-bold">{supporting}</span>}
-        </div>
-        <div className="bg-red-400 flex items-center justify-center transition-all"
-          style={{ width: `${conPct}%` }} title={`Contradicting: ${contradicting}`}>
-          {conPct > 15 && <span className="text-xs text-white font-bold">{contradicting}</span>}
-        </div>
-      </div>
-      <div className="flex justify-between text-xs">
-        <div className="flex items-center gap-1.5">
-          <span className="w-2 h-2 rounded-full bg-green-500 shrink-0" />
-          <span className="text-gray-600">Supporting</span>
-          <span className="font-semibold text-gray-800">{supporting}</span>
-        </div>
-        <div className="flex items-center gap-1.5">
-          <span className="font-semibold text-gray-800">{contradicting}</span>
-          <span className="text-gray-600">Against</span>
-          <span className="w-2 h-2 rounded-full bg-red-400 shrink-0" />
-        </div>
-      </div>
-    </div>
-  );
-};
 
 /* ─── Tabs ───────────────────────────────────────────────────── */
 
@@ -453,19 +365,8 @@ const GruschProfile: FC<GruschProfileProps> = ({ onBack }) => {
         </div>
 
         {/* Tabs */}
-        <div className="border-b border-gray-200 bg-white overflow-x-auto">
-          <div className="flex min-w-max">
-            {TABS.map(tab => (
-              <button key={tab.id} onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-3 text-sm font-medium whitespace-nowrap transition-colors border-b-2 ${
-                  activeTab === tab.id
-                    ? 'border-primary text-primary'
-                    : 'border-transparent text-gray-500 hover:text-gray-700'
-                }`}>
-                {tab.label}
-              </button>
-            ))}
-          </div>
+        <div className="border-b border-gray-200 bg-white px-6 pt-2">
+          <ProfileTabBar tabs={TABS} activeTab={activeTab} onTabChange={setActiveTab} />
         </div>
 
         {/* Tab content */}
