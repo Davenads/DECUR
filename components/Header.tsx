@@ -4,7 +4,39 @@ import { useState, useRef, useEffect, FC } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import SearchBar from './SearchBar';
-import { NavItem, NavSection, NavItems, DropdownRefs } from '../types/navigation';
+import NavDropdown from './navigation/NavDropdown';
+import MobileNavDropdown from './navigation/MobileNavDropdown';
+import { NavItems, DropdownRefs } from '../types/navigation';
+
+const navItems: NavItems = {
+  data: {
+    title: 'Data',
+    path: '/data',
+    items: [
+      { title: 'Historical Events', path: '/data?category=events' },
+      { title: 'Key Figures', path: '/data?category=figures' },
+      { title: 'Insiders', path: '/data?category=insiders' },
+      { title: 'Quotes', path: '/data?category=quotes' },
+      { title: 'Media & Documents', path: '/data?category=media' },
+      { title: 'News', path: '/data?category=news' },
+    ],
+  },
+  resources: {
+    title: 'Resources',
+    path: '/resources',
+    items: [
+      { title: 'Primary Materials', path: '/resources?tab=materials' },
+      { title: 'Transcripts', path: '/resources?tab=transcripts' },
+      { title: 'Glossary', path: '/resources?tab=glossary' },
+    ],
+  },
+};
+
+const simpleLinks = [
+  { href: '/timeline', label: 'Timeline' },
+  { href: '/explore', label: 'Explore' },
+  { href: '/about', label: 'About' },
+];
 
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -12,60 +44,33 @@ const Header: FC = () => {
   const dropdownRefs = useRef<DropdownRefs>({});
   const router = useRouter();
 
-  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (activeDropdown && dropdownRefs.current[activeDropdown] && 
-          !dropdownRefs.current[activeDropdown]?.contains(event.target as Node)) {
+      if (
+        activeDropdown &&
+        dropdownRefs.current[activeDropdown] &&
+        !dropdownRefs.current[activeDropdown]?.contains(event.target as Node)
+      ) {
         setActiveDropdown(null);
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [activeDropdown]);
 
-  // Close dropdown when route changes
   useEffect(() => {
     setActiveDropdown(null);
     setIsMenuOpen(false);
   }, [router.pathname]);
 
-  const toggleMenu = (): void => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleDropdown = (dropdown: string): void => {
-    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  const toggleDropdown = (key: string): void => {
+    setActiveDropdown(activeDropdown === key ? null : key);
   };
 
   const isActive = (path: string): boolean => router.pathname === path;
-  
-  // Navigation data structure for dropdowns
-  const navItems: NavItems = {
-    data: {
-      title: 'Data',
-      path: '/data',
-      items: [
-        { title: 'Historical Events', path: '/data?category=events' },
-        { title: 'Key Figures', path: '/data?category=figures' },
-        { title: 'Insiders', path: '/data?category=insiders' },
-        { title: 'Quotes', path: '/data?category=quotes' },
-        { title: 'Media & Documents', path: '/data?category=media' },
-        { title: 'News', path: '/data?category=news' }
-      ]
-    },
-    resources: {
-      title: 'Resources',
-      path: '/resources',
-      items: [
-        { title: 'Primary Materials', path: '/resources?tab=materials' },
-        { title: 'Transcripts', path: '/resources?tab=transcripts' },
-        { title: 'Glossary', path: '/resources?tab=glossary' }
-      ]
-    }
+
+  const handleSearch = (query: string): void => {
+    router.push(`/search?q=${encodeURIComponent(query)}`);
   };
 
   return (
@@ -82,175 +87,74 @@ const Header: FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className={
-                isActive('/') 
-                  ? "text-primary font-medium border-b-2 border-primary pb-1" 
-                  : "text-gray-600 hover:text-primary transition-colors"
+                isActive('/')
+                  ? 'text-primary font-medium border-b-2 border-primary pb-1'
+                  : 'text-gray-600 hover:text-primary transition-colors'
               }
             >
               Home
             </Link>
-            
-            {/* Data Dropdown */}
-            <div 
-              className="relative" 
-              ref={el => { dropdownRefs.current['data'] = el; return undefined; }}
-            >
-              <button
-                className={`flex items-center space-x-1 ${
-                  isActive('/data') 
-                    ? "text-primary font-medium border-b-2 border-primary pb-1" 
-                    : "text-gray-600 hover:text-primary transition-colors"
-                }`}
-                onClick={() => toggleDropdown('data')}
-                aria-expanded={activeDropdown === 'data'}
-                aria-haspopup="true"
-              >
-                <span>Data</span>
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className={`h-4 w-4 transition-transform ${activeDropdown === 'data' ? 'transform rotate-180' : ''}`} 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {/* Data Dropdown Menu */}
-              {activeDropdown === 'data' && (
-                <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
-                  <div className="py-1" role="menu" aria-orientation="vertical">
-                    {navItems.data.items.map((item, index) => (
-                      <Link 
-                        key={index}
-                        href={item.path}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary"
-                        role="menuitem"
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-            
-            {/* Resources Dropdown */}
-            <div 
-              className="relative"
-              ref={el => { dropdownRefs.current['resources'] = el; return undefined; }}
-            >
-              <button
-                className={`flex items-center space-x-1 ${
-                  isActive('/resources') 
-                    ? "text-primary font-medium border-b-2 border-primary pb-1" 
-                    : "text-gray-600 hover:text-primary transition-colors"
-                }`}
-                onClick={() => toggleDropdown('resources')}
-                aria-expanded={activeDropdown === 'resources'}
-                aria-haspopup="true"
-              >
-                <span>Resources</span>
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className={`h-4 w-4 transition-transform ${activeDropdown === 'resources' ? 'transform rotate-180' : ''}`} 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {/* Resources Dropdown Menu */}
-              {activeDropdown === 'resources' && (
-                <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
-                  <div className="py-1" role="menu" aria-orientation="vertical">
-                    {navItems.resources.items.map((item, index) => (
-                      <Link 
-                        key={index}
-                        href={item.path}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary"
-                        role="menuitem"
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-            
-            <Link
-              href="/timeline"
-              className={
-                isActive('/timeline')
-                  ? "text-primary font-medium border-b-2 border-primary pb-1"
-                  : "text-gray-600 hover:text-primary transition-colors"
-              }
-            >
-              Timeline
-            </Link>
 
-            <Link
-              href="/explore"
-              className={
-                isActive('/explore')
-                  ? "text-primary font-medium border-b-2 border-primary pb-1"
-                  : "text-gray-600 hover:text-primary transition-colors"
-              }
-            >
-              Explore
-            </Link>
+            <NavDropdown
+              id="data"
+              title="Data"
+              items={navItems.data.items}
+              isActive={isActive('/data')}
+              isOpen={activeDropdown === 'data'}
+              onToggle={() => toggleDropdown('data')}
+              dropdownRef={el => { dropdownRefs.current['data'] = el; }}
+            />
 
-            <Link
-              href="/about"
-              className={
-                isActive('/about')
-                  ? "text-primary font-medium border-b-2 border-primary pb-1"
-                  : "text-gray-600 hover:text-primary transition-colors"
-              }
-            >
-              About
-            </Link>
+            <NavDropdown
+              id="resources"
+              title="Resources"
+              items={navItems.resources.items}
+              isActive={isActive('/resources')}
+              isOpen={activeDropdown === 'resources'}
+              onToggle={() => toggleDropdown('resources')}
+              dropdownRef={el => { dropdownRefs.current['resources'] = el; }}
+            />
+
+            {simpleLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={
+                  isActive(href)
+                    ? 'text-primary font-medium border-b-2 border-primary pb-1'
+                    : 'text-gray-600 hover:text-primary transition-colors'
+                }
+              >
+                {label}
+              </Link>
+            ))}
           </nav>
 
           {/* Search */}
           <div className="hidden md:block w-64">
-            <SearchBar onSearch={(query) => router.push(`/search?q=${encodeURIComponent(query)}`)} />
+            <SearchBar onSearch={handleSearch} />
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-gray-600 focus:outline-none" 
-            onClick={toggleMenu}
+          <button
+            className="md:hidden text-gray-600 focus:outline-none"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-6 w-6" 
-              fill="none" 
-              viewBox="0 0 24 24" 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
               {isMenuOpen ? (
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M6 18L18 6M6 6l12 12" 
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M4 6h16M4 12h16M4 18h16" 
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -260,108 +164,45 @@ const Header: FC = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
-              <Link 
-                href="/" 
-                className={isActive('/') ? "text-primary font-medium" : "text-gray-600"}
+              <Link
+                href="/"
+                className={isActive('/') ? 'text-primary font-medium' : 'text-gray-600'}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
-              
-              {/* Mobile Data Dropdown */}
-              <div className="space-y-1">
-                <button
-                  className="flex items-center justify-between w-full text-left text-gray-600"
-                  onClick={() => toggleDropdown('mobile-data')}
-                >
-                  <span className={isActive('/data') ? "text-primary font-medium" : ""}>Data</span>
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className={`h-4 w-4 transition-transform ${activeDropdown === 'mobile-data' ? 'transform rotate-180' : ''}`} 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                
-                {activeDropdown === 'mobile-data' && (
-                  <div className="pl-4 space-y-2 mt-2">
-                    {navItems.data.items.map((item, index) => (
-                      <Link 
-                        key={index}
-                        href={item.path}
-                        className="block text-gray-500 hover:text-primary"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-              
-              {/* Mobile Resources Dropdown */}
-              <div className="space-y-1">
-                <button
-                  className="flex items-center justify-between w-full text-left text-gray-600"
-                  onClick={() => toggleDropdown('mobile-resources')}
-                >
-                  <span className={isActive('/resources') ? "text-primary font-medium" : ""}>Resources</span>
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className={`h-4 w-4 transition-transform ${activeDropdown === 'mobile-resources' ? 'transform rotate-180' : ''}`} 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                
-                {activeDropdown === 'mobile-resources' && (
-                  <div className="pl-4 space-y-2 mt-2">
-                    {navItems.resources.items.map((item, index) => (
-                      <Link 
-                        key={index}
-                        href={item.path}
-                        className="block text-gray-500 hover:text-primary"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-              
-              <Link
-                href="/timeline"
-                className={isActive('/timeline') ? "text-primary font-medium" : "text-gray-600"}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Timeline
-              </Link>
 
-              <Link
-                href="/explore"
-                className={isActive('/explore') ? "text-primary font-medium" : "text-gray-600"}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Explore
-              </Link>
+              <MobileNavDropdown
+                title="Data"
+                items={navItems.data.items}
+                isActive={isActive('/data')}
+                isOpen={activeDropdown === 'mobile-data'}
+                onToggle={() => toggleDropdown('mobile-data')}
+                onItemClick={() => setIsMenuOpen(false)}
+              />
 
-              <Link
-                href="/about"
-                className={isActive('/about') ? "text-primary font-medium" : "text-gray-600"}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              
+              <MobileNavDropdown
+                title="Resources"
+                items={navItems.resources.items}
+                isActive={isActive('/resources')}
+                isOpen={activeDropdown === 'mobile-resources'}
+                onToggle={() => toggleDropdown('mobile-resources')}
+                onItemClick={() => setIsMenuOpen(false)}
+              />
+
+              {simpleLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className={isActive(href) ? 'text-primary font-medium' : 'text-gray-600'}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {label}
+                </Link>
+              ))}
+
               <div className="pt-2">
-                <SearchBar onSearch={(query) => router.push(`/search?q=${encodeURIComponent(query)}`)} />
+                <SearchBar onSearch={handleSearch} />
               </div>
             </div>
           </div>
