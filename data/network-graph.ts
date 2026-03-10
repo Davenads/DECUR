@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'shared';
 
 export interface GraphNode {
   id: string;
@@ -48,7 +48,7 @@ export const graphData: GraphData = {
     { id: 'bob-lazar',           name: 'Bob Lazar',            type: 'person',       group: 'lazar',    val: 5 },
     { id: 'david-grusch',        name: 'David Grusch',         type: 'person',       group: 'grusch',   val: 5 },
     { id: 'luis-elizondo',       name: 'Luis Elizondo',        type: 'person',       group: 'elizondo', val: 5 },
-    { id: 'chris-mellon',        name: 'Chris Mellon',         type: 'person',       group: 'elizondo', val: 2 },
+    { id: 'chris-mellon',        name: 'Chris Mellon',         type: 'person',       group: 'mellon',   val: 4 },
     { id: 'ross-coulthart',      name: 'Ross Coulthart',       type: 'person',       group: 'grusch',   val: 2 },
     { id: 'ryan-graves',         name: 'Ryan Graves',          type: 'person',       group: 'shared',   val: 2 },
     { id: 'george-knapp',        name: 'George Knapp',         type: 'person',       group: 'lazar',    val: 2 },
@@ -130,6 +130,10 @@ export const graphData: GraphData = {
     { source: 'aatip',           target: 'uap-task-force',     label: 'predecessor of' },
     { source: 'aatip',           target: 'five-observables',   label: 'produced' },
     { source: 'chris-mellon',    target: 'ttsa',               label: 'senior advisor' },
+    { source: 'chris-mellon',    target: 'hal-puthoff',        label: 'TTSA co-advisor' },
+    { source: 'chris-mellon',    target: 'uap-task-force',     label: 'drafted legislation for' },
+    { source: 'chris-mellon',    target: 'aaro',               label: 'drafted legislation for' },
+    { source: 'chris-mellon',    target: 'david-grusch',       label: 'legislative coordination' },
     { source: 'harry-reid',      target: 'bigelow-aerospace',  label: 'secured funding for' },
 
     // Fravor personal connections

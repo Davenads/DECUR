@@ -11,6 +11,7 @@ import fravorJson from '../data/fravor.json';
 import nellJson from '../data/nell.json';
 import nolanJson from '../data/nolan.json';
 import puthoffJson from '../data/puthoff.json';
+import mellonJson from '../data/mellon.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -135,7 +136,17 @@ export const getStaticProps: GetStaticProps = async () => {
       []
     );
 
-    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents];
+    // Mellon key events (uses 'date' field)
+    const mellonEvents: WBEvent[] = mellonJson.profile.key_events.reduce(
+      (acc: WBEvent[], e: { date: string; event: string }) => {
+        const year = extractYear(e.date);
+        if (year) acc.push({ year, event: e.event, source: 'mellon' });
+        return acc;
+      },
+      []
+    );
+
+    const insiderEvents: WBEvent[] = [...burischEvents, ...lazarEvents, ...gruschEvents, ...elizondoEvents, ...fravorEvents, ...nellEvents, ...nolanEvents, ...puthoffEvents, ...mellonEvents];
 
     return { props: { entries, insiderEvents }, revalidate: 3600 };
   } catch (error) {

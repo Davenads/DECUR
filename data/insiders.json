@@ -84,6 +84,18 @@
     "data_file": "nolan.json"
   },
   {
+    "id": "chris-mellon",
+    "name": "Christopher K. Mellon",
+    "aliases": ["Chris Mellon", "C.K. Mellon"],
+    "role": "Deputy Assistant Secretary of Defense for Intelligence; TTSA Senior Advisor",
+    "period": "1988–2004 (government); 2017–present (TTSA / advocacy)",
+    "affiliation": "Office of the Secretary of Defense, Senate Select Committee on Intelligence, To The Stars Academy",
+    "summary": "Former Deputy Assistant Secretary of Defense for Intelligence and Senate Intelligence Committee staff director who held oversight responsibility for the most sensitive U.S. intelligence programs. Credited with obtaining and facilitating release of the Nimitz FLIR1, Gimbal, and GoFast videos through the December 2017 New York Times investigation. The most consequential legislative advocate for UAP transparency in Washington, having directly drafted or influenced every major UAP provision enacted since 2020 — including the UAP Task Force and AARO.",
+    "status": "detailed",
+    "tags": ["DASD Intelligence", "Senate Intelligence Committee", "TTSA", "Navy Videos", "UAP Disclosure Act", "AARO", "UAP Task Force", "Congressional Advocacy"],
+    "data_file": "mellon.json"
+  },
+  {
     "id": "bob-lazar",
     "name": "Bob Lazar",
     "aliases": ["S-4 Physicist", "Dennis (originally)"],
