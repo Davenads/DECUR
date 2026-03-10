@@ -60,6 +60,18 @@
     "data_file": "grusch.json"
   },
   {
+    "id": "garry-nolan",
+    "name": "Dr. Garry Nolan",
+    "aliases": ["Gary Nolan", "Garry P. Nolan"],
+    "role": "Professor of Pathology, Stanford School of Medicine; CIA UAP Consultant",
+    "period": "1994–present (Stanford); c. 2011–2017 (CIA consultant)",
+    "affiliation": "Stanford University School of Medicine, Sol Foundation, UAPX",
+    "summary": "Tenured Stanford professor with 300+ peer-reviewed publications and 50+ U.S. patents, engaged by the CIA around 2011 to study approximately 100 individuals — pilots and intelligence officers — who reported neurological effects following UAP encounters. Found anomalous brain morphology in a significant proportion of subjects. Co-published the first peer-reviewed UAP methodology paper in a major aerospace journal (2022). Co-founded the Sol Foundation with Karl Nell and David Grusch. His institutional standing is the strongest of any public UAP figure; his claims about material recoveries and NHI presence go beyond his published evidence.",
+    "status": "detailed",
+    "tags": ["Stanford", "CIA Consultation", "Brain Morphology", "Peer-Reviewed Research", "Sol Foundation", "Materials Analysis", "Isotopic Anomalies", "Biological Effects"],
+    "data_file": "nolan.json"
+  },
+  {
     "id": "bob-lazar",
     "name": "Bob Lazar",
     "aliases": ["S-4 Physicist", "Dennis (originally)"],
