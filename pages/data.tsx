@@ -114,6 +114,7 @@ export const getStaticProps: GetStaticProps = async () => {
         categoryData: { events, figures, quotes, media, news },
         insiders: insidersData as InsiderEntry[],
         cases: casesData as CaseEntry[],
+        documents: documentsData as DocumentEntry[],
         navItems,
       },
       revalidate: 3600,
