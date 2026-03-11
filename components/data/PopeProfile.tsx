@@ -4,6 +4,7 @@ import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
+import { InsiderProfileProps } from '../../types/components';
 
 const data = popeData as typeof popeData;
 
@@ -18,10 +19,6 @@ const TABS = [
 ] as const;
 
 type TabId = typeof TABS[number]['id'];
-
-interface PopeProfileProps {
-  onBack: () => void;
-}
 
 /* ─── Tab components ──────────────────────────────────────────── */
 
@@ -299,7 +296,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main component ──────────────────────────────────────────── */
 
-const PopeProfile: FC<PopeProfileProps> = ({ onBack }) => {
+const PopeProfile: FC<InsiderProfileProps> = ({ onBack }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {

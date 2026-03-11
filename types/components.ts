@@ -47,6 +47,13 @@ export interface NavItemDef {
 }
 
 /**
+ * Shared props for all insider profile components
+ */
+export interface InsiderProfileProps {
+  onBack: () => void;
+}
+
+/**
  * Props for search functionality
  */
 export interface SearchProps {

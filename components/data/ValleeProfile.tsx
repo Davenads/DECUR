@@ -4,6 +4,7 @@ import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
+import { InsiderProfileProps } from '../../types/components';
 
 const data = valleeData as typeof valleeData;
 
@@ -19,10 +20,6 @@ const TABS = [
 ] as const;
 
 type TabId = typeof TABS[number]['id'];
-
-interface ValleeProfileProps {
-  onBack: () => void;
-}
 
 /* ─── Tab components ──────────────────────────────────────────── */
 
@@ -332,7 +329,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main component ──────────────────────────────────────────── */
 
-const ValleeProfile: FC<ValleeProfileProps> = ({ onBack }) => {
+const ValleeProfile: FC<InsiderProfileProps> = ({ onBack }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {

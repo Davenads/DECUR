@@ -1,9 +1,10 @@
 import { FC, useState } from 'react';
 import gruschData from '../../data/insiders/grusch.json';
-import ProfileTabBar from './shared/ProfileTabBar';
+import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
+import { InsiderProfileProps } from '../../types/components';
 
 const data = gruschData as typeof gruschData;
 
@@ -17,10 +18,6 @@ const TABS = [
 ] as const;
 
 type TabId = typeof TABS[number]['id'];
-
-interface GruschProfileProps {
-  onBack: () => void;
-}
 
 /* ─── Tabs ───────────────────────────────────────────────────── */
 
@@ -333,7 +330,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main Component ─────────────────────────────────────────── */
 
-const GruschProfile: FC<GruschProfileProps> = ({ onBack }) => {
+const GruschProfile: FC<InsiderProfileProps> = ({ onBack }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -348,33 +345,17 @@ const GruschProfile: FC<GruschProfileProps> = ({ onBack }) => {
   };
 
   return (
-    <div className="space-y-4">
-      {/* Back button + header */}
-      <div className="flex items-center gap-3">
-        <button onClick={onBack}
-          className="text-sm text-primary hover:underline flex items-center gap-1">
-          ← Back
-        </button>
-      </div>
-
-      <div className="border border-gray-200 rounded-xl overflow-hidden">
-        <div className="bg-gradient-to-r from-slate-900 to-blue-900 px-6 py-5 text-white">
-          <h2 className="text-xl font-bold">David Grusch</h2>
-          <p className="text-blue-200 text-sm mt-0.5">NRO Representative to the DoD UAP Task Force · NGA Senior Technical Advisor</p>
-          <p className="text-blue-300 text-xs mt-1">2019–2023 · National Reconnaissance Office, NGA, DoD UAP Task Force</p>
-        </div>
-
-        {/* Tabs */}
-        <div className="border-b border-gray-200 bg-white px-6 pt-2">
-          <ProfileTabBar tabs={TABS} activeTab={activeTab} onTabChange={setActiveTab} />
-        </div>
-
-        {/* Tab content */}
-        <div className="p-6">
-          {renderTab()}
-        </div>
-      </div>
-    </div>
+    <ProfileShell
+      name={data.profile.name}
+      role={data.profile.roles[0]}
+      period={data.profile.service_period}
+      tabs={TABS}
+      activeTab={activeTab}
+      onTabChange={(id) => setActiveTab(id as TabId)}
+      onBack={onBack}
+    >
+      {renderTab()}
+    </ProfileShell>
   );
 };
 

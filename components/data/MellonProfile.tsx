@@ -4,6 +4,7 @@ import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
+import { InsiderProfileProps } from '../../types/components';
 
 const data = mellonData as typeof mellonData;
 
@@ -19,10 +20,6 @@ const TABS = [
 ] as const;
 
 type TabId = typeof TABS[number]['id'];
-
-interface MellonProfileProps {
-  onBack: () => void;
-}
 
 /* ─── Tab components ──────────────────────────────────────────── */
 
@@ -285,7 +282,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main component ──────────────────────────────────────────── */
 
-const MellonProfile: FC<MellonProfileProps> = ({ onBack }) => {
+const MellonProfile: FC<InsiderProfileProps> = ({ onBack }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {

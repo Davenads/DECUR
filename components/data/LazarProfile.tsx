@@ -6,6 +6,7 @@ import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
+import { InsiderProfileProps } from '../../types/components';
 
 const data = lazarData as LazarData;
 
@@ -21,10 +22,6 @@ const TABS = [
 ] as const;
 
 type TabId = typeof TABS[number]['id'];
-
-interface LazarProfileProps {
-  onBack: () => void;
-}
 
 /* ─── Sub-views ──────────────────────────────────────────────── */
 
@@ -518,7 +515,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main Profile Component ─────────────────────────────────── */
 
-const LazarProfile: FC<LazarProfileProps> = ({ onBack }) => {
+const LazarProfile: FC<InsiderProfileProps> = ({ onBack }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
