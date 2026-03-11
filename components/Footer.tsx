@@ -12,9 +12,6 @@ const Footer: FC = () => {
           <div>
             <Link href="/" className="text-xl font-bold text-white">DECUR</Link>
             <p className="mt-2 text-gray-400 text-sm">
-              Data Exceeding Current Understanding of Reality
-            </p>
-            <p className="mt-4 text-gray-400 text-sm">
               Documenting insider testimony on UAP, NHI, and advanced technologies.
             </p>
           </div>

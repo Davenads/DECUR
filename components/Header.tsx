@@ -80,9 +80,6 @@ const Header: FC = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-heading font-bold text-gray-900">DECUR</span>
-            <span className="hidden md:inline-block text-sm text-gray-500">
-              Data Exceeding Current Understanding of Reality
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
