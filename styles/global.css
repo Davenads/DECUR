@@ -17,7 +17,7 @@
     @apply text-xl font-bold font-heading mb-2;
   }
   a {
-    @apply text-primary hover:text-primary-dark transition-colors;
+    @apply text-gray-700 hover:text-primary transition-colors;
   }
 }
 

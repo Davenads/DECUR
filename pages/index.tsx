@@ -93,7 +93,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
                   <div className="divide-y divide-gray-100">
                     {ARCHIVE_STATS.map(({ count, label }) => (
                       <div key={label} className="flex items-baseline gap-3 px-5 py-3">
-                        <span className="text-xl font-bold text-gray-900 tabular-nums w-10 shrink-0 text-right">
+                        <span className="text-xl font-bold text-gray-900 tabular-nums min-w-[3.5rem] shrink-0 text-right">
                           {count}
                         </span>
                         <span className="text-xs text-gray-500">{label}</span>
