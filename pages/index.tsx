@@ -49,7 +49,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
         {/* Hero */}
         <section className="border-b border-gray-200 pb-16 pt-12">
           <div className="max-w-3xl mx-auto px-4">
-            <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-4">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">
               DECUR Archive
             </p>
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-gray-900 leading-tight mb-6">
@@ -71,7 +71,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
         {/* Scope note */}
         <section className="max-w-3xl mx-auto px-4">
           <div className="flex gap-4 items-start">
-            <div className="w-1 shrink-0 bg-primary/30 rounded-full self-stretch" />
+            <div className="w-1 shrink-0 bg-gray-300 rounded-full self-stretch" />
             <p className="text-sm text-gray-500 leading-relaxed">
               Source material draws from congressional testimony, document leaks, on-record
               interviews, and firsthand accounts. DECUR does not adjudicate the truth of any

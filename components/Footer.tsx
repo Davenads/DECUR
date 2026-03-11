@@ -10,7 +10,7 @@ const Footer: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and tagline */}
           <div>
-            <Link href="/" className="text-xl font-bold">DECUR</Link>
+            <Link href="/" className="text-xl font-bold text-white">DECUR</Link>
             <p className="mt-2 text-gray-400 text-sm">
               Data Exceeding Current Understanding of Reality
             </p>

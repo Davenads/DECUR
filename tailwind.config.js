@@ -9,9 +9,9 @@ module.exports = {
       colors: {
         // You can customize your color palette here based on DECUR branding
         primary: {
-          light: '#4da6ff',
-          DEFAULT: '#0077cc',
-          dark: '#004c8c',
+          light: '#4a7eaa',
+          DEFAULT: '#2e5c8a',
+          dark: '#1e3f62',
         },
       },
       fontFamily: {
