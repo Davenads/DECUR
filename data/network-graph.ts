@@ -104,6 +104,10 @@ export const graphData: GraphData = {
     { id: 'immaculate-constellation', name: 'Immaculate Constellation', type: 'project', group: 'shared', val: 4 },
     { id: 'project-moondust',    name: 'Project Moon Dust',    type: 'project',      group: 'shared',   val: 3 },
     { id: 'operation-paperclip', name: 'Operation Paperclip',  type: 'project',      group: 'shared',   val: 3 },
+    { id: 'aawsap',              name: 'AAWSAP',               type: 'project',      group: 'shared',   val: 4 },
+    { id: 'robertson-panel',     name: 'Robertson Panel',      type: 'organization', group: 'shared',   val: 3 },
+    { id: 'kona-blue',           name: 'Kona Blue',            type: 'project',      group: 'shared',   val: 3 },
+    { id: 'ipu',                 name: 'Interplanetary Phenomenon Unit', type: 'organization', group: 'shared', val: 3 },
 
     // Concepts
     { id: 'five-observables',    name: '5 Observables',        type: 'concept',      group: 'elizondo', val: 3 },
@@ -231,6 +235,16 @@ export const graphData: GraphData = {
     { source: 'project-grudge',   target: 'project-blue-book',  label: 'predecessor of' },
     { source: 'project-moondust', target: 'uap-task-force',     label: 'predecessor of' },
     { source: 'immaculate-constellation', target: 'uap-task-force', label: 'related program' },
+    { source: 'ipu',              target: 'majestic-12',        label: 'evolved into' },
+    { source: 'robertson-panel',  target: 'project-blue-book',  label: 'shaped suppression policy within' },
+    { source: 'aawsap',           target: 'aatip',              label: 'preceded / overlapped with' },
+    { source: 'aawsap',           target: 'bigelow-aerospace',  label: 'contracted to BAASS' },
+    { source: 'robert-bigelow',   target: 'aawsap',             label: 'BAASS won contract for' },
+    { source: 'hal-puthoff',      target: 'aawsap',             label: 'researcher' },
+    { source: 'eric-davis',       target: 'aawsap',             label: 'researcher' },
+    { source: 'harry-reid',       target: 'aawsap',             label: 'secured funding for' },
+    { source: 'kona-blue',        target: 'aaro',               label: 'assessed by' },
+    { source: 'david-grusch',     target: 'kona-blue',          label: 'reported existence of' },
 
     // Project connections
     { source: 'project-aquarius', target: 'project-lotus',      label: 'sub-project' },
