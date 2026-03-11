@@ -1,0 +1,211 @@
+{
+  "profile": {
+    "id": "j-allen-hynek",
+    "name": "Dr. J. Allen Hynek",
+    "aliases": ["Josef Allen Hynek", "Allen Hynek", "The Father of Scientific Ufology"],
+    "born": "May 1, 1910",
+    "died": "April 27, 1986",
+    "roles": [
+      "Astrophysicist — Ohio State University and Northwestern University",
+      "U.S. Air Force Scientific Consultant — Projects Sign, Grudge, and Blue Book (1948-1969)",
+      "Founder and Scientific Director — Center for UFO Studies (CUFOS)",
+      "Creator of the Close Encounter Classification System"
+    ],
+    "service_period": "1948-1969 (Air Force consultant); 1973-1986 (CUFOS)",
+    "organizations": [
+      "Ohio State University (astronomy faculty, 1936-1960)",
+      "Northwestern University (astronomy faculty, 1960-1978)",
+      "U.S. Air Force — Project Sign, Project Grudge, Project Blue Book (contractor)",
+      "Center for UFO Studies (CUFOS) — founder"
+    ],
+    "clearance": "Security clearance required for classified Air Force UFO case files across three formal government programs",
+    "summary": "J. Allen Hynek is the intellectual founder of serious scientific UFO research. Recruited by the U.S. Air Force in 1948 as a scientific consultant tasked with debunking UFO reports, he spent 21 years examining hundreds of cases filed by military and civilian witnesses across three formal government programs (Project Sign, Project Grudge, and Project Blue Book). His position evolved from committed skeptic to outspoken critic of the Air Force's institutional mandate to dismiss rather than investigate. He invented the Close Encounter classification system that remains the global standard. He founded the Center for UFO Studies (CUFOS) in 1973 — the first serious civilian scientific organization for systematic UFO case documentation. He coined the phrase 'Close Encounters of the Third Kind,' which Steven Spielberg adapted for his 1977 film (consulting Hynek directly and giving him a cameo). His trajectory from institutional debunker to scientific advocate established the template for every government-connected figure who has followed the same path in the decades since.",
+    "education": [
+      "B.S. — University of Chicago",
+      "Ph.D. Astrophysics — Yerkes Observatory, University of Chicago (1935)"
+    ],
+    "early_career": [
+      "Faculty appointment, Ohio State University astronomy department (1936)",
+      "Director, McMillin Observatory, Ohio State",
+      "World War II: Johns Hopkins Applied Physics Laboratory — developed Navy radio proximity fuze",
+      "Recruited as astronomical consultant for Smithsonian Astrophysical Observatory satellite tracking network (1956)"
+    ],
+    "key_events": [
+      { "year": "1948", "event": "Recruited by U.S. Air Force as scientific consultant for Project Sign, the first formal government UFO investigation program. Hired specifically as a skeptic to provide scientific debunking cover." },
+      { "year": "1948-1952", "event": "Works as consultant through Project Grudge, Sign's successor. Begins privately expressing frustration that cases with genuine evidentiary merit are being dismissed without proper analysis." },
+      { "year": "1952", "event": "Project Blue Book begins; Hynek continues as primary scientific consultant. The project is nominally investigative but institutionally designed to minimize public concern about UFO reports." },
+      { "year": "1966", "event": "Hynek publicly challenges the Air Force's debunking culture. At a meeting of the American Optical Society, delivers the famous statement: 'Ridicule is not part of the scientific method, and it should not be brought to bear on this subject.' The statement marks his transition from insider consultant to public critic." },
+      { "year": "1966", "event": "The Swamp Gas Incident: Hynek attributes a widely witnessed Michigan UFO sighting to swamp gas, a conclusion he immediately regrets and later distances himself from. The episode becomes a turning point in public skepticism about Blue Book's methodology." },
+      { "year": "1969", "event": "Project Blue Book formally terminated following the Condon Report's conclusion that further UFO study was not justified. Hynek has privately disagreed with this conclusion for years. His association with Blue Book ends, but his personal research intensifies." },
+      { "year": "1972", "event": "Publishes 'The UFO Experience: A Scientific Study' — his definitive statement on the case for serious scientific investigation. Introduces the Close Encounter classification system (CE1, CE2, CE3) to the public." },
+      { "year": "1973", "event": "Founds the Center for UFO Studies (CUFOS) in Evanston, Illinois (later Chicago). CUFOS is the first civilian scientific organization dedicated to systematic UFO case collection and analysis, staffed with credentialed scientists and investigators." },
+      { "year": "1975", "event": "Publishes 'The Edge of Reality' with colleague Jacques Vallee, exploring the hypothesis that the UFO phenomenon may not be purely physical in origin. Deepens his engagement with the phenomenon's anomalous dimensions beyond conventional craft hypotheses." },
+      { "year": "1977", "event": "Steven Spielberg releases 'Close Encounters of the Third Kind,' consulting Hynek directly on the film and giving him a brief cameo in the final scene. The film brings Hynek's classification terminology into mainstream public consciousness globally." },
+      { "year": "1977", "event": "Publishes 'The Hynek UFO Report' — a systematic critique of Project Blue Book's methodology and a review of its strongest unexplained cases, concluding that the Air Force's investigation was fundamentally inadequate." },
+      { "year": "1985", "event": "Hynek relocates to Scottsdale, Arizona. Diagnosed with a brain tumor. Continues writing and corresponding with researchers globally until his death." },
+      { "year": "1986-04-27", "event": "J. Allen Hynek dies in Scottsdale, Arizona at age 75. Jacques Vallee and colleagues ensure CUFOS continues operations. His archives and case files remain the most comprehensive historical record of documented UFO encounters in the United States." }
+    ]
+  },
+
+  "blue_book": {
+    "program_name": "Project Blue Book",
+    "hynek_role": "Primary Scientific Consultant, 1948-1969",
+    "total_cases": "Over 12,000 UFO reports investigated during Blue Book's operation",
+    "officially_unexplained": "701 cases officially classified as 'Unknown' in Blue Book's final records",
+    "hynek_assessment": "Hynek privately believed the number of genuinely unexplained cases was significantly higher than the official 701, arguing that pressure to classify cases as 'explained' led investigators to accept inadequate conventional explanations",
+    "institutional_mandate": "Blue Book was charged with both investigating UFO reports and maintaining public confidence that the Air Force had the situation under control — a structural conflict of interest that Hynek believed prevented genuine scientific inquiry",
+    "predecessors": [
+      "Project Sign (1947-1948) — first formal Air Force UFO investigation; produced 'Estimate of the Situation,' a classified report reportedly concluding some UFOs were of interplanetary origin, which was suppressed by Air Force Chief of Staff Hoyt Vandenberg",
+      "Project Grudge (1949-1951) — explicitly tasked with debunking; issued a final report concluding UFO sightings were due to misidentification, hysteria, or hoaxes"
+    ],
+    "termination": "Blue Book was terminated in December 1969 following the Condon Report, commissioned by the University of Colorado under Dr. Edward Condon, which concluded UFO study offered no scientific value. Hynek was deeply critical of the Condon Report's methodology and conclusions."
+  },
+
+  "classification_system": {
+    "description": "Hynek's Close Encounter classification system, introduced in 'The UFO Experience' (1972), remains the standard global framework for categorizing UAP sighting types based on distance and reported interaction.",
+    "categories": [
+      {
+        "name": "Nocturnal Light",
+        "abbreviation": "NL",
+        "description": "Anomalous lights observed at night with no associated structure or physical effect"
+      },
+      {
+        "name": "Daylight Disc",
+        "abbreviation": "DD",
+        "description": "Structured objects observed in daylight at sufficient distance that detail cannot be determined"
+      },
+      {
+        "name": "Radar Visual",
+        "abbreviation": "RV",
+        "description": "Correlations between radar returns and visual observations; the strongest instrumental category"
+      },
+      {
+        "name": "Close Encounter of the First Kind",
+        "abbreviation": "CE1",
+        "description": "A structured object or craft observed at close range (within 150 meters), with no physical interaction with the environment or observer"
+      },
+      {
+        "name": "Close Encounter of the Second Kind",
+        "abbreviation": "CE2",
+        "description": "A CE1 with associated physical effects: ground impressions, vegetation disturbance, electromagnetic interference, physiological effects on witnesses, or physical trace evidence"
+      },
+      {
+        "name": "Close Encounter of the Third Kind",
+        "abbreviation": "CE3",
+        "description": "A CE2 in which animated beings or entities are observed in or around the craft. Immortalized by Steven Spielberg's 1977 film of the same name."
+      }
+    ],
+    "later_additions": "Subsequent researchers added CE4 (abduction experiences) and CE5 (human-initiated contact), but these were not part of Hynek's original framework."
+  },
+
+  "associated_people": [
+    {
+      "id": "jacques-vallee",
+      "name": "Dr. Jacques Vallee",
+      "role": "Astrophysicist and computer scientist; CUFOS colleague",
+      "relationship": "Hynek's closest scientific colleague in UAP research. The two co-authored 'The Edge of Reality' (1975) and collaborated extensively on case analysis and theoretical frameworks. Vallee's influence pushed Hynek toward broader consideration of the phenomenon's non-physical dimensions."
+    },
+    {
+      "id": "edward-condon",
+      "name": "Dr. Edward Condon",
+      "role": "Director, University of Colorado UFO Study (Condon Report)",
+      "relationship": "Effectively Hynek's institutional adversary. The Condon Report (1969), which Hynek sharply criticized, provided the political cover for Blue Book's termination. Hynek believed Condon approached the study with a predetermined conclusion and that the methodology was deliberately designed to fail."
+    },
+    {
+      "id": "steven-spielberg",
+      "name": "Steven Spielberg",
+      "role": "Film director",
+      "relationship": "Consulted Hynek during the making of 'Close Encounters of the Third Kind' (1977). Spielberg gave Hynek a cameo in the film's final scene, visible in the crowd watching the alien craft depart. The film brought Hynek's CE3 terminology into global popular consciousness."
+    },
+    {
+      "id": "james-mcdonald",
+      "name": "Dr. James McDonald",
+      "role": "Atmospheric physicist, University of Arizona",
+      "relationship": "A fellow scientist and fierce UFO research advocate who collaborated with Hynek in pressing for serious government and academic attention to the phenomenon in the 1960s. McDonald was even more confrontational than Hynek with official debunking culture. His death in 1971 removed a key scientific ally."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "1966",
+      "type": "speech",
+      "title": "American Optical Society Statement on Ridicule",
+      "outlet": "American Optical Society meeting",
+      "interviewer": "N/A",
+      "notes": "Hynek's famous statement that 'ridicule is not part of the scientific method' publicly signaled his break with the Air Force debunking culture he had participated in for nearly two decades"
+    },
+    {
+      "date": "1972",
+      "type": "written",
+      "title": "The UFO Experience: A Scientific Study",
+      "outlet": "Henry Regnery Company",
+      "interviewer": "N/A",
+      "notes": "His defining book; introduces CE1/CE2/CE3 classification; argues systematically for scientific study based on case analysis; considered the foundational text of serious UFO research"
+    },
+    {
+      "date": "1975",
+      "type": "written",
+      "title": "The Edge of Reality (with Jacques Vallee)",
+      "outlet": "Henry Regnery Company",
+      "interviewer": "N/A",
+      "notes": "Exploration of the possibility that the UFO phenomenon may not fit conventional physical models; represents a deepening of Hynek's theoretical engagement beyond the extraterrestrial hypothesis"
+    },
+    {
+      "date": "1977",
+      "type": "written",
+      "title": "The Hynek UFO Report",
+      "outlet": "Dell Publishing",
+      "interviewer": "N/A",
+      "notes": "Systematic critique of Project Blue Book's methodology; reviews 701 officially unexplained cases and argues the actual figure of genuinely unexplained cases was significantly higher"
+    },
+    {
+      "date": "1977",
+      "type": "film",
+      "title": "Close Encounters of the Third Kind — Consultant and Cameo",
+      "outlet": "Columbia Pictures",
+      "interviewer": "N/A",
+      "notes": "Spielberg consulted Hynek during production and gave him a cameo in the final alien contact scene. The film brought Hynek's CE3 designation into global mainstream use."
+    },
+    {
+      "date": "1978",
+      "type": "speech",
+      "title": "United Nations Briefing on UFO Phenomena",
+      "outlet": "United Nations Special Political Committee",
+      "interviewer": "N/A",
+      "notes": "Hynek addressed the UN in support of establishing an international UFO investigation body — one of the first serious proposals for international scientific coordination on the phenomenon"
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "The UFO Experience: A Scientific Study (1972)",
+      "url": "https://www.amazon.com/UFO-Experience-Scientific-Inquiry/dp/0809297965",
+      "type": "book",
+      "notes": "Primary source; introduces the classification system; Hynek's definitive scientific statement"
+    },
+    {
+      "title": "The Hynek UFO Report (1977)",
+      "url": "https://www.amazon.com/Hynek-UFO-Report/dp/0440139716",
+      "type": "book",
+      "notes": "Systematic Blue Book critique; primary source on the program's shortcomings from inside"
+    },
+    {
+      "title": "Center for UFO Studies (CUFOS) — J. Allen Hynek Biography",
+      "url": "https://cufos.org/hynek-biography/j-allen-hynek-biography/",
+      "type": "institutional-biography",
+      "notes": "CUFOS maintains Hynek's archives and provides the most complete authorized biographical account"
+    },
+    {
+      "title": "Wikipedia — J. Allen Hynek",
+      "url": "https://en.wikipedia.org/wiki/J._Allen_Hynek",
+      "type": "reference",
+      "notes": "Comprehensive biographical reference with documented career timeline and source citations"
+    },
+    {
+      "title": "Wikipedia — Project Blue Book",
+      "url": "https://en.wikipedia.org/wiki/Project_Blue_Book",
+      "type": "reference",
+      "notes": "Contextual reference for Blue Book's history, scope, and termination"
+    }
+  ]
+}

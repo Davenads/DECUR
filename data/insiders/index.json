@@ -365,5 +365,102 @@
     ],
     "data_file": "vallee.json",
     "type": "scientist"
+  },
+  {
+    "id": "harry-reid",
+    "name": "Harry Reid",
+    "aliases": [
+      "Senator Reid",
+      "Harry Mason Reid"
+    ],
+    "role": "U.S. Senate Majority Leader; Architect of AAWSAP/AATIP Funding",
+    "period": "2007–2021 (UAP advocacy); 1987–2017 (Senate)",
+    "affiliation": "United States Senate, Senate Democratic Caucus",
+    "summary": "Served as U.S. Senate Majority Leader from 2007 to 2015. In 2007, working with Senators Ted Stevens and Daniel Inouye, Reid secretly earmarked $22 million in the defense budget to create the Advanced Aerospace Weapon System Applications Program (AAWSAP) at the DIA - the first formally funded Pentagon UAP research program in decades and the direct predecessor to AATIP, the UAP Task Force, and AARO. Without Reid's political will, the modern U.S. government UAP research infrastructure does not exist. He died in December 2021 having grown increasingly vocal about his belief that the government was concealing recovered craft of non-human origin from Congress.",
+    "status": "detailed",
+    "tags": [
+      "AAWSAP",
+      "AATIP",
+      "DIA",
+      "Senate",
+      "Bigelow",
+      "George Knapp",
+      "UAP Disclosure",
+      "Congressional Funding"
+    ],
+    "data_file": "reid.json",
+    "type": "official"
+  },
+  {
+    "id": "j-allen-hynek",
+    "name": "Dr. J. Allen Hynek",
+    "aliases": [
+      "Josef Allen Hynek",
+      "Allen Hynek",
+      "The Father of Scientific Ufology"
+    ],
+    "role": "Astrophysicist; U.S. Air Force Scientific Consultant; Founder, CUFOS",
+    "period": "1948–1969 (Air Force consultant); 1973–1986 (CUFOS)",
+    "affiliation": "Ohio State University, Northwestern University, U.S. Air Force Projects Sign/Grudge/Blue Book, Center for UFO Studies (CUFOS)",
+    "summary": "The intellectual founder of serious scientific UAP research. Recruited by the U.S. Air Force in 1948 as a skeptic to debunk UFO reports, he spent 21 years examining hundreds of military and civilian cases and emerged as the field's most credentialed scientific advocate. Invented the Close Encounter classification system (CE1/CE2/CE3) that remains the global standard. Founded CUFOS (1973), the first civilian scientific UAP organization. His trajectory from institutional debunker to scientific advocate established the template followed by every credentialed figure who has come after him.",
+    "status": "detailed",
+    "tags": [
+      "Project Blue Book",
+      "Close Encounters",
+      "CUFOS",
+      "Air Force",
+      "Scientific Methodology",
+      "CE Classification",
+      "Debunker-to-Advocate",
+      "Spielberg"
+    ],
+    "data_file": "hynek.json",
+    "type": "scientist"
+  },
+  {
+    "id": "george-knapp",
+    "name": "George Knapp",
+    "aliases": [
+      "George T. Knapp"
+    ],
+    "role": "Chief Investigative Reporter, KLAS-TV Las Vegas; UAP Journalist",
+    "period": "1987–present",
+    "affiliation": "KLAS-TV (CBS Las Vegas), Mystery Wire, Weaponized Podcast",
+    "summary": "The most consequential UAP investigative journalist in American history. His 1989 interviews with Bob Lazar launched the modern Area 51 mythology. His introduction of Senator Harry Reid to Robert Bigelow was the catalyst for AAWSAP's creation. Over 38 years he has maintained deeper source access across government, military, and intelligence communities on UAP than any other journalist. Co-authored 'Skinwalkers at the Pentagon' (2021) with DIA insider James Lacatski. Testified before Congress in September 2025. His awards include Edward R. Murrow Awards and multiple Emmys earned across non-UAP investigative work, establishing professional credibility independent of the subject.",
+    "status": "detailed",
+    "tags": [
+      "Bob Lazar",
+      "KLAS-TV",
+      "Skinwalker Ranch",
+      "AAWSAP",
+      "Harry Reid",
+      "Weaponized",
+      "Congressional Testimony",
+      "Investigative Journalism"
+    ],
+    "data_file": "knapp.json",
+    "type": "journalist"
+  },
+  {
+    "id": "leslie-kean",
+    "name": "Leslie Kean",
+    "aliases": [],
+    "role": "Investigative Journalist; Co-Author, 2017 New York Times AATIP Investigation",
+    "period": "1999–present",
+    "affiliation": "The New York Times (contributor), Coalition for Freedom of Information",
+    "summary": "The investigative journalist most directly responsible for triggering the modern UAP disclosure era. Co-authored the December 16, 2017 New York Times article 'Glowing Auras and Black Money' with Helene Cooper and Ralph Blumenthal - the article that revealed AATIP, named Elizondo, published the Nimitz Tic Tac video, and launched the chain of events that produced congressional hearings and AARO. Her 2010 book 'UFOs: Generals, Pilots and Government Officials Go on the Record,' built entirely on named, credentialed military sources, established the methodological template a decade before the disclosure. Without her decade of groundwork and the 2017 article, the modern disclosure era does not happen when or how it did.",
+    "status": "detailed",
+    "tags": [
+      "New York Times",
+      "AATIP",
+      "2017 Disclosure",
+      "Investigative Journalism",
+      "Named Sources",
+      "Generals and Pilots",
+      "Coalition for Freedom of Information",
+      "Tic Tac Video"
+    ],
+    "data_file": "kean.json",
+    "type": "journalist"
   }
 ]
