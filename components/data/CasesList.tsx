@@ -281,7 +281,7 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
   const selected = cases.find(c => c.id === selectedId) ?? null;
 
   if (selected) {
-    return <CaseDetail c={selected} onBack={() => setSelectedId(null)} />;
+    return <CaseDetail c={selected} onBack={() => { setSelectedId(null); window.scrollTo({ top: 0, behavior: 'instant' }); }} />;
   }
 
   return (
@@ -319,7 +319,7 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
                   </span>
                 </div>
                 <button
-                  onClick={() => setSelectedId(c.id)}
+                  onClick={() => { setSelectedId(c.id); window.scrollTo({ top: 0, behavior: 'instant' }); }}
                   className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap shrink-0"
                 >
                   View Case
