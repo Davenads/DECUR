@@ -576,5 +576,307 @@
         "No independent video or photographic evidence from the encounter"
       ]
     }
+  },
+  {
+    "id": "roswell-1947",
+    "name": "Roswell Incident",
+    "date": "July 2–8, 1947",
+    "location": "Foster Ranch, approximately 75 miles north of Roswell, New Mexico; RAAF, Roswell NM; Fort Worth AAF, Texas",
+    "country": "United States",
+    "category": "crash-recovery",
+    "evidence_tier": "tier-2",
+    "classification_status": "officially-closed",
+    "summary": "In early July 1947, rancher Mac Brazel discovered a debris field on the Foster Ranch northwest of Roswell, NM. He reported it to Chaves County Sheriff George Wilcox, who contacted Roswell Army Air Field. Major Jesse Marcel, Intelligence Officer of the 509th Bomb Group, was dispatched to investigate. RAAF Public Information Officer Walter Haut issued a press release on July 8 announcing recovery of a 'flying disc' under orders from base commander Colonel William Blanchard. Hours later, Brigadier General Roger Ramey held a press conference in Fort Worth retracting the claim, identifying the debris as a weather balloon and radar reflector. The USAF issued two subsequent reports — in 1994 identifying the debris as likely from classified Project Mogul balloon arrays, and in 1997 attributing alleged 'body' accounts to anthropomorphic test dummies used in 1950s parachute experiments. A 1995 GAO investigation found that RAAF administrative records and outgoing messages from 1945–1949 had been destroyed under undocumented authority.",
+    "tags": ["crash-recovery", "military", "USAF", "press-release", "FOIA", "GAO-investigation", "Project-Mogul"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "June 14, 1947: Mac Brazel first observed unusual debris on the Foster Ranch while riding with his son Vernon",
+        "July 7, 1947: Brazel reported the debris to Sheriff George Wilcox; RAAF dispatched Major Jesse Marcel and CIC officer Sheridan Cavitt to the site",
+        "July 8, 1947 (morning): RAAF public information officer Walter Haut issued press release announcing recovery of a 'flying disc' under orders from Colonel William Blanchard",
+        "July 8, 1947 (afternoon): Brigadier General Roger M. Ramey held a Fort Worth press conference; weather officer Irving Newton identified the debris as a standard weather balloon and radar reflector target",
+        "A photograph of Ramey holding a memo at the press conference was taken by a Fort Worth Star-Telegram photographer — the 'Ramey Memo' — the original document no longer exists",
+        "1994 USAF Report: debris most likely originated from Project Mogul — classified acoustic sensor balloon arrays used to detect Soviet nuclear tests",
+        "1995 GAO investigation (NSIAD-95-187) found RAAF administrative records and outgoing messages from October 1946 through December 1949 had been destroyed under undocumented authority",
+        "1997 USAF Report 'The Roswell Report: Case Closed': alleged body accounts attributed to anthropomorphic test dummies used in 1950s parachute experiments",
+        "An FBI teletype dated July 8, 1947 records the military described the recovered object as resembling 'a high-altitude weather balloon with a radar reflector'"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "No video or audio recordings from the incident — pre-FLIR/recording era"
+      ],
+      "documentation": [
+        "Walter Haut press release, July 8, 1947 — the only official US military press release ever announcing recovery of a 'flying disc'; original on file at Roswell International UFO Museum",
+        "FBI teletype, July 8, 1947 — records military identification of debris as 'weather balloon with radar reflector'; available via FBI Vault FOIA records",
+        "USAF Report: 'Report of Air Force Research Regarding the Roswell Incident' (Col. Richard L. Weaver, July 1994) — concluded debris was from Project Mogul; available via NSA.gov",
+        "GAO Report NSIAD-95-187 (July 1995) — confirmed destruction of RAAF administrative records from 1945-1949 under undocumented authority; available via GAO.gov",
+        "USAF Report: 'The Roswell Report: Case Closed' (Capt. James McAndrew, June 1997) — attributed body accounts to 1950s test dummies; available via media.defense.gov",
+        "Ramey Memo photograph — held at the University of Texas at Arlington; partial legibility only; no forensic consensus on text content"
+      ],
+      "physical": [
+        "Debris field: metallic foil, sticks, and rubber-like material recovered by Brazel and Marcel — identified as consistent with Project Mogul radar reflector by USAF 1994 investigation",
+        "No physical material confirmed to survive in any verified collection; all alleged recovered material is disputed"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Major Jesse A. Marcel Sr.",
+        "role": "Intelligence Officer (S-2), 509th Bomb Group, RAAF; led the field investigation",
+        "type": "military",
+        "testimony": "It was not a weather balloon. Not part of an airplane. Not a missile. I was pretty well acquainted with all the materials used by the Army Air Forces. What I found was nothing like that. It was not anything from this Earth."
+      },
+      {
+        "name": "Walter Haut",
+        "role": "1st Lt., Public Information Officer, 509th Bomb Group, RAAF; issued the July 8 press release",
+        "type": "military",
+        "testimony": "Colonel Blanchard told me to issue the press release. I did exactly what I was told. In a sealed affidavit to be opened after my death, I stated that I attended a meeting where I observed both the debris and small bodies, and that the craft and bodies were taken to Hangar 84 at RAAF. I stand by that account."
+      },
+      {
+        "name": "W.W. 'Mac' Brazel",
+        "role": "Rancher and foreman, Foster Ranch; first civilian to discover the debris field",
+        "type": "civilian",
+        "testimony": "I picked up the material and brought it in. It was not any weather observation balloon or aircraft. I am sure what I found was not any weather observation balloon or aircraft. I don't know what it was but it wasn't a weather balloon."
+      },
+      {
+        "name": "Brigadier General Roger M. Ramey",
+        "role": "Commanding General, Eighth Air Force, Fort Worth AAF; held the retraction press conference",
+        "type": "military",
+        "testimony": "The identification was made by the weather balloon officer, Irving Newton. We are satisfied that this is the explanation for the earlier reports of the flying disc. There is no more to say."
+      }
+    ],
+    "official_response": {
+      "agencies": ["RAAF / 509th Bomb Group", "Eighth Air Force", "FBI", "US Air Force", "US General Accounting Office"],
+      "statements": [
+        {
+          "source": "RAAF Public Information Office (Walter Haut, under Col. Blanchard's orders)",
+          "date": "July 8, 1947",
+          "statement": "The many rumors regarding the flying disc became a reality yesterday when the intelligence office of the 509th Bomb Group of the Eighth Air Force, Roswell Army Air Field, was fortunate enough to gain possession of a disc through the cooperation of one of the local ranchers and the sheriff's office of Chaves County."
+        },
+        {
+          "source": "Brigadier General Roger M. Ramey, Eighth Air Force",
+          "date": "July 8, 1947",
+          "statement": "The object found was a weather balloon and radar reflector. There is no flying disc. The identification was made by the Army weather officer, Irving Newton."
+        },
+        {
+          "source": "US Air Force (Col. Richard L. Weaver)",
+          "date": "July 1994",
+          "statement": "The most likely source of the debris recovered from the Foster Ranch was a Project Mogul balloon train. Project Mogul was a classified program using acoustic sensor arrays to detect Soviet nuclear detonations. The unusual properties of the recovered materials are consistent with Mogul reflector components."
+        },
+        {
+          "source": "US General Accounting Office (GAO Report NSIAD-95-187)",
+          "date": "July 1995",
+          "statement": "RAAF administrative records covering March 1945 through December 1949 were destroyed. RAAF outgoing messages from October 1946 through December 1949 were also destroyed. The disposition forms do not record who destroyed the records, when, or the authority under which the action was taken."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Walter Haut's post-mortem sealed affidavit states he personally observed both debris and bodies — Haut was the original press release author and had direct access to RAAF facilities",
+        "Jesse Marcel Sr. maintained until his death that the material was not of terrestrial origin and unlike anything he had encountered in his military career",
+        "The GAO confirmed that RAAF records from 1945-1949 were destroyed under undocumented authority — an unusual administrative gap for a routine weather balloon recovery",
+        "The FBI's July 8 teletype confirms the military itself was uncertain of the object's classification in real time",
+        "RAAF public affairs issued an extraordinary press release claiming a 'flying disc' under direct orders from the base commander — not a random misidentification",
+        "Colonel Blanchard's order to issue the press release before the Fort Worth retraction implies a chain of command above Roswell was involved in controlling the narrative"
+      ],
+      "contradicting": [
+        "USAF 1994 investigation provides a specific classified program (Project Mogul) that explains the unusual material properties Marcel described — including the metallic foil and structural members",
+        "Weather officer Irving Newton, present at the Fort Worth press conference, identified the debris as standard equipment he had handled many times before",
+        "Glenn Dennis's testimony — widely cited in early research — has been substantially impeached; he provided demonstrably false names for a key witness and changed his account multiple times",
+        "Walter Haut's sealed affidavit, released after his 2005 death, contradicts his own earlier public statements made under much less dramatic terms",
+        "The 1997 USAF report identifies a plausible sequence of events explaining how 1950s parachute test dummies were conflated with 'alien bodies' decades later through memory distortion",
+        "No confirmed physical material from Roswell exists in any verified scientific collection — all alleged specimens rely on single-source testimony with no independent corroboration"
+      ]
+    }
+  },
+  {
+    "id": "malmstrom-afb-1967",
+    "name": "Malmstrom AFB ICBM Shutdown Incidents",
+    "date": "March 16 and March 24, 1967",
+    "location": "Echo and Oscar Flight Launch Control Facilities, 341st Strategic Missile Wing, Malmstrom AFB, Montana",
+    "country": "United States",
+    "category": "military-ground",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "On March 16 and March 24, 1967, ten Minuteman I ICBM missiles went offline simultaneously at two separate launch control facilities (Echo Flight and Oscar Flight) at Malmstrom AFB, Montana. Former USAF officers Robert Salas (Oscar Flight) and Walter Figel (Echo Flight) have made public statements linking the shutdowns to UFO sightings by security guards at the facilities. The official USAF investigation attributed Echo Flight's failure to an electronic noise pulse entering the logic coupler. Echo Flight crew commanders Eric Carlson and Walter Figel have both denied that UFO sightings were connected to the shutdown. FOIA-released 341st SMW unit history confirms the Echo Flight outage but makes no mention of UFO involvement. Robert Salas has testified publicly at the 2010 National Press Club and submitted testimony to AARO in 2023.",
+    "tags": ["military", "nuclear", "ICBM", "FOIA", "electronic-interference", "Montana", "USAF"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Echo Flight incident: March 16, 1967 at approximately 08:45 local time — all 10 Minuteman I ICBMs at Echo Flight went to 'No-Go' status",
+        "Echo Flight crew: Captain Eric Carlson (Commander) and 1st Lieutenant Walter Figel (Deputy) — both have denied UFO connection to the shutdown",
+        "Oscar Flight incident: March 24, 1967 — all 10 Minuteman I ICBMs at Oscar Flight went offline",
+        "Oscar Flight crew: 1st Lieutenant Robert Salas (Deputy Crew Commander, then aged 26) — has publicly stated a guard reported a glowing red UFO hovering over the gate shortly before the shutdown",
+        "USAF official investigation attributed Echo Flight shutdown to an electronic noise pulse entering the logic coupler in the Launch Control Center",
+        "The declassified 341st Strategic Missile Wing Command History (1967) documents the Echo Flight shutdown but makes no mention of UFO reports",
+        "FOIA requests filed in 1995 by researcher Jim Klotz on Salas's behalf produced the declassified unit history records",
+        "Robert Salas testified at the September 27, 2010 National Press Club alongside other former USAF officers",
+        "Robert Salas submitted testimony to AARO in February 2023",
+        "James Carlson (son of Eric Carlson) has written extensively disputing Salas's account, providing email exchanges with Walter Figel in which Figel denied any UFO-nuclear connection"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "No video or audio recordings from the incidents"
+      ],
+      "documentation": [
+        "341st Strategic Missile Wing Command History, 1967 (declassified) — documents the Echo Flight shutdown via FOIA release; available via CUFON.org and National Archives; makes no mention of UFO involvement",
+        "FOIA-released Malmstrom AFB message traffic regarding the Echo Flight shutdown — released 1995 following Jim Klotz's requests",
+        "Robert Salas's written statement and sworn testimony, 2010 National Press Club press conference — available via robertsalas.com",
+        "Robert Salas's testimony submission to AARO, February 2023 — referenced in public AARO reporting",
+        "Robert Salas and Robert Hastings, 'Faded Giant' (2005) — self-published account; primary source document for Salas's narrative",
+        "James Carlson's document 'Echo Flights of Fantasy' (2010) — available via Scribd; includes Walter Figel email denials"
+      ],
+      "physical": [
+        "No physical evidence recovered; the shutdown itself is confirmed by official unit history as a real event with an official mechanical explanation"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "1st Lt. Robert Salas (ret. as Captain)",
+        "role": "Deputy Crew Commander, Oscar Flight, 341st SMW; primary public advocate for UFO connection",
+        "type": "military",
+        "testimony": "I received a call from the topside security guard. He said there was a glowing, reddish oval-shaped object hovering over the front gate of our facility. Minutes later, all 10 of our missiles went to No-Go status. I reported it up the chain of command. I was told not to discuss it. The government has denied this connection and that denial is a falsehood."
+      },
+      {
+        "name": "1st Lt. Walter Figel",
+        "role": "Deputy Crew Commander, Echo Flight; primary witness to the Echo Flight shutdown on March 16, 1967",
+        "type": "military",
+        "testimony": "A maintenance technician on the topside mentioned something about a UFO during a call — I treated it as a joke. I don't believe UFOs were even remotely associated with the Echo Flight incident. The official explanation — the electronic noise pulse — is what I believe caused the shutdown. I was there."
+      },
+      {
+        "name": "Capt. Eric Carlson",
+        "role": "Crew Commander, Echo Flight; co-witness to the March 16, 1967 shutdown",
+        "type": "military",
+        "testimony": "I flatly deny receiving any UFO reports in connection with the Echo Flight shutdown. The account that has been attributed to my crew in some reports is not accurate. The official investigation found a mechanical cause."
+      }
+    ],
+    "official_response": {
+      "agencies": ["341st Strategic Missile Wing, USAF", "Strategic Air Command", "AARO"],
+      "statements": [
+        {
+          "source": "341st Strategic Missile Wing Command History, 1967 (declassified)",
+          "date": "1967 (declassified via FOIA, 1995)",
+          "statement": "The Echo Flight shutdown on March 16, 1967 was attributed to an electronic noise pulse entering the logic coupler in the Launch Control Center. The cause was determined to be an internal system failure. [No mention of UFO activity in the official record.]"
+        },
+        {
+          "source": "AARO (All-domain Anomaly Resolution Office)",
+          "date": "2023",
+          "statement": "AARO received testimony from former USAF officer Robert Salas regarding the 1967 Malmstrom incidents. AARO's historical record review has not produced evidence confirming a UAP connection to nuclear weapon system anomalies at Malmstrom in 1967."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "The ICBM shutdowns themselves are confirmed real events documented in declassified USAF unit history — the 10-missile simultaneous No-Go at Echo Flight is not in dispute",
+        "Robert Salas's account has remained internally consistent across decades of public testimony and under formal settings including the National Press Club and AARO",
+        "Multiple former USAF officers made similar claims at the 2010 National Press Club event, citing nuclear facility encounters at other bases",
+        "The simultaneous shutdown of 10 independent ICBMs is operationally extraordinary — the official 'noise pulse' explanation was never independently peer-reviewed",
+        "Salas filed formal testimony with AARO in 2023, putting his account on federal record subject to the consequences of false statements"
+      ],
+      "contradicting": [
+        "Both Echo Flight crew commanders — Carlson and Figel — have directly denied any UFO connection to the shutdown they personally witnessed",
+        "Figel, who was on the crew that actually experienced the Echo Flight shutdown, stated the UFO mention by a technician was a casual remark he treated as a joke",
+        "The official USAF investigation attributed Echo Flight's failure to an electronic noise pulse — a specific mechanical explanation with documented findings",
+        "The declassified 341st SMW Command History contains no mention of UFO reports in connection with either shutdown",
+        "Salas conflated Echo Flight (March 16, where he was not present) with Oscar Flight (March 24, where he was) in early public accounts — later corrected but noted as a credibility concern",
+        "James Carlson's documentation includes direct written denials from Figel himself — a primary Echo Flight witness contradicting the UFO narrative"
+      ]
+    }
+  },
+  {
+    "id": "kecksburg-1965",
+    "name": "Kecksburg UFO Incident",
+    "date": "December 9, 1965",
+    "location": "Kecksburg, Westmoreland County, Pennsylvania",
+    "country": "United States",
+    "category": "crash-recovery",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "On December 9, 1965 at approximately 4:45 PM EST, a large fireball observed across six US states and Canada came down near the village of Kecksburg, Pennsylvania. Volunteer firefighter Jim Romansky, dispatched to investigate a possible downed aircraft, reported approaching an acorn-shaped bronze metallic object bearing hieroglyphic-like markings in a wooded ravine. Military personnel arrived and cordoned off the area; witnesses reported an object was loaded onto a flatbed truck and removed under military escort. WHJB radio news director John Murphy, the first journalist on scene, later had his film and audio tapes confiscated. Murphy subsequently produced only a sanitized version of his radio documentary before dying in 1969. Project Blue Book classified the event as a meteor bolide. In 2003, journalist Leslie Kean filed a federal FOIA lawsuit against NASA (Kean v. NASA, 480 F. Supp. 2d 150), settled in 2007; NASA produced hundreds of documents but acknowledged that key 1987 analysis records had been lost.",
+    "tags": ["crash-recovery", "FOIA", "Project-Blue-Book", "physical-evidence", "Pennsylvania", "NASA"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "December 9, 1965, approximately 4:43 PM EST: a large fireball was observed across Ontario, Michigan, Ohio, Indiana, West Virginia, New York, and Pennsylvania",
+        "The object was reported to have come down near Kecksburg, PA at approximately 4:45 PM EST",
+        "Project Blue Book officially classified the event as a meteor bolide; a USAF major from the Pentagon contacted Air Force press offices the following day requesting talking points",
+        "Volunteer firefighter Jim Romansky reported approaching an acorn-shaped, bronze-gold metallic object — seamless construction with hieroglyphic-like markings on a rear 'bumper' band",
+        "WHJB radio news director John Murphy arrived before military units and reportedly photographed and interviewed witnesses; his film and audio tapes were later confiscated by men identifying as government officials",
+        "Murphy produced a sanitized radio documentary ('Object in the Woods') after government officials visited the station; the original version never aired. Murphy died in a hit-and-run in Ventura, California in 1969",
+        "NASA stated in 2005 that its experts had analyzed fragments from the area and concluded the object was a Soviet satellite — but that the analysis records from 1987 had been lost that same year",
+        "Federal FOIA lawsuit Kean v. NASA (480 F. Supp. 2d 150) filed 2003, settled October 2007: NASA required to produce hundreds of new documents and pay plaintiff's legal fees; no confirmed identification of the object emerged",
+        "Jim Romansky maintained his account without substantive change until his death on August 18, 2021, in Derry, Pennsylvania"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "John Murphy's radio recordings and photographs — reportedly confiscated; only a sanitized version of the 'Object in the Woods' documentary survives",
+        "Contemporaneous press coverage in Pittsburgh newspapers (Pittsburgh Press, Pittsburgh Post-Gazette), December 9-10, 1965"
+      ],
+      "documentation": [
+        "Project Blue Book files on the Kecksburg incident — classified as 'meteor'; available via National Archives (NARA) and The Black Vault FOIA archive",
+        "USAF Pentagon memo, December 10, 1965 — documents Major Howard contacting Air Force press offices requesting talking points about the fireball sighting",
+        "Kean v. NASA, 480 F. Supp. 2d 150 (D.D.C. 2007) — federal FOIA lawsuit filed by journalist Leslie Kean; CourtListener.com; resulted in production of hundreds of NASA documents",
+        "NASA's 2005 public statement attributing the object to a Soviet satellite — no surviving supporting records; acknowledged in Kean FOIA litigation",
+        "Stan Gordon research archive — decades of witness documentation; accessible via stangordon.info"
+      ],
+      "physical": [
+        "Acorn-shaped object reported by Romansky in a wooded ravine — not preserved; reportedly removed under military escort on a flatbed truck",
+        "No confirmed physical material from Kecksburg exists in any verified collection"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "James (Jim) Romansky",
+        "role": "Volunteer firefighter, Kecksburg VFD; dispatched to investigate a reported downed aircraft",
+        "type": "civilian",
+        "testimony": "I went into the woods with my fire company. There was an object in a ravine — acorn-shaped, bronze-gold colored, about the size of a Volkswagen Bug but bigger. No rivets, no seams. On the rear bumper there were markings — not writing I recognized, like Egyptian hieroglyphics. It was one piece of metal, poured into a mold. I have never changed my account. That is what I saw."
+      },
+      {
+        "name": "John Murphy",
+        "role": "News director and reporter, WHJB radio, Greensburg PA; first journalist on scene",
+        "type": "journalist",
+        "testimony": "I went out there. I saw something. I took photographs. Men came to the station — they identified themselves as government officials. They took my film. They took my audio tapes. I was told to change the documentary. I want to tell the truth about what happened out there. [Murphy died in 1969 before making a full public statement; this account is reconstructed from wife Bonnie Milslagle's testimony and WHJB employee Linda Foschia's recollections.]"
+      }
+    ],
+    "official_response": {
+      "agencies": ["Project Blue Book (USAF)", "NASA", "Federal Court (D.D.C.)"],
+      "statements": [
+        {
+          "source": "Project Blue Book, USAF",
+          "date": "December 1965",
+          "statement": "The Kecksburg fireball has been classified as a meteor. The object observed was a bolide burning up in the Earth's atmosphere. There is no evidence of a structured craft landing in Kecksburg, Pennsylvania."
+        },
+        {
+          "source": "NASA",
+          "date": "2005",
+          "statement": "NASA experts analyzed fragments from the Kecksburg area and concluded the object was likely a Soviet satellite re-entering Earth's atmosphere. Records of that analysis, conducted in 1987, have been lost."
+        },
+        {
+          "source": "US District Court, D.C. (Kean v. NASA settlement)",
+          "date": "October 2007",
+          "statement": "NASA has agreed to produce additional records responsive to plaintiff's FOIA requests and to pay plaintiff's reasonable attorney's fees. NASA has conducted a more thorough search of its records consistent with the court's prior orders."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Jim Romansky, a machinist by trade, gave a technically specific description (seamless construction, acorn shape, non-alphabetic symbols) that did not significantly change over three decades of public testimony",
+        "John Murphy's behavior — producing a sanitized documentary after a government visit, and the confiscation of his film and tapes — is corroborated by two independent WHJB employees",
+        "NASA's acknowledgment that it conducted analysis of Kecksburg fragments but lost all records is a documented admission in federal court proceedings",
+        "USAF press office was contacted the day after the incident requesting talking points — indicating institutional awareness and concern beyond a routine meteor classification",
+        "The fireball's trajectory was observed across six states and Canada — its final position over Kecksburg is established by multiple independent civilian reports",
+        "Federal FOIA court order (Kean v. NASA) required NASA to conduct a significantly more thorough document search than it had initially performed — implying initial response was inadequate"
+      ],
+      "contradicting": [
+        "Project Blue Book's classification as a meteor bolide represents the only contemporaneous official scientific assessment of the event",
+        "No confirmed physical material from Kecksburg exists in any verified collection — Romansky's account is the sole close-up witness and cannot be independently corroborated",
+        "NASA's 'Soviet satellite' explanation, while never substantiated with surviving records, is a plausible scenario — Soviet GE Mark 2 re-entry vehicle comparisons have been made by researchers",
+        "Murphy's original photographs and recordings no longer exist — the confiscation claim rests entirely on the accounts of his former wife and a colleague",
+        "Stan Gordon, the primary long-term investigator, operates as a UFO researcher without institutional affiliation — his archive is the primary source for many witness accounts",
+        "The military cordon and object removal reported by multiple Kecksburg witnesses conflicts with official accounts but cannot be verified through any surviving documentary evidence"
+      ]
+    }
   }
 ]
