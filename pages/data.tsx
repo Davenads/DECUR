@@ -100,7 +100,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     const navItems: NavItemDef[] = [
       { category: 'events',  label: 'Historical Events',  description: 'Famous cases & sightings',       count: events.length  },
-      { category: 'figures', label: 'Witnesses',           description: 'Researchers, officials & witnesses', count: figures.length },
+      { category: 'figures', label: 'Spotlights',          description: 'Notable milestones & researcher profiles', count: figures.length },
       { category: 'quotes',  label: 'Quotes',              description: 'Notable statements',             count: quotes.length  },
       { category: 'media',   label: 'Media & Documents',   description: 'Films, books & official docs',   count: media.length   },
       { category: 'news',           label: 'News',            description: 'Reports & developments',         count: news.length    },

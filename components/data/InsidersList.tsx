@@ -80,7 +80,7 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Insiders</h2>
+        <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Key Figures</h2>
         <p className="text-sm text-gray-500">
           Individuals who have provided firsthand testimony regarding classified programs, extraterrestrial phenomena, and advanced technologies.
         </p>

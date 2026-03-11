@@ -16,15 +16,15 @@ const KeyFigures: FC<Props> = ({ entries }) => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold font-heading mb-2">Key Figures</h2>
+      <h2 className="text-2xl font-bold font-heading mb-2">Spotlights</h2>
       <p className="text-gray-500 text-sm mb-6">
-        {entries.length} individuals central to UAP research, disclosure, and investigation.
+        {entries.length} notable UAP milestones, researcher profiles, and disclosure events.
       </p>
 
       <div className="relative mb-6">
         <input
           type="text"
-          placeholder="Search figures..."
+          placeholder="Search spotlights..."
           value={search}
           onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
           className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
