@@ -16,21 +16,21 @@ const CATEGORIES = [
   },
   {
     label: 'Non-Human Intelligence',
-    href: '/data?category=entities',
+    href: '/data?category=cases',
     description:
       'Documented biological, behavioral, and physiological data on reported non-human entities, drawn from testimony and alleged research records.',
     detail: 'P-45 · P-52 · J-Rod neuropathology · Orion classification',
   },
   {
     label: 'Technologies & Programs',
-    href: '/data?category=technologies',
+    href: '/data?category=documents',
     description:
       'Accounts of recovered, observed, or reverse-engineered exotic technologies, and the classified programs associated with their study.',
     detail: 'AATIP · AAWSAP · Looking Glass · S-4 facility',
   },
   {
     label: 'Timeline & Concepts',
-    href: '/data?category=timelines',
+    href: '/explore',
     description:
       'A structured chronology of UAP events spanning eight decades, from early government documentation through modern congressional disclosure, alongside key theoretical frameworks and program histories.',
     detail: 'Nimitz incident · AATIP / AAWSAP · Grusch testimony · Majestic-12',
