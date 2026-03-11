@@ -1,4 +1,4 @@
-import { useState, useMemo, FC, ChangeEvent } from 'react';
+import { useState, useMemo, useEffect, FC, ChangeEvent } from 'react';
 
 export interface TimelineEntry {
   id: number;
@@ -62,7 +62,10 @@ const TimelineView: FC<TimelineViewProps> = ({ entries }) => {
   const [activeCategories, setActiveCategories] = useState<Set<string>>(new Set(ALL_CATEGORIES));
   const [search, setSearch] = useState('');
   const [yearMin, setYearMin] = useState<number>(1947);
-  const [yearMax, setYearMax] = useState<number>(new Date().getFullYear());
+  const [yearMax, setYearMax] = useState<number>(2026);
+  useEffect(() => {
+    setYearMax(new Date().getFullYear());
+  }, []);
 
   const globalMin = useMemo(() => Math.min(...entries.map(e => e.year)), [entries]);
   const globalMax = useMemo(() => Math.max(...entries.map(e => e.year)), [entries]);

@@ -1,8 +1,11 @@
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 const Footer: FC = () => {
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState(2026);
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="bg-gray-800 text-white">
