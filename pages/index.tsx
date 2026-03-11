@@ -108,15 +108,20 @@ const Home: CustomNextPage<HomePageProps> = () => {
         </section>
 
         {/* Scope note */}
-        <section className="max-w-3xl mx-auto px-4">
-          <div className="flex gap-4 items-start">
-            <div className="w-1 shrink-0 bg-gray-300 rounded-full self-stretch" />
-            <p className="text-sm text-gray-500 leading-relaxed">
-              Source material draws from congressional testimony, document leaks, on-record
-              interviews, and firsthand accounts. DECUR does not adjudicate the truth of any
-              claim; entries are documented with their source, context, and known corroborating
-              or contradicting evidence.
-            </p>
+        <section className="max-w-5xl mx-auto px-4">
+          <div className="bg-white rounded-lg border border-gray-200 px-6 py-5 flex gap-5 items-start">
+            <div className="w-[3px] shrink-0 bg-gray-300 self-stretch rounded-full" />
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+                Scope &amp; Methodology
+              </p>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Source material draws from congressional testimony, document leaks, on-record
+                interviews, and firsthand accounts. DECUR does not adjudicate the truth of any
+                claim; entries are documented with their source, context, and known corroborating
+                or contradicting evidence.
+              </p>
+            </div>
           </div>
         </section>
 
