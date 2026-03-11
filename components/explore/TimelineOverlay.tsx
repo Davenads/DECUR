@@ -30,26 +30,27 @@ interface SourceConfig {
   color: string;
 }
 
+// Keys must match the registry IDs in data/insiders/registry.ts exactly.
 const SOURCE_CONFIG: Record<string, SourceConfig> = {
-  'burisch':      { label: 'Dan Burisch',    color: '#8b5cf6' },
-  'lazar':        { label: 'Bob Lazar',       color: '#3b82f6' },
-  'grusch':       { label: 'David Grusch',   color: '#ef4444' },
-  'elizondo':     { label: 'Luis Elizondo',  color: '#10b981' },
-  'fravor':       { label: 'David Fravor',   color: '#f59e0b' },
-  'nell':         { label: 'Karl Nell',       color: '#14b8a6' },
-  'nolan':        { label: 'Garry Nolan',    color: '#ec4899' },
-  'puthoff':      { label: 'Hal Puthoff',    color: '#6366f1' },
-  'mellon':       { label: 'Chris Mellon',   color: '#d97706' },
-  'davis':        { label: 'Eric Davis',      color: '#f43f5e' },
-  'bigelow':      { label: 'Robert Bigelow', color: '#84cc16' },
-  'vallee':       { label: 'Jacques Vallee', color: '#06b6d4' },
-  'pope':         { label: 'Nick Pope',       color: '#f97316' },
-  'barber':       { label: 'Jake Barber',    color: '#a3e635' },
-  'gallaudet':    { label: 'Tim Gallaudet',  color: '#1d4ed8' },
-  'harry-reid':   { label: 'Harry Reid',     color: '#64748b' },
-  'j-allen-hynek':{ label: 'J. Allen Hynek', color: '#b45309' },
-  'george-knapp': { label: 'George Knapp',   color: '#0d9488' },
-  'leslie-kean':  { label: 'Leslie Kean',    color: '#a855f7' },
+  'dan-burisch':   { label: 'Dan Burisch',    color: '#8b5cf6' },
+  'bob-lazar':     { label: 'Bob Lazar',       color: '#3b82f6' },
+  'david-grusch':  { label: 'David Grusch',   color: '#ef4444' },
+  'luis-elizondo': { label: 'Luis Elizondo',  color: '#10b981' },
+  'david-fravor':  { label: 'David Fravor',   color: '#f59e0b' },
+  'karl-nell':     { label: 'Karl Nell',       color: '#14b8a6' },
+  'garry-nolan':   { label: 'Garry Nolan',    color: '#ec4899' },
+  'hal-puthoff':   { label: 'Hal Puthoff',    color: '#6366f1' },
+  'chris-mellon':  { label: 'Chris Mellon',   color: '#d97706' },
+  'eric-davis':    { label: 'Eric Davis',      color: '#f43f5e' },
+  'robert-bigelow':{ label: 'Robert Bigelow', color: '#84cc16' },
+  'jacques-vallee':{ label: 'Jacques Vallee', color: '#06b6d4' },
+  'nick-pope':     { label: 'Nick Pope',       color: '#f97316' },
+  'jake-barber':   { label: 'Jake Barber',    color: '#a3e635' },
+  'tim-gallaudet': { label: 'Tim Gallaudet',  color: '#1d4ed8' },
+  'harry-reid':    { label: 'Harry Reid',      color: '#64748b' },
+  'j-allen-hynek': { label: 'J. Allen Hynek', color: '#b45309' },
+  'george-knapp':  { label: 'George Knapp',   color: '#0d9488' },
+  'leslie-kean':   { label: 'Leslie Kean',    color: '#a855f7' },
 };
 
 const UAP_COLOR = '#93c5e8';
