@@ -9,7 +9,12 @@
       "description": "The first unclassified government report on UAP, cataloguing 143 incidents reported by U.S. military personnel between 2004 and 2021. Concluded that most cases lack sufficient data for explanation and established UAP as a legitimate national security concern.",
       "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf",
       "insider": null,
-      "tags": ["Government", "ODNI", "Military", "2021"]
+      "tags": [
+        "Government",
+        "ODNI",
+        "Military",
+        "2021"
+      ]
     },
     {
       "id": "aaro-hrr-2024",
@@ -20,7 +25,12 @@
       "description": "DoD's comprehensive 63-page historical review of UAP programs and claims. Addresses Grusch and Elizondo allegations directly. Includes findings on KONA BLUE and concludes no verified evidence of off-world spacecraft. Primary government counterargument to insider disclosure claims.",
       "url": "https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/HRR-VOL-I-REPORT-08-MARCH-2024.PDF",
       "insider": "david-grusch",
-      "tags": ["Government", "DoD", "AARO", "2024"]
+      "tags": [
+        "Government",
+        "DoD",
+        "AARO",
+        "2024"
+      ]
     },
     {
       "id": "nasa-uap-2023",
@@ -31,7 +41,12 @@
       "description": "Report from NASA's 16-member independent panel convened to assess UAP from a scientific standpoint. Recommends a data-driven framework, acknowledges legitimate unexplained cases, and advocates for destigmatization of UAP reporting.",
       "url": "https://smd-cms.nasa.gov/wp-content/uploads/2023/09/uap-independent-study-team-final-report.pdf",
       "insider": null,
-      "tags": ["Government", "NASA", "Science", "2023"]
+      "tags": [
+        "Government",
+        "NASA",
+        "Science",
+        "2023"
+      ]
     },
     {
       "id": "nyt-aatip-2017",
@@ -42,7 +57,12 @@
       "description": "The landmark investigation confirming AATIP's existence and publicly naming Luis Elizondo as program director. Published alongside the Nimitz Tic Tac video. Widely credited with launching the modern UAP disclosure era.",
       "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
       "insider": "luis-elizondo",
-      "tags": ["Journalism", "AATIP", "NY Times", "2017"]
+      "tags": [
+        "Journalism",
+        "AATIP",
+        "NY Times",
+        "2017"
+      ]
     },
     {
       "id": "debrief-grusch-2023",
@@ -53,7 +73,12 @@
       "description": "The break story publicly naming David Grusch and detailing his allegations of a multi-decade crash retrieval and reverse engineering program. DoD had pre-cleared his statements prior to publication. Triggered the July 2023 congressional hearing.",
       "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-been-secretly-recovering-non-human-craft-for-decades/",
       "insider": "david-grusch",
-      "tags": ["Journalism", "The Debrief", "Grusch", "2023"]
+      "tags": [
+        "Journalism",
+        "The Debrief",
+        "Grusch",
+        "2023"
+      ]
     },
     {
       "id": "elizondo-imminent-2024",
@@ -64,7 +89,12 @@
       "description": "Elizondo's first book-length account of AATIP, written after years of public advocacy. Details program structure, specific case investigations, and his account of navigating Pentagon bureaucracy. A New York Times bestseller.",
       "url": "https://www.harpercollins.com/products/imminent-luis-elizondo",
       "insider": "luis-elizondo",
-      "tags": ["Book", "Elizondo", "AATIP", "2024"]
+      "tags": [
+        "Book",
+        "Elizondo",
+        "AATIP",
+        "2024"
+      ]
     },
     {
       "id": "coulthart-in-plain-sight-2021",
@@ -75,7 +105,12 @@
       "description": "Investigative journalist Ross Coulthart's deep-dive into UAP evidence, government program histories, and insider accounts. One of the most thoroughly sourced journalistic books on the modern UAP disclosure landscape.",
       "url": "https://www.harpercollins.com/products/in-plain-sight-ross-coulthart",
       "insider": null,
-      "tags": ["Book", "Journalism", "Coulthart", "2021"]
+      "tags": [
+        "Book",
+        "Journalism",
+        "Coulthart",
+        "2021"
+      ]
     },
     {
       "id": "schumer-rounds-uap-disclosure-act-2023",
@@ -86,7 +121,12 @@
       "description": "Bipartisan NDAA amendment modeled on the JFK Records Act, introduced in direct response to Grusch's congressional testimony. Established a presumption of disclosure for UAP-related government records and created a Presidential Review Board for contested materials. Partial passage in the 2024 NDAA.",
       "url": "https://www.congress.gov/amendment/118th-congress/senate-amendment/937",
       "insider": "david-grusch",
-      "tags": ["Legislative", "Congress", "Disclosure", "2023"]
+      "tags": [
+        "Legislative",
+        "Congress",
+        "Disclosure",
+        "2023"
+      ]
     },
     {
       "id": "gallaudet-hoc-testimony-2024",
@@ -97,7 +137,83 @@
       "description": "Gallaudet's written testimony to the House Oversight Committee detailing his belief in NHI contact, suppression of UAP data within the Navy and NOAA, and firsthand knowledge of submersible UAP incidents. One of the most senior active scientists to publicly endorse Grusch's claims under oath.",
       "url": "https://oversight.house.gov/wp-content/uploads/2024/11/Updated-Testimony-Gallaudet.pdf",
       "insider": "tim-gallaudet",
-      "tags": ["Congressional Testimony", "Gallaudet", "Navy", "NOAA", "2024"]
+      "tags": [
+        "Congressional Testimony",
+        "Gallaudet",
+        "Navy",
+        "NOAA",
+        "2024"
+      ]
+    },
+    {
+      "id": "kean-ufo-generals-2010",
+      "title": "UFOs: Generals, Pilots, and Government Officials Go on the Record",
+      "type": "Book",
+      "author": "Leslie Kean",
+      "year": "2010",
+      "description": "Landmark pre-AATIP book compiling firsthand testimony from 18 contributors across 9 countries, including Belgian Air Force General Wilfried De Brouwer (1989-1990 Belgian wave), Arizona Governor Fife Symington (Phoenix Lights), Lt. Col. Charles Halt (Rendlesham Forest), and former NASA scientist Richard Haines. Foreword by John Podesta. Considered the most credible general-audience UAP book of the pre-disclosure era. Kean later co-authored the 2017 New York Times AATIP story and the 2023 Debrief Grusch break story.",
+      "url": "https://www.lesliekean.com/ufos/",
+      "insider": null,
+      "tags": [
+        "Book",
+        "Kean",
+        "Journalism",
+        "Military",
+        "2010"
+      ]
+    },
+    {
+      "id": "hastings-ufos-nukes-2008",
+      "title": "UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites",
+      "type": "Book",
+      "author": "Robert Hastings",
+      "year": "2008",
+      "description": "Hastings documents over 150 U.S. military veteran accounts of UAP activity at nuclear weapons facilities spanning 1945-2008. Primary reference source for the Malmstrom AFB 1967 Echo and Oscar Flight incidents. Includes declassified FOIA documents and recorded testimonies from missile launch officers, security personnel, and radar operators. Hastings organized the September 27, 2010 National Press Club press conference at which seven USAF veterans publicly described UAP incursions at nuclear sites, streamed live on CNN.",
+      "url": "https://www.ufohastings.com/",
+      "insider": null,
+      "tags": [
+        "Book",
+        "Hastings",
+        "Nuclear",
+        "Military",
+        "Malmstrom",
+        "2008"
+      ]
+    },
+    {
+      "id": "knapp-klas-lazar-1989",
+      "title": "UFOs: The Best Evidence — KLAS-TV Investigative Series",
+      "type": "Journalism",
+      "author": "George Knapp (KLAS-TV, Las Vegas)",
+      "year": "1989",
+      "description": "George Knapp's foundational investigative series for KLAS-TV that introduced Bob Lazar to the public. An initial anonymous interview aired May 15, 1989; Lazar appeared by name on November 10, 1989. Knapp independently corroborated Lazar's employment by locating a 1982 Los Alamos National Laboratory phone directory listing Lazar as a contractor and a Los Alamos Monitor newspaper profile identifying him as a physicist. This documentation established the corroborating framework central to Lazar's credibility. Knapp's subsequent investigative work is archived at Mystery Wire.",
+      "url": "https://www.mysterywire.com",
+      "insider": "bob-lazar",
+      "tags": [
+        "Journalism",
+        "Knapp",
+        "Lazar",
+        "KLAS-TV",
+        "Area 51",
+        "1989"
+      ]
+    },
+    {
+      "id": "liberation-times",
+      "title": "Liberation Times — UAP Legislation and Intelligence Reporting",
+      "type": "Journalism",
+      "author": "Christopher Sharp (Editor)",
+      "year": "2021",
+      "description": "UK-based independent outlet specializing in UAP legislation, intelligence sourcing, and FOIA-derived reporting. Sharp has broken multiple exclusive stories on the UAP Disclosure Act's legislative negotiations, the classified annex of the AARO Historical Record Report, and congressional UAP program briefings. Considered a primary outlet for tracking UAP-related executive and legislative branch developments, with particular depth on policy and congressional process.",
+      "url": "https://www.liberationtimes.com",
+      "insider": null,
+      "tags": [
+        "Journalism",
+        "Liberation Times",
+        "Legislation",
+        "Disclosure",
+        "2021"
+      ]
     }
   ],
   "testimony": [
@@ -110,7 +226,12 @@
       "description": "Grusch's full prepared statement submitted under oath. The most significant public UAP congressional testimony in modern history. Alleges a multi-decade crash retrieval program concealed from Congress. Offered to provide classified specifics to appropriate oversight personnel.",
       "url": "https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf",
       "insider": "david-grusch",
-      "tags": ["Congressional Testimony", "Grusch", "House", "2023"]
+      "tags": [
+        "Congressional Testimony",
+        "Grusch",
+        "House",
+        "2023"
+      ]
     },
     {
       "id": "senate-armed-services-2022",
@@ -121,7 +242,12 @@
       "description": "First modern Senate Armed Services hearing on UAP. Elizondo testified as a private citizen alongside DoD officials. Committee members pressed officials on reporting gaps, pilot stigma, and the scope of unresolved cases.",
       "url": "https://www.armed-services.senate.gov/hearings/to-examine-the-department-of-defenses-actions-regarding-unidentified-aerial-phenomena",
       "insider": "luis-elizondo",
-      "tags": ["Congressional Testimony", "Elizondo", "Senate", "2022"]
+      "tags": [
+        "Congressional Testimony",
+        "Elizondo",
+        "Senate",
+        "2022"
+      ]
     },
     {
       "id": "hoc-uap-hearing-full-2023",
@@ -132,7 +258,13 @@
       "description": "Full committee hearing page including all three witness written testimonies. Grusch testifies about crash retrieval programs. Graves and Fravor corroborate UAP encounter patterns. Grusch declines to answer questions about NHI contact and human fatalities in open session, citing classification.",
       "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
       "insider": "david-grusch",
-      "tags": ["Congressional Testimony", "Grusch", "Graves", "Fravor", "2023"]
+      "tags": [
+        "Congressional Testimony",
+        "Grusch",
+        "Graves",
+        "Fravor",
+        "2023"
+      ]
     },
     {
       "id": "grusch-newsnation-2023",
@@ -143,7 +275,12 @@
       "description": "Grusch's first televised interview following The Debrief break story. States the U.S. government possesses non-human craft. References something 'very disturbing' witnessed with his wife but declines detail citing classification. Most widely circulated video of his disclosures.",
       "url": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-says-u-s-has-non-human-craft/",
       "insider": "david-grusch",
-      "tags": ["Interview", "Grusch", "NewsNation", "2023"]
+      "tags": [
+        "Interview",
+        "Grusch",
+        "NewsNation",
+        "2023"
+      ]
     },
     {
       "id": "elizondo-60-minutes-2021",
@@ -154,7 +291,12 @@
       "description": "Elizondo's most mainstream media appearance. Discusses AATIP findings, the 5 Observables, and pilot reluctance to report UAP. Aired alongside interviews with Ryan Graves and David Fravor, reaching an estimated 10 million viewers.",
       "url": "https://www.cbsnews.com/news/ufo-military-60-minutes-2021-05-16/",
       "insider": "luis-elizondo",
-      "tags": ["Interview", "Elizondo", "60 Minutes", "2021"]
+      "tags": [
+        "Interview",
+        "Elizondo",
+        "60 Minutes",
+        "2021"
+      ]
     },
     {
       "id": "lazar-jre-2019",
@@ -165,7 +307,12 @@
       "description": "Lazar's most widely viewed interview, released alongside the Jeremy Corbell documentary. Covers S-4 facility details, element 115, gravity propulsion, and Lazar's account of how his identity was suppressed. One of the most-watched UAP-related interviews in history.",
       "url": "https://open.spotify.com/episode/4bzGEgJdFRNXNjW8MbDL0K",
       "insider": "bob-lazar",
-      "tags": ["Interview", "Lazar", "JRE", "2019"]
+      "tags": [
+        "Interview",
+        "Lazar",
+        "JRE",
+        "2019"
+      ]
     },
     {
       "id": "elizondo-jre-2021",
@@ -176,7 +323,12 @@
       "description": "Three-hour wide-ranging interview covering AATIP methodology, the 5 Observables in depth, institutional suppression, and Elizondo's account of why he resigned. One of his most detailed and accessible public disclosures.",
       "url": "https://open.spotify.com/episode/3SHoaHADOXMFTz5VQZC7Ac",
       "insider": "luis-elizondo",
-      "tags": ["Interview", "Elizondo", "JRE", "2021"]
+      "tags": [
+        "Interview",
+        "Elizondo",
+        "JRE",
+        "2021"
+      ]
     },
     {
       "id": "elizondo-confessions-2024",
@@ -187,7 +339,12 @@
       "description": "Wide-ranging NewsNation special in which Elizondo addresses Roswell, abduction phenomena, alleged nonhuman specimens, implant evidence, and the psychological dimensions of contact. More candid than his earlier appearances following the resolution of his DoD legal dispute. Released alongside his book 'Imminent'.",
       "url": "https://www.youtube.com/watch?v=wgM5V44eQHU",
       "insider": "luis-elizondo",
-      "tags": ["Interview", "Elizondo", "NewsNation", "2024"]
+      "tags": [
+        "Interview",
+        "Elizondo",
+        "NewsNation",
+        "2024"
+      ]
     },
     {
       "id": "gallaudet-reality-check-2024",
@@ -198,7 +355,13 @@
       "description": "Retired Rear Admiral and former NOAA Administrator Tim Gallaudet states his conviction that humanity is in contact with non-human intelligence. Endorses Grusch's claims and details systematic suppression of UAP data within the Navy and NOAA. Originally filmed at The Sol Foundation conference in November 2023.",
       "url": "https://www.newsnationnow.com/space/ufo/navy-officer-supports-ufo-claims/",
       "insider": "tim-gallaudet",
-      "tags": ["Interview", "Gallaudet", "NewsNation", "NHI", "2024"]
+      "tags": [
+        "Interview",
+        "Gallaudet",
+        "NewsNation",
+        "NHI",
+        "2024"
+      ]
     },
     {
       "id": "gallaudet-underwater-ufos-2024",
@@ -209,7 +372,14 @@
       "description": "Dedicated special on Unidentified Submersible Objects (USOs). Features Gallaudet's account of a nuclear submarine incident in which an unknown object outmaneuvered the vessel and tracked it from the stern. Examines why the ocean remains the least-investigated domain for UAP and what unmapped ocean floor may conceal.",
       "url": "https://www.newsnationnow.com/space/ufo/oceans-uaps-ufos-retired-admiral/",
       "insider": "tim-gallaudet",
-      "tags": ["Interview", "Gallaudet", "NewsNation", "Underwater", "USO", "2024"]
+      "tags": [
+        "Interview",
+        "Gallaudet",
+        "NewsNation",
+        "Underwater",
+        "USO",
+        "2024"
+      ]
     },
     {
       "id": "nolan-reality-check-2024",
@@ -220,7 +390,14 @@
       "description": "Stanford immunologist and UAP researcher Garry Nolan discusses the scientific evidence for NHI, biological anomalies observed in UAP-exposed individuals, and his ongoing work at The Sol Foundation. Addresses the frustrations of the scientific community in accessing classified materials and the broader implications of UAP-related discoveries.",
       "url": "https://www.newsnationnow.com/podcasts-newsnation/reality-check-with-ross-coulthart/",
       "insider": "garry-nolan",
-      "tags": ["Interview", "Nolan", "NewsNation", "Science", "Sol Foundation", "2024"]
+      "tags": [
+        "Interview",
+        "Nolan",
+        "NewsNation",
+        "Science",
+        "Sol Foundation",
+        "2024"
+      ]
     },
     {
       "id": "barber-newsnation-2025",
@@ -231,7 +408,32 @@
       "description": "Air Force veteran and government contractor Jake Barber discloses firsthand participation in a covert UAP retrieval program, backed on-camera by three additional military veterans. Includes never-before-seen footage of an egg-shaped object retrieval. The Pentagon confirmed it was investigating Barber's claims following broadcast.",
       "url": "https://www.newsnationnow.com/space/ufo/uap-whistleblower-ufo-retrieval-program/",
       "insider": "jake-barber",
-      "tags": ["Interview", "Barber", "NewsNation", "Crash Retrieval", "2025"]
+      "tags": [
+        "Interview",
+        "Barber",
+        "NewsNation",
+        "Crash Retrieval",
+        "2025"
+      ]
+    },
+    {
+      "id": "sol-foundation-symposium-2023",
+      "title": "The Sol Foundation Inaugural Symposium — Stanford University",
+      "source": "The Sol Foundation / Stanford University",
+      "participants": "Garry Nolan, David Grusch, Tim Gallaudet, Karl Nell, Jacques Vallee, Christopher Mellon, Charles McCullough, Diana Walsh Pasulka, Avi Loeb, Hal Puthoff",
+      "date": "November 17-18, 2023",
+      "description": "First public symposium hosted by The Sol Foundation at Stanford University, convening scientists, intelligence officials, and scholars for structured academic examination of UAP. Retired Army Colonel Karl Nell publicly stated he has \"zero doubt\" that non-human intelligence exists - among the most direct public statements from a credentialed senior military officer. David Grusch and Tim Gallaudet also presented. Former IC Inspector General Charles McCullough and former Deputy Assistant Secretary of Defense Christopher Mellon participated. Full proceedings are publicly available on YouTube.",
+      "url": "https://thesolfoundation.org/events/the-inaugural-annual-conference-of-the-sol-foundation/",
+      "insider": "garry-nolan",
+      "tags": [
+        "Conference",
+        "Sol Foundation",
+        "Academic",
+        "Nolan",
+        "Grusch",
+        "Karl Nell",
+        "2023"
+      ]
     }
   ]
 }
