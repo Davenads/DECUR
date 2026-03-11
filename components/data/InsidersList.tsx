@@ -13,6 +13,8 @@ import DavisProfile from './DavisProfile';
 import BigelowProfile from './BigelowProfile';
 import ValleeProfile from './ValleeProfile';
 import PopeProfile from './PopeProfile';
+import BarberProfile from './BarberProfile';
+import GallaudetProfile from './GallaudetProfile';
 
 interface InsidersListProps {
   entries: InsiderEntry[];
@@ -60,6 +62,12 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
     }
     if (selectedEntry.id === 'nick-pope') {
       return <PopeProfile onBack={onBack} />;
+    }
+    if (selectedEntry.id === 'jake-barber') {
+      return <BarberProfile onBack={onBack} />;
+    }
+    if (selectedEntry.id === 'tim-gallaudet') {
+      return <GallaudetProfile onBack={onBack} />;
     }
     return (
       <InsiderProfile

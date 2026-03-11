@@ -144,6 +144,30 @@
     "data_file": "pope.json"
   },
   {
+    "id": "jake-barber",
+    "name": "Jake Barber",
+    "aliases": [],
+    "role": "U.S. Air Force Special Operations Veteran / UAP Retrieval Program Whistleblower",
+    "period": "c. 1990s–2010s (military); extended contractor tenure",
+    "affiliation": "United States Air Force (Special Operations); Unidentified Government Contractor",
+    "summary": "Air Force special operations veteran who came forward publicly in January 2025 to disclose firsthand participation in a covert UAP crash retrieval program. In an exclusive interview with journalist Ross Coulthart for NewsNation, Barber presented never-before-seen video of an egg-shaped craft retrieval and was corroborated on camera by three additional military veterans. The Pentagon confirmed it was investigating his claims following broadcast — making this one of the most operationally specific UAP disclosures since David Grusch's 2023 testimony.",
+    "status": "detailed",
+    "tags": ["Crash Retrieval", "Air Force", "NewsNation", "Whistleblower", "Egg-Shaped Craft", "2025"],
+    "data_file": "barber.json"
+  },
+  {
+    "id": "tim-gallaudet",
+    "name": "Dr. Timothy Gallaudet",
+    "aliases": ["Tim Gallaudet", "Rear Admiral Gallaudet"],
+    "role": "Rear Admiral, U.S. Navy (Ret.) / Former Acting NOAA Administrator",
+    "period": "c. 1980s–2014 (Navy); 2017–2019 (NOAA); 2019–present (research)",
+    "affiliation": "United States Navy, NOAA, Sol Foundation",
+    "summary": "Retired U.S. Navy Rear Admiral and former Acting NOAA Administrator with a Ph.D. in Oceanography from Scripps Institution of Oceanography. One of the most scientifically credentialed figures in the modern UAP disclosure movement. Stated publicly that 'we are in contact with non-human intelligence,' testified before the House Oversight Committee in November 2024, and appeared in two Ross Coulthart NewsNation specials focused on Unidentified Submersible Objects (USOs). His combination of Naval oceanography expertise and senior government access makes him the field's foremost authority on the oceanic UAP domain.",
+    "status": "detailed",
+    "tags": ["Navy", "NOAA", "USO", "Underwater UAP", "Sol Foundation", "Congressional Testimony", "NHI", "2024"],
+    "data_file": "gallaudet.json"
+  },
+  {
     "id": "jacques-vallee",
     "name": "Dr. Jacques F. Vallée",
     "aliases": ["Jacques Vallee", "J.F. Vallée"],
