@@ -1,5 +1,6 @@
 import { useState, FormEvent } from 'react';
 import type { NextPage } from 'next';
+import { Turnstile } from '@marsidev/react-turnstile';
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -7,6 +8,7 @@ const About: NextPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const set = (field: keyof typeof formData) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
@@ -21,7 +23,7 @@ const About: NextPage = () => {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, _trap: '' }),
+        body: JSON.stringify({ ...formData, _trap: '', turnstileToken }),
       });
 
       const data = await res.json();
@@ -32,6 +34,7 @@ const About: NextPage = () => {
       } else {
         setStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
+        setTurnstileToken(null);
       }
     } catch {
       setStatus('error');
@@ -182,10 +185,17 @@ const About: NextPage = () => {
                       </div>
                     )}
 
+                    <Turnstile
+                      siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? '1x00000000000000000000AA'}
+                      onSuccess={(token) => setTurnstileToken(token)}
+                      onExpire={() => setTurnstileToken(null)}
+                      onError={() => setTurnstileToken(null)}
+                    />
+
                     <div>
                       <button
                         type="submit"
-                        disabled={status === 'submitting'}
+                        disabled={status === 'submitting' || !turnstileToken}
                         className="btn btn-primary px-6 py-2 disabled:opacity-60 disabled:cursor-not-allowed"
                       >
                         {status === 'submitting' ? 'Sending...' : 'Send Message'}

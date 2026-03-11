@@ -3,6 +3,19 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+async function verifyTurnstile(token: string): Promise<boolean> {
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  // In development without a real key, skip verification
+  if (!secret) return true;
+  const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ secret, response: token }),
+  });
+  const data = await res.json() as { success: boolean };
+  return data.success;
+}
+
 type ResponseData = { success: true } | { error: string };
 
 export default async function handler(
@@ -13,11 +26,16 @@ export default async function handler(
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, subject, message, _trap } = req.body;
+  const { name, email, subject, message, _trap, turnstileToken } = req.body;
 
   // Honeypot — bots fill hidden fields, real users don't
   if (_trap) {
     return res.status(200).json({ success: true });
+  }
+
+  // Turnstile verification
+  if (!turnstileToken || !(await verifyTurnstile(turnstileToken))) {
+    return res.status(400).json({ error: 'Human verification failed. Please try again.' });
   }
 
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
