@@ -4,8 +4,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Fuse, { FuseResult } from 'fuse.js';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import insidersData from '../data/insiders/index.json';
 import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
@@ -186,9 +184,8 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
       <Head>
         <title>{query ? `"${query}" — DECUR Search` : 'Search — DECUR'}</title>
       </Head>
-      <Header />
-      <main className="min-h-screen bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4 py-10">
+      <div className="min-h-screen bg-gray-50 -mt-8 -mx-4 px-4 pt-10 pb-10">
+        <div className="max-w-3xl mx-auto">
 
           {/* Search input */}
           <form onSubmit={handleSubmit} className="relative mb-8">
@@ -277,8 +274,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
           )}
 
         </div>
-      </main>
-      <Footer />
+      </div>
     </>
   );
 };
