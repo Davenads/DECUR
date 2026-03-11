@@ -64,9 +64,6 @@ const Home: CustomNextPage<HomePageProps> = () => {
 
               {/* Left: headline */}
               <div className="md:col-span-3">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">
-                  DECUR Archive
-                </p>
                 <h1 className="text-4xl md:text-5xl font-bold font-heading text-gray-900 leading-tight mb-6">
                   A reference archive for UAP and NHI research
                 </h1>
