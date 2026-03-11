@@ -33,6 +33,14 @@ import reidData from './reid.json';
 import hynekData from './hynek.json';
 import knappData from './knapp.json';
 import keanData from './kean.json';
+import gravesData from './graves.json';
+import coulthartData from './coulthart.json';
+import lacatskiData from './lacatski.json';
+import dolanData from './dolan.json';
+import sheehanData from './sheehan.json';
+import schumerData from './schumer.json';
+import dietrichData from './dietrich.json';
+import dayData from './day.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -57,4 +65,12 @@ export const insiderRegistry: Record<string, any> = {
   'j-allen-hynek': hynekData,
   'george-knapp': knappData,
   'leslie-kean': keanData,
+  'ryan-graves': gravesData,
+  'ross-coulthart': coulthartData,
+  'james-lacatski': lacatskiData,
+  'richard-dolan': dolanData,
+  'daniel-sheehan': sheehanData,
+  'chuck-schumer': schumerData,
+  'alex-dietrich': dietrichData,
+  'kevin-day': dayData,
 };

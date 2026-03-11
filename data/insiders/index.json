@@ -481,5 +481,181 @@
     "data_file": "kean.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "ryan-graves",
+    "name": "Ryan Graves",
+    "aliases": ["Lt. Graves"],
+    "role": "F/A-18 Navy Pilot; Founder, Americans for Safe Aerospace",
+    "period": "2009–present",
+    "affiliation": "United States Navy (VFA-11), Americans for Safe Aerospace",
+    "summary": "Retired U.S. Navy F/A-18 pilot who documented sustained near-daily UAP encounters off the East Coast in 2014-2015 following an AESA radar upgrade. Unlike single-event encounters, the VFA-11 squadron reported months of persistent UAP activity in designated training airspace. Testified under oath before the House Oversight Committee in July 2023 alongside Grusch and Fravor, and founded Americans for Safe Aerospace to provide a safe reporting channel for aviators.",
+    "status": "detailed",
+    "tags": [
+      "Navy",
+      "F/A-18",
+      "East Coast Encounters",
+      "AESA Radar",
+      "Congressional Testimony",
+      "Americans for Safe Aerospace",
+      "Aviation Safety"
+    ],
+    "data_file": "graves.json",
+    "type": "pilot",
+    "includeInExplore": true
+  },
+  {
+    "id": "ross-coulthart",
+    "name": "Ross Coulthart",
+    "aliases": [],
+    "role": "Senior Investigative Journalist, NewsNation; Author - In Plain Sight",
+    "period": "2020–present (UAP); 1980s–present (career)",
+    "affiliation": "NewsNation, Nine Network Australia",
+    "summary": "Australian investigative journalist whose UAP reporting produced several of the most significant disclosures of the 2020s. Conducted the exclusive 2023 NewsNation interview with David Grusch that triggered the modern phase of congressional UAP engagement. His January 2025 interviews with Jake Barber - including never-before-seen retrieval footage and four corroborating veterans - represent the most operationally specific disclosure since Grusch. His 2021 book 'In Plain Sight' built the documentary case from primary intelligence and military sources.",
+    "status": "detailed",
+    "tags": [
+      "NewsNation",
+      "David Grusch",
+      "Jake Barber",
+      "In Plain Sight",
+      "Investigative Journalism",
+      "Retrieval Footage",
+      "2023 Disclosure"
+    ],
+    "data_file": "coulthart.json",
+    "type": "journalist",
+    "includeInExplore": true
+  },
+  {
+    "id": "james-lacatski",
+    "name": "Dr. James T. Lacatski",
+    "aliases": ["Jim Lacatski"],
+    "role": "DIA Program Manager, AAWSAP; Co-Author - Skinwalkers at the Pentagon",
+    "period": "2007–2012 (AAWSAP)",
+    "affiliation": "Defense Intelligence Agency, Defense Warning Office",
+    "summary": "The Defense Intelligence Agency officer who designed and managed AAWSAP from inside government - the first formally funded U.S. UAP research program in decades. While Reid secured the political appropriation and Bigelow held the contract, Lacatski was the government official who actually ran the program, overseeing 38 Defense Intelligence Reference Documents. He reportedly witnessed an anomalous event at Skinwalker Ranch that galvanized his commitment to the program. Co-authored 'Skinwalkers at the Pentagon' (2021) - the most detailed insider account of AAWSAP ever published.",
+    "status": "detailed",
+    "tags": [
+      "AAWSAP",
+      "DIA",
+      "Defense Warning Office",
+      "Skinwalker Ranch",
+      "DIRDs",
+      "Skinwalkers at the Pentagon",
+      "Congressional Testimony"
+    ],
+    "data_file": "lacatski.json",
+    "type": "insider",
+    "includeInExplore": true
+  },
+  {
+    "id": "richard-dolan",
+    "name": "Richard Dolan",
+    "aliases": ["Richard M. Dolan"],
+    "role": "Historian; Author - UFOs and the National Security State",
+    "period": "1995–present",
+    "affiliation": "Richard Dolan Media",
+    "summary": "Cold War historian who produced the most rigorous archival analysis of U.S. government UAP documentation in 'UFOs and the National Security State' (2002, 2009). Approached UAP through declassified FOIA documents, government archives, and institutional records rather than witness testimony. Coined the term 'breakaway civilization' to describe the hypothesis that a technologically superior secret civilization has emerged within the classified world. His work laid the analytical foundation that journalists and researchers drew on as historical context for understanding AATIP and the modern disclosure era.",
+    "status": "detailed",
+    "tags": [
+      "National Security State",
+      "FOIA",
+      "Archival Research",
+      "Breakaway Civilization",
+      "Cold War History",
+      "Cover-Up Documentation",
+      "AD After Disclosure"
+    ],
+    "data_file": "dolan.json",
+    "type": "scientist",
+    "includeInExplore": true
+  },
+  {
+    "id": "daniel-sheehan",
+    "name": "Daniel Sheehan",
+    "aliases": ["Danny Sheehan", "Dan Sheehan"],
+    "role": "Constitutional Attorney; General Counsel, Disclosure Project",
+    "period": "1977–present (UAP); 1970s–present (law)",
+    "affiliation": "Christic Institute, Romero Institute, Disclosure Project",
+    "summary": "Harvard-trained constitutional attorney who represented the New York Times in the Pentagon Papers case and served as General Counsel for the 2001 Disclosure Project National Press Club event. In 1977, claims to have viewed classified Air Force photographs of a crashed disc and recovered bodies while researching extraterrestrial intelligence for a Congressional Research Service briefing to the Carter administration. Has served as a legal advocate and institutional strategist for UAP disclosure for nearly five decades.",
+    "status": "detailed",
+    "tags": [
+      "Pentagon Papers",
+      "Disclosure Project",
+      "1977 Classified Files",
+      "Christic Institute",
+      "Romero Institute",
+      "Constitutional Law",
+      "Whistleblower Advocacy"
+    ],
+    "data_file": "sheehan.json",
+    "type": "official",
+    "includeInExplore": true
+  },
+  {
+    "id": "chuck-schumer",
+    "name": "Chuck Schumer",
+    "aliases": ["Charles E. Schumer", "Senator Schumer"],
+    "role": "U.S. Senate Majority Leader; Sponsor, UAP Disclosure Act of 2023",
+    "period": "2023 (UAP legislation); 1999–present (Senate)",
+    "affiliation": "United States Senate, Senate Democratic Caucus",
+    "summary": "U.S. Senate Majority Leader who introduced the UAP Disclosure Act of 2023 as an amendment to the NDAA - the most significant legislative attempt to compel government UAP transparency since the 1960s. Co-authored with Senator Mike Rounds (R-SD), the original bill proposed a nine-member Presidential Review Board modeled on the JFK Records Act with authority to declassify UAP records and retrieved materials. Though significantly weakened before final passage, Schumer's sponsorship represented the most senior Senate leadership engagement with UAP as a formal legislative priority since Harry Reid's AAWSAP earmark.",
+    "status": "detailed",
+    "tags": [
+      "UAP Disclosure Act",
+      "NDAA",
+      "Senate Majority Leader",
+      "UAP Records Review Board",
+      "JFK Records Act",
+      "Legislative Advocacy",
+      "2023"
+    ],
+    "data_file": "schumer.json",
+    "type": "official",
+    "includeInExplore": true
+  },
+  {
+    "id": "alex-dietrich",
+    "name": "Alex Dietrich",
+    "aliases": ["Alexandra Dietrich", "Lt. Cmdr. Dietrich"],
+    "role": "F/A-18F Pilot, VFA-41 Black Aces; Nimitz Encounter Witness",
+    "period": "c. 1999–2016 (Navy)",
+    "affiliation": "United States Navy, VFA-41 Black Aces, USS Nimitz Carrier Strike Group",
+    "summary": "Retired U.S. Navy Lieutenant Commander who was David Fravor's wingman during the November 14, 2004 Nimitz UAP encounter. Maintained altitude as the designated observer while Fravor dove toward the object - making her account the primary independent corroboration of Fravor's encounter. Kept her experience private for 17 years before going public in a May 2021 CBS 60 Minutes interview, becoming the first female military UAP witness to come forward in the modern disclosure era.",
+    "status": "detailed",
+    "tags": [
+      "Nimitz",
+      "Tic Tac",
+      "Navy",
+      "VFA-41",
+      "Direct Witness",
+      "60 Minutes",
+      "2004"
+    ],
+    "data_file": "dietrich.json",
+    "type": "pilot",
+    "includeInExplore": false
+  },
+  {
+    "id": "kevin-day",
+    "name": "Kevin Day",
+    "aliases": ["Chief Day"],
+    "role": "Navy Radar Operator, USS Princeton; Nimitz Encounter Witness",
+    "period": "c. 1984–2007 (Navy)",
+    "affiliation": "United States Navy, USS Princeton (CG-59), Nimitz Carrier Strike Group",
+    "summary": "Retired U.S. Navy Senior Chief Operations Specialist who tracked the Nimitz UAP objects on USS Princeton's SPY-1B radar for approximately two weeks before the November 14, 2004 visual encounter. Day's radar contacts showed objects descending from above 80,000 feet to sea level in seconds. He coordinated the intercept that directed Fravor toward the object, making him the radar-side primary witness to the Nimitz incident. Has spoken publicly about the psychological impact of the experience.",
+    "status": "detailed",
+    "tags": [
+      "Nimitz",
+      "USS Princeton",
+      "Radar",
+      "SPY-1B",
+      "Direct Witness",
+      "2004",
+      "Pre-Encounter Tracking"
+    ],
+    "data_file": "day.json",
+    "type": "insider",
+    "includeInExplore": false
   }
 ]

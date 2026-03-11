@@ -1,0 +1,130 @@
+{
+  "profile": {
+    "id": "richard-dolan",
+    "name": "Richard M. Dolan",
+    "aliases": ["Richard Dolan", "R.M. Dolan"],
+    "born": "1962",
+    "roles": [
+      "Historian; Author - UFOs and the National Security State",
+      "Host, Richard Dolan Show",
+      "Originator, 'Breakaway Civilization' Concept"
+    ],
+    "service_period": "1995–present (UAP research)",
+    "organizations": [
+      "Richard Dolan Media",
+      "Rochester Institute of Technology (graduate study)"
+    ],
+    "education": [
+      "Alfred University (undergraduate)",
+      "University of Rochester (graduate study - History, focus on Cold War and National Security)",
+      "Oxford University (attended on scholarship)"
+    ],
+    "summary": "Historian and author who produced the most rigorous archival analysis of U.S. government UAP documentation ever published in 'UFOs and the National Security State' (2002, 2009). Trained as a Cold War historian with a focus on national security policy, Dolan approached UAP through declassified FOIA documents, government archives, and institutional records rather than witness testimony or speculation. His two-volume history documents a coherent institutional cover-up spanning the Truman through Clinton administrations. He coined the term 'breakaway civilization' to describe the hypothesis that a technologically superior secret civilization has emerged within the classified world. His work laid the analytical foundation that researchers including Leslie Kean and journalists covering AATIP drew on as context for understanding governmental UAP policy.",
+    "key_events": [
+      { "year": "1995", "event": "Begins serious archival research into U.S. government UAP documentation following graduate study in Cold War history at the University of Rochester. Approaches the subject as a national security policy question rather than a paranormal one." },
+      { "year": "2002", "event": "Publishes 'UFOs and the National Security State: Chronology of a Cover-Up, 1941-1973' (Volume 1). Extensively documented from declassified FOIA materials, CIA records, and government archives. Establishes the institutional history of UAP suppression through multiple administrations." },
+      { "year": "2009", "event": "Publishes Volume 2: 'UFOs and the National Security State: The Cover-Up Exposed, 1973-1991.' Together the two volumes represent the most comprehensive archival history of U.S. government UAP policy ever produced for a general audience." },
+      { "year": "2012", "event": "Coins the term 'breakaway civilization' in his book 'A.D. After Disclosure' (co-authored with Bryce Zabel). The term describes the hypothesis that an advanced secret civilization has developed within the classified world, with technology, knowledge, and resources entirely separate from the public sphere. The concept becomes widely adopted in disclosure-adjacent discourse." },
+      { "year": "2012", "event": "Publishes 'A.D. After Disclosure: When the Government Finally Reveals the Truth About Alien Contact' (with Bryce Zabel). The first serious attempt to model the social, political, and economic consequences of a formal government UAP disclosure." },
+      { "year": "2014-present", "event": "Launches the Richard Dolan Show, producing regular analysis of UAP developments from a historical and national security perspective. Becomes a primary media channel for historical context in UAP discussion." },
+      { "year": "2017", "event": "The December 2017 New York Times AATIP story validates key elements of Dolan's archival research on secret government UAP programs. His framing of government institutional deception is cited as foundational context by journalists and researchers covering the story." },
+      { "year": "2023-present", "event": "Active commentary and analysis of congressional UAP hearings, AARO activities, and the Schumer UAP Disclosure Act from a historical perspective. Frequently testifies at public forums and appears in documentary contexts as a primary historical source." }
+    ]
+  },
+
+  "major_work": {
+    "ufos_national_security_state": {
+      "volume_1": {
+        "title": "UFOs and the National Security State: Chronology of a Cover-Up, 1941-1973",
+        "published": "2002",
+        "significance": "The foundational archival history of U.S. government UAP policy. Documents the institutional cover-up from the Truman administration through Nixon using declassified FOIA materials, CIA records, Air Force documents, and congressional records."
+      },
+      "volume_2": {
+        "title": "UFOs and the National Security State: The Cover-Up Exposed, 1973-1991",
+        "published": "2009",
+        "significance": "Extends the archival history through Carter, Reagan, and into the post-Cold War period. Documents the continued institutional suppression even as public interest grew."
+      },
+      "methodology": "Dolan treated UAP as a Cold War national security history question, applying the archival methods of professional history to a subject previously treated only by enthusiast researchers. The result is the most professionally rigorous documentation of the cover-up as an institutional phenomenon."
+    },
+    "ad_after_disclosure": {
+      "title": "A.D. After Disclosure: When the Government Finally Reveals the Truth About Alien Contact",
+      "co_author": "Bryce Zabel",
+      "published": "2012",
+      "significance": "First serious sociological and political modeling of formal UAP disclosure. Introduced the 'breakaway civilization' concept. Influenced subsequent academic and policy discourse on disclosure consequences."
+    },
+    "breakaway_civilization_concept": {
+      "coined": "2012",
+      "definition": "The hypothesis that a technologically advanced secret civilization has developed within the classified world, operating with technology, knowledge, and resources entirely separate from the broader human civilization. The concept is used to explain how advanced UAP-related technology could exist without public knowledge across multiple generations.",
+      "reception": "Widely adopted in UAP research and disclosure discourse; referenced by researchers, journalists, and government witnesses."
+    }
+  },
+
+  "associated_people": [
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist; co-author, 2017 NYT AATIP article",
+      "relationship": "Kean's methodological approach to UAP journalism drew on Dolan's archival framework. Both prioritized named, credentialed sources and documentary evidence over witness testimony alone."
+    },
+    {
+      "id": "jacques-vallee",
+      "name": "Jacques Vallee",
+      "role": "Astrophysicist; UAP researcher",
+      "relationship": "Both represent the academic/researcher class of UAP figures who approached the subject with professional rigor. Dolan's work complements Vallee's scientific investigation with historical and institutional documentation."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2002",
+      "type": "written",
+      "title": "UFOs and the National Security State: Chronology of a Cover-Up, 1941-1973",
+      "outlet": "Hampton Roads Publishing",
+      "interviewer": "N/A",
+      "notes": "Volume 1 of the foundational archival history. Established Dolan as the field's foremost historical researcher."
+    },
+    {
+      "date": "2009",
+      "type": "written",
+      "title": "UFOs and the National Security State: The Cover-Up Exposed, 1973-1991",
+      "outlet": "Keyhole Publishing",
+      "interviewer": "N/A",
+      "notes": "Volume 2 extending the institutional history through the post-Cold War period."
+    },
+    {
+      "date": "2012",
+      "type": "written",
+      "title": "A.D. After Disclosure",
+      "outlet": "New Page Books",
+      "interviewer": "N/A",
+      "notes": "Co-authored with Bryce Zabel. Introduced 'breakaway civilization' concept and modeled disclosure consequences."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "UFOs and the National Security State Vol. 1 (2002)",
+      "url": "https://www.amazon.com/UFOs-National-Security-State-Chronology/dp/1571743170",
+      "type": "book",
+      "notes": "Foundational archival history; primary reference for government UAP institutional cover-up documentation"
+    },
+    {
+      "title": "UFOs and the National Security State Vol. 2 (2009)",
+      "url": "https://www.amazon.com/UFOs-National-Security-State-1973-1991/dp/0967799511",
+      "type": "book",
+      "notes": "Continuation of archival history through 1991"
+    },
+    {
+      "title": "Richard Dolan Media",
+      "url": "https://richarddolanmedia.com",
+      "type": "website",
+      "notes": "Dolan's primary media presence; archives of the Richard Dolan Show and written analysis"
+    },
+    {
+      "title": "Wikipedia - Richard Dolan",
+      "url": "https://en.wikipedia.org/wiki/Richard_Dolan_(author)",
+      "type": "reference",
+      "notes": "Biographical reference and bibliography"
+    }
+  ]
+}

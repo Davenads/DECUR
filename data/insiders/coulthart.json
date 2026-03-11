@@ -1,0 +1,127 @@
+{
+  "profile": {
+    "id": "ross-coulthart",
+    "name": "Ross Coulthart",
+    "aliases": ["Coulthart"],
+    "born": "c. 1960s",
+    "roles": [
+      "Senior Investigative Journalist, NewsNation",
+      "Former Correspondent, 60 Minutes Australia and Sunday Night",
+      "Author - In Plain Sight (2021)"
+    ],
+    "service_period": "1980s–present",
+    "organizations": [
+      "NewsNation",
+      "Nine Network Australia (60 Minutes Australia, Sunday Night)",
+      "ABC Australia"
+    ],
+    "summary": "Australian investigative journalist with a career spanning ABC, 60 Minutes Australia, and NewsNation whose UAP reporting produced several of the most significant disclosures of the 2020s. His exclusive 2023 NewsNation interview with David Grusch introduced UAP whistleblower testimony to mainstream television audiences globally. His January 2025 interviews with Jake Barber - including never-before-seen retrieval footage and four corroborating veteran witnesses - represent the most operationally specific public UAP disclosure since Grusch. His 2021 book 'In Plain Sight' drew on primary source interviews with intelligence community insiders, military figures, and government officials to argue that a UAP cover-up is institutionally documented. He combines a career of serious investigative journalism (asbestos industry, POW investigations, war crimes) with the deepest government UAP source network in working journalism.",
+    "key_events": [
+      { "year": "c. 1990s-2010s", "event": "Builds career as one of Australia's leading investigative journalists, covering asbestos industry cover-ups, MIA/POW investigations in Laos, and war crimes. Earns multiple Walkley Awards - Australia's equivalent of the Pulitzer Prize." },
+      { "year": "2020", "event": "Begins serious investigation of UAP, drawing on contacts across the Australian and U.S. defense and intelligence communities. Develops what becomes an extensive primary source network within the U.S. national security apparatus." },
+      { "year": "2021", "event": "Publishes 'In Plain Sight: An Investigation into UFOs and Impossible Science' - a book arguing for a government cover-up based on named and documented sources including military officers, intelligence community members, and government officials." },
+      { "year": "2023-06-05", "event": "Exclusive NewsNation interview with David Grusch airs. Coulthart conducts the most significant UAP whistleblower interview in decades - Grusch's first major televised disclosure of his crash retrieval allegations. The interview is broadcast globally and triggers major congressional and media response." },
+      { "year": "2023", "event": "Continues reporting on UAP program details, including segments on AARO's structure, congressional UAP legislation, and intelligence community sources disputing government denials." },
+      { "year": "2024", "event": "Interviews Rear Admiral Tim Gallaudet for NewsNation specials focused on Unidentified Submersible Objects (USOs) and the oceanic UAP domain. Continues developing sources within DoD and congressional circles." },
+      { "year": "2025-01", "event": "Breaks the Jake Barber story: exclusive NewsNation interview with Air Force special operations veteran claiming firsthand participation in UAP crash retrieval. Presents never-before-seen video of an egg-shaped object retrieval operation and three additional corroborating military veteran witnesses on camera. Pentagon confirms it is investigating Barber's claims following broadcast." },
+      { "year": "2025", "event": "Continues NewsNation investigation reporting, maintaining the most active primary-source UAP coverage of any working journalist" }
+    ]
+  },
+
+  "major_work": {
+    "in_plain_sight": {
+      "title": "In Plain Sight: An Investigation into UFOs and Impossible Science",
+      "published": "2021",
+      "publisher": "HarperCollins Australia",
+      "summary": "A structured investigative journalism account of the UAP phenomenon drawing on primary source interviews with intelligence community members, military officers, and government officials. Argues that the evidence for a UAP cover-up is institutionally documented and that the scale of the phenomenon has been consistently minimized by official bodies. Notable for its reliance on named credentialed sources rather than anonymous claims or fringe material.",
+      "reception": "Became a bestseller in Australia and an influential text within the international UAP research community prior to the 2023 congressional hearings."
+    },
+    "grusch_interview": {
+      "title": "David Grusch - NewsNation Exclusive Interview",
+      "aired": "2023-06-05",
+      "outlet": "NewsNation",
+      "significance": "First major televised interview with UAP whistleblower David Grusch following his formal IG complaint. Introduced Grusch's crash retrieval allegations to mainstream global audiences. Widely cited as triggering the congressional interest that led to the July 2023 House Oversight hearings."
+    },
+    "barber_interview": {
+      "title": "Jake Barber - NewsNation Exclusive Interview",
+      "aired": "2025-01",
+      "outlet": "NewsNation",
+      "significance": "Most operationally specific public UAP disclosure since Grusch. Four corroborating military veterans on camera. Never-before-seen egg-shaped craft retrieval footage. Pentagon confirmed investigation of Barber's claims following broadcast."
+    }
+  },
+
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "UAP whistleblower",
+      "relationship": "Coulthart conducted Grusch's first major televised interview in June 2023. His handling of the interview - structured, professionally credible, grounded in documented context - is widely credited with ensuring the story was taken seriously rather than dismissed."
+    },
+    {
+      "id": "jake-barber",
+      "name": "Jake Barber",
+      "role": "UAP retrieval whistleblower",
+      "relationship": "Coulthart broke the Barber story exclusively on NewsNation in January 2025. The interview is the most significant UAP operational disclosure in the post-Grusch era."
+    },
+    {
+      "id": "tim-gallaudet",
+      "name": "Tim Gallaudet",
+      "role": "Rear Admiral (Ret.); NOAA Administrator",
+      "relationship": "Appeared in multiple NewsNation specials with Coulthart on the USO domain. Coulthart's USO coverage drew on Gallaudet's naval oceanography expertise to document the underwater UAP phenomenon."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2021",
+      "type": "written",
+      "title": "In Plain Sight: An Investigation into UFOs and Impossible Science",
+      "outlet": "HarperCollins Australia",
+      "interviewer": "N/A",
+      "notes": "Comprehensive investigative account of UAP cover-up based on primary source interviews. Became a key reference text prior to the 2023 congressional hearings."
+    },
+    {
+      "date": "2023-06-05",
+      "type": "television",
+      "title": "David Grusch - Exclusive Interview",
+      "outlet": "NewsNation",
+      "interviewer": "Ross Coulthart (host)",
+      "notes": "The Grusch interview that launched the modern phase of UAP congressional engagement. First major televised whistleblower disclosure of crash retrieval program allegations."
+    },
+    {
+      "date": "2025-01",
+      "type": "television",
+      "title": "Jake Barber - Exclusive Interview",
+      "outlet": "NewsNation",
+      "interviewer": "Ross Coulthart (host)",
+      "notes": "Most operationally specific public UAP disclosure since Grusch. Presented never-before-seen retrieval footage and four corroborating veterans. Pentagon confirmed it was investigating following broadcast."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "In Plain Sight (2021) - HarperCollins",
+      "url": "https://www.harpercollins.com.au/9781460760826/in-plain-sight/",
+      "type": "book",
+      "notes": "Coulthart's foundational UAP investigative text"
+    },
+    {
+      "title": "NewsNation - David Grusch Interview (2023)",
+      "url": "https://www.newsnationnow.com/space/ufo/us-has-retrieved-non-human-craft-ufo-whistleblower-says/",
+      "type": "video",
+      "notes": "The Grusch televised interview that triggered congressional UAP hearings"
+    },
+    {
+      "title": "NewsNation - Jake Barber Investigation (2025)",
+      "url": "https://www.newsnationnow.com/space/ufo/",
+      "type": "video",
+      "notes": "Barber disclosure interview and supporting documentary reporting"
+    },
+    {
+      "title": "Wikipedia - Ross Coulthart",
+      "url": "https://en.wikipedia.org/wiki/Ross_Coulthart",
+      "type": "reference",
+      "notes": "Biographical reference; career documentation and UAP journalism record"
+    }
+  ]
+}

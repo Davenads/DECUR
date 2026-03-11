@@ -51,6 +51,12 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'j-allen-hynek': { label: 'J. Allen Hynek', color: '#b45309' },
   'george-knapp':  { label: 'George Knapp',   color: '#0d9488' },
   'leslie-kean':   { label: 'Leslie Kean',    color: '#a855f7' },
+  'ryan-graves':   { label: 'Ryan Graves',    color: '#22d3ee' },
+  'ross-coulthart':{ label: 'Ross Coulthart', color: '#fb923c' },
+  'james-lacatski':{ label: 'James Lacatski', color: '#4ade80' },
+  'richard-dolan': { label: 'Richard Dolan',  color: '#e879f9' },
+  'daniel-sheehan':{ label: 'Daniel Sheehan', color: '#fbbf24' },
+  'chuck-schumer': { label: 'Chuck Schumer',  color: '#38bdf8' },
 };
 
 const UAP_COLOR = '#93c5e8';

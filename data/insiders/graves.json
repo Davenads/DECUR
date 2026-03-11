@@ -1,0 +1,120 @@
+{
+  "profile": {
+    "id": "ryan-graves",
+    "name": "Ryan Graves",
+    "aliases": ["Lt. Graves", "Graves"],
+    "born": "c. 1987",
+    "roles": [
+      "U.S. Navy F/A-18 Fighter Pilot, VFA-11 Red Rippers",
+      "Founder and Executive Director, Americans for Safe Aerospace (ASA)",
+      "UAP Congressional Witness"
+    ],
+    "service_period": "2009–2020 (Navy active/reserve)",
+    "organizations": [
+      "United States Navy",
+      "VFA-11 Red Rippers",
+      "Americans for Safe Aerospace (ASA)",
+      "Sol Foundation"
+    ],
+    "summary": "Retired U.S. Navy F/A-18 Super Hornet pilot who documented sustained UAP encounters experienced by his squadron off the East Coast of the United States between 2014 and 2015 following the Navy's upgrade to the AN/APG-79 AESA radar system. Unlike the single-event Nimitz encounter, Graves and his VFA-11 squadron reported near-daily UAP sightings over a period of months - the most sustained documented military UAP encounter series in the modern era. Testified before the House Oversight Committee on July 26, 2023, representing active-duty and recently separated pilots reluctant to come forward due to professional stigma. Founded Americans for Safe Aerospace in 2022 to provide a structured, professionally credible reporting channel for military and commercial aviators.",
+    "key_events": [
+      { "year": "2009", "event": "Commissioned as a Naval Aviator; begins active duty assignment flying F/A-18 Super Hornets" },
+      { "year": "2014", "event": "VFA-11 Red Rippers squadron upgrades to the AN/APG-79 AESA radar system, dramatically improving detection resolution. Within months, pilots begin tracking unidentified objects at high altitude over the U.S. East Coast operating area" },
+      { "year": "2014-2015", "event": "Over a period of months, Graves and fellow VFA-11 pilots report near-daily encounters with UAP in the Navy's Virginia Beach-to-North Carolina operating area. Objects tracked at 30,000 ft, holding station in Category 4 hurricane-force winds, with no visible means of propulsion. One near-collision reported." },
+      { "year": "2019-06", "event": "The New York Times publishes 'Navy pilots report encountering UFOs.' Graves is quoted as a named source - a rare step for active-duty military - describing the persistent nature of the encounters and the professional risk of reporting them" },
+      { "year": "2022", "event": "Founds Americans for Safe Aerospace (ASA), a nonprofit designed specifically to serve as a structured reporting and advocacy channel for military and commercial pilots experiencing UAP encounters, eliminating the career stigma that suppresses reporting" },
+      { "year": "2023-07-26", "event": "Testifies under oath before the House Oversight Committee subcommittee on UAP alongside David Grusch and David Fravor. Presents the VFA-11 encounters as evidence of a systemic reporting failure and a genuine aviation safety crisis. States he is aware of military pilots who continue to observe UAP regularly" },
+      { "year": "2023-11", "event": "Testifies before the Senate Armed Services Committee on UAP. ASA formally presents data showing significant underreporting of aviator UAP encounters due to professional stigma" },
+      { "year": "2024", "event": "ASA publishes pilot survey data showing that a large proportion of commercial and military aviators have encountered unexplained phenomena but do not report due to career concerns. Continues congressional engagement alongside disclosure advocates" }
+    ]
+  },
+
+  "claims": {
+    "east_coast_encounters": {
+      "period": "2014-2015",
+      "location": "U.S. Navy East Coast operating area, Virginia Beach to North Carolina",
+      "aircraft": "F/A-18 Super Hornet, AN/APG-79 AESA radar",
+      "frequency": "Near-daily encounters over multiple months",
+      "altitude": "Typically 30,000 ft; objects holding station at altitude in extreme wind conditions",
+      "behavior": "Stationary in Category 4 hurricane-force winds; no visible propulsion; rapid repositioning",
+      "near_miss": "At least one near-collision reported by VFA-11 pilots",
+      "significance": "Unlike single-event encounters (Nimitz, Roosevelt), the VFA-11 encounters represent the most sustained documented military UAP encounter series, suggesting persistent presence in designated training airspace rather than isolated events"
+    },
+    "reporting_environment": "Graves has testified that the professional culture strongly discourages UAP reporting. Pilots who file reports risk being referred to flight surgeons and grounded for psychological evaluation. The result is systematic underreporting across both military and commercial aviation."
+  },
+
+  "associated_people": [
+    {
+      "id": "david-fravor",
+      "name": "David Fravor",
+      "role": "Nimitz encounter pilot; Congressional co-witness",
+      "relationship": "Testified alongside Graves at the July 26, 2023 House Oversight hearing. Both represent the military aviator class of UAP witnesses - those whose training and equipment give their observations maximum credibility."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "UAP whistleblower; Congressional co-witness",
+      "relationship": "Co-testified with Graves at the July 26, 2023 hearing. While Grusch's testimony addressed crash retrieval programs, Graves grounded the hearing in documented, observable encounters - the two testimonies complemented each other at the congressional level."
+    },
+    {
+      "id": "karl-nell",
+      "name": "Karl Nell",
+      "role": "Co-founder, Sol Foundation",
+      "relationship": "Graves is affiliated with the Sol Foundation alongside Nell, Grusch, and Nolan as part of the ecosystem attempting to institutionalize UAP research."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2019-06-01",
+      "type": "article",
+      "title": "Navy Pilots Report Encountering UFOs on an Almost Daily Basis in 2014 and 2015",
+      "outlet": "The New York Times",
+      "interviewer": "Helene Cooper, Ralph Blumenthal, Leslie Kean",
+      "notes": "First named public disclosure. Graves is quoted describing the nature, frequency, and duration of encounters. Established the East Coast UAP encounter series as a documented record distinct from the Nimitz incident."
+    },
+    {
+      "date": "2023-07-26",
+      "type": "congressional-testimony",
+      "title": "House Oversight Subcommittee on UAP - Testimony",
+      "outlet": "U.S. House of Representatives",
+      "interviewer": "Rep. Tim Burchett (chair)",
+      "notes": "Under-oath testimony before the full subcommittee. Described the VFA-11 encounters in detail and argued that the absence of reporting infrastructure is itself evidence of institutional failure. One of three witnesses at the most significant congressional UAP hearing in modern history."
+    },
+    {
+      "date": "2023-11",
+      "type": "congressional-testimony",
+      "title": "Senate Armed Services Committee - UAP Testimony",
+      "outlet": "U.S. Senate",
+      "interviewer": "N/A",
+      "notes": "Follow-up Senate testimony presenting Americans for Safe Aerospace survey data on the scope of unreported aviator UAP encounters."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "New York Times - 'Navy Pilots Report Encountering UFOs on an Almost Daily Basis' (2019)",
+      "url": "https://www.nytimes.com/2019/05/26/us/politics/ufo-sightings-navy-pilots.html",
+      "type": "article",
+      "notes": "First public naming of Graves; foundational source for VFA-11 East Coast encounter documentation"
+    },
+    {
+      "title": "House Oversight Subcommittee UAP Hearing - C-SPAN (2023)",
+      "url": "https://www.c-span.org/video/?529620-1/unidentified-anomalous-phenomena-military-witnesses",
+      "type": "video",
+      "notes": "Full transcript and video of Graves's July 26, 2023 congressional testimony"
+    },
+    {
+      "title": "Americans for Safe Aerospace",
+      "url": "https://americansforsafeaerospace.org",
+      "type": "organization",
+      "notes": "Graves's nonprofit; publishes pilot survey data and policy advocacy materials"
+    },
+    {
+      "title": "Wikipedia - Ryan Graves (aviator)",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Graves_(aviator)",
+      "type": "reference",
+      "notes": "Biographical reference and documented encounter timeline"
+    }
+  ]
+}

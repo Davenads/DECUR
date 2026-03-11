@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "id": "kevin-day",
+    "name": "Kevin Day",
+    "aliases": ["Chief Day"],
+    "born": "c. 1965",
+    "roles": [
+      "U.S. Navy Operations Specialist / Radar Operator (Ret.)",
+      "USS Princeton CG-59, Nimitz Carrier Strike Group",
+      "Nimitz Encounter Radar Witness"
+    ],
+    "service_period": "c. 1984–2007 (Navy, 20+ years)",
+    "organizations": [
+      "United States Navy",
+      "USS Princeton (CG-59)",
+      "Nimitz Carrier Strike Group"
+    ],
+    "summary": "Retired U.S. Navy Senior Chief Operations Specialist who served as the radar operator aboard USS Princeton (CG-59) during the November 2004 Nimitz UAP encounter. Day was among the first military personnel to detect the objects - tracking them on the ship's SPY-1B passive phased array radar system for approximately two weeks before the November 14 intercept. His radar contacts showed objects descending from above 80,000 feet to sea level in seconds, then hovering at 80 feet above the ocean. Day has stated the experience profoundly affected him and has spoken about ongoing psychological difficulties following the encounter. He is the primary radar-side witness to the Nimitz incident - the person whose equipment detected the objects before any pilot saw them visually.",
+    "key_events": [
+      { "year": "c. 1984", "event": "Enlists in the United States Navy; trains as an Operations Specialist with specialization in radar systems and combat information center operations" },
+      { "year": "2004-11-01", "event": "Begins tracking unidentified radar contacts aboard USS Princeton approximately two weeks before the intercept. Objects appearing on SPY-1B radar descending from above 80,000 ft to near sea level. Contacts are intermittent and do not conform to any known flight profile." },
+      { "year": "2004-11-14", "event": "The radar contacts converge with the operating area of VFA-41 pilots on a routine training exercise. Day coordinates the intercept, directing Fravor and Dietrich toward the object's position. Continues radar tracking as the visual encounter occurs." },
+      { "year": "2004-2009", "event": "Separated from the Navy after 20+ years of service. Has spoken about difficulty reintegrating following the encounter and its psychological aftermath." },
+      { "year": "2019", "event": "Goes public with his account of the radar tracking in interviews and documentary segments. Describes the pre-encounter radar contacts that preceded the November 14 visual encounter - critical context for understanding the incident's full scope." }
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "david-fravor",
+      "name": "David Fravor",
+      "role": "VFA-41 commanding officer; Nimitz visual witness",
+      "relationship": "Day was the radar operator who detected the objects and directed Fravor toward them. The Fravor visual encounter and the Day radar tracking are two complementary records of the same event from different sensor perspectives."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2019",
+      "type": "television",
+      "title": "The Nimitz Encounters Documentary",
+      "outlet": "Independent / YouTube",
+      "interviewer": "N/A",
+      "notes": "Day's first detailed public account of the radar tracking that preceded the November 14 Nimitz encounter. Describes the two-week period of intermittent contacts, the object behavior on SPY-1B radar, and his coordination of the intercept."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "The Nimitz Encounters (2019) - Documentary",
+      "url": "https://www.youtube.com/watch?v=BHCoBZkHEuw",
+      "type": "video",
+      "notes": "Foundational document of Day's radar tracking account; includes interviews with Day and other Princeton crew members"
+    },
+    {
+      "title": "Wikipedia - Tic Tac UFO Incident",
+      "url": "https://en.wikipedia.org/wiki/Tic_Tac_UFO_incident",
+      "type": "reference",
+      "notes": "Documents the Nimitz incident including the Princeton radar contacts"
+    }
+  ]
+}
