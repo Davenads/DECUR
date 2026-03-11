@@ -2,6 +2,9 @@ import Link from 'next/link';
 import type { FC } from 'react';
 import Head from 'next/head';
 import { CustomNextPage, HomePageProps } from '../types/pages';
+import insidersData from '../data/insiders/index.json';
+import glossaryData from '../data/glossary.json';
+import resourcesData from '../data/resources.json';
 
 const CATEGORIES = [
   {
@@ -34,6 +37,14 @@ const CATEGORIES = [
   },
 ];
 
+const resData = resourcesData as { sources?: unknown[]; testimony?: unknown[] };
+const ARCHIVE_STATS = [
+  { count: (insidersData as unknown[]).length,                                     label: 'insider profiles' },
+  { count: '1,575',                                                                 label: 'timeline events' },
+  { count: (glossaryData as unknown[]).length,                                      label: 'glossary terms' },
+  { count: (resData.sources?.length ?? 0) + (resData.testimony?.length ?? 0),      label: 'source materials' },
+];
+
 const Home: CustomNextPage<HomePageProps> = () => {
   return (
     <>
@@ -48,23 +59,51 @@ const Home: CustomNextPage<HomePageProps> = () => {
       <div className="space-y-16">
         {/* Hero */}
         <section className="border-b border-gray-200 pb-16 pt-12">
-          <div className="max-w-3xl mx-auto px-4">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">
-              DECUR Archive
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold font-heading text-gray-900 leading-tight mb-6">
-              A reference archive for UAP and NHI research
-            </h1>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-2xl">
-              Structured documentation of insider testimony, primary source material, and
-              research records spanning eight decades, catalogued for analysis, not advocacy.
-            </p>
-            <Link
-              href="/data"
-              className="inline-block px-5 py-2.5 border border-gray-700 text-gray-800 text-sm font-medium rounded-lg hover:bg-gray-800 hover:text-white transition-colors"
-            >
-              Explore the Archive →
-            </Link>
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
+
+              {/* Left: headline */}
+              <div className="md:col-span-3">
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">
+                  DECUR Archive
+                </p>
+                <h1 className="text-4xl md:text-5xl font-bold font-heading text-gray-900 leading-tight mb-6">
+                  A reference archive for UAP and NHI research
+                </h1>
+                <p className="text-lg text-gray-500 leading-relaxed mb-8">
+                  Structured documentation of insider testimony, primary source material, and
+                  research records spanning eight decades, catalogued for analysis, not advocacy.
+                </p>
+                <Link
+                  href="/data"
+                  className="inline-block px-5 py-2.5 border border-gray-700 text-gray-800 text-sm font-medium rounded-lg hover:bg-gray-800 hover:text-white transition-colors"
+                >
+                  Explore the Archive →
+                </Link>
+              </div>
+
+              {/* Right: stat block */}
+              <div className="hidden md:block md:col-span-2 pt-10">
+                <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                  <div className="px-5 py-4 border-b border-gray-100">
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                      Archive Contents
+                    </p>
+                  </div>
+                  <div className="divide-y divide-gray-100">
+                    {ARCHIVE_STATS.map(({ count, label }) => (
+                      <div key={label} className="flex items-baseline gap-3 px-5 py-3">
+                        <span className="text-xl font-bold text-gray-900 tabular-nums w-10 shrink-0 text-right">
+                          {count}
+                        </span>
+                        <span className="text-xs text-gray-500">{label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 
