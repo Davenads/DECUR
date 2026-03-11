@@ -1,0 +1,92 @@
+name: Data Sync
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Every Monday at 9:00 AM UTC
+  workflow_dispatch:       # Allow manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run data sync
+        id: sync
+        run: |
+          node scripts/sync/run-sync.js --verbose
+          echo "changes=true" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Check if sync produced changes
+        id: check_changes
+        run: |
+          if git diff --quiet data/ufotimeline.json; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes to ufotimeline.json"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            ADDED=$(node -e "const r=require('./scripts/sync/last-sync-report.json'); console.log(r.added)")
+            echo "added_count=$ADDED" >> $GITHUB_OUTPUT
+            echo "Found $ADDED new entries"
+          fi
+
+      - name: Build PR body
+        id: pr_body
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          node -e "
+          const r = require('./scripts/sync/last-sync-report.json');
+          const sources = Object.entries(r.sources).map(([s,n]) => '- ' + s + ': ' + n).join('\n');
+          const samples = r.sampleTitles.map(t => '- ' + t).join('\n');
+          const body = [
+            '## Data Sync — ' + new Date().toISOString().split('T')[0],
+            '',
+            '**New entries: ' + r.added + '**',
+            sources,
+            '',
+            '**Deduplication:**',
+            '- Skipped by URL match: ' + r.skipped.phase1,
+            '- Skipped by fuzzy title match: ' + r.skipped.phase2,
+            '',
+            '**Sample new entries:**',
+            samples,
+            '',
+            '---',
+            '_Review the diff and Vercel preview before merging._',
+          ].join('\n');
+          require('fs').writeFileSync('/tmp/pr_body.md', body);
+          console.log(body);
+          "
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: data/sync-${{ github.run_id }}
+          base: main
+          title: "Data sync: +${{ steps.check_changes.outputs.added_count }} new entries"
+          body-path: /tmp/pr_body.md
+          commit-message: "sync: add ${{ steps.check_changes.outputs.added_count }} new timeline entries from openminds"
+          labels: data-sync,automated
+          delete-branch: true
+
+      - name: No changes notice
+        if: steps.check_changes.outputs.has_changes == 'false'
+        run: echo "No new entries found. No PR created."
