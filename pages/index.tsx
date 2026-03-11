@@ -8,11 +8,11 @@ import resourcesData from '../data/resources.json';
 
 const CATEGORIES = [
   {
-    label: 'Insiders',
+    label: 'Key Figures',
     href: '/data?category=key-figures',
     description:
-      'Firsthand accounts from military personnel, intelligence officers, and government officials who have disclosed involvement in classified programs.',
-    detail: 'Dan Burisch · Bob Lazar · David Grusch · Ross Coulthart',
+      'Firsthand accounts from military personnel, intelligence officers, government officials, journalists, and scientists who have disclosed involvement in UAP research.',
+    detail: 'Dan Burisch · Bob Lazar · David Grusch · George Knapp',
   },
   {
     label: 'Non-Human Intelligence',
@@ -39,7 +39,7 @@ const CATEGORIES = [
 
 const resData = resourcesData as { sources?: unknown[]; testimony?: unknown[] };
 const ARCHIVE_STATS = [
-  { count: (insidersData as unknown[]).length,                                     label: 'insider profiles' },
+  { count: (insidersData as unknown[]).length,                                     label: 'key figures' },
   { count: '1,575',                                                                 label: 'timeline events' },
   { count: (glossaryData as unknown[]).length,                                      label: 'glossary terms' },
   { count: (resData.sources?.length ?? 0) + (resData.testimony?.length ?? 0),      label: 'source materials' },
