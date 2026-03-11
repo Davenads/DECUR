@@ -14,6 +14,8 @@ export interface TimelineEntry {
   categories: string[];
   source_url: string;
   source?: string;
+  article_url?: string | null;
+  article_type?: 'article' | 'video' | null;
   quote_text?: string | null;
   quote_attribution?: string | null;
   topic?: string | null;
