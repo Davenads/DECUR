@@ -77,6 +77,7 @@ export interface InsiderEntry {
   tags: string[];
   type: 'insider' | 'journalist' | 'pilot' | 'scientist' | 'official' | 'executive';
   data_file: string | null;
+  includeInExplore?: boolean;
 }
 
 /**

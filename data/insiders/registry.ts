@@ -1,11 +1,34 @@
 /**
  * Generic insider profile registry.
  *
- * Add a new entry here to make a profile available to GenericInsiderProfile.
- * No other files need to be modified - InsidersList falls back to GenericInsiderProfile
- * for any id not covered by a bespoke component.
+ * Adding a new Key Figure:
+ * 1. Create data/insiders/[id].json following the standard schema
+ * 2. Import it here and add to insiderRegistry
+ * 3. Add an entry to data/insiders/index.json (with includeInExplore: true if warranted)
+ * 4. No other files need to be modified
+ *
+ * Bespoke components (InsidersList.tsx if-chain) are only needed for figures
+ * with custom tab structures (currently only Burisch).
  */
 
+// Bespoke-schema profiles (still accessed via their own components)
+import burischData from './burisch.json';
+import lazarData from './lazar.json';
+import gruschData from './grusch.json';
+import elizondoData from './elizondo.json';
+import fravorData from './fravor.json';
+import nellData from './nell.json';
+import nolanData from './nolan.json';
+import puthoffData from './puthoff.json';
+import mellonData from './mellon.json';
+import davisData from './davis.json';
+import bigelowData from './bigelow.json';
+import valleeData from './vallee.json';
+import popeData from './pope.json';
+import barberData from './barber.json';
+import gallaudetData from './gallaudet.json';
+
+// Generic-schema profiles (rendered by GenericInsiderProfile)
 import reidData from './reid.json';
 import hynekData from './hynek.json';
 import knappData from './knapp.json';
@@ -13,6 +36,23 @@ import keanData from './kean.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
+  // Bespoke profiles
+  'dan-burisch': burischData,
+  'bob-lazar': lazarData,
+  'david-grusch': gruschData,
+  'luis-elizondo': elizondoData,
+  'david-fravor': fravorData,
+  'karl-nell': nellData,
+  'garry-nolan': nolanData,
+  'hal-puthoff': puthoffData,
+  'chris-mellon': mellonData,
+  'eric-davis': davisData,
+  'robert-bigelow': bigelowData,
+  'jacques-vallee': valleeData,
+  'nick-pope': popeData,
+  'jake-barber': barberData,
+  'tim-gallaudet': gallaudetData,
+  // Generic profiles
   'harry-reid': reidData,
   'j-allen-hynek': hynekData,
   'george-knapp': knappData,

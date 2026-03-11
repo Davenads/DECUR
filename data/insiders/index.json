@@ -20,7 +20,8 @@
       "NY Times 2017"
     ],
     "data_file": "elizondo.json",
-    "type": "insider"
+    "type": "insider",
+    "includeInExplore": true
   },
   {
     "id": "dan-burisch",
@@ -44,7 +45,8 @@
       "Clean Sphere"
     ],
     "data_file": "burisch.json",
-    "type": "insider"
+    "type": "insider",
+    "includeInExplore": true
   },
   {
     "id": "david-fravor",
@@ -67,7 +69,8 @@
       "Direct Witness"
     ],
     "data_file": "fravor.json",
-    "type": "pilot"
+    "type": "pilot",
+    "includeInExplore": true
   },
   {
     "id": "karl-nell",
@@ -91,7 +94,8 @@
       "Disclosure"
     ],
     "data_file": "nell.json",
-    "type": "official"
+    "type": "official",
+    "includeInExplore": true
   },
   {
     "id": "david-grusch",
@@ -117,7 +121,8 @@
       "Sol Foundation"
     ],
     "data_file": "grusch.json",
-    "type": "insider"
+    "type": "insider",
+    "includeInExplore": true
   },
   {
     "id": "hal-puthoff",
@@ -144,7 +149,8 @@
       "EarthTech"
     ],
     "data_file": "puthoff.json",
-    "type": "scientist"
+    "type": "scientist",
+    "includeInExplore": true
   },
   {
     "id": "garry-nolan",
@@ -169,7 +175,8 @@
       "Biological Effects"
     ],
     "data_file": "nolan.json",
-    "type": "scientist"
+    "type": "scientist",
+    "includeInExplore": true
   },
   {
     "id": "robert-bigelow",
@@ -194,7 +201,8 @@
       "Research Patron"
     ],
     "data_file": "bigelow.json",
-    "type": "executive"
+    "type": "executive",
+    "includeInExplore": true
   },
   {
     "id": "eric-davis",
@@ -220,7 +228,8 @@
       "Off-World Vehicles"
     ],
     "data_file": "davis.json",
-    "type": "scientist"
+    "type": "scientist",
+    "includeInExplore": true
   },
   {
     "id": "chris-mellon",
@@ -245,7 +254,8 @@
       "Congressional Advocacy"
     ],
     "data_file": "mellon.json",
-    "type": "official"
+    "type": "official",
+    "includeInExplore": true
   },
   {
     "id": "bob-lazar",
@@ -270,7 +280,8 @@
       "Tikaboo Valley"
     ],
     "data_file": "lazar.json",
-    "type": "insider"
+    "type": "insider",
+    "includeInExplore": true
   },
   {
     "id": "nick-pope",
@@ -293,7 +304,8 @@
       "Open Skies Closed Minds"
     ],
     "data_file": "pope.json",
-    "type": "official"
+    "type": "official",
+    "includeInExplore": true
   },
   {
     "id": "jake-barber",
@@ -313,7 +325,8 @@
       "2025"
     ],
     "data_file": "barber.json",
-    "type": "insider"
+    "type": "insider",
+    "includeInExplore": true
   },
   {
     "id": "tim-gallaudet",
@@ -338,7 +351,8 @@
       "2024"
     ],
     "data_file": "gallaudet.json",
-    "type": "official"
+    "type": "official",
+    "includeInExplore": true
   },
   {
     "id": "jacques-vallee",
@@ -364,7 +378,8 @@
       "Sol Foundation"
     ],
     "data_file": "vallee.json",
-    "type": "scientist"
+    "type": "scientist",
+    "includeInExplore": true
   },
   {
     "id": "harry-reid",
@@ -389,7 +404,8 @@
       "Congressional Funding"
     ],
     "data_file": "reid.json",
-    "type": "official"
+    "type": "official",
+    "includeInExplore": true
   },
   {
     "id": "j-allen-hynek",
@@ -415,7 +431,8 @@
       "Spielberg"
     ],
     "data_file": "hynek.json",
-    "type": "scientist"
+    "type": "scientist",
+    "includeInExplore": true
   },
   {
     "id": "george-knapp",
@@ -439,7 +456,8 @@
       "Investigative Journalism"
     ],
     "data_file": "knapp.json",
-    "type": "journalist"
+    "type": "journalist",
+    "includeInExplore": true
   },
   {
     "id": "leslie-kean",
@@ -461,6 +479,7 @@
       "Tic Tac Video"
     ],
     "data_file": "kean.json",
-    "type": "journalist"
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]

@@ -89,6 +89,63 @@ This platform organizes research into several key areas:
 - Focus on organizing well-documented research aspects with clear visualization
 - Start with static diagrams before implementing interactive tools
 
+## Adding a New Key Figure
+
+To add a new profile to the Key Figures section (`?category=key-figures`):
+
+### 1. Create the profile JSON
+Create `data/insiders/[id].json` following the standard schema:
+```json
+{
+  "profile": { "id", "name", "aliases", "born", "died", "roles", "service_period",
+               "organizations", "clearance", "summary", "education", "early_career",
+               "key_events": [{ "year": "YYYY", "event": "..." }] },
+  "associated_people": [{ "id", "name", "role", "relationship" }],
+  "disclosures": [{ "date", "type", "title", "outlet", "interviewer", "notes" }],
+  "sources": [{ "title", "url", "type", "notes" }]
+}
+```
+An optional feature section can be added at the top level (e.g., `"aawsap": {...}`, `"major_investigations": [...]`). The `GenericInsiderProfile` component auto-detects and renders it as a tab.
+
+### 2. Register the profile
+Add one line to `data/insiders/registry.ts`:
+```ts
+import [name]Data from './[id].json';
+// ...
+'[id]': [name]Data,
+```
+
+### 3. Add the index entry
+Add an entry to `data/insiders/index.json`:
+```json
+{
+  "id": "[id]",
+  "name": "Full Name",
+  "aliases": [],
+  "role": "Primary role description",
+  "period": "YYYY-YYYY",
+  "affiliation": "Primary organization",
+  "summary": "2-3 sentence summary",
+  "status": "detailed",
+  "tags": ["tag1", "tag2"],
+  "data_file": "[id].json",
+  "type": "insider | journalist | pilot | scientist | official | executive",
+  "includeInExplore": true
+}
+```
+
+### 4. Add Explore overlay color (optional)
+If `includeInExplore: true`, add an entry to `SOURCE_CONFIG` in `components/explore/TimelineOverlay.tsx`:
+```ts
+'[id]': { label: 'Full Name', color: '#hexcolor' },
+```
+If omitted, the figure's events will appear in the overlay using a default gray color.
+
+### That's all
+No component file is needed. No `if` check in `InsidersList.tsx` is needed. The `GenericInsiderProfile` renderer handles all standard profiles automatically.
+
+Bespoke components (only warranted for profiles with fundamentally different tab structures, like Dan Burisch) require the additional step of creating a dedicated component and adding an `if` check in `InsidersList.tsx`.
+
 ## Platform Architecture Priorities
 1. **Home**: Clean landing page with mission statement and navigation
 2. **Data**: Core focus with streamlined categories and visualization
