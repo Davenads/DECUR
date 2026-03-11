@@ -7,7 +7,7 @@ export type NodeType =
   | 'concept'
   | 'technology';
 
-export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'pope' | 'shared';
+export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'pope' | 'shared' | 'corbell' | 'mccullough';
 
 export interface GraphNode {
   id: string;
@@ -65,6 +65,8 @@ export const graphData: GraphData = {
     { id: 'nick-pope',           name: 'Nick Pope',            type: 'person',       group: 'pope',     val: 4 },
     { id: 'jake-barber',         name: 'Jake Barber',          type: 'person',       group: 'shared',   val: 3 },
     { id: 'tim-gallaudet',       name: 'Tim Gallaudet',        type: 'person',       group: 'shared',   val: 4 },
+    { id: 'jeremy-corbell',      name: 'Jeremy Corbell',       type: 'person',       group: 'shared',   val: 3 },
+    { id: 'charles-mccullough',  name: 'Charles McCullough',   type: 'person',       group: 'grusch',   val: 3 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -274,5 +276,16 @@ export const graphData: GraphData = {
     { source: 'element-115',      target: 'sport-model',        label: 'fuels' },
     { source: 'gravity-amplifiers',target: 'gravity-waves',     label: 'generates' },
     { source: 'sport-model',      target: 'gravity-waves',      label: 'uses' },
+
+    // Corbell connections
+    { source: 'jeremy-corbell',  target: 'bob-lazar',          label: 'produced documentary about' },
+    { source: 'jeremy-corbell',  target: 'george-knapp',       label: 'Mystery Wire co-investigator' },
+    { source: 'jeremy-corbell',  target: 'jake-barber',        label: 'documented UAP footage' },
+    { source: 'jeremy-corbell',  target: 'ryan-graves',        label: 'covered UAP testimony' },
+
+    // McCullough connections
+    { source: 'charles-mccullough', target: 'david-grusch',    label: 'represented as whistleblower attorney' },
+    { source: 'charles-mccullough', target: 'sol-foundation',  label: 'symposium participant' },
+    { source: 'charles-mccullough', target: 'luis-elizondo',   label: 'co-whistleblower legal advocacy' },
   ],
 };
