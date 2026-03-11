@@ -87,6 +87,17 @@
       "url": "https://www.congress.gov/amendment/118th-congress/senate-amendment/937",
       "insider": "david-grusch",
       "tags": ["Legislative", "Congress", "Disclosure", "2023"]
+    },
+    {
+      "id": "gallaudet-hoc-testimony-2024",
+      "title": "Written Testimony of Dr. Tim Gallaudet, Rear Admiral, U.S. Navy (Ret.)",
+      "type": "Government Report",
+      "author": "Timothy Gallaudet, Rear Admiral, U.S. Navy (Ret.)",
+      "year": "2024",
+      "description": "Gallaudet's written testimony to the House Oversight Committee detailing his belief in NHI contact, suppression of UAP data within the Navy and NOAA, and firsthand knowledge of submersible UAP incidents. One of the most senior active scientists to publicly endorse Grusch's claims under oath.",
+      "url": "https://oversight.house.gov/wp-content/uploads/2024/11/Updated-Testimony-Gallaudet.pdf",
+      "insider": "tim-gallaudet",
+      "tags": ["Congressional Testimony", "Gallaudet", "Navy", "NOAA", "2024"]
     }
   ],
   "testimony": [
@@ -166,6 +177,61 @@
       "url": "https://open.spotify.com/episode/3SHoaHADOXMFTz5VQZC7Ac",
       "insider": "luis-elizondo",
       "tags": ["Interview", "Elizondo", "JRE", "2021"]
+    },
+    {
+      "id": "elizondo-confessions-2024",
+      "title": "Confessions of a UFO Hunter: Ross Coulthart Interviews Lue Elizondo — NewsNation",
+      "source": "NewsNation",
+      "participants": "Luis Elizondo, Ross Coulthart (interviewer)",
+      "date": "August 24, 2024",
+      "description": "Wide-ranging NewsNation special in which Elizondo addresses Roswell, abduction phenomena, alleged nonhuman specimens, implant evidence, and the psychological dimensions of contact. More candid than his earlier appearances following the resolution of his DoD legal dispute. Released alongside his book 'Imminent'.",
+      "url": "https://www.youtube.com/watch?v=wgM5V44eQHU",
+      "insider": "luis-elizondo",
+      "tags": ["Interview", "Elizondo", "NewsNation", "2024"]
+    },
+    {
+      "id": "gallaudet-reality-check-2024",
+      "title": "Tim Gallaudet: 'We Are in Contact with NHI' — Reality Check, NewsNation",
+      "source": "NewsNation (Reality Check)",
+      "participants": "Tim Gallaudet, Ross Coulthart (interviewer)",
+      "date": "June 2024",
+      "description": "Retired Rear Admiral and former NOAA Administrator Tim Gallaudet states his conviction that humanity is in contact with non-human intelligence. Endorses Grusch's claims and details systematic suppression of UAP data within the Navy and NOAA. Originally filmed at The Sol Foundation conference in November 2023.",
+      "url": "https://www.newsnationnow.com/space/ufo/navy-officer-supports-ufo-claims/",
+      "insider": "tim-gallaudet",
+      "tags": ["Interview", "Gallaudet", "NewsNation", "NHI", "2024"]
+    },
+    {
+      "id": "gallaudet-underwater-ufos-2024",
+      "title": "Reality Check: Underwater UFOs — NewsNation Special",
+      "source": "NewsNation (Reality Check)",
+      "participants": "Tim Gallaudet, Ross Coulthart (interviewer)",
+      "date": "December 6, 2024",
+      "description": "Dedicated special on Unidentified Submersible Objects (USOs). Features Gallaudet's account of a nuclear submarine incident in which an unknown object outmaneuvered the vessel and tracked it from the stern. Examines why the ocean remains the least-investigated domain for UAP and what unmapped ocean floor may conceal.",
+      "url": "https://www.newsnationnow.com/space/ufo/oceans-uaps-ufos-retired-admiral/",
+      "insider": "tim-gallaudet",
+      "tags": ["Interview", "Gallaudet", "NewsNation", "Underwater", "USO", "2024"]
+    },
+    {
+      "id": "nolan-reality-check-2024",
+      "title": "Dr. Garry Nolan: Full Interview — Reality Check, NewsNation",
+      "source": "NewsNation (Reality Check)",
+      "participants": "Garry Nolan, Ross Coulthart (interviewer)",
+      "date": "2024",
+      "description": "Stanford immunologist and UAP researcher Garry Nolan discusses the scientific evidence for NHI, biological anomalies observed in UAP-exposed individuals, and his ongoing work at The Sol Foundation. Addresses the frustrations of the scientific community in accessing classified materials and the broader implications of UAP-related discoveries.",
+      "url": "https://www.newsnationnow.com/podcasts-newsnation/reality-check-with-ross-coulthart/",
+      "insider": "garry-nolan",
+      "tags": ["Interview", "Nolan", "NewsNation", "Science", "Sol Foundation", "2024"]
+    },
+    {
+      "id": "barber-newsnation-2025",
+      "title": "Hunting UFOs: The Crash Retrieval Whistleblower — NewsNation",
+      "source": "NewsNation",
+      "participants": "Jake Barber, Ross Coulthart (interviewer)",
+      "date": "January 18, 2025",
+      "description": "Air Force veteran and government contractor Jake Barber discloses firsthand participation in a covert UAP retrieval program, backed on-camera by three additional military veterans. Includes never-before-seen footage of an egg-shaped object retrieval. The Pentagon confirmed it was investigating Barber's claims following broadcast.",
+      "url": "https://www.newsnationnow.com/space/ufo/uap-whistleblower-ufo-retrieval-program/",
+      "insider": "jake-barber",
+      "tags": ["Interview", "Barber", "NewsNation", "Crash Retrieval", "2025"]
     }
   ]
 }
