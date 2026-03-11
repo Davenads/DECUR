@@ -63,6 +63,8 @@ export const graphData: GraphData = {
     { id: 'robert-bigelow',      name: 'Robert Bigelow',       type: 'person',       group: 'bigelow',  val: 4 },
     { id: 'jacques-vallee',      name: 'Jacques Vallée',       type: 'person',       group: 'vallee',   val: 4 },
     { id: 'nick-pope',           name: 'Nick Pope',            type: 'person',       group: 'pope',     val: 4 },
+    { id: 'jake-barber',         name: 'Jake Barber',          type: 'person',       group: 'shared',   val: 3 },
+    { id: 'tim-gallaudet',       name: 'Tim Gallaudet',        type: 'person',       group: 'shared',   val: 4 },
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
@@ -193,6 +195,13 @@ export const graphData: GraphData = {
     { source: 'nick-pope',       target: 'luis-elizondo',      label: 'parallel government UAP investigators' },
     { source: 'nick-pope',       target: 'jacques-vallee',     label: 'cited methodological influence' },
     { source: 'david-grusch',    target: 'ross-coulthart',     label: 'disclosed to' },
+    { source: 'jake-barber',     target: 'ross-coulthart',     label: 'disclosed to' },
+    { source: 'jake-barber',     target: 'david-grusch',       label: 'complementary crash retrieval disclosure' },
+    { source: 'tim-gallaudet',   target: 'sol-foundation',     label: 'affiliated with' },
+    { source: 'tim-gallaudet',   target: 'david-grusch',       label: 'publicly endorses' },
+    { source: 'tim-gallaudet',   target: 'garry-nolan',        label: 'Sol Foundation affiliate' },
+    { source: 'tim-gallaudet',   target: 'ross-coulthart',     label: 'disclosed to' },
+    { source: 'tim-gallaudet',   target: 'karl-nell',          label: 'Sol Foundation affiliate' },
     { source: 'david-grusch',    target: 'ryan-graves',        label: 'testified alongside' },
     { source: 'uap-task-force',  target: 'aaro',               label: 'predecessor of' },
 
