@@ -26,14 +26,14 @@ const CATEGORIES = [
     href: '/data?category=technologies',
     description:
       'Accounts of recovered, observed, or reverse-engineered exotic technologies, and the classified programs associated with their study.',
-    detail: 'Looking Glass · Lotus · Project Aquarius · S-4 facility',
+    detail: 'AATIP · AAWSAP · Looking Glass · S-4 facility',
   },
   {
     label: 'Timeline & Concepts',
     href: '/data?category=timelines',
     description:
-      'Theoretical frameworks recurring across insider accounts, including timeline divergence, Ganesh particles, and treaty history.',
-    detail: 'Timeline 1 / 2 · Shiva portals · Majestic-12 · Treaty of Grenada',
+      'A structured chronology of UAP events spanning eight decades, from early government documentation through modern congressional disclosure, alongside key theoretical frameworks and program histories.',
+    detail: 'Nimitz incident · AATIP / AAWSAP · Grusch testimony · Majestic-12',
   },
 ];
 
@@ -159,7 +159,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
             <div>
               <p className="text-sm font-semibold text-gray-700">Source Materials & Glossary</p>
               <p className="text-xs text-gray-400 mt-0.5">
-                Transcripts, interviews, and terminology reference
+                Primary documents, curated source links, and a 293-term terminology reference
               </p>
             </div>
             <Link
