@@ -15,6 +15,7 @@ import ValleeProfile from './ValleeProfile';
 import PopeProfile from './PopeProfile';
 import BarberProfile from './BarberProfile';
 import GallaudetProfile from './GallaudetProfile';
+import GenericInsiderProfile from './insiders/GenericInsiderProfile';
 
 interface InsidersListProps {
   entries: InsiderEntry[];
@@ -70,7 +71,7 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
       return <GallaudetProfile onBack={onBack} />;
     }
     return (
-      <InsiderProfile
+      <GenericInsiderProfile
         id={selectedEntry.id}
         onBack={onBack}
       />

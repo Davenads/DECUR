@@ -1,0 +1,391 @@
+import { FC, useState } from 'react';
+import ProfileShell from '../shared/ProfileShell';
+import { insiderRegistry } from '../../../data/insiders/registry';
+
+interface GenericInsiderProfileProps {
+  id: string;
+  onBack: () => void;
+}
+
+// --- Types covering the common JSON schema ---
+
+interface KeyEvent {
+  year: string;
+  event: string;
+}
+
+interface AssociatedPerson {
+  id: string;
+  name: string;
+  role: string;
+  relationship: string;
+}
+
+interface Disclosure {
+  date: string;
+  type: string;
+  title: string;
+  outlet: string;
+  interviewer?: string;
+  notes: string;
+}
+
+interface Source {
+  title: string;
+  url: string;
+  type: string;
+  notes: string;
+}
+
+interface ProfileData {
+  id: string;
+  name: string;
+  aliases: string[];
+  born?: string;
+  died?: string;
+  roles: string[];
+  service_period?: string;
+  organizations?: string[];
+  clearance?: string;
+  summary: string;
+  education?: string[];
+  early_career?: string[];
+  key_events?: KeyEvent[];
+}
+
+// --- Tab identifiers ---
+
+type TabId = 'overview' | 'timeline' | 'feature' | 'people' | 'disclosures' | 'sources';
+
+// --- Helpers ---
+
+const DISCLOSURE_TYPE_LABELS: Record<string, string> = {
+  'article': 'Article',
+  'written': 'Book / Written',
+  'television': 'Television',
+  'podcast': 'Podcast',
+  'congressional-testimony': 'Congressional Testimony',
+  'speech': 'Speech',
+  'film': 'Film',
+  'formal-complaint': 'Formal Complaint',
+  'declassification': 'Declassification',
+};
+
+function disclosureLabel(type: string): string {
+  return DISCLOSURE_TYPE_LABELS[type] ?? type;
+}
+
+// Detect the "feature" section key and return a human-readable tab label.
+// Add new patterns here as new profile schemas are introduced.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function detectFeature(data: Record<string, any>): { key: string; label: string } | null {
+  const featureMap: Record<string, string> = {
+    aawsap: 'AAWSAP',
+    blue_book: 'Project Blue Book',
+    major_investigations: 'Investigations',
+    major_work: 'Major Work',
+    claims: 'Claims',
+  };
+  for (const [key, label] of Object.entries(featureMap)) {
+    if (data[key]) return { key, label };
+  }
+  return null;
+}
+
+// --- Section renderers ---
+
+const OverviewTab: FC<{ profile: ProfileData }> = ({ profile }) => (
+  <div className="space-y-6">
+    <div className="bg-gray-50 rounded-lg p-4 space-y-3">
+      {profile.born && (
+        <div className="flex gap-3">
+          <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Born</span>
+          <span className="text-sm text-gray-700">{profile.born}</span>
+        </div>
+      )}
+      {profile.died && (
+        <div className="flex gap-3">
+          <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Died</span>
+          <span className="text-sm text-gray-700">{profile.died}</span>
+        </div>
+      )}
+      {profile.aliases.length > 0 && (
+        <div className="flex gap-3">
+          <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Aliases</span>
+          <span className="text-sm text-gray-700">{profile.aliases.join(', ')}</span>
+        </div>
+      )}
+      {profile.clearance && (
+        <div className="flex gap-3">
+          <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Access</span>
+          <span className="text-sm text-gray-700">{profile.clearance}</span>
+        </div>
+      )}
+    </div>
+
+    <div>
+      <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Summary</h3>
+      <p className="text-sm text-gray-700 leading-relaxed">{profile.summary}</p>
+    </div>
+
+    {profile.roles && profile.roles.length > 0 && (
+      <div>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Roles</h3>
+        <ul className="space-y-1">
+          {profile.roles.map((role, i) => (
+            <li key={i} className="text-sm text-gray-700 flex gap-2">
+              <span className="text-primary mt-1 shrink-0">-</span>
+              {role}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {profile.organizations && profile.organizations.length > 0 && (
+      <div>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Organizations</h3>
+        <div className="flex flex-wrap gap-2">
+          {profile.organizations.map((org, i) => (
+            <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600">
+              {org}
+            </span>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {profile.education && profile.education.length > 0 && (
+      <div>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Education</h3>
+        <ul className="space-y-1">
+          {profile.education.map((ed, i) => (
+            <li key={i} className="text-sm text-gray-700 flex gap-2">
+              <span className="text-primary mt-1 shrink-0">-</span>
+              {ed}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {profile.early_career && profile.early_career.length > 0 && (
+      <div>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Early Career</h3>
+        <ul className="space-y-2">
+          {profile.early_career.map((item, i) => (
+            <li key={i} className="text-sm text-gray-700 flex gap-2">
+              <span className="text-primary mt-1 shrink-0">-</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
+);
+
+const TimelineTab: FC<{ events: KeyEvent[] }> = ({ events }) => (
+  <div className="relative">
+    <div className="absolute left-3 top-0 bottom-0 w-px bg-gray-200" />
+    <div className="space-y-5">
+      {events.map((ev, i) => (
+        <div key={i} className="flex gap-4 pl-8 relative">
+          <div className="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white shadow" />
+          <div>
+            <span className="text-xs font-semibold text-primary">{ev.year}</span>
+            <p className="text-sm text-gray-700 mt-0.5 leading-relaxed">{ev.event}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const PeopleTab: FC<{ people: AssociatedPerson[] }> = ({ people }) => (
+  <div className="space-y-4">
+    {people.map((person) => (
+      <div key={person.id} className="border border-gray-200 rounded-lg p-4">
+        <div className="flex items-start justify-between gap-2 mb-1">
+          <span className="font-medium text-gray-900 text-sm">{person.name}</span>
+        </div>
+        <p className="text-xs text-primary mb-2">{person.role}</p>
+        <p className="text-sm text-gray-600 leading-relaxed">{person.relationship}</p>
+      </div>
+    ))}
+  </div>
+);
+
+const DisclosuresTab: FC<{ disclosures: Disclosure[] }> = ({ disclosures }) => (
+  <div className="space-y-4">
+    {disclosures.map((d, i) => (
+      <div key={i} className="border border-gray-200 rounded-lg p-4">
+        <div className="flex items-start justify-between gap-2 mb-1">
+          <span className="font-medium text-gray-900 text-sm">{d.title}</span>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 shrink-0">
+            {disclosureLabel(d.type)}
+          </span>
+        </div>
+        <p className="text-xs text-gray-400 mb-2">
+          {d.date} · {d.outlet}
+          {d.interviewer && d.interviewer !== 'N/A' ? ` · ${d.interviewer}` : ''}
+        </p>
+        <p className="text-sm text-gray-600 leading-relaxed">{d.notes}</p>
+      </div>
+    ))}
+  </div>
+);
+
+const SourcesTab: FC<{ sources: Source[] }> = ({ sources }) => (
+  <div className="space-y-3">
+    {sources.map((s, i) => (
+      <div key={i} className="border border-gray-200 rounded-lg p-4">
+        <div className="flex items-start justify-between gap-2 mb-1">
+          <a
+            href={s.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-sm text-primary hover:underline"
+          >
+            {s.title}
+          </a>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 shrink-0">
+            {s.type}
+          </span>
+        </div>
+        {s.notes && <p className="text-sm text-gray-600">{s.notes}</p>}
+      </div>
+    ))}
+  </div>
+);
+
+// Generic renderer for a feature section - renders top-level fields as labeled cards.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const FeatureTab: FC<{ data: Record<string, any> }> = ({ data }) => {
+  const renderValue = (value: unknown, depth = 0): React.ReactNode => {
+    if (value === null || value === undefined) return null;
+    if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
+      return <span className="text-sm text-gray-700">{String(value)}</span>;
+    }
+    if (Array.isArray(value)) {
+      return (
+        <ul className="space-y-1 mt-1">
+          {value.map((item, i) => (
+            <li key={i} className="text-sm text-gray-700 flex gap-2">
+              {typeof item === 'string' ? (
+                <>
+                  <span className="text-primary mt-1 shrink-0">-</span>
+                  {item}
+                </>
+              ) : (
+                <div className="w-full">{renderValue(item, depth + 1)}</div>
+              )}
+            </li>
+          ))}
+        </ul>
+      );
+    }
+    if (typeof value === 'object') {
+      const entries = Object.entries(value as Record<string, unknown>).filter(
+        ([, v]) => v !== null && v !== undefined && v !== ''
+      );
+      if (depth === 0) {
+        return (
+          <div className="space-y-4">
+            {entries.map(([k, v]) => (
+              <div key={k}>
+                <span className="text-xs font-semibold uppercase tracking-wide text-gray-400">
+                  {k.replace(/_/g, ' ')}
+                </span>
+                <div className="mt-1">{renderValue(v, depth + 1)}</div>
+              </div>
+            ))}
+          </div>
+        );
+      }
+      return (
+        <div className="border border-gray-100 rounded p-3 space-y-2 mt-1">
+          {entries.map(([k, v]) => (
+            <div key={k}>
+              <span className="text-xs font-medium text-gray-400">{k.replace(/_/g, ' ')}: </span>
+              {renderValue(v, depth + 1)}
+            </div>
+          ))}
+        </div>
+      );
+    }
+    return null;
+  };
+
+  return <div>{renderValue(data)}</div>;
+};
+
+// --- Main component ---
+
+const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) => {
+  const data = insiderRegistry[id];
+
+  if (!data) {
+    return (
+      <div className="p-6 text-center">
+        <p className="text-gray-500">Profile data not found for id: {id}</p>
+        <button onClick={onBack} className="mt-4 text-sm text-primary hover:underline">
+          Back to Key Figures
+        </button>
+      </div>
+    );
+  }
+
+  const profile: ProfileData = data.profile;
+  const associatedPeople: AssociatedPerson[] = data.associated_people ?? [];
+  const disclosures: Disclosure[] = data.disclosures ?? [];
+  const sources: Source[] = data.sources ?? [];
+  const keyEvents: KeyEvent[] = profile.key_events ?? [];
+  const feature = detectFeature(data);
+
+  const TABS: Array<{ id: TabId; label: string }> = [
+    { id: 'overview', label: 'Overview' },
+    ...(keyEvents.length > 0 ? [{ id: 'timeline' as TabId, label: 'Timeline' }] : []),
+    ...(feature ? [{ id: 'feature' as TabId, label: feature.label }] : []),
+    ...(associatedPeople.length > 0 ? [{ id: 'people' as TabId, label: 'People' }] : []),
+    ...(disclosures.length > 0 ? [{ id: 'disclosures' as TabId, label: 'Disclosures' }] : []),
+    ...(sources.length > 0 ? [{ id: 'sources' as TabId, label: 'Sources' }] : []),
+  ];
+
+  const [activeTab, setActiveTab] = useState<TabId>('overview');
+
+  const renderTab = () => {
+    switch (activeTab) {
+      case 'overview':
+        return <OverviewTab profile={profile} />;
+      case 'timeline':
+        return <TimelineTab events={keyEvents} />;
+      case 'feature':
+        return feature ? <FeatureTab data={data[feature.key]} /> : null;
+      case 'people':
+        return <PeopleTab people={associatedPeople} />;
+      case 'disclosures':
+        return <DisclosuresTab disclosures={disclosures} />;
+      case 'sources':
+        return <SourcesTab sources={sources} />;
+    }
+  };
+
+  return (
+    <ProfileShell
+      name={profile.name}
+      role={profile.roles[0] ?? ''}
+      period={profile.service_period ?? (profile.born ? profile.born : '')}
+      tabs={TABS}
+      activeTab={activeTab}
+      onTabChange={(id) => setActiveTab(id as TabId)}
+      onBack={onBack}
+    >
+      <div className="mt-4">
+        {renderTab()}
+      </div>
+    </ProfileShell>
+  );
+};
+
+export default GenericInsiderProfile;
