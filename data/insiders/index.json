@@ -2,146 +2,298 @@
   {
     "id": "luis-elizondo",
     "name": "Luis Elizondo",
-    "aliases": ["Lue Elizondo"],
+    "aliases": [
+      "Lue Elizondo"
+    ],
     "role": "Director, Advanced Aerospace Threat Identification Program (AATIP)",
     "period": "1994–2017",
     "affiliation": "Office of the Under Secretary of Defense for Intelligence, Advanced Aerospace Threat Identification Program",
     "summary": "Former Pentagon intelligence official who claims to have directed AATIP — the classified program investigating military UAP encounters. Resigned in October 2017 citing institutional indifference, simultaneously triggering the New York Times investigation that launched the modern UAP disclosure era. Co-founded To The Stars Academy and has spent seven years building the public and congressional case for UAP transparency.",
     "status": "detailed",
-    "tags": ["AATIP", "Pentagon", "5 Observables", "Nimitz", "To The Stars Academy", "Congressional Testimony", "NY Times 2017"],
-    "data_file": "elizondo.json"
+    "tags": [
+      "AATIP",
+      "Pentagon",
+      "5 Observables",
+      "Nimitz",
+      "To The Stars Academy",
+      "Congressional Testimony",
+      "NY Times 2017"
+    ],
+    "data_file": "elizondo.json",
+    "type": "insider"
   },
   {
     "id": "dan-burisch",
     "name": "Dr. Dan Burisch",
-    "aliases": ["Dan Crain", "Dr. Dan Crain"],
+    "aliases": [
+      "Dan Crain",
+      "Dr. Dan Crain"
+    ],
     "role": "Senior Microbiologist / Majestic-12 Operative",
     "period": "1986–2007",
     "affiliation": "Majestic-12, Committee of the Majority",
     "summary": "Microbiologist who claims to have worked at S-4 (Papoose Lake) under Project Aquarius, conducting biological research on extraterrestrial entities, leading multiple classified sub-projects, and serving as Majestic-12's designated disclosure officer before the organization's formal adjournment in 2005.",
     "status": "detailed",
-    "tags": ["S-4", "J-Rod", "Project Aquarius", "Majestic-12", "Looking Glass", "Project Lotus", "Clean Sphere"],
-    "data_file": "burisch.json"
+    "tags": [
+      "S-4",
+      "J-Rod",
+      "Project Aquarius",
+      "Majestic-12",
+      "Looking Glass",
+      "Project Lotus",
+      "Clean Sphere"
+    ],
+    "data_file": "burisch.json",
+    "type": "insider"
   },
   {
     "id": "david-fravor",
     "name": "David Fravor",
-    "aliases": ["Dave Fravor", "Fravor"],
+    "aliases": [
+      "Dave Fravor",
+      "Fravor"
+    ],
     "role": "Commanding Officer, VFA-41 'Black Aces' Strike Fighter Squadron",
     "period": "1987–2006",
     "affiliation": "United States Navy, VFA-41 Black Aces, USS Nimitz Carrier Strike Group",
     "summary": "Retired U.S. Navy Commander and decorated fighter pilot who, on November 14, 2004, observed a 40-foot white tic-tac-shaped object performing impossible maneuvers off the coast of San Diego. The Nimitz encounter is the most credible documented UAP incident in modern history, corroborated by four aviators, two radar systems, and confirmed authentic by the Pentagon in 2019. Fravor testified under oath before the House Oversight Committee on July 26, 2023 — the first military aviator to do so in a modern congressional hearing.",
     "status": "detailed",
-    "tags": ["Tic Tac", "USS Nimitz", "Navy", "FLIR", "Congressional Testimony", "Direct Witness"],
-    "data_file": "fravor.json"
+    "tags": [
+      "Tic Tac",
+      "USS Nimitz",
+      "Navy",
+      "FLIR",
+      "Congressional Testimony",
+      "Direct Witness"
+    ],
+    "data_file": "fravor.json",
+    "type": "pilot"
   },
   {
     "id": "karl-nell",
     "name": "Karl Nell",
-    "aliases": ["Colonel Nell", "Karl Nell"],
+    "aliases": [
+      "Colonel Nell",
+      "Karl Nell"
+    ],
     "role": "Retired Army Colonel, INSCOM; Co-Founder, Sol Foundation",
     "period": "1988–2016 (Army); 2016–present (private sector)",
     "affiliation": "United States Army INSCOM, Army Special Forces, Raytheon Technologies, Sol Foundation",
     "summary": "Retired U.S. Army Colonel with 28 years in INSCOM and Special Forces who testified before the House Oversight Committee on July 26, 2023, providing senior military corroboration for the UAP disclosure narrative. Co-founded the Sol Foundation alongside David Grusch and Dr. Garry Nolan — the first seriously academic-affiliated UAP research organization. His most cited statement: 'Non-human intelligence exists and has been interacting with humanity.'",
     "status": "detailed",
-    "tags": ["SOL Foundation", "Army", "INSCOM", "West Point", "Congressional Testimony", "NHI", "Disclosure"],
-    "data_file": "nell.json"
+    "tags": [
+      "SOL Foundation",
+      "Army",
+      "INSCOM",
+      "West Point",
+      "Congressional Testimony",
+      "NHI",
+      "Disclosure"
+    ],
+    "data_file": "nell.json",
+    "type": "official"
   },
   {
     "id": "david-grusch",
     "name": "David Grusch",
-    "aliases": ["Dave Grusch"],
+    "aliases": [
+      "Dave Grusch"
+    ],
     "role": "NRO Representative to the DoD UAP Task Force / NGA Senior Technical Advisor",
     "period": "2019–2023",
     "affiliation": "National Reconnaissance Office, National Geospatial Intelligence Agency, DoD UAP Task Force",
     "summary": "Former Air Force intelligence officer and NRO veteran who filed a formal Disclosure of Urgent Concern with the IC Inspector General in May 2022, alleging the U.S. government operates a multi-decade crash retrieval and reverse engineering program concealed from Congress. His complaint was deemed 'credible and urgent.' He testified under oath before the House Oversight Committee in July 2023 — the most significant public UAP congressional hearing in modern history.",
     "status": "detailed",
-    "tags": ["UAP Task Force", "AARO", "NRO", "NGA", "Crash Retrieval", "Congressional Testimony", "Non-Human Biologics", "UAP Disclosure Act", "ICIG", "Sol Foundation"],
-    "data_file": "grusch.json"
+    "tags": [
+      "UAP Task Force",
+      "AARO",
+      "NRO",
+      "NGA",
+      "Crash Retrieval",
+      "Congressional Testimony",
+      "Non-Human Biologics",
+      "UAP Disclosure Act",
+      "ICIG",
+      "Sol Foundation"
+    ],
+    "data_file": "grusch.json",
+    "type": "insider"
   },
   {
     "id": "hal-puthoff",
     "name": "Dr. Harold E. Puthoff",
-    "aliases": ["Hal Puthoff", "H.E. Puthoff"],
+    "aliases": [
+      "Hal Puthoff",
+      "H.E. Puthoff"
+    ],
     "role": "Director, STARGATE Remote Viewing Program; Founder, EarthTech International; TTSA Co-Founder",
     "period": "1960–present",
     "affiliation": "NSA, SRI International, EarthTech International, To The Stars Academy",
     "summary": "Physicist with a 50-year thread through U.S. government exotic research: NSA employee (1960s), director of the CIA/DIA-funded STARGATE remote viewing program at SRI International (1972-1985), author of at least 6 of the 38 Pentagon-contracted AAWSAP Defense Intelligence Reference Documents on warp drives and traversable wormholes (2008-2010), and TTSA co-founder alongside Luis Elizondo (2017). The richest verifiable government document trail of any UAP research figure.",
     "status": "detailed",
-    "tags": ["STARGATE", "Remote Viewing", "SRI International", "AAWSAP", "DIRDs", "Metric Engineering", "Zero-Point Energy", "To The Stars Academy", "NSA", "EarthTech"],
-    "data_file": "puthoff.json"
+    "tags": [
+      "STARGATE",
+      "Remote Viewing",
+      "SRI International",
+      "AAWSAP",
+      "DIRDs",
+      "Metric Engineering",
+      "Zero-Point Energy",
+      "To The Stars Academy",
+      "NSA",
+      "EarthTech"
+    ],
+    "data_file": "puthoff.json",
+    "type": "scientist"
   },
   {
     "id": "garry-nolan",
     "name": "Dr. Garry Nolan",
-    "aliases": ["Gary Nolan", "Garry P. Nolan"],
+    "aliases": [
+      "Gary Nolan",
+      "Garry P. Nolan"
+    ],
     "role": "Professor of Pathology, Stanford School of Medicine; CIA UAP Consultant",
     "period": "1994–present (Stanford); c. 2011–2017 (CIA consultant)",
     "affiliation": "Stanford University School of Medicine, Sol Foundation, UAPX",
     "summary": "Tenured Stanford professor with 300+ peer-reviewed publications and 50+ U.S. patents, engaged by the CIA around 2011 to study approximately 100 individuals — pilots and intelligence officers — who reported neurological effects following UAP encounters. Found anomalous brain morphology in a significant proportion of subjects. Co-published the first peer-reviewed UAP methodology paper in a major aerospace journal (2022). Co-founded the Sol Foundation with Karl Nell and David Grusch. His institutional standing is the strongest of any public UAP figure; his claims about material recoveries and NHI presence go beyond his published evidence.",
     "status": "detailed",
-    "tags": ["Stanford", "CIA Consultation", "Brain Morphology", "Peer-Reviewed Research", "Sol Foundation", "Materials Analysis", "Isotopic Anomalies", "Biological Effects"],
-    "data_file": "nolan.json"
+    "tags": [
+      "Stanford",
+      "CIA Consultation",
+      "Brain Morphology",
+      "Peer-Reviewed Research",
+      "Sol Foundation",
+      "Materials Analysis",
+      "Isotopic Anomalies",
+      "Biological Effects"
+    ],
+    "data_file": "nolan.json",
+    "type": "scientist"
   },
   {
     "id": "robert-bigelow",
     "name": "Robert T. Bigelow",
-    "aliases": ["Bob Bigelow", "R.T. Bigelow"],
+    "aliases": [
+      "Bob Bigelow",
+      "R.T. Bigelow"
+    ],
     "role": "Founder, NIDS / BAASS; AAWSAP Contract Holder; UAP Research Patron",
     "period": "1995–2012 (active research funding); 2007–2012 (AAWSAP government contract)",
     "affiliation": "National Institute for Discovery Science (NIDS), Bigelow Aerospace, BAASS",
     "summary": "Las Vegas real estate billionaire whose private funding and government contracting activities represent the most significant private investment in classified UAP research in American history. Founded NIDS (1995) - the research organization that bridged the 1990s Las Vegas UAP community (George Knapp, Bob Lazar era) with the modern disclosure ecosystem. His company BAASS received the $22M DIA AAWSAP contract (2007-2012), producing 38 classified DIRDs through Hal Puthoff and Eric Davis. In a May 2017 CBS 60 Minutes interview, stated he is 'absolutely convinced' that ETs exist and have visited Earth.",
     "status": "detailed",
-    "tags": ["NIDS", "BAASS", "AAWSAP", "Skinwalker Ranch", "DIA Contract", "George Knapp", "60 Minutes", "Research Patron"],
-    "data_file": "bigelow.json"
+    "tags": [
+      "NIDS",
+      "BAASS",
+      "AAWSAP",
+      "Skinwalker Ranch",
+      "DIA Contract",
+      "George Knapp",
+      "60 Minutes",
+      "Research Patron"
+    ],
+    "data_file": "bigelow.json",
+    "type": "executive"
   },
   {
     "id": "eric-davis",
     "name": "Dr. Eric W. Davis",
-    "aliases": ["Eric Davis", "E.W. Davis"],
+    "aliases": [
+      "Eric Davis",
+      "E.W. Davis"
+    ],
     "role": "Senior Research Physicist, EarthTech International; AAWSAP DIRD Author",
     "period": "1996–present (private research); 2007–2010 (AAWSAP contractor)",
     "affiliation": "EarthTech International, Aerospace Corporation, National Institute for Discovery Science (NIDS)",
     "summary": "Astrophysicist who co-authored at least four classified Defense Intelligence Reference Documents (DIRDs) under the AAWSAP contract, covering traversable wormholes, warp drives, and antigravity. In April 2019 he briefed the Defense Department's Aerospace Science Board and Senate Armed Services Committee in closed session. In October 2020, the New York Times quoted him stating he briefed Congress about 'off-world vehicles not made on this earth.' Best known publicly as the subject of the Wilson-Davis memo - a leaked 2002 document recording Vice Admiral Thomas R. Wilson's account of being denied access to a private aerospace contractor running a UAP crash retrieval program.",
     "status": "detailed",
-    "tags": ["EarthTech", "AAWSAP", "DIRDs", "Warp Drive", "Wormholes", "Wilson-Davis Memo", "Bigelow", "Congressional Briefings", "Off-World Vehicles"],
-    "data_file": "davis.json"
+    "tags": [
+      "EarthTech",
+      "AAWSAP",
+      "DIRDs",
+      "Warp Drive",
+      "Wormholes",
+      "Wilson-Davis Memo",
+      "Bigelow",
+      "Congressional Briefings",
+      "Off-World Vehicles"
+    ],
+    "data_file": "davis.json",
+    "type": "scientist"
   },
   {
     "id": "chris-mellon",
     "name": "Christopher K. Mellon",
-    "aliases": ["Chris Mellon", "C.K. Mellon"],
+    "aliases": [
+      "Chris Mellon",
+      "C.K. Mellon"
+    ],
     "role": "Deputy Assistant Secretary of Defense for Intelligence; TTSA Senior Advisor",
     "period": "1988–2004 (government); 2017–present (TTSA / advocacy)",
     "affiliation": "Office of the Secretary of Defense, Senate Select Committee on Intelligence, To The Stars Academy",
     "summary": "Former Deputy Assistant Secretary of Defense for Intelligence and Senate Intelligence Committee staff director who held oversight responsibility for the most sensitive U.S. intelligence programs. Credited with obtaining and facilitating release of the Nimitz FLIR1, Gimbal, and GoFast videos through the December 2017 New York Times investigation. The most consequential legislative advocate for UAP transparency in Washington, having directly drafted or influenced every major UAP provision enacted since 2020 — including the UAP Task Force and AARO.",
     "status": "detailed",
-    "tags": ["DASD Intelligence", "Senate Intelligence Committee", "TTSA", "Navy Videos", "UAP Disclosure Act", "AARO", "UAP Task Force", "Congressional Advocacy"],
-    "data_file": "mellon.json"
+    "tags": [
+      "DASD Intelligence",
+      "Senate Intelligence Committee",
+      "TTSA",
+      "Navy Videos",
+      "UAP Disclosure Act",
+      "AARO",
+      "UAP Task Force",
+      "Congressional Advocacy"
+    ],
+    "data_file": "mellon.json",
+    "type": "official"
   },
   {
     "id": "bob-lazar",
     "name": "Bob Lazar",
-    "aliases": ["S-4 Physicist", "Dennis (originally)"],
+    "aliases": [
+      "S-4 Physicist",
+      "Dennis (originally)"
+    ],
     "role": "Physicist / S-4 Contractor",
     "period": "1988–1989",
     "affiliation": "S-4 Facility (Project Galileo) via EG&G",
     "summary": "Physicist who claims to have been contracted to S-4 at Papoose Lake, where he worked on reverse-engineering extraterrestrial propulsion systems. Disclosed the existence of nine alien craft and element 115 (moscovium) as a propulsion fuel source — a claim that preceded element 115's official synthesis by 15 years.",
     "status": "detailed",
-    "tags": ["S-4", "Element 115", "Gravity Wave Propulsion", "Area 51", "Project Galileo", "EG&G", "KLAS-TV", "Tikaboo Valley"],
-    "data_file": "lazar.json"
+    "tags": [
+      "S-4",
+      "Element 115",
+      "Gravity Wave Propulsion",
+      "Area 51",
+      "Project Galileo",
+      "EG&G",
+      "KLAS-TV",
+      "Tikaboo Valley"
+    ],
+    "data_file": "lazar.json",
+    "type": "insider"
   },
   {
     "id": "nick-pope",
     "name": "Nick Pope",
-    "aliases": ["The Real Fox Mulder"],
+    "aliases": [
+      "The Real Fox Mulder"
+    ],
     "role": "UFO Desk Analyst, UK Ministry of Defence — Secretariat (Air Staff) 2a",
     "period": "1991–1994 (UFO desk); 1985–2006 (MoD total)",
     "affiliation": "UK Ministry of Defence, Secretariat (Air Staff) 2a",
     "summary": "British civil servant who ran the UK Ministry of Defence's official UFO investigation desk from 1991 to 1994 — making him the closest British equivalent to Luis Elizondo. Assigned as a skeptic with Top Secret access to classified military incident reports, radar data, and witness testimony, he emerged from the role concluding that a genuine percentage of cases could not be explained by conventional means. Investigated the Cosford Incident (March 1993), a mass sighting across Shropshire and the West Midlands corroborated by trained military observers, which he assessed as the strongest British UAP case on record. His 1996 book 'Open Skies, Closed Minds' was the first firsthand account ever published by someone who held an actual government UAP investigation desk.",
     "status": "detailed",
-    "tags": ["MoD", "UK Government", "Cosford Incident", "Rendlesham Forest", "Top Secret", "Government Investigator", "Open Skies Closed Minds"],
-    "data_file": "pope.json"
+    "tags": [
+      "MoD",
+      "UK Government",
+      "Cosford Incident",
+      "Rendlesham Forest",
+      "Top Secret",
+      "Government Investigator",
+      "Open Skies Closed Minds"
+    ],
+    "data_file": "pope.json",
+    "type": "official"
   },
   {
     "id": "jake-barber",
@@ -152,31 +304,66 @@
     "affiliation": "United States Air Force (Special Operations); Unidentified Government Contractor",
     "summary": "Air Force special operations veteran who came forward publicly in January 2025 to disclose firsthand participation in a covert UAP crash retrieval program. In an exclusive interview with journalist Ross Coulthart for NewsNation, Barber presented never-before-seen video of an egg-shaped craft retrieval and was corroborated on camera by three additional military veterans. The Pentagon confirmed it was investigating his claims following broadcast — making this one of the most operationally specific UAP disclosures since David Grusch's 2023 testimony.",
     "status": "detailed",
-    "tags": ["Crash Retrieval", "Air Force", "NewsNation", "Whistleblower", "Egg-Shaped Craft", "2025"],
-    "data_file": "barber.json"
+    "tags": [
+      "Crash Retrieval",
+      "Air Force",
+      "NewsNation",
+      "Whistleblower",
+      "Egg-Shaped Craft",
+      "2025"
+    ],
+    "data_file": "barber.json",
+    "type": "insider"
   },
   {
     "id": "tim-gallaudet",
     "name": "Dr. Timothy Gallaudet",
-    "aliases": ["Tim Gallaudet", "Rear Admiral Gallaudet"],
+    "aliases": [
+      "Tim Gallaudet",
+      "Rear Admiral Gallaudet"
+    ],
     "role": "Rear Admiral, U.S. Navy (Ret.) / Former Acting NOAA Administrator",
     "period": "c. 1980s–2014 (Navy); 2017–2019 (NOAA); 2019–present (research)",
     "affiliation": "United States Navy, NOAA, Sol Foundation",
     "summary": "Retired U.S. Navy Rear Admiral and former Acting NOAA Administrator with a Ph.D. in Oceanography from Scripps Institution of Oceanography. One of the most scientifically credentialed figures in the modern UAP disclosure movement. Stated publicly that 'we are in contact with non-human intelligence,' testified before the House Oversight Committee in November 2024, and appeared in two Ross Coulthart NewsNation specials focused on Unidentified Submersible Objects (USOs). His combination of Naval oceanography expertise and senior government access makes him the field's foremost authority on the oceanic UAP domain.",
     "status": "detailed",
-    "tags": ["Navy", "NOAA", "USO", "Underwater UAP", "Sol Foundation", "Congressional Testimony", "NHI", "2024"],
-    "data_file": "gallaudet.json"
+    "tags": [
+      "Navy",
+      "NOAA",
+      "USO",
+      "Underwater UAP",
+      "Sol Foundation",
+      "Congressional Testimony",
+      "NHI",
+      "2024"
+    ],
+    "data_file": "gallaudet.json",
+    "type": "official"
   },
   {
     "id": "jacques-vallee",
     "name": "Dr. Jacques F. Vallée",
-    "aliases": ["Jacques Vallee", "J.F. Vallée"],
+    "aliases": [
+      "Jacques Vallee",
+      "J.F. Vallée"
+    ],
     "role": "Astrophysicist, Computer Scientist; Scientific Advisor, NIDS; Author - Forbidden Science",
     "period": "1963–present (UAP research); 1995–2004 (NIDS scientific advisor)",
     "affiliation": "Northwestern University (with Hynek), SRI International, NIDS, Sol Foundation",
     "summary": "French-American astrophysicist and computer scientist who co-developed the first computerized map of Mars at the Paris Observatory, worked alongside J. Allen Hynek on the official U.S. Air Force UAP investigation (Project Blue Book), and has spent six decades as the field's most credentialed scientific voice. Uniquely documented: his Forbidden Science diary series (4 volumes, 1957-2009) records contemporaneous private conversations with government researchers, intelligence officials, and UAP witnesses. Best known for his critique of the extraterrestrial hypothesis in favor of the Control System / Interdimensional Hypothesis, and for co-authoring a peer-reviewed UAP methodology paper in a mainstream aerospace journal with Dr. Garry Nolan (2022).",
     "status": "detailed",
-    "tags": ["Forbidden Science", "NIDS", "Control System Hypothesis", "IDH", "Hynek", "SRI International", "Peer-Reviewed Research", "Magonia", "Sol Foundation"],
-    "data_file": "vallee.json"
+    "tags": [
+      "Forbidden Science",
+      "NIDS",
+      "Control System Hypothesis",
+      "IDH",
+      "Hynek",
+      "SRI International",
+      "Peer-Reviewed Research",
+      "Magonia",
+      "Sol Foundation"
+    ],
+    "data_file": "vallee.json",
+    "type": "scientist"
   }
 ]

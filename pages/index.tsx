@@ -9,7 +9,7 @@ import resourcesData from '../data/resources.json';
 const CATEGORIES = [
   {
     label: 'Insiders',
-    href: '/data?category=insiders',
+    href: '/data?category=key-figures',
     description:
       'Firsthand accounts from military personnel, intelligence officers, and government officials who have disclosed involvement in classified programs.',
     detail: 'Dan Burisch · Bob Lazar · David Grusch · Ross Coulthart',

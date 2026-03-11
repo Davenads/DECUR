@@ -5,7 +5,7 @@
 /**
  * Represents data category types
  */
-export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'insiders' | 'cases' | 'documents';
+export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'key-figures' | 'cases' | 'documents';
 
 /**
  * Expanded sections state for data navigation
@@ -75,6 +75,7 @@ export interface InsiderEntry {
   summary: string;
   status: 'detailed' | 'stub';
   tags: string[];
+  type: 'insider' | 'journalist' | 'pilot' | 'scientist' | 'official' | 'executive';
   data_file: string | null;
 }
 

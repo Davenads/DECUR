@@ -14,8 +14,8 @@ const navItems: NavItems = {
     path: '/data',
     items: [
       { title: 'Historical Events', path: '/data?category=events' },
-      { title: 'Key Figures', path: '/data?category=figures' },
-      { title: 'Insiders', path: '/data?category=insiders' },
+      { title: 'Witnesses', path: '/data?category=figures' },
+      { title: 'Key Figures', path: '/data?category=key-figures' },
       { title: 'Quotes', path: '/data?category=quotes' },
       { title: 'Media & Documents', path: '/data?category=media' },
       { title: 'News', path: '/data?category=news' },

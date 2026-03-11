@@ -116,7 +116,7 @@ const Sources: NextPage = () => {
             <h2 className="text-xl font-bold text-gray-900">Insider Case File References</h2>
             <p className="text-sm text-gray-500 mt-1">
               Sources consulted in building the manually curated{' '}
-              <Link href="/data?category=insiders" className="text-primary hover:underline">Insider</Link>{' '}
+              <Link href="/data?category=key-figures" className="text-primary hover:underline">Insider</Link>{' '}
               case files (11 profiles). These are reference sources, not scraped datasets.
             </p>
           </div>

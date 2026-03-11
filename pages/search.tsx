@@ -50,7 +50,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
         title: ins.name,
         subtitle: ins.role ?? ins.affiliation ?? null,
         description: ins.summary ?? ins.tags?.join(', ') ?? '',
-        href: `/data?category=insiders&insider=${ins.id}`,
+        href: `/data?category=key-figures&insider=${ins.id}`,
         badge: 'Insider',
       });
     }

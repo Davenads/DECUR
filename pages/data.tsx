@@ -18,7 +18,7 @@ import insidersData from '../data/insiders/index.json';
 import casesData from '../data/cases.json';
 import documentsData from '../data/documents.json';
 
-const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'insiders', 'cases', 'documents'];
+const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'key-figures', 'cases', 'documents'];
 
 interface DataPageProps {
   categoryData: {
@@ -56,7 +56,7 @@ export default function Data({ categoryData, insiders, cases, documents, navItem
       case 'quotes':  return <QuotesBrowser entries={categoryData.quotes} />;
       case 'media':   return <MediaBrowser entries={categoryData.media} />;
       case 'news':           return <NewsBrowser entries={categoryData.news} />;
-      case 'insiders': return <InsidersList entries={insiders} />;
+      case 'key-figures': return <InsidersList entries={insiders} />;
       case 'cases':    return <CasesList cases={cases} />;
       case 'documents': return <DocumentsList documents={documents} />;
       default:               return <EventsList entries={categoryData.events} />;
@@ -100,11 +100,11 @@ export const getStaticProps: GetStaticProps = async () => {
 
     const navItems: NavItemDef[] = [
       { category: 'events',  label: 'Historical Events',  description: 'Famous cases & sightings',       count: events.length  },
-      { category: 'figures', label: 'Key Figures',         description: 'Researchers, officials & witnesses', count: figures.length },
+      { category: 'figures', label: 'Witnesses',           description: 'Researchers, officials & witnesses', count: figures.length },
       { category: 'quotes',  label: 'Quotes',              description: 'Notable statements',             count: quotes.length  },
       { category: 'media',   label: 'Media & Documents',   description: 'Films, books & official docs',   count: media.length   },
       { category: 'news',           label: 'News',            description: 'Reports & developments',         count: news.length    },
-      { category: 'insiders', label: 'Insiders',  description: 'Firsthand accounts & case files', count: insidersData.length },
+      { category: 'key-figures', label: 'Key Figures', description: 'Firsthand accounts & case files', count: insidersData.length },
       { category: 'cases',    label: 'Cases',     description: 'Documented incidents & evidence',  count: casesData.length    },
       { category: 'documents', label: 'Documents',  description: 'Primary source documents',          count: documentsData.length },
     ];
