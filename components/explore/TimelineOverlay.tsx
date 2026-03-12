@@ -166,6 +166,7 @@ const YEAR_END   = 2025;
 
 const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
   const [showAllYears, setShowAllYears] = useState(false);
+  const [enabledSources, setEnabledSources] = useState<Set<string> | null>(null);
 
   const yearStart = showAllYears ? 1947 : YEAR_START;
   const yearEnd   = YEAR_END;
@@ -180,10 +181,29 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
     }
   );
 
-  // Swimlane y-index map
+  // null means "all enabled" (default); derive the effective set
+  const effectiveEnabled = enabledSources ?? new Set(activeSources);
+
+  function toggleSource(src: string) {
+    const next = new Set(effectiveEnabled);
+    if (next.has(src)) {
+      if (next.size > 1) next.delete(src); // keep at least one
+    } else {
+      next.add(src);
+    }
+    // If all are selected again, reset to null (cleaner state)
+    setEnabledSources(next.size === activeSources.length ? null : next);
+  }
+
+  function selectAll() { setEnabledSources(null); }
+  function clearAll()  { setEnabledSources(new Set([activeSources[0]])); }
+
+  const visibleSources = activeSources.filter(s => effectiveEnabled.has(s));
+
+  // Swimlane y-index map (only visible sources)
   const yIndex: Record<string, number> = {};
-  activeSources.forEach((src, i) => { yIndex[src] = i; });
-  const swimlaneCount = activeSources.length;
+  visibleSources.forEach((src, i) => { yIndex[src] = i; });
+  const swimlaneCount = visibleSources.length;
 
   // UAP counts by year
   const uapByYear: Record<number, number> = {};
@@ -193,10 +213,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
     }
   }
 
-  // Group insider events by year
+  // Group insider events by year (only visible sources)
   const wbByYear: Record<number, WBEvent[]> = {};
   for (const e of insiderEvents) {
-    if (e.year >= yearStart && e.year <= yearEnd) {
+    if (e.year >= yearStart && e.year <= yearEnd && effectiveEnabled.has(e.source)) {
       (wbByYear[e.year] = wbByYear[e.year] ?? []).push(e);
     }
   }
@@ -206,15 +226,15 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
     const year = yearStart + i;
     const yearWB = wbByYear[year] ?? [];
     const eventsBySource: Record<string, WBEvent[]> = {};
-    for (const src of activeSources) {
+    for (const src of visibleSources) {
       eventsBySource[src] = yearWB.filter(e => e.source === src);
     }
     return { year, uap: uapByYear[year] ?? 0, eventsBySource };
   });
 
-  // Scatter data per source
+  // Scatter data per source (only visible)
   const scatterBySrc: Record<string, Array<WBEvent & { x: number; y: number }>> = {};
-  for (const src of activeSources) {
+  for (const src of visibleSources) {
     scatterBySrc[src] = insiderEvents
       .filter(e => e.source === src && e.year >= yearStart && e.year <= yearEnd)
       .map(e => ({ ...e, x: e.year, y: yIndex[src] }));
@@ -249,6 +269,55 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
         >
           {showAllYears ? 'Modern era (1985+)' : 'Show from 1947'}
         </button>
+      </div>
+
+      {/* Source filter */}
+      <div className="border border-gray-100 rounded-lg p-3 space-y-2">
+        <div className="flex items-center justify-between gap-2">
+          <span className="text-xs font-semibold uppercase tracking-wide text-gray-400">Filter Sources</span>
+          <div className="flex gap-2">
+            <button
+              onClick={selectAll}
+              className="text-xs text-primary hover:underline disabled:opacity-40"
+              disabled={enabledSources === null}
+            >
+              All
+            </button>
+            <span className="text-xs text-gray-300">|</span>
+            <button
+              onClick={clearAll}
+              className="text-xs text-gray-400 hover:text-gray-600 hover:underline"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-1.5">
+          {activeSources.map(src => {
+            const enabled = effectiveEnabled.has(src);
+            const color = getSourceColor(src);
+            return (
+              <button
+                key={src}
+                onClick={() => toggleSource(src)}
+                className={`text-xs px-2.5 py-1 rounded-full border font-medium transition-all ${
+                  enabled ? 'opacity-100' : 'opacity-35'
+                }`}
+                style={enabled ? {
+                  borderColor: color,
+                  backgroundColor: `${color}18`,
+                  color,
+                } : {
+                  borderColor: '#e5e7eb',
+                  backgroundColor: 'transparent',
+                  color: '#9ca3af',
+                }}
+              >
+                {getSourceLabel(src).split(' ').pop()}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* UAP frequency bar chart */}
@@ -291,7 +360,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
         <div style={{ height: swimlaneHeight }} className="flex items-stretch">
           {/* Row labels */}
           <div className="flex flex-col justify-around shrink-0 pr-2" style={{ width: 72 }}>
-            {[...activeSources].reverse().map(src => (
+            {[...visibleSources].reverse().map(src => (
               <span
                 key={src}
                 className="text-xs font-medium text-right leading-none"
@@ -322,7 +391,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
                   hide
                 />
                 <Tooltip content={<SwimlaneTooltip />} cursor={false} />
-                {activeSources.map(src => (
+                {visibleSources.map(src => (
                   <Scatter
                     key={src}
                     data={scatterBySrc[src]}
@@ -346,7 +415,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
           <span className="w-2.5 h-2.5 rounded-sm bg-[#93c5e8] inline-block" />
           Other UAP events
         </span>
-        {activeSources.map(src => (
+        {visibleSources.map(src => (
           <span key={src} className="flex items-center gap-1.5">
             <span
               className="w-2.5 h-2.5 rounded-full inline-block"
