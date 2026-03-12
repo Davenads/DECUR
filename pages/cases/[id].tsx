@@ -18,6 +18,7 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
       <SeoHead
         title={caseEntry.name}
         description={caseEntry.summary}
+        ogSubtitle={`${caseEntry.date} · ${caseEntry.location}`}
         path={`/cases/${caseEntry.id}`}
         type="article"
       />

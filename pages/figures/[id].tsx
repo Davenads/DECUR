@@ -54,6 +54,7 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
       <SeoHead
         title={entry.name}
         description={entry.summary}
+        ogSubtitle={entry.role}
         path={`/figures/${entry.id}`}
         type="article"
       />

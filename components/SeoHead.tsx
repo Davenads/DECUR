@@ -2,7 +2,6 @@ import Head from 'next/head';
 import type { FC } from 'react';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://decur.app';
-const OG_IMAGE = `${SITE_URL}/og-image.png`;
 const SITE_NAME = 'DECUR';
 
 interface SeoHeadProps {
@@ -12,7 +11,12 @@ interface SeoHeadProps {
   /** Canonical path, e.g. '/data' or '/explore'. Do not include query params. */
   path?: string;
   type?: 'website' | 'article';
-  /** Override the default OG image. */
+  /**
+   * Short subtitle shown in the OG image card (defaults to a truncated description).
+   * Kept to ~80 chars for clean rendering.
+   */
+  ogSubtitle?: string;
+  /** Fully override the OG image URL (skips dynamic generation). */
   image?: string;
 }
 
@@ -21,11 +25,17 @@ const SeoHead: FC<SeoHeadProps> = ({
   description,
   path = '',
   type = 'website',
+  ogSubtitle,
   image,
 }) => {
   const fullTitle = title.includes('DECUR') ? title : `${title} - ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${path}`;
-  const ogImage = image ?? OG_IMAGE;
+
+  // Build dynamic OG image URL unless an explicit static override is passed
+  const subtitle = ogSubtitle ?? description.slice(0, 100);
+  const ogImage = image
+    ? image
+    : `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&subtitle=${encodeURIComponent(subtitle)}`;
 
   return (
     <Head>
