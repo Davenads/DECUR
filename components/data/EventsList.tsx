@@ -11,8 +11,8 @@ function getSourceLabel(url: string): string {
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  'famous-cases': 'bg-red-100 text-red-800',
-  'sightings': 'bg-green-100 text-green-800',
+  'famous-cases': 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300',
+  'sightings': 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300',
 };
 const CATEGORY_LABELS: Record<string, string> = {
   'famous-cases': 'Famous Case',
@@ -75,7 +75,7 @@ const EventsList: FC<Props> = ({ entries, sourceFilter }) => {
   const sortButton = (
     <button
       onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
-      className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-800 transition-colors"
+      className="flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
       title={sortOrder === 'asc' ? 'Currently: oldest first' : 'Currently: newest first'}
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -116,39 +116,39 @@ const EventsList: FC<Props> = ({ entries, sourceFilter }) => {
           const cat = primaryCat(entry);
           const isOpen = expanded === entry.id;
           return (
-            <div key={entry.id} className="border border-gray-200 rounded-lg overflow-hidden">
+            <div key={entry.id} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
               <button
-                className="w-full text-left p-4 hover:bg-gray-50 transition-colors"
+                className="w-full text-left p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
                 onClick={() => setExpanded(isOpen ? null : entry.id)}
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1 flex-wrap">
-                      <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${CATEGORY_COLORS[cat] ?? 'bg-gray-100 text-gray-700'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${CATEGORY_COLORS[cat] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300'}`}>
                         {CATEGORY_LABELS[cat] ?? cat}
                       </span>
-                      <span className="text-xs text-gray-400">{entry.date}</span>
+                      <span className="text-xs text-gray-400 dark:text-gray-500">{entry.date}</span>
                     </div>
-                    <h3 className="text-sm font-semibold text-gray-900">{entry.title}</h3>
+                    <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{entry.title}</h3>
                     {!isOpen && entry.excerpt && (
-                      <p className="mt-1 text-xs text-gray-500 line-clamp-1">{entry.excerpt}</p>
+                      <p className="mt-1 text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{entry.excerpt}</p>
                     )}
                   </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 text-gray-400 flex-shrink-0 mt-1 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 text-gray-400 dark:text-gray-500 flex-shrink-0 mt-1 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
               </button>
               {isOpen && (
-                <div className="px-4 pb-4 border-t border-gray-100">
-                  <p className="mt-3 text-sm text-gray-700">{entry.excerpt}</p>
+                <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700">
+                  <p className="mt-3 text-sm text-gray-700 dark:text-gray-300">{entry.excerpt}</p>
                   <div className="mt-3 flex flex-wrap items-center gap-3">
                     {entry.article_url && (
                       <a
                         href={entry.article_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded transition-colors"
+                        className="inline-flex items-center gap-1 text-xs font-medium text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 px-3 py-1.5 rounded transition-colors"
                       >
                         {entry.article_type === 'video' ? 'Watch Video' : 'Read Article'}
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -161,7 +161,7 @@ const EventsList: FC<Props> = ({ entries, sourceFilter }) => {
                         href={entry.source_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs text-gray-400 hover:text-gray-600 transition-colors"
+                        className="inline-flex items-center gap-1 text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                       >
                         Source: {getSourceLabel(entry.source_url)}
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">

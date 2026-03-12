@@ -44,8 +44,8 @@ const BrowserLayout: FC<BrowserLayoutProps> = ({
 }) => {
   return (
     <div>
-      <h2 className="text-2xl font-bold font-heading mb-2">{title}</h2>
-      <p className="text-gray-500 text-sm mb-6">{description}</p>
+      <h2 className="text-2xl font-bold font-heading mb-2 text-gray-900 dark:text-gray-100">{title}</h2>
+      <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">{description}</p>
 
       <div className="flex flex-col sm:flex-row gap-3 mb-3">
         <div className="relative flex-1">
@@ -54,7 +54,7 @@ const BrowserLayout: FC<BrowserLayoutProps> = ({
             placeholder={searchPlaceholder}
             value={searchValue}
             onChange={(e: ChangeEvent<HTMLInputElement>) => onSearchChange(e.target.value)}
-            className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+            className="w-full px-4 py-2 pl-9 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
           />
           <SearchIcon />
         </div>
@@ -64,7 +64,7 @@ const BrowserLayout: FC<BrowserLayoutProps> = ({
             key={i}
             value={filter.value}
             onChange={e => filter.onChange(e.target.value)}
-            className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary bg-white"
+            className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
           >
             {filter.options.map(opt => (
               <option key={opt.value} value={opt.value}>{opt.label}</option>
@@ -74,7 +74,7 @@ const BrowserLayout: FC<BrowserLayoutProps> = ({
       </div>
 
       <div className="flex items-center justify-between mb-4">
-        <p className="text-xs text-gray-400">{resultCount} results</p>
+        <p className="text-xs text-gray-400 dark:text-gray-500">{resultCount} results</p>
         {headerExtra}
       </div>
 
