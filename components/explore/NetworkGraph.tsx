@@ -2,6 +2,9 @@ import { FC, useRef, useCallback, useState, useMemo, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type FGRef = any;
+
 // SSR-safe import — canvas API requires browser
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), { ssr: false });
 
@@ -42,8 +45,11 @@ const EMPTY_HIGHLIGHT: HighlightState = { nodes: new Set(), linkKeys: new Set() 
 
 const NetworkGraph: FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const fgRef = useRef<FGRef>(null);
   const [graphWidth, setGraphWidth] = useState<number>(800);
   const [highlight, setHighlight] = useState<HighlightState>(EMPTY_HIGHLIGHT);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchFocused, setSearchFocused] = useState(false);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -120,6 +126,37 @@ const NetworkGraph: FC = () => {
     });
   };
 
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const q = searchQuery.toLowerCase();
+    return filteredNodes.filter(n => n.name.toLowerCase().includes(q)).slice(0, 6);
+  }, [searchQuery, filteredNodes]);
+
+  const focusNode = useCallback((node: GraphNode) => {
+    const connectedLinks = filteredLinks.filter(l => {
+      const src = resolveId(l.source);
+      const tgt = resolveId(l.target);
+      return src === node.id || tgt === node.id;
+    });
+    const connectedNodeIds = new Set<string>([node.id]);
+    const keys = new Set<string>();
+    connectedLinks.forEach(l => {
+      const src = resolveId(l.source);
+      const tgt = resolveId(l.target);
+      connectedNodeIds.add(src);
+      connectedNodeIds.add(tgt);
+      keys.add(`${src}-${tgt}`);
+    });
+    setHighlight({ nodes: connectedNodeIds, linkKeys: keys });
+    setHoveredNode(node);
+    if (fgRef.current && node.x != null && node.y != null) {
+      fgRef.current.centerAt(node.x, node.y, 500);
+      fgRef.current.zoom(3, 500);
+    }
+    setSearchQuery('');
+    setSearchFocused(false);
+  }, [filteredLinks]);
+
   const nodeCanvasObject = useCallback(
     (node: object, ctx: CanvasRenderingContext2D, globalScale: number) => {
       const gNode = node as GraphNode;
@@ -188,8 +225,36 @@ const NetworkGraph: FC = () => {
         <h3 className="font-bold text-gray-900 text-lg">Relationship Network</h3>
         <p className="text-sm text-gray-500">
           Connections between insiders, facilities, entities, organizations, projects, and concepts.
-          Hover a node to highlight its connections.
+          Search or hover a node to highlight its connections.
         </p>
+      </div>
+
+      {/* Search */}
+      <div className="px-6 pb-3 relative">
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={e => setSearchQuery(e.target.value)}
+          onFocus={() => setSearchFocused(true)}
+          onBlur={() => setTimeout(() => setSearchFocused(false), 150)}
+          placeholder="Search nodes..."
+          className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/40 bg-gray-50"
+        />
+        {searchFocused && searchResults.length > 0 && (
+          <div className="absolute z-10 left-6 right-6 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+            {searchResults.map(node => (
+              <button
+                key={node.id}
+                onMouseDown={() => focusNode(node)}
+                className="w-full flex items-center gap-2 px-3 py-2 hover:bg-gray-50 text-left"
+              >
+                <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[node.type] }} />
+                <span className="text-sm text-gray-800">{node.name}</span>
+                <span className="text-xs text-gray-400 ml-auto">{TYPE_LABELS[node.type]}</span>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Type filter pills */}
@@ -213,6 +278,7 @@ const NetworkGraph: FC = () => {
       {/* Graph canvas */}
       <div ref={containerRef} className="w-full" style={{ height: 520 }}>
         <ForceGraph2D
+          ref={fgRef}
           graphData={filtered as { nodes: object[]; links: object[] }}
           width={graphWidth}
           height={520}
