@@ -8,18 +8,25 @@ type AuthStatus = DocumentEntry['authenticity_status'];
 type DocType = DocumentEntry['document_type'];
 
 const authConfig: Record<AuthStatus, { label: string; classes: string }> = {
-  'confirmed-official': { label: 'Official Publication',       classes: 'bg-green-100 text-green-700' },
-  'declassified-foia':  { label: 'Declassified / FOIA',        classes: 'bg-blue-100 text-blue-700'  },
-  'leaked-disputed':    { label: 'Leaked — Disputed',          classes: 'bg-amber-100 text-amber-700' },
-  'confirmed-leaked':   { label: 'Leaked — Authenticated',     classes: 'bg-teal-100 text-teal-700'  },
+  'confirmed-official':     { label: 'Official Publication',    classes: 'bg-green-100 text-green-700'  },
+  'declassified-foia':      { label: 'Declassified / FOIA',     classes: 'bg-blue-100 text-blue-700'   },
+  'leaked-disputed':        { label: 'Leaked - Disputed',       classes: 'bg-amber-100 text-amber-700' },
+  'confirmed-leaked':       { label: 'Leaked - Authenticated',  classes: 'bg-teal-100 text-teal-700'   },
+  'declassified-authentic': { label: 'Declassified',            classes: 'bg-blue-100 text-blue-700'   },
+  'documented-destroyed':   { label: 'Documented - Destroyed',  classes: 'bg-red-100 text-red-700'     },
+  'official-declassified':  { label: 'Official - Declassified', classes: 'bg-green-100 text-green-700' },
 };
 
 const docTypeLabel: Record<DocType, string> = {
-  'government-report':    'Gov. Report',
-  'government-memo':      'Gov. Memo',
-  'intelligence-report':  'Intelligence Report',
-  'academic-study':       'Academic Study',
-  'legislation':          'Legislation',
+  'government-report':               'Gov. Report',
+  'government-memo':                 'Gov. Memo',
+  'intelligence-report':             'Intelligence Report',
+  'academic-study':                  'Academic Study',
+  'legislation':                     'Legislation',
+  'military-memorandum':             'Military Memo',
+  'intelligence-collection-directive': 'Intel Collection Directive',
+  'intelligence-assessment':         'Intelligence Assessment',
+  'government-assessment':           'Gov. Assessment',
 };
 
 /* ─── Detail Tabs ──────────────────────────────────────────────── */

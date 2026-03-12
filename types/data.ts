@@ -474,14 +474,21 @@ export type DocumentAuthStatus =
   | 'confirmed-official'
   | 'declassified-foia'
   | 'leaked-disputed'
-  | 'confirmed-leaked';
+  | 'confirmed-leaked'
+  | 'declassified-authentic'
+  | 'documented-destroyed'
+  | 'official-declassified';
 
 export type DocumentType =
   | 'government-report'
   | 'government-memo'
   | 'intelligence-report'
   | 'academic-study'
-  | 'legislation';
+  | 'legislation'
+  | 'military-memorandum'
+  | 'intelligence-collection-directive'
+  | 'intelligence-assessment'
+  | 'government-assessment';
 
 export interface DocumentEntry {
   id: string;
