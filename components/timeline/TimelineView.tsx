@@ -8,6 +8,7 @@ export interface TimelineEntry {
   excerpt: string;
   categories: string[];
   source_url: string;
+  article_url?: string;
 }
 
 interface TimelineViewProps {
@@ -213,7 +214,7 @@ const TimelineView: FC<TimelineViewProps> = ({ entries }) => {
                         <div className={`absolute left-[13px] top-4 w-3 h-3 rounded-full ${dotColor} ring-2 ring-white shadow`} />
 
                         <a
-                          href={entry.source_url}
+                          href={entry.article_url ?? entry.source_url}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-primary transition-all group"
