@@ -50,8 +50,8 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
         title: ins.name,
         subtitle: ins.role ?? ins.affiliation ?? null,
         description: ins.summary ?? ins.tags?.join(', ') ?? '',
-        href: `/data?category=key-figures&insider=${ins.id}`,
-        badge: 'Insider',
+        href: `/figures/${ins.id}`,
+        badge: 'Key Figure',
       });
     }
 
@@ -116,7 +116,7 @@ const TYPE_STYLES: Record<SearchItem['type'], string> = {
 };
 
 const TYPE_LABELS: Record<SearchItem['type'], string> = {
-  insider:  'Insiders',
+  insider:  'Key Figures',
   timeline: 'Timeline Events',
   glossary: 'Glossary',
   resource: 'Resources',
