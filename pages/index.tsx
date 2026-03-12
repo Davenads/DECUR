@@ -12,7 +12,7 @@ const CATEGORIES = [
     href: '/data?category=key-figures',
     description:
       'Firsthand accounts from military personnel, intelligence officers, government officials, journalists, and scientists who have disclosed involvement in UAP research.',
-    detail: 'Dan Burisch · David Grusch · Luis Elizondo · Ryan Graves · 27 profiles',
+    detail: `Dan Burisch · David Grusch · Luis Elizondo · Ryan Graves · ${(insidersData as unknown[]).length} profiles`,
   },
   {
     label: 'Documented Cases',
@@ -40,7 +40,7 @@ const CATEGORIES = [
 const resData = resourcesData as { sources?: unknown[]; testimony?: unknown[] };
 const ARCHIVE_STATS = [
   { count: (insidersData as unknown[]).length,                                     label: 'key figures' },
-  { count: '1,575',                                                                 label: 'timeline events' },
+  { count: '1,580',                                                                 label: 'timeline events' },
   { count: (glossaryData as unknown[]).length,                                      label: 'glossary terms' },
   { count: (resData.sources?.length ?? 0) + (resData.testimony?.length ?? 0),      label: 'source materials' },
 ];
@@ -157,7 +157,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
             <div>
               <p className="text-sm font-semibold text-gray-700">Source Materials & Glossary</p>
               <p className="text-xs text-gray-400 mt-0.5">
-                Primary documents, curated source links, and a 293-term terminology reference
+                Primary documents, curated source links, and a {(glossaryData as unknown[]).length}-term terminology reference
               </p>
             </div>
             <Link

@@ -8,12 +8,13 @@ import insidersData from '../data/insiders/index.json';
 import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
 import casesData from '../data/cases.json';
+import documentsData from '../data/documents.json';
 
 // ---- Types ----------------------------------------------------------------
 
 interface SearchItem {
   id: string;
-  type: 'insider' | 'case' | 'timeline' | 'glossary' | 'resource';
+  type: 'insider' | 'case' | 'document' | 'timeline' | 'glossary' | 'resource';
   title: string;
   subtitle?: string | null;
   description: string;
@@ -69,6 +70,22 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
         description: c.summary,
         href: `/cases/${c.id}`,
         badge: 'Documented Case',
+      });
+    }
+
+    // Declassified Documents
+    for (const doc of documentsData as Array<{
+      id: string; name: string; date: string; issuing_authority: string;
+      document_type: string; summary: string; significance: string;
+    }>) {
+      corpus.push({
+        id: `document-${doc.id}`,
+        type: 'document',
+        title: doc.name,
+        subtitle: `${doc.issuing_authority} · ${doc.date}`,
+        description: doc.summary ?? doc.significance ?? '',
+        href: `/data?category=documents`,
+        badge: doc.document_type ?? 'Document',
       });
     }
 
@@ -128,6 +145,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
 const TYPE_STYLES: Record<SearchItem['type'], string> = {
   insider:  'bg-blue-100 text-blue-700',
   case:     'bg-red-100 text-red-700',
+  document: 'bg-gray-100 text-gray-700',
   timeline: 'bg-amber-100 text-amber-700',
   glossary: 'bg-indigo-100 text-indigo-700',
   resource: 'bg-emerald-100 text-emerald-700',
@@ -136,6 +154,7 @@ const TYPE_STYLES: Record<SearchItem['type'], string> = {
 const TYPE_LABELS: Record<SearchItem['type'], string> = {
   insider:  'Key Figures',
   case:     'Documented Cases',
+  document: 'Declassified Documents',
   timeline: 'Timeline Events',
   glossary: 'Glossary',
   resource: 'Resources',
@@ -196,7 +215,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
     },
     {}
   );
-  const typeOrder: SearchItem['type'][] = ['insider', 'case', 'timeline', 'glossary', 'resource'];
+  const typeOrder: SearchItem['type'][] = ['insider', 'case', 'document', 'timeline', 'glossary', 'resource'];
 
   return (
     <>
