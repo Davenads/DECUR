@@ -1,9 +1,32 @@
 import { FC, useRef, useCallback, useState, useMemo, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
+import insidersIndex from '../../data/insiders/index.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FGRef = any;
+
+// Val overrides for particularly prominent figures
+const VAL_OVERRIDES: Record<string, number> = {
+  'dan-burisch': 5, 'bob-lazar': 5, 'david-grusch': 5,
+  'luis-elizondo': 5, 'david-fravor': 5,
+};
+
+// Derive person nodes from the insiders index, merging with manually-defined nodes
+const existingIds = new Set(graphData.nodes.map(n => n.id));
+const derivedPersonNodes: GraphNode[] = (insidersIndex as Array<{ id: string; name: string; includeInExplore?: boolean }>)
+  .filter(e => !existingIds.has(e.id))
+  .map(e => ({
+    id: e.id,
+    name: e.name,
+    type: 'person' as NodeType,
+    val: VAL_OVERRIDES[e.id] ?? (e.includeInExplore ? 4 : 2),
+  }));
+
+const mergedGraphData = {
+  nodes: [...graphData.nodes, ...derivedPersonNodes],
+  links: graphData.links,
+};
 
 // SSR-safe import — canvas API requires browser
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), { ssr: false });
@@ -70,7 +93,7 @@ const NetworkGraph: FC = () => {
   // Memoize filtered data — only recompute when activeTypes changes, NOT on every hover re-render.
   // Stable object references prevent ForceGraph2D from reheating the physics simulation.
   const filteredNodes = useMemo(
-    () => graphData.nodes.filter(n => activeTypes.has(n.type)),
+    () => mergedGraphData.nodes.filter(n => activeTypes.has(n.type)),
     [activeTypes]
   );
   const filteredNodeIds = useMemo(
@@ -78,7 +101,7 @@ const NetworkGraph: FC = () => {
     [filteredNodes]
   );
   const filteredLinks = useMemo(
-    () => graphData.links.filter(
+    () => mergedGraphData.links.filter(
       l => filteredNodeIds.has(resolveId(l.source)) && filteredNodeIds.has(resolveId(l.target))
     ),
     [filteredNodeIds]

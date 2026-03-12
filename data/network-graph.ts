@@ -13,7 +13,7 @@ export interface GraphNode {
   id: string;
   name: string;
   type: NodeType;
-  group: NodeGroup;
+  group?: NodeGroup; // optional — auto-derived person nodes may omit this
   val?: number; // relative size weight
   // injected at runtime by force-graph
   x?: number;
@@ -41,32 +41,18 @@ export const NODE_COLORS: Record<NodeType, string> = {
   technology:   '#f97316', // orange
 };
 
+// Person nodes for figures WITHOUT dedicated profile pages.
+// All profiled insiders are auto-derived from data/insiders/index.json in NetworkGraph.tsx.
+export const supplementaryPersonNodes: GraphNode[] = [
+  { id: 'john-lear',          name: 'John Lear',          type: 'person', group: 'lazar',    val: 2 },
+  { id: 'jim-slaight',        name: 'Jim Slaight',        type: 'person', group: 'fravor',   val: 2 },
+  { id: 'jeremy-corbell',     name: 'Jeremy Corbell',     type: 'person', group: 'corbell',  val: 3 },
+  { id: 'charles-mccullough', name: 'Charles McCullough', type: 'person', group: 'mccullough', val: 3 },
+];
+
 export const graphData: GraphData = {
   nodes: [
-    // People
-    { id: 'dan-burisch',         name: 'Dan Burisch',          type: 'person',       group: 'burisch',  val: 5 },
-    { id: 'bob-lazar',           name: 'Bob Lazar',            type: 'person',       group: 'lazar',    val: 5 },
-    { id: 'david-grusch',        name: 'David Grusch',         type: 'person',       group: 'grusch',   val: 5 },
-    { id: 'luis-elizondo',       name: 'Luis Elizondo',        type: 'person',       group: 'elizondo', val: 5 },
-    { id: 'chris-mellon',        name: 'Chris Mellon',         type: 'person',       group: 'mellon',   val: 4 },
-    { id: 'ross-coulthart',      name: 'Ross Coulthart',       type: 'person',       group: 'grusch',   val: 2 },
-    { id: 'ryan-graves',         name: 'Ryan Graves',          type: 'person',       group: 'shared',   val: 2 },
-    { id: 'george-knapp',        name: 'George Knapp',         type: 'person',       group: 'lazar',    val: 2 },
-    { id: 'john-lear',           name: 'John Lear',            type: 'person',       group: 'lazar',    val: 2 },
-    { id: 'harry-reid',          name: 'Harry Reid',           type: 'person',       group: 'elizondo', val: 2 },
-    { id: 'david-fravor',        name: 'David Fravor',         type: 'person',       group: 'fravor',   val: 5 },
-    { id: 'karl-nell',           name: 'Karl Nell',            type: 'person',       group: 'nell',     val: 4 },
-    { id: 'jim-slaight',         name: 'Jim Slaight',          type: 'person',       group: 'fravor',   val: 2 },
-    { id: 'garry-nolan',         name: 'Garry Nolan',          type: 'person',       group: 'nolan',    val: 4 },
-    { id: 'hal-puthoff',         name: 'Hal Puthoff',          type: 'person',       group: 'puthoff',  val: 4 },
-    { id: 'eric-davis',          name: 'Eric Davis',           type: 'person',       group: 'davis',    val: 4 },
-    { id: 'robert-bigelow',      name: 'Robert Bigelow',       type: 'person',       group: 'bigelow',  val: 4 },
-    { id: 'jacques-vallee',      name: 'Jacques Vallée',       type: 'person',       group: 'vallee',   val: 4 },
-    { id: 'nick-pope',           name: 'Nick Pope',            type: 'person',       group: 'pope',     val: 4 },
-    { id: 'jake-barber',         name: 'Jake Barber',          type: 'person',       group: 'shared',   val: 3 },
-    { id: 'tim-gallaudet',       name: 'Tim Gallaudet',        type: 'person',       group: 'shared',   val: 4 },
-    { id: 'jeremy-corbell',      name: 'Jeremy Corbell',       type: 'person',       group: 'shared',   val: 3 },
-    { id: 'charles-mccullough',  name: 'Charles McCullough',   type: 'person',       group: 'grusch',   val: 3 },
+    ...supplementaryPersonNodes,
 
     // Entities
     { id: 'chielah',             name: "Chi'el'ah (J-Rod)",    type: 'entity',       group: 'burisch', val: 4 },
