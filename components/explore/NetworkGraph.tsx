@@ -1,5 +1,6 @@
 import { FC, useRef, useCallback, useState, useMemo, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { useTheme } from 'next-themes';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
 import insidersIndex from '../../data/insiders/index.json';
 
@@ -69,6 +70,8 @@ const EMPTY_HIGHLIGHT: HighlightState = { nodes: new Set(), linkKeys: new Set() 
 const NetworkGraph: FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const fgRef = useRef<FGRef>(null);
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
   const [graphWidth, setGraphWidth] = useState<number>(800);
   const [highlight, setHighlight] = useState<HighlightState>(EMPTY_HIGHLIGHT);
   const [searchQuery, setSearchQuery] = useState('');
@@ -207,19 +210,19 @@ const NetworkGraph: FC = () => {
         ctx.font = `${fontSize}px Inter, sans-serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
-        ctx.fillStyle = isHighlighted ? '#1f2937' : '#9ca3af';
+        ctx.fillStyle = isHighlighted ? (isDark ? '#f3f4f6' : '#1f2937') : '#9ca3af';
         ctx.fillText(gNode.name, x, y + baseRadius + 2 / globalScale);
       }
     },
-    [highlight]
+    [highlight, isDark]
   );
 
   const linkColor = useCallback(
     (link: object) => {
-      if (highlight.nodes.size === 0) return '#d1d5db';
-      return highlight.linkKeys.has(linkKey(link)) ? '#0077cc' : '#e9eaec';
+      if (highlight.nodes.size === 0) return isDark ? '#4b5563' : '#d1d5db';
+      return highlight.linkKeys.has(linkKey(link)) ? '#0077cc' : (isDark ? '#374151' : '#e9eaec');
     },
-    [highlight]
+    [highlight, isDark]
   );
 
   const linkWidth = useCallback(
