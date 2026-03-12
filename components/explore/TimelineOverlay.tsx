@@ -357,7 +357,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
                 tickLine={false}
                 width={28}
               />
-              <Tooltip content={<BarTooltip />} cursor={{ fill: 'rgba(0,119,204,0.06)' }} />
+              <Tooltip content={<BarTooltip />} cursor={{ fill: 'rgba(0,119,204,0.06)' }} wrapperStyle={{ zIndex: 50 }} />
               <Bar dataKey="uap" radius={[2, 2, 0, 0]} maxBarSize={16}>
                 {barData.map((d, i) => {
                   const hasWB = Object.values(d.eventsBySource).some(evts => evts.length > 0);
