@@ -4,6 +4,8 @@
 
 A structured reference archive for UAP and NHI research. DECUR catalogs insider testimony, documented incidents, primary source documents, and historical records spanning eight decades - organized for analysis, not advocacy.
 
+Live at [decur.org](https://decur.org)
+
 ![DECUR Home](public/readme/readme-home.png)
 
 ---
@@ -22,20 +24,20 @@ The core of the platform. Accessed via the `Data` nav dropdown or directly at `/
 
 ![Data - Research Archive](public/readme/readme-insiders.png)
 
-| Category | Description | Count |
-|---|---|---|
-| Historical Events | Documented UAP cases and sightings | 1,063 |
-| Key Figures | Researchers, officials, and witnesses | 86 |
-| Quotes | Notable statements on record | 132 |
-| Media & Documents | Films, books, and official docs | 66 |
-| News | Reports and developments | 289 |
-| Insiders | Firsthand accounts with full profiles | 13 |
-| Cases | Tier-annotated documented incidents | 6 |
-| Documents | Annotated primary source documents | 7 |
+| Category | Description |
+|---|---|
+| Historical Events | Documented UAP cases and sightings |
+| Key Figures | Researchers, officials, and witnesses |
+| Quotes | Notable statements on record |
+| Media & Documents | Films, books, and official publications |
+| News | Reports and ongoing developments |
+| Insiders | Firsthand accounts with full multi-tab profiles |
+| Cases | Tier-annotated documented incidents |
+| Documents | Annotated primary source documents |
 
 #### Insider Profiles
 
-Each insider has a dedicated multi-tab profile covering their background, role, key claims, credibility assessment (supporting and contradicting evidence), network connections, and known disclosures. Current profiles:
+Each insider has a dedicated multi-tab profile covering background, roles, key events timeline, credibility assessment, network connections, and public disclosures. Current profiles:
 
 - Luis Elizondo (AATIP Director)
 - David Fravor (Nimitz Pilot)
@@ -51,34 +53,38 @@ Each insider has a dedicated multi-tab profile covering their background, role, 
 - Bob Lazar (S-4 Whistleblower)
 - Dan Burisch (Microbiologist, Majestic 12)
 
+Profiles cross-reference documented cases and link into the Explore timeline overlay where applicable.
+
 #### Cases
 
-Six high-evidence documented incidents with tier classification, witness profiles, evidence inventory, official response tracking, and insider connections.
+Tier-annotated documented incidents with witness profiles, evidence inventory, official response tracking, and insider connections.
 
 **Evidence Tiers:**
 - Tier 1 - Official documentation (government acknowledgment, declassified records, or on-record military testimony)
 - Tier 2 - Strong circumstantial (credible witnesses, partial corroboration)
 - Tier 3 - Reported (witness accounts, limited corroboration)
 
-Current cases: Nimitz Tic-Tac, Rendlesham Forest, USS Theodore Roosevelt, Belgian UFO Wave, Iranian F-4 Incident, JAL Flight 1628.
+Current cases: Nimitz Tic-Tac, Rendlesham Forest, USS Theodore Roosevelt, Belgian UFO Wave, Iranian F-4 Incident, JAL Flight 1628, Phoenix Lights, O'Hare Airport 2006, USS Omaha USO, Stephenville TX, Shag Harbour, and more.
 
 #### Primary Documents
 
-Seven annotated primary source documents with authenticity classification, provenance notes, key findings, and insider connections.
+Annotated primary source documents with authenticity classification, provenance notes, key findings, and insider connections.
 
 **Authenticity Classifications:**
 - Official Publication - released through standard government channels
 - Declassified (FOIA) - released via Freedom of Information Act request
-- Leaked - Disputed - circulated outside official channels, authenticity contested
 - Confirmed Leaked - leaked origin confirmed, contents substantiated
+- Leaked - Disputed - circulated outside official channels, authenticity contested
+- Declassified Authentic - declassified and independently authenticated
+- Official Declassified - officially declassified by the originating agency
 
-Current documents: Wilson-Davis Memo, UAPTF Preliminary Assessment (2021), AARO Historical Record Vol. 1, NASA UAP Study (2023), Halt Memo (1981), DIA Iran F-4 Report (1976), NDAA FY2023 UAP Provisions.
+Current documents: Wilson-Davis Memo, UAPTF Preliminary Assessment (2021), AARO Historical Record Vol. 1 & 2, NASA UAP Study (2023), Halt Memo (1981), DIA Iran F-4 Report (1976), NDAA FY2023 UAP Provisions, Twining Memo (1947), Schulgen Memo (1947), Project SIGN Estimate (1948), and more.
 
 ---
 
 ### Timeline
 
-A chronological view of documented UAP/NHI events spanning from the 1940s to the present. Filterable by era and event type.
+A chronological view of 1,580+ documented UAP/NHI events from the 1940s to the present. Filterable by era and event type. Case detail pages link directly into the timeline filtered to the relevant year.
 
 ---
 
@@ -88,8 +94,8 @@ Interactive cross-dataset visualizations.
 
 ![Explore - Visualizations](public/readme/readme-explore.png)
 
-- **Event Frequency Chart** - Distribution of 1,642+ documented events by decade or historical era
-- **Insider Timeline Overlay** - Swimlane view of all 13 insider careers and key events plotted chronologically
+- **Event Frequency Chart** - Distribution of documented events by decade and historical era
+- **Insider Timeline Overlay** - Swimlane view of insider careers and key events plotted chronologically, with per-source color coding
 - **Relationship Network** - Force-directed graph of connections between insiders, organizations, programs, and technologies
 
 ---
@@ -98,38 +104,15 @@ Interactive cross-dataset visualizations.
 
 Curated reference materials organized into three tabs:
 
-- **Materials** - Books, films, academic papers, and official publications
-- **Transcripts** - Processed interview and hearing transcripts
+- **Primary Sources** - Books, films, academic papers, and official publications
+- **Testimony & Interviews** - Processed transcripts from congressional hearings, podcasts, and on-record interviews
 - **Glossary** - UAP/NHI terminology with definitions and context
 
 ---
 
-## Development
+### Search
 
-### Prerequisites
-
-- Node.js 18+
-- npm
-
-### Setup
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-### Commands
-
-```bash
-npm run dev        # Start development server (port 3000)
-npm run build      # Build production bundle
-npm run start      # Start production server
-npm run lint       # Run ESLint
-npm run typecheck  # Run TypeScript type checking
-npm run check      # Run lint + typecheck together
-```
+Full-text search across all platform content: insider profiles, documented cases, primary documents, timeline events, glossary terms, and resources. Results grouped by content type with direct navigation.
 
 ---
 
@@ -166,3 +149,4 @@ types/
 - **Charts**: Recharts
 - **Network Graph**: react-force-graph-2d
 - **Data**: Static JSON with `getStaticProps` + ISR (`revalidate: 3600`)
+- **Analytics**: Vercel Analytics
