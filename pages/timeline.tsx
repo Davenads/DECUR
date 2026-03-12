@@ -16,8 +16,8 @@ export default function Timeline({ entries }: TimelinePageProps) {
       />
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold font-heading text-gray-900 mb-2">Historical Timeline</h1>
-          <p className="text-gray-500 text-sm">
+          <h1 className="text-3xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-2">Historical Timeline</h1>
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
             {entries.length} documented events from {Math.min(...entries.map(e => e.year))} to {Math.max(...entries.map(e => e.year))}.
             Data sourced from <a href="https://ufotimeline.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">UFO Timeline</a>.
           </p>

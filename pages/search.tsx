@@ -145,7 +145,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
 const TYPE_STYLES: Record<SearchItem['type'], string> = {
   insider:  'bg-blue-100 text-blue-700',
   case:     'bg-red-100 text-red-700',
-  document: 'bg-gray-100 text-gray-700',
+  document: 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300',
   timeline: 'bg-amber-100 text-amber-700',
   glossary: 'bg-indigo-100 text-indigo-700',
   resource: 'bg-emerald-100 text-emerald-700',
@@ -224,7 +224,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
         description="Search DECUR's archive of UAP research, key figure profiles, historical events, glossary terms, and primary source materials."
         path="/search"
       />
-      <div className="min-h-screen bg-gray-50 -mt-8 -mx-4 px-4 pt-10 pb-10">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 -mt-8 -mx-4 px-4 pt-10 pb-10">
         <div className="max-w-3xl mx-auto">
 
           {/* Search input */}
@@ -235,10 +235,10 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
               value={query}
               onChange={e => setQuery(e.target.value)}
               placeholder="Search insiders, events, terms, resources..."
-              className="w-full pl-11 pr-4 py-3 text-base bg-white border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              className="w-full pl-11 pr-4 py-3 text-base bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
             />
             <svg
-              className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400"
+              className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 dark:text-gray-500"
               fill="none" viewBox="0 0 24 24" stroke="currentColor"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -250,19 +250,19 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
           {hasSearched && (
             <div>
               {results.length === 0 ? (
-                <p className="text-center text-gray-500 py-16 text-sm">
+                <p className="text-center text-gray-500 dark:text-gray-400 py-16 text-sm">
                   No results for <span className="font-medium">&ldquo;{query}&rdquo;</span>
                 </p>
               ) : (
                 <>
-                  <p className="text-sm text-gray-400 mb-6">
+                  <p className="text-sm text-gray-400 dark:text-gray-500 mb-6">
                     {results.length} result{results.length !== 1 ? 's' : ''} for{' '}
-                    <span className="font-medium text-gray-700">&ldquo;{query}&rdquo;</span>
+                    <span className="font-medium text-gray-700 dark:text-gray-300">&ldquo;{query}&rdquo;</span>
                   </p>
                   <div className="space-y-10">
                     {typeOrder.filter(t => grouped[t]).map(type => (
                       <section key={type}>
-                        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+                        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">
                           {TYPE_LABELS[type]} ({grouped[type].length})
                         </h2>
                         <div className="space-y-2">
@@ -270,12 +270,12 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
                             <Link
                               key={item.id}
                               href={item.href}
-                              className="block bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-primary hover:shadow-sm transition-all"
+                              className="block bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 px-4 py-3 hover:border-primary hover:shadow-sm transition-all"
                             >
                               <div className="flex items-start gap-3">
                                 <div className="flex-1 min-w-0">
                                   <div className="flex items-center gap-2 flex-wrap mb-0.5">
-                                    <span className="text-sm font-semibold text-gray-900 truncate">
+                                    <span className="text-sm font-semibold text-gray-900 dark:text-gray-100 truncate">
                                       {item.title}
                                     </span>
                                     {item.badge && (
@@ -285,13 +285,13 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
                                     )}
                                   </div>
                                   {item.subtitle && (
-                                    <p className="text-xs text-gray-400 mb-1">{item.subtitle}</p>
+                                    <p className="text-xs text-gray-400 dark:text-gray-500 mb-1">{item.subtitle}</p>
                                   )}
-                                  <p className="text-sm text-gray-600 line-clamp-2 leading-relaxed">
+                                  <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
                                     {item.description}
                                   </p>
                                 </div>
-                                <svg className="h-4 w-4 text-gray-300 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="h-4 w-4 text-gray-300 dark:text-gray-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
                               </div>
@@ -307,8 +307,8 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
           )}
 
           {!hasSearched && (
-            <div className="text-center py-16 text-gray-400 text-sm">
-              <p className="mb-1 font-medium text-gray-500">Search across all DECUR data</p>
+            <div className="text-center py-16 text-gray-400 dark:text-gray-500 text-sm">
+              <p className="mb-1 font-medium text-gray-500 dark:text-gray-400">Search across all DECUR data</p>
               <p>Insiders &middot; {corpus.filter(c => c.type === 'timeline').length} timeline events &middot; {corpus.filter(c => c.type === 'glossary').length} glossary terms &middot; Resources</p>
             </div>
           )}

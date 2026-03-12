@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, FC } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes';
 import SearchBar from './SearchBar';
 import NavDropdown from './navigation/NavDropdown';
 import MobileNavDropdown from './navigation/MobileNavDropdown';
@@ -41,8 +42,14 @@ const simpleLinks = [
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mounted, setMounted] = useState<boolean>(false);
   const dropdownRefs = useRef<DropdownRefs>({});
   const router = useRouter();
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -74,12 +81,12 @@ const Header: FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md relative z-30">
+    <header className="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-900/80 relative z-30">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-heading font-bold text-gray-900">DECUR</span>
+            <span className="text-2xl font-heading font-bold text-gray-900 dark:text-gray-100">DECUR</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -89,7 +96,7 @@ const Header: FC = () => {
               className={
                 isActive('/')
                   ? 'text-primary font-medium border-b-2 border-primary pb-1'
-                  : 'text-gray-600 hover:text-primary transition-colors'
+                  : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
               }
             >
               Home
@@ -122,7 +129,7 @@ const Header: FC = () => {
                 className={
                   isActive(href)
                     ? 'text-primary font-medium border-b-2 border-primary pb-1'
-                    : 'text-gray-600 hover:text-primary transition-colors'
+                    : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
                 }
               >
                 {label}
@@ -135,9 +142,28 @@ const Header: FC = () => {
             <SearchBar onSearch={handleSearch} />
           </div>
 
+          {/* Theme Toggle */}
+          <button
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            aria-label="Toggle theme"
+            className="p-2 rounded-md text-gray-600 hover:text-primary hover:bg-gray-100 dark:text-gray-400 dark:hover:text-primary-light dark:hover:bg-gray-800 transition-colors"
+          >
+            {mounted && theme === 'dark' ? (
+              /* Sun icon */
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
+              </svg>
+            ) : (
+              /* Moon icon */
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            )}
+          </button>
+
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-600 focus:outline-none"
+            className="md:hidden text-gray-600 dark:text-gray-400 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -159,11 +185,11 @@ const Header: FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700 pt-4">
             <div className="flex flex-col space-y-4">
               <Link
                 href="/"
-                className={isActive('/') ? 'text-primary font-medium' : 'text-gray-600'}
+                className={isActive('/') ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -191,7 +217,7 @@ const Header: FC = () => {
                 <Link
                   key={href}
                   href={href}
-                  className={isActive(href) ? 'text-primary font-medium' : 'text-gray-600'}
+                  className={isActive(href) ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {label}

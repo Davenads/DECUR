@@ -14,7 +14,7 @@ interface MobileNavDropdownProps {
 const MobileNavDropdown: FC<MobileNavDropdownProps> = ({ title, items, isActive, isOpen, onToggle, onItemClick }) => (
   <div className="space-y-1">
     <button
-      className="flex items-center justify-between w-full text-left text-gray-600"
+      className="flex items-center justify-between w-full text-left text-gray-600 dark:text-gray-400"
       onClick={onToggle}
     >
       <span className={isActive ? 'text-primary font-medium' : ''}>{title}</span>
@@ -35,7 +35,7 @@ const MobileNavDropdown: FC<MobileNavDropdownProps> = ({ title, items, isActive,
           <Link
             key={index}
             href={item.path}
-            className="block text-gray-500 hover:text-primary"
+            className="block text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light"
             onClick={onItemClick}
           >
             {item.title}

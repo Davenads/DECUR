@@ -21,7 +21,7 @@ const NavDropdown: FC<NavDropdownProps> = ({ id, title, items, isActive, isOpen,
       className={`flex items-center space-x-1 ${
         isActive
           ? 'text-primary font-medium border-b-2 border-primary pb-1'
-          : 'text-gray-600 hover:text-primary transition-colors'
+          : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
       }`}
       onClick={onToggle}
       aria-expanded={isOpen}
@@ -40,13 +40,13 @@ const NavDropdown: FC<NavDropdownProps> = ({ id, title, items, isActive, isOpen,
     </button>
 
     {isOpen && (
-      <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
+      <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 dark:ring-gray-700 focus:outline-none z-50">
         <div className="py-1" role="menu" aria-orientation="vertical">
           {items.map((item, index) => (
             <Link
               key={index}
               href={item.path}
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary"
+              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-primary dark:hover:text-primary-light"
               role="menuitem"
             >
               {item.title}

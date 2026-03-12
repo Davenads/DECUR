@@ -5,7 +5,7 @@
 /* Custom base styles */
 @layer base {
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100;
   }
   h1 {
     @apply text-3xl font-bold font-heading mb-4;
@@ -17,7 +17,7 @@
     @apply text-xl font-bold font-heading mb-2;
   }
   a {
-    @apply text-gray-700 hover:text-primary transition-colors;
+    @apply text-gray-700 hover:text-primary transition-colors dark:text-gray-300 dark:hover:text-primary-light;
   }
 }
 
@@ -30,7 +30,7 @@
     @apply bg-primary text-white hover:bg-primary-dark;
   }
   .card {
-    @apply bg-white rounded-lg shadow-md p-6;
+    @apply bg-white rounded-lg shadow-md p-6 dark:bg-gray-800 dark:shadow-gray-900/50;
   }
   .section {
     @apply py-8;

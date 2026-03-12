@@ -54,19 +54,19 @@ const About: NextPage = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-8">About DECUR</h1>
 
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
           <div className="h-40 bg-gradient-to-r from-gray-800 to-gray-700" />
 
           <div className="px-6 py-8 -mt-16">
-            <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-8">
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
                 DECUR (Data Exceeding Current Understanding of Reality) is dedicated to cataloging, analyzing, and
                 making accessible insider testimony that extends beyond conventional scientific and governmental acknowledgment.
                 We focus on Unidentified Aerial Phenomena (UAP), Non-Human Intelligence (NHI), and advanced technologies
                 as reported by credible witnesses from military, intelligence, scientific, and government backgrounds.
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-300">
                 We believe that scientific and public understanding benefits from the organized preservation of this testimony.
                 By providing a structured repository of information that challenges conventional paradigms, we aim to
                 facilitate research, cross-referencing, and pattern recognition across multiple witness accounts.
@@ -76,7 +76,7 @@ const About: NextPage = () => {
             <div className="space-y-6">
               <section>
                 <h2 className="text-xl font-bold mb-3">Platform Purpose</h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                   DECUR serves as a comprehensive knowledge base cataloging testimony from credible insiders
                   across military, intelligence, scientific, and government backgrounds. We present this information
                   with analytical rigor while maintaining neutrality, allowing researchers to examine the data and
@@ -86,12 +86,12 @@ const About: NextPage = () => {
 
               <section>
                 <h2 className="text-xl font-bold mb-3">What We Cover</h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-300">
                   Our database spans testimony from insiders including military personnel, intelligence officers,
                   government contractors, and scientific researchers who have come forward with accounts of UAP
                   encounters, recovered materials, non-human intelligence, and special access programs.
                 </p>
-                <p className="text-gray-700 mt-2">
+                <p className="text-gray-700 dark:text-gray-300 mt-2">
                   Topics include extraterrestrial biological entities, timeline mechanics, advanced propulsion and
                   energy technologies, cellular and genetic research, and classified program activity. DECUR is
                   continuously expanding as new testimony and corroborating evidence emerges.
@@ -128,7 +128,7 @@ const About: NextPage = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                           Name <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -137,12 +137,12 @@ const About: NextPage = () => {
                           value={formData.name}
                           onChange={set('name')}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                           placeholder="Your name"
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                           Email <span className="text-red-500">*</span>
                         </label>
                         <input
@@ -151,14 +151,14 @@ const About: NextPage = () => {
                           value={formData.email}
                           onChange={set('email')}
                           required
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                           placeholder="Your email"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                         Subject
                       </label>
                       <input
@@ -166,13 +166,13 @@ const About: NextPage = () => {
                         id="subject"
                         value={formData.subject}
                         onChange={set('subject')}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="Message subject"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                         Message <span className="text-red-500">*</span>
                       </label>
                       <textarea
@@ -181,7 +181,7 @@ const About: NextPage = () => {
                         value={formData.message}
                         onChange={set('message')}
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                        className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="Your message"
                       />
                     </div>
@@ -213,17 +213,17 @@ const About: NextPage = () => {
               </section>
             </div>
 
-            <div className="mt-12 pt-6 border-t border-gray-200">
-              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="mt-12 pt-6 border-t border-gray-200 dark:border-gray-700">
+              <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <svg className="h-5 w-5 text-gray-400 dark:text-gray-500" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <h3 className="text-sm font-medium text-gray-700">Disclaimer</h3>
-                    <div className="mt-2 text-sm text-gray-600">
+                    <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">Disclaimer</h3>
+                    <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
                       <p>
                         DECUR presents information for educational and research purposes only. We neither endorse nor dismiss
                         the claims contained within the insider testimony we archive, but rather provide a platform for organized

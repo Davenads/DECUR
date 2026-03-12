@@ -81,7 +81,7 @@ export default function Data({ categoryData, insiders, cases, documents, navItem
             />
           </div>
           <div className="w-full md:w-3/4">
-            <div className="bg-white rounded-lg shadow-md p-6">
+            <div className="bg-white dark:bg-gray-800 dark:shadow-gray-900/50 rounded-lg shadow-md p-6">
               {renderContent()}
             </div>
           </div>

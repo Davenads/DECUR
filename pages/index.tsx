@@ -56,13 +56,13 @@ const Home: CustomNextPage<HomePageProps> = () => {
 
       <div className="space-y-16">
         {/* Hero */}
-        <section className="border-b border-gray-200 pb-16 pt-12">
+        <section className="border-b border-gray-200 dark:border-gray-700 pb-16 pt-12">
           <div className="max-w-5xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
 
               {/* Left: headline */}
               <div className="md:col-span-3">
-                <h1 className="text-4xl md:text-5xl font-bold font-heading text-gray-900 leading-tight mb-6">
+                <h1 className="text-4xl md:text-5xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-tight mb-6">
                   A reference archive for UAP and NHI research
                 </h1>
                 <p className="text-lg text-gray-500 leading-relaxed mb-8">
@@ -71,7 +71,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 </p>
                 <Link
                   href="/data"
-                  className="inline-block px-5 py-2.5 border border-gray-700 text-gray-800 text-sm font-medium rounded-lg hover:bg-gray-800 hover:text-white transition-colors"
+                  className="inline-block px-5 py-2.5 border border-gray-700 dark:border-gray-500 text-gray-800 dark:text-gray-200 text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700 hover:text-white transition-colors"
                 >
                   Explore the Archive →
                 </Link>
@@ -79,19 +79,19 @@ const Home: CustomNextPage<HomePageProps> = () => {
 
               {/* Right: stat block */}
               <div className="hidden md:block md:col-span-2 pt-10">
-                <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                  <div className="px-5 py-4 border-b border-gray-100">
-                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 overflow-hidden">
+                  <div className="px-5 py-4 border-b border-gray-100 dark:border-gray-700">
+                    <p className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest">
                       Archive Contents
                     </p>
                   </div>
-                  <div className="divide-y divide-gray-100">
+                  <div className="divide-y divide-gray-100 dark:divide-gray-700">
                     {ARCHIVE_STATS.map(({ count, label }) => (
                       <div key={label} className="flex items-baseline gap-3 px-5 py-3">
-                        <span className="text-xl font-bold text-gray-900 tabular-nums min-w-[3.5rem] shrink-0 text-right">
+                        <span className="text-xl font-bold text-gray-900 dark:text-gray-100 tabular-nums min-w-[3.5rem] shrink-0 text-right">
                           {count}
                         </span>
-                        <span className="text-xs text-gray-500">{label}</span>
+                        <span className="text-xs text-gray-500 dark:text-gray-400">{label}</span>
                       </div>
                     ))}
                   </div>
@@ -104,13 +104,13 @@ const Home: CustomNextPage<HomePageProps> = () => {
 
         {/* Scope note */}
         <section className="max-w-5xl mx-auto px-4">
-          <div className="bg-white rounded-lg border border-gray-200 px-6 py-5 flex gap-5 items-start">
-            <div className="w-[3px] shrink-0 bg-gray-300 self-stretch rounded-full" />
+          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 px-6 py-5 flex gap-5 items-start">
+            <div className="w-[3px] shrink-0 bg-gray-300 dark:bg-gray-600 self-stretch rounded-full" />
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">
                 Scope &amp; Methodology
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 Source material draws from congressional testimony, document leaks, on-record
                 interviews, and firsthand accounts. DECUR does not adjudicate the truth of any
                 claim; entries are documented with their source, context, and known corroborating
@@ -122,26 +122,26 @@ const Home: CustomNextPage<HomePageProps> = () => {
 
         {/* Categories */}
         <section className="max-w-3xl mx-auto px-4">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">
+          <h2 className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">
             Research Areas
           </h2>
-          <div className="divide-y divide-gray-100">
+          <div className="divide-y divide-gray-100 dark:divide-gray-800">
             {CATEGORIES.map(cat => (
               <Link
                 key={cat.label}
                 href={cat.href}
-                className="group flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8 py-5 hover:bg-gray-50 -mx-3 px-3 rounded-lg transition-colors"
+                className="group flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8 py-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 -mx-3 px-3 rounded-lg transition-colors"
               >
                 <div className="sm:w-44 shrink-0">
-                  <span className="font-semibold text-gray-900 group-hover:text-primary transition-colors text-sm">
+                  <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary dark:group-hover:text-primary-light transition-colors text-sm">
                     {cat.label}
                   </span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm text-gray-600 leading-relaxed mb-1">{cat.description}</p>
-                  <p className="text-xs text-gray-400">{cat.detail}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-1">{cat.description}</p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500">{cat.detail}</p>
                 </div>
-                <div className="hidden sm:flex items-center text-gray-300 group-hover:text-primary transition-colors shrink-0 pt-0.5">
+                <div className="hidden sm:flex items-center text-gray-300 dark:text-gray-600 group-hover:text-primary dark:group-hover:text-primary-light transition-colors shrink-0 pt-0.5">
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -152,11 +152,11 @@ const Home: CustomNextPage<HomePageProps> = () => {
         </section>
 
         {/* Resources footer strip */}
-        <section className="border-t border-gray-200 pt-10 pb-4 max-w-3xl mx-auto px-4">
+        <section className="border-t border-gray-200 dark:border-gray-700 pt-10 pb-4 max-w-3xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <p className="text-sm font-semibold text-gray-700">Source Materials & Glossary</p>
-              <p className="text-xs text-gray-400 mt-0.5">
+              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">Source Materials & Glossary</p>
+              <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">
                 Primary documents, curated source links, and a {(glossaryData as unknown[]).length}-term terminology reference
               </p>
             </div>
