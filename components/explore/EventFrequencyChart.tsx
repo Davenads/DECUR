@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { useRouter } from 'next/router';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from 'recharts';
@@ -22,6 +23,7 @@ const ERA_LABELS: Array<{ label: string; min: number; max: number }> = [
 interface ChartDatum {
   label: string;
   count: number;
+  year: number; // year to navigate to on click
   notable?: boolean; // highlight bars for particularly significant periods
 }
 
@@ -37,6 +39,7 @@ function groupByDecade(entries: TimelineEntry[]): ChartDatum[] {
     .map(([decade, count]) => ({
       label: `${decade}s`,
       count,
+      year: Number(decade),
       notable: NOTABLE.has(Number(decade)),
     }));
 }
@@ -45,6 +48,7 @@ function groupByEra(entries: TimelineEntry[]): ChartDatum[] {
   return ERA_LABELS.map(era => ({
     label: era.label,
     count: entries.filter(e => e.year >= era.min && e.year <= era.max).length,
+    year: era.min === 0 ? 1561 : era.min,
     notable: false,
   }));
 }
@@ -61,14 +65,20 @@ const CustomTooltip: FC<CustomTooltipProps> = ({ active, payload, label }) => {
     <div className="bg-white border border-gray-200 rounded-lg shadow-lg px-3 py-2">
       <p className="text-xs font-semibold text-gray-700">{label}</p>
       <p className="text-sm font-bold text-primary">{payload[0].value} events</p>
+      <p className="text-xs text-gray-400 mt-0.5">Click to view on Timeline</p>
     </div>
   );
 };
 
 const EventFrequencyChart: FC<Props> = ({ entries }) => {
+  const router = useRouter();
   const [groupBy, setGroupBy] = useState<GroupBy>('decade');
   const data = groupBy === 'decade' ? groupByDecade(entries) : groupByEra(entries);
   const maxCount = Math.max(...data.map(d => d.count));
+
+  function handleBarClick(datum: ChartDatum) {
+    router.push(`/timeline?year=${datum.year}`);
+  }
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-6 space-y-4">
@@ -77,7 +87,7 @@ const EventFrequencyChart: FC<Props> = ({ entries }) => {
         <div>
           <h3 className="font-bold text-gray-900 text-lg">Event Frequency</h3>
           <p className="text-sm text-gray-500 mt-0.5">
-            Distribution of {entries.length.toLocaleString()} documented events across time
+            Distribution of {entries.length.toLocaleString()} documented events. Click a bar to view on Timeline.
           </p>
         </div>
         <div className="flex gap-1 bg-gray-100 rounded-lg p-1 shrink-0">
@@ -115,7 +125,14 @@ const EventFrequencyChart: FC<Props> = ({ entries }) => {
               tickLine={false}
             />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(46,92,138,0.06)' }} />
-            <Bar dataKey="count" radius={[4, 4, 0, 0]} maxBarSize={48}>
+            <Bar
+              dataKey="count"
+              radius={[4, 4, 0, 0]}
+              maxBarSize={48}
+              cursor="pointer"
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              onClick={(datum: any) => handleBarClick(datum as ChartDatum)}
+            >
               {data.map((d, i) => (
                 <Cell
                   key={i}
