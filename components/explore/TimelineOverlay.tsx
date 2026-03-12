@@ -260,14 +260,20 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
           <h3 className="font-bold text-gray-900 text-lg">Timeline Overlay</h3>
           <p className="text-sm text-gray-500 mt-0.5">
             {focusEra ? (
-              <span className="inline-flex items-center gap-2">
-                <span>Showing: <span className="font-medium text-primary">{focusEra.label}</span></span>
-                <button
-                  onClick={onClearFocus}
-                  className="text-xs text-gray-400 hover:text-gray-600 underline"
-                >
-                  Clear
-                </button>
+              <span className="inline-flex items-center gap-2 flex-wrap">
+                <span>Filtered to</span>
+                <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-xs font-semibold px-2.5 py-1 rounded-full">
+                  {focusEra.label}
+                  <button
+                    onClick={onClearFocus}
+                    aria-label="Clear era filter"
+                    className="ml-0.5 hover:text-primary-dark transition-colors"
+                  >
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </span>
               </span>
             ) : 'Insider key events mapped against the global UAP event record'}
           </p>

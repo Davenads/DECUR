@@ -8,6 +8,8 @@ import { TimelineEntry } from '../../lib/useTimelineData';
 interface Props {
   entries: TimelineEntry[];
   onSelectEra?: (start: number, end: number) => void;
+  onClearEra?: () => void;
+  activeEraStart?: number | null;
 }
 
 type GroupBy = 'decade' | 'era';
@@ -75,7 +77,7 @@ const CustomTooltip: FC<CustomTooltipProps> = ({ active, payload, label }) => {
   );
 };
 
-const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra }) => {
+const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, activeEraStart }) => {
   const router = useRouter();
   const [groupBy, setGroupBy] = useState<GroupBy>('decade');
   const data = groupBy === 'decade' ? groupByDecade(entries) : groupByEra(entries);
@@ -83,7 +85,12 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra }) => {
 
   function handleBarClick(datum: ChartDatum) {
     if (onSelectEra) {
-      onSelectEra(datum.yearStart, datum.yearEnd);
+      // Toggle: clicking the active bar clears it
+      if (activeEraStart === datum.yearStart && onClearEra) {
+        onClearEra();
+      } else {
+        onSelectEra(datum.yearStart, datum.yearEnd);
+      }
     } else {
       router.push(`/timeline?year=${datum.yearStart}`);
     }
@@ -96,7 +103,9 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra }) => {
         <div>
           <h3 className="font-bold text-gray-900 text-lg">Event Frequency</h3>
           <p className="text-sm text-gray-500 mt-0.5">
-            Distribution of {entries.length.toLocaleString()} documented events. Click a bar to view on Timeline.
+            {activeEraStart != null
+              ? 'Tap the highlighted bar again to deselect'
+              : 'Tap a bar to filter the timeline overlay below'}
           </p>
         </div>
         <div className="flex gap-1 bg-gray-100 rounded-lg p-1 shrink-0">
@@ -142,12 +151,19 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra }) => {
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
               onClick={(datum: any) => handleBarClick(datum as ChartDatum)}
             >
-              {data.map((d, i) => (
-                <Cell
-                  key={i}
-                  fill={d.count === maxCount ? '#2e5c8a' : d.notable ? '#4a7eaa' : '#a8bfd4'}
-                />
-              ))}
+              {data.map((d, i) => {
+                const isActive = activeEraStart === d.yearStart;
+                const baseColor = d.count === maxCount ? '#2e5c8a' : d.notable ? '#4a7eaa' : '#a8bfd4';
+                return (
+                  <Cell
+                    key={i}
+                    fill={isActive ? '#1e3f62' : baseColor}
+                    stroke={isActive ? '#1e3f62' : 'none'}
+                    strokeWidth={isActive ? 2 : 0}
+                    opacity={activeEraStart != null && !isActive ? 0.4 : 1}
+                  />
+                );
+              })}
             </Bar>
           </BarChart>
         </ResponsiveContainer>

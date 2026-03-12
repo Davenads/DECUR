@@ -55,7 +55,12 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
 
         {/* Event Frequency Chart */}
         <section>
-          <EventFrequencyChart entries={entries} onSelectEra={handleSelectEra} />
+          <EventFrequencyChart
+            entries={entries}
+            onSelectEra={handleSelectEra}
+            onClearEra={() => setFocusEra(null)}
+            activeEraStart={focusEra?.start ?? null}
+          />
         </section>
 
         {/* Timeline Overlay */}
