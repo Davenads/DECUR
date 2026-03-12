@@ -25,8 +25,8 @@ const navItems: NavItems = {
     title: 'Resources',
     path: '/resources',
     items: [
-      { title: 'Primary Materials', path: '/resources?tab=materials' },
-      { title: 'Transcripts', path: '/resources?tab=transcripts' },
+      { title: 'Primary Sources', path: '/resources?tab=sources' },
+      { title: 'Testimony & Interviews', path: '/resources?tab=testimony' },
       { title: 'Glossary', path: '/resources?tab=glossary' },
     ],
   },

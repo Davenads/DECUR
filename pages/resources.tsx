@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import SeoHead from '../components/SeoHead';
 import ResourceList from '../components/resources/ResourceList';
 import Glossary from '../components/resources/Glossary';
@@ -26,7 +27,15 @@ interface ResourcesProps {
 }
 
 const Resources: NextPage<ResourcesProps> = ({ glossaryTerms, resourcesData }) => {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState<TabType>('sources');
+
+  useEffect(() => {
+    const { tab } = router.query;
+    if (tab === 'sources' || tab === 'testimony' || tab === 'glossary') {
+      setActiveTab(tab);
+    }
+  }, [router.query]);
 
   return (
     <>
