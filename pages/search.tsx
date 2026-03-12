@@ -7,12 +7,13 @@ import Fuse, { FuseResult } from 'fuse.js';
 import insidersData from '../data/insiders/index.json';
 import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
+import casesData from '../data/cases.json';
 
 // ---- Types ----------------------------------------------------------------
 
 interface SearchItem {
   id: string;
-  type: 'insider' | 'timeline' | 'glossary' | 'resource';
+  type: 'insider' | 'case' | 'timeline' | 'glossary' | 'resource';
   title: string;
   subtitle?: string | null;
   description: string;
@@ -52,6 +53,22 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
         description: ins.summary ?? ins.tags?.join(', ') ?? '',
         href: `/figures/${ins.id}`,
         badge: 'Key Figure',
+      });
+    }
+
+    // Documented Cases
+    for (const c of casesData as Array<{
+      id: string; name: string; date: string; location: string;
+      summary: string; tags: string[];
+    }>) {
+      corpus.push({
+        id: `case-${c.id}`,
+        type: 'case',
+        title: c.name,
+        subtitle: `${c.date} · ${c.location}`,
+        description: c.summary,
+        href: `/cases/${c.id}`,
+        badge: 'Documented Case',
       });
     }
 
@@ -110,6 +127,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
 
 const TYPE_STYLES: Record<SearchItem['type'], string> = {
   insider:  'bg-blue-100 text-blue-700',
+  case:     'bg-red-100 text-red-700',
   timeline: 'bg-amber-100 text-amber-700',
   glossary: 'bg-indigo-100 text-indigo-700',
   resource: 'bg-emerald-100 text-emerald-700',
@@ -117,6 +135,7 @@ const TYPE_STYLES: Record<SearchItem['type'], string> = {
 
 const TYPE_LABELS: Record<SearchItem['type'], string> = {
   insider:  'Key Figures',
+  case:     'Documented Cases',
   timeline: 'Timeline Events',
   glossary: 'Glossary',
   resource: 'Resources',
@@ -177,7 +196,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
     },
     {}
   );
-  const typeOrder: SearchItem['type'][] = ['insider', 'timeline', 'glossary', 'resource'];
+  const typeOrder: SearchItem['type'][] = ['insider', 'case', 'timeline', 'glossary', 'resource'];
 
   return (
     <>
