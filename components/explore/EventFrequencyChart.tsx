@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from 'recharts';
@@ -69,16 +70,18 @@ interface CustomTooltipProps {
 const CustomTooltip: FC<CustomTooltipProps> = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null;
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-lg px-3 py-2">
-      <p className="text-xs font-semibold text-gray-700">{label}</p>
+    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg px-3 py-2">
+      <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">{label}</p>
       <p className="text-sm font-bold text-primary">{payload[0].value} events</p>
-      <p className="text-xs text-gray-400 mt-0.5">Click to view on Timeline</p>
+      <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">Click to view on Timeline</p>
     </div>
   );
 };
 
 const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, activeEraStart }) => {
   const router = useRouter();
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
   const [groupBy, setGroupBy] = useState<GroupBy>('decade');
   const data = groupBy === 'decade' ? groupByDecade(entries) : groupByEra(entries);
   const maxCount = Math.max(...data.map(d => d.count));
@@ -97,26 +100,26 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-6 space-y-4">
+    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 space-y-4">
       {/* Header */}
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <h3 className="font-bold text-gray-900 text-lg">Event Frequency</h3>
-          <p className="text-sm text-gray-500 mt-0.5">
+          <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Event Frequency</h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
             {activeEraStart != null
               ? 'Tap the highlighted bar again to deselect'
               : 'Tap a bar to filter the timeline overlay below'}
           </p>
         </div>
-        <div className="flex gap-1 bg-gray-100 rounded-lg p-1 shrink-0">
+        <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1 shrink-0">
           {(['decade', 'era'] as GroupBy[]).map(g => (
             <button
               key={g}
               onClick={() => setGroupBy(g)}
               className={`text-xs px-3 py-1 rounded-md font-medium transition-colors capitalize ${
                 groupBy === g
-                  ? 'bg-white text-primary shadow-sm'
-                  : 'text-gray-500 hover:text-gray-700'
+                  ? 'bg-white dark:bg-gray-600 text-primary shadow-sm'
+                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
               }`}
             >
               {g}
@@ -129,7 +132,7 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
       <div className="h-72">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} margin={{ top: 4, right: 4, left: -16, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
+            <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#f0f0f0'} vertical={false} />
             <XAxis
               dataKey="label"
               tick={{ fontSize: 11, fill: '#9ca3af' }}
@@ -170,7 +173,7 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
       </div>
 
       {/* Legend note */}
-      <div className="flex gap-4 text-xs text-gray-400 flex-wrap">
+      <div className="flex gap-4 text-xs text-gray-400 dark:text-gray-500 flex-wrap">
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-sm bg-[#2e5c8a] inline-block" />
           Peak period

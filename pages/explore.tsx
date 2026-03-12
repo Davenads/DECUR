@@ -46,8 +46,8 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
 
         {/* Page header */}
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Explore</h1>
-          <p className="text-gray-500 max-w-2xl">
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Explore</h1>
+          <p className="text-gray-500 dark:text-gray-400 max-w-2xl">
             Interactive visualizations across the full DECUR dataset. Identify patterns,
             connections, and trends that span individual case files and historical records.
           </p>

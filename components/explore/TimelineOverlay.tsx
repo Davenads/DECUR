@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { useTheme } from 'next-themes';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, ScatterChart, Scatter, Cell,
@@ -96,10 +97,10 @@ const BarTooltip: FC<RechartsTooltipProps> = ({ active, payload }) => {
   const d = payload[0].payload;
   const sourcesWithEvents = Object.entries(d.eventsBySource).filter(([, evts]) => evts.length > 0);
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-xs">
-      <p className="text-xs font-bold text-gray-700 mb-1">{d.year}</p>
+    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-w-xs">
+      <p className="text-xs font-bold text-gray-700 dark:text-gray-300 mb-1">{d.year}</p>
       {d.uap > 0 && (
-        <p className="text-xs text-gray-500 mb-1">{d.uap} UAP events documented</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{d.uap} UAP events documented</p>
       )}
       {sourcesWithEvents.map(([source, evts]) => (
         <div key={source} className="mt-1.5 space-y-0.5">
@@ -107,7 +108,7 @@ const BarTooltip: FC<RechartsTooltipProps> = ({ active, payload }) => {
             {getSourceLabel(source)}:
           </p>
           {evts.map((e, i) => (
-            <p key={i} className="text-xs text-gray-600 pl-2 leading-tight">· {e.event}</p>
+            <p key={i} className="text-xs text-gray-600 dark:text-gray-400 pl-2 leading-tight">· {e.event}</p>
           ))}
         </div>
       ))}
@@ -146,16 +147,16 @@ const SwimlaneTooltip: FC<SwimlaneTooltipProps> = ({ active, payload }) => {
   const d = payload[0].payload;
   const color = getSourceColor(d.source);
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-xs">
+    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-w-xs">
       <div className="flex items-center gap-1.5 mb-1">
         <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: color }} />
         <p className="text-xs font-bold" style={{ color }}>
           {getSourceLabel(d.source)} · {d.x}
         </p>
       </div>
-      <p className="text-xs text-gray-600 leading-tight">{d.event}</p>
+      <p className="text-xs text-gray-600 dark:text-gray-400 leading-tight">{d.event}</p>
       {d.category && (
-        <p className="text-xs text-gray-400 mt-0.5 capitalize">{d.category.replace(/-/g, ' ')}</p>
+        <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5 capitalize">{d.category.replace(/-/g, ' ')}</p>
       )}
     </div>
   );
@@ -167,6 +168,8 @@ const YEAR_START = 1985;
 const YEAR_END   = 2025;
 
 const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onClearFocus }) => {
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
   const [showAllYears, setShowAllYears] = useState(false);
   const [enabledSources, setEnabledSources] = useState<Set<string> | null>(null);
 
@@ -253,12 +256,12 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
   const yDomainMax = Math.max(swimlaneCount - 1, 1);
 
   return (
-    <div className="bg-white border border-gray-200 rounded-xl p-6 space-y-4">
+    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 space-y-4">
       {/* Header */}
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <h3 className="font-bold text-gray-900 text-lg">Timeline Overlay</h3>
-          <p className="text-sm text-gray-500 mt-0.5">
+          <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Timeline Overlay</h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
             {focusEra ? (
               <span className="inline-flex items-center gap-2 flex-wrap">
                 <span>Filtered to</span>
@@ -284,7 +287,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
             className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-colors border ${
               showAllYears
                 ? 'bg-primary text-white border-primary'
-                : 'bg-white text-gray-500 border-gray-200 hover:border-gray-300'
+                : 'bg-white dark:bg-gray-700 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500'
             }`}
           >
             {showAllYears ? 'Modern era (1985+)' : 'Show from 1947'}
@@ -293,9 +296,9 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
       </div>
 
       {/* Source filter */}
-      <div className="border border-gray-100 rounded-lg p-3 space-y-2">
+      <div className="border border-gray-100 dark:border-gray-800 rounded-lg p-3 space-y-2">
         <div className="flex items-center justify-between gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wide text-gray-400">Filter Sources</span>
+          <span className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500">Filter Sources</span>
           <div className="flex gap-2">
             <button
               onClick={selectAll}
@@ -304,10 +307,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
             >
               All
             </button>
-            <span className="text-xs text-gray-300">|</span>
+            <span className="text-xs text-gray-300 dark:text-gray-600">|</span>
             <button
               onClick={clearAll}
-              className="text-xs text-gray-400 hover:text-gray-600 hover:underline"
+              className="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 hover:underline"
             >
               Clear
             </button>
@@ -329,7 +332,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
                   backgroundColor: `${color}18`,
                   color,
                 } : {
-                  borderColor: '#e5e7eb',
+                  borderColor: isDark ? '#374151' : '#e5e7eb',
                   backgroundColor: 'transparent',
                   color: '#9ca3af',
                 }}
@@ -343,11 +346,11 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
 
       {/* UAP frequency bar chart */}
       <div>
-        <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide font-medium">UAP Events / Year</p>
+        <p className="text-xs text-gray-400 dark:text-gray-500 mb-1 uppercase tracking-wide font-medium">UAP Events / Year</p>
         <div style={{ height: 180 }}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={barData} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
+              <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#f0f0f0'} vertical={false} />
               <XAxis
                 dataKey="year"
                 type="number"
@@ -377,7 +380,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
 
       {/* Swimlane scatter panel */}
       <div>
-        <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide font-medium">Insider Events</p>
+        <p className="text-xs text-gray-400 dark:text-gray-500 mb-1 uppercase tracking-wide font-medium">Insider Events</p>
         <div style={{ height: swimlaneHeight }} className="flex items-stretch">
           {/* Row labels */}
           <div className="flex flex-col justify-around shrink-0 pr-2" style={{ width: 72 }}>
@@ -395,7 +398,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
           <div style={{ flex: 1, height: swimlaneHeight }}>
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 8, right: 4, left: 0, bottom: 8 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
+                <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#f0f0f0'} horizontal={false} />
                 <XAxis
                   dataKey="x"
                   type="number"
@@ -427,7 +430,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
       </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap gap-4 text-xs text-gray-400 pt-1 border-t border-gray-100">
+      <div className="flex flex-wrap gap-4 text-xs text-gray-400 dark:text-gray-500 pt-1 border-t border-gray-100 dark:border-gray-800">
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-sm bg-[#0077cc] inline-block" />
           UAP events in an insider-active year
