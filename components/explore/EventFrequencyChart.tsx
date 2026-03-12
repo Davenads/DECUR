@@ -114,12 +114,12 @@ const EventFrequencyChart: FC<Props> = ({ entries }) => {
               axisLine={false}
               tickLine={false}
             />
-            <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(0,119,204,0.06)' }} />
+            <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(46,92,138,0.06)' }} />
             <Bar dataKey="count" radius={[4, 4, 0, 0]} maxBarSize={48}>
               {data.map((d, i) => (
                 <Cell
                   key={i}
-                  fill={d.count === maxCount ? '#0077cc' : d.notable ? '#3b9fe0' : '#93c5e8'}
+                  fill={d.count === maxCount ? '#2e5c8a' : d.notable ? '#4a7eaa' : '#a8bfd4'}
                 />
               ))}
             </Bar>
@@ -130,11 +130,11 @@ const EventFrequencyChart: FC<Props> = ({ entries }) => {
       {/* Legend note */}
       <div className="flex gap-4 text-xs text-gray-400 flex-wrap">
         <span className="flex items-center gap-1.5">
-          <span className="w-2.5 h-2.5 rounded-sm bg-[#0077cc] inline-block" />
+          <span className="w-2.5 h-2.5 rounded-sm bg-[#2e5c8a] inline-block" />
           Peak period
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="w-2.5 h-2.5 rounded-sm bg-[#93c5e8] inline-block" />
+          <span className="w-2.5 h-2.5 rounded-sm bg-[#a8bfd4] inline-block" />
           Other periods
         </span>
       </div>
