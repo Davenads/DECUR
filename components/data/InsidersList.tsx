@@ -1,83 +1,12 @@
-import { FC, useState } from 'react';
+import Link from 'next/link';
+import { FC } from 'react';
 import { InsiderEntry } from '../../types/data';
-import InsiderProfile from './InsiderProfile';
-import LazarProfile from './LazarProfile';
-import GruschProfile from './GruschProfile';
-import ElizondoProfile from './ElizondoProfile';
-import FravorProfile from './FravorProfile';
-import NellProfile from './NellProfile';
-import NolanProfile from './NolanProfile';
-import PuthoffProfile from './PuthoffProfile';
-import MellonProfile from './MellonProfile';
-import DavisProfile from './DavisProfile';
-import BigelowProfile from './BigelowProfile';
-import ValleeProfile from './ValleeProfile';
-import PopeProfile from './PopeProfile';
-import BarberProfile from './BarberProfile';
-import GallaudetProfile from './GallaudetProfile';
-import GenericInsiderProfile from './insiders/GenericInsiderProfile';
 
 interface InsidersListProps {
   entries: InsiderEntry[];
 }
 
 const InsidersList: FC<InsidersListProps> = ({ entries }) => {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
-
-  const selectedEntry = entries.find(e => e.id === selectedId) ?? null;
-  const onBack = () => setSelectedId(null);
-
-  if (selectedEntry?.status === 'detailed') {
-    if (selectedEntry.id === 'bob-lazar') {
-      return <LazarProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'david-grusch') {
-      return <GruschProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'luis-elizondo') {
-      return <ElizondoProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'david-fravor') {
-      return <FravorProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'hal-puthoff') {
-      return <PuthoffProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'garry-nolan') {
-      return <NolanProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'karl-nell') {
-      return <NellProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'chris-mellon') {
-      return <MellonProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'eric-davis') {
-      return <DavisProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'robert-bigelow') {
-      return <BigelowProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'jacques-vallee') {
-      return <ValleeProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'nick-pope') {
-      return <PopeProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'jake-barber') {
-      return <BarberProfile onBack={onBack} />;
-    }
-    if (selectedEntry.id === 'tim-gallaudet') {
-      return <GallaudetProfile onBack={onBack} />;
-    }
-    return (
-      <GenericInsiderProfile
-        id={selectedEntry.id}
-        onBack={onBack}
-      />
-    );
-  }
-
   return (
     <div>
       <div className="mb-6">
@@ -93,7 +22,7 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
             key={entry.id}
             className="border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
           >
-            {/* Name row + button — only these two compete for width */}
+            {/* Name row + button */}
             <div className="flex items-start justify-between gap-3 mb-2">
               <div className="flex items-center gap-2 flex-wrap">
                 <h3 className="text-lg font-semibold text-gray-900">{entry.name}</h3>
@@ -110,12 +39,12 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
               </div>
               <div className="flex-shrink-0">
                 {entry.status === 'detailed' ? (
-                  <button
-                    onClick={() => setSelectedId(entry.id)}
+                  <Link
+                    href={`/figures/${entry.id}`}
                     className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap"
                   >
                     View Case File
-                  </button>
+                  </Link>
                 ) : (
                   <span className="px-4 py-2 text-sm font-medium text-gray-400 bg-gray-100 rounded-lg whitespace-nowrap cursor-not-allowed">
                     Coming Soon
