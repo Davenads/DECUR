@@ -12,28 +12,28 @@ const CATEGORIES = [
     href: '/data?category=key-figures',
     description:
       'Firsthand accounts from military personnel, intelligence officers, government officials, journalists, and scientists who have disclosed involvement in UAP research.',
-    detail: 'Dan Burisch · Bob Lazar · David Grusch · George Knapp',
+    detail: 'Dan Burisch · David Grusch · Luis Elizondo · Ryan Graves · 27 profiles',
   },
   {
-    label: 'Non-Human Intelligence',
+    label: 'Documented Cases',
     href: '/data?category=cases',
     description:
-      'Documented biological, behavioral, and physiological data on reported non-human entities, drawn from testimony and alleged research records.',
-    detail: 'P-45 · P-52 · J-Rod neuropathology · Orion classification',
+      'The strongest credible UAP incidents in the public record, assessed by evidence quality, witness credentials, and official documentation.',
+    detail: 'USS Nimitz · Rendlesham Forest · USS Roosevelt · 9 cases assessed',
   },
   {
-    label: 'Technologies & Programs',
+    label: 'Declassified Documents',
     href: '/data?category=documents',
     description:
-      'Accounts of recovered, observed, or reverse-engineered exotic technologies, and the classified programs associated with their study.',
-    detail: 'AATIP · AAWSAP · Looking Glass · S-4 facility',
+      'Primary source government records including intelligence assessments, program reports, and declassified memos directly relevant to UAP research.',
+    detail: 'Wilson-Davis Memo · UAPTF Assessment · AARO Historical Record',
   },
   {
-    label: 'Timeline & Concepts',
+    label: 'Historical Timeline',
     href: '/explore',
     description:
-      'A structured chronology of UAP events spanning eight decades, from early government documentation through modern congressional disclosure, alongside key theoretical frameworks and program histories.',
-    detail: 'Nimitz incident · AATIP / AAWSAP · Grusch testimony · Majestic-12',
+      'An interactive chronology of UAP events spanning eight decades, cross-referenced with key figure disclosures, program histories, and congressional actions.',
+    detail: 'Nimitz incident · AATIP / AAWSAP · Grusch testimony · 2023 hearings',
   },
 ];
 
