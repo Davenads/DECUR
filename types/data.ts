@@ -445,6 +445,7 @@ export interface CaseEntry {
   country: string;
   category: string;
   evidence_tier: EvidenceTier;
+  coordinates?: { lat: number; lng: number };
   classification_status: ClassificationStatus;
   summary: string;
   tags: string[];

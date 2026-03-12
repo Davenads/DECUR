@@ -1,7 +1,13 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { CaseEntry, EvidenceTier } from '../../types/data';
 import CaseDetail, { tierConfig } from './CaseDetail';
+
+// SSR-safe: react-simple-maps uses browser APIs
+const CasesMap = dynamic(() => import('./CasesMap'), { ssr: false });
+
+type ViewMode = 'list' | 'map';
 
 /* ─── Cases list view ──────────────────────────────────────────── */
 
@@ -11,6 +17,7 @@ interface CasesListProps {
 
 const CasesList: FC<CasesListProps> = ({ cases }) => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState<ViewMode>('list');
 
   const selected = cases.find(c => c.id === selectedId) ?? null;
 
@@ -20,21 +27,55 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
 
   return (
     <div>
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Documented Cases</h2>
-        <p className="text-sm text-gray-500">
-          The strongest credible UAP incidents in the public record, assessed by evidence quality and official documentation.
-        </p>
+      <div className="mb-6 flex items-start justify-between gap-4 flex-wrap">
+        <div>
+          <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Documented Cases</h2>
+          <p className="text-sm text-gray-500">
+            The strongest credible UAP incidents in the public record, assessed by evidence quality and official documentation.
+          </p>
+        </div>
+        {/* View toggle */}
+        <div className="flex gap-1 bg-gray-100 rounded-lg p-1 shrink-0">
+          {(['list', 'map'] as ViewMode[]).map(mode => (
+            <button
+              key={mode}
+              onClick={() => setViewMode(mode)}
+              className={`text-xs px-3 py-1 rounded-md font-medium transition-colors capitalize flex items-center gap-1.5 ${
+                viewMode === mode ? 'bg-white text-primary shadow-sm' : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              {mode === 'list' ? (
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+              ) : (
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
+              {mode}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Tier legend */}
-      <div className="flex flex-wrap gap-3 mb-6 p-3 bg-gray-50 rounded-lg">
-        {(Object.keys(tierConfig) as EvidenceTier[]).map(tier => (
-          <span key={tier} className={`text-xs px-2 py-0.5 rounded-full font-medium ${tierConfig[tier].classes}`}>
-            {tierConfig[tier].label}
-          </span>
-        ))}
-      </div>
+      {/* Map view */}
+      {viewMode === 'map' && (
+        <div className="mb-6">
+          <CasesMap cases={cases} onSelectCase={(id) => setSelectedId(id)} />
+        </div>
+      )}
+
+      {/* Tier legend (list only) */}
+      {viewMode === 'list' && (
+        <div className="flex flex-wrap gap-3 mb-6 p-3 bg-gray-50 rounded-lg">
+          {(Object.keys(tierConfig) as EvidenceTier[]).map(tier => (
+            <span key={tier} className={`text-xs px-2 py-0.5 rounded-full font-medium ${tierConfig[tier].classes}`}>
+              {tierConfig[tier].label}
+            </span>
+          ))}
+        </div>
+      )}
 
       <div className="grid gap-4">
         {cases.map(c => {
