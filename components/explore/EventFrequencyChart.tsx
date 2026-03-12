@@ -7,6 +7,7 @@ import { TimelineEntry } from '../../lib/useTimelineData';
 
 interface Props {
   entries: TimelineEntry[];
+  onSelectEra?: (start: number, end: number) => void;
 }
 
 type GroupBy = 'decade' | 'era';
@@ -23,7 +24,8 @@ const ERA_LABELS: Array<{ label: string; min: number; max: number }> = [
 interface ChartDatum {
   label: string;
   count: number;
-  year: number; // year to navigate to on click
+  yearStart: number; // era/decade start year
+  yearEnd: number;   // era/decade end year
   notable?: boolean; // highlight bars for particularly significant periods
 }
 
@@ -39,16 +41,19 @@ function groupByDecade(entries: TimelineEntry[]): ChartDatum[] {
     .map(([decade, count]) => ({
       label: `${decade}s`,
       count,
-      year: Number(decade),
+      yearStart: Number(decade),
+      yearEnd: Number(decade) + 9,
       notable: NOTABLE.has(Number(decade)),
     }));
 }
 
 function groupByEra(entries: TimelineEntry[]): ChartDatum[] {
+  const currentYear = new Date().getFullYear();
   return ERA_LABELS.map(era => ({
     label: era.label,
     count: entries.filter(e => e.year >= era.min && e.year <= era.max).length,
-    year: era.min === 0 ? 1561 : era.min,
+    yearStart: era.min === 0 ? 1561 : era.min,
+    yearEnd: era.max === 9999 ? currentYear : era.max,
     notable: false,
   }));
 }
@@ -70,14 +75,18 @@ const CustomTooltip: FC<CustomTooltipProps> = ({ active, payload, label }) => {
   );
 };
 
-const EventFrequencyChart: FC<Props> = ({ entries }) => {
+const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra }) => {
   const router = useRouter();
   const [groupBy, setGroupBy] = useState<GroupBy>('decade');
   const data = groupBy === 'decade' ? groupByDecade(entries) : groupByEra(entries);
   const maxCount = Math.max(...data.map(d => d.count));
 
   function handleBarClick(datum: ChartDatum) {
-    router.push(`/timeline?year=${datum.year}`);
+    if (onSelectEra) {
+      onSelectEra(datum.yearStart, datum.yearEnd);
+    } else {
+      router.push(`/timeline?year=${datum.yearStart}`);
+    }
   }
 
   return (

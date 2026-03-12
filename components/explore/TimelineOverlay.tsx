@@ -17,6 +17,8 @@ export interface WBEvent {
 interface Props {
   uapEntries: TimelineEntry[];
   insiderEvents: WBEvent[];
+  focusEra?: { start: number; end: number; label: string } | null;
+  onClearFocus?: () => void;
 }
 
 /* ─── Source config ───────────────────────────────────────────
@@ -164,12 +166,13 @@ const SwimlaneTooltip: FC<SwimlaneTooltipProps> = ({ active, payload }) => {
 const YEAR_START = 1985;
 const YEAR_END   = 2025;
 
-const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
+const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onClearFocus }) => {
   const [showAllYears, setShowAllYears] = useState(false);
   const [enabledSources, setEnabledSources] = useState<Set<string> | null>(null);
 
-  const yearStart = showAllYears ? 1947 : YEAR_START;
-  const yearEnd   = YEAR_END;
+  // focusEra overrides the year range when set
+  const yearStart = focusEra ? focusEra.start : (showAllYears ? 1947 : YEAR_START);
+  const yearEnd   = focusEra ? focusEra.end : YEAR_END;
 
   // Derive sorted list of sources present in the data, preserving SOURCE_CONFIG order
   const configOrder = Object.keys(SOURCE_CONFIG);
@@ -256,19 +259,31 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents }) => {
         <div>
           <h3 className="font-bold text-gray-900 text-lg">Timeline Overlay</h3>
           <p className="text-sm text-gray-500 mt-0.5">
-            Insider key events mapped against the global UAP event record
+            {focusEra ? (
+              <span className="inline-flex items-center gap-2">
+                <span>Showing: <span className="font-medium text-primary">{focusEra.label}</span></span>
+                <button
+                  onClick={onClearFocus}
+                  className="text-xs text-gray-400 hover:text-gray-600 underline"
+                >
+                  Clear
+                </button>
+              </span>
+            ) : 'Insider key events mapped against the global UAP event record'}
           </p>
         </div>
-        <button
-          onClick={() => setShowAllYears(v => !v)}
-          className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-colors border ${
-            showAllYears
-              ? 'bg-primary text-white border-primary'
-              : 'bg-white text-gray-500 border-gray-200 hover:border-gray-300'
-          }`}
-        >
-          {showAllYears ? 'Modern era (1985+)' : 'Show from 1947'}
-        </button>
+        {!focusEra && (
+          <button
+            onClick={() => setShowAllYears(v => !v)}
+            className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-colors border ${
+              showAllYears
+                ? 'bg-primary text-white border-primary'
+                : 'bg-white text-gray-500 border-gray-200 hover:border-gray-300'
+            }`}
+          >
+            {showAllYears ? 'Modern era (1985+)' : 'Show from 1947'}
+          </button>
+        )}
       </div>
 
       {/* Source filter */}

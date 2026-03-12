@@ -1,4 +1,5 @@
 import type { NextPage, GetStaticProps } from 'next';
+import { useState, useRef } from 'react';
 import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
@@ -12,7 +13,27 @@ interface Props {
   insiderEvents: WBEvent[];
 }
 
+interface FocusEra {
+  start: number;
+  end: number;
+  label: string;
+}
+
 const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
+  const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
+  const overlayRef = useRef<HTMLElement>(null);
+
+  function handleSelectEra(start: number, end: number) {
+    const label = start === end - 9
+      ? `${start}s`
+      : `${start}-${end}`;
+    setFocusEra({ start, end, label });
+    // Scroll to overlay
+    setTimeout(() => {
+      overlayRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  }
+
   return (
     <>
       <SeoHead
@@ -34,12 +55,17 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
 
         {/* Event Frequency Chart */}
         <section>
-          <EventFrequencyChart entries={entries} />
+          <EventFrequencyChart entries={entries} onSelectEra={handleSelectEra} />
         </section>
 
         {/* Timeline Overlay */}
-        <section>
-          <TimelineOverlay uapEntries={entries} insiderEvents={insiderEvents} />
+        <section ref={overlayRef}>
+          <TimelineOverlay
+            uapEntries={entries}
+            insiderEvents={insiderEvents}
+            focusEra={focusEra}
+            onClearFocus={() => setFocusEra(null)}
+          />
         </section>
 
         {/* Relationship Network Graph */}
