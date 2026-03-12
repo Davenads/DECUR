@@ -1,6 +1,8 @@
 import { FC, useState } from 'react';
+import Link from 'next/link';
 import ProfileShell from '../shared/ProfileShell';
 import { insiderRegistry } from '../../../data/insiders/registry';
+import casesData from '../../../data/cases.json';
 
 interface GenericInsiderProfileProps {
   id: string;
@@ -94,7 +96,7 @@ function detectFeature(data: Record<string, any>): { key: string; label: string 
 
 // --- Section renderers ---
 
-const OverviewTab: FC<{ profile: ProfileData }> = ({ profile }) => (
+const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; name: string; date: string; location: string; evidence_tier: string }> }> = ({ profile, relatedCases }) => (
   <div className="space-y-6">
     <div className="bg-gray-50 rounded-lg p-4 space-y-3">
       {profile.born && (
@@ -180,6 +182,29 @@ const OverviewTab: FC<{ profile: ProfileData }> = ({ profile }) => (
             </li>
           ))}
         </ul>
+      </div>
+    )}
+
+    {relatedCases.length > 0 && (
+      <div>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Related Documented Cases</h3>
+        <div className="space-y-2">
+          {relatedCases.map(c => (
+            <Link
+              key={c.id}
+              href={`/cases/${c.id}`}
+              className="flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+            >
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors truncate">{c.name}</p>
+                <p className="text-xs text-gray-400 mt-0.5">{c.date} · {c.location}</p>
+              </div>
+              <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          ))}
+        </div>
       </div>
     )}
   </div>
@@ -343,6 +368,11 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) =
   const keyEvents: KeyEvent[] = profile.key_events ?? [];
   const feature = detectFeature(data);
 
+  const relatedCases = (casesData as Array<{
+    id: string; name: string; date: string; location: string;
+    evidence_tier: string; insider_connections: string[];
+  }>).filter(c => c.insider_connections.includes(id));
+
   const TABS: Array<{ id: TabId; label: string }> = [
     { id: 'overview', label: 'Overview' },
     ...(keyEvents.length > 0 ? [{ id: 'timeline' as TabId, label: 'Timeline' }] : []),
@@ -357,7 +387,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) =
   const renderTab = () => {
     switch (activeTab) {
       case 'overview':
-        return <OverviewTab profile={profile} />;
+        return <OverviewTab profile={profile} relatedCases={relatedCases} />;
       case 'timeline':
         return <TimelineTab events={keyEvents} />;
       case 'feature':

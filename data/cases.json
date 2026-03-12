@@ -323,7 +323,7 @@
     "classification_status": "unresolved",
     "summary": "Over five months, thousands of Belgian civilians and police officers reported large triangular objects with three white lights and a central red light flying silently over Belgium. The Belgian Air Force (BAF) scrambled F-16 fighter jets on March 30-31, 1990 and achieved radar lock on an object that demonstrated apparent accelerations exceeding 40G — beyond any human-survivable limit. General Wilfried De Brouwer subsequently held a press conference publicly acknowledging the objects and stating they could not be identified. The BAF investigation is the most transparent official military UAP investigation ever conducted by any government.",
     "tags": ["military", "radar-confirmed", "mass-witness", "NATO", "government-acknowledged", "Belgium"],
-    "insider_connections": [],
+    "insider_connections": ["jacques-vallee"],
     "overview": {
       "key_facts": [
         "The wave began November 29, 1989 near Eupen and continued through April 1990",
@@ -499,7 +499,7 @@
     "classification_status": "unresolved",
     "summary": "Japan Air Lines Boeing 747 freighter flight 1628, commanded by Captain Kenju Terauchi, encountered two small objects and then a massive craft over Alaska during a cargo flight from Paris to Tokyo. The FAA confirmed simultaneous radar tracking from both the aircraft and an Air Route Traffic Control Center. Terauchi described the large craft as twice the size of an aircraft carrier. The FAA's investigation was suppressed by internal pressure according to FAA official John Callahan, who later became a Disclosure Project witness. The incident is considered one of the most credible commercial aviation UAP encounters on record.",
     "tags": ["commercial-aviation", "FAA-confirmed", "radar-confirmed", "pilot-testimony", "Japan", "Alaska"],
-    "insider_connections": [],
+    "insider_connections": ["richard-dolan"],
     "overview": {
       "key_facts": [
         "Date: November 17, 1986, approximately 5:11 PM local Alaskan time",
@@ -588,7 +588,7 @@
     "classification_status": "officially-closed",
     "summary": "In early July 1947, rancher Mac Brazel discovered a debris field on the Foster Ranch northwest of Roswell, NM. He reported it to Chaves County Sheriff George Wilcox, who contacted Roswell Army Air Field. Major Jesse Marcel, Intelligence Officer of the 509th Bomb Group, was dispatched to investigate. RAAF Public Information Officer Walter Haut issued a press release on July 8 announcing recovery of a 'flying disc' under orders from base commander Colonel William Blanchard. Hours later, Brigadier General Roger Ramey held a press conference in Fort Worth retracting the claim, identifying the debris as a weather balloon and radar reflector. The USAF issued two subsequent reports — in 1994 identifying the debris as likely from classified Project Mogul balloon arrays, and in 1997 attributing alleged 'body' accounts to anthropomorphic test dummies used in 1950s parachute experiments. A 1995 GAO investigation found that RAAF administrative records and outgoing messages from 1945–1949 had been destroyed under undocumented authority.",
     "tags": ["crash-recovery", "military", "USAF", "press-release", "FOIA", "GAO-investigation", "Project-Mogul"],
-    "insider_connections": [],
+    "insider_connections": ["dan-burisch"],
     "overview": {
       "key_facts": [
         "June 14, 1947: Mac Brazel first observed unusual debris on the Foster Ranch while riding with his son Vernon",
@@ -795,7 +795,7 @@
     "classification_status": "unresolved",
     "summary": "On December 9, 1965 at approximately 4:45 PM EST, a large fireball observed across six US states and Canada came down near the village of Kecksburg, Pennsylvania. Volunteer firefighter Jim Romansky, dispatched to investigate a possible downed aircraft, reported approaching an acorn-shaped bronze metallic object bearing hieroglyphic-like markings in a wooded ravine. Military personnel arrived and cordoned off the area; witnesses reported an object was loaded onto a flatbed truck and removed under military escort. WHJB radio news director John Murphy, the first journalist on scene, later had his film and audio tapes confiscated. Murphy subsequently produced only a sanitized version of his radio documentary before dying in 1969. Project Blue Book classified the event as a meteor bolide. In 2003, journalist Leslie Kean filed a federal FOIA lawsuit against NASA (Kean v. NASA, 480 F. Supp. 2d 150), settled in 2007; NASA produced hundreds of documents but acknowledged that key 1987 analysis records had been lost.",
     "tags": ["crash-recovery", "FOIA", "Project-Blue-Book", "physical-evidence", "Pennsylvania", "NASA"],
-    "insider_connections": [],
+    "insider_connections": ["leslie-kean"],
     "overview": {
       "key_facts": [
         "December 9, 1965, approximately 4:43 PM EST: a large fireball was observed across Ontario, Michigan, Ohio, Indiana, West Virginia, New York, and Pennsylvania",
@@ -876,6 +876,470 @@
         "Murphy's original photographs and recordings no longer exist — the confiscation claim rests entirely on the accounts of his former wife and a colleague",
         "Stan Gordon, the primary long-term investigator, operates as a UFO researcher without institutional affiliation — his archive is the primary source for many witness accounts",
         "The military cordon and object removal reported by multiple Kecksburg witnesses conflicts with official accounts but cannot be verified through any surviving documentary evidence"
+      ]
+    }
+  },
+  {
+    "id": "phoenix-lights-1997",
+    "name": "Phoenix Lights",
+    "date": "March 13, 1997",
+    "location": "Phoenix, Arizona (and across Arizona, Nevada, and Sonora, Mexico)",
+    "country": "United States",
+    "category": "mass-sighting",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "On the evening of March 13, 1997, thousands of people across approximately 300 miles of the American Southwest witnessed two distinct phenomena: a massive V-shaped formation of lights moving silently overhead, followed by a stationary arc of bright orbs over Phoenix that eventually disappeared simultaneously. The event was captured on home video by numerous residents. Arizona Governor Fife Symington held a press conference the following day mocking the incident, then reversed course a decade later, publicly admitting he had personally witnessed the V formation and found it inexplicable. The Air Force attributed the second set of lights to A-10 Warthog aircraft conducting flare training at Barry Goldwater Range, an explanation disputed by witnesses and timing analysis of the events.",
+    "tags": ["mass-sighting", "video-confirmed", "governor-admission", "V-formation", "multiple-videos", "Arizona"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: March 13, 1997, beginning approximately 7:30 PM MST",
+        "Two distinct events: a V-shaped formation sighted from Henderson, NV south through Phoenix; and a stationary arc of lights over Phoenix later in the evening",
+        "The V formation was observed by thousands across a 300-mile corridor; witnesses included police officers, pilots, and a former governor",
+        "The V formation moved slowly and silently, estimated at between 1 and 2 miles wide by many witnesses",
+        "Governor Fife Symington held a press conference March 14, 1997 making light of the incident, presenting a staffer dressed in alien costume",
+        "In 2007, Symington reversed his statement in CNN interview: 'It was enormous and it traversed the entire sky silently and majestically. I'm saying it was otherworldly.'",
+        "The Air Force attributed the second set of lights (the stationary orbs) to A-10 Warthog aircraft dropping LUU-2B/B illumination flares at the Barry Goldwater Range at approximately 10:00 PM",
+        "Multiple witnesses and researchers argue the flare explanation does not account for the V formation sighted hours earlier",
+        "Councilwoman Frances Emma Barwood became the first Phoenix official to call for a government investigation; she later reported receiving 700+ witness calls",
+        "The event is considered the most-witnessed UAP event in American history"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "Multiple home video recordings of the stationary lights arc over Phoenix - one widely distributed recording by Lynn Kitei showing amber orbs in a rough arc formation",
+        "Home video of the V formation captured by at least one witness in Henderson, Nevada showing a structured craft",
+        "KPNX-TV news coverage from the night of the event with live witness calls"
+      ],
+      "documentation": [
+        "Arizona Department of Public Safety incident reports from officers who observed the events",
+        "FAA air traffic control records confirming no radar contact with the V formation",
+        "Luke AFB and Air National Guard records confirming A-10 training mission on the night in question at Barry Goldwater Range",
+        "Councilwoman Frances Emma Barwood's constituent witness call records (700+ individuals)",
+        "Dr. Lynne Kitei's research documentation compiled over years of investigation"
+      ],
+      "physical": []
+    },
+    "witnesses": [
+      {
+        "name": "Governor Fife Symington III",
+        "role": "Governor of Arizona, 1991-1997; private witness to V formation",
+        "type": "government",
+        "testimony": "I was absolutely stunned. It was enormous and it traversed the entire sky silently and majestically. There was a structured formation, about the size of a number of football fields, and it was soundless as it moved across the valley. I'm saying it was otherworldly. I saw something that defied explanation."
+      },
+      {
+        "name": "Dr. Lynne Kitei",
+        "role": "Phoenix physician and researcher; documented lights phenomenon from her home",
+        "type": "civilian",
+        "testimony": "I saw these amber orbs — three of them initially — totally silent, totally motionless. They were absolutely solid, structured lights. Over time that evening and on subsequent occasions I captured them on video. This was not flares. Flares don't hover for extended periods and then disappear simultaneously."
+      },
+      {
+        "name": "Bill Greiner",
+        "role": "Truck driver; witnessed V formation near Luke AFB",
+        "type": "civilian",
+        "testimony": "I'll never forget it. This thing was huge — like a city block going over us. Real slow. No noise at all. If Luke has something that big flying around, they're doing a hell of a good job keeping it secret."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Arizona Governor's Office", "Luke Air Force Base", "Arizona Air National Guard", "FAA"],
+      "statements": [
+        {
+          "source": "Luke AFB / Arizona Air National Guard",
+          "date": "March 1997",
+          "statement": "A-10 Warthog aircraft from Davis-Monthan AFB were conducting training operations and dropped LUU-2B/B illumination flares at the Barry Goldwater Range south of Phoenix at approximately 10:00 PM MST on March 13, 1997. The flares would have been visible from Phoenix as a string of bright lights."
+        },
+        {
+          "source": "Governor Fife Symington III",
+          "date": "March 14, 1997",
+          "statement": "I, for one, am taking this very seriously. [Note: This statement was followed by a press conference presenting a staffer in alien costume, widely reported as mocking the event. Symington reversed his position in 2007.]"
+        },
+        {
+          "source": "Governor Fife Symington III (revised statement)",
+          "date": "2007",
+          "statement": "It was enormous and it traversed the entire sky silently and majestically. I'm saying it was otherworldly. I wanted to go on record that it happened, because a lot of people saw it and I think it deserves an investigation."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Estimated thousands of independent witnesses across a 300-mile corridor",
+        "Multiple video recordings of the stationary lights, some showing structured formation",
+        "Governor Symington's 2007 public reversal adds credibility to the V formation accounts",
+        "Witnesses include police officers, pilots, and a trained physician (Kitei)",
+        "FAA found no radar returns on the V formation, consistent with anomalous characteristics",
+        "The two events (V formation, stationary lights) are distinct - flare explanation at best covers only the second"
+      ],
+      "contradicting": [
+        "Air Force confirmed A-10 training mission with flare drop on the same night - accounts for the stationary light arc",
+        "The V formation was not captured on high-quality video making structural analysis difficult",
+        "No official radar tracking data survives for the V formation event",
+        "Symington's initial mockery and decade-long delay in disclosure reduces weight of his reversal",
+        "The 300-mile V formation scale is extraordinary and inconsistent with known UAP cases"
+      ]
+    }
+  },
+  {
+    "id": "ohare-airport-2006",
+    "name": "O'Hare Airport Incident",
+    "date": "November 7, 2006",
+    "location": "O'Hare International Airport, Chicago, Illinois",
+    "country": "United States",
+    "category": "aviation",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "On November 7, 2006, approximately 12 United Airlines employees including gate personnel, mechanics, supervisors, and pilots observed a spinning, metallic, saucer-shaped object hovering silently at approximately 1,900 feet beneath overcast cloud cover near Gate C17. The object made no sound and displayed no identifying markings or lights. After approximately five minutes, it shot vertically through the overcast cloud layer, leaving a circular hole in the clouds that was visible for several minutes. The FAA initially declined to investigate, claiming no radar contact. The Chicago Tribune obtained FAA audio recordings through FOIA, revealing FAA supervisor discussions of the event and United Airlines pilot communications reporting the object. The FAA's official position remains that the incident was a weather phenomenon.",
+    "tags": ["aviation", "multiple-witnesses", "FAA-FOIA", "airport", "saucer", "Chicago", "cloud-penetration"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: November 7, 2006, approximately 4:15-4:30 PM CST",
+        "Location: United Airlines Terminal C, Gate C17, O'Hare International Airport",
+        "Approximately 12 United Airlines employees reported the object: ramp workers, mechanics, supervisors, and at least two pilots",
+        "Object described as metallic gray, saucer-shaped, spinning, silent, and hovering below the cloud deck at approximately 1,900 feet",
+        "Duration: estimated 5 minutes of hovering before the rapid vertical departure",
+        "The object departed by punching straight up through the overcast cloud layer, leaving a circular hole visible for several minutes",
+        "FAA initially stated no radar contact and classified as a weather phenomenon",
+        "Chicago Tribune filed FOIA request and obtained FAA audio recordings from Chicago TRACON",
+        "Audio revealed FAA supervisor telling another employee 'in 28 years I've never had something like this'",
+        "United Airlines initially denied any reports but the FOIA audio contradicted the denial",
+        "The FAA declined to formally investigate, citing no radar return - despite the airport having among the most sophisticated radar in the US"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "FAA audio recordings obtained by Chicago Tribune via FOIA - supervisor and controller discussing the report and United Airlines pilot communications"
+      ],
+      "documentation": [
+        "Chicago Tribune investigative report published January 1, 2007 (Jon Hilkevitch, reporter) - first detailed public account",
+        "FAA FOIA-released communications from Chicago TRACON referencing the incident",
+        "United Airlines internal safety reports - not publicly released",
+        "Multiple witness affidavits compiled by National UFO Reporting Center (NUFORC)"
+      ],
+      "physical": [
+        "Circular hole in overcast cloud layer visible for several minutes following the object's vertical departure - observed by multiple witnesses and supervisor"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Multiple United Airlines Ground Crew (unnamed, per company policy)",
+        "role": "Ramp workers, mechanics, and supervisors at Gate C17",
+        "type": "civilian",
+        "testimony": "It was a definitely solid craft, spinning, with no lights, no markings. It hovered for maybe five minutes and then went straight up through the clouds really fast. It left a hole in the clouds. You could see blue sky through the hole. That hole stayed there a few minutes."
+      },
+      {
+        "name": "United Airlines Pilot (unnamed)",
+        "role": "Commercial airline pilot, United Airlines",
+        "type": "commercial-aviation",
+        "testimony": "[Per FAA FOIA audio] Reported the sighting through standard aviation reporting channels from the aircraft."
+      },
+      {
+        "name": "FAA Chicago TRACON Supervisor",
+        "role": "Federal Aviation Administration Air Traffic Control supervisor",
+        "type": "government",
+        "testimony": "[Per FOIA audio recording] 'In 28 years I've never had something like this.'"
+      }
+    ],
+    "official_response": {
+      "agencies": ["Federal Aviation Administration (FAA)", "United Airlines (carrier)", "Chicago Department of Aviation"],
+      "statements": [
+        {
+          "source": "Federal Aviation Administration",
+          "date": "January 2007",
+          "statement": "No object was found on radar at O'Hare. The FAA is not conducting an investigation. Our theory is that it was a weather phenomenon."
+        },
+        {
+          "source": "United Airlines (initial)",
+          "date": "January 2007",
+          "statement": "We have no information on a UAP report filed by our employees at O'Hare. [Later contradicted by FOIA-obtained FAA audio in which United pilots communicated the sighting through official channels.]"
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Approximately 12 United Airlines employees - trained aviation professionals with reason to avoid making extraordinary claims",
+        "FAA audio recording obtained via FOIA corroborates that the incident was reported through official channels",
+        "The 'hole-in-clouds' physical phenomenon was observed by multiple independent witnesses",
+        "O'Hare is one of the most radar-saturated airports in the United States - no radar return is unusual and not necessarily exculpatory",
+        "United Airlines' initial denial was directly contradicted by the FAA FOIA material"
+      ],
+      "contradicting": [
+        "No photographs or video of the object were taken despite the location being a major public airport",
+        "FAA found no radar contact; Chicago TRACON radar covers the area densely",
+        "No physical evidence beyond the cloud aperture, which has mundane explanations",
+        "All witnesses have remained anonymous, preventing direct corroboration",
+        "FAA's 'weather phenomenon' classification has not been formally challenged or updated"
+      ]
+    }
+  },
+  {
+    "id": "uss-omaha-2019",
+    "name": "USS Omaha USO Incident",
+    "date": "July 15, 2019",
+    "location": "Pacific Ocean off San Diego, California",
+    "country": "United States",
+    "category": "military-maritime",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "On July 15, 2019, multiple U.S. Navy ships including USS Omaha tracked and filmed a spherical object exhibiting flight characteristics inconsistent with any known aircraft. The object was filmed by USS Omaha's Combat Information Center crew using FLIR thermal imaging. The footage shows a round, metallic object flying at approximately 130 knots before descending into the Pacific Ocean. The object was observed to submerge without disintegrating - behavior inconsistent with conventional aircraft or drone failure. The Pentagon authenticated the USS Omaha footage in 2021. This incident is part of a broader cluster of documented Navy UAP encounters from 2019 involving multiple vessels and dozens of crew members.",
+    "tags": ["military", "Navy", "FLIR-video", "Pentagon-confirmed", "USO", "submersible", "San-Diego"],
+    "insider_connections": ["tim-gallaudet"],
+    "overview": {
+      "key_facts": [
+        "Date: July 15, 2019; part of a series of Navy UAP encounters from summer 2019",
+        "USS Omaha (LCS-12) Combat Information Center crew filmed the object using FLIR thermal imaging",
+        "Object described as spherical, metallic, approximately 6 feet in diameter, no wings, no visible propulsion",
+        "The object flew at approximately 130 knots on an erratic course before descending into the water",
+        "The submersion appeared controlled - the object descended rather than crashing, producing no observable debris or surface disturbance",
+        "USS Omaha launched a helicopter and deployed a submarine to attempt location of the submerged object - neither found anything",
+        "The USS Omaha footage was obtained and published by filmmaker Jeremy Corbell in April 2021",
+        "The Pentagon authenticated the footage in a statement on April 30, 2021",
+        "The 2019 encounters also involved USS Russell (filmed a swarm of unidentified lights), USS Kidd, and other vessels",
+        "Retired Rear Admiral Tim Gallaudet has cited incidents of this type in his public congressional testimony about underwater UAP programs"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "FLIR thermal footage from USS Omaha CIC - Pentagon-authenticated April 30, 2021 - shows spherical object in flight and apparent water entry",
+        "Additional FLIR footage from USS Russell filmed the same month showing a cluster of unidentified lights - also Pentagon-authenticated",
+        "Ship's log and radar data from USS Omaha tracking the object"
+      ],
+      "documentation": [
+        "Pentagon statement (April 30, 2021) authenticating the Omaha footage as 'taken by Navy personnel' and confirming the UAP designation",
+        "UAP Task Force briefing documents referencing the 2019 Pacific encounter cluster",
+        "USS Omaha and USS Russell deck logs - details not publicly released"
+      ],
+      "physical": [
+        "No debris recovered despite submarine and helicopter search following object's submersion"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "USS Omaha CIC Crew",
+        "role": "Combat Information Center operators, USS Omaha (LCS-12)",
+        "type": "military",
+        "testimony": "[Per video audio track] 'Wow, it's going into the water.' [Pause] 'Splash. No wreckage.' Multiple crew members can be heard monitoring and reacting to the object in real time during the FLIR recording."
+      },
+      {
+        "name": "Rear Admiral Tim Gallaudet (Ret.)",
+        "role": "Former Acting NOAA Administrator; has testified to underwater UAP encounters of this type",
+        "type": "military",
+        "testimony": "I personally reviewed Navy reports of incidents in which objects were tracked entering and exiting the water at speeds and with characteristics inconsistent with any known vehicle. These incidents were documented, reported up the chain, and then suppressed. The ocean environment has been systematically neglected in UAP investigation."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Department of Defense", "U.S. Navy", "UAP Task Force"],
+      "statements": [
+        {
+          "source": "Department of Defense",
+          "date": "April 30, 2021",
+          "statement": "The Department of Defense has authorized the release of three unclassified Navy videos. The aerial phenomena observed in the videos remain characterized as 'unidentified.' [Included general statement covering the 2019 encounters.] The DOD takes seriously all threats and potential vulnerabilities to our national security."
+        },
+        {
+          "source": "U.S. Navy",
+          "date": "2021",
+          "statement": "The Navy has not publicly identified the objects in the footage. The incident was reported to the UAP Task Force for review and analysis."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Pentagon-authenticated FLIR footage showing object in flight and water entry",
+        "Multiple ships and multiple crew members across several incidents in the same period",
+        "Object's controlled submersion without debris is anomalous by any known aircraft standard",
+        "Submarine and helicopter recovery search found nothing - consistent with an unidentified submersible object departing the area",
+        "Tim Gallaudet's independent testimony about systematic suppression of USO incident reports lends further context"
+      ],
+      "contradicting": [
+        "Video resolution does not allow definitive structural analysis of the object",
+        "The 6-foot estimated size and 130-knot speed are within the range of advanced drone capabilities",
+        "No independent corroboration from civilian or commercial radar for the encounter",
+        "Some analysts have suggested the 'submersion' may be a camera anomaly rather than an actual water entry"
+      ]
+    }
+  },
+  {
+    "id": "stephenville-tx-2008",
+    "name": "Stephenville, Texas UAP Encounters",
+    "date": "January 8, 2008",
+    "location": "Stephenville and Dublin, Texas",
+    "country": "United States",
+    "category": "mass-sighting",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "On the evening of January 8, 2008, dozens of residents of Stephenville, Texas, including a pilot, a constable, and local business owners, reported enormous, low-flying lights moving silently at high speed across Erath County. The objects were described as approximately a mile wide by some witnesses, with brilliant white lights and no sound. The Air Force initially denied any aircraft were in the area. One week later, the Air Force reversed course and stated F-16 fighters had been conducting training nearby. MUFON (Mutual UFO Network) subsequently obtained FAA radar data through FOIA that showed an unidentified object tracking toward President George W. Bush's Crawford Ranch, prompting Secret Service interest. Radar analysis showed the object flying at speeds of 1,900-2,100 mph without any military intercept response.",
+    "tags": ["mass-sighting", "radar-confirmed", "Air-Force-denial", "reversal", "MUFON", "FOIA", "Texas"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: January 8, 2008, approximately 6:15-7:00 PM CST",
+        "Location: Erath County, Texas; primarily Stephenville and Dublin",
+        "Approximately 30-40 witnesses filed reports; estimates of the total witness pool range from dozens to hundreds",
+        "Objects described as massive white lights, silent, moving extremely fast at low altitude",
+        "Witness Steve Allen, a pilot and business owner, estimated the object was 'a half mile to a mile across and it was going at least three times the speed of a jet'",
+        "Constable Lee Roy Gaitan reported two objects emitting rapid-fire beams of light chasing each other across the sky",
+        "Air Force (301st Fighter Wing, Naval Air Station Fort Worth JRB) initially stated no aircraft were in the area on January 8",
+        "Air Force reversed its statement January 23, 2008, acknowledging ten F-16s from the 457th Fighter Squadron were conducting training in the area",
+        "MUFON obtained FAA radar data via FOIA showing an unidentified object tracking toward President Bush's Crawford Ranch",
+        "Radar data indicated object traveling 1,900-2,100 mph without fighter intercept from Carswell Alert Facility, which maintains active interceptors"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "No primary video evidence captured on the night of the main event"
+      ],
+      "documentation": [
+        "FAA radar data obtained by MUFON via FOIA showing the object's track and estimated speed",
+        "Air Force 301st Fighter Wing initial denial (January 2008) and subsequent correction (January 23, 2008)",
+        "MUFON investigative report by Glen Schulze and Robert Powell analyzing FAA radar data",
+        "National UFO Reporting Center witness reports from approximately 40 individuals",
+        "Dallas Morning News coverage including named witness statements from a pilot and law enforcement"
+      ],
+      "physical": []
+    },
+    "witnesses": [
+      {
+        "name": "Steve Allen",
+        "role": "Private pilot and local business owner",
+        "type": "civilian",
+        "testimony": "It was very large and it was going fast. I'd guess it was a half mile to a mile across and it was going at least three times the speed of a jet. What's strange is that there was no sound. And it had these really bright lights — huge, white — then they'd go off and there'd be two red streaks."
+      },
+      {
+        "name": "Constable Lee Roy Gaitan",
+        "role": "Erath County Constable",
+        "type": "law-enforcement",
+        "testimony": "I saw two lights chasing one another. Then there was a big white light — it lit up everything. It was so bright I had to shade my eyes. These weren't commercial aircraft, and they were not military jets. I've been watching aircraft for twenty years. This was something different."
+      },
+      {
+        "name": "Ricky Sorrells",
+        "role": "Machinist and local resident",
+        "type": "civilian",
+        "testimony": "It was about 300 feet above me. I stood there and watched it for about ten minutes. It covered the whole pasture. Flat underneath, no windows, no engines, no landing gear. It just sat there. I've never seen anything like it."
+      }
+    ],
+    "official_response": {
+      "agencies": ["301st Fighter Wing, NAS Fort Worth JRB", "Federal Aviation Administration", "MUFON"],
+      "statements": [
+        {
+          "source": "301st Fighter Wing, NAS Fort Worth JRB",
+          "date": "January 14, 2008",
+          "statement": "No F-16s from this base were in the Stephenville area on January 8, 2008. We have no information about what was observed."
+        },
+        {
+          "source": "301st Fighter Wing (revised statement)",
+          "date": "January 23, 2008",
+          "statement": "It has been confirmed that ten F-16s from the 457th Fighter Squadron were in the area on a routine training mission the night of January 8. We apologize for any confusion this may have caused."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Multiple independent named witnesses including a pilot, a law enforcement officer, and a machinist",
+        "FAA radar data obtained via FOIA shows an unidentified track with anomalous speed characteristics",
+        "Air Force reversal on whether aircraft were present undermines official explanation",
+        "Object tracking toward Crawford Ranch and proximity to Carswell interceptor alert facility adds strategic significance",
+        "MUFON radar analysis by aviation professionals found the flight profile inconsistent with F-16 training operations"
+      ],
+      "contradicting": [
+        "Air Force confirmed F-16s were in the area - some sightings may reflect conventional aircraft",
+        "No video evidence from the primary encounter on January 8",
+        "Witness size estimates vary widely and dramatically",
+        "The FAA radar data shows something anomalous but tracking analysis is disputed",
+        "Proximity to NAS Fort Worth and multiple air corridors makes conventional explanation plausible for some sightings"
+      ]
+    }
+  },
+  {
+    "id": "shag-harbour-1967",
+    "name": "Shag Harbour Incident",
+    "date": "October 4, 1967",
+    "location": "Shag Harbour, Nova Scotia, Canada",
+    "country": "Canada",
+    "category": "crash-recovery",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "On the night of October 4, 1967, at least eleven witnesses including an RCAF pilot, RCMP officers, and local fishermen observed a large, low-flying object with bright amber lights descend and impact the water of Shag Harbour. The Royal Canadian Mounted Police (RCMP) immediately launched a search operation, joined by the Canadian Coast Guard. Divers and vessels found no aircraft wreckage, but some divers reported a large metallic object on the seafloor before it moved north and eventually vanished. The Canadian government opened an official investigation and filed the incident in Transport Canada records as an unidentified flying object - making Shag Harbour one of the only UAP incidents to be officially documented as such by any government agency in contemporaneous records.",
+    "tags": ["crash-recovery", "government-investigated", "Canadian-Coast-Guard", "RCMP", "underwater", "Canada", "official-documentation"],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: October 4, 1967, approximately 11:20 PM local time",
+        "At least 11 witnesses observed the event; other estimates range higher",
+        "Witnesses included Captain Pierre Charbonneau (RCAF pilot flying in the area) who reported four amber lights in a row",
+        "At least four RCMP officers independently observed the lights descend and impact the water",
+        "The Canadian Coast Guard vessel MV Bickerton and RCMP boat conducted a joint search starting approximately 30 minutes after impact",
+        "Searchers observed a yellowish foam on the water surface at the impact site - possibly consistent with rocket fuel but otherwise unexplained",
+        "The search found no conventional aircraft debris, no oil slick, and no survivors",
+        "A naval diver later reported that an unidentified metallic object on the seafloor appeared to move northward over several days before disappearing near Shelburne",
+        "Transport Canada filed the incident as an 'unidentified flying object' in the official record - one of the only such contemporaneous governmental classifications in any country",
+        "The U.S. Coast Guard, U.S. Navy, and Canadian Forces all coordinated portions of the subsequent investigation"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "No video or audio recordings exist from the 1967 incident"
+      ],
+      "documentation": [
+        "Transport Canada official incident report filed as 'unidentified flying object' - a rare contemporaneous governmental UAP classification",
+        "RCMP Incident Reports from officers who observed the descent and initiated the search",
+        "Canadian Coast Guard MV Bickerton search logs and incident reports",
+        "Transport Canada and Department of National Defence investigation records from October-November 1967",
+        "Chris Styles and Don Ledger investigative research (1990s-2000s) interviewing surviving witnesses and compiling documentation"
+      ],
+      "physical": [
+        "Yellow-orange foam or 'sulphur-like' substance on water surface at impact site observed by multiple search personnel - origin unexplained",
+        "Naval diver accounts of a large metallic object on the seafloor - never formally documented or photographed"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Captain Pierre Charbonneau",
+        "role": "Royal Canadian Air Force pilot flying in the area at the time of the incident",
+        "type": "military",
+        "testimony": "I observed four bright amber lights arranged in a row at a low altitude. They were moving together and then descended. I reported the sighting through military channels as required."
+      },
+      {
+        "name": "Laurie Wickens",
+        "role": "Local Shag Harbour resident; primary civilian witness",
+        "type": "civilian",
+        "testimony": "We saw these lights angled downward, then they hit the water. We called the RCMP right away. We thought it was a plane going down. Then we saw the light on the water but no plane. Nothing. Just this foam."
+      },
+      {
+        "name": "RCMP Officers (multiple, unnamed in public record)",
+        "role": "Royal Canadian Mounted Police officers responding to civilian calls",
+        "type": "law-enforcement",
+        "testimony": "We observed the lights and the impact ourselves. The search found the foam but no wreckage, no survivors, no aircraft. We filed the report as directed through our reporting procedures."
+      }
+    ],
+    "official_response": {
+      "agencies": ["Royal Canadian Mounted Police", "Canadian Coast Guard", "Transport Canada", "Department of National Defence (Canada)", "U.S. Navy (coordination)"],
+      "statements": [
+        {
+          "source": "Transport Canada",
+          "date": "October 1967",
+          "statement": "Incident officially recorded in Transport Canada files as an unidentified flying object that impacted the water near Shag Harbour, Nova Scotia. No subsequent identification of the object has been made."
+        },
+        {
+          "source": "Department of National Defence (Canada)",
+          "date": "November 1967",
+          "statement": "Investigation conducted in coordination with civilian agencies. No wreckage or conventional aircraft debris was located. The origin of the object and the foam found at the impact site remains officially unidentified."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Multiple independent witnesses including RCAF pilot, RCMP officers, and civilians - broad cross-section of credentialed observers",
+        "Contemporaneous official government investigation opening and official Transport Canada classification as 'UFO' - extremely rare",
+        "Joint RCMP and Coast Guard search operation launched within 30 minutes, providing near-real-time official record",
+        "Unexplained foam on water surface documented by multiple search personnel",
+        "No conventional aircraft wreckage found despite thorough search, ruling out known aircraft",
+        "Diver reports of metallic object on seafloor, while uncorroborated by documentation, come from multiple sources"
+      ],
+      "contradicting": [
+        "No photographs, audio, or video recordings from 1967",
+        "Diver accounts of the moving object are not corroborated by any surviving official document",
+        "The Canadian government's 1967 records are partially declassified and some have been lost or destroyed in subsequent decades",
+        "No physical samples of the foam were taken for analysis",
+        "The event occurred during the Cold War when misidentification of experimental Soviet or American craft was possible"
       ]
     }
   }
