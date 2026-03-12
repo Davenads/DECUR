@@ -214,6 +214,108 @@
         "Disclosure",
         "2021"
       ]
+    },
+    {
+      "id": "aaro-hrr-vol2-2024",
+      "title": "AARO Historical Record Report, Volume 2",
+      "type": "Government Report",
+      "author": "All-domain Anomaly Resolution Office (AARO), Department of Defense",
+      "year": "2024",
+      "description": "The second volume of AARO's historical record report, released July 2024. Expands coverage of UAP program histories, additional alleged sightings and retrieval claims, and further DoD analysis of insider allegations. Together with Volume 1, constitutes the official government counterargument to crash retrieval and reverse engineering claims made by Grusch and others.",
+      "url": "https://media.defense.gov/2024/07/00/2003511616/-1/-1/0/HRR-VOLUME-2-REPORT.PDF",
+      "insider": "david-grusch",
+      "tags": [
+        "Government",
+        "DoD",
+        "AARO",
+        "2024"
+      ]
+    },
+    {
+      "id": "skinwalkers-pentagon-2021",
+      "title": "Skinwalkers at the Pentagon",
+      "type": "Book",
+      "author": "James Lacatski, Colm Kelleher, George Knapp",
+      "year": "2021",
+      "description": "The definitive insider account of AAWSAP - the classified Defense Intelligence Agency program that preceded AATIP - written by its founding program director James Lacatski. Documents the program's investigation of anomalous phenomena at Skinwalker Ranch, UAP encounters, and paranormal events logged by DIA personnel. One of the only primary-authored accounts of a classified government UAP research program.",
+      "url": "https://www.amazon.com/Skinwalkers-Pentagon-Insiders-Account-Government/dp/0578936569",
+      "insider": "james-lacatski",
+      "tags": [
+        "Book",
+        "AAWSAP",
+        "DIA",
+        "Lacatski",
+        "Skinwalker Ranch",
+        "2021"
+      ]
+    },
+    {
+      "id": "dolan-national-security-state-2002",
+      "title": "UFOs and the National Security State, Volume 1: Chronology of a Cover-Up 1941-1973",
+      "type": "Book",
+      "author": "Richard Dolan",
+      "year": "2002",
+      "description": "The most thoroughly researched historical account of UAP classification and government response from 1941 to 1973. Drawing on thousands of declassified documents, Dolan documents the systematic suppression of UAP data across military branches, intelligence agencies, and administrations. Considered the foundational reference text for researchers studying the national security dimensions of UAP history.",
+      "url": "https://www.amazon.com/UFOs-National-Security-State-Chronological/dp/1571743367",
+      "insider": "richard-dolan",
+      "tags": [
+        "Book",
+        "Dolan",
+        "History",
+        "Government",
+        "2002"
+      ]
+    },
+    {
+      "id": "nyt-off-world-vehicles-2020",
+      "title": "No Longer in Shadows, Pentagon's U.F.O. Unit Will Make Some Findings Public",
+      "type": "Journalism",
+      "author": "Ralph Blumenthal, Leslie Kean (New York Times)",
+      "year": "2020",
+      "description": "July 23, 2020 New York Times report disclosing that the DoD's UAP Task Force would begin releasing findings. Contains physicist Eric Davis's on-record statement that he briefed members of the Senate Armed Services Committee on recovered materials from 'off-world vehicles not made on this earth' - one of the most direct on-record statements in UAP history. Distinct from the 2017 AATIP story by the same authors.",
+      "url": "https://www.nytimes.com/2020/07/23/us/politics/pentagon-ufo-harry-reid-navy.html",
+      "insider": null,
+      "tags": [
+        "Journalism",
+        "NY Times",
+        "Eric Davis",
+        "UAPTF",
+        "2020"
+      ]
+    },
+    {
+      "id": "wilson-davis-memo-2019",
+      "title": "The Wilson-Davis Memo",
+      "type": "Leaked Document",
+      "author": "Admiral Thomas Wilson (DIA), Dr. Eric Davis (physicist) — leaked provenance disputed",
+      "year": "2019",
+      "description": "A 15-page document leaked in 2019, purportedly transcribed by physicist Eric Davis from a 2002 meeting with Admiral Thomas Wilson, then Director of the Defense Intelligence Agency. Alleges Wilson was denied access to a private aerospace contractor's program involving recovered non-human craft. Disputed: Davis has not confirmed or denied authorship; Wilson has denied the meeting's claims. Widely cited by researchers as potentially significant despite unverified status.",
+      "url": "https://www.theblackvault.com/documentarchive/the-wilson-davis-memo/",
+      "insider": null,
+      "tags": [
+        "Leaked Document",
+        "Wilson-Davis",
+        "Disputed",
+        "Eric Davis",
+        "2019"
+      ]
+    },
+    {
+      "id": "the-phenomenon-documentary-2020",
+      "title": "The Phenomenon — Documentary",
+      "type": "Documentary",
+      "author": "James Fox (Director)",
+      "year": "2020",
+      "description": "Critically acclaimed documentary featuring declassified footage and on-record interviews with government officials across multiple countries, including Belgian Air Force General Wilfried De Brouwer (Belgian Wave 1989-90), former Canadian Deputy Prime Minister Paul Hellyer, and multiple senior U.S. officials. Includes interviews with Leslie Kean, Jacques Vallee, and former Clinton Chief of Staff John Podesta. Considered the highest-quality mainstream documentary examination of UAP government involvement.",
+      "url": "https://www.thephenomenonfilm.com/",
+      "insider": null,
+      "tags": [
+        "Documentary",
+        "James Fox",
+        "Government",
+        "International",
+        "2020"
+      ]
     }
   ],
   "testimony": [
@@ -433,6 +535,113 @@
         "Grusch",
         "Karl Nell",
         "2023"
+      ]
+    },
+    {
+      "id": "graves-hoc-testimony-2023",
+      "title": "Ryan Graves — Written Testimony, House Oversight Committee",
+      "source": "U.S. House of Representatives",
+      "participants": "Ryan Graves",
+      "date": "July 26, 2023",
+      "description": "Written testimony from Navy F/A-18 combat pilot Ryan Graves submitted under oath at the July 26, 2023 House Oversight hearing. Details persistent, unexplained encounters with objects exhibiting impossible flight characteristics observed by multiple trained pilots over years in restricted military airspace. Graves describes systematic institutional failure to investigate and document these encounters, and the resulting safety and national security implications.",
+      "url": "https://oversight.house.gov/wp-content/uploads/2023/07/Ryan_Graves_Testimony.pdf",
+      "insider": "ryan-graves",
+      "tags": [
+        "Congressional Testimony",
+        "Graves",
+        "House",
+        "Navy",
+        "Pilot",
+        "2023"
+      ]
+    },
+    {
+      "id": "fravor-60-minutes-2019",
+      "title": "Navy Pilot Who Encountered UFO Speaks Out — 60 Minutes",
+      "source": "CBS News (60 Minutes)",
+      "participants": "David Fravor, Bill Whitaker (interviewer)",
+      "date": "May 26, 2019",
+      "description": "Commander David Fravor's first major mainstream media appearance describing the 2004 Nimitz Tic Tac encounter in detail. Fravor describes a 40-foot white capsule-shaped object hovering over churning water with no visible propulsion, which then mirrored his aircraft before accelerating instantaneously beyond radar range. The segment introduced millions to the Nimitz case and established Fravor as the primary credible witness for the most documented military UAP encounter in modern history.",
+      "url": "https://www.cbsnews.com/news/navy-pilot-who-encountered-ufo-speaks-out/",
+      "insider": "david-fravor",
+      "tags": [
+        "Interview",
+        "Fravor",
+        "60 Minutes",
+        "Nimitz",
+        "Tic Tac",
+        "2019"
+      ]
+    },
+    {
+      "id": "nell-sol-foundation-2023",
+      "title": "Karl Nell — Sol Foundation Presentation: 'Controlled Disclosure'",
+      "source": "The Sol Foundation / Stanford University",
+      "participants": "Karl Nell",
+      "date": "November 17, 2023",
+      "description": "Retired U.S. Army Colonel Karl Nell's standalone presentation at the inaugural Sol Foundation symposium, in which he states he has 'zero doubt' that non-human intelligence exists and is engaging with humanity. Among the strongest unambiguous on-record statements on NHI from a credentialed senior military officer with active security clearances at time of delivery. Nell frames the situation in terms of a 'controlled disclosure' framework and cites direct knowledge.",
+      "url": "https://www.youtube.com/watch?v=Fn7BzQ7j2so",
+      "insider": null,
+      "tags": [
+        "Conference",
+        "Sol Foundation",
+        "Karl Nell",
+        "NHI",
+        "Military",
+        "2023"
+      ]
+    },
+    {
+      "id": "puthoff-sse-presentation-2018",
+      "title": "Hal Puthoff — SSE/IRVA Conference Presentation: 'Space-Time Metric Engineering'",
+      "source": "Society for Scientific Exploration / IRVA Conference",
+      "participants": "Hal Puthoff",
+      "date": "June 2018",
+      "description": "Physicist and longtime government contractor Hal Puthoff presents technical analysis of UAP propulsion hypotheses at the joint SSE/IRVA conference. Covers AATIP-related material analysis findings, warp drive physics as a framework for observed flight characteristics, and the scientific basis for UAP investigation within the U.S. intelligence community. The most technically detailed public account of AATIP's physics research from an insider participant.",
+      "url": "https://www.youtube.com/watch?v=dNB01Yq5O1Q",
+      "insider": null,
+      "tags": [
+        "Conference",
+        "Puthoff",
+        "AATIP",
+        "Physics",
+        "Science",
+        "2018"
+      ]
+    },
+    {
+      "id": "graves-asa-pilot-report-2023",
+      "title": "Pilot Testimony Report — Americans for Safe Aerospace",
+      "source": "Americans for Safe Aerospace",
+      "participants": "Ryan Graves (Founder), multiple active and former military pilots",
+      "date": "2023",
+      "description": "Structured collection of pilot UAP encounter reports compiled by Americans for Safe Aerospace, the nonprofit organization founded by Ryan Graves following his congressional testimony. Represents the closest civilian-accessible equivalent to a formal pilot-sourced evidence dossier, applying consistent methodology to documented encounters by trained aviation professionals. Advocates for standardized UAP reporting infrastructure within military and commercial aviation.",
+      "url": "https://americansforsafeaerospace.org/pilots/",
+      "insider": "ryan-graves",
+      "tags": [
+        "Pilot Testimony",
+        "Graves",
+        "ASA",
+        "Aviation",
+        "2023"
+      ]
+    },
+    {
+      "id": "lazar-corbell-documentary-2018",
+      "title": "Bob Lazar: Area 51 and Flying Saucers — Documentary",
+      "source": "Jeremy Corbell / Netflix",
+      "participants": "Bob Lazar, George Knapp, Jeremy Corbell (director)",
+      "date": "December 3, 2018",
+      "description": "Jeremy Corbell's documentary feature on Bob Lazar, released on Netflix and widely distributed. The most comprehensive audio-visual account of Lazar's claims about S-4, element 115, and gravity propulsion systems. Includes George Knapp's corroboration framework, new interviews, and archival footage. Widely credited with introducing Lazar's story to a new generation and directly precipitated the 2019 Joe Rogan interview.",
+      "url": "https://www.netflix.com/title/80221584",
+      "insider": "bob-lazar",
+      "tags": [
+        "Documentary",
+        "Lazar",
+        "Corbell",
+        "Area 51",
+        "S-4",
+        "2018"
       ]
     }
   ]
