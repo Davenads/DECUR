@@ -1,4 +1,5 @@
 import { useState, FormEvent } from 'react';
+import SeoHead from '../components/SeoHead';
 import type { NextPage } from 'next';
 import { Turnstile } from '@marsidev/react-turnstile';
 
@@ -43,7 +44,13 @@ const About: NextPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <>
+      <SeoHead
+        title="About"
+        description="DECUR is a structured archive documenting UAP, NHI, and classified program research through primary sources, firsthand accounts, and declassified records."
+        path="/about"
+      />
+      <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-8">About DECUR</h1>
 
@@ -232,6 +239,7 @@ const About: NextPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

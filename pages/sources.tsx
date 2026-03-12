@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import SeoHead from '../components/SeoHead';
 import Link from 'next/link';
 
 interface SourceCardProps {
@@ -52,7 +53,13 @@ const SourceCard: React.FC<SourceCardProps> = ({
 
 const Sources: NextPage = () => {
   return (
-    <div className="container mx-auto px-4">
+    <>
+      <SeoHead
+        title="Data Sources"
+        description="Primary sources, data pipelines, and attribution for DECUR's UAP and NHI research archive."
+        path="/sources"
+      />
+      <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto space-y-10">
 
         {/* Header */}
@@ -344,6 +351,7 @@ const Sources: NextPage = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

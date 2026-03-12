@@ -1,6 +1,6 @@
 import { FC, useState, useEffect, useCallback } from 'react';
 import { GetStaticProps } from 'next';
-import Head from 'next/head';
+import SeoHead from '../components/SeoHead';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Fuse, { FuseResult } from 'fuse.js';
@@ -181,9 +181,11 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
 
   return (
     <>
-      <Head>
-        <title>{query ? `"${query}" — DECUR Search` : 'Search — DECUR'}</title>
-      </Head>
+      <SeoHead
+        title={query ? `"${query}" - Search` : 'Search'}
+        description="Search DECUR's archive of UAP research, key figure profiles, historical events, glossary terms, and primary source materials."
+        path="/search"
+      />
       <div className="min-h-screen bg-gray-50 -mt-8 -mx-4 px-4 pt-10 pb-10">
         <div className="max-w-3xl mx-auto">
 

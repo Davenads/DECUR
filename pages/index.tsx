@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { FC } from 'react';
-import Head from 'next/head';
+import SeoHead from '../components/SeoHead';
 import { CustomNextPage, HomePageProps } from '../types/pages';
 import insidersData from '../data/insiders/index.json';
 import glossaryData from '../data/glossary.json';
@@ -48,13 +48,11 @@ const ARCHIVE_STATS = [
 const Home: CustomNextPage<HomePageProps> = () => {
   return (
     <>
-      <Head>
-        <title>DECUR: UAP & NHI Research Archive</title>
-        <meta
-          name="description"
-          content="A structured archive of insider testimony, primary documents, and research on UAP, NHI, and classified programs."
-        />
-      </Head>
+      <SeoHead
+        title="DECUR: UAP & NHI Research Archive"
+        description="A structured archive of insider testimony, primary documents, and research on UAP, NHI, and classified programs."
+        path="/"
+      />
 
       <div className="space-y-16">
         {/* Hero */}

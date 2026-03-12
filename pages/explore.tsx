@@ -1,4 +1,5 @@
 import type { NextPage, GetStaticProps } from 'next';
+import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
 import TimelineOverlay, { extractYear, WBEvent } from '../components/explore/TimelineOverlay';
@@ -13,7 +14,13 @@ interface Props {
 
 const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
   return (
-    <div className="container mx-auto px-4">
+    <>
+      <SeoHead
+        title="Explore"
+        description="Interactive timeline and relationship network visualizing eight decades of UAP events, key figure disclosures, and government program histories."
+        path="/explore"
+      />
+      <div className="container mx-auto px-4">
       <div className="max-w-5xl mx-auto space-y-8">
 
         {/* Page header */}
@@ -42,6 +49,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
 
       </div>
     </div>
+    </>
   );
 };
 

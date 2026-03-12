@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import SeoHead from '../components/SeoHead';
 import { GetStaticProps } from 'next';
 import TimelineView, { TimelineEntry } from '../components/timeline/TimelineView';
 
@@ -9,10 +9,11 @@ interface TimelinePageProps {
 export default function Timeline({ entries }: TimelinePageProps) {
   return (
     <>
-      <Head>
-        <title>DECUR - Historical Timeline</title>
-        <meta name="description" content="Chronological timeline of UAP/NHI events, sightings, government disclosures, and key historical incidents from 1561 to present." />
-      </Head>
+      <SeoHead
+        title="Historical Timeline"
+        description="Chronological timeline of UAP/NHI events, sightings, government disclosures, and key historical incidents from 1561 to present."
+        path="/timeline"
+      />
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold font-heading text-gray-900 mb-2">Historical Timeline</h1>

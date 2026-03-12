@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
+import SeoHead from '../components/SeoHead';
 import { GetStaticProps } from 'next';
 import EventsList from '../components/data/EventsList';
 import KeyFigures from '../components/data/KeyFigures';
@@ -65,10 +65,11 @@ export default function Data({ categoryData, insiders, cases, documents, navItem
 
   return (
     <>
-      <Head>
-        <title>DECUR - Research Data</title>
-        <meta name="description" content="Explore UAP/NHI research data including historical events, key figures, quotes, media, and news." />
-      </Head>
+      <SeoHead
+        title="Research Data"
+        description="Explore UAP/NHI research data including historical events, key figures, documented cases, declassified documents, and primary source materials."
+        path="/data"
+      />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold font-heading mb-8">Research Data</h1>
         <div className="flex flex-col md:flex-row gap-6">

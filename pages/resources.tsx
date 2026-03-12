@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SeoHead from '../components/SeoHead';
 import ResourceList from '../components/resources/ResourceList';
 import Glossary from '../components/resources/Glossary';
 import type { NextPage } from 'next';
@@ -28,7 +29,13 @@ const Resources: NextPage<ResourcesProps> = ({ glossaryTerms, resourcesData }) =
   const [activeTab, setActiveTab] = useState<TabType>('sources');
 
   return (
-    <div className="container mx-auto px-4">
+    <>
+      <SeoHead
+        title="Resources"
+        description="Curated transcripts, interviews, primary documents, and a 293-term terminology reference for UAP and NHI research."
+        path="/resources"
+      />
+      <div className="container mx-auto px-4">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
           <h1 className="text-3xl font-bold font-heading text-gray-900 mb-2">Resources</h1>
@@ -79,6 +86,7 @@ const Resources: NextPage<ResourcesProps> = ({ glossaryTerms, resourcesData }) =
         </div>
       </div>
     </div>
+    </>
   );
 };
 
