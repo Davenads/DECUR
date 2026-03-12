@@ -45,9 +45,9 @@ const CasesMap: FC<CasesMapProps> = ({ cases, onSelectCase }) => {
   const mappable = cases.filter(c => c.coordinates);
 
   return (
-    <div className="relative w-full rounded-xl border border-gray-200 bg-[#f0f4f8] overflow-hidden">
+    <div className="relative w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-[#f0f4f8] dark:bg-[#1e2a38] overflow-hidden">
       {/* Tier legend */}
-      <div className="absolute top-3 left-3 z-10 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg px-3 py-2 space-y-1 shadow-sm">
+      <div className="absolute top-3 left-3 z-10 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-lg px-3 py-2 space-y-1 shadow-sm">
         {(Object.keys(TIER_COLORS) as EvidenceTier[]).filter(t => t !== 'tier-3').map(tier => (
           <div key={tier} className="flex items-center gap-2">
             <span
@@ -60,18 +60,18 @@ const CasesMap: FC<CasesMapProps> = ({ cases, onSelectCase }) => {
       </div>
 
       {/* Case count */}
-      <div className="absolute top-3 right-3 z-10 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg px-3 py-1.5 shadow-sm">
+      <div className="absolute top-3 right-3 z-10 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-lg px-3 py-1.5 shadow-sm">
         <span className="text-xs text-gray-500">{mappable.length} incidents plotted</span>
       </div>
 
       {/* Tooltip */}
       {tooltip && (
         <div
-          className="absolute z-20 bg-white border border-gray-200 rounded-lg shadow-lg p-3 max-w-[220px] pointer-events-none"
+          className="absolute z-20 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-w-[220px] pointer-events-none"
           style={{ left: tooltip.x + 12, top: tooltip.y - 8 }}
         >
-          <p className="text-xs font-bold text-gray-800 leading-tight mb-0.5">{tooltip.name}</p>
-          <p className="text-xs text-gray-400 mb-1.5">{tooltip.date} · {tooltip.location}</p>
+          <p className="text-xs font-bold text-gray-800 dark:text-gray-100 leading-tight mb-0.5">{tooltip.name}</p>
+          <p className="text-xs text-gray-400 dark:text-gray-500 mb-1.5">{tooltip.date} · {tooltip.location}</p>
           <span className={`text-xs px-1.5 py-0.5 rounded-full font-medium ${tierConfig[tooltip.tier].classes}`}>
             {tierConfig[tooltip.tier].label.split('—')[0].trim()}
           </span>

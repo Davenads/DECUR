@@ -26,11 +26,11 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4 space-y-1">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 space-y-1">
           <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">Service Period</p>
           <p className="text-sm font-semibold text-gray-800">{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 space-y-1">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 space-y-1">
           <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">Clearance</p>
           <p className="text-sm font-semibold text-gray-800">{profile.clearance}</p>
         </div>
@@ -55,7 +55,7 @@ const OverviewTab: FC = () => {
         <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Organizations</h4>
         <div className="flex flex-wrap gap-1.5">
           {profile.organizations.map((o, i) => (
-            <span key={i} className="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-full">{o}</span>
+            <span key={i} className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2.5 py-1 rounded-full">{o}</span>
           ))}
         </div>
       </div>
@@ -92,12 +92,12 @@ const ClaimsTab: FC = () => {
 
       <div className="flex flex-wrap gap-1.5">
         <button onClick={() => setFilter('all')}
-          className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors ${filter === 'all' ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}>
+          className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors ${filter === 'all' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'}`}>
           All
         </button>
         {categories.map(cat => (
           <button key={cat} onClick={() => setFilter(cat)}
-            className={`text-xs px-2.5 py-1 rounded-full font-medium capitalize transition-colors ${filter === cat ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}>
+            className={`text-xs px-2.5 py-1 rounded-full font-medium capitalize transition-colors ${filter === cat ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'}`}>
             {cat.replace(/-/g, ' ')}
           </button>
         ))}
@@ -107,7 +107,7 @@ const ClaimsTab: FC = () => {
         {filtered.map(claim => {
           const cfg = statusConfig[claim.status] ?? statusConfig['unverified'];
           return (
-            <div key={claim.id} className="border border-gray-200 rounded-lg p-4">
+            <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
               <div className="flex items-start justify-between gap-3 mb-2">
                 <p className="text-xs font-medium text-gray-400 uppercase tracking-wide capitalize">
                   {claim.category.replace(/-/g, ' ')}
@@ -146,7 +146,7 @@ const DisclosuresTab: FC = () => {
         {disclosures.map((d, i) => (
           <div key={i} className="relative">
             <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white" />
-            <div className="border border-gray-200 rounded-lg p-4">
+            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
               <div className="flex items-start justify-between gap-3 mb-1">
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">{d.title}</h4>
@@ -154,7 +154,7 @@ const DisclosuresTab: FC = () => {
                 </div>
                 <div className="flex flex-col items-end gap-1 shrink-0">
                   <span className="font-mono text-xs text-gray-400">{d.date}</span>
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium capitalize ${typeColors[d.type] ?? 'bg-gray-100 text-gray-600'}`}>
+                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium capitalize ${typeColors[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
                     {d.type.replace(/-/g, ' ')}
                   </span>
                 </div>
@@ -186,7 +186,7 @@ const LegislativeTab: FC = () => {
 
       <div>
         <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">UAP Disclosure Act</h4>
-        <div className="border border-gray-200 rounded-lg p-4 space-y-3">
+        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-3">
           <div className="flex items-center justify-between flex-wrap gap-2">
             <p className="text-sm font-semibold text-gray-900">Schumer-Rounds UAP Disclosure Act</p>
             <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">Partially enacted</span>
@@ -206,7 +206,7 @@ const LegislativeTab: FC = () => {
 
       <div>
         <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">2024 NDAA Provisions</h4>
-        <div className="border border-gray-200 rounded-lg p-4">
+        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <p className="text-xs text-gray-400 mb-1">Enacted {legislative_impact.ndaa_2024.enacted}</p>
           <p className="text-sm text-gray-700">{legislative_impact.ndaa_2024.provisions}</p>
         </div>
@@ -215,7 +215,7 @@ const LegislativeTab: FC = () => {
       <div>
         <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Government Response</h4>
         <div className="space-y-3">
-          <div className="border border-gray-200 rounded-lg p-4">
+          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
             <div className="flex items-start justify-between gap-3 mb-2">
               <p className="text-sm font-semibold text-gray-900">AARO Historical Record Report</p>
               <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-medium shrink-0">Contradicts</span>
@@ -226,7 +226,7 @@ const LegislativeTab: FC = () => {
               KONA BLUE: {government_response.aaro_historical_report.kona_blue_finding}
             </p>
           </div>
-          <div className="border border-gray-200 rounded-lg p-4">
+          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
             <div className="flex items-start justify-between gap-3 mb-2">
               <p className="text-sm font-semibold text-gray-900">ICIG Assessment</p>
               <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium shrink-0">Supports</span>
@@ -249,7 +249,7 @@ const NetworkTab: FC = () => {
         Key individuals connected to Grusch&apos;s disclosure and the broader UAP transparency movement.
       </p>
       {associated_people.map(person => (
-        <div key={person.id} className="border border-gray-200 rounded-lg p-5">
+        <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
           <h4 className="font-semibold text-gray-900 mb-0.5">{person.name}</h4>
           <p className="text-xs text-primary font-medium mb-2">{person.role}</p>
           <p className="text-sm text-gray-700">{person.relationship}</p>
@@ -311,7 +311,7 @@ const AssessmentTab: FC = () => {
         <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Sources</h4>
         <div className="space-y-2">
           {data.sources.map((src, i) => (
-            <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 rounded-lg p-3">
+            <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
               <div>
                 <p className="text-sm font-medium text-gray-800">{src.title}</p>
                 <p className="text-xs text-gray-400 mt-0.5 capitalize">{src.type.replace(/-/g, ' ')} · {src.notes}</p>

@@ -33,19 +33,19 @@ const OverviewTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
           <p className="text-sm text-gray-800">{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
           <p className="text-sm text-gray-800">{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
           <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
@@ -105,19 +105,19 @@ const StargateTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Puthoff Role</p>
           <p className="text-sm text-gray-800">{stargate.puthoff_role}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Budget (est.)</p>
           <p className="text-sm text-gray-800">{stargate.budget}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Location</p>
           <p className="text-sm text-gray-800">{stargate.location}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Predecessor Programs</p>
           <p className="text-sm text-gray-800">{stargate.predecessor_programs.join(' · ')}</p>
         </div>
@@ -139,7 +139,7 @@ const StargateTab: FC = () => {
         <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Key Findings</h4>
         <div className="space-y-2">
           {stargate.key_findings.map((f, i) => (
-            <div key={i} className="flex gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
+            <div key={i} className="flex gap-2 text-sm text-gray-700 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{f}</span>
             </div>
@@ -147,12 +147,12 @@ const StargateTab: FC = () => {
         </div>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Declassification</p>
         <p className="text-sm text-gray-700">{stargate.declassification}</p>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">AIR Review (1995)</p>
         <p className="text-sm text-gray-700">{stargate.air_review}</p>
       </div>
@@ -171,19 +171,19 @@ const DirdsTab: FC = () => {
   return (
     <div className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Program</p>
           <p className="text-sm text-gray-800">{dirds.program}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Period</p>
           <p className="text-sm text-gray-800">{dirds.period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Contracting Agency</p>
           <p className="text-sm text-gray-800">{dirds.contracting_agency}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Puthoff Authored</p>
           <p className="text-sm text-gray-800">{dirds.puthoff_authored} of {dirds.total_dirds} total</p>
         </div>
@@ -200,10 +200,10 @@ const DirdsTab: FC = () => {
           {dirds.documents.map((doc, i) => {
             const isOpen = expanded === i;
             return (
-              <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
+              <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
                 <button
                   onClick={() => setExpanded(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
                 >
                   <span className="font-medium text-gray-900 text-sm pr-4">{doc.title}</span>
                   <svg
@@ -238,7 +238,7 @@ const PhysicsTab: FC = () => {
         <p className="text-sm text-gray-700">{phys.primary_focus}</p>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">EarthTech Mission</p>
         <p className="text-sm text-gray-700">{phys.earthtech_mission}</p>
       </div>
@@ -249,10 +249,10 @@ const PhysicsTab: FC = () => {
           {phys.key_theories.map((theory, i) => {
             const isOpen = expanded === i;
             return (
-              <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
+              <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
                 <button
                   onClick={() => setExpanded(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
                 >
                   <span className="font-medium text-gray-900 text-sm">{theory.name}</span>
                   <svg
@@ -284,9 +284,9 @@ const ClaimsTab: FC = () => {
     <div className="space-y-5">
       <ClaimsStatusBar claims={claims} />
       {claims.map(c => {
-        const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 text-gray-600' };
+        const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
         return (
-          <div key={c.id} className="border border-gray-200 rounded-lg p-5 space-y-3">
+          <div key={c.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
             <div className="flex items-start justify-between gap-3">
               <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{c.category}</p>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
@@ -324,13 +324,13 @@ const DisclosuresTab: FC = () => {
   return (
     <div className="space-y-3">
       {disclosures.map((d, i) => (
-        <div key={i} className="border border-gray-200 rounded-lg p-4">
+        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div className="flex items-start gap-3">
             <span className="font-mono text-xs text-gray-400 whitespace-nowrap mt-0.5 pt-px">{d.date}</span>
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-2 mb-1">
                 <p className="font-medium text-gray-900 text-sm">{d.title}</p>
-                <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 whitespace-nowrap ${typeBadges[d.type] ?? 'bg-gray-100 text-gray-600'}`}>
+                <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 whitespace-nowrap ${typeBadges[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
                   {typeLabels[d.type] ?? d.type}
                 </span>
               </div>
@@ -350,7 +350,7 @@ const NetworkTab: FC = () => {
     <div className="space-y-4">
       <p className="text-sm text-gray-500">Key figures in Puthoff's professional and research network.</p>
       {associated_people.map(person => (
-        <div key={person.id} className="border border-gray-200 rounded-lg p-4">
+        <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <p className="font-semibold text-gray-900 text-sm">{person.name}</p>
           <p className="text-xs text-primary mb-2">{person.role}</p>
           <p className="text-sm text-gray-600">{person.relationship}</p>

@@ -13,10 +13,10 @@ const ClaimsStatusBar: FC<ClaimsStatusBarProps> = ({ claims }) => {
   })).filter(s => s.count > 0);
 
   return (
-    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
+    <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-3">
       <div className="flex items-center justify-between">
-        <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Claims Verification Overview</p>
-        <span className="text-xs text-gray-400">{total} total claims</span>
+        <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Claims Verification Overview</p>
+        <span className="text-xs text-gray-400 dark:text-gray-500">{total} total claims</span>
       </div>
 
       <div className="flex h-3 rounded-full overflow-hidden gap-px">
@@ -34,8 +34,8 @@ const ClaimsStatusBar: FC<ClaimsStatusBarProps> = ({ claims }) => {
         {counts.map(s => (
           <div key={s.key} className="flex items-center gap-1.5">
             <span className={`w-2 h-2 rounded-full shrink-0 ${s.dot}`} />
-            <span className="text-xs text-gray-600">{s.label}</span>
-            <span className="text-xs font-semibold text-gray-800">{s.count}</span>
+            <span className="text-xs text-gray-600 dark:text-gray-300">{s.label}</span>
+            <span className="text-xs font-semibold text-gray-800 dark:text-gray-100">{s.count}</span>
           </div>
         ))}
       </div>

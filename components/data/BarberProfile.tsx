@@ -28,19 +28,19 @@ const OverviewTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
           <p className="text-sm text-gray-800">{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
           <p className="text-sm text-gray-800">{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
           <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
@@ -98,7 +98,7 @@ const DisclosureTab: FC = () => {
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Public Disclosures</h3>
         <div className="space-y-4">
           {disclosures.map((d, i) => (
-            <div key={i} className="border border-gray-200 rounded-lg p-5">
+            <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
               <div className="flex items-start justify-between gap-3 mb-2">
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">{d.title}</h4>
@@ -106,7 +106,7 @@ const DisclosureTab: FC = () => {
                 </div>
                 <span className="font-mono text-xs text-gray-400 shrink-0">{d.date}</span>
               </div>
-              <p className="text-xs text-gray-500 bg-gray-50 rounded p-2">{d.notes}</p>
+              <p className="text-xs text-gray-500 bg-gray-50 dark:bg-gray-800 rounded p-2">{d.notes}</p>
             </div>
           ))}
         </div>
@@ -125,7 +125,7 @@ const DisclosureTab: FC = () => {
         <h3 className="text-lg font-semibold text-gray-900 mb-3">Associated People</h3>
         <div className="space-y-3">
           {data.associated_people.map(person => (
-            <div key={person.id} className="border border-gray-200 rounded-lg p-4">
+            <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
               <h4 className="font-semibold text-gray-900 mb-0.5">{person.name}</h4>
               <p className="text-xs text-primary mb-2">{person.role}</p>
               <p className="text-sm text-gray-700 leading-relaxed">{person.relationship}</p>
@@ -143,9 +143,9 @@ const ClaimsTab: FC = () => {
     <div className="space-y-5">
       <ClaimsStatusBar claims={claims} />
       {claims.map(claim => {
-        const cfg = statusConfig[claim.status] ?? { label: claim.status, classes: 'bg-gray-100 text-gray-600' };
+        const cfg = statusConfig[claim.status] ?? { label: claim.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
         return (
-          <div key={claim.id} className="border border-gray-200 rounded-lg p-5 space-y-3">
+          <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
             <div className="flex items-start justify-between gap-3">
               <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{claim.category}</p>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>

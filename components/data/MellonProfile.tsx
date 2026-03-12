@@ -33,19 +33,19 @@ const OverviewTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
           <p className="text-sm text-gray-800">{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
           <p className="text-sm text-gray-800">{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
           <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
@@ -124,15 +124,15 @@ const TTSATab: FC = () => {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Title</p>
           <p className="text-sm text-gray-800">{ttsa_role.title}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Joined</p>
           <p className="text-sm text-gray-800">{ttsa_role.joined}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Co-Founders</p>
           <p className="text-sm text-gray-800">{ttsa_role.co_founders.join(', ')}</p>
         </div>
@@ -150,7 +150,7 @@ const TTSATab: FC = () => {
         </ul>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-5 space-y-3">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
         <h3 className="text-base font-semibold text-gray-900">2017 Video Release</h3>
         <div>
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Videos</p>
@@ -211,9 +211,9 @@ const ClaimsTab: FC = () => {
       <ClaimsStatusBar claims={claims} />
       <div className="space-y-4">
         {claims.map((c, i) => {
-          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 text-gray-600' };
+          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
           return (
-            <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-2">
+            <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
               <div className="flex items-start justify-between gap-3">
                 <p className="text-sm font-medium text-gray-900 leading-snug">{c.claim}</p>
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
@@ -235,10 +235,10 @@ const DisclosuresTab: FC = () => {
   return (
     <div className="space-y-4">
       {disclosures.map((d, i) => (
-        <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-1.5">
+        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-1.5">
           <div className="flex items-center gap-2 flex-wrap">
             <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded">{d.date}</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-medium">{d.type}</span>
+            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">{d.type}</span>
             <span className="text-xs text-gray-400">{d.outlet}</span>
           </div>
           <p className="text-sm text-gray-700 leading-relaxed">{d.description}</p>
@@ -254,7 +254,7 @@ const NetworkTab: FC = () => {
     <div className="space-y-4">
       <p className="text-sm text-gray-500">Key relationships in Mellon's disclosure network.</p>
       {associated_people.map((p, i) => (
-        <div key={i} className="flex gap-3 border border-gray-200 rounded-lg p-4">
+        <div key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
             <span className="text-xs font-bold text-primary">{p.name.charAt(0)}</span>
           </div>

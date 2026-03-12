@@ -16,8 +16,8 @@ const CategoryBreakdown: FC<CategoryBreakdownProps> = ({ supporting, against }) 
   ).sort();
 
   return (
-    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
-      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Breakdown by Category</p>
+    <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-3">
+      <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Breakdown by Category</p>
       <div className="space-y-2">
         {allCategories.map(cat => {
           const sup = supporting.filter(a => a.category === cat).length;
@@ -27,8 +27,8 @@ const CategoryBreakdown: FC<CategoryBreakdownProps> = ({ supporting, against }) 
           return (
             <div key={cat} className="space-y-1">
               <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-600 capitalize">{cat}</span>
-                <span className="text-xs text-gray-400">
+                <span className="text-xs text-gray-600 dark:text-gray-300 capitalize">{cat}</span>
+                <span className="text-xs text-gray-400 dark:text-gray-500">
                   {sup > 0 && <span className="text-green-600 font-medium">+{sup}</span>}
                   {sup > 0 && agt > 0 && <span className="text-gray-300 mx-1">·</span>}
                   {agt > 0 && <span className="text-red-500 font-medium">-{agt}</span>}

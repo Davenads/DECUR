@@ -56,16 +56,16 @@ const MediaBrowser: FC<Props> = ({ entries }) => {
               href={entry.source_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-4 p-4 border border-gray-200 rounded-lg hover:shadow-md hover:border-primary transition-all group"
+              className="flex gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md hover:border-primary transition-all group"
             >
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TYPE_COLORS[type] ?? 'bg-gray-100 text-gray-700'}`}>
+                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TYPE_COLORS[type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200'}`}>
                     {TYPE_LABELS[type] ?? type}
                   </span>
                   <span className="text-xs text-gray-400">{entry.year}</span>
                 </div>
-                <h3 className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors">
                   {entry.title}
                 </h3>
                 {entry.excerpt && (

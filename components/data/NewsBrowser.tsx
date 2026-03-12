@@ -39,11 +39,11 @@ const NewsBrowser: FC<Props> = ({ entries }) => {
             href={entry.source_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-4 p-4 border border-gray-200 rounded-lg hover:shadow-md hover:border-primary transition-all group"
+            className="flex gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md hover:border-primary transition-all group"
           >
             <div className="flex-1 min-w-0">
               <span className="text-xs text-gray-400 block mb-1">{entry.date}</span>
-              <h3 className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors">
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors">
                 {entry.title}
               </h3>
               {entry.excerpt && (

@@ -48,23 +48,23 @@ const OverviewTab: FC<{ d: DocumentEntry }> = ({ d }) => {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Date</p>
           <p className="text-sm text-gray-800">{d.date}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Document Type</p>
           <p className="text-sm text-gray-800">{docTypeLabel[d.document_type]}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Pages</p>
           <p className="text-sm text-gray-800">{d.page_count}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Authentication</p>
           <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${auth.classes}`}>{auth.label}</span>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Issuing Authority</p>
           <p className="text-sm text-gray-800">{d.issuing_authority}</p>
         </div>
@@ -92,7 +92,7 @@ const KeyFindingsTab: FC<{ d: DocumentEntry }> = ({ d }) => (
     <p className="text-sm text-gray-500">Documented findings and conclusions from within the document.</p>
     <ul className="space-y-3">
       {d.key_findings.map((f, i) => (
-        <li key={i} className="flex gap-3 border border-gray-200 rounded-lg p-3">
+        <li key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-3">
           <span className="text-primary font-mono text-xs font-bold shrink-0 mt-0.5">{String(i + 1).padStart(2, '0')}</span>
           <span className="text-sm text-gray-700 leading-relaxed">{f}</span>
         </li>
@@ -144,7 +144,7 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
       {d.insider_connections.map((id, i) => {
         const person = labels[id] ?? { name: id, role: 'DECUR insider', note: '' };
         return (
-          <div key={i} className="flex gap-3 border border-gray-200 rounded-lg p-4">
+          <div key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
               <span className="text-xs font-bold text-primary">{person.name.charAt(0)}</span>
             </div>
@@ -205,10 +205,10 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack }) => {
           ← Back
         </button>
         <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900 leading-snug">{d.name}</h2>
+          <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h2>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
             <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${auth.classes}`}>{auth.label}</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">{docTypeLabel[d.document_type]}</span>
+            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">{docTypeLabel[d.document_type]}</span>
             <span className="text-xs text-gray-400">{d.date}</span>
           </div>
         </div>
@@ -250,7 +250,7 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
       </div>
 
       {/* Auth legend */}
-      <div className="flex flex-wrap gap-2 mb-6 p-3 bg-gray-50 rounded-lg">
+      <div className="flex flex-wrap gap-2 mb-6 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
         {(Object.keys(authConfig) as AuthStatus[]).map(k => (
           <span key={k} className={`text-xs px-2 py-0.5 rounded-full font-medium ${authConfig[k].classes}`}>
             {authConfig[k].label}
@@ -264,11 +264,11 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
           return (
             <div
               key={d.id}
-              className="border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all"
+              className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all"
             >
               <div className="flex items-start justify-between gap-3 mb-2">
                 <div className="flex items-start gap-2 flex-wrap">
-                  <h3 className="text-base font-semibold text-gray-900 leading-snug">{d.name}</h3>
+                  <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h3>
                 </div>
                 <button
                   onClick={() => setSelectedId(d.id)}
@@ -285,7 +285,7 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
 
               <div className="flex items-center gap-2 mb-3 flex-wrap">
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${auth.classes}`}>{auth.label}</span>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">{docTypeLabel[d.document_type]}</span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">{docTypeLabel[d.document_type]}</span>
                 {d.insider_connections.length > 0 && (
                   <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
                     {d.insider_connections.length} insider connection{d.insider_connections.length !== 1 ? 's' : ''}

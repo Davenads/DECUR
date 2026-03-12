@@ -45,11 +45,11 @@ const Glossary: FC<GlossaryProps> = ({ terms }) => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Glossary</h2>
-      <p className="text-sm text-gray-500 mb-1">
+      <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Glossary</h2>
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
         Key terms and acronyms used across government, military, and insider disclosure contexts.
       </p>
-      <p className="text-xs text-gray-400 mb-6">
+      <p className="text-xs text-gray-400 dark:text-gray-500 mb-6">
         {terms.filter(t => t.source === 'curated').length} curated &middot; {terms.filter(t => t.source === 'gerb').length} extracted from UAP Gerb research
       </p>
 
@@ -60,10 +60,10 @@ const Glossary: FC<GlossaryProps> = ({ terms }) => {
           placeholder="Search terms..."
           value={search}
           onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
-          className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          className="w-full px-4 py-2 pl-9 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
         />
         <svg
-          className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400"
+          className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 dark:text-gray-500"
           fill="none" viewBox="0 0 24 24" stroke="currentColor"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -81,7 +81,7 @@ const Glossary: FC<GlossaryProps> = ({ terms }) => {
               className={`w-7 h-7 flex items-center justify-center rounded text-xs font-medium transition-colors ${
                 activeLetters.includes(letter)
                   ? 'bg-primary text-white'
-                  : 'bg-gray-100 text-gray-300 cursor-default pointer-events-none'
+                  : 'bg-gray-100 dark:bg-gray-700 text-gray-300 dark:text-gray-600 cursor-default pointer-events-none'
               }`}
             >
               {letter}
@@ -92,25 +92,25 @@ const Glossary: FC<GlossaryProps> = ({ terms }) => {
 
       {/* Terms */}
       {activeLetters.length === 0 ? (
-        <p className="text-gray-500 text-center py-8 text-sm">No terms found.</p>
+        <p className="text-gray-500 dark:text-gray-400 text-center py-8 text-sm">No terms found.</p>
       ) : (
         <div className="space-y-8">
           {activeLetters.map(letter => (
             <div key={letter} id={`gl-${letter}`}>
-              <h3 className="text-lg font-bold text-primary border-b border-gray-200 pb-1 mb-4">{letter}</h3>
+              <h3 className="text-lg font-bold text-primary border-b border-gray-200 dark:border-gray-700 pb-1 mb-4">{letter}</h3>
               <div className="space-y-4">
                 {grouped[letter].map((item, i) => (
                   <div key={i} className="flex gap-3">
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1">
-                        <h4 className="text-sm font-semibold text-gray-900">{item.term}</h4>
+                        <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{item.term}</h4>
                         {item.source === 'gerb' && (
-                          <span className="text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-400 font-normal leading-none">
+                          <span className="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500 font-normal leading-none">
                             research
                           </span>
                         )}
                       </div>
-                      <p className="text-sm text-gray-600 leading-relaxed">{item.definition}</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{item.definition}</p>
                     </div>
                   </div>
                 ))}

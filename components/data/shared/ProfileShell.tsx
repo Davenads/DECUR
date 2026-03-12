@@ -42,7 +42,7 @@ const ProfileShell: FC<ProfileShellProps> = ({
         </button>
         <div className="flex items-start justify-between">
           <div>
-            <h2 className="text-2xl font-bold font-heading text-gray-900">{name}</h2>
+            <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100">{name}</h2>
             <p className="text-sm text-gray-500 mt-0.5">{role}, {period}</p>
           </div>
           <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium shrink-0">

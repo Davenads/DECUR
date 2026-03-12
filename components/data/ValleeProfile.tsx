@@ -33,19 +33,19 @@ const OverviewTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Research Period</p>
           <p className="text-sm text-gray-800">{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
           <p className="text-sm text-gray-800">{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
           <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Education</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.education.map(e => (
@@ -98,9 +98,9 @@ const ForbiddenScienceTab: FC = () => {
         <h3 className="text-lg font-semibold text-gray-900 mb-3">The Four Volumes</h3>
         <div className="space-y-2">
           {forbidden_science.volumes.map((vol, i) => (
-            <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
+            <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
               <button
-                className="w-full flex items-start justify-between gap-3 p-4 text-left hover:bg-gray-50 transition-colors"
+                className="w-full flex items-start justify-between gap-3 p-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
                 onClick={() => setOpenIdx(openIdx === i ? null : i)}
               >
                 <div className="flex items-start gap-3">
@@ -146,17 +146,17 @@ const TheoryTab: FC = () => {
         <p className="text-sm text-amber-900 leading-relaxed">{theory.eth_critique}</p>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4 space-y-2">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
         <h3 className="text-sm font-semibold text-gray-900">Control System Hypothesis</h3>
         <p className="text-sm text-gray-700 leading-relaxed">{theory.control_system_hypothesis}</p>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4 space-y-2">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
         <h3 className="text-sm font-semibold text-gray-900">Interdimensional Hypothesis</h3>
         <p className="text-sm text-gray-700 leading-relaxed">{theory.interdimensional_hypothesis}</p>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4 space-y-2">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
         <h3 className="text-sm font-semibold text-gray-900">Magonia Framework</h3>
         <p className="text-sm text-gray-700 leading-relaxed">{theory.magonia_framework}</p>
       </div>
@@ -170,7 +170,7 @@ const TheoryTab: FC = () => {
         <h3 className="text-base font-semibold text-gray-900 mb-3">Key Publications</h3>
         <div className="space-y-2">
           {theory.key_publications.map((pub, i) => (
-            <div key={i} className="flex items-start gap-3 border border-gray-200 rounded-lg p-3">
+            <div key={i} className="flex items-start gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-3">
               <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0">{pub.year}</span>
               <div>
                 <p className="text-sm font-medium text-gray-900">{pub.title}</p>
@@ -189,19 +189,19 @@ const NidsTab: FC = () => {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Title</p>
           <p className="text-sm text-gray-800">{nids_role.title}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Period</p>
           <p className="text-sm text-gray-800">{nids_role.period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organization</p>
           <p className="text-sm text-gray-800">{nids_role.organization}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Founder</p>
           <p className="text-sm text-gray-800">{nids_role.founder}</p>
         </div>
@@ -234,9 +234,9 @@ const ClaimsTab: FC = () => {
       <ClaimsStatusBar claims={claims} />
       <div className="space-y-4">
         {claims.map((c, i) => {
-          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 text-gray-600' };
+          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
           return (
-            <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-2">
+            <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
               <div className="flex items-start justify-between gap-3">
                 <p className="text-sm font-medium text-gray-900 leading-snug">{c.claim}</p>
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
@@ -258,10 +258,10 @@ const DisclosuresTab: FC = () => {
   return (
     <div className="space-y-4">
       {disclosures.map((d, i) => (
-        <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-1.5">
+        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-1.5">
           <div className="flex items-center gap-2 flex-wrap">
             <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded">{d.date}</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-medium">{d.type}</span>
+            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">{d.type}</span>
             <span className="text-xs text-gray-400">{d.outlet}</span>
           </div>
           <p className="text-sm text-gray-700 leading-relaxed">{d.description}</p>
@@ -277,7 +277,7 @@ const NetworkTab: FC = () => {
     <div className="space-y-4">
       <p className="text-sm text-gray-500">Key relationships spanning six decades of UAP research.</p>
       {associated_people.map((p, i) => (
-        <div key={i} className="flex gap-3 border border-gray-200 rounded-lg p-4">
+        <div key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
             <span className="text-xs font-bold text-primary">{p.name.charAt(0)}</span>
           </div>

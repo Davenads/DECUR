@@ -29,19 +29,19 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
     <div>
       <div className="mb-6 flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Documented Cases</h2>
-          <p className="text-sm text-gray-500">
+          <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Documented Cases</h2>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
             The strongest credible UAP incidents in the public record, assessed by evidence quality and official documentation.
           </p>
         </div>
         {/* View toggle */}
-        <div className="flex gap-1 bg-gray-100 rounded-lg p-1 shrink-0">
+        <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1 shrink-0">
           {(['list', 'map'] as ViewMode[]).map(mode => (
             <button
               key={mode}
               onClick={() => setViewMode(mode)}
               className={`text-xs px-3 py-1 rounded-md font-medium transition-colors capitalize flex items-center gap-1.5 ${
-                viewMode === mode ? 'bg-white text-primary shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                viewMode === mode ? 'bg-white dark:bg-gray-800 text-primary shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
               }`}
             >
               {mode === 'list' ? (
@@ -68,7 +68,7 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
 
       {/* Tier legend (list only) */}
       {viewMode === 'list' && (
-        <div className="flex flex-wrap gap-3 mb-6 p-3 bg-gray-50 rounded-lg">
+        <div className="flex flex-wrap gap-3 mb-6 p-3 bg-gray-50 dark:bg-gray-900 rounded-lg">
           {(Object.keys(tierConfig) as EvidenceTier[]).map(tier => (
             <span key={tier} className={`text-xs px-2 py-0.5 rounded-full font-medium ${tierConfig[tier].classes}`}>
               {tierConfig[tier].label}
@@ -83,12 +83,12 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
           return (
             <div
               key={c.id}
-              className="border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
+              className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
             >
               {/* Name row + button */}
               <div className="flex items-start justify-between gap-3 mb-2">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h3 className="text-lg font-semibold text-gray-900">{c.name}</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{c.name}</h3>
                   <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${tier.classes}`}>
                     {c.evidence_tier.replace('-', ' ').toUpperCase()}
                   </span>
@@ -103,16 +103,16 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
 
               {/* Metadata */}
               <p className="text-sm font-medium text-primary mb-0.5">{c.location}</p>
-              <p className="text-xs text-gray-400 mb-3">
+              <p className="text-xs text-gray-400 dark:text-gray-500 mb-3">
                 {c.date} · {c.country} · {c.witnesses.length} witness{c.witnesses.length !== 1 ? 'es' : ''} documented
               </p>
 
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">{c.summary}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3">{c.summary}</p>
 
               {/* Tags + insider links */}
               <div className="flex flex-wrap gap-1.5">
                 {c.tags.map(tag => (
-                  <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">{tag}</span>
+                  <span key={tag} className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">{tag}</span>
                 ))}
                 {c.insider_connections.length > 0 && (
                   <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">

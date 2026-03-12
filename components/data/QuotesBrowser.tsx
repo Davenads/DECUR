@@ -33,14 +33,14 @@ const QuotesBrowser: FC<Props> = ({ entries }) => {
         {filtered.map((entry: TimelineEntry) => (
           <div
             key={entry.id}
-            className="bg-white border border-gray-200 rounded-lg p-5"
+            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5"
           >
             {/* Speaker header */}
             <div className="flex items-start justify-between gap-3 mb-3">
               <div>
-                <p className="text-sm font-semibold text-gray-900">{entry.title}</p>
+                <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">{entry.title}</p>
                 {entry.excerpt && (
-                  <p className="text-xs text-gray-400 mt-0.5">{entry.excerpt}</p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{entry.excerpt}</p>
                 )}
               </div>
               <span className="text-xs text-gray-400 whitespace-nowrap shrink-0 pt-0.5">{entry.date}</span>
@@ -49,7 +49,7 @@ const QuotesBrowser: FC<Props> = ({ entries }) => {
             {/* Quote body */}
             {entry.quote_text ? (
               <blockquote className="border-l-2 border-primary/30 pl-4 my-2">
-                <p className="text-sm text-gray-700 leading-relaxed italic">
+                <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed italic">
                   {entry.quote_text}
                 </p>
                 {entry.quote_attribution && (
@@ -63,7 +63,7 @@ const QuotesBrowser: FC<Props> = ({ entries }) => {
             )}
 
             {/* Source link */}
-            <div className="mt-3 pt-3 border-t border-gray-100">
+            <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
               {entry.source === 'aod' ? (
                 <span className="text-xs text-gray-400">
                   {entry.timestamp

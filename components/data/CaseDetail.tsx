@@ -10,7 +10,7 @@ import insidersIndex from '../../data/insiders/index.json';
 export const tierConfig: Record<EvidenceTier, { label: string; classes: string }> = {
   'tier-1': { label: 'Tier 1 — Official Documentation', classes: 'bg-green-100 text-green-700' },
   'tier-2': { label: 'Tier 2 — Declassified Records',   classes: 'bg-blue-100 text-blue-700'  },
-  'tier-3': { label: 'Tier 3 — Credentialed Testimony', classes: 'bg-gray-100 text-gray-600'  },
+  'tier-3': { label: 'Tier 3 — Credentialed Testimony', classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'  },
 };
 
 const witnessTypeLabel: Record<string, string> = {
@@ -37,60 +37,81 @@ type DetailTabId = typeof DETAIL_TABS[number]['id'];
 
 /* ─── Tab sub-components ───────────────────────────────────────── */
 
-const OverviewTab: FC<{ c: CaseEntry }> = ({ c }) => (
-  <div className="space-y-6">
-    <p className="text-sm text-gray-700 leading-relaxed">{c.summary}</p>
-    <div>
-      <h3 className="text-base font-semibold text-gray-900 mb-3">Key Facts</h3>
-      <ul className="space-y-2">
-        {c.overview.key_facts.map((fact, i) => (
-          <li key={i} className="flex gap-2 text-sm text-gray-700">
-            <span className="text-primary mt-0.5 shrink-0">›</span>
-            <span>{fact}</span>
-          </li>
-        ))}
-      </ul>
+const OverviewTab: FC<{ c: CaseEntry }> = ({ c }) => {
+  const year = c.date?.split('-')[0];
+  return (
+    <div className="space-y-6">
+      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{c.summary}</p>
+      <div>
+        <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Facts</h3>
+        <ul className="space-y-2">
+          {c.overview.key_facts.map((fact, i) => (
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+              <span className="text-primary mt-0.5 shrink-0">›</span>
+              <span>{fact}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {year && (
+        <div className="border-t border-gray-100 dark:border-gray-800 pt-4">
+          <Link
+            href={`/timeline?year=${year}`}
+            className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+          >
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-0.5">Historical Timeline</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors">
+                View {year} events in the timeline
+              </p>
+            </div>
+            <svg className="h-4 w-4 text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 
 const EvidenceTab: FC<{ c: CaseEntry }> = ({ c }) => (
   <div className="space-y-6">
     {c.evidence.video_audio.length > 0 && (
       <div>
-        <h3 className="text-sm font-semibold text-gray-900 mb-2 flex items-center gap-2">
+        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-red-400 shrink-0" />
           Video / Audio
         </h3>
         <ul className="space-y-1.5 pl-4">
           {c.evidence.video_audio.map((e, i) => (
-            <li key={i} className="text-sm text-gray-700 leading-relaxed">{e}</li>
+            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{e}</li>
           ))}
         </ul>
       </div>
     )}
     {c.evidence.documentation.length > 0 && (
       <div>
-        <h3 className="text-sm font-semibold text-gray-900 mb-2 flex items-center gap-2">
+        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-blue-400 shrink-0" />
           Documentation
         </h3>
         <ul className="space-y-1.5 pl-4">
           {c.evidence.documentation.map((e, i) => (
-            <li key={i} className="text-sm text-gray-700 leading-relaxed">{e}</li>
+            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{e}</li>
           ))}
         </ul>
       </div>
     )}
     {c.evidence.physical.length > 0 && (
       <div>
-        <h3 className="text-sm font-semibold text-gray-900 mb-2 flex items-center gap-2">
+        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
           Physical Evidence
         </h3>
         <ul className="space-y-1.5 pl-4">
           {c.evidence.physical.map((e, i) => (
-            <li key={i} className="text-sm text-gray-700 leading-relaxed">{e}</li>
+            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{e}</li>
           ))}
         </ul>
       </div>
@@ -101,18 +122,18 @@ const EvidenceTab: FC<{ c: CaseEntry }> = ({ c }) => (
 const WitnessesTab: FC<{ c: CaseEntry }> = ({ c }) => (
   <div className="space-y-4">
     {c.witnesses.map((w, i) => (
-      <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-2">
+      <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
         <div className="flex items-start justify-between gap-3 flex-wrap">
           <div>
-            <p className="text-sm font-semibold text-gray-900">{w.name}</p>
+            <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">{w.name}</p>
             <p className="text-xs text-primary leading-snug mt-0.5">{w.role}</p>
           </div>
-          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-medium shrink-0">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 font-medium shrink-0">
             {witnessTypeLabel[w.type] ?? w.type}
           </span>
         </div>
         <blockquote className="border-l-2 border-primary/30 pl-3">
-          <p className="text-xs text-gray-600 leading-relaxed italic">&quot;{w.testimony}&quot;</p>
+          <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed italic">&quot;{w.testimony}&quot;</p>
         </blockquote>
       </div>
     ))}
@@ -122,21 +143,21 @@ const WitnessesTab: FC<{ c: CaseEntry }> = ({ c }) => (
 const OfficialResponseTab: FC<{ c: CaseEntry }> = ({ c }) => (
   <div className="space-y-6">
     <div>
-      <h3 className="text-sm font-semibold text-gray-900 mb-2">Agencies Involved</h3>
+      <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2">Agencies Involved</h3>
       <div className="flex flex-wrap gap-2">
         {c.official_response.agencies.map((a, i) => (
-          <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600">{a}</span>
+          <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">{a}</span>
         ))}
       </div>
     </div>
     <div className="space-y-4">
       {c.official_response.statements.map((s, i) => (
-        <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-2">
+        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-xs font-semibold text-gray-700">{s.source}</span>
+            <span className="text-xs font-semibold text-gray-700 dark:text-gray-300">{s.source}</span>
             <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded">{s.date}</span>
           </div>
-          <p className="text-sm text-gray-700 leading-relaxed">{s.statement}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{s.statement}</p>
         </div>
       ))}
     </div>
@@ -164,15 +185,15 @@ const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
   if (c.insider_connections.length === 0) {
     return (
       <div className="text-center py-10">
-        <p className="text-sm text-gray-400">No direct connections to DECUR insider profiles.</p>
-        <p className="text-xs text-gray-300 mt-1">This incident predates or is independent of the primary disclosure ecosystem.</p>
+        <p className="text-sm text-gray-400 dark:text-gray-500">No direct connections to DECUR insider profiles.</p>
+        <p className="text-xs text-gray-300 dark:text-gray-600 mt-1">This incident predates or is independent of the primary disclosure ecosystem.</p>
       </div>
     );
   }
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-gray-500">Connections to DECUR insider profiles with firsthand involvement or investigative roles.</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400">Connections to DECUR insider profiles with firsthand involvement or investigative roles.</p>
       {c.insider_connections.map((id) => {
         const insider = insiderMap[id];
         const note = CONNECTION_NOTES[id] ?? '';
@@ -182,17 +203,17 @@ const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
           <Link
             key={id}
             href={`/figures/${id}`}
-            className="flex gap-3 border border-gray-200 rounded-lg p-4 hover:border-primary hover:shadow-sm transition-all group"
+            className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary hover:shadow-sm transition-all group"
           >
             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
               <span className="text-xs font-bold text-primary">{displayName.charAt(0)}</span>
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors">{displayName}</p>
+              <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors">{displayName}</p>
               <p className="text-xs text-primary leading-snug truncate">{displayRole}</p>
-              {note && <p className="text-xs text-gray-400 mt-1 leading-snug">{note}</p>}
+              {note && <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 leading-snug">{note}</p>}
             </div>
-            <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0 self-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="h-4 w-4 text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors shrink-0 self-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
@@ -213,7 +234,7 @@ const AssessmentTab: FC<{ c: CaseEntry }> = ({ c }) => (
         <h3 className="text-sm font-semibold text-green-700 mb-2">Supporting</h3>
         <ul className="space-y-2">
           {c.credibility.supporting.map((s, i) => (
-            <li key={i} className="flex gap-2 text-xs text-gray-700">
+            <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
               <span className="text-green-500 mt-0.5 shrink-0">+</span>
               <span>{s}</span>
             </li>
@@ -224,7 +245,7 @@ const AssessmentTab: FC<{ c: CaseEntry }> = ({ c }) => (
         <h3 className="text-sm font-semibold text-red-600 mb-2">Contradicting / Caveats</h3>
         <ul className="space-y-2">
           {c.credibility.contradicting.map((con, i) => (
-            <li key={i} className="flex gap-2 text-xs text-gray-700">
+            <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
               <span className="text-red-400 mt-0.5 shrink-0">-</span>
               <span>{con}</span>
             </li>
@@ -263,20 +284,36 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack }) => {
       <div className="flex items-start gap-4">
         <button
           onClick={onBack}
-          className="text-sm text-gray-400 hover:text-gray-600 transition-colors mt-1 shrink-0"
+          className="text-sm text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mt-1 shrink-0"
         >
           ← Back
         </button>
         <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900">{c.name}</h2>
+          <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100">{c.name}</h2>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
             <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${tier.classes}`}>{tier.label}</span>
-            <span className="text-xs text-gray-400">{c.date}</span>
-            <span className="text-gray-300 text-xs">·</span>
-            <span className="text-xs text-gray-400">{c.location}</span>
+            <span className="text-xs text-gray-400 dark:text-gray-500">{c.date}</span>
+            <span className="text-gray-300 dark:text-gray-600 text-xs">·</span>
+            <span className="text-xs text-gray-400 dark:text-gray-500">{c.location}</span>
           </div>
         </div>
       </div>
+
+      {/* Explore callout */}
+      <Link
+        href="/explore"
+        className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+      >
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-0.5">Explore Visualizations</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors">
+            View this incident on the interactive timeline and event frequency chart
+          </p>
+        </div>
+        <svg className="h-4 w-4 text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </Link>
 
       {/* Tabs */}
       <ProfileTabBar

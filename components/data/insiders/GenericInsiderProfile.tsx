@@ -3,6 +3,7 @@ import Link from 'next/link';
 import ProfileShell from '../shared/ProfileShell';
 import { insiderRegistry } from '../../../data/insiders/registry';
 import casesData from '../../../data/cases.json';
+import insidersIndex from '../../../data/insiders/index.json';
 
 interface GenericInsiderProfileProps {
   id: string;
@@ -98,7 +99,7 @@ function detectFeature(data: Record<string, any>): { key: string; label: string 
 
 const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; name: string; date: string; location: string; evidence_tier: string }> }> = ({ profile, relatedCases }) => (
   <div className="space-y-6">
-    <div className="bg-gray-50 rounded-lg p-4 space-y-3">
+    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 space-y-3">
       {profile.born && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Born</span>
@@ -149,7 +150,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Organizations</h3>
         <div className="flex flex-wrap gap-2">
           {profile.organizations.map((org, i) => (
-            <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600">
+            <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
               {org}
             </span>
           ))}
@@ -193,7 +194,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
             <Link
               key={c.id}
               href={`/cases/${c.id}`}
-              className="flex items-center justify-between gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+              className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
             >
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors truncate">{c.name}</p>
@@ -212,11 +213,11 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
 
 const TimelineTab: FC<{ events: KeyEvent[] }> = ({ events }) => (
   <div className="relative">
-    <div className="absolute left-3 top-0 bottom-0 w-px bg-gray-200" />
+    <div className="absolute left-3 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />
     <div className="space-y-5">
       {events.map((ev, i) => (
         <div key={i} className="flex gap-4 pl-8 relative">
-          <div className="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white shadow" />
+          <div className="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-900 shadow" />
           <div>
             <span className="text-xs font-semibold text-primary">{ev.year}</span>
             <p className="text-sm text-gray-700 mt-0.5 leading-relaxed">{ev.event}</p>
@@ -230,12 +231,12 @@ const TimelineTab: FC<{ events: KeyEvent[] }> = ({ events }) => (
 const PeopleTab: FC<{ people: AssociatedPerson[] }> = ({ people }) => (
   <div className="space-y-4">
     {people.map((person) => (
-      <div key={person.id} className="border border-gray-200 rounded-lg p-4">
+      <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <div className="flex items-start justify-between gap-2 mb-1">
-          <span className="font-medium text-gray-900 text-sm">{person.name}</span>
+          <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">{person.name}</span>
         </div>
         <p className="text-xs text-primary mb-2">{person.role}</p>
-        <p className="text-sm text-gray-600 leading-relaxed">{person.relationship}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{person.relationship}</p>
       </div>
     ))}
   </div>
@@ -244,10 +245,10 @@ const PeopleTab: FC<{ people: AssociatedPerson[] }> = ({ people }) => (
 const DisclosuresTab: FC<{ disclosures: Disclosure[] }> = ({ disclosures }) => (
   <div className="space-y-4">
     {disclosures.map((d, i) => (
-      <div key={i} className="border border-gray-200 rounded-lg p-4">
+      <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <div className="flex items-start justify-between gap-2 mb-1">
           <span className="font-medium text-gray-900 text-sm">{d.title}</span>
-          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 shrink-0">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
             {disclosureLabel(d.type)}
           </span>
         </div>
@@ -264,7 +265,7 @@ const DisclosuresTab: FC<{ disclosures: Disclosure[] }> = ({ disclosures }) => (
 const SourcesTab: FC<{ sources: Source[] }> = ({ sources }) => (
   <div className="space-y-3">
     {sources.map((s, i) => (
-      <div key={i} className="border border-gray-200 rounded-lg p-4">
+      <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <div className="flex items-start justify-between gap-2 mb-1">
           <a
             href={s.url}
@@ -274,7 +275,7 @@ const SourcesTab: FC<{ sources: Source[] }> = ({ sources }) => (
           >
             {s.title}
           </a>
-          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 shrink-0">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
             {s.type}
           </span>
         </div>
@@ -329,7 +330,7 @@ const FeatureTab: FC<{ data: Record<string, any> }> = ({ data }) => {
         );
       }
       return (
-        <div className="border border-gray-100 rounded p-3 space-y-2 mt-1">
+        <div className="border border-gray-100 dark:border-gray-700 rounded p-3 space-y-2 mt-1">
           {entries.map(([k, v]) => (
             <div key={k}>
               <span className="text-xs font-medium text-gray-400">{k.replace(/_/g, ' ')}: </span>
@@ -373,6 +374,9 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) =
     evidence_tier: string; insider_connections: string[];
   }>).filter(c => c.insider_connections.includes(id));
 
+  const includeInExplore = (insidersIndex as Array<{ id: string; includeInExplore?: boolean }>)
+    .find(e => e.id === id)?.includeInExplore ?? false;
+
   const TABS: Array<{ id: TabId; label: string }> = [
     { id: 'overview', label: 'Overview' },
     ...(keyEvents.length > 0 ? [{ id: 'timeline' as TabId, label: 'Timeline' }] : []),
@@ -414,6 +418,24 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) =
       <div className="mt-4">
         {renderTab()}
       </div>
+      {includeInExplore && (
+        <div className="mt-8 border-t border-gray-100 dark:border-gray-700 pt-5">
+          <Link
+            href="/explore"
+            className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+          >
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-0.5">Explore Visualizations</p>
+              <p className="text-sm text-gray-700 group-hover:text-primary transition-colors">
+                View {profile.name}&apos;s events on the interactive timeline overlay
+              </p>
+            </div>
+            <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      )}
     </ProfileShell>
   );
 };

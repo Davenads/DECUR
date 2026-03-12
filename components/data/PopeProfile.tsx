@@ -40,15 +40,15 @@ const OverviewTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
           <p className="text-sm text-gray-800">{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
           <p className="text-sm text-gray-800">{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
           <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
         </div>
@@ -89,34 +89,34 @@ const ModRoleTab: FC = () => {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Title</p>
           <p className="text-sm text-gray-800">{mod_role.title}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Period</p>
           <p className="text-sm text-gray-800">{mod_role.period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Reporting To</p>
           <p className="text-sm text-gray-800">{mod_role.reporting_to}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Annual Caseload</p>
           <p className="text-sm text-gray-800">{mod_role.annual_caseload}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Access Level</p>
           <p className="text-sm text-gray-800">{mod_role.access_level}</p>
         </div>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4 space-y-2">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
         <h3 className="text-sm font-semibold text-gray-900">Methodology</h3>
         <p className="text-sm text-gray-700 leading-relaxed">{mod_role.methodology}</p>
       </div>
 
-      <div className="border border-gray-200 rounded-lg p-4 space-y-2">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
         <h3 className="text-sm font-semibold text-gray-900">Case Breakdown</h3>
         <p className="text-sm text-gray-700 leading-relaxed">{mod_role.case_breakdown}</p>
       </div>
@@ -150,9 +150,9 @@ const InvestigationsTab: FC = () => {
 
       <div className="space-y-3">
         {investigations.major_cases.map((c, i) => (
-          <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
+          <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
             <button
-              className="w-full flex items-start justify-between gap-3 p-4 text-left hover:bg-gray-50 transition-colors"
+              className="w-full flex items-start justify-between gap-3 p-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
               onClick={() => setOpenIdx(openIdx === i ? null : i)}
             >
               <div className="flex items-start gap-3">
@@ -168,11 +168,11 @@ const InvestigationsTab: FC = () => {
               <div className="px-4 pb-4 border-t border-gray-100 pt-3 space-y-3">
                 <p className="text-sm text-gray-700 leading-relaxed">{c.description}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="bg-gray-50 rounded-lg p-3">
+                  <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                     <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Witnesses</p>
                     <p className="text-xs text-gray-700 leading-relaxed">{c.witnesses}</p>
                   </div>
-                  <div className="bg-gray-50 rounded-lg p-3">
+                  <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                     <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Evidence</p>
                     <p className="text-xs text-gray-700 leading-relaxed">{c.evidence}</p>
                   </div>
@@ -201,9 +201,9 @@ const ClaimsTab: FC = () => {
       <ClaimsStatusBar claims={claims} />
       <div className="space-y-4">
         {claims.map((c, i) => {
-          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 text-gray-600' };
+          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
           return (
-            <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-2">
+            <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
               <div className="flex items-start justify-between gap-3">
                 <p className="text-sm font-medium text-gray-900 leading-snug">{c.claim}</p>
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
@@ -225,10 +225,10 @@ const DisclosuresTab: FC = () => {
   return (
     <div className="space-y-4">
       {disclosures.map((d, i) => (
-        <div key={i} className="border border-gray-200 rounded-lg p-4 space-y-1.5">
+        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-1.5">
           <div className="flex items-center gap-2 flex-wrap">
             <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded">{d.date}</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-medium">{d.type}</span>
+            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">{d.type}</span>
             <span className="text-xs text-gray-400">{d.outlet}</span>
           </div>
           <p className="text-sm text-gray-700 leading-relaxed">{d.description}</p>
@@ -244,7 +244,7 @@ const NetworkTab: FC = () => {
     <div className="space-y-4">
       <p className="text-sm text-gray-500">Key relationships spanning Pope&apos;s career across government investigation, witness testimony, and the disclosure community.</p>
       {associated_people.map((p, i) => (
-        <div key={i} className="flex gap-3 border border-gray-200 rounded-lg p-4">
+        <div key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
             <span className="text-xs font-bold text-primary">{p.name.charAt(0)}</span>
           </div>

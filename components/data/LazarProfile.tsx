@@ -35,19 +35,19 @@ const OverviewTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
           <p className="text-sm text-gray-800">{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance (claimed)</p>
           <p className="text-sm text-gray-800">{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
           <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
@@ -108,15 +108,15 @@ const FacilityTab: FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Access Method</p>
           <p className="text-sm text-gray-800">{facility.access}</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Hangar Bays</p>
           <p className="text-sm text-gray-800">{facility.hangar_count} bays, one craft per bay (claimed)</p>
         </div>
-        <div className="bg-gray-50 rounded-lg p-4 sm:col-span-2">
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Construction</p>
           <p className="text-sm text-gray-800">{facility.construction}</p>
         </div>
@@ -146,7 +146,7 @@ const CraftTab: FC = () => {
   const { crafts } = data;
   return (
     <div className="space-y-6">
-      <div className="bg-gray-50 rounded-lg p-4">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Total Craft at S-4</p>
         <p className="text-2xl font-bold text-gray-900">{crafts.total_count}</p>
         <p className="text-xs text-gray-500 mt-0.5">One per hangar bay, all described as disc-shaped</p>
@@ -161,7 +161,7 @@ const CraftTab: FC = () => {
 
       <div className="space-y-4">
         {crafts.descriptions.map((craft, i) => (
-          <div key={i} className="border border-gray-200 rounded-lg p-5">
+          <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
             <h4 className="font-semibold text-gray-900 mb-2">{craft.designation}</h4>
             <p className="text-sm text-gray-700 mb-3">{craft.description}</p>
             {craft.diameter_estimate && (
@@ -192,7 +192,7 @@ const PropulsionTab: FC = () => {
       </div>
 
       {/* Element 115 */}
-      <div className="border border-gray-200 rounded-lg p-5">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
         <div className="flex items-start justify-between gap-4 mb-3">
           <div>
             <h4 className="font-semibold text-gray-900">Fuel Source</h4>
@@ -211,14 +211,14 @@ const PropulsionTab: FC = () => {
       </div>
 
       {/* Reactor */}
-      <div className="border border-gray-200 rounded-lg p-5">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
         <h4 className="font-semibold text-gray-900 mb-2">Reactor</h4>
         <p className="text-sm text-gray-700 mb-2">{propulsion.reactor.description}</p>
         <p className="text-sm text-gray-600">{propulsion.reactor.output}</p>
       </div>
 
       {/* Gravity Amplifiers */}
-      <div className="border border-gray-200 rounded-lg p-5">
+      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
         <div className="flex items-center gap-3 mb-3">
           <h4 className="font-semibold text-gray-900">Gravity Amplifiers</h4>
           <span className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">
@@ -238,7 +238,7 @@ const PropulsionTab: FC = () => {
               <div key={mode.name} className="border border-gray-100 rounded-lg overflow-hidden">
                 <button
                   onClick={() => setExpandedMode(isOpen ? null : mode.name)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors"
+                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
                 >
                   <span className="font-medium text-gray-800 text-sm">{mode.name}</span>
                   <svg
@@ -266,7 +266,7 @@ const PropulsionTab: FC = () => {
         <p className="text-sm text-gray-700">{propulsion.space_time_distortion}</p>
       </div>
 
-      <div className="bg-gray-50 rounded-lg p-4">
+      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Hull Glow Explanation</p>
         <p className="text-sm text-gray-700">{propulsion.glow_explanation}</p>
       </div>
@@ -292,7 +292,7 @@ const ClaimsTab: FC = () => {
         <button
           onClick={() => setFilter('all')}
           className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors ${
-            filter === 'all' ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            filter === 'all' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
           }`}
         >
           All
@@ -302,7 +302,7 @@ const ClaimsTab: FC = () => {
             key={cat}
             onClick={() => setFilter(cat)}
             className={`text-xs px-2.5 py-1 rounded-full font-medium capitalize transition-colors ${
-              filter === cat ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              filter === cat ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
             }`}
           >
             {cat.replace(/-/g, ' ')}
@@ -314,7 +314,7 @@ const ClaimsTab: FC = () => {
         {filtered.map(claim => {
           const cfg = statusConfig[claim.status] ?? statusConfig['unverified'];
           return (
-            <div key={claim.id} className="border border-gray-200 rounded-lg p-4">
+            <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
               <div className="flex items-start justify-between gap-3 mb-2">
                 <p className="text-xs font-medium text-gray-400 uppercase tracking-wide capitalize">
                   {claim.category.replace(/-/g, ' ')}
@@ -366,7 +366,7 @@ const DisclosuresTab: FC = () => {
       </p>
 
       {/* Summary panel */}
-      <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-3">
+      <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-3">
         <div className="flex items-center justify-between">
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Disclosure Activity</p>
           <span className="text-xs text-gray-400">{disclosures.length} appearances · {firstYear}–{lastYear}</span>
@@ -397,7 +397,7 @@ const DisclosuresTab: FC = () => {
         {disclosures.map((d, i) => (
           <div key={i} className="relative">
             <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white" />
-            <div className="border border-gray-200 rounded-lg p-4">
+            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
               <div className="flex items-start justify-between gap-3 mb-1">
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">{d.title}</h4>
@@ -405,7 +405,7 @@ const DisclosuresTab: FC = () => {
                 </div>
                 <div className="flex flex-col items-end gap-1 shrink-0">
                   <span className="font-mono text-xs text-gray-400">{d.date}</span>
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${typeColors[d.type] ?? 'bg-gray-100 text-gray-600'}`}>
+                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${typeColors[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
                     {d.type}
                   </span>
                 </div>
@@ -432,7 +432,7 @@ const NetworkTab: FC = () => {
         Key individuals connected to Lazar&apos;s disclosure and the S-4 narrative.
       </p>
       {associated_people.map(person => (
-        <div key={person.id} className="border border-gray-200 rounded-lg p-5">
+        <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
           <h4 className="font-semibold text-gray-900 mb-0.5">{person.name}</h4>
           <p className="text-xs text-primary font-medium mb-2">{person.role}</p>
           <p className="text-sm text-gray-700">{person.relationship}</p>
@@ -492,7 +492,7 @@ const AssessmentTab: FC = () => {
         <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Sources</h4>
         <div className="space-y-2">
           {data.sources.map((src, i) => (
-            <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 rounded-lg p-3">
+            <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
               <div>
                 <p className="text-sm font-medium text-gray-800">{src.title}</p>
                 <p className="text-xs text-gray-400 mt-0.5">{src.type} · {src.notes}</p>

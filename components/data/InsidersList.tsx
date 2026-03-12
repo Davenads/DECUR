@@ -20,12 +20,12 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
         {entries.map(entry => (
           <div
             key={entry.id}
-            className="border border-gray-200 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
+            className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
           >
             {/* Name row + button */}
             <div className="flex items-start justify-between gap-3 mb-2">
               <div className="flex items-center gap-2 flex-wrap">
-                <h3 className="text-lg font-semibold text-gray-900">{entry.name}</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{entry.name}</h3>
                 {entry.aliases.length > 0 && (
                   <span className="text-xs text-gray-400 italic">
                     aka {entry.aliases.join(', ')}
@@ -46,7 +46,7 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
                     View Case File
                   </Link>
                 ) : (
-                  <span className="px-4 py-2 text-sm font-medium text-gray-400 bg-gray-100 rounded-lg whitespace-nowrap cursor-not-allowed">
+                  <span className="px-4 py-2 text-sm font-medium text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-700 rounded-lg whitespace-nowrap cursor-not-allowed">
                     Coming Soon
                   </span>
                 )}
@@ -58,12 +58,12 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
             <p className="text-xs text-gray-400 mb-3">
               {entry.period} · {entry.affiliation}
             </p>
-            <p className="text-sm text-gray-600 leading-relaxed mb-3">{entry.summary}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-3">{entry.summary}</p>
             <div className="flex flex-wrap gap-1.5">
               {entry.tags.map(tag => (
                 <span
                   key={tag}
-                  className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500"
+                  className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400"
                 >
                   {tag}
                 </span>

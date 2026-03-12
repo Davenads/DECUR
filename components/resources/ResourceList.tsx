@@ -54,10 +54,10 @@ const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">
+      <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">
         {category === 'sources' ? 'Primary Sources' : 'Testimony & Interviews'}
       </h2>
-      <p className="text-sm text-gray-500 mb-6">
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
         {category === 'sources'
           ? 'Government reports, journalism, and books documenting the UAP disclosure landscape.'
           : 'Congressional testimony, official hearings, and primary interviews with key figures.'}
@@ -70,10 +70,10 @@ const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
           placeholder="Search..."
           value={search}
           onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
-          className="w-full px-4 py-2 pl-9 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          className="w-full px-4 py-2 pl-9 border border-gray-300 dark:border-gray-600 rounded-lg text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
         />
         <svg
-          className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400"
+          className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 dark:text-gray-500"
           fill="none" viewBox="0 0 24 24" stroke="currentColor"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -89,7 +89,7 @@ const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
             className={`text-xs px-3 py-1 rounded-full font-medium transition-colors border ${
               !activeType
                 ? 'bg-primary text-white border-primary'
-                : 'bg-white text-gray-500 border-gray-200 hover:border-gray-300'
+                : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
             }`}
           >
             All
@@ -101,7 +101,7 @@ const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
               className={`text-xs px-3 py-1 rounded-full font-medium transition-colors border ${
                 activeType === t
                   ? 'bg-primary text-white border-primary'
-                  : 'bg-white text-gray-500 border-gray-200 hover:border-gray-300'
+                  : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
               }`}
             >
               {t}
@@ -112,11 +112,11 @@ const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
 
       {/* Results */}
       {filtered.length === 0 ? (
-        <p className="text-gray-500 text-center py-8 text-sm">No results matching your search.</p>
+        <p className="text-gray-500 dark:text-gray-400 text-center py-8 text-sm">No results matching your search.</p>
       ) : (
         <div className="space-y-4">
           {filtered.map(r => (
-            <div key={r.id} className="border border-gray-200 rounded-lg p-5 hover:shadow-md hover:border-primary/30 transition-all">
+            <div key={r.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:shadow-md hover:border-primary/30 transition-all">
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 mb-1">
@@ -125,19 +125,19 @@ const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
                         {r.type ?? r.source}
                       </span>
                     )}
-                    <span className="text-xs text-gray-400">{r.year ?? r.date}</span>
+                    <span className="text-xs text-gray-400 dark:text-gray-500">{r.year ?? r.date}</span>
                   </div>
-                  <h3 className="text-sm font-semibold text-gray-900 leading-snug mb-1">{r.title}</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug mb-1">{r.title}</h3>
                   {r.author && (
-                    <p className="text-xs text-gray-500 mb-2">{r.author}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">{r.author}</p>
                   )}
                   {r.participants && (
-                    <p className="text-xs text-gray-500 mb-2">{r.participants}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">{r.participants}</p>
                   )}
-                  <p className="text-sm text-gray-600 leading-relaxed">{r.description}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{r.description}</p>
                   <div className="flex flex-wrap gap-1 mt-3">
                     {r.tags.map(tag => (
-                      <span key={tag} className="text-xs px-1.5 py-0.5 rounded bg-gray-100 text-gray-500">{tag}</span>
+                      <span key={tag} className="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">{tag}</span>
                     ))}
                   </div>
                 </div>

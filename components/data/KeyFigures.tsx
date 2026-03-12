@@ -40,9 +40,9 @@ const KeyFigures: FC<Props> = ({ entries }) => {
         {filtered.map((entry: TimelineEntry) => {
           const isOpen = expanded === entry.id;
           return (
-            <div key={entry.id} className="border border-gray-200 rounded-lg overflow-hidden">
+            <div key={entry.id} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
               <button
-                className="w-full text-left p-4 hover:bg-gray-50 transition-colors"
+                className="w-full text-left p-4 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
                 onClick={() => setExpanded(isOpen ? null : entry.id)}
               >
                 <div className="flex items-start justify-between gap-3">
@@ -50,7 +50,7 @@ const KeyFigures: FC<Props> = ({ entries }) => {
                     <div className="flex items-center gap-2 mb-0.5">
                       <span className="text-xs text-gray-400">{entry.year}</span>
                     </div>
-                    <h3 className="text-sm font-semibold text-gray-900">{entry.title}</h3>
+                    <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{entry.title}</h3>
                     {!isOpen && entry.excerpt && (
                       <p className="mt-1 text-xs text-gray-500 line-clamp-1"
                         dangerouslySetInnerHTML={{ __html: entry.excerpt }}
@@ -63,8 +63,8 @@ const KeyFigures: FC<Props> = ({ entries }) => {
                 </div>
               </button>
               {isOpen && (
-                <div className="px-4 pb-4 border-t border-gray-100">
-                  <p className="mt-3 text-sm text-gray-700"
+                <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700">
+                  <p className="mt-3 text-sm text-gray-700 dark:text-gray-300"
                     dangerouslySetInnerHTML={{ __html: entry.excerpt }}
                   />
                   <a
