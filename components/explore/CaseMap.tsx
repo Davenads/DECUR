@@ -120,11 +120,13 @@ const MapCanvas: FC<CanvasProps> = ({
           {/* Historical events - rendered first (behind cases) */}
           {filteredEvents.map(ev => {
             const isHovered = activeMarker?.type === 'event' && activeMarker.data.id === ev.id;
-            // Visual: sqrt scaling keeps dots visible when zoomed in without getting huge at low zoom
             const sqrtZoom = Math.sqrt(zoom);
             const r = (isHovered ? EVENT_RADIUS + 1 : EVENT_RADIUS) / sqrtZoom;
-            // Hit target: always ~24px so touch is reliable on mobile
             const hitR = 24 / zoom;
+            const handleSelect = (e: React.MouseEvent | React.TouchEvent) => {
+              e.stopPropagation();
+              onHoverEvent(isHovered ? null : ev);
+            };
             return (
               <Marker
                 key={`ev-${ev.id}`}
@@ -132,8 +134,14 @@ const MapCanvas: FC<CanvasProps> = ({
                 onMouseEnter={() => onHoverEvent(ev)}
                 onMouseLeave={() => onHoverEvent(null)}
               >
-                {/* Transparent hit area */}
-                <circle r={hitR} fill="transparent" style={{ cursor: 'pointer' }} />
+                {/* Transparent hit area — also handles touch taps */}
+                <circle
+                  r={hitR}
+                  fill="transparent"
+                  style={{ cursor: 'pointer' }}
+                  onClick={handleSelect}
+                  onTouchEnd={handleSelect}
+                />
                 {/* Visual dot */}
                 <circle
                   r={r}
@@ -141,7 +149,7 @@ const MapCanvas: FC<CanvasProps> = ({
                   fillOpacity={isHovered ? 1 : 0.65}
                   stroke="#ffffff"
                   strokeWidth={(isHovered ? 1.5 : 0.8) / sqrtZoom}
-                  style={{ cursor: 'pointer', pointerEvents: 'none' }}
+                  style={{ pointerEvents: 'none' }}
                 />
               </Marker>
             );
@@ -153,7 +161,11 @@ const MapCanvas: FC<CanvasProps> = ({
             const isHovered = activeMarker?.type === 'case' && activeMarker.data.id === c.id;
             const sqrtZoom = Math.sqrt(zoom);
             const r = (isHovered ? tier.radius + 2 : tier.radius) / sqrtZoom;
-            const hitR = 28 / zoom; // cases get slightly larger hit target
+            const hitR = 28 / zoom;
+            const handleSelect = (e: React.MouseEvent | React.TouchEvent) => {
+              e.stopPropagation();
+              onHoverCase(isHovered ? null : c);
+            };
             return (
               <Marker
                 key={`case-${c.id}`}
@@ -161,8 +173,14 @@ const MapCanvas: FC<CanvasProps> = ({
                 onMouseEnter={() => onHoverCase(c)}
                 onMouseLeave={() => onHoverCase(null)}
               >
-                {/* Transparent hit area */}
-                <circle r={hitR} fill="transparent" style={{ cursor: 'pointer' }} />
+                {/* Transparent hit area — also handles touch taps */}
+                <circle
+                  r={hitR}
+                  fill="transparent"
+                  style={{ cursor: 'pointer' }}
+                  onClick={handleSelect}
+                  onTouchEnd={handleSelect}
+                />
                 {/* Visual dot */}
                 <circle
                   r={r}
@@ -170,7 +188,7 @@ const MapCanvas: FC<CanvasProps> = ({
                   fillOpacity={isHovered ? 1 : 0.85}
                   stroke="#ffffff"
                   strokeWidth={(isHovered ? 2 : 1.5) / sqrtZoom}
-                  style={{ cursor: 'pointer', pointerEvents: 'none' }}
+                  style={{ pointerEvents: 'none' }}
                 />
                 {isHovered && (
                   <circle
