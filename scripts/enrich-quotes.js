@@ -10,7 +10,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const DATA_PATH = path.join(__dirname, '../data/ufotimeline.json');
+const DATA_PATH = path.join(__dirname, '../data/timeline.json');
 const DELAY_MS = 400; // be polite to ufotimeline.com
 
 function sleep(ms) {

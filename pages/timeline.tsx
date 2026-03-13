@@ -31,7 +31,7 @@ export default function Timeline({ entries }: TimelinePageProps) {
 export const getStaticProps: GetStaticProps = async () => {
   try {
     // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
-    const entries: TimelineEntry[] = require('../data/ufotimeline.json');
+    const entries: TimelineEntry[] = require('../data/timeline.json');
     return {
       props: { entries },
       revalidate: 3600,

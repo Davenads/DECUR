@@ -1,4 +1,4 @@
-const data = JSON.parse(require('fs').readFileSync('./data/ufotimeline.json'));
+const data = JSON.parse(require('fs').readFileSync('./data/timeline.json'));
 const byDecade = {};
 data.forEach(e => {
   if (!e.year) return;

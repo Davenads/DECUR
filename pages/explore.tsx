@@ -9,7 +9,7 @@ import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
 import insiderIndex from '../data/insiders/index.json';
 import { insiderRegistry } from '../data/insiders/registry';
 import casesData from '../data/cases.json';
-import timelineData from '../data/ufotimeline.json';
+import timelineData from '../data/timeline.json';
 
 interface Props {
   entries: TimelineEntry[];

@@ -5,7 +5,7 @@
  *   node scripts/sync/run-sync.js [--dry-run] [--verbose] [--after=YYYY-MM-DD]
  *
  * Outputs:
- *   - Updates data/ufotimeline.json in place (unless --dry-run)
+ *   - Updates data/timeline.json in place (unless --dry-run)
  *   - Writes scripts/sync/last-sync-report.json for PR body generation
  *   - Exits with code 0 if changes, 1 if no changes (for CI detection)
  */
@@ -15,7 +15,7 @@ const path = require('path');
 const { scrapeOpenminds } = require('./scrape-openminds');
 const { deduplicate } = require('./deduplicator');
 
-const DATA_PATH = path.join(__dirname, '../../data/ufotimeline.json');
+const DATA_PATH = path.join(__dirname, '../../data/timeline.json');
 const REPORT_PATH = path.join(__dirname, 'last-sync-report.json');
 
 const args = process.argv.slice(2);

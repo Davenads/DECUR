@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const candidates = JSON.parse(fs.readFileSync(path.join(__dirname, 'output/nicap-candidates.json'), 'utf8'));
-const timeline = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/ufotimeline.json'), 'utf8'));
+const timeline = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/timeline.json'), 'utf8'));
 
 const SKIP_TITLES = ['Map of U', 'location not given', 'Judith_Gap'];
 
@@ -39,7 +39,7 @@ const toAdd = post69.map(e => {
 });
 
 const updated = [...timeline, ...toAdd];
-fs.writeFileSync(path.join(__dirname, '../data/ufotimeline.json'), JSON.stringify(updated, null, 2));
+fs.writeFileSync(path.join(__dirname, '../data/timeline.json'), JSON.stringify(updated, null, 2));
 
 console.log('Added', toAdd.length, 'post-1969 entries:');
 toAdd.forEach(e => console.log(' ', e.year, e.title));

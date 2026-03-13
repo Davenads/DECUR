@@ -106,6 +106,17 @@ const Sources: NextPage = () => {
           />
 
           <SourceCard
+            name="NICAP Chronology"
+            url="https://www.nicap.org"
+            type="Scraped - HTML"
+            typeColor="bg-blue-100 text-blue-700"
+            description="National Investigations Committee on Aerial Phenomena. Maintained by Fran Ridge, NICAP's chronology pages document thousands of significant UAP cases cross-referenced with Project Blue Book records, military reports, and primary witness accounts. Considered one of the most rigorously curated civilian UAP databases for the 1947-1989 era."
+            entries={251}
+            coverage="1947 – 1989"
+            notes="Historical events added to the timeline from NICAP chronology pages. Inclusion criteria: Project Blue Book Unknown (BBU) status or direct military/radar involvement, plus a dedicated NICAP case detail page. All 251 entries link directly to their NICAP case file."
+          />
+
+          <SourceCard
             name="Papoose Lake Archive"
             url="https://www.papooselake.org"
             type="Scraped"
@@ -113,7 +124,7 @@ const Sources: NextPage = () => {
             description="Dedicated archive documenting Bob Lazar's timeline at S-4, his public disclosures, and the network of individuals connected to his accounts. Contributes Lazar-specific events to the timeline."
             entries={12}
             coverage="1988 – 2019"
-            notes="Source for Lazar-tagged entries in ufotimeline.json. Also used as a primary reference in building the Lazar case file."
+            notes="Source for Lazar-tagged entries in timeline.json. Also used as a primary reference in building the Lazar case file."
           />
         </section>
 
@@ -308,10 +319,12 @@ const Sources: NextPage = () => {
             <div>
               <p className="font-semibold text-gray-900 mb-1">Scraped Timeline Data</p>
               <p>
-                Timeline entries from ufotimeline.com, openminds.tv, and papooselake.org were retrieved
+                Timeline entries from ufotimeline.com, openminds.tv, papooselake.org, and nicap.org were retrieved
                 via their public APIs or HTML scraping. Every entry preserves a direct link
                 (<code className="bg-gray-200 px-1 py-0.5 rounded text-xs">source_url</code>) to its
                 originating article. DECUR does not alter the title or content of scraped entries.
+                NICAP entries additionally carry a <code className="bg-gray-200 px-1 py-0.5 rounded text-xs">source: &quot;nicap&quot;</code> field
+                for provenance tracking.
               </p>
             </div>
 

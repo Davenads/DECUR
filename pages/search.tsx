@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
       year: number;
       excerpt: string;
       categories: string[];
-    }> = require('../data/ufotimeline.json');
+    }> = require('../data/timeline.json');
 
     const corpus: SearchItem[] = [];
 

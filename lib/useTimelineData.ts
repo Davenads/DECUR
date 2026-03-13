@@ -2,7 +2,7 @@
  * Server-side data utilities for ufotimeline data.
  * Use these in getStaticProps only -- do NOT import in client components.
  */
-import rawEntries from '../data/ufotimeline.json';
+import rawEntries from '../data/timeline.json';
 import aodQuotes  from '../data/aod-quotes-platform.json';
 
 export interface TimelineEntry {

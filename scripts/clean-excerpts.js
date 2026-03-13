@@ -1,5 +1,5 @@
 const fs = require('fs');
-const entries = JSON.parse(fs.readFileSync('C:/Projects/DECUR/data/ufotimeline.json'));
+const entries = JSON.parse(fs.readFileSync('C:/Projects/DECUR/data/timeline.json'));
 
 function stripHtml(html) {
   return (html || '')
@@ -17,7 +17,7 @@ const cleaned = entries.map(e => {
   return { ...e, excerpt: cleanExcerpt };
 });
 
-fs.writeFileSync('C:/Projects/DECUR/data/ufotimeline.json', JSON.stringify(cleaned, null, 2));
+fs.writeFileSync('C:/Projects/DECUR/data/timeline.json', JSON.stringify(cleaned, null, 2));
 console.log('Fixed', fixed, 'excerpts with HTML tags');
 const sample = cleaned.find(e => e.source === 'openminds');
 console.log('Sample openminds excerpt:', sample && sample.excerpt.slice(0, 120));

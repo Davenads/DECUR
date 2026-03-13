@@ -9,7 +9,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const DATA_FILE = path.join(__dirname, '../data/ufotimeline.json');
+const DATA_FILE = path.join(__dirname, '../data/timeline.json');
 
 // Category ID -> our DECUR category mapping
 const TARGET_CATEGORIES = [
