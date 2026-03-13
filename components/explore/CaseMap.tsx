@@ -120,7 +120,11 @@ const MapCanvas: FC<CanvasProps> = ({
           {/* Historical events - rendered first (behind cases) */}
           {filteredEvents.map(ev => {
             const isHovered = activeMarker?.type === 'event' && activeMarker.data.id === ev.id;
-            const r = (isHovered ? EVENT_RADIUS + 1 : EVENT_RADIUS) / zoom;
+            // Visual: sqrt scaling keeps dots visible when zoomed in without getting huge at low zoom
+            const sqrtZoom = Math.sqrt(zoom);
+            const r = (isHovered ? EVENT_RADIUS + 1 : EVENT_RADIUS) / sqrtZoom;
+            // Hit target: always ~24px so touch is reliable on mobile
+            const hitR = 24 / zoom;
             return (
               <Marker
                 key={`ev-${ev.id}`}
@@ -128,13 +132,16 @@ const MapCanvas: FC<CanvasProps> = ({
                 onMouseEnter={() => onHoverEvent(ev)}
                 onMouseLeave={() => onHoverEvent(null)}
               >
+                {/* Transparent hit area */}
+                <circle r={hitR} fill="transparent" style={{ cursor: 'pointer' }} />
+                {/* Visual dot */}
                 <circle
                   r={r}
                   fill={EVENT_COLOR}
                   fillOpacity={isHovered ? 1 : 0.65}
                   stroke="#ffffff"
-                  strokeWidth={(isHovered ? 1.5 : 0.8) / zoom}
-                  style={{ cursor: 'pointer' }}
+                  strokeWidth={(isHovered ? 1.5 : 0.8) / sqrtZoom}
+                  style={{ cursor: 'pointer', pointerEvents: 'none' }}
                 />
               </Marker>
             );
@@ -144,7 +151,9 @@ const MapCanvas: FC<CanvasProps> = ({
           {filteredCases.map(c => {
             const tier = TIER_CONFIG[c.evidence_tier];
             const isHovered = activeMarker?.type === 'case' && activeMarker.data.id === c.id;
-            const r = (isHovered ? tier.radius + 2 : tier.radius) / zoom;
+            const sqrtZoom = Math.sqrt(zoom);
+            const r = (isHovered ? tier.radius + 2 : tier.radius) / sqrtZoom;
+            const hitR = 28 / zoom; // cases get slightly larger hit target
             return (
               <Marker
                 key={`case-${c.id}`}
@@ -152,22 +161,26 @@ const MapCanvas: FC<CanvasProps> = ({
                 onMouseEnter={() => onHoverCase(c)}
                 onMouseLeave={() => onHoverCase(null)}
               >
+                {/* Transparent hit area */}
+                <circle r={hitR} fill="transparent" style={{ cursor: 'pointer' }} />
+                {/* Visual dot */}
                 <circle
                   r={r}
                   fill={tier.color}
                   fillOpacity={isHovered ? 1 : 0.85}
                   stroke="#ffffff"
-                  strokeWidth={(isHovered ? 2 : 1.5) / zoom}
-                  style={{ cursor: 'pointer' }}
+                  strokeWidth={(isHovered ? 2 : 1.5) / sqrtZoom}
+                  style={{ cursor: 'pointer', pointerEvents: 'none' }}
                 />
                 {isHovered && (
                   <circle
-                    r={r + 4 / zoom}
+                    r={r + 4 / sqrtZoom}
                     fill="none"
                     stroke={tier.color}
-                    strokeWidth={1.5 / zoom}
-                    strokeDasharray={`${3 / zoom} ${2 / zoom}`}
+                    strokeWidth={1.5 / sqrtZoom}
+                    strokeDasharray={`${3 / sqrtZoom} ${2 / sqrtZoom}`}
                     opacity={0.6}
+                    style={{ pointerEvents: 'none' }}
                   />
                 )}
               </Marker>
