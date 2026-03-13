@@ -42,6 +42,7 @@ const TYPE_LABELS: Record<NodeType, string> = {
   project:      'Project',
   concept:      'Concept',
   technology:   'Technology',
+  document:     'Document',
 };
 
 /* ─── Helpers ────────────────────────────────────────────────── */

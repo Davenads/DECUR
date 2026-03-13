@@ -5,7 +5,8 @@ export type NodeType =
   | 'organization'
   | 'project'
   | 'concept'
-  | 'technology';
+  | 'technology'
+  | 'document';
 
 export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'pope' | 'shared' | 'corbell' | 'mccullough';
 
@@ -39,6 +40,7 @@ export const NODE_COLORS: Record<NodeType, string> = {
   project:      '#22c55e', // green
   concept:      '#6366f1', // indigo
   technology:   '#f97316', // orange
+  document:     '#e11d48', // rose
 };
 
 // Person nodes for figures WITHOUT dedicated profile pages.
@@ -114,6 +116,23 @@ export const graphData: GraphData = {
     { id: 'gravity-amplifiers',  name: 'Gravity Amplifiers',   type: 'technology',   group: 'lazar',   val: 2 },
     { id: 'sport-model',         name: 'Sport Model Craft',    type: 'technology',   group: 'lazar',   val: 3 },
     { id: 'som1-01',             name: 'SOM1-01 Document',     type: 'concept',      group: 'burisch', val: 1 },
+
+    // Documents (sourced from data/documents.json)
+    { id: 'wilson-davis-memo',                name: 'Wilson-Davis Memo',          type: 'document', val: 3 },
+    { id: 'uaptf-preliminary-assessment',     name: 'UAPTF Assessment 2021',      type: 'document', val: 3 },
+    { id: 'aaro-historical-record-vol1',      name: 'AARO Report Vol. 1',         type: 'document', val: 4 },
+    { id: 'aaro-historical-record-vol2-2024', name: 'AARO Report Vol. 2',         type: 'document', val: 2 },
+    { id: 'nasa-uap-study-2023',              name: 'NASA UAP Study 2023',        type: 'document', val: 2 },
+    { id: 'halt-memo-1981',                   name: 'Halt Memo 1981',             type: 'document', val: 2 },
+    { id: 'ndaa-fy2023-uap-provisions',       name: 'NDAA FY2023 UAP',            type: 'document', val: 3 },
+    { id: 'robertson-panel-1953',             name: 'Robertson Panel Report',     type: 'document', val: 3 },
+    { id: 'blue-book-special-report-14',      name: 'Blue Book Special Report 14',type: 'document', val: 2 },
+    { id: 'condon-report-1969',               name: 'Condon Report 1969',         type: 'document', val: 2 },
+    { id: 'elizondo-resignation-letter-2017', name: 'Elizondo Resignation Letter',type: 'document', val: 2 },
+    { id: 'twining-memo-1947',                name: 'Twining Memo 1947',          type: 'document', val: 2 },
+    { id: 'schulgen-memo-1947',               name: 'Schulgen Memo 1947',         type: 'document', val: 2 },
+    { id: 'project-sign-estimate-1948',       name: 'Project Sign Estimate',      type: 'document', val: 2 },
+    { id: 'dia-iran-f4-1976',                 name: 'DIA Iran F-4 Report',        type: 'document', val: 2 },
   ],
 
   links: [
@@ -273,5 +292,42 @@ export const graphData: GraphData = {
     { source: 'charles-mccullough', target: 'david-grusch',    label: 'represented as whistleblower attorney' },
     { source: 'charles-mccullough', target: 'sol-foundation',  label: 'symposium participant' },
     { source: 'charles-mccullough', target: 'luis-elizondo',   label: 'co-whistleblower legal advocacy' },
+
+    // Document connections
+    { source: 'wilson-davis-memo',                target: 'eric-davis',        label: 'attributed to' },
+    { source: 'wilson-davis-memo',                target: 'david-grusch',      label: 'corroborated by' },
+    { source: 'wilson-davis-memo',                target: 'hal-puthoff',       label: 'names' },
+    { source: 'uaptf-preliminary-assessment',     target: 'uap-task-force',    label: 'produced by' },
+    { source: 'uaptf-preliminary-assessment',     target: 'luis-elizondo',     label: 'advocacy led to' },
+    { source: 'uaptf-preliminary-assessment',     target: 'chris-mellon',      label: 'advocacy led to' },
+    { source: 'uaptf-preliminary-assessment',     target: 'david-grusch',      label: 'corroborated by' },
+    { source: 'aaro-historical-record-vol1',      target: 'aaro',              label: 'published by' },
+    { source: 'aaro-historical-record-vol1',      target: 'david-grusch',      label: 'disputes claims of' },
+    { source: 'aaro-historical-record-vol1',      target: 'karl-nell',         label: 'publicly disputed by' },
+    { source: 'aaro-historical-record-vol1',      target: 'chris-mellon',      label: 'responds to' },
+    { source: 'aaro-historical-record-vol1',      target: 'luis-elizondo',     label: 'reviewed' },
+    { source: 'aaro-historical-record-vol2-2024', target: 'aaro',              label: 'published by' },
+    { source: 'aaro-historical-record-vol2-2024', target: 'david-grusch',      label: 'disputes claims of' },
+    { source: 'nasa-uap-study-2023',              target: 'garry-nolan',       label: 'panel methodology cited by' },
+    { source: 'nasa-uap-study-2023',              target: 'jacques-vallee',    label: 'methodology aligned with' },
+    { source: 'halt-memo-1981',                   target: 'nick-pope',         label: 'investigated by' },
+    { source: 'ndaa-fy2023-uap-provisions',       target: 'chris-mellon',      label: 'drafted by' },
+    { source: 'ndaa-fy2023-uap-provisions',       target: 'luis-elizondo',     label: 'advocacy led to' },
+    { source: 'ndaa-fy2023-uap-provisions',       target: 'david-grusch',      label: 'prompted disclosure of' },
+    { source: 'robertson-panel-1953',             target: 'robertson-panel',   label: 'report produced by' },
+    { source: 'robertson-panel-1953',             target: 'project-blue-book', label: 'shaped suppression within' },
+    { source: 'blue-book-special-report-14',      target: 'project-blue-book', label: 'key report from' },
+    { source: 'condon-report-1969',               target: 'project-blue-book', label: 'commissioned by' },
+    { source: 'condon-report-1969',               target: 'jacques-vallee',    label: 'methodology critiqued by' },
+    { source: 'condon-report-1969',               target: 'luis-elizondo',     label: 'historical precedent cited by' },
+    { source: 'elizondo-resignation-letter-2017', target: 'luis-elizondo',     label: 'authored by' },
+    { source: 'elizondo-resignation-letter-2017', target: 'chris-mellon',      label: 'informed advocacy of' },
+    { source: 'elizondo-resignation-letter-2017', target: 'aatip',             label: 'describes oversight failures in' },
+    { source: 'twining-memo-1947',                target: 'j-allen-hynek',     label: 'researched by' },
+    { source: 'twining-memo-1947',                target: 'project-sign',      label: 'informed creation of' },
+    { source: 'schulgen-memo-1947',               target: 'project-sign',      label: 'preceded' },
+    { source: 'project-sign-estimate-1948',       target: 'j-allen-hynek',     label: 'researched by' },
+    { source: 'project-sign-estimate-1948',       target: 'project-sign',      label: 'produced by' },
+    { source: 'dia-iran-f4-1976',                 target: 'uap-task-force',    label: 'referenced in assessments by' },
   ],
 };
