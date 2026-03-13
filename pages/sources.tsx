@@ -311,6 +311,46 @@ const Sources: NextPage = () => {
           />
         </section>
 
+        {/* Glossary sources */}
+        <section className="space-y-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900">Glossary Sources</h2>
+            <p className="text-sm text-gray-500 mt-1">
+              Sources used to build the{' '}
+              <Link href="/resources?tab=glossary" className="text-primary hover:underline">Glossary</Link>{' '}
+              of UAP and defense terminology (308 terms).
+            </p>
+          </div>
+
+          <SourceCard
+            name="Skinwalkers at the Pentagon"
+            url="https://www.amazon.com/dp/B09LRL6JTD"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Non-fiction account of the AAWSAP program by James T. Lacatski, Colm Kelleher, and George Knapp (2021). The book's Key to Abbreviations appendix served as a primary reference for defense and intelligence terminology used in UAP research contexts, including program-specific terms like BAASS, DIRD, NIDS, and SVP."
+            notes="15 terms sourced from this reference."
+          />
+
+          <SourceCard
+            name="Gerb YouTube Channel - UAP Research Videos"
+            url="https://www.youtube.com/@Gerb"
+            type="YouTube / Scraped-Transcripts"
+            typeColor="bg-red-100 text-red-600"
+            description="61 research-focused UAP videos by independent analyst Gerb covering government programs, key figures, and technical concepts. Transcripts were extracted and processed to identify domain-specific terminology used across the UAP research community."
+            coverage="275 terms extracted across 61 videos"
+            notes="Terms sourced from this channel are tagged with source: gerb in glossary data."
+          />
+
+          <SourceCard
+            name="Curated Editorial Terms"
+            url="/resources?tab=glossary"
+            type="Manual Curation"
+            typeColor="bg-teal-100 text-teal-700"
+            description="18 foundational UAP and NHI terms written and defined by DECUR contributors. Covers core concepts like Non-Human Intelligence, Crash Retrieval, the Five Observables, and key program names not adequately defined elsewhere."
+            notes="Terms tagged with source: curated in glossary data."
+          />
+        </section>
+
         {/* Methodology */}
         <section className="bg-gray-50 border border-gray-200 rounded-xl p-6 space-y-4">
           <h2 className="text-xl font-bold text-gray-900">Methodology</h2>
