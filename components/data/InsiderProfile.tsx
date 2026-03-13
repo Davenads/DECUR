@@ -2,16 +2,16 @@ import { FC, useState } from 'react';
 import { BurischData } from '../../types/data';
 import burischData from '../../data/key-figures/burisch.json';
 import ProfileShell from './shared/ProfileShell';
-import OverviewTab from './insiders/burisch/OverviewTab';
-import EntityTab from './insiders/burisch/EntityTab';
-import FacilityTab from './insiders/burisch/FacilityTab';
-import ProjectsTab from './insiders/burisch/ProjectsTab';
-import DocumentsTab from './insiders/burisch/DocumentsTab';
-import TimelineTab from './insiders/burisch/TimelineTab';
-import TestimoniesTab from './insiders/burisch/TestimoniesTab';
-import MJ12Tab from './insiders/burisch/MJ12Tab';
-import ConceptsTab from './insiders/burisch/ConceptsTab';
-import AssessmentTab from './insiders/burisch/AssessmentTab';
+import OverviewTab from './key-figures/burisch/OverviewTab';
+import EntityTab from './key-figures/burisch/EntityTab';
+import FacilityTab from './key-figures/burisch/FacilityTab';
+import ProjectsTab from './key-figures/burisch/ProjectsTab';
+import DocumentsTab from './key-figures/burisch/DocumentsTab';
+import TimelineTab from './key-figures/burisch/TimelineTab';
+import TestimoniesTab from './key-figures/burisch/TestimoniesTab';
+import MJ12Tab from './key-figures/burisch/MJ12Tab';
+import ConceptsTab from './key-figures/burisch/ConceptsTab';
+import AssessmentTab from './key-figures/burisch/AssessmentTab';
 
 const data = burischData as BurischData;
 
