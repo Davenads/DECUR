@@ -120,6 +120,7 @@ const MapCanvas: FC<CanvasProps> = ({
           {/* Historical events - rendered first (behind cases) */}
           {filteredEvents.map(ev => {
             const isHovered = activeMarker?.type === 'event' && activeMarker.data.id === ev.id;
+            const r = (isHovered ? EVENT_RADIUS + 1 : EVENT_RADIUS) / zoom;
             return (
               <Marker
                 key={`ev-${ev.id}`}
@@ -128,11 +129,11 @@ const MapCanvas: FC<CanvasProps> = ({
                 onMouseLeave={() => onHoverEvent(null)}
               >
                 <circle
-                  r={isHovered ? EVENT_RADIUS + 2 : EVENT_RADIUS}
+                  r={r}
                   fill={EVENT_COLOR}
                   fillOpacity={isHovered ? 1 : 0.65}
                   stroke="#ffffff"
-                  strokeWidth={isHovered ? 1.5 : 0.8}
+                  strokeWidth={(isHovered ? 1.5 : 0.8) / zoom}
                   style={{ cursor: 'pointer' }}
                 />
               </Marker>
@@ -143,6 +144,7 @@ const MapCanvas: FC<CanvasProps> = ({
           {filteredCases.map(c => {
             const tier = TIER_CONFIG[c.evidence_tier];
             const isHovered = activeMarker?.type === 'case' && activeMarker.data.id === c.id;
+            const r = (isHovered ? tier.radius + 2 : tier.radius) / zoom;
             return (
               <Marker
                 key={`case-${c.id}`}
@@ -151,20 +153,20 @@ const MapCanvas: FC<CanvasProps> = ({
                 onMouseLeave={() => onHoverCase(null)}
               >
                 <circle
-                  r={isHovered ? tier.radius + 3 : tier.radius}
+                  r={r}
                   fill={tier.color}
                   fillOpacity={isHovered ? 1 : 0.85}
                   stroke="#ffffff"
-                  strokeWidth={isHovered ? 2 : 1.5}
+                  strokeWidth={(isHovered ? 2 : 1.5) / zoom}
                   style={{ cursor: 'pointer' }}
                 />
                 {isHovered && (
                   <circle
-                    r={tier.radius + 7}
+                    r={r + 4 / zoom}
                     fill="none"
                     stroke={tier.color}
-                    strokeWidth={1.5}
-                    strokeDasharray="3 2"
+                    strokeWidth={1.5 / zoom}
+                    strokeDasharray={`${3 / zoom} ${2 / zoom}`}
                     opacity={0.6}
                   />
                 )}
