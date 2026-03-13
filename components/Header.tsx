@@ -33,11 +33,9 @@ const navItems: NavItems = {
   },
 };
 
-const simpleLinks = [
-  { href: '/timeline', label: 'Timeline' },
-  { href: '/explore', label: 'Explore' },
-  { href: '/about', label: 'About' },
-];
+const exploreLink = { href: '/explore', label: 'Explore' };
+const timelineLink = { href: '/timeline', label: 'Timeline' };
+const aboutLink = { href: '/about', label: 'About' };
 
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -102,6 +100,17 @@ const Header: FC = () => {
               Home
             </Link>
 
+            <Link
+              href={exploreLink.href}
+              className={
+                isActive(exploreLink.href)
+                  ? 'text-primary font-medium border-b-2 border-primary pb-1'
+                  : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
+              }
+            >
+              {exploreLink.label}
+            </Link>
+
             <NavDropdown
               id="data"
               title="Data"
@@ -111,6 +120,17 @@ const Header: FC = () => {
               onToggle={() => toggleDropdown('data')}
               dropdownRef={el => { dropdownRefs.current['data'] = el; }}
             />
+
+            <Link
+              href={timelineLink.href}
+              className={
+                isActive(timelineLink.href)
+                  ? 'text-primary font-medium border-b-2 border-primary pb-1'
+                  : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
+              }
+            >
+              {timelineLink.label}
+            </Link>
 
             <NavDropdown
               id="resources"
@@ -122,19 +142,16 @@ const Header: FC = () => {
               dropdownRef={el => { dropdownRefs.current['resources'] = el; }}
             />
 
-            {simpleLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className={
-                  isActive(href)
-                    ? 'text-primary font-medium border-b-2 border-primary pb-1'
-                    : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
-                }
-              >
-                {label}
-              </Link>
-            ))}
+            <Link
+              href={aboutLink.href}
+              className={
+                isActive(aboutLink.href)
+                  ? 'text-primary font-medium border-b-2 border-primary pb-1'
+                  : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
+              }
+            >
+              {aboutLink.label}
+            </Link>
           </nav>
 
           {/* Search */}
@@ -195,6 +212,14 @@ const Header: FC = () => {
                 Home
               </Link>
 
+              <Link
+                href={exploreLink.href}
+                className={isActive(exploreLink.href) ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {exploreLink.label}
+              </Link>
+
               <MobileNavDropdown
                 title="Data"
                 items={navItems.data.items}
@@ -203,6 +228,14 @@ const Header: FC = () => {
                 onToggle={() => toggleDropdown('mobile-data')}
                 onItemClick={() => setIsMenuOpen(false)}
               />
+
+              <Link
+                href={timelineLink.href}
+                className={isActive(timelineLink.href) ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {timelineLink.label}
+              </Link>
 
               <MobileNavDropdown
                 title="Resources"
@@ -213,16 +246,13 @@ const Header: FC = () => {
                 onItemClick={() => setIsMenuOpen(false)}
               />
 
-              {simpleLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className={isActive(href) ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {label}
-                </Link>
-              ))}
+              <Link
+                href={aboutLink.href}
+                className={isActive(aboutLink.href) ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {aboutLink.label}
+              </Link>
 
               <div className="pt-2">
                 <SearchBar onSearch={handleSearch} />

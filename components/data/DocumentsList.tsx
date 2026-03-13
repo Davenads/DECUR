@@ -243,8 +243,8 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
   return (
     <div>
       <div className="mb-6">
-        <h2 className="text-2xl font-bold font-heading text-gray-900 mb-1">Primary Documents</h2>
-        <p className="text-sm text-gray-500">
+        <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Primary Documents</h2>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
           Official government records, declassified intelligence reports, and foundational source documents — annotated for provenance, authenticity, and significance.
         </p>
       </div>

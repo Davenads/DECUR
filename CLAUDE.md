@@ -61,6 +61,13 @@ This platform organizes research into several key areas:
 ## Writing & Copy Rules
 - **No em dashes** -- do not use `—` (U+2014) anywhere in UI copy, component text, or documentation. Use a regular hyphen-minus `-` or rewrite the sentence instead.
 
+## ufotimeline.json Data Rules
+- **Never use a `ufotimeline.com` URL as `article_url`** in ufotimeline.json entries. `article_url` must point to the final destination (Amazon, YouTube, FBI Vault, archive.org, etc.).
+- `source_url` may remain as the ufotimeline.com permalink for reference/attribution.
+- When adding new entries that were sourced from ufotimeline, always populate `article_url` directly from the ufotimeline page's outbound CTA link ("On Amazon", "View More", "Read Article", etc.).
+- If no outbound link exists, leave `article_url` as `null` -- the component falls back to `source_url`.
+- To backfill missing `article_url` values for media entries, run: `node scripts/scrape-media-article-urls.js`
+
 ## Code Style Guidelines
 - **Component Structure**: Functional components with TypeScript and hooks
 - **Naming**: PascalCase for components, camelCase for functions/variables
