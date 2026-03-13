@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import barberData from '../../data/insiders/barber.json';
+import barberData from '../../data/key-figures/barber.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

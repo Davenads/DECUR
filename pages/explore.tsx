@@ -6,8 +6,8 @@ import NetworkGraph from '../components/explore/NetworkGraph';
 import TimelineOverlay, { extractYear, WBEvent, CaseEvent } from '../components/explore/TimelineOverlay';
 import CaseMap, { MapCase, MapEvent } from '../components/explore/CaseMap';
 import { getAllEntries, TimelineEntry } from '../lib/timelineData';
-import insiderIndex from '../data/insiders/index.json';
-import { insiderRegistry } from '../data/insiders/registry';
+import insiderIndex from '../data/key-figures/index.json';
+import { insiderRegistry } from '../data/key-figures/registry';
 import casesData from '../data/cases.json';
 import timelineData from '../data/timeline.json';
 
@@ -131,8 +131,8 @@ export const getStaticProps: GetStaticProps = async () => {
     const entries = getAllEntries();
 
     // Build insider events from all profiles flagged for explore inclusion.
-    // To add a new profile: set includeInExplore: true in data/insiders/index.json
-    // and ensure the profile is registered in data/insiders/registry.ts.
+    // To add a new profile: set includeInExplore: true in data/key-figures/index.json
+    // and ensure the profile is registered in data/key-figures/registry.ts.
     const insiderEvents: WBEvent[] = (insiderIndex as Array<{ id: string; includeInExplore?: boolean }>)
       .filter(entry => entry.includeInExplore)
       .flatMap(entry => {

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CaseEntry, EvidenceTier } from '../../types/data';
 import ProfileTabBar from './shared/ProfileTabBar';
 import CredibilityBalance from './shared/CredibilityBalance';
-import insidersIndex from '../../data/insiders/index.json';
+import insidersIndex from '../../data/key-figures/index.json';
 
 /* ─── Helpers ──────────────────────────────────────────────────── */
 

@@ -2,7 +2,7 @@ import { FC, useRef, useCallback, useState, useMemo, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { useTheme } from 'next-themes';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
-import insidersIndex from '../../data/insiders/index.json';
+import insidersIndex from '../../data/key-figures/index.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FGRef = any;

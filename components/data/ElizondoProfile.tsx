@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import elizondoData from '../../data/insiders/elizondo.json';
+import elizondoData from '../../data/key-figures/elizondo.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import bigelowData from '../../data/insiders/bigelow.json';
+import bigelowData from '../../data/key-figures/bigelow.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

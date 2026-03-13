@@ -1,5 +1,5 @@
 import type { GetServerSideProps } from 'next';
-import insiderIndex from '../data/insiders/index.json';
+import insiderIndex from '../data/key-figures/index.json';
 import casesData from '../data/cases.json';
 import { InsiderEntry, CaseEntry } from '../types/data';
 

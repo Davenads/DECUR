@@ -4,7 +4,7 @@ import SeoHead from '../components/SeoHead';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Fuse, { FuseResult } from 'fuse.js';
-import insidersData from '../data/insiders/index.json';
+import insidersData from '../data/key-figures/index.json';
 import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
 import casesData from '../data/cases.json';

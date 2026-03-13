@@ -2,9 +2,9 @@
  * Generic insider profile registry.
  *
  * Adding a new Key Figure:
- * 1. Create data/insiders/[id].json following the standard schema
+ * 1. Create data/key-figures/[id].json following the standard schema
  * 2. Import it here and add to insiderRegistry
- * 3. Add an entry to data/insiders/index.json (with includeInExplore: true if warranted)
+ * 3. Add an entry to data/key-figures/index.json (with includeInExplore: true if warranted)
  * 4. No other files need to be modified
  *
  * Bespoke components (InsidersList.tsx if-chain) are only needed for figures

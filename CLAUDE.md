@@ -101,7 +101,7 @@ This platform organizes research into several key areas:
 To add a new profile to the Key Figures section (`?category=key-figures`):
 
 ### 1. Create the profile JSON
-Create `data/insiders/[id].json` following the standard schema:
+Create `data/key-figures/[id].json` following the standard schema:
 ```json
 {
   "profile": { "id", "name", "aliases", "born", "died", "roles", "service_period",
@@ -115,7 +115,7 @@ Create `data/insiders/[id].json` following the standard schema:
 An optional feature section can be added at the top level (e.g., `"aawsap": {...}`, `"major_investigations": [...]`). The `GenericInsiderProfile` component auto-detects and renders it as a tab.
 
 ### 2. Register the profile
-Add one line to `data/insiders/registry.ts`:
+Add one line to `data/key-figures/registry.ts`:
 ```ts
 import [name]Data from './[id].json';
 // ...
@@ -123,7 +123,7 @@ import [name]Data from './[id].json';
 ```
 
 ### 3. Add the index entry
-Add an entry to `data/insiders/index.json`:
+Add an entry to `data/key-figures/index.json`:
 ```json
 {
   "id": "[id]",

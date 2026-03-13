@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { BurischData } from '../../types/data';
-import burischData from '../../data/insiders/burisch.json';
+import burischData from '../../data/key-figures/burisch.json';
 import ProfileShell from './shared/ProfileShell';
 import OverviewTab from './insiders/burisch/OverviewTab';
 import EntityTab from './insiders/burisch/EntityTab';

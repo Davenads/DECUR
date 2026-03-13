@@ -1,9 +1,9 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
 import ProfileShell from '../shared/ProfileShell';
-import { insiderRegistry } from '../../../data/insiders/registry';
+import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
-import insidersIndex from '../../../data/insiders/index.json';
+import insidersIndex from '../../../data/key-figures/index.json';
 
 interface GenericInsiderProfileProps {
   id: string;

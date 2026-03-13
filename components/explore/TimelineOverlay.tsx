@@ -43,7 +43,7 @@ interface SourceConfig {
   color: string;
 }
 
-// Keys must match the registry IDs in data/insiders/registry.ts exactly.
+// Keys must match the registry IDs in data/key-figures/registry.ts exactly.
 const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'dan-burisch':   { label: 'Dan Burisch',    color: '#8b5cf6' },
   'bob-lazar':     { label: 'Bob Lazar',       color: '#3b82f6' },

@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import nellData from '../../data/insiders/nell.json';
+import nellData from '../../data/key-figures/nell.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

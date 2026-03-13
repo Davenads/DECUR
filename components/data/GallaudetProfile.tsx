@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import gallaudetData from '../../data/insiders/gallaudet.json';
+import gallaudetData from '../../data/key-figures/gallaudet.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

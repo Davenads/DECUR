@@ -44,7 +44,7 @@ export const NODE_COLORS: Record<NodeType, string> = {
 };
 
 // Person nodes for figures WITHOUT dedicated profile pages.
-// All profiled insiders are auto-derived from data/insiders/index.json in NetworkGraph.tsx.
+// All profiled insiders are auto-derived from data/key-figures/index.json in NetworkGraph.tsx.
 export const supplementaryPersonNodes: GraphNode[] = [
   { id: 'john-lear',          name: 'John Lear',          type: 'person', group: 'lazar',    val: 2 },
   { id: 'jim-slaight',        name: 'Jim Slaight',        type: 'person', group: 'fravor',   val: 2 },

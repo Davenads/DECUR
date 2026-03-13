@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import davisData from '../../data/insiders/davis.json';
+import davisData from '../../data/key-figures/davis.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

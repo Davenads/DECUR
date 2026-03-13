@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import popeData from '../../data/insiders/pope.json';
+import popeData from '../../data/key-figures/pope.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';

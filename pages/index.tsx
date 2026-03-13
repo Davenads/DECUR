@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { FC } from 'react';
 import SeoHead from '../components/SeoHead';
 import { CustomNextPage, HomePageProps } from '../types/pages';
-import insidersData from '../data/insiders/index.json';
+import insidersData from '../data/key-figures/index.json';
 import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
 
