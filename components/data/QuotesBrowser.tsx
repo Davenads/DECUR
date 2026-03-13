@@ -1,5 +1,5 @@
 import { useState, useMemo, FC } from 'react';
-import { TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/timelineData';
 import { formatTimestamp } from '../../utils/formatting';
 import BrowserLayout from './shared/BrowserLayout';
 

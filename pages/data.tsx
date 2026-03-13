@@ -13,7 +13,7 @@ import DocumentsList from '../components/data/DocumentsList';
 import DataNavigation from '../components/data/DataNavigation';
 import { CategoryType, InsiderEntry, CaseEntry, DocumentEntry } from '../types/data';
 import { NavItemDef } from '../types/components';
-import { getEntriesByCategory, TimelineEntry } from '../lib/useTimelineData';
+import { getEntriesByCategory, TimelineEntry } from '../lib/timelineData';
 import insidersData from '../data/insiders/index.json';
 import casesData from '../data/cases.json';
 import documentsData from '../data/documents.json';

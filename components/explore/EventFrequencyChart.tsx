@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from 'recharts';
-import { TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/timelineData';
 
 interface Props {
   entries: TimelineEntry[];

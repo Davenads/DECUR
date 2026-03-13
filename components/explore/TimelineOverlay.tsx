@@ -4,7 +4,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, ScatterChart, Scatter, Cell,
 } from 'recharts';
-import { TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/timelineData';
 
 /* ─── Types ──────────────────────────────────────────────────── */
 

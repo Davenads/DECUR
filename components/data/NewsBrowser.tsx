@@ -1,5 +1,5 @@
 import { useState, useMemo, FC, ChangeEvent } from 'react';
-import { TimelineEntry } from '../../lib/useTimelineData';
+import { TimelineEntry } from '../../lib/timelineData';
 
 interface Props { entries: TimelineEntry[]; }
 

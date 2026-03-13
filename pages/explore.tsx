@@ -5,7 +5,7 @@ import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
 import TimelineOverlay, { extractYear, WBEvent, CaseEvent } from '../components/explore/TimelineOverlay';
 import CaseMap, { MapCase, MapEvent } from '../components/explore/CaseMap';
-import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
+import { getAllEntries, TimelineEntry } from '../lib/timelineData';
 import insiderIndex from '../data/insiders/index.json';
 import { insiderRegistry } from '../data/insiders/registry';
 import casesData from '../data/cases.json';
