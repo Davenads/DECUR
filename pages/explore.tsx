@@ -4,17 +4,19 @@ import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
 import TimelineOverlay, { extractYear, WBEvent, CaseEvent } from '../components/explore/TimelineOverlay';
-import CaseMap, { MapCase } from '../components/explore/CaseMap';
+import CaseMap, { MapCase, MapEvent } from '../components/explore/CaseMap';
 import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
 import insiderIndex from '../data/insiders/index.json';
 import { insiderRegistry } from '../data/insiders/registry';
 import casesData from '../data/cases.json';
+import timelineData from '../data/ufotimeline.json';
 
 interface Props {
   entries: TimelineEntry[];
   insiderEvents: WBEvent[];
   caseEvents: CaseEvent[];
   mapCases: MapCase[];
+  mapEvents: MapEvent[];
 }
 
 interface FocusEra {
@@ -23,7 +25,7 @@ interface FocusEra {
   label: string;
 }
 
-const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases }) => {
+const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases, mapEvents }) => {
   const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
   const overlayRef = useRef<HTMLElement>(null);
 
@@ -78,9 +80,9 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
           />
         </section>
 
-        {/* Case Locations Map */}
+        {/* Incident Map */}
         <section>
-          <CaseMap cases={mapCases} />
+          <CaseMap cases={mapCases} events={mapEvents} />
         </section>
 
         {/* Relationship Network Graph */}
@@ -184,7 +186,32 @@ export const getStaticProps: GetStaticProps = async () => {
       coordinates: c.coordinates!,
     }));
 
-    return { props: { entries, insiderEvents, caseEvents, mapCases }, revalidate: 3600 };
+    // Build geocoded timeline events for the map
+    const mapEvents: MapEvent[] = (timelineData as Array<{
+      id: number;
+      title: string;
+      year?: number;
+      date?: string;
+      excerpt?: string;
+      lat?: number;
+      lng?: number;
+      article_url?: string | null;
+      source_url?: string;
+    }>)
+      .filter(e => e.lat && e.lng)
+      .map(e => ({
+        id: e.id,
+        title: e.title,
+        year: e.year ?? 0,
+        date: e.date ?? '',
+        excerpt: e.excerpt ?? '',
+        lat: e.lat!,
+        lng: e.lng!,
+        article_url: e.article_url ?? null,
+        source_url: e.source_url ?? '',
+      }));
+
+    return { props: { entries, insiderEvents, caseEvents, mapCases, mapEvents }, revalidate: 3600 };
   } catch (error) {
     console.error('[getStaticProps] explore.tsx:', error);
     return { notFound: true };

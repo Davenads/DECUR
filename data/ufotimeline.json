@@ -11,7 +11,9 @@
     "source_url": "https://ufotimeline.com/1561/04/ufos-over-nuremberg/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/1561_celestial_phenomenon_over_Nuremberg",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 49.453872,
+    "lng": 11.077298
   },
   {
     "id": 257,
@@ -25,7 +27,9 @@
     "source_url": "https://ufotimeline.com/1566/08/celestial-phenomenon-over-basel-switzerland/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/1566_celestial_phenomenon_over_Basel",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.5581077,
+    "lng": 7.5878261
   },
   {
     "id": 1693,
@@ -39,7 +43,9 @@
     "source_url": "https://ufotimeline.com/1665/04/the-air-battle-of-stralsund/",
     "source": "ufotimeline",
     "article_url": "https://www.smb.museum/en/exhibitions/detail/a-ufo-in-1665/",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 54.3096314,
+    "lng": 13.0820846
   },
   {
     "id": 1215,
@@ -95,7 +101,9 @@
     "source_url": "https://ufotimeline.com/1897/04/aurora-texas-ufo-incident/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Aurora,_Texas,_UFO_incident",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.0595799,
+    "lng": -97.511071
   },
   {
     "id": 845,
@@ -109,7 +117,9 @@
     "source_url": "https://ufotimeline.com/1917/10/miracle-of-the-sun/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Miracle_of_the_Sun",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 39.6255498,
+    "lng": -8.6659081
   },
   {
     "id": 1593,
@@ -123,7 +133,9 @@
     "source_url": "https://ufotimeline.com/1933/06/the-magenta-italy-ufo-crash/",
     "source": "ufotimeline",
     "article_url": "https://www.youtube.com/watch?v=FGiwgyLY7Aw",
-    "article_type": "video"
+    "article_type": "video",
+    "lat": 45.4653931,
+    "lng": 8.8838429
   },
   {
     "id": 88,
@@ -137,7 +149,9 @@
     "source_url": "https://ufotimeline.com/1942/02/battle-of-los-angeles/",
     "source": "ufotimeline",
     "article_url": "https://www.youtube.com/watch?v=5m7736RMBEg",
-    "article_type": "video"
+    "article_type": "video",
+    "lat": 34.0536909,
+    "lng": -118.242766
   },
   {
     "id": 920,
@@ -165,7 +179,9 @@
     "source_url": "https://ufotimeline.com/1946/07/scandinavian-ghost-rockets/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Ghost_rockets",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 59.6749712,
+    "lng": 14.5208584
   },
   {
     "id": 603,
@@ -179,7 +195,9 @@
     "source_url": "https://ufotimeline.com/1947/06/maury-island-ufo-incident-and-the-first-men-in-black/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Maury_Island_incident",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.3751038,
+    "lng": -122.4334349
   },
   {
     "id": 474,
@@ -193,7 +211,9 @@
     "source_url": "https://ufotimeline.com/1947/06/kenneth-arnold-ufo-sighting/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Kenneth_Arnold",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 46.8522029,
+    "lng": -121.7575158
   },
   {
     "id": 716,
@@ -354,7 +374,9 @@
     "source_url": "https://ufotimeline.com/1951/08/the-lubbock-lights/",
     "source": "ufotimeline",
     "article_url": "http://www.ufocasebook.com/lubbocklights.html",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.5855677,
+    "lng": -101.8470215
   },
   {
     "id": 180,
@@ -680,7 +702,9 @@
     "source_url": "https://ufotimeline.com/1965/12/kecksburg-ufo-incident/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Kecksburg_UFO_incident",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.1846849,
+    "lng": -79.4608984
   },
   {
     "id": 296,
@@ -738,7 +762,9 @@
     "source_url": "https://ufotimeline.com/1967/03/malmstrom-afb-ufo-missile-incident/",
     "source": "ufotimeline",
     "article_url": "https://www.cufon.org/cufon/malmstrom/malm1.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.5048851,
+    "lng": -111.29189
   },
   {
     "id": 1200,
@@ -766,7 +792,9 @@
     "source_url": "https://ufotimeline.com/1967/10/shag-harbour-ufo-incident/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Shag_Harbour_UFO_incident",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 43.4939108,
+    "lng": -65.7179933
   },
   {
     "id": 360,
@@ -930,7 +958,9 @@
     "source_url": "https://ufotimeline.com/1975/11/travis-walton-abduction/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Travis_Walton_UFO_incident",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.5114704,
+    "lng": -110.079608
   },
   {
     "id": 372,
@@ -1004,7 +1034,9 @@
     "source_url": "https://ufotimeline.com/1977/01/the-colares-ufo-flap-brazil/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/UFO_sightings_in_Brazil#1977",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": -0.936423,
+    "lng": -48.280254
   },
   {
     "id": 120,
@@ -1048,7 +1080,9 @@
     "source_url": "https://ufotimeline.com/1978/12/the-kaikoura-lights/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Kaikoura_lights",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": -42.4005999,
+    "lng": 173.6811428
   },
   {
     "id": 1138,
@@ -1120,7 +1154,9 @@
     "source_url": "https://ufotimeline.com/1980/12/rendlesham-forest-ufo-landings/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Rendlesham_Forest_incident",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 52.0865885,
+    "lng": 1.4093625
   },
   {
     "id": 924,
@@ -1472,7 +1508,9 @@
     "source_url": "https://ufotimeline.com/1994/09/the-zimbabwe-school-close-encounter/",
     "source": "ufotimeline",
     "article_url": "https://en.wikipedia.org/wiki/Ariel_School_UFO_incident",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": -17.897155,
+    "lng": 31.237093
   },
   {
     "id": 287,
@@ -16903,7 +16941,9 @@
       "famous-cases"
     ],
     "source_url": "https://openminds.tv/alleged-ufo-crashes-in-the-u-s-other-than-roswell-aurora-aztec-and-kecksburg/",
-    "source": "openminds"
+    "source": "openminds",
+    "lat": 40.1846849,
+    "lng": -79.4608984
   },
   {
     "id": 2163,
@@ -19914,7 +19954,9 @@
     "source_url": "https://www.nicap.org/chronos/1947fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/470602rehoboth_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.7164771,
+    "lng": -75.0835107
   },
   {
     "id": 3353,
@@ -19928,7 +19970,9 @@
     "source_url": "https://www.nicap.org/chronos/1947fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/470614bakersfield_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.3738712,
+    "lng": -119.019463
   },
   {
     "id": 3354,
@@ -19942,7 +19986,9 @@
     "source_url": "https://www.nicap.org/chronos/1947fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/470621spokane_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.6571934,
+    "lng": -117.42351
   },
   {
     "id": 3355,
@@ -19970,7 +20016,9 @@
     "source_url": "https://www.nicap.org/chronos/1947fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/470628maxwellafb_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.3818479,
+    "lng": -86.3533076
   },
   {
     "id": 3357,
@@ -20026,7 +20074,9 @@
     "source_url": "https://www.nicap.org/chronos/1947fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/470711elmendorf_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 61.2532817,
+    "lng": -149.8081736
   },
   {
     "id": 3361,
@@ -20054,7 +20104,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/480107fortknox_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 37.4757698,
+    "lng": -86.8560639
   },
   {
     "id": 3363,
@@ -20096,7 +20148,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/480111hartford_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 41.764582,
+    "lng": -72.6908547
   },
   {
     "id": 3366,
@@ -20110,7 +20164,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/480301sweden_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 57.6399819,
+    "lng": 18.2927818
   },
   {
     "id": 3367,
@@ -20138,7 +20194,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/480405holloman_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.076831,
+    "lng": -106.2190016
   },
   {
     "id": 3369,
@@ -20166,7 +20224,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/480409montgomery_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.3777111,
+    "lng": -86.3090775
   },
   {
     "id": 3371,
@@ -20236,7 +20296,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/480726atlanta_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.892176,
+    "lng": -84.2988296
   },
   {
     "id": 3376,
@@ -20292,7 +20354,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/481015japan_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.6251241,
+    "lng": 130.6180016
   },
   {
     "id": 3380,
@@ -20334,7 +20398,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/481031goosedir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 53.333333,
+    "lng": -60.416667
   },
   {
     "id": 3383,
@@ -20362,7 +20428,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/481106wakkanai_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 45.415737,
+    "lng": 141.6739836
   },
   {
     "id": 3385,
@@ -20376,7 +20444,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/481118andrews_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.8057469,
+    "lng": -76.8774165
   },
   {
     "id": 3386,
@@ -20446,7 +20516,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/albuq481206dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.0841034,
+    "lng": -106.650985
   },
   {
     "id": 3391,
@@ -20460,7 +20532,9 @@
     "source_url": "https://www.nicap.org/chronos/1948fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/481209pittsburgh_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.446231,
+    "lng": -79.9100213
   },
   {
     "id": 3392,
@@ -20488,7 +20562,9 @@
     "source_url": "https://www.nicap.org/chronos/1949fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/490101jackson_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.2998686,
+    "lng": -90.1830408
   },
   {
     "id": 3394,
@@ -20502,7 +20578,9 @@
     "source_url": "https://www.nicap.org/chronos/1949fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/490104hickam_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 21.3276152,
+    "lng": -157.9528703
   },
   {
     "id": 3395,
@@ -20516,7 +20594,9 @@
     "source_url": "https://www.nicap.org/chronos/1949fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/490106kirtland_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.0011307,
+    "lng": -106.5157255
   },
   {
     "id": 3396,
@@ -20544,7 +20624,9 @@
     "source_url": "https://www.nicap.org/chronos/1949fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/490127cortez_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 27.4625741,
+    "lng": -82.6112197
   },
   {
     "id": 3398,
@@ -20558,7 +20640,9 @@
     "source_url": "https://www.nicap.org/chronos/1949fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/alamos490227dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.88137,
+    "lng": -106.298959
   },
   {
     "id": 3399,
@@ -20572,7 +20656,9 @@
     "source_url": "https://www.nicap.org/chronos/1949fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/490407marchafb_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.9005061,
+    "lng": -117.2563308
   },
   {
     "id": 3400,
@@ -20642,7 +20728,9 @@
     "source_url": "https://www.nicap.org/chronos/1949fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/490721mountpleasant_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 39.5469073,
+    "lng": -111.455465
   },
   {
     "id": 3405,
@@ -20712,7 +20800,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/teaticket500205dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 41.5645454,
+    "lng": -70.5959433
   },
   {
     "id": 3410,
@@ -20726,7 +20816,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/500208tampa_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 27.9449854,
+    "lng": -82.4583107
   },
   {
     "id": 3411,
@@ -20740,7 +20832,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/datil500224dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.1450333,
+    "lng": -107.8433562
   },
   {
     "id": 3412,
@@ -20796,7 +20890,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/monmouth500414dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.3118633,
+    "lng": -74.04508
   },
   {
     "id": 3416,
@@ -20810,7 +20906,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/500427plymouth_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 41.9426657,
+    "lng": -70.7618592
   },
   {
     "id": 3417,
@@ -20824,7 +20922,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/500807santafe_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.6876096,
+    "lng": -105.938456
   },
   {
     "id": 3418,
@@ -20908,7 +21008,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/501114keywest_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 24.5548262,
+    "lng": -81.8020722
   },
   {
     "id": 3424,
@@ -20922,7 +21024,9 @@
     "source_url": "https://www.nicap.org/chronos/1950fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/501115keywest_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 24.5548262,
+    "lng": -81.8020722
   },
   {
     "id": 3425,
@@ -20950,7 +21054,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510114bigbear_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.2440587,
+    "lng": -116.91018
   },
   {
     "id": 3427,
@@ -20964,7 +21070,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510121oakridge_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 36.0103562,
+    "lng": -84.2696449
   },
   {
     "id": 3428,
@@ -21020,7 +21128,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510313sacramento_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.6646655,
+    "lng": -121.4095056
   },
   {
     "id": 3432,
@@ -21034,7 +21144,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510315newdelhi_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 28.6138954,
+    "lng": 77.2090057
   },
   {
     "id": 3433,
@@ -21076,7 +21188,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510701seoul_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 37.5666791,
+    "lng": 126.9782914
   },
   {
     "id": 3436,
@@ -21104,7 +21218,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510714holloman_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.076831,
+    "lng": -106.2190016
   },
   {
     "id": 3438,
@@ -21160,7 +21276,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510827vandalia_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.960601,
+    "lng": -89.0936778
   },
   {
     "id": 3442,
@@ -21202,7 +21320,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/510914goosebay_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 53.333333,
+    "lng": -60.416667
   },
   {
     "id": 3445,
@@ -21258,7 +21378,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/511011minneapolis_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 44.9772995,
+    "lng": -93.2654692
   },
   {
     "id": 3449,
@@ -21286,7 +21408,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/511021ntrurodir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 42.0334364,
+    "lng": -70.0953025
   },
   {
     "id": 3451,
@@ -21300,7 +21424,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/511022ntrurodir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 42.0334364,
+    "lng": -70.0953025
   },
   {
     "id": 3452,
@@ -21314,7 +21440,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/511118washingtondc_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.8950368,
+    "lng": -77.0365427
   },
   {
     "id": 3453,
@@ -21328,7 +21456,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/511124mankato_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 44.1658533,
+    "lng": -94.0028013
   },
   {
     "id": 3454,
@@ -21342,7 +21472,9 @@
     "source_url": "https://www.nicap.org/chronos/1951fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/511124coopersville_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 43.0639112,
+    "lng": -85.9347667
   },
   {
     "id": 3455,
@@ -21356,7 +21488,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520120spokane_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.6160847,
+    "lng": -117.6469995
   },
   {
     "id": 3456,
@@ -21384,7 +21518,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520122nenana_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 64.5635293,
+    "lng": -149.0959778
   },
   {
     "id": 3458,
@@ -21398,7 +21534,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520129wonsan_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.088644,
+    "lng": 126.845164
   },
   {
     "id": 3459,
@@ -21426,7 +21564,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520211pittsburgh_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.4406968,
+    "lng": -80.0025666
   },
   {
     "id": 3461,
@@ -21440,7 +21580,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520213granite_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.7014389,
+    "lng": -90.1487199
   },
   {
     "id": 3462,
@@ -21482,7 +21624,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520220mtdiablo_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 37.8816954,
+    "lng": -121.9141465
   },
   {
     "id": 3465,
@@ -21608,7 +21752,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520403benson_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.4483736,
+    "lng": -111.211475
   },
   {
     "id": 3474,
@@ -21622,7 +21768,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520404duncanville_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.6518004,
+    "lng": -96.9083366
   },
   {
     "id": 3475,
@@ -21692,7 +21840,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520414memphis_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.1460249,
+    "lng": -90.0517638
   },
   {
     "id": 3480,
@@ -21706,7 +21856,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520416shreveport_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.5135356,
+    "lng": -93.7477839
   },
   {
     "id": 3481,
@@ -21776,7 +21928,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520424bellevue_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 44.7819912,
+    "lng": -73.0648613
   },
   {
     "id": 3486,
@@ -21804,7 +21958,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520425rhein_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 49.8664978,
+    "lng": 8.6390023
   },
   {
     "id": 3488,
@@ -21818,7 +21974,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/yuma520427dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.7254216,
+    "lng": -114.6198088
   },
   {
     "id": 3489,
@@ -21832,7 +21990,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/docs/MAXW-PBB10-285-290.pdf",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.5447756,
+    "lng": -94.3661004
   },
   {
     "id": 3490,
@@ -21860,7 +22020,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520501davismonthan_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.1661376,
+    "lng": -110.8832855
   },
   {
     "id": 3492,
@@ -21902,7 +22064,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520509georgeafb_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.599735,
+    "lng": -117.3784879
   },
   {
     "id": 3495,
@@ -21916,7 +22080,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520510albuq_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.0841034,
+    "lng": -106.650985
   },
   {
     "id": 3496,
@@ -21930,7 +22096,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520514georgeafb_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.599735,
+    "lng": -117.3784879
   },
   {
     "id": 3497,
@@ -21972,7 +22140,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/docs/MAXW-PBB10-812-815.pdf",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 29.7589382,
+    "lng": -95.3676974
   },
   {
     "id": 3500,
@@ -21986,7 +22156,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520523kirtland_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.0011307,
+    "lng": -106.5157255
   },
   {
     "id": 3501,
@@ -22000,7 +22172,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520524zuni_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.0693961,
+    "lng": -108.84939
   },
   {
     "id": 3502,
@@ -22014,7 +22188,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/randolph520525dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 29.5285568,
+    "lng": -98.2792383
   },
   {
     "id": 3503,
@@ -22028,7 +22204,9 @@
     "source_url": "https://www.nicap.org/chronos/1952fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/520526korea_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.3736611,
+    "lng": 127.0870417
   },
   {
     "id": 3504,
@@ -22056,7 +22234,9 @@
     "source_url": "https://www.nicap.org/chronos/1960fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/600507canada_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 50.4479733,
+    "lng": -104.6158764
   },
   {
     "id": 3506,
@@ -22098,7 +22278,9 @@
     "source_url": "https://www.nicap.org/chronos/1960fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/600917kirksville_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.1948848,
+    "lng": -92.5833939
   },
   {
     "id": 3509,
@@ -22112,7 +22294,9 @@
     "source_url": "https://www.nicap.org/chronos/1960fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/600928kirksville_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.1948848,
+    "lng": -92.5833939
   },
   {
     "id": 3510,
@@ -22140,7 +22324,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610110wichitafalls_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.9004572,
+    "lng": -98.5020777
   },
   {
     "id": 3512,
@@ -22182,7 +22368,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/docs2/1961_02_26_Tyndall_AFB_Florida.pdf",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 30.0691172,
+    "lng": -85.5772755
   },
   {
     "id": 3515,
@@ -22196,7 +22384,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610227yuma_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.7254216,
+    "lng": -114.6198088
   },
   {
     "id": 3516,
@@ -22224,7 +22414,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610303ephrata_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.3176385,
+    "lng": -119.553649
   },
   {
     "id": 3518,
@@ -22238,7 +22430,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610310upperheyford_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 51.937889,
+    "lng": -1.2491933
   },
   {
     "id": 3519,
@@ -22252,7 +22446,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610411capecanav_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 28.4513556,
+    "lng": -80.5283059
   },
   {
     "id": 3520,
@@ -22308,7 +22504,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610520maxwell_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.3818479,
+    "lng": -86.3533076
   },
   {
     "id": 3524,
@@ -22322,7 +22520,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610520tyndall_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 30.0691172,
+    "lng": -85.5772755
   },
   {
     "id": 3525,
@@ -22336,7 +22536,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610602tampa_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 27.9449854,
+    "lng": -82.4583107
   },
   {
     "id": 3526,
@@ -22364,7 +22566,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610720houston_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 29.7589382,
+    "lng": -95.3676974
   },
   {
     "id": 3528,
@@ -22378,7 +22582,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610907capecanav_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 28.4513556,
+    "lng": -80.5283059
   },
   {
     "id": 3529,
@@ -22406,7 +22612,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/610930vegas_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 36.1674263,
+    "lng": -115.1484131
   },
   {
     "id": 3531,
@@ -22420,7 +22628,9 @@
     "source_url": "https://www.nicap.org/chronos/1961fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/611107arlinghts_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 42.0811563,
+    "lng": -87.9802164
   },
   {
     "id": 3532,
@@ -22434,7 +22644,9 @@
     "source_url": "https://www.nicap.org/chronos/1962fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/620122kirksville_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.1948848,
+    "lng": -92.5833939
   },
   {
     "id": 3533,
@@ -22462,7 +22674,9 @@
     "source_url": "https://www.nicap.org/chronos/1962fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/620402goose_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 53.333333,
+    "lng": -60.416667
   },
   {
     "id": 3535,
@@ -22476,7 +22690,9 @@
     "source_url": "https://www.nicap.org/chronos/1962fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/620524albuquerque_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.0841034,
+    "lng": -106.650985
   },
   {
     "id": 3536,
@@ -22490,7 +22706,9 @@
     "source_url": "https://www.nicap.org/chronos/1963fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/630306_3states_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.4659798,
+    "lng": -94.0425234
   },
   {
     "id": 3537,
@@ -22504,7 +22722,9 @@
     "source_url": "https://www.nicap.org/chronos/1963fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/630809mtvernon_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.3172715,
+    "lng": -88.9031201
   },
   {
     "id": 3538,
@@ -22532,7 +22752,9 @@
     "source_url": "https://www.nicap.org/chronos/1964fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/640428minotAFBdir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 48.420011,
+    "lng": -101.3372095
   },
   {
     "id": 3540,
@@ -22560,7 +22782,9 @@
     "source_url": "https://www.nicap.org/chronos/1964fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/640724langley_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 37.0875143,
+    "lng": -76.3572224
   },
   {
     "id": 3542,
@@ -22588,7 +22812,9 @@
     "source_url": "https://www.nicap.org/chronos/1964fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/641204baker_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 44.7259637,
+    "lng": -117.6204818
   },
   {
     "id": 3544,
@@ -22602,7 +22828,9 @@
     "source_url": "https://www.nicap.org/chronos/1964fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/641219patuxent_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.2845482,
+    "lng": -76.4097702
   },
   {
     "id": 3545,
@@ -22644,7 +22872,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/650128alaska_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 66.5647222,
+    "lng": -145.273888
   },
   {
     "id": 3548,
@@ -22658,7 +22888,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/650404keesler_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 30.4094294,
+    "lng": -88.918865
   },
   {
     "id": 3549,
@@ -22686,7 +22918,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/docs2/1965-06-29%20Frankfurt%20Germany.pdf",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 50.1027438,
+    "lng": 8.5420871
   },
   {
     "id": 3551,
@@ -22700,7 +22934,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/650706arlington_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.7355816,
+    "lng": -97.1071186
   },
   {
     "id": 3552,
@@ -22742,7 +22978,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/650731wynnewood_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.6434171,
+    "lng": -97.1644656
   },
   {
     "id": 3555,
@@ -22770,7 +23008,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/650813baden_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.6350668,
+    "lng": -80.2281159
   },
   {
     "id": 3557,
@@ -22798,7 +23038,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/650820plattsburgh_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 44.6960855,
+    "lng": -73.4542915
   },
   {
     "id": 3559,
@@ -22840,7 +23082,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/650926licking_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.1318041,
+    "lng": -82.4627856
   },
   {
     "id": 3562,
@@ -22854,7 +23098,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/651007edwards_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.9119057,
+    "lng": -117.8832412
   },
   {
     "id": 3563,
@@ -22868,7 +23114,9 @@
     "source_url": "https://www.nicap.org/chronos/1965fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/651014sawyerafb_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 46.3529764,
+    "lng": -87.3915429
   },
   {
     "id": 3564,
@@ -22910,7 +23158,9 @@
     "source_url": "https://www.nicap.org/chronos/1966fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/660321hillsdale_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 41.8779105,
+    "lng": -84.5984396
   },
   {
     "id": 3567,
@@ -22924,7 +23174,9 @@
     "source_url": "https://www.nicap.org/chronos/1966fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/660323temple_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.2720338,
+    "lng": -98.2358781
   },
   {
     "id": 3568,
@@ -22938,7 +23190,9 @@
     "source_url": "https://www.nicap.org/chronos/1966fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/660504charlestondir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.3505995,
+    "lng": -81.6332812
   },
   {
     "id": 3569,
@@ -23022,7 +23276,9 @@
     "source_url": "https://www.nicap.org/chronos/1967fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/670710lizelia_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 32.5356947,
+    "lng": -88.6600438
   },
   {
     "id": 3575,
@@ -23050,7 +23306,9 @@
     "source_url": "https://www.nicap.org/chronos/1967fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/670730kernville_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.7330803,
+    "lng": -118.4339644
   },
   {
     "id": 3577,
@@ -23078,7 +23336,9 @@
     "source_url": "https://www.nicap.org/chronos/1968fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/680306amarillo_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.20729,
+    "lng": -101.8371192
   },
   {
     "id": 3579,
@@ -23092,7 +23352,9 @@
     "source_url": "https://www.nicap.org/chronos/1968fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/680711eielson_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 64.6744645,
+    "lng": -147.0825915
   },
   {
     "id": 3580,
@@ -23134,7 +23396,9 @@
     "source_url": "https://www.nicap.org/chronos/1970fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/imjarvi700107dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 61.2852833,
+    "lng": 26.2549466
   },
   {
     "id": 3583,
@@ -23148,7 +23412,9 @@
     "source_url": "https://www.nicap.org/chronos/1972fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/mcchord721014dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.1309548,
+    "lng": -122.502686
   },
   {
     "id": 3584,
@@ -23162,7 +23428,9 @@
     "source_url": "https://www.nicap.org/chronos/1973fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/731018rosewood_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 40.2189421,
+    "lng": -83.9607703
   },
   {
     "id": 3585,
@@ -23190,7 +23458,9 @@
     "source_url": "https://www.nicap.org/chronos/1975fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/751108malmstromafb_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 47.5048651,
+    "lng": -111.1785139
   },
   {
     "id": 3587,
@@ -23204,7 +23474,9 @@
     "source_url": "https://www.nicap.org/chronos/1976fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/760121cannondoc.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.3863913,
+    "lng": -103.316328
   },
   {
     "id": 3588,
@@ -23218,7 +23490,9 @@
     "source_url": "https://www.nicap.org/chronos/1977fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/770312syracuse_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 42.997724,
+    "lng": -76.152857
   },
   {
     "id": 3589,
@@ -23232,7 +23506,9 @@
     "source_url": "https://www.nicap.org/chronos/1977fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/770617portugal_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 39.5426898,
+    "lng": -8.3189588
   },
   {
     "id": 3590,
@@ -23246,7 +23522,9 @@
     "source_url": "https://www.nicap.org/chronos/1977fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/770701aviano_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 46.0644488,
+    "lng": 12.5905671
   },
   {
     "id": 3591,
@@ -23260,7 +23538,9 @@
     "source_url": "https://www.nicap.org/chronos/1978fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/780101santamonica_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 34.0194704,
+    "lng": -118.491227
   },
   {
     "id": 3592,
@@ -23274,7 +23554,9 @@
     "source_url": "https://www.nicap.org/chronos/1978fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/anreact/ar-780204.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 33.750631,
+    "lng": -117.8722311
   },
   {
     "id": 3593,
@@ -23288,7 +23570,9 @@
     "source_url": "https://www.nicap.org/chronos/1978fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/780808beltondir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 38.8108097,
+    "lng": -94.5313502
   },
   {
     "id": 3594,
@@ -23316,7 +23600,9 @@
     "source_url": "https://www.nicap.org/chronos/1980fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/kirtland800809dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 35.0011307,
+    "lng": -106.5157255
   },
   {
     "id": 3596,
@@ -23330,7 +23616,9 @@
     "source_url": "https://www.nicap.org/chronos/1980fullrep.htm",
     "source": "nicap",
     "article_url": "https://www.nicap.org/ar-801218dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": -22.9110137,
+    "lng": -43.2093727
   },
   {
     "id": 3597,
@@ -23344,7 +23632,9 @@
     "source_url": "https://www.nicap.org/chronos/1981fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/810412goodhue_dir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 44.396973,
+    "lng": -92.7175627
   },
   {
     "id": 3598,
@@ -23386,7 +23676,9 @@
     "source_url": "https://www.nicap.org/chronos/1987fullrep.htm",
     "source": "nicap",
     "article_url": "http://www.nicap.org/870130alaskadir.htm",
-    "article_type": "article"
+    "article_type": "article",
+    "lat": 64.4459613,
+    "lng": -149.680909
   },
   {
     "id": 3601,
