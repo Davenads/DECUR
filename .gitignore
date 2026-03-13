@@ -70,3 +70,6 @@ aod-audit-cheatsheet.txt
 /data/channels/gerb/extracted/*.json
 /data/channels/gerb/approved/*.json
 # Keep index, contributions, and .gitkeep files
+
+# Script output artifacts (generated, not source)
+/scripts/output/
