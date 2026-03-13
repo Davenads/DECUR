@@ -4,6 +4,7 @@ import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
 import TimelineOverlay, { extractYear, WBEvent, CaseEvent } from '../components/explore/TimelineOverlay';
+import CaseMap, { MapCase } from '../components/explore/CaseMap';
 import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
 import insiderIndex from '../data/insiders/index.json';
 import { insiderRegistry } from '../data/insiders/registry';
@@ -13,6 +14,7 @@ interface Props {
   entries: TimelineEntry[];
   insiderEvents: WBEvent[];
   caseEvents: CaseEvent[];
+  mapCases: MapCase[];
 }
 
 interface FocusEra {
@@ -21,7 +23,7 @@ interface FocusEra {
   label: string;
 }
 
-const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents }) => {
+const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases }) => {
   const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
   const overlayRef = useRef<HTMLElement>(null);
 
@@ -74,6 +76,11 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents }) => {
             focusEra={focusEra}
             onClearFocus={() => setFocusEra(null)}
           />
+        </section>
+
+        {/* Case Locations Map */}
+        <section>
+          <CaseMap cases={mapCases} />
         </section>
 
         {/* Relationship Network Graph */}
@@ -154,7 +161,30 @@ export const getStaticProps: GetStaticProps = async () => {
       return acc;
     }, [] as CaseEvent[]);
 
-    return { props: { entries, insiderEvents, caseEvents }, revalidate: 3600 };
+    // Build map cases - only include cases with coordinates
+    const mapCases: MapCase[] = (casesData as Array<{
+      id: string;
+      name: string;
+      date: string;
+      location: string;
+      country: string;
+      evidence_tier: 'tier-1' | 'tier-2';
+      classification_status: string;
+      summary: string;
+      coordinates?: { lat: number; lng: number };
+    }>).filter(c => c.coordinates).map(c => ({
+      id: c.id,
+      name: c.name,
+      date: c.date,
+      location: c.location,
+      country: c.country,
+      evidence_tier: c.evidence_tier,
+      classification_status: c.classification_status,
+      summary: c.summary,
+      coordinates: c.coordinates!,
+    }));
+
+    return { props: { entries, insiderEvents, caseEvents, mapCases }, revalidate: 3600 };
   } catch (error) {
     console.error('[getStaticProps] explore.tsx:', error);
     return { notFound: true };
