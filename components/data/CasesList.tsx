@@ -5,7 +5,7 @@ import { CaseEntry, EvidenceTier } from '../../types/data';
 import CaseDetail, { tierConfig } from './CaseDetail';
 
 // SSR-safe: react-simple-maps uses browser APIs
-const CasesMap = dynamic(() => import('./CasesMap'), { ssr: false });
+const CasesLocationMap = dynamic(() => import('./CasesLocationMap'), { ssr: false });
 
 type ViewMode = 'list' | 'map';
 
@@ -62,7 +62,7 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
       {/* Map view */}
       {viewMode === 'map' && (
         <div className="mb-6">
-          <CasesMap cases={cases} onSelectCase={(id) => setSelectedId(id)} />
+          <CasesLocationMap cases={cases} onSelectCase={(id) => setSelectedId(id)} />
         </div>
       )}
 
