@@ -10,8 +10,6 @@
     "typecheck": "tsc --noEmit",
     "lint:ts": "eslint --ext .ts,.tsx .",
     "check": "npm run lint && npm run typecheck",
-    "transcript:download": "ts-node ytdl/downloadTranscript.ts",
-    "transcript:import": "ts-node ytdl/importTranscripts.ts",
     "gerb:fetch": "node --env-file=.env scripts/gerb/fetch-channel.js",
     "gerb:transcripts": "node --env-file=.env scripts/gerb/fetch-transcripts.js",
     "gerb:extract": "node --env-file=.env scripts/gerb/extract.js",
