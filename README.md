@@ -6,7 +6,7 @@ A structured reference archive for UAP and NHI research. DECUR catalogs insider 
 
 Live at [decur.org](https://decur.org)
 
-![DECUR Home](public/readme/readme-home.png)
+![DECUR Home](public/readme/home.png)
 
 ---
 
@@ -22,7 +22,7 @@ DECUR does not adjudicate the truth of any claim. Every entry is documented with
 
 The core of the platform. Accessed via the `Data` nav dropdown or directly at `/data`.
 
-![Data - Research Archive](public/readme/readme-insiders.png)
+![Data - Research Archive](public/readme/key-figures.png)
 
 | Category | Description |
 |---|---|
@@ -92,7 +92,7 @@ A chronological view of 1,580+ documented UAP/NHI events from the 1940s to the p
 
 Interactive cross-dataset visualizations.
 
-![Explore - Visualizations](public/readme/readme-explore.png)
+![Explore - Visualizations](public/readme/explore.png)
 
 - **Event Frequency Chart** - Distribution of documented events by decade and historical era
 - **Insider Timeline Overlay** - Swimlane view of insider careers and key events plotted chronologically, with per-source color coding
