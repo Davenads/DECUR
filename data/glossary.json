@@ -10,6 +10,11 @@
     "source": "gerb"
   },
   {
+    "term": "AAP",
+    "definition": "Abnormal Aerospace Phenomena - Term used in the context of AAWSAP and related DoD programs to describe unidentified aerial phenomena with anomalous characteristics",
+    "source": "curated"
+  },
+  {
     "term": "AARO",
     "definition": "All-domain Anomaly Resolution Office - Established by the DoD in July 2022 as the centralized office for detecting, identifying, and attributing UAP. Replaced the UAP Task Force. Responsible for producing the 2024 Historical Record Report.",
     "source": "curated"
@@ -17,6 +22,11 @@
   {
     "term": "AATIP",
     "definition": "Advanced Aerospace Threat Identification Program - A classified Pentagon program that ran from 2007 to 2012 under Defense Intelligence Agency funding, focused on investigating UAP reported by U.S. military personnel. Luis Elizondo claims to have directed it through 2017 under a different organizational umbrella. Publicly confirmed via a 2017 New York Times investigation.",
+    "source": "curated"
+  },
+  {
+    "term": "AAV",
+    "definition": "Advanced Aerospace Vehicle / Anomalous Aerial Vehicle - Designation used by Navy pilots and AATIP to describe craft exhibiting flight characteristics beyond known aerospace technology, including the object observed during the 2004 Nimitz incident",
     "source": "curated"
   },
   {
@@ -155,6 +165,11 @@
     "source": "gerb"
   },
   {
+    "term": "ATFLIR",
+    "definition": "Advanced Targeting Forward Looking Infra-Red - Targeting pod system used by Navy F/A-18s that captured the famous Nimitz/Tic-Tac UAP video in 2004",
+    "source": "curated"
+  },
+  {
     "term": "ATIC",
     "definition": "Air Force Technical Intelligence Center - Air Force intelligence center that investigated UFOs and commissioned Project Stork through Battelle",
     "source": "gerb"
@@ -163,6 +178,11 @@
     "term": "AWACS",
     "definition": "Airborne Warning and Control System - Flying long-range radar and command center that provides tactical command services to units in their network",
     "source": "gerb"
+  },
+  {
+    "term": "BAASS",
+    "definition": "Bigelow Aerospace Advanced Space Studies - Robert Bigelow's company awarded the AAWSAP contract by DIA in 2008 to study UAP and related phenomena",
+    "source": "curated"
   },
   {
     "term": "BAT",
@@ -178,6 +198,16 @@
     "term": "BDU",
     "definition": "Battle Dress Uniform - Military camouflage fatigues",
     "source": "gerb"
+  },
+  {
+    "term": "BEAM",
+    "definition": "Bigelow Expandable Activity Module - Inflatable space habitat developed by Bigelow Aerospace and attached to the ISS",
+    "source": "curated"
+  },
+  {
+    "term": "BICS",
+    "definition": "Bigelow Institute for Consciousness Studies - Organization founded by Robert Bigelow to fund research into the survival of consciousness after bodily death",
+    "source": "curated"
   },
   {
     "term": "Bigelow Aerospace",
@@ -328,6 +358,11 @@
     "term": "DIIB",
     "definition": "Defense Industrial Base - Network of prime contractors involved in legacy programs",
     "source": "gerb"
+  },
+  {
+    "term": "DIRD",
+    "definition": "Defense Intelligence Reference Document - Series of 38 technical reports produced under AAWSAP/BAASS covering advanced aerospace topics including propulsion, materials, and exotic phenomena",
+    "source": "curated"
   },
   {
     "term": "DIS",
@@ -675,6 +710,16 @@
     "source": "gerb"
   },
   {
+    "term": "LEO",
+    "definition": "Low Earth Orbit - Orbital regime between approximately 160-2,000 km altitude; discussed in context of UAP detection capabilities and space-based sensor systems",
+    "source": "curated"
+  },
+  {
+    "term": "LLNL",
+    "definition": "Lawrence Livermore National Laboratory - U.S. national laboratory involved in advanced aerospace and weapons research; cited in connection with reverse-engineering discussions",
+    "source": "curated"
+  },
+  {
     "term": "LRRP",
     "definition": "Long Range Reconnaissance Patrol - A special reconnaissance unit in Vietnam that conducted surveillance of enemy supply routes and marked bombing targets, specifically Company E 52nd Infantry attached to the First Cavalry Division",
     "source": "gerb"
@@ -835,6 +880,11 @@
     "source": "gerb"
   },
   {
+    "term": "NIDS",
+    "definition": "National Institute for Discovery Science - Robert Bigelow's private research organization (1995-2004) that investigated UAP, cattle mutilations, and anomalous phenomena including operations at Skinwalker Ranch",
+    "source": "curated"
+  },
+  {
     "term": "NIE",
     "definition": "National Intelligence Estimate - US intelligence community's authoritative assessment of national security issues",
     "source": "gerb"
@@ -933,6 +983,11 @@
     "term": "OCRD",
     "definition": "Office of the Chief of Army R&D - Army office under General Trudeau that consolidated all Army research and development in 1958",
     "source": "gerb"
+  },
+  {
+    "term": "ODNI",
+    "definition": "Office of the Director of National Intelligence - Leads the U.S. Intelligence Community; issued the UAP Preliminary Assessment report in June 2021 and subsequent annual UAP reports",
+    "source": "curated"
   },
   {
     "term": "OGA",
@@ -1063,6 +1118,11 @@
     "term": "RAAF",
     "definition": "Roswell Army Airfield - The Army Air Force base near Roswell, New Mexico where the alleged 1947 crash materials were brought and processed",
     "source": "gerb"
+  },
+  {
+    "term": "RAF",
+    "definition": "Royal Air Force - United Kingdom air force involved in several significant UAP incidents including the 1980 Rendlesham Forest case near RAF Woodbridge/Bentwaters",
+    "source": "curated"
   },
   {
     "term": "RCO",
@@ -1275,6 +1335,11 @@
     "source": "gerb"
   },
   {
+    "term": "SVP",
+    "definition": "Source Visit Probability - Numerical credibility index for UAP cases developed by Dr. Jacques Vallee, assessing the probability that a reported source actually visited the location of a sighting",
+    "source": "curated"
+  },
+  {
     "term": "TCPED",
     "definition": "Tasking Collection Processing Exploitation and Dissemination - The intelligence cycle that Sentient aims to revolutionize across the intelligence community",
     "source": "gerb"
@@ -1298,6 +1363,11 @@
     "term": "TREAT",
     "definition": "Tactical Reconnaissance Engineering Assessment Team - An alleged Men in Black-type team that conducted investigations and recovery operations",
     "source": "gerb"
+  },
+  {
+    "term": "TS",
+    "definition": "Top Secret - Security classification level above Secret, applied to information whose unauthorized disclosure could cause exceptionally grave damage to national security",
+    "source": "curated"
   },
   {
     "term": "TS SCI",
@@ -1403,6 +1473,11 @@
     "term": "USD A&S",
     "definition": "Under Secretary of Defense for Acquisition and Sustainment - Department under Secretary of Defense overseeing acquisition",
     "source": "gerb"
+  },
+  {
+    "term": "USDI",
+    "definition": "Under Secretary of Defense for Intelligence - Senior DoD official overseeing defense intelligence activities; relevant to UAP oversight and the management of AATIP and related programs",
+    "source": "curated"
   },
   {
     "term": "USG",
