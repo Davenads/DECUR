@@ -3,14 +3,16 @@ import { useState, useRef } from 'react';
 import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
-import TimelineOverlay, { extractYear, WBEvent } from '../components/explore/TimelineOverlay';
+import TimelineOverlay, { extractYear, WBEvent, CaseEvent } from '../components/explore/TimelineOverlay';
 import { getAllEntries, TimelineEntry } from '../lib/useTimelineData';
 import insiderIndex from '../data/insiders/index.json';
 import { insiderRegistry } from '../data/insiders/registry';
+import casesData from '../data/cases.json';
 
 interface Props {
   entries: TimelineEntry[];
   insiderEvents: WBEvent[];
+  caseEvents: CaseEvent[];
 }
 
 interface FocusEra {
@@ -19,7 +21,7 @@ interface FocusEra {
   label: string;
 }
 
-const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
+const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents }) => {
   const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
   const overlayRef = useRef<HTMLElement>(null);
 
@@ -68,6 +70,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents }) => {
           <TimelineOverlay
             uapEntries={entries}
             insiderEvents={insiderEvents}
+            caseEvents={caseEvents}
             focusEra={focusEra}
             onClearFocus={() => setFocusEra(null)}
           />
@@ -128,7 +131,30 @@ export const getStaticProps: GetStaticProps = async () => {
         return extractProfileEvents(entry.id, data);
       });
 
-    return { props: { entries, insiderEvents }, revalidate: 3600 };
+    // Build case events for the Timeline Overlay cases swimlane
+    const caseEvents: CaseEvent[] = (casesData as Array<{
+      id: string;
+      name: string;
+      date: string;
+      location: string;
+      evidence_tier: 'tier-1' | 'tier-2';
+      classification_status: string;
+    }>).reduce((acc, c) => {
+      const year = extractYear(c.date);
+      if (year) {
+        acc.push({
+          year,
+          name: c.name,
+          id: c.id,
+          evidence_tier: c.evidence_tier,
+          location: c.location,
+          classification_status: c.classification_status,
+        });
+      }
+      return acc;
+    }, [] as CaseEvent[]);
+
+    return { props: { entries, insiderEvents, caseEvents }, revalidate: 3600 };
   } catch (error) {
     console.error('[getStaticProps] explore.tsx:', error);
     return { notFound: true };

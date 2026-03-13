@@ -15,9 +15,19 @@ export interface WBEvent {
   source: string;
 }
 
+export interface CaseEvent {
+  year: number;
+  name: string;
+  id: string;
+  evidence_tier: 'tier-1' | 'tier-2';
+  location: string;
+  classification_status: string;
+}
+
 interface Props {
   uapEntries: TimelineEntry[];
   insiderEvents: WBEvent[];
+  caseEvents?: CaseEvent[];
   focusEra?: { start: number; end: number; label: string } | null;
   onClearFocus?: () => void;
 }
@@ -70,6 +80,15 @@ function getSourceColor(source: string): string {
 
 function getSourceLabel(source: string): string {
   return SOURCE_CONFIG[source]?.label ?? source;
+}
+
+const TIER_COLOR: Record<string, string> = {
+  'tier-1': '#10b981',
+  'tier-2': '#f59e0b',
+};
+
+function getTierColor(tier: string): string {
+  return TIER_COLOR[tier] ?? '#6b7280';
 }
 
 /* ─── Helpers ────────────────────────────────────────────────── */
@@ -135,43 +154,92 @@ const SwimlaneDot: FC<DotProps> = ({ cx = 0, cy = 0, payload }) => {
   );
 };
 
-/* ─── Swimlane tooltip ───────────────────────────────────────── */
+/* ─── Case dot (diamond shape) ───────────────────────────────── */
 
-interface SwimlaneTooltipProps {
-  active?: boolean;
-  payload?: Array<{ payload: WBEvent & { x: number; y: number } }>;
+interface CaseDotProps {
+  cx?: number;
+  cy?: number;
+  payload?: CaseEvent & { x: number; y: number };
 }
 
-const SwimlaneTooltip: FC<SwimlaneTooltipProps> = ({ active, payload }) => {
+const CaseDot: FC<CaseDotProps> = ({ cx = 0, cy = 0, payload }) => {
+  if (!payload) return null;
+  const color = getTierColor(payload.evidence_tier);
+  const size = 5;
+  return (
+    <g>
+      <polygon
+        points={`${cx},${cy - size} ${cx + size},${cy} ${cx},${cy + size} ${cx - size},${cy}`}
+        fill={color}
+        stroke="#fff"
+        strokeWidth={1.5}
+      />
+    </g>
+  );
+};
+
+/* ─── Case tooltip ───────────────────────────────────────────── */
+
+/* ─── Unified tooltip (handles both insider events and cases) ─── */
+
+interface UnifiedTooltipProps {
+  active?: boolean;
+  payload?: Array<{ payload: (WBEvent | CaseEvent) & { x: number; y: number } }>;
+  showCases: boolean;
+}
+
+const UnifiedSwimlaneTooltip: FC<UnifiedTooltipProps> = ({ active, payload, showCases }) => {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
-  const color = getSourceColor(d.source);
+
+  // Distinguish case events (have evidence_tier) from insider events (have source)
+  if (showCases && 'evidence_tier' in d) {
+    const color = getTierColor(d.evidence_tier);
+    return (
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-w-xs">
+        <div className="flex items-center gap-1.5 mb-1">
+          <svg width="10" height="10" className="shrink-0"><polygon points="5,0 10,5 5,10 0,5" fill={color} /></svg>
+          <p className="text-xs font-bold" style={{ color }}>{d.name} · {d.x}</p>
+        </div>
+        <p className="text-xs text-gray-500 dark:text-gray-400">{d.location}</p>
+        <p className="text-xs mt-0.5">
+          <span className="font-medium" style={{ color }}>{d.evidence_tier.replace('-', ' ').toUpperCase()}</span>
+          <span className="text-gray-400 dark:text-gray-500"> · {d.classification_status.replace(/-/g, ' ')}</span>
+        </p>
+      </div>
+    );
+  }
+
+  const e = d as WBEvent & { x: number };
+  const color = getSourceColor(e.source);
   return (
     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-w-xs">
       <div className="flex items-center gap-1.5 mb-1">
         <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: color }} />
         <p className="text-xs font-bold" style={{ color }}>
-          {getSourceLabel(d.source)} · {d.x}
+          {getSourceLabel(e.source)} · {e.x}
         </p>
       </div>
-      <p className="text-xs text-gray-600 dark:text-gray-400 leading-tight">{d.event}</p>
-      {d.category && (
-        <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5 capitalize">{d.category.replace(/-/g, ' ')}</p>
+      <p className="text-xs text-gray-600 dark:text-gray-400 leading-tight">{e.event}</p>
+      {e.category && (
+        <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5 capitalize">{e.category.replace(/-/g, ' ')}</p>
       )}
     </div>
   );
 };
+
 
 /* ─── Main component ─────────────────────────────────────────── */
 
 const YEAR_START = 1985;
 const YEAR_END   = 2025;
 
-const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onClearFocus }) => {
+const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, caseEvents = [], focusEra, onClearFocus }) => {
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === 'dark';
   const [showAllYears, setShowAllYears] = useState(false);
   const [enabledSources, setEnabledSources] = useState<Set<string> | null>(null);
+  const [showCases, setShowCases] = useState(true);
 
   // focusEra overrides the year range when set
   const yearStart = focusEra ? focusEra.start : (showAllYears ? 1947 : YEAR_START);
@@ -246,14 +314,22 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
       .map(e => ({ ...e, x: e.year, y: yIndex[src] }));
   }
 
+  // Cases: placed in their own swimlane at y = swimlaneCount (below insider rows)
+  const visibleCases = showCases
+    ? caseEvents.filter(c => c.year >= yearStart && c.year <= yearEnd)
+    : [];
+  const caseSwimlaneY = swimlaneCount; // one row below all insider rows
+  const caseScatterData = visibleCases.map(c => ({ ...c, x: c.year, y: caseSwimlaneY }));
+
   const xDomain: [number, number] = [yearStart, yearEnd];
   const xTicks = Array.from(
     { length: Math.floor((yearEnd - yearStart) / 5) + 1 },
     (_, i) => yearStart + i * 5
   );
 
-  const swimlaneHeight = Math.max(260, swimlaneCount * 28);
-  const yDomainMax = Math.max(swimlaneCount - 1, 1);
+  const totalRows = swimlaneCount + (showCases && caseEvents.length > 0 ? 1 : 0);
+  const swimlaneHeight = Math.max(260, totalRows * 28);
+  const yDomainMax = Math.max(totalRows - 1, 1);
 
   return (
     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 space-y-4">
@@ -317,6 +393,25 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
           </div>
         </div>
         <div className="flex flex-wrap gap-1.5">
+          {caseEvents.length > 0 && (
+            <button
+              onClick={() => setShowCases(v => !v)}
+              className={`text-xs px-2.5 py-1 rounded-full border font-medium transition-all ${
+                showCases ? 'opacity-100' : 'opacity-35'
+              }`}
+              style={showCases ? {
+                borderColor: TIER_COLOR['tier-1'],
+                backgroundColor: `${TIER_COLOR['tier-1']}18`,
+                color: TIER_COLOR['tier-1'],
+              } : {
+                borderColor: isDark ? '#374151' : '#e5e7eb',
+                backgroundColor: 'transparent',
+                color: '#9ca3af',
+              }}
+            >
+              Cases
+            </button>
+          )}
           {activeSources.map(src => {
             const enabled = effectiveEnabled.has(src);
             const color = getSourceColor(src);
@@ -384,6 +479,11 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
         <div style={{ height: swimlaneHeight }} className="flex items-stretch">
           {/* Row labels */}
           <div className="flex flex-col justify-around shrink-0 pr-2" style={{ width: 72 }}>
+            {showCases && caseEvents.length > 0 && (
+              <span className="text-xs font-medium text-right leading-none" style={{ color: TIER_COLOR['tier-1'] }}>
+                Cases
+              </span>
+            )}
             {[...visibleSources].reverse().map(src => (
               <span
                 key={src}
@@ -414,7 +514,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
                   domain={[-0.5, yDomainMax + 0.5]}
                   hide
                 />
-                <Tooltip content={<SwimlaneTooltip />} cursor={false} />
+                <Tooltip content={<UnifiedSwimlaneTooltip showCases={showCases} />} cursor={false} />
                 {visibleSources.map(src => (
                   <Scatter
                     key={src}
@@ -423,6 +523,13 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
                     name={getSourceLabel(src)}
                   />
                 ))}
+                {showCases && caseScatterData.length > 0 && (
+                  <Scatter
+                    data={caseScatterData}
+                    shape={<CaseDot />}
+                    name="Cases"
+                  />
+                )}
               </ScatterChart>
             </ResponsiveContainer>
           </div>
@@ -439,6 +546,18 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, focusEra, onCle
           <span className="w-2.5 h-2.5 rounded-sm bg-[#93c5e8] inline-block" />
           Other UAP events
         </span>
+        {showCases && caseEvents.length > 0 && (
+          <>
+            <span className="flex items-center gap-1.5">
+              <svg width="10" height="10" className="shrink-0"><polygon points="5,0 10,5 5,10 0,5" fill={TIER_COLOR['tier-1']} /></svg>
+              Tier 1 case
+            </span>
+            <span className="flex items-center gap-1.5">
+              <svg width="10" height="10" className="shrink-0"><polygon points="5,0 10,5 5,10 0,5" fill={TIER_COLOR['tier-2']} /></svg>
+              Tier 2 case
+            </span>
+          </>
+        )}
         {visibleSources.map(src => (
           <span key={src} className="flex items-center gap-1.5">
             <span
