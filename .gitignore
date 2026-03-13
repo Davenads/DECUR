@@ -73,3 +73,6 @@ aod-audit-cheatsheet.txt
 
 # Script output artifacts (generated, not source)
 /scripts/output/
+
+# Local planning notes
+case-enrichment.md

@@ -437,6 +437,49 @@ export interface CaseOfficialStatement {
   statement: string;
 }
 
+/* ─── Extended Case Types ──────────────────────────────────────── */
+
+export interface CaseTimelineEvent {
+  timestamp?: string;    // ISO datetime or relative (e.g. "Day 1, 14:00 local")
+  local?: string;        // Human-readable local time label
+  event: string;
+}
+
+export type HypothesisAssessment = 'verified' | 'probable' | 'possible' | 'disputed' | 'debunked';
+
+export interface CaseHypothesis {
+  name: string;
+  assessment: HypothesisAssessment;
+  summary: string;
+  evidence_for?: string[];
+  evidence_against?: string[];
+}
+
+export interface CaseTaxonomy {
+  verified?: string[];
+  probable?: string[];
+  disputed?: string[];
+  speculative?: string[];
+}
+
+export interface CaseSensorSystem {
+  name: string;
+  operator: string;
+  notes?: string;
+}
+
+export type CaseSourceType = 'official' | 'media' | 'academic' | 'testimony' | 'foia' | 'book';
+
+export interface CaseSource {
+  title: string;
+  url?: string;
+  date?: string;
+  type: CaseSourceType;
+  notes?: string;
+}
+
+/* ─── Case Entry ───────────────────────────────────────────────── */
+
 export interface CaseEntry {
   id: string;
   name: string;
@@ -467,6 +510,12 @@ export interface CaseEntry {
     supporting: string[];
     contradicting: string[];
   };
+  // Enrichment fields (optional - added progressively per case)
+  timeline?: CaseTimelineEvent[];
+  competing_hypotheses?: CaseHypothesis[];
+  claims_taxonomy?: CaseTaxonomy;
+  sensor_context?: { systems: CaseSensorSystem[] };
+  sources?: CaseSource[];
 }
 
 /* ─── Documents Types ──────────────────────────────────────────── */
