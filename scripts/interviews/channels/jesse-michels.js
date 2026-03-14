@@ -6,7 +6,7 @@
  * To hard-code after first run: set channelId to the value printed during fetch.
  */
 module.exports = {
-  channelId:     null,                             // resolved via handle on first run
+  channelId:     'UCuG2KzrIMe3qoNcuDVpwnXw',
   channelHandle: 'JesseMichels',                   // without @
   channelName:   'Jesse Michels',
   channelUrl:    'https://www.youtube.com/@JesseMichels',

@@ -1,0 +1,247 @@
+{
+  "video_id": "2ttdlCa5ZCI",
+  "title": "The Lone Hacker That Found NASA’s Secret UFO Fleet [Gary McKinnon Interview]",
+  "published_at": "2026-03-01T19:00:02Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=2ttdlCa5ZCI",
+  "thumbnail_url": "https://i.ytimg.com/vi/2ttdlCa5ZCI/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:10:54.630Z",
+  "summary": "Gary McKinnon, a self-taught British hacker, describes how he broke into NASA, Pentagon, and military networks in 2000-2001 searching for UFO evidence. He claims to have seen a photograph of a cigar-shaped craft above Earth at NASA's Johnson Space Center Building 8, and found a spreadsheet titled 'non-terrestrial officers,' before being disconnected mid-session. The interview covers his hacking methods, findings, and the subsequent 10-year extradition battle with the US government.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Gary McKinnon"
+  },
+  "acronyms": [
+    {
+      "term": "NSA",
+      "expansion": "National Security Agency",
+      "definition": "US intelligence agency responsible for signals intelligence and cybersecurity",
+      "confidence": "high"
+    },
+    {
+      "term": "DISA",
+      "expansion": "Defense Information Systems Agency",
+      "definition": "DoD agency providing IT and communications support to the military",
+      "confidence": "high"
+    },
+    {
+      "term": "DoD",
+      "expansion": "Department of Defense",
+      "definition": "United States federal department responsible for military and national security",
+      "confidence": "high"
+    },
+    {
+      "term": "JSC",
+      "expansion": "Johnson Space Center",
+      "definition": "NASA's center for human spaceflight activities located in Houston, Texas",
+      "confidence": "high"
+    },
+    {
+      "term": "FTP",
+      "expansion": "File Transfer Protocol",
+      "definition": "Standard network protocol for transferring files between computers",
+      "confidence": "high"
+    },
+    {
+      "term": "PEARL",
+      "expansion": "Practical Extraction and Reporting Language",
+      "definition": "A scripting language used for text processing and system administration",
+      "confidence": "high"
+    },
+    {
+      "term": "DSP",
+      "expansion": "Defense Support Program",
+      "definition": "A satellite program for early warning detection, described as deep geostationary reconnaissance",
+      "confidence": "medium"
+    },
+    {
+      "term": "LRO",
+      "expansion": "Lunar Reconnaissance Orbiter",
+      "definition": "NASA spacecraft orbiting the Moon for reconnaissance purposes",
+      "confidence": "high"
+    },
+    {
+      "term": "DIA",
+      "expansion": "Defense Intelligence Agency",
+      "definition": "US military intelligence agency",
+      "confidence": "high"
+    },
+    {
+      "term": "LEO",
+      "expansion": "Low Earth Orbit",
+      "definition": "Orbital region close to Earth where satellites typically operate",
+      "confidence": "high"
+    },
+    {
+      "term": "DOJ",
+      "expansion": "Department of Justice",
+      "definition": "US federal department responsible for law enforcement",
+      "confidence": "high"
+    },
+    {
+      "term": "CPS",
+      "expansion": "Crown Prosecution Service",
+      "definition": "UK government agency responsible for criminal prosecutions",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Disclosure Project",
+    "Solar Warden",
+    "Defense Support Program",
+    "Clementine mission",
+    "Lunar Reconnaissance Orbiter"
+  ],
+  "people_mentioned": [
+    "Gary McKinnon",
+    "Jesse Michels",
+    "James Fox",
+    "Steven Greer",
+    "Donna Hare",
+    "David Fravor",
+    "David Grusch",
+    "Robert Hastings",
+    "Carlos de Souza",
+    "John Podesta",
+    "Bob Fish",
+    "John Greenwald",
+    "Edward Snowden",
+    "Julian Assange",
+    "David Cameron",
+    "Barack Obama",
+    "Ed Gibson",
+    "Jesse Marcel",
+    "Corey Goode",
+    "Thomas Townsend Brown",
+    "Ashton Forbes"
+  ],
+  "organizations_mentioned": [
+    "NASA",
+    "Pentagon",
+    "US Army",
+    "US Navy",
+    "US Air Force",
+    "Department of Defense",
+    "NSA",
+    "Defense Information Systems Agency",
+    "Johnson Space Center",
+    "British UFO Research Association",
+    "Cambridge University",
+    "Oxford University",
+    "US Embassy London",
+    "Space Force",
+    "CIA",
+    "Wikileaks",
+    "Gaia"
+  ],
+  "events": [
+    {
+      "year": 2000,
+      "description": "Gary McKinnon began hacking into US military and NASA networks searching for UFO evidence",
+      "confidence": "high"
+    },
+    {
+      "year": 1995,
+      "description": "Internet came to Britain according to McKinnon",
+      "confidence": "medium"
+    },
+    {
+      "year": 2004,
+      "description": "Commander David Fravor's tic-tac UFO encounter off the coast of San Diego",
+      "confidence": "high"
+    },
+    {
+      "year": 1996,
+      "description": "Varginha UFO crash case in Brazil",
+      "confidence": "high"
+    },
+    {
+      "year": 1980,
+      "description": "Rendlesham Forest UFO incident in the UK",
+      "confidence": "high"
+    },
+    {
+      "year": 1943,
+      "description": "Philadelphia Experiment allegedly conducted by the Navy",
+      "confidence": "medium"
+    },
+    {
+      "year": 2019,
+      "description": "Space Force established, taking over certain Air Force space-related responsibilities",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "McKinnon found a photograph at NASA Johnson Space Center Building 8 showing a cigar-shaped silvery craft above Earth with geodesic domes on top and bottom",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "McKinnon found a spreadsheet titled 'non-terrestrial officers' containing names and ranks",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "US military and NASA networks had blank passwords or simple passwords like 'password' or 'admin' in 2000",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Donna Hare, a NASA photographic specialist, claimed her colleague showed her satellite photos of UFOs that were airbrushed out before public release",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "McKinnon had no involvement with Solar Warden and it originated from an anonymous post on Above Top Secret forum",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "US authorities wanted McKinnon to serve 70 years in prison for the hacking",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Ed Gibson, US embassy attaché in London, said 'We want to see him fry' referring to McKinnon",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "McKinnon was on Interpol's red list and cannot travel to the US",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "McKinnon hacked into approximately 97 US military and government sites",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The craft McKinnon saw appeared smooth with no visible rivets, seams, or antenna",
+      "attributed_to": "Gary McKinnon",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO hacking",
+    "NASA secrets",
+    "military network security",
+    "extradition",
+    "tic-tac UFOs",
+    "government cover-ups",
+    "non-terrestrial officers",
+    "Disclosure Project"
+  ]
+}
