@@ -16,27 +16,27 @@ const ProjectsTab: FC = () => {
       {umbrella && (
         <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
           <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Umbrella Program</p>
-          <h3 className="text-lg font-semibold text-gray-900 mb-1">{umbrella.name}</h3>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{umbrella.name}</h3>
           {umbrella.established && (
             <p className="text-xs text-gray-400 mb-2">Est. {umbrella.established} · {umbrella.classification}</p>
           )}
-          <p className="text-sm text-gray-700">{umbrella.purpose}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300">{umbrella.purpose}</p>
           {umbrella.admin && <p className="text-xs text-gray-500 mt-2">{umbrella.admin}</p>}
         </div>
       )}
 
-      <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Sub-Projects</h4>
+      <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">Sub-Projects</h4>
       <div className="space-y-2">
         {subProjects.map((proj: BurischProject) => {
           const isOpen = expanded === proj.id;
           return (
-            <div key={proj.id} className="border border-gray-200 rounded-lg overflow-hidden">
+            <div key={proj.id} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
               <button
                 onClick={() => setExpanded(isOpen ? null : proj.id)}
-                className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
               >
                 <div>
-                  <span className="font-medium text-gray-900 text-sm">{proj.name}</span>
+                  <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">{proj.name}</span>
                   {proj.aliases && (
                     <span className="text-xs text-gray-400 ml-2">({proj.aliases.join(', ')})</span>
                   )}
@@ -49,8 +49,8 @@ const ProjectsTab: FC = () => {
                 </svg>
               </button>
               {isOpen && (
-                <div className="px-4 pb-4 space-y-2 border-t border-gray-100">
-                  <p className="text-sm text-gray-700 pt-3">{proj.purpose}</p>
+                <div className="px-4 pb-4 space-y-2 border-t border-gray-100 dark:border-gray-700">
+                  <p className="text-sm text-gray-700 dark:text-gray-300 pt-3">{proj.purpose}</p>
                   {proj.key_personnel && (
                     <p className="text-xs text-gray-500"><span className="font-medium">Key Personnel:</span> {proj.key_personnel.join(', ')}</p>
                   )}

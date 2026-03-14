@@ -12,12 +12,12 @@ const TimelineTab: FC = () => {
   const filtered = filter === 'all' ? timeline : timeline.filter(e => e.category === filter);
 
   const categoryColors: Record<string, string> = {
-    biography: 'bg-blue-100 text-blue-700',
-    operations: 'bg-red-100 text-red-700',
-    'entity-contact': 'bg-purple-100 text-purple-700',
-    documents: 'bg-amber-100 text-amber-700',
-    research: 'bg-green-100 text-green-700',
-    archive: 'bg-gray-100 text-gray-600',
+    biography: 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300',
+    operations: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300',
+    'entity-contact': 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300',
+    documents: 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300',
+    research: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300',
+    archive: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300',
   };
 
   return (
@@ -26,7 +26,7 @@ const TimelineTab: FC = () => {
         <button
           onClick={() => setFilter('all')}
           className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors ${
-            filter === 'all' ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            filter === 'all' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
           }`}
         >
           All
@@ -36,7 +36,7 @@ const TimelineTab: FC = () => {
             key={cat}
             onClick={() => setFilter(cat)}
             className={`text-xs px-2.5 py-1 rounded-full font-medium capitalize transition-colors ${
-              filter === cat ? 'bg-primary text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              filter === cat ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
             }`}
           >
             {cat.replace(/-/g, ' ')}
@@ -44,15 +44,15 @@ const TimelineTab: FC = () => {
         ))}
       </div>
 
-      <div className="relative pl-6 border-l-2 border-gray-100 space-y-4">
+      <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
         {filtered.map((ev, i) => (
           <div key={i} className="relative">
-            <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white" />
+            <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
             <div className="flex items-start gap-3">
               <span className="font-mono text-xs text-gray-400 whitespace-nowrap pt-0.5">{ev.date}</span>
               <div>
-                <p className="text-sm text-gray-800 leading-relaxed">{ev.event}</p>
-                <span className={`text-xs px-1.5 py-0.5 rounded mt-1 inline-block font-medium ${categoryColors[ev.category] ?? 'bg-gray-100 text-gray-500'}`}>
+                <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{ev.event}</p>
+                <span className={`text-xs px-1.5 py-0.5 rounded mt-1 inline-block font-medium ${categoryColors[ev.category] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'}`}>
                   {ev.category.replace(/-/g, ' ')}
                 </span>
               </div>
