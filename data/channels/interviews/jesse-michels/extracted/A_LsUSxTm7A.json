@@ -1,0 +1,133 @@
+{
+  "video_id": "A_LsUSxTm7A",
+  "title": "Something Big Happened In 12,000 BC...",
+  "published_at": "2024-11-09T17:00:56Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=A_LsUSxTm7A",
+  "thumbnail_url": "https://i.ytimg.com/vi/A_LsUSxTm7A/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:13:18.649Z",
+  "summary": "Matt LaCroix discusses evidence for a lost pre-Ice Age civilization, focusing on underground chambers beneath the Giza Sphinx, catastrophic events during the Younger and Older Dryas periods, and his theory that coronal mass ejections rather than asteroid impacts caused civilizational resets. The conversation explores water erosion on the Sphinx, vitrification evidence in Turkey, and the concept of cyclical cataclysms occurring approximately every 12,000 years.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Matt LaCroix"
+  },
+  "acronyms": [
+    {
+      "term": "CME",
+      "expansion": "Coronal Mass Ejection",
+      "definition": "A massive burst of solar wind and magnetic fields from the sun that can affect Earth's magnetosphere",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Pioneer 10",
+    "Pioneer 11",
+    "Voyager"
+  ],
+  "people_mentioned": [
+    "Graham Hancock",
+    "Randall Carlson",
+    "Robert Schoch",
+    "John Anthony West",
+    "Edgar Cayce",
+    "Nikola Tesla",
+    "Julian Dorey",
+    "Katie Schoch",
+    "James Lovelock"
+  ],
+  "organizations_mentioned": [
+    "NASA",
+    "Egypt Ministry of Culture",
+    "Gaia"
+  ],
+  "events": [
+    {
+      "year": 1987,
+      "description": "A New Science Encyclopedia was published containing a diagram based on Pioneer 10 and 11 probe findings",
+      "confidence": "high"
+    },
+    {
+      "year": 1970,
+      "description": "Pioneer 10 and 11 probes were sent out into deep space",
+      "confidence": "medium"
+    },
+    {
+      "year": 1980,
+      "description": "Pioneer 10 and 11 became the first probes to leave the inner solar system",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Ground penetrating radar revealed massive voids with man-made objects underneath the Sphinx and Great Pyramids that all connect in a subterranean network",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Egyptian authorities deliberately drilled in wrong locations to mislead the public about voids under the Sphinx and boarded up known entrances",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The Sphinx head was originally a lion and was recarved later, explaining why the head is disproportionately small compared to the body",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The King's Chamber faces Orion and Queen's Chamber faces Sirius, and this alignment only matches astronomical positions from 10,500 BC due to precession of the equinoxes",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Basalt stones at Kef Kesi show vitrification requiring temperatures exceeding 2,000 degrees, suggesting plasma discharge events",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Antarctic ice cap is 450,000 years old based on ice cores, making it unlikely ancient civilizations existed there",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Carbon spiked astronomically 14,500 years ago during the Older Dryas, with temperatures rising warmer than present within a couple hundred years",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Nasca lines and Rongorongo script may represent plasma discharge patterns in the sky rather than traditional writing or art",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "All pink granite at Giza came from quarries 500 miles away in Aswan",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Mount Nemrut near Lake Van last exploded during the Younger and Older Dryas period",
+      "attributed_to": "Matt LaCroix",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "Lost civilizations",
+    "Younger Dryas impact theory",
+    "Sphinx water erosion",
+    "Coronal mass ejections",
+    "Ancient underground structures",
+    "Precession of the equinoxes",
+    "Vitrification evidence",
+    "Cyclical cataclysms"
+  ]
+}

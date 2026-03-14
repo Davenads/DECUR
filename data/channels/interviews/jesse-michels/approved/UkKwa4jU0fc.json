@@ -1,0 +1,136 @@
+{
+  "video_id": "UkKwa4jU0fc",
+  "title": "“My Hospital Operated On An Alien!” -Top Surgeon [Exclusive Interview]",
+  "published_at": "2026-01-31T20:01:08Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=UkKwa4jU0fc",
+  "thumbnail_url": "https://i.ytimg.com/vi/UkKwa4jU0fc/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:37:59.616Z",
+  "summary": "This interview covers the 1996 Varginha UFO incident in Brazil, featuring three key witnesses: Carlos Doza, a pilot who witnessed a UFO crash and held debris from the craft; a neurosurgeon who encountered an extraterrestrial being in a hospital; and a doctor who performed an autopsy on a soldier allegedly wounded by an alien. The testimony details the crash site, military response, intimidation by Men in Black figures, and the physical characteristics of the craft and its debris.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Carlos Doza, Dr. Italo Ventterelli, Dr. Armando Fortonado"
+  },
+  "acronyms": [
+    {
+      "term": "EZA",
+      "expansion": "Escola de Sargentos das Armas (Army Sergeant School)",
+      "definition": "Brazilian Army sergeant training school located near the crash site",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Jesse Michels",
+    "James Fox",
+    "Carlos Doza",
+    "Dr. Italo Ventterelli",
+    "Dr. Armando Fortonado",
+    "David Fravor",
+    "Claudio Covo",
+    "Marco Leal",
+    "Marcius Leal"
+  ],
+  "organizations_mentioned": [
+    "Brazilian Army",
+    "US Air Force",
+    "CIA",
+    "Globo TV",
+    "EZA (Escola de Sargentos das Armas)"
+  ],
+  "events": [
+    {
+      "year": 1996,
+      "description": "Carlos Doza witnessed a UFO crash near Varginha, Brazil, and briefly held debris from the craft before being confronted by military personnel",
+      "confidence": "high"
+    },
+    {
+      "year": 1996,
+      "description": "Girls in Varginha, Brazil witnessed an extraterrestrial creature approximately 5-6 days after the UFO crash",
+      "confidence": "high"
+    },
+    {
+      "year": 2004,
+      "description": "The Nimitz incident involving Commander David Fravor and a tic-tac shaped UFO",
+      "confidence": "high"
+    },
+    {
+      "year": 2013,
+      "description": "James Fox visited the crash site and interviewed witnesses including a farm hand who confirmed hearing a boom sound",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The UFO debris was extremely lightweight like aluminum foil and when crumpled would immediately return to its original shape like memory metal",
+      "attributed_to": "Carlos Doza",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The crashed UFO was cylindrical/cigar-shaped, approximately the size of a school bus, similar to the tic-tac shape from the Nimitz incident",
+      "attributed_to": "Carlos Doza",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The crash site smelled strongly of ammonia mixed with sulfur/rotten eggs rather than conventional fuel",
+      "attributed_to": "Carlos Doza",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Brazilian military arrived within 2-3 minutes of the crash and threatened witnesses at gunpoint",
+      "attributed_to": "Carlos Doza",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Men in Black figures in an unmarked car knew Carlos Doza's personal information including his address and wife's name within 10-15 minutes of the crash",
+      "attributed_to": "Carlos Doza",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "US Air Force planes landed in Brazil without authorization from the Brazilian government in connection with this incident",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Lab analysis of soil and tree samples from the crash site showed burning caused by unknown chemical products",
+      "attributed_to": "Carlos Doza",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "James Fox has spoken to 12-15 witnesses who saw the ship and approximately 5 witnesses who saw alien bodies",
+      "attributed_to": "James Fox",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "A neurosurgeon was face to face with an extraterrestrial being for 3-4 minutes while it was recovering in a hospital bed",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The extraterrestrial being in the hospital appeared highly intelligent, unafraid, and seemed to have control of the room",
+      "attributed_to": "unknown guest",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Varginha UFO incident",
+    "UFO crash retrieval",
+    "Brazilian military",
+    "Men in Black",
+    "metamaterials",
+    "extraterrestrial beings",
+    "witness testimony",
+    "government cover-up"
+  ]
+}

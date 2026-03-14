@@ -1,0 +1,142 @@
+{
+  "video_id": "wT5-hXWIkzM",
+  "title": "Meet The Scientist BANNED By TED Talks (ft. Rupert Sheldrake)",
+  "published_at": "2024-09-11T17:55:51Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=wT5-hXWIkzM",
+  "thumbnail_url": "https://i.ytimg.com/vi/wT5-hXWIkzM/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:23:23.908Z",
+  "summary": "Jesse Michels interviews Rupert Sheldrake, a controversial scientist known for his work on morphic fields, the sense of being stared at, and consciousness studies. They discuss Sheldrake's theories about vision as projection, electromagnetic fields as interfaces for consciousness, the potential consciousness of the sun, and his hypothesis of morphic resonance as a mechanism for non-genetic inheritance.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Rupert Sheldrake"
+  },
+  "acronyms": [
+    {
+      "term": "scopaesthesia",
+      "expansion": "from 'scop' (seeing, as in microscope) and 'aesthesia' (feeling, as in anesthesia)",
+      "definition": "The scientific term for the sense of being stared at",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Princeton Parapsychology Lab (PEAR)",
+    "SRI at Stanford",
+    "Rhine Center"
+  ],
+  "people_mentioned": [
+    "Rupert Sheldrake",
+    "Jesse Michels",
+    "Peter Thiel",
+    "Michael Shermer",
+    "Terrence McKenna",
+    "Richard Dawkins",
+    "Charles Darwin",
+    "Alfred North Whitehead",
+    "Thomas Kuhn",
+    "John Cramer",
+    "Ruth Kastner",
+    "Anil Seth",
+    "Sam Harris",
+    "Sigmund Freud",
+    "Carl Jung",
+    "Plato",
+    "Michael Levin",
+    "Gary Becker",
+    "Robert Jahn",
+    "John Valentino",
+    "Noam Chomsky"
+  ],
+  "organizations_mentioned": [
+    "TED",
+    "Cambridge University",
+    "Harvard University",
+    "Committee for Skeptical Inquiry",
+    "Skeptical Inquirer",
+    "BIAL Foundation",
+    "National Science Foundation",
+    "National Institutes of Health",
+    "Tufts University",
+    "Journal of Consciousness Studies",
+    "Washington Post",
+    "Village Voice"
+  ],
+  "events": [
+    {
+      "year": 2013,
+      "description": "Rupert Sheldrake's TED Talk was censored and removed from YouTube",
+      "confidence": "high"
+    },
+    {
+      "year": 2001,
+      "description": "9/11 World Trade Center disaster; Sheldrake collected precognitive dream accounts related to the event",
+      "confidence": "high"
+    },
+    {
+      "year": 1859,
+      "description": "Carrington Event - a major solar storm that affected electrical systems",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Visual images are projected outward from the mind to where objects appear to be, rather than being constructed entirely inside the brain",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The transactional interpretation of quantum mechanics suggests that when light is absorbed by the eye, an anti-photon is sent backward in time to the source",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The sense of being stared at (scopaesthesia) evolved in connection with predator-prey relations and operates directionally",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Precognitive dreams about 9/11 were collected, falling into three categories: planes flying into skyscrapers, being trapped in blazing buildings, and walking through dust-filled streets",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The sun may be conscious, with its electromagnetic field serving as the interface between its consciousness and physical body",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "If a frog embryo is placed in a Faraday cage or next to a Wi-Fi router, it will not grow normally",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "DNA and genes cannot account for the inheritance of complex organizational patterns like the structure of a termite colony or animal instincts",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Most scientists privately hold open-minded views about psychic phenomena but are afraid to discuss them publicly due to career concerns",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "consciousness studies",
+    "parapsychology",
+    "morphic fields",
+    "vision and perception",
+    "panpsychism",
+    "electromagnetic fields",
+    "precognitive dreams",
+    "scientific orthodoxy"
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "video_id": "-0g3lLGxNfc",
+  "title": "“This UFO Shut Down 10 Nukes!” - Air Force Officer Robert Salas",
+  "published_at": "2025-07-12T18:00:00Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=-0g3lLGxNfc",
+  "thumbnail_url": "https://i.ytimg.com/vi/-0g3lLGxNfc/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:49:42.265Z",
+  "summary": "First Lieutenant Robert Salas recounts his experience at Malmstrom Air Force Base in March 1967, where he witnessed 10 nuclear missiles go offline during a UFO sighting. The interview covers multiple similar incidents at nuclear bases between 1966-1967, discusses the Air Force's attempted cover-ups including the Condon investigation whitewash, and addresses a recent Wall Street Journal hit piece attempting to discredit Salas's testimony.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Robert Salas"
+  },
+  "acronyms": [
+    {
+      "term": "SAC",
+      "expansion": "Strategic Air Command",
+      "definition": "The Air Force command responsible for nuclear weapons and strategic bombers during the Cold War",
+      "confidence": "high"
+    },
+    {
+      "term": "AFOSI",
+      "expansion": "Air Force Office of Special Investigation",
+      "definition": "Air Force investigative agency that handled sensitive matters including UFO-related non-disclosure agreements",
+      "confidence": "high"
+    },
+    {
+      "term": "NCO",
+      "expansion": "Non-Commissioned Officers",
+      "definition": "Enlisted military personnel who serve as topside security guards",
+      "confidence": "high"
+    },
+    {
+      "term": "EMP",
+      "expansion": "Electromagnetic Pulse",
+      "definition": "A burst of electromagnetic energy that can disable electronic equipment",
+      "confidence": "high"
+    },
+    {
+      "term": "EMI",
+      "expansion": "Electromagnetic Interference",
+      "definition": "External electromagnetic signals that can disrupt electronic systems",
+      "confidence": "high"
+    },
+    {
+      "term": "NORAD",
+      "expansion": "North American Aerospace Defense Command",
+      "definition": "Organization that monitors the skies for possible incoming threats to the US",
+      "confidence": "high"
+    },
+    {
+      "term": "LF",
+      "expansion": "Launch Facility",
+      "definition": "The location where missiles are actually housed, separate from the launch control center",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "Project Blue Book",
+    "Condon Investigation",
+    "All Domain Anomaly Resolution Office"
+  ],
+  "people_mentioned": [
+    "Robert Salas",
+    "Jesse Michels",
+    "Joel Shectman",
+    "Sean Kirkpatrick",
+    "Fred Maywald",
+    "Robert Hastings",
+    "Robert Jameson",
+    "Lewis Chase",
+    "Roy Craig",
+    "Robert Low",
+    "Robert Hiper",
+    "Edward Condon",
+    "Ray Fowler",
+    "James Klotz",
+    "Walt Figel",
+    "David Schindele",
+    "John Mills",
+    "Chris Langan",
+    "Bob Jacobs",
+    "Mario Woods"
+  ],
+  "organizations_mentioned": [
+    "Wall Street Journal",
+    "US Air Force",
+    "Boeing",
+    "Malmstrom Air Force Base",
+    "Strategic Air Command",
+    "Department of Energy",
+    "Sylvania Corporation",
+    "Space Missile Systems Organization",
+    "Great Falls Tribune",
+    "NORAD",
+    "Air Force Office of Special Investigation"
+  ],
+  "events": [
+    {
+      "year": 1966,
+      "description": "Minot Air Force Base incident where 10 missiles were shut down during UFO activity, witnessed by David Schindele",
+      "confidence": "high"
+    },
+    {
+      "year": 1967,
+      "description": "Echo Flight incident at Malmstrom AFB on March 16th where 10 missiles shut down during UFO sightings",
+      "confidence": "high"
+    },
+    {
+      "year": 1967,
+      "description": "Oscar Flight incident at Malmstrom AFB on March 24th where Robert Salas witnessed 10 missiles shut down during UFO sighting",
+      "confidence": "high"
+    },
+    {
+      "year": 1967,
+      "description": "Belt, Montana UFO landing witnessed by truck driver, highway patrol, county sheriffs, and investigated by Lt. Col. Lewis Chase",
+      "confidence": "high"
+    },
+    {
+      "year": 1969,
+      "description": "Air Force shut down Project Blue Book citing Condon investigation findings",
+      "confidence": "high"
+    },
+    {
+      "year": 1975,
+      "description": "NORAD report of UFO sightings over Malmstrom missile bases",
+      "confidence": "high"
+    },
+    {
+      "year": 1993,
+      "description": "Retired missile technician John Mills and colleagues saw UFO hovering around Malmstrom, base reported being swarmed",
+      "confidence": "medium"
+    },
+    {
+      "year": 1996,
+      "description": "Robert Salas contacted his commander Fred Maywald and learned he was at Oscar Flight, not Echo Flight",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Between September 1966 and March 1967, 30 nuclear missiles were lost to UFO activity across multiple incidents",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "10 Minuteman missiles at Oscar Flight shut down one by one while a red-orange pulsating UFO hovered over the facility",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Boeing investigation concluded the shutdowns were caused by an external signal but could not explain how that signal got into the triply-shielded system",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Condon investigation was a pre-planned whitewash, with Robert Low writing a memo stating it would appear scientific but find nothing",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Lieutenant Colonel Lewis Chase denied knowledge of UFO-related missile shutdowns to Condon investigator Roy Craig despite having written official reports about UFO activity",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "There were no nuclear tests on March 16th or March 24th 1967, ruling out EMP from nuclear testing as a cause",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The EMP model cited by Wall Street Journal as explanation was not operational until 1971 and not ready until 1973",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Fred Maywald, Salas's commander, confirmed the essential details of the incident in a recorded conversation",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Air Force Office of Special Investigation agents required witnesses to sign non-disclosure agreements after UFO-nuclear incidents",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Robert Hastings documented 167 Q-cleared witnesses in his book UFOs and Nukes",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UFO-nuclear weapons connection",
+    "Malmstrom Air Force Base incidents",
+    "government cover-ups",
+    "Condon investigation",
+    "missile system vulnerabilities",
+    "military UFO witnesses",
+    "ICBM security",
+    "Cold War nuclear deterrence"
+  ]
+}

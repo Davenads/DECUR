@@ -1,0 +1,84 @@
+{
+  "video_id": "RsGB7_7cz8E",
+  "title": "UFO Whistleblower David Grusch Isn't Lying: My Top 3 Reasons Why",
+  "published_at": "2023-12-31T16:00:17Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=RsGB7_7cz8E",
+  "thumbnail_url": "https://i.ytimg.com/vi/RsGB7_7cz8E/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:32:24.353Z",
+  "summary": "Jesse Michels presents his top three reasons for believing UFO whistleblower David Grusch is telling the truth about UFO reverse engineering programs, citing the Inspector General's credible finding, Lockheed Martin's non-denial, and connections to Oppenheimer-era secrecy protocols.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "David Grusch"
+  },
+  "acronyms": [
+    {
+      "term": "UAPs",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Alternative term for UFOs used by government and military",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "UFO reverse engineering programs"
+  ],
+  "people_mentioned": [
+    "David Grusch",
+    "Robert J Oppenheimer",
+    "Joe Rogan"
+  ],
+  "organizations_mentioned": [
+    "Congress",
+    "Inspector General",
+    "Lockheed Martin"
+  ],
+  "events": [
+    {
+      "year": 2023,
+      "description": "David Grusch testified before Congress about UFO reverse engineering programs",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "David Grusch brought 40 other people who handled UFO material directly to the Inspector General",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Inspector General labeled Grusch's complaint urgent and credible",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "On Joe Rogan, Grusch identified Lockheed Martin as one of the contractors in possession of UFO material",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "After Grusch's hearing, Lockheed Martin did not deny possession of UFOs but said questions about UAPs are best handled by the government",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Robert J Oppenheimer set up UFO secrecy protocols in the 1950s protected by the same protocols that hide American nuclear secrets",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO whistleblower",
+    "David Grusch",
+    "Congressional testimony",
+    "Lockheed Martin",
+    "Inspector General",
+    "UFO secrecy",
+    "reverse engineering"
+  ]
+}

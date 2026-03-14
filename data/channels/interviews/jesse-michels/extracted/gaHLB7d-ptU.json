@@ -1,0 +1,63 @@
+{
+  "video_id": "gaHLB7d-ptU",
+  "title": "Are they hiding under our oceans?",
+  "published_at": "2024-07-11T23:53:58Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=gaHLB7d-ptU",
+  "thumbnail_url": "https://i.ytimg.com/vi/gaHLB7d-ptU/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:27:18.828Z",
+  "summary": "This interview discusses the theory that UAP/UFOs may be hiding in Earth's oceans, with claims that there is more underwater UFO activity than aerial activity. Multiple witness accounts of objects entering the ocean are referenced.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "An aerial phenomenon that cannot be immediately identified",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [
+    "Navy"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Multiple witnesses reported seeing a large blue object fall out of the sky and into the ocean",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "An unknown sphere followed a Navy warship before disappearing into the ocean",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "There is more UFO activity under the water than there is in the air",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "low"
+    },
+    {
+      "claim": "The ocean is the least explored spot on the planet and would be an ideal hiding place",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "USOs",
+    "underwater UFOs",
+    "ocean phenomena",
+    "UFO concealment",
+    "Navy encounters",
+    "transmedium craft"
+  ]
+}

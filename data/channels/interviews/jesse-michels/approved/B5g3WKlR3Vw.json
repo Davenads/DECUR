@@ -1,0 +1,71 @@
+{
+  "video_id": "B5g3WKlR3Vw",
+  "title": "The JFK Assassination and UFOs #history #jfk #ufo",
+  "published_at": "2024-11-05T02:00:52Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=B5g3WKlR3Vw",
+  "thumbnail_url": "https://i.ytimg.com/vi/B5g3WKlR3Vw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:13:56.805Z",
+  "summary": "This short clip explores a potential connection between JFK's assassination and his inquiries into UFOs. It discusses a supposedly declassified 2006 document showing JFK requesting information on 'unknowns in space' from the CIA director just 10 days before his death.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "United States foreign intelligence service",
+      "confidence": "high"
+    },
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "Aerial phenomena that cannot be immediately identified",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "John McCone",
+    "E. Howard Hunt"
+  ],
+  "organizations_mentioned": [
+    "CIA"
+  ],
+  "events": [
+    {
+      "year": 1963,
+      "description": "JFK allegedly wrote a letter to CIA director John McCone requesting information on unknowns in space, dated November 12th, 10 days before his assassination",
+      "confidence": "medium"
+    },
+    {
+      "year": 2006,
+      "description": "A document was supposedly released under the Freedom of Information Act showing JFK asking for information on unknowns in space",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "A document released in 2006 under FOIA shows JFK asking CIA director John McCone for information on unknowns in space, dated November 12th 1963",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "CIA operative E. Howard Hunt claimed JFK's death had to do partially with his inquiries into UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "JFK assassination",
+    "UFO disclosure",
+    "CIA",
+    "government secrecy",
+    "FOIA documents",
+    "conspiracy theories"
+  ]
+}

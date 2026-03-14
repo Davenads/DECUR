@@ -1,0 +1,50 @@
+{
+  "video_id": "otkZbaDC9jY",
+  "title": "Whistleblower Dave Grusch Speaks On Being Diagnosed With Autism",
+  "published_at": "2023-10-03T17:30:06Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=otkZbaDC9jY",
+  "thumbnail_url": "https://i.ytimg.com/vi/otkZbaDC9jY/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:35:38.904Z",
+  "summary": "David Grusch discusses his autism diagnosis in his early 30s and how it has served as both a help and hindrance in his career and personal life. He explains how his autistic traits like hyper-fixation helped him excel in intelligence work while creating challenges in interpersonal relationships.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "David Grusch"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "David Grusch"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "David Grusch was diagnosed with autism in his early 30s",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Autism helped Grusch excel at intelligence work due to hyper-fixation abilities and connecting non-obvious dots",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Autism creates challenges in maintaining relationships and reading/expressing emotions",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "autism",
+    "Asperger's syndrome",
+    "intelligence work",
+    "neurodiversity",
+    "personal disclosure",
+    "mental health"
+  ]
+}

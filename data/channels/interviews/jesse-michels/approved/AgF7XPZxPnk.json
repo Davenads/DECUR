@@ -1,0 +1,67 @@
+{
+  "video_id": "AgF7XPZxPnk",
+  "title": "The President Who Reported A UFO!",
+  "published_at": "2024-09-07T21:48:08Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=AgF7XPZxPnk",
+  "thumbnail_url": "https://i.ytimg.com/vi/AgF7XPZxPnk/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:23:32.565Z",
+  "summary": "This interview discusses President Jimmy Carter's 1969 UFO sighting and his subsequent efforts during his presidency in 1976 to release UFO information to the public and scientists. Carter describes seeing a bright light that changed color and disappeared, which he still cannot explain.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Jimmy Carter"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "An aerial phenomenon that cannot be immediately identified by the observer",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Jimmy Carter"
+  ],
+  "organizations_mentioned": [],
+  "events": [
+    {
+      "year": 1969,
+      "description": "President Carter witnessed a UFO - a bright light in the western sky that approached, changed color above the treetops, hovered, then disappeared",
+      "confidence": "high"
+    },
+    {
+      "year": 1976,
+      "description": "Carter stated he would try to release all UFO information to the public and scientists",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Carter saw a bright light in the western sky that got closer, changed color when above the treetops, stayed for a while, then disappeared",
+      "attributed_to": "Jimmy Carter",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Carter still does not know what the object was that he witnessed",
+      "attributed_to": "Jimmy Carter",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "A lot of UFO information was released during Carter's presidency, but Carter is unsure how much was withheld",
+      "attributed_to": "Jimmy Carter",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UFO sighting",
+    "Jimmy Carter",
+    "presidential UFO disclosure",
+    "government transparency",
+    "1969 UFO incident"
+  ]
+}

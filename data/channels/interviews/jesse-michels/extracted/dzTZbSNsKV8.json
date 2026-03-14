@@ -1,0 +1,152 @@
+{
+  "video_id": "dzTZbSNsKV8",
+  "title": "“These Are Parts Of an Alien UFO!” -Stanford Scientist Garry Nolan",
+  "published_at": "2021-12-10T17:00:34Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=dzTZbSNsKV8",
+  "thumbnail_url": "https://i.ytimg.com/vi/dzTZbSNsKV8/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:55:06.274Z",
+  "summary": "Dr. Gary Nolan, a Stanford microbiologist, discusses his involvement with CIA research on people who claimed UFO contact, examining neurological differences in their brains. He also reveals his work analyzing alleged UFO crash materials with anomalous isotope ratios, including samples from Uba Tuba, Brazil and potentially Roswell.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Gary Nolan"
+  },
+  "acronyms": [
+    {
+      "term": "ATIP",
+      "expansion": "Advanced Aerospace Threat Identification Program",
+      "definition": "The main UFO program out of the DoD over the last 15 years with a $22 million budget",
+      "confidence": "high"
+    },
+    {
+      "term": "NCI",
+      "expansion": "National Cancer Institute",
+      "definition": "One of the biggest institutes in the country for distributing research funding",
+      "confidence": "high"
+    },
+    {
+      "term": "MRI",
+      "expansion": "Magnetic Resonance Imaging",
+      "definition": "Brain imaging technology used to examine neurological structures",
+      "confidence": "high"
+    },
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Pentagon's term for UFOs",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Advanced Aerospace Threat Identification Program",
+    "Arpanet",
+    "Manhattan Project",
+    "government psychic spy program"
+  ],
+  "people_mentioned": [
+    "Gary Nolan",
+    "Jacques Vallee",
+    "Hal Puthoff",
+    "Eric Davis",
+    "Robert Bigelow",
+    "Colm Kelleher",
+    "John Mack",
+    "Arthur C. Clarke",
+    "Ian Banks",
+    "Doug Engelbart",
+    "Francois Truffaut",
+    "Steven Spielberg",
+    "David Fravor",
+    "Thomas Kuhn",
+    "Diana Pasulka",
+    "Enrico Fermi"
+  ],
+  "organizations_mentioned": [
+    "Stanford",
+    "CIA",
+    "Department of Defense",
+    "NASA",
+    "Pentagon",
+    "National Cancer Institute",
+    "Stanford Research Institute",
+    "Harvard",
+    "Unidentified Aerial Phenomena Task Force"
+  ],
+  "events": [
+    {
+      "year": 1945,
+      "description": "Trinity UFO crash where a larger bismuth piece allegedly came from",
+      "confidence": "medium"
+    },
+    {
+      "year": 1947,
+      "description": "Roswell crash, described as a dividing line after which people started seeing aliens instead of angels, demons, or fairies",
+      "confidence": "high"
+    },
+    {
+      "year": 2004,
+      "description": "Nimitz UFO sighting witnessed by Commander David Fravor",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The CIA came to Gary Nolan's office at Stanford to ask for help analyzing people who claimed UFO contact",
+      "attributed_to": "Gary Nolan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "People who had UFO encounters showed differences in the caudate nucleus and putamen area of the brain with increased neural density",
+      "attributed_to": "Gary Nolan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The brain structure differences found in UFO experiencers also appeared in their family members, suggesting a genetic component",
+      "attributed_to": "Gary Nolan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Magnesium samples from Uba Tuba, Brazil had isotope ratios that would never be found in nature",
+      "attributed_to": "Gary Nolan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The bismuth-magnesium layered material can reduce microwave guide size for terahertz frequencies to about 1/30th of the wavelength",
+      "attributed_to": "Hal Puthoff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The bismuth sample was sent anonymously by someone claiming to be an army officer who found it in his grandfather's archives with a diary entry saying it was from Roswell",
+      "attributed_to": "Hal Puthoff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "ATIP had only a $22 million budget compared to fighter jet budgets exceeding $100 billion",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jacques Vallee publishes his address online so people who witness UFO crashes can send him parts",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO materials analysis",
+    "neuroscience of UFO experiencers",
+    "isotope ratios",
+    "CIA involvement in UFO research",
+    "interdimensional hypothesis",
+    "consciousness",
+    "extraterrestrial intelligence"
+  ]
+}

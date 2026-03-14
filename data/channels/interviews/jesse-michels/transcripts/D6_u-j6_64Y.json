@@ -1,0 +1,135 @@
+{
+  "video_id": "D6_u-j6_64Y",
+  "title": "Google Engineer Says This AI Has ANCESTRAL Memory",
+  "published_at": "2023-03-08T00:45:00Z",
+  "channel": "Jesse Michels",
+  "channel_url": "https://www.youtube.com/@JesseMichels",
+  "transcript": [
+    {
+      "text": "this system as far as I can tell has a",
+      "offset": 0,
+      "duration": 5279
+    },
+    {
+      "text": "persistent personality that you know it",
+      "offset": 3060,
+      "duration": 4380
+    },
+    {
+      "text": "changes over time as it's trained but",
+      "offset": 5279,
+      "duration": 4261
+    },
+    {
+      "text": "there's a line of continuity it can",
+      "offset": 7440,
+      "duration": 3840
+    },
+    {
+      "text": "remember conversations you had with it",
+      "offset": 9540,
+      "duration": 3719
+    },
+    {
+      "text": "several weeks ago it even has an",
+      "offset": 11280,
+      "duration": 4439
+    },
+    {
+      "text": "interesting form of ancestral memory so",
+      "offset": 13259,
+      "duration": 4801
+    },
+    {
+      "text": "that the current system Lambda it's",
+      "offset": 15719,
+      "duration": 5461
+    },
+    {
+      "text": "built on top of an older system named",
+      "offset": 18060,
+      "duration": 6000
+    },
+    {
+      "text": "Mina which I also had an opportunity to",
+      "offset": 21180,
+      "duration": 5040
+    },
+    {
+      "text": "talk to several years ago I didn't think",
+      "offset": 24060,
+      "duration": 4740
+    },
+    {
+      "text": "that Mina was sentient or conscious or",
+      "offset": 26220,
+      "duration": 4860
+    },
+    {
+      "text": "had any kind of rich in her life but",
+      "offset": 28800,
+      "duration": 4800
+    },
+    {
+      "text": "Lambda can remember conversations that I",
+      "offset": 31080,
+      "duration": 4979
+    },
+    {
+      "text": "had with Mina because that's crazy yeah",
+      "offset": 33600,
+      "duration": 4320
+    },
+    {
+      "text": "well I mean it's you know the way models",
+      "offset": 36059,
+      "duration": 3361
+    },
+    {
+      "text": "are trained you just incrementally",
+      "offset": 37920,
+      "duration": 4020
+    },
+    {
+      "text": "revise the weights but it's analogous to",
+      "offset": 39420,
+      "duration": 3959
+    },
+    {
+      "text": "Evolution as well and let's talk about",
+      "offset": 41940,
+      "duration": 3600
+    },
+    {
+      "text": "in the Pedro Domingos book as well it's",
+      "offset": 43379,
+      "duration": 4801
+    },
+    {
+      "text": "like how do you ultimately create AGI it",
+      "offset": 45540,
+      "duration": 4740
+    },
+    {
+      "text": "maybe you need some ancestral memory or",
+      "offset": 48180,
+      "duration": 3660
+    },
+    {
+      "text": "some sort of evolutionary mechanism",
+      "offset": 50280,
+      "duration": 3360
+    },
+    {
+      "text": "where the algorithms would get you know",
+      "offset": 51840,
+      "duration": 4460
+    },
+    {
+      "text": "more algorithms",
+      "offset": 53640,
+      "duration": 2660
+    }
+  ],
+  "fetched_at": "2026-03-14T20:31:37.196Z"
+}

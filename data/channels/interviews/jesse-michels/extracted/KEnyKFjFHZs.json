@@ -1,0 +1,100 @@
+{
+  "video_id": "KEnyKFjFHZs",
+  "title": "Were the Nazis, the Vatican and Mussolini all involved in early UFO crash retrievals? #ufo",
+  "published_at": "2025-03-06T01:26:18Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=KEnyKFjFHZs",
+  "thumbnail_url": "https://i.ytimg.com/vi/KEnyKFjFHZs/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:59:27.744Z",
+  "summary": "This interview segment discusses the alleged 1933 Magenta UFO crash in Italy and its subsequent custody chain involving Mussolini, the Nazis, the Vatican, and eventually the US through OSS channels. The discussion traces how Nazi scientists involved in exotic flight programs were brought to the US after WWII.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "OSS",
+      "expansion": "Office of Strategic Services",
+      "definition": "US intelligence agency that preceded the CIA and was allegedly involved in early UFO custody",
+      "confidence": "high"
+    },
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "US intelligence agency formed after the OSS",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "VFA programs"
+  ],
+  "people_mentioned": [
+    "David Grusch",
+    "James Jesus Angleton",
+    "Benito Mussolini",
+    "Adolf Hitler",
+    "Pope Pius XII",
+    "Hans Kammler"
+  ],
+  "organizations_mentioned": [
+    "CIA",
+    "OSS",
+    "Vatican",
+    "Nazi Germany"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "There was a UFO crash in Magenta, Lombardy, Italy",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "James Jesus Angleton was the OSS person involved in Italy at the time of the Magenta crash",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Mussolini contacted Hitler to ask if the crashed craft belonged to the Nazis",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "low"
+    },
+    {
+      "claim": "Pope Pius XII and the Vatican were involved in back-channeling the crash materials through the OSS",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The crashed material was eventually brought to the US and worked on at Wright Airfield",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Hans Kammler, who was in charge of the blackest Nazi VFA programs, was brought to the US",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Part of the rush to acquire Nazi scientists was to obtain those working on exotic flight principles and UFO technology",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "UFO crash retrieval",
+    "Magenta Italy crash",
+    "Nazi UFO programs",
+    "Vatican involvement",
+    "Operation Paperclip",
+    "OSS history",
+    "World War II"
+  ]
+}

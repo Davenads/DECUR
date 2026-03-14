@@ -1,0 +1,335 @@
+{
+  "video_id": "RTEWLSTyUic",
+  "title": "The CIA Scientist Who Built UFOs Before Bob Lazar (Townsend Brown Documentary)",
+  "published_at": "2024-02-22T23:37:18Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=RTEWLSTyUic",
+  "thumbnail_url": "https://i.ytimg.com/vi/RTEWLSTyUic/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:31:20.586Z",
+  "summary": "This documentary-style interview explores the life and work of Thomas Townsend Brown, a mid-century American inventor who allegedly discovered a link between electromagnetism and gravity through his 'Biefeld-Brown effect.' The episode argues that Brown's classified work influenced black aerospace programs, potentially including the B2 stealth bomber, and suggests his story provides context for understanding later UFO-related claims like those of Bob Lazar.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Paul Schatzkin"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "US intelligence agency allegedly involved in anti-gravity research and UFO secrecy programs",
+      "confidence": "high"
+    },
+    {
+      "term": "OSI",
+      "expansion": "Office of Scientific Intelligence",
+      "definition": "CIA division involved in theoretical anti-gravity research",
+      "confidence": "medium"
+    },
+    {
+      "term": "TTSA",
+      "expansion": "To The Stars Academy",
+      "definition": "Organization founded by Tom DeLonge involved in UFO research and disclosure",
+      "confidence": "high"
+    },
+    {
+      "term": "MUFON",
+      "expansion": "Mutual UFO Network",
+      "definition": "Civilian UFO organization",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Institute of Field Physics",
+    "Gravity Research Institute",
+    "Research Institute for Advanced Studies",
+    "Skunk Works",
+    "Aurora",
+    "Astra",
+    "Guidance Technologies",
+    "Chapel Hill Conference",
+    "Breakthrough Physics"
+  ],
+  "people_mentioned": [
+    "Thomas Townsend Brown",
+    "Bob Lazar",
+    "Paul Schatzkin",
+    "Linda Brown",
+    "Jan Lundquist",
+    "Nick Cook",
+    "Edward Teller",
+    "Albert Einstein",
+    "Paul Alfred Biefeld",
+    "Agnew Bahnson",
+    "Robert Sarbacher",
+    "David Grusch",
+    "Jacques Cornillon",
+    "William Steinman",
+    "Curtis LeMay",
+    "William Stevenson",
+    "Victor Gruhn",
+    "Albert Boyd",
+    "Floyd Odlum",
+    "Bill Lear",
+    "John Lear",
+    "George Knapp",
+    "Jeremy Corbell",
+    "Ross Coulthart",
+    "Jacques Vallee",
+    "Paul Bennewitz",
+    "Rick Doty",
+    "Linda Moulton Howe",
+    "Bill Cooper",
+    "Billy Meier",
+    "Bryce DeWitt",
+    "Josh Goldberg",
+    "Lewis Witten",
+    "Herman Bondi",
+    "Eric Weinstein",
+    "Michio Kaku",
+    "Robert Oppenheimer",
+    "Richard Feynman",
+    "John Wheeler",
+    "Ben Rich",
+    "Robert Weiss",
+    "Tom DeLonge",
+    "Mike Turner",
+    "Gary Nolan",
+    "Tom Valone",
+    "John Campbell",
+    "Jim Goodall",
+    "Raymond Lavas",
+    "Bill Gunston",
+    "Dan Marckus",
+    "Robert Millikan"
+  ],
+  "organizations_mentioned": [
+    "Navy",
+    "CIA",
+    "FBI",
+    "Air Force",
+    "Naval Research Laboratory",
+    "RAND Corporation",
+    "Northrop Grumman",
+    "Lockheed Martin",
+    "Martin Corporation",
+    "Boeing",
+    "SpaceX",
+    "MIT",
+    "Caltech",
+    "Princeton Institute for Advanced Study",
+    "Indiana University",
+    "Purdue University",
+    "University of North Carolina Chapel Hill",
+    "Harvard",
+    "Stanford",
+    "NASA Marshall Space Flight Center",
+    "Wright Airfield",
+    "Wright Patterson Air Force Base",
+    "Kirtland Air Force Base",
+    "Area 51",
+    "S4",
+    "Sud Ouest",
+    "American Institute of Aeronautics and Astronautics",
+    "Australian Department of Defense",
+    "Joint Intelligence Organization",
+    "British Ministry of Defense",
+    "French Atomic Energy",
+    "Sharper Image",
+    "Integrity Research Institute",
+    "To The Stars Academy"
+  ],
+  "events": [
+    {
+      "year": 1905,
+      "description": "Thomas Townsend Brown was born in Zanesville, Ohio",
+      "confidence": "high"
+    },
+    {
+      "year": 1945,
+      "description": "Brown went into Nazi Germany to retrieve exotic propulsion technology",
+      "confidence": "medium"
+    },
+    {
+      "year": 1950,
+      "description": "Brown's work was compromised by a Soviet spy acting as a janitor during a Pearl Harbor demonstration",
+      "confidence": "medium"
+    },
+    {
+      "year": 1952,
+      "description": "Major General Victor Gruhn witnessed Brown's gravitator demonstration at the Townsend Brown Foundation",
+      "confidence": "medium"
+    },
+    {
+      "year": 1953,
+      "description": "Brown's Winter Haven proposal was created, allegedly resembling America's secret UFO program structure",
+      "confidence": "medium"
+    },
+    {
+      "year": 1956,
+      "description": "Jacques Cornillon facilitated Brown's vacuum experiments at the Montgolfier facility in Paris",
+      "confidence": "medium"
+    },
+    {
+      "year": 1957,
+      "description": "Agnew Bahnson held the Chapel Hill conference bringing together top theoretical physicists to study gravity, sponsored by Wright Airfield",
+      "confidence": "high"
+    },
+    {
+      "year": 1967,
+      "description": "Brown shuts down Guidance Technologies with no explanation",
+      "confidence": "medium"
+    },
+    {
+      "year": 1968,
+      "description": "Northrop writes and then retracts a paper on electro-aerodynamics",
+      "confidence": "medium"
+    },
+    {
+      "year": 1971,
+      "description": "Australian intelligence memo documents US government anti-gravity research programs",
+      "confidence": "high"
+    },
+    {
+      "year": 1986,
+      "description": "F-117 stealth fighter crashed in Bakersfield",
+      "confidence": "medium"
+    },
+    {
+      "year": 1987,
+      "description": "John Lear leaks story about F-117 stealth fighter to George Knapp's news station; Aurora appears as line item in Congressional budget with $2.3 billion",
+      "confidence": "medium"
+    },
+    {
+      "year": 1989,
+      "description": "Bob Lazar goes public with his Area 51 story; Aurora spotted by oil rig engineer near North Sea",
+      "confidence": "high"
+    },
+    {
+      "year": 1990,
+      "description": "Air Force tested Biefeld-Brown experiment in vacuum using only 19 kilovolts",
+      "confidence": "medium"
+    },
+    {
+      "year": 2003,
+      "description": "NASA announced it would be ending breakthrough physics and gravity manipulation efforts",
+      "confidence": "medium"
+    },
+    {
+      "year": 2004,
+      "description": "NASA Marshall Space Flight Center files patent for asymmetrical capacitor under engineer John Campbell",
+      "confidence": "high"
+    },
+    {
+      "year": 2008,
+      "description": "Paul Schatzkin met Jacques Cornillon in Pennsylvania before he died at age 98",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "Robert Weiss of Skunk Works connected with Tom DeLonge and TTSA",
+      "confidence": "medium"
+    },
+    {
+      "year": 2018,
+      "description": "MIT demonstrated ion plane based on Townsend Brown's research",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Robert Sarbacher admitted to UFO researcher William Steinman that rumors surrounding UFO crashes are substantially correct",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "David Grusch publicly stated that Robert Sarbacher helped set up UFO secrecy",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Biefeld-Brown effect produces thrust from negative to positive electrodes even in a vacuum, far greater than ionic wind can explain",
+      "attributed_to": "Thomas Townsend Brown",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jacques Cornillon confirmed the anomalous effect of Brown's experiments in vacuum at age 98",
+      "attributed_to": "Paul Schatzkin",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Edward Teller witnessed Brown's experiment and said he didn't understand how it works",
+      "attributed_to": "Linda Brown",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Agnew Bahnson and his Institute of Field Physics at UNC Chapel Hill were academic satellites of the CIA studying anti-gravity",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The 1957 Chapel Hill conference sent academic physics into a dead end by establishing quantum gravity leading to string theory",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The B2 stealth bomber uses an electrostatic effect in its wings producing a Biefeld-Brown effect",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Bill Gunston wrote that the B2 would be incapable of its credited performance without some electrogravitic propulsion boost",
+      "attributed_to": "Nick Cook",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Brown intentionally showed people wrong versions of his work (wounded prairie chicken routine) after Soviet spy compromise in 1950",
+      "attributed_to": "Paul Schatzkin",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "A 1943 FBI file states Brown knew more about radar detection than any individual in the US Navy",
+      "attributed_to": "Paul Schatzkin",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "John Lear was a CIA pilot who introduced Bob Lazar to George Knapp",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Lewis Witten from Martin Corporation stated that Townsend discovered a type of bismuth that was repelled instead of attracted",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Bill Lear's headquarters were across the street from Townsend Brown's Guidance Technologies and they had lunch practically every day",
+      "attributed_to": "Linda Brown",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "Townsend Brown",
+    "Biefeld-Brown effect",
+    "electrogravitics",
+    "anti-gravity research",
+    "B2 stealth bomber",
+    "Bob Lazar",
+    "UFO reverse engineering",
+    "black aerospace programs",
+    "disinformation"
+  ]
+}

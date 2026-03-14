@@ -1,0 +1,57 @@
+{
+  "video_id": "GSShQJadEN8",
+  "title": "Martin Shkreli Believes Trying to Stop AI is POINTLESS?",
+  "published_at": "2023-04-02T17:30:02Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=GSShQJadEN8",
+  "thumbnail_url": "https://i.ytimg.com/vi/GSShQJadEN8/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:39:02.194Z",
+  "summary": "Martin Shkreli discusses his views on artificial intelligence and the effective acceleration movement, expressing belief that stopping AI advancement is futile and that humans are not fundamentally unique from a biological perspective.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Martin Shkreli"
+  },
+  "acronyms": [
+    {
+      "term": "AI",
+      "expansion": "Artificial Intelligence",
+      "definition": "Not explicitly defined in transcript",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Martin Shkreli"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Trying to stop AI development is completely futile",
+      "attributed_to": "Martin Shkreli",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Humans are not fundamentally unique from a biological perspective - we are essentially operating systems made of strings in biological databases",
+      "attributed_to": "Martin Shkreli",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Humans will eventually be viewed by AI similarly to how we view zoo animals",
+      "attributed_to": "Martin Shkreli",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "artificial intelligence",
+    "effective accelerationism",
+    "transhumanism",
+    "nihilism",
+    "human uniqueness",
+    "biology"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "video_id": "tOPF8uCYZr0",
+  "title": "Did the CIA Brainwash Charles Manson?",
+  "published_at": "2022-02-25T18:53:27Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=tOPF8uCYZr0",
+  "thumbnail_url": "https://i.ytimg.com/vi/tOPF8uCYZr0/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:52:20.171Z",
+  "summary": "This interview explores the theory that Charles Manson may have been a CIA MK Ultra test subject, examining evidence suggesting government involvement in the Tate murders. Journalist Tom O'Neill discusses his 20 years of research into connections between Manson, the CIA's mind control program, and potential government efforts to discredit the hippie movement.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Tom O'Neill"
+  },
+  "acronyms": [
+    {
+      "term": "MK Ultra",
+      "expansion": "Not explicitly expanded",
+      "definition": "CIA's top secret mind control program that began in the early 1950s involving giving people LSD to brainwash them and cause them to kill on command",
+      "confidence": "high"
+    },
+    {
+      "term": "COINTELPRO",
+      "expansion": "Not explicitly expanded",
+      "definition": "Programs run out of the FBI and CIA that tracked dissident members of the hippie and free love movements",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "MK Ultra",
+    "Operation Midnight Climax",
+    "COINTELPRO",
+    "Chaos"
+  ],
+  "people_mentioned": [
+    "Charles Manson",
+    "Sharon Tate",
+    "Tom O'Neill",
+    "Reeve Whitson",
+    "Roger Smith",
+    "Robert Heinlein",
+    "Vincent Bugliosi",
+    "David Smith",
+    "Jolly West",
+    "Sydney Gottlieb",
+    "Jack Ruby",
+    "Lee Harvey Oswald",
+    "J. Edgar Hoover",
+    "Ronald Reagan",
+    "Joan Didion",
+    "Dennis Wilson",
+    "Oliver Stone"
+  ],
+  "organizations_mentioned": [
+    "CIA",
+    "FBI",
+    "Haight Ashbury Free Medical Clinic",
+    "UCLA Psychiatry Department",
+    "The Beach Boys"
+  ],
+  "events": [
+    {
+      "year": 1969,
+      "description": "On August 9, Charles Manson led a group into the home of Sharon Tate, killing her and four others in Los Angeles",
+      "confidence": "high"
+    },
+    {
+      "year": 1967,
+      "description": "Charles Manson frequented the Haight Ashbury Free Medical Clinic during the Summer of Love in San Francisco, where his transformation into a cult leader allegedly began",
+      "confidence": "high"
+    },
+    {
+      "year": 1961,
+      "description": "Publication of 'Stranger in a Strange Land' by Robert Heinlein, which became Manson's de facto bible",
+      "confidence": "high"
+    },
+    {
+      "year": 1969,
+      "description": "On December 1st, Manson was identified and media showed images of long-haired hippies accused of the murders",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Spahn Ranch where the Manson family lived was under surveillance months before the Tate murders",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Reeve Whitson, believed to be CIA, was at Sharon Tate's house before police arrived the morning after the murders",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Roger Smith, Manson's parole officer, was an expert in LSD, amphetamines, and their effect on violence",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jolly West was deeply involved in the CIA's MK Ultra program based on declassified correspondence with Sydney Gottlieb",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Jolly West was using the Haight Ashbury Free Medical Clinic as a recruiting pool to find hippies and dose them with LSD as part of Operation Midnight Climax",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jack Ruby did not remember killing Lee Harvey Oswald and appeared to have blacked out",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Hoover and Reagan believed the youth movement was funded by communist Russia and China",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Charles Manson was basically illiterate",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Charles Manson lived with Dennis Wilson of the Beach Boys for a while",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "MK Ultra",
+    "Charles Manson",
+    "CIA mind control",
+    "Tate murders",
+    "1960s counterculture",
+    "government surveillance",
+    "COINTELPRO",
+    "conspiracy theories"
+  ]
+}

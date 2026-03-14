@@ -1,0 +1,202 @@
+{
+  "video_id": "8TYMQOUDQBo",
+  "title": "Meet the Navy Scientist With UFO Patents (Ft. Salvatore Pais)",
+  "published_at": "2025-01-24T19:43:02Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=8TYMQOUDQBo",
+  "thumbnail_url": "https://i.ytimg.com/vi/8TYMQOUDQBo/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:04:32.669Z",
+  "summary": "This interview features Navy scientist Salvatore Pais discussing his exotic propulsion patents, including craft using inertial mass reduction devices and high-frequency gravitational wave generators. Pais explains the theoretical physics behind his work, particularly the 'Pais Effect' involving controlled motion of charged matter through accelerated vibration or spin, and discusses connections to room temperature superconductivity and quantum vacuum engineering.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Salvatore Pais"
+  },
+  "acronyms": [
+    {
+      "term": "OSAP",
+      "expansion": "Not explicitly expanded in transcript",
+      "definition": "UFO study group referenced in context of 2017 revelations",
+      "confidence": "low"
+    },
+    {
+      "term": "USPTO",
+      "expansion": "United States Patent and Trademark Office",
+      "definition": "Federal agency responsible for granting patents",
+      "confidence": "high"
+    },
+    {
+      "term": "AIAA",
+      "expansion": "American Institute of Aeronautics and Astronautics",
+      "definition": "Professional organization where Pais presented his work at SciTec 2019",
+      "confidence": "high"
+    },
+    {
+      "term": "BCS",
+      "expansion": "Bardeen Cooper Schrieffer",
+      "definition": "Theory explaining conventional superconductivity through electron pairing via phonons",
+      "confidence": "high"
+    },
+    {
+      "term": "NHI",
+      "expansion": "Non-Human Intelligence",
+      "definition": "Term used to describe potential extraterrestrial or non-human entities",
+      "confidence": "high"
+    },
+    {
+      "term": "YBCO",
+      "expansion": "Yttrium Barium Copper Oxide",
+      "definition": "A high-temperature superconductor material",
+      "confidence": "high"
+    },
+    {
+      "term": "OSINT",
+      "expansion": "Open Source Intelligence",
+      "definition": "Intelligence gathered from publicly available sources",
+      "confidence": "high"
+    },
+    {
+      "term": "SEM",
+      "expansion": "Scanning Electron Microscope",
+      "definition": "Tool used to interrogate materials at atomic scale",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "Skunk Works",
+    "Strategic Systems Programs"
+  ],
+  "people_mentioned": [
+    "Salvatore Pais",
+    "Jesse Michels",
+    "Hal Puthoff",
+    "Eric Weinstein",
+    "Steven Greer",
+    "David Grusch",
+    "Bob Lazar",
+    "Oliver Heaviside",
+    "James Clerk Maxwell",
+    "Albert Einstein",
+    "John Wheeler",
+    "Julian Schwinger",
+    "Max Born",
+    "Paul Dirac",
+    "Victor Lakhno",
+    "Ken Shoulders",
+    "Philip Bonzel",
+    "Eric W. Davis",
+    "John Bardeen",
+    "Leon Cooper",
+    "Ming Le",
+    "Eugene Podkletnov",
+    "Nick Cook",
+    "Victor Schauberger",
+    "Thomas Townsend Brown",
+    "Abraham Pais",
+    "Richard Eskridge"
+  ],
+  "organizations_mentioned": [
+    "United States Navy",
+    "United States Space Force",
+    "Northrop Grumman",
+    "USPTO",
+    "Brooklyn Technical High School",
+    "Case Western Reserve University",
+    "MIT",
+    "Russian Academy of Sciences",
+    "DIA",
+    "AIAA",
+    "Marshall Space Flight Center",
+    "Lockheed Martin Skunk Works"
+  ],
+  "events": [
+    {
+      "year": 2017,
+      "description": "Revelations around the existence of UFO study groups like OSAP, and Salvatore Pais filed his exotic propulsion patents",
+      "confidence": "high"
+    },
+    {
+      "year": 2019,
+      "description": "Salvatore Pais presented slides at AIAA SciTec conference",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The Pais Effect involves controlled motion of electrically charged matter based on accelerated vibration and/or accelerated spin, giving rise to extremely high energy densities",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Electric fields on the order of 10^18 volts per meter and magnetic fields of 10^9 Tesla are theoretically achievable through the Pais Effect",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Three of five patent applications became patents, with the most exotic concepts being granted while more mundane ones were rejected",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Bob Lazar described the sports model craft as if it were grown out of the vacuum itself, which aligns with the super force equation",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Victor Lakhno of the Russian Academy of Sciences published a paper suggesting Pais's room temperature superconductor mechanism could work",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Breaking the Schwinger limit allows creation of black holes which may connect via wormholes to white holes elsewhere",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "There is both man-made exotic technology and ET technology, and they can be distinguished from each other",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The physics behind the patents was available in the 1890s and Pais does not consider himself an original discoverer",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Chinese research teams are citing Pais's plasma compression fusion device patent in cybernetics journals as of this year",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Navy experiment achieved only 10^-8 coulombs of charge when at least 1 coulomb is needed to demonstrate the Pais Effect",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Townsend Brown's Winter Haven proposal referenced Oliver Heaviside's 1890s theory of gravity as adequate",
+      "attributed_to": "Salvatore Pais",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "exotic propulsion",
+    "room temperature superconductivity",
+    "quantum vacuum engineering",
+    "Navy patents",
+    "high frequency gravitational waves",
+    "Pais Effect",
+    "reverse engineering",
+    "national security"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "video_id": "8dsxY6coxfA",
+  "title": "The BIZARRE Connection Between UFOs and Nukes",
+  "published_at": "2023-02-16T22:22:15Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=8dsxY6coxfA",
+  "thumbnail_url": "https://i.ytimg.com/vi/8dsxY6coxfA/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:44:11.688Z",
+  "summary": "This interview excerpt discusses a 1964 incident at Vandenberg Air Force Base where Lieutenant Bob Jacobs, a photo instrumentation specialist, allegedly captured footage of a UFO interfering with a nuclear warhead test during the classified Atlas program. The object reportedly fired directed energy beams at the missile, causing it to tumble off trajectory.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "An unidentified aerial phenomenon or craft",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Atlas"
+  ],
+  "people_mentioned": [
+    "Bob Jacobs"
+  ],
+  "organizations_mentioned": [
+    "Air Force"
+  ],
+  "events": [
+    {
+      "year": 1964,
+      "description": "Lieutenant Bob Jacobs allegedly filmed a UFO interfering with a dummy nuclear warhead test at Vandenberg Air Force Base during the classified Atlas program",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "A flying saucer traveling at 8,000 miles per hour encircled a test missile and fired four directed energy beams at it, causing the warhead to tumble off its intended trajectory",
+      "attributed_to": "Bob Jacobs",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Lieutenant Bob Jacobs was tasked with filming the Atlas missile test from Big Sur, approximately 100 miles north of Vandenberg Air Force Base",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UFO-nuclear connection",
+    "Vandenberg Air Force Base",
+    "ICBM testing",
+    "directed energy weapons",
+    "military UFO encounters",
+    "1960s UFO incidents"
+  ]
+}

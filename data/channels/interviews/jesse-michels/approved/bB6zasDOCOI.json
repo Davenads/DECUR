@@ -1,0 +1,73 @@
+{
+  "video_id": "bB6zasDOCOI",
+  "title": "CIA’s Psychic Research - Project Stargate",
+  "published_at": "2024-09-30T03:04:01Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=bB6zasDOCOI",
+  "thumbnail_url": "https://i.ytimg.com/vi/bB6zasDOCOI/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:20:17.537Z",
+  "summary": "This interview discusses the CIA's Project Stargate, a psychic spy program that operated from 1972 to 1995. The conversation covers remote viewing capabilities and their historical use for intelligence gathering, including finding Russian nuclear bases and American hostages.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "U.S. government intelligence agency that ran the psychic research program",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Project Stargate"
+  ],
+  "people_mentioned": [
+    "Russell Targ",
+    "Hal Puthoff"
+  ],
+  "organizations_mentioned": [
+    "CIA"
+  ],
+  "events": [
+    {
+      "year": 1972,
+      "description": "Project Stargate psychic spy program began",
+      "confidence": "high"
+    },
+    {
+      "year": 1995,
+      "description": "Project Stargate was declassified/ended",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The CIA ran a psychic spy program called Stargate from 1972 to 1995 to find Russian nuclear bases and American hostages",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "Remote viewing functioning is a survival mechanism, historically used by shamans to keep small tribes alive",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Stargate program's psychic intelligence was confirmed by traditional intelligence methodologies in many cases",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "remote viewing",
+    "Project Stargate",
+    "CIA programs",
+    "psychic espionage",
+    "declassified programs",
+    "Cold War intelligence"
+  ]
+}

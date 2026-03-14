@@ -1,0 +1,217 @@
+{
+  "video_id": "1iaH1a3A4Lk",
+  "title": "UFO Skeptic Mick West Challenged To A Debate",
+  "published_at": "2025-01-26T23:58:44Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=1iaH1a3A4Lk",
+  "thumbnail_url": "https://i.ytimg.com/vi/1iaH1a3A4Lk/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:04:01.938Z",
+  "summary": "Jesse Michels hosts a debate between Marik von Rennenkampff (former DoD employee and UAP proponent) and Mick West (skeptic and debunker) about landmark UFO cases, particularly the 2004 Nimitz encounter and associated FLIR footage. The discussion covers the credibility of military eyewitnesses, government UAP investigation programs like AARO, and technical analysis of UFO videos.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Marik von Rennenkampff and Mick West"
+  },
+  "acronyms": [
+    {
+      "term": "AARO",
+      "expansion": "All-domain Anomaly Resolution Office",
+      "definition": "The Pentagon's official UFO analysis and investigation office",
+      "confidence": "high"
+    },
+    {
+      "term": "SAP",
+      "expansion": "Special Access Program",
+      "definition": "Classified government programs with restricted access",
+      "confidence": "high"
+    },
+    {
+      "term": "NHI",
+      "expansion": "Non-Human Intelligence",
+      "definition": "Term used in legislation and discussions to refer to potential extraterrestrial or non-human entities",
+      "confidence": "high"
+    },
+    {
+      "term": "FLIR",
+      "expansion": "Forward Looking Infrared",
+      "definition": "Thermal imaging system used on military aircraft",
+      "confidence": "high"
+    },
+    {
+      "term": "WIZO",
+      "expansion": "Weapon Systems Officer",
+      "definition": "The backseater in a fighter jet who operates tactical systems",
+      "confidence": "high"
+    },
+    {
+      "term": "VFA-41",
+      "expansion": "Strike Fighter Squadron 41",
+      "definition": "Navy squadron known as the Black Aces, commanded by David Fravor",
+      "confidence": "high"
+    },
+    {
+      "term": "DoD",
+      "expansion": "Department of Defense",
+      "definition": "United States Department of Defense",
+      "confidence": "high"
+    },
+    {
+      "term": "NSA",
+      "expansion": "National Security Agency",
+      "definition": "US intelligence agency",
+      "confidence": "high"
+    },
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "US intelligence agency",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "AARO",
+    "Project Blue Book",
+    "Condon Committee",
+    "crash retrieval programs"
+  ],
+  "people_mentioned": [
+    "Mick West",
+    "Marik von Rennenkampff",
+    "Jesse Michels",
+    "David Fravor",
+    "Alex Dietrich",
+    "Chad Underwood",
+    "Kevin Day",
+    "Jim Slaight",
+    "Leslie Kean",
+    "Ralph Blumenthal",
+    "Joe Rogan",
+    "James McDonald",
+    "Harry Reid",
+    "Chuck Schumer",
+    "Marco Rubio",
+    "Kirsten Gillibrand",
+    "Mike Gallagher",
+    "Kirk McConnell",
+    "Jill Brand",
+    "John Ratcliffe",
+    "David Grusch",
+    "Luis Elizondo",
+    "J. Allen Hynek",
+    "Dr. Jon Kosloski",
+    "Robert Hastings"
+  ],
+  "organizations_mentioned": [
+    "Pentagon",
+    "US Navy",
+    "USS Nimitz",
+    "USS Princeton",
+    "USS Roosevelt",
+    "New York Times",
+    "The Hill",
+    "Huffington Post",
+    "To The Stars Academy",
+    "Senate Intelligence Committee",
+    "Senate Armed Services Committee",
+    "Chilean Navy",
+    "Metabunk"
+  ],
+  "events": [
+    {
+      "year": 1944,
+      "description": "First reports of Foo Fighters in November 1944, marking 80 years of UFO reports",
+      "confidence": "high"
+    },
+    {
+      "year": 2004,
+      "description": "Nimitz carrier strike group UFO encounter in November 2004 during pre-deployment training",
+      "confidence": "high"
+    },
+    {
+      "year": 2016,
+      "description": "Chilean Navy UFO video released by Leslie Kean in Huffington Post, later debunked as distant plane",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "New York Times article released in December 2017 with Gimbal and FLIR1 videos",
+      "confidence": "high"
+    },
+    {
+      "year": 2020,
+      "description": "Rubio added UAP provision to Senate Intelligence Committee language in June 2020",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "AARO has approximately three to four dozen people working at it and has investigated about 1,600 cases",
+      "attributed_to": "Marik von Rennenkampff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "AARO director Dr. Kosloski stated he is baffled by some cases and doesn't know anyone who knows what's going on",
+      "attributed_to": "Marik von Rennenkampff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "At least two multiple firsthand witnesses have gone to AARO regarding unreported UAP programs",
+      "attributed_to": "Marik von Rennenkampff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Rubio stated that credible people with high clearances fear for their lives regarding UAP information",
+      "attributed_to": "Marik von Rennenkampff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The FLIR1 video anomalies (object zipping off screen, acceleration) are just camera movement artifacts",
+      "attributed_to": "Mick West",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Programs studying what people thought was NHI may exist, but that doesn't mean actual NHI was involved",
+      "attributed_to": "Mick West",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Chilean Navy video from 2016/2017 was conclusively proven to be a distant plane",
+      "attributed_to": "Mick West",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Alex Dietrich said her experience of the Nimitz encounter lasted only 8-10 seconds while Fravor said it lasted about 5 minutes",
+      "attributed_to": "Mick West",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The object tracked during Nimitz incident hovered around 28,000 feet at 100 knots heading south over approximately 10 days",
+      "attributed_to": "Marik von Rennenkampff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The tracked object reportedly appeared at a pre-designated rendezvous/CAP point known to air crew",
+      "attributed_to": "Marik von Rennenkampff",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "Nimitz UFO encounter",
+    "UFO video analysis",
+    "military eyewitness testimony",
+    "AARO investigation",
+    "government UFO programs",
+    "UAP legislation",
+    "skepticism vs belief"
+  ]
+}

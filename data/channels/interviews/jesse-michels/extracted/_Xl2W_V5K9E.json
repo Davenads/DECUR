@@ -1,0 +1,82 @@
+{
+  "video_id": "_Xl2W_V5K9E",
+  "title": "The Quantum Physicist Responsible For The Marginalization of UFOs",
+  "published_at": "2023-09-29T19:06:14Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=_Xl2W_V5K9E",
+  "thumbnail_url": "https://i.ytimg.com/vi/_Xl2W_V5K9E/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:36:43.563Z",
+  "summary": "This video discusses Edward Condon, a quantum physicist whose 1966 Condon Committee investigation into UFOs led to the marginalization of UFO research in the latter half of the 20th century. It reveals his connections to the Air Force and his deep involvement in atomic secrets, including his relationship with Robert Oppenheimer.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [],
+  "programs_mentioned": [
+    "Condon Committee",
+    "Manhattan Project"
+  ],
+  "people_mentioned": [
+    "Edward Euler Condon",
+    "Robert Hippler",
+    "Robert Oppenheimer",
+    "Max Born"
+  ],
+  "organizations_mentioned": [
+    "Air Force"
+  ],
+  "events": [
+    {
+      "year": 1966,
+      "description": "The Condon Committee investigation into UFOs was initiated, paid for by the Air Force",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Edward Condon is the single person most responsible for the marginalization of UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Condon Committee was supposed to be uninfluenced by the Air Force but Condon was actually coordinating closely with Air Force officials",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Colonel Robert Hippler expressed clear written desire that all previous UFO research be shown as a waste of money",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Condon studied with Robert Oppenheimer under Max Born in Germany in the 1920s",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Condon helped Oppenheimer pick Los Alamos as the site for the Manhattan Project",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Condon grew up in Alamogordo, near Los Alamos",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UFO research history",
+    "Condon Committee",
+    "government UFO investigations",
+    "Air Force involvement",
+    "Manhattan Project",
+    "scientific marginalization of UFOs"
+  ]
+}

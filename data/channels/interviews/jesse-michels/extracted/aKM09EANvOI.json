@@ -1,0 +1,69 @@
+{
+  "video_id": "aKM09EANvOI",
+  "title": "Whistleblower Dave Grusch Reveals How UFOs Fly",
+  "published_at": "2023-10-03T22:30:01Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=aKM09EANvOI",
+  "thumbnail_url": "https://i.ytimg.com/vi/aKM09EANvOI/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:35:24.289Z",
+  "summary": "In this brief clip, whistleblower Dave Grusch discusses theoretical physics frameworks that could explain UAP propulsion, specifically referencing Alcubierre-style warp bubbles and spacetime manipulation as potential explanations for observed UAP behaviors like the Tic Tac incident.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Dave Grusch"
+  },
+  "acronyms": [
+    {
+      "term": "UAPs",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Term used to describe unidentified flying objects observed in the atmosphere",
+      "confidence": "high"
+    },
+    {
+      "term": "GR",
+      "expansion": "General Relativity",
+      "definition": "Einstein's theory of gravitation describing gravity as curvature of spacetime",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Dave Grusch"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Theoretical physics frameworks including General Relativity can explain UAP behavior like the Tic Tac",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "UAP movement could be explained by Alcubierre-style warp bubbles that manipulate spacetime",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Reverse Doppler shift effects where objects approaching appear red-shifted is consistent with warp bubble physics",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Burns experienced by witnesses could be caused by ultraviolet ionizing radiation from light being blue-shifted as it crosses the craft's warp bubble",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UAP propulsion",
+    "Alcubierre warp drive",
+    "spacetime manipulation",
+    "Tic Tac incident",
+    "theoretical physics",
+    "radiation effects"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "video_id": "KhmUixSXxDo",
+  "title": "Alex Jones Getting Drunk & Painting Rocks [INTERVIEW]",
+  "published_at": "2022-04-11T19:00:05Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=KhmUixSXxDo",
+  "thumbnail_url": "https://i.ytimg.com/vi/KhmUixSXxDo/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:52:00.187Z",
+  "summary": "Jesse Michels interviews Alex Jones in an informal setting involving drinking tequila and painting rocks. The conversation covers Jones's anti-elitist philosophy, his infiltration of Bohemian Grove, his relationship with Joe Rogan, media censorship, conspiracy theories, parapsychology, and his views on science and spirituality.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Alex Jones"
+  },
+  "acronyms": [],
+  "programs_mentioned": [
+    "Infowars",
+    "QAnon"
+  ],
+  "people_mentioned": [
+    "Alex Jones",
+    "Jesse Michels",
+    "Joe Rogan",
+    "Richard Linklater",
+    "Bill Hicks",
+    "Sam Kinison",
+    "Donald Trump",
+    "George W. Bush",
+    "Elon Musk",
+    "Dave Chappelle",
+    "Neil Young",
+    "Joni Mitchell",
+    "Wolf Blitzer",
+    "Bill Maher",
+    "Glenn Greenwald",
+    "Oliver Stone",
+    "Tucker Carlson",
+    "Kanye West",
+    "Jake Paul",
+    "Dave Portnoy",
+    "Mark Zuckerberg",
+    "Rene Girard",
+    "Umberto Eco",
+    "Marshall McLuhan",
+    "Francis Bacon",
+    "Isaac Newton",
+    "Galileo",
+    "Copernicus",
+    "Roger Penrose",
+    "Albert Einstein",
+    "Max Planck",
+    "Michael Shermer",
+    "Rachel Carson",
+    "Henry Ford",
+    "Adolf Hitler",
+    "Osama bin Laden",
+    "John Stewart",
+    "Stephen Colbert",
+    "Alex Lee Moyer"
+  ],
+  "organizations_mentioned": [
+    "Infowars",
+    "Bohemian Grove",
+    "John Birch Society",
+    "Spotify",
+    "YouTube",
+    "CNN",
+    "New York Times",
+    "Washington Post",
+    "Roku",
+    "Truth Social",
+    "4chan",
+    "Variety",
+    "Silicon Valley"
+  ],
+  "events": [
+    {
+      "year": 2000,
+      "description": "Alex Jones infiltrated the Bohemian Grove and witnessed the Cremation of Care ritual",
+      "confidence": "high"
+    },
+    {
+      "year": 2001,
+      "description": "Alex Jones predicted on air in July that the government would blow up the World Trade Center and blame Bin Laden",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Jones infiltrated Bohemian Grove in 2000 and witnessed a pagan ritual called the Cremation of Care, which he describes as satanic",
+      "attributed_to": "Alex Jones",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Jones publicly warned in July 2001 that the government would attack the World Trade Center and blame Bin Laden",
+      "attributed_to": "Alex Jones",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "QAnon is a disinformation operation and not legitimate",
+      "attributed_to": "Alex Jones",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Joe Rogan has infrastructure ready to launch his own independent platform with hundreds of creators if censored by Spotify",
+      "attributed_to": "Alex Jones",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The observer effect in quantum physics demonstrates that human observation fundamentally changes reality",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Only about 5% of observable reality is regular matter, with 95% being dark matter and dark energy",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "Early scientists like Francis Bacon and Isaac Newton were deeply involved in alchemy alongside their scientific work",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "anti-elitism",
+    "Bohemian Grove",
+    "media censorship",
+    "Joe Rogan",
+    "conspiracy theories",
+    "parapsychology",
+    "quantum physics",
+    "cancel culture"
+  ]
+}

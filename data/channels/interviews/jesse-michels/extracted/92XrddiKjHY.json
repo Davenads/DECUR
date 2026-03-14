@@ -1,0 +1,155 @@
+{
+  "video_id": "92XrddiKjHY",
+  "title": "\"The Pyramids Are NOT What We Think!\" (Ft. Luke Caverns)",
+  "published_at": "2025-05-01T22:37:54Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=92XrddiKjHY",
+  "thumbnail_url": "https://i.ytimg.com/vi/92XrddiKjHY/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:54:21.629Z",
+  "summary": "Jesse Michels interviews Luke Caverns, a self-described 'vigilante archaeologist' and mentee of Ed Barnhart, discussing ancient Egyptian mysteries including underground structures beneath the Giza Plateau, the age of the Sphinx, controversies around recent synthetic aperture radar claims, and the tension between mainstream and alternative archaeology.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Luke Caverns"
+  },
+  "acronyms": [
+    {
+      "term": "SAR",
+      "expansion": "Synthetic Aperture Radar",
+      "definition": "A radar imaging technique that can be used to map subsurface territory, sometimes used for mapping magma chambers in volcanoes",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Manhattan Project"
+  ],
+  "people_mentioned": [
+    "Amenhotep IV",
+    "Akhenaten",
+    "Louis XIV",
+    "Zahi Hawass",
+    "Filippo Biondo",
+    "Robert Schoch",
+    "Graham Hancock",
+    "Ed Barnhart",
+    "Randall Carlson",
+    "Heinrich Schliemann",
+    "James Bruce",
+    "Ronald Reagan",
+    "Homer",
+    "Thucydides",
+    "Solon",
+    "Plato",
+    "Richard Dawkins",
+    "Luis Alvarez",
+    "Edgar Cayce",
+    "Herodotus",
+    "Seti I",
+    "John Anthony West",
+    "Joe Rogan",
+    "Flint Dibble",
+    "Ben Van Kerkwyk",
+    "Land of Chem"
+  ],
+  "organizations_mentioned": [
+    "Egyptian Ministry of Culture",
+    "Capella Space",
+    "Umbra",
+    "Stanford University",
+    "Mythbusters",
+    "Gaia"
+  ],
+  "events": [
+    {
+      "year": 2022,
+      "description": "Filippo Biondo published a peer-reviewed paper on synthetic aperture radar imagery allegedly showing structures below the pyramids",
+      "confidence": "medium"
+    },
+    {
+      "year": 2024,
+      "description": "Egyptian and Japanese researchers used ground penetrating radar and electrical resistivity tomography to map the western cemetery adjacent to the Great Pyramid, revealing an L-shaped structure",
+      "confidence": "high"
+    },
+    {
+      "year": 2025,
+      "description": "Researchers led by Filippo Biondo released claims about using SAR Doppler tomography and AI to map structures underneath the Giza Plateau",
+      "confidence": "high"
+    },
+    {
+      "year": 1870,
+      "description": "Heinrich Schliemann discovered the ancient city of Troy",
+      "confidence": "medium"
+    },
+    {
+      "year": 1945,
+      "description": "Egypt declared war on Germany during World War II, leading to excavations seeking bomb shelters near the pyramids",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The synthetic aperture radar claims about vast structures under the Giza Plateau are highly dubious and not supported by respected researchers in the alternative archaeology community",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Graham Hancock stated he has no reason to believe the source behind the underground Giza structure claims is being honest",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Giza Plateau is like a honeycomb with as much empty space underground as solid bedrock",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Luis Alvarez conducted muon scans of Khafre's Pyramid in the 1960s and detected two cavities at 69 feet and 112 feet below the surface",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Osiris Shaft contains a sarcophagus on an elevated platform surrounded by water underground, matching Herodotus's 5th century BC description",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Sphinx is probably the strongest argument in all of Egypt for an exceptionally old artifact predating traditional Egyptian chronology",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Graham Hancock now believes the vast majority of the Great Pyramid was constructed during the reign of Khufu in the Fourth Dynasty",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Osireion temple at Abydos appears to be much older than the 19th Dynasty and was built by the same architects who built the Valley Temple",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Details in the Exodus story could only have been written by someone living in Egypt during the mid New Kingdom period (1500-1000 BC)",
+      "attributed_to": "Luke Caverns",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "ancient Egypt",
+    "Giza Plateau",
+    "Sphinx",
+    "pyramids",
+    "alternative archaeology",
+    "synthetic aperture radar",
+    "lost civilizations",
+    "Atlantis"
+  ]
+}

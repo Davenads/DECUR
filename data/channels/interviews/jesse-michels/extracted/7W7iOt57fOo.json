@@ -1,0 +1,147 @@
+{
+  "video_id": "7W7iOt57fOo",
+  "title": "I Searched for UFOs on Skinwalker Ranch…",
+  "published_at": "2022-08-10T19:00:02Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=7W7iOt57fOo",
+  "thumbnail_url": "https://i.ytimg.com/vi/7W7iOt57fOo/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:51:18.881Z",
+  "summary": "Jesse Michels visits Skinwalker Ranch in Utah to investigate paranormal and UFO activity, speaking with ranch owner Brandon Fugal and his team about electromagnetic anomalies, cattle mutilations, UFO sightings, and mysterious metallic objects buried beneath the property. The interview explores the ranch's history from Native American curses to Robert Bigelow's government-funded research, and documents various unexplained phenomena affecting both equipment and human health.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Brandon Fugal"
+  },
+  "acronyms": [
+    {
+      "term": "ATIP",
+      "expansion": "Advanced Aerospace Threat Identification Program",
+      "definition": "The official government UFO program led by Lou Elizondo that studied Skinwalker Ranch between 2007 and 2012",
+      "confidence": "high"
+    },
+    {
+      "term": "FOIA",
+      "expansion": "Freedom of Information Act",
+      "definition": "Federal law that allows public access to government records, but does not apply to private company data like that held by Bigelow Aerospace",
+      "confidence": "high"
+    },
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Modern terminology for UFOs used in government and scientific contexts",
+      "confidence": "high"
+    },
+    {
+      "term": "GPS",
+      "expansion": "Global Positioning System",
+      "definition": "Satellite-based navigation system",
+      "confidence": "high"
+    },
+    {
+      "term": "EM",
+      "expansion": "Electromagnetic",
+      "definition": "Relating to electromagnetic fields and radiation",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "ATIP",
+    "Special Access Programs"
+  ],
+  "people_mentioned": [
+    "Brandon Fugal",
+    "Robert Bigelow",
+    "Lou Elizondo",
+    "Eric Bard",
+    "George Knapp",
+    "Colm Kelleher",
+    "James Lacatski",
+    "Post Malone",
+    "Richard Feynman",
+    "Garry Nolan",
+    "Aaron Blunt",
+    "Ravi Chandran",
+    "Augustus Wally"
+  ],
+  "organizations_mentioned": [
+    "Bigelow Aerospace",
+    "History Channel",
+    "Netflix",
+    "Buffalo Soldiers",
+    "Navajo",
+    "Ute",
+    "Hell's Angels",
+    "Lockheed"
+  ],
+  "events": [
+    {
+      "year": 2007,
+      "description": "Skinwalker Ranch became the center of study for ATIP, the official government UFO program",
+      "confidence": "high"
+    },
+    {
+      "year": 2012,
+      "description": "End of ATIP's study period at Skinwalker Ranch",
+      "confidence": "high"
+    },
+    {
+      "year": 2016,
+      "description": "On October 14, a group of 11 people including a security detail member named George experienced severe health effects on the property, with George becoming immobilized and hospitalized",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "A large metallic object approximately 400 feet wide is buried beneath the mesa at Skinwalker Ranch",
+      "attributed_to": "Brandon Fugal",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Metal samples from drilling contained europium and tellurium, indicating they were manufactured rather than naturally occurring",
+      "attributed_to": "Ravi Chandran",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "People with more neuronally dense areas between the caudate nucleus and putamen may be more predisposed to paranormal experiences",
+      "attributed_to": "Garry Nolan",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "All data from ATIP's study of Skinwalker Ranch is both classified and not subject to FOIA because it was run under Bigelow Aerospace",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Aerospace corporations have knowledge in the UAP area that is specifically sequestered against FOIA due to proprietary labels",
+      "attributed_to": "Brandon Fugal",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "UFO and remote viewing programs have not ceased but have been shifted into the private sector and special access programs",
+      "attributed_to": "Brandon Fugal",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Scientists who studied at Skinwalker Ranch experienced hitchhiker effects where the phenomenon followed them home",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "Skinwalker Ranch",
+    "UFO sightings",
+    "electromagnetic anomalies",
+    "cattle mutilations",
+    "paranormal phenomena",
+    "government UFO programs",
+    "biological effects of UAP encounters",
+    "Native American folklore"
+  ]
+}

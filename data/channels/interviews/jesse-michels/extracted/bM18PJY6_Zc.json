@@ -1,0 +1,207 @@
+{
+  "video_id": "bM18PJY6_Zc",
+  "title": "Why NASA Studies This Man (He Attracts UFOs!)",
+  "published_at": "2026-01-06T19:01:27Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=bM18PJY6_Zc",
+  "thumbnail_url": "https://i.ytimg.com/vi/bM18PJY6_Zc/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:39:59.116Z",
+  "summary": "Chris Bledsoe discusses his UFO experiences beginning in 2007, his interactions with NASA mission controller Tim Taylor, and connections to mid-century anti-gravity inventor Thomas Townsen Brown. The conversation explores exotic metal recovery, consciousness-based phenomena, and Bledsoe's ongoing role as a 'super experiencer' studied by government scientists.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Chris Bledsoe"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "U.S. intelligence agency",
+      "confidence": "high"
+    },
+    {
+      "term": "NASA",
+      "expansion": "National Aeronautics and Space Administration",
+      "definition": "U.S. space agency",
+      "confidence": "high"
+    },
+    {
+      "term": "DNA",
+      "expansion": "Deoxyribonucleic acid",
+      "definition": "Genetic material that carries hereditary information",
+      "confidence": "high"
+    },
+    {
+      "term": "ATP",
+      "expansion": "Adenosine triphosphate",
+      "definition": "Energy molecule in cells, mentioned in context of hemoglobin and sun energy",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "Philadelphia Experiment",
+    "Vivx Biotechnologies",
+    "Army Futures Command"
+  ],
+  "people_mentioned": [
+    "Chris Bledsoe",
+    "Tim Taylor",
+    "Thomas Townsen Brown",
+    "Diana Pasulka",
+    "Lou Elizondo",
+    "Tom DeLonge",
+    "Hal Puthoff",
+    "David Grusch",
+    "Harry Turner",
+    "Jacques Cornillon",
+    "Karl Nell",
+    "Charles Buhler",
+    "Ryan Bledsoe",
+    "Linda Brown",
+    "Charles Hall",
+    "Whitley Strieber",
+    "John Alexander",
+    "Brandon Fugal",
+    "Anna Breydo Estz",
+    "Sammy Hagar",
+    "Robert Plant",
+    "Jimmy Page",
+    "Neil Young",
+    "Kurt Hammett",
+    "Fred Durst",
+    "Paul McCartney",
+    "Philip K. Dick",
+    "Philip J. Corso",
+    "Constantine Meyl",
+    "Curtis LeMay",
+    "Bill Lear",
+    "Elon Musk"
+  ],
+  "organizations_mentioned": [
+    "NASA",
+    "CIA",
+    "Lockheed Martin",
+    "3M",
+    "Bell Labs",
+    "Skunk Works",
+    "Martin (aerospace)",
+    "University of North Carolina Chapel Hill",
+    "Kennedy Space Center",
+    "Cape Canaveral",
+    "Monroe Institute",
+    "Vivx Biotechnologies",
+    "Army Futures Command"
+  ],
+  "events": [
+    {
+      "year": 2007,
+      "description": "Chris Bledsoe's initial UFO encounter while fishing in North Carolina on January 8th",
+      "confidence": "high"
+    },
+    {
+      "year": 1957,
+      "description": "University of North Carolina Chapel Hill physics patrons allegedly sent science down the wrong path with quantum gravity",
+      "confidence": "medium"
+    },
+    {
+      "year": 1956,
+      "description": "Thomas Townsen Brown's anti-gravity experiments reportedly worked in Paris at the Montgolfier facility",
+      "confidence": "medium"
+    },
+    {
+      "year": 2012,
+      "description": "Chris Bledsoe received a message about divine encoding in music and prayed to tell certain musicians about it",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "NASA mission controller Tim Taylor tested the Bledsoe family with exotic metal that caused Chris to have a physical reaction indicating he had been taken aboard a craft",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Tim Taylor claimed to work for 'the hammer' who works for God, referencing concepts from the film The Adjustment Bureau",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Tim Taylor was part of a secret time travel group called the Nassau Group with Thomas Townsen Brown as president",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Chris Bledsoe and Tim Taylor recovered exotic metal in Zanesville, Ohio, the birthplace of Thomas Townsen Brown",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Hal Puthoff received a piece of the recovered metal from Zanesville",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Thomas Townsen Brown's daughter Linda Brown was helped by Tim Taylor in writing her book",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Tim Taylor told Bledsoe that Towns and Brown received visits from small beings who landed in his yard and gave him information",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Chris Bledsoe worked with Vivx Biotechnologies drawing diagrams of cells based on intuitive downloads for stem cell research",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "When placed in a Faraday cage at the Monroe Institute, Bledsoe could still sense UFOs above the building, which scientists interpreted as proof the phenomenon is consciousness-based rather than electromagnetic",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The exotic metal acts like an animal, always seeking energy and trying to connect, and bonds to DNA through frequency",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "There are over 200 mainstream scientists who want to start working on the UFO phenomenon",
+      "attributed_to": "Chris Bledsoe",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Thomas Townsen Brown essentially discovered anti-gravity in the 1950s",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "University of North Carolina Chapel Hill was deeply involved in anti-gravity research according to declassified documents",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO experiencers",
+    "exotic materials",
+    "anti-gravity research",
+    "Thomas Townsen Brown",
+    "consciousness and UAP",
+    "NASA involvement",
+    "time travel claims",
+    "spiritual phenomena"
+  ]
+}

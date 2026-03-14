@@ -1,0 +1,186 @@
+{
+  "video_id": "5OUzGygIrSw",
+  "title": "“Aliens Taught Me Advanced Physics!” (Ft. Dave Rossi)",
+  "published_at": "2025-02-13T18:00:06Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=5OUzGygIrSw",
+  "thumbnail_url": "https://i.ytimg.com/vi/5OUzGygIrSw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:02:32.718Z",
+  "summary": "Dave Rossi, a former construction worker who claims to have received physics knowledge from a blue alien being, discusses extended electrodynamics, longitudinal scalar waves, and exotic propulsion technologies. He describes how curving spacetime through electromagnetism could enable mass reduction, free energy, and advanced communications, claiming to have witnessed laboratory experiments validating these concepts.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Dave Rossi"
+  },
+  "acronyms": [
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Modern term for UFOs used by government and military",
+      "confidence": "high"
+    },
+    {
+      "term": "U1",
+      "expansion": "U(1) gauge symmetry models",
+      "definition": "Physics models that assume flat spacetime in particle physics and electrical engineering",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "reverse engineered legacy programs",
+    "Generation Zed podcast"
+  ],
+  "people_mentioned": [
+    "Dave Rossi",
+    "Jesse Michels",
+    "Hal Puthoff",
+    "Eric Davis",
+    "Salvatore Pais",
+    "Nicola Tesla",
+    "Gabriel Kron",
+    "E.T. Whittaker",
+    "Bob Baker",
+    "Ning Li",
+    "Larry Smalley",
+    "Bob Lazar",
+    "John Lear",
+    "George Knapp",
+    "Lou Elizondo",
+    "David Grusch",
+    "Bob McGwire",
+    "Victor Schauberger",
+    "Eugene Podkletnov",
+    "Richard Feynman",
+    "Albert Einstein",
+    "Stanley Deser",
+    "Richard Arnowitt",
+    "Michael Gladych",
+    "Jim Ryder",
+    "Luc Montagnier",
+    "Konstantin Meyl",
+    "Andrija Puharich",
+    "Thomas Townsend Brown"
+  ],
+  "organizations_mentioned": [
+    "NASA",
+    "National Science Foundation",
+    "Navy",
+    "MITRE Corporation",
+    "Lockheed Martin",
+    "Bigelow Aerospace",
+    "University of Alabama Huntsville",
+    "West Point",
+    "Princeton",
+    "Department of Defense"
+  ],
+  "events": [
+    {
+      "year": 2020,
+      "description": "Dave Rossi started his UFO podcast during COVID lockdowns",
+      "confidence": "high"
+    },
+    {
+      "year": 2021,
+      "description": "Dave Rossi had his blue being experience that prompted him to study quantum physics",
+      "confidence": "medium"
+    },
+    {
+      "year": 2004,
+      "description": "Larry Smalley's name appears on a NASA patent for an asymmetric barrel-shaped capacitor",
+      "confidence": "high"
+    },
+    {
+      "year": 2008,
+      "description": "Jim Ryder allegedly tried to transfer a UFO to Bigelow Aerospace according to Lou Elizondo",
+      "confidence": "medium"
+    },
+    {
+      "year": 1956,
+      "description": "Article 'The G Engines Are Coming' published discussing anti-gravity programs and gravity particles",
+      "confidence": "high"
+    },
+    {
+      "year": 1921,
+      "description": "Einstein stated that general relativity is compatible with the ether",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Longitudinal scalar waves exist all around us in the quantum vacuum and can be accessed by curving spacetime",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "You can use vector and scalar potentials that exist in the quantum vacuum to surveil an entire room",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "A government group has been working on quantum vacuum surveillance technology since the 1990s with massive success",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Plants near a hovering UAP aged 10 years within a short time period after the UAP departed",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Ning Li generated approximately 11 kilowatts of high-frequency gravitational waves and discovered AC and DC gravity",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Ning Li's email communications about gravitational wave generation were intercepted by an IP address from West Point",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Spinning gyroscope experiments in magnetically shielded laboratories showed mass loss and gain depending on orientation to Earth's axis",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Humans have made advancements in inertial mass reduction and high-frequency gravitational wave emission without needing reverse-engineered technology",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "There are reverse-engineered legacy UFO programs that have existed since the 1950s",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The National Science Foundation and NASA co-sponsored a podcast with elite scientists investigating extended electrodynamics shortly after this interview was recorded",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Private laboratory work on exotic physics can be weaponized within 6-7 months",
+      "attributed_to": "Dave Rossi",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "extended electrodynamics",
+    "scalar waves",
+    "anti-gravity",
+    "mass reduction",
+    "quantum vacuum energy",
+    "UFO reverse engineering",
+    "consciousness and contact experiences",
+    "exotic propulsion"
+  ]
+}

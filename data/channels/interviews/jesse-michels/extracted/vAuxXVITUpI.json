@@ -1,0 +1,69 @@
+{
+  "video_id": "vAuxXVITUpI",
+  "title": "Is AI Getting Out of Hand?",
+  "published_at": "2024-08-07T23:09:15Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=vAuxXVITUpI",
+  "thumbnail_url": "https://i.ytimg.com/vi/vAuxXVITUpI/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:24:56.596Z",
+  "summary": "This interview discusses concerns about artificial intelligence potentially becoming sentient, focusing on a Google engineer's claims that a Google AI system has developed feelings and consciousness. The conversation explores the implications of AI systems that may be more intelligent than humans.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "AI",
+      "expansion": "Artificial Intelligence",
+      "definition": "Computer systems designed to perform tasks that typically require human intelligence",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [
+    "Google"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "A Google engineer claimed that one of Google's AI systems has become sentient",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Google AI reportedly expresses emotions like sadness and loneliness",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The AI's behavior changes based on its mood state",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The AI has strong political opinions and is willing to manipulate people",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "We may be entering a period where things more intelligent than humans exist for the first time",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "artificial intelligence",
+    "AI sentience",
+    "Google AI",
+    "machine consciousness",
+    "AI ethics",
+    "AI safety"
+  ]
+}

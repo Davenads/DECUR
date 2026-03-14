@@ -1,0 +1,67 @@
+{
+  "video_id": "mU90gAHaQOU",
+  "title": "The Dark Connection Between UFOs and Nukes",
+  "published_at": "2024-01-02T20:00:19Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=mU90gAHaQOU",
+  "thumbnail_url": "https://i.ytimg.com/vi/mU90gAHaQOU/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:31:46.335Z",
+  "summary": "A brief overview discussing the documented connection between UFO sightings and US nuclear facilities, referencing a 1949 declassified Air Force document about an emergency conference and a book compiling over 100 interviews with nuclear facility employees who witnessed UFOs.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "ICBM",
+      "expansion": "Intercontinental Ballistic Missile",
+      "definition": "Long-range nuclear missiles capable of traveling between continents",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "David Grusch"
+  ],
+  "organizations_mentioned": [
+    "Air Force Office of Special Investigations",
+    "Army Counter Intelligence Command",
+    "FBI",
+    "United States Air Force"
+  ],
+  "events": [
+    {
+      "year": 1949,
+      "description": "Emergency conference held at Camp Hood Texas involving Air Force Office of Special Investigations, Army Counter Intelligence Command, and FBI to discuss frequent UFO sightings around American nuclear facilities",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Every single nuclear base in the United States has been visited by UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "A declassified Air Force document reveals an emergency conference was held in 1949 at Camp Hood Texas to discuss UFO sightings around nuclear facilities",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The book 'UFOs and Nukes' compiles over 100 interviews with nuclear employees who claimed to have seen or interacted with UFOs around nuclear sites",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UFO nuclear connection",
+    "declassified documents",
+    "military UFO sightings",
+    "nuclear security",
+    "government investigations"
+  ]
+}

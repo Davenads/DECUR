@@ -1,0 +1,200 @@
+{
+  "video_id": "QgxjtDS2sIQ",
+  "title": "“I Spent 3 Years With Tall White Aliens At Area 51\" -UFO Whistleblower Charles Hall",
+  "published_at": "2025-09-11T17:58:49Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=QgxjtDS2sIQ",
+  "thumbnail_url": "https://i.ytimg.com/vi/QgxjtDS2sIQ/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:46:44.291Z",
+  "summary": "Charles Hall, a former US Air Force weather observer, describes his years of interactions with extraterrestrial beings he calls the 'Tall Whites' while stationed at Nellis Air Force Base and the Indian Springs Gunnery Ranges from 1965-1967. He discusses the tall whites' advanced technology, their underground facilities, their relationship with the US military, and his theory that Einstein's relativity is wrong based on observing craft exceeding the speed of light.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Charles Hall"
+  },
+  "acronyms": [
+    {
+      "term": "PAT",
+      "expansion": "Personnel Awaiting Training",
+      "definition": "Airmen waiting for their security clearance before being sent to security school",
+      "confidence": "medium"
+    },
+    {
+      "term": "OSAP",
+      "expansion": "Office of Special Access Programs",
+      "definition": "Pentagon program that funded research at Skinwalker Ranch through Robert Bigelow",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "Dreamland",
+    "OSAP"
+  ],
+  "people_mentioned": [
+    "Charles Hall",
+    "Jesse Michels",
+    "Emil Marzac",
+    "Bob Lazar",
+    "Timothy Taylor",
+    "David Fravor",
+    "Jake Barber",
+    "Ross Coulthart",
+    "Robert Bigelow",
+    "Franklin D. Roosevelt"
+  ],
+  "organizations_mentioned": [
+    "US Air Force",
+    "NASA",
+    "CIA",
+    "Pentagon",
+    "FBI",
+    "Marine Corps",
+    "Desert Game Range National Park",
+    "Nellis Air Force Base",
+    "Army Air Force"
+  ],
+  "events": [
+    {
+      "year": 1935,
+      "description": "Franklin D. Roosevelt established the Desert Game Range by executive order, allegedly to protect desert bighorn sheep, with anti-aircraft battalion stationed there",
+      "confidence": "medium"
+    },
+    {
+      "year": 1964,
+      "description": "Charles Hall enlisted in the US Air Force at age 19",
+      "confidence": "high"
+    },
+    {
+      "year": 1965,
+      "description": "Charles Hall was stationed at Nellis Air Force Base and began encountering tall white aliens at Indian Springs Gunnery Ranges",
+      "confidence": "high"
+    },
+    {
+      "year": 1967,
+      "description": "Charles Hall's assignment at Nellis Air Force Base ended",
+      "confidence": "high"
+    },
+    {
+      "year": 1970,
+      "description": "First recorded climb of Sheep Peak despite being an easy climb",
+      "confidence": "medium"
+    },
+    {
+      "year": 1997,
+      "description": "Charles Hall first copyrighted his Hall Photon Theory",
+      "confidence": "high"
+    },
+    {
+      "year": 2004,
+      "description": "David Fravor's Nimitz UFO sighting of tic-tac shaped craft",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "Reference point for what has been learned about UAPs since then",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Einstein's theory of relativity is wrong because extraterrestrial craft can travel many times faster than the speed of light",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The tall whites have been on Earth since at least the ice age, the grays arrived before the last ice age, and the Norwegians with 24 teeth arrived towards the end of the last ice age",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The tall whites lived in underground facilities at the north end of Indian Springs Valley with hangers for their craft",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Tall white scout craft can travel to the moon and back in the time of a brief conversation",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The tall whites use electronic equipment that can read human thoughts and implant thoughts into conscious minds",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Area 51 was just the entry area; Dreamland was actually areas 53 and 54 in the northern half of Indian Springs Valley",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The tall whites and grays are plant eaters and do not eat meat",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "A CIA psychiatrist told Hall he could use all 105 psychological defenses, while most humans only use one or two",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Hall was never briefed or debriefed because the tall whites could read thoughts and were protective of their children",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The grays used tunnels carved into mountains as granaries during the ice age and farmed in L-shaped valleys",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Hall scored 499 out of 500 on the Air Force math ability test",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Hall has a master's degree in nuclear physics",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Hall rode in a tall white cargo craft to their base at Area 53/54 when they thought he had broken his kneecap",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The tall white craft looked like tic-tacs or eggs and had no sharp edges",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "41 men were sent out before Hall and all came back compromised, some burned",
+      "attributed_to": "Charles Hall",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "tall white aliens",
+    "Area 51",
+    "extraterrestrial technology",
+    "faster than light travel",
+    "Hall Photon Theory",
+    "military-alien collaboration",
+    "Nellis Air Force Base",
+    "alien contact experiencer"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "video_id": "ISJvLqWHd70",
+  "title": "The Dark Truth About ATLANTIS And It's Origins",
+  "published_at": "2023-02-08T23:48:05Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=ISJvLqWHd70",
+  "thumbnail_url": "https://i.ytimg.com/vi/ISJvLqWHd70/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:45:13.280Z",
+  "summary": "This interview discusses the origins of the Atlantis legend, tracing it back to Plato's account which was sourced from his ancestor Solon's visit to Egypt around 600 BC. The conversation explores how Egyptian priests allegedly showed Solon inscriptions describing an advanced civilization that was destroyed and swallowed by the sea.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Plato",
+    "Solon"
+  ],
+  "organizations_mentioned": [],
+  "events": [
+    {
+      "year": 600,
+      "description": "Solon made a documented visit to Egypt and visited a Temple dedicated to the goddess Neith at Sais in the Delta, where priests showed him inscriptions about Atlantis",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Plato is the earliest surviving reference to Atlantis",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Plato's source for the Atlantis story was his ancestor Solon, separated by about 200 years",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Solon visited a Temple dedicated to the goddess Neith at Sais in Egypt around 600 BC",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Egyptian priests showed Solon inscriptions describing an advanced civilization that was destroyed in a single day and night and swallowed by the sea",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "Atlantis",
+    "ancient civilizations",
+    "Plato",
+    "ancient Egypt",
+    "lost civilizations",
+    "ancient history"
+  ]
+}

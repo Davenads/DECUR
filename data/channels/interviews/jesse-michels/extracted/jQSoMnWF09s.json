@@ -1,0 +1,70 @@
+{
+  "video_id": "jQSoMnWF09s",
+  "title": "Are UFOs real or just mass hysteria? New episode with Lue Elizondo out now!",
+  "published_at": "2024-10-11T03:11:31Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=jQSoMnWF09s",
+  "thumbnail_url": "https://i.ytimg.com/vi/jQSoMnWF09s/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:17:54.871Z",
+  "summary": "Lue Elizondo discusses the logical implications of UAP reality versus mass hysteria, arguing that dismissing UAP as delusion would mean that highly trained military personnel with critical responsibilities are experiencing mass psychosis, which he suggests would be an even more concerning scenario.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Lue Elizondo"
+  },
+  "acronyms": [
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Unidentified objects observed in the sky, the modern term replacing UFO in official contexts",
+      "confidence": "medium"
+    },
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "United States foreign intelligence service",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [
+    "CIA",
+    "Air Force"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Trained pilots with top secret clearances flying live munitions over populated cities have reported UAP",
+      "attributed_to": "Lue Elizondo",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Air Force nuclear technicians with access to nuclear weapons have reported UAP experiences",
+      "attributed_to": "Lue Elizondo",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Admirals, Generals, CIA directors, and Directors of National Intelligence have been involved with or acknowledged UAP matters",
+      "attributed_to": "Lue Elizondo",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "If UAP are mass hysteria, it would indicate a more serious problem than acknowledging non-human intelligence",
+      "attributed_to": "Lue Elizondo",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UAP reality",
+    "mass hysteria hypothesis",
+    "military credibility",
+    "nuclear security",
+    "intelligence community",
+    "non-human intelligence"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "video_id": "dfPfPB601hw",
+  "title": "Graham Hancock: Aliens, Atlantis & the Apocalypse",
+  "published_at": "2022-12-22T21:12:57Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=dfPfPB601hw",
+  "thumbnail_url": "https://i.ytimg.com/vi/dfPfPB601hw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:48:17.417Z",
+  "summary": "Graham Hancock discusses his theories about a lost ancient civilization predating conventional historical timelines, the younger Dryas impact theory, psychedelics and their role in human consciousness and early religions, the Ark of the Covenant's possible location in Ethiopia, and speculation about ancient technologies and human abilities that may have been lost.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Graham Hancock"
+  },
+  "acronyms": [
+    {
+      "term": "DART",
+      "expansion": "Double Asteroid Redirection Test",
+      "definition": "NASA program aimed to prove that humans can deflect asteroids with satellites and prevent Earth impact",
+      "confidence": "high"
+    },
+    {
+      "term": "SSRI",
+      "expansion": "Selective Serotonin Reuptake Inhibitor",
+      "definition": "A class of antidepressant pharmaceutical drugs",
+      "confidence": "high"
+    },
+    {
+      "term": "DNA",
+      "expansion": "Deoxyribonucleic Acid",
+      "definition": "The molecule that carries genetic instructions for the development and functioning of living organisms",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "NASA DART mission"
+  ],
+  "people_mentioned": [
+    "Graham Hancock",
+    "Jesse Michels",
+    "Michael Shermer",
+    "Randall Carlson",
+    "Brian Muraresku",
+    "Joe Rogan",
+    "Plato",
+    "Socrates",
+    "Aristotle",
+    "Francis Crick",
+    "Terence McKenna",
+    "Robert Bauval",
+    "Rupert Sheldrake",
+    "Dennis McDonald",
+    "Martin Luther King",
+    "James Bruce",
+    "Alan West",
+    "Philip Hancock",
+    "Solon",
+    "Earl of Elgin"
+  ],
+  "organizations_mentioned": [
+    "Netflix",
+    "The Guardian",
+    "NASA",
+    "Roman Catholic Church",
+    "Council of Nicaea",
+    "Freemasons",
+    "Templars",
+    "Rosicrucians",
+    "University of Exeter",
+    "Comet Research Group",
+    "Beta Israel"
+  ],
+  "events": [
+    {
+      "year": 1908,
+      "description": "Tunguska event - an air burst over Siberia that flattened 2000 square miles of trees, possibly connected to the Taurid meteor stream",
+      "confidence": "high"
+    },
+    {
+      "year": 1994,
+      "description": "Comet Shoemaker-Levy 9 collided with Jupiter with an impact equivalent to 6 million megatons of TNT",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "Graham Hancock had a debate with Michael Shermer on The Joe Rogan Experience",
+      "confidence": "high"
+    },
+    {
+      "year": 1916,
+      "description": "Graham Hancock's grandfather Philip Hancock climbed the Great Pyramid on April 5th",
+      "confidence": "high"
+    },
+    {
+      "year": 325,
+      "description": "Council of Nicaea established the accepted Christian Canon",
+      "confidence": "high"
+    },
+    {
+      "year": 2005,
+      "description": "Graham Hancock published his book Supernatural",
+      "confidence": "high"
+    },
+    {
+      "year": 2006,
+      "description": "Graham Hancock received the plot for his novel Entangled during Ayahuasca sessions in Brazil",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The younger Dryas impact date almost perfectly coincides with Plato's dates for the destruction of Atlantis (around 9600 BC or 11,600 years ago)",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "There are approximately 2000 flood myths found around the world documenting a global phenomenon",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Francis Crick concluded that DNA could not have evolved on Earth in the time available and proposed directed panspermia",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The next 30 years are a danger time as Earth will cross a more dangerous part of the Taurid meteor stream",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Early Christianity was a psychedelic religion before the Roman Catholic Church began persecuting competing Christian sects",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Ethiopian Jews (Falasha/Beta Israel) claim their ancestors brought the Ark of the Covenant to Ethiopia from an island in the Nile",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Guardians of the Ark in Ethiopia get sick and die rapidly, experiencing burns, cataracts and radiation-like damage",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "An archaeologist at University of Exeter has identified using lidar what appears to be an enormous pyramid in the Amazon rainforest in Colombia",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Fungal DNA is more similar to human DNA than plant DNA",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Recent studies show no correlation between serotonin deficiency and depression",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "younger Dryas impact theory",
+    "Atlantis",
+    "ancient civilizations",
+    "psychedelics and consciousness",
+    "Ark of the Covenant",
+    "directed panspermia",
+    "Taurid meteor stream",
+    "Freemasonry and Templars"
+  ]
+}

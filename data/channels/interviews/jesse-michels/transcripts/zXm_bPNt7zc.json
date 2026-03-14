@@ -1,0 +1,150 @@
+{
+  "video_id": "zXm_bPNt7zc",
+  "title": "THIS Is Why Quantum Computers Are So Hard To Make",
+  "published_at": "2023-02-21T21:45:02Z",
+  "channel": "Jesse Michels",
+  "channel_url": "https://www.youtube.com/@JesseMichels",
+  "transcript": [
+    {
+      "text": "the quantum mechanical world is like a",
+      "offset": 0,
+      "duration": 4259
+    },
+    {
+      "text": "dream world powerful and ethereal",
+      "offset": 2159,
+      "duration": 4321
+    },
+    {
+      "text": "anything can happen in it however as",
+      "offset": 4259,
+      "duration": 4021
+    },
+    {
+      "text": "soon as somebody on the outside disturbs",
+      "offset": 6480,
+      "duration": 3720
+    },
+    {
+      "text": "you you wake up and all you're left with",
+      "offset": 8280,
+      "duration": 4319
+    },
+    {
+      "text": "are memories similarly subatomic",
+      "offset": 10200,
+      "duration": 4740
+    },
+    {
+      "text": "particles exist in a probabilistic state",
+      "offset": 12599,
+      "duration": 4801
+    },
+    {
+      "text": "of many possibilities but when they",
+      "offset": 14940,
+      "duration": 4500
+    },
+    {
+      "text": "interact with an observer they collapse",
+      "offset": 17400,
+      "duration": 4620
+    },
+    {
+      "text": "into a single state as a result Quantum",
+      "offset": 19440,
+      "duration": 4919
+    },
+    {
+      "text": "Hardware which relies on maintaining two",
+      "offset": 22020,
+      "duration": 4740
+    },
+    {
+      "text": "or more States in Quantum superposition",
+      "offset": 24359,
+      "duration": 4801
+    },
+    {
+      "text": "will decohere if they're interfered with",
+      "offset": 26760,
+      "duration": 4560
+    },
+    {
+      "text": "by anything from the outside",
+      "offset": 29160,
+      "duration": 4260
+    },
+    {
+      "text": "this is the main bottleneck for building",
+      "offset": 31320,
+      "duration": 4259
+    },
+    {
+      "text": "fully fledged and functional quantum",
+      "offset": 33420,
+      "duration": 4139
+    },
+    {
+      "text": "computers they're incredibly sensitive",
+      "offset": 35579,
+      "duration": 4561
+    },
+    {
+      "text": "and they often require very specific and",
+      "offset": 37559,
+      "duration": 4741
+    },
+    {
+      "text": "energy intensive environments in order",
+      "offset": 40140,
+      "duration": 4140
+    },
+    {
+      "text": "to maintain coherence this is why",
+      "offset": 42300,
+      "duration": 3779
+    },
+    {
+      "text": "initially deep is using a quantum",
+      "offset": 44280,
+      "duration": 3900
+    },
+    {
+      "text": "computer simulator instead of quantum",
+      "offset": 46079,
+      "duration": 4320
+    },
+    {
+      "text": "Hardware all quantum computers the",
+      "offset": 48180,
+      "duration": 3719
+    },
+    {
+      "text": "algorithms that we're running on them",
+      "offset": 50399,
+      "duration": 4441
+    },
+    {
+      "text": "they are Universal computations what",
+      "offset": 51899,
+      "duration": 4741
+    },
+    {
+      "text": "that means is that we will be able to",
+      "offset": 54840,
+      "duration": 4320
+    },
+    {
+      "text": "model any algorithm we want on quantum",
+      "offset": 56640,
+      "duration": 4820
+    },
+    {
+      "text": "computers",
+      "offset": 59160,
+      "duration": 2300
+    }
+  ],
+  "fetched_at": "2026-03-14T20:32:19.770Z"
+}

@@ -1,0 +1,183 @@
+{
+  "video_id": "_bM9eAtCOGw",
+  "title": "Harvard is Studying UFOs (Ft. Avi Loeb)",
+  "published_at": "2022-01-28T21:21:08Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=_bM9eAtCOGw",
+  "thumbnail_url": "https://i.ytimg.com/vi/_bM9eAtCOGw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:53:21.961Z",
+  "summary": "Harvard astronomer Dr. Avi Loeb discusses his Galileo Project, which aims to use scientific instruments at Harvard's observatory to collect high-quality data on unidentified aerial phenomena (UAPs). The conversation covers the mysterious interstellar object Oumuamua that sparked Loeb's interest in extraterrestrial possibilities, the limitations of current government UFO data, and the scientific approach needed to study these phenomena.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Avi Loeb"
+  },
+  "acronyms": [
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Objects in the sky that cannot be explained, the modern term for UFOs used by the military and government",
+      "confidence": "high"
+    },
+    {
+      "term": "ATIP",
+      "expansion": "Advanced Aerospace Threat Identification Program",
+      "definition": "A government UFO investigation program that formed in 2007 and was run under the auspices of Bigelow Aerospace",
+      "confidence": "high"
+    },
+    {
+      "term": "AI",
+      "expansion": "Artificial Intelligence",
+      "definition": "Computer systems that can perform tasks requiring human intelligence, mentioned in context of analyzing UAP data and space exploration",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Galileo Project",
+    "Operation Blue Book",
+    "ATIP",
+    "New Horizons"
+  ],
+  "people_mentioned": [
+    "Avi Loeb",
+    "Jesse Michels",
+    "David Fravor",
+    "Leslie Kean",
+    "H.P. Robertson",
+    "Kenneth Arnold",
+    "John Mack",
+    "Gary Nolan",
+    "Enrico Fermi",
+    "Eric Weinstein",
+    "Clyde Tombaugh",
+    "Albert Einstein",
+    "Blaise Pascal",
+    "Arthur C. Clarke",
+    "Elon Musk"
+  ],
+  "organizations_mentioned": [
+    "Harvard",
+    "Pentagon",
+    "CIA",
+    "NASA",
+    "Caltech",
+    "Stanford",
+    "U.S. Air Force",
+    "Bigelow Aerospace",
+    "Pan-STARRS",
+    "New York Times"
+  ],
+  "events": [
+    {
+      "year": 2021,
+      "description": "Pentagon released a report acknowledging the existence of unidentified aerial phenomena on June 25th",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "Pan-STARRS telescope in Hawaii discovered the interstellar object Oumuamua",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "New York Times journalist Leslie Kean revealed the government had a UFO investigation program called ATIP",
+      "confidence": "high"
+    },
+    {
+      "year": 2007,
+      "description": "ATIP (Advanced Aerospace Threat Identification Program) was formed",
+      "confidence": "high"
+    },
+    {
+      "year": 2004,
+      "description": "Commander David Fravor saw the famous tic tac UFO off the coast of San Diego",
+      "confidence": "high"
+    },
+    {
+      "year": 2020,
+      "description": "Pan-STARRS found another baffling object that turned out to be a forgotten 1966 NASA rocket booster",
+      "confidence": "high"
+    },
+    {
+      "year": 1952,
+      "description": "Overwhelming series of UFO sightings in Washington DC in July, dubbed the invasion of Washington",
+      "confidence": "high"
+    },
+    {
+      "year": 1968,
+      "description": "The Condon Report closed shop on Project Blue Book and dismissed many findings with prosaic explanations",
+      "confidence": "high"
+    },
+    {
+      "year": 1966,
+      "description": "NASA mission launched a rocket booster that was later rediscovered in 2020",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The interstellar object Oumuamua didn't fit any known criteria for asteroids or comets, lacked a cometary tail, and changed speed erratically",
+      "attributed_to": "Avi Loeb",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Oumuamua may have been a light sail - a thin structure that used the reflection of sunlight to propel itself forward",
+      "attributed_to": "Avi Loeb",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Military grade equipment is designed for the battlefield, not for the same quality instrumentation needed for scientific investigation of UAPs",
+      "attributed_to": "Avi Loeb",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Galileo Project has more than 100 scientists engaged and is purchasing instrumentation to place on the roof of Harvard College Observatory",
+      "attributed_to": "Avi Loeb",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The James Webb Space Telescope could look for city lights on the night side of Proxima b",
+      "attributed_to": "Avi Loeb",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Technological equipment sent by extraterrestrials is much more likely to be our first encounter rather than living creatures because living beings cannot survive space exposed to cosmic rays",
+      "attributed_to": "Avi Loeb",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Virtual realities may be a solution to Fermi's paradox if advanced civilizations close themselves in cocoons living in virtual realities",
+      "attributed_to": "Avi Loeb",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The CIA wrote a memo saying UFO phenomena was a matter of national security and could touch off mass hysteria and panic after the 1952 Washington DC sightings",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Eric Weinstein joined the Galileo Project",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Galileo Project",
+    "Oumuamua",
+    "UAP scientific investigation",
+    "Fermi paradox",
+    "interstellar objects",
+    "government UFO programs",
+    "extraterrestrial life",
+    "academic UFO research"
+  ]
+}

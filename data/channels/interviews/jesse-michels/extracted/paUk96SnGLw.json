@@ -1,0 +1,60 @@
+{
+  "video_id": "paUk96SnGLw",
+  "title": "The precise alignment of the Great Pyramids with Orion’s Belt!",
+  "published_at": "2024-07-25T22:01:21Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=paUk96SnGLw",
+  "thumbnail_url": "https://i.ytimg.com/vi/paUk96SnGLw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:26:05.851Z",
+  "summary": "This interview segment discusses the alignment of the three Great Pyramids of Giza with the three stars of Orion's Belt, and the significance of the constellation Orion (representing the god Osiris) to ancient Egyptians. It also touches on the remarkable precision of pyramid construction.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Orion"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [],
+  "events": [
+    {
+      "year": 1700,
+      "description": "Humanity developed enough precision to define how accurately the pyramids are aligned",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The three Great Pyramids on the Giza Plateau have a stunningly similar pattern to the three stars of the belt of Orion",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The constellation Orion represented the god Osiris to the ancient Egyptians",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "The pyramids were the tallest man-made structures for the longest time and among the most precisely constructed structures ever built",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Humanity did not develop enough precision to measure the accuracy of pyramid alignment until the 1700s",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "Great Pyramids of Giza",
+    "Orion's Belt",
+    "ancient Egypt",
+    "Osiris",
+    "archaeoastronomy",
+    "ancient construction precision"
+  ]
+}

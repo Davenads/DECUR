@@ -1,0 +1,210 @@
+{
+  "video_id": "dnnpyNuPdXs",
+  "title": "\"I Carried A UFO With My Helicopter!\" - UFO Whistleblower Jake Barber",
+  "published_at": "2025-01-30T23:03:44Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=dnnpyNuPdXs",
+  "thumbnail_url": "https://i.ytimg.com/vi/dnnpyNuPdXs/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:03:28.446Z",
+  "summary": "Jake Barber, a former Air Force special operations contractor and helicopter pilot, describes his firsthand involvement in retrieving non-human craft, including a 20-foot egg-shaped object. He details his military background, recruitment into classified programs, and subsequent work forming a private organization called Skywatcher Technologies that claims to be able to summon UAP on demand.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Jake Barber"
+  },
+  "acronyms": [
+    {
+      "term": "GTE",
+      "expansion": "Guaranteed Training Education",
+      "definition": "A 10-year Air Force contract program that fast-tracked recruits through special operations training",
+      "confidence": "high"
+    },
+    {
+      "term": "OH",
+      "expansion": "Operating Location Hotel",
+      "definition": "Selection site for Air Force Special Warfare Combat Control and Pararescue",
+      "confidence": "high"
+    },
+    {
+      "term": "HVT",
+      "expansion": "High Value Target",
+      "definition": "Targets that require security and escort during transport",
+      "confidence": "high"
+    },
+    {
+      "term": "NVG",
+      "expansion": "Night Vision Goggle",
+      "definition": "Enhanced electronic system that takes into account IR light for night operations",
+      "confidence": "high"
+    },
+    {
+      "term": "BIA",
+      "expansion": "Bureau of Indian Affairs",
+      "definition": "Government agency used as cover for contractor work",
+      "confidence": "high"
+    },
+    {
+      "term": "SOB",
+      "expansion": "Souls On Board",
+      "definition": "Term for life forms aboard a craft during transport operations",
+      "confidence": "high"
+    },
+    {
+      "term": "AARO",
+      "expansion": "All-domain Anomaly Resolution Office",
+      "definition": "Government office investigating UAP phenomena",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "GTE (Guaranteed Training Education)",
+    "Combat Control",
+    "UAP Task Force",
+    "AARO",
+    "OSAP",
+    "Skywatcher Technologies"
+  ],
+  "people_mentioned": [
+    "Jake Barber",
+    "Jesse Michels",
+    "Gary Nolan",
+    "Jacques Vallee",
+    "Luis Elizondo",
+    "John Burroughs",
+    "Jim Penniston",
+    "Charles Halt",
+    "Robert Hastings",
+    "Carl Nell",
+    "Thomas Townsend Brown",
+    "Lord Norton"
+  ],
+  "organizations_mentioned": [
+    "Air Force",
+    "CIA",
+    "Department of Defense",
+    "Bureau of Indian Affairs",
+    "Department of Interior",
+    "State Department",
+    "Navy Seals",
+    "Scouts and Raiders",
+    "Stanford University",
+    "Northrop Grumman",
+    "Wackenhut",
+    "Ministry of Defense",
+    "NATO",
+    "VA (Veterans Administration)",
+    "News Nation",
+    "Skywatcher Technologies",
+    "Gracie Jiujitsu NorCal"
+  ],
+  "events": [
+    {
+      "year": 1947,
+      "description": "National Security Act passed, formation of the Air Force and CIA, two weeks after Roswell incident",
+      "confidence": "high"
+    },
+    {
+      "year": 1980,
+      "description": "Rendlesham Forest incident at RAF Bentwaters in Suffolk, UK",
+      "confidence": "high"
+    },
+    {
+      "year": 1994,
+      "description": "Jake Barber signed contract for combat control and shipped to basic training in Texas",
+      "confidence": "high"
+    },
+    {
+      "year": 2001,
+      "description": "After 9/11, Barber returned to California to work as a contractor for the intelligence community",
+      "confidence": "high"
+    },
+    {
+      "year": 2013,
+      "description": "Citizens Hearings held - mock congressional hearing with testimony on UAP",
+      "confidence": "high"
+    },
+    {
+      "year": 2016,
+      "description": "Gary Nolan was approached by CIA regarding biological effects on UAP/NHI experiencers",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Retrieved a 20-foot egg-shaped non-human craft via helicopter external load",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The egg was pearly white, smooth, seamless with no symbology, weighed less than 5,000 pounds",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Experienced radiation poisoning symptoms (hair loss, skin peeling, nausea, heart murmur) after escorting a mystery box",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Gary Nolan confirmed symptoms were similar to John Burroughs from Rendlesham Forest incident",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Can summon the egg on demand and demonstrated this in August in broad daylight",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The egg was tracked moving at approximately 10,000 mph",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "There are more than eight classes/categories of UAP",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Ranking members of the UAP task force confirmed the egg was non-human intelligence",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "People have died who were coming out and speaking about these activities",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Scored higher on IQ test (152 vs 138) when under oxygen deprivation stress",
+      "attributed_to": "Jake Barber",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Gary Nolan has seen crash retrieval parts from Jacques Vallee",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO crash retrieval",
+    "special operations",
+    "radiation exposure",
+    "UAP summoning",
+    "military contractor work",
+    "whistleblower testimony",
+    "Rendlesham Forest",
+    "AARO"
+  ]
+}

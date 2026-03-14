@@ -1,0 +1,201 @@
+{
+  "video_id": "h0hAit-KH9A",
+  "title": "The Wall Street Journal Is Lying About UFOs",
+  "published_at": "2025-06-13T17:00:52Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=h0hAit-KH9A",
+  "thumbnail_url": "https://i.ytimg.com/vi/h0hAit-KH9A/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:51:43.674Z",
+  "summary": "Jesse Michels critiques a Wall Street Journal article that claims UFO sightings at nuclear bases can be explained by secret EMP experiments and Air Force hazing rituals. He presents counter-evidence from witnesses like Robert Salas and researcher Robert Hastings, while alleging the article's sources have psychological operations backgrounds and that the WSJ refused to publish a UFO-related op-ed co-authored by a former cabinet member.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "EMP",
+      "expansion": "Electromagnetic Pulse",
+      "definition": "A burst of electromagnetic energy that can disrupt or damage electronic equipment",
+      "confidence": "high"
+    },
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Anomalous Phenomena",
+      "definition": "Modern term for UFOs used by government agencies",
+      "confidence": "high"
+    },
+    {
+      "term": "CIC",
+      "expansion": "Army Counterintelligence Corps",
+      "definition": "Army intelligence organization",
+      "confidence": "medium"
+    },
+    {
+      "term": "AARO",
+      "expansion": "All-Domain Anomaly Resolution Office",
+      "definition": "Pentagon office responsible for investigating UAP reports",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "UAP Task Force",
+    "All-Domain Anomaly Resolution Office",
+    "NASA UAP Working Group",
+    "UAP Disclosure Act"
+  ],
+  "people_mentioned": [
+    "Joel Shechman",
+    "Susan Goff",
+    "Robert Salas",
+    "Bob Jameson",
+    "Robert Hastings",
+    "John Mills",
+    "Sean Kirkpatrick",
+    "General Nathan Twining",
+    "Bob Jacobs",
+    "Major Mansman",
+    "Mario Woods",
+    "David Grusch",
+    "Karl Nell",
+    "Kirk McConnell",
+    "Lena Bell",
+    "David Spergel",
+    "Don Menzel",
+    "Dorit Hoffleit",
+    "Jim Simons",
+    "Eric Weinstein",
+    "Michael Shellenberger",
+    "Marik von Rennenkampff",
+    "Larry King"
+  ],
+  "organizations_mentioned": [
+    "Wall Street Journal",
+    "Pentagon",
+    "Booz Allen Hamilton",
+    "Department of Defense",
+    "US Air Force",
+    "Boeing",
+    "Strategic Air Command",
+    "FBI",
+    "Office of Naval Intelligence",
+    "CIA",
+    "NSA",
+    "Navy",
+    "News Corp",
+    "Simons Foundation",
+    "NASA",
+    "National Geospatial Agency",
+    "Senate Intelligence Committee",
+    "Forest Service",
+    "Harvard"
+  ],
+  "events": [
+    {
+      "year": 1947,
+      "description": "General Nathan Twining stated that UFOs are not visionary or fictitious",
+      "confidence": "high"
+    },
+    {
+      "year": 1949,
+      "description": "Air Force documents discuss an emergency meeting around UFOs and nukes at Kirtland base with Army CIC, FBI, ONI, and CIA present",
+      "confidence": "medium"
+    },
+    {
+      "year": 1953,
+      "description": "Don Menzel stopped astronomers at Harvard from carrying out their sky survey",
+      "confidence": "medium"
+    },
+    {
+      "year": 1964,
+      "description": "Bob Jacobs UFO sighting at Vandenberg Air Force Base",
+      "confidence": "high"
+    },
+    {
+      "year": 1967,
+      "description": "Robert Salas witnessed UFO incident at Malmstrom Air Force Base where all 10 missiles went offline",
+      "confidence": "high"
+    },
+    {
+      "year": 1993,
+      "description": "Missile technician John Mills saw UFOs near Malmstrom Air Force Base",
+      "confidence": "high"
+    },
+    {
+      "year": 1995,
+      "description": "Commercial pilot in Bariloche, Argentina couldn't land plane due to outage and UFO chasing his plane",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The Wall Street Journal article is part of a Pentagon disinformation campaign about UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Susan Goff, a primary source for the WSJ article, has a lead role in Booz Allen Hamilton's psychological operations consulting practice for the DoD",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "All 10 missiles at Malmstrom Air Force Base went offline during a UFO sighting on March 24, 1967",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "EMPs were not operational technology until the 1970s, making the 1967 EMP explanation impossible",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "167 Q-cleared nuclear base employees have witnessed UFOs according to Robert Hastings' research",
+      "attributed_to": "Robert Hastings",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Boeing was contracted to investigate the Malmstrom incident and was also puzzled by what happened",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "A UFO-related op-ed co-authored by Karl Nell and a former presidential cabinet member was rejected by the Wall Street Journal",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Sean Kirkpatrick lobbied against the UAP Disclosure Act",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Don Menzel held extremely high clearances at the NSA, CIA, and Navy while publicly debunking UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "David Spergel serves as the Wall Street Journal's de facto adviser on UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO debunking",
+    "media criticism",
+    "nuclear weapons and UFOs",
+    "government disinformation",
+    "Malmstrom Air Force Base incident",
+    "UAP Disclosure Act",
+    "psychological operations"
+  ]
+}

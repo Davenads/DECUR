@@ -1,0 +1,76 @@
+{
+  "video_id": "9V2ULLo_0JM",
+  "title": "THIS Is What Happens If You Visit Skinwalker Ranch",
+  "published_at": "2023-03-01T20:45:00Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=9V2ULLo_0JM",
+  "thumbnail_url": "https://i.ytimg.com/vi/9V2ULLo_0JM/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:42:13.205Z",
+  "summary": "This brief introduction covers Skinwalker Ranch, a paranormal hotspot in Utah's Uinta Basin owned by Brandon Fugal. The segment describes the scientific team Fugal has assembled to study electromagnetic anomalies, UFO sightings, cattle mutilations, and biological effects experienced by visitors and team members.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "Aerial phenomena that cannot be identified, observed in the airspace of Skinwalker Ranch",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Brandon Fugal"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Skinwalker Ranch is located in the Uinta Basin in western Utah",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Brandon Fugal is the current owner of Skinwalker Ranch and is a real estate mogul and patron for frontier science",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Fugal's team has encountered electromagnetic anomalies with phones, electronics, and tri-field meters",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Visitors and team members have been hospitalized due to biological effects experienced at the ranch",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The team has photos and live footage of UFOs in the airspace of the property",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The team plans to open source the data and share it with the public, unlike government predecessors",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Skinwalker Ranch",
+    "paranormal phenomena",
+    "UFO sightings",
+    "electromagnetic anomalies",
+    "cattle mutilations",
+    "biological effects",
+    "frontier science"
+  ]
+}

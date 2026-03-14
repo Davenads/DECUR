@@ -1,0 +1,211 @@
+{
+  "video_id": "y_8IKKcTntQ",
+  "title": "Meet The Startup Summoning UFOs: Skywatcher Interview",
+  "published_at": "2025-05-22T23:01:05Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=y_8IKKcTntQ",
+  "thumbnail_url": "https://i.ytimg.com/vi/y_8IKKcTntQ/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:53:21.750Z",
+  "summary": "James Valor, founder of Skywatcher, discusses how his private technology company accidentally discovered UAPs during government war game exercises in 2021 and has since developed sophisticated detection systems. The interview covers their taxonomy of nine UAP classes, their experiences with various craft behaviors including being hit by energy weapons, and their interactions with government agencies who appear genuinely uncertain about the phenomena.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "James Valor"
+  },
+  "acronyms": [
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Broader term than UFO encompassing unidentified objects in the sky",
+      "confidence": "high"
+    },
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "Traditional term for unidentified objects in the sky",
+      "confidence": "high"
+    },
+    {
+      "term": "NHI",
+      "expansion": "Non-Human Intelligence",
+      "definition": "Term used to describe potential non-human origin of UAPs",
+      "confidence": "high"
+    },
+    {
+      "term": "RF",
+      "expansion": "Radio Frequency",
+      "definition": "Electromagnetic signals in the radio frequency spectrum used for detection",
+      "confidence": "high"
+    },
+    {
+      "term": "NDA",
+      "expansion": "Non-Disclosure Agreement",
+      "definition": "Legal agreement to keep information confidential",
+      "confidence": "high"
+    },
+    {
+      "term": "IC",
+      "expansion": "Intelligence Community",
+      "definition": "Collective term for US intelligence agencies",
+      "confidence": "medium"
+    },
+    {
+      "term": "ICBM",
+      "expansion": "Intercontinental Ballistic Missile",
+      "definition": "Long-range nuclear missile",
+      "confidence": "high"
+    },
+    {
+      "term": "ATIP",
+      "expansion": "Advanced Aerospace Threat Identification Program",
+      "definition": "Pentagon program for investigating UAPs",
+      "confidence": "medium"
+    },
+    {
+      "term": "VTC",
+      "expansion": "Video Teleconference",
+      "definition": "Video conference call",
+      "confidence": "high"
+    },
+    {
+      "term": "SCIF",
+      "expansion": "Sensitive Compartmented Information Facility",
+      "definition": "Secure room for discussing classified information",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "ATIP",
+    "AAWSAP"
+  ],
+  "people_mentioned": [
+    "James Valor",
+    "Jake Barber",
+    "Ross Coulthart",
+    "Gary Nolan",
+    "David Grusch",
+    "Lou Elizondo",
+    "Steven Greer",
+    "David Fravor",
+    "Alex Cloa"
+  ],
+  "organizations_mentioned": [
+    "Skywatcher",
+    "USS Hornet",
+    "USS Princeton",
+    "Lockheed",
+    "Boeing",
+    "Northrop"
+  ],
+  "events": [
+    {
+      "year": 2020,
+      "description": "James Valor retired from military after 23 years as a sergeant major",
+      "confidence": "high"
+    },
+    {
+      "year": 2021,
+      "description": "Skywatcher team first observed Class 1 UAPs during a government war game exercise",
+      "confidence": "high"
+    },
+    {
+      "year": 2022,
+      "description": "First observation of Class 2 (tic tac) UAPs",
+      "confidence": "high"
+    },
+    {
+      "year": 2023,
+      "description": "Chinese spy balloon flew over Alaska and Montana ICBM detection sites",
+      "confidence": "high"
+    },
+    {
+      "year": 2004,
+      "description": "Nimitz UFO encounter with David Fravor and USS Princeton",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "UAPs literally come to Skywatcher day after day after they turn on their 'dog whistle' technology",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Skywatcher has identified nine different classes of UAPs with distinct characteristics",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Class 1 UAPs (tetras) flew 2-3 thousand feet overhead but were invisible to human senses while detectable by cameras",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "UAPs appear to probe and test Skywatcher's detection capabilities by flying through the effective range of their telemetry systems",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "A UAP hit Skywatcher's equipment with a microwave weapon, shutting down their systems",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Class 2 tic tac UAPs are approximately 40 feet in length and appear to have spike-like protrusions",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Class 2 tic tacs appear to bend when coming out of high-G maneuvers, suggesting flexible or semi-rigid construction",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Government officials in classified settings have told Skywatcher they have no knowledge of what they're observing and suggested it may be off-planet",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The government has advanced secret physics and knowledge probably since at least the end of World War II",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "Skywatcher has five years of UAP data including terabytes of radar, imagery, video, photos, and signals intelligence",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Jake Barber was one of the first people to retrieve a craft of non-human origin, an egg-shaped craft",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Skywatcher has been contracted by the government to collect UAP data under contracts ostensibly for war games",
+      "attributed_to": "James Valor",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UAP detection technology",
+    "UAP classification taxonomy",
+    "private UAP research",
+    "government UAP knowledge",
+    "war games",
+    "electromagnetic interference",
+    "radar detection",
+    "consciousness"
+  ]
+}

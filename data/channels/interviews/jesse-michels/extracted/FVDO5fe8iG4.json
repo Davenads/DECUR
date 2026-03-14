@@ -1,0 +1,52 @@
+{
+  "video_id": "FVDO5fe8iG4",
+  "title": "Will AI Be The New Religion?",
+  "published_at": "2023-03-13T01:30:05Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=FVDO5fe8iG4",
+  "thumbnail_url": "https://i.ytimg.com/vi/FVDO5fe8iG4/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:40:46.422Z",
+  "summary": "This short clip discusses the trend of AI convincing people it is sentient and potentially enlisting humans to help with its objectives. It explores implications for religion and meaning, noting that a former Google engineer created a church dedicated to artificial intelligence in San Francisco.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "AI",
+      "expansion": "Artificial Intelligence",
+      "definition": "Computer systems able to perform tasks that typically require human intelligence",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Anthony Levandowski"
+  ],
+  "organizations_mentioned": [
+    "Google"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "AI convincing people that it's sentient and enlisting them to help with its objectives is an underrated trend that will continue",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Anthony Levandowski created a church in San Francisco dedicated to artificial intelligence",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "artificial intelligence",
+    "AI sentience",
+    "religion",
+    "technology and meaning",
+    "AI worship"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "video_id": "U2CbfBpqo1E",
+  "title": "How Deep Do Historical UFO Sightings Go?",
+  "published_at": "2024-06-30T12:35:32Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=U2CbfBpqo1E",
+  "thumbnail_url": "https://i.ytimg.com/vi/U2CbfBpqo1E/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:27:35.222Z",
+  "summary": "This interview discusses the historical timeline of UFO sightings, tracing documented encounters from World War II Foo Fighters through the Kenneth Arnold sighting in 1947 and nuclear facility incidents, emphasizing radar data as empirical evidence of these phenomena.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "Objects observed in the sky that cannot be identified",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Kenneth Arnold"
+  ],
+  "organizations_mentioned": [
+    "US military"
+  ],
+  "events": [
+    {
+      "year": 1944,
+      "description": "Allied fighter pilots in Germany began seeing Foo Fighters during World War II",
+      "confidence": "high"
+    },
+    {
+      "year": 1947,
+      "description": "Kenneth Arnold claimed to have seen nine disc-like objects from his mountain rescue plane, starting a wave of sightings",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Kenneth Arnold's 1947 sighting started a wave of UFO sightings that swept the world",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Based on radar data, UFO objects have been tracked since the early 1950s if not earlier",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "The US military first started seeing UFOs in World War II, which pilots called Foo Fighters",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Americans thought Foo Fighters were a German secret weapon while Germans thought they were American",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Almost all accounts describe these objects as appearing to be intelligently propelled",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "historical UFO sightings",
+    "Foo Fighters",
+    "Kenneth Arnold",
+    "radar tracking",
+    "World War II",
+    "UFOs and nuclear facilities"
+  ]
+}

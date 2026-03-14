@@ -1,0 +1,47 @@
+{
+  "video_id": "v2j7uKYneYk",
+  "title": "Is NATURE The Most Advanced Quantum Computer?",
+  "published_at": "2023-02-21T17:45:04Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=v2j7uKYneYk",
+  "thumbnail_url": "https://i.ytimg.com/vi/v2j7uKYneYk/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:43:23.676Z",
+  "summary": "This brief interview segment discusses how nature performs quantum computations that are impossible for current technology to replicate, touching on the multiverse interpretation as a possible explanation for quantum state storage. The conversation explores the mystery of how quantum computing works even though we can engineer quantum systems.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Nature performs quantum state bookkeeping that is computationally impossible for current technology to replicate",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Quantum computing simulates nature more accurately than classical computing",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "We can engineer quantum computers but do not fully understand why they work",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "quantum computing",
+    "multiverse interpretation",
+    "nature simulation",
+    "quantum mechanics",
+    "computational limits"
+  ]
+}

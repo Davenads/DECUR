@@ -1,0 +1,160 @@
+{
+  "video_id": "5Ne8ZbYxjKs",
+  "title": "Why American Sperm Count Dropped 41% in 50 years",
+  "published_at": "2021-12-01T20:00:00Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=5Ne8ZbYxjKs",
+  "thumbnail_url": "https://i.ytimg.com/vi/5Ne8ZbYxjKs/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:55:27.513Z",
+  "summary": "Dr. Shanna Swan, a reproductive epidemiologist at Mount Sinai, discusses her research linking toxic chemicals like phthalates and pesticides to dramatic declines in male sperm count (down 41% since the 1970s) and testosterone levels. The interview covers how these endocrine-disrupting chemicals affect fetal development, fertility rates, and long-term health outcomes, while exploring potential solutions and the regulatory failures allowing these exposures.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Shanna Swan"
+  },
+  "acronyms": [
+    {
+      "term": "AGD",
+      "expansion": "Anogenital Distance",
+      "definition": "The distance between the anus and genitals, used as a proxy indicator for testosterone exposure during fetal development and predictor of sperm count",
+      "confidence": "high"
+    },
+    {
+      "term": "CDC",
+      "expansion": "Centers for Disease Control and Prevention",
+      "definition": "U.S. federal health agency that can measure chemical exposure in people's bodies",
+      "confidence": "high"
+    },
+    {
+      "term": "NIH",
+      "expansion": "National Institutes of Health",
+      "definition": "U.S. federal health research agency that issued requirements for including women in studies",
+      "confidence": "high"
+    },
+    {
+      "term": "ICSI",
+      "expansion": "Intracytoplasmic Sperm Injection",
+      "definition": "A procedure where a single sperm is injected directly into an egg for fertilization",
+      "confidence": "high"
+    },
+    {
+      "term": "EU",
+      "expansion": "European Union",
+      "definition": "Political and economic union of European countries with stricter chemical regulations than the US",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "National Toxicology Program"
+  ],
+  "people_mentioned": [
+    "Shanna Swan",
+    "Stephen Pinker",
+    "Bill Gates",
+    "John Brock",
+    "Evelyn Telfer",
+    "Jurgen Randers",
+    "Joe Rogan",
+    "Mark Zuckerberg"
+  ],
+  "organizations_mentioned": [
+    "Mount Sinai",
+    "CDC",
+    "NIH",
+    "DuPont"
+  ],
+  "events": [
+    {
+      "year": 1992,
+      "description": "Study published from Denmark showing sperm count had declined precipitously",
+      "confidence": "high"
+    },
+    {
+      "year": 2002,
+      "description": "Dr. Swan began definitively linking phthalates and pesticides to declining male sperm count and testosterone",
+      "confidence": "high"
+    },
+    {
+      "year": 2011,
+      "description": "Study showed average sperm count dropped to 47 million per milliliter",
+      "confidence": "high"
+    },
+    {
+      "year": 1960,
+      "description": "Peak baby boom in the US with fertility rate at 3.58",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Male sperm count has dropped to 59% of what it was in the 1970s",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Testosterone has been dropping 1% per year since the 1970s",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Men in central Missouri had half as many moving sperm as men in Minneapolis",
+      "attributed_to": "Shanna Swan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Below 40 million sperm per milliliter, men start having trouble conceiving",
+      "attributed_to": "Shanna Swan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "In the EU, 1100 chemicals are banned from personal care products versus only 11 in the US",
+      "attributed_to": "Shanna Swan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Phthalates in pregnant women during early first trimester can lower fetal testosterone and affect development",
+      "attributed_to": "Shanna Swan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "World population will increase until about 2040 and then decrease and never come back",
+      "attributed_to": "Shanna Swan",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "South Korea's fertility rate is at 0.9",
+      "attributed_to": "Shanna Swan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "US fertility rate is now 1.78, below replacement rate",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Until about five years ago, there was no requirement that women be included in medical studies",
+      "attributed_to": "Shanna Swan",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "endocrine disruption",
+    "fertility decline",
+    "phthalates",
+    "reproductive health",
+    "environmental toxins",
+    "sperm count",
+    "testosterone decline",
+    "chemical regulation"
+  ]
+}

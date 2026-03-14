@@ -1,0 +1,58 @@
+{
+  "video_id": "pK_BP7noj0A",
+  "title": "Eric Weinstein REVEALS His \"Theory of Everything\"",
+  "published_at": "2023-02-06T19:15:14Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=pK_BP7noj0A",
+  "thumbnail_url": "https://i.ytimg.com/vi/pK_BP7noj0A/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:45:36.036Z",
+  "summary": "Eric Weinstein discusses his 'Theory of Everything' physics framework called Geometric Unity (GU), explaining why he publicly presented it on Joe Rogan's podcast to create an indelible record. He suggests the theory may offer new parameters beyond Einstein's spacetime that could potentially address faster-than-light travel limitations.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Eric Weinstein"
+  },
+  "acronyms": [
+    {
+      "term": "GU",
+      "expansion": "Geometric Unity",
+      "definition": "Eric Weinstein's proposed unified physics theory that introduces extra parameters beyond Einstein's spacetime framework",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Eric Weinstein",
+    "Joe Rogan"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Geometric Unity introduces extra parameters that have never been accessible before, potentially allowing evasion of faster-than-light limitations since FTL is a spacetime/Einsteinian concept",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Presenting the theory on Joe Rogan created an indelible record that cannot be taken away",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Very few people on Earth, perhaps five or possibly none, can fully understand or evaluate his theory",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Geometric Unity",
+    "unified physics theory",
+    "faster than light travel",
+    "theoretical physics",
+    "scientific establishment",
+    "Joe Rogan podcast"
+  ]
+}

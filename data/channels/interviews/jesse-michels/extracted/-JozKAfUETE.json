@@ -1,0 +1,56 @@
+{
+  "video_id": "-JozKAfUETE",
+  "title": "Stanford Professor Claims to Own UFO Crash Parts",
+  "published_at": "2024-01-03T20:00:00Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=-JozKAfUETE",
+  "thumbnail_url": "https://i.ytimg.com/vi/-JozKAfUETE/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:31:27.281Z",
+  "summary": "Jesse Michels interviews a Nobel-nominated Stanford Professor who claims to possess parts from possible UFO crashes. The professor discusses mass spectrometry analysis conducted on these materials, revealing anomalous magnesium isotope ratios that he claims would never occur naturally.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "nanosims",
+      "expansion": "Secondary Ion Mass Spectrometry",
+      "definition": "A highly sensitive instrument that determines not just elements by their mass but also isotopes by their mass",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [
+    "Stanford"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "The guest possesses parts of possible UFO crashes",
+      "attributed_to": "unknown",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Mass spectrometry analysis was conducted on UFO crash parts using a nanosims instrument",
+      "attributed_to": "unknown",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "One of the analyzed pieces showed anomalous magnesium isotope ratios that would never be found in nature",
+      "attributed_to": "unknown",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UFO crash materials",
+    "isotope analysis",
+    "mass spectrometry",
+    "material science",
+    "anomalous materials"
+  ]
+}

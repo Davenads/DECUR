@@ -1,0 +1,164 @@
+{
+  "video_id": "ZTIO-xAP0Dw",
+  "title": "Eric Weinstein Reveals UFO Physics! (Exclusive Interview)",
+  "published_at": "2021-10-04T19:31:27Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=ZTIO-xAP0Dw",
+  "thumbnail_url": "https://i.ytimg.com/vi/ZTIO-xAP0Dw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:56:57.104Z",
+  "summary": "Jesse Michels interviews Eric Weinstein, covering topics ranging from Eric's theory of everything in physics (Geometric Unity/GU), institutional decay in America, generational wealth inequality, the relationship between the US and China, and surprisingly, UFOs - a topic Eric admits he was previously dismissive of but has changed his mind about after Pentagon reports.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Eric Weinstein"
+  },
+  "acronyms": [
+    {
+      "term": "GU",
+      "expansion": "Geometric Unity",
+      "definition": "Eric Weinstein's proposed theory of everything in physics that attempts to recover Einstein's relativity within a broader framework with additional parameters",
+      "confidence": "high"
+    },
+    {
+      "term": "NIH",
+      "expansion": "National Institutes of Health",
+      "definition": "US government agency that funds medical research including gain of function research",
+      "confidence": "high"
+    },
+    {
+      "term": "NSA",
+      "expansion": "National Security Agency",
+      "definition": "US intelligence agency involved in surveillance programs",
+      "confidence": "high"
+    },
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "US intelligence agency mentioned in context of Lookout Mountain facility in Laurel Canyon",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Prism",
+    "Bullrun",
+    "Heartbeat",
+    "Lookout Mountain"
+  ],
+  "people_mentioned": [
+    "Eric Weinstein",
+    "Jesse Michels",
+    "Joe Rogan",
+    "Jordan Peterson",
+    "Sam Harris",
+    "Brett Weinstein",
+    "Stephen Hawking",
+    "Christopher Hitchens",
+    "Anthony Fauci",
+    "Joe Biden",
+    "Elon Musk",
+    "George Burns",
+    "Charles Lindbergh",
+    "David Goggins",
+    "Jocko Willink",
+    "Albert Einstein",
+    "David Hilbert",
+    "Marcel Grossmann",
+    "Linus Pauling",
+    "James Watson",
+    "Francis Crick",
+    "Jim Morrison",
+    "Steven Morrison",
+    "Carole King",
+    "Bret Easton Ellis",
+    "Edward Snowden",
+    "Tom Cruise"
+  ],
+  "organizations_mentioned": [
+    "Pentagon",
+    "Wuhan Institute of Virology",
+    "RAND Corporation",
+    "BGI",
+    "UK Biobank",
+    "Church of Scientology",
+    "Cedars of Lebanon",
+    "BuzzFeed",
+    "Fox News"
+  ],
+  "events": [
+    {
+      "year": 2017,
+      "description": "Fauci restarts gain of function funding at NIH during Trump administration chaos",
+      "confidence": "medium"
+    },
+    {
+      "year": 1972,
+      "description": "Joe Biden begins as a 29-year-old senator",
+      "confidence": "high"
+    },
+    {
+      "year": 1971,
+      "description": "Earthquake in Los Angeles area",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "A nine-page report from the Pentagon indicates either an incredible psychological operation or that some Pentagon officials believe with near certainty that Earth has been contacted and observed by extraterrestrials",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Millennials own 4.8% of the wealth in the country",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Close to 40% of millennial wealth is held by one person (implied to be Mark Zuckerberg)",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The government farms out tyranny to private corporations because the government is under requirements not to engage in censorship directly",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The US as a coherent country no longer exists in the way it did during World War II",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Geometric Unity (GU) could potentially provide parameters to evade faster-than-light problems because FTL is about spacetime which is an Einsteinian concept, and GU may recover relativity within something broader",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Lookout Mountain is a CIA facility in Laurel Canyon",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jim Morrison's father, Rear Admiral Steven Morrison, was in the Navy and in charge of the Gulf of Tonkin",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFOs/UAP",
+    "physics theory of everything",
+    "institutional decay",
+    "generational wealth inequality",
+    "gain of function research",
+    "artificial intelligence",
+    "government surveillance",
+    "media and journalism"
+  ]
+}

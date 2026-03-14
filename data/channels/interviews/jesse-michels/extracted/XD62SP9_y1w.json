@@ -1,0 +1,60 @@
+{
+  "video_id": "XD62SP9_y1w",
+  "title": "Hal Puthoff and Eric Weinstein on UAPs and Manipulation Einstein's Theories",
+  "published_at": "2024-10-09T03:22:11Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=XD62SP9_y1w",
+  "thumbnail_url": "https://i.ytimg.com/vi/XD62SP9_y1w/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:18:51.610Z",
+  "summary": "A brief discussion between Hal Puthoff and Eric Weinstein about the theoretical physics behind UAP phenomena, focusing on the possibility of manipulating variables in Einstein's equations similar to Maxwell's equations, and the quantum mechanical consequences of promoting constants to field content.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Hal Puthoff and Eric Weinstein"
+  },
+  "acronyms": [
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Unidentified objects or phenomena observed in the sky",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Hal Puthoff",
+    "Eric Weinstein",
+    "Albert Einstein",
+    "James Clerk Maxwell"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "If variables in Einstein's equations could be manipulated like variables in Maxwell's equations, certain observable phenomena would emerge that match claimed UAP observations",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "There is a missing key for manipulating variables in Einstein's equations without requiring something like a black hole",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Promoting constants to field content has quantum mechanical consequences including fluctuations, uncertainty principles, and potentially divergent mathematical terms",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "theoretical physics",
+    "Einstein's equations",
+    "UAP propulsion theories",
+    "quantum mechanics",
+    "field theory",
+    "Maxwell's equations"
+  ]
+}

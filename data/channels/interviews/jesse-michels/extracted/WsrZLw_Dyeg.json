@@ -1,0 +1,93 @@
+{
+  "video_id": "WsrZLw_Dyeg",
+  "title": "JFK's Memo to the CIA.. Just Ten Days Before Assassination",
+  "published_at": "2024-09-14T22:45:11Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=WsrZLw_Dyeg",
+  "thumbnail_url": "https://i.ytimg.com/vi/WsrZLw_Dyeg/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:22:44.070Z",
+  "summary": "This interview segment discusses a controversial 1963 memo allegedly written by President John F. Kennedy to the CIA, requesting UFO intelligence files just 10 days before his assassination. The discussion centers on claims that Kennedy was concerned about Soviet misinterpretation of UFO sightings as American aggression.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "U.S. intelligence agency responsible for gathering and analyzing national security information",
+      "confidence": "high"
+    },
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "Aerial phenomena that cannot be immediately identified",
+      "confidence": "high"
+    },
+    {
+      "term": "USSR",
+      "expansion": "Union of Soviet Socialist Republics",
+      "definition": "Former communist state, also known as the Soviet Union",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "John F. Kennedy"
+  ],
+  "organizations_mentioned": [
+    "CIA"
+  ],
+  "events": [
+    {
+      "year": 1963,
+      "description": "Alleged top secret memo written by JFK on November 12th ordering CIA to organize UFO intelligence files",
+      "confidence": "medium"
+    },
+    {
+      "year": 1963,
+      "description": "JFK assassinated 10 days after the alleged UFO memo",
+      "confidence": "high"
+    },
+    {
+      "year": 2005,
+      "description": "The alleged JFK UFO memo was discovered/surfaced",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "A top secret memo allegedly written by JFK on November 12, 1963 ordered the CIA director to organize intelligence files relating to UFOs",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "JFK requested to be debriefed on all unknowns by February 1964",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "JFK was assassinated 10 days after allegedly writing the UFO memo",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "JFK was concerned about the USSR misinterpreting UFO sightings in their airspace as American aggression",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "JFK assassination",
+    "CIA UFO files",
+    "Cold War",
+    "government secrecy",
+    "declassified documents",
+    "Soviet Union"
+  ]
+}

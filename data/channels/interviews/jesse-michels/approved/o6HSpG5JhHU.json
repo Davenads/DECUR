@@ -1,0 +1,77 @@
+{
+  "video_id": "o6HSpG5JhHU",
+  "title": "Could THESE Meteors Still Hit Earth?",
+  "published_at": "2023-02-09T20:27:16Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=o6HSpG5JhHU",
+  "thumbnail_url": "https://i.ytimg.com/vi/o6HSpG5JhHU/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:45:04.490Z",
+  "summary": "This short clip discusses the Taurid meteor stream and its potential danger to Earth. It explains how the stream was formed from a massive comet approximately 20,000 years ago and suggests these meteors could cause significant damage through impacts and air bursts.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [],
+  "events": [
+    {
+      "year": -18000,
+      "description": "A massive comet entered our inner Solar System's orbit, eventually forming the Taurid meteor stream",
+      "confidence": "medium"
+    },
+    {
+      "year": -10800,
+      "description": "The Taurid meteor stream posed a danger to humanity",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "A comet from the Taurid meteor stream hitting Earth could create a big flood",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Taurid meteor stream was formed when a massive comet entered our inner Solar System's orbit around 20,000 years ago",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Comet Encke is approximately 1.5 miles wide and is part of the Taurid stream",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "The southern Taurids cross Earth's orbit yearly from September to November",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "The northern Taurid streams cross Earth starting in mid to late October",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "The Taurid stream was a danger to humanity 12,800 years ago and remains a danger today",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "Taurid meteor stream",
+    "Comet Encke",
+    "meteor impacts",
+    "air bursts",
+    "cosmic threats",
+    "astronomy"
+  ]
+}

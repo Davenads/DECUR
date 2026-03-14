@@ -1,0 +1,67 @@
+{
+  "video_id": "jnoRjKSY-V0",
+  "title": "Was Oppenheimer Involved in UFO Secrecy?",
+  "published_at": "2024-08-03T01:18:54Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=jnoRjKSY-V0",
+  "thumbnail_url": "https://i.ytimg.com/vi/jnoRjKSY-V0/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:25:29.928Z",
+  "summary": "This interview segment discusses the theory that J. Robert Oppenheimer may have been involved in UFO secrecy through his role in creating atomic secrecy frameworks. The discussion centers on how the Atomic Energy Act of 1954 could be used as a legal mechanism to classify retrieved UFO crash material.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [],
+  "programs_mentioned": [
+    "Atomic Energy Commission"
+  ],
+  "people_mentioned": [
+    "J. Robert Oppenheimer",
+    "David Grusch"
+  ],
+  "organizations_mentioned": [
+    "Atomic Energy Commission"
+  ],
+  "events": [
+    {
+      "year": 1954,
+      "description": "The Atomic Energy Act was passed, defining special nuclear material in a way that could encompass retrieved crash material emitting radiological energy",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "David Grusch corroborated that Oppenheimer was probably involved in UFO secrecy",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Oppenheimer created atomic secrecy in 1953-1954 with the Atomic Energy Commission",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Atomic Energy Act of 1954 defines special nuclear material as any material that releases any kind of atomic energy, which would include retrieved crash material",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "UFO craft emitting radiation can be kept secret under the same secrecy provisions as nuclear materials",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO secrecy",
+    "Atomic Energy Act",
+    "Oppenheimer",
+    "classification mechanisms",
+    "crash retrieval",
+    "government secrecy"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "video_id": "UU8BGYEKUoI",
+  "title": "Are UFOs Just a Pysop?",
+  "published_at": "2024-01-03T17:00:16Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=UU8BGYEKUoI",
+  "thumbnail_url": "https://i.ytimg.com/vi/UU8BGYEKUoI/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:31:35.866Z",
+  "summary": "This interview discusses the possibility that UFOs are neither purely fabricated government psyops nor entirely authentic extraterrestrial phenomena, but rather a complex combination where government agencies exploit existing underlying phenomena for psychological warfare purposes. The conversation references historical religious experiences and folklore as potential parallels to modern alien encounters.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "U.S. intelligence agency responsible for national security",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Jacques Vallée",
+    "St. Francis of Assisi",
+    "St. Teresa",
+    "Walter B. Smith"
+  ],
+  "organizations_mentioned": [
+    "CIA"
+  ],
+  "events": [
+    {
+      "year": 1953,
+      "description": "Walter B. Smith, director of the CIA, stated the government would play up the UFO phenomena for psychological warfare purposes during the Cold War",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "There has never been a leaked government document stating they would wholesale fabricate UFOs",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Walter B. Smith, CIA director in 1953, stated the government would play up the UFO phenomena for psychological warfare purposes",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "The government uses existing underlying phenomena for its own purposes rather than fabricating them entirely",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Historical religious experiences like those of St. Francis of Assisi and St. Teresa are comparable to modern alien abduction experiences",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "psychological warfare",
+    "UFO phenomena",
+    "government psyops",
+    "Cold War",
+    "Jacques Vallée",
+    "historical parallels",
+    "folklore"
+  ]
+}

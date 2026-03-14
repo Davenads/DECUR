@@ -1,0 +1,56 @@
+{
+  "video_id": "mXAvInYebqg",
+  "title": "Graham Hancock found his grandfather’s name on the pyramid!",
+  "published_at": "2025-01-03T03:27:04Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=mXAvInYebqg",
+  "thumbnail_url": "https://i.ytimg.com/vi/mXAvInYebqg/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:05:48.957Z",
+  "summary": "Graham Hancock shares a personal story about discovering his grandfather's name carved on the Great Pyramid, dated April 5th, 1916, which he later confirmed through his grandfather's diaries.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Graham Hancock"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Graham Hancock",
+    "Philip Hancock"
+  ],
+  "organizations_mentioned": [],
+  "events": [
+    {
+      "year": 1916,
+      "description": "Philip Hancock (Graham Hancock's grandfather) climbed the Great Pyramid on April 5th and carved his name on it",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Graham Hancock has climbed the Great Pyramid five times, two of which were legal",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Graham Hancock found the inscription 'P Hancock 5th of April 1916' carved near the top of the Great Pyramid",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Philip Hancock's diary entry for April 5th, 1916 confirmed he climbed the Great Pyramid that day",
+      "attributed_to": "Graham Hancock",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Great Pyramid",
+    "family history",
+    "Egypt",
+    "World War I",
+    "archaeology"
+  ]
+}

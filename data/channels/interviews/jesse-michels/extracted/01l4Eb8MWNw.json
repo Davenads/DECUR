@@ -1,0 +1,63 @@
+{
+  "video_id": "01l4Eb8MWNw",
+  "title": "Eric Weinstein on UFOs",
+  "published_at": "2024-09-30T02:19:27Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=01l4Eb8MWNw",
+  "thumbnail_url": "https://i.ytimg.com/vi/01l4Eb8MWNw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:20:25.503Z",
+  "summary": "Eric Weinstein discusses his initial dismissal and subsequent reconsideration of UAP/UFO phenomena. He acknowledges his previous strong aversion to the topic while expressing ongoing skepticism about the lack of conclusive video evidence despite widespread sensor coverage.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Eric Weinstein"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "An aerial phenomenon that cannot be immediately identified",
+      "confidence": "high"
+    },
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Modern terminology for unidentified flying objects, used by government agencies",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Eric Weinstein",
+    "Jesse Michels"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "The federal government is tracking UAPs",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Despite widespread sensors and cameras, there is no conclusive proof of UAPs from sources outside the government",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "UAP/UFO topics are now being discussed openly, indicating a shift from previous dismissal",
+      "attributed_to": "Eric Weinstein",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UAP skepticism",
+    "government tracking",
+    "stigma around UFOs",
+    "sensor evidence",
+    "personal belief revision"
+  ]
+}

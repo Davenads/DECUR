@@ -1,0 +1,195 @@
+{
+  "video_id": "V00WcEiKRAY",
+  "title": "\"I Located A UFO Base In Arizona!\" (Ft. Ross Coulthart)",
+  "published_at": "2025-06-21T18:00:35Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=V00WcEiKRAY",
+  "thumbnail_url": "https://i.ytimg.com/vi/V00WcEiKRAY/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:51:17.140Z",
+  "summary": "Ross Coulthart discusses his investigative journey into UFOs, from early skepticism to confirmation through high-level sources including former Navy scientist Nat Kobitz. The interview covers the Bogota sphere phenomenon, Australian UFO history including the 1978 Kaikoura incident, and claims about Lockheed Martin holding alien spacecraft that the CIA prevented from being transferred to Bigelow Aerospace.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Ross Coulthart"
+  },
+  "acronyms": [
+    {
+      "term": "JIO",
+      "expansion": "Joint Intelligence Organization",
+      "definition": "The equivalent of the DIA (Defense Intelligence Agency) in Australia at the time",
+      "confidence": "high"
+    },
+    {
+      "term": "DIA",
+      "expansion": "Defense Intelligence Agency",
+      "definition": "US defense intelligence organization",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Project Blue Book",
+    "Echelon",
+    "Office of Global Access",
+    "Legacy program"
+  ],
+  "people_mentioned": [
+    "Ross Coulthart",
+    "Jesse Michels",
+    "Jaime Maussan",
+    "Ronny Veret",
+    "Mario Woods",
+    "Randy Anderson",
+    "Patrick Jackson",
+    "Brandon Fugal",
+    "Jim Marron",
+    "Willie Nelson",
+    "Robert Muldoon",
+    "Frederick Valentich",
+    "Quentin Fogarty",
+    "Ben Fogarty",
+    "Dennis Grant",
+    "Bruce McCabe",
+    "Nick Cook",
+    "John Cordy",
+    "Nat Kobitz",
+    "David Grusch",
+    "Jake Barber",
+    "David Spergel",
+    "Don Menzel",
+    "Glenn Gaffney",
+    "Harry Turner",
+    "Bill Chalker",
+    "Reese Dalton Moore",
+    "Robert Sarbacher",
+    "Leslie Kean",
+    "Ralph Blumenthal"
+  ],
+  "organizations_mentioned": [
+    "Channel 7 Australia",
+    "60 Minutes",
+    "New Zealand Air Force",
+    "Wright Patterson Air Force Base",
+    "Lockheed Martin",
+    "Bigelow Aerospace",
+    "CIA",
+    "FBI",
+    "Pentagon",
+    "New York Times",
+    "Wall Street Journal",
+    "NASA",
+    "Simons Foundation",
+    "DOE",
+    "New Zealand Herald",
+    "Sol Foundation",
+    "Georgetown University"
+  ],
+  "events": [
+    {
+      "year": 1977,
+      "description": "Mario Woods had an experience at Ellsworth Air Force Base",
+      "confidence": "high"
+    },
+    {
+      "year": 1978,
+      "description": "Kaikoura UFO incident in New Zealand where cargo aircraft pilots witnessed metallic disc-shaped objects confirmed by radar",
+      "confidence": "high"
+    },
+    {
+      "year": 2011,
+      "description": "Release of New Zealand archives revealing Air Force cover-up of Kaikoura incident",
+      "confidence": "medium"
+    },
+    {
+      "year": 2017,
+      "description": "New York Times published Pentagon UFO story",
+      "confidence": "high"
+    },
+    {
+      "year": 2018,
+      "description": "Ross Coulthart began writing his book and was told by sources in Georgetown pub that 'it's all about consciousness'",
+      "confidence": "medium"
+    },
+    {
+      "year": 2021,
+      "description": "Ross Coulthart ran the Jim Marron sphere story on Channel 7 Australia, which was viewed over 43 million times",
+      "confidence": "high"
+    },
+    {
+      "year": 2023,
+      "description": "NASA UAP review panel conducted with David Spergel",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The United States has recovered multiple alien craft including from Roswell, Aztec, and Kingman incidents",
+      "attributed_to": "Nat Kobitz",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Lockheed Martin was going to pass control of an alien spacecraft to Bigelow Aerospace but the CIA intervened to stop it",
+      "attributed_to": "Ross Coulthart",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "A Lockheed Martin senior executive implicitly acknowledged they are holding alien technology and said 'it's the agency' preventing disclosure",
+      "attributed_to": "Ross Coulthart",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Nat Kobitz was shown a piece of bulkhead at Wright Patterson AFB that was bonded at the atomic level, atom by atom layering",
+      "attributed_to": "Nat Kobitz",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The metamaterials story in the New York Times was 'always nonsense' - it was actually about a spacecraft",
+      "attributed_to": "Ross Coulthart",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Former New Zealand Prime Minister Robert Muldoon said 'the Americans wanted that one shut down pretty quickly' regarding the 1978 Kaikoura UFO incident",
+      "attributed_to": "Robert Muldoon",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "People have been murdered in connection with UAP secrecy based on FBI briefing given to Congress",
+      "attributed_to": "Ross Coulthart",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "Americans have been secretly testing hypersonic missile technology at Woomera range in Australia",
+      "attributed_to": "Ross Coulthart",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Bogota sphere contains an aluminum alloy three times the hardness of conventional aerospace materials",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jim Marron's sphere was witnessed moving under its own power on a level floor with no visible propulsion",
+      "attributed_to": "Ross Coulthart",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO crash retrievals",
+    "government cover-up",
+    "metallic spheres phenomenon",
+    "Australian UFO history",
+    "Lockheed Martin",
+    "investigative journalism",
+    "whistleblowers",
+    "consciousness"
+  ]
+}

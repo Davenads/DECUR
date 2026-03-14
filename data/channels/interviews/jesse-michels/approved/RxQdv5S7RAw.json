@@ -1,0 +1,72 @@
+{
+  "video_id": "RxQdv5S7RAw",
+  "title": "Why Is China taking over the Dark Side of the Moon?",
+  "published_at": "2024-07-18T23:42:44Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=RxQdv5S7RAw",
+  "thumbnail_url": "https://i.ytimg.com/vi/RxQdv5S7RAw/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:26:41.102Z",
+  "summary": "This brief clip discusses China's uncrewed spacecraft landing on the far side of the Moon, featuring NASA administrator Bill Nelson expressing uncertainty about China's motivations for exploring the lunar far side rather than the South Pole where NASA believes water exists.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "NASA",
+      "expansion": "National Aeronautics and Space Administration",
+      "definition": "United States government agency responsible for space exploration and aeronautics research",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Bill Nelson"
+  ],
+  "organizations_mentioned": [
+    "NASA",
+    "Chinese State media"
+  ],
+  "events": [
+    {
+      "year": 2024,
+      "description": "China landed an uncrewed spacecraft on the far side of the Moon",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "China has landed an uncrewed spacecraft on the far side of the Moon",
+      "attributed_to": "unknown",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "NASA is not planning to go to the far side of the Moon",
+      "attributed_to": "Bill Nelson",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "NASA believes the South Pole of the Moon is more profitable to explore because they think that's where the water is",
+      "attributed_to": "Bill Nelson",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "We don't know what's on the back side of the Moon",
+      "attributed_to": "Bill Nelson",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "China space program",
+    "lunar exploration",
+    "far side of the Moon",
+    "NASA",
+    "space race",
+    "Moon water"
+  ]
+}

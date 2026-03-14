@@ -1,0 +1,50 @@
+{
+  "video_id": "z5_mTWj6H5s",
+  "title": "Dave Grusch On Bob Lazar",
+  "published_at": "2023-10-02T22:30:12Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=z5_mTWj6H5s",
+  "thumbnail_url": "https://i.ytimg.com/vi/z5_mTWj6H5s/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:35:47.270Z",
+  "summary": "A brief exchange where Jesse Michels asks Dave Grusch about his opinion on Bob Lazar, a figure who claimed to work at a secret facility called S4 at Area 51. Grusch explains he has no insider information on Lazar and did not investigate his claims.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Dave Grusch"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Bob Lazar",
+    "Dave Grusch"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Bob Lazar claimed to have worked at S4, a top secret compartmentalized part of Area 51",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Dave Grusch has no information on Bob Lazar beyond what is publicly known",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Dave Grusch did not have the appropriate investigative privileges to look into Bob Lazar",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Bob Lazar",
+    "Area 51",
+    "S4",
+    "UAP whistleblowers",
+    "government secrecy"
+  ]
+}

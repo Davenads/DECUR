@@ -1,0 +1,247 @@
+{
+  "video_id": "6WC4o2yY9Ws",
+  "title": "US Fighter Pilots Witness UFO (ft. Ryan Graves)",
+  "published_at": "2024-12-06T21:04:48Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=6WC4o2yY9Ws",
+  "thumbnail_url": "https://i.ytimg.com/vi/6WC4o2yY9Ws/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:09:27.641Z",
+  "summary": "Former Navy F-18 pilot Ryan Graves discusses his firsthand experiences detecting and observing UAPs off the Virginia coast during 2014-2015, describing objects with anomalous flight characteristics including stationary hovering in high winds, supersonic speeds without visible propulsion, and geometric shapes (cubes inside spheres). He also reflects on his historic Congressional testimony alongside David Fravor and David Grusch, and discusses the broader implications for pilot safety and government transparency.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Ryan Graves"
+  },
+  "acronyms": [
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Term used to describe unidentified objects observed in the air, replacing the older term UFO in official contexts",
+      "confidence": "high"
+    },
+    {
+      "term": "APG73",
+      "expansion": "AN/APG-73 Radar",
+      "definition": "Mechanically scanned array radar system used in F-18 aircraft with a moving dish that sends and receives radar signals",
+      "confidence": "high"
+    },
+    {
+      "term": "APG79",
+      "expansion": "AN/APG-79 Radar",
+      "definition": "Actively electronically scanned array (AESA) radar system, a fixed and more precise radar upgrade for F-18 aircraft",
+      "confidence": "high"
+    },
+    {
+      "term": "AESA",
+      "expansion": "Actively Electronically Scanned Array",
+      "definition": "Advanced radar technology that is fixed and can send energy in smaller, more precise packets",
+      "confidence": "high"
+    },
+    {
+      "term": "FLIR",
+      "expansion": "Forward Looking Infrared",
+      "definition": "Infrared and electro-optical targeting system used to detect heat signatures",
+      "confidence": "high"
+    },
+    {
+      "term": "SAP",
+      "expansion": "Special Access Program",
+      "definition": "Highly classified government programs with restricted access",
+      "confidence": "high"
+    },
+    {
+      "term": "HAZRAP",
+      "expansion": "Hazard Report",
+      "definition": "Safety paperwork filed when a hazardous incident occurs during flight operations",
+      "confidence": "medium"
+    },
+    {
+      "term": "NRO",
+      "expansion": "National Reconnaissance Office",
+      "definition": "US intelligence agency responsible for satellite reconnaissance",
+      "confidence": "high"
+    },
+    {
+      "term": "NOAA",
+      "expansion": "National Oceanic and Atmospheric Administration",
+      "definition": "US agency focused on oceanic and atmospheric science and monitoring",
+      "confidence": "high"
+    },
+    {
+      "term": "USO",
+      "expansion": "Unidentified Submerged Object",
+      "definition": "Term for unidentified objects observed underwater",
+      "confidence": "high"
+    },
+    {
+      "term": "ICIG",
+      "expansion": "Intelligence Community Inspector General",
+      "definition": "Official responsible for oversight of the US intelligence community",
+      "confidence": "high"
+    },
+    {
+      "term": "SCIF",
+      "expansion": "Sensitive Compartmented Information Facility",
+      "definition": "Secure room for discussing classified information",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "UAP Task Force"
+  ],
+  "people_mentioned": [
+    "Ryan Graves",
+    "David Fravor",
+    "David Grusch",
+    "Iya Whitley",
+    "Josh Waitzkin",
+    "James McDonnell",
+    "Thomas Townsend Brown",
+    "Paul Schatzkin",
+    "Hyman Rickover",
+    "Robert Sarbacher",
+    "Robert J. Oppenheimer",
+    "Tim Gallaudet",
+    "Hal Puthoff",
+    "Dick Cheney",
+    "George W. Bush",
+    "John Podesta",
+    "Bill Clinton",
+    "Hillary Clinton",
+    "Thomas Monheim",
+    "Alexandria Ocasio-Cortez",
+    "Matt Gaetz"
+  ],
+  "organizations_mentioned": [
+    "US Navy",
+    "McDonnell Douglas",
+    "Raytheon",
+    "New York Times",
+    "NASA",
+    "NRO",
+    "NOAA",
+    "Atomic Energy Commission",
+    "Harvard Undersea Observatory",
+    "Congress",
+    "Air Force",
+    "Langley Air Force Base",
+    "Norfolk Naval Base",
+    "Pax River"
+  ],
+  "events": [
+    {
+      "year": 2004,
+      "description": "Nimitz carrier strike group UAP encounter involving Commander David Fravor",
+      "confidence": "high"
+    },
+    {
+      "year": 2014,
+      "description": "Ryan Graves' squadron began detecting UAPs with upgraded APG-79 radar systems off Virginia coast",
+      "confidence": "medium"
+    },
+    {
+      "year": 2017,
+      "description": "New York Times article on UAPs was published, prompting wider discussion among pilots",
+      "confidence": "high"
+    },
+    {
+      "year": 2023,
+      "description": "Congressional hearing where Ryan Graves, David Fravor, and David Grusch testified about UAPs",
+      "confidence": "high"
+    },
+    {
+      "year": 2023,
+      "description": "Drones swarmed Langley Air Force Base for 17 days, forcing relocation of F-22s",
+      "confidence": "high"
+    },
+    {
+      "year": 1954,
+      "description": "Robert Sarbacher allegedly helped set up UFO secrecy with Robert J. Oppenheimer at the Atomic Energy Commission",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "UAP sightings are routine, not rare or isolated, in US military airspace",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Objects detected were stationary in Category 3 hurricane-type winds without any visible propulsion",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Objects were detected traveling at speeds up to Mach 1.2 without exhaust plumes",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "A pilot described seeing a dark gray or black cube inside a clear sphere, approximately 5-15 feet in diameter",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Three different sensor systems (radar, FLIR, and AIM-9X missiles) correlated to confirm physical objects were present",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "There were at least five unreported near mid-air collisions with UAPs in Ryan Graves' squadron",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "About half the pilots in a ready room raised their hands acknowledging they had seen cubes and spheres when the topic was raised",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "UAP sightings have occurred at virtually every major US Navy base including Norfolk, California, Fallon, and Pax River",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "David Grusch provided over 1,000 pages of documentation to the IC Inspector General who deemed it 'urgent and credible'",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "David Grusch brought 40 people who claim to have worked on crash retrieval programs firsthand to the IC Inspector General",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Hyman Rickover told Thomas Townsend Brown that the Navy had already figured out gravity manipulation technology",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "F-22s had to be moved from Langley Air Force Base due to drone incursions",
+      "attributed_to": "Ryan Graves",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UAP sightings",
+    "Navy fighter pilot experiences",
+    "radar systems",
+    "Congressional testimony",
+    "flight safety",
+    "sensor correlation",
+    "government secrecy",
+    "reverse engineering claims"
+  ]
+}

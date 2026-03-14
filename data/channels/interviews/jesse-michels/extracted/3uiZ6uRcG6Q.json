@@ -1,0 +1,68 @@
+{
+  "video_id": "3uiZ6uRcG6Q",
+  "title": "Whistleblower Dave Grusch: UFOs Are Hidden From Presidents",
+  "published_at": "2023-09-26T18:26:58Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=3uiZ6uRcG6Q",
+  "thumbnail_url": "https://i.ytimg.com/vi/3uiZ6uRcG6Q/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:37:31.258Z",
+  "summary": "Dave Grusch discusses how certain presidents historically have not had access to UAP-related information due to 'need to know' restrictions. He explains that career officials often withhold information from Congress and the White House, citing leak concerns, unless a president has prior intelligence community experience like George H.W. Bush.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Whistleblower Dave Grusch"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "U.S. intelligence agency responsible for gathering and analyzing national security information",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Ross Coulthart",
+    "George H.W. Bush"
+  ],
+  "organizations_mentioned": [
+    "CIA",
+    "Congress",
+    "White House"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Certain presidents historically don't have a need to know on UAP topics unless they need to sign an executive order or make a command decision",
+      "attributed_to": "Whistleblower Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Career senior officials who have been in government for 20-30 years deliberately withhold information from Congress and the White House because of leak concerns",
+      "attributed_to": "Whistleblower Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "George H.W. Bush likely had access to UAP information because he was CIA director before becoming president",
+      "attributed_to": "Whistleblower Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Grusch was an executive branch employee for 14 years",
+      "attributed_to": "Whistleblower Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "presidential access",
+    "need to know",
+    "classification",
+    "intelligence community",
+    "government secrecy",
+    "UAP disclosure"
+  ]
+}

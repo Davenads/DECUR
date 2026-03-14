@@ -1,0 +1,210 @@
+{
+  "video_id": "TNtlzEnl8rA",
+  "title": "NASA Doctor: “I Saw This UFO In A Secret Hangar!” (Ft. Greg Rogers)",
+  "published_at": "2025-08-31T17:59:41Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=TNtlzEnl8rA",
+  "thumbnail_url": "https://i.ytimg.com/vi/TNtlzEnl8rA/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:47:12.632Z",
+  "summary": "Dr. Gregory Rogers, a former NASA flight surgeon and chief of aerospace medicine at the 45th Space Wing, describes witnessing a closed-circuit video feed in 1992 showing a 20-foot pearly white saucer-shaped craft with US Air Force markings that could hover, rotate, and move in ways inconsistent with known physics. The officer who showed him the footage implied the design was obtained from 'them,' suggesting extraterrestrial origin. Rogers also discusses his career supporting space shuttle missions and various anomalies experienced around Cape Canaveral and the Bermuda Triangle.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Greg Rogers"
+  },
+  "acronyms": [
+    {
+      "term": "AFTAC",
+      "expansion": "Air Force Technical Applications Center",
+      "definition": "Air Force unit that monitors nuclear treaty compliance and detects nuclear explosions globally",
+      "confidence": "medium"
+    },
+    {
+      "term": "PJ",
+      "expansion": "Pararescue Jumpers",
+      "definition": "Air Force special operations personnel trained in combat search and rescue",
+      "confidence": "high"
+    },
+    {
+      "term": "DDMS",
+      "expansion": "Department of Defense Manned Space Support Office",
+      "definition": "Office that coordinated DoD support for manned spaceflight operations",
+      "confidence": "high"
+    },
+    {
+      "term": "STS",
+      "expansion": "Space Transportation System",
+      "definition": "NASA's Space Shuttle program designation",
+      "confidence": "high"
+    },
+    {
+      "term": "PBY",
+      "expansion": "Patrol Bomber by Consolidated Aircraft",
+      "definition": "A flying boat patrol bomber aircraft used by the Navy",
+      "confidence": "medium"
+    },
+    {
+      "term": "AEC",
+      "expansion": "Atomic Energy Commission",
+      "definition": "Former US government agency responsible for atomic energy development and nuclear weapons production",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Have Blue",
+    "Manhattan Project",
+    "MJ12",
+    "Astronaut Rescue and Recovery Team",
+    "Eastern Space and Missile Center",
+    "Bluegill Triple Prime"
+  ],
+  "people_mentioned": [
+    "Greg Rogers",
+    "David Grusch",
+    "Neil deGrasse Tyson",
+    "Chris Leto",
+    "Gordon Ramsay",
+    "Harold Edgerton",
+    "Vannevar Bush",
+    "Bob Lazar",
+    "Eric Davis",
+    "Thomas Wilson",
+    "Alfred O'Donnell",
+    "George Knapp",
+    "David Fravor",
+    "Young",
+    "Crippen",
+    "Colonel Shokitis",
+    "Harold Malmgren"
+  ],
+  "organizations_mentioned": [
+    "NASA",
+    "US Air Force",
+    "45th Space Wing",
+    "45th Medical Group",
+    "EG&G",
+    "Lockheed",
+    "Martin Marietta",
+    "Lockheed Martin",
+    "Boeing",
+    "Raytheon",
+    "Northrop",
+    "Bechtel",
+    "Reynolds Electronics",
+    "Lockheed Skunk Works",
+    "Kennedy Space Center",
+    "Cape Canaveral Air Force Station",
+    "Patrick Air Force Base",
+    "MIT",
+    "Atomic Energy Commission",
+    "Department of Energy",
+    "Los Alamos",
+    "Livermore",
+    "Sandia Labs",
+    "CIA",
+    "9th Strategic Reconnaissance Wing"
+  ],
+  "events": [
+    {
+      "year": 1945,
+      "description": "Flight 19, a group of Navy aircraft, went missing in the Bermuda Triangle along with a PBY search aircraft",
+      "confidence": "high"
+    },
+    {
+      "year": 1962,
+      "description": "Bluegill Triple Prime high-altitude nuclear test occurred during Cuban Missile Crisis, with alleged UFO falling from the blast plume",
+      "confidence": "medium"
+    },
+    {
+      "year": 1989,
+      "description": "Dr. Rogers arrived at Patrick Air Force Base and began working on space shuttle rescue operations",
+      "confidence": "high"
+    },
+    {
+      "year": 1992,
+      "description": "Dr. Rogers witnessed closed-circuit video of a saucer-shaped craft with US Air Force markings at Cape Canaveral",
+      "confidence": "high"
+    },
+    {
+      "year": 1995,
+      "description": "Lockheed and Martin Marietta merged to form Lockheed Martin",
+      "confidence": "high"
+    },
+    {
+      "year": 2001,
+      "description": "Former Lockheed and CIA contractor claimed Lockheed was working on UFO technology with EG&G scientists in Utah labs",
+      "confidence": "medium"
+    },
+    {
+      "year": 2023,
+      "description": "David Grusch testified before Congress about military alien craft retrieval programs and reverse engineering",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Witnessed a 20-foot pearly white saucer-shaped craft on closed-circuit TV that could hover, rotate 360 degrees, and move in multiple directions while stationary",
+      "attributed_to": "Greg Rogers",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The craft had US Air Force markings and insignia painted on it",
+      "attributed_to": "Greg Rogers",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "When asked why the craft was designed that way, the officer showing him the footage said 'We got it from them,' implying extraterrestrial origin",
+      "attributed_to": "Greg Rogers",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The craft exhibited electromagnetic discharges across its surface that appeared random and not responsible for its propulsion",
+      "attributed_to": "Greg Rogers",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The craft achieved a 45-degree angle of attack without forward movement, which no known aircraft can do",
+      "attributed_to": "Greg Rogers",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "EG&G was the prime contractor for Cape Canaveral and managed operations at Area 51",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "UFOs consistently appear around nuclear detonations and were called 'tagalongs' by personnel of that era",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "There are areas in the Bermuda Triangle with magnetic anomalies that cause compass deviations",
+      "attributed_to": "Greg Rogers",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The military has an alien craft retrieval program and there were bodies recovered from some vehicles",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO sightings",
+    "reverse engineering",
+    "aerospace medicine",
+    "Space Shuttle program",
+    "Bermuda Triangle",
+    "EG&G",
+    "government secrecy",
+    "electromagnetic propulsion"
+  ]
+}

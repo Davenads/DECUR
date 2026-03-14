@@ -1,0 +1,50 @@
+{
+  "video_id": "aQdjvacIUEI",
+  "title": "Whistleblower Dave Grusch Challenges Neil deGrasse Tyson to a Debate!",
+  "published_at": "2023-09-28T18:58:22Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=aQdjvacIUEI",
+  "thumbnail_url": "https://i.ytimg.com/vi/aQdjvacIUEI/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:37:00.143Z",
+  "summary": "A brief discussion where Dave Grusch criticizes Neil deGrasse Tyson's dismissive stance on UAP topics and challenges him to a debate alongside Gary Nolan. The conversation focuses on credentialism in science and lack of curiosity from mainstream scientific communicators.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Dave Grusch"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Neil deGrasse Tyson",
+    "Gary Nolan",
+    "Brian Cox"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Neil deGrasse Tyson has made up his mind about UAP topics and lacks scientific curiosity",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Dave Grusch is willing to debate Neil deGrasse Tyson on UAP topics",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Gary Nolan and Dave Grusch would debate Neil deGrasse Tyson together",
+      "attributed_to": "Dave Grusch",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "scientific credentialism",
+    "UAP debate",
+    "scientific skepticism",
+    "mainstream science criticism"
+  ]
+}

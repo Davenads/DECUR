@@ -1,0 +1,58 @@
+{
+  "video_id": "Y8CcNaf3ZfY",
+  "title": "Does Martin Shkreli Think C0VlD Was Man Made?",
+  "published_at": "2022-09-02T22:32:24Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=Y8CcNaf3ZfY",
+  "thumbnail_url": "https://i.ytimg.com/vi/Y8CcNaf3ZfY/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:49:52.505Z",
+  "summary": "A brief discussion about COVID-19 origins where Martin Shkreli shares his view that COVID was likely man-made, citing the proximity of the Wuhan wet market to the virology lab. The conversation touches on gain-of-function research and NIH funding concerns.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Martin Shkreli"
+  },
+  "acronyms": [
+    {
+      "term": "NIH",
+      "expansion": "National Institutes of Health",
+      "definition": "U.S. government agency that funds biomedical research, mentioned in context of potentially funding gain-of-function research",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Martin Shkreli"
+  ],
+  "organizations_mentioned": [
+    "NIH"
+  ],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "COVID-19 was likely man-made (95% base case probability)",
+      "attributed_to": "Martin Shkreli",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The wet market where COVID originated was located next to a lab studying pandemic-related coronaviruses",
+      "attributed_to": "Martin Shkreli",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Gain-of-function research doesn't make sense because we can't develop cures even during an actual pandemic",
+      "attributed_to": "Martin Shkreli",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "COVID-19 origins",
+    "gain-of-function research",
+    "lab leak theory",
+    "NIH funding",
+    "Wuhan lab"
+  ]
+}

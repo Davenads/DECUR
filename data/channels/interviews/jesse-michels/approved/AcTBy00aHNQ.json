@@ -1,0 +1,71 @@
+{
+  "video_id": "AcTBy00aHNQ",
+  "title": "Steven Spielberg Argued With THIS UFO Researcher About How Aliens Should Be Portrayed",
+  "published_at": "2023-10-04T20:00:03Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=AcTBy00aHNQ",
+  "thumbnail_url": "https://i.ytimg.com/vi/AcTBy00aHNQ/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:35:05.197Z",
+  "summary": "This interview discusses Jacques Vallée, a preeminent UFO researcher who inspired Steven Spielberg's character in Close Encounters of the Third Kind. The conversation covers Vallée's disagreement with Spielberg about how aliens should be portrayed, with Vallée favoring a time travel hypothesis over the extraterrestrial hypothesis.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Jacques Vallée"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "An aerial phenomenon that cannot be immediately identified",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Jacques Vallée",
+    "Steven Spielberg",
+    "François Truffaut"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Jacques Vallée was Steven Spielberg's inspiration for the eccentric French scientist played by François Truffaut in Close Encounters of the Third Kind",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Jacques Vallée argued with Steven Spielberg on the set of Close Encounters about how UFOs should be portrayed",
+      "attributed_to": "Jacques Vallée",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Jacques Vallée wanted UFOs and aliens in the movie to be linked with time travel, not just space travel",
+      "attributed_to": "Jacques Vallée",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The extraterrestrial hypothesis is more far-fetched than alternatives",
+      "attributed_to": "Jacques Vallée",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jacques Vallée is obsessed with time travel",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO research",
+    "time travel hypothesis",
+    "extraterrestrial hypothesis",
+    "Close Encounters of the Third Kind",
+    "Jacques Vallée",
+    "Hollywood and UFOs"
+  ]
+}

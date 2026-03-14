@@ -1,0 +1,37 @@
+{
+  "video_id": "amfeFw9FXaA",
+  "title": "Alex Jones on The Metaverse",
+  "published_at": "2022-04-11T20:33:31Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=amfeFw9FXaA",
+  "thumbnail_url": "https://i.ytimg.com/vi/amfeFw9FXaA/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:51:36.825Z",
+  "summary": "A very brief commentary on Mark Zuckerberg's metaverse vision, with Alex Jones sarcastically criticizing the concept of living in a Zuckerberg-controlled virtual world.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Alex Jones"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Mark Zuckerberg",
+    "Alex Jones"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Mark Zuckerberg said two weeks ago that we'll all soon be living in the metaverse",
+      "attributed_to": "Alex Jones",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "metaverse",
+    "Mark Zuckerberg",
+    "technology criticism",
+    "social media"
+  ]
+}

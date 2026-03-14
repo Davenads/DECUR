@@ -1,0 +1,44 @@
+{
+  "video_id": "CimGLJy_wHI",
+  "title": "Rupert Sheldrake Explains Extramission Theory!",
+  "published_at": "2024-10-25T02:17:15Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=CimGLJy_wHI",
+  "thumbnail_url": "https://i.ytimg.com/vi/CimGLJy_wHI/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:15:44.325Z",
+  "summary": "Rupert Sheldrake discusses extramission theory, explaining how visual perception may involve projecting images outward from the eye, and how this relates to mirror reflections and virtual images as described in physics textbooks.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Rupert Sheldrake"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Rupert Sheldrake"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "When looking at a mirror, the viewer projects out images that go along with the light coming into the eye, but the virtual image projection goes straight through the mirror because it is virtual, not physical",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The theory of sending images out from the eye, while considered heretical in mainstream science, is actually taught in physics textbooks to every school child through the concept of virtual images",
+      "attributed_to": "Rupert Sheldrake",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "extramission theory",
+    "visual perception",
+    "physics",
+    "virtual images",
+    "mirrors",
+    "consciousness"
+  ]
+}

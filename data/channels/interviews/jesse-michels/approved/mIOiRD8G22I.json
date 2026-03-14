@@ -1,0 +1,90 @@
+{
+  "video_id": "mIOiRD8G22I",
+  "title": "The most viewed document in the FBI Vault!",
+  "published_at": "2024-07-29T23:52:05Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=mIOiRD8G22I",
+  "thumbnail_url": "https://i.ytimg.com/vi/mIOiRD8G22I/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:25:48.670Z",
+  "summary": "Brief discussion of the Guy Hottel memo, a 1950 FBI document describing alleged UFO crash retrievals in New Mexico, which has become the most viewed document on the FBI's public vault website.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "FBI",
+      "expansion": "Federal Bureau of Investigation",
+      "definition": "US federal law enforcement and intelligence agency",
+      "confidence": "high"
+    },
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "Unidentified aerial phenomena, commonly associated with alleged extraterrestrial craft",
+      "confidence": "high"
+    },
+    {
+      "term": "FOIA",
+      "expansion": "Freedom of Information Act",
+      "definition": "Law allowing public access to government documents through declassification requests",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Guy Hottel"
+  ],
+  "organizations_mentioned": [
+    "FBI",
+    "Air Force"
+  ],
+  "events": [
+    {
+      "year": 1950,
+      "description": "Guy Hottel memo written describing alleged recovery of three flying saucers in New Mexico",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The Guy Hottel memo is the most read/searched document on the FBI's website",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "The memo states that three flying saucers were recovered in New Mexico",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "The recovered craft were described as circular, approximately 50 feet in diameter with raised centers",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "Each craft contained three bodies of human shape, only 3 feet tall, dressed in metallic cloth of fine texture",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    },
+    {
+      "claim": "Guy Hottel was head of the FBI's Washington field office when the memo was written",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "FBI documents",
+    "UFO crash retrieval",
+    "Guy Hottel memo",
+    "New Mexico UFO incidents",
+    "government disclosure",
+    "alleged extraterrestrial bodies"
+  ]
+}

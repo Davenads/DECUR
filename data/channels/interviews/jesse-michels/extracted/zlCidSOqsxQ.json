@@ -1,0 +1,61 @@
+{
+  "video_id": "zlCidSOqsxQ",
+  "title": "Was Bob Lazar An MK-Ultra Patient?",
+  "published_at": "2023-03-16T23:42:21Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=zlCidSOqsxQ",
+  "thumbnail_url": "https://i.ytimg.com/vi/zlCidSOqsxQ/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:40:15.426Z",
+  "summary": "This interview excerpt discusses Jacques Vallée's suggestion that Bob Lazar may have been an MK-Ultra patient, potentially subjected to government brainwashing that led him to believe he worked on reverse engineering UFOs. The discussion references Vallée's book 'Revelations' where he mentions Lazar's memory lapses and strange liquid he was made to drink.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "MK-Ultra",
+      "expansion": "Mind Kontrol Ultra",
+      "definition": "CIA mind control and brainwashing program",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "MK-Ultra"
+  ],
+  "people_mentioned": [
+    "Jacques Vallée",
+    "Bob Lazar"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Jacques Vallée has talked to more UFO witnesses and seen more exotic material than any living person",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "Jacques Vallée hints in his book 'Revelations' that Bob Lazar was an MK-Ultra patient possibly subject to government brainwashing",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Bob Lazar told Jacques Vallée about strange memory lapses and a peculiar liquid he was made to drink",
+      "attributed_to": "Jacques Vallée",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Bob Lazar",
+    "MK-Ultra",
+    "government brainwashing",
+    "UFO reverse engineering",
+    "Jacques Vallée",
+    "alien contact",
+    "memory manipulation"
+  ]
+}

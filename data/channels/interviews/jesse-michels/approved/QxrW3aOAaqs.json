@@ -1,0 +1,66 @@
+{
+  "video_id": "QxrW3aOAaqs",
+  "title": "Asking Strangers If ALIENS Exist...",
+  "published_at": "2023-02-20T19:52:45Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=QxrW3aOAaqs",
+  "thumbnail_url": "https://i.ytimg.com/vi/QxrW3aOAaqs/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:43:30.007Z",
+  "summary": "A casual street interview where random strangers are asked if they believe aliens exist, with responses ranging from personal sightings to secondhand accounts of encounters.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "various street interviewees"
+  },
+  "acronyms": [
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "An aerial phenomenon that cannot be immediately identified",
+      "confidence": "low"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Interviewee claims to have seen lights in the sky",
+      "attributed_to": "unknown street interviewee",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "Interviewee heard about a friend who was attacked by an alien",
+      "attributed_to": "unknown street interviewee",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "The most common type of alien is light",
+      "attributed_to": "unknown street interviewee",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "Aliens described as little gangly creatures that look like squids with tentacles",
+      "attributed_to": "unknown street interviewee",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "UFOs travel too fast for normal planes with very fast movement",
+      "attributed_to": "unknown street interviewee",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "alien belief",
+    "UFO sightings",
+    "street interviews",
+    "public opinion",
+    "extraterrestrial encounters"
+  ]
+}

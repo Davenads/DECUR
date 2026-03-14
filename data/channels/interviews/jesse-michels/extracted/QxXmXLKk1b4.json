@@ -1,0 +1,80 @@
+{
+  "video_id": "QxXmXLKk1b4",
+  "title": "Colonel Karl Nell on the evolution of life on earth & faster than light travel #space #earth #aliens",
+  "published_at": "2025-01-01T17:37:24Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=QxXmXLKk1b4",
+  "thumbnail_url": "https://i.ytimg.com/vi/QxXmXLKk1b4/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:05:57.808Z",
+  "summary": "Colonel Karl Nell discusses evidence suggesting life evolved on Earth at the earliest possible time and challenges common assumptions about the rarity of life and impossibility of faster-than-light travel. He cites fossilized blue-green algae, recent microbe discoveries, and the possibility of panspermia.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Colonel Karl Nell"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Karl Nell"
+  ],
+  "organizations_mentioned": [],
+  "events": [
+    {
+      "year": 2024,
+      "description": "Scientists identified microbes in stasis in two billion year old terrestrial rock that were brought back to life",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Blue-green algae fossilized in stromatolites date from 3.5 billion years ago",
+      "attributed_to": "Colonel Karl Nell",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Recent scholarship indicates life may have evolved as early as 4.1 billion years ago",
+      "attributed_to": "Colonel Karl Nell",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Earth is approximately 5 billion years old",
+      "attributed_to": "Colonel Karl Nell",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "There is no evidence that life is uncommon or that faster than light travel is impossible",
+      "attributed_to": "Colonel Karl Nell",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Microbes can live in outer space and remain viable",
+      "attributed_to": "Colonel Karl Nell",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Microbes in stasis in two billion year old terrestrial rock were recently brought back to life",
+      "attributed_to": "Colonel Karl Nell",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Evidence suggests life either evolved very quickly on Earth or panspermia occurred",
+      "attributed_to": "Colonel Karl Nell",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "origin of life",
+    "astrobiology",
+    "panspermia",
+    "faster than light travel",
+    "extremophiles",
+    "early Earth"
+  ]
+}

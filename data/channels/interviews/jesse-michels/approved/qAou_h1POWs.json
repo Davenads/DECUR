@@ -1,0 +1,136 @@
+{
+  "video_id": "qAou_h1POWs",
+  "title": "The 26 Year Old Prodigy Reverse Engineering UFOs (Ft. Deep Prasad)",
+  "published_at": "2022-01-19T19:57:15Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=qAou_h1POWs",
+  "thumbnail_url": "https://i.ytimg.com/vi/qAou_h1POWs/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:53:42.708Z",
+  "summary": "Deep Prasad, a 26-year-old quantum computing entrepreneur, discusses his startup Quantum Generative Materials which aims to reverse engineer UAP materials using quantum computers. The conversation explores how quantum mechanics might explain the five observable properties of UFOs, the limitations of classical computing for material simulation, and the potential intersection of quantum sensing with consciousness and biological systems.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Deep Prasad"
+  },
+  "acronyms": [
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Modern term for UFOs used by government and military",
+      "confidence": "high"
+    },
+    {
+      "term": "RSA",
+      "expansion": "Rivest-Shamir-Adleman",
+      "definition": "Encryption system that is the backbone of secure communications and banking",
+      "confidence": "high"
+    },
+    {
+      "term": "GPS",
+      "expansion": "Global Positioning System",
+      "definition": "Satellite-based navigation system",
+      "confidence": "high"
+    },
+    {
+      "term": "DoD",
+      "expansion": "Department of Defense",
+      "definition": "United States federal department responsible for military and national security",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Quantum Generative Materials"
+  ],
+  "people_mentioned": [
+    "Deep Prasad",
+    "Eric Weinstein",
+    "Hal Puthoff",
+    "Francis Bacon",
+    "Max Planck",
+    "Carl Popper",
+    "Michael Shermer",
+    "William James",
+    "Elon Musk",
+    "Nick Bostrom",
+    "Paul Dirac"
+  ],
+  "organizations_mentioned": [
+    "Pentagon",
+    "Lockheed",
+    "Facebook",
+    "TikTok"
+  ],
+  "events": [
+    {
+      "year": 1911,
+      "description": "Discovery of the first superconductor by Doctor Ohm, demonstrating quantum mechanical behavior at macroscopic scale",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The Pentagon has hundreds of instances of optical radar and infrared detections of UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The tic-tac UFO reached at least 31 times the speed of sound without disturbing the air around it",
+      "attributed_to": "Deep Prasad",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Aerospace companies hold materials knowledge involving topological physics not shared with the academic world",
+      "attributed_to": "Deep Prasad",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "We still don't know how high temperature superconductors work",
+      "attributed_to": "Deep Prasad",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "To describe 97 fully entangled electrons would require 2 to the 97 classical bits, more atoms than exist on planet Earth's surface",
+      "attributed_to": "Deep Prasad",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Lockheed created the dark ice magnetometer about six years ago that can navigate anywhere on Earth without GPS using quantum sensing",
+      "attributed_to": "Deep Prasad",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Quantum mechanics and general relativity describe only five percent of the universe",
+      "attributed_to": "Deep Prasad",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Within 15 years quantum computers will make RSA encryption obsolete",
+      "attributed_to": "Deep Prasad",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Hal Puthoff briefs all of the presidents on UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "quantum computing",
+    "UAP reverse engineering",
+    "metamaterials",
+    "quantum mechanics",
+    "five observables",
+    "quantum sensing",
+    "consciousness",
+    "scientific method"
+  ]
+}

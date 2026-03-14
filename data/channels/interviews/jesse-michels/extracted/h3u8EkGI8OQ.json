@@ -1,0 +1,166 @@
+{
+  "video_id": "h3u8EkGI8OQ",
+  "title": "\"Aliens Are Accelerating Human Evolution!\" (Ft. Chris Ramsay)",
+  "published_at": "2025-03-22T17:33:25Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=h3u8EkGI8OQ",
+  "thumbnail_url": "https://i.ytimg.com/vi/h3u8EkGI8OQ/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:58:01.633Z",
+  "summary": "Jesse Michels interviews Chris Ramsay, a former world-class magician who transitioned into UFO research and started the YouTube channel Area 52. They discuss how Ramsay's magic background gives him unique insight into deception and methodology, his introduction to remote viewing through a hedge fund recruitment story, and theories connecting consciousness, UFOs, and human evolution.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Chris Ramsay"
+  },
+  "acronyms": [
+    {
+      "term": "ARV",
+      "expansion": "Associative Remote Viewing",
+      "definition": "A remote viewing technique where the viewer targets an image associated with an outcome (like stock market movement) rather than the outcome itself, to avoid feedback loops",
+      "confidence": "high"
+    },
+    {
+      "term": "ESP",
+      "expansion": "Extrasensory Perception",
+      "definition": "Paranormal abilities involving perception beyond normal senses",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Stargate",
+    "PAIR Lab (Princeton Engineering Anomalies Research Laboratory)",
+    "Global Consciousness Project"
+  ],
+  "people_mentioned": [
+    "Chris Ramsay",
+    "Jesse Michels",
+    "Nelson Delos",
+    "Brett Stewart",
+    "Joe McMonagle",
+    "Edwin May",
+    "Daryl Bem",
+    "Harry Lorayne",
+    "James Randi",
+    "Jessica Utts",
+    "Ray Hyman",
+    "Irina Whitley",
+    "Jensen Andre",
+    "Michael Levin",
+    "Carl Friston",
+    "Bob Jahn",
+    "Elon Musk",
+    "Danny Sheehan",
+    "Hal Puthoff",
+    "Eric Weinstein",
+    "Jack Sarfatti",
+    "Bob Macguire",
+    "UAP Gerb",
+    "Kanye West",
+    "Pharrell",
+    "Philip Zimbardo",
+    "Malcolm Gladwell",
+    "Plato",
+    "Jake Barber"
+  ],
+  "organizations_mentioned": [
+    "American Alchemy",
+    "Area 52",
+    "Stanford",
+    "Princeton",
+    "University of Oregon",
+    "Tufts University",
+    "Harvard",
+    "American Statistical Association",
+    "Netflix"
+  ],
+  "events": [
+    {
+      "year": 1996,
+      "description": "Public disclosure/downplaying of the Stargate remote viewing program results",
+      "confidence": "medium"
+    },
+    {
+      "year": 2011,
+      "description": "Fukushima nuclear disaster with reported UFO sightings",
+      "confidence": "high"
+    },
+    {
+      "year": 2023,
+      "description": "Chris Ramsay started the Area 52 YouTube channel",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The Stargate program ran for 20 years with a $20 million budget and had to be annually approved by committee",
+      "attributed_to": "Chris Ramsay",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Out of 600 individuals tested for remote viewing ability, 6 (1%) showed significant talent, and all 6 had synesthesia",
+      "attributed_to": "Chris Ramsay",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Babies are all born with synesthesia and lose it around 6 months of age",
+      "attributed_to": "Chris Ramsay",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Higher entropy environments produce more accurate remote viewing results",
+      "attributed_to": "Chris Ramsay",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Target sites doused with liquid nitrogen produced more accurate remote viewing results",
+      "attributed_to": "Chris Ramsay",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jessica Utts analyzed Stargate data and found P values that would be accepted as significant in any other field of science",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "UFOs reportedly appeared at both Fukushima and Chernobyl nuclear disasters and seemingly cleaned up radiation",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "A hedge fund recruited memory champions to be trained in remote viewing to predict stock market movements",
+      "attributed_to": "Chris Ramsay",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Global Consciousness Project's random event generators showed the biggest spike ever recorded during 9/11",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Edwin May compiled over two million words of documentation on remote viewing research including hits and misses",
+      "attributed_to": "Chris Ramsay",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "remote viewing",
+    "consciousness",
+    "Stargate program",
+    "synesthesia",
+    "parapsychology",
+    "UFO-nuclear connection",
+    "entropy and psi phenomena",
+    "magic and deception",
+    "human evolution"
+  ]
+}

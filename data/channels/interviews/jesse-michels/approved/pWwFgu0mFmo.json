@@ -1,0 +1,72 @@
+{
+  "video_id": "pWwFgu0mFmo",
+  "title": "They Might've Hit a UFO With Their Rocket!",
+  "published_at": "2022-08-11T19:18:32Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=pWwFgu0mFmo",
+  "thumbnail_url": "https://i.ytimg.com/vi/pWwFgu0mFmo/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:50:40.645Z",
+  "summary": "This brief clip discusses an experiment at Skinwalker Ranch where researchers launched a rocket equipped with GPS sensors and chalk to detect invisible objects in the air. The rocket allegedly made an unexplained westward deflection, and cameras captured a UFO appearing and disappearing at the same time as the launch.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "GPS",
+      "expansion": "Global Positioning System",
+      "definition": "Satellite-based navigation system used here to track the rocket's trajectory",
+      "confidence": "high"
+    },
+    {
+      "term": "UFO",
+      "expansion": "Unidentified Flying Object",
+      "definition": "An unidentified aerial object observed in the sky",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "An invisible force at Skinwalker Ranch tampers with equipment used to measure phenomena in the region",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "low"
+    },
+    {
+      "claim": "A 15-foot rocket equipped with GPS sensors and chalk was launched to map and coat invisible objects hovering above the ranch",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The rocket made an abrupt deflection westward as if avoiding something, with no wind to explain the movement",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Cameras revealed a UFO entering and exiting the sky at exactly the same time the rocket was launched",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The UFO appeared to be provoked by the rocket launch",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "Skinwalker Ranch",
+    "UFO detection experiments",
+    "anomalous aerial phenomena",
+    "rocket experiments",
+    "equipment interference"
+  ]
+}

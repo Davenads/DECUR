@@ -1,0 +1,197 @@
+{
+  "video_id": "IWui5cBkwoE",
+  "title": "NASA Whistleblower: “We Systematically Suppress UFO Data!”",
+  "published_at": "2026-01-18T19:01:05Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=IWui5cBkwoE",
+  "thumbnail_url": "https://i.ytimg.com/vi/IWui5cBkwoE/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:38:28.002Z",
+  "summary": "Kevin Knuth, a physicist at the University of Albany with a NASA background, discusses his research into UFO detection and propulsion physics. He shares how he became interested in UFOs after learning about nuclear missile site incursions at Malmstrom Air Force Base, discusses the physics challenges of observed UFO maneuvers, and reveals that colleagues are analyzing purported UFO crash debris using neutron activation techniques.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Kevin Knuth"
+  },
+  "acronyms": [
+    {
+      "term": "USO",
+      "expansion": "Unidentified Submerged Object",
+      "definition": "Unidentified craft observed operating underwater",
+      "confidence": "medium"
+    },
+    {
+      "term": "PRP",
+      "expansion": "Personnel Reliability Program",
+      "definition": "Security screening program for personnel working with nuclear weapons",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "Skylab",
+    "Apollo 12",
+    "Hubble"
+  ],
+  "people_mentioned": [
+    "Kevin Knuth",
+    "Alan Bean",
+    "Story Musgrave",
+    "Robert Hastings",
+    "Robert Salas",
+    "Leonard Nimoy",
+    "Matthew Szydagis",
+    "Gary Nolan",
+    "Art Bell",
+    "Diana Pasulka",
+    "Tim Taylor",
+    "Hal Puthoff",
+    "Chris Bledsoe",
+    "Thomas Townsend Brown",
+    "Larry Smalley",
+    "Ning Li",
+    "Jesse Marcel",
+    "General Ramey",
+    "Chris Langan",
+    "John Stewart"
+  ],
+  "organizations_mentioned": [
+    "NASA",
+    "University of Albany",
+    "Montana State University",
+    "Malmstrom Air Force Base",
+    "Air Force",
+    "CIA",
+    "Stanford",
+    "MITER Corporation",
+    "University of Alabama Huntsville",
+    "Vice",
+    "Netflix"
+  ],
+  "events": [
+    {
+      "year": 1966,
+      "description": "Between September 1966 and March 1967, 30 nuclear missiles were reportedly lost to UFO activity at Malmstrom Air Force Base",
+      "confidence": "high"
+    },
+    {
+      "year": 1977,
+      "description": "Star Wars and Close Encounters of the Third Kind films released",
+      "confidence": "high"
+    },
+    {
+      "year": 1988,
+      "description": "Kevin Knuth first heard about UFO incursions at Malmstrom Air Force Base while starting graduate school at Montana State University",
+      "confidence": "high"
+    },
+    {
+      "year": 2010,
+      "description": "Robert Hastings held a news conference with six Air Force personnel discussing UFOs at nuclear sites",
+      "confidence": "high"
+    },
+    {
+      "year": 2011,
+      "description": "Fukushima nuclear disaster in Japan with reported UFO sightings",
+      "confidence": "high"
+    },
+    {
+      "year": 2015,
+      "description": "Kevin Knuth rediscovered the Malmstrom UFO story while preparing for an astronomy class",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "New York Times article on UFOs published",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "UFOs have been shutting down nuclear missiles at Malmstrom Air Force Base since at least the 1960s and this continued through the early 1990s",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "30 missiles were lost to UFO activity between September 1966 and March 1967",
+      "attributed_to": "Robert Salas",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The tic-tac UFO from the Nimitz encounter accelerated at approximately 5,000 gs, requiring around 1,000 gigawatts of power",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "An 800-foot long USO followed the HMNZS Southland in the 1980s, closing 2 km in 25 seconds and draining the ship's batteries",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Kevin Knuth has met people who claimed to have worked on or seen recovered UFO craft and found them entirely believable",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Those who claimed to work on recovered craft said they don't know what anything is or how anything works",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Matthew Szydagis is analyzing purported UFO crash debris using neutron activation techniques",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Some of the debris being analyzed includes Art's Parts material from Roswell",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "A NASA employee wrote a CIA training manual for remote viewing",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "NASA has a 2003 patent on a barrel-shaped asymmetric capacitor referencing Townsend Brown's work",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Alan Bean from Apollo 12 photographed a red flashing light during Skylab mission",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Astronaut Story Musgrave reported seeing snake-like things writhing around in space",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Friends who worked on anti-gravity research received threats",
+      "attributed_to": "Kevin Knuth",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "UFO physics",
+    "nuclear site incursions",
+    "Malmstrom Air Force Base",
+    "UFO propulsion theories",
+    "crash debris analysis",
+    "NASA",
+    "water worlds hypothesis",
+    "USOs",
+    "remote viewing"
+  ]
+}

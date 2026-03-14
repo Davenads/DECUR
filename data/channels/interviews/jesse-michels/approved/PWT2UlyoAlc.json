@@ -1,0 +1,48 @@
+{
+  "video_id": "PWT2UlyoAlc",
+  "title": "UFO Whistleblower: Are We In A Simulation?",
+  "published_at": "2023-09-26T22:26:20Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=PWT2UlyoAlc",
+  "thumbnail_url": "https://i.ytimg.com/vi/PWT2UlyoAlc/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:37:22.263Z",
+  "summary": "A brief discussion about simulation theory, the anthropic principle, and whether Earth's finely-tuned conditions for life are coincidental or designed. The conversation touches on implications for human origins and the need for academic study of these questions.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "UFO Whistleblower"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Earth appears to be very finely tuned for life, with temperature gradients and physical constants that allow for habitability",
+      "attributed_to": "UFO Whistleblower",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "If Planck's constant or hydrogen-oxygen bonding were slightly different, Earth would not be habitable",
+      "attributed_to": "UFO Whistleblower",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Doctoral programs are needed to study questions about simulation theory and whether aliens designed Earth's conditions",
+      "attributed_to": "UFO Whistleblower",
+      "attribution_confidence": "medium",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "simulation theory",
+    "anthropic principle",
+    "fine-tuning",
+    "origins of life",
+    "physics",
+    "extraterrestrial hypothesis"
+  ]
+}

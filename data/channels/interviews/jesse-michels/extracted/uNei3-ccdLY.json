@@ -1,0 +1,37 @@
+{
+  "video_id": "uNei3-ccdLY",
+  "title": "Does Martin Shkreli Have Friends?",
+  "published_at": "2022-09-02T22:31:26Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=uNei3-ccdLY",
+  "thumbnail_url": "https://i.ytimg.com/vi/uNei3-ccdLY/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:50:03.448Z",
+  "summary": "A brief conversation about Martin Shkreli's social life and relationships, where he discusses preferring a solitary lifestyle due to his focus on building software, molecules, and companies. He expresses difficulty relating to others given his drive to create things.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Martin Shkreli"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [
+    "Martin Shkreli"
+  ],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Shkreli spends a lot of time creating different pieces of software, molecules, and companies",
+      "attributed_to": "Martin Shkreli",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "personal relationships",
+    "entrepreneurship",
+    "software development",
+    "pharmaceutical research",
+    "lifestyle"
+  ]
+}

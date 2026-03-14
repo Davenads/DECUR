@@ -1,0 +1,213 @@
+{
+  "video_id": "RofQnByLwOo",
+  "title": "Your Brain Is A Quantum Time Machine (ft. Eric Wargo)",
+  "published_at": "2024-11-13T21:28:06Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=RofQnByLwOo",
+  "thumbnail_url": "https://i.ytimg.com/vi/RofQnByLwOo/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:12:22.714Z",
+  "summary": "This video essay explores the science behind precognition and psychic phenomena, featuring Eric Wargo's thesis that the brain functions as a quantum time machine capable of accessing future information. The episode synthesizes evidence from the CIA's Stargate program, quantum biology research, and neuroscience to argue that human intuition may involve temporal non-locality and quantum processes in brain structures like microtubules.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Eric Wargo"
+  },
+  "acronyms": [
+    {
+      "term": "CIA",
+      "expansion": "Central Intelligence Agency",
+      "definition": "US intelligence agency that backed the Stargate psychic spy program",
+      "confidence": "high"
+    },
+    {
+      "term": "DIA",
+      "expansion": "Defense Intelligence Agency",
+      "definition": "US military intelligence agency that co-sponsored the Stargate program",
+      "confidence": "high"
+    },
+    {
+      "term": "fMRI",
+      "expansion": "Functional Magnetic Resonance Imaging",
+      "definition": "Brain imaging technique that tracks blood flow to measure brain activity",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Stargate",
+    "Project Mars"
+  ],
+  "people_mentioned": [
+    "Eric Wargo",
+    "Jesse Michels",
+    "Dean Koontz",
+    "Morgan Robertson",
+    "Wernher von Braun",
+    "Mark Twain",
+    "Michael Richards",
+    "Michael Rolando Richards",
+    "Alex Jones",
+    "Joseph McMoneagle",
+    "Paul Smith",
+    "Dale Graff",
+    "Rosemary Smith",
+    "Jimmy Carter",
+    "Jessica Utts",
+    "Ray Hyman",
+    "James Randi",
+    "Uri Geller",
+    "Arthur C. Clarke",
+    "Roger Penrose",
+    "Stuart Hameroff",
+    "Gary Nolan",
+    "Efim Liberman",
+    "David Liberman",
+    "Denil Liberman",
+    "Max Planck",
+    "Albert Einstein",
+    "Noam Chomsky",
+    "Marshall McLuhan",
+    "Hal Puthoff",
+    "James Dozier"
+  ],
+  "organizations_mentioned": [
+    "CIA",
+    "DIA",
+    "Stanford Research Institute",
+    "American Statistical Association",
+    "University of Edinburgh",
+    "Rhine Research Institute",
+    "Duke University",
+    "Lower Manhattan Cultural Council",
+    "Stanford University"
+  ],
+  "events": [
+    {
+      "year": 1972,
+      "description": "Start of the CIA and DIA backed Stargate psychic spy program",
+      "confidence": "high"
+    },
+    {
+      "year": 1995,
+      "description": "End of the Stargate psychic spy program",
+      "confidence": "high"
+    },
+    {
+      "year": 1979,
+      "description": "Joseph McMoneagle remote viewed a Soviet shipyard and described a massive nuclear submarine (later confirmed as the Typhoon)",
+      "confidence": "high"
+    },
+    {
+      "year": 1981,
+      "description": "Dean Koontz wrote 'The Eyes of Darkness' featuring a bioweapon from Wuhan called Wuhan-400",
+      "confidence": "high"
+    },
+    {
+      "year": 1898,
+      "description": "Morgan Robertson wrote 'Futility or Wreck of the Titan' predicting the Titanic disaster",
+      "confidence": "high"
+    },
+    {
+      "year": 1952,
+      "description": "Wernher von Braun published 'Project Mars: A Technical Tale' featuring a leader named Elon",
+      "confidence": "high"
+    },
+    {
+      "year": 1900,
+      "description": "Max Planck's quantum revolution explained black body radiation",
+      "confidence": "high"
+    },
+    {
+      "year": 1860,
+      "description": "Black body radiation was discovered",
+      "confidence": "medium"
+    },
+    {
+      "year": 1835,
+      "description": "Mark Twain was born as Halley's Comet passed by Earth",
+      "confidence": "high"
+    },
+    {
+      "year": 1910,
+      "description": "Mark Twain died one day after Halley's Comet's closest approach to Earth",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The Stargate psychic spy program ran from 1972 to 1995 and was funded by the CIA and DIA",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Joseph McMoneagle won the Legion of Merit for contributing intelligence in over 200 critical national security cases",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Remote viewing experiments showed a 35% hit rate, which was found to be repeatable",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Jessica Utts concluded that psychic functioning has been well established using standards applied to any other area of science",
+      "attributed_to": "Jessica Utts",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The brain may be a room temperature quantum system according to Roger Penrose",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Microtubules may be responsible for quantum coherence in the brain and are the on/off switches for conscious perception",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The caudate nucleus and putamen in the brain's basal ganglia determine a person's psychic ability based on neuronal density",
+      "attributed_to": "Gary Nolan",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Confirmatory feedback may be required for remote viewing to work - remote viewers see feedback from the future",
+      "attributed_to": "Eric Wargo",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Quantum computers can theoretically send information back in time",
+      "attributed_to": "Eric Wargo",
+      "attribution_confidence": "medium",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The brain is a hybrid of classical and quantum systems",
+      "attributed_to": "Eric Wargo",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Efim Liberman's goldfish experiment showed that cytoskeletons are essential for conscious awareness and spatial navigation",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "precognition",
+    "quantum biology",
+    "remote viewing",
+    "Stargate program",
+    "consciousness",
+    "microtubules",
+    "intuition",
+    "psychic phenomena"
+  ]
+}

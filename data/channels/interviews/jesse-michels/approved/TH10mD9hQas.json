@@ -1,0 +1,187 @@
+{
+  "video_id": "TH10mD9hQas",
+  "title": "How I Know David Grusch Is Not Lying…",
+  "published_at": "2023-11-19T16:06:15Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=TH10mD9hQas",
+  "thumbnail_url": "https://i.ytimg.com/vi/TH10mD9hQas/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:33:49.829Z",
+  "summary": "Jesse Michels summarizes key points from his documentary with David Grusch, a former intelligence officer who testified about covert UFO crash retrieval programs. The video explores connections between UFOs and nuclear programs, historical debunking efforts, anti-gravity research, and calls for more serious investigation.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "David Grusch"
+  },
+  "acronyms": [
+    {
+      "term": "ICBM",
+      "expansion": "Intercontinental Ballistic Missile",
+      "definition": "Long-range nuclear missiles monitored by launch officers",
+      "confidence": "high"
+    },
+    {
+      "term": "PRP",
+      "expansion": "Personal Reliability Program",
+      "definition": "A screening program for personnel with access to nuclear weapons requiring them to report any medications or personal issues",
+      "confidence": "high"
+    },
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Modern government terminology for UFOs",
+      "confidence": "high"
+    },
+    {
+      "term": "NICAP",
+      "expansion": "National Investigations Committee on Aerial Phenomena",
+      "definition": "The first civilian UFO study group, formed by Townsend Brown",
+      "confidence": "high"
+    },
+    {
+      "term": "SCIF",
+      "expansion": "Sensitive Compartmented Information Facility",
+      "definition": "A secure room where classified information can be discussed, requiring leaving phones and electronic devices outside",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Manhattan Project",
+    "Blue Book",
+    "Skunkworks"
+  ],
+  "people_mentioned": [
+    "David Grusch",
+    "Robert Hastings",
+    "Jacques Vallee",
+    "J. Robert Oppenheimer",
+    "Edward Condon",
+    "Max Born",
+    "Leslie Groves",
+    "Guy Hottel",
+    "Townsend Brown",
+    "Paul Schatzkin",
+    "Curtis LeMay",
+    "John McCone",
+    "E. Howard Hunt",
+    "Walter B. Smith",
+    "Allen Dulles",
+    "Carl Sagan",
+    "John F. Kennedy"
+  ],
+  "organizations_mentioned": [
+    "FBI",
+    "CIA",
+    "Air Force",
+    "FAA",
+    "Department of Energy",
+    "Atomic Energy Commission",
+    "Pentagon",
+    "Navy",
+    "Martin Vega Corporation",
+    "Lockheed Martin",
+    "Washington Post",
+    "Congress",
+    "Intelligence Community Inspector General"
+  ],
+  "events": [
+    {
+      "year": 1942,
+      "description": "The Navy fires Townsend Brown without cause",
+      "confidence": "high"
+    },
+    {
+      "year": 1946,
+      "description": "McMahon Atomic Secrecy Act drafted, predecessor to 1954 Atomic Energy Act",
+      "confidence": "high"
+    },
+    {
+      "year": 1952,
+      "description": "Guy Hottel memo describing crashed UFO with alien crew becomes most read document on FBI website",
+      "confidence": "high"
+    },
+    {
+      "year": 1953,
+      "description": "CIA Director Walter B. Smith writes about using UFO phenomena for psychological warfare against Soviets",
+      "confidence": "high"
+    },
+    {
+      "year": 1954,
+      "description": "Atomic Energy Act passed, which Grusch claims was written to protect UFO secrets",
+      "confidence": "high"
+    },
+    {
+      "year": 1963,
+      "description": "Document allegedly showing JFK asking CIA Director about unknowns in space, dated November 12th, 10 days before his death",
+      "confidence": "medium"
+    },
+    {
+      "year": 1966,
+      "description": "Edward Condon's clearance mysteriously restored and he's placed on panel that deals death blow to UFO research",
+      "confidence": "high"
+    },
+    {
+      "year": 2006,
+      "description": "Document supposedly released under FOIA showing JFK asking about unknowns in space",
+      "confidence": "low"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "David Grusch brought 40 people who have handled exotic UFO material firsthand to the Intelligence Community's Inspector General",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "The 1954 Atomic Energy Act was deliberately written to protect UFO secrets using nuclear secrecy provisions",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Manhattan Project was basically the original UFO program and received UFO reports",
+      "attributed_to": "David Grusch",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The B2 stealth bomber uses Townsend Brown's electric gravitics technology",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Roswell crash materials were reportedly taken to Wright Patterson Air Force Base, which became an anti-gravity research center in the 1950s",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "E. Howard Hunt claimed JFK's death had to do partially with his inquiries into UFOs",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Department of Energy and Manhattan Project clearance system is most applicable to UFOs, not clearances that roll up to the Executive Branch",
+      "attributed_to": "Jacques Vallee",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Lockheed Martin's response to Grusch's testimony was that questions about UAPs are best answered by the federal government",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "UFO crash retrieval programs",
+    "nuclear-UFO connection",
+    "atomic energy secrecy",
+    "anti-gravity research",
+    "government disclosure",
+    "historical UFO cover-ups",
+    "Manhattan Project"
+  ]
+}

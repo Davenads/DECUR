@@ -1,0 +1,59 @@
+{
+  "video_id": "zXm_bPNt7zc",
+  "title": "THIS Is Why Quantum Computers Are So Hard To Make",
+  "published_at": "2023-02-21T21:45:02Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=zXm_bPNt7zc",
+  "thumbnail_url": "https://i.ytimg.com/vi/zXm_bPNt7zc/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:43:17.512Z",
+  "summary": "This video discusses the challenges of building quantum computers, explaining how quantum decoherence occurs when subatomic particles interact with observers, causing them to collapse from superposition states. It covers why quantum hardware requires specific, energy-intensive environments to maintain coherence.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [],
+  "programs_mentioned": [],
+  "people_mentioned": [],
+  "organizations_mentioned": [],
+  "events": [],
+  "key_claims": [
+    {
+      "claim": "Subatomic particles exist in a probabilistic state of many possibilities but collapse into a single state when they interact with an observer",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Quantum hardware will decohere if interfered with by anything from the outside, making this the main bottleneck for building functional quantum computers",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Quantum computers require very specific and energy-intensive environments to maintain coherence",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "All quantum computer algorithms are universal computations, meaning any algorithm can be modeled on quantum computers",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "high"
+    },
+    {
+      "claim": "Deep is initially using a quantum computer simulator instead of quantum hardware",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    }
+  ],
+  "topics": [
+    "quantum computing",
+    "quantum decoherence",
+    "quantum superposition",
+    "quantum hardware challenges",
+    "quantum simulation"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "video_id": "PsdTTp_JJjk",
+  "title": "Private Aerospace's Interest in UFOs!",
+  "published_at": "2024-11-01T02:50:48Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=PsdTTp_JJjk",
+  "thumbnail_url": "https://i.ytimg.com/vi/PsdTTp_JJjk/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:14:41.659Z",
+  "summary": "This brief interview segment discusses how private aerospace companies like Lockheed Martin view UFOs as business opportunities. The conversation covers Ben Rich's characterization of UFOs as 'unfunded opportunities' and explores the apparent contradiction between Lockheed's interest in UFO phenomena and their alleged efforts to kill related legislation.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "UFOs",
+      "expansion": "Unfunded Opportunities",
+      "definition": "Ben Rich's term for UFOs, implying they represent potential business/technology opportunities without current funding",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Skunk Works"
+  ],
+  "people_mentioned": [
+    "Ben Rich",
+    "Tom DeLonge",
+    "Rob Weiss",
+    "Mike Turner"
+  ],
+  "organizations_mentioned": [
+    "Lockheed Martin",
+    "Skunk Works",
+    "Wikileaks",
+    "Congress"
+  ],
+  "events": [
+    {
+      "year": 2016,
+      "description": "Lockheed Martin/Skunk Works working with Tom DeLonge on UFO-related matters",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "description": "Lockheed Martin/Skunk Works working with Tom DeLonge on UFO-related matters",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Ben Rich, president of Skunk Works, used to call UFOs 'unfunded opportunities'",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Emails between Rob Weiss and Tom DeLonge were revealed through Wikileaks showing Lockheed wanted to discuss UFO phenomena",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Lockheed Martin worked through Mike Turner to kill UFO-related legislation",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "low"
+    },
+    {
+      "claim": "Aerospace companies want Congress to authorize laws giving them patent rights to UFO-related technology including superluminal flight and anti-gravity",
+      "attributed_to": "unknown",
+      "attribution_confidence": "low",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "private aerospace",
+    "Lockheed Martin",
+    "UFO technology",
+    "government contracts",
+    "patent rights",
+    "disclosure legislation"
+  ]
+}

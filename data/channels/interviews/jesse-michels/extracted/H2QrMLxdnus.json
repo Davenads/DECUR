@@ -1,0 +1,74 @@
+{
+  "video_id": "H2QrMLxdnus",
+  "title": "The Dark Origins Of Skinwalker Ranch",
+  "published_at": "2023-02-27T20:00:10Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=H2QrMLxdnus",
+  "thumbnail_url": "https://i.ytimg.com/vi/H2QrMLxdnus/mqdefault.jpg",
+  "extracted_at": "2026-03-14T21:42:27.275Z",
+  "summary": "This interview covers the history of Skinwalker Ranch, a paranormal hotspot in Utah's Uinta Basin. It discusses the Sherman family's experiences with anomalous phenomena in the 1990s, Robert Bigelow's acquisition of the property, and its connection to the government's AATIP UFO program.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "unknown"
+  },
+  "acronyms": [
+    {
+      "term": "AATIP",
+      "expansion": "Advanced Aerospace Threat Identification Program",
+      "definition": "The official government UFO program led by Lou Elizondo that studied Skinwalker Ranch between 2007 and 2012",
+      "confidence": "medium"
+    }
+  ],
+  "programs_mentioned": [
+    "AATIP"
+  ],
+  "people_mentioned": [
+    "Robert Bigelow",
+    "Lou Elizondo"
+  ],
+  "organizations_mentioned": [
+    "Budget Suites"
+  ],
+  "events": [
+    {
+      "year": 2007,
+      "description": "Skinwalker Ranch became the center of study for AATIP, the official government UFO program",
+      "confidence": "high"
+    },
+    {
+      "year": 2012,
+      "description": "End of AATIP's study period at Skinwalker Ranch",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The Sherman family encountered orbs, UFOs, Skin Walkers, and an oversized bipedal wolf that could withstand a close range shotgun attack",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Robert Bigelow has a family history of paranormal activity",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Skinwalker Ranch was the center of study for AATIP between 2007 and 2012",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    }
+  ],
+  "topics": [
+    "Skinwalker Ranch",
+    "paranormal phenomena",
+    "UFOs",
+    "AATIP",
+    "Robert Bigelow",
+    "government UFO research",
+    "cryptids"
+  ]
+}

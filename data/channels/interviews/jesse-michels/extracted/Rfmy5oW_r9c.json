@@ -1,0 +1,150 @@
+{
+  "video_id": "Rfmy5oW_r9c",
+  "title": "“The NSA Hired Me To Speak To Aliens!” -Sergeant Dan Sherman",
+  "published_at": "2025-10-17T18:00:59Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=Rfmy5oW_r9c",
+  "thumbnail_url": "https://i.ytimg.com/vi/Rfmy5oW_r9c/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:44:12.966Z",
+  "summary": "Dan Sherman, a retired Air Force technical sergeant, describes being recruited into a highly classified NSA program called Project Preserve Destiny in the early 1990s. He claims he was genetically altered as a fetus to become an 'intuitive communicator' capable of telepathically receiving and transmitting messages with alien beings, and details his training process involving sine wave visualization and mental tone matching.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Dan Sherman"
+  },
+  "acronyms": [
+    {
+      "term": "NSA",
+      "expansion": "National Security Agency",
+      "definition": "The agency in charge of all signals intelligence that America conducts",
+      "confidence": "high"
+    },
+    {
+      "term": "ELINT",
+      "expansion": "Electronic Intelligence",
+      "definition": "Military career field that analyzes electronic communications and emissions from enemy sources for intelligence value",
+      "confidence": "high"
+    },
+    {
+      "term": "ASVAB",
+      "expansion": "Armed Services Vocational Aptitude Battery",
+      "definition": "Tests used to qualify and place recruits into military career fields",
+      "confidence": "high"
+    },
+    {
+      "term": "TDY",
+      "expansion": "Temporary Duty",
+      "definition": "Temporary assignment to a different location for training or other purposes",
+      "confidence": "high"
+    },
+    {
+      "term": "IC",
+      "expansion": "Intuitive Communicator",
+      "definition": "A person genetically modified to have heightened ability to telepathically communicate with alien beings",
+      "confidence": "high"
+    },
+    {
+      "term": "PPD",
+      "expansion": "Project Preserve Destiny",
+      "definition": "Classified program designed to genetically manage human fetuses to create intuitive communicators",
+      "confidence": "high"
+    },
+    {
+      "term": "DD214",
+      "expansion": "Department of Defense Form 214",
+      "definition": "Military service record documenting a service member's time in the military",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Project Preserve Destiny",
+    "EA280"
+  ],
+  "people_mentioned": [
+    "Dan Sherman",
+    "Jesse Michels",
+    "Timothy Good",
+    "President Carter",
+    "Kenneth Arnold"
+  ],
+  "organizations_mentioned": [
+    "NSA",
+    "National Security Agency",
+    "Air Force",
+    "CIA",
+    "Marines",
+    "Navy",
+    "Army"
+  ],
+  "events": [
+    {
+      "year": 1947,
+      "description": "United States allegedly came into contact with an alien species (possibly referencing Roswell)",
+      "confidence": "medium"
+    },
+    {
+      "year": 1960,
+      "description": "Project Preserve Destiny allegedly started",
+      "confidence": "medium"
+    },
+    {
+      "year": 1963,
+      "description": "Dan Sherman's mother was allegedly abducted and Sherman was genetically altered as a fetus",
+      "confidence": "medium"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "The US government came into contact with an alien species around 1947 and started Project Preserve Destiny in 1960",
+      "attributed_to": "Dan Sherman",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Project Preserve Destiny was designed to genetically manage human fetuses so they would have heightened ability to intuitively communicate with aliens",
+      "attributed_to": "Dan Sherman",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Sherman's mother was abducted by aliens and Sherman was genetically altered as a fetus in 1963 to become an intuitive communicator",
+      "attributed_to": "Dan Sherman",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Gray projects exist above black projects, with black projects providing cover and funding for gray projects",
+      "attributed_to": "Dan Sherman",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Intuitive communicators were being trained for some future event where the ability would help military command and control",
+      "attributed_to": "Dan Sherman",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "Sherman was trained to affect sine waves on a computer screen using only mental concentration",
+      "attributed_to": "Dan Sherman",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The government selected underprivileged families for the genetic modification program because a certain percentage of offspring would want to join the military",
+      "attributed_to": "Dan Sherman",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "alien contact",
+    "telepathy",
+    "NSA programs",
+    "genetic modification",
+    "black programs",
+    "military intelligence",
+    "alien abduction",
+    "whistleblower testimony"
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "video_id": "SZBI85yvV5A",
+  "title": "My Joe Rogan Appearance: What I Learned (ft. Young Jamie & Viktor Hovland)",
+  "published_at": "2025-06-04T19:53:36Z",
+  "channel": "Jesse Michels",
+  "channel_slug": "jesse-michels",
+  "youtube_url": "https://www.youtube.com/watch?v=SZBI85yvV5A",
+  "thumbnail_url": "https://i.ytimg.com/vi/SZBI85yvV5A/mqdefault.jpg",
+  "extracted_at": "2026-03-14T20:52:13.337Z",
+  "summary": "Jesse Michels discusses his appearance on the Joe Rogan Experience and hosts a special episode featuring Young Jamie (Joe Rogan's producer) and professional golfer Viktor Hovland at a golf course in Austin. The conversation covers UFO evidence, ancient civilizations, government secrecy around advanced technology, and the physics of exotic propulsion.",
+  "speakers": {
+    "host": "Jesse Michels",
+    "guest": "Jamie Vernon and Viktor Hovland"
+  },
+  "acronyms": [
+    {
+      "term": "AGI",
+      "expansion": "Artificial General Intelligence",
+      "definition": "A theoretical form of AI that can perform any intellectual task that a human can",
+      "confidence": "medium"
+    },
+    {
+      "term": "DOE",
+      "expansion": "Department of Energy",
+      "definition": "US government department that manages nuclear facilities and secret science programs",
+      "confidence": "high"
+    },
+    {
+      "term": "DARPA",
+      "expansion": "Defense Advanced Research Projects Agency",
+      "definition": "Research and development agency of the US Department of Defense",
+      "confidence": "medium"
+    },
+    {
+      "term": "UAP",
+      "expansion": "Unidentified Aerial Phenomena",
+      "definition": "Modern term for UFOs used by government and military",
+      "confidence": "high"
+    }
+  ],
+  "programs_mentioned": [
+    "Manhattan Project",
+    "Majestic 12",
+    "Star Wars (Strategic Defense Initiative)",
+    "ARPA (internet precursor)",
+    "Skunk Works",
+    "Human Genome Project"
+  ],
+  "people_mentioned": [
+    "Joe Rogan",
+    "Jesse Michels",
+    "Jamie Vernon",
+    "Viktor Hovland",
+    "Bob Lazar",
+    "David Grusch",
+    "Graham Hancock",
+    "Flint Dibble",
+    "Thomas Townsend Brown",
+    "Richard Bissell",
+    "Harold Malmgren",
+    "Jake Barber",
+    "Benito Mussolini",
+    "Pope Pius XII",
+    "General James Doolittle",
+    "Dwight Eisenhower",
+    "Beatrice Villale",
+    "Zahi Hawass",
+    "Robert Schoch",
+    "John Anthony West",
+    "Tom DeLonge",
+    "Steven Spielberg",
+    "Joe McMoneagle",
+    "Avi Loeb",
+    "Haim Eshed",
+    "Dan Burisch",
+    "Jacques Vallee",
+    "Doug Engelbart",
+    "Jeff Bezos",
+    "Elon Musk",
+    "Ramses II",
+    "Nick Pope"
+  ],
+  "organizations_mentioned": [
+    "Pentagon",
+    "Department of Energy",
+    "DARPA",
+    "Battelle Memorial Institute",
+    "Wright Patterson Air Force Base",
+    "Lockheed",
+    "Northrop",
+    "CIA",
+    "Italian Secret Services",
+    "Vatican",
+    "Israeli Space Force",
+    "Los Alamos",
+    "Brookhaven National Labs",
+    "Skunk Works",
+    "Disney"
+  ],
+  "events": [
+    {
+      "year": 1933,
+      "description": "UAP crash in Magenta, Italy under Mussolini's regime, later recovered by Americans",
+      "confidence": "high"
+    },
+    {
+      "year": 1944,
+      "description": "Italian UAP material moved to secure air base until end of fascist regime",
+      "confidence": "medium"
+    },
+    {
+      "year": 1946,
+      "description": "Ghost rockets observed in Sweden, over a thousand V2-like objects with anomalous capabilities",
+      "confidence": "high"
+    },
+    {
+      "year": 1954,
+      "description": "Atomic Energy Act established classification rules for nuclear materials",
+      "confidence": "high"
+    }
+  ],
+  "key_claims": [
+    {
+      "claim": "Richard Bissell, designer of Area 51, mentioned the 1933 Magenta crash to Harold Malmgren",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "The Vatican back-channeled information about Italian UAP recoveries to Americans",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Harold Malmgren's Wikipedia page was changed after his interview to discredit him",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Avi Loeb worked on the Star Wars program",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "medium",
+      "confidence": "low"
+    },
+    {
+      "claim": "DOE manages all nuclear sites across the US and has the tightest security since Los Alamos",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "high"
+    },
+    {
+      "claim": "Back to the Future references Thomas Townsend Brown's experiments with the flux capacitor and Pasadena location",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Close Encounters of the Third Kind references two crates representing advanced R&D programs at Lockheed and Northrop",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    },
+    {
+      "claim": "The Cosmatron at Brookhaven National Labs is the largest particle accelerator in the US",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Jake Barber claims to have physically handled recovered craft",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Skywatcher groups claim to have a 'dog whistle' frequency that attracts UFOs 100% of the time",
+      "attributed_to": "Jesse Michels",
+      "attribution_confidence": "high",
+      "confidence": "low"
+    }
+  ],
+  "topics": [
+    "UFO crashes and recoveries",
+    "Government secrecy",
+    "Ancient civilizations",
+    "Exotic propulsion physics",
+    "Department of Energy programs",
+    "Hollywood and UFO disclosure",
+    "Remote viewing"
+  ]
+}
