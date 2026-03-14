@@ -1,0 +1,310 @@
+{
+  "profile": {
+    "id": "jesse-michels",
+    "name": "Jesse Michels",
+    "aliases": ["Jesse Michels", "American Alchemy"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Founder and Host - American Alchemy (YouTube)",
+      "Venture Capitalist",
+      "Independent Journalist and Filmmaker"
+    ],
+    "service_period": "2018-present",
+    "organizations": ["American Alchemy"],
+    "clearance": null,
+    "summary": "Jesse Michels is the founder and host of American Alchemy, a YouTube channel with over 567,000 subscribers focused on UAP disclosure, fringe science, and interviews with high-profile insiders. His 2023 documentary-style interview with David Grusch - filmed before Grusch's congressional testimony - is widely credited as one of the first major media appearances to establish the whistleblower's public credibility. Michels has interviewed nearly every significant figure in the modern disclosure movement, making American Alchemy one of the most consequential independent journalism outlets in the UAP space.",
+    "education": [],
+    "early_career": [
+      "Background in venture capital prior to pivoting to independent journalism",
+      "Built American Alchemy as a platform bridging mainstream finance/tech audiences with UAP research"
+    ],
+    "key_events": [
+      { "year": "2021", "event": "Launched American Alchemy YouTube channel focusing on UAP and fringe science." },
+      { "year": "Dec 2021", "event": "Interviewed Stanford scientist Garry Nolan on UAP materials analysis and neurological effects on experiencers." },
+      { "year": "Feb 2022", "event": "Hosted landmark debate between Eric Weinstein and Hal Puthoff on UAP physics and government secrecy." },
+      { "year": "Sep 2023", "event": "Released documentary interview with David Grusch - one of Grusch's first major media appearances before congressional testimony." },
+      { "year": "Oct 2024", "event": "Released long-form documentary with Luis Elizondo covering AATIP, crash retrievals, and non-human intelligence." },
+      { "year": "Mar 2026", "event": "Hosted Eric Weinstein and Eric Davis in multi-hour discussion on crash retrieval physics and program compartmentalization." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO/UAP Task Force officer, whistleblower",
+      "relationship": "Michels conducted one of Grusch's earliest and most comprehensive pre-testimony interviews in September 2023, helping establish his public credibility before the landmark congressional hearing."
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP director",
+      "relationship": "Subject of a documentary-length interview released October 2024 covering Elizondo's full arc from special operations through AATIP and public disclosure."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "Physicist, AAWSAP/AATIP advisor",
+      "relationship": "Appeared in a February 2022 debate with Eric Weinstein on UAP physics; later solo interview on hidden technology arms race."
+    },
+    {
+      "id": "eric-davis",
+      "name": "Eric Davis",
+      "role": "Physicist, AAWSAP investigator",
+      "relationship": "Interviewed multiple times including a December 2024 solo session and a March 2026 multi-hour discussion alongside Eric Weinstein."
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Garry Nolan",
+      "role": "Stanford microbiologist, UAP materials researcher",
+      "relationship": "Early December 2021 interview on CIA engagement with UAP experiencers and anomalous isotope ratios in alleged crash materials."
+    },
+    {
+      "id": "ross-coulthart",
+      "name": "Ross Coulthart",
+      "role": "Investigative journalist",
+      "relationship": "2025 interview covering Coulthart's source network, the Bogota sphere phenomenon, and claims of Lockheed Martin holding alien craft."
+    },
+    {
+      "id": "daniel-sheehan",
+      "name": "Daniel Sheehan",
+      "role": "Public interest attorney",
+      "relationship": "August 2024 interview covering Sheehan's multi-decade involvement across Watergate, Pentagon Papers, Karen Silkwood, and UAP whistleblower representation."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Sep 2023",
+      "type": "film",
+      "title": "David Grusch Breaks Silence: Inside Secret UFO Programs",
+      "outlet": "American Alchemy (YouTube)",
+      "notes": "One of Grusch's first major media appearances. Michels conducted the interview before Grusch's July 2023 congressional testimony. Grusch detailed crash retrieval programs, non-human biologics recovery, and the Manhattan Project secrecy overlay on UAP programs."
+    },
+    {
+      "date": "Oct 2024",
+      "type": "film",
+      "title": "Multiple Alien Groups May Be Visiting Earth - Luis Elizondo Documentary",
+      "outlet": "American Alchemy (YouTube)",
+      "notes": "Long-form documentary covering Elizondo's full background in special operations, AATIP, crash retrieval programs, reverse engineering, and the esoteric dimensions of UAP phenomena."
+    },
+    {
+      "date": "Feb 2022",
+      "type": "film",
+      "title": "Eric Weinstein Debates CIA UFO Expert Hal Puthoff",
+      "outlet": "American Alchemy (YouTube)",
+      "notes": "Landmark debate on UAP physics, sequestered materials knowledge in aerospace corporations, and Puthoff's Stargate remote viewing program."
+    },
+    {
+      "date": "Mar 2026",
+      "type": "film",
+      "title": "Eric Weinstein Demands UFO Secrets From Pentagon Scientist",
+      "outlet": "American Alchemy (YouTube)",
+      "notes": "Eric Davis revealed crash retrieval program details including fewer than 40 total retrievals, more than 10 craft in US possession, and eight decades of failed reverse engineering."
+    },
+    {
+      "date": "Dec 2024",
+      "type": "film",
+      "title": "Eric Davis: A US President Was Briefed on UFOs",
+      "outlet": "American Alchemy (YouTube)",
+      "notes": "Davis discussed AAWSAP/AATIP briefings, harassment of Grusch after his whistleblower complaint, and George H.W. Bush's briefing on a 1960s UAP event during his CIA Director tenure."
+    },
+    {
+      "date": "Dec 2021",
+      "type": "film",
+      "title": "These Are Parts Of an Alien UFO - Stanford Scientist Garry Nolan",
+      "outlet": "American Alchemy (YouTube)",
+      "notes": "Nolan disclosed CIA recruitment to analyze UAP experiencers, neurological differences in their brains, and analysis of alleged crash material samples with anomalous isotope ratios."
+    }
+  ],
+  "interviews": {
+    "overview": "American Alchemy has conducted over 350 interviews since 2021. The curated set below focuses on guests with direct relevance to UAP disclosure, government programs, and key figures already documented in this platform.",
+    "catalog": [
+      {
+        "title": "Eric Weinstein Demands UFO Secrets From Pentagon Scientist",
+        "guest": "Eric Weinstein and Eric Davis",
+        "date": "2026-03-08",
+        "youtube_url": "https://www.youtube.com/watch?v=xnxasfyHtfo",
+        "summary": "Eric Davis details crash retrieval program scope, the absence of physicists in reverse engineering efforts, and eight decades of failed attempts to reproduce manufacturing processes of recovered craft.",
+        "notable_claims": [
+          "Less than 40 total crash retrievals, more than 10 craft in US possession",
+          "The Roswell/Corona crash involved a craft of non-human origin",
+          "CIA DS&T was the portfolio owner of the crash retrieval program with Glen Gaffney involved"
+        ]
+      },
+      {
+        "title": "The Lone Hacker That Found NASA's Secret UFO Fleet",
+        "guest": "Gary McKinnon",
+        "date": "2026-03-01",
+        "youtube_url": "https://www.youtube.com/watch?v=2ttdlCa5ZCI",
+        "summary": "British hacker who broke into 97 US military and NASA networks in 2000-2001 describes seeing a photograph of a cigar-shaped craft above Earth and a spreadsheet titled 'non-terrestrial officers'.",
+        "notable_claims": [
+          "Found a spreadsheet at Johnson Space Center titled 'non-terrestrial officers' with names and ranks",
+          "NASA military networks had blank or trivial passwords in 2000",
+          "US authorities sought 70 years imprisonment"
+        ]
+      },
+      {
+        "title": "Army Captures Live Alien (Hospital Report Revealed)",
+        "guest": "James Fox",
+        "date": "2025-12-21",
+        "youtube_url": "https://www.youtube.com/watch?v=hBrfe4hFuM0",
+        "summary": "James Fox presents documentary investigation of the 1996 Varginha, Brazil incident including a neurosurgeon's claim of direct contact with a live alien being in a hospital ICU.",
+        "notable_claims": [
+          "Neurosurgeon had direct telepathic communication with a live captured alien in a hospital ICU for 3-4 minutes",
+          "Military officer Marco Cherezi died from unknown bacteria after handling an alien being",
+          "Bacteria was unlike any known Earth species, completely resistant to antibiotics"
+        ]
+      },
+      {
+        "title": "I Located A UFO Base In Arizona (Ft. Ross Coulthart)",
+        "guest": "Ross Coulthart",
+        "date": "2025-06-21",
+        "youtube_url": "https://www.youtube.com/watch?v=V00WcEiKRAY",
+        "summary": "Coulthart discusses Navy scientist Nat Kobitz being shown a non-terrestrial bulkhead at Wright Patterson AFB, Lockheed Martin holding alien spacecraft, and CIA blocking transfer to Bigelow Aerospace.",
+        "notable_claims": [
+          "Nat Kobitz shown a piece of bulkhead at Wright Patterson bonded at the atomic level",
+          "US has recovered craft from Roswell, Aztec, and Kingman incidents",
+          "CIA prevented transfer of alien craft from Lockheed Martin to Bigelow Aerospace"
+        ]
+      },
+      {
+        "title": "They Have Craft - Hal Puthoff Exposes Hidden Tech Arms Race",
+        "guest": "Hal Puthoff",
+        "date": "2025-05-11",
+        "youtube_url": "https://www.youtube.com/watch?v=462D-z7bhl4",
+        "summary": "Puthoff describes a Washington meeting where officials revealed that the US, Russia, and China have all obtained crashed extraterrestrial craft and non-human bodies.",
+        "notable_claims": []
+      },
+      {
+        "title": "UFO Secrets Are Held By A Global Cabal (Ft. Steven Greer)",
+        "guest": "Steven Greer",
+        "date": "2025-04-10",
+        "youtube_url": "https://www.youtube.com/watch?v=areO7Mej44E",
+        "summary": "Greer claims a transnational criminal organization controls advanced technologies including gravity control and free energy, and that most modern UFO sightings are man-made craft operated by human programs.",
+        "notable_claims": []
+      },
+      {
+        "title": "Eric Davis: A US President Was Briefed on UFOs",
+        "guest": "Eric Davis",
+        "date": "2024-12-12",
+        "youtube_url": "https://www.youtube.com/watch?v=LnAiNChnuEQ",
+        "summary": "Davis discusses AAWSAP/AATIP briefings to Congress, harassment of Grusch after his whistleblower complaint, and George H.W. Bush's classified briefing on a 1960s UAP event.",
+        "notable_claims": [
+          "Grusch was physically harassed at his home and in his vehicles by unknown persons after filing whistleblower complaint",
+          "Someone illegally accessed Grusch's medical files and leaked his PTSD episode to media",
+          "George H.W. Bush was briefed on a major UAP event from the early 1960s during his CIA Director tenure"
+        ]
+      },
+      {
+        "title": "Multiple Alien Groups May Be Visiting Earth - Luis Elizondo Documentary",
+        "guest": "Luis Elizondo",
+        "date": "2024-10-10",
+        "youtube_url": "https://www.youtube.com/watch?v=1f16VvXaSSE",
+        "summary": "Documentary-length interview covering Elizondo's full arc from special operations through AATIP, crash retrieval programs, reverse engineering, and esoteric dimensions of UAP phenomena.",
+        "notable_claims": [
+          "American Legacy UAP reverse engineering programs exist",
+          "UAP are interested in nuclear and military capabilities",
+          "UAP are real and we are not alone"
+        ]
+      },
+      {
+        "title": "The Most Important UFO Investigator On The Planet (ft. James Fox)",
+        "guest": "James Fox",
+        "date": "2024-09-28",
+        "youtube_url": "https://www.youtube.com/watch?v=bVhSPH2A5Vw",
+        "summary": "Fox discusses the 1996 Varginha crash, a classified parallel UFO program running alongside Blue Book, and the Robertson Panel's 1953 policy of systematically ridiculing UFO reports through media.",
+        "notable_claims": [
+          "A classified document revealed a parallel well-funded UFO investigation running alongside Project Blue Book",
+          "The 1953 Robertson Panel adopted a classified policy of systematically ridiculing UFO reports through media"
+        ]
+      },
+      {
+        "title": "The Man Involved In Every American Conspiracy",
+        "guest": "Danny Sheehan",
+        "date": "2024-08-22",
+        "youtube_url": "https://www.youtube.com/watch?v=2SQXAPCdmPE",
+        "summary": "Sheehan covers his involvement across Watergate, Pentagon Papers, Karen Silkwood, and UAP whistleblower representation, and describes Congress ordering all military services and intelligence agencies to compile all UFO information.",
+        "notable_claims": [
+          "Congress and the President ordered all six military services and 18 intelligence agencies to compile all UFO information by October 20, 2024"
+        ]
+      },
+      {
+        "title": "David Grusch Breaks Silence: Inside Secret UFO Programs",
+        "guest": "David Grusch",
+        "date": "2023-09-11",
+        "youtube_url": "https://www.youtube.com/watch?v=kRO5jOa06Qw",
+        "summary": "One of Grusch's first major media appearances before his congressional testimony. Grusch details crash retrieval programs, non-human biologics recovery, and the Manhattan Project secrecy overlay on UAP programs.",
+        "notable_claims": [
+          "Nearly 40 witnesses came forward to Grusch about covert UAP programs",
+          "Non-human biologics were recovered along with crashed craft",
+          "UAP show consistent interest in nuclear technology based on external observation"
+        ]
+      },
+      {
+        "title": "Whistleblower Dave Grusch: Oppenheimer's Involvement With UFOs",
+        "guest": "David Grusch",
+        "date": "2023-10-04",
+        "youtube_url": "https://www.youtube.com/watch?v=6nxXRamdnQc",
+        "summary": "Grusch explains how Manhattan Project secrecy protocols were overlaid onto UAP programs, the connection between the Atomic Energy Act and UAP classification, and Oppenheimer's receipt of early UAP reports.",
+        "notable_claims": [
+          "The Schumer Amendment cites the McMahon Act of 1946 and references Department of Energy trans-classified nuclear information"
+        ]
+      },
+      {
+        "title": "Graham Hancock: Aliens, Atlantis and the Apocalypse",
+        "guest": "Graham Hancock",
+        "date": "2022-12-22",
+        "youtube_url": "https://www.youtube.com/watch?v=dfPfPB601hw",
+        "summary": "Hancock presents his theory of a lost ancient civilization predating conventional history, the younger Dryas impact event, psychedelics and ancient religion, and the Ark of the Covenant's possible location.",
+        "notable_claims": [
+          "The younger Dryas impact date aligns precisely with Plato's dates for the destruction of Atlantis",
+          "Francis Crick concluded DNA could not have evolved on Earth in the available time and proposed directed panspermia"
+        ]
+      },
+      {
+        "title": "Eric Weinstein Debates CIA UFO Expert Hal Puthoff",
+        "guest": "Eric Weinstein and Hal Puthoff",
+        "date": "2022-02-11",
+        "youtube_url": "https://www.youtube.com/watch?v=iQOibpIDx-4",
+        "summary": "Debate on UAP physics, sequestered materials knowledge in aerospace corporations, physics beyond general relativity, and Puthoff's 20-year Stargate remote viewing program.",
+        "notable_claims": [
+          "Aerospace corporations have UAP materials knowledge sequestered against FOIA through proprietary labels, set up that way deliberately",
+          "Parts of the government consider wielding stigma as a tool for keeping programs secret to be their job",
+          "Stargate was a 20-year, $20 million program"
+        ]
+      },
+      {
+        "title": "These Are Parts Of an Alien UFO - Stanford Scientist Garry Nolan",
+        "guest": "Garry Nolan",
+        "date": "2021-12-10",
+        "youtube_url": "https://www.youtube.com/watch?v=dzTZbSNsKV8",
+        "summary": "Nolan discloses CIA recruitment to analyze UAP experiencers, neurological differences in their brains in the caudate nucleus and putamen, and analysis of alleged crash material samples with anomalous isotope ratios.",
+        "notable_claims": [
+          "The CIA came to Nolan's Stanford office to request analysis of people who claimed UFO contact",
+          "UFO experiencers showed increased neural density in caudate nucleus and putamen, also present in family members suggesting a genetic component",
+          "Alleged crash materials from Brazil showed isotope ratios that would have required a centrifuge to produce"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "American Alchemy YouTube Channel",
+      "url": "https://www.youtube.com/@JesseMichels",
+      "type": "YouTube",
+      "notes": "Primary source - 350+ interviews covering UAP disclosure, fringe science, and insider testimony (2021-present)"
+    },
+    {
+      "title": "David Grusch Breaks Silence - American Alchemy",
+      "url": "https://www.youtube.com/watch?v=kRO5jOa06Qw",
+      "type": "Interview",
+      "notes": "September 2023 - landmark interview before Grusch's congressional testimony"
+    },
+    {
+      "title": "Luis Elizondo Documentary - American Alchemy",
+      "url": "https://www.youtube.com/watch?v=1f16VvXaSSE",
+      "type": "Documentary",
+      "notes": "October 2024 - long-form documentary covering Elizondo's full disclosure arc"
+    }
+  ]
+}

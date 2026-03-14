@@ -671,5 +671,19 @@
     "data_file": "john-mack.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "jesse-michels",
+    "name": "Jesse Michels",
+    "aliases": ["American Alchemy"],
+    "role": "Independent Journalist and Filmmaker; Founder, American Alchemy",
+    "period": "2021-present",
+    "affiliation": "American Alchemy (YouTube)",
+    "summary": "Founder and host of American Alchemy, a YouTube channel with 567K+ subscribers covering UAP disclosure, fringe science, and insider testimony. Conducted one of David Grusch's first major media appearances before his congressional testimony in 2023. Has interviewed nearly every significant figure in modern UAP disclosure across 350+ episodes, making American Alchemy one of the most consequential independent journalism outlets in the field.",
+    "status": "detailed",
+    "tags": ["journalism", "American Alchemy", "YouTube", "Grusch", "Elizondo", "interviews", "disclosure", "independent media"],
+    "data_file": "jesse-michels.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]
