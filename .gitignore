@@ -65,11 +65,14 @@ aod-audit-cheatsheet.txt
 /YTDL_Scripts/output/
 /YTDL_Scripts/downloads/
 /YTDL_Scripts/*.log
-# Gerb channel pipeline - raw data (large, machine-generated)
+# Channel pipeline - raw data (large, machine-generated, regenerable)
 /data/channels/gerb/transcripts/*.json
 /data/channels/gerb/extracted/*.json
 /data/channels/gerb/approved/*.json
-# Keep index, contributions, and .gitkeep files
+/data/channels/interviews/*/transcripts/*.json
+/data/channels/interviews/*/extracted/*.json
+/data/channels/interviews/*/approved/*.json
+# Keep index.json, contributions/, and .gitkeep files
 
 # Script output artifacts (generated, not source)
 /scripts/output/
