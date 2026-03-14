@@ -372,7 +372,13 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) =
   const associatedPeople: AssociatedPerson[] = data.associated_people ?? [];
   const disclosures: Disclosure[] = data.disclosures ?? [];
   const sources: Source[] = data.sources ?? [];
-  const keyEvents: KeyEvent[] = profile.key_events ?? [];
+  // Normalize key_events: tolerate both `year` and legacy `date` field names.
+  // If a `date` value like "1994-09-16" is present, extract the year portion.
+  const keyEvents: KeyEvent[] = (profile.key_events ?? []).map(ev => {
+    const raw = ev as { year?: string; date?: string; event: string };
+    const yearStr = raw.year ?? (raw.date ? String(raw.date).split('-')[0] : '');
+    return { year: yearStr, event: raw.event };
+  });
   const feature = detectFeature(data);
 
   const relatedCases = (casesData as Array<{

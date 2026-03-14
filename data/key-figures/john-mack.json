@@ -34,18 +34,18 @@
       "Began investigating accounts of anomalous contact experiences in 1990 after being introduced to Budd Hopkins' work"
     ],
     "key_events": [
-      { "date": "1929-10-04", "event": "Born in New York City, New York" },
-      { "date": "1955", "event": "Received M.D. from Harvard Medical School; began psychiatric residency and psychoanalytic training" },
-      { "date": "1976", "event": "Published 'A Prince of Disorder: The Life of T.E. Lawrence' (Little, Brown)" },
-      { "date": "1977", "event": "Won the Pulitzer Prize in Biography for 'A Prince of Disorder' - establishing his standing as a serious scholar independent of UAP research" },
-      { "date": "1990", "event": "Began investigating accounts of anomalous contact experiences after meeting Budd Hopkins; applied clinical psychiatric methodology to experiencer interviews" },
-      { "date": "1993", "event": "Founded the Program for Extraordinary Experience Research (PEER) at Harvard - institutionalizing the study of contact experiences within an academic medical framework" },
-      { "date": "1994-01", "event": "Published 'Abduction: Human Encounters with Aliens' (Scribner) - the first clinically grounded academic study of experiencers, based on interviews with over 200 subjects" },
-      { "date": "1994", "event": "Harvard Medical School launched a formal inquiry into his research practices and conclusions - a rare institutional challenge to a tenured full professor" },
-      { "date": "1994-09", "event": "Flew to Zimbabwe to personally investigate the Ariel School incident; interviewed 62 children who reported seeing a craft and non-human beings at recess on September 16, 1994; sessions filmed by filmmaker Randall Nickerson" },
-      { "date": "1995", "event": "Harvard Medical School inquiry concluded with no sanctions against Mack - a significant vindication of academic freedom and his right to pursue unconventional research" },
-      { "date": "1999", "event": "Published 'Passport to the Cosmos: Human Transformation and Alien Encounters' (Crown) - expanding his framework to address the spiritual and transformative dimensions of contact experiences" },
-      { "date": "2004-09-27", "event": "Died in London, England, after being struck by a drunk driver while walking from a dinner of the T.E. Lawrence Society; aged 74" }
+      { "year": "1929", "event": "Born in New York City, New York" },
+      { "year": "1955", "event": "Received M.D. from Harvard Medical School; began psychiatric residency and psychoanalytic training" },
+      { "year": "1976", "event": "Published 'A Prince of Disorder: The Life of T.E. Lawrence' (Little, Brown)" },
+      { "year": "1977", "event": "Won the Pulitzer Prize in Biography for 'A Prince of Disorder' - establishing his standing as a serious scholar independent of UAP research" },
+      { "year": "1990", "event": "Began investigating accounts of anomalous contact experiences after meeting Budd Hopkins; applied clinical psychiatric methodology to experiencer interviews" },
+      { "year": "1993", "event": "Founded the Program for Extraordinary Experience Research (PEER) at Harvard - institutionalizing the study of contact experiences within an academic medical framework" },
+      { "year": "Jan 1994", "event": "Published 'Abduction: Human Encounters with Aliens' (Scribner) - the first clinically grounded academic study of experiencers, based on interviews with over 200 subjects" },
+      { "year": "1994", "event": "Harvard Medical School launched a formal inquiry into his research practices and conclusions - a rare institutional challenge to a tenured full professor" },
+      { "year": "Sep 1994", "event": "Flew to Zimbabwe to personally investigate the Ariel School incident; interviewed 62 children who reported seeing a craft and non-human beings at recess on September 16, 1994; sessions filmed by filmmaker Randall Nickerson" },
+      { "year": "1995", "event": "Harvard Medical School inquiry concluded with no sanctions against Mack - a significant vindication of academic freedom and his right to pursue unconventional research" },
+      { "year": "1999", "event": "Published 'Passport to the Cosmos: Human Transformation and Alien Encounters' (Crown) - expanding his framework to address the spiritual and transformative dimensions of contact experiences" },
+      { "year": "2004", "event": "Died in London, England, after being struck by a drunk driver while walking from a dinner of the T.E. Lawrence Society; aged 74" }
     ]
   },
 
@@ -114,57 +114,72 @@
 
   "associated_people": [
     {
+      "id": "budd-hopkins",
       "name": "Budd Hopkins",
-      "relation": "Hopkins introduced Mack to experiencer research around 1990; the two collaborated in the early 1990s before Mack established his own independent clinical methodology through PEER"
+      "role": "Abduction researcher and colleague",
+      "relationship": "Hopkins introduced Mack to experiencer research around 1990; the two collaborated in the early 1990s before Mack established his own independent clinical methodology through PEER"
     },
     {
+      "id": "cynthia-hind",
       "name": "Cynthia Hind",
-      "relation": "MUFON Africa director who coordinated the initial response to the Ariel School incident and contacted Mack; she conducted the first interviews with the children before Mack's arrival in Zimbabwe"
+      "role": "MUFON Africa director and field coordinator",
+      "relationship": "MUFON Africa director who coordinated the initial response to the Ariel School incident and contacted Mack; she conducted the first interviews with the children before Mack's arrival in Zimbabwe"
     },
     {
+      "id": "whitley-strieber",
       "name": "Whitley Strieber",
-      "relation": "Author of 'Communion' (1987) and prominent experiencer; Strieber's account was one of the cultural touchstones that preceded Mack's clinical research and helped bring experiencer testimony to mainstream attention"
+      "role": "Author and prominent experiencer",
+      "relationship": "Author of 'Communion' (1987) and prominent experiencer; Strieber's account was one of the cultural touchstones that preceded Mack's clinical research and helped bring experiencer testimony to mainstream attention"
     },
     {
+      "id": "randall-nickerson",
       "name": "Randall Nickerson",
-      "relation": "Filmmaker who accompanied Mack to Zimbabwe in 1994 and filmed the Ariel School child interviews; spent nearly three decades completing the documentary 'Ariel Phenomenon,' released in 2022, which incorporated the original 1994 footage"
+      "role": "Filmmaker and documentarian",
+      "relationship": "Filmmaker who accompanied Mack to Zimbabwe in 1994 and filmed the Ariel School child interviews; spent nearly three decades completing the documentary 'Ariel Phenomenon,' released in 2022, which incorporated the original 1994 footage"
     },
     {
+      "id": "jacques-vallee",
       "name": "Jacques Vallee",
-      "relation": "Contemporary researcher whose interdimensional hypothesis offered a parallel framework for explaining UAP phenomena without requiring a simple extraterrestrial origin; Mack engaged Vallee's work as a broader theoretical context for his own clinical findings"
+      "role": "Contemporary UAP researcher",
+      "relationship": "Contemporary researcher whose interdimensional hypothesis offered a parallel framework for explaining UAP phenomena without requiring a simple extraterrestrial origin; Mack engaged Vallee's work as a broader theoretical context for his own clinical findings"
     }
   ],
 
   "disclosures": [
     {
       "date": "1994",
-      "type": "Book",
+      "type": "written",
+      "title": "Abduction: Human Encounters with Aliens",
       "outlet": "Scribner (New York)",
-      "description": "'Abduction: Human Encounters with Aliens' - the first clinically grounded academic study of UAP contact experiences, based on psychiatric interviews with over 200 subjects. Included detailed case studies with clinical assessments establishing the absence of psychopathology. Became a New York Times bestseller and triggered the Harvard Medical School inquiry."
+      "notes": "The first clinically grounded academic study of UAP contact experiences, based on psychiatric interviews with over 200 subjects. Included detailed case studies with clinical assessments establishing the absence of psychopathology. Became a New York Times bestseller and triggered the Harvard Medical School inquiry."
     },
     {
       "date": "1994",
       "type": "Field Investigation",
+      "title": "Ariel School Investigation, Zimbabwe",
       "outlet": "Ariel School, Ruwa, Zimbabwe / John Mack Institute Archives",
-      "description": "Personal investigation of the Ariel School incident: flew to Zimbabwe to interview 62 children who reported seeing a craft and non-human beings during school recess on September 16, 1994. Interviews conducted on film by Randall Nickerson. Accounts showed high consistency across independent interviews. The footage was preserved and incorporated into the 2022 documentary 'Ariel Phenomenon.'"
+      "notes": "Personal investigation of the Ariel School incident: flew to Zimbabwe to interview 62 children who reported seeing a craft and non-human beings during school recess on September 16, 1994. Interviews conducted on film by Randall Nickerson. Accounts showed high consistency across independent interviews. The footage was preserved and incorporated into the 2022 documentary 'Ariel Phenomenon.'"
     },
     {
       "date": "1994-1995",
-      "type": "Media",
+      "type": "television",
+      "title": "Media Coverage - Abduction and Harvard Inquiry",
       "outlet": "CNN, Time Magazine, The New York Times, international media",
-      "description": "Extensive media coverage following publication of 'Abduction' and the Harvard inquiry. Appeared in major television and print outlets defending his methodology and the clinical significance of his findings."
+      "notes": "Extensive media coverage following publication of 'Abduction' and the Harvard inquiry. Appeared in major television and print outlets defending his methodology and the clinical significance of his findings."
     },
     {
       "date": "1999",
-      "type": "Book",
+      "type": "written",
+      "title": "Passport to the Cosmos: Human Transformation and Alien Encounters",
       "outlet": "Crown (New York)",
-      "description": "'Passport to the Cosmos: Human Transformation and Alien Encounters' - expanded his framework to address cross-cultural patterns in contact experiences and the spiritual and transformative dimensions reported by experiencers, drawing on indigenous perspectives and transpersonal psychology."
+      "notes": "Expanded his framework to address cross-cultural patterns in contact experiences and the spiritual and transformative dimensions reported by experiencers, drawing on indigenous perspectives and transpersonal psychology."
     },
     {
       "date": "1990-2004",
-      "type": "Academic",
+      "type": "speech",
+      "title": "Academic Presentations and Congressional Staff Briefings",
       "outlet": "Various conferences, symposia, and congressional staff briefings",
-      "description": "Presented research findings at academic conferences and appeared before congressional staff briefings on UAP phenomena over a 14-year period. Consistently framed his work as a call for serious scientific inquiry rather than advocacy for a specific explanation."
+      "notes": "Presented research findings at academic conferences and appeared before congressional staff briefings on UAP phenomena over a 14-year period. Consistently framed his work as a call for serious scientific inquiry rather than advocacy for a specific explanation."
     }
   ],
 
