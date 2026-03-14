@@ -70,6 +70,7 @@ const DISCLOSURE_TYPE_LABELS: Record<string, string> = {
   'congressional-testimony': 'Congressional Testimony',
   'speech': 'Speech',
   'film': 'Film',
+  'interview': 'Interview',
   'formal-complaint': 'Formal Complaint',
   'declassification': 'Declassification',
 };
