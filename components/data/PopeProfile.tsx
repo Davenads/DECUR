@@ -27,38 +27,38 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       {/* Government investigator context banner */}
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-        <p className="text-xs font-bold text-blue-700 uppercase tracking-wide mb-1">Government Investigator</p>
-        <p className="text-sm text-blue-900 leading-relaxed">
+      <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/30 rounded-lg p-4">
+        <p className="text-xs font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Government Investigator</p>
+        <p className="text-sm text-blue-900 dark:text-blue-100 leading-relaxed">
           Pope ran the UK Ministry of Defence&apos;s official UAP investigation desk — a documented government role with Top Secret access — making him the closest British equivalent to Luis Elizondo. He entered the role as a skeptic and left as a cautious believer in genuine unknowns.
         </p>
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 leading-relaxed">{profile.summary}</p>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800">{profile.service_period}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
-          <p className="text-sm text-gray-800">{profile.clearance}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
         </div>
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">Career Background</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Career Background</h3>
         <ul className="space-y-1.5">
           {profile.career_background.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700">
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -67,14 +67,14 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Events</h3>
-        <div className="relative pl-6 border-l-2 border-gray-100 space-y-4">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Events</h3>
+        <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
           {profile.key_events.map((ev, i) => (
             <div key={i} className="relative">
-              <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white" />
+              <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
               <div className="flex items-start gap-3">
                 <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.date}</span>
-                <span className="text-sm text-gray-700">{ev.event}</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300">{ev.event}</span>
               </div>
             </div>
           ))}
@@ -91,41 +91,41 @@ const ModRoleTab: FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Title</p>
-          <p className="text-sm text-gray-800">{mod_role.title}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{mod_role.title}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Period</p>
-          <p className="text-sm text-gray-800">{mod_role.period}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{mod_role.period}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Reporting To</p>
-          <p className="text-sm text-gray-800">{mod_role.reporting_to}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{mod_role.reporting_to}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Annual Caseload</p>
-          <p className="text-sm text-gray-800">{mod_role.annual_caseload}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{mod_role.annual_caseload}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Access Level</p>
-          <p className="text-sm text-gray-800">{mod_role.access_level}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{mod_role.access_level}</p>
         </div>
       </div>
 
       <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
-        <h3 className="text-sm font-semibold text-gray-900">Methodology</h3>
-        <p className="text-sm text-gray-700 leading-relaxed">{mod_role.methodology}</p>
+        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">Methodology</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{mod_role.methodology}</p>
       </div>
 
       <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
-        <h3 className="text-sm font-semibold text-gray-900">Case Breakdown</h3>
-        <p className="text-sm text-gray-700 leading-relaxed">{mod_role.case_breakdown}</p>
+        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">Case Breakdown</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{mod_role.case_breakdown}</p>
       </div>
 
       <div>
-        <h3 className="text-base font-semibold text-gray-900 mb-3">Key Outputs</h3>
+        <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Outputs</h3>
         <ul className="space-y-2">
           {mod_role.key_outputs.map((o, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700">
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{o}</span>
             </li>
@@ -133,9 +133,9 @@ const ModRoleTab: FC = () => {
         </ul>
       </div>
 
-      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-        <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">Historical Significance</p>
-        <p className="text-sm text-amber-900 leading-relaxed">{mod_role.significance}</p>
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
+        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Historical Significance</p>
+        <p className="text-sm text-amber-900 dark:text-amber-100 leading-relaxed">{mod_role.significance}</p>
       </div>
     </div>
   );
@@ -146,7 +146,7 @@ const InvestigationsTab: FC = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
   return (
     <div className="space-y-6">
-      <p className="text-sm text-gray-700 leading-relaxed">{investigations.overview}</p>
+      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{investigations.overview}</p>
 
       <div className="space-y-3">
         {investigations.major_cases.map((c, i) => (
@@ -158,32 +158,32 @@ const InvestigationsTab: FC = () => {
               <div className="flex items-start gap-3">
                 <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit">{c.date}</span>
                 <div>
-                  <span className="text-sm font-semibold text-gray-900">{c.name}</span>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-gray-100">{c.name}</span>
                   <p className="text-xs text-gray-400 mt-0.5">{c.location}</p>
                 </div>
               </div>
               <span className="text-gray-400 shrink-0 mt-0.5">{openIdx === i ? '▲' : '▼'}</span>
             </button>
             {openIdx === i && (
-              <div className="px-4 pb-4 border-t border-gray-100 pt-3 space-y-3">
-                <p className="text-sm text-gray-700 leading-relaxed">{c.description}</p>
+              <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700 pt-3 space-y-3">
+                <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{c.description}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                     <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Witnesses</p>
-                    <p className="text-xs text-gray-700 leading-relaxed">{c.witnesses}</p>
+                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">{c.witnesses}</p>
                   </div>
                   <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                     <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Evidence</p>
-                    <p className="text-xs text-gray-700 leading-relaxed">{c.evidence}</p>
+                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed">{c.evidence}</p>
                   </div>
                 </div>
-                <div className="border border-blue-100 bg-blue-50 rounded-lg p-3">
-                  <p className="text-xs font-medium text-blue-600 uppercase tracking-wide mb-1">Pope&apos;s Assessment</p>
-                  <p className="text-xs text-blue-900 leading-relaxed italic">&quot;{c.pope_assessment}&quot;</p>
+                <div className="border border-blue-100 dark:border-blue-800/30 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-3">
+                  <p className="text-xs font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wide mb-1">Pope&apos;s Assessment</p>
+                  <p className="text-xs text-blue-900 dark:text-blue-100 leading-relaxed italic">&quot;{c.pope_assessment}&quot;</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-medium text-gray-400">Status:</span>
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 font-medium">{c.status}</span>
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 font-medium">{c.status}</span>
                 </div>
               </div>
             )}
@@ -205,7 +205,7 @@ const ClaimsTab: FC = () => {
           return (
             <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
               <div className="flex items-start justify-between gap-3">
-                <p className="text-sm font-medium text-gray-900 leading-snug">{c.claim}</p>
+                <p className="text-sm font-medium text-gray-900 dark:text-gray-100 leading-snug">{c.claim}</p>
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
               </div>
               <p className="text-xs text-gray-500 leading-relaxed">{c.basis}</p>
@@ -231,7 +231,7 @@ const DisclosuresTab: FC = () => {
             <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">{d.type}</span>
             <span className="text-xs text-gray-400">{d.outlet}</span>
           </div>
-          <p className="text-sm text-gray-700 leading-relaxed">{d.description}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{d.description}</p>
         </div>
       ))}
     </div>
@@ -249,7 +249,7 @@ const NetworkTab: FC = () => {
             <span className="text-xs font-bold text-primary">{p.name.charAt(0)}</span>
           </div>
           <div>
-            <p className="text-sm font-medium text-gray-900">{p.name}</p>
+            <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{p.name}</p>
             <p className="text-xs text-gray-500 leading-snug">{p.relation}</p>
           </div>
         </div>
@@ -268,10 +268,10 @@ const AssessmentTab: FC = () => {
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <h3 className="text-sm font-semibold text-green-700 mb-2">Supporting</h3>
+          <h3 className="text-sm font-semibold text-green-700 dark:text-green-400 mb-2">Supporting</h3>
           <ul className="space-y-2">
             {credibility.supporting.map((s, i) => (
-              <li key={i} className="flex gap-2 text-xs text-gray-700">
+              <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
                 <span className="text-green-500 mt-0.5 shrink-0">+</span>
                 <span>{s}</span>
               </li>
@@ -282,7 +282,7 @@ const AssessmentTab: FC = () => {
           <h3 className="text-sm font-semibold text-red-600 mb-2">Contradicting</h3>
           <ul className="space-y-2">
             {credibility.contradicting.map((c, i) => (
-              <li key={i} className="flex gap-2 text-xs text-gray-700">
+              <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
                 <span className="text-red-400 mt-0.5 shrink-0">-</span>
                 <span>{c}</span>
               </li>

@@ -27,22 +27,22 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 leading-relaxed">{profile.summary}</p>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800">{profile.service_period}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
-          <p className="text-sm text-gray-800">{profile.clearance}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
@@ -55,10 +55,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">Education</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Education</h3>
         <ul className="space-y-1.5">
           {profile.education.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700">
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -67,10 +67,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">Early Career</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Early Career</h3>
         <ul className="space-y-1.5">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700">
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -79,12 +79,12 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">Key Events</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Events</h3>
         <div className="space-y-2">
           {profile.key_events.map((ev, i) => (
             <div key={i} className="flex gap-3 text-sm">
               <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit">{ev.date}</span>
-              <span className="text-gray-700">{ev.event}</span>
+              <span className="text-gray-700 dark:text-gray-300">{ev.event}</span>
             </div>
           ))}
         </div>
@@ -103,46 +103,46 @@ const ResearchTab: FC = () => {
       <div>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-5 bg-primary rounded-full" />
-          <h3 className="text-base font-semibold text-gray-900">CIA Consultation — Brain Morphology Study</h3>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">CIA Consultation — Brain Morphology Study</h3>
         </div>
         <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
               <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Period</p>
-              <p className="text-sm text-gray-800">{cia.period}</p>
+              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.period}</p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
               <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Referring Agency</p>
-              <p className="text-sm text-gray-800">{cia.referring_agency}</p>
+              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.referring_agency}</p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
               <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Subject Count</p>
-              <p className="text-sm text-gray-800">{cia.subject_count}</p>
+              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.subject_count}</p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
               <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Method</p>
-              <p className="text-sm text-gray-800">{cia.method}</p>
+              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.method}</p>
             </div>
           </div>
 
           <div>
             <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Subject Profile</p>
-            <p className="text-sm text-gray-700">{cia.subject_profile}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.subject_profile}</p>
           </div>
 
-          <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
-            <p className="text-xs font-medium text-blue-700 uppercase tracking-wide mb-1">Key Finding</p>
-            <p className="text-sm text-gray-700">{cia.key_finding}</p>
+          <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded-lg p-4">
+            <p className="text-xs font-medium text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Key Finding</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.key_finding}</p>
           </div>
 
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
             <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Nolan Hypothesis</p>
-            <p className="text-sm text-gray-700">{cia.nolan_hypothesis}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.nolan_hypothesis}</p>
           </div>
 
-          <div className="bg-amber-50 border border-amber-100 rounded-lg p-4">
-            <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">Adverse Outcomes</p>
-            <p className="text-sm text-gray-700">{cia.adverse_outcomes}</p>
+          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800/30 rounded-lg p-4">
+            <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Adverse Outcomes</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.adverse_outcomes}</p>
           </div>
 
           <p className="text-xs text-gray-400 italic">{cia.classification_status}</p>
@@ -153,17 +153,17 @@ const ResearchTab: FC = () => {
       <div>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-5 bg-primary rounded-full" />
-          <h3 className="text-base font-semibold text-gray-900">Peer-Reviewed Publications</h3>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">Peer-Reviewed Publications</h3>
         </div>
         <div className="space-y-4">
           {publications.map((pub, i) => (
             <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm mb-0.5">{pub.title}</p>
+                  <p className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-0.5">{pub.title}</p>
                   <p className="text-xs text-gray-400 mb-1">{pub.journal} · {pub.year}</p>
                   <p className="text-xs text-gray-500 mb-3">Co-authors: {pub.co_authors.join(', ')}</p>
-                  <p className="text-sm text-gray-700">{pub.significance}</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">{pub.significance}</p>
                 </div>
                 <a
                   href={pub.url}
@@ -183,17 +183,17 @@ const ResearchTab: FC = () => {
       <div>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-5 bg-primary rounded-full" />
-          <h3 className="text-base font-semibold text-gray-900">Materials Analysis</h3>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">Materials Analysis</h3>
         </div>
         <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
-          <p className="text-sm text-gray-700">{mat.description}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300">{mat.description}</p>
           <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
             <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Methods Used</p>
-            <p className="text-sm text-gray-800">{mat.methods_used}</p>
+            <p className="text-sm text-gray-800 dark:text-gray-200">{mat.methods_used}</p>
           </div>
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-3">
             <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Public Statements</p>
-            <p className="text-sm text-gray-700">{mat.public_statements}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{mat.public_statements}</p>
           </div>
           <p className="text-xs text-gray-400 italic">{mat.classification_note}</p>
         </div>
@@ -209,34 +209,34 @@ const SolTab: FC = () => {
     <div className="space-y-5">
       <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Organization</p>
-        <h3 className="text-lg font-semibold text-gray-900 mb-0.5">{sol.full_name}</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{sol.full_name}</h3>
         <p className="text-xs text-gray-400">{sol.affiliation} · Est. {sol.established}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Nolan Role</p>
-          <p className="text-sm text-gray-800">{sol.nolan_role}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{sol.nolan_role}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Co-Founders</p>
-          <p className="text-sm text-gray-800">{sol.co_founders.join(', ')}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{sol.co_founders.join(', ')}</p>
         </div>
       </div>
 
       <div>
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Mission</p>
-        <p className="text-sm text-gray-700">{sol.mission}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300">{sol.mission}</p>
       </div>
 
       <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Inaugural Symposium</p>
-        <p className="text-sm text-gray-700">{sol.inaugural_symposium}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300">{sol.inaugural_symposium}</p>
       </div>
 
-      <div className="bg-blue-50 border border-blue-100 rounded-lg p-4">
-        <p className="text-xs font-medium text-blue-700 uppercase tracking-wide mb-1">Significance</p>
-        <p className="text-sm text-gray-700">{sol.significance}</p>
+      <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded-lg p-4">
+        <p className="text-xs font-medium text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Significance</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300">{sol.significance}</p>
       </div>
     </div>
   );
@@ -257,8 +257,8 @@ const ClaimsTab: FC = () => {
                 {cfg.label}
               </span>
             </div>
-            <p className="text-sm text-gray-800 leading-relaxed">{c.claim}</p>
-            {c.notes && <p className="text-xs text-gray-500 border-t border-gray-100 pt-3">{c.notes}</p>}
+            <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{c.claim}</p>
+            {c.notes && <p className="text-xs text-gray-500 border-t border-gray-100 dark:border-gray-700 pt-3">{c.notes}</p>}
           </div>
         );
       })}
@@ -280,13 +280,13 @@ const DisclosuresTab: FC = () => {
   };
 
   const typeBadges: Record<string, string> = {
-    'interview': 'bg-blue-100 text-blue-700',
-    'academic-paper': 'bg-green-100 text-green-700',
-    'conference': 'bg-purple-100 text-purple-700',
-    'podcast': 'bg-orange-100 text-orange-700',
-    'symposium': 'bg-teal-100 text-teal-700',
-    'congressional-briefing': 'bg-red-100 text-red-700',
-    'preprint': 'bg-indigo-100 text-indigo-700',
+    'interview': 'bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400',
+    'academic-paper': 'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400',
+    'conference': 'bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400',
+    'podcast': 'bg-orange-100 dark:bg-orange-900/20 text-orange-700 dark:text-orange-400',
+    'symposium': 'bg-teal-100 dark:bg-teal-900/20 text-teal-700 dark:text-teal-400',
+    'congressional-briefing': 'bg-red-100 dark:bg-red-900/20 text-red-700 dark:text-red-400',
+    'preprint': 'bg-indigo-100 dark:bg-indigo-900/20 text-indigo-700 dark:text-indigo-400',
   };
 
   return (
@@ -297,7 +297,7 @@ const DisclosuresTab: FC = () => {
             <span className="font-mono text-xs text-gray-400 whitespace-nowrap mt-0.5 pt-px">{d.date}</span>
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-2 mb-1">
-                <p className="font-medium text-gray-900 text-sm">{d.title}</p>
+                <p className="font-medium text-gray-900 dark:text-gray-100 text-sm">{d.title}</p>
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 whitespace-nowrap ${typeBadges[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
                   {typeLabels[d.type] ?? d.type}
                 </span>
@@ -319,9 +319,9 @@ const NetworkTab: FC = () => {
       <p className="text-sm text-gray-500">Key figures in Nolan's professional and advocacy network.</p>
       {associated_people.map(person => (
         <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-          <p className="font-semibold text-gray-900 text-sm">{person.name}</p>
+          <p className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{person.name}</p>
           <p className="text-xs text-primary mb-2">{person.role}</p>
-          <p className="text-sm text-gray-600">{person.relationship}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">{person.relationship}</p>
         </div>
       ))}
     </div>
@@ -337,22 +337,22 @@ const AssessmentTab: FC = () => {
         contradicting={credibility.contradicting.length}
       />
 
-      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-        <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">Methodology Note</p>
-        <p className="text-sm text-amber-900">
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
+        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Methodology Note</p>
+        <p className="text-sm text-amber-900 dark:text-amber-100">
           Nolan occupies a unique position: his institutional standing (Stanford, peer-reviewed publications) is the strongest of any public UAP figure, while some of his specific claims outpace his disclosed evidence. The credibility assessments here distinguish between his published/verifiable work and his more expansive public assertions.
         </p>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-green-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+        <h4 className="text-sm font-semibold text-green-700 dark:text-green-400 uppercase tracking-wide mb-3 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
           Supporting Arguments
         </h4>
         <div className="space-y-2">
           {credibility.supporting.map((arg, i) => (
-            <div key={i} className="border border-green-100 bg-green-50/50 rounded-lg p-3">
-              <p className="text-sm text-gray-700">{arg}</p>
+            <div key={i} className="border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-3">
+              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
             </div>
           ))}
         </div>
@@ -365,8 +365,8 @@ const AssessmentTab: FC = () => {
         </h4>
         <div className="space-y-2">
           {credibility.contradicting.map((arg, i) => (
-            <div key={i} className="border border-red-100 bg-red-50/50 rounded-lg p-3">
-              <p className="text-sm text-gray-700">{arg}</p>
+            <div key={i} className="border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-3">
+              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
             </div>
           ))}
         </div>

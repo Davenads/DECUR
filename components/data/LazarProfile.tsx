@@ -30,22 +30,22 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 leading-relaxed">{profile.summary}</p>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800">{profile.service_period}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance (claimed)</p>
-          <p className="text-sm text-gray-800">{profile.clearance}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800">{profile.organizations.join(' · ')}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
@@ -58,10 +58,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">Early Life &amp; Background</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Early Life &amp; Background</h3>
         <ul className="space-y-1.5">
           {profile.early_life.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700">
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -71,7 +71,7 @@ const OverviewTab: FC = () => {
 
       <div>
         <div className="flex items-center justify-between mb-3">
-          <h3 className="text-lg font-semibold text-gray-900">Key Events</h3>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Key Events</h3>
           <Link
             href="/data?category=events&source=lazar"
             className="text-xs text-primary hover:underline flex items-center gap-1"
@@ -88,7 +88,7 @@ const OverviewTab: FC = () => {
               <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">
                 {ev.date}
               </span>
-              <span className="text-gray-700">{ev.event}</span>
+              <span className="text-gray-700 dark:text-gray-300">{ev.event}</span>
             </div>
           ))}
         </div>
@@ -102,31 +102,31 @@ const FacilityTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-1">{facility.name}</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{facility.name}</h3>
         <p className="text-xs text-gray-400 mb-1">{facility.aliases.join(' · ')}</p>
-        <p className="text-sm text-gray-600">{facility.location}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">{facility.location}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Access Method</p>
-          <p className="text-sm text-gray-800">{facility.access}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{facility.access}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Hangar Bays</p>
-          <p className="text-sm text-gray-800">{facility.hangar_count} bays, one craft per bay (claimed)</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{facility.hangar_count} bays, one craft per bay (claimed)</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Construction</p>
-          <p className="text-sm text-gray-800">{facility.construction}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{facility.construction}</p>
         </div>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-2">Security Protocols</h4>
+        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-2">Security Protocols</h4>
         <ul className="space-y-1.5">
           {facility.security.map((s, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700">
+            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
               <span className="text-red-400 mt-0.5 shrink-0">■</span>
               <span>{s}</span>
             </li>
@@ -136,7 +136,7 @@ const FacilityTab: FC = () => {
 
       <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-2">Lazar&apos;s Account</p>
-        <p className="text-sm text-gray-700 leading-relaxed">{facility.lazar_account}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{facility.lazar_account}</p>
       </div>
     </div>
   );
@@ -148,7 +148,7 @@ const CraftTab: FC = () => {
     <div className="space-y-6">
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Total Craft at S-4</p>
-        <p className="text-2xl font-bold text-gray-900">{crafts.total_count}</p>
+        <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">{crafts.total_count}</p>
         <p className="text-xs text-gray-500 mt-0.5">One per hangar bay, all described as disc-shaped</p>
       </div>
 
@@ -162,12 +162,12 @@ const CraftTab: FC = () => {
       <div className="space-y-4">
         {crafts.descriptions.map((craft, i) => (
           <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-            <h4 className="font-semibold text-gray-900 mb-2">{craft.designation}</h4>
-            <p className="text-sm text-gray-700 mb-3">{craft.description}</p>
+            <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{craft.designation}</h4>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">{craft.description}</p>
             {craft.diameter_estimate && (
               <div className="flex items-center gap-2">
                 <span className="text-xs font-medium text-gray-400 uppercase tracking-wide">Diameter (claimed):</span>
-                <span className="text-xs text-gray-700">{craft.diameter_estimate}</span>
+                <span className="text-xs text-gray-700 dark:text-gray-300">{craft.diameter_estimate}</span>
               </div>
             )}
             {craft.notes && (
@@ -187,60 +187,60 @@ const PropulsionTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Overview</h3>
-        <p className="text-sm text-gray-700 leading-relaxed">{propulsion.overview}</p>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Overview</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{propulsion.overview}</p>
       </div>
 
       {/* Element 115 */}
       <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
         <div className="flex items-start justify-between gap-4 mb-3">
           <div>
-            <h4 className="font-semibold text-gray-900">Fuel Source</h4>
+            <h4 className="font-semibold text-gray-900 dark:text-gray-100">Fuel Source</h4>
             <p className="text-xs text-gray-400 mt-0.5">{propulsion.fuel.element}</p>
           </div>
-          <span className="text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded-full font-medium shrink-0">
+          <span className="text-xs px-2 py-1 bg-amber-100 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 rounded-full font-medium shrink-0">
             Element 115
           </span>
         </div>
-        <p className="text-sm text-gray-700 mb-2">{propulsion.fuel.claim}</p>
-        <p className="text-sm text-gray-600 mb-2">{propulsion.fuel.context}</p>
-        <div className="bg-blue-50 border border-blue-100 rounded p-3 mt-2">
-          <p className="text-xs font-medium text-blue-700 uppercase tracking-wide mb-1">Significance</p>
-          <p className="text-sm text-gray-700">{propulsion.fuel.significance}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{propulsion.fuel.claim}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{propulsion.fuel.context}</p>
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded p-3 mt-2">
+          <p className="text-xs font-medium text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Significance</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300">{propulsion.fuel.significance}</p>
         </div>
       </div>
 
       {/* Reactor */}
       <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-        <h4 className="font-semibold text-gray-900 mb-2">Reactor</h4>
-        <p className="text-sm text-gray-700 mb-2">{propulsion.reactor.description}</p>
-        <p className="text-sm text-gray-600">{propulsion.reactor.output}</p>
+        <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Reactor</h4>
+        <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{propulsion.reactor.description}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">{propulsion.reactor.output}</p>
       </div>
 
       {/* Gravity Amplifiers */}
       <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
         <div className="flex items-center gap-3 mb-3">
-          <h4 className="font-semibold text-gray-900">Gravity Amplifiers</h4>
+          <h4 className="font-semibold text-gray-900 dark:text-gray-100">Gravity Amplifiers</h4>
           <span className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">
             ×{propulsion.gravity_amplifiers.count}
           </span>
         </div>
-        <p className="text-sm text-gray-600 mb-1">
-          <span className="font-medium text-gray-700">Position:</span> {propulsion.gravity_amplifiers.position}
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+          <span className="font-medium text-gray-700 dark:text-gray-300">Position:</span> {propulsion.gravity_amplifiers.position}
         </p>
-        <p className="text-sm text-gray-700 mb-4">{propulsion.gravity_amplifiers.function}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{propulsion.gravity_amplifiers.function}</p>
 
         <h5 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Operating Modes</h5>
         <div className="space-y-2">
           {propulsion.gravity_amplifiers.modes.map(mode => {
             const isOpen = expandedMode === mode.name;
             return (
-              <div key={mode.name} className="border border-gray-100 rounded-lg overflow-hidden">
+              <div key={mode.name} className="border border-gray-100 dark:border-gray-700 rounded-lg overflow-hidden">
                 <button
                   onClick={() => setExpandedMode(isOpen ? null : mode.name)}
                   className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
                 >
-                  <span className="font-medium text-gray-800 text-sm">{mode.name}</span>
+                  <span className="font-medium text-gray-800 dark:text-gray-200 text-sm">{mode.name}</span>
                   <svg
                     className={`h-4 w-4 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                     fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -249,8 +249,8 @@ const PropulsionTab: FC = () => {
                   </svg>
                 </button>
                 {isOpen && (
-                  <div className="px-4 pb-4 border-t border-gray-100">
-                    <p className="text-sm text-gray-700 pt-3 mb-2">{mode.description}</p>
+                  <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700">
+                    <p className="text-sm text-gray-700 dark:text-gray-300 pt-3 mb-2">{mode.description}</p>
                     {mode.notes && <p className="text-xs text-gray-500 italic">{mode.notes}</p>}
                   </div>
                 )}
@@ -261,14 +261,14 @@ const PropulsionTab: FC = () => {
       </div>
 
       {/* Space-Time */}
-      <div className="bg-purple-50 border border-purple-100 rounded-lg p-4">
-        <p className="text-xs font-medium text-purple-700 uppercase tracking-wide mb-1">Space-Time Distortion</p>
-        <p className="text-sm text-gray-700">{propulsion.space_time_distortion}</p>
+      <div className="bg-purple-50 dark:bg-purple-900/20 border border-purple-100 dark:border-purple-800/30 rounded-lg p-4">
+        <p className="text-xs font-medium text-purple-700 dark:text-purple-400 uppercase tracking-wide mb-1">Space-Time Distortion</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300">{propulsion.space_time_distortion}</p>
       </div>
 
       <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Hull Glow Explanation</p>
-        <p className="text-sm text-gray-700">{propulsion.glow_explanation}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300">{propulsion.glow_explanation}</p>
       </div>
     </div>
   );
@@ -323,9 +323,9 @@ const ClaimsTab: FC = () => {
                   {cfg.label}
                 </span>
               </div>
-              <p className="text-sm text-gray-800 mb-2">{claim.claim}</p>
+              <p className="text-sm text-gray-800 dark:text-gray-200 mb-2">{claim.claim}</p>
               {claim.notes && (
-                <p className="text-xs text-gray-500 italic border-t border-gray-100 pt-2">{claim.notes}</p>
+                <p className="text-xs text-gray-500 italic border-t border-gray-100 dark:border-gray-700 pt-2">{claim.notes}</p>
               )}
             </div>
           );
@@ -338,10 +338,10 @@ const ClaimsTab: FC = () => {
 const DisclosuresTab: FC = () => {
   const { disclosures } = data;
   const typeColors: Record<string, string> = {
-    television:  'bg-blue-100 text-blue-700',
-    radio:       'bg-green-100 text-green-700',
-    podcast:     'bg-purple-100 text-purple-700',
-    documentary: 'bg-amber-100 text-amber-700',
+    television:  'bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400',
+    radio:       'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400',
+    podcast:     'bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400',
+    documentary: 'bg-amber-100 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400',
   };
   const typeDot: Record<string, string> = {
     television:  'bg-blue-400',
@@ -375,8 +375,8 @@ const DisclosuresTab: FC = () => {
           {Object.entries(typeCounts).sort((a, b) => b[1] - a[1]).map(([type, count]) => (
             <div key={type} className="flex items-center gap-1.5">
               <span className={`w-2 h-2 rounded-full shrink-0 ${typeDot[type] ?? 'bg-gray-400'}`} />
-              <span className="text-xs text-gray-600 capitalize">{type}</span>
-              <span className="text-xs font-semibold text-gray-800">{count}</span>
+              <span className="text-xs text-gray-600 dark:text-gray-400 capitalize">{type}</span>
+              <span className="text-xs font-semibold text-gray-800 dark:text-gray-200">{count}</span>
             </div>
           ))}
         </div>
@@ -393,14 +393,14 @@ const DisclosuresTab: FC = () => {
         </div>
       </div>
 
-      <div className="relative pl-6 border-l-2 border-gray-100 space-y-4">
+      <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
         {disclosures.map((d, i) => (
           <div key={i} className="relative">
-            <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white" />
+            <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
             <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
               <div className="flex items-start justify-between gap-3 mb-1">
                 <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">{d.title}</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{d.title}</h4>
                   <p className="text-xs text-gray-500 mt-0.5">{d.outlet}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1 shrink-0">
@@ -433,9 +433,9 @@ const NetworkTab: FC = () => {
       </p>
       {associated_people.map(person => (
         <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-          <h4 className="font-semibold text-gray-900 mb-0.5">{person.name}</h4>
+          <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{person.name}</h4>
           <p className="text-xs text-primary font-medium mb-2">{person.role}</p>
-          <p className="text-sm text-gray-700">{person.relationship}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300">{person.relationship}</p>
         </div>
       ))}
     </div>
@@ -451,23 +451,23 @@ const AssessmentTab: FC = () => {
         contradicting={credibility.contradicting.length}
       />
 
-      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-        <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">Methodology Note</p>
-        <p className="text-sm text-amber-900">
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
+        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Methodology Note</p>
+        <p className="text-sm text-amber-900 dark:text-amber-100">
           This section presents documented arguments for and against Lazar&apos;s credibility. DECUR does not adjudicate these claims; they are presented for methodological transparency.
         </p>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-green-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+        <h4 className="text-sm font-semibold text-green-700 dark:text-green-400 uppercase tracking-wide mb-3 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
           Supporting Evidence
         </h4>
         <div className="space-y-2">
           {credibility.supporting.map((item, i) => (
-            <div key={i} className="flex gap-2 border border-green-100 bg-green-50/50 rounded-lg p-3">
+            <div key={i} className="flex gap-2 border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-3">
               <span className="text-green-500 mt-0.5 shrink-0">✓</span>
-              <p className="text-sm text-gray-700">{item}</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
             </div>
           ))}
         </div>
@@ -480,9 +480,9 @@ const AssessmentTab: FC = () => {
         </h4>
         <div className="space-y-2">
           {credibility.contradicting.map((item, i) => (
-            <div key={i} className="flex gap-2 border border-red-100 bg-red-50/50 rounded-lg p-3">
+            <div key={i} className="flex gap-2 border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-3">
               <span className="text-red-400 mt-0.5 shrink-0">✗</span>
-              <p className="text-sm text-gray-700">{item}</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
             </div>
           ))}
         </div>
@@ -494,7 +494,7 @@ const AssessmentTab: FC = () => {
           {data.sources.map((src, i) => (
             <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
               <div>
-                <p className="text-sm font-medium text-gray-800">{src.title}</p>
+                <p className="text-sm font-medium text-gray-800 dark:text-gray-200">{src.title}</p>
                 <p className="text-xs text-gray-400 mt-0.5">{src.type} · {src.notes}</p>
               </div>
               <a

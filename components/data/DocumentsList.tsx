@@ -8,13 +8,13 @@ type AuthStatus = DocumentEntry['authenticity_status'];
 type DocType = DocumentEntry['document_type'];
 
 const authConfig: Record<AuthStatus, { label: string; classes: string }> = {
-  'confirmed-official':     { label: 'Official Publication',    classes: 'bg-green-100 text-green-700'  },
-  'declassified-foia':      { label: 'Declassified / FOIA',     classes: 'bg-blue-100 text-blue-700'   },
-  'leaked-disputed':        { label: 'Leaked - Disputed',       classes: 'bg-amber-100 text-amber-700' },
-  'confirmed-leaked':       { label: 'Leaked - Authenticated',  classes: 'bg-teal-100 text-teal-700'   },
-  'declassified-authentic': { label: 'Declassified',            classes: 'bg-blue-100 text-blue-700'   },
-  'documented-destroyed':   { label: 'Documented - Destroyed',  classes: 'bg-red-100 text-red-700'     },
-  'official-declassified':  { label: 'Official - Declassified', classes: 'bg-green-100 text-green-700' },
+  'confirmed-official':     { label: 'Official Publication',    classes: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'  },
+  'declassified-foia':      { label: 'Declassified / FOIA',     classes: 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'   },
+  'leaked-disputed':        { label: 'Leaked - Disputed',       classes: 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300' },
+  'confirmed-leaked':       { label: 'Leaked - Authenticated',  classes: 'bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300'   },
+  'declassified-authentic': { label: 'Declassified',            classes: 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'   },
+  'documented-destroyed':   { label: 'Documented - Destroyed',  classes: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'     },
+  'official-declassified':  { label: 'Official - Declassified', classes: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300' },
 };
 
 const docTypeLabel: Record<DocType, string> = {
@@ -50,15 +50,15 @@ const OverviewTab: FC<{ d: DocumentEntry }> = ({ d }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Date</p>
-          <p className="text-sm text-gray-800">{d.date}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{d.date}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Document Type</p>
-          <p className="text-sm text-gray-800">{docTypeLabel[d.document_type]}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{docTypeLabel[d.document_type]}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Pages</p>
-          <p className="text-sm text-gray-800">{d.page_count}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{d.page_count}</p>
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Authentication</p>
@@ -66,18 +66,18 @@ const OverviewTab: FC<{ d: DocumentEntry }> = ({ d }) => {
         </div>
         <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Issuing Authority</p>
-          <p className="text-sm text-gray-800">{d.issuing_authority}</p>
+          <p className="text-sm text-gray-800 dark:text-gray-200">{d.issuing_authority}</p>
         </div>
       </div>
 
       <div>
-        <h3 className="text-base font-semibold text-gray-900 mb-2">Summary</h3>
-        <p className="text-sm text-gray-700 leading-relaxed">{d.summary}</p>
+        <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">Summary</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{d.summary}</p>
       </div>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-        <p className="text-xs font-bold text-blue-700 uppercase tracking-wide mb-1">Significance</p>
-        <p className="text-sm text-blue-900 leading-relaxed">{d.significance}</p>
+      <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/30 rounded-lg p-4">
+        <p className="text-xs font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Significance</p>
+        <p className="text-sm text-blue-900 dark:text-blue-100 leading-relaxed">{d.significance}</p>
       </div>
 
       <div className="text-xs text-gray-400">
@@ -94,7 +94,7 @@ const KeyFindingsTab: FC<{ d: DocumentEntry }> = ({ d }) => (
       {d.key_findings.map((f, i) => (
         <li key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-3">
           <span className="text-primary font-mono text-xs font-bold shrink-0 mt-0.5">{String(i + 1).padStart(2, '0')}</span>
-          <span className="text-sm text-gray-700 leading-relaxed">{f}</span>
+          <span className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{f}</span>
         </li>
       ))}
     </ul>
@@ -111,8 +111,8 @@ const ProvenanceTab: FC<{ d: DocumentEntry }> = ({ d }) => (
     </div>
 
     <div>
-      <h3 className="text-base font-semibold text-gray-900 mb-2">Document History</h3>
-      <p className="text-sm text-gray-700 leading-relaxed">{d.provenance}</p>
+      <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">Document History</h3>
+      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{d.provenance}</p>
     </div>
   </div>
 );
@@ -149,7 +149,7 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
               <span className="text-xs font-bold text-primary">{person.name.charAt(0)}</span>
             </div>
             <div>
-              <p className="text-sm font-semibold text-gray-900">{person.name}</p>
+              <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">{person.name}</p>
               <p className="text-xs text-primary leading-snug">{person.role}</p>
               {person.note && <p className="text-xs text-gray-400 mt-1 leading-snug">{person.note}</p>}
             </div>
@@ -165,7 +165,7 @@ const LimitationsTab: FC<{ d: DocumentEntry }> = ({ d }) => (
     <p className="text-sm text-gray-500">Documented limitations, caveats, and contested aspects of this document.</p>
     <ul className="space-y-2">
       {d.limitations.map((lim, i) => (
-        <li key={i} className="flex gap-2 text-sm text-gray-700 border border-gray-100 rounded-lg p-3">
+        <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300 border border-gray-100 dark:border-gray-700 rounded-lg p-3">
           <span className="text-amber-400 mt-0.5 shrink-0 font-bold">!</span>
           <span className="leading-relaxed">{lim}</span>
         </li>
@@ -200,7 +200,7 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack }) => {
       <div className="flex items-start gap-4">
         <button
           onClick={onBack}
-          className="text-sm text-gray-400 hover:text-gray-600 transition-colors mt-1 shrink-0"
+          className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mt-1 shrink-0"
         >
           ← Back
         </button>
@@ -293,7 +293,7 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
                 )}
               </div>
 
-              <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">{d.summary}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-3">{d.summary}</p>
             </div>
           );
         })}
