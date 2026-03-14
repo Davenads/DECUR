@@ -85,9 +85,7 @@ export default async function handler(
 
   try {
     await resend.emails.send({
-      // Use onboarding@resend.dev until decur.org is verified in Resend dashboard
-      // After domain verification: update to 'DECUR <noreply@decur.org>'
-      from: 'DECUR Contact Form <onboarding@resend.dev>',
+      from: 'DECUR Contact Form <noreply@decur.org>',
       to: ['decur-dave@proton.me'],
       replyTo: email,
       subject: subject?.trim()
