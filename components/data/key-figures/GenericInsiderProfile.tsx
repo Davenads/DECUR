@@ -253,7 +253,7 @@ const DisclosuresTab: FC<{ disclosures: Disclosure[] }> = ({ disclosures }) => (
     {disclosures.map((d, i) => (
       <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <div className="flex items-start justify-between gap-2 mb-1">
-          <span className="font-medium text-gray-900 text-sm">{d.title}</span>
+          <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">{d.title}</span>
           <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
             {disclosureLabel(d.type)}
           </span>
@@ -262,7 +262,7 @@ const DisclosuresTab: FC<{ disclosures: Disclosure[] }> = ({ disclosures }) => (
           {d.date} · {d.outlet}
           {d.interviewer && d.interviewer !== 'N/A' ? ` · ${d.interviewer}` : ''}
         </p>
-        <p className="text-sm text-gray-600 leading-relaxed">{d.notes}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{d.notes}</p>
       </div>
     ))}
   </div>
@@ -285,7 +285,7 @@ const SourcesTab: FC<{ sources: Source[] }> = ({ sources }) => (
             {s.type}
           </span>
         </div>
-        {s.notes && <p className="text-sm text-gray-600">{s.notes}</p>}
+        {s.notes && <p className="text-sm text-gray-600 dark:text-gray-400">{s.notes}</p>}
       </div>
     ))}
   </div>
@@ -297,13 +297,13 @@ const FeatureTab: FC<{ data: Record<string, any> }> = ({ data }) => {
   const renderValue = (value: unknown, depth = 0): React.ReactNode => {
     if (value === null || value === undefined) return null;
     if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
-      return <span className="text-sm text-gray-700">{String(value)}</span>;
+      return <span className="text-sm text-gray-700 dark:text-gray-300">{String(value)}</span>;
     }
     if (Array.isArray(value)) {
       return (
         <ul className="space-y-1 mt-1">
           {value.map((item, i) => (
-            <li key={i} className="text-sm text-gray-700 flex gap-2">
+            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
               {typeof item === 'string' ? (
                 <>
                   <span className="text-primary mt-1 shrink-0">-</span>
