@@ -41,6 +41,7 @@ import sheehanData from './sheehan.json';
 import schumerData from './schumer.json';
 import dietrichData from './dietrich.json';
 import dayData from './day.json';
+import johnMackData from './john-mack.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -73,4 +74,5 @@ export const insiderRegistry: Record<string, any> = {
   'chuck-schumer': schumerData,
   'alex-dietrich': dietrichData,
   'kevin-day': dayData,
+  'john-mack': johnMackData,
 };

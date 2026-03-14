@@ -657,5 +657,19 @@
     "data_file": "day.json",
     "type": "insider",
     "includeInExplore": false
+  },
+  {
+    "id": "john-mack",
+    "name": "Dr. John E. Mack",
+    "aliases": ["John Mack", "John Edward Mack"],
+    "role": "Professor of Psychiatry, Harvard Medical School; Founder of PEER",
+    "period": "1990-2004",
+    "affiliation": "Harvard Medical School, Program for Extraordinary Experience Research (PEER)",
+    "summary": "Pulitzer Prize-winning Harvard psychiatrist who founded the Program for Extraordinary Experience Research (PEER) in 1993 and became the most academically credentialed researcher to seriously investigate UAP contact experiences. Investigated the 1994 Ariel School incident in Zimbabwe. Died in London in 2004.",
+    "status": "detailed",
+    "tags": ["Harvard", "psychiatry", "Ariel School", "experiencer research", "PEER", "academia", "Zimbabwe", "Pulitzer Prize"],
+    "data_file": "john-mack.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

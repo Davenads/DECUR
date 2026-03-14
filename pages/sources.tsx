@@ -16,7 +16,7 @@ interface SourceCardProps {
 const SourceCard: React.FC<SourceCardProps> = ({
   name, url, type, typeColor, description, entries, coverage, notes,
 }) => (
-  <div className="bg-white border border-gray-200 rounded-lg p-5 space-y-3">
+  <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
     <div className="flex items-start justify-between gap-3 flex-wrap">
       <div>
         <a
@@ -27,26 +27,26 @@ const SourceCard: React.FC<SourceCardProps> = ({
         >
           {name}
         </a>
-        <p className="text-xs text-gray-400 mt-0.5">{url}</p>
+        <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{url}</p>
       </div>
       <span className={`text-xs px-2.5 py-0.5 rounded-full font-medium shrink-0 ${typeColor}`}>
         {type}
       </span>
     </div>
 
-    <p className="text-sm text-gray-700">{description}</p>
+    <p className="text-sm text-gray-700 dark:text-gray-300">{description}</p>
 
-    <div className="flex flex-wrap gap-4 text-xs text-gray-500">
+    <div className="flex flex-wrap gap-4 text-xs text-gray-500 dark:text-gray-400">
       {entries !== undefined && (
-        <span><span className="font-semibold text-gray-800">{entries.toLocaleString()}</span> entries</span>
+        <span><span className="font-semibold text-gray-800 dark:text-gray-200">{entries.toLocaleString()}</span> entries</span>
       )}
       {coverage && (
-        <span>Coverage: <span className="font-semibold text-gray-800">{coverage}</span></span>
+        <span>Coverage: <span className="font-semibold text-gray-800 dark:text-gray-200">{coverage}</span></span>
       )}
     </div>
 
     {notes && (
-      <p className="text-xs text-gray-400 italic border-t border-gray-100 pt-2">{notes}</p>
+      <p className="text-xs text-gray-400 dark:text-gray-500 italic border-t border-gray-100 dark:border-gray-700 pt-2">{notes}</p>
     )}
   </div>
 );
@@ -64,8 +64,8 @@ const Sources: NextPage = () => {
 
         {/* Header */}
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Data Sources</h1>
-          <p className="text-gray-500 max-w-2xl">
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Data Sources</h1>
+          <p className="text-gray-500 dark:text-gray-400 max-w-2xl">
             All data presented on DECUR is traceable to a documented external source. This page
             catalogs every platform we have drawn from, how the data was obtained, and what it
             contributes to the DECUR dataset.
@@ -75,8 +75,8 @@ const Sources: NextPage = () => {
         {/* Timeline data sources */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-xl font-bold text-gray-900">Timeline Data</h2>
-            <p className="text-sm text-gray-500 mt-1">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Timeline Data</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
               Sources contributing to the <Link href="/data" className="text-primary hover:underline">Historical Events</Link> database
               ({(385 + 1178 + 12).toLocaleString()} entries total).
               Each entry retains a direct link back to its origin.
@@ -131,8 +131,8 @@ const Sources: NextPage = () => {
         {/* Case file sources */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-xl font-bold text-gray-900">Insider Case File References</h2>
-            <p className="text-sm text-gray-500 mt-1">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Insider Case File References</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
               Sources consulted in building the manually curated{' '}
               <Link href="/data?category=key-figures" className="text-primary hover:underline">Insider</Link>{' '}
               case files (11 profiles). These are reference sources, not scraped datasets.
@@ -314,8 +314,8 @@ const Sources: NextPage = () => {
         {/* Glossary sources */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-xl font-bold text-gray-900">Glossary Sources</h2>
-            <p className="text-sm text-gray-500 mt-1">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Glossary Sources</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
               Sources used to build the{' '}
               <Link href="/resources?tab=glossary" className="text-primary hover:underline">Glossary</Link>{' '}
               of UAP and defense terminology (308 terms).
@@ -352,24 +352,24 @@ const Sources: NextPage = () => {
         </section>
 
         {/* Methodology */}
-        <section className="bg-gray-50 border border-gray-200 rounded-xl p-6 space-y-4">
-          <h2 className="text-xl font-bold text-gray-900">Methodology</h2>
+        <section className="bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-xl p-6 space-y-4">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Methodology</h2>
 
-          <div className="space-y-3 text-sm text-gray-700">
+          <div className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
             <div>
-              <p className="font-semibold text-gray-900 mb-1">Scraped Timeline Data</p>
+              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Scraped Timeline Data</p>
               <p>
                 Timeline entries from ufotimeline.com, openminds.tv, papooselake.org, and nicap.org were retrieved
                 via their public APIs or HTML scraping. Every entry preserves a direct link
-                (<code className="bg-gray-200 px-1 py-0.5 rounded text-xs">source_url</code>) to its
+                (<code className="bg-gray-200 dark:bg-gray-700 dark:text-gray-300 px-1 py-0.5 rounded text-xs">source_url</code>) to its
                 originating article. DECUR does not alter the title or content of scraped entries.
-                NICAP entries additionally carry a <code className="bg-gray-200 px-1 py-0.5 rounded text-xs">source: &quot;nicap&quot;</code> field
+                NICAP entries additionally carry a <code className="bg-gray-200 dark:bg-gray-700 dark:text-gray-300 px-1 py-0.5 rounded text-xs">source: &quot;nicap&quot;</code> field
                 for provenance tracking.
               </p>
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900 mb-1">Manually Curated Case Files</p>
+              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Manually Curated Case Files</p>
               <p>
                 Insider profiles (Dan Burisch, Bob Lazar, David Grusch, Luis Elizondo, David Fravor,
                 Karl Nell, Garry Nolan, Hal Puthoff, Chris Mellon, Eric Davis, and others) are built
@@ -381,7 +381,7 @@ const Sources: NextPage = () => {
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900 mb-1">Attribution Policy</p>
+              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Attribution Policy</p>
               <p>
                 All data presented on DECUR is attributed to its origin. Scraped data retains source
                 metadata. Case file references are documented in each profile. DECUR is a research
@@ -393,9 +393,9 @@ const Sources: NextPage = () => {
         </section>
 
         {/* Disclaimer */}
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-          <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">Disclaimer</p>
-          <p className="text-sm text-amber-900">
+        <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4">
+          <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Disclaimer</p>
+          <p className="text-sm text-amber-900 dark:text-amber-200">
             DECUR presents third-party information for educational and research purposes only.
             Inclusion of a source does not constitute endorsement of its content or editorial position.
             Source availability and content may change after the time of data collection.

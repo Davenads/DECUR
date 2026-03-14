@@ -19,7 +19,7 @@ export interface MapCase {
   date: string;
   location: string;
   country: string;
-  evidence_tier: 'tier-1' | 'tier-2';
+  evidence_tier: 'tier-1' | 'tier-2' | 'tier-3';
   classification_status: string;
   summary: string;
   coordinates: { lat: number; lng: number };
@@ -45,6 +45,7 @@ type FilterMode = 'all' | 'cases' | 'events' | 'tier-1';
 const TIER_CONFIG = {
   'tier-1': { color: '#10b981', label: 'Tier 1 - High Confidence', radius: 9 },
   'tier-2': { color: '#f59e0b', label: 'Tier 2 - Moderate', radius: 7 },
+  'tier-3': { color: '#94a3b8', label: 'Tier 3 - Limited Verification', radius: 5 },
 };
 
 const EVENT_COLOR  = '#818cf8'; // indigo
