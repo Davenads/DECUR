@@ -103,32 +103,38 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
       {profile.born && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Born</span>
-          <span className="text-sm text-gray-700">{profile.born}</span>
+          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.born}</span>
         </div>
       )}
       {profile.died && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Died</span>
-          <span className="text-sm text-gray-700">{profile.died}</span>
+          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.died}</span>
         </div>
       )}
       {profile.aliases.length > 0 && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Aliases</span>
-          <span className="text-sm text-gray-700">{profile.aliases.join(', ')}</span>
+          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.aliases.join(', ')}</span>
+        </div>
+      )}
+      {profile.service_period && (
+        <div className="flex gap-3">
+          <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Service</span>
+          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.service_period}</span>
         </div>
       )}
       {profile.clearance && (
         <div className="flex gap-3">
-          <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Access</span>
-          <span className="text-sm text-gray-700">{profile.clearance}</span>
+          <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Clearance</span>
+          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.clearance}</span>
         </div>
       )}
     </div>
 
     <div>
       <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Summary</h3>
-      <p className="text-sm text-gray-700 leading-relaxed">{profile.summary}</p>
+      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
     </div>
 
     {profile.roles && profile.roles.length > 0 && (
@@ -136,7 +142,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Roles</h3>
         <ul className="space-y-1">
           {profile.roles.map((role, i) => (
-            <li key={i} className="text-sm text-gray-700 flex gap-2">
+            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
               <span className="text-primary mt-1 shrink-0">-</span>
               {role}
             </li>
@@ -163,7 +169,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Education</h3>
         <ul className="space-y-1">
           {profile.education.map((ed, i) => (
-            <li key={i} className="text-sm text-gray-700 flex gap-2">
+            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
               <span className="text-primary mt-1 shrink-0">-</span>
               {ed}
             </li>
@@ -177,7 +183,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Early Career</h3>
         <ul className="space-y-2">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="text-sm text-gray-700 flex gap-2">
+            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
               <span className="text-primary mt-1 shrink-0">-</span>
               {item}
             </li>
@@ -220,7 +226,7 @@ const TimelineTab: FC<{ events: KeyEvent[] }> = ({ events }) => (
           <div className="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-900 shadow" />
           <div>
             <span className="text-xs font-semibold text-primary">{ev.year}</span>
-            <p className="text-sm text-gray-700 mt-0.5 leading-relaxed">{ev.event}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mt-0.5 leading-relaxed">{ev.event}</p>
           </div>
         </div>
       ))}
@@ -233,7 +239,7 @@ const PeopleTab: FC<{ people: AssociatedPerson[] }> = ({ people }) => (
     {people.map((person) => (
       <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <div className="flex items-start justify-between gap-2 mb-1">
-          <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">{person.name}</span>
+          <span className="font-medium text-sm text-gray-900 dark:text-gray-100">{person.name}</span>
         </div>
         <p className="text-xs text-primary mb-2">{person.role}</p>
         <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{person.relationship}</p>

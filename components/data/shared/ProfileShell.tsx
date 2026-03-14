@@ -38,7 +38,7 @@ const ProfileShell: FC<ProfileShellProps> = ({
           className="text-sm text-gray-400 hover:text-primary transition-colors mb-3 flex items-center gap-1"
         >
           <BackIcon />
-          Insiders
+          Key Figures
         </button>
         <div className="flex items-start justify-between">
           <div>
