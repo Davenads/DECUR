@@ -1,6 +1,7 @@
 import { FC, useRef, useCallback, useState, useMemo, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { useTheme } from 'next-themes';
+import { useRouter } from 'next/router';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
 import insidersIndex from '../../data/key-figures/index.json';
 
@@ -68,11 +69,15 @@ const EMPTY_HIGHLIGHT: HighlightState = { nodes: new Set(), linkKeys: new Set() 
 
 /* ─── Component ──────────────────────────────────────────────── */
 
+// IDs that have a dedicated /figures/[id] profile page
+const profileIds = new Set((insidersIndex as Array<{ id: string }>).map(e => e.id));
+
 const NetworkGraph: FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const fgRef = useRef<FGRef>(null);
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === 'dark';
+  const router = useRouter();
   const [graphWidth, setGraphWidth] = useState<number>(800);
   const [highlight, setHighlight] = useState<HighlightState>(EMPTY_HIGHLIGHT);
   const [searchQuery, setSearchQuery] = useState('');
@@ -184,6 +189,13 @@ const NetworkGraph: FC = () => {
     setSearchFocused(false);
   }, [filteredLinks]);
 
+  const handleNodeClick = useCallback((node: object) => {
+    const gNode = node as GraphNode;
+    if (gNode.type === 'person' && profileIds.has(gNode.id)) {
+      router.push(`/figures/${gNode.id}`);
+    }
+  }, [router]);
+
   const nodeCanvasObject = useCallback(
     (node: object, ctx: CanvasRenderingContext2D, globalScale: number) => {
       const gNode = node as GraphNode;
@@ -235,6 +247,9 @@ const NetworkGraph: FC = () => {
     (link: object) => (highlight.nodes.size > 0 && highlight.linkKeys.has(linkKey(link)) ? 2 : 0),
     [highlight]
   );
+
+  // Whether the currently hovered node has a clickable profile page
+  const isHoveredClickable = hoveredNode?.type === 'person' && profileIds.has(hoveredNode.id);
 
   // Count connections for the hover info bar (resolve IDs properly)
   const hoveredConnectionCount = hoveredNode
@@ -303,7 +318,7 @@ const NetworkGraph: FC = () => {
       </div>
 
       {/* Graph canvas */}
-      <div ref={containerRef} className="w-full" style={{ height: 520 }}>
+      <div ref={containerRef} className="w-full" style={{ height: 520, cursor: isHoveredClickable ? 'pointer' : 'default' }}>
         <ForceGraph2D
           ref={fgRef}
           graphData={filtered as { nodes: object[]; links: object[] }}
@@ -315,6 +330,7 @@ const NetworkGraph: FC = () => {
           linkColor={linkColor}
           linkWidth={linkWidth}
           onNodeHover={handleNodeHover}
+          onNodeClick={handleNodeClick}
           linkDirectionalParticles={2}
           linkDirectionalParticleSpeed={0.004}
           linkDirectionalParticleWidth={particleWidth}
@@ -326,9 +342,9 @@ const NetworkGraph: FC = () => {
       </div>
 
       {/* Hover info */}
-      <div className="px-6 py-3 border-t border-gray-100 dark:border-gray-800 min-h-[48px] flex items-center">
+      <div className="px-6 py-3 border-t border-gray-100 dark:border-gray-800 min-h-[48px] flex items-center justify-between">
         {hoveredNode ? (
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <span
               className="w-3 h-3 rounded-full shrink-0"
               style={{ backgroundColor: NODE_COLORS[hoveredNode.type] }}
@@ -337,9 +353,12 @@ const NetworkGraph: FC = () => {
             <span className="text-xs text-gray-400 dark:text-gray-500 capitalize">{TYPE_LABELS[hoveredNode.type]}</span>
             <span className="text-xs text-gray-300 dark:text-gray-600">·</span>
             <span className="text-xs text-gray-400 dark:text-gray-500">{hoveredConnectionCount} connections</span>
+            {isHoveredClickable && (
+              <span className="text-xs text-primary font-medium ml-1">Click to view profile →</span>
+            )}
           </div>
         ) : (
-          <p className="text-xs text-gray-400 dark:text-gray-500">Hover a node to inspect connections</p>
+          <p className="text-xs text-gray-400 dark:text-gray-500">Hover a node to inspect connections · Click a person node to view their profile</p>
         )}
       </div>
     </div>
