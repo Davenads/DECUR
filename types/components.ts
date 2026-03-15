@@ -51,6 +51,7 @@ export interface NavItemDef {
  */
 export interface InsiderProfileProps {
   onBack: () => void;
+  backLabel?: string;
 }
 
 /**

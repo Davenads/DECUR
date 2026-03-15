@@ -1,4 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import SeoHead from '../../components/SeoHead';
 import { InsiderEntry } from '../../types/data';
@@ -26,26 +27,33 @@ interface Props {
 
 const FigurePage: NextPage<Props> = ({ entry }) => {
   const router = useRouter();
-  const onBack = () => router.push('/data?category=key-figures');
+  const [fromExplore, setFromExplore] = useState(false);
+
+  useEffect(() => {
+    setFromExplore(new URLSearchParams(window.location.search).get('ref') === 'explore');
+  }, []);
+
+  const onBack = () => router.push(fromExplore ? '/explore#relationship-network' : '/data?category=key-figures');
+  const backLabel = fromExplore ? 'Relationship Network' : 'Key Figures';
 
   const renderProfile = () => {
     switch (entry.id) {
-      case 'dan-burisch':    return <InsiderProfile id={entry.id} onBack={onBack} />;
-      case 'bob-lazar':      return <LazarProfile onBack={onBack} />;
-      case 'david-grusch':   return <GruschProfile onBack={onBack} />;
-      case 'luis-elizondo':  return <ElizondoProfile onBack={onBack} />;
-      case 'david-fravor':   return <FravorProfile onBack={onBack} />;
-      case 'hal-puthoff':    return <PuthoffProfile onBack={onBack} />;
-      case 'garry-nolan':    return <NolanProfile onBack={onBack} />;
-      case 'karl-nell':      return <NellProfile onBack={onBack} />;
-      case 'chris-mellon':   return <MellonProfile onBack={onBack} />;
-      case 'eric-davis':     return <DavisProfile onBack={onBack} />;
-      case 'robert-bigelow': return <BigelowProfile onBack={onBack} />;
-      case 'jacques-vallee': return <ValleeProfile onBack={onBack} />;
-      case 'nick-pope':      return <PopeProfile onBack={onBack} />;
-      case 'jake-barber':    return <BarberProfile onBack={onBack} />;
-      case 'tim-gallaudet':  return <GallaudetProfile onBack={onBack} />;
-      default:               return <GenericInsiderProfile id={entry.id} onBack={onBack} />;
+      case 'dan-burisch':    return <InsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
+      case 'bob-lazar':      return <LazarProfile onBack={onBack} backLabel={backLabel} />;
+      case 'david-grusch':   return <GruschProfile onBack={onBack} backLabel={backLabel} />;
+      case 'luis-elizondo':  return <ElizondoProfile onBack={onBack} backLabel={backLabel} />;
+      case 'david-fravor':   return <FravorProfile onBack={onBack} backLabel={backLabel} />;
+      case 'hal-puthoff':    return <PuthoffProfile onBack={onBack} backLabel={backLabel} />;
+      case 'garry-nolan':    return <NolanProfile onBack={onBack} backLabel={backLabel} />;
+      case 'karl-nell':      return <NellProfile onBack={onBack} backLabel={backLabel} />;
+      case 'chris-mellon':   return <MellonProfile onBack={onBack} backLabel={backLabel} />;
+      case 'eric-davis':     return <DavisProfile onBack={onBack} backLabel={backLabel} />;
+      case 'robert-bigelow': return <BigelowProfile onBack={onBack} backLabel={backLabel} />;
+      case 'jacques-vallee': return <ValleeProfile onBack={onBack} backLabel={backLabel} />;
+      case 'nick-pope':      return <PopeProfile onBack={onBack} backLabel={backLabel} />;
+      case 'jake-barber':    return <BarberProfile onBack={onBack} backLabel={backLabel} />;
+      case 'tim-gallaudet':  return <GallaudetProfile onBack={onBack} backLabel={backLabel} />;
+      default:               return <GenericInsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
     }
   };
 

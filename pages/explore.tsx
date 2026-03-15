@@ -86,7 +86,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         </section>
 
         {/* Relationship Network Graph */}
-        <section>
+        <section id="relationship-network">
           <NetworkGraph />
         </section>
 

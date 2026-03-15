@@ -6,6 +6,7 @@ interface ProfileShellProps {
   role: string;
   period: string;
   badge?: string;
+  backLabel?: string;
   tabs: ReadonlyArray<{ id: string; label: string }>;
   activeTab: string;
   onTabChange: (id: string) => void;
@@ -24,6 +25,7 @@ const ProfileShell: FC<ProfileShellProps> = ({
   role,
   period,
   badge = 'Case File',
+  backLabel = 'Key Figures',
   tabs,
   activeTab,
   onTabChange,
@@ -38,7 +40,7 @@ const ProfileShell: FC<ProfileShellProps> = ({
           className="text-sm text-gray-400 hover:text-primary transition-colors mb-3 flex items-center gap-1"
         >
           <BackIcon />
-          Key Figures
+          {backLabel}
         </button>
         <div className="flex items-start justify-between">
           <div>

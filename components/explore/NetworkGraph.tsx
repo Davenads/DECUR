@@ -192,7 +192,7 @@ const NetworkGraph: FC = () => {
   const handleNodeClick = useCallback((node: object) => {
     const gNode = node as GraphNode;
     if (gNode.type === 'person' && profileIds.has(gNode.id)) {
-      router.push(`/figures/${gNode.id}`);
+      router.push(`/figures/${gNode.id}?ref=explore`);
     }
   }, [router]);
 

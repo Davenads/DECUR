@@ -15,10 +15,11 @@ const navItems: NavItems = {
     path: '/data',
     items: [
       { title: 'Historical Events', path: '/data?category=events' },
-      { title: 'Spotlights', path: '/data?category=figures' },
       { title: 'Key Figures', path: '/data?category=key-figures' },
+      { title: 'Cases', path: '/data?category=cases' },
       { title: 'Quotes', path: '/data?category=quotes' },
-      { title: 'Media & Documents', path: '/data?category=media' },
+      { title: 'Media', path: '/data?category=media' },
+      { title: 'Documents', path: '/data?category=documents' },
       { title: 'News', path: '/data?category=news' },
     ],
   },

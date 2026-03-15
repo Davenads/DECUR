@@ -33,9 +33,10 @@ type TabId = typeof TABS[number]['id'];
 interface InsiderProfileProps {
   id: string;
   onBack: () => void;
+  backLabel?: string;
 }
 
-const InsiderProfile: FC<InsiderProfileProps> = ({ onBack }) => {
+const InsiderProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -62,6 +63,7 @@ const InsiderProfile: FC<InsiderProfileProps> = ({ onBack }) => {
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
+      backLabel={backLabel}
     >
       {renderTab()}
     </ProfileShell>

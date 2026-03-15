@@ -24,8 +24,10 @@ const CATEGORY_LABELS: Record<string, string> = {
   'quotes': 'Quotes',
   'documentaries': 'Documentaries',
   'books-documents': 'Books & Docs',
-  'x': 'X',
 };
+
+// Categories that are always active but not shown as filter pills
+const HIDDEN_CATEGORIES = new Set(['x']);
 
 const CATEGORY_COLORS: Record<string, string> = {
   'famous-cases':    'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 border-red-200 dark:border-red-800',
@@ -35,7 +37,6 @@ const CATEGORY_COLORS: Record<string, string> = {
   'quotes':          'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 border-yellow-200 dark:border-yellow-800',
   'documentaries':   'bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 border-orange-200 dark:border-orange-800',
   'books-documents': 'bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-300 border-teal-200 dark:border-teal-800',
-  'x':               'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-200 dark:border-gray-600',
 };
 
 const CATEGORY_DOT_COLORS: Record<string, string> = {
@@ -46,7 +47,6 @@ const CATEGORY_DOT_COLORS: Record<string, string> = {
   'quotes': 'bg-yellow-500',
   'documentaries': 'bg-orange-500',
   'books-documents': 'bg-teal-500',
-  'x': 'bg-gray-500',
 };
 
 const ALL_CATEGORIES = Object.keys(CATEGORY_LABELS);
@@ -99,7 +99,7 @@ const TimelineView: FC<TimelineViewProps> = ({ entries }) => {
     return entries.filter(e =>
       e.year >= yearMin &&
       e.year <= yearMax &&
-      e.categories.some(c => activeCategories.has(c)) &&
+      e.categories.some(c => activeCategories.has(c) || HIDDEN_CATEGORIES.has(c)) &&
       (!q || e.title.toLowerCase().includes(q) || e.excerpt.toLowerCase().includes(q))
     );
   }, [entries, activeCategories, search, yearMin, yearMax]);
