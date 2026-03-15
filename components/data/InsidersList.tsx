@@ -1,23 +1,55 @@
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, useMemo, useState } from 'react';
 import { InsiderEntry } from '../../types/data';
+import { ps } from './shared/profileStyles';
+
+type SortMode = 'alpha' | 'type';
+
+const TYPE_ORDER: InsiderEntry['type'][] = ['insider', 'official', 'scientist', 'pilot', 'journalist', 'executive'];
 
 interface InsidersListProps {
   entries: InsiderEntry[];
 }
 
 const InsidersList: FC<InsidersListProps> = ({ entries }) => {
+  const [sortMode, setSortMode] = useState<SortMode>('alpha');
+
+  const sorted = useMemo(() => {
+    if (sortMode === 'alpha') {
+      return [...entries].sort((a, b) => a.name.localeCompare(b.name));
+    }
+    return [...entries].sort((a, b) => {
+      const ai = TYPE_ORDER.indexOf(a.type as InsiderEntry['type']);
+      const bi = TYPE_ORDER.indexOf(b.type as InsiderEntry['type']);
+      const typeDiff = (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+      return typeDiff !== 0 ? typeDiff : a.name.localeCompare(b.name);
+    });
+  }, [entries, sortMode]);
+
   return (
     <div>
-      <div className="mb-6">
+      <div className="mb-4">
         <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Key Figures</h2>
         <p className="text-sm text-gray-500 dark:text-gray-400">
           Individuals who have provided firsthand testimony regarding classified programs, extraterrestrial phenomena, and advanced technologies.
         </p>
       </div>
 
+      <div className="flex items-center gap-2 mb-5">
+        <span className="text-xs text-gray-400 mr-1">Sort:</span>
+        {(['alpha', 'type'] as SortMode[]).map(mode => (
+          <button
+            key={mode}
+            onClick={() => setSortMode(mode)}
+            className={sortMode === mode ? ps.filterPillActive : ps.filterPill}
+          >
+            {mode === 'alpha' ? 'A-Z' : 'By Type'}
+          </button>
+        ))}
+      </div>
+
       <div className="grid gap-4">
-        {entries.map(entry => (
+        {sorted.map(entry => (
           <div
             key={entry.id}
             className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"

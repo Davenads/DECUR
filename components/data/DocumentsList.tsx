@@ -1,9 +1,11 @@
-import { FC, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 import { DocumentEntry } from '../../types/data';
 import ProfileTabBar from './shared/ProfileTabBar';
+import { ps } from './shared/profileStyles';
 
 /* ─── Helpers ──────────────────────────────────────────────────── */
 
+type DocSortMode = 'date' | 'alpha';
 type AuthStatus = DocumentEntry['authenticity_status'];
 type DocType = DocumentEntry['document_type'];
 
@@ -233,6 +235,12 @@ interface DocumentsListProps {
 
 const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [sortMode, setSortMode] = useState<DocSortMode>('date');
+
+  const sorted = useMemo(() => {
+    if (sortMode === 'alpha') return [...documents].sort((a, b) => a.name.localeCompare(b.name));
+    return [...documents].sort((a, b) => a.date.localeCompare(b.date));
+  }, [documents, sortMode]);
 
   const selected = documents.find(d => d.id === selectedId) ?? null;
 
@@ -242,11 +250,24 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
 
   return (
     <div>
-      <div className="mb-6">
+      <div className="mb-4">
         <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Primary Documents</h2>
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          Official government records, declassified intelligence reports, and foundational source documents — annotated for provenance, authenticity, and significance.
+          Official government records, declassified intelligence reports, and foundational source documents - annotated for provenance, authenticity, and significance.
         </p>
+      </div>
+
+      <div className="flex items-center gap-2 mb-5">
+        <span className="text-xs text-gray-400 mr-1">Sort:</span>
+        {(['date', 'alpha'] as DocSortMode[]).map(mode => (
+          <button
+            key={mode}
+            onClick={() => setSortMode(mode)}
+            className={sortMode === mode ? ps.filterPillActive : ps.filterPill}
+          >
+            {mode === 'date' ? 'By Date' : 'A-Z'}
+          </button>
+        ))}
       </div>
 
       {/* Auth legend */}
@@ -259,7 +280,7 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
       </div>
 
       <div className="grid gap-4">
-        {documents.map(d => {
+        {sorted.map(d => {
           const auth = authConfig[d.authenticity_status];
           return (
             <div

@@ -1,13 +1,15 @@
-import { FC, useState } from 'react';
+import { FC, useMemo, useState } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { CaseEntry, EvidenceTier } from '../../types/data';
 import CaseDetail, { tierConfig } from './CaseDetail';
+import { ps } from './shared/profileStyles';
 
 // SSR-safe: react-simple-maps uses browser APIs
 const CasesLocationMap = dynamic(() => import('./CasesLocationMap'), { ssr: false });
 
 type ViewMode = 'list' | 'map';
+type CaseSortMode = 'date' | 'alpha';
 
 /* ─── Cases list view ──────────────────────────────────────────── */
 
@@ -18,6 +20,12 @@ interface CasesListProps {
 const CasesList: FC<CasesListProps> = ({ cases }) => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<ViewMode>('list');
+  const [sortMode, setSortMode] = useState<CaseSortMode>('date');
+
+  const sorted = useMemo(() => {
+    if (sortMode === 'alpha') return [...cases].sort((a, b) => a.name.localeCompare(b.name));
+    return [...cases].sort((a, b) => a.date.localeCompare(b.date));
+  }, [cases, sortMode]);
 
   const selected = cases.find(c => c.id === selectedId) ?? null;
 
@@ -27,12 +35,26 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
 
   return (
     <div>
-      <div className="mb-6 flex items-start justify-between gap-4 flex-wrap">
-        <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Documented Cases</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            The strongest credible UAP incidents in the public record, assessed by evidence quality and official documentation.
-          </p>
+      <div className="mb-4">
+        <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Documented Cases</h2>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          The strongest credible UAP incidents in the public record, assessed by evidence quality and official documentation.
+        </p>
+      </div>
+
+      <div className="mb-5 flex items-center justify-between gap-4 flex-wrap">
+        {/* Sort pills */}
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-gray-400 mr-1">Sort:</span>
+          {(['date', 'alpha'] as CaseSortMode[]).map(mode => (
+            <button
+              key={mode}
+              onClick={() => setSortMode(mode)}
+              className={sortMode === mode ? ps.filterPillActive : ps.filterPill}
+            >
+              {mode === 'date' ? 'By Date' : 'A-Z'}
+            </button>
+          ))}
         </div>
         {/* View toggle */}
         <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1 shrink-0">
@@ -78,7 +100,7 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
       )}
 
       <div className="grid gap-4">
-        {cases.map(c => {
+        {sorted.map(c => {
           const tier = tierConfig[c.evidence_tier];
           return (
             <div
