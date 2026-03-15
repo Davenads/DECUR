@@ -130,28 +130,40 @@
 
   "associated_people": [
     {
+      "id": "j-allen-hynek",
       "name": "J. Allen Hynek",
-      "relation": "Cited by Pope as methodological model for UAP classification; Hynek's close encounter scale informed Pope's MoD investigation framework"
+      "role": "Astronomer; USAF Project Blue Book consultant",
+      "relationship": "Cited by Pope as methodological model for UAP classification; Hynek's close encounter scale informed Pope's MoD investigation framework"
     },
     {
+      "id": "jim-penniston",
       "name": "Jim Penniston",
-      "relation": "USAF TSgt and Rendlesham Forest primary witness who claims to have touched the craft; co-authored 'Encounter in Rendlesham Forest' (2014) with Pope"
+      "role": "USAF Technical Sergeant; Rendlesham Forest primary witness",
+      "relationship": "USAF TSgt and Rendlesham Forest primary witness who claims to have touched the craft; co-authored 'Encounter in Rendlesham Forest' (2014) with Pope"
     },
     {
+      "id": "john-burroughs",
       "name": "John Burroughs",
-      "relation": "USAF SSgt and Rendlesham Forest primary witness; co-authored 'Encounter in Rendlesham Forest' (2014) with Pope; received classified VA medical treatment for UAP-related health effects"
+      "role": "USAF Staff Sergeant; Rendlesham Forest primary witness",
+      "relationship": "USAF SSgt and Rendlesham Forest primary witness; co-authored 'Encounter in Rendlesham Forest' (2014) with Pope; received classified VA medical treatment for UAP-related health effects"
     },
     {
+      "id": "charles-halt",
       "name": "Charles Halt",
-      "relation": "USAF Lt Col and deputy base commander at RAF Bentwaters; led the second-night Rendlesham investigation and created a contemporaneous audio tape recording events in real time"
+      "role": "USAF Lt. Colonel; deputy base commander, RAF Bentwaters",
+      "relationship": "USAF Lt Col and deputy base commander at RAF Bentwaters; led the second-night Rendlesham investigation and created a contemporaneous audio tape recording events in real time"
     },
     {
+      "id": "luis-elizondo",
       "name": "Luis Elizondo",
-      "relation": "US government UAP investigator counterpart; both entered their desk roles as skeptics and emerged as cautious believers in genuine unknowns; appeared alongside Pope at disclosure conferences"
+      "role": "Former AATIP Director",
+      "relationship": "US government UAP investigator counterpart; both entered their desk roles as skeptics and emerged as cautious believers in genuine unknowns; appeared alongside Pope at disclosure conferences"
     },
     {
+      "id": "jacques-vallee",
       "name": "Jacques Vallée",
-      "relation": "Parallel UAP research establishment figure; Pope has cited Vallée's methodological rigor and ETH critique as influential to his own investigative approach"
+      "role": "Computer scientist and ufologist",
+      "relationship": "Parallel UAP research establishment figure; Pope has cited Vallée's methodological rigor and ETH critique as influential to his own investigative approach"
     }
   ],
 

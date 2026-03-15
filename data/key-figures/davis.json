@@ -161,12 +161,42 @@
   },
 
   "associated_people": [
-    { "name": "Hal Puthoff", "relation": "EarthTech founder and longtime collaborator; co-authored multiple AAWSAP DIRDs; aligned on metric engineering theory" },
-    { "name": "Admiral Thomas R. Wilson", "relation": "Subject of the Wilson-Davis memo; former Director of DIA who allegedly described being denied access to a crash retrieval program — Wilson denies the meeting" },
-    { "name": "Robert Bigelow", "relation": "NIDS employer (1996-2002); BAASS administered the AAWSAP contract through which Davis's DIRDs were produced" },
-    { "name": "David Grusch", "relation": "Independently described contractor-run crash retrieval programs consistent with the Wilson-Davis memo structure; their claims are mutually corroborating without apparent coordination" },
-    { "name": "Luis Elizondo", "relation": "AATIP director whose program overlapped with AAWSAP contractor network; Davis briefed government officials Elizondo worked with" },
-    { "name": "Steven Greer", "relation": "Present at the SAIC briefing described in the Wilson-Davis memo; introduced Wilson to the program file reference according to the document's account" }
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "EarthTech International co-founder; AAWSAP researcher",
+      "relationship": "EarthTech founder and longtime collaborator; co-authored multiple AAWSAP DIRDs; aligned on metric engineering theory"
+    },
+    {
+      "id": "thomas-wilson",
+      "name": "Admiral Thomas R. Wilson",
+      "role": "Former Director, Defense Intelligence Agency",
+      "relationship": "Subject of the Wilson-Davis memo; former Director of DIA who allegedly described being denied access to a crash retrieval program - Wilson denies the meeting"
+    },
+    {
+      "id": "robert-bigelow",
+      "name": "Robert Bigelow",
+      "role": "Founder, Bigelow Aerospace; NIDS/BAASS principal",
+      "relationship": "NIDS employer (1996-2002); BAASS administered the AAWSAP contract through which Davis's DIRDs were produced"
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO intelligence officer; ICIG complainant",
+      "relationship": "Independently described contractor-run crash retrieval programs consistent with the Wilson-Davis memo structure; their claims are mutually corroborating without apparent coordination"
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP Director",
+      "relationship": "AATIP director whose program overlapped with AAWSAP contractor network; Davis briefed government officials Elizondo worked with"
+    },
+    {
+      "id": "steven-greer",
+      "name": "Steven Greer",
+      "role": "Physician; founder, Center for the Study of ET Intelligence",
+      "relationship": "Present at the SAIC briefing described in the Wilson-Davis memo; introduced Wilson to the program file reference according to the document's account"
+    }
   ],
 
   "disclosures": [

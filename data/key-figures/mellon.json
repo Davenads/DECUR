@@ -165,12 +165,42 @@
   },
 
   "associated_people": [
-    { "name": "Luis Elizondo", "relation": "TTSA co-advisor; primary disclosure partner; coordinated the 2017 NY Times strategy" },
-    { "name": "Hal Puthoff", "relation": "TTSA co-advisor; physics research parallel" },
-    { "name": "David Grusch", "relation": "Legislative coordination; Grusch's ICIG complaint aligned with Mellon's Congressional advocacy strategy" },
-    { "name": "Marco Rubio", "relation": "Senate Intelligence Committee Chairman; worked with Mellon on UAP Task Force legislation (2020)" },
-    { "name": "Kirsten Gillibrand", "relation": "Senate Armed Services Committee; primary Senate sponsor of AARO legislation and UAP Disclosure Act" },
-    { "name": "Harry Reid", "relation": "Former Senate Majority Leader who funded AATIP; shared disclosure goals with Mellon" }
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP Director; To The Stars Academy co-founder",
+      "relationship": "TTSA co-advisor; primary disclosure partner; coordinated the 2017 NY Times strategy"
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "EarthTech International co-founder; AAWSAP researcher",
+      "relationship": "TTSA co-advisor; physics research parallel"
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO intelligence officer; ICIG complainant",
+      "relationship": "Legislative coordination; Grusch's ICIG complaint aligned with Mellon's Congressional advocacy strategy"
+    },
+    {
+      "id": "marco-rubio",
+      "name": "Marco Rubio",
+      "role": "U.S. Senator (R-FL); former Senate Intelligence Committee Chair",
+      "relationship": "Senate Intelligence Committee Chairman; worked with Mellon on UAP Task Force legislation (2020)"
+    },
+    {
+      "id": "kirsten-gillibrand",
+      "name": "Kirsten Gillibrand",
+      "role": "U.S. Senator (D-NY); Senate Armed Services Committee",
+      "relationship": "Senate Armed Services Committee; primary Senate sponsor of AARO legislation and UAP Disclosure Act"
+    },
+    {
+      "id": "harry-reid",
+      "name": "Harry Reid",
+      "role": "Former U.S. Senate Majority Leader",
+      "relationship": "Former Senate Majority Leader who funded AATIP; shared disclosure goals with Mellon"
+    }
   ],
 
   "disclosures": [

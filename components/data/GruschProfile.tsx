@@ -5,6 +5,7 @@ import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
+import PersonCard from './shared/PersonCard';
 
 const data = gruschData as typeof gruschData;
 
@@ -249,11 +250,7 @@ const NetworkTab: FC = () => {
         Key individuals connected to Grusch&apos;s disclosure and the broader UAP transparency movement.
       </p>
       {associated_people.map(person => (
-        <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
-          <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{person.name}</h4>
-          <p className="text-xs text-primary font-medium mb-2">{person.role}</p>
-          <p className="text-sm text-gray-700 dark:text-gray-300">{person.relationship}</p>
-        </div>
+        <PersonCard key={person.id} person={person} />
       ))}
     </div>
   );
@@ -330,7 +327,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main Component ─────────────────────────────────────────── */
 
-const GruschProfile: FC<InsiderProfileProps> = ({ onBack }) => {
+const GruschProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -353,6 +350,7 @@ const GruschProfile: FC<InsiderProfileProps> = ({ onBack }) => {
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
+      backLabel={backLabel}
     >
       {renderTab()}
     </ProfileShell>

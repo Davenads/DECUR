@@ -183,12 +183,42 @@
   },
 
   "associated_people": [
-    { "name": "J. Allen Hynek", "relation": "Primary mentor and collaborator at Northwestern (1963-1967); co-developed the CE (Close Encounter) classification system; USAF Project Blue Book scientific consultant whose research Vallée directly participated in" },
-    { "name": "Robert Bigelow", "relation": "NIDS founder; Vallée served as scientific advisor to Bigelow's research organization from c. 1995-2004" },
-    { "name": "Hal Puthoff", "relation": "SRI and NIDS network overlap; both operated in the informal scientific UAP research community from the 1970s forward; Forbidden Science documents interactions with SRI colleagues" },
-    { "name": "Garry Nolan", "relation": "Co-author on the 2021 Progress in Aerospace Sciences UAP methodology paper; both are associated with Sol Foundation" },
-    { "name": "Kit Green", "relation": "CIA physician who later became involved in AAWSAP/BAASS research; documented in Forbidden Science as an intelligence community contact" },
-    { "name": "Colm Kelleher", "relation": "NIDS Research Director; worked within the same institutional structure during the NIDS period" }
+    {
+      "id": "j-allen-hynek",
+      "name": "J. Allen Hynek",
+      "role": "Astronomer; USAF Project Blue Book consultant",
+      "relationship": "Primary mentor and collaborator at Northwestern (1963-1967); co-developed the CE (Close Encounter) classification system; USAF Project Blue Book scientific consultant whose research Vallée directly participated in"
+    },
+    {
+      "id": "robert-bigelow",
+      "name": "Robert Bigelow",
+      "role": "Founder, Bigelow Aerospace; NIDS principal",
+      "relationship": "NIDS founder; Vallée served as scientific advisor to Bigelow's research organization from c. 1995-2004"
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "EarthTech International co-founder",
+      "relationship": "SRI and NIDS network overlap; both operated in the informal scientific UAP research community from the 1970s forward; Forbidden Science documents interactions with SRI colleagues"
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Garry Nolan",
+      "role": "Professor of Pathology, Stanford University",
+      "relationship": "Co-author on the 2021 Progress in Aerospace Sciences UAP methodology paper; both are associated with Sol Foundation"
+    },
+    {
+      "id": "kit-green",
+      "name": "Kit Green",
+      "role": "CIA physician; AAWSAP/BAASS researcher",
+      "relationship": "CIA physician who later became involved in AAWSAP/BAASS research; documented in Forbidden Science as an intelligence community contact"
+    },
+    {
+      "id": "colm-kelleher",
+      "name": "Colm Kelleher",
+      "role": "NIDS Research Director",
+      "relationship": "NIDS Research Director; worked within the same institutional structure during the NIDS period"
+    }
   ],
 
   "disclosures": [

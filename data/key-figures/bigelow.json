@@ -152,12 +152,42 @@
   },
 
   "associated_people": [
-    { "name": "George Knapp", "relation": "Longtime media partner; NIDS collaborator; co-authored 'Hunt for the Skinwalker' through Kelleher; Knapp was KLAS-TV's primary UAP investigative journalist in Las Vegas — the same media market as Bigelow's operations" },
-    { "name": "Colm Kelleher", "relation": "NIDS Research Director and BAASS Deputy Administrator; the operational executive who ran both Bigelow's private research organization and the government-contracted AAWSAP program" },
-    { "name": "Hal Puthoff", "relation": "Scientific advisor to NIDS; primary AAWSAP researcher through EarthTech; their professional relationship spans 25+ years across NIDS, BAASS, and TTSA" },
-    { "name": "Eric Davis", "relation": "Visiting research scientist at NIDS; AAWSAP DIRD author through BAASS; Davis's tenure at EarthTech overlapped continuously with Bigelow's research programs" },
-    { "name": "Harry Reid", "relation": "U.S. Senate Majority Leader who secured the $22M AAWSAP appropriation for BAASS; Reid called Bigelow the most knowledgeable person in the U.S. on UAP" },
-    { "name": "Jacques Vallée", "relation": "NIDS scientific advisor; ufologist and computer scientist who provided theoretical frameworks for the NIDS anomalous phenomena research" }
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "Investigative journalist, KLAS-TV Las Vegas",
+      "relationship": "Longtime media partner; NIDS collaborator; co-authored 'Hunt for the Skinwalker' through Kelleher; Knapp was KLAS-TV's primary UAP investigative journalist in Las Vegas - the same media market as Bigelow's operations"
+    },
+    {
+      "id": "colm-kelleher",
+      "name": "Colm Kelleher",
+      "role": "NIDS Research Director; BAASS Deputy Administrator",
+      "relationship": "NIDS Research Director and BAASS Deputy Administrator; the operational executive who ran both Bigelow's private research organization and the government-contracted AAWSAP program"
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "EarthTech International co-founder; NIDS scientific advisor",
+      "relationship": "Scientific advisor to NIDS; primary AAWSAP researcher through EarthTech; their professional relationship spans 25+ years across NIDS, BAASS, and TTSA"
+    },
+    {
+      "id": "eric-davis",
+      "name": "Eric Davis",
+      "role": "Physicist; EarthTech International; NIDS researcher",
+      "relationship": "Visiting research scientist at NIDS; AAWSAP DIRD author through BAASS; Davis's tenure at EarthTech overlapped continuously with Bigelow's research programs"
+    },
+    {
+      "id": "harry-reid",
+      "name": "Harry Reid",
+      "role": "Former U.S. Senate Majority Leader",
+      "relationship": "U.S. Senate Majority Leader who secured the $22M AAWSAP appropriation for BAASS; Reid called Bigelow the most knowledgeable person in the U.S. on UAP"
+    },
+    {
+      "id": "jacques-vallee",
+      "name": "Jacques Vallée",
+      "role": "Computer scientist and ufologist; NIDS scientific advisor",
+      "relationship": "NIDS scientific advisor; ufologist and computer scientist who provided theoretical frameworks for the NIDS anomalous phenomena research"
+    }
   ],
 
   "disclosures": [

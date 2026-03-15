@@ -5,6 +5,7 @@ import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
+import PersonCard from './shared/PersonCard';
 
 const data = barberData as typeof barberData;
 
@@ -125,11 +126,7 @@ const DisclosureTab: FC = () => {
         <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Associated People</h3>
         <div className="space-y-3">
           {data.associated_people.map(person => (
-            <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-              <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{person.name}</h4>
-              <p className="text-xs text-primary mb-2">{person.role}</p>
-              <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{person.relationship}</p>
-            </div>
+            <PersonCard key={person.id} person={person} />
           ))}
         </div>
       </div>
@@ -257,7 +254,7 @@ const AssessmentTab: FC = () => {
   );
 };
 
-const BarberProfile: FC<InsiderProfileProps> = ({ onBack }) => {
+const BarberProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -279,6 +276,7 @@ const BarberProfile: FC<InsiderProfileProps> = ({ onBack }) => {
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
+      backLabel={backLabel}
     >
       {renderTab()}
     </ProfileShell>

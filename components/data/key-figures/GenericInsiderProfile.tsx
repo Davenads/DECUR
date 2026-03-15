@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
 import ProfileShell from '../shared/ProfileShell';
+import PersonCard from '../shared/PersonCard';
 import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
@@ -8,6 +9,7 @@ import insidersIndex from '../../../data/key-figures/index.json';
 interface GenericInsiderProfileProps {
   id: string;
   onBack: () => void;
+  backLabel?: string;
 }
 
 // --- Types covering the common JSON schema ---
@@ -239,13 +241,7 @@ const TimelineTab: FC<{ events: KeyEvent[] }> = ({ events }) => (
 const PeopleTab: FC<{ people: AssociatedPerson[] }> = ({ people }) => (
   <div className="space-y-4">
     {people.map((person) => (
-      <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-        <div className="flex items-start justify-between gap-2 mb-1">
-          <span className="font-medium text-sm text-gray-900 dark:text-gray-100">{person.name}</span>
-        </div>
-        <p className="text-xs text-primary mb-2">{person.role}</p>
-        <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{person.relationship}</p>
-      </div>
+      <PersonCard key={person.id} person={person} />
     ))}
   </div>
 );
@@ -356,7 +352,7 @@ const FeatureTab: FC<{ data: Record<string, any> }> = ({ data }) => {
 
 // --- Main component ---
 
-const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) => {
+const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, backLabel }) => {
   const data = insiderRegistry[id];
 
   if (!data) {
@@ -428,6 +424,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack }) =
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
+      backLabel={backLabel}
     >
       <div className="mt-4">
         {renderTab()}

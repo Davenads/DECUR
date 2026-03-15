@@ -5,6 +5,7 @@ import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
+import PersonCard from './shared/PersonCard';
 
 const data = puthoffData as typeof puthoffData;
 
@@ -350,11 +351,7 @@ const NetworkTab: FC = () => {
     <div className="space-y-4">
       <p className="text-sm text-gray-500">Key figures in Puthoff's professional and research network.</p>
       {associated_people.map(person => (
-        <div key={person.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-          <p className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{person.name}</p>
-          <p className="text-xs text-primary mb-2">{person.role}</p>
-          <p className="text-sm text-gray-600 dark:text-gray-400">{person.relationship}</p>
-        </div>
+        <PersonCard key={person.id} person={person} />
       ))}
     </div>
   );
@@ -409,7 +406,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main Component ──────────────────────────────────────────── */
 
-const PuthoffProfile: FC<InsiderProfileProps> = ({ onBack }) => {
+const PuthoffProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -434,6 +431,7 @@ const PuthoffProfile: FC<InsiderProfileProps> = ({ onBack }) => {
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
+      backLabel={backLabel}
     >
       {renderTab()}
     </ProfileShell>

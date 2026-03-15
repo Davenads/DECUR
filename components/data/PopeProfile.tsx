@@ -5,6 +5,7 @@ import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
+import PersonCard from './shared/PersonCard';
 
 const data = popeData as typeof popeData;
 
@@ -243,16 +244,8 @@ const NetworkTab: FC = () => {
   return (
     <div className="space-y-4">
       <p className="text-sm text-gray-500">Key relationships spanning Pope&apos;s career across government investigation, witness testimony, and the disclosure community.</p>
-      {associated_people.map((p, i) => (
-        <div key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-          <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-            <span className="text-xs font-bold text-primary">{p.name.charAt(0)}</span>
-          </div>
-          <div>
-            <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{p.name}</p>
-            <p className="text-xs text-gray-500 leading-snug">{p.relation}</p>
-          </div>
-        </div>
+      {associated_people.map(person => (
+        <PersonCard key={person.id} person={person} />
       ))}
     </div>
   );
@@ -296,7 +289,7 @@ const AssessmentTab: FC = () => {
 
 /* ─── Main component ──────────────────────────────────────────── */
 
-const PopeProfile: FC<InsiderProfileProps> = ({ onBack }) => {
+const PopeProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -320,6 +313,7 @@ const PopeProfile: FC<InsiderProfileProps> = ({ onBack }) => {
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
+      backLabel={backLabel}
     >
       {renderTab()}
     </ProfileShell>
