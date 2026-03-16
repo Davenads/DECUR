@@ -562,12 +562,14 @@ export type DocumentAuthStatus =
   | 'leaked-disputed'
   | 'confirmed-leaked'
   | 'declassified-authentic'
+  | 'confirmed-authentic'
   | 'documented-destroyed'
   | 'official-declassified';
 
 export type DocumentType =
   | 'government-report'
   | 'government-memo'
+  | 'classified-memo'
   | 'intelligence-report'
   | 'academic-study'
   | 'legislation'
