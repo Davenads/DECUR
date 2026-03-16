@@ -59,6 +59,11 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
           </p>
         </div>
 
+        {/* Relationship Network Graph */}
+        <section id="relationship-network">
+          <NetworkGraph />
+        </section>
+
         {/* Event Frequency Chart */}
         <section>
           <EventFrequencyChart
@@ -83,11 +88,6 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         {/* Incident Map */}
         <section>
           <CaseMap cases={mapCases} events={mapEvents} />
-        </section>
-
-        {/* Relationship Network Graph */}
-        <section id="relationship-network">
-          <NetworkGraph />
         </section>
 
       </div>
