@@ -14,6 +14,38 @@ const VAL_OVERRIDES: Record<string, number> = {
   'luis-elizondo': 5, 'david-fravor': 5,
 };
 
+// Document node IDs that have dedicated /documents/[id] pages
+const DOCUMENT_IDS = new Set(graphData.nodes.filter(n => n.type === 'document').map(n => n.id));
+
+// Deep links for concept/technology/facility nodes that are best explained
+// within a specific profile's feature tab rather than a standalone page.
+// Format: nodeId -> URL path to navigate to on click
+const DEEP_LINK_MAP: Record<string, string> = {
+  // Burisch concepts
+  'looking-glass':      '/figures/dan-burisch',
+  'stargates':          '/figures/dan-burisch',
+  'timeline-1':         '/figures/dan-burisch',
+  'timeline-2':         '/figures/dan-burisch',
+  'ganesh-particles':   '/figures/dan-burisch',
+  'shiva-portals':      '/figures/dan-burisch',
+  'project-aquarius':   '/figures/dan-burisch',
+  'project-lotus':      '/figures/dan-burisch',
+  'project-crystal':    '/figures/dan-burisch',
+  'project-preserve':   '/figures/dan-burisch',
+  'chielah':            '/figures/dan-burisch',
+  'majestic-12':        '/figures/dan-burisch',
+  // Lazar tech
+  'element-115':        '/figures/bob-lazar',
+  'gravity-amplifiers': '/figures/bob-lazar',
+  'sport-model':        '/figures/bob-lazar',
+  'gravity-waves':      '/figures/bob-lazar',
+  'project-galileo':    '/figures/bob-lazar',
+  's4-papoose':         '/figures/bob-lazar',
+  // Elizondo concepts
+  'five-observables':   '/figures/luis-elizondo',
+  'aatip':              '/figures/luis-elizondo',
+};
+
 // Derive person nodes from the insiders index, merging with manually-defined nodes
 const existingIds = new Set(graphData.nodes.map(n => n.id));
 const derivedPersonNodes: GraphNode[] = (insidersIndex as Array<{ id: string; name: string; includeInExplore?: boolean }>)
@@ -82,6 +114,7 @@ const NetworkGraph: FC = () => {
   const [highlight, setHighlight] = useState<HighlightState>(EMPTY_HIGHLIGHT);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchFocused, setSearchFocused] = useState(false);
+  const [clickedNode, setClickedNode] = useState<GraphNode | null>(null);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -193,6 +226,13 @@ const NetworkGraph: FC = () => {
     const gNode = node as GraphNode;
     if (gNode.type === 'person' && profileIds.has(gNode.id)) {
       router.push(`/figures/${gNode.id}?ref=explore`);
+    } else if (gNode.type === 'document' && DOCUMENT_IDS.has(gNode.id)) {
+      router.push(`/documents/${gNode.id}?ref=explore`);
+    } else if (DEEP_LINK_MAP[gNode.id]) {
+      router.push(`${DEEP_LINK_MAP[gNode.id]}?ref=explore`);
+    } else {
+      // Non-navigable node: show info panel
+      setClickedNode(prev => prev?.id === gNode.id ? null : gNode);
     }
   }, [router]);
 
@@ -248,8 +288,12 @@ const NetworkGraph: FC = () => {
     [highlight]
   );
 
-  // Whether the currently hovered node has a clickable profile page
-  const isHoveredClickable = hoveredNode?.type === 'person' && profileIds.has(hoveredNode.id);
+  // Whether the currently hovered node navigates somewhere on click
+  const isHoveredNavigable = hoveredNode != null && (
+    (hoveredNode.type === 'person' && profileIds.has(hoveredNode.id)) ||
+    (hoveredNode.type === 'document' && DOCUMENT_IDS.has(hoveredNode.id)) ||
+    (DEEP_LINK_MAP[hoveredNode.id] != null)
+  );
 
   // Count connections for the hover info bar (resolve IDs properly)
   const hoveredConnectionCount = hoveredNode
@@ -318,7 +362,7 @@ const NetworkGraph: FC = () => {
       </div>
 
       {/* Graph canvas */}
-      <div ref={containerRef} className="w-full" style={{ height: 520, cursor: isHoveredClickable ? 'pointer' : 'default' }}>
+      <div ref={containerRef} className="w-full" style={{ height: 520, cursor: isHoveredNavigable || hoveredNode != null ? 'pointer' : 'default' }}>
         <ForceGraph2D
           ref={fgRef}
           graphData={filtered as { nodes: object[]; links: object[] }}
@@ -353,14 +397,54 @@ const NetworkGraph: FC = () => {
             <span className="text-xs text-gray-400 dark:text-gray-500 capitalize">{TYPE_LABELS[hoveredNode.type]}</span>
             <span className="text-xs text-gray-300 dark:text-gray-600">·</span>
             <span className="text-xs text-gray-400 dark:text-gray-500">{hoveredConnectionCount} connections</span>
-            {isHoveredClickable && (
-              <span className="text-xs text-primary font-medium ml-1">Click to view profile →</span>
+            {isHoveredNavigable ? (
+              <span className="text-xs text-primary font-medium ml-1">Click to view →</span>
+            ) : (
+              <span className="text-xs text-gray-400 dark:text-gray-500 ml-1">Click for details</span>
             )}
           </div>
         ) : (
-          <p className="text-xs text-gray-400 dark:text-gray-500">Hover a node to inspect connections · Click a person node to view their profile</p>
+          <p className="text-xs text-gray-400 dark:text-gray-500">Hover a node to inspect connections · Click any node for details or to navigate</p>
         )}
       </div>
+
+      {/* Clicked node info panel */}
+      {clickedNode && (
+        <div className="mx-6 mb-4 border border-gray-200 dark:border-gray-700 rounded-lg p-4 bg-gray-50 dark:bg-gray-900">
+          <div className="flex items-start justify-between gap-2 mb-3">
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[clickedNode.type] }} />
+              <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{clickedNode.name}</h4>
+              <span className="text-xs px-1.5 py-0.5 rounded bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 capitalize">{TYPE_LABELS[clickedNode.type]}</span>
+            </div>
+            <button
+              onClick={() => setClickedNode(null)}
+              className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-xs shrink-0"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="space-y-1.5">
+            {filteredLinks
+              .filter(l => resolveId(l.source) === clickedNode.id || resolveId(l.target) === clickedNode.id)
+              .map((l, i) => {
+                const src = resolveId(l.source);
+                const tgt = resolveId(l.target);
+                const isSource = src === clickedNode.id;
+                const otherId = isSource ? tgt : src;
+                const otherNode = filteredNodes.find(n => n.id === otherId);
+                if (!otherNode) return null;
+                return (
+                  <div key={i} className="flex items-center gap-2 text-xs">
+                    <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[otherNode.type] }} />
+                    <span className="text-gray-500 dark:text-gray-400 italic shrink-0">{(l as GraphLink).label}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{otherNode.name}</span>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
