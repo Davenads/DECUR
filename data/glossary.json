@@ -17,7 +17,8 @@
   {
     "term": "AARO",
     "definition": "All-domain Anomaly Resolution Office - Established by the DoD in July 2022 as the centralized office for detecting, identifying, and attributing UAP. Replaced the UAP Task Force. Responsible for producing the 2024 Historical Record Report.",
-    "source": "curated"
+    "source": "curated",
+    "related_program_id": "aaro"
   },
   {
     "term": "AATIP",
@@ -32,7 +33,8 @@
   {
     "term": "AAWSAP",
     "definition": "Advanced Aerospace Weapon System Application Program - The broader predecessor to AATIP, managed by the Defense Intelligence Agency with Bigelow Aerospace Advanced Space Studies (BAASS) as primary contractor. Covered a wider range of anomalous phenomena than AATIP's aerial focus.",
-    "source": "curated"
+    "source": "curated",
+    "related_program_id": "aawsap"
   },
   {
     "term": "ABMA",
@@ -212,7 +214,8 @@
   {
     "term": "Bigelow Aerospace",
     "definition": "Bigelow Aerospace Advanced Space Studies (BAASS) - Robert Bigelow's aerospace company that served as the primary contractor for AAWSAP. Senator Harry Reid secured the AATIP funding at Bigelow's request. BAASS reportedly studied materials collected in connection with UAP incidents.",
-    "source": "curated"
+    "source": "curated",
+    "related_program_id": "bigelow-aerospace"
   },
   {
     "term": "C4I",
@@ -702,7 +705,8 @@
   {
     "term": "KONA BLUE",
     "definition": "A Special Access Program proposal submitted to the Department of Homeland Security that was never approved, funded, or implemented. Referenced in connection with some of David Grusch's reported sources. AARO's 2024 Historical Record Report identified it as evidence that some disclosed programs may reflect misidentified or unfunded proposals.",
-    "source": "curated"
+    "source": "curated",
+    "related_program_id": "kona-blue"
   },
   {
     "term": "LASER",
@@ -882,7 +886,8 @@
   {
     "term": "NIDS",
     "definition": "National Institute for Discovery Science - Robert Bigelow's private research organization (1995-2004) that investigated UAP, cattle mutilations, and anomalous phenomena including operations at Skinwalker Ranch",
-    "source": "curated"
+    "source": "curated",
+    "related_program_id": "nids"
   },
   {
     "term": "NIE",
@@ -1387,7 +1392,8 @@
   {
     "term": "TTSA",
     "definition": "To The Stars Academy - Tom DeLonge's organization involving former government officials focused on UFO disclosure and technology development",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "ttsa"
   },
   {
     "term": "TUO",

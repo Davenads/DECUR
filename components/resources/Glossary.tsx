@@ -1,9 +1,11 @@
 import { useState, useEffect, FC, ChangeEvent } from 'react';
+import Link from 'next/link';
 
 interface GlossaryTerm {
   term: string;
   definition: string;
   source: 'curated' | 'gerb';
+  related_program_id?: string;
 }
 
 interface GlossaryProps {
@@ -102,12 +104,20 @@ const Glossary: FC<GlossaryProps> = ({ terms }) => {
                 {grouped[letter].map((item, i) => (
                   <div key={i} className="flex gap-3">
                     <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{item.term}</h4>
                         {item.source === 'gerb' && (
                           <span className="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500 font-normal leading-none">
                             research
                           </span>
+                        )}
+                        {item.related_program_id && (
+                          <Link
+                            href={`/programs/${item.related_program_id}`}
+                            className="text-xs px-1.5 py-0.5 rounded bg-primary/10 text-primary font-medium leading-none hover:bg-primary/20 transition-colors"
+                          >
+                            View Program &rarr;
+                          </Link>
                         )}
                       </div>
                       <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{item.definition}</p>
