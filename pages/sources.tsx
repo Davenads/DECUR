@@ -309,6 +309,69 @@ const Sources: NextPage = () => {
             coverage="October 2002 (alleged); June 2019 (leaked)"
             notes="Used for: Eric Davis. Document status: disputed — see Davis case file Wilson-Davis Memo tab."
           />
+
+          <SourceCard
+            name="StantonFriedman.com - Official Website"
+            url="http://www.stantonfriedman.com"
+            type="Primary Archive"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Friedman's own website preserving his bibliography, lecture schedule archive, research papers, and public statements spanning five decades of UAP investigation. Primary reference for career timeline and publication record."
+            notes="Used for: Stanton Friedman."
+          />
+
+          <SourceCard
+            name="Flying Saucers and Science (Friedman, 2008)"
+            url="https://www.amazon.com/Flying-Saucers-Science-Physicist-Investigates/dp/1601630115"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Friedman's nuclear physics-based analysis of UAP propulsion, interstellar travel feasibility, and the scientific case for extraterrestrial origin. His most technically rigorous publication and the primary source for the physics-based sections of his profile."
+            notes="Used for: Stanton Friedman."
+          />
+
+          <SourceCard
+            name="Top Secret/MAJIC (Friedman, 1996)"
+            url="https://www.amazon.com/Top-SecretMajic-Stanton-T-Friedman/dp/1569248079"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Friedman's comprehensive analysis of the MJ-12 briefing documents. Applied historical document methodology to the authenticity question. Primary source for the MJ-12 sections of his profile and for context on the document dispute."
+            notes="Used for: Stanton Friedman."
+          />
+
+          <SourceCard
+            name="Galileo Project - Harvard University"
+            url="https://projects.iq.harvard.edu/galileo"
+            type="Academic Institution"
+            typeColor="bg-green-100 text-green-700"
+            description="Official Galileo Project homepage at Harvard, documenting the project's multi-sensor observatory methodology, peer-reviewed publications, and findings. Primary source for Avi Loeb's Galileo Project profile sections."
+            notes="Used for: Avi Loeb."
+          />
+
+          <SourceCard
+            name="Extraterrestrial: The First Sign of Intelligent Life Beyond Earth (Loeb, 2021)"
+            url="https://www.amazon.com/Extraterrestrial-First-Sign-Intelligent-Beyond/dp/0358278147"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Loeb's international bestseller arguing for rigorous scientific investigation of potential extraterrestrial technological artifacts. Primary source for his 'Oumuamua analysis and public advocacy positions documented in his profile."
+            notes="Used for: Avi Loeb."
+          />
+
+          <SourceCard
+            name="NICAP.org - Case Files and Chronology"
+            url="https://www.nicap.org"
+            type="Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="National Investigations Committee on Aerial Phenomena's digitized case files, organizational history, and chronology pages. Primary source for Donald Keyhoe's NICAP directorship period and the Levelland, Texas case documentation."
+            notes="Used for: Donald Keyhoe, Levelland 1957 case."
+          />
+
+          <SourceCard
+            name="UFOs and the National Security State, Vol. 1 (Dolan, 2002)"
+            url="https://www.amazon.com/UFOs-National-Security-State-Chronology/dp/1571743561"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Historian Richard Dolan's foundational two-volume history of government UAP involvement and civilian research organizations. The most comprehensive published account of the Keyhoe/NICAP era. Used as the primary secondary source for Keyhoe's profile."
+            notes="Used for: Donald Keyhoe."
+          />
         </section>
 
         {/* Government programs sources */}
@@ -316,9 +379,9 @@ const Sources: NextPage = () => {
           <div>
             <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Government Programs</h2>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              Sources consulted in building the 11 manually curated{' '}
+              Sources consulted in building the manually curated{' '}
               <Link href="/data" className="text-primary hover:underline">Government Program</Link>{' '}
-              pages (Project Blue Book, Sign, Grudge, AAWSAP, AARO, Immaculate Constellation, Kona Blue, TTSA, Sol Foundation, NIDS, Bigelow Aerospace).
+              pages (Project Blue Book, Sign, Grudge, AAWSAP, AARO, UAP Task Force, Immaculate Constellation, Kona Blue, TTSA, Sol Foundation, NIDS, Bigelow Aerospace, and others).
               These are reference sources, not scraped datasets.
             </p>
           </div>
@@ -415,6 +478,99 @@ const Sources: NextPage = () => {
             description="Official congressional record of David Grusch's sworn testimony identifying Immaculate Constellation by name as a UAP analysis program. The only on-record public reference to Immaculate Constellation that served as the primary source for that program entry."
             coverage="July 26, 2023"
             notes="Used for: Immaculate Constellation, AARO, Kona Blue."
+          />
+
+          <SourceCard
+            name="DoD Establishment of UAP Task Force (August 2020)"
+            url="https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/"
+            type="Official Government"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Department of Defense official press release announcing the formal establishment of the UAP Task Force within the Office of Naval Intelligence, signed by Deputy Secretary of Defense David Norquist. Primary source for the UAPTF founding mandate and organizational structure."
+            coverage="August 14, 2020"
+            notes="Used for: UAP Task Force (UAPTF)."
+          />
+
+          <SourceCard
+            name="ODNI UAP Preliminary Assessment (June 2021)"
+            url="https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf"
+            type="Official Government Report"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The UAP Task Force's 9-page unclassified preliminary assessment, released by the Office of the Director of National Intelligence. Found 143 of 144 reported incidents unexplained. The primary output of the UAPTF and the document that directly drove the creation of AARO."
+            coverage="June 25, 2021"
+            notes="Used for: UAP Task Force (UAPTF)."
+          />
+        </section>
+
+        {/* Documented cases sources */}
+        <section className="space-y-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Documented Cases</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Sources consulted in building the manually curated{' '}
+              <Link href="/data?category=cases" className="text-primary hover:underline">Documented Cases</Link>{' '}
+              pages. Includes investigative reports, declassified files, congressional records, and academic analyses.
+            </p>
+          </div>
+
+          <SourceCard
+            name="National Archives - Project Blue Book Records"
+            url="https://www.archives.gov/research/military/air-force/ufos"
+            type="Primary Government Archive"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Declassified Project Blue Book investigation files, including the official case reports for Levelland (1957) and many other historically documented cases. The primary official record for cases investigated during the Blue Book era (1952-1969)."
+            coverage="1947-1969"
+            notes="Used for: Levelland 1957, Malmstrom AFB 1967, Washington D.C. 1952, and other Blue Book-era cases."
+          />
+
+          <SourceCard
+            name="NICAP Case Files"
+            url="http://www.nicap.org"
+            type="Civilian Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="NICAP's digitized case investigation files maintained by Fran Ridge. Includes the independent investigation reports for Levelland (1957) that challenged Blue Book's ball lightning explanation, and the Coyne Helicopter (1973) documentation."
+            notes="Used for: Levelland 1957, Coyne Helicopter 1973."
+          />
+
+          <SourceCard
+            name="CUFOS - Coyne Helicopter Case Study (Zeidman, 1979)"
+            url="https://www.cufos.org"
+            type="Academic Investigation"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Jennie Zeidman's comprehensive CUFOS investigation report on the October 18, 1973 Coyne Helicopter encounter near Mansfield, Ohio. The most detailed case analysis available, based on interviews with all four crew members and independent civilian witnesses. J. Allen Hynek co-presented the case to the United Nations in 1978."
+            coverage="1973 incident; 1979 publication"
+            notes="Used for: Coyne Helicopter 1973."
+          />
+        </section>
+
+        {/* Primary documents sources */}
+        <section className="space-y-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Primary Documents</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Sources for the declassified, leaked, and official documents cataloged in the{' '}
+              <Link href="/data?category=documents" className="text-primary hover:underline">Documents</Link>{' '}
+              section.
+            </p>
+          </div>
+
+          <SourceCard
+            name="FBI Records: The Vault - Hottel Memo"
+            url="https://vault.fbi.gov/hottel_memo"
+            type="Declassified Government"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The FBI's official online Freedom of Information Act database containing the March 22, 1950 Hottel Memo - a field office memo to J. Edgar Hoover describing recovered craft and occupants. The FBI's own Vault page notes this is its most-accessed document and explicitly states the information is unverified."
+            coverage="March 22, 1950"
+            notes="Used for: Hottel Memo (1950)."
+          />
+
+          <SourceCard
+            name="NICAP - Pentacle Memorandum"
+            url="https://www.nicap.org/docs/pentacle.htm"
+            type="Document Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="NICAP's hosted copy of the January 9, 1953 Pentacle Memorandum - a classified Battelle Memorial Institute memo to Wright-Patterson AFB revealing a parallel secret UAP analysis program alongside Blue Book, discovered in J. Allen Hynek's personal papers by Jacques Vallee. Primary source for the document profile."
+            coverage="January 9, 1953"
+            notes="Used for: Pentacle Memorandum (1953)."
           />
         </section>
 
