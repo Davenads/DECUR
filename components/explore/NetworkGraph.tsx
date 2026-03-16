@@ -127,6 +127,8 @@ const NetworkGraph: FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchFocused, setSearchFocused] = useState(false);
   const [clickedNode, setClickedNode] = useState<GraphNode | null>(null);
+  const [egoNodeId, setEgoNodeId] = useState<string | null>(null);
+  const hoverClearTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -165,6 +167,42 @@ const NetworkGraph: FC = () => {
     [filteredNodes, filteredLinks]
   );
 
+  // Ego network: 1-hop subgraph around egoNodeId
+  const egoNode = useMemo(
+    () => (egoNodeId ? filteredNodes.find(n => n.id === egoNodeId) ?? null : null),
+    [egoNodeId, filteredNodes]
+  );
+  const egoData = useMemo(() => {
+    if (!egoNodeId) return null;
+    const connectedLinks = filteredLinks.filter(l =>
+      resolveId(l.source) === egoNodeId || resolveId(l.target) === egoNodeId
+    );
+    const neighborIds = new Set<string>([egoNodeId]);
+    connectedLinks.forEach(l => {
+      neighborIds.add(resolveId(l.source));
+      neighborIds.add(resolveId(l.target));
+    });
+    return {
+      nodes: filteredNodes.filter(n => neighborIds.has(n.id)),
+      links: connectedLinks,
+    };
+  }, [egoNodeId, filteredNodes, filteredLinks]);
+
+  // Active graph data: ego subgraph when active, otherwise full filtered graph
+  const activeData = egoData ?? filtered;
+
+  const enterEgoMode = useCallback((node: GraphNode) => {
+    setEgoNodeId(node.id);
+    setHighlight(EMPTY_HIGHLIGHT);
+    setClickedNode(null);
+    setTimeout(() => fgRef.current?.zoomToFit(300, 60), 80);
+  }, []);
+
+  const exitEgoMode = useCallback(() => {
+    setEgoNodeId(null);
+    setTimeout(() => fgRef.current?.zoomToFit(400, 40), 80);
+  }, []);
+
   // Freeze node positions after the simulation converges so filter toggles
   // don't re-run the physics layout from scratch.
   const handleEngineStop = useCallback(() => {
@@ -179,11 +217,20 @@ const NetworkGraph: FC = () => {
 
   const handleNodeHover = useCallback((node: object | null) => {
     const gNode = node as GraphNode | null;
-    setHoveredNode(gNode ?? null);
+    // Clear any pending debounced hover-clear
+    if (hoverClearTimer.current) {
+      clearTimeout(hoverClearTimer.current);
+      hoverClearTimer.current = null;
+    }
     if (!gNode) {
-      setHighlight(EMPTY_HIGHLIGHT);
+      // Debounce the clear by 200ms so the user can reach the Explore button
+      hoverClearTimer.current = setTimeout(() => {
+        setHoveredNode(null);
+        setHighlight(EMPTY_HIGHLIGHT);
+      }, 200);
       return;
     }
+    setHoveredNode(gNode);
     const nodeId = gNode.id;
     // filteredLinks may have already-resolved objects from a previous render cycle
     const connectedLinks = filteredLinks.filter(l => {
@@ -349,6 +396,9 @@ const NetworkGraph: FC = () => {
       }).length
     : 0;
 
+  // Cleanup hover timer on unmount
+  useEffect(() => () => { if (hoverClearTimer.current) clearTimeout(hoverClearTimer.current); }, []);
+
   return (
     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
       {/* Header */}
@@ -396,28 +446,48 @@ const NetworkGraph: FC = () => {
         )}
       </div>
 
-      {/* Type filter pills */}
-      <div className="px-6 pb-2 flex flex-wrap gap-1.5">
-        {(Object.keys(TYPE_LABELS) as NodeType[]).map(type => (
+      {/* Type filter pills OR ego mode banner */}
+      {egoNodeId ? (
+        <div className="px-6 pb-2 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 min-w-0">
+            <span
+              className="w-2 h-2 rounded-full shrink-0"
+              style={{ backgroundColor: egoNode ? NODE_COLORS[egoNode.type] : '#9ca3af' }}
+            />
+            <span className="text-xs text-gray-700 dark:text-gray-300 truncate">
+              Exploring connections for <span className="font-semibold">{egoNode?.name}</span>
+            </span>
+          </div>
           <button
-            key={type}
-            onClick={() => toggleType(type)}
-            className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors border ${
-              activeTypes.has(type)
-                ? 'text-white border-transparent'
-                : 'bg-white dark:bg-gray-700 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-600'
-            }`}
-            style={activeTypes.has(type) ? { backgroundColor: NODE_COLORS[type] } : {}}
+            onClick={exitEgoMode}
+            className="shrink-0 text-xs px-2.5 py-1 rounded-full border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
           >
-            {TYPE_LABELS[type]}
+            ← Exit
           </button>
-        ))}
-      </div>
+        </div>
+      ) : (
+        <div className="px-6 pb-2 flex flex-wrap gap-1.5">
+          {(Object.keys(TYPE_LABELS) as NodeType[]).map(type => (
+            <button
+              key={type}
+              onClick={() => toggleType(type)}
+              className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors border ${
+                activeTypes.has(type)
+                  ? 'text-white border-transparent'
+                  : 'bg-white dark:bg-gray-700 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-600'
+              }`}
+              style={activeTypes.has(type) ? { backgroundColor: NODE_COLORS[type] } : {}}
+            >
+              {TYPE_LABELS[type]}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Graph stats */}
       <div className="px-6 pb-3">
         <span className="text-xs text-gray-400 dark:text-gray-500">
-          {filteredNodes.length} nodes · {filteredLinks.length} edges
+          {activeData.nodes.length} nodes · {activeData.links.length} edges
         </span>
       </div>
 
@@ -425,7 +495,7 @@ const NetworkGraph: FC = () => {
       <div ref={containerRef} className="w-full" style={{ height: 520, cursor: isHoveredNavigable || hoveredNode != null ? 'pointer' : 'default' }}>
         <ForceGraph2D
           ref={fgRef}
-          graphData={filtered as { nodes: object[]; links: object[] }}
+          graphData={activeData as { nodes: object[]; links: object[] }}
           width={graphWidth}
           height={520}
           backgroundColor="transparent"
@@ -448,23 +518,31 @@ const NetworkGraph: FC = () => {
       </div>
 
       {/* Hover info */}
-      <div className="px-6 py-3 border-t border-gray-100 dark:border-gray-800 min-h-[48px] flex items-center justify-between">
+      <div className="px-6 py-3 border-t border-gray-100 dark:border-gray-800 min-h-[48px] flex items-center justify-between gap-3">
         {hoveredNode ? (
-          <div className="flex items-center gap-2 flex-wrap">
-            <span
-              className="w-3 h-3 rounded-full shrink-0"
-              style={{ backgroundColor: NODE_COLORS[hoveredNode.type] }}
-            />
-            <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">{hoveredNode.name}</span>
-            <span className="text-xs text-gray-400 dark:text-gray-500 capitalize">{TYPE_LABELS[hoveredNode.type]}</span>
-            <span className="text-xs text-gray-300 dark:text-gray-600">·</span>
-            <span className="text-xs text-gray-400 dark:text-gray-500">{hoveredConnectionCount} connections</span>
-            {isHoveredNavigable ? (
-              <span className="text-xs text-primary font-medium ml-1">Click to view →</span>
-            ) : (
-              <span className="text-xs text-gray-400 dark:text-gray-500 ml-1">Click for details</span>
-            )}
-          </div>
+          <>
+            <div className="flex items-center gap-2 flex-wrap min-w-0">
+              <span
+                className="w-3 h-3 rounded-full shrink-0"
+                style={{ backgroundColor: NODE_COLORS[hoveredNode.type] }}
+              />
+              <span className="text-sm font-semibold text-gray-800 dark:text-gray-200 truncate">{hoveredNode.name}</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500 capitalize shrink-0">{TYPE_LABELS[hoveredNode.type]}</span>
+              <span className="text-xs text-gray-300 dark:text-gray-600 shrink-0">·</span>
+              <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">{hoveredConnectionCount} connections</span>
+              {isHoveredNavigable ? (
+                <span className="text-xs text-primary font-medium ml-1 shrink-0">Click to view →</span>
+              ) : (
+                <span className="text-xs text-gray-400 dark:text-gray-500 ml-1 shrink-0">Click for details</span>
+              )}
+            </div>
+            <button
+              onMouseDown={() => enterEgoMode(hoveredNode)}
+              className="shrink-0 text-xs px-2.5 py-1 rounded-full border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
+            >
+              Explore
+            </button>
+          </>
         ) : (
           <p className="text-xs text-gray-400 dark:text-gray-500">Hover a node to inspect connections · Click any node for details or to navigate</p>
         )}
