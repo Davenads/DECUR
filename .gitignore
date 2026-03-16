@@ -82,3 +82,4 @@ case-enrichment.md
 
 # Dev server log
 .dev-server.log
+restart-dev.js
