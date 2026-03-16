@@ -325,12 +325,20 @@ const NetworkGraph: FC = () => {
   return (
     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
       {/* Header */}
-      <div className="px-6 pt-5 pb-3 space-y-1">
-        <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Relationship Network</h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Connections between insiders, facilities, entities, organizations, projects, and concepts.
-          Search or hover a node to highlight its connections.
-        </p>
+      <div className="px-6 pt-5 pb-3 flex items-start justify-between gap-4">
+        <div className="space-y-1">
+          <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Relationship Network</h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            Connections between insiders, facilities, entities, organizations, projects, and concepts.
+            Search or hover a node to highlight its connections.
+          </p>
+        </div>
+        <button
+          onClick={() => fgRef.current?.zoomToFit(400, 40)}
+          className="shrink-0 text-xs px-2.5 py-1.5 rounded-lg border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
+        >
+          Reset View
+        </button>
       </div>
 
       {/* Search */}
@@ -362,7 +370,7 @@ const NetworkGraph: FC = () => {
       </div>
 
       {/* Type filter pills */}
-      <div className="px-6 pb-3 flex flex-wrap gap-1.5">
+      <div className="px-6 pb-2 flex flex-wrap gap-1.5">
         {(Object.keys(TYPE_LABELS) as NodeType[]).map(type => (
           <button
             key={type}
@@ -377,6 +385,13 @@ const NetworkGraph: FC = () => {
             {TYPE_LABELS[type]}
           </button>
         ))}
+      </div>
+
+      {/* Graph stats */}
+      <div className="px-6 pb-3">
+        <span className="text-xs text-gray-400 dark:text-gray-500">
+          {filteredNodes.length} nodes · {filteredLinks.length} edges
+        </span>
       </div>
 
       {/* Graph canvas */}
@@ -396,6 +411,7 @@ const NetworkGraph: FC = () => {
           linkDirectionalParticles={2}
           linkDirectionalParticleSpeed={0.004}
           linkDirectionalParticleWidth={particleWidth}
+          warmupTicks={80}
           cooldownTicks={120}
           nodeRelSize={4}
           d3AlphaDecay={0.02}
