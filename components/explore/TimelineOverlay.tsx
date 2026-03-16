@@ -71,6 +71,9 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'daniel-sheehan':{ label: 'Daniel Sheehan', color: '#fbbf24' },
   'chuck-schumer': { label: 'Chuck Schumer',  color: '#38bdf8' },
   'jesse-michels': { label: 'Jesse Michels',  color: '#f472b6' },
+  'alex-dietrich': { label: 'Alex Dietrich',  color: '#c084fc' },
+  'kevin-day':     { label: 'Kevin Day',       color: '#67e8f9' },
+  'john-mack':     { label: 'John Mack',       color: '#86efac' },
 };
 
 const UAP_COLOR = '#93c5e8';

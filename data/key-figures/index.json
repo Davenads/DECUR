@@ -634,7 +634,7 @@
     ],
     "data_file": "dietrich.json",
     "type": "pilot",
-    "includeInExplore": false
+    "includeInExplore": true
   },
   {
     "id": "kevin-day",
@@ -656,7 +656,7 @@
     ],
     "data_file": "day.json",
     "type": "insider",
-    "includeInExplore": false
+    "includeInExplore": true
   },
   {
     "id": "john-mack",
