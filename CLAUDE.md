@@ -35,7 +35,7 @@ data/
     index.json           - Searchable index of all figures
     registry.ts          - Maps id -> JSON data for GenericInsiderProfile
     [id].json            - One file per profile
-  cases.json, ufotimeline.json, network-graph.ts ...
+  cases.json, timeline.json, programs.json, glossary.json, network-graph.ts ...
 public/                  - Static assets
 styles/                  - Global CSS
 .claude/                 - Claude AI context files
@@ -241,8 +241,8 @@ No component file is needed. No `if` check in `InsidersList.tsx` is needed.
 
 ---
 
-## ufotimeline.json Data Rules
-- **Never use a `ufotimeline.com` URL as `article_url`** in ufotimeline.json entries. `article_url` must point to the final destination (Amazon, YouTube, FBI Vault, archive.org, etc.).
+## timeline.json Data Rules
+- **Never use a `ufotimeline.com` URL as `article_url`** in timeline.json entries. `article_url` must point to the final destination (Amazon, YouTube, FBI Vault, archive.org, etc.).
 - `source_url` may remain as the ufotimeline.com permalink for reference/attribution.
 - When adding new entries that were sourced from ufotimeline, always populate `article_url` directly from the ufotimeline page's outbound CTA link ("On Amazon", "View More", "Read Article", etc.).
 - If no outbound link exists, leave `article_url` as `null` -- the component falls back to `source_url`.
@@ -275,19 +275,21 @@ No component file is needed. No `if` check in `InsidersList.tsx` is needed.
 
 ## Domain-Specific Context
 This platform organizes research into several key areas:
-- **Extraterrestrial Entities**: P-45s, P-52s, and Orions documentation
-- **Timeline Mechanics**: Timeline 1 vs Timeline 2 theory, Looking Glass technology
-- **Project Lotus**: Ganesh particles, Shiva portals, cellular transformation research
-- **Medical Research**: J-Rod neuropathology, genetic modifications, xenograft studies
-- **Historical Incidents**: Majestic-12 involvement, key events and locations
+- **Key Figures**: Firsthand testimony from government insiders, scientists, pilots, journalists, and officials
+- **Documented Cases**: High-evidence UAP incidents with structured evidence tiers, witness accounts, and competing hypotheses
+- **Government Programs**: Official and private programs involved in UAP investigation, research, and disclosure (Blue Book, AAWSAP, AARO, TTSA, NICAP, and others)
+- **Primary Documents**: Declassified government reports, memos, and legislative records
+- **Historical Timeline**: 1,800+ events spanning 1561 to present, sourced from NICAP, UFO Timeline, OpenMinds, and Papoose Lake Archive
+
+Note: Dan Burisch has a bespoke Tier 2 profile component (`components/data/key-figures/burisch/`) due to his unique data schema. He is one figure among many and should not be treated as the platform's primary subject.
 
 ---
 
 ## Platform Architecture Priorities
 1. **Home**: Clean landing page with mission statement and navigation
-2. **Data**: Core focus - Key Figures, Cases, Documents, Timeline, NHI Entities
+2. **Data**: Core focus - Key Figures, Cases, Documents, Programs, Timeline
 3. **Explore**: Interactive network graph and timeline overlay visualizations
-4. **Resources**: Curated materials and transcripts
+4. **Resources**: Curated materials, transcripts, and glossary
 5. **About/Contact**: Simple contact form and project information
 
 When exploring code or creating new features, start by understanding related components using the `.claude` documentation to navigate the codebase efficiently.

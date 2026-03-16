@@ -20,6 +20,7 @@ const navItems: NavItems = {
       { title: 'Quotes', path: '/data?category=quotes' },
       { title: 'Media', path: '/data?category=media' },
       { title: 'Documents', path: '/data?category=documents' },
+      { title: 'Programs', path: '/data?category=programs' },
       { title: 'News', path: '/data?category=news' },
     ],
   },
