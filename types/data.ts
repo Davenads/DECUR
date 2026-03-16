@@ -518,6 +518,42 @@ export interface CaseEntry {
   sources?: CaseSource[];
 }
 
+/* ─── Programs Types ───────────────────────────────────────────── */
+
+export interface ProgramPersonnel {
+  name: string;
+  role: string;
+  figure_id?: string;
+}
+
+export interface ProgramKeyEvent {
+  year: string;
+  event: string;
+}
+
+export interface ProgramSource {
+  title: string;
+  url?: string;
+  type: string;
+}
+
+export interface ProgramEntry {
+  id: string;
+  name: string;
+  type: 'project' | 'organization';
+  status: 'active' | 'defunct' | 'classified' | 'unknown';
+  active_period: string;
+  parent_org: string;
+  summary: string;
+  significance: string;
+  key_personnel: ProgramPersonnel[];
+  key_events: ProgramKeyEvent[];
+  connected_documents: string[];
+  connected_figures: string[];
+  limitations: string[];
+  sources: ProgramSource[];
+}
+
 /* ─── Documents Types ──────────────────────────────────────────── */
 
 export type DocumentAuthStatus =

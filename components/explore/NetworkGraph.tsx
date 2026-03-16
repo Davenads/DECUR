@@ -17,6 +17,13 @@ const VAL_OVERRIDES: Record<string, number> = {
 // Document node IDs that have dedicated /documents/[id] pages
 const DOCUMENT_IDS = new Set(graphData.nodes.filter(n => n.type === 'document').map(n => n.id));
 
+// Program node IDs that have dedicated /programs/[id] pages
+const PROGRAM_IDS = new Set([
+  'project-blue-book', 'project-sign', 'project-grudge',
+  'aawsap', 'aaro', 'immaculate-constellation', 'kona-blue',
+  'ttsa', 'sol-foundation', 'nids', 'bigelow-aerospace',
+]);
+
 // Deep links for concept/technology/facility nodes that are best explained
 // within a specific profile's feature tab rather than a standalone page.
 // Format: nodeId -> URL path to navigate to on click
@@ -228,6 +235,8 @@ const NetworkGraph: FC = () => {
       router.push(`/figures/${gNode.id}?ref=explore`);
     } else if (gNode.type === 'document' && DOCUMENT_IDS.has(gNode.id)) {
       router.push(`/documents/${gNode.id}?ref=explore`);
+    } else if ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(gNode.id)) {
+      router.push(`/programs/${gNode.id}?ref=explore`);
     } else if (DEEP_LINK_MAP[gNode.id]) {
       router.push(`${DEEP_LINK_MAP[gNode.id]}?ref=explore`);
     } else {
