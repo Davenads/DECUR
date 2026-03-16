@@ -20,6 +20,9 @@ export interface GraphNode {
   // injected at runtime by force-graph
   x?: number;
   y?: number;
+  // optional position pins — set after onEngineStop to freeze layout
+  fx?: number;
+  fy?: number;
 }
 
 export interface GraphLink {

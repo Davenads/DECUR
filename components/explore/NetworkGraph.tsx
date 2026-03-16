@@ -165,6 +165,18 @@ const NetworkGraph: FC = () => {
     [filteredNodes, filteredLinks]
   );
 
+  // Freeze node positions after the simulation converges so filter toggles
+  // don't re-run the physics layout from scratch.
+  const handleEngineStop = useCallback(() => {
+    const nodes = (fgRef.current?.graphData()?.nodes ?? []) as GraphNode[];
+    nodes.forEach(n => {
+      if (n.x != null && n.y != null) {
+        n.fx = n.x;
+        n.fy = n.y;
+      }
+    });
+  }, []);
+
   const handleNodeHover = useCallback((node: object | null) => {
     const gNode = node as GraphNode | null;
     setHoveredNode(gNode ?? null);
@@ -408,6 +420,7 @@ const NetworkGraph: FC = () => {
           linkWidth={linkWidth}
           onNodeHover={handleNodeHover}
           onNodeClick={handleNodeClick}
+          onEngineStop={handleEngineStop}
           linkDirectionalParticles={2}
           linkDirectionalParticleSpeed={0.004}
           linkDirectionalParticleWidth={particleWidth}
