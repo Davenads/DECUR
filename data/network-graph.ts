@@ -476,5 +476,12 @@ export const graphData: GraphData = {
     { source: 'skinwalker-ranch',      target: 'james-lacatski',            label: 'visit prompted AAWSAP' },
     { source: 'skinwalker-ranch',      target: 'aawsap',                    label: 'investigation prompted' },
     { source: 'malmstrom-afb',         target: 'malmstrom-afb-1967',        label: 'site of' },
+
+    // Harald Malmgren connections
+    { source: 'harald-malmgren',       target: 'majestic-12',               label: 'briefed on via CIA DDP Bissell' },
+    { source: 'harald-malmgren',       target: 'oga',                       label: 'CIA/NSC interface; Bissell connection' },
+    { source: 'harald-malmgren',       target: 'roswell-1947',              label: 'CIA source corroborated broader recovery context' },
+    { source: 'jesse-michels',         target: 'harald-malmgren',           label: 'interviewed' },
+    { source: 'david-grusch',          target: 'harald-malmgren',           label: 'corroborating compartmentalization accounts' },
   ],
 };

@@ -73,7 +73,8 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'jesse-michels': { label: 'Jesse Michels',  color: '#f472b6' },
   'alex-dietrich': { label: 'Alex Dietrich',  color: '#c084fc' },
   'kevin-day':     { label: 'Kevin Day',       color: '#67e8f9' },
-  'john-mack':     { label: 'John Mack',       color: '#86efac' },
+  'john-mack':       { label: 'John Mack',        color: '#86efac' },
+  'harald-malmgren': { label: 'Harald Malmgren',  color: '#9f1239' },
 };
 
 const UAP_COLOR = '#93c5e8';

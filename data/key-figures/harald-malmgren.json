@@ -1,0 +1,114 @@
+{
+  "profile": {
+    "id": "harald-malmgren",
+    "name": "Dr. Harald Malmgren",
+    "aliases": ["Harold Malmgren", "Harald B. Malmgren"],
+    "born": "c. 1936",
+    "died": null,
+    "roles": [
+      "Senior Presidential Adviser - Kennedy, Johnson, Nixon, and Ford Administrations",
+      "Deputy Special Representative for Trade Negotiations (1974-1975)",
+      "Senior Staff, National Security Council Situation Room"
+    ],
+    "service_period": "1961-1975 (government service); 1975-present (independent advisory)",
+    "organizations": [
+      "National Security Council",
+      "Office of the U.S. Trade Representative",
+      "Atomic Energy Commission (Q clearance holder)",
+      "MIT (advisory connection via Carl Compton)"
+    ],
+    "clearance": "Q clearance (Atomic Energy Commission, former); Presidential-level NSC access across four administrations (former)",
+    "summary": "One of the longest-serving and most senior White House advisers of the Cold War era, Harald Malmgren served in the National Security Council and trade policy apparatus under Kennedy, Johnson, Nixon, and Ford - making him a direct participant in events including the Cuban Missile Crisis situation room and the nuclear test operations of 1962. In an April 2025 on-camera interview with Jesse Michels, he disclosed that he personally handled anomalous material recovered from the plume of the Bluegill Triple Prime nuclear test in the Marshall Islands, and that CIA Deputy Director Richard Bissell privately briefed him on a 1933 UFO crash in Magenta, Italy. Despite holding blanket Q clearance and presidential-level access, he states he was denied further information on the recovered material - an account structurally consistent with the compartmentalization model described by later figures including David Grusch.",
+    "education": [
+      "D.Phil., Economics, University of Oxford",
+      "MIT (admitted age 14 on scholarship from MIT President Carl Compton, c. 1950)"
+    ],
+    "early_career": [
+      "Prodigy economist recruited by MIT President Carl Compton circa 1950 at age 14",
+      "Oxford doctorate in economics; entered elite policy circles before age 25",
+      "Joined Kennedy administration NSC as one of the youngest senior advisers in White House history"
+    ],
+    "key_events": [
+      {
+        "year": "1961",
+        "event": "Joins the Kennedy administration National Security Council. Becomes one of the youngest senior advisers in White House history, with direct access to the President, Secretary of Defense, and senior CIA leadership including Deputy Director Richard Bissell."
+      },
+      {
+        "year": "Oct 1962",
+        "event": "Cuban Missile Crisis. Serves as situation room liaison between Secretary McNamara, National Security Adviser McGeorge Bundy, and President Kennedy. Claims firsthand witness to General Curtis LeMay raising the Strategic Air Command to Defcon 2 without presidential authorization - the only time in U.S. history SAC reached that readiness level."
+      },
+      {
+        "year": "1962",
+        "event": "Operation Dominic / Bluegill Triple Prime nuclear test, Marshall Islands. Malmgren states he personally handled material recovered from the test plume that was anomalous in character. Despite holding Q clearance (Atomic Energy Commission) and presidential-level NSC access, he was denied further information on the recovered material. The 1998 declassification of Bluegill Triple Prime footage included redaction of white triangular objects visible in the original footage."
+      },
+      {
+        "year": "c. 1960s",
+        "event": "CIA Deputy Director of Plans Richard Bissell - the architect of Area 51 and the U-2 program - privately confirms to Malmgren the existence of a 1933 UFO crash in Magenta, Italy. Malmgren describes this as the most direct senior intelligence briefing he received on UAP recovery programs. Bissell died in 1994, making the account independently unverifiable."
+      },
+      {
+        "year": "1974-1975",
+        "event": "Serves as Deputy Special Representative for Trade Negotiations under Nixon and Ford. Concludes his official government service after 14 years spanning four administrations."
+      },
+      {
+        "year": "2023",
+        "event": "Begins public commentary on UAP/NHI topics via social media, drawing attention within UAP research communities for firsthand corroboration of compartmentalization narratives. Posts are informal but consistent with claims later articulated in the 2025 Michels interview."
+      },
+      {
+        "year": "Apr 2025",
+        "event": "Gives first major on-camera interview to Jesse Michels (American Alchemy, YouTube). Discloses firsthand handling of anomalous material from Bluegill Triple Prime (1962), Bissell's confirmation of Italian crash, and his assessment that UAP secrecy was systematically bound into Atomic Energy Commission classification infrastructure. Interview published April 22, 2025."
+      }
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "jesse-michels",
+      "name": "Jesse Michels",
+      "role": "Host, American Alchemy; Primary interviewer",
+      "relationship": "Conducted the April 2025 on-camera interview that constitutes Malmgren's primary formal UAP disclosure. Michels's channel provided the platform and context for the interview, published April 22, 2025."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO / UAP Task Force intelligence officer; whistleblower",
+      "relationship": "Grusch's congressional testimony (July 2023) described the same compartmentalization architecture that Malmgren independently corroborates - recovery programs insulated from standard clearance pathways and from presidential oversight. Their accounts converge on structure if not on specifics."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "Physicist; AAWSAP researcher; TTSA co-founder",
+      "relationship": "Mentioned in the Malmgren-Michels interview as a researcher who has independently corroborated the nuclear-UAP connection framework. Both figures point to Atomic Energy Commission classification infrastructure as the mechanism for UAP secrecy."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "Apr 2025",
+      "type": "podcast",
+      "title": "Presidential Advisor: I Directly Handled UFO Material",
+      "outlet": "Jesse Michels / American Alchemy (YouTube)",
+      "notes": "Primary formal disclosure. On-camera interview in which Malmgren claims firsthand handling of anomalous material recovered from the Bluegill Triple Prime nuclear test in the Marshall Islands (1962), a private briefing from CIA Deputy Director Richard Bissell on the 1933 Magenta, Italy UFO crash, and denial of access to recovered material data despite holding Q clearance and presidential NSC authorization. Published April 22, 2025."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Jesse Michels Interview - Presidential Advisor: I Directly Handled UFO Material (Apr 2025)",
+      "url": "https://www.youtube.com/watch?v=09KP8XVf5nY",
+      "type": "Interview",
+      "notes": "Primary source. First major on-camera interview. Contains core UAP claims: Bluegill Triple Prime material handling, Bissell briefing, and Defcon 2 Cuban Missile Crisis account."
+    },
+    {
+      "title": "Operation Dominic / Bluegill Triple Prime - Defense Threat Reduction Agency Records",
+      "url": "https://www.dtra.mil/Portals/61/Documents/NTPR/4-Dose_Reconstruction/GR_Operation_DOMINIC_I.pdf",
+      "type": "Government Document",
+      "notes": "Declassified record of the 1962 Operation Dominic nuclear test series in the Marshall Islands, including Bluegill Triple Prime - the test Malmgren references in the 2025 interview."
+    },
+    {
+      "title": "Cuban Missile Crisis - John F. Kennedy Presidential Library records",
+      "url": "https://www.jfklibrary.org/learn/about-jfk/jfk-in-history/cuban-missile-crisis",
+      "type": "Historical Record",
+      "notes": "Corroborates Malmgren's NSC situation room role. Curtis LeMay's conduct during the crisis is documented in multiple declassified accounts."
+    }
+  ]
+}

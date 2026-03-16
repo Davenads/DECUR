@@ -685,5 +685,19 @@
     "data_file": "jesse-michels.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "harald-malmgren",
+    "name": "Dr. Harald Malmgren",
+    "aliases": ["Harold Malmgren", "Harald B. Malmgren"],
+    "role": "Presidential Adviser (Kennedy, Johnson, Nixon, Ford); Deputy Special Trade Representative",
+    "period": "1961-1975",
+    "affiliation": "National Security Council, Office of the U.S. Trade Representative",
+    "summary": "One of the longest-serving senior White House advisers of the Cold War era, Malmgren served four consecutive presidential administrations with NSC situation room access and Q clearance. In a 2025 interview with Jesse Michels he disclosed firsthand handling of anomalous material recovered from the Bluegill Triple Prime nuclear test (1962) in the Marshall Islands, and a private briefing from CIA Deputy Director Richard Bissell on a 1933 Italian UFO crash - despite which he was denied further access to recovered material information. His government career is among the most senior of any figure to have made firsthand UAP material claims on record.",
+    "status": "detailed",
+    "tags": ["NSC", "Cuban Missile Crisis", "Operation Dominic", "Bluegill Triple Prime", "Q clearance", "Cold War", "Bissell", "CIA", "four presidents"],
+    "data_file": "harald-malmgren.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]
