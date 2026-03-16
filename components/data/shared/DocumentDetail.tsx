@@ -89,7 +89,7 @@ const OverviewTab: FC<{ d: DocumentEntry }> = ({ d }) => {
 
 const KeyFindingsTab: FC<{ d: DocumentEntry }> = ({ d }) => (
   <div className="space-y-4">
-    <p className="text-sm text-gray-500">Documented findings and conclusions from within the document.</p>
+    <p className="text-sm text-gray-500 dark:text-gray-400">Documented findings and conclusions from within the document.</p>
     <ul className="space-y-3">
       {d.key_findings.map((f, i) => (
         <li key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-3">
@@ -103,8 +103,8 @@ const KeyFindingsTab: FC<{ d: DocumentEntry }> = ({ d }) => (
 
 const ProvenanceTab: FC<{ d: DocumentEntry }> = ({ d }) => (
   <div className="space-y-6">
-    <div className={`border rounded-lg p-4 ${authConfig[d.authenticity_status].classes.replace('text-', 'border-').replace('bg-', 'bg-').split(' ')[0]} border-opacity-50`}>
-      <p className="text-xs font-bold uppercase tracking-wide mb-2 opacity-70">Authentication Status</p>
+    <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 bg-gray-50 dark:bg-gray-800/50">
+      <p className="text-xs font-bold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">Authentication Status</p>
       <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${authConfig[d.authenticity_status].classes}`}>
         {authConfig[d.authenticity_status].label}
       </span>
@@ -121,7 +121,7 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
   if (d.insider_connections.length === 0) {
     return (
       <div className="text-center py-10">
-        <p className="text-sm text-gray-400">No direct connections to DECUR insider profiles.</p>
+        <p className="text-sm text-gray-400 dark:text-gray-500">No direct connections to DECUR insider profiles.</p>
       </div>
     );
   }
@@ -140,7 +140,7 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-gray-500">Connections to DECUR insider profiles through direct involvement or corroborating testimony.</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400">Connections to DECUR insider profiles through direct involvement or corroborating testimony.</p>
       {d.insider_connections.map((id, i) => {
         const person = labels[id] ?? { name: id, role: 'DECUR insider', note: '' };
         return (
@@ -162,7 +162,7 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
 
 const LimitationsTab: FC<{ d: DocumentEntry }> = ({ d }) => (
   <div className="space-y-4">
-    <p className="text-sm text-gray-500">Documented limitations, caveats, and contested aspects of this document.</p>
+    <p className="text-sm text-gray-500 dark:text-gray-400">Documented limitations, caveats, and contested aspects of this document.</p>
     <ul className="space-y-2">
       {d.limitations.map((lim, i) => (
         <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300 border border-gray-100 dark:border-gray-700 rounded-lg p-3">
