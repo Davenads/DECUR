@@ -275,6 +275,21 @@ const NetworkGraph: FC = () => {
       const y = gNode.y;
       if (x == null || y == null) return; // node not yet positioned by simulation
 
+      // Navigable ring: draw before fill so it sits behind the main circle
+      const isNavigable =
+        (gNode.type === 'person' && profileIds.has(id)) ||
+        (gNode.type === 'document' && DOCUMENT_IDS.has(id)) ||
+        (gNode.type === 'case' && CASE_IDS.has(id)) ||
+        ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(id)) ||
+        DEEP_LINK_MAP[id] != null;
+      if (isNavigable) {
+        ctx.beginPath();
+        ctx.arc(x, y, baseRadius + 3 / globalScale, 0, 2 * Math.PI);
+        ctx.strokeStyle = isHighlighted ? `${color}cc` : `${color}44`;
+        ctx.lineWidth = 1.5 / globalScale;
+        ctx.stroke();
+      }
+
       ctx.beginPath();
       ctx.arc(x, y, baseRadius, 0, 2 * Math.PI);
       ctx.fillStyle = isHighlighted ? color : `${color}40`;
