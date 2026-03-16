@@ -6,7 +6,8 @@ export type NodeType =
   | 'project'
   | 'concept'
   | 'technology'
-  | 'document';
+  | 'document'
+  | 'case';
 
 export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'pope' | 'shared' | 'corbell' | 'mccullough';
 
@@ -41,6 +42,7 @@ export const NODE_COLORS: Record<NodeType, string> = {
   concept:      '#6366f1', // indigo
   technology:   '#f97316', // orange
   document:     '#e11d48', // rose
+  case:         '#ef4444', // red
 };
 
 // Person nodes for figures WITHOUT dedicated profile pages.
@@ -123,6 +125,21 @@ export const graphData: GraphData = {
     { id: 'gravity-amplifiers',  name: 'Gravity Amplifiers',   type: 'technology',   group: 'lazar',   val: 2 },
     { id: 'sport-model',         name: 'Sport Model Craft',    type: 'technology',   group: 'lazar',   val: 3 },
     { id: 'som1-01',             name: 'SOM1-01 Document',     type: 'concept',      group: 'burisch', val: 1 },
+
+    // Additional Facilities
+    { id: 'skinwalker-ranch', name: 'Skinwalker Ranch',  type: 'facility', group: 'shared', val: 3 },
+    { id: 'malmstrom-afb',    name: 'Malmstrom AFB',     type: 'facility', group: 'shared', val: 2 },
+
+    // Cases (sourced from data/cases.json)
+    { id: 'nimitz-tic-tac',         name: 'Nimitz Tic Tac (2004)',         type: 'case', val: 5 },
+    { id: 'rendlesham-forest',       name: 'Rendlesham Forest (1980)',      type: 'case', val: 4 },
+    { id: 'roswell-1947',            name: 'Roswell Incident (1947)',       type: 'case', val: 5 },
+    { id: 'washington-dc-1952',      name: 'Washington D.C. Flyover (1952)', type: 'case', val: 4 },
+    { id: 'malmstrom-afb-1967',      name: 'Malmstrom AFB (1967)',          type: 'case', val: 3 },
+    { id: 'uss-theodore-roosevelt',  name: 'USS Theodore Roosevelt (2014)', type: 'case', val: 4 },
+    { id: 'ariel-school-1994',       name: 'Ariel School (1994)',           type: 'case', val: 3 },
+    { id: 'iranian-f4-incident',     name: 'Iranian F-4 Incident (1976)',   type: 'case', val: 3 },
+    { id: 'kecksburg-1965',          name: 'Kecksburg (1965)',              type: 'case', val: 3 },
 
     // Documents (sourced from data/documents.json)
     { id: 'wilson-davis-memo',                name: 'Wilson-Davis Memo',          type: 'document', val: 3 },
@@ -403,5 +420,61 @@ export const graphData: GraphData = {
     { source: 'seti',              target: 'garry-nolan',       label: 'methodology challenged by' },
     { source: 'seti',              target: 'jacques-vallee',    label: 'search framing debated with' },
     { source: 'ipu',               target: 'project-sign',      label: 'alleged predecessor of' },
+
+    // Case node connections
+    // Nimitz Tic Tac
+    { source: 'nimitz-tic-tac',        target: 'david-fravor',              label: 'witnessed by' },
+    { source: 'nimitz-tic-tac',        target: 'alex-dietrich',             label: 'witnessed by' },
+    { source: 'nimitz-tic-tac',        target: 'kevin-day',                 label: 'tracked by' },
+    { source: 'nimitz-tic-tac',        target: 'uss-nimitz',                label: 'occurred near' },
+    { source: 'nimitz-tic-tac',        target: 'vfa-41',                    label: 'pilots involved from' },
+    { source: 'nimitz-tic-tac',        target: 'aatip',                     label: 'investigated by' },
+    { source: 'nimitz-tic-tac',        target: 'uaptf-preliminary-assessment', label: 'cited in' },
+
+    // Rendlesham Forest
+    { source: 'rendlesham-forest',     target: 'nick-pope',                 label: 'investigated by' },
+    { source: 'rendlesham-forest',     target: 'mod-ufo-desk',              label: 'handled by' },
+    { source: 'rendlesham-forest',     target: 'halt-memo-1981',            label: 'documented in' },
+    { source: 'rendlesham-forest',     target: 'afosi',                     label: 'investigated by' },
+
+    // Roswell
+    { source: 'roswell-1947',          target: 'majestic-12',               label: 'alleged recovery led to' },
+    { source: 'roswell-1947',          target: 'ipu',                       label: 'investigated by' },
+    { source: 'roswell-1947',          target: 'project-sign',              label: 'investigated by' },
+    { source: 'roswell-1947',          target: 'twining-memo-1947',         label: 'prompted' },
+    { source: 'roswell-1947',          target: 'j-allen-hynek',             label: 'researched by' },
+
+    // Washington D.C. 1952
+    { source: 'washington-dc-1952',    target: 'project-blue-book',         label: 'investigated by' },
+    { source: 'washington-dc-1952',    target: 'j-allen-hynek',             label: 'investigated by' },
+    { source: 'washington-dc-1952',    target: 'robertson-panel',           label: 'contributed to formation of' },
+
+    // Malmstrom AFB 1967
+    { source: 'malmstrom-afb-1967',    target: 'project-blue-book',         label: 'investigated by' },
+    { source: 'malmstrom-afb-1967',    target: 'j-allen-hynek',             label: 'investigated by' },
+    { source: 'malmstrom-afb-1967',    target: 'malmstrom-afb',             label: 'occurred at' },
+
+    // USS Theodore Roosevelt
+    { source: 'uss-theodore-roosevelt', target: 'ryan-graves',              label: 'witnessed by' },
+    { source: 'uss-theodore-roosevelt', target: 'aatip',                    label: 'investigated by' },
+    { source: 'uss-theodore-roosevelt', target: 'uaptf-preliminary-assessment', label: 'cited in' },
+
+    // Ariel School
+    { source: 'ariel-school-1994',     target: 'john-mack',                 label: 'investigated by' },
+
+    // Iranian F-4 Incident
+    { source: 'iranian-f4-incident',   target: 'dia-iran-f4-1976',          label: 'documented in' },
+    { source: 'iranian-f4-incident',   target: 'uap-task-force',            label: 'referenced by' },
+
+    // Kecksburg
+    { source: 'kecksburg-1965',        target: 'leslie-kean',               label: 'researched by' },
+    { source: 'kecksburg-1965',        target: 'project-moondust',          label: 'investigated by' },
+
+    // Facility connections
+    { source: 'skinwalker-ranch',      target: 'robert-bigelow',            label: 'purchased by' },
+    { source: 'skinwalker-ranch',      target: 'nids',                      label: 'investigated by' },
+    { source: 'skinwalker-ranch',      target: 'james-lacatski',            label: 'visit prompted AAWSAP' },
+    { source: 'skinwalker-ranch',      target: 'aawsap',                    label: 'investigation prompted' },
+    { source: 'malmstrom-afb',         target: 'malmstrom-afb-1967',        label: 'site of' },
   ],
 };

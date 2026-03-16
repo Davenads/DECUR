@@ -17,6 +17,9 @@ const VAL_OVERRIDES: Record<string, number> = {
 // Document node IDs that have dedicated /documents/[id] pages
 const DOCUMENT_IDS = new Set(graphData.nodes.filter(n => n.type === 'document').map(n => n.id));
 
+// Case node IDs that have dedicated /cases/[id] pages
+const CASE_IDS = new Set(graphData.nodes.filter(n => n.type === 'case').map(n => n.id));
+
 // Program node IDs that have dedicated /programs/[id] pages
 const PROGRAM_IDS = new Set([
   'project-blue-book', 'project-sign', 'project-grudge',
@@ -84,6 +87,7 @@ const TYPE_LABELS: Record<NodeType, string> = {
   concept:      'Concept',
   technology:   'Technology',
   document:     'Document',
+  case:         'Case',
 };
 
 /* ─── Helpers ────────────────────────────────────────────────── */
@@ -236,6 +240,8 @@ const NetworkGraph: FC = () => {
       router.push(`/figures/${gNode.id}?ref=explore`);
     } else if (gNode.type === 'document' && DOCUMENT_IDS.has(gNode.id)) {
       router.push(`/documents/${gNode.id}?ref=explore`);
+    } else if (gNode.type === 'case' && CASE_IDS.has(gNode.id)) {
+      router.push(`/cases/${gNode.id}?ref=explore`);
     } else if ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(gNode.id)) {
       router.push(`/programs/${gNode.id}?ref=explore`);
     } else if (DEEP_LINK_MAP[gNode.id]) {
@@ -302,6 +308,8 @@ const NetworkGraph: FC = () => {
   const isHoveredNavigable = hoveredNode != null && (
     (hoveredNode.type === 'person' && profileIds.has(hoveredNode.id)) ||
     (hoveredNode.type === 'document' && DOCUMENT_IDS.has(hoveredNode.id)) ||
+    (hoveredNode.type === 'case' && CASE_IDS.has(hoveredNode.id)) ||
+    ((hoveredNode.type === 'organization' || hoveredNode.type === 'project') && PROGRAM_IDS.has(hoveredNode.id)) ||
     (DEEP_LINK_MAP[hoveredNode.id] != null)
   );
 
