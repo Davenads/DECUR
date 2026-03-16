@@ -442,6 +442,12 @@ export const graphData: GraphData = {
     { source: 'seti',              target: 'jacques-vallee',    label: 'search framing debated with' },
     { source: 'ipu',               target: 'project-sign',      label: 'alleged predecessor of' },
 
+    // Dylan Borland connections
+    { source: 'dylan-borland',   target: 'aaro',              label: 'testified to as whistleblower' },
+    { source: 'dylan-borland',   target: 'david-grusch',      label: 'testified alongside at House Oversight 2025' },
+    { source: 'dylan-borland',   target: 'jay-stratton',      label: 'reported to AARO under' },
+    { source: 'dylan-borland',   target: 'jeremy-corbell',    label: 'documented by on Weaponized podcast' },
+
     // Case node connections
     // Nimitz Tic Tac
     { source: 'nimitz-tic-tac',        target: 'david-fravor',              label: 'witnessed by' },

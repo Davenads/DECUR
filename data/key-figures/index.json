@@ -938,5 +938,25 @@
     "data_file": "sean-kirkpatrick.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "dylan-borland",
+    "name": "Dylan Borland",
+    "aliases": [],
+    "role": "USAF GEOINT Specialist, Federal UAP Whistleblower",
+    "period": "2010-2013 (USAF)",
+    "affiliation": "U.S. Air Force / Defense Contractor",
+    "summary": "Former USAF GEOINT specialist who reported a close-range triangle UAP sighting at Langley AFB in 2012. Went through official whistleblower channels (ICIG, AARO) before testifying under oath before the House Oversight Committee in September 2025.",
+    "status": "detailed",
+    "tags": [
+      "military",
+      "whistleblower",
+      "langley",
+      "triangle",
+      "2025-testimony"
+    ],
+    "data_file": "dylan-borland.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

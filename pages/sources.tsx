@@ -419,6 +419,36 @@ const Sources: NextPage = () => {
             description="Preprint paper co-authored by AARO director Sean Kirkpatrick and Harvard astrophysicist Avi Loeb, proposing physical signature hypotheses for UAP. The only peer-reviewed paper co-authored by a sitting AARO director. Used for both Kirkpatrick and Loeb profiles."
             notes="Used for: Sean Kirkpatrick, Avi Loeb."
           />
+
+          {/* Dylan Borland */}
+          <SourceCard
+            name="House Oversight Committee - Borland Written Testimony (Sep 9, 2025)"
+            url="https://oversight.house.gov/wp-content/uploads/2025/09/Borland-Written-Testimony.pdf"
+            type="Congressional Record"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Dylan Borland's official written testimony submitted to the House Committee on Oversight and Government Reform for the September 9, 2025 hearing on UAP transparency. Describes the summer 2012 close-range triangle UAP encounter at Langley AFB and the alleged retaliation following his whistleblower disclosures."
+            coverage="September 9, 2025"
+            notes="Used for: Dylan Borland."
+          />
+
+          <SourceCard
+            name="NewsNation - Whistleblower Describes UAP Retaliation"
+            url="https://www.newsnationnow.com/space/ufo/whistleblower-describes-uap-retaliation/"
+            type="News Article"
+            typeColor="bg-amber-100 text-amber-700"
+            description="NewsNation coverage of Dylan Borland's whistleblower account, including his Langley AFB sighting and claims of security clearance manipulation and blacklisting from intelligence community contracting work."
+            notes="Used for: Dylan Borland."
+          />
+
+          <SourceCard
+            name="DefenseScoop - Military Whistleblowers Share New Evidence at UAP Hearing"
+            url="https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/"
+            type="Investigative Journalism"
+            typeColor="bg-amber-100 text-amber-700"
+            description="DefenseScoop reporting on the September 9, 2025 House Oversight UAP hearing, covering testimony from military whistleblowers including Dylan Borland."
+            coverage="September 9, 2025"
+            notes="Used for: Dylan Borland."
+          />
         </section>
 
         {/* Government programs sources */}

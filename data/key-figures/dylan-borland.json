@@ -1,0 +1,120 @@
+{
+  "profile": {
+    "id": "dylan-borland",
+    "name": "Dylan Borland",
+    "aliases": [],
+    "born": null,
+    "died": null,
+    "roles": [
+      "1N1 GEOINT Specialist, U.S. Air Force",
+      "Senior Analyst, BAE Systems",
+      "Senior Analyst, Intrepid Solutions",
+      "Federal UAP Whistleblower"
+    ],
+    "service_period": "2010-2013 (USAF); 2013-present (defense contractor/whistleblower)",
+    "organizations": [
+      "U.S. Air Force - Langley AFB",
+      "BAE Systems",
+      "Intrepid Solutions",
+      "Intelligence Community Inspector General (ICIG)",
+      "All-domain Anomaly Resolution Office (AARO)"
+    ],
+    "clearance": "TS/SCI-adjacent (former)",
+    "summary": "Former USAF 1N1 GEOINT specialist who observed a 100-foot silent equilateral triangle craft at close range near the NASA hangar at Langley AFB in summer 2012. He pursued official whistleblower channels - filing with the ICIG in March 2023 and testifying to AARO - before providing sworn testimony before the House Oversight Committee in September 2025. Borland claims sustained retaliation including security clearance manipulation and blacklisting from intelligence community work.",
+    "education": [],
+    "early_career": [
+      "Enlisted in the U.S. Air Force in 2010; assigned to Langley AFB, Virginia as a 1N1 GEOINT (Geospatial Intelligence) specialist",
+      "Conducted 24-hour ISR (Intelligence, Surveillance, and Reconnaissance) operations in support of Special Operations Forces",
+      "Following honorable discharge in 2013, transitioned to defense contracting, analyzing video, radar, and electro-optical imagery for BAE Systems and Intrepid Solutions"
+    ],
+    "key_events": [
+      {
+        "year": "2010",
+        "event": "Enlisted in the U.S. Air Force; assigned to Langley AFB as a 1N1 GEOINT specialist supporting Special Operations Forces ISR missions."
+      },
+      {
+        "year": "2012",
+        "event": "At approximately 0130 hours, observed a silent equilateral triangle craft approximately 100 feet in diameter emerge near the NASA hangar at Langley AFB. The craft approached within 100 feet, hovered for several minutes, caused phone interference, produced no kinetic disturbance, then rapidly ascended and departed at high speed."
+      },
+      {
+        "year": "2013",
+        "event": "Honorably discharged from the U.S. Air Force; began career in defense contracting as a senior imagery and intelligence analyst."
+      },
+      {
+        "year": "Mar 2023",
+        "event": "Formally initiated federal whistleblower process by reporting his sighting and alleged retaliation to the Intelligence Community Inspector General (ICIG)."
+      },
+      {
+        "year": "2023",
+        "event": "Testified before AARO through official whistleblower channels, providing a formal account of the 2012 Langley sighting and alleged subsequent retaliation."
+      },
+      {
+        "year": "Sep 2025",
+        "event": "Testified under oath before the House Committee on Oversight and Government Reform at the hearing titled 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection,' describing the Langley triangle encounter and claims of sustained retaliation."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO/UAPTF intelligence officer, UAP whistleblower",
+      "relationship": "Both testified under oath before the House Oversight Committee during the September 2025 UAP transparency and whistleblower protection hearing."
+    },
+    {
+      "id": "jay-stratton",
+      "name": "Jay Stratton",
+      "role": "Former AARO director",
+      "relationship": "Borland reported his sighting and whistleblower complaint to AARO during Stratton's tenure as director, as part of the official federal whistleblower process."
+    },
+    {
+      "id": "jeremy-corbell",
+      "name": "Jeremy Corbell",
+      "role": "Documentary filmmaker and UAP investigator",
+      "relationship": "Interviewed Borland on the Weaponized podcast (Episodes 90-91, late 2025), producing the 'The Reluctant UFO Whistleblower' episodes that brought his account to broad public attention."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Sep 2025",
+      "type": "congressional-testimony",
+      "title": "House UAP Transparency Hearing",
+      "outlet": "House Committee on Oversight and Government Reform",
+      "notes": "Testified under oath on September 9, 2025 at the hearing 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection.' Described the summer 2012 close-range triangle UAP encounter at Langley AFB and detailed alleged retaliation including security clearance manipulation and blacklisting from intelligence community employment."
+    },
+    {
+      "date": "Late 2025",
+      "type": "podcast",
+      "title": "The Reluctant UFO Whistleblower",
+      "outlet": "Weaponized (Jeremy Corbell / George Knapp)",
+      "interviewer": "Jeremy Corbell, George Knapp",
+      "notes": "Two-part appearance on the Weaponized podcast (Episodes 90-91). Provided an extended first-person account of the Langley AFB sighting, the whistleblower process through ICIG and AARO, and the alleged retaliation he experienced in the defense contracting sector."
+    }
+  ],
+  "sources": [
+    {
+      "title": "House Oversight Committee - Borland Written Testimony (Sep 9, 2025)",
+      "url": "https://oversight.house.gov/wp-content/uploads/2025/09/Borland-Written-Testimony.pdf",
+      "type": "Congressional Record",
+      "notes": "Primary source - Borland's official written testimony submitted to the House Committee on Oversight and Government Reform."
+    },
+    {
+      "title": "House Oversight Hearing - Restoring Public Trust Through UAP Transparency",
+      "url": "https://oversight.house.gov/hearing/restoring-public-trust-through-uap-transparency-and-whistleblower-protection/",
+      "type": "Congressional Record",
+      "notes": "Official hearing page for the September 9, 2025 House Oversight Committee hearing at which Borland testified."
+    },
+    {
+      "title": "NewsNation - Whistleblower Describes UAP Retaliation",
+      "url": "https://www.newsnationnow.com/space/ufo/whistleblower-describes-uap-retaliation/",
+      "type": "News Article",
+      "notes": "NewsNation coverage of Borland's whistleblower account and claims of retaliation."
+    },
+    {
+      "title": "DefenseScoop - Military Whistleblowers Share New Evidence at UAP Hearing",
+      "url": "https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/",
+      "type": "News Article",
+      "notes": "DefenseScoop coverage of the September 9, 2025 House Oversight UAP hearing, including Borland's testimony."
+    }
+  ]
+}
