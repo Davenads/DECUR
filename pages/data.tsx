@@ -10,15 +10,17 @@ import NewsBrowser from '../components/data/NewsBrowser';
 import InsidersList from '../components/data/InsidersList';
 import CasesList from '../components/data/CasesList';
 import DocumentsList from '../components/data/DocumentsList';
+import ProgramsList from '../components/data/ProgramsList';
 import DataNavigation from '../components/data/DataNavigation';
-import { CategoryType, InsiderEntry, CaseEntry, DocumentEntry } from '../types/data';
+import { CategoryType, InsiderEntry, CaseEntry, DocumentEntry, ProgramEntry } from '../types/data';
 import { NavItemDef } from '../types/components';
 import { getEntriesByCategory, TimelineEntry } from '../lib/timelineData';
 import insidersData from '../data/key-figures/index.json';
 import casesData from '../data/cases.json';
 import documentsData from '../data/documents.json';
+import programsData from '../data/programs.json';
 
-const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'key-figures', 'cases', 'documents'];
+const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'key-figures', 'cases', 'documents', 'programs'];
 
 interface DataPageProps {
   categoryData: {
@@ -31,10 +33,11 @@ interface DataPageProps {
   insiders: InsiderEntry[];
   cases: CaseEntry[];
   documents: DocumentEntry[];
+  programs: ProgramEntry[];
   navItems: NavItemDef[];
 }
 
-export default function Data({ categoryData, insiders, cases, documents, navItems }: DataPageProps) {
+export default function Data({ categoryData, insiders, cases, documents, programs, navItems }: DataPageProps) {
   const router = useRouter();
   const [activeCategory, setActiveCategory] = useState<CategoryType>('events');
   const [sourceFilter, setSourceFilter] = useState<string | undefined>(undefined);
@@ -59,6 +62,7 @@ export default function Data({ categoryData, insiders, cases, documents, navItem
       case 'key-figures': return <InsidersList entries={insiders} />;
       case 'cases':    return <CasesList cases={cases} />;
       case 'documents': return <DocumentsList documents={documents} />;
+      case 'programs':  return <ProgramsList programs={programs} />;
       default:               return <EventsList entries={categoryData.events} />;
     }
   };
@@ -108,6 +112,7 @@ export const getStaticProps: GetStaticProps = async () => {
       { category: 'key-figures', label: 'Key Figures', description: 'Firsthand accounts & case files', count: insidersData.length },
       { category: 'cases',    label: 'Cases',     description: 'Documented incidents & evidence',  count: casesData.length    },
       { category: 'documents', label: 'Documents',  description: 'Primary source documents',          count: documentsData.length },
+      { category: 'programs',  label: 'Programs',   description: 'Government programs & organizations', count: programsData.length  },
     ];
 
     return {
@@ -116,6 +121,7 @@ export const getStaticProps: GetStaticProps = async () => {
         insiders: insidersData as InsiderEntry[],
         cases: casesData as CaseEntry[],
         documents: documentsData as DocumentEntry[],
+        programs: programsData as unknown as ProgramEntry[],
         navItems,
       },
       revalidate: 3600,

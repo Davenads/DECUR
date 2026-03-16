@@ -5,7 +5,7 @@
 /**
  * Represents data category types
  */
-export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'key-figures' | 'cases' | 'documents';
+export type CategoryType = 'events' | 'figures' | 'quotes' | 'media' | 'news' | 'key-figures' | 'cases' | 'documents' | 'programs';
 
 /**
  * Expanded sections state for data navigation
