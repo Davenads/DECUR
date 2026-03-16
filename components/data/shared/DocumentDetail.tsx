@@ -13,6 +13,7 @@ export const authConfig: Record<AuthStatus, { label: string; classes: string }> 
   'leaked-disputed':        { label: 'Leaked - Disputed',       classes: 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300' },
   'confirmed-leaked':       { label: 'Leaked - Authenticated',  classes: 'bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300'   },
   'declassified-authentic': { label: 'Declassified',            classes: 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'   },
+  'confirmed-authentic':    { label: 'Confirmed Authentic',     classes: 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300' },
   'documented-destroyed':   { label: 'Documented - Destroyed',  classes: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'     },
   'official-declassified':  { label: 'Official - Declassified', classes: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300' },
 };
@@ -20,6 +21,7 @@ export const authConfig: Record<AuthStatus, { label: string; classes: string }> 
 export const docTypeLabel: Record<DocType, string> = {
   'government-report':               'Gov. Report',
   'government-memo':                 'Gov. Memo',
+  'classified-memo':                 'Classified Memo',
   'intelligence-report':             'Intelligence Report',
   'academic-study':                  'Academic Study',
   'legislation':                     'Legislation',
