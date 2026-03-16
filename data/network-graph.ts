@@ -293,6 +293,56 @@ export const graphData: GraphData = {
     { source: 'charles-mccullough', target: 'sol-foundation',  label: 'symposium participant' },
     { source: 'charles-mccullough', target: 'luis-elizondo',   label: 'co-whistleblower legal advocacy' },
 
+    // Leslie Kean connections
+    { source: 'leslie-kean',         target: 'david-grusch',        label: 'broke disclosure story with' },
+    { source: 'leslie-kean',         target: 'ross-coulthart',      label: 'fellow UAP journalist' },
+    { source: 'leslie-kean',         target: 'luis-elizondo',       label: 'reported on AATIP' },
+
+    // Richard Dolan connections
+    { source: 'richard-dolan',       target: 'project-blue-book',   label: 'authored history of' },
+    { source: 'richard-dolan',       target: 'leslie-kean',         label: 'fellow UAP researcher' },
+    { source: 'richard-dolan',       target: 'jacques-vallee',      label: 'fellow UAP researcher' },
+
+    // Daniel Sheehan connections
+    { source: 'daniel-sheehan',      target: 'disclosure-project',  label: 'provided legal counsel to' },
+    { source: 'daniel-sheehan',      target: 'david-grusch',        label: 'legal advocacy for' },
+    { source: 'daniel-sheehan',      target: 'charles-mccullough',  label: 'fellow UAP attorney' },
+
+    // Jesse Michels connections
+    { source: 'jesse-michels',       target: 'bob-lazar',           label: 'produced interviews with' },
+    { source: 'jesse-michels',       target: 'jeremy-corbell',      label: 'fellow UAP filmmaker' },
+    { source: 'jesse-michels',       target: 'david-grusch',        label: 'interviewed' },
+
+    // Alex Dietrich connections
+    { source: 'alex-dietrich',       target: 'david-fravor',        label: 'wingman on Tic Tac encounter' },
+    { source: 'alex-dietrich',       target: 'uss-nimitz',          label: 'stationed on' },
+    { source: 'alex-dietrich',       target: 'vfa-41',              label: 'pilot in' },
+
+    // Disclosure Project connections
+    { source: 'disclosure-project',  target: 'daniel-sheehan',      label: 'legal counsel' },
+    { source: 'disclosure-project',  target: 'leslie-kean',         label: 'adjacent to disclosure movement' },
+
+    // Operation Paperclip connections
+    { source: 'operation-paperclip', target: 'area-51',             label: 'scientists worked at' },
+    { source: 'operation-paperclip', target: 'majestic-12',         label: 'preceded; informed' },
+
+    // Chuck Schumer connections
+    { source: 'chuck-schumer',       target: 'ndaa-fy2023-uap-provisions', label: 'co-sponsored UAP amendments' },
+    { source: 'chuck-schumer',       target: 'david-grusch',        label: 'supported disclosure of' },
+
+    // James Lacatski connections
+    { source: 'james-lacatski',      target: 'aawsap',              label: 'founded and directed' },
+    { source: 'james-lacatski',      target: 'robert-bigelow',      label: 'contracted BAASS through' },
+    { source: 'james-lacatski',      target: 'hal-puthoff',         label: 'AAWSAP researcher' },
+
+    // Kevin Day connections
+    { source: 'kevin-day',           target: 'uss-nimitz',          label: 'radar operator on' },
+    { source: 'kevin-day',           target: 'david-fravor',        label: 'vectored to UAP contact' },
+
+    // John Mack connections
+    { source: 'john-mack',           target: 'jacques-vallee',      label: 'fellow UAP researcher' },
+    { source: 'john-mack',           target: 'leslie-kean',         label: 'fellow UAP researcher' },
+
     // Document connections
     { source: 'wilson-davis-memo',                target: 'eric-davis',        label: 'attributed to' },
     { source: 'wilson-davis-memo',                target: 'david-grusch',      label: 'corroborated by' },
