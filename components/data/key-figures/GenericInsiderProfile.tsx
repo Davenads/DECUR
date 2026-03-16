@@ -6,6 +6,33 @@ import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
 
+// Maps organization name substrings (lowercase) to their /programs/[id] slug
+const ORG_PROGRAM_MAP: Array<[string, string]> = [
+  ['all-domain anomaly resolution office', 'aaro'],
+  ['aaro', 'aaro'],
+  ['advanced aerospace weapon system applications', 'aawsap'],
+  ['aawsap', 'aawsap'],
+  ['to the stars academy', 'ttsa'],
+  ['ttsa', 'ttsa'],
+  ['national institute for discovery science', 'nids'],
+  ['nids', 'nids'],
+  ['bigelow aerospace', 'bigelow-aerospace'],
+  ['sol foundation', 'sol-foundation'],
+  ['project blue book', 'project-blue-book'],
+  ['project sign', 'project-sign'],
+  ['project grudge', 'project-grudge'],
+  ['kona blue', 'kona-blue'],
+  ['immaculate constellation', 'immaculate-constellation'],
+];
+
+function getProgramId(org: string): string | null {
+  const lower = org.toLowerCase();
+  for (const [key, id] of ORG_PROGRAM_MAP) {
+    if (lower.includes(key)) return id;
+  }
+  return null;
+}
+
 interface GenericInsiderProfileProps {
   id: string;
   onBack: () => void;
@@ -159,11 +186,22 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
       <div>
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Organizations</h3>
         <div className="flex flex-wrap gap-2">
-          {profile.organizations.map((org, i) => (
-            <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
-              {org}
-            </span>
-          ))}
+          {profile.organizations.map((org, i) => {
+            const programId = getProgramId(org);
+            return programId ? (
+              <Link
+                key={i}
+                href={`/programs/${programId}`}
+                className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+              >
+                {org}
+              </Link>
+            ) : (
+              <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                {org}
+              </span>
+            );
+          })}
         </div>
       </div>
     )}
