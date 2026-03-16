@@ -22,6 +22,7 @@ const PROGRAM_IDS = new Set([
   'project-blue-book', 'project-sign', 'project-grudge',
   'aawsap', 'aaro', 'immaculate-constellation', 'kona-blue',
   'ttsa', 'sol-foundation', 'nids', 'bigelow-aerospace',
+  'nicap', 'mufon', 'jsoc', 'afosi', 'ipu', 'oga', 'sdi', 'seti',
 ]);
 
 // Deep links for concept/technology/facility nodes that are best explained

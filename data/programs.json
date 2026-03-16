@@ -365,5 +365,272 @@
       { "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)", "type": "Book" },
       { "title": "Robert Bigelow CBS 60 Minutes Interview (2017)", "url": "https://www.cbsnews.com/news/are-ufos-a-threat-to-national-security-60-minutes-2021-05-16/", "type": "Television" }
     ]
+  },
+  {
+    "id": "nicap",
+    "name": "NICAP",
+    "type": "organization",
+    "status": "defunct",
+    "active_period": "1956-1980",
+    "parent_org": "Independent Civilian Organization",
+    "summary": "The National Investigations Committee on Aerial Phenomena was the largest and most influential civilian UFO research organization of the 20th century. Founded in 1956 and chaired by retired Marine Major Donald Keyhoe, NICAP pursued a two-track strategy: rigorous case documentation and direct congressional lobbying for hearings and disclosure. At its peak, NICAP had over 14,000 members, 50 regional subcommittees, and a formal investigative methodology that prioritized credentialed witnesses - particularly military pilots, air traffic controllers, and radar operators. The organization was officially dissolved in 1980 but its case files, preserved by researcher Fran Ridge, remain one of the most extensively cross-referenced civilian UAP databases in existence.",
+    "significance": "NICAP established the foundational methodology for civilian UAP investigation: credentialed witnesses, multi-source corroboration, and systematic documentation. Its lobbying directly contributed to the 1966 congressional hearings that exposed Project Blue Book's shortcomings and led to the Condon Committee review. The NICAP case files, covering 1947-1989 and cross-referenced against Project Blue Book records, are a primary data source for DECUR's timeline - 251 entries link directly to NICAP case files with BBU (Blue Book Unknown) classification or direct military/radar involvement.",
+    "key_personnel": [
+      { "name": "Donald Keyhoe", "role": "Director (1957-1969)", "figure_id": null },
+      { "name": "Fran Ridge", "role": "Archivist and digital preservation (1990s-present)" },
+      { "name": "Richard Hall", "role": "Assistant Director; editor of The UFO Evidence (1964)" }
+    ],
+    "key_events": [
+      { "year": "1956", "event": "NICAP founded in Washington D.C. by T. Townsend Brown; Keyhoe joins as director the following year." },
+      { "year": "1960", "event": "NICAP membership peaks at over 14,000. Keyhoe's direct congressional lobbying begins producing formal UAP hearing requests." },
+      { "year": "1964", "event": "NICAP publishes The UFO Evidence, a comprehensive 184-page case compilation presented to Congress, documenting 746 cases from credentialed witnesses." },
+      { "year": "1966", "event": "Congressional hearings on Project Blue Book partly triggered by NICAP's sustained advocacy. Air Force commissions the Condon study in response." },
+      { "year": "1969", "event": "Keyhoe replaced in controversial circumstances. NICAP's influence begins to decline following the Condon Report's publication." },
+      { "year": "1980", "event": "NICAP formally dissolved. Case files eventually preserved digitally by Fran Ridge at nicap.org." },
+      { "year": "2000s", "event": "Fran Ridge completes digital chronology of NICAP cases, cross-referenced with Blue Book records and primary witness accounts." }
+    ],
+    "connected_documents": [],
+    "connected_figures": ["j-allen-hynek"],
+    "limitations": [
+      "NICAP's focus on credentialed witnesses and radar confirmation cases excluded many civilian-only reports, introducing selection bias toward military-adjacent incidents.",
+      "The organizational disruption following Keyhoe's 1969 removal resulted in gaps in case documentation for the 1969-1980 period.",
+      "NICAP's adversarial relationship with the Air Force may have introduced confirmation bias toward cases that challenged official explanations.",
+      "The digital archive, while extensive, relies on Fran Ridge's curation methodology, which itself applies selective inclusion criteria."
+    ],
+    "sources": [
+      { "title": "NICAP.org - Fran Ridge Digital Archive", "url": "https://www.nicap.org", "type": "Primary Archive" },
+      { "title": "The UFO Evidence (Hall, 1964)", "type": "Published Report" },
+      { "title": "The Flying Saucers Are Real (Keyhoe, 1950)", "type": "Book" }
+    ]
+  },
+  {
+    "id": "mufon",
+    "name": "MUFON",
+    "type": "organization",
+    "status": "active",
+    "active_period": "1969-present",
+    "parent_org": "Independent Civilian Organization",
+    "summary": "The Mutual UFO Network is the largest currently active civilian UFO/UAP research organization in the world. Founded in 1969 following NICAP's decline, MUFON developed a formal investigation methodology using trained field investigators and a standardized case reporting system (the CMS - Case Management System). The organization has chapters in all 50 U.S. states and in over 40 countries, and has accumulated more than 130,000 reported cases in its database. MUFON publishes the MUFON UFO Journal and organizes an annual international symposium. The organization has drawn criticism for inconsistent vetting of investigators and occasional high-profile controversies, but remains the primary civilian infrastructure for systematic UAP case collection in the United States.",
+    "significance": "MUFON's CMS database represents the largest civilian UAP case repository in existence - a resource explicitly cited by UAP researchers and, controversially, by government contractors during AAWSAP. The organization's formal investigator certification program and standardized reporting methodology have influenced how UAP evidence is categorized and presented in civilian discourse, though its independence from government programs has been questioned following revelations of contractor interest in its data.",
+    "key_personnel": [
+      { "name": "Walter Andrus", "role": "International Director (1970-2000)" },
+      { "name": "Jan Harzan", "role": "Executive Director (2012-2020)" },
+      { "name": "David MacDonald", "role": "Executive Director (2020-present)" }
+    ],
+    "key_events": [
+      { "year": "1969", "event": "MUFON founded in Quincy, Illinois by Walter Andrus and Allen Utke following NICAP's decline." },
+      { "year": "1971", "event": "First MUFON UFO Symposium held. Annual symposia continue to present day." },
+      { "year": "1990s", "event": "MUFON develops the Field Investigator Certification program, standardizing evidence collection and chain-of-custody protocols." },
+      { "year": "2009", "event": "MUFON Case Management System (CMS) launched, creating a publicly searchable online case database." },
+      { "year": "2009", "event": "MUFON enters a controversial consulting arrangement with Bigelow Aerospace Advanced Space Studies (BAASS) for case data access, raising independence concerns." },
+      { "year": "2019", "event": "Jan Harzan departs amid controversy. Organization undergoes governance restructuring." },
+      { "year": "2023", "event": "MUFON database cited in broader UAP discourse as Congress increases oversight; MUFON adjusts its data sharing policies." }
+    ],
+    "connected_documents": [],
+    "connected_figures": [],
+    "limitations": [
+      "MUFON investigators have highly variable qualifications - the field investigator certification process has been inconsistently applied across regional chapters.",
+      "The 2009 BAASS data-sharing arrangement raised serious questions about MUFON's independence from commercial and government-adjacent entities.",
+      "Case quality in the CMS database is inconsistent; a significant percentage of reported cases lack sufficient documentation for meaningful analysis.",
+      "MUFON's organizational structure has been subject to internal governance conflicts that have periodically disrupted research continuity."
+    ],
+    "sources": [
+      { "title": "MUFON Official Website", "url": "https://www.mufon.com", "type": "Official" },
+      { "title": "MUFON Case Management System", "url": "https://www.mufoncms.com", "type": "Database" },
+      { "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)", "type": "Book" }
+    ]
+  },
+  {
+    "id": "jsoc",
+    "name": "JSOC",
+    "type": "organization",
+    "status": "active",
+    "active_period": "1980-present",
+    "parent_org": "United States Special Operations Command (USSOCOM)",
+    "summary": "The Joint Special Operations Command is the United States military's primary command for the most elite and secretive special operations forces, including Delta Force (1st SFOD-D) and SEAL Team Six (DEVGRU). Established in 1980 following the failed Operation Eagle Claw, JSOC conducts counterterrorism, direct action, and sensitive site exploitation missions. In the context of UAP disclosure, JSOC has been specifically identified by David Grusch in congressional testimony as the command responsible for conducting crash retrieval and exploitation operations on non-human intelligence craft. Grusch stated that JSOC units provide the covert operational capability for what he described as a legacy UAP crash retrieval and reverse-engineering program operating outside normal congressional oversight.",
+    "significance": "JSOC's significance to the UAP disclosure narrative rests almost entirely on David Grusch's sworn congressional testimony. Grusch named JSOC as the operational arm conducting physical UAP crash retrievals, providing the most specific and credentialed accusation linking an identified military command to alleged crash retrieval operations. JSOC's existing structure - operating with extraordinary secrecy, minimal public oversight, and a mandate for sensitive site exploitation - makes it operationally plausible for the role Grusch described.",
+    "key_personnel": [
+      { "name": "Gen. Stanley McChrystal", "role": "JSOC Commander (2003-2008); oversaw major JSOC expansion" },
+      { "name": "Adm. William McRaven", "role": "JSOC Commander (2008-2011); commanded Bin Laden operation" }
+    ],
+    "key_events": [
+      { "year": "1980", "event": "JSOC established at Fort Bragg following the catastrophic failure of Operation Eagle Claw (Iran hostage rescue)." },
+      { "year": "1987", "event": "JSOC's operational mandate expands to include sensitive site exploitation - the seizure and analysis of enemy facilities and materials." },
+      { "year": "2001", "event": "Post-9/11 expansion dramatically increases JSOC's budget, personnel, and operational tempo." },
+      { "year": "2023", "event": "David Grusch, in sworn congressional testimony, identifies JSOC as the command conducting crash retrieval operations on non-human intelligence craft, naming it as the operational arm of an alleged classified UAP legacy program." }
+    ],
+    "connected_documents": [],
+    "connected_figures": ["david-grusch"],
+    "limitations": [
+      "JSOC's role in alleged UAP crash retrieval rests almost entirely on Grusch's testimony. No corroborating documents, personnel accounts, or physical evidence have been made public.",
+      "JSOC's secrecy makes independent verification of any specific operational claim nearly impossible by design.",
+      "Grusch himself stated he had not personally witnessed crash retrieval operations but had been briefed by individuals who claimed first-hand knowledge.",
+      "The operational plausibility of JSOC conducting such missions is not evidence that it has done so."
+    ],
+    "sources": [
+      { "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)", "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/", "type": "Congressional Record" },
+      { "title": "Relentless Strike: The Secret History of Joint Special Operations Command (Naylor, 2015)", "type": "Book" },
+      { "title": "JSOC Official Fact Sheet", "url": "https://www.socom.mil/JSOC/Pages/default.aspx", "type": "Official" }
+    ]
+  },
+  {
+    "id": "afosi",
+    "name": "AFOSI",
+    "type": "organization",
+    "status": "active",
+    "active_period": "1948-present",
+    "parent_org": "United States Air Force",
+    "summary": "The Air Force Office of Special Investigations is the U.S. Air Force's primary counterintelligence, criminal investigation, and human intelligence organization. Established in 1948, AFOSI operates directly under the Inspector General of the Air Force and conducts investigations into crimes against Air Force personnel and assets, including counterespionage and insider threat operations. In the UAP context, AFOSI achieved particular notoriety through its agents' involvement in the 1980 Kirtland Air Force Base UAP incident and through agent Richard Doty's role in the systematic disinformation campaign against UAP researchers Paul Bennewitz and others. The Doty case established AFOSI as a documented institutional actor in the deliberate suppression and manipulation of UAP information.",
+    "significance": "AFOSI's documented role in the Paul Bennewitz case - where AFOSI agent Richard Doty actively fed false UAP-related information to a civilian researcher, contributing to Bennewitz's psychological breakdown - represents one of the most thoroughly documented instances of U.S. government actors deliberately manipulating UAP discourse. The 1980 Kirtland AFB security report, filed by AFOSI agent Richard Doty, is simultaneously a primary source document for a significant UAP sighting and an example of institutional documentation that was officially suppressed and later leaked through FOIA efforts.",
+    "key_personnel": [
+      { "name": "Richard Doty", "role": "AFOSI Special Agent (1979-1988); central figure in Bennewitz disinformation operation" },
+      { "name": "Jerry Miller", "role": "AFOSI agent who investigated the 1964 Socorro incident" }
+    ],
+    "key_events": [
+      { "year": "1948", "event": "Air Force Office of Special Investigations established as reorganization of the former Counter Intelligence Corps functions within the Air Force." },
+      { "year": "1964", "event": "AFOSI agents investigate the Lonnie Zamora/Socorro incident - one of Blue Book's most credible unresolved cases." },
+      { "year": "1980", "event": "AFOSI agent Richard Doty files a security report documenting a multi-day UAP incident at Kirtland AFB. The report is later leaked through FOIA efforts and becomes a key primary source document." },
+      { "year": "1980-1988", "event": "AFOSI agent Richard Doty conducts a documented disinformation campaign against civilian researcher Paul Bennewitz, providing fabricated UAP documents and feeding false information." },
+      { "year": "1988", "event": "Doty leaves AFOSI. His activities are later documented in multiple books and documentary films, including Mirage Men (2013)." },
+      { "year": "2023", "event": "Grusch's congressional testimony and subsequent AFOSI-related FOIA requests revive scrutiny of the agency's historical UAP-related activities." }
+    ],
+    "connected_documents": [],
+    "connected_figures": ["j-allen-hynek"],
+    "limitations": [
+      "Richard Doty's documented disinformation activities make any AFOSI-sourced UAP documentation inherently suspect and difficult to authenticate.",
+      "AFOSI investigations remain classified; the public record represents only what has been leaked or FOIA-released, not the full scope of the agency's UAP-related work.",
+      "Doty has made additional claims in interviews since leaving AFOSI that have not been independently corroborated and may themselves be further disinformation.",
+      "The Kirtland AFB report, while widely cited, has not been officially declassified and its provenance is disputed."
+    ],
+    "sources": [
+      { "title": "Mirage Men (documentary, 2013)", "url": "https://www.imdb.com/title/tt2375543/", "type": "Documentary" },
+      { "title": "Mirage Men (Pilkington, 2010)", "type": "Book" },
+      { "title": "Kirtland AFB Security Report (Doty, 1980) - FOIA release", "type": "FOIA Document" }
+    ]
+  },
+  {
+    "id": "ipu",
+    "name": "IPU",
+    "type": "project",
+    "status": "unknown",
+    "active_period": "1947 (alleged)",
+    "parent_org": "United States Army (alleged)",
+    "summary": "The Interplanetary Phenomenon Unit is an alleged classified U.S. Army unit cited in leaked Majestic-12 documents as having been activated in 1947 to respond to and document anomalous aerial phenomenon incidents. According to the leaked documents, the IPU was established to provide an initial on-site response capability for UAP crash/retrieval operations, predating Project Sign and operating as a precursor to the formal classified program structure. No independently verifiable government records confirming the IPU's existence have been publicly released. The unit's alleged existence is primarily supported by documents of disputed authenticity.",
+    "significance": "The IPU is significant within the disclosure narrative as the alleged origin point of the U.S. government's crash retrieval program - predating even the first official investigation (Project Sign, 1947). If authentic, the leaked documents describing IPU protocols would represent the earliest known government framework for responding to UAP crash incidents. The unit's existence, if confirmed, would substantially advance the case that the U.S. government had an organized response to UAP incidents from the earliest days of the modern era, rather than these efforts beginning with Project Blue Book.",
+    "key_personnel": [],
+    "key_events": [
+      { "year": "1947", "event": "IPU allegedly activated following the Roswell incident to provide first-response and documentation capability for anomalous aerial phenomenon incidents." },
+      { "year": "1984", "event": "Majestic-12 documents begin circulating; IPU referenced in these documents as a precursor organization to formal classified UAP programs." },
+      { "year": "1990s", "event": "Researchers Brad Sparks and Barry Greenwood attempt FOIA requests for IPU records; responses neither confirm nor deny the unit's existence." }
+    ],
+    "connected_documents": [],
+    "connected_figures": [],
+    "limitations": [
+      "The IPU's existence rests entirely on leaked documents of disputed authenticity. No government official has confirmed it on the record.",
+      "FOIA requests for IPU records have been formally refused under national security exemptions - which is consistent with both genuine classification and with non-existence.",
+      "The Majestic-12 documents that reference the IPU are widely considered forgeries by many researchers, including some who support UAP disclosure broadly.",
+      "The name 'Interplanetary Phenomenon Unit' is considered anachronistic by some historians - the terminology post-dates what it allegedly describes."
+    ],
+    "sources": [
+      { "title": "MJ-12 Documents - National Security Archive", "url": "https://nsarchive.gwu.edu/briefing-book/intelligence/2019-08-06/ufos-mj-12-government-really-hiding", "type": "Primary Archive" },
+      { "title": "The UFO Cover-Up: What the Government Won't Say (Fawcett & Greenwood, 1984)", "type": "Book" }
+    ]
+  },
+  {
+    "id": "oga",
+    "name": "OGA",
+    "type": "organization",
+    "status": "unknown",
+    "active_period": "2003-present (alleged)",
+    "parent_org": "Central Intelligence Agency (alleged)",
+    "summary": "The Office of Global Access is an alleged Central Intelligence Agency office that, according to David Grusch and others in the UAP disclosure community, was established in 2003 and given a mandate to facilitate U.S. access to non-human intelligence craft and materials recovered abroad. Grusch has claimed that OGA operates as a coordination mechanism between the CIA and allied foreign intelligence services to ensure that crash retrieval events outside U.S. borders are brought to American custody. The office allegedly provides liaison and logistics capability to move recovered materials through existing intelligence channels while maintaining cover through legitimate intelligence operations.",
+    "significance": "OGA's significance lies in extending the alleged crash retrieval program beyond U.S. territory. If Grusch's account is accurate, OGA represents the CIA's institutional mechanism for international UAP material recovery - addressing the logical question of how the U.S. could maintain a retrieval program for events that occur globally. The 2003 establishment date, if accurate, would coincide with the post-9/11 CIA reorganization that created significant new authorities for overseas operations. OGA has not been acknowledged by the CIA, and the claim rests almost entirely on Grusch's testimony and the accounts of his named sources.",
+    "key_personnel": [],
+    "key_events": [
+      { "year": "2003", "event": "OGA allegedly established within CIA following post-9/11 reorganization, with a mandate to facilitate access to non-human intelligence craft recovered abroad." },
+      { "year": "2023", "event": "David Grusch identifies the OGA in disclosures to journalists and subsequent congressional testimony as a key node in the alleged international crash retrieval coordination structure." }
+    ],
+    "connected_documents": [],
+    "connected_figures": ["david-grusch"],
+    "limitations": [
+      "OGA's existence in the UAP context rests entirely on David Grusch's testimony and the accounts he attributes to sources he has not publicly named.",
+      "The CIA has not acknowledged an 'Office of Global Access' with a UAP mandate, and standard FOIA approaches to such a highly classified alleged program yield no results.",
+      "Grusch has stated he received this information in classified briefings; the chain of custody for this claim cannot be publicly verified.",
+      "The term 'OGA' (Other Government Agency) is also used generically in U.S. intelligence community parlance as a euphemism for the CIA in unclassified contexts, creating potential ambiguity in sourcing."
+    ],
+    "sources": [
+      { "title": "The Debrief - Grusch Disclosure Article (Coulthart/Wurtzel, June 2023)", "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/", "type": "Journalism" },
+      { "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)", "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/", "type": "Congressional Record" }
+    ]
+  },
+  {
+    "id": "sdi",
+    "name": "SDI",
+    "type": "project",
+    "status": "defunct",
+    "active_period": "1983-1993",
+    "parent_org": "United States Department of Defense",
+    "summary": "The Strategic Defense Initiative, informally known as 'Star Wars,' was a proposed U.S. missile defense system announced by President Reagan in March 1983. SDI proposed to develop ground-based and space-based systems to protect the United States from attack by ballistic nuclear missiles. The program was officially terminated in 1993 and reorganized as the Ballistic Missile Defense Organization. In the UAP context, SDI has been cited by multiple researchers and whistleblowers as having served as a funding cover for classified programs related to advanced aerospace research, including alleged reverse-engineering of non-human technology. Lt. Col. Philip Corso specifically claimed in The Day After Roswell that SDI-era research was seeded with recovered technology.",
+    "significance": "SDI's significance to UAP research is twofold. First, as a massive classified research program with unparalleled access to black budget funding and advanced aerospace contractors, it provided institutional cover for programs that could not be publicly justified. Second, Philip Corso's specific claim - that SDI was the vehicle through which recovered extraterrestrial technology was seeded into defense contractor research - made SDI a central element of the disclosure narrative for an entire generation of researchers. While Corso's specific claims remain unverified, the structural argument that SDI's black budget environment provided cover for classified advanced programs is consistent with what is publicly known about how Special Access Programs operate.",
+    "key_personnel": [
+      { "name": "Lt. Col. Philip Corso (ret.)", "role": "Former Army R&D officer; claimed SDI was used as cover for seeding recovered ET technology into defense research" },
+      { "name": "Gen. James Abrahamson", "role": "First director of the SDI Organization (1984-1989)" }
+    ],
+    "key_events": [
+      { "year": "1983", "event": "President Reagan announces SDI in a nationally televised address, proposing a comprehensive space-based and ground-based missile defense architecture." },
+      { "year": "1984", "event": "SDI Organization established within DoD to manage the program. Annual funding peaks at approximately $3.7 billion." },
+      { "year": "1989", "event": "End of Cold War reduces SDI's political urgency. Program continues but at reduced scale and modified mission." },
+      { "year": "1993", "event": "SDI formally terminated by the Clinton administration. The Ballistic Missile Defense Organization is established as successor." },
+      { "year": "1997", "event": "Philip Corso publishes The Day After Roswell, directly claiming that recovered Roswell technology was seeded into SDI-era defense contractor research through his position in Army R&D." }
+    ],
+    "connected_documents": [],
+    "connected_figures": [],
+    "limitations": [
+      "The UAP-related claims about SDI rest primarily on Philip Corso's account in The Day After Roswell, which has been widely disputed by other researchers and former colleagues.",
+      "Corso's claimed role in seeding recovered technology into defense research cannot be independently verified, and many specific technical claims in his book have been challenged.",
+      "The structural argument that SDI provided cover for classified programs is circumstantial - large classified programs routinely contain compartmented elements unrelated to their stated mission.",
+      "SDI's actual missile defense research has been extensively documented; no confirmed connection to UAP-related research has emerged from declassified records."
+    ],
+    "sources": [
+      { "title": "The Day After Roswell (Corso, 1997)", "type": "Book" },
+      { "title": "SDI Program History - DARPA", "url": "https://www.darpa.mil/about-us/timeline/strategic-defense-initiative", "type": "Official" },
+      { "title": "Star Wars: A Defense of the Strategic Defense Initiative (Union of Concerned Scientists, 1987)", "type": "Academic Study" }
+    ]
+  },
+  {
+    "id": "seti",
+    "name": "SETI",
+    "type": "organization",
+    "status": "active",
+    "active_period": "1960-present",
+    "parent_org": "SETI Institute (independent); originally Cornell University / NASA",
+    "summary": "The Search for Extraterrestrial Intelligence is a scientific program dedicated to detecting evidence of intelligent life beyond Earth, primarily through the analysis of radio frequency and optical signals. Originating with Frank Drake's Project Ozma in 1960, SETI has evolved from individual academic projects into the institutionalized SETI Institute, founded in 1984 in Mountain View, California. SETI focuses on passive detection of artificial signals from distant civilizations, explicitly distinguishing its methodology from UAP research, which it generally treats as a separate field. The SETI Institute has received funding from NASA, private foundations, and individual donors including Paul Allen, and has conducted the most publicly documented scientific search for extraterrestrial intelligence in history.",
+    "significance": "SETI's significance to the DECUR platform is primarily as a methodological and institutional counterpoint. SETI represents the officially sanctioned, publicly funded approach to the question of non-human intelligence - one that explicitly assumes no NHI presence in or near Earth and focuses on extremely distant radio sources. The contrast between SETI's approach and the UAP disclosure community's evidence-based claims about nearby NHI activity is a recurring theme in modern UAP discourse. Garry Nolan, David Grusch, and others in the disclosure community have directly challenged SETI's methodological framing, arguing that evidence for NHI is already present in classified programs rather than requiring detection from light-years away.",
+    "key_personnel": [
+      { "name": "Frank Drake", "role": "Pioneer; conducted Project Ozma (1960) and authored the Drake Equation" },
+      { "name": "Jill Tarter", "role": "SETI Institute co-founder and long-time director of SETI research; inspiration for the film Contact" },
+      { "name": "Seth Shostak", "role": "Senior Astronomer; primary public spokesperson for SETI Institute" }
+    ],
+    "key_events": [
+      { "year": "1960", "event": "Frank Drake conducts Project Ozma at Green Bank Observatory - the first systematic SETI observation, targeting Tau Ceti and Epsilon Eridani." },
+      { "year": "1977", "event": "Astronomer Jerry Ehman detects the 'Wow! signal' at Ohio State's Big Ear telescope - the strongest candidate SETI signal ever received; never repeated or explained." },
+      { "year": "1984", "event": "SETI Institute founded in Mountain View, California, institutionalizing SETI research under a dedicated non-profit organization." },
+      { "year": "1993", "event": "NASA terminates its High Resolution Microwave Survey (a congressionally funded SETI program) after one year. Private funding takes over." },
+      { "year": "2007", "event": "Allen Telescope Array begins operations, providing SETI with dedicated radio astronomy capability funded by Paul Allen." },
+      { "year": "2023", "event": "Growing tension between SETI institutional framing and UAP disclosure narrative; Grusch and Nolan publicly argue that evidence for NHI is already in hand, making traditional SETI's framing obsolete." }
+    ],
+    "connected_documents": [],
+    "connected_figures": ["garry-nolan"],
+    "limitations": [
+      "SETI's explicit focus on distant radio sources means it is institutionally positioned to ignore evidence of NHI activity closer to Earth, including UAP phenomena.",
+      "SETI has received relatively little sustained government funding since NASA's program was terminated in 1993, limiting observational scope.",
+      "The field has operated for 60+ years without a confirmed signal detection, raising methodological questions about the underlying assumptions of the search strategy.",
+      "SETI's institutional stance of treating UAP as outside its domain creates a notable blind spot if NHI is already present or interacting with Earth."
+    ],
+    "sources": [
+      { "title": "SETI Institute Official Website", "url": "https://www.seti.org", "type": "Official" },
+      { "title": "Is Anyone Out There? (Drake & Sobel, 1992)", "type": "Book" },
+      { "title": "The SETI League", "url": "https://www.setileague.org", "type": "Reference" }
+    ]
   }
 ]

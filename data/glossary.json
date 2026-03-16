@@ -74,7 +74,8 @@
   {
     "term": "AFOSI",
     "definition": "Air Force Office of Special Investigation - US Air Force agency that investigated Newton and the Aztec case, interrogating witnesses about the crash",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "afosi"
   },
   {
     "term": "AFOSIPJ",
@@ -650,7 +651,8 @@
   {
     "term": "IPU",
     "definition": "Interplanetary Phenomenon Unit - A shadowy unit referenced in MJ-12 documents with case protocols and guidelines, predating or concurrent with MJ-12",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "ipu"
   },
   {
     "term": "IR MISSILE",
@@ -695,7 +697,8 @@
   {
     "term": "JSOC",
     "definition": "Joint Special Operations Command - US military command for special operations forces",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "jsoc"
   },
   {
     "term": "KH",
@@ -826,7 +829,8 @@
   {
     "term": "MUFON",
     "definition": "Mutual UFO Network - A nonprofit organization that investigates UFO sightings",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "mufon"
   },
   {
     "term": "NARCAP",
@@ -881,7 +885,8 @@
   {
     "term": "NICAP",
     "definition": "National Investigations Committee on Aerial Phenomena - Organization that Barney Hill reported his abduction experience to",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "nicap"
   },
   {
     "term": "NIDS",
@@ -997,7 +1002,8 @@
   {
     "term": "OGA",
     "definition": "Office of Global Access - CIA office established in 2003 allegedly participating in foreign UFO crash retrieval operations",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "oga"
   },
   {
     "term": "OICI",
@@ -1272,7 +1278,8 @@
   {
     "term": "SDI",
     "definition": "Strategic Defense Initiative - Program created in 1983 under President Reagan, allegedly used covertly for UFO-related programs",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "sdi"
   },
   {
     "term": "SEC",
@@ -1297,7 +1304,8 @@
   {
     "term": "SETI",
     "definition": "Search for Extraterrestrial Intelligence - Program that searches for signs of extraterrestrial civilizations, primarily using radio signatures to detect communications from other species",
-    "source": "gerb"
+    "source": "gerb",
+    "related_program_id": "seti"
   },
   {
     "term": "SIGINT",
