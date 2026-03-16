@@ -311,6 +311,113 @@ const Sources: NextPage = () => {
           />
         </section>
 
+        {/* Government programs sources */}
+        <section className="space-y-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Government Programs</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Sources consulted in building the 11 manually curated{' '}
+              <Link href="/data" className="text-primary hover:underline">Government Program</Link>{' '}
+              pages (Project Blue Book, Sign, Grudge, AAWSAP, AARO, Immaculate Constellation, Kona Blue, TTSA, Sol Foundation, NIDS, Bigelow Aerospace).
+              These are reference sources, not scraped datasets.
+            </p>
+          </div>
+
+          <SourceCard
+            name="National Archives - Project Blue Book Files"
+            url="https://www.archives.gov/research/military/air-force/ufos"
+            type="Primary Government Archive"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The official declassified records of Project Blue Book and predecessor programs (Sign, Grudge), held at the National Archives. Comprises approximately 130,000 pages of case files, administrative records, and investigative reports. The primary evidentiary basis for the Blue Book, Sign, and Grudge program pages."
+            coverage="1947-1969"
+            notes="Used for: Project Blue Book, Project Sign, Project Grudge."
+          />
+
+          <SourceCard
+            name="AARO Official Website"
+            url="https://www.aaro.mil"
+            type="Official Government"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The All-domain Anomaly Resolution Office's official public-facing website. Primary source for AARO's stated mandate, organizational structure, reporting framework, and historical record publications. Used to document AARO's establishment, scope, and public findings."
+            notes="Used for: AARO."
+          />
+
+          <SourceCard
+            name="AARO Historical Record Report Vol. 1 (March 2024)"
+            url="https://www.aaro.mil/Portals/136/PDFs/UAP_Historical_Record_Report_Vol1_20240306.pdf"
+            type="Official Government Report"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The Pentagon's first official historical account of U.S. government UAP programs. Provides AARO's characterization of AAWSAP, Kona Blue, and other predecessor programs. Used for both factual program data and as a reference point for contested claims in the disclosure community."
+            coverage="March 2024"
+            notes="Used for: AARO, Kona Blue, AAWSAP."
+          />
+
+          <SourceCard
+            name="Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)"
+            url="https://www.amazon.com/dp/B09LRL6JTD"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="First-person account of the AAWSAP program by AAWSAP's founding program manager James T. Lacatski, Colm Kelleher, and George Knapp. Primary source for AAWSAP's true scope, Bigelow Aerospace's BAASS contract, and the connection to Skinwalker Ranch investigations. Also used for NIDS organizational history and Bigelow Aerospace's role."
+            notes="Used for: AAWSAP, NIDS, Bigelow Aerospace."
+          />
+
+          <SourceCard
+            name="AAWSAP DIRD Reports (FOIA - The Black Vault)"
+            url="https://www.theblackvault.com/casefiles/the-advanced-aerospace-weapon-system-applications-aawsap-documents/"
+            type="FOIA Release"
+            typeColor="bg-amber-100 text-amber-700"
+            description="The 38 Defense Intelligence Reference Documents (DIRDs) produced under AAWSAP and released via FOIA. Used to document the program's scientific scope and the participation of researchers including Hal Puthoff and Eric Davis."
+            notes="Used for: AAWSAP."
+          />
+
+          <SourceCard
+            name="The Report on Unidentified Flying Objects (Ruppelt, 1956)"
+            url="https://archive.org/details/reportonunidenti00rupp"
+            type="Primary Memoir"
+            typeColor="bg-green-100 text-green-700"
+            description="Written by Capt. Edward J. Ruppelt, the first director of Project Blue Book. The definitive insider account of the transition from Project Grudge to Blue Book, the 1952 Washington D.C. UFO wave, and the institutional pressures shaping official investigation. Primary source for Sign and Grudge program histories."
+            notes="Used for: Project Sign, Project Grudge, Project Blue Book."
+          />
+
+          <SourceCard
+            name="The UFO Experience (Hynek, 1972)"
+            url="https://www.amazon.com/UFO-Experience-Scientific-Inquiry/dp/0892810610"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Scientific analysis of the UFO phenomenon by J. Allen Hynek, Blue Book's chief scientific consultant for its entire 21-year run. Provides Hynek's first-person critique of Blue Book methodology and his classification system for UFO reports. Used to document Hynek's role and Blue Book's analytical limitations."
+            notes="Used for: Project Blue Book."
+          />
+
+          <SourceCard
+            name="To The Stars Academy - SEC Filing (2017)"
+            url="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001710274"
+            type="SEC Filing"
+            typeColor="bg-gray-100 text-gray-600"
+            description="TTSA's official SEC Regulation A offering circular documenting the company's stated mission, organizational structure, founding team biographies, and financial disclosures. Used as the primary source for TTSA membership data, organizational purpose, and founding timeline."
+            coverage="2017"
+            notes="Used for: TTSA."
+          />
+
+          <SourceCard
+            name="Sol Foundation Official Website"
+            url="https://www.thesolfoundation.org"
+            type="Organization Archive"
+            typeColor="bg-teal-100 text-teal-700"
+            description="The Sol Foundation's official website, documenting its academic mission, leadership, symposium proceedings, and affiliated researchers. Primary source for organizational structure and the published outputs of the 2023 and 2024 UAP symposia."
+            notes="Used for: Sol Foundation."
+          />
+
+          <SourceCard
+            name="House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)"
+            url="https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+            type="Congressional Record"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Official congressional record of David Grusch's sworn testimony identifying Immaculate Constellation by name as a UAP analysis program. The only on-record public reference to Immaculate Constellation that served as the primary source for that program entry."
+            coverage="July 26, 2023"
+            notes="Used for: Immaculate Constellation, AARO, Kona Blue."
+          />
+        </section>
+
         {/* Glossary sources */}
         <section className="space-y-4">
           <div>
@@ -369,14 +476,14 @@ const Sources: NextPage = () => {
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Manually Curated Case Files</p>
+              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Manually Curated Case Files &amp; Program Pages</p>
               <p>
                 Insider profiles (Dan Burisch, Bob Lazar, David Grusch, Luis Elizondo, David Fravor,
-                Karl Nell, Garry Nolan, Hal Puthoff, Chris Mellon, Eric Davis, and others) are built
-                by hand from multiple primary and secondary sources. Claims, timelines, and assessments
-                are structured and organized by DECUR contributors. Supporting and contradicting
-                evidence is documented without adjudication; DECUR does not endorse or dismiss any
-                individual claim.
+                Karl Nell, Garry Nolan, Hal Puthoff, Chris Mellon, Eric Davis, and others) and government
+                program pages (Project Blue Book, AAWSAP, AARO, TTSA, and others) are built by hand from
+                multiple primary and secondary sources. Claims, timelines, and assessments are structured
+                and organized by DECUR contributors. Supporting and contradicting evidence is documented
+                without adjudication; DECUR does not endorse or dismiss any individual claim.
               </p>
             </div>
 
