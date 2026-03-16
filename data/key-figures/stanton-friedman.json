@@ -1,0 +1,123 @@
+{
+  "profile": {
+    "id": "stanton-friedman",
+    "name": "Stanton T. Friedman",
+    "aliases": ["Stan Friedman"],
+    "born": "July 29, 1934 - Elizabeth, New Jersey",
+    "died": "May 13, 2019 - Fredericton, New Brunswick, Canada",
+    "roles": [
+      "Nuclear Physicist",
+      "UFO Researcher and Lecturer",
+      "Author - Flying Saucers and Science (2008)",
+      "Author - Top Secret/MAJIC (1996)"
+    ],
+    "service_period": "1958-1970 (nuclear industry); 1967-2019 (full-time UFO research)",
+    "organizations": [
+      "General Electric",
+      "Aerojet General Nucleonics",
+      "McDonnell Douglas",
+      "Westinghouse",
+      "Center for UFO Studies (CUFOS)"
+    ],
+    "clearance": "Held nuclear industry clearances during aerospace career",
+    "summary": "Nuclear physicist who spent more than five decades as the world's foremost civilian researcher on the Roswell incident and government UAP concealment. Friedman located and first interviewed Jesse Marcel Sr. in 1978, resurrecting the Roswell case from obscurity and launching the modern crash-retrieval discourse. He coined the phrase 'Cosmic Watergate' to describe systematic government suppression of UAP evidence, and his rigorous application of FOIA requests and document analysis to MJ-12 papers established a methodology that influenced an entire generation of researchers.",
+    "education": [
+      "B.S., Physics - University of Chicago (1955)",
+      "M.S., Nuclear Physics - University of Chicago (1956)"
+    ],
+    "early_career": [
+      "Worked as nuclear physicist for GE, Aerojet General Nucleonics, General Motors, Westinghouse, and McDonnell Douglas over 14 years",
+      "Held security clearances and worked on classified nuclear aircraft and fission/fusion rocket propulsion programs",
+      "Began researching UFOs while working in industry; gave his first public lecture in 1967",
+      "Left aerospace career in 1970 to become the first person to make a full-time living as a UFO researcher"
+    ],
+    "key_events": [
+      { "year": "1967", "event": "Gave his first public UFO lecture at a college in Montana, beginning what would become a lifelong career of over 700 campus lectures across North America." },
+      { "year": "1978", "event": "Located and conducted the first recorded interview with Jesse Marcel Sr., the Army Air Force intelligence officer who handled Roswell debris. This interview reignited public and media interest in Roswell after three decades of silence." },
+      { "year": "1980", "event": "Co-authored 'The Roswell Incident' (with Charles Berlitz and William Moore) - the first book dedicated to the Roswell crash, establishing it as the central case in crash-retrieval research." },
+      { "year": "1987", "event": "Received the leaked MJ-12 briefing documents via researcher William Moore and conducted extensive document analysis; coined the phrase 'Cosmic Watergate' to describe government UAP concealment." },
+      { "year": "1996", "event": "Published 'Top Secret/MAJIC,' the most comprehensive analysis of the MJ-12 documents. While defending their authenticity, Friedman applied rigorous historical methodology that forced even critics to engage substantively." },
+      { "year": "2008", "event": "Published 'Flying Saucers and Science,' applying his physics background to analyze UAP propulsion, interstellar travel feasibility, and the scientific case for extraterrestrial origin." },
+      { "year": "May 2019", "event": "Died at age 84 in Fredericton, New Brunswick. He had given his final public lecture just weeks before his death, consistent with a career that never stopped until the end." }
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "j-allen-hynek",
+      "name": "Dr. J. Allen Hynek",
+      "role": "Astrophysicist; Project Blue Book scientific consultant",
+      "relationship": "Friedman and Hynek were the two most prominent scientific voices in civilian UAP research from the 1970s onward. Both criticized the government's debunking posture from positions of technical credibility. Hynek founded CUFOS, where Friedman contributed research."
+    },
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist",
+      "relationship": "Kean carried Friedman's methodological tradition of document-based UAP research into the next generation. Friedman endorsed her 2010 book 'UFOs: Generals, Pilots and Government Officials Go on Record' as the most credible civilian UAP publication of its era."
+    },
+    {
+      "id": "richard-dolan",
+      "name": "Richard Dolan",
+      "role": "Historian and UAP researcher",
+      "relationship": "Dolan succeeded Friedman as the primary historian of the national security state's relationship with UAP. Friedman mentored Dolan's early research and endorsed his foundational two-volume work on the subject."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "1980",
+      "type": "written",
+      "title": "The Roswell Incident",
+      "outlet": "Grosset & Dunlap (New York)",
+      "notes": "Co-authored with Charles Berlitz and William Moore. The first book dedicated entirely to Roswell, based on Friedman's 1978 Marcel interview and subsequent fieldwork. Established Roswell as the central case in crash-retrieval research."
+    },
+    {
+      "date": "1996",
+      "type": "written",
+      "title": "Top Secret/MAJIC",
+      "outlet": "Marlowe & Company (New York)",
+      "notes": "Comprehensive analysis and defense of the MJ-12 documents. Applied historical document methodology to the question of authenticity. Remains the definitive pro-authenticity analysis of the MJ-12 papers."
+    },
+    {
+      "date": "2008",
+      "type": "written",
+      "title": "Flying Saucers and Science",
+      "outlet": "New Page Books (Pompton Plains, NJ)",
+      "notes": "Applied nuclear physics and aerospace engineering knowledge to analyze UAP propulsion feasibility, interstellar travel physics, and the scientific case for extraterrestrial origin. Friedman's most technically rigorous publication."
+    },
+    {
+      "date": "2019",
+      "type": "written",
+      "title": "Shoot Them Down: The Flying Saucer Air Wars of 1952",
+      "outlet": "Flying Saucer Press",
+      "notes": "Final major publication before his death; focused on the 1952 Washington D.C. UFO wave and the military's shoot-to-intercept orders. Based on previously overlooked Air Force documents."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Stanton Friedman Official Website",
+      "url": "http://www.stantonfriedman.com",
+      "type": "Primary",
+      "notes": "Friedman's own bibliography, lecture schedule archive, and research papers"
+    },
+    {
+      "title": "Flying Saucers and Science - Amazon",
+      "url": "https://www.amazon.com/Flying-Saucers-Science-Physicist-Investigates/dp/1601630115",
+      "type": "Book",
+      "notes": "Primary research publication - physics-based analysis of UAP"
+    },
+    {
+      "title": "Top Secret/MAJIC - Amazon",
+      "url": "https://www.amazon.com/Top-SecretMajic-Stanton-T-Friedman/dp/1569248079",
+      "type": "Book",
+      "notes": "Definitive MJ-12 document analysis"
+    },
+    {
+      "title": "Wikipedia - Stanton Friedman",
+      "url": "https://en.wikipedia.org/wiki/Stanton_Friedman",
+      "type": "Reference",
+      "notes": "Biographical overview and publication bibliography"
+    }
+  ]
+}

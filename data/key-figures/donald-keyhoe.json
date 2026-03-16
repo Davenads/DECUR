@@ -1,0 +1,115 @@
+{
+  "profile": {
+    "id": "donald-keyhoe",
+    "name": "Maj. Donald E. Keyhoe",
+    "aliases": ["Donald Keyhoe", "D.E. Keyhoe"],
+    "born": "June 20, 1897 - Ottumwa, Iowa",
+    "died": "November 29, 1988 - Luray, Virginia",
+    "roles": [
+      "Major, United States Marine Corps (Retired)",
+      "Aviation Writer and Journalist",
+      "Director, National Investigations Committee on Aerial Phenomena (NICAP), 1957-1969",
+      "Author - The Flying Saucers Are Real (1950)"
+    ],
+    "service_period": "1919-1923 (active USMC); 1930s-1940s (aviation journalism); 1957-1969 (NICAP Director)",
+    "organizations": [
+      "United States Marine Corps",
+      "National Investigations Committee on Aerial Phenomena (NICAP)",
+      "Fund for UFO Research"
+    ],
+    "clearance": "Prior military clearances; maintained active government and military contacts throughout career",
+    "summary": "Marine Corps Major and aviation writer who co-founded NICAP in 1956 and served as its director until 1969, making him the most influential figure in organized civilian UFO investigation during the Cold War era. Keyhoe's 1950 book 'The Flying Saucers Are Real' was among the first serious arguments that UFOs were interplanetary craft requiring government accountability - it sold half a million copies and shaped the entire subsequent public discourse on government secrecy. Under his leadership, NICAP became the largest and most credible civilian UFO organization in American history, with 14,000 members, documented congressional contacts, and a methodology of evidence-based case documentation that anticipated the modern disclosure movement by 60 years.",
+    "education": [
+      "U.S. Naval Academy, Annapolis (graduated 1919)"
+    ],
+    "early_career": [
+      "Commissioned as Second Lieutenant, USMC, upon graduation from the Naval Academy in 1919",
+      "Served in aviation roles; was personal aide to Charles Lindbergh during his 1927 national tour following the transatlantic flight",
+      "Medically retired from active duty in 1923; continued association with military aviation community",
+      "Became a prolific aviation journalist and author throughout the 1930s and 1940s",
+      "Published 'Flying with Lindbergh' (1928) based on his time as Lindbergh's aide"
+    ],
+    "key_events": [
+      { "year": "1950", "event": "Published 'The Flying Saucers Are Real' (True Magazine and Fawcett Publications) - one of the first serious books arguing UFOs were of interplanetary origin and that the government was concealing the truth. Sold half a million copies and was the most widely read UFO publication of its era." },
+      { "year": "1953", "event": "Published 'Flying Saucers from Outer Space,' reporting on multiple military pilot encounters and arguing that a government policy of silence was actively suppressing evidence. The book was based partly on military contacts who provided Keyhoe with information they could not officially release." },
+      { "year": "1956", "event": "Co-founded the National Investigations Committee on Aerial Phenomena (NICAP) with T. Townsend Brown. Became executive director the following year." },
+      { "year": "1958", "event": "Under Keyhoe's leadership, NICAP grew to 14,000 members, documented hundreds of credible cases, and became the primary civilian body pressuring Congress for UFO disclosure. NICAP's case files became foundational research material for all subsequent investigators. Also published 'Flying Saucer Conspiracy,' arguing the Air Force's Project Blue Book was a deliberate cover-up operation rather than a genuine investigation." },
+      { "year": "1960", "event": "Testified before a closed session of a Senate subcommittee on UFOs - one of the first congressional appearances by a civilian UFO researcher." },
+      { "year": "1969", "event": "Forced out of NICAP's directorship by a board vote in a disputed internal power struggle. Many researchers believe the ouster was influenced by external pressure due to NICAP's effectiveness as an oversight body. NICAP declined significantly after his departure." },
+      { "year": "Nov 1988", "event": "Died at age 91 in Luray, Virginia. His career spanned the entire history of the modern UAP disclosure movement, from the first flying saucer reports in 1947 to within months of the Cold War's end." }
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "j-allen-hynek",
+      "name": "Dr. J. Allen Hynek",
+      "role": "Astrophysicist; Project Blue Book scientific consultant",
+      "relationship": "Hynek and Keyhoe represented complementary approaches to the same problem - Hynek from inside the government program, Keyhoe from the outside as its most persistent critic. NICAP under Keyhoe documented many cases that Hynek later acknowledged Blue Book had mishandled. After Hynek broke with the Air Force in the late 1960s, the two men's positions converged significantly."
+    },
+    {
+      "id": "richard-dolan",
+      "name": "Richard Dolan",
+      "role": "Historian and UAP researcher",
+      "relationship": "Dolan's foundational two-volume work 'UFOs and the National Security State' extensively documents Keyhoe's NICAP period and credits him as the most significant figure in establishing government accountability as a framework for UAP research."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "1950",
+      "type": "written",
+      "title": "The Flying Saucers Are Real",
+      "outlet": "Fawcett Publications (New York)",
+      "notes": "First major popular book arguing UFOs were interplanetary craft subject to government concealment. Sold approximately 500,000 copies. Based partly on military aviation contacts and FOIA-era government documents. Established the framework of government secrecy that dominated civilian UAP research for decades."
+    },
+    {
+      "date": "1953",
+      "type": "written",
+      "title": "Flying Saucers from Outer Space",
+      "outlet": "Henry Holt & Company (New York)",
+      "notes": "Documented multiple military pilot encounters and argued for an active government policy of silence. Based partly on information provided by active-duty military contacts. Became a bestseller."
+    },
+    {
+      "date": "1958",
+      "type": "written",
+      "title": "The Flying Saucer Conspiracy",
+      "outlet": "Henry Holt & Company (New York)",
+      "notes": "Argued that Project Blue Book was a deliberate cover-up operation. First detailed public examination of the gap between Blue Book's public posture and the classified evidence its investigators encountered."
+    },
+    {
+      "date": "1960",
+      "type": "written",
+      "title": "Flying Saucers: Top Secret",
+      "outlet": "G.P. Putnam's Sons (New York)",
+      "notes": "Presented new documentation of military encounters and congressional interest in the subject. Keyhoe's most direct presentation of the case for congressional disclosure hearings."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "The Flying Saucers Are Real (1950) - Archive.org",
+      "url": "https://archive.org/details/flyingsaucersare0000keyh",
+      "type": "Book",
+      "notes": "Full text of Keyhoe's foundational 1950 work; public domain"
+    },
+    {
+      "title": "NICAP History - Sign Historical Group",
+      "url": "http://www.nicap.org",
+      "type": "Reference",
+      "notes": "NICAP's digitized case files and organizational history"
+    },
+    {
+      "title": "Wikipedia - Donald Keyhoe",
+      "url": "https://en.wikipedia.org/wiki/Donald_Keyhoe",
+      "type": "Reference",
+      "notes": "Biographical overview and NICAP directorship details"
+    },
+    {
+      "title": "UFOs and the National Security State, Vol. 1 (Dolan, 2002)",
+      "url": "https://www.amazon.com/UFOs-National-Security-State-Chronology/dp/1571743561",
+      "type": "Book",
+      "notes": "Most comprehensive historical analysis of the Keyhoe/NICAP era"
+    }
+  ]
+}

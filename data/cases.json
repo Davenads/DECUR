@@ -5989,5 +5989,205 @@
         "notes": "Brazilian Congressional hearings on UAP held in 2010 referenced the Varginha case. A.J. Gevaerd testified. This constitutes the closest the Brazilian government has come to officially acknowledging the case."
       }
     ]
+  },
+  {
+    "id": "levelland-1957",
+    "name": "Levelland, Texas Encounter",
+    "date": "November 2-3, 1957",
+    "location": "Levelland, Texas and surrounding Hockley County",
+    "country": "United States",
+    "category": "ground-observation",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "During a single night in November 1957, at least 15 independent witnesses across multiple separate locations in Hockley County, Texas, reported a large luminous egg-shaped object that caused vehicle engines and headlights to fail on contact. The encounters included multiple police officers, a fire department chief, a Texas Tech student, and numerous civilians - all in separate locations with no communication between them during the events. The electromagnetic vehicle interference effect, independently documented across a 10-mile area over several hours, remains one of the most extensively multi-witnessed EM effects cases in the historical record.",
+    "tags": [
+      "electromagnetic-effects",
+      "multi-witness",
+      "vehicle-interference",
+      "law-enforcement",
+      "Project-Blue-Book",
+      "1957-flap"
+    ],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: Night of November 2-3, 1957 - multiple encounters between approximately 10:50 PM and 1:30 AM",
+        "Location: Hockley County, Texas; centered on Levelland but spanning a ~10-mile rural radius",
+        "At least 15 independent witnesses reported encounters across multiple separate locations",
+        "Every encounter involved the same reported effect: vehicle engines dying and headlights failing when the object was nearby, then restoring when the object departed",
+        "Object described consistently as egg-shaped or rocket-shaped, approximately 200 feet long, glowing",
+        "Witnesses included Pedro Saucedo and Joe Salaz, James Wheeler (police officer), A.J. Fowler (police officer), Fire Chief Ray Jones, Ronald Martin, and multiple others",
+        "Project Blue Book investigated but assigned only one investigator to the case, working for just two days",
+        "Blue Book ultimately blamed ball lightning - a conclusion heavily criticized given the scale of independent corroboration and the lack of conditions for ball lightning formation",
+        "The event occurred in the same week as the Soviet Union's Sputnik 2 launch, during a period of heightened national anxiety about airspace security"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Project Blue Book investigation file - officially closed as 'ball lightning' despite inadequate investigation",
+        "Levelland Police Department dispatch records from the night of November 2, 1957",
+        "Multiple sworn statements from police officers and civilian witnesses collected in the days following",
+        "NICAP investigation report - challenged Blue Book's ball lightning explanation in detail",
+        "Congressional inquiry letters from NICAP to Air Force regarding inadequate Blue Book investigation"
+      ],
+      "physical": [
+        "No physical trace evidence recovered",
+        "Multiple witnesses reported vehicle systems restored immediately upon the object's departure - consistent across all encounters",
+        "No sonic boom despite reported high-speed departure in some accounts"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Pedro Saucedo",
+        "role": "Farm laborer; first witness",
+        "type": "civilian",
+        "testimony": "The object came toward us. When it got near, the truck lights went out and the motor stopped. I jumped out and hit the ground, because I was afraid. It was very bright and lit up the whole area. The thing passed directly over my truck with a great sound and rush of wind. It must have been about 200 feet long, shaped like a torpedo."
+      },
+      {
+        "name": "Officer A.J. Fowler",
+        "role": "Levelland Police Department dispatcher",
+        "type": "law-enforcement",
+        "testimony": "In the space of a few hours, I had received over a dozen calls from different people in different parts of the county, all describing the same thing. I went out myself but didn't see it by that time. The consistency of the reports was what impressed me."
+      },
+      {
+        "name": "Fire Chief Ray Jones",
+        "role": "Levelland Fire Department Chief",
+        "type": "official",
+        "testimony": "I saw the object myself. The lights on my car dimmed and my engine almost stalled. It was definitely not a natural phenomenon."
+      }
+    ],
+    "hypotheses": [
+      {
+        "label": "Ball Lightning (official)",
+        "credibility": "low",
+        "description": "Project Blue Book's official explanation. Heavily criticized by researchers including Hynek and NICAP, who noted that ball lightning is rare, small, short-lived, and does not cause the sustained, area-wide electromagnetic effects described. The absence of thunderstorm conditions that night further undermines this explanation."
+      },
+      {
+        "label": "Structured Craft (unknown origin)",
+        "credibility": "medium",
+        "description": "NICAP and independent researchers concluded the consistent size, shape, and EM effects across 15+ independent witnesses were more consistent with a solid structured object than any natural phenomenon. The vehicle interference effect in particular is difficult to explain via natural causes."
+      },
+      {
+        "label": "Atmospheric Plasma Phenomenon",
+        "credibility": "low",
+        "description": "A more modern version of the natural phenomenon hypothesis, proposing an unusual atmospheric plasma event. Does not adequately explain the consistent geometric shape reported or the pattern of electromagnetic interference."
+      }
+    ],
+    "competing_analyses": [
+      "NICAP conducted an independent investigation and published a detailed critique of Blue Book's ball lightning explanation, noting the meteorological conditions did not support ball lightning formation.",
+      "Researcher Donald Keyhoe used Levelland extensively as evidence of inadequate Blue Book investigation in his congressional advocacy.",
+      "James McDonald, University of Arizona atmospheric physicist, analyzed Levelland in his 1968 congressional testimony as one of 41 cases demonstrating systematic Blue Book failure.",
+      "Multiple researchers have noted that the electromagnetic vehicle interference pattern across a large area and multiple independent witness chains is essentially unique in the literature."
+    ],
+    "sources": [
+      { "title": "Project Blue Book Files - National Archives (Levelland)", "url": "https://www.archives.gov/research/military/air-force/ufos", "type": "Primary" },
+      { "title": "NICAP - Levelland case documentation", "url": "http://www.nicap.org/levelland.htm", "type": "Investigation Report" },
+      { "title": "UFO Evidence (Hall, 1964) - Levelland analysis", "type": "Book" }
+    ]
+  },
+  {
+    "id": "coyne-helicopter-1973",
+    "name": "Coyne Helicopter Incident",
+    "date": "October 18, 1973",
+    "location": "Mansfield, Ohio (near Charles Mill Lake)",
+    "country": "United States",
+    "category": "military-aviation",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "An Army Reserve helicopter crew of four, commanded by Captain Lawrence Coyne, encountered a large metallic craft near Mansfield, Ohio while flying from Columbus to Cleveland. The object approached on what appeared to be a direct collision course. When Coyne pushed the helicopter into a dive, the object halted and bathed the helicopter in a green beam of light. Despite Coyne's dive inputs, the helicopter was subsequently observed by multiple independent ground witnesses to ascend from approximately 1,700 feet to 3,500 feet without crew input. The encounter was corroborated by five independent ground witnesses who observed both the helicopter and the unknown object. The case received a formal United Nations briefing in 1978.",
+    "tags": [
+      "military-aviation",
+      "Army-Reserve",
+      "multi-witness",
+      "physical-effects",
+      "altitude-anomaly",
+      "green-beam",
+      "ground-corroboration"
+    ],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: October 18, 1973, approximately 11:02 PM EDT",
+        "Location: Approximately 11 miles southwest of Mansfield, Ohio, at ~1,700 feet altitude",
+        "Aircraft: U.S. Army Reserve UH-1H Huey helicopter, tail number 68-15444",
+        "Crew: Capt. Lawrence Coyne (commander), Lt. Arrigo Jezzi (co-pilot), Sgt. Robert Yanasek (crew chief), Sgt. John Healey (medic)",
+        "Object described as cigar-shaped, metallic, approximately 60 feet long, with red, white, and green lights",
+        "Object approached at estimated 600 knots on apparent collision course from the east",
+        "Coyne pushed collective down for emergency dive; radio communications failed on both UHF and VHF simultaneously",
+        "Object halted above the helicopter and bathed it in a green beam of light from a forward spotlight",
+        "Despite dive inputs on the cyclic and collective, the helicopter ascended from 1,700 to 3,500 feet",
+        "All four crew members independently confirmed the object and anomalous ascent",
+        "Five independent civilian ground witnesses in two separate vehicles observed both the helicopter and the object from below",
+        "The case was presented to the United Nations Special Political Committee in 1978 by Dr. J. Allen Hynek and Capt. Coyne",
+        "CUFOS and MUFON both conducted investigations; no prosaic explanation was found"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Official Army Reserve incident report filed by Captain Coyne following the encounter",
+        "Individual written statements from all four crew members submitted to the Army",
+        "Civilian witness statements collected by CUFOS and MUFON investigators",
+        "CUFOS (Center for UFO Studies) investigation report - 1974",
+        "MUFON investigation report",
+        "Jennie Zeidman's comprehensive case analysis (1979) for CUFOS - the most detailed case study",
+        "United Nations Special Political Committee proceedings (November 1978) featuring Coyne's testimony"
+      ],
+      "physical": [
+        "Helicopter's magnetic compass rotated erratically during and immediately after the encounter",
+        "Radio equipment failed on both UHF and VHF channels simultaneously during the encounter, then functioned normally afterward",
+        "Altitude instruments recorded unexplained ascent from 1,700 to 3,500 feet despite dive-configured controls",
+        "No structural damage to the aircraft"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Capt. Lawrence Coyne",
+        "role": "UH-1H Commander; Army Reserve",
+        "type": "military",
+        "testimony": "I looked up and saw a large gray metallic-looking object bearing down on us from the right. It was heading right for us. I pushed the collective down to increase the rate of descent. Then it stopped. It stopped right over us - about 500 feet above. It bathed us in a green light. I had the collective all the way down, but somehow we were climbing. I had no control over it. The altimeter was unwinding upward."
+      },
+      {
+        "name": "Sgt. Robert Yanasek",
+        "role": "Crew Chief",
+        "type": "military",
+        "testimony": "I saw a red light - thought it was a plane. Then I saw it was coming fast. Then a beam - green - lit up the whole cockpit. Then I realized we were climbing. I looked at the altimeter. It was going up. It shouldn't have been - the captain had pushed down."
+      },
+      {
+        "name": "Jeanne Elias (civilian ground witness)",
+        "role": "Civilian; observed both helicopter and object from ground",
+        "type": "civilian",
+        "testimony": "I saw this large object and a helicopter. The helicopter had its red and white lights. The other object had a green light on the bottom. I watched the helicopter tipping and moving. The green light lit up the whole field. Then they both went north."
+      }
+    ],
+    "hypotheses": [
+      {
+        "label": "Meteor or Fireball",
+        "credibility": "very-low",
+        "description": "Initial skeptical hypothesis. Investigators noted that fireballs do not halt in mid-air, emit directional beams, or remain stationary over helicopters for an extended period. The ground witnesses independently described an object that hovered, not a ballistic trajectory."
+      },
+      {
+        "label": "Military Aircraft (misidentified)",
+        "credibility": "low",
+        "description": "No military flight was logged in the area at the time of the encounter. The reported behaviors - halting on approach, sustained hovering, directed beam - are inconsistent with any known 1973 military aircraft."
+      },
+      {
+        "label": "Structured Craft (unknown origin)",
+        "credibility": "high",
+        "description": "CUFOS and MUFON investigators, and Dr. Hynek personally, concluded after detailed analysis that the case describes an encounter with a real, structured, unknown object. The four independent military crew accounts, five independent civilian ground witness accounts, and instrument anomalies collectively present a high-evidential record that has not been explained by any natural or prosaic hypothesis in fifty years of review."
+      }
+    ],
+    "competing_analyses": [
+      "Jennie Zeidman conducted a comprehensive investigation for CUFOS (published 1979) analyzing all available evidence, interviewing all witnesses, and reviewing every proposed explanation. She concluded no prosaic explanation was adequate.",
+      "Dr. J. Allen Hynek personally accompanied Captain Coyne to the United Nations to present the case in November 1978 - one of the strongest possible endorsements of a case's credibility from the era's leading scientific analyst.",
+      "Philip Klass (skeptic) proposed a meteor hypothesis; CUFOS investigators countered in detail, noting that the sustained hovering phase specifically cannot be explained by any ballistic object.",
+      "The simultaneous radio failure on both UHF and VHF channels has been noted as consistent with a strong electromagnetic pulse source - an observation that aligns with the EM effects documented in other cases including Levelland."
+    ],
+    "sources": [
+      { "title": "CUFOS - Coyne Helicopter Case (Zeidman, 1979)", "url": "https://www.cufos.org", "type": "Investigation Report" },
+      { "title": "NICAP - Coyne Helicopter documentation", "url": "http://www.nicap.org/731018dir.htm", "type": "Case File" },
+      { "title": "UN Special Political Committee - 1978 proceedings", "type": "Official Record" }
+    ]
   }
 ]

@@ -157,6 +157,14 @@ export const graphData: GraphData = {
     { id: 'schulgen-memo-1947',               name: 'Schulgen Memo 1947',         type: 'document', val: 2 },
     { id: 'project-sign-estimate-1948',       name: 'Project Sign Estimate',      type: 'document', val: 2 },
     { id: 'dia-iran-f4-1976',                 name: 'DIA Iran F-4 Report',        type: 'document', val: 2 },
+
+    // New must-have cases
+    { id: 'levelland-1957',         name: 'Levelland TX (1957)',          type: 'case', val: 3 },
+    { id: 'coyne-helicopter-1973',  name: 'Coyne Helicopter (1973)',      type: 'case', val: 3 },
+
+    // New must-have documents
+    { id: 'pentacle-memorandum',    name: 'Pentacle Memorandum (1953)',   type: 'document', val: 3 },
+    { id: 'hottel-memo',            name: 'Hottel Memo (1950)',           type: 'document', val: 2 },
   ],
 
   links: [
@@ -483,5 +491,47 @@ export const graphData: GraphData = {
     { source: 'harald-malmgren',       target: 'roswell-1947',              label: 'CIA source corroborated broader recovery context' },
     { source: 'jesse-michels',         target: 'harald-malmgren',           label: 'interviewed' },
     { source: 'david-grusch',          target: 'harald-malmgren',           label: 'corroborating compartmentalization accounts' },
+
+    // Stanton Friedman connections
+    { source: 'stanton-friedman',    target: 'roswell-1947',              label: 'primary researcher; located Marcel' },
+    { source: 'stanton-friedman',    target: 'majestic-12',               label: 'analyzed MJ-12 documents' },
+    { source: 'stanton-friedman',    target: 'j-allen-hynek',             label: 'contemporary researchers' },
+    { source: 'stanton-friedman',    target: 'richard-dolan',             label: 'mentored' },
+    { source: 'stanton-friedman',    target: 'leslie-kean',               label: 'contemporary researchers' },
+
+    // Avi Loeb connections
+    { source: 'avi-loeb',            target: 'garry-nolan',               label: 'fellow scientist-advocate' },
+    { source: 'avi-loeb',            target: 'tim-gallaudet',             label: 'testified at same 2024 hearing' },
+    { source: 'avi-loeb',            target: 'sol-foundation',            label: 'symposium participant' },
+    { source: 'avi-loeb',            target: 'seti',                      label: 'challenged SETI framing' },
+
+    // Donald Keyhoe connections
+    { source: 'donald-keyhoe',       target: 'nicap',                     label: 'co-founded and directed' },
+    { source: 'donald-keyhoe',       target: 'project-blue-book',         label: 'primary civilian critic of' },
+    { source: 'donald-keyhoe',       target: 'j-allen-hynek',             label: 'contemporary; NICAP-Blue Book interface' },
+    { source: 'donald-keyhoe',       target: 'richard-dolan',             label: 'documented by' },
+    { source: 'donald-keyhoe',       target: 'robertson-panel',           label: 'investigated suppression by' },
+
+    // Levelland case connections
+    { source: 'levelland-1957',      target: 'project-blue-book',         label: 'inadequately investigated by' },
+    { source: 'levelland-1957',      target: 'j-allen-hynek',             label: 'criticized investigation of' },
+    { source: 'levelland-1957',      target: 'donald-keyhoe',             label: 'used in congressional advocacy by' },
+    { source: 'levelland-1957',      target: 'nicap',                     label: 'investigated and documented by' },
+
+    // Coyne Helicopter case connections
+    { source: 'coyne-helicopter-1973', target: 'j-allen-hynek',           label: 'investigated and personally endorsed' },
+    { source: 'coyne-helicopter-1973', target: 'mufon',                   label: 'investigated by' },
+
+    // Pentacle Memorandum connections
+    { source: 'pentacle-memorandum',  target: 'robertson-panel',          label: 'sought to control evidence shown to' },
+    { source: 'pentacle-memorandum',  target: 'project-blue-book',        label: 'reveals parallel program alongside' },
+    { source: 'pentacle-memorandum',  target: 'j-allen-hynek',            label: 'found in papers of' },
+    { source: 'pentacle-memorandum',  target: 'jacques-vallee',           label: 'discovered by' },
+    { source: 'pentacle-memorandum',  target: 'robertson-panel-1953',     label: 'pre-dates by 2 days; sought to shape' },
+
+    // Hottel Memo connections
+    { source: 'hottel-memo',          target: 'roswell-1947',             label: 'describes recovery consistent with' },
+    { source: 'hottel-memo',          target: 'oga',                      label: 'circulated within federal government channels' },
+    { source: 'hottel-memo',          target: 'ipu',                      label: 'corroborates recovery program context' },
   ],
 };

@@ -1,0 +1,112 @@
+{
+  "profile": {
+    "id": "avi-loeb",
+    "name": "Dr. Avi Loeb",
+    "aliases": ["Abraham Loeb", "Professor Loeb"],
+    "born": "February 26, 1962 - Beit Hanan, Israel",
+    "died": null,
+    "roles": [
+      "Frank B. Baird Jr. Professor of Science, Harvard University",
+      "Chair, Harvard Astronomy Department (2011-2020)",
+      "Founder and Director, Galileo Project (2021-present)",
+      "Author - Extraterrestrial: The First Sign of Intelligent Life Beyond Earth (2021)"
+    ],
+    "service_period": "1988-present (Harvard); 2021-present (Galileo Project)",
+    "organizations": [
+      "Harvard University",
+      "Harvard-Smithsonian Center for Astrophysics",
+      "Galileo Project",
+      "Institute for Advanced Study (Princeton)",
+      "President's Council of Advisors on Science and Technology"
+    ],
+    "clearance": null,
+    "summary": "Harvard astrophysicist and the world's most prominent mainstream academic to publicly argue for the scientific investigation of potential extraterrestrial technological artifacts. Loeb founded the Galileo Project in 2021 - the first systematic, transparent, peer-reviewed scientific program specifically designed to search for and analyze UAP and interstellar objects as potential technological artifacts. His willingness to apply rigorous academic methodology to the UAP question, combined with his institutional standing as Harvard's former astronomy chair, has given the field a credibility anchor it previously lacked in mainstream academia. Has published over 1,000 peer-reviewed papers and testified before Congress in 2024.",
+    "education": [
+      "Ph.D., Plasma Physics - Hebrew University of Jerusalem (1986)",
+      "B.S., Physics - Hebrew University of Jerusalem (1980)"
+    ],
+    "early_career": [
+      "Served in Israeli Air Force's scientific unit and led a government project to develop rocket fuel",
+      "Institute for Advanced Study (Princeton) - postdoctoral fellowship",
+      "Joined Harvard faculty in 1993; became full professor in 1998",
+      "Chaired the Harvard Astronomy Department for nine years (2011-2020)",
+      "Led advisory committees for NASA, the European Research Council, and China's National Astronomical Observatories"
+    ],
+    "key_events": [
+      { "year": "2017", "event": "Discovery of 'Oumuamua, the first confirmed interstellar object to pass through the solar system. Loeb co-authored the initial discovery paper and subsequently argued in peer-reviewed literature that its anomalous acceleration and shape were consistent with an artificial light sail - a position that generated enormous scientific controversy." },
+      { "year": "Jan 2021", "event": "Published 'Extraterrestrial: The First Sign of Intelligent Life Beyond Earth,' arguing scientists were being cowardly in dismissing non-natural explanations for anomalous astronomical objects. The book became an international bestseller and launched a major public debate about scientific bias in UAP research." },
+      { "year": "Jul 2021", "event": "Founded the Galileo Project at Harvard - the first systematic scientific program designed to apply mainstream academic rigor to the search for extraterrestrial technological signatures, including UAP. The project operates fully transparently with all data and methodology publicly available." },
+      { "year": "2022", "event": "Galileo Project launched first observing station, a multi-sensor array combining optical cameras, infrared sensors, radar, and audio equipment to capture and analyze UAP." },
+      { "year": "2023", "event": "Led the Galileo Project's deep-sea expedition to recover metallic fragments from the site of the 2014 IM1 interstellar meteor impact off Papua New Guinea. Analysis suggested the material had anomalous properties - harder than any known iron meteorite." },
+      { "year": "Nov 2024", "event": "Testified before Congress at the November 13 'Exposing the Truth' joint House hearing, presenting the Galileo Project's scientific framework and arguing for transparent, data-driven UAP investigation as the responsible scientific standard." },
+      { "year": "2025", "event": "Galileo Project announced plans for a $1 billion AI observatory network for systematic UAP detection, representing the largest proposed civilian scientific investment in UAP research in history." }
+    ]
+  },
+
+  "associated_people": [
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Professor of Pathology, Stanford University",
+      "relationship": "Both represent the new wave of credentialed mainstream academics willing to publicly engage with UAP as a scientific question. Loeb and Nolan have appeared together at the Sol Foundation symposiums and share a methodological conviction that UAP deserves rigorous peer-reviewed investigation rather than dismissal."
+    },
+    {
+      "id": "tim-gallaudet",
+      "name": "Dr. Timothy Gallaudet",
+      "role": "Rear Admiral (Ret.), former NOAA Administrator",
+      "relationship": "Both testified at the November 2024 congressional hearing. Gallaudet's institutional perspective on underwater UAP phenomena complements Loeb's focus on airborne and interstellar objects."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2021",
+      "type": "written",
+      "title": "Extraterrestrial: The First Sign of Intelligent Life Beyond Earth",
+      "outlet": "Houghton Mifflin Harcourt (New York)",
+      "notes": "International bestseller arguing that 'Oumuamua's anomalous properties are most parsimoniously explained as an artificial light sail of extraterrestrial origin. Generated major scientific debate and positioned Loeb as the most visible academic voice for rigorous investigation of potential alien technology."
+    },
+    {
+      "date": "2023",
+      "type": "written",
+      "title": "Interstellar: The Search for Extraterrestrial Life and Our Future in the Stars",
+      "outlet": "John Murray (London)",
+      "notes": "Follow-up to Extraterrestrial, expanding the scientific framework for searching for technological extraterrestrial signatures and detailing the Galileo Project's methodology and early findings."
+    },
+    {
+      "date": "Nov 2024",
+      "type": "congressional-testimony",
+      "title": "Exposing the Truth: UAP Declassification and the Public's Right to Know",
+      "outlet": "U.S. House Subcommittee on National Security and Science",
+      "interviewer": "Rep. Tim Burchett; Rep. Anna Paulina Luna",
+      "notes": "Testified presenting the Galileo Project's scientific methodology as a model for rigorous transparent UAP investigation. Argued that the scientific community's reluctance to engage with the topic reflects bias rather than evidence-based skepticism."
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Galileo Project - Harvard Official Site",
+      "url": "https://projects.iq.harvard.edu/galileo",
+      "type": "Primary",
+      "notes": "Official Galileo Project homepage with publications, data, and methodology"
+    },
+    {
+      "title": "Extraterrestrial (2021) - Amazon",
+      "url": "https://www.amazon.com/Extraterrestrial-First-Sign-Intelligent-Beyond/dp/0358278147",
+      "type": "Book",
+      "notes": "Primary popular science publication on potential extraterrestrial technological artifacts"
+    },
+    {
+      "title": "Avi Loeb - Harvard Faculty Page",
+      "url": "https://www.cfa.harvard.edu/people/avi-loeb",
+      "type": "Primary",
+      "notes": "Official Harvard faculty listing with publication record"
+    },
+    {
+      "title": "Wikipedia - Avi Loeb",
+      "url": "https://en.wikipedia.org/wiki/Avi_Loeb",
+      "type": "Reference",
+      "notes": "Biographical overview, publication history, and Oumuamua controversy"
+    }
+  ]
+}

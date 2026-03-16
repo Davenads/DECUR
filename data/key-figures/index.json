@@ -699,5 +699,47 @@
     "data_file": "harald-malmgren.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "stanton-friedman",
+    "name": "Stanton T. Friedman",
+    "aliases": ["Stan Friedman"],
+    "role": "Nuclear Physicist; UFO Researcher",
+    "period": "1967-2019",
+    "affiliation": "Independent; Center for UFO Studies (CUFOS)",
+    "summary": "Nuclear physicist who spent 52 years as the world's foremost civilian Roswell researcher. Located and first interviewed Jesse Marcel Sr. in 1978, resurrecting the Roswell case from decades of obscurity. Coined 'Cosmic Watergate' to describe systematic government UAP suppression. Gave over 700 lectures on college campuses and applied rigorous document analysis to the MJ-12 papers.",
+    "status": "detailed",
+    "tags": ["Roswell", "MJ-12", "Cosmic Watergate", "Nuclear Physics", "Jesse Marcel", "CUFOS"],
+    "data_file": "stanton-friedman.json",
+    "type": "scientist",
+    "includeInExplore": true
+  },
+  {
+    "id": "avi-loeb",
+    "name": "Dr. Avi Loeb",
+    "aliases": ["Abraham Loeb", "Professor Loeb"],
+    "role": "Harvard Astrophysicist; Director, Galileo Project",
+    "period": "2021-present",
+    "affiliation": "Harvard University; Galileo Project",
+    "summary": "Harvard's former astronomy chair who founded the Galileo Project in 2021 - the first systematic, peer-reviewed, fully transparent scientific program to search for extraterrestrial technological artifacts including UAP. His willingness to apply mainstream academic rigor to the UAP question, combined with his institutional standing, has given the field unprecedented credibility in academic circles. Has published over 1,000 peer-reviewed papers and testified before Congress in 2024.",
+    "status": "detailed",
+    "tags": ["Harvard", "Galileo Project", "Oumuamua", "Extraterrestrial", "Congressional Testimony 2024", "Interstellar Objects"],
+    "data_file": "avi-loeb.json",
+    "type": "scientist",
+    "includeInExplore": true
+  },
+  {
+    "id": "donald-keyhoe",
+    "name": "Maj. Donald E. Keyhoe",
+    "aliases": ["Donald Keyhoe"],
+    "role": "Director, NICAP; Marine Corps Major (Ret.)",
+    "period": "1950-1969",
+    "affiliation": "National Investigations Committee on Aerial Phenomena (NICAP)",
+    "summary": "Marine Corps Major who co-founded and directed NICAP from 1957 to 1969, making it the largest and most credible civilian UFO organization in American history with 14,000 members. His 1950 book 'The Flying Saucers Are Real' sold half a million copies and established government accountability as the central framework for UAP disclosure advocacy - 60 years before the modern disclosure movement.",
+    "status": "detailed",
+    "tags": ["NICAP", "Marine Corps", "The Flying Saucers Are Real", "Project Blue Book", "Congressional Testimony", "Cold War"],
+    "data_file": "donald-keyhoe.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

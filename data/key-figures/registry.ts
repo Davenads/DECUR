@@ -44,6 +44,9 @@ import dayData from './day.json';
 import johnMackData from './john-mack.json';
 import jesseMichelsData from './jesse-michels.json';
 import haraldMalmgrenData from './harald-malmgren.json';
+import stantonFriedmanData from './stanton-friedman.json';
+import aviLoebData from './avi-loeb.json';
+import donaldKeyhoeData from './donald-keyhoe.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -79,4 +82,7 @@ export const insiderRegistry: Record<string, any> = {
   'john-mack': johnMackData,
   'jesse-michels': jesseMichelsData,
   'harald-malmgren': haraldMalmgrenData,
+  'stanton-friedman': stantonFriedmanData,
+  'avi-loeb': aviLoebData,
+  'donald-keyhoe': donaldKeyhoeData,
 };

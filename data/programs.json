@@ -632,5 +632,37 @@
       { "title": "Is Anyone Out There? (Drake & Sobel, 1992)", "type": "Book" },
       { "title": "The SETI League", "url": "https://www.setileague.org", "type": "Reference" }
     ]
+  },
+  {
+    "id": "uap-task-force",
+    "name": "UAP Task Force (UAPTF)",
+    "type": "government-body",
+    "status": "defunct",
+    "active_period": "2020-2021",
+    "parent_org": "Office of Naval Intelligence, Department of Defense",
+    "summary": "The UAP Task Force was established in August 2020 within the Office of Naval Intelligence by Deputy Secretary of Defense David Norquist, formally institutionalizing UAP investigation at the Pentagon level for the first time since Project Blue Book's closure in 1969. The UAPTF produced the landmark June 25, 2021 Preliminary Assessment - the first official government report to acknowledge 143 unexplained incidents out of 144 reviewed. The UAPTF was succeeded by the Airborne Object Identification and Management Synchronization Group (AOIMSG) in November 2021, which was itself replaced by AARO in July 2022.",
+    "significance": "The UAPTF represents the institutional bridge between the informal AATIP era (2012-2017) and the formal AARO structure. Its 2021 Preliminary Assessment was the most consequential single UAP document released by the U.S. government in the modern era - the first official acknowledgment that military UAP encounters were real, unexplained, and represented a national security concern. The report's creation was driven directly by the advocacy of Luis Elizondo, Chris Mellon, and sympathetic members of Congress who had spent three years pushing for exactly this kind of official acknowledgment.",
+    "key_personnel": [
+      { "name": "Jay Stratton", "role": "Director (appointed 2020)" },
+      { "name": "David Norquist", "role": "Deputy Secretary of Defense; established the UAPTF" }
+    ],
+    "key_events": [
+      { "year": "Aug 2020", "event": "UAPTF formally established by Deputy Secretary of Defense David Norquist within the Office of Naval Intelligence, following congressional pressure and the 2019 Navy UAP guidelines." },
+      { "year": "Jun 2021", "event": "UAPTF releases the Preliminary Assessment: Unidentified Aerial Phenomena - 9 pages publicly, with a classified annex. Found 143 of 144 reported incidents unexplained. Recommended standardized reporting and a successor organization." },
+      { "year": "Nov 2021", "event": "UAPTF succeeded by the Airborne Object Identification and Management Synchronization Group (AOIMSG), which expanded the mandate from Navy-only to full DoD scope." },
+      { "year": "Jul 2022", "event": "AOIMSG reorganized into AARO under the 2022 NDAA, establishing the current permanent UAP office." }
+    ],
+    "connected_documents": ["uaptf-preliminary-assessment"],
+    "connected_figures": ["luis-elizondo", "chris-mellon"],
+    "limitations": [
+      "The UAPTF's jurisdiction was initially limited to Navy-reported incidents, leaving out Air Force, Army, and intelligence community UAP reports.",
+      "The 2021 report covered only 144 incidents - a fraction of total government UAP encounters since 2004.",
+      "The classified annex has never been released, preventing full evaluation of the program's findings.",
+      "The transition to AOIMSG and then AARO introduced organizational gaps and personnel changes that critics argue weakened continuity."
+    ],
+    "sources": [
+      { "title": "UAP Preliminary Assessment - ODNI", "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf", "type": "Primary Source" },
+      { "title": "DoD Establishment of UAPTF - Defense.gov", "url": "https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/", "type": "Primary Source" }
+    ]
   }
 ]
