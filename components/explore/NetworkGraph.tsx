@@ -111,6 +111,25 @@ interface HighlightState {
 
 const EMPTY_HIGHLIGHT: HighlightState = { nodes: new Set(), linkKeys: new Set() };
 
+// Build a highlight state for a given node
+function buildHighlight(nodeId: string, links: GraphLink[]): HighlightState {
+  const connectedLinks = links.filter(l => {
+    const src = resolveId(l.source);
+    const tgt = resolveId(l.target);
+    return src === nodeId || tgt === nodeId;
+  });
+  const nodes = new Set<string>([nodeId]);
+  const linkKeys = new Set<string>();
+  connectedLinks.forEach(l => {
+    const src = resolveId(l.source);
+    const tgt = resolveId(l.target);
+    nodes.add(src);
+    nodes.add(tgt);
+    linkKeys.add(`${src}-${tgt}`);
+  });
+  return { nodes, linkKeys };
+}
+
 /* ─── Component ──────────────────────────────────────────────── */
 
 // IDs that have a dedicated /figures/[id] profile page
@@ -127,8 +146,15 @@ const NetworkGraph: FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchFocused, setSearchFocused] = useState(false);
   const [clickedNode, setClickedNode] = useState<GraphNode | null>(null);
+  const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [egoNodeId, setEgoNodeId] = useState<string | null>(null);
-  const hoverClearTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [activeTypes, setActiveTypes] = useState<Set<NodeType>>(
+    new Set(Object.keys(TYPE_LABELS) as NodeType[])
+  );
+
+  // Ref so hover handler can check click state without it as a dependency
+  const clickedNodeRef = useRef<GraphNode | null>(null);
+  useEffect(() => { clickedNodeRef.current = clickedNode; }, [clickedNode]);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -141,10 +167,6 @@ const NetworkGraph: FC = () => {
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
-  const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
-  const [activeTypes, setActiveTypes] = useState<Set<NodeType>>(
-    new Set(Object.keys(TYPE_LABELS) as NodeType[])
-  );
 
   // Memoize filtered data — only recompute when activeTypes changes, NOT on every hover re-render.
   // Stable object references prevent ForceGraph2D from reheating the physics simulation.
@@ -203,40 +225,56 @@ const NetworkGraph: FC = () => {
     setTimeout(() => fgRef.current?.zoomToFit(400, 40), 80);
   }, []);
 
+  // Hover: passive highlight only. Does not override an active click selection.
   const handleNodeHover = useCallback((node: object | null) => {
     const gNode = node as GraphNode | null;
-    // Clear any pending debounced hover-clear
-    if (hoverClearTimer.current) {
-      clearTimeout(hoverClearTimer.current);
-      hoverClearTimer.current = null;
-    }
+    setHoveredNode(gNode);
+    // If a node is currently clicked/selected, hover doesn't change the highlight
+    if (clickedNodeRef.current) return;
     if (!gNode) {
-      // Debounce the clear by 200ms so the user can reach the Explore button
-      hoverClearTimer.current = setTimeout(() => {
-        setHoveredNode(null);
-        setHighlight(EMPTY_HIGHLIGHT);
-      }, 200);
+      setHighlight(EMPTY_HIGHLIGHT);
       return;
     }
-    setHoveredNode(gNode);
-    const nodeId = gNode.id;
-    // filteredLinks may have already-resolved objects from a previous render cycle
-    const connectedLinks = filteredLinks.filter(l => {
-      const src = resolveId(l.source);
-      const tgt = resolveId(l.target);
-      return src === nodeId || tgt === nodeId;
-    });
-    const connectedNodeIds = new Set<string>([nodeId]);
-    const keys = new Set<string>();
-    connectedLinks.forEach(l => {
-      const src = resolveId(l.source);
-      const tgt = resolveId(l.target);
-      connectedNodeIds.add(src);
-      connectedNodeIds.add(tgt);
-      keys.add(`${src}-${tgt}`);
-    });
-    setHighlight({ nodes: connectedNodeIds, linkKeys: keys });
+    setHighlight(buildHighlight(gNode.id, filteredLinks as GraphLink[]));
   }, [filteredLinks]);
+
+  // Click: always selects the node and shows the action panel.
+  // Toggle off (deselect) if the same node is clicked again.
+  const handleNodeClick = useCallback((node: object) => {
+    const gNode = node as GraphNode;
+    setClickedNode(prev => {
+      if (prev?.id === gNode.id) {
+        // Deselect - restore hover highlight if still hovering, else clear
+        setHighlight(EMPTY_HIGHLIGHT);
+        return null;
+      }
+      setHighlight(buildHighlight(gNode.id, filteredLinks as GraphLink[]));
+      return gNode;
+    });
+  }, [filteredLinks]);
+
+  // Background click dismisses selection
+  const handleBackgroundClick = useCallback(() => {
+    setClickedNode(null);
+    setHighlight(EMPTY_HIGHLIGHT);
+  }, []);
+
+  // Navigate from the action panel to the node's dedicated page
+  const navigateToClickedNode = useCallback(() => {
+    if (!clickedNode) return;
+    const id = clickedNode.id;
+    if (clickedNode.type === 'person' && profileIds.has(id)) {
+      router.push(`/figures/${id}?ref=explore`);
+    } else if (clickedNode.type === 'document' && DOCUMENT_IDS.has(id)) {
+      router.push(`/documents/${id}?ref=explore`);
+    } else if (clickedNode.type === 'case' && CASE_IDS.has(id)) {
+      router.push(`/cases/${id}?ref=explore`);
+    } else if ((clickedNode.type === 'organization' || clickedNode.type === 'project') && PROGRAM_IDS.has(id)) {
+      router.push(`/programs/${id}?ref=explore`);
+    } else if (DEEP_LINK_MAP[id]) {
+      router.push(`${DEEP_LINK_MAP[id]}?ref=explore`);
+    }
+  }, [clickedNode, router]);
 
   const toggleType = (type: NodeType) => {
     setActiveTypes(prev => {
@@ -256,23 +294,11 @@ const NetworkGraph: FC = () => {
     return filteredNodes.filter(n => n.name.toLowerCase().includes(q)).slice(0, 6);
   }, [searchQuery, filteredNodes]);
 
+  // Search result focus: selects the node and zooms to it
   const focusNode = useCallback((node: GraphNode) => {
-    const connectedLinks = filteredLinks.filter(l => {
-      const src = resolveId(l.source);
-      const tgt = resolveId(l.target);
-      return src === node.id || tgt === node.id;
-    });
-    const connectedNodeIds = new Set<string>([node.id]);
-    const keys = new Set<string>();
-    connectedLinks.forEach(l => {
-      const src = resolveId(l.source);
-      const tgt = resolveId(l.target);
-      connectedNodeIds.add(src);
-      connectedNodeIds.add(tgt);
-      keys.add(`${src}-${tgt}`);
-    });
-    setHighlight({ nodes: connectedNodeIds, linkKeys: keys });
-    setHoveredNode(node);
+    setHighlight(buildHighlight(node.id, filteredLinks as GraphLink[]));
+    setClickedNode(node);
+    setHoveredNode(null);
     if (fgRef.current && node.x != null && node.y != null) {
       fgRef.current.centerAt(node.x, node.y, 500);
       fgRef.current.zoom(3, 500);
@@ -281,34 +307,26 @@ const NetworkGraph: FC = () => {
     setSearchFocused(false);
   }, [filteredLinks]);
 
-  const handleNodeClick = useCallback((node: object) => {
-    const gNode = node as GraphNode;
-    if (gNode.type === 'person' && profileIds.has(gNode.id)) {
-      router.push(`/figures/${gNode.id}?ref=explore`);
-    } else if (gNode.type === 'document' && DOCUMENT_IDS.has(gNode.id)) {
-      router.push(`/documents/${gNode.id}?ref=explore`);
-    } else if (gNode.type === 'case' && CASE_IDS.has(gNode.id)) {
-      router.push(`/cases/${gNode.id}?ref=explore`);
-    } else if ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(gNode.id)) {
-      router.push(`/programs/${gNode.id}?ref=explore`);
-    } else if (DEEP_LINK_MAP[gNode.id]) {
-      router.push(`${DEEP_LINK_MAP[gNode.id]}?ref=explore`);
-    } else {
-      // Non-navigable node: show info panel
-      setClickedNode(prev => prev?.id === gNode.id ? null : gNode);
-    }
-  }, [router]);
-
   const nodeCanvasObject = useCallback(
     (node: object, ctx: CanvasRenderingContext2D, globalScale: number) => {
       const gNode = node as GraphNode;
       const id = gNode.id;
       const isHighlighted = highlight.nodes.size === 0 || highlight.nodes.has(id);
+      const isSelected = clickedNode?.id === id;
       const baseRadius = Math.sqrt((gNode.val ?? 1) * 6);
       const color = NODE_COLORS[gNode.type] ?? '#9ca3af';
       const x = gNode.x;
       const y = gNode.y;
       if (x == null || y == null) return; // node not yet positioned by simulation
+
+      // Selection ring: outermost, distinct from navigable ring
+      if (isSelected) {
+        ctx.beginPath();
+        ctx.arc(x, y, baseRadius + 6 / globalScale, 0, 2 * Math.PI);
+        ctx.strokeStyle = isDark ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.35)';
+        ctx.lineWidth = 2 / globalScale;
+        ctx.stroke();
+      }
 
       // Navigable ring: draw before fill so it sits behind the main circle
       const isNavigable =
@@ -345,7 +363,7 @@ const NetworkGraph: FC = () => {
         ctx.fillText(gNode.name, x, y + baseRadius + 2 / globalScale);
       }
     },
-    [highlight, isDark]
+    [highlight, isDark, clickedNode]
   );
 
   const linkColor = useCallback(
@@ -366,26 +384,33 @@ const NetworkGraph: FC = () => {
     [highlight]
   );
 
-  // Whether the currently hovered node navigates somewhere on click
-  const isHoveredNavigable = hoveredNode != null && (
-    (hoveredNode.type === 'person' && profileIds.has(hoveredNode.id)) ||
-    (hoveredNode.type === 'document' && DOCUMENT_IDS.has(hoveredNode.id)) ||
-    (hoveredNode.type === 'case' && CASE_IDS.has(hoveredNode.id)) ||
-    ((hoveredNode.type === 'organization' || hoveredNode.type === 'project') && PROGRAM_IDS.has(hoveredNode.id)) ||
-    (DEEP_LINK_MAP[hoveredNode.id] != null)
+  // Derivations for the action panel
+  const isClickedNavigable = clickedNode != null && (
+    (clickedNode.type === 'person' && profileIds.has(clickedNode.id)) ||
+    (clickedNode.type === 'document' && DOCUMENT_IDS.has(clickedNode.id)) ||
+    (clickedNode.type === 'case' && CASE_IDS.has(clickedNode.id)) ||
+    ((clickedNode.type === 'organization' || clickedNode.type === 'project') && PROGRAM_IDS.has(clickedNode.id)) ||
+    DEEP_LINK_MAP[clickedNode.id] != null
   );
 
-  // Count connections for the hover info bar (resolve IDs properly)
-  const hoveredConnectionCount = hoveredNode
-    ? filteredLinks.filter(l => {
-        const src = resolveId(l.source);
-        const tgt = resolveId(l.target);
-        return src === hoveredNode.id || tgt === hoveredNode.id;
-      }).length
-    : 0;
+  const clickedConnectionCount = useMemo(() => {
+    if (!clickedNode) return 0;
+    return filteredLinks.filter(l => {
+      const src = resolveId(l.source);
+      const tgt = resolveId(l.target);
+      return src === clickedNode.id || tgt === clickedNode.id;
+    }).length;
+  }, [clickedNode, filteredLinks]);
 
-  // Cleanup hover timer on unmount
-  useEffect(() => () => { if (hoverClearTimer.current) clearTimeout(hoverClearTimer.current); }, []);
+  // Hover info (passive, desktop only)
+  const hoveredConnectionCount = useMemo(() => {
+    if (!hoveredNode) return 0;
+    return filteredLinks.filter(l => {
+      const src = resolveId(l.source);
+      const tgt = resolveId(l.target);
+      return src === hoveredNode.id || tgt === hoveredNode.id;
+    }).length;
+  }, [hoveredNode, filteredLinks]);
 
   return (
     <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
@@ -395,7 +420,7 @@ const NetworkGraph: FC = () => {
           <h3 className="font-bold text-gray-900 dark:text-gray-100 text-lg">Relationship Network</h3>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             Connections between insiders, facilities, entities, organizations, projects, and concepts.
-            Search or hover a node to highlight its connections.
+            Tap any node to select it and reveal actions.
           </p>
         </div>
         <button
@@ -480,7 +505,7 @@ const NetworkGraph: FC = () => {
       </div>
 
       {/* Graph canvas */}
-      <div ref={containerRef} className="w-full" style={{ height: 520, cursor: isHoveredNavigable || hoveredNode != null ? 'pointer' : 'default' }}>
+      <div ref={containerRef} className="w-full" style={{ height: 520, cursor: hoveredNode != null ? 'pointer' : 'default' }}>
         <ForceGraph2D
           ref={fgRef}
           graphData={activeData as { nodes: object[]; links: object[] }}
@@ -493,6 +518,7 @@ const NetworkGraph: FC = () => {
           linkWidth={linkWidth}
           onNodeHover={handleNodeHover}
           onNodeClick={handleNodeClick}
+          onBackgroundClick={handleBackgroundClick}
           linkDirectionalParticles={2}
           linkDirectionalParticleSpeed={0.004}
           linkDirectionalParticleWidth={particleWidth}
@@ -504,74 +530,102 @@ const NetworkGraph: FC = () => {
         />
       </div>
 
-      {/* Hover info */}
-      <div className="px-6 py-3 border-t border-gray-100 dark:border-gray-800 min-h-[48px] flex items-center justify-between gap-3">
-        {hoveredNode ? (
-          <>
-            <div className="flex items-center gap-2 flex-wrap min-w-0">
-              <span
-                className="w-3 h-3 rounded-full shrink-0"
-                style={{ backgroundColor: NODE_COLORS[hoveredNode.type] }}
-              />
-              <span className="text-sm font-semibold text-gray-800 dark:text-gray-200 truncate">{hoveredNode.name}</span>
-              <span className="text-xs text-gray-400 dark:text-gray-500 capitalize shrink-0">{TYPE_LABELS[hoveredNode.type]}</span>
-              <span className="text-xs text-gray-300 dark:text-gray-600 shrink-0">·</span>
-              <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">{hoveredConnectionCount} connections</span>
-              {isHoveredNavigable ? (
-                <span className="text-xs text-primary font-medium ml-1 shrink-0">Click to view →</span>
-              ) : (
-                <span className="text-xs text-gray-400 dark:text-gray-500 ml-1 shrink-0">Click for details</span>
-              )}
+      {/* Bottom bar: action panel (selected node) or passive hover info or default hint */}
+      <div className="px-6 py-3 border-t border-gray-100 dark:border-gray-800">
+        {clickedNode ? (
+          /* Action panel */
+          <div>
+            <div className="flex items-start justify-between gap-3 mb-3">
+              <div className="flex items-center gap-2 flex-wrap min-w-0">
+                <span
+                  className="w-3 h-3 rounded-full shrink-0"
+                  style={{ backgroundColor: NODE_COLORS[clickedNode.type] }}
+                />
+                <span className="text-sm font-semibold text-gray-800 dark:text-gray-200 truncate">
+                  {clickedNode.name}
+                </span>
+                <span className="text-xs px-1.5 py-0.5 rounded bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 capitalize shrink-0">
+                  {TYPE_LABELS[clickedNode.type]}
+                </span>
+                <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">
+                  {clickedConnectionCount} connection{clickedConnectionCount !== 1 ? 's' : ''}
+                </span>
+              </div>
+              <button
+                onClick={() => { setClickedNode(null); setHighlight(EMPTY_HIGHLIGHT); }}
+                className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-xs shrink-0 leading-none pt-0.5"
+              >
+                ✕
+              </button>
             </div>
-            <button
-              onMouseDown={() => enterEgoMode(hoveredNode)}
-              className="shrink-0 text-xs px-2.5 py-1 rounded-full border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
-            >
-              Explore
-            </button>
-          </>
+
+            {/* Action buttons */}
+            <div className="flex items-center gap-2 mb-3">
+              {isClickedNavigable && (
+                <button
+                  onClick={navigateToClickedNode}
+                  className="text-xs px-3 py-1.5 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors font-medium"
+                >
+                  View Profile →
+                </button>
+              )}
+              <button
+                onClick={() => enterEgoMode(clickedNode)}
+                className="text-xs px-3 py-1.5 rounded-lg border border-gray-200 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              >
+                Explore connections
+              </button>
+            </div>
+
+            {/* Connection list */}
+            {clickedConnectionCount > 0 && (
+              <div className="space-y-1 max-h-28 overflow-y-auto">
+                {filteredLinks
+                  .filter(l => resolveId(l.source) === clickedNode.id || resolveId(l.target) === clickedNode.id)
+                  .map((l, i) => {
+                    const src = resolveId(l.source);
+                    const tgt = resolveId(l.target);
+                    const isSource = src === clickedNode.id;
+                    const otherId = isSource ? tgt : src;
+                    const otherNode = filteredNodes.find(n => n.id === otherId);
+                    if (!otherNode) return null;
+                    return (
+                      <div key={i} className="flex items-center gap-2 text-xs">
+                        <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[otherNode.type] }} />
+                        <span className="text-gray-500 dark:text-gray-400 italic shrink-0">{(l as GraphLink).label}</span>
+                        <span className="text-gray-700 dark:text-gray-300">{otherNode.name}</span>
+                      </div>
+                    );
+                  })}
+              </div>
+            )}
+          </div>
+        ) : hoveredNode ? (
+          /* Passive hover info - desktop only, no action buttons */
+          <div className="flex items-center gap-2 flex-wrap min-h-[28px]">
+            <span
+              className="w-3 h-3 rounded-full shrink-0"
+              style={{ backgroundColor: NODE_COLORS[hoveredNode.type] }}
+            />
+            <span className="text-sm font-semibold text-gray-800 dark:text-gray-200 truncate">
+              {hoveredNode.name}
+            </span>
+            <span className="text-xs text-gray-400 dark:text-gray-500 capitalize shrink-0">
+              {TYPE_LABELS[hoveredNode.type]}
+            </span>
+            <span className="text-xs text-gray-300 dark:text-gray-600 shrink-0">·</span>
+            <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">
+              {hoveredConnectionCount} connection{hoveredConnectionCount !== 1 ? 's' : ''}
+            </span>
+            <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">- click to select</span>
+          </div>
         ) : (
-          <p className="text-xs text-gray-400 dark:text-gray-500">Hover a node to inspect connections · Click any node for details or to navigate</p>
+          /* Default hint */
+          <p className="text-xs text-gray-400 dark:text-gray-500 min-h-[28px] flex items-center">
+            Tap or click any node to select it and view its connections
+          </p>
         )}
       </div>
-
-      {/* Clicked node info panel */}
-      {clickedNode && (
-        <div className="mx-6 mb-4 border border-gray-200 dark:border-gray-700 rounded-lg p-4 bg-gray-50 dark:bg-gray-900">
-          <div className="flex items-start justify-between gap-2 mb-3">
-            <div className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[clickedNode.type] }} />
-              <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100">{clickedNode.name}</h4>
-              <span className="text-xs px-1.5 py-0.5 rounded bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 capitalize">{TYPE_LABELS[clickedNode.type]}</span>
-            </div>
-            <button
-              onClick={() => setClickedNode(null)}
-              className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-xs shrink-0"
-            >
-              ✕
-            </button>
-          </div>
-          <div className="space-y-1.5">
-            {filteredLinks
-              .filter(l => resolveId(l.source) === clickedNode.id || resolveId(l.target) === clickedNode.id)
-              .map((l, i) => {
-                const src = resolveId(l.source);
-                const tgt = resolveId(l.target);
-                const isSource = src === clickedNode.id;
-                const otherId = isSource ? tgt : src;
-                const otherNode = filteredNodes.find(n => n.id === otherId);
-                if (!otherNode) return null;
-                return (
-                  <div key={i} className="flex items-center gap-2 text-xs">
-                    <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[otherNode.type] }} />
-                    <span className="text-gray-500 dark:text-gray-400 italic shrink-0">{(l as GraphLink).label}</span>
-                    <span className="text-gray-700 dark:text-gray-300">{otherNode.name}</span>
-                  </div>
-                );
-              })}
-          </div>
-        </div>
-      )}
     </div>
   );
 };
