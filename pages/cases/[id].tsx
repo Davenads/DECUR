@@ -1,4 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import SeoHead from '../../components/SeoHead';
 import { CaseEntry } from '../../types/data';
@@ -11,7 +12,14 @@ interface Props {
 
 const CasePage: NextPage<Props> = ({ caseEntry }) => {
   const router = useRouter();
-  const onBack = () => router.push('/data?category=cases');
+  const [fromExplore, setFromExplore] = useState(false);
+
+  useEffect(() => {
+    setFromExplore(new URLSearchParams(window.location.search).get('ref') === 'explore');
+  }, []);
+
+  const onBack = () => router.push(fromExplore ? '/explore#relationship-network' : '/data?category=cases');
+  const backLabel = fromExplore ? 'Relationship Network' : 'Cases';
 
   return (
     <>
@@ -23,7 +31,7 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
         type="article"
       />
       <div className="container mx-auto px-4 py-4">
-        <CaseDetail c={caseEntry} onBack={onBack} />
+        <CaseDetail c={caseEntry} onBack={onBack} backLabel={backLabel} />
       </div>
     </>
   );

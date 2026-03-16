@@ -187,9 +187,10 @@ const SourcesTab: FC<{ p: ProgramEntry }> = ({ p }) => (
 export interface ProgramDetailProps {
   p: ProgramEntry;
   onBack: () => void;
+  backLabel?: string;
 }
 
-const ProgramDetail: FC<ProgramDetailProps> = ({ p, onBack }) => {
+const ProgramDetail: FC<ProgramDetailProps> = ({ p, onBack, backLabel = 'Programs' }) => {
   const [activeTab, setActiveTab] = useState<ProgramTabId>('overview');
   const status = STATUS_CONFIG[p.status];
 
@@ -209,7 +210,7 @@ const ProgramDetail: FC<ProgramDetailProps> = ({ p, onBack }) => {
           onClick={onBack}
           className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mt-1 shrink-0"
         >
-          &larr; Back
+          ← {backLabel}
         </button>
         <div>
           <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{p.name}</h2>

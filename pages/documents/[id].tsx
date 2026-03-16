@@ -1,4 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import SeoHead from '../../components/SeoHead';
 import { DocumentEntry } from '../../types/data';
@@ -11,7 +12,14 @@ interface Props {
 
 const DocumentPage: NextPage<Props> = ({ document }) => {
   const router = useRouter();
-  const onBack = () => router.push('/data?category=documents');
+  const [fromExplore, setFromExplore] = useState(false);
+
+  useEffect(() => {
+    setFromExplore(new URLSearchParams(window.location.search).get('ref') === 'explore');
+  }, []);
+
+  const onBack = () => router.push(fromExplore ? '/explore#relationship-network' : '/data?category=documents');
+  const backLabel = fromExplore ? 'Relationship Network' : 'Documents';
 
   return (
     <>
@@ -23,7 +31,7 @@ const DocumentPage: NextPage<Props> = ({ document }) => {
         type="article"
       />
       <div className="container mx-auto px-4 py-4">
-        <DocumentDetail d={document} onBack={onBack} />
+        <DocumentDetail d={document} onBack={onBack} backLabel={backLabel} />
       </div>
     </>
   );

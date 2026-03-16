@@ -434,9 +434,10 @@ const SourcesTab: FC<{ c: CaseEntry }> = ({ c }) => {
 export interface CaseDetailProps {
   c: CaseEntry;
   onBack: () => void;
+  backLabel?: string;
 }
 
-const CaseDetail: FC<CaseDetailProps> = ({ c, onBack }) => {
+const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases' }) => {
   const [activeTab, setActiveTab] = useState<DetailTabId>('overview');
   const tier = tierConfig[c.evidence_tier];
 
@@ -470,7 +471,7 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack }) => {
           onClick={onBack}
           className="text-sm text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mt-1 shrink-0"
         >
-          ← Back
+          ← {backLabel}
         </button>
         <div>
           <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100">{c.name}</h2>

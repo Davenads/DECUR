@@ -179,9 +179,10 @@ const LimitationsTab: FC<{ d: DocumentEntry }> = ({ d }) => (
 export interface DocumentDetailProps {
   d: DocumentEntry;
   onBack: () => void;
+  backLabel?: string;
 }
 
-const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack }) => {
+const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Documents' }) => {
   const [activeTab, setActiveTab] = useState<DetailTabId>('overview');
   const auth = authConfig[d.authenticity_status];
 
@@ -202,7 +203,7 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack }) => {
           onClick={onBack}
           className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mt-1 shrink-0"
         >
-          ← Back
+          ← {backLabel}
         </button>
         <div>
           <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h2>
