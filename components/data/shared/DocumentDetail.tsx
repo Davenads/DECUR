@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import Link from 'next/link';
 import { DocumentEntry } from '../../../types/data';
 import ProfileTabBar from './ProfileTabBar';
 
@@ -151,7 +152,7 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
               <span className="text-xs font-bold text-primary">{person.name.charAt(0)}</span>
             </div>
             <div>
-              <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">{person.name}</p>
+              <Link href={`/figures/${id}`} className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-primary transition-colors">{person.name}</Link>
               <p className="text-xs text-primary leading-snug">{person.role}</p>
               {person.note && <p className="text-xs text-gray-400 mt-1 leading-snug">{person.note}</p>}
             </div>
