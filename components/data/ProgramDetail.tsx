@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import Link from 'next/link';
 import { ProgramEntry } from '../../types/data';
 import ProfileTabBar from './shared/ProfileTabBar';
 import { ps } from './shared/profileStyles';
@@ -121,9 +122,13 @@ const ConnectionsTab: FC<{ p: ProgramEntry }> = ({ p }) => (
         <h3 className={`${ps.h3} mb-3`}>Connected Figures</h3>
         <div className="flex flex-wrap gap-2">
           {p.connected_figures.map((figId, i) => (
-            <span key={i} className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
+            <Link
+              key={i}
+              href={`/figures/${figId}`}
+              className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors"
+            >
               {figId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
-            </span>
+            </Link>
           ))}
         </div>
       </div>
@@ -134,10 +139,10 @@ const ConnectionsTab: FC<{ p: ProgramEntry }> = ({ p }) => (
         <h3 className={`${ps.h3} mb-3`}>Connected Documents</h3>
         <div className="space-y-2">
           {p.connected_documents.map((docId, i) => (
-            <div key={i} className={`${ps.borderCard} flex items-center gap-2`}>
-              <span className="text-xs text-gray-400 font-mono">DOC</span>
-              <span className={ps.body}>{docId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</span>
-            </div>
+            <Link key={i} href={`/documents/${docId}`} className={`${ps.borderCard} flex items-center gap-2 hover:border-primary/50 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all group`}>
+              <span className="text-xs text-gray-400 font-mono group-hover:text-primary transition-colors">DOC</span>
+              <span className={`${ps.body} group-hover:text-primary transition-colors`}>{docId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</span>
+            </Link>
           ))}
         </div>
       </div>
