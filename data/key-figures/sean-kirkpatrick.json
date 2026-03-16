@@ -1,0 +1,86 @@
+{
+  "profile": {
+    "id": "sean-kirkpatrick",
+    "name": "Dr. Sean M. Kirkpatrick",
+    "aliases": ["Sean Kirkpatrick"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Director, All-domain Anomaly Resolution Office (AARO), November 2022 - December 2023",
+      "Senior Research Physicist",
+      "Defense Intelligence Senior Leader (DISL)"
+    ],
+    "service_period": "c. 1990s-2023 (government service)",
+    "organizations": ["All-domain Anomaly Resolution Office (AARO)", "Defense Intelligence Agency", "U.S. Army Research Laboratory"],
+    "clearance": "TS/SCI (former)",
+    "summary": "PhD physicist who served as the first official director of AARO from November 2022 until his resignation in December 2023. Kirkpatrick testified before the Senate Armed Services Subcommittee on Emerging Threats in April 2023, providing the first public congressional briefing by an AARO director. He co-authored a paper with Harvard astrophysicist Avi Loeb proposing hypotheses for UAP signatures. Resigned in December 2023, subsequently stating that congressional interference and lack of institutional support undermined AARO's mission. His departure and critical public statements marked the beginning of significant public controversy over AARO's effectiveness.",
+    "education": [
+      "Ph.D., Physics",
+      "Extensive background in sensors, signature analysis, and technical intelligence"
+    ],
+    "early_career": [
+      "Career defense scientist and intelligence analyst specializing in sensors and signature physics",
+      "Served in the Defense Intelligence Agency in senior scientific roles",
+      "Served as Chief Scientist at the Army Futures Command and in related technical intelligence roles prior to AARO appointment"
+    ],
+    "key_events": [
+      { "year": "Nov 2022", "event": "Confirmed as the first official Director of AARO (All-domain Anomaly Resolution Office), the DoD's primary UAP investigation body created by the NDAA FY2023." },
+      { "year": "Mar 2023", "event": "Co-authors a paper with Harvard astrophysicist Avi Loeb titled 'Physical Constraints on Unidentified Aerial Phenomena,' exploring potential natural and technological explanations for UAP signatures." },
+      { "year": "Apr 2023", "event": "Testifies before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities - the first congressional testimony by an AARO director, describing AARO's findings and methods." },
+      { "year": "Jul 2023", "event": "During the same week as Grusch's landmark House Oversight hearing, Kirkpatrick publicly contradicts Grusch's claims, stating AARO has found no verifiable evidence of non-human intelligence or UAP crash retrievals." },
+      { "year": "Mar 2024", "event": "Oversees release of the AARO Historical Record Report Volume 1, which directly contradicts Grusch's congressional testimony and finds no evidence of government UAP crash retrieval programs." },
+      { "year": "Dec 2023", "event": "Resigns as AARO director, citing lack of institutional support and congressional interference with AARO's mission." },
+      { "year": "2024", "event": "Publishes public commentary critical of congressional UAP advocacy and the broader disclosure movement, describing political pressure as undermining rigorous scientific investigation." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "avi-loeb",
+      "name": "Dr. Avi Loeb",
+      "role": "Harvard astrophysicist and Galileo Project director",
+      "relationship": "Co-authored a 2023 paper with Kirkpatrick on physical constraints on UAP signatures; represents the scientific establishment engagement with UAP investigation that Kirkpatrick sought to advance."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NRO whistleblower",
+      "relationship": "Kirkpatrick publicly contradicted Grusch's congressional testimony, creating a central credibility conflict between AARO's official findings and Grusch's sworn claims about crash retrieval programs."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Mar 2023",
+      "type": "article",
+      "title": "Physical Constraints on Unidentified Aerial Phenomena",
+      "outlet": "arXiv preprint",
+      "notes": "Co-authored with Harvard's Avi Loeb; proposed that UAP could be explained by various physical hypotheses including solar sails and interstellar objects. The only peer-reviewed paper co-authored by a sitting AARO director."
+    },
+    {
+      "date": "Apr 2023",
+      "type": "congressional-testimony",
+      "title": "AARO Status Briefing to Senate Armed Services Subcommittee",
+      "outlet": "U.S. Senate Armed Services Subcommittee on Emerging Threats",
+      "notes": "First public congressional testimony by an AARO director. Described AARO's organizational structure, case backlog, and investigation methodology. Did not confirm any extraordinary UAP findings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "AARO Official Website",
+      "url": "https://www.aaro.mil",
+      "type": "Website",
+      "notes": "Official DoD AARO website containing reports, historical record, and contact information for the organization Kirkpatrick directed."
+    },
+    {
+      "title": "Kirkpatrick / Loeb - Physical Constraints on UAP (arXiv)",
+      "url": "https://arxiv.org/abs/2209.15215",
+      "type": "Article",
+      "notes": "The 2022 preprint co-authored by Kirkpatrick and Avi Loeb proposing physical signature hypotheses for UAP."
+    },
+    {
+      "title": "Senate Armed Services Subcommittee - April 2023 Hearing",
+      "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-mission-of-the-all-domain-anomaly-resolution-office",
+      "type": "Congressional Record",
+      "notes": "Official record of Kirkpatrick's April 2023 Senate testimony."
+    }
+  ]
+}

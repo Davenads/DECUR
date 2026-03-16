@@ -47,6 +47,11 @@ import haraldMalmgrenData from './harald-malmgren.json';
 import stantonFriedmanData from './stanton-friedman.json';
 import aviLoebData from './avi-loeb.json';
 import donaldKeyhoeData from './donald-keyhoe.json';
+import philipCorsoData from './philip-corso.json';
+import stevenGreerData from './steven-greer.json';
+import jayStrattonData from './jay-stratton.json';
+import robertHastingsData from './robert-hastings.json';
+import seanKirkpatrickData from './sean-kirkpatrick.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -85,4 +90,9 @@ export const insiderRegistry: Record<string, any> = {
   'stanton-friedman': stantonFriedmanData,
   'avi-loeb': aviLoebData,
   'donald-keyhoe': donaldKeyhoeData,
+  'philip-corso': philipCorsoData,
+  'steven-greer': stevenGreerData,
+  'jay-stratton': jayStrattonData,
+  'robert-hastings': robertHastingsData,
+  'sean-kirkpatrick': seanKirkpatrickData,
 };

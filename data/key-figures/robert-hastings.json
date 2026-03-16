@@ -1,0 +1,90 @@
+{
+  "profile": {
+    "id": "robert-hastings",
+    "name": "Robert L. Hastings",
+    "aliases": ["Robert Hastings"],
+    "born": "1950",
+    "died": null,
+    "roles": [
+      "Researcher and Author - UFOs and Nukes (2008)",
+      "Organizer, 2010 National Press Club Nuclear Weapons UAP Event"
+    ],
+    "service_period": "1973-present (UAP research)",
+    "organizations": ["Independent researcher"],
+    "clearance": null,
+    "summary": "Civilian researcher who has spent over four decades documenting UAP incidents at nuclear weapons facilities, compiling testimony from over 160 U.S. military veterans. His 2008 book 'UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites' is the most comprehensive compilation of military testimony connecting UAP to nuclear weapons installations. On September 27, 2010, he organized a National Press Club event at which seven retired U.S. Air Force officers described firsthand UAP encounters at nuclear missile sites, including incidents in which ICBMs were temporarily taken offline.",
+    "education": [
+      "Attended University of Montana"
+    ],
+    "early_career": [
+      "Grew up on Malmstrom Air Force Base where his father served; witnessed a UAP incident involving base personnel in 1967 at age 16",
+      "Began collecting military veteran testimony about nuclear weapons site UAP incidents in 1973",
+      "Lectured at over 500 U.S. college campuses on the nuclear UAP connection over four decades"
+    ],
+    "key_events": [
+      { "year": "1967", "event": "As a teenager living on Malmstrom AFB, witnesses an incident involving base security personnel and an unidentified aerial object, sparking his lifelong research focus." },
+      { "year": "1973", "event": "Begins systematic collection of testimony from U.S. military veterans about UAP incidents at nuclear weapons facilities." },
+      { "year": "1981", "event": "Begins college campus lecture tour on UAP and nuclear weapons, eventually speaking at over 500 universities over four decades." },
+      { "year": "2008", "event": "Publishes 'UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites,' compiling decades of military veteran testimony in a single comprehensive volume." },
+      { "year": "Sep 2010", "event": "Organizes the September 27, 2010 National Press Club event featuring seven retired USAF officers - including Robert Salas - describing UAP encounters at nuclear missile bases, including ICBM shutdowns. Generates significant international media coverage." },
+      { "year": "2015", "event": "Releases documentary 'UFOs and Nukes: The Secret Link Revealed,' presenting video testimony from military veterans with direct nuclear weapons site UAP experience." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "donald-keyhoe",
+      "name": "Donald Keyhoe",
+      "role": "NICAP director",
+      "relationship": "Keyhoe's foundational work at NICAP documenting military UAP cases provided historical precedent and methodological framework that Hastings built upon in his nuclear weapons focus research."
+    },
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton Friedman",
+      "role": "Nuclear physicist and UAP researcher",
+      "relationship": "Both focused on government and military UAP documentation; Friedman's document-analysis approach complemented Hastings's witness-testimony methodology, and the two collaborated at times on research conferences."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2008",
+      "type": "written",
+      "title": "UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites",
+      "outlet": "AuthorHouse",
+      "notes": "Primary written work compiling testimony from over 160 U.S. military veterans about UAP incidents at nuclear weapons facilities including missile silos, bomber bases, and storage sites. Documents incidents from the 1940s through the 2000s."
+    },
+    {
+      "date": "Sep 2010",
+      "type": "speech",
+      "title": "UFOs and Nukes - National Press Club Press Conference",
+      "outlet": "National Press Club, Washington D.C.",
+      "notes": "Press conference featuring seven retired USAF officers including Capt. Robert Salas, describing UAP encounters at nuclear missile bases. Salas described the March 1967 Malmstrom AFB incident in which 10 Minuteman ICBMs went offline during a UAP sighting."
+    },
+    {
+      "date": "2015",
+      "type": "film",
+      "title": "UFOs and Nukes: The Secret Link Revealed",
+      "outlet": "Independent",
+      "notes": "Documentary film presenting video testimony from multiple military veterans about nuclear weapons site UAP incidents."
+    }
+  ],
+  "sources": [
+    {
+      "title": "UFOs and Nukes - Official Research Website",
+      "url": "https://www.ufos-nukes.com",
+      "type": "Website",
+      "notes": "Hastings's official research site with documentation, witness testimonies, and historical incident summaries."
+    },
+    {
+      "title": "2010 National Press Club Event - C-SPAN",
+      "url": "https://www.c-span.org/video/?295774-1/ufo-sightings-nuclear-sites",
+      "type": "Website",
+      "notes": "C-SPAN recording of the September 27, 2010 National Press Club press conference featuring seven USAF veterans."
+    },
+    {
+      "title": "UFOs and Nukes (book) - Amazon",
+      "url": "https://www.amazon.com/UFOs-Nukes-Extraordinary-Encounters-Nuclear/dp/143278764X",
+      "type": "Book",
+      "notes": "Primary source - Hastings's comprehensive compilation of military nuclear weapons site UAP testimony."
+    }
+  ]
+}

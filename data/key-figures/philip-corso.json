@@ -1,0 +1,96 @@
+{
+  "profile": {
+    "id": "philip-corso",
+    "name": "Col. Philip J. Corso",
+    "aliases": ["Philip Corso", "Col. Corso"],
+    "born": "May 22, 1915 - Valley Forge, Pennsylvania",
+    "died": "July 16, 1998",
+    "roles": [
+      "U.S. Army Colonel, Pentagon R&D Division",
+      "Chief, Foreign Technology Division, Army Research and Development",
+      "National Security Council Staff Member (Eisenhower administration)",
+      "Author - The Day After Roswell (1997)"
+    ],
+    "service_period": "1942-1963",
+    "organizations": ["U.S. Army", "National Security Council", "Pentagon Foreign Technology Division"],
+    "clearance": "TS (former)",
+    "summary": "Retired U.S. Army Colonel and veteran of both World War II and Korea who served on Eisenhower's National Security Council before being assigned to the Pentagon's Army Research and Development division under Lt. General Arthur Trudeau. In his 1997 memoir 'The Day After Roswell,' Corso claimed he managed a program to seed Roswell crash debris to private defense contractors as 'foreign technology,' resulting in development of fiber optics, integrated circuits, night vision, and Kevlar. His account remains the most detailed military insider claim about systematic Roswell artifact reverse engineering ever published.",
+    "education": [
+      "U.S. Army Command and General Staff College",
+      "Various Army military education programs"
+    ],
+    "early_career": [
+      "Commissioned Army officer, served in World War II in North Africa and Italy",
+      "Served in Korea during Korean War, assigned to intelligence roles",
+      "Assigned to National Security Council staff under President Eisenhower, 1953-1957",
+      "Oversaw POW camps in Italy post-WWII; reportedly witnessed a live alien entity being transported through Fort Riley, Kansas in 1947"
+    ],
+    "key_events": [
+      { "year": "1947", "event": "Claims to have observed a living alien entity in a crate at Fort Riley, Kansas during transport from Roswell crash site." },
+      { "year": "1953", "event": "Assigned to the National Security Council staff under President Eisenhower; gains access to sensitive UAP-related files." },
+      { "year": "1961", "event": "Assigned to Army R&D under Lt. General Arthur Trudeau as Chief of the Foreign Technology Division at the Pentagon." },
+      { "year": "1961", "event": "Claims to have been given a filing cabinet containing Roswell crash debris and directed to use it to seed technology to private defense contractors." },
+      { "year": "1963", "event": "Retires from Army after 21 years of service with rank of Lieutenant Colonel (later promoted to Colonel, ret.)." },
+      { "year": "1997", "event": "Publishes 'The Day After Roswell' with co-author William J. Birnes, detailing his claimed role in reverse engineering Roswell artifacts." },
+      { "year": "1997", "event": "Testifies before a Senate committee panel in support of the book's claims; one of his last major public appearances." },
+      { "year": "1998", "event": "Dies of heart failure on July 16, 1998, in Fort Myers, Florida, at age 83." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton Friedman",
+      "role": "Nuclear physicist and Roswell researcher",
+      "relationship": "Friedman was a leading early Roswell researcher whose documentation of the case provided historical context for evaluating Corso's claims, though Friedman held mixed views on Corso's specific accounts."
+    },
+    {
+      "id": "j-allen-hynek",
+      "name": "J. Allen Hynek",
+      "role": "Air Force scientific consultant",
+      "relationship": "Both served in overlapping government roles during the 1950s-60s; Hynek's work on Project Blue Book ran concurrent with Corso's Pentagon tenure."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1997",
+      "type": "written",
+      "title": "The Day After Roswell",
+      "outlet": "Pocket Books / Simon & Schuster",
+      "notes": "Co-authored with William J. Birnes. Primary disclosure account claiming Corso managed seeding of Roswell crash debris to private contractors including Bell Labs, IBM, and various defense firms, allegedly producing breakthrough technologies."
+    },
+    {
+      "date": "Jun 1997",
+      "type": "congressional-testimony",
+      "title": "Senate Commerce Committee Appearance",
+      "outlet": "U.S. Senate",
+      "notes": "Appeared before a Senate panel to assert the veracity of his book's claims; one of the few instances of a named military officer making Roswell reverse engineering claims before Congress."
+    },
+    {
+      "date": "1997",
+      "type": "television",
+      "title": "The Day After Roswell - Promotional Interviews",
+      "outlet": "Multiple TV and radio outlets",
+      "notes": "Conducted multiple media interviews promoting the book, including appearances on major cable news networks, consistently maintaining the core reverse engineering narrative."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Day After Roswell (book)",
+      "url": "https://www.simonandschuster.com/books/The-Day-After-Roswell/Philip-J-Corso/9780671009830",
+      "type": "Book",
+      "notes": "Primary source - Corso's memoir co-authored with William J. Birnes (Pocket Books, 1997). Bestseller that remained on the New York Times list for weeks."
+    },
+    {
+      "title": "Philip Corso - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Philip_J._Corso",
+      "type": "Website",
+      "notes": "Biographical overview with citations to military records and critical assessments of his claims."
+    },
+    {
+      "title": "NICAP - Corso Assessment",
+      "url": "https://www.nicap.org/corso.htm",
+      "type": "Website",
+      "notes": "NICAP's documentation and critical analysis of Corso's claims, cross-referencing with known historical records."
+    }
+  ]
+}

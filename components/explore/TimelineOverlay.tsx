@@ -78,6 +78,11 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'stanton-friedman': { label: 'Stanton Friedman',  color: '#0ea5e9' },
   'avi-loeb':         { label: 'Avi Loeb',           color: '#a78bfa' },
   'donald-keyhoe':    { label: 'Donald Keyhoe',      color: '#fb7185' },
+  'philip-corso':     { label: 'Philip Corso',       color: '#84cc16' },
+  'steven-greer':     { label: 'Steven Greer',       color: '#22c55e' },
+  'jay-stratton':     { label: 'Jay Stratton',       color: '#0891b2' },
+  'robert-hastings':  { label: 'Robert Hastings',    color: '#b45309' },
+  'sean-kirkpatrick': { label: 'Sean Kirkpatrick',   color: '#dc2626' },
 };
 
 const UAP_COLOR = '#93c5e8';

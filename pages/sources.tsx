@@ -372,6 +372,53 @@ const Sources: NextPage = () => {
             description="Historian Richard Dolan's foundational two-volume history of government UAP involvement and civilian research organizations. The most comprehensive published account of the Keyhoe/NICAP era. Used as the primary secondary source for Keyhoe's profile."
             notes="Used for: Donald Keyhoe."
           />
+
+          <SourceCard
+            name="The Day After Roswell (Corso, Birnes - 1997)"
+            url="https://www.simonandschuster.com/books/The-Day-After-Roswell/Philip-J-Corso/9780671009830"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Philip Corso's memoir co-authored with William J. Birnes, detailing his claimed role managing Roswell crash debris at the Pentagon's Foreign Technology Division and seeding artifacts to private contractors. New York Times bestseller and primary source for the Corso profile."
+            notes="Used for: Philip Corso."
+          />
+
+          <SourceCard
+            name="Disclosure Project - National Press Club 2001 (C-SPAN)"
+            url="https://www.c-span.org/video/?163766-1/ufo-research"
+            type="Primary Video Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="C-SPAN recording of the May 9, 2001 Disclosure Project National Press Club event organized by Steven Greer, featuring testimony from 20+ former military and government witnesses. Primary source for the Greer profile's disclosure event documentation."
+            coverage="May 9, 2001"
+            notes="Used for: Steven Greer, Daniel Sheehan."
+          />
+
+          <SourceCard
+            name="UFOs and Nukes - Official Research Website (Hastings)"
+            url="https://www.ufos-nukes.com"
+            type="Primary Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="Robert Hastings's official research site documenting UAP incidents at nuclear weapons facilities, with FOIA-obtained military documents, veteran testimony summaries, and case-by-case analysis. Primary source for the Hastings profile and for the Minot AFB 1968 case documentation."
+            notes="Used for: Robert Hastings, Minot AFB 1968."
+          />
+
+          <SourceCard
+            name="AARO Senate Testimony - Kirkpatrick (April 2023)"
+            url="https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-mission-of-the-all-domain-anomaly-resolution-office"
+            type="Congressional Record"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Official Senate Armed Services Subcommittee record of Sean Kirkpatrick's April 2023 testimony - the first public congressional appearance by an AARO director. Primary source for Kirkpatrick's profile and AARO's organizational record."
+            coverage="April 19, 2023"
+            notes="Used for: Sean Kirkpatrick, AARO."
+          />
+
+          <SourceCard
+            name="Kirkpatrick / Loeb - Physical Constraints on UAP (arXiv 2022)"
+            url="https://arxiv.org/abs/2209.15215"
+            type="Academic Preprint"
+            typeColor="bg-teal-100 text-teal-700"
+            description="Preprint paper co-authored by AARO director Sean Kirkpatrick and Harvard astrophysicist Avi Loeb, proposing physical signature hypotheses for UAP. The only peer-reviewed paper co-authored by a sitting AARO director. Used for both Kirkpatrick and Loeb profiles."
+            notes="Used for: Sean Kirkpatrick, Avi Loeb."
+          />
         </section>
 
         {/* Government programs sources */}
@@ -499,6 +546,34 @@ const Sources: NextPage = () => {
             coverage="June 25, 2021"
             notes="Used for: UAP Task Force (UAPTF)."
           />
+
+          <SourceCard
+            name="Galileo Project - Harvard University"
+            url="https://projects.iq.harvard.edu/galileo"
+            type="Academic Institution"
+            typeColor="bg-green-100 text-green-700"
+            description="Official Galileo Project homepage at Harvard, documenting the project's multi-sensor observatory methodology, peer-reviewed publications, and research findings since its 2021 founding. Primary source for the Galileo Project program entry."
+            coverage="2021-present"
+            notes="Used for: Galileo Project."
+          />
+
+          <SourceCard
+            name="Project Moon Dust FOIA Documents (The Black Vault)"
+            url="https://www.theblackvault.com/documentarchive/project-moon-dust/"
+            type="FOIA Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="Declassified documents confirming the existence and operational scope of Project Moon Dust and Operation Blue Fly, obtained via FOIA requests. Includes State Department cables referencing Moon Dust field operations in Bolivia, Pakistan, and other international locations. Primary source for the Moon Dust program entry."
+            notes="Used for: Project Moon Dust / Blue Fly."
+          />
+
+          <SourceCard
+            name="Clear Intent: The Government Cover-Up of the UFO Experience (Fawcett, Greenwood - 1984)"
+            url="https://www.amazon.com/Clear-Intent-Government-Cover-Up-Experience/dp/0131352539"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="The foundational research publication establishing Project Moon Dust's existence through FOIA document analysis by Barry Greenwood and Lawrence Fawcett. Documents the scope of government UAP-related recovery programs through declassified records."
+            notes="Used for: Project Moon Dust / Blue Fly."
+          />
         </section>
 
         {/* Documented cases sources */}
@@ -540,6 +615,46 @@ const Sources: NextPage = () => {
             coverage="1973 incident; 1979 publication"
             notes="Used for: Coyne Helicopter 1973."
           />
+
+          <SourceCard
+            name="Condon Report - Case 5 (RB-47 Incident, 1957)"
+            url="https://files.ncas.org/condon/text/case05.htm"
+            type="Official Government Study"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The Condon Committee's full analysis of the July 17, 1957 RB-47H encounter, formally classified Unknown. The only Condon case involving simultaneous ELINT sensor, ground radar, and visual confirmation of the same object. Investigated by atmospheric physicist Dr. James McDonald. Primary source for the RB-47 case entry."
+            coverage="July 17, 1957 incident; 1968-1969 Condon investigation"
+            notes="Used for: RB-47 1957."
+          />
+
+          <SourceCard
+            name="NICAP - RB-47 Case Documentation"
+            url="https://www.nicap.org/570717dir.htm"
+            type="Civilian Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="NICAP's case file for the July 17, 1957 RB-47H incident, including Air Force intelligence report references, crew testimony summaries, and cross-references to the Condon analysis."
+            coverage="July 17, 1957"
+            notes="Used for: RB-47 1957."
+          />
+
+          <SourceCard
+            name="The Falcon Lake Incident (Michalak, Rutkowski)"
+            url="https://www.amazon.com/Falcon-Lake-Incident-Stefan-Michalak/dp/0888012438"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Book-length account of the May 20, 1967 Falcon Lake encounter by witness Stefan Michalak and Canadian UAP researcher Chris Rutkowski. Includes medical documentation, RCMP investigation records, and physical evidence analysis. Primary source for the Falcon Lake case entry."
+            coverage="May 20, 1967 incident"
+            notes="Used for: Falcon Lake 1967."
+          />
+
+          <SourceCard
+            name="Robert Hastings - Minot AFB 1968 FOIA Documentation"
+            url="https://www.ufos-nukes.com"
+            type="FOIA Research"
+            typeColor="bg-amber-100 text-amber-700"
+            description="Robert Hastings's compiled documentation of the October 24, 1968 Minot AFB incident, incorporating FOIA-obtained Air Force intelligence report (Project Blue Book Case 12548), B-52 crew records, and security team reports. Primary source for the Minot AFB case entry."
+            coverage="October 24, 1968"
+            notes="Used for: Minot AFB 1968."
+          />
         </section>
 
         {/* Primary documents sources */}
@@ -571,6 +686,26 @@ const Sources: NextPage = () => {
             description="NICAP's hosted copy of the January 9, 1953 Pentacle Memorandum - a classified Battelle Memorial Institute memo to Wright-Patterson AFB revealing a parallel secret UAP analysis program alongside Blue Book, discovered in J. Allen Hynek's personal papers by Jacques Vallee. Primary source for the document profile."
             coverage="January 9, 1953"
             notes="Used for: Pentacle Memorandum (1953)."
+          />
+
+          <SourceCard
+            name="NDAA FY2024 - congress.gov"
+            url="https://www.congress.gov/bill/118th-congress/house-bill/2670/text"
+            type="Official Government"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Full text of the National Defense Authorization Act for Fiscal Year 2024, signed December 22, 2023. Contains the UAP provisions including eminent domain authorization, NDA review requirements, and language vindicating Luis Elizondo's AATIP role. Primary source for the NDAA FY2024 document entry."
+            coverage="December 22, 2023"
+            notes="Used for: NDAA FY2024 UAP Provisions."
+          />
+
+          <SourceCard
+            name="2024 ODNI Annual Report on UAP (March 2024)"
+            url="https://www.dni.gov/index.php/newsroom/reports-publications/reports-publications-2024"
+            type="Official Government Report"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The Office of the Director of National Intelligence's 2024 annual UAP report covering calendar year 2023. Documents 291 new cases bringing the total AARO database to over 2,300 entries; 97% lack sufficient data for characterization. Primary source for the 2024 DNI Annual Report document entry."
+            coverage="January-December 2023; released March 2024"
+            notes="Used for: 2024 DNI Annual Report on UAP."
           />
         </section>
 

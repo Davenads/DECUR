@@ -1,0 +1,109 @@
+{
+  "profile": {
+    "id": "steven-greer",
+    "name": "Dr. Steven M. Greer",
+    "aliases": ["Steven Greer", "Dr. Greer"],
+    "born": "June 28, 1955 - Charlotte, North Carolina",
+    "died": null,
+    "roles": [
+      "Emergency Physician (former)",
+      "Founder and Director, Center for the Study of Extraterrestrial Intelligence (CSETI)",
+      "Founder and Director, The Disclosure Project",
+      "Author and Filmmaker"
+    ],
+    "service_period": "1990-present (UFO research); 1987-1998 (medical practice)",
+    "organizations": ["CSETI", "The Disclosure Project"],
+    "clearance": null,
+    "summary": "Emergency physician turned full-time UAP disclosure advocate who founded CSETI in 1990 and The Disclosure Project in 1993. Organized the landmark May 9, 2001 National Press Club briefing at which over 20 former military, government, and intelligence witnesses testified on camera about UAP encounters and government cover-ups. Greer is one of the most prominent figures in the disclosure movement but also one of the most polarizing, praised for aggregating witness testimony and criticized for CE-5 contact claims, fundraising practices, and alleged misrepresentation of witnesses. Has produced multiple documentary films including 'Sirius' (2013) and 'Unacknowledged' (2017).",
+    "education": [
+      "M.D., James H. Quillen College of Medicine, East Tennessee State University, 1987",
+      "B.S., Appalachian State University"
+    ],
+    "early_career": [
+      "Practiced as emergency medicine physician in North Carolina and Virginia",
+      "Claims a near-death experience as a teenager influenced his interest in consciousness and anomalous phenomena",
+      "Founded CSETI in 1990 while still practicing medicine, developing CE-5 (Close Encounters of the Fifth Kind) contact protocols"
+    ],
+    "key_events": [
+      { "year": "1990", "event": "Founds the Center for the Study of Extraterrestrial Intelligence (CSETI), focused on bilateral contact protocols with non-human intelligence." },
+      { "year": "1993", "event": "Founds The Disclosure Project with the mission of compelling full government disclosure of UAP information." },
+      { "year": "1994", "event": "Briefs CIA Director James Woolsey privately; claims Woolsey was unaware of classified UAP programs, supporting Greer's contention of compartmentalization." },
+      { "year": "1997", "event": "Organizes a closed congressional briefing with multiple witnesses at a Washington D.C. hotel; over a dozen members of Congress reportedly attend." },
+      { "year": "2001", "event": "Organizes the May 9, 2001 National Press Club Disclosure Event in Washington D.C., featuring testimony from 20+ former military and government witnesses on camera. Widely considered the most significant public UAP witness event before the 2023 congressional hearings." },
+      { "year": "2013", "event": "Releases the documentary 'Sirius,' which claimed to present DNA analysis of an alleged alien body (later shown to be a deformed human child)." },
+      { "year": "2017", "event": "Releases 'Unacknowledged: An Expose of the World's Greatest Secret,' a documentary expanding on Disclosure Project claims." },
+      { "year": "2022", "event": "Releases 'The Cosmic Hoax: An Expose,' arguing that a false flag alien invasion narrative is being prepared by intelligence agencies." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "daniel-sheehan",
+      "name": "Daniel Sheehan",
+      "role": "Constitutional attorney",
+      "relationship": "Sheehan served as General Counsel for the 2001 Disclosure Project National Press Club event, providing legal framework and organization for the witness testimonies."
+    },
+    {
+      "id": "richard-dolan",
+      "name": "Richard Dolan",
+      "role": "UAP historian",
+      "relationship": "Both prominent in the UAP research community but have diverged significantly in methodology and conclusions; Dolan has publicly critiqued aspects of Greer's approach."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "May 2001",
+      "type": "speech",
+      "title": "National Press Club Disclosure Event",
+      "outlet": "National Press Club, Washington D.C.",
+      "notes": "Organized and presented the landmark disclosure event featuring testimony from 20+ former military, government, and intelligence community witnesses. Included retired Air Force officers, FAA officials, and others describing UAP encounters and alleged cover-ups. Over 100 hours of additional witness testimony was subsequently archived."
+    },
+    {
+      "date": "2006",
+      "type": "written",
+      "title": "Hidden Truth, Forbidden Knowledge",
+      "outlet": "Crossing Point Publications",
+      "notes": "Book detailing Greer's personal experiences, CE-5 contact protocols, and claims about the extraterrestrial presence and government suppression."
+    },
+    {
+      "date": "2013",
+      "type": "film",
+      "title": "Sirius",
+      "outlet": "Neverending Light Productions",
+      "notes": "Documentary film featuring Disclosure Project witnesses and presenting claims about a humanoid specimen called the 'Atacama Being'; DNA analysis later confirmed it was a deformed human, not extraterrestrial."
+    },
+    {
+      "date": "2017",
+      "type": "film",
+      "title": "Unacknowledged",
+      "outlet": "Sirius Productions",
+      "notes": "Documentary expanding on the Disclosure Project narrative, focusing on alleged classified UAP programs, energy suppression, and crash retrieval claims."
+    },
+    {
+      "date": "2022",
+      "type": "film",
+      "title": "The Cosmic Hoax",
+      "outlet": "Sirius Productions",
+      "notes": "Documentary arguing against the threat-framing of UAP by military sources, claiming a false flag alien invasion is being staged by intelligence agencies."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Disclosure Project - Official Website",
+      "url": "https://www.disclosureproject.org",
+      "type": "Website",
+      "notes": "Official archive of Disclosure Project witness testimonies, documents, and organizational history."
+    },
+    {
+      "title": "Steven Greer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Steven_Greer",
+      "type": "Website",
+      "notes": "Biographical overview including criticism and controversy sections with source citations."
+    },
+    {
+      "title": "National Press Club 2001 Event - C-SPAN Archive",
+      "url": "https://www.c-span.org/video/?163766-1/ufo-research",
+      "type": "Website",
+      "notes": "C-SPAN recording of the May 9, 2001 National Press Club Disclosure Event."
+    }
+  ]
+}

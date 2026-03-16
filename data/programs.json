@@ -9,21 +9,58 @@
     "summary": "The U.S. Air Force's official UAP investigation program, running from 1952 to 1969. Blue Book catalogued 12,618 reported sightings, of which 701 remained officially unidentified at closure. It was preceded by Project Sign (1947) and Project Grudge (1949), and operated under pressure to debunk rather than investigate. The program's controversial closure, driven by the Condon Report, effectively ended official U.S. government UAP investigation for 50 years.",
     "significance": "Project Blue Book is the most extensively documented government UAP program in the public record. Its declassified files are publicly accessible through the National Archives and form the evidentiary foundation for all subsequent UAP research. The decision to close it under the Condon Report's recommendation - despite 701 unexplained cases - became a central grievance in the modern disclosure movement and directly informs congressional criticism of AARO's methodology.",
     "key_personnel": [
-      { "name": "J. Allen Hynek", "role": "Scientific Consultant (1948-1969)", "figure_id": "j-allen-hynek" },
-      { "name": "Capt. Edward Ruppelt", "role": "Director (1951-1953)" },
-      { "name": "Edward Condon", "role": "Led the commissioned University of Colorado study" }
+      {
+        "name": "J. Allen Hynek",
+        "role": "Scientific Consultant (1948-1969)",
+        "figure_id": "j-allen-hynek"
+      },
+      {
+        "name": "Capt. Edward Ruppelt",
+        "role": "Director (1951-1953)"
+      },
+      {
+        "name": "Edward Condon",
+        "role": "Led the commissioned University of Colorado study"
+      }
     ],
     "key_events": [
-      { "year": "1947", "event": "Project Sign established as the first formal Air Force UFO investigation, following the Kenneth Arnold sighting and the Roswell incident." },
-      { "year": "1948", "event": "Project Sign produces the classified 'Estimate of the Situation' concluding that UFOs are interplanetary - rejected by Air Force Chief of Staff Gen. Vandenberg." },
-      { "year": "1949", "event": "Project Sign rebranded as Project Grudge with an explicit mandate to debunk sightings rather than investigate them objectively." },
-      { "year": "1952", "event": "Project Grudge reorganized and renamed Project Blue Book, with expanded scope following the 1952 Washington D.C. UFO wave." },
-      { "year": "1953", "event": "Robertson Panel convenes and recommends a public debunking strategy; Blue Book's credibility is structurally compromised from this point forward." },
-      { "year": "1966", "event": "Air Force commissions University of Colorado study led by physicist Edward Condon under pressure from congressional hearings." },
-      { "year": "1969", "event": "Condon Report concludes UFO study offers no scientific value. Blue Book formally terminated on December 17, 1969. 701 cases remain unexplained in the official record." }
+      {
+        "year": "1947",
+        "event": "Project Sign established as the first formal Air Force UFO investigation, following the Kenneth Arnold sighting and the Roswell incident."
+      },
+      {
+        "year": "1948",
+        "event": "Project Sign produces the classified 'Estimate of the Situation' concluding that UFOs are interplanetary - rejected by Air Force Chief of Staff Gen. Vandenberg."
+      },
+      {
+        "year": "1949",
+        "event": "Project Sign rebranded as Project Grudge with an explicit mandate to debunk sightings rather than investigate them objectively."
+      },
+      {
+        "year": "1952",
+        "event": "Project Grudge reorganized and renamed Project Blue Book, with expanded scope following the 1952 Washington D.C. UFO wave."
+      },
+      {
+        "year": "1953",
+        "event": "Robertson Panel convenes and recommends a public debunking strategy; Blue Book's credibility is structurally compromised from this point forward."
+      },
+      {
+        "year": "1966",
+        "event": "Air Force commissions University of Colorado study led by physicist Edward Condon under pressure from congressional hearings."
+      },
+      {
+        "year": "1969",
+        "event": "Condon Report concludes UFO study offers no scientific value. Blue Book formally terminated on December 17, 1969. 701 cases remain unexplained in the official record."
+      }
     ],
-    "connected_documents": ["robertson-panel-1953", "blue-book-special-report-14", "condon-report-1969"],
-    "connected_figures": ["j-allen-hynek"],
+    "connected_documents": [
+      "robertson-panel-1953",
+      "blue-book-special-report-14",
+      "condon-report-1969"
+    ],
+    "connected_figures": [
+      "j-allen-hynek"
+    ],
     "limitations": [
       "The program operated under institutional pressure to debunk rather than investigate objectively from at least 1953 onward.",
       "Many of the most compelling cases were reportedly reclassified or withheld before the files were transferred to the National Archives.",
@@ -31,9 +68,19 @@
       "Blue Book's 701 'unidentified' classification is a floor, not a ceiling - cases were frequently classified as 'explained' without sufficient evidence."
     ],
     "sources": [
-      { "title": "Project Blue Book Files - National Archives", "url": "https://www.archives.gov/research/military/air-force/ufos", "type": "Primary Source" },
-      { "title": "UFOs and the National Security State (Dolan, 2002)", "type": "Book" },
-      { "title": "The UFO Experience (Hynek, 1972)", "type": "Book" }
+      {
+        "title": "Project Blue Book Files - National Archives",
+        "url": "https://www.archives.gov/research/military/air-force/ufos",
+        "type": "Primary Source"
+      },
+      {
+        "title": "UFOs and the National Security State (Dolan, 2002)",
+        "type": "Book"
+      },
+      {
+        "title": "The UFO Experience (Hynek, 1972)",
+        "type": "Book"
+      }
     ]
   },
   {
@@ -46,26 +93,61 @@
     "summary": "The first formal U.S. Air Force investigation into unidentified aerial phenomena, established in January 1947 following the Kenneth Arnold sighting, the Roswell incident, and a wave of military pilot reports. Project Sign produced the classified 'Estimate of the Situation' in 1948 - an internal document concluding that UFOs were likely of extraterrestrial origin - which was rejected by Air Force Chief of Staff Hoyt Vandenberg and reportedly ordered destroyed. Sign was dissolved and replaced by Project Grudge in February 1949.",
     "significance": "Project Sign represents the only known instance of an official U.S. military body formally concluding, in writing, that UAP were likely of extraterrestrial origin. The rejection and alleged destruction of the 'Estimate of the Situation' by senior leadership is cited by the modern disclosure community as the earliest documented example of institutional suppression of UAP findings.",
     "key_personnel": [
-      { "name": "J. Allen Hynek", "role": "Scientific Consultant", "figure_id": "j-allen-hynek" },
-      { "name": "Gen. Nathan Twining", "role": "Authored the foundational Twining Memo supporting UAP reality" },
-      { "name": "Gen. Hoyt Vandenberg", "role": "Air Force Chief of Staff; rejected the 'Estimate of the Situation'" }
+      {
+        "name": "J. Allen Hynek",
+        "role": "Scientific Consultant",
+        "figure_id": "j-allen-hynek"
+      },
+      {
+        "name": "Gen. Nathan Twining",
+        "role": "Authored the foundational Twining Memo supporting UAP reality"
+      },
+      {
+        "name": "Gen. Hoyt Vandenberg",
+        "role": "Air Force Chief of Staff; rejected the 'Estimate of the Situation'"
+      }
     ],
     "key_events": [
-      { "year": "Sep 1947", "event": "General Nathan Twining authors the Twining Memo concluding that UFOs are real, not imaginary, and recommending formal investigation." },
-      { "year": "Jan 1948", "event": "Project Sign formally established under Air Materiel Command at Wright-Patterson Air Force Base." },
-      { "year": "1948", "event": "Sign analysts produce the classified 'Estimate of the Situation' concluding UFOs are likely of interplanetary origin. Gen. Vandenberg rejects it; the document is reportedly ordered destroyed." },
-      { "year": "Feb 1949", "event": "Project Sign dissolved and replaced by Project Grudge with an explicitly skeptical/debunking mandate." }
+      {
+        "year": "Sep 1947",
+        "event": "General Nathan Twining authors the Twining Memo concluding that UFOs are real, not imaginary, and recommending formal investigation."
+      },
+      {
+        "year": "Jan 1948",
+        "event": "Project Sign formally established under Air Materiel Command at Wright-Patterson Air Force Base."
+      },
+      {
+        "year": "1948",
+        "event": "Sign analysts produce the classified 'Estimate of the Situation' concluding UFOs are likely of interplanetary origin. Gen. Vandenberg rejects it; the document is reportedly ordered destroyed."
+      },
+      {
+        "year": "Feb 1949",
+        "event": "Project Sign dissolved and replaced by Project Grudge with an explicitly skeptical/debunking mandate."
+      }
     ],
-    "connected_documents": ["twining-memo-1947", "schulgen-memo-1947", "project-sign-estimate-1948"],
-    "connected_figures": ["j-allen-hynek"],
+    "connected_documents": [
+      "twining-memo-1947",
+      "schulgen-memo-1947",
+      "project-sign-estimate-1948"
+    ],
+    "connected_figures": [
+      "j-allen-hynek"
+    ],
     "limitations": [
       "The 'Estimate of the Situation' is not available in any public archive - its existence is attested only through later accounts by personnel who saw it.",
       "Project Sign's short lifespan (two years) limits the documented record.",
       "Files were transferred to Project Grudge and Project Blue Book, complicating independent attribution."
     ],
     "sources": [
-      { "title": "The Report on Unidentified Flying Objects (Ruppelt, 1956)", "type": "Book" },
-      { "title": "Project Sign - National Archives", "url": "https://www.archives.gov/research/military/air-force/ufos", "type": "Primary Source" }
+      {
+        "title": "The Report on Unidentified Flying Objects (Ruppelt, 1956)",
+        "type": "Book"
+      },
+      {
+        "title": "Project Sign - National Archives",
+        "url": "https://www.archives.gov/research/military/air-force/ufos",
+        "type": "Primary Source"
+      }
     ]
   },
   {
@@ -78,24 +160,52 @@
     "summary": "The successor to Project Sign, established in February 1949 with a fundamentally different mandate: to explain, debunk, and dismiss UFO reports rather than investigate them objectively. Project Grudge produced a 1949 report concluding that UFOs posed no national security threat and that all sightings had conventional explanations - a conclusion its own personnel later disputed. It was reorganized and renamed Project Blue Book in 1952 following public and congressional pressure after a surge of high-profile sightings.",
     "significance": "Project Grudge institutionalized the debunking posture that would define the U.S. government's public approach to UAP for the following 70 years. The transition from Sign's open inquiry to Grudge's dismissiveness is the clearest documented inflection point where investigative intent was replaced by a suppression mandate.",
     "key_personnel": [
-      { "name": "J. Allen Hynek", "role": "Scientific Consultant", "figure_id": "j-allen-hynek" },
-      { "name": "Capt. Edward Ruppelt", "role": "Later reorganized Grudge into Blue Book" }
+      {
+        "name": "J. Allen Hynek",
+        "role": "Scientific Consultant",
+        "figure_id": "j-allen-hynek"
+      },
+      {
+        "name": "Capt. Edward Ruppelt",
+        "role": "Later reorganized Grudge into Blue Book"
+      }
     ],
     "key_events": [
-      { "year": "Feb 1949", "event": "Project Grudge established, replacing Project Sign." },
-      { "year": "Aug 1949", "event": "Grudge Report published; concludes all UFO sightings have conventional explanations and recommends curtailing investigation resources." },
-      { "year": "1951", "event": "Capt. Edward Ruppelt assigned to overhaul the program following public criticism of its dismissive methodology." },
-      { "year": "Mar 1952", "event": "Project Grudge reorganized and renamed Project Blue Book." }
+      {
+        "year": "Feb 1949",
+        "event": "Project Grudge established, replacing Project Sign."
+      },
+      {
+        "year": "Aug 1949",
+        "event": "Grudge Report published; concludes all UFO sightings have conventional explanations and recommends curtailing investigation resources."
+      },
+      {
+        "year": "1951",
+        "event": "Capt. Edward Ruppelt assigned to overhaul the program following public criticism of its dismissive methodology."
+      },
+      {
+        "year": "Mar 1952",
+        "event": "Project Grudge reorganized and renamed Project Blue Book."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["j-allen-hynek"],
+    "connected_figures": [
+      "j-allen-hynek"
+    ],
     "limitations": [
       "Grudge's methodology was explicitly adversarial to genuine inquiry - files from this period are considered less reliable than Sign or Blue Book records.",
       "Many Grudge-era cases were reportedly reclassified before transfer to Blue Book."
     ],
     "sources": [
-      { "title": "The Report on Unidentified Flying Objects (Ruppelt, 1956)", "type": "Book" },
-      { "title": "Project Blue Book Files - National Archives", "url": "https://www.archives.gov/research/military/air-force/ufos", "type": "Primary Source" }
+      {
+        "title": "The Report on Unidentified Flying Objects (Ruppelt, 1956)",
+        "type": "Book"
+      },
+      {
+        "title": "Project Blue Book Files - National Archives",
+        "url": "https://www.archives.gov/research/military/air-force/ufos",
+        "type": "Primary Source"
+      }
     ]
   },
   {
@@ -108,22 +218,69 @@
     "summary": "The Advanced Aerospace Weapon System Applications Program was a $22 million DIA contract awarded to Bigelow Aerospace Advanced Space Studies (BAASS) in 2008, secured through the advocacy of Senator Harry Reid. Directed by DIA program manager James Lacatski, AAWSAP studied UAP as potential adversarial aerospace threats and produced 38 Defense Intelligence Reference Documents (DIRDs) on advanced physics and propulsion. It is often conflated with AATIP but was the broader parent program; AATIP operated as a subset focused specifically on UAP reporting and investigation.",
     "significance": "AAWSAP is the most extensively funded classified UAP program confirmed in the public record. Its 38 DIRD technical reports - covering topics from warp drives to metamaterials - were partially released through FOIA and formed the technical foundation of the modern UAP disclosure push. The program's connection to Skinwalker Ranch through BAASS also brought paranormal phenomena within the scope of a classified intelligence program for the first time.",
     "key_personnel": [
-      { "name": "James Lacatski", "role": "DIA Program Manager; founded and directed AAWSAP", "figure_id": "james-lacatski" },
-      { "name": "Robert Bigelow", "role": "BAASS contractor; conducted field operations", "figure_id": "robert-bigelow" },
-      { "name": "Hal Puthoff", "role": "DIRD contributor; advanced physics research", "figure_id": "hal-puthoff" },
-      { "name": "Eric Davis", "role": "DIRD contributor; warp drive and teleportation research", "figure_id": "eric-davis" },
-      { "name": "Harry Reid", "role": "Senate Majority Leader; secured $22M funding", "figure_id": "harry-reid" }
+      {
+        "name": "James Lacatski",
+        "role": "DIA Program Manager; founded and directed AAWSAP",
+        "figure_id": "james-lacatski"
+      },
+      {
+        "name": "Robert Bigelow",
+        "role": "BAASS contractor; conducted field operations",
+        "figure_id": "robert-bigelow"
+      },
+      {
+        "name": "Hal Puthoff",
+        "role": "DIRD contributor; advanced physics research",
+        "figure_id": "hal-puthoff"
+      },
+      {
+        "name": "Eric Davis",
+        "role": "DIRD contributor; warp drive and teleportation research",
+        "figure_id": "eric-davis"
+      },
+      {
+        "name": "Harry Reid",
+        "role": "Senate Majority Leader; secured $22M funding",
+        "figure_id": "harry-reid"
+      }
     ],
     "key_events": [
-      { "year": "2007", "event": "Senator Harry Reid, at the urging of Robert Bigelow, approaches the DIA about funding a UAP research program." },
-      { "year": "2008", "event": "DIA awards a $22M contract to BAASS under the AAWSAP umbrella. James Lacatski manages the program from within DIA." },
-      { "year": "2008-2011", "event": "BAASS conducts field investigations at Skinwalker Ranch and 38 technical reports (DIRDs) are produced covering advanced aerospace physics topics." },
-      { "year": "2010", "event": "Luis Elizondo becomes aware of AAWSAP and begins interfacing with it; AATIP emerges as the subset of AAWSAP focused on military UAP reporting." },
-      { "year": "2012", "event": "AAWSAP contract concludes. Program ends due to funding challenges and institutional resistance within DIA." },
-      { "year": "2021", "event": "James Lacatski co-authors 'Skinwalkers at the Pentagon' partially revealing the program's scope for the first time." }
+      {
+        "year": "2007",
+        "event": "Senator Harry Reid, at the urging of Robert Bigelow, approaches the DIA about funding a UAP research program."
+      },
+      {
+        "year": "2008",
+        "event": "DIA awards a $22M contract to BAASS under the AAWSAP umbrella. James Lacatski manages the program from within DIA."
+      },
+      {
+        "year": "2008-2011",
+        "event": "BAASS conducts field investigations at Skinwalker Ranch and 38 technical reports (DIRDs) are produced covering advanced aerospace physics topics."
+      },
+      {
+        "year": "2010",
+        "event": "Luis Elizondo becomes aware of AAWSAP and begins interfacing with it; AATIP emerges as the subset of AAWSAP focused on military UAP reporting."
+      },
+      {
+        "year": "2012",
+        "event": "AAWSAP contract concludes. Program ends due to funding challenges and institutional resistance within DIA."
+      },
+      {
+        "year": "2021",
+        "event": "James Lacatski co-authors 'Skinwalkers at the Pentagon' partially revealing the program's scope for the first time."
+      }
     ],
-    "connected_documents": ["ndaa-fy2023-uap-provisions"],
-    "connected_figures": ["james-lacatski", "robert-bigelow", "hal-puthoff", "eric-davis", "harry-reid", "luis-elizondo"],
+    "connected_documents": [
+      "ndaa-fy2023-uap-provisions"
+    ],
+    "connected_figures": [
+      "james-lacatski",
+      "robert-bigelow",
+      "hal-puthoff",
+      "eric-davis",
+      "harry-reid",
+      "luis-elizondo"
+    ],
     "limitations": [
       "The 38 DIRDs remain partially classified; only a subset has been released through FOIA.",
       "The relationship between AAWSAP and AATIP is disputed - some accounts treat them as distinct programs, others as overlapping.",
@@ -131,9 +288,19 @@
       "Lacatski's 'Skinwalkers at the Pentagon' account has not been independently corroborated."
     ],
     "sources": [
-      { "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)", "type": "Book" },
-      { "title": "AAWSAP DIRD Reports - FOIA Release", "url": "https://www.theblackvault.com/casefiles/the-advanced-aerospace-weapon-system-applications-aawsap-documents/", "type": "FOIA" },
-      { "title": "The Pentagon's UAP Task Force (Politico, 2020)", "type": "Article" }
+      {
+        "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)",
+        "type": "Book"
+      },
+      {
+        "title": "AAWSAP DIRD Reports - FOIA Release",
+        "url": "https://www.theblackvault.com/casefiles/the-advanced-aerospace-weapon-system-applications-aawsap-documents/",
+        "type": "FOIA"
+      },
+      {
+        "title": "The Pentagon's UAP Task Force (Politico, 2020)",
+        "type": "Article"
+      }
     ]
   },
   {
@@ -146,19 +313,56 @@
     "summary": "The All-domain Anomaly Resolution Office, established in July 2022 under the National Defense Authorization Act, is the current official U.S. government body responsible for UAP detection, identification, and reporting. AARO succeeded the UAP Task Force (2020) and consolidated reporting across all military domains - air, sea, space, and subsurface. Its first director was physicist Dr. Sean Kirkpatrick (2022-2023). AARO has been the subject of significant controversy following its Historical Record Reports, which multiple insiders and congressional members have disputed as incomplete.",
     "significance": "AARO represents the institutionalization of UAP investigation within the Department of Defense - the first permanent office with a statutory mandate and confirmed funding. However, it has also become the focal point of the disclosure community's skepticism: Grusch, Nell, Mellon, and Elizondo have all publicly disputed AARO's Historical Record Reports as either incomplete or deliberately misleading about the scope of historical programs.",
     "key_personnel": [
-      { "name": "Dr. Sean Kirkpatrick", "role": "Director (2022-2023)" },
-      { "name": "Dr. Jon Kosloski", "role": "Director (2024-present)" },
-      { "name": "Tim Gallaudet", "role": "Former Deputy Director", "figure_id": "tim-gallaudet" }
+      {
+        "name": "Dr. Sean Kirkpatrick",
+        "role": "Director (2022-2023)"
+      },
+      {
+        "name": "Dr. Jon Kosloski",
+        "role": "Director (2024-present)"
+      },
+      {
+        "name": "Tim Gallaudet",
+        "role": "Former Deputy Director",
+        "figure_id": "tim-gallaudet"
+      }
     ],
     "key_events": [
-      { "year": "2020", "event": "UAP Task Force established within the Office of Naval Intelligence - the direct predecessor to AARO." },
-      { "year": "Jul 2022", "event": "AARO formally established under the NDAA FY2022, absorbing the UAP Task Force." },
-      { "year": "Jul 2023", "event": "David Grusch, David Fravor, and Ryan Graves testify before the House Oversight Subcommittee. Grusch claims AARO was denied access to programs he reported." },
-      { "year": "Mar 2024", "event": "AARO releases Historical Record Report Vol. 1. Karl Nell, Chris Mellon, and Luis Elizondo publicly dispute its methodology and conclusions." },
-      { "year": "2024", "event": "AARO releases Historical Record Report Vol. 2. Dr. Sean Kirkpatrick resigns. Dr. Jon Kosloski appointed new director." }
+      {
+        "year": "2020",
+        "event": "UAP Task Force established within the Office of Naval Intelligence - the direct predecessor to AARO."
+      },
+      {
+        "year": "Jul 2022",
+        "event": "AARO formally established under the NDAA FY2022, absorbing the UAP Task Force."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "David Grusch, David Fravor, and Ryan Graves testify before the House Oversight Subcommittee. Grusch claims AARO was denied access to programs he reported."
+      },
+      {
+        "year": "Mar 2024",
+        "event": "AARO releases Historical Record Report Vol. 1. Karl Nell, Chris Mellon, and Luis Elizondo publicly dispute its methodology and conclusions."
+      },
+      {
+        "year": "2024",
+        "event": "AARO releases Historical Record Report Vol. 2. Dr. Sean Kirkpatrick resigns. Dr. Jon Kosloski appointed new director."
+      }
     ],
-    "connected_documents": ["aaro-historical-record-vol1", "aaro-historical-record-vol2-2024", "uaptf-preliminary-assessment", "ndaa-fy2023-uap-provisions"],
-    "connected_figures": ["david-grusch", "karl-nell", "luis-elizondo", "chris-mellon", "tim-gallaudet", "ryan-graves"],
+    "connected_documents": [
+      "aaro-historical-record-vol1",
+      "aaro-historical-record-vol2-2024",
+      "uaptf-preliminary-assessment",
+      "ndaa-fy2023-uap-provisions"
+    ],
+    "connected_figures": [
+      "david-grusch",
+      "karl-nell",
+      "luis-elizondo",
+      "chris-mellon",
+      "tim-gallaudet",
+      "ryan-graves"
+    ],
     "limitations": [
       "AARO's independence from the programs it is tasked to investigate has been questioned by multiple senior officials with direct program knowledge.",
       "Grusch testified under oath that AARO was denied access to programs he reported through official channels.",
@@ -166,9 +370,20 @@
       "AARO's public reporting obligations and classified operational scope remain structurally separate, limiting independent oversight."
     ],
     "sources": [
-      { "title": "AARO Official Website", "url": "https://www.aaro.mil", "type": "Official" },
-      { "title": "AARO Historical Record Report Vol. 1 (March 2024)", "url": "https://www.aaro.mil/Portals/136/PDFs/UAP_Historical_Record_Report_Vol1_20240306.pdf", "type": "Official" },
-      { "title": "Grusch Congressional Testimony (July 2023)", "type": "Congressional Record" }
+      {
+        "title": "AARO Official Website",
+        "url": "https://www.aaro.mil",
+        "type": "Official"
+      },
+      {
+        "title": "AARO Historical Record Report Vol. 1 (March 2024)",
+        "url": "https://www.aaro.mil/Portals/136/PDFs/UAP_Historical_Record_Report_Vol1_20240306.pdf",
+        "type": "Official"
+      },
+      {
+        "title": "Grusch Congressional Testimony (July 2023)",
+        "type": "Congressional Record"
+      }
     ]
   },
   {
@@ -181,14 +396,26 @@
     "summary": "A program named by David Grusch in his 2023 congressional testimony and subsequent disclosures as a covert UAP surveillance operation within the U.S. intelligence community. Grusch alleged that Immaculate Constellation is a separate program from AARO-tracked activities, maintained within a legacy SAP (Special Access Program) structure, and involves the collection of UAP sensor data across multiple domains. Limited additional details have been publicly confirmed.",
     "significance": "Immaculate Constellation is one of the few specific program names provided by a credentialed whistleblower under oath. If accurate, its existence would confirm the parallel-program structure Grusch described - wherein UAP-related programs are deliberately segregated from official oversight channels like AARO. The name itself has not been publicly denied by the DoD.",
     "key_personnel": [
-      { "name": "David Grusch", "role": "Primary whistleblower who named the program in congressional testimony", "figure_id": "david-grusch" }
+      {
+        "name": "David Grusch",
+        "role": "Primary whistleblower who named the program in congressional testimony",
+        "figure_id": "david-grusch"
+      }
     ],
     "key_events": [
-      { "year": "Jul 2023", "event": "David Grusch names 'Immaculate Constellation' as a covert UAP surveillance program during House Oversight Subcommittee testimony." },
-      { "year": "2023-2024", "event": "Program referenced in subsequent Grusch media appearances. DoD has neither confirmed nor denied its existence." }
+      {
+        "year": "Jul 2023",
+        "event": "David Grusch names 'Immaculate Constellation' as a covert UAP surveillance program during House Oversight Subcommittee testimony."
+      },
+      {
+        "year": "2023-2024",
+        "event": "Program referenced in subsequent Grusch media appearances. DoD has neither confirmed nor denied its existence."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["david-grusch"],
+    "connected_figures": [
+      "david-grusch"
+    ],
     "limitations": [
       "The program has been named by only one source - David Grusch - whose broader claims remain unverified.",
       "No independent corroboration of the program name or its described functions has emerged in the public record.",
@@ -196,7 +423,11 @@
       "Program scope and activities are entirely based on Grusch's testimony, which was provided in a non-classified public forum."
     ],
     "sources": [
-      { "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)", "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/", "type": "Congressional Record" }
+      {
+        "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+        "type": "Congressional Record"
+      }
     ]
   },
   {
@@ -209,23 +440,47 @@
     "summary": "A proposed Department of Homeland Security program to study UAP and, according to AARO, to potentially exploit recovered non-human technology. Kona Blue was never funded or formally established. Its existence was disclosed in the AARO Historical Record Report (2024), which described it as a proposed SAP that DHS sought approval for but was denied. David Grusch identified it as connected to broader crash retrieval and reverse engineering program networks.",
     "significance": "Kona Blue is significant not because it succeeded, but because its proposal demonstrates that elements within the U.S. government were formally seeking to create classified UAP exploitation programs as recently as 2021. The AARO disclosure of its existence - even as an unfunded proposal - validates Grusch's broader claim that such programs were being attempted across multiple agencies.",
     "key_personnel": [
-      { "name": "David Grusch", "role": "Disclosed Kona Blue's existence in congressional testimony and media", "figure_id": "david-grusch" }
+      {
+        "name": "David Grusch",
+        "role": "Disclosed Kona Blue's existence in congressional testimony and media",
+        "figure_id": "david-grusch"
+      }
     ],
     "key_events": [
-      { "year": "c. 2018", "event": "DHS reportedly initiates the Kona Blue proposal, seeking approval for a Special Access Program to study UAP." },
-      { "year": "c. 2021", "event": "Kona Blue proposal formally denied funding and not established." },
-      { "year": "Mar 2024", "event": "AARO Historical Record Report Vol. 1 publicly discloses Kona Blue's existence as an unfunded proposal." }
+      {
+        "year": "c. 2018",
+        "event": "DHS reportedly initiates the Kona Blue proposal, seeking approval for a Special Access Program to study UAP."
+      },
+      {
+        "year": "c. 2021",
+        "event": "Kona Blue proposal formally denied funding and not established."
+      },
+      {
+        "year": "Mar 2024",
+        "event": "AARO Historical Record Report Vol. 1 publicly discloses Kona Blue's existence as an unfunded proposal."
+      }
     ],
-    "connected_documents": ["aaro-historical-record-vol1"],
-    "connected_figures": ["david-grusch"],
+    "connected_documents": [
+      "aaro-historical-record-vol1"
+    ],
+    "connected_figures": [
+      "david-grusch"
+    ],
     "limitations": [
       "AARO's account of Kona Blue as a denied proposal may not represent the full scope of related activities.",
       "No documents from the Kona Blue proposal process have been publicly released.",
       "The relationship between Kona Blue and other alleged crash retrieval programs has not been independently confirmed."
     ],
     "sources": [
-      { "title": "AARO Historical Record Report Vol. 1 (March 2024)", "url": "https://www.aaro.mil/Portals/136/PDFs/UAP_Historical_Record_Report_Vol1_20240306.pdf", "type": "Official" },
-      { "title": "Grusch Congressional Testimony (July 2023)", "type": "Congressional Record" }
+      {
+        "title": "AARO Historical Record Report Vol. 1 (March 2024)",
+        "url": "https://www.aaro.mil/Portals/136/PDFs/UAP_Historical_Record_Report_Vol1_20240306.pdf",
+        "type": "Official"
+      },
+      {
+        "title": "Grusch Congressional Testimony (July 2023)",
+        "type": "Congressional Record"
+      }
     ]
   },
   {
@@ -238,22 +493,66 @@
     "summary": "To The Stars Academy of Arts and Science (TTSA) was a public benefit corporation founded in October 2017 by musician Tom DeLonge with Luis Elizondo, Hal Puthoff, Jim Semivan, and Chris Mellon as the core leadership team. TTSA released the three classified Navy UAP videos (FLIR1, Gimbal, GoFast) to the New York Times in December 2017, breaking the modern UAP disclosure story. The organization published the DIRDs, pursued aerospace research, and produced media content. It dissolved its science division in 2021 following personnel departures.",
     "significance": "TTSA is directly responsible for the 2017-2019 media cycle that brought UAP into mainstream public and congressional awareness. The release of the three Navy videos - later officially authenticated by the Pentagon - was the catalyst for the UAP Task Force (2020) and ultimately AARO (2022). Without TTSA's targeted media strategy, the current legislative and institutional momentum around UAP disclosure would not exist in its current form.",
     "key_personnel": [
-      { "name": "Tom DeLonge", "role": "Founder and CEO" },
-      { "name": "Luis Elizondo", "role": "Director of Global Security Programs", "figure_id": "luis-elizondo" },
-      { "name": "Hal Puthoff", "role": "Co-founder; Vice President of Science and Technology", "figure_id": "hal-puthoff" },
-      { "name": "Chris Mellon", "role": "National Security Affairs Advisor", "figure_id": "chris-mellon" },
-      { "name": "Jim Semivan", "role": "Co-founder; Former CIA Senior Intelligence Officer" }
+      {
+        "name": "Tom DeLonge",
+        "role": "Founder and CEO"
+      },
+      {
+        "name": "Luis Elizondo",
+        "role": "Director of Global Security Programs",
+        "figure_id": "luis-elizondo"
+      },
+      {
+        "name": "Hal Puthoff",
+        "role": "Co-founder; Vice President of Science and Technology",
+        "figure_id": "hal-puthoff"
+      },
+      {
+        "name": "Chris Mellon",
+        "role": "National Security Affairs Advisor",
+        "figure_id": "chris-mellon"
+      },
+      {
+        "name": "Jim Semivan",
+        "role": "Co-founder; Former CIA Senior Intelligence Officer"
+      }
     ],
     "key_events": [
-      { "year": "Oct 2017", "event": "TTSA publicly launched with a live-streamed event. Elizondo, Puthoff, Mellon, and Semivan announced as core team." },
-      { "year": "Dec 2017", "event": "TTSA provides the FLIR1 ('Tic Tac') and Gimbal videos to the New York Times. Leslie Kean and Helene Cooper publish the story. The modern UAP disclosure era begins." },
-      { "year": "2018", "event": "TTSA releases the GoFast video. Begins CRADA (Cooperative Research and Development Agreement) discussions with the U.S. Army." },
-      { "year": "2019", "event": "Pentagon officially confirms authenticity of all three UAP videos. TTSA secures Army CRADA for materials analysis." },
-      { "year": "2020", "event": "Chris Mellon and Luis Elizondo depart TTSA. The UAP Task Force established in part due to TTSA's advocacy." },
-      { "year": "2021", "event": "TTSA's science and aerospace divisions wind down. Hal Puthoff departs. The organization pivots to entertainment." }
+      {
+        "year": "Oct 2017",
+        "event": "TTSA publicly launched with a live-streamed event. Elizondo, Puthoff, Mellon, and Semivan announced as core team."
+      },
+      {
+        "year": "Dec 2017",
+        "event": "TTSA provides the FLIR1 ('Tic Tac') and Gimbal videos to the New York Times. Leslie Kean and Helene Cooper publish the story. The modern UAP disclosure era begins."
+      },
+      {
+        "year": "2018",
+        "event": "TTSA releases the GoFast video. Begins CRADA (Cooperative Research and Development Agreement) discussions with the U.S. Army."
+      },
+      {
+        "year": "2019",
+        "event": "Pentagon officially confirms authenticity of all three UAP videos. TTSA secures Army CRADA for materials analysis."
+      },
+      {
+        "year": "2020",
+        "event": "Chris Mellon and Luis Elizondo depart TTSA. The UAP Task Force established in part due to TTSA's advocacy."
+      },
+      {
+        "year": "2021",
+        "event": "TTSA's science and aerospace divisions wind down. Hal Puthoff departs. The organization pivots to entertainment."
+      }
     ],
-    "connected_documents": ["uaptf-preliminary-assessment", "elizondo-resignation-letter-2017", "ndaa-fy2023-uap-provisions"],
-    "connected_figures": ["luis-elizondo", "hal-puthoff", "chris-mellon"],
+    "connected_documents": [
+      "uaptf-preliminary-assessment",
+      "elizondo-resignation-letter-2017",
+      "ndaa-fy2023-uap-provisions"
+    ],
+    "connected_figures": [
+      "luis-elizondo",
+      "hal-puthoff",
+      "chris-mellon"
+    ],
     "limitations": [
       "TTSA operated as a publicly traded company, raising questions about financial motivations alongside disclosure goals.",
       "Several key personnel departed under disputed circumstances, with conflicting public accounts.",
@@ -261,8 +560,16 @@
       "TTSA's Army CRADA and materials analysis research has not produced publicly released findings."
     ],
     "sources": [
-      { "title": "To The Stars Academy SEC Filing (2017)", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001710274", "type": "Official" },
-      { "title": "Glowing Auras and Black Money (NYT, December 2017)", "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html", "type": "Article" }
+      {
+        "title": "To The Stars Academy SEC Filing (2017)",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001710274",
+        "type": "Official"
+      },
+      {
+        "title": "Glowing Auras and Black Money (NYT, December 2017)",
+        "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
+        "type": "Article"
+      }
     ]
   },
   {
@@ -275,27 +582,71 @@
     "summary": "The Sol Foundation is an independent research and policy organization focused on UAP science, policy, and societal implications, founded in 2023. Its co-founders include Garry Nolan, David Grusch, Karl Nell, Tim Gallaudet, and other credentialed individuals from government and academia. The Foundation has hosted annual symposiums at Stanford and UC Santa Cruz, bringing together scientists, policymakers, and credentialed insiders in a structured academic context for UAP research.",
     "significance": "Sol Foundation represents the institutionalization of UAP research within a credentialed academic framework - a significant step beyond the advocacy-driven model of TTSA. Its founders carry the highest-density concentration of verifiable credentials of any UAP-focused organization: an active Stanford professor, a recent congressional whistleblower, a retired Army colonel with NTI connections, and a former NOAA administrator and Navy rear admiral.",
     "key_personnel": [
-      { "name": "Garry Nolan", "role": "Co-founder; Stanford Professor of Pathology", "figure_id": "garry-nolan" },
-      { "name": "David Grusch", "role": "Co-founder; UAP whistleblower", "figure_id": "david-grusch" },
-      { "name": "Karl Nell", "role": "Co-founder; Retired Army Colonel", "figure_id": "karl-nell" },
-      { "name": "Tim Gallaudet", "role": "Co-founder; Former NOAA Administrator and Navy Rear Admiral", "figure_id": "tim-gallaudet" },
-      { "name": "Jacques Vallee", "role": "Senior Advisor", "figure_id": "jacques-vallee" },
-      { "name": "Charles McCullough", "role": "Symposium participant; former ICIG" }
+      {
+        "name": "Garry Nolan",
+        "role": "Co-founder; Stanford Professor of Pathology",
+        "figure_id": "garry-nolan"
+      },
+      {
+        "name": "David Grusch",
+        "role": "Co-founder; UAP whistleblower",
+        "figure_id": "david-grusch"
+      },
+      {
+        "name": "Karl Nell",
+        "role": "Co-founder; Retired Army Colonel",
+        "figure_id": "karl-nell"
+      },
+      {
+        "name": "Tim Gallaudet",
+        "role": "Co-founder; Former NOAA Administrator and Navy Rear Admiral",
+        "figure_id": "tim-gallaudet"
+      },
+      {
+        "name": "Jacques Vallee",
+        "role": "Senior Advisor",
+        "figure_id": "jacques-vallee"
+      },
+      {
+        "name": "Charles McCullough",
+        "role": "Symposium participant; former ICIG"
+      }
     ],
     "key_events": [
-      { "year": "2023", "event": "Sol Foundation established. First annual symposium held at Stanford University, featuring Grusch, Nell, Nolan, and other credentialed speakers." },
-      { "year": "2024", "event": "Second annual symposium held at UC Santa Cruz, expanding the roster of academic and policy participants." }
+      {
+        "year": "2023",
+        "event": "Sol Foundation established. First annual symposium held at Stanford University, featuring Grusch, Nell, Nolan, and other credentialed speakers."
+      },
+      {
+        "year": "2024",
+        "event": "Second annual symposium held at UC Santa Cruz, expanding the roster of academic and policy participants."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["garry-nolan", "david-grusch", "karl-nell", "tim-gallaudet", "jacques-vallee", "luis-elizondo"],
+    "connected_figures": [
+      "garry-nolan",
+      "david-grusch",
+      "karl-nell",
+      "tim-gallaudet",
+      "jacques-vallee",
+      "luis-elizondo"
+    ],
     "limitations": [
       "Sol Foundation is a young organization with a limited track record of published research output.",
       "The dual role of several founders as both active disclosure advocates and academic researchers creates potential conflicts of interest.",
       "Symposium content is selectively recorded and released, limiting independent review."
     ],
     "sources": [
-      { "title": "Sol Foundation Official Website", "url": "https://www.thesolfoundation.org", "type": "Official" },
-      { "title": "Sol Foundation Symposium 2023 Recordings", "url": "https://www.youtube.com/@_Solfoundation", "type": "Video" }
+      {
+        "title": "Sol Foundation Official Website",
+        "url": "https://www.thesolfoundation.org",
+        "type": "Official"
+      },
+      {
+        "title": "Sol Foundation Symposium 2023 Recordings",
+        "url": "https://www.youtube.com/@_Solfoundation",
+        "type": "Video"
+      }
     ]
   },
   {
@@ -308,27 +659,66 @@
     "summary": "The National Institute for Discovery Science was a privately funded scientific research organization established by real estate developer Robert Bigelow in 1995. NIDS employed credentialed scientists and investigators to study UAP, cattle mutilations, and anomalous phenomena, with a particular focus on Skinwalker Ranch in Utah. Eric Davis served as a visiting research scientist; Jacques Vallee as a scientific advisor. NIDS dissolved in 2004, with its personnel and research infrastructure transitioning into Bigelow Aerospace Advanced Space Studies (BAASS), which later won the AAWSAP contract.",
     "significance": "NIDS established the institutional infrastructure and credentialed personnel network that would eventually win the U.S. government's $22M AAWSAP contract. Its methodological framework - combining scientific rigor with open-minded inquiry into anomalous phenomena - directly influenced both the AAWSAP research approach and the subsequent TTSA model. The NIDS-to-BAASS-to-AAWSAP lineage is the clearest documented pathway from private UAP research to classified government programs.",
     "key_personnel": [
-      { "name": "Robert Bigelow", "role": "Founder and primary funder", "figure_id": "robert-bigelow" },
-      { "name": "Eric Davis", "role": "Visiting Research Scientist", "figure_id": "eric-davis" },
-      { "name": "Jacques Vallee", "role": "Scientific Advisor", "figure_id": "jacques-vallee" },
-      { "name": "Colm Kelleher", "role": "Deputy Administrator; led Skinwalker Ranch investigation" }
+      {
+        "name": "Robert Bigelow",
+        "role": "Founder and primary funder",
+        "figure_id": "robert-bigelow"
+      },
+      {
+        "name": "Eric Davis",
+        "role": "Visiting Research Scientist",
+        "figure_id": "eric-davis"
+      },
+      {
+        "name": "Jacques Vallee",
+        "role": "Scientific Advisor",
+        "figure_id": "jacques-vallee"
+      },
+      {
+        "name": "Colm Kelleher",
+        "role": "Deputy Administrator; led Skinwalker Ranch investigation"
+      }
     ],
     "key_events": [
-      { "year": "1995", "event": "NIDS established by Robert Bigelow following his acquisition of Skinwalker Ranch from the Sherman family." },
-      { "year": "1996-2004", "event": "NIDS conducts field investigations at Skinwalker Ranch and broader UAP research. Publishes findings in peer-reviewed journals and internal reports." },
-      { "year": "2004", "event": "NIDS formally dissolved. Key personnel transition to Bigelow Aerospace and BAASS." },
-      { "year": "2008", "event": "BAASS (the NIDS successor within Bigelow Aerospace) wins the $22M AAWSAP government contract." }
+      {
+        "year": "1995",
+        "event": "NIDS established by Robert Bigelow following his acquisition of Skinwalker Ranch from the Sherman family."
+      },
+      {
+        "year": "1996-2004",
+        "event": "NIDS conducts field investigations at Skinwalker Ranch and broader UAP research. Publishes findings in peer-reviewed journals and internal reports."
+      },
+      {
+        "year": "2004",
+        "event": "NIDS formally dissolved. Key personnel transition to Bigelow Aerospace and BAASS."
+      },
+      {
+        "year": "2008",
+        "event": "BAASS (the NIDS successor within Bigelow Aerospace) wins the $22M AAWSAP government contract."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["robert-bigelow", "eric-davis", "jacques-vallee", "hal-puthoff"],
+    "connected_figures": [
+      "robert-bigelow",
+      "eric-davis",
+      "jacques-vallee",
+      "hal-puthoff"
+    ],
     "limitations": [
       "NIDS published limited peer-reviewed research relative to its stated scientific mandate.",
       "The Skinwalker Ranch investigation has not been independently replicated.",
       "NIDS's private funding model and lack of government oversight means its internal records have never been subject to FOIA."
     ],
     "sources": [
-      { "title": "Hunt for the Skinwalker (Kelleher & Knapp, 2005)", "type": "Book" },
-      { "title": "NIDS Published Papers Archive", "url": "https://www.skinwalkerranch.org", "type": "Reference" }
+      {
+        "title": "Hunt for the Skinwalker (Kelleher & Knapp, 2005)",
+        "type": "Book"
+      },
+      {
+        "title": "NIDS Published Papers Archive",
+        "url": "https://www.skinwalkerranch.org",
+        "type": "Reference"
+      }
     ]
   },
   {
@@ -341,29 +731,78 @@
     "summary": "Bigelow Aerospace was a private aerospace company founded by Robert Bigelow focused on expandable space habitat technology, but its Advanced Space Studies division (BAASS) became the primary contractor for the U.S. government's $22M AAWSAP UAP research program (2008-2012). BAASS employed physicists, intelligence veterans, and field investigators and conducted both technical report production (38 DIRDs) and field investigations including at Skinwalker Ranch. Bigelow Aerospace filed for bankruptcy in 2020.",
     "significance": "Bigelow Aerospace and its BAASS division represent the most documented intersection of private aerospace enterprise with classified U.S. government UAP programs. The $22M AAWSAP contract - secured through Senator Reid's advocacy - is the largest confirmed government UAP expenditure in the public record. BAASS's network of scientific personnel, including Hal Puthoff, Eric Davis, and others, became the foundation of the post-2017 disclosure ecosystem.",
     "key_personnel": [
-      { "name": "Robert Bigelow", "role": "Founder and owner", "figure_id": "robert-bigelow" },
-      { "name": "Hal Puthoff", "role": "BAASS scientific research", "figure_id": "hal-puthoff" },
-      { "name": "Eric Davis", "role": "BAASS researcher; DIRD contributor", "figure_id": "eric-davis" },
-      { "name": "Harry Reid", "role": "Secured AAWSAP funding for BAASS through Senate appropriations", "figure_id": "harry-reid" }
+      {
+        "name": "Robert Bigelow",
+        "role": "Founder and owner",
+        "figure_id": "robert-bigelow"
+      },
+      {
+        "name": "Hal Puthoff",
+        "role": "BAASS scientific research",
+        "figure_id": "hal-puthoff"
+      },
+      {
+        "name": "Eric Davis",
+        "role": "BAASS researcher; DIRD contributor",
+        "figure_id": "eric-davis"
+      },
+      {
+        "name": "Harry Reid",
+        "role": "Secured AAWSAP funding for BAASS through Senate appropriations",
+        "figure_id": "harry-reid"
+      }
     ],
     "key_events": [
-      { "year": "1999", "event": "Bigelow Aerospace founded with a focus on commercial space habitats." },
-      { "year": "2004", "event": "NIDS dissolved and folded into Bigelow Aerospace's emerging BAASS structure." },
-      { "year": "2008", "event": "BAASS wins the $22M AAWSAP contract from the DIA, becoming the primary UAP research contractor for the U.S. government." },
-      { "year": "2008-2012", "event": "BAASS produces 38 Defense Intelligence Reference Documents and conducts field investigations." },
-      { "year": "2017", "event": "Robert Bigelow tells CBS 60 Minutes he is 'absolutely convinced' extraterrestrials have visited Earth and are currently active." },
-      { "year": "2020", "event": "Bigelow Aerospace files for bankruptcy; BAASS activities wind down." }
+      {
+        "year": "1999",
+        "event": "Bigelow Aerospace founded with a focus on commercial space habitats."
+      },
+      {
+        "year": "2004",
+        "event": "NIDS dissolved and folded into Bigelow Aerospace's emerging BAASS structure."
+      },
+      {
+        "year": "2008",
+        "event": "BAASS wins the $22M AAWSAP contract from the DIA, becoming the primary UAP research contractor for the U.S. government."
+      },
+      {
+        "year": "2008-2012",
+        "event": "BAASS produces 38 Defense Intelligence Reference Documents and conducts field investigations."
+      },
+      {
+        "year": "2017",
+        "event": "Robert Bigelow tells CBS 60 Minutes he is 'absolutely convinced' extraterrestrials have visited Earth and are currently active."
+      },
+      {
+        "year": "2020",
+        "event": "Bigelow Aerospace files for bankruptcy; BAASS activities wind down."
+      }
     ],
-    "connected_documents": ["ndaa-fy2023-uap-provisions"],
-    "connected_figures": ["robert-bigelow", "hal-puthoff", "eric-davis", "harry-reid", "james-lacatski"],
+    "connected_documents": [
+      "ndaa-fy2023-uap-provisions"
+    ],
+    "connected_figures": [
+      "robert-bigelow",
+      "hal-puthoff",
+      "eric-davis",
+      "harry-reid",
+      "james-lacatski"
+    ],
     "limitations": [
       "BAASS's internal research records and field investigation reports have never been independently reviewed.",
       "The dual commercial/classified nature of Bigelow Aerospace makes independent assessment of its UAP work difficult.",
       "Key personnel accounts of BAASS activities have not been formally corroborated under oath."
     ],
     "sources": [
-      { "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)", "type": "Book" },
-      { "title": "Robert Bigelow CBS 60 Minutes Interview (2017)", "url": "https://www.cbsnews.com/news/are-ufos-a-threat-to-national-security-60-minutes-2021-05-16/", "type": "Television" }
+      {
+        "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)",
+        "type": "Book"
+      },
+      {
+        "title": "Robert Bigelow CBS 60 Minutes Interview (2017)",
+        "url": "https://www.cbsnews.com/news/are-ufos-a-threat-to-national-security-60-minutes-2021-05-16/",
+        "type": "Television"
+      }
     ]
   },
   {
@@ -376,21 +815,54 @@
     "summary": "The National Investigations Committee on Aerial Phenomena was the largest and most influential civilian UFO research organization of the 20th century. Founded in 1956 and chaired by retired Marine Major Donald Keyhoe, NICAP pursued a two-track strategy: rigorous case documentation and direct congressional lobbying for hearings and disclosure. At its peak, NICAP had over 14,000 members, 50 regional subcommittees, and a formal investigative methodology that prioritized credentialed witnesses - particularly military pilots, air traffic controllers, and radar operators. The organization was officially dissolved in 1980 but its case files, preserved by researcher Fran Ridge, remain one of the most extensively cross-referenced civilian UAP databases in existence.",
     "significance": "NICAP established the foundational methodology for civilian UAP investigation: credentialed witnesses, multi-source corroboration, and systematic documentation. Its lobbying directly contributed to the 1966 congressional hearings that exposed Project Blue Book's shortcomings and led to the Condon Committee review. The NICAP case files, covering 1947-1989 and cross-referenced against Project Blue Book records, are a primary data source for DECUR's timeline - 251 entries link directly to NICAP case files with BBU (Blue Book Unknown) classification or direct military/radar involvement.",
     "key_personnel": [
-      { "name": "Donald Keyhoe", "role": "Director (1957-1969)", "figure_id": null },
-      { "name": "Fran Ridge", "role": "Archivist and digital preservation (1990s-present)" },
-      { "name": "Richard Hall", "role": "Assistant Director; editor of The UFO Evidence (1964)" }
+      {
+        "name": "Donald Keyhoe",
+        "role": "Director (1957-1969)",
+        "figure_id": null
+      },
+      {
+        "name": "Fran Ridge",
+        "role": "Archivist and digital preservation (1990s-present)"
+      },
+      {
+        "name": "Richard Hall",
+        "role": "Assistant Director; editor of The UFO Evidence (1964)"
+      }
     ],
     "key_events": [
-      { "year": "1956", "event": "NICAP founded in Washington D.C. by T. Townsend Brown; Keyhoe joins as director the following year." },
-      { "year": "1960", "event": "NICAP membership peaks at over 14,000. Keyhoe's direct congressional lobbying begins producing formal UAP hearing requests." },
-      { "year": "1964", "event": "NICAP publishes The UFO Evidence, a comprehensive 184-page case compilation presented to Congress, documenting 746 cases from credentialed witnesses." },
-      { "year": "1966", "event": "Congressional hearings on Project Blue Book partly triggered by NICAP's sustained advocacy. Air Force commissions the Condon study in response." },
-      { "year": "1969", "event": "Keyhoe replaced in controversial circumstances. NICAP's influence begins to decline following the Condon Report's publication." },
-      { "year": "1980", "event": "NICAP formally dissolved. Case files eventually preserved digitally by Fran Ridge at nicap.org." },
-      { "year": "2000s", "event": "Fran Ridge completes digital chronology of NICAP cases, cross-referenced with Blue Book records and primary witness accounts." }
+      {
+        "year": "1956",
+        "event": "NICAP founded in Washington D.C. by T. Townsend Brown; Keyhoe joins as director the following year."
+      },
+      {
+        "year": "1960",
+        "event": "NICAP membership peaks at over 14,000. Keyhoe's direct congressional lobbying begins producing formal UAP hearing requests."
+      },
+      {
+        "year": "1964",
+        "event": "NICAP publishes The UFO Evidence, a comprehensive 184-page case compilation presented to Congress, documenting 746 cases from credentialed witnesses."
+      },
+      {
+        "year": "1966",
+        "event": "Congressional hearings on Project Blue Book partly triggered by NICAP's sustained advocacy. Air Force commissions the Condon study in response."
+      },
+      {
+        "year": "1969",
+        "event": "Keyhoe replaced in controversial circumstances. NICAP's influence begins to decline following the Condon Report's publication."
+      },
+      {
+        "year": "1980",
+        "event": "NICAP formally dissolved. Case files eventually preserved digitally by Fran Ridge at nicap.org."
+      },
+      {
+        "year": "2000s",
+        "event": "Fran Ridge completes digital chronology of NICAP cases, cross-referenced with Blue Book records and primary witness accounts."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["j-allen-hynek"],
+    "connected_figures": [
+      "j-allen-hynek"
+    ],
     "limitations": [
       "NICAP's focus on credentialed witnesses and radar confirmation cases excluded many civilian-only reports, introducing selection bias toward military-adjacent incidents.",
       "The organizational disruption following Keyhoe's 1969 removal resulted in gaps in case documentation for the 1969-1980 period.",
@@ -398,9 +870,19 @@
       "The digital archive, while extensive, relies on Fran Ridge's curation methodology, which itself applies selective inclusion criteria."
     ],
     "sources": [
-      { "title": "NICAP.org - Fran Ridge Digital Archive", "url": "https://www.nicap.org", "type": "Primary Archive" },
-      { "title": "The UFO Evidence (Hall, 1964)", "type": "Published Report" },
-      { "title": "The Flying Saucers Are Real (Keyhoe, 1950)", "type": "Book" }
+      {
+        "title": "NICAP.org - Fran Ridge Digital Archive",
+        "url": "https://www.nicap.org",
+        "type": "Primary Archive"
+      },
+      {
+        "title": "The UFO Evidence (Hall, 1964)",
+        "type": "Published Report"
+      },
+      {
+        "title": "The Flying Saucers Are Real (Keyhoe, 1950)",
+        "type": "Book"
+      }
     ]
   },
   {
@@ -413,18 +895,48 @@
     "summary": "The Mutual UFO Network is the largest currently active civilian UFO/UAP research organization in the world. Founded in 1969 following NICAP's decline, MUFON developed a formal investigation methodology using trained field investigators and a standardized case reporting system (the CMS - Case Management System). The organization has chapters in all 50 U.S. states and in over 40 countries, and has accumulated more than 130,000 reported cases in its database. MUFON publishes the MUFON UFO Journal and organizes an annual international symposium. The organization has drawn criticism for inconsistent vetting of investigators and occasional high-profile controversies, but remains the primary civilian infrastructure for systematic UAP case collection in the United States.",
     "significance": "MUFON's CMS database represents the largest civilian UAP case repository in existence - a resource explicitly cited by UAP researchers and, controversially, by government contractors during AAWSAP. The organization's formal investigator certification program and standardized reporting methodology have influenced how UAP evidence is categorized and presented in civilian discourse, though its independence from government programs has been questioned following revelations of contractor interest in its data.",
     "key_personnel": [
-      { "name": "Walter Andrus", "role": "International Director (1970-2000)" },
-      { "name": "Jan Harzan", "role": "Executive Director (2012-2020)" },
-      { "name": "David MacDonald", "role": "Executive Director (2020-present)" }
+      {
+        "name": "Walter Andrus",
+        "role": "International Director (1970-2000)"
+      },
+      {
+        "name": "Jan Harzan",
+        "role": "Executive Director (2012-2020)"
+      },
+      {
+        "name": "David MacDonald",
+        "role": "Executive Director (2020-present)"
+      }
     ],
     "key_events": [
-      { "year": "1969", "event": "MUFON founded in Quincy, Illinois by Walter Andrus and Allen Utke following NICAP's decline." },
-      { "year": "1971", "event": "First MUFON UFO Symposium held. Annual symposia continue to present day." },
-      { "year": "1990s", "event": "MUFON develops the Field Investigator Certification program, standardizing evidence collection and chain-of-custody protocols." },
-      { "year": "2009", "event": "MUFON Case Management System (CMS) launched, creating a publicly searchable online case database." },
-      { "year": "2009", "event": "MUFON enters a controversial consulting arrangement with Bigelow Aerospace Advanced Space Studies (BAASS) for case data access, raising independence concerns." },
-      { "year": "2019", "event": "Jan Harzan departs amid controversy. Organization undergoes governance restructuring." },
-      { "year": "2023", "event": "MUFON database cited in broader UAP discourse as Congress increases oversight; MUFON adjusts its data sharing policies." }
+      {
+        "year": "1969",
+        "event": "MUFON founded in Quincy, Illinois by Walter Andrus and Allen Utke following NICAP's decline."
+      },
+      {
+        "year": "1971",
+        "event": "First MUFON UFO Symposium held. Annual symposia continue to present day."
+      },
+      {
+        "year": "1990s",
+        "event": "MUFON develops the Field Investigator Certification program, standardizing evidence collection and chain-of-custody protocols."
+      },
+      {
+        "year": "2009",
+        "event": "MUFON Case Management System (CMS) launched, creating a publicly searchable online case database."
+      },
+      {
+        "year": "2009",
+        "event": "MUFON enters a controversial consulting arrangement with Bigelow Aerospace Advanced Space Studies (BAASS) for case data access, raising independence concerns."
+      },
+      {
+        "year": "2019",
+        "event": "Jan Harzan departs amid controversy. Organization undergoes governance restructuring."
+      },
+      {
+        "year": "2023",
+        "event": "MUFON database cited in broader UAP discourse as Congress increases oversight; MUFON adjusts its data sharing policies."
+      }
     ],
     "connected_documents": [],
     "connected_figures": [],
@@ -435,9 +947,20 @@
       "MUFON's organizational structure has been subject to internal governance conflicts that have periodically disrupted research continuity."
     ],
     "sources": [
-      { "title": "MUFON Official Website", "url": "https://www.mufon.com", "type": "Official" },
-      { "title": "MUFON Case Management System", "url": "https://www.mufoncms.com", "type": "Database" },
-      { "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)", "type": "Book" }
+      {
+        "title": "MUFON Official Website",
+        "url": "https://www.mufon.com",
+        "type": "Official"
+      },
+      {
+        "title": "MUFON Case Management System",
+        "url": "https://www.mufoncms.com",
+        "type": "Database"
+      },
+      {
+        "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)",
+        "type": "Book"
+      }
     ]
   },
   {
@@ -450,17 +973,37 @@
     "summary": "The Joint Special Operations Command is the United States military's primary command for the most elite and secretive special operations forces, including Delta Force (1st SFOD-D) and SEAL Team Six (DEVGRU). Established in 1980 following the failed Operation Eagle Claw, JSOC conducts counterterrorism, direct action, and sensitive site exploitation missions. In the context of UAP disclosure, JSOC has been specifically identified by David Grusch in congressional testimony as the command responsible for conducting crash retrieval and exploitation operations on non-human intelligence craft. Grusch stated that JSOC units provide the covert operational capability for what he described as a legacy UAP crash retrieval and reverse-engineering program operating outside normal congressional oversight.",
     "significance": "JSOC's significance to the UAP disclosure narrative rests almost entirely on David Grusch's sworn congressional testimony. Grusch named JSOC as the operational arm conducting physical UAP crash retrievals, providing the most specific and credentialed accusation linking an identified military command to alleged crash retrieval operations. JSOC's existing structure - operating with extraordinary secrecy, minimal public oversight, and a mandate for sensitive site exploitation - makes it operationally plausible for the role Grusch described.",
     "key_personnel": [
-      { "name": "Gen. Stanley McChrystal", "role": "JSOC Commander (2003-2008); oversaw major JSOC expansion" },
-      { "name": "Adm. William McRaven", "role": "JSOC Commander (2008-2011); commanded Bin Laden operation" }
+      {
+        "name": "Gen. Stanley McChrystal",
+        "role": "JSOC Commander (2003-2008); oversaw major JSOC expansion"
+      },
+      {
+        "name": "Adm. William McRaven",
+        "role": "JSOC Commander (2008-2011); commanded Bin Laden operation"
+      }
     ],
     "key_events": [
-      { "year": "1980", "event": "JSOC established at Fort Bragg following the catastrophic failure of Operation Eagle Claw (Iran hostage rescue)." },
-      { "year": "1987", "event": "JSOC's operational mandate expands to include sensitive site exploitation - the seizure and analysis of enemy facilities and materials." },
-      { "year": "2001", "event": "Post-9/11 expansion dramatically increases JSOC's budget, personnel, and operational tempo." },
-      { "year": "2023", "event": "David Grusch, in sworn congressional testimony, identifies JSOC as the command conducting crash retrieval operations on non-human intelligence craft, naming it as the operational arm of an alleged classified UAP legacy program." }
+      {
+        "year": "1980",
+        "event": "JSOC established at Fort Bragg following the catastrophic failure of Operation Eagle Claw (Iran hostage rescue)."
+      },
+      {
+        "year": "1987",
+        "event": "JSOC's operational mandate expands to include sensitive site exploitation - the seizure and analysis of enemy facilities and materials."
+      },
+      {
+        "year": "2001",
+        "event": "Post-9/11 expansion dramatically increases JSOC's budget, personnel, and operational tempo."
+      },
+      {
+        "year": "2023",
+        "event": "David Grusch, in sworn congressional testimony, identifies JSOC as the command conducting crash retrieval operations on non-human intelligence craft, naming it as the operational arm of an alleged classified UAP legacy program."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["david-grusch"],
+    "connected_figures": [
+      "david-grusch"
+    ],
     "limitations": [
       "JSOC's role in alleged UAP crash retrieval rests almost entirely on Grusch's testimony. No corroborating documents, personnel accounts, or physical evidence have been made public.",
       "JSOC's secrecy makes independent verification of any specific operational claim nearly impossible by design.",
@@ -468,9 +1011,20 @@
       "The operational plausibility of JSOC conducting such missions is not evidence that it has done so."
     ],
     "sources": [
-      { "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)", "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/", "type": "Congressional Record" },
-      { "title": "Relentless Strike: The Secret History of Joint Special Operations Command (Naylor, 2015)", "type": "Book" },
-      { "title": "JSOC Official Fact Sheet", "url": "https://www.socom.mil/JSOC/Pages/default.aspx", "type": "Official" }
+      {
+        "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+        "type": "Congressional Record"
+      },
+      {
+        "title": "Relentless Strike: The Secret History of Joint Special Operations Command (Naylor, 2015)",
+        "type": "Book"
+      },
+      {
+        "title": "JSOC Official Fact Sheet",
+        "url": "https://www.socom.mil/JSOC/Pages/default.aspx",
+        "type": "Official"
+      }
     ]
   },
   {
@@ -483,19 +1037,45 @@
     "summary": "The Air Force Office of Special Investigations is the U.S. Air Force's primary counterintelligence, criminal investigation, and human intelligence organization. Established in 1948, AFOSI operates directly under the Inspector General of the Air Force and conducts investigations into crimes against Air Force personnel and assets, including counterespionage and insider threat operations. In the UAP context, AFOSI achieved particular notoriety through its agents' involvement in the 1980 Kirtland Air Force Base UAP incident and through agent Richard Doty's role in the systematic disinformation campaign against UAP researchers Paul Bennewitz and others. The Doty case established AFOSI as a documented institutional actor in the deliberate suppression and manipulation of UAP information.",
     "significance": "AFOSI's documented role in the Paul Bennewitz case - where AFOSI agent Richard Doty actively fed false UAP-related information to a civilian researcher, contributing to Bennewitz's psychological breakdown - represents one of the most thoroughly documented instances of U.S. government actors deliberately manipulating UAP discourse. The 1980 Kirtland AFB security report, filed by AFOSI agent Richard Doty, is simultaneously a primary source document for a significant UAP sighting and an example of institutional documentation that was officially suppressed and later leaked through FOIA efforts.",
     "key_personnel": [
-      { "name": "Richard Doty", "role": "AFOSI Special Agent (1979-1988); central figure in Bennewitz disinformation operation" },
-      { "name": "Jerry Miller", "role": "AFOSI agent who investigated the 1964 Socorro incident" }
+      {
+        "name": "Richard Doty",
+        "role": "AFOSI Special Agent (1979-1988); central figure in Bennewitz disinformation operation"
+      },
+      {
+        "name": "Jerry Miller",
+        "role": "AFOSI agent who investigated the 1964 Socorro incident"
+      }
     ],
     "key_events": [
-      { "year": "1948", "event": "Air Force Office of Special Investigations established as reorganization of the former Counter Intelligence Corps functions within the Air Force." },
-      { "year": "1964", "event": "AFOSI agents investigate the Lonnie Zamora/Socorro incident - one of Blue Book's most credible unresolved cases." },
-      { "year": "1980", "event": "AFOSI agent Richard Doty files a security report documenting a multi-day UAP incident at Kirtland AFB. The report is later leaked through FOIA efforts and becomes a key primary source document." },
-      { "year": "1980-1988", "event": "AFOSI agent Richard Doty conducts a documented disinformation campaign against civilian researcher Paul Bennewitz, providing fabricated UAP documents and feeding false information." },
-      { "year": "1988", "event": "Doty leaves AFOSI. His activities are later documented in multiple books and documentary films, including Mirage Men (2013)." },
-      { "year": "2023", "event": "Grusch's congressional testimony and subsequent AFOSI-related FOIA requests revive scrutiny of the agency's historical UAP-related activities." }
+      {
+        "year": "1948",
+        "event": "Air Force Office of Special Investigations established as reorganization of the former Counter Intelligence Corps functions within the Air Force."
+      },
+      {
+        "year": "1964",
+        "event": "AFOSI agents investigate the Lonnie Zamora/Socorro incident - one of Blue Book's most credible unresolved cases."
+      },
+      {
+        "year": "1980",
+        "event": "AFOSI agent Richard Doty files a security report documenting a multi-day UAP incident at Kirtland AFB. The report is later leaked through FOIA efforts and becomes a key primary source document."
+      },
+      {
+        "year": "1980-1988",
+        "event": "AFOSI agent Richard Doty conducts a documented disinformation campaign against civilian researcher Paul Bennewitz, providing fabricated UAP documents and feeding false information."
+      },
+      {
+        "year": "1988",
+        "event": "Doty leaves AFOSI. His activities are later documented in multiple books and documentary films, including Mirage Men (2013)."
+      },
+      {
+        "year": "2023",
+        "event": "Grusch's congressional testimony and subsequent AFOSI-related FOIA requests revive scrutiny of the agency's historical UAP-related activities."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["j-allen-hynek"],
+    "connected_figures": [
+      "j-allen-hynek"
+    ],
     "limitations": [
       "Richard Doty's documented disinformation activities make any AFOSI-sourced UAP documentation inherently suspect and difficult to authenticate.",
       "AFOSI investigations remain classified; the public record represents only what has been leaked or FOIA-released, not the full scope of the agency's UAP-related work.",
@@ -503,9 +1083,19 @@
       "The Kirtland AFB report, while widely cited, has not been officially declassified and its provenance is disputed."
     ],
     "sources": [
-      { "title": "Mirage Men (documentary, 2013)", "url": "https://www.imdb.com/title/tt2375543/", "type": "Documentary" },
-      { "title": "Mirage Men (Pilkington, 2010)", "type": "Book" },
-      { "title": "Kirtland AFB Security Report (Doty, 1980) - FOIA release", "type": "FOIA Document" }
+      {
+        "title": "Mirage Men (documentary, 2013)",
+        "url": "https://www.imdb.com/title/tt2375543/",
+        "type": "Documentary"
+      },
+      {
+        "title": "Mirage Men (Pilkington, 2010)",
+        "type": "Book"
+      },
+      {
+        "title": "Kirtland AFB Security Report (Doty, 1980) - FOIA release",
+        "type": "FOIA Document"
+      }
     ]
   },
   {
@@ -519,9 +1109,18 @@
     "significance": "The IPU is significant within the disclosure narrative as the alleged origin point of the U.S. government's crash retrieval program - predating even the first official investigation (Project Sign, 1947). If authentic, the leaked documents describing IPU protocols would represent the earliest known government framework for responding to UAP crash incidents. The unit's existence, if confirmed, would substantially advance the case that the U.S. government had an organized response to UAP incidents from the earliest days of the modern era, rather than these efforts beginning with Project Blue Book.",
     "key_personnel": [],
     "key_events": [
-      { "year": "1947", "event": "IPU allegedly activated following the Roswell incident to provide first-response and documentation capability for anomalous aerial phenomenon incidents." },
-      { "year": "1984", "event": "Majestic-12 documents begin circulating; IPU referenced in these documents as a precursor organization to formal classified UAP programs." },
-      { "year": "1990s", "event": "Researchers Brad Sparks and Barry Greenwood attempt FOIA requests for IPU records; responses neither confirm nor deny the unit's existence." }
+      {
+        "year": "1947",
+        "event": "IPU allegedly activated following the Roswell incident to provide first-response and documentation capability for anomalous aerial phenomenon incidents."
+      },
+      {
+        "year": "1984",
+        "event": "Majestic-12 documents begin circulating; IPU referenced in these documents as a precursor organization to formal classified UAP programs."
+      },
+      {
+        "year": "1990s",
+        "event": "Researchers Brad Sparks and Barry Greenwood attempt FOIA requests for IPU records; responses neither confirm nor deny the unit's existence."
+      }
     ],
     "connected_documents": [],
     "connected_figures": [],
@@ -532,8 +1131,15 @@
       "The name 'Interplanetary Phenomenon Unit' is considered anachronistic by some historians - the terminology post-dates what it allegedly describes."
     ],
     "sources": [
-      { "title": "MJ-12 Documents - National Security Archive", "url": "https://nsarchive.gwu.edu/briefing-book/intelligence/2019-08-06/ufos-mj-12-government-really-hiding", "type": "Primary Archive" },
-      { "title": "The UFO Cover-Up: What the Government Won't Say (Fawcett & Greenwood, 1984)", "type": "Book" }
+      {
+        "title": "MJ-12 Documents - National Security Archive",
+        "url": "https://nsarchive.gwu.edu/briefing-book/intelligence/2019-08-06/ufos-mj-12-government-really-hiding",
+        "type": "Primary Archive"
+      },
+      {
+        "title": "The UFO Cover-Up: What the Government Won't Say (Fawcett & Greenwood, 1984)",
+        "type": "Book"
+      }
     ]
   },
   {
@@ -547,11 +1153,19 @@
     "significance": "OGA's significance lies in extending the alleged crash retrieval program beyond U.S. territory. If Grusch's account is accurate, OGA represents the CIA's institutional mechanism for international UAP material recovery - addressing the logical question of how the U.S. could maintain a retrieval program for events that occur globally. The 2003 establishment date, if accurate, would coincide with the post-9/11 CIA reorganization that created significant new authorities for overseas operations. OGA has not been acknowledged by the CIA, and the claim rests almost entirely on Grusch's testimony and the accounts of his named sources.",
     "key_personnel": [],
     "key_events": [
-      { "year": "2003", "event": "OGA allegedly established within CIA following post-9/11 reorganization, with a mandate to facilitate access to non-human intelligence craft recovered abroad." },
-      { "year": "2023", "event": "David Grusch identifies the OGA in disclosures to journalists and subsequent congressional testimony as a key node in the alleged international crash retrieval coordination structure." }
+      {
+        "year": "2003",
+        "event": "OGA allegedly established within CIA following post-9/11 reorganization, with a mandate to facilitate access to non-human intelligence craft recovered abroad."
+      },
+      {
+        "year": "2023",
+        "event": "David Grusch identifies the OGA in disclosures to journalists and subsequent congressional testimony as a key node in the alleged international crash retrieval coordination structure."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["david-grusch"],
+    "connected_figures": [
+      "david-grusch"
+    ],
     "limitations": [
       "OGA's existence in the UAP context rests entirely on David Grusch's testimony and the accounts he attributes to sources he has not publicly named.",
       "The CIA has not acknowledged an 'Office of Global Access' with a UAP mandate, and standard FOIA approaches to such a highly classified alleged program yield no results.",
@@ -559,8 +1173,16 @@
       "The term 'OGA' (Other Government Agency) is also used generically in U.S. intelligence community parlance as a euphemism for the CIA in unclassified contexts, creating potential ambiguity in sourcing."
     ],
     "sources": [
-      { "title": "The Debrief - Grusch Disclosure Article (Coulthart/Wurtzel, June 2023)", "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/", "type": "Journalism" },
-      { "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)", "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/", "type": "Congressional Record" }
+      {
+        "title": "The Debrief - Grusch Disclosure Article (Coulthart/Wurtzel, June 2023)",
+        "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/",
+        "type": "Journalism"
+      },
+      {
+        "title": "House Oversight Subcommittee UAP Hearing - Grusch Testimony (July 26, 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+        "type": "Congressional Record"
+      }
     ]
   },
   {
@@ -573,15 +1195,36 @@
     "summary": "The Strategic Defense Initiative, informally known as 'Star Wars,' was a proposed U.S. missile defense system announced by President Reagan in March 1983. SDI proposed to develop ground-based and space-based systems to protect the United States from attack by ballistic nuclear missiles. The program was officially terminated in 1993 and reorganized as the Ballistic Missile Defense Organization. In the UAP context, SDI has been cited by multiple researchers and whistleblowers as having served as a funding cover for classified programs related to advanced aerospace research, including alleged reverse-engineering of non-human technology. Lt. Col. Philip Corso specifically claimed in The Day After Roswell that SDI-era research was seeded with recovered technology.",
     "significance": "SDI's significance to UAP research is twofold. First, as a massive classified research program with unparalleled access to black budget funding and advanced aerospace contractors, it provided institutional cover for programs that could not be publicly justified. Second, Philip Corso's specific claim - that SDI was the vehicle through which recovered extraterrestrial technology was seeded into defense contractor research - made SDI a central element of the disclosure narrative for an entire generation of researchers. While Corso's specific claims remain unverified, the structural argument that SDI's black budget environment provided cover for classified advanced programs is consistent with what is publicly known about how Special Access Programs operate.",
     "key_personnel": [
-      { "name": "Lt. Col. Philip Corso (ret.)", "role": "Former Army R&D officer; claimed SDI was used as cover for seeding recovered ET technology into defense research" },
-      { "name": "Gen. James Abrahamson", "role": "First director of the SDI Organization (1984-1989)" }
+      {
+        "name": "Lt. Col. Philip Corso (ret.)",
+        "role": "Former Army R&D officer; claimed SDI was used as cover for seeding recovered ET technology into defense research"
+      },
+      {
+        "name": "Gen. James Abrahamson",
+        "role": "First director of the SDI Organization (1984-1989)"
+      }
     ],
     "key_events": [
-      { "year": "1983", "event": "President Reagan announces SDI in a nationally televised address, proposing a comprehensive space-based and ground-based missile defense architecture." },
-      { "year": "1984", "event": "SDI Organization established within DoD to manage the program. Annual funding peaks at approximately $3.7 billion." },
-      { "year": "1989", "event": "End of Cold War reduces SDI's political urgency. Program continues but at reduced scale and modified mission." },
-      { "year": "1993", "event": "SDI formally terminated by the Clinton administration. The Ballistic Missile Defense Organization is established as successor." },
-      { "year": "1997", "event": "Philip Corso publishes The Day After Roswell, directly claiming that recovered Roswell technology was seeded into SDI-era defense contractor research through his position in Army R&D." }
+      {
+        "year": "1983",
+        "event": "President Reagan announces SDI in a nationally televised address, proposing a comprehensive space-based and ground-based missile defense architecture."
+      },
+      {
+        "year": "1984",
+        "event": "SDI Organization established within DoD to manage the program. Annual funding peaks at approximately $3.7 billion."
+      },
+      {
+        "year": "1989",
+        "event": "End of Cold War reduces SDI's political urgency. Program continues but at reduced scale and modified mission."
+      },
+      {
+        "year": "1993",
+        "event": "SDI formally terminated by the Clinton administration. The Ballistic Missile Defense Organization is established as successor."
+      },
+      {
+        "year": "1997",
+        "event": "Philip Corso publishes The Day After Roswell, directly claiming that recovered Roswell technology was seeded into SDI-era defense contractor research through his position in Army R&D."
+      }
     ],
     "connected_documents": [],
     "connected_figures": [],
@@ -592,9 +1235,19 @@
       "SDI's actual missile defense research has been extensively documented; no confirmed connection to UAP-related research has emerged from declassified records."
     ],
     "sources": [
-      { "title": "The Day After Roswell (Corso, 1997)", "type": "Book" },
-      { "title": "SDI Program History - DARPA", "url": "https://www.darpa.mil/about-us/timeline/strategic-defense-initiative", "type": "Official" },
-      { "title": "Star Wars: A Defense of the Strategic Defense Initiative (Union of Concerned Scientists, 1987)", "type": "Academic Study" }
+      {
+        "title": "The Day After Roswell (Corso, 1997)",
+        "type": "Book"
+      },
+      {
+        "title": "SDI Program History - DARPA",
+        "url": "https://www.darpa.mil/about-us/timeline/strategic-defense-initiative",
+        "type": "Official"
+      },
+      {
+        "title": "Star Wars: A Defense of the Strategic Defense Initiative (Union of Concerned Scientists, 1987)",
+        "type": "Academic Study"
+      }
     ]
   },
   {
@@ -607,20 +1260,49 @@
     "summary": "The Search for Extraterrestrial Intelligence is a scientific program dedicated to detecting evidence of intelligent life beyond Earth, primarily through the analysis of radio frequency and optical signals. Originating with Frank Drake's Project Ozma in 1960, SETI has evolved from individual academic projects into the institutionalized SETI Institute, founded in 1984 in Mountain View, California. SETI focuses on passive detection of artificial signals from distant civilizations, explicitly distinguishing its methodology from UAP research, which it generally treats as a separate field. The SETI Institute has received funding from NASA, private foundations, and individual donors including Paul Allen, and has conducted the most publicly documented scientific search for extraterrestrial intelligence in history.",
     "significance": "SETI's significance to the DECUR platform is primarily as a methodological and institutional counterpoint. SETI represents the officially sanctioned, publicly funded approach to the question of non-human intelligence - one that explicitly assumes no NHI presence in or near Earth and focuses on extremely distant radio sources. The contrast between SETI's approach and the UAP disclosure community's evidence-based claims about nearby NHI activity is a recurring theme in modern UAP discourse. Garry Nolan, David Grusch, and others in the disclosure community have directly challenged SETI's methodological framing, arguing that evidence for NHI is already present in classified programs rather than requiring detection from light-years away.",
     "key_personnel": [
-      { "name": "Frank Drake", "role": "Pioneer; conducted Project Ozma (1960) and authored the Drake Equation" },
-      { "name": "Jill Tarter", "role": "SETI Institute co-founder and long-time director of SETI research; inspiration for the film Contact" },
-      { "name": "Seth Shostak", "role": "Senior Astronomer; primary public spokesperson for SETI Institute" }
+      {
+        "name": "Frank Drake",
+        "role": "Pioneer; conducted Project Ozma (1960) and authored the Drake Equation"
+      },
+      {
+        "name": "Jill Tarter",
+        "role": "SETI Institute co-founder and long-time director of SETI research; inspiration for the film Contact"
+      },
+      {
+        "name": "Seth Shostak",
+        "role": "Senior Astronomer; primary public spokesperson for SETI Institute"
+      }
     ],
     "key_events": [
-      { "year": "1960", "event": "Frank Drake conducts Project Ozma at Green Bank Observatory - the first systematic SETI observation, targeting Tau Ceti and Epsilon Eridani." },
-      { "year": "1977", "event": "Astronomer Jerry Ehman detects the 'Wow! signal' at Ohio State's Big Ear telescope - the strongest candidate SETI signal ever received; never repeated or explained." },
-      { "year": "1984", "event": "SETI Institute founded in Mountain View, California, institutionalizing SETI research under a dedicated non-profit organization." },
-      { "year": "1993", "event": "NASA terminates its High Resolution Microwave Survey (a congressionally funded SETI program) after one year. Private funding takes over." },
-      { "year": "2007", "event": "Allen Telescope Array begins operations, providing SETI with dedicated radio astronomy capability funded by Paul Allen." },
-      { "year": "2023", "event": "Growing tension between SETI institutional framing and UAP disclosure narrative; Grusch and Nolan publicly argue that evidence for NHI is already in hand, making traditional SETI's framing obsolete." }
+      {
+        "year": "1960",
+        "event": "Frank Drake conducts Project Ozma at Green Bank Observatory - the first systematic SETI observation, targeting Tau Ceti and Epsilon Eridani."
+      },
+      {
+        "year": "1977",
+        "event": "Astronomer Jerry Ehman detects the 'Wow! signal' at Ohio State's Big Ear telescope - the strongest candidate SETI signal ever received; never repeated or explained."
+      },
+      {
+        "year": "1984",
+        "event": "SETI Institute founded in Mountain View, California, institutionalizing SETI research under a dedicated non-profit organization."
+      },
+      {
+        "year": "1993",
+        "event": "NASA terminates its High Resolution Microwave Survey (a congressionally funded SETI program) after one year. Private funding takes over."
+      },
+      {
+        "year": "2007",
+        "event": "Allen Telescope Array begins operations, providing SETI with dedicated radio astronomy capability funded by Paul Allen."
+      },
+      {
+        "year": "2023",
+        "event": "Growing tension between SETI institutional framing and UAP disclosure narrative; Grusch and Nolan publicly argue that evidence for NHI is already in hand, making traditional SETI's framing obsolete."
+      }
     ],
     "connected_documents": [],
-    "connected_figures": ["garry-nolan"],
+    "connected_figures": [
+      "garry-nolan"
+    ],
     "limitations": [
       "SETI's explicit focus on distant radio sources means it is institutionally positioned to ignore evidence of NHI activity closer to Earth, including UAP phenomena.",
       "SETI has received relatively little sustained government funding since NASA's program was terminated in 1993, limiting observational scope.",
@@ -628,9 +1310,20 @@
       "SETI's institutional stance of treating UAP as outside its domain creates a notable blind spot if NHI is already present or interacting with Earth."
     ],
     "sources": [
-      { "title": "SETI Institute Official Website", "url": "https://www.seti.org", "type": "Official" },
-      { "title": "Is Anyone Out There? (Drake & Sobel, 1992)", "type": "Book" },
-      { "title": "The SETI League", "url": "https://www.setileague.org", "type": "Reference" }
+      {
+        "title": "SETI Institute Official Website",
+        "url": "https://www.seti.org",
+        "type": "Official"
+      },
+      {
+        "title": "Is Anyone Out There? (Drake & Sobel, 1992)",
+        "type": "Book"
+      },
+      {
+        "title": "The SETI League",
+        "url": "https://www.setileague.org",
+        "type": "Reference"
+      }
     ]
   },
   {
@@ -643,17 +1336,40 @@
     "summary": "The UAP Task Force was established in August 2020 within the Office of Naval Intelligence by Deputy Secretary of Defense David Norquist, formally institutionalizing UAP investigation at the Pentagon level for the first time since Project Blue Book's closure in 1969. The UAPTF produced the landmark June 25, 2021 Preliminary Assessment - the first official government report to acknowledge 143 unexplained incidents out of 144 reviewed. The UAPTF was succeeded by the Airborne Object Identification and Management Synchronization Group (AOIMSG) in November 2021, which was itself replaced by AARO in July 2022.",
     "significance": "The UAPTF represents the institutional bridge between the informal AATIP era (2012-2017) and the formal AARO structure. Its 2021 Preliminary Assessment was the most consequential single UAP document released by the U.S. government in the modern era - the first official acknowledgment that military UAP encounters were real, unexplained, and represented a national security concern. The report's creation was driven directly by the advocacy of Luis Elizondo, Chris Mellon, and sympathetic members of Congress who had spent three years pushing for exactly this kind of official acknowledgment.",
     "key_personnel": [
-      { "name": "Jay Stratton", "role": "Director (appointed 2020)" },
-      { "name": "David Norquist", "role": "Deputy Secretary of Defense; established the UAPTF" }
+      {
+        "name": "Jay Stratton",
+        "role": "Director (appointed 2020)"
+      },
+      {
+        "name": "David Norquist",
+        "role": "Deputy Secretary of Defense; established the UAPTF"
+      }
     ],
     "key_events": [
-      { "year": "Aug 2020", "event": "UAPTF formally established by Deputy Secretary of Defense David Norquist within the Office of Naval Intelligence, following congressional pressure and the 2019 Navy UAP guidelines." },
-      { "year": "Jun 2021", "event": "UAPTF releases the Preliminary Assessment: Unidentified Aerial Phenomena - 9 pages publicly, with a classified annex. Found 143 of 144 reported incidents unexplained. Recommended standardized reporting and a successor organization." },
-      { "year": "Nov 2021", "event": "UAPTF succeeded by the Airborne Object Identification and Management Synchronization Group (AOIMSG), which expanded the mandate from Navy-only to full DoD scope." },
-      { "year": "Jul 2022", "event": "AOIMSG reorganized into AARO under the 2022 NDAA, establishing the current permanent UAP office." }
+      {
+        "year": "Aug 2020",
+        "event": "UAPTF formally established by Deputy Secretary of Defense David Norquist within the Office of Naval Intelligence, following congressional pressure and the 2019 Navy UAP guidelines."
+      },
+      {
+        "year": "Jun 2021",
+        "event": "UAPTF releases the Preliminary Assessment: Unidentified Aerial Phenomena - 9 pages publicly, with a classified annex. Found 143 of 144 reported incidents unexplained. Recommended standardized reporting and a successor organization."
+      },
+      {
+        "year": "Nov 2021",
+        "event": "UAPTF succeeded by the Airborne Object Identification and Management Synchronization Group (AOIMSG), which expanded the mandate from Navy-only to full DoD scope."
+      },
+      {
+        "year": "Jul 2022",
+        "event": "AOIMSG reorganized into AARO under the 2022 NDAA, establishing the current permanent UAP office."
+      }
     ],
-    "connected_documents": ["uaptf-preliminary-assessment"],
-    "connected_figures": ["luis-elizondo", "chris-mellon"],
+    "connected_documents": [
+      "uaptf-preliminary-assessment"
+    ],
+    "connected_figures": [
+      "luis-elizondo",
+      "chris-mellon"
+    ],
     "limitations": [
       "The UAPTF's jurisdiction was initially limited to Navy-reported incidents, leaving out Air Force, Army, and intelligence community UAP reports.",
       "The 2021 report covered only 144 incidents - a fraction of total government UAP encounters since 2004.",
@@ -661,8 +1377,169 @@
       "The transition to AOIMSG and then AARO introduced organizational gaps and personnel changes that critics argue weakened continuity."
     ],
     "sources": [
-      { "title": "UAP Preliminary Assessment - ODNI", "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf", "type": "Primary Source" },
-      { "title": "DoD Establishment of UAPTF - Defense.gov", "url": "https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/", "type": "Primary Source" }
+      {
+        "title": "UAP Preliminary Assessment - ODNI",
+        "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf",
+        "type": "Primary Source"
+      },
+      {
+        "title": "DoD Establishment of UAPTF - Defense.gov",
+        "url": "https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/",
+        "type": "Primary Source"
+      }
+    ]
+  },
+  {
+    "id": "galileo-project",
+    "name": "The Galileo Project",
+    "type": "project",
+    "status": "active",
+    "active_period": "2021-present",
+    "parent_org": "Harvard University",
+    "summary": "The Galileo Project is a systematic scientific research program founded by Harvard astrophysicist Dr. Avi Loeb in July 2021 following the release of the ODNI UAP Task Force report. The project aims to apply rigorous scientific methodology - including purpose-built observatory instruments, peer-reviewed publication standards, and transparent data sharing - to the search for extraterrestrial technological signatures and UAP. It represents the first fully transparent, institutionally affiliated academic UAP research program in history. In 2023 the project published its first peer-reviewed analysis of UAP data from a dedicated sky survey system at Harvard Observatory.",
+    "significance": "The Galileo Project represents the legitimization of UAP as a serious scientific research question within mainstream academia. By operating under Harvard University auspices with full peer-review transparency, it bridges the gap between the historically stigmatized UAP research community and institutional science. Its approach - dedicated instrumentation, rigorous data standards, open publication - is the methodology that NASA's 2023 UAP study recommended as the path forward. Loeb's willingness to stake his academic reputation on the project has had a measurable effect on mainstream scientific engagement with UAP.",
+    "key_personnel": [
+      {
+        "name": "Dr. Avi Loeb",
+        "role": "Founder and Principal Investigator",
+        "figure_id": "avi-loeb"
+      },
+      {
+        "name": "Dr. Frank Laukien",
+        "role": "Founding donor"
+      },
+      {
+        "name": "Dr. Sean Kirkpatrick",
+        "role": "Paper co-author (while AARO director)",
+        "figure_id": "sean-kirkpatrick"
+      }
+    ],
+    "key_events": [
+      {
+        "year": "Jul 2021",
+        "event": "Galileo Project publicly announced by Avi Loeb following the June 2021 ODNI UAP Task Force Preliminary Assessment. Loeb raises $1.75 million in initial funding within days."
+      },
+      {
+        "year": "2021",
+        "event": "First dedicated all-sky camera and sensor suite installed at Harvard University Observatory to begin systematic UAP data collection."
+      },
+      {
+        "year": "2023",
+        "event": "Project publishes its first peer-reviewed analysis examining UAP data from the Harvard sky survey observatory - the first systematic academic peer-reviewed UAP observation study."
+      },
+      {
+        "year": "2023",
+        "event": "Project expands to include analysis of the Pacific Ocean meteor retrieval (IM1) - a potential interstellar object that Loeb's team retrieved spherules from the ocean floor, publishing findings in a peer-reviewed journal."
+      },
+      {
+        "year": "2024",
+        "event": "Loeb testifies before Congress in 2024 on UAP and the Galileo Project's findings; becomes the first active Harvard faculty member to testify on UAP."
+      }
+    ],
+    "connected_documents": [
+      "nasa-uap-study-2023"
+    ],
+    "connected_figures": [
+      "avi-loeb",
+      "sean-kirkpatrick"
+    ],
+    "limitations": [
+      "The project's methodology - ground-based sky cameras - has limited coverage and sensitivity compared to the classified sensor systems that have produced the most compelling UAP data",
+      "Peer-reviewed publication timelines mean results lag real-time observation by months to years",
+      "The project's focus on systematic observation means it cannot retroactively analyze the best-documented historical cases",
+      "Loeb's concurrent claims about interstellar objects and IM1 have attracted scientific skepticism that has complicated reception of the project's UAP work",
+      "Funding remains primarily private donation; institutional support from Harvard is limited to facilities access"
+    ],
+    "sources": [
+      {
+        "title": "The Galileo Project - Official Website",
+        "url": "https://projects.iq.harvard.edu/galileo",
+        "type": "Primary Source"
+      },
+      {
+        "title": "Loeb, Avi - Extraterrestrial (2021)",
+        "type": "Book"
+      },
+      {
+        "title": "First Galileo Project Peer-Reviewed Paper (2023)",
+        "url": "https://arxiv.org/abs/2308.16005",
+        "type": "Academic"
+      }
+    ]
+  },
+  {
+    "id": "project-moon-dust",
+    "name": "Project Moon Dust / Operation Blue Fly",
+    "type": "project",
+    "status": "defunct",
+    "active_period": "c. 1953-1985",
+    "parent_org": "U.S. Air Force / Defense Intelligence Agency",
+    "summary": "Project Moon Dust was a classified U.S. Air Force program to collect and analyze objects of foreign origin or unknown nature that re-entered the atmosphere and came down on earth - including both identified space debris and unidentified objects. Operation Blue Fly was its rapid response component for physical retrieval of such objects. Both programs were officially denied for decades before their existence was confirmed through FOIA requests by researchers including Barry Greenwood and Lawrence Fawcett. Declassified documents show the programs operated across multiple continents and recovered objects that generated classified intelligence reports. The programs have been cited as potential institutional frameworks for UAP physical recovery operations.",
+    "significance": "Project Moon Dust and Blue Fly represent the clearest documented evidence of a government recovery operation program that by its stated mandate would have encompassed UAP physical artifacts. The programs' long denial and eventual FOIA confirmation established that the U.S. government ran recovery programs under classification for decades while publicly claiming no such programs existed. Researchers cite Moon Dust as a potential mechanism for UAP artifact recovery and as a documented precedent for the crash retrieval programs described by David Grusch.",
+    "key_personnel": [
+      {
+        "name": "Barry Greenwood",
+        "role": "Primary FOIA researcher who established existence through document requests"
+      },
+      {
+        "name": "Lawrence Fawcett",
+        "role": "Co-author of 'Clear Intent' documenting Moon Dust through FOIA research"
+      }
+    ],
+    "key_events": [
+      {
+        "year": "1953",
+        "event": "Project Moon Dust established by the U.S. Air Force as a classified program to recover and analyze foreign space objects and unknown objects that impact or land in non-U.S. territory."
+      },
+      {
+        "year": "1957",
+        "event": "Moon Dust expanded following the launch of Sputnik; program begins active monitoring and recovery operations for Soviet and other foreign space hardware."
+      },
+      {
+        "year": "c. 1960s",
+        "event": "Operation Blue Fly established as the rapid response retrieval component of Moon Dust, providing military assets for quick physical recovery of designated objects."
+      },
+      {
+        "year": "1973",
+        "event": "USAF officially renames or restructures the program following congressional inquiry, while maintaining classified recovery operations under different designations."
+      },
+      {
+        "year": "1979",
+        "event": "State Department cables released through FOIA reference Project Moon Dust field operations in Bolivia, confirming international recovery operations."
+      },
+      {
+        "year": "1984",
+        "event": "Barry Greenwood and Lawrence Fawcett publish 'Clear Intent: The Government Cover-Up of the UFO Experience,' citing Moon Dust documents as evidence of a government recovery program for unknown objects."
+      },
+      {
+        "year": "1985",
+        "event": "Air Force responds to FOIA requests confirming Moon Dust's existence but claiming the program was only for satellite debris recovery."
+      }
+    ],
+    "connected_documents": [],
+    "connected_figures": [],
+    "limitations": [
+      "The majority of Moon Dust operational records remain classified; only a small percentage has been released through FOIA",
+      "The Air Force's official position limits Moon Dust to known foreign satellite debris recovery, denying any UAP dimension",
+      "The link between Moon Dust and UAP artifact recovery is inferential - based on the program's broad mandate and documented operational scope",
+      "Many key Moon Dust documents reference Bolivia, Pakistan, and other international locations; the programs operated primarily outside the continental U.S.",
+      "The renaming and restructuring of the program in the 1970s-80s complicates tracking its complete operational history"
+    ],
+    "sources": [
+      {
+        "title": "Clear Intent: The Government Cover-Up of the UFO Experience (Fawcett, Greenwood, 1984)",
+        "type": "Book"
+      },
+      {
+        "title": "Project Moon Dust FOIA Documents - The Black Vault",
+        "url": "https://www.theblackvault.com/documentarchive/project-moon-dust/",
+        "type": "Primary Source"
+      },
+      {
+        "title": "State Department Bolivia Moon Dust Cable (1979)",
+        "url": "https://nsarchive.gwu.edu",
+        "type": "Primary Source"
+      }
     ]
   }
 ]

@@ -1,0 +1,68 @@
+{
+  "profile": {
+    "id": "jay-stratton",
+    "name": "Jay Stratton",
+    "aliases": [],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Director, Unidentified Aerial Phenomena Task Force (UAPTF), 2020-2021",
+      "Director, All-domain Anomaly Resolution Office (AARO), 2022 (brief tenure)",
+      "Career Defense Intelligence Officer"
+    ],
+    "service_period": "c. 1990s-2022 (government intelligence career)",
+    "organizations": ["Office of Naval Intelligence", "DoD UAP Task Force", "AARO", "Office of the Under Secretary of Defense for Intelligence"],
+    "clearance": "TS/SCI (former)",
+    "summary": "Career Defense Intelligence Agency officer who served as Director of the DoD UAP Task Force (UAPTF) from 2020 to 2021 and briefly as the first Director of AARO in 2022 before Sean Kirkpatrick assumed the role. Stratton worked closely with Luis Elizondo on UAP investigation during the AATIP era and is credited as a key institutional continuity figure bridging AATIP, the UAPTF, and AARO. Unlike other disclosure-era figures, Stratton has maintained a largely non-public posture, rarely speaking on the record.",
+    "education": [],
+    "early_career": [
+      "Career intelligence officer with extensive background in defense intelligence analysis",
+      "Developed expertise in advanced aerospace threats within classified government programs",
+      "Served in multiple intelligence community roles before UAP-focused assignments"
+    ],
+    "key_events": [
+      { "year": "2017", "event": "Works alongside Luis Elizondo during the final period of AATIP before Elizondo's resignation; key institutional figure in the transition of UAP investigation within the DoD." },
+      { "year": "2020", "event": "Appointed Director of the DoD Unidentified Aerial Phenomena Task Force (UAPTF) when it is formally established under the Office of Naval Intelligence." },
+      { "year": "2021", "event": "Oversees production of the UAPTF Preliminary Assessment released June 25, 2021 - the first official U.S. government UAP report to the public." },
+      { "year": "2021", "event": "Departs as UAPTF director as the organization transitions toward what will become AARO." },
+      { "year": "2022", "event": "Briefly serves as AARO's first director in an acting capacity before Sean Kirkpatrick is confirmed as the official director in November 2022." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP director",
+      "relationship": "Worked closely with Elizondo on UAP investigation during the AATIP era; Stratton is considered one of Elizondo's key government counterparts in maintaining institutional UAP focus after Elizondo's departure."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NRO UAP Task Force representative / whistleblower",
+      "relationship": "Grusch worked under Stratton's UAPTF leadership as the NRO's representative, and described Stratton as a key figure who directed him to investigate legacy UAP crash retrieval programs."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jun 2021",
+      "type": "article",
+      "title": "UAPTF Preliminary Assessment Oversight",
+      "outlet": "Office of the Director of National Intelligence",
+      "notes": "As UAPTF director, oversaw production and release of the UAP Task Force Preliminary Assessment - the first declassified U.S. government UAP report, covering 144 incidents from 2004 to 2021."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Debrief - UAP Task Force Director Profile",
+      "url": "https://thedebrief.org/a-uap-primer/",
+      "type": "Article",
+      "notes": "Overview of UAPTF leadership and Stratton's role in the DoD UAP investigation structure."
+    },
+    {
+      "title": "Popular Mechanics - Who Runs the UAP Task Force",
+      "url": "https://www.popularmechanics.com/military/research/a37191831/uap-task-force-director/",
+      "type": "Article",
+      "notes": "Profile of Stratton's role as UAPTF director and institutional context."
+    }
+  ]
+}

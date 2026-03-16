@@ -165,6 +165,19 @@ export const graphData: GraphData = {
     // New must-have documents
     { id: 'pentacle-memorandum',    name: 'Pentacle Memorandum (1953)',   type: 'document', val: 3 },
     { id: 'hottel-memo',            name: 'Hottel Memo (1950)',           type: 'document', val: 2 },
+
+    // New cases (batch 2)
+    { id: 'rb47-1957',              name: 'RB-47 Incident (1957)',        type: 'case', val: 3 },
+    { id: 'falcon-lake-1967',       name: 'Falcon Lake (1967)',           type: 'case', val: 3 },
+    { id: 'minot-afb-1968',         name: 'Minot AFB (1968)',             type: 'case', val: 3 },
+
+    // New programs (batch 2)
+    { id: 'galileo-project',        name: 'Galileo Project',              type: 'project', val: 3 },
+    { id: 'project-moon-dust',      name: 'Project Moon Dust',            type: 'project', val: 3 },
+
+    // New documents (batch 2)
+    { id: 'ndaa-fy2024-uap-provisions',   name: 'NDAA FY2024 UAP',        type: 'document', val: 3 },
+    { id: 'dni-annual-report-uap-2024',   name: 'DNI UAP Report 2024',    type: 'document', val: 2 },
   ],
 
   links: [
@@ -533,5 +546,68 @@ export const graphData: GraphData = {
     { source: 'hottel-memo',          target: 'roswell-1947',             label: 'describes recovery consistent with' },
     { source: 'hottel-memo',          target: 'oga',                      label: 'circulated within federal government channels' },
     { source: 'hottel-memo',          target: 'ipu',                      label: 'corroborates recovery program context' },
+
+    // Philip Corso connections
+    { source: 'philip-corso',         target: 'roswell-1947',             label: 'claimed to manage debris from' },
+    { source: 'philip-corso',         target: 'stanton-friedman',         label: 'contemporary Roswell researchers' },
+
+    // Steven Greer connections
+    { source: 'steven-greer',         target: 'disclosure-project',       label: 'founded and directed' },
+    { source: 'steven-greer',         target: 'daniel-sheehan',           label: 'Disclosure Project legal counsel' },
+    { source: 'steven-greer',         target: 'richard-dolan',            label: 'contemporary disclosure researchers' },
+
+    // Jay Stratton connections
+    { source: 'jay-stratton',         target: 'uap-task-force',           label: 'directed' },
+    { source: 'jay-stratton',         target: 'aaro',                     label: 'first acting director of' },
+    { source: 'jay-stratton',         target: 'luis-elizondo',            label: 'contemporaries in DoD UAP investigation' },
+    { source: 'jay-stratton',         target: 'david-grusch',             label: 'directed to investigate legacy programs' },
+
+    // Robert Hastings connections
+    { source: 'robert-hastings',      target: 'malmstrom-afb-1967',       label: 'documented extensively' },
+    { source: 'robert-hastings',      target: 'minot-afb-1968',           label: 'documented via FOIA' },
+    { source: 'robert-hastings',      target: 'project-blue-book',        label: 'researched and critiqued' },
+    { source: 'robert-hastings',      target: 'nicap',                    label: 'referenced records from' },
+
+    // Sean Kirkpatrick connections
+    { source: 'sean-kirkpatrick',     target: 'aaro',                     label: 'directed (2022-2023)' },
+    { source: 'sean-kirkpatrick',     target: 'aaro-historical-record-vol1', label: 'oversaw production of' },
+    { source: 'sean-kirkpatrick',     target: 'david-grusch',             label: 'publicly contradicted' },
+    { source: 'sean-kirkpatrick',     target: 'avi-loeb',                 label: 'co-authored UAP paper with' },
+
+    // New case connections
+    { source: 'rb47-1957',            target: 'project-blue-book',        label: 'investigated by' },
+    { source: 'rb47-1957',            target: 'j-allen-hynek',            label: 'researched by' },
+    { source: 'rb47-1957',            target: 'condon-report-1969',       label: 'classified Unknown in' },
+
+    { source: 'falcon-lake-1967',     target: 'nicap',                    label: 'documented by' },
+    { source: 'falcon-lake-1967',     target: 'project-blue-book',        label: 'consulted by Canadian investigators' },
+
+    { source: 'minot-afb-1968',       target: 'robert-hastings',          label: 'documented by' },
+    { source: 'minot-afb-1968',       target: 'project-blue-book',        label: 'investigated by (Case 12548)' },
+    { source: 'minot-afb-1968',       target: 'malmstrom-afb',            label: 'similar nuclear-site incident at' },
+
+    // New program connections
+    { source: 'galileo-project',      target: 'avi-loeb',                 label: 'founded by' },
+    { source: 'galileo-project',      target: 'sean-kirkpatrick',         label: 'co-authored paper with director of' },
+    { source: 'galileo-project',      target: 'nasa-uap-study-2023',      label: 'methodology aligned with' },
+    { source: 'galileo-project',      target: 'seti',                     label: 'methodological alternative to' },
+
+    { source: 'project-moon-dust',    target: 'project-blue-book',        label: 'parallel USAF recovery program' },
+    { source: 'project-moon-dust',    target: 'project-moondust',         label: 'same program; different node references' },
+    { source: 'project-moon-dust',    target: 'david-grusch',             label: 'cited as recovery precedent by' },
+    { source: 'project-moon-dust',    target: 'kecksburg-1965',           label: 'alleged recovery operation for' },
+
+    // New document connections
+    { source: 'ndaa-fy2024-uap-provisions', target: 'chuck-schumer',      label: 'introduced by' },
+    { source: 'ndaa-fy2024-uap-provisions', target: 'david-grusch',       label: 'Elizondo vindication informed by' },
+    { source: 'ndaa-fy2024-uap-provisions', target: 'luis-elizondo',      label: 'explicitly vindicated by' },
+    { source: 'ndaa-fy2024-uap-provisions', target: 'chris-mellon',       label: 'advocacy shaped' },
+    { source: 'ndaa-fy2024-uap-provisions', target: 'ndaa-fy2023-uap-provisions', label: 'built upon' },
+    { source: 'ndaa-fy2024-uap-provisions', target: 'aaro',               label: 'expanded authority of' },
+
+    { source: 'dni-annual-report-uap-2024', target: 'aaro',               label: 'produced by' },
+    { source: 'dni-annual-report-uap-2024', target: 'sean-kirkpatrick',   label: 'produced under (final months)' },
+    { source: 'dni-annual-report-uap-2024', target: 'uaptf-preliminary-assessment', label: 'successor report to' },
+    { source: 'dni-annual-report-uap-2024', target: 'ndaa-fy2023-uap-provisions',   label: 'mandated by' },
   ],
 };

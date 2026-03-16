@@ -6081,9 +6081,20 @@
       "Multiple researchers have noted that the electromagnetic vehicle interference pattern across a large area and multiple independent witness chains is essentially unique in the literature."
     ],
     "sources": [
-      { "title": "Project Blue Book Files - National Archives (Levelland)", "url": "https://www.archives.gov/research/military/air-force/ufos", "type": "Primary" },
-      { "title": "NICAP - Levelland case documentation", "url": "http://www.nicap.org/levelland.htm", "type": "Investigation Report" },
-      { "title": "UFO Evidence (Hall, 1964) - Levelland analysis", "type": "Book" }
+      {
+        "title": "Project Blue Book Files - National Archives (Levelland)",
+        "url": "https://www.archives.gov/research/military/air-force/ufos",
+        "type": "Primary"
+      },
+      {
+        "title": "NICAP - Levelland case documentation",
+        "url": "http://www.nicap.org/levelland.htm",
+        "type": "Investigation Report"
+      },
+      {
+        "title": "UFO Evidence (Hall, 1964) - Levelland analysis",
+        "type": "Book"
+      }
     ]
   },
   {
@@ -6185,9 +6196,535 @@
       "The simultaneous radio failure on both UHF and VHF channels has been noted as consistent with a strong electromagnetic pulse source - an observation that aligns with the EM effects documented in other cases including Levelland."
     ],
     "sources": [
-      { "title": "CUFOS - Coyne Helicopter Case (Zeidman, 1979)", "url": "https://www.cufos.org", "type": "Investigation Report" },
-      { "title": "NICAP - Coyne Helicopter documentation", "url": "http://www.nicap.org/731018dir.htm", "type": "Case File" },
-      { "title": "UN Special Political Committee - 1978 proceedings", "type": "Official Record" }
+      {
+        "title": "CUFOS - Coyne Helicopter Case (Zeidman, 1979)",
+        "url": "https://www.cufos.org",
+        "type": "Investigation Report"
+      },
+      {
+        "title": "NICAP - Coyne Helicopter documentation",
+        "url": "http://www.nicap.org/731018dir.htm",
+        "type": "Case File"
+      },
+      {
+        "title": "UN Special Political Committee - 1978 proceedings",
+        "type": "Official Record"
+      }
+    ]
+  },
+  {
+    "id": "rb47-1957",
+    "name": "RB-47 Incident",
+    "date": "July 17, 1957",
+    "location": "Mississippi, Louisiana, Texas, Oklahoma - multiple states",
+    "country": "United States",
+    "category": "military-aviation",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "A USAF RB-47H reconnaissance aircraft from the 55th Strategic Reconnaissance Wing was tracked by an unidentified object over four U.S. states for approximately 700 miles and 1.5 hours. The object was detected simultaneously on multiple independent systems: the aircraft's own electronic intelligence (ELINT) sensors, ground-based Air Route Traffic Control radar, and visually by the crew. The object exhibited instant acceleration, reversal of direction, and was detected at altitudes and speeds consistent with no known 1957 aircraft. The Condon Committee studied the case and was unable to explain it - formally designating it Unknown (Case 5), one of the rare cases receiving that designation.",
+    "tags": [
+      "military",
+      "radar-confirmed",
+      "elint-detection",
+      "multi-state",
+      "Condon-unknown",
+      "Air-Force"
+    ],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: July 17, 1957, approximately 4:00 AM - 6:30 AM local time",
+        "Aircraft: USAF RB-47H reconnaissance aircraft, 55th Strategic Reconnaissance Wing, Forbes AFB Kansas",
+        "Crew: 6 men including pilot Maj. Lewis D. Chase and electronic warfare officer Maj. James H. McCoid",
+        "Object tracked for approximately 700 miles across Mississippi, Louisiana, Texas, and Oklahoma",
+        "Duration of encounter: approximately 1.5 hours",
+        "Object detected by three independent systems: aircraft ELINT sensors, visual observation by crew, and ground-based ARTC radar at Fort Worth, Texas",
+        "Ground radar confirmed contact at same position as aircraft visual at the same times",
+        "Object exhibited instantaneous reversal of direction - going from trailing to being ahead of the aircraft in no measurable time",
+        "Condon Committee formally classified the case as Unknown (Case 5) - one of only a handful receiving that designation"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Air Force intelligence report filed by the RB-47H crew immediately following the incident",
+        "ARTC radar records from Fort Worth ATC confirming ground radar contact coincident with crew visual and ELINT detections",
+        "Condon Committee case file - investigated by James McDonald; formally classified Unknown in the Condon Report (Case 5)",
+        "NICAP case documentation with crew testimony"
+      ],
+      "physical": [
+        "No physical evidence collected; crew had no opportunity to recover any material",
+        "ELINT sensor recordings - not known to have been publicly released"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Maj. Lewis D. Chase",
+        "role": "Aircraft commander / pilot, RB-47H",
+        "type": "military",
+        "testimony": "I observed a brilliant white light at altitude, maneuvering in ways that no aircraft I had ever flown could replicate. It appeared ahead of us, then behind, then disappeared - consistent each time with what our electronic sensors were reading."
+      },
+      {
+        "name": "Maj. James H. McCoid",
+        "role": "Electronic warfare officer, monitored ELINT sensors",
+        "type": "military",
+        "testimony": "We had clear electronic returns from the object that were consistent across our sensor suite. The signal was trackable and behaved in a way that was not explicable by any known conventional source."
+      },
+      {
+        "name": "Maj. Frank B. McClure",
+        "role": "Electronic countermeasures officer",
+        "type": "military",
+        "testimony": "The object was tracked on our electronic sensors at the same time it was visible to the crew and appeared on Fort Worth ARTC radar. Three independent detection systems confirmed the same contact simultaneously."
+      }
+    ],
+    "official_response": {
+      "agencies": [
+        "U.S. Air Force",
+        "Project Blue Book",
+        "Condon Committee (University of Colorado)"
+      ],
+      "statements": [
+        {
+          "source": "Condon Report",
+          "date": "January 1969",
+          "statement": "Case 5 (RB-47 Case, July 17, 1957): In conclusion, although a great deal of effort has been exerted on this case, it has not been possible to find a conventional explanation. This is one of the most puzzling cases in the Condon study."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Three independent detection systems operating simultaneously: ELINT sensors, ground radar, and visual observation",
+        "Ground-based ARTC radar at Fort Worth confirmed the object at the exact positions reported by the crew at the exact same times",
+        "Crew of six trained military personnel including electronic warfare specialists",
+        "Object behavior - instantaneous direction reversal, disappearance and reappearance - was beyond any 1957 technology",
+        "Condon Committee formally classified the case as Unknown despite institutional pressure to explain cases",
+        "James McDonald, a rigorous atmospheric physicist and scientific critic, considered this one of the most important cases on record"
+      ],
+      "contradicting": [
+        "No physical evidence or material sample recovered",
+        "Original ELINT recordings and raw radar data not publicly available for independent analysis",
+        "Cold War context means Soviet experimental aircraft cannot be completely ruled out",
+        "Time elapsed since 1957 makes new witness interviews impossible"
+      ]
+    },
+    "coordinates": {
+      "lat": 32.7,
+      "lng": -97.3
+    },
+    "timeline": [
+      {
+        "local": "Jul 17, 1957, ~04:00 CST",
+        "event": "RB-47H on post-mission return flight. Electronic warfare officer Maj. McClure detects an unusual radar emission on his monitoring equipment over southern Mississippi."
+      },
+      {
+        "local": "Jul 17, ~04:30 CST",
+        "event": "Crew obtains visual confirmation of a brilliantly lit object. Pilot Maj. Chase observes a bright blue-white light at estimated altitude of 34,500 feet, appearing to track the aircraft."
+      },
+      {
+        "local": "Jul 17, ~05:00 CST",
+        "event": "Object moves to a position ahead of the RB-47H. ARTC radar at Fort Worth, Texas, independently picks up the same contact at the position reported by crew."
+      },
+      {
+        "local": "Jul 17, ~05:10-05:50 CST",
+        "event": "Object performs multiple reversals - trailing the aircraft then appearing ahead of it in no measurable time. Disappears from visual observation and radar simultaneously on multiple occasions."
+      },
+      {
+        "local": "Jul 17, ~06:30 CST",
+        "event": "Object disappears from all sensors and visual observation as the RB-47H approaches Oklahoma. Encounter ends after approximately 700 miles and 1.5 hours."
+      },
+      {
+        "local": "1968-1969",
+        "event": "Condon Committee investigates; assigned to James McDonald for analysis. Formally classified Unknown (Case 5 in the published Condon Report)."
+      }
+    ],
+    "competing_hypotheses": [
+      {
+        "name": "Soviet Experimental Aircraft",
+        "assessment": "disputed",
+        "summary": "The Cold War context means Soviet advanced aircraft theoretically cannot be excluded. However, instantaneous direction reversal and simultaneous appearance at separated positions exceed any known Soviet or American aerospace capability of 1957.",
+        "evidence_for": [
+          "Active Soviet aerial reconnaissance programs in 1957",
+          "The RB-47H was a high-value intelligence target"
+        ],
+        "evidence_against": [
+          "Performance characteristics exceed any known 1957 technology",
+          "Soviet aircraft operating over multiple U.S. states for 1.5 hours would have triggered a documented national security response"
+        ]
+      },
+      {
+        "name": "Non-Human Aerial Vehicle",
+        "assessment": "possible",
+        "summary": "Simultaneous multi-system detection, performance characteristics beyond any known 1957 technology, and the formal Condon Unknown classification together support a non-conventional explanation.",
+        "evidence_for": [
+          "Three-system simultaneous confirmation",
+          "Performance characteristics beyond any known technology",
+          "Formal Condon Unknown classification"
+        ],
+        "evidence_against": [
+          "No physical evidence",
+          "Raw sensor data not publicly available"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Condon Report - Case 5 (RB-47 Case)",
+        "url": "https://files.ncas.org/condon/text/case05.htm",
+        "type": "official",
+        "notes": "Full Condon Committee analysis; formally classified Unknown."
+      },
+      {
+        "title": "NICAP - RB-47 Incident Documentation",
+        "url": "https://www.nicap.org/570717dir.htm",
+        "type": "foia",
+        "notes": "NICAP case file with crew testimony and document index."
+      }
+    ]
+  },
+  {
+    "id": "falcon-lake-1967",
+    "name": "Falcon Lake Incident",
+    "date": "May 20, 1967",
+    "location": "Whiteshell Provincial Park, Manitoba, Canada",
+    "country": "Canada",
+    "category": "close-encounter",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "Amateur geologist Stefan Michalak encountered two disc-shaped craft near Falcon Lake, Manitoba on May 20, 1967. One craft landed and Michalak approached to within feet of it, observed an opening emitting light, and was struck by a burst of hot gas. He sustained a grid-pattern burn on his chest matching a ventilation grille he described on the craft, suffered radiation sickness symptoms, and experienced lasting health effects for over a year. The site yielded measurable radiation readings and physical ground trace evidence documented by the RCMP, Royal Canadian Air Force, and Canadian Department of National Defence. Considered the most well-documented close encounter case in Canadian history.",
+    "tags": [
+      "physical-effects",
+      "radiation",
+      "landing-trace",
+      "RCMP",
+      "Canada",
+      "close-encounter"
+    ],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: May 20, 1967, approximately 12:15 PM local time",
+        "Witness: Stefan Michalak, 51-year-old amateur geologist and industrial mechanic from Winnipeg",
+        "Location: Whiteshell Provincial Park, near Falcon Lake, Manitoba, Canada",
+        "Two disc-shaped objects descended; one landed approximately 45 meters from Michalak",
+        "He approached the landed craft and observed an opening with bright purple-white light inside",
+        "When he touched the craft surface, his glove melted",
+        "A burst of hot gas from the craft struck him in the chest, igniting his shirt",
+        "Burn pattern on chest matched the grid pattern of a ventilation/exhaust grille he described on the craft",
+        "Immediate symptoms: nausea, vomiting; lasting radiation sickness symptoms persisted for over a year",
+        "RCMP and RCAF investigation confirmed elevated radiation readings at the landing site",
+        "Semicircular burned and flattened vegetation pattern at landing site documented by investigators"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "RCMP official incident report",
+        "Royal Canadian Air Force investigation report",
+        "Canadian Department of National Defence investigation files",
+        "Medical records documenting burns and subsequent health effects",
+        "University of Manitoba radiation measurements at the site",
+        "Project Blue Book file consulted at Canadian request"
+      ],
+      "physical": [
+        "Grid-pattern burn on chest measuring approximately 7x4.5 inches, matching described ventilation grille pattern",
+        "Burned and melted work glove worn during approach",
+        "Singed and melted outer shirt and undershirt",
+        "Semicircular arc of flattened, burned vegetation at landing site",
+        "Elevated radiation readings at landing site on initial investigation",
+        "Soil samples from landing area showing unusual composition changes"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Stefan Michalak",
+        "role": "Primary witness; industrial mechanic and amateur geologist",
+        "type": "civilian",
+        "testimony": "One of the crafts landed about 45 meters from me. I watched it for 30 minutes. I approached and could see through an opening - there was a bright purple light inside and I could hear mechanical sounds. When I touched the surface my glove melted. Then the opening closed and the craft rotated. A burst of hot gas hit me in the chest. My shirt caught fire. The burn marks on my chest were in a grid pattern, exactly like the ventilation panel I had observed on the craft."
+      }
+    ],
+    "official_response": {
+      "agencies": [
+        "Royal Canadian Mounted Police (RCMP)",
+        "Royal Canadian Air Force (RCAF)",
+        "Canadian Department of National Defence",
+        "Project Blue Book (USAF)"
+      ],
+      "statements": [
+        {
+          "source": "Canadian Department of National Defence",
+          "date": "1967",
+          "statement": "Investigation confirmed physical evidence at the site including elevated radiation readings and ground traces. The burn injuries to Michalak were assessed as genuine. No conventional explanation for the reported encounter was established."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Multiple independent government investigations (RCMP, RCAF, DND) failed to produce a conventional explanation",
+        "Physical burn injury on chest matched the specific grid pattern Michalak described on the craft",
+        "Elevated radiation readings at the site were independently measured on multiple occasions",
+        "Landing site showed physical disturbance - semicircular burned and flattened vegetation",
+        "Michalak had no apparent motive for fabrication; was a stable employed professional",
+        "Lasting radiation-consistent health effects persisted for over a year"
+      ],
+      "contradicting": [
+        "Single witness; no corroborating eyewitnesses to the craft",
+        "Physical samples degraded over time before comprehensive analysis",
+        "Minor inconsistencies in accounts across multiple interviews",
+        "The specific cause of the burn and radiation has not been definitively identified"
+      ]
+    },
+    "coordinates": {
+      "lat": 49.75,
+      "lng": -95.15
+    },
+    "timeline": [
+      {
+        "local": "May 20, 1967, ~11:00 AM",
+        "event": "Stefan Michalak arrives at his prospecting site near Falcon Lake, searching for quartz veins. Weather is clear."
+      },
+      {
+        "local": "May 20, ~12:15 PM",
+        "event": "Michalak notices two elongated disc-shaped objects descending with reddish glow. One craft lands approximately 45 meters away."
+      },
+      {
+        "local": "May 20, ~12:15 - 12:45 PM",
+        "event": "Michalak observes the landed craft for approximately 30 minutes, sketches it, then approaches. Observes opening with bright light inside, hears mechanical humming, smells sulfur."
+      },
+      {
+        "local": "May 20, ~12:45 PM",
+        "event": "Michalak touches the craft surface; glove melts. Opening closes and craft rotates, positioning an exhaust panel toward him. A burst of hot gas strikes him in the chest. Shirt ignites."
+      },
+      {
+        "local": "May 20, afternoon",
+        "event": "Craft ascends and departs. Michalak extinguishes burning shirt. Immediately nauseated and vomiting. Walks to highway and eventually reaches a motel."
+      },
+      {
+        "local": "May 20, evening",
+        "event": "Michalak examined at Winnipeg hospital. Grid-pattern burn on chest documented by physicians."
+      },
+      {
+        "local": "May 21 - Jun 1967",
+        "event": "RCMP investigators arrive at site. Elevated radiation readings measured at semicircular area of burned and flattened vegetation. Multiple government agencies begin formal investigations."
+      }
+    ],
+    "competing_hypotheses": [
+      {
+        "name": "Hoax or Self-Inflicted Injuries",
+        "assessment": "disputed",
+        "summary": "Some investigators questioned whether the account was fabricated. However, physical evidence documented by multiple government agencies - radiation at the site, burn injury matching a described craft feature - makes a straightforward hoax difficult to sustain.",
+        "evidence_for": [
+          "Single witness",
+          "Minor inconsistencies across interviews"
+        ],
+        "evidence_against": [
+          "Physical burn injuries documented by physicians",
+          "Radiation readings at site documented independently by government agencies",
+          "Landing trace evidence documented by RCMP",
+          "Lasting health effects consistent with radiation exposure"
+        ]
+      },
+      {
+        "name": "Non-Human Aerial Vehicle",
+        "assessment": "possible",
+        "summary": "Physical injury matching described craft features, government-documented radiation at the landing site, and the failure of multiple agencies to produce a conventional explanation support a genuine encounter.",
+        "evidence_for": [
+          "Grid burn pattern matching described exhaust configuration",
+          "Independent radiation measurements",
+          "Multiple government agency investigations without resolution",
+          "Persistent radiation-consistent health effects"
+        ],
+        "evidence_against": [
+          "Single witness",
+          "Full sample analysis was not completed"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "NICAP - Falcon Lake Case Documentation",
+        "url": "https://www.nicap.org/670520dir.htm",
+        "type": "foia",
+        "notes": "NICAP case file with investigation records."
+      },
+      {
+        "title": "The Falcon Lake Incident (Michalak, Rutkowski)",
+        "url": "https://www.amazon.com/Falcon-Lake-Incident-Stefan-Michalak/dp/0888012438",
+        "type": "book",
+        "notes": "Book-length account by Stefan Michalak and researcher Chris Rutkowski."
+      }
+    ]
+  },
+  {
+    "id": "minot-afb-1968",
+    "name": "Minot AFB Incident",
+    "date": "October 24, 1968",
+    "location": "Minot Air Force Base, North Dakota",
+    "country": "United States",
+    "category": "military-nuclear",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "On the night of October 24, 1968, a large luminous UAP was observed near nuclear missile silos at Minot AFB, North Dakota, and simultaneously tracked by a USAF B-52H bomber crew on both radar and visually. Ground personnel at multiple missile launch facilities reported the object over a three-hour period. The B-52 crew was directed by Minot Approach Control to investigate and established radar contact; the crew then had direct visual observation of the object. The aircraft's UHF radio became inoperative during close approach. An official Air Force intelligence report was filed as Project Blue Book Case 12548. Robert Hastings documented the case extensively using FOIA-obtained documents, noting its consistency with other UAP incidents at nuclear weapons facilities.",
+    "tags": [
+      "military",
+      "nuclear-weapons",
+      "radar-confirmed",
+      "B-52",
+      "ICBM",
+      "Air-Force",
+      "multiple-witnesses"
+    ],
+    "insider_connections": [
+      "robert-hastings"
+    ],
+    "overview": {
+      "key_facts": [
+        "Date: October 24, 1968, approximately 2:30 AM - 5:30 AM local time",
+        "Location: Minot Air Force Base, North Dakota - Missile Launch Facilities area",
+        "A large luminous object observed by personnel at multiple missile launch facilities over several hours",
+        "B-52H from 450th Bomb Wing diverted by Minot Approach Control to investigate",
+        "B-52 crew established radar contact and observed object visually",
+        "B-52 UHF radio became inoperative during close approach to the object",
+        "Ground witnesses at multiple separate missile launch facilities reported the same object",
+        "Official Air Force intelligence report filed as Project Blue Book Case 12548",
+        "FOIA documents obtained by Robert Hastings confirmed the incident record"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Air Force Intelligence Report, Project Blue Book Case 12548, October 24-25, 1968",
+        "B-52 crew mission report documenting radar contact and visual observation",
+        "Minot AFB security team reports from ground personnel at missile sites",
+        "FOIA-obtained documents assembled by Robert Hastings and other researchers"
+      ],
+      "physical": [
+        "No physical evidence collected",
+        "B-52 radar tracks - not publicly released in raw form"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "B-52H Crew (Maj. James Partin, aircraft commander)",
+        "role": "B-52H aircraft crew, 450th Bomb Wing, Minot AFB",
+        "type": "military",
+        "testimony": "We were directed by Minot Approach Control to investigate a contact they had on radar. We made radar contact with the object. It appeared on our scopes as a solid return. We had a visual sighting of a large bright light at low altitude. During our closest approach our UHF radio became inoperative."
+      },
+      {
+        "name": "Missile launch facility security teams",
+        "role": "USAF security personnel at ICBM launch facilities",
+        "type": "military",
+        "testimony": "Multiple security teams at missile launch facilities reported a large glowing object hovering over or near the facilities. Object was described as bright orange-red, large, moving slowly or hovering, and then departing rapidly. Reports came from multiple separate sites over the three-hour period."
+      }
+    ],
+    "official_response": {
+      "agencies": [
+        "U.S. Air Force",
+        "Project Blue Book",
+        "Strategic Air Command"
+      ],
+      "statements": [
+        {
+          "source": "Project Blue Book (USAF)",
+          "date": "November 1968",
+          "statement": "Case 12548. The object was tentatively evaluated as an astronomical body with plasma. Researchers including Robert Hastings have disputed this evaluation as inadequate to explain the radar contact and B-52 crew visual report."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "B-52 crew established radar contact and had direct visual observation",
+        "Minot Approach Control tracked the object independently of the aircraft",
+        "Ground witnesses at multiple separate missile launch facilities reported the same object",
+        "UHF radio interference on B-52 during close approach suggests electromagnetic effects",
+        "Official Air Force intelligence report was filed at classified level",
+        "Incident is consistent with the documented pattern of UAP incidents at nuclear ICBM facilities"
+      ],
+      "contradicting": [
+        "Project Blue Book's official explanation (astronomical body/plasma) was not formally withdrawn",
+        "Raw radar data not publicly available",
+        "Claims about missile status anomalies have been documented in secondary sources but not confirmed in primary documents"
+      ]
+    },
+    "coordinates": {
+      "lat": 48.42,
+      "lng": -101.35
+    },
+    "timeline": [
+      {
+        "local": "Oct 24, 1968, ~02:30 CST",
+        "event": "Security personnel at Missile Launch Facility N-7 report a large bright object hovering near the facility. Reports begin coming from other missile sites."
+      },
+      {
+        "local": "Oct 24, ~03:00 CST",
+        "event": "Minot AFB Approach Control tracks an unidentified radar contact. A B-52H on a training mission is diverted to investigate."
+      },
+      {
+        "local": "Oct 24, ~03:00-03:30 CST",
+        "event": "B-52 crew establishes radar contact and makes multiple approaches. During the closest pass, the aircraft UHF radio becomes inoperative."
+      },
+      {
+        "local": "Oct 24, ~03:30 CST",
+        "event": "B-52 crew observes the object visually - a large bright light at low altitude. Object also visible to ground security teams over a large area."
+      },
+      {
+        "local": "Oct 24, ~04:00-05:30 CST",
+        "event": "Object continues to be observed by multiple ground witnesses at missile launch facilities. Reports taper off by approximately 05:30."
+      },
+      {
+        "local": "Oct 24-25, 1968 (post-incident)",
+        "event": "Official Air Force intelligence report filed as Project Blue Book Case 12548. Case later FOIA'd by researchers."
+      }
+    ],
+    "competing_hypotheses": [
+      {
+        "name": "Astronomical Body / Plasma",
+        "assessment": "disputed",
+        "summary": "Project Blue Book's official evaluation. Researchers have demonstrated this is inadequate to explain the radar contact by both the B-52 and ground control, sustained multi-site ground observation, and UHF radio interference.",
+        "evidence_for": [
+          "Bright light is consistent with bright stars or atmospheric plasma under some conditions"
+        ],
+        "evidence_against": [
+          "Radar contact by B-52 and ground radar cannot be produced by stars",
+          "Three-hour sustained observation by multiple witnesses at separated sites is inconsistent with an astronomical body",
+          "UHF radio interference is not caused by astronomical phenomena"
+        ]
+      },
+      {
+        "name": "Non-Human Aerial Vehicle",
+        "assessment": "possible",
+        "summary": "Multi-platform radar contacts, B-52 crew direct visual observation, multiple ground witnesses at separated missile sites, and electromagnetic effects on aircraft are consistent with a structured non-conventional craft.",
+        "evidence_for": [
+          "Multi-platform radar confirmation",
+          "B-52 crew visual observation",
+          "Multiple independent ground witnesses",
+          "UHF radio interference",
+          "Consistent pattern with other nuclear-site UAP incidents"
+        ],
+        "evidence_against": [
+          "Project Blue Book did not withdraw its explanation",
+          "Raw sensor data not publicly available"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Robert Hastings - Minot AFB 1968 Documentation",
+        "url": "https://www.ufos-nukes.com",
+        "type": "academic",
+        "notes": "Hastings documentation using FOIA-obtained Air Force documents."
+      },
+      {
+        "title": "NICAP - Minot AFB 1968",
+        "url": "https://www.nicap.org/681024dir.htm",
+        "type": "foia",
+        "notes": "NICAP case file with Air Force document references."
+      },
+      {
+        "title": "Project Blue Book Case 12548 (NARA)",
+        "url": "https://www.archives.gov/research/military/air-force/ufos",
+        "type": "official",
+        "notes": "Original Air Force intelligence report; available through NARA."
+      }
     ]
   }
 ]

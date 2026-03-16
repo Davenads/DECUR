@@ -485,7 +485,9 @@
   {
     "id": "ryan-graves",
     "name": "Ryan Graves",
-    "aliases": ["Lt. Graves"],
+    "aliases": [
+      "Lt. Graves"
+    ],
     "role": "F/A-18 Navy Pilot; Founder, Americans for Safe Aerospace",
     "period": "2009–present",
     "affiliation": "United States Navy (VFA-11), Americans for Safe Aerospace",
@@ -529,7 +531,9 @@
   {
     "id": "james-lacatski",
     "name": "Dr. James T. Lacatski",
-    "aliases": ["Jim Lacatski"],
+    "aliases": [
+      "Jim Lacatski"
+    ],
     "role": "DIA Program Manager, AAWSAP; Co-Author - Skinwalkers at the Pentagon",
     "period": "2007–2012 (AAWSAP)",
     "affiliation": "Defense Intelligence Agency, Defense Warning Office",
@@ -551,7 +555,9 @@
   {
     "id": "richard-dolan",
     "name": "Richard Dolan",
-    "aliases": ["Richard M. Dolan"],
+    "aliases": [
+      "Richard M. Dolan"
+    ],
     "role": "Historian; Author - UFOs and the National Security State",
     "period": "1995–present",
     "affiliation": "Richard Dolan Media",
@@ -573,7 +579,10 @@
   {
     "id": "daniel-sheehan",
     "name": "Daniel Sheehan",
-    "aliases": ["Danny Sheehan", "Dan Sheehan"],
+    "aliases": [
+      "Danny Sheehan",
+      "Dan Sheehan"
+    ],
     "role": "Constitutional Attorney; General Counsel, Disclosure Project",
     "period": "1977–present (UAP); 1970s–present (law)",
     "affiliation": "Christic Institute, Romero Institute, Disclosure Project",
@@ -595,7 +604,10 @@
   {
     "id": "chuck-schumer",
     "name": "Chuck Schumer",
-    "aliases": ["Charles E. Schumer", "Senator Schumer"],
+    "aliases": [
+      "Charles E. Schumer",
+      "Senator Schumer"
+    ],
     "role": "U.S. Senate Majority Leader; Sponsor, UAP Disclosure Act of 2023",
     "period": "2023 (UAP legislation); 1999–present (Senate)",
     "affiliation": "United States Senate, Senate Democratic Caucus",
@@ -617,7 +629,10 @@
   {
     "id": "alex-dietrich",
     "name": "Alex Dietrich",
-    "aliases": ["Alexandra Dietrich", "Lt. Cmdr. Dietrich"],
+    "aliases": [
+      "Alexandra Dietrich",
+      "Lt. Cmdr. Dietrich"
+    ],
     "role": "F/A-18F Pilot, VFA-41 Black Aces; Nimitz Encounter Witness",
     "period": "c. 1999–2016 (Navy)",
     "affiliation": "United States Navy, VFA-41 Black Aces, USS Nimitz Carrier Strike Group",
@@ -639,7 +654,9 @@
   {
     "id": "kevin-day",
     "name": "Kevin Day",
-    "aliases": ["Chief Day"],
+    "aliases": [
+      "Chief Day"
+    ],
     "role": "Navy Radar Operator, USS Princeton; Nimitz Encounter Witness",
     "period": "c. 1984–2007 (Navy)",
     "affiliation": "United States Navy, USS Princeton (CG-59), Nimitz Carrier Strike Group",
@@ -661,13 +678,25 @@
   {
     "id": "john-mack",
     "name": "Dr. John E. Mack",
-    "aliases": ["John Mack", "John Edward Mack"],
+    "aliases": [
+      "John Mack",
+      "John Edward Mack"
+    ],
     "role": "Professor of Psychiatry, Harvard Medical School; Founder of PEER",
     "period": "1990-2004",
     "affiliation": "Harvard Medical School, Program for Extraordinary Experience Research (PEER)",
     "summary": "Pulitzer Prize-winning Harvard psychiatrist who founded the Program for Extraordinary Experience Research (PEER) in 1993 and became the most academically credentialed researcher to seriously investigate UAP contact experiences. Investigated the 1994 Ariel School incident in Zimbabwe. Died in London in 2004.",
     "status": "detailed",
-    "tags": ["Harvard", "psychiatry", "Ariel School", "experiencer research", "PEER", "academia", "Zimbabwe", "Pulitzer Prize"],
+    "tags": [
+      "Harvard",
+      "psychiatry",
+      "Ariel School",
+      "experiencer research",
+      "PEER",
+      "academia",
+      "Zimbabwe",
+      "Pulitzer Prize"
+    ],
     "data_file": "john-mack.json",
     "type": "scientist",
     "includeInExplore": true
@@ -675,13 +704,24 @@
   {
     "id": "jesse-michels",
     "name": "Jesse Michels",
-    "aliases": ["American Alchemy"],
+    "aliases": [
+      "American Alchemy"
+    ],
     "role": "Independent Journalist and Filmmaker; Founder, American Alchemy",
     "period": "2021-present",
     "affiliation": "American Alchemy (YouTube)",
     "summary": "Founder and host of American Alchemy, a YouTube channel with 567K+ subscribers covering UAP disclosure, fringe science, and insider testimony. Conducted one of David Grusch's first major media appearances before his congressional testimony in 2023. Has interviewed nearly every significant figure in modern UAP disclosure across 350+ episodes, making American Alchemy one of the most consequential independent journalism outlets in the field.",
     "status": "detailed",
-    "tags": ["journalism", "American Alchemy", "YouTube", "Grusch", "Elizondo", "interviews", "disclosure", "independent media"],
+    "tags": [
+      "journalism",
+      "American Alchemy",
+      "YouTube",
+      "Grusch",
+      "Elizondo",
+      "interviews",
+      "disclosure",
+      "independent media"
+    ],
     "data_file": "jesse-michels.json",
     "type": "journalist",
     "includeInExplore": true
@@ -689,13 +729,26 @@
   {
     "id": "harald-malmgren",
     "name": "Dr. Harald Malmgren",
-    "aliases": ["Harold Malmgren", "Harald B. Malmgren"],
+    "aliases": [
+      "Harold Malmgren",
+      "Harald B. Malmgren"
+    ],
     "role": "Presidential Adviser (Kennedy, Johnson, Nixon, Ford); Deputy Special Trade Representative",
     "period": "1961-1975",
     "affiliation": "National Security Council, Office of the U.S. Trade Representative",
     "summary": "One of the longest-serving senior White House advisers of the Cold War era, Malmgren served four consecutive presidential administrations with NSC situation room access and Q clearance. In a 2025 interview with Jesse Michels he disclosed firsthand handling of anomalous material recovered from the Bluegill Triple Prime nuclear test (1962) in the Marshall Islands, and a private briefing from CIA Deputy Director Richard Bissell on a 1933 Italian UFO crash - despite which he was denied further access to recovered material information. His government career is among the most senior of any figure to have made firsthand UAP material claims on record.",
     "status": "detailed",
-    "tags": ["NSC", "Cuban Missile Crisis", "Operation Dominic", "Bluegill Triple Prime", "Q clearance", "Cold War", "Bissell", "CIA", "four presidents"],
+    "tags": [
+      "NSC",
+      "Cuban Missile Crisis",
+      "Operation Dominic",
+      "Bluegill Triple Prime",
+      "Q clearance",
+      "Cold War",
+      "Bissell",
+      "CIA",
+      "four presidents"
+    ],
     "data_file": "harald-malmgren.json",
     "type": "official",
     "includeInExplore": true
@@ -703,13 +756,22 @@
   {
     "id": "stanton-friedman",
     "name": "Stanton T. Friedman",
-    "aliases": ["Stan Friedman"],
+    "aliases": [
+      "Stan Friedman"
+    ],
     "role": "Nuclear Physicist; UFO Researcher",
     "period": "1967-2019",
     "affiliation": "Independent; Center for UFO Studies (CUFOS)",
     "summary": "Nuclear physicist who spent 52 years as the world's foremost civilian Roswell researcher. Located and first interviewed Jesse Marcel Sr. in 1978, resurrecting the Roswell case from decades of obscurity. Coined 'Cosmic Watergate' to describe systematic government UAP suppression. Gave over 700 lectures on college campuses and applied rigorous document analysis to the MJ-12 papers.",
     "status": "detailed",
-    "tags": ["Roswell", "MJ-12", "Cosmic Watergate", "Nuclear Physics", "Jesse Marcel", "CUFOS"],
+    "tags": [
+      "Roswell",
+      "MJ-12",
+      "Cosmic Watergate",
+      "Nuclear Physics",
+      "Jesse Marcel",
+      "CUFOS"
+    ],
     "data_file": "stanton-friedman.json",
     "type": "scientist",
     "includeInExplore": true
@@ -717,13 +779,23 @@
   {
     "id": "avi-loeb",
     "name": "Dr. Avi Loeb",
-    "aliases": ["Abraham Loeb", "Professor Loeb"],
+    "aliases": [
+      "Abraham Loeb",
+      "Professor Loeb"
+    ],
     "role": "Harvard Astrophysicist; Director, Galileo Project",
     "period": "2021-present",
     "affiliation": "Harvard University; Galileo Project",
     "summary": "Harvard's former astronomy chair who founded the Galileo Project in 2021 - the first systematic, peer-reviewed, fully transparent scientific program to search for extraterrestrial technological artifacts including UAP. His willingness to apply mainstream academic rigor to the UAP question, combined with his institutional standing, has given the field unprecedented credibility in academic circles. Has published over 1,000 peer-reviewed papers and testified before Congress in 2024.",
     "status": "detailed",
-    "tags": ["Harvard", "Galileo Project", "Oumuamua", "Extraterrestrial", "Congressional Testimony 2024", "Interstellar Objects"],
+    "tags": [
+      "Harvard",
+      "Galileo Project",
+      "Oumuamua",
+      "Extraterrestrial",
+      "Congressional Testimony 2024",
+      "Interstellar Objects"
+    ],
     "data_file": "avi-loeb.json",
     "type": "scientist",
     "includeInExplore": true
@@ -731,15 +803,140 @@
   {
     "id": "donald-keyhoe",
     "name": "Maj. Donald E. Keyhoe",
-    "aliases": ["Donald Keyhoe"],
+    "aliases": [
+      "Donald Keyhoe"
+    ],
     "role": "Director, NICAP; Marine Corps Major (Ret.)",
     "period": "1950-1969",
     "affiliation": "National Investigations Committee on Aerial Phenomena (NICAP)",
     "summary": "Marine Corps Major who co-founded and directed NICAP from 1957 to 1969, making it the largest and most credible civilian UFO organization in American history with 14,000 members. His 1950 book 'The Flying Saucers Are Real' sold half a million copies and established government accountability as the central framework for UAP disclosure advocacy - 60 years before the modern disclosure movement.",
     "status": "detailed",
-    "tags": ["NICAP", "Marine Corps", "The Flying Saucers Are Real", "Project Blue Book", "Congressional Testimony", "Cold War"],
+    "tags": [
+      "NICAP",
+      "Marine Corps",
+      "The Flying Saucers Are Real",
+      "Project Blue Book",
+      "Congressional Testimony",
+      "Cold War"
+    ],
     "data_file": "donald-keyhoe.json",
     "type": "official",
+    "includeInExplore": true
+  },
+  {
+    "id": "philip-corso",
+    "name": "Col. Philip J. Corso",
+    "aliases": [
+      "Philip Corso",
+      "Col. Corso"
+    ],
+    "role": "U.S. Army Colonel, Pentagon Foreign Technology Division",
+    "period": "1942-1963",
+    "affiliation": "U.S. Army, Pentagon Foreign Technology Division",
+    "summary": "Retired U.S. Army Colonel who served on Eisenhower's NSC before assignment to the Pentagon's Army R&D division under Lt. General Arthur Trudeau. In his 1997 memoir The Day After Roswell, Corso claimed he managed a program to seed Roswell crash debris to private defense contractors, allegedly producing fiber optics, integrated circuits, night vision, and Kevlar. His account is the most detailed military insider claim about systematic Roswell artifact reverse engineering ever published.",
+    "status": "detailed",
+    "tags": [
+      "military",
+      "roswell",
+      "reverse-engineering",
+      "Pentagon",
+      "NSC",
+      "Eisenhower",
+      "Foreign-Technology"
+    ],
+    "data_file": "philip-corso.json",
+    "type": "official",
+    "includeInExplore": true
+  },
+  {
+    "id": "steven-greer",
+    "name": "Dr. Steven M. Greer",
+    "aliases": [
+      "Steven Greer",
+      "Dr. Greer"
+    ],
+    "role": "Founder, CSETI and The Disclosure Project",
+    "period": "1990-present",
+    "affiliation": "CSETI, The Disclosure Project",
+    "summary": "Emergency physician turned full-time UAP disclosure advocate who organized the landmark May 9, 2001 National Press Club briefing with 20+ military and government witnesses. Founded CSETI (1990) and The Disclosure Project (1993). One of the most prominent and polarizing figures in UAP disclosure, praised for aggregating witness testimony and criticized for CE-5 contact claims and fundraising practices.",
+    "status": "detailed",
+    "tags": [
+      "Disclosure-Project",
+      "CSETI",
+      "National-Press-Club",
+      "CE-5",
+      "2001-event",
+      "witness-testimony"
+    ],
+    "data_file": "steven-greer.json",
+    "type": "official",
+    "includeInExplore": true
+  },
+  {
+    "id": "jay-stratton",
+    "name": "Jay Stratton",
+    "aliases": [],
+    "role": "Director, DoD UAP Task Force (2020-2021); AARO Director (2022, acting)",
+    "period": "c. 1990s-2022",
+    "affiliation": "Office of Naval Intelligence, DoD UAP Task Force, AARO",
+    "summary": "Career Defense Intelligence officer who served as Director of the DoD UAP Task Force (2020-2021) and briefly as AARO's first director in 2022. Worked closely with Luis Elizondo during the AATIP era and is considered a key institutional continuity figure bridging AATIP, the UAPTF, and AARO. David Grusch has described Stratton as the government official who directed him to investigate legacy UAP crash retrieval programs.",
+    "status": "detailed",
+    "tags": [
+      "UAPTF",
+      "AARO",
+      "DoD",
+      "intelligence",
+      "Elizondo",
+      "Grusch"
+    ],
+    "data_file": "jay-stratton.json",
+    "type": "insider",
+    "includeInExplore": true
+  },
+  {
+    "id": "robert-hastings",
+    "name": "Robert L. Hastings",
+    "aliases": [
+      "Robert Hastings"
+    ],
+    "role": "Researcher and Author - UFOs and Nukes",
+    "period": "1973-present",
+    "affiliation": "Independent researcher",
+    "summary": "Civilian researcher who has spent over four decades documenting UAP incidents at nuclear weapons facilities, compiling testimony from over 160 U.S. military veterans. His 2008 book UFOs and Nukes is the definitive compilation of military testimony connecting UAP to nuclear sites. In 2010 he organized a National Press Club event at which seven USAF veterans described firsthand UAP encounters at missile bases, including ICBM shutdowns.",
+    "status": "detailed",
+    "tags": [
+      "nuclear-weapons",
+      "ICBM",
+      "Malmstrom",
+      "Minot",
+      "UFOs-and-Nukes",
+      "military-testimony"
+    ],
+    "data_file": "robert-hastings.json",
+    "type": "journalist",
+    "includeInExplore": true
+  },
+  {
+    "id": "sean-kirkpatrick",
+    "name": "Dr. Sean M. Kirkpatrick",
+    "aliases": [
+      "Sean Kirkpatrick"
+    ],
+    "role": "Director, All-domain Anomaly Resolution Office (AARO), 2022-2023",
+    "period": "Nov 2022 - Dec 2023 (AARO)",
+    "affiliation": "All-domain Anomaly Resolution Office, Defense Intelligence Agency",
+    "summary": "PhD physicist who served as the first official director of AARO from November 2022 until his resignation in December 2023. Testified before the Senate in April 2023 and co-authored a paper with Avi Loeb on UAP signatures. Resigned citing lack of institutional support and congressional interference. His departure and subsequent public criticism marked growing controversy over AARO effectiveness.",
+    "status": "detailed",
+    "tags": [
+      "AARO",
+      "DoD",
+      "physics",
+      "congressional-testimony",
+      "Avi-Loeb",
+      "whistleblower-critique"
+    ],
+    "data_file": "sean-kirkpatrick.json",
+    "type": "scientist",
     "includeInExplore": true
   }
 ]
