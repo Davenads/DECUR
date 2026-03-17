@@ -1,15 +1,22 @@
 import type { NextPage, GetStaticProps } from 'next';
 import { useState, useRef } from 'react';
+import dynamic from 'next/dynamic';
 import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
 import NetworkGraph from '../components/explore/NetworkGraph';
 import TimelineOverlay, { extractYear, WBEvent, CaseEvent } from '../components/explore/TimelineOverlay';
 import CaseMap, { MapCase, MapEvent } from '../components/explore/CaseMap';
+
 import { getAllEntries, TimelineEntry } from '../lib/timelineData';
 import insiderIndex from '../data/key-figures/index.json';
 import { insiderRegistry } from '../data/key-figures/registry';
 import casesData from '../data/cases.json';
 import timelineData from '../data/timeline.json';
+
+const ProgramLineageFlow = dynamic(
+  () => import('../components/explore/ProgramLineageFlow'),
+  { ssr: false }
+);
 
 interface Props {
   entries: TimelineEntry[];
@@ -88,6 +95,18 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         {/* Incident Map */}
         <section>
           <CaseMap cases={mapCases} events={mapEvents} />
+        </section>
+
+        {/* Program Lineage Flow */}
+        <section id="program-lineage">
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Program Lineage</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+              Directed flow of government and private UAP programs showing succession and
+              relationship links over time. Left to right reflects chronological progression.
+            </p>
+          </div>
+          <ProgramLineageFlow />
         </section>
 
       </div>
