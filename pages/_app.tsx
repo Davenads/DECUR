@@ -5,10 +5,13 @@ import type { AppProps } from 'next/app';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from 'next-themes';
+import { inter, montserrat } from '../lib/fonts';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+    <>
+      <style dangerouslySetInnerHTML={{ __html: `:root { --font-inter: ${inter.style.fontFamily}; --font-montserrat: ${montserrat.style.fontFamily}; }` }} />
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <ErrorBoundary>
         <Layout>
           <Component {...pageProps} />
@@ -17,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <SpeedInsights />
       </ErrorBoundary>
     </ThemeProvider>
+    </>
   );
 }
 
