@@ -34,15 +34,15 @@ export interface GraphData {
 }
 
 export const NODE_COLORS: Record<NodeType, string> = {
-  person:       '#3b82f6', // blue
-  facility:     '#f59e0b', // amber
-  entity:       '#8b5cf6', // purple
-  organization: '#14b8a6', // teal
-  project:      '#22c55e', // green
-  concept:      '#6366f1', // indigo
-  technology:   '#f97316', // orange
-  document:     '#e11d48', // rose
-  case:         '#ef4444', // red
+  person:       '#6da3d8', // blue - muted
+  facility:     '#c9973a', // amber - muted
+  entity:       '#9d7ec9', // purple - muted
+  organization: '#3d9e96', // teal - muted
+  project:      '#4ea86a', // green - muted
+  concept:      '#7b7ec4', // indigo - muted
+  technology:   '#c97840', // orange - muted
+  document:     '#c04060', // rose - muted
+  case:         '#c05050', // red - muted
 };
 
 // Person nodes for figures WITHOUT dedicated profile pages.
