@@ -1,6 +1,7 @@
 'use client';
 
-import { useCallback, useLayoutEffect, useState } from 'react';
+import React, { useCallback, useLayoutEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import {
   ReactFlow,
   Background,
@@ -72,6 +73,7 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
           padding: '10px 14px',
           width: NODE_WIDTH,
           boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+          cursor: 'pointer',
         }}
       >
         <div style={{ fontWeight: 700, fontSize: 13, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 4 }}>
@@ -273,6 +275,7 @@ const { nodes: initialNodes, edges: initialEdges } = buildInitialElements();
 // --------------------------------------------------------------------------
 
 export default function ProgramLineageFlow() {
+  const router = useRouter();
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [layouted, setLayouted] = useState(false);
@@ -280,6 +283,10 @@ export default function ProgramLineageFlow() {
   const onInit = useCallback(() => {
     setLayouted(true);
   }, []);
+
+  const handleNodeClick = useCallback((_evt: React.MouseEvent, node: Node) => {
+    router.push(`/programs/${node.id}`);
+  }, [router]);
 
   useLayoutEffect(() => {
     if (!layouted) return;
@@ -309,6 +316,7 @@ export default function ProgramLineageFlow() {
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
         onInit={onInit}
+        onNodeClick={handleNodeClick}
         fitView
         fitViewOptions={{ padding: 0.15 }}
         minZoom={0.2}
