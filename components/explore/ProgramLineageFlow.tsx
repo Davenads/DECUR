@@ -285,7 +285,7 @@ export default function ProgramLineageFlow() {
   }, []);
 
   const handleNodeClick = useCallback((_evt: React.MouseEvent, node: Node) => {
-    router.push(`/programs/${node.id}`);
+    router.push(`/programs/${node.id}?ref=program-lineage`);
   }, [router]);
 
   useLayoutEffect(() => {

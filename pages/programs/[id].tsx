@@ -12,14 +12,22 @@ interface Props {
 
 const ProgramPage: NextPage<Props> = ({ program }) => {
   const router = useRouter();
-  const [fromExplore, setFromExplore] = useState(false);
+
+  const [ref, setRef] = useState<string | null>(null);
 
   useEffect(() => {
-    setFromExplore(new URLSearchParams(window.location.search).get('ref') === 'explore');
+    setRef(new URLSearchParams(window.location.search).get('ref'));
   }, []);
 
-  const onBack = () => router.push(fromExplore ? '/explore#relationship-network' : '/data?category=programs');
-  const backLabel = fromExplore ? 'Relationship Network' : 'Programs';
+  const onBack = () => {
+    if (ref === 'explore') router.push('/explore#relationship-network');
+    else if (ref === 'program-lineage') router.push('/explore#program-lineage');
+    else router.push('/data?category=programs');
+  };
+  const backLabel =
+    ref === 'explore' ? 'Relationship Network' :
+    ref === 'program-lineage' ? 'Program Lineage' :
+    'Programs';
 
   return (
     <>
