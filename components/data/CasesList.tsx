@@ -1,8 +1,9 @@
 import { FC, useMemo, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
 import { CaseEntry, EvidenceTier } from '../../types/data';
-import CaseDetail, { tierConfig } from './CaseDetail';
+import { tierConfig } from './CaseDetail';
 import { ps } from './shared/profileStyles';
 
 // SSR-safe: react-simple-maps uses browser APIs
@@ -18,7 +19,7 @@ interface CasesListProps {
 }
 
 const CasesList: FC<CasesListProps> = ({ cases }) => {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const router = useRouter();
   const [viewMode, setViewMode] = useState<ViewMode>('list');
   const [sortMode, setSortMode] = useState<CaseSortMode>('date');
 
@@ -26,12 +27,6 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
     if (sortMode === 'alpha') return [...cases].sort((a, b) => a.name.localeCompare(b.name));
     return [...cases].sort((a, b) => a.date.localeCompare(b.date));
   }, [cases, sortMode]);
-
-  const selected = cases.find(c => c.id === selectedId) ?? null;
-
-  if (selected) {
-    return <CaseDetail c={selected} onBack={() => { setSelectedId(null); window.scrollTo({ top: 0, behavior: 'instant' }); }} />;
-  }
 
   return (
     <div>
@@ -84,7 +79,7 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
       {/* Map view */}
       {viewMode === 'map' && (
         <div className="mb-6">
-          <CasesLocationMap cases={cases} onSelectCase={(id) => setSelectedId(id)} />
+          <CasesLocationMap cases={cases} onSelectCase={(id) => router.push(`/cases/${id}`)} />
         </div>
       )}
 

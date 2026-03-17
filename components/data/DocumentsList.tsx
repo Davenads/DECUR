@@ -1,7 +1,8 @@
 import { FC, useMemo, useState } from 'react';
+import Link from 'next/link';
 import { DocumentEntry } from '../../types/data';
 import { ps } from './shared/profileStyles';
-import DocumentDetail, { authConfig, AuthStatus } from './shared/DocumentDetail';
+import { authConfig, AuthStatus } from './shared/DocumentDetail';
 
 /* ─── Documents list view ──────────────────────────────────────── */
 
@@ -12,19 +13,12 @@ interface DocumentsListProps {
 }
 
 const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [sortMode, setSortMode] = useState<DocSortMode>('date');
 
   const sorted = useMemo(() => {
     if (sortMode === 'alpha') return [...documents].sort((a, b) => a.name.localeCompare(b.name));
     return [...documents].sort((a, b) => a.date.localeCompare(b.date));
   }, [documents, sortMode]);
-
-  const selected = documents.find(d => d.id === selectedId) ?? null;
-
-  if (selected) {
-    return <DocumentDetail d={selected} onBack={() => setSelectedId(null)} />;
-  }
 
   return (
     <div>
@@ -69,12 +63,12 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
                 <div className="flex items-start gap-2 flex-wrap">
                   <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h3>
                 </div>
-                <button
-                  onClick={() => setSelectedId(d.id)}
+                <Link
+                  href={`/documents/${d.id}`}
                   className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap shrink-0"
                 >
                   View Document
-                </button>
+                </Link>
               </div>
 
               <p className="text-xs font-medium text-primary mb-0.5">{d.issuing_authority}</p>
