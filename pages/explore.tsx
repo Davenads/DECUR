@@ -1,5 +1,5 @@
 import type { NextPage, GetStaticProps } from 'next';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
@@ -32,20 +32,44 @@ interface FocusEra {
   label: string;
 }
 
+const SECTION_NAV = [
+  { id: 'relationship-network', label: 'Network'  },
+  { id: 'timeline',             label: 'Timeline' },
+  { id: 'map',                  label: 'Map'      },
+  { id: 'program-lineage',      label: 'Programs' },
+] as const;
+
+type SectionId = typeof SECTION_NAV[number]['id'];
+
 const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases, mapEvents }) => {
   const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
+  const [activeSection, setActiveSection] = useState<SectionId>('relationship-network');
   const overlayRef = useRef<HTMLElement>(null);
 
   function handleSelectEra(start: number, end: number) {
-    const label = start === end - 9
-      ? `${start}s`
-      : `${start}-${end}`;
+    const label = start === end - 9 ? `${start}s` : `${start}-${end}`;
     setFocusEra({ start, end, label });
-    // Scroll to overlay
     setTimeout(() => {
       overlayRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 50);
   }
+
+  // Track which section is in the viewport to highlight the active nav pill
+  useEffect(() => {
+    const ids = SECTION_NAV.map(s => s.id);
+    const observers: IntersectionObserver[] = [];
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const obs = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setActiveSection(id as SectionId); },
+        { rootMargin: '-30% 0px -50% 0px', threshold: 0 }
+      );
+      obs.observe(el);
+      observers.push(obs);
+    });
+    return () => observers.forEach(o => o.disconnect());
+  }, []);
 
   return (
     <>
@@ -54,11 +78,12 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         description="Interactive timeline and relationship network visualizing eight decades of UAP events, key figure disclosures, and government program histories."
         path="/explore"
       />
-      <div className="container mx-auto px-4">
-      <div className="max-w-5xl mx-auto space-y-8">
 
-        {/* Page header */}
-        <div>
+      {/* Full-width wrapper so the sticky nav can bleed past the Layout's px-4 */}
+      <div className="-mx-4 -mt-8">
+
+        {/* Page header - constrained width, matches Layout padding */}
+        <div className="max-w-5xl mx-auto px-4 pt-8 pb-4">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Explore</h1>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl">
             Interactive visualizations across the full DECUR dataset. Identify patterns,
@@ -66,51 +91,100 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
           </p>
         </div>
 
-        {/* Relationship Network Graph */}
-        <section id="relationship-network">
-          <NetworkGraph />
-        </section>
-
-        {/* Event Frequency Chart */}
-        <section>
-          <EventFrequencyChart
-            entries={entries}
-            onSelectEra={handleSelectEra}
-            onClearEra={() => setFocusEra(null)}
-            activeEraStart={focusEra?.start ?? null}
-          />
-        </section>
-
-        {/* Timeline Overlay */}
-        <section ref={overlayRef}>
-          <TimelineOverlay
-            uapEntries={entries}
-            insiderEvents={insiderEvents}
-            caseEvents={caseEvents}
-            focusEra={focusEra}
-            onClearFocus={() => setFocusEra(null)}
-          />
-        </section>
-
-        {/* Incident Map */}
-        <section>
-          <CaseMap cases={mapCases} events={mapEvents} />
-        </section>
-
-        {/* Program Lineage Flow */}
-        <section id="program-lineage">
-          <div className="mb-4">
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Program Lineage</h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-              Directed flow of government and private UAP programs showing succession and
-              relationship links over time. Left to right reflects chronological progression.
-            </p>
+        {/* Sticky section nav */}
+        <nav className="sticky top-0 z-40 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-2">
+          <div className="max-w-5xl mx-auto flex gap-2 overflow-x-auto">
+            {SECTION_NAV.map(s => (
+              <a
+                key={s.id}
+                href={`#${s.id}`}
+                className={`shrink-0 text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
+                  activeSection === s.id
+                    ? 'bg-primary text-white'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
+                }`}
+              >
+                {s.label}
+              </a>
+            ))}
           </div>
-          <ProgramLineageFlow />
-        </section>
+        </nav>
 
+        {/* Sections */}
+        <div className="max-w-5xl mx-auto px-4 space-y-12 py-8 pb-16">
+
+          {/* ── Relationship Network (Featured) ──────────────────────────── */}
+          <section id="relationship-network">
+            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                  Relationship Network
+                </h2>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 dark:bg-primary/20 text-primary font-semibold uppercase tracking-wide">
+                  Featured
+                </span>
+              </div>
+              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl mb-4">
+                Force-directed graph spanning all key figures, programs, cases, and events across the DECUR dataset.
+                Click any node to select it and explore its connections. Click again to navigate to its dedicated page.
+              </p>
+              <NetworkGraph />
+            </div>
+          </section>
+
+          {/* ── Timeline & History ───────────────────────────────────────── */}
+          <section id="timeline">
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Timeline & History</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                Historical event frequency and multi-source timeline spanning eight decades of documented UAP activity.
+                Click a bar to filter the timeline to that decade.
+              </p>
+            </div>
+            <EventFrequencyChart
+              entries={entries}
+              onSelectEra={handleSelectEra}
+              onClearEra={() => setFocusEra(null)}
+              activeEraStart={focusEra?.start ?? null}
+            />
+            <section ref={overlayRef} className="mt-6">
+              <TimelineOverlay
+                uapEntries={entries}
+                insiderEvents={insiderEvents}
+                caseEvents={caseEvents}
+                focusEra={focusEra}
+                onClearFocus={() => setFocusEra(null)}
+              />
+            </section>
+          </section>
+
+          {/* ── Incident Map ─────────────────────────────────────────────── */}
+          <section id="map">
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Incident Map</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                Geographic distribution of documented UAP cases and geocoded historical events.
+                Click any marker for location details and evidence summary.
+              </p>
+            </div>
+            <CaseMap cases={mapCases} events={mapEvents} />
+          </section>
+
+          {/* ── Program Lineage ───────────────────────────────────────────── */}
+          <section id="program-lineage">
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Program Lineage</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                Directed flow of government and private UAP programs showing succession and
+                relationship links over time. Left to right reflects chronological progression.
+                Click any node to view that program&apos;s full profile.
+              </p>
+            </div>
+            <ProgramLineageFlow />
+          </section>
+
+        </div>
       </div>
-    </div>
     </>
   );
 };
