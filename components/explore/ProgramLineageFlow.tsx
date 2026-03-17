@@ -47,6 +47,10 @@ const STATUS_LABELS: Record<ProgramStatus, string> = {
   unknown:    'Unknown',
 };
 
+// Fixed node dimensions - used in both the renderer and dagre layout pass
+const NODE_WIDTH  = 200;
+const NODE_HEIGHT = 80;
+
 // --------------------------------------------------------------------------
 // Custom node renderer
 // --------------------------------------------------------------------------
@@ -55,15 +59,18 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
   const style = STATUS_STYLES[data.status];
   return (
     <>
-      <Handle type="target" position={Position.Left} style={{ background: '#475569', border: 'none', width: 8, height: 8 }} />
+      <Handle
+        type="target"
+        position={Position.Left}
+        style={{ background: '#475569', border: 'none', width: 8, height: 8 }}
+      />
       <div
         style={{
           background: style.bg,
           border: `1.5px solid ${style.border}`,
           borderRadius: 8,
           padding: '10px 14px',
-          minWidth: 180,
-          maxWidth: 220,
+          width: NODE_WIDTH,
           boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
         }}
       >
@@ -89,7 +96,11 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
           {STATUS_LABELS[data.status]}
         </span>
       </div>
-      <Handle type="source" position={Position.Right} style={{ background: '#475569', border: 'none', width: 8, height: 8 }} />
+      <Handle
+        type="source"
+        position={Position.Right}
+        style={{ background: '#475569', border: 'none', width: 8, height: 8 }}
+      />
     </>
   );
 }
@@ -97,11 +108,49 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
 const nodeTypes = { program: ProgramNode };
 
 // --------------------------------------------------------------------------
+// Status legend (overlaid inside the flow container)
+// --------------------------------------------------------------------------
+
+const LEGEND_ENTRIES: Array<{ status: ProgramStatus }> = [
+  { status: 'active'     },
+  { status: 'defunct'    },
+  { status: 'classified' },
+  { status: 'unknown'    },
+];
+
+function StatusLegend() {
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        top: 12,
+        right: 12,
+        zIndex: 10,
+        background: 'rgba(15,23,42,0.85)',
+        border: '1px solid #1e293b',
+        borderRadius: 8,
+        padding: '8px 12px',
+        backdropFilter: 'blur(4px)',
+      }}
+    >
+      <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>
+        Status
+      </div>
+      {LEGEND_ENTRIES.map(({ status }) => {
+        const s = STATUS_STYLES[status];
+        return (
+          <div key={status} style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 4 }}>
+            <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 2, background: s.badge }} />
+            <span style={{ fontSize: 11, color: '#94a3b8' }}>{STATUS_LABELS[status]}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// --------------------------------------------------------------------------
 // Raw program data
-// All government / official programs with clear succession relationships.
-// AATIP is included here even though it lives in network-graph.ts (not
-// programs.json) because it is a critical link in the AAWSAP -> AATIP ->
-// UAPTF succession chain.
 // --------------------------------------------------------------------------
 
 const RAW_NODES: Array<{ id: string; label: string; period: string; status: ProgramStatus }> = [
@@ -128,29 +177,32 @@ const RAW_NODES: Array<{ id: string; label: string; period: string; status: Prog
   { id: 'immaculate-constellation',  label: 'Immaculate Constellation',              period: 'Alleged ongoing',         status: 'classified' },
   { id: 'aaro',                      label: 'AARO',                                  period: '2022-present',            status: 'active'     },
   // Independent science programs
-  { id: 'sol-foundation',            label: 'Sol Foundation',                        period: '2023-present',            status: 'active'     },
   { id: 'galileo-project',           label: 'The Galileo Project',                   period: '2021-present',            status: 'active'     },
+  { id: 'sol-foundation',            label: 'Sol Foundation',                        period: '2023-present',            status: 'active'     },
 ];
 
 // --------------------------------------------------------------------------
-// Succession / relationship edges (program-to-program only)
-// Sourced from the GraphLink[] array in data/network-graph.ts.
+// Succession / relationship edges
 // --------------------------------------------------------------------------
 
-const RAW_EDGES: Array<{ source: string; target: string; label: string }> = [
-  { source: 'ipu',                      target: 'project-sign',       label: 'alleged predecessor of'    },
-  { source: 'project-sign',             target: 'project-grudge',     label: 'predecessor of'             },
-  { source: 'project-grudge',           target: 'project-blue-book',  label: 'predecessor of'             },
-  { source: 'sdi',                      target: 'aawsap',             label: 'black-budget precedent for' },
-  { source: 'nids',                     target: 'bigelow-aerospace',  label: 'evolved into BAASS'         },
-  { source: 'nicap',                    target: 'project-blue-book',  label: 'investigated and critiqued' },
-  { source: 'mufon',                    target: 'nicap',              label: 'succeeded as primary civilian org' },
-  { source: 'aawsap',                   target: 'aatip',              label: 'preceded / overlapped with' },
-  { source: 'aatip',                    target: 'uap-task-force',     label: 'predecessor of'             },
-  { source: 'project-moon-dust',        target: 'uap-task-force',     label: 'predecessor of'             },
-  { source: 'immaculate-constellation', target: 'uap-task-force',     label: 'related program'            },
-  { source: 'kona-blue',                target: 'aaro',               label: 'assessed by'                },
-  { source: 'uap-task-force',           target: 'aaro',               label: 'predecessor of'             },
+const RAW_EDGES: Array<{ source: string; target: string }> = [
+  { source: 'ipu',                      target: 'project-sign'          },
+  { source: 'project-sign',             target: 'project-grudge'        },
+  { source: 'project-grudge',           target: 'project-blue-book'     },
+  { source: 'nicap',                    target: 'mufon'                 }, // NICAP (1956) preceded and influenced MUFON (1969)
+  { source: 'nicap',                    target: 'project-blue-book'     }, // investigated and critiqued
+  { source: 'sdi',                      target: 'aawsap'                }, // black-budget precedent
+  { source: 'nids',                     target: 'bigelow-aerospace'     }, // evolved into BAASS
+  { source: 'bigelow-aerospace',        target: 'aawsap'                }, // BAASS was the AAWSAP contractor
+  { source: 'aawsap',                   target: 'aatip'                 }, // preceded / overlapped with
+  { source: 'aatip',                    target: 'uap-task-force'        }, // predecessor
+  { source: 'project-moon-dust',        target: 'uap-task-force'        }, // predecessor
+  { source: 'immaculate-constellation', target: 'uap-task-force'        }, // related program
+  { source: 'ttsa',                     target: 'uap-task-force'        }, // 2017 video releases triggered UAPTF formation
+  { source: 'kona-blue',                target: 'aaro'                  }, // assessed by AARO
+  { source: 'uap-task-force',           target: 'aaro'                  }, // predecessor of AARO
+  { source: 'uap-task-force',           target: 'galileo-project'       }, // UAPTF 2021 report inspired Loeb to launch Galileo
+  { source: 'galileo-project',          target: 'sol-foundation'        }, // Loeb leads both; Sol Foundation grew from Galileo work
 ];
 
 // --------------------------------------------------------------------------
@@ -162,12 +214,12 @@ function getLayoutedElements(
   edges: Edge[],
 ): { nodes: Node[]; edges: Edge[] } {
   const g = new Dagre.graphlib.Graph().setDefaultEdgeLabel(() => ({}));
-  g.setGraph({ rankdir: 'LR', nodesep: 60, ranksep: 120 });
+  g.setGraph({ rankdir: 'LR', nodesep: 50, ranksep: 100 });
 
   nodes.forEach(node =>
     g.setNode(node.id, {
-      width: node.measured?.width ?? 220,
-      height: node.measured?.height ?? 90,
+      width:  node.measured?.width  ?? NODE_WIDTH,
+      height: node.measured?.height ?? NODE_HEIGHT,
     })
   );
   edges.forEach(edge => g.setEdge(edge.source, edge.target));
@@ -180,8 +232,8 @@ function getLayoutedElements(
       return {
         ...node,
         position: {
-          x: pos.x - (node.measured?.width ?? 220) / 2,
-          y: pos.y - (node.measured?.height ?? 90) / 2,
+          x: pos.x - (node.measured?.width  ?? NODE_WIDTH)  / 2,
+          y: pos.y - (node.measured?.height ?? NODE_HEIGHT) / 2,
         },
       };
     }),
@@ -197,7 +249,7 @@ function buildInitialElements(): { nodes: Node[]; edges: Edge[] } {
   const nodes: Node[] = RAW_NODES.map(n => ({
     id: n.id,
     type: 'program',
-    position: { x: 0, y: 0 }, // will be overwritten by dagre
+    position: { x: 0, y: 0 },
     data: { label: n.label, period: n.period, status: n.status } as ProgramNodeData,
   }));
 
@@ -205,15 +257,12 @@ function buildInitialElements(): { nodes: Node[]; edges: Edge[] } {
     id: `e-${i}`,
     source: e.source,
     target: e.target,
-    label: e.label,
-    labelStyle: { fill: '#94a3b8', fontSize: 10 },
-    labelBgStyle: { fill: '#0f172a', fillOpacity: 0.85 },
+    type: 'smoothstep',
     style: { stroke: '#475569', strokeWidth: 1.5 },
-    markerEnd: { type: MarkerType.ArrowClosed, color: '#475569' },
+    markerEnd: { type: MarkerType.ArrowClosed, color: '#475569', width: 16, height: 16 },
     animated: false,
   }));
 
-  // Run initial dagre layout with default node sizes
   return getLayoutedElements(nodes, edges);
 }
 
@@ -228,7 +277,6 @@ export default function ProgramLineageFlow() {
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [layouted, setLayouted] = useState(false);
 
-  // Re-run layout once nodes have been measured by React Flow
   const onInit = useCallback(() => {
     setLayouted(true);
   }, []);
@@ -244,14 +292,16 @@ export default function ProgramLineageFlow() {
   return (
     <div
       style={{
+        position: 'relative',
         width: '100%',
-        height: 640,
+        height: 720,
         background: '#0f172a',
         borderRadius: 12,
         overflow: 'hidden',
         border: '1px solid #1e293b',
       }}
     >
+      <StatusLegend />
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -261,7 +311,7 @@ export default function ProgramLineageFlow() {
         onInit={onInit}
         fitView
         fitViewOptions={{ padding: 0.15 }}
-        minZoom={0.25}
+        minZoom={0.2}
         maxZoom={2}
         colorMode="dark"
         proOptions={{ hideAttribution: true }}
