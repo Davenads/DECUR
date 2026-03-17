@@ -7,6 +7,8 @@ import {
   Controls,
   BackgroundVariant,
   MarkerType,
+  Handle,
+  Position,
   useNodesState,
   useEdgesState,
   type Node,
@@ -52,39 +54,43 @@ const STATUS_LABELS: Record<ProgramStatus, string> = {
 function ProgramNode({ data }: { data: ProgramNodeData }) {
   const style = STATUS_STYLES[data.status];
   return (
-    <div
-      style={{
-        background: style.bg,
-        border: `1.5px solid ${style.border}`,
-        borderRadius: 8,
-        padding: '10px 14px',
-        minWidth: 180,
-        maxWidth: 220,
-        boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
-      }}
-    >
-      <div style={{ fontWeight: 700, fontSize: 13, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 4 }}>
-        {data.label}
-      </div>
-      <div style={{ fontSize: 11, color: '#94a3b8', marginBottom: 6 }}>
-        {data.period}
-      </div>
-      <span
+    <>
+      <Handle type="target" position={Position.Left} style={{ background: '#475569', border: 'none', width: 8, height: 8 }} />
+      <div
         style={{
-          display: 'inline-block',
-          fontSize: 10,
-          fontWeight: 600,
-          padding: '1px 7px',
-          borderRadius: 999,
-          background: style.badge,
-          color: style.badgeText,
-          letterSpacing: '0.04em',
-          textTransform: 'uppercase',
+          background: style.bg,
+          border: `1.5px solid ${style.border}`,
+          borderRadius: 8,
+          padding: '10px 14px',
+          minWidth: 180,
+          maxWidth: 220,
+          boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
         }}
       >
-        {STATUS_LABELS[data.status]}
-      </span>
-    </div>
+        <div style={{ fontWeight: 700, fontSize: 13, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 4 }}>
+          {data.label}
+        </div>
+        <div style={{ fontSize: 11, color: '#94a3b8', marginBottom: 6 }}>
+          {data.period}
+        </div>
+        <span
+          style={{
+            display: 'inline-block',
+            fontSize: 10,
+            fontWeight: 600,
+            padding: '1px 7px',
+            borderRadius: 999,
+            background: style.badge,
+            color: style.badgeText,
+            letterSpacing: '0.04em',
+            textTransform: 'uppercase',
+          }}
+        >
+          {STATUS_LABELS[data.status]}
+        </span>
+      </div>
+      <Handle type="source" position={Position.Right} style={{ background: '#475569', border: 'none', width: 8, height: 8 }} />
+    </>
   );
 }
 
