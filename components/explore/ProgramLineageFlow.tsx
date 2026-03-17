@@ -264,7 +264,7 @@ export default function ProgramLineageFlow() {
         minZoom={0.25}
         maxZoom={2}
         colorMode="dark"
-        proOptions={{ hideAttribution: false }}
+        proOptions={{ hideAttribution: true }}
       >
         <Background
           variant={BackgroundVariant.Dots}
@@ -273,6 +273,7 @@ export default function ProgramLineageFlow() {
           color="#1e293b"
         />
         <Controls
+          showInteractive={false}
           style={{
             background: '#1e293b',
             border: '1px solid #334155',
