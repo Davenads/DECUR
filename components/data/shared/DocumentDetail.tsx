@@ -201,10 +201,10 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Docum
 
   return (
     <div className="space-y-6">
-      <div className="flex items-start gap-4">
+      <div>
         <button
           onClick={onBack}
-          className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mt-1 shrink-0"
+          className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mb-3 block"
         >
           ← {backLabel}
         </button>

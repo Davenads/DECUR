@@ -466,10 +466,10 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases' }) => 
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-start gap-4">
+      <div>
         <button
           onClick={onBack}
-          className="text-sm text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mt-1 shrink-0"
+          className="text-sm text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mb-3 block"
         >
           ← {backLabel}
         </button>
