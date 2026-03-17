@@ -239,19 +239,38 @@ const NetworkGraph: FC = () => {
   }, [filteredLinks]);
 
   // Click: always selects the node and shows the action panel.
-  // Toggle off (deselect) if the same node is clicked again.
+  // Second click on an already-selected navigable node navigates to its page.
+  // Second click on a non-navigable node deselects it.
   const handleNodeClick = useCallback((node: object) => {
     const gNode = node as GraphNode;
-    setClickedNode(prev => {
-      if (prev?.id === gNode.id) {
-        // Deselect - restore hover highlight if still hovering, else clear
-        setHighlight(EMPTY_HIGHLIGHT);
-        return null;
+    const id = gNode.id;
+
+    if (clickedNodeRef.current?.id === id) {
+      // Determine navigability inline so we can act without a separate callback
+      const isNav =
+        (gNode.type === 'person' && profileIds.has(id)) ||
+        (gNode.type === 'document' && DOCUMENT_IDS.has(id)) ||
+        (gNode.type === 'case' && CASE_IDS.has(id)) ||
+        ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(id)) ||
+        DEEP_LINK_MAP[id] != null;
+
+      if (isNav) {
+        if (gNode.type === 'person') router.push(`/figures/${id}?ref=explore`);
+        else if (gNode.type === 'document') router.push(`/documents/${id}?ref=explore`);
+        else if (gNode.type === 'case') router.push(`/cases/${id}?ref=explore`);
+        else if (gNode.type === 'organization' || gNode.type === 'project') router.push(`/programs/${id}?ref=explore`);
+        else if (DEEP_LINK_MAP[id]) router.push(`${DEEP_LINK_MAP[id]}?ref=explore`);
+        return;
       }
-      setHighlight(buildHighlight(gNode.id, filteredLinks as GraphLink[]));
-      return gNode;
-    });
-  }, [filteredLinks]);
+      // Non-navigable: deselect
+      setHighlight(EMPTY_HIGHLIGHT);
+      setClickedNode(null);
+      return;
+    }
+
+    setClickedNode(gNode);
+    setHighlight(buildHighlight(id, filteredLinks as GraphLink[]));
+  }, [filteredLinks, profileIds, router]);
 
   // Background click dismisses selection
   const handleBackgroundClick = useCallback(() => {
@@ -566,7 +585,10 @@ const NetworkGraph: FC = () => {
                   onClick={navigateToClickedNode}
                   className="text-xs px-3 py-1.5 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors font-medium"
                 >
-                  View Profile →
+                  {clickedNode?.type === 'document' ? 'View Document →'
+                    : clickedNode?.type === 'case' ? 'View Case →'
+                    : (clickedNode?.type === 'organization' || clickedNode?.type === 'project') ? 'View Program →'
+                    : 'View Profile →'}
                 </button>
               )}
               <button
@@ -622,7 +644,7 @@ const NetworkGraph: FC = () => {
         ) : (
           /* Default hint */
           <p className="text-xs text-gray-400 dark:text-gray-500 min-h-[28px] flex items-center">
-            Tap or click any node to select it and view its connections
+            Click any node to select it - click again to navigate to its page
           </p>
         )}
       </div>
