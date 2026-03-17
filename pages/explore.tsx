@@ -18,6 +18,11 @@ const ProgramLineageFlow = dynamic(
   { ssr: false }
 );
 
+const CongressionalDisclosureFlow = dynamic(
+  () => import('../components/explore/CongressionalDisclosureFlow'),
+  { ssr: false }
+);
+
 interface Props {
   entries: TimelineEntry[];
   insiderEvents: WBEvent[];
@@ -44,6 +49,7 @@ type SectionId = typeof SECTION_NAV[number]['id'];
 const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases, mapEvents }) => {
   const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
   const [activeSection, setActiveSection] = useState<SectionId>('relationship-network');
+  const [programView, setProgramView] = useState<'lineage' | 'disclosure'>('lineage');
   const overlayRef = useRef<HTMLElement>(null);
 
   function handleSelectEra(start: number, end: number) {
@@ -170,17 +176,51 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
             <CaseMap cases={mapCases} events={mapEvents} />
           </section>
 
-          {/* ── Program Lineage ───────────────────────────────────────────── */}
+          {/* ── Programs ─────────────────────────────────────────────────── */}
           <section id="program-lineage">
             <div className="mb-4">
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Program Lineage</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                Directed flow of government and private UAP programs showing succession and
-                relationship links over time. Left to right reflects chronological progression.
-                Click any node to view that program&apos;s full profile.
-              </p>
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Programs</h2>
+
+              {/* Sub-view toggle */}
+              <div className="flex gap-1 mb-3">
+                <button
+                  onClick={() => setProgramView('lineage')}
+                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
+                    programView === 'lineage'
+                      ? 'bg-primary text-white'
+                      : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                  }`}
+                >
+                  Program Lineage
+                </button>
+                <button
+                  onClick={() => setProgramView('disclosure')}
+                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
+                    programView === 'disclosure'
+                      ? 'bg-primary text-white'
+                      : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                  }`}
+                >
+                  Congressional Disclosure
+                </button>
+              </div>
+
+              {programView === 'lineage' ? (
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                  Directed flow of government and private UAP programs showing succession and
+                  relationship links over time. Left to right reflects chronological progression.
+                  Click any node to view that program&apos;s full profile.
+                </p>
+              ) : (
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                  Chronological map of the modern UAP disclosure arc - congressional hearings,
+                  key witnesses, and the legislation they drove from 2020 to 2025.
+                  Click any witness node to view their full profile.
+                </p>
+              )}
             </div>
-            <ProgramLineageFlow />
+
+            {programView === 'lineage' ? <ProgramLineageFlow /> : <CongressionalDisclosureFlow />}
           </section>
 
         </div>
