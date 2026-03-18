@@ -1,7 +1,13 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { DocumentEntry } from '../../../types/data';
 import ProfileTabBar from './ProfileTabBar';
+
+const DocumentProvenanceFlow = dynamic(
+  () => import('./DocumentProvenanceFlow'),
+  { ssr: false, loading: () => <div className="h-[220px] rounded-lg bg-gray-900 animate-pulse" /> }
+);
 
 /* ─── Shared config (also exported for DocumentsList) ──────────── */
 
@@ -112,6 +118,13 @@ const ProvenanceTab: FC<{ d: DocumentEntry }> = ({ d }) => (
         {authConfig[d.authenticity_status].label}
       </span>
     </div>
+
+    {d.provenance_chain && d.provenance_chain.length > 0 && (
+      <div>
+        <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-3">Chain of Custody</h3>
+        <DocumentProvenanceFlow chain={d.provenance_chain} />
+      </div>
+    )}
 
     <div>
       <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">Document History</h3>

@@ -578,6 +578,24 @@ export type DocumentType =
   | 'intelligence-assessment'
   | 'government-assessment';
 
+export type ProvenanceNodeType =
+  | 'creation'
+  | 'classification'
+  | 'transfer'
+  | 'declassification'
+  | 'foia'
+  | 'leak'
+  | 'public'
+  | 'archive';
+
+export interface ProvenanceChainNode {
+  id: string;
+  label: string;
+  description: string;
+  date: string;
+  type: ProvenanceNodeType;
+}
+
 export interface DocumentEntry {
   id: string;
   name: string;
@@ -593,4 +611,5 @@ export interface DocumentEntry {
   provenance: string;
   insider_connections: string[];
   limitations: string[];
+  provenance_chain?: ProvenanceChainNode[];
 }
