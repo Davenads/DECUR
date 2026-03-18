@@ -86,7 +86,7 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
             </div>
 
             {/* Full-width content below */}
-            <p className="text-sm font-medium text-primary mb-0.5">{entry.role}</p>
+            <p className="text-sm font-medium text-primary dark:text-primary-light mb-0.5">{entry.role}</p>
             <p className="text-xs text-gray-400 mb-3">
               {entry.period} · {entry.affiliation}
             </p>
