@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import {
   ReactFlow,
   Background,
@@ -421,8 +421,19 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
   const { nodes: initNodes, edges: initEdges } = buildElements(keyEvents, careerConnections);
   const [nodes, , onNodesChange] = useNodesState(initNodes);
   const [edges, , onEdgesChange] = useEdgesState(initEdges);
+  const [hoveredConn, setHoveredConn] = useState<ConnectionNodeData | null>(null);
 
   const onInit = useCallback(() => {/* fitView handles initial positioning */}, []);
+
+  const onNodeMouseEnter = useCallback((_: React.MouseEvent, node: Node) => {
+    if (node.type === 'connection') {
+      setHoveredConn(node.data as ConnectionNodeData);
+    }
+  }, []);
+
+  const onNodeMouseLeave = useCallback(() => {
+    setHoveredConn(null);
+  }, []);
 
   const hasConn = careerConnections.length > 0;
   const connTypes = careerConnections.map(c => c.connection_type);
@@ -447,6 +458,8 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
         onInit={onInit}
+        onNodeMouseEnter={onNodeMouseEnter}
+        onNodeMouseLeave={onNodeMouseLeave}
         fitView
         fitViewOptions={{ padding: 0.2 }}
         minZoom={0.1}
@@ -462,6 +475,50 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
           style={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }}
         />
       </ReactFlow>
+
+      {/* Hover tooltip - full relationship text */}
+      {hoveredConn && (() => {
+        const connStyle = CONN_TYPE_STYLES[hoveredConn.connectionType] ?? { color: '#64748b', label: 'Connection' };
+        return (
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 10,
+              left: 10,
+              zIndex: 20,
+              background: 'rgba(15,23,42,0.97)',
+              border: `1px solid ${connStyle.color}`,
+              borderRadius: 8,
+              padding: '10px 14px',
+              maxWidth: 380,
+              backdropFilter: 'blur(4px)',
+              pointerEvents: 'none',
+              boxShadow: `0 0 16px ${connStyle.color}33`,
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 5 }}>
+              <span style={{
+                fontSize: 9,
+                fontWeight: 700,
+                textTransform: 'uppercase',
+                letterSpacing: '0.07em',
+                color: connStyle.color,
+                background: '#1e293b',
+                padding: '2px 6px',
+                borderRadius: 3,
+              }}>
+                {connStyle.label}
+              </span>
+              <p style={{ fontSize: 12, fontWeight: 700, color: '#e2e8f0', margin: 0 }}>
+                {hoveredConn.nodeLabel}
+              </p>
+            </div>
+            <p style={{ fontSize: 11, color: '#94a3b8', margin: 0, lineHeight: 1.55 }}>
+              {hoveredConn.relationship}
+            </p>
+          </div>
+        );
+      })()}
     </div>
   );
 }
