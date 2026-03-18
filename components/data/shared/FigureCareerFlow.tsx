@@ -11,6 +11,7 @@ import {
   Position,
   useNodesState,
   useEdgesState,
+  useNodeId,
   type Node,
   type Edge,
 } from '@xyflow/react';
@@ -70,11 +71,17 @@ const CONN_TYPE_STYLES: Record<ConnectionType, { color: string; label: string }>
 
 const NODE_WIDTH = 200;
 const CON_WIDTH  = 160;
-const CON_STEP   = 175;   // horizontal spacing between same-tier sibling connections
-const STEP_X     = 260;   // horizontal spacing between career events
-const CAREER_Y   = 150;   // y-position of main career chain (when connections present)
-const UPPER_Y    = 0;     // y-position of upper connection tier (figures, documents)
-const LOWER_Y    = 300;   // y-position of lower connection tier (programs, events)
+const CON_STEP   = 175;
+const STEP_X     = 260;
+const CAREER_Y   = 150;
+const UPPER_Y    = 0;
+const LOWER_Y    = 300;
+
+// --------------------------------------------------------------------------
+// Shared truncation registry (nodes report back to parent via ref)
+// --------------------------------------------------------------------------
+
+type TruncatedIdsRef = React.MutableRefObject<Set<string>>;
 
 // --------------------------------------------------------------------------
 // Node data interfaces
@@ -84,14 +91,7 @@ interface CareerNodeData extends Record<string, unknown> {
   year: string;
   event: string;
   eventType: CareerEventType;
-}
-
-// Payload emitted when a truncated node is clicked
-interface SelectedConnData {
-  nodeLabel: string;
-  relationship: string;
-  connectionType: ConnectionType;
-  nodeType: string;
+  truncatedIdsRef: TruncatedIdsRef;
 }
 
 interface ConnectionNodeData extends Record<string, unknown> {
@@ -99,8 +99,62 @@ interface ConnectionNodeData extends Record<string, unknown> {
   relationship: string;
   connectionType: ConnectionType;
   nodeType: string;
-  // Stable ref so ConnectionNode can call back without stale-closure issues
-  onSelectRef: React.MutableRefObject<(d: SelectedConnData) => void>;
+  truncatedIdsRef: TruncatedIdsRef;
+}
+
+// Panel payload - discriminated union for both node types
+type PanelData =
+  | { kind: 'connection'; nodeLabel: string; relationship: string; connectionType: ConnectionType; nodeType: string }
+  | { kind: 'event';      year: string; event: string; eventType: CareerEventType };
+
+// --------------------------------------------------------------------------
+// Shared truncation hook
+// --------------------------------------------------------------------------
+
+function useTruncation(ref: React.RefObject<HTMLParagraphElement | null>, truncatedIdsRef: TruncatedIdsRef): boolean {
+  const nodeId = useNodeId() ?? '';
+  const [isTruncated, setIsTruncated] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const check = () => {
+      const truncated = el.scrollHeight > el.clientHeight;
+      setIsTruncated(truncated);
+      if (truncated) {
+        truncatedIdsRef.current.add(nodeId);
+      } else {
+        truncatedIdsRef.current.delete(nodeId);
+      }
+    };
+
+    const obs = new ResizeObserver(check);
+    obs.observe(el);
+    check();
+
+    return () => {
+      obs.disconnect();
+      truncatedIdsRef.current.delete(nodeId);
+    };
+  }, [nodeId, ref, truncatedIdsRef]);
+
+  return isTruncated;
+}
+
+// --------------------------------------------------------------------------
+// Tap-for-more affordance
+// --------------------------------------------------------------------------
+
+function TapForMore({ color }: { color: string }) {
+  return (
+    <div style={{ marginTop: 4, display: 'flex', alignItems: 'center', gap: 3 }}>
+      <span style={{ fontSize: 8, color, fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+        tap for more
+      </span>
+      <span style={{ fontSize: 9, color }}>↗</span>
+    </div>
+  );
 }
 
 // --------------------------------------------------------------------------
@@ -109,6 +163,9 @@ interface ConnectionNodeData extends Record<string, unknown> {
 
 function CareerNode({ data }: { data: CareerNodeData }) {
   const style = EVENT_TYPE_STYLES[data.eventType];
+  const textRef = useRef<HTMLParagraphElement>(null);
+  const isTruncated = useTruncation(textRef, data.truncatedIdsRef);
+
   return (
     <>
       <Handle type="target" position={Position.Left}   style={{ background: '#475569', border: 'none', width: 7, height: 7 }} />
@@ -123,6 +180,7 @@ function CareerNode({ data }: { data: CareerNodeData }) {
           padding: '8px 12px',
           width: NODE_WIDTH,
           boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
+          cursor: isTruncated ? 'pointer' : 'default',
         }}
       >
         <span
@@ -141,6 +199,7 @@ function CareerNode({ data }: { data: CareerNodeData }) {
           {data.year}
         </span>
         <p
+          ref={textRef}
           style={{
             fontSize: 11,
             color: '#cbd5e1',
@@ -154,6 +213,7 @@ function CareerNode({ data }: { data: CareerNodeData }) {
         >
           {data.event}
         </p>
+        {isTruncated && <TapForMore color={style.yearText} />}
       </div>
     </>
   );
@@ -171,31 +231,7 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
     data.nodeType === 'document' ? 'Document' : 'Event';
 
   const relRef = useRef<HTMLParagraphElement>(null);
-  const [isTruncated, setIsTruncated] = useState(false);
-
-  useEffect(() => {
-    const el = relRef.current;
-    if (!el) return;
-
-    const check = () => setIsTruncated(el.scrollHeight > el.clientHeight);
-
-    // ResizeObserver fires after React Flow finishes its layout pass,
-    // unlike a bare useEffect which fires before dimensions are settled.
-    const obs = new ResizeObserver(check);
-    obs.observe(el);
-    check(); // also run immediately in case dimensions are already available
-
-    return () => obs.disconnect();
-  }, []);
-
-  const handleClick = useCallback(() => {
-    data.onSelectRef.current({
-      nodeLabel:      data.nodeLabel,
-      relationship:   data.relationship,
-      connectionType: data.connectionType,
-      nodeType:       data.nodeType,
-    });
-  }, [data]);
+  const isTruncated = useTruncation(relRef, data.truncatedIdsRef);
 
   return (
     <>
@@ -204,7 +240,6 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
       <Handle type="source" position={Position.Left}   style={{ background: style.color, border: 'none', width: 6, height: 6 }} />
       <Handle type="source" position={Position.Right}  style={{ background: style.color, border: 'none', width: 6, height: 6 }} />
       <div
-        onClick={isTruncated ? handleClick : undefined}
         style={{
           background: 'rgba(15,23,42,0.95)',
           border: `1.5px dashed ${style.color}`,
@@ -213,37 +248,13 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
           width: CON_WIDTH,
           boxShadow: `0 0 10px ${style.color}1a`,
           cursor: isTruncated ? 'pointer' : 'default',
-          position: 'relative',
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 5, marginBottom: 3 }}>
-          <span
-            style={{
-              fontSize: 8,
-              fontWeight: 700,
-              textTransform: 'uppercase',
-              letterSpacing: '0.07em',
-              color: '#64748b',
-              background: '#1e293b',
-              padding: '1px 5px',
-              borderRadius: 3,
-              flexShrink: 0,
-            }}
-          >
+          <span style={{ fontSize: 8, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#64748b', background: '#1e293b', padding: '1px 5px', borderRadius: 3, flexShrink: 0 }}>
             {typePrefix}
           </span>
-          <span
-            style={{
-              fontSize: 9,
-              fontWeight: 700,
-              textTransform: 'uppercase',
-              letterSpacing: '0.05em',
-              color: style.color,
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-            }}
-          >
+          <span style={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: style.color, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             {style.label}
           </span>
         </div>
@@ -265,26 +276,7 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
         >
           {data.relationship}
         </p>
-        {/* Expand affordance - only shown when text is clipped */}
-        {isTruncated && (
-          <div style={{
-            marginTop: 4,
-            display: 'flex',
-            alignItems: 'center',
-            gap: 3,
-          }}>
-            <span style={{
-              fontSize: 8,
-              color: style.color,
-              fontWeight: 700,
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase',
-            }}>
-              tap for more
-            </span>
-            <span style={{ fontSize: 9, color: style.color }}>↗</span>
-          </div>
-        )}
+        {isTruncated && <TapForMore color={style.color} />}
       </div>
     </>
   );
@@ -306,20 +298,7 @@ function CareerLegend({ connectionTypes }: { connectionTypes: ConnectionType[] }
   });
 
   return (
-    <div
-      style={{
-        position: 'absolute',
-        top: 10,
-        right: 10,
-        zIndex: 10,
-        background: 'rgba(15,23,42,0.90)',
-        border: '1px solid #1e293b',
-        borderRadius: 8,
-        padding: '7px 10px',
-        backdropFilter: 'blur(4px)',
-      }}
-    >
-      {/* Event types */}
+    <div style={{ position: 'absolute', top: 10, right: 10, zIndex: 10, background: 'rgba(15,23,42,0.90)', border: '1px solid #1e293b', borderRadius: 8, padding: '7px 10px', backdropFilter: 'blur(4px)' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3px 12px' }}>
         {eventEntries.map(([type, s]) => (
           <div key={type} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
@@ -328,8 +307,6 @@ function CareerLegend({ connectionTypes }: { connectionTypes: ConnectionType[] }
           </div>
         ))}
       </div>
-
-      {/* Connection types (shown only if enrichment data present) */}
       {uniqueConnTypes.length > 0 && (
         <>
           <div style={{ height: 1, background: '#1e293b', margin: '6px 0' }} />
@@ -338,10 +315,7 @@ function CareerLegend({ connectionTypes }: { connectionTypes: ConnectionType[] }
               const s = CONN_TYPE_STYLES[ct as ConnectionType];
               return s ? (
                 <div key={ct} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <span style={{
-                    display: 'inline-block', width: 8, height: 8, borderRadius: 2,
-                    border: `1.5px dashed ${s.color}`, flexShrink: 0,
-                  }} />
+                  <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 2, border: `1.5px dashed ${s.color}`, flexShrink: 0 }} />
                   <span style={{ fontSize: 10, color: '#94a3b8', whiteSpace: 'nowrap' }}>{s.label}</span>
                 </div>
               ) : null;
@@ -378,12 +352,11 @@ export interface CareerConnection {
 function buildElements(
   keyEvents: KeyEvent[],
   connections: CareerConnection[],
-  onSelectRef: React.MutableRefObject<(d: SelectedConnData) => void>,
+  truncatedIdsRef: TruncatedIdsRef,
 ): { nodes: Node[]; edges: Edge[] } {
   const hasConn = connections.length > 0;
   const careerY  = hasConn ? CAREER_Y : 0;
 
-  // --- Career chain ---
   const careerNodes: Node[] = keyEvents.map((e, i) => ({
     id: `event-${i}`,
     type: 'career',
@@ -392,6 +365,7 @@ function buildElements(
       year: e.year,
       event: e.event,
       eventType: detectEventType(e.event),
+      truncatedIdsRef,
     } as CareerNodeData,
   }));
 
@@ -406,8 +380,6 @@ function buildElements(
 
   if (!hasConn) return { nodes: careerNodes, edges: careerEdges };
 
-  // --- Connection nodes ---
-  // figures / documents -> upper tier; programs / events -> lower tier
   const upperByEvent: Record<number, CareerConnection[]> = {};
   const lowerByEvent: Record<number, CareerConnection[]> = {};
 
@@ -421,11 +393,7 @@ function buildElements(
   const connNodes: Node[] = [];
   const connEdges: Edge[] = [];
 
-  function buildTier(
-    byEvent: Record<number, CareerConnection[]>,
-    tierY: number,
-    handle: 'top' | 'bottom',
-  ) {
+  function buildTier(byEvent: Record<number, CareerConnection[]>, tierY: number, handle: 'top' | 'bottom') {
     Object.entries(byEvent).forEach(([idxStr, conns]) => {
       const idx   = parseInt(idxStr, 10);
       const baseX = idx * STEP_X;
@@ -443,7 +411,7 @@ function buildElements(
             relationship:   conn.relationship,
             connectionType: conn.connection_type,
             nodeType:       conn.node_type,
-            onSelectRef,
+            truncatedIdsRef,
           } as ConnectionNodeData,
         });
 
@@ -465,10 +433,7 @@ function buildElements(
   buildTier(upperByEvent, UPPER_Y, 'top');
   buildTier(lowerByEvent, LOWER_Y, 'bottom');
 
-  return {
-    nodes: [...careerNodes, ...connNodes],
-    edges: [...careerEdges, ...connEdges],
-  };
+  return { nodes: [...careerNodes, ...connNodes], edges: [...careerEdges, ...connEdges] };
 }
 
 // --------------------------------------------------------------------------
@@ -481,15 +446,14 @@ interface Props {
 }
 
 export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: Props) {
-  const [selectedConn, setSelectedConn] = useState<SelectedConnData | null>(null);
+  const [selectedPanel, setSelectedPanel] = useState<PanelData | null>(null);
 
-  // Stable ref so ConnectionNode click handlers never go stale
-  const onSelectRef = useRef<(d: SelectedConnData) => void>(null!);
-  onSelectRef.current = setSelectedConn;
+  // Stable ref — nodes register their truncation state here
+  const truncatedIds = useRef<Set<string>>(new Set());
 
   const { nodes: initNodes, edges: initEdges } = useMemo(
-    () => buildElements(keyEvents, careerConnections, onSelectRef),
-    // onSelectRef is a stable object (useRef), safe to omit from deps
+    () => buildElements(keyEvents, careerConnections, truncatedIds),
+    // truncatedIds is a stable ref — safe to omit from deps
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [keyEvents, careerConnections],
   );
@@ -497,24 +461,27 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
   const [nodes, , onNodesChange] = useNodesState(initNodes);
   const [edges, , onEdgesChange] = useEdgesState(initEdges);
 
-  const onInit = useCallback(() => {/* fitView handles initial positioning */}, []);
-  const onPaneClick = useCallback(() => setSelectedConn(null), []);
+  // onNodeClick fixes the pointer-events: none issue — React Flow keeps pointer events
+  // active on nodes when this prop is provided, allowing inner cursor/hover styles to work too.
+  const onNodeClick = useCallback((_: React.MouseEvent, node: Node) => {
+    if (!truncatedIds.current.has(node.id)) return;
+
+    if (node.type === 'connection') {
+      const d = node.data as ConnectionNodeData;
+      setSelectedPanel({ kind: 'connection', nodeLabel: d.nodeLabel, relationship: d.relationship, connectionType: d.connectionType, nodeType: d.nodeType });
+    } else if (node.type === 'career') {
+      const d = node.data as CareerNodeData;
+      setSelectedPanel({ kind: 'event', year: d.year, event: d.event, eventType: d.eventType });
+    }
+  }, []);
+
+  const onPaneClick = useCallback(() => setSelectedPanel(null), []);
 
   const hasConn = careerConnections.length > 0;
   const connTypes = careerConnections.map(c => c.connection_type);
 
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: hasConn ? 440 : 240,
-        background: '#0f172a',
-        borderRadius: 10,
-        overflow: 'hidden',
-        border: '1px solid #1e293b',
-      }}
-    >
+    <div style={{ position: 'relative', width: '100%', height: hasConn ? 440 : 240, background: '#0f172a', borderRadius: 10, overflow: 'hidden', border: '1px solid #1e293b' }}>
       <CareerLegend connectionTypes={connTypes} />
       <ReactFlow
         nodes={nodes}
@@ -522,7 +489,7 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
-        onInit={onInit}
+        onNodeClick={onNodeClick}
         onPaneClick={onPaneClick}
         fitView
         fitViewOptions={{ padding: 0.2 }}
@@ -534,68 +501,46 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
         elementsSelectable={false}
       >
         <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#1e293b" />
-        <Controls
-          showInteractive={false}
-          style={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }}
-        />
+        <Controls showInteractive={false} style={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }} />
       </ReactFlow>
 
-      {/* Detail panel - shown only when a truncated node was clicked */}
-      {selectedConn && (() => {
-        const connStyle = CONN_TYPE_STYLES[selectedConn.connectionType] ?? { color: '#64748b', label: 'Connection' };
-        return (
-          <div
-            style={{
-              position: 'absolute',
-              bottom: 10,
-              left: 10,
-              zIndex: 20,
-              background: 'rgba(15,23,42,0.97)',
-              border: `1px solid ${connStyle.color}`,
-              borderRadius: 8,
-              padding: '10px 14px',
-              maxWidth: 380,
-              backdropFilter: 'blur(4px)',
-              boxShadow: `0 0 16px ${connStyle.color}33`,
-            }}
-          >
-            {/* Header row with close button */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 5 }}>
-              <span style={{
-                fontSize: 9,
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.07em',
-                color: connStyle.color,
-                background: '#1e293b',
-                padding: '2px 6px',
-                borderRadius: 3,
-                flexShrink: 0,
-              }}>
-                {connStyle.label}
-              </span>
-              <p style={{ fontSize: 12, fontWeight: 700, color: '#e2e8f0', margin: 0, flex: 1 }}>
-                {selectedConn.nodeLabel}
+      {/* Detail panel — shown when a truncated node is clicked */}
+      {selectedPanel && (() => {
+        if (selectedPanel.kind === 'connection') {
+          const connStyle = CONN_TYPE_STYLES[selectedPanel.connectionType] ?? { color: '#64748b', label: 'Connection' };
+          return (
+            <div style={{ position: 'absolute', bottom: 10, left: 10, zIndex: 20, background: 'rgba(15,23,42,0.97)', border: `1px solid ${connStyle.color}`, borderRadius: 8, padding: '10px 14px', maxWidth: 380, backdropFilter: 'blur(4px)', boxShadow: `0 0 16px ${connStyle.color}33` }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 5 }}>
+                <span style={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: connStyle.color, background: '#1e293b', padding: '2px 6px', borderRadius: 3, flexShrink: 0 }}>
+                  {connStyle.label}
+                </span>
+                <p style={{ fontSize: 12, fontWeight: 700, color: '#e2e8f0', margin: 0, flex: 1 }}>
+                  {selectedPanel.nodeLabel}
+                </p>
+                <button onClick={() => setSelectedPanel(null)} style={{ background: 'none', border: 'none', color: '#475569', fontSize: 14, cursor: 'pointer', lineHeight: 1, padding: '0 2px', flexShrink: 0 }} aria-label="Close">×</button>
+              </div>
+              <p style={{ fontSize: 11, color: '#94a3b8', margin: 0, lineHeight: 1.55 }}>
+                {selectedPanel.relationship}
               </p>
-              <button
-                onClick={() => setSelectedConn(null)}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  color: '#475569',
-                  fontSize: 14,
-                  cursor: 'pointer',
-                  lineHeight: 1,
-                  padding: '0 2px',
-                  flexShrink: 0,
-                }}
-                aria-label="Close"
-              >
-                ×
-              </button>
             </div>
-            <p style={{ fontSize: 11, color: '#94a3b8', margin: 0, lineHeight: 1.55 }}>
-              {selectedConn.relationship}
+          );
+        }
+
+        // kind === 'event'
+        const evStyle = EVENT_TYPE_STYLES[selectedPanel.eventType];
+        return (
+          <div style={{ position: 'absolute', bottom: 10, left: 10, zIndex: 20, background: 'rgba(15,23,42,0.97)', border: `1px solid ${evStyle.border}`, borderRadius: 8, padding: '10px 14px', maxWidth: 380, backdropFilter: 'blur(4px)', boxShadow: `0 0 16px ${evStyle.border}33` }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 5 }}>
+              <span style={{ display: 'inline-block', fontSize: 10, fontWeight: 700, padding: '1px 7px', borderRadius: 999, background: evStyle.yearBg, color: evStyle.yearText, letterSpacing: '0.03em', flexShrink: 0 }}>
+                {selectedPanel.year}
+              </span>
+              <span style={{ fontSize: 9, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: evStyle.yearText, flex: 1 }}>
+                {evStyle.label}
+              </span>
+              <button onClick={() => setSelectedPanel(null)} style={{ background: 'none', border: 'none', color: '#475569', fontSize: 14, cursor: 'pointer', lineHeight: 1, padding: '0 2px', flexShrink: 0 }} aria-label="Close">×</button>
+            </div>
+            <p style={{ fontSize: 11, color: '#cbd5e1', margin: 0, lineHeight: 1.55 }}>
+              {selectedPanel.event}
             </p>
           </div>
         );
