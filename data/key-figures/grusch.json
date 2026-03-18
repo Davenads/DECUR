@@ -2,7 +2,9 @@
   "profile": {
     "id": "david-grusch",
     "name": "David Charles Grusch",
-    "aliases": ["Dave Grusch"],
+    "aliases": [
+      "Dave Grusch"
+    ],
     "born": "c. 1987 (exact date not publicly confirmed)",
     "roles": [
       "NRO Representative to the DoD UAP Task Force",
@@ -33,26 +35,76 @@
       "Led intelligence integration for Geosynchronous Space Situational Awareness Program"
     ],
     "key_events": [
-      { "date": "2009", "event": "Graduates University of Pittsburgh with B.S. in Physics; begins Air Force career" },
-      { "date": "2012", "event": "Completes M.A. in Intelligence Studies at American Military University" },
-      { "date": "2013", "event": "Joins National Reconnaissance Office; leads Intelligence Integration Division for Space Security and Defense Program" },
-      { "date": "2016", "event": "Promoted to senior intelligence officer on NRO Director's briefing team; manages SAP portfolios; coordinates presidential-level intelligence products" },
-      { "date": "2019", "event": "Detailed to DoD UAP Task Force as NRO representative; begins identifying relevant SAP and CAP compartments related to UAP programs" },
-      { "date": "2021", "event": "Moves to National Geospatial Intelligence Agency (NGA) as Senior Technical Advisor; serves as agency co-lead for UAP and trans-medium object analysis; liaisons with AARO" },
-      { "date": "May 2022", "event": "Files Disclosure of Urgent Concern and Complaint of Reprisal with IC Inspector General Thomas Monheim; complaint deemed 'credible and urgent'; congressional intelligence committees notified" },
-      { "date": "April 2023", "event": "DoD Office of Prepublication and Security Review clears his public statements for publication" },
-      { "date": "April 2023", "event": "Departs government service; joins Sol Foundation as Chief Operating Officer" },
-      { "date": "June 5, 2023", "event": "The Debrief publishes Leslie Kean and Ralph Blumenthal investigation featuring Grusch on the record — first public identification by name" },
-      { "date": "June 2023", "event": "NewsNation airs first televised interview with journalist Ross Coulthart" },
-      { "date": "July 14, 2023", "event": "Senate Majority Leader Chuck Schumer and Senator Mike Rounds introduce UAP Disclosure Act as NDAA amendment, directly in response to Grusch's disclosures" },
-      { "date": "July 26, 2023", "event": "Testifies under oath before House Oversight Subcommittee on National Security, Border, and Foreign Affairs alongside Ryan Graves and David Fravor" },
-      { "date": "August 2023", "event": "House members request detailed ICIG briefing on Grusch's allegations" },
-      { "date": "January 2024", "event": "ICIG Thomas Monheim conducts closed-door House briefing on UAP reporting transparency" },
-      { "date": "March 8, 2024", "event": "Pentagon's AARO releases Historical Record Report Vol. 1 — formally disputes Grusch's claims; concludes no verified evidence of off-world craft or recovered remains" },
-      { "date": "May 2024", "event": "National Archives publishes agency guidance for UAP records collection and review, a direct result of legislative provisions tied to Grusch's testimony" }
+      {
+        "date": "2009",
+        "event": "Graduates University of Pittsburgh with B.S. in Physics; begins Air Force career"
+      },
+      {
+        "date": "2012",
+        "event": "Completes M.A. in Intelligence Studies at American Military University"
+      },
+      {
+        "date": "2013",
+        "event": "Joins National Reconnaissance Office; leads Intelligence Integration Division for Space Security and Defense Program"
+      },
+      {
+        "date": "2016",
+        "event": "Promoted to senior intelligence officer on NRO Director's briefing team; manages SAP portfolios; coordinates presidential-level intelligence products"
+      },
+      {
+        "date": "2019",
+        "event": "Detailed to DoD UAP Task Force as NRO representative; begins identifying relevant SAP and CAP compartments related to UAP programs"
+      },
+      {
+        "date": "2021",
+        "event": "Moves to National Geospatial Intelligence Agency (NGA) as Senior Technical Advisor; serves as agency co-lead for UAP and trans-medium object analysis; liaisons with AARO"
+      },
+      {
+        "date": "May 2022",
+        "event": "Files Disclosure of Urgent Concern and Complaint of Reprisal with IC Inspector General Thomas Monheim; complaint deemed 'credible and urgent'; congressional intelligence committees notified"
+      },
+      {
+        "date": "April 2023",
+        "event": "DoD Office of Prepublication and Security Review clears his public statements for publication"
+      },
+      {
+        "date": "April 2023",
+        "event": "Departs government service; joins Sol Foundation as Chief Operating Officer"
+      },
+      {
+        "date": "June 5, 2023",
+        "event": "The Debrief publishes Leslie Kean and Ralph Blumenthal investigation featuring Grusch on the record — first public identification by name"
+      },
+      {
+        "date": "June 2023",
+        "event": "NewsNation airs first televised interview with journalist Ross Coulthart"
+      },
+      {
+        "date": "July 14, 2023",
+        "event": "Senate Majority Leader Chuck Schumer and Senator Mike Rounds introduce UAP Disclosure Act as NDAA amendment, directly in response to Grusch's disclosures"
+      },
+      {
+        "date": "July 26, 2023",
+        "event": "Testifies under oath before House Oversight Subcommittee on National Security, Border, and Foreign Affairs alongside Ryan Graves and David Fravor"
+      },
+      {
+        "date": "August 2023",
+        "event": "House members request detailed ICIG briefing on Grusch's allegations"
+      },
+      {
+        "date": "January 2024",
+        "event": "ICIG Thomas Monheim conducts closed-door House briefing on UAP reporting transparency"
+      },
+      {
+        "date": "March 8, 2024",
+        "event": "Pentagon's AARO releases Historical Record Report Vol. 1 — formally disputes Grusch's claims; concludes no verified evidence of off-world craft or recovered remains"
+      },
+      {
+        "date": "May 2024",
+        "event": "National Archives publishes agency guidance for UAP records collection and review, a direct result of legislative provisions tied to Grusch's testimony"
+      }
     ]
   },
-
   "claims": [
     {
       "id": "crash-retrieval-program",
@@ -139,7 +191,6 @@
       "notes": "This is his most direct on-record claim. Made under oath, subject to perjury liability. Not corroborated by any physical evidence in the public domain."
     }
   ],
-
   "credibility": {
     "supporting": [
       "IC Inspector General Thomas Monheim independently assessed Grusch's complaint as 'credible and urgent' — a formal legal threshold under IC insider statute",
@@ -163,7 +214,6 @@
       "Grusch publicly disclosed personal mental health struggles (PTSD and other challenges); critics raised this in credibility discussions, though supporters argue it is irrelevant"
     ]
   },
-
   "associated_people": [
     {
       "id": "ryan-graves",
@@ -226,7 +276,6 @@
       "relationship": "Part of the broader insider community Grusch is associated with; both independently allege DoD concealment of UAP programs; Elizondo's 2017 disclosures preceded and helped enable Grusch's own"
     }
   ],
-
   "disclosures": [
     {
       "date": "May 2022",
@@ -261,11 +310,13 @@
       "notes": "Sworn testimony under oath alongside Ryan Graves and David Fravor. Answered 'absolutely' when asked if U.S. possesses UAPs. Declined to answer NHI contact and human fatalities questions in open session citing classification. Offered to provide classified details to appropriate oversight personnel."
     }
   ],
-
   "legislative_impact": {
     "uap_disclosure_act": {
       "introduced": "July 14, 2023",
-      "sponsors": ["Chuck Schumer (D-NY)", "Mike Rounds (R-SD)"],
+      "sponsors": [
+        "Chuck Schumer (D-NY)",
+        "Mike Rounds (R-SD)"
+      ],
       "framework": "Modeled on the JFK Records Act — presumption of disclosure for UAP-related government records",
       "key_provisions": [
         "Government-wide UAP records collection mandate",
@@ -284,7 +335,6 @@
       "description": "Agency guidance for UAP records review, collection, and organization — direct result of legislative provisions tied to Grusch's testimony"
     }
   },
-
   "government_response": {
     "aaro_historical_report": {
       "released": "March 8, 2024",
@@ -299,7 +349,6 @@
       "action": "Congressional intelligence committees formally notified; closed-door House briefing conducted January 2024"
     }
   },
-
   "sources": [
     {
       "title": "UAPedia — David Grusch",
@@ -336,6 +385,72 @@
       "url": "https://www.newsnationnow.com/space/ufo/ufo-whistleblower-says-u-s-has-non-human-craft/",
       "type": "television-interview",
       "notes": "First televised interview, June 2023; most widely viewed public disclosure"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "program",
+      "node_id": "uap-task-force",
+      "node_label": "UAP Task Force",
+      "relationship": "Detailed as NRO representative in 2019; began identifying classified SAP and CAP compartments related to UAP programs",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Co-authored the June 5, 2023 Debrief article that first named Grusch publicly, lending immediate journalistic credibility",
+      "connection_type": "publication"
+    },
+    {
+      "event_index": 8,
+      "node_type": "program",
+      "node_id": "sol-foundation",
+      "node_label": "Sol Foundation",
+      "relationship": "Co-founded upon departing government service with Karl Nell, Dr. Garry Nolan, and Dr. Peter Skafish",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 10,
+      "node_type": "figure",
+      "node_id": "ross-coulthart",
+      "node_label": "Ross Coulthart",
+      "relationship": "Conducted first televised interview on NewsNation in June 2023; longtime UAP investigative reporter who contextualized the disclosures",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 11,
+      "node_type": "figure",
+      "node_id": "chuck-schumer",
+      "node_label": "Chuck Schumer",
+      "relationship": "Introduced the UAP Disclosure Act as NDAA amendment in July 2023 directly in response to the disclosures",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 12,
+      "node_type": "figure",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Co-testified at July 26, 2023 House Oversight hearing; Graves encounter data grounded the broader program-level disclosures",
+      "connection_type": "testimony"
+    },
+    {
+      "event_index": 12,
+      "node_type": "figure",
+      "node_id": "david-fravor",
+      "node_label": "David Fravor",
+      "relationship": "Co-testified at July 26, 2023 hearing; Fravor Tic Tac account provided the direct experiential anchor for the session",
+      "connection_type": "testimony"
+    },
+    {
+      "event_index": 12,
+      "node_type": "figure",
+      "node_id": "karl-nell",
+      "node_label": "Karl Nell",
+      "relationship": "Nell corroborated existence of classified UAP programs at the same July 2023 hearing, lending institutional military weight",
+      "connection_type": "testimony"
     }
   ]
 }

@@ -2,7 +2,10 @@
   "profile": {
     "id": "chris-mellon",
     "name": "Christopher K. Mellon",
-    "aliases": ["Chris Mellon", "C.K. Mellon"],
+    "aliases": [
+      "Chris Mellon",
+      "C.K. Mellon"
+    ],
     "born": "1957",
     "roles": [
       "Deputy Assistant Secretary of Defense for Intelligence (1997-2002)",
@@ -31,23 +34,64 @@
       "Returned to Senate Intelligence Committee after Pentagon tenure; advised on intelligence community reform post-9/11"
     ],
     "key_events": [
-      { "date": "1982", "event": "Graduates Yale University; begins Washington career" },
-      { "date": "1988–1997", "event": "Serves on Senate Select Committee on Intelligence in progressively senior staff roles, including minority staff director" },
-      { "date": "1997", "event": "Appointed Deputy Assistant Secretary of Defense for Intelligence; oversees Defense intelligence agencies and black programs including DIA, Defense HUMINT Service, and Special Access Programs" },
-      { "date": "2002", "event": "Concludes DASD role; returns to Congressional intelligence work following 9/11 Commission era restructuring" },
-      { "date": "c. 2015", "event": "Begins private engagement with military UAP evidence through contacts in the intelligence and defense communities; concludes the U.S. has non-human craft in its possession" },
-      { "date": "2017", "event": "Joins To The Stars Academy as Senior National Security Affairs Advisor alongside Luis Elizondo and Dr. Hal Puthoff; becomes the organization's primary Washington policy interface" },
-      { "date": "December 2017", "event": "New York Times 'Glowing Auras and Black Money' investigation published; Mellon credited with obtaining and facilitating release of Nimitz FLIR1, Gimbal, and GoFast videos to the Times and TTSA" },
-      { "date": "January 2018", "event": "Writes Washington Post op-ed 'The Military Keeps Encountering UFOs — Why Won't the Pentagon Investigate?' calling for formal government investigation" },
-      { "date": "2019", "event": "Pentagon formally confirms Nimitz FLIR1, Gimbal, and GoFast videos are authentic Navy recordings; validates Mellon and Elizondo's public disclosure strategy" },
-      { "date": "2020–2021", "event": "Works with Senators Marco Rubio and Kirsten Gillibrand and House Intelligence Committee staff to embed UAP reporting requirements into NDAA legislation; UAP Task Force provision passes" },
-      { "date": "2022", "event": "Actively drafts legislative framework with Congressional staff that becomes the foundation of the UAP Disclosure Act; coordinates with David Grusch's attorney on whistleblower protection" },
-      { "date": "July 2023", "event": "Behind-the-scenes coordination for the House Oversight Committee UAP hearing featuring Grusch, Graves, Fravor, and Nell; provides Congressional member briefings" },
-      { "date": "December 2023", "event": "UAP Disclosure Act passes Senate NDAA authorization; subsequently stripped in House-Senate conference committee despite Mellon's advocacy" },
-      { "date": "2024", "event": "Continues legislative advocacy; publishes analysis on Congressional website and Substack detailing specific UAP program budget line items and oversight failures" }
+      {
+        "date": "1982",
+        "event": "Graduates Yale University; begins Washington career"
+      },
+      {
+        "date": "1988–1997",
+        "event": "Serves on Senate Select Committee on Intelligence in progressively senior staff roles, including minority staff director"
+      },
+      {
+        "date": "1997",
+        "event": "Appointed Deputy Assistant Secretary of Defense for Intelligence; oversees Defense intelligence agencies and black programs including DIA, Defense HUMINT Service, and Special Access Programs"
+      },
+      {
+        "date": "2002",
+        "event": "Concludes DASD role; returns to Congressional intelligence work following 9/11 Commission era restructuring"
+      },
+      {
+        "date": "c. 2015",
+        "event": "Begins private engagement with military UAP evidence through contacts in the intelligence and defense communities; concludes the U.S. has non-human craft in its possession"
+      },
+      {
+        "date": "2017",
+        "event": "Joins To The Stars Academy as Senior National Security Affairs Advisor alongside Luis Elizondo and Dr. Hal Puthoff; becomes the organization's primary Washington policy interface"
+      },
+      {
+        "date": "December 2017",
+        "event": "New York Times 'Glowing Auras and Black Money' investigation published; Mellon credited with obtaining and facilitating release of Nimitz FLIR1, Gimbal, and GoFast videos to the Times and TTSA"
+      },
+      {
+        "date": "January 2018",
+        "event": "Writes Washington Post op-ed 'The Military Keeps Encountering UFOs — Why Won't the Pentagon Investigate?' calling for formal government investigation"
+      },
+      {
+        "date": "2019",
+        "event": "Pentagon formally confirms Nimitz FLIR1, Gimbal, and GoFast videos are authentic Navy recordings; validates Mellon and Elizondo's public disclosure strategy"
+      },
+      {
+        "date": "2020–2021",
+        "event": "Works with Senators Marco Rubio and Kirsten Gillibrand and House Intelligence Committee staff to embed UAP reporting requirements into NDAA legislation; UAP Task Force provision passes"
+      },
+      {
+        "date": "2022",
+        "event": "Actively drafts legislative framework with Congressional staff that becomes the foundation of the UAP Disclosure Act; coordinates with David Grusch's attorney on whistleblower protection"
+      },
+      {
+        "date": "July 2023",
+        "event": "Behind-the-scenes coordination for the House Oversight Committee UAP hearing featuring Grusch, Graves, Fravor, and Nell; provides Congressional member briefings"
+      },
+      {
+        "date": "December 2023",
+        "event": "UAP Disclosure Act passes Senate NDAA authorization; subsequently stripped in House-Senate conference committee despite Mellon's advocacy"
+      },
+      {
+        "date": "2024",
+        "event": "Continues legislative advocacy; publishes analysis on Congressional website and Substack detailing specific UAP program budget line items and oversight failures"
+      }
     ]
   },
-
   "senate_intel": {
     "committee": "Senate Select Committee on Intelligence",
     "roles": [
@@ -64,11 +108,15 @@
     "significance": "As SSCI staff director, Mellon had access to the complete National Intelligence Program budget and oversight authority over every classified program the intelligence community operated. Any legitimate UAP crash retrieval or reverse engineering program operating within DoD or IC would have required the committee's awareness — or would represent a constitutional violation of Congressional oversight. His later claims rest directly on this institutional knowledge.",
     "post_government": "After leaving the DASD role in 2002, Mellon continued advising Senate Intelligence Committee members on intelligence reform. He was in a position to observe the post-9/11 intelligence reorganization and its effects on compartmented program oversight."
   },
-
   "ttsa_role": {
     "title": "Senior National Security Affairs Advisor",
     "joined": "2017",
-    "co_founders": ["Tom DeLonge", "Luis Elizondo", "Hal Puthoff", "Jim Semivan"],
+    "co_founders": [
+      "Tom DeLonge",
+      "Luis Elizondo",
+      "Hal Puthoff",
+      "Jim Semivan"
+    ],
     "primary_contributions": [
       "Obtained and facilitated release of three classified Navy UAP videos (FLIR1, Gimbal, GoFast) to the New York Times in December 2017",
       "Served as primary Washington policy interface for TTSA",
@@ -77,12 +125,15 @@
       "Connected TTSA's technical claims to verifiable government program histories"
     ],
     "video_release": {
-      "videos": ["FLIR1 (Nimitz, November 2004)", "Gimbal (USS Theodore Roosevelt, January 2015)", "GoFast (USS Theodore Roosevelt, 2015)"],
+      "videos": [
+        "FLIR1 (Nimitz, November 2004)",
+        "Gimbal (USS Theodore Roosevelt, January 2015)",
+        "GoFast (USS Theodore Roosevelt, 2015)"
+      ],
       "method": "Mellon has described carrying a package of materials from the Pentagon to the New York Times offices as a private citizen after leaving government; the exact legal mechanism for declassification has never been fully clarified publicly",
       "outcome": "Pentagon confirmed in April 2020 that all three videos are authentic recordings made by U.S. Navy personnel. The release permanently altered the mainstream media's posture toward UAP."
     }
   },
-
   "legislation": {
     "overview": "Mellon is the most consequential legislative advocate for UAP transparency in U.S. history. He has worked directly with senior Senate and House members since 2019 to embed UAP investigation and disclosure provisions in annual defense authorization bills.",
     "key_actions": [
@@ -109,7 +160,6 @@
     ],
     "assessment": "Mellon's legislative strategy has been the most practically effective advocacy approach in the UAP disclosure space. He has moved multiple provisions into law that did not exist before his intervention, including the UAP Task Force and AARO. The failure of the 2023 Disclosure Act represents his largest setback — one he attributes to organized resistance within the executive branch."
   },
-
   "claims": [
     {
       "claim": "The United States government possesses non-human craft recovered from crash sites",
@@ -142,7 +192,6 @@
       "notes": "The weakest version of this claim is now official U.S. government policy"
     }
   ],
-
   "credibility": {
     "supporting": [
       "Only public UAP figure who directly supervised U.S. intelligence programs as a Senate committee staff director and presidential appointee simultaneously",
@@ -163,7 +212,6 @@
       "Some specific program claims cannot be verified without clearance, making independent assessment impossible"
     ]
   },
-
   "associated_people": [
     {
       "id": "luis-elizondo",
@@ -202,7 +250,6 @@
       "relationship": "Former Senate Majority Leader who funded AATIP; shared disclosure goals with Mellon"
     }
   ],
-
   "disclosures": [
     {
       "date": "December 16, 2017",
@@ -245,6 +292,56 @@
       "type": "Public Analysis",
       "outlet": "ChrisMellon.net / Substack",
       "description": "Publishes detailed analysis identifying specific suspected UAP program budget line items within unclassified budget documents; outlines specific program names and funding vehicles to assist Congressional investigators"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 5,
+      "node_type": "program",
+      "node_id": "ttsa",
+      "node_label": "To The Stars Academy",
+      "relationship": "Joined as Senior National Security Affairs Advisor alongside Luis Elizondo and Dr. Hal Puthoff in 2017",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "TTSA co-advisor; coordinated the strategy to release Nimitz videos and deliver congressional UAP briefings",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "david-fravor",
+      "node_label": "David Fravor",
+      "relationship": "Mellon facilitated release of the FLIR1 Tic Tac video to the NY Times - footage from the Fravor 2004 encounter",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 9,
+      "node_type": "figure",
+      "node_id": "harry-reid",
+      "node_label": "Harry Reid",
+      "relationship": "Coordinated on UAP Task Force legislation via Rubio-Gillibrand channels; shared disclosure goals with Reid",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 10,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Coordinated with Grusch attorney on whistleblower protections in 2022; ICIG complaint aligned with the legislative strategy",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 11,
+      "node_type": "figure",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Provided Congressional member briefings supporting the July 2023 House hearing featuring Graves, Grusch, and Fravor",
+      "connection_type": "collaboration"
     }
   ]
 }

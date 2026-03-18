@@ -2,7 +2,9 @@
   "profile": {
     "id": "robert-hastings",
     "name": "Robert L. Hastings",
-    "aliases": ["Robert Hastings"],
+    "aliases": [
+      "Robert Hastings"
+    ],
     "born": "1950",
     "died": null,
     "roles": [
@@ -10,7 +12,9 @@
       "Organizer, 2010 National Press Club Nuclear Weapons UAP Event"
     ],
     "service_period": "1973-present (UAP research)",
-    "organizations": ["Independent researcher"],
+    "organizations": [
+      "Independent researcher"
+    ],
     "clearance": null,
     "summary": "Civilian researcher who has spent over four decades documenting UAP incidents at nuclear weapons facilities, compiling testimony from over 160 U.S. military veterans. His 2008 book 'UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites' is the most comprehensive compilation of military testimony connecting UAP to nuclear weapons installations. On September 27, 2010, he organized a National Press Club event at which seven retired U.S. Air Force officers described firsthand UAP encounters at nuclear missile sites, including incidents in which ICBMs were temporarily taken offline.",
     "education": [
@@ -22,12 +26,30 @@
       "Lectured at over 500 U.S. college campuses on the nuclear UAP connection over four decades"
     ],
     "key_events": [
-      { "year": "1967", "event": "As a teenager living on Malmstrom AFB, witnesses an incident involving base security personnel and an unidentified aerial object, sparking his lifelong research focus." },
-      { "year": "1973", "event": "Begins systematic collection of testimony from U.S. military veterans about UAP incidents at nuclear weapons facilities." },
-      { "year": "1981", "event": "Begins college campus lecture tour on UAP and nuclear weapons, eventually speaking at over 500 universities over four decades." },
-      { "year": "2008", "event": "Publishes 'UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites,' compiling decades of military veteran testimony in a single comprehensive volume." },
-      { "year": "Sep 2010", "event": "Organizes the September 27, 2010 National Press Club event featuring seven retired USAF officers - including Robert Salas - describing UAP encounters at nuclear missile bases, including ICBM shutdowns. Generates significant international media coverage." },
-      { "year": "2015", "event": "Releases documentary 'UFOs and Nukes: The Secret Link Revealed,' presenting video testimony from military veterans with direct nuclear weapons site UAP experience." }
+      {
+        "year": "1967",
+        "event": "As a teenager living on Malmstrom AFB, witnesses an incident involving base security personnel and an unidentified aerial object, sparking his lifelong research focus."
+      },
+      {
+        "year": "1973",
+        "event": "Begins systematic collection of testimony from U.S. military veterans about UAP incidents at nuclear weapons facilities."
+      },
+      {
+        "year": "1981",
+        "event": "Begins college campus lecture tour on UAP and nuclear weapons, eventually speaking at over 500 universities over four decades."
+      },
+      {
+        "year": "2008",
+        "event": "Publishes 'UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites,' compiling decades of military veteran testimony in a single comprehensive volume."
+      },
+      {
+        "year": "Sep 2010",
+        "event": "Organizes the September 27, 2010 National Press Club event featuring seven retired USAF officers - including Robert Salas - describing UAP encounters at nuclear missile bases, including ICBM shutdowns. Generates significant international media coverage."
+      },
+      {
+        "year": "2015",
+        "event": "Releases documentary 'UFOs and Nukes: The Secret Link Revealed,' presenting video testimony from military veterans with direct nuclear weapons site UAP experience."
+      }
     ]
   },
   "associated_people": [
@@ -85,6 +107,24 @@
       "url": "https://www.amazon.com/UFOs-Nukes-Extraordinary-Encounters-Nuclear/dp/143278764X",
       "type": "Book",
       "notes": "Primary source - Hastings's comprehensive compilation of military nuclear weapons site UAP testimony."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "donald-keyhoe",
+      "node_label": "Donald Keyhoe",
+      "relationship": "Keyhoe's NICAP work provided methodological framework and historical precedent for Hastings's nuclear witness research",
+      "connection_type": "mentorship"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "stanton-friedman",
+      "node_label": "Stanton Friedman",
+      "relationship": "Friedman's document-analysis approach complemented Hastings's witness testimony methodology; collaborated at research conferences",
+      "connection_type": "collaboration"
     }
   ]
 }

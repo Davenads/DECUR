@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import dynamic from 'next/dynamic';
 import fravorData from '../../data/key-figures/fravor.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
@@ -7,15 +8,21 @@ import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import PersonCard from './shared/PersonCard';
 
+const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
+  ssr: false,
+  loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
+});
+
 const data = fravorData as typeof fravorData;
 
 const TABS = [
-  { id: 'overview',   label: 'Overview' },
-  { id: 'encounter',  label: 'The Encounter' },
-  { id: 'claims',     label: 'Claims' },
-  { id: 'evidence',   label: 'Evidence' },
-  { id: 'network',    label: 'Network' },
-  { id: 'assessment', label: 'Assessment' },
+  { id: 'overview',        label: 'Overview' },
+  { id: 'encounter',       label: 'The Encounter' },
+  { id: 'claims',          label: 'Claims' },
+  { id: 'evidence',        label: 'Evidence' },
+  { id: 'career-network',  label: 'Career Network' },
+  { id: 'network',         label: 'Network' },
+  { id: 'assessment',      label: 'Assessment' },
 ] as const;
 
 type TabId = typeof TABS[number]['id'];
@@ -316,6 +323,20 @@ const FravorProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
       case 'encounter':  return <EncounterTab />;
       case 'claims':     return <ClaimsTab />;
       case 'evidence':   return <EvidenceTab />;
+      case 'career-network': {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const keyEvents = (data.profile.key_events ?? []).map((e: any) => ({ year: String(e.date ?? e.year ?? ''), event: e.event }));
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const careerConnections = (data as any).career_connections ?? [];
+        return (
+          <div className="space-y-4">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
+            </p>
+            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
+          </div>
+        );
+      }
       case 'network':    return <NetworkTab />;
       case 'assessment': return <AssessmentTab />;
     }

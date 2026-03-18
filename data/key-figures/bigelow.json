@@ -2,7 +2,10 @@
   "profile": {
     "id": "robert-bigelow",
     "name": "Robert T. Bigelow",
-    "aliases": ["Bob Bigelow", "R.T. Bigelow"],
+    "aliases": [
+      "Bob Bigelow",
+      "R.T. Bigelow"
+    ],
     "born": "May 8, 1944",
     "roles": [
       "Founder, National Institute for Discovery Science (NIDS)",
@@ -26,21 +29,56 @@
       "Primary research base was always Nevada — the same geographic environment as the S-4/Area 51 complex documented by Lazar, and the Las Vegas media market where George Knapp operated"
     ],
     "key_events": [
-      { "date": "1944", "event": "Born Las Vegas, Nevada; family accounts of a UAP roadside sighting in Nevada later described as formative influence on his interest" },
-      { "date": "1992–1994", "event": "Begins privately funding UAP and parapsychology research; contacts researchers in the intelligence community and science community to assess what is known" },
-      { "date": "1995", "event": "Founds the National Institute for Discovery Science (NIDS) in Las Vegas with a reported $10 million initial endowment; recruits credentialed scientists, former DIA and FBI personnel, and investigators including Colm Kelleher (Research Director) and John Alexander" },
-      { "date": "1996", "event": "Purchases Skinwalker Ranch (also known as Sherman Ranch) in Uintah Basin, Utah from the Sherman family for $200,000; establishes it as a live-in research site for anomalous phenomena; installs cameras, sensors, and a resident team" },
-      { "date": "1999", "event": "Founds Bigelow Aerospace in Las Vegas to develop inflatable space habitat technology (BEAM modules); creates the organizational infrastructure that later becomes BAASS" },
-      { "date": "2002–2005", "event": "NIDS conducts and publishes its Skinwalker Ranch investigation findings; George Knapp and Colm Kelleher co-author 'Hunt for the Skinwalker' (2005) documenting the research; NIDS formally dissolves in 2004, with activities transitioning to BAASS" },
-      { "date": "2007", "event": "BAASS (Bigelow Aerospace Advanced Space Studies) wins the Defense Intelligence Agency's AAWSAP (Advanced Aerospace Weapon System Applications Program) contract worth $10 million per year for two years ($22 million total); staffs the program with approximately 50 researchers including Hal Puthoff, Eric Davis, and others from the EarthTech network" },
-      { "date": "2008–2012", "event": "BAASS administers AAWSAP, producing 38 classified Defense Intelligence Reference Documents covering warp drives, traversable wormholes, antigravity, remote viewing, and related topics; also conducts field investigations of reported UAP encounters including Skinwalker Ranch incidents" },
-      { "date": "2016", "event": "Sells Skinwalker Ranch to Brandon Fugal for a reported $4.5 million after 20 years of research; the property subsequently becomes the subject of a History Channel documentary series" },
-      { "date": "May 2017", "event": "CBS 60 Minutes interview: states 'I'm absolutely convinced' that ETs exist and have visited Earth; says he doesn't care about others' skepticism; describes having spent 'millions and millions' on research. The interview airs weeks before the NYT AATIP story breaks." },
-      { "date": "December 2017", "event": "New York Times AATIP investigation names BAASS as the contractor that housed the program; publicly confirms the Bigelow-DIA-AATIP connection that had previously been hidden from public view" },
-      { "date": "2020–present", "event": "Continues Bigelow Aerospace operations focused on inflatable space habitats; periodically referenced in UAP disclosure discussions as the institutional foundation connecting the 1990s private research network to the modern disclosure era" }
+      {
+        "date": "1944",
+        "event": "Born Las Vegas, Nevada; family accounts of a UAP roadside sighting in Nevada later described as formative influence on his interest"
+      },
+      {
+        "date": "1992–1994",
+        "event": "Begins privately funding UAP and parapsychology research; contacts researchers in the intelligence community and science community to assess what is known"
+      },
+      {
+        "date": "1995",
+        "event": "Founds the National Institute for Discovery Science (NIDS) in Las Vegas with a reported $10 million initial endowment; recruits credentialed scientists, former DIA and FBI personnel, and investigators including Colm Kelleher (Research Director) and John Alexander"
+      },
+      {
+        "date": "1996",
+        "event": "Purchases Skinwalker Ranch (also known as Sherman Ranch) in Uintah Basin, Utah from the Sherman family for $200,000; establishes it as a live-in research site for anomalous phenomena; installs cameras, sensors, and a resident team"
+      },
+      {
+        "date": "1999",
+        "event": "Founds Bigelow Aerospace in Las Vegas to develop inflatable space habitat technology (BEAM modules); creates the organizational infrastructure that later becomes BAASS"
+      },
+      {
+        "date": "2002–2005",
+        "event": "NIDS conducts and publishes its Skinwalker Ranch investigation findings; George Knapp and Colm Kelleher co-author 'Hunt for the Skinwalker' (2005) documenting the research; NIDS formally dissolves in 2004, with activities transitioning to BAASS"
+      },
+      {
+        "date": "2007",
+        "event": "BAASS (Bigelow Aerospace Advanced Space Studies) wins the Defense Intelligence Agency's AAWSAP (Advanced Aerospace Weapon System Applications Program) contract worth $10 million per year for two years ($22 million total); staffs the program with approximately 50 researchers including Hal Puthoff, Eric Davis, and others from the EarthTech network"
+      },
+      {
+        "date": "2008–2012",
+        "event": "BAASS administers AAWSAP, producing 38 classified Defense Intelligence Reference Documents covering warp drives, traversable wormholes, antigravity, remote viewing, and related topics; also conducts field investigations of reported UAP encounters including Skinwalker Ranch incidents"
+      },
+      {
+        "date": "2016",
+        "event": "Sells Skinwalker Ranch to Brandon Fugal for a reported $4.5 million after 20 years of research; the property subsequently becomes the subject of a History Channel documentary series"
+      },
+      {
+        "date": "May 2017",
+        "event": "CBS 60 Minutes interview: states 'I'm absolutely convinced' that ETs exist and have visited Earth; says he doesn't care about others' skepticism; describes having spent 'millions and millions' on research. The interview airs weeks before the NYT AATIP story breaks."
+      },
+      {
+        "date": "December 2017",
+        "event": "New York Times AATIP investigation names BAASS as the contractor that housed the program; publicly confirms the Bigelow-DIA-AATIP connection that had previously been hidden from public view"
+      },
+      {
+        "date": "2020–present",
+        "event": "Continues Bigelow Aerospace operations focused on inflatable space habitats; periodically referenced in UAP disclosure discussions as the institutional foundation connecting the 1990s private research network to the modern disclosure era"
+      }
     ]
   },
-
   "nids": {
     "full_name": "National Institute for Discovery Science",
     "founded": "1995",
@@ -65,7 +103,6 @@
     ],
     "significance": "NIDS was the organizational bridge between the 1990s Las Vegas-centered UAP research community (George Knapp, Bob Lazar era) and the post-2007 government contracting ecosystem. Both Eric Davis (AAWSAP DIRD author) and George Knapp (Lazar's original journalist) worked within the NIDS network before and during the AAWSAP period."
   },
-
   "baass_aawsap": {
     "full_name": "Bigelow Aerospace Advanced Space Studies",
     "program": "Advanced Aerospace Weapon System Applications Program (AAWSAP)",
@@ -83,7 +120,6 @@
     "ttsa_connection": "BAASS's AAWSAP work directly preceded and informed AATIP; when Luis Elizondo's team at the Pentagon took over the UAP investigation program circa 2010, they were building on the BAASS-produced DIRD research base. Elizondo, Puthoff, and Mellon all operated in this ecosystem.",
     "declassified_dird_note": "The 38 DIRDs were partially released via FOIA in 2021-2022, confirming BAASS authorship and the scope of the research commissioned."
   },
-
   "skinwalker_ranch": {
     "location": "Uintah Basin, Utah (near Ballard, Utah)",
     "purchased": "1996",
@@ -104,7 +140,6 @@
     "published_account": "'Hunt for the Skinwalker' — George Knapp and Colm Kelleher (2005). First public account of the NIDS Skinwalker investigation. Sold well and brought the ranch into mainstream UAP awareness.",
     "notes": "The Skinwalker Ranch phenomena are categorically different from the UAP crash-retrieval narratives that dominate the rest of DECUR's data. DECUR includes them because Bigelow's Skinwalker research and AAWSAP were institutionally connected, and because Eric Davis (a DECUR insider) was a NIDS visiting scientist during the Skinwalker period."
   },
-
   "claims": [
     {
       "claim": "Extraterrestrial intelligence exists and has visited Earth",
@@ -131,7 +166,6 @@
       "notes": "His specific phrasing on 60 Minutes was 'right under people's noses' — implying active proximity, not just distant existence"
     }
   ],
-
   "credibility": {
     "supporting": [
       "Documented government contracting history — BAASS as the DIA AAWSAP contractor is confirmed by FOIA releases and multiple government officials; this is not in dispute",
@@ -150,7 +184,6 @@
       "His connection to the Lazar cluster is indirect and geographical rather than documented — Bigelow was in Las Vegas, Knapp was in Las Vegas; they knew each other and collaborated, but Bigelow was not involved in the Lazar disclosure specifically"
     ]
   },
-
   "associated_people": [
     {
       "id": "george-knapp",
@@ -189,7 +222,6 @@
       "relationship": "NIDS scientific advisor; ufologist and computer scientist who provided theoretical frameworks for the NIDS anomalous phenomena research"
     }
   ],
-
   "disclosures": [
     {
       "date": "2005",
@@ -220,6 +252,48 @@
       "type": "FOIA Release",
       "outlet": "DIA (via FOIA)",
       "description": "BAASS-authored AAWSAP DIRDs partially released via FOIA requests, confirming the scope and nature of government-contracted research conducted under Bigelow's organizations."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Longtime media partner and NIDS collaborator; Knapp introduced Bigelow to Senator Reid, enabling the AAWSAP appropriation",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "jacques-vallee",
+      "node_label": "Jacques Vallee",
+      "relationship": "Vallee served as scientific advisor to NIDS; his rigorous research framework helped establish NIDS's scientific credibility",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "harry-reid",
+      "node_label": "Harry Reid",
+      "relationship": "Reid directed the $22M AAWSAP contract to BAASS; the Reid-Bigelow relationship is the central axis of the modern government UAP research program",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Puthoff was a lead researcher for BAASS under the AAWSAP contract, bringing EarthTech's physics expertise to the program",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "eric-davis",
+      "node_label": "Eric Davis",
+      "relationship": "Davis conducted AAWSAP field investigations and produced classified DIRDs for BAASS on warp drives and exotic propulsion",
+      "connection_type": "institutional"
     }
   ]
 }

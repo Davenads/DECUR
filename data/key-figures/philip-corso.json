@@ -2,7 +2,10 @@
   "profile": {
     "id": "philip-corso",
     "name": "Col. Philip J. Corso",
-    "aliases": ["Philip Corso", "Col. Corso"],
+    "aliases": [
+      "Philip Corso",
+      "Col. Corso"
+    ],
     "born": "May 22, 1915 - Valley Forge, Pennsylvania",
     "died": "July 16, 1998",
     "roles": [
@@ -12,7 +15,11 @@
       "Author - The Day After Roswell (1997)"
     ],
     "service_period": "1942-1963",
-    "organizations": ["U.S. Army", "National Security Council", "Pentagon Foreign Technology Division"],
+    "organizations": [
+      "U.S. Army",
+      "National Security Council",
+      "Pentagon Foreign Technology Division"
+    ],
     "clearance": "TS (former)",
     "summary": "Retired U.S. Army Colonel and veteran of both World War II and Korea who served on Eisenhower's National Security Council before being assigned to the Pentagon's Army Research and Development division under Lt. General Arthur Trudeau. In his 1997 memoir 'The Day After Roswell,' Corso claimed he managed a program to seed Roswell crash debris to private defense contractors as 'foreign technology,' resulting in development of fiber optics, integrated circuits, night vision, and Kevlar. His account remains the most detailed military insider claim about systematic Roswell artifact reverse engineering ever published.",
     "education": [
@@ -26,14 +33,38 @@
       "Oversaw POW camps in Italy post-WWII; reportedly witnessed a live alien entity being transported through Fort Riley, Kansas in 1947"
     ],
     "key_events": [
-      { "year": "1947", "event": "Claims to have observed a living alien entity in a crate at Fort Riley, Kansas during transport from Roswell crash site." },
-      { "year": "1953", "event": "Assigned to the National Security Council staff under President Eisenhower; gains access to sensitive UAP-related files." },
-      { "year": "1961", "event": "Assigned to Army R&D under Lt. General Arthur Trudeau as Chief of the Foreign Technology Division at the Pentagon." },
-      { "year": "1961", "event": "Claims to have been given a filing cabinet containing Roswell crash debris and directed to use it to seed technology to private defense contractors." },
-      { "year": "1963", "event": "Retires from Army after 21 years of service with rank of Lieutenant Colonel (later promoted to Colonel, ret.)." },
-      { "year": "1997", "event": "Publishes 'The Day After Roswell' with co-author William J. Birnes, detailing his claimed role in reverse engineering Roswell artifacts." },
-      { "year": "1997", "event": "Testifies before a Senate committee panel in support of the book's claims; one of his last major public appearances." },
-      { "year": "1998", "event": "Dies of heart failure on July 16, 1998, in Fort Myers, Florida, at age 83." }
+      {
+        "year": "1947",
+        "event": "Claims to have observed a living alien entity in a crate at Fort Riley, Kansas during transport from Roswell crash site."
+      },
+      {
+        "year": "1953",
+        "event": "Assigned to the National Security Council staff under President Eisenhower; gains access to sensitive UAP-related files."
+      },
+      {
+        "year": "1961",
+        "event": "Assigned to Army R&D under Lt. General Arthur Trudeau as Chief of the Foreign Technology Division at the Pentagon."
+      },
+      {
+        "year": "1961",
+        "event": "Claims to have been given a filing cabinet containing Roswell crash debris and directed to use it to seed technology to private defense contractors."
+      },
+      {
+        "year": "1963",
+        "event": "Retires from Army after 21 years of service with rank of Lieutenant Colonel (later promoted to Colonel, ret.)."
+      },
+      {
+        "year": "1997",
+        "event": "Publishes 'The Day After Roswell' with co-author William J. Birnes, detailing his claimed role in reverse engineering Roswell artifacts."
+      },
+      {
+        "year": "1997",
+        "event": "Testifies before a Senate committee panel in support of the book's claims; one of his last major public appearances."
+      },
+      {
+        "year": "1998",
+        "event": "Dies of heart failure on July 16, 1998, in Fort Myers, Florida, at age 83."
+      }
     ]
   },
   "associated_people": [
@@ -91,6 +122,24 @@
       "url": "https://www.nicap.org/corso.htm",
       "type": "Website",
       "notes": "NICAP's documentation and critical analysis of Corso's claims, cross-referencing with known historical records."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "stanton-friedman",
+      "node_label": "Stanton Friedman",
+      "relationship": "Friedman's extensive Roswell documentation provided historical context for evaluating Corso's reverse-engineering claims; held mixed views on the specifics",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "j-allen-hynek",
+      "node_label": "J. Allen Hynek",
+      "relationship": "Both served in overlapping government roles in the 1950s-60s; Hynek's Project Blue Book work ran concurrent with Corso's Pentagon Foreign Technology tenure",
+      "connection_type": "institutional"
     }
   ]
 }

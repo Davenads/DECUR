@@ -2,7 +2,10 @@
   "profile": {
     "id": "avi-loeb",
     "name": "Dr. Avi Loeb",
-    "aliases": ["Abraham Loeb", "Professor Loeb"],
+    "aliases": [
+      "Abraham Loeb",
+      "Professor Loeb"
+    ],
     "born": "February 26, 1962 - Beit Hanan, Israel",
     "died": null,
     "roles": [
@@ -33,16 +36,36 @@
       "Led advisory committees for NASA, the European Research Council, and China's National Astronomical Observatories"
     ],
     "key_events": [
-      { "year": "2017", "event": "Discovery of 'Oumuamua, the first confirmed interstellar object to pass through the solar system. Loeb co-authored the initial discovery paper and subsequently argued in peer-reviewed literature that its anomalous acceleration and shape were consistent with an artificial light sail - a position that generated enormous scientific controversy." },
-      { "year": "Jan 2021", "event": "Published 'Extraterrestrial: The First Sign of Intelligent Life Beyond Earth,' arguing scientists were being cowardly in dismissing non-natural explanations for anomalous astronomical objects. The book became an international bestseller and launched a major public debate about scientific bias in UAP research." },
-      { "year": "Jul 2021", "event": "Founded the Galileo Project at Harvard - the first systematic scientific program designed to apply mainstream academic rigor to the search for extraterrestrial technological signatures, including UAP. The project operates fully transparently with all data and methodology publicly available." },
-      { "year": "2022", "event": "Galileo Project launched first observing station, a multi-sensor array combining optical cameras, infrared sensors, radar, and audio equipment to capture and analyze UAP." },
-      { "year": "2023", "event": "Led the Galileo Project's deep-sea expedition to recover metallic fragments from the site of the 2014 IM1 interstellar meteor impact off Papua New Guinea. Analysis suggested the material had anomalous properties - harder than any known iron meteorite." },
-      { "year": "Nov 2024", "event": "Testified before Congress at the November 13 'Exposing the Truth' joint House hearing, presenting the Galileo Project's scientific framework and arguing for transparent, data-driven UAP investigation as the responsible scientific standard." },
-      { "year": "2025", "event": "Galileo Project announced plans for a $1 billion AI observatory network for systematic UAP detection, representing the largest proposed civilian scientific investment in UAP research in history." }
+      {
+        "year": "2017",
+        "event": "Discovery of 'Oumuamua, the first confirmed interstellar object to pass through the solar system. Loeb co-authored the initial discovery paper and subsequently argued in peer-reviewed literature that its anomalous acceleration and shape were consistent with an artificial light sail - a position that generated enormous scientific controversy."
+      },
+      {
+        "year": "Jan 2021",
+        "event": "Published 'Extraterrestrial: The First Sign of Intelligent Life Beyond Earth,' arguing scientists were being cowardly in dismissing non-natural explanations for anomalous astronomical objects. The book became an international bestseller and launched a major public debate about scientific bias in UAP research."
+      },
+      {
+        "year": "Jul 2021",
+        "event": "Founded the Galileo Project at Harvard - the first systematic scientific program designed to apply mainstream academic rigor to the search for extraterrestrial technological signatures, including UAP. The project operates fully transparently with all data and methodology publicly available."
+      },
+      {
+        "year": "2022",
+        "event": "Galileo Project launched first observing station, a multi-sensor array combining optical cameras, infrared sensors, radar, and audio equipment to capture and analyze UAP."
+      },
+      {
+        "year": "2023",
+        "event": "Led the Galileo Project's deep-sea expedition to recover metallic fragments from the site of the 2014 IM1 interstellar meteor impact off Papua New Guinea. Analysis suggested the material had anomalous properties - harder than any known iron meteorite."
+      },
+      {
+        "year": "Nov 2024",
+        "event": "Testified before Congress at the November 13 'Exposing the Truth' joint House hearing, presenting the Galileo Project's scientific framework and arguing for transparent, data-driven UAP investigation as the responsible scientific standard."
+      },
+      {
+        "year": "2025",
+        "event": "Galileo Project announced plans for a $1 billion AI observatory network for systematic UAP detection, representing the largest proposed civilian scientific investment in UAP research in history."
+      }
     ]
   },
-
   "associated_people": [
     {
       "id": "garry-nolan",
@@ -57,7 +80,6 @@
       "relationship": "Both testified at the November 2024 congressional hearing. Gallaudet's institutional perspective on underwater UAP phenomena complements Loeb's focus on airborne and interstellar objects."
     }
   ],
-
   "disclosures": [
     {
       "date": "2021",
@@ -82,7 +104,6 @@
       "notes": "Testified presenting the Galileo Project's scientific methodology as a model for rigorous transparent UAP investigation. Argued that the scientific community's reluctance to engage with the topic reflects bias rather than evidence-based skepticism."
     }
   ],
-
   "sources": [
     {
       "title": "Galileo Project - Harvard Official Site",
@@ -107,6 +128,32 @@
       "url": "https://en.wikipedia.org/wiki/Avi_Loeb",
       "type": "Reference",
       "notes": "Biographical overview, publication history, and Oumuamua controversy"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "garry-nolan",
+      "node_label": "Garry Nolan",
+      "relationship": "Both advocate for rigorous peer-reviewed UAP research at major academic institutions; Nolan biological materials analysis complements Loeb astronomical and materials science approach",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "tim-gallaudet",
+      "node_label": "Tim Gallaudet",
+      "relationship": "Gallaudet oceanographic expertise aligns with the Galileo Project trans-medium and undersea UAP focus; both testified at the November 2024 House hearing",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "jake-barber",
+      "node_label": "Jake Barber",
+      "relationship": "Co-testified at the November 13, 2024 Exposing the Truth joint House hearing on UAP alongside Barber and other witnesses",
+      "connection_type": "testimony"
     }
   ]
 }

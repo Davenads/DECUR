@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { LazarData } from '../../types/data';
 import lazarData from '../../data/key-figures/lazar.json';
@@ -9,17 +10,23 @@ import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import PersonCard from './shared/PersonCard';
 
+const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
+  ssr: false,
+  loading: () => <div className="h-[440px] bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />,
+});
+
 const data = lazarData as LazarData;
 
 const TABS = [
-  { id: 'overview',    label: 'Overview' },
-  { id: 'facility',   label: 'S-4 Facility' },
-  { id: 'craft',      label: 'Craft & Technology' },
-  { id: 'propulsion', label: 'Propulsion' },
-  { id: 'claims',     label: 'Claims' },
-  { id: 'disclosures',label: 'Disclosures' },
-  { id: 'network',    label: 'Network' },
-  { id: 'assessment', label: 'Assessment' },
+  { id: 'overview',        label: 'Overview' },
+  { id: 'career-network',  label: 'Career Network' },
+  { id: 'facility',        label: 'S-4 Facility' },
+  { id: 'craft',           label: 'Craft & Technology' },
+  { id: 'propulsion',      label: 'Propulsion' },
+  { id: 'claims',          label: 'Claims' },
+  { id: 'disclosures',     label: 'Disclosures' },
+  { id: 'network',         label: 'Network' },
+  { id: 'assessment',      label: 'Assessment' },
 ] as const;
 
 type TabId = typeof TABS[number]['id'];
@@ -518,6 +525,18 @@ const LazarProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
   const renderTab = () => {
     switch (activeTab) {
       case 'overview':    return <OverviewTab />;
+      case 'career-network': {
+        const keyEvents = (data.profile.key_events ?? []).map((e: any) => ({ year: String(e.date ?? e.year ?? ''), event: e.event }));
+        const careerConnections = (data as any).career_connections ?? [];
+        return (
+          <div className="space-y-4">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
+            </p>
+            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
+          </div>
+        );
+      }
       case 'facility':    return <FacilityTab />;
       case 'craft':       return <CraftTab />;
       case 'propulsion':  return <PropulsionTab />;

@@ -421,6 +421,8 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
     const yearStr = raw.year ?? (raw.date ? String(raw.date).split('-')[0] : '');
     return { year: yearStr, event: raw.event };
   });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const careerConnections: any[] = data.career_connections ?? [];
   const feature = detectFeature(data);
 
   const relatedCases = (casesData as Array<{
@@ -434,7 +436,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
   const TABS: Array<{ id: TabId; label: string }> = [
     { id: 'overview', label: 'Overview' },
     ...(keyEvents.length > 0 ? [{ id: 'timeline' as TabId, label: 'Timeline' }] : []),
-    ...(keyEvents.length > 0 ? [{ id: 'career-flow' as TabId, label: 'Career Flow' }] : []),
+    ...(keyEvents.length > 0 ? [{ id: 'career-flow' as TabId, label: 'Career Network' }] : []),
     ...(feature ? [{ id: 'feature' as TabId, label: feature.label }] : []),
     ...(associatedPeople.length > 0 ? [{ id: 'people' as TabId, label: 'People' }] : []),
     ...(disclosures.length > 0 ? [{ id: 'disclosures' as TabId, label: 'Disclosures' }] : []),
@@ -453,9 +455,9 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
         return (
           <div className="space-y-4">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Chronological career flow. Scroll or pinch to zoom. Colors indicate event category detected from content.
+              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
             </p>
-            <FigureCareerFlow keyEvents={keyEvents} />
+            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
           </div>
         );
       case 'feature':

@@ -2,7 +2,10 @@
   "profile": {
     "id": "chuck-schumer",
     "name": "Chuck Schumer",
-    "aliases": ["Charles E. Schumer", "Senator Schumer"],
+    "aliases": [
+      "Charles E. Schumer",
+      "Senator Schumer"
+    ],
     "born": "November 23, 1950",
     "roles": [
       "U.S. Senate Majority Leader (2021-2025)",
@@ -19,16 +22,36 @@
     "clearance": "Senate Gang of Eight — access to the most sensitive U.S. intelligence programs by virtue of Majority Leader position",
     "summary": "U.S. Senate Majority Leader who, in July 2023, introduced the UAP Disclosure Act as an amendment to the National Defense Authorization Act - the most significant legislative attempt to compel government UAP transparency since Gerald Ford's 1966 House resolution. Inspired in part by his close personal relationship with the late Senator Harry Reid, Schumer co-authored the Act with Senator Mike Rounds (R-SD), creating a bipartisan framework. The legislation as originally written would have created a nine-member Presidential UAP Records Review Board with subpoena power to declassify and release UAP-related government documents and materials - including retrieved craft and biologics - within a structured timeline. While the provision was significantly weakened in the final NDAA, Schumer's sponsorship represented the most senior Senate leadership engagement with UAP as a formal legislative priority since Reid's AAWSAP earmark in 2007.",
     "key_events": [
-      { "year": "1999", "event": "Elected to U.S. Senate representing New York; builds long relationship with Harry Reid as a fellow senior Senate Democrat" },
-      { "year": "2021", "event": "Becomes Senate Majority Leader following the 2020 election. Gains access to Gang of Eight intelligence briefings, including any UAP-related classified programs" },
-      { "year": "2022-2023", "event": "Briefed by UAP disclosure advocates including Chris Mellon and others on the scope of alleged government UAP programs. Reid's death in December 2021 is reported to have motivated Schumer to continue Reid's UAP legislative legacy." },
-      { "year": "2023-07", "event": "Introduces the UAP Disclosure Act of 2023 as an amendment to the NDAA, co-authored with Senator Mike Rounds (R-SD). The original legislation proposes a nine-member Presidential UAP Records Review Board modeled on the JFK Records Act board, with authority to declassify UAP records and compel disclosure of retrieved materials." },
-      { "year": "2023-12", "event": "The UAP Disclosure Act is significantly weakened before final NDAA passage. Key provisions - including mandatory declassification timelines and the Records Review Board's authority over physical materials - are stripped out following reported pushback from the executive branch and defense contractors. The watered-down version retains some transparency provisions but does not compel the document and material review the original bill mandated." },
-      { "year": "2024", "event": "Continues to advocate for UAP transparency legislation, stating publicly that the original bill was weakened by opposition from the executive branch. Works with Rounds and other senators to maintain pressure for UAP record review." },
-      { "year": "2025-01", "event": "Democrats lose Senate majority; Schumer transitions to Senate Minority Leader. Continues UAP advocacy from minority position." }
+      {
+        "year": "1999",
+        "event": "Elected to U.S. Senate representing New York; builds long relationship with Harry Reid as a fellow senior Senate Democrat"
+      },
+      {
+        "year": "2021",
+        "event": "Becomes Senate Majority Leader following the 2020 election. Gains access to Gang of Eight intelligence briefings, including any UAP-related classified programs"
+      },
+      {
+        "year": "2022-2023",
+        "event": "Briefed by UAP disclosure advocates including Chris Mellon and others on the scope of alleged government UAP programs. Reid's death in December 2021 is reported to have motivated Schumer to continue Reid's UAP legislative legacy."
+      },
+      {
+        "year": "2023-07",
+        "event": "Introduces the UAP Disclosure Act of 2023 as an amendment to the NDAA, co-authored with Senator Mike Rounds (R-SD). The original legislation proposes a nine-member Presidential UAP Records Review Board modeled on the JFK Records Act board, with authority to declassify UAP records and compel disclosure of retrieved materials."
+      },
+      {
+        "year": "2023-12",
+        "event": "The UAP Disclosure Act is significantly weakened before final NDAA passage. Key provisions - including mandatory declassification timelines and the Records Review Board's authority over physical materials - are stripped out following reported pushback from the executive branch and defense contractors. The watered-down version retains some transparency provisions but does not compel the document and material review the original bill mandated."
+      },
+      {
+        "year": "2024",
+        "event": "Continues to advocate for UAP transparency legislation, stating publicly that the original bill was weakened by opposition from the executive branch. Works with Rounds and other senators to maintain pressure for UAP record review."
+      },
+      {
+        "year": "2025-01",
+        "event": "Democrats lose Senate majority; Schumer transitions to Senate Minority Leader. Continues UAP advocacy from minority position."
+      }
     ]
   },
-
   "major_work": {
     "uap_disclosure_act": {
       "formal_title": "Unidentified Anomalous Phenomena Disclosure Act of 2023",
@@ -46,7 +69,6 @@
       "opposition": "Schumer publicly stated the bill was weakened by executive branch opposition. Reports indicated defense contractors and certain intelligence community elements lobbied against the original provisions."
     }
   },
-
   "associated_people": [
     {
       "id": "harry-reid",
@@ -61,7 +83,6 @@
       "relationship": "Mellon is widely credited with briefing key senators including Schumer on UAP program allegations. His advocacy helped build the political will for the UAP Disclosure Act."
     }
   ],
-
   "disclosures": [
     {
       "date": "2023-07",
@@ -80,7 +101,6 @@
       "notes": "Publicly stated that the UAP Disclosure Act had been weakened by executive branch opposition during NDAA negotiations. Committed to continued legislative pressure."
     }
   ],
-
   "sources": [
     {
       "title": "UAP Disclosure Act of 2023 - Senate Amendment Text",
@@ -99,6 +119,24 @@
       "url": "https://en.wikipedia.org/wiki/Chuck_Schumer",
       "type": "reference",
       "notes": "Biographical reference; documents Senate career and UAP Disclosure Act"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "harry-reid",
+      "node_label": "Harry Reid",
+      "relationship": "Reid's UAP legacy motivated Schumer to sponsor the Disclosure Act; Schumer is effectively the political heir to Reid's UAP institutional role",
+      "connection_type": "mentorship"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "chris-mellon",
+      "node_label": "Chris Mellon",
+      "relationship": "Mellon is widely credited with briefing Schumer and other senators on UAP program allegations, building political will for the Disclosure Act",
+      "connection_type": "institutional"
     }
   ]
 }

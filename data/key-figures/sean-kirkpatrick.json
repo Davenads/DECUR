@@ -2,7 +2,9 @@
   "profile": {
     "id": "sean-kirkpatrick",
     "name": "Dr. Sean M. Kirkpatrick",
-    "aliases": ["Sean Kirkpatrick"],
+    "aliases": [
+      "Sean Kirkpatrick"
+    ],
     "born": null,
     "died": null,
     "roles": [
@@ -11,7 +13,11 @@
       "Defense Intelligence Senior Leader (DISL)"
     ],
     "service_period": "c. 1990s-2023 (government service)",
-    "organizations": ["All-domain Anomaly Resolution Office (AARO)", "Defense Intelligence Agency", "U.S. Army Research Laboratory"],
+    "organizations": [
+      "All-domain Anomaly Resolution Office (AARO)",
+      "Defense Intelligence Agency",
+      "U.S. Army Research Laboratory"
+    ],
     "clearance": "TS/SCI (former)",
     "summary": "PhD physicist who served as the first official director of AARO from November 2022 until his resignation in December 2023. Kirkpatrick testified before the Senate Armed Services Subcommittee on Emerging Threats in April 2023, providing the first public congressional briefing by an AARO director. He co-authored a paper with Harvard astrophysicist Avi Loeb proposing hypotheses for UAP signatures. Resigned in December 2023, subsequently stating that congressional interference and lack of institutional support undermined AARO's mission. His departure and critical public statements marked the beginning of significant public controversy over AARO's effectiveness.",
     "education": [
@@ -24,13 +30,34 @@
       "Served as Chief Scientist at the Army Futures Command and in related technical intelligence roles prior to AARO appointment"
     ],
     "key_events": [
-      { "year": "Nov 2022", "event": "Confirmed as the first official Director of AARO (All-domain Anomaly Resolution Office), the DoD's primary UAP investigation body created by the NDAA FY2023." },
-      { "year": "Mar 2023", "event": "Co-authors a paper with Harvard astrophysicist Avi Loeb titled 'Physical Constraints on Unidentified Aerial Phenomena,' exploring potential natural and technological explanations for UAP signatures." },
-      { "year": "Apr 2023", "event": "Testifies before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities - the first congressional testimony by an AARO director, describing AARO's findings and methods." },
-      { "year": "Jul 2023", "event": "During the same week as Grusch's landmark House Oversight hearing, Kirkpatrick publicly contradicts Grusch's claims, stating AARO has found no verifiable evidence of non-human intelligence or UAP crash retrievals." },
-      { "year": "Mar 2024", "event": "Oversees release of the AARO Historical Record Report Volume 1, which directly contradicts Grusch's congressional testimony and finds no evidence of government UAP crash retrieval programs." },
-      { "year": "Dec 2023", "event": "Resigns as AARO director, citing lack of institutional support and congressional interference with AARO's mission." },
-      { "year": "2024", "event": "Publishes public commentary critical of congressional UAP advocacy and the broader disclosure movement, describing political pressure as undermining rigorous scientific investigation." }
+      {
+        "year": "Nov 2022",
+        "event": "Confirmed as the first official Director of AARO (All-domain Anomaly Resolution Office), the DoD's primary UAP investigation body created by the NDAA FY2023."
+      },
+      {
+        "year": "Mar 2023",
+        "event": "Co-authors a paper with Harvard astrophysicist Avi Loeb titled 'Physical Constraints on Unidentified Aerial Phenomena,' exploring potential natural and technological explanations for UAP signatures."
+      },
+      {
+        "year": "Apr 2023",
+        "event": "Testifies before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities - the first congressional testimony by an AARO director, describing AARO's findings and methods."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "During the same week as Grusch's landmark House Oversight hearing, Kirkpatrick publicly contradicts Grusch's claims, stating AARO has found no verifiable evidence of non-human intelligence or UAP crash retrievals."
+      },
+      {
+        "year": "Mar 2024",
+        "event": "Oversees release of the AARO Historical Record Report Volume 1, which directly contradicts Grusch's congressional testimony and finds no evidence of government UAP crash retrieval programs."
+      },
+      {
+        "year": "Dec 2023",
+        "event": "Resigns as AARO director, citing lack of institutional support and congressional interference with AARO's mission."
+      },
+      {
+        "year": "2024",
+        "event": "Publishes public commentary critical of congressional UAP advocacy and the broader disclosure movement, describing political pressure as undermining rigorous scientific investigation."
+      }
     ]
   },
   "associated_people": [
@@ -81,6 +108,24 @@
       "url": "https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-mission-of-the-all-domain-anomaly-resolution-office",
       "type": "Congressional Record",
       "notes": "Official record of Kirkpatrick's April 2023 Senate testimony."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "avi-loeb",
+      "node_label": "Dr. Avi Loeb",
+      "relationship": "Co-authored a paper on physical constraints on UAP signatures - the only peer-reviewed publication co-authored by a sitting AARO director",
+      "connection_type": "publication"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Kirkpatrick publicly contradicted Grusch's congressional testimony, creating a central credibility conflict between AARO's official findings and Grusch's sworn claims",
+      "connection_type": "opposition"
     }
   ]
 }

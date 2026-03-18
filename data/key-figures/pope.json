@@ -8,7 +8,10 @@
       "Author — Open Skies, Closed Minds / Encounter in Rendlesham Forest"
     ],
     "service_period": "1991–1994 (UFO desk); 1985–2006 (MoD total, 21 years)",
-    "organizations": ["UK Ministry of Defence", "Secretariat (Air Staff) 2a"],
+    "organizations": [
+      "UK Ministry of Defence",
+      "Secretariat (Air Staff) 2a"
+    ],
     "clearance": "Top Secret (UK MoD)",
     "summary": "British civil servant who ran the UK Ministry of Defence's official UFO investigation desk from 1991 to 1994. Assigned as a skeptic with Top Secret access to classified military incident reports, radar data, and witness testimony across all UK armed services, he emerged from the role having concluded that a small but genuine percentage of cases could not be explained by any conventional means. The Cosford Incident of March 1993 — a mass sighting sweeping across Shropshire, West Midlands, and South Wales including RAF Cosford and RAF Shawbury personnel — remains the strongest documented British UAP case. His 1996 book 'Open Skies, Closed Minds' was the first firsthand account published by a serving government UAP investigator, making him the UK equivalent of Luis Elizondo: a credentialed government figure who entered the subject as a skeptic and left as a cautious believer in genuine unknowns.",
     "career_background": [
@@ -19,19 +22,48 @@
       "Left MoD in 2006 after a 21-year career; became a full-time author and international media commentator on UAP"
     ],
     "key_events": [
-      { "date": "1985", "event": "Joined UK Ministry of Defence as a civil servant" },
-      { "date": "1991", "event": "Assigned to Secretariat (Air Staff) 2a — the MoD's one-person official UAP investigation desk — with Top Secret access to classified military incident data" },
-      { "date": "1991", "event": "Began systematic review of historical MoD UAP case files; initial position was skeptical" },
-      { "date": "1993-03-30", "event": "Investigated Cosford Incident — mass UAP sighting sweeping across Shropshire, West Midlands, and South Wales; witnesses included RAF Cosford and RAF Shawbury personnel" },
-      { "date": "1993", "event": "Reinvestigated the Rendlesham Forest incident (December 1980) from classified MoD records; concluded official dismissal was inadequate given the weight of evidence" },
-      { "date": "1994", "event": "Completed UFO desk assignment; formally documented conclusion that genuine unexplained cases exist; position had shifted from skeptic to cautious believer in unknowns" },
-      { "date": "1996", "event": "Published 'Open Skies, Closed Minds' — first insider account ever published by someone who ran a government UAP desk" },
-      { "date": "2006", "event": "Left MoD after 21-year career; became full-time author and media commentator" },
-      { "date": "2014", "event": "Co-authored 'Encounter in Rendlesham Forest' with USAF witnesses John Burroughs and Jim Penniston" },
-      { "date": "2023", "event": "Provided commentary on US congressional UAP hearings; called for UK-US disclosure coordination and a UK parliamentary inquiry" }
+      {
+        "date": "1985",
+        "event": "Joined UK Ministry of Defence as a civil servant"
+      },
+      {
+        "date": "1991",
+        "event": "Assigned to Secretariat (Air Staff) 2a — the MoD's one-person official UAP investigation desk — with Top Secret access to classified military incident data"
+      },
+      {
+        "date": "1991",
+        "event": "Began systematic review of historical MoD UAP case files; initial position was skeptical"
+      },
+      {
+        "date": "1993-03-30",
+        "event": "Investigated Cosford Incident — mass UAP sighting sweeping across Shropshire, West Midlands, and South Wales; witnesses included RAF Cosford and RAF Shawbury personnel"
+      },
+      {
+        "date": "1993",
+        "event": "Reinvestigated the Rendlesham Forest incident (December 1980) from classified MoD records; concluded official dismissal was inadequate given the weight of evidence"
+      },
+      {
+        "date": "1994",
+        "event": "Completed UFO desk assignment; formally documented conclusion that genuine unexplained cases exist; position had shifted from skeptic to cautious believer in unknowns"
+      },
+      {
+        "date": "1996",
+        "event": "Published 'Open Skies, Closed Minds' — first insider account ever published by someone who ran a government UAP desk"
+      },
+      {
+        "date": "2006",
+        "event": "Left MoD after 21-year career; became full-time author and media commentator"
+      },
+      {
+        "date": "2014",
+        "event": "Co-authored 'Encounter in Rendlesham Forest' with USAF witnesses John Burroughs and Jim Penniston"
+      },
+      {
+        "date": "2023",
+        "event": "Provided commentary on US congressional UAP hearings; called for UK-US disclosure coordination and a UK parliamentary inquiry"
+      }
     ]
   },
-
   "mod_role": {
     "title": "UFO Desk Analyst",
     "organization": "UK Ministry of Defence — Secretariat (Air Staff) 2a",
@@ -49,7 +81,6 @@
     ],
     "significance": "Pope's MoD role is the most clearly documented case of an English-speaking government operating a dedicated UAP investigation desk with defined protocols, clearance levels, and formal reporting chains. His public account published in 1996 remains the only insider narrative by someone who held the actual investigator position."
   },
-
   "investigations": {
     "overview": "During three years at the MoD UFO desk, Pope investigated hundreds of cases ranging from misidentified aircraft to radar returns with no correlating visual contact. Two cases stood out as representing the strongest British evidence for genuine UAP activity.",
     "major_cases": [
@@ -75,7 +106,6 @@
       }
     ]
   },
-
   "claims": [
     {
       "claim": "Ran the UK Ministry of Defence's official UAP investigation desk 1991-1994 with Top Secret access to classified military incident reports and radar data.",
@@ -108,7 +138,6 @@
       "notes": null
     }
   ],
-
   "credibility": {
     "supporting": [
       "MoD career fully documented through government records and FOIA releases confirming his Secretariat (Air Staff) 2a role",
@@ -127,7 +156,6 @@
       "His Rendlesham assessment is not supported by declassified MoD documents from his own tenure"
     ]
   },
-
   "associated_people": [
     {
       "id": "j-allen-hynek",
@@ -166,7 +194,6 @@
       "relationship": "Parallel UAP research establishment figure; Pope has cited Vallée's methodological rigor and ETH critique as influential to his own investigative approach"
     }
   ],
-
   "disclosures": [
     {
       "date": "1996",
@@ -197,6 +224,24 @@
       "type": "Commentary",
       "outlet": "International media — Sky News, BBC, print",
       "description": "Extensive public commentary on US congressional UAP hearings following Grusch testimony; called for a UK parliamentary inquiry into UAP and formal UK-US disclosure coordination through Five Eyes intelligence channels."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 8,
+      "node_type": "figure",
+      "node_id": "john-burroughs",
+      "node_label": "John Burroughs",
+      "relationship": "Co-authored \"Encounter in Rendlesham Forest\" (2014) with Burroughs and Jim Penniston, drawing on Pope's MoD files and the airmen's direct experience",
+      "connection_type": "publication"
+    },
+    {
+      "event_index": 9,
+      "node_type": "figure",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "Both credentialed government UAP investigators who entered their roles as skeptics and emerged as cautious believers; Pope is widely described as the UK equivalent of Elizondo",
+      "connection_type": "collaboration"
     }
   ]
 }

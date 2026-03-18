@@ -2,7 +2,10 @@
   "profile": {
     "id": "james-lacatski",
     "name": "Dr. James T. Lacatski",
-    "aliases": ["Lacatski", "Jim Lacatski"],
+    "aliases": [
+      "Lacatski",
+      "Jim Lacatski"
+    ],
     "roles": [
       "Program Manager, AAWSAP (Advanced Aerospace Weapon System Applications Program)",
       "Defense Warning Office, Defense Intelligence Agency",
@@ -17,16 +20,36 @@
     "clearance": "Held SCI-level access as DIA Defense Warning Office program manager; AAWSAP was classified as Sensitive Compartmented Information",
     "summary": "The Defense Intelligence Agency officer who designed, initiated, and managed the Advanced Aerospace Weapon System Applications Program (AAWSAP) from 2008 to 2012 - the first formally funded U.S. government UAP research program in decades. While Harry Reid secured the political appropriation and Robert Bigelow's company held the contract, Lacatski was the government official who actually ran the program from inside the DIA. He reportedly visited Skinwalker Ranch in Utah and personally witnessed an anomalous event that galvanized his commitment to the program. In 2021 he co-authored 'Skinwalkers at the Pentagon' - the most detailed public account of AAWSAP's scope, findings, and institutional context ever published by a government program manager. His 2024 congressional testimony marked the first time he spoke publicly under oath about the program's findings.",
     "key_events": [
-      { "year": "c. 2006", "event": "Reads Knapp and Kelleher's book 'Hunt for the Skinwalker,' which documents Bigelow's private investigation of anomalous phenomena at Skinwalker Ranch. The book reportedly motivates Lacatski to investigate whether a formal government program is warranted." },
-      { "year": "2007", "event": "Works with Senator Harry Reid's office and DIA leadership to structure a formal government program solicitation. The $22M AAWSAP appropriation, earmarked by Reid, Stevens, and Inouye, is approved." },
-      { "year": "2008", "event": "AAWSAP contract awarded to Bigelow Aerospace Advanced Space Studies (BAASS). Lacatski serves as the DIA program manager, overseeing the research scope which includes 38 Defense Intelligence Reference Documents (DIRDs) on advanced aerospace topics authored by Hal Puthoff, Eric Davis, and others." },
-      { "year": "2008-2012", "event": "Manages AAWSAP through its official funding period. The program investigates UAP reported by U.S. military personnel, anomalous materials, and exotic physics. Lacatski reportedly visits Skinwalker Ranch during this period and witnesses an anomalous event that intensifies his personal commitment to the research." },
-      { "year": "2012", "event": "AAWSAP official funding ends. A smaller successor effort (AATIP) continues informally under Luis Elizondo." },
-      { "year": "2021", "event": "Co-authors 'Skinwalkers at the Pentagon' with Colm Kelleher and George Knapp. The book is the most detailed insider account of AAWSAP's scope, findings, and the political and institutional environment in which it operated. Lacatski's authorship establishes him as the most senior government official to publicly describe the program from personal experience." },
-      { "year": "2024", "event": "Testifies before Congress regarding AAWSAP and his personal experiences during the program. Marks his first on-the-record congressional testimony, making him one of the highest-ranking former government officials to testify under oath about UAP program activities." }
+      {
+        "year": "c. 2006",
+        "event": "Reads Knapp and Kelleher's book 'Hunt for the Skinwalker,' which documents Bigelow's private investigation of anomalous phenomena at Skinwalker Ranch. The book reportedly motivates Lacatski to investigate whether a formal government program is warranted."
+      },
+      {
+        "year": "2007",
+        "event": "Works with Senator Harry Reid's office and DIA leadership to structure a formal government program solicitation. The $22M AAWSAP appropriation, earmarked by Reid, Stevens, and Inouye, is approved."
+      },
+      {
+        "year": "2008",
+        "event": "AAWSAP contract awarded to Bigelow Aerospace Advanced Space Studies (BAASS). Lacatski serves as the DIA program manager, overseeing the research scope which includes 38 Defense Intelligence Reference Documents (DIRDs) on advanced aerospace topics authored by Hal Puthoff, Eric Davis, and others."
+      },
+      {
+        "year": "2008-2012",
+        "event": "Manages AAWSAP through its official funding period. The program investigates UAP reported by U.S. military personnel, anomalous materials, and exotic physics. Lacatski reportedly visits Skinwalker Ranch during this period and witnesses an anomalous event that intensifies his personal commitment to the research."
+      },
+      {
+        "year": "2012",
+        "event": "AAWSAP official funding ends. A smaller successor effort (AATIP) continues informally under Luis Elizondo."
+      },
+      {
+        "year": "2021",
+        "event": "Co-authors 'Skinwalkers at the Pentagon' with Colm Kelleher and George Knapp. The book is the most detailed insider account of AAWSAP's scope, findings, and the political and institutional environment in which it operated. Lacatski's authorship establishes him as the most senior government official to publicly describe the program from personal experience."
+      },
+      {
+        "year": "2024",
+        "event": "Testifies before Congress regarding AAWSAP and his personal experiences during the program. Marks his first on-the-record congressional testimony, making him one of the highest-ranking former government officials to testify under oath about UAP program activities."
+      }
     ]
   },
-
   "aawsap": {
     "full_name": "Advanced Aerospace Weapon System Applications Program",
     "lacatski_role": "DIA Defense Warning Office program manager - the government official responsible for defining the program scope, overseeing the contract, and managing the research outputs",
@@ -38,7 +61,6 @@
     "dird_authors": "Hal Puthoff, Eric Davis, and other contracted researchers. Topics included warp drive propulsion, traversable wormholes, high-frequency gravitational waves, antigravity for aerospace applications, and metamaterials with exotic properties.",
     "relationship_to_aatip": "AATIP is widely described as AAWSAP's successor, but Lacatski's account in 'Skinwalkers at the Pentagon' draws a distinction: AAWSAP was the broad program investigating anomalous phenomena including Skinwalker Ranch; AATIP was the narrower follow-on focused specifically on aerospace threats. The conflation of the two has been a source of public confusion."
   },
-
   "associated_people": [
     {
       "id": "harry-reid",
@@ -65,7 +87,6 @@
       "relationship": "Puthoff authored multiple DIRDs under the AAWSAP contract that Lacatski managed. The two worked within the same program ecosystem during 2008-2012."
     }
   ],
-
   "disclosures": [
     {
       "date": "2021",
@@ -84,7 +105,6 @@
       "notes": "First on-the-record congressional testimony from Lacatski. Made him one of the highest-ranking former government officials to testify under oath about UAP program activities and findings."
     }
   ],
-
   "sources": [
     {
       "title": "Skinwalkers at the Pentagon (2021) - Lacatski, Kelleher, Knapp",
@@ -103,6 +123,48 @@
       "url": "https://www.newyorker.com/magazine/2021/05/10/how-the-pentagon-started-taking-ufos-seriously",
       "type": "article",
       "notes": "Detailed account of AAWSAP's origin including references to DIA program management"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "harry-reid",
+      "node_label": "Harry Reid",
+      "relationship": "Worked with Reid office and DIA leadership to structure the $22M AAWSAP appropriation; Reid was the political architect who secured the funding",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "aawsap",
+      "node_label": "AAWSAP",
+      "relationship": "Served as the DIA program manager overseeing AAWSAP, directing 38 DIRDs on advanced aerospace topics and Skinwalker Ranch phenomena over four years",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "robert-bigelow",
+      "node_label": "Robert Bigelow",
+      "relationship": "AAWSAP contract was awarded to Bigelow BAASS; Lacatski managed the DIA relationship with Bigelow as prime contractor throughout the program",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Puthoff authored multiple DIRDs on traversable wormholes and metric engineering that were commissioned under AAWSAP while Lacatski served as program manager",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Co-authored Skinwalkers at the Pentagon (2021) - the most detailed insider account of AAWSAP scope, findings, and institutional history",
+      "connection_type": "publication"
     }
   ]
 }

@@ -2,7 +2,10 @@
   "profile": {
     "id": "garry-nolan",
     "name": "Dr. Garry Nolan",
-    "aliases": ["Gary Nolan", "Garry P. Nolan"],
+    "aliases": [
+      "Gary Nolan",
+      "Garry P. Nolan"
+    ],
     "born": "1961",
     "roles": [
       "Rachford and Carlota A. Harris Professor, Department of Pathology, Stanford School of Medicine",
@@ -30,19 +33,48 @@
       "Developed Hyperion mass cytometry platform — foundational tool for single-cell biology"
     ],
     "key_events": [
-      { "date": "1994", "event": "Joins Stanford School of Medicine as faculty in Department of Pathology" },
-      { "date": "c. 2011", "event": "Approached by CIA and U.S. intelligence community to study individuals with reported UAP exposure injuries; begins multi-year consultation analyzing MRI scans of approximately 100 subjects" },
-      { "date": "2014–2016", "event": "Studies Atacama skeleton ('Ata') — a 6-inch mummified skeleton discovered in Chile; DNA analysis published 2018, identifying multiple bone-density mutations rather than alien origin. The study exemplifies his methodological approach: data over speculation." },
-      { "date": "2017", "event": "CIA consultation concludes; transitions to public academic engagement with UAP topic" },
-      { "date": "2021", "event": "Begins giving public interviews on UAP, the CIA consultation, and his brain morphology findings; Vice Media profile brings his work to mainstream UAP audience" },
-      { "date": "2022", "event": "Co-authors paper in Progress in Aerospace Sciences: 'Improved Instrumental Methods for the Remote Detection and Measurement of Unidentified Aerial Phenomena' — the first peer-reviewed academic paper in a major aerospace journal to address UAP measurement methodology" },
-      { "date": "October 2023", "event": "Co-founds Sol Foundation with Karl Nell, David Grusch, and Dr. Peter Skafish" },
-      { "date": "November 2023", "event": "Sol Foundation inaugural symposium at Stanford University — first major academic conference on UAP, bringing together scientists, former intelligence officials, and academics" },
-      { "date": "February 2025", "event": "Posts arXiv preprint: 'The New Science of Unidentified Aerospace-Undersea Phenomena' — formal academic framework for UAP as a scientific research object" },
-      { "date": "2024–2025", "event": "Provides classified briefings to congressional members and staff on UAP biological effects and materials analysis; continues Sol Foundation activities and public advocacy" }
+      {
+        "date": "1994",
+        "event": "Joins Stanford School of Medicine as faculty in Department of Pathology"
+      },
+      {
+        "date": "c. 2011",
+        "event": "Approached by CIA and U.S. intelligence community to study individuals with reported UAP exposure injuries; begins multi-year consultation analyzing MRI scans of approximately 100 subjects"
+      },
+      {
+        "date": "2014–2016",
+        "event": "Studies Atacama skeleton ('Ata') — a 6-inch mummified skeleton discovered in Chile; DNA analysis published 2018, identifying multiple bone-density mutations rather than alien origin. The study exemplifies his methodological approach: data over speculation."
+      },
+      {
+        "date": "2017",
+        "event": "CIA consultation concludes; transitions to public academic engagement with UAP topic"
+      },
+      {
+        "date": "2021",
+        "event": "Begins giving public interviews on UAP, the CIA consultation, and his brain morphology findings; Vice Media profile brings his work to mainstream UAP audience"
+      },
+      {
+        "date": "2022",
+        "event": "Co-authors paper in Progress in Aerospace Sciences: 'Improved Instrumental Methods for the Remote Detection and Measurement of Unidentified Aerial Phenomena' — the first peer-reviewed academic paper in a major aerospace journal to address UAP measurement methodology"
+      },
+      {
+        "date": "October 2023",
+        "event": "Co-founds Sol Foundation with Karl Nell, David Grusch, and Dr. Peter Skafish"
+      },
+      {
+        "date": "November 2023",
+        "event": "Sol Foundation inaugural symposium at Stanford University — first major academic conference on UAP, bringing together scientists, former intelligence officials, and academics"
+      },
+      {
+        "date": "February 2025",
+        "event": "Posts arXiv preprint: 'The New Science of Unidentified Aerospace-Undersea Phenomena' — formal academic framework for UAP as a scientific research object"
+      },
+      {
+        "date": "2024–2025",
+        "event": "Provides classified briefings to congressional members and staff on UAP biological effects and materials analysis; continues Sol Foundation activities and public advocacy"
+      }
     ]
   },
-
   "research": {
     "cia_consultation": {
       "period": "c. 2011–2017",
@@ -60,7 +92,11 @@
         "year": "2022",
         "title": "Improved Instrumental Methods for the Remote Detection and Measurement of Unidentified Aerial Phenomena",
         "journal": "Progress in Aerospace Sciences",
-        "co_authors": ["Kevin Knuth", "Peter Reali", "others"],
+        "co_authors": [
+          "Kevin Knuth",
+          "Peter Reali",
+          "others"
+        ],
         "significance": "First peer-reviewed paper in a major aerospace science journal to address UAP detection methodology. Proposes standardized instrument suites (radar, optical, gravitational wave, RF) for systematic data collection. Establishes a scientific framework for UAP as a research object rather than cultural phenomenon.",
         "url": "https://www.sciencedirect.com/science/article/pii/S0376042122000598"
       },
@@ -68,7 +104,9 @@
         "year": "2025",
         "title": "The New Science of Unidentified Aerospace-Undersea Phenomena",
         "journal": "arXiv preprint (under review)",
-        "co_authors": ["Sol Foundation contributors"],
+        "co_authors": [
+          "Sol Foundation contributors"
+        ],
         "significance": "Comprehensive academic framework proposing UAP as a legitimate scientific research domain. Addresses observational evidence, proposed physical mechanisms, and institutional barriers to research. Represents the most detailed academic treatment of UAP methodology to date.",
         "url": "https://arxiv.org/abs/2502.06794"
       }
@@ -80,18 +118,21 @@
       "classification_note": "Materials analysis likely falls under informal intelligence community engagement or private agreements with holders; no formal government program has been publicly linked to Nolan's materials work"
     }
   },
-
   "sol_foundation": {
     "full_name": "Sol Foundation",
     "affiliation": "Stanford University (affiliated)",
     "established": "October 2023",
-    "co_founders": ["Karl Nell", "David Grusch", "Dr. Garry Nolan", "Dr. Peter Skafish"],
+    "co_founders": [
+      "Karl Nell",
+      "David Grusch",
+      "Dr. Garry Nolan",
+      "Dr. Peter Skafish"
+    ],
     "nolan_role": "Co-Founder; scientific lead and Stanford institutional anchor",
     "mission": "Rigorous, academically grounded research into UAP — bridging government insiders, scientific institutions, and public discourse through peer-reviewed methodology and institutional credibility",
     "inaugural_symposium": "November 2023 at Stanford University; brought together academics, scientists, and former government officials for the first major academic conference on UAP",
     "significance": "The Sol Foundation's Stanford affiliation and Nolan's institutional standing give it a credibility floor that no prior UAP research organization has had. The combination of a sitting Stanford professor (Nolan), a congressional whistleblower (Grusch), and a career military intelligence officer (Nell) as co-founders is structurally unprecedented in UAP research."
   },
-
   "claims": [
     {
       "id": "uap-real",
@@ -136,7 +177,6 @@
       "notes": "Nolan's most speculative biological claim. The underlying MRI data is real (from the CIA consultation) but the interpretation linking basal ganglia morphology to UAP sensitivity or anomalous cognition has not been peer-reviewed. It represents a hypothesis rather than an established finding."
     }
   ],
-
   "credibility": {
     "supporting": [
       "Tenured full professor at Stanford School of Medicine — among the world's most prestigious biomedical research institutions",
@@ -156,7 +196,6 @@
       "Some of his public statements (e.g., 'they're not hiding') move from scientific assessment to confident ontological claims without clearly disclosed evidential basis"
     ]
   },
-
   "associated_people": [
     {
       "id": "karl-nell",
@@ -189,7 +228,6 @@
       "relationship": "Co-founded Sol Foundation with Nolan; Skafish's anthropological and philosophical framing provides disciplinary breadth to the organization's academic approach"
     }
   ],
-
   "disclosures": [
     {
       "date": "2021",
@@ -239,6 +277,48 @@
       "title": "The New Science of Unidentified Aerospace-Undersea Phenomena",
       "outlet": "arXiv",
       "notes": "Comprehensive academic UAP research framework; under journal review"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Puthoff was part of the insider physics network that connected Nolan to CIA-adjacent UAP research; both are cited as core figures in the technical disclosure community",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "jacques-vallee",
+      "node_label": "Jacques Vallee",
+      "relationship": "Co-authored the 2022 Progress in Aerospace Sciences paper on UAP detection methodology - first peer-reviewed UAP methods paper in a major aerospace journal",
+      "connection_type": "publication"
+    },
+    {
+      "event_index": 6,
+      "node_type": "program",
+      "node_id": "sol-foundation",
+      "node_label": "Sol Foundation",
+      "relationship": "Co-founded October 2023 at Stanford alongside Karl Nell, David Grusch, and Dr. Peter Skafish following the congressional hearing season",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Co-founded Sol Foundation; Nolan Stanford affiliation and scientific credibility provide academic legitimacy to the organization Grusch helped launch",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "karl-nell",
+      "node_label": "Karl Nell",
+      "relationship": "Co-founded Sol Foundation together; Nell Army intelligence background and Nolan scientific credibility are complementary institutional anchors for the organization",
+      "connection_type": "collaboration"
     }
   ]
 }

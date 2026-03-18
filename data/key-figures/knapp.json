@@ -2,7 +2,9 @@
   "profile": {
     "id": "george-knapp",
     "name": "George Knapp",
-    "aliases": ["George T. Knapp"],
+    "aliases": [
+      "George T. Knapp"
+    ],
     "born": "c. 1952",
     "roles": [
       "Chief Investigative Reporter — KLAS-TV (CBS Las Vegas)",
@@ -23,47 +25,92 @@
       "M.A. Communications — Brigham Young University"
     ],
     "key_events": [
-      { "year": "1987", "event": "Begins investigative journalism career at KLAS-TV in Las Vegas; proximity to Nellis Air Force Base, Area 51, and the Nevada Test Site brings him into contact with government secrecy culture early in his career" },
-      { "year": "1989-05", "event": "Broadcasts interview with a man identified only as 'Dennis' on KLAS-TV — later revealed as Bob Lazar — who claims to have worked at a classified facility called S-4 near Groom Lake, reverse-engineering extraterrestrial propulsion systems. The broadcast draws international media attention and effectively launches the modern Area 51 mythology." },
-      { "year": "1989", "event": "Continues investigating Lazar's background; attempts to verify employment records, educational credentials, and Department of Energy badge number. Claims to have found evidence of records tampering or erasure. Maintains Lazar's credibility for 35+ years based on this investigation." },
-      { "year": "c. 2000", "event": "Introduces Senator Harry Reid to aerospace researcher Robert Bigelow, whose private UAP research (through the National Institute for Discovery Science) has been the subject of Knapp's reporting for years. This introduction is the catalyst for AAWSAP's creation." },
-      { "year": "2005", "event": "Co-authors 'Hunt for the Skinwalker' with Colm Kelleher, documenting anomalous phenomena at a Utah ranch purchased by Bigelow for research. The book is later read by DIA scientist James Lacatski, who uses it as partial motivation for establishing AAWSAP." },
-      { "year": "2007", "event": "AAWSAP is secretly funded through Reid's Senate appropriation — an outcome Knapp's introductions and advocacy helped make politically possible." },
-      { "year": "2017-12-16", "event": "The New York Times publishes the landmark AATIP investigation. Knapp's years of background reporting and source cultivation have helped shape the ecosystem that made the story possible; he is one of the few journalists who already knows the full context when it breaks." },
-      { "year": "2021", "event": "Co-authors 'Skinwalkers at the Pentagon' with James Lacatski and Colm Kelleher — the most detailed insider account of AAWSAP ever published, drawing on Lacatski's direct program management experience." },
-      { "year": "2021-05", "event": "Interviews former Senator Harry Reid for Mystery Wire; Reid states on record that he believes the U.S. government has recovered craft of non-human origin and that this is being concealed from Congress. One of Reid's most direct public statements before his death." },
-      { "year": "2022", "event": "Launches 'Weaponized' podcast with Jeremy Corbell; the show reports on leaked government documents, classified UAP video footage, and ongoing congressional disclosure battles" },
-      { "year": "2025-09-09", "event": "Testifies before the House Oversight and Government Reform Task Force on the Declassification of Federal Secrets. Presents 38 years of documented UAP evidence, discusses systematic retaliation against government witnesses and reporters, and makes the case for mandatory declassification." }
+      {
+        "year": "1987",
+        "event": "Begins investigative journalism career at KLAS-TV in Las Vegas; proximity to Nellis Air Force Base, Area 51, and the Nevada Test Site brings him into contact with government secrecy culture early in his career"
+      },
+      {
+        "year": "1989-05",
+        "event": "Broadcasts interview with a man identified only as 'Dennis' on KLAS-TV — later revealed as Bob Lazar — who claims to have worked at a classified facility called S-4 near Groom Lake, reverse-engineering extraterrestrial propulsion systems. The broadcast draws international media attention and effectively launches the modern Area 51 mythology."
+      },
+      {
+        "year": "1989",
+        "event": "Continues investigating Lazar's background; attempts to verify employment records, educational credentials, and Department of Energy badge number. Claims to have found evidence of records tampering or erasure. Maintains Lazar's credibility for 35+ years based on this investigation."
+      },
+      {
+        "year": "c. 2000",
+        "event": "Introduces Senator Harry Reid to aerospace researcher Robert Bigelow, whose private UAP research (through the National Institute for Discovery Science) has been the subject of Knapp's reporting for years. This introduction is the catalyst for AAWSAP's creation."
+      },
+      {
+        "year": "2005",
+        "event": "Co-authors 'Hunt for the Skinwalker' with Colm Kelleher, documenting anomalous phenomena at a Utah ranch purchased by Bigelow for research. The book is later read by DIA scientist James Lacatski, who uses it as partial motivation for establishing AAWSAP."
+      },
+      {
+        "year": "2007",
+        "event": "AAWSAP is secretly funded through Reid's Senate appropriation — an outcome Knapp's introductions and advocacy helped make politically possible."
+      },
+      {
+        "year": "2017-12-16",
+        "event": "The New York Times publishes the landmark AATIP investigation. Knapp's years of background reporting and source cultivation have helped shape the ecosystem that made the story possible; he is one of the few journalists who already knows the full context when it breaks."
+      },
+      {
+        "year": "2021",
+        "event": "Co-authors 'Skinwalkers at the Pentagon' with James Lacatski and Colm Kelleher — the most detailed insider account of AAWSAP ever published, drawing on Lacatski's direct program management experience."
+      },
+      {
+        "year": "2021-05",
+        "event": "Interviews former Senator Harry Reid for Mystery Wire; Reid states on record that he believes the U.S. government has recovered craft of non-human origin and that this is being concealed from Congress. One of Reid's most direct public statements before his death."
+      },
+      {
+        "year": "2022",
+        "event": "Launches 'Weaponized' podcast with Jeremy Corbell; the show reports on leaked government documents, classified UAP video footage, and ongoing congressional disclosure battles"
+      },
+      {
+        "year": "2025-09-09",
+        "event": "Testifies before the House Oversight and Government Reform Task Force on the Declassification of Federal Secrets. Presents 38 years of documented UAP evidence, discusses systematic retaliation against government witnesses and reporters, and makes the case for mandatory declassification."
+      }
     ]
   },
-
   "major_investigations": [
     {
       "title": "Bob Lazar and S-4 (1989)",
       "period": "1989-present",
       "summary": "Knapp's most historically significant investigation. His multi-segment interviews with Bob Lazar on KLAS-TV introduced the modern Area 51 narrative to the public, including claims of nine extraterrestrial craft, element 115 as a propulsion fuel, and the S-4 facility near Papoose Lake. Knapp has investigated Lazar's background for 35 years and maintains he is credible based on corroborating evidence he has found and records anomalies he has documented. Whether Lazar's claims are accurate remains contested, but Knapp's investigation was the vehicle through which the story reached global public consciousness.",
-      "key_documents": ["Original KLAS-TV broadcast segments (1989)", "Subsequent Lazar interviews (1989-2019)", "Background investigation records"]
+      "key_documents": [
+        "Original KLAS-TV broadcast segments (1989)",
+        "Subsequent Lazar interviews (1989-2019)",
+        "Background investigation records"
+      ]
     },
     {
       "title": "Skinwalker Ranch (2005-2021)",
       "period": "2005-2021",
       "summary": "Co-authored 'Hunt for the Skinwalker' (2005) with Colm Kelleher, documenting anomalous phenomena at the Utah ranch purchased by Robert Bigelow. The book was later read by DIA scientist James Lacatski, who cited it as motivation for establishing AAWSAP. Subsequently co-authored 'Skinwalkers at the Pentagon' (2021) with Lacatski, providing the first insider account of the government's AAWSAP investigation of the ranch and its connection to broader UAP research.",
-      "key_documents": ["Hunt for the Skinwalker (2005)", "Skinwalkers at the Pentagon (2021)"]
+      "key_documents": [
+        "Hunt for the Skinwalker (2005)",
+        "Skinwalkers at the Pentagon (2021)"
+      ]
     },
     {
       "title": "Pentagon UAP Programs (2012-present)",
       "period": "2012-present",
       "summary": "Through sources within defense and intelligence communities, Knapp has developed knowledge of government UAP programs that predated the 2017 New York Times disclosure by years. Has reported on AAWSAP, AATIP, the UAP Task Force, AARO, and alleged private contractor programs. The Weaponized podcast has aired leaked materials including classified UAP imagery and documents related to alleged recovery programs.",
-      "key_documents": ["Mystery Wire reports (2017-present)", "Weaponized podcast episodes (2022-present)", "Congressional testimony (2025)"]
+      "key_documents": [
+        "Mystery Wire reports (2017-present)",
+        "Weaponized podcast episodes (2022-present)",
+        "Congressional testimony (2025)"
+      ]
     },
     {
       "title": "Government Witness Retaliation",
       "period": "2015-present",
       "summary": "Knapp has documented systematic career retaliation and harassment of government employees and military personnel who attempted to report UAP-related information or cooperate with investigators. His congressional testimony in 2025 focused substantially on this pattern, drawing on three decades of documented cases.",
-      "key_documents": ["Congressional testimony (September 2025)", "Mystery Wire investigative reports"]
+      "key_documents": [
+        "Congressional testimony (September 2025)",
+        "Mystery Wire investigative reports"
+      ]
     }
   ],
-
   "associated_people": [
     {
       "id": "bob-lazar",
@@ -102,7 +149,6 @@
       "relationship": "Co-authored 'Hunt for the Skinwalker' (2005) and 'Skinwalkers at the Pentagon' (2021). Kelleher was Bigelow's lead scientist at NIDS and BAASS; his scientific access and Knapp's journalistic access formed the foundation of both books."
     }
   ],
-
   "disclosures": [
     {
       "date": "1989-05",
@@ -153,7 +199,6 @@
       "notes": "Formal testimony before a congressional task force focused on UAP-related secrecy. Knapp presented 38 years of documented evidence, discussed retaliation against government witnesses, and advocated for mandatory declassification."
     }
   ],
-
   "sources": [
     {
       "title": "Skinwalkers at the Pentagon (2021) — Lacatski, Kelleher, Knapp",
@@ -184,6 +229,56 @@
       "url": "https://www.newsnationnow.com/space/ufo/the-ufo-reporter-part-1-the-files-of-george-knapp/",
       "type": "article",
       "notes": "Detailed profile of Knapp's UAP journalism career and investigative methodology"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "bob-lazar",
+      "node_label": "Bob Lazar",
+      "relationship": "Broadcast Lazar's first S-4 interview on KLAS-TV, launching the modern Area 51 mythology",
+      "connection_type": "investigation"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "harry-reid",
+      "node_label": "Sen. Harry Reid",
+      "relationship": "Introduced Reid to Robert Bigelow; Reid later cited this introduction as the catalyst for AAWSAP",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "robert-bigelow",
+      "node_label": "Robert Bigelow",
+      "relationship": "Reported on Bigelow's private UAP research since 1990s; introduced him to Reid, enabling AAWSAP",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "program",
+      "node_id": "aawsap",
+      "node_label": "AAWSAP",
+      "relationship": "Knapp's introductions and advocacy helped make AAWSAP politically possible through Reid",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "james-lacatski",
+      "node_label": "Dr. James Lacatski",
+      "relationship": "Co-authored \"Skinwalkers at the Pentagon\" (2021), drawing on Lacatski's DIA insider perspective",
+      "connection_type": "publication"
+    },
+    {
+      "event_index": 9,
+      "node_type": "figure",
+      "node_id": "jeremy-corbell",
+      "node_label": "Jeremy Corbell",
+      "relationship": "Co-hosts Weaponized podcast; together published leaked UAP imagery and classified documents",
+      "connection_type": "collaboration"
     }
   ]
 }

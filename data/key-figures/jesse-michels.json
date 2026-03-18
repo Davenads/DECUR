@@ -2,7 +2,10 @@
   "profile": {
     "id": "jesse-michels",
     "name": "Jesse Michels",
-    "aliases": ["Jesse Michels", "American Alchemy"],
+    "aliases": [
+      "Jesse Michels",
+      "American Alchemy"
+    ],
     "born": null,
     "died": null,
     "roles": [
@@ -11,7 +14,9 @@
       "Independent Journalist and Filmmaker"
     ],
     "service_period": "2018-present",
-    "organizations": ["American Alchemy"],
+    "organizations": [
+      "American Alchemy"
+    ],
     "clearance": null,
     "summary": "Jesse Michels is the founder and host of American Alchemy, a YouTube channel with over 567,000 subscribers focused on UAP disclosure, fringe science, and interviews with high-profile insiders. His 2023 documentary-style interview with David Grusch - filmed before Grusch's congressional testimony - is widely credited as one of the first major media appearances to establish the whistleblower's public credibility. Michels has interviewed nearly every significant figure in the modern disclosure movement, making American Alchemy one of the most consequential independent journalism outlets in the UAP space.",
     "education": [],
@@ -20,12 +25,30 @@
       "Built American Alchemy as a platform bridging mainstream finance/tech audiences with UAP research"
     ],
     "key_events": [
-      { "year": "2021", "event": "Launched American Alchemy YouTube channel focusing on UAP and fringe science." },
-      { "year": "Dec 2021", "event": "Interviewed Stanford scientist Garry Nolan on UAP materials analysis and neurological effects on experiencers." },
-      { "year": "Feb 2022", "event": "Hosted landmark debate between Eric Weinstein and Hal Puthoff on UAP physics and government secrecy." },
-      { "year": "Sep 2023", "event": "Released documentary interview with David Grusch - one of Grusch's first major media appearances before congressional testimony." },
-      { "year": "Oct 2024", "event": "Released long-form documentary with Luis Elizondo covering AATIP, crash retrievals, and non-human intelligence." },
-      { "year": "Mar 2026", "event": "Hosted Eric Weinstein and Eric Davis in multi-hour discussion on crash retrieval physics and program compartmentalization." }
+      {
+        "year": "2021",
+        "event": "Launched American Alchemy YouTube channel focusing on UAP and fringe science."
+      },
+      {
+        "year": "Dec 2021",
+        "event": "Interviewed Stanford scientist Garry Nolan on UAP materials analysis and neurological effects on experiencers."
+      },
+      {
+        "year": "Feb 2022",
+        "event": "Hosted landmark debate between Eric Weinstein and Hal Puthoff on UAP physics and government secrecy."
+      },
+      {
+        "year": "Sep 2023",
+        "event": "Released documentary interview with David Grusch - one of Grusch's first major media appearances before congressional testimony."
+      },
+      {
+        "year": "Oct 2024",
+        "event": "Released long-form documentary with Luis Elizondo covering AATIP, crash retrievals, and non-human intelligence."
+      },
+      {
+        "year": "Mar 2026",
+        "event": "Hosted Eric Weinstein and Eric Davis in multi-hour discussion on crash retrieval physics and program compartmentalization."
+      }
     ]
   },
   "associated_people": [
@@ -305,6 +328,48 @@
       "url": "https://www.youtube.com/watch?v=1f16VvXaSSE",
       "type": "Documentary",
       "notes": "October 2024 - long-form documentary covering Elizondo's full disclosure arc"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "garry-nolan",
+      "node_label": "Garry Nolan",
+      "relationship": "Early interview on CIA engagement with UAP experiencers and anomalous isotope ratios; helped establish Nolan's public profile",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Featured Puthoff in a landmark debate with Eric Weinstein on UAP physics and government secrecy",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Conducted one of Grusch's earliest pre-testimony interviews; helped establish his public credibility before the July 2023 hearing",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "Produced a documentary-length interview covering Elizondo's full AATIP and disclosure arc",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "eric-davis",
+      "node_label": "Eric Davis",
+      "relationship": "Multi-hour discussion on crash retrieval physics and program compartmentalization alongside Eric Weinstein",
+      "connection_type": "collaboration"
     }
   ]
 }

@@ -11,7 +11,12 @@
       "Career Defense Intelligence Officer"
     ],
     "service_period": "c. 1990s-2022 (government intelligence career)",
-    "organizations": ["Office of Naval Intelligence", "DoD UAP Task Force", "AARO", "Office of the Under Secretary of Defense for Intelligence"],
+    "organizations": [
+      "Office of Naval Intelligence",
+      "DoD UAP Task Force",
+      "AARO",
+      "Office of the Under Secretary of Defense for Intelligence"
+    ],
     "clearance": "TS/SCI (former)",
     "summary": "Career Defense Intelligence Agency officer who served as Director of the DoD UAP Task Force (UAPTF) from 2020 to 2021 and briefly as the first Director of AARO in 2022 before Sean Kirkpatrick assumed the role. Stratton worked closely with Luis Elizondo on UAP investigation during the AATIP era and is credited as a key institutional continuity figure bridging AATIP, the UAPTF, and AARO. Unlike other disclosure-era figures, Stratton has maintained a largely non-public posture, rarely speaking on the record.",
     "education": [],
@@ -21,11 +26,26 @@
       "Served in multiple intelligence community roles before UAP-focused assignments"
     ],
     "key_events": [
-      { "year": "2017", "event": "Works alongside Luis Elizondo during the final period of AATIP before Elizondo's resignation; key institutional figure in the transition of UAP investigation within the DoD." },
-      { "year": "2020", "event": "Appointed Director of the DoD Unidentified Aerial Phenomena Task Force (UAPTF) when it is formally established under the Office of Naval Intelligence." },
-      { "year": "2021", "event": "Oversees production of the UAPTF Preliminary Assessment released June 25, 2021 - the first official U.S. government UAP report to the public." },
-      { "year": "2021", "event": "Departs as UAPTF director as the organization transitions toward what will become AARO." },
-      { "year": "2022", "event": "Briefly serves as AARO's first director in an acting capacity before Sean Kirkpatrick is confirmed as the official director in November 2022." }
+      {
+        "year": "2017",
+        "event": "Works alongside Luis Elizondo during the final period of AATIP before Elizondo's resignation; key institutional figure in the transition of UAP investigation within the DoD."
+      },
+      {
+        "year": "2020",
+        "event": "Appointed Director of the DoD Unidentified Aerial Phenomena Task Force (UAPTF) when it is formally established under the Office of Naval Intelligence."
+      },
+      {
+        "year": "2021",
+        "event": "Oversees production of the UAPTF Preliminary Assessment released June 25, 2021 - the first official U.S. government UAP report to the public."
+      },
+      {
+        "year": "2021",
+        "event": "Departs as UAPTF director as the organization transitions toward what will become AARO."
+      },
+      {
+        "year": "2022",
+        "event": "Briefly serves as AARO's first director in an acting capacity before Sean Kirkpatrick is confirmed as the official director in November 2022."
+      }
     ]
   },
   "associated_people": [
@@ -63,6 +83,24 @@
       "url": "https://www.popularmechanics.com/military/research/a37191831/uap-task-force-director/",
       "type": "Article",
       "notes": "Profile of Stratton's role as UAPTF director and institutional context."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "figure",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "Worked closely with Elizondo during the AATIP era; served as key institutional continuity figure after Elizondo's resignation",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Grusch served as the NRO's representative under Stratton's UAPTF leadership; Stratton directed him to investigate legacy UAP crash retrieval programs",
+      "connection_type": "institutional"
     }
   ]
 }

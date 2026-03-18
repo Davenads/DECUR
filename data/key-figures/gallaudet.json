@@ -2,7 +2,10 @@
   "profile": {
     "id": "tim-gallaudet",
     "name": "Dr. Timothy Gallaudet",
-    "aliases": ["Tim Gallaudet", "Rear Admiral Gallaudet"],
+    "aliases": [
+      "Tim Gallaudet",
+      "Rear Admiral Gallaudet"
+    ],
     "born": "Not publicly disclosed",
     "roles": [
       "Rear Admiral, U.S. Navy (Ret.)",
@@ -32,16 +35,36 @@
       "Post-NOAA: founded Gallaudet Consulting LLC; began engaging publicly with UAP research community through Sol Foundation"
     ],
     "key_events": [
-      { "date": "1980s–2014", "event": "Active duty U.S. Navy career spanning 30+ years. Final rank: Rear Admiral (two-star). Specializes in oceanography, ocean surveillance, and environmental science operations." },
-      { "date": "2017–2019", "event": "Appointed Acting Administrator of NOAA. Gains senior executive access to ocean monitoring systems, satellite data, and classified environmental intelligence relevant to USO phenomena." },
-      { "date": "2019", "event": "Departs NOAA. Begins transitioning toward public engagement with UAP research community, particularly regarding oceanic UAP and its scientific implications." },
-      { "date": "November 2023", "event": "Appears at The Sol Foundation inaugural conference. Interviewed by Ross Coulthart for Reality Check, NewsNation (aired June 2024). States his belief that 'we are in contact with non-human intelligence.'" },
-      { "date": "June 2024", "event": "Reality Check interview with Ross Coulthart airs on NewsNation. Gallaudet publicly endorses David Grusch's claims and calls for a science-based approach to UAP investigation." },
-      { "date": "November 2024", "event": "Submits written testimony to the House Oversight Committee. Describes Navy suppression of UAP data, submersible UAP incidents, and calls for mandatory reporting and scientific transparency." },
-      { "date": "December 6, 2024", "event": "NewsNation airs 'Reality Check: Underwater UFOs' — dedicated special with Gallaudet on USOs, SOSUS tracking anomalies, and the submarine incident involving an object that tracked a nuclear submarine." }
+      {
+        "date": "1980s–2014",
+        "event": "Active duty U.S. Navy career spanning 30+ years. Final rank: Rear Admiral (two-star). Specializes in oceanography, ocean surveillance, and environmental science operations."
+      },
+      {
+        "date": "2017–2019",
+        "event": "Appointed Acting Administrator of NOAA. Gains senior executive access to ocean monitoring systems, satellite data, and classified environmental intelligence relevant to USO phenomena."
+      },
+      {
+        "date": "2019",
+        "event": "Departs NOAA. Begins transitioning toward public engagement with UAP research community, particularly regarding oceanic UAP and its scientific implications."
+      },
+      {
+        "date": "November 2023",
+        "event": "Appears at The Sol Foundation inaugural conference. Interviewed by Ross Coulthart for Reality Check, NewsNation (aired June 2024). States his belief that 'we are in contact with non-human intelligence.'"
+      },
+      {
+        "date": "June 2024",
+        "event": "Reality Check interview with Ross Coulthart airs on NewsNation. Gallaudet publicly endorses David Grusch's claims and calls for a science-based approach to UAP investigation."
+      },
+      {
+        "date": "November 2024",
+        "event": "Submits written testimony to the House Oversight Committee. Describes Navy suppression of UAP data, submersible UAP incidents, and calls for mandatory reporting and scientific transparency."
+      },
+      {
+        "date": "December 6, 2024",
+        "event": "NewsNation airs 'Reality Check: Underwater UFOs' — dedicated special with Gallaudet on USOs, SOSUS tracking anomalies, and the submarine incident involving an object that tracked a nuclear submarine."
+      }
     ]
   },
-
   "claims": [
     {
       "id": "nhi-contact",
@@ -86,7 +109,6 @@
       "notes": "Endorsement from a credentialed Rear Admiral and former NOAA Administrator is notable. However, an endorsement is not independent corroboration — Gallaudet does not provide firsthand evidence of retrieval programs."
     }
   ],
-
   "credibility": {
     "supporting": [
       "Ph.D. in Oceanography from Scripps Institution of Oceanography — one of the world's premier ocean science programs — gives Gallaudet exceptional scientific credibility in the USO domain specifically",
@@ -108,7 +130,6 @@
       "He departed NOAA in 2019 — his access to current intelligence on UAP programs post-departure is unclear"
     ]
   },
-
   "associated_people": [
     {
       "id": "ross-coulthart",
@@ -141,7 +162,6 @@
       "relationship": "Graves' independent documentation of UAP reporting suppression in the Navy aligns with and corroborates Gallaudet's claims about systematic institutional suppression."
     }
   ],
-
   "disclosures": [
     {
       "date": "November 2023",
@@ -176,7 +196,6 @@
       "notes": "Dedicated special on USOs. Described the submarine tracking incident. Made the case for ocean investigation as a priority domain."
     }
   ],
-
   "sources": [
     {
       "title": "NewsNation — UFO Claims: 'We Are in Contact with Non-Human Intelligence'",
@@ -207,6 +226,24 @@
       "url": "https://en.wikipedia.org/wiki/Timothy_Gallaudet",
       "type": "structured-reference",
       "notes": "Background biography, Naval career, and NOAA service"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "ross-coulthart",
+      "node_label": "Ross Coulthart",
+      "relationship": "Gallaudet appeared in multiple NewsNation Reality Check interviews with Coulthart on USOs and the oceanic UAP domain",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Gallaudet publicly endorsed Grusch's crash retrieval claims and called for science-based investigation of the UAP phenomenon",
+      "connection_type": "institutional"
     }
   ]
 }

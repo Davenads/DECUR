@@ -2,7 +2,10 @@
   "profile": {
     "id": "david-fravor",
     "name": "David Scott Fravor",
-    "aliases": ["Dave Fravor", "Fravor"],
+    "aliases": [
+      "Dave Fravor",
+      "Fravor"
+    ],
     "born": "1963 (exact date not publicly confirmed)",
     "roles": [
       "Commanding Officer, VFA-41 'Black Aces' Strike Fighter Squadron",
@@ -29,18 +32,44 @@
       "Accumulated 6,000+ flight hours, 2,000+ carrier landings"
     ],
     "key_events": [
-      { "date": "1987", "event": "Graduates Naval Academy; begins Navy career" },
-      { "date": "1994–2001", "event": "Multiple combat deployments; becomes CO of VFA-41 Black Aces" },
-      { "date": "November 14, 2004", "event": "The Tic Tac encounter — vectored by USS Princeton CIC to investigate radar anomaly; observes white 40-ft oblong object with no propulsion signature performing impossible maneuvers 80 miles southwest of San Diego; object detected intermittently on radar for weeks prior" },
-      { "date": "November 14, 2004 (later)", "event": "A second F/A-18 crew (Lt. Chad Underwood) captures the FLIR1 footage of a different contact from the same exercise area — this becomes the famous 'Tic Tac video'" },
-      { "date": "2006", "event": "Retires from U.S. Navy after 18+ years; moves to private sector (later runs a catering business in Massachusetts)" },
-      { "date": "December 16, 2017", "event": "New York Times publishes 'Glowing Auras and Black Money' — AATIP confirmed, Nimitz encounter reported publicly for the first time" },
-      { "date": "April 2019", "event": "Pentagon officially acknowledges FLIR1/Nimitz video as authentic Navy gun-camera footage" },
-      { "date": "July 26, 2023", "event": "Testifies under oath before House Oversight Subcommittee on National Security alongside David Grusch and Ryan Graves — first time a military pilot testified under oath about a direct UAP encounter in a modern hearing" },
-      { "date": "December 2023", "event": "Congress releases written transcripts of closed-door classified briefings referencing the Nimitz encounter in program context" }
+      {
+        "date": "1987",
+        "event": "Graduates Naval Academy; begins Navy career"
+      },
+      {
+        "date": "1994–2001",
+        "event": "Multiple combat deployments; becomes CO of VFA-41 Black Aces"
+      },
+      {
+        "date": "November 14, 2004",
+        "event": "The Tic Tac encounter — vectored by USS Princeton CIC to investigate radar anomaly; observes white 40-ft oblong object with no propulsion signature performing impossible maneuvers 80 miles southwest of San Diego; object detected intermittently on radar for weeks prior"
+      },
+      {
+        "date": "November 14, 2004 (later)",
+        "event": "A second F/A-18 crew (Lt. Chad Underwood) captures the FLIR1 footage of a different contact from the same exercise area — this becomes the famous 'Tic Tac video'"
+      },
+      {
+        "date": "2006",
+        "event": "Retires from U.S. Navy after 18+ years; moves to private sector (later runs a catering business in Massachusetts)"
+      },
+      {
+        "date": "December 16, 2017",
+        "event": "New York Times publishes 'Glowing Auras and Black Money' — AATIP confirmed, Nimitz encounter reported publicly for the first time"
+      },
+      {
+        "date": "April 2019",
+        "event": "Pentagon officially acknowledges FLIR1/Nimitz video as authentic Navy gun-camera footage"
+      },
+      {
+        "date": "July 26, 2023",
+        "event": "Testifies under oath before House Oversight Subcommittee on National Security alongside David Grusch and Ryan Graves — first time a military pilot testified under oath about a direct UAP encounter in a modern hearing"
+      },
+      {
+        "date": "December 2023",
+        "event": "Congress releases written transcripts of closed-door classified briefings referencing the Nimitz encounter in program context"
+      }
     ]
   },
-
   "encounter": {
     "date": "November 14, 2004",
     "location": "Pacific Ocean, approximately 100 miles southwest of San Diego, California",
@@ -67,7 +96,6 @@
       "multiple USS Nimitz crew"
     ]
   },
-
   "claims": [
     {
       "id": "tic-tac-encounter",
@@ -112,7 +140,6 @@
       "notes": "Cross-referencing his 2017-2023 public accounts with his sworn testimony shows remarkable consistency. No material contradictions have emerged."
     }
   ],
-
   "credibility": {
     "supporting": [
       "Decorated Navy Commander with 6,000+ flight hours and 2,000+ carrier landings — highly trained observer",
@@ -127,7 +154,6 @@
       "AARO (2024) suggested some USS Princeton radar anomalies may have been attributable to radar mode switching software — but did not explain the visual encounter"
     ]
   },
-
   "associated_people": [
     {
       "id": "david-grusch",
@@ -160,7 +186,6 @@
       "relationship": "Piloted the second F/A-18 during the Tic Tac encounter; provided corroborating account in 60 Minutes interview (2021) — the first time she went on record publicly"
     }
   ],
-
   "disclosures": [
     {
       "date": "December 16, 2017",
@@ -189,6 +214,48 @@
       "title": "Multiple media appearances",
       "outlet": "60 Minutes, Joe Rogan Experience, NewsNation, CNN, Fox News, and others",
       "notes": "Sustained public media campaign since 2017; no material contradictions have emerged across years of interviews"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "alex-dietrich",
+      "node_label": "Alex Dietrich",
+      "relationship": "Dietrich piloted the second F/A-18 during the Tic Tac encounter; first public corroborating account on 60 Minutes in 2021",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "program",
+      "node_id": "aatip",
+      "node_label": "AATIP",
+      "relationship": "The Nimitz encounter was the central AATIP case; FLIR1 video became the most studied evidence from the program",
+      "connection_type": "investigation"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "Elizondo released the FLIR1 Tic Tac video through AATIP and TTSA in 2017; Fravor encounter was the primary AATIP case",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Co-testified at July 26, 2023 House hearing; Fravor direct encounter provided experiential grounding for Grusch program disclosures",
+      "connection_type": "testimony"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Co-testified at July 2023 hearing; both military aviator witnesses whose combined accounts anchored the congressional session",
+      "connection_type": "testimony"
     }
   ]
 }

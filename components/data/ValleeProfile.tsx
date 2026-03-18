@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import dynamic from 'next/dynamic';
 import valleeData from '../../data/key-figures/vallee.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
@@ -6,6 +7,11 @@ import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import PersonCard from './shared/PersonCard';
+
+const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
+  ssr: false,
+  loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
+});
 
 const data = valleeData as typeof valleeData;
 
@@ -16,6 +22,7 @@ const TABS = [
   { id: 'nids',              label: 'NIDS' },
   { id: 'claims',            label: 'Claims' },
   { id: 'disclosures',       label: 'Disclosures' },
+  { id: 'career-network',    label: 'Career Network' },
   { id: 'network',           label: 'Network' },
   { id: 'assessment',        label: 'Assessment' },
 ] as const;
@@ -333,6 +340,20 @@ const ValleeProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
       case 'nids':              return <NidsTab />;
       case 'claims':            return <ClaimsTab />;
       case 'disclosures':       return <DisclosuresTab />;
+      case 'career-network': {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const keyEvents = (data.profile.key_events ?? []).map((e: any) => ({ year: String(e.date ?? e.year ?? ''), event: e.event }));
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const careerConnections = (data as any).career_connections ?? [];
+        return (
+          <div className="space-y-4">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
+            </p>
+            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
+          </div>
+        );
+      }
       case 'network':           return <NetworkTab />;
       case 'assessment':        return <AssessmentTab />;
     }

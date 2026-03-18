@@ -116,5 +116,23 @@
       "type": "News Article",
       "notes": "DefenseScoop coverage of the September 9, 2025 House Oversight UAP hearing, including Borland's testimony."
     }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Borland followed the same official whistleblower path established by Grusch - ICIG filing, AARO testimony, then congressional testimony",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "jay-stratton",
+      "node_label": "Jay Stratton",
+      "relationship": "Both are connected through the AARO institutional context; Borland testified to AARO, which Stratton had briefly directed before Kirkpatrick",
+      "connection_type": "institutional"
+    }
   ]
 }

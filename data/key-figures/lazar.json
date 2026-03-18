@@ -2,7 +2,10 @@
   "profile": {
     "id": "bob-lazar",
     "name": "Bob Lazar",
-    "aliases": ["Robert Scott Lazar", "Dennis (anonymous, May 1989)"],
+    "aliases": [
+      "Robert Scott Lazar",
+      "Dennis (anonymous, May 1989)"
+    ],
     "born": "January 26, 1959",
     "roles": [
       "Physicist",
@@ -27,27 +30,71 @@
       "Submitted resume to EG&G in October 1988 following call from Edward Teller"
     ],
     "key_events": [
-      { "date": "November 29, 1988", "event": "Edward Teller contacted Lazar and provided EG&G contact for potential employment" },
-      { "date": "December 1, 1988", "event": "First interview at EG&G offices, Las Vegas" },
-      { "date": "December 6, 1988", "event": "First claimed flight to Area 51 / Groom Lake" },
-      { "date": "Mid-December 1988", "event": "First claimed visit to S-4 facility at Papoose Lake" },
-      { "date": "January 16, 1989", "event": "Third S-4 visit; claims first exposure to classified briefing files" },
-      { "date": "March 22, 1989", "event": "First Tikaboo Valley observation of disc test flight with Gene Huff and John Lear" },
-      { "date": "March 29, 1989", "event": "Second Tikaboo Valley observation; disc movement recorded on video" },
-      { "date": "April 5, 1989", "event": "Third Tikaboo Valley observation; group intercepted by guards, questioned by Lincoln County Sheriff" },
-      { "date": "April 6, 1989", "event": "Debriefed at Indian Springs AFB; fired from S-4 project" },
-      { "date": "May 15, 1989", "event": "Anonymous 'Dennis' interview broadcast on KLAS-TV, Las Vegas with George Knapp" },
-      { "date": "November 10, 1989", "event": "Publicly identified and interviewed in UFOs: The Best Evidence series on KLAS-TV" },
-      { "date": "November 14, 1989", "event": "Second KLAS-TV segment airs with additional technical disclosure" },
-      { "date": "December 8, 2018", "event": "Bob Lazar: Area 51 & Flying Saucers documentary released, directed by Jeremy Corbell" },
-      { "date": "June 20, 2019", "event": "Appeared on The Joe Rogan Experience podcast (#1315) with Jeremy Corbell" }
+      {
+        "date": "November 29, 1988",
+        "event": "Edward Teller contacted Lazar and provided EG&G contact for potential employment"
+      },
+      {
+        "date": "December 1, 1988",
+        "event": "First interview at EG&G offices, Las Vegas"
+      },
+      {
+        "date": "December 6, 1988",
+        "event": "First claimed flight to Area 51 / Groom Lake"
+      },
+      {
+        "date": "Mid-December 1988",
+        "event": "First claimed visit to S-4 facility at Papoose Lake"
+      },
+      {
+        "date": "January 16, 1989",
+        "event": "Third S-4 visit; claims first exposure to classified briefing files"
+      },
+      {
+        "date": "March 22, 1989",
+        "event": "First Tikaboo Valley observation of disc test flight with Gene Huff and John Lear"
+      },
+      {
+        "date": "March 29, 1989",
+        "event": "Second Tikaboo Valley observation; disc movement recorded on video"
+      },
+      {
+        "date": "April 5, 1989",
+        "event": "Third Tikaboo Valley observation; group intercepted by guards, questioned by Lincoln County Sheriff"
+      },
+      {
+        "date": "April 6, 1989",
+        "event": "Debriefed at Indian Springs AFB; fired from S-4 project"
+      },
+      {
+        "date": "May 15, 1989",
+        "event": "Anonymous 'Dennis' interview broadcast on KLAS-TV, Las Vegas with George Knapp"
+      },
+      {
+        "date": "November 10, 1989",
+        "event": "Publicly identified and interviewed in UFOs: The Best Evidence series on KLAS-TV"
+      },
+      {
+        "date": "November 14, 1989",
+        "event": "Second KLAS-TV segment airs with additional technical disclosure"
+      },
+      {
+        "date": "December 8, 2018",
+        "event": "Bob Lazar: Area 51 & Flying Saucers documentary released, directed by Jeremy Corbell"
+      },
+      {
+        "date": "June 20, 2019",
+        "event": "Appeared on The Joe Rogan Experience podcast (#1315) with Jeremy Corbell"
+      }
     ]
   },
-
   "facility": {
     "id": "s4",
     "name": "S-4 / Papoose Lake Facility",
-    "aliases": ["Sector Four", "S-4 Base"],
+    "aliases": [
+      "Sector Four",
+      "S-4 Base"
+    ],
     "location": "Near Papoose dry lake bed, approximately 12–15 miles south-southwest of Area 51 (Groom Lake), Nevada",
     "construction": "Hangars and buildings built directly into the mountainside; described as camouflaged with corrugated panels matching the mountain slope",
     "access": "Personnel flown via Boeing 737 to Groom Lake, then transferred to S-4 by bus with blacked-out windows",
@@ -62,7 +109,6 @@
     "hangar_notes": "Each hangar bay reported to contain one disc-shaped craft; Lazar primarily worked in the hangar containing the 'Sport Model'",
     "lazar_account": "Lazar described arriving via bus from Groom Lake with blacked-out windows. He signed non-disclosure agreements and was briefed via paper reports — not electronic — about the nature of the program. He was told to focus solely on propulsion system back-engineering and was not permitted to move freely between hangar bays."
   },
-
   "crafts": {
     "total_count": 9,
     "primary_studied": "Sport Model",
@@ -80,7 +126,6 @@
       }
     ]
   },
-
   "propulsion": {
     "overview": "Lazar claims the disc propulsion system is fundamentally gravity-based — specifically the amplification and focusing of gravitational waves to distort space-time around the craft, enabling near-instantaneous displacement rather than conventional thrust-based travel.",
     "fuel": {
@@ -113,7 +158,6 @@
     "space_time_distortion": "Rather than moving through space conventionally, the craft folds or distorts space-time, bringing the destination closer to the craft's position. This allows effective faster-than-light travel without violating relativistic physics in the conventional sense.",
     "glow_explanation": "The bright glow observed around operating discs results from the gravitational field interacting with the local atmosphere — ionizing air molecules around the hull."
   },
-
   "claims": [
     {
       "id": "claim-01",
@@ -172,7 +216,6 @@
       "notes": "No government document has confirmed or denied this clearance designation."
     }
   ],
-
   "credibility": {
     "supporting": [
       "1982 Los Alamos phone directory confirms Lazar's presence at LANL as a Kirk-Mayer contractor",
@@ -194,7 +237,6 @@
       "No colleague from the alleged S-4 program has independently corroborated his account"
     ]
   },
-
   "associated_people": [
     {
       "id": "george-knapp",
@@ -233,7 +275,6 @@
       "relationship": "Co-founded Zeta Reticuli 2 Corporation with Lazar in January 1990 at $30,000 annual salary"
     }
   ],
-
   "disclosures": [
     {
       "date": "May 15, 1989",
@@ -290,7 +331,6 @@
       "notes": "Joint appearance with Jeremy Corbell. Full transcript available via singjupost.com."
     }
   ],
-
   "sources": [
     {
       "title": "The Updated Bob Lazar Timeline",
@@ -327,6 +367,24 @@
       "url": "https://archive.org/details/bob-lazar-interview-1989",
       "type": "audio-video",
       "notes": "Original 1989 interview audio/video archived"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 9,
+      "node_type": "figure",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Knapp was Lazar's primary journalist; broadcast his anonymous interview, investigated his background, and has vouched for his credibility for 35+ years",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 12,
+      "node_type": "figure",
+      "node_id": "jeremy-corbell",
+      "node_label": "Jeremy Corbell",
+      "relationship": "Corbell directed the 2018 documentary \"Bob Lazar: Area 51 & Flying Saucers,\" bringing Lazar's account to a new generation with updated production quality",
+      "connection_type": "collaboration"
     }
   ]
 }

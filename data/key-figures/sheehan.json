@@ -2,7 +2,10 @@
   "profile": {
     "id": "daniel-sheehan",
     "name": "Daniel Sheehan",
-    "aliases": ["Danny Sheehan", "Dan Sheehan"],
+    "aliases": [
+      "Danny Sheehan",
+      "Dan Sheehan"
+    ],
     "born": "July 28, 1945",
     "roles": [
       "Constitutional and Public Interest Attorney",
@@ -27,17 +30,40 @@
     "clearance": "Obtained access to classified Project Blue Book files through Congressional Research Service in 1977; has claimed to have viewed classified crash retrieval documentation",
     "summary": "Harvard-trained constitutional attorney with a 50-year career at the intersection of law, government accountability, and UAP disclosure. Best known in conventional legal circles for representing the New York Times in the Pentagon Papers case, Karen Silkwood's estate, and defendants in the Iran-Contra affair through the Christic Institute. In UAP research circles, Sheehan is known for claiming to have viewed classified crash retrieval photographs in the Congressional Research Service archives in 1977 and for serving as General Counsel to Steven Greer's Disclosure Project, including the landmark 2001 National Press Club event. He has been a legal and institutional advocate for government UAP disclosure for nearly five decades, representing witnesses before congressional bodies and advising disclosure advocacy organizations.",
     "key_events": [
-      { "year": "1971", "event": "Represents the New York Times as a young attorney in the Pentagon Papers case (New York Times Co. v. United States). The Supreme Court rules 6-3 in favor of publication - a foundational First Amendment and government accountability case." },
-      { "year": "1977", "event": "Working as Chief Counsel at the U.S. Jesuit headquarters in Washington D.C., is asked by Marcia Smith of the Congressional Research Service to research what the U.S. government knows about extraterrestrial intelligence for a classified briefing to the Carter administration. Claims to have been given access to classified Project Blue Book files at Wright-Patterson Air Force Base and to have viewed photographs of a crashed craft and recovered bodies, which he sketched on paper smuggled inside his notepad." },
-      { "year": "1981", "event": "Represents Karen Silkwood's estate against Kerr-McGee Nuclear in a landmark nuclear industry accountability case." },
-      { "year": "1986", "event": "Founds the Christic Institute, which becomes central to the Iran-Contra legal investigation. Represents clients alleging a government-sanctioned drug trafficking network during the Central American conflicts." },
-      { "year": "2001-05-09", "event": "Serves as General Counsel for the Disclosure Project's landmark National Press Club event in Washington D.C., organized by Steven Greer. Twenty government, military, and intelligence witnesses provide testimony before the Washington press corps regarding UAP. The event generates global coverage." },
-      { "year": "2003", "event": "Founds the Romero Institute, a public interest law and policy center named after Archbishop Oscar Romero. Continues UAP disclosure advocacy alongside environmental and social justice work." },
-      { "year": "2019-present", "event": "Teaches courses on UAP, law, and disclosure at the University of California, Santa Barbara. Publishes and lectures extensively on the legal frameworks needed for formal disclosure and on his 1977 classified file access claim." },
-      { "year": "2023", "event": "Active advocacy during the peak of congressional UAP engagement, providing legal analysis and historical context for the Schumer UAP Disclosure Act and AARO oversight debate." }
+      {
+        "year": "1971",
+        "event": "Represents the New York Times as a young attorney in the Pentagon Papers case (New York Times Co. v. United States). The Supreme Court rules 6-3 in favor of publication - a foundational First Amendment and government accountability case."
+      },
+      {
+        "year": "1977",
+        "event": "Working as Chief Counsel at the U.S. Jesuit headquarters in Washington D.C., is asked by Marcia Smith of the Congressional Research Service to research what the U.S. government knows about extraterrestrial intelligence for a classified briefing to the Carter administration. Claims to have been given access to classified Project Blue Book files at Wright-Patterson Air Force Base and to have viewed photographs of a crashed craft and recovered bodies, which he sketched on paper smuggled inside his notepad."
+      },
+      {
+        "year": "1981",
+        "event": "Represents Karen Silkwood's estate against Kerr-McGee Nuclear in a landmark nuclear industry accountability case."
+      },
+      {
+        "year": "1986",
+        "event": "Founds the Christic Institute, which becomes central to the Iran-Contra legal investigation. Represents clients alleging a government-sanctioned drug trafficking network during the Central American conflicts."
+      },
+      {
+        "year": "2001-05-09",
+        "event": "Serves as General Counsel for the Disclosure Project's landmark National Press Club event in Washington D.C., organized by Steven Greer. Twenty government, military, and intelligence witnesses provide testimony before the Washington press corps regarding UAP. The event generates global coverage."
+      },
+      {
+        "year": "2003",
+        "event": "Founds the Romero Institute, a public interest law and policy center named after Archbishop Oscar Romero. Continues UAP disclosure advocacy alongside environmental and social justice work."
+      },
+      {
+        "year": "2019-present",
+        "event": "Teaches courses on UAP, law, and disclosure at the University of California, Santa Barbara. Publishes and lectures extensively on the legal frameworks needed for formal disclosure and on his 1977 classified file access claim."
+      },
+      {
+        "year": "2023",
+        "event": "Active advocacy during the peak of congressional UAP engagement, providing legal analysis and historical context for the Schumer UAP Disclosure Act and AARO oversight debate."
+      }
     ]
   },
-
   "claims": {
     "1977_classified_files": {
       "context": "Sheehan claims that in 1977, while researching extraterrestrial intelligence for a Congressional Research Service briefing for the Carter White House, he was given access to classified Air Force files at Wright-Patterson Air Force Base. He states he found photographs of a crashed disc-shaped craft in snow, with military personnel next to it for scale, and bodies of non-human beings. He states he sketched what he saw on a notepad cover he had smuggled into the secure area.",
@@ -45,7 +71,6 @@
       "significance": "If accurate, represents one of the earliest claimed instances of a credentialed government-adjacent figure being shown crash retrieval evidence. The 1977 timing, the CRS/Carter administration context, and the Wright-Patterson location are all historically plausible."
     }
   },
-
   "associated_people": [
     {
       "id": "david-grusch",
@@ -60,7 +85,6 @@
       "relationship": "Both have been central figures in UAP disclosure for decades from different institutional vantages - Sheehan from law and advocacy, Knapp from journalism."
     }
   ],
-
   "disclosures": [
     {
       "date": "2001-05-09",
@@ -79,7 +103,6 @@
       "notes": "Academic course and lecture series covering UAP history, law, and the 1977 classified file access claim. Represents Sheehan's most systematic public documentation of his experiences."
     }
   ],
-
   "sources": [
     {
       "title": "Disclosure Project - National Press Club Event (2001)",
@@ -98,6 +121,24 @@
       "url": "https://en.wikipedia.org/wiki/Daniel_Sheehan_(attorney)",
       "type": "reference",
       "notes": "Biographical reference; documents Pentagon Papers, Silkwood, Iran-Contra, and UAP work"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Both have been central UAP disclosure figures for decades - Sheehan from law and advocacy, Knapp from investigative journalism",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Sheehan served as a legal advisor and constitutional law advocate for whistleblowers including Grusch during the congressional disclosure period",
+      "connection_type": "collaboration"
     }
   ]
 }

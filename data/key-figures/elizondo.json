@@ -289,6 +289,65 @@
     }
   ],
 
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "aatip",
+      "node_label": "AATIP",
+      "relationship": "Assumed management of the program circa 2010 within the Office of the Under Secretary of Defense for Intelligence",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "harry-reid",
+      "node_label": "Harry Reid",
+      "relationship": "Reid secured AATIP's original $22M appropriation in 2007 and later publicly confirmed Elizondo's involvement in the program",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "program",
+      "node_id": "ttsa",
+      "node_label": "To The Stars Academy",
+      "relationship": "Co-founded TTSA on the day of his Pentagon departure as Chief Security Officer and disclosure vehicle",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "chris-mellon",
+      "node_label": "Christopher Mellon",
+      "relationship": "Joined TTSA as Senior Advisor; coordinated the strategy to release Nimitz videos and brief Congress on UAP",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Co-authored the Dec 2017 NY Times investigation that confirmed AATIP's existence and launched the modern disclosure era",
+      "connection_type": "publication"
+    },
+    {
+      "event_index": 8,
+      "node_type": "figure",
+      "node_id": "david-fravor",
+      "node_label": "David Fravor",
+      "relationship": "Fravor's 2004 Tic Tac encounter was the central AATIP case; FLIR1 video declassified in 2019 directly validating AATIP's work",
+      "connection_type": "investigation"
+    },
+    {
+      "event_index": 9,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Elizondo's 2020-2021 congressional briefing efforts helped establish the political groundwork for Grusch's 2022 whistleblower complaint",
+      "connection_type": "mentorship"
+    }
+  ],
+
   "sources": [
     {
       "title": "New York Times — 'Glowing Auras and Black Money: The Pentagon's Mysterious UFO Program'",

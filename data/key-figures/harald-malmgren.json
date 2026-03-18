@@ -2,7 +2,10 @@
   "profile": {
     "id": "harald-malmgren",
     "name": "Dr. Harald Malmgren",
-    "aliases": ["Harold Malmgren", "Harald B. Malmgren"],
+    "aliases": [
+      "Harold Malmgren",
+      "Harald B. Malmgren"
+    ],
     "born": "c. 1936",
     "died": null,
     "roles": [
@@ -59,7 +62,6 @@
       }
     ]
   },
-
   "associated_people": [
     {
       "id": "jesse-michels",
@@ -80,7 +82,6 @@
       "relationship": "Mentioned in the Malmgren-Michels interview as a researcher who has independently corroborated the nuclear-UAP connection framework. Both figures point to Atomic Energy Commission classification infrastructure as the mechanism for UAP secrecy."
     }
   ],
-
   "disclosures": [
     {
       "date": "Apr 2025",
@@ -90,7 +91,6 @@
       "notes": "Primary formal disclosure. On-camera interview in which Malmgren claims firsthand handling of anomalous material recovered from the Bluegill Triple Prime nuclear test in the Marshall Islands (1962), a private briefing from CIA Deputy Director Richard Bissell on the 1933 Magenta, Italy UFO crash, and denial of access to recovered material data despite holding Q clearance and presidential NSC authorization. Published April 22, 2025."
     }
   ],
-
   "sources": [
     {
       "title": "Jesse Michels Interview - Presidential Advisor: I Directly Handled UFO Material (Apr 2025)",
@@ -109,6 +109,32 @@
       "url": "https://www.jfklibrary.org/learn/about-jfk/jfk-in-history/cuban-missile-crisis",
       "type": "Historical Record",
       "notes": "Corroborates Malmgren's NSC situation room role. Curtis LeMay's conduct during the crisis is documented in multiple declassified accounts."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "jesse-michels",
+      "node_label": "Jesse Michels",
+      "relationship": "Michels conducted Malmgren's first major on-camera interview in April 2025, providing the platform for his primary UAP disclosure",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Malmgren's account of compartmentalized material handling independently corroborates Grusch's congressional testimony on the same architecture",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Both independently point to Atomic Energy Commission classification infrastructure as the mechanism for UAP secrecy; mentioned together in the Michels interview",
+      "connection_type": "collaboration"
     }
   ]
 }
