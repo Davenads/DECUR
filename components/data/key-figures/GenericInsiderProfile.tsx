@@ -1,10 +1,16 @@
 import { FC, useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import ProfileShell from '../shared/ProfileShell';
 import PersonCard from '../shared/PersonCard';
 import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
+
+const FigureCareerFlow = dynamic(
+  () => import('../shared/FigureCareerFlow'),
+  { ssr: false, loading: () => <div className="h-[240px] rounded-lg bg-gray-900 animate-pulse" /> }
+);
 
 // Maps organization name substrings (lowercase) to their /programs/[id] slug
 const ORG_PROGRAM_MAP: Array<[string, string]> = [
@@ -87,7 +93,7 @@ interface ProfileData {
 
 // --- Tab identifiers ---
 
-type TabId = 'overview' | 'timeline' | 'feature' | 'people' | 'disclosures' | 'sources';
+type TabId = 'overview' | 'timeline' | 'career-flow' | 'feature' | 'people' | 'disclosures' | 'sources';
 
 // --- Helpers ---
 
@@ -428,6 +434,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
   const TABS: Array<{ id: TabId; label: string }> = [
     { id: 'overview', label: 'Overview' },
     ...(keyEvents.length > 0 ? [{ id: 'timeline' as TabId, label: 'Timeline' }] : []),
+    ...(keyEvents.length > 0 ? [{ id: 'career-flow' as TabId, label: 'Career Flow' }] : []),
     ...(feature ? [{ id: 'feature' as TabId, label: feature.label }] : []),
     ...(associatedPeople.length > 0 ? [{ id: 'people' as TabId, label: 'People' }] : []),
     ...(disclosures.length > 0 ? [{ id: 'disclosures' as TabId, label: 'Disclosures' }] : []),
@@ -442,6 +449,15 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
         return <OverviewTab profile={profile} relatedCases={relatedCases} />;
       case 'timeline':
         return <TimelineTab events={keyEvents} />;
+      case 'career-flow':
+        return (
+          <div className="space-y-4">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Chronological career flow. Scroll or pinch to zoom. Colors indicate event category detected from content.
+            </p>
+            <FigureCareerFlow keyEvents={keyEvents} />
+          </div>
+        );
       case 'feature':
         return feature ? <FeatureTab data={data[feature.key]} /> : null;
       case 'people':
