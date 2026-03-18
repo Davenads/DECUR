@@ -174,9 +174,18 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
   const [isTruncated, setIsTruncated] = useState(false);
 
   useEffect(() => {
-    if (relRef.current) {
-      setIsTruncated(relRef.current.scrollHeight > relRef.current.clientHeight);
-    }
+    const el = relRef.current;
+    if (!el) return;
+
+    const check = () => setIsTruncated(el.scrollHeight > el.clientHeight);
+
+    // ResizeObserver fires after React Flow finishes its layout pass,
+    // unlike a bare useEffect which fires before dimensions are settled.
+    const obs = new ResizeObserver(check);
+    obs.observe(el);
+    check(); // also run immediately in case dimensions are already available
+
+    return () => obs.disconnect();
   }, []);
 
   const handleClick = useCallback(() => {
