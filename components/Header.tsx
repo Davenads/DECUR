@@ -81,7 +81,7 @@ const Header: FC = () => {
   };
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-900/80 relative z-30">
+    <header className="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-900/80 relative z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
