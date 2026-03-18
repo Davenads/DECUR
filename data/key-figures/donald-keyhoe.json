@@ -2,7 +2,10 @@
   "profile": {
     "id": "donald-keyhoe",
     "name": "Maj. Donald E. Keyhoe",
-    "aliases": ["Donald Keyhoe", "D.E. Keyhoe"],
+    "aliases": [
+      "Donald Keyhoe",
+      "D.E. Keyhoe"
+    ],
     "born": "June 20, 1897 - Ottumwa, Iowa",
     "died": "November 29, 1988 - Luray, Virginia",
     "roles": [
@@ -30,16 +33,36 @@
       "Published 'Flying with Lindbergh' (1928) based on his time as Lindbergh's aide"
     ],
     "key_events": [
-      { "year": "1950", "event": "Published 'The Flying Saucers Are Real' (True Magazine and Fawcett Publications) - one of the first serious books arguing UFOs were of interplanetary origin and that the government was concealing the truth. Sold half a million copies and was the most widely read UFO publication of its era." },
-      { "year": "1953", "event": "Published 'Flying Saucers from Outer Space,' reporting on multiple military pilot encounters and arguing that a government policy of silence was actively suppressing evidence. The book was based partly on military contacts who provided Keyhoe with information they could not officially release." },
-      { "year": "1956", "event": "Co-founded the National Investigations Committee on Aerial Phenomena (NICAP) with T. Townsend Brown. Became executive director the following year." },
-      { "year": "1958", "event": "Under Keyhoe's leadership, NICAP grew to 14,000 members, documented hundreds of credible cases, and became the primary civilian body pressuring Congress for UFO disclosure. NICAP's case files became foundational research material for all subsequent investigators. Also published 'Flying Saucer Conspiracy,' arguing the Air Force's Project Blue Book was a deliberate cover-up operation rather than a genuine investigation." },
-      { "year": "1960", "event": "Testified before a closed session of a Senate subcommittee on UFOs - one of the first congressional appearances by a civilian UFO researcher." },
-      { "year": "1969", "event": "Forced out of NICAP's directorship by a board vote in a disputed internal power struggle. Many researchers believe the ouster was influenced by external pressure due to NICAP's effectiveness as an oversight body. NICAP declined significantly after his departure." },
-      { "year": "Nov 1988", "event": "Died at age 91 in Luray, Virginia. His career spanned the entire history of the modern UAP disclosure movement, from the first flying saucer reports in 1947 to within months of the Cold War's end." }
+      {
+        "year": "1950",
+        "event": "Published 'The Flying Saucers Are Real' (True Magazine and Fawcett Publications) - one of the first serious books arguing UFOs were of interplanetary origin and that the government was concealing the truth. Sold half a million copies and was the most widely read UFO publication of its era."
+      },
+      {
+        "year": "1953",
+        "event": "Published 'Flying Saucers from Outer Space,' reporting on multiple military pilot encounters and arguing that a government policy of silence was actively suppressing evidence. The book was based partly on military contacts who provided Keyhoe with information they could not officially release."
+      },
+      {
+        "year": "1956",
+        "event": "Co-founded the National Investigations Committee on Aerial Phenomena (NICAP) with T. Townsend Brown. Became executive director the following year."
+      },
+      {
+        "year": "1958",
+        "event": "Under Keyhoe's leadership, NICAP grew to 14,000 members, documented hundreds of credible cases, and became the primary civilian body pressuring Congress for UFO disclosure. NICAP's case files became foundational research material for all subsequent investigators. Also published 'Flying Saucer Conspiracy,' arguing the Air Force's Project Blue Book was a deliberate cover-up operation rather than a genuine investigation."
+      },
+      {
+        "year": "1960",
+        "event": "Testified before a closed session of a Senate subcommittee on UFOs - one of the first congressional appearances by a civilian UFO researcher."
+      },
+      {
+        "year": "1969",
+        "event": "Forced out of NICAP's directorship by a board vote in a disputed internal power struggle. Many researchers believe the ouster was influenced by external pressure due to NICAP's effectiveness as an oversight body. NICAP declined significantly after his departure."
+      },
+      {
+        "year": "Nov 1988",
+        "event": "Died at age 91 in Luray, Virginia. His career spanned the entire history of the modern UAP disclosure movement, from the first flying saucer reports in 1947 to within months of the Cold War's end."
+      }
     ]
   },
-
   "associated_people": [
     {
       "id": "j-allen-hynek",
@@ -54,7 +77,6 @@
       "relationship": "Dolan's foundational two-volume work 'UFOs and the National Security State' extensively documents Keyhoe's NICAP period and credits him as the most significant figure in establishing government accountability as a framework for UAP research."
     }
   ],
-
   "disclosures": [
     {
       "date": "1950",
@@ -85,7 +107,6 @@
       "notes": "Presented new documentation of military encounters and congressional interest in the subject. Keyhoe's most direct presentation of the case for congressional disclosure hearings."
     }
   ],
-
   "sources": [
     {
       "title": "The Flying Saucers Are Real (1950) - Archive.org",
@@ -110,6 +131,24 @@
       "url": "https://www.amazon.com/UFOs-National-Security-State-Chronology/dp/1571743561",
       "type": "Book",
       "notes": "Most comprehensive historical analysis of the Keyhoe/NICAP era"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "j-allen-hynek",
+      "node_label": "J. Allen Hynek",
+      "relationship": "NICAP under Keyhoe and CUFOS under Hynek were the two primary civilian UAP oversight institutions; Keyhoe's military source network complemented Hynek's scientific credibility",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 0,
+      "node_type": "figure",
+      "node_id": "richard-dolan",
+      "node_label": "Richard Dolan",
+      "relationship": "Dolan's \"UFOs and the National Security State\" archival work built directly on NICAP's Cold War documentation framework, which Keyhoe established",
+      "connection_type": "mentorship"
     }
   ]
 }

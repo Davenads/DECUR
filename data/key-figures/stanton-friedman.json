@@ -2,7 +2,9 @@
   "profile": {
     "id": "stanton-friedman",
     "name": "Stanton T. Friedman",
-    "aliases": ["Stan Friedman"],
+    "aliases": [
+      "Stan Friedman"
+    ],
     "born": "July 29, 1934 - Elizabeth, New Jersey",
     "died": "May 13, 2019 - Fredericton, New Brunswick, Canada",
     "roles": [
@@ -32,16 +34,36 @@
       "Left aerospace career in 1970 to become the first person to make a full-time living as a UFO researcher"
     ],
     "key_events": [
-      { "year": "1967", "event": "Gave his first public UFO lecture at a college in Montana, beginning what would become a lifelong career of over 700 campus lectures across North America." },
-      { "year": "1978", "event": "Located and conducted the first recorded interview with Jesse Marcel Sr., the Army Air Force intelligence officer who handled Roswell debris. This interview reignited public and media interest in Roswell after three decades of silence." },
-      { "year": "1980", "event": "Co-authored 'The Roswell Incident' (with Charles Berlitz and William Moore) - the first book dedicated to the Roswell crash, establishing it as the central case in crash-retrieval research." },
-      { "year": "1987", "event": "Received the leaked MJ-12 briefing documents via researcher William Moore and conducted extensive document analysis; coined the phrase 'Cosmic Watergate' to describe government UAP concealment." },
-      { "year": "1996", "event": "Published 'Top Secret/MAJIC,' the most comprehensive analysis of the MJ-12 documents. While defending their authenticity, Friedman applied rigorous historical methodology that forced even critics to engage substantively." },
-      { "year": "2008", "event": "Published 'Flying Saucers and Science,' applying his physics background to analyze UAP propulsion, interstellar travel feasibility, and the scientific case for extraterrestrial origin." },
-      { "year": "May 2019", "event": "Died at age 84 in Fredericton, New Brunswick. He had given his final public lecture just weeks before his death, consistent with a career that never stopped until the end." }
+      {
+        "year": "1967",
+        "event": "Gave his first public UFO lecture at a college in Montana, beginning what would become a lifelong career of over 700 campus lectures across North America."
+      },
+      {
+        "year": "1978",
+        "event": "Located and conducted the first recorded interview with Jesse Marcel Sr., the Army Air Force intelligence officer who handled Roswell debris. This interview reignited public and media interest in Roswell after three decades of silence."
+      },
+      {
+        "year": "1980",
+        "event": "Co-authored 'The Roswell Incident' (with Charles Berlitz and William Moore) - the first book dedicated to the Roswell crash, establishing it as the central case in crash-retrieval research."
+      },
+      {
+        "year": "1987",
+        "event": "Received the leaked MJ-12 briefing documents via researcher William Moore and conducted extensive document analysis; coined the phrase 'Cosmic Watergate' to describe government UAP concealment."
+      },
+      {
+        "year": "1996",
+        "event": "Published 'Top Secret/MAJIC,' the most comprehensive analysis of the MJ-12 documents. While defending their authenticity, Friedman applied rigorous historical methodology that forced even critics to engage substantively."
+      },
+      {
+        "year": "2008",
+        "event": "Published 'Flying Saucers and Science,' applying his physics background to analyze UAP propulsion, interstellar travel feasibility, and the scientific case for extraterrestrial origin."
+      },
+      {
+        "year": "May 2019",
+        "event": "Died at age 84 in Fredericton, New Brunswick. He had given his final public lecture just weeks before his death, consistent with a career that never stopped until the end."
+      }
     ]
   },
-
   "associated_people": [
     {
       "id": "j-allen-hynek",
@@ -62,7 +84,6 @@
       "relationship": "Dolan succeeded Friedman as the primary historian of the national security state's relationship with UAP. Friedman mentored Dolan's early research and endorsed his foundational two-volume work on the subject."
     }
   ],
-
   "disclosures": [
     {
       "date": "1980",
@@ -93,7 +114,6 @@
       "notes": "Final major publication before his death; focused on the 1952 Washington D.C. UFO wave and the military's shoot-to-intercept orders. Based on previously overlooked Air Force documents."
     }
   ],
-
   "sources": [
     {
       "title": "Stanton Friedman Official Website",
@@ -118,6 +138,24 @@
       "url": "https://en.wikipedia.org/wiki/Stanton_Friedman",
       "type": "Reference",
       "notes": "Biographical overview and publication bibliography"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "j-allen-hynek",
+      "node_label": "J. Allen Hynek",
+      "relationship": "Both were the foremost scientific researchers in the civilian UAP field; Friedman's FOIA document analysis complemented Hynek's scientific case classification work",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Kean's investigative methodology built on Friedman's archival precedent; both prioritized documentary evidence and named, credentialed sources",
+      "connection_type": "collaboration"
     }
   ]
 }
