@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ReactFlow,
   Background,
@@ -86,11 +86,21 @@ interface CareerNodeData extends Record<string, unknown> {
   eventType: CareerEventType;
 }
 
+// Payload emitted when a truncated node is clicked
+interface SelectedConnData {
+  nodeLabel: string;
+  relationship: string;
+  connectionType: ConnectionType;
+  nodeType: string;
+}
+
 interface ConnectionNodeData extends Record<string, unknown> {
   nodeLabel: string;
   relationship: string;
   connectionType: ConnectionType;
   nodeType: string;
+  // Stable ref so ConnectionNode can call back without stale-closure issues
+  onSelectRef: React.MutableRefObject<(d: SelectedConnData) => void>;
 }
 
 // --------------------------------------------------------------------------
@@ -160,6 +170,24 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
     data.nodeType === 'program'  ? 'Program'  :
     data.nodeType === 'document' ? 'Document' : 'Event';
 
+  const relRef = useRef<HTMLParagraphElement>(null);
+  const [isTruncated, setIsTruncated] = useState(false);
+
+  useEffect(() => {
+    if (relRef.current) {
+      setIsTruncated(relRef.current.scrollHeight > relRef.current.clientHeight);
+    }
+  }, []);
+
+  const handleClick = useCallback(() => {
+    data.onSelectRef.current({
+      nodeLabel:      data.nodeLabel,
+      relationship:   data.relationship,
+      connectionType: data.connectionType,
+      nodeType:       data.nodeType,
+    });
+  }, [data]);
+
   return (
     <>
       <Handle type="target" position={Position.Bottom} style={{ background: style.color, border: 'none', width: 6, height: 6 }} id="bottom" />
@@ -167,6 +195,7 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
       <Handle type="source" position={Position.Left}   style={{ background: style.color, border: 'none', width: 6, height: 6 }} />
       <Handle type="source" position={Position.Right}  style={{ background: style.color, border: 'none', width: 6, height: 6 }} />
       <div
+        onClick={isTruncated ? handleClick : undefined}
         style={{
           background: 'rgba(15,23,42,0.95)',
           border: `1.5px dashed ${style.color}`,
@@ -174,6 +203,8 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
           padding: '6px 10px',
           width: CON_WIDTH,
           boxShadow: `0 0 10px ${style.color}1a`,
+          cursor: isTruncated ? 'pointer' : 'default',
+          position: 'relative',
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 5, marginBottom: 3 }}>
@@ -211,6 +242,7 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
           {data.nodeLabel}
         </p>
         <p
+          ref={relRef}
           style={{
             fontSize: 10,
             color: '#94a3b8',
@@ -224,6 +256,26 @@ function ConnectionNode({ data }: { data: ConnectionNodeData }) {
         >
           {data.relationship}
         </p>
+        {/* Expand affordance - only shown when text is clipped */}
+        {isTruncated && (
+          <div style={{
+            marginTop: 4,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 3,
+          }}>
+            <span style={{
+              fontSize: 8,
+              color: style.color,
+              fontWeight: 700,
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase',
+            }}>
+              tap for more
+            </span>
+            <span style={{ fontSize: 9, color: style.color }}>↗</span>
+          </div>
+        )}
       </div>
     </>
   );
@@ -317,6 +369,7 @@ export interface CareerConnection {
 function buildElements(
   keyEvents: KeyEvent[],
   connections: CareerConnection[],
+  onSelectRef: React.MutableRefObject<(d: SelectedConnData) => void>,
 ): { nodes: Node[]; edges: Edge[] } {
   const hasConn = connections.length > 0;
   const careerY  = hasConn ? CAREER_Y : 0;
@@ -345,7 +398,7 @@ function buildElements(
   if (!hasConn) return { nodes: careerNodes, edges: careerEdges };
 
   // --- Connection nodes ---
-  // figures / documents → upper tier; programs / events → lower tier
+  // figures / documents -> upper tier; programs / events -> lower tier
   const upperByEvent: Record<number, CareerConnection[]> = {};
   const lowerByEvent: Record<number, CareerConnection[]> = {};
 
@@ -377,10 +430,11 @@ function buildElements(
           type: 'connection',
           position: { x: startX + ci * CON_STEP, y: tierY },
           data: {
-            nodeLabel: conn.node_label,
-            relationship: conn.relationship,
+            nodeLabel:      conn.node_label,
+            relationship:   conn.relationship,
             connectionType: conn.connection_type,
-            nodeType: conn.node_type,
+            nodeType:       conn.node_type,
+            onSelectRef,
           } as ConnectionNodeData,
         });
 
@@ -418,22 +472,24 @@ interface Props {
 }
 
 export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: Props) {
-  const { nodes: initNodes, edges: initEdges } = buildElements(keyEvents, careerConnections);
+  const [selectedConn, setSelectedConn] = useState<SelectedConnData | null>(null);
+
+  // Stable ref so ConnectionNode click handlers never go stale
+  const onSelectRef = useRef<(d: SelectedConnData) => void>(null!);
+  onSelectRef.current = setSelectedConn;
+
+  const { nodes: initNodes, edges: initEdges } = useMemo(
+    () => buildElements(keyEvents, careerConnections, onSelectRef),
+    // onSelectRef is a stable object (useRef), safe to omit from deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [keyEvents, careerConnections],
+  );
+
   const [nodes, , onNodesChange] = useNodesState(initNodes);
   const [edges, , onEdgesChange] = useEdgesState(initEdges);
-  const [hoveredConn, setHoveredConn] = useState<ConnectionNodeData | null>(null);
 
   const onInit = useCallback(() => {/* fitView handles initial positioning */}, []);
-
-  const onNodeMouseEnter = useCallback((_: React.MouseEvent, node: Node) => {
-    if (node.type === 'connection') {
-      setHoveredConn(node.data as ConnectionNodeData);
-    }
-  }, []);
-
-  const onNodeMouseLeave = useCallback(() => {
-    setHoveredConn(null);
-  }, []);
+  const onPaneClick = useCallback(() => setSelectedConn(null), []);
 
   const hasConn = careerConnections.length > 0;
   const connTypes = careerConnections.map(c => c.connection_type);
@@ -458,8 +514,7 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
         onInit={onInit}
-        onNodeMouseEnter={onNodeMouseEnter}
-        onNodeMouseLeave={onNodeMouseLeave}
+        onPaneClick={onPaneClick}
         fitView
         fitViewOptions={{ padding: 0.2 }}
         minZoom={0.1}
@@ -476,9 +531,9 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
         />
       </ReactFlow>
 
-      {/* Hover tooltip - full relationship text */}
-      {hoveredConn && (() => {
-        const connStyle = CONN_TYPE_STYLES[hoveredConn.connectionType] ?? { color: '#64748b', label: 'Connection' };
+      {/* Detail panel - shown only when a truncated node was clicked */}
+      {selectedConn && (() => {
+        const connStyle = CONN_TYPE_STYLES[selectedConn.connectionType] ?? { color: '#64748b', label: 'Connection' };
         return (
           <div
             style={{
@@ -492,10 +547,10 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
               padding: '10px 14px',
               maxWidth: 380,
               backdropFilter: 'blur(4px)',
-              pointerEvents: 'none',
               boxShadow: `0 0 16px ${connStyle.color}33`,
             }}
           >
+            {/* Header row with close button */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 5 }}>
               <span style={{
                 fontSize: 9,
@@ -506,15 +561,32 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
                 background: '#1e293b',
                 padding: '2px 6px',
                 borderRadius: 3,
+                flexShrink: 0,
               }}>
                 {connStyle.label}
               </span>
-              <p style={{ fontSize: 12, fontWeight: 700, color: '#e2e8f0', margin: 0 }}>
-                {hoveredConn.nodeLabel}
+              <p style={{ fontSize: 12, fontWeight: 700, color: '#e2e8f0', margin: 0, flex: 1 }}>
+                {selectedConn.nodeLabel}
               </p>
+              <button
+                onClick={() => setSelectedConn(null)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: '#475569',
+                  fontSize: 14,
+                  cursor: 'pointer',
+                  lineHeight: 1,
+                  padding: '0 2px',
+                  flexShrink: 0,
+                }}
+                aria-label="Close"
+              >
+                ×
+              </button>
             </div>
             <p style={{ fontSize: 11, color: '#94a3b8', margin: 0, lineHeight: 1.55 }}>
-              {hoveredConn.relationship}
+              {selectedConn.relationship}
             </p>
           </div>
         );
