@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import ProfileShell from '../shared/ProfileShell';
 import PersonCard from '../shared/PersonCard';
 import ClaimsStatusBar from '../shared/ClaimsStatusBar';
+import CredibilityBalance from '../shared/CredibilityBalance';
 import { statusConfig } from '../shared/profileConstants';
 import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
@@ -95,7 +96,14 @@ interface ProfileData {
 
 // --- Tab identifiers ---
 
-type TabId = 'overview' | 'timeline' | 'career-flow' | 'feature' | 'people' | 'disclosures' | 'sources';
+type TabId = 'overview' | 'timeline' | 'career-flow' | 'feature' | 'people' | 'disclosures' | 'sources' | 'assessment';
+
+// --- Credibility ---
+
+interface Credibility {
+  supporting: string[];
+  contradicting: string[];
+}
 
 // --- Helpers ---
 
@@ -428,6 +436,85 @@ const GenericClaimsTab: FC<{ claims: Claim[] }> = ({ claims }) => (
   </div>
 );
 
+// --- Assessment tab ---
+
+interface GenericAssessmentTabProps {
+  credibility: Credibility;
+  sources: Source[];
+}
+
+const GenericAssessmentTab: FC<GenericAssessmentTabProps> = ({ credibility, sources }) => (
+  <div className="space-y-6">
+    <CredibilityBalance
+      supporting={credibility.supporting.length}
+      contradicting={credibility.contradicting.length}
+    />
+
+    <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
+      <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Methodology Note</p>
+      <p className="text-sm text-amber-900 dark:text-amber-100">
+        This section presents documented arguments for and against this figure&apos;s credibility based on verifiable
+        institutional responses, journalistic findings, and official positions. DECUR does not adjudicate these
+        claims; they are presented for methodological transparency.
+      </p>
+    </div>
+
+    <div>
+      <h4 className="text-sm font-semibold text-green-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+        <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+        Supporting Arguments
+      </h4>
+      <div className="space-y-2">
+        {credibility.supporting.map((item, i) => (
+          <div key={i} className="flex gap-2 border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-3">
+            <span className="text-green-500 mt-0.5 shrink-0">&#10003;</span>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h4 className="text-sm font-semibold text-red-600 uppercase tracking-wide mb-3 flex items-center gap-2">
+        <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
+        Arguments Against
+      </h4>
+      <div className="space-y-2">
+        {credibility.contradicting.map((item, i) => (
+          <div key={i} className="flex gap-2 border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-3">
+            <span className="text-red-400 mt-0.5 shrink-0">&#10007;</span>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {sources.length > 0 && (
+      <div>
+        <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Sources</h4>
+        <div className="space-y-2">
+          {sources.map((src, i) => (
+            <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+              <div>
+                <p className="text-sm font-medium text-gray-800 dark:text-gray-200">{src.title}</p>
+                <p className="text-xs text-gray-400 mt-0.5 capitalize">
+                  {src.type?.replace(/-/g, ' ')}{src.notes ? ` · ${src.notes}` : ''}
+                </p>
+              </div>
+              {src.url && (
+                <a href={src.url} target="_blank" rel="noopener noreferrer"
+                  className="text-xs text-primary hover:underline whitespace-nowrap shrink-0">
+                  View &#8599;
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+);
+
 // --- Main component ---
 
 const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, backLabel }) => {
@@ -457,6 +544,9 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
   });
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const careerConnections: any[] = data.career_connections ?? [];
+  const credibility: Credibility | null = data.credibility
+    ? { supporting: data.credibility.supporting ?? [], contradicting: data.credibility.contradicting ?? [] }
+    : null;
   const feature = detectFeature(data);
 
   const relatedCases = (casesData as Array<{
@@ -475,6 +565,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
     ...(associatedPeople.length > 0 ? [{ id: 'people' as TabId, label: 'People' }] : []),
     ...(disclosures.length > 0 ? [{ id: 'disclosures' as TabId, label: 'Disclosures' }] : []),
     ...(sources.length > 0 ? [{ id: 'sources' as TabId, label: 'Sources' }] : []),
+    ...(credibility ? [{ id: 'assessment' as TabId, label: 'Assessment' }] : []),
   ];
 
   const [activeTab, setActiveTab] = useState<TabId>('overview');
@@ -506,6 +597,9 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
         return <DisclosuresTab disclosures={disclosures} />;
       case 'sources':
         return <SourcesTab sources={sources} />;
+      case 'assessment':
+        if (!credibility) return null;
+        return <GenericAssessmentTab credibility={credibility} sources={sources} />;
     }
   };
 
