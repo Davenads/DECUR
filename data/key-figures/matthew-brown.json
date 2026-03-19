@@ -278,5 +278,25 @@
         "The 'international cabal' framing is analytical inference rather than direct documentary evidence"
       ]
     }
+  },
+  "credibility": {
+    "supporting": [
+      "State Department pre-publication review formally cleared the report ('You may proceed') - confirming Brown was a real government employee and his documented claims did not constitute unauthorized disclosure",
+      "Congressional record submission (HHRG-118-GO12-20241113-SD003) is publicly accessible at congress.gov",
+      "Demonstrated expert-level, internally consistent command of SAPCO, JWICS, SCI facility rules, SAP compartmentation, and interagency processes",
+      "Vetted by Corbell over a 2+ month multi-meeting process before congressional introduction",
+      "Brought before multiple cleared Congressional members in private - none have publicly repudiated him",
+      "Connected to David Grusch via referral; Grusch has a formally filed IC Inspector General complaint",
+      "No financial gain; acknowledged his government career 'has been dead for years'",
+      "Appropriate epistemic humility throughout - distinguishes firsthand observation from inference"
+    ],
+    "contradicting": [
+      "The original IMCON document has not been publicly released; provenance depends entirely on Brown's account",
+      "Dr. Sean Kirkpatrick (former AARO Director) publicly called Brown's claims 'the biggest bunch of bullshit I've heard today'",
+      "DoD has denied any USAP named IMMACULATE CONSTELLATION exists",
+      "No major news outlet has independently verified the core claims",
+      "Brown has not testified under oath before Congress as of September 2025",
+      "The 'international cabal' framing is analytical inference rather than direct documentary evidence"
+    ]
   }
 }
