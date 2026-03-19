@@ -124,28 +124,52 @@
   ],
   "career_connections": [
     {
-      "event": "Blue Book file review and critique (1967)",
-      "connected_to": "edward-ruppelt",
-      "type": "figure",
-      "notes": "Used Ruppelt's candid insider account to demonstrate internal Blue Book contradictions and systematic misclassification."
+      "event_index": 1,
+      "node_type": "program",
+      "node_id": "nicap",
+      "node_label": "NICAP",
+      "relationship": "Served as consulting researcher providing scientific credibility to NICAP's case documentation and congressional advocacy from 1966 onward.",
+      "connection_type": "institutional"
     },
     {
-      "event": "Congressional testimony before House Committee on Science and Astronautics (1968)",
-      "connected_to": "j-allen-hynek",
-      "type": "figure",
-      "notes": "Both advocated for scientific seriousness on UAP before Congress; Hynek cited McDonald as an influence on his own public position."
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Project Blue Book",
+      "relationship": "Accessed Blue Book files through contacts in 1967; demonstrated that the Air Force was systematically misclassifying unexplained cases as explained.",
+      "connection_type": "institutional"
     },
     {
-      "event": "Science in Default - Condon Report critique (1969)",
-      "connected_to": "j-allen-hynek",
-      "type": "figure",
-      "notes": "Shared critique of Condon Committee methodology; Hynek's later accounts corroborated McDonald's analysis of the report's failures."
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "edward-ruppelt",
+      "node_label": "Capt. Edward Ruppelt",
+      "relationship": "Used Ruppelt's candid 1956 insider account as primary evidence of Blue Book's internal contradictions and predetermined debunking conclusions.",
+      "connection_type": "collaboration"
     },
     {
-      "event": "NICAP consulting research and UAP case documentation (1966-1971)",
-      "connected_to": "donald-keyhoe",
-      "type": "figure",
-      "notes": "Both leading voices of the era calling for scientific UAP investigation; McDonald provided academic credibility to NICAP's advocacy."
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "j-allen-hynek",
+      "node_label": "Dr. J. Allen Hynek",
+      "relationship": "Both testified before Congress advocating for scientific seriousness on UAP; Hynek later corroborated McDonald's critique of the Air Force's handling of cases.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "program",
+      "node_id": "condon-report-1969",
+      "node_label": "Condon Report (1969)",
+      "relationship": "'Science in Default' was a direct analytical critique demonstrating the Condon Report had ignored or mishandled the strongest cases in its own sample.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "donald-keyhoe",
+      "node_label": "Maj. Donald Keyhoe",
+      "relationship": "McDonald's academic credibility strengthened NICAP's position under Keyhoe; both were the era's most influential voices calling for genuine scientific UAP inquiry.",
+      "connection_type": "collaboration"
     }
   ],
   "disclosures": [
