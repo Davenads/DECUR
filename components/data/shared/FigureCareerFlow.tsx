@@ -14,6 +14,7 @@ import {
   useNodeId,
   type Node,
   type Edge,
+  type ReactFlowInstance,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
@@ -461,6 +462,13 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
   const [nodes, , onNodesChange] = useNodesState(initNodes);
   const [edges, , onEdgesChange] = useEdgesState(initEdges);
 
+  // Deferred fitView — fires after ReactFlow measures custom nodes (ResizeObserver cycle).
+  // The built-in fitView prop can fire before node dimensions are known on mobile,
+  // leaving the viewport at scale=1 and clipping nodes that are off the initial screen.
+  const onInit = useCallback((instance: ReactFlowInstance) => {
+    requestAnimationFrame(() => instance.fitView({ padding: 0.2 }));
+  }, []);
+
   // onNodeClick fixes the pointer-events: none issue — React Flow keeps pointer events
   // active on nodes when this prop is provided, allowing inner cursor/hover styles to work too.
   const onNodeClick = useCallback((_: React.MouseEvent, node: Node) => {
@@ -491,6 +499,7 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
         nodeTypes={nodeTypes}
         onNodeClick={onNodeClick}
         onPaneClick={onPaneClick}
+        onInit={onInit}
         fitView
         fitViewOptions={{ padding: 0.2 }}
         minZoom={0.1}
