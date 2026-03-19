@@ -464,6 +464,13 @@ export const graphData: GraphData = {
     { source: 'colm-kelleher',   target: 'aawsap',                  label: 'Senior researcher under BAASS AAWSAP contract' },
     { source: 'colm-kelleher',   target: 'kit-green',               label: 'Parallel AAWSAP researchers on biological/medical UAP effects' },
 
+    // Annie Jacobsen connections
+    { source: 'annie-jacobsen',  target: 'hal-puthoff',             label: 'Primary named source for Phenomena (2017); Star Gate account' },
+    { source: 'annie-jacobsen',  target: 'leslie-kean',             label: 'Fellow UAP investigative journalists; parallel source networks' },
+    { source: 'annie-jacobsen',  target: 'ross-coulthart',          label: 'Fellow UAP investigative journalists; complementary book and broadcast tracks' },
+    { source: 'annie-jacobsen',  target: 'david-grusch',            label: 'UFO (2023) independently corroborates Grusch crash retrieval claims' },
+    { source: 'annie-jacobsen',  target: 'aawsap',                  label: 'Documented AAWSAP program structure and scope in UFO (2023)' },
+
     // Matthew Brown connections
     { source: 'matthew-brown',   target: 'jeremy-corbell',          label: 'Congressional submission vehicle for IMCON report' },
     { source: 'matthew-brown',   target: 'david-grusch',            label: 'Mutual defense-intelligence whistleblower referral' },

@@ -1008,5 +1008,19 @@
     "data_file": "colm-kelleher.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "annie-jacobsen",
+    "name": "Annie Jacobsen",
+    "aliases": ["A. Jacobsen"],
+    "role": "National Security Journalist; Author - Area 51, Phenomena, UFO",
+    "period": "2004-present",
+    "affiliation": "Los Angeles Times / Little, Brown and Company",
+    "summary": "Investigative journalist whose three UAP-adjacent books represent the most sourced mainstream journalism on U.S. government anomalous research programs. 'Area 51' (2011) drew on 74 firsthand sources. 'Phenomena' (2017) documented the CIA/DIA Star Gate remote viewing program through primary sources including Hal Puthoff. 'UFO' (2023) is the most sourced journalistic account of UAP program infrastructure, independently corroborating Grusch-era whistleblower disclosures from a completely different government source network.",
+    "status": "detailed",
+    "tags": ["journalism", "area-51", "star-gate", "aawsap", "uap-programs", "mainstream-media", "princeton", "little-brown"],
+    "data_file": "annie-jacobsen.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]
