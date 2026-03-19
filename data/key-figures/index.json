@@ -1022,5 +1022,19 @@
     "data_file": "annie-jacobsen.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "jim-semivan",
+    "name": "Jim Semivan",
+    "aliases": ["James Semivan"],
+    "role": "CIA Clandestine Services Officer (ret.); SOL Foundation Co-founder",
+    "period": "1983-2007 (CIA); 2017-present",
+    "affiliation": "Central Intelligence Agency / SOL Foundation",
+    "summary": "Former CIA Clandestine Services officer with 25 years of operational experience who has publicly disclosed a personal UAP/NHI encounter he and his wife experienced in their home. Co-founded the SOL Foundation with Dr. Garry Nolan to bridge intelligence community awareness of the phenomenon with rigorous academic scientific inquiry. A founding advisory board member of To The Stars Academy, Semivan represents a rare intersection of career intelligence operations experience and public UAP disclosure advocacy.",
+    "status": "detailed",
+    "tags": ["cia", "intelligence-community", "sol-foundation", "ttsa", "disclosure", "consciousness", "nhi"],
+    "data_file": "jim-semivan.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

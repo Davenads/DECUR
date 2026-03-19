@@ -464,6 +464,16 @@ export const graphData: GraphData = {
     { source: 'colm-kelleher',   target: 'aawsap',                  label: 'Senior researcher under BAASS AAWSAP contract' },
     { source: 'colm-kelleher',   target: 'kit-green',               label: 'Parallel AAWSAP researchers on biological/medical UAP effects' },
 
+    // Jim Semivan connections
+    { source: 'jim-semivan',     target: 'garry-nolan',             label: 'Co-founded SOL Foundation (2022) to bridge intelligence community UAP knowledge with academic research' },
+    { source: 'jim-semivan',     target: 'luis-elizondo',           label: 'Colleagues on TTSA advisory board; shared intelligence community background and public disclosure advocacy' },
+    { source: 'jim-semivan',     target: 'chris-mellon',            label: 'TTSA advisory board colleagues; both advocate for congressional UAP transparency' },
+    { source: 'jim-semivan',     target: 'ttsa',                    label: 'Advisory board member from founding (2017); provided intelligence community perspective on UAP programs' },
+    { source: 'jim-semivan',     target: 'sol-foundation',          label: 'Co-founded and co-organizes SOL Foundation; primary IC perspective within the organization' },
+    { source: 'jim-semivan',     target: 'tim-gallaudet',           label: 'SOL Foundation co-organizers; both bring senior government service backgrounds to UAP scientific inquiry' },
+    { source: 'jim-semivan',     target: 'karl-nell',               label: 'SOL Foundation colleagues; both former national security figures now publicly advocating for UAP transparency' },
+    { source: 'jim-semivan',     target: 'hal-puthoff',             label: 'TTSA colleagues with overlapping interest in consciousness-interactive aspects of UAP phenomena' },
+
     // Annie Jacobsen connections
     { source: 'annie-jacobsen',  target: 'hal-puthoff',             label: 'Primary named source for Phenomena (2017); Star Gate account' },
     { source: 'annie-jacobsen',  target: 'leslie-kean',             label: 'Fellow UAP investigative journalists; parallel source networks' },

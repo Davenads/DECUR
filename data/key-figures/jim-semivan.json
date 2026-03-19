@@ -1,0 +1,251 @@
+{
+  "profile": {
+    "id": "jim-semivan",
+    "name": "Jim Semivan",
+    "aliases": ["James Semivan"],
+    "born": "Not publicly disclosed",
+    "died": null,
+    "roles": [
+      "CIA Clandestine Services Officer (ret.)",
+      "Co-founder, SOL Foundation",
+      "Advisory Board Member, To The Stars Academy"
+    ],
+    "service_period": "1983-2007 (CIA); 2017-present (public advocacy)",
+    "organizations": [
+      "Central Intelligence Agency",
+      "To The Stars Academy",
+      "SOL Foundation"
+    ],
+    "clearance": "TS/SCI (former)",
+    "summary": "Former CIA Clandestine Services officer with 25 years of operational experience who has publicly disclosed a personal UAP/NHI encounter he and his wife experienced in their home. One of the co-founders of the SOL Foundation alongside Dr. Garry Nolan, Semivan has positioned himself as a bridge between the intelligence community's internal awareness of the phenomenon and the academic scientific community. His willingness to speak publicly about anomalous personal experiences while maintaining credibility within IC veteran networks makes him a distinctive figure in the modern UAP disclosure landscape.",
+    "education": [
+      "B.A. - Bucknell University"
+    ],
+    "early_career": [
+      "Joined the CIA in 1983, entering the Clandestine Services - the agency's human intelligence and covert operations directorate",
+      "Conducted overseas operational work across multiple regions over a 25-year career, reaching senior positions within the directorate before retirement in 2007",
+      "Maintained active connections with the intelligence community network following retirement, later intersecting with colleagues including Luis Elizondo and others involved in UAP disclosure advocacy"
+    ],
+    "key_events": [
+      {
+        "year": "1983",
+        "event": "Joined the CIA Clandestine Services, beginning a 25-year career in human intelligence operations. The specific nature and scope of his operational assignments remain classified."
+      },
+      {
+        "year": "2007",
+        "event": "Retired from the CIA after 25 years of service in the Clandestine Services directorate."
+      },
+      {
+        "year": "2017",
+        "event": "Joined the To The Stars Academy of Arts and Science (TTSA) advisory board at its founding alongside Luis Elizondo, Hal Puthoff, and Chris Mellon. Provided an intelligence community operational perspective to complement the scientific and policy expertise of other board members."
+      },
+      {
+        "year": "2018",
+        "event": "Began making public appearances on podcasts and in interviews disclosing that he and his wife had experienced a direct, anomalous encounter with what he describes as a non-human intelligence presence in their home. The encounter reportedly involved physical and perceptual effects on both witnesses. Described the experience as transformative and career-defining in retrospect."
+      },
+      {
+        "year": "2022",
+        "event": "Co-founded the SOL Foundation with Dr. Garry Nolan and colleagues including Karl Nell and Tim Gallaudet, establishing it as a nonprofit organization dedicated to applying rigorous scientific methodology to the study of UAP and non-human intelligence."
+      },
+      {
+        "year": "Oct 2023",
+        "event": "The SOL Foundation hosted its inaugural academic symposium at Stanford University, co-organized by Semivan and Nolan. The event brought together scientists, former government officials, and intelligence community veterans for structured academic presentations on UAP phenomena - representing a deliberate effort to institutionalize UAP research within mainstream academia."
+      },
+      {
+        "year": "Nov 2024",
+        "event": "The SOL Foundation hosted its second annual symposium at Stanford University, continuing the pattern of academic-grade UAP research presentations with a focus on consciousness, physical evidence, and government program transparency."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "personal-nhi-encounter",
+      "category": "personal experience",
+      "claim": "Semivan and his wife experienced a direct encounter with a non-human intelligence presence in their home - an event involving anomalous perceptual and physical effects that he describes as unambiguously non-human in origin and unlike any known psychological or environmental phenomenon.",
+      "status": "unverified",
+      "notes": "Semivan has described this encounter in multiple public interviews consistently, and his wife has corroborated the experience. However, no independent physical evidence has been presented, and the account is by nature unfalsifiable. The encounter predates his public advocacy work. His willingness to make this claim publicly, given his professional background, lends it more weight than typical anonymous witness accounts, but it cannot be independently verified."
+    },
+    {
+      "id": "cia-uap-awareness",
+      "category": "government program",
+      "claim": "The CIA has maintained significant internal awareness of the UAP phenomenon throughout his career, though knowledge was strictly compartmentalized and not part of general operational culture. Senior officials were aware at levels not reflected in public statements.",
+      "status": "partially-verified",
+      "notes": "Semivan has spoken to this in general terms without citing specific programs or documents. The claim is broadly consistent with disclosures from other intelligence community veterans including Kit Green (who maintained the CIA's 'Weird Desk' UAP files) and David Grusch (whose ICIG complaint cites CIA awareness). AARO's Historical Record Report disputes broad CIA UAP program involvement. The compartmentalized nature of any such awareness makes independent verification inherently difficult."
+    },
+    {
+      "id": "sol-foundation-scientific-bridge",
+      "category": "program existence",
+      "claim": "The SOL Foundation represents a legitimate and institutionally credible attempt to bridge the intelligence community's internal knowledge of the UAP phenomenon with the tools and credibility of mainstream academic scientific inquiry - creating a durable institutional structure for UAP research that does not depend on government cooperation.",
+      "status": "partially-verified",
+      "notes": "The SOL Foundation's legitimacy as a nonprofit research institution is verifiable - it has held symposia at Stanford, published proceedings, and attracted credentialed scientists and former officials as participants. Whether it successfully bridges IC knowledge with academic research, as Semivan claims, is an ongoing question rather than a settled fact. The institutional structure is real; the epistemic bridge it claims to build is aspirational."
+    },
+    {
+      "id": "phenomenon-consciousness-link",
+      "category": "phenomenon characteristics",
+      "claim": "The UAP phenomenon has a consciousness-interactive component - it responds to or engages with the awareness and mental state of witnesses in ways that standard physical measurement frameworks cannot capture. This is not a peripheral feature but a central characteristic of the phenomenon.",
+      "status": "unverified",
+      "notes": "This claim is consistent with a strain of UAP research associated with Jacques Vallee, John Mack, and the AAWSAP biological effects program, but it remains scientifically unverified and contested within the UAP research community itself. Semivan is not the only former intelligence official to make such claims - Elizondo has spoken to similar themes - but no peer-reviewed evidence supports it. The claim is inherently difficult to test under standard scientific conditions."
+    },
+    {
+      "id": "uap-genuine-mystery",
+      "category": "government awareness",
+      "claim": "The UAP phenomenon represents a genuine unresolved mystery that senior intelligence and defense officials take seriously in private while maintaining institutional silence publicly - a gap between private concern and public posture that Semivan describes as a defining feature of how the IC handles the subject.",
+      "status": "partially-verified",
+      "notes": "Multiple intelligence community veterans have made comparable claims about the gap between private and public official positions on UAP. Grusch's ICIG complaint, Elizondo's resignation letter, and congressional testimony from multiple figures corroborate the existence of serious internal attention to the phenomenon. The specific claim that senior officials universally view it as a genuine mystery cannot be independently verified, but the structural argument is consistent with a substantial body of testimony."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "25-year career in CIA Clandestine Services is verified through public statements and corroborated by colleagues including Luis Elizondo and others with overlapping IC networks",
+      "Willingness to make public statements about personal NHI encounters at significant professional and reputational cost - an intelligence community veteran publicly describing anomalous personal experiences is a notably high-cost disclosure",
+      "Co-founded the SOL Foundation with Dr. Garry Nolan, a Stanford immunologist with independent mainstream scientific credibility - lending institutional legitimacy to the organization beyond Semivan's own advocacy",
+      "Consistent, detailed, and non-escalating account of his personal encounter across multiple interviews over several years - the narrative has not inflated or become more dramatic over time",
+      "TTSA association with Luis Elizondo, Hal Puthoff, and Chris Mellon - colleagues whose backgrounds and credibility are separately established - provides corroborating social context for his intelligence community claims",
+      "Speaks at academic venues (Stanford symposia) rather than exclusively at UAP-focused conferences, suggesting an orientation toward institutional credibility rather than audience capture within the UAP community"
+    ],
+    "contradicting": [
+      "His personal encounter with a non-human intelligence is by definition unfalsifiable - no physical evidence has been presented and the account cannot be independently tested",
+      "No documentary evidence has been produced for his claims about CIA internal UAP awareness - the compartmentalized nature of any such programs makes independent verification structurally impossible",
+      "Claims about a consciousness-interactive component of the UAP phenomenon are speculative and scientifically unverified, placing him outside mainstream scientific consensus and into territory that is difficult to distinguish from anecdote",
+      "His CIA career involved work that is classified by definition - there is no publicly verifiable record of UAP-related work during his service, making it impossible to assess whether his operational experience is directly relevant to his UAP claims",
+      "His public advocacy is economically intertwined with the SOL Foundation, creating at least a structural incentive to maintain and expand the UAP discourse regardless of evidentiary developments"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Stanford immunologist; SOL Foundation scientific director",
+      "relationship": "Co-founded the SOL Foundation with Semivan, with Nolan providing the scientific and institutional credibility and Semivan providing the intelligence community perspective and organizational infrastructure. The partnership represents a deliberate bridging strategy between the IC and mainstream academia."
+    },
+    {
+      "id": "tim-gallaudet",
+      "name": "Tim Gallaudet",
+      "role": "Rear Admiral (ret.); former acting NOAA administrator; SOL Foundation affiliate",
+      "relationship": "Co-organizer of SOL Foundation symposia and affiliated with the foundation's mission. Both Gallaudet and Semivan bring senior government service backgrounds to the organization, reinforcing its institutional credibility beyond the scientific staff."
+    },
+    {
+      "id": "karl-nell",
+      "name": "Karl Nell",
+      "role": "Army Colonel (ret.); SOL Foundation co-founder",
+      "relationship": "Fellow SOL Foundation co-founder with a military and defense industry background. Both Nell and Semivan are former national security figures now publicly advocating for UAP transparency through the foundation's academic framework."
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP director; TTSA co-founder",
+      "relationship": "Colleagues on the TTSA advisory board from its founding in 2017. Both share intelligence community backgrounds and a history of public disclosure advocacy. Elizondo's Army counterintelligence background and Semivan's CIA Clandestine Services background represent complementary IC perspectives within the same disclosure network."
+    },
+    {
+      "id": "chris-mellon",
+      "name": "Chris Mellon",
+      "role": "Former Deputy Assistant Secretary of Defense for Intelligence; TTSA senior advisor",
+      "relationship": "TTSA advisory board colleagues who both advocate for congressional UAP transparency. Mellon's policy-focused approach and Semivan's operational IC background represent different but complementary angles within the TTSA network."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold Puthoff",
+      "role": "Physicist; TTSA co-founder; former Star Gate scientific director",
+      "relationship": "Overlapping scientific and organizational interests in anomalous phenomena research. Both were involved with TTSA from its founding and share an interest in the consciousness-interactive aspects of UAP phenomena - a theme that runs through Puthoff's remote viewing research and Semivan's personal encounter account."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Oct 2017",
+      "type": "written",
+      "title": "To The Stars Academy Advisory Board Announcement",
+      "outlet": "To The Stars Academy of Arts and Science",
+      "notes": "Named as a founding advisory board member of TTSA alongside Luis Elizondo, Hal Puthoff, Chris Mellon, and others - his first formal public association with a UAP disclosure organization."
+    },
+    {
+      "date": "2018",
+      "type": "podcast",
+      "title": "Somewhere in the Skies - Personal Encounter Disclosure",
+      "outlet": "Somewhere in the Skies (Ryan Sprague)",
+      "interviewer": "Ryan Sprague",
+      "notes": "One of Semivan's earlier podcast appearances in which he described his and his wife's personal encounter with what he characterizes as a non-human intelligence in their home. Among the first detailed public accounts of the experience."
+    },
+    {
+      "date": "Oct 2023",
+      "type": "speech",
+      "title": "SOL Foundation Inaugural Symposium - Stanford University",
+      "outlet": "SOL Foundation / Stanford University",
+      "notes": "Co-organized and spoke at the SOL Foundation's first academic symposium at Stanford. The event marked the foundation's debut as an institutional venue for UAP research, featuring presentations from scientists, former officials, and intelligence community veterans."
+    },
+    {
+      "date": "Nov 2024",
+      "type": "speech",
+      "title": "SOL Foundation Second Annual Symposium - Stanford University",
+      "outlet": "SOL Foundation / Stanford University",
+      "notes": "Co-organized and participated in the SOL Foundation's second Stanford symposium, continuing the pattern of academic-grade UAP research presentations. The symposium addressed consciousness, physical evidence, and government transparency as interconnected themes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "SOL Foundation - Official Website",
+      "url": "https://www.sol-foundation.org",
+      "type": "Organization",
+      "notes": "Primary source for SOL Foundation mission, founding team, symposium proceedings, and affiliated researchers."
+    },
+    {
+      "title": "To The Stars Academy - Advisory Board (archived)",
+      "url": "https://dpo.tothestars.com",
+      "type": "Organization",
+      "notes": "Original TTSA website documenting founding advisory board membership including Semivan."
+    },
+    {
+      "title": "Wikipedia - SOL Foundation",
+      "url": "https://en.wikipedia.org/wiki/Sol_Foundation",
+      "type": "structured-reference",
+      "notes": "Background on SOL Foundation founding, mission, and key personnel including Semivan's role."
+    },
+    {
+      "title": "Lex Fridman Podcast #410 - Garry Nolan (SOL Foundation context)",
+      "url": "https://www.youtube.com/watch?v=uTHCGg4ALjE",
+      "type": "Podcast",
+      "notes": "Extended discussion of the SOL Foundation's mission and Semivan's role as co-founder within the broader UAP disclosure context."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "TTSA advisory board colleagues from founding in 2017; shared intelligence community backgrounds and public disclosure advocacy missions.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 2,
+      "node_type": "figure",
+      "node_id": "chris-mellon",
+      "node_label": "Chris Mellon",
+      "relationship": "TTSA advisory board colleagues; both advocate for congressional UAP transparency from different IC vantage points.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "garry-nolan",
+      "node_label": "Garry Nolan",
+      "relationship": "Co-founded the SOL Foundation in 2022, with Nolan providing scientific leadership and Semivan providing IC perspective and organizational infrastructure.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "tim-gallaudet",
+      "node_label": "Tim Gallaudet",
+      "relationship": "SOL Foundation co-organizers; both bring senior government service backgrounds to the foundation's academic UAP research mission.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "karl-nell",
+      "node_label": "Karl Nell",
+      "relationship": "SOL Foundation co-founders; both former national security professionals now publicly advocating for UAP transparency through academic frameworks.",
+      "connection_type": "collaboration"
+    }
+  ]
+}
