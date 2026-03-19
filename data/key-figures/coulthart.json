@@ -171,5 +171,23 @@
       "relationship": "Broke the Barber story exclusively; presented never-before-seen retrieval footage and four corroborating veterans",
       "connection_type": "investigation"
     }
-  ]
+  ],
+
+  "credibility": {
+    "supporting": [
+      "Multiple Walkley Award winner - Australia's premier journalism prize - with 30+ years of verified mainstream media career covering asbestos industry cover-ups, MIA/POW investigations, and war crimes reporting",
+      "Was first to air David Grusch's crash retrieval allegations in major televised format in June 2023, demonstrating high-quality sourcing and timing that preceded and drove subsequent congressional attention",
+      "Author of 'In Plain Sight' (HarperCollins Australia, 2021), published by a major commercial press with editorial vetting, and relying primarily on named credentialed sources rather than anonymous claims",
+      "Multiple government and intelligence community sources have spoken to him on background across years of reporting, suggesting genuine insider access rather than a manufactured or single-source contact network",
+      "Specific reporting points - including Grusch's core allegations and AARO's structural limitations - have been corroborated by subsequent congressional testimony, official acknowledgments, and independent reporting",
+      "Consistent track record across his UAP reporting of not publishing claims that were subsequently proven completely false, distinguishing him from lower-credibility voices in the space"
+    ],
+    "contradicting": [
+      "Relies heavily on anonymous sources whose identities cannot be independently verified by readers or other journalists, making independent falsification structurally difficult",
+      "His work has increasingly operated within the UAP advocacy and disclosure community rather than maintaining the traditional journalistic distance expected of an investigative reporter covering a contested subject",
+      "Several claims in 'In Plain Sight' and in subsequent reporting have not been independently corroborated by other mainstream outlets, limiting external validation of key assertions",
+      "His association with figures whose credibility is more contested - including Steven Greer - has been noted by critics as potentially compromising editorial judgment and source selection",
+      "The structural nature of UAP reporting creates inherent falsification difficulties: compelling anonymous sources with claimed classified knowledge are by definition unverifiable, making it hard to distinguish genuine insider access from well-constructed fabrication"
+    ]
+  }
 }
