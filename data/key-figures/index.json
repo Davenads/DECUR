@@ -1204,5 +1204,19 @@
     "data_file": "peter-sturrock.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "nathan-twining",
+    "name": "Gen. Nathan Twining",
+    "aliases": ["Nathan Twining", "Nathan F. Twining", "General Twining"],
+    "role": "Chairman, Joint Chiefs of Staff (1957-1960); Chief of Staff, USAF (1953-1957)",
+    "period": "1947-1960",
+    "affiliation": "U.S. Air Force",
+    "summary": "Four-star General and Chairman of the Joint Chiefs who authored the pivotal 1947 'Twining Memo' - an authenticated government document concluding that flying saucers are 'real and not visionary or fictitious' and recommending the classified study group that became Projects Sign, Grudge, and Blue Book. The Twining Memo is one of the most significant official UAP documents in existence.",
+    "status": "detailed",
+    "tags": ["military", "air-force", "historical", "twining-memo", "project-blue-book", "jcs"],
+    "data_file": "nathan-twining.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

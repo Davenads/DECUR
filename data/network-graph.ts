@@ -745,5 +745,13 @@ export const graphData: GraphData = {
     { source: 'peter-sturrock', target: 'jacques-vallee',   label: 'Vallee participated in the Sturrock Panel (1997); both shared the view that UAP warranted rigorous physical evidence analysis' },
     { source: 'peter-sturrock', target: 'j-allen-hynek',    label: 'Contemporaries who both advocated for serious scientific UAP research; Hynek\'s classification system influenced Sturrock\'s evidence framework' },
     { source: 'peter-sturrock', target: 'hal-puthoff',      label: 'Both operated at the intersection of mainstream physics and anomalous phenomena research; Puthoff\'s work was within the broader scientific community Sturrock helped legitimize' },
+
+    // Nathan Twining connections
+    { source: 'nathan-twining', target: 'twining-memo-1947',   label: 'authored the foundational 1947 memo concluding flying saucers are real and recommending a permanent classified study group' },
+    { source: 'nathan-twining', target: 'project-sign',        label: 'Twining\'s 1947 memo directly recommended the study group that became Project Sign in 1948; AMC under Twining hosted Sign at Wright-Patterson' },
+    { source: 'nathan-twining', target: 'project-blue-book',   label: 'institutional originator; Twining\'s memo recommendation created the program lineage that became Project Sign, Grudge, and Blue Book' },
+    { source: 'nathan-twining', target: 'edward-ruppelt',      label: 'Ruppelt led Blue Book - the program whose institutional lineage traces directly to Twining\'s 1947 recommendation to establish a permanent classified study group' },
+    { source: 'nathan-twining', target: 'j-allen-hynek',       label: 'Hynek served as scientific consultant to Blue Book, the program Twining\'s memo created; Twining\'s institutional framework defined the official UAP inquiry Hynek spent decades working within' },
+    { source: 'nathan-twining', target: 'roswell-1947',        label: 'Twining was at Wright-Patterson AFB during the July 1947 Roswell recovery period; some researchers link his presence to material processing; his September 1947 memo followed the incident by weeks' },
   ],
 };

@@ -1,0 +1,179 @@
+{
+  "profile": {
+    "id": "nathan-twining",
+    "name": "Gen. Nathan Twining",
+    "aliases": ["Nathan Twining", "Nathan F. Twining", "General Twining", "Nathan Farragut Twining"],
+    "born": "October 11, 1897 - Monroe, Wisconsin",
+    "died": "March 29, 1982 - San Antonio, Texas",
+    "roles": [
+      "Commanding General, Air Materiel Command (1945-1947)",
+      "Chief of Staff, United States Air Force (1953-1957)",
+      "Chairman, Joint Chiefs of Staff (1957-1960)",
+      "Author - The Twining Memo (1947)"
+    ],
+    "service_period": "1918-1960 (U.S. Army / U.S. Air Force)",
+    "organizations": [
+      "U.S. Army Air Forces",
+      "U.S. Air Force",
+      "Air Materiel Command",
+      "Joint Chiefs of Staff"
+    ],
+    "clearance": "TS (highest available; former)",
+    "summary": "Four-star General and Chairman of the Joint Chiefs of Staff who authored the pivotal 1947 'Twining Memo' - an authenticated, now-declassified government document formally concluding that flying saucers are 'real and not visionary or fictitious.' His recommendations directly spawned Projects Sign, Grudge, and Blue Book. The Twining Memo is considered one of the most significant official UAP documents in existence.",
+    "education": [
+      "United States Military Academy, West Point - Class of 1918"
+    ],
+    "early_career": [
+      "Graduated West Point in 1918; served in the U.S. Army infantry and later aviation",
+      "Rose through Army Air Forces ranks during and after World War II",
+      "Commanded Air Materiel Command at Wright-Patterson AFB, Ohio from 1945 - overseeing testing and evaluation of advanced aircraft"
+    ],
+    "key_events": [
+      { "year": "Oct 1897", "event": "Born in Monroe, Wisconsin." },
+      { "year": "1915", "event": "Entered the United States Military Academy at West Point; graduated 1918." },
+      { "year": "1945", "event": "Appointed Commanding General of Air Materiel Command at Wright-Patterson AFB, Ohio - the primary U.S. facility for testing and evaluating advanced aircraft and recovered foreign material." },
+      { "year": "Jul 1947", "event": "The Roswell incident (July 8) occurred while Twining was reportedly at Wright-Patterson AFB. Some researchers link his presence there to material recovery and processing, though this remains contested." },
+      { "year": "Sep 1947", "event": "Authored the 'Twining Memo' - a classified letter to Brig. Gen. George Schulgen formally concluding that flying saucers are real, describing their flight characteristics in detail, and recommending a permanent classified study group." },
+      { "year": "1948", "event": "Project Sign established at Wright-Patterson AFB in direct response to the Twining Memo's recommendation. Twining's Air Materiel Command hosted and oversaw Sign." },
+      { "year": "1953", "event": "Appointed Chief of Staff of the United States Air Force by President Eisenhower." },
+      { "year": "1957", "event": "Appointed Chairman of the Joint Chiefs of Staff by President Eisenhower - the highest U.S. military officer. Served until 1960." },
+      { "year": "1965", "event": "The Twining Memo was declassified and entered the public record. It remains one of the most cited official UAP documents in history." },
+      { "year": "Mar 1982", "event": "Died in San Antonio, Texas." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "edward-ruppelt",
+      "name": "Edward Ruppelt",
+      "role": "Chief, Project Blue Book (1951-1953)",
+      "relationship": "Ruppelt led Project Blue Book, operating within the institutional framework that Twining's 1947 memo created. Twining's recommendation for a permanent classified study group was the direct institutional ancestor of the program Ruppelt overhauled and led."
+    },
+    {
+      "id": "j-allen-hynek",
+      "name": "J. Allen Hynek",
+      "role": "Scientific Consultant, Project Blue Book",
+      "relationship": "Hynek served as the primary scientific consultant to Project Blue Book - the program whose institutional lineage traces directly to Twining's 1947 recommendation. Hynek's decades of analysis were conducted within the framework Twining established."
+    },
+    {
+      "id": "donald-keyhoe",
+      "name": "Donald Keyhoe",
+      "role": "Marine Corps Major; NICAP Director; UAP Journalist",
+      "relationship": "Keyhoe investigated the government's UAP programs extensively and cited Twining's institutional approach as evidence of a systematic cover-up. Keyhoe's 1950 book referenced the government's internal assessments and the organizational structure Twining helped create."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Flying saucers are 'real and not visionary or fictitious.'",
+      "status": "verified",
+      "notes": "This is Twining's direct conclusion from the September 23, 1947 memo, which is an authenticated government document now held in the National Archives (Record Group 341, Entry 267). The document's authenticity is not disputed by any mainstream researcher or government agency."
+    },
+    {
+      "claim": "The observed phenomenon shows flight characteristics - including extreme rates of climb, maneuverability, and evasive action - beyond current U.S. aircraft capability as of 1947.",
+      "status": "verified",
+      "notes": "This is documented in the Twining Memo itself. The characteristics described (high speeds, unusual maneuverability, no visible exhaust, no sonic boom, metallic appearance) closely anticipate what became the modern '5 Observables' framework used by AATIP decades later."
+    },
+    {
+      "claim": "A classified, permanent study group should be established to investigate the phenomenon with high priority.",
+      "status": "verified",
+      "notes": "This recommendation was implemented directly. Project Sign was established in December 1948 in response, followed by Project Grudge (1949) and Project Blue Book (1952). The institutional lineage from Twining's recommendation to these programs is documented in USAF historical records."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Sep 1947",
+      "type": "declassification",
+      "title": "The Twining Memo (declassified 1965)",
+      "outlet": "National Archives, Record Group 341, Entry 267",
+      "notes": "Classified letter to Brig. Gen. George Schulgen formally concluding that flying saucers are real and recommending the establishment of a permanent classified study group. Declassified in 1965 and now available in the National Archives. Considered the foundational official UAP document and the direct precursor to Projects Sign, Grudge, and Blue Book."
+    },
+    {
+      "date": "1947-1960",
+      "type": "written",
+      "title": "AMC and JCS Classified Correspondence",
+      "outlet": "USAF Historical Research Agency; National Archives",
+      "notes": "Twining's classified correspondence as AMC commander and later CSAF and JCS chairman included references to aerial phenomena and classified program oversight. Portions have been declassified over time through FOIA requests and archival releases."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Four-star General and Chairman of the Joint Chiefs - the highest-ranking U.S. military officer of his era",
+      "The Twining Memo is an authenticated government document in the National Archives; its authenticity is not disputed",
+      "His conclusions were based on official Air Force intelligence assessments at the time, not personal speculation",
+      "He had no personal financial motive - the memo was a classified internal government communication, not a public statement",
+      "His recommendation was acted upon by the U.S. government; Project Sign was created in direct response",
+      "His access to the most classified military information of the era - including any recovered material at Wright-Patterson - is unquestioned"
+    ],
+    "contradicting": [
+      "The Twining Memo was written in 1947 and represents early-era intelligence assessment without modern scientific rigor or instrument data",
+      "Twining never made further public statements on the subject after the memo was declassified in 1965",
+      "Some researchers believe the memo was itself part of a disinformation effort designed to create or reinforce a false narrative",
+      "His later role as JCS chairman (1957-1960) coincided with the Robertson Panel's recommendation to actively debunk UAP sightings, raising questions about institutional consistency"
+    ]
+  },
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Project Blue Book",
+      "relationship": "Twining's 1947 memo directly recommended the study group that became Project Sign, Grudge, and ultimately Blue Book",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "edward-ruppelt",
+      "node_label": "Edward Ruppelt",
+      "relationship": "Ruppelt led Project Blue Book, the program that grew directly from Twining's institutional recommendation",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "j-allen-hynek",
+      "node_label": "J. Allen Hynek",
+      "relationship": "Hynek served as scientific consultant to the Blue Book program created by Twining's recommendation",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "case",
+      "node_id": "roswell",
+      "node_label": "Roswell Incident",
+      "relationship": "Twining was at Wright-Patterson AFB during the July 1947 Roswell recovery period; some researchers link his presence to material processing",
+      "connection_type": "investigative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Twining Memo (September 23, 1947)",
+      "url": "https://www.archives.gov/",
+      "type": "Declassified Government Document",
+      "notes": "National Archives, Record Group 341, Entry 267. The primary source document."
+    },
+    {
+      "title": "The Report on Unidentified Flying Objects",
+      "url": "https://www.amazon.com/Report-Unidentified-Flying-Objects/dp/B0007DNDKK",
+      "type": "Book",
+      "notes": "Edward Ruppelt (1956). Ruppelt's insider account of Project Blue Book, the program created by Twining's recommendation."
+    },
+    {
+      "title": "Behind the Flying Saucers",
+      "url": "https://www.amazon.com/Behind-Flying-Saucers-Donald-Keyhoe/dp/B000H3K5LQ",
+      "type": "Book",
+      "notes": "Donald Keyhoe (1950). Early civilian investigation citing the government's internal organizational structure."
+    },
+    {
+      "title": "USAF Historical Research Agency Records",
+      "url": "https://www.afhra.af.mil/",
+      "type": "Government Archive",
+      "notes": "Official USAF historical records covering Twining's service as AMC commander, CSAF, and JCS chairman."
+    },
+    {
+      "title": "Joint Chiefs of Staff Historical Records (1957-1960)",
+      "url": "https://www.jcs.mil/About/History/",
+      "type": "Government Archive",
+      "notes": "Official JCS historical documentation of Twining's tenure as Chairman."
+    }
+  ]
+}
