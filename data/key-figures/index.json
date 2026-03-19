@@ -1176,5 +1176,19 @@
     "data_file": "marco-rubio.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "mike-gallagher",
+    "name": "Rep. Mike Gallagher",
+    "aliases": ["Mike Gallagher", "Michael Gallagher", "Rep. Gallagher"],
+    "role": "U.S. Representative (WI-R); House Armed Services & Intelligence Committees",
+    "period": "2017-2024",
+    "affiliation": "U.S. House of Representatives",
+    "summary": "Former U.S. Representative and Marine Corps intelligence officer who co-chaired the landmark July 2023 House Oversight UAP hearing featuring David Grusch, Ryan Graves, and David Fravor, and co-authored the UAP Disclosure Act of 2023 with Sen. Chuck Schumer. His analytical, non-sensationalist approach gave the 2023 UAP hearings significant institutional credibility.",
+    "status": "detailed",
+    "tags": ["congress", "house", "legislation", "intelligence", "marine-corps"],
+    "data_file": "mike-gallagher.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

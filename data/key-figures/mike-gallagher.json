@@ -1,0 +1,227 @@
+{
+  "profile": {
+    "id": "mike-gallagher",
+    "name": "Rep. Mike Gallagher",
+    "aliases": ["Mike Gallagher", "Michael Gallagher", "Rep. Gallagher"],
+    "born": "Mar 3, 1984 - Green Bay, Wisconsin",
+    "died": null,
+    "roles": [
+      "U.S. Representative (R-WI), Wisconsin's 8th Congressional District (2017-2024)",
+      "Member, House Armed Services Committee",
+      "Member, House Permanent Select Committee on Intelligence",
+      "Co-chair, House Oversight UAP Hearing (July 2023)",
+      "Co-author, UAP Disclosure Act of 2023",
+      "Executive, Shield AI (2024-present)"
+    ],
+    "service_period": "2017-2024 (U.S. House of Representatives); 2024-present (private sector)",
+    "organizations": [
+      "U.S. House of Representatives",
+      "House Armed Services Committee",
+      "House Permanent Select Committee on Intelligence",
+      "U.S. Marine Corps (intelligence officer, 2006-2013)",
+      "Shield AI"
+    ],
+    "clearance": "Congressional oversight access (Intelligence Committee); TS/SCI (former, as Marine intelligence officer and House Intel member)",
+    "summary": "Former U.S. Representative from Wisconsin and Marine Corps intelligence officer who co-chaired the landmark July 26, 2023 House Oversight Subcommittee hearing on UAP - the most-watched congressional UAP hearing in history - featuring testimony from David Grusch, Ryan Graves, and David Fravor. Co-authored the UAP Disclosure Act of 2023 with Sen. Chuck Schumer. His analytical, non-sensationalist framing gave the 2023 UAP hearings significant institutional credibility.",
+    "education": [
+      "B.A., Princeton University, 2006",
+      "Ph.D. in Government, Georgetown University, 2013"
+    ],
+    "early_career": [
+      "Commissioned as a U.S. Marine Corps intelligence officer upon graduating from Princeton in 2006; served multiple tours with intelligence responsibilities before leaving active duty to pursue his doctorate",
+      "Earned a Ph.D. in Government from Georgetown University in 2013 with a dissertation focused on national security and deterrence theory; brings rare academic rigor to defense and intelligence policy",
+      "Worked as a staffer on the Senate Foreign Relations Committee and as a fellow at various security-focused think tanks before running for Congress in 2016"
+    ],
+    "key_events": [
+      {
+        "year": "Mar 1984",
+        "event": "Born March 3, 1984 in Green Bay, Wisconsin."
+      },
+      {
+        "year": "2006",
+        "event": "Graduated from Princeton University and commissioned as a U.S. Marine Corps intelligence officer; served multiple tours in the Marine Corps before leaving active duty."
+      },
+      {
+        "year": "2013",
+        "event": "Earned Ph.D. in Government from Georgetown University; transitioned to policy work including a Senate Foreign Relations Committee staff role."
+      },
+      {
+        "year": "2017",
+        "event": "Elected to U.S. House of Representatives, Wisconsin's 8th Congressional District; joined the House Armed Services Committee."
+      },
+      {
+        "year": "2021",
+        "event": "Appointed to the House Permanent Select Committee on Intelligence; began focused engagement with UAP through access to classified briefings unavailable to most members of Congress."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "Co-chaired the House Oversight Subcommittee hearing on UAP featuring David Grusch, Ryan Graves, and David Fravor; stated publicly that he believed the government had withheld UAP information from Congress and that a cover-up was plausible."
+      },
+      {
+        "year": "Nov 2023",
+        "event": "Co-authored the UAP Disclosure Act of 2023 with Sen. Chuck Schumer, calling for declassification of non-human intelligence related documents within 25 years; the act passed the Senate but was significantly weakened before final passage."
+      },
+      {
+        "year": "Apr 2024",
+        "event": "Resigned from Congress effective April 19, before the end of his term, amid reports of corporate job negotiations; the early departure was criticized as it deprived Republicans of a key national security voice."
+      },
+      {
+        "year": "2024",
+        "event": "Joined Shield AI, a defense technology company focused on autonomous systems for military applications, as an executive."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "UAP whistleblower, former NRO representative to UAP Task Force",
+      "relationship": "Grusch testified under oath at the July 2023 House Oversight hearing Gallagher co-chaired; Gallagher explicitly endorsed Grusch's credibility and stated the allegations warranted full investigation."
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "U.S. Navy F/A-18 pilot, UAP witness",
+      "relationship": "Graves testified at the July 2023 hearing Gallagher co-chaired about sustained Navy pilot UAP encounters; Gallagher publicly praised Graves' account as credible and indicative of a genuine national security concern."
+    },
+    {
+      "id": "david-fravor",
+      "name": "David Fravor",
+      "role": "Retired U.S. Navy Commander, Nimitz encounter witness",
+      "relationship": "Fravor testified at the July 2023 hearing about the 2004 Nimitz Tic-Tac encounter; Gallagher questioned Fravor extensively and treated his account as a serious data point requiring government explanation."
+    },
+    {
+      "id": "tim-burchett",
+      "name": "Tim Burchett",
+      "role": "U.S. Representative (R-TN)",
+      "relationship": "House colleagues who co-led UAP hearing efforts; both signed the 2023 UAP hearing request letter and collaborated on organizing the July 2023 House Oversight hearing."
+    },
+    {
+      "id": "chuck-schumer",
+      "name": "Chuck Schumer",
+      "role": "U.S. Senate Majority Leader (D-NY)",
+      "relationship": "Senate counterpart who co-authored the UAP Disclosure Act of 2023 with Gallagher; the bill passed the Senate before being significantly weakened in the House conference process."
+    }
+  ],
+  "claims": [
+    {
+      "id": "government-withheld-uap-info",
+      "category": "government program",
+      "claim": "The government has withheld UAP information from Congress.",
+      "status": "partially-verified",
+      "notes": "Gallagher stated this at the July 2023 hearing based on his intelligence committee access. David Grusch's sworn testimony corroborates this; AARO's own reports acknowledge access limitations to some legacy programs. The passage of UAP transparency legislation implies Congress itself believed it lacked adequate information."
+    },
+    {
+      "id": "grusch-credibility",
+      "category": "witness assessment",
+      "claim": "David Grusch's testimony is credible and warrants full government investigation.",
+      "status": "partially-verified",
+      "notes": "Gallagher explicitly endorsed Grusch's credibility at the July 2023 hearing. Grusch passed polygraph examinations, filed with the Inspector General of the Intelligence Community, and received whistleblower protection - all procedural indicators of credibility. The substance of Grusch's claims remains officially unverified."
+    },
+    {
+      "id": "non-human-material-custody",
+      "category": "government program",
+      "claim": "Non-human UAP material may exist in government or contractor custody.",
+      "status": "unverified",
+      "notes": "Gallagher has alluded to this possibility based on intelligence briefings and the testimony he received; he has not made direct firsthand claims. This mirrors Grusch's central allegation. No official government body has confirmed the existence of such material."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Former Marine Corps intelligence officer with genuine analytical and counterintelligence training - approaches UAP through a national security analytical lens rather than a belief framework",
+      "Served on the House Permanent Select Committee on Intelligence with access to classified UAP briefings unavailable to most members of Congress",
+      "Ran a disciplined, credible hearing process at the July 2023 Oversight hearing - the questioning was methodical, non-sensationalist, and focused on institutional accountability",
+      "Co-authored substantive legislation (UAP Disclosure Act of 2023) with bipartisan Senate support - his advocacy produced concrete legislative output",
+      "No extraordinary personal claims - he bases assertions on institutional access and sworn testimony rather than personal experience, which limits overreach",
+      "Ph.D. in Government from Georgetown indicates strong analytical and policy rigor beyond typical congressional backgrounds"
+    ],
+    "contradicting": [
+      "His early resignation from Congress before the end of his term to join Shield AI, a defense contractor, raised conflict-of-interest questions about the relationship between his UAP advocacy and subsequent private sector positioning",
+      "He has not made firsthand personal claims - his credibility is secondhand through classified briefings and testimony from others; his knowledge base cannot be independently assessed",
+      "The UAP Disclosure Act was significantly weakened before final passage, suggesting either insufficient political will, deliberate dilution by opponents, or that Gallagher's advocacy lacked the legislative muscle to protect the bill's key provisions"
+    ]
+  },
+  "career_connections": [
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Co-chaired the July 2023 House Oversight hearing where Grusch testified under oath about UAP reverse-engineering programs",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Graves testified at the July 2023 hearing Gallagher co-chaired; Gallagher praised Graves' account as credible",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "tim-burchett",
+      "node_label": "Tim Burchett",
+      "relationship": "House colleagues who co-led UAP hearing efforts; both signed the 2023 UAP hearing request letter",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "chuck-schumer",
+      "node_label": "Chuck Schumer",
+      "relationship": "Co-authored the UAP Disclosure Act of 2023 with Schumer; the bill passed the Senate before being weakened in the House",
+      "connection_type": "collaborative"
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jul 2023",
+      "type": "congressional-testimony",
+      "title": "House Oversight UAP Hearing - Opening and Questioning",
+      "outlet": "U.S. House Oversight Subcommittee on National Security, the Border, and Foreign Affairs",
+      "notes": "Gallagher co-chaired the July 26, 2023 hearing and conducted extensive questioning of Grusch, Graves, and Fravor. In his opening statement and questioning, he stated he believed the government had withheld UAP information from Congress and that a cover-up was plausible. The hearing was viewed by millions and became the highest-profile UAP congressional event in history."
+    },
+    {
+      "date": "Nov 2023",
+      "type": "speech",
+      "title": "Public Statements on the UAP Disclosure Act of 2023",
+      "outlet": "U.S. Congress / Multiple media outlets",
+      "notes": "Public statements accompanying the introduction of the UAP Disclosure Act of 2023, co-authored with Sen. Chuck Schumer. Called for full declassification of non-human intelligence related documents within 25 years and creation of a review board similar to the JFK Records Act model. Stated that the American public deserves transparency on what the government knows."
+    },
+    {
+      "date": "2023",
+      "type": "television",
+      "title": "Media Appearances on UAP as National Security Concern",
+      "outlet": "Fox News, CNN, and print outlets",
+      "notes": "Multiple news appearances throughout 2023 discussing UAP as a genuine national security concern, the importance of the July 2023 hearing, and the need for congressional oversight of legacy UAP programs. Consistently framed UAP through a non-sensationalist national security lens."
+    }
+  ],
+  "sources": [
+    {
+      "title": "House Oversight UAP Hearing Transcript (July 26, 2023)",
+      "url": "https://www.congress.gov/event/118th-congress/house-event/116282",
+      "type": "Congressional record",
+      "notes": "Primary source - full transcript of the hearing Gallagher co-chaired, including his opening statement and questioning of Grusch, Graves, and Fravor"
+    },
+    {
+      "title": "UAP Disclosure Act of 2023 (S.2610)",
+      "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2610",
+      "type": "Legislative record",
+      "notes": "Primary legislative record of the UAP Disclosure Act Gallagher co-authored with Schumer"
+    },
+    {
+      "title": "Politico - Gallagher Resignation Coverage (April 2024)",
+      "url": "https://www.politico.com/news/2024/02/20/mike-gallagher-resign-congress-00142229",
+      "type": "Article",
+      "notes": "Reporting on Gallagher's decision to resign before the end of his term and subsequent move to Shield AI"
+    },
+    {
+      "title": "C-SPAN - House Oversight UAP Hearing (July 26, 2023)",
+      "url": "https://www.c-span.org/video/?529499-1/ufo-hearing",
+      "type": "Video",
+      "notes": "Full video recording of the July 2023 UAP hearing"
+    }
+  ]
+}

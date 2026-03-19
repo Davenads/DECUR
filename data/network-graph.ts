@@ -181,6 +181,9 @@ export const graphData: GraphData = {
 
     // Thomas Wilson
     { id: 'dia-organization',  name: 'Defense Intelligence Agency', type: 'organization', val: 3 },
+
+    // Additional organizations for Mike Gallagher
+    { id: 'shield-ai',         name: 'Shield AI',                   type: 'organization', val: 2 },
   ],
 
   links: [
@@ -674,6 +677,13 @@ export const graphData: GraphData = {
     { source: 'tim-burchett', target: 'david-fravor',    label: 'Fravor testified at Burchett\'s July 2023 House Oversight hearing about the 2004 Nimitz Tic-Tac encounter' },
     { source: 'tim-burchett', target: 'kirsten-gillibrand', label: 'Parallel House-Senate UAP oversight campaigns; coordinated on NDAA provisions and whistleblower protections' },
     { source: 'tim-burchett', target: 'aaro',            label: 'Primary House overseer of AARO; critical of AARO\'s scope and access limitations' },
+
+    // Mike Gallagher connections
+    { source: 'mike-gallagher', target: 'david-grusch',   label: 'Co-chaired July 2023 hearing where Grusch testified; explicitly endorsed Grusch\'s credibility' },
+    { source: 'mike-gallagher', target: 'ryan-graves',    label: 'Graves testified at Gallagher\'s July 2023 hearing; Gallagher praised account as credible' },
+    { source: 'mike-gallagher', target: 'tim-burchett',   label: 'Co-organized the July 2023 House Oversight UAP hearing; both signed the hearing request letter' },
+    { source: 'mike-gallagher', target: 'chuck-schumer',  label: 'Co-authored the UAP Disclosure Act of 2023; bill passed Senate before being weakened in conference' },
+    { source: 'mike-gallagher', target: 'shield-ai',      label: 'Joined as executive in 2024 after resigning from Congress' },
 
     // John Burroughs connections
     { source: 'john-burroughs', target: 'rendlesham-forest',  label: 'primary ground witness on first and second nights of incident' },
