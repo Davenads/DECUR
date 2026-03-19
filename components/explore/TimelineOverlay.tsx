@@ -84,6 +84,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'robert-hastings':  { label: 'Robert Hastings',    color: '#b45309' },
   'sean-kirkpatrick': { label: 'Sean Kirkpatrick',   color: '#dc2626' },
   'dylan-borland':    { label: 'Dylan Borland',      color: '#34d399' },
+  'matthew-brown':    { label: 'Matthew Brown',      color: '#f59e0b' },
 };
 
 const UAP_COLOR = '#93c5e8';

@@ -125,6 +125,7 @@ function detectFeature(data: Record<string, any>): { key: string; label: string 
     major_work: 'Major Work',
     claims: 'Claims',
     interviews: 'Interviews',
+    immaculate_constellation: 'IMCON Report',
   };
   for (const [key, label] of Object.entries(featureMap)) {
     if (data[key]) return { key, label };

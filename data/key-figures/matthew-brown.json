@@ -1,0 +1,282 @@
+{
+  "profile": {
+    "id": "matthew-brown",
+    "name": "Matthew Brown",
+    "aliases": ["The IMCON Whistleblower"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Policy Advisor, Office of the Secretary of Defense (OSD)",
+      "Technical Advisor, Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))",
+      "Program Advisor, U.S. Department of State",
+      "Author - IMMACULATE CONSTELLATION Congressional Report (2024)"
+    ],
+    "service_period": "c. 2012-2024 (government); 2024-present (whistleblower/public)",
+    "organizations": [
+      "Office of the Secretary of Defense",
+      "Office of the Under Secretary of Defense for Intelligence and Security",
+      "U.S. Department of State",
+      "WEAPONIZED Podcast (witness)"
+    ],
+    "clearance": "TS/SCI (former)",
+    "summary": "Former DoD and State Department national security professional who submitted an 11-page report to the U.S. House Oversight Committee in November 2024 describing IMMACULATE CONSTELLATION, an alleged Unacknowledged Special Access Program (USAP) established post-2017 to collect imagery intelligence on UAP and anomalous reproduction vehicles under National Security Council authority, hidden from Congressional oversight. Brown went public on April 29, 2025 via the WEAPONIZED podcast, becoming one of the most significant UAP whistleblowers of the modern disclosure era.",
+    "education": [],
+    "early_career": [
+      "Entered national security contracting and government service with a focus on intelligence analysis and WMD counterproliferation",
+      "Developed expertise in SAP compartmentation, SAPCO procedures, and JWICS-level classified network operations",
+      "Worked across OSD and OUSD(I&S) in roles with access to Special Access Program Control Office infrastructure"
+    ],
+    "key_events": [
+      {
+        "year": "c. 2012",
+        "event": "Begins government career as a national security professional, eventually holding TS/SCI clearances and working in defense intelligence roles focused on WMD counterproliferation and SAP management."
+      },
+      {
+        "year": "c. 2018",
+        "event": "Working at the OSD level, Brown encounters a misfiled document on a shared classified server. The document, labeled in part as referencing the '2018 Shriever War Game,' is actually titled IMMACULATE CONSTELLATION - an Unacknowledged Special Access Program for UAP imagery intelligence collection established after the 2017 AATIP disclosure."
+      },
+      {
+        "year": "c. 2018-2020",
+        "event": "Conducts a multi-year internal investigation using JWICS and other classified networks, reviewing related documents to build a comprehensive picture of the IMCON program's scope, mission, and relationship to AATIP/AAWSAP. Accesses classified AARO briefing transcripts and recognizes deliberate evasion and institutional deception."
+      },
+      {
+        "year": "c. 2020-2022",
+        "event": "Attempts to report through proper government channels. His supervisors and internal security officials do not act on his concerns. He believes his identity became known to the internal security apparatus, effectively ending his career advancement. Spends roughly two to four years with no allies and no one to discuss his findings with."
+      },
+      {
+        "year": "c. 2023",
+        "event": "Moves to a State Department assignment, a strategic step that places him under State's pre-publication review process rather than DoD's more adversarial system. Retains a federal lawyer to guide the whistleblowing process."
+      },
+      {
+        "year": "Spring 2024",
+        "event": "Travels to California to meet investigative journalist Michael Shellenberger in person. Shares his report and story. Shellenberger brings Brown's account to congressional members before and during the August 2024 House Armed Services Committee hearing on UAP."
+      },
+      {
+        "year": "Sep 2024",
+        "event": "Connects with Jeremy Corbell via David Grusch's referral. Begins a two-plus month vetting and validation process with Corbell, physically accompanying Corbell's crew into congressional buildings to brief members in private closed sessions, with cameras and staff cleared from the room."
+      },
+      {
+        "year": "Nov 13, 2024",
+        "event": "Brown's 11-page report, 'Unidentified Anomalous Phenomena, Technologies of Unknown Origin, and Non-Human Intelligence,' is submitted to the U.S. House Oversight Committee by Corbell as supporting documentation for a UAP transparency hearing. The document is accepted into the Congressional Record (HHRG-118-GO12-20241113-SD003). Brown remains anonymous."
+      },
+      {
+        "year": "Apr 29, 2025",
+        "event": "Brown publicly reveals his identity for the first time in Part 1 of a three-part interview series on the WEAPONIZED podcast with Jeremy Corbell and George Knapp. The series totals approximately five hours of testimony across episodes #74, #75, and #76."
+      },
+      {
+        "year": "Sep 9, 2025",
+        "event": "Attends a House Oversight Committee UAP hearing alongside Corbell, seated directly behind whistleblower Dylan Borland. Brown is prevented from testifying by what Corbell describes as 'staff bottlenecks' - a pattern consistent with his account of executive branch interference in congressional UAP oversight."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "Investigative journalist, WEAPONIZED co-host",
+      "relationship": "Co-hosted Brown's three-part public debut on the WEAPONIZED podcast (April-May 2025). Knapp corroborated that UAP footage Brown described matched imagery Knapp had independently encountered through decades of investigative work."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "Former NRO/UAP Task Force officer, federal whistleblower",
+      "relationship": "Grusch served as the referral link connecting Brown to Jeremy Corbell. Brown references Grusch when discussing the internal intelligence community reaction to whistleblowers, noting classified chat room personnel labeled Grusch's name 'radioactive' as a form of institutional pressure."
+    },
+    {
+      "id": "sean-kirkpatrick",
+      "name": "Dr. Sean Kirkpatrick",
+      "role": "Former AARO Director (2022-2023)",
+      "relationship": "Kirkpatrick publicly called Brown's claims 'the biggest bunch of bullshit I've heard today' - the most prominent on-record credibility challenge to Brown's account. Brown also reviewed classified AARO briefing transcripts from Kirkpatrick's directorship and characterized them as containing deliberate evasion and institutional deception."
+    },
+    {
+      "id": "jesse-michels",
+      "name": "Jesse Michels",
+      "role": "Filmmaker, American Alchemy",
+      "relationship": "Referenced indirectly in the whistleblower network context; part of the broader UAP media ecosystem Brown engaged during his public transition."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Nov 13, 2024",
+      "type": "written",
+      "title": "IMMACULATE CONSTELLATION - Congressional Report",
+      "outlet": "U.S. House Oversight Committee (submitted via Jeremy Corbell)",
+      "notes": "An 11-page report submitted anonymously to Congress describing the alleged IMMACULATE CONSTELLATION USAP. Accepted into the Congressional Record as HHRG-118-GO12-20241113-SD003. Reviewed and cleared for public release by the U.S. Department of State, Bureau of Global Public Affairs. Brown authored the document from his own synthesis of classified materials he accessed through lawful duties - it is not a leaked government document."
+    },
+    {
+      "date": "Apr 29, 2025",
+      "type": "podcast",
+      "title": "Immaculate Constellation - UFO Whistleblower Goes Public (Part 1)",
+      "outlet": "WEAPONIZED Podcast - Episode #74 (Jeremy Corbell & George Knapp)",
+      "interviewer": "Jeremy Corbell and George Knapp",
+      "notes": "Brown's public debut, revealing his identity for the first time. Covers his career background, the discovery of IMMACULATE CONSTELLATION, and his decision to come forward. Approximately 90 minutes."
+    },
+    {
+      "date": "May 6, 2025",
+      "type": "podcast",
+      "title": "Immaculate Constellation - A UFO Whistleblower's Journey (Part 2)",
+      "outlet": "WEAPONIZED Podcast - Episode #75 (Jeremy Corbell & George Knapp)",
+      "interviewer": "Jeremy Corbell and George Knapp",
+      "notes": "Covers Brown's multi-year internal investigation, his navigation of official channels, the congressional submission process, and specific UAP phenomena he observed in classified materials. Approximately 100 minutes."
+    },
+    {
+      "date": "May 13, 2025",
+      "type": "podcast",
+      "title": "Immaculate Constellation - A Whistleblower Honors His Oath (Part 3)",
+      "outlet": "WEAPONIZED Podcast - Episode #76 (Jeremy Corbell & George Knapp)",
+      "interviewer": "Jeremy Corbell and George Knapp",
+      "notes": "Brown's structural analysis of UAP secrecy, assessment of the disclosure ecosystem, advice to other potential whistleblowers, and final public statements. Approximately 110 minutes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "IMMACULATE CONSTELLATION - Congressional Record Document (HHRG-118-GO12-20241113-SD003)",
+      "url": "https://www.congress.gov/118/meeting/house/117721/documents/HHRG-118-GO12-20241113-SD003.pdf",
+      "type": "Government Document",
+      "notes": "Brown's 11-page report submitted to the House Oversight Committee, November 13, 2024. Reviewed and cleared by the U.S. Department of State for public release."
+    },
+    {
+      "title": "WEAPONIZED Episode #74 - Immaculate Constellation: UFO Whistleblower Goes Public (Part 1)",
+      "url": "https://youtu.be/ZAxI-LDrDqA",
+      "type": "Video/Podcast",
+      "notes": "Brown's first public appearance; reveals identity, background, and IMCON discovery. April 29, 2025."
+    },
+    {
+      "title": "WEAPONIZED Episode #75 - A UFO Whistleblower's Journey (Part 2)",
+      "url": "https://youtu.be/4n_bRtnIP14",
+      "type": "Video/Podcast",
+      "notes": "Internal investigation timeline, congressional process, and classified UAP observations. May 6, 2025."
+    },
+    {
+      "title": "WEAPONIZED Episode #76 - A Whistleblower Honors His Oath (Part 3)",
+      "url": "https://youtu.be/PtBVAxoHeaY",
+      "type": "Video/Podcast",
+      "notes": "Structural analysis of UAP secrecy, advice to other whistleblowers, final statements. May 13, 2025."
+    },
+    {
+      "title": "Liberation Times - Whistleblower Goes Public on Immaculate Constellation",
+      "url": "https://www.liberationtimes.com/home/whistleblower-goes-public-on-immaculate-constellation-alleges-covert-us-program-monitoring-ufos",
+      "type": "Article",
+      "notes": "Primary written coverage by Christopher Sharp at Liberation Times covering Brown's public debut, April 29, 2025."
+    },
+    {
+      "title": "Jeremy Corbell Congressional Cover Letter (November 2024)",
+      "url": "https://static1.squarespace.com/static/639aa56822e5692fcc997a30/t/67960c01150062608fe7a46b/1737887324199/Jeremy+Corbell+2024+Congressional+Testimony.pdf",
+      "type": "Government Document",
+      "notes": "Corbell's cover letter accompanying Brown's report submission to Congress. Brown remained anonymous at this stage."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Co-hosted Brown's three-part public debut on WEAPONIZED (April-May 2025); corroborated Brown's described UAP footage against imagery Knapp had independently encountered over decades of investigative journalism.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Grusch served as the referral link connecting Brown to Jeremy Corbell in mid-2024; the two are parallel but independent whistleblowers from within the defense intelligence community.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 8,
+      "node_type": "figure",
+      "node_id": "sean-kirkpatrick",
+      "node_label": "Sean Kirkpatrick",
+      "relationship": "Brown reviewed classified AARO briefing transcripts from Kirkpatrick's directorship, characterized them as deliberate evasion; Kirkpatrick publicly rebutted Brown's claims as 'the biggest bunch of bullshit I've heard today.'",
+      "connection_type": "opposition"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "jesse-michels",
+      "node_label": "Jesse Michels (context)",
+      "relationship": "Part of the UAP media ecosystem Brown engaged; Michels had previously documented the broader disclosure network that connected Brown to Corbell and Knapp.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "program",
+      "node_id": "aaro",
+      "node_label": "AARO",
+      "relationship": "Brown accessed classified AARO briefing transcripts and concluded the office was engaged in deliberate obstruction of Congressional UAP oversight rather than neutral assessment.",
+      "connection_type": "opposition"
+    },
+    {
+      "event_index": 1,
+      "node_type": "program",
+      "node_id": "aatip",
+      "node_label": "AATIP",
+      "relationship": "Brown's report argues that IMMACULATE CONSTELLATION was established directly in response to the 2017 public exposure of AATIP - with Luis Elizondo's face on the second slide of the IMCON document - to continue UAP collection in a deeper compartmented form.",
+      "connection_type": "institutional"
+    }
+  ],
+  "immaculate_constellation": {
+    "overview": "IMMACULATE CONSTELLATION (IMCON) is the name Brown encountered on a misfiled classified document on an OSD-level shared server. He characterizes it as an Unacknowledged Special Access Program (USAP) established after the 2017 public exposure of AATIP, operating under National Security Council / White House authority rather than DoD, invisible to Congressional oversight. Its stated mission is collecting Imagery Intelligence (IMINT) on UAP and Anomalous Reproduction Vehicles (ARVs) across Low Earth Orbit, upper atmosphere, military/civilian aviation altitudes, and maritime environments. Brown believes the program uses AI to scour classified servers for UAP imagery and quarantines collection incidents before they circulate in the wider intelligence community.",
+    "report_sections": [
+      {
+        "section": "I - IMMACULATE CONSTELLATION",
+        "summary": "Description of the alleged USAP: its post-AATIP origin, NSC/White House authority structure, IMINT mission scope, and AI-assisted image collection methodology. Brown argues IMCON explains why many cleared personnel are unaware of UAP activity despite being in relevant positions."
+      },
+      {
+        "section": "II - USG Imagery Intelligence",
+        "summary": "Documented imagery from CENTCOM, INDOPACOM, NORTHCOM, and SOUTHCOM. Includes a cuboid formation of metallic orbs, a fast-mover transiting sensitive facilities, a large equilateral triangle hovering above a vessel (with Russian Navy foreknowledge noted), a boomerang UAP emitting a sphere of light, a Tic-Tac observed by OPIR satellite with correlated MASINT electromagnetic signatures, and an irregular 'jellyfish' morphology UAP crossing the southern border."
+      },
+      {
+        "section": "III - Defense Human Intelligence Reporting",
+        "summary": "Review of 400+ HUMINT reports from 1991-2022 describing UAP encounters by defense personnel. Brown found consistent morphological patterns, behavioral characteristics, and reported effects across decades of HUMINT collection."
+      },
+      {
+        "section": "IV - DoD Bureaucratic Records",
+        "summary": "Internal DoD records documenting inconsistencies and alleged deception of Congress. Includes a classified briefing transcript in which Senator Marco Rubio (then SSCI ranking member) asks AARO Director Kirkpatrick: 'Well, what the hell is the Executive Branch doing? Have they been running this for 60 years without congressional oversight?' - with Kirkpatrick allegedly providing evasive non-answers."
+      },
+      {
+        "section": "V - Restricted USG Historical Records",
+        "summary": "Includes a 1978 NSA report on Soviet parapsychology research and other historical records documenting long-term U.S. government awareness of UAP and related phenomena."
+      },
+      {
+        "section": "VI - Signals Intelligence",
+        "summary": "SIGINT data from incidental collection - primarily intercepted foreign military communications in the context of observed UAP events near sensitive facilities. Brown notes this section is brief due to fragility and diplomatic sensitivity of the underlying intelligence."
+      },
+      {
+        "section": "VII - Sensitive Sources",
+        "summary": "Labeled only 'From mouth to ear.' Brown explicitly declined to write down the most sensitive sourcing information, aware that encrypted documents can be accessed through technical means that passwords cannot prevent. He has stated additional information exists and can be shared if circumstances require."
+      }
+    ],
+    "key_uav_observations": [
+      "CENTCOM cuboid formation: 12 metallic orbs, 3-6 meters in diameter, flying at high speed in a geometric cube formation over ocean before dispersing",
+      "INDOPACOM triangle: Large equilateral-triangle UAP hovering 200 meters above a vessel in the Pacific; intelligence analysis noted Russian Navy had 'foreknowledge' of the craft",
+      "INDOPACOM boomerang: Swept-boomerang UAP decelerating to hover then emitting a sphere of light",
+      "NORTHCOM jellyfish: Irregularly shaped UAP crossing the U.S.-Mexico border",
+      "NORTHCOM supersonic range fouler: FLIR and radar of supersonic UAP intercepting a USN fighter off the Eastern Seaboard",
+      "SOUTHCOM Tic-Tac: OPIR satellite imagery with correlated MASINT electromagnetic signatures",
+      "Large disc with apparent camouflage behavior: Brown personally viewed infrared/OPIR imagery of a disc-shaped craft that appeared to maneuver away when reaching the center of the sensor frame, which he described as 'haunting' - suggesting either awareness of observation or propulsion-related behavior",
+      "ARV observation: Intelligence vessels positioned near what appeared to be a human-constructed anomalous reproduction vehicle, with NHI craft apparently observing the ARV"
+    ],
+    "credibility_assessment": {
+      "supporting": [
+        "State Department pre-publication review formally cleared the report ('You may proceed') - confirming Brown was a real government employee and his documented claims did not constitute unauthorized disclosure",
+        "Congressional record submission (HHRG-118-GO12-20241113-SD003) is publicly accessible at congress.gov",
+        "Demonstrated expert-level, internally consistent command of SAPCO, JWICS, SCI facility rules, SAP compartmentation, and interagency processes",
+        "Vetted by Corbell over a 2+ month multi-meeting process before congressional introduction",
+        "Brought before multiple cleared Congressional members in private - none have publicly repudiated him",
+        "Connected to David Grusch via referral; Grusch has a formally filed IC Inspector General complaint",
+        "No financial gain; acknowledged his government career 'has been dead for years'",
+        "Appropriate epistemic humility throughout - distinguishes firsthand observation from inference"
+      ],
+      "limitations": [
+        "The original IMCON document has not been publicly released; provenance depends entirely on Brown's account",
+        "Dr. Sean Kirkpatrick (former AARO Director) publicly called Brown's claims 'the biggest bunch of bullshit I've heard today'",
+        "DoD has denied any USAP named IMMACULATE CONSTELLATION exists",
+        "No major news outlet has independently verified the core claims",
+        "Brown has not testified under oath before Congress as of September 2025",
+        "The 'international cabal' framing is analytical inference rather than direct documentary evidence"
+      ]
+    }
+  }
+}

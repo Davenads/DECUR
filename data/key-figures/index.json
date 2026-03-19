@@ -958,5 +958,27 @@
     "data_file": "dylan-borland.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "matthew-brown",
+    "name": "Matthew Brown",
+    "aliases": ["The IMCON Whistleblower"],
+    "role": "Policy/Technical Advisor, OSD and State Dept.; IMMACULATE CONSTELLATION Whistleblower",
+    "period": "c. 2012-2024 (government)",
+    "affiliation": "Office of the Secretary of Defense / U.S. Department of State",
+    "summary": "Former DoD and State Department national security professional who submitted an 11-page Congressional report in November 2024 describing IMMACULATE CONSTELLATION, an alleged USAP collecting imagery intelligence on UAP under NSC authority. Went public in April 2025 on the WEAPONIZED podcast alongside Jeremy Corbell and George Knapp.",
+    "status": "detailed",
+    "tags": [
+      "whistleblower",
+      "dod",
+      "state-department",
+      "immaculate-constellation",
+      "usap",
+      "imint",
+      "2024-disclosure"
+    ],
+    "data_file": "matthew-brown.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
