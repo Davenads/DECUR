@@ -1,0 +1,280 @@
+{
+  "profile": {
+    "id": "kit-green",
+    "name": "Dr. Christopher \"Kit\" Green",
+    "aliases": ["Kit Green", "Blue Jay", "Dr. Christopher C. Green", "Christopher Canfield Green"],
+    "born": "Not publicly disclosed",
+    "died": null,
+    "roles": [
+      "Senior Division Analyst, CIA Office of Scientific Intelligence",
+      "Custodian, CIA UAP Files (\"Weird Desk\")",
+      "VP Global Health / Chief Medical Officer, General Motors",
+      "Professor of Diagnostic Radiology and Psychiatry, Wayne State University School of Medicine",
+      "AAWSAP DIRD Author - Clinical UAP Medical Effects (2009)"
+    ],
+    "service_period": "c. 1969-1985 (CIA); c. 1985-2007 (General Motors); 2000s-present (Wayne State / research)",
+    "organizations": [
+      "Central Intelligence Agency - Office of Scientific Intelligence",
+      "General Motors Corporation",
+      "Wayne State University School of Medicine",
+      "Defense Intelligence Agency (consulting)",
+      "Bigelow Aerospace Advanced Space Studies (BAASS) - research network"
+    ],
+    "clearance": "TS/SCI (former; held during CIA service and DIA consulting work)",
+    "summary": "Dr. Christopher 'Kit' Green is a former CIA Senior Division Analyst who maintained the agency's internal UAP file custodianship - the informal 'Weird Desk' - from the early 1970s through the mid-1980s, briefing two CIA directors on UAP phenomena. A board-certified forensic neurologist and brain imager, he was awarded the CIA's National Intelligence Medal for a classified project from 1979-1983. He authored one of the 38 AAWSAP Defense Intelligence Reference Documents in 2009, analyzing physiological injuries attributed to UAP proximity. His subsequent collaboration with Dr. Garry Nolan on neurological anomalies in UAP-affected government personnel produced the most rigorous scientific dataset on potential human physiological effects of close UAP encounters.",
+    "education": [
+      "B.S., Biochemistry - University of California, Los Angeles",
+      "M.D. - University of California San Francisco School of Medicine",
+      "Ph.D., Neurophysiology - University of Michigan"
+    ],
+    "early_career": [
+      "Board-certified forensic neurologist and diplomate in neurology; extensive clinical background in brain imaging and neurological pathology",
+      "Joined CIA's Office of Scientific Intelligence in the late 1960s as a Senior Division Analyst specializing in life sciences and neurosciences",
+      "Rose to informal custodianship of CIA's anomalous phenomena files, a position informally called the 'Weird Desk'",
+      "Received CIA National Intelligence Medal for classified contributions between 1979 and 1983",
+      "After leaving the CIA, served as VP of Global Health, Safety, Environment and Medical Affairs and Chief Medical Officer at General Motors from the mid-1980s through the 2000s",
+      "Returned to academic medicine as a professor at Wayne State University School of Medicine"
+    ],
+    "key_events": [
+      {
+        "year": "c.1969",
+        "event": "Joined the CIA's Office of Scientific Intelligence as a Senior Division Analyst, specializing in life sciences, neurosciences, and anomalous phenomena review."
+      },
+      {
+        "year": "c.1972",
+        "event": "Assumed informal custodianship of the CIA's internal UAP files - a role known within the agency as the 'Weird Desk.' Became one of very few analysts with consolidated access to agency UAP holdings across multiple compartments."
+      },
+      {
+        "year": "1979",
+        "event": "Began a classified project for which he would receive the CIA's National Intelligence Medal. The nature of the project remains classified, but the timeline coincides with the peak of SCANATE/Star Gate remote viewing research and heightened agency interest in anomalous phenomena."
+      },
+      {
+        "year": "1983",
+        "event": "Received the CIA's National Intelligence Medal - the agency's highest honor for clandestine service contributions. Also briefed CIA Director William Colby on UAP phenomena and the agency's internal file holdings; conducted a separate briefing for Director Richard Helms."
+      },
+      {
+        "year": "c.1985",
+        "event": "Departed the CIA. Joined General Motors as VP of Global Health, Safety, Environment and Medical Affairs and Chief Medical Officer. Maintained consulting relationships with DIA-adjacent research networks throughout this period."
+      },
+      {
+        "year": "c.2001",
+        "event": "Re-engaged with the informal intelligence community research network - including Hal Puthoff, Eric Davis, and other AAWSAP-adjacent contractors - that would form the scientific backbone of the AAWSAP program."
+      },
+      {
+        "year": "2008",
+        "event": "Briefed journalist Leslie Kean on elements of CIA UAP file holdings and classified UAP matters, contributing background information that appeared in her 2011 book 'UFOs: Generals, Pilots, and Government Officials Go On the Record.'"
+      },
+      {
+        "year": "2009",
+        "event": "Authored AAWSAP Defense Intelligence Reference Document: 'Clinical Medical Acute and Subacute Field Effects on Human Dermal and Neurological Tissues' - a 53-page forensic analysis establishing documented patterns of physiological injury attributed to UAP proximity, making him the DoD's de facto physician for anomalous injury cases."
+      },
+      {
+        "year": "c.2012",
+        "event": "Began formal research collaboration with Dr. Garry Nolan at Stanford, studying structural neurological anomalies in government personnel, intelligence officers, and civilians who reported UAP encounters. MRI and CT imaging revealed unusual brain structure in a significant cohort of subjects."
+      },
+      {
+        "year": "2017",
+        "event": "AAWSAP program disclosed publicly following the New York Times / To The Stars Academy investigation. Green's DIRD contribution became one of the first documented examples of a government-contracted medical analysis of UAP-related injuries."
+      },
+      {
+        "year": "2019",
+        "event": "Continued faculty position at Wayne State University School of Medicine. Ongoing collaboration with Nolan; serves as a consulting bridge between intelligence community networks and academic medical research on UAP biological effects."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "weird-desk-custody",
+      "category": "government program",
+      "claim": "Green maintained informal custodianship of the CIA's internal UAP files from approximately 1972 through his departure in the mid-1980s. These files consolidated UAP-related intelligence from multiple agency compartments that were not accessible through standard channels.",
+      "status": "partially-verified",
+      "notes": "Green has discussed this role in multiple credentialed interviews and it has been referenced in documented accounts by Jacques Vallee (in his published journals) and other researchers with firsthand access. The CIA has not officially confirmed or denied the specific 'Weird Desk' designation, but the existence of CIA UAP file holdings from this era is independently documented through FOIA disclosures."
+    },
+    {
+      "id": "director-briefings",
+      "category": "government program",
+      "claim": "Green briefed at least two sitting CIA directors - William Colby and Richard Helms - on UAP phenomena and the agency's internal holdings on the subject.",
+      "status": "unverified",
+      "notes": "Cited in multiple accounts of Green's career. Neither briefing has been confirmed through declassified records. The claim is consistent with Green's confirmed senior analyst role and the era's known CIA interest in anomalous phenomena. No public denial has been made by CIA."
+    },
+    {
+      "id": "national-intelligence-medal",
+      "category": "government program",
+      "claim": "Green received the CIA's National Intelligence Medal - the agency's highest honor for clandestine contributions - for a classified project conducted between 1979 and 1983.",
+      "status": "partially-verified",
+      "notes": "The award itself is documented; Green has confirmed receiving it. The classified nature of the underlying project means the subject matter cannot be independently verified. The 1979-1983 timeframe overlaps with peak SCANATE/Star Gate activity and intensive CIA interest in anomalous phenomena, but a direct connection is inference rather than confirmed fact."
+    },
+    {
+      "id": "aawsap-dird-injuries",
+      "category": "physical evidence",
+      "claim": "UAP proximity causes documented, reproducible patterns of physiological injury to human tissue including dermal burns, neurological damage, and organ effects. Green's 2009 DIRD catalogued these patterns from forensic case review of government and civilian encounter reports.",
+      "status": "partially-verified",
+      "notes": "The DIRD itself has been described by multiple sources including James Lacatski and Colm Kelleher in 'Skinwalkers at the Pentagon' (2021). The documented existence of the DIRD as one of 38 AAWSAP deliverables has been confirmed through official channels. The specific clinical findings represent Green's expert forensic analysis; independent peer-reviewed replication has not been publicly conducted."
+    },
+    {
+      "id": "nolan-neurological-study",
+      "category": "physical evidence",
+      "claim": "A cohort of government personnel and intelligence officers who reported UAP encounters show statistically anomalous structural changes to the brain - including unusual connectivity patterns in the caudate/putamen region - visible on MRI and CT imaging. These changes correlate with both reported UAP encounter proximity and, in some cases, with reported enhanced cognitive or perceptual abilities.",
+      "status": "partially-verified",
+      "notes": "Green and Nolan have both discussed this research publicly and it informed Nolan's published work on UAP biological effects. Nolan presented related findings at academic conferences. A full peer-reviewed paper on the government personnel cohort has not been publicly released as of 2025, though Nolan has indicated the dataset exists and is being analyzed."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Holds both M.D. and Ph.D. in neurophysiology - board-certified forensic neurologist with subspecialty in brain imaging. His medical claims are grounded in genuine clinical expertise rather than speculation",
+      "CIA National Intelligence Medal recipient - the agency's highest honor for clandestine service, awarded for a classified project. This is among the most credentialed intelligence community backgrounds of any public UAP figure",
+      "His AAWSAP DIRD is part of a congressionally documented program (AAWSAP was confirmed by multiple senators and the DIA); his contribution to it is referenced in 'Skinwalkers at the Pentagon' (Lacatski, Kelleher, Knapp, 2021)",
+      "Collaboration with Dr. Garry Nolan - a tenured Stanford professor and NCI-funded researcher - provides institutional credibility for the neurological study claims",
+      "The 'Weird Desk' role and director briefings are referenced in Jacques Vallee's published journals and other documented accounts from credible researchers with firsthand access to Green",
+      "His career trajectory (CIA analyst with anomalous phenomena portfolio to GM CMO to forensic neurology professor) is internally consistent and independently verifiable",
+      "No known financial incentive for public fabrication - has not written books or produced commercially motivated UAP content; speaks primarily in academic and intelligence community contexts"
+    ],
+    "contradicting": [
+      "The most significant claims - director briefings, Weird Desk scope, and National Intelligence Medal project content - involve classified material that cannot be independently verified through public records",
+      "The neurological study with Nolan has not been published in peer-reviewed form as of 2025, making the claimed findings unverifiable through standard scientific channels",
+      "Green operates at the intersection of intelligence community culture and academic medicine - both fields where credentialed insiders have occasionally constructed or embellished narratives, particularly around classified program involvement",
+      "The CIA has not officially confirmed the 'Weird Desk' designation or the director briefings, and no FOIA request has surfaced documents directly corroborating these specific claims",
+      "His connection to the AAWSAP contractor network (Puthoff, Davis, Bigelow) means he is embedded in a community with strong shared incentives to affirm each other's accounts of classified program access"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Professor of Pathology, Stanford School of Medicine",
+      "relationship": "Primary ongoing research collaborator. Green and Nolan have jointly studied structural neurological anomalies in UAP-affected individuals - government personnel, intelligence officers, and civilians - using MRI and CT imaging. This represents the most rigorous scientific investigation of human physiological effects attributed to UAP proximity."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold Puthoff",
+      "role": "Physicist; founder, EarthTech International; AAWSAP contributor",
+      "relationship": "Fellow member of the informal intelligence community network known as the Aviary active in UAP research across the 1980s-2000s. Green and Puthoff shared contractor and consulting networks and contributed to the AAWSAP scientific agenda through complementary expertise."
+    },
+    {
+      "id": "eric-davis",
+      "name": "Dr. Eric Davis",
+      "role": "Physicist; EarthTech International; AAWSAP DIRD author",
+      "relationship": "Shared AAWSAP research network. Both Davis and Green authored separate Defense Intelligence Reference Documents for the program; Davis contributed the physics and materials analysis while Green contributed the clinical medical analysis, creating complementary DIRD contributions."
+    },
+    {
+      "id": "james-lacatski",
+      "name": "Dr. James Lacatski",
+      "role": "Defense Intelligence Officer; Founder and Director, AAWSAP",
+      "relationship": "Institutional relationship as DIRD author under AAWSAP. Lacatski's program commissioned and received Green's 2009 clinical medical effects analysis. Lacatski references Green's contribution in 'Skinwalkers at the Pentagon' (2021)."
+    },
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist; author",
+      "relationship": "Green briefed Kean on elements of CIA UAP file holdings in 2008, contributing background information for her 2011 book 'UFOs: Generals, Pilots, and Government Officials Go On the Record.' He is one of her primary intelligence community sources."
+    },
+    {
+      "id": "jacques-vallee",
+      "name": "Dr. Jacques Vallee",
+      "role": "Computer scientist and astrophysicist; UAP researcher",
+      "relationship": "Vallee documented interactions with Green in his published journals, describing the Aviary network and Green's role within the CIA's UAP file holdings. Their shared interest in the physiological and phenomenological aspects of UAP encounters created an intellectual overlap in their respective research."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2009",
+      "type": "written",
+      "title": "AAWSAP DIRD: Clinical Medical Acute and Subacute Field Effects on Human Dermal and Neurological Tissues",
+      "outlet": "Defense Intelligence Agency / AAWSAP (via BAASS contract)",
+      "notes": "53-page forensic analysis commissioned as one of 38 Defense Intelligence Reference Documents under the AAWSAP program. Catalogs documented patterns of physiological injury attributed to UAP proximity based on review of government and civilian encounter case files. Established Green as the DoD's de facto physician for anomalous injury documentation."
+    },
+    {
+      "date": "2011",
+      "type": "written",
+      "title": "Background Source - 'UFOs: Generals, Pilots, and Government Officials Go On the Record'",
+      "outlet": "Harmony Books (Leslie Kean, author)",
+      "notes": "Green provided background CIA-sourced information to Kean for her landmark 2011 book. He is not cited by name but is known within the UAP research community as one of her intelligence community sources. His 2008 briefing to Kean contributed to her understanding of the government's historical UAP file holdings."
+    },
+    {
+      "date": "2021",
+      "type": "written",
+      "title": "Referenced in 'Skinwalkers at the Pentagon'",
+      "outlet": "Permuted Press (Lacatski, Kelleher, Knapp, authors)",
+      "notes": "Green's AAWSAP DIRD contribution and his broader role in the AAWSAP research network are referenced in this primary account of the program. The book confirms his status as the program's lead medical/physiological analyst."
+    },
+    {
+      "date": "2017",
+      "type": "article",
+      "title": "Post-AAWSAP disclosure interviews",
+      "outlet": "Various - The Black Vault, academic conferences",
+      "notes": "Following the 2017 New York Times AATIP disclosure, Green participated in several interviews discussing his CIA background, the Weird Desk role, and his medical research contributions to AAWSAP. These interviews represent his primary public disclosures outside the classified documentary record."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)",
+      "url": "https://www.amazon.com/Skinwalkers-Pentagon-Inside-Secret-Government/dp/0578862115",
+      "type": "Book",
+      "notes": "Primary source confirming Green's AAWSAP DIRD contribution and role in the medical effects research network. Written by AAWSAP's own director (Lacatski) and key researchers."
+    },
+    {
+      "title": "UFOs: Generals, Pilots, and Government Officials Go On the Record (Kean - 2011)",
+      "url": "https://www.amazon.com/UFOs-Generals-Pilots-Government-Officials/dp/0307716848",
+      "type": "Book",
+      "notes": "Green provided background intelligence community sourcing for this book. Documents his role as a CIA source for UAP file access information."
+    },
+    {
+      "title": "Wikipedia - Christopher \"Kit\" Green",
+      "url": "https://en.wikipedia.org/wiki/Christopher_%22Kit%22_Green",
+      "type": "structured-reference",
+      "notes": "Background biography, CIA career, GM role, and Wayne State faculty position."
+    },
+    {
+      "title": "AAWSAP DIRD List - Defense Intelligence Agency (via The Black Vault)",
+      "url": "https://www.theblackvault.com/documentarchive/the-advanced-aerospace-weapon-system-applications-program-aawsap-documents/",
+      "type": "Government Document",
+      "notes": "Documents Green's DIRD as one of 38 AAWSAP deliverables. Provides the formal title and attribution of his clinical medical analysis."
+    },
+    {
+      "title": "Jacques Vallee - Forbidden Science, Vol. 4 (2021)",
+      "url": "https://www.amazon.com/Forbidden-Science-Journals-Silicon-1990-1999/dp/1949501124",
+      "type": "Book",
+      "notes": "Vallee's published journals document interactions with Green and describe the Aviary network, providing independent corroboration of Green's role in the informal UAP research community."
+    },
+    {
+      "title": "UFO: The Inside Story of the U.S. Government's Search for Alien Life (Jacobsen - 2023)",
+      "url": "https://www.amazon.com/UFO-Inside-Story-Governments-Search/dp/0316308862",
+      "type": "Book",
+      "notes": "Annie Jacobsen's investigative account references Green's role in the government's medical research on UAP-affected individuals and his place within the broader intelligence community UAP network."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Shared membership in the informal Aviary intelligence network and AAWSAP-adjacent research circles; Green and Puthoff coordinated on UAP scientific analysis through complementary expertise in life sciences and physics.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "james-lacatski",
+      "node_label": "James Lacatski",
+      "relationship": "Green authored a Defense Intelligence Reference Document under Lacatski's AAWSAP program directorship; Lacatski references Green's medical analysis in 'Skinwalkers at the Pentagon.'",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 8,
+      "node_type": "figure",
+      "node_id": "garry-nolan",
+      "node_label": "Garry Nolan",
+      "relationship": "Primary ongoing research collaboration studying neurological anomalies in government personnel who reported UAP encounters; the most rigorous scientific investigation of human physiological UAP effects conducted to date.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "eric-davis",
+      "node_label": "Eric Davis",
+      "relationship": "Complementary AAWSAP DIRD authors - Davis on physics and materials, Green on clinical medical effects - within the shared AAWSAP and DIA-adjacent contractor research network.",
+      "connection_type": "collaboration"
+    }
+  ]
+}

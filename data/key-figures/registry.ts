@@ -54,6 +54,7 @@ import robertHastingsData from './robert-hastings.json';
 import seanKirkpatrickData from './sean-kirkpatrick.json';
 import dylanBorlandData from './dylan-borland.json';
 import matthewBrownData from './matthew-brown.json';
+import kitGreenData from './kit-green.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -99,4 +100,5 @@ export const insiderRegistry: Record<string, any> = {
   'sean-kirkpatrick': seanKirkpatrickData,
   'dylan-borland': dylanBorlandData,
   'matthew-brown': matthewBrownData,
+  'kit-green': kitGreenData,
 };

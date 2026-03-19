@@ -448,6 +448,14 @@ export const graphData: GraphData = {
     { source: 'dylan-borland',   target: 'jay-stratton',      label: 'reported to AARO under' },
     { source: 'dylan-borland',   target: 'jeremy-corbell',    label: 'documented by on Weaponized podcast' },
 
+    // Kit Green connections
+    { source: 'kit-green',       target: 'garry-nolan',             label: 'Research collaboration on UAP-affected patient neurological effects' },
+    { source: 'kit-green',       target: 'hal-puthoff',             label: 'Aviary network; AAWSAP research team' },
+    { source: 'kit-green',       target: 'eric-davis',              label: 'Complementary AAWSAP DIRD authors' },
+    { source: 'kit-green',       target: 'james-lacatski',          label: 'Authored medical DIRD under AAWSAP directorship' },
+    { source: 'kit-green',       target: 'aawsap',                  label: 'Authored DIRD on clinical UAP medical effects (2009)' },
+    { source: 'kit-green',       target: 'leslie-kean',             label: 'Briefed on CIA UAP file holdings (2008)' },
+
     // Matthew Brown connections
     { source: 'matthew-brown',   target: 'jeremy-corbell',          label: 'Congressional submission vehicle for IMCON report' },
     { source: 'matthew-brown',   target: 'david-grusch',            label: 'Mutual defense-intelligence whistleblower referral' },

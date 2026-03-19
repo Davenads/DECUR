@@ -980,5 +980,19 @@
     "data_file": "matthew-brown.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "kit-green",
+    "name": "Dr. Christopher \"Kit\" Green",
+    "aliases": ["Kit Green", "Blue Jay", "Christopher Green"],
+    "role": "CIA Senior Analyst (Weird Desk); AAWSAP DIRD Author; Forensic Neurologist",
+    "period": "c. 1969-1985 (CIA); 2009 (AAWSAP); 2012-present (NHI medical research)",
+    "affiliation": "CIA / General Motors / Wayne State University / BAASS research network",
+    "summary": "Former CIA Senior Division Analyst who maintained custodianship of the agency's internal UAP files (the 'Weird Desk') for over a decade and briefed two CIA directors on UAP phenomena. A board-certified forensic neurologist, he authored a 2009 AAWSAP Defense Intelligence Reference Document on physiological injuries from UAP proximity, then co-investigated neurological anomalies in UAP-affected government personnel with Dr. Garry Nolan.",
+    "status": "detailed",
+    "tags": ["cia", "aawsap", "medical-research", "aviary", "neurology", "dird", "intelligence-community"],
+    "data_file": "kit-green.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
