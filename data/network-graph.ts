@@ -456,6 +456,14 @@ export const graphData: GraphData = {
     { source: 'kit-green',       target: 'aawsap',                  label: 'Authored DIRD on clinical UAP medical effects (2009)' },
     { source: 'kit-green',       target: 'leslie-kean',             label: 'Briefed on CIA UAP file holdings (2008)' },
 
+    // Colm Kelleher connections
+    { source: 'colm-kelleher',   target: 'robert-bigelow',          label: 'Deputy administrator of NIDS; senior researcher at BAASS' },
+    { source: 'colm-kelleher',   target: 'george-knapp',            label: 'Co-authored Hunt for the Skinwalker and Skinwalkers at the Pentagon' },
+    { source: 'colm-kelleher',   target: 'james-lacatski',          label: 'Co-authored Skinwalkers at the Pentagon; AAWSAP colleagues' },
+    { source: 'colm-kelleher',   target: 'hal-puthoff',             label: 'Shared AAWSAP/BAASS research network' },
+    { source: 'colm-kelleher',   target: 'aawsap',                  label: 'Senior researcher under BAASS AAWSAP contract' },
+    { source: 'colm-kelleher',   target: 'kit-green',               label: 'Parallel AAWSAP researchers on biological/medical UAP effects' },
+
     // Matthew Brown connections
     { source: 'matthew-brown',   target: 'jeremy-corbell',          label: 'Congressional submission vehicle for IMCON report' },
     { source: 'matthew-brown',   target: 'david-grusch',            label: 'Mutual defense-intelligence whistleblower referral' },

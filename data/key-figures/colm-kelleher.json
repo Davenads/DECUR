@@ -1,0 +1,250 @@
+{
+  "profile": {
+    "id": "colm-kelleher",
+    "name": "Dr. Colm A. Kelleher",
+    "aliases": ["Colm Kelleher", "Dr. Kelleher"],
+    "born": "Not publicly disclosed",
+    "died": null,
+    "roles": [
+      "Deputy Administrator, National Institute for Discovery Science (NIDS)",
+      "Senior Research Scientist, Bigelow Aerospace Advanced Space Studies (BAASS)",
+      "AAWSAP Principal Investigator",
+      "Co-Author - Hunt for the Skinwalker (2005)",
+      "Co-Author - Skinwalkers at the Pentagon (2021)"
+    ],
+    "service_period": "1996-2004 (NIDS); 2008-2012 (BAASS/AAWSAP)",
+    "organizations": [
+      "National Institute for Discovery Science (NIDS)",
+      "Bigelow Aerospace Advanced Space Studies (BAASS)",
+      "Defense Intelligence Agency (AAWSAP contract research)"
+    ],
+    "clearance": "TS/SCI (held during AAWSAP contract period, per Skinwalkers at the Pentagon)",
+    "summary": "Biochemist who served as Deputy Administrator of Robert Bigelow's National Institute for Discovery Science from 1996 to 2004, conducting the most rigorous scientific field investigation of Skinwalker Ranch ever undertaken. He subsequently became a senior researcher at BAASS when it received the DIA's $22M AAWSAP contract in 2008, contributing to the program's anomalous phenomena documentation. Co-authored two primary source books - 'Hunt for the Skinwalker' (2005) with George Knapp and 'Skinwalkers at the Pentagon' (2021) with James Lacatski and George Knapp - that represent the most detailed public accounts of both the NIDS investigation and the AAWSAP program.",
+    "education": [
+      "Ph.D., Biochemistry (molecular biology specialization)",
+      "Research background in molecular biology and cancer research prior to NIDS appointment"
+    ],
+    "early_career": [
+      "Conducted research in molecular biology and cancer research before transitioning to anomalous phenomena investigation",
+      "Hired by Robert Bigelow in 1996 as Deputy Administrator of the National Institute for Discovery Science - the first serious scientific organization to fund large-scale UAP and anomalous phenomena field research",
+      "Brought formal scientific methodology to the investigation of Skinwalker Ranch, establishing the multi-disciplinary team approach that NIDS used across all investigations"
+    ],
+    "key_events": [
+      {
+        "year": "1996",
+        "event": "Joined Robert Bigelow's National Institute for Discovery Science as Deputy Administrator. Bigelow simultaneously purchased Skinwalker Ranch in Utah's Uintah Basin - triggering what would become a seven-year scientific field investigation."
+      },
+      {
+        "year": "1997",
+        "event": "NIDS establishes a permanent research presence at Skinwalker Ranch. Kelleher leads a multi-disciplinary team of scientists, former military personnel, and investigators documenting a broad range of anomalous phenomena: UAP sightings, cattle mutilations, poltergeist-like activity, anomalous orbs, and reported encounters with unknown entities."
+      },
+      {
+        "year": "2001",
+        "event": "NIDS investigation produces preliminary findings indicating that phenomena at the ranch exhibit apparent intelligent behavior - specifically, the phenomena appear to anticipate and evade direct scientific observation. Kelleher develops the 'Hitchhiker Effect' hypothesis: that anomalous phenomena may attach to investigators and manifest off-site."
+      },
+      {
+        "year": "2004",
+        "event": "NIDS formally winds down its operations. Kelleher concludes that while the Skinwalker Ranch phenomena are genuine and repeatedly documented, they resist definitive capture and characterization using conventional scientific instruments - a finding that informs AAWSAP's broader scope."
+      },
+      {
+        "year": "2005",
+        "event": "Co-authored 'Hunt for the Skinwalker: Science Confronts the Unexplained at a Remote Ranch in Utah' with George Knapp (Paraview Pocket Books). The first and most detailed public account of the NIDS investigation. Introduces the Uintah Basin as a multi-generational UAP and anomalous phenomena hotspot."
+      },
+      {
+        "year": "2008",
+        "event": "Bigelow Aerospace Advanced Space Studies (BAASS) wins the DIA's $22M AAWSAP contract. Kelleher moves to BAASS as a senior researcher, applying NIDS investigative methodology to the government program. Contributes to the broader multi-domain anomalous phenomena research that distinguished AAWSAP from the narrower AATIP designation."
+      },
+      {
+        "year": "2012",
+        "event": "AAWSAP contract period concludes. BAASS produced 38 Defense Intelligence Reference Documents, organized 47 site investigations, catalogued 764 anomalous aerospace event reports, and generated a trove of classified data that Kelleher helped collect and analyze over four years."
+      },
+      {
+        "year": "2021",
+        "event": "Co-authored 'Skinwalkers at the Pentagon: An Insiders' Account of the Secret Government UFO Program' with James Lacatski and George Knapp (RTMA LLC). The first insider account to detail AAWSAP's actual scope, methodology, and findings - revealing the program's deliberate connection to the Skinwalker Ranch research lineage and its investigation of phenomena far beyond conventional UAP sightings."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "skinwalker-phenomena-genuine",
+      "category": "direct observation",
+      "claim": "The anomalous phenomena at Skinwalker Ranch are genuine and multiply documented across independent observers, instrument readings, and physical trace evidence - including cattle mutilations with precision incisions, orbs captured on multiple cameras simultaneously, and direct encounters by credentialed scientists and former law enforcement personnel.",
+      "status": "partially-verified",
+      "notes": "NIDS team members included credentialed scientists and former law enforcement with no prior bias toward confirming anomalous claims. Physical trace evidence from cattle mutilations (precision cuts, absence of blood) was documented and analyzed. However, the most dramatic events consistently resisted high-quality instrumental capture. Independent verification of the full claims is not possible without access to the NIDS case archives, which remain private."
+    },
+    {
+      "id": "reactive-intelligence",
+      "category": "behavioral observation",
+      "claim": "UAP and related anomalous phenomena at Skinwalker Ranch exhibit apparent reactive intelligence - specifically, the phenomena appear to anticipate scientific observation attempts, defeating instrumentation and avoiding definitive capture. This 'observer effect' is not consistent with ordinary physical phenomena and suggests intentional evasion.",
+      "status": "unverified",
+      "notes": "Documented in 'Hunt for the Skinwalker' through multiple specific incidents where surveillance equipment malfunctioned at anomalous moments, and where phenomena appeared only when camera coverage had gaps. Independent verification requires access to the original case files. The interpretation of evasion vs. coincidental equipment failure vs. observer bias is contested."
+    },
+    {
+      "id": "hitchhiker-effect",
+      "category": "extended phenomenon",
+      "claim": "NIDS and AAWSAP investigators documented a 'hitchhiker effect' in which anomalous phenomena appeared to follow team members off the ranch to their homes and families. This suggests the phenomena are not geographically bound to a specific location but may attach to individuals - a finding with implications for UAP investigations and for the safety of researchers.",
+      "status": "unverified",
+      "notes": "Described extensively in 'Skinwalkers at the Pentagon' and by Lacatski in Congressional testimony. The hitchhiker effect is among the most controversial AAWSAP findings and is not corroborated by any external investigation. It represents a significant departure from purely physical UAP phenomena and touches on consciousness/psychic dimensions that resist scientific verification."
+    },
+    {
+      "id": "aawsap-scope",
+      "category": "government program",
+      "claim": "AAWSAP was deliberately designed to investigate the full spectrum of anomalous phenomena - UAP, cattle mutilations, poltergeist activity, close encounter effects, and related phenomena - as a unified domain, rather than UAP in isolation. The public association of AAWSAP solely with AATIP (the narrower aviation-focused component) misrepresents the program's actual scope and methodology.",
+      "status": "partially-verified",
+      "notes": "Confirmed by the publication of 'Skinwalkers at the Pentagon' (2021), co-authored by program director Lacatski and corroborated by Harry Reid's public statements before his death. The 38 DIRDs covering subjects ranging from warp drives to biological effects to psychic phenomena confirm the program's broad scope. This is now one of the better-documented claims in modern UAP research."
+    },
+    {
+      "id": "cattle-mutilation-uap-link",
+      "category": "physical evidence",
+      "claim": "Cattle mutilations - precision incision events in which livestock are found drained of blood with organs removed by what appear to be non-conventional cutting tools, often with no tracks or physical disturbance at the scene - are connected to UAP activity and represent physical trace evidence of the same phenomenon responsible for anomalous aerospace events.",
+      "status": "unverified",
+      "notes": "NIDS investigated cattle mutilation cases across multiple states over eight years and documented consistent patterns that resist conventional explanation (conventional predation, human acts, or environmental factors). The connection to UAP phenomena is an interpretive conclusion from correlation rather than demonstrated causation. FBI investigated cattle mutilations in the 1970s-80s and found no satisfactory explanation."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "PhD in biochemistry from an accredited program - brings legitimate scientific methodology to anomalous phenomena investigation that most UAP researchers lack",
+      "NIDS was staffed by credentialed scientists, retired military personnel, and former law enforcement - it was not a private hobbyist organization but a structured scientific institute with institutional funding",
+      "Both co-authored books include named, credentialed co-authors: George Knapp (Emmy Award-winning investigative journalist) and James Lacatski (the actual DIA program director for AAWSAP). Their willingness to attach their names to Kelleher's accounts provides independent corroboration",
+      "'Skinwalkers at the Pentagon' was co-authored by the government program's own director - making it the most direct insider confirmation of the AAWSAP-Skinwalker connection",
+      "Seven years of on-site investigation at Skinwalker Ranch using multi-disciplinary methods represents the most sustained scientific field investigation of any UAP-adjacent site in American history",
+      "Harry Reid's public endorsement of the AAWSAP program and the Bigelow-Kelleher research connection provides senior political corroboration for the program's legitimacy",
+      "AAWSAP's existence and $22M DIA contract have been officially confirmed; Kelleher's senior role within BAASS during the contract period is corroborated by multiple independent sources"
+    ],
+    "contradicting": [
+      "The most extraordinary Skinwalker Ranch claims - entity encounters, portals, poltergeist activity - are documented primarily through personal testimony and are not corroborated by independent investigators outside the NIDS organization",
+      "NIDS was funded entirely by Robert Bigelow, creating a potential structural bias where the funder's beliefs about anomalous phenomena could influence the investigation's direction and findings",
+      "The reactive/evasive intelligence hypothesis is unfalsifiable as stated - if phenomena can detect and avoid observation, no negative result can disprove the claim",
+      "Kelleher has not published peer-reviewed scientific papers on the Skinwalker investigation findings, limiting independent scientific scrutiny of his methodology and conclusions",
+      "The hitchhiker effect claim is potentially harmful if investigators attribute normal life events to anomalous causation, and has no independent verification outside the AAWSAP research circle",
+      "Commercial interest exists: both books were published and marketed to general audiences, creating financial incentive that is absent in purely academic disclosure contexts"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "robert-bigelow",
+      "name": "Robert Bigelow",
+      "role": "Founder, NIDS; Founder, BAASS; AAWSAP contract holder",
+      "relationship": "Primary employer and funder throughout both phases of Kelleher's anomalous research career. Bigelow founded and funded NIDS, hired Kelleher as deputy administrator, and then moved the team to BAASS when the AAWSAP contract was awarded. Their professional relationship spans the most important institutional chapter in private UAP research funding."
+    },
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "Chief Investigative Reporter, KLAS-TV; co-author",
+      "relationship": "Primary journalistic collaborator and co-author. Knapp co-authored both 'Hunt for the Skinwalker' (2005) and 'Skinwalkers at the Pentagon' (2021) with Kelleher, making him the public voice for NIDS findings. Knapp's independent investigative credibility and Emmy Award history provide external corroboration for the books' claims."
+    },
+    {
+      "id": "james-lacatski",
+      "name": "Dr. James Lacatski",
+      "role": "DIA Defense Intelligence Officer; AAWSAP program director",
+      "relationship": "Institutional superior at AAWSAP and co-author of 'Skinwalkers at the Pentagon' (2021). Lacatski's decision to include Kelleher as a named co-author - alongside himself and Knapp - publicly confirms Kelleher's central research role in the government program."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold Puthoff",
+      "role": "Physicist; EarthTech International; AAWSAP DIRD author",
+      "relationship": "Shared AAWSAP research network. Puthoff contributed theoretical physics DIRDs while Kelleher contributed investigative and biological phenomena documentation; together they represent the complementary scientific dimensions of BAASS's AAWSAP work."
+    },
+    {
+      "id": "kit-green",
+      "name": "Dr. Christopher 'Kit' Green",
+      "role": "CIA analyst; AAWSAP DIRD author; forensic neurologist",
+      "relationship": "Parallel AAWSAP researcher whose clinical medical DIRD on physiological UAP effects complemented Kelleher's field-based biological observations from Skinwalker Ranch. Both investigated the human physiological dimension of anomalous phenomena from different angles within the same program."
+    },
+    {
+      "id": "jacques-vallee",
+      "name": "Dr. Jacques Vallee",
+      "role": "Astrophysicist; UAP researcher; NIDS scientific advisor",
+      "relationship": "Vallee served as a NIDS scientific advisor and his interdimensional/control system framework provided the theoretical underpinning for NIDS's approach to Skinwalker Ranch. His published journals document interactions with the NIDS circle and his assessment of the investigation's findings."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2005",
+      "type": "written",
+      "title": "Hunt for the Skinwalker: Science Confronts the Unexplained at a Remote Ranch in Utah",
+      "outlet": "Paraview Pocket Books (co-authored with George Knapp)",
+      "notes": "Primary public account of the seven-year NIDS investigation of Skinwalker Ranch. Describes the full range of documented anomalous phenomena - UAP, cattle mutilations, poltergeist activity, entity encounters - and Kelleher's scientific methodology. First book to make the NIDS findings available to the public. Reissued with updated material in 2023."
+    },
+    {
+      "date": "2021",
+      "type": "written",
+      "title": "Skinwalkers at the Pentagon: An Insiders' Account of the Secret Government UFO Program",
+      "outlet": "RTMA LLC (co-authored with James Lacatski and George Knapp)",
+      "notes": "The most significant UAP primary source published by active or former government program participants in the modern era. Documents AAWSAP's actual scope (far broader than publicly known), the deliberate connection between the NIDS Skinwalker investigation and the government program, the hitchhiker effect findings, and the 38 DIRDs produced under the contract. Co-authorship with DIA program director Lacatski gives it unique insider authority."
+    },
+    {
+      "date": "2009",
+      "type": "written",
+      "title": "Brain and Behaviour Changes: A Comparative Analysis of Phenomena Reports",
+      "outlet": "AAWSAP research deliverable (via BAASS contract)",
+      "notes": "Contributed AAWSAP research analysis on biological and behavioral effects reported in conjunction with anomalous phenomena. This work informed the broader AAWSAP medical research program that Kit Green and Garry Nolan later continued."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hunt for the Skinwalker (Kelleher, Knapp - 2005)",
+      "url": "https://www.amazon.com/Hunt-Skinwalker-Science-Confronts-Unexplained/dp/1416505210",
+      "type": "Book",
+      "notes": "Primary source - first public account of the NIDS Skinwalker Ranch investigation. Co-authored with George Knapp."
+    },
+    {
+      "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)",
+      "url": "https://www.amazon.com/Skinwalkers-Pentagon-Inside-Secret-Government/dp/0578862115",
+      "type": "Book",
+      "notes": "Primary source for AAWSAP. Co-authored with DIA program director James Lacatski and George Knapp. The most detailed insider account of what AAWSAP actually investigated and found."
+    },
+    {
+      "title": "AAWSAP DIRD List - Defense Intelligence Agency (via The Black Vault)",
+      "url": "https://www.theblackvault.com/documentarchive/the-advanced-aerospace-weapon-system-applications-program-aawsap-documents/",
+      "type": "Government Document",
+      "notes": "Documents the 38 AAWSAP DIRDs produced under the BAASS contract, within which Kelleher contributed research."
+    },
+    {
+      "title": "Wikipedia - Skinwalker Ranch",
+      "url": "https://en.wikipedia.org/wiki/Skinwalker_Ranch",
+      "type": "structured-reference",
+      "notes": "Background on the ranch history, NIDS investigation period, and transition to subsequent ownership."
+    },
+    {
+      "title": "WEAPONIZED Podcast - Skinwalkers at the Pentagon (Knapp, Corbell - 2022)",
+      "url": "https://www.youtube.com/@WeaponizedPodcast",
+      "type": "podcast",
+      "notes": "George Knapp discussed AAWSAP and Skinwalker research history across multiple Weaponized episodes, providing additional context for Kelleher's role."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "figure",
+      "node_id": "robert-bigelow",
+      "node_label": "Robert Bigelow",
+      "relationship": "Bigelow founded NIDS and hired Kelleher as deputy administrator in 1996; their professional relationship defined both the NIDS and BAASS/AAWSAP phases of Kelleher's UAP research career.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Primary co-author on both Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021); long-standing collaborative relationship making Knapp the public voice for NIDS and AAWSAP findings.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "james-lacatski",
+      "node_label": "James Lacatski",
+      "relationship": "AAWSAP program director and co-author of Skinwalkers at the Pentagon; Lacatski's decision to co-author with Kelleher publicly confirms Kelleher's central research role in the government program.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Shared AAWSAP research network; Puthoff's theoretical physics DIRDs complemented Kelleher's biological and field investigation contributions within the BAASS contractor team.",
+      "connection_type": "collaboration"
+    }
+  ]
+}

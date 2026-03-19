@@ -994,5 +994,19 @@
     "data_file": "kit-green.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "colm-kelleher",
+    "name": "Dr. Colm A. Kelleher",
+    "aliases": ["Colm Kelleher", "Dr. Kelleher"],
+    "role": "Deputy Administrator, NIDS; Senior Researcher, BAASS/AAWSAP",
+    "period": "1996-2004 (NIDS); 2008-2012 (AAWSAP)",
+    "affiliation": "National Institute for Discovery Science / Bigelow Aerospace Advanced Space Studies",
+    "summary": "Biochemist who led the seven-year NIDS scientific investigation of Skinwalker Ranch under Robert Bigelow, then served as a senior researcher at BAASS during the DIA's $22M AAWSAP program. Co-authored 'Hunt for the Skinwalker' (2005) with George Knapp and 'Skinwalkers at the Pentagon' (2021) with James Lacatski and Knapp - two of the most important primary source accounts of private and government UAP research.",
+    "status": "detailed",
+    "tags": ["nids", "aawsap", "skinwalker-ranch", "baass", "biochemistry", "cattle-mutilation", "bigelow"],
+    "data_file": "colm-kelleher.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]
