@@ -1092,5 +1092,19 @@
     "data_file": "edward-ruppelt.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "james-mcdonald",
+    "name": "Dr. James E. McDonald",
+    "aliases": ["James McDonald", "Dr. McDonald"],
+    "role": "Senior Physicist, Univ. of Arizona; UAP Scientific Investigator",
+    "period": "1966-1971 (UAP research)",
+    "affiliation": "University of Arizona / Institute of Atmospheric Physics",
+    "summary": "Senior atmospheric physicist at the University of Arizona who became the most credentialed scientist to seriously investigate UAP cases during the Cold War era. His 1969 critique 'Science in Default' demonstrated that the Condon Report had systematically ignored the strongest cases in its own sample, and his 1968 congressional testimony was among the first by a credentialed scientist arguing UAP represented a genuine unsolved scientific problem.",
+    "status": "detailed",
+    "tags": ["science", "atmospheric-physics", "project-blue-book", "condon-report", "congress", "historical", "1960s", "nicap"],
+    "data_file": "james-mcdonald.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

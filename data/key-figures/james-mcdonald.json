@@ -1,0 +1,200 @@
+{
+  "profile": {
+    "id": "james-mcdonald",
+    "name": "Dr. James E. McDonald",
+    "aliases": ["James McDonald", "James E. McDonald", "Dr. McDonald"],
+    "born": "May 7, 1920 - Duluth, Minnesota",
+    "died": "June 13, 1971 - Tucson, Arizona",
+    "roles": [
+      "Senior Physicist, University of Arizona Institute of Atmospheric Physics",
+      "UAP Scientific Investigator",
+      "Author - Science in Default (1969)"
+    ],
+    "service_period": "1954-1971 (University of Arizona)",
+    "organizations": [
+      "University of Arizona",
+      "American Meteorological Society",
+      "National Academy of Sciences (reviewer)",
+      "NICAP (consulting researcher)"
+    ],
+    "clearance": "Secret (former, Navy)",
+    "summary": "McDonald was arguably the most credentialed scientist to seriously investigate UAP cases during the Cold War era, combining his atmospheric physics expertise with methodical field investigation and congressional testimony. His challenge to the Condon Report's methodology and his documentation of cases the Air Force had dismissed as explained remains a foundational text in serious UAP research.",
+    "education": [
+      "Ph.D., Physics, Iowa State University, 1951",
+      "B.A., Chemistry, University of Omaha, 1942"
+    ],
+    "early_career": [
+      "Served in U.S. Navy during WWII as meteorologist",
+      "Joined University of Arizona atmospheric physics faculty in 1954",
+      "Rose to senior physicist and section chief at Institute of Atmospheric Physics"
+    ],
+    "key_events": [
+      {
+        "year": "1954",
+        "event": "Joined the University of Arizona Institute of Atmospheric Physics; established career as a leading atmospheric scientist."
+      },
+      {
+        "year": "1966",
+        "event": "Began intensive investigation of UAP cases, traveling to interview witnesses and reviewing Air Force files; became convinced the phenomenon was scientifically significant."
+      },
+      {
+        "year": "1967",
+        "event": "Accessed Project Blue Book files through contacts; concluded that the Air Force was systematically misclassifying unexplained cases as explained."
+      },
+      {
+        "year": "1968",
+        "event": "Testified before the House Committee on Science and Astronautics, arguing that UAP represented a genuine scientific problem requiring serious investigation - one of the first credentialed scientists to do so before Congress."
+      },
+      {
+        "year": "1969",
+        "event": "Published 'Science in Default' - a detailed critique demonstrating that the Condon Report had ignored or mishandled the strongest UAP cases in its sample."
+      },
+      {
+        "year": "1969",
+        "event": "Testified before the House Appropriations Subcommittee in opposition to the SST (supersonic transport) program on atmospheric grounds; was publicly humiliated by a congressman who used his UAP research to discredit his SST testimony."
+      },
+      {
+        "year": "1971",
+        "event": "Died by suicide in Tucson, Arizona, aged 51. The circumstances - occurring after personal and professional setbacks - have been a subject of speculation within the UAP research community."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "best-cases-unexplained",
+      "claim": "The strongest UAP cases, involving credentialed military and civilian witnesses with multiple independent confirmations, represent a genuinely unexplained phenomenon that science has failed to address.",
+      "status": "partially-verified"
+    },
+    {
+      "id": "blue-book-misclassification",
+      "claim": "Project Blue Book systematically misclassified unexplained cases as explained in order to support a predetermined conclusion of conventional causes.",
+      "status": "partially-verified"
+    },
+    {
+      "id": "condon-report-flawed",
+      "claim": "The Condon Committee's methodology was fundamentally flawed, and its report ignored the most compelling cases in its own sample.",
+      "status": "partially-verified"
+    },
+    {
+      "id": "scientific-neglect",
+      "claim": "The scientific establishment's failure to seriously investigate UAP represents a major failure of scientific responsibility given the available evidence.",
+      "status": "partially-verified"
+    },
+    {
+      "id": "atmospheric-misidentification-insufficient",
+      "claim": "Standard atmospheric phenomena (temperature inversions, ball lightning, etc.) cannot account for the best-documented UAP cases involving consistent physical characteristics and behavioral patterns.",
+      "status": "partially-verified"
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Full academic credentials as senior physicist at a major research university",
+      "Held government security clearances (Navy, Secret)",
+      "Personally interviewed hundreds of witnesses across documented UAP cases",
+      "Critiques of Blue Book methodology were later corroborated by J. Allen Hynek",
+      "Congressional testimony delivered under oath before the House Committee on Science and Astronautics",
+      "Methodological rigor recognized even by critics who disagreed with his conclusions"
+    ],
+    "contradicting": [
+      "Career UAP advocacy led to professional marginalization within the atmospheric science community",
+      "Death circumstances introduced speculation that has at times clouded assessment of his legacy",
+      "Some cases he championed were later given conventional explanations",
+      "His advocacy went beyond what his data strictly supported according to some contemporaries"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "j-allen-hynek",
+      "name": "Dr. J. Allen Hynek",
+      "role": "Astronomer; Air Force UFO consultant; founder of CUFOS",
+      "relationship": "Colleague who shared McDonald's view that serious scientific investigation was warranted; Hynek's later public break with the Air Force aligned with positions McDonald had held years earlier."
+    },
+    {
+      "id": "donald-keyhoe",
+      "name": "Maj. Donald Keyhoe",
+      "role": "NICAP director; UAP author and investigator",
+      "relationship": "NICAP director with whom McDonald worked informally; both were among the era's most credentialed voices arguing for genuine UAP inquiry."
+    },
+    {
+      "id": "edward-ruppelt",
+      "name": "Capt. Edward J. Ruppelt",
+      "role": "USAF Captain; Project Blue Book Chief (1951-1953)",
+      "relationship": "Ruppelt's candid insider account was one of the primary sources McDonald used to demonstrate Blue Book's internal contradictions and predetermined debunking policy."
+    }
+  ],
+  "career_connections": [
+    {
+      "event": "Blue Book file review and critique (1967)",
+      "connected_to": "edward-ruppelt",
+      "type": "figure",
+      "notes": "Used Ruppelt's candid insider account to demonstrate internal Blue Book contradictions and systematic misclassification."
+    },
+    {
+      "event": "Congressional testimony before House Committee on Science and Astronautics (1968)",
+      "connected_to": "j-allen-hynek",
+      "type": "figure",
+      "notes": "Both advocated for scientific seriousness on UAP before Congress; Hynek cited McDonald as an influence on his own public position."
+    },
+    {
+      "event": "Science in Default - Condon Report critique (1969)",
+      "connected_to": "j-allen-hynek",
+      "type": "figure",
+      "notes": "Shared critique of Condon Committee methodology; Hynek's later accounts corroborated McDonald's analysis of the report's failures."
+    },
+    {
+      "event": "NICAP consulting research and UAP case documentation (1966-1971)",
+      "connected_to": "donald-keyhoe",
+      "type": "figure",
+      "notes": "Both leading voices of the era calling for scientific UAP investigation; McDonald provided academic credibility to NICAP's advocacy."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "July 29, 1968",
+      "type": "congressional-testimony",
+      "title": "Testimony before House Committee on Science and Astronautics",
+      "outlet": "U.S. House of Representatives, Committee on Science and Astronautics",
+      "notes": "One of the first credentialed scientists to testify before Congress on UAP, arguing the phenomenon warranted serious scientific investigation and that the Air Force's handling had been inadequate."
+    },
+    {
+      "date": "1969",
+      "type": "written",
+      "title": "Science in Default",
+      "outlet": "AAAS UFO Symposium Proceedings (American Association for the Advancement of Science)",
+      "notes": "Detailed analytical critique demonstrating that the Condon Report had ignored or mishandled the strongest UAP cases in its own sample; remains a standard reference in serious UAP research."
+    },
+    {
+      "date": "1966-1971",
+      "type": "written",
+      "title": "Field Investigation Reports and Technical Memoranda",
+      "outlet": "NICAP and academic circulation",
+      "notes": "Ongoing field investigation reports and technical memoranda submitted to NICAP and circulated to academic colleagues, documenting cases the Air Force had closed as explained."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Science in Default (1969 AAAS Symposium Paper)",
+      "url": "https://files.ncas.org/ufosymposium/mcdonald.html",
+      "type": "Academic Paper",
+      "notes": "Primary source - McDonald's most influential written work, presenting his case-by-case critique of the Condon Report."
+    },
+    {
+      "title": "Congressional Testimony Record - House Committee on Science and Astronautics (1968)",
+      "url": null,
+      "type": "Government Document",
+      "notes": "Official transcript of McDonald's July 29, 1968 testimony; available through congressional records."
+    },
+    {
+      "title": "UFOs: A Scientific Debate (ed. Sagan and Page, 1972)",
+      "url": null,
+      "type": "Book",
+      "notes": "Cornell University Press anthology containing McDonald's work and placing it in context of the broader scientific debate of the era."
+    },
+    {
+      "title": "Project Blue Book Files - National Archives",
+      "url": "https://www.archives.gov/research/military/air-force/ufos",
+      "type": "Government Archive",
+      "notes": "Primary source material McDonald reviewed and critiqued; now publicly available through NARA."
+    }
+  ]
+}

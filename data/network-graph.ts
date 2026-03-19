@@ -684,5 +684,13 @@ export const graphData: GraphData = {
     { source: 'edward-ruppelt', target: 'j-allen-hynek',      label: 'Hynek served as Blue Book scientific consultant under Ruppelt; foundational professional relationship in early official UAP inquiry' },
     { source: 'edward-ruppelt', target: 'donald-keyhoe',      label: "Ruppelt's insider account and Keyhoe's NICAP research were the era's two most credible public accounts of official UAP investigation" },
     { source: 'edward-ruppelt', target: 'nicap',              label: "Ruppelt's candid 1956 book was foundational to NICAP's credibility case for genuine UAP phenomena" },
+
+    // James McDonald connections
+    { source: 'james-mcdonald', target: 'j-allen-hynek',      label: 'colleagues in scientific UAP advocacy; Hynek later adopted positions McDonald had argued years earlier and corroborated his Condon critique' },
+    { source: 'james-mcdonald', target: 'donald-keyhoe',      label: 'NICAP collaboration; both leading credentialed voices calling for scientific UAP investigation in the 1960s' },
+    { source: 'james-mcdonald', target: 'project-blue-book',  label: 'accessed and critiqued Blue Book files; demonstrated systematic misclassification of unexplained cases as explained' },
+    { source: 'james-mcdonald', target: 'nicap',              label: 'consulting researcher who provided scientific credibility to NICAP advocacy work and case documentation' },
+    { source: 'james-mcdonald', target: 'edward-ruppelt',     label: "used Ruppelt's candid insider account as primary evidence of Blue Book's internal contradictions and predetermined conclusions" },
+    { source: 'james-mcdonald', target: 'condon-report-1969', label: "authored 'Science in Default' demonstrating Condon Report ignored its strongest cases; most rigorous published critique of the report" },
   ],
 };

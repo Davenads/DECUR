@@ -62,6 +62,7 @@ import kirstenGillibrandData from './kirsten-gillibrand.json';
 import timBurchettData from './tim-burchett.json';
 import johnBurroughsData from './john-burroughs.json';
 import edwardRuppeltData from './edward-ruppelt.json';
+import jamesMcdonaldData from './james-mcdonald.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -115,4 +116,5 @@ export const insiderRegistry: Record<string, any> = {
   'tim-burchett': timBurchettData,
   'john-burroughs': johnBurroughsData,
   'edward-ruppelt': edwardRuppeltData,
+  'james-mcdonald': jamesMcdonaldData,
 };
