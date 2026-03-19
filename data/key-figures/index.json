@@ -1260,5 +1260,19 @@
     "data_file": "fife-symington.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "michael-herrera",
+    "name": "Michael Herrera",
+    "aliases": ["Michael Herrera", "Cpl. Michael Herrera"],
+    "role": "U.S. Marine Corps Veteran; UAP Whistleblower",
+    "period": "2009-present",
+    "affiliation": "U.S. Marine Corps (former)",
+    "summary": "U.S. Marine Corps veteran who testified at the July 2023 House Oversight UAP hearing and filed a sworn ICIG complaint claiming his six-man patrol encountered a massive octagonal craft in Sumatra in 2009, being loaded by personnel in unmarked uniforms who subsequently threatened his patrol to silence. His account implies direct human interaction with non-human technology through a classified Special Access Program.",
+    "status": "detailed",
+    "tags": ["military", "marine-corps", "whistleblower", "hearing-2023", "sap"],
+    "data_file": "michael-herrera.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

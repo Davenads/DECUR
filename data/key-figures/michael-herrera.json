@@ -1,0 +1,204 @@
+{
+  "profile": {
+    "id": "michael-herrera",
+    "name": "Michael Herrera",
+    "aliases": ["Michael Herrera", "Cpl. Michael Herrera"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Corporal, U.S. Marine Corps, 3rd Marine Expeditionary Brigade",
+      "UAP Whistleblower (2023)"
+    ],
+    "service_period": "U.S. Marine Corps (served through at least 2009); 2023-present (public disclosure)",
+    "organizations": ["U.S. Marine Corps", "3rd Marine Expeditionary Brigade"],
+    "clearance": null,
+    "summary": "U.S. Marine Corps veteran who testified at the July 2023 House Oversight UAP hearing and filed a sworn ICIG complaint claiming his six-man patrol encountered a massive octagonal craft in Sumatra in 2009, being loaded by personnel in unmarked uniforms who subsequently threatened his patrol to silence. His account implies direct human interaction with non-human technology through a classified Special Access Program.",
+    "education": [],
+    "early_career": [
+      "Enlisted in the U.S. Marine Corps; assigned to the 3rd Marine Expeditionary Brigade as a Corporal"
+    ],
+    "key_events": [
+      {
+        "year": "2009",
+        "event": "Deployed to Sumatra, Indonesia on a humanitarian assistance mission following major earthquakes; claims his patrol encountered a massive octagonal craft approximately 300 feet in diameter being loaded by unidentified personnel in the jungle."
+      },
+      {
+        "year": "2009",
+        "event": "Herrera states his patrol was threatened by unknown personnel and ordered to remain silent; claims he was subsequently warned by military superiors not to discuss the incident."
+      },
+      {
+        "year": "2009",
+        "event": "Patrol escorted away from the site; Herrera alleges chain-of-command suppression of the incident began immediately following the encounter."
+      },
+      {
+        "year": "2023",
+        "event": "Filed a sworn statement with the Intelligence Community Inspector General under whistleblower protections; provided detailed account of the 2009 Sumatra incident after approximately 14 years of silence."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "Testified at the House Oversight Subcommittee UAP hearing alongside David Grusch, Ryan Graves, and David Fravor; described the Sumatra encounter publicly for the first time under oath."
+      },
+      {
+        "year": "2023",
+        "event": "Gave multiple media interviews expanding on his account; stated that some members of his patrol have corroborated aspects of the incident in private but have not come forward publicly."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "UAP whistleblower",
+      "relationship": "Both testified at the July 2023 House Oversight UAP hearing and filed whistleblower complaints with the ICIG; Grusch's broader SAP allegations provide institutional context for Herrera's account of human-operated UAP interaction."
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "Navy pilot, UAP witness",
+      "relationship": "Co-testified at the July 2023 House Oversight hearing; both are military veterans from different service branches who brought firsthand UAP accounts before Congress."
+    },
+    {
+      "id": "tim-burchett",
+      "name": "Tim Burchett",
+      "role": "U.S. Representative (R-TN)",
+      "relationship": "Co-organized the July 2023 House Oversight hearing and publicly supported Herrera's right to testify; one of the primary congressional architects of the 2023 UAP transparency push."
+    },
+    {
+      "id": "mike-gallagher",
+      "name": "Mike Gallagher",
+      "role": "U.S. Representative (R-WI)",
+      "relationship": "Co-chaired the July 2023 hearing where Herrera testified; Gallagher's committee role directly enabled Herrera's public disclosure."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2023",
+      "type": "formal-complaint",
+      "title": "ICIG Whistleblower Filing",
+      "outlet": "Intelligence Community Inspector General",
+      "notes": "Sworn statement filed with the Intelligence Community Inspector General under whistleblower protections detailing the 2009 Sumatra encounter and subsequent suppression by military superiors."
+    },
+    {
+      "date": "Jul 2023",
+      "type": "congressional-testimony",
+      "title": "House Oversight Subcommittee UAP Hearing",
+      "outlet": "U.S. House Oversight Subcommittee on National Security, the Border, and Foreign Affairs",
+      "interviewer": "Rep. Tim Burchett; Rep. Mike Gallagher",
+      "notes": "Testified under oath before the House Oversight Subcommittee; described the octagonal craft, the unknown personnel loading supplies, and the threats made against his patrol. Appeared alongside David Grusch, Ryan Graves, and David Fravor."
+    },
+    {
+      "date": "2023",
+      "type": "television",
+      "title": "Post-Hearing Media Interviews",
+      "outlet": "NewsNation and various outlets",
+      "notes": "Multiple television and podcast interviews following his congressional testimony, expanding on the Sumatra account and allegations of broader cover-up through classified Special Access Programs."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Herrera's patrol encountered a massive octagonal UAP approximately 300 feet in diameter in the Sumatran jungle in 2009.",
+      "status": "unverified",
+      "notes": "Herrera has provided consistent accounts across testimony and interviews; he filed a sworn statement with the ICIG under penalty of perjury; his military service in Sumatra during this period is verifiable and consistent with documented humanitarian missions following the 2009 earthquakes. However, no other members of his patrol have publicly corroborated the account, and no physical evidence has been produced."
+    },
+    {
+      "claim": "Unknown personnel in unmarked uniforms were actively loading the craft with supplies.",
+      "status": "unverified",
+      "notes": "This is Herrera's stated claim from testimony and interviews. It implies a human-operated SAP with regular interaction with non-human technology. No corroborating witnesses have come forward publicly."
+    },
+    {
+      "claim": "Herrera and his patrol were threatened to maintain silence and were subsequently subject to military suppression.",
+      "status": "unverified",
+      "notes": "This pattern is consistent with accounts from other military UAP witnesses. Herrera filed under whistleblower protections, suggesting institutional seriousness regarding the threat of retaliation. No independent corroboration of the specific threats exists."
+    },
+    {
+      "claim": "The UAP was being operated or maintained as part of a classified human-run Special Access Program.",
+      "status": "unverified",
+      "notes": "This is the most extraordinary implication of Herrera's account. It is consistent with David Grusch's broader claims about UAP SAPs but cannot be independently verified. The specific claim of uniformed humans actively interfacing with a non-human craft distinguishes Herrera's account from all other 2023 hearing witnesses."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Active military service record is verifiable; deployment to Sumatra in 2009 is consistent with documented humanitarian missions following the September 2009 Sumatra earthquakes",
+      "Filed sworn statements under penalty of perjury with the ICIG, a formal legal mechanism",
+      "Account has been consistent across multiple interviews and sworn testimony",
+      "Testified before Congress publicly, accepting personal and professional exposure",
+      "Whistleblower protections indicate institutional seriousness regarding his disclosures",
+      "Account is internally coherent and operationally specific, including unit, location, date range, and patrol composition",
+      "The humanitarian mission context (post-earthquake Sumatra) is independently verifiable, placing his unit in that region at that time"
+    ],
+    "contradicting": [
+      "No members of his six-man patrol have publicly corroborated the account",
+      "No physical evidence has been produced",
+      "The account is the most operationally extraordinary of any 2023 hearing witness - direct human-UAP interaction goes beyond other contemporaneous testimony",
+      "The approximately 14-year delay before public disclosure introduces memory reliability concerns",
+      "He has not released the identities of patrol members who reportedly corroborated the account in private",
+      "The level of operational detail (octagonal shape, 300-foot diameter, supply loading) is highly specific in ways that are difficult to verify or falsify independently"
+    ]
+  },
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Both testified at the July 2023 House Oversight hearing; both filed whistleblower complaints with the ICIG regarding UAP programs",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Co-testified at the July 2023 House Oversight hearing; both are military veterans and UAP witnesses from different service branches",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "mike-gallagher",
+      "node_label": "Mike Gallagher",
+      "relationship": "Gallagher co-chaired the July 2023 hearing where Herrera testified",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "tim-burchett",
+      "node_label": "Tim Burchett",
+      "relationship": "Burchett co-organized the July 2023 hearing and publicly supported Herrera's testimony",
+      "connection_type": "investigative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "House Oversight Subcommittee UAP Hearing - Official Transcript",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "type": "Government Record",
+      "notes": "Official transcript of the July 26, 2023 hearing; includes Herrera's sworn opening statement and questioning by subcommittee members"
+    },
+    {
+      "title": "The Debrief - Michael Herrera Testimony Coverage",
+      "url": "https://thedebrief.org/",
+      "type": "Journalism",
+      "notes": "The Debrief's reporting on Herrera's July 2023 congressional testimony and ICIG filing"
+    },
+    {
+      "title": "NewsNation Interview with Michael Herrera",
+      "url": "https://www.newsnation.com/",
+      "type": "Television",
+      "notes": "Post-hearing interview expanding on the 2009 Sumatra encounter and allegations of SAP involvement"
+    },
+    {
+      "title": "ICIG Whistleblower Filing (2023)",
+      "url": null,
+      "type": "Government Record",
+      "notes": "Sworn statement filed with the Intelligence Community Inspector General under whistleblower protections; not publicly released in full"
+    },
+    {
+      "title": "U.S. Marine Corps - 3rd Marine Expeditionary Brigade Sumatra Deployment Records",
+      "url": null,
+      "type": "Military Record",
+      "notes": "Service records confirming Herrera's assignment and deployment to Sumatra during the 2009 humanitarian assistance mission; corroborates the operational context of his account"
+    }
+  ]
+}

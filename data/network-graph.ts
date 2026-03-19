@@ -777,5 +777,11 @@ export const graphData: GraphData = {
     { source: 'jesse-marcel', target: 'roswell-1947',        label: 'primary military intelligence officer who recovered the Roswell debris field material and reported it to base command in July 1947' },
     { source: 'jesse-marcel', target: 'stanton-friedman',    label: 'Friedman located and interviewed Marcel in 1978, launching modern Roswell research; Marcel was Friedman\'s key primary military source' },
     { source: 'jesse-marcel', target: 'philip-corso',        label: 'both are Roswell-era military witnesses; Corso claimed later Pentagon involvement with debris Marcel originally recovered' },
+
+    // Michael Herrera connections
+    { source: 'michael-herrera', target: 'david-grusch',    label: 'co-testified at the July 2023 House Oversight hearing; both filed whistleblower complaints with the ICIG regarding UAP programs' },
+    { source: 'michael-herrera', target: 'ryan-graves',     label: 'co-testified at the July 2023 House Oversight hearing; both are military veterans who brought firsthand UAP accounts before Congress' },
+    { source: 'michael-herrera', target: 'tim-burchett',    label: 'Burchett co-organized the July 2023 hearing where Herrera testified publicly for the first time' },
+    { source: 'michael-herrera', target: 'mike-gallagher',  label: 'Gallagher co-chaired the July 2023 hearing where Herrera described the 2009 Sumatra encounter' },
   ],
 };
