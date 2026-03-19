@@ -184,6 +184,9 @@ export const graphData: GraphData = {
 
     // Additional organizations for Mike Gallagher
     { id: 'shield-ai',         name: 'Shield AI',                   type: 'organization', val: 2 },
+
+    // Additional organizations for James Fox
+    { id: 'the-phenomenon-film', name: "The Phenomenon (2020)",     type: 'document',     val: 3 },
   ],
 
   links: [
@@ -753,6 +756,14 @@ export const graphData: GraphData = {
     { source: 'nathan-twining', target: 'edward-ruppelt',      label: 'Ruppelt led Blue Book - the program whose institutional lineage traces directly to Twining\'s 1947 recommendation to establish a permanent classified study group' },
     { source: 'nathan-twining', target: 'j-allen-hynek',       label: 'Hynek served as scientific consultant to Blue Book, the program Twining\'s memo created; Twining\'s institutional framework defined the official UAP inquiry Hynek spent decades working within' },
     { source: 'nathan-twining', target: 'roswell-1947',        label: 'Twining was at Wright-Patterson AFB during the July 1947 Roswell recovery period; some researchers link his presence to material processing; his September 1947 memo followed the incident by weeks' },
+
+    // James Fox connections
+    { source: 'james-fox',   target: 'jacques-vallee',          label: 'featured in The Phenomenon; long-term source and collaborator' },
+    { source: 'james-fox',   target: 'leslie-kean',             label: 'fellow credentialed journalist; parallel UAP research and sourcing networks' },
+    { source: 'james-fox',   target: 'nick-pope',               label: 'Pope appeared in Fox documentaries as institutional UK government source' },
+    { source: 'james-fox',   target: 'george-knapp',            label: 'fellow investigative journalist covering UAP; shared interview networks over decades' },
+    { source: 'james-fox',   target: 'the-phenomenon-film',     label: 'produced' },
+    { source: 'the-phenomenon-film', target: 'uaptf-preliminary-assessment', label: 'themes validated by' },
 
     // Jesse Marcel Sr. connections
     { source: 'jesse-marcel', target: 'roswell-1947',        label: 'primary military intelligence officer who recovered the Roswell debris field material and reported it to base command in July 1947' },

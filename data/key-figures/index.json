@@ -1232,5 +1232,19 @@
     "data_file": "jesse-marcel.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "james-fox",
+    "name": "James Fox",
+    "aliases": ["James Fox"],
+    "role": "Documentary Filmmaker; Producer, 'The Phenomenon' (2020)",
+    "period": "2003-present",
+    "affiliation": "Independent Filmmaker",
+    "summary": "Documentary filmmaker and investigative journalist who produced 'The Phenomenon' (2020) - widely considered the most credible UAP documentary ever made, featuring on-record statements from multiple heads of state, senior military officials, and scientists including Jacques Vallee. His films contributed to the 2020-2021 disclosure wave and are distinguished by their insistence on institutional, on-the-record sources.",
+    "status": "detailed",
+    "tags": ["journalist", "filmmaker", "documentary", "disclosure"],
+    "data_file": "james-fox.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]

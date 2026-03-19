@@ -1,0 +1,195 @@
+{
+  "profile": {
+    "id": "james-fox",
+    "name": "James Fox",
+    "aliases": ["James Fox"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Documentary Filmmaker",
+      "Investigative Journalist",
+      "Producer - 'Out of the Blue' (2003), 'I Know What I Saw' (2009), 'The Phenomenon' (2020)"
+    ],
+    "service_period": "2003-present",
+    "organizations": ["Independent Filmmaker"],
+    "clearance": null,
+    "summary": "American documentary filmmaker and investigative journalist who produced 'The Phenomenon' (2020) - widely considered the most credible UAP documentary ever made, featuring on-record statements from multiple heads of state, senior military officials, and scientists including Jacques Vallee. His approach is distinguished by insisting on on-the-record testimony from credentialed institutional sources and avoiding speculation. His films contributed to the 2020-2021 UAP disclosure wave.",
+    "education": [],
+    "early_career": [
+      "Began as a journalist and filmmaker in the 1990s",
+      "Developed focus on UAP research and documentary production through extensive firsthand interviewing of government and military witnesses"
+    ],
+    "key_events": [
+      {
+        "year": "2003",
+        "event": "Released 'Out of the Blue' - a comprehensive documentary covering UAP cases with government and military witnesses; narrated by Peter Coyote. Established Fox as a serious documentary filmmaker in the UAP space."
+      },
+      {
+        "year": "2009",
+        "event": "Released 'I Know What I Saw' - featured on-record testimony from former Arizona Governor Fife Symington, Belgian Air Force General Wilfried De Brouwer, and other senior officials. Aired on History Channel."
+      },
+      {
+        "year": "2020",
+        "event": "Released 'The Phenomenon' - widely considered the most credible UAP documentary ever made; featured on-record statements from former heads of state, senior military officials, and scientists including Jacques Vallee and J. Allen Hynek archive footage."
+      },
+      {
+        "year": "Oct 2020",
+        "event": "'The Phenomenon' debuted to strong critical reception including coverage in The Guardian and Washington Post; described as a film that helped legitimize the 2020-2021 UAP disclosure wave."
+      },
+      {
+        "year": "2021",
+        "event": "The themes and subjects of 'The Phenomenon' were validated by the ODNI UAP Preliminary Assessment released in June 2021, which confirmed unexplained aerial phenomena as a genuine national security concern."
+      },
+      {
+        "year": "2023",
+        "event": "Attended and covered the July 2023 House Oversight UAP hearing featuring testimony from David Grusch, David Fravor, and Ryan Graves; continued producing follow-up documentary work on the disclosure process."
+      },
+      {
+        "year": "2024",
+        "event": "Continued work on a follow-up documentary project covering the post-Grusch disclosure landscape and the ongoing congressional UAP investigation."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "jacques-vallee",
+      "name": "Jacques Vallee",
+      "role": "Computer scientist and UAP researcher",
+      "relationship": "Vallee appeared in 'The Phenomenon' and has been a key source and long-term collaborator for Fox's documentary work, providing scientific credibility and access to his extensive research network."
+    },
+    {
+      "id": "nick-pope",
+      "name": "Nick Pope",
+      "role": "Former UK MoD UAP investigator",
+      "relationship": "Pope appeared in Fox's documentaries and has been a recurring on-the-record source providing institutional UK government perspective on UAP."
+    },
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist and UAP researcher",
+      "relationship": "Close collaborative relationship; both are credentialed journalists who have worked to legitimize UAP research through rigorous sourcing and on-the-record institutional testimony."
+    },
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "Investigative journalist",
+      "relationship": "Fellow investigative journalist covering UAP; shared interview networks and collaborative professional relationship spanning decades of UAP reporting."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2003",
+      "type": "film",
+      "title": "Out of the Blue",
+      "outlet": "Fastwalker Productions",
+      "notes": "Documentary featuring military and government witnesses to UAP; narrated by Peter Coyote; established Fox as a serious documentary filmmaker in the UAP space. Included testimony from former military pilots, FAA officials, and senior government witnesses."
+    },
+    {
+      "date": "2009",
+      "type": "film",
+      "title": "I Know What I Saw",
+      "outlet": "History Channel",
+      "notes": "Documentary featuring on-record testimony from former Arizona Governor Fife Symington, Belgian Air Force General Wilfried De Brouwer, and other senior officials; aired on History Channel. Focused on institutional and governmental witnesses from multiple countries."
+    },
+    {
+      "date": "2020",
+      "type": "film",
+      "title": "The Phenomenon",
+      "outlet": "1091 Pictures",
+      "notes": "The most credible UAP documentary ever produced; features on-record statements from former heads of state, senior military officers, and scientists including Jacques Vallee and J. Allen Hynek archive footage. Received mainstream press coverage in The Guardian, Washington Post, and other outlets. Described as a catalyst for the 2020-2021 disclosure wave."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "UAP represent a real and unexplained phenomenon documented by credible government and military witnesses worldwide",
+      "status": "verified",
+      "notes": "Fox's films feature dozens of on-the-record senior officials, military officers, and scientists from multiple countries affirming this. The subsequent ODNI UAP Preliminary Assessment (2021) validated that unexplained aerial phenomena are real and represent a serious national security concern."
+    },
+    {
+      "claim": "Governments have deliberately withheld UAP information from the public",
+      "status": "partially-verified",
+      "notes": "Multiple subjects in Fox's films state this directly on the record. Subsequent congressional testimony (2023) and AARO reports support the claim of limited and incomplete disclosure. Fox curates and presents this through witnesses rather than asserting it directly himself."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Fox makes no extraordinary personal claims - his credibility derives from the quality and institutional credentials of his on-the-record subjects",
+      "Multiple heads of state and senior military officers have spoken on camera for his films, providing unusually high-status corroboration",
+      "His methodology prioritizes institutional credibility over speculation; he lets witnesses speak for themselves",
+      "'The Phenomenon' received mainstream press coverage including in The Guardian and Washington Post",
+      "He operates as a journalist and filmmaker rather than an ideological advocate, seeking credentialed sources across political and national lines"
+    ],
+    "contradicting": [
+      "As a filmmaker, Fox shapes narrative through editing and selection of subjects - he is not a neutral observer",
+      "He is an advocate for taking UAP seriously, which introduces selection bias toward confirming sources",
+      "Some critics argue his films over-weight witness testimony and under-weight skeptical or alternative explanations",
+      "He has a professional and financial interest in UAP being taken seriously as a subject worthy of documentary treatment"
+    ]
+  },
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "jacques-vallee",
+      "node_label": "Jacques Vallee",
+      "relationship": "Vallee appeared in 'The Phenomenon' and has been a key source and collaborator for Fox's documentary work",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Close collaborative relationship; both are credentialed journalists who have worked to legitimize UAP research",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "nick-pope",
+      "node_label": "Nick Pope",
+      "relationship": "Pope appeared in Fox's documentaries and has been a recurring on-the-record source for institutional UK perspective",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 0,
+      "node_type": "person",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Fellow investigative journalist covering UAP; shared interview networks and collaborative relationship over decades",
+      "connection_type": "collaborative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Out of the Blue (documentary, 2003)",
+      "url": null,
+      "type": "Film",
+      "notes": "Primary source - Fox's first major UAP documentary; 94 minutes; narrated by Peter Coyote"
+    },
+    {
+      "title": "I Know What I Saw (documentary, 2009)",
+      "url": null,
+      "type": "Film",
+      "notes": "Fox's second major documentary; aired on History Channel; features Governor Symington and General De Brouwer"
+    },
+    {
+      "title": "The Phenomenon (documentary, 2020)",
+      "url": "https://www.amazon.com/Phenomenon-Nick-Pope/dp/B08KFKGX1L",
+      "type": "Film",
+      "notes": "Fox's third and most acclaimed documentary; 1 hr 40 min; distributed by 1091 Pictures"
+    },
+    {
+      "title": "The Guardian review of 'The Phenomenon' (October 2020)",
+      "url": null,
+      "type": "Article",
+      "notes": "Mainstream press coverage validating the documentary's approach and credibility"
+    },
+    {
+      "title": "Washington Post coverage of 'The Phenomenon' and the 2020-2021 disclosure wave",
+      "url": null,
+      "type": "Article",
+      "notes": "Coverage documenting the film's role in the broader UAP disclosure context"
+    }
+  ]
+}
