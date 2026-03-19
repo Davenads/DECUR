@@ -73,6 +73,7 @@ import peterSturrockData from './peter-sturrock.json';
 import nathanTwiningData from './nathan-twining.json';
 import jesseMarcelData from './jesse-marcel.json';
 import jamesFoxData from './james-fox.json';
+import fifeSymingtonData from './fife-symington.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -137,4 +138,5 @@ export const insiderRegistry: Record<string, any> = {
   'nathan-twining': nathanTwiningData,
   'jesse-marcel': jesseMarcelData,
   'james-fox': jamesFoxData,
+  'fife-symington': fifeSymingtonData,
 };

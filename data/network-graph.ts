@@ -187,6 +187,9 @@ export const graphData: GraphData = {
 
     // Additional organizations for James Fox
     { id: 'the-phenomenon-film', name: "The Phenomenon (2020)",     type: 'document',     val: 3 },
+
+    // Additional cases for Fife Symington
+    { id: 'phoenix-lights',      name: 'Phoenix Lights (1997)',     type: 'case',         val: 4 },
   ],
 
   links: [
@@ -764,6 +767,11 @@ export const graphData: GraphData = {
     { source: 'james-fox',   target: 'george-knapp',            label: 'fellow investigative journalist covering UAP; shared interview networks over decades' },
     { source: 'james-fox',   target: 'the-phenomenon-film',     label: 'produced' },
     { source: 'the-phenomenon-film', target: 'uaptf-preliminary-assessment', label: 'themes validated by' },
+
+    // Fife Symington connections
+    { source: 'fife-symington', target: 'james-fox',       label: 'recantation featured in I Know What I Saw; Fox provided platform for 2007 public reversal' },
+    { source: 'fife-symington', target: 'phoenix-lights',  label: 'primary elected-official witness; initially dismissed publicly, then recanted and stated he personally observed the craft' },
+    { source: 'phoenix-lights', target: 'fife-symington',  label: 'Governor of Arizona at time of event; later admitted to witnessing the craft' },
 
     // Jesse Marcel Sr. connections
     { source: 'jesse-marcel', target: 'roswell-1947',        label: 'primary military intelligence officer who recovered the Roswell debris field material and reported it to base command in July 1947' },

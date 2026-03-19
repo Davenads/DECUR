@@ -1246,5 +1246,19 @@
     "data_file": "james-fox.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "fife-symington",
+    "name": "Gov. Fife Symington",
+    "aliases": ["Fife Symington", "Fife Symington III", "Governor Symington"],
+    "role": "Governor of Arizona (1991-1997); U.S. Air Force Captain",
+    "period": "1991-1997",
+    "affiliation": "State of Arizona",
+    "summary": "Former Arizona Governor and Air Force veteran who initially mocked the March 1997 Phoenix Lights event with a staged alien costume press conference, then publicly recanted in 2007 - stating he personally witnessed a massive structured craft that night and that it was unlike any known aircraft. His reversal as a credentialed military officer and former governor is one of the most significant official UAP admissions on record.",
+    "status": "detailed",
+    "tags": ["official", "governor", "phoenix-lights", "air-force", "arizona"],
+    "data_file": "fife-symington.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

@@ -105,6 +105,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'nathan-twining':     { label: 'Gen. Nathan Twining',    color: '#7c3aed' },
   'jesse-marcel':       { label: 'Maj. Jesse Marcel Sr.',  color: '#92400e' },
   'james-fox':          { label: 'James Fox',               color: '#0369a1' },
+  'fife-symington':     { label: 'Gov. Fife Symington',     color: '#d97706' },
 };
 
 const UAP_COLOR = '#93c5e8';
