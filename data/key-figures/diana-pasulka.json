@@ -1,0 +1,209 @@
+{
+  "profile": {
+    "id": "diana-pasulka",
+    "name": "Prof. Diana Walsh Pasulka",
+    "aliases": ["Diana Pasulka", "Diana Walsh Pasulka", "D.W. Pasulka"],
+    "born": "Not publicly disclosed",
+    "died": null,
+    "roles": [
+      "Professor and Department Chair, Philosophy and Religion, UNCW",
+      "Author - American Cosmic (2019)",
+      "Author - Encounters (2023)"
+    ],
+    "service_period": "2000s-present (academic career)",
+    "organizations": [
+      "University of North Carolina Wilmington",
+      "Oxford University Press (author)"
+    ],
+    "clearance": null,
+    "summary": "Pasulka is the foremost academic researcher at the intersection of UAP phenomena and religious studies, gaining unprecedented access to anonymous government and technology industry insiders who allowed her to document their work firsthand. Her books, published by Oxford University Press and Crown, argue that UAP experiences are reshaping belief systems in ways that parallel historical religious transformations, and she is one of the few academics to personally observe alleged crash retrieval-related field sites.",
+    "education": [
+      "Ph.D., Religious Studies, University of California Santa Barbara",
+      "M.A., University of California Santa Barbara",
+      "B.A. - details not publicly disclosed"
+    ],
+    "early_career": [
+      "Joined UNCW faculty and eventually became chair of the Department of Philosophy and Religion",
+      "Began researching Catholic saints and their connections to technology before pivoting to UAP phenomena as a parallel cultural system",
+      "Connected with government and tech industry researchers through academic networks, gaining unusual insider access for a humanities scholar"
+    ],
+    "key_events": [
+      {
+        "year": "2016",
+        "event": "Accompanied government researchers to a remote site in New Mexico believed to be associated with a UAP crash retrieval; described the experience in American Cosmic, noting physical materials were being examined on-site."
+      },
+      {
+        "year": "2019",
+        "event": "Published 'American Cosmic: UFOs, Religion, Technology' (Oxford University Press) - the first book from a peer-reviewed academic press to treat contemporary UAP phenomena as a serious cultural and religious phenomenon."
+      },
+      {
+        "year": "2020",
+        "event": "Began advising tech industry and entertainment figures on UAP narratives; gave talks at Google and other Silicon Valley institutions on UAP as a transformative social phenomenon."
+      },
+      {
+        "year": "2021",
+        "event": "Interviewed by multiple major media outlets following congressional UAP hearings; positioned as a leading academic voice on UAP's social and cultural dimensions."
+      },
+      {
+        "year": "2023",
+        "event": "Published 'Encounters: Experiences with Nonhuman Intelligences' (Crown Publishers) - a follow-up exploring her own anomalous experiences and interviews with contactees and insiders."
+      },
+      {
+        "year": "2023",
+        "event": "Participated in SOL Foundation symposia alongside Garry Nolan, David Grusch, and other figures from the disclosure advocacy network; became a bridge between academic, religious, and intelligence community perspectives on UAP."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "uap-as-religious-phenomenon",
+      "claim": "UAP experiences share structural, psychological, and cultural features with historical religious and mystical experiences, and should be studied through that lens rather than purely through physics or engineering.",
+      "status": "partially-verified"
+    },
+    {
+      "id": "information-ecosystem-control",
+      "claim": "Powerful institutions in both government and the tech industry are actively shaping the information ecosystem around UAP in ways that parallel historical management of religious narratives, with deliberate seeding of media and entertainment.",
+      "status": "unverified"
+    },
+    {
+      "id": "witness-transformation",
+      "claim": "Individuals who have close UAP encounters frequently report profound and measurable changes in their worldview, values, and sometimes physiological state - a pattern consistent across cultures and time periods.",
+      "status": "partially-verified"
+    },
+    {
+      "id": "crash-retrieval-site-access",
+      "claim": "She personally accompanied researchers to a site in New Mexico associated with a UAP crash retrieval, and observed physical evidence and materials being catalogued by individuals with government connections.",
+      "status": "unverified"
+    },
+    {
+      "id": "technology-consciousness-link",
+      "claim": "Advanced UAP-related phenomena have catalyzed significant technological development through channels that are not publicly acknowledged, and tech industry insiders are aware of this.",
+      "status": "unverified"
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Tenured professor and department chair at an accredited university (UNCW)",
+      "Primary books published by Oxford University Press and Crown - both mainstream academic and trade publishers with editorial standards",
+      "Unprecedented institutional access to anonymous insiders who allowed firsthand documentation of their activities",
+      "Consistent academic methodology of treating the phenomenon through comparative religious studies - a legitimate scholarly lens",
+      "Cited and engaged with by other serious researchers including Garry Nolan and participants in SOL Foundation symposia"
+    ],
+    "contradicting": [
+      "Relies heavily on anonymous sources whose identities cannot be independently verified by readers or other researchers",
+      "Core claims about site access and physical material evidence are unverifiable by design due to source protection",
+      "Blurs the boundary between academic analysis and belief advocacy in her later work, especially Encounters",
+      "Some central claims are structured in ways that make them unfalsifiable - a methodological weakness in a scholarly context",
+      "Academic colleagues in religious studies have raised questions about whether the methodology maintains sufficient critical distance from its subject"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Stanford professor of pathology; UAP materials analyst; SOL Foundation co-founder",
+      "relationship": "Stanford professor who collaborated with Pasulka and is widely believed - though disputed - to be one of the scientific figures she refers to pseudonymously as 'Tyler' in American Cosmic. Both participated in SOL Foundation symposia and represent the scientific-humanities bridge in the modern disclosure community."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Hal Puthoff",
+      "role": "Physicist; SRI remote viewing program director; TTSA co-founder",
+      "relationship": "Puthoff is among the scientific insiders Pasulka interacted with while researching American Cosmic, representing the physics-oriented side of the UAP insider network she documents."
+    },
+    {
+      "id": "avi-loeb",
+      "name": "Prof. Avi Loeb",
+      "role": "Harvard astrophysicist; Galileo Project founder",
+      "relationship": "Both are credentialed academics who have taken UAP and nonhuman intelligence seriously while working within legitimate institutional frameworks, though approaching from different disciplines - Loeb from astrophysics, Pasulka from religious studies."
+    },
+    {
+      "id": "colm-kelleher",
+      "name": "Dr. Colm Kelleher",
+      "role": "Biochemist; NIDS deputy administrator; AAWSAP research manager",
+      "relationship": "Researcher Pasulka intersected with through the same Bigelow and AAWSAP network of insiders that informs her documentation of the UAP research ecosystem."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "figure",
+      "node_id": "garry-nolan",
+      "node_label": "Dr. Garry Nolan",
+      "relationship": "Nolan is widely believed to be among the scientific figures who accompanied Pasulka on the 2016 New Mexico site visit documented in American Cosmic, though this identification is disputed.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Dr. Hal Puthoff",
+      "relationship": "Puthoff is among the scientific insiders Pasulka interviewed and interacted with while writing American Cosmic, appearing as part of the insider network of scientists working on UAP materials analysis.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "garry-nolan",
+      "node_label": "Dr. Garry Nolan",
+      "relationship": "Both participated in SOL Foundation symposia; Nolan provides scientific grounding for Pasulka's humanities-based research and the two represent complementary academic approaches to UAP phenomena.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "program",
+      "node_id": "sol-foundation",
+      "node_label": "Sol Foundation",
+      "relationship": "Participated in SOL Foundation symposia as a bridge between the academic humanities, experiencer research, and the disclosure advocacy community.",
+      "connection_type": "institutional"
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2019",
+      "type": "written",
+      "title": "American Cosmic: UFOs, Religion, Technology",
+      "outlet": "Oxford University Press",
+      "notes": "Primary academic disclosure - the first book from a peer-reviewed academic press treating contemporary UAP as a serious cultural and religious phenomenon. Documents Pasulka's access to anonymous government and tech industry insiders and her fieldwork including the 2016 New Mexico site visit."
+    },
+    {
+      "date": "2023",
+      "type": "written",
+      "title": "Encounters: Experiences with Nonhuman Intelligences",
+      "outlet": "Crown Publishers (Penguin Random House)",
+      "notes": "Follow-up book expanding into personal anomalous experiences, interviews with contactees, and the broader ecosystem of UAP experiencers. More personal in tone than American Cosmic, reflecting Pasulka's own evolving relationship to the subject."
+    },
+    {
+      "date": "2020",
+      "type": "speech",
+      "title": "Academic Lectures and Media Appearances (Google, Lex Fridman, and others)",
+      "outlet": "Google Talks, Lex Fridman Podcast, and various academic venues",
+      "notes": "Series of public appearances including a Google Talk on UAP as a transformative social phenomenon, podcast appearances with Lex Fridman, and academic conference presentations connecting UAP phenomena to religious studies frameworks."
+    }
+  ],
+  "sources": [
+    {
+      "title": "American Cosmic: UFOs, Religion, Technology (Oxford University Press, 2019)",
+      "url": "https://global.oup.com/academic/product/american-cosmic-9780190692889",
+      "type": "Book",
+      "notes": "Primary source - Oxford University Press academic publication; first major peer-reviewed press treatment of contemporary UAP as religious phenomenon."
+    },
+    {
+      "title": "Encounters: Experiences with Nonhuman Intelligences (Crown, 2023)",
+      "url": "https://www.penguinrandomhouse.com/books/691182/encounters-by-diana-walsh-pasulka/",
+      "type": "Book",
+      "notes": "Follow-up trade publication from Crown/Penguin Random House; explores personal experiences and contactee interviews."
+    },
+    {
+      "title": "UNCW Faculty Profile - Department of Philosophy and Religion",
+      "url": "https://www.uncw.edu/cas/phi/facultystaff/pasulka.html",
+      "type": "Academic Profile",
+      "notes": "Institutional profile confirming academic position, credentials, and research focus at the University of North Carolina Wilmington."
+    },
+    {
+      "title": "Lex Fridman Podcast - Diana Pasulka Interview",
+      "url": "https://lexfridman.com/diana-pasulka/",
+      "type": "Podcast",
+      "notes": "Notable long-form interview discussing American Cosmic, her insider access, the New Mexico site visit, and the relationship between UAP phenomena and religious transformation."
+    }
+  ]
+}

@@ -1106,5 +1106,19 @@
     "data_file": "james-mcdonald.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "diana-pasulka",
+    "name": "Prof. Diana Walsh Pasulka",
+    "aliases": ["Diana Pasulka", "Diana Walsh Pasulka"],
+    "role": "Professor of Religious Studies, UNCW; American Cosmic author",
+    "period": "2016-present (UAP research)",
+    "affiliation": "University of North Carolina Wilmington",
+    "summary": "Pasulka is the foremost academic researcher at the intersection of UAP phenomena and religious studies, gaining unprecedented access to anonymous government and technology industry insiders who allowed her to document their work firsthand. Her Oxford University Press book American Cosmic (2019) and follow-up Encounters (2023) argue that UAP experiences are reshaping belief systems in ways that parallel historical religious transformations.",
+    "status": "detailed",
+    "tags": ["academic", "religious-studies", "american-cosmic", "encounters", "consciousness", "silicon-valley", "uncw", "humanities"],
+    "data_file": "diana-pasulka.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

@@ -692,5 +692,11 @@ export const graphData: GraphData = {
     { source: 'james-mcdonald', target: 'nicap',              label: 'consulting researcher who provided scientific credibility to NICAP advocacy work and case documentation' },
     { source: 'james-mcdonald', target: 'edward-ruppelt',     label: "used Ruppelt's candid insider account as primary evidence of Blue Book's internal contradictions and predetermined conclusions" },
     { source: 'james-mcdonald', target: 'condon-report-1969', label: "authored 'Science in Default' demonstrating Condon Report ignored its strongest cases; most rigorous published critique of the report" },
+
+    // Diana Pasulka connections
+    { source: 'diana-pasulka', target: 'garry-nolan',    label: 'Nolan is widely believed to be among the insiders documented in American Cosmic; both participated in SOL Foundation symposia' },
+    { source: 'diana-pasulka', target: 'hal-puthoff',    label: 'Puthoff appears in American Cosmic as part of the insider network of scientists working on UAP materials analysis' },
+    { source: 'diana-pasulka', target: 'sol-foundation', label: 'participated in SOL Foundation symposia as academic humanities bridge between scientific and experiencer UAP research communities' },
+    { source: 'diana-pasulka', target: 'avi-loeb',       label: 'both credentialed academics who have taken UAP seriously within legitimate institutional frameworks, from complementary disciplines' },
   ],
 };
