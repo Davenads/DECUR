@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Next.js 16.2+ injects a <nextjs-portal> shadow DOM element in dev mode.
+   Its internal backdrop uses pointer-events:all which blocks mobile touch
+   events on all page content. This override restores normal touch behavior. */
+nextjs-portal {
+  pointer-events: none;
+}
+
 /* Custom base styles */
 @layer base {
   body {
