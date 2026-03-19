@@ -1162,5 +1162,19 @@
     "data_file": "charles-halt.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "marco-rubio",
+    "name": "Sen. Marco Rubio",
+    "aliases": ["Marco Rubio", "Senator Rubio"],
+    "role": "U.S. Senator (FL); Chairman, Senate Intelligence Committee (2020-2021)",
+    "period": "2011-present",
+    "affiliation": "U.S. Senate",
+    "summary": "U.S. Senator from Florida and former Chairman of the Senate Intelligence Committee who authored the 2020 UAP Task Force legislative mandate - the first official government UAP reporting body since Project Blue Book. Has consistently framed UAP as a national security concern and pushed for government transparency.",
+    "status": "detailed",
+    "tags": ["congress", "senate", "legislation", "intelligence", "uaptf"],
+    "data_file": "marco-rubio.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

@@ -723,5 +723,12 @@ export const graphData: GraphData = {
     { source: 'charles-halt', target: 'john-burroughs',     label: 'Burroughs was a junior airman under Halt\'s command during the Rendlesham incident; Halt later advocated for his VA medical benefits case' },
     { source: 'charles-halt', target: 'nick-pope',          label: 'Pope investigated Rendlesham for UK MOD and has publicly corroborated the significance and authenticity of Halt\'s account' },
     { source: 'charles-halt', target: 'halt-memo-1981',     label: 'authored' },
+
+    // Marco Rubio connections
+    { source: 'marco-rubio', target: 'uap-task-force',      label: 'primary Senate architect of the UAPTF legislative mandate in the FY2020 Intelligence Authorization Act' },
+    { source: 'marco-rubio', target: 'harry-reid',          label: 'Reid pioneered Senate UAP advocacy; Rubio formalized it through the 2020 UAPTF mandate' },
+    { source: 'marco-rubio', target: 'kirsten-gillibrand',  label: 'Rubio\'s UAPTF mandate was the institutional foundation for Gillibrand\'s subsequent SASC oversight work and UAP Disclosure Act' },
+    { source: 'marco-rubio', target: 'chuck-schumer',       label: 'collaborated on UAP transparency legislation; Schumer brought the UAP Disclosure Act to the Senate floor' },
+    { source: 'marco-rubio', target: 'david-grusch',        label: 'publicly acknowledged Grusch\'s 2023 whistleblower allegations as credible; called for declassification and investigation' },
   ],
 };

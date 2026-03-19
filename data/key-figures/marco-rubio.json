@@ -1,0 +1,217 @@
+{
+  "profile": {
+    "id": "marco-rubio",
+    "name": "Sen. Marco Rubio",
+    "aliases": ["Marco Rubio", "Senator Rubio"],
+    "born": "May 28, 1971 - Miami, Florida",
+    "died": null,
+    "roles": [
+      "U.S. Senator (R-FL)",
+      "Chairman, Senate Select Committee on Intelligence (2020-2021)",
+      "Vice Chairman, Senate Select Committee on Intelligence (2021-present)",
+      "Primary Senate architect, UAP Task Force legislative mandate (2020)"
+    ],
+    "service_period": "2011-present (U.S. Senate)",
+    "organizations": [
+      "U.S. Senate",
+      "Senate Select Committee on Intelligence",
+      "UAP Task Force (legislative architect)"
+    ],
+    "clearance": "Congressional oversight access (Gang of Eight)",
+    "summary": "U.S. Senator from Florida and former Chairman of the Senate Select Committee on Intelligence who authored the 2020 UAP Task Force legislative mandate - the first official government UAP reporting body since Project Blue Book. Has consistently framed UAP as a national security concern and pushed for government transparency, including publicly acknowledging David Grusch's 2023 whistleblower allegations as credible and warranting investigation.",
+    "education": [
+      "J.D., University of Miami School of Law, 1996",
+      "B.S., University of Florida, 1993"
+    ],
+    "early_career": [
+      "Served in the Florida House of Representatives (2000-2008), including as Speaker of the Florida House (2006-2008), building a record in state politics before running for the U.S. Senate",
+      "Elected to the U.S. Senate in 2010 in a three-way race, defeating then-Governor Charlie Crist; re-elected in 2016 and 2022",
+      "Joined the Senate Select Committee on Intelligence early in his tenure, gaining access to classified intelligence products and oversight responsibilities that would later inform his UAP advocacy"
+    ],
+    "key_events": [
+      {
+        "year": "2011",
+        "event": "Elected to U.S. Senate representing Florida; began serving on Senate Intelligence Committee with access to classified intelligence briefings."
+      },
+      {
+        "year": "2020",
+        "event": "Served as Acting Chairman, Senate Select Committee on Intelligence; inserted UAP Task Force language into the FY2020 Intelligence Authorization Act, the first official mandate for a UAP reporting body since Project Blue Book."
+      },
+      {
+        "year": "Jun 2020",
+        "event": "FY2020 Intelligence Authorization Act passed with the UAP Task Force provision; Rubio cited national security concerns - including the possibility of foreign adversary technology - as the primary justification for the mandate."
+      },
+      {
+        "year": "Jun 2020",
+        "event": "Gave CBS News interview stating UAP are a genuine national security concern and that American military pilots are reporting real, unexplained phenomena that need to be investigated rather than dismissed."
+      },
+      {
+        "year": "Aug 2020",
+        "event": "UAP Task Force officially established under the Department of the Navy in accordance with Rubio's legislative mandate."
+      },
+      {
+        "year": "2021",
+        "event": "Continued pressure for transparency; the ODNI UAP Preliminary Assessment report was released in June 2021 in direct response to congressional mandates including Rubio's UAPTF provision."
+      },
+      {
+        "year": "2022",
+        "event": "Supported follow-on UAP legislation as the UAPTF transitioned to the All-domain Anomaly Resolution Office (AARO); maintained consistent position that the government must take UAP seriously as a national security matter."
+      },
+      {
+        "year": "2023",
+        "event": "Publicly acknowledged David Grusch's whistleblower allegations as credible and warranting investigation; called for full declassification of UAP-related programs and increased congressional access."
+      },
+      {
+        "year": "2024",
+        "event": "Continued serving on Senate Intelligence Committee; co-sponsored follow-on UAP transparency legislation and maintained oversight pressure on AARO's access and reporting."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "harry-reid",
+      "name": "Harry Reid",
+      "role": "Former U.S. Senate Majority Leader",
+      "relationship": "Reid pioneered Senate UAP advocacy through the AAWSAP/AATIP funding in 2007-2008; Rubio built on that legacy by formalizing UAP reporting requirements through the UAPTF mandate in 2020, institutionalizing what Reid had started."
+    },
+    {
+      "id": "chuck-schumer",
+      "name": "Chuck Schumer",
+      "role": "U.S. Senate Majority Leader",
+      "relationship": "Collaborated on UAP Disclosure Act provisions in 2022-2023; Schumer brought the UAP Disclosure Act to the Senate floor, representing parallel Senate leadership engagement on transparency that complemented Rubio's intelligence-committee-based approach."
+    },
+    {
+      "id": "kirsten-gillibrand",
+      "name": "Kirsten Gillibrand",
+      "role": "U.S. Senator (D-NY)",
+      "relationship": "Senate colleague who authored the UAP Disclosure Act of 2023 and chairs the SASC Emerging Threats subcommittee; Rubio's UAPTF mandate (2020) created the institutional foundation that Gillibrand's subsequent oversight work was built upon."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "UAP whistleblower, former NRO representative to the UAP Task Force",
+      "relationship": "Rubio publicly acknowledged Grusch's 2023 whistleblower allegations as credible in media interviews and called for declassification and investigation; Grusch had served on the UAP Task Force that Rubio's legislation created."
+    }
+  ],
+  "claims": [
+    {
+      "id": "uap-national-security-threat",
+      "category": "national security",
+      "claim": "UAP represent a genuine national security concern that the U.S. government must investigate seriously, regardless of origin.",
+      "status": "verified",
+      "notes": "Rubio has consistently made this claim based on intelligence briefings in his capacity as Senate Intelligence Committee chair. The subsequent establishment of UAPTF, AARO, and multiple congressional hearings validate the institutional seriousness of this position. The claim is framed cautiously around national security - not extraterrestrial claims - and is supported by ODNI's own reporting."
+    },
+    {
+      "id": "military-pilots-real-phenomena",
+      "category": "observation",
+      "claim": "Military pilots are reporting real, unexplained phenomena that are not drones, birds, or identified foreign technology.",
+      "status": "partially-verified",
+      "notes": "Multiple ODNI and DoD reports have confirmed unexplained sightings by military pilots with sensor corroboration; however, the nature of the phenomena remains officially unresolved. The ODNI 2021 Preliminary Assessment confirmed 143 unexplained incidents, supporting the core claim that reports are genuine even if the phenomena remain unidentified."
+    },
+    {
+      "id": "government-withheld-uap-info",
+      "category": "government program",
+      "claim": "The government has withheld UAP-related information from Congress and from appropriate oversight bodies.",
+      "status": "partially-verified",
+      "notes": "Rubio has alluded to this in multiple interviews; David Grusch's 2023 testimony under oath directly supports this; AARO's own Historical Record Report acknowledged access limitations to some legacy programs. The passage of UAP transparency legislation suggests Congress itself believed it lacked adequate information."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Senior U.S. Senator with access to the highest-level classified intelligence briefings as a member and former chairman of the Senate Select Committee on Intelligence, including Gang of Eight briefings",
+      "Actions match stated concerns: Rubio's legislative work directly created the UAP Task Force, the first institutional UAP reporting body since Project Blue Book - his advocacy produced durable institutional results",
+      "Consistent and non-sensationalist framing across years of public statements; has deliberately avoided extraordinary claims, focusing instead on national security and transparency",
+      "No financial motive or commercial interest in UAP disclosure; his advocacy is grounded in his oversight role rather than personal enrichment",
+      "Bipartisan credibility: worked across the aisle with Democratic colleagues including Gillibrand and Schumer, suggesting his UAP concern transcends partisan positioning",
+      "Institutional credibility as ranking Intelligence Committee member lends weight to his assessments of what has and has not been disclosed"
+    ],
+    "contradicting": [
+      "Has not made extraordinary personal claims about UAP phenomena; his credibility is high but his direct knowledge is secondhand through classified briefings rather than firsthand observation or investigation",
+      "His framing is deliberately cautious and could reflect political positioning - framing UAP as a Chinese or Russian technology threat is a low-risk political move regardless of actual intelligence content",
+      "Has not publicly revealed the substance of classified briefings that informed his concern, making independent assessment of his knowledge base impossible"
+    ]
+  },
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "program",
+      "node_id": "uap-task-force",
+      "node_label": "UAP Task Force",
+      "relationship": "Primary Senate architect of the UAPTF legislative mandate in the FY2020 Intelligence Authorization Act",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "harry-reid",
+      "node_label": "Harry Reid",
+      "relationship": "Reid pioneered Senate UAP advocacy; Rubio continued and formalized this work through the UAPTF provision in 2020",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "kirsten-gillibrand",
+      "node_label": "Kirsten Gillibrand",
+      "relationship": "Senate colleague who co-led follow-on UAP legislation including the UAP Disclosure Act of 2023; Rubio's UAPTF mandate was the institutional foundation for her oversight work",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Rubio publicly acknowledged Grusch's 2023 whistleblower allegations as credible and called for declassification and investigation",
+      "connection_type": "investigative"
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jun 2020",
+      "type": "television",
+      "title": "CBS News Interview on UAP and National Security",
+      "outlet": "CBS News",
+      "notes": "Rubio stated on CBS that UAP represent a genuine national security threat and that the government needs to take reports from military pilots seriously. Framed UAP as potentially foreign adversary technology requiring urgent investigation rather than dismissal."
+    },
+    {
+      "date": "2020",
+      "type": "speech",
+      "title": "Senate Floor Statement Accompanying UAP Task Force Provision",
+      "outlet": "U.S. Senate",
+      "notes": "Rubio's public statements accompanying the UAPTF legislative provision in the FY2020 Intelligence Authorization Act; framed UAP investigation as a national security imperative and called for a systematic reporting mechanism for military UAP encounters."
+    },
+    {
+      "date": "2023",
+      "type": "speech",
+      "title": "Public Statement on David Grusch Whistleblower Allegations",
+      "outlet": "Multiple media outlets",
+      "notes": "Publicly acknowledged Grusch's allegations as credible and called for full investigation and declassification of UAP-related programs; stated that the Senate Intelligence Committee would pursue the matter through appropriate oversight channels."
+    }
+  ],
+  "sources": [
+    {
+      "title": "CBS News Interview - Marco Rubio on UAP (June 2020)",
+      "url": "https://www.cbsnews.com/news/ufo-military-intelligence-senate-intelligence-committee/",
+      "type": "Interview",
+      "notes": "Primary public disclosure - Rubio on CBS discussing UAP as national security concern"
+    },
+    {
+      "title": "FY2020 Intelligence Authorization Act, Senate Report 116-442",
+      "url": "https://www.congress.gov/bill/116th-congress/senate-bill/3905",
+      "type": "Legislative record",
+      "notes": "Primary legislative record of the UAP Task Force mandate Rubio inserted"
+    },
+    {
+      "title": "ODNI UAP Preliminary Assessment (June 2021)",
+      "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf",
+      "type": "Government report",
+      "notes": "Produced in response to the congressional mandates Rubio helped create; confirms unexplained military UAP encounters"
+    },
+    {
+      "title": "The Hill - Rubio Calls Grusch Allegations Credible (2023)",
+      "url": "https://thehill.com/policy/defense/4088891-rubio-says-ufo-whistleblower-claims-about-secret-government-programs-should-be-taken-seriously/",
+      "type": "Article",
+      "notes": "Rubio's public acknowledgment of Grusch's whistleblower allegations as credible and warranting investigation"
+    }
+  ]
+}
