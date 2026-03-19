@@ -71,6 +71,24 @@
       "significance": "If accurate, represents one of the earliest claimed instances of a credentialed government-adjacent figure being shown crash retrieval evidence. The 1977 timing, the CRS/Carter administration context, and the Wright-Patterson location are all historically plausible."
     }
   },
+  "credibility": {
+    "supporting": [
+      "Harvard Law School J.D. and a verifiable 50-year career as a prominent civil liberties attorney - professional credentials are strong and entirely independent of UAP claims",
+      "Successfully represented John Burroughs in the landmark VA benefits case, resulting in an unprecedented settlement that compelled review of classified medical records related to the Rendlesham Forest incident - a concrete, documented legal achievement",
+      "His legal career spanning the Pentagon Papers, Silkwood, and Iran-Contra demonstrates genuine access to sensitive government matters and a documented personal commitment to confronting institutional power",
+      "His claim to have viewed classified UAP photographs at the Library of Congress while conducting research for a Carter administration briefing is historically contextualized by the known 1977 CRS UAP study effort",
+      "Has made factual claims in legal proceedings and public lectures over decades without significant internal contradiction in his core account",
+      "Long-term, financially costly commitment to UAP advocacy and witness legal representation spanning nearly five decades represents a sustained personal investment unlikely to be explained by opportunism alone"
+    ],
+    "contradicting": [
+      "The Library of Congress photograph viewing account rests entirely on his testimony - no contemporaneous documentation, corroborating witnesses, or declassified records have been produced to substantiate it",
+      "His UAP claims are frequently embedded within broader political and ideological frameworks, raising motivated reasoning concerns about how evidence is selected and presented",
+      "His role as legal advocate for UAP witnesses creates a structural conflict of interest with objective assessment of those witnesses' claims",
+      "Some colleagues and critics have characterized his public UAP narratives as going well beyond what his documented legal work can substantiate",
+      "The specific photographs he claims to have seen have never been corroborated by any other person who was present or involved in the 1977 CRS research effort",
+      "His longstanding association with Steven Greer and CSETI-adjacent disclosure networks has been cited by more mainstream researchers as compromising his credibility on UAP matters"
+    ]
+  },
   "associated_people": [
     {
       "id": "david-grusch",
