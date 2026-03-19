@@ -1,0 +1,159 @@
+{
+  "profile": {
+    "id": "jesse-marcel",
+    "name": "Maj. Jesse Marcel Sr.",
+    "aliases": ["Jesse Marcel", "Jesse A. Marcel", "Jesse Marcel Sr.", "Major Marcel"],
+    "born": "May 27, 1907 - Bayou Blue, Louisiana",
+    "died": "August 24, 1986 - Houma, Louisiana",
+    "roles": [
+      "Base Intelligence Officer, 509th Bomb Group, Roswell Army Air Field (1947)",
+      "U.S. Army Air Forces Intelligence Officer"
+    ],
+    "service_period": "1942-1950 (U.S. Army Air Forces)",
+    "organizations": ["U.S. Army Air Forces", "509th Bomb Group", "Roswell Army Air Field"],
+    "clearance": "Classified (former)",
+    "summary": "U.S. Army Air Forces intelligence officer who was the primary military figure to recover and examine the Roswell crash debris in July 1947. In a landmark 1978 interview with Stanton Friedman, Marcel became the first credible military whistleblower to publicly state that the weather balloon explanation was false and that the recovered material had anomalous properties unlike anything he had encountered. His testimony launched the modern era of Roswell research.",
+    "education": [],
+    "early_career": [
+      "Served as intelligence officer in the U.S. Army Air Forces during World War II",
+      "Flew combat missions in the Pacific theater",
+      "Assigned to the 509th Bomb Group at Roswell Army Air Field - the only nuclear-armed bomb group in the world at the time"
+    ],
+    "key_events": [
+      { "year": "1907", "event": "Born May 27, 1907 in Bayou Blue, Louisiana." },
+      { "year": "1942", "event": "Enlisted in the U.S. Army Air Forces; served as intelligence officer and flew combat missions in the Pacific theater." },
+      { "year": "1947", "event": "Assigned as base intelligence officer, 509th Bomb Group, Roswell Army Air Field, New Mexico - the only nuclear-armed bomb group in the world at that time." },
+      { "year": "Jul 1947", "event": "Ranch foreman Mac Brazel reported an unusual debris field on his property; Marcel was dispatched by base commander Col. William Blanchard to investigate and recover the material." },
+      { "year": "Jul 1947", "event": "Marcel recovered debris from the Brazel ranch that he later described as unlike any known material; reported it to base command; Col. Blanchard issued a press release stating the 509th had recovered a 'flying disc.'" },
+      { "year": "Jul 1947", "event": "The official story was changed within 24 hours to a weather balloon; Marcel was ordered to fly the material to Fort Worth Army Air Field where he posed for press photographs with weather balloon remnants; he later stated the photographed material was not what was actually recovered." },
+      { "year": "1947", "event": "Promoted; subsequently assigned to other postings; kept silent about Roswell for over 30 years." },
+      { "year": "1978", "event": "Interviewed by nuclear physicist Stanton Friedman; gave the first public military account of the Roswell incident, describing the recovered material as having unusual properties; this interview launched modern Roswell research." },
+      { "year": "1979", "event": "Interviewed for 'UFOs Are Real' documentary; Marcel's account was the first filmed testimony from a Roswell military witness." },
+      { "year": "1980", "event": "Featured prominently in 'The Roswell Incident' by Charles Berlitz and William Moore - the first major book on Roswell, based substantially on Marcel's account." },
+      { "year": "1986", "event": "Died August 24, 1986 in Houma, Louisiana." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton Friedman",
+      "role": "Nuclear physicist and UFO researcher",
+      "relationship": "Friedman conducted the 1978 interview that launched modern Roswell research; he located Marcel and was the first to record his account, making Marcel the first credible military whistleblower to speak publicly about Roswell."
+    },
+    {
+      "id": "philip-corso",
+      "name": "Philip Corso",
+      "role": "U.S. Army officer and author",
+      "relationship": "Corso claimed to have overseen distribution of Roswell-derived material at the Pentagon in a later assignment; both are Roswell-era military witnesses whose accounts, while independent, are part of the same event cluster."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1979",
+      "type": "television",
+      "title": "UFOs Are Real documentary interview",
+      "outlet": "Stanton Friedman / UFOs Are Real (1979)",
+      "notes": "Marcel's first filmed public account of the Roswell recovery; described debris as unlike any known material and confirmed the weather balloon story was false; the first military whistleblower testimony on Roswell on record."
+    },
+    {
+      "date": "1980",
+      "type": "written",
+      "title": "The Roswell Incident",
+      "outlet": "Grosset and Dunlap (Berlitz and Moore)",
+      "notes": "Primary source interview featured in the first major Roswell book; Marcel's detailed account of the recovery and the staged press photographs forms the backbone of the work."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The material recovered at Roswell was not a weather balloon",
+      "status": "contested",
+      "notes": "Marcel stated definitively that the material he was photographed with (weather balloon remnants) was not the material he actually recovered from the Brazel ranch; he had extensive experience identifying weather balloons and is categorical that the real debris was different. The Air Force subsequently changed their explanation multiple times (weather balloon, then Project Mogul balloon), which Marcel's supporters argue itself indicates the original story was false."
+    },
+    {
+      "claim": "The recovered debris had anomalous physical properties unlike known materials",
+      "status": "unverified",
+      "notes": "Marcel described material that could not be cut, burned, or permanently deformed. His son Jesse Marcel Jr. gave similar independent descriptions of handling material as a child. No physical evidence has been publicly produced to verify these accounts."
+    },
+    {
+      "claim": "The official government cover story was deliberately fabricated",
+      "status": "partially-verified",
+      "notes": "The staged press photographs are documented historical fact. The official explanation changed multiple times. Gen. Roger Ramey publicly contradicted Col. Blanchard's original 'flying disc' press release. The pattern of conflicting official accounts supports Marcel's claim of deliberate misdirection, though the specific nature of what was actually recovered remains disputed."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Career military officer with no apparent financial motive when he first spoke in 1978",
+      "Had extensive professional experience identifying military aircraft, equipment, and weather balloons - making his categorical denial credible",
+      "The staged press photographs are documented historical fact, consistent with his account of deliberate misdirection",
+      "His son Jesse Marcel Jr. independently described handling unusual material as a child without coaching, corroborating the anomalous nature of the debris",
+      "Stanton Friedman, a nuclear physicist with experience evaluating technical claims, considered Marcel a highly credible source",
+      "Marcel kept silent for over 30 years before speaking - not the behavior of someone seeking attention or profit"
+    ],
+    "contradicting": [
+      "Marcel spoke 31 years after the fact with no contemporaneous written record beyond official reports that support the weather balloon explanation",
+      "His account has been embellished and elaborated by others over time, making it difficult to isolate his original claims",
+      "The Project Mogul explanation - a classified balloon array for monitoring Soviet nuclear tests - does account for some anomalous characteristics of the debris",
+      "Marcel may have had limited visibility into the full scope of the recovery operation",
+      "Memory reliability degrades significantly over three decades",
+      "Some researchers note that his recollections across different interviews contain minor inconsistencies"
+    ]
+  },
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "case",
+      "node_id": "roswell",
+      "node_label": "Roswell Incident",
+      "relationship": "Primary military intelligence officer who recovered the Roswell debris field material and first reported it to base command",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "stanton-friedman",
+      "node_label": "Stanton Friedman",
+      "relationship": "Friedman conducted the 1978 interview that launched modern Roswell research and Marcel's public account",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Project Blue Book",
+      "relationship": "Marcel's Roswell recovery preceded and contributed to the creation of Project Sign and the broader official UAP investigation apparatus",
+      "connection_type": "institutional"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stanton Friedman interview with Jesse Marcel (1978)",
+      "url": null,
+      "type": "Interview",
+      "notes": "Original recorded interview; partially available; catalyst for all subsequent Roswell research"
+    },
+    {
+      "title": "UFOs Are Real (documentary, 1979)",
+      "url": null,
+      "type": "Documentary",
+      "notes": "Marcel's first filmed testimony; the primary visual record of his account"
+    },
+    {
+      "title": "The Roswell Incident",
+      "url": "https://www.amazon.com/Roswell-Incident-Charles-Berlitz/dp/0448143038",
+      "type": "Book",
+      "notes": "Berlitz, C. and Moore, W.L. (1980). Grosset and Dunlap. First major book on Roswell; built substantially on Marcel's account."
+    },
+    {
+      "title": "The Roswell Legacy",
+      "url": "https://www.amazon.com/Roswell-Legacy-Jesse-Marcel-Jr/dp/1601630204",
+      "type": "Book",
+      "notes": "Marcel, Jesse Jr. and Beason, Linda (2009). New Page Books. Jesse Marcel Jr.'s account of handling the material as a child."
+    },
+    {
+      "title": "USAF Historical Research Agency - 509th Bomb Group Records",
+      "url": null,
+      "type": "Government Record",
+      "notes": "Official unit records for the 509th Bomb Group at Roswell Army Air Field"
+    }
+  ]
+}

@@ -1218,5 +1218,19 @@
     "data_file": "nathan-twining.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "jesse-marcel",
+    "name": "Maj. Jesse Marcel Sr.",
+    "aliases": ["Jesse Marcel", "Jesse A. Marcel", "Jesse Marcel Sr."],
+    "role": "Base Intelligence Officer, 509th Bomb Group, Roswell Army Air Field (1947)",
+    "period": "1942-1950",
+    "affiliation": "U.S. Army Air Forces",
+    "summary": "U.S. Army Air Forces intelligence officer who was the primary military figure to recover and examine the Roswell crash debris in July 1947. In a landmark 1978 interview with Stanton Friedman, Marcel became the first credible military whistleblower to publicly state that the weather balloon explanation was false and that the recovered material had anomalous properties unlike anything he had encountered.",
+    "status": "detailed",
+    "tags": ["military", "roswell", "historical", "whistleblower", "army-air-forces"],
+    "data_file": "jesse-marcel.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
