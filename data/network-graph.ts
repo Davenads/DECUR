@@ -448,6 +448,15 @@ export const graphData: GraphData = {
     { source: 'dylan-borland',   target: 'jay-stratton',      label: 'reported to AARO under' },
     { source: 'dylan-borland',   target: 'jeremy-corbell',    label: 'documented by on Weaponized podcast' },
 
+    // Matthew Brown connections
+    { source: 'matthew-brown',   target: 'jeremy-corbell',          label: 'Congressional submission vehicle for IMCON report' },
+    { source: 'matthew-brown',   target: 'david-grusch',            label: 'Mutual defense-intelligence whistleblower referral' },
+    { source: 'matthew-brown',   target: 'george-knapp',            label: 'Co-hosted 3-part WEAPONIZED interview (Apr-May 2025)' },
+    { source: 'matthew-brown',   target: 'immaculate-constellation', label: 'Author of congressional IMCON report; OSD discovery' },
+    { source: 'matthew-brown',   target: 'aatip',                   label: 'IMCON established in direct response to AATIP 2017 exposure' },
+    { source: 'matthew-brown',   target: 'aaro',                    label: 'Reviewed classified AARO transcripts; alleges obstruction' },
+    { source: 'matthew-brown',   target: 'pentagon-ousd',           label: 'Served as policy and technical advisor (OSD, OUSD(I&S))' },
+
     // Case node connections
     // Nimitz Tic Tac
     { source: 'nimitz-tic-tac',        target: 'david-fravor',              label: 'witnessed by' },
