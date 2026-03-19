@@ -178,6 +178,9 @@ export const graphData: GraphData = {
     // New documents (batch 2)
     { id: 'ndaa-fy2024-uap-provisions',   name: 'NDAA FY2024 UAP',        type: 'document', val: 3 },
     { id: 'dni-annual-report-uap-2024',   name: 'DNI UAP Report 2024',    type: 'document', val: 2 },
+
+    // Thomas Wilson
+    { id: 'dia-organization',  name: 'Defense Intelligence Agency', type: 'organization', val: 3 },
   ],
 
   links: [
@@ -705,5 +708,14 @@ export const graphData: GraphData = {
     { source: 'townsend-brown', target: 'eric-davis',       label: "Davis's theoretical work on spacetime metric engineering operates in the same research tradition as Brown's electrogravitics, both connected to the classified advanced propulsion community" },
     { source: 'townsend-brown', target: 'project-blue-book', label: 'Project Winterhaven (1953) was submitted contemporaneously with peak Blue Book activity; both represent mid-1950s U.S. government engagement with anomalous aerospace phenomena' },
     { source: 'townsend-brown', target: 'naval-intelligence', label: 'FBI confirmed Brown as the U.S. Navy top radar detection expert in 1943; his classified research career was anchored within the Navy intelligence apparatus' },
+
+    // Thomas Wilson connections
+    { source: 'thomas-wilson',   target: 'eric-davis',         label: 'co-subject of the Wilson-Davis Memo; Davis recorded their alleged 2002 meeting' },
+    { source: 'thomas-wilson',   target: 'edgar-mitchell',     label: 'reportedly present at 1997 Pentagon UAP briefing; memo surfaced from Mitchell estate' },
+    { source: 'thomas-wilson',   target: 'hal-puthoff',        label: 'connected through NIDS/AAWSAP network and Eric Davis collaboration' },
+    { source: 'thomas-wilson',   target: 'wilson-davis-memo',  label: 'central subject of' },
+    { source: 'thomas-wilson',   target: 'dia-organization',   label: 'directed (1999-2002)' },
+    { source: 'wilson-davis-memo', target: 'thomas-wilson',    label: 'describes access denial experienced by' },
+    { source: 'steven-greer',    target: 'thomas-wilson',      label: 'reportedly present at 1997 Pentagon UAP briefing with Wilson' },
   ],
 };

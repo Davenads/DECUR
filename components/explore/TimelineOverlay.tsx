@@ -97,6 +97,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'james-mcdonald':     { label: 'Dr. McDonald',        color: '#0369a1' },
   'diana-pasulka':      { label: 'Prof. Pasulka',        color: '#be185d' },
   'townsend-brown':     { label: 'T.T. Brown',           color: '#a16207' },
+  'thomas-wilson':      { label: 'Adm. Thomas Wilson',   color: '#1d4ed8' },
 };
 
 const UAP_COLOR = '#93c5e8';

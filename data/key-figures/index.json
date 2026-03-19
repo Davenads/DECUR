@@ -1134,5 +1134,19 @@
     "data_file": "townsend-brown.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "thomas-wilson",
+    "name": "Adm. Thomas R. Wilson",
+    "aliases": ["Thomas Wilson", "Tom Wilson", "Vice Adm. Wilson"],
+    "role": "Director, Defense Intelligence Agency (1999-2002)",
+    "period": "1999-2002",
+    "affiliation": "Defense Intelligence Agency",
+    "summary": "Retired Vice Admiral and former DIA Director who is the central figure in the Wilson-Davis Memo - a leaked document describing his alleged confirmation that a private contractor was reverse-engineering non-human technology under a classified SAP, and that he had been denied access despite his rank.",
+    "status": "detailed",
+    "tags": ["intelligence", "dod", "wilson-davis-memo", "sap", "disclosure"],
+    "data_file": "thomas-wilson.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

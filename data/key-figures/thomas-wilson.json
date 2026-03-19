@@ -1,0 +1,205 @@
+{
+  "profile": {
+    "id": "thomas-wilson",
+    "name": "Vice Adm. Thomas R. Wilson",
+    "aliases": ["Thomas Wilson", "Tom Wilson", "Adm. Thomas Wilson", "Vice Adm. Wilson"],
+    "born": "1948 - Rhode Island",
+    "died": null,
+    "roles": [
+      "Director, Defense Intelligence Agency (1999-2002)",
+      "Vice Director for Intelligence (J2), Joint Chiefs of Staff",
+      "Vice Admiral, U.S. Navy (retired)"
+    ],
+    "service_period": "1970-2002 (U.S. Navy / DIA)",
+    "organizations": [
+      "Defense Intelligence Agency",
+      "Joint Chiefs of Staff",
+      "U.S. Navy"
+    ],
+    "clearance": "TS/SCI (former)",
+    "summary": "Retired U.S. Navy Vice Admiral who served as Director of the Defense Intelligence Agency from 1999 to 2002. Wilson is the central figure in the Wilson-Davis Memo - a leaked 15-page document describing an alleged April 2002 meeting between Wilson and physicist Eric Davis in which Wilson reportedly confirmed the existence of a private aerospace contractor conducting reverse-engineering of non-human technology under a deeply classified Special Access Program, and that Wilson himself had been denied access to that program despite his seniority. The memo surfaced publicly in 2019 via the estate of Edgar Mitchell. Wilson has neither confirmed nor denied the memo and has not pursued legal action against any party who has published or analyzed it.",
+    "education": [
+      "B.S., University of Rhode Island, 1970"
+    ],
+    "early_career": [
+      "Commissioned as a Naval officer upon graduation from the University of Rhode Island in 1970",
+      "Rose through Naval intelligence ranks over two decades, serving in multiple senior intelligence billets",
+      "Served as Vice Director for Intelligence (J2) on the Joint Chiefs of Staff prior to DIA appointment"
+    ],
+    "key_events": [
+      {
+        "year": "1948",
+        "event": "Born in Rhode Island."
+      },
+      {
+        "year": "1970",
+        "event": "Commissioned as a Naval officer after graduating from the University of Rhode Island; began a career in Naval intelligence."
+      },
+      {
+        "year": "1990s",
+        "event": "Served as a senior Naval intelligence officer, rising to Vice Director for Intelligence (J2) on the Joint Chiefs of Staff - one of the most senior intelligence positions in the U.S. military."
+      },
+      {
+        "year": "1997",
+        "event": "Alleged meeting at the Pentagon between Wilson, Steven Greer, Edgar Mitchell, and others, at which Wilson was reportedly briefed on UAP and began independently attempting to locate related classified Special Access Programs."
+      },
+      {
+        "year": "Apr 1999",
+        "event": "Confirmed by the U.S. Senate as Director of the Defense Intelligence Agency, overseeing the primary military intelligence organization of the U.S. government."
+      },
+      {
+        "year": "2002",
+        "event": "Retired from active duty. Per the Wilson-Davis Memo, Wilson had by this time located a UAP-related SAP run by a private aerospace contractor and was formally denied access - told by contractor security personnel that he did not have a need to know, despite his rank and clearances."
+      },
+      {
+        "year": "Apr 2002",
+        "event": "The Wilson-Davis Memo (per the document itself) records a meeting between Wilson and physicist Eric Davis in Las Vegas, in which Wilson described his search for and denial of access to a classified UAP-related reverse-engineering program operated by a private contractor."
+      },
+      {
+        "year": "2019",
+        "event": "The Wilson-Davis Memo surfaced publicly via the estate of the late Apollo 14 astronaut Edgar Mitchell and was published online by researchers including Grant Cameron. Wilson declined all public comment."
+      },
+      {
+        "year": "2020",
+        "event": "Multiple researchers and journalists reported that cross-referencing of Wilson's name and other details within the memo with other documents corroborated the identity of the participants. Wilson remained silent and took no legal action against any party publishing or analyzing the document."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "private-contractor-sap",
+      "category": "government program",
+      "claim": "A private aerospace contractor is conducting reverse-engineering of non-human technology under a classified Special Access Program that Wilson located and was formally denied access to despite his rank as a senior DIA official.",
+      "status": "contested",
+      "notes": "The Wilson-Davis Memo is the sole source for this claim. Wilson has never publicly confirmed or denied the memo's contents. Eric Davis, the other party to the alleged meeting, has neither confirmed nor denied the specific claims while declining to discuss the document in detail."
+    },
+    {
+      "id": "wilson-access-denied",
+      "category": "government access",
+      "claim": "Wilson was denied access to the UAP-related SAP by contractor security personnel, who told him he did not have a need to know - an unusual assertion given his position as DIA Director.",
+      "status": "contested",
+      "notes": "Sourced entirely from the Wilson-Davis Memo. No corroborating witness or document has independently confirmed this denial occurred. The claim is significant because a DIA Director is among the most senior intelligence officials in the U.S. government, making a contractor-level access denial extraordinary if true."
+    },
+    {
+      "id": "1997-pentagon-briefing",
+      "category": "government program",
+      "claim": "A 1997 Pentagon meeting occurred at which senior military and intelligence figures, including Wilson, Edgar Mitchell, and Steven Greer, were briefed on UAP-related classified programs.",
+      "status": "unverified",
+      "notes": "Sourced primarily from Steven Greer's public accounts and references in materials associated with Edgar Mitchell. No independent government document has confirmed this meeting took place or that Wilson was a participant."
+    },
+    {
+      "id": "memo-authenticity",
+      "category": "document",
+      "claim": "The Wilson-Davis Memo is an authentic record of a real conversation between Wilson and Davis, not a fabrication.",
+      "status": "contested",
+      "notes": "Forensic metadata analysis conducted by researchers including Grant Cameron found the document's properties consistent with its claimed 2002 provenance. The memo survived years of public scrutiny without a credible alternative origin story emerging. However, Wilson has never confirmed it, no independent witness to the alleged meeting has come forward, and the document cannot be authenticated against a primary source."
+    }
+  ],
+  "associated_people": [
+    {
+      "id": "eric-davis",
+      "name": "Eric Davis",
+      "role": "Theoretical physicist, EarthTech International",
+      "relationship": "Co-subject of the Wilson-Davis Memo; Davis is named as the person who met with Wilson in April 2002 and documented the conversation in a 15-page memo. Davis has declined to discuss the document in detail."
+    },
+    {
+      "id": "edgar-mitchell",
+      "name": "Edgar Mitchell",
+      "role": "Apollo 14 astronaut and UAP researcher",
+      "relationship": "Mitchell was reportedly present at the 1997 Pentagon UAP briefing with Wilson. The Wilson-Davis Memo surfaced publicly in 2019 through materials from Mitchell's estate after his 2016 death, making Mitchell's estate the provenance of the document's public release."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "Physicist, EarthTech International / TTSA",
+      "relationship": "Connected to the broader network surrounding the Wilson-Davis Memo through his long professional collaboration with Eric Davis and their shared participation in NIDS and the AAWSAP research community. The memo references Puthoff in context."
+    },
+    {
+      "id": "steven-greer",
+      "name": "Steven Greer",
+      "role": "Founder, The Disclosure Project",
+      "relationship": "Reportedly present at the 1997 Pentagon UAP briefing at which Wilson is alleged to have been introduced to UAP program knowledge; Greer's accounts of that meeting are one of the few public references to it."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2019",
+      "type": "declassification",
+      "title": "Wilson-Davis Memo (leaked document)",
+      "outlet": "Estate of Edgar Mitchell / published online by Grant Cameron and others",
+      "notes": "A 15-page handwritten document purporting to record a April 2002 meeting between Wilson and physicist Eric Davis. The memo describes Wilson's account of locating and being denied access to a classified UAP reverse-engineering program operated by a private contractor. It surfaced via materials from Edgar Mitchell's estate and was published online in 2019. Wilson has declined all public comment and has taken no legal action against any party who published or analyzed it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wilson-Davis Memo (2002/leaked 2019)",
+      "url": "https://www.theblackvault.com/documentarchive/the-admiral-wilson-ufo-leak-document/",
+      "type": "Document",
+      "notes": "The primary source - a 15-page handwritten memo attributed to Eric Davis documenting an alleged April 2002 meeting with Vice Adm. Thomas Wilson, in which Wilson described locating and being denied access to a UAP-related Special Access Program. Surfaced publicly in 2019."
+    },
+    {
+      "title": "Grant Cameron - Wilson-Davis Memo analysis",
+      "url": "https://presidentialufo.com",
+      "type": "Analysis",
+      "notes": "Grant Cameron conducted initial forensic metadata analysis and published the document alongside contextual analysis of its provenance and corroborating details."
+    },
+    {
+      "title": "DIA Director Confirmed - U.S. Senate (1999)",
+      "url": null,
+      "type": "Government Record",
+      "notes": "Wilson's Senate confirmation as Director of the Defense Intelligence Agency in April 1999 is a matter of public congressional record, confirming his seniority and institutional standing."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "dia",
+      "node_label": "Defense Intelligence Agency",
+      "relationship": "Served as Director of the Defense Intelligence Agency 1999-2002",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "eric-davis",
+      "node_label": "Eric Davis",
+      "relationship": "Co-subject of the Wilson-Davis Memo; Davis reportedly recorded their 2002 meeting in a 15-page handwritten document",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "edgar-mitchell",
+      "node_label": "Edgar Mitchell",
+      "relationship": "Mitchell reportedly present at 1997 Pentagon UAP briefing with Wilson; the Wilson-Davis Memo surfaced from Mitchell's estate in 2019",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 0,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Connected through the NIDS/AAWSAP network and Eric Davis collaboration; Puthoff is referenced in the context surrounding the Wilson-Davis Memo",
+      "connection_type": "professional"
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Wilson's institutional standing as a confirmed DIA Director gives the allegations significant weight - he was among the most senior intelligence officials in the U.S. government during his tenure.",
+      "The Wilson-Davis Memo has survived years of public scrutiny since 2019 without a credible alternative origin story or forgery explanation emerging.",
+      "Wilson's silence - rather than an explicit public denial or legal action against those who published the memo - is notable for a senior official with legal resources and institutional contacts.",
+      "Forensic metadata analysis by researchers including Grant Cameron found the document's properties consistent with its claimed 2002 provenance.",
+      "The provenance via Edgar Mitchell's estate provides a credible chain of custody; Mitchell was a respected Apollo astronaut with known longstanding interest in UAP.",
+      "Cross-referencing of personnel, locations, and organizational details within the memo with other available documents has corroborated multiple specific identifiers."
+    ],
+    "contradicting": [
+      "Wilson has never publicly confirmed the memo or the meeting it describes; his silence cannot be treated as confirmation.",
+      "No independent witness to the alleged April 2002 Wilson-Davis meeting has come forward to corroborate that it occurred.",
+      "The document cannot be authenticated against a primary government source; the Black Vault and related publications are secondary.",
+      "Eric Davis has declined to discuss the document in detail, making the only named co-participant effectively unavailable for verification.",
+      "The memo could be a sophisticated fabrication; metadata consistency is necessary but not sufficient evidence of authenticity.",
+      "Wilson's public position, where he has addressed UAP at all, has been skeptical - creating a tension with the memo's contents that has not been resolved."
+    ]
+  }
+}
