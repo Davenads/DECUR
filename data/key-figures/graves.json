@@ -140,6 +140,23 @@
       "notes": "Biographical reference and documented encounter timeline"
     }
   ],
+  "credibility": {
+    "supporting": [
+      "Active-duty Navy F/A-18 Super Hornet pilot with documented operational flight hours in the VFA-11 Red Rippers squadron - his aviation expertise is directly applicable to assessing the anomalous behavior he observed",
+      "Encounters were corroborated by multiple VFA-11 squadron members over a period of months, providing independent witness depth well beyond a single-observer account",
+      "Coming forward publicly as a named source in the June 2019 New York Times article while still affiliated with the Navy represented a significant professional and reputational cost",
+      "Testified under oath before the House Oversight Committee on July 26, 2023, making him legally accountable for the accuracy of his statements",
+      "Founded Americans for Safe Aerospace in 2022, a structured nonprofit advocacy organization focused on pilot safety reporting - demonstrating a sustained, principled commitment to the issue rather than episodic media engagement",
+      "His reported object characteristics - stationary against high-velocity winds, no visible propulsion system, sudden repositioning - are described consistently across multiple accounts and witnesses from the same encounter series"
+    ],
+    "contradicting": [
+      "The objects encountered by VFA-11 have not been officially identified or confirmed as non-human in origin by the U.S. Navy, Air Force, or any other government body",
+      "His sustained public role through Americans for Safe Aerospace creates a reputational investment in UAP being treated as a serious, unresolved phenomenon",
+      "The sensor and radar data from the 2014-2015 East Coast encounters has not been declassified or made available for independent technical analysis, limiting external verification of the performance characteristics he describes",
+      "Graves himself has consistently acknowledged that he cannot determine the origin, nature, or intent of the objects his squadron observed - his testimony establishes unexplained presence, not its source",
+      "Some analysts have noted that the AN/APG-79 AESA radar system installed on VFA-11 aircraft around 2014 was new to the squadron at the time of the encounters, raising questions about whether crews were fully calibrated to its detection artifacts in novel operating conditions"
+    ]
+  },
   "career_connections": [
     {
       "event_index": 3,
