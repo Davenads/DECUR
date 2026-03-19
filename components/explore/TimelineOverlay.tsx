@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
@@ -162,7 +163,7 @@ const SwimlaneDot: FC<DotProps> = ({ cx = 0, cy = 0, payload }) => {
   if (!payload) return null;
   const color = getSourceColor(payload.source);
   return (
-    <g>
+    <g style={{ cursor: 'pointer' }}>
       <line x1={cx} y1={cy - 8} x2={cx} y2={cy + 8} stroke={color} strokeWidth={1.5} opacity={0.4} />
       <circle cx={cx} cy={cy} r={5} fill={color} stroke="#fff" strokeWidth={1.5} />
     </g>
@@ -182,7 +183,7 @@ const CaseDot: FC<CaseDotProps> = ({ cx = 0, cy = 0, payload }) => {
   const color = getTierColor(payload.evidence_tier);
   const size = 5;
   return (
-    <g>
+    <g style={{ cursor: 'pointer' }}>
       <polygon
         points={`${cx},${cy - size} ${cx + size},${cy} ${cx},${cy + size} ${cx - size},${cy}`}
         fill={color}
@@ -250,6 +251,7 @@ const YEAR_START = 1985;
 const YEAR_END   = 2025;
 
 const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, caseEvents = [], focusEra, onClearFocus }) => {
+  const router = useRouter();
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === 'dark';
   const [showAllYears, setShowAllYears] = useState(false);
@@ -459,7 +461,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, caseEvents = []
         <p className="text-xs text-gray-400 dark:text-gray-500 mb-1 uppercase tracking-wide font-medium">UAP Events / Year</p>
         <div style={{ height: 180 }}>
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={barData} margin={{ top: 4, right: 4, left: -20, bottom: 0 }}>
+            <BarChart data={barData} margin={{ top: 4, right: 4, left: 0, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#f0f0f0'} vertical={false} />
               <XAxis
                 dataKey="year"
@@ -474,7 +476,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, caseEvents = []
                 tick={{ fontSize: 10, fill: '#9ca3af' }}
                 axisLine={false}
                 tickLine={false}
-                width={28}
+                width={72}
               />
               <Tooltip content={<BarTooltip />} cursor={{ fill: 'rgba(0,119,204,0.06)' }} wrapperStyle={{ zIndex: 50 }} />
               <Bar dataKey="uap" radius={[2, 2, 0, 0]} maxBarSize={16}>
@@ -536,6 +538,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, caseEvents = []
                     data={scatterBySrc[src]}
                     shape={<SwimlaneDot />}
                     name={getSourceLabel(src)}
+                    onClick={(data) => {
+                      const source = (data as unknown as WBEvent).source;
+                      if (source) router.push(`/figures/${source}`);
+                    }}
                   />
                 ))}
                 {showCases && caseScatterData.length > 0 && (
@@ -543,6 +549,10 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, caseEvents = []
                     data={caseScatterData}
                     shape={<CaseDot />}
                     name="Cases"
+                    onClick={(data) => {
+                      const id = (data as unknown as CaseEvent).id;
+                      if (id) router.push(`/cases/${id}`);
+                    }}
                   />
                 )}
               </ScatterChart>
