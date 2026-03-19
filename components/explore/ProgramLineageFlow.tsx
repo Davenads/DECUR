@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useCallback, useLayoutEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import {
