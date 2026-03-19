@@ -3,6 +3,8 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import ProfileShell from '../shared/ProfileShell';
 import PersonCard from '../shared/PersonCard';
+import ClaimsStatusBar from '../shared/ClaimsStatusBar';
+import { statusConfig } from '../shared/profileConstants';
 import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
@@ -395,6 +397,37 @@ const FeatureTab: FC<{ data: Record<string, any> }> = ({ data }) => {
   return <div>{renderValue(data)}</div>;
 };
 
+// Dedicated renderer for the `claims` feature section.
+// Matches the ClaimsTab style used in all bespoke profile components.
+interface Claim {
+  id: string;
+  category: string;
+  claim: string;
+  status: string;
+  notes?: string;
+}
+
+const GenericClaimsTab: FC<{ claims: Claim[] }> = ({ claims }) => (
+  <div className="space-y-5">
+    <ClaimsStatusBar claims={claims} />
+    {claims.map(claim => {
+      const cfg = statusConfig[claim.status] ?? { label: claim.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
+      return (
+        <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
+          <div className="flex items-start justify-between gap-3">
+            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{claim.category}</p>
+            <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
+          </div>
+          <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{claim.claim}</p>
+          {claim.notes && (
+            <p className="text-xs text-gray-500 dark:text-gray-400 border-t border-gray-100 dark:border-gray-700 pt-3">{claim.notes}</p>
+          )}
+        </div>
+      );
+    })}
+  </div>
+);
+
 // --- Main component ---
 
 const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, backLabel }) => {
@@ -462,7 +495,11 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
           </div>
         );
       case 'feature':
-        return feature ? <FeatureTab data={data[feature.key]} /> : null;
+        if (!feature) return null;
+        if (feature.key === 'claims' && Array.isArray(data[feature.key])) {
+          return <GenericClaimsTab claims={data[feature.key]} />;
+        }
+        return <FeatureTab data={data[feature.key]} />;
       case 'people':
         return <PeopleTab people={associatedPeople} />;
       case 'disclosures':
