@@ -166,6 +166,64 @@
       "notes": "Introduced and co-sponsored legislation to extend and strengthen whistleblower protections for government employees with UAP-related knowledge, coordinated with Senate counterparts."
     }
   ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "anna-paulina-luna",
+      "node_label": "Anna Paulina Luna",
+      "relationship": "Co-founded the House UAP Caucus in 2022; closest legislative partner in bipartisan UAP oversight and hearing organization.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "kirsten-gillibrand",
+      "node_label": "Sen. Kirsten Gillibrand",
+      "relationship": "Cross-chamber counterpart who established the Senate SASC UAP subcommittee around the same period; coordinated on NDAA UAP provisions.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "chuck-schumer",
+      "node_label": "Chuck Schumer",
+      "relationship": "Senate Majority Leader whose UAP Disclosure Act ran in parallel with Burchett's House caucus pressure campaign during 2022-2023.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Primary whistleblower witness at Burchett's July 26, 2023 House Oversight hearing; testified under oath regarding alleged non-human craft retrieval programs.",
+      "connection_type": "testimony"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "david-fravor",
+      "node_label": "David Fravor",
+      "relationship": "Testified at the July 2023 hearing on the 2004 Nimitz Tic-Tac encounter; provided the hearing's most credentialed firsthand pilot account.",
+      "connection_type": "testimony"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Testified at the July 2023 hearing on routine Navy pilot UAP encounters; grounded the broader program allegations in documented operational data.",
+      "connection_type": "testimony"
+    },
+    {
+      "event_index": 5,
+      "node_type": "program",
+      "node_id": "aaro",
+      "node_label": "AARO",
+      "relationship": "Whistleblower protection legislation in 2023 was directly aimed at AARO's intake limitations; Burchett was a persistent critic of AARO's scope and access.",
+      "connection_type": "institutional"
+    }
+  ],
   "sources": [
     {
       "title": "Rep. Tim Burchett Official Website",
