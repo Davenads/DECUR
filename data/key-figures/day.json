@@ -73,6 +73,21 @@
       "notes": "Documents the Nimitz incident including the Princeton radar contacts"
     }
   ],
+  "credibility": {
+    "supporting": [
+      "Verified military service as Navy Air Intercept Controller on the USS Princeton - directly relevant professional expertise for evaluating radar data",
+      "Tracked the anomalous objects for approximately two weeks on the ship's SPY-1 radar before the visual encounter, providing the most sustained sensor observation record of the incident",
+      "His radar data observations are corroborated by other crew members and by the fact that scrambled aircraft were dispatched based on his tracking - institutional validation of the contacts",
+      "Made public statements at personal reputational cost as a military veteran in an era when UAP reporting was stigmatized",
+      "His technical account of the radar characteristics (objects dropping from 80,000 feet to sea level in under a second) is internally consistent and has not materially changed across multiple interviews"
+    ],
+    "contradicting": [
+      "The SPY-1 radar data from the incident has not been publicly released, preventing independent analysis of the raw sensor record",
+      "He has experienced significant personal difficulties since coming forward, which some researchers have attributed to government harassment but others see as unrelated to his testimony",
+      "His account of radar tracking duration (two weeks) differs from some other official characterizations of the incident timeline",
+      "The technical radar performance characteristics he describes, while anomalous, are difficult to evaluate without access to the calibration and configuration data for the specific system in use"
+    ]
+  },
   "career_connections": [
     {
       "event_index": 2,
