@@ -127,5 +127,23 @@
       "relationship": "Kirkpatrick publicly contradicted Grusch's congressional testimony, creating a central credibility conflict between AARO's official findings and Grusch's sworn claims",
       "connection_type": "opposition"
     }
-  ]
+  ],
+  "credibility": {
+    "supporting": [
+      "Long career as a DoD/IC scientist and intelligence officer with verifiable credentials, including a Ph.D. in physics and Defense Intelligence Senior Leader designation.",
+      "As AARO Director, held actual classified access to UAP-related reports and referrals from all military services and intelligence agencies - the broadest formal access to UAP data of any public figure in that period.",
+      "First director of a congressionally-mandated UAP office, giving his assessments formal institutional and legislative legitimacy.",
+      "Published scientific findings and declassified reports through official channels, including the AARO Historical Record Reports, which represent the most comprehensive government-authored UAP document set made public.",
+      "His skeptical conclusions are consistent with the findings of multiple prior intelligence community reviews, including the 2021 ODNI Preliminary Assessment.",
+      "His post-AARO Scientific American op-ed brought his position into a peer-reviewed public venue, subjecting his arguments to editorial scrutiny."
+    ],
+    "contradicting": [
+      "His public dismissal of David Grusch and Matthew Brown used language that went beyond scientific skepticism - calling Brown's Immaculate Constellation claims 'bullshit' represents a rhetorical posture inconsistent with objective institutional analysis.",
+      "The AARO Historical Record Report was criticized by multiple members of Congress and independent researchers as superficial, failing to address specific program allegations made under oath by witnesses.",
+      "Kirkpatrick publicly stated AARO found no evidence of NHI craft, while whistleblowers have specifically claimed the relevant evidence was held in compartmented programs that AARO was denied access to - a claim congressional oversight members have not refuted.",
+      "His departure from AARO after roughly 13 months has been characterized by some observers as premature given the scope of the congressional mandate and the volume of unresolved referrals.",
+      "Senators Gillibrand and Schumer and Representatives Burchett and others have publicly stated on record that they believe AARO lacked full access to the programs under scrutiny, directly undercutting his claim to comprehensive institutional review.",
+      "AARO was housed within the Office of the Secretary of Defense, placing it institutionally under the same chain of command as the programs whose activities it was tasked to investigate - a structural conflict of interest that Kirkpatrick did not publicly address."
+    ]
+  }
 }
