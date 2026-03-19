@@ -1190,5 +1190,19 @@
     "data_file": "mike-gallagher.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "peter-sturrock",
+    "name": "Dr. Peter Sturrock",
+    "aliases": ["Peter Sturrock", "Peter A. Sturrock", "P.A. Sturrock"],
+    "role": "Professor Emeritus of Applied Physics, Stanford University; Founder, Society for Scientific Exploration",
+    "period": "1961-2014",
+    "affiliation": "Stanford University",
+    "summary": "Stanford Professor Emeritus of Applied Physics who organized the 1997 Sturrock Panel - a rigorous scientific review of physical UAP evidence by nine independent scientists - and founded the Society for Scientific Exploration, providing the first mainstream academic infrastructure for anomalous phenomena research. His peer-reviewed work concluded that physical UAP evidence warranted serious scientific investigation.",
+    "status": "detailed",
+    "tags": ["scientist", "stanford", "physics", "sturrock-panel", "sse", "academic", "historical"],
+    "data_file": "peter-sturrock.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

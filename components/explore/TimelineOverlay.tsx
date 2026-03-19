@@ -101,6 +101,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'charles-halt':       { label: 'Lt. Col. Charles Halt', color: '#16a34a' },
   'marco-rubio':        { label: 'Sen. Marco Rubio',       color: '#dc2626' },
   'mike-gallagher':     { label: 'Rep. Mike Gallagher',    color: '#b91c1c' },
+  'peter-sturrock':     { label: 'Dr. Peter Sturrock',     color: '#0891b2' },
 };
 
 const UAP_COLOR = '#93c5e8';

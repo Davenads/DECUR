@@ -1,0 +1,201 @@
+{
+  "profile": {
+    "id": "peter-sturrock",
+    "name": "Dr. Peter Sturrock",
+    "aliases": ["Peter Sturrock", "Peter A. Sturrock", "P.A. Sturrock"],
+    "born": "January 20, 1924 - Camberley, Surrey, England",
+    "died": "September 1, 2014 - Stanford, California",
+    "roles": [
+      "Professor Emeritus of Applied Physics, Stanford University",
+      "Professor of Space Science and Astrophysics, Stanford University",
+      "Founder and President - Society for Scientific Exploration",
+      "Editor-in-Chief - Journal of Scientific Exploration",
+      "Author - The UFO Enigma (1999)"
+    ],
+    "service_period": "1961-2014 (Stanford University)",
+    "organizations": [
+      "Stanford University",
+      "Society for Scientific Exploration",
+      "American Astronomical Society",
+      "American Physical Society"
+    ],
+    "clearance": null,
+    "summary": "British-American applied physicist and Stanford Professor Emeritus who organized the 1997 Sturrock Panel - a rigorous review of physical UAP evidence by nine independent physical scientists - and founded the Society for Scientific Exploration and its peer-reviewed Journal of Scientific Exploration. His 1974 survey of American Astronomical Society members found approximately 5% had witnessed unexplained aerial phenomena, and his published work concluded that physical UAP evidence warranted serious scientific investigation. He is among the most credentialed mainstream scientists to formally engage with UAP research.",
+    "education": [
+      "PhD in Mathematics, Cambridge University, 1951",
+      "BA, Cambridge University (prior to PhD)"
+    ],
+    "early_career": [
+      "Conducted foundational research in solar physics and plasma physics at Cambridge",
+      "Joined Stanford University faculty in 1961; appointed to the Applied Physics and Space Science departments",
+      "Became Professor of Applied Physics and Professor of Space Science and Astrophysics at Stanford"
+    ],
+    "key_events": [
+      { "year": "Jan 1924", "event": "Born in Camberley, Surrey, England." },
+      { "year": "1951", "event": "Earned PhD in Mathematics from Cambridge University." },
+      { "year": "1961", "event": "Joined Stanford University faculty; eventually became Professor of Applied Physics and Professor of Space Science and Astrophysics." },
+      { "year": "1974", "event": "Conducted survey of American Astronomical Society members; found approximately 5% had witnessed unexplained aerial phenomena; published results, demonstrating significant unreported scientific interest in the phenomenon." },
+      { "year": "1982", "event": "Founded the Society for Scientific Exploration (SSE) and its peer-reviewed Journal of Scientific Exploration, creating the first mainstream academic venue for anomalous phenomena research." },
+      { "year": "May 1997", "event": "Organized the Pocantico Conference (Sturrock Panel) at the Rockefeller Conference Center in Pocantico Hills, New York; convened nine independent physical scientists to review physical evidence from UAP cases." },
+      { "year": "1998", "event": "Published the Sturrock Panel findings in the Journal of Scientific Exploration; concluded that physical evidence warranted rigorous scientific study and recommended that scientists not avoid the subject." },
+      { "year": "1999", "event": "Published 'The UFO Enigma: A New Review of the Physical Evidence' (Warner Books) - the definitive scientific review of physical UAP evidence." },
+      { "year": "2009", "event": "Published 'A Tale of Two Sciences: Memoirs of a Dissident Scientist' detailing his career and the institutional resistance to anomalous phenomena research." },
+      { "year": "Sep 2014", "event": "Died in Stanford, California." }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "jacques-vallee",
+      "name": "Jacques Vallee",
+      "role": "Prominent UAP researcher and computer scientist",
+      "relationship": "Participated in the Sturrock Panel and collaborated on physical evidence analysis; both shared the view that UAP warranted rigorous scientific scrutiny."
+    },
+    {
+      "id": "j-allen-hynek",
+      "name": "J. Allen Hynek",
+      "role": "Astronomer and pioneer of scientific UAP research",
+      "relationship": "Contemporaries who both advocated for serious scientific UAP research; Hynek's classification system influenced Sturrock's evidence framework."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "Physicist and UAP researcher",
+      "relationship": "Both operated at the intersection of mainstream physics and anomalous phenomena research; Puthoff's work was within the broader scientific community Sturrock helped legitimize."
+    },
+    {
+      "id": "avi-loeb",
+      "name": "Avi Loeb",
+      "role": "Harvard astronomer and UAP researcher",
+      "relationship": "Loeb continues the tradition of mainstream scientific UAP engagement that Sturrock pioneered; both were willing to risk professional standing to advocate for serious inquiry."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1974",
+      "type": "written",
+      "title": "AAS Member Survey on UAP",
+      "outlet": "Published in academic literature",
+      "notes": "Published survey finding approximately 5% of American Astronomical Society members had witnessed unexplained aerial phenomena; demonstrated significant unreported scientific interest in the phenomenon."
+    },
+    {
+      "date": "1998",
+      "type": "written",
+      "title": "Sturrock Panel Report - Physical Evidence Related to UFO Reports",
+      "outlet": "Journal of Scientific Exploration, 12(2), 179-229",
+      "notes": "Published findings of the nine-scientist Pocantico Conference; concluded that physical evidence from UAP cases warranted rigorous scientific investigation; co-authored with panel members."
+    },
+    {
+      "date": "1999",
+      "type": "written",
+      "title": "The UFO Enigma: A New Review of the Physical Evidence",
+      "outlet": "Warner Books, New York",
+      "notes": "Comprehensive review of physical UAP evidence covering radiation effects, vehicle interference, physiological effects on witnesses, and trace evidence. The most rigorous mainstream scientific treatment of physical UAP evidence published to that date."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Physical evidence from UAP cases warrants rigorous scientific investigation",
+      "status": "verified",
+      "notes": "This is the key conclusion of the peer-reviewed Sturrock Panel report (1998), endorsed by nine independent physical scientists from major universities; the claim is methodologically sound and institutionally published."
+    },
+    {
+      "claim": "A significant percentage of professional scientists have witnessed UAP they cannot explain",
+      "status": "partially-verified",
+      "notes": "The 1974 AAS survey found approximately 5% of respondents had witnessed unexplained aerial phenomena; the survey methodology was sound but self-reporting introduces limitations; the finding suggests the phenomenon is more widespread in credentialed communities than publicly acknowledged."
+    },
+    {
+      "claim": "Institutional science has systematically avoided UAP research due to stigma rather than evidence",
+      "status": "partially-verified",
+      "notes": "Sturrock documented this throughout his career; the founding of SSE was a direct response to this gap; subsequent events (2017 NYT disclosure, AARO establishment) largely validated this concern."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Stanford Professor Emeritus with impeccable mainstream credentials in applied physics",
+      "Peer-reviewed publications in recognized journals including the Journal of Scientific Exploration",
+      "Convened nine independent physical scientists for the Sturrock Panel - the most rigorous scientific review of physical UAP evidence to that date",
+      "Founded the Society for Scientific Exploration, providing institutional infrastructure for anomalous phenomena research",
+      "Survey methodology in the 1974 AAS study was scientifically sound",
+      "Career predates modern disclosure politics so cannot be accused of financial opportunism",
+      "Deceased, so no ongoing agenda or financial motive"
+    ],
+    "contradicting": [
+      "The Journal of Scientific Exploration, while peer-reviewed, is not a mainstream physics journal and operates outside traditional academic gatekeeping",
+      "The Sturrock Panel's physical evidence cases were historical and not directly verifiable",
+      "Some panel findings were hedged given limited access to primary evidence",
+      "His broader advocacy for anomalous research placed him at the fringe of mainstream academic acceptance during his lifetime"
+    ]
+  },
+  "career_connections": [
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "jacques-vallee",
+      "node_label": "Jacques Vallee",
+      "relationship": "Vallee participated in the Sturrock Panel; both shared the view that UAP warranted rigorous physical evidence analysis",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "j-allen-hynek",
+      "node_label": "J. Allen Hynek",
+      "relationship": "Contemporaries who both advocated for serious scientific UAP research; Hynek's Hynek Classification System influenced Sturrock's evidence framework",
+      "connection_type": "collaborative"
+    },
+    {
+      "event_index": 4,
+      "node_type": "program",
+      "node_id": "society-for-scientific-exploration",
+      "node_label": "Society for Scientific Exploration",
+      "relationship": "Founder; established SSE and its peer-reviewed journal to provide academic infrastructure for anomalous phenomena research",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Both operated at the intersection of mainstream physics and anomalous phenomena research; Puthoff's work was within the broader scientific community Sturrock helped legitimize",
+      "connection_type": "professional"
+    }
+  ],
+  "sources": [
+    {
+      "title": "AAS Member Survey on UAP (1974)",
+      "url": null,
+      "type": "Academic Paper",
+      "notes": "Sturrock, P.A. (1974). 'Unidentified Flying Objects - A Scientific Perspective.' AIAA Paper."
+    },
+    {
+      "title": "Physical Evidence Related to UFO Reports (Sturrock Panel, 1998)",
+      "url": "https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
+      "type": "Peer-Reviewed Journal Article",
+      "notes": "Sturrock, P.A. et al. (1998). Journal of Scientific Exploration, 12(2), 179-229. The definitive published output of the 1997 Pocantico Conference."
+    },
+    {
+      "title": "The UFO Enigma: A New Review of the Physical Evidence",
+      "url": "https://www.amazon.com/UFO-Enigma-Review-Physical-Evidence/dp/0446675865",
+      "type": "Book",
+      "notes": "Sturrock, P.A. (1999). Warner Books, New York. Comprehensive scientific review of physical UAP evidence."
+    },
+    {
+      "title": "A Tale of Two Sciences: Memoirs of a Dissident Scientist",
+      "url": null,
+      "type": "Book",
+      "notes": "Sturrock, P.A. (2009). Details his career and the institutional resistance to anomalous phenomena research."
+    },
+    {
+      "title": "Society for Scientific Exploration - Official Records",
+      "url": "https://www.scientificexploration.org",
+      "type": "Institutional Record",
+      "notes": "Official SSE records documenting Sturrock's founding role and ongoing contributions."
+    },
+    {
+      "title": "Stanford University - Department of Applied Physics Faculty Records",
+      "url": "https://web.stanford.edu/~sturrock/",
+      "type": "Institutional Record",
+      "notes": "Stanford University faculty records for Professor Emeritus Peter A. Sturrock."
+    }
+  ]
+}

@@ -740,5 +740,10 @@ export const graphData: GraphData = {
     { source: 'marco-rubio', target: 'kirsten-gillibrand',  label: 'Rubio\'s UAPTF mandate was the institutional foundation for Gillibrand\'s subsequent SASC oversight work and UAP Disclosure Act' },
     { source: 'marco-rubio', target: 'chuck-schumer',       label: 'collaborated on UAP transparency legislation; Schumer brought the UAP Disclosure Act to the Senate floor' },
     { source: 'marco-rubio', target: 'david-grusch',        label: 'publicly acknowledged Grusch\'s 2023 whistleblower allegations as credible; called for declassification and investigation' },
+
+    // Peter Sturrock connections
+    { source: 'peter-sturrock', target: 'jacques-vallee',   label: 'Vallee participated in the Sturrock Panel (1997); both shared the view that UAP warranted rigorous physical evidence analysis' },
+    { source: 'peter-sturrock', target: 'j-allen-hynek',    label: 'Contemporaries who both advocated for serious scientific UAP research; Hynek\'s classification system influenced Sturrock\'s evidence framework' },
+    { source: 'peter-sturrock', target: 'hal-puthoff',      label: 'Both operated at the intersection of mainstream physics and anomalous phenomena research; Puthoff\'s work was within the broader scientific community Sturrock helped legitimize' },
   ],
 };
