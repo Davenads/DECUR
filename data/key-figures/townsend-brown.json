@@ -1,0 +1,240 @@
+{
+  "profile": {
+    "id": "townsend-brown",
+    "name": "Thomas Townsend Brown",
+    "aliases": ["T.T. Brown", "Townsend Brown", "T. Townsend Brown"],
+    "born": "March 18, 1905 - Zanesville, Ohio",
+    "died": "October 22, 1985 - Catalina Island, California",
+    "roles": [
+      "U.S. Navy Research Scientist",
+      "Inventor - Biefeld-Brown Effect",
+      "Founder, Townsend Brown Foundation"
+    ],
+    "service_period": "1930s-1967 (government and private research)",
+    "organizations": [
+      "U.S. Navy",
+      "Naval Research Laboratory",
+      "Townsend Brown Foundation",
+      "Guidance Technologies"
+    ],
+    "clearance": "Top Secret (former, Navy)",
+    "summary": "Brown was a mid-century American physicist whose research into the relationship between electromagnetism and gravity - the Biefeld-Brown effect - brought him into contact with classified government aerospace programs in the 1950s. His Project Winterhaven proposal for disc-shaped electrogravitic aircraft and his alleged vacuum experiments confirming thrust independent of ionic wind place him at the center of ongoing debates about whether anti-gravity principles were absorbed into black aerospace programs. His work is cited by modern UAP researchers as historical context for reverse-engineering claims.",
+    "education": [
+      "Attended Caltech (left before degree)",
+      "Kenyon College (briefly attended)",
+      "Denison University (no degree)"
+    ],
+    "early_career": [
+      "Discovered the Biefeld-Brown effect while experimenting with Coolidge X-ray tubes under Prof. Paul Alfred Biefeld at Denison University",
+      "Joined the U.S. Navy and conducted radar detection research - FBI confirmed him as Navy's top expert in 1943",
+      "Established the Townsend Brown Foundation for gravity research in the early 1950s"
+    ],
+    "key_events": [
+      {
+        "year": "1921",
+        "event": "Enrolled at Caltech; experimenting with Coolidge X-ray tubes, discovered that a high-voltage capacitor appeared to exhibit directional thrust - the phenomenon that would become the Biefeld-Brown effect."
+      },
+      {
+        "year": "1943",
+        "event": "FBI file confirmed Brown as possessing more knowledge about radar detection than any other individual in the U.S. Navy - a declassified document corroborating his classified research career."
+      },
+      {
+        "year": "1945",
+        "event": "Deployed to post-war Germany to retrieve exotic propulsion technology and assess German research programs."
+      },
+      {
+        "year": "1952",
+        "event": "Demonstrated the gravitator device to Major General Victor Gruhn at the Townsend Brown Foundation in Washington D.C.; military observers assessed the demonstration as significant."
+      },
+      {
+        "year": "1953",
+        "event": "Submitted Project Winterhaven to the Pentagon - a formal proposal for a Mach-3 disc-shaped aircraft using electrogravitics, structured similarly to known classified development programs of the era."
+      },
+      {
+        "year": "1955",
+        "event": "Conducted vacuum experiments at the Montgolfier facility in Paris facilitated by French researcher Jacques Cornillon; Cornillon confirmed at age 98 to biographer Paul Schatzkin that the anomalous thrust effect persisted in vacuum, which ionic wind alone cannot explain."
+      },
+      {
+        "year": "1957",
+        "event": "The Chapel Hill Conference at UNC assembled top theoretical physicists to study gravity, sponsored by Wright Airfield; this conference is alleged to have channeled academic gravity research away from potentially classified-adjacent results."
+      },
+      {
+        "year": "1967",
+        "event": "Guidance Technologies - Brown's active company - was abruptly shut down with no public explanation. Brown gave no reason; the closure coincided with increased classification of aerospace research."
+      },
+      {
+        "year": "1985",
+        "event": "Died in Catalina Island, California. Biographer Paul Schatzkin later documented his complete career in 'The Man Who Mastered Gravity' (2023), drawing on personal papers, interviews with colleagues, and previously classified documents."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "biefeld-brown-vacuum-effect",
+      "category": "physics",
+      "claim": "The Biefeld-Brown effect produces measurable thrust independent of ionic wind, as confirmed in vacuum experiments - representing a genuine electrogravitic phenomenon not fully explained by conventional physics.",
+      "status": "partially-verified",
+      "notes": "Jacques Cornillon confirmed the vacuum effect to biographer Schatzkin at age 98. Independent reproduction in peer-reviewed settings is limited; mainstream physicists attribute most of the effect to ionic wind."
+    },
+    {
+      "id": "project-winterhaven-classified",
+      "category": "government program",
+      "claim": "Project Winterhaven and Brown's related disc-aircraft research was classified and effectively absorbed into U.S. black aerospace programs in the late 1950s, explaining the sudden disappearance of public electrogravitic research.",
+      "status": "unverified",
+      "notes": "No declassified document directly confirms this transfer. Circumstantial evidence includes the sudden cessation of public aerospace interest in electrogravitics after the mid-1950s."
+    },
+    {
+      "id": "b2-electrostatic-connection",
+      "category": "technology",
+      "claim": "The B2 stealth bomber incorporates electrostatic leading-edge charging that produces an electrogravitic effect based on or derived from Brown's research - providing a propulsion boost beyond what its credited aerodynamics would allow.",
+      "status": "partially-verified",
+      "notes": "The B2 does use electrostatic leading-edge discharge. Aviation journalist Nick Cook documented this in 'The Hunt for Zero Point.' Northrop wrote then retracted a paper on electro-aerodynamics in 1968. Official confirmation of a propulsion contribution has not been made."
+    },
+    {
+      "id": "deliberate-misdirection",
+      "category": "intelligence",
+      "claim": "After Soviet intelligence compromised a Pearl Harbor demonstration in 1950, Brown adopted a deliberate misdirection strategy - showing incorrect versions of his work to mislead foreign intelligence while maintaining real results under cover.",
+      "status": "unverified",
+      "notes": "Described by biographer Schatzkin based on family accounts. No documentary corroboration exists."
+    },
+    {
+      "id": "navy-anti-gravity-program",
+      "category": "government program",
+      "claim": "The U.S. Navy and later Air Force conducted classified anti-gravity and electrogravitics research programs based in part on Brown's foundational work through the 1950s and 1960s.",
+      "status": "partially-verified",
+      "notes": "Australian Department of Defense intelligence memo (1971) documents U.S. government anti-gravity research programs. Multiple aerospace companies (Lockheed, Boeing, Martin Corp.) had documented electrogravitics research programs in the 1950s that then went dark."
+    }
+  ],
+  "associated_people": [
+    {
+      "id": "paul-schatzkin",
+      "name": "Paul Schatzkin",
+      "role": "Biographer of T.T. Brown",
+      "relationship": "Primary modern researcher of Brown's life; conducted original interviews with aged colleagues including Jacques Cornillon (age 98) to corroborate the vacuum experiments described in his 2023 biography 'The Man Who Mastered Gravity.'"
+    },
+    {
+      "id": "bob-lazar",
+      "name": "Bob Lazar",
+      "role": "S-4 physicist, Area 51 whistleblower",
+      "relationship": "Lazar's claims about Element 115 and gravity wave propulsion systems at S-4 are frequently cited alongside Brown's electrogravitics work as parallel evidence of classified anti-gravity development programs."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "Physicist, SRI/TTSA",
+      "relationship": "Puthoff's work on zero-point energy and advanced propulsion physics operates in the same theoretical space as Brown's electrogravitics; both represent credentialed scientists working on classified-adjacent propulsion research."
+    },
+    {
+      "id": "eric-davis",
+      "name": "Eric Davis",
+      "role": "Theoretical physicist",
+      "relationship": "Davis's work on spacetime metric engineering and unconventional propulsion connects to the same classified propulsion research tradition Brown's work is associated with."
+    },
+    {
+      "id": "agnew-bahnson",
+      "name": "Agnew Bahnson",
+      "role": "Industrialist, Institute of Field Physics founder, UNC Chapel Hill",
+      "relationship": "Bahnson funded Brown's research and organized the 1957 Chapel Hill Conference on gravity; allegedly had CIA connections and channeled academic gravity research."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1953",
+      "type": "written",
+      "title": "Project Winterhaven Proposal",
+      "outlet": "U.S. Pentagon",
+      "notes": "Formal proposal for a Mach-3 disc-shaped aircraft program based on electrogravitic principles, submitted to Pentagon defense research channels. One of the few surviving documents directly linking Brown's research to classified military aircraft development proposals."
+    },
+    {
+      "date": "1955",
+      "type": "speech",
+      "title": "Vacuum Experiment Demonstrations - Montgolfier Facility, Paris",
+      "outlet": "Montgolfier facility, Paris (facilitated by Jacques Cornillon)",
+      "notes": "Demonstrations conducted for French researchers showing anomalous thrust effects from high-voltage asymmetric capacitors in a vacuum environment, intended to rule out ionic wind as the mechanism."
+    },
+    {
+      "date": "2023",
+      "type": "written",
+      "title": "The Man Who Mastered Gravity (Paul Schatzkin biography)",
+      "outlet": "Trajectory Publishing",
+      "notes": "Posthumous primary-source biography by Paul Schatzkin drawing on Brown's personal papers, family interviews, and previously classified documents. The principal modern reference for Brown's full career and claims."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Man Who Mastered Gravity - Paul Schatzkin (2023)",
+      "url": "https://townsendbrownfoundation.org",
+      "type": "Book",
+      "notes": "Primary biography of Brown, published by Trajectory Publishing (2023). Draws on personal papers, family accounts, and interviews with aged colleagues including Jacques Cornillon."
+    },
+    {
+      "title": "The Hunt for Zero Point - Nick Cook (2002)",
+      "url": "https://www.amazon.com/Hunt-Zero-Point-Nick-Cook/dp/0767906284",
+      "type": "Book",
+      "notes": "Aviation journalist Cook documents the B2 electrostatic leading-edge connection and surveys the history of classified electrogravitics research. Published by Random House, 2002."
+    },
+    {
+      "title": "Project Winterhaven (1953) - Primary Document",
+      "url": null,
+      "type": "Document",
+      "notes": "Original 1953 Pentagon proposal for a disc-shaped electrogravitic aircraft program, authored by Brown. The primary documentary evidence connecting Brown to classified military aerospace development."
+    },
+    {
+      "title": "Jesse Michels Documentary Interview - Paul Schatzkin",
+      "url": "https://www.youtube.com/watch?v=RTEWLSTyUic",
+      "type": "Video",
+      "notes": "Interview with Schatzkin covering the research and findings behind 'The Man Who Mastered Gravity,' including the Cornillon vacuum experiment confirmation."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "project",
+      "node_id": "project-blue-book",
+      "node_label": "Project Blue Book",
+      "relationship": "Project Winterhaven (1953) was submitted contemporaneously with the height of Blue Book activity; both represent mid-1950s U.S. government engagement with anomalous aerospace phenomena",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 1,
+      "node_type": "organization",
+      "node_id": "naval-intelligence",
+      "node_label": "Naval Intelligence",
+      "relationship": "FBI confirmed Brown as the U.S. Navy's top expert in radar detection in 1943, anchoring his classified research career within the Navy intelligence apparatus",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "figure",
+      "node_id": "bob-lazar",
+      "node_label": "Bob Lazar",
+      "relationship": "Brown's 1967 Guidance Technologies closure and Lazar's later S-4 claims about gravity wave propulsion represent parallel narratives of classified anti-gravity research absorbed into black programs",
+      "connection_type": "thematic"
+    },
+    {
+      "event_index": 4,
+      "node_type": "figure",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Brown's Project Winterhaven electrogravitics proposal and Puthoff's later zero-point energy research both operate in the classified-adjacent advanced propulsion research tradition",
+      "connection_type": "thematic"
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "1943 FBI file corroborates his classified Navy research career and his exceptional standing within it as the Navy's top radar detection expert.",
+      "Jacques Cornillon's confirmation of the vacuum experiments at age 98 to biographer Schatzkin provides third-party corroboration for the key scientific claim.",
+      "Project Winterhaven is a real 1953 document with a verifiable military structure and has been reviewed by multiple researchers.",
+      "Major General Gruhn's 1952 demonstration attendance is documented, confirming military interest at a senior level.",
+      "Australian Department of Defense intelligence memo (1971) independently corroborates U.S. anti-gravity research programs.",
+      "MIT's 2018 ion plane demonstration confirms that asymmetric-capacitor thrust is a real and reproducible phenomenon, regardless of the mechanism debate."
+    ],
+    "contradicting": [
+      "Mainstream physics attributes the Biefeld-Brown effect primarily to ionic wind, which would disappear in vacuum; the Cornillon vacuum confirmation is based on a single elderly witness without independent replication.",
+      "The classified program absorption narrative relies on circumstantial evidence - the cessation of public research is consistent with normal classification but does not prove ongoing programs.",
+      "Some of his accounts (a childhood consciousness download from a UFO, time travel claims in late-life conversations) are not scientifically credible and raise questions about his reliability as a self-narrator.",
+      "His Guidance Technologies closure and other personal reversals may have conventional explanations unrelated to classification.",
+      "Schatzkin's biography, while well-researched, is not peer-reviewed academic work and was independently published, limiting its standing as a primary evidentiary source."
+    ]
+  }
+}

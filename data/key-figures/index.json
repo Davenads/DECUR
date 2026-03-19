@@ -1120,5 +1120,19 @@
     "data_file": "diana-pasulka.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "townsend-brown",
+    "name": "Thomas Townsend Brown",
+    "aliases": ["T.T. Brown", "Townsend Brown"],
+    "role": "U.S. Navy Scientist; Biefeld-Brown Effect discoverer",
+    "period": "1930s-1985",
+    "affiliation": "U.S. Navy / Townsend Brown Foundation",
+    "summary": "Mid-century American physicist whose research into the relationship between electromagnetism and gravity produced the Biefeld-Brown effect and drew him into classified government aerospace programs. His 1953 Project Winterhaven proposal for a disc-shaped electrogravitic aircraft and alleged vacuum experiments confirming thrust independent of ionic wind place him at the center of ongoing debates about whether anti-gravity principles were absorbed into black aerospace programs. Cited by modern UAP researchers as historical context for reverse-engineering claims.",
+    "status": "detailed",
+    "tags": ["electrogravitics", "biefeld-brown-effect", "project-winterhaven", "navy", "historical", "anti-gravity", "1950s", "classified-aerospace"],
+    "data_file": "townsend-brown.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

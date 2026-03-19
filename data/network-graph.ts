@@ -698,5 +698,12 @@ export const graphData: GraphData = {
     { source: 'diana-pasulka', target: 'hal-puthoff',    label: 'Puthoff appears in American Cosmic as part of the insider network of scientists working on UAP materials analysis' },
     { source: 'diana-pasulka', target: 'sol-foundation', label: 'participated in SOL Foundation symposia as academic humanities bridge between scientific and experiencer UAP research communities' },
     { source: 'diana-pasulka', target: 'avi-loeb',       label: 'both credentialed academics who have taken UAP seriously within legitimate institutional frameworks, from complementary disciplines' },
+
+    // Thomas Townsend Brown connections
+    { source: 'townsend-brown', target: 'bob-lazar',        label: "Lazar's Element 115 gravity wave propulsion claims are frequently cited alongside Brown's electrogravitics as parallel evidence of classified anti-gravity development" },
+    { source: 'townsend-brown', target: 'hal-puthoff',      label: "Both worked in the classified-adjacent advanced propulsion research space; Puthoff's zero-point energy work connects to Brown's electrogravitics theoretical framework" },
+    { source: 'townsend-brown', target: 'eric-davis',       label: "Davis's theoretical work on spacetime metric engineering operates in the same research tradition as Brown's electrogravitics, both connected to the classified advanced propulsion community" },
+    { source: 'townsend-brown', target: 'project-blue-book', label: 'Project Winterhaven (1953) was submitted contemporaneously with peak Blue Book activity; both represent mid-1950s U.S. government engagement with anomalous aerospace phenomena' },
+    { source: 'townsend-brown', target: 'naval-intelligence', label: 'FBI confirmed Brown as the U.S. Navy top radar detection expert in 1943; his classified research career was anchored within the Navy intelligence apparatus' },
   ],
 };
