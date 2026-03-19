@@ -1050,5 +1050,19 @@
     "data_file": "kirsten-gillibrand.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "tim-burchett",
+    "name": "Rep. Tim Burchett",
+    "aliases": ["Tim Burchett", "Timothy Burchett"],
+    "role": "U.S. Representative (R-TN); House Oversight UAP Hearing Co-chair",
+    "period": "2019-present",
+    "affiliation": "U.S. House of Representatives",
+    "summary": "U.S. Representative from Tennessee and co-chair of the House UAP Caucus who co-led the landmark July 2023 House Oversight Committee hearing where David Grusch, Ryan Graves, and David Fravor testified under oath. One of the most outspoken congressional voices on UAP disclosure, Burchett has sustained a multi-year campaign for whistleblower protections and full government transparency on non-human intelligence.",
+    "status": "detailed",
+    "tags": ["house", "congress", "uap-disclosure", "oversight", "whistleblower", "hearings", "legislation"],
+    "data_file": "tim-burchett.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

@@ -1,0 +1,195 @@
+{
+  "profile": {
+    "id": "tim-burchett",
+    "name": "Rep. Tim Burchett",
+    "aliases": ["Tim Burchett", "Timothy Burchett", "Rep. Burchett"],
+    "born": "August 25, 1964 - Knoxville, Tennessee",
+    "died": null,
+    "roles": [
+      "U.S. Representative (R-TN-02)",
+      "Member, House Oversight and Accountability Committee",
+      "Co-chair, House UAP Caucus"
+    ],
+    "service_period": "2019-present (U.S. House of Representatives)",
+    "organizations": [
+      "U.S. House of Representatives",
+      "House Oversight and Accountability Committee",
+      "House UAP Caucus"
+    ],
+    "clearance": "Congressional oversight access",
+    "summary": "U.S. Representative from Tennessee and co-chair of the House UAP Caucus who co-led the landmark July 2023 House Oversight Committee UAP hearing where David Grusch, Ryan Graves, and David Fravor testified under oath. One of the most outspoken congressional advocates for UAP transparency, Burchett has spent years pushing for whistleblower protections and full government disclosure, working in a bipartisan capacity with colleagues such as Anna Paulina Luna on UAP legislation.",
+    "education": [
+      "B.S., University of Tennessee, 1987"
+    ],
+    "early_career": [
+      "Served in Tennessee state legislature (1994-2002)",
+      "Served as Knox County Mayor (2010-2018)",
+      "Elected to U.S. House in 2018, took office 2019"
+    ],
+    "key_events": [
+      {
+        "year": "2019",
+        "event": "Took office in U.S. House of Representatives; began engaging on UAP intelligence matters through committee work."
+      },
+      {
+        "year": "2021",
+        "event": "Publicly stated the government is lying to the public about UAPs; called for formal hearings and greater congressional oversight."
+      },
+      {
+        "year": "2022",
+        "event": "Co-founded the informal House UAP Caucus with colleagues to coordinate oversight efforts and maintain legislative pressure."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "Co-chaired the landmark House Oversight Committee UAP hearing with David Grusch, Ryan Graves, and David Fravor testifying under oath on crash retrieval programs and pilot encounters."
+      },
+      {
+        "year": "2023",
+        "event": "Introduced legislation to strengthen UAP whistleblower protections, coordinating with Senate counterparts on companion bills."
+      },
+      {
+        "year": "Dec 2023",
+        "event": "Expressed public frustration at the weakening of UAP Disclosure Act provisions in the final 2024 NDAA, attributing rollback to DoD pressure."
+      },
+      {
+        "year": "2024",
+        "event": "Continued UAP oversight hearings and pushed for Inspector General review of alleged crash retrieval programs and legacy USAPs."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "government-deception-confirmed",
+      "claim": "The U.S. government has been actively and deliberately lying to the public about UAP for decades.",
+      "status": "partially-verified",
+      "notes": "Supported by declassified records showing information suppression and consistent testimonial accounts from multiple former officials, but no single unambiguous document confirming systematic intentional deception at the highest levels."
+    },
+    {
+      "id": "crash-retrieval-programs-exist",
+      "claim": "Multiple credible witnesses have confirmed to Congress that non-human craft retrieval programs exist and are being withheld from oversight.",
+      "status": "partially-verified",
+      "notes": "Based primarily on David Grusch's sworn testimony and corroborating accounts provided to Congress under penalty of perjury; no documentary evidence has been made public."
+    },
+    {
+      "id": "congressional-access-denied",
+      "claim": "Members of Congress with proper clearances have been denied access to UAP programs that should fall under legislative oversight.",
+      "status": "partially-verified",
+      "notes": "Consistent with accounts from multiple legislators including Schumer and Gillibrand; institutional stonewalling is documented but formal denial records are classified."
+    },
+    {
+      "id": "ndaa-gutted-by-dod",
+      "claim": "Department of Defense officials actively worked to gut UAP transparency provisions from the 2024 NDAA.",
+      "status": "partially-verified",
+      "notes": "Corroborated by statements from multiple senators and representatives who observed the late-stage weakening of the Schumer-Rounds UAP Disclosure Act; DoD's role in advocating against specific provisions is a matter of legislative record."
+    },
+    {
+      "id": "bipartisan-uap-consensus",
+      "claim": "There is genuine bipartisan agreement among members of Congress that UAP programs are being concealed from oversight.",
+      "status": "partially-verified",
+      "notes": "Evidenced by bipartisan co-sponsorship of UAP legislation and joint hearing leadership; the strength and depth of this consensus beyond a small cohort of committed members is difficult to assess."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Sitting congressman with formal committee oversight access and subpoena authority",
+      "Co-chaired formal hearings where witnesses testified under oath and penalty of perjury",
+      "Demonstrated sustained multi-year engagement rather than opportunistic media appearances",
+      "Bipartisan collaboration with Democratic colleagues including Anna Paulina Luna",
+      "Direct engagement with multiple whistleblowers including David Grusch in formal congressional settings"
+    ],
+    "contradicting": [
+      "Lacks direct access to classified programs; relies on secondhand whistleblower accounts",
+      "Public statements frequently outpace supporting documentary evidence",
+      "Many specific claims remain unverifiable outside of closed briefings",
+      "Political incentives exist for attention-grabbing positions on high-interest topics",
+      "No military or intelligence background to independently evaluate classified program claims"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "anna-paulina-luna",
+      "name": "Anna Paulina Luna",
+      "role": "U.S. Representative (R-FL); House UAP Caucus co-leader",
+      "relationship": "Bipartisan co-leader of the House UAP Caucus and co-organizer of House Oversight UAP hearings; collaborated with Burchett on UAP disclosure and whistleblower protection legislation."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NRO/UAPTF intelligence officer; UAP whistleblower",
+      "relationship": "Primary whistleblower witness at Burchett's July 2023 House Oversight hearing; testified under oath regarding alleged non-human craft retrieval programs."
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "Former U.S. Navy F/A-18 pilot; UAP witness",
+      "relationship": "Testified at Burchett's July 2023 House Oversight hearing on routine UAP encounters during Navy operations, providing pilot corroboration for systemic UAP presence."
+    },
+    {
+      "id": "david-fravor",
+      "name": "David Fravor",
+      "role": "Ret. U.S. Navy Commander; Tic-Tac pilot",
+      "relationship": "Testified at Burchett's July 2023 House Oversight hearing regarding the 2004 Nimitz Tic-Tac encounter, one of the most credentialed firsthand UAP accounts on record."
+    },
+    {
+      "id": "kirsten-gillibrand",
+      "name": "Senator Kirsten Gillibrand",
+      "role": "U.S. Senator (D-NY); Senate Armed Services UAP Subcommittee chair",
+      "relationship": "Senate counterpart in parallel UAP oversight efforts; coordinated on NDAA UAP provisions and whistleblower protection frameworks across the House-Senate legislative divide."
+    },
+    {
+      "id": "matt-gaetz",
+      "name": "Matt Gaetz",
+      "role": "U.S. Representative (R-FL)",
+      "relationship": "House colleague who co-organized early UAP oversight efforts and public pressure campaigns in the 2021-2023 period."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jul 26, 2023",
+      "type": "speech",
+      "title": "House Oversight Committee UAP Hearing",
+      "outlet": "U.S. House Committee on Oversight and Accountability",
+      "notes": "Co-chaired landmark hearing with witness testimony from David Grusch, Ryan Graves, and David Fravor under oath. The most-watched congressional UAP hearing in history, catalyzing subsequent legislative and media pressure."
+    },
+    {
+      "date": "2021-2024",
+      "type": "television",
+      "title": "Media interviews on UAP government deception",
+      "outlet": "Fox News, CNN, The Hill, NewsNation and other outlets",
+      "notes": "Sustained multi-year campaign of media appearances calling for full government disclosure on UAP, whistleblower protection, and congressional access to classified programs."
+    },
+    {
+      "date": "2023",
+      "type": "written",
+      "title": "UAP Whistleblower Protection Legislation",
+      "outlet": "U.S. House of Representatives",
+      "notes": "Introduced and co-sponsored legislation to extend and strengthen whistleblower protections for government employees with UAP-related knowledge, coordinated with Senate counterparts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rep. Tim Burchett Official Website",
+      "url": "https://burchett.house.gov",
+      "type": "Official",
+      "notes": "Primary source for constituent communications, press releases, and legislative record."
+    },
+    {
+      "title": "House Oversight Committee UAP Hearing - July 26, 2023",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "type": "Congressional Record",
+      "notes": "Official hearing record including Burchett's opening statement and questioning of witnesses Grusch, Graves, and Fravor."
+    },
+    {
+      "title": "C-SPAN - House Oversight UAP Hearing (July 26, 2023)",
+      "url": "https://www.c-span.org/video/?529765-1/pentagon-officials-testify-unidentified-anomalous-phenomena",
+      "type": "Video Archive",
+      "notes": "Full video record of the House Oversight UAP hearing co-chaired by Burchett."
+    },
+    {
+      "title": "News coverage of UAP hearings - The Hill, Fox News, CNN",
+      "url": "https://thehill.com",
+      "type": "Media",
+      "notes": "Contemporaneous news coverage of Burchett's UAP oversight activities, hearing preparation, and post-hearing advocacy."
+    }
+  ]
+}
