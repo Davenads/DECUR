@@ -717,5 +717,11 @@ export const graphData: GraphData = {
     { source: 'thomas-wilson',   target: 'dia-organization',   label: 'directed (1999-2002)' },
     { source: 'wilson-davis-memo', target: 'thomas-wilson',    label: 'describes access denial experienced by' },
     { source: 'steven-greer',    target: 'thomas-wilson',      label: 'reportedly present at 1997 Pentagon UAP briefing with Wilson' },
+
+    // Charles Halt connections
+    { source: 'charles-halt', target: 'rendlesham-forest',  label: 'senior investigating officer and primary military witness; authored official Halt Memo documenting the encounter' },
+    { source: 'charles-halt', target: 'john-burroughs',     label: 'Burroughs was a junior airman under Halt\'s command during the Rendlesham incident; Halt later advocated for his VA medical benefits case' },
+    { source: 'charles-halt', target: 'nick-pope',          label: 'Pope investigated Rendlesham for UK MOD and has publicly corroborated the significance and authenticity of Halt\'s account' },
+    { source: 'charles-halt', target: 'halt-memo-1981',     label: 'authored' },
   ],
 };

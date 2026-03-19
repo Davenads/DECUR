@@ -1148,5 +1148,19 @@
     "data_file": "thomas-wilson.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "charles-halt",
+    "name": "Lt. Col. Charles Halt",
+    "aliases": ["Charles Halt", "Col. Halt", "Charles I. Halt"],
+    "role": "Deputy Base Commander, RAF Bentwaters/Woodbridge; Senior Rendlesham Witness",
+    "period": "1966-1994",
+    "affiliation": "U.S. Air Force",
+    "summary": "Retired U.S. Air Force Lieutenant Colonel and Deputy Base Commander at RAF Bentwaters who was the senior military witness to the Rendlesham Forest incident (December 1980). Authored the official 'Halt Memo' to the UK Ministry of Defence and recorded a real-time audio log during the encounter. Has stated under oath that what he witnessed was non-human technology and that a government cover-up followed.",
+    "status": "detailed",
+    "tags": ["military", "rendlesham", "uk", "air-force", "historical"],
+    "data_file": "charles-halt.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
