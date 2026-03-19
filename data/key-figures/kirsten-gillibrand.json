@@ -1,0 +1,246 @@
+{
+  "profile": {
+    "id": "kirsten-gillibrand",
+    "name": "Senator Kirsten Gillibrand",
+    "aliases": ["Kirsten Gillibrand", "Sen. Gillibrand", "Kirsten E. Gillibrand"],
+    "born": "December 9, 1966 - Albany, New York",
+    "died": null,
+    "roles": [
+      "U.S. Senator (D-NY)",
+      "Chair, Senate Armed Services Subcommittee on Emerging Threats and Capabilities",
+      "Primary sponsor, UAP Disclosure Act (2022-2023)"
+    ],
+    "service_period": "2009-present (U.S. Senate)",
+    "organizations": [
+      "U.S. Senate",
+      "Senate Armed Services Committee",
+      "AARO Oversight"
+    ],
+    "clearance": "Congressional oversight access",
+    "summary": "Senator Kirsten Gillibrand (D-NY) has been the most consequential legislative figure in UAP transparency over the 2021-2024 period, establishing the Senate Armed Services Subcommittee on Emerging Threats and Capabilities with an explicit UAP oversight mandate and co-sponsoring the UAP Disclosure Act with Senate Majority Leader Chuck Schumer. Her sustained multi-year engagement - including the first dedicated Senate hearing on UAP and repeated pressure on AARO's leadership - represents the most institutionally embedded legislative effort to compel executive branch transparency on the phenomenon.",
+    "education": [
+      "J.D., UCLA School of Law, 1991",
+      "B.A., Dartmouth College, 1988"
+    ],
+    "early_career": [
+      "Served as U.S. Representative for NY-20 (2007-2009), building a record on agricultural and rural issues before being appointed to the Senate",
+      "Appointed to Hillary Clinton's vacated Senate seat in January 2009 by Governor David Paterson; subsequently won full Senate terms in 2010, 2012, and 2018",
+      "Built a legislative reputation on military affairs, veterans' benefits, and national security - the committee assignments that would later position her as the primary Senate driver of UAP oversight"
+    ],
+    "key_events": [
+      {
+        "year": "2019",
+        "event": "Joined the Senate Armed Services Committee and began engaging with UAP-related intelligence briefings provided to committee members. Began developing relationships with figures in the DoD UAP research ecosystem."
+      },
+      {
+        "year": "2020",
+        "event": "Co-signed a bipartisan letter to the Director of National Intelligence and Secretary of Defense requesting a comprehensive UAP task force report, contributing to the pressure that produced the 2021 UAPTF Preliminary Assessment."
+      },
+      {
+        "year": "2021",
+        "event": "Successfully secured a UAP-related provision in the National Defense Authorization Act for FY2022 requiring annual classified and unclassified UAP reports to Congress - the first statutory reporting mandate for UAP, establishing a legislative framework that subsequent bills would build on."
+      },
+      {
+        "year": "2022",
+        "event": "Established the Senate Armed Services Subcommittee on Emerging Threats and Capabilities with an explicit mandate covering UAP oversight, creating the first permanent Senate subcommittee structure dedicated to tracking government UAP activities."
+      },
+      {
+        "year": "2022",
+        "event": "Introduced the UAP Disclosure Act alongside Senate Majority Leader Chuck Schumer, modeled on the JFK Records Act framework. The bill proposed mandatory declassification of UAP-related records and the creation of a presidentially appointed review board."
+      },
+      {
+        "year": "Jun 2023",
+        "event": "Chaired the first dedicated Senate Armed Services Subcommittee hearing on UAP, receiving testimony from AARO Director Dr. Sean Kirkpatrick and other officials. The hearing established a formal on-record government accounting of UAP investigations and directly preceded David Grusch's House testimony."
+      },
+      {
+        "year": "Dec 2023",
+        "event": "Key provisions of the UAP Disclosure Act were partially incorporated into the NDAA FY2024, though the mandatory review board mechanism was weakened following significant pushback from the Department of Defense and the intelligence community. Gillibrand publicly criticized the dilution of the original legislation."
+      },
+      {
+        "year": "2024",
+        "event": "Continued formal SASC subcommittee oversight hearings, pressed AARO on transparency gaps in the Historical Record Report, and maintained pressure on the executive branch for greater UAP program access for Congressional oversight bodies."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "uap-program-concealment",
+      "category": "government program",
+      "claim": "Credible evidence exists that UAP-related programs have been systematically concealed from the relevant Congressional oversight committees for decades, with classification decisions made in ways that exclude even appropriately cleared legislators from awareness of activities they have legal responsibility to oversee.",
+      "status": "partially-verified",
+      "notes": "Gillibrand has made this claim in multiple public statements and committee hearings, citing information she received from whistleblowers and classified briefings. The claim is substantially corroborated by David Grusch's ICIG complaint (deemed 'credible and urgent'), by testimony from other intelligence community veterans, and by the structural fact that the UAP Disclosure Act was explicitly designed to address a transparency gap Congress itself had identified. AARO's Historical Record Report disputes the existence of concealed crash retrieval programs, but does not directly refute the claim of compartmentalized programs being withheld from oversight committees."
+    },
+    {
+      "id": "aaro-insufficient",
+      "category": "government program",
+      "claim": "AARO as currently constituted lacks the authority, resources, and access to classified programs necessary to genuinely resolve the UAP question. Its limited mandate and insufficient security infrastructure prevent it from examining the full scope of legacy UAP programs.",
+      "status": "partially-verified",
+      "notes": "Gillibrand has expressed this view repeatedly in committee hearings, including direct questioning of AARO Director Kirkpatrick about access limitations. The claim is consistent with statements from other oversight figures and is structurally supported by the design of the UAP Disclosure Act, which was premised on the insufficiency of existing executive-branch mechanisms. Kirkpatrick's own statements about AARO's resource constraints partially corroborate the access limitation argument, even if AARO disputes the broader framing."
+    },
+    {
+      "id": "disclosure-act-necessary",
+      "category": "government awareness",
+      "claim": "A mandatory, JFK Records Act-style declassification process is necessary because voluntary executive branch disclosure of UAP-related materials has demonstrably failed over decades. Relying on agency discretion to release UAP records has produced no meaningful transparency.",
+      "status": "unverified",
+      "notes": "This is Gillibrand's core legislative argument, and the Disclosure Act was explicitly premised on it. The claim that voluntary disclosure has failed is consistent with the historical record of FOIA litigation and the pace of declassification, but whether a mandatory review board would succeed where voluntary mechanisms have not is an empirical question that cannot be evaluated prior to implementation. The partial incorporation of these provisions into NDAA FY2024, in weakened form, means the full mechanism has not been tested."
+    },
+    {
+      "id": "ndaa-provisions-weakened",
+      "category": "government program",
+      "claim": "The Department of Defense and intelligence community actively lobbied to weaken UAP disclosure provisions in the NDAA FY2024, and succeeded in diluting the mandatory review board mechanism that was central to the original UAP Disclosure Act.",
+      "status": "partially-verified",
+      "notes": "Gillibrand and Schumer both made public statements confirming opposition from the executive branch to the stronger provisions of the UAP Disclosure Act. The final NDAA FY2024 language omits the presidentially appointed review board that was central to the original bill, consistent with the claim of successful lobbying to weaken the legislation. Multiple news reports corroborate that DoD and IC objections shaped the final text, though the specific communications and mechanisms of that lobbying effort are not fully documented in the public record."
+    },
+    {
+      "id": "congressional-classification-access",
+      "category": "government awareness",
+      "claim": "Many UAP-related programs are being withheld from the relevant Congressional oversight committees - not merely from the public - meaning that legislators with statutory oversight responsibility do not have access to programs operating under their jurisdiction.",
+      "status": "partially-verified",
+      "notes": "This is among the most specific and serious of Gillibrand's claims, as it asserts a structural breakdown in the constitutional oversight relationship between Congress and the executive branch on UAP matters. The claim is corroborated by Grusch's testimony (he alleged programs concealed from Congress), by statements from other senators including Marco Rubio and Richard Blumenthal, and by the fact that the UAP Disclosure Act's mandatory review board provision was premised on this exact structural problem. It cannot be fully verified without access to the programs in question."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Sitting U.S. Senator with formal committee oversight authority - her claims about concealment are backed by institutional standing to investigate them, not merely public advocacy",
+      "Multiple UAP-related legislative provisions have been enacted into law, demonstrating that her engagement has produced durable institutional results rather than rhetoric alone",
+      "Conducted formal hearings under oath, creating an official on-record government accounting that carries evidentiary weight beyond press conferences or media statements",
+      "Bipartisan in her UAP approach, working across party lines with Republican colleagues including Marco Rubio and Tim Burchett's House counterparts",
+      "Consistent multi-year engagement spanning 2019-2024 with no escalation or inflation of claims - the positions have remained stable across the legislative cycle",
+      "Corroborated by Senate Majority Leader Schumer's co-sponsorship of the Disclosure Act - the support of the most senior Senate Democrat provides institutional validation beyond Gillibrand's individual advocacy"
+    ],
+    "contradicting": [
+      "Political motivations are structurally possible - UAP oversight generates significant media attention and constituent interest that could incentivize legislative action independent of the evidentiary merits",
+      "Has not personally reviewed the classified programs she claims are being concealed - her information is necessarily secondhand, derived from whistleblowers and classified briefings rather than direct program access",
+      "Legislative achievements have been diluted from original intent - the weakening of the UAP Disclosure Act in NDAA FY2024 means her most ambitious transparency mechanism was not implemented",
+      "Positions are based on whistleblower accounts and classified briefings, the content of which cannot be independently verified, making the evidentiary basis for her strongest claims opaque to outside assessment"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "chuck-schumer",
+      "name": "Chuck Schumer",
+      "role": "Senate Majority Leader; UAP Disclosure Act co-sponsor",
+      "relationship": "Co-sponsored the UAP Disclosure Act in 2022-2023 with Gillibrand. As Senate Majority Leader, Schumer's backing gave the bill institutional weight and floor access that Gillibrand's subcommittee position alone could not have provided. The partnership combined Gillibrand's committee expertise with Schumer's procedural authority."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NRO/DoD UAP Task Force whistleblower",
+      "relationship": "Grusch filed his ICIG whistleblower complaint in 2022 and testified before the House Oversight Committee in July 2023. Gillibrand's Senate SASC subcommittee was a primary recipient of his allegations through the congressional oversight process. His disclosures directly informed the legislative argument underlying the UAP Disclosure Act and provided specific claims that Gillibrand cited in pressing AARO for greater transparency."
+    },
+    {
+      "id": "sean-kirkpatrick",
+      "name": "Dr. Sean Kirkpatrick",
+      "role": "AARO Director (2022-2023)",
+      "relationship": "Testified before Gillibrand's Senate SASC subcommittee at the June 2023 UAP hearing - the first dedicated Senate UAP hearing. Kirkpatrick was the primary executive branch official subject to Gillibrand's oversight scrutiny. Her repeated questioning about AARO's access to legacy programs and the scope of its investigation formed the central substantive exchange of the hearing."
+    },
+    {
+      "id": "karl-nell",
+      "name": "Karl Nell",
+      "role": "Retired Army Colonel; SOL Foundation co-founder",
+      "relationship": "Nell and colleagues from the SOL Foundation provided technical briefings to congressional staff on UAP-related matters during the 2022-2023 period, contributing to the legislative context in which the UAP Disclosure Act was developed. His Army INSCOM background and public corroboration of the disclosure narrative aligned with Gillibrand's committee work."
+    },
+    {
+      "id": "marco-rubio",
+      "name": "Marco Rubio",
+      "role": "U.S. Senator (R-FL); Senate Intelligence Committee member",
+      "relationship": "Collaborated with Gillibrand on UAP transparency provisions across multiple NDAA cycles. Rubio championed the original UAP Task Force reporting requirements from the Intelligence Committee side, with Gillibrand driving parallel provisions from Armed Services. Their bipartisan coordination produced the most durable legislative achievements in UAP transparency of the 2020-2024 period. (Note: no dedicated profile page exists for Rubio in this system.)"
+    },
+    {
+      "id": "tim-gallaudet",
+      "name": "Dr. Timothy Gallaudet",
+      "role": "Rear Admiral (ret.); former acting NOAA Administrator",
+      "relationship": "Gallaudet testified before congressional UAP hearings and engaged with the oversight process that Gillibrand helped establish. His senior military and scientific credentials made him a credible witness for the legislative framework Gillibrand was building through the subcommittee."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jun 2023",
+      "type": "speech",
+      "title": "Senate SASC Subcommittee Hearing on UAP - Chaired by Gillibrand",
+      "outlet": "U.S. Senate Armed Services Subcommittee on Emerging Threats and Capabilities",
+      "notes": "First dedicated Senate subcommittee hearing on UAP, chaired by Gillibrand. AARO Director Sean Kirkpatrick testified. The hearing established a formal on-record government accounting of UAP investigation activities and directly preceded the more prominent House Oversight hearing featuring Grusch, Fravor, and Graves in July 2023."
+    },
+    {
+      "date": "2022",
+      "type": "speech",
+      "title": "UAP Disclosure Act Introduction - Senate Floor",
+      "outlet": "U.S. Senate",
+      "notes": "Gillibrand and Schumer introduced the UAP Disclosure Act (S.2391), modeled on the JFK Records Act. The bill proposed a presidentially appointed review board with authority to mandate declassification of UAP-related records held by any government agency. Legislative action represented the most ambitious transparency mechanism proposed in the modern UAP disclosure era."
+    },
+    {
+      "date": "Jul 2023",
+      "type": "television",
+      "title": "Post-Grusch Testimony Media Interviews",
+      "outlet": "Multiple outlets including CNN, MSNBC, ABC News",
+      "notes": "Following the July 26, 2023 House Oversight UAP hearing featuring Grusch, Fravor, and Graves, Gillibrand gave multiple television and podcast interviews underscoring the Senate's parallel oversight work and the case for passing the UAP Disclosure Act. She described the hearing testimony as consistent with what her subcommittee had been learning through classified briefings."
+    },
+    {
+      "date": "Dec 2023",
+      "type": "written",
+      "title": "Statement on NDAA FY2024 UAP Provisions",
+      "outlet": "Office of Senator Gillibrand",
+      "notes": "Public statement following enactment of NDAA FY2024, acknowledging that core UAP Disclosure Act provisions were included in diluted form. Gillibrand noted that while some transparency mechanisms were adopted, the mandatory review board - the central enforcement mechanism of the original bill - was removed under executive branch pressure. Committed to continuing legislative efforts in subsequent NDAA cycles."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Senator Gillibrand - Official Senate Website",
+      "url": "https://www.gillibrand.senate.gov",
+      "type": "Government",
+      "notes": "Official Senate website including press releases, committee assignments, and legislative record. Primary source for her UAP-related statements and legislation."
+    },
+    {
+      "title": "Senate SASC UAP Subcommittee Hearing - June 2023 (C-SPAN)",
+      "url": "https://www.c-span.org/video/?528756-1/senate-subcommittee-hearing-unidentified-aerial-phenomena",
+      "type": "Congressional Record",
+      "notes": "Full video record of the June 2023 Senate Armed Services Subcommittee hearing on UAP chaired by Gillibrand, featuring testimony from AARO Director Sean Kirkpatrick."
+    },
+    {
+      "title": "UAP Disclosure Act of 2023 - S.2391 (Congress.gov)",
+      "url": "https://www.congress.gov/bill/118th-congress/senate-bill/2391",
+      "type": "Legislation",
+      "notes": "Full text of the UAP Disclosure Act as introduced by Gillibrand and Schumer, including the JFK Records Act-style review board mechanism."
+    },
+    {
+      "title": "The Hill - UAP Disclosure Act Coverage (2023)",
+      "url": "https://thehill.com/policy/defense/",
+      "type": "News",
+      "notes": "Ongoing news coverage of Gillibrand's UAP legislative efforts, including reporting on the NDAA negotiations and the dilution of the Disclosure Act's core provisions in December 2023."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "chuck-schumer",
+      "node_label": "Chuck Schumer",
+      "relationship": "Co-introduced the UAP Disclosure Act with Schumer in 2022, combining her subcommittee expertise with his procedural authority as Senate Majority Leader.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Grusch's whistleblower allegations directly informed the UAP Disclosure Act's legislative argument; his ICIG complaint was a primary reference in Gillibrand's subcommittee oversight work.",
+      "connection_type": "oversight"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "sean-kirkpatrick",
+      "node_label": "Sean Kirkpatrick",
+      "relationship": "AARO Director who testified before Gillibrand's subcommittee at the June 2023 hearing; primary executive branch official subject to her UAP oversight scrutiny.",
+      "connection_type": "oversight"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "chuck-schumer",
+      "node_label": "Chuck Schumer",
+      "relationship": "Jointly led the effort to incorporate UAP Disclosure Act provisions into NDAA FY2024; both publicly criticized the dilution of the mandatory review board mechanism.",
+      "connection_type": "collaboration"
+    }
+  ]
+}

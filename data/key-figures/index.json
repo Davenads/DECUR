@@ -1036,5 +1036,19 @@
     "data_file": "jim-semivan.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "kirsten-gillibrand",
+    "name": "Senator Kirsten Gillibrand",
+    "aliases": ["Kirsten Gillibrand", "Sen. Gillibrand"],
+    "role": "U.S. Senator (D-NY); UAP Disclosure Act Co-sponsor",
+    "period": "2009-present",
+    "affiliation": "U.S. Senate / Senate Armed Services Committee",
+    "summary": "The most consequential legislative figure in UAP transparency of the 2021-2024 period. Established the Senate Armed Services Subcommittee on Emerging Threats and Capabilities with an explicit UAP oversight mandate, co-sponsored the UAP Disclosure Act with Chuck Schumer, and chaired the first dedicated Senate UAP hearing in June 2023. Her sustained multi-year campaign to compel executive branch transparency produced the most durable legislative infrastructure for UAP accountability in modern American history.",
+    "status": "detailed",
+    "tags": ["senate", "legislation", "uap-disclosure-act", "aaro", "oversight", "ndaa", "congress"],
+    "data_file": "kirsten-gillibrand.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

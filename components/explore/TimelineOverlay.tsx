@@ -90,6 +90,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'colm-kelleher':    { label: 'Colm Kelleher',       color: '#0284c7' },
   'annie-jacobsen':   { label: 'Annie Jacobsen',      color: '#92400e' },
   'jim-semivan':      { label: 'Jim Semivan',          color: '#b45309' },
+  'kirsten-gillibrand': { label: 'Sen. Gillibrand',    color: '#0f766e' },
 };
 
 const UAP_COLOR = '#93c5e8';
