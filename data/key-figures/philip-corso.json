@@ -141,5 +141,23 @@
       "relationship": "Both served in overlapping government roles in the 1950s-60s; Hynek's Project Blue Book work ran concurrent with Corso's Pentagon Foreign Technology tenure",
       "connection_type": "institutional"
     }
-  ]
+  ],
+  "credibility": {
+    "supporting": [
+      "Verifiable 20-year U.S. Army career with documented service in senior staff positions including the National Security Council staff under President Eisenhower.",
+      "Filed an affidavit before the House Judiciary Committee in 1997 attesting to the truth of his claims under legal penalty of perjury.",
+      "His account of the Foreign Technology Division at the Pentagon is consistent with verifiable aspects of Army R&D organization in the early 1960s, including the existence of the division under Lt. General Arthur Trudeau.",
+      "Co-author William Birnes conducted extensive research to ground the book in verifiable historical context, including references to real programs, contractors, and personnel.",
+      "Some researchers have found his descriptions of specific Roswell debris characteristics consistent with accounts from other witnesses they consider credible.",
+      "Spoke publicly late in life at age 82, when he had little remaining financial or professional incentive to fabricate or maintain a false account."
+    ],
+    "contradicting": [
+      "Contemporaries and colleagues who knew him during the relevant period at the Pentagon have disputed his account of his role and activities at the Foreign Technology Division.",
+      "Documented inconsistencies exist between his claimed activities and available Army personnel records for the early 1960s.",
+      "The specific technological claims - that fiber optics, integrated circuits, and night vision were derived from Roswell debris - are directly contradicted by the independent development histories of those technologies, which are well-documented through patents, academic publications, and corporate records.",
+      "Stanton Friedman and other serious Roswell researchers, who would be expected to corroborate a genuine insider account, have publicly questioned major aspects of his story.",
+      "The book was co-authored with William Birnes, publisher of UFO Magazine and a tabloid-oriented journalist, raising legitimate questions about sensationalism and commercial motivation shaping the narrative.",
+      "His account expanded and became more dramatic in later interviews compared to the book itself, which is the opposite of the pattern expected from a genuine first-person account recounting verifiable events."
+    ]
+  }
 }
