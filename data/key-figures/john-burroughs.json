@@ -1,0 +1,207 @@
+{
+  "profile": {
+    "id": "john-burroughs",
+    "name": "John Burroughs",
+    "aliases": ["SSgt. John Burroughs", "John A. Burroughs"],
+    "born": "Not publicly disclosed",
+    "died": null,
+    "roles": [
+      "U.S. Air Force Staff Sergeant (ret.)",
+      "Rendlesham Forest primary witness",
+      "UAP health effects advocate"
+    ],
+    "service_period": "1979-1988 (U.S. Air Force)",
+    "organizations": [
+      "U.S. Air Force",
+      "81st Security Police Squadron (RAF Bentwaters/Woodbridge)"
+    ],
+    "clearance": "Secret (former)",
+    "summary": "Former U.S. Air Force Staff Sergeant and primary ground witness to the Rendlesham Forest incident of December 1980, one of the most documented UAP cases in history, in which multiple USAF personnel at RAF Bentwaters/Woodbridge encountered an unidentified craft at close range over three consecutive nights. Burroughs subsequently suffered serious cardiac health issues he attributes to radiation exposure during the event. He won a landmark 2015 VA benefits settlement in which the U.S. Senate Armed Services Committee intervened to compel review of his classified medical records - an unprecedented outcome in any UAP-related health case.",
+    "education": [],
+    "early_career": [
+      "Enlisted in U.S. Air Force in 1979",
+      "Assigned to 81st Security Police Squadron at RAF Bentwaters, Suffolk, England",
+      "Participated in security patrols at the twin base complex"
+    ],
+    "key_events": [
+      {
+        "year": "Dec 1980",
+        "event": "Participated in initial ground investigation of anomalous lights near the East Gate of RAF Woodbridge; one of the first personnel to approach and observe an unidentified craft in Rendlesham Forest."
+      },
+      {
+        "year": "Dec 26, 1980",
+        "event": "Participated in the second night of the Rendlesham Forest incident; witnessed craft at close range and experienced missing time with fellow airman Jim Penniston."
+      },
+      {
+        "year": "Dec 28, 1980",
+        "event": "Accompanied Lt. Col. Charles Halt on the third night investigation; observed aerial phenomena and unexplained light beams over the forest."
+      },
+      {
+        "year": "1981",
+        "event": "Provided witness statement to base command; statements were later released under FOIA and became part of the official record alongside the Halt Memo."
+      },
+      {
+        "year": "2013",
+        "event": "Began formal VA health benefits claim process, citing radiation exposure and cardiac issues linked to the Rendlesham Forest incident."
+      },
+      {
+        "year": "2015",
+        "event": "Won landmark VA benefits settlement in which the U.S. Senate Armed Services Committee intervened to require review of classified medical records - an unprecedented outcome in any UAP-related health case."
+      },
+      {
+        "year": "2016",
+        "event": "Co-authored 'Encounter in Rendlesham Forest' with Nick Pope and Jim Penniston, providing the definitive insider account of the incident."
+      },
+      {
+        "year": "2017",
+        "event": "Continued public advocacy for UAP witness health protections and transparency regarding the Rendlesham incident and its classified materials."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "rendlesham-craft-physical",
+      "claim": "The object encountered in Rendlesham Forest was a physically real craft with measurable radiation emissions, not a misidentified natural phenomenon.",
+      "status": "partially-verified",
+      "notes": "Radiation measurements taken at the landing site by Lt. Col. Halt were documented in real time and the Halt Memo confirms anomalous readings. The nature of the object itself remains officially unresolved; no conventional explanation has definitively accounted for all reported physical evidence."
+    },
+    {
+      "id": "classified-medical-records",
+      "claim": "The U.S. government holds classified medical records related to his radiation exposure during the Rendlesham Forest incident.",
+      "status": "verified",
+      "notes": "Confirmed by the 2015 VA case outcome: the Senate Armed Services Committee was required to intervene and facilitate review of classified records pertaining to Burroughs' exposure, establishing as a matter of legal record that such classified records exist."
+    },
+    {
+      "id": "missing-time-event",
+      "claim": "He and Jim Penniston experienced missing time and anomalous physiological effects during close approach to the object on December 26, 1980.",
+      "status": "unverified",
+      "notes": "Both Burroughs and Penniston have independently reported missing time and unusual physical symptoms following the encounter. There is no independent means of verifying the missing time claim, and the accounts have evolved in detail over the decades since the event."
+    },
+    {
+      "id": "rendlesham-cover-up",
+      "claim": "Senior USAF and UK MOD officials were aware of the true nature of the incident and deliberately suppressed full disclosure to the witnesses and the public.",
+      "status": "partially-verified",
+      "notes": "The existence of classified records, the withholding of medical information from a witness, and documented inconsistencies between official accounts and witness testimony support a pattern of information control. No document explicitly confirming intentional suppression at senior command level has been declassified."
+    },
+    {
+      "id": "witness-health-neglect",
+      "claim": "UAP witnesses who experienced physiological effects during government service have been systematically denied medical care and benefits.",
+      "status": "partially-verified",
+      "notes": "Burroughs' own case required extraordinary Senate intervention to access relevant medical records, establishing a documented precedent of institutional obstruction. Whether this reflects deliberate policy or bureaucratic dysfunction is unresolved, but the pattern is consistent with accounts from other alleged UAP exposure cases."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "First-hand military witness with a verifiable service record at RAF Bentwaters/Woodbridge during the incident",
+      "Corroborated by multiple independent witnesses including Jim Penniston, Lt. Col. Charles Halt, and other base personnel",
+      "Radiation measurements at the landing site were documented in real time by Halt and recorded in the authenticated Halt Memo",
+      "VA case outcome legally confirmed the existence of classified medical records related to the incident",
+      "Physical evidence including ground impressions and radiation traces were documented at the time by military personnel",
+      "The Halt Memo (1981) is an authenticated government document corroborating the broad facts of the incident"
+    ],
+    "contradicting": [
+      "Memory of a close encounter may be confabulated or distorted by the passage of decades and repeated retelling",
+      "Missing time claims are unfalsifiable by nature",
+      "No material evidence of the craft itself has been produced or independently confirmed",
+      "UK MOD investigations concluded that conventional explanations could not be ruled out",
+      "Decades elapsed between the event and the more detailed public accounts, raising reliability questions",
+      "Some specific details in Burroughs' accounts have evolved over time across different interviews and publications"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "nick-pope",
+      "name": "Nick Pope",
+      "role": "Former UK MOD UFO desk officer; author",
+      "relationship": "Co-authored 'Encounter in Rendlesham Forest' (2014) with Burroughs and Jim Penniston; provided the official British government perspective and helped contextualize the incident within UK MOD handling of UAP cases."
+    },
+    {
+      "id": "daniel-sheehan",
+      "name": "Daniel Sheehan",
+      "role": "Constitutional attorney; UAP legal advocate",
+      "relationship": "Provided legal assistance to Burroughs during the landmark VA benefits case, supporting efforts to compel the government to review classified medical records related to Rendlesham radiation exposure."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Dec 1980",
+      "type": "written",
+      "title": "Original USAF Witness Statement",
+      "outlet": "U.S. Air Force, 81st Security Police Squadron",
+      "notes": "Initial witness statement submitted to USAF base command following the Rendlesham Forest incident; later declassified and released under FOIA as part of the official record."
+    },
+    {
+      "date": "2015",
+      "type": "formal-complaint",
+      "title": "VA Benefits Settlement and Senate Armed Services Committee Intervention",
+      "outlet": "U.S. Department of Veterans Affairs / U.S. Senate Armed Services Committee",
+      "notes": "Landmark legal outcome in which Senate Armed Services Committee staff intervened to require review of Burroughs' classified medical records, establishing the first documented precedent of a UAP-related health case forcing declassification review."
+    },
+    {
+      "date": "2016",
+      "type": "written",
+      "title": "Encounter in Rendlesham Forest",
+      "outlet": "Thomas Dunne Books / St. Martin's Press",
+      "notes": "Co-authored with Nick Pope and Jim Penniston. The most detailed insider account of the Rendlesham Forest incident, covering all three nights, witness experiences, and the subsequent official response and suppression."
+    },
+    {
+      "date": "2013",
+      "type": "television",
+      "title": "Media interviews and conference appearances on Rendlesham and UAP health effects",
+      "outlet": "Various - including History Channel, Coast to Coast AM, UAP conferences",
+      "notes": "Sustained series of public appearances from 2013 onward covering the Rendlesham incident, the VA health battle, and broader advocacy for UAP witness protections."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "case",
+      "node_id": "rendlesham-forest",
+      "node_label": "Rendlesham Forest (1980)",
+      "relationship": "Primary ground witness on the first night; one of the first personnel to approach and observe the unidentified craft near the East Gate of RAF Woodbridge.",
+      "connection_type": "witness"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "daniel-sheehan",
+      "node_label": "Daniel Sheehan",
+      "relationship": "Sheehan provided legal counsel during the landmark 2015 VA benefits case that forced review of Burroughs' classified medical records.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 6,
+      "node_type": "figure",
+      "node_id": "nick-pope",
+      "node_label": "Nick Pope",
+      "relationship": "Co-authored 'Encounter in Rendlesham Forest' (2016) with Pope and Jim Penniston; Pope provided the UK MOD institutional context for the published account.",
+      "connection_type": "collaboration"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Halt Memo (1981) - FOIA declassified",
+      "url": "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/ufo/rendlesham_forest_incident.pdf",
+      "type": "Government Document",
+      "notes": "Lt. Col. Charles Halt's memo to the UK MOD documenting the incident; authenticated primary government document corroborating the broad facts of the Rendlesham case."
+    },
+    {
+      "title": "Encounter in Rendlesham Forest - Burroughs, Penniston, Pope (2014)",
+      "url": "https://us.macmillan.com/books/9781250055262/encounterinrendleshamforest",
+      "type": "Book",
+      "notes": "Primary source - co-authored insider account covering all three nights of the incident and the subsequent official response (Thomas Dunne Books / St. Martin's Press, 2014)."
+    },
+    {
+      "title": "UK National Archives - UAP/UFO File Releases",
+      "url": "https://www.nationalarchives.gov.uk/ufos/",
+      "type": "Government Archive",
+      "notes": "UK MOD file releases covering the Rendlesham Forest incident and related correspondence; primary source for British government handling of the case."
+    },
+    {
+      "title": "Senate Armed Services Committee VA case coverage",
+      "url": "https://www.politico.com/story/2015/05/john-burroughs-ufo-va-benefits-rendlesham-117650",
+      "type": "Media",
+      "notes": "Contemporaneous news coverage of the landmark 2015 VA settlement and Senate intervention compelling review of classified medical records."
+    }
+  ]
+}

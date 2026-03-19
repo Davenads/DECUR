@@ -671,5 +671,11 @@ export const graphData: GraphData = {
     { source: 'tim-burchett', target: 'david-fravor',    label: 'Fravor testified at Burchett\'s July 2023 House Oversight hearing about the 2004 Nimitz Tic-Tac encounter' },
     { source: 'tim-burchett', target: 'kirsten-gillibrand', label: 'Parallel House-Senate UAP oversight campaigns; coordinated on NDAA provisions and whistleblower protections' },
     { source: 'tim-burchett', target: 'aaro',            label: 'Primary House overseer of AARO; critical of AARO\'s scope and access limitations' },
+
+    // John Burroughs connections
+    { source: 'john-burroughs', target: 'rendlesham-forest',  label: 'primary ground witness on first and second nights of incident' },
+    { source: 'john-burroughs', target: 'nick-pope',          label: 'co-authored Encounter in Rendlesham Forest (2014); Pope provided UK MOD institutional context' },
+    { source: 'john-burroughs', target: 'daniel-sheehan',     label: 'Sheehan provided legal counsel in landmark 2015 VA benefits case forcing review of classified medical records' },
+    { source: 'john-burroughs', target: 'halt-memo-1981',     label: 'witness statements became part of the official record alongside the Halt Memo' },
   ],
 };

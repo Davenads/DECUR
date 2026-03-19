@@ -1064,5 +1064,19 @@
     "data_file": "tim-burchett.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "john-burroughs",
+    "name": "John Burroughs",
+    "aliases": ["SSgt. John Burroughs"],
+    "role": "USAF Staff Sergeant (ret.); Rendlesham Forest Primary Witness",
+    "period": "1979-1988 (USAF)",
+    "affiliation": "U.S. Air Force / 81st Security Police Squadron",
+    "summary": "Former U.S. Air Force Staff Sergeant and primary ground witness to the Rendlesham Forest incident (December 1980), one of the most documented UAP cases in history, in which USAF personnel at RAF Bentwaters/Woodbridge encountered an unidentified craft at close range over three consecutive nights. Burroughs later fought a years-long legal battle with the VA over cardiac health issues he attributes to radiation exposure, winning a 2015 landmark settlement that required Senate Armed Services Committee intervention to compel review of his classified medical records - an unprecedented outcome in any UAP-related health case.",
+    "status": "detailed",
+    "tags": ["rendlesham-forest", "usaf", "witness", "health-effects", "uk", "raf-bentwaters", "va-benefits", "1980"],
+    "data_file": "john-burroughs.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
