@@ -1,0 +1,210 @@
+{
+  "profile": {
+    "id": "edward-ruppelt",
+    "name": "Capt. Edward J. Ruppelt",
+    "aliases": ["Edward Ruppelt", "E.J. Ruppelt", "Captain Ruppelt"],
+    "born": "July 17, 1923 - Lemars, Iowa",
+    "died": "September 15, 1960 - Redondo Beach, California",
+    "roles": [
+      "U.S. Air Force Captain",
+      "Chief, Project Blue Book (1951-1953)",
+      "Author - The Report on Unidentified Flying Objects (1956)"
+    ],
+    "service_period": "1942-1953 (U.S. Air Force)",
+    "organizations": [
+      "U.S. Air Force",
+      "Air Technical Intelligence Center (ATIC)",
+      "Project Blue Book",
+      "Project Grudge"
+    ],
+    "clearance": "Top Secret (former)",
+    "summary": "Ruppelt served as Project Blue Book's chief investigator during its most active and credible period, coined the term 'UFO,' and after leaving the Air Force wrote a remarkably candid account of the program's findings and internal politics. His 1956 book remains the most authoritative insider account of official UAP investigation ever published - one that grew more skeptical in a 1959 appendix under circumstances that remain disputed among researchers.",
+    "education": [
+      "B.S., Iowa State University (aeronautical engineering)"
+    ],
+    "early_career": [
+      "Served as WWII bomber crew member; flew B-29 combat missions in the Pacific",
+      "Returned to Iowa State post-war on the GI Bill to complete his engineering degree",
+      "Joined Air Technical Intelligence Center (ATIC) at Wright-Patterson AFB in 1951"
+    ],
+    "key_events": [
+      {
+        "year": "1951",
+        "event": "Appointed chief of Project Blue Book's predecessor Project Grudge; immediately overhauled investigation methodology to pursue genuine analysis rather than debunking, instituting standardized report forms and scientific protocols."
+      },
+      {
+        "year": "1952",
+        "event": "Led Blue Book during its most active year - the 1952 Washington D.C. UFO flap, when multiple unidentified objects appeared over restricted airspace and triggered national media coverage and a nationally reported press conference."
+      },
+      {
+        "year": "1952",
+        "event": "Coined the term 'Unidentified Flying Object' to replace the colloquial 'flying saucer' with a more analytically neutral designation - a term that became permanent in both official and public discourse."
+      },
+      {
+        "year": "1953",
+        "event": "Participated in and served as Blue Book's liaison to the CIA-convened Robertson Panel, which recommended a public debunking policy toward UAP reports; Ruppelt privately disagreed with the panel's conclusions and later described them critically in his book."
+      },
+      {
+        "year": "1953",
+        "event": "Left Project Blue Book and the U.S. Air Force; Blue Book subsequently shifted toward a systematic debunking posture under new leadership, a transition Ruppelt documented and criticized in his 1956 book."
+      },
+      {
+        "year": "1956",
+        "event": "Published 'The Report on Unidentified Flying Objects' - the most candid insider account of Blue Book operations ever published, including numerous cases the Air Force had no explanation for and criticism of the Robertson Panel's debunking mandate."
+      },
+      {
+        "year": "1959",
+        "event": "Published a revised edition with an added chapter adopting a markedly more skeptical tone; the circumstances of this apparent reversal have been disputed by researchers, given that Ruppelt died the following year at age 37."
+      },
+      {
+        "year": "Sep 1960",
+        "event": "Died of a heart attack at age 37 in Redondo Beach, California. The reversal in his 1959 edition and the circumstances of his early death have been subjects of ongoing speculation among UAP researchers."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "genuine-unknowns-exist",
+      "claim": "A meaningful percentage of Blue Book cases represented genuinely unexplained phenomena that could not be accounted for by known science or technology.",
+      "status": "partially-verified",
+      "notes": "Blue Book's own records confirm that a significant percentage of cases were officially classified as 'Unknown.' Ruppelt's firsthand account of specific cases remains consistent with declassified Blue Book files, though the interpretation of those unknowns is contested."
+    },
+    {
+      "id": "robertson-panel-debunking",
+      "claim": "The 1953 CIA Robertson Panel deliberately shifted official policy toward debunking UAP reports regardless of evidence quality, undermining genuine investigation.",
+      "status": "partially-verified",
+      "notes": "Declassified Robertson Panel minutes and subsequent CIA FOIA releases support Ruppelt's characterization of the panel's debunking mandate. The Pentacle Memorandum further corroborates that evidence presentation to the panel was pre-filtered. However, the CIA's stated rationale was national security communications management rather than cover-up per se."
+    },
+    {
+      "id": "washington-flap-genuine",
+      "claim": "The 1952 Washington D.C. UFO flap represented genuine unidentified objects operating over restricted airspace that were not adequately explained by Air Force or Civil Aeronautics Administration radar operators.",
+      "status": "partially-verified",
+      "notes": "Multiple simultaneous radar contacts at different installations during the July 1952 events are documented in official records. The Air Force's 'temperature inversion' explanation was disputed by Ruppelt and other investigators at the time, and remains controversial among atmospheric scientists."
+    },
+    {
+      "id": "blue-book-methodology",
+      "claim": "Project Blue Book's early investigative period (1951-1953) was the most scientifically rigorous era of official UAP inquiry, and was subsequently degraded under political pressure following the Robertson Panel.",
+      "status": "partially-verified",
+      "notes": "Blue Book investigation records from Ruppelt's tenure show more detailed and open-ended analysis than later years. Post-1953 Blue Book records reflect a systematic pattern of classification into 'identified' categories that critics including Hynek and Vallee documented as methodologically inadequate."
+    },
+    {
+      "id": "1959-reversal-disputed",
+      "claim": "The skeptical chapter added to the 1959 revised edition of his book may not reflect his genuine final views, given the circumstances of the revision and his sudden death the following year.",
+      "status": "unverified",
+      "notes": "No documentary evidence definitively explains the change in tone between the 1956 and 1959 editions. Researchers including Richard Dolan have noted the revision's anomalous character relative to Ruppelt's known private statements. The claim remains speculative; Ruppelt may simply have changed his views based on subsequent analysis."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Firsthand insider access as the chief of Project Blue Book during its most active period gives his account unique primary-source authority",
+      "Coined the term 'UFO' - demonstrating recognized expertise and influence within the official investigation apparatus",
+      "Contemporary declassified Blue Book documents corroborate the broad facts of his account, including the case files and Robertson Panel proceedings",
+      "The 1956 book was published while he was still of working age and could have faced professional and social consequences for candor",
+      "Declassified Robertson Panel minutes support his characterization of the panel's debunking mandate",
+      "Multiple independent researchers including J. Allen Hynek have corroborated the post-1953 shift in Blue Book methodology that Ruppelt described"
+    ],
+    "contradicting": [
+      "The 1959 revised edition's added skeptical chapter creates genuine uncertainty about his final assessed views",
+      "Left government service in 1953 and had no direct access to Blue Book's later operations or classified developments",
+      "Some cases he reported as genuinely unexplained have subsequently received mundane explanations under re-analysis",
+      "Memory, classification constraints, and the requirements of public readability may have shaped his account in ways that are difficult to assess"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "j-allen-hynek",
+      "name": "Dr. J. Allen Hynek",
+      "role": "Blue Book scientific consultant; later CUFOS founder",
+      "relationship": "Hynek served as Blue Book's scientific consultant throughout Ruppelt's tenure; the two collaborated on Blue Book cases. Hynek later became increasingly sympathetic to the genuine-mystery thesis, a trajectory consistent with the investigative environment Ruppelt had described."
+    },
+    {
+      "id": "donald-keyhoe",
+      "name": "Maj. Donald Keyhoe",
+      "role": "Civilian UAP researcher; NICAP director",
+      "relationship": "Ruppelt and Keyhoe had a complicated relationship - Ruppelt provided some candid off-the-record information to Keyhoe while officially maintaining Air Force positions. Together their insider and civilian accounts formed the most credible public picture of official UAP investigation in the 1950s."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jul 1952",
+      "type": "speech",
+      "title": "Air Force Press Conference - Washington D.C. UFO Flap",
+      "outlet": "U.S. Air Force / National Press Club (Washington D.C.)",
+      "notes": "Ruppelt participated in the Air Force's nationally covered press conference following the 1952 Washington D.C. radar incidents. The conference presented the 'temperature inversion' explanation; Ruppelt later wrote critically of how that explanation was handled."
+    },
+    {
+      "date": "1956",
+      "type": "written",
+      "title": "The Report on Unidentified Flying Objects",
+      "outlet": "Doubleday (New York)",
+      "notes": "The most candid insider account of Project Blue Book operations ever published. Covers the 1952 Washington flap, the Robertson Panel, numerous unexplained cases, and the political pressures that shaped official UAP investigation. Available in full via the Internet Archive."
+    },
+    {
+      "date": "1959",
+      "type": "written",
+      "title": "The Report on Unidentified Flying Objects (revised edition)",
+      "outlet": "Doubleday (New York)",
+      "notes": "Revised edition featuring an added final chapter with a more skeptical tone than the 1956 original. The nature and motivation of this revision have been disputed by researchers, as Ruppelt died the following year."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Project Blue Book",
+      "relationship": "Served as chief investigator during the program's most active and scientifically rigorous period (1951-1953); overhauled methodology from systematic debunking toward genuine analytical inquiry.",
+      "connection_type": "leadership"
+    },
+    {
+      "event_index": 3,
+      "node_type": "organization",
+      "node_id": "robertson-panel",
+      "node_label": "Robertson Panel",
+      "relationship": "Served as Blue Book's liaison to the 1953 CIA Robertson Panel; privately disagreed with its debunking recommendations and later described its institutional impact critically in his 1956 book.",
+      "connection_type": "participation"
+    },
+    {
+      "event_index": 1,
+      "node_type": "figure",
+      "node_id": "j-allen-hynek",
+      "node_label": "Dr. J. Allen Hynek",
+      "relationship": "Hynek served as Blue Book's scientific consultant under Ruppelt; their collaboration represented the most rigorous official analytical partnership in early UAP inquiry.",
+      "connection_type": "collaboration"
+    },
+    {
+      "event_index": 5,
+      "node_type": "figure",
+      "node_id": "donald-keyhoe",
+      "node_label": "Donald Keyhoe",
+      "relationship": "Ruppelt's insider book and Keyhoe's NICAP-backed civilian research were the two most influential credible accounts of official UAP investigation available to the public in the 1950s.",
+      "connection_type": "contemporary"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Report on Unidentified Flying Objects - Ruppelt (1956)",
+      "url": "https://archive.org/details/thereportonunide00rupp",
+      "type": "Book",
+      "notes": "Primary source - Ruppelt's own account, available in full via Internet Archive. The definitive insider narrative of Project Blue Book operations under his leadership (Doubleday, 1956)."
+    },
+    {
+      "title": "Project Blue Book Records - National Archives",
+      "url": "https://www.archives.gov/research/military/air-force/ufos",
+      "type": "Government Archive",
+      "notes": "Digitized Project Blue Book case files held by the National Archives; primary documentary basis for corroborating or challenging Ruppelt's account of specific investigations."
+    },
+    {
+      "title": "Robertson Panel Report (CIA FOIA Reading Room)",
+      "url": "https://www.cia.gov/readingroom/collection/ufo-unidentified-flying-objects",
+      "type": "Government Document",
+      "notes": "Declassified Robertson Panel documents available via the CIA FOIA reading room; corroborates Ruppelt's characterization of the panel's debunking mandate and the political pressures on Blue Book."
+    },
+    {
+      "title": "Blue Book Special Report 14 - Battelle Memorial Institute (1955)",
+      "url": "https://www.archives.gov/research/military/air-force/ufos",
+      "type": "Government Document",
+      "notes": "The most comprehensive statistical analysis of Blue Book cases, commissioned during Ruppelt's tenure; found that the 'Unknown' category had higher quality evidence than identified cases - a finding the Air Force downplayed."
+    }
+  ]
+}

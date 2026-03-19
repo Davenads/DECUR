@@ -1078,5 +1078,19 @@
     "data_file": "john-burroughs.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "edward-ruppelt",
+    "name": "Capt. Edward J. Ruppelt",
+    "aliases": ["Edward Ruppelt", "Captain Ruppelt"],
+    "role": "USAF Captain; Project Blue Book Chief (1951-1953)",
+    "period": "1951-1953 (Blue Book)",
+    "affiliation": "U.S. Air Force / Project Blue Book",
+    "summary": "U.S. Air Force Captain who served as chief of Project Blue Book during its most scientifically rigorous period, coined the term 'Unidentified Flying Object,' and after leaving the Air Force published the most candid insider account of official UAP investigation ever released. His 1956 book documented cases the Air Force could not explain and criticized the Robertson Panel's debunking mandate - a record that became foundational to serious UAP research in the decades that followed.",
+    "status": "detailed",
+    "tags": ["project-blue-book", "usaf", "atic", "robertson-panel", "historical", "washington-flap", "1950s", "investigation"],
+    "data_file": "edward-ruppelt.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

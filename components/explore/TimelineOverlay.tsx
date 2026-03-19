@@ -93,6 +93,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'kirsten-gillibrand': { label: 'Sen. Gillibrand',    color: '#0f766e' },
   'tim-burchett':       { label: 'Rep. Burchett',      color: '#c2410c' },
   'john-burroughs':     { label: 'John Burroughs',     color: '#4d7c0f' },
+  'edward-ruppelt':     { label: 'Capt. Ruppelt',      color: '#6b21a8' },
 };
 
 const UAP_COLOR = '#93c5e8';

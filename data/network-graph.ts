@@ -677,5 +677,12 @@ export const graphData: GraphData = {
     { source: 'john-burroughs', target: 'nick-pope',          label: 'co-authored Encounter in Rendlesham Forest (2014); Pope provided UK MOD institutional context' },
     { source: 'john-burroughs', target: 'daniel-sheehan',     label: 'Sheehan provided legal counsel in landmark 2015 VA benefits case forcing review of classified medical records' },
     { source: 'john-burroughs', target: 'halt-memo-1981',     label: 'witness statements became part of the official record alongside the Halt Memo' },
+
+    // Edward Ruppelt connections
+    { source: 'edward-ruppelt', target: 'project-blue-book',  label: 'served as chief investigator 1951-1953; overhauled methodology toward genuine analysis' },
+    { source: 'edward-ruppelt', target: 'robertson-panel',    label: 'served as Blue Book liaison; privately disagreed with debunking mandate and later documented it critically' },
+    { source: 'edward-ruppelt', target: 'j-allen-hynek',      label: 'Hynek served as Blue Book scientific consultant under Ruppelt; foundational professional relationship in early official UAP inquiry' },
+    { source: 'edward-ruppelt', target: 'donald-keyhoe',      label: "Ruppelt's insider account and Keyhoe's NICAP research were the era's two most credible public accounts of official UAP investigation" },
+    { source: 'edward-ruppelt', target: 'nicap',              label: "Ruppelt's candid 1956 book was foundational to NICAP's credibility case for genuine UAP phenomena" },
   ],
 };
