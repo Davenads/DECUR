@@ -643,6 +643,74 @@
         "S-4",
         "2018"
       ]
+    },
+    {
+      "id": "skunk-works-memoir-rich-1994",
+      "title": "Skunk Works: A Personal Memoir of My Years at Lockheed",
+      "type": "Book",
+      "author": "Ben Rich & Leo Janos",
+      "year": "1994",
+      "description": "First-person account from Ben Rich, director of Lockheed's Advanced Development Programs (Skunk Works) from 1975 to 1991. Chronicles the development of the U-2, SR-71, and F-117 programs. Rich made several statements in speeches and private correspondence suggesting awareness of genuine ET technology programs. Primary source for Lockheed/Skunk Works coverage in DECUR's Oversight Structure visualization.",
+      "url": "https://www.amazon.com/Skunk-Works-Personal-Memoir-Lockheed/dp/0316743003",
+      "insider": null,
+      "tags": [
+        "Defense Contractor",
+        "Lockheed Martin",
+        "Skunk Works",
+        "Book",
+        "1994"
+      ]
+    },
+    {
+      "id": "blue-book-special-report-14-battelle-1955",
+      "title": "Project Blue Book Special Report No. 14",
+      "type": "Government Report",
+      "author": "Battelle Memorial Institute / United States Air Force",
+      "year": "1955",
+      "description": "The most statistically rigorous analysis conducted under Project Blue Book, produced by Battelle Memorial Institute under USAF contract. Analyzed 3,201 UAP cases and found that the 'unknowns' were statistically distinct from known phenomena - better-quality reports were more likely to be unexplained, not less. Primary source for Battelle Memorial Institute coverage in DECUR's Oversight Structure visualization.",
+      "url": "https://www.bluebookarchive.org/page.aspx?PageCode=NARA-PBB85-840",
+      "insider": null,
+      "tags": [
+        "Government",
+        "Project Blue Book",
+        "Battelle",
+        "Defense Contractor",
+        "1955"
+      ]
+    },
+    {
+      "id": "debrief-grusch-contractor-claims-2023",
+      "title": "Intelligence Officials Say U.S. Has Retrieved Non-Human Craft",
+      "type": "Journalism",
+      "author": "Ross Coulthart & Bryce Wurtzel (The Debrief)",
+      "year": "2023",
+      "description": "The landmark investigative article that broke David Grusch's claims publicly, including his allegations that defense contractors are custodians of recovered non-human craft and materials under Special Access Programs. Primary source for the private contractor UAP program claims covered in DECUR's Oversight Structure visualization.",
+      "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/",
+      "insider": "david-grusch",
+      "tags": [
+        "Journalism",
+        "Grusch",
+        "Defense Contractor",
+        "Disclosure",
+        "2023"
+      ]
+    },
+    {
+      "id": "house-oversight-uap-hearing-jul-2023",
+      "title": "UAP Hearing: Implications on National Security, Public Safety, and Government Transparency",
+      "type": "Congressional Record",
+      "author": "House Oversight Subcommittee on National Security",
+      "year": "2023",
+      "description": "The July 26, 2023 House Oversight hearing featuring sworn testimony from David Grusch, Ryan Graves, and David Fravor. Grusch specifically named defense contractors as current custodians of recovered non-human materials and named the Bigelow Aerospace Advanced Space Studies (BAASS) contract with DIA as a confirmed example of contractor involvement in classified UAP programs.",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "insider": "david-grusch",
+      "tags": [
+        "Congressional Record",
+        "Grusch",
+        "Defense Contractor",
+        "Hearing",
+        "2023"
+      ]
     }
   ]
 }

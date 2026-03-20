@@ -1,0 +1,306 @@
+{
+  "nodes": [
+    {
+      "id": "executive-branch",
+      "label": "Executive Branch",
+      "sublabel": "United States Government",
+      "type": "branch",
+      "description": "The executive branch of the U.S. government, headed by the President, has primary authority over defense, intelligence, and national security programs. All confirmed UAP investigation programs operate under executive branch oversight, either directly through the Department of Defense or through executive-branch intelligence agencies."
+    },
+    {
+      "id": "legislative-branch",
+      "label": "U.S. Congress",
+      "sublabel": "Legislative Oversight",
+      "type": "branch",
+      "description": "The legislative branch holds oversight authority over executive-branch programs, including UAP investigation activities, through the Armed Services Committees and Intelligence Committees. Congressional pressure - particularly from the Senate Armed Services Committee - has been the primary driver of the modern UAP disclosure era, producing the UAPTF mandate (2020), AARO creation (2022), and the UAP Disclosure Act (2023)."
+    },
+    {
+      "id": "dod",
+      "label": "Dept. of Defense",
+      "sublabel": "DoD",
+      "type": "agency",
+      "description": "The United States Department of Defense is the executive branch department with primary authority over military UAP investigation programs. DoD oversees AARO, the UAP Task Force, and historically all confirmed government UAP programs from Project Sign onward."
+    },
+    {
+      "id": "osd",
+      "label": "Office of Sec. of Defense",
+      "sublabel": "OSD",
+      "type": "agency",
+      "description": "The Office of the Secretary of Defense is the principal staff element of the Secretary of Defense. OSD directly oversaw AATIP under the Under Secretary of Defense for Intelligence, and currently oversees AARO as the principal DoD UAP office."
+    },
+    {
+      "id": "dia",
+      "label": "Defense Intelligence Agency",
+      "sublabel": "DIA",
+      "type": "agency",
+      "description": "The Defense Intelligence Agency is the primary U.S. military intelligence organization within DoD. DIA awarded the $22 million AAWSAP contract to BAASS in 2008 and managed the program through James Lacatski. DIA produced the 38 Defense Intelligence Reference Documents (DIRDs) as part of AAWSAP."
+    },
+    {
+      "id": "oni",
+      "label": "Office of Naval Intelligence",
+      "sublabel": "ONI",
+      "type": "agency",
+      "description": "The Office of Naval Intelligence is the intelligence component of the U.S. Navy. ONI hosted the UAP Task Force from its establishment in August 2020 until AARO absorbed its functions in 2022. Navy pilots' UAP encounters (Nimitz, USS Roosevelt) drove ONI's central role in modern UAP investigation."
+    },
+    {
+      "id": "usaf",
+      "label": "U.S. Air Force",
+      "sublabel": "USAF",
+      "type": "agency",
+      "description": "The United States Air Force operated the three major historical UAP investigation programs: Project Sign (1947), Project Grudge (1949), and Project Blue Book (1952-1969). USAF also operates AFOSI (Air Force Office of Special Investigations) and has contracted with Battelle Memorial Institute for classified UAP-related research analysis."
+    },
+    {
+      "id": "ussocom",
+      "label": "USSOCOM",
+      "sublabel": "Special Operations Command",
+      "type": "agency",
+      "description": "United States Special Operations Command oversees JSOC (Joint Special Operations Command), which has been cited in UAP disclosure contexts as having a role in special access program oversight related to non-human intelligence retrieval claims."
+    },
+    {
+      "id": "cia",
+      "label": "Central Intelligence Agency",
+      "sublabel": "CIA",
+      "type": "agency",
+      "description": "The Central Intelligence Agency has had documented involvement in UAP investigation since at least the early 1950s, including the Robertson Panel (1953) and ongoing classified programs. David Grusch's 2023 congressional testimony specifically named the CIA's Office of Global Access (OGA) as a coordination mechanism for international non-human intelligence material retrieval."
+    },
+    {
+      "id": "dhs",
+      "label": "Dept. of Homeland Security",
+      "sublabel": "DHS",
+      "type": "agency",
+      "description": "The Department of Homeland Security was identified by AARO's Historical Record Report as the proposed but ultimately rejected parent organization for 'Kona Blue,' a 2018-2021 proposal to create a new classified UAP retrieval and reverse-engineering program within DHS. The proposal did not advance."
+    },
+    {
+      "id": "odni",
+      "label": "ODNI",
+      "sublabel": "Dir. of National Intelligence",
+      "type": "legislative",
+      "description": "The Office of the Director of National Intelligence coordinates intelligence community activities and has an oversight role over UAP programs with intelligence equities. ODNI produced the landmark June 2021 Preliminary Assessment: UAP that formally established UAP as a national security concern and triggered the modern congressional disclosure push."
+    },
+    {
+      "id": "sasc",
+      "label": "Senate Armed Services Cmte.",
+      "sublabel": "SASC",
+      "type": "legislative",
+      "description": "The Senate Armed Services Committee has jurisdiction over defense programs and has been the primary legislative driver of UAP disclosure requirements. SASC provisions in the FY2020 NDAA mandated the UAP Task Force, and SASC members (Gillibrand, Rounds) authored key UAP disclosure amendments including AARO's creation mandate."
+    },
+    {
+      "id": "hasc",
+      "label": "House Armed Services Cmte.",
+      "sublabel": "HASC",
+      "type": "legislative",
+      "description": "The House Armed Services Committee hosted the May 2022 UAP hearing - the first public congressional UAP hearing in over 50 years - featuring Deputy Director of Naval Intelligence Scott Bray and Under Secretary of Defense Ronald Moultrie. HASC has joint jurisdiction with SASC over AARO oversight requirements."
+    },
+    {
+      "id": "ssci",
+      "label": "Senate Intelligence Cmte.",
+      "sublabel": "SSCI",
+      "type": "legislative",
+      "description": "The Senate Select Committee on Intelligence has oversight authority over CIA and intelligence community programs, including any UAP-related programs with intelligence equities. SSCI members have received classified briefings on UAP program history that have not been made public."
+    },
+    {
+      "id": "aaro",
+      "type": "program"
+    },
+    {
+      "id": "aatip",
+      "type": "program"
+    },
+    {
+      "id": "aawsap",
+      "type": "program"
+    },
+    {
+      "id": "uap-task-force",
+      "type": "program"
+    },
+    {
+      "id": "project-blue-book",
+      "type": "program"
+    },
+    {
+      "id": "afosi",
+      "type": "program"
+    },
+    {
+      "id": "jsoc",
+      "type": "program"
+    },
+    {
+      "id": "kona-blue",
+      "type": "program"
+    },
+    {
+      "id": "oga",
+      "type": "program"
+    },
+    {
+      "id": "immaculate-constellation",
+      "type": "program"
+    },
+    {
+      "id": "sdi",
+      "type": "program"
+    },
+    {
+      "id": "project-moon-dust",
+      "type": "program"
+    },
+    {
+      "id": "bigelow-aerospace",
+      "type": "program"
+    },
+    {
+      "id": "ttsa",
+      "type": "program"
+    },
+    {
+      "id": "lockheed-martin",
+      "label": "Lockheed Martin",
+      "sublabel": "Skunk Works / Advanced Programs",
+      "type": "contractor",
+      "status": "active",
+      "founded": "1926",
+      "headquarters": "Bethesda, MD",
+      "description": "One of the largest defense contractors in the world, Lockheed Martin's Advanced Development Programs division - the Skunk Works, located in Palmdale, CA - has produced the most classified aerospace technologies in U.S. history, including the U-2, SR-71 Blackbird, F-117 Nighthawk, and F-22 Raptor. In UAP disclosure contexts, Skunk Works has been specifically named by credible insiders as a possible custodian of advanced non-human technology programs.",
+      "uap_relevance": "Ben Rich, director of Skunk Works from 1975 to 1991, made a series of statements in the late 1980s and 1990s that are considered significant by UAP researchers. In documented speeches and private correspondence with space artist Jan Harzan and aerospace engineer John Andrews, Rich stated that 'we already have the means to travel among the stars, but these technologies are locked up in black projects' and referenced extraterrestrial craft as real. In 2023, David Grusch's congressional testimony specifically named defense contractors as current custodians of recovered non-human craft under Special Access Programs - Lockheed Martin being among the prime contractors researchers have identified as most likely candidates.",
+      "key_figures": ["Ben Rich (Skunk Works Director 1975-1991)", "Jan Harzan (correspondence recipient)", "John Andrews (aerospace model designer)"],
+      "sources": [
+        {
+          "title": "Skunk Works: A Personal Memoir (Ben Rich & Leo Janos, 1994)",
+          "type": "Book"
+        },
+        {
+          "title": "House Oversight UAP Hearing - Grusch Contractor Testimony (Jul 2023)",
+          "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+          "type": "Congressional Record"
+        }
+      ]
+    },
+    {
+      "id": "northrop-grumman",
+      "label": "Northrop Grumman",
+      "sublabel": "incl. TRW (acq. 2002)",
+      "type": "contractor",
+      "status": "active",
+      "founded": "1939",
+      "headquarters": "Falls Church, VA",
+      "description": "Northrop Grumman is a principal U.S. defense contractor specializing in aerospace, electronics, and advanced technologies. The company acquired TRW Inc. in 2002 - a major defense contractor with extensive classified intelligence and aerospace programs - significantly expanding its classified footprint. Northrop Grumman produces the B-2 Spirit and B-21 Raider stealth bombers and has historically received contracts for some of the U.S. military's most sensitive classified programs.",
+      "uap_relevance": "TRW (Thompson Ramo Wooldridge), absorbed by Northrop in 2002, had extensive classified programs with the intelligence community including signals intelligence and satellite programs. Edgar Fouche, who claimed employment at Air Force Flight Test Center and connections to classified programs at Groom Lake, alleged TRW involvement in classified aerospace programs. David Grusch's disclosure claims include the major aerospace prime contractors as custodians of recovered non-human materials - Northrop Grumman, with its deep classified program infrastructure inherited from TRW, is among those named in UAP research circles.",
+      "key_figures": ["Edgar Fouche (claimed TRW connections, unverified)"],
+      "sources": [
+        {
+          "title": "The Debrief - Grusch Disclosure (Coulthart/Wurtzel, Jun 2023)",
+          "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/",
+          "type": "Journalism"
+        }
+      ]
+    },
+    {
+      "id": "raytheon",
+      "label": "Raytheon Technologies",
+      "sublabel": "Defense Electronics & Sensors",
+      "type": "contractor",
+      "status": "active",
+      "founded": "1922",
+      "headquarters": "Arlington, VA",
+      "description": "Raytheon Technologies (now RTX Corporation) is one of the largest defense contractors in the world, specializing in advanced electronics, missile systems, radar, and sensor technologies. Raytheon's sensor and electronic warfare systems are deployed across U.S. military platforms - including the sensor suites on many of the aircraft and ships that have captured UAP encounters. The company has extensive classified research programs in electromagnetic systems and advanced detection.",
+      "uap_relevance": "Karl Nell, one of DECUR's key whistleblower figures, worked at Raytheon Technologies after his military career before his congressional testimony in July 2023. Raytheon's advanced sensor systems - particularly radar, electro-optical, and infrared sensors - are the primary instrumentation through which military UAP encounters are captured on video. The company's involvement in the LTAMDS (Lower Tier Air and Missile Defense Sensor) and other advanced detection programs positions it within the broader sensor infrastructure relevant to UAP surveillance. Raytheon has also received DARPA contracts for advanced propulsion research programs.",
+      "key_figures": ["Karl Nell (former employee, UAP whistleblower)"],
+      "sources": [
+        {
+          "title": "Karl Nell - DECUR Key Figure Profile",
+          "type": "Internal Reference"
+        },
+        {
+          "title": "House Oversight UAP Hearing (Jul 2023)",
+          "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+          "type": "Congressional Record"
+        }
+      ]
+    },
+    {
+      "id": "battelle",
+      "label": "Battelle Memorial Institute",
+      "sublabel": "Independent Research & Analysis",
+      "type": "contractor",
+      "status": "active",
+      "founded": "1929",
+      "headquarters": "Columbus, OH",
+      "description": "Battelle Memorial Institute is a nonprofit research and development organization headquartered in Columbus, Ohio. It is one of the world's largest private independent research and development organizations and has maintained classified government contracts since the 1940s. Battelle's combination of scientific independence, security clearances, and analytical capabilities made it the Air Force's primary contractor for rigorous scientific analysis of UAP data under Project Blue Book.",
+      "uap_relevance": "Battelle conducted Project Blue Book Special Report No. 14 (1955) - the most statistically rigorous analysis of UAP cases in the Project Blue Book era. The report analyzed 3,201 cases and found that the 'unknowns' category was statistically distinct from known phenomena, with better-quality reports more likely to be 'unknown' rather than explained - the opposite of what debunking would predict. This finding was significant but was largely suppressed in public communications. Battelle has also appeared in UAP material analysis contexts: Elroy Center's 2023 reporting and other sources have referenced Battelle as a potential analytical contractor for alleged recovered UAP materials, though this has not been officially confirmed.",
+      "key_figures": ["J. Allen Hynek (USAF scientific consultant, worked alongside Battelle)"],
+      "sources": [
+        {
+          "title": "Project Blue Book Special Report No. 14 (Battelle Memorial Institute / USAF, 1955)",
+          "url": "https://www.bluebookarchive.org/page.aspx?PageCode=NARA-PBB85-840",
+          "type": "Primary Source"
+        },
+        {
+          "title": "UFOs and the National Security State (Richard Dolan, 2002)",
+          "type": "Book"
+        }
+      ]
+    },
+    {
+      "id": "saic",
+      "label": "SAIC",
+      "sublabel": "Science Applications International Corp.",
+      "type": "contractor",
+      "status": "active",
+      "founded": "1969",
+      "headquarters": "Reston, VA",
+      "description": "Science Applications International Corporation (SAIC) is one of the largest U.S. government IT and defense services contractors, with extensive classified programs across the Department of Defense, intelligence community, and Department of Energy. Founded in 1969, SAIC has maintained a significant classified research footprint and employs a large number of former intelligence and military personnel.",
+      "uap_relevance": "SAIC has appeared in UAP research contexts in multiple capacities. The company has received contracts for advanced technology analysis programs and has employed numerous former officials from the intelligence community who have intersected with UAP programs. In the Gerb UAP research corpus and related disclosure literature, SAIC is referenced as one of the defense contractors with potential involvement in classified advanced propulsion and materials research programs. The company's structure - with its heavy reliance on former government employees and its deep classified program portfolio - makes it structurally consistent with the kind of contractor involvement described by Grusch and others.",
+      "key_figures": [],
+      "sources": [
+        {
+          "title": "The UFO Cover-Up: What the Government Won't Say (Fawcett & Greenwood, 1984)",
+          "type": "Book"
+        },
+        {
+          "title": "Gerb UAP Research - YouTube Transcripts (Gerb Channel, 2022-2024)",
+          "type": "Video Transcripts"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    { "source": "executive-branch", "target": "dod",    "type": "authority" },
+    { "source": "executive-branch", "target": "cia",    "type": "authority" },
+    { "source": "executive-branch", "target": "dhs",    "type": "authority" },
+    { "source": "executive-branch", "target": "odni",   "type": "authority" },
+    { "source": "dod",   "target": "osd",           "type": "authority" },
+    { "source": "dod",   "target": "dia",           "type": "authority" },
+    { "source": "dod",   "target": "oni",           "type": "authority" },
+    { "source": "dod",   "target": "usaf",          "type": "authority" },
+    { "source": "dod",   "target": "ussocom",       "type": "authority" },
+    { "source": "osd",   "target": "aatip",         "type": "authority" },
+    { "source": "osd",   "target": "aaro",          "type": "authority" },
+    { "source": "osd",   "target": "sdi",           "type": "authority" },
+    { "source": "dia",   "target": "aawsap",        "type": "authority" },
+    { "source": "oni",   "target": "uap-task-force","type": "authority" },
+    { "source": "uap-task-force", "target": "aaro", "type": "authority" },
+    { "source": "usaf",  "target": "project-blue-book",    "type": "authority" },
+    { "source": "usaf",  "target": "afosi",                "type": "authority" },
+    { "source": "usaf",  "target": "project-moon-dust",    "type": "authority" },
+    { "source": "ussocom","target": "jsoc",                "type": "authority" },
+    { "source": "cia",   "target": "oga",           "type": "alleged"   },
+    { "source": "dhs",   "target": "kona-blue",     "type": "authority" },
+    { "source": "dod",   "target": "immaculate-constellation", "type": "alleged" },
+    { "source": "legislative-branch", "target": "sasc", "type": "authority" },
+    { "source": "legislative-branch", "target": "hasc", "type": "authority" },
+    { "source": "legislative-branch", "target": "ssci", "type": "authority" },
+    { "source": "sasc",  "target": "dod",           "type": "oversight" },
+    { "source": "hasc",  "target": "dod",           "type": "oversight" },
+    { "source": "ssci",  "target": "cia",           "type": "oversight" },
+    { "source": "odni",  "target": "dod",           "type": "oversight" },
+    { "source": "dod",   "target": "lockheed-martin",    "type": "contractual" },
+    { "source": "dod",   "target": "northrop-grumman",   "type": "contractual" },
+    { "source": "dod",   "target": "raytheon",           "type": "contractual" },
+    { "source": "dod",   "target": "saic",               "type": "contractual" },
+    { "source": "usaf",  "target": "battelle",           "type": "contractual" },
+    { "source": "dia",   "target": "bigelow-aerospace",  "type": "contractual" },
+    { "source": "ttsa",  "target": "uap-task-force",     "type": "influenced" }
+  ]
+}

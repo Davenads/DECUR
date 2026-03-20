@@ -28,6 +28,11 @@ const EvidenceTierFlow = dynamic(
   { ssr: false }
 );
 
+const OversightHierarchyFlow = dynamic(
+  () => import('../components/explore/OversightHierarchyFlow'),
+  { ssr: false }
+);
+
 interface Props {
   entries: TimelineEntry[];
   insiderEvents: WBEvent[];
@@ -55,7 +60,7 @@ type SectionId = typeof SECTION_NAV[number]['id'];
 const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases, mapEvents }) => {
   const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
   const [activeSection, setActiveSection] = useState<SectionId>('relationship-network');
-  const [programView, setProgramView] = useState<'lineage' | 'disclosure'>('lineage');
+  const [programView, setProgramView] = useState<'lineage' | 'hierarchy' | 'disclosure'>('lineage');
   const overlayRef = useRef<HTMLElement>(null);
 
   function handleSelectEra(start: number, end: number) {
@@ -188,7 +193,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
               <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Programs</h2>
 
               {/* Sub-view toggle */}
-              <div className="flex gap-1 mb-3">
+              <div className="flex gap-1 mb-3 flex-wrap">
                 <button
                   onClick={() => setProgramView('lineage')}
                   className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
@@ -198,6 +203,16 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
                   }`}
                 >
                   Program Lineage
+                </button>
+                <button
+                  onClick={() => setProgramView('hierarchy')}
+                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
+                    programView === 'hierarchy'
+                      ? 'bg-primary text-white'
+                      : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                  }`}
+                >
+                  Oversight Structure
                 </button>
                 <button
                   onClick={() => setProgramView('disclosure')}
@@ -217,6 +232,13 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
                   relationship links over time. Left to right reflects chronological progression.
                   Click any node to view that program&apos;s full profile.
                 </p>
+              ) : programView === 'hierarchy' ? (
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                  Top-down institutional authority chart mapping government agencies, programs,
+                  private contractors, and congressional oversight. Solid lines indicate authority,
+                  dashed lines indicate oversight or contractual relationships.
+                  Click any node for detail.
+                </p>
               ) : (
                 <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
                   Chronological map of the modern UAP disclosure arc - congressional hearings,
@@ -226,7 +248,13 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
               )}
             </div>
 
-            {programView === 'lineage' ? <ProgramLineageFlow /> : <CongressionalDisclosureFlow />}
+            {programView === 'lineage' ? (
+              <ProgramLineageFlow />
+            ) : programView === 'hierarchy' ? (
+              <OversightHierarchyFlow />
+            ) : (
+              <CongressionalDisclosureFlow />
+            )}
           </section>
 
           {/* ── Evidence Tiers ────────────────────────────────────────────── */}
