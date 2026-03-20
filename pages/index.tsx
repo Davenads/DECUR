@@ -67,7 +67,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 </h1>
                 <p className="text-lg text-gray-500 leading-relaxed mb-8">
                   Structured documentation of insider testimony, primary source material, and
-                  research records spanning eight decades, catalogued for analysis, not advocacy.
+                  research records spanning eight decades - catalogued as qualitative data for analysis, not advocacy.
                 </p>
                 <Link
                   href="/data"
