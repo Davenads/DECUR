@@ -23,6 +23,11 @@ const CongressionalDisclosureFlow = dynamic(
   { ssr: false }
 );
 
+const EvidenceTierFlow = dynamic(
+  () => import('../components/explore/EvidenceTierFlow'),
+  { ssr: false }
+);
+
 interface Props {
   entries: TimelineEntry[];
   insiderEvents: WBEvent[];
@@ -42,6 +47,7 @@ const SECTION_NAV = [
   { id: 'timeline',             label: 'Timeline' },
   { id: 'map',                  label: 'Map'      },
   { id: 'program-lineage',      label: 'Programs' },
+  { id: 'evidence-tiers',       label: 'Cases'    },
 ] as const;
 
 type SectionId = typeof SECTION_NAV[number]['id'];
@@ -221,6 +227,19 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
             </div>
 
             {programView === 'lineage' ? <ProgramLineageFlow /> : <CongressionalDisclosureFlow />}
+          </section>
+
+          {/* ── Evidence Tiers ────────────────────────────────────────────── */}
+          <section id="evidence-tiers">
+            <div className="mb-4">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Cases by Evidence Tier</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                All documented cases organized by evidence quality. Tier 1 cases carry the strongest
+                multi-source evidentiary record. Cases are sorted chronologically within each tier.
+                Click any case to view its summary, then navigate to the full case file.
+              </p>
+            </div>
+            <EvidenceTierFlow />
           </section>
 
         </div>
