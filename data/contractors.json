@@ -1,0 +1,307 @@
+[
+  {
+    "id": "lockheed-martin",
+    "name": "Lockheed Martin",
+    "sublabel": "Skunk Works / Advanced Programs",
+    "type": "contractor",
+    "status": "active",
+    "founded": "1926",
+    "headquarters": "Bethesda, MD",
+    "summary": "Major U.S. defense contractor whose Skunk Works division has been cited by multiple credible insiders as a potential custodian of recovered non-human technology under classified Special Access Programs.",
+    "description": "One of the largest defense contractors in the world, Lockheed Martin's Advanced Development Programs division - the Skunk Works, located in Palmdale, CA - has produced some of the most classified aerospace technologies in U.S. history, including the U-2, SR-71 Blackbird, F-117 Nighthawk, and F-22 Raptor. The Skunk Works' culture of extreme operational secrecy and its track record of producing technologies that appeared impossible at the time have made it a recurring focal point in UAP disclosure research.",
+    "known_contracts": [
+      {
+        "program_id": null,
+        "description": "Development and production of classified aerospace platforms including U-2, SR-71, F-117, F-22 Raptor, and ongoing classified programs",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "Ben Rich, Skunk Works director 1975-1991, stated in documented speeches and private correspondence that 'we already have the means to travel among the stars, but these technologies are locked up in black projects' and referenced extraterrestrial craft as real.",
+        "source": "skunk-works-memoir-rich-1994",
+        "credibility": "public-statements",
+        "status": "alleged"
+      },
+      {
+        "claim": "David Grusch testified under oath before Congress that private defense contractors - naming prime contractors by category - are current custodians of recovered non-human craft under Special Access Programs that have not been reported to Congress.",
+        "source": "house-oversight-uap-hearing-jul-2023",
+        "credibility": "testified-under-oath",
+        "status": "alleged"
+      }
+    ],
+    "connected_figures": [
+      {
+        "id": "grusch",
+        "name": "David Grusch",
+        "role": "Intelligence officer, UAP whistleblower",
+        "relationship": "Named defense contractors including major aerospace primes as custodians of recovered non-human craft in 2023 congressional testimony under oath."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Skunk Works: A Personal Memoir (Ben Rich & Leo Janos, 1994)",
+        "url": null,
+        "type": "Book",
+        "notes": "Primary source for Ben Rich's statements about classified programs and extraterrestrial technology."
+      },
+      {
+        "title": "House Oversight UAP Hearing - Grusch Contractor Testimony (Jul 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+        "type": "Congressional Record",
+        "notes": "Grusch testified under oath that private defense contractors hold recovered non-human materials."
+      }
+    ],
+    "tags": ["reverse-engineering-alleged", "classified-programs", "skunk-works", "special-access-programs"]
+  },
+  {
+    "id": "northrop-grumman",
+    "name": "Northrop Grumman",
+    "sublabel": "incl. TRW (acq. 2002)",
+    "type": "contractor",
+    "status": "active",
+    "founded": "1939",
+    "headquarters": "Falls Church, VA",
+    "summary": "Principal U.S. defense contractor that absorbed TRW Inc. in 2002, significantly expanding its classified intelligence and aerospace footprint. Named alongside other prime contractors in UAP disclosure testimony citing private custodianship of recovered materials.",
+    "description": "Northrop Grumman is a principal U.S. defense contractor specializing in aerospace, electronics, and advanced technologies. The company acquired TRW Inc. in 2002 - a major defense contractor with extensive classified intelligence and aerospace programs, including a deep relationship with the National Reconnaissance Office - significantly expanding its classified program footprint. Northrop Grumman produces the B-2 Spirit and B-21 Raider stealth bombers and has historically received contracts for some of the U.S. military's most sensitive programs.",
+    "known_contracts": [
+      {
+        "program_id": null,
+        "description": "B-2 Spirit stealth bomber, B-21 Raider, classified intelligence satellite programs inherited via TRW acquisition (2002)",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "Edgar Fouche, who claimed employment at Air Force Flight Test Center with connections to classified programs at Groom Lake, alleged TRW involvement in classified aerospace programs prior to its acquisition by Northrop.",
+        "source": null,
+        "credibility": "unverified-testimony",
+        "status": "alleged"
+      },
+      {
+        "claim": "David Grusch's disclosure claims include major aerospace prime contractors as custodians of recovered non-human materials. Northrop Grumman, with its deep classified program infrastructure inherited from TRW, is among those identified by UAP researchers.",
+        "source": "debrief-grusch-contractor-claims-2023",
+        "credibility": "testified-under-oath",
+        "status": "alleged"
+      }
+    ],
+    "connected_figures": [
+      {
+        "id": "grusch",
+        "name": "David Grusch",
+        "role": "Intelligence officer, UAP whistleblower",
+        "relationship": "Testimony implicated major aerospace prime contractors as SAP custodians; Northrop Grumman is among the prime contractors identified in this context."
+      }
+    ],
+    "sources": [
+      {
+        "title": "The Debrief - Intelligence Officials Say U.S. Has Retrieved Non-Human Craft (Coulthart/Wurtzel, Jun 2023)",
+        "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/",
+        "type": "Journalism",
+        "notes": "Initial Grusch disclosure article; references defense contractor custodianship claims."
+      }
+    ],
+    "tags": ["reverse-engineering-alleged", "classified-programs", "trw", "special-access-programs"]
+  },
+  {
+    "id": "raytheon",
+    "name": "Raytheon Technologies",
+    "sublabel": "Defense Electronics & Sensors (now RTX Corp.)",
+    "type": "contractor",
+    "status": "active",
+    "founded": "1922",
+    "headquarters": "Arlington, VA",
+    "summary": "One of the largest defense contractors globally, specializing in advanced radar, sensors, and electronic warfare. Raytheon's sensor systems are the primary instrumentation through which military UAP encounters are captured; Karl Nell is a former employee and key UAP whistleblower.",
+    "description": "Raytheon Technologies (now RTX Corporation) is one of the largest defense contractors in the world, specializing in advanced electronics, missile systems, radar, and sensor technologies. Raytheon's sensor and electronic warfare systems are deployed across U.S. military platforms - including the sensor suites on many of the aircraft and ships that have recorded UAP encounters. The company maintains extensive classified research programs in electromagnetic systems and advanced detection technology.",
+    "known_contracts": [
+      {
+        "program_id": null,
+        "description": "LTAMDS (Lower Tier Air and Missile Defense Sensor), AN/SPY-6 radar, advanced EW systems; sensor suites on platforms that recorded Nimitz and USS Roosevelt UAP encounters",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "Karl Nell, a senior Raytheon Technologies employee prior to his 2023 congressional testimony, stated under oath that non-human intelligence has been confirmed and that a 'structured, thoughtful, and rapid' disclosure process is needed.",
+        "source": "house-oversight-uap-hearing-jul-2023",
+        "credibility": "testified-under-oath",
+        "status": "documented"
+      }
+    ],
+    "connected_figures": [
+      {
+        "id": "nell",
+        "name": "Karl Nell",
+        "role": "Former Director of Technology Strategy, Raytheon Technologies",
+        "relationship": "Former Raytheon senior executive who testified under oath before Congress in July 2023, stating that non-human intelligence existence has been confirmed."
+      },
+      {
+        "id": "grusch",
+        "name": "David Grusch",
+        "role": "Intelligence officer, UAP whistleblower",
+        "relationship": "Testified alongside Nell at the July 2023 House Oversight hearing on UAP."
+      }
+    ],
+    "sources": [
+      {
+        "title": "House Oversight UAP Hearing - Karl Nell Testimony (Jul 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+        "type": "Congressional Record",
+        "notes": "Karl Nell testified as a former Raytheon employee; his testimony is the primary UAP-relevant connection."
+      }
+    ],
+    "tags": ["sensor-systems", "congressional-testimony", "radar", "electronic-warfare"]
+  },
+  {
+    "id": "battelle",
+    "name": "Battelle Memorial Institute",
+    "sublabel": "Independent Research & Analysis",
+    "type": "contractor",
+    "status": "active",
+    "founded": "1929",
+    "headquarters": "Columbus, OH",
+    "summary": "Nonprofit research organization that conducted Project Blue Book Special Report No. 14 (1955) - the most statistically rigorous government-contracted UAP analysis to date, which found that high-quality UAP reports were more likely to remain 'unknown,' contradicting the debunking narrative.",
+    "description": "Battelle Memorial Institute is a nonprofit research and development organization headquartered in Columbus, Ohio, and one of the world's largest private independent R&D organizations. It has maintained classified government contracts since the 1940s. Battelle's combination of scientific independence, security clearances, and analytical capabilities made it the Air Force's primary contractor for rigorous scientific analysis of UAP data under Project Blue Book.",
+    "known_contracts": [
+      {
+        "program_id": "project-blue-book",
+        "description": "Project Blue Book Special Report No. 14 (1955) - statistical analysis of 3,201 UAP cases from the Blue Book era",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "Special Report No. 14 found that the 'unknowns' category was statistically distinct from known phenomena, and that better-quality reports were more likely to be 'unknown' rather than explained - the opposite of what debunking would predict. This finding contradicted the Air Force's public conclusion.",
+        "source": "blue-book-special-report-14-battelle-1955",
+        "credibility": "primary-document",
+        "status": "documented"
+      },
+      {
+        "claim": "Multiple researchers have referenced Battelle as a potential contractor for materials analysis of alleged recovered UAP craft, consistent with its history of classified analytical work for government agencies.",
+        "source": null,
+        "credibility": "unverified-testimony",
+        "status": "alleged"
+      }
+    ],
+    "connected_figures": [
+      {
+        "id": "j-allen-hynek",
+        "name": "J. Allen Hynek",
+        "role": "USAF Scientific Consultant (1948-1969)",
+        "relationship": "Worked alongside Battelle's Blue Book analytical team as the Air Force's scientific consultant; later became the era's most credible scientific skeptic-turned-advocate."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Project Blue Book Special Report No. 14 (Battelle Memorial Institute / USAF, 1955)",
+        "url": "https://www.bluebookarchive.org/page.aspx?PageCode=NARA-PBB85-840",
+        "type": "Primary Document",
+        "notes": "Declassified primary source; statistically rigorous analysis of 3,201 Blue Book cases."
+      },
+      {
+        "title": "UFOs and the National Security State (Richard Dolan, 2002)",
+        "url": null,
+        "type": "Book",
+        "notes": "Secondary source covering Battelle's Blue Book role and classified analytical work."
+      }
+    ],
+    "tags": ["blue-book", "materials-analysis", "primary-document", "statistical-analysis"]
+  },
+  {
+    "id": "saic",
+    "name": "SAIC",
+    "sublabel": "Science Applications International Corp.",
+    "type": "contractor",
+    "status": "active",
+    "founded": "1969",
+    "headquarters": "Reston, VA",
+    "summary": "One of the largest U.S. government IT and defense services contractors, with a deep classified program portfolio and heavy employment of former intelligence officials. Referenced in UAP research contexts for potential involvement in advanced technology analysis programs.",
+    "description": "Science Applications International Corporation (SAIC) is one of the largest U.S. government IT and defense services contractors, with extensive classified programs across DoD, the intelligence community, and the Department of Energy. Founded in 1969, SAIC has maintained a significant classified research footprint and employs a large number of former intelligence and military personnel - a structural characteristic that has made it a recurring subject in UAP disclosure research alongside other prime contractors.",
+    "known_contracts": [
+      {
+        "program_id": null,
+        "description": "Wide-ranging DoD and intelligence community IT, analysis, and advanced technology contracts across classified and unclassified programs",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "SAIC is referenced in multiple UAP disclosure research corpora - including the Gerb UAP research channel transcripts - as a defense contractor with potential involvement in classified advanced propulsion and materials analysis programs, consistent with the pattern described by Grusch.",
+        "source": null,
+        "credibility": "unverified-testimony",
+        "status": "alleged"
+      }
+    ],
+    "connected_figures": [],
+    "sources": [
+      {
+        "title": "Gerb UAP Research - YouTube Transcripts (Gerb Channel, 2022-2024)",
+        "url": null,
+        "type": "Video Transcripts",
+        "notes": "UAP research channel referencing SAIC in classified program contexts."
+      },
+      {
+        "title": "The UFO Cover-Up: What the Government Won't Say (Fawcett & Greenwood, 1984)",
+        "url": null,
+        "type": "Book",
+        "notes": "Early reference to defense contractor involvement in classified UAP programs."
+      }
+    ],
+    "tags": ["classified-programs", "intelligence-community", "advanced-technology"]
+  },
+  {
+    "id": "egg",
+    "name": "EG&G",
+    "sublabel": "Edgerton, Germeshausen & Grier (defunct, acq. 2002)",
+    "type": "contractor",
+    "status": "defunct",
+    "founded": "1947",
+    "headquarters": "Las Vegas, NV (Nevada Test Site operations)",
+    "summary": "Highly classified defense contractor that operated the Nevada Test Site and Janet Airlines (classified airline to Groom Lake). Bob Lazar claimed EG&G was his contracting employer for work at S-4, a claimed facility adjacent to Area 51 where he alleged he worked on recovered non-human propulsion systems.",
+    "description": "EG&G (Edgerton, Germeshausen & Grier) was a major U.S. defense contractor founded in 1947 with primary operations at the Nevada Test Site, where it managed nuclear testing activities. EG&G Technical Services operated Janet Airlines - the classified fleet of unmarked aircraft that transported cleared personnel between Las Vegas and Groom Lake (Area 51). The company maintained contracts with the Atomic Energy Commission, DoD, and multiple intelligence agencies for classified programs. EG&G was acquired by URS Corporation in 2002, ending its independent existence.",
+    "known_contracts": [
+      {
+        "program_id": null,
+        "description": "Nevada Test Site management and nuclear testing operations; Janet Airlines classified personnel transport to Groom Lake (Area 51); AEC and DoD classified programs",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "Bob Lazar claimed that EG&G was his contracting employer for work at S-4, a facility he described as located south of the main Area 51 complex, where he alleged he was tasked with reverse-engineering the propulsion system of a recovered non-human craft.",
+        "source": null,
+        "credibility": "unverified-testimony",
+        "status": "alleged"
+      },
+      {
+        "claim": "Lazar produced a W-2 form referencing 'United States Department of Naval Intelligence' - a department that does not officially exist - as his employer, which he claimed was a cover designation for the classified program routed through EG&G.",
+        "source": null,
+        "credibility": "unverified-testimony",
+        "status": "disputed"
+      }
+    ],
+    "connected_figures": [
+      {
+        "id": "bob-lazar",
+        "name": "Bob Lazar",
+        "role": "Claimed contractor physicist, S-4",
+        "relationship": "Lazar claims EG&G was his contracting employer for work at S-4 in 1988-1989, where he alleges he worked on non-human propulsion technology. His connection to EG&G is documented via employment records he has produced; the S-4 claims remain unverified."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bob Lazar: Area 51 and Flying Saucers (Jeremy Corbell, 2018)",
+        "url": null,
+        "type": "Documentary",
+        "notes": "Primary public account of Lazar's EG&G and S-4 claims."
+      },
+      {
+        "title": "George Knapp Interview - KLAS-TV (1989)",
+        "url": null,
+        "type": "Television",
+        "notes": "Lazar's original public disclosure including EG&G employment claims."
+      }
+    ],
+    "tags": ["nevada-test-site", "area-51", "bob-lazar", "janet-airlines", "alleged-reverse-engineering"]
+  }
+]

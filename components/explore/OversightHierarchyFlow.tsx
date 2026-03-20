@@ -17,6 +17,7 @@ import '@xyflow/react/dist/style.css';
 import Dagre from '@dagrejs/dagre';
 import rawHierarchy from '../../data/org-hierarchy.json';
 import rawPrograms from '../../data/programs.json';
+import rawContractors from '../../data/contractors.json';
 
 // --------------------------------------------------------------------------
 // Types
@@ -33,12 +34,6 @@ interface HierarchyNodeRaw {
   type: NodeType;
   status?: string;
   description?: string;
-  // contractor-specific
-  founded?: string;
-  headquarters?: string;
-  uap_relevance?: string;
-  key_figures?: string[];
-  sources?: Array<{ title: string; url?: string; type: string }>;
 }
 
 interface HierarchyEdgeRaw {
@@ -55,6 +50,19 @@ interface ProgramRecord {
   parent_org: string;
   summary: string;
   key_personnel: Array<{ name: string; role: string; figure_id?: string }>;
+}
+
+interface ContractorRecord {
+  id: string;
+  name: string;
+  sublabel: string;
+  status: string;
+  founded: string;
+  headquarters: string;
+  summary: string;
+  description: string;
+  uap_claims: Array<{ claim: string; credibility: string; status: string }>;
+  connected_figures: Array<{ id: string; name: string; role: string }>;
 }
 
 // Node data shapes for ReactFlow
@@ -138,6 +146,10 @@ const PROG_H  = 85;
 
 const programsMap = new Map<string, ProgramRecord>(
   (rawPrograms as unknown as ProgramRecord[]).map(p => [p.id, p])
+);
+
+const contractorsMap = new Map<string, ContractorRecord>(
+  (rawContractors as unknown as ContractorRecord[]).map(c => [c.id, c])
 );
 
 // --------------------------------------------------------------------------
@@ -437,21 +449,25 @@ function buildInitialElements(): { nodes: Node[]; edges: Edge[] } {
     }
 
     if (n.type === 'contractor') {
+      const c = contractorsMap.get(n.id);
+      if (!c) return null;
+      const uap_relevance = c.uap_claims.length > 0 ? c.uap_claims[0].claim : '';
+      const key_figures = c.connected_figures.map(f => `${f.name} (${f.role})`);
       return {
         id: n.id,
         type: 'hierarchyContractor',
         position: { x: 0, y: 0 },
         data: {
-          id:           n.id,
-          label:        n.label ?? n.id,
-          sublabel:     n.sublabel ?? '',
+          id:           c.id,
+          label:        c.name,
+          sublabel:     c.sublabel,
           nodeType:     'contractor',
-          status:       n.status ?? 'active',
-          founded:      n.founded,
-          headquarters: n.headquarters,
-          description:  n.description ?? '',
-          uap_relevance: n.uap_relevance ?? '',
-          key_figures:  n.key_figures ?? [],
+          status:       c.status,
+          founded:      c.founded,
+          headquarters: c.headquarters,
+          description:  c.description,
+          uap_relevance,
+          key_figures,
         } as ContractorNodeData,
       };
     }

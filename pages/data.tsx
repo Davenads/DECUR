@@ -11,14 +11,16 @@ import InsidersList from '../components/data/InsidersList';
 import CasesList from '../components/data/CasesList';
 import DocumentsList from '../components/data/DocumentsList';
 import ProgramsList from '../components/data/ProgramsList';
+import ContractorsList from '../components/data/ContractorsList';
 import DataNavigation from '../components/data/DataNavigation';
-import { CategoryType, InsiderEntry, CaseEntry, DocumentEntry, ProgramEntry } from '../types/data';
+import { CategoryType, InsiderEntry, CaseEntry, DocumentEntry, ProgramEntry, ContractorEntry } from '../types/data';
 import { NavItemDef } from '../types/components';
 import { getEntriesByCategory, TimelineEntry } from '../lib/timelineData';
 import insidersData from '../data/key-figures/index.json';
 import casesData from '../data/cases.json';
 import documentsData from '../data/documents.json';
 import programsData from '../data/programs.json';
+import contractorsData from '../data/contractors.json';
 
 const VALID_CATEGORIES: CategoryType[] = ['events', 'figures', 'quotes', 'media', 'news', 'key-figures', 'cases', 'documents', 'programs'];
 
@@ -34,10 +36,11 @@ interface DataPageProps {
   cases: CaseEntry[];
   documents: DocumentEntry[];
   programs: ProgramEntry[];
+  contractors: ContractorEntry[];
   navItems: NavItemDef[];
 }
 
-export default function Data({ categoryData, insiders, cases, documents, programs, navItems }: DataPageProps) {
+export default function Data({ categoryData, insiders, cases, documents, programs, contractors, navItems }: DataPageProps) {
   const router = useRouter();
   const [activeCategory, setActiveCategory] = useState<CategoryType>('events');
   const [sourceFilter, setSourceFilter] = useState<string | undefined>(undefined);
@@ -62,7 +65,12 @@ export default function Data({ categoryData, insiders, cases, documents, program
       case 'key-figures': return <InsidersList entries={insiders} />;
       case 'cases':    return <CasesList cases={cases} />;
       case 'documents': return <DocumentsList documents={documents} />;
-      case 'programs':  return <ProgramsList programs={programs} />;
+      case 'programs':  return (
+        <>
+          <ProgramsList programs={programs} />
+          <ContractorsList contractors={contractors} />
+        </>
+      );
       default:               return <EventsList entries={categoryData.events} />;
     }
   };
@@ -122,6 +130,7 @@ export const getStaticProps: GetStaticProps = async () => {
         cases: casesData as CaseEntry[],
         documents: documentsData as DocumentEntry[],
         programs: programsData as unknown as ProgramEntry[],
+        contractors: contractorsData as unknown as ContractorEntry[],
         navItems,
       },
       revalidate: 3600,

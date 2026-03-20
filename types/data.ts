@@ -554,6 +554,61 @@ export interface ProgramEntry {
   sources: ProgramSource[];
 }
 
+/* ─── Contractors Types ────────────────────────────────────────── */
+
+export type ContractorEvidenceStatus =
+  | 'documented'
+  | 'primary-document'
+  | 'testified-under-oath'
+  | 'public-statements'
+  | 'unverified-testimony'
+  | 'disputed'
+  | 'alleged';
+
+export interface ContractorKnownContract {
+  program_id: string | null;
+  description: string;
+  evidence_status: ContractorEvidenceStatus;
+}
+
+export interface ContractorUAPClaim {
+  claim: string;
+  source: string | null;
+  credibility: ContractorEvidenceStatus;
+  status: 'documented' | 'alleged' | 'disputed';
+}
+
+export interface ContractorConnectedFigure {
+  id: string;
+  name: string;
+  role: string;
+  relationship: string;
+}
+
+export interface ContractorSource {
+  title: string;
+  url: string | null;
+  type: string;
+  notes: string;
+}
+
+export interface ContractorEntry {
+  id: string;
+  name: string;
+  sublabel: string;
+  type: 'contractor';
+  status: 'active' | 'defunct';
+  founded: string;
+  headquarters: string;
+  summary: string;
+  description: string;
+  known_contracts: ContractorKnownContract[];
+  uap_claims: ContractorUAPClaim[];
+  connected_figures: ContractorConnectedFigure[];
+  sources: ContractorSource[];
+  tags: string[];
+}
+
 /* ─── Documents Types ──────────────────────────────────────────── */
 
 export type DocumentAuthStatus =
