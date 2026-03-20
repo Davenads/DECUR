@@ -15,6 +15,7 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import Dagre from '@dagrejs/dagre';
+import rawPrograms from '../../data/programs.json';
 
 // --------------------------------------------------------------------------
 // Types
@@ -22,10 +23,32 @@ import Dagre from '@dagrejs/dagre';
 
 type ProgramStatus = 'active' | 'defunct' | 'classified' | 'unknown';
 
+interface PersonnelEntry {
+  name: string;
+  role: string;
+  figure_id?: string;
+}
+
 interface ProgramNodeData extends Record<string, unknown> {
   label: string;
   period: string;
   status: ProgramStatus;
+  parentOrg: string;
+  summary: string;
+  keyPersonnel: PersonnelEntry[];
+  programId: string;
+}
+
+interface ProgramRecord {
+  id: string;
+  name: string;
+  status: string;
+  active_period: string;
+  parent_org: string;
+  summary: string;
+  key_personnel: PersonnelEntry[];
+  relationships: Array<{ target: string; type: string }>;
+  includeInLineage?: boolean;
 }
 
 // --------------------------------------------------------------------------
@@ -46,9 +69,26 @@ const STATUS_LABELS: Record<ProgramStatus, string> = {
   unknown:    'Unknown',
 };
 
-// Fixed node dimensions - used in both the renderer and dagre layout pass
+// Fixed node dimensions
 const NODE_WIDTH  = 200;
-const NODE_HEIGHT = 80;
+const NODE_HEIGHT = 95;
+
+// --------------------------------------------------------------------------
+// Parent org abbreviation
+// --------------------------------------------------------------------------
+
+function abbreviateOrg(org: string): string {
+  if (!org) return '';
+  if (org.includes('Air Force'))             return 'USAF';
+  if (org.includes('Defense Intelligence'))  return 'DIA';
+  if (org.includes('Secretary of Defense'))  return 'OSD';
+  if (org.includes('Department of Defense')) return 'DoD';
+  if (org.includes('Army'))                  return 'US Army';
+  if (org.includes('Navy'))                  return 'US Navy';
+  if (org.includes('Central Intelligence') || org === 'CIA') return 'CIA';
+  if (org.includes('Harvard'))               return 'Harvard';
+  return org.length > 22 ? org.slice(0, 20) + '\u2026' : org;
+}
 
 // --------------------------------------------------------------------------
 // Custom node renderer
@@ -74,8 +114,11 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
           cursor: 'pointer',
         }}
       >
-        <div style={{ fontWeight: 700, fontSize: 13, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 4 }}>
+        <div style={{ fontWeight: 700, fontSize: 13, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 2 }}>
           {data.label}
+        </div>
+        <div style={{ fontSize: 10, color: '#64748b', marginBottom: 3 }}>
+          {abbreviateOrg(data.parentOrg)}
         </div>
         <div style={{ fontSize: 11, color: '#94a3b8', marginBottom: 6 }}>
           {data.period}
@@ -108,10 +151,11 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
 const nodeTypes = { program: ProgramNode };
 
 // --------------------------------------------------------------------------
-// Status legend (overlaid inside the flow container)
+// Status legend
 // --------------------------------------------------------------------------
 
-const LEGEND_ENTRIES: Array<{ status: ProgramStatus }> = [
+type LegendEntry = { status: ProgramStatus };
+const LEGEND_ENTRIES: LegendEntry[] = [
   { status: 'active'     },
   { status: 'defunct'    },
   { status: 'classified' },
@@ -150,69 +194,163 @@ function StatusLegend() {
 }
 
 // --------------------------------------------------------------------------
-// Raw program data
+// Detail panel (click-triggered, no hover)
 // --------------------------------------------------------------------------
 
-const RAW_NODES: Array<{ id: string; label: string; period: string; status: ProgramStatus }> = [
-  // Historical Air Force programs
-  { id: 'ipu',                       label: 'Interplanetary Phenomenon Unit (IPU)', period: '1947 (alleged)',          status: 'unknown'    },
-  { id: 'project-sign',              label: 'Project Sign',                          period: '1947-1949',               status: 'defunct'    },
-  { id: 'project-grudge',            label: 'Project Grudge',                        period: '1949-1952',               status: 'defunct'    },
-  { id: 'project-blue-book',         label: 'Project Blue Book',                     period: '1952-1969',               status: 'defunct'    },
-  { id: 'project-moon-dust',         label: 'Project Moon Dust',                     period: 'c. 1953-1985',            status: 'defunct'    },
-  // Civil / research orgs
-  { id: 'nicap',                     label: 'NICAP',                                 period: '1956-1980',               status: 'defunct'    },
-  { id: 'mufon',                     label: 'MUFON',                                 period: '1969-present',            status: 'active'     },
-  // Strategic / black-budget predecessor
-  { id: 'sdi',                       label: 'SDI (Star Wars)',                       period: '1983-1993',               status: 'defunct'    },
-  // Private research orgs
-  { id: 'nids',                      label: 'NIDS',                                  period: '1995-2004',               status: 'defunct'    },
-  { id: 'bigelow-aerospace',         label: 'Bigelow Aerospace / BAASS',             period: '1999-2020',               status: 'defunct'    },
-  // Modern government programs
-  { id: 'aawsap',                    label: 'AAWSAP',                                period: '2008-2012',               status: 'defunct'    },
-  { id: 'aatip',                     label: 'AATIP',                                 period: '2007-2012',               status: 'defunct'    },
-  { id: 'ttsa',                      label: 'To The Stars Academy',                  period: '2017-2021',               status: 'defunct'    },
-  { id: 'kona-blue',                 label: 'Kona Blue',                             period: 'Proposed c. 2018-2021',   status: 'defunct'    },
-  { id: 'uap-task-force',            label: 'UAP Task Force (UAPTF)',                period: '2020-2021',               status: 'defunct'    },
-  { id: 'immaculate-constellation',  label: 'Immaculate Constellation',              period: 'Alleged ongoing',         status: 'classified' },
-  { id: 'aaro',                      label: 'AARO',                                  period: '2022-present',            status: 'active'     },
-  // Independent science programs
-  { id: 'galileo-project',           label: 'The Galileo Project',                   period: '2021-present',            status: 'active'     },
-  { id: 'sol-foundation',            label: 'Sol Foundation',                        period: '2023-present',            status: 'active'     },
-];
+interface DetailPanelProps {
+  data: ProgramNodeData;
+  onClose: () => void;
+  onNavigate: (id: string) => void;
+  onFigureNavigate: (figureId: string) => void;
+}
 
-// --------------------------------------------------------------------------
-// Succession / relationship edges
-// --------------------------------------------------------------------------
+function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: DetailPanelProps) {
+  const style = STATUS_STYLES[data.status];
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        bottom: 12,
+        left: 12,
+        zIndex: 20,
+        width: 'min(380px, calc(100vw - 24px))',
+        background: 'rgba(15,23,42,0.97)',
+        border: `1px solid ${style.border}`,
+        borderRadius: 10,
+        backdropFilter: 'blur(6px)',
+        boxShadow: '0 4px 24px rgba(0,0,0,0.6)',
+        maxHeight: 380,
+        display: 'flex',
+        flexDirection: 'column',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Header */}
+      <div
+        style={{
+          padding: '10px 14px 8px',
+          borderBottom: '1px solid #1e293b',
+          flexShrink: 0,
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+          gap: 8,
+        }}
+      >
+        <div style={{ minWidth: 0 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#f1f5f9', lineHeight: 1.3 }}>
+            {data.label}
+          </div>
+          <div style={{ fontSize: 11, color: '#64748b', marginTop: 2 }}>
+            {abbreviateOrg(data.parentOrg)}{data.parentOrg ? ' \u00b7 ' : ''}{data.period}
+          </div>
+        </div>
+        <button
+          onClick={onClose}
+          aria-label="Close panel"
+          style={{
+            background: 'none',
+            border: 'none',
+            color: '#64748b',
+            cursor: 'pointer',
+            fontSize: 18,
+            lineHeight: 1,
+            padding: '0 0 0 4px',
+            flexShrink: 0,
+          }}
+        >
+          &times;
+        </button>
+      </div>
 
-const RAW_EDGES: Array<{ source: string; target: string }> = [
-  { source: 'ipu',                      target: 'project-sign'          },
-  { source: 'project-sign',             target: 'project-grudge'        },
-  { source: 'project-grudge',           target: 'project-blue-book'     },
-  { source: 'nicap',                    target: 'mufon'                 }, // NICAP (1956) preceded and influenced MUFON (1969)
-  { source: 'nicap',                    target: 'project-blue-book'     }, // investigated and critiqued
-  { source: 'sdi',                      target: 'aawsap'                }, // black-budget precedent
-  { source: 'nids',                     target: 'bigelow-aerospace'     }, // evolved into BAASS
-  { source: 'bigelow-aerospace',        target: 'aawsap'                }, // BAASS was the AAWSAP contractor
-  { source: 'aawsap',                   target: 'aatip'                 }, // preceded / overlapped with
-  { source: 'aatip',                    target: 'uap-task-force'        }, // predecessor
-  { source: 'project-moon-dust',        target: 'uap-task-force'        }, // predecessor
-  { source: 'immaculate-constellation', target: 'uap-task-force'        }, // related program
-  { source: 'ttsa',                     target: 'uap-task-force'        }, // 2017 video releases triggered UAPTF formation
-  { source: 'kona-blue',                target: 'aaro'                  }, // assessed by AARO
-  { source: 'uap-task-force',           target: 'aaro'                  }, // predecessor of AARO
-  { source: 'uap-task-force',           target: 'galileo-project'       }, // UAPTF 2021 report inspired Loeb to launch Galileo
-  { source: 'galileo-project',          target: 'sol-foundation'        }, // Loeb leads both; Sol Foundation grew from Galileo work
-];
+      {/* Scrollable body */}
+      <div style={{ padding: '10px 14px', overflowY: 'auto', flex: 1 }}>
+        <p style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, margin: '0 0 12px 0' }}>
+          {data.summary}
+        </p>
+
+        {data.keyPersonnel.length > 0 && (
+          <div>
+            <div
+              style={{
+                fontSize: 10,
+                fontWeight: 700,
+                color: '#64748b',
+                letterSpacing: '0.06em',
+                textTransform: 'uppercase',
+                marginBottom: 6,
+              }}
+            >
+              Key Personnel
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              {data.keyPersonnel.slice(0, 4).map((p, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 6 }}>
+                  <span style={{ color: '#475569', flexShrink: 0, fontSize: 12, marginTop: 1 }}>
+                    &bull;
+                  </span>
+                  <span style={{ fontSize: 12, color: '#cbd5e1', lineHeight: 1.4 }}>
+                    {p.figure_id ? (
+                      <button
+                        onClick={() => onFigureNavigate(p.figure_id as string)}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          padding: 0,
+                          color: '#7dd3fc',
+                          cursor: 'pointer',
+                          fontSize: 12,
+                          textDecoration: 'underline',
+                          textDecorationStyle: 'dotted',
+                          textUnderlineOffset: '2px',
+                        }}
+                      >
+                        {p.name}
+                      </button>
+                    ) : (
+                      <span>{p.name}</span>
+                    )}
+                    <span style={{ color: '#64748b' }}> - {p.role}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Footer */}
+      <div style={{ padding: '8px 14px', borderTop: '1px solid #1e293b', flexShrink: 0 }}>
+        <button
+          onClick={() => onNavigate(data.programId)}
+          style={{
+            width: '100%',
+            padding: '7px 12px',
+            background: '#0f2744',
+            border: `1px solid ${style.border}`,
+            borderRadius: 6,
+            color: '#7dd3fc',
+            fontSize: 12,
+            fontWeight: 600,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 6,
+          }}
+        >
+          View Full Profile &rarr;
+        </button>
+      </div>
+    </div>
+  );
+}
 
 // --------------------------------------------------------------------------
 // Dagre layout
 // --------------------------------------------------------------------------
 
-function getLayoutedElements(
-  nodes: Node[],
-  edges: Edge[],
-): { nodes: Node[]; edges: Edge[] } {
+function getLayoutedElements(nodes: Node[], edges: Edge[]): { nodes: Node[]; edges: Edge[] } {
   const g = new Dagre.graphlib.Graph().setDefaultEdgeLabel(() => ({}));
   g.setGraph({ rankdir: 'LR', nodesep: 50, ranksep: 100 });
 
@@ -242,26 +380,42 @@ function getLayoutedElements(
 }
 
 // --------------------------------------------------------------------------
-// Build initial nodes and edges
+// Build nodes and edges from programs.json
 // --------------------------------------------------------------------------
 
 function buildInitialElements(): { nodes: Node[]; edges: Edge[] } {
-  const nodes: Node[] = RAW_NODES.map(n => ({
-    id: n.id,
+  const programs = (rawPrograms as unknown as ProgramRecord[]).filter(p => p.includeInLineage);
+
+  const nodes: Node[] = programs.map(p => ({
+    id: p.id,
     type: 'program',
     position: { x: 0, y: 0 },
-    data: { label: n.label, period: n.period, status: n.status } as ProgramNodeData,
+    data: {
+      label:        p.name,
+      period:       p.active_period,
+      status:       (p.status as ProgramStatus) ?? 'unknown',
+      parentOrg:    p.parent_org ?? '',
+      summary:      p.summary ?? '',
+      keyPersonnel: p.key_personnel ?? [],
+      programId:    p.id,
+    } as ProgramNodeData,
   }));
 
-  const edges: Edge[] = RAW_EDGES.map((e, i) => ({
-    id: `e-${i}`,
-    source: e.source,
-    target: e.target,
-    type: 'smoothstep',
-    style: { stroke: '#475569', strokeWidth: 1.5 },
-    markerEnd: { type: MarkerType.ArrowClosed, color: '#475569', width: 16, height: 16 },
-    animated: false,
-  }));
+  const edges: Edge[] = [];
+  let edgeIndex = 0;
+  programs.forEach(p => {
+    (p.relationships ?? []).forEach(rel => {
+      edges.push({
+        id: `e-${edgeIndex++}`,
+        source: p.id,
+        target: rel.target,
+        type: 'smoothstep',
+        style: { stroke: '#475569', strokeWidth: 1.5 },
+        markerEnd: { type: MarkerType.ArrowClosed, color: '#475569', width: 16, height: 16 },
+        animated: false,
+      });
+    });
+  });
 
   return getLayoutedElements(nodes, edges);
 }
@@ -277,13 +431,25 @@ export default function ProgramLineageFlow() {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [layouted, setLayouted] = useState(false);
+  const [selectedNode, setSelectedNode] = useState<ProgramNodeData | null>(null);
 
   const onInit = useCallback(() => {
     setLayouted(true);
   }, []);
 
   const handleNodeClick = useCallback((_evt: React.MouseEvent, node: Node) => {
-    router.push(`/programs/${node.id}?ref=program-lineage`);
+    const data = node.data as ProgramNodeData;
+    setSelectedNode(prev =>
+      prev?.programId === data.programId ? null : data
+    );
+  }, []);
+
+  const handleNavigate = useCallback((programId: string) => {
+    router.push(`/programs/${programId}?ref=program-lineage`);
+  }, [router]);
+
+  const handleFigureNavigate = useCallback((figureId: string) => {
+    router.push(`/figures/${figureId}?ref=explore`);
   }, [router]);
 
   useLayoutEffect(() => {
@@ -307,6 +473,16 @@ export default function ProgramLineageFlow() {
       }}
     >
       <StatusLegend />
+
+      {selectedNode && (
+        <ProgramDetailPanel
+          data={selectedNode}
+          onClose={() => setSelectedNode(null)}
+          onNavigate={handleNavigate}
+          onFigureNavigate={handleFigureNavigate}
+        />
+      )}
+
       <ReactFlow
         nodes={nodes}
         edges={edges}

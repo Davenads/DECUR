@@ -81,7 +81,9 @@
         "title": "The UFO Experience (Hynek, 1972)",
         "type": "Book"
       }
-    ]
+    ],
+    "relationships": [],
+    "includeInLineage": true
   },
   {
     "id": "project-sign",
@@ -148,7 +150,11 @@
         "url": "https://www.archives.gov/research/military/air-force/ufos",
         "type": "Primary Source"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "project-grudge", "type": "successor" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "project-grudge",
@@ -206,7 +212,11 @@
         "url": "https://www.archives.gov/research/military/air-force/ufos",
         "type": "Primary Source"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "project-blue-book", "type": "successor" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "aawsap",
@@ -301,7 +311,89 @@
         "title": "The Pentagon's UAP Task Force (Politico, 2020)",
         "type": "Article"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "aatip", "type": "parent-program" }
+    ],
+    "includeInLineage": true
+  },
+  {
+    "id": "aatip",
+    "name": "AATIP",
+    "type": "project",
+    "status": "defunct",
+    "active_period": "2007-2012",
+    "parent_org": "Office of the Secretary of Defense",
+    "summary": "The Advanced Aerospace Threat Identification Program was a classified DoD program managed by Luis Elizondo within the Office of the Under Secretary of Defense for Intelligence. Operating as a subset of AAWSAP, AATIP focused specifically on collecting and analyzing military UAP encounter reports. Elizondo ran the program largely alone within OSD after DIA's AAWSAP contract ended, until his resignation in October 2017. His departure and subsequent public disclosure of the program's existence - and the three declassified UAP videos - triggered the modern UAP disclosure movement.",
+    "significance": "AATIP's significance is disproportionate to its modest operational footprint. Elizondo's 2017 resignation letter and the simultaneous New York Times article naming AATIP became the founding event of the modern congressional UAP push. The program validated that military pilots were encountering genuine unknowns and that no institution was properly investigating them - a gap that directly led to the formation of the UAP Task Force in 2020.",
+    "key_personnel": [
+      {
+        "name": "Luis Elizondo",
+        "role": "Program Director (c. 2010-2017)",
+        "figure_id": "luis-elizondo"
+      },
+      {
+        "name": "James Lacatski",
+        "role": "DIA liaison; AAWSAP program manager",
+        "figure_id": "james-lacatski"
+      },
+      {
+        "name": "Christopher Mellon",
+        "role": "Deputy Assistant Secretary of Defense; advocacy and declassification",
+        "figure_id": "christopher-mellon"
+      }
+    ],
+    "key_events": [
+      {
+        "year": "2007",
+        "event": "AATIP begins within DoD as a UAP reporting and investigation effort, closely linked to AAWSAP's broader research mandate."
+      },
+      {
+        "year": "2010",
+        "event": "Luis Elizondo assumes management of AATIP within OSD/USDI after DIA's active involvement in AAWSAP reduces."
+      },
+      {
+        "year": "Oct 2017",
+        "event": "Elizondo resigns from DoD, citing internal obstruction and institutional indifference to UAP threat reporting."
+      },
+      {
+        "year": "Dec 2017",
+        "event": "New York Times publishes 'Glowing Auras and Black Money' naming AATIP and releasing the Tic-Tac, Gimbal, and Go Fast videos. AATIP becomes the trigger event for modern UAP disclosure."
+      },
+      {
+        "year": "2020",
+        "event": "DoD declassifies the three UAP videos officially. The AATIP-linked footage becomes the first government-acknowledged evidence of unresolved UAP encounters."
+      }
+    ],
+    "connected_documents": [],
+    "connected_figures": [
+      "luis-elizondo",
+      "christopher-mellon",
+      "james-lacatski",
+      "harry-reid"
+    ],
+    "limitations": [
+      "The precise relationship between AATIP and AAWSAP remains contested - Elizondo and Lacatski have given partially conflicting accounts of how the programs overlapped.",
+      "The program's official budget and scope within OSD have never been publicly confirmed; most details come from Elizondo's personal account.",
+      "DoD's 2020 statement officially acknowledging AATIP was narrower than Elizondo's public descriptions of the program's scope.",
+      "Whether AATIP continued in any form after 2012 or 2017 (depending on which end date is used) is not publicly confirmed."
+    ],
+    "sources": [
+      {
+        "title": "Glowing Auras and Black Money - New York Times (Cooper, Blumenthal, Kean - Dec 2017)",
+        "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
+        "type": "Journalism"
+      },
+      {
+        "title": "DoD Statement on AATIP (Aug 2020)",
+        "url": "https://www.defense.gov/News/Releases/Release/Article/2314278/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/",
+        "type": "Official Statement"
+      }
+    ],
+    "relationships": [
+      { "target": "uap-task-force", "type": "predecessor" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "aaro",
@@ -384,7 +476,9 @@
         "title": "Grusch Congressional Testimony (July 2023)",
         "type": "Congressional Record"
       }
-    ]
+    ],
+    "relationships": [],
+    "includeInLineage": true
   },
   {
     "id": "immaculate-constellation",
@@ -428,7 +522,11 @@
         "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
         "type": "Congressional Record"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "uap-task-force", "type": "related" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "kona-blue",
@@ -481,7 +579,11 @@
         "title": "Grusch Congressional Testimony (July 2023)",
         "type": "Congressional Record"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "aaro", "type": "assessed-by" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "ttsa",
@@ -570,7 +672,11 @@
         "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
         "type": "Article"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "uap-task-force", "type": "triggered" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "sol-foundation",
@@ -647,7 +753,9 @@
         "url": "https://www.youtube.com/@_Solfoundation",
         "type": "Video"
       }
-    ]
+    ],
+    "relationships": [],
+    "includeInLineage": true
   },
   {
     "id": "nids",
@@ -719,7 +827,11 @@
         "url": "https://www.skinwalkerranch.org",
         "type": "Reference"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "bigelow-aerospace", "type": "evolved-into" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "bigelow-aerospace",
@@ -803,7 +915,11 @@
         "url": "https://www.cbsnews.com/news/are-ufos-a-threat-to-national-security-60-minutes-2021-05-16/",
         "type": "Television"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "aawsap", "type": "contracted" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "nicap",
@@ -883,7 +999,12 @@
         "title": "The Flying Saucers Are Real (Keyhoe, 1950)",
         "type": "Book"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "mufon", "type": "influenced" },
+      { "target": "project-blue-book", "type": "investigated" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "mufon",
@@ -961,7 +1082,9 @@
         "title": "Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)",
         "type": "Book"
       }
-    ]
+    ],
+    "relationships": [],
+    "includeInLineage": true
   },
   {
     "id": "jsoc",
@@ -1140,7 +1263,11 @@
         "title": "The UFO Cover-Up: What the Government Won't Say (Fawcett & Greenwood, 1984)",
         "type": "Book"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "project-sign", "type": "successor" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "oga",
@@ -1248,7 +1375,11 @@
         "title": "Star Wars: A Defense of the Strategic Defense Initiative (Union of Concerned Scientists, 1987)",
         "type": "Academic Study"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "aawsap", "type": "precedent" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "seti",
@@ -1387,7 +1518,12 @@
         "url": "https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/",
         "type": "Primary Source"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "aaro", "type": "predecessor" },
+      { "target": "galileo-project", "type": "inspired" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "galileo-project",
@@ -1465,7 +1601,11 @@
         "url": "https://arxiv.org/abs/2308.16005",
         "type": "Academic"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "sol-foundation", "type": "led-to" }
+    ],
+    "includeInLineage": true
   },
   {
     "id": "project-moon-dust",
@@ -1540,6 +1680,10 @@
         "url": "https://nsarchive.gwu.edu",
         "type": "Primary Source"
       }
-    ]
+    ],
+    "relationships": [
+      { "target": "uap-task-force", "type": "predecessor" }
+    ],
+    "includeInLineage": true
   }
 ]
