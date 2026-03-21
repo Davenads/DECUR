@@ -96,6 +96,27 @@ const OverviewTab: FC<{ p: ProgramEntry }> = ({ p }) => {
           </ul>
         </div>
       )}
+
+      {/* Blue Book cases index link - only show for project-blue-book */}
+      {p.id === 'project-blue-book' && (
+        <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/50 rounded-lg">
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-200 mb-1">
+            Unidentified Cases Archive
+          </p>
+          <p className="text-sm text-amber-800 dark:text-amber-300 mb-3">
+            558 cases classified as Unidentified, verified by NICAP independent review.
+          </p>
+          <a
+            href="/blue-book"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-700 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-200 transition-colors"
+          >
+            Browse the full index
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      )}
     </div>
   );
 };

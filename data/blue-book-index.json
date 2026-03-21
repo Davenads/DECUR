@@ -1,0 +1,5592 @@
+{
+  "metadata": {
+    "total": 558,
+    "source": "NICAP Blue Book Unknowns Compilation",
+    "source_url": "https://www.nicap.org/bluebook/bluelist.htm",
+    "program": "project-blue-book",
+    "program_period": "1947-1969",
+    "note": "558 cases verified as 'Unidentified' by NICAP independent review. Official USAF count: 701. Discrepancy reflects NICAP's more conservative verification standard."
+  },
+  "cases": [
+    {
+      "id": "bb-12",
+      "case_no": "12",
+      "date": "June 24, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Portland, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-27",
+      "case_no": "27",
+      "date": "July 3, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "South Brookville, Maine",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-34",
+      "case_no": "34",
+      "date": "July 4, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Emmett, Idaho",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-36",
+      "case_no": "36",
+      "date": "July 6, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Fairfield-Suisan AFB, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-50",
+      "case_no": "50",
+      "date": "July 8, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Muroc AFB, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-69",
+      "case_no": "69",
+      "date": "July 29, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Hamilton Field, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-85",
+      "case_no": "85",
+      "date": "September 3, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Oswego, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-91",
+      "case_no": "91",
+      "date": "October 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Dodgeville, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-95",
+      "case_no": "95",
+      "date": "October 14, 1947",
+      "year": 1947,
+      "decade": "1940s",
+      "location": "Phoenix. Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-139",
+      "case_no": "139",
+      "date": "April 5, 1948",
+      "year": 1948,
+      "decade": "1940s",
+      "location": "Holloman AFB, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-185",
+      "case_no": "185",
+      "date": "July 29, 1948",
+      "year": 1948,
+      "decade": "1940s",
+      "location": "Indianapolis, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-190",
+      "case_no": "190",
+      "date": "July 31, 1948",
+      "year": 1948,
+      "decade": "1940s",
+      "location": "Indianapolis, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-191",
+      "case_no": "191",
+      "date": "July-August 1948",
+      "year": 1948,
+      "decade": "1940s",
+      "location": "Marion, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-208",
+      "case_no": "208",
+      "date": "September 23, 1948",
+      "year": 1948,
+      "decade": "1940s",
+      "location": "San Pablo, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-218",
+      "case_no": "218",
+      "date": "October 15, 1948",
+      "year": 1948,
+      "decade": "1940s",
+      "location": "Kyushu, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-257",
+      "case_no": "257",
+      "date": "December 3, 1948",
+      "year": 1948,
+      "decade": "1940s",
+      "location": "Fairfield-Suisan AFB, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-275",
+      "case_no": "275",
+      "date": "January 4, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Hickam Field Hawaii",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-284",
+      "case_no": "284",
+      "date": "January 27, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Cortex, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-319",
+      "case_no": "319",
+      "date": "March 17-18, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Killeen Base, Camp Hood, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-358",
+      "case_no": "358",
+      "date": "April 24, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Arrey, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-361",
+      "case_no": "361",
+      "date": "April 28, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Tucson, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-376",
+      "case_no": "376",
+      "date": "May 5, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Fort Bliss, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-379",
+      "case_no": "379",
+      "date": "May 6, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Livermore, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-384",
+      "case_no": "384",
+      "date": "May 9, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Tucson, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-404",
+      "case_no": "404",
+      "date": "May 27, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Southern, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-483",
+      "case_no": "483",
+      "date": "July 24, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Mountain Home, Idaho",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-496",
+      "case_no": "496",
+      "date": "July 30, 1949",
+      "year": 1949,
+      "decade": "1940s",
+      "location": "Mount Hood, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-642",
+      "case_no": "642",
+      "date": "February 24, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-645",
+      "case_no": "645",
+      "date": "February 25, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Los Alamos, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-650",
+      "case_no": "650",
+      "date": "March 3, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Selfridge AFB, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-671",
+      "case_no": "671",
+      "date": "March 20, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Stuttgart, Arkansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-678",
+      "case_no": "678",
+      "date": "March 27, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Motobu, Okinawa",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-680",
+      "case_no": "680",
+      "date": "March 28, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Santiago, Chile",
+      "country": "Chile",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-682",
+      "case_no": "682",
+      "date": "March 29, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Marrowhode Lake, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-706",
+      "case_no": "706",
+      "date": "April 8, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Kokomo, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-711",
+      "case_no": "711",
+      "date": "April 14, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Fort Monmouth, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-721",
+      "case_no": "721",
+      "date": "May 7, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "East Ely, Nevada",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-738",
+      "case_no": "738",
+      "date": "June 27, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Texarkana, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-758",
+      "case_no": "758",
+      "date": "July 13, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Redstone Arsenal, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-773",
+      "case_no": "773",
+      "date": "August 4, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "North Atlantic",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-793",
+      "case_no": "793",
+      "date": "August 20, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Nicosia, Cyprus",
+      "country": "Cyprus",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-787",
+      "case_no": "787",
+      "date": "August 24, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Air radar, Bermuda",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-790",
+      "case_no": "790",
+      "date": "August 30, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Sandy Point, Newfoundland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-797",
+      "case_no": "797",
+      "date": "September 3, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Spokane, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-807",
+      "case_no": "807",
+      "date": "September 20, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Kit Carson, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-809",
+      "case_no": "809",
+      "date": "September 21, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Provincetown, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-819",
+      "case_no": "819",
+      "date": "October 15, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Knoxville, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-821",
+      "case_no": "821",
+      "date": "October 15, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Pope AFB, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-824",
+      "case_no": "824",
+      "date": "October 23, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Bonlee, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-829",
+      "case_no": "829",
+      "date": "November 5, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Oak Ridge, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-845",
+      "case_no": "845",
+      "date": "December 2, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Nanyika, Kenya, Africa",
+      "country": "Africa",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-848",
+      "case_no": "848",
+      "date": "December 6, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Fort Meyers, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-849",
+      "case_no": "849",
+      "date": "December 11, 1950",
+      "year": 1950,
+      "decade": "1950s",
+      "location": "Alaska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-864",
+      "case_no": "864",
+      "date": "January 8, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "South of Fort Worth, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-868",
+      "case_no": "868",
+      "date": "January 12, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Fort Benning, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-886",
+      "case_no": "886",
+      "date": "February 1, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Johnson AB, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-896",
+      "case_no": "896",
+      "date": "February 26, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Durban, South Africa",
+      "country": "Africa",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-897",
+      "case_no": "897",
+      "date": "February 26, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Ladd AFB, Alaska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-907",
+      "case_no": "907",
+      "date": "March 13, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "McClellan AFB, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-908",
+      "case_no": "908",
+      "date": "March 15, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "New Delhi, India",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-925",
+      "case_no": "925",
+      "date": "May 31, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Niagara Falls, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-943",
+      "case_no": "943",
+      "date": "July 24, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Portsmouth, New Hampshire",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-955",
+      "case_no": "955",
+      "date": "August 25, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-962",
+      "case_no": "962",
+      "date": "August 31, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Matador, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-964",
+      "case_no": "964",
+      "date": "September 6, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Claremont, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-969",
+      "case_no": "969",
+      "date": "September 13, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Goose AFB, Labrador",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-980",
+      "case_no": "980",
+      "date": "October 2, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Columbus, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-984",
+      "case_no": "984",
+      "date": "October 3, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Kadena, Okinawa",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-985",
+      "case_no": "985",
+      "date": "October 9, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Terre Haute, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-989",
+      "case_no": "989",
+      "date": "October 11, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Minneapolis, Minnesota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1011",
+      "case_no": "1011",
+      "date": "December 18, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Andrews AFB, Washington, D.C.",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1013",
+      "case_no": "1013",
+      "date": "December 24, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Mankato, Minnesota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1021",
+      "case_no": "1021",
+      "date": "December 7, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Oak Ridge, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1023",
+      "case_no": "1023",
+      "date": "December 7, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "Sunbury, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1037",
+      "case_no": "1037",
+      "date": "January 16, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Artesia, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1052",
+      "case_no": "1052",
+      "date": "February 11, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Pittsburgh, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1061",
+      "case_no": "1061",
+      "date": "February 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Sinuiju, North Korea",
+      "country": "Korea",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1074",
+      "case_no": "1074",
+      "date": "March 20, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Queen Annes City, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1076",
+      "case_no": "1076",
+      "date": "March 22, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Yakima, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1077",
+      "case_no": "1077",
+      "date": "March 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Point Conception, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1082",
+      "case_no": "1082",
+      "date": "March 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Misawa AFB, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1095",
+      "case_no": "1095",
+      "date": "April 5, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Duncanville, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1097",
+      "case_no": "1097",
+      "date": "April 5, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Miami, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1099",
+      "case_no": "1099",
+      "date": "April 6, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Temple, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1108",
+      "case_no": "1108",
+      "date": "April 12, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "North Bay, Ontario",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1112",
+      "case_no": "1112",
+      "date": "April 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Memphis, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1113",
+      "case_no": "1113",
+      "date": "April 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "La Crosse, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1115",
+      "case_no": "1115",
+      "date": "April 15, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Santa Cruz, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1124",
+      "case_no": "1124",
+      "date": "April 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Longmeadow, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1127",
+      "case_no": "1127",
+      "date": "April 17-18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Yuma Test Station, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1128",
+      "case_no": "1128",
+      "date": "April 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Bethesda, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1129",
+      "case_no": "1129",
+      "date": "April 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Corner Brook, Newfoundland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1130",
+      "case_no": "1130",
+      "date": "April 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1131",
+      "case_no": "1131",
+      "date": "April 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Corner Brook, Newfoundland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1144",
+      "case_no": "1144",
+      "date": "April 22, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Okinawa",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1147",
+      "case_no": "1147",
+      "date": "April 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Bellevue Hill, Vermont",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1148",
+      "case_no": "1148",
+      "date": "April 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Milton, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1151",
+      "case_no": "1151",
+      "date": "April 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Clovis, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1160",
+      "case_no": "1160",
+      "date": "April 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Roseville, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1163",
+      "case_no": "1163",
+      "date": "April 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Yuma, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1167",
+      "case_no": "1167",
+      "date": "April 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Marshall, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1168",
+      "case_no": "1168",
+      "date": "April 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "North of Goodland, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1174",
+      "case_no": "1174",
+      "date": "May 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Moses Lake, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1176",
+      "case_no": "1176",
+      "date": "May 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "George AFB, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1183",
+      "case_no": "1183",
+      "date": "May 5, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tenafly, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1185",
+      "case_no": "1185",
+      "date": "May 7, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Keesler AFB, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1194",
+      "case_no": "1194",
+      "date": "May 9, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "George AFB, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1198",
+      "case_no": "1198",
+      "date": "May 10, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Ellenton, South Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1213",
+      "case_no": "1213",
+      "date": "May 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Puerto Rico",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1219",
+      "case_no": "1219",
+      "date": "May 20, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Houston, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1227",
+      "case_no": "1227",
+      "date": "May 25, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Walnut Lake, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1232",
+      "case_no": "1232",
+      "date": "May 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Saigon, Indochina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1233",
+      "case_no": "1233",
+      "date": "May 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1236",
+      "case_no": "1236",
+      "date": "May 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1243",
+      "case_no": "1243",
+      "date": "June 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Rapid City, South Dakota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1245",
+      "case_no": "1245",
+      "date": "June 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Walla Walla, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1246",
+      "case_no": "1246",
+      "date": "June 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Soap Lake, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1249",
+      "case_no": "1249",
+      "date": "June 2, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Bayview, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1250",
+      "case_no": "1250",
+      "date": "June 2, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Fulda, Germany",
+      "country": "Germany",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1255",
+      "case_no": "1255",
+      "date": "June 5. 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lubbock, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1256",
+      "case_no": "1256",
+      "date": "June 5, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1257",
+      "case_no": "1257",
+      "date": "June 5, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Offutt AFB, Nebraska June 6, 1952 Kimpo AB, Korea (Case missing)",
+      "country": "Korea",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1260",
+      "case_no": "1260",
+      "date": "June 7, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1263",
+      "case_no": "1263",
+      "date": "June 8, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico June 9, 1952 Minneapolis, Minnesota (Case missing)",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1269",
+      "case_no": "1269",
+      "date": "June 12, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Forth Smith, Arkansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1270",
+      "case_no": "1270",
+      "date": "June 12, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Marrakech, Morrocco",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1273",
+      "case_no": "1273",
+      "date": "June 13, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Middletown, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1285",
+      "case_no": "1285",
+      "date": "June 15, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Louisville, Kentucky",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1295",
+      "case_no": "1295",
+      "date": "June 16, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Walker AFB, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1298",
+      "case_no": "1298",
+      "date": "June 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "McChord AFB, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1299",
+      "case_no": "1299",
+      "date": "June 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Cape Cod, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1302",
+      "case_no": "1302",
+      "date": "June 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Columbus, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1305",
+      "case_no": "1305",
+      "date": "June 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Pontiac, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1308",
+      "case_no": "1308",
+      "date": "June 19, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Goose AFB, Labrador",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1310",
+      "case_no": "1310",
+      "date": "June 19, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Yuma, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1313",
+      "case_no": "1313",
+      "date": "June 20, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Korea",
+      "country": "Korea",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1319",
+      "case_no": "1319",
+      "date": "June 21, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Kelly AFB, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1323",
+      "case_no": "1323",
+      "date": "June 22, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Korea",
+      "country": "Korea",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1331",
+      "case_no": "1331",
+      "date": "June 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Spokane, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1332",
+      "case_no": "1332",
+      "date": "June 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "McChord AFB, Washington June 23, 1952 Kirksville, Missouri (Case missing)",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1334",
+      "case_no": "1334",
+      "date": "June 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Oak Ridge, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1335",
+      "case_no": "1335",
+      "date": "June 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Near Owensboro, Kentucky",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1340",
+      "case_no": "1340",
+      "date": "June 25, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tokyo, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1344",
+      "case_no": "1344",
+      "date": "June 25, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Chicago, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1347",
+      "case_no": "1347",
+      "date": "June 25, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Japan, Korea Area",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1348",
+      "case_no": "1348",
+      "date": "June 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Terre Haute, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1351",
+      "case_no": "1351",
+      "date": "June 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Pottstown, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1355",
+      "case_no": "1355",
+      "date": "June 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Topeka, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1361",
+      "case_no": "1361",
+      "date": "June 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lake Kishkonoug, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1363",
+      "case_no": "1363",
+      "date": "June 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Nagoya, Honshu, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1364",
+      "case_no": "1364",
+      "date": "June 29, 1951",
+      "year": 1951,
+      "decade": "1950s",
+      "location": "O'Hare Airport, Chicago, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1380",
+      "case_no": "1380",
+      "date": "July 3, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Selfridge AFB, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1382",
+      "case_no": "1382",
+      "date": "July 3, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Chicago, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1390",
+      "case_no": "1390",
+      "date": "July 5, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Norman, Oklahoma",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1397",
+      "case_no": "1397",
+      "date": "July 6-12, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Governors Island, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1405",
+      "case_no": "1405",
+      "date": "July 9, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Colorado Springs, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1409",
+      "case_no": "1409",
+      "date": "July 9, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Kutztown, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1431",
+      "case_no": "1431",
+      "date": "July 12, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Annapolis, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1436",
+      "case_no": "1436",
+      "date": "July 13, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Kirksville, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1444",
+      "case_no": "1444",
+      "date": "July 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Norfolk, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1451",
+      "case_no": "1451",
+      "date": "July 15, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "West Palm Beach, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1476",
+      "case_no": "1476",
+      "date": "July 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lockbourne AFB, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1479",
+      "case_no": "1479",
+      "date": "July 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Rapid City, South Dakota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1482",
+      "case_no": "1482",
+      "date": "July 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lockbourne AFB, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1483",
+      "case_no": "1483",
+      "date": "July 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Miami, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1485",
+      "case_no": "1485",
+      "date": "July 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Patrick AFB, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1492",
+      "case_no": "1492",
+      "date": "July 19, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Williston, North Dakota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1494",
+      "case_no": "1494",
+      "date": "July 19, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Elkins Park, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1501",
+      "case_no": "1501",
+      "date": "July 16, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Beverly, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1502",
+      "case_no": "1502",
+      "date": "July 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "White Plains, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1504",
+      "case_no": "1504",
+      "date": "July 20, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lavalette, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1514",
+      "case_no": "1514",
+      "date": "July 21, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Wiesbaden, Germany",
+      "country": "Germany",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1516",
+      "case_no": "1516",
+      "date": "July 21, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "San Marcos AFB, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1522",
+      "case_no": "1522",
+      "date": "July 21, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Randolph AFB, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1524",
+      "case_no": "1524",
+      "date": "July 21, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Holyoke, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1533",
+      "case_no": "1533",
+      "date": "July 22, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Rockville, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1536",
+      "case_no": "1536",
+      "date": "July 22, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Uvalde, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1538",
+      "case_no": "1538",
+      "date": "July 22, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Los Alamos, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1554",
+      "case_no": "1554",
+      "date": "July 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Pottstown, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1556",
+      "case_no": "1556",
+      "date": "July 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Boston-Provincetown, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1567",
+      "case_no": "1567",
+      "date": "July 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Altoona, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1572",
+      "case_no": "1572",
+      "date": "July 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Trenton, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1578",
+      "case_no": "1578",
+      "date": "July 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "South Bend, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1584",
+      "case_no": "1584",
+      "date": "July 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Carson Sink, Nevada",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1588",
+      "case_no": "1588",
+      "date": "July 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Travis AFB, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1628",
+      "case_no": "1628",
+      "date": "July 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Kansas City, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1637",
+      "case_no": "1637",
+      "date": "July 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Kirtland AFB, New Mexico July 26, 1952 Williams, California",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1654",
+      "case_no": "1654",
+      "date": "July 22, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Stafford, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1661",
+      "case_no": "1661",
+      "date": "July 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Washington, D.C.; Andrews AFB",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1664",
+      "case_no": "1664",
+      "date": "July 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Wilmington, Delaware",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1680",
+      "case_no": "1680",
+      "date": "July 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Selfridge AFB, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1684",
+      "case_no": "1684",
+      "date": "July 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Witchita Falls, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1700",
+      "case_no": "1700",
+      "date": "July 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Heidelberg, Germany",
+      "country": "Germany",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1707",
+      "case_no": "1707",
+      "date": "July 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "McGuire AFB, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1708",
+      "case_no": "1708",
+      "date": "July 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "McChord AFB, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1731",
+      "case_no": "1731",
+      "date": "July 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Osceola, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1732",
+      "case_no": "1732",
+      "date": "July 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Langley APB, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1738",
+      "case_no": "1738",
+      "date": "July 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Merced, Calffornia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1739",
+      "case_no": "1739",
+      "date": "July 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Witchita, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1747",
+      "case_no": "1747",
+      "date": "July 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Ennis, Montana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1755",
+      "case_no": "1755",
+      "date": "July 30, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1758",
+      "case_no": "1758",
+      "date": "July 30, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1771",
+      "case_no": "1771",
+      "date": "August 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lancaster, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1783",
+      "case_no": "1783",
+      "date": "August 2, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lake Charles, Louisiana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1812",
+      "case_no": "1812",
+      "date": "August 4, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Phoenix, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1813",
+      "case_no": "1813",
+      "date": "August 4, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Mount Vernon, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1827",
+      "case_no": "1827",
+      "date": "August 5, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Haneda AFB, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1841",
+      "case_no": "1841",
+      "date": "August 6, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tokyo",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1843",
+      "case_no": "1843",
+      "date": "August 6, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Belleville, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1845",
+      "case_no": "1845",
+      "date": "August 6, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Fort Austin, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1855",
+      "case_no": "1855",
+      "date": "August 7, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1870",
+      "case_no": "1870",
+      "date": "August 9, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lake Charles AFB, Louisiana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1889",
+      "case_no": "1889",
+      "date": "August 13, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tokyo, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1920",
+      "case_no": "1920",
+      "date": "August 18, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Fairfield, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1928",
+      "case_no": "1928",
+      "date": "August 19, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Red Bluff, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1938",
+      "case_no": "1938",
+      "date": "August 20, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Neffesville, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1944",
+      "case_no": "1944",
+      "date": "August 21, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Dallas, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1956",
+      "case_no": "1956",
+      "date": "August 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Akron, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1961",
+      "case_no": "1961",
+      "date": "August 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Hermanas, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1964",
+      "case_no": "1964",
+      "date": "August 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tucson, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1969",
+      "case_no": "1969",
+      "date": "August 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Leveland, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1972",
+      "case_no": "1972",
+      "date": "August 25, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Pittsburg, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1915",
+      "case_no": "1915",
+      "date": "August 25, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Delaware, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1979",
+      "case_no": "1979",
+      "date": "August 25, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Holloman AFB, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1986",
+      "case_no": "1986",
+      "date": "August 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lathrop Wells, Nevada",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1987",
+      "case_no": "1987",
+      "date": "August 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Biloxi, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-1994",
+      "case_no": "1994",
+      "date": "August 26,27,30, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2006",
+      "case_no": "2006",
+      "date": "August 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Chickasaw, Alabama",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2013",
+      "case_no": "2013",
+      "date": "August 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Colorado Springs, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2022",
+      "case_no": "2022",
+      "date": "September 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Marietta, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2023",
+      "case_no": "2023",
+      "date": "September 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Yaak, Montana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2025",
+      "case_no": "2025",
+      "date": "September 2, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Chicago, lllinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2045",
+      "case_no": "2045",
+      "date": "September 6, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Lake Charles AFB, Louisiana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2048",
+      "case_no": "2048",
+      "date": "September 6, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tucson, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2049",
+      "case_no": "2049",
+      "date": "September 7, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2052",
+      "case_no": "2052",
+      "date": "September 7, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2062",
+      "case_no": "2062",
+      "date": "September 9, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Rabat, French Morocco",
+      "country": "Morocco",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2077",
+      "case_no": "2077",
+      "date": "September 12, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Allen, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2085",
+      "case_no": "2085",
+      "date": "September 13, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Allentown, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2086",
+      "case_no": "2086",
+      "date": "September 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Santa Barbara, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2087",
+      "case_no": "2087",
+      "date": "September 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Operation Mainbrace",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2089",
+      "case_no": "2089",
+      "date": "September 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "White Lake, South Dakota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2092",
+      "case_no": "2092",
+      "date": "September 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "El Paso, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2093",
+      "case_no": "2093",
+      "date": "September 14, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Olmsted AFB, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2099",
+      "case_no": "2099",
+      "date": "September 16, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Portland, Maine",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2100",
+      "case_no": "2100",
+      "date": "September 16, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Warner Robins, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2105",
+      "case_no": "2105",
+      "date": "September 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tucson, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2119",
+      "case_no": "2119",
+      "date": "September 23, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Gander Lake, Newfoundland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2124",
+      "case_no": "2124",
+      "date": "September 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Charleston, West Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2126",
+      "case_no": "2126",
+      "date": "September 26, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "41'N-35'W (Atlantic)",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2128",
+      "case_no": "2128",
+      "date": "September 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Inyokern, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2136",
+      "case_no": "2136",
+      "date": "September 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "England",
+      "country": "England",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2138",
+      "case_no": "2138",
+      "date": "September 30, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Denver, California [sic]",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2140",
+      "case_no": "2140",
+      "date": "September 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Southern Pines, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2142",
+      "case_no": "2142",
+      "date": "October 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Shaw AFB, South Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2143",
+      "case_no": "2143",
+      "date": "October 1, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Pascagoula, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2150",
+      "case_no": "2150",
+      "date": "October 7, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Alamogordo, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2155",
+      "case_no": "2155",
+      "date": "October 10, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Otis AFB, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2171",
+      "case_no": "2171",
+      "date": "October 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Taos, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2172",
+      "case_no": "2172",
+      "date": "October 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Killeen, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2173",
+      "case_no": "2173",
+      "date": "October 17, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Tierra Amarilla, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2175",
+      "case_no": "2175",
+      "date": "October 19, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "12-17'N 155-35' W (Pacific)",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2177",
+      "case_no": "2177",
+      "date": "October 19, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2179",
+      "case_no": "2179",
+      "date": "October 21, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Knoxville, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2184",
+      "case_no": "2184",
+      "date": "October 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Elberton, Alabama",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2196",
+      "case_no": "2196",
+      "date": "October 29, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Erding Air Depot, Germany",
+      "country": "Germany",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2200",
+      "case_no": "2200",
+      "date": "October 31, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Fayetteville, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2202",
+      "case_no": "2202",
+      "date": "November 3, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Laredo AFB, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2206",
+      "case_no": "2206",
+      "date": "November 4, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Vineland, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2219",
+      "case_no": "2219",
+      "date": "November 12, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Los Alamos, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2220",
+      "case_no": "2220",
+      "date": "November 13, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Clasgow and Opheim, Montana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2224",
+      "case_no": "2224",
+      "date": "November 15, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Wichita, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2246",
+      "case_no": "2246",
+      "date": "November 24, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Annandle, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2249",
+      "case_no": "2249",
+      "date": "November 27, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Albuquerque, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2253",
+      "case_no": "2253",
+      "date": "November 30, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Washington, D.C.",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2266",
+      "case_no": "2266",
+      "date": "December 8, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Ladd AFB, Alaska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2267",
+      "case_no": "2267",
+      "date": "December 9, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Madison, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2302",
+      "case_no": "2302",
+      "date": "December 28, 1952",
+      "year": 1952,
+      "decade": "1950s",
+      "location": "Marysville, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2315",
+      "case_no": "2315",
+      "date": "January 1, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Craig, Montana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2323",
+      "case_no": "2323",
+      "date": "January 8, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Larson AFB, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2326",
+      "case_no": "2326",
+      "date": "January 10, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Sonoma, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2337",
+      "case_no": "2337",
+      "date": "January 17, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Guatemala",
+      "country": "Guatemala",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2361",
+      "case_no": "2361",
+      "date": "January 28, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Point Muga, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2364",
+      "case_no": "2364",
+      "date": "January 28, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Corona, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2365",
+      "case_no": "2365",
+      "date": "January 28, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Albany, Georgia Area",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2384",
+      "case_no": "2384",
+      "date": "February 3, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Iceland",
+      "country": "Iceland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2388",
+      "case_no": "2388",
+      "date": "February 4, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Yuma, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2419",
+      "case_no": "2419",
+      "date": "February 17, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Port Austin, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2426",
+      "case_no": "2426",
+      "date": "February 20, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Stockton, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2441",
+      "case_no": "2441",
+      "date": "February 24, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Sherman, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2543",
+      "case_no": "2543",
+      "date": "February 27, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Shreveport, Louisiana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2490",
+      "case_no": "2490",
+      "date": "March 10-11, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Hackettstown, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2496",
+      "case_no": "2496",
+      "date": "March 14, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "37' 25' N 132' 25' E (Sea of Japan)",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2511",
+      "case_no": "2511",
+      "date": "March 21, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Elmira, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2521",
+      "case_no": "2521",
+      "date": "March 25, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2524",
+      "case_no": "2524",
+      "date": "March 27, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Mount Taylor, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2526",
+      "case_no": "2526",
+      "date": "March 29, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Spooner, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2535",
+      "case_no": "2535",
+      "date": "April 8, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Fukuoka, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2542",
+      "case_no": "2542",
+      "date": "April 15, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Tucson, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2555",
+      "case_no": "2555",
+      "date": "May 1, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Goose AFB, Labrador",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2577",
+      "case_no": "2577",
+      "date": "May 27, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2601",
+      "case_no": "2601",
+      "date": "June 22, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Goose AFB, Labrador",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2605",
+      "case_no": "2605",
+      "date": "June 24, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Iwo Jima",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2606",
+      "case_no": "2606",
+      "date": "June 24, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Simiutak, Greenland",
+      "country": "Greenland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2663",
+      "case_no": "2663",
+      "date": "August 3, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Amarillo, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2686",
+      "case_no": "2686",
+      "date": "August 20, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "California Area",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2692",
+      "case_no": "2692",
+      "date": "August 27, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Greenville, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2838",
+      "case_no": "2838",
+      "date": "December 17, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "Hassleholm, Sweden",
+      "country": "Sweden",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2840",
+      "case_no": "2840",
+      "date": "December 24, 1953",
+      "year": 1953,
+      "decade": "1950s",
+      "location": "El Cajon, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2844",
+      "case_no": "2844",
+      "date": "December 28, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Marysville, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2913",
+      "case_no": "2913",
+      "date": "February 26, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Newburyport, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2923",
+      "case_no": "2923",
+      "date": "March 2, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2926",
+      "case_no": "2926",
+      "date": "March 5, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Nouasseur, French Morocco",
+      "country": "Morocco",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2937",
+      "case_no": "2937",
+      "date": "March 12, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Nouasseur, French Morocco",
+      "country": "Morocco",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2962",
+      "case_no": "2962",
+      "date": "April 9, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Chicago, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2974",
+      "case_no": "2974",
+      "date": "April 23, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Pittsfield, Maine",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2976",
+      "case_no": "2976",
+      "date": "April 24, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Hartland, Maine",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2983",
+      "case_no": "2983",
+      "date": "April 26, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Athens, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2994",
+      "case_no": "2994",
+      "date": "May 10, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Elsinore, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-2997",
+      "case_no": "2997",
+      "date": "May 11, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Washington, D.C.",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3009",
+      "case_no": "3009",
+      "date": "May 22, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "La Porte, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3020",
+      "case_no": "3020",
+      "date": "May 31, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Concord, New Hampshire",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3029",
+      "case_no": "3029",
+      "date": "June 1, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Minneapolis, Minnesota 303'",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7",
+      "case_no": "7",
+      "date": "June 9, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Texarkana, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3042",
+      "case_no": "3042",
+      "date": "June 10, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Estacado, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3062",
+      "case_no": "3062",
+      "date": "June 22, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Miami Beach, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3067",
+      "case_no": "3067",
+      "date": "June 24, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Danvers, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3072",
+      "case_no": "3072",
+      "date": "June 25, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Indian Lake, Ohio",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3116",
+      "case_no": "3116",
+      "date": "July 18, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Normandy, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3140",
+      "case_no": "3140",
+      "date": "July 30, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Los Angeles, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3149",
+      "case_no": "3149",
+      "date": "August 2, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Westlake, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3155",
+      "case_no": "3155",
+      "date": "August 6, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "San Antonio, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3162",
+      "case_no": "3162",
+      "date": "August 11, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Pacific Ocean",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3166",
+      "case_no": "3166",
+      "date": "August 15, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "San Marcos, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3180",
+      "case_no": "3180",
+      "date": "August 24, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Lagarfiot River, Iceland",
+      "country": "Iceland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3182",
+      "case_no": "3182",
+      "date": "August 26, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Danville, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3185",
+      "case_no": "3185",
+      "date": "August 27, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Dorchester, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3189",
+      "case_no": "3189",
+      "date": "August 29, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Prince Christian, Greenland",
+      "country": "Greenland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3196",
+      "case_no": "3196",
+      "date": "September 5, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Butler, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3198",
+      "case_no": "3198",
+      "date": "September 5, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Butler, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3213",
+      "case_no": "3213",
+      "date": "September 18, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Kimpo AB, Korea",
+      "country": "Korea",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3222",
+      "case_no": "3222",
+      "date": "September 21, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Barstow, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3224",
+      "case_no": "3224",
+      "date": "September 21, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Santa Maria Airport, Azores",
+      "country": "Azores",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3226",
+      "case_no": "3226",
+      "date": "September 22, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Marshfield, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3227",
+      "case_no": "3227",
+      "date": "September 23, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Gatlinburg, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3260",
+      "case_no": "3260",
+      "date": "October 13, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Nouasseur, French Morocco",
+      "country": "Morocco",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3269",
+      "case_no": "3269",
+      "date": "October 15,16,17, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Kingfisher, Oklahoma",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3281",
+      "case_no": "3281",
+      "date": "October 28, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Miho AB, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3287",
+      "case_no": "3287",
+      "date": "October 29, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Azores",
+      "country": "Azores",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3326",
+      "case_no": "3326",
+      "date": "November 15, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Augusta, Maine",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3331",
+      "case_no": "3331",
+      "date": "November 19, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Corvallis, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3341",
+      "case_no": "3341",
+      "date": "November 28, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Manila, Philippines",
+      "country": "Philippines",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3352",
+      "case_no": "3352",
+      "date": "December 3, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Gulfport, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3356",
+      "case_no": "3356",
+      "date": "December 7, 1954",
+      "year": 1954,
+      "decade": "1950s",
+      "location": "Cape Province, South Africa",
+      "country": "Africa",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3382",
+      "case_no": "3382",
+      "date": "January 1, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Cochise, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3401",
+      "case_no": "3401",
+      "date": "January 26, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Lakeland, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3414",
+      "case_no": "3414",
+      "date": "February 1, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Cochise, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3416",
+      "case_no": "3416",
+      "date": "February 2, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Miramar NAS, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3427",
+      "case_no": "3427",
+      "date": "February 10, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Bethesda, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3517",
+      "case_no": "3517",
+      "date": "April 30, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Travis County, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3523",
+      "case_no": "3523",
+      "date": "May 4, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Keflavik Airport, Iceland",
+      "country": "Iceland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3565",
+      "case_no": "3565",
+      "date": "May 23, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Cheyenne, Wyoming",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3673",
+      "case_no": "3673",
+      "date": "July 29, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Columbus, Nebraska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3699",
+      "case_no": "3699",
+      "date": "August 11, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Iceland",
+      "country": "Iceland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3720",
+      "case_no": "3720",
+      "date": "August 23, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Arlington, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3743",
+      "case_no": "3743",
+      "date": "September 3, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Bellingham, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3750",
+      "case_no": "3750",
+      "date": "September 7, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Washington, D.C.",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3757",
+      "case_no": "3757",
+      "date": "September 9, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Rock Garden, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3800",
+      "case_no": "3800",
+      "date": "October 8, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Loogootee, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3810",
+      "case_no": "3810",
+      "date": "October 11, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Point Lookout, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3860",
+      "case_no": "3860",
+      "date": "November 17, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "St. Louis, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3862",
+      "case_no": "3862",
+      "date": "November 20, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Lake City, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3869",
+      "case_no": "3869",
+      "date": "November 25, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "LaVeta, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3993",
+      "case_no": "3993",
+      "date": "December 21, 1955",
+      "year": 1955,
+      "decade": "1950s",
+      "location": "Caribou, Maine",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3969",
+      "case_no": "3969",
+      "date": "February 12, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Goose Bay, Labrador",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-3977",
+      "case_no": "3977",
+      "date": "February 19, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Houston, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4050",
+      "case_no": "4050",
+      "date": "April 4, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "McKinney, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4127",
+      "case_no": "4127",
+      "date": "June 6, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Banning, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4270",
+      "case_no": "4270",
+      "date": "August 8, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "20 miles south of Quartsite, Arizona",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4348",
+      "case_no": "4348",
+      "date": "August 27, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Juniata, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4379",
+      "case_no": "4379",
+      "date": "September 4, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Dallas, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4399",
+      "case_no": "4399",
+      "date": "September 14, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Highland, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4489",
+      "case_no": "4489",
+      "date": "November 1, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "60 miles east of St. Louis, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4543",
+      "case_no": "4543",
+      "date": "November 30, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Charleston AFB, South Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4577",
+      "case_no": "4577",
+      "date": "December 31, 1956",
+      "year": 1956,
+      "decade": "1950s",
+      "location": "Guam",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4706",
+      "case_no": "4706",
+      "date": "April 25, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Ringgold, Louisiana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4760",
+      "case_no": "4760",
+      "date": "June 12, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Milan, Italy",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4841",
+      "case_no": "4841",
+      "date": "July 27, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Longmont, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4847",
+      "case_no": "4847",
+      "date": "July 29, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Cleveland, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4848",
+      "case_no": "4848",
+      "date": "July 29, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Oldsmar, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-4959",
+      "case_no": "4959",
+      "date": "September 20, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Kadena APB, Okinawa",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5003",
+      "case_no": "5003",
+      "date": "October 8, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Seattle, Washington",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5205",
+      "case_no": "5205",
+      "date": "November 6, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Boerne, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5227",
+      "case_no": "5227",
+      "date": "November 6, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Radium Springs, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5254",
+      "case_no": "5254",
+      "date": "November 8, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Merrick, Long Island, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5419",
+      "case_no": "5419",
+      "date": "November 26, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Robins AFB, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5445",
+      "case_no": "5445",
+      "date": "November 30, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "New Orleans, Louisiana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5545",
+      "case_no": "5545",
+      "date": "December 13, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Col Anahuac, Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5559",
+      "case_no": "5559",
+      "date": "December 17, 1957",
+      "year": 1957,
+      "decade": "1950s",
+      "location": "Fruita, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5716",
+      "case_no": "5716",
+      "date": "March 14, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Healdsburg, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5763",
+      "case_no": "5763",
+      "date": "April 14, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Lynchburg, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5800",
+      "case_no": "5800",
+      "date": "May 9, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Bohol Island, Philippines",
+      "country": "Philippines",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5852",
+      "case_no": "5852",
+      "date": "June 14, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Pueblo, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5857",
+      "case_no": "5857",
+      "date": "June 20, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Fort Bragg, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-5999",
+      "case_no": "5999",
+      "date": "August 17, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Warren, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6027",
+      "case_no": "6027",
+      "date": "September 1, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Wheelus AFB, Tripoli",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6089",
+      "case_no": "6089",
+      "date": "October 2, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Stroudsburg, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6148",
+      "case_no": "6148",
+      "date": "October 27, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Lock Raven Dam, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6153",
+      "case_no": "6153",
+      "date": "November 3, 1958",
+      "year": 1958,
+      "decade": "1950s",
+      "location": "Minot, North Dakota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6317",
+      "case_no": "6317",
+      "date": "March 26 or 27, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Corsica, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6400",
+      "case_no": "6400",
+      "date": "June 18, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Edmonton, Alberta, Canada",
+      "country": "Canada",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6409",
+      "case_no": "6409",
+      "date": "June 30, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Patuxent River, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6446",
+      "case_no": "6446",
+      "date": "July 25, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Irondequoit, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6462",
+      "case_no": "6462",
+      "date": "August 10, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Goose AFB, Labrador",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6506",
+      "case_no": "6506",
+      "date": "September 13, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Gills Rock, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6507",
+      "case_no": "6507",
+      "date": "September 13, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Bunker Hill AFB , Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6534",
+      "case_no": "6534",
+      "date": "October 1, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Telephone Ridge, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6538",
+      "case_no": "6538",
+      "date": "October 4, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Philippines",
+      "country": "Philippines",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6543",
+      "case_no": "6543",
+      "date": "October 6, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Lincoln, Nebraska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6563",
+      "case_no": "6563",
+      "date": "October 19, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "Plainville, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6600",
+      "case_no": "6600",
+      "date": "November 18, 1959",
+      "year": 1959,
+      "decade": "1950s",
+      "location": "South of Crystal Springs, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6663",
+      "case_no": "6663",
+      "date": "February 27, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Rome, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6667",
+      "case_no": "6667",
+      "date": "March 4, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Dubuque, Iowa",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6691",
+      "case_no": "6691",
+      "date": "March 23, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Indianapolis, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6711",
+      "case_no": "6711",
+      "date": "April 12, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "La Camp, Louisiana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6721",
+      "case_no": "6721",
+      "date": "April 17, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Richards, Gebaur AB, Missouri 672'",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7",
+      "case_no": "7",
+      "date": "April 25, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Shelby, Montana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6858",
+      "case_no": "6858",
+      "date": "July 19,20,21, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "St. Louis, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6914",
+      "case_no": "6914",
+      "date": "August 23, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Wichita, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6929",
+      "case_no": "6929",
+      "date": "August 29, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Crete, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-6962",
+      "case_no": "6962",
+      "date": "September 10, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Ridgecrest, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7057",
+      "case_no": "7057",
+      "date": "October 5, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Mount Kisco, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7133",
+      "case_no": "7133",
+      "date": "November 27, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "Chula Vista, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7134",
+      "case_no": "7134",
+      "date": "November 29, 1960",
+      "year": 1960,
+      "decade": "1960s",
+      "location": "South of Kyushu, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7284",
+      "case_no": "7284",
+      "date": "February 27, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Bark River, Michigan 7321 Spring 1961 Kemah, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7359",
+      "case_no": "7359",
+      "date": "April 24, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "35'-50' N 125'40' W (Pacific)",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7417",
+      "case_no": "7417",
+      "date": "May 22, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Tyndall AFB, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7437",
+      "case_no": "7437",
+      "date": "June 2, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Miyako Jima Air Station, Japan",
+      "country": "Japan/Pacific",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7491",
+      "case_no": "7491",
+      "date": "July 7, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Copemiah, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7499",
+      "case_no": "7499",
+      "date": "July 11, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Springfield, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7510",
+      "case_no": "7510",
+      "date": "July 20, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Houston, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7579",
+      "case_no": "7579",
+      "date": "August 12, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Kansas City, Kansas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7741",
+      "case_no": "7741",
+      "date": "November 21, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Oldtown, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7742",
+      "case_no": "7742",
+      "date": "November 23, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Sioux City, Iowa",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7754",
+      "case_no": "7754",
+      "date": "December 13, 1961",
+      "year": 1961,
+      "decade": "1960s",
+      "location": "Washington, D.C.",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7818",
+      "case_no": "7818",
+      "date": "February 25, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Kotzebue, Alaska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7823",
+      "case_no": "7823",
+      "date": "March 1, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Salem, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7840",
+      "case_no": "7840",
+      "date": "March 26, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Ramstein AFB, Germany",
+      "country": "Germany",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7841",
+      "case_no": "7841",
+      "date": "March 26, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Naperville, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7851",
+      "case_no": "7851",
+      "date": "April 4, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Wurtland, Kentucky",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7930",
+      "case_no": "7930",
+      "date": "May 26, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Westfield, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7931",
+      "case_no": "7931",
+      "date": "May 27, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Palmer, Alaska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7957",
+      "case_no": "7957",
+      "date": "June 21, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Indianapolis, Indiana",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-7968",
+      "case_no": "7968",
+      "date": "June 30-July 1, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Richmond, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8020",
+      "case_no": "8020",
+      "date": "July 19, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Metuchen, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8034",
+      "case_no": "8034",
+      "date": "July 30, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Ocean Springs, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8064",
+      "case_no": "8064",
+      "date": "August 19, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Bermuda",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8133",
+      "case_no": "8133",
+      "date": "September 21, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "WSW of Biloxi, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8182",
+      "case_no": "8182",
+      "date": "October 23, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Farmington, Utah (\"Duck Hunter Case\")",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8215",
+      "case_no": "8215",
+      "date": "November 17, 1962",
+      "year": 1962,
+      "decade": "1960s",
+      "location": "Tampa, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8360",
+      "case_no": "8360",
+      "date": "May 18, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "New Plymouth, New Zealand",
+      "country": "New Zealand",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8363",
+      "case_no": "8363",
+      "date": "May 22, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Pequannock, New Jersey 8371 Summer 1963 Middletown, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8388",
+      "case_no": "8388",
+      "date": "June 15, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "14'-17\" N 69'57\" E (Indian Ocean)",
+      "country": "India",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8434",
+      "case_no": "8434",
+      "date": "July 1, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Glen Ellyn, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8506",
+      "case_no": "8506",
+      "date": "August 11, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Warrenville, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8514",
+      "case_no": "8514",
+      "date": "August 13-14, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "St. Calen, Switzerland",
+      "country": "Switzerland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8548",
+      "case_no": "8548",
+      "date": "September 14. 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Susanville, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8549",
+      "case_no": "8549",
+      "date": "September 15, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Vandalia, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8581",
+      "case_no": "8581",
+      "date": "October 4, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Bedford, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8603",
+      "case_no": "8603",
+      "date": "October 23, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Meridian, Idaho",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8604",
+      "case_no": "8604",
+      "date": "October 24, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "Cupar Fife, Scotland",
+      "country": "Scotland",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8647",
+      "case_no": "8647",
+      "date": "December 11, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "McMinnville, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8654",
+      "case_no": "8654",
+      "date": "December 16, 1963",
+      "year": 1963,
+      "decade": "1960s",
+      "location": "40'-00\" N 175'54\" W (Pacific)",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8729",
+      "case_no": "8729",
+      "date": "April 3, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Monticello, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8739",
+      "case_no": "8739",
+      "date": "April 11. 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Homer, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8766",
+      "case_no": "8766",
+      "date": "April 24, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Socorro, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8787",
+      "case_no": "8787",
+      "date": "May 9, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Asheville, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8788",
+      "case_no": "8788",
+      "date": "May 9, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Chicago, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8811",
+      "case_no": "8811",
+      "date": "May 18, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Mount Vernon, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8836",
+      "case_no": "8836",
+      "date": "May 26, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Cambridge, Massachusetts",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8839",
+      "case_no": "8839",
+      "date": "May 26, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Pleasantview, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8870",
+      "case_no": "8870",
+      "date": "June 13, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Toledo, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8924",
+      "case_no": "8924",
+      "date": "July 16, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "15 miles south of Houghton Lake, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8942",
+      "case_no": "8942",
+      "date": "July 20, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Clinton, Iowa--Littleton, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8969",
+      "case_no": "8969",
+      "date": "July 27, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Norwich, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-8973",
+      "case_no": "8973",
+      "date": "July 27, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Denver, Colorado",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9031",
+      "case_no": "9031",
+      "date": "August 10, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Wake Island",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9048",
+      "case_no": "9048",
+      "date": "August 15, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "New York City, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9049",
+      "case_no": "9049",
+      "date": "August 15, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Yosemite Park, California",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9053",
+      "case_no": "9053",
+      "date": "August I8, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "200 miles east of Dover (Atlantic)",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9104",
+      "case_no": "9104",
+      "date": "September 10, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Cedar Grove, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9170",
+      "case_no": "9170",
+      "date": "November 14, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "Menomonee Falls, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9183",
+      "case_no": "9183",
+      "date": "November 19, 1964",
+      "year": 1964,
+      "decade": "1960s",
+      "location": "34'55\" N 164'05\" E (Pacific)",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9242",
+      "case_no": "9242",
+      "date": "January 23, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Williamsburg, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9301",
+      "case_no": "9301",
+      "date": "March 4, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Corvallis, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9305",
+      "case_no": "9305",
+      "date": "March 8, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Mount Airy, Maryland",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9345",
+      "case_no": "9345",
+      "date": "April 4, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Keesler AFB, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9389",
+      "case_no": "9389",
+      "date": "May 7, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Oxford, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9474",
+      "case_no": "9474",
+      "date": "July 6, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Kiel, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9550",
+      "case_no": "9550",
+      "date": "July 25, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Castalia, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9675",
+      "case_no": "9675",
+      "date": "August 4, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Dallas, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9680",
+      "case_no": "9680",
+      "date": "August 4, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Tinley Park, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9806",
+      "case_no": "9806",
+      "date": "August 19, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Cheffy Creek, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9864",
+      "case_no": "9864",
+      "date": "August 30, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Urbana, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9890",
+      "case_no": "9890",
+      "date": "September 2-3, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Exeter, New Hampshire",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9915",
+      "case_no": "9915",
+      "date": "September 3, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Damon, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9970",
+      "case_no": "9970",
+      "date": "September 25, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Chisholm, Minnesota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-9971",
+      "case_no": "9971",
+      "date": "September 25, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Rodio, New Mexico",
+      "country": "Mexico",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10066",
+      "case_no": "10066",
+      "date": "November 4, 1965",
+      "year": 1965,
+      "decade": "1960s",
+      "location": "Middletown, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10193",
+      "case_no": "10193",
+      "date": "February 2, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Salisbury, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10196",
+      "case_no": "10196",
+      "date": "February 6, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Nederland, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10247",
+      "case_no": "10247",
+      "date": "March 20, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Mims, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10262",
+      "case_no": "10262",
+      "date": "March 22, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Houston, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10270",
+      "case_no": "10270",
+      "date": "March 23, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Temple, Oklahoma",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10291",
+      "case_no": "10291",
+      "date": "March 26, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Texahoma, Oklahoma",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10329",
+      "case_no": "10329",
+      "date": "March 30, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Ottawa, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10384",
+      "case_no": "10384",
+      "date": "April 5, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Alto, Tennessee",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10385",
+      "case_no": "10385",
+      "date": "April 5, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Lycoming, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10535",
+      "case_no": "10535",
+      "date": "May 7, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Goodfellow AFB, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10626",
+      "case_no": "10626",
+      "date": "June 6, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Spooner, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10629",
+      "case_no": "10629",
+      "date": "June 8, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Kansas, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10663",
+      "case_no": "10663",
+      "date": "June 18, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Burnsville, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10693",
+      "case_no": "10693",
+      "date": "June 27, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "19' N 172\" E (Pacific)",
+      "country": "International Waters",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10739",
+      "case_no": "10739",
+      "date": "July 11, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Union, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10781",
+      "case_no": "10781",
+      "date": "July 25, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Vanceboro, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10798",
+      "case_no": "10798",
+      "date": "July 31, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Presque Isle State Park, Pennsylvania",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10872",
+      "case_no": "10872",
+      "date": "August 19, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Donnybrook, North Dakota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10888",
+      "case_no": "10888",
+      "date": "August 23, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Columbus, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10899",
+      "case_no": "10899",
+      "date": "August 26, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Gaylesville, Alabama",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10917",
+      "case_no": "10917",
+      "date": "September 1, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Willsboro, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10933",
+      "case_no": "10933",
+      "date": "September 6, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Suffolk County AFB, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10942",
+      "case_no": "10942",
+      "date": "September 9, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Franklin Springs, New York",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10944",
+      "case_no": "10944",
+      "date": "September 13, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Gwinner, North Dakota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10973",
+      "case_no": "10973",
+      "date": "September 28, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Wilmington, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-10996",
+      "case_no": "10996",
+      "date": "October 5, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Osceola, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11092",
+      "case_no": "11092",
+      "date": "October 26, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Cold Bay AFS, Alaska",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11135",
+      "case_no": "11135",
+      "date": "November 8, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Saginaw, Minnesota",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11239",
+      "case_no": "11239",
+      "date": "December 25, 1966",
+      "year": 1966,
+      "decade": "1960s",
+      "location": "Monroe, Oregon",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11350",
+      "case_no": "11350",
+      "date": "February 9, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Odessa, Delaware",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11355",
+      "case_no": "11355",
+      "date": "February 12, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Grand Rapids, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11383",
+      "case_no": "11383",
+      "date": "February 16, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Stoughton, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11394",
+      "case_no": "11394",
+      "date": "February 20, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Oxford, Wisconsin",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11419",
+      "case_no": "11419",
+      "date": "February 27, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Grand Haven, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11454",
+      "case_no": "11454",
+      "date": "March 6, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Bentor Harbor, Michigan",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11460",
+      "case_no": "11460",
+      "date": "March 6-11, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Galesburg, Moline, Illinois",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11480",
+      "case_no": "11480",
+      "date": "March 9, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Onawa, lowa",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11541",
+      "case_no": "11541",
+      "date": "March 22, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Wapello, Iowa",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11551",
+      "case_no": "11551",
+      "date": "March 24, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Belt, Montana",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11559",
+      "case_no": "11559",
+      "date": "March 26, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "New Winchester, Ohio",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11677",
+      "case_no": "11677",
+      "date": "April 21, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "South Hill, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11744",
+      "case_no": "11744",
+      "date": "May 17, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Rural Hall, North Carolina",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11815",
+      "case_no": "11815",
+      "date": "June 24, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Austin, Texas",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11831",
+      "case_no": "11831",
+      "date": "June 29, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Scotch Plain, New Jersey",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-11869",
+      "case_no": "11869",
+      "date": "July 10, 1967",
+      "year": 1967,
+      "decade": "1960s",
+      "location": "Lizelia, Mississippi",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-12235",
+      "case_no": "12235",
+      "date": "February 9, 1968",
+      "year": 1968,
+      "decade": "1960s",
+      "location": "Groveton, Missouri",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-12498",
+      "case_no": "12498",
+      "date": "September 15, 1968",
+      "year": 1968,
+      "decade": "1960s",
+      "location": "Ocala, Florida",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-12567",
+      "case_no": "12567",
+      "date": "November 23, 1968",
+      "year": 1968,
+      "decade": "1960s",
+      "location": "Newton, Georgia",
+      "country": "USA",
+      "status": "unidentified"
+    },
+    {
+      "id": "bb-12607",
+      "case_no": "12607",
+      "date": "January 17, 1969",
+      "year": 1969,
+      "decade": "1960s",
+      "location": "Crittendon, Virginia",
+      "country": "USA",
+      "status": "unidentified"
+    }
+  ]
+}

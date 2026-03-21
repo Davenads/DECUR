@@ -6726,5 +6726,246 @@
         "notes": "Original Air Force intelligence report; available through NARA."
       }
     ]
+  },
+  {
+    "id": "exeter-1965",
+    "name": "Exeter, New Hampshire Incident",
+    "date": "September 3, 1965",
+    "location": "Exeter, New Hampshire, USA",
+    "country": "USA",
+    "category": "ground-visual",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "A prolonged close-range encounter near Exeter, New Hampshire involving a police officer, a civilian, and a large low-flying craft with brilliant flashing lights. The incident lasted over two hours, involved multiple independent witnesses including two police officers, and generated an official Project Blue Book investigation that ultimately classified it 'Unidentified' (Case 9890). John Fuller's subsequent book 'Incident at Exeter' (1966) made it one of the most thoroughly documented civilian UAP cases of the era.",
+    "tags": ["blue-book", "1960s", "police-witness", "close-encounter", "new-england", "ground-visual", "multiple-witnesses"],
+    "insider_connections": [],
+    "coordinates": { "lat": 42.9814, "lng": -70.9478 },
+    "overview": {
+      "key_facts": [
+        "Primary encounter lasted approximately two hours beginning around 2:00 AM on September 3, 1965",
+        "Witnesses included civilian Norman Muscarello and two Exeter police officers - Eugene Bertrand Jr. and David Hunt",
+        "Object described as roughly 100 feet across, with five brilliant red lights pulsing in sequence, hovering 100-200 feet above a field",
+        "Bertrand had earlier that evening spoken with a woman who flagged him down, frightened, claiming a craft had followed her car for miles - providing an independent prior encounter",
+        "The object maneuvered silently, tilting and dipping, before moving off toward Hampton",
+        "Both officers filed official reports; Bertrand and Hunt subsequently wrote to the Air Force disputing Blue Book's attempted explanations",
+        "Project Blue Book classified the case 'Unidentified' (Case 9890) after failing to establish a conventional explanation",
+        "John Fuller investigated and published 'Incident at Exeter' (Putnam, 1966), providing the most thorough documentary record of the case"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Official Project Blue Book case file - Case 9890 (1965)",
+        "Police officer incident reports filed by Bertrand and Hunt with Exeter PD",
+        "Letter from officers Bertrand and Hunt to USAF challenging Blue Book's explanations",
+        "John Fuller - 'Incident at Exeter' (G.P. Putnam's Sons, 1966)"
+      ],
+      "physical": []
+    },
+    "witnesses": [
+      {
+        "name": "Norman Muscarello",
+        "role": "Civilian, 18-year-old hitchhiker",
+        "type": "civilian",
+        "testimony": "Encountered a large craft with five brilliant red lights hovering 100-200 feet above a field while walking along Route 150 near Exeter. The object swooped toward him repeatedly; he sheltered in a ditch and flagged down a passing car to reach the police station. Was visibly shaken when he arrived and requested to return to the location with an officer."
+      },
+      {
+        "name": "Officer Eugene Bertrand Jr.",
+        "role": "Exeter Police Department patrol officer",
+        "type": "law-enforcement",
+        "testimony": "Responded to the scene with Muscarello. Witnessed the same object at close range - described as a dark solid body larger than a house, carrying rows of brilliant red lights that pulsed in a left-to-right sequence. The horses in the adjacent field were highly agitated. Object hovered silently, then began tilting and swooping before departing. Later wrote to the Air Force disputing their explanations and stating categorically that the object was not a conventional aircraft, star, or weather phenomenon."
+      },
+      {
+        "name": "Officer David Hunt",
+        "role": "Exeter Police Department patrol officer",
+        "type": "law-enforcement",
+        "testimony": "Arrived on scene shortly after Bertrand and Muscarello and independently witnessed the object before it departed toward Hampton. Corroborated Bertrand's account in full in official statements."
+      }
+    ],
+    "official_response": {
+      "agencies": ["U.S. Air Force", "Project Blue Book"],
+      "statements": [
+        {
+          "source": "Project Blue Book",
+          "date": "1965",
+          "statement": "Case 9890 officially classified 'Unidentified.' Initial attempts to explain the sightings as 'keto-2 operation' (military aircraft on night maneuvers) and as 'stars and planets' were flatly rejected by the witnessing officers in written correspondence to the Air Force."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Three independent adult witnesses including two sworn law enforcement officers",
+        "The primary encounter lasted over two hours with witnesses at distances of 100-500 feet",
+        "An independent prior encounter the same night - a frightened woman who flagged down Bertrand's patrol car - established a pattern before the primary witnesses arrived",
+        "Both officers' official police reports, filed the same night, are consistent with each other and with Muscarello's account",
+        "Officers Bertrand and Hunt wrote formally to the Air Force to dispute its attempted explanations, citing specific reasons each was impossible",
+        "Project Blue Book itself ultimately classified the case 'Unidentified' after failing to find a satisfactory explanation",
+        "John Fuller's on-the-ground investigation within weeks of the incident produced extensive corroborating interviews and documentation"
+      ],
+      "contradicting": [
+        "No photographic or physical trace evidence was collected",
+        "The Air Force's initial suggestion of B-47 aircraft on maneuver, while rejected by the witnesses, has not been exhaustively eliminated by independent research",
+        "As with all visual-only ground cases from this era, the full investigation record is from scanned documents with no digital primary-source access for independent verification"
+      ]
+    },
+    "competing_hypotheses": [
+      {
+        "name": "Unknown Structured Craft",
+        "assessment": "probable",
+        "summary": "A structured craft of unknown origin exhibiting flight characteristics inconsistent with known aircraft of the period hovered at low altitude over Exeter.",
+        "evidence_for": ["Three independent witnesses including two police officers", "Duration and proximity of observation", "Blue Book classification as Unidentified", "Witness rejection of conventional aircraft explanation based on direct experience"],
+        "evidence_against": ["No physical or photographic evidence", "Single isolated incident with no radar confirmation"]
+      },
+      {
+        "name": "Military Aircraft (Night Maneuver)",
+        "assessment": "unlikely",
+        "summary": "Classified military aircraft on night training operations accounted for the observation.",
+        "evidence_for": ["Strategic Air Command was conducting operations in the region"],
+        "evidence_against": ["Officers Bertrand and Hunt specifically rejected this explanation citing the object's silence, hovering behavior, and flight characteristics", "Blue Book itself abandoned this explanation and reclassified as Unidentified"]
+      }
+    ],
+    "claims_taxonomy": {
+      "verified": ["Police officers filed official reports the same night", "Blue Book classified the case Unidentified (Case 9890)", "Officers wrote to the Air Force disputing its initial explanations"],
+      "probable": ["Object exhibited unconventional flight characteristics including silent hovering and rapid directional changes"],
+      "disputed": ["Whether the prior witness (woman in car) saw the same object"],
+      "speculative": ["Nature, origin, or purpose of the observed craft"]
+    },
+    "sources": [
+      {
+        "title": "Incident at Exeter - John G. Fuller (1966)",
+        "url": "https://www.amazon.com/dp/0399105026",
+        "type": "Book",
+        "notes": "Primary investigative account; Fuller conducted on-the-ground investigation within weeks of the incident (G.P. Putnam's Sons, 1966)"
+      },
+      {
+        "title": "NICAP - Exeter, NH Case Summary",
+        "url": "https://www.nicap.org/directions/directions11.htm",
+        "type": "Research",
+        "notes": "NICAP case file with investigative notes and officer correspondence"
+      },
+      {
+        "title": "Project Blue Book Case 9890",
+        "url": "https://www.theprojectbluebookarchive.org/",
+        "type": "Government Document",
+        "notes": "Official USAF investigation record; classified Unidentified"
+      }
+    ]
+  },
+  {
+    "id": "loch-raven-dam-1958",
+    "name": "Loch Raven Dam Encounter",
+    "date": "October 26-27, 1958",
+    "location": "Loch Raven Dam, Baltimore County, Maryland, USA",
+    "country": "USA",
+    "category": "ground-visual",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "Two engineers driving near Loch Raven Dam outside Baltimore encountered a large egg-shaped craft hovering over the bridge spanning the dam. Their car engine and headlights failed as they approached. The object emitted intense heat and light before ascending rapidly with a loud sound. Both men suffered radiation-type skin burns requiring medical treatment. Project Blue Book investigated and classified the case 'Unidentified' (Case 6148). It remains one of the best-documented vehicle electromagnetic effect (EME) cases in the Blue Book archive.",
+    "tags": ["blue-book", "1950s", "electromagnetic-effects", "vehicle-interference", "radiation-burns", "maryland", "close-encounter", "physical-effects"],
+    "insider_connections": [],
+    "coordinates": { "lat": 39.4668, "lng": -76.5614 },
+    "overview": {
+      "key_facts": [
+        "Witnesses Alvin Cohen and Philip Small were driving near Loch Raven Dam at approximately 10:30 PM",
+        "Object described as roughly 100 feet long, egg-shaped, hovering 75-100 feet above the bridge",
+        "Car engine and headlights failed completely as they approached within 75-80 feet of the object",
+        "Witnesses exited the vehicle and observed the object for 30-40 seconds; intense heat was felt on their faces",
+        "Object then flared brilliantly white, rose rapidly with a loud thunderclap-like sound, and disappeared",
+        "Both men reported to hospital the same night with sunburn-like redness on their faces and hands",
+        "Symptoms described by the examining physician as consistent with radiation exposure",
+        "Project Blue Book classified the case 'Unidentified' (Case 6148)"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Project Blue Book Case File 6148 (1958)",
+        "Medical examination records from hospital visit same night",
+        "NICAP investigation file"
+      ],
+      "physical": [
+        "Radiation-type skin burns on both witnesses - documented by physician the same night"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Alvin Cohen",
+        "role": "Civilian engineer",
+        "type": "civilian",
+        "testimony": "Described a large glowing egg-shaped object hovering over the bridge. The car died completely as they approached. He got out of the car and felt intense heat radiating from the object. After it departed, both he and Small drove to report the incident and then went to the hospital for the burns they had developed."
+      },
+      {
+        "name": "Philip Small",
+        "role": "Civilian engineer",
+        "type": "civilian",
+        "testimony": "Corroborated Cohen's account in full. Both men were interviewed separately and gave consistent accounts. Medical evaluation the same night confirmed skin redness consistent with radiation or intense heat exposure."
+      }
+    ],
+    "official_response": {
+      "agencies": ["U.S. Air Force", "Project Blue Book"],
+      "statements": [
+        {
+          "source": "Project Blue Book",
+          "date": "1958",
+          "statement": "Case 6148 classified 'Unidentified.' The combination of vehicle electromagnetic effects, witness physical injury, and the object's observed flight characteristics could not be explained by conventional means."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Two witnesses with professional engineering backgrounds observed the object independently",
+        "Vehicle electromagnetic effects (engine and headlights failing) provide a physical correlation with the object's proximity",
+        "Physical injury - documented by a physician the same night - provides objective medical evidence",
+        "Accounts of both witnesses were consistent when interviewed separately",
+        "Project Blue Book's own investigators could not explain the case and classified it Unidentified"
+      ],
+      "contradicting": [
+        "No photographs or independent sensor data were obtained",
+        "The medical records have not been independently published; the physician's assessment is known only through investigative accounts",
+        "Vehicle electromagnetic effect cases present inherent attribution challenges - engine failure and UAP proximity could be coincidental"
+      ]
+    },
+    "competing_hypotheses": [
+      {
+        "name": "Unknown Craft with Electromagnetic Emission",
+        "assessment": "probable",
+        "summary": "An unknown craft generating electromagnetic fields sufficient to disable vehicle electronics and emit heat intense enough to cause skin burns hovered over the Loch Raven Dam bridge.",
+        "evidence_for": ["Corroborated vehicle EME", "Documented physical injuries", "Blue Book Unidentified classification", "Consistent independent witness accounts"],
+        "evidence_against": ["No physical trace evidence at site", "No photographs"]
+      },
+      {
+        "name": "Ball Lightning or Atmospheric Phenomenon",
+        "assessment": "unlikely",
+        "summary": "A large atmospheric electrical phenomenon produced the observed effects.",
+        "evidence_for": ["Atmospheric phenomena can produce light, heat, and localized electromagnetic effects"],
+        "evidence_against": ["Duration and structured shape inconsistent with ball lightning", "Witnessed controlled ascent and departure inconsistent with atmospheric dissipation"]
+      }
+    ],
+    "claims_taxonomy": {
+      "verified": ["Both witnesses sought medical attention the same night", "Blue Book classified the case Unidentified (Case 6148)", "Vehicle engine and headlights failed in proximity to the object"],
+      "probable": ["Physical injuries were caused by radiation or heat from the object"],
+      "disputed": ["Exact size and shape of the object"],
+      "speculative": ["Nature and origin of the craft"]
+    },
+    "sources": [
+      {
+        "title": "Project Blue Book Case 6148",
+        "url": "https://www.theprojectbluebookarchive.org/",
+        "type": "Government Document",
+        "notes": "Official USAF investigation record; classified Unidentified"
+      },
+      {
+        "title": "NICAP - Loch Raven Dam Case Summary",
+        "url": "https://www.nicap.org/581026dir.htm",
+        "type": "Research",
+        "notes": "NICAP investigative file with witness interview notes and medical documentation summary"
+      },
+      {
+        "title": "UFOs: The Government Files - Peter Brookesmith (1996)",
+        "url": "https://www.amazon.com/UFOs-Government-Files-Peter-Brookesmith/dp/0517188805",
+        "type": "Book",
+        "notes": "Includes documented analysis of the Loch Raven Dam case as a landmark physical effects case"
+      }
+    ]
   }
 ]
