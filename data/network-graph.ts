@@ -837,5 +837,11 @@ export const graphData: GraphData = {
     // Jeremy Corbell additional connections (base edges pre-exist in graph)
     { source: 'jeremy-corbell', target: 'tim-gallaudet',  label: 'Gallaudet specifically cited Corbell\'s USS Omaha footage release as significant to naval UAP awareness efforts, the most direct institutional endorsement of his work from a credentialed senior military officer' },
     { source: 'jeremy-corbell', target: 'tim-burchett',   label: 'Burchett entered the Corbell-Knapp UAP Puzzle document into the Congressional Record during the August 2023 House UAP hearing as official congressional documentation' },
+
+    // Whitley Strieber connections
+    { source: 'whitley-strieber', target: 'john-mack',     label: 'subject of Harvard abduction research; Mack found no evidence of fabrication' },
+    { source: 'whitley-strieber', target: 'jacques-vallee', label: 'long-term Dreamland collaborator; shared view of genuine anomalous contact reality' },
+    { source: 'whitley-strieber', target: 'hal-puthoff',   label: 'Dreamland guest; parallel investigations of anomalous phenomena' },
+    { source: 'whitley-strieber', target: 'george-knapp',  label: 'Dreamland platform and overlapping UAP research community' },
   ],
 };

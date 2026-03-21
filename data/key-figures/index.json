@@ -1400,5 +1400,19 @@
     "data_file": "jeremy-corbell.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "whitley-strieber",
+    "name": "Whitley Strieber",
+    "aliases": ["Louis Whitley Strieber"],
+    "role": "Author - Communion (1987); host, Dreamland podcast",
+    "period": "1987-present",
+    "affiliation": "Unknown Country; Dreamland",
+    "summary": "Author of 'Communion' (1987), the most widely read first-person account of a contact experience ever published, which became an international bestseller and gave millions of experiencers language and cultural permission to acknowledge their own encounters. Founder of the Dreamland platform hosting UAP researchers including Vallee, Puthoff, Pasulka, and Semivan. His personal archive is held at Rice University's Woodson Research Center.",
+    "status": "detailed",
+    "tags": ["author", "experiencer", "communion", "contact", "abduction", "dreamland", "unknowncountry"],
+    "data_file": "whitley-strieber.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]
