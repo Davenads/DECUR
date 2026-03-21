@@ -1274,5 +1274,19 @@
     "data_file": "michael-herrera.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "barry-goldwater",
+    "name": "Sen. Barry Goldwater",
+    "aliases": ["Barry Morris Goldwater", "Mr. Conservative"],
+    "role": "U.S. Senator, Arizona; Chairman, Senate Armed Services Committee",
+    "period": "1953-1987",
+    "affiliation": "U.S. Senate; U.S. Air Force Reserve",
+    "summary": "U.S. Senator from Arizona for over three decades, USAF Major General, and Senate Armed Services Committee Chairman who repeatedly and publicly stated that the U.S. government held classified UAP evidence and denied him personal access. His confrontation with General Curtis LeMay over the 'Blue Room' at Wright-Patterson AFB - documented in a 1975 letter now held by the National Archives - remains one of the most significant political admissions in UAP disclosure history.",
+    "status": "detailed",
+    "tags": ["government", "senate", "usaf", "wright-patterson", "blue-room", "access-denial", "cover-up"],
+    "data_file": "barry-goldwater.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]
