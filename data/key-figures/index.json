@@ -1316,5 +1316,19 @@
     "data_file": "edgar-mitchell.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "tom-delonge",
+    "name": "Tom DeLonge",
+    "aliases": ["Thomas Matthew DeLonge Jr."],
+    "role": "Founder, To The Stars Academy of Arts & Science (TTSA)",
+    "period": "2017-2021",
+    "affiliation": "To The Stars Academy; To The Stars Inc.",
+    "summary": "Founder of To The Stars Academy and the private citizen most responsible for the modern UAP disclosure era. Despite no institutional credentials, DeLonge assembled an unprecedented civilian team of former senior government officials and coordinated the December 2017 New York Times disclosure that forced the Pentagon's first public acknowledgment of UAP program funding. His pre-TTSA WikiLeaks emails to John Podesta document verified meetings with active USAF generals and Lockheed Skunk Works executives.",
+    "status": "detailed",
+    "tags": ["ttsa", "disclosure", "navy-videos", "blink-182", "podesta-emails", "nyt-2017", "crada"],
+    "data_file": "tom-delonge.json",
+    "type": "executive",
+    "includeInExplore": true
   }
 ]

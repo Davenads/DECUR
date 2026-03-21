@@ -796,6 +796,14 @@ export const graphData: GraphData = {
     { source: 'edgar-mitchell', target: 'steven-greer',   label: 'participated in the 2001 Disclosure Project NPC event before publicly distancing himself, stating Greer had mischaracterized him as a direct UAP witness' },
     { source: 'edgar-mitchell', target: 'jacques-vallee', label: 'conference circuit contemporaries who shared the view that UAP warranted rigorous scientific investigation across overlapping decades of credentialed research' },
 
+    // Tom DeLonge connections
+    { source: 'tom-delonge', target: 'ttsa',             label: 'founded, serves as President and CEO; assembled the advisory team that made TTSA the vehicle for the 2017 UAP disclosure' },
+    { source: 'tom-delonge', target: 'luis-elizondo',    label: "recruited Elizondo to TTSA immediately upon his Pentagon resignation; Elizondo is the primary figure through whom DeLonge obtained the Navy UAP videos that drove the December 2017 NYT disclosure" },
+    { source: 'tom-delonge', target: 'chris-mellon',     label: 'co-designed the 2017 NYT disclosure strategy; Mellon provided the congressional and DoD institutional network that ensured the release had maximum official impact' },
+    { source: 'tom-delonge', target: 'hal-puthoff',      label: 'recruited Puthoff as TTSA Vice President of Science and Technology; provided scientific and classified-program credibility that DeLonge could not supply himself' },
+    { source: 'tom-delonge', target: 'jim-semivan',      label: 'recruited Semivan as TTSA Vice President of Operations; Semivan\'s CIA/NCS background gave TTSA intelligence community institutional credibility' },
+    { source: 'tom-delonge', target: 'nimitz-tic-tac',   label: 'coordinated the public release of the FLIR1 Tic Tac video in December 2017 alongside the NYT article, making it the first officially acknowledged UAP footage in modern U.S. history' },
+
     // Barry Goldwater connections
     { source: 'barry-goldwater', target: 'nathan-twining',  label: "Twining's classified UAP protocols at Wright-Patterson established the secrecy culture that produced the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay" },
     { source: 'barry-goldwater', target: 'james-mcdonald',  label: 'McDonald corresponded with Goldwater as part of his systematic campaign to engage members of Congress on UAP as a legitimate scientific matter in the late 1960s' },

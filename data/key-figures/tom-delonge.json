@@ -1,0 +1,202 @@
+{
+  "profile": {
+    "id": "tom-delonge",
+    "name": "Tom DeLonge",
+    "aliases": ["Thomas Matthew DeLonge Jr.", "Tom DeLonge"],
+    "born": "December 13, 1975 - Poway, California",
+    "died": null,
+    "roles": [
+      "Founder, President & CEO, To The Stars Academy of Arts & Science (TTSA)",
+      "Co-founder, Blink-182",
+      "Author - Sekret Machines series (2016-present)"
+    ],
+    "service_period": "2017-2021 (TTSA active UAP research operations)",
+    "organizations": [
+      "To The Stars Academy of Arts & Science (TTSA)",
+      "To The Stars Inc."
+    ],
+    "clearance": null,
+    "summary": "Founder of To The Stars Academy of Arts & Science (TTSA) and the single most consequential private citizen in the modern UAP disclosure sequence. Despite holding no military, scientific, or intelligence credentials, DeLonge assembled an unprecedented civilian team of former senior government officials - including Luis Elizondo, Christopher Mellon, Hal Puthoff, Jim Semivan, and former Lockheed Skunk Works director Steve Justice - and coordinated the December 2017 New York Times disclosure that launched the modern era of government UAP acknowledgment. His pre-TTSA WikiLeaks-published emails to presidential campaign chairman John Podesta document verified meetings with active USAF general officers and Lockheed senior executives, providing primary source evidence of his government network. In 2019 TTSA signed a formal Cooperative Research and Development Agreement (CRADA) with the U.S. Army, the first official government agreement to study materials alleged to originate from UAP encounters.",
+    "education": [
+      "Poway High School (attended; did not graduate)",
+      "No post-secondary academic credentials"
+    ],
+    "early_career": [
+      "Co-founded Blink-182 in San Diego in 1992; the band became one of the best-selling rock acts of the late 1990s and 2000s, providing the platform and financial resources for his later government outreach",
+      "Began privately researching UAP and attempting to contact senior military and government officials approximately 2006-2007, motivated by a personal conviction that the subject was real and that disclosure required institutional cooperation rather than confrontation",
+      "Spent roughly a decade building relationships with former and active senior military and intelligence officials before TTSA was incorporated"
+    ],
+    "key_events": [
+      {
+        "year": "1992",
+        "event": "Co-founded Blink-182 in Poway, California. The band's commercial success would eventually provide the financial and cultural platform for his UAP advocacy work."
+      },
+      {
+        "year": "2015",
+        "event": "Sent multiple emails to John Podesta, chairman of Hillary Clinton's presidential campaign, expressing his desire to brief the incoming administration on UAP and requesting introductions to senior military and government officials. The emails - later published by WikiLeaks - also document already-completed meetings with USAF Major General Neil McCasland (described as 'the guy who oversees the [UFO] program'), USAF Major General Michael J. Carey (former ICBM force commander), and senior Lockheed Skunk Works executive Robert Weiss. These emails are primary source evidence of DeLonge's pre-TTSA government network."
+      },
+      {
+        "year": "Oct 2017",
+        "event": "Incorporated To The Stars Academy of Arts & Science (TTSA) in Encinitas, California. Assembled an advisory board of former senior government officials unprecedented for a private civilian UAP effort: Luis Elizondo (former AATIP director), Christopher Mellon (former Deputy Ass't Secretary of Defense for Intelligence), Hal Puthoff (physicist, Stanford Research Institute, Defense Intelligence Agency contractor), Jim Semivan (CIA/NCS, retired), and Steve Justice (former director of advanced programs, Lockheed Skunk Works)."
+      },
+      {
+        "year": "Dec 2017",
+        "event": "Coordinated the release of three classified U.S. Navy UAP videos - FLIR1 (the 'Tic Tac' encounter), GoFast, and Gimbal - in conjunction with the New York Times article 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program,' which simultaneously revealed the existence of AATIP and Luis Elizondo's resignation. The coordinated release was the product of years of planning with Elizondo and Mellon and marked the effective beginning of the modern UAP disclosure era."
+      },
+      {
+        "year": "2018",
+        "event": "Filed a SEC Regulation A+ public investment offering, raising approximately $2.5 million from small-dollar investors. The filing - a public corporate document - discloses TTSA's structure, stated mission, key personnel, and organizational finances. TTSA subsequently published preliminary results from alleged metamaterial analysis."
+      },
+      {
+        "year": "2019",
+        "event": "TTSA signed a Cooperative Research and Development Agreement (CRADA) with the U.S. Army Combat Capabilities Development Command, formalizing government cooperation to study 'novel materials' that TTSA alleged originated from UAP encounters. This was the first official U.S. government agreement specifically for UAP-related material analysis. History Channel series 'Unidentified: Inside America's UFO Investigation' (TTSA-produced) premiered, featuring Elizondo's investigation methodology."
+      },
+      {
+        "year": "2020",
+        "event": "The U.S. Department of Defense officially confirmed the authenticity of the three Navy UAP videos first released by TTSA in 2017 and authorized their formal public release. This represented an official government validation of the core product of TTSA's 2017 disclosure effort."
+      },
+      {
+        "year": "2021",
+        "event": "TTSA wound down its active UAP research operations as key personnel - including Elizondo, Mellon, and Justice - departed or reduced their involvement. DeLonge refocused TTSA toward entertainment, film, and intellectual property development. The scientific and government advisory mission that defined TTSA's 2017-2020 period was effectively concluded."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "ttsa-government-coordination",
+      "claim": "TTSA's 2017 disclosure was coordinated with, or tacitly authorized by, elements of the U.S. government rather than being an independent leak.",
+      "status": "partially-verified",
+      "notes": "This claim is not one DeLonge has explicitly made, but it is the inference drawn by many researchers from the available evidence. The WikiLeaks emails confirm pre-TTSA meetings with active general officers and senior defense contractors. Elizondo's ability to obtain the three Navy videos through official channels before resignation, combined with Mellon's network of congressional and DoD contacts, suggests the 2017 release involved institutional cooperation rather than a simple leak. The DoD's subsequent (2020) decision to formally confirm the videos rather than deny them is consistent with this interpretation. However, no document explicitly confirming a coordinated government authorization for the disclosure has been produced."
+    },
+    {
+      "id": "ttsa-novel-materials",
+      "claim": "TTSA obtained physical materials allegedly recovered from UAP encounters and submitted them for scientific analysis.",
+      "status": "unverified",
+      "notes": "TTSA published preliminary descriptions of alleged metamaterials with unusual layered compositions. The CRADA with the U.S. Army formalized government cooperation to study these materials. However, TTSA never published peer-reviewed analysis confirming anomalous properties, and the provenance of the materials - their alleged origin in UAP recovery operations - has not been independently verified. The CRADA agreement itself is a public document but does not confirm the materials' origin."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "WikiLeaks emails are primary source documents confirming documented pre-TTSA meetings with active USAF general officers and senior Lockheed executives - an extraordinary network for a rock musician with no institutional credentials",
+      "The three Navy UAP videos TTSA released in 2017 were formally authenticated by the U.S. Department of Defense in 2020, validating the core product of TTSA's disclosure operation",
+      "The CRADA with the U.S. Army is a public government document confirming formal official cooperation with TTSA's material analysis program",
+      "The composition of the TTSA advisory board - former AATIP director, former Deputy Ass't SecDef for Intelligence, CIA senior officer, SRI physicist, Lockheed Skunk Works director - is itself evidence of DeLonge's government credibility, as these individuals would not have publicly affiliated with a fraudulent operation",
+      "SEC Regulation A+ filing is a public corporate document confirming TTSA's legal structure and operations"
+    ],
+    "contradicting": [
+      "DeLonge holds no military, scientific, or intelligence credentials of his own; his knowledge of classified programs is entirely secondhand",
+      "TTSA's public investment offering lost money for retail investors and the scientific operations quietly wound down by 2021 without producing the peer-reviewed UAP material analysis promised",
+      "Has made broad, unverifiable claims about working directly with multiple government agencies that exceed what the documented evidence supports",
+      "Critics - including some within the UAP research community - have characterized TTSA as a managed limited hangout or controlled disclosure operation rather than genuine transparency",
+      "The Intercept (2019) and other outlets raised questions about Elizondo's precise AATIP role and title that indirectly affect how TTSA's core disclosure claims are framed"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP director; TTSA Director of Global Security and Special Programs",
+      "relationship": "The most central relationship in DeLonge's UAP work. Elizondo joined TTSA immediately upon resigning from the Pentagon in October 2017 and is the primary figure through whom TTSA obtained access to the Navy UAP videos and the AATIP program narrative. Together they coordinated the December 2017 NYT disclosure."
+    },
+    {
+      "id": "chris-mellon",
+      "name": "Christopher K. Mellon",
+      "role": "Former Deputy Ass't Secretary of Defense for Intelligence; TTSA National Security Advisor",
+      "relationship": "Mellon served as the congressional and DoD institutional architect of the 2017 disclosure, using his network of Senate Intelligence Committee contacts to ensure the NYT story landed with maximum institutional effect. He and DeLonge are the co-designers of the strategic disclosure approach TTSA executed."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold E. Puthoff",
+      "role": "Physicist; TTSA Vice President of Science and Technology",
+      "relationship": "Puthoff provided the scientific and classified-program credibility for TTSA's claims about exotic propulsion and materials research. His prior work at SRI and as a DIA contractor gave TTSA institutional scientific depth that DeLonge could not provide himself."
+    },
+    {
+      "id": "jim-semivan",
+      "name": "Jim Semivan",
+      "role": "CIA/NCS (ret.); TTSA Vice President of Operations",
+      "relationship": "Semivan's CIA National Clandestine Service background provided TTSA with intelligence community institutional credibility. His willingness to publicly affiliate with TTSA is cited by researchers as evidence that the organization had genuine government sanction rather than operating against institutional resistance."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2015",
+      "type": "written",
+      "title": "WikiLeaks Podesta Emails - UAP Briefing Requests",
+      "outlet": "Private correspondence to John Podesta (WikiLeaks release)",
+      "notes": "Multiple emails to Clinton campaign chairman John Podesta documenting DeLonge's pre-TTSA government network and requesting briefings for the incoming administration. Confirm verified meetings with USAF generals and Lockheed executives. Primary source evidence of the government network that enabled TTSA's subsequent disclosure operations."
+    },
+    {
+      "date": "Dec 2017",
+      "type": "article",
+      "title": "Coordination - NYT 'Glowing Auras' Disclosure",
+      "outlet": "New York Times (via TTSA coordination)",
+      "notes": "DeLonge coordinated the release of three classified Navy UAP videos alongside the New York Times article 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program,' which simultaneously revealed AATIP and Elizondo's resignation. The coordinated release triggered the modern UAP disclosure era and forced the Pentagon's first official acknowledgment of UAP program funding."
+    },
+    {
+      "date": "2016",
+      "type": "written",
+      "title": "Sekret Machines: Gods (with A.J. Hartley)",
+      "outlet": "To The Stars Inc.",
+      "notes": "First volume in DeLonge's 'Sekret Machines' book series blending fiction and nonfiction UAP research, presenting disclosure-themed content in a format that allowed plausible deniability for the government sources informing the material."
+    },
+    {
+      "date": "2019",
+      "type": "television",
+      "title": "Unidentified: Inside America's UFO Investigation",
+      "outlet": "History Channel",
+      "notes": "TTSA-produced two-season History Channel documentary series featuring Elizondo investigating UAP cases with Mellon's assistance. The series brought TTSA's disclosure narrative to a mainstream television audience."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "The most central figure in DeLonge's UAP work; Elizondo joined TTSA upon resigning from the Pentagon in October 2017 and is the primary figure through whom TTSA obtained the Navy UAP videos and the AATIP narrative that drove the December 2017 NYT disclosure.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Dr. Hal Puthoff",
+      "relationship": "Provided scientific and classified-program credibility as TTSA's Vice President of Science and Technology; his prior SRI and DIA contractor work gave TTSA institutional depth that DeLonge could not supply himself.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "case",
+      "node_id": "nimitz-tic-tac",
+      "node_label": "Nimitz Tic Tac (2004)",
+      "relationship": "DeLonge and TTSA coordinated the public release of the FLIR1 Tic Tac video in December 2017 alongside the New York Times article, transforming a classified Navy encounter into the first officially acknowledged UAP footage in modern U.S. history.",
+      "connection_type": "investigative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "WikiLeaks Podesta Emails - Tom DeLonge (2015-2016)",
+      "url": "https://wikileaks.org/podesta-emails/emailid/39222",
+      "type": "Primary Document",
+      "notes": "Published WikiLeaks emails from DeLonge to John Podesta documenting pre-TTSA meetings with USAF generals and Lockheed executives, and requesting UAP briefings for the incoming Clinton administration."
+    },
+    {
+      "title": "Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program - New York Times (Dec 2017)",
+      "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
+      "type": "Article",
+      "notes": "The foundational December 2017 NYT article that revealed AATIP and released the Tic Tac video; coordinated with DeLonge and TTSA."
+    },
+    {
+      "title": "To The Stars Academy - SEC Regulation A+ Offering Circular (2018)",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001710274",
+      "type": "Government Document",
+      "notes": "SEC public filing documenting TTSA's structure, personnel, stated mission, and finances. Primary corporate document confirming the organization's legal status and advisory board composition."
+    },
+    {
+      "title": "TTSA-U.S. Army CRADA Agreement (2019)",
+      "url": "https://tothestarsacademy.com/army-crada",
+      "type": "Government Document",
+      "notes": "The Cooperative Research and Development Agreement between TTSA and the U.S. Army Combat Capabilities Development Command for joint study of novel materials. The first formal U.S. government agreement for UAP-related material analysis."
+    }
+  ]
+}
