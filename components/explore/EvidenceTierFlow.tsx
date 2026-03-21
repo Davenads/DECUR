@@ -455,7 +455,7 @@ export default function EvidenceTierFlow() {
   }, []);
 
   const handleNavigate = useCallback((caseId: string) => {
-    router.push(`/cases/${caseId}`);
+    router.push(`/cases/${caseId}?ref=explore-cases`);
   }, [router]);
 
   return (

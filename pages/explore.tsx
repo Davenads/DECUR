@@ -63,6 +63,14 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
   const [programView, setProgramView] = useState<'lineage' | 'hierarchy' | 'disclosure'>('lineage');
   const overlayRef = useRef<HTMLElement>(null);
 
+  // Restore programView from ?programs query param (used by back-button deep links)
+  useEffect(() => {
+    const programs = new URLSearchParams(window.location.search).get('programs');
+    if (programs === 'hierarchy' || programs === 'lineage' || programs === 'disclosure') {
+      setProgramView(programs);
+    }
+  }, []);
+
   function handleSelectEra(start: number, end: number) {
     const label = start === end - 9 ? `${start}s` : `${start}-${end}`;
     setFocusEra({ start, end, label });

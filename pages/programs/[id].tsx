@@ -5,6 +5,7 @@ import SeoHead from '../../components/SeoHead';
 import { ProgramEntry } from '../../types/data';
 import programsData from '../../data/programs.json';
 import ProgramDetail from '../../components/data/ProgramDetail';
+import { resolveExploreRef } from '../../lib/exploreRef';
 
 interface Props {
   program: ProgramEntry;
@@ -12,22 +13,15 @@ interface Props {
 
 const ProgramPage: NextPage<Props> = ({ program }) => {
   const router = useRouter();
-
-  const [ref, setRef] = useState<string | null>(null);
+  const [exploreBack, setExploreBack] = useState<{ label: string; href: string } | null>(null);
 
   useEffect(() => {
-    setRef(new URLSearchParams(window.location.search).get('ref'));
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    setExploreBack(resolveExploreRef(ref));
   }, []);
 
-  const onBack = () => {
-    if (ref === 'explore') router.push('/explore#relationship-network');
-    else if (ref === 'program-lineage') router.push('/explore#program-lineage');
-    else router.push('/data?category=programs');
-  };
-  const backLabel =
-    ref === 'explore' ? 'Relationship Network' :
-    ref === 'program-lineage' ? 'Program Lineage' :
-    'Programs';
+  const onBack = () => router.push(exploreBack ? exploreBack.href : '/data?category=programs');
+  const backLabel = exploreBack ? exploreBack.label : 'Programs';
 
   return (
     <>

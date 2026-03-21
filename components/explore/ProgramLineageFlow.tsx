@@ -449,7 +449,7 @@ export default function ProgramLineageFlow() {
   }, [router]);
 
   const handleFigureNavigate = useCallback((figureId: string) => {
-    router.push(`/figures/${figureId}?ref=explore`);
+    router.push(`/figures/${figureId}?ref=explore-lineage`);
   }, [router]);
 
   useLayoutEffect(() => {

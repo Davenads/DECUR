@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import SeoHead from '../../components/SeoHead';
 import { InsiderEntry } from '../../types/data';
+import { resolveExploreRef } from '../../lib/exploreRef';
 import insiderIndex from '../../data/key-figures/index.json';
 import GenericInsiderProfile from '../../components/data/key-figures/GenericInsiderProfile';
 import InsiderProfile from '../../components/data/InsiderProfile';
@@ -27,14 +28,15 @@ interface Props {
 
 const FigurePage: NextPage<Props> = ({ entry }) => {
   const router = useRouter();
-  const [fromExplore, setFromExplore] = useState(false);
+  const [exploreBack, setExploreBack] = useState<{ label: string; href: string } | null>(null);
 
   useEffect(() => {
-    setFromExplore(new URLSearchParams(window.location.search).get('ref') === 'explore');
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    setExploreBack(resolveExploreRef(ref));
   }, []);
 
-  const onBack = () => router.push(fromExplore ? '/explore#relationship-network' : '/data?category=key-figures');
-  const backLabel = fromExplore ? 'Relationship Network' : 'Key Figures';
+  const onBack = () => router.push(exploreBack ? exploreBack.href : '/data?category=key-figures');
+  const backLabel = exploreBack ? exploreBack.label : 'Key Figures';
 
   const renderProfile = () => {
     switch (entry.id) {

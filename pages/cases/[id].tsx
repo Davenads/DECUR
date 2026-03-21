@@ -5,6 +5,7 @@ import SeoHead from '../../components/SeoHead';
 import { CaseEntry } from '../../types/data';
 import casesData from '../../data/cases.json';
 import CaseDetail from '../../components/data/CaseDetail';
+import { resolveExploreRef } from '../../lib/exploreRef';
 
 interface Props {
   caseEntry: CaseEntry;
@@ -12,14 +13,15 @@ interface Props {
 
 const CasePage: NextPage<Props> = ({ caseEntry }) => {
   const router = useRouter();
-  const [fromExplore, setFromExplore] = useState(false);
+  const [exploreBack, setExploreBack] = useState<{ label: string; href: string } | null>(null);
 
   useEffect(() => {
-    setFromExplore(new URLSearchParams(window.location.search).get('ref') === 'explore');
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    setExploreBack(resolveExploreRef(ref));
   }, []);
 
-  const onBack = () => router.push(fromExplore ? '/explore#relationship-network' : '/data?category=cases');
-  const backLabel = fromExplore ? 'Relationship Network' : 'Cases';
+  const onBack = () => router.push(exploreBack ? exploreBack.href : '/data?category=cases');
+  const backLabel = exploreBack ? exploreBack.label : 'Cases';
 
   return (
     <>

@@ -538,7 +538,7 @@ export default function OversightHierarchyFlow() {
   }, [router]);
 
   const handleFigureNavigate = useCallback((figureId: string) => {
-    router.push(`/figures/${figureId}?ref=explore`);
+    router.push(`/figures/${figureId}?ref=explore-oversight`);
   }, [router]);
 
   useLayoutEffect(() => {
