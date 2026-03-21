@@ -167,44 +167,49 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
 
           {/* ── Timeline & History ───────────────────────────────────────── */}
           <section id="timeline">
-            <div className="mb-4">
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Timeline & History</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                Historical event frequency and multi-source timeline spanning eight decades of documented UAP activity.
-                Click a bar to filter the timeline to that decade.
-              </p>
-            </div>
-            <EventFrequencyChart
-              entries={entries}
-              onSelectEra={handleSelectEra}
-              onClearEra={() => setFocusEra(null)}
-              activeEraStart={focusEra?.start ?? null}
-            />
-            <section ref={overlayRef} className="mt-6">
-              <TimelineOverlay
-                uapEntries={entries}
-                insiderEvents={insiderEvents}
-                caseEvents={caseEvents}
-                focusEra={focusEra}
-                onClearFocus={() => setFocusEra(null)}
+            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
+              <div className="mb-4">
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Timeline & History</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                  Historical event frequency and multi-source timeline spanning eight decades of documented UAP activity.
+                  Click a bar to filter the timeline to that decade.
+                </p>
+              </div>
+              <EventFrequencyChart
+                entries={entries}
+                onSelectEra={handleSelectEra}
+                onClearEra={() => setFocusEra(null)}
+                activeEraStart={focusEra?.start ?? null}
               />
-            </section>
+              <section ref={overlayRef} className="mt-6">
+                <TimelineOverlay
+                  uapEntries={entries}
+                  insiderEvents={insiderEvents}
+                  caseEvents={caseEvents}
+                  focusEra={focusEra}
+                  onClearFocus={() => setFocusEra(null)}
+                />
+              </section>
+            </div>
           </section>
 
           {/* ── Incident Map ─────────────────────────────────────────────── */}
           <section id="map">
-            <div className="mb-4">
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Incident Map</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                Geographic distribution of documented UAP cases and geocoded historical events.
-                Click any marker for location details and evidence summary.
-              </p>
+            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
+              <div className="mb-4">
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Incident Map</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                  Geographic distribution of documented UAP cases and geocoded historical events.
+                  Click any marker for location details and evidence summary.
+                </p>
+              </div>
+              <CaseMap cases={mapCases} events={mapEvents} />
             </div>
-            <CaseMap cases={mapCases} events={mapEvents} />
           </section>
 
           {/* ── Programs ─────────────────────────────────────────────────── */}
           <section id="program-lineage">
+            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
             <div className="mb-4">
               <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Programs</h2>
 
@@ -271,19 +276,22 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
             ) : (
               <CongressionalDisclosureFlow />
             )}
+            </div>
           </section>
 
           {/* ── Evidence Tiers ────────────────────────────────────────────── */}
           <section id="evidence-tiers">
-            <div className="mb-4">
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Cases by Evidence Tier</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                All documented cases organized by evidence quality. Tier 1 cases carry the strongest
-                multi-source evidentiary record. Cases are sorted chronologically within each tier.
-                Click any case to view its summary, then navigate to the full case file.
-              </p>
+            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
+              <div className="mb-4">
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Cases by Evidence Tier</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                  All documented cases organized by evidence quality. Tier 1 cases carry the strongest
+                  multi-source evidentiary record. Cases are sorted chronologically within each tier.
+                  Click any case to view its summary, then navigate to the full case file.
+                </p>
+              </div>
+              <EvidenceTierFlow />
             </div>
-            <EvidenceTierFlow />
           </section>
 
         </div>
