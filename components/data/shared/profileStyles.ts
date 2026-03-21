@@ -54,6 +54,6 @@ export const ps = {
 
   // --- Buttons (inactive filter pills) ---
 
-  filterPill:       'text-xs px-2.5 py-1 rounded-full font-medium transition-colors bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600',
-  filterPillActive: 'text-xs px-2.5 py-1 rounded-full font-medium transition-colors bg-primary text-white',
+  filterPill:       'text-xs px-2.5 py-1 rounded-full font-medium transition-colors duration-200 ease-in-out bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600',
+  filterPillActive: 'text-xs px-2.5 py-1 rounded-full font-medium transition-colors duration-200 ease-in-out bg-primary text-white',
 } as const;

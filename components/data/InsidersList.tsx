@@ -52,7 +52,7 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
         {sorted.map(entry => (
           <div
             key={entry.id}
-            className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
+            className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md hover:scale-[1.01] transition-all duration-200 ease-in-out group"
           >
             {/* Name row + button */}
             <div className="flex items-start justify-between gap-3 mb-2">

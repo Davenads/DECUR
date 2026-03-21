@@ -24,17 +24,17 @@ nextjs-portal {
     @apply text-xl font-bold font-heading mb-2;
   }
   a {
-    @apply text-gray-700 hover:text-primary transition-colors dark:text-gray-300 dark:hover:text-primary-light;
+    @apply text-gray-700 hover:text-primary transition-colors duration-200 ease-in-out dark:text-gray-300 dark:hover:text-primary-light;
   }
 }
 
 /* Custom component classes */
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded font-medium transition-colors;
+    @apply px-4 py-2 rounded font-medium transition-all duration-200 ease-in-out active:scale-95;
   }
   .btn-primary {
-    @apply bg-primary text-white hover:bg-primary-dark;
+    @apply bg-primary text-white hover:bg-primary-dark hover:shadow-md;
   }
   .card {
     @apply bg-white rounded-lg shadow-md p-6 dark:bg-gray-800 dark:shadow-gray-900/50;
