@@ -61,6 +61,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
   const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
   const [activeSection, setActiveSection] = useState<SectionId>('relationship-network');
   const [programView, setProgramView] = useState<'lineage' | 'hierarchy' | 'disclosure'>('lineage');
+  const [navScrolled, setNavScrolled] = useState(false);
   const overlayRef = useRef<HTMLElement>(null);
 
   // Restore programView from ?programs query param (used by back-button deep links)
@@ -78,6 +79,13 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
       overlayRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 50);
   }
+
+  // Track scroll position to add shadow to sticky nav
+  useEffect(() => {
+    const onScroll = () => setNavScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   // Track which section is in the viewport to highlight the active nav pill
   useEffect(() => {
@@ -117,13 +125,13 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         </div>
 
         {/* Sticky section nav */}
-        <nav className="sticky top-0 z-40 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-2">
+        <nav className={`sticky top-0 z-40 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-2 transition-shadow duration-200 ${navScrolled ? 'shadow-md' : ''}`}>
           <div className="max-w-5xl mx-auto flex gap-2 overflow-x-auto">
             {SECTION_NAV.map(s => (
               <a
                 key={s.id}
                 href={`#${s.id}`}
-                className={`shrink-0 text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
+                className={`shrink-0 text-xs px-3 py-1.5 rounded-full font-medium transition-colors duration-200 ${
                   activeSection === s.id
                     ? 'bg-primary text-white'
                     : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
