@@ -1344,5 +1344,19 @@
     "data_file": "john-alexander.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "john-callahan",
+    "name": "John Callahan",
+    "aliases": ["John J. Callahan"],
+    "role": "Division Chief, Accidents and Investigations Branch, Federal Aviation Administration",
+    "period": "circa 1965-1995",
+    "affiliation": "Federal Aviation Administration (FAA)",
+    "summary": "Former FAA Division Chief who compiled and briefed the complete evidentiary record for the November 1986 JAL Flight 1628 incident - one of the most corroborated aviation UAP cases in history. A Japan Air Lines Boeing 747 crew reported being followed for 50 minutes over Alaska by objects including one described as twice the size of an aircraft carrier, confirmed on FAA radar at multiple facilities. Callahan testified that CIA officers subsequently confiscated all materials and instructed attendees that 'this meeting never happened,' while claiming he retained personal copies.",
+    "status": "detailed",
+    "tags": ["faa", "aviation", "jal-1628", "radar", "government", "disclosure-project"],
+    "data_file": "john-callahan.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

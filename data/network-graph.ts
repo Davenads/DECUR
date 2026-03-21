@@ -140,6 +140,7 @@ export const graphData: GraphData = {
     { id: 'ariel-school-1994',       name: 'Ariel School (1994)',           type: 'case', val: 3 },
     { id: 'iranian-f4-incident',     name: 'Iranian F-4 Incident (1976)',   type: 'case', val: 3 },
     { id: 'kecksburg-1965',          name: 'Kecksburg (1965)',              type: 'case', val: 3 },
+    { id: 'jal-flight-1628',         name: 'JAL Flight 1628 (1986)',        type: 'case', val: 3 },
 
     // Documents (sourced from data/documents.json)
     { id: 'wilson-davis-memo',                name: 'Wilson-Davis Memo',          type: 'document', val: 3 },
@@ -810,6 +811,11 @@ export const graphData: GraphData = {
     { source: 'john-alexander', target: 'colm-kelleher',  label: 'co-participants in NIDS investigations of Skinwalker Ranch; Alexander\'s counterintelligence and field operations background complemented Kelleher\'s scientific approach to NIDS field research' },
     { source: 'john-alexander', target: 'nids',           label: 'participated in NIDS field investigations of anomalous phenomena at Skinwalker Ranch as part of Bigelow\'s assembled research team post-retirement' },
     { source: 'john-alexander', target: 'los-alamos',     label: 'served as Director of Non-Lethal Weapons Department at Los Alamos National Laboratory from 1988; built the DoD non-lethal weapons research program with direct congressional oversight' },
+
+    // John Callahan connections
+    { source: 'john-callahan', target: 'jal-flight-1628',  label: 'primary FAA custodian of the complete evidentiary record; compiled radar data, voice recordings, and pilot reports and briefed FAA Administrator Admiral Engen on the encounter' },
+    { source: 'john-callahan', target: 'steven-greer',      label: 'testified at the 2001 Disclosure Project NPC event, providing his account of the JAL 1628 incident and alleged CIA data confiscation alongside 20+ former military and government witnesses' },
+    { source: 'john-callahan', target: 'leslie-kean',       label: "Kean's 2010 book documents the JAL 1628 case in detail, drawing on the FAA evidentiary record and Captain Terauchi's testimony that Callahan helped bring to public attention" },
 
     // Barry Goldwater connections
     { source: 'barry-goldwater', target: 'nathan-twining',  label: "Twining's classified UAP protocols at Wright-Patterson established the secrecy culture that produced the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay" },
