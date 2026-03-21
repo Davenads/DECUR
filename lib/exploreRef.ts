@@ -10,6 +10,7 @@ export type ExploreRef =
   | 'explore'              // Relationship Network
   | 'explore-oversight'    // Oversight Hierarchy - figures/[id]
   | 'explore-lineage'      // Program Lineage - figures/[id]
+  | 'explore-disclosure'   // Congressional Disclosure - figures/[id]
   | 'explore-cases'        // Evidence Tiers - cases/[id]
   | 'oversight-hierarchy'  // Oversight Hierarchy - programs/[id]
   | 'program-lineage';     // Program Lineage - programs/[id]
@@ -23,12 +24,13 @@ const OVERSIGHT_HREF = '/explore?programs=hierarchy#program-lineage';
 const LINEAGE_HREF   = '/explore?programs=lineage#program-lineage';
 
 export const EXPLORE_BACK_CONFIGS: Record<ExploreRef, BackConfig> = {
-  'explore':             { label: 'Relationship Network', href: '/explore#relationship-network' },
-  'explore-oversight':   { label: 'Oversight Hierarchy',  href: OVERSIGHT_HREF },
-  'explore-lineage':     { label: 'Program Lineage',      href: LINEAGE_HREF },
-  'explore-cases':       { label: 'Evidence Tiers',       href: '/explore#evidence-tiers' },
-  'oversight-hierarchy': { label: 'Oversight Hierarchy',  href: OVERSIGHT_HREF },
-  'program-lineage':     { label: 'Program Lineage',      href: LINEAGE_HREF },
+  'explore':              { label: 'Relationship Network',    href: '/explore#relationship-network' },
+  'explore-oversight':    { label: 'Oversight Hierarchy',     href: OVERSIGHT_HREF },
+  'explore-lineage':      { label: 'Program Lineage',         href: LINEAGE_HREF },
+  'explore-disclosure':   { label: 'Congressional Disclosure', href: '/explore?programs=disclosure#program-lineage' },
+  'explore-cases':        { label: 'Evidence Tiers',          href: '/explore#evidence-tiers' },
+  'oversight-hierarchy':  { label: 'Oversight Hierarchy',     href: OVERSIGHT_HREF },
+  'program-lineage':      { label: 'Program Lineage',         href: LINEAGE_HREF },
 };
 
 /**

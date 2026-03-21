@@ -283,7 +283,7 @@ export default function CongressionalDisclosureFlow() {
   const handleNodeClick = useCallback((_evt: React.MouseEvent, node: Node) => {
     const figureId = (node.data as DisclosureNodeData).figureId;
     if (figureId) {
-      router.push(`/figures/${figureId}?ref=explore`);
+      router.push(`/figures/${figureId}?ref=explore-disclosure`);
     }
   }, [router]);
 
