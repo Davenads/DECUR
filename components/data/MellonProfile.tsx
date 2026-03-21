@@ -276,6 +276,42 @@ const AssessmentTab: FC = () => {
         supporting={credibility.supporting.length}
         contradicting={credibility.contradicting.length}
       />
+
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
+        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Methodology Note</p>
+        <p className="text-sm text-amber-900 dark:text-amber-100">
+          Mellon's credibility is assessed on the basis of his documented government career, public statements, and
+          institutional affiliations. DECUR does not adjudicate contested claims - arguments are drawn from the public record.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="text-sm font-semibold text-green-700 dark:text-green-400 uppercase tracking-wide mb-3 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+          Supporting Arguments
+        </h4>
+        <div className="space-y-3">
+          {credibility.supporting.map((arg, i) => (
+            <div key={i} className="border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-4">
+              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h4 className="text-sm font-semibold text-red-600 dark:text-red-400 uppercase tracking-wide mb-3 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
+          Arguments Against
+        </h4>
+        <div className="space-y-3">
+          {credibility.contradicting.map((arg, i) => (
+            <div key={i} className="border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-4">
+              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
