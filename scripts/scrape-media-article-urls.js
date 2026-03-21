@@ -1,6 +1,6 @@
 /**
- * Scrapes article_url for media entries (documentaries, books-documents)
- * that currently have no article_url in ufotimeline.json.
+ * Scrapes article_url for media/spotlight entries (documentaries, books-documents, spotlight)
+ * that currently have no article_url in timeline.json.
  *
  * Run with: node scripts/scrape-media-article-urls.js
  */
@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DATA_PATH = path.join(__dirname, '../data/timeline.json');
-const MEDIA_CATS = ['documentaries', 'books-documents'];
+const MEDIA_CATS = ['documentaries', 'books-documents', 'spotlight'];
 const DELAY_MS = 600;
 
 // Domains to ignore (boilerplate footer/nav links)
