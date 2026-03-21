@@ -231,6 +231,51 @@ If `includeInExplore: true`, add an entry to `SOURCE_CONFIG` in `components/expl
 ```
 If omitted, events will appear with a default gray color.
 
+### 5. Add Relationship Network edges (required)
+All profiled figures are **auto-derived** as nodes in the Relationship Network from `index.json` - no manual node entry needed. However, you **must** add link edges to `data/network-graph.ts` or the figure will appear as an isolated island with no connections.
+
+Append a comment block with links to the `links: []` array at the bottom of `network-graph.ts`:
+```ts
+// Jane Smith connections
+{ source: 'jane-smith', target: 'luis-elizondo', label: 'collaborated on AATIP research 2008-2017' },
+{ source: 'jane-smith', target: 'aatip',         label: 'program director' },
+```
+
+- `source` and `target` must match node `id` values exactly (registry ids for profiled figures; explicit node ids for organizations/cases/documents)
+- Every new figure should have **at least 2-3 edges** to existing nodes
+- Use factual, specific relationship labels - not generic descriptions
+
+### 6. Add career_connections for a non-linear Career Network tab (required)
+Without `career_connections`, the Career Network tab renders as a pure linear chain of `key_events` - identical in content to the Timeline tab. Always add a `career_connections` array to give the graph lateral branching nodes.
+
+Add a top-level `career_connections` key to the profile JSON:
+```json
+"career_connections": [
+  {
+    "event_index": 3,
+    "node_type": "person",
+    "node_id": "luis-elizondo",
+    "node_label": "Luis Elizondo",
+    "relationship": "Collaborated on AATIP research from 2008-2017.",
+    "connection_type": "professional"
+  },
+  {
+    "event_index": 5,
+    "node_type": "program",
+    "node_id": "aatip",
+    "node_label": "AATIP",
+    "relationship": "Served as program director.",
+    "connection_type": "institutional"
+  }
+]
+```
+
+- `event_index` is 0-based into the `key_events` array - the node branches off that point in the timeline chain
+- `node_type` must be one of: `person`, `case`, `program`
+- `connection_type` must be one of: `investigative`, `professional`, `institutional`
+- Aim for **at least 2-3 lateral nodes** across different `event_index` values so the graph has visible branching at multiple points
+- Spread nodes across different timeline points rather than clustering them at one index
+
 ### That's all
 No component file is needed. No `if` check in `InsidersList.tsx` is needed.
 

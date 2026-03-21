@@ -152,6 +152,32 @@
       "notes": "Appeared on CNN's Larry King Live and reiterated his belief in classified UAP evidence and his personal denial of access by General LeMay. Broadcast record confirms his position was maintained into his final years and represents his most widely seen public statement on the subject."
     }
   ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "james-mcdonald",
+      "node_label": "Dr. James E. McDonald",
+      "relationship": "McDonald systematically corresponded with members of Congress in the late 1960s pushing for serious UAP scientific inquiry; Goldwater was among the legislators he engaged during this period, shortly after Goldwater returned to the Senate in 1969.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "nathan-twining",
+      "node_label": "Gen. Nathan Twining",
+      "relationship": "Twining signed the foundational 1947 USAF memo establishing UAP as a legitimate military concern and oversaw Wright-Patterson AFB during the Roswell recovery period. The classified UAP secrecy culture his era established is the direct institutional origin of the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 8,
+      "node_type": "person",
+      "node_id": "steven-greer",
+      "node_label": "Dr. Steven M. Greer",
+      "relationship": "Greer's Disclosure Project cited Goldwater's public statements and National Archives correspondence as foundational political evidence in congressional briefings. Goldwater's 1994 CNN appearance and 1975 Arnon letter became cornerstone reference documents in the disclosure movement's political argument.",
+      "connection_type": "investigative"
+    }
+  ],
   "sources": [
     {
       "title": "Barry Goldwater UAP Correspondence (1970s-1990s) - National Archives",

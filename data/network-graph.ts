@@ -783,5 +783,11 @@ export const graphData: GraphData = {
     { source: 'michael-herrera', target: 'ryan-graves',     label: 'co-testified at the July 2023 House Oversight hearing; both are military veterans who brought firsthand UAP accounts before Congress' },
     { source: 'michael-herrera', target: 'tim-burchett',    label: 'Burchett co-organized the July 2023 hearing where Herrera testified publicly for the first time' },
     { source: 'michael-herrera', target: 'mike-gallagher',  label: 'Gallagher co-chaired the July 2023 hearing where Herrera described the 2009 Sumatra encounter' },
+
+    // Barry Goldwater connections
+    { source: 'barry-goldwater', target: 'nathan-twining',  label: "Twining's classified UAP protocols at Wright-Patterson established the secrecy culture that produced the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay" },
+    { source: 'barry-goldwater', target: 'james-mcdonald',  label: 'McDonald corresponded with Goldwater as part of his systematic campaign to engage members of Congress on UAP as a legitimate scientific matter in the late 1960s' },
+    { source: 'barry-goldwater', target: 'steven-greer',    label: "Greer's Disclosure Project cited Goldwater's letters and CNN statements as foundational political evidence in congressional briefings; Goldwater's documented access denial became a cornerstone of the disclosure movement's political argument" },
+    { source: 'barry-goldwater', target: 'harry-reid',      label: 'Both long-serving U.S. Senators pursued UAP transparency from within the Senate; Reid built on the political groundwork Goldwater had laid decades earlier' },
   ],
 };
