@@ -696,6 +696,15 @@
       ]
     },
     {
+      "id": "uap-guide-quotes",
+      "title": "UAP Guide - Curated Quotes",
+      "url": "https://www.uap.guide/quotes/introduction",
+      "type": "Reference",
+      "description": "Curated collection of on-record UAP statements from politicians, intelligence officials, military pilots, and government reports, organized by thematic category.",
+      "date_accessed": "2026-03-20",
+      "categories": ["quotes", "historical"]
+    },
+    {
       "id": "house-oversight-uap-hearing-jul-2023",
       "title": "UAP Hearing: Implications on National Security, Public Safety, and Government Transparency",
       "type": "Congressional Record",
