@@ -109,6 +109,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'michael-herrera':    { label: 'Michael Herrera',         color: '#065f46' },
   'barry-goldwater':    { label: 'Sen. Barry Goldwater',    color: '#b45309' },
   'robert-salas':       { label: 'Capt. Robert Salas',      color: '#0c4a6e' },
+  'edgar-mitchell':     { label: 'Dr. Edgar Mitchell',      color: '#0e7490' },
 };
 
 const UAP_COLOR = '#93c5e8';

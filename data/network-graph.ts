@@ -790,6 +790,12 @@ export const graphData: GraphData = {
     { source: 'robert-salas', target: 'charles-halt',       label: 'fellow USAF officer and UAP witness; both submitted signed affidavits and appeared together at NPC events advocating for government transparency on military UAP incidents' },
     { source: 'robert-salas', target: 'steven-greer',       label: 'participated in the 2001 Disclosure Project NPC event as one of over 20 former military witnesses presenting testimony on government UAP suppression' },
 
+    // Edgar Mitchell connections
+    { source: 'edgar-mitchell', target: 'hal-puthoff',    label: "Puthoff's remote viewing and consciousness research at SRI in the 1970s directly intersected with Mitchell's post-Apollo investigation of anomalous cognition and the IONS research agenda" },
+    { source: 'edgar-mitchell', target: 'john-mack',      label: 'parallel credentialed academics who both pursued UAP-adjacent consciousness research from within established institutions; Mitchell through IONS, Mack through Harvard; Rice University archives link both collections' },
+    { source: 'edgar-mitchell', target: 'steven-greer',   label: 'participated in the 2001 Disclosure Project NPC event before publicly distancing himself, stating Greer had mischaracterized him as a direct UAP witness' },
+    { source: 'edgar-mitchell', target: 'jacques-vallee', label: 'conference circuit contemporaries who shared the view that UAP warranted rigorous scientific investigation across overlapping decades of credentialed research' },
+
     // Barry Goldwater connections
     { source: 'barry-goldwater', target: 'nathan-twining',  label: "Twining's classified UAP protocols at Wright-Patterson established the secrecy culture that produced the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay" },
     { source: 'barry-goldwater', target: 'james-mcdonald',  label: 'McDonald corresponded with Goldwater as part of his systematic campaign to engage members of Congress on UAP as a legitimate scientific matter in the late 1960s' },

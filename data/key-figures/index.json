@@ -1302,5 +1302,19 @@
     "data_file": "robert-salas.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "edgar-mitchell",
+    "name": "Dr. Edgar Mitchell",
+    "aliases": ["Edgar Dean Mitchell", "Ed Mitchell"],
+    "role": "NASA Apollo 14 Lunar Module Pilot; Founder, Institute of Noetic Sciences",
+    "period": "1966-1972 (NASA); 1973-2016 (IONS)",
+    "affiliation": "NASA; U.S. Navy; Institute of Noetic Sciences",
+    "summary": "Apollo 14 astronaut and the sixth human to walk on the Moon, holding an MIT doctorate in Aeronautics and Astronautics. Mitchell publicly maintained across four decades that extraterrestrial visitation was real and that the government had suppressed evidence of it. In 1973 he founded the Institute of Noetic Sciences (IONS), a credentialed consciousness research organization still active today. His 2015 WikiLeaks-published emails to presidential campaign chairman John Podesta, requesting urgent meetings on ETI disclosure and zero point energy, are a documented primary source connecting his convictions to the highest levels of American politics.",
+    "status": "detailed",
+    "tags": ["nasa", "astronaut", "apollo", "consciousness", "ions", "disclosure", "podesta-emails"],
+    "data_file": "edgar-mitchell.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]
