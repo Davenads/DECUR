@@ -817,6 +817,12 @@ export const graphData: GraphData = {
     { source: 'john-callahan', target: 'steven-greer',      label: 'testified at the 2001 Disclosure Project NPC event, providing his account of the JAL 1628 incident and alleged CIA data confiscation alongside 20+ former military and government witnesses' },
     { source: 'john-callahan', target: 'leslie-kean',       label: "Kean's 2010 book documents the JAL 1628 case in detail, drawing on the FAA evidentiary record and Captain Terauchi's testimony that Callahan helped bring to public attention" },
 
+    // Richard Doty connections
+    { source: 'richard-doty', target: 'majestic-12',       label: 'supplied fabricated MJ-12 style documents to Bill Moore and others; the forged documents he introduced contaminated the evidentiary record that researchers like Friedman spent years attempting to authenticate' },
+    { source: 'richard-doty', target: 'stanton-friedman',  label: "Friedman spent years attempting to authenticate MJ-12 documents that were part of the disinformation ecosystem Doty helped create; Doty's fabrications directly undermined Friedman's painstaking authentication work" },
+    { source: 'richard-doty', target: 'george-knapp',      label: 'Knapp investigated and documented Doty\'s disinformation activities through KLAS-TV journalism and has interviewed him on Weaponized; the relationship illustrates the tension between investigative journalism and a documented disinformation source' },
+    { source: 'richard-doty', target: 'richard-dolan',     label: "Dolan documented the Bennewitz affair and Doty's AFOSI operations in 'UFOs and the National Security State,' providing the most rigorous historical analysis of how deliberate disinformation contaminated the UAP research record" },
+
     // Barry Goldwater connections
     { source: 'barry-goldwater', target: 'nathan-twining',  label: "Twining's classified UAP protocols at Wright-Patterson established the secrecy culture that produced the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay" },
     { source: 'barry-goldwater', target: 'james-mcdonald',  label: 'McDonald corresponded with Goldwater as part of his systematic campaign to engage members of Congress on UAP as a legitimate scientific matter in the late 1960s' },

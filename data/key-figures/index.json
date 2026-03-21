@@ -1358,5 +1358,19 @@
     "data_file": "john-callahan.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "richard-doty",
+    "name": "Richard Doty",
+    "aliases": ["Richard C. Doty", "Falcon"],
+    "role": "Special Agent, AFOSI, Kirtland AFB; Primary operative in the Bennewitz disinformation operation",
+    "period": "Late 1960s-1988",
+    "affiliation": "U.S. Air Force Office of Special Investigations (AFOSI)",
+    "summary": "Retired AFOSI special agent and the most consequential documented government disinformation operative in UAP research history. Doty managed a deliberate psychological operation against defense contractor Paul Bennewitz (1980-1988), feeding fabricated UAP evidence that ultimately contributed to Bennewitz's mental breakdown. He also showed journalist Linda Moulton Howe a fabricated classified briefing document at Kirtland AFB in 1983. He has acknowledged these activities post-retirement. His significance is not as a reliable source but as documented proof that deliberate U.S. intelligence disinformation targeting UAP researchers is a historical fact.",
+    "status": "detailed",
+    "tags": ["afosi", "disinformation", "bennewitz", "kirtland", "counterintelligence", "mj-12", "falcon"],
+    "data_file": "richard-doty.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
