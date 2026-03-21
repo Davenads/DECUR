@@ -2,11 +2,11 @@
 
 **Data Exceeding Current Understanding of Reality**
 
-A structured reference archive for UAP and NHI research. DECUR catalogs insider testimony, documented incidents, primary source documents, and historical records spanning eight decades - organized for analysis, not advocacy.
+A structured reference archive for UAP and NHI research. DECUR catalogs insider testimony, documented incidents, primary source documents, and historical records spanning eight decades - organized for analysis, not advocacy. Qualitative data catalogued for analysis, not advocacy.
 
 Live at [decur.org](https://decur.org)
 
-![DECUR Home](public/readme/home.png)
+![DECUR Home](public/screenshots/home-dark.png)
 
 ---
 
@@ -22,40 +22,31 @@ DECUR does not adjudicate the truth of any claim. Every entry is documented with
 
 The core of the platform. Accessed via the `Data` nav dropdown or directly at `/data`.
 
-![Data - Research Archive](public/readme/key-figures.png)
+![Data - Key Figures](public/screenshots/key-figures.png)
 
 | Category | Description |
 |---|---|
 | Historical Events | Documented UAP cases and sightings |
-| Key Figures | Researchers, officials, and witnesses |
+| Spotlights | Notable milestones and disclosure events |
+| Key Figures | Researchers, officials, and witnesses with full multi-tab profiles |
 | Quotes | Notable statements on record |
 | Media & Documents | Films, books, and official publications |
 | News | Reports and ongoing developments |
-| Insiders | Firsthand accounts with full multi-tab profiles |
 | Cases | Tier-annotated documented incidents |
 | Documents | Annotated primary source documents |
+| Programs | Government programs, organizations, and private defense contractors |
 
 #### Insider Profiles
 
-Each insider has a dedicated multi-tab profile covering background, roles, key events timeline, credibility assessment, network connections, and public disclosures. Current profiles:
+Each insider has a dedicated multi-tab profile covering background, roles, key events timeline, credibility assessment, network connections, and public disclosures. Current profiles include:
 
-- Luis Elizondo (AATIP Director)
-- David Fravor (Nimitz Pilot)
-- David Grusch (NGA, Intelligence Community Whistleblower)
-- Jacques Vallee (Computer Scientist, Researcher)
-- Karl Nell (Army Colonel, AARO)
-- Hal Puthoff (SRI, AAWSAP)
-- Garry Nolan (Stanford Immunologist)
-- Bob Bigelow (Bigelow Aerospace, BAASS)
-- Eric Davis (EarthTech, AAWSAP)
-- Chris Mellon (OUSDI, To The Stars)
-- Nick Pope (UK Ministry of Defence, UFO Desk)
-- Bob Lazar (S-4 Whistleblower)
-- Dan Burisch (Microbiologist, Majestic 12)
+Luis Elizondo, David Fravor, David Grusch, Jacques Vallee, Karl Nell, Hal Puthoff, Garry Nolan, Bob Bigelow, Eric Davis, Chris Mellon, Nick Pope, Bob Lazar, Philip Corso, Steven Greer, Dan Burisch, and more.
 
 Profiles cross-reference documented cases and link into the Explore timeline overlay where applicable.
 
 #### Cases
+
+![Data - Cases](public/screenshots/cases.png)
 
 Tier-annotated documented incidents with witness profiles, evidence inventory, official response tracking, and insider connections.
 
@@ -70,33 +61,55 @@ Current cases: Nimitz Tic-Tac, Rendlesham Forest, USS Theodore Roosevelt, Belgia
 
 Annotated primary source documents with authenticity classification, provenance notes, key findings, and insider connections.
 
-**Authenticity Classifications:**
-- Official Publication - released through standard government channels
-- Declassified (FOIA) - released via Freedom of Information Act request
-- Confirmed Leaked - leaked origin confirmed, contents substantiated
-- Leaked - Disputed - circulated outside official channels, authenticity contested
-- Declassified Authentic - declassified and independently authenticated
-- Official Declassified - officially declassified by the originating agency
+**Authenticity Classifications:** Official Publication, Declassified (FOIA), Confirmed Leaked, Leaked - Disputed, Declassified Authentic, Official Declassified.
 
-Current documents: Wilson-Davis Memo, UAPTF Preliminary Assessment (2021), AARO Historical Record Vol. 1 & 2, NASA UAP Study (2023), Halt Memo (1981), DIA Iran F-4 Report (1976), NDAA FY2023 UAP Provisions, Twining Memo (1947), Schulgen Memo (1947), Project SIGN Estimate (1948), and more.
+#### Programs & Contractors
+
+![Data - Programs](public/screenshots/programs.png)
+
+Government and private-sector organizations with UAP research relevance. Program entries include key personnel, timeline events, significance assessments, and source citations.
+
+A dedicated **Private Defense Contractors** section covers Lockheed Martin (Skunk Works), Northrop Grumman (incl. TRW), Raytheon Technologies, Battelle Memorial Institute, SAIC, and EG&G - each with documented contracts, UAP-relevant claims labeled by evidence status (testified under oath, documented, alleged, disputed), connected figures, and sources.
 
 ---
 
 ### Timeline
 
-A chronological view of 1,580+ documented UAP/NHI events from the 1940s to the present. Filterable by era and event type. Case detail pages link directly into the timeline filtered to the relevant year.
+A chronological view of 1,800+ documented UAP/NHI events from the 1940s to the present. Filterable by era and event type. Case detail pages link directly into the timeline filtered to the relevant year.
 
 ---
 
 ### Explore
 
-Interactive cross-dataset visualizations.
+Interactive cross-dataset visualizations built with React Flow (@xyflow/react), Recharts, and react-force-graph-2d.
 
-![Explore - Visualizations](public/readme/explore.png)
+#### Relationship Network
 
-- **Event Frequency Chart** - Distribution of documented events by decade and historical era
-- **Insider Timeline Overlay** - Swimlane view of insider careers and key events plotted chronologically, with per-source color coding
-- **Relationship Network** - Force-directed graph of connections between insiders, organizations, programs, and technologies
+![Explore - Relationship Network](public/screenshots/explore-network.png)
+
+Force-directed graph of connections between insiders, organizations, programs, and technologies. Nodes are color-coded by type; clicking a node navigates to the associated profile or detail page.
+
+#### Event Frequency & Timeline Overlay
+
+Distribution of documented events by decade and historical era, plus a swimlane view of insider careers and key events plotted chronologically with per-source color coding.
+
+#### Program Lineage Flow
+
+![Explore - Program Lineage](public/screenshots/flow-lineage.png)
+
+Left-to-right directed graph showing chronological succession and influence between 20 UAP investigation programs - from Project Sign (1947) through AARO (2022-present). Data-driven from `programs.json`. Click any node for a detail panel with program summary, key personnel, and a link to the full program profile.
+
+#### Organizational Oversight Hierarchy
+
+![Explore - Oversight Structure](public/screenshots/flow-oversight.png)
+
+Top-down authority hierarchy spanning the Executive Branch, DoD, CIA, Congressional committees, and 14 UAP programs - with private defense contractors shown as contractual leaf nodes. Five edge types visualize distinct relationship classes: authority (solid), oversight (dashed green), contractual (dotted purple), alleged (dashed red), and influenced (dashed amber). Click any non-branch node for a detail panel.
+
+#### Evidence Tier Swimlane
+
+![Explore - Evidence Tiers](public/screenshots/flow-evidence-tiers.png)
+
+Horizontal swimlane layout organizing all documented cases by evidence tier. Cases are sorted chronologically within each band and color-coded by incident category (military-aviation, military-ground, civilian, maritime, etc.). Click any case card for a summary panel and direct link to the full case profile.
 
 ---
 
@@ -121,12 +134,15 @@ Full-text search across all platform content: insider profiles, documented cases
 ```
 components/
   data/            # Data section components (profiles, cases, documents, lists)
-  explore/         # Visualization components (charts, network graph, timeline overlay)
+  explore/         # Visualization components (network graph, xyflow, charts)
   resources/       # Resource list and glossary components
   layout/          # Header, footer, layout wrapper
 data/
   *.json           # Static data files (insiders, cases, documents, events, etc.)
+  key-figures/     # Per-figure JSON profiles
   network-graph.ts # Network graph node/link definitions
+  org-hierarchy.json # Oversight hierarchy nodes and edges
+  contractors.json # Private defense contractor profiles
 pages/
   index.tsx        # Home
   data.tsx         # Data section with category routing
@@ -134,10 +150,9 @@ pages/
   timeline.tsx     # Timeline page
   resources.tsx    # Resources page
   about.tsx        # About page
-public/            # Static assets
-styles/            # Global CSS
+public/            # Static assets and screenshots
 types/
-  data.ts          # TypeScript interfaces (CategoryType, CaseEntry, DocumentEntry, etc.)
+  data.ts          # TypeScript interfaces
 ```
 
 ---
@@ -146,6 +161,7 @@ types/
 
 - **Framework**: Next.js (Pages Router) with TypeScript
 - **Styling**: Tailwind CSS
+- **Flow Visualizations**: @xyflow/react with @dagrejs/dagre layout engine
 - **Charts**: Recharts
 - **Network Graph**: react-force-graph-2d
 - **Data**: Static JSON with `getStaticProps` + ISR (`revalidate: 3600`)
