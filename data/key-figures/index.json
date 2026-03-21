@@ -1372,5 +1372,19 @@
     "data_file": "richard-doty.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "linda-moulton-howe",
+    "name": "Linda Moulton Howe",
+    "aliases": ["Linda Howe", "LMH"],
+    "role": "Investigative journalist; documentary filmmaker; founder, Earthfiles.com",
+    "period": "1980-present",
+    "affiliation": "KMGH-TV Denver (former); Earthfiles.com",
+    "summary": "Stanford-credentialed documentary filmmaker and investigative journalist who pioneered the forensic documentation of cattle mutilations with her 1980 Regional Emmy-winning documentary 'A Strange Harvest.' A documented target of the AFOSI disinformation campaign managed by Richard Doty, who showed her a fabricated classified briefing document at Kirtland AFB in 1983. Founder of Earthfiles.com (1999), a 25-year platform of military and government source testimony on UAP and anomalous phenomena. Her career spans genuinely rigorous early journalism through increasingly controversial later claims.",
+    "status": "detailed",
+    "tags": ["journalism", "cattle-mutilation", "earthfiles", "stanford", "kirtland", "emmy", "coast-to-coast"],
+    "data_file": "linda-moulton-howe.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]

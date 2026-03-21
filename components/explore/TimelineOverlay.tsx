@@ -114,6 +114,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'john-alexander':     { label: 'Col. John Alexander',     color: '#4d7c0f' },
   'john-callahan':      { label: 'John Callahan',           color: '#15803d' },
   'richard-doty':       { label: 'Richard Doty',            color: '#991b1b' },
+  'linda-moulton-howe': { label: 'Linda Moulton Howe',      color: '#7c2d12' },
 };
 
 const UAP_COLOR = '#93c5e8';

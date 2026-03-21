@@ -1,0 +1,191 @@
+{
+  "profile": {
+    "id": "linda-moulton-howe",
+    "name": "Linda Moulton Howe",
+    "aliases": ["Linda Howe", "LMH"],
+    "born": "January 20, 1942 - Boise, Idaho",
+    "died": null,
+    "roles": [
+      "Investigative journalist and documentary filmmaker",
+      "Founder and editor, Earthfiles.com (1999-present)",
+      "Author - An Alien Harvest (1989)"
+    ],
+    "service_period": "1965-present (journalism and documentary production)",
+    "organizations": [
+      "KMGH-TV Denver",
+      "Earthfiles.com"
+    ],
+    "clearance": null,
+    "summary": "Stanford-credentialed documentary filmmaker and investigative journalist who pioneered the systematic forensic documentation of the cattle mutilation phenomenon. Her 1980 Regional Emmy-winning documentary 'A Strange Harvest' remains the foundational journalistic examination of the subject. In April 1983 she was invited to Kirtland AFB by AFOSI agent Richard Doty and shown what she was told was a classified presidential briefing document on extraterrestrial intelligence - a document subsequently assessed as fabricated, making her a documented target of AFOSI's disinformation campaign. Founder of Earthfiles.com (1999), a 25-year platform of military and government source testimony on UAP, cattle mutilations, and anomalous phenomena. Her career arc spans genuinely rigorous early journalism through increasingly controversial later claims, making her a complex case study in the epistemological challenges at the center of UAP research.",
+    "education": [
+      "B.A., University of Colorado",
+      "M.A., Communications (Documentary Filmmaking), Stanford University (1965)"
+    ],
+    "early_career": [
+      "Worked as a documentary producer and director at KMGH-TV Denver in the 1970s, building a career in broadcast journalism with a focus on environmental and investigative subjects",
+      "Earned three Regional Emmy Awards and a National Emmy nomination for her broadcast documentary work, establishing her professional credibility before turning to UAP and anomalous phenomena",
+      "Contributed as a producer to WCVB Boston's investigative work, earning a Peabody Award citation as part of that team"
+    ],
+    "key_events": [
+      {
+        "year": "1965",
+        "event": "Earned an M.A. in Communications with a focus on documentary filmmaking from Stanford University. The credential established a rigorous broadcast journalism foundation for her subsequent career."
+      },
+      {
+        "year": "1980",
+        "event": "Produced and directed 'A Strange Harvest' for KMGH-TV Denver - a Regional Emmy Award-winning documentary investigating the cattle mutilation phenomenon across multiple U.S. states. The film was the first major journalistic examination of the subject to apply systematic forensic analysis: veterinary examinations, law enforcement interviews, and pattern analysis of surgical precision across hundreds of cases. It established the foundational evidentiary argument that standard predator or scavenger activity could not account for the documented characteristics of the mutilations."
+      },
+      {
+        "year": "1983",
+        "event": "In April 1983, AFOSI special agent Richard Doty invited Howe to Kirtland AFB, New Mexico, under the pretense of providing classified UAP material for a television documentary. Doty showed her what he described as a classified presidential briefing document detailing U.S. government knowledge of and agreements with extraterrestrial intelligence. She was permitted to read but not copy the document. The document was subsequently assessed as fabricated by the FBI, making Howe a documented target of the AFOSI disinformation campaign that Doty managed. This incident is documented in her sworn affidavit and is a significant event in both UAP disinformation history and the history of how fabricated evidence entered credible journalism."
+      },
+      {
+        "year": "1989",
+        "event": "Published 'An Alien Harvest: Further Evidence Linking Animal Mutilations and Human Abductions to Alien Life Forms' - the book-length expansion of her cattle mutilation research, incorporating rancher testimonies, veterinary forensic evidence, law enforcement records, and her investigation of the phenomenon across multiple decades and states."
+      },
+      {
+        "year": "1993",
+        "event": "Produced 'Strange Harvests 1993,' a follow-on documentary to 'A Strange Harvest,' documenting new cattle mutilation cases and expanding her investigation into patterns of government non-response and local law enforcement frustration with official inaction."
+      },
+      {
+        "year": "1999",
+        "event": "Founded Earthfiles.com, an independent investigative platform dedicated to military and government source testimony on UAP, cattle mutilations, crop circles, and related anomalous phenomena. The platform has published hundreds of interviews and source reports over 25 years and maintains an archive representing one of the longest continuous records of UAP-adjacent investigative journalism."
+      },
+      {
+        "year": "2010s",
+        "event": "Became a recurring contributing expert on the History Channel's 'Ancient Aliens' series, significantly expanding her mainstream audience. Continued Earthfiles reporting, including extensive coverage of the post-2017 disclosure era. Published multiple Earthfiles volumes compiling her military and government source interviews across decades."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "cattle-mutilation-anomalous",
+      "claim": "Cattle mutilations are not explained by conventional predator or scavenger activity and involve surgical precision consistent with advanced technology or unknown agency.",
+      "status": "partially-verified",
+      "notes": "The veterinary and forensic documentation Howe assembled in 'A Strange Harvest' and 'An Alien Harvest' is among the most rigorous in the field. Multiple veterinary forensic examinations have noted characteristics - excision precision, tissue cauterization patterns, absence of blood at sites - that are difficult to fully explain by known predator behavior. FBI involvement in investigating cattle mutilations (documented in the FBI's own FOIA-released 'Animal Mutilation' file) confirms official acknowledgment of the phenomenon. However, the ultimate causative agency remains unidentified; independent forensic veterinarians have both supported and disputed the 'anomalous precision' finding. The phenomenon is real; the explanation is contested."
+    },
+    {
+      "id": "kirtland-briefing-real",
+      "claim": "The document shown to Howe at Kirtland AFB in 1983 was a genuine classified presidential briefing on extraterrestrial intelligence.",
+      "status": "unverified",
+      "notes": "The FBI assessed documents in the same documentary lineage as fabricated. The broader AFOSI operation managed by Richard Doty - whose existence is confirmed - involved showing fabricated classified documents to journalists and researchers as part of a deliberate psychological operation. The weight of evidence suggests the document Howe was shown was fabricated by AFOSI, not a genuine presidential briefing. Howe herself has never fully accepted this conclusion. The encounter's significance lies not in what the document said but in what it reveals about AFOSI's willingness to target credentialed journalists with disinformation."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "M.A. from Stanford University in documentary communications - among the most rigorous journalistic credentials held by any active UAP researcher",
+      "Three Regional Emmy Awards and National Emmy nomination confirm professional peer recognition for her broadcast journalism work independent of UAP subject matter",
+      "Her early cattle mutilation documentation ('A Strange Harvest') applied genuine forensic methodology: veterinary examinations, law enforcement testimony, and systematic pattern analysis",
+      "The FBI's own FOIA-released 'Animal Mutilation' file confirms the agency conducted active field investigations into cattle mutilation, providing independent institutional validation that the phenomenon warranted official inquiry",
+      "25+ years of Earthfiles operation represents a substantial archive of military and government source testimony that, whatever its individual limitations, constitutes a documented record"
+    ],
+    "contradicting": [
+      "The 1983 Kirtland document she was shown has been assessed as fabricated - making her a target of documented AFOSI disinformation, which introduces uncertainty about which subsequent source contacts may have had similar institutional origins",
+      "Her post-2000 work migrated toward increasingly extraordinary claims - including accounts from anonymous sources describing interdimensional beings and channeled intelligences - that the broader UAP research community, including credentialed insiders, regard as methodologically unsound",
+      "Has promoted specific claims that were later found to be fabricated or misrepresented by her sources, without consistent public corrections",
+      "The line between her rigorous early journalism and her later advocacy work represents a genuine, documented career credibility fault line",
+      "Her Ancient Aliens appearances situate her within an entertainment-journalism hybrid context that has contributed to conflating serious UAP research with speculative content"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "richard-doty",
+      "name": "Richard Doty",
+      "role": "AFOSI Special Agent; documented disinformation operative",
+      "relationship": "Doty invited Howe to Kirtland AFB in April 1983 and showed her a fabricated classified briefing document on ETI, making her a direct target of his AFOSI disinformation operation. The encounter is documented in her sworn affidavit and is a key event in both UAP disinformation history and the broader question of how fabricated evidence contaminated credible journalism."
+    },
+    {
+      "id": "john-mack",
+      "name": "Dr. John E. Mack",
+      "role": "Harvard psychiatrist; Pulitzer Prize winner; abduction researcher",
+      "relationship": "Parallel credentialed researchers who both applied academic or professional rigor to anomalous phenomena - Howe from investigative journalism, Mack from Harvard psychiatry. Both faced institutional pressure and credibility challenges for pursuing UAP-adjacent subjects from within established professional frameworks."
+    },
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton T. Friedman",
+      "role": "Nuclear physicist; UAP researcher",
+      "relationship": "Long-term contemporaries in the UAP research community who both conducted extensive field investigation and published findings across overlapping decades. Friedman's nuclear physics background and Howe's broadcast journalism credentials represented the closest approximation to academic and professional rigor the independent UAP research community had in the 1980s-1990s."
+    },
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "Investigative journalist; KLAS-TV Las Vegas",
+      "relationship": "Long-term parallel investigative journalists covering UAP and anomalous phenomena, operating in overlapping media environments including Coast to Coast AM and conference circuits across multiple decades."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1980",
+      "type": "film",
+      "title": "A Strange Harvest",
+      "outlet": "KMGH-TV Denver",
+      "notes": "Regional Emmy Award-winning documentary; the foundational journalistic investigation of the cattle mutilation phenomenon applying systematic forensic analysis. Primary disclosure establishing Howe's credentials in anomalous phenomena research."
+    },
+    {
+      "date": "1989",
+      "type": "written",
+      "title": "An Alien Harvest",
+      "outlet": "LMH Productions",
+      "notes": "Book-length documentation of the cattle mutilation phenomenon incorporating rancher testimonies, veterinary forensic evidence, and law enforcement records across multiple decades and states."
+    },
+    {
+      "date": "1993",
+      "type": "film",
+      "title": "Strange Harvests 1993",
+      "outlet": "LMH Productions",
+      "notes": "Follow-on documentary to 'A Strange Harvest,' documenting new cattle mutilation cases and expanding the investigation of government non-response patterns."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "john-mack",
+      "node_label": "Dr. John E. Mack",
+      "relationship": "Parallel credentialed researchers who both brought academic or professional rigor to anomalous phenomena investigation across overlapping decades; Howe from broadcast journalism, Mack from Harvard psychiatry.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "richard-doty",
+      "node_label": "Richard Doty",
+      "relationship": "Doty targeted Howe with a fabricated classified briefing document at Kirtland AFB in 1983; the encounter made her a documented victim of AFOSI's disinformation operation and is a key event in understanding how fabricated evidence entered credible UAP journalism.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Long-term parallel investigative journalists covering UAP and anomalous phenomena across overlapping media environments including Coast to Coast AM and conference circuits spanning multiple decades.",
+      "connection_type": "professional"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A Strange Harvest - Linda Moulton Howe (1980)",
+      "url": "https://www.earthfiles.com/",
+      "type": "Film",
+      "notes": "Regional Emmy Award-winning documentary; foundational forensic investigation of cattle mutilation phenomenon. Screened at KMGH-TV Denver (1980)."
+    },
+    {
+      "title": "An Alien Harvest - Linda Moulton Howe (1989)",
+      "url": "https://www.amazon.com/dp/0962057428",
+      "type": "Book",
+      "notes": "Book-length documentation of the cattle mutilation investigation incorporating forensic veterinary evidence, rancher testimonies, and law enforcement records (LMH Productions, 1989)."
+    },
+    {
+      "title": "FBI Animal Mutilation FOIA File",
+      "url": "https://vault.fbi.gov/Animal%20Mutilation",
+      "type": "Government Document",
+      "notes": "FBI's own FOIA-released field investigation records on cattle mutilation cases. Independent institutional confirmation that the phenomenon warranted official federal inquiry."
+    },
+    {
+      "title": "Earthfiles.com",
+      "url": "https://www.earthfiles.com/",
+      "type": "Institution",
+      "notes": "Howe's active investigative platform founded in 1999; 25-year archive of military and government source testimony on UAP and anomalous phenomena."
+    }
+  ]
+}

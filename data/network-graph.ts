@@ -828,5 +828,11 @@ export const graphData: GraphData = {
     { source: 'barry-goldwater', target: 'james-mcdonald',  label: 'McDonald corresponded with Goldwater as part of his systematic campaign to engage members of Congress on UAP as a legitimate scientific matter in the late 1960s' },
     { source: 'barry-goldwater', target: 'steven-greer',    label: "Greer's Disclosure Project cited Goldwater's letters and CNN statements as foundational political evidence in congressional briefings; Goldwater's documented access denial became a cornerstone of the disclosure movement's political argument" },
     { source: 'barry-goldwater', target: 'harry-reid',      label: 'Both long-serving U.S. Senators pursued UAP transparency from within the Senate; Reid built on the political groundwork Goldwater had laid decades earlier' },
+
+    // Linda Moulton Howe connections
+    { source: 'linda-moulton-howe', target: 'richard-doty',      label: 'Doty targeted Howe with a fabricated classified briefing document at Kirtland AFB in 1983, making her a documented victim of AFOSI disinformation; the encounter is documented in her sworn affidavit' },
+    { source: 'linda-moulton-howe', target: 'george-knapp',       label: 'long-term parallel investigative journalists covering UAP and anomalous phenomena across overlapping media environments including Coast to Coast AM over multiple decades' },
+    { source: 'linda-moulton-howe', target: 'stanton-friedman',   label: 'long-term contemporaries in the UAP research community who both conducted extensive field investigation and published findings across overlapping decades of independent UAP research' },
+    { source: 'linda-moulton-howe', target: 'john-mack',          label: 'parallel credentialed researchers who both applied professional rigor to anomalous phenomena investigation; Howe from broadcast journalism, Mack from Harvard psychiatry' },
   ],
 };
