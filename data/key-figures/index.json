@@ -1386,5 +1386,19 @@
     "data_file": "linda-moulton-howe.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "jeremy-corbell",
+    "name": "Jeremy Corbell",
+    "aliases": ["Jeremy Kenyon Lockyer Corbell"],
+    "role": "Documentary filmmaker; co-host, Weaponized podcast",
+    "period": "2017-present",
+    "affiliation": "Extraordinary Beliefs; Weaponized podcast",
+    "summary": "Documentary filmmaker who forced multiple official Pentagon acknowledgments of UAP footage through strategic media releases. The USS Russell Pyramid footage, USS Omaha Metallic Orb, and Mosul Orb were all confirmed authentic by the Pentagon following his releases. Director of the definitive Bob Lazar documentary (Netflix, 2019). Co-hosts 'Weaponized' with George Knapp. His written testimony was entered into the Congressional Record during the August 2023 House UAP hearings.",
+    "status": "detailed",
+    "tags": ["filmmaker", "journalist", "navy-footage", "bob-lazar", "weaponized", "pentagon-confirmed", "congressional-record"],
+    "data_file": "jeremy-corbell.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]

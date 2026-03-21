@@ -50,7 +50,6 @@ export const NODE_COLORS: Record<NodeType, string> = {
 export const supplementaryPersonNodes: GraphNode[] = [
   { id: 'john-lear',          name: 'John Lear',          type: 'person', group: 'lazar',    val: 2 },
   { id: 'jim-slaight',        name: 'Jim Slaight',        type: 'person', group: 'fravor',   val: 2 },
-  { id: 'jeremy-corbell',     name: 'Jeremy Corbell',     type: 'person', group: 'corbell',  val: 3 },
   { id: 'charles-mccullough', name: 'Charles McCullough', type: 'person', group: 'mccullough', val: 3 },
 ];
 
@@ -834,5 +833,9 @@ export const graphData: GraphData = {
     { source: 'linda-moulton-howe', target: 'george-knapp',       label: 'long-term parallel investigative journalists covering UAP and anomalous phenomena across overlapping media environments including Coast to Coast AM over multiple decades' },
     { source: 'linda-moulton-howe', target: 'stanton-friedman',   label: 'long-term contemporaries in the UAP research community who both conducted extensive field investigation and published findings across overlapping decades of independent UAP research' },
     { source: 'linda-moulton-howe', target: 'john-mack',          label: 'parallel credentialed researchers who both applied professional rigor to anomalous phenomena investigation; Howe from broadcast journalism, Mack from Harvard psychiatry' },
+
+    // Jeremy Corbell additional connections (base edges pre-exist in graph)
+    { source: 'jeremy-corbell', target: 'tim-gallaudet',  label: 'Gallaudet specifically cited Corbell\'s USS Omaha footage release as significant to naval UAP awareness efforts, the most direct institutional endorsement of his work from a credentialed senior military officer' },
+    { source: 'jeremy-corbell', target: 'tim-burchett',   label: 'Burchett entered the Corbell-Knapp UAP Puzzle document into the Congressional Record during the August 2023 House UAP hearing as official congressional documentation' },
   ],
 };

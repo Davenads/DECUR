@@ -1,0 +1,192 @@
+{
+  "profile": {
+    "id": "jeremy-corbell",
+    "name": "Jeremy Corbell",
+    "aliases": ["Jeremy Kenyon Lockyer Corbell"],
+    "born": "1976",
+    "died": null,
+    "roles": [
+      "Documentary filmmaker; investigative journalist",
+      "Co-host, Weaponized podcast (with George Knapp, 2023-present)",
+      "Director - Bob Lazar: Area 51 & Flying Saucers (2018)"
+    ],
+    "service_period": "2017-present (UAP documentary and investigative work)",
+    "organizations": [
+      "Extraordinary Beliefs",
+      "Weaponized (podcast)"
+    ],
+    "clearance": null,
+    "summary": "Documentary filmmaker and investigative journalist who has forced multiple official Pentagon acknowledgments of UAP footage through a series of strategic media releases. Without formal military, scientific, or intelligence credentials, Corbell obtained and released several classified U.S. Navy UAP videos - including the USS Russell 'Pyramid' triangle footage, the USS Omaha metallic orb footage, and the Mosul Orb - all of which were subsequently confirmed authentic by the Pentagon. His 2018 documentary 'Bob Lazar: Area 51 & Flying Saucers' (Netflix, 2019) drove the largest modern resurgence of public interest in Lazar's account. Co-hosts 'Weaponized' with investigative journalist George Knapp. His written testimony was entered into the Congressional Record during the August 2023 House UAP hearings.",
+    "education": [
+      "Fine arts background; mixed martial arts training",
+      "No formal journalism, military, or scientific academic credentials"
+    ],
+    "early_career": [
+      "Background in martial arts and fine arts before transitioning to documentary filmmaking",
+      "Developed relationships with UAP researchers, government sources, and military insiders through his documentary production work starting in the mid-2010s",
+      "Connected with veteran investigative journalist George Knapp, who became his primary mentor and collaborator, providing access to the deep sourcing network Knapp had built over 30+ years covering UAP"
+    ],
+    "key_events": [
+      {
+        "year": "2017",
+        "event": "Released 'Patient Seventeen' - a documentary investigation into a patient claiming to have had a surgical implant of alleged non-human origin. Established Corbell's approach of presenting fringe subjects with documentary rigor and access journalism."
+      },
+      {
+        "year": "2018",
+        "event": "Directed 'Bob Lazar: Area 51 & Flying Saucers' - a documentary presenting the definitive contemporary account of Bob Lazar's claims about reverse-engineering alien craft at S-4, Papoose Lake. The film secured Lazar's first major media appearances in roughly 30 years. Simultaneously released 'Hunt for the Skinwalker,' documenting the NIDS/BAASS investigations of Skinwalker Ranch conducted under Robert Bigelow."
+      },
+      {
+        "year": "2019",
+        "event": "'Bob Lazar: Area 51 & Flying Saucers' added to Netflix, generating an audience of tens of millions. Corbell coordinated a Joe Rogan Experience interview with Lazar and George Knapp that reached 37+ million views, triggering the largest resurgence of public interest in the Lazar account since the original 1989 KLAS-TV broadcasts."
+      },
+      {
+        "year": "Apr 2020",
+        "event": "The U.S. Department of Defense formally released three Navy UAP videos - FLIR1, GoFast, and Gimbal - that had been circulating publicly since 2017. Corbell's prior reporting and TTSA's earlier releases set the context that made the official release politically viable."
+      },
+      {
+        "year": "2021",
+        "event": "Released multiple Pentagon-confirmed UAP footage packages: the USS Russell 'Pyramid' UAP video (triangular objects filmed with night-vision from the deck of the USS Russell in July 2019), the USS Omaha 'Metallic Orb' footage (a spherical object tracked descending toward the ocean from USS Omaha, July 2019), and the 'Mosul Orb' footage (a spherical object filmed by U.S. military aircraft over Iraq in 2016). The Pentagon confirmed the authenticity of all released footage. Retired Rear Admiral Tim Gallaudet specifically cited Corbell's USS Omaha release as significant to naval and DoD UAP awareness efforts."
+      },
+      {
+        "year": "Aug 2023",
+        "event": "Written testimony co-authored with George Knapp ('The UAP Puzzle') was entered into the Congressional Record by Rep. Tim Burchett during the House Committee on Oversight and Accountability UAP hearing. The document was submitted as formal congressional documentation alongside the sworn testimony of David Grusch, Ryan Graves, and David Fravor."
+      },
+      {
+        "year": "2023",
+        "event": "Launched 'Weaponized' - a dedicated UAP investigative podcast co-hosted with George Knapp. The platform provided a persistent outlet for ongoing UAP source reporting, covering developments in the congressional disclosure push, military witness accounts, and government program allegations."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "pentagon-confirmed-footage",
+      "claim": "Multiple Navy UAP videos Corbell obtained and released are authentic government footage of unidentified aerial phenomena.",
+      "status": "verified",
+      "notes": "The Pentagon explicitly confirmed the authenticity of the USS Russell Pyramid footage, the USS Omaha Metallic Orb footage, and the Mosul Orb footage following Corbell's releases. This is a documented, official government authentication - not merely absence of denial. The confirmation makes these among the few UAP media items with unambiguous official verification."
+    },
+    {
+      "id": "triangle-craft-pyramid",
+      "claim": "The USS Russell 'Pyramid' footage shows actual triangular UAP craft rather than a night-vision lens artifact.",
+      "status": "partially-verified",
+      "notes": "The Pentagon confirmed the footage is authentic Navy video. However, researcher Mick West and others have argued the triangular 'pyramid' shapes are consistent with bokeh artifacts produced by night-vision optics when imaging out-of-focus point sources of light such as distant aircraft. The footage is authentic; whether it depicts triangular craft or lens artifacts remains contested. The Pentagon confirmation authenticated the video as real Navy footage, not the interpretation of what is depicted."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Multiple pieces of footage he released were subsequently confirmed authentic by the Pentagon - an unusually direct form of official validation for a civilian journalist",
+      "Retired Rear Admiral Tim Gallaudet specifically cited Corbell's USS Omaha footage release as significant to naval and DoD UAP awareness efforts, providing institutional endorsement from a credentialed senior officer",
+      "Written testimony entered into the Congressional Record as formal congressional documentation establishes a public institutional record",
+      "His working relationship with George Knapp - the veteran investigative journalist with 30+ years of UAP sourcing - provides indirect sourcing credibility through the Knapp network",
+      "The Bob Lazar documentary drove the most significant renewal of serious public discourse on Lazar's claims in decades without being contradicted by subsequent official disclosures"
+    ],
+    "contradicting": [
+      "No formal journalistic, military, scientific, or intelligence credentials",
+      "His documentaries are explicitly sympathetic to their subjects rather than adversarially investigative - subjects like Lazar are presented credibly without rigorous counterpoint",
+      "The 'Pyramid' footage's triangular appearance has been attributed by credible analysts to night-vision lens bokeh artifacts rather than actual triangular craft",
+      "The pattern of releasing footage ahead of official declassification has raised questions about the nature and provenance of his sources within the DoD",
+      "Some UAP researchers note that his releases are strategically timed for maximum impact, suggesting a degree of coordination with sources that goes beyond independent journalism"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "Investigative journalist; KLAS-TV Las Vegas; Weaponized co-host",
+      "relationship": "Primary mentor and long-term collaborator. Knapp's 30+ years of UAP investigative journalism and deep source network - including the original Bob Lazar break in 1989 - provided the institutional foundation that gave Corbell access and credibility he could not have built independently. Co-hosts Weaponized."
+    },
+    {
+      "id": "tim-gallaudet",
+      "name": "Dr. Timothy Gallaudet",
+      "role": "Retired Rear Admiral, U.S. Navy; former NOAA Acting Administrator",
+      "relationship": "Gallaudet has specifically cited Corbell's release of the USS Omaha metallic orb footage as significant to naval and DoD UAP awareness efforts, providing the most direct institutional endorsement of Corbell's work from a credentialed senior military officer."
+    },
+    {
+      "id": "tim-burchett",
+      "name": "Rep. Tim Burchett",
+      "role": "U.S. Representative, Tennessee; UAP oversight advocate",
+      "relationship": "Burchett entered Corbell's co-authored 'The UAP Puzzle' document into the Congressional Record during the August 2023 House UAP hearing, formally placing Corbell's testimony alongside the sworn accounts of Grusch, Graves, and Fravor as official congressional documentation."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2018",
+      "type": "film",
+      "title": "Bob Lazar: Area 51 & Flying Saucers",
+      "outlet": "Extraordinary Beliefs / Netflix (2019)",
+      "notes": "Definitive contemporary documentary on Bob Lazar's claims, driving the largest modern resurgence of public interest in his account. Netflix distribution reached tens of millions of viewers globally."
+    },
+    {
+      "date": "2018",
+      "type": "film",
+      "title": "Hunt for the Skinwalker",
+      "outlet": "Extraordinary Beliefs",
+      "notes": "Documentary on the NIDS/BAASS investigations of Skinwalker Ranch, drawing on the classified research conducted under Robert Bigelow and featuring testimony from Bigelow and Colm Kelleher."
+    },
+    {
+      "date": "2021",
+      "type": "article",
+      "title": "Pentagon-Confirmed UAP Footage Releases",
+      "outlet": "Mystery Wire / Direct media",
+      "notes": "Series of UAP footage releases including the USS Russell Pyramid video, USS Omaha Metallic Orb, and Mosul Orb - all subsequently confirmed authentic by the Pentagon. The most significant series of civilian-driven official UAP acknowledgments in modern history."
+    },
+    {
+      "date": "Aug 2023",
+      "type": "congressional-testimony",
+      "title": "The UAP Puzzle (with George Knapp)",
+      "outlet": "U.S. House Committee on Oversight and Accountability",
+      "notes": "Co-authored document entered into the Congressional Record by Rep. Tim Burchett during the House UAP hearing. Formal congressional documentation submitted alongside sworn testimony from Grusch, Graves, and Fravor."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Primary mentor and long-term collaborator; Knapp's 30+ year UAP investigative journalism network and original Bob Lazar sourcing provided the institutional foundation that gave Corbell access and credibility he could not have built independently.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "tim-gallaudet",
+      "node_label": "Adm. Tim Gallaudet",
+      "relationship": "Gallaudet specifically cited Corbell's release of the USS Omaha footage as significant to naval UAP awareness efforts - the most direct institutional endorsement of his work from a credentialed senior military officer.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "tim-burchett",
+      "node_label": "Rep. Tim Burchett",
+      "relationship": "Burchett entered the Corbell-Knapp 'UAP Puzzle' document into the Congressional Record during the August 2023 House UAP hearing, formally placing Corbell's testimony in official congressional documentation.",
+      "connection_type": "professional"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bob Lazar: Area 51 & Flying Saucers (2018/2019)",
+      "url": "https://www.netflix.com/title/80174972",
+      "type": "Film",
+      "notes": "Corbell's defining documentary; available on Netflix. The most widely seen contemporary account of Lazar's claims."
+    },
+    {
+      "title": "Pentagon Confirmation of USS Omaha and USS Russell UAP Footage",
+      "url": "https://www.cnn.com/2021/05/14/politics/pentagon-ufo-videos/index.html",
+      "type": "Article",
+      "notes": "CNN reporting on the Pentagon's official confirmation of the UAP footage Corbell released in April-May 2021."
+    },
+    {
+      "title": "House UAP Hearing - Congressional Record Entry (Aug 2023)",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "type": "Government Document",
+      "notes": "House Committee on Oversight and Accountability hearing record including the Corbell-Knapp 'UAP Puzzle' document entered by Rep. Burchett."
+    },
+    {
+      "title": "Weaponized Podcast",
+      "url": "https://www.youtube.com/@JeremyCorbell",
+      "type": "Institution",
+      "notes": "Active investigative UAP podcast co-hosted with George Knapp (2023-present)."
+    }
+  ]
+}
