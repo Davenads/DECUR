@@ -804,6 +804,13 @@ export const graphData: GraphData = {
     { source: 'tom-delonge', target: 'jim-semivan',      label: 'recruited Semivan as TTSA Vice President of Operations; Semivan\'s CIA/NCS background gave TTSA intelligence community institutional credibility' },
     { source: 'tom-delonge', target: 'nimitz-tic-tac',   label: 'coordinated the public release of the FLIR1 Tic Tac video in December 2017 alongside the NYT article, making it the first officially acknowledged UAP footage in modern U.S. history' },
 
+    // John Alexander connections
+    { source: 'john-alexander', target: 'hal-puthoff',    label: "Puthoff's SRI remote viewing research overlapped with Alexander's INSCOM human technology work under General Stubblebine; Puthoff was a key scientific contributor to the Advanced Theoretical Physics Conference Alexander convened" },
+    { source: 'john-alexander', target: 'jacques-vallee', label: 'Vallee participated in the ATP Conference as scientific advisor and wrote the introduction to Alexander\'s 2011 UAP book; both share the view that genuine anomalous phenomena exist without necessarily requiring a coordinated cover-up' },
+    { source: 'john-alexander', target: 'colm-kelleher',  label: 'co-participants in NIDS investigations of Skinwalker Ranch; Alexander\'s counterintelligence and field operations background complemented Kelleher\'s scientific approach to NIDS field research' },
+    { source: 'john-alexander', target: 'nids',           label: 'participated in NIDS field investigations of anomalous phenomena at Skinwalker Ranch as part of Bigelow\'s assembled research team post-retirement' },
+    { source: 'john-alexander', target: 'los-alamos',     label: 'served as Director of Non-Lethal Weapons Department at Los Alamos National Laboratory from 1988; built the DoD non-lethal weapons research program with direct congressional oversight' },
+
     // Barry Goldwater connections
     { source: 'barry-goldwater', target: 'nathan-twining',  label: "Twining's classified UAP protocols at Wright-Patterson established the secrecy culture that produced the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay" },
     { source: 'barry-goldwater', target: 'james-mcdonald',  label: 'McDonald corresponded with Goldwater as part of his systematic campaign to engage members of Congress on UAP as a legitimate scientific matter in the late 1960s' },

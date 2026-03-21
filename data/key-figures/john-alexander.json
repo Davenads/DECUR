@@ -1,0 +1,209 @@
+{
+  "profile": {
+    "id": "john-alexander",
+    "name": "Col. John Alexander",
+    "aliases": ["John B. Alexander", "Dr. John Alexander"],
+    "born": "1937 - New York",
+    "died": null,
+    "roles": [
+      "Colonel, U.S. Army Special Forces (ret.)",
+      "Chief of Human Technology, U.S. Army Intelligence and Security Command (INSCOM)",
+      "Director, Non-Lethal Weapons Department, Los Alamos National Laboratory",
+      "Organizer, Advanced Theoretical Physics Conference (1985-1988)"
+    ],
+    "service_period": "Mid-1950s-1988 (U.S. Army)",
+    "organizations": [
+      "U.S. Army Special Forces",
+      "U.S. Army Intelligence and Security Command (INSCOM)",
+      "Los Alamos National Laboratory",
+      "National Institute for Discovery Science (NIDS)"
+    ],
+    "clearance": "Top Secret/SCI (former)",
+    "summary": "Retired U.S. Army Special Forces Colonel, Vietnam combat veteran, and one of the most consequential figures in the history of classified U.S. government UAP investigation. While Chief of Human Technology at INSCOM under General Albert Stubblebine, Alexander convened the Advanced Theoretical Physics Conference (ATP, 1985-1988) - a formally structured, clearance-appropriate interagency UAP working group held in a SCIF at the BDM Corporation in McLean, Virginia, with Top Secret-cleared participants from the Army, Navy, Air Force, CIA, NSA, DIA, and the aerospace industry. The ATP Conference is the most substantive classified UAP investigation documented between Project Blue Book's closure in 1969 and the creation of AATIP in 2007. Post-retirement, he directed non-lethal weapons research at Los Alamos and participated in Robert Bigelow's NIDS investigations of the Skinwalker Ranch phenomenon.",
+    "education": [
+      "B.A., University of Nebraska at Omaha",
+      "M.A., Pepperdine University",
+      "Ph.D., Thanatology (Death Studies), Walden University"
+    ],
+    "early_career": [
+      "Enlisted in the U.S. Army in the mid-1950s; qualified for Special Forces and built a career as a Green Beret officer",
+      "Served multiple combat tours in Vietnam as a Special Forces commander; decorated for valor",
+      "Rose through the ranks to Colonel; accumulated expertise in unconventional warfare, psychological operations, and human performance enhancement programs",
+      "Assigned to INSCOM under General Albert Stubblebine, whose command was the Army's most significant foray into anomalous human performance research including remote viewing"
+    ],
+    "key_events": [
+      {
+        "year": "1966",
+        "event": "Deployed to Vietnam as a Special Forces commander. Served multiple combat tours across the course of the war, commanding unconventional warfare and direct action missions."
+      },
+      {
+        "year": "1971",
+        "event": "Attended the Command and General Staff College at Fort Leavenworth, Kansas. During this period developed interest in anomalous human performance capabilities and their potential military applications."
+      },
+      {
+        "year": "1982",
+        "event": "Assigned to U.S. Army Intelligence and Security Command (INSCOM) as Chief of Human Technology, under Commander General Albert Stubblebine. INSCOM under Stubblebine was the locus of the Army's most significant anomalous research programs, including remote viewing and psychic intelligence efforts. Alexander's role involved assessing the military utility of a range of non-conventional human performance capabilities."
+      },
+      {
+        "year": "1985",
+        "event": "Convened the first meeting of the Advanced Theoretical Physics Conference (ATP) at the BDM Corporation's Sensitive Compartmented Information Facility (SCIF) in McLean, Virginia. The conference assembled Top Secret-cleared participants from the Army, Navy, Air Force, CIA, NSA, DIA, and the aerospace industry. This was the most formally structured, clearance-appropriate interagency investigation of UAP between Project Blue Book's closure (1969) and AATIP's creation (2007). The ATP ran for approximately three years, meeting roughly quarterly."
+      },
+      {
+        "year": "1988",
+        "event": "Retired from the U.S. Army at the rank of Colonel after approximately 30 years of service. The ATP Conference concluded around this time. Its key finding was that, as of the mid-to-late 1980s, no coordinated, centrally managed U.S. government UAP program appeared to exist - an assessment that subsequent insiders (Elizondo, Mellon) suggest was either accurate for its era or incomplete."
+      },
+      {
+        "year": "1988",
+        "event": "Joined Los Alamos National Laboratory as Director of the Non-Lethal Weapons Department. Spent the following decade developing and advocating for non-lethal weapons as a category of modern warfare; this work had direct DoD and congressional oversight and establishes his post-Army institutional credibility."
+      },
+      {
+        "year": "1990",
+        "event": "Published 'The Warrior's Edge' (with Janet Morris and Richard Groller) - an examination of human performance enhancement, unconventional capabilities, and mind-body research in a military context. The book draws on his INSCOM experience and represents the public layer of his anomalous research work."
+      },
+      {
+        "year": "Late 1990s",
+        "event": "Connected with Robert Bigelow's National Institute for Discovery Science (NIDS) and participated in investigations of anomalous phenomena at Skinwalker Ranch alongside Bigelow, Colm Kelleher, and Jacques Vallee. His Special Forces and intelligence background provided a counterintelligence and field operations perspective to the NIDS scientific team."
+      },
+      {
+        "year": "1999",
+        "event": "Published 'Future War: Non-Lethal Weapons in Twenty-First Century Warfare,' the most widely circulated product of his Los Alamos non-lethal weapons work. The book became a reference text in military and law enforcement circles."
+      },
+      {
+        "year": "2011",
+        "event": "Published 'UFOs: Myths, Conspiracies, and Realities' (foreword by Burt Rutan; introduction by Jacques Vallee) - a systematic examination of the UAP evidence base from the perspective of a cleared insider who investigated it through official channels. The book is notable for what it admits (genuine anomalous phenomena exist and warrant investigation) and what it denies (a coordinated, centrally managed government cover-up). It is the primary public documentation of the ATP Conference."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "no-coordinated-uap-program-1985-88",
+      "claim": "As of the mid-to-late 1980s, no centrally coordinated, secret U.S. government UAP program existed - collection and study efforts were 'ad hoc' rather than systematic.",
+      "status": "partially-verified",
+      "notes": "This is the ATP Conference's stated conclusion as reported by Alexander in his 2011 book. The finding was the product of a formally structured, cleared interagency investigation conducted in a government SCIF. However, subsequent insiders - particularly Elizondo and Davis regarding AATIP (2007) and AAWSAP (2008) - describe programs that either postdate the ATP's investigation window or that ATP participants may not have had visibility into. Whether the ATP finding was accurate, outdated, compartmented away from, or itself a form of misdirection is one of the central unresolved questions it raises. Independently, the ATP Conference's existence as a cleared interagency investigation is documented through participant accounts including Jack Houck's notes."
+    },
+    {
+      "id": "uap-anomalous-phenomena-genuine",
+      "claim": "Genuine anomalous aerial phenomena exist that are not explained by conventional aerospace technology or natural phenomena.",
+      "status": "partially-verified",
+      "notes": "Alexander explicitly affirms this in 'UFOs: Myths, Conspiracies, and Realities' - distinguishing between the reality of the phenomenon and the separate question of whether a government cover-up exists. He argues the evidence for genuine anomalous phenomena is strong while the evidence for a coordinated institutional suppression is weak. This nuanced position distinguishes him from both dismissive skeptics and maximalist disclosure advocates."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Retired U.S. Army Colonel with 30 years of service including combat command and senior intelligence roles - among the most rigorous institutional backgrounds of any public UAP figure",
+      "The ATP Conference was conducted through proper government channels in a cleared government SCIF - not an informal discussion but a formal classified investigation using appropriate protocols",
+      "His post-Army work at Los Alamos National Laboratory under direct DoD oversight provides independent institutional credibility",
+      "Jacques Vallee - among the most rigorous scientific researchers in the UAP field - wrote the introduction to his 2011 book, reflecting genuine peer credibility",
+      "His nuanced position (phenomena real, coordinated cover-up unproven) is less likely to reflect motivated reasoning than more absolute positions in either direction",
+      "Burt Rutan's foreword to the 2011 book provides independent aerospace engineering credibility"
+    ],
+    "contradicting": [
+      "His Ph.D. is in Thanatology from Walden University - a non-residential distance program - rather than a hard science or technical intelligence discipline; critics have noted this as credential inflation relative to his scientific claims",
+      "His association with INSCOM's 'paranormal soldiers' program under General Stubblebine is viewed skeptically in mainstream defense circles",
+      "The ATP Conference's 'no coordinated program' conclusion conflicts with AATIP-era accounts from Elizondo and Mellon, raising questions about whether ATP had full visibility or whether the conclusion itself served an institutional purpose",
+      "His NIDS participation connects him to Robert Bigelow's network, which is regarded by some researchers as having its own institutional and intelligence community entanglements",
+      "The detailed contents of ATP Conference discussions remain largely undocumented beyond Alexander's own characterizations"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold E. Puthoff",
+      "role": "Physicist; SRI remote viewing researcher; TTSA co-founder",
+      "relationship": "Puthoff's remote viewing and anomalous cognition research at Stanford Research Institute overlapped directly with Alexander's INSCOM human technology work under General Stubblebine. Puthoff participated in the Advanced Theoretical Physics Conference as one of its key scientific contributors."
+    },
+    {
+      "id": "jacques-vallee",
+      "name": "Dr. Jacques F. Vallee",
+      "role": "Astrophysicist; computer scientist; UAP researcher",
+      "relationship": "Vallee participated in the ATP Conference as a scientific advisor and wrote the introduction to Alexander's 2011 book 'UFOs: Myths, Conspiracies, and Realities.' Both shared the view that UAP warranted rigorous scientific investigation and participated in the NIDS network."
+    },
+    {
+      "id": "colm-kelleher",
+      "name": "Dr. Colm A. Kelleher",
+      "role": "Biochemist; NIDS Deputy Administrator; BAASS research lead",
+      "relationship": "Co-participants in the NIDS (National Institute for Discovery Science) investigations of the Skinwalker Ranch phenomenon. Alexander's counterintelligence and field operations expertise complemented Kelleher's scientific approach to NIDS field research."
+    },
+    {
+      "id": "robert-bigelow",
+      "name": "Robert T. Bigelow",
+      "role": "Aerospace entrepreneur; NIDS founder; BAASS contractor",
+      "relationship": "Bigelow's NIDS provided Alexander with the institutional framework for continuing anomalous phenomena research after his retirement. Alexander contributed to NIDS field operations at Skinwalker Ranch as part of Bigelow's assembled research team."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1990",
+      "type": "written",
+      "title": "The Warrior's Edge",
+      "outlet": "William Morrow and Company",
+      "notes": "Co-authored with Janet Morris and Richard Groller. Covers human performance enhancement, remote viewing, and unconventional capabilities from the perspective of his INSCOM career. The public-facing layer of his anomalous research work from the Stubblebine era."
+    },
+    {
+      "date": "1999",
+      "type": "written",
+      "title": "Future War: Non-Lethal Weapons in Twenty-First Century Warfare",
+      "outlet": "St. Martin's Press",
+      "notes": "Primary public product of his Los Alamos non-lethal weapons work. Became a reference text in military and law enforcement contexts and established his post-Army institutional credibility."
+    },
+    {
+      "date": "2011",
+      "type": "written",
+      "title": "UFOs: Myths, Conspiracies, and Realities",
+      "outlet": "Thomas Dunne Books / St. Martin's Press",
+      "notes": "The primary public documentation of the Advanced Theoretical Physics Conference and Alexander's systematic assessment of the UAP evidence base. Foreword by Burt Rutan; introduction by Jacques Vallee. Argues genuine anomalous phenomena exist while questioning the coordinated cover-up narrative."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Dr. Hal Puthoff",
+      "relationship": "Puthoff's SRI remote viewing research directly overlapped with Alexander's INSCOM human technology work under General Stubblebine; Puthoff was also a key scientific contributor to the Advanced Theoretical Physics Conference that Alexander convened.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "jacques-vallee",
+      "node_label": "Dr. Jacques Vallee",
+      "relationship": "Vallee participated in the ATP Conference as a scientific advisor; later wrote the introduction to Alexander's 2011 UAP book; both shared the view that anomalous phenomena warranted rigorous investigation without presupposing a government conspiracy.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "colm-kelleher",
+      "node_label": "Dr. Colm Kelleher",
+      "relationship": "Co-participants in NIDS investigations of Skinwalker Ranch; Alexander's counterintelligence and field operations background complemented Kelleher's scientific approach to NIDS field research.",
+      "connection_type": "investigative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "UFOs: Myths, Conspiracies, and Realities - John Alexander (2011)",
+      "url": "https://www.amazon.com/dp/125000201X",
+      "type": "Book",
+      "notes": "Primary source for the ATP Conference and Alexander's systematic UAP assessment. Foreword by Burt Rutan; introduction by Jacques Vallee (Thomas Dunne Books, 2011)."
+    },
+    {
+      "title": "The Warrior's Edge - Alexander, Morris, Groller (1990)",
+      "url": "https://www.amazon.com/dp/0380716011",
+      "type": "Book",
+      "notes": "Public documentation of his INSCOM-era human performance research including remote viewing context (William Morrow, 1990)."
+    },
+    {
+      "title": "Hunt for the Skinwalker - Colm Kelleher and George Knapp (2005)",
+      "url": "https://www.amazon.com/dp/1416505210",
+      "type": "Book",
+      "notes": "Documents the NIDS investigation of Skinwalker Ranch in which Alexander participated; provides corroborating context for his post-Army anomalous research connections."
+    },
+    {
+      "title": "The Secret History of Fort Meade - Jim Schnabel (1994)",
+      "url": "https://www.amazon.com/dp/0440614708",
+      "type": "Book",
+      "notes": "Documents the INSCOM remote viewing program under General Stubblebine in which Alexander operated; provides institutional context for his INSCOM-era anomalous research work."
+    }
+  ]
+}

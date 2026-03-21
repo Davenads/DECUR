@@ -1330,5 +1330,19 @@
     "data_file": "tom-delonge.json",
     "type": "executive",
     "includeInExplore": true
+  },
+  {
+    "id": "john-alexander",
+    "name": "Col. John Alexander",
+    "aliases": ["John B. Alexander", "Dr. John Alexander"],
+    "role": "U.S. Army Special Forces Colonel; Chief of Human Technology, INSCOM; Director, Non-Lethal Weapons, Los Alamos",
+    "period": "1982-1988 (INSCOM/ATP); 1988-2000s (Los Alamos/NIDS)",
+    "affiliation": "U.S. Army; INSCOM; Los Alamos National Laboratory; NIDS",
+    "summary": "Retired U.S. Army Special Forces Colonel who convened the Advanced Theoretical Physics Conference (ATP, 1985-1988) - the most substantive classified interagency UAP investigation between Project Blue Book and AATIP. Held in a SCIF at BDM Corporation with TS-cleared participants from Army, Navy, Air Force, CIA, NSA, and DIA, the ATP's finding that no coordinated UAP program existed is itself a historically significant data point. Post-retirement, he directed non-lethal weapons research at Los Alamos and participated in Bigelow's NIDS Skinwalker Ranch investigations alongside Vallee and Kelleher.",
+    "status": "detailed",
+    "tags": ["military", "inscom", "special-forces", "atp-conference", "los-alamos", "nids", "skinwalker", "remote-viewing"],
+    "data_file": "john-alexander.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
