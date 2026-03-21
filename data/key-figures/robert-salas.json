@@ -1,0 +1,203 @@
+{
+  "profile": {
+    "id": "robert-salas",
+    "name": "Capt. Robert Salas",
+    "aliases": ["Robert L. Salas", "Bob Salas"],
+    "born": "1940",
+    "died": null,
+    "roles": [
+      "USAF Minuteman ICBM Launch Control Officer, Malmstrom AFB",
+      "Captain, U.S. Air Force (ret.)",
+      "Author - Faded Giant (2005)",
+      "Co-organizer, UFOs and Nuclear Weapons National Press Club event (2010)"
+    ],
+    "service_period": "1964-1971 (U.S. Air Force)",
+    "organizations": [
+      "U.S. Air Force",
+      "Strategic Air Command",
+      "341st Strategic Missile Wing, Malmstrom AFB"
+    ],
+    "clearance": "Top Secret (former)",
+    "summary": "Retired U.S. Air Force Captain and Minuteman ICBM Launch Control Officer who is the primary living witness to the March 16, 1967 Echo Flight incident at Malmstrom AFB, Montana - in which all ten nuclear-armed Minuteman missiles went offline simultaneously while surface security personnel reported a glowing red UAP hovering over the front gate. The missile shutdowns are documented in declassified USAF records. Salas went public in the 1990s and co-organized the landmark September 2010 National Press Club 'UFOs and Nuclear Weapons' press conference alongside six other former USAF officers, presenting signed affidavits and declassified documents before national media.",
+    "education": [
+      "B.S., U.S. Air Force Academy (1964)",
+      "M.S., Systems Management, University of Southern California"
+    ],
+    "early_career": [
+      "Commissioned as a USAF officer following graduation from the Air Force Academy in 1964",
+      "Assigned to Strategic Air Command as a Minuteman I ICBM launch control officer at Malmstrom AFB, Montana",
+      "Trained in nuclear weapons protocols and Minuteman missile launch procedures under Strategic Air Command"
+    ],
+    "key_events": [
+      {
+        "year": "1964",
+        "event": "Graduated from the U.S. Air Force Academy and commissioned as a USAF officer. Assigned to Strategic Air Command and trained as a Minuteman I ICBM launch control officer."
+      },
+      {
+        "year": "1966",
+        "event": "Assigned to Malmstrom AFB, Montana, as an on-duty missile combat crew commander for the 341st Strategic Missile Wing. Responsible for launch readiness of a flight of ten nuclear-armed Minuteman I intercontinental ballistic missiles."
+      },
+      {
+        "year": "Mar 1967",
+        "event": "The Echo Flight incident: while serving as the on-duty launch control officer in an underground Launch Control Facility, surface security guards reported a glowing red oval object hovering silently over the front gate. Moments later, all ten Minuteman ICBMs in the flight went into 'No-Go' status sequentially, rendering the entire flight non-operational. The simultaneous failure of all ten missiles - a failure mode with no precedent in SAC operations - was officially documented and investigated. The on-duty flight security commander corroborated the UAP sighting in a separate report."
+      },
+      {
+        "year": "1971",
+        "event": "Left active USAF service. Entered the aerospace industry and spent the following two decades in private-sector work, maintaining silence on the Malmstrom incident."
+      },
+      {
+        "year": "1994",
+        "event": "Spoke publicly about the Echo Flight incident for the first time, contacting UAP researchers and historians. Connected with researcher Robert Hastings, who had been independently documenting UAP incidents at nuclear weapons facilities through FOIA requests and witness interviews."
+      },
+      {
+        "year": "2005",
+        "event": "Co-authored 'Faded Giant' with researcher James Klotz - the first systematic, document-backed account of the Malmstrom incident, incorporating declassified USAF investigation records, incident reports, and corroborating witness statements."
+      },
+      {
+        "year": "Sep 2010",
+        "event": "Co-organized and presented at the 'UFOs and Nuclear Weapons' press conference at the National Press Club in Washington D.C. alongside six other former USAF officers. Each officer presented signed affidavits and referenced declassified military records documenting UAP activity at nuclear weapons facilities. The event received major national media coverage including ABC News, CBS News, CNN, and the Washington Times and is preserved in the C-SPAN archive."
+      },
+      {
+        "year": "2014",
+        "event": "Published 'Unidentified: The UFO Phenomenon - How World Governments Have Conspired to Conceal Humanity's Biggest Secret,' expanding on the nuclear-UAP nexus documented in 'Faded Giant' with additional research and testimony from other military witnesses."
+      },
+      {
+        "year": "2021",
+        "event": "Co-organized a follow-on National Press Club news conference specifically focused on UAP and nuclear weapons, continuing his public advocacy for government disclosure of the Malmstrom incident and related cases."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "malmstrom-uap-missile-shutdown",
+      "claim": "A UAP observed hovering over the Malmstrom AFB front gate directly caused all ten Minuteman ICBMs to go offline simultaneously on March 16, 1967.",
+      "status": "partially-verified",
+      "notes": "The simultaneous shutdown of all ten Echo Flight Minuteman ICBMs on March 16, 1967 is documented in declassified USAF records - the malfunction itself is not in dispute. The surface security commander's report of an observed UAP during the shutdown is corroborated by a second witness account. However, the USAF's own contemporaneous investigation concluded that 'no causal relationship' between the reported UAP and the shutdowns could be established, and attributed the malfunction to an undetermined electrical or oscillator fault. A second officer present in the launch capsule (Eric Carlson) has disputed Salas's specific account of the sequence of events, though both acknowledge the missile shutdowns. Salas did not go public until the 1990s, roughly 25 years after the event."
+    },
+    {
+      "id": "government-suppression-nuclear-uap",
+      "claim": "The U.S. government has deliberately suppressed documentation of UAP incidents at nuclear weapons facilities.",
+      "status": "unverified",
+      "notes": "Salas and Robert Hastings have documented numerous UAP incidents at nuclear facilities through FOIA requests and military witness testimony. The pattern of incidents is documented; the claim of coordinated suppression rests on circumstantial evidence - the classification of incident reports, witness accounts of being told not to discuss events, and the absence of official public acknowledgment. No document explicitly confirming a deliberate suppression policy has been declassified."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "U.S. Air Force Academy graduate and commissioned officer with nuclear weapons clearance and launch authority - among the most vetted personnel in the military",
+      "The missile shutdowns themselves are documented in declassified USAF records and have never been disputed as a factual event",
+      "A second witness - the surface security commander on duty that morning - filed a corroborating report of an observed UAP at the time of the shutdowns",
+      "The 2010 National Press Club event included six additional former USAF officers presenting signed affidavits about nuclear-UAP incidents at other facilities, substantially broadening the evidentiary base beyond Salas's single account",
+      "The event is archived in C-SPAN records, making his testimony a permanent broadcast record",
+      "No identified personal financial motivation for fabrication - Salas maintained silence for nearly 30 years before going public"
+    ],
+    "contradicting": [
+      "The USAF's own contemporaneous investigation found no causal relationship between the reported UAP and the missile shutdowns",
+      "A second officer present in the launch capsule (Eric Carlson) has disputed key elements of Salas's account, including the specific sequence of events",
+      "Salas did not go public until the 1990s, approximately 25-30 years after the event - long-interval memory reconstruction is a documented credibility concern",
+      "Researcher Mick West and others have argued the simultaneous shutdown had a mundane electrical explanation consistent with known Minuteman vulnerability to radio frequency interference",
+      "Salas was in an underground capsule with no direct line-of-sight to the surface UAP - his account of the UAP is secondhand, relayed by the security commander by phone"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "robert-hastings",
+      "name": "Robert L. Hastings",
+      "role": "UAP researcher; nuclear weapons incidents specialist",
+      "relationship": "Primary research collaborator; Hastings connected with Salas in the mid-1990s and co-developed the documentary case for the nuclear-UAP nexus through FOIA requests, declassified USAF records, and coordinated witness outreach. Together they organized the 2010 National Press Club event."
+    },
+    {
+      "id": "charles-halt",
+      "name": "Lt. Col. Charles Halt",
+      "role": "USAF Deputy Base Commander; Rendlesham Forest witness",
+      "relationship": "Fellow senior USAF officer and UAP witness who participated in the broader nuclear and military UAP disclosure effort. Both Halt and Salas presented signed affidavits documenting their respective encounters and have appeared together at UAP disclosure events advocating for government transparency."
+    },
+    {
+      "id": "steven-greer",
+      "name": "Dr. Steven M. Greer",
+      "role": "Disclosure Project founder",
+      "relationship": "Salas participated in Greer's Disclosure Project in 2001, providing testimony for the National Press Club event that assembled over 20 military and government witnesses. The Disclosure Project was Salas's first major public platform before his independent advocacy through the nuclear-UAP nexus events."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "May 2001",
+      "type": "speech",
+      "title": "Disclosure Project National Press Club Testimony",
+      "outlet": "National Press Club, Washington D.C.",
+      "notes": "Testified as part of Steven Greer's Disclosure Project event at the National Press Club, providing his first major public account of the Malmstrom Echo Flight incident before assembled media representatives. One of over 20 former military and government witnesses who testified."
+    },
+    {
+      "date": "2005",
+      "type": "written",
+      "title": "Faded Giant",
+      "outlet": "BookSurge Publishing",
+      "notes": "Co-authored with researcher James Klotz. The first systematic, document-backed account of the March 1967 Malmstrom Echo Flight incident, incorporating declassified USAF records, incident reports, and corroborating witness statements. Primary written disclosure and the foundational reference for the nuclear-UAP nexus case."
+    },
+    {
+      "date": "Sep 2010",
+      "type": "speech",
+      "title": "UFOs and Nuclear Weapons - National Press Club",
+      "outlet": "National Press Club, Washington D.C.",
+      "notes": "Co-organized and presented at the landmark 'UFOs and Nuclear Weapons' press conference alongside six other former USAF officers. Each presented signed affidavits and declassified military documentation. Event received national media coverage from ABC, CBS, CNN, and Washington Times. Preserved in C-SPAN archive."
+    },
+    {
+      "date": "2014",
+      "type": "written",
+      "title": "Unidentified: The UFO Phenomenon",
+      "outlet": "Career Press",
+      "notes": "Expanded follow-on to 'Faded Giant,' broadening the nuclear-UAP nexus argument with additional military witness testimony and research into government suppression of UAP evidence at nuclear facilities."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "case",
+      "node_id": "malmstrom-afb-1967",
+      "node_label": "Malmstrom AFB (1967)",
+      "relationship": "Primary living witness to the Echo Flight incident; was the on-duty launch control officer when all ten Minuteman ICBMs went offline simultaneously as surface security personnel reported a UAP hovering over the installation.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "robert-hastings",
+      "node_label": "Robert Hastings",
+      "relationship": "Primary research collaborator who connected with Salas in the mid-1990s; Hastings had independently documented the Malmstrom incident through FOIA requests and together they developed the systematic documentary case for the nuclear-UAP nexus.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "charles-halt",
+      "node_label": "Lt. Col. Charles Halt",
+      "relationship": "Fellow senior USAF officer and UAP witness who co-participated in nuclear and military UAP disclosure events; both submitted signed affidavits and have appeared together advocating for government transparency on UAP incidents at military installations.",
+      "connection_type": "professional"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Faded Giant - Robert Salas and James Klotz (2005)",
+      "url": "https://www.amazon.com/dp/1419620614",
+      "type": "Book",
+      "notes": "Primary source - the systematic document-backed account of the March 1967 Malmstrom Echo Flight incident co-authored by Salas and researcher James Klotz (BookSurge Publishing, 2005)."
+    },
+    {
+      "title": "UFOs and Nuclear Weapons - National Press Club (Sep 2010)",
+      "url": "https://www.c-span.org/video/?295718-1/ufos-nuclear-weapons-sites",
+      "type": "Press Conference",
+      "notes": "C-SPAN archive of the September 27, 2010 National Press Club press conference co-organized by Salas and Robert Hastings, featuring seven former USAF officers presenting signed affidavits and declassified records on nuclear-UAP incidents."
+    },
+    {
+      "title": "Unidentified: The UFO Phenomenon - Robert Salas (2014)",
+      "url": "https://www.amazon.com/dp/1601633394",
+      "type": "Book",
+      "notes": "Follow-on to Faded Giant, expanding the nuclear-UAP nexus argument (Career Press, 2014)."
+    },
+    {
+      "title": "Malmstrom AFB Echo Flight Incident - Declassified USAF Records",
+      "url": "https://www.theblackvault.com/documentarchive/malmstrom-afb-ufo-incidents-march-1967/",
+      "type": "Government Document",
+      "notes": "Declassified USAF incident records and investigation reports documenting the simultaneous shutdown of the Echo Flight Minuteman ICBMs on March 16, 1967. Available via The Black Vault FOIA archive."
+    }
+  ]
+}

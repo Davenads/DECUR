@@ -1288,5 +1288,19 @@
     "data_file": "barry-goldwater.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "robert-salas",
+    "name": "Capt. Robert Salas",
+    "aliases": ["Robert L. Salas", "Bob Salas"],
+    "role": "USAF Minuteman ICBM Launch Control Officer, Malmstrom AFB",
+    "period": "1964-1971",
+    "affiliation": "U.S. Air Force, Strategic Air Command",
+    "summary": "Retired USAF Captain and primary living witness to the March 16, 1967 Echo Flight incident at Malmstrom AFB, in which all ten nuclear-armed Minuteman ICBMs went offline simultaneously while surface security personnel reported a UAP hovering over the front gate. The missile shutdowns are documented in declassified USAF records. Salas co-organized the 2010 National Press Club 'UFOs and Nuclear Weapons' press conference alongside six other former USAF officers, presenting signed affidavits before national media.",
+    "status": "detailed",
+    "tags": ["military", "usaf", "nuclear", "malmstrom", "icbm", "strategic-air-command", "national-press-club"],
+    "data_file": "robert-salas.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

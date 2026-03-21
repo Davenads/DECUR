@@ -784,6 +784,12 @@ export const graphData: GraphData = {
     { source: 'michael-herrera', target: 'tim-burchett',    label: 'Burchett co-organized the July 2023 hearing where Herrera testified publicly for the first time' },
     { source: 'michael-herrera', target: 'mike-gallagher',  label: 'Gallagher co-chaired the July 2023 hearing where Herrera described the 2009 Sumatra encounter' },
 
+    // Robert Salas connections
+    { source: 'robert-salas', target: 'malmstrom-afb-1967', label: 'primary living witness to the Echo Flight incident; was the on-duty launch control officer when all ten Minuteman ICBMs went offline as security personnel reported a UAP over the installation' },
+    { source: 'robert-salas', target: 'robert-hastings',    label: 'primary research collaborator; co-developed the documentary case for the nuclear-UAP nexus and co-organized the 2010 National Press Club UFOs and Nuclear Weapons press conference' },
+    { source: 'robert-salas', target: 'charles-halt',       label: 'fellow USAF officer and UAP witness; both submitted signed affidavits and appeared together at NPC events advocating for government transparency on military UAP incidents' },
+    { source: 'robert-salas', target: 'steven-greer',       label: 'participated in the 2001 Disclosure Project NPC event as one of over 20 former military witnesses presenting testimony on government UAP suppression' },
+
     // Barry Goldwater connections
     { source: 'barry-goldwater', target: 'nathan-twining',  label: "Twining's classified UAP protocols at Wright-Patterson established the secrecy culture that produced the 'Blue Room' access barrier Goldwater encountered when denied entry by General LeMay" },
     { source: 'barry-goldwater', target: 'james-mcdonald',  label: 'McDonald corresponded with Goldwater as part of his systematic campaign to engage members of Congress on UAP as a legitimate scientific matter in the late 1960s' },

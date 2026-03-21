@@ -108,6 +108,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'fife-symington':     { label: 'Gov. Fife Symington',     color: '#d97706' },
   'michael-herrera':    { label: 'Michael Herrera',         color: '#065f46' },
   'barry-goldwater':    { label: 'Sen. Barry Goldwater',    color: '#b45309' },
+  'robert-salas':       { label: 'Capt. Robert Salas',      color: '#0c4a6e' },
 };
 
 const UAP_COLOR = '#93c5e8';
