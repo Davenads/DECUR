@@ -1456,5 +1456,19 @@
     "data_file": "bruce-maccabee.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "jesse-marcel-jr",
+    "name": "Col. Jesse Marcel Jr.",
+    "aliases": ["Jesse Marcel Jr.", "Jesse Marcel Junior"],
+    "role": "Otolaryngologist; Colonel, Montana Army National Guard; Roswell Witness",
+    "period": "1947-2013",
+    "affiliation": "Montana Army National Guard; private medical practice, Helena MT",
+    "summary": "Physician and Montana Army National Guard Colonel who, as an 11-year-old in July 1947, handled debris his father Jesse Marcel Sr. brought home from the Foster Ranch crash site before reporting to RAAF base. Maintained a consistent firsthand account of anomalous material properties across 35 years of public testimony. Co-authored 'The Roswell Legacy' (2009) and gave congressional-style testimony at the Citizen Hearing on Disclosure weeks before his death in August 2013.",
+    "status": "detailed",
+    "tags": ["roswell", "witness", "military", "physician", "historical", "1947", "disclosure"],
+    "data_file": "jesse-marcel-jr.json",
+    "type": "official",
+    "includeInExplore": false
   }
 ]

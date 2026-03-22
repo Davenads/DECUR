@@ -861,6 +861,11 @@ export const graphData: GraphData = {
     { source: 'bruce-maccabee', target: 'robert-bigelow',    label: 'Bigelows NIDS engaged Maccabee for photo and film analysis work in the 1990s-2000s' },
     { source: 'bruce-maccabee', target: 'colm-kelleher',     label: 'Kellehers NIDS administration supported Maccabees analytical work under Bigelow funding' },
 
+    // Jesse Marcel Jr. connections
+    { source: 'jesse-marcel-jr', target: 'jesse-marcel',      label: 'son of Jesse Marcel Sr.; directly handled Roswell debris his father retrieved from the Foster Ranch crash site in July 1947' },
+    { source: 'jesse-marcel-jr', target: 'stanton-friedman',  label: 'Friedmans 1978 interview with Marcel Sr. drew Marcel Jr. into public disclosure; remained in contact through subsequent Roswell investigations' },
+    { source: 'jesse-marcel-jr', target: 'roswell-1947',      label: 'childhood firsthand witness; handled anomalous debris brought home by his father from the Foster Ranch site' },
+
     // Roscoe Hillenkoetter connections
     { source: 'roscoe-hillenkoetter', target: 'donald-keyhoe',    label: 'Naval Academy classmates; NICAP board colleagues 1957-1962' },
     { source: 'roscoe-hillenkoetter', target: 'kenneth-arnold',   label: 'Hillenkoetter was CIA Director when Arnolds 1947 sighting triggered Project Sign' },
