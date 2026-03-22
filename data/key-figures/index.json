@@ -1498,5 +1498,19 @@
     "data_file": "wilbert-smith.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "lynne-kitei",
+    "name": "Dr. Lynne Kitei",
+    "aliases": ["Dr. Lynne", "Lynn Kitei"],
+    "role": "Physician; Phoenix Lights Witness and Primary Researcher",
+    "period": "1995-present",
+    "affiliation": "Private medical practice, Phoenix, AZ",
+    "summary": "Phoenix physician who began privately documenting unusual aerial phenomena from her home in 1995 - two years before the mass March 13, 1997 Phoenix Lights event. Her multi-year pre-event observation record distinguishes her from other Phoenix Lights witnesses. She concealed her identity for years to protect her medical reputation before going public with 'The Phoenix Lights' (2000) and the follow-up documentary (2008), becoming the primary investigative voice for the most widely witnessed UAP event in modern American history.",
+    "status": "detailed",
+    "tags": ["witness", "phoenix-lights", "physician", "arizona", "1997", "documentary", "disclosure"],
+    "data_file": "lynne-kitei.json",
+    "type": "scientist",
+    "includeInExplore": false
   }
 ]

@@ -1,0 +1,172 @@
+{
+  "profile": {
+    "id": "lynne-kitei",
+    "name": "Dr. Lynne Kitei",
+    "aliases": ["Dr. Lynne", "Lynn Kitei", "Lynne D. Kitei"],
+    "born": "United States",
+    "died": null,
+    "roles": [
+      "Physician (Preventive Medicine); Health Educator",
+      "Author - The Phoenix Lights (2000, 2010)",
+      "Producer and Director - The Phoenix Lights Documentary (2008)"
+    ],
+    "service_period": "1995-present (UAP witness and researcher)",
+    "organizations": [
+      "Private medical practice, Phoenix, Arizona"
+    ],
+    "clearance": null,
+    "summary": "Phoenix-based physician who began privately documenting unusual aerial phenomena from her home in 1995 - two years before the mass March 13, 1997 Phoenix Lights event. Kitei photographed and filmed both her pre-event sightings and the 1997 event itself, representing one of the few documented multi-year witness records for the phenomenon. She kept her identity concealed for years to protect her medical reputation before going public with 'The Phoenix Lights' (2000). Her pre-1997 documentation distinguishes her from other Phoenix Lights witnesses and provides the longest continuous personal record of the aerial activity over Phoenix.",
+    "education": [
+      "M.D., Medicine (institution not publicly specified)",
+      "Specialty training in preventive medicine and health promotion"
+    ],
+    "early_career": [
+      "Practiced medicine in Phoenix, Arizona, specializing in preventive medicine and health education",
+      "Was an established Phoenix-area physician before the 1995 sightings; maintained a dual identity as a medical professional and private UAP witness for several years"
+    ],
+    "key_events": [
+      {
+        "year": "1995",
+        "event": "Began witnessing and privately documenting unusual amber orb formations from her Phoenix-area home - two years before the mass March 1997 Phoenix Lights event. Initial sightings were close-range and occurred multiple times, prompting her to begin systematic photo and film documentation."
+      },
+      {
+        "year": "Feb 1995",
+        "event": "Photographed what she describes as three intense amber orbs in a triangular formation outside her home - among the earliest documented incidents in what she would later connect to the broader Phoenix Lights phenomenon."
+      },
+      {
+        "year": "Mar 1997",
+        "event": "Witnessed and filmed the March 13, 1997 Phoenix Lights event from her home; her footage captured the stationary arc of amber orbs over the city, consistent with footage taken by other residents. Her documentation predated most other witnesses by two years of prior observation."
+      },
+      {
+        "year": "2000",
+        "event": "Published 'The Phoenix Lights: A Skeptic's Discovery that We Are Not Alone,' the first major book-length account of the phenomenon; went public with her identity for the first time. The book documented both her personal multi-year witness record and broader investigation of the event including interviews with other witnesses and officials."
+      },
+      {
+        "year": "2004",
+        "event": "Arizona Governor Fife Symington publicly reversed his earlier mockery of the Phoenix Lights, admitting he had personally witnessed the V-formation on March 13, 1997, and found it inexplicable. Kitei had long maintained the event involved genuine unidentified phenomena, and Symington's reversal provided significant institutional corroboration."
+      },
+      {
+        "year": "2008",
+        "event": "Released 'The Phoenix Lights Documentary' as producer and director; the film included interviews with witnesses, researchers, former officials (including Symington), and scientific consultants. It received international distribution and is considered the primary documentary record of the event."
+      },
+      {
+        "year": "2010",
+        "event": "Published an updated and expanded edition of 'The Phoenix Lights,' incorporating subsequent witness accounts, official statements, and research developments. Continues public speaking and advocacy for official investigation into the 1997 event."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "She documented unusual aerial phenomena over Phoenix beginning in 1995 - two years before the mass March 1997 event, establishing a multi-year observation record",
+      "status": "partially-verified",
+      "explanation": "Kitei's pre-1997 photographic and film documentation is her primary distinguishing contribution. She went public with this material in 2000 and it has been reviewed by researchers who have not found evidence of fabrication. The documentation predates the mass event, making it difficult to attribute to awareness of the March 1997 sightings. However, the materials have not undergone independent forensic optical analysis, and no other documented witnesses have come forward with corroborating pre-1997 Phoenix sightings from the same location."
+    },
+    {
+      "claim": "The March 13, 1997 Phoenix Lights represent a genuine unidentified aerial phenomenon - not military flares from Barry Goldwater Range",
+      "status": "unverified",
+      "explanation": "Kitei disputes the Air Force's attribution of the second set of lights (the stationary arc) to A-10 flare training at Barry Goldwater Range. The flare explanation is contested by timing analysis and witness accounts noting the lights had different characteristics than illumination flares. Governor Symington's 2004 reversal specifically addressed the V-formation (the first event), not the stationary arc. Multiple civilian researchers have found the Air Force explanation inadequate. However, no physical evidence has been produced that would definitively exclude the flare explanation for the stationary arc, and no alternative technical explanation has been confirmed."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Medical doctor with an M.D. credential providing a baseline of scientific training and professional credibility",
+      "Her documentation predates the mass 1997 event by two years - ruling out awareness-driven fabrication for the pre-1997 material",
+      "Voluntarily concealed her identity for years to protect her medical reputation, arguing against self-promotion as a motive",
+      "Multiple independent witnesses, home video recordings, and pilot accounts corroborate the broader Phoenix Lights event she documented",
+      "Governor Symington's 2004 public admission that he personally witnessed the V-formation and found it inexplicable provides significant institutional corroboration for the broader event",
+      "Produced a documentary with named interviewees and verifiable source material; not solely dependent on her personal testimony"
+    ],
+    "contradicting": [
+      "Her pre-1997 documentation has not been subjected to independent forensic optical analysis",
+      "As the primary author and documentary producer of Phoenix Lights accounts, she has a reputational and professional stake in the phenomenon's validity",
+      "The Air Force's flare attribution for the stationary arc, while contested, has not been definitively ruled out by physical evidence",
+      "No other documented witnesses have corroborated her specific pre-1997 sighting locations or timing independently",
+      "Her medical specialty (preventive medicine) does not provide direct expertise in optical or aerospace phenomena analysis"
+    ],
+    "overall": "Kitei is a credible primary witness with characteristics that argue against fabrication - particularly the pre-1997 documentation and voluntary identity concealment. Her M.D. credential provides professional context but not relevant technical expertise in aerospace or optical analysis. The broader Phoenix Lights event has extensive independent corroboration; her specific contribution is the multi-year personal observation record. Assessed as a credible witness whose account is internally consistent and contextually supported, with appropriate limits around the unverified pre-1997 material pending independent forensic review."
+  },
+  "associated_people": [
+    {
+      "id": "jacques-vallee",
+      "name": "Dr. Jacques Vallee",
+      "role": "Astrophysicist, UAP researcher",
+      "relationship": "Vallee has commented on the Phoenix Lights as an anomalous phenomenon warranting serious investigation; Kitei's research overlaps with the scientific investigation community in which Vallee is a senior figure."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1997",
+      "type": "written",
+      "title": "Private documentation - pre-public phase",
+      "outlet": "Personal archive (unpublished until 2000)",
+      "notes": "Photo and film documentation of pre-event sightings (1995-1997) compiled privately; not disclosed publicly until the 2000 book. The multi-year private documentation period before going public is a key element of her credibility argument."
+    },
+    {
+      "date": "2000",
+      "type": "written",
+      "title": "The Phoenix Lights: A Skeptic's Discovery that We Are Not Alone",
+      "outlet": "Hampton Roads Publishing (Charlottesville, VA)",
+      "notes": "First major book-length account of the Phoenix Lights; went public with her identity and multi-year observation record for the first time."
+    },
+    {
+      "date": "2008",
+      "type": "film",
+      "title": "The Phoenix Lights Documentary",
+      "outlet": "Independently produced and distributed",
+      "notes": "Feature documentary Kitei produced and directed; includes witness interviews, official statements (including Symington), and scientific consultants. Primary video record of the Phoenix Lights investigation."
+    },
+    {
+      "date": "2010",
+      "type": "written",
+      "title": "The Phoenix Lights (Updated Edition)",
+      "outlet": "Hampton Roads Publishing",
+      "notes": "Expanded edition incorporating subsequent research, official admissions, and additional witness accounts accumulated in the decade following the original publication."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Phoenix Lights (book, 2010 edition)",
+      "url": "https://www.amazon.com/Phoenix-Lights-Skeptics-Discovery-Alone/dp/1571746382",
+      "type": "Book",
+      "notes": "Primary published source (Hampton Roads Publishing, updated 2010)"
+    },
+    {
+      "title": "The Phoenix Lights Documentary (2008)",
+      "url": "https://www.thephoenixlights.net",
+      "type": "Film",
+      "notes": "Documentary produced and directed by Kitei; primary video record of the Phoenix Lights investigation"
+    },
+    {
+      "title": "Dr. Lynne Kitei Official Website",
+      "url": "https://www.thephoenixlights.net",
+      "type": "Personal Archive",
+      "notes": "Primary web presence with documentation, witness accounts, and research updates"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "case",
+      "node_id": "phoenix-lights-1997",
+      "node_label": "Phoenix Lights",
+      "relationship": "Primary long-term witness; began documenting two years before the mass 1997 event and produced the most comprehensive personal observation record of the phenomenon.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "jacques-vallee",
+      "node_label": "Dr. Jacques Vallee",
+      "relationship": "Vallee has addressed the Phoenix Lights as an anomalous case warranting investigation; overlapping scientific investigation community.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "linda-moulton-howe",
+      "node_label": "Linda Moulton Howe",
+      "relationship": "Both are women in the UAP research community who applied professional credentials to field investigation; Howe covered the Phoenix Lights phenomenon in her reporting.",
+      "connection_type": "professional"
+    }
+  ]
+}

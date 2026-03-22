@@ -872,6 +872,11 @@ export const graphData: GraphData = {
     { source: 'jesse-marcel-jr', target: 'stanton-friedman',  label: 'Friedmans 1978 interview with Marcel Sr. drew Marcel Jr. into public disclosure; remained in contact through subsequent Roswell investigations' },
     { source: 'jesse-marcel-jr', target: 'roswell-1947',      label: 'childhood firsthand witness; handled anomalous debris brought home by his father from the Foster Ranch site' },
 
+    // Lynne Kitei connections
+    { source: 'lynne-kitei', target: 'phoenix-lights',       label: 'primary long-term witness; began documenting 1995 sightings two years before the March 1997 mass event and became the leading investigative voice for the case' },
+    { source: 'lynne-kitei', target: 'fife-symington',       label: 'Symingtons 2004 public reversal - admitting he personally witnessed the Phoenix Lights V-formation - corroborated Kiteislong-standing account' },
+    { source: 'lynne-kitei', target: 'linda-moulton-howe',   label: 'parallel credentialed women researchers who applied professional backgrounds to UAP field investigation; Howe covered the Phoenix Lights phenomenon' },
+
     // Roscoe Hillenkoetter connections
     { source: 'roscoe-hillenkoetter', target: 'donald-keyhoe',    label: 'Naval Academy classmates; NICAP board colleagues 1957-1962' },
     { source: 'roscoe-hillenkoetter', target: 'kenneth-arnold',   label: 'Hillenkoetter was CIA Director when Arnolds 1947 sighting triggered Project Sign' },
