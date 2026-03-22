@@ -1442,5 +1442,19 @@
     "data_file": "roscoe-hillenkoetter.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "bruce-maccabee",
+    "name": "Dr. Bruce Maccabee",
+    "aliases": ["Bruce Maccabee", "B. Maccabee"],
+    "role": "Optical Physicist, Naval Surface Warfare Center; UAP Photo Analyst",
+    "period": "1970-2024",
+    "affiliation": "Naval Surface Warfare Center; Fund for UFO Research; MUFON",
+    "summary": "Navy optical physicist who conducted a parallel 36-year career analyzing UAP photographic and film evidence while employed at the Naval Surface Warfare Center. Applied professional optical instrumentation and photogrammetric methods to high-profile cases including the McMinnville photos, New Zealand Kaikoura film, and Gulf Breeze series. Co-founded the Fund for UFO Research in 1979 and remains one of the few credentialed government scientists to have dedicated a career-length effort to UAP evidence review.",
+    "status": "detailed",
+    "tags": ["scientist", "physics", "photo-analysis", "navy", "mufon", "gulf-breeze", "mcminnville", "fund-for-ufo-research"],
+    "data_file": "bruce-maccabee.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

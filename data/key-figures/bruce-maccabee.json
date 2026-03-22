@@ -1,0 +1,226 @@
+{
+  "profile": {
+    "id": "bruce-maccabee",
+    "name": "Dr. Bruce Maccabee",
+    "aliases": ["Bruce Maccabee", "B. Maccabee"],
+    "born": "1942 - United States",
+    "died": "May 2024",
+    "roles": [
+      "Optical Physicist - Naval Surface Warfare Center (1970-2006)",
+      "Co-founder - Fund for UFO Research (1979)",
+      "Senior Research Analyst - MUFON"
+    ],
+    "service_period": "1970-2006 (Naval Surface Warfare Center); 1975-2024 (UAP research)",
+    "organizations": [
+      "Naval Surface Warfare Center",
+      "Fund for UFO Research",
+      "MUFON (Mutual UFO Network)",
+      "NICAP"
+    ],
+    "clearance": "Secret (former, active during Navy career)",
+    "summary": "Navy optical physicist who conducted a parallel 36-year career analyzing UAP photographic and film evidence while employed at the Naval Surface Warfare Center. Maccabee applied professional optical instrumentation and image-analysis methods to high-profile cases including the McMinnville photos, New Zealand Kaikoura film, and Gulf Breeze series, and co-founded the Fund for UFO Research in 1979. He remains one of the few credentialed physical scientists to have dedicated a full career-length effort to UAP evidence review.",
+    "education": [
+      "Ph.D., Physics (Optical Sciences), American University, 1970",
+      "B.S., Physics, Worcester Polytechnic Institute, 1964"
+    ],
+    "early_career": [
+      "Joined the Naval Ordnance Laboratory (later Naval Surface Warfare Center) at White Oak, Maryland, as an optical physicist in 1970",
+      "Began investigating UAP reports as a private researcher in the mid-1970s while maintaining full-time Navy career",
+      "Became active in NICAP and later MUFON; applied Navy optical instrumentation methods to photo and film analysis"
+    ],
+    "key_events": [
+      {
+        "year": "1970",
+        "event": "Earned Ph.D. in physics from American University; joined the Naval Surface Warfare Center (then Naval Ordnance Laboratory) as an optical physicist - a position he held for 36 years."
+      },
+      {
+        "year": "1979",
+        "event": "Co-founded the Fund for UFO Research alongside Stanton Friedman and others, establishing one of the earliest nonprofit entities dedicated to funding scientific UAP investigation."
+      },
+      {
+        "year": "1980",
+        "event": "Published comprehensive optical analysis of the 1978 Kaikoura, New Zealand UAP film; measurements demonstrated anomalous luminosity inconsistent with known aircraft, natural phenomena, or reflective surfaces."
+      },
+      {
+        "year": "1987",
+        "event": "Led the scientific investigation of the Gulf Breeze, Florida photo series attributed to Ed Walters; after six months of optical and spatial analysis concluded photos showed a genuine unidentified structured object - a finding that remains contested."
+      },
+      {
+        "year": "1995",
+        "event": "Completed exhaustive re-analysis of the 1950 McMinnville (Trent) photos, concluding that the object was a distant, solid, unidentified aerial vehicle and that no evidence of model or fabrication could be detected under quantitative optical scrutiny."
+      },
+      {
+        "year": "2000",
+        "event": "Published 'UFO-FBI Connection,' documenting the FBI's internal UAP investigative files obtained via FOIA requests; the book traced FBI involvement in monitoring UAP cases from 1947 through the late 1950s."
+      },
+      {
+        "year": "2006",
+        "event": "Retired from the Naval Surface Warfare Center after approximately 36 years of service; continued full-time UAP research, publishing analyses and maintaining an extensive online archive of case studies."
+      },
+      {
+        "year": "May 2024",
+        "event": "Died at age 81. Remembered within the UAP research community as a rare example of a credentialed government physicist who applied professional scientific methodology to UAP evidence across five decades."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The 1987-1988 Gulf Breeze, Florida photo series shows a genuine, unidentified structured aerial object",
+      "status": "contested",
+      "explanation": "Maccabee conducted an extensive optical analysis and found no evidence of model photography, double exposure, or fabrication. However, multiple subsequent investigators - including some within MUFON - concluded the photos were hoaxed. A model found at the Walters property after they moved and inconsistencies in later accounts raised significant doubt. The case remains one of the more polarizing in UAP photo history, and Maccabee maintained his original assessment throughout."
+    },
+    {
+      "claim": "The 1950 McMinnville (Trent) photographs are not fabrications and show a distant, solid unidentified aerial object",
+      "status": "partially-verified",
+      "explanation": "Multiple independent analyses - including the Condon Report's own photogrammetric study - were unable to identify the object or prove hoaxing. Maccabee's optical measurements of shadow angles, surface brightness, and apparent size are consistent with a distant object. No definitive evidence of fabrication has emerged in 70-plus years, though the photos have never been conclusively identified. The 'partially-verified' assessment reflects the absence of disconfirming evidence rather than positive confirmation."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Ph.D. in physics with specialization in optical sciences from an accredited university",
+      "36-year career as an optical physicist at a major U.S. Navy research facility - providing direct professional expertise in image analysis",
+      "Applied quantitative instrumentation methods (photodensitometry, photogrammetry, brightness analysis) rather than subjective assessment",
+      "Analyses published in peer-reviewed forums and international symposia; methodology transparent and reproducible",
+      "Co-founded Fund for UFO Research as a structured nonprofit, not a personality-driven platform",
+      "Investigated cases regardless of outcome; publicly acknowledged uncertainty where evidence was insufficient",
+      "Security-cleared government scientist with no financial incentive to promote UAP claims"
+    ],
+    "against": [
+      "Gulf Breeze conclusion has been widely criticized and contradicted by later investigators, raising questions about confirmation bias in photo analysis",
+      "Lack of peer-reviewed publication in mainstream physics or optics journals - analyses were disseminated primarily within UAP research channels",
+      "Long-term association with MUFON, an organization with inconsistent investigative standards, affects institutional credibility",
+      "No known classified-program access - analyses were always based on publicly available evidence, limiting evidentiary weight"
+    ],
+    "overall": "Maccabee is one of the most technically credentialed figures in the civilian UAP research community. His methodology was more rigorous than most civilian investigators, and his government employment provides relevant professional context. The Gulf Breeze controversy is a genuine mark against his analytical record, but his broader body of work - particularly on McMinnville - has held up under scrutiny. Assessed as a credible scientific voice with appropriate caveats around his most controversial conclusion."
+  },
+  "associated_people": [
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton Friedman",
+      "role": "Nuclear physicist and UAP researcher",
+      "relationship": "Close colleagues for over four decades; co-founded the Fund for UFO Research in 1979. Both were credentialed physicists who pursued UAP research outside academic channels, and they collaborated on multiple cases and public symposia throughout the 1980s and 1990s."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Hal Puthoff",
+      "role": "Theoretical physicist, UAP researcher",
+      "relationship": "Parallel scientific investigators applying physics credentials to UAP evidence. Both were members of overlapping research networks and shared methodological approaches to anomalous phenomena, though their primary research domains differed."
+    },
+    {
+      "id": "robert-bigelow",
+      "name": "Robert Bigelow",
+      "role": "Aerospace entrepreneur, UAP research funder",
+      "relationship": "Bigelow's National Institute for Discovery Science (NIDS) engaged Maccabee for photo and film analysis work in the 1990s-2000s, providing resources that supported his most technically intensive investigations."
+    },
+    {
+      "id": "colm-kelleher",
+      "name": "Dr. Colm Kelleher",
+      "role": "NIDS Deputy Administrator",
+      "relationship": "Kelleher administered NIDS operations that engaged Maccabee's analytical expertise; both worked within the Bigelow-funded scientific UAP research infrastructure."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1980",
+      "type": "written",
+      "title": "Analysis of the Kaikoura, New Zealand UFO Film",
+      "outlet": "MUFON UFO Journal / Fund for UFO Research",
+      "notes": "Detailed optical analysis applying photodensitometry and luminosity measurements to the December 1978 New Zealand film; concluded anomalous luminosity could not be attributed to known aircraft, natural phenomena, or reflective surfaces."
+    },
+    {
+      "date": "1987",
+      "type": "written",
+      "title": "Gulf Breeze Photo Investigation Report",
+      "outlet": "MUFON UFO Journal",
+      "notes": "Six-month field and laboratory investigation of the Gulf Breeze, Florida photo series; optical analysis concluded photos showed a genuine structured object. The most contested conclusion of Maccabee's career."
+    },
+    {
+      "date": "1995",
+      "type": "written",
+      "title": "McMinnville Photo Re-Analysis",
+      "outlet": "Fund for UFO Research",
+      "notes": "Quantitative re-analysis of the 1950 Trent/McMinnville photographs applying updated photogrammetric methods; concluded the object is a distant, solid, unidentified aerial vehicle with no detectable fabrication indicators."
+    },
+    {
+      "date": "2000",
+      "type": "written",
+      "title": "UFO-FBI Connection",
+      "outlet": "Llewellyn Publications (St. Paul, MN)",
+      "notes": "Book documenting the FBI's internal UAP files obtained via FOIA, tracing bureau involvement in investigating UAP reports from 1947 through the late 1950s. First systematic compilation of FBI UAP documentation."
+    },
+    {
+      "date": "2009",
+      "type": "written",
+      "title": "Abduction in My Life",
+      "outlet": "AuthorHouse",
+      "notes": "Personal account and analysis of an abduction case study. Represents Maccabee's engagement with the experiencer/abduction literature alongside his physics-based photo analysis work."
+    },
+    {
+      "date": "2000",
+      "type": "speech",
+      "title": "MUFON International Symposium - Scientific Methods in UAP Photo Analysis",
+      "outlet": "MUFON International Symposium",
+      "notes": "Recurring presenter at MUFON symposia across several decades; presented methodological frameworks for scientific photo and film analysis and reviewed case findings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "UFO-FBI Connection (book)",
+      "url": "https://www.amazon.com/UFO-FBI-Connection-Secret-History-Government/dp/1567183573",
+      "type": "Book",
+      "notes": "Primary published work - FBI UAP files documentation (Llewellyn Publications, 2000)"
+    },
+    {
+      "title": "Dr. Bruce Maccabee - MUFON Bio and Research Archive",
+      "url": "https://www.mufon.com",
+      "type": "Organization",
+      "notes": "MUFON fellow and long-term contributor; extensive case analysis archive"
+    },
+    {
+      "title": "Fund for UFO Research - Co-founder Profile",
+      "url": "http://www.fufor.com",
+      "type": "Organization",
+      "notes": "Co-founded 1979 alongside Stanton Friedman"
+    },
+    {
+      "title": "Bruce Maccabee Research Website - UFO Photo Analysis Archive",
+      "url": "http://www.brumac.8k.com",
+      "type": "Personal Archive",
+      "notes": "Maccabee's own archive of case analyses, optical reports, and published papers - primary source for his analytical methodology"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "stanton-friedman",
+      "node_label": "Stanton Friedman",
+      "relationship": "Co-founded Fund for UFO Research; 40-year collaboration as credentialed physicists in civilian UAP research.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "robert-bigelow",
+      "node_label": "Robert Bigelow",
+      "relationship": "Bigelow's NIDS engaged Maccabee for photo and film analysis during the Gulf Breeze-era investigations.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Dr. Hal Puthoff",
+      "relationship": "Parallel physics-credentialed investigators sharing methodological approach across overlapping research networks.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "colm-kelleher",
+      "node_label": "Dr. Colm Kelleher",
+      "relationship": "Kelleher's NIDS administration supported Maccabee's post-retirement analytical work under Bigelow funding.",
+      "connection_type": "institutional"
+    }
+  ]
+}

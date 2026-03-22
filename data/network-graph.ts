@@ -855,6 +855,12 @@ export const graphData: GraphData = {
     { source: 'kenneth-arnold', target: 'j-allen-hynek',    label: 'Arnolds sighting precipitated Project Sign which Hynek consulted on from 1948' },
     { source: 'kenneth-arnold', target: 'project-blue-book', label: 'Arnolds 1947 sighting directly triggered formation of Project Sign (Blue Books predecessor)' },
 
+    // Bruce Maccabee connections
+    { source: 'bruce-maccabee', target: 'stanton-friedman',  label: 'co-founded Fund for UFO Research 1979; 40-year collaboration as credentialed physicists in civilian UAP research' },
+    { source: 'bruce-maccabee', target: 'hal-puthoff',       label: 'parallel physics-credentialed investigators; shared methodological approach across overlapping UAP research networks' },
+    { source: 'bruce-maccabee', target: 'robert-bigelow',    label: 'Bigelows NIDS engaged Maccabee for photo and film analysis work in the 1990s-2000s' },
+    { source: 'bruce-maccabee', target: 'colm-kelleher',     label: 'Kellehers NIDS administration supported Maccabees analytical work under Bigelow funding' },
+
     // Roscoe Hillenkoetter connections
     { source: 'roscoe-hillenkoetter', target: 'donald-keyhoe',    label: 'Naval Academy classmates; NICAP board colleagues 1957-1962' },
     { source: 'roscoe-hillenkoetter', target: 'kenneth-arnold',   label: 'Hillenkoetter was CIA Director when Arnolds 1947 sighting triggered Project Sign' },
