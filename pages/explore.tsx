@@ -1,5 +1,5 @@
 import type { NextPage, GetStaticProps } from 'next';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import SeoHead from '../components/SeoHead';
 import EventFrequencyChart from '../components/explore/EventFrequencyChart';
@@ -52,32 +52,119 @@ interface FocusEra {
   label: string;
 }
 
-const SECTION_NAV = [
-  { id: 'relationship-network', label: 'Network'  },
-  { id: 'claims-network',       label: 'Claims'   },
-  { id: 'timeline',             label: 'Timeline' },
-  { id: 'map',                  label: 'Map'      },
-  { id: 'program-lineage',      label: 'Programs' },
-  { id: 'evidence-tiers',       label: 'Cases'    },
-] as const;
+// ── View types ──────────────────────────────────────────────────
 
-type SectionId = typeof SECTION_NAV[number]['id'];
+/** Hero section: the two network graphs */
+type HeroView = 'network' | 'claims';
+
+/** Secondary section: lazy-mounted tab views */
+type TabView = 'timeline' | 'map' | 'program-lineage' | 'evidence-tiers';
+
+const HERO_VIEWS: Array<{ id: HeroView; label: string }> = [
+  { id: 'network', label: 'Relationship Network' },
+  { id: 'claims',  label: 'Claims Corroboration' },
+];
+
+const TAB_VIEWS: Array<{ id: TabView; label: string }> = [
+  { id: 'timeline',        label: 'Timeline'  },
+  { id: 'map',             label: 'Map'       },
+  { id: 'program-lineage', label: 'Programs'  },
+  { id: 'evidence-tiers',  label: 'Cases'     },
+];
+
+// Active nav ID is the union of both view type sets
+type NavId = HeroView | TabView;
+
+// ── Component ───────────────────────────────────────────────────
 
 const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases, mapEvents }) => {
-  const [focusEra, setFocusEra] = useState<FocusEra | null>(null);
-  const [activeSection, setActiveSection] = useState<SectionId>('relationship-network');
-  const [programView, setProgramView] = useState<'lineage' | 'hierarchy' | 'disclosure'>('lineage');
-  const [navScrolled, setNavScrolled] = useState(false);
+  // Hero state
+  const [heroView, setHeroView]           = useState<HeroView>('network');
+  const [claimsEverShown, setClaimsEverShown] = useState(false);
+
+  // Secondary tab state
+  const [activeTab, setActiveTab]         = useState<TabView>('timeline');
+  const [mountedTabs, setMountedTabs]     = useState<Set<TabView>>(new Set<TabView>(['timeline']));
+
+  // Programs sub-view
+  const [programView, setProgramView]     = useState<'lineage' | 'hierarchy' | 'disclosure'>('lineage');
+
+  // Timeline era focus
+  const [focusEra, setFocusEra]           = useState<FocusEra | null>(null);
+
+  // Nav chrome
+  const [navScrolled, setNavScrolled]     = useState(false);
+  const [scrollZone, setScrollZone]       = useState<'hero' | 'tabs'>('hero');
+
+  // Refs
+  const heroRef    = useRef<HTMLElement>(null);
+  const tabsRef    = useRef<HTMLElement>(null);
   const overlayRef = useRef<HTMLElement>(null);
 
-  // Restore programView from ?programs query param (used by back-button deep links)
+  // ── Mount claims graph on first visit ────────────────────────
+  useEffect(() => {
+    if (heroView === 'claims' && !claimsEverShown) setClaimsEverShown(true);
+  }, [heroView, claimsEverShown]);
+
+  // ── Restore ?programs query param deep link ───────────────────
   useEffect(() => {
     const programs = new URLSearchParams(window.location.search).get('programs');
     if (programs === 'hierarchy' || programs === 'lineage' || programs === 'disclosure') {
       setProgramView(programs);
+      setActiveTab('program-lineage');
+      setMountedTabs(prev => new Set<TabView>(Array.from(prev).concat('program-lineage')));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // ── Scroll shadow ─────────────────────────────────────────────
+  useEffect(() => {
+    const onScroll = () => setNavScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // ── IntersectionObserver: hero vs tabs zone ───────────────────
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    const observe = (el: HTMLElement | null, zone: 'hero' | 'tabs') => {
+      if (!el) return;
+      const obs = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setScrollZone(zone); },
+        { rootMargin: '-20% 0px -55% 0px', threshold: 0 }
+      );
+      obs.observe(el);
+      observers.push(obs);
+    };
+
+    observe(heroRef.current, 'hero');
+    observe(tabsRef.current, 'tabs');
+
+    return () => observers.forEach(o => o.disconnect());
+  }, []);
+
+  // ── Tab activation helper ─────────────────────────────────────
+  const activateTab = useCallback((tab: TabView) => {
+    setActiveTab(tab);
+    setMountedTabs(prev => new Set<TabView>(Array.from(prev).concat(tab)));
+  }, []);
+
+  // ── Nav click handler ─────────────────────────────────────────
+  const handleNavClick = useCallback((id: NavId) => {
+    if (id === 'network' || id === 'claims') {
+      setHeroView(id);
+      heroRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      activateTab(id);
+      tabsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [activateTab]);
+
+  // Active nav pill: which zone + which view within that zone
+  const activeNavId: NavId = scrollZone === 'hero' ? heroView : activeTab;
+
+  // ── Era selection (Timeline tab) ──────────────────────────────
   function handleSelectEra(start: number, end: number) {
     const label = start === end - 9 ? `${start}s` : `${start}-${end}`;
     setFocusEra({ start, end, label });
@@ -86,42 +173,34 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
     }, 50);
   }
 
-  // Track scroll position to add shadow to sticky nav
-  useEffect(() => {
-    const onScroll = () => setNavScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  // ── Pill class helper ─────────────────────────────────────────
+  const pill = (id: NavId, size: 'sm' | 'md' = 'sm') =>
+    `shrink-0 font-medium transition-colors duration-200 ${size === 'sm' ? 'text-xs px-3 py-1.5 rounded-full' : 'text-sm px-4 py-2 rounded-lg'} ${
+      activeNavId === id
+        ? 'bg-primary text-white'
+        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
+    }`;
 
-  // Track which section is in the viewport to highlight the active nav pill
-  useEffect(() => {
-    const ids = SECTION_NAV.map(s => s.id);
-    const observers: IntersectionObserver[] = [];
-    ids.forEach(id => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const obs = new IntersectionObserver(
-        ([entry]) => { if (entry.isIntersecting) setActiveSection(id as SectionId); },
-        { rootMargin: '-30% 0px -50% 0px', threshold: 0 }
-      );
-      obs.observe(el);
-      observers.push(obs);
-    });
-    return () => observers.forEach(o => o.disconnect());
-  }, []);
+  const tabPill = (id: TabView) =>
+    `shrink-0 text-sm px-4 py-2 rounded-lg font-medium transition-colors ${
+      activeTab === id
+        ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm border border-gray-200 dark:border-gray-600'
+        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100/70 dark:hover:bg-gray-800/70'
+    }`;
 
+  // ── Render ────────────────────────────────────────────────────
   return (
     <>
       <SeoHead
         title="Explore"
-        description="Interactive timeline and relationship network visualizing eight decades of UAP events, key figure disclosures, and government program histories."
+        description="Interactive visualizations across the DECUR dataset - relationship networks, claims corroboration, historical timeline, incident map, and program lineage."
         path="/explore"
       />
 
-      {/* Full-width wrapper so the sticky nav can bleed past the Layout's px-4 */}
+      {/* Full-width wrapper */}
       <div className="-mx-4 -mt-8">
 
-        {/* Page header - constrained width, matches Layout padding */}
+        {/* Page header */}
         <div className="max-w-5xl mx-auto px-4 pt-8 pb-4">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Explore</h1>
           <p className="text-gray-500 dark:text-gray-400 max-w-2xl">
@@ -130,189 +209,214 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
           </p>
         </div>
 
-        {/* Sticky section nav */}
+        {/* ── Sticky nav ─────────────────────────────────────────── */}
         <nav className={`sticky top-0 z-40 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-2 transition-shadow duration-200 ${navScrolled ? 'shadow-md' : ''}`}>
-          <div className="max-w-5xl mx-auto flex gap-2 overflow-x-auto">
-            {SECTION_NAV.map(s => (
-              <a
-                key={s.id}
-                href={`#${s.id}`}
-                className={`shrink-0 text-xs px-3 py-1.5 rounded-full font-medium transition-colors duration-200 ${
-                  activeSection === s.id
-                    ? 'bg-primary text-white'
-                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
-                }`}
-              >
-                {s.label}
-              </a>
+          <div className="max-w-5xl mx-auto flex items-center gap-1 overflow-x-auto">
+
+            {/* Hero group: network graphs */}
+            {HERO_VIEWS.map(v => (
+              <button key={v.id} onClick={() => handleNavClick(v.id)} className={pill(v.id)}>
+                {v.label}
+              </button>
+            ))}
+
+            {/* Divider */}
+            <div className="w-px h-4 bg-gray-200 dark:bg-gray-700 mx-1 shrink-0" aria-hidden />
+
+            {/* Tab group: secondary views */}
+            {TAB_VIEWS.map(t => (
+              <button key={t.id} onClick={() => handleNavClick(t.id)} className={pill(t.id)}>
+                {t.label}
+              </button>
             ))}
           </div>
         </nav>
 
-        {/* Sections */}
-        <div className="max-w-5xl mx-auto px-4 space-y-12 py-8 pb-16">
+        {/* ── Content ────────────────────────────────────────────── */}
+        <div className="max-w-5xl mx-auto px-4 space-y-8 py-8 pb-16">
 
-          {/* ── Relationship Network (Featured) ──────────────────────────── */}
-          <section id="relationship-network">
+          {/* ── Hero: Network Graphs (Featured) ─────────────────── */}
+          <section ref={heroRef} id="hero-networks" className="scroll-mt-14">
             <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
-              <div className="flex items-center gap-2 mb-2">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-                  Relationship Network
-                </h2>
+
+              {/* Hero toggle + badge */}
+              <div className="flex items-center gap-2 mb-3 flex-wrap">
+                {HERO_VIEWS.map(v => (
+                  <button
+                    key={v.id}
+                    onClick={() => setHeroView(v.id)}
+                    className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
+                      heroView === v.id
+                        ? 'bg-primary text-white'
+                        : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                    }`}
+                  >
+                    {v.label}
+                  </button>
+                ))}
                 <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 dark:bg-primary/20 text-primary font-semibold uppercase tracking-wide">
                   Featured
                 </span>
               </div>
-              <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl mb-4">
-                Force-directed graph spanning all key figures, programs, cases, and events across the DECUR dataset.
-                Click any node to select it and explore its connections. Click again to navigate to its dedicated page.
-              </p>
-              <NetworkGraph />
-            </div>
-          </section>
 
-          {/* ── Claims Corroboration Network ─────────────────────────────── */}
-          <section id="claims-network">
-            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
-              <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Claims Corroboration</h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                  Bipartite network mapping witnesses to the types of claims they independently make.
-                  Category node size reflects the number of independent witnesses - larger nodes indicate
-                  higher corroboration across the testimony record. Click any node to explore connections.
-                  Click a witness node twice to navigate to their profile.
-                </p>
-              </div>
-              <ClaimsCorroborationGraph />
-            </div>
-          </section>
-
-          {/* ── Timeline & History ───────────────────────────────────────── */}
-          <section id="timeline">
-            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
-              <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Timeline & History</h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                  Historical event frequency and multi-source timeline spanning eight decades of documented UAP activity.
-                  Click a bar to filter the timeline to that decade.
-                </p>
-              </div>
-              <EventFrequencyChart
-                entries={entries}
-                onSelectEra={handleSelectEra}
-                onClearEra={() => setFocusEra(null)}
-                activeEraStart={focusEra?.start ?? null}
-              />
-              <section ref={overlayRef} className="mt-6">
-                <TimelineOverlay
-                  uapEntries={entries}
-                  insiderEvents={insiderEvents}
-                  caseEvents={caseEvents}
-                  focusEra={focusEra}
-                  onClearFocus={() => setFocusEra(null)}
-                />
-              </section>
-            </div>
-          </section>
-
-          {/* ── Incident Map ─────────────────────────────────────────────── */}
-          <section id="map">
-            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
-              <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Incident Map</h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                  Geographic distribution of documented UAP cases and geocoded historical events.
-                  Click any marker for location details and evidence summary.
-                </p>
-              </div>
-              <CaseMap cases={mapCases} events={mapEvents} />
-            </div>
-          </section>
-
-          {/* ── Programs ─────────────────────────────────────────────────── */}
-          <section id="program-lineage">
-            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
-            <div className="mb-4">
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Programs</h2>
-
-              {/* Sub-view toggle */}
-              <div className="flex gap-1 mb-3 flex-wrap">
-                <button
-                  onClick={() => setProgramView('lineage')}
-                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
-                    programView === 'lineage'
-                      ? 'bg-primary text-white'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-                  }`}
-                >
-                  Program Lineage
-                </button>
-                <button
-                  onClick={() => setProgramView('hierarchy')}
-                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
-                    programView === 'hierarchy'
-                      ? 'bg-primary text-white'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-                  }`}
-                >
-                  Oversight Structure
-                </button>
-                <button
-                  onClick={() => setProgramView('disclosure')}
-                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
-                    programView === 'disclosure'
-                      ? 'bg-primary text-white'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-                  }`}
-                >
-                  Congressional Disclosure
-                </button>
-              </div>
-
-              {programView === 'lineage' ? (
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                  Directed flow of government and private UAP programs showing succession and
-                  relationship links over time. Left to right reflects chronological progression.
-                  Click any node to view that program&apos;s full profile.
-                </p>
-              ) : programView === 'hierarchy' ? (
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                  Top-down institutional authority chart mapping government agencies, programs,
-                  private contractors, and congressional oversight. Solid lines indicate authority,
-                  dashed lines indicate oversight or contractual relationships.
-                  Click any node for detail.
-                </p>
+              {/* Description (changes with heroView) */}
+              {heroView === 'network' ? (
+                <>
+                  <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Relationship Network</h2>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl mb-4">
+                    Force-directed graph spanning all key figures, programs, cases, and events across the DECUR dataset.
+                    Click any node to select it and explore its connections. Click again to navigate to its dedicated page.
+                  </p>
+                </>
               ) : (
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                  Chronological map of the modern UAP disclosure arc - congressional hearings,
-                  key witnesses, and the legislation they drove from 2020 to 2025.
-                  Click any witness node to view their full profile.
-                </p>
+                <>
+                  <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Claims Corroboration</h2>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl mb-4">
+                    Bipartite network mapping witnesses to the types of claims they independently make.
+                    Category node size reflects the number of independent witnesses - larger nodes indicate
+                    higher corroboration across the testimony record. Click any node to explore connections.
+                    Click a witness node twice to navigate to their profile.
+                  </p>
+                </>
+              )}
+
+              {/* Graphs: NetworkGraph always mounted; ClaimsCorroborationGraph mounts on first visit */}
+              <div className={heroView === 'network' ? '' : 'hidden'}>
+                <NetworkGraph />
+              </div>
+              {claimsEverShown && (
+                <div className={heroView === 'claims' ? '' : 'hidden'}>
+                  <ClaimsCorroborationGraph />
+                </div>
               )}
             </div>
-
-            {programView === 'lineage' ? (
-              <ProgramLineageFlow />
-            ) : programView === 'hierarchy' ? (
-              <OversightHierarchyFlow />
-            ) : (
-              <CongressionalDisclosureFlow />
-            )}
-            </div>
           </section>
 
-          {/* ── Evidence Tiers ────────────────────────────────────────────── */}
-          <section id="evidence-tiers">
+          {/* ── Secondary: Tabbed views ──────────────────────────── */}
+          <section ref={tabsRef} id="secondary-tabs" className="scroll-mt-14">
             <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
-              <div className="mb-4">
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Cases by Evidence Tier</h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
-                  All documented cases organized by evidence quality. Tier 1 cases carry the strongest
-                  multi-source evidentiary record. Cases are sorted chronologically within each tier.
-                  Click any case to view its summary, then navigate to the full case file.
-                </p>
+
+              {/* Tab bar */}
+              <div className="flex gap-1.5 mb-6 pb-4 border-b border-gray-200 dark:border-gray-700/50 flex-wrap">
+                {TAB_VIEWS.map(t => (
+                  <button key={t.id} onClick={() => activateTab(t.id)} className={tabPill(t.id)}>
+                    {t.label}
+                  </button>
+                ))}
               </div>
-              <EvidenceTierFlow />
+
+              {/* ── Timeline tab ─────────────────────────────────── */}
+              {mountedTabs.has('timeline') && (
+                <div className={activeTab === 'timeline' ? '' : 'hidden'}>
+                  <div className="mb-4">
+                    <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Timeline & History</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                      Historical event frequency and multi-source timeline spanning eight decades of documented UAP activity.
+                      Click a bar to filter the timeline to that decade.
+                    </p>
+                  </div>
+                  <EventFrequencyChart
+                    entries={entries}
+                    onSelectEra={handleSelectEra}
+                    onClearEra={() => setFocusEra(null)}
+                    activeEraStart={focusEra?.start ?? null}
+                  />
+                  <section ref={overlayRef} className="mt-6">
+                    <TimelineOverlay
+                      uapEntries={entries}
+                      insiderEvents={insiderEvents}
+                      caseEvents={caseEvents}
+                      focusEra={focusEra}
+                      onClearFocus={() => setFocusEra(null)}
+                    />
+                  </section>
+                </div>
+              )}
+
+              {/* ── Map tab ──────────────────────────────────────── */}
+              {mountedTabs.has('map') && (
+                <div className={activeTab === 'map' ? '' : 'hidden'}>
+                  <div className="mb-4">
+                    <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Incident Map</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                      Geographic distribution of documented UAP cases and geocoded historical events.
+                      Click any marker for location details and evidence summary.
+                    </p>
+                  </div>
+                  <CaseMap cases={mapCases} events={mapEvents} />
+                </div>
+              )}
+
+              {/* ── Programs tab ─────────────────────────────────── */}
+              {mountedTabs.has('program-lineage') && (
+                <div className={activeTab === 'program-lineage' ? '' : 'hidden'}>
+                  <div className="mb-4">
+                    <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Programs</h2>
+
+                    {/* Programs sub-view toggle */}
+                    <div className="flex gap-1 mb-3 flex-wrap">
+                      {(['lineage', 'hierarchy', 'disclosure'] as const).map(v => (
+                        <button
+                          key={v}
+                          onClick={() => setProgramView(v)}
+                          className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
+                            programView === v
+                              ? 'bg-primary text-white'
+                              : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                          }`}
+                        >
+                          {v === 'lineage' ? 'Program Lineage' : v === 'hierarchy' ? 'Oversight Structure' : 'Congressional Disclosure'}
+                        </button>
+                      ))}
+                    </div>
+
+                    {programView === 'lineage' ? (
+                      <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                        Directed flow of government and private UAP programs showing succession and
+                        relationship links over time. Left to right reflects chronological progression.
+                        Click any node to view that program&apos;s full profile.
+                      </p>
+                    ) : programView === 'hierarchy' ? (
+                      <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                        Top-down institutional authority chart mapping government agencies, programs,
+                        private contractors, and congressional oversight. Solid lines indicate authority,
+                        dashed lines indicate oversight or contractual relationships.
+                        Click any node for detail.
+                      </p>
+                    ) : (
+                      <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                        Chronological map of the modern UAP disclosure arc - congressional hearings,
+                        key witnesses, and the legislation they drove from 2020 to 2025.
+                        Click any witness node to view their full profile.
+                      </p>
+                    )}
+                  </div>
+
+                  {programView === 'lineage' ? (
+                    <ProgramLineageFlow />
+                  ) : programView === 'hierarchy' ? (
+                    <OversightHierarchyFlow />
+                  ) : (
+                    <CongressionalDisclosureFlow />
+                  )}
+                </div>
+              )}
+
+              {/* ── Cases tab ────────────────────────────────────── */}
+              {mountedTabs.has('evidence-tiers') && (
+                <div className={activeTab === 'evidence-tiers' ? '' : 'hidden'}>
+                  <div className="mb-4">
+                    <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Cases by Evidence Tier</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                      All documented cases organized by evidence quality. Tier 1 cases carry the strongest
+                      multi-source evidentiary record. Cases are sorted chronologically within each tier.
+                      Click any case to view its summary, then navigate to the full case file.
+                    </p>
+                  </div>
+                  <EvidenceTierFlow />
+                </div>
+              )}
+
             </div>
           </section>
 
