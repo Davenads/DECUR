@@ -861,6 +861,12 @@ export const graphData: GraphData = {
     { source: 'bruce-maccabee', target: 'robert-bigelow',    label: 'Bigelows NIDS engaged Maccabee for photo and film analysis work in the 1990s-2000s' },
     { source: 'bruce-maccabee', target: 'colm-kelleher',     label: 'Kellehers NIDS administration supported Maccabees analytical work under Bigelow funding' },
 
+    // Wilbert Smith connections
+    { source: 'wilbert-smith', target: 'stanton-friedman',    label: 'Friedman researched and publicized the 1950 Smith Memorandum after its 1979 declassification; memo became central to his MJ-12 investigations' },
+    { source: 'wilbert-smith', target: 'donald-keyhoe',       label: 'parallel 1950s UAP institutional investigators; NICAP and Project Magnet were the two most credentialed contemporary programs' },
+    { source: 'wilbert-smith', target: 'project-blue-book',   label: 'Project Magnet (Canada) and Blue Book (U.S.) were parallel official government UAP programs operating simultaneously in the early 1950s' },
+    { source: 'wilbert-smith', target: 'roscoe-hillenkoetter', label: 'contemporaneous UAP institutional figures; Hillenkoetter was CIA Director when Smith filed his classified memo about U.S. UAP secrecy levels' },
+
     // Jesse Marcel Jr. connections
     { source: 'jesse-marcel-jr', target: 'jesse-marcel',      label: 'son of Jesse Marcel Sr.; directly handled Roswell debris his father retrieved from the Foster Ranch crash site in July 1947' },
     { source: 'jesse-marcel-jr', target: 'stanton-friedman',  label: 'Friedmans 1978 interview with Marcel Sr. drew Marcel Jr. into public disclosure; remained in contact through subsequent Roswell investigations' },

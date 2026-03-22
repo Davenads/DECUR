@@ -1484,5 +1484,19 @@
     "data_file": "charles-mccullough.json",
     "type": "official",
     "includeInExplore": false
+  },
+  {
+    "id": "wilbert-smith",
+    "name": "Wilbert B. Smith",
+    "aliases": ["Wilbert Brockhouse Smith", "W.B. Smith"],
+    "role": "Superintendent of Radio Regulations Engineering, Canadian Dept. of Transport; Director, Project Magnet",
+    "period": "1950-1962",
+    "affiliation": "Canadian Department of Transport; Project Magnet",
+    "summary": "Senior Canadian government radio engineer who authored the classified 1950 Smith Memorandum - documenting that U.S. officials privately told him flying saucers were classified above the H-bomb and that Vannevar Bush led a group analyzing recovered hardware. Founded and directed Project Magnet (1950-1954), Canada's official government UAP investigation. His memo was declassified in 1979 and partially corroborated in 1983 when Dr. Robert Sarbacher confirmed the substance of their 1950 conversation in writing.",
+    "status": "detailed",
+    "tags": ["canada", "government", "historical", "project-magnet", "1950", "smith-memo", "radio-engineering", "official"],
+    "data_file": "wilbert-smith.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]
