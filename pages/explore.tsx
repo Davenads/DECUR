@@ -33,6 +33,11 @@ const OversightHierarchyFlow = dynamic(
   { ssr: false }
 );
 
+const ClaimsCorroborationGraph = dynamic(
+  () => import('../components/explore/ClaimsCorroborationGraph'),
+  { ssr: false }
+);
+
 interface Props {
   entries: TimelineEntry[];
   insiderEvents: WBEvent[];
@@ -49,6 +54,7 @@ interface FocusEra {
 
 const SECTION_NAV = [
   { id: 'relationship-network', label: 'Network'  },
+  { id: 'claims-network',       label: 'Claims'   },
   { id: 'timeline',             label: 'Timeline' },
   { id: 'map',                  label: 'Map'      },
   { id: 'program-lineage',      label: 'Programs' },
@@ -162,6 +168,22 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
                 Click any node to select it and explore its connections. Click again to navigate to its dedicated page.
               </p>
               <NetworkGraph />
+            </div>
+          </section>
+
+          {/* ── Claims Corroboration Network ─────────────────────────────── */}
+          <section id="claims-network">
+            <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
+              <div className="mb-4">
+                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">Claims Corroboration</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl">
+                  Bipartite network mapping witnesses to the types of claims they independently make.
+                  Category node size reflects the number of independent witnesses - larger nodes indicate
+                  higher corroboration across the testimony record. Click any node to explore connections.
+                  Click a witness node twice to navigate to their profile.
+                </p>
+              </div>
+              <ClaimsCorroborationGraph />
             </div>
           </section>
 
