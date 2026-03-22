@@ -848,5 +848,11 @@ export const graphData: GraphData = {
     { source: 'j-allen-hynek', target: 'project-blue-book', label: 'scientific consultant 1948-1969' },
     { source: 'j-allen-hynek', target: 'jacques-vallee',    label: 'co-authored The Edge of Reality (1975); intellectual partner until Hyneks death' },
     { source: 'j-allen-hynek', target: 'barry-goldwater',   label: 'contemporaneous public figures pushing for UAP transparency during Blue Book era' },
+
+    // Kenneth Arnold connections
+    { source: 'kenneth-arnold', target: 'donald-keyhoe',    label: 'Keyhoe made Arnolds 1947 sighting the cornerstone of NICAP advocacy' },
+    { source: 'kenneth-arnold', target: 'edward-ruppelt',   label: 'Ruppelt reviewed Arnold case as Blue Book director; cited as credible in 1956 book' },
+    { source: 'kenneth-arnold', target: 'j-allen-hynek',    label: 'Arnolds sighting precipitated Project Sign which Hynek consulted on from 1948' },
+    { source: 'kenneth-arnold', target: 'project-blue-book', label: 'Arnolds 1947 sighting directly triggered formation of Project Sign (Blue Books predecessor)' },
   ],
 };

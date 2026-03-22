@@ -1414,5 +1414,19 @@
     "data_file": "whitley-strieber.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "kenneth-arnold",
+    "name": "Kenneth Arnold",
+    "aliases": ["Kenneth A. Arnold"],
+    "role": "Private pilot; first widely-reported modern UAP witness (1947)",
+    "period": "1947-1984",
+    "affiliation": "Great Western Fire Control Supply; Idaho Search and Rescue",
+    "summary": "Experienced Idaho businessman and private pilot whose June 24, 1947 sighting of nine high-speed objects near Mt. Rainier directly triggered the formation of Project Sign - the first official USAF UFO investigation. The term 'flying saucer' emerged from press misquotation of his description. Army Air Force investigators found him credible. His account remains internally consistent across 37 years and his sighting remains unexplained in the official record.",
+    "status": "detailed",
+    "tags": ["pilot", "historical", "1947", "mount-rainier", "project-sign", "flying-saucer", "nicap"],
+    "data_file": "kenneth-arnold.json",
+    "type": "pilot",
+    "includeInExplore": true
   }
 ]
