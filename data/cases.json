@@ -6738,7 +6738,7 @@
     "classification_status": "unresolved",
     "summary": "A prolonged close-range encounter near Exeter, New Hampshire involving a police officer, a civilian, and a large low-flying craft with brilliant flashing lights. The incident lasted over two hours, involved multiple independent witnesses including two police officers, and generated an official Project Blue Book investigation that ultimately classified it 'Unidentified' (Case 9890). John Fuller's subsequent book 'Incident at Exeter' (1966) made it one of the most thoroughly documented civilian UAP cases of the era.",
     "tags": ["blue-book", "1960s", "police-witness", "close-encounter", "new-england", "ground-visual", "multiple-witnesses"],
-    "insider_connections": [],
+    "insider_connections": ["j-allen-hynek"],
     "coordinates": { "lat": 42.9814, "lng": -70.9478 },
     "overview": {
       "key_facts": [
@@ -6862,7 +6862,7 @@
     "classification_status": "unresolved",
     "summary": "Two engineers driving near Loch Raven Dam outside Baltimore encountered a large egg-shaped craft hovering over the bridge spanning the dam. Their car engine and headlights failed as they approached. The object emitted intense heat and light before ascending rapidly with a loud sound. Both men suffered radiation-type skin burns requiring medical treatment. Project Blue Book investigated and classified the case 'Unidentified' (Case 6148). It remains one of the best-documented vehicle electromagnetic effect (EME) cases in the Blue Book archive.",
     "tags": ["blue-book", "1950s", "electromagnetic-effects", "vehicle-interference", "radiation-burns", "maryland", "close-encounter", "physical-effects"],
-    "insider_connections": [],
+    "insider_connections": ["j-allen-hynek"],
     "coordinates": { "lat": 39.4668, "lng": -76.5614 },
     "overview": {
       "key_facts": [

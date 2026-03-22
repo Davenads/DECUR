@@ -187,14 +187,22 @@ const CONNECTION_NOTES: Record<string, string> = {
   'richard-dolan':  'Researched and documented this incident extensively in his National Security State series.',
   'alex-dietrich':  'Wingman to Fravor during the Nimitz encounter - corroborating military witness.',
   'kevin-day':      'USS Princeton radar operator who tracked anomalous objects for two weeks prior to the Nimitz encounter.',
+  'j-allen-hynek':  'Project Blue Book scientific consultant - investigated this case directly and it contributed to the case file classified Unidentified.',
 };
 
 const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
   if (c.insider_connections.length === 0) {
     return (
-      <div className="text-center py-10">
-        <p className="text-sm text-gray-400 dark:text-gray-500">No direct connections to DECUR insider profiles.</p>
-        <p className="text-xs text-gray-300 dark:text-gray-600 mt-1">This incident predates or is independent of the primary disclosure ecosystem.</p>
+      <div className="py-10 text-center">
+        <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 mb-4">
+          <svg className="w-6 h-6 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">No linked insider profiles</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400 max-w-sm mx-auto">
+          No DECUR key figures have been directly connected to this case yet. Connections are added as profiles are verified and cross-referenced.
+        </p>
       </div>
     );
   }

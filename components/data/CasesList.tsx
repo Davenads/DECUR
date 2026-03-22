@@ -30,6 +30,23 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
 
   return (
     <div>
+      {/* Blue Book Archive Callout */}
+      <div className="mb-4 flex items-center justify-between p-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/50 rounded-lg">
+        <div>
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">
+            Project Blue Book - Unidentified Cases Archive
+          </p>
+          <p className="text-xs text-amber-700 dark:text-amber-400 mt-0.5">
+            558 cases officially classified Unidentified (1947-1969) - NICAP verified
+          </p>
+        </div>
+        <a
+          href="/blue-book"
+          className="flex-shrink-0 ml-4 px-3 py-1.5 text-xs font-medium bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700 rounded-lg hover:bg-amber-200 dark:hover:bg-amber-800/50 transition-colors"
+        >
+          Browse Archive
+        </a>
+      </div>
       <div className="mb-4">
         <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 mb-1">Documented Cases</h2>
         <p className="text-sm text-gray-500 dark:text-gray-400">

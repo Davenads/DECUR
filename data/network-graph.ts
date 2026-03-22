@@ -843,5 +843,10 @@ export const graphData: GraphData = {
     { source: 'whitley-strieber', target: 'jacques-vallee', label: 'long-term Dreamland collaborator; shared view of genuine anomalous contact reality' },
     { source: 'whitley-strieber', target: 'hal-puthoff',   label: 'Dreamland guest; parallel investigations of anomalous phenomena' },
     { source: 'whitley-strieber', target: 'george-knapp',  label: 'Dreamland platform and overlapping UAP research community' },
+
+    // J. Allen Hynek additional connections
+    { source: 'j-allen-hynek', target: 'project-blue-book', label: 'scientific consultant 1948-1969' },
+    { source: 'j-allen-hynek', target: 'jacques-vallee',    label: 'co-authored The Edge of Reality (1975); intellectual partner until Hyneks death' },
+    { source: 'j-allen-hynek', target: 'barry-goldwater',   label: 'contemporaneous public figures pushing for UAP transparency during Blue Book era' },
   ],
 };
