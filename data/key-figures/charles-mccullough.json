@@ -1,0 +1,180 @@
+{
+  "profile": {
+    "id": "charles-mccullough",
+    "name": "Charles J. McCullough III",
+    "aliases": ["Charles McCullough", "Chuck McCullough", "IC Inspector General McCullough"],
+    "born": "United States",
+    "died": null,
+    "roles": [
+      "Inspector General of the Intelligence Community, ODNI (2011-2017)",
+      "Partner - Compass Rose Legal Group",
+      "UAP Whistleblower Attorney"
+    ],
+    "service_period": "2011-2017 (IC IG); 2017-present (private practice)",
+    "organizations": [
+      "Office of the Director of National Intelligence (ODNI)",
+      "Federal Bureau of Investigation",
+      "U.S. Army (JAG Corps)",
+      "Compass Rose Legal Group"
+    ],
+    "clearance": "TS/SCI (former, active as IC IG; current status as cleared defense counsel)",
+    "summary": "Former Inspector General of the Intelligence Community (IC IG) under the Obama administration (2011-2017), appointed as the first Senate-confirmed IC IG under the reformed oversight structure. After leaving government, McCullough became the legal representative for David Grusch in his formal UAP whistleblower complaint to the IC IG and DoD IG - a complaint McCullough knew the inner workings of institutionally. His post-government public statements validating Grusch's complaint process and asserting his client 'is not alone' carry unique weight given his direct prior role overseeing the very office that received the complaint.",
+    "education": [
+      "J.D., Law (institution not publicly disclosed)",
+      "U.S. Army Judge Advocate General (JAG) Corps service"
+    ],
+    "early_career": [
+      "Served as a Judge Advocate in the U.S. Army, gaining experience in military law and national security matters",
+      "Joined the FBI as a special agent/attorney, working on counterterrorism and national security cases",
+      "Held senior positions in the DOJ prior to appointment as IC IG"
+    ],
+    "key_events": [
+      {
+        "year": "2011",
+        "event": "Confirmed by the U.S. Senate as the first Inspector General of the Intelligence Community under the reformed IC IG statute; served as the chief independent watchdog for all 17 U.S. intelligence agencies under the Director of National Intelligence."
+      },
+      {
+        "year": "2014",
+        "event": "Led the IC IG investigation into Hillary Clinton's use of a private email server for classified communications; the finding of classified material in the server generated significant political controversy and established McCullough's willingness to pursue findings regardless of political sensitivity."
+      },
+      {
+        "year": "2017",
+        "event": "Departed the IC IG position and entered private legal practice, joining Compass Rose Legal Group; retained his security clearances as cleared defense counsel, maintaining access to classified matters in a legal capacity."
+      },
+      {
+        "year": "2022",
+        "event": "Engaged as legal counsel for David Grusch, a former NRO and NGA official, and filed a formal whistleblower complaint on Grusch's behalf with the IC IG and DoD IG; the complaint alleged the existence of classified UAP crash retrieval and reverse-engineering programs improperly withheld from Congressional oversight."
+      },
+      {
+        "year": "Jun 2023",
+        "event": "Following Grusch's public disclosures via The Debrief and NewsNation, McCullough gave multiple media interviews confirming his client had been granted whistleblower protection status and stating Grusch 'is not alone' in his knowledge of UAP programs - the most direct public validation of Grusch's disclosures by a credentialed legal-institutional figure."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "Grusch testified under oath before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs alongside Ryan Graves and David Fravor; McCullough's legal framework and preparation were central to the protected testimony and the scope of what Grusch could disclose."
+      },
+      {
+        "year": "Nov 2023",
+        "event": "Participated in the SOL Foundation UAP symposium at Stanford University, alongside senior scientific and policy figures; McCullough's presence as a former IC IG added institutional weight to the symposium's legal and policy discussions."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "David Grusch's whistleblower complaint was properly filed, legally protected, and has been substantiated through the IC IG process",
+      "status": "partially-verified",
+      "explanation": "This is primarily a legal and procedural claim rather than a factual UAP claim. McCullough stated publicly that Grusch had been granted whistleblower protection status - meaning the IC IG found the underlying complaint had a sufficient basis to warrant protection. The Inspector General of the Intelligence Community additionally found Grusch's complaint 'credible and urgent' according to reporting by The Debrief. That threshold determination constitutes institutional corroboration of the complaint's procedural legitimacy, though it is not a confirmation of the underlying UAP program claims."
+    },
+    {
+      "claim": "David Grusch is not the only intelligence community official with knowledge of classified UAP programs of the type he described",
+      "status": "unverified",
+      "explanation": "McCullough stated in multiple 2023 media appearances that Grusch 'is not alone' - implying other current or former IC officials share his knowledge. This assertion is consistent with Grusch's own testimony that he interviewed 40-plus officials as part of his investigation. However, no additional official has come forward on the record with equivalent specificity, and the claim rests entirely on McCullough's statement as cleared defense counsel. It cannot be independently verified without further disclosures."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Former Senate-confirmed Inspector General of the Intelligence Community - the highest independent oversight official for U.S. intelligence agencies; no higher institutional credential exists for evaluating IC whistleblower processes",
+      "His institutional knowledge of the IC IG complaint process is direct and firsthand - he oversaw the very office that received Grusch's complaint",
+      "The IC IG's 'credible and urgent' threshold determination on Grusch's complaint is an institutional data point, not merely McCullough's personal opinion",
+      "His willingness to pursue politically sensitive findings (Clinton email investigation) demonstrates he operates independently of political pressure",
+      "His security clearances as cleared defense counsel allow him to review classified material relevant to his clients' cases",
+      "His law firm (Compass Rose Legal Group) has built a practice around national security whistleblower representation, establishing relevant institutional expertise"
+    ],
+    "contradicting": [
+      "As legal counsel, McCullough has a professional obligation to advocate for his client's interests; his public statements should be interpreted within that professional context",
+      "His public statements are carefully limited to procedural and legal claims; he has not himself claimed to have reviewed classified UAP program material",
+      "No additional named IC official has publicly corroborated the 'not alone' assertion in the years since Grusch's disclosure",
+      "His primary public role has been advocacy and legal defense, not independent investigation; his credibility on UAP substance derives from his client's disclosures, not his own inquiry"
+    ],
+    "overall": "McCullough is one of the most institutionally credentialed figures associated with the current UAP disclosure effort, but his credibility is specifically and properly limited to the legal and procedural domain. His confirmation that Grusch received whistleblower protection and his 'not alone' statement are meaningful institutional signals - but they are not independent confirmation of UAP program substance. Assessed as highly credible in his specific domain of expertise (IC oversight and whistleblower process), with appropriate limits on how far that credibility extends to underlying factual claims."
+  },
+  "associated_people": [
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "UAP whistleblower; primary client",
+      "relationship": "McCullough is Grusch's legal representative in the formal IC IG whistleblower complaint and all subsequent proceedings. His public advocacy for Grusch's disclosures constitutes the most direct institutional endorsement of the complaint's legitimacy."
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP director; UAP whistleblower",
+      "relationship": "McCullough has been involved in legal and advocacy efforts alongside Elizondo in the broader UAP whistleblower community; both have operated within overlapping legal and disclosure frameworks."
+    },
+    {
+      "id": "daniel-sheehan",
+      "name": "Daniel Sheehan",
+      "role": "Constitutional attorney; UAP legal advocate",
+      "relationship": "Fellow attorney operating in the UAP disclosure legal space; both have participated in overlapping forums and share an institutional focus on congressional oversight and whistleblower protection."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jun 2023",
+      "type": "television",
+      "title": "NewsNation / media interviews - Grusch whistleblower validation",
+      "outlet": "NewsNation, NBC News, various outlets",
+      "notes": "Multiple media appearances following Grusch's public disclosure; confirmed whistleblower protection status and stated Grusch 'is not alone.' The most consequential public statements McCullough has made on UAP substance."
+    },
+    {
+      "date": "Jul 2023",
+      "type": "congressional-testimony",
+      "title": "House UAP Subcommittee Hearing - Legal Representation of Grusch",
+      "outlet": "U.S. House of Representatives - Subcommittee on National Security, the Border, and Foreign Affairs",
+      "notes": "McCullough prepared and legally supported Grusch's sworn testimony before the House subcommittee alongside Ryan Graves and David Fravor; the legal framework he established determined the scope of what Grusch could disclose in open session."
+    },
+    {
+      "date": "Nov 2023",
+      "type": "speech",
+      "title": "SOL Foundation UAP Symposium",
+      "outlet": "SOL Foundation / Stanford University",
+      "notes": "Participated in the inaugural SOL Foundation symposium, adding legal and institutional perspective to UAP policy discussions alongside scientific and government participants."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Debrief - David Grusch UAP Whistleblower Report",
+      "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/",
+      "type": "Article",
+      "notes": "Primary report (June 2023) by Leslie Kean and Ralph Blumenthal introducing Grusch; McCullough's role as legal counsel confirmed in reporting"
+    },
+    {
+      "title": "NewsNation - Charles McCullough Interview (June 2023)",
+      "url": "https://www.newsnationnow.com/space/ufo/ex-intel-watchdog-ufo-whistleblower-not-alone/",
+      "type": "Television",
+      "notes": "McCullough's direct statement that Grusch 'is not alone' in UAP knowledge"
+    },
+    {
+      "title": "House UAP Subcommittee Hearing - Official Transcript (July 26, 2023)",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "type": "Government Document",
+      "notes": "Official record of the hearing for which McCullough provided legal representation; includes Grusch's sworn testimony"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "program",
+      "node_id": "aaro",
+      "node_label": "AARO",
+      "relationship": "IC IG oversight responsibility included all UAP-related intelligence activities, including those that would later be formalized under AARO.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Filed formal whistleblower complaint on Grusch's behalf; primary legal-institutional connection in the UAP disclosure effort.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "luis-elizondo",
+      "node_label": "Luis Elizondo",
+      "relationship": "Overlapping UAP whistleblower legal advocacy; both operate within the same congressional disclosure framework.",
+      "connection_type": "professional"
+    }
+  ]
+}

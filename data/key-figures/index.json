@@ -1470,5 +1470,19 @@
     "data_file": "jesse-marcel-jr.json",
     "type": "official",
     "includeInExplore": false
+  },
+  {
+    "id": "charles-mccullough",
+    "name": "Charles J. McCullough III",
+    "aliases": ["Charles McCullough", "Chuck McCullough"],
+    "role": "Inspector General of the Intelligence Community (2011-2017); UAP Whistleblower Attorney",
+    "period": "2011-present",
+    "affiliation": "Office of the Director of National Intelligence; Compass Rose Legal Group",
+    "summary": "Former Inspector General of the Intelligence Community (2011-2017) and legal representative for UAP whistleblower David Grusch. As the first Senate-confirmed IC IG, McCullough oversaw independent watchdog functions across all 17 U.S. intelligence agencies. His post-government validation of Grusch's whistleblower complaint - including public statements that Grusch 'is not alone' - carries unique institutional weight given his direct prior role over the office that received the complaint.",
+    "status": "detailed",
+    "tags": ["legal", "intelligence", "whistleblower", "official", "grusch", "ic-ig", "odni", "disclosure", "2023"],
+    "data_file": "charles-mccullough.json",
+    "type": "official",
+    "includeInExplore": false
   }
 ]
