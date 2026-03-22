@@ -1428,5 +1428,19 @@
     "data_file": "kenneth-arnold.json",
     "type": "pilot",
     "includeInExplore": true
+  },
+  {
+    "id": "roscoe-hillenkoetter",
+    "name": "Rear Adm. Roscoe H. Hillenkoetter",
+    "aliases": ["Roscoe Henry Hillenkoetter", "Admiral Hillenkoetter"],
+    "role": "First CIA Director (1947-1950); NICAP Board of Governors",
+    "period": "1947-1962",
+    "affiliation": "Central Intelligence Agency; U.S. Navy; NICAP",
+    "summary": "The first Director of the Central Intelligence Agency (1947-1950), serving during the formation of Project Sign and the earliest official UAP investigations. After retirement, joined NICAP's Board of Governors alongside Donald Keyhoe, becoming the highest-credentialed official to publicly associate with civilian UAP advocacy. His 1960 New York Times-reported congressional statement asserting that Air Force officers were 'soberly concerned' about UAPs remains the most significant public disclosure by any former senior official prior to the 2017 era.",
+    "status": "detailed",
+    "tags": ["cia", "navy", "official", "nicap", "historical", "cold-war", "disclosure", "1947", "1960"],
+    "data_file": "roscoe-hillenkoetter.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

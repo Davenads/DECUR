@@ -1,0 +1,179 @@
+{
+  "profile": {
+    "id": "roscoe-hillenkoetter",
+    "name": "Rear Adm. Roscoe H. Hillenkoetter",
+    "aliases": ["Roscoe Henry Hillenkoetter", "R.H. Hillenkoetter", "Admiral Hillenkoetter"],
+    "born": "May 17, 1897 - St. Louis, Missouri",
+    "died": "June 18, 1982 - New York City, New York",
+    "roles": [
+      "First Director, Central Intelligence Agency (May 1947 - October 1950)",
+      "Rear Admiral, U.S. Navy (retired)",
+      "Member, Board of Governors, National Investigations Committee on Aerial Phenomena (NICAP, 1957-1962)"
+    ],
+    "service_period": "1919-1957 (Navy); 1947-1950 (CIA); 1957-1962 (NICAP board)",
+    "organizations": [
+      "Central Intelligence Agency",
+      "U.S. Navy",
+      "National Investigations Committee on Aerial Phenomena (NICAP)"
+    ],
+    "clearance": "SCI - all-source (former; CIA Director)",
+    "summary": "The first Director of the Central Intelligence Agency (May 1947-October 1950), serving during the same period in which the modern UAP investigation apparatus was established - Project Sign was formed in December 1947, months after Hillenkoetter's CIA appointment. After retiring from the Navy in 1957, he joined the Board of Governors of NICAP alongside Donald Keyhoe, becoming the highest-credentialed official to openly associate with a civilian UAP advocacy organization. In 1960, a congressional letter attributed to him was published by the New York Times stating that high-ranking Air Force officers were 'soberly concerned' about UAPs but that 'official secrecy and ridicule' were preventing honest public engagement. He is the most institutionally credentialed figure to have publicly advocated for UAP transparency prior to the 2017 disclosure era.",
+    "education": [
+      "B.S., United States Naval Academy, Annapolis (1919)",
+      "Postgraduate study, Naval War College"
+    ],
+    "early_career": [
+      "Graduated from the U.S. Naval Academy in 1919, beginning a career that would include assignments in naval intelligence, attache duty, and command of naval vessels",
+      "Served as Naval Attache to the American embassies in Paris and Vichy France during World War II, developing extensive intelligence tradecraft and foreign liaison relationships",
+      "Commanded the USS Missouri briefly; served as Inspector General of the Navy before his CIA appointment",
+      "Was personally selected by President Harry Truman to serve as the first Director of Central Intelligence when the CIA was established under the National Security Act of 1947"
+    ],
+    "key_events": [
+      {
+        "year": "1947",
+        "event": "Appointed by President Truman as the first Director of Central Intelligence in May 1947, overseeing the CIA's formative period. The National Security Act creating both the CIA and the USAF was signed in September 1947. Project Sign - the first official Air Force UAP investigation program - was established in December 1947, all within Hillenkoetter's first year as CIA Director. What the CIA Director knew about, received briefings on, or directed regarding UAP during this period has never been fully disclosed."
+      },
+      {
+        "year": "1947",
+        "event": "The Kenneth Arnold sighting (June 1947), Roswell incident (July 1947), and a wave of subsequent reports all occurred in the months immediately surrounding Hillenkoetter's CIA appointment. The CIA's institutional awareness of and engagement with the UAP question during this period is partially documented in declassified CREST database records, which show CIA analysts were tracking the phenomenon. Hillenkoetter's personal involvement in those analyses has not been established through declassified records."
+      },
+      {
+        "year": "1950",
+        "event": "Stepped down as CIA Director in October 1950 following the Korean War's outbreak and policy disagreements with the Truman administration. He was replaced by Walter Bedell Smith. He returned to active Navy service and eventually retired as a Rear Admiral."
+      },
+      {
+        "year": "1957",
+        "event": "Joined the Board of Governors of the National Investigations Committee on Aerial Phenomena (NICAP), the civilian UAP research organization founded by T. Townsend Brown (already profiled) and led by Donald Keyhoe (already profiled). Hillenkoetter and Keyhoe had been Naval Academy classmates. His presence on the NICAP board - as a former CIA director and Rear Admiral - was the organization's single most significant institutional credentialing."
+      },
+      {
+        "year": "1960",
+        "event": "A congressional statement attributed to Hillenkoetter was reported by the New York Times, stating: 'Behind the scenes, high-ranking Air Force officers are soberly concerned about UFOs. But through official secrecy and ridicule, many citizens are led to believe the unknown flying objects are nonsense.' This was the most significant public statement by any former senior official prior to the post-2017 disclosure era - a Senate-era public-record disclosure call from a sitting NICAP board member and former CIA Director."
+      },
+      {
+        "year": "1962",
+        "event": "Departed the NICAP board. In a 1963 private letter to skeptic Dr. Donald Menzel, he described NICAP as a 'bickering body' and distanced himself from its advocacy approach. This private correspondence - at odds with his public 1960 statement - creates an interpretive tension that researchers have noted: his public advocacy and private skepticism were not fully consistent, and his actual beliefs about the phenomenon's nature remain unclear from the documentary record."
+      },
+      {
+        "year": "1982",
+        "event": "Died June 18, 1982, in New York City. He never gave a comprehensive on-the-record interview about his knowledge of UAPs during his CIA directorship. His name was subsequently included in the 1984 'MJ-12' documents - a set of alleged classified briefing papers describing a secret UAP management group - which most researchers now consider to be fabrications. His inclusion in the MJ-12 documents has complicated assessment of his actual institutional role, as they cannot be reliably used as evidence."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "hillenkoetter-1960-statement",
+      "claim": "High-ranking Air Force officers were genuinely concerned about UAPs, but official secrecy and ridicule were preventing honest public and congressional engagement with the phenomenon.",
+      "status": "partially-verified",
+      "notes": "The congressional statement is verified as having been reported in the New York Times (1960) and attributed to Hillenkoetter in that context. The substance of the claim - that senior Air Force officers had concerns beyond public statements - is supported by declassified Blue Book correspondence, the Robertson Panel's documented debunking mandate, and internal Air Force documents from the period. The specific degree of institutional concern cannot be independently verified without access to records that remain classified."
+    },
+    {
+      "id": "hillenkoetter-cia-knowledge",
+      "claim": "As CIA Director during the most active period of early UAP investigation (1947-1950), Hillenkoetter had access to classified intelligence about the phenomenon that has never been publicly disclosed.",
+      "status": "unverified",
+      "notes": "Declassified CIA CREST database records confirm the CIA was actively tracking UAP reports during Hillenkoetter's directorship. Whether he received or directed specific intelligence about the phenomenon is not established through declassified records. His inclusion in the MJ-12 documents - now widely considered forgeries - cannot be used as evidence. The claim is plausible given his role but remains unverified."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "U.S. Naval Academy graduate; Senate-confirmed CIA Director; Rear Admiral - his institutional credentials are beyond question",
+      "His 1960 NY Times-reported congressional statement is a documented primary source, not a secondhand account",
+      "His decision to join the NICAP board alongside his Naval Academy classmate Donald Keyhoe was a deliberate institutional signal from a figure with the highest security clearances of any NICAP member",
+      "Declassified CIA CREST database records confirm the CIA was tracking UAP reports during his directorship, providing institutional context for his later advocacy",
+      "He departed NICAP after 5 years, suggesting he was not simply a passive figurehead - he made an active decision to engage and then disengage"
+    ],
+    "contradicting": [
+      "His 1963 private letter to Donald Menzel describing NICAP as a 'bickering body' is at odds with his 1960 public congressional advocacy, creating ambiguity about his actual beliefs",
+      "His name appears in the MJ-12 documents (1984), widely considered to be forgeries - his association with this fabricated material complicates clean assessment of his actual institutional role",
+      "He never gave a comprehensive on-the-record interview about his CIA-era knowledge of UAPs, leaving his actual institutional awareness undocumented",
+      "No declassified records have established a direct connection between him and specific classified UAP programs during his CIA directorship beyond general awareness of the phenomenon"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "donald-keyhoe",
+      "name": "Maj. Donald E. Keyhoe",
+      "role": "USMC aviator; NICAP director; UAP researcher",
+      "relationship": "Naval Academy classmates and NICAP board colleagues. Keyhoe recruited Hillenkoetter to the NICAP board and their shared institutional credentialing made NICAP's advocacy significantly more difficult to dismiss. Hillenkoetter's 1960 congressional statement amplified the thrust of Keyhoe's own public advocacy."
+    },
+    {
+      "id": "kenneth-arnold",
+      "name": "Kenneth Arnold",
+      "role": "Private pilot; first widely-reported modern UAP witness (1947)",
+      "relationship": "Arnold's June 1947 sighting occurred within weeks of Hillenkoetter's CIA appointment. As CIA Director, Hillenkoetter presided over the institutional period that produced the first Air Force UAP investigation programs - the direct response to Arnold's sighting and the subsequent wave of reports."
+    },
+    {
+      "id": "barry-goldwater",
+      "name": "Sen. Barry Goldwater",
+      "role": "U.S. Senator, Arizona; Chairman, Senate Armed Services Committee",
+      "relationship": "Contemporaneous institutional figures advocating for UAP transparency from different positions during the same 1957-1964 period. Goldwater's Senate Armed Services chairmanship and Hillenkoetter's NICAP board position represented parallel institutional pressure points for UAP disclosure in the early Cold War era."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1960",
+      "type": "speech",
+      "title": "Congressional Statement on UAP Secrecy",
+      "outlet": "U.S. Congress (reported by the New York Times)",
+      "notes": "Public statement asserting that high-ranking Air Force officers were 'soberly concerned' about UAPs but that official secrecy and ridicule were preventing honest public engagement. The most significant public UAP statement by any former senior official prior to 2017."
+    },
+    {
+      "date": "1957",
+      "type": "speech",
+      "title": "NICAP Board of Governors Membership",
+      "outlet": "National Investigations Committee on Aerial Phenomena",
+      "notes": "His five-year NICAP board membership was itself a form of institutional disclosure - a former CIA Director associating publicly with a civilian UAP advocacy organization."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Project Blue Book",
+      "relationship": "Hillenkoetter was CIA Director when Project Sign was established (Dec 1947) and during its transformation into Grudge and then Blue Book. His agency's awareness of and engagement with the UAP question during this period is partially documented in declassified CREST records.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "donald-keyhoe",
+      "node_label": "Maj. Donald Keyhoe",
+      "relationship": "Naval Academy classmates who became NICAP board colleagues. Keyhoe recruited Hillenkoetter to the board; their combined credentialing made NICAP significantly more difficult for the Air Force to dismiss.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "kenneth-arnold",
+      "node_label": "Kenneth Arnold",
+      "relationship": "Arnold's 1947 sighting triggered the institutional response that Hillenkoetter presided over as CIA Director - Project Sign was established within months of the sighting.",
+      "connection_type": "investigative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "New York Times - Hillenkoetter Congressional Statement (1960)",
+      "url": "https://www.nytimes.com/",
+      "type": "News",
+      "notes": "Primary source for the 1960 public statement attributed to Hillenkoetter regarding Air Force UAP concern and official secrecy"
+    },
+    {
+      "title": "CIA CREST Database - UAP Records 1947-1950",
+      "url": "https://www.cia.gov/readingroom/collection/ufo-reading-room",
+      "type": "Government Document",
+      "notes": "Declassified CIA records documenting the agency's tracking of UAP reports during Hillenkoetter's directorship"
+    },
+    {
+      "title": "NICAP Board of Governors Records",
+      "url": "https://www.nicap.org/",
+      "type": "Institution",
+      "notes": "NICAP documentation of Hillenkoetter's 1957-1962 board membership"
+    },
+    {
+      "title": "UFOs and Government: A Historical Inquiry - Swords and Powell (2012)",
+      "url": "https://www.amazon.com/dp/1938398009",
+      "type": "Book",
+      "notes": "Academic treatment of the institutional UAP investigation history including Hillenkoetter's CIA period and NICAP involvement (Anomalist Books, 2012)"
+    }
+  ]
+}

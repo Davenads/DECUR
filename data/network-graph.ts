@@ -854,5 +854,11 @@ export const graphData: GraphData = {
     { source: 'kenneth-arnold', target: 'edward-ruppelt',   label: 'Ruppelt reviewed Arnold case as Blue Book director; cited as credible in 1956 book' },
     { source: 'kenneth-arnold', target: 'j-allen-hynek',    label: 'Arnolds sighting precipitated Project Sign which Hynek consulted on from 1948' },
     { source: 'kenneth-arnold', target: 'project-blue-book', label: 'Arnolds 1947 sighting directly triggered formation of Project Sign (Blue Books predecessor)' },
+
+    // Roscoe Hillenkoetter connections
+    { source: 'roscoe-hillenkoetter', target: 'donald-keyhoe',    label: 'Naval Academy classmates; NICAP board colleagues 1957-1962' },
+    { source: 'roscoe-hillenkoetter', target: 'kenneth-arnold',   label: 'Hillenkoetter was CIA Director when Arnolds 1947 sighting triggered Project Sign' },
+    { source: 'roscoe-hillenkoetter', target: 'project-blue-book', label: 'CIA Director during Project Sign formation (1947); agency tracked UAP reports throughout his tenure' },
+    { source: 'roscoe-hillenkoetter', target: 'barry-goldwater',  label: 'Contemporaneous institutional figures applying pressure for UAP transparency in the 1957-1964 period' },
   ],
 };

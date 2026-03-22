@@ -118,6 +118,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'jeremy-corbell':     { label: 'Jeremy Corbell',          color: '#0f766e' },
   'whitley-strieber':   { label: 'Whitley Strieber',         color: '#7e22ce' },
   'kenneth-arnold':     { label: 'Kenneth Arnold',           color: '#78350f' },
+  'roscoe-hillenkoetter': { label: 'Adm. Roscoe Hillenkoetter', color: '#1e3a5f' },
 };
 
 const UAP_COLOR = '#93c5e8';
