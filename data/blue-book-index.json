@@ -5,7 +5,11 @@
     "source_url": "https://www.nicap.org/bluebook/bluelist.htm",
     "program": "project-blue-book",
     "program_period": "1947-1969",
-    "note": "558 cases verified as 'Unidentified' by NICAP independent review. Official USAF count: 701. Discrepancy reflects NICAP's more conservative verification standard."
+    "note": "558 cases verified as 'Unidentified' by NICAP independent review. Official USAF count: 701. Discrepancy reflects NICAP's more conservative verification standard.",
+    "enrichment_source": "Brad Sparks Comprehensive Catalog of Blue Book Unknowns (CUFOS, 2020)",
+    "enrichment_url": "https://cufos.org/PDFs/pdfs/BB_Unknowns.pdf",
+    "enriched_cases": 434,
+    "cases_with_coordinates": 29
   },
   "cases": [
     {
@@ -16,7 +20,8 @@
       "decade": "1940s",
       "location": "Portland, Oregon",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-27",
@@ -36,7 +41,10 @@
       "decade": "1940s",
       "location": "Emmett, Idaho",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 43.88,
+      "lon": -116.48,
+      "duration": "105 min"
     },
     {
       "id": "bb-36",
@@ -46,7 +54,8 @@
       "decade": "1940s",
       "location": "Fairfield-Suisan AFB, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-50",
@@ -56,7 +65,8 @@
       "decade": "1940s",
       "location": "Muroc AFB, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-69",
@@ -86,7 +96,8 @@
       "decade": "1940s",
       "location": "Dodgeville, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-95",
@@ -106,7 +117,9 @@
       "decade": "1940s",
       "location": "Holloman AFB, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-185",
@@ -116,7 +129,8 @@
       "decade": "1940s",
       "location": "Indianapolis, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-190",
@@ -126,7 +140,8 @@
       "decade": "1940s",
       "location": "Indianapolis, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-191",
@@ -156,7 +171,9 @@
       "decade": "1940s",
       "location": "Kyushu, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-257",
@@ -166,7 +183,8 @@
       "decade": "1940s",
       "location": "Fairfield-Suisan AFB, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "25 sec"
     },
     {
       "id": "bb-275",
@@ -186,7 +204,8 @@
       "decade": "1940s",
       "location": "Cortex, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-319",
@@ -196,7 +215,8 @@
       "decade": "1940s",
       "location": "Killeen Base, Camp Hood, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-358",
@@ -206,7 +226,9 @@
       "decade": "1940s",
       "location": "Arrey, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "50 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-361",
@@ -216,7 +238,10 @@
       "decade": "1940s",
       "location": "Tucson, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 32.23,
+      "lon": -110.96,
+      "instruments_documented": true
     },
     {
       "id": "bb-376",
@@ -226,7 +251,8 @@
       "decade": "1940s",
       "location": "Fort Bliss, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 sec"
     },
     {
       "id": "bb-379",
@@ -236,7 +262,10 @@
       "decade": "1940s",
       "location": "Livermore, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 37.69,
+      "lon": -121.76,
+      "duration": "5 min"
     },
     {
       "id": "bb-384",
@@ -246,7 +275,9 @@
       "decade": "1940s",
       "location": "Tucson, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-404",
@@ -256,7 +287,8 @@
       "decade": "1940s",
       "location": "Southern, Oregon",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-483",
@@ -266,7 +298,9 @@
       "decade": "1940s",
       "location": "Mountain Home, Idaho",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "9 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-496",
@@ -286,7 +320,9 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-645",
@@ -296,7 +332,9 @@
       "decade": "1950s",
       "location": "Los Alamos, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-650",
@@ -306,7 +344,8 @@
       "decade": "1950s",
       "location": "Selfridge AFB, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-671",
@@ -316,7 +355,8 @@
       "decade": "1950s",
       "location": "Stuttgart, Arkansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "9 sec"
     },
     {
       "id": "bb-678",
@@ -326,7 +366,9 @@
       "decade": "1950s",
       "location": "Motobu, Okinawa",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "12 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-680",
@@ -336,7 +378,9 @@
       "decade": "1950s",
       "location": "Santiago, Chile",
       "country": "Chile",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-682",
@@ -356,7 +400,10 @@
       "decade": "1950s",
       "location": "Kokomo, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 40.5,
+      "lon": -86.13,
+      "duration": "2 min"
     },
     {
       "id": "bb-711",
@@ -366,7 +413,8 @@
       "decade": "1950s",
       "location": "Fort Monmouth, New Jersey",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-721",
@@ -376,7 +424,8 @@
       "decade": "1950s",
       "location": "East Ely, Nevada",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-738",
@@ -386,7 +435,10 @@
       "decade": "1950s",
       "location": "Texarkana, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 33.43,
+      "lon": -94.05,
+      "duration": "5 sec"
     },
     {
       "id": "bb-758",
@@ -396,7 +448,8 @@
       "decade": "1950s",
       "location": "Redstone Arsenal, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-773",
@@ -406,7 +459,8 @@
       "decade": "1950s",
       "location": "North Atlantic",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-793",
@@ -416,7 +470,8 @@
       "decade": "1950s",
       "location": "Nicosia, Cyprus",
       "country": "Cyprus",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec"
     },
     {
       "id": "bb-787",
@@ -426,7 +481,9 @@
       "decade": "1950s",
       "location": "Air radar, Bermuda",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-790",
@@ -436,7 +493,9 @@
       "decade": "1950s",
       "location": "Sandy Point, Newfoundland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-797",
@@ -446,7 +505,10 @@
       "decade": "1950s",
       "location": "Spokane, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 47.66,
+      "lon": -117.44,
+      "duration": "5 min"
     },
     {
       "id": "bb-807",
@@ -456,7 +518,8 @@
       "decade": "1950s",
       "location": "Kit Carson, Colorado",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-809",
@@ -466,7 +529,9 @@
       "decade": "1950s",
       "location": "Provincetown, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-819",
@@ -476,7 +541,9 @@
       "decade": "1950s",
       "location": "Knoxville, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-821",
@@ -486,7 +553,8 @@
       "decade": "1950s",
       "location": "Pope AFB, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-824",
@@ -496,7 +564,8 @@
       "decade": "1950s",
       "location": "Bonlee, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "40 sec"
     },
     {
       "id": "bb-829",
@@ -506,7 +575,8 @@
       "decade": "1950s",
       "location": "Oak Ridge, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-845",
@@ -526,7 +596,10 @@
       "decade": "1950s",
       "location": "Fort Meyers, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 26.64,
+      "lon": -81.87,
+      "instruments_documented": true
     },
     {
       "id": "bb-849",
@@ -546,7 +619,10 @@
       "decade": "1950s",
       "location": "South of Fort Worth, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 32.75,
+      "lon": -97.32,
+      "duration": "5 min"
     },
     {
       "id": "bb-868",
@@ -556,7 +632,8 @@
       "decade": "1950s",
       "location": "Fort Benning, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-886",
@@ -566,7 +643,8 @@
       "decade": "1950s",
       "location": "Johnson AB, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-896",
@@ -576,7 +654,8 @@
       "decade": "1950s",
       "location": "Durban, South Africa",
       "country": "Africa",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-897",
@@ -586,7 +665,8 @@
       "decade": "1950s",
       "location": "Ladd AFB, Alaska",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "120 min"
     },
     {
       "id": "bb-907",
@@ -596,7 +676,10 @@
       "decade": "1950s",
       "location": "McClellan AFB, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 38.74,
+      "lon": -121.35,
+      "duration": "2 min"
     },
     {
       "id": "bb-908",
@@ -606,7 +689,9 @@
       "decade": "1950s",
       "location": "New Delhi, India",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-925",
@@ -626,7 +711,8 @@
       "decade": "1950s",
       "location": "Portsmouth, New Hampshire",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-955",
@@ -636,7 +722,9 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-962",
@@ -646,7 +734,8 @@
       "decade": "1950s",
       "location": "Matador, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-964",
@@ -656,7 +745,8 @@
       "decade": "1950s",
       "location": "Claremont, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-969",
@@ -666,7 +756,9 @@
       "decade": "1950s",
       "location": "Goose AFB, Labrador",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-980",
@@ -676,7 +768,11 @@
       "decade": "1950s",
       "location": "Columbus, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 39.98,
+      "lon": -82.99,
+      "duration": "1 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-984",
@@ -686,7 +782,9 @@
       "decade": "1950s",
       "location": "Kadena, Okinawa",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-985",
@@ -696,7 +794,9 @@
       "decade": "1950s",
       "location": "Terre Haute, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-989",
@@ -706,7 +806,11 @@
       "decade": "1950s",
       "location": "Minneapolis, Minnesota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 44.97,
+      "lon": -93.27,
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1011",
@@ -716,7 +820,9 @@
       "decade": "1950s",
       "location": "Andrews AFB, Washington, D.C.",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1013",
@@ -736,7 +842,9 @@
       "decade": "1950s",
       "location": "Oak Ridge, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1023",
@@ -746,7 +854,9 @@
       "decade": "1950s",
       "location": "Sunbury, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1037",
@@ -756,7 +866,9 @@
       "decade": "1950s",
       "location": "Artesia, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1052",
@@ -766,7 +878,10 @@
       "decade": "1950s",
       "location": "Pittsburgh, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 40.44,
+      "lon": -79.97,
+      "duration": "1 min"
     },
     {
       "id": "bb-1061",
@@ -776,7 +891,8 @@
       "decade": "1950s",
       "location": "Sinuiju, North Korea",
       "country": "Korea",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec"
     },
     {
       "id": "bb-1074",
@@ -786,7 +902,9 @@
       "decade": "1950s",
       "location": "Queen Annes City, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1076",
@@ -796,7 +914,9 @@
       "decade": "1950s",
       "location": "Yakima, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1077",
@@ -806,7 +926,8 @@
       "decade": "1950s",
       "location": "Point Conception, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1082",
@@ -816,7 +937,8 @@
       "decade": "1950s",
       "location": "Misawa AFB, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-1095",
@@ -826,7 +948,9 @@
       "decade": "1950s",
       "location": "Duncanville, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1097",
@@ -836,7 +960,9 @@
       "decade": "1950s",
       "location": "Miami, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 25.78,
+      "lon": -80.21
     },
     {
       "id": "bb-1099",
@@ -846,7 +972,9 @@
       "decade": "1950s",
       "location": "Temple, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3.5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1108",
@@ -856,7 +984,8 @@
       "decade": "1950s",
       "location": "North Bay, Ontario",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-1112",
@@ -866,7 +995,10 @@
       "decade": "1950s",
       "location": "Memphis, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 35.14,
+      "lon": -90.03,
+      "instruments_documented": true
     },
     {
       "id": "bb-1113",
@@ -886,7 +1018,11 @@
       "decade": "1950s",
       "location": "Santa Cruz, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 36.97,
+      "lon": -122.04,
+      "duration": "8 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1124",
@@ -896,7 +1032,9 @@
       "decade": "1950s",
       "location": "Longmeadow, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "40 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1127",
@@ -906,7 +1044,9 @@
       "decade": "1950s",
       "location": "Yuma Test Station, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1128",
@@ -916,7 +1056,8 @@
       "decade": "1950s",
       "location": "Bethesda, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 sec"
     },
     {
       "id": "bb-1129",
@@ -926,7 +1067,10 @@
       "decade": "1950s",
       "location": "Corner Brook, Newfoundland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 48.95,
+      "lon": -57.96,
+      "duration": "1 min"
     },
     {
       "id": "bb-1130",
@@ -936,7 +1080,9 @@
       "decade": "1950s",
       "location": "Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1131",
@@ -946,7 +1092,10 @@
       "decade": "1950s",
       "location": "Corner Brook, Newfoundland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 48.95,
+      "lon": -57.96,
+      "duration": "1.5 min"
     },
     {
       "id": "bb-1144",
@@ -956,7 +1105,8 @@
       "decade": "1950s",
       "location": "Okinawa",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 min"
     },
     {
       "id": "bb-1147",
@@ -966,7 +1116,8 @@
       "decade": "1950s",
       "location": "Bellevue Hill, Vermont",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-1148",
@@ -976,7 +1127,9 @@
       "decade": "1950s",
       "location": "Milton, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1151",
@@ -986,7 +1139,8 @@
       "decade": "1950s",
       "location": "Clovis, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1160",
@@ -996,7 +1150,10 @@
       "decade": "1950s",
       "location": "Roseville, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 42.49,
+      "lon": -82.93,
+      "duration": "45 min"
     },
     {
       "id": "bb-1163",
@@ -1006,7 +1163,10 @@
       "decade": "1950s",
       "location": "Yuma, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 32.72,
+      "lon": -114.62,
+      "duration": "2 hr"
     },
     {
       "id": "bb-1167",
@@ -1016,7 +1176,10 @@
       "decade": "1950s",
       "location": "Marshall, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 32.54,
+      "lon": -94.36,
+      "duration": "1.5 min"
     },
     {
       "id": "bb-1168",
@@ -1026,7 +1189,8 @@
       "decade": "1950s",
       "location": "North of Goodland, Kansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 sec"
     },
     {
       "id": "bb-1174",
@@ -1036,7 +1200,10 @@
       "decade": "1950s",
       "location": "Moses Lake, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 47.13,
+      "lon": -119.29,
+      "duration": "1.5 min"
     },
     {
       "id": "bb-1176",
@@ -1046,7 +1213,8 @@
       "decade": "1950s",
       "location": "George AFB, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1183",
@@ -1086,7 +1254,8 @@
       "decade": "1950s",
       "location": "Ellenton, South Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-1213",
@@ -1096,7 +1265,8 @@
       "decade": "1950s",
       "location": "Puerto Rico",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-1219",
@@ -1106,7 +1276,8 @@
       "decade": "1950s",
       "location": "Houston, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "90 sec"
     },
     {
       "id": "bb-1227",
@@ -1116,7 +1287,8 @@
       "decade": "1950s",
       "location": "Walnut Lake, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-1232",
@@ -1126,7 +1298,8 @@
       "decade": "1950s",
       "location": "Saigon, Indochina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-1233",
@@ -1136,7 +1309,8 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "55 min"
     },
     {
       "id": "bb-1236",
@@ -1146,7 +1320,8 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-1243",
@@ -1166,7 +1341,8 @@
       "decade": "1950s",
       "location": "Walla Walla, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 sec"
     },
     {
       "id": "bb-1246",
@@ -1176,7 +1352,8 @@
       "decade": "1950s",
       "location": "Soap Lake, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-1249",
@@ -1196,7 +1373,8 @@
       "decade": "1950s",
       "location": "Fulda, Germany",
       "country": "Germany",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1255",
@@ -1206,7 +1384,8 @@
       "decade": "1950s",
       "location": "Lubbock, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 min"
     },
     {
       "id": "bb-1256",
@@ -1216,7 +1395,8 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 sec"
     },
     {
       "id": "bb-1257",
@@ -1226,7 +1406,8 @@
       "decade": "1950s",
       "location": "Offutt AFB, Nebraska June 6, 1952 Kimpo AB, Korea (Case missing)",
       "country": "Korea",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4.5 min"
     },
     {
       "id": "bb-1260",
@@ -1236,7 +1417,9 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1263",
@@ -1246,7 +1429,8 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico June 9, 1952 Minneapolis, Minnesota (Case missing)",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1952. min"
     },
     {
       "id": "bb-1269",
@@ -1256,7 +1440,8 @@
       "decade": "1950s",
       "location": "Forth Smith, Arkansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1270",
@@ -1266,7 +1451,8 @@
       "decade": "1950s",
       "location": "Marrakech, Morrocco",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1273",
@@ -1276,7 +1462,8 @@
       "decade": "1950s",
       "location": "Middletown, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-1285",
@@ -1286,7 +1473,9 @@
       "decade": "1950s",
       "location": "Louisville, Kentucky",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1295",
@@ -1296,7 +1485,8 @@
       "decade": "1950s",
       "location": "Walker AFB, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-1298",
@@ -1306,7 +1496,8 @@
       "decade": "1950s",
       "location": "McChord AFB, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-1299",
@@ -1316,7 +1507,8 @@
       "decade": "1950s",
       "location": "Cape Cod, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-1302",
@@ -1336,7 +1528,8 @@
       "decade": "1950s",
       "location": "Pontiac, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1308",
@@ -1346,7 +1539,9 @@
       "decade": "1950s",
       "location": "Goose AFB, Labrador",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1310",
@@ -1356,7 +1551,8 @@
       "decade": "1950s",
       "location": "Yuma, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-1313",
@@ -1366,7 +1562,8 @@
       "decade": "1950s",
       "location": "Korea",
       "country": "Korea",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "60 sec"
     },
     {
       "id": "bb-1319",
@@ -1376,7 +1573,9 @@
       "decade": "1950s",
       "location": "Kelly AFB, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1323",
@@ -1386,7 +1585,8 @@
       "decade": "1950s",
       "location": "Korea",
       "country": "Korea",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "60 sec"
     },
     {
       "id": "bb-1331",
@@ -1396,7 +1596,8 @@
       "decade": "1950s",
       "location": "Spokane, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 min"
     },
     {
       "id": "bb-1332",
@@ -1406,7 +1607,8 @@
       "decade": "1950s",
       "location": "McChord AFB, Washington June 23, 1952 Kirksville, Missouri (Case missing)",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-1334",
@@ -1426,7 +1628,8 @@
       "decade": "1950s",
       "location": "Near Owensboro, Kentucky",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 sec"
     },
     {
       "id": "bb-1340",
@@ -1446,7 +1649,8 @@
       "decade": "1950s",
       "location": "Chicago, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 hr"
     },
     {
       "id": "bb-1347",
@@ -1476,7 +1680,8 @@
       "decade": "1950s",
       "location": "Pottstown, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 hr"
     },
     {
       "id": "bb-1355",
@@ -1486,7 +1691,8 @@
       "decade": "1950s",
       "location": "Topeka, Kansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1361",
@@ -1496,7 +1702,8 @@
       "decade": "1950s",
       "location": "Lake Kishkonoug, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-1363",
@@ -1516,7 +1723,9 @@
       "decade": "1950s",
       "location": "O'Hare Airport, Chicago, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1380",
@@ -1536,7 +1745,8 @@
       "decade": "1950s",
       "location": "Chicago, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 sec"
     },
     {
       "id": "bb-1390",
@@ -1546,7 +1756,8 @@
       "decade": "1950s",
       "location": "Norman, Oklahoma",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-1397",
@@ -1556,7 +1767,8 @@
       "decade": "1950s",
       "location": "Governors Island, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1405",
@@ -1566,7 +1778,8 @@
       "decade": "1950s",
       "location": "Colorado Springs, Colorado",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "12 min"
     },
     {
       "id": "bb-1409",
@@ -1576,7 +1789,9 @@
       "decade": "1950s",
       "location": "Kutztown, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1431",
@@ -1586,7 +1801,8 @@
       "decade": "1950s",
       "location": "Annapolis, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 sec"
     },
     {
       "id": "bb-1436",
@@ -1596,7 +1812,9 @@
       "decade": "1950s",
       "location": "Kirksville, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1444",
@@ -1606,7 +1824,8 @@
       "decade": "1950s",
       "location": "Norfolk, Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "12 sec"
     },
     {
       "id": "bb-1451",
@@ -1646,7 +1865,8 @@
       "decade": "1950s",
       "location": "Lockbourne AFB, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 hr"
     },
     {
       "id": "bb-1483",
@@ -1656,7 +1876,8 @@
       "decade": "1950s",
       "location": "Miami, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-1485",
@@ -1666,7 +1887,8 @@
       "decade": "1950s",
       "location": "Patrick AFB, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-1492",
@@ -1676,7 +1898,8 @@
       "decade": "1950s",
       "location": "Williston, North Dakota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1494",
@@ -1686,7 +1909,8 @@
       "decade": "1950s",
       "location": "Elkins Park, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 min"
     },
     {
       "id": "bb-1501",
@@ -1696,7 +1920,9 @@
       "decade": "1950s",
       "location": "Beverly, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1502",
@@ -1716,7 +1942,8 @@
       "decade": "1950s",
       "location": "Lavalette, New Jersey",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 min"
     },
     {
       "id": "bb-1514",
@@ -1726,7 +1953,8 @@
       "decade": "1950s",
       "location": "Wiesbaden, Germany",
       "country": "Germany",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-1516",
@@ -1736,7 +1964,8 @@
       "decade": "1950s",
       "location": "San Marcos AFB, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-1522",
@@ -1746,7 +1975,8 @@
       "decade": "1950s",
       "location": "Randolph AFB, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 sec"
     },
     {
       "id": "bb-1524",
@@ -1766,7 +1996,9 @@
       "decade": "1950s",
       "location": "Rockville, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1536",
@@ -1776,7 +2008,8 @@
       "decade": "1950s",
       "location": "Uvalde, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec"
     },
     {
       "id": "bb-1538",
@@ -1786,7 +2019,9 @@
       "decade": "1950s",
       "location": "Los Alamos, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "25 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1554",
@@ -1796,7 +2031,8 @@
       "decade": "1950s",
       "location": "Pottstown, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-1556",
@@ -1806,7 +2042,9 @@
       "decade": "1950s",
       "location": "Boston-Provincetown, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "24 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1567",
@@ -1816,7 +2054,8 @@
       "decade": "1950s",
       "location": "Altoona, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-1572",
@@ -1826,7 +2065,9 @@
       "decade": "1950s",
       "location": "Trenton, New Jersey",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-1578",
@@ -1836,7 +2077,8 @@
       "decade": "1950s",
       "location": "South Bend, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "9 min"
     },
     {
       "id": "bb-1584",
@@ -1846,7 +2088,9 @@
       "decade": "1950s",
       "location": "Carson Sink, Nevada",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1588",
@@ -1866,7 +2110,8 @@
       "decade": "1950s",
       "location": "Kansas City, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-1637",
@@ -1876,7 +2121,8 @@
       "decade": "1950s",
       "location": "Kirtland AFB, New Mexico July 26, 1952 Williams, California",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec"
     },
     {
       "id": "bb-1654",
@@ -1896,7 +2142,9 @@
       "decade": "1950s",
       "location": "Washington, D.C.; Andrews AFB",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-1664",
@@ -1906,7 +2154,8 @@
       "decade": "1950s",
       "location": "Wilmington, Delaware",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "90 sec"
     },
     {
       "id": "bb-1680",
@@ -1926,7 +2175,8 @@
       "decade": "1950s",
       "location": "Witchita Falls, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-1700",
@@ -1936,7 +2186,8 @@
       "decade": "1950s",
       "location": "Heidelberg, Germany",
       "country": "Germany",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1707",
@@ -1946,7 +2197,9 @@
       "decade": "1950s",
       "location": "McGuire AFB, New Jersey",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "55 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1708",
@@ -1956,7 +2209,8 @@
       "decade": "1950s",
       "location": "McChord AFB, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-1731",
@@ -1966,7 +2220,9 @@
       "decade": "1950s",
       "location": "Osceola, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-1732",
@@ -1976,7 +2232,9 @@
       "decade": "1950s",
       "location": "Langley APB, Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "0.2 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1738",
@@ -1986,7 +2244,8 @@
       "decade": "1950s",
       "location": "Merced, Calffornia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-1739",
@@ -1996,7 +2255,8 @@
       "decade": "1950s",
       "location": "Witchita, Kansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1747",
@@ -2006,7 +2266,9 @@
       "decade": "1950s",
       "location": "Ennis, Montana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1755",
@@ -2016,7 +2278,9 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "21 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1758",
@@ -2026,7 +2290,8 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-1771",
@@ -2036,7 +2301,8 @@
       "decade": "1950s",
       "location": "Lancaster, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1783",
@@ -2046,7 +2312,8 @@
       "decade": "1950s",
       "location": "Lake Charles, Louisiana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec"
     },
     {
       "id": "bb-1812",
@@ -2056,7 +2323,8 @@
       "decade": "1950s",
       "location": "Phoenix, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1813",
@@ -2066,7 +2334,8 @@
       "decade": "1950s",
       "location": "Mount Vernon, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 hr"
     },
     {
       "id": "bb-1827",
@@ -2076,7 +2345,9 @@
       "decade": "1950s",
       "location": "Haneda AFB, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "90 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-1841",
@@ -2116,7 +2387,8 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "70 min"
     },
     {
       "id": "bb-1870",
@@ -2126,7 +2398,8 @@
       "decade": "1950s",
       "location": "Lake Charles AFB, Louisiana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 min"
     },
     {
       "id": "bb-1889",
@@ -2136,7 +2409,8 @@
       "decade": "1950s",
       "location": "Tokyo, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-1920",
@@ -2146,7 +2420,8 @@
       "decade": "1950s",
       "location": "Fairfield, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-1928",
@@ -2156,7 +2431,8 @@
       "decade": "1950s",
       "location": "Red Bluff, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "25 sec"
     },
     {
       "id": "bb-1938",
@@ -2176,7 +2452,8 @@
       "decade": "1950s",
       "location": "Dallas, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 min"
     },
     {
       "id": "bb-1956",
@@ -2186,7 +2463,9 @@
       "decade": "1950s",
       "location": "Akron, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-1961",
@@ -2196,7 +2475,8 @@
       "decade": "1950s",
       "location": "Hermanas, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-1964",
@@ -2206,7 +2486,8 @@
       "decade": "1950s",
       "location": "Tucson, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-1969",
@@ -2216,7 +2497,8 @@
       "decade": "1950s",
       "location": "Leveland, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "23 min"
     },
     {
       "id": "bb-1972",
@@ -2226,7 +2508,8 @@
       "decade": "1950s",
       "location": "Pittsburg, Kansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-1915",
@@ -2246,7 +2529,8 @@
       "decade": "1950s",
       "location": "Holloman AFB, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-1986",
@@ -2276,7 +2560,8 @@
       "decade": "1950s",
       "location": "Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 sec"
     },
     {
       "id": "bb-2006",
@@ -2286,7 +2571,9 @@
       "decade": "1950s",
       "location": "Chickasaw, Alabama",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "50 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2013",
@@ -2296,7 +2583,8 @@
       "decade": "1950s",
       "location": "Colorado Springs, Colorado",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 sec"
     },
     {
       "id": "bb-2022",
@@ -2306,7 +2594,9 @@
       "decade": "1950s",
       "location": "Marietta, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2023",
@@ -2316,7 +2606,9 @@
       "decade": "1950s",
       "location": "Yaak, Montana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-2025",
@@ -2326,7 +2618,9 @@
       "decade": "1950s",
       "location": "Chicago, lllinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-2045",
@@ -2336,7 +2630,8 @@
       "decade": "1950s",
       "location": "Lake Charles AFB, Louisiana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 hr"
     },
     {
       "id": "bb-2048",
@@ -2346,7 +2641,8 @@
       "decade": "1950s",
       "location": "Tucson, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 min"
     },
     {
       "id": "bb-2049",
@@ -2356,7 +2652,8 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-2052",
@@ -2366,7 +2663,8 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-2062",
@@ -2376,7 +2674,8 @@
       "decade": "1950s",
       "location": "Rabat, French Morocco",
       "country": "Morocco",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 sec"
     },
     {
       "id": "bb-2077",
@@ -2386,7 +2685,9 @@
       "decade": "1950s",
       "location": "Allen, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "35 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2085",
@@ -2396,7 +2697,8 @@
       "decade": "1950s",
       "location": "Allentown, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-2086",
@@ -2406,7 +2708,8 @@
       "decade": "1950s",
       "location": "Santa Barbara, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-2087",
@@ -2416,7 +2719,8 @@
       "decade": "1950s",
       "location": "Operation Mainbrace",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-2089",
@@ -2426,7 +2730,8 @@
       "decade": "1950s",
       "location": "White Lake, South Dakota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-2092",
@@ -2436,7 +2741,8 @@
       "decade": "1950s",
       "location": "El Paso, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-2093",
@@ -2456,7 +2762,9 @@
       "decade": "1950s",
       "location": "Portland, Maine",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2100",
@@ -2466,7 +2774,8 @@
       "decade": "1950s",
       "location": "Warner Robins, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-2105",
@@ -2476,7 +2785,8 @@
       "decade": "1950s",
       "location": "Tucson, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-2119",
@@ -2486,7 +2796,8 @@
       "decade": "1950s",
       "location": "Gander Lake, Newfoundland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-2124",
@@ -2496,7 +2807,8 @@
       "decade": "1950s",
       "location": "Charleston, West Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-2126",
@@ -2506,7 +2818,9 @@
       "decade": "1950s",
       "location": "41'N-35'W (Atlantic)",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-2128",
@@ -2516,7 +2830,9 @@
       "decade": "1950s",
       "location": "Inyokern, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2136",
@@ -2526,7 +2842,8 @@
       "decade": "1950s",
       "location": "England",
       "country": "England",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-2138",
@@ -2546,7 +2863,8 @@
       "decade": "1950s",
       "location": "Southern Pines, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-2142",
@@ -2556,7 +2874,8 @@
       "decade": "1950s",
       "location": "Shaw AFB, South Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "23 min"
     },
     {
       "id": "bb-2143",
@@ -2566,7 +2885,8 @@
       "decade": "1950s",
       "location": "Pascagoula, Mississippi",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "22 min"
     },
     {
       "id": "bb-2150",
@@ -2576,7 +2896,8 @@
       "decade": "1950s",
       "location": "Alamogordo, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 sec"
     },
     {
       "id": "bb-2155",
@@ -2586,7 +2907,8 @@
       "decade": "1950s",
       "location": "Otis AFB, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-2171",
@@ -2596,7 +2918,8 @@
       "decade": "1950s",
       "location": "Taos, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec"
     },
     {
       "id": "bb-2172",
@@ -2606,7 +2929,8 @@
       "decade": "1950s",
       "location": "Killeen, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 sec"
     },
     {
       "id": "bb-2173",
@@ -2616,7 +2940,9 @@
       "decade": "1950s",
       "location": "Tierra Amarilla, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-2175",
@@ -2626,7 +2952,8 @@
       "decade": "1950s",
       "location": "12-17'N 155-35' W (Pacific)",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-2177",
@@ -2636,7 +2963,8 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-2179",
@@ -2646,7 +2974,9 @@
       "decade": "1950s",
       "location": "Knoxville, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "57 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2184",
@@ -2656,7 +2986,8 @@
       "decade": "1950s",
       "location": "Elberton, Alabama",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 sec"
     },
     {
       "id": "bb-2196",
@@ -2666,7 +2997,8 @@
       "decade": "1950s",
       "location": "Erding Air Depot, Germany",
       "country": "Germany",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-2200",
@@ -2676,7 +3008,8 @@
       "decade": "1950s",
       "location": "Fayetteville, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-2202",
@@ -2686,7 +3019,8 @@
       "decade": "1950s",
       "location": "Laredo AFB, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec"
     },
     {
       "id": "bb-2206",
@@ -2696,7 +3030,8 @@
       "decade": "1950s",
       "location": "Vineland, New Jersey",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-2219",
@@ -2706,7 +3041,9 @@
       "decade": "1950s",
       "location": "Los Alamos, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "16 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2220",
@@ -2716,7 +3053,9 @@
       "decade": "1950s",
       "location": "Clasgow and Opheim, Montana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "28 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2224",
@@ -2726,7 +3065,8 @@
       "decade": "1950s",
       "location": "Wichita, Kansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-2246",
@@ -2736,7 +3076,8 @@
       "decade": "1950s",
       "location": "Annandle, Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-2249",
@@ -2746,7 +3087,8 @@
       "decade": "1950s",
       "location": "Albuquerque, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-2253",
@@ -2756,7 +3098,9 @@
       "decade": "1950s",
       "location": "Washington, D.C.",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-2266",
@@ -2766,7 +3110,9 @@
       "decade": "1950s",
       "location": "Ladd AFB, Alaska",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2267",
@@ -2776,7 +3122,9 @@
       "decade": "1950s",
       "location": "Madison, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2302",
@@ -2796,7 +3144,9 @@
       "decade": "1950s",
       "location": "Craig, Montana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-2323",
@@ -2806,7 +3156,9 @@
       "decade": "1950s",
       "location": "Larson AFB, Washington",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2326",
@@ -2816,7 +3168,8 @@
       "decade": "1950s",
       "location": "Sonoma, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec"
     },
     {
       "id": "bb-2337",
@@ -2826,7 +3179,8 @@
       "decade": "1950s",
       "location": "Guatemala",
       "country": "Guatemala",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "22 sec"
     },
     {
       "id": "bb-2361",
@@ -2836,7 +3190,8 @@
       "decade": "1950s",
       "location": "Point Muga, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec"
     },
     {
       "id": "bb-2364",
@@ -2846,7 +3201,8 @@
       "decade": "1950s",
       "location": "Corona, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "12 min"
     },
     {
       "id": "bb-2365",
@@ -2856,7 +3212,9 @@
       "decade": "1950s",
       "location": "Albany, Georgia Area",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2384",
@@ -2866,7 +3224,9 @@
       "decade": "1950s",
       "location": "Iceland",
       "country": "Iceland",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "24 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2388",
@@ -2876,7 +3236,9 @@
       "decade": "1950s",
       "location": "Yuma, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2419",
@@ -2886,7 +3248,9 @@
       "decade": "1950s",
       "location": "Port Austin, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "22 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2426",
@@ -2896,7 +3260,8 @@
       "decade": "1950s",
       "location": "Stockton, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-2441",
@@ -2906,7 +3271,8 @@
       "decade": "1950s",
       "location": "Sherman, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 sec"
     },
     {
       "id": "bb-2543",
@@ -2916,7 +3282,8 @@
       "decade": "1950s",
       "location": "Shreveport, Louisiana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-2490",
@@ -2926,7 +3293,9 @@
       "decade": "1950s",
       "location": "Hackettstown, New Jersey",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2496",
@@ -2936,7 +3305,9 @@
       "decade": "1950s",
       "location": "37' 25' N 132' 25' E (Sea of Japan)",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2511",
@@ -2956,7 +3327,8 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 hr"
     },
     {
       "id": "bb-2524",
@@ -2966,7 +3338,8 @@
       "decade": "1950s",
       "location": "Mount Taylor, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-2526",
@@ -2976,7 +3349,8 @@
       "decade": "1950s",
       "location": "Spooner, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-2535",
@@ -2986,7 +3360,8 @@
       "decade": "1950s",
       "location": "Fukuoka, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec"
     },
     {
       "id": "bb-2542",
@@ -2996,7 +3371,8 @@
       "decade": "1950s",
       "location": "Tucson, Arizona",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-2555",
@@ -3006,7 +3382,9 @@
       "decade": "1950s",
       "location": "Goose AFB, Labrador",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2577",
@@ -3016,7 +3394,9 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2601",
@@ -3026,7 +3406,9 @@
       "decade": "1950s",
       "location": "Goose AFB, Labrador",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2605",
@@ -3046,7 +3428,9 @@
       "decade": "1950s",
       "location": "Simiutak, Greenland",
       "country": "Greenland",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2663",
@@ -3056,7 +3440,8 @@
       "decade": "1950s",
       "location": "Amarillo, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "56 min"
     },
     {
       "id": "bb-2686",
@@ -3076,7 +3461,8 @@
       "decade": "1950s",
       "location": "Greenville, Mississippi",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "50 min"
     },
     {
       "id": "bb-2838",
@@ -3116,7 +3502,9 @@
       "decade": "1950s",
       "location": "Newburyport, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "21 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-2923",
@@ -3136,7 +3524,9 @@
       "decade": "1950s",
       "location": "Nouasseur, French Morocco",
       "country": "Morocco",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-2937",
@@ -3146,7 +3536,8 @@
       "decade": "1950s",
       "location": "Nouasseur, French Morocco",
       "country": "Morocco",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-2962",
@@ -3156,7 +3547,8 @@
       "decade": "1950s",
       "location": "Chicago, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-2974",
@@ -3166,7 +3558,8 @@
       "decade": "1950s",
       "location": "Pittsfield, Maine",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-2976",
@@ -3176,7 +3569,8 @@
       "decade": "1950s",
       "location": "Hartland, Maine",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-2983",
@@ -3186,7 +3580,8 @@
       "decade": "1950s",
       "location": "Athens, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-2994",
@@ -3216,7 +3611,9 @@
       "decade": "1950s",
       "location": "La Porte, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-3020",
@@ -3226,7 +3623,8 @@
       "decade": "1950s",
       "location": "Concord, New Hampshire",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-3029",
@@ -3236,7 +3634,8 @@
       "decade": "1950s",
       "location": "Minneapolis, Minnesota 303'",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-7",
@@ -3256,7 +3655,8 @@
       "decade": "1950s",
       "location": "Estacado, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-3062",
@@ -3266,7 +3666,8 @@
       "decade": "1950s",
       "location": "Miami Beach, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 min"
     },
     {
       "id": "bb-3067",
@@ -3276,7 +3677,9 @@
       "decade": "1950s",
       "location": "Danvers, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-3072",
@@ -3286,7 +3689,9 @@
       "decade": "1950s",
       "location": "Indian Lake, Ohio",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-3116",
@@ -3296,7 +3701,8 @@
       "decade": "1950s",
       "location": "Normandy, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-3140",
@@ -3306,7 +3712,8 @@
       "decade": "1950s",
       "location": "Los Angeles, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-3149",
@@ -3316,7 +3723,8 @@
       "decade": "1950s",
       "location": "Westlake, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-3155",
@@ -3326,7 +3734,9 @@
       "decade": "1950s",
       "location": "San Antonio, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-3162",
@@ -3376,7 +3786,8 @@
       "decade": "1950s",
       "location": "Dorchester, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-3189",
@@ -3386,7 +3797,9 @@
       "decade": "1950s",
       "location": "Prince Christian, Greenland",
       "country": "Greenland",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-3196",
@@ -3396,7 +3809,10 @@
       "decade": "1950s",
       "location": "Butler, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 38.26,
+      "lon": -94.34,
+      "duration": "1.5 min"
     },
     {
       "id": "bb-3198",
@@ -3406,7 +3822,10 @@
       "decade": "1950s",
       "location": "Butler, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 38.26,
+      "lon": -94.34,
+      "duration": "30 sec"
     },
     {
       "id": "bb-3213",
@@ -3426,7 +3845,10 @@
       "decade": "1950s",
       "location": "Barstow, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 34.9,
+      "lon": -117.02,
+      "duration": "20 min"
     },
     {
       "id": "bb-3224",
@@ -3436,7 +3858,8 @@
       "decade": "1950s",
       "location": "Santa Maria Airport, Azores",
       "country": "Azores",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-3226",
@@ -3446,7 +3869,8 @@
       "decade": "1950s",
       "location": "Marshfield, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-3227",
@@ -3456,7 +3880,8 @@
       "decade": "1950s",
       "location": "Gatlinburg, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-3260",
@@ -3466,7 +3891,9 @@
       "decade": "1950s",
       "location": "Nouasseur, French Morocco",
       "country": "Morocco",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-3269",
@@ -3486,7 +3913,9 @@
       "decade": "1950s",
       "location": "Miho AB, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-3287",
@@ -3496,7 +3925,8 @@
       "decade": "1950s",
       "location": "Azores",
       "country": "Azores",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-3326",
@@ -3506,7 +3936,8 @@
       "decade": "1950s",
       "location": "Augusta, Maine",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-3331",
@@ -3516,7 +3947,8 @@
       "decade": "1950s",
       "location": "Corvallis, Oregon",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "12 min"
     },
     {
       "id": "bb-3341",
@@ -3526,7 +3958,8 @@
       "decade": "1950s",
       "location": "Manila, Philippines",
       "country": "Philippines",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-3352",
@@ -3536,7 +3969,8 @@
       "decade": "1950s",
       "location": "Gulfport, Mississippi",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-3356",
@@ -3546,7 +3980,9 @@
       "decade": "1950s",
       "location": "Cape Province, South Africa",
       "country": "Africa",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-3382",
@@ -3556,7 +3992,8 @@
       "decade": "1950s",
       "location": "Cochise, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 min"
     },
     {
       "id": "bb-3401",
@@ -3576,7 +4013,8 @@
       "decade": "1950s",
       "location": "Cochise, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-3416",
@@ -3586,7 +4024,8 @@
       "decade": "1950s",
       "location": "Miramar NAS, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-3427",
@@ -3596,7 +4035,8 @@
       "decade": "1950s",
       "location": "Bethesda, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec"
     },
     {
       "id": "bb-3517",
@@ -3616,7 +4056,10 @@
       "decade": "1950s",
       "location": "Keflavik Airport, Iceland",
       "country": "Iceland",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 41.13,
+      "lon": -104.8,
+      "instruments_documented": true
     },
     {
       "id": "bb-3565",
@@ -3636,7 +4079,8 @@
       "decade": "1950s",
       "location": "Columbus, Nebraska",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 min"
     },
     {
       "id": "bb-3699",
@@ -3646,7 +4090,8 @@
       "decade": "1950s",
       "location": "Iceland",
       "country": "Iceland",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-3720",
@@ -3656,7 +4101,8 @@
       "decade": "1950s",
       "location": "Arlington, Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-3743",
@@ -3696,7 +4142,8 @@
       "decade": "1950s",
       "location": "Loogootee, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "12 sec"
     },
     {
       "id": "bb-3810",
@@ -3706,7 +4153,8 @@
       "decade": "1950s",
       "location": "Point Lookout, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2.5 hr"
     },
     {
       "id": "bb-3860",
@@ -3716,7 +4164,8 @@
       "decade": "1950s",
       "location": "St. Louis, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec"
     },
     {
       "id": "bb-3862",
@@ -3726,7 +4175,10 @@
       "decade": "1950s",
       "location": "Lake City, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 36,
+      "lon": -84,
+      "instruments_documented": true
     },
     {
       "id": "bb-3869",
@@ -3756,7 +4208,9 @@
       "decade": "1950s",
       "location": "Goose Bay, Labrador",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-3977",
@@ -3766,7 +4220,8 @@
       "decade": "1950s",
       "location": "Houston, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "28 min"
     },
     {
       "id": "bb-4050",
@@ -3776,7 +4231,9 @@
       "decade": "1950s",
       "location": "McKinney, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-4127",
@@ -3786,7 +4243,10 @@
       "decade": "1950s",
       "location": "Banning, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 33.93,
+      "lon": -116.88,
+      "duration": "10 sec"
     },
     {
       "id": "bb-4270",
@@ -3826,7 +4286,8 @@
       "decade": "1950s",
       "location": "Highland, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 hr"
     },
     {
       "id": "bb-4489",
@@ -3836,7 +4297,8 @@
       "decade": "1950s",
       "location": "60 miles east of St. Louis, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-4543",
@@ -3846,7 +4308,8 @@
       "decade": "1950s",
       "location": "Charleston AFB, South Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-4577",
@@ -3856,7 +4319,8 @@
       "decade": "1950s",
       "location": "Guam",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-4706",
@@ -3866,7 +4330,8 @@
       "decade": "1950s",
       "location": "Ringgold, Louisiana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "25 min"
     },
     {
       "id": "bb-4760",
@@ -3876,7 +4341,8 @@
       "decade": "1950s",
       "location": "Milan, Italy",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "17 min"
     },
     {
       "id": "bb-4841",
@@ -3886,7 +4352,8 @@
       "decade": "1950s",
       "location": "Longmont, Colorado",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-4847",
@@ -3896,7 +4363,8 @@
       "decade": "1950s",
       "location": "Cleveland, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-4848",
@@ -3906,7 +4374,8 @@
       "decade": "1950s",
       "location": "Oldsmar, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-4959",
@@ -3916,7 +4385,8 @@
       "decade": "1950s",
       "location": "Kadena APB, Okinawa",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-5003",
@@ -3946,7 +4416,8 @@
       "decade": "1950s",
       "location": "Radium Springs, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-5254",
@@ -3966,7 +4437,8 @@
       "decade": "1950s",
       "location": "Robins AFB, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-5445",
@@ -3986,7 +4458,9 @@
       "decade": "1950s",
       "location": "Col Anahuac, Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "35 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-5559",
@@ -4006,7 +4480,8 @@
       "decade": "1950s",
       "location": "Healdsburg, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-5763",
@@ -4016,7 +4491,8 @@
       "decade": "1950s",
       "location": "Lynchburg, Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec"
     },
     {
       "id": "bb-5800",
@@ -4026,7 +4502,8 @@
       "decade": "1950s",
       "location": "Bohol Island, Philippines",
       "country": "Philippines",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 min"
     },
     {
       "id": "bb-5852",
@@ -4036,7 +4513,8 @@
       "decade": "1950s",
       "location": "Pueblo, Colorado",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-5857",
@@ -4046,7 +4524,8 @@
       "decade": "1950s",
       "location": "Fort Bragg, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-5999",
@@ -4056,7 +4535,9 @@
       "decade": "1950s",
       "location": "Warren, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-6027",
@@ -4076,7 +4557,8 @@
       "decade": "1950s",
       "location": "Stroudsburg, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-6148",
@@ -4086,7 +4568,9 @@
       "decade": "1950s",
       "location": "Lock Raven Dam, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-6153",
@@ -4096,7 +4580,8 @@
       "decade": "1950s",
       "location": "Minot, North Dakota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-6317",
@@ -4116,7 +4601,9 @@
       "decade": "1950s",
       "location": "Edmonton, Alberta, Canada",
       "country": "Canada",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-6409",
@@ -4136,7 +4623,8 @@
       "decade": "1950s",
       "location": "Irondequoit, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec"
     },
     {
       "id": "bb-6462",
@@ -4146,7 +4634,8 @@
       "decade": "1950s",
       "location": "Goose AFB, Labrador",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "25 min"
     },
     {
       "id": "bb-6506",
@@ -4156,7 +4645,8 @@
       "decade": "1950s",
       "location": "Gills Rock, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-6507",
@@ -4166,7 +4656,8 @@
       "decade": "1950s",
       "location": "Bunker Hill AFB , Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 hr"
     },
     {
       "id": "bb-6534",
@@ -4176,7 +4667,8 @@
       "decade": "1950s",
       "location": "Telephone Ridge, Oregon",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-6538",
@@ -4186,7 +4678,8 @@
       "decade": "1950s",
       "location": "Philippines",
       "country": "Philippines",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-6543",
@@ -4196,7 +4689,8 @@
       "decade": "1950s",
       "location": "Lincoln, Nebraska",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-6563",
@@ -4206,7 +4700,9 @@
       "decade": "1950s",
       "location": "Plainville, Kansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-6600",
@@ -4236,7 +4732,9 @@
       "decade": "1960s",
       "location": "Dubuque, Iowa",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-6691",
@@ -4246,7 +4744,8 @@
       "decade": "1960s",
       "location": "Indianapolis, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-6711",
@@ -4256,7 +4755,9 @@
       "decade": "1960s",
       "location": "La Camp, Louisiana",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-6721",
@@ -4266,7 +4767,10 @@
       "decade": "1960s",
       "location": "Richards, Gebaur AB, Missouri 672'",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 38.8,
+      "lon": -94.6,
+      "duration": "2.5 min"
     },
     {
       "id": "bb-7",
@@ -4326,7 +4830,8 @@
       "decade": "1960s",
       "location": "Mount Kisco, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-7133",
@@ -4336,7 +4841,8 @@
       "decade": "1960s",
       "location": "Chula Vista, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-7134",
@@ -4346,7 +4852,8 @@
       "decade": "1960s",
       "location": "South of Kyushu, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-7284",
@@ -4366,7 +4873,9 @@
       "decade": "1960s",
       "location": "35'-50' N 125'40' W (Pacific)",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-7417",
@@ -4376,7 +4885,8 @@
       "decade": "1960s",
       "location": "Tyndall AFB, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-7437",
@@ -4386,7 +4896,8 @@
       "decade": "1960s",
       "location": "Miyako Jima Air Station, Japan",
       "country": "Japan/Pacific",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-7491",
@@ -4396,7 +4907,8 @@
       "decade": "1960s",
       "location": "Copemiah, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 hr"
     },
     {
       "id": "bb-7499",
@@ -4406,7 +4918,8 @@
       "decade": "1960s",
       "location": "Springfield, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-7510",
@@ -4416,7 +4929,9 @@
       "decade": "1960s",
       "location": "Houston, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-7579",
@@ -4426,7 +4941,8 @@
       "decade": "1960s",
       "location": "Kansas City, Kansas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-7741",
@@ -4436,7 +4952,8 @@
       "decade": "1960s",
       "location": "Oldtown, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-7742",
@@ -4446,7 +4963,8 @@
       "decade": "1960s",
       "location": "Sioux City, Iowa",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-7754",
@@ -4456,7 +4974,8 @@
       "decade": "1960s",
       "location": "Washington, D.C.",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-7818",
@@ -4466,7 +4985,8 @@
       "decade": "1960s",
       "location": "Kotzebue, Alaska",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-7823",
@@ -4476,7 +4996,9 @@
       "decade": "1960s",
       "location": "Salem, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-7840",
@@ -4536,7 +5058,8 @@
       "decade": "1960s",
       "location": "Indianapolis, Indiana",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-7968",
@@ -4566,7 +5089,8 @@
       "decade": "1960s",
       "location": "Ocean Springs, Mississippi",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-8064",
@@ -4576,7 +5100,8 @@
       "decade": "1960s",
       "location": "Bermuda",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-8133",
@@ -4586,7 +5111,9 @@
       "decade": "1960s",
       "location": "WSW of Biloxi, Mississippi",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "13 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-8182",
@@ -4596,7 +5123,8 @@
       "decade": "1960s",
       "location": "Farmington, Utah (\"Duck Hunter Case\")",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-8215",
@@ -4616,7 +5144,8 @@
       "decade": "1960s",
       "location": "New Plymouth, New Zealand",
       "country": "New Zealand",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-8363",
@@ -4626,7 +5155,8 @@
       "decade": "1960s",
       "location": "Pequannock, New Jersey 8371 Summer 1963 Middletown, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 sec"
     },
     {
       "id": "bb-8388",
@@ -4636,7 +5166,8 @@
       "decade": "1960s",
       "location": "14'-17\" N 69'57\" E (Indian Ocean)",
       "country": "India",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-8434",
@@ -4646,7 +5177,9 @@
       "decade": "1960s",
       "location": "Glen Ellyn, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1.5 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-8506",
@@ -4656,7 +5189,8 @@
       "decade": "1960s",
       "location": "Warrenville, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 sec"
     },
     {
       "id": "bb-8514",
@@ -4666,7 +5200,8 @@
       "decade": "1960s",
       "location": "St. Calen, Switzerland",
       "country": "Switzerland",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-8548",
@@ -4676,7 +5211,8 @@
       "decade": "1960s",
       "location": "Susanville, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-8549",
@@ -4686,7 +5222,8 @@
       "decade": "1960s",
       "location": "Vandalia, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-8581",
@@ -4696,7 +5233,8 @@
       "decade": "1960s",
       "location": "Bedford, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-8603",
@@ -4706,7 +5244,8 @@
       "decade": "1960s",
       "location": "Meridian, Idaho",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 min"
     },
     {
       "id": "bb-8604",
@@ -4726,7 +5265,8 @@
       "decade": "1960s",
       "location": "McMinnville, Oregon",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-8654",
@@ -4736,7 +5276,8 @@
       "decade": "1960s",
       "location": "40'-00\" N 175'54\" W (Pacific)",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec"
     },
     {
       "id": "bb-8729",
@@ -4746,7 +5287,8 @@
       "decade": "1960s",
       "location": "Monticello, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min"
     },
     {
       "id": "bb-8739",
@@ -4766,7 +5308,8 @@
       "decade": "1960s",
       "location": "Socorro, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-8787",
@@ -4776,7 +5319,9 @@
       "decade": "1960s",
       "location": "Asheville, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-8788",
@@ -4806,7 +5351,8 @@
       "decade": "1960s",
       "location": "Cambridge, Massachusetts",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec"
     },
     {
       "id": "bb-8839",
@@ -4836,7 +5382,8 @@
       "decade": "1960s",
       "location": "15 miles south of Houghton Lake, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-8942",
@@ -4846,7 +5393,8 @@
       "decade": "1960s",
       "location": "Clinton, Iowa--Littleton, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-8969",
@@ -4856,7 +5404,9 @@
       "decade": "1960s",
       "location": "Norwich, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-8973",
@@ -4866,7 +5416,8 @@
       "decade": "1960s",
       "location": "Denver, Colorado",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-9031",
@@ -4876,7 +5427,8 @@
       "decade": "1960s",
       "location": "Wake Island",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-9048",
@@ -4896,7 +5448,8 @@
       "decade": "1960s",
       "location": "Yosemite Park, California",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec"
     },
     {
       "id": "bb-9053",
@@ -4906,7 +5459,8 @@
       "decade": "1960s",
       "location": "200 miles east of Dover (Atlantic)",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     },
     {
       "id": "bb-9104",
@@ -4916,7 +5470,9 @@
       "decade": "1960s",
       "location": "Cedar Grove, New Jersey",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-9170",
@@ -4926,7 +5482,8 @@
       "decade": "1960s",
       "location": "Menomonee Falls, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 sec"
     },
     {
       "id": "bb-9183",
@@ -4936,7 +5493,9 @@
       "decade": "1960s",
       "location": "34'55\" N 164'05\" E (Pacific)",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "45 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-9242",
@@ -4946,7 +5505,8 @@
       "decade": "1960s",
       "location": "Williamsburg, Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "25 sec"
     },
     {
       "id": "bb-9301",
@@ -4966,7 +5526,8 @@
       "decade": "1960s",
       "location": "Mount Airy, Maryland",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 min"
     },
     {
       "id": "bb-9345",
@@ -4976,7 +5537,9 @@
       "decade": "1960s",
       "location": "Keesler AFB, Mississippi",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-9389",
@@ -4986,7 +5549,9 @@
       "decade": "1960s",
       "location": "Oxford, Michigan",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-9474",
@@ -4996,7 +5561,8 @@
       "decade": "1960s",
       "location": "Kiel, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-9550",
@@ -5016,7 +5582,8 @@
       "decade": "1960s",
       "location": "Dallas, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "12 sec"
     },
     {
       "id": "bb-9680",
@@ -5036,7 +5603,8 @@
       "decade": "1960s",
       "location": "Cheffy Creek, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-9864",
@@ -5046,7 +5614,8 @@
       "decade": "1960s",
       "location": "Urbana, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 sec"
     },
     {
       "id": "bb-9890",
@@ -5056,7 +5625,8 @@
       "decade": "1960s",
       "location": "Exeter, New Hampshire",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-9915",
@@ -5076,7 +5646,8 @@
       "decade": "1960s",
       "location": "Chisholm, Minnesota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-9971",
@@ -5086,7 +5657,8 @@
       "decade": "1960s",
       "location": "Rodio, New Mexico",
       "country": "Mexico",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "6 min"
     },
     {
       "id": "bb-10066",
@@ -5106,7 +5678,8 @@
       "decade": "1960s",
       "location": "Salisbury, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-10196",
@@ -5126,7 +5699,8 @@
       "decade": "1960s",
       "location": "Mims, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-10262",
@@ -5146,7 +5720,9 @@
       "decade": "1960s",
       "location": "Temple, Oklahoma",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-10291",
@@ -5156,7 +5732,8 @@
       "decade": "1960s",
       "location": "Texahoma, Oklahoma",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 min"
     },
     {
       "id": "bb-10329",
@@ -5176,7 +5753,8 @@
       "decade": "1960s",
       "location": "Alto, Tennessee",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2.5 hr"
     },
     {
       "id": "bb-10385",
@@ -5186,7 +5764,8 @@
       "decade": "1960s",
       "location": "Lycoming, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-10535",
@@ -5196,7 +5775,8 @@
       "decade": "1960s",
       "location": "Goodfellow AFB, Texas",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "35 sec"
     },
     {
       "id": "bb-10626",
@@ -5206,7 +5786,8 @@
       "decade": "1960s",
       "location": "Spooner, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "25 sec"
     },
     {
       "id": "bb-10629",
@@ -5216,7 +5797,8 @@
       "decade": "1960s",
       "location": "Kansas, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 min"
     },
     {
       "id": "bb-10663",
@@ -5226,7 +5808,9 @@
       "decade": "1960s",
       "location": "Burnsville, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 hr",
+      "instruments_documented": true
     },
     {
       "id": "bb-10693",
@@ -5236,7 +5820,8 @@
       "decade": "1960s",
       "location": "19' N 172\" E (Pacific)",
       "country": "International Waters",
-      "status": "unidentified"
+      "status": "unidentified",
+      "instruments_documented": true
     },
     {
       "id": "bb-10739",
@@ -5256,7 +5841,8 @@
       "decade": "1960s",
       "location": "Vanceboro, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "1 hr"
     },
     {
       "id": "bb-10798",
@@ -5266,7 +5852,9 @@
       "decade": "1960s",
       "location": "Presque Isle State Park, Pennsylvania",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "7 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-10872",
@@ -5276,7 +5864,8 @@
       "decade": "1960s",
       "location": "Donnybrook, North Dakota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-10888",
@@ -5286,7 +5875,8 @@
       "decade": "1960s",
       "location": "Columbus, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min"
     },
     {
       "id": "bb-10899",
@@ -5296,7 +5886,9 @@
       "decade": "1960s",
       "location": "Gaylesville, Alabama",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "4 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-10917",
@@ -5306,7 +5898,8 @@
       "decade": "1960s",
       "location": "Willsboro, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-10933",
@@ -5316,7 +5909,8 @@
       "decade": "1960s",
       "location": "Suffolk County AFB, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "8 min"
     },
     {
       "id": "bb-10942",
@@ -5326,7 +5920,8 @@
       "decade": "1960s",
       "location": "Franklin Springs, New York",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "30 min"
     },
     {
       "id": "bb-10944",
@@ -5336,7 +5931,9 @@
       "decade": "1960s",
       "location": "Gwinner, North Dakota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-10973",
@@ -5346,7 +5943,8 @@
       "decade": "1960s",
       "location": "Wilmington, Ohio",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "90 sec"
     },
     {
       "id": "bb-10996",
@@ -5356,7 +5954,8 @@
       "decade": "1960s",
       "location": "Osceola, Wisconsin",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "20 min"
     },
     {
       "id": "bb-11092",
@@ -5366,7 +5965,9 @@
       "decade": "1960s",
       "location": "Cold Bay AFS, Alaska",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "3 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-11135",
@@ -5376,7 +5977,8 @@
       "decade": "1960s",
       "location": "Saginaw, Minnesota",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-11239",
@@ -5386,7 +5988,8 @@
       "decade": "1960s",
       "location": "Monroe, Oregon",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "90 min"
     },
     {
       "id": "bb-11350",
@@ -5396,7 +5999,9 @@
       "decade": "1960s",
       "location": "Odessa, Delaware",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-11355",
@@ -5456,7 +6061,9 @@
       "decade": "1960s",
       "location": "Galesburg, Moline, Illinois",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "10 sec",
+      "instruments_documented": true
     },
     {
       "id": "bb-11480",
@@ -5516,7 +6123,9 @@
       "decade": "1960s",
       "location": "Rural Hall, North Carolina",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "50 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-11815",
@@ -5556,7 +6165,8 @@
       "decade": "1960s",
       "location": "Groveton, Missouri",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "5 min"
     },
     {
       "id": "bb-12498",
@@ -5566,7 +6176,9 @@
       "decade": "1960s",
       "location": "Ocala, Florida",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "15 min",
+      "instruments_documented": true
     },
     {
       "id": "bb-12567",
@@ -5576,7 +6188,10 @@
       "decade": "1960s",
       "location": "Newton, Georgia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "lat": 31.3,
+      "lon": -84.36,
+      "duration": "4 min"
     },
     {
       "id": "bb-12607",
@@ -5586,7 +6201,8 @@
       "decade": "1960s",
       "location": "Crittendon, Virginia",
       "country": "USA",
-      "status": "unidentified"
+      "status": "unidentified",
+      "duration": "2 min"
     }
   ]
 }

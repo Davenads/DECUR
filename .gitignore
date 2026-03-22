@@ -85,3 +85,9 @@ weekly-monitor-plan.md
 # Dev server log
 .dev-server.log
 restart-dev.js
+reddit-posting-schedule.md
+askreddit-karma-system.md
+outreach-channels.md
+
+# Sparks extraction intermediate output
+data/blue-book-index-enriched.json
