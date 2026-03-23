@@ -137,24 +137,6 @@ const Home: CustomNextPage<HomePageProps> = () => {
           </div>
         </section>
 
-        {/* Scope note */}
-        <section className="max-w-5xl mx-auto px-4">
-          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 px-6 py-5 flex gap-5 items-start">
-            <div className="w-[3px] shrink-0 bg-gray-300 dark:bg-gray-600 self-stretch rounded-full" />
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">
-                Scope &amp; Methodology
-              </p>
-              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                Source material draws from congressional testimony, document leaks, on-record
-                interviews, and firsthand accounts. DECUR does not adjudicate the truth of any
-                claim; entries are documented with their source, context, and known corroborating
-                or contradicting evidence.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Categories */}
         <section className="max-w-5xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">
@@ -183,6 +165,24 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 </div>
               </Link>
             ))}
+          </div>
+        </section>
+
+        {/* Scope note */}
+        <section className="max-w-5xl mx-auto px-4">
+          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 px-6 py-5 flex gap-5 items-start">
+            <div className="w-[3px] shrink-0 bg-gray-300 dark:bg-gray-600 self-stretch rounded-full" />
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">
+                Scope &amp; Methodology
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Source material draws from congressional testimony, document leaks, on-record
+                interviews, and firsthand accounts. DECUR does not adjudicate the truth of any
+                claim; entries are documented with their source, context, and known corroborating
+                or contradicting evidence.
+              </p>
+            </div>
           </div>
         </section>
 
