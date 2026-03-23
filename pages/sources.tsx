@@ -208,6 +208,36 @@ const Sources: NextPage = () => {
             coverage="1988 – 2019"
             notes="Source for Lazar-tagged entries in timeline.json. Also used as a primary reference in building the Lazar case file."
           />
+
+          <SourceCard
+            name="Wonders in the Sky: Unexplained Aerial Objects from Antiquity to Modern Times (Vallee & Aubeck, 2009)"
+            url="https://www.amazon.com/Wonders-Sky-Unexplained-Antiquity-Modern/dp/1585427683"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="The most scholarly systematic treatment of pre-modern UAP accounts, authored by Jacques Vallee and Chris Aubeck. Documents and cross-references 500 cases from 1460 to 1879 against primary historical sources - ecclesiastical records, astronomical journals, and newspaper archives. Reference basis for the 1759 Jacobsson entry in the DECUR timeline."
+            coverage="1460 – 1879"
+            notes="Reference for historically documented pre-modern accounts. Provides primary source citations for each case."
+          />
+
+          <SourceCard
+            name="Journal of the Royal Astronomical Society of Canada - Chant (1913)"
+            url="https://archive.org/details/journalofroyal07roya"
+            type="Academic Journal"
+            typeColor="bg-teal-100 text-teal-700"
+            description="Dr. Clarence Chant's compiled witness account of the February 9, 1913 Procession of Meteors, published in Vol. VII of the RASC Journal. The primary academic documentation of a formation of luminous objects traveling in near-horizontal trajectory from Saskatchewan to Bermuda - anomalous behavior for meteoric phenomena. Used for the 1913 Procession timeline entry."
+            coverage="February 9, 1913"
+            notes="Primary academic source for the 1913 Procession of Meteors (Cyrillids) timeline entry."
+          />
+
+          <SourceCard
+            name="U.S. Navy Historical Records - USS Supply Log (1904)"
+            url="https://en.wikipedia.org/wiki/USS_Supply_incident_(1904)"
+            type="Primary Government Record"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Official Navy log entry filed February 28, 1904 by Lt. Frank H. Schofield documenting the observation of three luminous objects from the USS Supply approximately 300 miles off the California coast. One of the earliest on-record military UAP reports by a named officer. Schofield later rose to Commander in Chief, U.S. Pacific Fleet. Used for the 1904 USS Supply timeline entry."
+            coverage="February 28, 1904"
+            notes="Primary source for the 1904 USS Supply Aerial Encounter timeline entry. Original held in National Archives RG24."
+          />
         </section>
 
         {/* Case file sources */}

@@ -24205,5 +24205,51 @@
     "quote_attribution": "FBI Director. Shawn Ryan Show podcast, September 2, 2024",
     "article_url": null,
     "article_type": null
+  },
+  {
+    "id": 3634,
+    "date": "1904-02-28",
+    "year": 1904,
+    "title": "USS Supply Aerial Encounter",
+    "excerpt": "Lt. Frank H. Schofield files an official U.S. Navy log report describing three luminous objects observed approximately 300 miles off the California coast from the USS Supply. The largest object appeared six times the diameter of the full moon. The objects moved in close formation, altered colors from red to white, and ascended into cloud cover. Schofield later served as Commander in Chief, U.S. Pacific Fleet.",
+    "categories": [
+      "famous-cases"
+    ],
+    "source": "custom",
+    "source_url": null,
+    "article_url": "https://en.wikipedia.org/wiki/USS_Supply_incident_(1904)",
+    "article_type": "article",
+    "lat": 35.0,
+    "lng": -125.0
+  },
+  {
+    "id": 3635,
+    "date": "1909-05-01",
+    "year": 1909,
+    "title": "Mystery Airship Wave - United Kingdom and New Zealand",
+    "excerpt": "A second major wave of unidentified airship sightings, separate from the 1896-1897 American incidents, sweeps across Wales, England, and New Zealand. Witnesses including police officers describe structured craft with lights operating at speeds and ranges no aircraft of the era could achieve. The sightings triggered parliamentary questions in Britain and wide press coverage across both nations.",
+    "categories": [
+      "famous-cases"
+    ],
+    "source": "custom",
+    "source_url": null,
+    "article_url": "https://en.wikipedia.org/wiki/Mystery_airship",
+    "article_type": "article"
+  },
+  {
+    "id": 3636,
+    "date": "1913-02-09",
+    "year": 1913,
+    "title": "Procession of Meteors Over North America",
+    "excerpt": "Thousands of witnesses from Saskatchewan to Bermuda observe a formation of luminous bodies traveling in a near-horizontal trajectory spanning several thousand miles. Unlike meteors, the objects moved silently in close formation at consistent low altitude. Dr. Clarence Chant of the University of Toronto compiled witness accounts published in the Journal of the Royal Astronomical Society of Canada. The horizontal, formation-style trajectory remains anomalous.",
+    "categories": [
+      "famous-cases"
+    ],
+    "source": "custom",
+    "source_url": null,
+    "article_url": "https://en.wikipedia.org/wiki/Cyrillids",
+    "article_type": "article",
+    "lat": 52.0,
+    "lng": -105.0
   }
 ]
