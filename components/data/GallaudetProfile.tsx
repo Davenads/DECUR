@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import gallaudetData from '../../data/key-figures/gallaudet.json';
+import type { GallaudetData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -14,7 +15,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />,
 });
 
-const data = gallaudetData as typeof gallaudetData;
+const data = gallaudetData as unknown as GallaudetData;
 
 const TABS = [
   { id: 'overview',        label: 'Overview' },
@@ -62,7 +63,7 @@ const OverviewTab: FC = () => {
       <div>
         <h3 className={`${ps.h3} mb-2`}>Education</h3>
         <ul className="space-y-1.5">
-          {profile.education.map((item, i) => (
+          {(profile.education ?? []).map((item, i) => (
             <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>

@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import elizondoData from '../../data/key-figures/elizondo.json';
+import type { ElizondoData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import { ps } from './shared/profileStyles';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
@@ -16,7 +17,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
 });
 
-const data = elizondoData as typeof elizondoData;
+const data = elizondoData as unknown as ElizondoData;
 
 const TABS = [
   { id: 'overview',       label: 'Overview' },

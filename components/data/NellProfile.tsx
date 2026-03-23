@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import nellData from '../../data/key-figures/nell.json';
+import type { NellData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -14,7 +15,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
 });
 
-const data = nellData as typeof nellData;
+const data = nellData as unknown as NellData;
 
 const TABS = [
   { id: 'overview',        label: 'Overview' },

@@ -195,13 +195,92 @@ export interface MJ12Member {
   notes?: string;
 }
 
+/* ─── Shared Profile Base Types ────────────────────────────────── */
+
+export type ClaimStatus =
+  | 'unverified'
+  | 'partially-verified'
+  | 'disputed'
+  | 'contested'
+  | 'partially-contradicted'
+  | 'verified';
+
+export interface ProfileKeyEvent {
+  year?: string;
+  date?: string;
+  event: string;
+}
+
+export interface ProfilePerson {
+  id: string;
+  name: string;
+  role: string;
+  relationship: string;
+}
+
+export interface ProfileDisclosure {
+  date: string;
+  type: string;
+  title?: string;
+  outlet: string;
+  interviewer?: string;
+  notes?: string;
+  description?: string;
+}
+
+export interface ProfileSource {
+  title: string;
+  url: string;
+  type: string;
+  notes?: string;
+}
+
+export interface ProfileCredibility {
+  supporting: string[];
+  contradicting: string[];
+}
+
+export interface ProfileCareerConnection {
+  event_index: number;
+  node_type: 'person' | 'case' | 'program' | 'figure' | 'document';
+  node_id: string;
+  node_label: string;
+  relationship: string;
+  connection_type: string;
+}
+
+export interface ProfileBase {
+  id: string;
+  name: string;
+  aliases: string[];
+  born?: string;
+  died?: string;
+  roles: string[];
+  service_period: string;
+  organizations: string[];
+  clearance: string;
+  summary: string;
+  education?: string[];
+  early_career?: string[];
+  early_life?: string[];
+  key_events: ProfileKeyEvent[];
+}
+
+export interface ProfileClaim {
+  id: string;
+  category: string;
+  claim: string;
+  status: ClaimStatus;
+  notes?: string;
+}
+
 /* ─── Lazar Types ──────────────────────────────────────────────── */
 
 export interface LazarClaim {
   id: string;
   category: string;
   claim: string;
-  status: 'unverified' | 'partially-verified' | 'disputed' | 'partially-contradicted' | 'verified';
+  status: ClaimStatus;
   notes?: string;
 }
 
@@ -307,7 +386,7 @@ export interface GruschClaim {
   id: string;
   category: string;
   claim: string;
-  status: 'unverified' | 'partially-verified' | 'disputed' | 'partially-contradicted' | 'verified';
+  status: ClaimStatus;
   notes?: string;
 }
 
@@ -380,6 +459,487 @@ export interface GruschData {
     icig_assessment: string;
   };
   sources: GruschSource[];
+}
+
+/* ─── Elizondo Types ─────────────────────────────────────────── */
+
+export interface ElizondoData {
+  profile: ProfileBase & { early_career: string[] };
+  aatip: {
+    full_name: string;
+    established: string;
+    ended_official: string;
+    ended_claimed: string;
+    funding: string;
+    primary_contractor: string;
+    focus: string;
+    classification: string;
+    key_findings: string[];
+    controversy: string;
+  };
+  five_observables: Array<{ name: string; description: string }>;
+  claims: ProfileClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
+  sources: ProfileSource[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Fravor Types ──────────────────────────────────────────── */
+
+export interface FravorData {
+  profile: ProfileBase & { early_career: string[] };
+  encounter: {
+    date: string;
+    location: string;
+    vessel: string;
+    detection_platform: string;
+    prior_tracking: string;
+    fravor_aircraft: string;
+    wingman: string;
+    object_description: string;
+    observed_behavior: string[];
+    flir_footage: string;
+    witnesses: string[];
+  };
+  claims: ProfileClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Nolan Types ───────────────────────────────────────────── */
+
+export interface NolanData {
+  profile: ProfileBase & { early_career: string[] };
+  research: {
+    cia_consultation: {
+      period: string;
+      referring_agency: string;
+      subject_count: string;
+      subject_profile: string;
+      method: string;
+      key_finding: string;
+      nolan_hypothesis: string;
+      adverse_outcomes: string;
+      classification_status: string;
+    };
+    publications: Array<{
+      year: string;
+      title: string;
+      journal: string;
+      co_authors: string[];
+      significance: string;
+      url: string;
+    }>;
+    materials_analysis: {
+      description: string;
+      methods_used: string;
+      public_statements: string;
+      classification_note: string;
+    };
+  };
+  sol_foundation: {
+    full_name: string;
+    affiliation: string;
+    established: string;
+    co_founders: string[];
+    nolan_role: string;
+    mission: string;
+    inaugural_symposium: string;
+    significance: string;
+  };
+  claims: ProfileClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Puthoff Types ─────────────────────────────────────────── */
+
+export interface PuthoffData {
+  profile: ProfileBase & { early_career: string[] };
+  stargate: {
+    official_name: string;
+    predecessor_programs: string[];
+    period: string;
+    funding_agencies: string[];
+    location: string;
+    puthoff_role: string;
+    budget: string;
+    principal_viewers: string[];
+    declassification: string;
+    air_review: string;
+    key_findings: string[];
+    controversy: string;
+  };
+  aawsap_dirds: {
+    program: string;
+    contracting_agency: string;
+    period: string;
+    total_dirds: number;
+    puthoff_authored: string;
+    significance: string;
+    documents: Array<{
+      title: string;
+      author: string;
+      significance: string;
+    }>;
+  };
+  physics_research: {
+    primary_focus: string;
+    earthtech_mission: string;
+    key_theories: Array<{ name: string; description: string }>;
+    publications_note: string;
+  };
+  claims: ProfileClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Mellon Types ──────────────────────────────────────────── */
+
+export interface MellonClaim {
+  claim: string;
+  status: ClaimStatus;
+  basis: string;
+  notes?: string | null;
+}
+
+export interface MellonDisclosure {
+  date: string;
+  type: string;
+  outlet: string;
+  description: string;
+}
+
+export interface MellonLegislationAction {
+  year: string;
+  action: string;
+}
+
+export interface MellonData {
+  profile: ProfileBase & { early_career: string[] };
+  senate_intel: {
+    committee: string;
+    roles: string[];
+    oversight_areas: string[];
+    significance: string;
+    post_government: string;
+  };
+  ttsa_role: {
+    title: string;
+    joined: string;
+    co_founders: string[];
+    primary_contributions: string[];
+    video_release: {
+      videos: string[];
+      method: string;
+      outcome: string;
+    };
+  };
+  legislation: {
+    overview: string;
+    key_actions: MellonLegislationAction[];
+    assessment: string;
+  };
+  claims: MellonClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: MellonDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Davis Types ───────────────────────────────────────────── */
+
+export interface DavisClaim {
+  claim: string;
+  status: ClaimStatus;
+  basis: string;
+  notes?: string;
+}
+
+export interface DavisDisclosure {
+  date: string;
+  type: string;
+  outlet: string;
+  description: string;
+}
+
+export interface DavisData {
+  profile: ProfileBase & { early_career: string[] };
+  earthtech: {
+    founded_by: string;
+    location: string;
+    also_known_as: string;
+    mission: string;
+    davis_role: string;
+    nids_connection: string;
+    key_research_areas: string[];
+  };
+  aawsap_dirds: {
+    contract: string;
+    contractor: string;
+    period: string;
+    total_dirds: number;
+    davis_authored: Array<{
+      title: string;
+      year: string;
+      author: string;
+      summary: string;
+    }>;
+  };
+  wilson_davis_memo: {
+    date: string;
+    location: string;
+    context: string;
+    memo_origin: string;
+    wilson_account: string;
+    program_description: string;
+    leak_date: string;
+    leak_source: string;
+    status_disputed: string;
+    significance: string;
+  };
+  claims: DavisClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: DavisDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Bigelow Types ─────────────────────────────────────────── */
+
+export interface BigelowClaim {
+  claim: string;
+  status: ClaimStatus;
+  basis: string;
+  notes?: string;
+}
+
+export interface BigelowDisclosure {
+  date: string;
+  type: string;
+  outlet: string;
+  description: string;
+}
+
+export interface BigelowData {
+  profile: Omit<ProfileBase, 'early_career'> & {
+    background: string[];
+    key_events: ProfileKeyEvent[];
+  };
+  nids: {
+    full_name: string;
+    founded: string;
+    dissolved: string;
+    location: string;
+    funding: string;
+    director: string;
+    mission: string;
+    notable_members: string[];
+    key_outputs: string[];
+    significance: string;
+  };
+  baass_aawsap: {
+    full_name: string;
+    program: string;
+    contract_award: string;
+    contract_value: string;
+    contracting_agency: string;
+    period: string;
+    staff: string;
+    products: string[];
+    congressional_nexus: string;
+    ttsa_connection: string;
+    declassified_dird_note: string;
+  };
+  skinwalker_ranch: {
+    location: string;
+    purchased: string;
+    sold: string;
+    purchase_price: string;
+    seller: string;
+    buyer_2016: string;
+    research_period: string;
+    phenomena_reported: string[];
+    research_approach: string;
+    published_account: string;
+    notes: string;
+  };
+  claims: BigelowClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: BigelowDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Vallee Types ──────────────────────────────────────────── */
+
+export interface ValleeClaim {
+  claim: string;
+  status: ClaimStatus;
+  basis: string;
+  notes?: string;
+}
+
+export interface ValleeDisclosure {
+  date: string;
+  type: string;
+  outlet: string;
+  description: string;
+}
+
+export interface ValleeData {
+  profile: ProfileBase & { early_career: string[] };
+  forbidden_science: {
+    series_title: string;
+    volumes: Array<{
+      volume: number;
+      subtitle: string;
+      published: number;
+      period_covered: string;
+      summary: string;
+    }>;
+    historical_significance: string;
+    key_figures_documented: string[];
+  };
+  theory: {
+    eth_critique: string;
+    control_system_hypothesis: string;
+    interdimensional_hypothesis: string;
+    magonia_framework: string;
+    materials_research_position: string;
+    key_publications: Array<{
+      year: string;
+      title: string;
+      significance: string;
+    }>;
+  };
+  nids_role: {
+    title: string;
+    organization: string;
+    period: string;
+    founder: string;
+    contributions: string[];
+    significance: string;
+  };
+  claims: ValleeClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ValleeDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Pope Types ────────────────────────────────────────────── */
+
+export interface PopeClaim {
+  claim: string;
+  status: ClaimStatus;
+  basis: string;
+  notes: string | null;
+}
+
+export interface PopeDisclosure {
+  date: string;
+  type: string;
+  outlet: string;
+  description: string;
+}
+
+export interface PopeData {
+  profile: Omit<ProfileBase, 'early_career'> & {
+    career_background: string[];
+    key_events: ProfileKeyEvent[];
+  };
+  mod_role: {
+    title: string;
+    organization: string;
+    period: string;
+    reporting_to: string;
+    access_level: string;
+    methodology: string;
+    annual_caseload: string;
+    case_breakdown: string;
+    key_outputs: string[];
+    significance: string;
+  };
+  investigations: {
+    overview: string;
+    major_cases: Array<{
+      name: string;
+      date: string;
+      location: string;
+      description: string;
+      witnesses: string;
+      evidence: string;
+      pope_assessment: string;
+      status: string;
+    }>;
+  };
+  claims: PopeClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: PopeDisclosure[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Barber Types ──────────────────────────────────────────── */
+
+export interface BarberData {
+  profile: ProfileBase & { early_career: string[] };
+  claims: ProfileClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
+  sources: ProfileSource[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Gallaudet Types ───────────────────────────────────────── */
+
+export interface GallaudetData {
+  profile: ProfileBase & { early_career: string[] };
+  claims: ProfileClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
+  sources: ProfileSource[];
+  career_connections?: ProfileCareerConnection[];
+}
+
+/* ─── Nell Types ────────────────────────────────────────────── */
+
+export interface NellData {
+  profile: ProfileBase & { early_career: string[] };
+  testimony: {
+    hearing: string;
+    date: string;
+    witnesses: string[];
+    key_statements: string[];
+    context: string;
+    classification_constraints: string;
+  };
+  sol_foundation: {
+    full_name: string;
+    affiliation: string;
+    established: string;
+    co_founders: string[];
+    nell_role: string;
+    mission: string;
+    inaugural_symposium: string;
+    significance: string;
+  };
+  claims: ProfileClaim[];
+  credibility: ProfileCredibility;
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
+  career_connections?: ProfileCareerConnection[];
 }
 
 /**

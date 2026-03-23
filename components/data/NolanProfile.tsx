@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import nolanData from '../../data/key-figures/nolan.json';
+import type { NolanData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -15,7 +16,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
 });
 
-const data = nolanData as typeof nolanData;
+const data = nolanData as unknown as NolanData;
 
 const TABS = [
   { id: 'overview',        label: 'Overview' },
@@ -67,7 +68,7 @@ const OverviewTab: FC = () => {
       <div>
         <h3 className={`${ps.h3} mb-3`}>Education</h3>
         <ul className="space-y-1.5">
-          {profile.education.map((item, i) => (
+          {(profile.education ?? []).map((item, i) => (
             <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>

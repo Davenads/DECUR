@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import popeData from '../../data/key-figures/pope.json';
+import type { PopeData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -15,7 +16,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />,
 });
 
-const data = popeData as typeof popeData;
+const data = popeData as unknown as PopeData;
 
 const TABS = [
   { id: 'overview',        label: 'Overview' },

@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import barberData from '../../data/key-figures/barber.json';
+import type { BarberData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -14,7 +15,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />,
 });
 
-const data = barberData as typeof barberData;
+const data = barberData as unknown as BarberData;
 
 const TABS = [
   { id: 'overview',        label: 'Overview' },

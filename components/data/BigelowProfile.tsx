@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import bigelowData from '../../data/key-figures/bigelow.json';
+import type { BigelowData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -15,7 +16,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />,
 });
 
-const data = bigelowData as typeof bigelowData;
+const data = bigelowData as unknown as BigelowData;
 
 const TABS = [
   { id: 'overview',        label: 'Overview' },

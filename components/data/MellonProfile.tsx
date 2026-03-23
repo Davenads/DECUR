@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import mellonData from '../../data/key-figures/mellon.json';
+import type { MellonData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -15,7 +16,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
 });
 
-const data = mellonData as typeof mellonData;
+const data = mellonData as unknown as MellonData;
 
 const TABS = [
   { id: 'overview',        label: 'Overview' },

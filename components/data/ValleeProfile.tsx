@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import valleeData from '../../data/key-figures/vallee.json';
+import type { ValleeData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
@@ -15,7 +16,7 @@ const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
 });
 
-const data = valleeData as typeof valleeData;
+const data = valleeData as unknown as ValleeData;
 
 const TABS = [
   { id: 'overview',          label: 'Overview' },
@@ -58,7 +59,7 @@ const OverviewTab: FC = () => {
         <div className={`${ps.infoCard} sm:col-span-2`}>
           <p className={`${ps.label} mb-1`}>Education</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
-            {profile.education.map(e => (
+            {(profile.education ?? []).map(e => (
               <span key={e} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{e}</span>
             ))}
           </div>
