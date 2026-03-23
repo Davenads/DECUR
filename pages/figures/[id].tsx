@@ -71,11 +71,15 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
     url: `https://decur.app/figures/${entry.id}`,
   };
 
+  const metaDescription = entry.role
+    ? `${entry.role} - ${entry.summary}`
+    : entry.summary;
+
   return (
     <>
       <SeoHead
         title={entry.name}
-        description={entry.summary}
+        description={metaDescription}
         ogSubtitle={entry.role}
         path={`/figures/${entry.id}`}
         type="article"
