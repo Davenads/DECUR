@@ -18,6 +18,13 @@ interface SeoHeadProps {
   ogSubtitle?: string;
   /** Fully override the OG image URL (skips dynamic generation). */
   image?: string;
+  /**
+   * JSON-LD structured data object (schema.org). Injected as
+   * <script type="application/ld+json"> in the head for rich search results.
+   * Pass a plain object — serialization is handled internally.
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  jsonLd?: Record<string, any>;
 }
 
 const SeoHead: FC<SeoHeadProps> = ({
@@ -27,6 +34,7 @@ const SeoHead: FC<SeoHeadProps> = ({
   type = 'website',
   ogSubtitle,
   image,
+  jsonLd,
 }) => {
   const fullTitle = title.includes('DECUR') ? title : `${title} - ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${path}`;
@@ -57,6 +65,14 @@ const SeoHead: FC<SeoHeadProps> = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+
+      {/* JSON-LD Structured Data */}
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
     </Head>
   );
 };
