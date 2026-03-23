@@ -3,10 +3,11 @@ import dynamic from 'next/dynamic';
 import puthoffData from '../../data/key-figures/puthoff.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
-import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
-import PersonCard from './shared/PersonCard';
+import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
+import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
+import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -308,108 +309,20 @@ const ClaimsTab: FC = () => {
   );
 };
 
-const DisclosuresTab: FC = () => {
-  const { disclosures } = data;
+const DisclosuresTab: FC = () => (
+  <SharedDisclosuresTab disclosures={data.disclosures} introText="Chronological record of Puthoff's public disclosures and research publications." />
+);
 
-  const typeBadges: Record<string, string> = {
-    'academic-paper':    'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400',
-    'declassification':  'bg-red-100 dark:bg-red-900/20 text-red-700 dark:text-red-400',
-    'government-document': 'bg-indigo-100 dark:bg-indigo-900/20 text-indigo-700 dark:text-indigo-400',
-    'press-release':     'bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400',
-    'conference':        'bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400',
-    'documentary':       'bg-orange-100 dark:bg-orange-900/20 text-orange-700 dark:text-orange-400',
-  };
+const NetworkTab: FC = () => (
+  <SharedNetworkTab people={data.associated_people} introText="Key figures in Puthoff's professional and research network." />
+);
 
-  const typeLabels: Record<string, string> = {
-    'academic-paper':    'Academic Paper',
-    'declassification':  'Declassification',
-    'government-document': 'Gov. Document',
-    'press-release':     'Press Release',
-    'conference':        'Conference',
-    'documentary':       'Documentary',
-  };
-
-  return (
-    <div className="space-y-3">
-      {disclosures.map((d, i) => (
-        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-          <div className="flex items-start gap-3">
-            <span className="font-mono text-xs text-gray-400 whitespace-nowrap mt-0.5 pt-px">{d.date}</span>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between gap-2 mb-1">
-                <p className="font-medium text-gray-900 dark:text-gray-100 text-sm">{d.title}</p>
-                <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 whitespace-nowrap ${typeBadges[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
-                  {typeLabels[d.type] ?? d.type}
-                </span>
-              </div>
-              <p className="text-xs text-gray-500 mb-1">{d.outlet}</p>
-              {d.notes && <p className="text-xs text-gray-500 italic">{d.notes}</p>}
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-const NetworkTab: FC = () => {
-  const { associated_people } = data;
-  return (
-    <div className="space-y-4">
-      <p className="text-sm text-gray-500">Key figures in Puthoff's professional and research network.</p>
-      {associated_people.map(person => (
-        <PersonCard key={person.id} person={person} />
-      ))}
-    </div>
-  );
-};
-
-const AssessmentTab: FC = () => {
-  const { credibility } = data;
-  return (
-    <div className="space-y-6">
-      <CredibilityBalance
-        supporting={credibility.supporting.length}
-        contradicting={credibility.contradicting.length}
-      />
-
-      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
-        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Methodology Note</p>
-        <p className="text-sm text-amber-900 dark:text-amber-100">
-          Puthoff's credibility is best understood in two separate tracks: his documented government work (STARGATE, AAWSAP DIRDs) which is verifiable and substantial, and his claims about retrieved craft and insider knowledge which go beyond public documentation. The two should not be conflated.
-        </p>
-      </div>
-
-      <div>
-        <h4 className="text-sm font-semibold text-green-700 dark:text-green-400 uppercase tracking-wide mb-3 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-          Supporting Arguments
-        </h4>
-        <div className="space-y-2">
-          {credibility.supporting.map((arg, i) => (
-            <div key={i} className="border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-3">
-              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h4 className="text-sm font-semibold text-red-600 uppercase tracking-wide mb-3 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
-          Arguments Against
-        </h4>
-        <div className="space-y-2">
-          {credibility.contradicting.map((arg, i) => (
-            <div key={i} className="border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-3">
-              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+const AssessmentTab: FC = () => (
+  <SharedAssessmentTab
+    credibility={data.credibility}
+    methodologyNote="This section evaluates Puthoff's credibility across two separate tracks: his verifiable remote viewing/psychotronics research and his UAP/NHI claims. DECUR does not adjudicate these claims."
+  />
+);
 
 /* ─── Main Component ──────────────────────────────────────────── */
 

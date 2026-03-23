@@ -5,10 +5,11 @@ import { LazarData } from '../../types/data';
 import lazarData from '../../data/key-figures/lazar.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
-import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
-import PersonCard from './shared/PersonCard';
+import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
+import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
+import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -343,179 +344,21 @@ const ClaimsTab: FC = () => {
   );
 };
 
-const DisclosuresTab: FC = () => {
-  const { disclosures } = data;
-  const typeColors: Record<string, string> = {
-    television:  'bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400',
-    radio:       'bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400',
-    podcast:     'bg-purple-100 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400',
-    documentary: 'bg-amber-100 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400',
-  };
-  const typeDot: Record<string, string> = {
-    television:  'bg-blue-400',
-    radio:       'bg-green-400',
-    podcast:     'bg-purple-400',
-    documentary: 'bg-amber-400',
-  };
+const DisclosuresTab: FC = () => (
+  <SharedDisclosuresTab disclosures={data.disclosures} introText="Chronological record of Lazar's public disclosures and media appearances." showSummaryStats />
+);
 
-  // Summary stats
-  const years = disclosures.map(d => parseInt(d.date.slice(0, 4))).filter(y => !isNaN(y));
-  const firstYear = Math.min(...years);
-  const lastYear  = Math.max(...years);
-  const typeCounts = disclosures.reduce<Record<string, number>>((acc, d) => {
-    acc[d.type] = (acc[d.type] ?? 0) + 1;
-    return acc;
-  }, {});
+const NetworkTab: FC = () => (
+  <SharedNetworkTab people={data.associated_people} introText="Key individuals connected to Lazar's disclosure and the S-4 narrative." />
+);
 
-  return (
-    <div className="space-y-4">
-      <p className="text-sm text-gray-500">
-        Chronological record of Lazar&apos;s public disclosures and media appearances.
-      </p>
-
-      {/* Summary panel */}
-      <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-3">
-        <div className="flex items-center justify-between">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Disclosure Activity</p>
-          <span className="text-xs text-gray-400">{disclosures.length} appearances · {firstYear}–{lastYear}</span>
-        </div>
-        <div className="flex flex-wrap gap-3">
-          {Object.entries(typeCounts).sort((a, b) => b[1] - a[1]).map(([type, count]) => (
-            <div key={type} className="flex items-center gap-1.5">
-              <span className={`w-2 h-2 rounded-full shrink-0 ${typeDot[type] ?? 'bg-gray-400'}`} />
-              <span className="text-xs text-gray-600 dark:text-gray-400 capitalize">{type}</span>
-              <span className="text-xs font-semibold text-gray-800 dark:text-gray-200">{count}</span>
-            </div>
-          ))}
-        </div>
-        {/* Activity bar — one tick per disclosure, colored by type, ordered chronologically */}
-        <div className="flex gap-0.5 h-3 items-end">
-          {disclosures.map((d, i) => (
-            <div
-              key={i}
-              className={`flex-1 rounded-sm ${typeDot[d.type] ?? 'bg-gray-300'}`}
-              style={{ minWidth: '6px', height: '100%' }}
-              title={`${d.date} · ${d.type} · ${d.title}`}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
-        {disclosures.map((d, i) => (
-          <div key={i} className="relative">
-            <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
-            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-              <div className="flex items-start justify-between gap-3 mb-1">
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{d.title}</h4>
-                  <p className="text-xs text-gray-500 mt-0.5">{d.outlet}</p>
-                </div>
-                <div className="flex flex-col items-end gap-1 shrink-0">
-                  <span className="font-mono text-xs text-gray-400">{d.date}</span>
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${typeColors[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
-                    {d.type}
-                  </span>
-                </div>
-              </div>
-              {d.interviewer && (
-                <p className="text-xs text-gray-500 mb-1">Interviewer: {d.interviewer}</p>
-              )}
-              {d.notes && (
-                <p className="text-xs text-gray-500 italic mt-2">{d.notes}</p>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const NetworkTab: FC = () => {
-  const { associated_people } = data;
-  return (
-    <div className="space-y-4">
-      <p className="text-sm text-gray-500">
-        Key individuals connected to Lazar&apos;s disclosure and the S-4 narrative.
-      </p>
-      {associated_people.map(person => (
-        <PersonCard key={person.id} person={person} />
-      ))}
-    </div>
-  );
-};
-
-const AssessmentTab: FC = () => {
-  const { credibility } = data;
-  return (
-    <div className="space-y-6">
-      <CredibilityBalance
-        supporting={credibility.supporting.length}
-        contradicting={credibility.contradicting.length}
-      />
-
-      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
-        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Methodology Note</p>
-        <p className="text-sm text-amber-900 dark:text-amber-100">
-          This section presents documented arguments for and against Lazar&apos;s credibility. DECUR does not adjudicate these claims; they are presented for methodological transparency.
-        </p>
-      </div>
-
-      <div>
-        <h4 className="text-sm font-semibold text-green-700 dark:text-green-400 uppercase tracking-wide mb-3 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-          Supporting Evidence
-        </h4>
-        <div className="space-y-2">
-          {credibility.supporting.map((item, i) => (
-            <div key={i} className="flex gap-2 border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-3">
-              <span className="text-green-500 mt-0.5 shrink-0">✓</span>
-              <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h4 className="text-sm font-semibold text-red-600 uppercase tracking-wide mb-3 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
-          Contradicting Evidence
-        </h4>
-        <div className="space-y-2">
-          {credibility.contradicting.map((item, i) => (
-            <div key={i} className="flex gap-2 border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-3">
-              <span className="text-red-400 mt-0.5 shrink-0">✗</span>
-              <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Sources</h4>
-        <div className="space-y-2">
-          {data.sources.map((src, i) => (
-            <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
-              <div>
-                <p className="text-sm font-medium text-gray-800 dark:text-gray-200">{src.title}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{src.type} · {src.notes}</p>
-              </div>
-              <a
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-primary hover:underline whitespace-nowrap shrink-0"
-              >
-                Source ↗
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+const AssessmentTab: FC = () => (
+  <SharedAssessmentTab
+    credibility={data.credibility}
+    methodologyNote="This section presents documented arguments for and against Lazar's credibility. DECUR does not adjudicate these claims; they are presented for methodological transparency."
+    sources={data.sources}
+  />
+);
 
 /* ─── Main Profile Component ─────────────────────────────────── */
 

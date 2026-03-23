@@ -3,12 +3,12 @@ import dynamic from 'next/dynamic';
 import elizondoData from '../../data/key-figures/elizondo.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
-import CredibilityBalance from './shared/CredibilityBalance';
 import MethodologyNote from './shared/MethodologyNote';
-import ArgumentsSection from './shared/ArgumentsSection';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
-import PersonCard from './shared/PersonCard';
+import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
+import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
+import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -193,78 +193,20 @@ const ClaimsTab: FC = () => {
   );
 };
 
-const typeLabel: Record<string, string> = {
-  'print':                'Print',
-  'television':           'Television',
-  'podcast':              'Podcast',
-  'documentary':          'Documentary',
-  'congressional-testimony': 'Congressional Testimony',
-  'formal-complaint':     'Formal Complaint',
-  'declassification':     'Declassification',
-  'written':              'Book / Written',
-};
+const DisclosuresTab: FC = () => (
+  <SharedDisclosuresTab disclosures={data.disclosures} />
+);
 
-const DisclosuresTab: FC = () => {
-  const { disclosures } = data;
-  return (
-    <div className="space-y-4">
-      {disclosures.map((d, i) => (
-        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-2">
-          <div className="flex items-start justify-between gap-3">
-            <div>
-              <span className="font-mono text-xs text-gray-400">{d.date}</span>
-              <span className="mx-2 text-gray-200">·</span>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
-                {typeLabel[d.type] ?? d.type}
-              </span>
-            </div>
-          </div>
-          <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{d.title}</h4>
-          <p className="text-xs text-gray-500 dark:text-gray-400">{d.outlet}</p>
-          {d.notes && <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-2">{d.notes}</p>}
-        </div>
-      ))}
-    </div>
-  );
-};
+const NetworkTab: FC = () => (
+  <SharedNetworkTab people={data.associated_people} />
+);
 
-const NetworkTab: FC = () => {
-  const { associated_people } = data;
-  return (
-    <div className="space-y-4">
-      {associated_people.map(person => (
-        <PersonCard key={person.id} person={person} />
-      ))}
-    </div>
-  );
-};
-
-const AssessmentTab: FC = () => {
-  const { credibility } = data;
-  return (
-    <div className="space-y-6">
-      <CredibilityBalance
-        supporting={credibility.supporting.length}
-        contradicting={credibility.contradicting.length}
-      />
-
-      <MethodologyNote>
-        This section documents arguments for and against Elizondo&apos;s credibility based on
-        publicly available evidence, official statements, and independent corroboration. DECUR does
-        not adjudicate these claims.
-      </MethodologyNote>
-
-      <ArgumentsSection
-        type="supporting"
-        items={credibility.supporting.map(claim => ({ claim }))}
-      />
-      <ArgumentsSection
-        type="against"
-        items={credibility.contradicting.map(claim => ({ claim }))}
-      />
-    </div>
-  );
-};
+const AssessmentTab: FC = () => (
+  <SharedAssessmentTab
+    credibility={data.credibility}
+    methodologyNote="This section documents arguments for and against Elizondo's credibility based on publicly available evidence, official statements, and independent corroboration. DECUR does not adjudicate these claims."
+  />
+);
 
 /* Main component */
 

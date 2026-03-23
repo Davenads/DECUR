@@ -3,10 +3,11 @@ import dynamic from 'next/dynamic';
 import bigelowData from '../../data/key-figures/bigelow.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
-import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
-import PersonCard from './shared/PersonCard';
+import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
+import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
+import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -305,71 +306,17 @@ const ClaimsTab: FC = () => {
   );
 };
 
-const DisclosuresTab: FC = () => {
-  const { disclosures } = data;
-  return (
-    <div className="space-y-4">
-      {disclosures.map((d, i) => (
-        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-1.5">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded">{d.date}</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">{d.type}</span>
-            <span className="text-xs text-gray-400">{d.outlet}</span>
-          </div>
-          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{d.description}</p>
-        </div>
-      ))}
-    </div>
-  );
-};
+const DisclosuresTab: FC = () => (
+  <SharedDisclosuresTab disclosures={data.disclosures} />
+);
 
-const NetworkTab: FC = () => {
-  const { associated_people } = data;
-  return (
-    <div className="space-y-4">
-      <p className="text-sm text-gray-500">Key relationships spanning both the 1990s research network and the modern disclosure ecosystem.</p>
-      {associated_people.map(person => (
-        <PersonCard key={person.id} person={person} />
-      ))}
-    </div>
-  );
-};
+const NetworkTab: FC = () => (
+  <SharedNetworkTab people={data.associated_people} introText="Key relationships spanning both the 1990s research network and the modern disclosure ecosystem." />
+);
 
-const AssessmentTab: FC = () => {
-  const { credibility } = data;
-  return (
-    <div className="space-y-6">
-      <CredibilityBalance
-        supporting={credibility.supporting.length}
-        contradicting={credibility.contradicting.length}
-      />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <h3 className="text-sm font-semibold text-green-700 dark:text-green-400 mb-2">Supporting</h3>
-          <ul className="space-y-2">
-            {credibility.supporting.map((s, i) => (
-              <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
-                <span className="text-green-500 mt-0.5 shrink-0">+</span>
-                <span>{s}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-sm font-semibold text-red-600 mb-2">Contradicting</h3>
-          <ul className="space-y-2">
-            {credibility.contradicting.map((c, i) => (
-              <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
-                <span className="text-red-400 mt-0.5 shrink-0">-</span>
-                <span>{c}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-};
+const AssessmentTab: FC = () => (
+  <SharedAssessmentTab credibility={data.credibility} variant="compact" />
+);
 
 /* ─── Main component ──────────────────────────────────────────── */
 

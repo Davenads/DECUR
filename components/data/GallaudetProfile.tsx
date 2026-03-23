@@ -3,10 +3,10 @@ import dynamic from 'next/dynamic';
 import gallaudetData from '../../data/key-figures/gallaudet.json';
 import ProfileShell from './shared/ProfileShell';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
-import CredibilityBalance from './shared/CredibilityBalance';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import PersonCard from './shared/PersonCard';
+import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -223,53 +223,12 @@ const DisclosuresTab: FC = () => {
   );
 };
 
-const AssessmentTab: FC = () => {
-  const { credibility } = data;
-  return (
-    <div className="space-y-6">
-      <CredibilityBalance
-        supporting={credibility.supporting.length}
-        contradicting={credibility.contradicting.length}
-      />
-
-      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
-        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Methodology Note</p>
-        <p className="text-sm text-amber-900 dark:text-amber-100">
-          This section documents arguments for and against Gallaudet's credibility based on publicly available evidence,
-          official statements, and independent corroboration. DECUR does not adjudicate these claims.
-        </p>
-      </div>
-
-      <div>
-        <h4 className="text-sm font-semibold text-green-700 dark:text-green-400 uppercase tracking-wide mb-3 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-          Supporting Arguments
-        </h4>
-        <div className="space-y-3">
-          {credibility.supporting.map((arg, i) => (
-            <div key={i} className="border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-4">
-              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h4 className="text-sm font-semibold text-red-600 uppercase tracking-wide mb-3 flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
-          Arguments Against
-        </h4>
-        <div className="space-y-3">
-          {credibility.contradicting.map((arg, i) => (
-            <div key={i} className="border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-4">
-              <p className="text-sm text-gray-700 dark:text-gray-300">{arg}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+const AssessmentTab: FC = () => (
+  <SharedAssessmentTab
+    credibility={data.credibility}
+    methodologyNote="This section presents documented arguments for and against Gallaudet's credibility. DECUR does not adjudicate these claims; they are presented for methodological transparency."
+  />
+);
 
 const GallaudetProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
