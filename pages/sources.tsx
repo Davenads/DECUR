@@ -2,6 +2,28 @@ import type { NextPage } from 'next';
 import SeoHead from '../components/SeoHead';
 import Link from 'next/link';
 
+interface FeaturedSourceProps {
+  name: string;
+  url: string;
+  institution: string;
+  type: string;
+}
+
+const FeaturedSource: React.FC<FeaturedSourceProps> = ({ name, url, institution, type }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex flex-col gap-1.5 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800/50 rounded-lg p-4 hover:border-blue-400 dark:hover:border-blue-600 transition-colors group"
+  >
+    <div className="flex items-start justify-between gap-2">
+      <span className="font-semibold text-sm text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors leading-snug">{name}</span>
+      <span className="text-xs px-2 py-0.5 rounded-full font-medium shrink-0 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">{type}</span>
+    </div>
+    <span className="text-xs text-gray-500 dark:text-gray-400">{institution}</span>
+  </a>
+);
+
 interface SourceCardProps {
   name: string;
   url: string;
@@ -72,6 +94,66 @@ const Sources: NextPage = () => {
           </p>
         </div>
 
+        {/* Featured government sources */}
+        <section className="space-y-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Primary Institutional Sources</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Official government records, FOIA releases, and institutional archives form the evidentiary backbone of DECUR&apos;s data. These are the highest-authority sources drawn from across all platform sections.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <FeaturedSource
+              name="National Archives - Project Blue Book Files"
+              url="https://www.archives.gov/research/military/air-force/ufos"
+              institution="U.S. National Archives and Records Administration"
+              type="Primary Government Archive"
+            />
+            <FeaturedSource
+              name="ODNI UAP Preliminary Assessment (June 2021)"
+              url="https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf"
+              institution="Office of the Director of National Intelligence"
+              type="Official Government Report"
+            />
+            <FeaturedSource
+              name="AARO Historical Record Report Vol. 1 (March 2024)"
+              url="https://www.aaro.mil/Portals/136/PDFs/UAP_Historical_Record_Report_Vol1_20240306.pdf"
+              institution="All-domain Anomaly Resolution Office (DoD)"
+              type="Official Government Report"
+            />
+            <FeaturedSource
+              name="CIA CREST Database - STARGATE Program Documents"
+              url="https://www.cia.gov/readingroom/collection/stargate"
+              institution="Central Intelligence Agency FOIA Reading Room"
+              type="FOIA / Declassified"
+            />
+            <FeaturedSource
+              name="FBI Records: The Vault - Hottel Memo (1950)"
+              url="https://vault.fbi.gov/hottel_memo"
+              institution="Federal Bureau of Investigation"
+              type="Declassified Government"
+            />
+            <FeaturedSource
+              name="House Oversight Committee - July 2023 UAP Hearing"
+              url="https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+              institution="U.S. House Committee on Oversight and Government Reform"
+              type="Congressional Record"
+            />
+            <FeaturedSource
+              name="DIA AAWSAP DIRD Collection (FOIA)"
+              url="https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/"
+              institution="Defense Intelligence Agency"
+              type="FOIA / Declassified"
+            />
+            <FeaturedSource
+              name="NDAA FY2024 - UAP Provisions"
+              url="https://www.congress.gov/bill/118th-congress/house-bill/2670/text"
+              institution="U.S. Congress (congress.gov)"
+              type="Official Government"
+            />
+          </div>
+        </section>
+
         {/* Timeline data sources */}
         <section className="space-y-4">
           <div>
@@ -131,11 +213,11 @@ const Sources: NextPage = () => {
         {/* Case file sources */}
         <section className="space-y-4">
           <div>
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Insider Case File References</h2>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Key Figure Profile Sources</h2>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
               Sources consulted in building the manually curated{' '}
-              <Link href="/data?category=key-figures" className="text-primary hover:underline">Insider</Link>{' '}
-              case files (11 profiles). These are reference sources, not scraped datasets.
+              <Link href="/data?category=key-figures" className="text-primary hover:underline">Key Figure</Link>{' '}
+              profiles (60+ figures). These are reference sources, not scraped datasets. The sources listed here represent core profile references; not all 60+ figures are fully enumerated.
             </p>
           </div>
 
@@ -797,10 +879,10 @@ const Sources: NextPage = () => {
             </div>
 
             <div>
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Manually Curated Case Files &amp; Program Pages</p>
+              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Manually Curated Key Figure Profiles &amp; Program Pages</p>
               <p>
-                Insider profiles (Dan Burisch, Bob Lazar, David Grusch, Luis Elizondo, David Fravor,
-                Karl Nell, Garry Nolan, Hal Puthoff, Chris Mellon, Eric Davis, and others) and government
+                60+ key figure profiles (including David Grusch, Luis Elizondo, David Fravor, Garry Nolan,
+                Hal Puthoff, Eric Davis, Chris Mellon, Bob Lazar, Dan Burisch, and many others) and government
                 program pages (Project Blue Book, AAWSAP, AARO, TTSA, and others) are built by hand from
                 multiple primary and secondary sources. Claims, timelines, and assessments are structured
                 and organized by DECUR contributors. Supporting and contradicting evidence is documented
