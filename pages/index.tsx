@@ -5,6 +5,7 @@ import { CustomNextPage, HomePageProps } from '../types/pages';
 import insidersData from '../data/key-figures/index.json';
 import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
+import timelineData from '../data/timeline.json';
 
 const CATEGORIES = [
   {
@@ -47,7 +48,7 @@ const CATEGORIES = [
 const resData = resourcesData as { sources?: unknown[]; testimony?: unknown[] };
 const ARCHIVE_STATS = [
   { count: (insidersData as unknown[]).length,                                     label: 'key figures' },
-  { count: '1,580',                                                                 label: 'timeline events' },
+  { count: (timelineData as unknown[]).length,                                      label: 'timeline events' },
   { count: (glossaryData as unknown[]).length,                                      label: 'glossary terms' },
   { count: (resData.sources?.length ?? 0) + (resData.testimony?.length ?? 0),      label: 'source materials' },
 ];
