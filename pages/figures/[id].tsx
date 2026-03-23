@@ -59,6 +59,18 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
     }
   };
 
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: entry.name,
+    description: entry.summary,
+    jobTitle: entry.role,
+    affiliation: entry.affiliation
+      ? { '@type': 'Organization', name: entry.affiliation }
+      : undefined,
+    url: `https://decur.app/figures/${entry.id}`,
+  };
+
   return (
     <>
       <SeoHead
@@ -67,6 +79,7 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
         ogSubtitle={entry.role}
         path={`/figures/${entry.id}`}
         type="article"
+        jsonLd={personSchema}
       />
       <div className="container mx-auto px-4 py-4">
         {renderProfile()}
