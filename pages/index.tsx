@@ -186,20 +186,34 @@ const Home: CustomNextPage<HomePageProps> = () => {
           </div>
         </section>
 
-        {/* Resources footer strip */}
-        <section className="border-t border-gray-200 dark:border-gray-700 pt-10 pb-4 max-w-5xl mx-auto px-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">Source Materials & Glossary</p>
-              <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">
-                Primary documents, curated source links, and a {(glossaryData as unknown[]).length}-term terminology reference
-              </p>
-            </div>
+        {/* Resources section */}
+        <section className="max-w-5xl mx-auto px-4 pb-4">
+          <h2 className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">
+            Resources
+          </h2>
+          <div className="divide-y divide-gray-100 dark:divide-gray-800">
             <Link
               href="/resources"
-              className="text-sm font-medium text-primary hover:underline whitespace-nowrap"
+              className="group flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8 py-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 -mx-3 px-3 rounded-lg transition-colors"
             >
-              Browse Resources →
+              <div className="sm:w-44 shrink-0">
+                <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary dark:group-hover:text-primary-light transition-colors text-sm">
+                  Source Materials &amp; Glossary
+                </span>
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-1">
+                  Curated primary documents, on-record interview transcripts, and a reference glossary covering key programs, figures, and terminology.
+                </p>
+                <p className="text-xs text-gray-400 dark:text-gray-500">
+                  {(glossaryData as unknown[]).length} glossary terms · {(resData.sources?.length ?? 0) + (resData.testimony?.length ?? 0)} source materials
+                </p>
+              </div>
+              <div className="hidden sm:flex items-center text-gray-300 dark:text-gray-600 group-hover:text-primary dark:group-hover:text-primary-light transition-colors shrink-0 pt-0.5">
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
             </Link>
           </div>
         </section>
