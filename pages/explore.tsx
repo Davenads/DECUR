@@ -175,13 +175,6 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
     }`;
 
-  const tabPill = (id: TabView) =>
-    `shrink-0 text-sm px-4 py-2 rounded-lg font-medium transition-colors ${
-      activeTab === id
-        ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm border border-gray-200 dark:border-gray-600'
-        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100/70 dark:hover:bg-gray-800/70'
-    }`;
-
   // ── Render ────────────────────────────────────────────────────
   return (
     <>
@@ -287,15 +280,6 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
           {/* ── Secondary: Tabbed views ──────────────────────────── */}
           <section ref={tabsRef} id="secondary-tabs" className="scroll-mt-14">
             <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
-
-              {/* Tab bar */}
-              <div className="flex gap-1.5 mb-6 pb-4 border-b border-gray-200 dark:border-gray-700/50 flex-wrap">
-                {TAB_VIEWS.map(t => (
-                  <button key={t.id} onClick={() => activateTab(t.id)} className={tabPill(t.id)}>
-                    {t.label}
-                  </button>
-                ))}
-              </div>
 
               {/* ── Timeline tab ─────────────────────────────────── */}
               {mountedTabs.has('timeline') && (
