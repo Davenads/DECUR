@@ -22,6 +22,13 @@ const CATEGORIES = [
     detail: 'USS Nimitz · Rendlesham Forest · USS Roosevelt · 9 cases assessed',
   },
   {
+    label: 'Government Programs',
+    href: '/data?category=programs',
+    description:
+      'Official and private programs involved in UAP investigation, research, and disclosure - from Cold War-era Air Force projects to modern congressional oversight initiatives.',
+    detail: 'Project Blue Book · AATIP · AAWSAP · AARO · 23 programs catalogued',
+  },
+  {
     label: 'Declassified Documents',
     href: '/data?category=documents',
     description:
@@ -30,7 +37,7 @@ const CATEGORIES = [
   },
   {
     label: 'Historical Timeline',
-    href: '/explore',
+    href: '/timeline',
     description:
       'An interactive chronology of UAP events spanning eight decades, cross-referenced with key figure disclosures, program histories, and congressional actions.',
     detail: 'Nimitz incident · AATIP / AAWSAP · Grusch testimony · 2023 hearings',
