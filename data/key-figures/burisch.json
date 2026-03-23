@@ -227,7 +227,7 @@
       "date": "1994",
       "authors": ["Dan Burisch", "Steven M. (supervisor)"],
       "significance": "Primary scientific record of J-Rod biological tissue sampling, neuropathy analysis, and extraterrestrial biology findings from S-4 Clean Sphere work",
-      "leak_history": "Circulated among Burisch researchers; first publicly acknowledged by Bill Hamilton in 1999",
+      "leak_history": "Second draft smuggled out by a source identified as 'Steven' in late 1998; leaked publicly by B.J. Wolf in 1999 and first publicly analyzed by Bill Hamilton",
       "status": "Partially corroborated; original classification unknown"
     },
     {
@@ -242,7 +242,8 @@
       "id": "congressional-record",
       "designation": "Congressional Record Entry",
       "common_name": "Congressional Record",
-      "significance": "Official government document cited as supporting Burisch's identity and scientific credibility",
+      "date": "November 13, 2024",
+      "significance": "Journalist Michael Schellenberger submitted documentation to the House Oversight Committee UAP hearing in which Burisch's name appears 9 times. The submission is connected to the Immaculate Constellation leaked documentation. Corroborating witness Henry Deacon is also cited within the submission.",
       "source_url": "https://www.burischarchive.com/congressional-record"
     },
     {
@@ -282,7 +283,8 @@
     { "date": "2008-03", "event": "Lectures at Caltech Beckman Auditorium on Project Lotus findings", "category": "research" },
     { "date": "2008-06-05", "event": "Provides public updates on Timeline 1, variant 83", "category": "research" },
     { "date": "2012", "event": "Researcher Brian Jackson begins 13-year investigation into Burisch claims", "category": "archive" },
-    { "date": "2018", "event": "90-minute phone call with Brian Jackson; expresses hope to advance Lotus toward peer review", "category": "research" }
+    { "date": "2018", "event": "90-minute phone call with Brian Jackson; expresses hope to advance Lotus toward peer review", "category": "research" },
+    { "date": "2024-11-13", "event": "Journalist Michael Schellenberger submits documentation to House Oversight Committee UAP hearing citing Burisch's name 9 times; submission connected to Immaculate Constellation leaked records", "category": "archive" }
   ],
 
   "mj12": [
