@@ -45,6 +45,22 @@ const ARCHIVE_STATS = [
   { count: (resData.sources?.length ?? 0) + (resData.testimony?.length ?? 0),      label: 'source materials' },
 ];
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'DECUR',
+  url: 'https://decur.app',
+  description: 'A structured archive of insider testimony, primary documents, and research on UAP, NHI, and classified programs.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://decur.app/search?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+
 const Home: CustomNextPage<HomePageProps> = () => {
   return (
     <>
@@ -52,6 +68,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
         title="DECUR: UAP & NHI Research Archive"
         description="A structured archive of insider testimony, primary documents, and research on UAP, NHI, and classified programs."
         path="/"
+        jsonLd={websiteSchema}
       />
 
       <div className="space-y-16">
