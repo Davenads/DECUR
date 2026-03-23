@@ -100,6 +100,16 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 >
                   Explore the Archive →
                 </Link>
+
+                {/* Mobile stat grid — hidden on md+ where the sidebar widget takes over */}
+                <div className="mt-8 grid grid-cols-2 gap-3 md:hidden">
+                  {ARCHIVE_STATS.map(({ count, label }) => (
+                    <div key={label} className="border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-white dark:bg-gray-800">
+                      <p className="text-xl font-bold text-gray-900 dark:text-gray-100 tabular-nums">{count}</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{label}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* Right: stat block */}
