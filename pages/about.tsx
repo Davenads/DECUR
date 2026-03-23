@@ -5,6 +5,18 @@ import { Turnstile } from '@marsidev/react-turnstile';
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'DECUR',
+  url: 'https://decur.app',
+  description: 'A structured archive documenting UAP, NHI, and classified program research through primary sources, firsthand accounts, and declassified records.',
+  sameAs: [
+    'https://decur.org',
+    'https://www.decur.org',
+  ],
+};
+
 const About: NextPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [status, setStatus] = useState<Status>('idle');
@@ -49,6 +61,7 @@ const About: NextPage = () => {
         title="About"
         description="DECUR is a structured archive documenting UAP, NHI, and classified program research through primary sources, firsthand accounts, and declassified records."
         path="/about"
+        jsonLd={organizationSchema}
       />
       <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
