@@ -156,7 +156,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
         </section>
 
         {/* Categories */}
-        <section className="max-w-3xl mx-auto px-4">
+        <section className="max-w-5xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">
             Research Areas
           </h2>
@@ -187,7 +187,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
         </section>
 
         {/* Resources footer strip */}
-        <section className="border-t border-gray-200 dark:border-gray-700 pt-10 pb-4 max-w-3xl mx-auto px-4">
+        <section className="border-t border-gray-200 dark:border-gray-700 pt-10 pb-4 max-w-5xl mx-auto px-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">Source Materials & Glossary</p>
