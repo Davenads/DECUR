@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FC, useEffect, useState } from 'react';
 
 const Footer: FC = () => {
-  const [currentYear, setCurrentYear] = useState(2026);
+  const [currentYear, setCurrentYear] = useState(() => new Date().getFullYear());
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
   }, []);
