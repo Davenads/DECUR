@@ -2,7 +2,7 @@
 
 **Data Exceeding Current Understanding of Reality**
 
-A structured reference archive for UAP and NHI research. DECUR catalogs insider testimony, documented incidents, primary source documents, and historical records spanning eight decades - organized for analysis, not advocacy. Qualitative data catalogued for analysis, not advocacy.
+A structured reference archive for UAP and NHI research. DECUR catalogs insider testimony, documented incidents, primary source documents, and historical records spanning eight decades. Qualitative data catalogued for analysis, not advocacy.
 
 Live at [decur.org](https://decur.org)
 
@@ -36,11 +36,9 @@ The core of the platform. Accessed via the `Data` nav dropdown or directly at `/
 | Documents | Annotated primary source documents |
 | Programs | Government programs, organizations, and private defense contractors |
 
-#### Insider Profiles
+#### Key Figure Profiles
 
-Each insider has a dedicated multi-tab profile covering background, roles, key events timeline, credibility assessment, network connections, and public disclosures. Current profiles include:
-
-Luis Elizondo, David Fravor, David Grusch, Jacques Vallee, Karl Nell, Hal Puthoff, Garry Nolan, Bob Bigelow, Eric Davis, Chris Mellon, Nick Pope, Bob Lazar, Philip Corso, Steven Greer, Dan Burisch, and more.
+Each figure has a dedicated multi-tab profile covering background, roles, key events timeline, credibility assessment, network connections, and public disclosures. The platform currently profiles 60+ figures across six categories: government insiders, scientists, pilots, journalists, officials, and executives.
 
 Profiles cross-reference documented cases and link into the Explore timeline overlay where applicable.
 
@@ -75,41 +73,51 @@ A dedicated **Private Defense Contractors** section covers Lockheed Martin (Skun
 
 ### Timeline
 
-A chronological view of 1,800+ documented UAP/NHI events from the 1940s to the present. Filterable by era and event type. Case detail pages link directly into the timeline filtered to the relevant year.
+A chronological view of 1,800+ documented UAP/NHI events spanning 1561 to the present. Filterable by era and event type. Case detail pages link directly into the timeline filtered to the relevant year.
 
 ---
 
 ### Explore
 
-Interactive cross-dataset visualizations built with React Flow (@xyflow/react), Recharts, and react-force-graph-2d.
+Interactive cross-dataset visualizations. The page uses a hero + tabbed layout: two network graphs occupy the hero, with four additional visualizations in tabs below.
 
-#### Relationship Network
+#### Network Graphs (Hero)
+
+Two force-directed graph views toggle in the hero section:
+
+**Relationship Network** - Connections between insiders, organizations, programs, and technologies. Nodes are color-coded by type; clicking a node navigates to the associated profile or detail page.
 
 ![Explore - Relationship Network](public/screenshots/explore-network.png)
 
-Force-directed graph of connections between insiders, organizations, programs, and technologies. Nodes are color-coded by type; clicking a node navigates to the associated profile or detail page.
+**Claims Corroboration Network** - Bipartite force graph linking key figures to the claim categories they have made (e.g., crash retrieval, non-human intelligence, reverse engineering). Category node size scales with the number of corroborating figures. Filter by verification status; click any node for a side panel listing witness claims or figure disclosures.
 
-#### Event Frequency & Timeline Overlay
+#### Tabbed Secondary Visualizations
 
-Distribution of documented events by decade and historical era, plus a swimlane view of insider careers and key events plotted chronologically with per-source color coding.
+**Event Frequency & Timeline Overlay** - Distribution of documented events by decade and historical era, plus a swimlane view of insider careers and key events plotted chronologically with per-source color coding.
 
-#### Program Lineage Flow
+**Program Lineage Flow**
 
 ![Explore - Program Lineage](public/screenshots/flow-lineage.png)
 
 Left-to-right directed graph showing chronological succession and influence between 20 UAP investigation programs - from Project Sign (1947) through AARO (2022-present). Data-driven from `programs.json`. Click any node for a detail panel with program summary, key personnel, and a link to the full program profile.
 
-#### Organizational Oversight Hierarchy
+**Organizational Oversight Hierarchy**
 
 ![Explore - Oversight Structure](public/screenshots/flow-oversight.png)
 
 Top-down authority hierarchy spanning the Executive Branch, DoD, CIA, Congressional committees, and 14 UAP programs - with private defense contractors shown as contractual leaf nodes. Five edge types visualize distinct relationship classes: authority (solid), oversight (dashed green), contractual (dotted purple), alleged (dashed red), and influenced (dashed amber). Click any non-branch node for a detail panel.
 
-#### Evidence Tier Swimlane
+**Evidence Tier Swimlane**
 
 ![Explore - Evidence Tiers](public/screenshots/flow-evidence-tiers.png)
 
 Horizontal swimlane layout organizing all documented cases by evidence tier. Cases are sorted chronologically within each band and color-coded by incident category (military-aviation, military-ground, civilian, maritime, etc.). Click any case card for a summary panel and direct link to the full case profile.
+
+---
+
+### Project Blue Book Archive
+
+Searchable index of all 12,618 Project Blue Book cases (1947-1969), sourced from the National Archives digitization. Filter by year, location, and case status (Unidentified, Insufficient Data, Other). Each entry links to the original NARA document where available.
 
 ---
 
@@ -138,17 +146,27 @@ components/
   resources/       # Resource list and glossary components
   layout/          # Header, footer, layout wrapper
 data/
-  *.json           # Static data files (insiders, cases, documents, events, etc.)
-  key-figures/     # Per-figure JSON profiles
-  network-graph.ts # Network graph node/link definitions
-  org-hierarchy.json # Oversight hierarchy nodes and edges
-  contractors.json # Private defense contractor profiles
+  key-figures/        # Per-figure JSON profiles (~60 files) + index.json + registry.ts
+  network-graph.ts    # Relationship network node/link definitions
+  claims-network.ts   # Claims corroboration bipartite graph data
+  org-hierarchy.json  # Oversight hierarchy nodes and edges
+  contractors.json    # Private defense contractor profiles
+  cases.json          # Documented UAP cases
+  timeline.json       # 1,800+ historical events
+  programs.json       # Government and private programs
+  documents.json      # Primary source documents
+  resources.json      # Curated reference materials
+  glossary.json       # UAP/NHI terminology
+  blue-book-index.json # Project Blue Book case index
 pages/
   index.tsx        # Home
   data.tsx         # Data section with category routing
-  explore.tsx      # Visualizations page
+  explore.tsx      # Visualizations page (hero + tabbed layout)
   timeline.tsx     # Timeline page
+  blue-book.tsx    # Project Blue Book archive
+  search.tsx       # Full-text search
   resources.tsx    # Resources page
+  sources.tsx      # Primary sources
   about.tsx        # About page
 public/            # Static assets and screenshots
 types/

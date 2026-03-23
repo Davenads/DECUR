@@ -26,16 +26,30 @@ components/
       CredibilityBalance.tsx, ArgumentsSection.tsx, etc.
     DocumentsList.tsx, InsidersList.tsx, CasesList.tsx ...
   explore/
-    NetworkGraph.tsx, TimelineOverlay.tsx
+    NetworkGraph.tsx             - Force-directed relationship graph (react-force-graph-2d)
+    ClaimsCorroborationGraph.tsx - Bipartite claims/figures graph (react-force-graph-2d)
+    TimelineOverlay.tsx          - Swimlane timeline overlay (Recharts)
+    EventFrequencyChart.tsx      - Event frequency by decade (Recharts)
+    ProgramLineageFlow.tsx       - Program succession DAG (@xyflow/react)
+    OversightHierarchyFlow.tsx   - Org authority hierarchy (@xyflow/react)
+    EvidenceTierFlow.tsx         - Cases by evidence tier (@xyflow/react)
+    CongressionalDisclosureFlow.tsx - Congressional disclosure timeline (@xyflow/react)
+    CaseMap.tsx                  - Geographic case map
   resources/
 pages/
   data.tsx, figures/[id].tsx, cases/[id].tsx, explore.tsx ...
+  timeline.tsx, search.tsx, blue-book.tsx, sources.tsx ...
 data/
   key-figures/
     index.json           - Searchable index of all figures
     registry.ts          - Maps id -> JSON data for GenericInsiderProfile
-    [id].json            - One file per profile
-  cases.json, timeline.json, programs.json, glossary.json, network-graph.ts ...
+    [id].json            - One file per profile (~60 profiles)
+  cases.json, timeline.json, programs.json, glossary.json
+  network-graph.ts       - Relationship network nodes and edges
+  claims-network.ts      - Bipartite claims graph data (aggregated from profile JSONs)
+  org-hierarchy.json     - Oversight hierarchy nodes and edges
+  contractors.json       - Private defense contractor profiles
+  documents.json, resources.json
 public/                  - Static assets
 styles/                  - Global CSS
 .claude/                 - Claude AI context files
@@ -50,7 +64,9 @@ When working on this project, prioritize these files for context:
 3. **`components/data/key-figures/GenericInsiderProfile.tsx`** - Standard profile renderer
 4. **`data/key-figures/index.json`** - All registered figures
 5. **`data/key-figures/registry.ts`** - id -> JSON mapping
-6. **.claude/** folder:
+6. **`data/network-graph.ts`** - Relationship network node/edge definitions
+7. **`data/claims-network.ts`** - Claims corroboration graph data; aggregates `claims[]` from all profiles with `category` fields; defines `CATEGORY_MAP` and canonical category normalization
+8. **.claude/** folder:
    - `code-structure.json` - Component relationships and data flows
    - `architecture-overview.md` - System design documentation
 
