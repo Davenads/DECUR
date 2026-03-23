@@ -125,6 +125,11 @@ function disclosureLabel(type: string): string {
 }
 
 // Detect the "feature" section key and return a human-readable tab label.
+// Standard top-level keys in every profile JSON — not feature sections.
+const KNOWN_SCHEMA_KEYS = new Set([
+  'profile', 'associated_people', 'disclosures', 'sources', 'credibility', 'career_connections',
+]);
+
 // Add new patterns here as new profile schemas are introduced.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function detectFeature(data: Record<string, any>): { key: string; label: string } | null {
@@ -137,6 +142,19 @@ function detectFeature(data: Record<string, any>): { key: string; label: string 
     interviews: 'Interviews',
     immaculate_constellation: 'IMCON Report',
   };
+
+  // Warn about unregistered keys so they don't silently disappear.
+  if (process.env.NODE_ENV !== 'production') {
+    for (const key of Object.keys(data)) {
+      if (!KNOWN_SCHEMA_KEYS.has(key) && !featureMap[key]) {
+        console.warn(
+          `[GenericInsiderProfile] Unregistered data key "${key}" in profile "${data.profile?.id ?? 'unknown'}". ` +
+          `Add it to featureMap in detectFeature() or KNOWN_SCHEMA_KEYS if it is a standard field.`
+        );
+      }
+    }
+  }
+
   for (const [key, label] of Object.entries(featureMap)) {
     if (data[key]) return { key, label };
   }
