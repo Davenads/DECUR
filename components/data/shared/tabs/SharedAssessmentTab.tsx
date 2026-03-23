@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import CredibilityBalance from '../CredibilityBalance';
+import { ps } from '../profileStyles';
 
 interface Source {
   title: string;
@@ -93,7 +94,7 @@ const SharedAssessmentTab: FC<SharedAssessmentTabProps> = ({
           {credibility.supporting.map((item, i) => (
             <div key={i} className="flex gap-2 border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-3">
               <span className="text-green-500 mt-0.5 shrink-0">✓</span>
-              <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
+              <p className={ps.body}>{item}</p>
             </div>
           ))}
         </div>
@@ -108,7 +109,7 @@ const SharedAssessmentTab: FC<SharedAssessmentTabProps> = ({
           {credibility.contradicting.map((item, i) => (
             <div key={i} className="flex gap-2 border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-3">
               <span className="text-red-400 mt-0.5 shrink-0">✗</span>
-              <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
+              <p className={ps.body}>{item}</p>
             </div>
           ))}
         </div>
@@ -122,7 +123,7 @@ const SharedAssessmentTab: FC<SharedAssessmentTabProps> = ({
               <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
                 <div>
                   <p className="text-sm font-medium text-gray-800 dark:text-gray-200">{src.title}</p>
-                  <p className="text-xs text-gray-400 mt-0.5 capitalize">
+                  <p className={`${ps.muted} mt-0.5 capitalize`}>
                     {src.type.replace(/-/g, ' ')}{src.notes ? ` · ${src.notes}` : ''}
                   </p>
                 </div>

@@ -2,6 +2,7 @@ import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import elizondoData from '../../data/key-figures/elizondo.json';
 import ProfileShell from './shared/ProfileShell';
+import { ps } from './shared/profileStyles';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import MethodologyNote from './shared/MethodologyNote';
 import { statusConfig } from './shared/profileConstants';
@@ -37,25 +38,25 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
+        <h3 className={`${ps.h3} mb-2`}>Background</h3>
+        <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Service Period</p>
+          <p className={ps.value}>{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Clearance</p>
+          <p className={ps.value}>{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Organizations</p>
+          <p className={ps.value}>{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
               <span key={r} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{r}</span>
@@ -65,10 +66,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Career Background</h3>
+        <h3 className={`${ps.h3} mb-3`}>Career Background</h3>
         <ul className="space-y-1.5">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -77,14 +78,14 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Events</h3>
-        <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
+        <h3 className={`${ps.h3} mb-3`}>Key Events</h3>
+        <div className={`${ps.timelineLine} space-y-4`}>
           {profile.key_events.map((ev, i) => (
             <div key={i} className="relative">
-              <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-900" />
+              <div className={ps.timelineDot} />
               <div className="flex items-start gap-3">
                 <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.year}</span>
-                <span className="text-sm text-gray-700 dark:text-gray-300">{ev.event}</span>
+                <span className={ps.body}>{ev.event}</span>
               </div>
             </div>
           ))}
@@ -98,41 +99,41 @@ const AatipTab: FC = () => {
   const { aatip } = data;
   return (
     <div className="space-y-6">
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+      <div className={ps.accentBoxLg}>
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Program</p>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{aatip.full_name}</h3>
-        <p className="text-xs text-gray-400">Est. {aatip.established} · Classification: {aatip.classification}</p>
+        <h3 className={`${ps.h3} mb-1`}>{aatip.full_name}</h3>
+        <p className={ps.muted}>Est. {aatip.established} · Classification: {aatip.classification}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Official End Date</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{aatip.ended_official}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Official End Date</p>
+          <p className={ps.value}>{aatip.ended_official}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Elizondo Claims Ended</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{aatip.ended_claimed}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Elizondo Claims Ended</p>
+          <p className={ps.value}>{aatip.ended_claimed}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Funding</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{aatip.funding}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Funding</p>
+          <p className={ps.value}>{aatip.funding}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Primary Contractor</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{aatip.primary_contractor}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Primary Contractor</p>
+          <p className={ps.value}>{aatip.primary_contractor}</p>
         </div>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Program Focus</h4>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{aatip.focus}</p>
+        <h4 className={`${ps.h4} mb-3`}>Program Focus</h4>
+        <p className={`${ps.body} leading-relaxed`}>{aatip.focus}</p>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Key Findings</h4>
+        <h4 className={`${ps.h4} mb-3`}>Key Findings</h4>
         <ul className="space-y-2">
           {aatip.key_findings.map((f, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{f}</span>
             </li>
@@ -150,18 +151,18 @@ const ObservablesTab: FC = () => {
   return (
     <div className="space-y-5">
       <div>
-        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+        <p className={`${ps.bodyMuted} leading-relaxed`}>
           Elizondo&apos;s analytical framework identifying five consistent flight characteristics observed across UAP encounters studied under AATIP. These observables are not an official DoD classification but have been adopted widely in UAP research and policy discussions.
         </p>
       </div>
       <div className="space-y-4">
         {five_observables.map((obs, i) => (
-          <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+          <div key={i} className={ps.borderCardLg}>
             <div className="flex items-start gap-3 mb-2">
               <span className="font-mono text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded shrink-0">{i + 1}</span>
-              <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{obs.name}</h4>
+              <h4 className={ps.h4Inline}>{obs.name}</h4>
             </div>
-            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed pl-10">{obs.description}</p>
+            <p className={`${ps.body} leading-relaxed pl-10`}>{obs.description}</p>
           </div>
         ))}
       </div>
@@ -177,14 +178,14 @@ const ClaimsTab: FC = () => {
       {claims.map(claim => {
         const cfg = statusConfig[claim.status] ?? { label: claim.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
         return (
-          <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
+          <div key={claim.id} className={`${ps.borderCardLg} space-y-3`}>
             <div className="flex items-start justify-between gap-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{claim.category}</p>
+              <p className={ps.label}>{claim.category}</p>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
             </div>
-            <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{claim.claim}</p>
+            <p className={`${ps.value} leading-relaxed`}>{claim.claim}</p>
             {claim.notes && (
-              <p className="text-xs text-gray-500 dark:text-gray-400 border-t border-gray-100 dark:border-gray-700 pt-3">{claim.notes}</p>
+              <p className={`${ps.meta} border-t border-gray-100 dark:border-gray-700 pt-3`}>{claim.notes}</p>
             )}
           </div>
         );

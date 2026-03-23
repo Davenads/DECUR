@@ -10,6 +10,7 @@ import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import { ps } from './shared/profileStyles';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -39,25 +40,25 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
+        <h3 className={`${ps.h3} mb-2`}>Background</h3>
+        <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Service Period</p>
+          <p className={ps.value}>{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance (claimed)</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Clearance (claimed)</p>
+          <p className={ps.value}>{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Organizations</p>
+          <p className={ps.value}>{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
               <span key={r} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{r}</span>
@@ -67,10 +68,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Early Life &amp; Background</h3>
+        <h3 className={`${ps.h3} mb-3`}>Early Life &amp; Background</h3>
         <ul className="space-y-1.5">
           {profile.early_life.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -80,7 +81,7 @@ const OverviewTab: FC = () => {
 
       <div>
         <div className="flex items-center justify-between mb-3">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Key Events</h3>
+          <h3 className={ps.h3}>Key Events</h3>
           <Link
             href="/data?category=events&source=lazar"
             className="text-xs text-primary hover:underline flex items-center gap-1"
@@ -111,31 +112,31 @@ const FacilityTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{facility.name}</h3>
-        <p className="text-xs text-gray-400 mb-1">{facility.aliases.join(' · ')}</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">{facility.location}</p>
+        <h3 className={`${ps.h3} mb-1`}>{facility.name}</h3>
+        <p className={`${ps.muted} mb-1`}>{facility.aliases.join(' · ')}</p>
+        <p className={ps.bodyMuted}>{facility.location}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Access Method</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{facility.access}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Access Method</p>
+          <p className={ps.value}>{facility.access}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Hangar Bays</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{facility.hangar_count} bays, one craft per bay (claimed)</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Hangar Bays</p>
+          <p className={ps.value}>{facility.hangar_count} bays, one craft per bay (claimed)</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Construction</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{facility.construction}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Construction</p>
+          <p className={ps.value}>{facility.construction}</p>
         </div>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-2">Security Protocols</h4>
+        <h4 className={`${ps.h4} mb-2`}>Security Protocols</h4>
         <ul className="space-y-1.5">
           {facility.security.map((s, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-red-400 mt-0.5 shrink-0">■</span>
               <span>{s}</span>
             </li>
@@ -143,9 +144,9 @@ const FacilityTab: FC = () => {
         </ul>
       </div>
 
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+      <div className={ps.accentBox}>
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-2">Lazar&apos;s Account</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{facility.lazar_account}</p>
+        <p className={`${ps.body} leading-relaxed`}>{facility.lazar_account}</p>
       </div>
     </div>
   );
@@ -155,14 +156,14 @@ const CraftTab: FC = () => {
   const { crafts } = data;
   return (
     <div className="space-y-6">
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-        <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Total Craft at S-4</p>
+      <div className={ps.infoCard}>
+        <p className={`${ps.label} mb-1`}>Total Craft at S-4</p>
         <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">{crafts.total_count}</p>
         <p className="text-xs text-gray-500 mt-0.5">One per hangar bay, all described as disc-shaped</p>
       </div>
 
       <div>
-        <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-3">Primary Assignment</p>
+        <p className={`${ps.label} mb-3`}>Primary Assignment</p>
         <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium">
           {crafts.primary_studied}
         </div>
@@ -170,12 +171,12 @@ const CraftTab: FC = () => {
 
       <div className="space-y-4">
         {crafts.descriptions.map((craft, i) => (
-          <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+          <div key={i} className={ps.borderCardLg}>
             <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{craft.designation}</h4>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">{craft.description}</p>
+            <p className={`${ps.body} mb-3`}>{craft.description}</p>
             {craft.diameter_estimate && (
               <div className="flex items-center gap-2">
-                <span className="text-xs font-medium text-gray-400 uppercase tracking-wide">Diameter (claimed):</span>
+                <span className={ps.label}>Diameter (claimed):</span>
                 <span className="text-xs text-gray-700 dark:text-gray-300">{craft.diameter_estimate}</span>
               </div>
             )}
@@ -196,48 +197,48 @@ const PropulsionTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Overview</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{propulsion.overview}</p>
+        <h3 className={`${ps.h3} mb-2`}>Overview</h3>
+        <p className={`${ps.body} leading-relaxed`}>{propulsion.overview}</p>
       </div>
 
       {/* Element 115 */}
-      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+      <div className={ps.borderCardLg}>
         <div className="flex items-start justify-between gap-4 mb-3">
           <div>
             <h4 className="font-semibold text-gray-900 dark:text-gray-100">Fuel Source</h4>
-            <p className="text-xs text-gray-400 mt-0.5">{propulsion.fuel.element}</p>
+            <p className={`${ps.muted} mt-0.5`}>{propulsion.fuel.element}</p>
           </div>
           <span className="text-xs px-2 py-1 bg-amber-100 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 rounded-full font-medium shrink-0">
             Element 115
           </span>
         </div>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{propulsion.fuel.claim}</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{propulsion.fuel.context}</p>
+        <p className={`${ps.body} mb-2`}>{propulsion.fuel.claim}</p>
+        <p className={`${ps.bodyMuted} mb-2`}>{propulsion.fuel.context}</p>
         <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded p-3 mt-2">
           <p className="text-xs font-medium text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Significance</p>
-          <p className="text-sm text-gray-700 dark:text-gray-300">{propulsion.fuel.significance}</p>
+          <p className={ps.body}>{propulsion.fuel.significance}</p>
         </div>
       </div>
 
       {/* Reactor */}
-      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+      <div className={ps.borderCardLg}>
         <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Reactor</h4>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{propulsion.reactor.description}</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">{propulsion.reactor.output}</p>
+        <p className={`${ps.body} mb-2`}>{propulsion.reactor.description}</p>
+        <p className={ps.bodyMuted}>{propulsion.reactor.output}</p>
       </div>
 
       {/* Gravity Amplifiers */}
-      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+      <div className={ps.borderCardLg}>
         <div className="flex items-center gap-3 mb-3">
           <h4 className="font-semibold text-gray-900 dark:text-gray-100">Gravity Amplifiers</h4>
           <span className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">
             ×{propulsion.gravity_amplifiers.count}
           </span>
         </div>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+        <p className={`${ps.bodyMuted} mb-1`}>
           <span className="font-medium text-gray-700 dark:text-gray-300">Position:</span> {propulsion.gravity_amplifiers.position}
         </p>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{propulsion.gravity_amplifiers.function}</p>
+        <p className={`${ps.body} mb-4`}>{propulsion.gravity_amplifiers.function}</p>
 
         <h5 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Operating Modes</h5>
         <div className="space-y-2">
@@ -259,7 +260,7 @@ const PropulsionTab: FC = () => {
                 </button>
                 {isOpen && (
                   <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700">
-                    <p className="text-sm text-gray-700 dark:text-gray-300 pt-3 mb-2">{mode.description}</p>
+                    <p className={`${ps.body} pt-3 mb-2`}>{mode.description}</p>
                     {mode.notes && <p className="text-xs text-gray-500 italic">{mode.notes}</p>}
                   </div>
                 )}
@@ -272,12 +273,12 @@ const PropulsionTab: FC = () => {
       {/* Space-Time */}
       <div className="bg-purple-50 dark:bg-purple-900/20 border border-purple-100 dark:border-purple-800/30 rounded-lg p-4">
         <p className="text-xs font-medium text-purple-700 dark:text-purple-400 uppercase tracking-wide mb-1">Space-Time Distortion</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{propulsion.space_time_distortion}</p>
+        <p className={ps.body}>{propulsion.space_time_distortion}</p>
       </div>
 
-      <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-        <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Hull Glow Explanation</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{propulsion.glow_explanation}</p>
+      <div className={ps.infoCard}>
+        <p className={`${ps.label} mb-1`}>Hull Glow Explanation</p>
+        <p className={ps.body}>{propulsion.glow_explanation}</p>
       </div>
     </div>
   );
@@ -323,16 +324,16 @@ const ClaimsTab: FC = () => {
         {filtered.map(claim => {
           const cfg = statusConfig[claim.status] ?? statusConfig['unverified'];
           return (
-            <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+            <div key={claim.id} className={ps.borderCard}>
               <div className="flex items-start justify-between gap-3 mb-2">
-                <p className="text-xs font-medium text-gray-400 uppercase tracking-wide capitalize">
+                <p className={`${ps.label} capitalize`}>
                   {claim.category.replace(/-/g, ' ')}
                 </p>
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>
                   {cfg.label}
                 </span>
               </div>
-              <p className="text-sm text-gray-800 dark:text-gray-200 mb-2">{claim.claim}</p>
+              <p className={`${ps.value} mb-2`}>{claim.claim}</p>
               {claim.notes && (
                 <p className="text-xs text-gray-500 italic border-t border-gray-100 dark:border-gray-700 pt-2">{claim.notes}</p>
               )}

@@ -7,6 +7,7 @@ import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import PersonCard from './shared/PersonCard';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
+import { ps } from './shared/profileStyles';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -31,25 +32,25 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
+        <h3 className={`${ps.h3} mb-2`}>Background</h3>
+        <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Service Period</p>
+          <p className={ps.value}>{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Clearance</p>
+          <p className={ps.value}>{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Organizations</p>
+          <p className={ps.value}>{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
               <span key={r} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{r}</span>
@@ -59,10 +60,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Career Background</h3>
+        <h3 className={`${ps.h3} mb-3`}>Career Background</h3>
         <ul className="space-y-1.5">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -71,14 +72,14 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Events</h3>
-        <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
+        <h3 className={`${ps.h3} mb-3`}>Key Events</h3>
+        <div className={`${ps.timelineLine} space-y-4`}>
           {profile.key_events.map((ev, i) => (
             <div key={i} className="relative">
               <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
               <div className="flex items-start gap-3">
                 <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.date}</span>
-                <span className="text-sm text-gray-700 dark:text-gray-300">{ev.event}</span>
+                <span className={ps.body}>{ev.event}</span>
               </div>
             </div>
           ))}
@@ -92,9 +93,9 @@ const DisclosureTab: FC = () => {
   const { disclosures } = data;
   return (
     <div className="space-y-6">
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+      <div className={ps.accentBoxLg}>
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Disclosure Context</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p className={`${ps.body} leading-relaxed`}>
           Jake Barber's public disclosure was made through investigative journalist Ross Coulthart of NewsNation.
           Unlike institutional whistleblowers such as David Grusch who filed formal ICIG complaints, Barber chose
           a direct media path — providing operational details, corroborating witnesses, and previously unseen video
@@ -103,13 +104,13 @@ const DisclosureTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">Public Disclosures</h3>
+        <h3 className={`${ps.h3} mb-4`}>Public Disclosures</h3>
         <div className="space-y-4">
           {disclosures.map((d, i) => (
-            <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+            <div key={i} className={ps.borderCardLg}>
               <div className="flex items-start justify-between gap-3 mb-2">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{d.title}</h4>
+                  <h4 className={ps.h4Inline}>{d.title}</h4>
                   <p className="text-xs text-primary mt-0.5">{d.outlet}</p>
                 </div>
                 <span className="font-mono text-xs text-gray-400 shrink-0">{d.date}</span>
@@ -130,7 +131,7 @@ const DisclosureTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Associated People</h3>
+        <h3 className={`${ps.h3} mb-3`}>Associated People</h3>
         <div className="space-y-3">
           {data.associated_people.map(person => (
             <PersonCard key={person.id} person={person} />
@@ -149,12 +150,12 @@ const ClaimsTab: FC = () => {
       {claims.map(claim => {
         const cfg = statusConfig[claim.status] ?? { label: claim.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
         return (
-          <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
+          <div key={claim.id} className={`${ps.borderCardLg} space-y-3`}>
             <div className="flex items-start justify-between gap-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{claim.category}</p>
+              <p className={ps.label}>{claim.category}</p>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
             </div>
-            <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{claim.claim}</p>
+            <p className={`${ps.value} leading-relaxed`}>{claim.claim}</p>
             {claim.notes && (
               <p className="text-xs text-gray-500 border-t border-gray-100 dark:border-gray-700 pt-3">{claim.notes}</p>
             )}
@@ -168,8 +169,8 @@ const ClaimsTab: FC = () => {
 const EvidenceTab: FC = () => (
   <div className="space-y-6">
     <div>
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Retrieval Video Footage</h3>
-      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
+      <h3 className={`${ps.h3} mb-2`}>Retrieval Video Footage</h3>
+      <p className={`${ps.body} leading-relaxed mb-3`}>
         Barber provided NewsNation with video footage of a UAP retrieval operation involving an egg-shaped white object.
         The footage was described by NewsNation as never-before-seen operational footage — the first time video of an
         alleged crash/retrieval operation has been broadcast in the modern disclosure era. The footage was partially
@@ -186,8 +187,8 @@ const EvidenceTab: FC = () => (
     </div>
 
     <div>
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">On-Camera Corroboration</h3>
-      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
+      <h3 className={`${ps.h3} mb-3`}>On-Camera Corroboration</h3>
+      <p className={`${ps.body} leading-relaxed mb-3`}>
         Three additional high-level military veterans appeared on camera during the NewsNation special to corroborate
         Barber's account. This is a qualitatively different form of corroboration than secondhand references — these
         individuals placed their identities and careers on the record in the same broadcast.
@@ -202,8 +203,8 @@ const EvidenceTab: FC = () => (
     </div>
 
     <div>
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Pentagon Investigation</h3>
-      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+      <h3 className={`${ps.h3} mb-2`}>Pentagon Investigation</h3>
+      <p className={`${ps.body} leading-relaxed`}>
         Following the January 18 broadcast, the Pentagon confirmed it had opened a formal investigation into Barber's
         claims. This institutional response — while not a confirmation of the program — is more direct than the
         Pentagon's typical response to UAP whistleblower disclosures, which historically has been no comment or

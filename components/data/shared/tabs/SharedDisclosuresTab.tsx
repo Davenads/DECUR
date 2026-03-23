@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { ps } from '../profileStyles';
 
 interface Disclosure {
   date: string;
@@ -80,7 +81,7 @@ const SharedDisclosuresTab: FC<SharedDisclosuresTabProps> = ({
       <div className="space-y-3">
         {introText && <p className="text-sm text-gray-500">{introText}</p>}
         {disclosures.map((d, i) => (
-          <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <div key={i} className={ps.borderCard}>
             <div className="flex items-start gap-3">
               <span className="font-mono text-xs text-gray-400 whitespace-nowrap mt-0.5">{d.date}</span>
               <div className="flex-1 min-w-0">
@@ -144,11 +145,11 @@ const SharedDisclosuresTab: FC<SharedDisclosuresTabProps> = ({
         </div>
       )}
 
-      <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
+      <div className={`${ps.timelineLine} space-y-4`}>
         {disclosures.map((d, i) => (
           <div key={i} className="relative">
             <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
-            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+            <div className={ps.borderCard}>
               <div className="flex items-start justify-between gap-3 mb-1">
                 <div>
                   {d.title && <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{d.title}</h4>}

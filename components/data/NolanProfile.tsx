@@ -8,6 +8,7 @@ import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import { ps } from './shared/profileStyles';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -36,25 +37,25 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
+        <h3 className={`${ps.h3} mb-2`}>Background</h3>
+        <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Service Period</p>
+          <p className={ps.value}>{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Clearance</p>
+          <p className={ps.value}>{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Organizations</p>
+          <p className={ps.value}>{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
               <span key={r} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{r}</span>
@@ -64,10 +65,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Education</h3>
+        <h3 className={`${ps.h3} mb-3`}>Education</h3>
         <ul className="space-y-1.5">
           {profile.education.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -76,10 +77,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Early Career</h3>
+        <h3 className={`${ps.h3} mb-3`}>Early Career</h3>
         <ul className="space-y-1.5">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -88,7 +89,7 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Events</h3>
+        <h3 className={`${ps.h3} mb-3`}>Key Events</h3>
         <div className="space-y-2">
           {profile.key_events.map((ev, i) => (
             <div key={i} className="flex gap-3 text-sm">
@@ -114,47 +115,47 @@ const ResearchTab: FC = () => {
           <span className="w-1 h-5 bg-primary rounded-full" />
           <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">CIA Consultation — Brain Morphology Study</h3>
         </div>
-        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-4">
+        <div className={`${ps.borderCardLg} space-y-4`}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Period</p>
-              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.period}</p>
+              <p className={`${ps.label} mb-0.5`}>Period</p>
+              <p className={ps.value}>{cia.period}</p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Referring Agency</p>
-              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.referring_agency}</p>
+              <p className={`${ps.label} mb-0.5`}>Referring Agency</p>
+              <p className={ps.value}>{cia.referring_agency}</p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Subject Count</p>
-              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.subject_count}</p>
+              <p className={`${ps.label} mb-0.5`}>Subject Count</p>
+              <p className={ps.value}>{cia.subject_count}</p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">Method</p>
-              <p className="text-sm text-gray-800 dark:text-gray-200">{cia.method}</p>
+              <p className={`${ps.label} mb-0.5`}>Method</p>
+              <p className={ps.value}>{cia.method}</p>
             </div>
           </div>
 
           <div>
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Subject Profile</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.subject_profile}</p>
+            <p className={`${ps.label} mb-1`}>Subject Profile</p>
+            <p className={ps.body}>{cia.subject_profile}</p>
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded-lg p-4">
             <p className="text-xs font-medium text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Key Finding</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.key_finding}</p>
+            <p className={ps.body}>{cia.key_finding}</p>
           </div>
 
-          <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+          <div className={ps.accentBox}>
             <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Nolan Hypothesis</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.nolan_hypothesis}</p>
+            <p className={ps.body}>{cia.nolan_hypothesis}</p>
           </div>
 
           <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800/30 rounded-lg p-4">
             <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Adverse Outcomes</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{cia.adverse_outcomes}</p>
+            <p className={ps.body}>{cia.adverse_outcomes}</p>
           </div>
 
-          <p className="text-xs text-gray-400 italic">{cia.classification_status}</p>
+          <p className={`${ps.muted} italic`}>{cia.classification_status}</p>
         </div>
       </div>
 
@@ -166,13 +167,13 @@ const ResearchTab: FC = () => {
         </div>
         <div className="space-y-4">
           {publications.map((pub, i) => (
-            <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+            <div key={i} className={ps.borderCardLg}>
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-0.5">{pub.title}</p>
-                  <p className="text-xs text-gray-400 mb-1">{pub.journal} · {pub.year}</p>
+                  <p className={`${ps.h4Inline} mb-0.5`}>{pub.title}</p>
+                  <p className={`${ps.muted} mb-1`}>{pub.journal} · {pub.year}</p>
                   <p className="text-xs text-gray-500 mb-3">Co-authors: {pub.co_authors.join(', ')}</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">{pub.significance}</p>
+                  <p className={ps.body}>{pub.significance}</p>
                 </div>
                 <a
                   href={pub.url}
@@ -194,17 +195,17 @@ const ResearchTab: FC = () => {
           <span className="w-1 h-5 bg-primary rounded-full" />
           <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">Materials Analysis</h3>
         </div>
-        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
-          <p className="text-sm text-gray-700 dark:text-gray-300">{mat.description}</p>
+        <div className={`${ps.borderCardLg} space-y-3`}>
+          <p className={ps.body}>{mat.description}</p>
           <div className="bg-gray-50 dark:bg-gray-800 rounded p-3">
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Methods Used</p>
-            <p className="text-sm text-gray-800 dark:text-gray-200">{mat.methods_used}</p>
+            <p className={`${ps.label} mb-1`}>Methods Used</p>
+            <p className={ps.value}>{mat.methods_used}</p>
           </div>
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-3">
             <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Public Statements</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{mat.public_statements}</p>
+            <p className={ps.body}>{mat.public_statements}</p>
           </div>
-          <p className="text-xs text-gray-400 italic">{mat.classification_note}</p>
+          <p className={`${ps.muted} italic`}>{mat.classification_note}</p>
         </div>
       </div>
 
@@ -216,36 +217,36 @@ const SolTab: FC = () => {
   const { sol_foundation: sol } = data;
   return (
     <div className="space-y-5">
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+      <div className={ps.accentBoxLg}>
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Organization</p>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{sol.full_name}</h3>
-        <p className="text-xs text-gray-400">{sol.affiliation} · Est. {sol.established}</p>
+        <h3 className={`${ps.h3} mb-0.5`}>{sol.full_name}</h3>
+        <p className={ps.muted}>{sol.affiliation} · Est. {sol.established}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Nolan Role</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{sol.nolan_role}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Nolan Role</p>
+          <p className={ps.value}>{sol.nolan_role}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Co-Founders</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{sol.co_founders.join(', ')}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Co-Founders</p>
+          <p className={ps.value}>{sol.co_founders.join(', ')}</p>
         </div>
       </div>
 
       <div>
-        <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Mission</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{sol.mission}</p>
+        <p className={`${ps.label} mb-1`}>Mission</p>
+        <p className={ps.body}>{sol.mission}</p>
       </div>
 
-      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+      <div className={ps.borderCard}>
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Inaugural Symposium</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{sol.inaugural_symposium}</p>
+        <p className={ps.body}>{sol.inaugural_symposium}</p>
       </div>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded-lg p-4">
         <p className="text-xs font-medium text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Significance</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{sol.significance}</p>
+        <p className={ps.body}>{sol.significance}</p>
       </div>
     </div>
   );
@@ -259,14 +260,14 @@ const ClaimsTab: FC = () => {
       {claims.map(c => {
         const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
         return (
-          <div key={c.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
+          <div key={c.id} className={`${ps.borderCardLg} space-y-3`}>
             <div className="flex items-start justify-between gap-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{c.category}</p>
+              <p className={ps.label}>{c.category}</p>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>
                 {cfg.label}
               </span>
             </div>
-            <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{c.claim}</p>
+            <p className={`${ps.value} leading-relaxed`}>{c.claim}</p>
             {c.notes && <p className="text-xs text-gray-500 border-t border-gray-100 dark:border-gray-700 pt-3">{c.notes}</p>}
           </div>
         );

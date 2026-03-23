@@ -2,6 +2,7 @@ import { FC, useState } from 'react';
 import dynamic from 'next/dynamic';
 import gruschData from '../../data/key-figures/grusch.json';
 import ProfileShell from './shared/ProfileShell';
+import { ps } from './shared/profileStyles';
 import ClaimsStatusBar from './shared/ClaimsStatusBar';
 import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
@@ -35,13 +36,13 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 space-y-1">
+        <div className={`${ps.infoCard} space-y-1`}>
           <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">Service Period</p>
-          <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">{profile.service_period}</p>
+          <p className={`font-semibold ${ps.value}`}>{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 space-y-1">
+        <div className={`${ps.infoCard} space-y-1`}>
           <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">Clearance</p>
-          <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">{profile.clearance}</p>
+          <p className={`font-semibold ${ps.value}`}>{profile.clearance}</p>
         </div>
       </div>
 
@@ -50,10 +51,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Education</h4>
+        <h4 className={`${ps.h4} mb-3`}>Education</h4>
         <ul className="space-y-1.5">
           {profile.education.map((e, i) => (
-            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
+            <li key={i} className={`${ps.body} flex gap-2`}>
               <span className="text-gray-300 mt-0.5 shrink-0">›</span>{e}
             </li>
           ))}
@@ -61,7 +62,7 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Organizations</h4>
+        <h4 className={`${ps.h4} mb-3`}>Organizations</h4>
         <div className="flex flex-wrap gap-1.5">
           {profile.organizations.map((o, i) => (
             <span key={i} className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2.5 py-1 rounded-full">{o}</span>
@@ -70,13 +71,13 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Career Timeline</h4>
+        <h4 className={`${ps.h4} mb-3`}>Career Timeline</h4>
         <div className="relative pl-5 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
           {profile.key_events.map((e, i) => (
             <div key={i} className="relative">
               <div className="absolute -left-[1.4rem] top-1 w-2.5 h-2.5 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
               <p className="text-xs font-mono text-gray-400 mb-0.5">{e.date}</p>
-              <p className="text-sm text-gray-700 dark:text-gray-300">{e.event}</p>
+              <p className={ps.body}>{e.event}</p>
             </div>
           ))}
         </div>
@@ -116,16 +117,16 @@ const ClaimsTab: FC = () => {
         {filtered.map(claim => {
           const cfg = statusConfig[claim.status] ?? statusConfig['unverified'];
           return (
-            <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+            <div key={claim.id} className={ps.borderCard}>
               <div className="flex items-start justify-between gap-3 mb-2">
-                <p className="text-xs font-medium text-gray-400 uppercase tracking-wide capitalize">
+                <p className={`${ps.label} capitalize`}>
                   {claim.category.replace(/-/g, ' ')}
                 </p>
                 <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>
                   {cfg.label}
                 </span>
               </div>
-              <p className="text-sm text-gray-800 dark:text-gray-200 mb-2">{claim.claim}</p>
+              <p className={`${ps.value} mb-2`}>{claim.claim}</p>
               {claim.notes && (
                 <p className="text-xs text-gray-500 italic border-t border-gray-100 dark:border-gray-700 pt-2">{claim.notes}</p>
               )}
@@ -153,8 +154,8 @@ const LegislativeTab: FC = () => {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">UAP Disclosure Act</h4>
-        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-3">
+        <h4 className={`${ps.h4} mb-3`}>UAP Disclosure Act</h4>
+        <div className={`${ps.borderCard} space-y-3`}>
           <div className="flex items-center justify-between flex-wrap gap-2">
             <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">Schumer-Rounds UAP Disclosure Act</p>
             <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">Partially enacted</span>
@@ -173,34 +174,34 @@ const LegislativeTab: FC = () => {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">2024 NDAA Provisions</h4>
-        <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+        <h4 className={`${ps.h4} mb-3`}>2024 NDAA Provisions</h4>
+        <div className={ps.borderCard}>
           <p className="text-xs text-gray-400 mb-1">Enacted {legislative_impact.ndaa_2024.enacted}</p>
-          <p className="text-sm text-gray-700 dark:text-gray-300">{legislative_impact.ndaa_2024.provisions}</p>
+          <p className={ps.body}>{legislative_impact.ndaa_2024.provisions}</p>
         </div>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Government Response</h4>
+        <h4 className={`${ps.h4} mb-3`}>Government Response</h4>
         <div className="space-y-3">
-          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <div className={ps.borderCard}>
             <div className="flex items-start justify-between gap-3 mb-2">
               <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">AARO Historical Record Report</p>
               <span className="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-medium shrink-0">Contradicts</span>
             </div>
             <p className="text-xs text-gray-400 mb-1">Released {government_response.aaro_historical_report.released}</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{government_response.aaro_historical_report.conclusion}</p>
+            <p className={`${ps.body} mb-2`}>{government_response.aaro_historical_report.conclusion}</p>
             <p className="text-xs text-gray-500 italic border-t border-gray-100 dark:border-gray-700 pt-2">
               KONA BLUE: {government_response.aaro_historical_report.kona_blue_finding}
             </p>
           </div>
-          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <div className={ps.borderCard}>
             <div className="flex items-start justify-between gap-3 mb-2">
               <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">ICIG Assessment</p>
               <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium shrink-0">Supports</span>
             </div>
             <p className="text-xs text-gray-400 mb-1">{government_response.icig_assessment.assessor}</p>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{government_response.icig_assessment.finding}</p>
+            <p className={ps.body}>{government_response.icig_assessment.finding}</p>
             <p className="text-xs text-gray-500 italic border-t border-gray-100 dark:border-gray-700 pt-2 mt-2">{government_response.icig_assessment.action}</p>
           </div>
         </div>
@@ -239,7 +240,7 @@ const GruschProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
         const careerConnections = (data as any).career_connections ?? [];
         return (
           <div className="space-y-4">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className={ps.bodyMuted}>
               Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
             </p>
             <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />

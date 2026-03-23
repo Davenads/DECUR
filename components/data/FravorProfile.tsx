@@ -7,6 +7,7 @@ import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import { ps } from './shared/profileStyles';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -34,25 +35,25 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
+        <h3 className={`${ps.h3} mb-2`}>Background</h3>
+        <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Service Period</p>
+          <p className={ps.value}>{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Clearance</p>
+          <p className={ps.value}>{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Organizations</p>
+          <p className={ps.value}>{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
               <span key={r} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{r}</span>
@@ -62,10 +63,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Career Background</h3>
+        <h3 className={`${ps.h3} mb-3`}>Career Background</h3>
         <ul className="space-y-1.5">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -74,14 +75,14 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Events</h3>
-        <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
+        <h3 className={`${ps.h3} mb-3`}>Key Events</h3>
+        <div className={`${ps.timelineLine} space-y-4`}>
           {profile.key_events.map((ev, i) => (
             <div key={i} className="relative">
               <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
               <div className="flex items-start gap-3">
                 <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.date}</span>
-                <span className="text-sm text-gray-700 dark:text-gray-300">{ev.event}</span>
+                <span className={ps.body}>{ev.event}</span>
               </div>
             </div>
           ))}
@@ -95,45 +96,45 @@ const EncounterTab: FC = () => {
   const { encounter } = data;
   return (
     <div className="space-y-6">
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+      <div className={ps.accentBoxLg}>
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Primary Incident</p>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">The Tic Tac Encounter</h3>
-        <p className="text-xs text-gray-400">{encounter.date} · {encounter.location}</p>
+        <h3 className={`${ps.h3} mb-1`}>The Tic Tac Encounter</h3>
+        <p className={ps.muted}>{encounter.date} · {encounter.location}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Vessel</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{encounter.vessel}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Vessel</p>
+          <p className={ps.value}>{encounter.vessel}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Aircraft</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{encounter.fravor_aircraft}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Aircraft</p>
+          <p className={ps.value}>{encounter.fravor_aircraft}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Detection Platform</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{encounter.detection_platform}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Detection Platform</p>
+          <p className={ps.value}>{encounter.detection_platform}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Prior Radar Tracking</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{encounter.prior_tracking}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Prior Radar Tracking</p>
+          <p className={ps.value}>{encounter.prior_tracking}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Wingman / Second Crew</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{encounter.wingman}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Wingman / Second Crew</p>
+          <p className={ps.value}>{encounter.wingman}</p>
         </div>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Object Description</h4>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{encounter.object_description}</p>
+        <h4 className={`${ps.h4} mb-3`}>Object Description</h4>
+        <p className={`${ps.body} leading-relaxed`}>{encounter.object_description}</p>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Observed Behavior</h4>
+        <h4 className={`${ps.h4} mb-3`}>Observed Behavior</h4>
         <ul className="space-y-2">
           {encounter.observed_behavior.map((b, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{b}</span>
             </li>
@@ -147,7 +148,7 @@ const EncounterTab: FC = () => {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Witnesses</h4>
+        <h4 className={`${ps.h4} mb-3`}>Witnesses</h4>
         <div className="flex flex-wrap gap-1.5">
           {encounter.witnesses.map((w, i) => (
             <span key={i} className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">{w}</span>
@@ -166,12 +167,12 @@ const ClaimsTab: FC = () => {
       {claims.map(claim => {
         const cfg = statusConfig[claim.status] ?? { label: claim.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
         return (
-          <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
+          <div key={claim.id} className={`${ps.borderCardLg} space-y-3`}>
             <div className="flex items-start justify-between gap-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{claim.category}</p>
+              <p className={ps.label}>{claim.category}</p>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
             </div>
-            <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{claim.claim}</p>
+            <p className={`${ps.value} leading-relaxed`}>{claim.claim}</p>
             {claim.notes && (
               <p className="text-xs text-gray-500 border-t border-gray-100 dark:border-gray-700 pt-3">{claim.notes}</p>
             )}
@@ -187,8 +188,8 @@ const EvidenceTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">FLIR1 "Tic Tac" Video</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
+        <h3 className={`${ps.h3} mb-2`}>FLIR1 "Tic Tac" Video</h3>
+        <p className={`${ps.body} leading-relaxed mb-3`}>
           The FLIR1 video — commonly called the "Tic Tac video" — was captured on November 14, 2004 by Lt. Chad Underwood
           aboard a separate F/A-18 on a different contact in the same exercise area. Fravor was not present for the filming.
           The Pentagon officially confirmed the footage as authentic Navy gun-camera footage of unidentified aerial phenomena in April 2019.
@@ -200,8 +201,8 @@ const EvidenceTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Radar Tracking</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-3">
+        <h3 className={`${ps.h3} mb-2`}>Radar Tracking</h3>
+        <p className={`${ps.body} leading-relaxed mb-3`}>
           USS Princeton's AN/SPY-1B Aegis Combat System — among the most advanced radar systems in the U.S. fleet —
           tracked unidentified objects for approximately two weeks before the November 14 visual intercept. The objects
           were observed descending from 80,000 feet to near sea-level and returning.
@@ -216,30 +217,30 @@ const EvidenceTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Witness Accounts</h3>
+        <h3 className={`${ps.h3} mb-3`}>Witness Accounts</h3>
         <div className="space-y-3">
-          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-1">Commander David Fravor (Primary)</h4>
-            <p className="text-sm text-gray-700 dark:text-gray-300">Observed the object visually from his F/A-18F cockpit. Attempted to intercept; the object mirrored his movements, then accelerated beyond visual range instantaneously. Consistent testimony across six years of public interviews.</p>
+          <div className={ps.borderCard}>
+            <h4 className={`${ps.h4Inline} mb-1`}>Commander David Fravor (Primary)</h4>
+            <p className={ps.body}>Observed the object visually from his F/A-18F cockpit. Attempted to intercept; the object mirrored his movements, then accelerated beyond visual range instantaneously. Consistent testimony across six years of public interviews.</p>
           </div>
-          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-1">Lt. Commander Jim Slaight (Wingman)</h4>
-            <p className="text-sm text-gray-700 dark:text-gray-300">Fravor's wingman in the first aircraft. Corroborated the encounter in interviews and congressional record.</p>
+          <div className={ps.borderCard}>
+            <h4 className={`${ps.h4Inline} mb-1`}>Lt. Commander Jim Slaight (Wingman)</h4>
+            <p className={ps.body}>Fravor's wingman in the first aircraft. Corroborated the encounter in interviews and congressional record.</p>
           </div>
-          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-1">Lt. Commander Alex Dietrich (Second Aircraft Pilot)</h4>
-            <p className="text-sm text-gray-700 dark:text-gray-300">Piloted the second F/A-18. Went on the record publicly for the first time in a 2021 60 Minutes interview, corroborating the encounter from her own vantage point.</p>
+          <div className={ps.borderCard}>
+            <h4 className={`${ps.h4Inline} mb-1`}>Lt. Commander Alex Dietrich (Second Aircraft Pilot)</h4>
+            <p className={ps.body}>Piloted the second F/A-18. Went on the record publicly for the first time in a 2021 60 Minutes interview, corroborating the encounter from her own vantage point.</p>
           </div>
-          <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-            <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-1">USS Princeton CIC Radar Operators</h4>
-            <p className="text-sm text-gray-700 dark:text-gray-300">Tracked the anomalous contacts on the Aegis radar system. Reported the object's return to the CAP point within seconds of Fravor's intercept attempt — approximately 60 miles in under 2 seconds.</p>
+          <div className={ps.borderCard}>
+            <h4 className={`${ps.h4Inline} mb-1`}>USS Princeton CIC Radar Operators</h4>
+            <p className={ps.body}>Tracked the anomalous contacts on the Aegis radar system. Reported the object's return to the CAP point within seconds of Fravor's intercept attempt — approximately 60 miles in under 2 seconds.</p>
           </div>
         </div>
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Congressional Record</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+        <h3 className={`${ps.h3} mb-2`}>Congressional Record</h3>
+        <p className={`${ps.body} leading-relaxed`}>
           The Nimitz encounter is referenced in closed-door classified briefings released in transcript form by Congress in
           December 2023, situating it within the broader program context described by other witnesses. Fravor's July 26, 2023
           sworn testimony before the House Oversight Subcommittee is part of the official congressional record.
@@ -248,7 +249,7 @@ const EvidenceTab: FC = () => {
 
       <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Detection Platform</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{encounter.detection_platform}</p>
+        <p className={ps.body}>{encounter.detection_platform}</p>
       </div>
     </div>
   );

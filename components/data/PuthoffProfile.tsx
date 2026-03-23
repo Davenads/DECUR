@@ -8,6 +8,7 @@ import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import { ps } from './shared/profileStyles';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -37,25 +38,25 @@ const OverviewTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">Background</h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
+        <h3 className={`${ps.h3} mb-2`}>Background</h3>
+        <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Service Period</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.service_period}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Service Period</p>
+          <p className={ps.value}>{profile.service_period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Clearance</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.clearance}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Clearance</p>
+          <p className={ps.value}>{profile.clearance}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Organizations</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{profile.organizations.join(' · ')}</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Organizations</p>
+          <p className={ps.value}>{profile.organizations.join(' · ')}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 sm:col-span-2">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Roles</p>
+        <div className={`${ps.infoCard} sm:col-span-2`}>
+          <p className={`${ps.label} mb-1`}>Roles</p>
           <div className="flex flex-wrap gap-1.5 mt-1">
             {profile.roles.map(r => (
               <span key={r} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{r}</span>
@@ -65,10 +66,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Education</h3>
+        <h3 className={`${ps.h3} mb-3`}>Education</h3>
         <ul className="space-y-1.5">
           {profile.education.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -77,10 +78,10 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Early Career</h3>
+        <h3 className={`${ps.h3} mb-3`}>Early Career</h3>
         <ul className="space-y-1.5">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{item}</span>
             </li>
@@ -89,7 +90,7 @@ const OverviewTab: FC = () => {
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Events</h3>
+        <h3 className={`${ps.h3} mb-3`}>Key Events</h3>
         <div className="space-y-2">
           {profile.key_events.map((ev, i) => (
             <div key={i} className="flex gap-3 text-sm">
@@ -107,36 +108,36 @@ const StargateTab: FC = () => {
   const { stargate } = data;
   return (
     <div className="space-y-6">
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+      <div className={ps.accentBoxLg}>
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Program</p>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{stargate.official_name}</h3>
-        <p className="text-xs text-gray-400">{stargate.period} · {stargate.funding_agencies.join(', ')}</p>
+        <h3 className={`${ps.h3} mb-0.5`}>{stargate.official_name}</h3>
+        <p className={ps.muted}>{stargate.period} · {stargate.funding_agencies.join(', ')}</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Puthoff Role</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{stargate.puthoff_role}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Puthoff Role</p>
+          <p className={ps.value}>{stargate.puthoff_role}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Budget (est.)</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{stargate.budget}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Budget (est.)</p>
+          <p className={ps.value}>{stargate.budget}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Location</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{stargate.location}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Location</p>
+          <p className={ps.value}>{stargate.location}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Predecessor Programs</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{stargate.predecessor_programs.join(' · ')}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Predecessor Programs</p>
+          <p className={ps.value}>{stargate.predecessor_programs.join(' · ')}</p>
         </div>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Principal Viewers</h4>
+        <h4 className={`${ps.h4} mb-3`}>Principal Viewers</h4>
         <ul className="space-y-2">
           {stargate.principal_viewers.map((v, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{v}</span>
             </li>
@@ -145,10 +146,10 @@ const StargateTab: FC = () => {
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Key Findings</h4>
+        <h4 className={`${ps.h4} mb-3`}>Key Findings</h4>
         <div className="space-y-2">
           {stargate.key_findings.map((f, i) => (
-            <div key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+            <div key={i} className={`${ps.listItem} bg-gray-50 dark:bg-gray-800 rounded-lg p-3`}>
               <span className="text-primary mt-0.5 shrink-0">›</span>
               <span>{f}</span>
             </div>
@@ -156,19 +157,19 @@ const StargateTab: FC = () => {
         </div>
       </div>
 
-      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+      <div className={ps.borderCard}>
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Declassification</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{stargate.declassification}</p>
+        <p className={ps.body}>{stargate.declassification}</p>
       </div>
 
-      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+      <div className={ps.borderCard}>
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">AIR Review (1995)</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{stargate.air_review}</p>
+        <p className={ps.body}>{stargate.air_review}</p>
       </div>
 
       <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800/30 rounded-lg p-4">
         <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Controversy</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{stargate.controversy}</p>
+        <p className={ps.body}>{stargate.controversy}</p>
       </div>
     </div>
   );
@@ -180,36 +181,36 @@ const DirdsTab: FC = () => {
   return (
     <div className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Program</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{dirds.program}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Program</p>
+          <p className={ps.value}>{dirds.program}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Period</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{dirds.period}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Period</p>
+          <p className={ps.value}>{dirds.period}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Contracting Agency</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{dirds.contracting_agency}</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Contracting Agency</p>
+          <p className={ps.value}>{dirds.contracting_agency}</p>
         </div>
-        <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Puthoff Authored</p>
-          <p className="text-sm text-gray-800 dark:text-gray-200">{dirds.puthoff_authored} of {dirds.total_dirds} total</p>
+        <div className={ps.infoCard}>
+          <p className={`${ps.label} mb-1`}>Puthoff Authored</p>
+          <p className={ps.value}>{dirds.puthoff_authored} of {dirds.total_dirds} total</p>
         </div>
       </div>
 
       <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/30 rounded-lg p-4">
         <p className="text-xs font-medium text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Significance</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{dirds.significance}</p>
+        <p className={ps.body}>{dirds.significance}</p>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Key Documents</h4>
+        <h4 className={`${ps.h4} mb-3`}>Key Documents</h4>
         <div className="space-y-2">
           {dirds.documents.map((doc, i) => {
             const isOpen = expanded === i;
             return (
-              <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+              <div key={i} className={ps.borderCardNoP}>
                 <button
                   onClick={() => setExpanded(isOpen ? null : i)}
                   className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
@@ -225,7 +226,7 @@ const DirdsTab: FC = () => {
                 {isOpen && (
                   <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700 pt-3 space-y-2">
                     <p className="text-xs text-gray-500"><span className="font-medium">Author:</span> {doc.author}</p>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">{doc.significance}</p>
+                    <p className={ps.body}>{doc.significance}</p>
                   </div>
                 )}
               </div>
@@ -242,23 +243,23 @@ const PhysicsTab: FC = () => {
   const [expanded, setExpanded] = useState<number | null>(0);
   return (
     <div className="space-y-5">
-      <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+      <div className={ps.accentBox}>
         <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Primary Focus</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{phys.primary_focus}</p>
+        <p className={ps.body}>{phys.primary_focus}</p>
       </div>
 
-      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+      <div className={ps.borderCard}>
         <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">EarthTech Mission</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300">{phys.earthtech_mission}</p>
+        <p className={ps.body}>{phys.earthtech_mission}</p>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Key Theories</h4>
+        <h4 className={`${ps.h4} mb-3`}>Key Theories</h4>
         <div className="space-y-2">
           {phys.key_theories.map((theory, i) => {
             const isOpen = expanded === i;
             return (
-              <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+              <div key={i} className={ps.borderCardNoP}>
                 <button
                   onClick={() => setExpanded(isOpen ? null : i)}
                   className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
@@ -273,7 +274,7 @@ const PhysicsTab: FC = () => {
                 </button>
                 {isOpen && (
                   <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700 pt-3">
-                    <p className="text-sm text-gray-700 dark:text-gray-300">{theory.description}</p>
+                    <p className={ps.body}>{theory.description}</p>
                   </div>
                 )}
               </div>
@@ -282,7 +283,7 @@ const PhysicsTab: FC = () => {
         </div>
       </div>
 
-      <p className="text-xs text-gray-400 italic">{phys.publications_note}</p>
+      <p className={`${ps.muted} italic`}>{phys.publications_note}</p>
     </div>
   );
 };
@@ -295,12 +296,12 @@ const ClaimsTab: FC = () => {
       {claims.map(c => {
         const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
         return (
-          <div key={c.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
+          <div key={c.id} className={`${ps.borderCardLg} space-y-3`}>
             <div className="flex items-start justify-between gap-3">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{c.category}</p>
+              <p className={ps.label}>{c.category}</p>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
             </div>
-            <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{c.claim}</p>
+            <p className={`${ps.value} leading-relaxed`}>{c.claim}</p>
             {c.notes && <p className="text-xs text-gray-500 border-t border-gray-100 dark:border-gray-700 pt-3">{c.notes}</p>}
           </div>
         );
