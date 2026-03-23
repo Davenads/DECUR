@@ -23,6 +23,24 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
   const onBack = () => router.push(exploreBack ? exploreBack.href : '/data?category=cases');
   const backLabel = exploreBack ? exploreBack.label : 'Cases';
 
+  const eventSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: caseEntry.name,
+    description: caseEntry.summary,
+    startDate: caseEntry.date,
+    location: {
+      '@type': 'Place',
+      name: caseEntry.location,
+      address: {
+        '@type': 'PostalAddress',
+        addressCountry: caseEntry.country,
+      },
+    },
+    url: `https://decur.app/cases/${caseEntry.id}`,
+    eventStatus: 'https://schema.org/EventScheduled',
+  };
+
   return (
     <>
       <SeoHead
@@ -31,6 +49,7 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
         ogSubtitle={`${caseEntry.date} · ${caseEntry.location}`}
         path={`/cases/${caseEntry.id}`}
         type="article"
+        jsonLd={eventSchema}
       />
       <div className="container mx-auto px-4 py-4">
         <CaseDetail c={caseEntry} onBack={onBack} backLabel={backLabel} />
