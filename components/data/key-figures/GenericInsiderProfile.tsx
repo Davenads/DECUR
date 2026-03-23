@@ -96,7 +96,8 @@ interface ProfileData {
 
 // --- Tab identifiers ---
 
-type TabId = 'overview' | 'timeline' | 'career-flow' | 'feature' | 'people' | 'disclosures' | 'sources' | 'assessment';
+// Feature tabs are identified by the pattern `feature:<key>` to support multiple features per profile.
+type TabId = 'overview' | 'timeline' | 'career-flow' | 'people' | 'disclosures' | 'sources' | 'assessment' | string;
 
 // --- Credibility ---
 
@@ -124,41 +125,61 @@ function disclosureLabel(type: string): string {
   return DISCLOSURE_TYPE_LABELS[type] ?? type;
 }
 
-// Detect the "feature" section key and return a human-readable tab label.
-// Standard top-level keys in every profile JSON — not feature sections.
+// Standard top-level keys present in every profile JSON — not feature sections.
 const KNOWN_SCHEMA_KEYS = new Set([
   'profile', 'associated_people', 'disclosures', 'sources', 'credibility', 'career_connections',
 ]);
 
+// Maps feature key → human-readable tab label.
 // Add new patterns here as new profile schemas are introduced.
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function detectFeature(data: Record<string, any>): { key: string; label: string } | null {
-  const featureMap: Record<string, string> = {
-    aawsap: 'AAWSAP',
-    blue_book: 'Project Blue Book',
-    major_investigations: 'Investigations',
-    major_work: 'Major Work',
-    claims: 'Claims',
-    interviews: 'Interviews',
-    immaculate_constellation: 'IMCON Report',
-  };
+const FEATURE_MAP: Record<string, string> = {
+  // Previously registered
+  aawsap:                 'AAWSAP',
+  blue_book:              'Project Blue Book',
+  major_investigations:   'Investigations',
+  major_work:             'Major Work',
+  claims:                 'Claims',
+  interviews:             'Interviews',
+  immaculate_constellation: 'IMCON Report',
+  // Encounter / observable patterns
+  five_observables:       '5 Observables',
+  encounter:              'Encounter',
+  // Legislative / government response patterns
+  legislation:            'Legislation',
+  legislative_impact:     'Legislative Impact',
+  government_response:    'Government Response',
+  // Research / investigation patterns
+  classification_system:  'Classification System',
+  peer_investigation:     'Investigation',
+  methodology:            'Methodology',
+  theory:                 'Theory',
+  forbidden_science:      'Forbidden Science',
+  // Organizational patterns
+  sol_foundation:         'Sol Foundation',
+  nids_role:              'NIDS',
+  mod_role:               'MOD Role',
+  // Testimony patterns
+  testimony:              'Testimony',
+};
 
+// Returns ALL matching feature sections in featureMap order — supports multi-feature profiles.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function detectFeatures(data: Record<string, any>): Array<{ key: string; label: string }> {
   // Warn about unregistered keys so they don't silently disappear.
   if (process.env.NODE_ENV !== 'production') {
     for (const key of Object.keys(data)) {
-      if (!KNOWN_SCHEMA_KEYS.has(key) && !featureMap[key]) {
+      if (!KNOWN_SCHEMA_KEYS.has(key) && !FEATURE_MAP[key]) {
         console.warn(
           `[GenericInsiderProfile] Unregistered data key "${key}" in profile "${data.profile?.id ?? 'unknown'}". ` +
-          `Add it to featureMap in detectFeature() or KNOWN_SCHEMA_KEYS if it is a standard field.`
+          `Add it to FEATURE_MAP in GenericInsiderProfile.tsx or KNOWN_SCHEMA_KEYS if it is a standard field.`
         );
       }
     }
   }
 
-  for (const [key, label] of Object.entries(featureMap)) {
-    if (data[key]) return { key, label };
-  }
-  return null;
+  return Object.entries(FEATURE_MAP)
+    .filter(([key]) => data[key])
+    .map(([key, label]) => ({ key, label }));
 }
 
 // --- Section renderers ---
@@ -423,6 +444,79 @@ const FeatureTab: FC<{ data: Record<string, any> }> = ({ data }) => {
   return <div>{renderValue(data)}</div>;
 };
 
+// Dedicated renderer for five_observables — numbered card list.
+interface Observable {
+  name: string;
+  description: string;
+}
+
+const FiveObservablesTab: FC<{ observables: Observable[] }> = ({ observables }) => (
+  <div className="space-y-4">
+    <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+      Five observable signatures identified by AATIP analysts as defining UAP characteristics
+      that exceed known human aerospace capabilities.
+    </p>
+    <div className="space-y-3">
+      {observables.map((obs, i) => (
+        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <div className="flex gap-3 items-start">
+            <span className="text-primary font-bold text-sm shrink-0 w-5 pt-0.5">{i + 1}.</span>
+            <div>
+              <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-1">{obs.name}</h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{obs.description}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+// Dedicated renderer for legislation — overview + timeline + assessment.
+interface LegislationAction {
+  year: string;
+  action: string;
+}
+
+interface LegislationData {
+  overview?: string;
+  key_actions?: LegislationAction[];
+  assessment?: string;
+}
+
+const LegislationTab: FC<{ legislation: LegislationData }> = ({ legislation }) => (
+  <div className="space-y-6">
+    {legislation.overview && (
+      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{legislation.overview}</p>
+    )}
+    {legislation.key_actions && legislation.key_actions.length > 0 && (
+      <div>
+        <h4 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-3">Key Actions</h4>
+        <div className="relative">
+          <div className="absolute left-3 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />
+          <div className="space-y-5">
+            {legislation.key_actions.map((item, i) => (
+              <div key={i} className="flex gap-4 pl-8 relative">
+                <div className="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-900 shadow" />
+                <div>
+                  <span className="text-xs font-semibold text-primary">{item.year}</span>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 mt-0.5 leading-relaxed">{item.action}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
+    {legislation.assessment && (
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/30 rounded-lg p-4">
+        <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Assessment</p>
+        <p className="text-sm text-amber-900 dark:text-amber-100 leading-relaxed">{legislation.assessment}</p>
+      </div>
+    )}
+  </div>
+);
+
 // Dedicated renderer for the `claims` feature section.
 // Matches the ClaimsTab style used in all bespoke profile components.
 interface Claim {
@@ -565,7 +659,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
   const credibility: Credibility | null = data.credibility
     ? { supporting: data.credibility.supporting ?? [], contradicting: data.credibility.contradicting ?? [] }
     : null;
-  const feature = detectFeature(data);
+  const features = detectFeatures(data);
 
   const relatedCases = (casesData as Array<{
     id: string; name: string; date: string; location: string;
@@ -579,7 +673,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
     { id: 'overview', label: 'Overview' },
     ...(keyEvents.length > 0 ? [{ id: 'timeline' as TabId, label: 'Timeline' }] : []),
     ...(keyEvents.length > 0 ? [{ id: 'career-flow' as TabId, label: 'Career Network' }] : []),
-    ...(feature ? [{ id: 'feature' as TabId, label: feature.label }] : []),
+    ...features.map(f => ({ id: `feature:${f.key}`, label: f.label })),
     ...(associatedPeople.length > 0 ? [{ id: 'people' as TabId, label: 'People' }] : []),
     ...(disclosures.length > 0 ? [{ id: 'disclosures' as TabId, label: 'Disclosures' }] : []),
     ...(sources.length > 0 ? [{ id: 'sources' as TabId, label: 'Sources' }] : []),
@@ -589,6 +683,23 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
+    // Feature tabs use the pattern `feature:<key>` to support multiple per profile.
+    if (activeTab.startsWith('feature:')) {
+      const featureKey = activeTab.slice('feature:'.length);
+      const featureData = data[featureKey];
+      if (!featureData) return null;
+      if (featureKey === 'claims' && Array.isArray(featureData)) {
+        return <GenericClaimsTab claims={featureData} />;
+      }
+      if (featureKey === 'five_observables' && Array.isArray(featureData)) {
+        return <FiveObservablesTab observables={featureData} />;
+      }
+      if (featureKey === 'legislation' && typeof featureData === 'object' && !Array.isArray(featureData)) {
+        return <LegislationTab legislation={featureData as LegislationData} />;
+      }
+      return <FeatureTab data={featureData} />;
+    }
+
     switch (activeTab) {
       case 'overview':
         return <OverviewTab profile={profile} relatedCases={relatedCases} />;
@@ -603,12 +714,6 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
             <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
           </div>
         );
-      case 'feature':
-        if (!feature) return null;
-        if (feature.key === 'claims' && Array.isArray(data[feature.key])) {
-          return <GenericClaimsTab claims={data[feature.key]} />;
-        }
-        return <FeatureTab data={data[feature.key]} />;
       case 'people':
         return <PeopleTab people={associatedPeople} />;
       case 'disclosures':
