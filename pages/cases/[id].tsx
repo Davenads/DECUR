@@ -41,6 +41,15 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
     eventStatus: 'https://schema.org/EventScheduled',
   };
 
+  const breadcrumbSchema = {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://decur.app' },
+      { '@type': 'ListItem', position: 2, name: 'Cases', item: 'https://decur.app/data?category=cases' },
+      { '@type': 'ListItem', position: 3, name: caseEntry.name, item: `https://decur.app/cases/${caseEntry.id}` },
+    ],
+  };
+
   return (
     <>
       <SeoHead
@@ -49,7 +58,7 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
         ogSubtitle={`${caseEntry.date} · ${caseEntry.location}`}
         path={`/cases/${caseEntry.id}`}
         type="article"
-        jsonLd={eventSchema}
+        jsonLd={[eventSchema, breadcrumbSchema]}
       />
       <div className="container mx-auto px-4 py-4">
         <CaseDetail c={caseEntry} onBack={onBack} backLabel={backLabel} />

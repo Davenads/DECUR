@@ -19,12 +19,12 @@ interface SeoHeadProps {
   /** Fully override the OG image URL (skips dynamic generation). */
   image?: string;
   /**
-   * JSON-LD structured data object (schema.org). Injected as
+   * JSON-LD structured data object(s) (schema.org). Injected as
    * <script type="application/ld+json"> in the head for rich search results.
-   * Pass a plain object — serialization is handled internally.
+   * Pass a plain object or an array — arrays are wrapped in @graph automatically.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  jsonLd?: Record<string, any>;
+  jsonLd?: Record<string, any> | Record<string, any>[];
   /** Prevent search engines from indexing this page (adds noindex,nofollow robots meta). */
   noindex?: boolean;
 }
@@ -75,7 +75,13 @@ const SeoHead: FC<SeoHeadProps> = ({
       {jsonLd && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              Array.isArray(jsonLd)
+                ? { '@context': 'https://schema.org', '@graph': jsonLd }
+                : jsonLd
+            ),
+          }}
         />
       )}
     </Head>

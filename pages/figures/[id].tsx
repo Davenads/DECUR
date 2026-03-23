@@ -75,6 +75,15 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
     ? `${entry.role} - ${entry.summary}`
     : entry.summary;
 
+  const breadcrumbSchema = {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://decur.app' },
+      { '@type': 'ListItem', position: 2, name: 'Key Figures', item: 'https://decur.app/data?category=key-figures' },
+      { '@type': 'ListItem', position: 3, name: entry.name, item: `https://decur.app/figures/${entry.id}` },
+    ],
+  };
+
   return (
     <>
       <SeoHead
@@ -83,7 +92,7 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
         ogSubtitle={entry.role}
         path={`/figures/${entry.id}`}
         type="article"
-        jsonLd={personSchema}
+        jsonLd={[personSchema, breadcrumbSchema]}
       />
       <div className="container mx-auto px-4 py-4">
         {renderProfile()}
