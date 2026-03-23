@@ -25,6 +25,8 @@ interface SeoHeadProps {
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   jsonLd?: Record<string, any>;
+  /** Prevent search engines from indexing this page (adds noindex,nofollow robots meta). */
+  noindex?: boolean;
 }
 
 const SeoHead: FC<SeoHeadProps> = ({
@@ -35,6 +37,7 @@ const SeoHead: FC<SeoHeadProps> = ({
   ogSubtitle,
   image,
   jsonLd,
+  noindex = false,
 }) => {
   const fullTitle = title.includes('DECUR') ? title : `${title} - ${SITE_NAME}`;
   const canonicalUrl = `${SITE_URL}${path}`;
@@ -50,6 +53,7 @@ const SeoHead: FC<SeoHeadProps> = ({
       {/* Standard */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex,nofollow" />}
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph */}

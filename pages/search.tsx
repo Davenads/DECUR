@@ -223,6 +223,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
         title={query ? `"${query}" - Search` : 'Search'}
         description="Search DECUR's archive of UAP research, key figure profiles, historical events, glossary terms, and primary source materials."
         path="/search"
+        noindex
       />
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 -mt-8 -mx-4 px-4 pt-10 pb-10">
         <div className="max-w-3xl mx-auto">
