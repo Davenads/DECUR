@@ -60,11 +60,6 @@ type HeroView = 'network' | 'claims';
 /** Secondary section: lazy-mounted tab views */
 type TabView = 'timeline' | 'map' | 'program-lineage' | 'evidence-tiers';
 
-const HERO_VIEWS: Array<{ id: HeroView; label: string }> = [
-  { id: 'network', label: 'Relationship Network' },
-  { id: 'claims',  label: 'Claims Corroboration' },
-];
-
 const TAB_VIEWS: Array<{ id: TabView; label: string }> = [
   { id: 'timeline',        label: 'Timeline'  },
   { id: 'map',             label: 'Map'       },
@@ -72,8 +67,8 @@ const TAB_VIEWS: Array<{ id: TabView; label: string }> = [
   { id: 'evidence-tiers',  label: 'Cases'     },
 ];
 
-// Active nav ID is the union of both view type sets
-type NavId = HeroView | TabView;
+// Nav ID: single anchor for the hero section + the four tab views
+type NavId = 'networks' | TabView;
 
 // ── Component ───────────────────────────────────────────────────
 
@@ -152,8 +147,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
 
   // ── Nav click handler ─────────────────────────────────────────
   const handleNavClick = useCallback((id: NavId) => {
-    if (id === 'network' || id === 'claims') {
-      setHeroView(id);
+    if (id === 'networks') {
       heroRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       activateTab(id);
@@ -161,8 +155,8 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
     }
   }, [activateTab]);
 
-  // Active nav pill: which zone + which view within that zone
-  const activeNavId: NavId = scrollZone === 'hero' ? heroView : activeTab;
+  // Active nav pill: hero zone always highlights "networks"; tabs zone highlights the active tab
+  const activeNavId: NavId = scrollZone === 'hero' ? 'networks' : activeTab;
 
   // ── Era selection (Timeline tab) ──────────────────────────────
   function handleSelectEra(start: number, end: number) {
@@ -213,12 +207,10 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         <nav className={`sticky top-0 z-40 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-2 transition-shadow duration-200 ${navScrolled ? 'shadow-md' : ''}`}>
           <div className="max-w-5xl mx-auto flex items-center gap-1 overflow-x-auto">
 
-            {/* Hero group: network graphs */}
-            {HERO_VIEWS.map(v => (
-              <button key={v.id} onClick={() => handleNavClick(v.id)} className={pill(v.id)}>
-                {v.label}
-              </button>
-            ))}
+            {/* Hero anchor */}
+            <button onClick={() => handleNavClick('networks')} className={pill('networks')}>
+              Networks
+            </button>
 
             {/* Divider */}
             <div className="w-px h-4 bg-gray-200 dark:bg-gray-700 mx-1 shrink-0" aria-hidden />
@@ -241,17 +233,17 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
 
               {/* Hero toggle + badge */}
               <div className="flex items-center gap-2 mb-3 flex-wrap">
-                {HERO_VIEWS.map(v => (
+                {(['network', 'claims'] as const).map(v => (
                   <button
-                    key={v.id}
-                    onClick={() => setHeroView(v.id)}
+                    key={v}
+                    onClick={() => setHeroView(v)}
                     className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
-                      heroView === v.id
+                      heroView === v
                         ? 'bg-primary text-white'
                         : 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
                     }`}
                   >
-                    {v.label}
+                    {v === 'network' ? 'Relationship Network' : 'Claims Corroboration'}
                   </button>
                 ))}
                 <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 dark:bg-primary/20 text-primary font-semibold uppercase tracking-wide">
