@@ -36,7 +36,7 @@ const NewsBrowser: FC<Props> = ({ entries }) => {
         {filtered.map((entry: TimelineEntry) => (
           <a
             key={entry.id}
-            href={entry.source_url}
+            href={entry.article_url || entry.source_url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md hover:border-primary transition-all group"
