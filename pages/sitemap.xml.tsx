@@ -17,6 +17,7 @@ const STATIC_PAGES: PageEntry[] = [
   { url: '/explore',   changefreq: 'monthly', priority: '0.8' },
   { url: '/timeline',  changefreq: 'monthly', priority: '0.8' },
   { url: '/resources', changefreq: 'monthly', priority: '0.7' },
+  { url: '/blue-book', changefreq: 'monthly', priority: '0.75' },
   { url: '/about',     changefreq: 'monthly', priority: '0.5' },
   { url: '/sources',   changefreq: 'monthly', priority: '0.4' },
 ];

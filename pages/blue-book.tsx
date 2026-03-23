@@ -1,17 +1,15 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import BlueBookIndex from '../components/data/BlueBookIndex';
+import SeoHead from '../components/SeoHead';
 
 export default function BlueBookPage() {
   return (
     <>
-      <Head>
-        <title>Project Blue Book - Unidentified Cases | DECUR</title>
-        <meta
-          name="description"
-          content="Complete index of 558 cases officially classified as Unidentified by Project Blue Book (1947-1969), verified by NICAP independent review."
-        />
-      </Head>
+      <SeoHead
+        title="Project Blue Book - Unidentified Cases"
+        description="Complete index of 558 cases officially classified as Unidentified by Project Blue Book (1947-1969), verified by independent NICAP review. Sourced from the National Archives digitization."
+        path="/blue-book"
+      />
       <main className="min-h-screen bg-white dark:bg-gray-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Breadcrumb */}
