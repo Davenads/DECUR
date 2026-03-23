@@ -88,7 +88,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 </p>
                 <Link
                   href="/data"
-                  className="inline-block px-5 py-2.5 border border-gray-700 dark:border-gray-500 text-gray-800 dark:text-gray-200 text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700 hover:text-white transition-colors"
+                  className="inline-block px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors"
                 >
                   Explore the Archive →
                 </Link>
