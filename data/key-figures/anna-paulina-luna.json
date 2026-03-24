@@ -1,0 +1,281 @@
+{
+  "profile": {
+    "id": "anna-paulina-luna",
+    "name": "Rep. Anna Paulina Luna",
+    "aliases": ["Anna Paulina Luna", "Rep. Luna", "A.P. Luna"],
+    "born": "May 6, 1989 - Santa Ana, California",
+    "died": null,
+    "roles": [
+      "U.S. Representative (R-FL-13)",
+      "Chair, House Task Force on the Declassification of Federal Secrets",
+      "Member, House Committee on Oversight and Government Reform",
+      "Co-chair, House UAP Caucus"
+    ],
+    "service_period": "2009-2014 (U.S. Air Force); 2023-present (U.S. House of Representatives)",
+    "organizations": [
+      "U.S. House of Representatives",
+      "House Committee on Oversight and Government Reform",
+      "House UAP Caucus",
+      "Task Force on the Declassification of Federal Secrets",
+      "U.S. Air Force"
+    ],
+    "clearance": "Congressional oversight access; SCIF briefing access",
+    "summary": "U.S. Representative from Florida and Air Force veteran who co-organized the landmark July 2023 House Oversight UAP hearing and chairs the House Task Force on the Declassification of Federal Secrets. Luna holds the most institutionally powerful House position dedicated to UAP declassification as of 2025, with formal subpoena authority and a direct mandate to drive the release of classified federal records. She has personally accessed classified SCIF briefings and states she viewed photographs of craft not made by mankind.",
+    "education": [
+      "B.S. Biology, University of West Florida, 2017"
+    ],
+    "early_career": [
+      "Enlisted in the U.S. Air Force in 2009 as an airfield management specialist",
+      "Stationed at Whiteman AFB (Missouri) and Hurlburt Field (Florida); awarded Air Force Achievement Medal",
+      "While at Portland Air National Guard, was denied information about a confirmed airspace incursion by a pilot who stated they could not discuss it",
+      "Separated from active duty in 2014; completed B.S. Biology degree in 2017",
+      "Elected to U.S. House of Representatives in November 2022 as the first Mexican-American woman elected from Florida"
+    ],
+    "key_events": [
+      {
+        "year": "2009",
+        "event": "Enlisted in the U.S. Air Force as an airfield management specialist. Stationed at Whiteman AFB and Hurlburt Field; experienced firsthand the institutional culture of silence around airspace anomalies."
+      },
+      {
+        "year": "2014",
+        "event": "Separated from the Air Force. Carries forward a personal encounter in which a pilot refused to discuss an airspace incursion, stating they were not allowed - an experience she cites as foundational to her UAP advocacy."
+      },
+      {
+        "year": "Nov 2022",
+        "event": "Elected to U.S. House of Representatives for Florida's 13th congressional district, becoming the first Mexican-American woman elected from Florida. Immediately began engaging on UAP oversight through the House Oversight Committee."
+      },
+      {
+        "year": "Jul 26, 2023",
+        "event": "Co-organized the landmark House Oversight Committee UAP hearing alongside Rep. Tim Burchett, with David Grusch, Ryan Graves, and David Fravor testifying under oath on crash retrieval programs and pilot encounters. The most-watched congressional UAP hearing in history."
+      },
+      {
+        "year": "Oct 2023",
+        "event": "Chaired a follow-up National Security Subcommittee UAP hearing; announced congressional access to a classified SCIF briefing on Grusch's claims with the Inspector General."
+      },
+      {
+        "year": "Nov 2023",
+        "event": "Co-led a bipartisan press conference with Burchett, Gaetz, and Moskowitz pushing for a formal UAP select committee; co-signed a joint letter to establish one. Original co-sponsor of the UAP Transparency Act requiring 270-day federal UAP document release."
+      },
+      {
+        "year": "2024",
+        "event": "Continued UAP oversight activities; received multiple classified SCIF briefings. Publicly stated that congressional access to UAP programs has been systematically denied and that the information operates under a black Congressional budget."
+      },
+      {
+        "year": "Feb 2025",
+        "event": "Appointed by Speaker Mike Johnson to chair the newly established House Task Force on the Declassification of Federal Secrets - the first formal House mechanism with a direct mandate for federal secrets declassification, including UAP materials."
+      },
+      {
+        "year": "Aug 2025",
+        "event": "Appeared on the Joe Rogan Experience (Episode #2365). Stated she has viewed classified photographs in a SCIF of objects not created by mankind and expressed confidence that interdimensional beings exist. Described her Air Force airspace incident in detail."
+      },
+      {
+        "year": "Sep 9, 2025",
+        "event": "Chaired the Task Force hearing 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection' with witnesses including George Knapp and military whistleblowers. Called former AARO Director Sean Kirkpatrick 'a documented liar' in her opening statement."
+      },
+      {
+        "year": "Mar 2026",
+        "event": "Publicly recommended AARO be defunded and disbanded. Announced active communications with ODNI, FBI, Pentagon, and White House on UAP declassification under Trump's February 2026 executive directive; stated a press conference with formal declassification details is forthcoming."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "scif-photographs-nonhuman-craft",
+      "claim": "She has personally viewed classified photographs in a SCIF of aircraft or objects not made by mankind and operating outside conventional physical parameters.",
+      "status": "unverified",
+      "notes": "Stated on Joe Rogan Experience (August 2025) and in press statements. A firsthand claim about personally witnessed classified material - not secondhand. Cannot be independently verified due to classification. No whistleblower or document has publicly corroborated the specific photographs she references."
+    },
+    {
+      "id": "interdimensional-beings-exist",
+      "claim": "Interdimensional beings exist and are responsible for UAP phenomena; the phenomenon is not necessarily biological extraterrestrial life in the conventional sense.",
+      "status": "unverified",
+      "notes": "Explicitly stated on Joe Rogan (August 2025): 'I wouldn't call them aliens - they're interdimensional beings.' Adopts the framing advanced by David Grusch and others. No documentary evidence has been made public; claim is based on classified briefing content and personal conviction."
+    },
+    {
+      "id": "us-reverse-engineered-nonhuman-technology",
+      "claim": "The United States has reverse-engineered technology to replicate craft not made by mankind.",
+      "status": "unverified",
+      "notes": "Stated in multiple media contexts. Consistent with Grusch's sworn testimony about reverse-engineering programs, but Luna's version is her independent assertion rather than a repetition of Grusch's specific claims. No documentary evidence publicly available."
+    },
+    {
+      "id": "congressional-access-denial-systematic",
+      "claim": "Members of Congress with proper clearances have been systematically denied access to UAP programs, with associated funding operating outside congressional oversight through a black budget.",
+      "status": "partially-verified",
+      "notes": "Consistent with accounts from multiple legislators including Schumer, Gillibrand, and Burchett. Institutional stonewalling is documented in congressional records and press statements by multiple members. Formal denial records remain classified."
+    },
+    {
+      "id": "aaro-obstruction-kirkpatrick",
+      "claim": "AARO under Sean Kirkpatrick engaged in deception toward Congress and the public; Kirkpatrick is a documented liar.",
+      "status": "disputed",
+      "notes": "Stated in her September 2025 Task Force opening statement. Kirkpatrick has denied wrongdoing and disputed the characterization. Some congressional members corroborate concerns about AARO's scope and transparency, but the specific 'documented liar' claim has not been substantiated with publicly released documentation."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Holds the most institutionally powerful UAP-adjacent House position as of 2025 - Task Force Chair with formal subpoena authority and declassification mandate",
+      "U.S. Air Force veteran (2009-2014) with firsthand knowledge of military airspace operations and culture of institutional silence",
+      "Personally accessed classified SCIF briefings; photographic claims are firsthand, not secondhand testimony",
+      "Demonstrated sustained, bipartisan engagement since 2022 rather than opportunistic media appearances",
+      "Willingness to publicly criticize prominent disclosure figures (Elizondo, Mellon, Grusch) when she deemed them obstructionist - coined 'SCIF Flu' after their no-show at a May 2025 classified briefing",
+      "Co-organized the most-watched congressional UAP hearing in history, providing a formal institutional platform for whistleblower testimony under oath"
+    ],
+    "contradicting": [
+      "Most extraordinary claims (interdimensional beings, reverse-engineered technology) are made in media appearances and press conferences, not under oath in formal congressional testimony",
+      "A 2023 Washington Post investigation raised significant questions about disputed elements of her personal biography unrelated to UAP; the pattern of disputed biographical claims affects overall credibility assessment",
+      "No intelligence, scientific, or military intelligence background to independently evaluate the substance of classified program claims beyond what witnesses tell her",
+      "Call to defund AARO via DOGE (March 2026) conflates legitimate AARO criticism with a broader deregulatory agenda, potentially undermining the institutional credibility of her declassification position",
+      "Some critics note the House UAP Caucus produced limited concrete legislative output relative to its public profile during the 118th Congress"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "tim-burchett",
+      "name": "Rep. Tim Burchett",
+      "role": "U.S. Representative (R-TN); House UAP Caucus co-chair",
+      "relationship": "Closest legislative partner. Co-organized the July 2023 House Oversight UAP hearing together; co-founded the House UAP Caucus; co-sponsored whistleblower protection legislation. The most sustained bipartisan pairing in congressional UAP oversight."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NRO/UAPTF intelligence officer; UAP whistleblower",
+      "relationship": "Invited Grusch to testify at the July 2023 hearing; his sworn testimony on crash retrieval programs and interdimensional beings framing directly informed Luna's own public claims about non-human craft and technology."
+    },
+    {
+      "id": "george-knapp",
+      "name": "George Knapp",
+      "role": "Investigative journalist; UAP researcher",
+      "relationship": "Knapp testified as a witness at Luna's September 2025 Task Force hearing on UAP transparency and whistleblower protection."
+    },
+    {
+      "id": "kirsten-gillibrand",
+      "name": "Sen. Kirsten Gillibrand",
+      "role": "U.S. Senator (D-NY); SASC UAP Subcommittee chair",
+      "relationship": "Cross-chamber counterpart in parallel UAP oversight. Both cite systematic denial of congressional access; coordinated on NDAA UAP provisions across the House-Senate divide."
+    },
+    {
+      "id": "dylan-borland",
+      "name": "Dylan Borland",
+      "role": "Military whistleblower",
+      "relationship": "Testified at Luna's September 2025 Task Force hearing alongside other military whistleblowers on UAP transparency and program concealment."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jul 26, 2023",
+      "type": "speech",
+      "title": "House Oversight Committee UAP Hearing",
+      "outlet": "U.S. House Committee on Oversight and Accountability",
+      "notes": "Co-organized landmark hearing with Burchett; witnesses David Grusch, Ryan Graves, and David Fravor testified under oath. Luna's opening statement called for full disclosure and framed UAP transparency as a national security and democratic accountability issue."
+    },
+    {
+      "date": "Oct 2023",
+      "type": "congressional-testimony",
+      "title": "National Security Subcommittee UAP Hearing",
+      "outlet": "U.S. House Subcommittee on National Security, the Border, and Foreign Affairs",
+      "notes": "Chaired follow-up hearing; announced congressional access to Inspector General SCIF briefing on Grusch's claims."
+    },
+    {
+      "date": "Nov 2023",
+      "type": "speech",
+      "title": "Bipartisan UAP Select Committee Press Conference",
+      "outlet": "U.S. House of Representatives",
+      "notes": "Co-led bipartisan press conference with Burchett, Gaetz, and Moskowitz calling for a formal UAP select committee and joint letter to establish one."
+    },
+    {
+      "date": "2024",
+      "type": "written",
+      "title": "UAP Transparency Act Co-sponsorship",
+      "outlet": "U.S. House of Representatives",
+      "notes": "Original co-sponsor of the UAP Transparency Act alongside Burchett, Moskowitz, and Burlison, requiring the President to direct all federal agencies to release UAP documents publicly within 270 days."
+    },
+    {
+      "date": "Aug 13, 2025",
+      "type": "podcast",
+      "title": "Joe Rogan Experience #2365",
+      "outlet": "Joe Rogan Experience",
+      "interviewer": "Joe Rogan",
+      "notes": "Described her Air Force airspace incident; stated she has viewed classified photographs of objects not created by mankind in a SCIF; expressed confidence that interdimensional beings exist. One of the most widely circulated congressional UAP disclosures of 2025."
+    },
+    {
+      "date": "Sep 9, 2025",
+      "type": "congressional-testimony",
+      "title": "Task Force Hearing: Restoring Public Trust Through UAP Transparency",
+      "outlet": "House Task Force on the Declassification of Federal Secrets",
+      "notes": "Chaired hearing with witnesses including George Knapp and military whistleblowers Jeffrey Nuccetelli, Alexandro Wiggins, Dylan Borland, and Joe Spielberger. Opening statement called Kirkpatrick 'a documented liar' and demanded systemic AARO reform."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "tim-burchett",
+      "node_label": "Rep. Tim Burchett",
+      "relationship": "Formed the House UAP Caucus partnership upon taking office in January 2023; the most sustained bipartisan collaboration in congressional UAP oversight.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Invited Grusch to testify at the July 2023 hearing under oath; his testimony on crash retrieval programs was the centerpiece of the hearing Luna co-organized.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Testified at the July 2023 hearing on routine Navy pilot UAP encounters, providing operational corroboration alongside Grusch's program-level claims.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "program",
+      "node_id": "aaro",
+      "node_label": "AARO",
+      "relationship": "Appointed Task Force Chair in February 2025 with a mandate directly challenging AARO's handling of declassification; called for AARO's dissolution by March 2026.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 9,
+      "node_type": "person",
+      "node_id": "george-knapp",
+      "node_label": "George Knapp",
+      "relationship": "Knapp testified at Luna's September 2025 Task Force hearing on UAP transparency and whistleblower protection.",
+      "connection_type": "professional"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rep. Anna Paulina Luna Official Website",
+      "url": "https://luna.house.gov",
+      "type": "Official",
+      "notes": "Primary source for constituent communications, press releases, and legislative record."
+    },
+    {
+      "title": "House Oversight Committee UAP Hearing - July 26, 2023",
+      "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+      "type": "Congressional Record",
+      "notes": "Official hearing record for the landmark UAP hearing Luna co-organized with Burchett."
+    },
+    {
+      "title": "Joe Rogan Experience #2365 - Anna Paulina Luna",
+      "url": "https://www.youtube.com/watch?v=KmaHMqaO-gQ",
+      "type": "Podcast",
+      "notes": "August 13, 2025 appearance in which Luna described SCIF photographs and stated her conviction that interdimensional beings exist."
+    },
+    {
+      "title": "Task Force on the Declassification of Federal Secrets - House Oversight",
+      "url": "https://oversight.house.gov",
+      "type": "Congressional Record",
+      "notes": "Official record of the Task Force chaired by Luna, including the September 2025 UAP transparency hearing."
+    },
+    {
+      "title": "Washington Post - Background Investigation (Feb 2023)",
+      "url": "https://www.washingtonpost.com",
+      "type": "Media",
+      "notes": "Washington Post investigation raising questions about disputed elements of Luna's personal biography. Referenced for credibility assessment; unrelated to UAP work."
+    }
+  ]
+}

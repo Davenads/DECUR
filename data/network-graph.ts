@@ -877,6 +877,14 @@ export const graphData: GraphData = {
     { source: 'lynne-kitei', target: 'fife-symington',       label: 'Symingtons 2004 public reversal - admitting he personally witnessed the Phoenix Lights V-formation - corroborated Kiteislong-standing account' },
     { source: 'lynne-kitei', target: 'linda-moulton-howe',   label: 'parallel credentialed women researchers who applied professional backgrounds to UAP field investigation; Howe covered the Phoenix Lights phenomenon' },
 
+    // Anna Paulina Luna connections
+    { source: 'anna-paulina-luna', target: 'tim-burchett',      label: 'co-organized July 2023 House Oversight UAP hearing; co-chair of the House UAP Caucus; closest legislative partner in bipartisan UAP oversight' },
+    { source: 'anna-paulina-luna', target: 'david-grusch',       label: 'invited Grusch to testify at the July 2023 hearing; his sworn testimony and interdimensional framing directly informed her own public claims' },
+    { source: 'anna-paulina-luna', target: 'george-knapp',       label: 'Knapp testified as a witness at Luna\'s September 2025 Task Force hearing on UAP transparency and whistleblower protection' },
+    { source: 'anna-paulina-luna', target: 'kirsten-gillibrand', label: 'cross-chamber UAP oversight counterparts; coordinated on NDAA UAP provisions during 2023 and parallel whistleblower protection frameworks' },
+    { source: 'anna-paulina-luna', target: 'dylan-borland',      label: 'Borland testified as a military whistleblower at Luna\'s September 2025 Task Force hearing on UAP transparency' },
+    { source: 'anna-paulina-luna', target: 'aaro',               label: 'called former AARO Director Kirkpatrick a documented liar in her September 2025 Task Force opening statement; publicly demanded AARO be defunded and dissolved' },
+
     // Roscoe Hillenkoetter connections
     { source: 'roscoe-hillenkoetter', target: 'donald-keyhoe',    label: 'Naval Academy classmates; NICAP board colleagues 1957-1962' },
     { source: 'roscoe-hillenkoetter', target: 'kenneth-arnold',   label: 'Hillenkoetter was CIA Director when Arnolds 1947 sighting triggered Project Sign' },

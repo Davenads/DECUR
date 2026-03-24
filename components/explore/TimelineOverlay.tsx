@@ -121,6 +121,7 @@ const SOURCE_CONFIG: Record<string, SourceConfig> = {
   'roscoe-hillenkoetter': { label: 'Adm. Roscoe Hillenkoetter', color: '#1e3a5f' },
   'bruce-maccabee': { label: 'Dr. Bruce Maccabee', color: '#2d6a4f' },
   'wilbert-smith': { label: 'Wilbert B. Smith', color: '#7c3d12' },
+  'anna-paulina-luna': { label: 'Rep. Luna', color: '#e11d48' },
 };
 
 const UAP_COLOR = '#93c5e8';

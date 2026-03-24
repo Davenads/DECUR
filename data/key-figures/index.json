@@ -1500,6 +1500,20 @@
     "includeInExplore": true
   },
   {
+    "id": "anna-paulina-luna",
+    "name": "Rep. Anna Paulina Luna",
+    "aliases": ["Anna Paulina Luna", "Rep. Luna", "A.P. Luna"],
+    "role": "U.S. Representative (R-FL-13); Chair, Task Force on the Declassification of Federal Secrets",
+    "period": "2023-present",
+    "affiliation": "U.S. House of Representatives; House UAP Caucus; Task Force on the Declassification of Federal Secrets",
+    "summary": "U.S. Representative and Air Force veteran who co-organized the landmark July 2023 House Oversight UAP hearing and chairs the House Task Force on the Declassification of Federal Secrets. Holds the most institutionally powerful House position dedicated to UAP declassification as of 2025, with formal subpoena authority. Has personally accessed classified SCIF briefings and states she viewed photographs of craft not made by mankind.",
+    "status": "detailed",
+    "tags": ["congress", "official", "house", "uap-caucus", "hearing", "2023", "task-force", "declassification", "air-force", "florida", "whistleblower-protection"],
+    "data_file": "anna-paulina-luna.json",
+    "type": "official",
+    "includeInExplore": true
+  },
+  {
     "id": "lynne-kitei",
     "name": "Dr. Lynne Kitei",
     "aliases": ["Dr. Lynne", "Lynn Kitei"],
