@@ -6,6 +6,11 @@ import {
   ResponsiveContainer, ScatterChart, Scatter, Cell,
 } from 'recharts';
 import { TimelineEntry } from '../../lib/timelineData';
+import insiderIndex from '../../data/key-figures/index.json';
+
+const figureNameMap: Record<string, string> = Object.fromEntries(
+  (insiderIndex as Array<{ id: string; name: string }>).map(f => [f.id, f.name])
+);
 
 /* ─── Types ──────────────────────────────────────────────────── */
 
@@ -131,7 +136,7 @@ function getSourceColor(source: string): string {
 }
 
 function getSourceLabel(source: string): string {
-  return SOURCE_CONFIG[source]?.label ?? source;
+  return SOURCE_CONFIG[source]?.label ?? figureNameMap[source] ?? source;
 }
 
 const TIER_COLOR: Record<string, string> = {
@@ -543,7 +548,7 @@ const TimelineOverlay: FC<Props> = ({ uapEntries, insiderEvents, caseEvents = []
                 className="text-xs font-medium text-right leading-none"
                 style={{ color: getSourceColor(src) }}
               >
-                {SOURCE_CONFIG[src]?.label.split(' ').pop() ?? src}
+                {getSourceLabel(src).split(' ').pop()}
               </span>
             ))}
           </div>
