@@ -145,6 +145,7 @@ const NetworkGraph: FC = () => {
   const [highlight, setHighlight] = useState<HighlightState>(EMPTY_HIGHLIGHT);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchFocused, setSearchFocused] = useState(false);
+  const [searchIndex, setSearchIndex] = useState(-1);
   const [clickedNode, setClickedNode] = useState<GraphNode | null>(null);
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [egoNodeId, setEgoNodeId] = useState<string | null>(null);
@@ -324,7 +325,26 @@ const NetworkGraph: FC = () => {
     }
     setSearchQuery('');
     setSearchFocused(false);
+    setSearchIndex(-1);
   }, [filteredLinks]);
+
+  const handleSearchKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setSearchIndex(i => Math.min(i + 1, searchResults.length - 1));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setSearchIndex(i => Math.max(i - 1, 0));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      const target = searchIndex >= 0 ? searchResults[searchIndex] : searchResults[0];
+      if (target) focusNode(target);
+    } else if (e.key === 'Escape') {
+      setSearchQuery('');
+      setSearchFocused(false);
+      setSearchIndex(-1);
+    }
+  }, [searchResults, searchIndex, focusNode]);
 
   const nodeCanvasObject = useCallback(
     (node: object, ctx: CanvasRenderingContext2D, globalScale: number) => {
@@ -455,19 +475,20 @@ const NetworkGraph: FC = () => {
         <input
           type="text"
           value={searchQuery}
-          onChange={e => setSearchQuery(e.target.value)}
+          onChange={e => { setSearchQuery(e.target.value); setSearchIndex(-1); }}
           onFocus={() => setSearchFocused(true)}
-          onBlur={() => setTimeout(() => setSearchFocused(false), 150)}
+          onBlur={() => setTimeout(() => { setSearchFocused(false); setSearchIndex(-1); }, 150)}
+          onKeyDown={handleSearchKeyDown}
           placeholder="Search nodes..."
           className="w-full text-sm border border-gray-200 dark:border-gray-600 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/40 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500"
         />
         {searchFocused && searchResults.length > 0 && (
           <div className="absolute z-10 left-6 right-6 mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden">
-            {searchResults.map(node => (
+            {searchResults.map((node, idx) => (
               <button
                 key={node.id}
                 onMouseDown={() => focusNode(node)}
-                className="w-full flex items-center gap-2 px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 text-left"
+                className={`w-full flex items-center gap-2 px-3 py-2 text-left ${idx === searchIndex ? 'bg-gray-100 dark:bg-gray-700' : 'hover:bg-gray-50 dark:hover:bg-gray-700'}`}
               >
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[node.type] }} />
                 <span className="text-sm text-gray-800 dark:text-gray-200">{node.name}</span>
