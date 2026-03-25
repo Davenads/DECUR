@@ -176,19 +176,6 @@ const insiderMap = Object.fromEntries(
   (insidersIndex as Array<{ id: string; name: string; role: string }>).map(ins => [ins.id, ins])
 );
 
-// Case-specific connection notes
-const CONNECTION_NOTES: Record<string, string> = {
-  'david-fravor':   'Primary witness - direct visual observation and congressional testimony. Fravor\'s firsthand account is the primary record of the Nimitz encounter.',
-  'nick-pope':      'MoD investigator - reinvestigated Rendlesham from classified records in 1993. Concluded the official dismissal was inadequate.',
-  'luis-elizondo':  'AATIP director - assessed the sustained USS Roosevelt encounters on behalf of DoD. Identified national security implications.',
-  'chris-mellon':   'DASD Intelligence - facilitated video release through TTSA and the New York Times, enabling public confirmation.',
-  'dan-burisch':    'Claims direct involvement with entities connected to the 1947 Roswell retrieval program through Majestic-12.',
-  'jacques-vallee': 'Investigated and documented this case as part of his broader European UAP research. Contributed data to international analysis.',
-  'richard-dolan':  'Researched and documented this incident extensively in his National Security State series.',
-  'alex-dietrich':  'Wingman to Fravor during the Nimitz encounter - corroborating military witness.',
-  'kevin-day':      'USS Princeton radar operator who tracked anomalous objects for two weeks prior to the Nimitz encounter.',
-  'j-allen-hynek':  'Project Blue Book scientific consultant - investigated this case directly and it contributed to the case file classified Unidentified.',
-};
 
 const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
   if (c.insider_connections.length === 0) {
@@ -210,15 +197,14 @@ const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
   return (
     <div className="space-y-4">
       <p className="text-sm text-gray-500 dark:text-gray-400">Connections to DECUR insider profiles with firsthand involvement or investigative roles.</p>
-      {c.insider_connections.map((id) => {
-        const insider = insiderMap[id];
-        const note = CONNECTION_NOTES[id] ?? '';
-        const displayName = insider?.name ?? id;
+      {c.insider_connections.map((conn) => {
+        const insider = insiderMap[conn.id];
+        const displayName = insider?.name ?? conn.id;
         const displayRole = insider?.role ?? 'DECUR Key Figure';
         return (
           <Link
-            key={id}
-            href={`/figures/${id}`}
+            key={conn.id}
+            href={`/figures/${conn.id}`}
             className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary hover:shadow-sm transition-all group"
           >
             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -227,7 +213,7 @@ const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors">{displayName}</p>
               <p className="text-xs text-primary leading-snug truncate">{displayRole}</p>
-              {note && <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 leading-snug">{note}</p>}
+              {conn.note && <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 leading-snug">{conn.note}</p>}
             </div>
             <svg className="h-4 w-4 text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors shrink-0 self-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

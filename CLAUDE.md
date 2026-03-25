@@ -241,11 +241,13 @@ Add an entry to `data/key-figures/index.json`:
 Valid `type` values: `insider`, `journalist`, `pilot`, `scientist`, `official`, `executive`.
 
 ### 4. Add Explore overlay color (optional)
-If `includeInExplore: true`, add an entry to `SOURCE_CONFIG` in `components/explore/TimelineOverlay.tsx`:
+If `includeInExplore: true`, you may add an entry to `SOURCE_CONFIG` in `components/explore/TimelineOverlay.tsx` to assign a custom display label and swimlane color:
 ```ts
 'jane-smith': { label: 'Dr. Jane Smith', color: '#hexcolor' },
 ```
-If omitted, events will appear with a default gray color.
+**If omitted:** the display name resolves automatically from `data/key-figures/index.json` (the figure's `name` field), and the swimlane color defaults to gray (`#6b7280`). You only need a SOURCE_CONFIG entry if you want a shortened label (e.g. `'Sen. Smith'`) or a distinct color.
+
+> **Do not hardcode display names in SOURCE_CONFIG that already match the index.json `name` field exactly** - that's redundant. SOURCE_CONFIG entries are for abbreviated/role-prefixed labels only.
 
 ### 5. Add Relationship Network edges (required)
 All profiled figures are **auto-derived** as nodes in the Relationship Network from `index.json` - no manual node entry needed. However, you **must** add link edges to `data/network-graph.ts` or the figure will appear as an isolated island with no connections.
@@ -294,6 +296,34 @@ Add a top-level `career_connections` key to the profile JSON:
 
 ### That's all
 No component file is needed. No `if` check in `InsidersList.tsx` is needed.
+
+---
+
+## Dynamic Architecture Conventions
+
+Several components derive display data dynamically from `data/key-figures/index.json` and the data JSON files. **Do not bypass these patterns by adding new hardcoded lookup tables.**
+
+### insider_connections schema (documents.json and cases.json)
+Both `data/documents.json` and `data/cases.json` use a typed `InsiderConnection[]` array - not bare string arrays. When adding or editing connections:
+
+```json
+"insider_connections": [
+  {
+    "id": "luis-elizondo",
+    "role": "AATIP director whose advocacy led directly to the UAPTF assessment",
+    "note": "The UAPTF assessment is the institutionalized result of Elizondo's disclosure work."
+  }
+]
+```
+
+- `id` - required; must match the key figures registry slug exactly
+- `role` - required; one sentence describing the figure's relationship to this specific document or case
+- `note` - optional; additional context or caveat
+
+The component (`InsiderLinksTab`) reads `role`/`note` directly from the data. **Never add new hardcoded per-ID label dicts to the component** - put the content in the JSON.
+
+### Figure display name resolution
+`TimelineOverlay.tsx` and `DocumentDetail.tsx` both auto-resolve figure display names from `data/key-figures/index.json` as a fallback. When a new figure is added to the registry, their name appears automatically in these components without any code change. A SOURCE_CONFIG entry is only needed for a custom abbreviated label or non-default color.
 
 ---
 

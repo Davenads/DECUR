@@ -18,7 +18,10 @@
       "radar-confirmed"
     ],
     "insider_connections": [
-      "david-fravor"
+      {
+        "id": "david-fravor",
+        "note": "Primary witness - direct visual observation and congressional testimony. Fravor firsthand account is the primary record of the Nimitz encounter."
+      }
     ],
     "overview": {
       "key_facts": [
@@ -354,7 +357,10 @@
       "UK"
     ],
     "insider_connections": [
-      "nick-pope"
+      {
+        "id": "nick-pope",
+        "note": "MoD investigator - reinvestigated Rendlesham from classified records in 1993. Concluded the official dismissal was inadequate."
+      }
     ],
     "overview": {
       "key_facts": [
@@ -637,8 +643,14 @@
       "sustained-incidents"
     ],
     "insider_connections": [
-      "luis-elizondo",
-      "chris-mellon"
+      {
+        "id": "luis-elizondo",
+        "note": "AATIP director - assessed the sustained USS Roosevelt encounters on behalf of DoD. Identified national security implications."
+      },
+      {
+        "id": "chris-mellon",
+        "note": "DASD Intelligence - facilitated video release through TTSA and the New York Times, enabling public confirmation."
+      }
     ],
     "overview": {
       "key_facts": [
@@ -949,7 +961,10 @@
       "Belgium"
     ],
     "insider_connections": [
-      "jacques-vallee"
+      {
+        "id": "jacques-vallee",
+        "note": "Investigated and documented this case as part of his broader European UAP research. Contributed data to international analysis."
+      }
     ],
     "overview": {
       "key_facts": [
@@ -1476,7 +1491,10 @@
       "Alaska"
     ],
     "insider_connections": [
-      "richard-dolan"
+      {
+        "id": "richard-dolan",
+        "note": "Researched and documented this incident extensively in his National Security State series."
+      }
     ],
     "overview": {
       "key_facts": [
@@ -1757,7 +1775,10 @@
       "Project-Mogul"
     ],
     "insider_connections": [
-      "dan-burisch"
+      {
+        "id": "dan-burisch",
+        "note": "Claims direct involvement with entities connected to the 1947 Roswell retrieval program through Majestic-12."
+      }
     ],
     "overview": {
       "key_facts": [
@@ -2308,7 +2329,9 @@
       "NASA"
     ],
     "insider_connections": [
-      "leslie-kean"
+      {
+        "id": "leslie-kean"
+      }
     ],
     "overview": {
       "key_facts": [
@@ -3124,7 +3147,9 @@
       "San-Diego"
     ],
     "insider_connections": [
-      "tim-gallaudet"
+      {
+        "id": "tim-gallaudet"
+      }
     ],
     "overview": {
       "key_facts": [
@@ -6574,7 +6599,9 @@
       "multiple-witnesses"
     ],
     "insider_connections": [
-      "robert-hastings"
+      {
+        "id": "robert-hastings"
+      }
     ],
     "overview": {
       "key_facts": [
@@ -6737,9 +6764,25 @@
     "evidence_tier": "tier-2",
     "classification_status": "unresolved",
     "summary": "A prolonged close-range encounter near Exeter, New Hampshire involving a police officer, a civilian, and a large low-flying craft with brilliant flashing lights. The incident lasted over two hours, involved multiple independent witnesses including two police officers, and generated an official Project Blue Book investigation that ultimately classified it 'Unidentified' (Case 9890). John Fuller's subsequent book 'Incident at Exeter' (1966) made it one of the most thoroughly documented civilian UAP cases of the era.",
-    "tags": ["blue-book", "1960s", "police-witness", "close-encounter", "new-england", "ground-visual", "multiple-witnesses"],
-    "insider_connections": ["j-allen-hynek"],
-    "coordinates": { "lat": 42.9814, "lng": -70.9478 },
+    "tags": [
+      "blue-book",
+      "1960s",
+      "police-witness",
+      "close-encounter",
+      "new-england",
+      "ground-visual",
+      "multiple-witnesses"
+    ],
+    "insider_connections": [
+      {
+        "id": "j-allen-hynek",
+        "note": "Project Blue Book scientific consultant - investigated this case directly and it contributed to the case file classified Unidentified."
+      }
+    ],
+    "coordinates": {
+      "lat": 42.9814,
+      "lng": -70.9478
+    },
     "overview": {
       "key_facts": [
         "Primary encounter lasted approximately two hours beginning around 2:00 AM on September 3, 1965",
@@ -6783,7 +6826,10 @@
       }
     ],
     "official_response": {
-      "agencies": ["U.S. Air Force", "Project Blue Book"],
+      "agencies": [
+        "U.S. Air Force",
+        "Project Blue Book"
+      ],
       "statements": [
         {
           "source": "Project Blue Book",
@@ -6813,22 +6859,45 @@
         "name": "Unknown Structured Craft",
         "assessment": "probable",
         "summary": "A structured craft of unknown origin exhibiting flight characteristics inconsistent with known aircraft of the period hovered at low altitude over Exeter.",
-        "evidence_for": ["Three independent witnesses including two police officers", "Duration and proximity of observation", "Blue Book classification as Unidentified", "Witness rejection of conventional aircraft explanation based on direct experience"],
-        "evidence_against": ["No physical or photographic evidence", "Single isolated incident with no radar confirmation"]
+        "evidence_for": [
+          "Three independent witnesses including two police officers",
+          "Duration and proximity of observation",
+          "Blue Book classification as Unidentified",
+          "Witness rejection of conventional aircraft explanation based on direct experience"
+        ],
+        "evidence_against": [
+          "No physical or photographic evidence",
+          "Single isolated incident with no radar confirmation"
+        ]
       },
       {
         "name": "Military Aircraft (Night Maneuver)",
         "assessment": "unlikely",
         "summary": "Classified military aircraft on night training operations accounted for the observation.",
-        "evidence_for": ["Strategic Air Command was conducting operations in the region"],
-        "evidence_against": ["Officers Bertrand and Hunt specifically rejected this explanation citing the object's silence, hovering behavior, and flight characteristics", "Blue Book itself abandoned this explanation and reclassified as Unidentified"]
+        "evidence_for": [
+          "Strategic Air Command was conducting operations in the region"
+        ],
+        "evidence_against": [
+          "Officers Bertrand and Hunt specifically rejected this explanation citing the object's silence, hovering behavior, and flight characteristics",
+          "Blue Book itself abandoned this explanation and reclassified as Unidentified"
+        ]
       }
     ],
     "claims_taxonomy": {
-      "verified": ["Police officers filed official reports the same night", "Blue Book classified the case Unidentified (Case 9890)", "Officers wrote to the Air Force disputing its initial explanations"],
-      "probable": ["Object exhibited unconventional flight characteristics including silent hovering and rapid directional changes"],
-      "disputed": ["Whether the prior witness (woman in car) saw the same object"],
-      "speculative": ["Nature, origin, or purpose of the observed craft"]
+      "verified": [
+        "Police officers filed official reports the same night",
+        "Blue Book classified the case Unidentified (Case 9890)",
+        "Officers wrote to the Air Force disputing its initial explanations"
+      ],
+      "probable": [
+        "Object exhibited unconventional flight characteristics including silent hovering and rapid directional changes"
+      ],
+      "disputed": [
+        "Whether the prior witness (woman in car) saw the same object"
+      ],
+      "speculative": [
+        "Nature, origin, or purpose of the observed craft"
+      ]
     },
     "sources": [
       {
@@ -6861,9 +6930,26 @@
     "evidence_tier": "tier-2",
     "classification_status": "unresolved",
     "summary": "Two engineers driving near Loch Raven Dam outside Baltimore encountered a large egg-shaped craft hovering over the bridge spanning the dam. Their car engine and headlights failed as they approached. The object emitted intense heat and light before ascending rapidly with a loud sound. Both men suffered radiation-type skin burns requiring medical treatment. Project Blue Book investigated and classified the case 'Unidentified' (Case 6148). It remains one of the best-documented vehicle electromagnetic effect (EME) cases in the Blue Book archive.",
-    "tags": ["blue-book", "1950s", "electromagnetic-effects", "vehicle-interference", "radiation-burns", "maryland", "close-encounter", "physical-effects"],
-    "insider_connections": ["j-allen-hynek"],
-    "coordinates": { "lat": 39.4668, "lng": -76.5614 },
+    "tags": [
+      "blue-book",
+      "1950s",
+      "electromagnetic-effects",
+      "vehicle-interference",
+      "radiation-burns",
+      "maryland",
+      "close-encounter",
+      "physical-effects"
+    ],
+    "insider_connections": [
+      {
+        "id": "j-allen-hynek",
+        "note": "Project Blue Book scientific consultant - investigated this case directly and it contributed to the case file classified Unidentified."
+      }
+    ],
+    "coordinates": {
+      "lat": 39.4668,
+      "lng": -76.5614
+    },
     "overview": {
       "key_facts": [
         "Witnesses Alvin Cohen and Philip Small were driving near Loch Raven Dam at approximately 10:30 PM",
@@ -6902,7 +6988,10 @@
       }
     ],
     "official_response": {
-      "agencies": ["U.S. Air Force", "Project Blue Book"],
+      "agencies": [
+        "U.S. Air Force",
+        "Project Blue Book"
+      ],
       "statements": [
         {
           "source": "Project Blue Book",
@@ -6930,22 +7019,45 @@
         "name": "Unknown Craft with Electromagnetic Emission",
         "assessment": "probable",
         "summary": "An unknown craft generating electromagnetic fields sufficient to disable vehicle electronics and emit heat intense enough to cause skin burns hovered over the Loch Raven Dam bridge.",
-        "evidence_for": ["Corroborated vehicle EME", "Documented physical injuries", "Blue Book Unidentified classification", "Consistent independent witness accounts"],
-        "evidence_against": ["No physical trace evidence at site", "No photographs"]
+        "evidence_for": [
+          "Corroborated vehicle EME",
+          "Documented physical injuries",
+          "Blue Book Unidentified classification",
+          "Consistent independent witness accounts"
+        ],
+        "evidence_against": [
+          "No physical trace evidence at site",
+          "No photographs"
+        ]
       },
       {
         "name": "Ball Lightning or Atmospheric Phenomenon",
         "assessment": "unlikely",
         "summary": "A large atmospheric electrical phenomenon produced the observed effects.",
-        "evidence_for": ["Atmospheric phenomena can produce light, heat, and localized electromagnetic effects"],
-        "evidence_against": ["Duration and structured shape inconsistent with ball lightning", "Witnessed controlled ascent and departure inconsistent with atmospheric dissipation"]
+        "evidence_for": [
+          "Atmospheric phenomena can produce light, heat, and localized electromagnetic effects"
+        ],
+        "evidence_against": [
+          "Duration and structured shape inconsistent with ball lightning",
+          "Witnessed controlled ascent and departure inconsistent with atmospheric dissipation"
+        ]
       }
     ],
     "claims_taxonomy": {
-      "verified": ["Both witnesses sought medical attention the same night", "Blue Book classified the case Unidentified (Case 6148)", "Vehicle engine and headlights failed in proximity to the object"],
-      "probable": ["Physical injuries were caused by radiation or heat from the object"],
-      "disputed": ["Exact size and shape of the object"],
-      "speculative": ["Nature and origin of the craft"]
+      "verified": [
+        "Both witnesses sought medical attention the same night",
+        "Blue Book classified the case Unidentified (Case 6148)",
+        "Vehicle engine and headlights failed in proximity to the object"
+      ],
+      "probable": [
+        "Physical injuries were caused by radiation or heat from the object"
+      ],
+      "disputed": [
+        "Exact size and shape of the object"
+      ],
+      "speculative": [
+        "Nature and origin of the craft"
+      ]
     },
     "sources": [
       {

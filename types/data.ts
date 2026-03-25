@@ -1052,7 +1052,7 @@ export interface CaseEntry {
   classification_status: ClassificationStatus;
   summary: string;
   tags: string[];
-  insider_connections: string[];
+  insider_connections: InsiderConnection[];
   overview: {
     key_facts: string[];
   };
