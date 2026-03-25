@@ -205,7 +205,7 @@ Create `data/key-figures/[id].json` following the canonical schema:
 **Canonical field rules:**
 - `key_events[].year` - use `"YYYY"` or `"Mon YYYY"` (e.g. `"1994"` or `"Sep 1994"`). Never use ISO date strings like `"1994-09-16"`.
 - `associated_people[]` - must include `id` (slug), `name`, `role` (one-line title), and `relationship` (narrative sentence).
-- `disclosures[].type` - must be one of: `article`, `written`, `television`, `podcast`, `congressional-testimony`, `speech`, `film`, `formal-complaint`, `declassification`.
+- `disclosures[].type` - must be one of: `article`, `written`, `print`, `television`, `film`, `documentary`, `podcast`, `radio`, `interview`, `speech`, `congressional-testimony`, `congressional-briefing`, `formal-complaint`, `declassification`, `academic-paper`, `conference`, `symposium`, `preprint`. Adding a new type requires a corresponding entry in `components/data/shared/disclosureTypes.ts`.
 - `disclosures[].notes` - use `notes`, not `description`.
 - `disclosures[].title` - required; give the disclosure a short name.
 
@@ -324,6 +324,17 @@ The component (`InsiderLinksTab`) reads `role`/`note` directly from the data. **
 
 ### Figure display name resolution
 `TimelineOverlay.tsx` and `DocumentDetail.tsx` both auto-resolve figure display names from `data/key-figures/index.json` as a fallback. When a new figure is added to the registry, their name appears automatically in these components without any code change. A SOURCE_CONFIG entry is only needed for a custom abbreviated label or non-default color.
+
+### Disclosure type configuration
+All disclosure type labels, badge colors, and timeline dot colors are centralized in:
+
+```
+components/data/shared/disclosureTypes.ts
+```
+
+Exports: `DISCLOSURE_TYPE_LABELS`, `DISCLOSURE_TYPE_COLORS`, `DISCLOSURE_TYPE_DOT`, `disclosureLabel(type)`.
+
+**Never define local TYPE_COLORS, TYPE_DOT, or label maps in individual components.** Both `SharedDisclosuresTab.tsx` and `GenericInsiderProfile.tsx` import from this file. If a new disclosure type is needed, add it once to `disclosureTypes.ts` and it propagates everywhere automatically.
 
 ---
 

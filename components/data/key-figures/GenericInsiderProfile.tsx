@@ -9,6 +9,7 @@ import { statusConfig } from '../shared/profileConstants';
 import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
+import { disclosureLabel } from '../shared/disclosureTypes';
 
 const FigureCareerFlow = dynamic(
   () => import('../shared/FigureCareerFlow'),
@@ -107,23 +108,6 @@ interface Credibility {
 }
 
 // --- Helpers ---
-
-const DISCLOSURE_TYPE_LABELS: Record<string, string> = {
-  'article': 'Article',
-  'written': 'Book / Written',
-  'television': 'Television',
-  'podcast': 'Podcast',
-  'congressional-testimony': 'Congressional Testimony',
-  'speech': 'Speech',
-  'film': 'Film',
-  'interview': 'Interview',
-  'formal-complaint': 'Formal Complaint',
-  'declassification': 'Declassification',
-};
-
-function disclosureLabel(type: string): string {
-  return DISCLOSURE_TYPE_LABELS[type] ?? type;
-}
 
 // Standard top-level keys present in every profile JSON — not feature sections.
 const KNOWN_SCHEMA_KEYS = new Set([
