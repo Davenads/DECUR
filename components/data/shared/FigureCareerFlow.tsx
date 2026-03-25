@@ -299,29 +299,25 @@ function CareerLegend({ connectionTypes }: { connectionTypes: ConnectionType[] }
   });
 
   return (
-    <div style={{ position: 'absolute', top: 10, right: 10, zIndex: 10, background: 'rgba(15,23,42,0.90)', border: '1px solid #1e293b', borderRadius: 8, padding: '7px 10px', backdropFilter: 'blur(4px)' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3px 12px' }}>
-        {eventEntries.map(([type, s]) => (
-          <div key={type} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-            <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 2, background: s.yearBg, flexShrink: 0 }} />
-            <span style={{ fontSize: 10, color: '#94a3b8', whiteSpace: 'nowrap' }}>{s.label}</span>
-          </div>
-        ))}
-      </div>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 14px', alignItems: 'center' }}>
+      {eventEntries.map(([type, s]) => (
+        <div key={type} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+          <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 2, background: s.yearBg, flexShrink: 0 }} />
+          <span style={{ fontSize: 10, color: '#94a3b8', whiteSpace: 'nowrap' }}>{s.label}</span>
+        </div>
+      ))}
       {uniqueConnTypes.length > 0 && (
         <>
-          <div style={{ height: 1, background: '#1e293b', margin: '6px 0' }} />
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3px 12px' }}>
-            {uniqueConnTypes.map(ct => {
-              const s = CONN_TYPE_STYLES[ct as ConnectionType];
-              return s ? (
-                <div key={ct} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 2, border: `1.5px dashed ${s.color}`, flexShrink: 0 }} />
-                  <span style={{ fontSize: 10, color: '#94a3b8', whiteSpace: 'nowrap' }}>{s.label}</span>
-                </div>
-              ) : null;
-            })}
-          </div>
+          <span style={{ display: 'inline-block', width: 1, height: 12, background: '#334155', margin: '0 2px', flexShrink: 0 }} />
+          {uniqueConnTypes.map(ct => {
+            const s = CONN_TYPE_STYLES[ct as ConnectionType];
+            return s ? (
+              <div key={ct} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 2, border: `1.5px dashed ${s.color}`, flexShrink: 0 }} />
+                <span style={{ fontSize: 10, color: '#94a3b8', whiteSpace: 'nowrap' }}>{s.label}</span>
+              </div>
+            ) : null;
+          })}
         </>
       )}
     </div>
@@ -489,8 +485,8 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
   const connTypes = careerConnections.map(c => c.connection_type);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: hasConn ? 440 : 240, background: '#0f172a', borderRadius: 10, overflow: 'hidden', border: '1px solid #1e293b' }}>
-      <CareerLegend connectionTypes={connTypes} />
+    <div style={{ width: '100%', background: '#0f172a', borderRadius: 10, overflow: 'hidden', border: '1px solid #1e293b' }}>
+      <div style={{ position: 'relative', height: hasConn ? 440 : 240 }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -513,8 +509,8 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
         <Controls showInteractive={false} style={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }} />
       </ReactFlow>
 
-      {/* Detail panel — shown when a truncated node is clicked */}
-      {selectedPanel && (() => {
+        {/* Detail panel — shown when a truncated node is clicked */}
+        {selectedPanel && (() => {
         if (selectedPanel.kind === 'connection') {
           const connStyle = CONN_TYPE_STYLES[selectedPanel.connectionType] ?? { color: '#64748b', label: 'Connection' };
           return (
@@ -554,6 +550,10 @@ export default function FigureCareerFlow({ keyEvents, careerConnections = [] }: 
           </div>
         );
       })()}
+      </div>
+      <div style={{ borderTop: '1px solid #1e293b', padding: '8px 12px' }}>
+        <CareerLegend connectionTypes={connTypes} />
+      </div>
     </div>
   );
 }
