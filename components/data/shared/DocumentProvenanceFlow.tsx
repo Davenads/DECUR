@@ -7,7 +7,6 @@ import {
   BackgroundVariant,
   MarkerType,
   Handle,
-  Panel,
   Position,
   useNodesState,
   useEdgesState,
@@ -118,18 +117,7 @@ const LEGEND_TYPES: ProvenanceNodeType[] = [
 
 function ProvenanceLegend() {
   return (
-    <div
-      style={{
-        background: 'rgba(15,23,42,0.88)',
-        border: '1px solid #1e293b',
-        borderRadius: 8,
-        padding: '7px 10px',
-        backdropFilter: 'blur(4px)',
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '3px 10px',
-      }}
-    >
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 14px' }}>
       {LEGEND_TYPES.map(type => {
         const s = TYPE_STYLES[type];
         return (
@@ -198,43 +186,45 @@ export default function DocumentProvenanceFlow({ chain }: Props) {
   return (
     <div
       style={{
-        position: 'relative',
         width: '100%',
-        height: 220,
         background: '#0f172a',
         borderRadius: 10,
-        overflow: 'hidden',
         border: '1px solid #1e293b',
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        nodeTypes={nodeTypes}
-        onInit={onInit}
-        fitView
-        fitViewOptions={{ padding: 0.2 }}
-        minZoom={0.3}
-        maxZoom={2}
-        colorMode="dark"
-        proOptions={{ hideAttribution: true }}
-        nodesDraggable={false}
-        elementsSelectable={false}
-        zoomOnScroll={false}
-        panOnScroll={false}
-      >
-        <Background
-          variant={BackgroundVariant.Dots}
-          gap={20}
-          size={1}
-          color="#1e293b"
-        />
-        <Panel position="bottom-left">
-          <ProvenanceLegend />
-        </Panel>
-      </ReactFlow>
+      <div style={{ height: 220, position: 'relative' }}>
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          nodeTypes={nodeTypes}
+          onInit={onInit}
+          fitView
+          fitViewOptions={{ padding: 0.2 }}
+          minZoom={0.3}
+          maxZoom={2}
+          colorMode="dark"
+          proOptions={{ hideAttribution: true }}
+          nodesDraggable={false}
+          elementsSelectable={false}
+          zoomOnScroll={false}
+          panOnScroll={false}
+        >
+          <Background
+            variant={BackgroundVariant.Dots}
+            gap={20}
+            size={1}
+            color="#1e293b"
+          />
+        </ReactFlow>
+      </div>
+      <div style={{ borderTop: '1px solid #1e293b', padding: '8px 12px' }}>
+        <ProvenanceLegend />
+      </div>
     </div>
   );
 }
