@@ -68,10 +68,8 @@ const About: NextPage = () => {
         <h1 className="text-3xl font-bold mb-8">About DECUR</h1>
 
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-          <div className="h-40 bg-gradient-to-r from-gray-800 to-gray-700" />
-
-          <div className="px-6 py-8 -mt-16">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-8">
+          <div className="px-6 py-8">
+            <div className="mb-8">
               <h2 className="text-xl font-bold mb-4">Our Mission</h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 DECUR (Data Exceeding Current Understanding of Reality) is dedicated to cataloging, analyzing, and
