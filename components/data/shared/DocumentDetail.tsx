@@ -3,6 +3,11 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { DocumentEntry } from '../../../types/data';
 import ProfileTabBar from './ProfileTabBar';
+import insiderIndex from '../../../data/key-figures/index.json';
+
+const figureNameMap: Record<string, string> = Object.fromEntries(
+  (insiderIndex as Array<{ id: string; name: string }>).map(f => [f.id, f.name])
+);
 
 const DocumentProvenanceFlow = dynamic(
   () => import('./DocumentProvenanceFlow'),
@@ -142,23 +147,28 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
     );
   }
 
-  const labels: Record<string, { name: string; role: string; note: string }> = {
-    'eric-davis':    { name: 'Eric Davis',    role: 'Attributed author of the memo; subject of its contents',           note: 'Davis has not explicitly confirmed or denied the document\'s authenticity.' },
-    'david-grusch':  { name: 'David Grusch',  role: 'Described the same oversight-denial mechanism in 2023 testimony',  note: 'Grusch\'s testimony corroborates the oversight failure described in multiple documents.' },
-    'hal-puthoff':   { name: 'Hal Puthoff',   role: 'Named in Wilson-Davis as aware of the programs described',         note: 'Puthoff\'s long history in classified research programs intersects with multiple documents here.' },
-    'chris-mellon':  { name: 'Chris Mellon',  role: 'Shaped NDAA UAP legislative language; cited Wilson-Davis in advocacy', note: 'Mellon is the primary legislative architect behind the UAP provisions.' },
-    'luis-elizondo': { name: 'Luis Elizondo', role: 'AATIP director whose advocacy led directly to the UAPTF assessment', note: 'The UAPTF assessment is the institutionalized result of Elizondo\'s disclosure work.' },
-    'garry-nolan':   { name: 'Garry Nolan',   role: 'Published peer-reviewed UAP methodology aligned with NASA study approach', note: 'Nolan\'s scientific methodology parallels the NASA study\'s recommendations.' },
-    'nick-pope':     { name: 'Nick Pope',     role: 'UK MoD investigator who used the Halt Memo as a primary source',   note: 'Pope\'s 1993 reinvestigation relied on the Halt Memo and associated MoD classified file.' },
-    'karl-nell':     { name: 'Karl Nell',     role: 'Disputed AARO Historical Record Report conclusions publicly',      note: 'Nell corroborated Grusch\'s testimony and disputed AARO\'s methodology.' },
-    'jacques-vallee':{ name: 'Jacques Vallee', role: 'Scientific methodology approach aligned with NASA study recommendations', note: 'Vallee\'s decades of methodological advocacy for rigorous UAP science is echoed in the NASA study.' },
+  const labels: Record<string, { role: string; note: string }> = {
+    'eric-davis':    { role: 'Attributed author of the memo; subject of its contents',           note: 'Davis has not explicitly confirmed or denied the document\'s authenticity.' },
+    'david-grusch':  { role: 'Described the same oversight-denial mechanism in 2023 testimony',  note: 'Grusch\'s testimony corroborates the oversight failure described in multiple documents.' },
+    'hal-puthoff':   { role: 'Named in Wilson-Davis as aware of the programs described',         note: 'Puthoff\'s long history in classified research programs intersects with multiple documents here.' },
+    'chris-mellon':  { role: 'Shaped NDAA UAP legislative language; cited Wilson-Davis in advocacy', note: 'Mellon is the primary legislative architect behind the UAP provisions.' },
+    'luis-elizondo': { role: 'AATIP director whose advocacy led directly to the UAPTF assessment', note: 'The UAPTF assessment is the institutionalized result of Elizondo\'s disclosure work.' },
+    'garry-nolan':   { role: 'Published peer-reviewed UAP methodology aligned with NASA study approach', note: 'Nolan\'s scientific methodology parallels the NASA study\'s recommendations.' },
+    'nick-pope':     { role: 'UK MoD investigator who used the Halt Memo as a primary source',   note: 'Pope\'s 1993 reinvestigation relied on the Halt Memo and associated MoD classified file.' },
+    'karl-nell':     { role: 'Disputed AARO Historical Record Report conclusions publicly',      note: 'Nell corroborated Grusch\'s testimony and disputed AARO\'s methodology.' },
+    'jacques-vallee':{ role: 'Scientific methodology approach aligned with NASA study recommendations', note: 'Vallee\'s decades of methodological advocacy for rigorous UAP science is echoed in the NASA study.' },
   };
+
+  const resolveName = (id: string): string =>
+    figureNameMap[id] ??
+    id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
   return (
     <div className="space-y-4">
       <p className="text-sm text-gray-500 dark:text-gray-400">Connections to DECUR insider profiles through direct involvement or corroborating testimony.</p>
       {d.insider_connections.map((id, i) => {
-        const person = labels[id] ?? { name: id, role: 'DECUR insider', note: '' };
+        const ctx = labels[id] ?? { role: 'DECUR insider', note: '' };
+        const person = { name: resolveName(id), ...ctx };
         return (
           <div key={i} className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4">
             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
