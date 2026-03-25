@@ -1211,6 +1211,12 @@ export interface ProvenanceChainNode {
   type: ProvenanceNodeType;
 }
 
+export interface InsiderConnection {
+  id: string;
+  role: string;
+  note?: string;
+}
+
 export interface DocumentEntry {
   id: string;
   name: string;
@@ -1224,7 +1230,7 @@ export interface DocumentEntry {
   significance: string;
   key_findings: string[];
   provenance: string;
-  insider_connections: string[];
+  insider_connections: InsiderConnection[];
   limitations: string[];
   provenance_chain?: ProvenanceChainNode[];
 }

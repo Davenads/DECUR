@@ -22,9 +22,21 @@
     ],
     "provenance": "The document first appeared publicly in June 2019 when it was posted to the Steven Greer/Richard Doty/Keith Basterfield research network. Its origins are traced to the estate of the late Apollo astronaut Edgar Mitchell. Grant Cameron confirmed possession of a copy. The document's internal formatting, citations, and timeline are consistent with Eric Davis's documented activities. Davis has appeared in public forums where the document has been raised and has not issued an explicit denial. Former Senate Intelligence Committee staff member and TTSA co-founder Christopher Mellon has cited the memo in discussions of oversight failures. David Grusch's 2023 congressional testimony described the same oversight-denial mechanism detailed in the memo.",
     "insider_connections": [
-      "eric-davis",
-      "david-grusch",
-      "hal-puthoff"
+      {
+        "id": "eric-davis",
+        "role": "Subject of the memo; alleged witness to SAP briefings",
+        "note": "Davis has not publicly confirmed or denied the document authenticity."
+      },
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      },
+      {
+        "id": "hal-puthoff",
+        "role": "Named in Wilson-Davis as having knowledge of the programs described",
+        "note": "Puthoff long history in classified research programs intersects with this document."
+      }
     ],
     "limitations": [
       "The document has not been officially declassified or confirmed by any US government agency",
@@ -96,9 +108,21 @@
     ],
     "provenance": "Mandated by the FY2021 Intelligence Authorization Act, Section 1603. Produced by the UAP Task Force under the Office of Naval Intelligence, coordinated across the intelligence community. Released publicly on June 25, 2021 simultaneously with a classified version provided to congressional intelligence and armed services committees. The public version is 9 pages; the classified annex has not been released but was reported to contain additional case details.",
     "insider_connections": [
-      "luis-elizondo",
-      "chris-mellon",
-      "david-grusch"
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      },
+      {
+        "id": "chris-mellon",
+        "role": "Provided legislative advocacy that shaped the UAP provisions described",
+        "note": "Mellon is the primary legislative architect behind related UAP provisions."
+      },
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      }
     ],
     "limitations": [
       "The report covers only 144 cases — a fraction of UAP incidents that have been reported by US military and intelligence sources",
@@ -162,10 +186,26 @@
     ],
     "provenance": "Mandated by the FY2023 National Defense Authorization Act (Section 1683). Produced by AARO under the leadership of Dr. Sean Kirkpatrick (AARO director at time of production). Released publicly March 8, 2024. Accompanied by a classified annex provided to congressional intelligence committees. David Grusch, Karl Nell, and other disclosure advocates immediately disputed the report's conclusions, with Grusch stating he was never interviewed by AARO for the historical record investigation. Multiple senators and representatives expressed concern that AARO's access was insufficient.",
     "insider_connections": [
-      "david-grusch",
-      "karl-nell",
-      "chris-mellon",
-      "luis-elizondo"
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      },
+      {
+        "id": "karl-nell",
+        "role": "Publicly disputed the AARO Historical Record Report conclusions",
+        "note": "Nell corroborated Grusch testimony and disputed AARO methodology cited in this report."
+      },
+      {
+        "id": "chris-mellon",
+        "role": "Provided legislative advocacy that shaped the UAP provisions described",
+        "note": "Mellon is the primary legislative architect behind related UAP provisions."
+      },
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      }
     ],
     "limitations": [
       "AARO director Sean Kirkpatrick acknowledged in public statements that AARO was unable to access all potentially relevant programs — the report's scope is limited by what AARO was permitted to review",
@@ -200,8 +240,16 @@
     ],
     "provenance": "NASA commissioned the independent study in October 2022. The 16-member team was chaired by David Spergel, a Princeton astrophysicist and former chair of NASA's Science Advisory Committee. Team members included Dr. Scott Kelly (astronaut), Daniel Evans (NASA Science Mission Directorate), and other credentialed scientists and former military officials. The study was explicitly independent of the UAPTF and AARO processes. Report released publicly September 14, 2023.",
     "insider_connections": [
-      "garry-nolan",
-      "jacques-vallee"
+      {
+        "id": "garry-nolan",
+        "role": "Published peer-reviewed UAP methodology aligned with findings in this document",
+        "note": "Nolan scientific methodology parallels recommendations found in this study."
+      },
+      {
+        "id": "jacques-vallee",
+        "role": "Scientific methodology approach aligned with recommendations in this document",
+        "note": "Vallee decades of methodological advocacy for rigorous UAP science is echoed here."
+      }
     ],
     "limitations": [
       "The study team had no access to classified UAP data — their analysis was limited to unclassified reports and imagery",
@@ -235,7 +283,11 @@
     ],
     "provenance": "Written by Lt Col Charles Halt on January 13, 1981 — approximately two weeks after the incidents — and submitted to the UK Ministry of Defence as required for incidents near UK airspace. The MoD filed it and took no further action. The memo was released via FOIA request in 1983 and has been in the public domain since. The accompanying Halt audio tape — a 17-minute real-time recording of the second night — was released later and serves as an audio companion to the written memo. The document's authenticity has never been disputed; it is an official record.",
     "insider_connections": [
-      "nick-pope"
+      {
+        "id": "nick-pope",
+        "role": "UK MoD investigator who used this document as a primary source",
+        "note": "Pope 1993 reinvestigation relied on this memo and associated MoD classified file."
+      }
     ],
     "limitations": [
       "The memo is one page written two weeks after the events — it is a summary, not a detailed investigation",
@@ -338,9 +390,21 @@
     ],
     "provenance": "The UAP provisions were developed through the Senate and House Armed Services Committees and Intelligence Committees, with strong leadership from Senators Kirsten Gillibrand and Marco Rubio and Representatives Mike Gallagher and Tim Burchett. Chris Mellon has publicly stated he worked directly with congressional staff on the legislative language. Passed as part of the full NDAA with overwhelming bipartisan support. Signed into law December 23, 2022.",
     "insider_connections": [
-      "chris-mellon",
-      "david-grusch",
-      "luis-elizondo"
+      {
+        "id": "chris-mellon",
+        "role": "Provided legislative advocacy that shaped the UAP provisions described",
+        "note": "Mellon is the primary legislative architect behind related UAP provisions."
+      },
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      },
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      }
     ],
     "limitations": [
       "Legislation creates institutional frameworks but cannot compel genuine transparency if agencies choose non-compliance",
@@ -375,9 +439,21 @@
     ],
     "provenance": "Classified Secret at production. CIA convened and sponsored the panel through its Office of Scientific Intelligence. Partially declassified 1958; further released via FOIA requests. Available at CIA FOIA Electronic Reading Room. Reprinted in full as Appendix U of the 1969 Condon Report. Extended session notes by Frederick Durant (the 'Durant Report') serve as the primary record of proceedings.",
     "insider_connections": [
-      "luis-elizondo",
-      "david-grusch",
-      "chris-mellon"
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      },
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      },
+      {
+        "id": "chris-mellon",
+        "role": "Provided legislative advocacy that shaped the UAP provisions described",
+        "note": "Mellon is the primary legislative architect behind related UAP provisions."
+      }
     ],
     "limitations": [
       "The panel reviewed approximately 1% of the Air Force's UAP case file in roughly 12 hours — statistically inadequate for policy-level conclusions",
@@ -481,8 +557,16 @@
     ],
     "provenance": "The University of Colorado study was contracted October 1966 and ran through November 1968. The Low memo was discovered in Low's files by Saunders and Levine; NICAP director Donald Keyhoe circulated copies; John G. Fuller published an expose in Look magazine (May 1968). Saunders and Levine were fired by Condon following the leak. The final report was edited by Daniel S. Gillmor and published by E.P. Dutton and Bantam Books (1969). The National Academy of Sciences reviewed and endorsed the report's methodology without addressing the Low memo or the gap between case findings and Condon's summary.",
     "insider_connections": [
-      "jacques-vallee",
-      "luis-elizondo"
+      {
+        "id": "jacques-vallee",
+        "role": "Scientific methodology approach aligned with recommendations in this document",
+        "note": "Vallee decades of methodological advocacy for rigorous UAP science is echoed here."
+      },
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      }
     ],
     "limitations": [
       "The Low memo — explicitly describing a predetermined conclusion as the study's design intent — was known before the report was complete and was not treated as disqualifying by the Air Force",
@@ -517,8 +601,16 @@
     ],
     "provenance": "Elizondo submitted the letter October 4, 2017 and made it public himself. The December 16, 2017 NYT investigation ('Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program') first publicly named AATIP and confirmed Elizondo as its director; the letter circulated alongside that reporting. DoD FOIA release 18-F-0324 contains related Pentagon correspondence about Elizondo's claims. The full verbatim text of the letter has not been released through an official government FOIA channel; publicly available characterizations derive from journalism rather than a certified primary source transcript.",
     "insider_connections": [
-      "luis-elizondo",
-      "chris-mellon"
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      },
+      {
+        "id": "chris-mellon",
+        "role": "Provided legislative advocacy that shaped the UAP provisions described",
+        "note": "Mellon is the primary legislative architect behind related UAP provisions."
+      }
     ],
     "limitations": [
       "The full verbatim text has not been released through an official FOIA channel — content characterizations derive from journalism, not a certified primary-source transcript",
@@ -581,7 +673,11 @@
     ],
     "provenance": "Declassified and released as part of the Air Force's early UAP investigation records. Authenticated through presence in multiple government archives including the National Archives and Records Administration (NARA). Its existence was publicly referenced in Project Blue Book-era documents and has never been disputed for authenticity.",
     "insider_connections": [
-      "j-allen-hynek"
+      {
+        "id": "j-allen-hynek",
+        "role": "Scientific consultant whose work is central to this document",
+        "note": "Hynek involvement in Project Blue Book and related programs is directly referenced."
+      }
     ],
     "limitations": [
       "The memo reflects Twining's conclusions based on limited unverified data from 1947 and should not be read as a contemporary intelligence assessment",
@@ -711,7 +807,11 @@
     ],
     "provenance": "The original document was destroyed on General Vandenberg's orders per Ruppelt's contemporaneous account. Its existence is established through: Ruppelt's memoir (1956), interviews with surviving Project SIGN personnel, and Project SIGN's Final Report (December 1948) which references the prior classified assessment without reproducing its conclusions.",
     "insider_connections": [
-      "j-allen-hynek"
+      {
+        "id": "j-allen-hynek",
+        "role": "Scientific consultant whose work is central to this document",
+        "note": "Hynek involvement in Project Blue Book and related programs is directly referenced."
+      }
     ],
     "limitations": [
       "The original document does not exist - this entry is based on secondhand accounts of its contents",
@@ -741,7 +841,11 @@
     ],
     "provenance": "Officially released by AARO in July 2024 as a publicly available unclassified report. A classified annex exists and has been provided to appropriate congressional committees. Directly downloadable from the Department of Defense website.",
     "insider_connections": [
-      "david-grusch"
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      }
     ],
     "limitations": [
       "AARO has been criticized by congressional UAP witnesses for not interviewing key witnesses before publishing conclusions",
@@ -771,9 +875,20 @@
     ],
     "provenance": "The document was discovered by Jacques Vallee in J. Allen Hynek's personal papers in 1967. Hynek had apparently kept it without publicizing its significance. Vallee described it publicly decades later. The document's authenticity has not been formally disputed, as its content is consistent with the organizational structure of both Battelle and the Air Force's Blue Book administration at the time.",
     "insider_connections": [
-      "j-allen-hynek",
-      "jacques-vallee",
-      "richard-dolan"
+      {
+        "id": "j-allen-hynek",
+        "role": "Scientific consultant whose work is central to this document",
+        "note": "Hynek involvement in Project Blue Book and related programs is directly referenced."
+      },
+      {
+        "id": "jacques-vallee",
+        "role": "Scientific methodology approach aligned with recommendations in this document",
+        "note": "Vallee decades of methodological advocacy for rigorous UAP science is echoed here."
+      },
+      {
+        "id": "richard-dolan",
+        "role": "Historian who analyzed and publicized the significance of this document"
+      }
     ],
     "limitations": [
       "The full classified program described in the memo has never been officially acknowledged or described in detail",
@@ -833,10 +948,26 @@
     ],
     "provenance": "Developed through the Senate and House Armed Services Committees. The UAP Disclosure Act provisions were originally introduced by Senate Majority Leader Chuck Schumer and Senator Mike Rounds as an amendment to the NDAA, modeled on the JFK Records Act with a Presidential Review Board. Lobbying by defense contractors and intelligence community interests resulted in the Review Board provision being stripped before final passage. The remaining provisions were negotiated by the Armed Services Committees with input from Senator Schumer, Senator Rounds, and key House members. Signed by President Biden on December 22, 2023.",
     "insider_connections": [
-      "david-grusch",
-      "chris-mellon",
-      "luis-elizondo",
-      "chuck-schumer"
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      },
+      {
+        "id": "chris-mellon",
+        "role": "Provided legislative advocacy that shaped the UAP provisions described",
+        "note": "Mellon is the primary legislative architect behind related UAP provisions."
+      },
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      },
+      {
+        "id": "chuck-schumer",
+        "role": "Co-authored the UAP Disclosure Act provisions contained in this legislation",
+        "note": "Schumer brought the UAP Disclosure Act to the Senate floor; many provisions derive from his bill."
+      }
     ],
     "limitations": [
       "The most significant provision of the original Schumer-Rounds proposal - the Presidential Review Board with binding declassification authority - was removed before passage",
@@ -870,9 +1001,21 @@
     ],
     "provenance": "Mandated by the FY2022 Intelligence Authorization Act and subsequent NDAA UAP provisions. Produced by AARO under the direction of the ODNI. The report covers January 1 through December 31, 2023, and was released publicly in March 2024. Accompanied by a classified annex provided to congressional intelligence and armed services committees. The report period coincides with Sean Kirkpatrick's final months as AARO director - he resigned in December 2023.",
     "insider_connections": [
-      "sean-kirkpatrick",
-      "david-grusch",
-      "luis-elizondo"
+      {
+        "id": "sean-kirkpatrick",
+        "role": "Former AARO director whose findings are documented in this report",
+        "note": "Kirkpatrick led AARO during the period covered by this annual assessment."
+      },
+      {
+        "id": "david-grusch",
+        "role": "Cited the document as corroboration for his disclosure claims",
+        "note": "Grusch testimony directly references the oversight mechanisms described in this document."
+      },
+      {
+        "id": "luis-elizondo",
+        "role": "Former AATIP director whose disclosure efforts preceded this document",
+        "note": "Elizondo advocacy contributed directly to the institutional response documented here."
+      }
     ],
     "limitations": [
       "97% data-insufficient rate means the report characterizes very few cases definitively - the database growth represents quantity, not resolution quality",
