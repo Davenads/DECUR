@@ -7,6 +7,7 @@ import {
   BackgroundVariant,
   MarkerType,
   Handle,
+  Panel,
   Position,
   useNodesState,
   useEdgesState,
@@ -119,10 +120,6 @@ function ProvenanceLegend() {
   return (
     <div
       style={{
-        position: 'absolute',
-        top: 10,
-        right: 10,
-        zIndex: 10,
         background: 'rgba(15,23,42,0.88)',
         border: '1px solid #1e293b',
         borderRadius: 8,
@@ -210,7 +207,6 @@ export default function DocumentProvenanceFlow({ chain }: Props) {
         border: '1px solid #1e293b',
       }}
     >
-      <ProvenanceLegend />
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -235,6 +231,9 @@ export default function DocumentProvenanceFlow({ chain }: Props) {
           size={1}
           color="#1e293b"
         />
+        <Panel position="bottom-left">
+          <ProvenanceLegend />
+        </Panel>
       </ReactFlow>
     </div>
   );
