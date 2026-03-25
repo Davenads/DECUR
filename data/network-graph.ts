@@ -502,6 +502,13 @@ export const graphData: GraphData = {
     { source: 'matthew-brown',   target: 'aaro',                    label: 'Reviewed classified AARO transcripts; alleges obstruction' },
     { source: 'matthew-brown',   target: 'pentagon-ousd',           label: 'Served as policy and technical advisor (OSD, OUSD(I&S))' },
 
+    // Neil McCasland connections
+    { source: 'neil-mccasland', target: 'tom-delonge',   label: 'Named by DeLonge in Jan 2016 Podesta email as military adviser; helped assemble DeLonge\'s UAP disclosure advisory team over four months' },
+    { source: 'neil-mccasland', target: 'ttsa',          label: 'Aided pre-founding assembly of TTSA advisory team, per DeLonge\'s Jan 2016 WikiLeaks email to Podesta' },
+    { source: 'neil-mccasland', target: 'roswell-1947',  label: 'Commanded AFRL Wright-Patterson (2011-2013) - the facility historically cited as repository for Roswell recovered materials' },
+    { source: 'neil-mccasland', target: 'tim-burchett',  label: 'Burchett publicly identified McCasland following his 2026 disappearance as connected to UAP and holding significant undisclosed knowledge' },
+    { source: 'neil-mccasland', target: 'hal-puthoff',   label: 'Parallel figures in DeLonge\'s pre-TTSA advisory network; both cited in the 2016 Podesta email disclosure circle' },
+
     // Case node connections
     // Nimitz Tic Tac
     { source: 'nimitz-tic-tac',        target: 'david-fravor',              label: 'witnessed by' },

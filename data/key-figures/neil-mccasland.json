@@ -1,0 +1,217 @@
+{
+  "profile": {
+    "id": "neil-mccasland",
+    "name": "Maj. Gen. Neil McCasland",
+    "aliases": ["William Neil McCasland", "W. Neil McCasland", "General McCasland"],
+    "born": "c. 1957",
+    "died": null,
+    "roles": [
+      "Commander, Air Force Research Laboratory (AFRL), Wright-Patterson AFB (2011-2013)",
+      "Director of Special Programs, Office of the Under Secretary of Defense for AT&L (2009-2011)",
+      "Executive Secretary, Special Access Program Oversight Committee (SAPOC) (2009-2011)",
+      "Director of Space Acquisition, Office of the Under Secretary of the Air Force (2007-2009)",
+      "Director of Technology, Applied Technology Associates / BlueHalo (2013-2026)"
+    ],
+    "service_period": "1979-2013 (U.S. Air Force); 2013-2026 (Applied Technology Associates / BlueHalo)",
+    "organizations": [
+      "U.S. Air Force",
+      "Air Force Research Laboratory",
+      "Office of the Under Secretary of Defense for Acquisition, Technology and Logistics",
+      "Special Access Program Oversight Committee (SAPOC)",
+      "Applied Technology Associates / BlueHalo"
+    ],
+    "clearance": "TS/SCI with SAP access (former); SAPOC Executive Secretary with oversight authority over all U.S. Special Access Programs",
+    "summary": "Retired U.S. Air Force Major General and MIT-trained aerospace engineer who commanded the Air Force Research Laboratory at Wright-Patterson AFB from 2011 to 2013 - the Department of Defense's largest scientific research center and the facility historically cited as the repository of recovered materials from the 1947 Roswell incident. Prior to AFRL command, he served as Director of Special Programs in the Office of the Under Secretary of Defense and as Executive Secretary of the Special Access Program Oversight Committee (SAPOC), giving him formal oversight authority over all U.S. Special Access Programs. He is identified by name in Tom DeLonge's January 2016 WikiLeaks email to John Podesta as a primary military adviser who aided the assembly of DeLonge's disclosure advisory team that became To The Stars Academy. He disappeared from his Albuquerque, New Mexico home on February 27, 2026; the FBI joined the search and the case remained unresolved as of March 2026.",
+    "education": [
+      "B.S., Astronautical Engineering, U.S. Air Force Academy, 1979",
+      "M.S., Aerospace Engineering, Massachusetts Institute of Technology",
+      "Ph.D., Aerospace Engineering, Massachusetts Institute of Technology"
+    ],
+    "early_career": [
+      "Commissioned as a USAF officer upon graduating from the Air Force Academy in 1979 with a degree in astronautical engineering",
+      "Pursued graduate studies at MIT, earning both a master's and doctorate in aerospace engineering",
+      "Served in multiple Air Force research and space acquisition commands, including Commander of the Phillips Research Site at the AFRL Space Vehicles Directorate in New Mexico"
+    ],
+    "key_events": [
+      {
+        "year": "1979",
+        "event": "Graduated from the U.S. Air Force Academy with a B.S. in Astronautical Engineering and was commissioned as an officer. Subsequently earned an M.S. and Ph.D. in Aerospace Engineering from MIT."
+      },
+      {
+        "year": "1980s-2006",
+        "event": "Rose through the Air Force research and space acquisition chain over more than two decades, commanding the Phillips Research Site at the Air Force Research Laboratory Space Vehicles Directorate in Albuquerque, New Mexico."
+      },
+      {
+        "year": "2007",
+        "event": "Assigned to the Pentagon as Director of Space Acquisition within the Office of the Under Secretary of the Air Force, overseeing classified space technology programs and acquisition strategy."
+      },
+      {
+        "year": "2009",
+        "event": "Promoted to Director of Special Programs within the Office of the Under Secretary of Defense for Acquisition, Technology and Logistics. Concurrently served as Executive Secretary of the Special Access Program Oversight Committee (SAPOC) - the body with formal review authority over all U.S. Special Access Programs across every military branch and intelligence agency."
+      },
+      {
+        "year": "May 2011",
+        "event": "Assumed command of the Air Force Research Laboratory (AFRL) at Wright-Patterson AFB, Ohio - the DoD's largest scientific research center, historically cited as the repository for recovered materials from the 1947 Roswell incident. Led billions of dollars in advanced materials science, directed energy, and classified research programs across the facility."
+      },
+      {
+        "year": "Oct 2013",
+        "event": "Retired from the U.S. Air Force after a 34-year career. Joined Applied Technology Associates (ATA) in Albuquerque, New Mexico as Director of Technology. ATA subsequently became a subsidiary of BlueHalo. Also joined the Board of Trustees of Riverside Research."
+      },
+      {
+        "year": "Jan 2016",
+        "event": "Named in Tom DeLonge's email to John Podesta, subsequently published by WikiLeaks. DeLonge described McCasland as a senior military adviser he had worked with for four months on UAP disclosure strategy, credited him with helping assemble his advisory team, and stated that McCasland had commanded the exact laboratory at Wright-Patterson where Roswell crash materials were allegedly shipped."
+      },
+      {
+        "year": "Feb 2026",
+        "event": "Disappeared from his Albuquerque, New Mexico home on February 27, 2026. Bernalillo County Sheriff's Office issued a Silver Alert; he left behind his phone and glasses but took his wallet, hiking boots, and a .38 revolver. The FBI subsequently joined the search. Rep. Tim Burchett publicly stated McCasland 'definitely is connected to the UAP topic' and that 'we believe he has a lot to say.' The case remained unresolved as of March 2026."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "wright-patterson-materials",
+      "category": "government program",
+      "claim": "McCasland held institutional knowledge of UAP-related materials stored at the Air Force Research Laboratory at Wright-Patterson AFB, which he commanded from 2011-2013 - the facility historically cited as the repository of Roswell crash debris.",
+      "status": "unverified",
+      "notes": "Asserted by Tom DeLonge in his January 2016 WikiLeaks email to Podesta, in which DeLonge states McCasland commanded 'the exact laboratory' to which Roswell materials were shipped. McCasland has not publicly confirmed or denied this characterization. The claim rests entirely on DeLonge's attribution in a private communication."
+    },
+    {
+      "id": "ttsa-advisory-assembly",
+      "category": "government program",
+      "claim": "McCasland aided DeLonge in assembling the advisory team of current and former military and intelligence officials that became the core of To The Stars Academy.",
+      "status": "unverified",
+      "notes": "Stated directly by DeLonge in the January 2016 Podesta email: 'He has helped me assemble the team.' This provides documentary evidence of McCasland's active participation in the pre-TTSA disclosure network, though the full scope of his involvement beyond this reference is not confirmed from any independent source."
+    },
+    {
+      "id": "sapoc-uap-access",
+      "category": "government access",
+      "claim": "McCasland's role as Executive Secretary of SAPOC (2009-2011) gave him oversight authority over all U.S. Special Access Programs, including any UAP-related reverse-engineering programs operating within that structure.",
+      "status": "unverified",
+      "notes": "An inference from his documented government role rather than a personal statement. SAPOC is the oversight body for all SAPs. Whether UAP-related programs exist within that structure - and whether McCasland had specific knowledge of them - has not been confirmed from any public source, though Rep. Burchett's 2026 statement that McCasland 'has a lot to say' is consistent with this inference."
+    }
+  ],
+  "associated_people": [
+    {
+      "id": "tom-delonge",
+      "name": "Tom DeLonge",
+      "role": "Founder, To The Stars Academy",
+      "relationship": "DeLonge named McCasland in a January 2016 email to John Podesta describing him as a military adviser who had been working with DeLonge for four months on disclosure strategy, helped assemble DeLonge's advisory team, and possessed knowledge of UAP materials at Wright-Patterson AFRL. McCasland's engagement with DeLonge predated the formal founding of TTSA by approximately 18 months."
+    },
+    {
+      "id": "tim-burchett",
+      "name": "Rep. Tim Burchett",
+      "role": "U.S. Representative (R-TN); House UAP Caucus",
+      "relationship": "Following McCasland's disappearance in February 2026, Burchett publicly stated that McCasland 'definitely is connected to the UAP topic' and that 'we believe he has a lot to say' - among the most direct congressional characterizations of a specific named figure's UAP knowledge made on the record."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Hal Puthoff",
+      "role": "Physicist; TTSA Co-founder and Vice President of Science and Technology",
+      "relationship": "Both were figures in the DeLonge disclosure advisory network that formed during 2015-2016 and became TTSA. Puthoff served as TTSA's Vice President of Science and Technology; McCasland's role was informal but documented via the January 2016 Podesta email."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jan 2016",
+      "type": "written",
+      "title": "DeLonge-Podesta WikiLeaks Email (proxy reference)",
+      "outlet": "WikiLeaks Podesta Emails Archive (email #3099)",
+      "notes": "Tom DeLonge's January 25, 2016 email to John Podesta names McCasland as a senior military adviser who had been working with DeLonge for four months on UAP disclosure, helped assemble his advisory team, and commanded the AFRL laboratory at Wright-Patterson where Roswell crash materials were allegedly transported. This is a third-party reference to McCasland, not a statement by McCasland himself; it is the primary documentary evidence linking him to the UAP disclosure network."
+    }
+  ],
+  "sources": [
+    {
+      "title": "WikiLeaks - Podesta Email #3099 (DeLonge to Podesta, Jan 25, 2016)",
+      "url": "https://wikileaks.org/podesta-emails/emailid/3099",
+      "type": "Primary Document",
+      "notes": "The primary documentary source for McCasland's role in the pre-TTSA disclosure network. DeLonge references McCasland by name, describes his prior command of AFRL Wright-Patterson, and states he helped assemble DeLonge's advisory team."
+    },
+    {
+      "title": "Neil McCasland - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neil_McCasland",
+      "type": "Reference",
+      "notes": "Comprehensive biography covering military career, including AFRL command, SAPOC role, and post-military career at Applied Technology Associates / BlueHalo."
+    },
+    {
+      "title": "Missing US General 'has a lot of information' on UFOs: Congressman - Newsweek",
+      "url": "https://www.newsweek.com/missing-us-general-has-information-ufos-congressman-11684617",
+      "type": "News",
+      "notes": "Newsweek coverage of Rep. Tim Burchett's public statement identifying McCasland as connected to the UAP topic and asserting he 'has a lot to say.'"
+    },
+    {
+      "title": "Disappearance of UFO expert is 'national security crisis' - Newsweek",
+      "url": "https://www.newsweek.com/disappearance-of-ufo-expert-is-national-security-crisis-11645230",
+      "type": "News",
+      "notes": "Coverage of Ross Coulthart's characterization of McCasland's disappearance as a 'national security crisis' given his background and UAP knowledge."
+    },
+    {
+      "title": "FBI joins search for retired Air Force general, UFO expert - KTLA",
+      "url": "https://ktla.com/news/nationworld/fbi-missing-ufo-expert-general-mccasland/",
+      "type": "News",
+      "notes": "Reporting on FBI involvement in the search for McCasland, confirming active federal investigation as of March 2026."
+    },
+    {
+      "title": "Missing Air Force General Linked To UAPs, Space Weapons Programs - Daily Wire",
+      "url": "https://www.dailywire.com/news/missing-air-force-general-linked-to-uaps-space-weapons-programs-at-pentagon",
+      "type": "News",
+      "notes": "Covers McCasland's career connections to classified space weapons programs and UAP-adjacent research, including his SAPOC executive secretary role."
+    },
+    {
+      "title": "Riverside Research Welcomes Dr. Neil McCasland to Board of Trustees",
+      "url": "https://www.riversideresearch.org/insights/riverside-research-welcomes-dr-neil-mccasland-their-board-trustees",
+      "type": "Institutional",
+      "notes": "Confirms McCasland's post-retirement position on the Board of Trustees of Riverside Research, a national security-focused nonprofit."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Parallel figure in the DeLonge disclosure advisory network; both were key members of the pre-TTSA team DeLonge assembled during 2015-2016.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "case",
+      "node_id": "roswell-1947",
+      "node_label": "Roswell Incident (1947)",
+      "relationship": "Commanded the Air Force Research Laboratory at Wright-Patterson AFB - the facility historically cited as the repository for Roswell crash materials, per DeLonge's 2016 Podesta email.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "tom-delonge",
+      "node_label": "Tom DeLonge",
+      "relationship": "DeLonge named McCasland in a January 2016 WikiLeaks email as a military adviser who helped assemble DeLonge's UAP disclosure advisory team over a four-month working relationship.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "tim-burchett",
+      "node_label": "Rep. Tim Burchett",
+      "relationship": "Burchett publicly identified McCasland following his 2026 disappearance as connected to the UAP topic and possessing significant undisclosed knowledge.",
+      "connection_type": "professional"
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "McCasland's institutional positions are verifiable matters of public record: AFRL commander at Wright-Patterson, Director of Special Programs, SAPOC Executive Secretary - each carried extraordinary access to the most sensitive classified programs in the U.S. government.",
+      "The DeLonge-Podesta WikiLeaks email is a primary source document naming McCasland explicitly and describing a months-long advisory relationship - providing documented evidence of his engagement with the pre-TTSA disclosure network.",
+      "His SAPOC role is particularly significant: as Executive Secretary, he had formal oversight authority over all U.S. Special Access Programs. If UAP-related SAPs exist within that structure, they would fall under SAPOC's purview.",
+      "Rep. Tim Burchett's on-record statement following McCasland's disappearance - identifying him as connected to UAP and possessing significant knowledge - is among the most direct congressional characterizations of a specific named figure's UAP relevance.",
+      "McCasland maintained a consistent pattern of avoiding media attention and public statements on UAP throughout his retirement, consistent with someone operating under formal non-disclosure obligations.",
+      "His command of AFRL Wright-Patterson gives his institutional position direct relevance to the Roswell legacy - regardless of the underlying facts, he commanded the exact facility cited in the most significant long-running UAP materials hypothesis."
+    ],
+    "contradicting": [
+      "McCasland has never personally made any public disclosure or statement about UAP, NHI, or classified programs. All characterizations of his knowledge derive from third parties (DeLonge's email, Burchett's statements).",
+      "The WikiLeaks email is authored by DeLonge, not McCasland. DeLonge's description of McCasland's knowledge and involvement could reflect DeLonge's interpretation or aspiration rather than confirmed facts.",
+      "The Roswell-Wright-Patterson connection derives entirely from DeLonge's private email assertion; no independent government document confirms Roswell materials were stored at AFRL or that McCasland had specific contact with such materials.",
+      "His February 2026 disappearance, while widely associated with his UAP connections in media coverage, has no confirmed link to his former classified roles. Investigators have not indicated his past work is connected to his disappearance.",
+      "The SAPOC Executive Secretary role oversees the oversight process for SAPs, not necessarily the technical details of every program's contents. His access to specific UAP program information through this role is an inference, not a documented fact."
+    ]
+  }
+}

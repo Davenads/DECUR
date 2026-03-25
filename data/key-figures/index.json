@@ -1526,5 +1526,19 @@
     "data_file": "lynne-kitei.json",
     "type": "scientist",
     "includeInExplore": false
+  },
+  {
+    "id": "neil-mccasland",
+    "name": "Maj. Gen. Neil McCasland",
+    "aliases": ["William Neil McCasland", "W. Neil McCasland", "General McCasland"],
+    "role": "Commander, AFRL Wright-Patterson AFB; Director of Special Programs, OSD; SAPOC Executive Secretary",
+    "period": "1979-2013 (USAF)",
+    "affiliation": "U.S. Air Force; Air Force Research Laboratory; Office of the Under Secretary of Defense",
+    "summary": "Retired U.S. Air Force Major General and MIT-trained aerospace engineer who commanded the Air Force Research Laboratory at Wright-Patterson AFB (2011-2013) and served as Executive Secretary of the Special Access Program Oversight Committee (SAPOC) - giving him formal oversight authority over all U.S. Special Access Programs. Named in Tom DeLonge's January 2016 WikiLeaks email to John Podesta as a primary military adviser who helped assemble the disclosure advisory team that became To The Stars Academy. Disappeared from his Albuquerque home on February 27, 2026; the FBI joined the search and Rep. Tim Burchett stated publicly that McCasland 'has a lot to say' about UAP.",
+    "status": "detailed",
+    "tags": ["usaf", "afrl", "wright-patterson", "sapoc", "special-access-programs", "TTSA", "roswell", "DeLonge", "Podesta", "missing", "2026"],
+    "data_file": "neil-mccasland.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]
