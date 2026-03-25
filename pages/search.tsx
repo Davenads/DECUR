@@ -84,7 +84,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
         title: doc.name,
         subtitle: `${doc.issuing_authority} · ${doc.date}`,
         description: doc.summary ?? doc.significance ?? '',
-        href: `/data?category=documents`,
+        href: `/documents/${doc.id}`,
         badge: doc.document_type ?? 'Document',
       });
     }
