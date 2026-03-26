@@ -12,6 +12,15 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import rawCases from '../../data/cases.json';
+import {
+  FlowThemeContext,
+  useFlowTheme,
+  useFlowIsDark,
+  sem as semColor,
+  DARK_STRUCTURAL,
+  LIGHT_STRUCTURAL,
+  type SemanticColorKey,
+} from '../data/shared/flowTheme';
 
 // --------------------------------------------------------------------------
 // Types
@@ -53,20 +62,30 @@ interface CaseRecord {
 // Category style config (node border + badge)
 // --------------------------------------------------------------------------
 
-const CATEGORY_STYLES: Record<string, { border: string; bg: string; badge: string; badgeText: string; label: string }> = {
-  'military-aviation': { border: '#1e40af', bg: '#0c1635', badge: '#1e40af', badgeText: '#bfdbfe', label: 'Military Aviation' },
-  'military-ground':   { border: '#166534', bg: '#0d2818', badge: '#166534', badgeText: '#bbf7d0', label: 'Military Ground'   },
-  'military-naval':    { border: '#0e7490', bg: '#07222b', badge: '#0e7490', badgeText: '#a5f3fc', label: 'Military Naval'    },
-  'military-nuclear':  { border: '#b45309', bg: '#1a1005', badge: '#b45309', badgeText: '#fde68a', label: 'Military Nuclear'  },
-  'civilian':          { border: '#4b5563', bg: '#1a1f2b', badge: '#4b5563', badgeText: '#d1d5db', label: 'Civilian'          },
-  'government':        { border: '#5b21b6', bg: '#1a0a3d', badge: '#5b21b6', badgeText: '#ddd6fe', label: 'Government'        },
-  'research':          { border: '#0f766e', bg: '#071919', badge: '#0f766e', badgeText: '#99f6e4', label: 'Research'          },
+const CATEGORY_COLOR_MAP: Record<string, SemanticColorKey> = {
+  'military-aviation': 'indigo',
+  'military-ground':   'green',
+  'military-naval':    'cyan',
+  'military-nuclear':  'yellow',
+  'civilian':          'gray',
+  'government':        'purple',
+  'research':          'teal',
 };
 
-const DEFAULT_CAT = { border: '#374151', bg: '#1a1f2b', badge: '#374151', badgeText: '#9ca3af', label: 'Other' };
+const CATEGORY_LABELS: Record<string, string> = {
+  'military-aviation': 'Military Aviation',
+  'military-ground':   'Military Ground',
+  'military-naval':    'Military Naval',
+  'military-nuclear':  'Military Nuclear',
+  'civilian':          'Civilian',
+  'government':        'Government',
+  'research':          'Research',
+};
 
-function getCatStyle(category: string) {
-  return CATEGORY_STYLES[category] ?? DEFAULT_CAT;
+function getCatStyle(category: string, isDark: boolean) {
+  const key = CATEGORY_COLOR_MAP[category] ?? 'gray';
+  const s = semColor(key, isDark);
+  return { ...s, label: CATEGORY_LABELS[category] ?? category };
 }
 
 // --------------------------------------------------------------------------
@@ -98,7 +117,9 @@ const LEFT_OFFSET = LABEL_W + LABEL_GAP;
 // --------------------------------------------------------------------------
 
 function CaseNode({ data }: { data: CaseNodeData }) {
-  const cat = getCatStyle(data.category);
+  const isDark = useFlowIsDark();
+  const cat = getCatStyle(data.category, isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   const shortDate = data.date.replace(/^(\w+ \d+,?\s*)(\d{4}).*$/, '$2') || data.date;
   return (
     <>
@@ -119,11 +140,11 @@ function CaseNode({ data }: { data: CaseNodeData }) {
           justifyContent: 'space-between',
         }}
       >
-        <div style={{ fontWeight: 700, fontSize: 12, color: '#f1f5f9', lineHeight: 1.3, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+        <div style={{ fontWeight: 700, fontSize: 12, color: st.text, lineHeight: 1.3, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
           {data.label}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 4 }}>
-          <span style={{ fontSize: 10, color: '#64748b' }}>{shortDate}</span>
+          <span style={{ fontSize: 10, color: st.textDim }}>{shortDate}</span>
           <span
             style={{
               fontSize: 9,
@@ -151,6 +172,8 @@ function CaseNode({ data }: { data: CaseNodeData }) {
 // --------------------------------------------------------------------------
 
 function TierLabelNode({ data }: { data: TierLabelNodeData }) {
+  const isDark = useFlowIsDark();
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   const cfg = TIER_CONFIG[data.tier] ?? { badgeColor: '#9ca3af', label: '' };
   const tierNum = data.tier.replace('tier-', '');
   return (
@@ -158,7 +181,7 @@ function TierLabelNode({ data }: { data: TierLabelNodeData }) {
       style={{
         width: LABEL_W,
         height: data.bandHeight,
-        background: 'rgba(15,23,42,0.7)',
+        background: isDark ? 'rgba(15,23,42,0.7)' : 'rgba(248,250,252,0.7)',
         border: `1.5px solid ${cfg.badgeColor}22`,
         borderRadius: 8,
         display: 'flex',
@@ -172,18 +195,18 @@ function TierLabelNode({ data }: { data: TierLabelNodeData }) {
         boxShadow: '0 2px 10px rgba(0,0,0,0.4)',
       }}
     >
-      <div style={{ fontSize: 8, fontWeight: 700, color: '#64748b', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+      <div style={{ fontSize: 8, fontWeight: 700, color: st.textDim, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
         TIER
       </div>
       <div style={{ fontSize: 28, fontWeight: 900, color: cfg.badgeColor, lineHeight: 1 }}>
         {tierNum}
       </div>
-      <div style={{ fontSize: 8, color: '#94a3b8', textAlign: 'center', lineHeight: 1.4, maxWidth: 64 }}>
+      <div style={{ fontSize: 8, color: st.textMuted, textAlign: 'center', lineHeight: 1.4, maxWidth: 64 }}>
         {cfg.label}
       </div>
-      <div style={{ width: 36, borderTop: '1px solid #1e293b', margin: '2px 0' }} />
-      <div style={{ fontSize: 12, fontWeight: 700, color: '#475569' }}>{data.caseCount}</div>
-      <div style={{ fontSize: 8, color: '#475569', textTransform: 'uppercase', letterSpacing: '0.06em' }}>cases</div>
+      <div style={{ width: 36, borderTop: `1px solid ${st.divider}`, margin: '2px 0' }} />
+      <div style={{ fontSize: 12, fontWeight: 700, color: st.edgeStroke }}>{data.caseCount}</div>
+      <div style={{ fontSize: 8, color: st.edgeStroke, textTransform: 'uppercase', letterSpacing: '0.06em' }}>cases</div>
     </div>
   );
 }
@@ -194,7 +217,9 @@ const nodeTypes = { caseCard: CaseNode, tierLabel: TierLabelNode };
 // Category legend
 // --------------------------------------------------------------------------
 
-function CategoryLegend({ categories }: { categories: string[] }) {
+interface CategoryLegendProps { categories: string[]; isDark: boolean }
+function CategoryLegend({ categories, isDark }: CategoryLegendProps) {
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <div
       style={{
@@ -202,22 +227,22 @@ function CategoryLegend({ categories }: { categories: string[] }) {
         top: 12,
         right: 12,
         zIndex: 10,
-        background: 'rgba(15,23,42,0.88)',
-        border: '1px solid #1e293b',
+        background: st.legendBg,
+        border: `1px solid ${st.legendBorder}`,
         borderRadius: 8,
         padding: '8px 12px',
         backdropFilter: 'blur(4px)',
       }}
     >
-      <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>
+      <div style={{ fontSize: 10, fontWeight: 700, color: st.textDim, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>
         Category
       </div>
       {categories.map(cat => {
-        const s = getCatStyle(cat);
+        const s = getCatStyle(cat, isDark);
         return (
           <div key={cat} style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 4 }}>
             <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 2, background: s.badge }} />
-            <span style={{ fontSize: 11, color: '#94a3b8' }}>{s.label}</span>
+            <span style={{ fontSize: 11, color: st.textMuted }}>{s.label}</span>
           </div>
         );
       })}
@@ -233,10 +258,12 @@ interface DetailPanelProps {
   data: CaseNodeData;
   onClose: () => void;
   onNavigate: (id: string) => void;
+  isDark: boolean;
 }
 
-function CaseDetailPanel({ data, onClose, onNavigate }: DetailPanelProps) {
-  const cat = getCatStyle(data.category);
+function CaseDetailPanel({ data, onClose, onNavigate, isDark }: DetailPanelProps) {
+  const cat = getCatStyle(data.category, isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   const tierCfg = TIER_CONFIG[data.tier] ?? { badgeColor: '#9ca3af', label: '' };
   const truncSummary = data.summary.length > 240
     ? data.summary.slice(0, 240).trimEnd() + '\u2026'
@@ -250,7 +277,7 @@ function CaseDetailPanel({ data, onClose, onNavigate }: DetailPanelProps) {
         left: 12,
         zIndex: 20,
         width: 'min(380px, calc(100vw - 24px))',
-        background: 'rgba(15,23,42,0.97)',
+        background: st.panelBg,
         border: `1px solid ${cat.border}`,
         borderRadius: 10,
         backdropFilter: 'blur(6px)',
@@ -265,7 +292,7 @@ function CaseDetailPanel({ data, onClose, onNavigate }: DetailPanelProps) {
       <div
         style={{
           padding: '10px 14px 8px',
-          borderBottom: '1px solid #1e293b',
+          borderBottom: `1px solid ${st.divider}`,
           flexShrink: 0,
           display: 'flex',
           justifyContent: 'space-between',
@@ -274,17 +301,17 @@ function CaseDetailPanel({ data, onClose, onNavigate }: DetailPanelProps) {
         }}
       >
         <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#f1f5f9', lineHeight: 1.3 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: st.text, lineHeight: 1.3 }}>
             {data.label}
           </div>
-          <div style={{ fontSize: 11, color: '#64748b', marginTop: 2 }}>
+          <div style={{ fontSize: 11, color: st.textDim, marginTop: 2 }}>
             {data.date}{data.location ? ` \u00b7 ${data.location}` : ''}
           </div>
         </div>
         <button
           onClick={onClose}
           aria-label="Close panel"
-          style={{ background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: 18, lineHeight: 1, padding: '0 0 0 4px', flexShrink: 0 }}
+          style={{ background: 'none', border: 'none', color: st.textDim, cursor: 'pointer', fontSize: 18, lineHeight: 1, padding: '0 0 0 4px', flexShrink: 0 }}
         >
           &times;
         </button>
@@ -295,11 +322,11 @@ function CaseDetailPanel({ data, onClose, onNavigate }: DetailPanelProps) {
         <span style={{ fontSize: 10, fontWeight: 600, padding: '2px 8px', borderRadius: 999, background: cat.badge, color: cat.badgeText, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
           {cat.label}
         </span>
-        <span style={{ fontSize: 10, fontWeight: 600, padding: '2px 8px', borderRadius: 999, background: '#1e293b', color: tierCfg.badgeColor, border: `1px solid ${tierCfg.badgeColor}44`, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+        <span style={{ fontSize: 10, fontWeight: 600, padding: '2px 8px', borderRadius: 999, background: st.divider, color: tierCfg.badgeColor, border: `1px solid ${tierCfg.badgeColor}44`, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
           Tier {data.tier.replace('tier-', '')}
         </span>
         {data.witnessCount > 0 && (
-          <span style={{ fontSize: 10, fontWeight: 600, padding: '2px 8px', borderRadius: 999, background: '#1e293b', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+          <span style={{ fontSize: 10, fontWeight: 600, padding: '2px 8px', borderRadius: 999, background: st.divider, color: st.textMuted, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
             {data.witnessCount} {data.witnessCount === 1 ? 'Witness' : 'Witnesses'}
           </span>
         )}
@@ -307,19 +334,19 @@ function CaseDetailPanel({ data, onClose, onNavigate }: DetailPanelProps) {
 
       {/* Scrollable body */}
       <div style={{ padding: '10px 14px', overflowY: 'auto', flex: 1 }}>
-        <p style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, margin: 0 }}>
+        <p style={{ fontSize: 12, color: st.textMuted, lineHeight: 1.6, margin: 0 }}>
           {truncSummary}
         </p>
       </div>
 
       {/* Footer */}
-      <div style={{ padding: '8px 14px', borderTop: '1px solid #1e293b', flexShrink: 0 }}>
+      <div style={{ padding: '8px 14px', borderTop: `1px solid ${st.divider}`, flexShrink: 0 }}>
         <button
           onClick={() => onNavigate(data.caseId)}
           style={{
             width: '100%',
             padding: '7px 12px',
-            background: '#0c1635',
+            background: semColor('indigo', isDark).bg,
             border: `1px solid ${cat.border}`,
             borderRadius: 6,
             color: '#7dd3fc',
@@ -429,7 +456,7 @@ function buildElements(): { nodes: Node[]; presentCategories: string[] } {
   });
 
   // Preserve category order for legend
-  const catOrder = Object.keys(CATEGORY_STYLES);
+  const catOrder = Object.keys(CATEGORY_COLOR_MAP);
   const presentCategories = catOrder.filter(c => seenCategories.has(c));
 
   return { nodes, presentCategories };
@@ -443,6 +470,7 @@ const { nodes: initialNodes, presentCategories } = buildElements();
 
 export default function EvidenceTierFlow() {
   const router = useRouter();
+  const { isDark, c } = useFlowTheme();
   const [nodes, , onNodesChange] = useNodesState(initialNodes);
   const [selectedNode, setSelectedNode] = useState<CaseNodeData | null>(null);
 
@@ -459,57 +487,60 @@ export default function EvidenceTierFlow() {
   }, [router]);
 
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: 720,
-        background: '#0f172a',
-        borderRadius: 12,
-        overflow: 'hidden',
-        border: '1px solid #1e293b',
-      }}
-    >
-      <CategoryLegend categories={presentCategories} />
-
-      {selectedNode && (
-        <CaseDetailPanel
-          data={selectedNode}
-          onClose={() => setSelectedNode(null)}
-          onNavigate={handleNavigate}
-        />
-      )}
-
-      <ReactFlow
-        nodes={nodes}
-        edges={[]}
-        onNodesChange={onNodesChange}
-        nodeTypes={nodeTypes}
-        onNodeClick={handleNodeClick}
-        nodesDraggable={false}
-        nodesConnectable={false}
-        fitView
-        fitViewOptions={{ padding: 0.12 }}
-        minZoom={0.15}
-        maxZoom={2}
-        colorMode="dark"
-        proOptions={{ hideAttribution: true }}
+    <FlowThemeContext.Provider value={isDark}>
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: 720,
+          background: 'var(--flow-bg)',
+          borderRadius: 12,
+          overflow: 'hidden',
+          border: '1px solid var(--flow-border)',
+        }}
       >
-        <Background
-          variant={BackgroundVariant.Dots}
-          gap={20}
-          size={1}
-          color="#1e293b"
-        />
-        <Controls
-          showInteractive={false}
-          style={{
-            background: '#1e293b',
-            border: '1px solid #334155',
-            borderRadius: 8,
-          }}
-        />
-      </ReactFlow>
-    </div>
+        <CategoryLegend categories={presentCategories} isDark={isDark} />
+
+        {selectedNode && (
+          <CaseDetailPanel
+            data={selectedNode}
+            onClose={() => setSelectedNode(null)}
+            onNavigate={handleNavigate}
+            isDark={isDark}
+          />
+        )}
+
+        <ReactFlow
+          nodes={nodes}
+          edges={[]}
+          onNodesChange={onNodesChange}
+          nodeTypes={nodeTypes}
+          onNodeClick={handleNodeClick}
+          nodesDraggable={false}
+          nodesConnectable={false}
+          fitView
+          fitViewOptions={{ padding: 0.12 }}
+          minZoom={0.15}
+          maxZoom={2}
+          colorMode={isDark ? 'dark' : 'light'}
+          proOptions={{ hideAttribution: true }}
+        >
+          <Background
+            variant={BackgroundVariant.Dots}
+            gap={20}
+            size={1}
+            color={c.dotColor}
+          />
+          <Controls
+            showInteractive={false}
+            style={{
+              background: c.ctrlBg,
+              border: `1px solid ${c.ctrlBorder}`,
+              borderRadius: 8,
+            }}
+          />
+        </ReactFlow>
+      </div>
+    </FlowThemeContext.Provider>
   );
 }

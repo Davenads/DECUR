@@ -16,6 +16,15 @@ import {
 import '@xyflow/react/dist/style.css';
 import Dagre from '@dagrejs/dagre';
 import rawPrograms from '../../data/programs.json';
+import {
+  FlowThemeContext,
+  useFlowTheme,
+  useFlowIsDark,
+  sem as semColor,
+  DARK_STRUCTURAL,
+  LIGHT_STRUCTURAL,
+  type SemanticColorKey,
+} from '../data/shared/flowTheme';
 
 // --------------------------------------------------------------------------
 // Types
@@ -55,12 +64,15 @@ interface ProgramRecord {
 // Status colour config
 // --------------------------------------------------------------------------
 
-const STATUS_STYLES: Record<ProgramStatus, { border: string; bg: string; badge: string; badgeText: string }> = {
-  active:     { border: '#166534', bg: '#0d2818',  badge: '#166534', badgeText: '#bbf7d0' },
-  defunct:    { border: '#374151', bg: '#1a1f2b',  badge: '#374151', badgeText: '#9ca3af' },
-  classified: { border: '#991b1b', bg: '#2a0d0d',  badge: '#991b1b', badgeText: '#fca5a5' },
-  unknown:    { border: '#92400e', bg: '#1f1508',  badge: '#92400e', badgeText: '#fcd34d' },
-};
+function getStatusStyle(status: ProgramStatus, isDark: boolean) {
+  const map: Record<ProgramStatus, SemanticColorKey> = {
+    active:     'green',
+    defunct:    'gray',
+    classified: 'red',
+    unknown:    'amber',
+  };
+  return semColor(map[status] ?? 'gray', isDark);
+}
 
 const STATUS_LABELS: Record<ProgramStatus, string> = {
   active:     'Active',
@@ -95,13 +107,15 @@ function abbreviateOrg(org: string): string {
 // --------------------------------------------------------------------------
 
 function ProgramNode({ data }: { data: ProgramNodeData }) {
-  const style = STATUS_STYLES[data.status];
+  const isDark = useFlowIsDark();
+  const style = getStatusStyle(data.status, isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <>
       <Handle
         type="target"
         position={Position.Left}
-        style={{ background: '#475569', border: 'none', width: 8, height: 8 }}
+        style={{ background: st.handle, border: 'none', width: 8, height: 8 }}
       />
       <div
         style={{
@@ -114,13 +128,13 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
           cursor: 'pointer',
         }}
       >
-        <div style={{ fontWeight: 700, fontSize: 13, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 2 }}>
+        <div style={{ fontWeight: 700, fontSize: 13, color: st.text, lineHeight: 1.3, marginBottom: 2 }}>
           {data.label}
         </div>
-        <div style={{ fontSize: 10, color: '#64748b', marginBottom: 3 }}>
+        <div style={{ fontSize: 10, color: st.textDim, marginBottom: 3 }}>
           {abbreviateOrg(data.parentOrg)}
         </div>
-        <div style={{ fontSize: 11, color: '#94a3b8', marginBottom: 6 }}>
+        <div style={{ fontSize: 11, color: st.textMuted, marginBottom: 6 }}>
           {data.period}
         </div>
         <span
@@ -142,7 +156,7 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
       <Handle
         type="source"
         position={Position.Right}
-        style={{ background: '#475569', border: 'none', width: 8, height: 8 }}
+        style={{ background: st.handle, border: 'none', width: 8, height: 8 }}
       />
     </>
   );
@@ -162,7 +176,9 @@ const LEGEND_ENTRIES: LegendEntry[] = [
   { status: 'unknown'    },
 ];
 
-function StatusLegend() {
+interface StatusLegendProps { isDark: boolean }
+function StatusLegend({ isDark }: StatusLegendProps) {
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <div
       style={{
@@ -170,22 +186,22 @@ function StatusLegend() {
         top: 12,
         right: 12,
         zIndex: 10,
-        background: 'rgba(15,23,42,0.85)',
-        border: '1px solid #1e293b',
+        background: st.legendBg,
+        border: `1px solid ${st.legendBorder}`,
         borderRadius: 8,
         padding: '8px 12px',
         backdropFilter: 'blur(4px)',
       }}
     >
-      <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>
+      <div style={{ fontSize: 10, fontWeight: 700, color: st.textDim, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>
         Status
       </div>
       {LEGEND_ENTRIES.map(({ status }) => {
-        const s = STATUS_STYLES[status];
+        const s = getStatusStyle(status, isDark);
         return (
           <div key={status} style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 4 }}>
             <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 2, background: s.badge }} />
-            <span style={{ fontSize: 11, color: '#94a3b8' }}>{STATUS_LABELS[status]}</span>
+            <span style={{ fontSize: 11, color: st.textMuted }}>{STATUS_LABELS[status]}</span>
           </div>
         );
       })}
@@ -202,10 +218,12 @@ interface DetailPanelProps {
   onClose: () => void;
   onNavigate: (id: string) => void;
   onFigureNavigate: (figureId: string) => void;
+  isDark: boolean;
 }
 
-function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: DetailPanelProps) {
-  const style = STATUS_STYLES[data.status];
+function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate, isDark }: DetailPanelProps) {
+  const style = getStatusStyle(data.status, isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <div
       style={{
@@ -214,7 +232,7 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
         left: 12,
         zIndex: 20,
         width: 'min(380px, calc(100vw - 24px))',
-        background: 'rgba(15,23,42,0.97)',
+        background: st.panelBg,
         border: `1px solid ${style.border}`,
         borderRadius: 10,
         backdropFilter: 'blur(6px)',
@@ -229,7 +247,7 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
       <div
         style={{
           padding: '10px 14px 8px',
-          borderBottom: '1px solid #1e293b',
+          borderBottom: `1px solid ${st.divider}`,
           flexShrink: 0,
           display: 'flex',
           justifyContent: 'space-between',
@@ -238,10 +256,10 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
         }}
       >
         <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#f1f5f9', lineHeight: 1.3 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: st.text, lineHeight: 1.3 }}>
             {data.label}
           </div>
-          <div style={{ fontSize: 11, color: '#64748b', marginTop: 2 }}>
+          <div style={{ fontSize: 11, color: st.textDim, marginTop: 2 }}>
             {abbreviateOrg(data.parentOrg)}{data.parentOrg ? ' \u00b7 ' : ''}{data.period}
           </div>
         </div>
@@ -251,7 +269,7 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
           style={{
             background: 'none',
             border: 'none',
-            color: '#64748b',
+            color: st.textDim,
             cursor: 'pointer',
             fontSize: 18,
             lineHeight: 1,
@@ -265,7 +283,7 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
 
       {/* Scrollable body */}
       <div style={{ padding: '10px 14px', overflowY: 'auto', flex: 1 }}>
-        <p style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, margin: '0 0 12px 0' }}>
+        <p style={{ fontSize: 12, color: st.textMuted, lineHeight: 1.6, margin: '0 0 12px 0' }}>
           {data.summary}
         </p>
 
@@ -275,7 +293,7 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
               style={{
                 fontSize: 10,
                 fontWeight: 700,
-                color: '#64748b',
+                color: st.textDim,
                 letterSpacing: '0.06em',
                 textTransform: 'uppercase',
                 marginBottom: 6,
@@ -286,10 +304,10 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
             <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
               {data.keyPersonnel.slice(0, 4).map((p, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 6 }}>
-                  <span style={{ color: '#475569', flexShrink: 0, fontSize: 12, marginTop: 1 }}>
+                  <span style={{ color: st.edgeStroke, flexShrink: 0, fontSize: 12, marginTop: 1 }}>
                     &bull;
                   </span>
-                  <span style={{ fontSize: 12, color: '#cbd5e1', lineHeight: 1.4 }}>
+                  <span style={{ fontSize: 12, color: st.textValue, lineHeight: 1.4 }}>
                     {p.figure_id ? (
                       <button
                         onClick={() => onFigureNavigate(p.figure_id as string)}
@@ -310,7 +328,7 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
                     ) : (
                       <span>{p.name}</span>
                     )}
-                    <span style={{ color: '#64748b' }}> - {p.role}</span>
+                    <span style={{ color: st.textDim }}> - {p.role}</span>
                   </span>
                 </div>
               ))}
@@ -320,7 +338,7 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate }: Det
       </div>
 
       {/* Footer */}
-      <div style={{ padding: '8px 14px', borderTop: '1px solid #1e293b', flexShrink: 0 }}>
+      <div style={{ padding: '8px 14px', borderTop: `1px solid ${st.divider}`, flexShrink: 0 }}>
         <button
           onClick={() => onNavigate(data.programId)}
           style={{
@@ -410,8 +428,8 @@ function buildInitialElements(): { nodes: Node[]; edges: Edge[] } {
         source: p.id,
         target: rel.target,
         type: 'smoothstep',
-        style: { stroke: '#475569', strokeWidth: 1.5 },
-        markerEnd: { type: MarkerType.ArrowClosed, color: '#475569', width: 16, height: 16 },
+        style: { stroke: DARK_STRUCTURAL.edgeStroke, strokeWidth: 1.5 },
+        markerEnd: { type: MarkerType.ArrowClosed, color: DARK_STRUCTURAL.edgeStroke, width: 16, height: 16 },
         animated: false,
       });
     });
@@ -428,6 +446,7 @@ const { nodes: initialNodes, edges: initialEdges } = buildInitialElements();
 
 export default function ProgramLineageFlow() {
   const router = useRouter();
+  const { isDark, c } = useFlowTheme();
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [layouted, setLayouted] = useState(false);
@@ -461,58 +480,61 @@ export default function ProgramLineageFlow() {
   }, [layouted]);
 
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: 720,
-        background: '#0f172a',
-        borderRadius: 12,
-        overflow: 'hidden',
-        border: '1px solid #1e293b',
-      }}
-    >
-      <StatusLegend />
-
-      {selectedNode && (
-        <ProgramDetailPanel
-          data={selectedNode}
-          onClose={() => setSelectedNode(null)}
-          onNavigate={handleNavigate}
-          onFigureNavigate={handleFigureNavigate}
-        />
-      )}
-
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        nodeTypes={nodeTypes}
-        onInit={onInit}
-        onNodeClick={handleNodeClick}
-        fitView
-        fitViewOptions={{ padding: 0.15 }}
-        minZoom={0.2}
-        maxZoom={2}
-        colorMode="dark"
-        proOptions={{ hideAttribution: true }}
+    <FlowThemeContext.Provider value={isDark}>
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: 720,
+          background: 'var(--flow-bg)',
+          borderRadius: 12,
+          overflow: 'hidden',
+          border: '1px solid var(--flow-border)',
+        }}
       >
-        <Background
-          variant={BackgroundVariant.Dots}
-          gap={20}
-          size={1}
-          color="#1e293b"
-        />
-        <Controls
-          showInteractive={false}
-          style={{
-            background: '#1e293b',
-            border: '1px solid #334155',
-            borderRadius: 8,
-          }}
-        />
-      </ReactFlow>
-    </div>
+        <StatusLegend isDark={isDark} />
+
+        {selectedNode && (
+          <ProgramDetailPanel
+            data={selectedNode}
+            onClose={() => setSelectedNode(null)}
+            onNavigate={handleNavigate}
+            onFigureNavigate={handleFigureNavigate}
+            isDark={isDark}
+          />
+        )}
+
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          nodeTypes={nodeTypes}
+          onInit={onInit}
+          onNodeClick={handleNodeClick}
+          fitView
+          fitViewOptions={{ padding: 0.15 }}
+          minZoom={0.2}
+          maxZoom={2}
+          colorMode={isDark ? 'dark' : 'light'}
+          proOptions={{ hideAttribution: true }}
+        >
+          <Background
+            variant={BackgroundVariant.Dots}
+            gap={20}
+            size={1}
+            color={c.dotColor}
+          />
+          <Controls
+            showInteractive={false}
+            style={{
+              background: c.ctrlBg,
+              border: `1px solid ${c.ctrlBorder}`,
+              borderRadius: 8,
+            }}
+          />
+        </ReactFlow>
+      </div>
+    </FlowThemeContext.Provider>
   );
 }

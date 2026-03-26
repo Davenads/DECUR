@@ -9,6 +9,40 @@ nextjs-portal {
   pointer-events: none;
 }
 
+/* ======================================================
+   XYFlow / ReactFlow shared structural color tokens
+   Mirrors DARK_STRUCTURAL / LIGHT_STRUCTURAL in flowTheme.ts
+   Used for container divs; JS-side tokens handle node/edge colors.
+   ====================================================== */
+:root {
+  --flow-bg:            #f8fafc;
+  --flow-border:        #e2e8f0;
+  --flow-text:          #0f172a;
+  --flow-text-muted:    #64748b;
+  --flow-edge:          #94a3b8;
+  --flow-dot:           #e2e8f0;
+  --flow-ctrl-bg:       #ffffff;
+  --flow-ctrl-border:   #e2e8f0;
+  --flow-divider:       #e2e8f0;
+  --flow-panel-bg:      rgba(248,250,252,0.97);
+  --flow-legend-bg:     rgba(248,250,252,0.90);
+  --flow-legend-border: #e2e8f0;
+}
+.dark {
+  --flow-bg:            #0f172a;
+  --flow-border:        #1e293b;
+  --flow-text:          #f1f5f9;
+  --flow-text-muted:    #94a3b8;
+  --flow-edge:          #475569;
+  --flow-dot:           #1e293b;
+  --flow-ctrl-bg:       #1e293b;
+  --flow-ctrl-border:   #334155;
+  --flow-divider:       #1e293b;
+  --flow-panel-bg:      rgba(15,23,42,0.97);
+  --flow-legend-bg:     rgba(15,23,42,0.85);
+  --flow-legend-border: #1e293b;
+}
+
 /* Custom base styles */
 @layer base {
   body {

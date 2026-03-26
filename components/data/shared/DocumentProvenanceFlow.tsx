@@ -15,22 +15,43 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { type ProvenanceChainNode, type ProvenanceNodeType } from '../../../types/data';
+import {
+  FlowThemeContext,
+  useFlowTheme,
+  useFlowIsDark,
+  sem as semColor,
+  DARK_STRUCTURAL,
+  LIGHT_STRUCTURAL,
+  type SemanticColorKey,
+} from './flowTheme';
 
 // --------------------------------------------------------------------------
 // Type colour config
 // --------------------------------------------------------------------------
 
-const TYPE_STYLES: Record<ProvenanceNodeType, {
-  border: string; bg: string; badge: string; badgeText: string; typeLabel: string;
-}> = {
-  creation:        { border: '#1e3a8a', bg: '#0c1a3a', badge: '#1e3a8a', badgeText: '#bfdbfe', typeLabel: 'Origin'       },
-  classification:  { border: '#991b1b', bg: '#2a0d0d', badge: '#991b1b', badgeText: '#fca5a5', typeLabel: 'Classified'   },
-  transfer:        { border: '#374151', bg: '#1a1f2b', badge: '#374151', badgeText: '#9ca3af', typeLabel: 'Transfer'     },
-  declassification:{ border: '#065f46', bg: '#0a1f18', badge: '#065f46', badgeText: '#a7f3d0', typeLabel: 'Declassified' },
-  foia:            { border: '#065f46', bg: '#0a1f18', badge: '#065f46', badgeText: '#a7f3d0', typeLabel: 'FOIA Release' },
-  leak:            { border: '#92400e', bg: '#1f1508', badge: '#92400e', badgeText: '#fde68a', typeLabel: 'Leaked'       },
-  public:          { border: '#166534', bg: '#0d2818', badge: '#166534', badgeText: '#bbf7d0', typeLabel: 'Public'       },
-  archive:         { border: '#4c1d95', bg: '#1a0a3d', badge: '#4c1d95', badgeText: '#ddd6fe', typeLabel: 'Archive'      },
+function getTypeStyle(type: ProvenanceNodeType, isDark: boolean) {
+  const map: Record<ProvenanceNodeType, SemanticColorKey> = {
+    creation:         'blue',
+    classification:   'red',
+    transfer:         'gray',
+    declassification: 'emerald',
+    foia:             'emerald',
+    leak:             'amber',
+    public:           'green',
+    archive:          'purple',
+  };
+  return semColor(map[type] ?? 'gray', isDark);
+}
+
+const TYPE_LABELS: Record<ProvenanceNodeType, string> = {
+  creation:         'Origin',
+  classification:   'Classified',
+  transfer:         'Transfer',
+  declassification: 'Declassified',
+  foia:             'FOIA Release',
+  leak:             'Leaked',
+  public:           'Public',
+  archive:          'Archive',
 };
 
 // --------------------------------------------------------------------------
@@ -53,13 +74,15 @@ interface ProvenanceData extends Record<string, unknown> {
 // --------------------------------------------------------------------------
 
 function ProvenanceNode({ data }: { data: ProvenanceData }) {
-  const style = TYPE_STYLES[data.type];
+  const isDark = useFlowIsDark();
+  const style = getTypeStyle(data.type, isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <>
       <Handle
         type="target"
         position={Position.Left}
-        style={{ background: '#475569', border: 'none', width: 7, height: 7 }}
+        style={{ background: st.handle, border: 'none', width: 7, height: 7 }}
       />
       <div
         style={{
@@ -71,10 +94,10 @@ function ProvenanceNode({ data }: { data: ProvenanceData }) {
           boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
         }}
       >
-        <div style={{ fontWeight: 700, fontSize: 12, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 3 }}>
+        <div style={{ fontWeight: 700, fontSize: 12, color: st.text, lineHeight: 1.3, marginBottom: 3 }}>
           {data.label}
         </div>
-        <div style={{ fontSize: 10, color: '#94a3b8', marginBottom: 5, lineHeight: 1.4 }}>
+        <div style={{ fontSize: 10, color: st.textMuted, marginBottom: 5, lineHeight: 1.4 }}>
           {data.description}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 4 }}>
@@ -91,15 +114,15 @@ function ProvenanceNode({ data }: { data: ProvenanceData }) {
               textTransform: 'uppercase',
             }}
           >
-            {style.typeLabel}
+            {TYPE_LABELS[data.type]}
           </span>
-          <span style={{ fontSize: 10, color: '#64748b' }}>{data.date}</span>
+          <span style={{ fontSize: 10, color: st.textDim }}>{data.date}</span>
         </div>
       </div>
       <Handle
         type="source"
         position={Position.Right}
-        style={{ background: '#475569', border: 'none', width: 7, height: 7 }}
+        style={{ background: st.handle, border: 'none', width: 7, height: 7 }}
       />
     </>
   );
@@ -115,15 +138,17 @@ const LEGEND_TYPES: ProvenanceNodeType[] = [
   'creation', 'classification', 'transfer', 'declassification', 'foia', 'leak', 'public', 'archive',
 ];
 
-function ProvenanceLegend() {
+interface ProvenanceLegendProps { isDark: boolean }
+function ProvenanceLegend({ isDark }: ProvenanceLegendProps) {
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 14px' }}>
       {LEGEND_TYPES.map(type => {
-        const s = TYPE_STYLES[type];
+        const s = getTypeStyle(type, isDark);
         return (
           <div key={type} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
             <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 2, background: s.badge, flexShrink: 0 }} />
-            <span style={{ fontSize: 10, color: '#94a3b8', whiteSpace: 'nowrap' }}>{s.typeLabel}</span>
+            <span style={{ fontSize: 10, color: st.textMuted, whiteSpace: 'nowrap' }}>{TYPE_LABELS[type]}</span>
           </div>
         );
       })}
@@ -153,8 +178,8 @@ function buildElements(chain: ProvenanceChainNode[]): { nodes: Node[]; edges: Ed
     source: n.id,
     target: chain[i + 1].id,
     type: 'smoothstep',
-    style: { stroke: '#475569', strokeWidth: 1.5 },
-    markerEnd: { type: MarkerType.ArrowClosed, color: '#475569', width: 14, height: 14 },
+    style: { stroke: DARK_STRUCTURAL.edgeStroke, strokeWidth: 1.5 },
+    markerEnd: { type: MarkerType.ArrowClosed, color: DARK_STRUCTURAL.edgeStroke, width: 14, height: 14 },
   }));
 
   return { nodes, edges };
@@ -169,6 +194,7 @@ interface Props {
 }
 
 export default function DocumentProvenanceFlow({ chain }: Props) {
+  const { isDark, c } = useFlowTheme();
   const { nodes: initNodes, edges: initEdges } = buildElements(chain);
   const [nodes, , onNodesChange] = useNodesState(initNodes);
   const [edges, , onEdgesChange] = useEdgesState(initEdges);
@@ -184,47 +210,49 @@ export default function DocumentProvenanceFlow({ chain }: Props) {
   }, []);
 
   return (
-    <div
-      style={{
-        width: '100%',
-        background: '#0f172a',
-        borderRadius: 10,
-        border: '1px solid #1e293b',
-        overflow: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
-      <div style={{ height: 220, position: 'relative' }}>
-        <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          nodeTypes={nodeTypes}
-          onInit={onInit}
-          fitView
-          fitViewOptions={{ padding: 0.2 }}
-          minZoom={0.3}
-          maxZoom={2}
-          colorMode="dark"
-          proOptions={{ hideAttribution: true }}
-          nodesDraggable={false}
-          elementsSelectable={false}
-          zoomOnScroll={false}
-          panOnScroll={false}
-        >
-          <Background
-            variant={BackgroundVariant.Dots}
-            gap={20}
-            size={1}
-            color="#1e293b"
-          />
-        </ReactFlow>
+    <FlowThemeContext.Provider value={isDark}>
+      <div
+        style={{
+          width: '100%',
+          background: 'var(--flow-bg)',
+          borderRadius: 10,
+          border: '1px solid var(--flow-border)',
+          overflow: 'hidden',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <div style={{ height: 220, position: 'relative' }}>
+          <ReactFlow
+            nodes={nodes}
+            edges={edges}
+            onNodesChange={onNodesChange}
+            onEdgesChange={onEdgesChange}
+            nodeTypes={nodeTypes}
+            onInit={onInit}
+            fitView
+            fitViewOptions={{ padding: 0.2 }}
+            minZoom={0.3}
+            maxZoom={2}
+            colorMode={isDark ? 'dark' : 'light'}
+            proOptions={{ hideAttribution: true }}
+            nodesDraggable={false}
+            elementsSelectable={false}
+            zoomOnScroll={false}
+            panOnScroll={false}
+          >
+            <Background
+              variant={BackgroundVariant.Dots}
+              gap={20}
+              size={1}
+              color={c.dotColor}
+            />
+          </ReactFlow>
+        </div>
+        <div style={{ borderTop: `1px solid var(--flow-border)`, padding: '8px 12px' }}>
+          <ProvenanceLegend isDark={isDark} />
+        </div>
       </div>
-      <div style={{ borderTop: '1px solid #1e293b', padding: '8px 12px' }}>
-        <ProvenanceLegend />
-      </div>
-    </div>
+    </FlowThemeContext.Provider>
   );
 }

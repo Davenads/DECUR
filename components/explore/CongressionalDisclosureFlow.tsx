@@ -15,6 +15,15 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import Dagre from '@dagrejs/dagre';
+import {
+  FlowThemeContext,
+  useFlowTheme,
+  useFlowIsDark,
+  sem as semColor,
+  DARK_STRUCTURAL,
+  LIGHT_STRUCTURAL,
+  type SemanticColorKey,
+} from '../data/shared/flowTheme';
 
 // --------------------------------------------------------------------------
 // Types
@@ -33,13 +42,21 @@ interface DisclosureNodeData extends Record<string, unknown> {
 // Type colour config
 // --------------------------------------------------------------------------
 
-const TYPE_STYLES: Record<DisclosureNodeType, {
-  border: string; bg: string; badge: string; badgeText: string; typeLabel: string;
-}> = {
-  person:      { border: '#1e3a8a', bg: '#0c1a3a', badge: '#1e3a8a', badgeText: '#bfdbfe', typeLabel: 'Witness'     },
-  hearing:     { border: '#92400e', bg: '#1f1508', badge: '#92400e', badgeText: '#fde68a', typeLabel: 'Hearing'     },
-  legislation: { border: '#065f46', bg: '#0a1f18', badge: '#065f46', badgeText: '#a7f3d0', typeLabel: 'Legislation' },
-  committee:   { border: '#4c1d95', bg: '#1a0a3d', badge: '#4c1d95', badgeText: '#ddd6fe', typeLabel: 'Committee'   },
+function getTypeStyle(type: DisclosureNodeType, isDark: boolean) {
+  const map: Record<DisclosureNodeType, SemanticColorKey> = {
+    person:      'blue',
+    hearing:     'amber',
+    legislation: 'emerald',
+    committee:   'purple',
+  };
+  return semColor(map[type], isDark);
+}
+
+const TYPE_LABELS: Record<DisclosureNodeType, string> = {
+  person:      'Witness',
+  hearing:     'Hearing',
+  legislation: 'Legislation',
+  committee:   'Committee',
 };
 
 // Fixed node dimensions
@@ -51,14 +68,16 @@ const NODE_HEIGHT = 80;
 // --------------------------------------------------------------------------
 
 function DisclosureNode({ data }: { data: DisclosureNodeData }) {
-  const style = TYPE_STYLES[data.type];
+  const isDark = useFlowIsDark();
+  const style = getTypeStyle(data.type, isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   const navigable = data.type === 'person' && data.figureId != null;
   return (
     <>
       <Handle
         type="target"
         position={Position.Left}
-        style={{ background: '#475569', border: 'none', width: 8, height: 8 }}
+        style={{ background: st.handle, border: 'none', width: 8, height: 8 }}
       />
       <div
         style={{
@@ -71,10 +90,10 @@ function DisclosureNode({ data }: { data: DisclosureNodeData }) {
           cursor: navigable ? 'pointer' : 'default',
         }}
       >
-        <div style={{ fontWeight: 700, fontSize: 13, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 4 }}>
+        <div style={{ fontWeight: 700, fontSize: 13, color: st.text, lineHeight: 1.3, marginBottom: 4 }}>
           {data.label}
         </div>
-        <div style={{ fontSize: 11, color: '#94a3b8', marginBottom: 6 }}>
+        <div style={{ fontSize: 11, color: st.textMuted, marginBottom: 6 }}>
           {data.period}
         </div>
         <span
@@ -90,13 +109,13 @@ function DisclosureNode({ data }: { data: DisclosureNodeData }) {
             textTransform: 'uppercase',
           }}
         >
-          {style.typeLabel}
+          {TYPE_LABELS[data.type]}
         </span>
       </div>
       <Handle
         type="source"
         position={Position.Right}
-        style={{ background: '#475569', border: 'none', width: 8, height: 8 }}
+        style={{ background: st.handle, border: 'none', width: 8, height: 8 }}
       />
     </>
   );
@@ -110,7 +129,9 @@ const nodeTypes = { disclosure: DisclosureNode };
 
 const LEGEND_ENTRIES: DisclosureNodeType[] = ['person', 'hearing', 'legislation', 'committee'];
 
-function TypeLegend() {
+interface TypeLegendProps { isDark: boolean }
+function TypeLegend({ isDark }: TypeLegendProps) {
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <div
       style={{
@@ -118,22 +139,22 @@ function TypeLegend() {
         top: 12,
         right: 12,
         zIndex: 10,
-        background: 'rgba(15,23,42,0.85)',
-        border: '1px solid #1e293b',
+        background: st.legendBg,
+        border: `1px solid ${st.legendBorder}`,
         borderRadius: 8,
         padding: '8px 12px',
         backdropFilter: 'blur(4px)',
       }}
     >
-      <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>
+      <div style={{ fontSize: 10, fontWeight: 700, color: st.textDim, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>
         Type
       </div>
       {LEGEND_ENTRIES.map(type => {
-        const s = TYPE_STYLES[type];
+        const s = getTypeStyle(type, isDark);
         return (
           <div key={type} style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 4 }}>
             <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 2, background: s.badge }} />
-            <span style={{ fontSize: 11, color: '#94a3b8' }}>{s.typeLabel}</span>
+            <span style={{ fontSize: 11, color: st.textMuted }}>{TYPE_LABELS[type]}</span>
           </div>
         );
       })}
@@ -180,7 +201,7 @@ const RAW_NODES: Array<{
 const RAW_EDGES: Array<{ source: string; target: string }> = [
   // Legislation flow chain
   { source: 'uaptf-mandate',        target: 'hearing-may-2022'    }, // mandate led to first public hearing
-  { source: 'hearing-may-2022',     target: 'aaro-creation'       }, // congressional pressure → AARO
+  { source: 'hearing-may-2022',     target: 'aaro-creation'       }, // congressional pressure -> AARO
   { source: 'hearing-jul-2023',     target: 'uap-disclosure-act'  }, // Grusch testimony drove bill
   { source: 'uap-disclosure-act',   target: 'ndaa-2024-provisions'}, // provisions incorporated into NDAA
   { source: 'ndaa-2024-provisions', target: 'hearing-sep-2025'    }, // provisions enabled further disclosure
@@ -188,12 +209,12 @@ const RAW_EDGES: Array<{ source: string; target: string }> = [
   { source: 'hearing-may-2022',     target: 'hearing-jul-2023'    },
   { source: 'hearing-jul-2023',     target: 'hearing-apr-2024'    },
   { source: 'hearing-apr-2024',     target: 'hearing-sep-2025'    },
-  // Committee → Hearing (hosted)
+  // Committee -> Hearing (hosted)
   { source: 'hasc-cmte',        target: 'hearing-may-2022' },
   { source: 'house-oversight',  target: 'hearing-jul-2023' },
   { source: 'sasc-cmte',        target: 'hearing-apr-2024' },
   { source: 'house-oversight',  target: 'hearing-sep-2025' },
-  // Witnesses → Hearings (testified)
+  // Witnesses -> Hearings (testified)
   { source: 'elizondo',    target: 'hearing-may-2022' },
   { source: 'graves',      target: 'hearing-may-2022' },
   { source: 'grusch',      target: 'hearing-jul-2023' },
@@ -258,8 +279,8 @@ function buildInitialElements(): { nodes: Node[]; edges: Edge[] } {
     source: e.source,
     target: e.target,
     type: 'smoothstep',
-    style: { stroke: '#475569', strokeWidth: 1.5 },
-    markerEnd: { type: MarkerType.ArrowClosed, color: '#475569', width: 16, height: 16 },
+    style: { stroke: DARK_STRUCTURAL.edgeStroke, strokeWidth: 1.5 },
+    markerEnd: { type: MarkerType.ArrowClosed, color: DARK_STRUCTURAL.edgeStroke, width: 16, height: 16 },
     animated: false,
   }));
 
@@ -274,6 +295,7 @@ const { nodes: initialNodes, edges: initialEdges } = buildInitialElements();
 
 export default function CongressionalDisclosureFlow() {
   const router = useRouter();
+  const { isDark, c } = useFlowTheme();
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [layouted, setLayouted] = useState(false);
@@ -296,48 +318,50 @@ export default function CongressionalDisclosureFlow() {
   }, [layouted]);
 
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: 720,
-        background: '#0f172a',
-        borderRadius: 12,
-        overflow: 'hidden',
-        border: '1px solid #1e293b',
-      }}
-    >
-      <TypeLegend />
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        nodeTypes={nodeTypes}
-        onInit={onInit}
-        onNodeClick={handleNodeClick}
-        fitView
-        fitViewOptions={{ padding: 0.15 }}
-        minZoom={0.2}
-        maxZoom={2}
-        colorMode="dark"
-        proOptions={{ hideAttribution: true }}
+    <FlowThemeContext.Provider value={isDark}>
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: 720,
+          background: 'var(--flow-bg)',
+          borderRadius: 12,
+          overflow: 'hidden',
+          border: '1px solid var(--flow-border)',
+        }}
       >
-        <Background
-          variant={BackgroundVariant.Dots}
-          gap={20}
-          size={1}
-          color="#1e293b"
-        />
-        <Controls
-          showInteractive={false}
-          style={{
-            background: '#1e293b',
-            border: '1px solid #334155',
-            borderRadius: 8,
-          }}
-        />
-      </ReactFlow>
-    </div>
+        <TypeLegend isDark={isDark} />
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          nodeTypes={nodeTypes}
+          onInit={onInit}
+          onNodeClick={handleNodeClick}
+          fitView
+          fitViewOptions={{ padding: 0.15 }}
+          minZoom={0.2}
+          maxZoom={2}
+          colorMode={isDark ? 'dark' : 'light'}
+          proOptions={{ hideAttribution: true }}
+        >
+          <Background
+            variant={BackgroundVariant.Dots}
+            gap={20}
+            size={1}
+            color={c.dotColor}
+          />
+          <Controls
+            showInteractive={false}
+            style={{
+              background: c.ctrlBg,
+              border: `1px solid ${c.ctrlBorder}`,
+              borderRadius: 8,
+            }}
+          />
+        </ReactFlow>
+      </div>
+    </FlowThemeContext.Provider>
   );
 }

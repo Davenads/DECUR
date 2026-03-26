@@ -18,6 +18,15 @@ import Dagre from '@dagrejs/dagre';
 import rawHierarchy from '../../data/org-hierarchy.json';
 import rawPrograms from '../../data/programs.json';
 import rawContractors from '../../data/contractors.json';
+import {
+  FlowThemeContext,
+  useFlowTheme,
+  useFlowIsDark,
+  sem as semColor,
+  DARK_STRUCTURAL,
+  LIGHT_STRUCTURAL,
+  type SemanticColorKey,
+} from '../data/shared/flowTheme';
 
 // --------------------------------------------------------------------------
 // Types
@@ -106,34 +115,41 @@ interface ContractorNodeData extends Record<string, unknown> {
 type HierarchyNodeData = BranchNodeData | AgencyNodeData | ProgramNodeData | ContractorNodeData;
 
 // --------------------------------------------------------------------------
-// Style config per node type
+// Style helper functions
 // --------------------------------------------------------------------------
 
-const NODE_STYLES: Record<NodeType, { border: string; bg: string; labelColor: string; badgeColor?: string }> = {
-  branch:      { border: '#3b82f6', bg: '#0c1a40',  labelColor: '#93c5fd' },
-  agency:      { border: '#1d4ed8', bg: '#0c1635',  labelColor: '#bfdbfe' },
-  legislative: { border: '#15803d', bg: '#0a2010',  labelColor: '#86efac' },
-  program:     { border: '#374151', bg: '#1a1f2b',  labelColor: '#e2e8f0' },
-  contractor:  { border: '#7c3aed', bg: '#1e1040',  labelColor: '#ddd6fe' },
-};
+function getNodeStyle(type: NodeType, isDark: boolean) {
+  const map: Record<NodeType, SemanticColorKey> = {
+    branch:      'blueBright',
+    agency:      'indigo',
+    legislative: 'green',
+    program:     'gray',
+    contractor:  'violet',
+  };
+  const s = semColor(map[type], isDark);
+  return { bg: s.bg, border: s.border, labelColor: s.badgeText };
+}
 
-const PROGRAM_STATUS_STYLES: Record<ProgramStatus, { border: string; bg: string; badge: string; badgeText: string }> = {
-  active:     { border: '#166534', bg: '#0d2818', badge: '#166534', badgeText: '#bbf7d0' },
-  defunct:    { border: '#374151', bg: '#1a1f2b', badge: '#374151', badgeText: '#9ca3af' },
-  classified: { border: '#991b1b', bg: '#2a0d0d', badge: '#991b1b', badgeText: '#fca5a5' },
-  unknown:    { border: '#92400e', bg: '#1f1508', badge: '#92400e', badgeText: '#fcd34d' },
-};
+function getProgramStatusStyle(status: ProgramStatus, isDark: boolean) {
+  const map: Record<ProgramStatus, SemanticColorKey> = {
+    active:     'green',
+    defunct:    'gray',
+    classified: 'red',
+    unknown:    'amber',
+  };
+  return semColor(map[status] ?? 'gray', isDark);
+}
 
 const PROGRAM_STATUS_LABELS: Record<ProgramStatus, string> = {
   active: 'Active', defunct: 'Defunct', classified: 'Classified', unknown: 'Unknown',
 };
 
 const EDGE_STYLES: Record<EdgeType, { stroke: string; strokeDasharray?: string; label: string }> = {
-  authority:    { stroke: '#475569',                      label: 'Authority'   },
-  oversight:    { stroke: '#15803d', strokeDasharray: '5,4', label: 'Oversight'   },
-  contractual:  { stroke: '#7c3aed', strokeDasharray: '3,3', label: 'Contractual' },
-  alleged:      { stroke: '#991b1b', strokeDasharray: '4,3', label: 'Alleged'     },
-  influenced:   { stroke: '#b45309', strokeDasharray: '6,3', label: 'Influenced'  },
+  authority:    { stroke: DARK_STRUCTURAL.edgeStroke,                   label: 'Authority'   },
+  oversight:    { stroke: '#15803d', strokeDasharray: '5,4',            label: 'Oversight'   },
+  contractual:  { stroke: '#7c3aed', strokeDasharray: '3,3',            label: 'Contractual' },
+  alleged:      { stroke: '#991b1b', strokeDasharray: '4,3',            label: 'Alleged'     },
+  influenced:   { stroke: '#b45309', strokeDasharray: '6,3',            label: 'Influenced'  },
 };
 
 const NODE_W  = 165;
@@ -157,13 +173,15 @@ const contractorsMap = new Map<string, ContractorRecord>(
 // --------------------------------------------------------------------------
 
 function BranchNode({ data }: { data: BranchNodeData }) {
-  const s = NODE_STYLES.branch;
+  const isDark = useFlowIsDark();
+  const s = getNodeStyle('branch', isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <>
       <Handle type="target" position={Position.Top}    style={{ opacity: 0, pointerEvents: 'none' }} />
       <div style={{ background: s.bg, border: `2px solid ${s.border}`, borderRadius: 10, padding: '10px 14px', width: NODE_W, minHeight: NODE_H, cursor: 'default', boxShadow: `0 0 14px ${s.border}33` }}>
         <div style={{ fontSize: 13, fontWeight: 800, color: s.labelColor, lineHeight: 1.2 }}>{data.label}</div>
-        <div style={{ fontSize: 10, color: '#64748b', marginTop: 3 }}>{data.sublabel}</div>
+        <div style={{ fontSize: 10, color: st.textDim, marginTop: 3 }}>{data.sublabel}</div>
       </div>
       <Handle type="source" position={Position.Bottom} style={{ opacity: 0, pointerEvents: 'none' }} />
       <Handle type="source" position={Position.Left}   style={{ opacity: 0, pointerEvents: 'none' }} />
@@ -177,7 +195,9 @@ function BranchNode({ data }: { data: BranchNodeData }) {
 // --------------------------------------------------------------------------
 
 function AgencyNode({ data }: { data: AgencyNodeData }) {
-  const s = NODE_STYLES[data.nodeType as 'agency' | 'legislative'];
+  const isDark = useFlowIsDark();
+  const s = getNodeStyle(data.nodeType as 'agency' | 'legislative', isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <>
       <Handle type="target" position={Position.Top}    style={{ opacity: 0, pointerEvents: 'none' }} />
@@ -185,7 +205,7 @@ function AgencyNode({ data }: { data: AgencyNodeData }) {
       <Handle type="target" position={Position.Right}  style={{ opacity: 0, pointerEvents: 'none' }} />
       <div style={{ background: s.bg, border: `1.5px solid ${s.border}`, borderRadius: 8, padding: '9px 12px', width: NODE_W, minHeight: NODE_H - 5, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
         <div style={{ fontSize: 12, fontWeight: 700, color: s.labelColor, lineHeight: 1.25 }}>{data.label}</div>
-        {data.sublabel && <div style={{ fontSize: 10, color: '#64748b', marginTop: 2 }}>{data.sublabel}</div>}
+        {data.sublabel && <div style={{ fontSize: 10, color: st.textDim, marginTop: 2 }}>{data.sublabel}</div>}
       </div>
       <Handle type="source" position={Position.Bottom} style={{ opacity: 0, pointerEvents: 'none' }} />
       <Handle type="source" position={Position.Left}   style={{ opacity: 0, pointerEvents: 'none' }} />
@@ -199,14 +219,16 @@ function AgencyNode({ data }: { data: AgencyNodeData }) {
 // --------------------------------------------------------------------------
 
 function ProgramNode({ data }: { data: ProgramNodeData }) {
-  const s = PROGRAM_STATUS_STYLES[data.status] ?? PROGRAM_STATUS_STYLES.unknown;
+  const isDark = useFlowIsDark();
+  const s = getProgramStatusStyle(data.status, isDark);
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
   return (
     <>
       <Handle type="target" position={Position.Top}   style={{ opacity: 0, pointerEvents: 'none' }} />
       <Handle type="target" position={Position.Left}  style={{ opacity: 0, pointerEvents: 'none' }} />
       <div style={{ background: s.bg, border: `1.5px solid ${s.border}`, borderRadius: 8, padding: '8px 12px', width: NODE_W, minHeight: PROG_H, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
-        <div style={{ fontSize: 12, fontWeight: 700, color: '#f1f5f9', lineHeight: 1.3, marginBottom: 2 }}>{data.label}</div>
-        <div style={{ fontSize: 10, color: '#64748b', marginBottom: 5 }}>{data.period}</div>
+        <div style={{ fontSize: 12, fontWeight: 700, color: st.text, lineHeight: 1.3, marginBottom: 2 }}>{data.label}</div>
+        <div style={{ fontSize: 10, color: st.textDim, marginBottom: 5 }}>{data.period}</div>
         <span style={{ fontSize: 9, fontWeight: 600, padding: '1px 6px', borderRadius: 999, background: s.badge, color: s.badgeText, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
           {PROGRAM_STATUS_LABELS[data.status]}
         </span>
@@ -222,16 +244,18 @@ function ProgramNode({ data }: { data: ProgramNodeData }) {
 // --------------------------------------------------------------------------
 
 function ContractorNode({ data }: { data: ContractorNodeData }) {
-  const s = NODE_STYLES.contractor;
+  const isDark = useFlowIsDark();
+  const sem = semColor('violet', isDark);
+  const s = { bg: sem.bg, border: sem.border, labelColor: sem.badgeText, badge: sem.badge, badgeText: sem.badgeText };
   return (
     <>
       <Handle type="target" position={Position.Top}   style={{ opacity: 0, pointerEvents: 'none' }} />
       <Handle type="target" position={Position.Left}  style={{ opacity: 0, pointerEvents: 'none' }} />
       <div style={{ background: s.bg, border: `1.5px solid ${s.border}`, borderRadius: 8, padding: '9px 12px', width: NODE_W, minHeight: NODE_H, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>
         <div style={{ fontSize: 12, fontWeight: 700, color: s.labelColor, lineHeight: 1.25 }}>{data.label}</div>
-        {data.sublabel && <div style={{ fontSize: 10, color: '#7c3aed', marginTop: 2, lineHeight: 1.3 }}>{data.sublabel}</div>}
+        {data.sublabel && <div style={{ fontSize: 10, color: s.border, marginTop: 2, lineHeight: 1.3 }}>{data.sublabel}</div>}
         <div style={{ marginTop: 5 }}>
-          <span style={{ fontSize: 9, fontWeight: 600, padding: '1px 6px', borderRadius: 999, background: '#2d1060', color: '#ddd6fe', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+          <span style={{ fontSize: 9, fontWeight: 600, padding: '1px 6px', borderRadius: 999, background: s.badge, color: s.badgeText, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
             Contractor
           </span>
         </div>
@@ -256,18 +280,22 @@ const nodeTypes = {
 
 const LEGEND_EDGE_TYPES: EdgeType[] = ['authority', 'oversight', 'contractual', 'alleged', 'influenced'];
 
-function EdgeLegend() {
+interface EdgeLegendProps { isDark: boolean }
+function EdgeLegend({ isDark }: EdgeLegendProps) {
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
+  // authority edge stroke adapts to theme
+  const edgeStyles = { ...EDGE_STYLES, authority: { ...EDGE_STYLES.authority, stroke: st.edgeStroke } };
   return (
-    <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10, background: 'rgba(15,23,42,0.88)', border: '1px solid #1e293b', borderRadius: 8, padding: '8px 12px', backdropFilter: 'blur(4px)' }}>
-      <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>Edge Type</div>
+    <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10, background: st.legendBg, border: `1px solid ${st.legendBorder}`, borderRadius: 8, padding: '8px 12px', backdropFilter: 'blur(4px)' }}>
+      <div style={{ fontSize: 10, fontWeight: 700, color: st.textDim, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>Edge Type</div>
       {LEGEND_EDGE_TYPES.map(type => {
-        const s = EDGE_STYLES[type];
+        const s = edgeStyles[type];
         return (
           <div key={type} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
             <svg width="22" height="8" style={{ flexShrink: 0 }}>
               <line x1="0" y1="4" x2="22" y2="4" stroke={s.stroke} strokeWidth="1.5" strokeDasharray={s.strokeDasharray ?? 'none'} />
             </svg>
-            <span style={{ fontSize: 11, color: '#94a3b8' }}>{s.label}</span>
+            <span style={{ fontSize: 11, color: st.textMuted }}>{s.label}</span>
           </div>
         );
       })}
@@ -284,17 +312,19 @@ interface DetailPanelProps {
   onClose: () => void;
   onNavigate: (id: string) => void;
   onFigureNavigate: (id: string) => void;
+  isDark: boolean;
 }
 
-function HierarchyDetailPanel({ node, onClose, onNavigate, onFigureNavigate }: DetailPanelProps) {
+function HierarchyDetailPanel({ node, onClose, onNavigate, onFigureNavigate, isDark }: DetailPanelProps) {
   const data = node.data as HierarchyNodeData;
   const nodeType = (data as { nodeType: NodeType }).nodeType;
+  const st = isDark ? DARK_STRUCTURAL : LIGHT_STRUCTURAL;
 
   if (nodeType === 'branch') {
     return null; // branch nodes show no panel
   }
 
-  let borderColor = '#1d4ed8';
+  let borderColor = getNodeStyle('agency', isDark).border;
   let title = '';
   let subtitle = '';
   let body: React.ReactNode = null;
@@ -302,27 +332,27 @@ function HierarchyDetailPanel({ node, onClose, onNavigate, onFigureNavigate }: D
 
   if (nodeType === 'program') {
     const d = data as ProgramNodeData;
-    const ps = PROGRAM_STATUS_STYLES[d.status] ?? PROGRAM_STATUS_STYLES.unknown;
+    const ps = getProgramStatusStyle(d.status, isDark);
     borderColor = ps.border;
     title = d.label;
     subtitle = `${d.parentOrg ? d.parentOrg + ' \u00b7 ' : ''}${d.period}`;
     body = (
       <>
-        <p style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, margin: '0 0 12px 0' }}>{d.summary}</p>
+        <p style={{ fontSize: 12, color: st.textMuted, lineHeight: 1.6, margin: '0 0 12px 0' }}>{d.summary}</p>
         {d.keyPersonnel.length > 0 && (
           <div>
-            <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>Key Personnel</div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: st.textDim, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 6 }}>Key Personnel</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
               {d.keyPersonnel.slice(0, 4).map((p, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 6 }}>
-                  <span style={{ color: '#475569', flexShrink: 0, fontSize: 12, marginTop: 1 }}>&bull;</span>
-                  <span style={{ fontSize: 12, color: '#cbd5e1', lineHeight: 1.4 }}>
+                  <span style={{ color: st.edgeStroke, flexShrink: 0, fontSize: 12, marginTop: 1 }}>&bull;</span>
+                  <span style={{ fontSize: 12, color: st.textValue, lineHeight: 1.4 }}>
                     {p.figure_id ? (
                       <button onClick={() => onFigureNavigate(p.figure_id as string)} style={{ background: 'none', border: 'none', padding: 0, color: '#7dd3fc', cursor: 'pointer', fontSize: 12, textDecoration: 'underline', textDecorationStyle: 'dotted', textUnderlineOffset: '2px' }}>
                         {p.name}
                       </button>
                     ) : <span>{p.name}</span>}
-                    <span style={{ color: '#64748b' }}> - {p.role}</span>
+                    <span style={{ color: st.textDim }}> - {p.role}</span>
                   </span>
                 </div>
               ))}
@@ -338,21 +368,21 @@ function HierarchyDetailPanel({ node, onClose, onNavigate, onFigureNavigate }: D
     );
   } else if (nodeType === 'contractor') {
     const d = data as ContractorNodeData;
-    borderColor = '#7c3aed';
+    borderColor = getNodeStyle('contractor', isDark).border;
     title = d.label;
     subtitle = [d.founded ? `Est. ${d.founded}` : '', d.headquarters].filter(Boolean).join(' \u00b7 ');
     body = (
       <>
-        <p style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, margin: '0 0 10px 0' }}>{d.description}</p>
-        <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 5 }}>UAP Relevance</div>
-        <p style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, margin: '0 0 10px 0' }}>
+        <p style={{ fontSize: 12, color: st.textMuted, lineHeight: 1.6, margin: '0 0 10px 0' }}>{d.description}</p>
+        <div style={{ fontSize: 10, fontWeight: 700, color: st.textDim, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 5 }}>UAP Relevance</div>
+        <p style={{ fontSize: 12, color: st.textMuted, lineHeight: 1.6, margin: '0 0 10px 0' }}>
           {d.uap_relevance.length > 300 ? d.uap_relevance.slice(0, 300).trimEnd() + '\u2026' : d.uap_relevance}
         </p>
         {d.key_figures.length > 0 && (
           <div>
-            <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 5 }}>Key Figures</div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: st.textDim, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 5 }}>Key Figures</div>
             {d.key_figures.map((f, i) => (
-              <div key={i} style={{ fontSize: 12, color: '#cbd5e1', marginBottom: 3 }}>&bull; {f}</div>
+              <div key={i} style={{ fontSize: 12, color: st.textValue, marginBottom: 3 }}>&bull; {f}</div>
             ))}
           </div>
         )}
@@ -361,25 +391,25 @@ function HierarchyDetailPanel({ node, onClose, onNavigate, onFigureNavigate }: D
   } else {
     // agency / legislative
     const d = data as AgencyNodeData;
-    const s = NODE_STYLES[nodeType as 'agency' | 'legislative'];
+    const s = getNodeStyle(nodeType as 'agency' | 'legislative', isDark);
     borderColor = s.border;
     title = d.label;
     subtitle = (d as { sublabel?: string }).sublabel ?? '';
-    body = <p style={{ fontSize: 12, color: '#94a3b8', lineHeight: 1.6, margin: 0 }}>{d.description}</p>;
+    body = <p style={{ fontSize: 12, color: st.textMuted, lineHeight: 1.6, margin: 0 }}>{d.description}</p>;
   }
 
   return (
-    <div style={{ position: 'absolute', bottom: 12, left: 12, zIndex: 20, width: 'min(380px, calc(100vw - 24px))', background: 'rgba(15,23,42,0.97)', border: `1px solid ${borderColor}`, borderRadius: 10, backdropFilter: 'blur(6px)', boxShadow: '0 4px 24px rgba(0,0,0,0.6)', maxHeight: 400, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-      <div style={{ padding: '10px 14px 8px', borderBottom: '1px solid #1e293b', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
+    <div style={{ position: 'absolute', bottom: 12, left: 12, zIndex: 20, width: 'min(380px, calc(100vw - 24px))', background: st.panelBg, border: `1px solid ${borderColor}`, borderRadius: 10, backdropFilter: 'blur(6px)', boxShadow: '0 4px 24px rgba(0,0,0,0.6)', maxHeight: 400, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+      <div style={{ padding: '10px 14px 8px', borderBottom: `1px solid ${st.divider}`, flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
         <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#f1f5f9', lineHeight: 1.3 }}>{title}</div>
-          {subtitle && <div style={{ fontSize: 11, color: '#64748b', marginTop: 2 }}>{subtitle}</div>}
+          <div style={{ fontSize: 13, fontWeight: 700, color: st.text, lineHeight: 1.3 }}>{title}</div>
+          {subtitle && <div style={{ fontSize: 11, color: st.textDim, marginTop: 2 }}>{subtitle}</div>}
         </div>
-        <button onClick={onClose} aria-label="Close panel" style={{ background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: 18, lineHeight: 1, padding: '0 0 0 4px', flexShrink: 0 }}>&times;</button>
+        <button onClick={onClose} aria-label="Close panel" style={{ background: 'none', border: 'none', color: st.textDim, cursor: 'pointer', fontSize: 18, lineHeight: 1, padding: '0 0 0 4px', flexShrink: 0 }}>&times;</button>
       </div>
       <div style={{ padding: '10px 14px', overflowY: 'auto', flex: 1 }}>{body}</div>
       {footerButton && (
-        <div style={{ padding: '8px 14px', borderTop: '1px solid #1e293b', flexShrink: 0 }}>{footerButton}</div>
+        <div style={{ padding: '8px 14px', borderTop: `1px solid ${st.divider}`, flexShrink: 0 }}>{footerButton}</div>
       )}
     </div>
   );
@@ -520,6 +550,7 @@ const { nodes: initialNodes, edges: initialEdges } = buildInitialElements();
 
 export default function OversightHierarchyFlow() {
   const router = useRouter();
+  const { isDark, c } = useFlowTheme();
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [layouted, setLayouted] = useState(false);
@@ -550,36 +581,39 @@ export default function OversightHierarchyFlow() {
   }, [layouted]);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: 720, background: '#0f172a', borderRadius: 12, overflow: 'hidden', border: '1px solid #1e293b' }}>
-      <EdgeLegend />
+    <FlowThemeContext.Provider value={isDark}>
+      <div style={{ position: 'relative', width: '100%', height: 720, background: 'var(--flow-bg)', borderRadius: 12, overflow: 'hidden', border: '1px solid var(--flow-border)' }}>
+        <EdgeLegend isDark={isDark} />
 
-      {selectedNode && (
-        <HierarchyDetailPanel
-          node={selectedNode}
-          onClose={() => setSelectedNode(null)}
-          onNavigate={handleNavigate}
-          onFigureNavigate={handleFigureNavigate}
-        />
-      )}
+        {selectedNode && (
+          <HierarchyDetailPanel
+            node={selectedNode}
+            onClose={() => setSelectedNode(null)}
+            onNavigate={handleNavigate}
+            onFigureNavigate={handleFigureNavigate}
+            isDark={isDark}
+          />
+        )}
 
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        nodeTypes={nodeTypes}
-        onInit={onInit}
-        onNodeClick={handleNodeClick}
-        fitView
-        fitViewOptions={{ padding: 0.12 }}
-        minZoom={0.12}
-        maxZoom={2}
-        colorMode="dark"
-        proOptions={{ hideAttribution: true }}
-      >
-        <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#1e293b" />
-        <Controls showInteractive={false} style={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8 }} />
-      </ReactFlow>
-    </div>
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          nodeTypes={nodeTypes}
+          onInit={onInit}
+          onNodeClick={handleNodeClick}
+          fitView
+          fitViewOptions={{ padding: 0.12 }}
+          minZoom={0.12}
+          maxZoom={2}
+          colorMode={isDark ? 'dark' : 'light'}
+          proOptions={{ hideAttribution: true }}
+        >
+          <Background variant={BackgroundVariant.Dots} gap={20} size={1} color={c.dotColor} />
+          <Controls showInteractive={false} style={{ background: c.ctrlBg, border: `1px solid ${c.ctrlBorder}`, borderRadius: 8 }} />
+        </ReactFlow>
+      </div>
+    </FlowThemeContext.Provider>
   );
 }
