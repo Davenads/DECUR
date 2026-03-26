@@ -1,0 +1,200 @@
+{
+  "profile": {
+    "id": "travis-walton",
+    "name": "Travis Walton",
+    "aliases": ["Travis Rex Walton"],
+    "born": "February 10, 1957 - Snowflake, Arizona",
+    "died": null,
+    "roles": [
+      "Timber contract worker, Apache-Sitgreaves National Forest (1975)",
+      "Author - Fire in the Sky: The Walton Experience (1993)",
+      "UAP experiencer and public witness"
+    ],
+    "service_period": "1975-present (public testimony)",
+    "organizations": [
+      "Mike Rogers Logging (1975)",
+      "Disclosure Project"
+    ],
+    "clearance": null,
+    "summary": "Travis Walton is the central figure in one of the most thoroughly witnessed CE4 cases on record. On November 5, 1975, he vanished in full view of six coworkers after approaching a hovering disc-shaped craft in the Apache-Sitgreaves National Forest near Snowflake, Arizona. He reappeared five days later with fragmented memories of being aboard a craft. Five of his six coworkers subsequently passed Arizona Department of Public Safety polygraph examinations corroborating their account of the initial disappearance. His 1993 memoir Fire in the Sky and the Paramount film adaptation of the same year brought the case to mainstream awareness. The case remains significant in CE4 research due to the number of independent corroborating witnesses and the documented multi-decade polygraph record.",
+    "education": [
+      "Snowflake High School, Snowflake, Arizona"
+    ],
+    "early_career": [
+      "Grew up in Snowflake, Arizona, a small community in Navajo County",
+      "Worked as a timber contract worker for crew boss Mike Rogers in the Apache-Sitgreaves National Forest",
+      "One of seven crew members working a USFS reforestation contract in November 1975"
+    ],
+    "key_events": [
+      {
+        "year": "1957",
+        "event": "Born February 10, 1957, in Snowflake, Arizona."
+      },
+      {
+        "year": "1975",
+        "event": "Working as a member of timber contractor Mike Rogers' seven-man crew under a USFS reforestation contract in the Apache-Sitgreaves National Forest, Navajo County, Arizona."
+      },
+      {
+        "year": "Nov 1975",
+        "event": "On November 5, 1975, at approximately 6:15 PM, the seven-man crew observed a large, glowing disc-shaped craft hovering above a clearing near Turkey Springs. Walton exited the truck and approached the craft on foot. A beam of bluish-white light struck him, projecting him backwards. The remaining six crew members fled in the truck. When they returned minutes later, Walton had vanished. He remained missing for five days and six hours."
+      },
+      {
+        "year": "Nov 1975",
+        "event": "Reappeared on November 10, 1975, disoriented and dehydrated, found at a telephone booth in Heber, Arizona. He reported fragmented memories of being aboard a craft and encountering both short grey-type humanoids and taller, human-appearing beings. A physician who examined him noted an unusual physical state consistent with the claimed duration of his absence."
+      },
+      {
+        "year": "Dec 1975",
+        "event": "The six crew witnesses submitted to polygraph examinations conducted by Cy Gilson of the Arizona Department of Public Safety. Five of the six passed; the sixth was deemed inconclusive. Walton's own follow-up examination produced a passing result. The National Enquirer awarded the case its annual UFO case award."
+      },
+      {
+        "year": "1978",
+        "event": "Published his first account, 'The Walton Experience' (Berkeley Medallion Books), providing the initial written record of the encounter and his aboard-craft experience."
+      },
+      {
+        "year": "1993",
+        "event": "Revised and expanded account published as 'Fire in the Sky: The Walton Experience' (Marlowe & Company). The same year, Paramount Pictures released the film adaptation Fire in the Sky, starring D.B. Sweeney as Walton and Robert Patrick as Mike Rogers. The film brought the case to international public attention."
+      },
+      {
+        "year": "May 2001",
+        "event": "Participated in Steven Greer's Disclosure Project National Press Club event, providing testimony as one of over 20 military, government, and civilian witnesses advocating for official UAP disclosure."
+      },
+      {
+        "year": "2015-present",
+        "event": "Has continued appearing at UAP conferences, symposia, and media programs. Participated in a 40th anniversary public reunion with surviving crew members - several of whom continued to publicly confirm their accounts - reinforcing the case as one of the most continuously corroborated CE4 events on record."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "walton-aboard-craft-entities",
+      "claim": "Was transported aboard a non-human craft and encountered both short grey-type humanoid beings and taller, human-appearing beings during his five-day absence.",
+      "status": "unverified",
+      "notes": "Walton's recalled account is internally consistent across multiple tellings since 1975 and is broadly consistent with other CE4 accounts documented by Mack, Hopkins, and others. However, his aboard-craft memories were fragmented and partially reconstructed under hypnosis - a methodology whose reliability is contested. No physical evidence from inside a craft was recovered. His six coworkers attested to the initial disappearance event but not to the aboard experiences."
+    },
+    {
+      "id": "walton-beam-physical-effect",
+      "claim": "Was struck by a directed energy beam from the hovering craft that rendered him unconscious and caused his disappearance.",
+      "status": "partially-verified",
+      "notes": "The observation of a beam striking Walton is attested by all six crew members present, and all have consistently maintained this account across five decades. Five of the six passed polygraph examinations (the sixth was inconclusive). The physical beam effect itself cannot be independently verified, but the multi-witness corroboration chain is among the strongest in the CE4 research record."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Six independent corroborating witnesses - all crew members present - consistently described the same craft and beam event across multiple polygraph examinations and five decades of public testimony",
+      "Five of six witnesses passed polygraph examinations conducted by the Arizona Department of Public Safety; the sixth was inconclusive",
+      "Steve Pierce, one of the six crew witnesses, continued to publicly affirm his account into the 2010s even amid reported social pressure to recant",
+      "A physician's examination upon Walton's return documented an unusual physical state consistent with prolonged absence and stress",
+      "No identified financial motive for fabrication - the crew did not meaningfully profit from the original event and faced significant social disruption in the immediate aftermath",
+      "The account has remained internally consistent in its core elements across 50 years of public testimony"
+    ],
+    "contradicting": [
+      "Walton's initial December 1975 polygraph showed a deceptive result on one of two tests before a follow-up examination produced a passing result",
+      "Skeptic Philip Klass documented inconsistencies in the polygraph record and questioned the selection of examiners",
+      "The aboard-craft account relies heavily on memory reconstruction, some of which occurred under hypnosis - a methodology whose reliability is scientifically contested",
+      "USFS employees working in the same forest area reported no unusual observations on the date in question",
+      "The Paramount film's dramatization introduced elements diverging from Walton's account, creating persistent public confusion between the factual record and the dramatization"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "whitley-strieber",
+      "name": "Whitley Strieber",
+      "role": "CE4 experiencer; author of Communion (1987)",
+      "relationship": "Fellow CE4 experiencer whose 1987 memoir Communion arrived after Walton's own account but reached far larger mainstream audiences. Both have appeared at UAP events together and are regularly cited in the same research contexts as the two most prominent CE4 experiencers with sustained, decades-long public records."
+    },
+    {
+      "id": "john-mack",
+      "name": "Dr. John E. Mack",
+      "role": "Harvard psychiatrist; CE4 researcher",
+      "relationship": "Mack's landmark 1994 study 'Abduction' drew on Budd Hopkins' earlier methodology and referenced the Walton case as one of the most significantly corroborated historical CE4 events, establishing it as a touchstone against which the broader abduction phenomenon was calibrated."
+    },
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton T. Friedman",
+      "role": "Nuclear physicist; UFO researcher",
+      "relationship": "Friedman documented and cited the Walton case in his research and public presentations as one of the highest-credibility multiple-witness CE4 cases. Both Friedman and Walton appeared at UAP conferences together across multiple decades."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1978",
+      "type": "written",
+      "title": "The Walton Experience",
+      "outlet": "Berkeley Medallion Books",
+      "notes": "First published account of the November 1975 abduction incident, written three years after the event. Provides the foundational text-record of Walton's aboard-craft experiences and the circumstances of his disappearance and return."
+    },
+    {
+      "date": "1993",
+      "type": "written",
+      "title": "Fire in the Sky: The Walton Experience",
+      "outlet": "Marlowe & Company",
+      "notes": "Revised and expanded memoir - the definitive written account. Published simultaneously with the Paramount film adaptation and represents Walton's most complete first-person record of the encounter."
+    },
+    {
+      "date": "1993",
+      "type": "film",
+      "title": "Fire in the Sky",
+      "outlet": "Paramount Pictures",
+      "notes": "Major studio film adaptation starring D.B. Sweeney as Walton and Robert Patrick as Mike Rogers. Walton served as consultant but has publicly noted that certain aboard-craft sequences were dramatized beyond his actual account for cinematic effect."
+    },
+    {
+      "date": "May 2001",
+      "type": "speech",
+      "title": "Disclosure Project National Press Club Testimony",
+      "outlet": "National Press Club, Washington D.C.",
+      "notes": "Provided testimony as part of Steven Greer's Disclosure Project event at the National Press Club, appearing alongside over 20 former military and government witnesses and experiencers advocating for official UAP disclosure."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "stanton-friedman",
+      "node_label": "Stanton Friedman",
+      "relationship": "Friedman documented and investigated the Walton case extensively, citing it as one of the most credible multi-witness CE4 events in the research record.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "whitley-strieber",
+      "node_label": "Whitley Strieber",
+      "relationship": "Fellow CE4 experiencer-author; both represent the most sustained first-person public accounts of non-human contact experiences in the research canon.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "john-mack",
+      "node_label": "Dr. John Mack",
+      "relationship": "Mack's abduction research framework referenced the Walton case as a foundational multi-witness CE4 event; both appeared in the same Disclosure Project context.",
+      "connection_type": "investigative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fire in the Sky: The Walton Experience (1993)",
+      "url": "https://www.amazon.com/dp/1569800855",
+      "type": "Book",
+      "notes": "Primary source - Walton's definitive memoir (Marlowe & Company, 1993). The foundational first-person account of the November 1975 encounter."
+    },
+    {
+      "title": "NICAP Case Report - Travis Walton Abduction (1975)",
+      "url": "https://www.nicap.org/751105dir.htm",
+      "type": "Case File",
+      "notes": "NICAP documented case file including contemporaneous investigation records, polygraph summary, and witness statements."
+    },
+    {
+      "title": "UFO Evidence - Travis Walton Case Documentation",
+      "url": "https://www.ufoevidence.org/cases/case311.htm",
+      "type": "Research Archive",
+      "notes": "Summary documentation of the polygraph examinations conducted by Cy Gilson (Arizona DPS) on the crew witnesses in December 1975."
+    },
+    {
+      "title": "Fire in the Sky - Paramount Film (1993)",
+      "url": "https://www.imdb.com/title/tt0106861/",
+      "type": "Film",
+      "notes": "Paramount Pictures theatrical release. Walton served as consultant. IMDB reference."
+    }
+  ]
+}

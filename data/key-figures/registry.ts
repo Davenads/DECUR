@@ -94,6 +94,11 @@ import wilbertSmithData from './wilbert-smith.json';
 import lynneKiteiData from './lynne-kitei.json';
 import annaPaulinaLunaData from './anna-paulina-luna.json';
 import neilMccaslandData from './neil-mccasland.json';
+import travisWaltonData from './travis-walton.json';
+import buddHopkinsData from './budd-hopkins.json';
+import rogerLeirData from './roger-leir.json';
+import bettyBarneyHillData from './betty-barney-hill.json';
+import johnLearData from './john-lear.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -179,4 +184,9 @@ export const insiderRegistry: Record<string, any> = {
   'lynne-kitei': lynneKiteiData,
   'anna-paulina-luna': annaPaulinaLunaData,
   'neil-mccasland': neilMccaslandData,
+  'travis-walton': travisWaltonData,
+  'budd-hopkins': buddHopkinsData,
+  'roger-leir': rogerLeirData,
+  'betty-barney-hill': bettyBarneyHillData,
+  'john-lear': johnLearData,
 };

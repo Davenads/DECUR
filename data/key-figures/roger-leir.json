@@ -1,0 +1,183 @@
+{
+  "profile": {
+    "id": "roger-leir",
+    "name": "Dr. Roger K. Leir",
+    "aliases": ["Roger Leir", "Roger K. Leir"],
+    "born": "January 20, 1934",
+    "died": "March 14, 2014",
+    "roles": [
+      "Doctor of Podiatric Medicine (DPM), private practice - Thousand Oaks, California",
+      "Author - The Aliens and the Scalpel (1998, 2nd ed. 2005)",
+      "Founder - A&S Research Inc.",
+      "Performed 17 documented alleged implant removal surgeries (1995-2014)"
+    ],
+    "service_period": "1995-2014 (implant research and surgical documentation)",
+    "organizations": [
+      "A&S Research Inc.",
+      "National Institute for Discovery Science (NIDS, affiliated)"
+    ],
+    "clearance": null,
+    "summary": "Podiatric surgeon based in Thousand Oaks, California who from 1995 until his death in 2014 performed 17 documented surgical procedures to remove small objects from individuals who reported CE4/abduction experiences and believed they had been implanted with foreign devices. The removed specimens were submitted to multiple independent materials analysis laboratories - including researchers affiliated with New Mexico Tech, Los Alamos National Laboratory, UC San Diego, and the University of Toronto - with several analyses producing anomalous findings: unusual isotopic ratios inconsistent with terrestrial manufacturing, absence of inflammatory response in surrounding tissue despite long-term implantation, and in some cases detectable radio frequency emissions. Leir documented his findings in 'The Aliens and the Scalpel' (1998, expanded 2005). His work represents the most systematic surgical and materials-analysis approach to the CE4 physical evidence question in the research record.",
+    "education": [
+      "Doctor of Podiatric Medicine (DPM)"
+    ],
+    "early_career": [
+      "Established private podiatric surgical practice in Thousand Oaks, California",
+      "Initial contact with the UAP research community through CE4 researcher Derrel Sims in the mid-1990s",
+      "Agreed to perform the first implant removal surgeries in 1995 after reviewing physical examination records of alleged abductees referred by Sims"
+    ],
+    "key_events": [
+      {
+        "year": "1934",
+        "event": "Born January 20, 1934."
+      },
+      {
+        "year": "Aug 1995",
+        "event": "Performed the first two implant removal surgeries on August 19, 1995, in conjunction with CE4 researcher Derrel Sims. Removed two small objects from the foot of one patient and one object from the hand of a second patient. All patients reported CE4 experiences and believed the objects had been placed during encounters. The surgeries were filmed and removed specimens were submitted for laboratory analysis."
+      },
+      {
+        "year": "1996",
+        "event": "Materials analysis results from the initial implants produced several anomalous findings. Objects contained meteoric iron with crystalline structure inconsistent with known terrestrial manufacturing processes. No inflammatory response was observed in the surrounding tissue despite the objects having been lodged there for an estimated decade or more. One object emitted a detectable radio frequency signal. UC San Diego analysis by Dr. Russell VernonClark found isotopic ratios inconsistent with terrestrial origin in multiple specimens."
+      },
+      {
+        "year": "1998",
+        "event": "Published 'The Aliens and the Scalpel: Scientific Proof of Alien Implants' (Granite Publishing). The book documented the first several surgeries, laboratory analyses, and Leir's hypothesis regarding the nature and function of the removed objects. It became the primary reference work on alleged alien implants in the research literature."
+      },
+      {
+        "year": "2000",
+        "event": "Published 'Casebook: Alien Implants' (Dell, 2000), expanding the documented case record with additional surgeries and analysis results."
+      },
+      {
+        "year": "2005",
+        "event": "Published the expanded second edition of 'The Aliens and the Scalpel' (Granite Publishing, 2005), incorporating laboratory results from additional procedures and addressing methodological criticisms."
+      },
+      {
+        "year": "1995-2014",
+        "event": "Performed a total of 17 documented implant removal surgeries over his 19-year research career. Specimens were submitted to independent laboratories including New Mexico Tech, Los Alamos National Laboratory, Seal Laboratories, the University of Toronto, and the National Institute for Discovery Science. Each surgery was filmed and documented. Approximately a dozen of the 17 cases produced anomalous materials analysis findings."
+      },
+      {
+        "year": "2014",
+        "event": "Died March 14, 2014, in Thousand Oaks, California, at age 80. The A&S Research case archive was preserved by colleagues in the CE4 research community."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "leir-implants-non-human-origin",
+      "claim": "Objects removed from alleged CE4 abductees are non-terrestrial in origin, based on anomalous materials composition, unusual isotopic ratios, and absence of inflammatory response.",
+      "status": "unverified",
+      "notes": "Multiple independent laboratory analyses produced genuinely anomalous findings - particularly the isotopic ratio data from UC San Diego and the documented absence of inflammatory response in surrounding tissue. However, no laboratory analysis formally concluded that the objects were non-terrestrial; all analyses described anomalous findings without definitive attribution. Critics argue the objects may have been mundane terrestrial foreign bodies whose analysis produced confusing results due to contamination or limitations in the testing protocols. Surgeries were not conducted at hospital facilities with full chain-of-custody documentation, which limits the evidentiary weight."
+    },
+    {
+      "id": "leir-rf-emissions",
+      "claim": "Several removed objects emitted radio frequency signals detectable by standard RF measurement equipment.",
+      "status": "partially-verified",
+      "notes": "RF emissions were documented during examination of certain specimens and recorded on film. However, independent replication of the RF findings in controlled laboratory settings has not been documented in peer-reviewed literature. The source of the RF signal - whether from the object itself or from environmental interference - was not definitively established."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Performed 17 documented surgeries with independent materials analysis from multiple credentialed laboratories including researchers affiliated with Los Alamos National Laboratory and UC San Diego",
+      "The absence of inflammatory response in surrounding tissue - documented by independent pathologists examining excised tissue - is a genuine medical anomaly for foreign bodies lodged long-term in human tissue",
+      "Isotopic ratio analysis by Dr. Russell VernonClark (UC San Diego) found distributions inconsistent with terrestrial manufacturing in multiple specimens",
+      "Garry Nolan (Stanford immunologist and UAP materials analyst) cited the broader Leir research tradition as part of the physical evidence analysis landscape",
+      "All surgeries were filmed and physical specimens were distributed to multiple independent laboratories rather than retained by a single custodian"
+    ],
+    "contradicting": [
+      "Leir was a podiatric surgeon (DPM), not a medical doctor (MD), and surgeries were performed outside hospital settings, limiting chain-of-custody integrity",
+      "No peer-reviewed paper has been published establishing non-terrestrial origin for any of the removed specimens",
+      "Anomalous isotopic ratios can result from terrestrial manufacturing processes, meteoritic contamination in manufacturing, or errors in the analysis protocol",
+      "The patient population was self-selected through CE4 researcher Derrel Sims - all patients already believed they had been abducted, creating confirmation bias in the evidence chain",
+      "A&S Research Inc. was primarily funded by the same CE4 research community whose claims the research was intended to validate"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Stanford immunologist; UAP materials analyst",
+      "relationship": "Nolan has conducted independent materials analysis of alleged UAP-related physical specimens using advanced immunological profiling and mass spectrometry - methodologically parallel to the metallurgical analyses applied to Leir's implant specimens. Both represent the most systematic scientific approaches to physical evidence from CE4/UAP encounters in the research record."
+    },
+    {
+      "id": "john-mack",
+      "name": "Dr. John E. Mack",
+      "role": "Harvard psychiatrist; CE4 researcher",
+      "relationship": "Both Leir and Mack approached the CE4 phenomenon from medical professional backgrounds during the same period. Mack's psychiatric investigation of experiencers and Leir's surgical investigation of physical evidence represented complementary methodological tracks in CE4 research."
+    },
+    {
+      "id": "colm-kelleher",
+      "name": "Dr. Colm A. Kelleher",
+      "role": "NIDS biochemist; anomalous phenomena researcher",
+      "relationship": "The National Institute for Discovery Science (NIDS), where Kelleher served as deputy administrator, was among the organizations that received and analyzed specimens from Leir's surgical procedures. NIDS cross-referenced the implant research with its broader anomalous phenomena investigation program."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1998",
+      "type": "written",
+      "title": "The Aliens and the Scalpel: Scientific Proof of Alien Implants",
+      "outlet": "Granite Publishing",
+      "notes": "Primary research monograph documenting the first several implant removal surgeries, laboratory analysis methodology, and anomalous findings. The foundational text on alleged alien implants in the research literature."
+    },
+    {
+      "date": "2000",
+      "type": "written",
+      "title": "Casebook: Alien Implants",
+      "outlet": "Dell Publishing",
+      "notes": "Expanded case documentation of additional surgical procedures and analysis results."
+    },
+    {
+      "date": "2005",
+      "type": "written",
+      "title": "The Aliens and the Scalpel (2nd edition)",
+      "outlet": "Granite Publishing",
+      "notes": "Expanded second edition incorporating additional case documentation and responding to methodological criticisms of the first edition."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "garry-nolan",
+      "node_label": "Dr. Garry Nolan",
+      "relationship": "Nolan conducted parallel independent materials analysis of alleged UAP-related physical specimens; both represent the most systematic scientific approaches to physical CE4/UAP evidence in the research record.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "colm-kelleher",
+      "node_label": "Dr. Colm Kelleher",
+      "relationship": "NIDS received and analyzed implant specimens from Leir's surgical procedures as part of its broader anomalous phenomena research program.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "john-mack",
+      "node_label": "Dr. John Mack",
+      "relationship": "Both approached CE4 from medical professional backgrounds during the same period - Mack through psychiatric investigation, Leir through surgical and materials analysis.",
+      "connection_type": "professional"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Aliens and the Scalpel - Dr. Roger Leir (2nd ed. 2005)",
+      "url": "https://www.amazon.com/dp/0926524585",
+      "type": "Book",
+      "notes": "Primary source - Leir's research monograph documenting the implant removal procedures and laboratory analysis results (Granite Publishing, 2005 expanded edition)."
+    },
+    {
+      "title": "Casebook: Alien Implants - Roger Leir (2000)",
+      "url": "https://www.amazon.com/dp/0440236886",
+      "type": "Book",
+      "notes": "Secondary case documentation volume (Dell, 2000)."
+    },
+    {
+      "title": "A&S Research Inc. Documentation Archive",
+      "url": "https://www.alienscalpel.com/",
+      "type": "Research Archive",
+      "notes": "Primary institutional source for the documented case record, surgery films, and laboratory analysis results maintained by A&S Research Inc."
+    }
+  ]
+}

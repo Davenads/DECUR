@@ -50,7 +50,7 @@ export const NODE_COLORS: Record<NodeType, string> = {
 // Person nodes for figures WITHOUT dedicated profile pages.
 // All profiled insiders are auto-derived from data/key-figures/index.json in NetworkGraph.tsx.
 export const supplementaryPersonNodes: GraphNode[] = [
-  { id: 'john-lear',          name: 'John Lear',          type: 'person', group: 'lazar',    val: 2 },
+  // john-lear removed - now a profiled figure auto-derived from index.json
   { id: 'jim-slaight',        name: 'Jim Slaight',        type: 'person', group: 'fravor',   val: 2 },
   { id: 'charles-mccullough', name: 'Charles McCullough', type: 'person', group: 'mccullough', val: 3 },
 ];
@@ -1047,5 +1047,37 @@ export const graphData: GraphData = {
     { source: 'rockefeller-briefing-document-1995', target: 'stanton-friedman',     label: 'served as principal scientific consultant and technical reviewer; Roswell case section reflects his research' },
     { source: 'rockefeller-briefing-document-1995', target: 'nicap',                label: 'NICAP case archives provided the primary evidentiary base for all seven high-quality UAP incidents presented' },
     { source: 'rockefeller-briefing-document-1995', target: 'mufon',                label: 'MUFON investigation records used as corroborating case evidence alongside NICAP archives' },
+
+    // Travis Walton connections
+    { source: 'travis-walton',    target: 'stanton-friedman',   label: 'Friedman documented and cited the Walton case as one of the highest-credibility multiple-witness CE4 cases; both appeared at UAP conferences together' },
+    { source: 'travis-walton',    target: 'whitley-strieber',   label: 'fellow CE4 experiencer-authors; both represent the most sustained first-person public accounts of non-human contact experiences in the research canon' },
+    { source: 'travis-walton',    target: 'john-mack',          label: "Mack's 1994 abduction research framework referenced the Walton case as a foundational multi-witness CE4 event" },
+    { source: 'travis-walton',    target: 'disclosure-project', label: 'provided testimony at the 2001 Disclosure Project National Press Club event alongside over 20 military and government witnesses' },
+
+    // Budd Hopkins connections
+    { source: 'budd-hopkins',     target: 'whitley-strieber',   label: "Hopkins investigated Strieber's 1985-86 experiences; the investigation contributed to Strieber's landmark 1987 memoir Communion" },
+    { source: 'budd-hopkins',     target: 'john-mack',          label: 'Hopkins introduced Mack to CE4 research in 1992; Mack subsequently conducted a formal Harvard investigation using Hopkins regression methodology' },
+    { source: 'budd-hopkins',     target: 'colm-kelleher',      label: 'NIDS anomalous phenomena research overlapped substantially with Hopkins CE4 documentation; both contributed to the same research conferences' },
+    { source: 'budd-hopkins',     target: 'nicap',              label: 'maintained research connections with NICAP and drew on NICAP case archives in developing the missing time framework' },
+
+    // Roger Leir connections
+    { source: 'roger-leir',       target: 'garry-nolan',        label: 'both conducted independent materials analysis of alleged non-human physical specimens; Nolan used advanced immunological methods, Leir surgical extraction and metallurgical analysis' },
+    { source: 'roger-leir',       target: 'john-mack',          label: 'both approached CE4 from medical professional backgrounds during the same period; Mack psychiatric investigation, Leir surgical and materials analysis' },
+    { source: 'roger-leir',       target: 'colm-kelleher',      label: 'NIDS received and analyzed implant specimens from Leir surgical procedures as part of its broad anomalous phenomena research program' },
+    { source: 'roger-leir',       target: 'nids',               label: 'National Institute for Discovery Science analyzed specimens from Leir implant removal surgeries and cross-referenced findings with its broader research program' },
+
+    // Betty and Barney Hill connections
+    { source: 'betty-barney-hill', target: 'stanton-friedman',  label: 'Friedman conducted the most comprehensive modern investigation and co-authored the definitive 2007 account Captured! with Betty\'s niece Kathleen Marden' },
+    { source: 'betty-barney-hill', target: 'donald-keyhoe',     label: 'Betty Hill wrote to NICAP director Keyhoe within weeks of the encounter; NICAP conducted the first formal investigation under his direction' },
+    { source: 'betty-barney-hill', target: 'john-mack',         label: "Mack cited the Hill case as the foundational historical reference for the abduction research tradition in his 1994 study Abduction" },
+    { source: 'betty-barney-hill', target: 'budd-hopkins',      label: "Hopkins cited the Hill case as the historical touchstone against which all subsequent CE4 cases were calibrated; the case directly established the research tradition Hopkins systematized" },
+    { source: 'betty-barney-hill', target: 'nicap',             label: 'NICAP investigated the case as one of the most credible on record after Betty Hill contacted Donald Keyhoe in October 1961' },
+
+    // John Lear connections
+    { source: 'john-lear',        target: 'bob-lazar',          label: 'introduced Lazar to journalist George Knapp at KLAS-TV Las Vegas in 1989; the resulting broadcasts produced the most consequential UAP disclosure of the 1980s' },
+    { source: 'john-lear',        target: 'george-knapp',       label: 'long-term professional relationship; Lear introduced Lazar to Knapp and appeared in the original KLAS-TV broadcasts corroborating Lazar S-4 claims' },
+    { source: 'john-lear',        target: 'richard-doty',       label: 'overlapping networks in the late 1980s UAP disclosure community; Doty documented disinformation operations raise questions about some information Lear received from alleged IC contacts' },
+    { source: 'john-lear',        target: 's4-papoose',         label: 'was the first person to publicly claim prior knowledge of S-4 operations before Lazar\'s 1989 disclosure' },
+    { source: 'john-lear',        target: 'disclosure-project', label: 'provided testimony at the 2001 Disclosure Project National Press Club event as one of over 20 former government and military witnesses' },
   ],
 };

@@ -1,0 +1,180 @@
+{
+  "profile": {
+    "id": "budd-hopkins",
+    "name": "Budd Hopkins",
+    "aliases": ["Elliot Budd Hopkins"],
+    "born": "June 15, 1931 - Wheeling, West Virginia",
+    "died": "August 21, 2011 - New York City, New York",
+    "roles": [
+      "Abstract Expressionist Painter and Sculptor",
+      "Author - Missing Time (1981), Intruders (1987), Witnessed (1996)",
+      "Founder - Intruders Foundation (1989)",
+      "Pioneer of hypnotic regression methodology in CE4 research"
+    ],
+    "service_period": "1981-2011 (CE4 research and public advocacy)",
+    "organizations": [
+      "Intruders Foundation",
+      "Fund for UFO Research (affiliated)",
+      "J. Allen Hynek Center for UFO Studies (affiliated)"
+    ],
+    "clearance": null,
+    "summary": "Internationally recognized abstract expressionist painter who from 1976 onward became one of the most significant researchers of the CE4/abduction phenomenon. Hopkins coined the term 'missing time' to describe the unexplained temporal gaps reported by abduction experiencers, pioneered hypnotic regression as a systematic investigative methodology, and documented thousands of cases over three decades. His 1981 book 'Missing Time' established the research framework that Dr. John Mack later carried into academic credibility through Harvard. He founded the Intruders Foundation in 1989, which provided direct support to experiencers and funded independent investigation. His 1996 book 'Witnessed' - documenting the Linda Cortile Brooklyn Bridge case with multiple claimed witnesses - remains the most detailed single CE4 case study in the published literature. Works from his painting career are held by the Museum of Modern Art, the Whitney Museum, the Hirshhorn Collection, and the Guggenheim Museum.",
+    "education": [
+      "B.A., Oberlin College, 1953 (Fine Arts)"
+    ],
+    "early_career": [
+      "Established himself in the New York abstract expressionist scene in the 1950s and 1960s, exhibiting at major galleries including the Kootz Gallery",
+      "Works ultimately held by MOMA, the Whitney Museum, the Hirshhorn Collection, and the Guggenheim Museum",
+      "A 1964 personal UAP sighting over Cape Cod, Massachusetts, prompted his initial interest in the subject; he did not begin systematic research until a decade later"
+    ],
+    "key_events": [
+      {
+        "year": "1931",
+        "event": "Born June 15, 1931, in Wheeling, West Virginia."
+      },
+      {
+        "year": "1964",
+        "event": "Observed an unidentified aerial object over Cape Cod, Massachusetts, alongside two other witnesses. The experience prompted Hopkins' first serious engagement with the UAP subject, though he did not begin systematic research until the mid-1970s."
+      },
+      {
+        "year": "1976",
+        "event": "Began receiving letters from individuals describing unexplained experiences and apparent memory gaps following unusual aerial observations. Started systematically interviewing and cataloging cases, developing the framework of 'missing time' - unexplained temporal discontinuities consistently reported by experiencers."
+      },
+      {
+        "year": "1981",
+        "event": "Published 'Missing Time: A Documented Study of UFO Abductions' (Richard Marek Publishers). The book introduced the 'missing time' framework to a broad audience, presented the first systematic multi-case study using hypnotic regression, and established Hopkins as the foundational figure in abduction research."
+      },
+      {
+        "year": "1987",
+        "event": "Published 'Intruders: The Incredible Visitations at Copley Woods' (Random House), documenting the 'Kathie Davis' case and multiple related accounts. The book reached the New York Times bestseller list. CBS produced a two-part miniseries adaptation in 1992."
+      },
+      {
+        "year": "1989",
+        "event": "Founded the Intruders Foundation in New York City - a nonprofit organization providing direct support, counseling referrals, and investigative resources to CE4 experiencers. The Foundation became the organizational hub of civilian abduction research in the United States."
+      },
+      {
+        "year": "1992",
+        "event": "Introduced Dr. John Mack - Harvard Medical School psychiatrist and Pulitzer Prize winner - to CE4 research. Mack's subsequent five-year investigation of 200 cases, conducted using Hopkins' regression methodology, produced the landmark 1994 study 'Abduction: Human Encounters with Aliens' and brought academic credibility to the framework Hopkins had established."
+      },
+      {
+        "year": "1996",
+        "event": "Published 'Witnessed: The True Story of the Brooklyn Bridge UFO Abductions' (Pocket Books), presenting the Linda Cortile case - a claimed abduction from a Manhattan high-rise apartment with multiple independent witnesses. The case remains the most extensively documented multi-witness CE4 account in the published research record."
+      },
+      {
+        "year": "2011",
+        "event": "Died August 21, 2011, in New York City, following a period of serious illness. At the time of his death he had worked with several thousand alleged CE4 experiencers over approximately 35 years. He was considered the last major institutional figure of the first generation of American abduction researchers."
+      }
+    ]
+  },
+  "credibility": {
+    "supporting": [
+      "Documented thousands of CE4 cases over 35 years, with consistent experiencer-reported motifs arising across geographically dispersed populations with no prior knowledge of the subject matter or of each other",
+      "His methodology was sufficiently credible that Harvard Medical School psychiatrist and Pulitzer Prize winner Dr. John Mack adopted and validated it through a formal five-year academic investigation",
+      "The Intruders Foundation provided direct experiencer support over two decades without any identified financial motive for fabrication",
+      "Multiple independent researchers in the U.S. and Europe documented overlapping case patterns consistent with Hopkins' findings",
+      "His standing as a major figure in the New York art world - with works held by MOMA, the Whitney, and the Guggenheim - gave his secondary research career unusual institutional credibility"
+    ],
+    "contradicting": [
+      "Hypnotic regression methodology is scientifically contested; peer-reviewed research demonstrates that hypnotically recovered memories are highly susceptible to confabulation and unconscious suggestion",
+      "Hopkins had no formal credentials in psychiatry, psychology, or clinical hypnotherapy; critics questioned his qualifications to conduct regression investigations",
+      "The key corroborating witnesses in the Brooklyn Bridge case have never been publicly identified or independently verified",
+      "Harvard psychologist Susan Clancy's 2005 study 'Abducted' directly challenged the validity of the regression methodology Hopkins pioneered",
+      "Hopkins became involved in a controversial dispute with former wife and collaborator Carol Rainey that raised questions about professional conduct in the final years of his career"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "john-mack",
+      "name": "Dr. John E. Mack",
+      "role": "Harvard psychiatrist; CE4 researcher",
+      "relationship": "Hopkins introduced Mack to CE4 research in 1992. Mack subsequently conducted a formal five-year Harvard investigation using Hopkins' regression methodology, producing the landmark 1994 study 'Abduction' which brought the most significant academic credibility the field ever received. Their collaboration was the pivotal institutional validation event of the abduction research tradition."
+    },
+    {
+      "id": "whitley-strieber",
+      "name": "Whitley Strieber",
+      "role": "CE4 experiencer; author of Communion (1987)",
+      "relationship": "Strieber came to Hopkins following his own 1985-1986 experiences; Hopkins' investigation of Strieber's case contributed to Strieber's landmark 1987 memoir 'Communion.' The two maintained a professional relationship for years, and their respective works - Hopkins as investigator, Strieber as experiencer - together defined the public discourse on CE4 phenomena in the late 1980s."
+    },
+    {
+      "id": "colm-kelleher",
+      "name": "Dr. Colm A. Kelleher",
+      "role": "NIDS biochemist; anomalous phenomena researcher",
+      "relationship": "Kelleher and NIDS conducted broad-spectrum anomalous phenomena investigations that overlapped substantially with Hopkins' CE4 research. Both contributed to the same research conferences and publications, and the NIDS framework incorporated awareness of Hopkins' experiencer documentation."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1981",
+      "type": "written",
+      "title": "Missing Time: A Documented Study of UFO Abductions",
+      "outlet": "Richard Marek Publishers",
+      "notes": "Foundational CE4 research text; introduced the 'missing time' framework and established hypnotic regression as the primary investigative methodology. First systematic multi-case CE4 study in the American research literature."
+    },
+    {
+      "date": "1987",
+      "type": "written",
+      "title": "Intruders: The Incredible Visitations at Copley Woods",
+      "outlet": "Random House",
+      "notes": "New York Times bestseller documenting the 'Kathie Davis' case and multiple related accounts. Basis for the 1992 CBS two-part television miniseries 'Intruders.'"
+    },
+    {
+      "date": "1996",
+      "type": "written",
+      "title": "Witnessed: The True Story of the Brooklyn Bridge UFO Abductions",
+      "outlet": "Pocket Books",
+      "notes": "Documents the Linda Cortile case, claimed to involve multiple independent witnesses including individuals identified as U.S. Secret Service agents. The most comprehensive single CE4 case study in the published literature."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "whitley-strieber",
+      "node_label": "Whitley Strieber",
+      "relationship": "Strieber came to Hopkins following his own 1985-86 experiences; Hopkins' investigation contributed to Strieber's landmark 1987 memoir 'Communion' and their collaboration defined public CE4 discourse in the late 1980s.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "john-mack",
+      "node_label": "Dr. John Mack",
+      "relationship": "Hopkins introduced Mack to CE4 research in 1992; Mack's Harvard investigation using Hopkins' regression methodology produced the most academically credible validation the field received.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "colm-kelleher",
+      "node_label": "Dr. Colm Kelleher",
+      "relationship": "NIDS anomalous phenomena research overlapped substantially with Hopkins' CE4 documentation; both contributed to the same research conferences and literature.",
+      "connection_type": "investigative"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Missing Time: A Documented Study of UFO Abductions (1981)",
+      "url": "https://www.amazon.com/dp/0345302974",
+      "type": "Book",
+      "notes": "Primary source - Hopkins' foundational CE4 research text (Richard Marek Publishers, 1981). Introduced the missing time framework and hypnotic regression methodology."
+    },
+    {
+      "title": "Intruders: The Incredible Visitations at Copley Woods (1987)",
+      "url": "https://www.amazon.com/dp/0345341392",
+      "type": "Book",
+      "notes": "Second major research volume (Random House, 1987). New York Times bestseller; basis for 1992 CBS miniseries."
+    },
+    {
+      "title": "Witnessed: The True Story of the Brooklyn Bridge UFO Abductions (1996)",
+      "url": "https://www.amazon.com/dp/0671523201",
+      "type": "Book",
+      "notes": "Most comprehensive single CE4 case study (Pocket Books, 1996); documents the Linda Cortile / Brooklyn Bridge case."
+    },
+    {
+      "title": "MUFON UFO Journal - Hopkins Research Publications",
+      "url": "https://www.mufon.com/",
+      "type": "Journal",
+      "notes": "Hopkins published case studies in the MUFON UFO Journal throughout his research career; the MUFON archive is the primary secondary reference for his investigative methodology."
+    }
+  ]
+}
