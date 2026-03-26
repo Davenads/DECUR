@@ -306,8 +306,66 @@ Add a top-level `career_connections` key to the profile JSON:
 - Aim for **at least 2-3 lateral nodes** across different `event_index` values so the graph has visible branching at multiple points
 - Spread nodes across different timeline points rather than clustering them at one index
 
+### 7. Update the Data Sources page (required)
+Every new key figure must have its primary research sources added to `pages/sources.tsx`. This is a **mandatory step** - the sources page is the platform's research attribution record.
+
+**Where to insert:** Find the `{/* Key Figure Profile Sources */}` section comment and add `<SourceCard>` entries inside it.
+
+**Component interface:**
+```tsx
+<SourceCard
+  name="Fire in the Sky: The Walton Experience (Walton, 1993)"
+  url="https://www.amazon.com/dp/1569800855"
+  type="Published Book"
+  typeColor="bg-purple-100 text-purple-700"
+  description="Travis Walton's first-person memoir of the 1975 Snowflake, Arizona abduction. Primary source for all biographical data and event sequence."
+  notes="Used for: Travis Walton."
+/>
+```
+
+**Props reference:**
+| Prop | Required | Notes |
+|---|---|---|
+| `name` | Yes | Source title, author, and year - e.g. `"The Interrupted Journey - John Fuller (1966)"` |
+| `url` | Yes | Direct URL (Amazon, YouTube, archive.org, official site). Never a ufotimeline.com link. |
+| `type` | Yes | e.g. `"Published Book"`, `"Television Interview"`, `"Research Archive"`, `"Congressional Record"`, `"Academic Paper"` |
+| `typeColor` | Yes | Tailwind badge classes. Use `"bg-purple-100 text-purple-700"` for books, `"bg-blue-100 text-blue-700"` for interviews/video, `"bg-green-100 text-green-700"` for archives/databases, `"bg-yellow-100 text-yellow-700"` for government/official |
+| `description` | Yes | 1-2 sentences: what the source is and what it contributed to the profile |
+| `notes` | No | Attribution string: `"Used for: [Figure Name]."` |
+
+**Rule:** Add one `SourceCard` per distinct source used. If the same source was used for multiple figures, add it once with `notes="Used for: Figure A, Figure B."`.
+
 ### That's all
 No component file is needed. No `if` check in `InsidersList.tsx` is needed.
+
+---
+
+## Data Sources Page (`pages/sources.tsx`)
+
+The sources page is the platform's research attribution record. It must be kept current whenever new data is added to any category.
+
+### When to update
+- **Key figures** - Add to the `{/* Key Figure Profile Sources */}` section
+- **Cases** - Add to the `{/* Documented Cases */}` section
+- **Programs** - Add to the `{/* Government Programs */}` section
+- **Documents** - Add to the `{/* Primary Documents */}` section
+- **Glossary** - Add to the `{/* Glossary Sources */}` section
+
+### Section structure
+Each section uses `<SourceCard>` components. Find the relevant section comment in `pages/sources.tsx` and append new cards inside it. Do not create new top-level sections unless the source genuinely belongs to a new category that doesn't exist yet.
+
+### FeaturedSource vs SourceCard
+- `<FeaturedSource>` - reserved for the most significant institutional sources (NICAP, Project Blue Book, Congressional records, etc.). Use `<SourceCard>` for all individual profile/case/program sources.
+
+### typeColor conventions
+| Source type | typeColor |
+|---|---|
+| Published books | `"bg-purple-100 text-purple-700"` |
+| TV/video/interviews | `"bg-blue-100 text-blue-700"` |
+| Archives/databases | `"bg-green-100 text-green-700"` |
+| Government/official | `"bg-yellow-100 text-yellow-700"` |
+| Academic papers | `"bg-indigo-100 text-indigo-700"` |
+| News/journalism | `"bg-orange-100 text-orange-700"` |
 
 ---
 

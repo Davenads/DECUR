@@ -946,6 +946,78 @@ const Sources: NextPage = () => {
             coverage="October 24, 1968"
             notes="Used for: Minot AFB 1968."
           />
+
+          <SourceCard
+            name="The Coming of the Saucers - Arnold and Palmer (1952)"
+            url="https://www.amazon.com/dp/B0007DBO9M"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Kenneth Arnold's own account of the June 24, 1947 Mount Rainier sighting and the subsequent Army Air Force investigation. The primary firsthand record of the case that coined the term 'flying saucer' and launched the modern UAP era."
+            notes="Used for: Kenneth Arnold Sighting 1947."
+          />
+
+          <SourceCard
+            name="Project Blue Book Archive - Arnold Case File"
+            url="https://www.theprojectbluebookarchive.org/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Original USAF Project Sign investigation documentation for the Kenneth Arnold sighting, including the Army Air Force intelligence report from Hamilton Field and Arnold's signed written statement of July 12, 1947. Classified Unidentified."
+            notes="Used for: Kenneth Arnold Sighting 1947."
+          />
+
+          <SourceCard
+            name="The Interrupted Journey - John Fuller (1966)"
+            url="https://www.amazon.com/dp/0425034437"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="First major published account of the Betty and Barney Hill September 19-20, 1961 abduction case. Written with the cooperation of treating psychiatrist Dr. Benjamin Simon; includes hypnosis session transcripts and Simon's clinical commentary. Primary source for the Hill case entry."
+            notes="Used for: Betty and Barney Hill Abduction 1961."
+          />
+
+          <SourceCard
+            name="Captured! The Betty and Barney Hill UFO Experience - Friedman and Marden (2007)"
+            url="https://www.amazon.com/dp/1564149641"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Comprehensive forensic re-examination of the Hill case by nuclear physicist Stanton Friedman and Kathleen Marden (Betty Hill's niece). Includes previously unpublished NICAP investigation documents, Simon session notes, and analysis of the Marjorie Fish Zeta Reticuli star map."
+            notes="Used for: Betty and Barney Hill Abduction 1961."
+          />
+
+          <SourceCard
+            name="Fire in the Sky: The Walton Experience - Travis Walton (1993)"
+            url="https://www.amazon.com/dp/1569800855"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Travis Walton's definitive first-person account of the November 5, 1975 Apache-Sitgreaves National Forest abduction. Includes the full event sequence, polygraph documentation for the six crew witnesses, and Walton's complete recollection of the five-day absence. Primary source for the Walton Abduction case entry."
+            notes="Used for: Travis Walton Abduction 1975."
+          />
+
+          <SourceCard
+            name="UFO-Related Human Physiological Effects - John F. Schuessler (1996)"
+            url="https://www.amazon.com/dp/1575100134"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Comprehensive documentation of the December 29, 1980 Cash-Landrum incident by aerospace engineer and MUFON investigator John Schuessler. Includes full medical records for all three witnesses, investigation timeline, and analysis of the $20 million federal lawsuit proceedings. Primary source for the Cash-Landrum case entry."
+            notes="Used for: Cash-Landrum Incident 1980."
+          />
+
+          <SourceCard
+            name="GEPAN Technical Note No. 16 (1981)"
+            url="https://www.cnes-geipan.fr/en/geipan/archives"
+            type="Government Report"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official French government investigation report by GEPAN (operating under CNES, the French space agency) on the January 8, 1981 Trans-en-Provence landing. Includes Dr. Michel Bounias's INRA laboratory analysis showing 38-50% chlorophyll reduction and soil crystalline structure changes. The primary source for the Trans-en-Provence case entry and the only national government scientific investigation report on a UAP physical trace case."
+            notes="Used for: Trans-en-Provence Landing 1981."
+          />
+
+          <SourceCard
+            name="Confrontations - Jacques Vallee (1990)"
+            url="https://www.amazon.com/dp/0345369092"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Includes detailed fieldwork analysis of the Trans-en-Provence case by researcher Jacques Vallee, including independent review of the GEPAN investigation methodology and physical evidence. Vallee concluded it is one of the most rigorously documented UAP physical effect cases in the global research literature."
+            notes="Used for: Trans-en-Provence Landing 1981."
+          />
         </section>
 
         {/* Primary documents sources */}
