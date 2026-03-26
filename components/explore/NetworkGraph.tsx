@@ -88,6 +88,7 @@ const TYPE_LABELS: Record<NodeType, string> = {
   technology:   'Technology',
   document:     'Document',
   case:         'Case',
+  contractor:   'Contractor',
 };
 
 /* ─── Helpers ────────────────────────────────────────────────── */

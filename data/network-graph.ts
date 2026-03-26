@@ -7,7 +7,8 @@ export type NodeType =
   | 'concept'
   | 'technology'
   | 'document'
-  | 'case';
+  | 'case'
+  | 'contractor';
 
 export type NodeGroup = 'burisch' | 'lazar' | 'grusch' | 'elizondo' | 'fravor' | 'nell' | 'nolan' | 'puthoff' | 'mellon' | 'davis' | 'bigelow' | 'vallee' | 'pope' | 'shared' | 'corbell' | 'mccullough';
 
@@ -43,6 +44,7 @@ export const NODE_COLORS: Record<NodeType, string> = {
   technology:   '#c97840', // orange - muted
   document:     '#c04060', // rose - muted
   case:         '#c05050', // red - muted
+  contractor:   '#b07050', // copper - muted
 };
 
 // Person nodes for figures WITHOUT dedicated profile pages.
@@ -190,6 +192,14 @@ export const graphData: GraphData = {
 
     // Additional cases for Fife Symington
     { id: 'phoenix-lights',      name: 'Phoenix Lights (1997)',     type: 'case',         val: 4 },
+
+    // Private defense contractors (sourced from data/contractors.json)
+    // Note: EG&G already exists as 'egg-corporation' (organization) — not duplicated here.
+    { id: 'lockheed-martin',   name: 'Lockheed Martin',              type: 'contractor', val: 4 },
+    { id: 'northrop-grumman',  name: 'Northrop Grumman',             type: 'contractor', val: 3 },
+    { id: 'raytheon',          name: 'Raytheon Technologies',        type: 'contractor', val: 3 },
+    { id: 'battelle',          name: 'Battelle Memorial Institute',  type: 'contractor', val: 3 },
+    { id: 'saic',              name: 'SAIC',                         type: 'contractor', val: 2 },
   ],
 
   links: [
@@ -897,5 +907,33 @@ export const graphData: GraphData = {
     { source: 'roscoe-hillenkoetter', target: 'kenneth-arnold',   label: 'Hillenkoetter was CIA Director when Arnolds 1947 sighting triggered Project Sign' },
     { source: 'roscoe-hillenkoetter', target: 'project-blue-book', label: 'CIA Director during Project Sign formation (1947); agency tracked UAP reports throughout his tenure' },
     { source: 'roscoe-hillenkoetter', target: 'barry-goldwater',  label: 'Contemporaneous institutional figures applying pressure for UAP transparency in the 1957-1964 period' },
+
+    // Private defense contractor connections
+    // Lockheed Martin
+    { source: 'lockheed-martin',  target: 'david-grusch',             label: 'named as alleged SAP custodian of recovered non-human craft in 2023 congressional testimony under oath' },
+    { source: 'lockheed-martin',  target: 's4-papoose',               label: 'Skunk Works personnel alleged connection to S-4 advanced programs' },
+    { source: 'lockheed-martin',  target: 'area-51',                  label: 'Advanced Development Programs (Skunk Works) operated adjacent classified facilities' },
+    { source: 'lockheed-martin',  target: 'immaculate-constellation', label: 'alleged prime contractor for the classified UAP SAP program' },
+    { source: 'lockheed-martin',  target: 'egg-corporation',          label: 'EG&G was a co-contractor in the broader Area 51 classified contractor ecosystem' },
+
+    // Northrop Grumman
+    { source: 'northrop-grumman', target: 'david-grusch',             label: 'named as alleged SAP custodian of recovered non-human materials in 2023 congressional testimony under oath' },
+    { source: 'northrop-grumman', target: 'nro',                      label: 'inherited extensive NRO classified program contracts via TRW acquisition (2002)' },
+    { source: 'northrop-grumman', target: 'lockheed-martin',          label: 'co-named prime contractor in UAP SAP custodianship context' },
+
+    // Raytheon
+    { source: 'raytheon',         target: 'karl-nell',                label: 'former Director of Technology Strategy; Nell testified under oath before Congress in July 2023' },
+    { source: 'raytheon',         target: 'david-grusch',             label: 'testified alongside Nell at July 2023 House Oversight hearing' },
+    { source: 'raytheon',         target: 'nimitz-tic-tac',           label: 'Raytheon sensor systems on USS Princeton and F/A-18s recorded and tracked the 2004 Tic Tac encounter' },
+    { source: 'raytheon',         target: 'uss-theodore-roosevelt',   label: 'Raytheon ATFLIR pod sensor systems captured the 2014-2015 UAP footage' },
+
+    // Battelle
+    { source: 'battelle',         target: 'project-blue-book',        label: 'primary contractor for statistical analysis of 3,201 UAP cases; produced Special Report No. 14 (1955)' },
+    { source: 'battelle',         target: 'blue-book-special-report-14', label: 'produced the report; findings contradicted the Air Force\'s public debunking position' },
+    { source: 'battelle',         target: 'j-allen-hynek',            label: 'worked alongside Hynek on Blue Book analytical work; shared scientific assessment of UAP quality data' },
+
+    // SAIC
+    { source: 'saic',             target: 'david-grusch',             label: 'named alongside other prime defense contractors as alleged SAP custodian in Grusch disclosure' },
+    { source: 'saic',             target: 'dia-organization',         label: 'extensive DIA and intelligence community analytical and technology contracts' },
   ],
 };
