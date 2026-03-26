@@ -148,29 +148,38 @@ const WitnessesTab: FC<{ c: CaseEntry }> = ({ c }) => (
   </div>
 );
 
-const OfficialResponseTab: FC<{ c: CaseEntry }> = ({ c }) => (
-  <div className="space-y-6">
-    <div>
-      <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2">Agencies Involved</h3>
-      <div className="flex flex-wrap gap-2">
-        {c.official_response.agencies.map((a, i) => (
-          <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">{a}</span>
+const OfficialResponseTab: FC<{ c: CaseEntry }> = ({ c }) => {
+  if (!c.official_response) {
+    return (
+      <p className="text-sm text-gray-500 dark:text-gray-400 italic">
+        No official government response has been recorded for this case.
+      </p>
+    );
+  }
+  return (
+    <div className="space-y-6">
+      <div>
+        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2">Agencies Involved</h3>
+        <div className="flex flex-wrap gap-2">
+          {c.official_response.agencies.map((a, i) => (
+            <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">{a}</span>
+          ))}
+        </div>
+      </div>
+      <div className="space-y-4">
+        {c.official_response.statements.map((s, i) => (
+          <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs font-semibold text-gray-700 dark:text-gray-300">{s.source}</span>
+              <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded">{s.date}</span>
+            </div>
+            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{s.statement}</p>
+          </div>
         ))}
       </div>
     </div>
-    <div className="space-y-4">
-      {c.official_response.statements.map((s, i) => (
-        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 space-y-2">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-xs font-semibold text-gray-700 dark:text-gray-300">{s.source}</span>
-            <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-0.5 rounded">{s.date}</span>
-          </div>
-          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{s.statement}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-);
+  );
+};
 
 const insiderMap = Object.fromEntries(
   (insidersIndex as Array<{ id: string; name: string; role: string }>).map(ins => [ins.id, ins])
