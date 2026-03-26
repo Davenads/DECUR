@@ -22,6 +22,26 @@ import PopeProfile from '../../components/data/PopeProfile';
 import BarberProfile from '../../components/data/BarberProfile';
 import GallaudetProfile from '../../components/data/GallaudetProfile';
 
+interface BespokeProps { onBack: () => void; backLabel: string; }
+
+/** Registry of bespoke profile components. Add new entries here when creating a Tier 2 component. */
+const BESPOKE_REGISTRY: Record<string, React.ComponentType<BespokeProps>> = {
+  'bob-lazar':      LazarProfile,
+  'david-grusch':   GruschProfile,
+  'luis-elizondo':  ElizondoProfile,
+  'david-fravor':   FravorProfile,
+  'hal-puthoff':    PuthoffProfile,
+  'garry-nolan':    NolanProfile,
+  'karl-nell':      NellProfile,
+  'chris-mellon':   MellonProfile,
+  'eric-davis':     DavisProfile,
+  'robert-bigelow': BigelowProfile,
+  'jacques-vallee': ValleeProfile,
+  'nick-pope':      PopeProfile,
+  'jake-barber':    BarberProfile,
+  'tim-gallaudet':  GallaudetProfile,
+};
+
 interface Props {
   entry: InsiderEntry;
 }
@@ -39,24 +59,15 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
   const backLabel = exploreBack ? exploreBack.label : 'Key Figures';
 
   const renderProfile = () => {
-    switch (entry.id) {
-      case 'dan-burisch':    return <InsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
-      case 'bob-lazar':      return <LazarProfile onBack={onBack} backLabel={backLabel} />;
-      case 'david-grusch':   return <GruschProfile onBack={onBack} backLabel={backLabel} />;
-      case 'luis-elizondo':  return <ElizondoProfile onBack={onBack} backLabel={backLabel} />;
-      case 'david-fravor':   return <FravorProfile onBack={onBack} backLabel={backLabel} />;
-      case 'hal-puthoff':    return <PuthoffProfile onBack={onBack} backLabel={backLabel} />;
-      case 'garry-nolan':    return <NolanProfile onBack={onBack} backLabel={backLabel} />;
-      case 'karl-nell':      return <NellProfile onBack={onBack} backLabel={backLabel} />;
-      case 'chris-mellon':   return <MellonProfile onBack={onBack} backLabel={backLabel} />;
-      case 'eric-davis':     return <DavisProfile onBack={onBack} backLabel={backLabel} />;
-      case 'robert-bigelow': return <BigelowProfile onBack={onBack} backLabel={backLabel} />;
-      case 'jacques-vallee': return <ValleeProfile onBack={onBack} backLabel={backLabel} />;
-      case 'nick-pope':      return <PopeProfile onBack={onBack} backLabel={backLabel} />;
-      case 'jake-barber':    return <BarberProfile onBack={onBack} backLabel={backLabel} />;
-      case 'tim-gallaudet':  return <GallaudetProfile onBack={onBack} backLabel={backLabel} />;
-      default:               return <GenericInsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
+    // InsiderProfile (Burisch) has a unique id prop requirement — keep explicit
+    if (entry.id === 'dan-burisch') {
+      return <InsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
     }
+    const BespokeComponent = BESPOKE_REGISTRY[entry.id];
+    if (BespokeComponent) {
+      return <BespokeComponent onBack={onBack} backLabel={backLabel} />;
+    }
+    return <GenericInsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
   };
 
   const personSchema = {
