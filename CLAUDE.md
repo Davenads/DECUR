@@ -13,6 +13,18 @@ npm run typecheck  # Run TypeScript type checking
 npm run check      # Run both lint and typecheck
 ```
 
+## Data Audit Script
+**Before any gap analysis or "what do we have?" research, always run the audit script first** to get a deterministic, exact inventory. Never rely on agent summarization of large JSON files for counts - it will produce inaccurate numbers.
+
+```bash
+node scripts/audit-data.js              # Summary table + counts for all categories
+node scripts/audit-data.js --ids        # Same + full ID list for every category
+node scripts/audit-data.js --category figures   # Single category only
+node scripts/audit-data.js --ids --category cases
+```
+
+The script reads directly from the source JSON files and prints exact counts. Use the output as the ground-truth baseline when determining what is missing.
+
 ## Project Structure
 ```
 components/
