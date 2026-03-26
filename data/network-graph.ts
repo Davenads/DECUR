@@ -215,6 +215,13 @@ export const graphData: GraphData = {
     { id: 'ohare-airport-2006',     name: "O'Hare Airport Incident (2006)", type: 'case', val: 3 },
     { id: 'stephenville-tx-2008',   name: 'Stephenville, TX (2008)',      type: 'case', val: 3 },
 
+    // New cases (batch 4 — sourced from data/cases.json)
+    { id: 'kenneth-arnold-1947',     name: 'Kenneth Arnold Sighting (1947)',          type: 'case', val: 4 },
+    { id: 'betty-barney-hill-1961',  name: 'Betty & Barney Hill Abduction (1961)',     type: 'case', val: 4 },
+    { id: 'walton-abduction-1975',   name: 'Travis Walton Abduction (1975)',           type: 'case', val: 3 },
+    { id: 'cash-landrum-1980',       name: 'Cash-Landrum Incident (1980)',             type: 'case', val: 3 },
+    { id: 'trans-en-provence-1981',  name: 'Trans-en-Provence Landing (1981)',         type: 'case', val: 3 },
+
     // Private defense contractors (sourced from data/contractors.json)
     // Note: EG&G already exists as 'egg-corporation' (organization) — not duplicated here.
     { id: 'lockheed-martin',   name: 'Lockheed Martin',              type: 'contractor', val: 4 },
@@ -1079,5 +1086,36 @@ export const graphData: GraphData = {
     { source: 'john-lear',        target: 'richard-doty',       label: 'overlapping networks in the late 1980s UAP disclosure community; Doty documented disinformation operations raise questions about some information Lear received from alleged IC contacts' },
     { source: 'john-lear',        target: 's4-papoose',         label: 'was the first person to publicly claim prior knowledge of S-4 operations before Lazar\'s 1989 disclosure' },
     { source: 'john-lear',        target: 'disclosure-project', label: 'provided testimony at the 2001 Disclosure Project National Press Club event as one of over 20 former government and military witnesses' },
+
+    // Kenneth Arnold Sighting (1947) connections
+    { source: 'kenneth-arnold-1947', target: 'project-sign',        label: 'the Arnold sighting directly triggered the formation of Project Sign — the first official US government UAP investigation program' },
+    { source: 'kenneth-arnold-1947', target: 'j-allen-hynek',       label: 'Hynek consulted on Project Sign from 1948; the Arnold sighting was the precipitating event that established the program Hynek advised' },
+    { source: 'kenneth-arnold-1947', target: 'donald-keyhoe',       label: "Keyhoe cited Arnold's June 24 1947 sighting as the founding event of the modern UAP era and the cornerstone case for NICAP's congressional advocacy" },
+    { source: 'kenneth-arnold-1947', target: 'kenneth-arnold',      label: 'primary witness; his account and timing data are the primary evidentiary record' },
+    { source: 'kenneth-arnold-1947', target: 'nicap',               label: 'NICAP documented the Arnold case as foundational in its congressional lobbying record and public case archive' },
+
+    // Betty and Barney Hill Abduction (1961) connections
+    { source: 'betty-barney-hill-1961', target: 'betty-barney-hill',  label: 'Betty and Barney Hill are the subjects; their separate hypnosis accounts under Dr. Benjamin Simon form the primary record' },
+    { source: 'betty-barney-hill-1961', target: 'stanton-friedman',   label: 'Friedman co-authored Captured! (2007) with Kathleen Marden — the definitive forensic re-examination of the Hill case' },
+    { source: 'betty-barney-hill-1961', target: 'budd-hopkins',       label: "Hopkins cited the Hill case as the historical touchstone against which all subsequent CE4 abduction research was calibrated; directly influenced Missing Time (1981)" },
+    { source: 'betty-barney-hill-1961', target: 'donald-keyhoe',      label: 'NICAP under Keyhoe conducted the first formal investigation in 1961 after Betty Hill wrote to him within weeks of the encounter' },
+    { source: 'betty-barney-hill-1961', target: 'john-mack',          label: "Mack cited the Hill case as the foundational reference for the abduction research tradition in Abduction (1994)" },
+    { source: 'betty-barney-hill-1961', target: 'nicap',              label: 'NICAP investigators Walter Webb and C.D. Jackson conducted the first formal investigation' },
+
+    // Travis Walton Abduction (1975) connections
+    { source: 'walton-abduction-1975', target: 'travis-walton',      label: 'Travis Walton is the primary subject; six crew members witnessed the initial beam-strike event' },
+    { source: 'walton-abduction-1975', target: 'budd-hopkins',       label: 'Hopkins referenced the Walton case as notable multi-witness corroboration in his CE4 abduction research framework' },
+    { source: 'walton-abduction-1975', target: 'stanton-friedman',   label: 'Friedman investigated the crew polygraph results and concluded the multi-witness corroboration makes this the most evidentially robust CE4 incident on record' },
+    { source: 'walton-abduction-1975', target: 'john-mack',          label: 'Mack noted structural similarities between the Walton account and accounts from his clinical CE4 subjects with no prior knowledge of the Walton case' },
+    { source: 'walton-abduction-1975', target: 'mufon',              label: 'MUFON conducted a formal investigation alongside APRO and documented the crew polygraph record and witness accounts' },
+
+    // Cash-Landrum Incident (1980) connections
+    { source: 'cash-landrum-1980',     target: 'mufon',              label: 'aerospace engineer John Schuessler (MUFON) investigated within days of the incident and maintained the primary investigative record for decades' },
+    { source: 'cash-landrum-1980',     target: 'gepan',              label: 'GEPAN investigators cited the Cash-Landrum medical injury documentation as a significant parallel to Trans-en-Provence physical effects in their broader field research' },
+
+    // Trans-en-Provence Landing (1981) connections
+    { source: 'trans-en-provence-1981', target: 'gepan',             label: 'GEPAN/CNES conducted the official French government investigation; Technical Note No. 16 is the primary scientific record' },
+    { source: 'trans-en-provence-1981', target: 'j-allen-hynek',     label: "Hynek's colleagues at CUFOS cited Trans-en-Provence alongside Socorro as the two strongest physical-trace close-encounter cases in the world literature" },
+    { source: 'trans-en-provence-1981', target: 'jacques-vallee',    label: "Vallee conducted independent fieldwork analysis in Confrontations (1990) and concluded it is one of the most rigorously documented UAP physical effect cases in the global research literature" },
   ],
 };
