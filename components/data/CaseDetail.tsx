@@ -234,38 +234,47 @@ const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
   );
 };
 
-const AssessmentTab: FC<{ c: CaseEntry }> = ({ c }) => (
-  <div className="space-y-6">
-    <CredibilityBalance
-      supporting={c.credibility.supporting.length}
-      contradicting={c.credibility.contradicting.length}
-    />
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div>
-        <h3 className="text-sm font-semibold text-green-700 mb-2">Supporting</h3>
-        <ul className="space-y-2">
-          {c.credibility.supporting.map((s, i) => (
-            <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
-              <span className="text-green-500 mt-0.5 shrink-0">+</span>
-              <span>{s}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <h3 className="text-sm font-semibold text-red-600 mb-2">Contradicting / Caveats</h3>
-        <ul className="space-y-2">
-          {c.credibility.contradicting.map((con, i) => (
-            <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
-              <span className="text-red-400 mt-0.5 shrink-0">-</span>
-              <span>{con}</span>
-            </li>
-          ))}
-        </ul>
+const AssessmentTab: FC<{ c: CaseEntry }> = ({ c }) => {
+  if (!c.credibility) {
+    return (
+      <p className="text-sm text-gray-500 dark:text-gray-400 italic">
+        No credibility assessment has been recorded for this case.
+      </p>
+    );
+  }
+  return (
+    <div className="space-y-6">
+      <CredibilityBalance
+        supporting={c.credibility.supporting.length}
+        contradicting={c.credibility.contradicting.length}
+      />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <h3 className="text-sm font-semibold text-green-700 mb-2">Supporting</h3>
+          <ul className="space-y-2">
+            {c.credibility.supporting.map((s, i) => (
+              <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
+                <span className="text-green-500 mt-0.5 shrink-0">+</span>
+                <span>{s}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-sm font-semibold text-red-600 mb-2">Contradicting / Caveats</h3>
+          <ul className="space-y-2">
+            {c.credibility.contradicting.map((con, i) => (
+              <li key={i} className="flex gap-2 text-xs text-gray-700 dark:text-gray-300">
+                <span className="text-red-400 mt-0.5 shrink-0">-</span>
+                <span>{con}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 /* ─── Enrichment tab helpers ───────────────────────────────────── */
 
