@@ -16,17 +16,17 @@ nextjs-portal {
    ====================================================== */
 :root {
   --flow-bg:            #f8fafc;
-  --flow-border:        #e2e8f0;
+  --flow-border:        #cbd5e1;
   --flow-text:          #0f172a;
   --flow-text-muted:    #64748b;
   --flow-edge:          #94a3b8;
-  --flow-dot:           #e2e8f0;
+  --flow-dot:           #cbd5e1;
   --flow-ctrl-bg:       #ffffff;
-  --flow-ctrl-border:   #e2e8f0;
+  --flow-ctrl-border:   #cbd5e1;
   --flow-divider:       #e2e8f0;
   --flow-panel-bg:      rgba(248,250,252,0.97);
   --flow-legend-bg:     rgba(248,250,252,0.90);
-  --flow-legend-border: #e2e8f0;
+  --flow-legend-border: #cbd5e1;
 }
 .dark {
   --flow-bg:            #0f172a;

@@ -61,20 +61,20 @@ export const DARK_STRUCTURAL: StructuralTokens = {
 
 export const LIGHT_STRUCTURAL: StructuralTokens = {
   containerBg:   '#f8fafc',
-  border:        '#e2e8f0',
+  border:        '#cbd5e1',
   text:          '#0f172a',
   textMuted:     '#64748b',
   textDim:       '#94a3b8',
   textValue:     '#334155',
   edgeStroke:    '#94a3b8',
   handle:        '#94a3b8',
-  dotColor:      '#e2e8f0',
+  dotColor:      '#cbd5e1',
   ctrlBg:        '#ffffff',
-  ctrlBorder:    '#e2e8f0',
+  ctrlBorder:    '#cbd5e1',
   divider:       '#e2e8f0',
   panelBg:       'rgba(248,250,252,0.97)',
   legendBg:      'rgba(248,250,252,0.90)',
-  legendBorder:  '#e2e8f0',
+  legendBorder:  '#cbd5e1',
 };
 
 // ============================================================
@@ -103,57 +103,57 @@ export const SEMANTIC_COLORS = {
   // --- greens ---
   green:   {
     dark:  { bg: '#0d2818', border: '#166534', badge: '#166534', badgeText: '#bbf7d0' },
-    light: { bg: '#dcfce7', border: '#166534', badge: '#166534', badgeText: '#166534' },
+    light: { bg: '#dcfce7', border: '#166534', badge: '#166534', badgeText: '#ffffff' },
   },
   emerald: {
     dark:  { bg: '#0a1f18', border: '#065f46', badge: '#065f46', badgeText: '#a7f3d0' },
-    light: { bg: '#d1fae5', border: '#065f46', badge: '#065f46', badgeText: '#065f46' },
+    light: { bg: '#d1fae5', border: '#065f46', badge: '#065f46', badgeText: '#ffffff' },
   },
   // --- reds ---
   red: {
     dark:  { bg: '#2a0d0d', border: '#991b1b', badge: '#991b1b', badgeText: '#fca5a5' },
-    light: { bg: '#fee2e2', border: '#991b1b', badge: '#991b1b', badgeText: '#991b1b' },
+    light: { bg: '#fee2e2', border: '#991b1b', badge: '#991b1b', badgeText: '#ffffff' },
   },
   // --- ambers / yellows ---
   amber: {
     dark:  { bg: '#1f1508', border: '#92400e', badge: '#92400e', badgeText: '#fde68a' },
-    light: { bg: '#fef3c7', border: '#92400e', badge: '#92400e', badgeText: '#92400e' },
+    light: { bg: '#fef3c7', border: '#92400e', badge: '#92400e', badgeText: '#ffffff' },
   },
   yellow: {
     dark:  { bg: '#1a1005', border: '#b45309', badge: '#b45309', badgeText: '#fde68a' },
-    light: { bg: '#fef9c3', border: '#b45309', badge: '#b45309', badgeText: '#b45309' },
+    light: { bg: '#fef9c3', border: '#b45309', badge: '#b45309', badgeText: '#ffffff' },
   },
   // --- neutrals ---
   gray: {
     dark:  { bg: '#1a1f2b', border: '#374151', badge: '#374151', badgeText: '#9ca3af' },
-    light: { bg: '#f1f5f9', border: '#9ca3af', badge: '#9ca3af', badgeText: '#475569' },
+    light: { bg: '#e2e8f0', border: '#94a3b8', badge: '#64748b', badgeText: '#ffffff' },
   },
   // --- blues ---
   blue: {
     dark:  { bg: '#0c1a3a', border: '#1e3a8a', badge: '#1e3a8a', badgeText: '#bfdbfe' },
-    light: { bg: '#dbeafe', border: '#1e3a8a', badge: '#1e3a8a', badgeText: '#1e3a8a' },
+    light: { bg: '#dbeafe', border: '#1e3a8a', badge: '#1e3a8a', badgeText: '#ffffff' },
   },
   indigo: {
     dark:  { bg: '#0c1635', border: '#1e40af', badge: '#1e40af', badgeText: '#bfdbfe' },
-    light: { bg: '#e0e7ff', border: '#1e40af', badge: '#1e40af', badgeText: '#1e40af' },
+    light: { bg: '#e0e7ff', border: '#1e40af', badge: '#1e40af', badgeText: '#ffffff' },
   },
   // --- purples / violets ---
   violet: {
     dark:  { bg: '#1e1040', border: '#7c3aed', badge: '#7c3aed', badgeText: '#ddd6fe' },
-    light: { bg: '#ede9fe', border: '#7c3aed', badge: '#7c3aed', badgeText: '#5b21b6' },
+    light: { bg: '#ede9fe', border: '#7c3aed', badge: '#7c3aed', badgeText: '#ffffff' },
   },
   purple: {
     dark:  { bg: '#1a0a3d', border: '#4c1d95', badge: '#4c1d95', badgeText: '#ddd6fe' },
-    light: { bg: '#ede9fe', border: '#4c1d95', badge: '#4c1d95', badgeText: '#4c1d95' },
+    light: { bg: '#ede9fe', border: '#4c1d95', badge: '#4c1d95', badgeText: '#ffffff' },
   },
   // --- cyans / teals ---
   cyan: {
     dark:  { bg: '#07222b', border: '#0e7490', badge: '#0e7490', badgeText: '#a5f3fc' },
-    light: { bg: '#cffafe', border: '#0e7490', badge: '#0e7490', badgeText: '#0e7490' },
+    light: { bg: '#cffafe', border: '#0e7490', badge: '#0e7490', badgeText: '#ffffff' },
   },
   teal: {
     dark:  { bg: '#071919', border: '#0f766e', badge: '#0f766e', badgeText: '#99f6e4' },
-    light: { bg: '#ccfbf1', border: '#0f766e', badge: '#0f766e', badgeText: '#0f766e' },
+    light: { bg: '#ccfbf1', border: '#0f766e', badge: '#0f766e', badgeText: '#ffffff' },
   },
   // --- blues (oversight hierarchy node types) ---
   blueBright: {

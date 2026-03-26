@@ -362,7 +362,7 @@ function HierarchyDetailPanel({ node, onClose, onNavigate, onFigureNavigate, isD
       </>
     );
     footerButton = (
-      <button onClick={() => onNavigate(d.programId)} style={{ width: '100%', padding: '7px 12px', background: '#0f2744', border: `1px solid ${ps.border}`, borderRadius: 6, color: '#7dd3fc', fontSize: 12, fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+      <button onClick={() => onNavigate(d.programId)} style={{ width: '100%', padding: '7px 12px', background: isDark ? '#0f2744' : ps.border, border: `1px solid ${ps.border}`, borderRadius: 6, color: isDark ? '#7dd3fc' : '#ffffff', fontSize: 12, fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
         View Full Profile &rarr;
       </button>
     );

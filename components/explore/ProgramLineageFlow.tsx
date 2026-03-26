@@ -344,10 +344,10 @@ function ProgramDetailPanel({ data, onClose, onNavigate, onFigureNavigate, isDar
           style={{
             width: '100%',
             padding: '7px 12px',
-            background: '#0f2744',
+            background: isDark ? '#0f2744' : style.border,
             border: `1px solid ${style.border}`,
             borderRadius: 6,
-            color: '#7dd3fc',
+            color: isDark ? '#7dd3fc' : '#ffffff',
             fontSize: 12,
             fontWeight: 600,
             cursor: 'pointer',
