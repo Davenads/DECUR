@@ -223,12 +223,12 @@ const NetworkGraph: FC = () => {
     setEgoNodeId(node.id);
     setHighlight(EMPTY_HIGHLIGHT);
     setClickedNode(null);
-    setTimeout(() => fgRef.current?.zoomToFit(300, 60), 80);
+    setTimeout(() => fgRef.current?.zoomToFit?.(300, 60), 80);
   }, []);
 
   const exitEgoMode = useCallback(() => {
     setEgoNodeId(null);
-    setTimeout(() => fgRef.current?.zoomToFit(400, 40), 80);
+    setTimeout(() => fgRef.current?.zoomToFit?.(400, 40), 80);
   }, []);
 
   // Hover: passive highlight only. Does not override an active click selection.
@@ -329,8 +329,8 @@ const NetworkGraph: FC = () => {
     // console.error inside force-graph's camera system — the source of the "1 Issue" flash).
     if (fgRef.current && Number.isFinite(node.x) && Number.isFinite(node.y)) {
       try {
-        fgRef.current.centerAt(node.x, node.y, 500);
-        fgRef.current.zoom(3, 500);
+        fgRef.current.centerAt?.(node.x, node.y, 500);
+        fgRef.current.zoom?.(3, 500);
       } catch {
         // Swallow camera errors (e.g. graph not yet fully initialized)
       }
@@ -475,7 +475,7 @@ const NetworkGraph: FC = () => {
           </p>
         </div>
         <button
-          onClick={() => fgRef.current?.zoomToFit(400, 40)}
+          onClick={() => fgRef.current?.zoomToFit?.(400, 40)}
           className="shrink-0 text-xs px-2.5 py-1.5 rounded-lg border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
         >
           Reset View
