@@ -188,7 +188,11 @@ export const graphData: GraphData = {
     { id: 'shield-ai',         name: 'Shield AI',                   type: 'organization', val: 2 },
 
     // Additional organizations for James Fox
-    { id: 'the-phenomenon-film', name: "The Phenomenon (2020)",     type: 'document',     val: 3 },
+    { id: 'the-phenomenon-film',                  name: "The Phenomenon (2020)",                type: 'document', val: 3 },
+    { id: 'grusch-ig-complaint-2023',             name: 'Grusch ICIG Complaint (2023)',          type: 'document', val: 4 },
+    { id: 'project-grudge-final-report-1949',     name: 'Project Grudge Final Report',           type: 'document', val: 2 },
+    { id: 'socorro-blue-book-investigation-1964', name: 'Socorro Blue Book File (1964)',          type: 'document', val: 3 },
+    { id: 'baass-aawsap-contract-2008',           name: 'BAASS AAWSAP Contract (2008)',          type: 'document', val: 3 },
 
     // Additional cases for Fife Symington
     { id: 'phoenix-lights',      name: 'Phoenix Lights (1997)',     type: 'case',         val: 4 },
@@ -985,5 +989,33 @@ export const graphData: GraphData = {
 
     // JAL Flight 1628 (already in graph — add missing figure edge)
     { source: 'jal-flight-1628',      target: 'richard-dolan',          label: 'Dolan cited JAL 1628 as one of the most carefully documented aviation UAP encounters on record, with FAA radar corroboration' },
+
+    // Grusch IC Inspector General Complaint (2023)
+    { source: 'grusch-ig-complaint-2023', target: 'david-grusch',                label: 'filed by; foundational document behind modern congressional UAP hearings' },
+    { source: 'grusch-ig-complaint-2023', target: 'aaro',                         label: "AARO's Historical Record Report directly disputes the complaint's core allegations" },
+    { source: 'grusch-ig-complaint-2023', target: 'ndaa-fy2023-uap-provisions',   label: 'ICWPA framework enabling this complaint builds on UAP whistleblower protections in NDAA' },
+    { source: 'grusch-ig-complaint-2023', target: 'wilson-davis-memo',            label: 'both allege the identical private contractor oversight-denial mechanism for UAP program concealment' },
+    { source: 'grusch-ig-complaint-2023', target: 'aaro-historical-record-vol1',  label: 'AARO Vol. 1 directly rebuts the core crash retrieval and reverse engineering allegations' },
+    { source: 'grusch-ig-complaint-2023', target: 'karl-nell',                    label: 'Nell publicly corroborated the complaint and disputed AARO\'s rebuttal on record' },
+
+    // Project Grudge Final Report (1949)
+    { source: 'project-grudge-final-report-1949', target: 'project-grudge',      label: 'produced by; primary deliverable of the Grudge investigation program' },
+    { source: 'project-grudge-final-report-1949', target: 'j-allen-hynek',       label: 'Hynek served as astronomical consultant; later disputed the debunking conclusions as methodologically unsound' },
+    { source: 'project-grudge-final-report-1949', target: 'project-sign',        label: "succeeded Project Sign's investigative record following Vandenberg's rejection of Sign's extraterrestrial estimate" },
+    { source: 'project-grudge-final-report-1949', target: 'project-blue-book',   label: 'Grudge became Blue Book in 1952; the report directly established the debunking mandate Blue Book inherited' },
+    { source: 'project-grudge-final-report-1949', target: 'edward-ruppelt',      label: "Ruppelt characterized Grudge as a 'fiasco' and deliberate whitewash; his critique is the most authoritative insider account of the program's failures" },
+
+    // Socorro / Zamora Blue Book Investigation Report (1964)
+    { source: 'socorro-blue-book-investigation-1964', target: 'socorro-1964',       label: 'official Project Blue Book investigation file for this case (Case 8766)' },
+    { source: 'socorro-blue-book-investigation-1964', target: 'j-allen-hynek',      label: 'Hynek personally investigated and declared it the most credible physical-trace close-encounter in all Blue Book records' },
+    { source: 'socorro-blue-book-investigation-1964', target: 'project-blue-book',  label: 'issued by Project Blue Book; officially classified Unidentified with no conventional explanation found' },
+    { source: 'socorro-blue-book-investigation-1964', target: 'nicap',              label: 'NICAP conducted independent parallel investigation corroborating physical evidence and Zamora account' },
+
+    // BAASS AAWSAP Contract (2008)
+    { source: 'baass-aawsap-contract-2008', target: 'aawsap',                    label: 'the contract that created and funded the AAWSAP program; established the institutional research framework' },
+    { source: 'baass-aawsap-contract-2008', target: 'bigelow-aerospace',         label: 'awarded to BAASS (Bigelow Aerospace Advanced Space Studies LLC), a Bigelow subsidiary' },
+    { source: 'baass-aawsap-contract-2008', target: 'hal-puthoff',               label: 'authored the scientific statement of work; served as principal DIRD researcher on propulsion and exotic physics' },
+    { source: 'baass-aawsap-contract-2008', target: 'luis-elizondo',             label: 'AATIP operated within the institutional framework and DIA relationship established by this contract' },
+    { source: 'baass-aawsap-contract-2008', target: 'aaro-historical-record-vol1', label: 'AARO Vol. 1 characterizes AAWSAP as primarily paranormal research; Elizondo and Puthoff dispute this characterization' },
   ],
 };

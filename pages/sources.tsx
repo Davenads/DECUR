@@ -849,6 +849,89 @@ const Sources: NextPage = () => {
             coverage="January-December 2023; released March 2024"
             notes="Used for: 2024 DNI Annual Report on UAP."
           />
+
+          {/* Grusch IG Complaint */}
+          <SourceCard
+            name="The Debrief - 'Intelligence Officials Say U.S. Has Retrieved Non-Human Craft' (Jun 5, 2023)"
+            url="https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/"
+            type="Investigative Journalism"
+            typeColor="bg-green-100 text-green-700"
+            description="The June 5, 2023 article by Leslie Kean, Ralph Blumenthal, and Ross Coulthart that first identified David Grusch as the whistleblower who filed a formal Disclosure of Urgent Concern with the Intelligence Community Inspector General. The article confirmed the ICIG's 'credible and urgent' determination and described the core allegations. Primary public disclosure source for the Grusch ICIG Complaint document entry."
+            coverage="June 2023"
+            notes="Used for: Grusch ICIG Complaint (2023)."
+          />
+
+          <SourceCard
+            name="ICIG Congressional Notification Letter (June 9, 2023)"
+            url="https://www.dni.gov/files/ICIG/Documents/Congressional%20Correspondence/20230609_ICIG_Congressional_Notification.pdf"
+            type="Official Government Correspondence"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The Intelligence Community Inspector General's formal notification letter to the House Permanent Select Committee on Intelligence and Senate Select Committee on Intelligence, confirming that Grusch's complaint met the legal standard of 'credible and urgent' under the Intelligence Community Whistleblower Protection Act. The official government document confirming the complaint's legal status."
+            coverage="June 9, 2023"
+            notes="Used for: Grusch ICIG Complaint (2023)."
+          />
+
+          {/* Project Grudge Final Report */}
+          <SourceCard
+            name="The Report on Unidentified Flying Objects (Ruppelt, 1956)"
+            url="https://archive.org/details/reportonunidenti00rupp"
+            type="Primary Memoir"
+            typeColor="bg-green-100 text-green-700"
+            description="Project Blue Book's first director Capt. Edward Ruppelt's candid account of the transition from Project Grudge to Blue Book, including his characterization of the Grudge investigation as a 'fiasco' and 'deliberate whitewash.' The most authoritative insider critique of the Grudge program's predetermined conclusions. Already in use for Sign and Blue Book program entries; also primary source for the Grudge Final Report document entry."
+            coverage="1949-1953 (events); 1956 (publication)"
+            notes="Used for: Project Grudge Final Report (1949), Project Grudge (program)."
+          />
+
+          <SourceCard
+            name="Fold3 - Project Blue Book Records Archive"
+            url="https://www.fold3.com/title/521/project-blue-book"
+            type="Digitized Government Archive"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Fold3's digitized and indexed archive of the Project Blue Book microfilm collection, including the Project Grudge Final Report (1949), Project Sign records, and individual case files including the Socorro / Zamora investigation (Case 8766, April 1964). Provides searchable access to the 130,000-page Blue Book record held at the National Archives."
+            coverage="1947-1969"
+            notes="Used for: Project Grudge Final Report (1949), Socorro / Zamora Blue Book Investigation Report (1964)."
+          />
+
+          {/* Socorro Blue Book Investigation */}
+          <SourceCard
+            name="NICAP - Socorro, New Mexico Case Documentation (April 24, 1964)"
+            url="https://www.nicap.org/640424dir.htm"
+            type="Civilian Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="NICAP's comprehensive case file for the April 24, 1964 Socorro / Zamora landing incident, including Lonnie Zamora's original testimony, Captain Richard Holder's initial military investigation report, J. Allen Hynek's independent analysis, and FBI Agent Arthur Byrnes Jr.'s evidence examination report. The most complete publicly accessible compilation of the multi-agency investigation record."
+            coverage="April 24, 1964"
+            notes="Used for: Socorro / Zamora Blue Book Investigation Report (1964), Socorro case entry."
+          />
+
+          <SourceCard
+            name="The UFO Experience (Hynek, 1972) - Socorro Chapter"
+            url="https://www.amazon.com/UFO-Experience-Scientific-Inquiry/dp/0892810610"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="J. Allen Hynek's landmark scientific analysis of UAP includes a detailed chapter on the Socorro case as his primary example of a close-encounter physical-trace case. Hynek's firsthand account of his personal investigation and his conclusion that no conventional explanation was tenable is the most authoritative scientific assessment of the case. Already referenced for Blue Book; also key source for the Socorro investigation report."
+            coverage="April 1964 (incident); 1972 (publication)"
+            notes="Used for: Socorro / Zamora Blue Book Investigation Report (1964)."
+          />
+
+          {/* BAASS/AAWSAP Contract */}
+          <SourceCard
+            name="Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)"
+            url="https://www.amazon.com/dp/B09LRL6JTD"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="First-person account of the AAWSAP program by DIA program manager James T. Lacatski, BAASS researcher Colm Kelleher, and investigative journalist George Knapp. The definitive public account of the BAASS contract (HHM402-08-C-0072), its $10 million award, the 38 DIRDs, and the Skinwalker Ranch investigation conducted under contract provisions. Already referenced for AAWSAP program; also primary source for the contract document entry."
+            coverage="2008-2012 (program); October 2021 (publication)"
+            notes="Used for: BAASS AAWSAP Contract (2008), AAWSAP (program)."
+          />
+
+          <SourceCard
+            name="The Black Vault - AAWSAP DIRD FOIA Collection"
+            url="https://www.theblackvault.com/casefiles/the-advanced-aerospace-weapon-system-applications-aawsap-documents/"
+            type="FOIA Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="The Black Vault's compiled FOIA release of the 38 Defense Intelligence Reference Documents (DIRDs) produced under the BAASS AAWSAP contract. The partial unclassified releases confirm the contract's existence, research scope, and the participating researchers (Puthoff, Davis, Green). Primary documentary evidence corroborating the contract's scope and scientific content."
+            notes="Used for: BAASS AAWSAP Contract (2008), AAWSAP (program)."
+          />
         </section>
 
         {/* Glossary sources */}

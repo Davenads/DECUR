@@ -1191,7 +1191,10 @@ export type DocumentType =
   | 'military-memorandum'
   | 'intelligence-collection-directive'
   | 'intelligence-assessment'
-  | 'government-assessment';
+  | 'government-assessment'
+  | 'investigation-report'
+  | 'government-contract'
+  | 'whistleblower-complaint';
 
 export type ProvenanceNodeType =
   | 'creation'

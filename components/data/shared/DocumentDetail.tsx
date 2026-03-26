@@ -41,6 +41,9 @@ export const docTypeLabel: Record<DocType, string> = {
   'intelligence-collection-directive': 'Intel Collection Directive',
   'intelligence-assessment':         'Intelligence Assessment',
   'government-assessment':           'Gov. Assessment',
+  'investigation-report':            'Investigation Report',
+  'government-contract':             'Gov. Contract',
+  'whistleblower-complaint':         'Whistleblower Complaint',
 };
 
 /* ─── Detail Tabs ──────────────────────────────────────────────── */
