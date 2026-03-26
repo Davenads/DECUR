@@ -95,8 +95,12 @@ const TYPE_LABELS: Record<NodeType, string> = {
 
 // force-graph mutates source/target from strings → resolved node objects at runtime.
 // Always extract the string ID regardless of which form it is.
-const resolveId = (val: string | GraphNode | object): string =>
-  typeof val === 'string' ? val : (val as GraphNode).id;
+// Handles null/undefined defensively (force-graph may leave dangling refs on filtered links).
+const resolveId = (val: string | GraphNode | object | null | undefined): string => {
+  if (val == null) return '';
+  if (typeof val === 'string') return val;
+  return (val as GraphNode).id ?? '';
+};
 
 const linkKey = (link: GraphLink | object): string => {
   const l = link as GraphLink;
@@ -320,9 +324,16 @@ const NetworkGraph: FC = () => {
     setHighlight(buildHighlight(node.id, filteredLinks as GraphLink[]));
     setClickedNode(node);
     setHoveredNode(null);
-    if (fgRef.current && node.x != null && node.y != null) {
-      fgRef.current.centerAt(node.x, node.y, 500);
-      fgRef.current.zoom(3, 500);
+    // Number.isFinite guards against both null/undefined AND NaN (NaN != null === true in JS,
+    // so the old != null check would pass for NaN and fire centerAt(NaN, NaN), causing a
+    // console.error inside force-graph's camera system — the source of the "1 Issue" flash).
+    if (fgRef.current && Number.isFinite(node.x) && Number.isFinite(node.y)) {
+      try {
+        fgRef.current.centerAt(node.x, node.y, 500);
+        fgRef.current.zoom(3, 500);
+      } catch {
+        // Swallow camera errors (e.g. graph not yet fully initialized)
+      }
     }
     setSearchQuery('');
     setSearchFocused(false);
@@ -626,7 +637,7 @@ const NetworkGraph: FC = () => {
               <div className="space-y-1 max-h-28 overflow-y-auto">
                 {filteredLinks
                   .filter(l => resolveId(l.source) === clickedNode.id || resolveId(l.target) === clickedNode.id)
-                  .map((l, i) => {
+                  .map((l) => {
                     const src = resolveId(l.source);
                     const tgt = resolveId(l.target);
                     const isSource = src === clickedNode.id;
@@ -634,7 +645,7 @@ const NetworkGraph: FC = () => {
                     const otherNode = filteredNodes.find(n => n.id === otherId);
                     if (!otherNode) return null;
                     return (
-                      <div key={i} className="flex items-center gap-2 text-xs">
+                      <div key={`${src}-${tgt}`} className="flex items-center gap-2 text-xs">
                         <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[otherNode.type] }} />
                         <span className="text-gray-500 dark:text-gray-400 italic shrink-0">{(l as GraphLink).label}</span>
                         <span className="text-gray-700 dark:text-gray-300">{otherNode.name}</span>
