@@ -194,6 +194,13 @@ export const graphData: GraphData = {
     { id: 'socorro-blue-book-investigation-1964', name: 'Socorro Blue Book File (1964)',          type: 'document', val: 3 },
     { id: 'baass-aawsap-contract-2008',           name: 'BAASS AAWSAP Contract (2008)',          type: 'document', val: 3 },
 
+    // Tier 2 document nodes + supporting org/person nodes
+    { id: 'gepan',                              name: 'GEPAN / SEPRA / GEIPAN',              type: 'organization', group: 'shared', val: 2 },
+    { id: 'laurance-rockefeller',               name: 'Laurance Rockefeller',                type: 'person',       group: 'shared', val: 2 },
+    { id: 'cometa-report-1999',                 name: 'COMETA Report (1999)',                type: 'document',     val: 3 },
+    { id: 'crs-uap-report-2022',                name: 'CRS UAP Report (2022)',               type: 'document',     val: 2 },
+    { id: 'rockefeller-briefing-document-1995', name: 'Rockefeller UFO Briefing (1995)',     type: 'document',     val: 2 },
+
     // Additional cases for Fife Symington
     { id: 'phoenix-lights',      name: 'Phoenix Lights (1997)',     type: 'case',         val: 4 },
 
@@ -1017,5 +1024,28 @@ export const graphData: GraphData = {
     { source: 'baass-aawsap-contract-2008', target: 'hal-puthoff',               label: 'authored the scientific statement of work; served as principal DIRD researcher on propulsion and exotic physics' },
     { source: 'baass-aawsap-contract-2008', target: 'luis-elizondo',             label: 'AATIP operated within the institutional framework and DIA relationship established by this contract' },
     { source: 'baass-aawsap-contract-2008', target: 'aaro-historical-record-vol1', label: 'AARO Vol. 1 characterizes AAWSAP as primarily paranormal research; Elizondo and Puthoff dispute this characterization' },
+
+    // GEPAN / SEPRA / GEIPAN (French official UAP investigation office)
+    { source: 'gepan', target: 'project-blue-book', label: "France's official counterpart to the US Project Blue Book — both were government-sanctioned systematic UAP investigation programs" },
+    { source: 'gepan', target: 'nicap',             label: 'NICAP and GEPAN maintained research correspondence; GEPAN case taxonomy drew on NICAP classification methodology developed in parallel' },
+
+    // COMETA Report (1999)
+    { source: 'cometa-report-1999', target: 'gepan',          label: 'extensively cited French GEPAN/SEPRA investigation data as the primary evidentiary foundation for its case analysis' },
+    { source: 'cometa-report-1999', target: 'jacques-vallee', label: "analytical framework applied Vallee's physical-trace and EM-effect case classification methodology to GEPAN/SEPRA records" },
+    { source: 'cometa-report-1999', target: 'nick-pope',      label: 'contemporaneous parallel European government investigation reaching similar conclusions about the seriousness of unexplained cases' },
+    { source: 'cometa-report-1999', target: 'nicap',          label: 'used NICAP international case archives as corroborating database alongside classified GEPAN/SEPRA French records' },
+    { source: 'cometa-report-1999', target: 'richard-dolan',  label: "Dolan produced the most comprehensive English-language analysis; treats COMETA as evidence of non-US government awareness exceeding official US acknowledgment" },
+
+    // CRS UAP Report (2022)
+    { source: 'crs-uap-report-2022', target: 'ndaa-fy2023-uap-provisions',   label: 'preceded and directly informed the NDAA FY2023 provisions creating AARO and mandating new UAP reporting requirements' },
+    { source: 'crs-uap-report-2022', target: 'aaro',                         label: 'analyzed the legislative mandate for and creation of AARO as the primary policy recommendation' },
+    { source: 'crs-uap-report-2022', target: 'uaptf-preliminary-assessment', label: 'used the June 2021 UAPTF Preliminary Assessment as the central analytical starting point for legislative context' },
+    { source: 'crs-uap-report-2022', target: 'chris-mellon',                 label: "Mellon's Senate Intel work and classified UAP briefings are documented in the legislative background the report analyzed" },
+
+    // Rockefeller UFO Briefing Document (1995)
+    { source: 'rockefeller-briefing-document-1995', target: 'laurance-rockefeller', label: 'commissioned and funded by; presented to Clinton White House through Rockefeller\'s direct personal access to senior administration officials' },
+    { source: 'rockefeller-briefing-document-1995', target: 'stanton-friedman',     label: 'served as principal scientific consultant and technical reviewer; Roswell case section reflects his research' },
+    { source: 'rockefeller-briefing-document-1995', target: 'nicap',                label: 'NICAP case archives provided the primary evidentiary base for all seven high-quality UAP incidents presented' },
+    { source: 'rockefeller-briefing-document-1995', target: 'mufon',                label: 'MUFON investigation records used as corroborating case evidence alongside NICAP archives' },
   ],
 };

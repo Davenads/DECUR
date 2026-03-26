@@ -1386,5 +1386,231 @@
         "type": "public"
       }
     ]
+  },
+  {
+    "id": "cometa-report-1999",
+    "name": "COMETA Report: UFOs and Defense (1999)",
+    "date": "July 1999",
+    "issuing_authority": "COMETA (Comite d'Etudes Approfondies) — France",
+    "document_type": "government-assessment",
+    "authenticity_status": "confirmed-authentic",
+    "page_count": 90,
+    "public_url": "https://www.ufoevidence.org/documents/doc830.htm",
+    "summary": "A comprehensive French study on UAP titled 'Les OVNIs et la Defense: A quoi doit-on se preparer?' (UFOs and Defense: What Should We Prepare For?), produced by approximately 13 senior retired French military officers, scientists, and intelligence officials. The report analyzed over 500 UAP cases drawn from French GEPAN/SEPRA records and international sources, concluding that a small but significant percentage remained genuinely unexplained and that the extraterrestrial hypothesis warranted serious scientific consideration.",
+    "significance": "One of the most substantive government-adjacent UAP assessments produced outside the United States. Its authorship — including generals, a former ambassador, senior DGA officials, and military doctors — gave it institutional credibility comparable to classified US studies. COMETA's willingness to directly recommend policy action and examine the extraterrestrial hypothesis distinguished it from contemporaneous Western government positions, and it remains the benchmark for European institutional UAP analysis.",
+    "key_findings": [
+      "Analyzed approximately 500 UAP cases from French GEPAN/SEPRA records and international databases, finding roughly 5% completely unexplained after rigorous investigation",
+      "Concluded that a subset of well-documented cases involved structured craft exhibiting flight performance beyond any known human aerospace technology",
+      "Formally recommended the French government designate UAP as a defense and scientific priority with dedicated institutional resources and parliamentary oversight",
+      "Proposed an international framework — particularly involving the United States — for sharing classified UAP data and coordinating investigation at the senior government level",
+      "Critically evaluated the extraterrestrial hypothesis and concluded it was the most scientifically coherent explanation for the irreducible core of unexplained cases",
+      "Extensively cited GEPAN/SEPRA data accumulated over more than two decades of official French government investigation, validating France's systematic institutional approach",
+      "Identified concrete national security implications including uncontrolled airspace incursions, potential adversary intelligence collection, and the absence of military engagement protocols for UAP",
+      "Called for preparation of a declassified presidential briefing and for France to assume a leadership role in promoting international scientific and governmental transparency on UAP"
+    ],
+    "provenance": "Produced by COMETA (Comite d'Etudes Approfondies), an unofficial study group of approximately 13 senior retired French officials convened under the leadership of former Institut des Hautes Etudes de Defense Nationale (IHEDN) chairman General Denis Letty. Group members had access to classified GEPAN/SEPRA archives and conducted independent analysis spanning several years before publication. Released in July 1999 as a 90-page supplement to the French weekly magazine VSD, with a preface by General Bernard Norlain (former IHEDN chairman and retired Commanding General of French Air Force Tactical Command), adding further institutional weight.",
+    "insider_connections": [
+      {
+        "id": "jacques-vallee",
+        "role": "Computer scientist and UAP researcher whose case taxonomy and physical-trace methodology informed the COMETA analytical framework",
+        "note": "Vallee's multi-decade case classification work, particularly on physical-trace and electro-magnetic-effect cases, provided the methodological foundation the COMETA group applied to GEPAN/SEPRA data."
+      },
+      {
+        "id": "nick-pope",
+        "role": "Former UK Ministry of Defence UAP desk officer who conducted contemporaneous European investigation reaching parallel conclusions about the seriousness of unexplained cases",
+        "note": "Pope's MoD work (1991-1994) and the UK's own official UAP files parallel the COMETA effort; both represent the European institutional strand of serious government UAP investigation that predated the post-AATIP US disclosure movement."
+      },
+      {
+        "id": "richard-dolan",
+        "role": "Historian who produced the most thorough English-language analysis of COMETA within his 'UFOs and the National Security State' series",
+        "note": "Dolan's treatment of COMETA is the primary secondary source for English-speaking researchers; he contextualizes it within the broader pattern of non-US government acknowledgment that far outpaced official US positions."
+      }
+    ],
+    "limitations": [
+      "Produced by retired officials without formal government commission — lacks the institutional mandate and classified access authority of an officially directed state report",
+      "No classified appendices from the GEPAN/SEPRA archive have been publicly released; the full evidentiary basis cited in the report remains inaccessible to independent researchers",
+      "Initial publication through VSD, a French popular weekly, affected its reception in official and scientific circles despite the authors' credentials",
+      "The extraterrestrial hypothesis section, while seriously argued, remains scientifically unverifiable without physical evidence independent of the case record",
+      "No follow-on official French government action directly resulted from the report's policy recommendations despite its institutional authorship",
+      "Available English translations vary in quality and completeness; some analytical nuances of the French original are lost or imprecise in translation"
+    ],
+    "provenance_chain": [
+      {
+        "id": "cometa-formation",
+        "label": "COMETA Study Group Formed",
+        "description": "General Denis Letty convenes senior retired French military, intelligence, and scientific officials to conduct a comprehensive review of GEPAN/SEPRA UAP data and international case files.",
+        "date": "1996",
+        "type": "creation"
+      },
+      {
+        "id": "cometa-analysis",
+        "label": "Multi-Year Analysis Completed",
+        "description": "COMETA group completes its case analysis, drawing on classified GEPAN/SEPRA archives and international UAP records to produce the 90-page assessment with policy recommendations.",
+        "date": "1996-1999",
+        "type": "transfer"
+      },
+      {
+        "id": "cometa-vsd-publication",
+        "label": "VSD Magazine Publication",
+        "description": "Report published as a supplement to the French weekly magazine VSD, with a preface by General Bernard Norlain. Full text made available to international media and subsequently translated into English.",
+        "date": "July 1999",
+        "type": "public"
+      },
+      {
+        "id": "cometa-archive",
+        "label": "International Digitization and Translation",
+        "description": "Report digitized, translated into English, and archived by multiple UAP research organizations. UFO Evidence and other archives provide ongoing public access.",
+        "date": "1999-present",
+        "type": "archive"
+      }
+    ]
+  },
+  {
+    "id": "crs-uap-report-2022",
+    "name": "CRS Report: Unidentified Aerial Phenomena (2022)",
+    "date": "2021-2022",
+    "issuing_authority": "Congressional Research Service — Kelley M. Sayler, Analyst in Advanced Technology and Global Security",
+    "document_type": "government-report",
+    "authenticity_status": "confirmed-authentic",
+    "page_count": 26,
+    "public_url": "https://crsreports.congress.gov/product/details?prodcode=IF11971",
+    "summary": "A Congressional Research Service analysis providing nonpartisan background on UAP incidents, oversight history, legislation, and national security implications. First published in May 2021 following the Senate Intelligence Committee's mandate for a UAPTF Preliminary Assessment, and updated through 2022 as new UAP legislation advanced. Served as the primary nonpartisan reference document for Members of Congress as they developed the NDAA FY2023 UAP provisions creating AARO.",
+    "significance": "The CRS report gave UAP legislative developments their first formal nonpartisan institutional framing within the Congressional research infrastructure. Its existence marked a transition from UAP as a fringe concern to a legitimate policy and national security topic warranting standard legislative analysis. The document informed deliberations that produced NDAA FY2023's most consequential UAP oversight provisions, including AARO's creation mandate.",
+    "key_findings": [
+      "Synthesized the June 2021 UAPTF Preliminary Assessment and identified its key finding that 143 of 144 examined UAP reports remained uncharacterized after investigation",
+      "Documented critical gaps in UAP reporting infrastructure, inter-agency data sharing, and classification protocols that prevented systematic threat characterization",
+      "Analyzed the legal framework governing UAP oversight across DoD, the Intelligence Community, and the FAA, identifying jurisdictional fragmentation as a primary institutional obstacle",
+      "Reviewed the historical precedents for government UAP investigation from Project Sign (1947) through Project Blue Book (1969) and the UAP Task Force (2020)",
+      "Assessed proposed and enacted NDAA UAP provisions, including the mandate for a permanent successor office to the UAPTF that became AARO under the NDAA FY2023",
+      "Identified potential national security implications of uncharacterized aerial objects in restricted airspace, including adversary intelligence collection and airspace denial risks",
+      "Described congressional oversight mechanisms for UAP through the Armed Services Committees, Intelligence Committees, and the new AARO oversight framework",
+      "Provided legal analysis of UAP whistleblower protections and the classified reporting channels available to military personnel with relevant information"
+    ],
+    "provenance": "Produced by Kelley M. Sayler, an analyst in the Congressional Research Service's Foreign Affairs, Defense, and Trade Division. CRS reports are prepared at the request of Members of Congress and are nonpartisan by institutional mandate. The report was first published in May 2021 in the aftermath of the Senate Intelligence Committee's unprecedented request for a UAP assessment from the ODNI and DoD, and was updated at key legislative junctures through 2022 as UAP provisions were drafted into the NDAA. CRS reports are distributed to all Members of Congress and are publicly available at crsreports.congress.gov.",
+    "insider_connections": [
+      {
+        "id": "chris-mellon",
+        "role": "Former Deputy Assistant Secretary of Defense for Intelligence whose Senate Armed Services Committee and Senate Intelligence Committee advocacy and classified briefings directly shaped the legislative context this report analyzed",
+        "note": "Mellon's role in prompting the release of the FLIR, GIMBAL, and GoFast videos and in facilitating classified UAP briefings to senators is documented as part of the legislative background the CRS synthesized."
+      },
+      {
+        "id": "sean-kirkpatrick",
+        "role": "First Director of AARO — the permanent UAP office whose creation was the primary legislative recommendation analyzed in this report",
+        "note": "The report's core legislative recommendation for a permanent, cross-domain UAP office with reporting authority was realized with AARO's creation under NDAA FY2023; Kirkpatrick was AARO's founding director."
+      },
+      {
+        "id": "david-grusch",
+        "role": "Intelligence officer whose 2023 ICIG complaint and congressional testimony were directly enabled by the whistleblower protection framework the 2022 CRS report analyzed and that Congress subsequently strengthened",
+        "note": "The CRS report's analysis of UAP whistleblower protection gaps contributed to the legislative push that produced the enhanced protections Grusch relied upon when filing his ICIG complaint."
+      }
+    ],
+    "limitations": [
+      "As a nonpartisan CRS product, the report characterizes and summarizes official positions without independently evaluating or adjudicating contested claims about UAP evidence or classified programs",
+      "The report is constrained to publicly available information and unclassified congressional testimony; it cannot reference, evaluate, or acknowledge classified UAP data or program specifics",
+      "Multiple CRS UAP reports have been produced across several years; the distinction between versions (IF11971, R47547, and others) creates ambiguity in citations and public discourse",
+      "Legislative analysis becomes outdated as UAP provisions evolve; subsequent NDAA FY2024 and FY2025 provisions have modified the oversight framework the report analyzed",
+      "The report does not assess the credibility of individual UAP witnesses or evaluate the technical merits of specific reported incidents"
+    ],
+    "provenance_chain": [
+      {
+        "id": "crs-initial-preparation",
+        "label": "CRS Report Prepared",
+        "description": "CRS defense policy analyst Kelley M. Sayler prepares the initial UAP background report (IF11971) in response to congressional requests following the Senate Intelligence Committee UAP assessment mandate.",
+        "date": "May 2021",
+        "type": "creation"
+      },
+      {
+        "id": "crs-legislative-updates",
+        "label": "Updated Through Legislative Cycle",
+        "description": "Report updated multiple times through 2022 as NDAA UAP provisions were drafted, debated, and enacted — tracking the creation of AARO and new congressional reporting requirements.",
+        "date": "2021-2022",
+        "type": "transfer"
+      },
+      {
+        "id": "crs-public-release",
+        "label": "Made Publicly Available",
+        "description": "CRS made reports publicly available at crsreports.congress.gov; the UAP reports became among the most accessed CRS products covering defense and intelligence policy.",
+        "date": "2022",
+        "type": "public"
+      }
+    ]
+  },
+  {
+    "id": "rockefeller-briefing-document-1995",
+    "name": "UFOs Briefing Document: The Best Available Evidence (1995)",
+    "date": "December 1995",
+    "issuing_authority": "Laurance S. Rockefeller — Rockefeller UFO Disclosure Initiative",
+    "document_type": "private-briefing",
+    "authenticity_status": "confirmed-authentic",
+    "page_count": 169,
+    "public_url": "https://archive.org/details/UFOsBriefingDocumentTheBestAvailableEvidence",
+    "summary": "A privately commissioned briefing document prepared for philanthropist Laurance S. Rockefeller and presented to the Clinton White House through Science Advisor John H. Gibbons. Written by aviation journalist Don Berliner and researcher Marie Galbraith with scientific consultation from Stanton Friedman, the document presented seven high-quality UAP cases and argued for government disclosure of classified UAP records. It represented the culmination of the Rockefeller Initiative — a multi-year private effort to introduce the UAP disclosure issue into the Clinton administration.",
+    "significance": "The Rockefeller Briefing Document is the most serious private-sector attempt to bring UAP evidence to a sitting US president. Its delivery to the White House Science Advisor through the personal access of a Rockefeller family member demonstrates the breadth of serious interest in UAP among elite circles, and it established the disclosure-advocacy framing that later researchers and insiders would build upon. The document preceded the Clinton administration's limited FOIA-era UAP transparency efforts and informed public disclosure campaigns of the late 1990s and 2000s.",
+    "key_findings": [
+      "Presented seven high-quality UAP cases spanning 1947-1994, including the 1947 Roswell crash, the 1964 Socorro / Zamora landing, and multiple military aviation encounters with physical trace evidence",
+      "Argued that the physical evidence, radar data, and multi-witness testimony in the selected cases collectively exceeded the threshold of reasonable doubt for genuine unexplained phenomena beyond conventional explanation",
+      "Called on President Clinton to direct a comprehensive review and declassification of all government UAP files held across any department, agency, or classified program",
+      "Asserted that Cold War justifications for UAP information suppression had expired and that continued secrecy served no defensible national security purpose in the post-Cold War environment",
+      "Drew extensively on NICAP and MUFON case archives to establish evidentiary chains for each presented incident, citing decades of civilian UAP research infrastructure",
+      "Reportedly prompted a private meeting between Laurance Rockefeller and President Clinton at Rockefeller's Jackson Hole ranch in August 1995; Science Advisor Gibbons confirmed receipt of the document",
+      "Included technical review and scientific commentary by Stanton Friedman, the most prominent public advocate for the Roswell crash retrieval hypothesis at the time of publication",
+      "Represented the primary deliverable of the Rockefeller Initiative — a multi-year private campaign beginning in 1993 to brief senior Clinton administration officials on UAP evidence and advocate for disclosure"
+    ],
+    "provenance": "Commissioned in 1993-1994 by Laurance S. Rockefeller (1910-2004), a philanthropist and fifth-generation Rockefeller family member with direct personal access to the Clinton White House. Research and writing was conducted by aviation journalist Don Berliner and researcher Marie Galbraith, with scientific consultation from Stanton Friedman. The 169-page document was completed in late 1995 and formally presented to John H. Gibbons, Assistant to the President for Science and Technology, in December 1995. The Rockefeller Initiative operated from approximately 1993 to 1996, involving direct correspondence with President Clinton, a meeting with Clinton's Science Advisor, and distribution to multiple senior officials. The document was subsequently digitized and made available through UAP research archives.",
+    "insider_connections": [
+      {
+        "id": "stanton-friedman",
+        "role": "Nuclear physicist and Roswell crash retrieval researcher who served as the principal scientific consultant and technical reviewer during the document's preparation",
+        "note": "Friedman's Roswell research provided the evidentiary framework for the document's central crash-retrieval case; his advocacy position should be considered when evaluating the document's scientific objectivity."
+      },
+      {
+        "id": "richard-dolan",
+        "role": "Historian who documented the Rockefeller Initiative in detail within 'UFOs and the National Security State,' providing the most complete published account of the document's political context and White House delivery",
+        "note": "Dolan's research established the timeline of Rockefeller's Clinton administration contacts and the document's chain of custody to the White House Science Advisor."
+      },
+      {
+        "id": "leslie-kean",
+        "role": "Investigative journalist who independently documented the Rockefeller Initiative's outcome and its role in shaping the 1990s UAP disclosure movement that preceded her own systematic advocacy work",
+        "note": "Kean's 'UFOs: Generals, Pilots, and Government Officials Go On the Record' (2010) situates the Rockefeller Initiative within the arc of credible-witness disclosure efforts she continued into the AATIP era."
+      }
+    ],
+    "limitations": [
+      "Privately commissioned advocacy document — its case selection and framing reflect the pro-disclosure goals of its funder rather than neutral scientific inquiry or official investigation",
+      "No confirmed White House policy action, declassification order, or formal government response resulted from the document's delivery to the Clinton administration",
+      "Stanton Friedman's role as scientific consultant introduces a perspective strongly predisposed toward the extraterrestrial hypothesis, particularly regarding the Roswell case section",
+      "Several cases presented in the briefing rely on secondary or tertiary source accounts rather than primary investigation records or primary-source official documentation",
+      "The operational connection between Laurance Rockefeller and the Clinton White House operated through informal personal channels; no formal institutional engagement or policy review process resulted",
+      "The document's reported delivery to the White House has been confirmed by participants but no official government acknowledgment of receipt, review, or response is on record"
+    ],
+    "provenance_chain": [
+      {
+        "id": "rockefeller-commission",
+        "label": "Rockefeller Initiative Commences",
+        "description": "Laurance Rockefeller engages Don Berliner and Marie Galbraith to compile the best available UAP evidence for presentation to the Clinton administration, with Stanton Friedman as scientific consultant.",
+        "date": "1993-1994",
+        "type": "creation"
+      },
+      {
+        "id": "rockefeller-document-completed",
+        "label": "Document Completed",
+        "description": "The 169-page briefing document is finalized, drawing on NICAP case archives, MUFON investigations, and Stanton Friedman's Roswell research to present seven high-quality cases.",
+        "date": "Late 1995",
+        "type": "transfer"
+      },
+      {
+        "id": "rockefeller-white-house-delivery",
+        "label": "Delivered to White House Science Advisor",
+        "description": "Document formally presented to John H. Gibbons, Assistant to the President for Science and Technology, by Laurance Rockefeller. Copies distributed to other senior Clinton administration officials.",
+        "date": "December 1995",
+        "type": "transfer"
+      },
+      {
+        "id": "rockefeller-digitization",
+        "label": "Public Digitization and Distribution",
+        "description": "Document digitized and made publicly available through UAP research archives including the Paradigm Research Group, Archive.org, and multiple academic UAP collections.",
+        "date": "Late 1990s-present",
+        "type": "archive"
+      }
+    ]
   }
 ]

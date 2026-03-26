@@ -932,6 +932,59 @@ const Sources: NextPage = () => {
             description="The Black Vault's compiled FOIA release of the 38 Defense Intelligence Reference Documents (DIRDs) produced under the BAASS AAWSAP contract. The partial unclassified releases confirm the contract's existence, research scope, and the participating researchers (Puthoff, Davis, Green). Primary documentary evidence corroborating the contract's scope and scientific content."
             notes="Used for: BAASS AAWSAP Contract (2008), AAWSAP (program)."
           />
+
+          {/* COMETA Report (1999) */}
+          <SourceCard
+            name="UFO Evidence Archive - COMETA Report (Full Text, English)"
+            url="https://www.ufoevidence.org/documents/doc830.htm"
+            type="Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="The primary publicly accessible English-language archive of the COMETA Report ('Les OVNIs et la Defense,' July 1999). Hosts the full translated text of the 90-page French government-adjacent study produced by senior retired military and intelligence officials under General Denis Letty, including the case analysis, policy recommendations, and extraterrestrial hypothesis evaluation."
+            coverage="July 1999"
+            notes="Used for: COMETA Report (1999)."
+          />
+
+          <SourceCard
+            name="UFOs and the National Security State, Vol. 2 (Dolan, 2009)"
+            url="https://www.amazon.com/dp/0967799511"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Richard Dolan's second volume of his foundational history of government UAP involvement provides the most thorough English-language analysis of the COMETA Report, contextualizing it within the broader pattern of non-US government UAP acknowledgment that exceeded contemporaneous official US positions. Primary secondary source for the COMETA document entry and associated network connections."
+            coverage="1973-2001 (events); 2009 (publication)"
+            notes="Used for: COMETA Report (1999)."
+          />
+
+          {/* CRS UAP Report (2022) */}
+          <SourceCard
+            name="Congressional Research Service - IF11971: Unidentified Aerial Phenomena (UAP)"
+            url="https://crsreports.congress.gov/product/details?prodcode=IF11971"
+            type="Official Government Document"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The Congressional Research Service's primary nonpartisan analysis of UAP incidents, oversight history, and legislation, prepared by defense policy analyst Kelley M. Sayler. First published May 2021 and updated through 2022, this report served as the foundational Congressional reference document as Members developed the NDAA FY2023 UAP provisions creating AARO. Publicly available at crsreports.congress.gov."
+            coverage="2021-2022"
+            notes="Used for: CRS UAP Report (2022)."
+          />
+
+          {/* Rockefeller Briefing Document (1995) */}
+          <SourceCard
+            name="Archive.org - UFOs Briefing Document: The Best Available Evidence (1995)"
+            url="https://archive.org/details/UFOsBriefingDocumentTheBestAvailableEvidence"
+            type="Digitized Primary Document"
+            typeColor="bg-amber-100 text-amber-700"
+            description="The digitized 169-page briefing document commissioned by Laurance S. Rockefeller and prepared by Don Berliner and Marie Galbraith (with scientific consultation from Stanton Friedman). Presented to Clinton White House Science Advisor John H. Gibbons in December 1995. The primary source for the Rockefeller UFO Disclosure Initiative document entry and the Rockefeller network node."
+            coverage="December 1995"
+            notes="Used for: Rockefeller UFO Briefing Document (1995)."
+          />
+
+          <SourceCard
+            name="UFOs and the National Security State, Vol. 2 (Dolan, 2009) - Rockefeller Initiative Chapter"
+            url="https://www.amazon.com/dp/0967799511"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Richard Dolan's account of the Rockefeller Initiative provides the most thoroughly sourced published analysis of the 1993-1996 private disclosure campaign, including the timeline of Rockefeller's Clinton administration contacts, the delivery of the briefing document to John Gibbons, and the reported Rockefeller-Clinton meeting at Jackson Hole. Primary secondary source for the political and institutional context surrounding the briefing document."
+            coverage="1993-1996 (events); 2009 (publication)"
+            notes="Used for: Rockefeller UFO Briefing Document (1995)."
+          />
         </section>
 
         {/* Glossary sources */}

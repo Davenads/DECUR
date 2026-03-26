@@ -44,6 +44,7 @@ export const docTypeLabel: Record<DocType, string> = {
   'investigation-report':            'Investigation Report',
   'government-contract':             'Gov. Contract',
   'whistleblower-complaint':         'Whistleblower Complaint',
+  'private-briefing':                'Private Briefing',
 };
 
 /* ─── Detail Tabs ──────────────────────────────────────────────── */

@@ -1194,7 +1194,8 @@ export type DocumentType =
   | 'government-assessment'
   | 'investigation-report'
   | 'government-contract'
-  | 'whistleblower-complaint';
+  | 'whistleblower-complaint'
+  | 'private-briefing';
 
 export type ProvenanceNodeType =
   | 'creation'
