@@ -3506,7 +3506,33 @@
     "coordinates": {
       "lat": 32.22,
       "lng": -98.2
-    }
+    },
+    "sources": [
+      {
+        "title": "USAF 301st Fighter Wing - Denial Statement",
+        "date": "2008-01-11",
+        "type": "official",
+        "notes": "Initial Air Force denial that any aircraft from the unit were in the Stephenville area on January 8. Subsequently reversed four days later."
+      },
+      {
+        "title": "USAF 301st Fighter Wing - Reversal Statement",
+        "date": "2008-01-14",
+        "type": "official",
+        "notes": "Air Force acknowledgment that ten F-16s from the 457th Fighter Squadron were conducting night training in the Stephenville area. Attributed the original denial to an administrative error."
+      },
+      {
+        "title": "MUFON Radar Analysis Report - Stephenville January 8, 2008",
+        "date": "2008-08-01",
+        "type": "academic",
+        "notes": "MUFON technical analysis of FAA radar data obtained via FOIA. Identifies an unidentified radar track approaching Crawford, TX restricted airspace accompanied by military returns. Primary sensor-data source for the case."
+      },
+      {
+        "title": "Stephenville Empire-Tribune - Initial Coverage",
+        "date": "2008-01-10",
+        "type": "media",
+        "notes": "Local newspaper that first broke the story in depth and collected initial witness accounts. Primary contemporaneous journalistic source for the event."
+      }
+    ]
   },
   {
     "id": "shag-harbour-1967",
@@ -3769,245 +3795,6 @@
         "url": "https://www.nicap.org/671004shag_dir.htm",
         "type": "foia",
         "notes": "National Investigations Committee on Aerial Phenomena (NICAP) documentation from the contemporary period. Includes witness summaries and contemporaneous reporting. Available online."
-      }
-    ]
-  },
-  {
-    "id": "stephenville-2008",
-    "name": "Stephenville UFO Incident",
-    "date": "January 8, 2008",
-    "location": "Stephenville, Erath County, Texas",
-    "country": "United States",
-    "category": "mass-witness",
-    "evidence_tier": "tier-2",
-    "classification_status": "unresolved",
-    "summary": "On January 8, 2008, dozens of witnesses in Stephenville and surrounding Erath County, Texas reported a massive, low-flying object showing brilliant white lights moving silently at high speed. Witnesses included a pilot, a constable, and dozens of civilians. The U.S. Air Force initially denied having aircraft in the area; four days later it reversed course and acknowledged that F-16 fighter jets from the 457th Fighter Squadron (Naval Air Station Fort Worth Joint Reserve Base) were conducting training operations in the area. A subsequent MUFON radar analysis retrieved FAA radar data showing an unidentified track approaching Washington D.C. airspace - in the direction of President Bush's Crawford Ranch. The track was accompanied by a military radar return (presumed F-16s) following it.",
-    "tags": [
-      "mass-witness",
-      "radar-confirmed",
-      "Texas",
-      "military-denial",
-      "F-16s",
-      "FAA-radar"
-    ],
-    "insider_connections": [],
-    "overview": {
-      "key_facts": [
-        "January 8, 2008, approximately 6:15 PM CST: multiple witnesses in Stephenville, TX observe a very large object with brilliant white lights",
-        "Key witnesses include pilot Steve Allen (who estimated the object was approximately half a mile to a mile wide and moving at ~3,000 mph), Constable Lee Roy Gaitan, and dozens of other civilians",
-        "The object was observed for approximately 5-10 minutes; multiple witnesses describe it as making no sound",
-        "USAF (457th Fighter Squadron, NAS Fort Worth JRB) initially issued a statement on January 11, 2008 denying any aircraft were in the area",
-        "On January 14, 2008, the Air Force reversed its denial, acknowledging that ten F-16 fighter jets from the 457th were conducting training operations in the Stephenville area on January 8",
-        "MUFON obtained FAA radar data via FOIA and identified an unidentified radar track moving from the Stephenville area toward restricted airspace near Crawford, TX (President Bush's ranch)",
-        "The radar analysis showed the unidentified object was tracked at speeds up to 532 mph; F-16 returns were also present in the data",
-        "FAA radar data did not show any single object of the size described by witnesses - the visual object was not matched to a confirmed radar return"
-      ]
-    },
-    "evidence": {
-      "video_audio": [
-        "No video or photographic evidence was captured of the primary January 8 object despite numerous witnesses",
-        "Multiple television news interviews with witnesses conducted in the week following the incident"
-      ],
-      "documentation": [
-        "FAA radar data for January 8, 2008 (obtained via FOIA by MUFON); shows unidentified track moving toward Crawford, TX restricted airspace",
-        "USAF 457th Fighter Squadron denial (January 11, 2008) followed by reversal acknowledgment (January 14, 2008)",
-        "MUFON Mutual UFO Network radar analysis report, released August 2008, analyzing the FAA data"
-      ],
-      "physical": [
-        "No physical evidence recovered"
-      ]
-    },
-    "witnesses": [
-      {
-        "name": "Steve Allen",
-        "role": "Pilot and businessman, Selden, Texas",
-        "type": "civilian",
-        "testimony": "It was very large and it was very fast. I'd say the object was about half a mile wide and one mile long. It didn't have any lights on it, but it had brilliant white lights - it looked like a solid object. It disappeared in about five seconds and then it reappeared in about a second or two over the south. That thing wasn't even going the speed of sound. I'd say it was going at least 2,000-3,000 mph. I'm a pilot - I know what I'm looking at."
-      },
-      {
-        "name": "Constable Lee Roy Gaitan",
-        "role": "Constable, Erath County",
-        "type": "law-enforcement",
-        "testimony": "I didn't want to say anything. But when I saw so many come out and say they saw something - I saw something too. It had a blinking light. I thought it was a commercial airplane at first, then it stopped and I'm like, I've never seen a plane stop like that. Then it took off at a very high rate of speed."
-      },
-      {
-        "name": "Ricky Sorrells",
-        "role": "Machinist, Dublin, Texas",
-        "type": "civilian",
-        "testimony": "I was deer hunting when I saw it - a flat, metallic gray craft. It was so large it blocked out the light. There were no seams, no nuts or bolts. No wings. I could see the bottom of it. It came back several times. I was scared enough that I kept a rifle with me after the first time."
-      }
-    ],
-    "official_response": {
-      "agencies": [
-        "U.S. Air Force (457th Fighter Squadron)",
-        "Federal Aviation Administration"
-      ],
-      "statements": [
-        {
-          "source": "U.S. Air Force, 301st Fighter Wing",
-          "date": "2008-01-11",
-          "statement": "The 301st Fighter Wing at NAS Fort Worth JRB does not have any aircraft that match the description of what witnesses saw, and we had no aircraft in that area."
-        },
-        {
-          "source": "U.S. Air Force, 301st Fighter Wing",
-          "date": "2008-01-14",
-          "statement": "On January 8, 2008, ten F-16 aircraft from the 457th Fighter Squadron were on a night training mission in the Stephenville, Texas area. The original report was sent out with erroneous information. We apologize for any inconvenience."
-        },
-        {
-          "source": "Federal Aviation Administration",
-          "date": "2008",
-          "statement": "FAA radar data for the area has been provided in response to FOIA requests. The data shows returns in the area consistent with known aircraft activity. Any unidentified returns require further analysis."
-        }
-      ]
-    },
-    "credibility": {
-      "supporting": [
-        "Multiple credible witnesses including an experienced pilot and a law enforcement officer gave consistent accounts",
-        "The Air Force's initial denial followed by a four-day reversal acknowledging F-16 training in the area undermines the official response's credibility",
-        "MUFON radar analysis of FAA data showed an unidentified track approaching Crawford, TX restricted airspace - providing radar context even if not a direct visual match",
-        "Over 300 MUFON witness reports were collected from Erath County and surrounding areas for the January-February 2008 timeframe"
-      ],
-      "contradicting": [
-        "The Air Force's acknowledgment of F-16 training activity provides a conventional military presence in the area that could explain some witness reports",
-        "No video evidence was captured despite the large number of witnesses and the extended duration of the sighting",
-        "The MUFON radar analysis was conducted by civilian researchers without formal government radar analysis resources; its methodology has not been independently peer-reviewed",
-        "Witness size estimates (half a mile to over a mile wide) are extreme and may reflect perceptual overestimation under low-light conditions"
-      ]
-    },
-    "coordinates": {
-      "lat": 32.22,
-      "lng": -98.2
-    },
-    "timeline": [
-      {
-        "timestamp": "2008-01-08T18:15:00",
-        "local": "January 8, 2008, ~6:15 PM CST",
-        "event": "Steve Allen and two other witnesses near Selden, Texas first observe the object: a massive formation of brilliant white lights moving at high speed with no sound. Allen estimates it is 0.5-1 mile wide and traveling at 2,000-3,000 mph."
-      },
-      {
-        "timestamp": "2008-01-08T18:20:00",
-        "local": "~6:20 PM CST",
-        "event": "Witnesses in Stephenville and surrounding Erath County observe the object. Constable Lee Roy Gaitan observes a bright blinking light that stops abruptly and then accelerates at high speed - behavior he states is inconsistent with any aircraft he has seen."
-      },
-      {
-        "timestamp": "2008-01-08T18:25:00",
-        "local": "~6:25 PM CST",
-        "event": "Ricky Sorrells, deer hunting near Dublin TX, observes a flat metallic craft at low altitude that he describes as blocking out ambient light over a large area. He reports the craft returns on subsequent evenings and describes it as approximately 300 feet long with no visible features on its surface."
-      },
-      {
-        "timestamp": "2008-01-09",
-        "local": "January 9-10, 2008",
-        "event": "Local media in Stephenville and the Dublin Citizen begin collecting witness accounts. The story draws initial attention from the Stephenville Empire-Tribune. MUFON receives first reports."
-      },
-      {
-        "timestamp": "2008-01-11",
-        "local": "January 11, 2008",
-        "event": "USAF 301st Fighter Wing issues statement denying any aircraft from their unit were in the Stephenville area on January 8."
-      },
-      {
-        "timestamp": "2008-01-13",
-        "local": "January 13, 2008",
-        "event": "National and international media cover the Stephenville sightings. The story is widely reported in the U.S. and abroad, driven by the large number of consistent witness accounts."
-      },
-      {
-        "timestamp": "2008-01-14",
-        "local": "January 14, 2008",
-        "event": "USAF reverses its denial: the 457th Fighter Squadron confirms ten F-16 aircraft were conducting night training operations in the Stephenville area on January 8. The Air Force attributes the original denial to an administrative error."
-      },
-      {
-        "timestamp": "2008-08-01",
-        "local": "August 2008",
-        "event": "MUFON releases its radar analysis report based on FAA data obtained via FOIA. The analysis identifies an unidentified radar track moving from the Stephenville area toward Crawford, TX (near President Bush's Prairie Chapel Ranch, located in P-49 restricted airspace). The track is accompanied by military returns (presumed F-16s). The unidentified object was tracked at speeds up to 532 mph."
-      }
-    ],
-    "competing_hypotheses": [
-      {
-        "name": "F-16 Training Exercise Misidentification",
-        "assessment": "probable",
-        "summary": "The Air Force's own admission of ten F-16s conducting night training in the area on January 8 provides a conventional explanation for at least some witness reports. F-16 afterburner flames and formation lights visible at night could create the impression of a large, fast-moving object. The initial denial followed by reversal represents an administrative error, not a cover-up, per the Air Force's account.",
-        "evidence_for": [
-          "Air Force confirmed F-16 training in the area on January 8 (January 14, 2008 statement)",
-          "F-16 afterburner produces intense white light visible from the ground at night",
-          "A formation of F-16s could appear as a large cluster of lights to an untrained observer",
-          "Night-vision optical illusions can cause observers to misestimate size and speed of distant aircraft"
-        ],
-        "evidence_against": [
-          "Multiple witnesses including an experienced pilot explicitly described the object as unlike any aircraft they recognized",
-          "The described silence at low altitude is inconsistent with F-16s, which are audible at significant distances",
-          "Steve Allen's pilot credentials make basic jet aircraft misidentification implausible at the described proximity",
-          "The MUFON radar analysis shows an unidentified track separate from the confirmed F-16 military returns"
-        ]
-      },
-      {
-        "name": "Unidentified Object with Radar Confirmation",
-        "assessment": "possible",
-        "summary": "The MUFON radar analysis of FAA data identified a track that does not correspond to the confirmed F-16s and was moving toward Crawford, TX restricted airspace. If the radar analysis is accurate, it represents independent sensor confirmation of an unidentified object separate from the acknowledged military training. The object's apparent trajectory toward presidential restricted airspace is a notable element.",
-        "evidence_for": [
-          "MUFON radar analysis (August 2008) identified an unidentified track in FAA data separate from known military returns",
-          "The unidentified track appeared to be moving toward Crawford, TX restricted airspace (P-49)",
-          "Track characteristics (speed up to 532 mph, flight path) are not consistent with commercial aviation",
-          "Over 300 civilian witness reports provide substantial corroboration for an unusual event"
-        ],
-        "evidence_against": [
-          "MUFON's radar analysis was not peer-reviewed and the methodology has not been independently validated",
-          "FAA radar data has gaps and limitations in low-altitude coverage",
-          "The proximity to Crawford Ranch could be coincidental rather than indicating the object was targeting presidential restricted airspace",
-          "No Air Force or FAA official has confirmed the MUFON radar analysis conclusions"
-        ]
-      }
-    ],
-    "claims_taxonomy": {
-      "verified": [
-        "USAF 457th Fighter Squadron confirmed ten F-16 aircraft were conducting training in the Stephenville area on January 8, 2008 (January 14, 2008 press statement)",
-        "USAF initially denied having aircraft in the area (January 11, 2008 statement) before reversing four days later (January 14, 2008 statement)",
-        "FAA radar data for the area on January 8, 2008 was produced in response to FOIA requests by MUFON"
-      ],
-      "probable": [
-        "Dozens of independent witnesses in Erath County observed unusual lights/object on January 8, 2008 (consistent across more than 300 MUFON witness reports; accounts from law enforcement and a pilot are particularly credible)",
-        "MUFON radar analysis identified a track in FAA data not corresponding to acknowledged military aircraft (MUFON technical report August 2008; methodology not independently peer-reviewed)"
-      ],
-      "disputed": [
-        "The object observed by witnesses was a single large craft rather than a formation of F-16s (pilot witness Steve Allen insisted on a single massive object; military F-16 formation remains an alternative)",
-        "The unidentified radar track approached Crawford, TX restricted airspace (MUFON analysis conclusion; not confirmed by FAA or USAF)"
-      ],
-      "speculative": [
-        "The object was monitoring or approaching the President's ranch (interpretive; no evidence of intent)",
-        "The Air Force denial was deliberate concealment rather than administrative error (plausible but not supported by evidence beyond the denial itself)"
-      ]
-    },
-    "sensor_context": {
-      "systems": [
-        {
-          "name": "FAA Radar - Fort Worth ARTCC / San Angelo TRACON",
-          "operator": "Federal Aviation Administration",
-          "notes": "FAA radar data for January 8, 2008 obtained via FOIA. MUFON analysis identified a track not corresponding to acknowledged military aircraft. Raw FAA data available; MUFON's interpretation of the track has not been independently validated."
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "USAF 301st Fighter Wing - Denial Statement",
-        "date": "2008-01-11",
-        "type": "official",
-        "notes": "Initial Air Force denial that any aircraft from the unit were in the Stephenville area on January 8. Subsequently reversed four days later."
-      },
-      {
-        "title": "USAF 301st Fighter Wing - Reversal Statement",
-        "date": "2008-01-14",
-        "type": "official",
-        "notes": "Air Force acknowledgment that ten F-16s from the 457th Fighter Squadron were conducting night training in the Stephenville area. Attributed the original denial to an administrative error."
-      },
-      {
-        "title": "MUFON Radar Analysis Report - Stephenville January 8, 2008",
-        "date": "2008-08-01",
-        "type": "academic",
-        "notes": "MUFON technical analysis of FAA radar data obtained via FOIA. Identifies an unidentified radar track approaching Crawford, TX restricted airspace accompanied by military returns. Primary sensor-data source for the case."
-      },
-      {
-        "title": "Stephenville Empire-Tribune - Initial Coverage",
-        "date": "2008-01-10",
-        "type": "media",
-        "notes": "Local newspaper that first broke the story in depth and collected initial witness accounts. Primary contemporaneous journalistic source for the event."
       }
     ]
   },
@@ -7077,6 +6864,650 @@
         "url": "https://www.amazon.com/UFOs-Government-Files-Peter-Brookesmith/dp/0517188805",
         "type": "Book",
         "notes": "Includes documented analysis of the Loch Raven Dam case as a landmark physical effects case"
+      }
+    ]
+  },
+  {
+    "id": "kenneth-arnold-1947",
+    "name": "Kenneth Arnold Sighting",
+    "date": "June 24, 1947",
+    "location": "Mount Rainier, Washington",
+    "country": "United States",
+    "category": "aviation",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "Private pilot and businessman Kenneth Arnold reported observing nine crescent-shaped objects flying in formation near Mount Rainier, Washington while searching for a downed military transport aircraft. Arnold described their motion as like saucers skipping on water - giving rise to the term flying saucer. His credible professional background, detailed report to military authorities, and the subsequent wave of sightings the report triggered established this case as the founding event of the modern UAP era. The objects were estimated to travel at approximately 1,700 mph - nearly three times the speed of any known 1947 aircraft.",
+    "tags": [
+      "aviation",
+      "pilot-witness",
+      "formation-flight",
+      "foundational",
+      "saucer-origin",
+      "1947-wave",
+      "USAF-investigated"
+    ],
+    "insider_connections": [
+      {
+        "id": "donald-keyhoe",
+        "note": "NICAP founder who extensively documented the Arnold sighting in his books and congressional advocacy; used Arnold as a cornerstone case for the reality of structured unknown craft."
+      }
+    ],
+    "overview": {
+      "key_facts": [
+        "Date: June 24, 1947, approximately 3:00 PM PST",
+        "Location: Approximately 25 miles from Mount Rainier, cruising at 9,200 feet",
+        "Pilot: Kenneth Arnold, 32 - private pilot, fire equipment salesman, deputy federal marshal",
+        "Aircraft: CallAir Model A, N33355",
+        "Mission: Volunteer search for USMC C-46 transport reported missing near Rainier",
+        "Arnold observed 9 objects flying in a roughly echelon formation from north to south",
+        "Objects described as flat, crescent or heel-shaped, approximately 45-50 feet long",
+        "Arnold timed the flight between Mt. Rainier and Mt. Adams: covered approximately 47 miles in 102 seconds - roughly 1,700 mph",
+        "Arnold first reported the sighting to the FBI in Pendleton, OR; agents directed him to the Army Air Force",
+        "East Oregonian reporter Bill Bequette interviewed Arnold; Arnold's phrase 'like saucers skipping on water' gave rise to the term flying saucer",
+        "Project Sign (predecessor to Project Blue Book) classified the case Unidentified after investigation",
+        "Army Air Force intelligence officers Lt. Frank Brown and Capt. William Davidson flew from Hamilton Field to interview Arnold personally",
+        "Arnold provided a detailed written statement to USAF intelligence, July 12, 1947"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Kenneth Arnold written statement to USAF intelligence, July 12, 1947",
+        "Army Air Force intelligence report - Hamilton Field investigation",
+        "FBI interview record - Pendleton, Oregon, June 25, 1947",
+        "East Oregonian newspaper report - June 25, 1947 (first published account)",
+        "Project Sign case file - USAF classified Unidentified",
+        "Project Blue Book archive - Arnold case file",
+        "Arnold self-published account: The Coming of the Saucers (1952, co-authored with Ray Palmer)"
+      ],
+      "physical": []
+    },
+    "witnesses": [
+      {
+        "name": "Kenneth Arnold",
+        "role": "Private pilot; fire equipment salesman; deputy federal marshal",
+        "type": "civilian",
+        "testimony": "I observed a chain of nine peculiar-looking aircraft flying from north to south at approximately 9,500 feet elevation. They flew like a saucer would if you skipped it across the water. They were flat like a pie pan and so shiny they reflected the sun like a mirror. I clocked them at roughly 1,700 miles per hour."
+      }
+    ],
+    "hypotheses": [
+      {
+        "label": "Pelicans or Birds",
+        "credibility": "very-low",
+        "description": "A small number of skeptics proposed birds in formation. Arnold was an experienced pilot logging hundreds of hours in Pacific Northwest airspace; his ability to distinguish a bird formation from objects timed at 1,700 mph at altitude does not support this hypothesis."
+      },
+      {
+        "label": "Experimental Military Aircraft",
+        "credibility": "low",
+        "description": "No known 1947 aircraft could approach 1,700 mph; Chuck Yeager would not break the sound barrier until October 1947. No declassified records document a nine-aircraft formation test over civilian airspace at that speed."
+      },
+      {
+        "label": "Atmospheric or Optical Phenomenon",
+        "credibility": "low",
+        "description": "Arnold was in clear visual conditions observing objects in coordinated formation with relative position changes over a sustained observation - inconsistent with a static optical effect."
+      },
+      {
+        "label": "Structured Craft (unknown origin)",
+        "credibility": "high",
+        "description": "Project Sign investigators, after direct interview with Arnold and review of his detailed report, classified the case Unidentified. Arnold was a credible, experienced pilot with professional stakes in accurate reporting. The objects performed maneuvers at speeds three times beyond any 1947 aircraft, in clear conditions, with precise timing data."
+      }
+    ],
+    "competing_analyses": [
+      "Project Sign (1947-1948) investigated the Arnold report directly via Army Air Force intelligence officers and classified it Unidentified. The case was never explained.",
+      "Edward Ruppelt, first head of Project Blue Book, cited the Arnold sighting as the event that effectively launched organized government UAP investigation.",
+      "Skeptic analyst James Oberg proposed Arnold misjudged size and speed due to distance estimation errors. However, Arnold's timing method - clocking between two known mountain landmarks - is a standard aviation navigation technique that does not depend on size estimation.",
+      "Historian David Jacobs analyzed the Arnold report and concluded it meets every reasonable standard of a credible firsthand pilot report, noting that Arnold's professional reputation was directly on the line when he filed the USAF statement."
+    ],
+    "sources": [
+      {
+        "title": "The Coming of the Saucers - Arnold and Palmer (1952)",
+        "url": "https://www.amazon.com/dp/B0007DBO9M",
+        "type": "Book",
+        "notes": "Arnold's own account of the sighting and subsequent investigation"
+      },
+      {
+        "title": "Project Blue Book Archive - Arnold Case File",
+        "url": "https://www.theprojectbluebookarchive.org/",
+        "type": "Government Document",
+        "notes": "Original USAF investigation documentation"
+      },
+      {
+        "title": "NICAP - Kenneth Arnold Case Summary",
+        "url": "http://www.nicap.org/470624dir.htm",
+        "type": "Research",
+        "notes": "NICAP documentation and analysis"
+      }
+    ]
+  },
+  {
+    "id": "betty-barney-hill-1961",
+    "name": "Betty and Barney Hill Abduction",
+    "date": "September 19-20, 1961",
+    "location": "US Route 3, Lincoln, New Hampshire",
+    "country": "United States",
+    "category": "close-encounter",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "Betty and Barney Hill, a married couple returning from a Canadian vacation, encountered a bright object that followed their vehicle through the White Mountains of New Hampshire. They experienced approximately two hours of unexplained missing time and arrived home significantly later than expected. Subsequent psychiatric hypnosis sessions conducted by Dr. Benjamin Simon revealed consistent narratives of being taken aboard a craft by non-human beings. The Hills provided separate but convergent accounts under hypnosis, neither aware of the other's testimony during the sessions. Betty Hill's recalled star map was later matched by amateur astronomer Marjorie Fish to the Zeta Reticuli binary star system. The case remains the first widely documented and publicly investigated CE4 (close encounter of the fourth kind) in the United States.",
+    "tags": [
+      "ce4",
+      "abduction",
+      "missing-time",
+      "hypnotic-regression",
+      "star-map",
+      "new-england",
+      "multi-witness",
+      "NICAP-investigated"
+    ],
+    "insider_connections": [
+      {
+        "id": "stanton-friedman",
+        "note": "Nuclear physicist who became involved in the Hill case through Betty Hill correspondence; co-authored Captured! (2007) with Kathleen Marden."
+      },
+      {
+        "id": "budd-hopkins",
+        "note": "Abduction researcher whose own investigations were directly influenced by the Hill case framework; referenced the case as foundational in Missing Time (1981)."
+      },
+      {
+        "id": "donald-keyhoe",
+        "note": "NICAP director who was among the first to receive and investigate the Hill report; NICAP conducted the initial investigation."
+      }
+    ],
+    "overview": {
+      "key_facts": [
+        "Date: Night of September 19-20, 1961",
+        "Witnesses: Betty Hill (41, social worker) and Barney Hill (39, US Postal worker)",
+        "Approximately 2 hours of unaccounted travel time; arrived home at 5 AM instead of expected 2-3 AM",
+        "Betty's dress was torn along the hem and zipper; a pink powdery substance covered it",
+        "Barney's binoculars strap was broken; his dress shoes were inexplicably scuffed",
+        "Barney developed a ring of warts around his groin in the weeks following",
+        "Betty began having vivid disturbing dreams within days; recorded them in writing",
+        "NICAP investigator Walter Webb conducted the first investigation in October 1961",
+        "Dr. Benjamin Simon (Boston psychiatrist, specialist in hypnosis) conducted approximately 6 months of weekly sessions beginning February 1964",
+        "Betty and Barney were hypnotized separately - neither heard the other's session",
+        "Both produced convergent accounts of being taken aboard a disc-shaped craft and examined",
+        "Betty recalled a star map shown to her aboard the craft; drew it from memory post-hypnosis",
+        "Amateur astronomer Marjorie Fish constructed 3D models of nearby star systems (1969) and identified the map as consistent with Zeta Reticuli 1 and 2",
+        "Fish analysis published in Astronomy magazine (December 1974)",
+        "John Fuller published The Interrupted Journey (1966) - first major public account",
+        "Shiny concentric circles appeared on the trunk of the Hills' car in the days following; compass needle rotated erratically when held near them"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "NICAP investigation reports - Walter Webb (October 1961)",
+        "Dr. Benjamin Simon hypnosis session transcripts and recordings (1964)",
+        "Betty Hill handwritten dream notes - September 1961 (pre-hypnosis)",
+        "Betty Hill star map drawing (post-hypnosis) - rendered from memory",
+        "Marjorie Fish 3D stellar model analysis - Zeta Reticuli match (1969, published Astronomy magazine 1974)",
+        "John Fuller - The Interrupted Journey (1966)",
+        "Air Force 100th Bomb Wing Blue Book investigation file - Pease Air Force Base",
+        "Kathleen Marden and Stanton Friedman - Captured! (2007)",
+        "University of New Hampshire - Betty Hill papers (archival collection)"
+      ],
+      "physical": [
+        "Betty's dress: torn along hem and zipper, pink powdery residue; submitted to NICAP investigators",
+        "Shiny concentric circles on the car trunk; compass needle rotated erratically when near them",
+        "Barney's binoculars strap broken with no recalled cause",
+        "Ring of flat warts appeared on Barney's groin; his physician noted their unusual regularity"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Betty Hill",
+        "role": "Social worker; primary CE4 witness",
+        "type": "civilian",
+        "testimony": "Under hypnosis with Dr. Simon: He showed me a star map. It was three-dimensional - the stars were hanging out in front of the map. He asked me if I knew where we were on the map. I said no. He seemed surprised. He pointed to the two prominent stars and said those were their home system."
+      },
+      {
+        "name": "Barney Hill",
+        "role": "US Postal worker; primary CE4 witness",
+        "type": "civilian",
+        "testimony": "Under hypnosis with Dr. Simon (given separately, without hearing Betty's account): They were standing in the road. I could see their eyes. Not like human eyes. I can't move. I'm being pulled toward the craft. I cannot open my eyes but I know I am being moved."
+      },
+      {
+        "name": "Walter Webb",
+        "role": "NICAP investigator; first to interview the Hills",
+        "type": "investigator",
+        "testimony": "I interviewed the Hills for six hours. I was impressed by their sincerity and the consistency of their accounts. The physical evidence - the compass anomaly, the dress, the car markings - could not be explained by a conventional encounter."
+      }
+    ],
+    "hypotheses": [
+      {
+        "label": "Sleep Deprivation or Hypnagogic Hallucination",
+        "credibility": "low",
+        "description": "The 'missing time' was proposed to be fatigue-induced lapses with memories confabulated during hypnosis. Dr. Simon, who had extensive forensic hypnosis experience, concluded the Hills genuinely believed their accounts and showed no signs of deliberate fabrication. Physical evidence predated any hypnosis suggestion."
+      },
+      {
+        "label": "Jupiter/Saturn Misidentification",
+        "credibility": "very-low",
+        "description": "Astronomer Donald Menzel proposed the Hills saw Jupiter and then Saturn. The Hills' account describes sustained maneuvering, hovering, landing-level approach, and beings visible through binoculars - inconsistent with any celestial body."
+      },
+      {
+        "label": "Genuine CE4 Encounter",
+        "credibility": "medium",
+        "description": "Dr. Simon concluded the Hills genuinely experienced something they could not explain, while remaining agnostic on physical reality. NICAP investigators and Stanton Friedman concluded the totality of evidence supports a genuine encounter with an unknown phenomenon."
+      }
+    ],
+    "competing_analyses": [
+      "Dr. Benjamin Simon conducted six months of separate hypnosis sessions. He found no evidence of deliberate fabrication and believed the Hills genuinely experienced something they could not explain, while personally remaining agnostic on the physical reality of the event.",
+      "John Fuller's 1966 account The Interrupted Journey was written with Dr. Simon's cooperation and includes session transcripts and Simon's clinical commentary. It remains the primary historical source.",
+      "The Marjorie Fish star map match was published in Astronomy (December 1974) and generated one of the largest reader-response volumes in the magazine's history.",
+      "Kathleen Marden (Betty's niece) and Stanton Friedman published Captured! (2007), a forensic re-examination with previously unpublished NICAP documentation. They concluded the case remains unexplained by any conventional hypothesis."
+    ],
+    "sources": [
+      {
+        "title": "The Interrupted Journey - John Fuller (1966)",
+        "url": "https://www.amazon.com/dp/0425034437",
+        "type": "Book",
+        "notes": "First major published account; written with Dr. Benjamin Simon's cooperation and includes session transcripts"
+      },
+      {
+        "title": "Captured! The Betty and Barney Hill UFO Experience - Friedman and Marden (2007)",
+        "url": "https://www.amazon.com/dp/1564149641",
+        "type": "Book",
+        "notes": "Comprehensive forensic re-examination with previously unpublished documents"
+      },
+      {
+        "title": "NICAP - Betty and Barney Hill Case File",
+        "url": "http://www.nicap.org/611019dir.htm",
+        "type": "Research",
+        "notes": "NICAP investigation files including Walter Webb's 1961 report"
+      },
+      {
+        "title": "Astronomy Magazine - Zeta Reticuli Incident (Dickinson, 1974)",
+        "url": "https://archive.org/details/astronomy-magazine",
+        "type": "Academic Publication",
+        "notes": "Published Marjorie Fish analysis and the astronomical community response"
+      }
+    ]
+  },
+  {
+    "id": "walton-abduction-1975",
+    "name": "Travis Walton Abduction",
+    "date": "November 5, 1975",
+    "location": "Apache-Sitgreaves National Forest, Arizona",
+    "country": "United States",
+    "category": "close-encounter",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "Logger Travis Walton, 20, approached a glowing disc hovering above the forest floor while riding in a work truck with six crew members. He was struck by a beam of light and rendered unconscious. His six colleagues fled in panic; Walton was not recovered at the scene and was reported missing to local law enforcement. He reappeared five days later at a gas station near Heber, Arizona, physically exhausted and with a beard consistent with five days of growth. All six crew members took and passed polygraph examinations regarding their observation of the beam event and the craft. The case is notable for having the largest number of independent witnesses to the initial beam-strike event of any documented CE4 case.",
+    "tags": [
+      "ce4",
+      "abduction",
+      "multi-witness",
+      "polygraph",
+      "forestry",
+      "physical-effects",
+      "missing-person",
+      "Arizona"
+    ],
+    "insider_connections": [
+      {
+        "id": "travis-walton",
+        "note": "Primary CE4 witness and subject of the abduction; wrote the definitive first-person account Fire in the Sky (1993) and has maintained consistent testimony for fifty years."
+      },
+      {
+        "id": "budd-hopkins",
+        "note": "Abduction researcher who analyzed the Walton case as part of his broader investigation into CE4 encounters; referenced the case in his foundational texts."
+      },
+      {
+        "id": "stanton-friedman",
+        "note": "Investigated the Walton case and crew polygraph results; concluded the multi-witness corroboration makes this the most evidentially robust CE4 incident on record."
+      },
+      {
+        "id": "john-mack",
+        "note": "Harvard psychiatrist who reviewed the Walton case as part of his CE4 research and noted its account was consistent in structure with other abduction narratives he had clinically documented."
+      }
+    ],
+    "overview": {
+      "key_facts": [
+        "Date: November 5, 1975, approximately 6:10 PM MST",
+        "Location: Turkey Springs area, Apache-Sitgreaves National Forest, near Heber, Arizona",
+        "Logging crew: Travis Walton (20), Mike Rogers (crew foreman, 28), and five other crew members - seven total",
+        "The crew was driving home after a USFS timber-thinning contract workday",
+        "Walton exited the truck and approached a disc-shaped craft hovering approximately 15 feet above the ground",
+        "Walton was struck by a beam of bluish-green light and thrown approximately 10 feet backward",
+        "Crew fled in the truck; returned minutes later but found no trace of Walton",
+        "Walton reported missing to Navajo County Sheriff's deputies that evening",
+        "Sheriff Marlin Gillespie launched a search operation; no trace found in five days of searching",
+        "November 10, 1975: Walton's brother-in-law received a phone call from Walton at a gas station in Heber, AZ",
+        "Walton was found disoriented, dehydrated, and with a beard consistent with five days of growth",
+        "All six crew members took polygraph examinations administered by Cy Gilson (Arizona DPS polygraph specialist) on November 10, 1975; five passed, one requested a reschedule",
+        "Walton took and passed a polygraph administered by Dr. Jack McCarthy in 1993",
+        "The case was adapted into the 1993 film Fire in the Sky (Paramount Pictures); Walton has noted the film altered many details"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "Navajo County Sheriff's Department missing person report - November 5, 1975",
+        "Navajo County Sheriff search operation logs - November 5-10, 1975",
+        "Cy Gilson (Arizona DPS) polygraph examination reports for five crew members - November 10, 1975",
+        "Dr. Jack McCarthy polygraph examination of Travis Walton - 1993 (passed)",
+        "APRO (Aerial Phenomena Research Organization) investigation report 1975-1976",
+        "MUFON case file - 1975",
+        "Travis Walton - The Walton Experience (1978) and revised edition Fire in the Sky (1993)",
+        "Local newspaper coverage - Hopi News and White Mountain Independent - November 1975"
+      ],
+      "physical": [
+        "Walton physical examination upon return: dehydrated, approximately 10 pounds underweight",
+        "Beard growth on Walton consistent with five days without shaving",
+        "No structural injuries beyond dehydration and exhaustion",
+        "No physical trace at the location of the observed craft"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Mike Rogers",
+        "role": "Logging crew foreman; USFS contract holder",
+        "type": "civilian",
+        "testimony": "We all saw it. Travis just jumped out and walked toward it. Then there was a beam - it hit him and he flew backwards through the air. We panicked. We drove away. We went back and he was just gone. There was nothing there."
+      },
+      {
+        "name": "Travis Walton",
+        "role": "Logger; primary CE4 witness and subject",
+        "type": "civilian",
+        "testimony": "I woke up on what seemed like a table. There were beings around me - large eyes, pale skin. I panicked and tried to get off. A human-looking figure in a helmet led me through a corridor. I was put into a reclining chair in a domed room. Then I woke up on a road near Heber. Five days had passed."
+      },
+      {
+        "name": "Deputy Sheriff Glen Flaming",
+        "role": "Navajo County Sheriff's Department; received initial missing-person report",
+        "type": "law-enforcement",
+        "testimony": "These men were clearly frightened. I've interviewed a lot of people in my career. These men were not putting on an act. They didn't know what had happened to their friend and they were genuinely scared."
+      }
+    ],
+    "hypotheses": [
+      {
+        "label": "Hoax (coordinated by crew)",
+        "credibility": "low",
+        "description": "The National Enquirer and several skeptics proposed a hoax to avoid a USFS contract deadline. The hypothesis fails on multiple grounds: all five crew members who took the initial polygraphs passed; the contract deadline theory is factually incorrect; Walton has maintained a consistent account for nearly 50 years; and no financial motive was established at the time of the incident."
+      },
+      {
+        "label": "Psychological Episode",
+        "credibility": "very-low",
+        "description": "Some skeptics proposed Walton wandered off after being startled. This does not account for the six independent witnesses who observed the beam strike, Walton's 10-pound weight loss over five days, or the consistency of his account across five decades."
+      },
+      {
+        "label": "Genuine CE4 Encounter",
+        "credibility": "medium",
+        "description": "APRO and MUFON investigators, along with Stanton Friedman and John Mack, concluded that six independent eyewitnesses to the initial event, five passed polygraphs, and Walton's consistent long-term account meets the evidentiary threshold for a genuine anomalous encounter."
+      }
+    ],
+    "competing_analyses": [
+      "Philip Klass proposed the crew was lying for financial gain. APRO investigators countered that the National Enquirer prize was not announced until after the incident, that the failed early polygraph was administered by an inexperienced examiner, and that Cy Gilson's DPS-administered examinations were professionally conducted and strongly passed.",
+      "Stanton Friedman reviewed the polygraph methodology and concluded this case is uniquely significant - no other CE4 case has six independent witnesses to the craft and the abduction-initiating event.",
+      "The 1993 film Fire in the Sky altered many details of Walton's account for dramatic effect; Walton has consistently noted the film's depiction differs from his actual account. Critiques based on the film rather than Walton's own testimony are therefore unreliable.",
+      "John Mack reviewed the Walton account in the context of his CE4 research and noted structural similarities to accounts from his clinical subjects who had no prior knowledge of the Walton case."
+    ],
+    "sources": [
+      {
+        "title": "Fire in the Sky: The Walton Experience - Travis Walton (1993)",
+        "url": "https://www.amazon.com/dp/1569800855",
+        "type": "Book",
+        "notes": "Definitive first-person account with full event sequence and polygraph documentation"
+      },
+      {
+        "title": "NICAP - Travis Walton Case Documentation",
+        "url": "http://www.nicap.org/751105dir.htm",
+        "type": "Research",
+        "notes": "Case file with polygraph records and crew witness statements"
+      },
+      {
+        "title": "APRO Bulletin - Walton Case Investigation (1976)",
+        "url": "https://www.nicap.org",
+        "type": "Investigation Report",
+        "notes": "APRO formal investigation report"
+      }
+    ]
+  },
+  {
+    "id": "cash-landrum-1980",
+    "name": "Cash-Landrum Incident",
+    "date": "December 29, 1980",
+    "location": "Huffman, Texas",
+    "country": "United States",
+    "category": "close-encounter",
+    "evidence_tier": "tier-2",
+    "classification_status": "unresolved",
+    "summary": "Betty Cash (51), Vickie Landrum (57), and Vickie's grandson Colby Landrum (7) encountered a diamond-shaped craft emitting intense heat and flames while driving on FM 1485 northeast of Houston, Texas. The craft was surrounded by approximately 23 CH-47 Chinook military helicopters. All three witnesses developed symptoms consistent with acute radiation syndrome in the hours and days following: nausea, vomiting, hair loss, skin blistering, and eye damage. Betty Cash required hospitalization and suffered lasting health effects until her death in 1998. The witnesses filed a $20 million lawsuit against the US government in 1981; the case was dismissed in 1986 because the government denied ownership of the craft. The case remains the most medically documented UAP-related injury case in the United States.",
+    "tags": [
+      "close-encounter",
+      "physical-effects",
+      "radiation-injury",
+      "military-helicopters",
+      "legal-action",
+      "Texas",
+      "multi-witness"
+    ],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: December 29, 1980, approximately 9:00 PM CST",
+        "Location: FM 1485 near Huffman, Texas (northeast of Houston)",
+        "Witnesses: Betty Cash (51), Vickie Landrum (57), Colby Landrum (7)",
+        "Betty and Vickie had attended a bingo game; driving home on FM 1485 through pine forest",
+        "Diamond-shaped craft observed hovering over the road, approximately 25 feet above tree line",
+        "Craft emitted intense heat and intermittent bursts of flame from its base",
+        "Betty exited the vehicle; the car hood became too hot to touch",
+        "All three witnesses observed approximately 23 large CH-47 Chinook helicopters surrounding the craft",
+        "John F. Schuessler (aerospace engineer, McDonnell Douglas) and MUFON investigator documented the case within days",
+        "Betty Cash hospitalized January 3, 1981; symptoms included large fluid-filled blisters, hair loss, nausea, vision impairment",
+        "Betty Cash: diagnosed with tumor in 1981; suffered recurring health crises; died December 29, 1998 - 18 years to the day after the encounter",
+        "Vickie Landrum: hair loss, skin lesions, eye damage, chronic nausea following the encounter",
+        "A separate married couple - Mr. and Mrs. Jerry McDonald - independently reported seeing a large diamond-shaped object and helicopters on the same night",
+        "MUFON investigators confirmed 12 independent witnesses who saw helicopters in the area that night",
+        "Cash and Landrum filed a $20 million lawsuit against the US government in 1981",
+        "Case dismissed August 21, 1986: US Army, Air Force, and NASA all denied ownership of the craft"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "MUFON investigation report - John F. Schuessler (January 1981)",
+        "Medical records: Betty Cash hospitalization, Hermann Hospital, Houston (January 1981)",
+        "Medical records: Independent physician documentation of all three witnesses' symptoms",
+        "US District Court - Southern District of Texas: Cash and Landrum v. United States, Case No. H-81-2072 (filed 1981, dismissed 1986)",
+        "Court depositions: US Army, Air Force, and NASA denying ownership of the craft",
+        "John F. Schuessler - UFO-Related Human Physiological Effects (1996)",
+        "Independent witness reports: Jerry and Naomi McDonald; 12 additional helicopter witnesses"
+      ],
+      "physical": [
+        "Betty Cash: large fluid-filled blisters across exposed skin; partial hair loss; corneal and eyelid damage; blood-cell count consistent with radiation exposure",
+        "Vickie Landrum: hair loss; multiple skin lesions; eye inflammation; persistent vision issues",
+        "Colby Landrum: temporary hair thinning; skin lesions (least severe of the three)",
+        "Car hood: reported hot enough to blister skin when touched after the encounter"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Betty Cash",
+        "role": "Primary witness; most severely injured",
+        "type": "civilian",
+        "testimony": "It was as big as a water tower. A diamond shape with flames coming out the bottom. It lit up the whole road. The heat was tremendous - I put my hand on the car and pulled it right back because the metal burned me. Helicopters were all around it. Big ones - military. Then it moved off and they all followed it."
+      },
+      {
+        "name": "Vickie Landrum",
+        "role": "Secondary witness; grandmother of Colby Landrum",
+        "type": "civilian",
+        "testimony": "I told Colby to get down and not look at it. It was so bright. The heat was like standing in front of an open oven. After it left I noticed my eyes burned and my skin felt like sunburn."
+      },
+      {
+        "name": "Jerry McDonald",
+        "role": "Independent civilian witness; observed from a separate location on the same night",
+        "type": "civilian",
+        "testimony": "My wife and I both saw it. A large diamond-shaped object and a bunch of big military helicopters flying around it like they were escorting it. We watched it for several minutes."
+      }
+    ],
+    "hypotheses": [
+      {
+        "label": "US Government Classified Craft (nuclear-powered)",
+        "credibility": "medium",
+        "description": "The presence of approximately 23 CH-47 Chinooks strongly suggests military involvement. Researchers including Schuessler have proposed a classified US nuclear-powered experimental aircraft in distress being escorted by military helicopters. Radiation symptoms are consistent with exposure to an unshielded nuclear heat source. No documentation of such a craft has been produced despite FOIA requests, congressional inquiries, and court proceedings."
+      },
+      {
+        "label": "Soviet Experimental Craft",
+        "credibility": "very-low",
+        "description": "A Soviet craft operating over suburban Houston surrounded by US military helicopters is not credible. If Soviet, the military response would have been interdiction, not escort."
+      },
+      {
+        "label": "Mass Hallucination",
+        "credibility": "very-low",
+        "description": "Three witnesses, medical documentation of radiation-consistent injuries, 12 independent helicopter witnesses, and a formal US federal court proceeding preclude any psychological explanation."
+      },
+      {
+        "label": "Unknown Non-Human Craft",
+        "credibility": "medium",
+        "description": "The radiation-consistent injury pattern, the scale of the military helicopter response, and the government's inability to explain the craft in court leave open the possibility of a non-human craft being monitored by US military assets."
+      }
+    ],
+    "competing_analyses": [
+      "John F. Schuessler (aerospace engineer, MUFON) investigated within days and maintained involvement for decades. His 1996 monograph UFO-Related Human Physiological Effects remains the primary analytical reference for the case.",
+      "The US federal court proceedings produced a remarkable record: the US Army, Air Force, and NASA all submitted depositions denying ownership. Judge Ross Sterling dismissed the case without prejudice on August 21, 1986 - finding insufficient evidence to establish government ownership, not finding that the government was uninvolved.",
+      "Betty Cash's death on December 29, 1998 - exactly 18 years to the day after the encounter - was noted by researchers as consistent with chronic radiation exposure sequelae.",
+      "Researcher Antonio Huneeus has noted that the CH-47 Chinook identification is significant because the CH-47 is a heavy-lift transport with no weapons systems - its role appears to have been monitoring or escort rather than interdiction."
+    ],
+    "sources": [
+      {
+        "title": "UFO-Related Human Physiological Effects - John F. Schuessler (1996)",
+        "url": "https://www.amazon.com/dp/1575100134",
+        "type": "Book",
+        "notes": "Comprehensive documentation of the Cash-Landrum case with full medical records and investigation history"
+      },
+      {
+        "title": "MUFON - Cash-Landrum Case Investigation File",
+        "url": "https://www.mufon.com",
+        "type": "Investigation Report",
+        "notes": "MUFON primary investigation documents from 1981 onward"
+      },
+      {
+        "title": "Cash and Landrum v. United States - Federal Court Records (1981-1986)",
+        "url": "https://www.pacer.gov",
+        "type": "Legal Record",
+        "notes": "US District Court Southern District of Texas; case H-81-2072"
+      }
+    ]
+  },
+  {
+    "id": "trans-en-provence-1981",
+    "name": "Trans-en-Provence Landing",
+    "date": "January 8, 1981",
+    "location": "Trans-en-Provence, Var, France",
+    "country": "France",
+    "category": "close-encounter",
+    "evidence_tier": "tier-1",
+    "classification_status": "unresolved",
+    "summary": "Renato Niccolai, a 55-year-old retired contractor, observed a saucer-shaped craft descend and land briefly on the terrace of his property in Trans-en-Provence, France, before departing at high speed. The landing left a circular imprint approximately 2.5 meters in diameter with concentric rings. Within days, GEPAN - the official French government UAP investigation group operating under CNES (the French space agency) - launched a formal investigation. Plant samples and soil were collected and analyzed by Dr. Michel Bounias at the National Institute for Agronomic Research (INRA). Laboratory analysis found statistically significant abnormalities: reduced chlorophyll content (38-50% reduction), altered pigment ratios, and soil crystalline structure changes consistent with electromagnetic heating. GEPAN's official report concluded that a physical phenomenon of unknown origin had affected the site. The case remains the most thoroughly documented physical trace UAP landing case, validated by an official national government scientific investigation.",
+    "tags": [
+      "physical-trace",
+      "landing",
+      "GEPAN-investigated",
+      "France",
+      "scientific-analysis",
+      "soil-evidence",
+      "plant-analysis",
+      "government-investigation"
+    ],
+    "insider_connections": [],
+    "overview": {
+      "key_facts": [
+        "Date: January 8, 1981, approximately 5:00 PM",
+        "Location: Private terrace, Trans-en-Provence, Var department, southern France",
+        "Witness: Renato Niccolai (55), retired contractor, working in his garden when craft appeared",
+        "Craft described as saucer-shaped, lead/grey colored, approximately 1.5-2 meters tall, 2.5 meters in diameter",
+        "Craft descended from the northeast, landed briefly (approximately 30-45 seconds), then departed vertically at high speed",
+        "Niccolai noted a whistling sound and felt a breeze during the landing",
+        "Circular landing trace approximately 2.4-2.5 meters diameter, with two concentric rings visible",
+        "Niccolai reported to local gendarmerie the same evening",
+        "GEPAN (Groupement d'Etudes des Phenomenes Aerospatiaux) investigators arrived within days",
+        "Dr. Michel Bounias (biochemist, INRA) conducted plant analysis",
+        "Plant analysis: alfalfa (Medicago minima) from the landing trace showed 38-50% chlorophyll reduction vs. control plants from adjacent areas",
+        "Soil analysis: crystalline structure changes consistent with heating to approximately 300-600 degrees Celsius",
+        "GEPAN issued official Technical Note No. 16 concluding the physical data were unexplained",
+        "The Sturrock Panel (Stanford, 1997) cited Trans-en-Provence as the strongest physical trace case in the world literature",
+        "Case remains the only UAP physical trace case validated by a national government scientific laboratory under official protocols"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        "GEPAN Technical Note No. 16 (1981) - official French government investigation report",
+        "Gendarmerie report - Trans-en-Provence, January 8, 1981",
+        "Dr. Michel Bounias - INRA laboratory analysis report: plant sample biochemistry (1981)",
+        "GEPAN soil analysis report: crystalline structure and thermal effects",
+        "GEPAN witness interview transcripts - Renato Niccolai (1981)",
+        "Journal of Scientific Exploration - Velasco and Bounias (1990)",
+        "Sturrock Panel review (1997) - cited Trans-en-Provence as strongest physical trace case in world literature"
+      ],
+      "physical": [
+        "Circular landing imprint: 2.4-2.5 meter diameter, two concentric rings, depressed soil",
+        "Alfalfa plant samples from trace: 38-50% chlorophyll reduction (a and b pigments) relative to control plants",
+        "Plant phosphate markers: statistically significant abnormalities in trace samples",
+        "Soil samples: crystalline structure changes consistent with rapid heating to 300-600 degrees Celsius",
+        "Trace photographed and measured by gendarmerie and GEPAN investigators within 24 hours"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Renato Niccolai",
+        "role": "Retired contractor; sole witness",
+        "type": "civilian",
+        "testimony": "I heard a soft whistling sound. I turned and saw this craft - it looked like two saucers put together - descending towards my terrace. It landed on the lower terrace. I froze. After perhaps half a minute it rose up very fast and was gone. I went to look and there was a circle in the soil where it had been. The ground was compressed. I told my wife and then called the gendarmerie."
+      }
+    ],
+    "hypotheses": [
+      {
+        "label": "Hoax or Fabricated Physical Trace",
+        "credibility": "very-low",
+        "description": "GEPAN investigators found Niccolai a credible witness with no apparent motive to fabricate. The trace was documented by gendarmerie the same evening before any manipulation was possible. The laboratory analysis of plant biochemistry cannot be replicated by simple mechanical trace-making; the chlorophyll degradation pattern requires a specific unusual energy input."
+      },
+      {
+        "label": "Helicopter Downwash or Conventional Aircraft",
+        "credibility": "very-low",
+        "description": "The circular trace geometry, the biochemical effects on plant tissue, and the crystalline soil changes are not consistent with rotor downwash. No flight was logged over Trans-en-Provence at the time."
+      },
+      {
+        "label": "Chemical Spill or Ground Treatment",
+        "credibility": "very-low",
+        "description": "The chlorophyll reduction gradient in a circle matching the trace diameter is not consistent with a topical chemical spill, which would produce diffuse boundaries and different marker profiles."
+      },
+      {
+        "label": "Physical Landing of an Unknown Craft",
+        "credibility": "high",
+        "description": "GEPAN's official Technical Note No. 16 concluded that a real physical phenomenon of unknown origin had affected the landing site. Dr. Bounias' analysis found the biochemical changes unprecedented and unreproducible by any known conventional mechanism. The Sturrock Panel (1997) cited Trans-en-Provence as the strongest physical trace case in the documented UAP literature."
+      }
+    ],
+    "competing_analyses": [
+      "GEPAN Technical Note No. 16 states explicitly that its analysis found 'a physical phenomenon of truly unusual nature' affecting the landing site. GEPAN operated under CNES (the French space agency) with full scientific protocols - not a civilian organization.",
+      "The Sturrock Panel - convened in 1997 by Stanford physicist Peter Sturrock, composed of nine physical scientists - concluded Trans-en-Provence contained the strongest physical trace evidence of any case reviewed. Published in the Journal of Scientific Exploration (1997).",
+      "Skeptic analysis has focused on the single-witness sighting. Researchers including Jacques Vallee have responded that the physical evidence does not depend on the witness account alone - the trace and biochemical effects are independently documentable physical facts.",
+      "Jacques Vallee, in Confrontations (1990), provided a detailed analysis and concluded it was one of the most rigorously documented UAP physical effect cases in the global research literature."
+    ],
+    "sources": [
+      {
+        "title": "GEPAN Technical Note No. 16 (1981)",
+        "url": "https://www.cnes-geipan.fr/en/geipan/archives",
+        "type": "Government Report",
+        "notes": "Official French government GEPAN investigation report; primary source"
+      },
+      {
+        "title": "Journal of Scientific Exploration - Bounias and Velasco (1990)",
+        "url": "https://www.scientificexploration.org/journal",
+        "type": "Academic Paper",
+        "notes": "Peer-reviewed publication of the INRA plant biochemistry analysis"
+      },
+      {
+        "title": "Confrontations - Jacques Vallee (1990)",
+        "url": "https://www.amazon.com/dp/0345369092",
+        "type": "Book",
+        "notes": "Includes detailed Trans-en-Provence case analysis and Vallee's investigation"
+      },
+      {
+        "title": "CNES-GEIPAN Archives",
+        "url": "https://www.cnes-geipan.fr/en/geipan/archives",
+        "type": "Government Archive",
+        "notes": "French space agency UAP archives; GEPAN case files"
       }
     ]
   }
