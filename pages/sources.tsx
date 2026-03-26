@@ -561,6 +561,155 @@ const Sources: NextPage = () => {
             coverage="September 9, 2025"
             notes="Used for: Dylan Borland."
           />
+
+          {/* Travis Walton */}
+          <SourceCard
+            name="Fire in the Sky: The Walton Experience (Walton, 1993)"
+            url="https://www.amazon.com/dp/1569800855"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Travis Walton's definitive first-person memoir of the November 5, 1975 abduction incident near Snowflake, Arizona (Marlowe & Company, 1993). The primary source for all event chronology, aboard-craft account, and polygraph documentation in the Walton profile."
+            notes="Used for: Travis Walton."
+          />
+
+          <SourceCard
+            name="NICAP Case Report - Travis Walton Abduction (1975)"
+            url="https://www.nicap.org/751105dir.htm"
+            type="Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="NICAP's contemporaneous investigation file for the November 1975 Walton case, including the Arizona Department of Public Safety polygraph summary for the six crew witnesses and initial field investigation notes."
+            notes="Used for: Travis Walton."
+          />
+
+          <SourceCard
+            name="UFO Evidence - Travis Walton Case Documentation"
+            url="https://www.ufoevidence.org/cases/case311.htm"
+            type="Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="Compiled case documentation for the Walton incident including polygraph records, crew witness statements, and the physician examination notes from Walton's return. Secondary reference used to cross-verify the polygraph timeline and crew corroboration record."
+            notes="Used for: Travis Walton."
+          />
+
+          {/* Budd Hopkins */}
+          <SourceCard
+            name="Missing Time: A Documented Study of UFO Abductions (Hopkins, 1981)"
+            url="https://www.amazon.com/dp/0345302974"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Hopkins' foundational CE4 research text introducing the 'missing time' framework and hypnotic regression methodology (Richard Marek Publishers, 1981). The primary source for Hopkins' career timeline, research methodology, and foundational contribution to abduction research."
+            notes="Used for: Budd Hopkins."
+          />
+
+          <SourceCard
+            name="Intruders: The Incredible Visitations at Copley Woods (Hopkins, 1987)"
+            url="https://www.amazon.com/dp/0345341392"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Hopkins' New York Times bestseller documenting the 'Kathie Davis' case (Random House, 1987). Used to document the 1987 timeline entry and the CBS miniseries adaptation that followed. Secondary source for Hopkins' research methodology."
+            notes="Used for: Budd Hopkins."
+          />
+
+          <SourceCard
+            name="Witnessed: The True Story of the Brooklyn Bridge UFO Abductions (Hopkins, 1996)"
+            url="https://www.amazon.com/dp/0671523201"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Hopkins' most comprehensive single CE4 case study, documenting the Linda Cortile case with multiple claimed witnesses (Pocket Books, 1996). Primary source for the 1996 key event and Hopkins' research legacy section."
+            notes="Used for: Budd Hopkins."
+          />
+
+          {/* Roger Leir */}
+          <SourceCard
+            name="The Aliens and the Scalpel (Leir, 2nd ed. 2005)"
+            url="https://www.amazon.com/dp/0926524585"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Dr. Roger Leir's primary research monograph documenting 17 implant removal surgeries, laboratory analysis methodology, and anomalous findings including isotopic ratio data from UC San Diego and absence of inflammatory response (Granite Publishing, expanded 2005 edition). Primary source for the Leir profile."
+            notes="Used for: Dr. Roger Leir."
+          />
+
+          <SourceCard
+            name="Casebook: Alien Implants (Leir, 2000)"
+            url="https://www.amazon.com/dp/0440236886"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Leir's secondary case documentation volume expanding on the surgical procedures and materials analysis results from additional implant removal cases (Dell, 2000). Used to verify the full procedure count and analysis timeline documented in the Leir profile."
+            notes="Used for: Dr. Roger Leir."
+          />
+
+          <SourceCard
+            name="A&S Research Inc. Documentation Archive"
+            url="https://www.alienscalpel.com/"
+            type="Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="Primary institutional archive for Leir's documented case record, surgery films, and laboratory analysis results maintained by A&S Research Inc. Reference source for procedure count, specimen custodian chain, and analysis laboratory attribution."
+            notes="Used for: Dr. Roger Leir."
+          />
+
+          {/* Betty and Barney Hill */}
+          <SourceCard
+            name="The Interrupted Journey (Fuller, 1966)"
+            url="https://www.amazon.com/dp/0425032051"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="John Fuller's landmark account of the September 1961 Hill encounter, written with Betty and Barney Hill's full cooperation and based directly on Dr. Benjamin Simon's hypnosis session transcripts (Dial Press, 1966). The foundational primary source for all timeline, entity account, and physical anomaly documentation in the Hill profile."
+            notes="Used for: Betty and Barney Hill."
+          />
+
+          <SourceCard
+            name="Captured! The Betty and Barney Hill UFO Experience (Friedman & Marden, 2007)"
+            url="https://www.amazon.com/dp/1564149102"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Comprehensive modern investigation of the Hill case by Stanton Friedman and Betty's niece Kathleen Marden (New Page Books, 2007). Used as the primary secondary source for credibility analysis, physical evidence documentation, and the polygraph/star map sections of the Hill profile."
+            notes="Used for: Betty and Barney Hill."
+          />
+
+          <SourceCard
+            name="NICAP Case File - Hill Abduction (1961)"
+            url="https://www.nicap.org/611919dir.htm"
+            type="Research Archive"
+            typeColor="bg-amber-100 text-amber-700"
+            description="NICAP's original investigation records including Walter Webb's field report on the Hill encounter from October 1961. Used to verify the initial investigation timeline and NICAP's credibility assessment of the case."
+            notes="Used for: Betty and Barney Hill."
+          />
+
+          <SourceCard
+            name="The Zeta Reticuli Incident - Astronomy Magazine (1974-1975)"
+            url="https://www.nicap.org/zetaret.htm"
+            type="Academic Article"
+            typeColor="bg-teal-100 text-teal-700"
+            description="Marjorie Fish's star map analysis identifying Betty Hill's hypnotic sketch as a possible Zeta Reticuli vantage point, originally published in the MUFON UFO Journal (1974) and reprinted in Astronomy Magazine (1975). Primary source for the star map claim and credibility sections of the Hill profile."
+            notes="Used for: Betty and Barney Hill."
+          />
+
+          {/* John Lear */}
+          <SourceCard
+            name="The John Lear Statement (1987)"
+            url="https://www.bibliotecapleyades.net/sociopolitica/esp_sociopol_mj12_6.htm"
+            type="Primary Document"
+            typeColor="bg-red-100 text-red-700"
+            description="Lear's December 1987 disclosure document distributed via CompuServe - one of the first internet-distributed UAP disclosure texts. Archived online. Primary source for the claims section and the 1987 key event documentation in the Lear profile."
+            notes="Used for: John Lear."
+          />
+
+          <SourceCard
+            name="George Knapp - John Lear Interview, KLAS-TV (1989)"
+            url="https://www.youtube.com/watch?v=n0Ew0CPQQRU"
+            type="Television Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="KLAS-TV archive of George Knapp's interviews with John Lear in the period surrounding the Bob Lazar disclosures (1989-1990). Primary video record of Lear's claims, his role in facilitating the Lazar introduction, and the corroboration he provided for Lazar's S-4 account."
+            notes="Used for: John Lear."
+          />
+
+          <SourceCard
+            name="UFOs and the National Security State, Vol. 2 (Dolan, 2009)"
+            url="https://www.amazon.com/dp/0967799511"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Richard Dolan's continuation of his National Security State history covering 1973-1991, including the most measured scholarly analysis of Lear's role in the 1980s disclosure community and his relationship to the AFOSI disinformation framework (Richard Dolan Press, 2009)."
+            notes="Used for: John Lear."
+          />
         </section>
 
         {/* Government programs sources */}
