@@ -193,6 +193,17 @@ export const graphData: GraphData = {
     // Additional cases for Fife Symington
     { id: 'phoenix-lights',      name: 'Phoenix Lights (1997)',     type: 'case',         val: 4 },
 
+    // Additional cases (batch 3 — sourced from data/cases.json)
+    // Note: phoenix-lights already exists. jal-flight-1628 already exists (gets new edge below).
+    { id: 'belgian-ufo-wave',       name: 'Belgian UFO Wave (1989-90)',    type: 'case', val: 3 },
+    { id: 'uss-omaha-2019',         name: 'USS Omaha USO Incident (2019)', type: 'case', val: 3 },
+    { id: 'exeter-1965',            name: 'Exeter Incident (1965)',        type: 'case', val: 3 },
+    { id: 'loch-raven-dam-1958',    name: 'Loch Raven Dam (1958)',         type: 'case', val: 2 },
+    { id: 'socorro-1964',           name: 'Socorro / Zamora (1964)',       type: 'case', val: 4 },
+    { id: 'shag-harbour-1967',      name: 'Shag Harbour Incident (1967)', type: 'case', val: 3 },
+    { id: 'ohare-airport-2006',     name: "O'Hare Airport Incident (2006)", type: 'case', val: 3 },
+    { id: 'stephenville-tx-2008',   name: 'Stephenville, TX (2008)',      type: 'case', val: 3 },
+
     // Private defense contractors (sourced from data/contractors.json)
     // Note: EG&G already exists as 'egg-corporation' (organization) — not duplicated here.
     { id: 'lockheed-martin',   name: 'Lockheed Martin',              type: 'contractor', val: 4 },
@@ -935,5 +946,44 @@ export const graphData: GraphData = {
     // SAIC
     { source: 'saic',             target: 'david-grusch',             label: 'named alongside other prime defense contractors as alleged SAP custodian in Grusch disclosure' },
     { source: 'saic',             target: 'dia-organization',         label: 'extensive DIA and intelligence community analytical and technology contracts' },
+
+    // Additional case connections (batch 3)
+    // Belgian UFO Wave
+    { source: 'belgian-ufo-wave',     target: 'jacques-vallee',         label: 'Vallee cited the Belgian wave as among the most rigorously documented mass-sighting events in the modern era' },
+    { source: 'belgian-ufo-wave',     target: 'nicap',                  label: 'documented and analyzed by civilian investigative organizations including NICAP and SOBEPS' },
+
+    // USS Omaha USO Incident
+    { source: 'uss-omaha-2019',       target: 'tim-gallaudet',          label: 'Gallaudet, former Navy oceanographer and deputy NOAA administrator, cited the USS Omaha transmedium footage as high-credibility evidence' },
+    { source: 'uss-omaha-2019',       target: 'uap-task-force',         label: 'footage reviewed by the DoD UAP Task Force as part of its 2021 preliminary assessment data set' },
+    { source: 'uss-omaha-2019',       target: 'uaptf-preliminary-assessment', label: 'incident data contributed to the 2021 UAPTF preliminary assessment' },
+
+    // Exeter Incident
+    { source: 'exeter-1965',          target: 'j-allen-hynek',          label: 'Hynek investigated the Exeter case for Project Blue Book; it became one of his cited examples of unexplained high-quality reports' },
+    { source: 'exeter-1965',          target: 'nicap',                  label: 'NICAP conducted an independent investigation and confirmed multiple independent witness accounts' },
+    { source: 'exeter-1965',          target: 'project-blue-book',      label: 'investigated and officially listed as unresolved in Blue Book records' },
+
+    // Loch Raven Dam
+    { source: 'loch-raven-dam-1958',  target: 'j-allen-hynek',          label: 'Hynek reviewed the Loch Raven Dam case as part of Blue Book; multi-witness electromagnetic effects made it a notable unsolved case' },
+    { source: 'loch-raven-dam-1958',  target: 'project-blue-book',      label: 'investigated under Project Blue Book; electromagnetic effects and car engine failure documented' },
+
+    // Socorro / Zamora
+    { source: 'socorro-1964',         target: 'j-allen-hynek',          label: 'Hynek investigated the Socorro landing personally; described it as the most credible close-encounter physical-trace case in the Blue Book files' },
+    { source: 'socorro-1964',         target: 'project-blue-book',      label: 'investigated by Project Blue Book; officially listed as unidentified — one of the few cases Condon investigators could not explain' },
+    { source: 'socorro-1964',         target: 'nicap',                  label: 'NICAP conducted parallel investigation; confirmed soil disturbance and independent witness corroboration' },
+
+    // Shag Harbour
+    { source: 'shag-harbour-1967',    target: 'nicap',                  label: 'one of the few cases involving documented Canadian government investigation; NICAP cross-referenced the official RCMP and DND records' },
+    { source: 'shag-harbour-1967',    target: 'donald-keyhoe',          label: 'Keyhoe cited Shag Harbour as a prime example of governments tracking UAP with physical evidence under secrecy' },
+
+    // O'Hare Airport 2006
+    { source: 'ohare-airport-2006',   target: 'leslie-kean',            label: "Kean's Chicago Tribune investigation of the O'Hare incident — published Jan 1, 2007 — was among the most widely read UAP news stories of the decade and triggered renewed public debate" },
+    { source: 'ohare-airport-2006',   target: 'mufon',                  label: 'MUFON conducted field investigation and collected witness statements from United Airlines personnel' },
+
+    // Stephenville TX
+    { source: 'stephenville-tx-2008', target: 'leslie-kean',            label: "Kean covered the Stephenville encounters as part of her systematic documentation of high-credibility military and aviation UAP reports" },
+    { source: 'stephenville-tx-2008', target: 'mufon',                  label: 'MUFON deployed its largest field investigation team to Stephenville; collected 200+ witness accounts and radar data' },
+
+    // JAL Flight 1628 (already in graph — add missing figure edge)
+    { source: 'jal-flight-1628',      target: 'richard-dolan',          label: 'Dolan cited JAL 1628 as one of the most carefully documented aviation UAP encounters on record, with FAA radar corroboration' },
   ],
 };
