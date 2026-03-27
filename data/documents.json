@@ -1750,14 +1750,14 @@
         "label": "Original Capture",
         "description": "FLIR1 recorded during Nimitz carrier strike group training; Gimbal and GoFast recorded by USS Theodore Roosevelt aircrew during East Coast operations.",
         "date": "Nov 2004 / Jan 2015",
-        "type": "origin"
+        "type": "creation"
       },
       {
         "id": "classified-hold",
         "label": "Classified Hold",
         "description": "Footage held internally by the Navy; not released to the public. Elizondo and others advocated internally for transparency.",
         "date": "2004-2017",
-        "type": "classified"
+        "type": "classification"
       },
       {
         "id": "ttsa-release",
@@ -1831,34 +1831,39 @@
     ],
     "provenance_chain": [
       {
+        "id": "grusch-complaint-filed",
         "label": "Complaint Filed",
         "date": "2022",
         "description": "David Grusch filed a classified complaint with the ICIG detailing allegations of a covert UAP retrieval and reverse-engineering program, drawing on his role as NGA representative to the UAP Task Force.",
-        "node_type": "origin"
+        "type": "creation"
       },
       {
+        "id": "grusch-icig-investigation",
         "label": "ICIG Investigation",
         "date": "Late 2022 - Apr 2023",
         "description": "ICIG conducted an investigation into the complaint's merits, interviewing witnesses and reviewing classified program access records cited by Grusch.",
-        "node_type": "classified"
+        "type": "classification"
       },
       {
+        "id": "grusch-credible-urgent",
         "label": "Credible and Urgent Determination",
         "date": "April 2023",
         "description": "ICIG formally determined the complaint was both credible and urgent under the IC Whistleblower Protection Act, obligating transmission to congressional oversight committees.",
-        "node_type": "transfer"
+        "type": "transfer"
       },
       {
+        "id": "grusch-dni-declination",
         "label": "DNI Declination",
         "date": "Spring 2023",
         "description": "Director of National Intelligence declined to forward the complaint to Congress, citing classification concerns - triggering the ICIG's independent transmission authority.",
-        "node_type": "transfer"
+        "type": "transfer"
       },
       {
+        "id": "grusch-congressional-transmission",
         "label": "Congressional Transmission",
         "date": "July 2023",
         "description": "ICIG transmitted the complaint directly to the House and Senate intelligence committees. Grusch subsequently received authorization to discuss it in unclassified settings.",
-        "node_type": "public"
+        "type": "public"
       }
     ]
   }
