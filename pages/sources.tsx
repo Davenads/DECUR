@@ -1092,6 +1092,25 @@ const Sources: NextPage = () => {
             notes="Used for: Grusch ICIG Complaint (2023)."
           />
 
+          {/* Grusch ICIG Determination */}
+          <SourceCard
+            name="ICIG Statement on Grusch Complaint and Referral (2023)"
+            url="https://www.dni.gov/files/ICIG/Documents/ICIG%20News/ICIG%20Statement%20on%20Grusch%20Complaint%20and%20Referral.pdf"
+            type="Government Statement"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official ICIG public statement confirming the credible-and-urgent determination. Primary source for document metadata and legal threshold context."
+            notes="Used for: Grusch ICIG Whistleblower Determination."
+          />
+
+          <SourceCard
+            name="David Grusch Interview - NewsNation (2023)"
+            url="https://www.newsnation.com/politics-news/david-grusch-interview-ufo-whistleblower/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="First major public interview by Grusch explaining the complaint's background and his role in the UAP Task Force. Context source for significance and provenance."
+            notes="Used for: Grusch ICIG Whistleblower Determination."
+          />
+
           {/* Project Grudge Final Report */}
           <SourceCard
             name="The Report on Unidentified Flying Objects (Ruppelt, 1956)"

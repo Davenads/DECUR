@@ -1788,5 +1788,78 @@
         "type": "public"
       }
     ]
+  },
+  {
+    "id": "grusch-icig-determination-2023",
+    "name": "Grusch ICIG Whistleblower Determination",
+    "date": "April 2023 (transmitted to Congress July 2023)",
+    "issuing_authority": "Intelligence Community Inspector General (ICIG)",
+    "document_type": "whistleblower-complaint",
+    "authenticity_status": "confirmed-official",
+    "page_count": null,
+    "public_url": "https://www.dni.gov/files/ICIG/Documents/ICIG%20News/ICIG%20Statement%20on%20Grusch%20Complaint%20and%20Referral.pdf",
+    "summary": "The Intelligence Community Inspector General determined that David Grusch's formal whistleblower complaint - alleging a decades-long U.S. government program to retrieve and reverse-engineer non-human technology - was both \"credible and urgent\" under the Intelligence Community Whistleblower Protection Act. The ICIG transmitted the complaint to the congressional intelligence committees in July 2023 after the DNI declined to forward it. This formal determination represented the first official government acknowledgment that Grusch's extraordinary claims met the legal threshold for credibility, setting the stage for his July 2023 congressional testimony.",
+    "significance": "The ICIG's \"credible and urgent\" finding gave Grusch's allegations institutional legitimacy that no prior UAP whistleblower had achieved. By compelling transmission to Congress over the DNI's objection, it triggered the congressional oversight process that led to the July 26, 2023 House Oversight hearing - the most significant public UAP hearing since Project Blue Book. The determination established that at minimum, Grusch's claims were not frivolous, and that he had a reasonable basis for his beliefs based on his access to classified programs.",
+    "key_findings": [
+      "ICIG formally determined Grusch's complaint met the \"credible and urgent\" legal standard under the IC Whistleblower Protection Act",
+      "The DNI declined to transmit the complaint to Congress, prompting the ICIG to transmit it directly - an unusual procedural escalation",
+      "Grusch alleged the existence of a multi-decade program to retrieve and reverse-engineer non-human technology, with details derived from his role as NGA representative to the UAPTF",
+      "The determination covered both the UAP retrieval program allegations and Grusch's personal claims of retaliation by agency officials",
+      "The classified annex of the complaint reportedly contained specific program names, locations, and personnel involved in the alleged retrieval program",
+      "ICIG statement confirmed Grusch had proper authorization to make the disclosure and had followed legal whistleblower channels"
+    ],
+    "provenance": "Formal complaint filed by David Grusch through official Intelligence Community whistleblower channels; ICIG determination issued April 2023; transmitted to Senate and House intelligence committees July 2023 after DNI declined to forward.",
+    "insider_connections": [
+      {
+        "id": "david-grusch",
+        "note": "The complainant; NGA representative to the UAP Task Force whose allegations of a covert retrieval program were the subject of the ICIG determination."
+      },
+      {
+        "id": "karl-nell",
+        "note": "Retired Army Colonel and UAPTF colleague who provided corroborating testimony to the ICIG investigation supporting the credibility of Grusch's claims."
+      },
+      {
+        "id": "luis-elizondo",
+        "note": "Former AATIP director whose prior disclosures about classified UAP programs provided institutional context for the ICIG's credibility assessment."
+      }
+    ],
+    "limitations": [
+      "The full complaint and classified annex remain classified; only the ICIG's public statement confirming the determination is publicly available",
+      "\"Credible and urgent\" is a legal threshold determination, not an independent verification of the underlying factual claims",
+      "The specific programs, locations, and personnel named in the classified annex have not been publicly confirmed",
+      "The DNI's stated reasons for declining to forward the complaint have not been made public"
+    ],
+    "provenance_chain": [
+      {
+        "label": "Complaint Filed",
+        "date": "2022",
+        "description": "David Grusch filed a classified complaint with the ICIG detailing allegations of a covert UAP retrieval and reverse-engineering program, drawing on his role as NGA representative to the UAP Task Force.",
+        "node_type": "origin"
+      },
+      {
+        "label": "ICIG Investigation",
+        "date": "Late 2022 - Apr 2023",
+        "description": "ICIG conducted an investigation into the complaint's merits, interviewing witnesses and reviewing classified program access records cited by Grusch.",
+        "node_type": "classified"
+      },
+      {
+        "label": "Credible and Urgent Determination",
+        "date": "April 2023",
+        "description": "ICIG formally determined the complaint was both credible and urgent under the IC Whistleblower Protection Act, obligating transmission to congressional oversight committees.",
+        "node_type": "transfer"
+      },
+      {
+        "label": "DNI Declination",
+        "date": "Spring 2023",
+        "description": "Director of National Intelligence declined to forward the complaint to Congress, citing classification concerns - triggering the ICIG's independent transmission authority.",
+        "node_type": "transfer"
+      },
+      {
+        "label": "Congressional Transmission",
+        "date": "July 2023",
+        "description": "ICIG transmitted the complaint directly to the House and Senate intelligence committees. Grusch subsequently received authorization to discuss it in unclassified settings.",
+        "node_type": "public"
+      }
+    ]
   }
 ]

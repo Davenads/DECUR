@@ -215,6 +215,9 @@ export const graphData: GraphData = {
     { id: 'ohare-airport-2006',     name: "O'Hare Airport Incident (2006)", type: 'case', val: 3 },
     { id: 'stephenville-tx-2008',   name: 'Stephenville, TX (2008)',      type: 'case', val: 3 },
 
+    // Grusch ICIG determination
+    { id: 'grusch-icig-determination-2023', name: 'Grusch ICIG Determination (2023)', type: 'document', val: 5 },
+
     // New documents (batch 4)
     { id: 'uk-mod-ufo-files-2009', name: 'UK MoD UFO Files (1950-2009)', type: 'document', val: 4 },
     { id: 'pentagon-uap-video-release-2020', name: 'Pentagon UAP Video Release (2020)', type: 'document', val: 5 },
@@ -1135,5 +1138,12 @@ export const graphData: GraphData = {
     { source: 'pentagon-uap-video-release-2020', target: 'leslie-kean',    label: 'Kean co-authored the 2017 NYT article first publishing the TTSA videos; this release confirmed the footage was genuine' },
     { source: 'pentagon-uap-video-release-2020', target: 'nimitz-tic-tac', label: 'FLIR1 video confirmed as authentic footage from the November 2004 Nimitz Tic Tac encounter' },
     { source: 'pentagon-uap-video-release-2020', target: 'aatip',          label: 'videos were obtained and advocated for by AATIP under Elizondo; formal release retroactively validated program efforts' },
+
+    // Grusch ICIG Determination (2023) connections
+    { source: 'grusch-icig-determination-2023', target: 'david-grusch',    label: 'formal ICIG credible-and-urgent determination of Grusch whistleblower complaint' },
+    { source: 'grusch-icig-determination-2023', target: 'karl-nell',       label: 'Nell provided corroborating testimony to ICIG supporting credibility of Grusch claims' },
+    { source: 'grusch-icig-determination-2023', target: 'luis-elizondo',   label: 'prior AATIP disclosures provided institutional context for ICIG credibility assessment' },
+    { source: 'grusch-icig-determination-2023', target: 'uap-task-force',  label: 'Grusch complaint derived from his role as NGA representative to the UAPTF' },
+    { source: 'grusch-icig-determination-2023', target: 'aaro',            label: 'ICIG determination preceded and shaped the congressional oversight context in which AARO operated' },
   ],
 };
