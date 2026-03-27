@@ -236,6 +236,14 @@
         "date": "March 8, 2024",
         "description": "Unclassified report released publicly via media.defense.gov. A classified annex was delivered separately to congressional intelligence committees.",
         "type": "public"
+      },
+      {
+        "id": "aaro-vol1-kirkpatrick-resigns",
+        "label": "Kirkpatrick Resigns",
+        "date": "December 2023",
+        "description": "AARO founding director Dr. Sean Kirkpatrick resigns before the report is published, later writing a Washington Post op-ed suggesting UAP whistleblowers were being leveraged to obstruct legitimate oversight. His departure mid-production is material context for the report.",
+        "type": "transfer",
+        "branches_from": "aaro-vol1-production"
       }
     ]
   },
@@ -310,6 +318,14 @@
         "date": "September 14, 2023",
         "description": "Report released publicly via science.nasa.gov. Release coincided with appointment of Mark McInerney as NASA UAP research director in November 2023.",
         "type": "public"
+      },
+      {
+        "id": "nasa-uap-director-appointed",
+        "label": "NASA Appoints First UAP Director",
+        "date": "September 14, 2023",
+        "description": "Simultaneously with the study release, NASA announces Mark McInerney as the agency's first dedicated UAP research director - the institutional consequence of the report delivered on the same day as a deliberate NASA policy statement.",
+        "type": "public",
+        "branches_from": "nasa-uap-public-release"
       }
     ]
   },
@@ -525,6 +541,14 @@
         "date": "December 23, 2022",
         "description": "President Biden signed the FY2023 NDAA into law. AARO formally established with statutory mandate, budget authority, and annual congressional reporting requirements.",
         "type": "public"
+      },
+      {
+        "id": "ndaa-fy2023-aaro-established",
+        "label": "AARO Formally Established",
+        "date": "July 2023",
+        "description": "The All-domain Anomaly Resolution Office officially stands up with statutory mandate, budget authority, and congressional reporting requirements - the most concrete structural consequence of the FY2023 NDAA UAP provisions.",
+        "type": "public",
+        "branches_from": "ndaa-fy2023-signed"
       }
     ]
   },
