@@ -289,6 +289,11 @@
     "source": "gerb"
   },
   {
+    "term": "Close Encounters Classification (CE1-CE5)",
+    "definition": "A tiered classification system developed by astronomer and Project Blue Book scientific consultant J. Allen Hynek to categorize UAP sightings by proximity and type of interaction. CE1 (Close Encounter of the First Kind): visual sighting of a UAP within approximately 500 feet; no physical effects. CE2 (Close Encounter of the Second Kind): UAP interaction leaves physical evidence - ground traces, electromagnetic effects on vehicles, physiological effects on witnesses. CE3 (Close Encounter of the Third Kind): UAP with visible occupants or associated entities observed. CE4 (Close Encounter of the Fourth Kind): witness is abducted or directly interacted with by occupants; added by Hynek before his death in 1986 and formalized by researchers including Budd Hopkins and John Mack. CE5 (Close Encounter of the Fifth Kind): human-initiated or bilateral contact with NHI; associated with Steven Greer's CSETI methodology though the category is contested. The CE1-CE3 classifications are universally accepted in the research community. CE4 and CE5 are widely used but their epistemological status is debated.",
+    "source": "curated"
+  },
+  {
     "term": "COE",
     "definition": "Corps of Engineers - US Army Corps of Engineers, involved in design and construction of underground military facilities",
     "source": "gerb"
@@ -529,6 +534,11 @@
     "source": "gerb"
   },
   {
+    "term": "Fastwalker",
+    "definition": "NORAD and Space Command operational designation for objects detected by satellite and ground-based sensors entering or exiting Earth's atmosphere at high velocity - typically faster than any known ballistic missile or orbital decay trajectory. Distinguished from 'slowwalkers,' which follow conventional orbital mechanics. Fastwalker events are logged routinely; the data is classified. The term appears in declassified NORAD documents and has been cited by researchers including Dr. Steven Greer and in discussions of potential non-terrestrial objects. Distinct from conventional UAP in that fastwalkers are detected at extreme altitude by space surveillance assets rather than by aircraft radar or pilot observation.",
+    "source": "curated"
+  },
+  {
     "term": "FAP",
     "definition": "Peruvian Air Force - Peru's military air force",
     "source": "gerb"
@@ -717,6 +727,11 @@
     "source": "gerb"
   },
   {
+    "term": "Legacy Program",
+    "definition": "Intelligence community and DoD term of art for Special Access Programs (SAPs) established before the modern congressional oversight architecture - particularly before the 1970s post-Church Committee oversight reforms. Legacy programs are characterized by compartmentalization structures, funding mechanisms, and access control procedures that predate current Inspector General authorities, congressional notification requirements, and FISA-era oversight frameworks. In the UAP disclosure context, the term is central to David Grusch's 2023 congressional testimony and the Schumer-Rounds UAP Disclosure Act: both describe programs that may have been established in the 1940s-1960s and subsequently structured to resist normal oversight by accumulating layers of contractor compartmentalization and special program exemptions. The Wilson-Davis Memo describes the operational mechanism by which a legacy program could deny access even to the Director of the Defense Intelligence Agency.",
+    "source": "curated"
+  },
+  {
     "term": "LEO",
     "definition": "Low Earth Orbit - Orbital regime between approximately 160-2,000 km altitude; discussed in context of UAP detection capabilities and space-based sensor systems",
     "source": "curated"
@@ -767,6 +782,11 @@
     "source": "gerb"
   },
   {
+    "term": "Metamaterials",
+    "definition": "In materials science, engineered structures with electromagnetic or mechanical properties not found in naturally occurring materials - achieved through precise geometric patterning at scales smaller than the relevant wavelength rather than through chemical composition. In the UAP context, the term refers to alleged recovered materials exhibiting anomalous properties including isotopic ratios inconsistent with known terrestrial or natural processes, layered metallic structures of unknown fabrication method, and electromagnetic response characteristics outside the range of known materials. Luis Elizondo and Hal Puthoff have both referenced anomalous material samples in public forums; To The Stars Academy of Arts and Science (TTSA) claimed possession of samples described as metamaterials with unusual isotopic signatures. The Sturrock Panel (1998) addressed physical trace evidence including material samples. The two uses of the term - legitimate materials science and UAP crash retrieval claims - should not be conflated; the scientific validity of the UAP-specific claims has not been established through peer-reviewed publication.",
+    "source": "curated"
+  },
+  {
     "term": "MAW",
     "definition": "Marine Aircraft Wing - A major aviation unit of the United States Marine Corps",
     "source": "gerb"
@@ -815,6 +835,11 @@
     "term": "MOS",
     "definition": "Military Occupational Specialty - A code used by the military to identify a specific job or skill set",
     "source": "gerb"
+  },
+  {
+    "term": "Mosaic Theory",
+    "definition": "An intelligence law doctrine holding that individually unclassified pieces of information can be combined to reveal classified information - and therefore may be withheld under classification authority even when each element is unclassified on its own. In national security law, the government can deny FOIA requests citing mosaic theory if disclosure of otherwise unclassified data would allow an adversary to reconstruct a classified picture. In the UAP context, mosaic theory is the structural legal mechanism explaining why UAP data remains fragmented across dozens of agencies with no central aggregation: combining sensor data, incident locations, response protocols, and aircraft performance parameters from multiple sources could reveal classified capabilities or program locations. This doctrine directly explains the AARO access problem - why different agencies refuse to share UAP data with each other - and why David Grusch's aggregation of program fragments was itself treated as a security concern requiring an Inspector General complaint rather than normal reporting.",
+    "source": "curated"
   },
   {
     "term": "MRTFB",
@@ -1116,6 +1141,11 @@
     "source": "gerb"
   },
   {
+    "term": "Psychotronics",
+    "definition": "The study and alleged development of technology capable of affecting, influencing, or interacting with human consciousness, neurological function, or perception through non-conventional means - including electromagnetic, acoustic, or unknown field effects. Originating in Soviet military research programs during the Cold War, the term appeared in AAWSAP's research portfolio as documented in James Lacatski's 'Skinwalkers at the Pentagon' (2021): AAWSAP tasked contractors to research psychotronics as part of its broad anomalous phenomena mandate. The field overlaps with research into directed-energy effects on human biology, non-lethal weapons development (John Alexander's INSCOM work), and the neurological and psychological effects documented in UAP close encounter cases. Distinct from conventional neuroscience in that psychotronics research typically involves claimed mechanisms that have not been confirmed by peer-reviewed mainstream science.",
+    "source": "curated"
+  },
+  {
     "term": "R&D",
     "definition": "Research and Development - Military programs focused on developing new technologies and weapons systems",
     "source": "gerb"
@@ -1366,6 +1396,11 @@
     "term": "TOA",
     "definition": "Total Obligation Authority - Total Air Force budget authority",
     "source": "gerb"
+  },
+  {
+    "term": "Transmedium",
+    "definition": "Describes objects or vehicles observed transitioning between multiple physical domains - air, water, and space - without the structural, propulsion, or operational limitations that confine conventional aircraft to a single medium. The term has been adopted by AARO, the U.S. Navy, and congressional UAP oversight language to describe a documented class of UAP behavior. The USS Omaha incident (2019) is the canonical documented transmedium event: a spherical object was tracked by ship radar and observed by crew transitioning from airborne flight directly into the ocean at approximately 46 mph with no splash consistent with conventional entry, then disappearing from sonar. Transmedium behavior is categorized by AARO as one of the defining characteristics requiring investigation under the 'anomalous' classification in contrast to UAP that remain in a single domain.",
+    "source": "curated"
   },
   {
     "term": "TR-3B",
