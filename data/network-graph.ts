@@ -215,6 +215,9 @@ export const graphData: GraphData = {
     { id: 'ohare-airport-2006',     name: "O'Hare Airport Incident (2006)", type: 'case', val: 3 },
     { id: 'stephenville-tx-2008',   name: 'Stephenville, TX (2008)',      type: 'case', val: 3 },
 
+    // New documents (batch 4)
+    { id: 'uk-mod-ufo-files-2009', name: 'UK MoD UFO Files (1950-2009)', type: 'document', val: 4 },
+
     // New cases (batch 4 — sourced from data/cases.json)
     { id: 'kenneth-arnold-1947',     name: 'Kenneth Arnold Sighting (1947)',          type: 'case', val: 4 },
     { id: 'betty-barney-hill-1961',  name: 'Betty & Barney Hill Abduction (1961)',     type: 'case', val: 4 },
@@ -1117,5 +1120,12 @@ export const graphData: GraphData = {
     { source: 'trans-en-provence-1981', target: 'gepan',             label: 'GEPAN/CNES conducted the official French government investigation; Technical Note No. 16 is the primary scientific record' },
     { source: 'trans-en-provence-1981', target: 'j-allen-hynek',     label: "Hynek's colleagues at CUFOS cited Trans-en-Provence alongside Socorro as the two strongest physical-trace close-encounter cases in the world literature" },
     { source: 'trans-en-provence-1981', target: 'jacques-vallee',    label: "Vallee conducted independent fieldwork analysis in Confrontations (1990) and concluded it is one of the most rigorously documented UAP physical effect cases in the global research literature" },
+
+    // UK MoD UFO Files (1950-2009) connections
+    { source: 'uk-mod-ufo-files-2009', target: 'nick-pope',          label: 'Pope ran the MoD UFO desk (1991-1994) that produced many of the released files; served as primary public communicator during the 2009 release' },
+    { source: 'uk-mod-ufo-files-2009', target: 'mod-ufo-desk',       label: 'the MoD UFO desk and its predecessor DI55 are the issuing authority for the operational investigation files in the collection' },
+    { source: 'uk-mod-ufo-files-2009', target: 'leslie-kean',        label: "Kean cited the DI55 files extensively in UFOs: Generals, Pilots and Government Officials (2010) as primary evidence of government-level UAP seriousness" },
+    { source: 'uk-mod-ufo-files-2009', target: 'rendlesham-forest',  label: 'the Rendlesham Forest 1980 incident files are included in the released collection; DI55 investigation and Charles Halt correspondence are part of the archive' },
+    { source: 'uk-mod-ufo-files-2009', target: 'richard-dolan',      label: 'Dolan analyzed the UK release within his UFOs and the National Security State series as the most comprehensive example of European government UAP concealment' },
   ],
 };

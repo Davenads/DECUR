@@ -1206,6 +1206,27 @@ const Sources: NextPage = () => {
             coverage="1993-1996 (events); 2009 (publication)"
             notes="Used for: Rockefeller UFO Briefing Document (1995)."
           />
+
+          {/* UK MoD UFO Files (1950-2009) */}
+          <SourceCard
+            name="The National Archives (UK) - UFO Files Collection"
+            url="https://www.nationalarchives.gov.uk/ufos/"
+            type="Government Archive"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="The National Archives (Kew) official landing page for the UK Ministry of Defence UFO files release, providing direct access to all 209 released files totaling approximately 52,000 pages. Includes the DI55 operational assessment files, Secretariat Air Staff correspondence, pilot reports, and civilian UAP reports covering 1950-2009. Primary source for the UK MoD UFO Files document entry."
+            coverage="1950-2009 (files); 2008-2013 (release)"
+            notes="Used for: UK Ministry of Defence UFO Files (1950-2009)."
+          />
+
+          <SourceCard
+            name="UFOs: Generals, Pilots and Government Officials Go on the Record - Leslie Kean (2010)"
+            url="https://www.amazon.com/dp/0307716848"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Kean's landmark 2010 investigative book draws directly on the UK National Archives release as one of its primary documentary sources. The DI55 assessments and MoD investigation files are central to Kean's argument that governments privately treated UAP as a serious intelligence and defense matter. Nick Pope contributed a chapter on the UK program. Primary secondary source for the UK MoD UFO Files document entry and for understanding how the release was received internationally."
+            coverage="2009-2010"
+            notes="Used for: UK Ministry of Defence UFO Files (1950-2009)."
+          />
         </section>
 
         {/* Glossary sources */}
