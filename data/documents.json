@@ -1944,5 +1944,83 @@
         "type": "archive"
       }
     ]
+  },
+  {
+    "id": "uap-disclosure-act-2023",
+    "name": "UAP Disclosure Act of 2023",
+    "date": "July 13, 2023",
+    "issuing_authority": "U.S. Senate - Sen. Chuck Schumer (D-NY) and Sen. Mike Rounds (R-SD)",
+    "document_type": "legislation",
+    "authenticity_status": "confirmed-official",
+    "page_count": 64,
+    "public_url": "https://www.congress.gov/bill/118th-congress/senate-bill/2226",
+    "summary": "The UAP Disclosure Act of 2023 (S.2226), introduced by Senate Majority Leader Chuck Schumer and Sen. Mike Rounds, is the most significant proposed UAP transparency legislation in U.S. history. Modeled on the JFK Records Collection Act, the bill would establish a UAP Records Collection at the National Archives, create a presidentially-appointed Review Board with declassification authority, require all executive branch UAP records to be disclosed within 25 years with a presumption of openness, and mandate that any private entities (including defense contractors) holding UAP-related materials transfer them to government control. The bill passed as an amendment to the FY2024 NDAA but was significantly weakened in conference committee, with the contractor seizure provision and Review Board independence provisions stripped before final passage.",
+    "significance": "The UAP Disclosure Act represented the first legislative attempt to create a systematic, legally-enforceable UAP records disclosure framework since Project Blue Book closed in 1969. Its JFK Act model was deliberate - establishing the legal theory that UAP records constitute a matter of legitimate public historical interest requiring mandatory disclosure. Even in its weakened final form, the legislation mandated AARO reporting requirements and established formal congressional intent to pursue disclosure. Schumer's floor statements explicitly referenced David Grusch's testimony and classified briefings as motivating factors.",
+    "key_findings": [
+      "Established a UAP Records Collection at the National Archives with a presumption that all records would be made public within 25 years",
+      "Created a presidentially-appointed UAP Records Review Board modeled on the JFK Assassination Records Review Board, with independent declassification authority",
+      "Originally included a provision requiring private entities and defense contractors to transfer any UAP-related materials - including physical specimens - to government control; this provision was stripped in conference committee",
+      "Defined 'UAP records' broadly to include any government record relating to unidentified aerial phenomena, non-human intelligence, or technologies of unknown origin",
+      "Senate Majority Leader Schumer's floor statement explicitly cited David Grusch's testimony and classified congressional briefings as motivating the legislation",
+      "Passed as an amendment to the FY2024 NDAA (Sec. 1841) but with the Review Board independence and contractor seizure provisions removed before final enactment"
+    ],
+    "provenance": "Introduced July 13, 2023 by Senators Schumer and Rounds as S.2226; passed as NDAA amendment with bipartisan support; weakened in House-Senate conference committee December 2023; signed into law as part of FY2024 NDAA.",
+    "insider_connections": [
+      {
+        "id": "david-grusch",
+        "note": "Grusch's July 2023 congressional testimony was explicitly cited by Sen. Schumer as a motivating factor for the legislation; his allegations about contractor-held UAP materials directly shaped the (stripped) seizure provision."
+      },
+      {
+        "id": "karl-nell",
+        "note": "Retired Army Colonel and UAPTF member who provided classified congressional briefings cited alongside Grusch's testimony in Schumer's floor statements supporting the bill."
+      },
+      {
+        "id": "chris-mellon",
+        "note": "Former Deputy Assistant Secretary of Defense for Intelligence who lobbied extensively for UAP disclosure legislation and advised on the JFK Act model used in the bill's structure."
+      }
+    ],
+    "limitations": [
+      "The most significant provisions - the independent Review Board and private contractor material transfer requirements - were stripped in conference committee, substantially limiting the law's reach",
+      "The enacted version lacks enforcement mechanisms to compel disclosure from private defense contractors who may hold UAP-related materials",
+      "AARO, which the legislation tasks with record collection, has been criticized by disclosure advocates (including Grusch) as insufficiently independent from the agencies it is meant to oversee",
+      "The 25-year disclosure presumption has significant national security exemptions that could allow continued withholding of the most sensitive records"
+    ],
+    "provenance_chain": [
+      {
+        "id": "uap-act-introduction",
+        "label": "Bill Introduced",
+        "date": "July 13, 2023",
+        "description": "Senators Schumer and Rounds introduce S.2226, the UAP Disclosure Act, modeled on the JFK Records Collection Act. Bill includes Review Board and contractor seizure provisions.",
+        "type": "creation"
+      },
+      {
+        "id": "uap-act-grusch-testimony",
+        "label": "Grusch Testimony Context",
+        "date": "July 26, 2023",
+        "description": "David Grusch testifies before House Oversight Committee under oath about covert UAP retrieval programs. Schumer publicly links the testimony to the bill's urgency on the Senate floor.",
+        "type": "transfer"
+      },
+      {
+        "id": "uap-act-ndaa-amendment",
+        "label": "NDAA Amendment Passage",
+        "date": "July 27, 2023",
+        "description": "The UAP Disclosure Act passes the Senate as an amendment to the FY2024 NDAA with strong bipartisan support, including the Review Board and contractor transfer provisions.",
+        "type": "transfer"
+      },
+      {
+        "id": "uap-act-conference-weakening",
+        "label": "Conference Committee Weakening",
+        "date": "December 2023",
+        "description": "House-Senate conference committee strips the independent Review Board authority and private contractor seizure provisions from the bill before final NDAA passage.",
+        "type": "transfer"
+      },
+      {
+        "id": "uap-act-signed",
+        "label": "Signed Into Law",
+        "date": "December 22, 2023",
+        "description": "FY2024 NDAA signed by President Biden including the weakened UAP provisions (Sec. 1841). Establishes AARO reporting requirements and National Archives collection mandate.",
+        "type": "public"
+      }
+    ]
   }
 ]

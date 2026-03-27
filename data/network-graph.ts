@@ -222,6 +222,7 @@ export const graphData: GraphData = {
     { id: 'uk-mod-ufo-files-2009', name: 'UK MoD UFO Files (1950-2009)', type: 'document', val: 4 },
     { id: 'pentagon-uap-video-release-2020', name: 'Pentagon UAP Video Release (2020)', type: 'document', val: 5 },
     { id: 'sobeps-belgian-ufo-wave-1991', name: 'SOBEPS Belgian UFO Wave Report (1991)', type: 'document', val: 4 },
+    { id: 'uap-disclosure-act-2023', name: 'UAP Disclosure Act of 2023', type: 'document', val: 5 },
 
     // New cases (batch 4 — sourced from data/cases.json)
     { id: 'kenneth-arnold-1947',     name: 'Kenneth Arnold Sighting (1947)',          type: 'case', val: 4 },
@@ -1152,5 +1153,13 @@ export const graphData: GraphData = {
     { source: 'sobeps-belgian-ufo-wave-1991', target: 'jacques-vallee',    label: 'Vallee contributed analysis to the SOBEPS investigation and cited the Belgian wave as among the most rigorously documented mass-sighting events' },
     { source: 'sobeps-belgian-ufo-wave-1991', target: 'leslie-kean',       label: "Kean featured General De Brouwer's account and the Belgian radar data prominently in UFOs: Generals, Pilots and Government Officials (2010)" },
     { source: 'sobeps-belgian-ufo-wave-1991', target: 'richard-dolan',     label: "Dolan documented the SOBEPS investigation extensively in UFOs and the National Security State as a landmark case of official military engagement" },
+
+    // UAP Disclosure Act of 2023 connections
+    { source: 'uap-disclosure-act-2023', target: 'chuck-schumer',              label: 'introduced by; Schumer brought bill to Senate floor and cited Grusch testimony as motivating factor' },
+    { source: 'uap-disclosure-act-2023', target: 'david-grusch',               label: 'Grusch testimony explicitly cited by Schumer as motivating legislation; contractor seizure provision shaped by his allegations' },
+    { source: 'uap-disclosure-act-2023', target: 'karl-nell',                  label: 'classified congressional briefings by Nell cited in Schumer floor statements alongside Grusch testimony' },
+    { source: 'uap-disclosure-act-2023', target: 'chris-mellon',               label: 'lobbied extensively for UAP disclosure legislation; advised on JFK Act model used in bill structure' },
+    { source: 'uap-disclosure-act-2023', target: 'aaro',                       label: 'enacted version tasks AARO with record collection and expanded reporting requirements' },
+    { source: 'uap-disclosure-act-2023', target: 'ndaa-fy2024-uap-provisions', label: 'enacted as Sec. 1841 of FY2024 NDAA in weakened form after conference committee' },
   ],
 };

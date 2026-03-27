@@ -1266,6 +1266,25 @@ const Sources: NextPage = () => {
             description="Official DoD press release formally declassifying FLIR1, Gimbal, and GoFast UAP videos. Primary source for document metadata and significance."
             notes="Used for: Pentagon UAP Video Formal Release."
           />
+
+          {/* UAP Disclosure Act of 2023 */}
+          <SourceCard
+            name="UAP Disclosure Act of 2023 - S.2226 (118th Congress)"
+            url="https://www.congress.gov/bill/118th-congress/senate-bill/2226"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official Congress.gov record of S.2226 including full bill text, amendment history, and vote records. Primary source for all legislative metadata."
+            notes="Used for: UAP Disclosure Act of 2023."
+          />
+
+          <SourceCard
+            name="Sen. Schumer Floor Statement on UAP Disclosure Act (2023)"
+            url="https://www.schumer.senate.gov/newsroom/press-releases/schumer-rounds-introduce-ufo-uap-disclosure-act-of-2023"
+            type="Government Statement"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official Senate press release with Schumer's floor statements explicitly linking Grusch testimony to the legislation. Source for significance and provenance context."
+            notes="Used for: UAP Disclosure Act of 2023."
+          />
         </section>
 
         {/* Glossary sources */}
