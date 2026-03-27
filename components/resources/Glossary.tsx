@@ -1,11 +1,17 @@
 import { useState, useEffect, FC, ChangeEvent } from 'react';
 import Link from 'next/link';
 
+interface StructuredItem {
+  label: string;
+  description: string;
+}
+
 interface GlossaryTerm {
   term: string;
   definition: string;
   source: 'curated' | 'gerb';
   related_program_id?: string;
+  structured_items?: StructuredItem[];
 }
 
 interface GlossaryProps {
@@ -121,6 +127,16 @@ const Glossary: FC<GlossaryProps> = ({ terms }) => {
                         )}
                       </div>
                       <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{item.definition}</p>
+                      {item.structured_items && (
+                        <ul className="mt-2 space-y-1.5">
+                          {item.structured_items.map((si, idx) => (
+                            <li key={idx} className="flex gap-2 text-sm text-gray-600 dark:text-gray-400">
+                              <span className="font-semibold text-gray-800 dark:text-gray-200 shrink-0 w-8">{si.label}</span>
+                              <span className="leading-relaxed">{si.description}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </div>
                 ))}

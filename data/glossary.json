@@ -290,8 +290,15 @@
   },
   {
     "term": "Close Encounters Classification (CE1-CE5)",
-    "definition": "A tiered classification system developed by astronomer and Project Blue Book scientific consultant J. Allen Hynek to categorize UAP sightings by proximity and type of interaction. CE1 (Close Encounter of the First Kind): visual sighting of a UAP within approximately 500 feet; no physical effects. CE2 (Close Encounter of the Second Kind): UAP interaction leaves physical evidence - ground traces, electromagnetic effects on vehicles, physiological effects on witnesses. CE3 (Close Encounter of the Third Kind): UAP with visible occupants or associated entities observed. CE4 (Close Encounter of the Fourth Kind): witness is abducted or directly interacted with by occupants; added by Hynek before his death in 1986 and formalized by researchers including Budd Hopkins and John Mack. CE5 (Close Encounter of the Fifth Kind): human-initiated or bilateral contact with NHI; associated with Steven Greer's CSETI methodology though the category is contested. The CE1-CE3 classifications are universally accepted in the research community. CE4 and CE5 are widely used but their epistemological status is debated.",
-    "source": "curated"
+    "definition": "A tiered classification system developed by astronomer and Project Blue Book scientific consultant J. Allen Hynek to categorize UAP sightings by proximity and type of interaction. CE1-CE3 are universally accepted in the research community; CE4 and CE5 are widely used but their epistemological status is debated.",
+    "source": "curated",
+    "structured_items": [
+      { "label": "CE1", "description": "Visual sighting of a UAP within approximately 500 feet; no physical effects on the environment." },
+      { "label": "CE2", "description": "UAP interaction leaves physical evidence - ground traces, electromagnetic effects on vehicles or aircraft, physiological effects on witnesses." },
+      { "label": "CE3", "description": "UAP with visible occupants or associated entities observed." },
+      { "label": "CE4", "description": "Witness is abducted or directly interacted with by occupants. Added by Hynek before his death (1986); formalized by researchers including Budd Hopkins and John Mack." },
+      { "label": "CE5", "description": "Human-initiated or bilateral contact with NHI. Associated with Steven Greer's CSETI methodology; category is contested in the research community." }
+    ]
   },
   {
     "term": "COE",
