@@ -157,11 +157,20 @@ function ProvenanceLegend({ isDark }: ProvenanceLegendProps) {
 }
 
 // --------------------------------------------------------------------------
-// Build nodes + edges from chain array (simple linear horizontal layout)
+// Build nodes + edges from chain array
+// Supports linear main chain + optional vertical branch nodes via branches_from
 // --------------------------------------------------------------------------
 
 function buildElements(chain: ProvenanceChainNode[]): { nodes: Node[]; edges: Edge[] } {
-  const nodes: Node[] = chain.map((n, i) => ({
+  const mainChain = chain.filter(n => !n.branches_from);
+  const branchNodes = chain.filter(n => n.branches_from);
+
+  // Map each main-chain node id to its x position for branch placement
+  const xByNodeId: Record<string, number> = {};
+  mainChain.forEach((n, i) => { xByNodeId[n.id] = i * STEP_X; });
+
+  // Main chain nodes at y=0
+  const nodes: Node[] = mainChain.map((n, i) => ({
     id: n.id,
     type: 'provenance',
     position: { x: i * STEP_X, y: 0 },
@@ -173,14 +182,43 @@ function buildElements(chain: ProvenanceChainNode[]): { nodes: Node[]; edges: Ed
     } as ProvenanceData,
   }));
 
-  const edges: Edge[] = chain.slice(0, -1).map((n, i) => ({
+  // Branch nodes positioned below their parent at y = NODE_HEIGHT + 50
+  branchNodes.forEach((n) => {
+    const parentX = xByNodeId[n.branches_from!] ?? 0;
+    nodes.push({
+      id: n.id,
+      type: 'provenance',
+      position: { x: parentX, y: NODE_HEIGHT + 50 },
+      data: {
+        label: n.label,
+        description: n.description,
+        date: n.date,
+        type: n.type,
+      } as ProvenanceData,
+    });
+  });
+
+  // Main chain sequential edges
+  const edges: Edge[] = mainChain.slice(0, -1).map((n, i) => ({
     id: `e-${i}`,
     source: n.id,
-    target: chain[i + 1].id,
+    target: mainChain[i + 1].id,
     type: 'smoothstep',
     style: { stroke: DARK_STRUCTURAL.edgeStroke, strokeWidth: 1.5 },
     markerEnd: { type: MarkerType.ArrowClosed, color: DARK_STRUCTURAL.edgeStroke, width: 14, height: 14 },
   }));
+
+  // Branch edges - dashed to visually distinguish from main chain
+  branchNodes.forEach((n, i) => {
+    edges.push({
+      id: `eb-${i}`,
+      source: n.branches_from!,
+      target: n.id,
+      type: 'smoothstep',
+      style: { stroke: DARK_STRUCTURAL.edgeStroke, strokeWidth: 1.5, strokeDasharray: '5,3' },
+      markerEnd: { type: MarkerType.ArrowClosed, color: DARK_STRUCTURAL.edgeStroke, width: 14, height: 14 },
+    });
+  });
 
   return { nodes, edges };
 }
@@ -195,6 +233,7 @@ interface Props {
 
 export default function DocumentProvenanceFlow({ chain }: Props) {
   const { isDark, c } = useFlowTheme();
+  const hasBranches = chain.some(n => n.branches_from);
   const { nodes: initNodes, edges: initEdges } = buildElements(chain);
   const [nodes, , onNodesChange] = useNodesState(initNodes);
   const [edges, , onEdgesChange] = useEdgesState(initEdges);
@@ -222,7 +261,7 @@ export default function DocumentProvenanceFlow({ chain }: Props) {
           flexDirection: 'column',
         }}
       >
-        <div style={{ height: 220, position: 'relative' }}>
+        <div style={{ height: hasBranches ? 320 : 220, position: 'relative' }}>
           <ReactFlow
             nodes={nodes}
             edges={edges}

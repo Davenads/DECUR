@@ -1213,6 +1213,7 @@ export interface ProvenanceChainNode {
   description: string;
   date: string;
   type: ProvenanceNodeType;
+  branches_from?: string; // id of parent node; places this node vertically below the main chain
 }
 
 export interface InsiderConnection {

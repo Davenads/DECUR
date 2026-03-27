@@ -1786,6 +1786,14 @@
         "description": "DoD published the official statement and videos via defense.gov, entering them into the public domain.",
         "date": "April 27, 2020",
         "type": "public"
+      },
+      {
+        "id": "nyt-coverage-2017",
+        "label": "New York Times Coverage",
+        "date": "December 16, 2017",
+        "description": "The New York Times publishes \"Glowing Auras and Black Money\" by Cooper, Blumenthal, and Kean, simultaneously releasing the FLIR1 video. First mainstream coverage forcing an institutional response and public awareness of the footage.",
+        "type": "public",
+        "branches_from": "ttsa-release"
       }
     ]
   },
@@ -1852,18 +1860,19 @@
         "type": "transfer"
       },
       {
-        "id": "grusch-dni-declination",
-        "label": "DNI Declination",
-        "date": "Spring 2023",
-        "description": "Director of National Intelligence declined to forward the complaint to Congress, citing classification concerns - triggering the ICIG's independent transmission authority.",
-        "type": "transfer"
-      },
-      {
         "id": "grusch-congressional-transmission",
         "label": "Congressional Transmission",
         "date": "July 2023",
         "description": "ICIG transmitted the complaint directly to the House and Senate intelligence committees. Grusch subsequently received authorization to discuss it in unclassified settings.",
         "type": "public"
+      },
+      {
+        "id": "grusch-dni-declination",
+        "label": "DNI Declination",
+        "date": "Spring 2023",
+        "description": "Director of National Intelligence declined to forward the complaint to Congress, citing classification concerns - triggering the ICIG's independent transmission authority over the DNI's objection.",
+        "type": "transfer",
+        "branches_from": "grusch-icig-investigation"
       }
     ]
   },
@@ -1942,6 +1951,22 @@
         "date": "1994",
         "description": "SOBEPS publishes second volume with extended analysis and case studies. Investigation formally concluded. De Brouwer later publishes English-language summary for international audience.",
         "type": "archive"
+      },
+      {
+        "id": "sobeps-baf-monitoring",
+        "label": "Belgian Air Force Radar Monitoring",
+        "date": "1989-1990",
+        "description": "Belgian Air Force independently tracks anomalous radar contacts over Belgian airspace during the wave. Military monitoring runs parallel to SOBEPS civilian collection before the formal partnership is established.",
+        "type": "classification",
+        "branches_from": "sobeps-initial-reports"
+      },
+      {
+        "id": "sobeps-debrouwer-presser",
+        "label": "Gen. De Brouwer Press Conference",
+        "date": "April 1990",
+        "description": "Belgian Air Force Chief of Staff General Wilfried De Brouwer holds a public press conference releasing the F-16 radar film and confirming the objects remain unidentified. One of the few instances of a sitting military commander publicly acknowledging anomalous aerial phenomena.",
+        "type": "public",
+        "branches_from": "sobeps-f16-intercept"
       }
     ]
   },
@@ -2020,6 +2045,14 @@
         "date": "December 22, 2023",
         "description": "FY2024 NDAA signed by President Biden including the weakened UAP provisions (Sec. 1841). Establishes AARO reporting requirements and National Archives collection mandate.",
         "type": "public"
+      },
+      {
+        "id": "uap-act-stripped-provisions",
+        "label": "Provisions Stripped",
+        "date": "December 2023",
+        "description": "Conference committee removes the independent Review Board authority and the private contractor material transfer (seizure) provisions - the two provisions most significant for mandatory disclosure from private aerospace programs.",
+        "type": "archive",
+        "branches_from": "uap-act-conference-weakening"
       }
     ]
   }
