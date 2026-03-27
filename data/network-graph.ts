@@ -224,6 +224,10 @@ export const graphData: GraphData = {
     { id: 'sobeps-belgian-ufo-wave-1991', name: 'SOBEPS Belgian UFO Wave Report (1991)', type: 'document', val: 4 },
     { id: 'uap-disclosure-act-2023', name: 'UAP Disclosure Act of 2023', type: 'document', val: 5 },
 
+    // Academic paper documents (batch 5)
+    { id: 'sturrock-panel-report-1998',           name: 'Sturrock Panel Report (1998)',           type: 'document', val: 3 },
+    { id: 'vallee-davis-incommensurability-2003', name: 'Vallee-Davis Incommensurability (2003)', type: 'document', val: 3 },
+
     // New cases (batch 4 — sourced from data/cases.json)
     { id: 'kenneth-arnold-1947',     name: 'Kenneth Arnold Sighting (1947)',          type: 'case', val: 4 },
     { id: 'betty-barney-hill-1961',  name: 'Betty & Barney Hill Abduction (1961)',     type: 'case', val: 4 },
@@ -1177,5 +1181,20 @@ export const graphData: GraphData = {
     { source: 'uap-disclosure-act-2023', target: 'chris-mellon',               label: 'lobbied extensively for UAP disclosure legislation; advised on JFK Act model used in bill structure' },
     { source: 'uap-disclosure-act-2023', target: 'aaro',                       label: 'enacted version tasks AARO with record collection and expanded reporting requirements' },
     { source: 'uap-disclosure-act-2023', target: 'ndaa-fy2024-uap-provisions', label: 'enacted as Sec. 1841 of FY2024 NDAA in weakened form after conference committee' },
+
+    // Sturrock Panel Report (1998) connections
+    { source: 'sturrock-panel-report-1998', target: 'peter-sturrock',   label: 'convened and chaired by' },
+    { source: 'sturrock-panel-report-1998', target: 'jacques-vallee',   label: 'Vallee presented physical evidence cases to the panel' },
+    { source: 'sturrock-panel-report-1998', target: 'robert-bigelow',   label: 'funded through NIDS' },
+    { source: 'sturrock-panel-report-1998', target: 'nids',             label: 'sponsored by' },
+    { source: 'sturrock-panel-report-1998', target: 'hal-puthoff',      label: 'NIDS scientific network overlap' },
+
+    // Vallee-Davis Incommensurability (2003) connections
+    { source: 'vallee-davis-incommensurability-2003', target: 'jacques-vallee',              label: 'co-authored by' },
+    { source: 'vallee-davis-incommensurability-2003', target: 'eric-davis',                  label: 'co-authored by' },
+    { source: 'vallee-davis-incommensurability-2003', target: 'hal-puthoff',                 label: "developed within EarthTech International (Puthoff's organization)" },
+    { source: 'vallee-davis-incommensurability-2003', target: 'nids',                        label: 'presented at NIDS conference' },
+    { source: 'vallee-davis-incommensurability-2003', target: 'wilson-davis-memo',           label: 'Davis authored both in the same period; overlapping classified/open research context' },
+    { source: 'vallee-davis-incommensurability-2003', target: 'sturrock-panel-report-1998',  label: 'built upon physical evidence framework established by' },
   ],
 };

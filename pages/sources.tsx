@@ -710,6 +710,15 @@ const Sources: NextPage = () => {
             description="Richard Dolan's continuation of his National Security State history covering 1973-1991, including the most measured scholarly analysis of Lear's role in the 1980s disclosure community and his relationship to the AFOSI disinformation framework (Richard Dolan Press, 2009)."
             notes="Used for: John Lear."
           />
+
+          <SourceCard
+            name="Hunt for the Skinwalker: Science Confronts the Unexplained at a Remote Ranch in Utah - Kelleher & Knapp (2005)"
+            url="https://www.amazon.com/Hunt-Skinwalker-Science-Confronts-Unexplained/dp/1416505210"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary account of NIDS investigation of Skinwalker Ranch 1996-2004. Co-authored by NIDS deputy administrator Colm Kelleher and investigative journalist George Knapp. Documents the research that directly motivated James Lacatski's 2008 visit and the subsequent AAWSAP program."
+            notes="Used for: Hunt for the Skinwalker resource entry."
+          />
         </section>
 
         {/* Government programs sources */}
@@ -1284,6 +1293,24 @@ const Sources: NextPage = () => {
             typeColor="bg-yellow-100 text-yellow-700"
             description="Official Senate press release with Schumer's floor statements explicitly linking Grusch testimony to the legislation. Source for significance and provenance context."
             notes="Used for: UAP Disclosure Act of 2023."
+          />
+
+          <SourceCard
+            name="Sturrock Panel Report: Physical Evidence Related to UFO Reports (1998)"
+            url="https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Published in the Journal of Scientific Exploration Vol. 12 No. 2. Five-day workshop convened by Peter Sturrock at Pocantico Conference Center (1997), bringing nine physical scientists to review physical evidence cases. Panel concluded evidence warrants serious scientific investigation."
+            notes="Used for: Sturrock Panel Report document entry."
+          />
+
+          <SourceCard
+            name="Incommensurability, Orthodoxy and the Physics of High Strangeness - Vallee & Davis (2003)"
+            url="https://www.ufoskeptic.org/vallee-davis.pdf"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="30-page theoretical paper presented at the 2003 NIDS conference by Jacques Vallee and Eric W. Davis. Proposes a 6-layer phenomenological model for UAP, arguing phenomena are incommensurable with conventional physics. Primary reference for the incommensurability framework cited in subsequent UAP research."
+            notes="Used for: Vallee-Davis Incommensurability document entry."
           />
         </section>
 
