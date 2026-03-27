@@ -5,6 +5,9 @@ import SeoHead from '../../components/SeoHead';
 import { DocumentEntry } from '../../types/data';
 import documentsData from '../../data/documents.json';
 import DocumentDetail from '../../components/data/shared/DocumentDetail';
+import { graphData } from '../../data/network-graph';
+
+const NETWORK_DOC_IDS = new Set(graphData.nodes.filter(n => n.type === 'document').map(n => n.id));
 
 interface Props {
   document: DocumentEntry;
@@ -31,7 +34,7 @@ const DocumentPage: NextPage<Props> = ({ document }) => {
         type="article"
       />
       <div className="container mx-auto px-4 py-4">
-        <DocumentDetail d={document} onBack={onBack} backLabel={backLabel} />
+        <DocumentDetail d={document} onBack={onBack} backLabel={backLabel} networkNodeId={NETWORK_DOC_IDS.has(document.id) ? document.id : undefined} />
       </div>
     </>
   );

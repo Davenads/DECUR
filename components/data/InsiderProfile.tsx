@@ -34,9 +34,10 @@ interface InsiderProfileProps {
   id: string;
   onBack: () => void;
   backLabel?: string;
+  networkNodeId?: string;
 }
 
-const InsiderProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
+const InsiderProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNodeId }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -64,6 +65,7 @@ const InsiderProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
       backLabel={backLabel}
+      networkNodeId={networkNodeId}
     >
       {renderTab()}
     </ProfileShell>

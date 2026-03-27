@@ -47,6 +47,7 @@ interface GenericInsiderProfileProps {
   id: string;
   onBack: () => void;
   backLabel?: string;
+  networkNodeId?: string;
 }
 
 // --- Types covering the common JSON schema ---
@@ -613,7 +614,7 @@ const GenericAssessmentTab: FC<GenericAssessmentTabProps> = ({ credibility, sour
 
 // --- Main component ---
 
-const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, backLabel }) => {
+const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, backLabel, networkNodeId }) => {
   const data = insiderRegistry[id];
 
   if (!data) {
@@ -720,28 +721,11 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
       backLabel={backLabel}
+      networkNodeId={networkNodeId}
     >
       <div className="mt-4">
         {renderTab()}
       </div>
-      {includeInExplore && (
-        <div className="mt-8 border-t border-gray-100 dark:border-gray-700 pt-5">
-          <Link
-            href="/explore"
-            className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
-          >
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-0.5">Explore Visualizations</p>
-              <p className="text-sm text-gray-700 group-hover:text-primary transition-colors">
-                View {profile.name}&apos;s events on the interactive timeline overlay
-              </p>
-            </div>
-            <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
-      )}
     </ProfileShell>
   );
 };

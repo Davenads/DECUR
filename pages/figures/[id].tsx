@@ -22,7 +22,7 @@ import PopeProfile from '../../components/data/PopeProfile';
 import BarberProfile from '../../components/data/BarberProfile';
 import GallaudetProfile from '../../components/data/GallaudetProfile';
 
-interface BespokeProps { onBack: () => void; backLabel: string; }
+interface BespokeProps { onBack: () => void; backLabel: string; networkNodeId?: string; }
 
 /** Registry of bespoke profile components. Add new entries here when creating a Tier 2 component. */
 const BESPOKE_REGISTRY: Record<string, React.ComponentType<BespokeProps>> = {
@@ -59,15 +59,16 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
   const backLabel = exploreBack ? exploreBack.label : 'Key Figures';
 
   const renderProfile = () => {
+    const nodeId = entry.id;
     // InsiderProfile (Burisch) has a unique id prop requirement — keep explicit
     if (entry.id === 'dan-burisch') {
-      return <InsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
+      return <InsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} networkNodeId={nodeId} />;
     }
     const BespokeComponent = BESPOKE_REGISTRY[entry.id];
     if (BespokeComponent) {
-      return <BespokeComponent onBack={onBack} backLabel={backLabel} />;
+      return <BespokeComponent onBack={onBack} backLabel={backLabel} networkNodeId={nodeId} />;
     }
-    return <GenericInsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} />;
+    return <GenericInsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} networkNodeId={nodeId} />;
   };
 
   const personSchema = {

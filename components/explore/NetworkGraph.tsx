@@ -143,6 +143,7 @@ const profileIds = new Set((insidersIndex as Array<{ id: string }>).map(e => e.i
 const NetworkGraph: FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const fgRef = useRef<FGRef>(null);
+  const initialFocusDone = useRef(false);
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === 'dark';
   const router = useRouter();
@@ -339,6 +340,21 @@ const NetworkGraph: FC = () => {
     setSearchFocused(false);
     setSearchIndex(-1);
   }, [filteredLinks]);
+
+  // Deep-link focus: if ?node=<id> is in the URL, select and center that node after simulation settles
+  const deepLinkNodeId = router.query.node as string | undefined;
+  useEffect(() => {
+    if (!deepLinkNodeId || initialFocusDone.current) return;
+    const timer = setTimeout(() => {
+      const target = mergedGraphData.nodes.find(n => n.id === deepLinkNodeId) as GraphNode | undefined;
+      if (target) {
+        focusNode(target);
+        initialFocusDone.current = true;
+      }
+    }, 500);
+    return () => clearTimeout(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [deepLinkNodeId, focusNode]);
 
   const handleSearchKeyDown = useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'ArrowDown') {

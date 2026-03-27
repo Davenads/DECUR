@@ -296,7 +296,7 @@ const AssessmentTab: FC = () => (
 
 /* ─── Main component ──────────────────────────────────────────── */
 
-const DavisProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
+const DavisProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNodeId }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -336,6 +336,7 @@ const DavisProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
       backLabel={backLabel}
+      networkNodeId={networkNodeId}
     >
       {renderTab()}
     </ProfileShell>

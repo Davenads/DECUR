@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import Link from 'next/link';
 import ProfileTabBar from './ProfileTabBar';
 
 interface ProfileShellProps {
@@ -7,6 +8,7 @@ interface ProfileShellProps {
   period: string;
   badge?: string;
   backLabel?: string;
+  networkNodeId?: string;
   tabs: ReadonlyArray<{ id: string; label: string }>;
   activeTab: string;
   onTabChange: (id: string) => void;
@@ -26,6 +28,7 @@ const ProfileShell: FC<ProfileShellProps> = ({
   period,
   badge = 'Case File',
   backLabel = 'Key Figures',
+  networkNodeId,
   tabs,
   activeTab,
   onTabChange,
@@ -35,13 +38,23 @@ const ProfileShell: FC<ProfileShellProps> = ({
   return (
     <div>
       <div className="mb-5">
-        <button
-          onClick={onBack}
-          className="text-sm text-gray-400 hover:text-primary transition-colors mb-3 flex items-center gap-1"
-        >
-          <BackIcon />
-          {backLabel}
-        </button>
+        <div className="flex items-center justify-between mb-3">
+          <button
+            onClick={onBack}
+            className="text-sm text-gray-400 hover:text-primary transition-colors flex items-center gap-1"
+          >
+            <BackIcon />
+            {backLabel}
+          </button>
+          {networkNodeId && (
+            <Link
+              href={`/explore?node=${networkNodeId}#relationship-network`}
+              className="text-xs text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors"
+            >
+              View in Network →
+            </Link>
+          )}
+        </div>
         <div className="flex items-start justify-between">
           <div>
             <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100">{name}</h2>

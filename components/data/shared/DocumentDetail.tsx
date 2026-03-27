@@ -197,9 +197,10 @@ export interface DocumentDetailProps {
   d: DocumentEntry;
   onBack: () => void;
   backLabel?: string;
+  networkNodeId?: string;
 }
 
-const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Documents' }) => {
+const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Documents', networkNodeId }) => {
   const [activeTab, setActiveTab] = useState<DetailTabId>('overview');
   const auth = authConfig[d.authenticity_status];
 
@@ -216,12 +217,22 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Docum
   return (
     <div className="space-y-6">
       <div>
-        <button
-          onClick={onBack}
-          className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors mb-3 block"
-        >
-          ← {backLabel}
-        </button>
+        <div className="flex items-center justify-between mb-3">
+          <button
+            onClick={onBack}
+            className="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+          >
+            ← {backLabel}
+          </button>
+          {networkNodeId && (
+            <Link
+              href={`/explore?node=${networkNodeId}#relationship-network`}
+              className="text-xs text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors"
+            >
+              View in Network →
+            </Link>
+          )}
+        </div>
         <div>
           <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h2>
           <div className="flex items-center gap-2 mt-1 flex-wrap">

@@ -6,6 +6,9 @@ import { CaseEntry } from '../../types/data';
 import casesData from '../../data/cases.json';
 import CaseDetail from '../../components/data/CaseDetail';
 import { resolveExploreRef } from '../../lib/exploreRef';
+import { graphData } from '../../data/network-graph';
+
+const NETWORK_CASE_IDS = new Set(graphData.nodes.filter(n => n.type === 'case').map(n => n.id));
 
 interface Props {
   caseEntry: CaseEntry;
@@ -61,7 +64,7 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
         jsonLd={[eventSchema, breadcrumbSchema]}
       />
       <div className="container mx-auto px-4 py-4">
-        <CaseDetail c={caseEntry} onBack={onBack} backLabel={backLabel} />
+        <CaseDetail c={caseEntry} onBack={onBack} backLabel={backLabel} networkNodeId={NETWORK_CASE_IDS.has(caseEntry.id) ? caseEntry.id : undefined} />
       </div>
     </>
   );

@@ -232,7 +232,7 @@ const AssessmentTab: FC = () => (
   />
 );
 
-const GallaudetProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
+const GallaudetProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNodeId }) => {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
   const renderTab = () => {
@@ -267,6 +267,7 @@ const GallaudetProfile: FC<InsiderProfileProps> = ({ onBack, backLabel }) => {
       onTabChange={(id) => setActiveTab(id as TabId)}
       onBack={onBack}
       backLabel={backLabel}
+      networkNodeId={networkNodeId}
     >
       {renderTab()}
     </ProfileShell>

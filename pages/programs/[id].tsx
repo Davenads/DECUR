@@ -6,6 +6,11 @@ import { ProgramEntry } from '../../types/data';
 import programsData from '../../data/programs.json';
 import ProgramDetail from '../../components/data/ProgramDetail';
 import { resolveExploreRef } from '../../lib/exploreRef';
+import { graphData } from '../../data/network-graph';
+
+const NETWORK_PROG_IDS = new Set(
+  graphData.nodes.filter(n => n.type === 'organization' || n.type === 'project').map(n => n.id)
+);
 
 interface Props {
   program: ProgramEntry;
@@ -33,7 +38,7 @@ const ProgramPage: NextPage<Props> = ({ program }) => {
         type="article"
       />
       <div className="container mx-auto px-4 py-4">
-        <ProgramDetail p={program} onBack={onBack} backLabel={backLabel} />
+        <ProgramDetail p={program} onBack={onBack} backLabel={backLabel} networkNodeId={NETWORK_PROG_IDS.has(program.id) ? program.id : undefined} />
       </div>
     </>
   );
