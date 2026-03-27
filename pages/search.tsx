@@ -180,7 +180,6 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
         threshold: 0.35,
         includeScore: true,
         minMatchCharLength: 2,
-        ignoreLocation: true,
       }),
     [corpus]
   );
