@@ -155,6 +155,7 @@ const NetworkGraph: FC = () => {
   const [clickedNode, setClickedNode] = useState<GraphNode | null>(null);
   const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [egoNodeId, setEgoNodeId] = useState<string | null>(null);
+  const [egoDegree, setEgoDegree] = useState<1 | 2>(1);
   const [activeTypes, setActiveTypes] = useState<Set<NodeType>>(
     new Set(Object.keys(TYPE_LABELS) as NodeType[])
   );
@@ -196,32 +197,70 @@ const NetworkGraph: FC = () => {
     [filteredNodes, filteredLinks]
   );
 
-  // Ego network: 1-hop subgraph around egoNodeId
+  // Ego network: N-hop subgraph around egoNodeId
   const egoNode = useMemo(
     () => (egoNodeId ? filteredNodes.find(n => n.id === egoNodeId) ?? null : null),
     [egoNodeId, filteredNodes]
   );
-  const egoData = useMemo(() => {
+  const egoComputed = useMemo(() => {
     if (!egoNodeId) return null;
-    const connectedLinks = filteredLinks.filter(l =>
+
+    // Hop 1: direct connections
+    const hop1Links = filteredLinks.filter(l =>
       resolveId(l.source) === egoNodeId || resolveId(l.target) === egoNodeId
     );
-    const neighborIds = new Set<string>([egoNodeId]);
-    connectedLinks.forEach(l => {
-      neighborIds.add(resolveId(l.source));
-      neighborIds.add(resolveId(l.target));
+    const hop1Ids = new Set<string>([egoNodeId]);
+    hop1Links.forEach(l => {
+      hop1Ids.add(resolveId(l.source));
+      hop1Ids.add(resolveId(l.target));
     });
+
+    if (egoDegree === 1) {
+      return {
+        nodes: filteredNodes.filter(n => hop1Ids.has(n.id)),
+        links: hop1Links,
+        secondDegreeIds: new Set<string>(),
+      };
+    }
+
+    // Hop 2: neighbors of neighbors
+    const secondDegreeIds = new Set<string>();
+    filteredLinks.forEach(l => {
+      const src = resolveId(l.source);
+      const tgt = resolveId(l.target);
+      if (hop1Ids.has(src) && !hop1Ids.has(tgt)) secondDegreeIds.add(tgt);
+      if (hop1Ids.has(tgt) && !hop1Ids.has(src)) secondDegreeIds.add(src);
+    });
+
+    const allIds = new Set<string>(Array.from(hop1Ids));
+    secondDegreeIds.forEach(id => allIds.add(id));
+    // Include all edges where both endpoints are in the full neighborhood (Option A)
+    const allLinks = filteredLinks.filter(l =>
+      allIds.has(resolveId(l.source)) && allIds.has(resolveId(l.target))
+    );
+
     return {
-      nodes: filteredNodes.filter(n => neighborIds.has(n.id)),
-      links: connectedLinks,
+      nodes: filteredNodes.filter(n => allIds.has(n.id)),
+      links: allLinks,
+      secondDegreeIds,
     };
-  }, [egoNodeId, filteredNodes, filteredLinks]);
+  }, [egoNodeId, egoDegree, filteredNodes, filteredLinks]);
+
+  const egoData = useMemo(
+    () => egoComputed ? { nodes: egoComputed.nodes, links: egoComputed.links } : null,
+    [egoComputed]
+  );
+  const egoSecondDegreeIds = useMemo(
+    () => egoComputed?.secondDegreeIds ?? new Set<string>(),
+    [egoComputed]
+  );
 
   // Active graph data: ego subgraph when active, otherwise full filtered graph
   const activeData = egoData ?? filtered;
 
   const enterEgoMode = useCallback((node: GraphNode) => {
     setEgoNodeId(node.id);
+    setEgoDegree(1);
     setHighlight(EMPTY_HIGHLIGHT);
     setClickedNode(null);
     setTimeout(() => fgRef.current?.zoomToFit?.(300, 60), 80);
@@ -231,6 +270,13 @@ const NetworkGraph: FC = () => {
     setEgoNodeId(null);
     setTimeout(() => fgRef.current?.zoomToFit?.(400, 40), 80);
   }, []);
+
+  // Re-fit when degree changes (subgraph size changes)
+  useEffect(() => {
+    if (!egoNodeId) return;
+    const timer = setTimeout(() => fgRef.current?.zoomToFit?.(300, 60), 80);
+    return () => clearTimeout(timer);
+  }, [egoDegree, egoNodeId]);
 
   // Hover: passive highlight only. Does not override an active click selection.
   const handleNodeHover = useCallback((node: object | null) => {
@@ -410,9 +456,13 @@ const NetworkGraph: FC = () => {
         ctx.stroke();
       }
 
+      const isSecondDegree = egoNodeId != null && egoSecondDegreeIds.has(id);
+
       ctx.beginPath();
       ctx.arc(x, y, baseRadius, 0, 2 * Math.PI);
-      ctx.fillStyle = isHighlighted ? color : `${color}40`;
+      ctx.fillStyle = isHighlighted
+        ? (isSecondDegree ? `${color}7a` : color)
+        : `${color}40`;
       ctx.fill();
 
       if (isHighlighted) {
@@ -430,7 +480,7 @@ const NetworkGraph: FC = () => {
         ctx.fillText(gNode.name, x, y + baseRadius + 2 / globalScale);
       }
     },
-    [highlight, isDark, clickedNode]
+    [highlight, isDark, clickedNode, egoNodeId, egoSecondDegreeIds]
   );
 
   const linkColor = useCallback(
@@ -529,22 +579,43 @@ const NetworkGraph: FC = () => {
 
       {/* Type filter pills OR ego mode banner */}
       {egoNodeId ? (
-        <div className="px-6 pb-2 flex items-center justify-between gap-4">
+        <div className="px-6 pb-2 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 min-w-0">
             <span
               className="w-2 h-2 rounded-full shrink-0"
               style={{ backgroundColor: egoNode ? NODE_COLORS[egoNode.type] : '#9ca3af' }}
             />
             <span className="text-xs text-gray-700 dark:text-gray-300 truncate">
-              Exploring connections for <span className="font-semibold">{egoNode?.name}</span>
+              Exploring <span className="font-semibold">{egoNode?.name}</span>
             </span>
           </div>
-          <button
-            onClick={exitEgoMode}
-            className="shrink-0 text-xs px-2.5 py-1 rounded-full border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
-          >
-            ← Exit
-          </button>
+          <div className="flex items-center gap-2 shrink-0">
+            {/* Degree toggle */}
+            <div className="flex rounded border border-gray-200 dark:border-gray-600 overflow-hidden text-xs">
+              {([1, 2] as const).map(d => (
+                <button
+                  key={d}
+                  onClick={() => setEgoDegree(d)}
+                  className={`px-2 py-0.5 transition-colors ${
+                    egoDegree === d
+                      ? 'bg-primary text-white'
+                      : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  {d}&deg;
+                </button>
+              ))}
+            </div>
+            <span className="text-xs text-gray-400 dark:text-gray-500">
+              {egoComputed?.nodes.length ?? 0} nodes
+            </span>
+            <button
+              onClick={exitEgoMode}
+              className="text-xs px-2.5 py-1 rounded-full border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:border-gray-300 dark:hover:border-gray-500 transition-colors"
+            >
+              ← Exit
+            </button>
+          </div>
         </div>
       ) : (
         <div className="px-6 pb-2 flex flex-wrap gap-1.5">
