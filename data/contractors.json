@@ -250,6 +250,156 @@
     "tags": ["classified-programs", "intelligence-community", "advanced-technology"]
   },
   {
+    "id": "leidos",
+    "name": "Leidos",
+    "sublabel": "Government Services & Intelligence Analytics",
+    "type": "contractor",
+    "status": "active",
+    "founded": "2013",
+    "headquarters": "Reston, VA",
+    "summary": "Government IT and intelligence services contractor spun off from SAIC in 2013. Leidos holds major analytical support contracts across DoD and the intelligence community - including agencies directly involved in UAP data collection - and operates within the same prime contractor ecosystem cited in Grusch's 2023 congressional disclosure testimony.",
+    "description": "Leidos was formed in 2013 when Science Applications International Corporation (SAIC) split into two independent publicly traded companies: the original entity was renamed Leidos, retaining the government IT, intelligence analytics, and health services contracts; a new company named SAIC was established for defense engineering and systems integration work. Leidos holds extensive contracts with the Office of the Director of National Intelligence, National Geospatial-Intelligence Agency, National Security Agency, and Department of Defense - agencies central to the UAP data collection and analytical infrastructure. As one of the largest government IT contractors in the United States, Leidos operates within the classified contractor ecosystem that David Grusch cited in his 2023 congressional testimony as the institutional environment in which alleged UAP Special Access Programs are managed.",
+    "known_contracts": [
+      {
+        "program_id": null,
+        "description": "Intelligence Community and DoD analytical support contracts spanning ODNI, NGA, NSA, and DHS; government-wide IT modernization and enterprise services",
+        "evidence_status": "documented"
+      },
+      {
+        "program_id": null,
+        "description": "Defense Health Agency and VA health IT programs; DHS border security analytics and enterprise systems",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "David Grusch's 2023 congressional testimony characterized the UAP SAP custodianship structure as residing within the broader prime contractor and government services ecosystem - the institutional environment in which Leidos, as a major IC analytical support contractor, operates.",
+        "source": "house-oversight-uap-hearing-jul-2023",
+        "credibility": "testified-under-oath",
+        "status": "alleged"
+      },
+      {
+        "claim": "Leidos inherits the IC analytical contract portfolio from the original SAIC entity. UAP researchers have noted that SAIC - Leidos's direct corporate predecessor - has been referenced in multiple disclosure research contexts as a contractor with potential classified program involvement, predating the 2013 split.",
+        "source": null,
+        "credibility": "unverified-testimony",
+        "status": "alleged"
+      }
+    ],
+    "connected_figures": [
+      {
+        "id": "grusch",
+        "name": "David Grusch",
+        "role": "Intelligence officer, UAP whistleblower",
+        "relationship": "Grusch's 2023 congressional testimony implicated major government services and prime defense contractors as operating the classified SAP infrastructure in which alleged UAP materials are held. Leidos, as one of the largest IC analytical support contractors, operates within this described ecosystem."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Leidos Corporate Profile - Investor Relations (2024)",
+        "url": "https://ir.leidos.com/overview/default.aspx",
+        "type": "Corporate",
+        "notes": "Official Leidos investor relations page confirming corporate history, contract portfolio, and government customer base."
+      },
+      {
+        "title": "SAIC-Leidos Corporate Split (2013) - SEC Filing",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336920&type=&dateb=&owner=include&count=40",
+        "type": "Government Record",
+        "notes": "SEC filing record for the 2013 SAIC reorganization creating Leidos as the successor entity for government services contracts."
+      },
+      {
+        "title": "House Oversight UAP Hearing - Grusch Contractor Testimony (Jul 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+        "type": "Congressional Record",
+        "notes": "Grusch testified under oath that the SAP custodianship structure operates through the private defense contractor ecosystem."
+      }
+    ],
+    "tags": ["intelligence-community", "government-it", "saic-successor", "analytical-support", "classified-programs"]
+  },
+  {
+    "id": "boeing-defense",
+    "name": "Boeing Defense, Space & Security",
+    "sublabel": "Phantom Works / Advanced Development",
+    "type": "contractor",
+    "status": "active",
+    "founded": "1916",
+    "headquarters": "Arlington, VA",
+    "summary": "Boeing's defense division manufactures the F/A-18 Super Hornet - the aircraft that filmed the Tic Tac, Gimbal, and GoFast UAP encounters - and operates Phantom Works, its classified advanced development unit equivalent to Lockheed's Skunk Works. Named alongside other prime aerospace contractors in the Grusch disclosure framework.",
+    "description": "Boeing Defense, Space & Security (BDS) is the defense and government-focused division of The Boeing Company, one of the world's largest aerospace manufacturers. BDS produces some of the most strategically significant platforms in the U.S. military inventory, including the F/A-18 Super Hornet, the B-52 Stratofortress, the AH-64 Apache helicopter, the E-3 Sentry AWACS, and the P-8 Poseidon maritime patrol aircraft. Boeing's Phantom Works division - located primarily at its Palmdale, CA and St. Louis facilities - functions as the company's classified advanced development unit, analogous to Lockheed Martin's Skunk Works. The F/A-18 Super Hornet's direct and material role in the most consequential documented UAP encounters - the 2004 Nimitz Tic Tac, and the 2014-2015 USS Theodore Roosevelt encounters that produced the Gimbal and GoFast footage - makes Boeing Defense one of the structurally relevant prime contractors in UAP documentation history. Boeing Phantom Works has also been referenced in UAP research contexts for its classified advanced propulsion research programs.",
+    "known_contracts": [
+      {
+        "program_id": null,
+        "description": "F/A-18 Super Hornet production and sustainment (U.S. Navy, international); P-8 Poseidon maritime patrol; AH-64 Apache; B-52 modernization; E-3 AWACS",
+        "evidence_status": "documented"
+      },
+      {
+        "program_id": null,
+        "description": "Phantom Works classified advanced development programs including unmanned systems, advanced propulsion research, and directed energy weapons research",
+        "evidence_status": "documented"
+      }
+    ],
+    "uap_claims": [
+      {
+        "claim": "The Boeing F/A-18F Super Hornet flown by Cmdr. David Fravor and Lt. Cmdr. Jim Slaight was the aircraft involved in the November 14, 2004 Nimitz Tic Tac encounter - the most credibly documented UAP case in modern history. The FLIR1 footage was captured by the ATFLIR pod on a subsequent F/A-18F sortie from VFA-41.",
+        "source": "pentagon-uap-video-release-2020",
+        "credibility": "primary-document",
+        "status": "documented"
+      },
+      {
+        "claim": "David Grusch's 2023 congressional testimony identified major aerospace prime contractors - including companies operating advanced classified development divisions equivalent to Skunk Works - as alleged custodians of recovered non-human materials under Special Access Programs not reported to Congress.",
+        "source": "house-oversight-uap-hearing-jul-2023",
+        "credibility": "testified-under-oath",
+        "status": "alleged"
+      },
+      {
+        "claim": "Boeing Phantom Works has been referenced in multiple UAP research contexts as a potential site of classified advanced propulsion and materials analysis, consistent with its documented track record of producing technologies - including classified unmanned platforms - that remain outside public knowledge for decades.",
+        "source": null,
+        "credibility": "unverified-testimony",
+        "status": "alleged"
+      }
+    ],
+    "connected_figures": [
+      {
+        "id": "fravor",
+        "name": "David Fravor",
+        "role": "Cmdr., VFA-41, USS Nimitz (2004)",
+        "relationship": "Fravor piloted a Boeing F/A-18F Super Hornet during the November 14, 2004 Nimitz Tic Tac encounter - the primary documented UAP case associated with Boeing Defense platforms."
+      },
+      {
+        "id": "grusch",
+        "name": "David Grusch",
+        "role": "Intelligence officer, UAP whistleblower",
+        "relationship": "Grusch's testimony named aerospace prime contractors with classified advanced development programs as alleged SAP custodians; Boeing's Phantom Works falls within the described contractor profile."
+      }
+    ],
+    "sources": [
+      {
+        "title": "DoD Statement - Pentagon UAP Video Release (Apr 2020)",
+        "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-releasing-ufo-videos/",
+        "type": "Government Statement",
+        "notes": "Formal DoD declassification confirming the F/A-18-captured FLIR1, Gimbal, and GoFast videos. Primary source for Boeing platform connection to documented UAP encounters."
+      },
+      {
+        "title": "Boeing Defense, Space & Security - Official Profile (Boeing.com)",
+        "url": "https://www.boeing.com/defense",
+        "type": "Corporate",
+        "notes": "Official Boeing BDS division profile confirming Phantom Works division, F/A-18 production, and classified program portfolio."
+      },
+      {
+        "title": "House Oversight UAP Hearing - Grusch Contractor Testimony (Jul 2023)",
+        "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
+        "type": "Congressional Record",
+        "notes": "Grusch testified under oath that prime aerospace contractors with classified development programs hold recovered non-human materials."
+      },
+      {
+        "title": "The Nimitz Encounters (Dave Beaty Documentary, 2019)",
+        "url": "https://www.youtube.com/watch?v=zuBLUyc3Mck",
+        "type": "Documentary",
+        "notes": "Comprehensive documentary on the 2004 Nimitz encounter featuring Fravor, Slaight, and crew accounts. Documents the F/A-18 platform role in detail."
+      }
+    ],
+    "tags": ["f18-super-hornet", "phantom-works", "nimitz-encounter", "classified-programs", "advanced-development"]
+  },
+  {
     "id": "egg",
     "name": "EG&G",
     "sublabel": "Edgerton, Germeshausen & Grier (defunct, acq. 2002)",

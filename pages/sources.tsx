@@ -1287,6 +1287,65 @@ const Sources: NextPage = () => {
           />
         </section>
 
+        {/* Private Defense Contractors */}
+        <section className="space-y-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Private Defense Contractors</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Sources for the private defense and government services contractor profiles in the{' '}
+              <Link href="\data?category=contractors" className="text-primary hover:underline">Contractors</Link>{' '}
+              section.
+            </p>
+          </div>
+
+          {/* Leidos */}
+          <SourceCard
+            name="Leidos Corporate Profile - Investor Relations (2024)"
+            url="https://ir.leidos.com/overview/default.aspx"
+            type="Corporate Record"
+            typeColor="bg-green-100 text-green-700"
+            description="Official Leidos investor relations page confirming corporate history, the 2013 SAIC spin-off origin, contract portfolio, and government customer base spanning DoD, ODNI, NGA, NSA, and DHS."
+            notes="Used for: Leidos."
+          />
+
+          <SourceCard
+            name="House Oversight UAP Hearing - Grusch Contractor Testimony (Jul 2023)"
+            url="https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+            type="Congressional Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Grusch testified under oath that private defense and government services contractors operate the classified SAP infrastructure in which alleged UAP materials are held. Primary source for all contractor UAP-claim entries."
+            notes="Used for: Leidos, Boeing Defense, Lockheed Martin, Northrop Grumman, SAIC."
+          />
+
+          {/* Boeing Defense */}
+          <SourceCard
+            name="DoD Statement - Pentagon UAP Video Release (Apr 2020)"
+            url="https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-releasing-ufo-videos/"
+            type="Government Statement"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Formal DoD declassification confirming the F/A-18-captured FLIR1, Gimbal, and GoFast UAP videos. Primary source for Boeing Defense's platform connection to documented UAP encounters - the F/A-18 Super Hornet is the aircraft that filmed all three videos."
+            notes="Used for: Boeing Defense."
+          />
+
+          <SourceCard
+            name="Boeing Defense, Space & Security - Official Profile"
+            url="https://www.boeing.com/defense"
+            type="Corporate Record"
+            typeColor="bg-green-100 text-green-700"
+            description="Official Boeing BDS division profile confirming the Phantom Works advanced development division, F/A-18 production and sustainment programs, and classified platform portfolio."
+            notes="Used for: Boeing Defense."
+          />
+
+          <SourceCard
+            name="The Nimitz Encounters (Dave Beaty Documentary, 2019)"
+            url="https://www.youtube.com/watch?v=zuBLUyc3Mck"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Comprehensive documentary on the 2004 Nimitz encounter featuring Fravor, Slaight, and crew accounts from VFA-41. Documents the F/A-18 Super Hornet platform's role in the encounter and the ATFLIR pod footage in detail."
+            notes="Used for: Boeing Defense."
+          />
+        </section>
+
         {/* Glossary sources */}
         <section className="space-y-4">
           <div>

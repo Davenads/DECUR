@@ -238,6 +238,8 @@ export const graphData: GraphData = {
     { id: 'raytheon',          name: 'Raytheon Technologies',        type: 'contractor', val: 3 },
     { id: 'battelle',          name: 'Battelle Memorial Institute',  type: 'contractor', val: 3 },
     { id: 'saic',              name: 'SAIC',                         type: 'contractor', val: 2 },
+    { id: 'leidos',            name: 'Leidos',                       type: 'contractor', val: 3 },
+    { id: 'boeing-defense',    name: 'Boeing Defense',               type: 'contractor', val: 4 },
   ],
 
   links: [
@@ -973,6 +975,20 @@ export const graphData: GraphData = {
     // SAIC
     { source: 'saic',             target: 'david-grusch',             label: 'named alongside other prime defense contractors as alleged SAP custodian in Grusch disclosure' },
     { source: 'saic',             target: 'dia-organization',         label: 'extensive DIA and intelligence community analytical and technology contracts' },
+
+    // Leidos
+    { source: 'leidos',           target: 'saic',                     label: 'Leidos is the government services successor to the original SAIC following the 2013 corporate split; inherited IC and DoD analytical contracts' },
+    { source: 'leidos',           target: 'david-grusch',             label: 'operates within the prime government services contractor ecosystem cited by Grusch as the institutional environment for alleged UAP SAP management' },
+    { source: 'leidos',           target: 'aaro',                     label: 'holds IC analytical support contracts spanning agencies with direct UAP data collection roles under AARO oversight mandate' },
+    { source: 'leidos',           target: 'uap-task-force',           label: 'IC support contract portfolio includes agencies that contributed to the UAPTF preliminary assessment data set' },
+
+    // Boeing Defense
+    { source: 'boeing-defense',   target: 'nimitz-tic-tac',           label: 'manufacturer of the F/A-18F Super Hornet flown by Fravor during the 2004 encounter and the aircraft that filmed the FLIR1 footage' },
+    { source: 'boeing-defense',   target: 'david-fravor',             label: 'Fravor piloted a Boeing F/A-18F Super Hornet from VFA-41 during the November 2004 Nimitz Tic Tac encounter' },
+    { source: 'boeing-defense',   target: 'uss-theodore-roosevelt',   label: 'F/A-18F Super Hornets assigned to USS Theodore Roosevelt filmed the Gimbal and GoFast UAP footage in 2014-2015' },
+    { source: 'boeing-defense',   target: 'david-grusch',             label: 'named alongside other prime aerospace contractors with classified advanced development programs as alleged SAP custodians in Grusch 2023 congressional testimony' },
+    { source: 'boeing-defense',   target: 'lockheed-martin',          label: 'co-prime aerospace contractor with parallel classified advanced development divisions (Phantom Works / Skunk Works) in UAP SAP custodianship context' },
+    { source: 'boeing-defense',   target: 'pentagon-uap-video-release-2020', label: 'the formally released FLIR1, Gimbal, and GoFast footage was captured by sensors aboard Boeing F/A-18 Super Hornets' },
 
     // Additional case connections (batch 3)
     // Belgian UFO Wave
