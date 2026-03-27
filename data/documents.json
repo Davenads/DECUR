@@ -679,6 +679,14 @@
         "date": "Ongoing",
         "description": "Available via Fold3, Internet Archive, and The Black Vault. Quarles's false public characterization was never officially retracted.",
         "type": "archive"
+      },
+      {
+        "id": "bb14-usaf-spin",
+        "label": "USAF Press Release Misrepresents Findings",
+        "date": "October 1955",
+        "description": "USAF issued a press release claiming the report showed only 3% unknowns. The actual Battelle data showed 21.5% unknowns - a statistical misrepresentation that shaped public perception for decades.",
+        "type": "public",
+        "branches_from": "bb14-battelle-production"
       }
     ]
   },
@@ -761,6 +769,14 @@
         "date": "December 1969",
         "description": "Project Blue Book officially closed December 17, 1969 citing the Condon Report. Official U.S. government UAP investigation did not formally resume until approximately 2007.",
         "type": "archive"
+      },
+      {
+        "id": "condon-saunders-levine-fired",
+        "label": "Saunders and Levine Dismissed",
+        "date": "February 1968",
+        "description": "Principal investigators David Saunders and Norman Levine were fired after the Low memo leaked. Their dismissal confirmed to critics that the project had been structured to reach a predetermined debunking conclusion.",
+        "type": "transfer",
+        "branches_from": "condon-low-memo"
       }
     ]
   },
@@ -1034,6 +1050,14 @@
         "date": "Late 1948",
         "description": "Vandenberg ordered all copies destroyed. Existence confirmed through Captain Edward Ruppelt's 1956 memoir and interviews with surviving SIGN team members. No copies known to survive.",
         "type": "archive"
+      },
+      {
+        "id": "sign-grudge-established",
+        "label": "Project GRUDGE Established",
+        "date": "February 1949",
+        "description": "SIGN was reorganized into Project GRUDGE with an explicit mandate to debunk rather than investigate UAP reports. The name change reflected the institutional reversal triggered by Vandenberg's rejection of the ETH conclusion.",
+        "type": "creation",
+        "branches_from": "sign-vandenberg-rejection"
       }
     ]
   },
