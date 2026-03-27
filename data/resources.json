@@ -775,7 +775,12 @@
       "type": "Reference",
       "description": "Curated collection of on-record UAP statements from politicians, intelligence officials, military pilots, and government reports, organized by thematic category.",
       "date_accessed": "2026-03-20",
-      "categories": ["quotes", "historical"]
+      "categories": ["quotes", "historical"],
+      "tags": [
+        "Reference",
+        "Quotes",
+        "Historical"
+      ]
     },
     {
       "id": "house-oversight-uap-hearing-jul-2023",

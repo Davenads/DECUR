@@ -136,7 +136,7 @@ const ResourceList: FC<ResourceListProps> = ({ category, data }) => {
                   )}
                   <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{r.description}</p>
                   <div className="flex flex-wrap gap-1 mt-3">
-                    {r.tags.map(tag => (
+                    {(r.tags ?? []).map(tag => (
                       <span key={tag} className="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">{tag}</span>
                     ))}
                   </div>
