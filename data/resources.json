@@ -335,6 +335,60 @@
         "AAWSAP",
         "2005"
       ]
+    },
+    {
+      "id": "dolan-national-security-state-vol2-2009",
+      "title": "UFOs and the National Security State, Volume 2: The Cover-Up Exposed 1973-1991",
+      "type": "Book",
+      "author": "Richard Dolan",
+      "year": "2009",
+      "description": "The second volume of Dolan's definitive historical series, covering 1973 to 1991. Documents the continuing suppression apparatus following Project Blue Book's closure, analyzing the growth of private program infrastructure, contractor involvement, and the systematic exclusion of congressional oversight. Includes detailed coverage of the Cash-Landrum incident, cattle mutilation investigations, the MJ-12 documents controversy, the Bentwaters/Rendlesham Forest case, the FAA radar data from the 1986 Japan Air Lines flight 1628 encounter over Alaska, and the formation of MUFON as the principal civilian investigative body. Paired with Volume 1, constitutes the most comprehensive documented history of the national security dimensions of UAP suppression available in open-source literature.",
+      "url": "https://www.amazon.com/UFOs-National-Security-State-Vol/dp/0967799511",
+      "insider": "richard-dolan",
+      "tags": [
+        "Book",
+        "Dolan",
+        "History",
+        "Government",
+        "Cover-Up",
+        "2009"
+      ]
+    },
+    {
+      "id": "pasulka-american-cosmic-2019",
+      "title": "American Cosmic: UFOs, Religion, and Technology",
+      "type": "Book",
+      "author": "D.W. Pasulka",
+      "year": "2019",
+      "description": "Academic ethnographic study by University of North Carolina Wilmington religious studies professor Diana Walsh Pasulka, examining UAP belief systems and their intersection with technology, religion, and memory. Based on fieldwork within the private scientist-insider community connected to UAP research, including access to figures anonymized as 'Tyler' and 'James' - widely believed to include Garry Nolan and Jacques Vallee respectively. Pasulka is granted access to a purported crash retrieval site in New Mexico and to materials analysis work by credentialed scientists. The book bridges the gap between academic religious studies and the classified-adjacent research community, treating UAP belief as a legitimate cultural and cognitive phenomenon rather than pathology. Published by Oxford University Press.",
+      "url": "https://global.oup.com/academic/product/american-cosmic-9780190692087",
+      "insider": "diana-pasulka",
+      "tags": [
+        "Book",
+        "Pasulka",
+        "Academic",
+        "Religion",
+        "Technology",
+        "2019"
+      ]
+    },
+    {
+      "id": "narcap",
+      "title": "NARCAP - National Aviation Reporting Center on Anomalous Phenomena",
+      "type": "Research Archive",
+      "author": "Founded by Dr. Richard F. Haines (former NASA scientist); Ted Roe (Executive Director)",
+      "year": "2000",
+      "description": "Aviation-focused UAP research organization co-founded by former NASA scientist Dr. Richard Haines, specializing in the collection, analysis, and publication of UAP reports from professional aviators. NARCAP maintains the most rigorous protocol-driven database of aviation UAP encounters available in the public domain, applying ICAO safety reporting standards to UAP incident documentation. Published over 20 technical reports on pilot encounters, electromagnetic effects on avionics, and near-miss incidents. Key contributions include technical reports on the 2006 O'Hare Airport incident and systematic analysis of UAP electromagnetic effects on aircraft systems. NARCAP's methodology influenced Ryan Graves's Aviation Safety Reporting Coalition and the FAA reporting gap analysis presented in his 2023 congressional testimony.",
+      "url": "https://www.narcap.org",
+      "insider": null,
+      "tags": [
+        "Research Archive",
+        "Aviation",
+        "NARCAP",
+        "Haines",
+        "Pilots",
+        "Safety"
+      ]
     }
   ],
   "testimony": [

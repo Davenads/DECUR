@@ -486,6 +486,15 @@ const Sources: NextPage = () => {
           />
 
           <SourceCard
+            name="UFOs and the National Security State Volume 2: The Cover-Up Exposed 1973-1991 - Dolan (2009)"
+            url="https://www.amazon.com/UFOs-National-Security-State-Vol/dp/0967799511"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Second volume of Dolan's historical series covering 1973-1991. Documents contractor involvement, Bentwaters/Rendlesham, JAL 1628, Cash-Landrum, and MJ-12 controversy. Paired with Volume 1, constitutes the most comprehensive open-source history of UAP program suppression."
+            notes="Used for: Dolan Vol. 2 resource entry."
+          />
+
+          <SourceCard
             name="The Day After Roswell (Corso, Birnes - 1997)"
             url="https://www.simonandschuster.com/books/The-Day-After-Roswell/Philip-J-Corso/9780671009830"
             type="Published Book"
@@ -719,6 +728,15 @@ const Sources: NextPage = () => {
             description="Primary account of NIDS investigation of Skinwalker Ranch 1996-2004. Co-authored by NIDS deputy administrator Colm Kelleher and investigative journalist George Knapp. Documents the research that directly motivated James Lacatski's 2008 visit and the subsequent AAWSAP program."
             notes="Used for: Hunt for the Skinwalker resource entry."
           />
+
+          <SourceCard
+            name="American Cosmic: UFOs, Religion, and Technology - D.W. Pasulka (2019)"
+            url="https://global.oup.com/academic/product/american-cosmic-9780190692087"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Academic ethnographic study by UNC Wilmington religious studies professor Diana Walsh Pasulka, examining UAP belief systems among credentialed insiders. Published by Oxford University Press. Based on access to the private scientist community including figures widely believed to include Garry Nolan and Jacques Vallee."
+            notes="Used for: American Cosmic resource entry."
+          />
         </section>
 
         {/* Government programs sources */}
@@ -904,6 +922,15 @@ const Sources: NextPage = () => {
             typeColor="bg-amber-100 text-amber-700"
             description="NICAP's digitized case investigation files maintained by Fran Ridge. Includes the independent investigation reports for Levelland (1957) that challenged Blue Book's ball lightning explanation, and the Coyne Helicopter (1973) documentation."
             notes="Used for: Levelland 1957, Coyne Helicopter 1973."
+          />
+
+          <SourceCard
+            name="NARCAP - National Aviation Reporting Center on Anomalous Phenomena (narcap.org)"
+            url="https://www.narcap.org"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Aviation-focused UAP research organization co-founded by former NASA scientist Dr. Richard Haines. Maintains a protocol-driven database of pilot UAP encounters applying ICAO safety reporting standards. Published over 20 technical reports including analysis of the 2006 O'Hare Airport incident. Methodology influenced Ryan Graves's Aviation Safety Reporting Coalition."
+            notes="Used for: NARCAP resource entry."
           />
 
           <SourceCard
