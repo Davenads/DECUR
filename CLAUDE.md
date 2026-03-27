@@ -410,6 +410,7 @@ Exports: `DISCLOSURE_TYPE_LABELS`, `DISCLOSURE_TYPE_COLORS`, `DISCLOSURE_TYPE_DO
 
 ## Writing & Copy Rules
 - **No em dashes** - do not use `—` (U+2014) anywhere in UI copy, component text, or documentation. Use a regular hyphen-minus `-` or rewrite the sentence.
+- **Document `name` fields - common name first** - the site search (Fuse.js, `threshold: 0.35`, `ignoreLocation: false`) scores matches by position in the string. If a document's common/identifying name appears late in a long academic-style title, searches for that name will score above the threshold and return no results. Always lead with the identifying common name: `"Condon Report: Scientific Study of Unidentified Flying Objects (1969)"` not `"Scientific Study of Unidentified Flying Objects (Condon Report)"`. This applies to any string field used as a Fuse.js search key (`name`, `title`, `role`, etc.).
 
 ---
 
