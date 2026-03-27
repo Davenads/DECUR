@@ -1866,5 +1866,83 @@
         "type": "public"
       }
     ]
+  },
+  {
+    "id": "sobeps-belgian-ufo-wave-1991",
+    "name": "SOBEPS Belgian UFO Wave Investigation Report",
+    "date": "1991",
+    "issuing_authority": "Societe Belge d'Etude des Phenomenes Spatiaux (SOBEPS) / Belgian Air Force",
+    "document_type": "investigation-report",
+    "authenticity_status": "confirmed-authentic",
+    "page_count": 492,
+    "public_url": "https://www.sobeps.org/",
+    "summary": "The SOBEPS report documents the 1989-1991 Belgian UFO wave - one of the most thoroughly documented UAP events in history. During this period, thousands of witnesses reported large, silent, low-flying triangular craft over Belgium. The Belgian Air Force authorized an unprecedented civilian-military investigation, including the famous March 30, 1990 F-16 radar intercept in which two fighter jets locked radar on a target that performed acceleration maneuvers exceeding 40G - physically impossible for any known aircraft or human pilot. SOBEPS compiled over 2,600 witness reports and produced a two-volume scientific analysis in partnership with Belgian Air Force personnel. The investigation remains unique as one of the only official military investigations conducted openly with civilian scientific cooperation.",
+    "significance": "The Belgian UFO wave represents the gold standard for officially documented UAP cases. The F-16 radar data - authenticated by the Belgian Air Force Chief of Staff General Wilfried De Brouwer - recorded flight characteristics that remain unexplained by conventional aerospace. The SOBEPS investigation established a model for civilian-military UAP cooperation that no other government has replicated. De Brouwer's public press conference confirming the radar data constitutes one of the few instances of a sitting military commander officially acknowledging anomalous aerial phenomenon.",
+    "key_findings": [
+      "Belgian Air Force F-16 radar locked onto an unidentified target on March 30, 1990, recording acceleration exceeding 40G and speed changes from 280 km/h to over 1,800 km/h in seconds",
+      "Over 2,600 witness reports were systematically collected and analyzed across Belgium between November 1989 and April 1991",
+      "General Wilfried De Brouwer, Belgian Air Force Chief of Staff, held a public press conference confirming the radar data was authentic and the objects unidentified",
+      "The craft were consistently described as large equilateral triangles with bright lights at each corner and a central red pulsing light, typically silent and low-flying",
+      "SOBEPS analysis ruled out conventional aircraft, helicopters, weather balloons, stealth prototypes, and atmospheric phenomena as explanations",
+      "The Belgian investigation established the first formal civilian-military UAP research partnership, with Air Force personnel directly contributing to SOBEPS analysis"
+    ],
+    "provenance": "Civilian-military joint investigation conducted by SOBEPS in direct cooperation with the Belgian Air Force; primary compiled report published 1991 as 'Vague d'OVNI sur la Belgique' Vol. 1; Vol. 2 published 1994. General De Brouwer held press conference April 1990 releasing radar data publicly.",
+    "insider_connections": [
+      {
+        "id": "jacques-vallee",
+        "note": "French-American scientist who contributed analysis to the SOBEPS investigation and cited the Belgian wave extensively in his research on UAP patterns."
+      },
+      {
+        "id": "leslie-kean",
+        "note": "Journalist who featured General De Brouwer's account and the Belgian radar data prominently in 'UFOs: Generals, Pilots and Government Officials Go on the Record' (2010)."
+      },
+      {
+        "id": "richard-dolan",
+        "note": "Historian who documented the SOBEPS investigation extensively in 'UFOs and the National Security State' as a landmark case of official military engagement."
+      }
+    ],
+    "limitations": [
+      "The investigation and published reports are primarily in French; full English translations of both volumes have not been officially published",
+      "The F-16 radar film/data was released at a press conference but has not been independently subjected to modern signal analysis with current methodology",
+      "SOBEPS as an organization dissolved in 2007; original case files and data are not centrally accessible",
+      "Some skeptical analyses have argued the F-16 radar returns could be consistent with radar spoofing or instrumentation artifacts, though Belgian Air Force investigators rejected these explanations"
+    ],
+    "provenance_chain": [
+      {
+        "id": "sobeps-initial-reports",
+        "label": "Wave Begins",
+        "date": "November 1989",
+        "description": "First mass sighting reports emerge across Belgium. SOBEPS begins systematic collection. Belgian Air Force monitors radar contacts.",
+        "type": "creation"
+      },
+      {
+        "id": "sobeps-military-cooperation",
+        "label": "Military-Civilian Partnership",
+        "date": "Late 1989 - Early 1990",
+        "description": "Belgian Air Force formally authorizes SOBEPS investigation and assigns personnel to cooperate. Unprecedented open military-civilian UAP research begins.",
+        "type": "transfer"
+      },
+      {
+        "id": "sobeps-f16-intercept",
+        "label": "F-16 Radar Intercept",
+        "date": "March 30, 1990",
+        "description": "Two Belgian Air Force F-16s scrambled; radar locks onto anomalous target performing 40G+ maneuvers. General De Brouwer holds public press conference releasing radar data.",
+        "type": "transfer"
+      },
+      {
+        "id": "sobeps-vol1-publication",
+        "label": "Volume 1 Published",
+        "date": "1991",
+        "description": "SOBEPS publishes first volume of official investigation compiling 2,600+ witness reports and analysis with Belgian Air Force cooperation.",
+        "type": "public"
+      },
+      {
+        "id": "sobeps-vol2-publication",
+        "label": "Volume 2 Published",
+        "date": "1994",
+        "description": "SOBEPS publishes second volume with extended analysis and case studies. Investigation formally concluded. De Brouwer later publishes English-language summary for international audience.",
+        "type": "archive"
+      }
+    ]
   }
 ]

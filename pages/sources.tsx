@@ -1242,9 +1242,19 @@ const Sources: NextPage = () => {
             url="https://www.amazon.com/dp/0307716848"
             type="Published Book"
             typeColor="bg-purple-100 text-purple-700"
-            description="Kean's landmark 2010 investigative book draws directly on the UK National Archives release as one of its primary documentary sources. The DI55 assessments and MoD investigation files are central to Kean's argument that governments privately treated UAP as a serious intelligence and defense matter. Nick Pope contributed a chapter on the UK program. Primary secondary source for the UK MoD UFO Files document entry and for understanding how the release was received internationally."
+            description="Kean's landmark 2010 investigative book draws directly on the UK National Archives release as one of its primary documentary sources. The DI55 assessments and MoD investigation files are central to Kean's argument that governments privately treated UAP as a serious intelligence and defense matter. Nick Pope contributed a chapter on the UK program, and General Wilfried De Brouwer contributed a chapter on the Belgian wave. Primary secondary source for the UK MoD UFO Files document entry, Pentagon UAP Video Formal Release, and SOBEPS Belgian UFO Wave Investigation Report."
             coverage="2009-2010"
-            notes="Used for: UK Ministry of Defence UFO Files (1950-2009), Pentagon UAP Video Formal Release."
+            notes="Used for: UK Ministry of Defence UFO Files (1950-2009), Pentagon UAP Video Formal Release, SOBEPS Belgian UFO Wave Investigation Report."
+          />
+
+          {/* SOBEPS Belgian UFO Wave Investigation Report (1991) */}
+          <SourceCard
+            name="Vague d'OVNI sur la Belgique - SOBEPS (1991)"
+            url="https://www.amazon.fr/Vague-dovni-Belgique-collectif-SOBEPS/dp/2871290091"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary two-volume SOBEPS investigation report compiling 2,600+ witness reports and Belgian Air Force cooperation data including F-16 radar intercept analysis."
+            notes="Used for: SOBEPS Belgian UFO Wave Investigation Report."
           />
 
           {/* Pentagon UAP Video Formal Release (2020) */}

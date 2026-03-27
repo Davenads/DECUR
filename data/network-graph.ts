@@ -221,6 +221,7 @@ export const graphData: GraphData = {
     // New documents (batch 4)
     { id: 'uk-mod-ufo-files-2009', name: 'UK MoD UFO Files (1950-2009)', type: 'document', val: 4 },
     { id: 'pentagon-uap-video-release-2020', name: 'Pentagon UAP Video Release (2020)', type: 'document', val: 5 },
+    { id: 'sobeps-belgian-ufo-wave-1991', name: 'SOBEPS Belgian UFO Wave Report (1991)', type: 'document', val: 4 },
 
     // New cases (batch 4 — sourced from data/cases.json)
     { id: 'kenneth-arnold-1947',     name: 'Kenneth Arnold Sighting (1947)',          type: 'case', val: 4 },
@@ -1145,5 +1146,11 @@ export const graphData: GraphData = {
     { source: 'grusch-icig-determination-2023', target: 'luis-elizondo',   label: 'prior AATIP disclosures provided institutional context for ICIG credibility assessment' },
     { source: 'grusch-icig-determination-2023', target: 'uap-task-force',  label: 'Grusch complaint derived from his role as NGA representative to the UAPTF' },
     { source: 'grusch-icig-determination-2023', target: 'aaro',            label: 'ICIG determination preceded and shaped the congressional oversight context in which AARO operated' },
+
+    // SOBEPS Belgian UFO Wave Investigation Report (1991) connections
+    { source: 'sobeps-belgian-ufo-wave-1991', target: 'belgian-ufo-wave',  label: 'primary official investigation report documenting the 1989-1991 Belgian UFO wave including F-16 radar intercept data' },
+    { source: 'sobeps-belgian-ufo-wave-1991', target: 'jacques-vallee',    label: 'Vallee contributed analysis to the SOBEPS investigation and cited the Belgian wave as among the most rigorously documented mass-sighting events' },
+    { source: 'sobeps-belgian-ufo-wave-1991', target: 'leslie-kean',       label: "Kean featured General De Brouwer's account and the Belgian radar data prominently in UFOs: Generals, Pilots and Government Officials (2010)" },
+    { source: 'sobeps-belgian-ufo-wave-1991', target: 'richard-dolan',     label: "Dolan documented the SOBEPS investigation extensively in UFOs and the National Security State as a landmark case of official military engagement" },
   ],
 };
