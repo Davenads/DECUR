@@ -217,6 +217,7 @@ export const graphData: GraphData = {
 
     // New documents (batch 4)
     { id: 'uk-mod-ufo-files-2009', name: 'UK MoD UFO Files (1950-2009)', type: 'document', val: 4 },
+    { id: 'pentagon-uap-video-release-2020', name: 'Pentagon UAP Video Release (2020)', type: 'document', val: 5 },
 
     // New cases (batch 4 — sourced from data/cases.json)
     { id: 'kenneth-arnold-1947',     name: 'Kenneth Arnold Sighting (1947)',          type: 'case', val: 4 },
@@ -1127,5 +1128,12 @@ export const graphData: GraphData = {
     { source: 'uk-mod-ufo-files-2009', target: 'leslie-kean',        label: "Kean cited the DI55 files extensively in UFOs: Generals, Pilots and Government Officials (2010) as primary evidence of government-level UAP seriousness" },
     { source: 'uk-mod-ufo-files-2009', target: 'rendlesham-forest',  label: 'the Rendlesham Forest 1980 incident files are included in the released collection; DI55 investigation and Charles Halt correspondence are part of the archive' },
     { source: 'uk-mod-ufo-files-2009', target: 'richard-dolan',      label: 'Dolan analyzed the UK release within his UFOs and the National Security State series as the most comprehensive example of European government UAP concealment' },
+
+    // Pentagon UAP Video Formal Release (2020) connections
+    { source: 'pentagon-uap-video-release-2020', target: 'luis-elizondo',  label: 'formally legitimized the 2017 TTSA video release that Elizondo orchestrated after resigning from AATIP' },
+    { source: 'pentagon-uap-video-release-2020', target: 'david-fravor',   label: 'confirmed authenticity of FLIR1 footage from the 2004 Nimitz encounter Fravor witnessed and publicly testified about' },
+    { source: 'pentagon-uap-video-release-2020', target: 'leslie-kean',    label: 'Kean co-authored the 2017 NYT article first publishing the TTSA videos; this release confirmed the footage was genuine' },
+    { source: 'pentagon-uap-video-release-2020', target: 'nimitz-tic-tac', label: 'FLIR1 video confirmed as authentic footage from the November 2004 Nimitz Tic Tac encounter' },
+    { source: 'pentagon-uap-video-release-2020', target: 'aatip',          label: 'videos were obtained and advocated for by AATIP under Elizondo; formal release retroactively validated program efforts' },
   ],
 };

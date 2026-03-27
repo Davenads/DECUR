@@ -1703,5 +1703,90 @@
         "type": "archive"
       }
     ]
+  },
+  {
+    "id": "pentagon-uap-video-release-2020",
+    "name": "Pentagon UAP Video Formal Release",
+    "date": "April 27, 2020",
+    "issuing_authority": "U.S. Department of Defense",
+    "document_type": "government-memo",
+    "authenticity_status": "confirmed-official",
+    "page_count": 2,
+    "public_url": "https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-releasing-ufo-videos/",
+    "summary": "Official DoD statement formally releasing three previously leaked Navy UAP videos - FLIR1 (2004 Nimitz 'Tic Tac'), Gimbal (2015), and GoFast (2015) - into the public domain. The release confirmed the videos were authentic Navy footage and had not been authorized for prior release, legitimizing years of unofficial disclosures. DoD stated the videos were released 'to clear up any misconceptions by the public on whether or not the footage that has been circulating was real.' No explanation was provided for the objects depicted.",
+    "significance": "First official Pentagon acknowledgment that the three most widely-circulated UAP videos are authentic military footage. Marked a historic shift from decades of official denial/ridicule and directly preceded the June 2021 ODNI UAP Task Force report. Legitimized Luis Elizondo's 2017 disclosure and validated Navy pilot testimony about the Nimitz and Roosevelt encounters.",
+    "key_findings": [
+      "DoD formally confirmed FLIR1, Gimbal, and GoFast videos are authentic U.S. Navy footage",
+      "Prior circulation of the videos (via TTSA in 2017) was explicitly stated to be unauthorized",
+      "DoD cited clearing up 'misconceptions' as the stated rationale - no UAP identification was offered",
+      "All three videos were cleared for release by the Navy and the Office of the Under Secretary of Defense for Intelligence",
+      "The release contained no classified information and made no claims about the nature of the objects",
+      "Statement implicitly validated the testimony of David Fravor, Chad Underwood, and other Nimitz/Roosevelt encounter pilots"
+    ],
+    "provenance": "Released directly by the Department of Defense Office of the Assistant to the Secretary of Defense for Public Affairs on April 27, 2020.",
+    "insider_connections": [
+      {
+        "id": "luis-elizondo",
+        "note": "AATIP director whose 2017 unauthorized release via TTSA was retroactively legitimized by this official DoD action."
+      },
+      {
+        "id": "david-fravor",
+        "note": "Primary Nimitz encounter pilot; his 2017 public testimony about FLIR1 was validated when DoD confirmed the footage's authenticity."
+      },
+      {
+        "id": "leslie-kean",
+        "note": "Co-authored the 2017 New York Times article that first published the TTSA videos; this release confirmed the footage she reported on was genuine."
+      }
+    ],
+    "limitations": [
+      "The DoD statement provided no analysis or identification of the objects depicted in the videos",
+      "Higher-resolution and longer versions of all three videos remain classified",
+      "The release was a press statement, not a full declassification of the underlying investigation files",
+      "No information was provided about the chain of custody or the internal review process that led to the release decision"
+    ],
+    "provenance_chain": [
+      {
+        "id": "original-capture",
+        "label": "Original Capture",
+        "description": "FLIR1 recorded during Nimitz carrier strike group training; Gimbal and GoFast recorded by USS Theodore Roosevelt aircrew during East Coast operations.",
+        "date": "Nov 2004 / Jan 2015",
+        "type": "origin"
+      },
+      {
+        "id": "classified-hold",
+        "label": "Classified Hold",
+        "description": "Footage held internally by the Navy; not released to the public. Elizondo and others advocated internally for transparency.",
+        "date": "2004-2017",
+        "type": "classified"
+      },
+      {
+        "id": "ttsa-release",
+        "label": "Unauthorized Release (TTSA)",
+        "description": "To The Stars Academy of Arts & Science released all three videos alongside the New York Times AATIP expose, without official DoD authorization.",
+        "date": "December 2017",
+        "type": "leak"
+      },
+      {
+        "id": "navy-review",
+        "label": "Navy Review",
+        "description": "Navy conducted an internal review of the videos and determined they could be released without compromising national security or sources and methods.",
+        "date": "2019-2020",
+        "type": "transfer"
+      },
+      {
+        "id": "dod-authorization",
+        "label": "DoD Authorization",
+        "description": "Under Secretary of Defense for Intelligence cleared all three videos for official public release.",
+        "date": "April 2020",
+        "type": "transfer"
+      },
+      {
+        "id": "official-public-release",
+        "label": "Official Public Release",
+        "description": "DoD published the official statement and videos via defense.gov, entering them into the public domain.",
+        "date": "April 27, 2020",
+        "type": "public"
+      }
+    ]
   }
 ]

@@ -1225,7 +1225,17 @@ const Sources: NextPage = () => {
             typeColor="bg-purple-100 text-purple-700"
             description="Kean's landmark 2010 investigative book draws directly on the UK National Archives release as one of its primary documentary sources. The DI55 assessments and MoD investigation files are central to Kean's argument that governments privately treated UAP as a serious intelligence and defense matter. Nick Pope contributed a chapter on the UK program. Primary secondary source for the UK MoD UFO Files document entry and for understanding how the release was received internationally."
             coverage="2009-2010"
-            notes="Used for: UK Ministry of Defence UFO Files (1950-2009)."
+            notes="Used for: UK Ministry of Defence UFO Files (1950-2009), Pentagon UAP Video Formal Release."
+          />
+
+          {/* Pentagon UAP Video Formal Release (2020) */}
+          <SourceCard
+            name="DoD Statement - Pentagon UAP Video Release (2020)"
+            url="https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-releasing-ufo-videos/"
+            type="Government Statement"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official DoD press release formally declassifying FLIR1, Gimbal, and GoFast UAP videos. Primary source for document metadata and significance."
+            notes="Used for: Pentagon UAP Video Formal Release."
           />
         </section>
 
