@@ -634,7 +634,7 @@ const NetworkGraph: FC = () => {
 
             {/* Connection list */}
             {clickedConnectionCount > 0 && (
-              <div className="space-y-1 max-h-28 overflow-y-auto">
+              <div className="space-y-2 max-h-36 overflow-y-auto">
                 {filteredLinks
                   .filter(l => resolveId(l.source) === clickedNode.id || resolveId(l.target) === clickedNode.id)
                   .map((l) => {
@@ -645,10 +645,12 @@ const NetworkGraph: FC = () => {
                     const otherNode = filteredNodes.find(n => n.id === otherId);
                     if (!otherNode) return null;
                     return (
-                      <div key={`${src}-${tgt}`} className="flex items-center gap-2 text-xs">
-                        <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[otherNode.type] }} />
-                        <span className="text-gray-500 dark:text-gray-400 italic shrink-0">{(l as GraphLink).label}</span>
-                        <span className="text-gray-700 dark:text-gray-300">{otherNode.name}</span>
+                      <div key={`${src}-${tgt}`} className="text-xs space-y-0.5">
+                        <div className="flex items-center gap-1.5">
+                          <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: NODE_COLORS[otherNode.type] }} />
+                          <span className="font-medium text-gray-700 dark:text-gray-300">{otherNode.name}</span>
+                        </div>
+                        <p className="pl-3.5 text-gray-400 dark:text-gray-500 italic leading-snug">{(l as GraphLink).label}</p>
                       </div>
                     );
                   })}
