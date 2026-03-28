@@ -98,7 +98,13 @@ const Home: CustomNextPage<HomePageProps> = () => {
                   href="/data"
                   className="inline-block px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors"
                 >
-                  Explore the Archive →
+                  Browse the Archive →
+                </Link>
+                <Link
+                  href="/explore"
+                  className="block mt-3 text-sm text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary-light transition-colors"
+                >
+                  or explore the network →
                 </Link>
 
                 {/* Mobile stat grid — hidden on md+ where the sidebar widget takes over */}
