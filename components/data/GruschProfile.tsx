@@ -9,6 +9,7 @@ import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import TimelineList from './shared/TimelineList';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -72,15 +73,7 @@ const OverviewTab: FC = () => {
 
       <div>
         <h4 className={`${ps.h4} mb-3`}>Career Timeline</h4>
-        <div className="relative pl-5 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
-          {profile.key_events.map((e, i) => (
-            <div key={i} className="relative">
-              <div className="absolute -left-[1.4rem] top-1 w-2.5 h-2.5 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
-              <p className="text-xs font-mono text-gray-400 mb-0.5">{e.date}</p>
-              <p className={ps.body}>{e.event}</p>
-            </div>
-          ))}
-        </div>
+        <TimelineList events={profile.key_events.map(e => ({ year: e.date, event: e.event }))} />
       </div>
     </div>
   );

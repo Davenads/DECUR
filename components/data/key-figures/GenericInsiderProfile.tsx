@@ -12,6 +12,7 @@ import insidersIndex from '../../../data/key-figures/index.json';
 import { disclosureLabel } from '../shared/disclosureTypes';
 import type { ProfilePerson, ProfileDisclosure, ProfileSource, ProfileCredibility } from '../../../types/data';
 import { getProgramId } from '../../../lib/programMapping';
+import TimelineList from '../shared/TimelineList';
 
 const FigureCareerFlow = dynamic(
   () => import('../shared/FigureCareerFlow'),
@@ -248,20 +249,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
 );
 
 const TimelineTab: FC<{ events: KeyEvent[] }> = ({ events }) => (
-  <div className="relative">
-    <div className="absolute left-3 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />
-    <div className="space-y-5">
-      {events.map((ev, i) => (
-        <div key={i} className="flex gap-4 pl-8 relative">
-          <div className="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-900 shadow" />
-          <div>
-            <span className="text-xs font-semibold text-primary">{ev.year}</span>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mt-0.5 leading-relaxed">{ev.event}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
+  <TimelineList events={events} />
 );
 
 const PeopleTab: FC<{ people: ProfilePerson[] }> = ({ people }) => (
@@ -424,20 +412,7 @@ const LegislationTab: FC<{ legislation: LegislationData }> = ({ legislation }) =
     {legislation.key_actions && legislation.key_actions.length > 0 && (
       <div>
         <h4 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-3">Key Actions</h4>
-        <div className="relative">
-          <div className="absolute left-3 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />
-          <div className="space-y-5">
-            {legislation.key_actions.map((item, i) => (
-              <div key={i} className="flex gap-4 pl-8 relative">
-                <div className="absolute left-1.5 top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-900 shadow" />
-                <div>
-                  <span className="text-xs font-semibold text-primary">{item.year}</span>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mt-0.5 leading-relaxed">{item.action}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <TimelineList events={legislation.key_actions.map(a => ({ year: a.year, event: a.action }))} />
       </div>
     )}
     {legislation.assessment && (
