@@ -10,6 +10,7 @@ import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
 import { disclosureLabel } from '../shared/disclosureTypes';
+import { ps } from '../shared/profileStyles';
 import type { ProfilePerson, ProfileDisclosure, ProfileSource, ProfileCredibility } from '../../../types/data';
 import { getProgramId } from '../../../lib/programMapping';
 import TimelineList from '../shared/TimelineList';
@@ -119,42 +120,42 @@ function detectFeatures(data: Record<string, any>): Array<{ key: string; label: 
 
 const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; name: string; date: string; location: string; evidence_tier: string }> }> = ({ profile, relatedCases }) => (
   <div className="space-y-6">
-    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 space-y-3">
+    <div className={`${ps.infoCard} space-y-3`}>
       {profile.born && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Born</span>
-          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.born}</span>
+          <span className={ps.body}>{profile.born}</span>
         </div>
       )}
       {profile.died && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Died</span>
-          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.died}</span>
+          <span className={ps.body}>{profile.died}</span>
         </div>
       )}
       {profile.aliases.length > 0 && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Aliases</span>
-          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.aliases.join(', ')}</span>
+          <span className={ps.body}>{profile.aliases.join(', ')}</span>
         </div>
       )}
       {profile.service_period && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Service</span>
-          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.service_period}</span>
+          <span className={ps.body}>{profile.service_period}</span>
         </div>
       )}
       {profile.clearance && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Clearance</span>
-          <span className="text-sm text-gray-700 dark:text-gray-300">{profile.clearance}</span>
+          <span className={ps.body}>{profile.clearance}</span>
         </div>
       )}
     </div>
 
     <div>
       <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Summary</h3>
-      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{profile.summary}</p>
+      <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
     </div>
 
     {profile.roles && profile.roles.length > 0 && (
@@ -162,7 +163,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Roles</h3>
         <ul className="space-y-1">
           {profile.roles.map((role, i) => (
-            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-1 shrink-0">-</span>
               {role}
             </li>
@@ -200,7 +201,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Education</h3>
         <ul className="space-y-1">
           {profile.education.map((ed, i) => (
-            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-1 shrink-0">-</span>
               {ed}
             </li>
@@ -214,7 +215,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
         <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Early Career</h3>
         <ul className="space-y-2">
           {profile.early_career.map((item, i) => (
-            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-1 shrink-0">-</span>
               {item}
             </li>
@@ -263,7 +264,7 @@ const PeopleTab: FC<{ people: ProfilePerson[] }> = ({ people }) => (
 const DisclosuresTab: FC<{ disclosures: ProfileDisclosure[] }> = ({ disclosures }) => (
   <div className="space-y-4">
     {disclosures.map((d, i) => (
-      <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+      <div key={i} className={ps.borderCard}>
         <div className="flex items-start justify-between gap-2 mb-1">
           <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">{d.title}</span>
           <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
@@ -274,7 +275,7 @@ const DisclosuresTab: FC<{ disclosures: ProfileDisclosure[] }> = ({ disclosures 
           {d.date} · {d.outlet}
           {d.interviewer && d.interviewer !== 'N/A' ? ` · ${d.interviewer}` : ''}
         </p>
-        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{d.notes}</p>
+        <p className={`${ps.bodyMuted} leading-relaxed`}>{d.notes}</p>
       </div>
     ))}
   </div>
@@ -283,7 +284,7 @@ const DisclosuresTab: FC<{ disclosures: ProfileDisclosure[] }> = ({ disclosures 
 const SourcesTab: FC<{ sources: ProfileSource[] }> = ({ sources }) => (
   <div className="space-y-3">
     {sources.map((s, i) => (
-      <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+      <div key={i} className={ps.borderCard}>
         <div className="flex items-start justify-between gap-2 mb-1">
           <a
             href={s.url}
@@ -297,7 +298,7 @@ const SourcesTab: FC<{ sources: ProfileSource[] }> = ({ sources }) => (
             {s.type}
           </span>
         </div>
-        {s.notes && <p className="text-sm text-gray-600 dark:text-gray-400">{s.notes}</p>}
+        {s.notes && <p className={ps.bodyMuted}>{s.notes}</p>}
       </div>
     ))}
   </div>
@@ -309,13 +310,13 @@ const FeatureTab: FC<{ data: Record<string, any> }> = ({ data }) => {
   const renderValue = (value: unknown, depth = 0): React.ReactNode => {
     if (value === null || value === undefined) return null;
     if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
-      return <span className="text-sm text-gray-700 dark:text-gray-300">{String(value)}</span>;
+      return <span className={ps.body}>{String(value)}</span>;
     }
     if (Array.isArray(value)) {
       return (
         <ul className="space-y-1 mt-1">
           {value.map((item, i) => (
-            <li key={i} className="text-sm text-gray-700 dark:text-gray-300 flex gap-2">
+            <li key={i} className={ps.listItem}>
               {typeof item === 'string' ? (
                 <>
                   <span className="text-primary mt-1 shrink-0">-</span>
@@ -378,12 +379,12 @@ const FiveObservablesTab: FC<{ observables: Observable[] }> = ({ observables }) 
     </p>
     <div className="space-y-3">
       {observables.map((obs, i) => (
-        <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+        <div key={i} className={ps.borderCard}>
           <div className="flex gap-3 items-start">
             <span className="text-primary font-bold text-sm shrink-0 w-5 pt-0.5">{i + 1}.</span>
             <div>
               <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-1">{obs.name}</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{obs.description}</p>
+              <p className={`${ps.bodyMuted} leading-relaxed`}>{obs.description}</p>
             </div>
           </div>
         </div>
@@ -407,7 +408,7 @@ interface LegislationData {
 const LegislationTab: FC<{ legislation: LegislationData }> = ({ legislation }) => (
   <div className="space-y-6">
     {legislation.overview && (
-      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{legislation.overview}</p>
+      <p className={`${ps.body} leading-relaxed`}>{legislation.overview}</p>
     )}
     {legislation.key_actions && legislation.key_actions.length > 0 && (
       <div>
@@ -440,7 +441,7 @@ const GenericClaimsTab: FC<{ claims: Claim[] }> = ({ claims }) => (
     {claims.map(claim => {
       const cfg = statusConfig[claim.status] ?? { label: claim.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
       return (
-        <div key={claim.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 space-y-3">
+        <div key={claim.id} className={`${ps.borderCardLg} space-y-3`}>
           <div className="flex items-start justify-between gap-3">
             <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">{claim.category}</p>
             <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
@@ -487,7 +488,7 @@ const GenericAssessmentTab: FC<GenericAssessmentTabProps> = ({ credibility, sour
         {credibility.supporting.map((item, i) => (
           <div key={i} className="flex gap-2 border border-green-100 dark:border-green-800/30 bg-green-50/50 dark:bg-green-900/20 rounded-lg p-3">
             <span className="text-green-500 mt-0.5 shrink-0">&#10003;</span>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
+            <p className={ps.body}>{item}</p>
           </div>
         ))}
       </div>
@@ -502,7 +503,7 @@ const GenericAssessmentTab: FC<GenericAssessmentTabProps> = ({ credibility, sour
         {credibility.contradicting.map((item, i) => (
           <div key={i} className="flex gap-2 border border-red-100 dark:border-red-800/30 bg-red-50/50 dark:bg-red-900/20 rounded-lg p-3">
             <span className="text-red-400 mt-0.5 shrink-0">&#10007;</span>
-            <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
+            <p className={ps.body}>{item}</p>
           </div>
         ))}
       </div>
@@ -513,7 +514,7 @@ const GenericAssessmentTab: FC<GenericAssessmentTabProps> = ({ credibility, sour
         <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Sources</h4>
         <div className="space-y-2">
           {sources.map((src, i) => (
-            <div key={i} className="flex items-start justify-between gap-4 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+            <div key={i} className={`flex items-start justify-between gap-4 ${ps.infoCardSm}`}>
               <div>
                 <p className="text-sm font-medium text-gray-800 dark:text-gray-200">{src.title}</p>
                 <p className="text-xs text-gray-400 mt-0.5 capitalize">
