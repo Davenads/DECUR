@@ -11,38 +11,12 @@ import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
 import { disclosureLabel } from '../shared/disclosureTypes';
 import type { ProfilePerson, ProfileDisclosure, ProfileSource, ProfileCredibility } from '../../../types/data';
+import { getProgramId } from '../../../lib/programMapping';
 
 const FigureCareerFlow = dynamic(
   () => import('../shared/FigureCareerFlow'),
   { ssr: false, loading: () => <div className="h-[240px] rounded-lg bg-gray-900 animate-pulse" /> }
 );
-
-// Maps organization name substrings (lowercase) to their /programs/[id] slug
-const ORG_PROGRAM_MAP: Array<[string, string]> = [
-  ['all-domain anomaly resolution office', 'aaro'],
-  ['aaro', 'aaro'],
-  ['advanced aerospace weapon system applications', 'aawsap'],
-  ['aawsap', 'aawsap'],
-  ['to the stars academy', 'ttsa'],
-  ['ttsa', 'ttsa'],
-  ['national institute for discovery science', 'nids'],
-  ['nids', 'nids'],
-  ['bigelow aerospace', 'bigelow-aerospace'],
-  ['sol foundation', 'sol-foundation'],
-  ['project blue book', 'project-blue-book'],
-  ['project sign', 'project-sign'],
-  ['project grudge', 'project-grudge'],
-  ['kona blue', 'kona-blue'],
-  ['immaculate constellation', 'immaculate-constellation'],
-];
-
-function getProgramId(org: string): string | null {
-  const lower = org.toLowerCase();
-  for (const [key, id] of ORG_PROGRAM_MAP) {
-    if (lower.includes(key)) return id;
-  }
-  return null;
-}
 
 interface GenericInsiderProfileProps {
   id: string;
