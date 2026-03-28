@@ -9,8 +9,8 @@ import { statusConfig } from '../shared/profileConstants';
 import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
-import { disclosureLabel } from '../shared/disclosureTypes';
 import { ps } from '../shared/profileStyles';
+import SharedDisclosuresTab from '../shared/tabs/SharedDisclosuresTab';
 import type { ProfilePerson, ProfileDisclosure, ProfileSource, ProfileCredibility } from '../../../types/data';
 import { getProgramId } from '../../../lib/programMapping';
 import TimelineList from '../shared/TimelineList';
@@ -261,25 +261,6 @@ const PeopleTab: FC<{ people: ProfilePerson[] }> = ({ people }) => (
   </div>
 );
 
-const DisclosuresTab: FC<{ disclosures: ProfileDisclosure[] }> = ({ disclosures }) => (
-  <div className="space-y-4">
-    {disclosures.map((d, i) => (
-      <div key={i} className={ps.borderCard}>
-        <div className="flex items-start justify-between gap-2 mb-1">
-          <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">{d.title}</span>
-          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
-            {disclosureLabel(d.type)}
-          </span>
-        </div>
-        <p className="text-xs text-gray-400 mb-2">
-          {d.date} · {d.outlet}
-          {d.interviewer && d.interviewer !== 'N/A' ? ` · ${d.interviewer}` : ''}
-        </p>
-        <p className={`${ps.bodyMuted} leading-relaxed`}>{d.notes}</p>
-      </div>
-    ))}
-  </div>
-);
 
 const SourcesTab: FC<{ sources: ProfileSource[] }> = ({ sources }) => (
   <div className="space-y-3">
@@ -625,7 +606,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
       case 'people':
         return <PeopleTab people={associatedPeople} />;
       case 'disclosures':
-        return <DisclosuresTab disclosures={disclosures} />;
+        return <SharedDisclosuresTab disclosures={disclosures} variant="card" />;
       case 'sources':
         return <SourcesTab sources={sources} />;
       case 'assessment':
