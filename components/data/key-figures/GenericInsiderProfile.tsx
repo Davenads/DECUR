@@ -10,6 +10,7 @@ import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
 import insidersIndex from '../../../data/key-figures/index.json';
 import { disclosureLabel } from '../shared/disclosureTypes';
+import type { ProfilePerson, ProfileDisclosure, ProfileSource, ProfileCredibility } from '../../../types/data';
 
 const FigureCareerFlow = dynamic(
   () => import('../shared/FigureCareerFlow'),
@@ -52,34 +53,13 @@ interface GenericInsiderProfileProps {
 
 // --- Types covering the common JSON schema ---
 
+/** Normalized key event (year always present after processing raw JSON). */
 interface KeyEvent {
   year: string;
   event: string;
 }
 
-interface AssociatedPerson {
-  id: string;
-  name: string;
-  role: string;
-  relationship: string;
-}
-
-interface Disclosure {
-  date: string;
-  type: string;
-  title: string;
-  outlet: string;
-  interviewer?: string;
-  notes: string;
-}
-
-interface Source {
-  title: string;
-  url: string;
-  type: string;
-  notes: string;
-}
-
+/** Generic profile JSON schema — used only for the Tier 1 generic renderer. */
 interface ProfileData {
   id: string;
   name: string;
@@ -100,13 +80,6 @@ interface ProfileData {
 
 // Feature tabs are identified by the pattern `feature:<key>` to support multiple features per profile.
 type TabId = 'overview' | 'timeline' | 'career-flow' | 'people' | 'disclosures' | 'sources' | 'assessment' | string;
-
-// --- Credibility ---
-
-interface Credibility {
-  supporting: string[];
-  contradicting: string[];
-}
 
 // --- Helpers ---
 
@@ -317,7 +290,7 @@ const TimelineTab: FC<{ events: KeyEvent[] }> = ({ events }) => (
   </div>
 );
 
-const PeopleTab: FC<{ people: AssociatedPerson[] }> = ({ people }) => (
+const PeopleTab: FC<{ people: ProfilePerson[] }> = ({ people }) => (
   <div className="space-y-4">
     {people.map((person) => (
       <PersonCard key={person.id} person={person} />
@@ -325,7 +298,7 @@ const PeopleTab: FC<{ people: AssociatedPerson[] }> = ({ people }) => (
   </div>
 );
 
-const DisclosuresTab: FC<{ disclosures: Disclosure[] }> = ({ disclosures }) => (
+const DisclosuresTab: FC<{ disclosures: ProfileDisclosure[] }> = ({ disclosures }) => (
   <div className="space-y-4">
     {disclosures.map((d, i) => (
       <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
@@ -345,7 +318,7 @@ const DisclosuresTab: FC<{ disclosures: Disclosure[] }> = ({ disclosures }) => (
   </div>
 );
 
-const SourcesTab: FC<{ sources: Source[] }> = ({ sources }) => (
+const SourcesTab: FC<{ sources: ProfileSource[] }> = ({ sources }) => (
   <div className="space-y-3">
     {sources.map((s, i) => (
       <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
@@ -536,8 +509,8 @@ const GenericClaimsTab: FC<{ claims: Claim[] }> = ({ claims }) => (
 // --- Assessment tab ---
 
 interface GenericAssessmentTabProps {
-  credibility: Credibility;
-  sources: Source[];
+  credibility: ProfileCredibility;
+  sources: ProfileSource[];
 }
 
 const GenericAssessmentTab: FC<GenericAssessmentTabProps> = ({ credibility, sources }) => (
@@ -629,9 +602,9 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
   }
 
   const profile: ProfileData = data.profile;
-  const associatedPeople: AssociatedPerson[] = data.associated_people ?? [];
-  const disclosures: Disclosure[] = data.disclosures ?? [];
-  const sources: Source[] = data.sources ?? [];
+  const associatedPeople: ProfilePerson[] = data.associated_people ?? [];
+  const disclosures: ProfileDisclosure[] = data.disclosures ?? [];
+  const sources: ProfileSource[] = data.sources ?? [];
   // Normalize key_events: tolerate both `year` and legacy `date` field names.
   // If a `date` value like "1994-09-16" is present, extract the year portion.
   const keyEvents: KeyEvent[] = (profile.key_events ?? []).map(ev => {
@@ -641,7 +614,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
   });
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const careerConnections: any[] = data.career_connections ?? [];
-  const credibility: Credibility | null = data.credibility
+  const credibility: ProfileCredibility | null = data.credibility
     ? { supporting: data.credibility.supporting ?? [], contradicting: data.credibility.contradicting ?? [] }
     : null;
   const features = detectFeatures(data);
