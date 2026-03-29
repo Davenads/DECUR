@@ -27,6 +27,7 @@ const TABS = [
   { id: 'disclosures',     label: 'Disclosures' },
   { id: 'career-network',  label: 'Career Network' },
   { id: 'network',         label: 'Network' },
+  { id: 'sources',         label: 'Sources' },
   { id: 'assessment',      label: 'Assessment' },
 ] as const;
 
@@ -85,7 +86,7 @@ const OverviewTab: FC = () => {
             <div key={i} className="relative">
               <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
               <div className="flex items-start gap-3">
-                <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.date}</span>
+                <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.year ?? ev.date}</span>
                 <span className={ps.body}>{ev.event}</span>
               </div>
             </div>
@@ -249,6 +250,29 @@ const NetworkTab: FC = () => (
   <SharedNetworkTab people={data.associated_people} introText="Key relationships in Mellon's disclosure network." />
 );
 
+const SourcesTab: FC = () => (
+  <div className="space-y-3">
+    {(data.sources ?? []).map((s, i) => (
+      <div key={i} className={ps.borderCard}>
+        <div className="flex items-start justify-between gap-2 mb-1">
+          <a
+            href={s.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-sm text-primary hover:underline"
+          >
+            {s.title}
+          </a>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 shrink-0">
+            {s.type}
+          </span>
+        </div>
+        {s.notes && <p className={ps.bodyMuted}>{s.notes}</p>}
+      </div>
+    ))}
+  </div>
+);
+
 const AssessmentTab: FC = () => (
   <SharedAssessmentTab
     credibility={data.credibility}
@@ -284,6 +308,7 @@ const MellonProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNode
         );
       }
       case 'network':     return <NetworkTab />;
+      case 'sources':     return <SourcesTab />;
       case 'assessment':  return <AssessmentTab />;
     }
   };

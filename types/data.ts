@@ -653,6 +653,7 @@ export interface MellonData {
   associated_people: ProfilePerson[];
   disclosures: MellonDisclosure[];
   career_connections?: ProfileCareerConnection[];
+  sources?: ProfileSource[];
 }
 
 /* ─── Davis Types ───────────────────────────────────────────── */
