@@ -4,6 +4,7 @@ import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
 import insidersIndex from '../../data/key-figures/index.json';
+import contractorsData from '../../data/contractors.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FGRef = any;
@@ -19,6 +20,9 @@ const DOCUMENT_IDS = new Set(graphData.nodes.filter(n => n.type === 'document').
 
 // Case node IDs that have dedicated /cases/[id] pages
 const CASE_IDS = new Set(graphData.nodes.filter(n => n.type === 'case').map(n => n.id));
+
+// Contractor node IDs that have dedicated /contractors/[id] pages
+const CONTRACTOR_IDS = new Set((contractorsData as Array<{ id: string }>).map(c => c.id));
 
 // Program node IDs that have dedicated /programs/[id] pages
 const PROGRAM_IDS = new Set([
@@ -305,6 +309,7 @@ const NetworkGraph: FC = () => {
         (gNode.type === 'document' && DOCUMENT_IDS.has(id)) ||
         (gNode.type === 'case' && CASE_IDS.has(id)) ||
         ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(id)) ||
+        (gNode.type === 'contractor' && CONTRACTOR_IDS.has(id)) ||
         DEEP_LINK_MAP[id] != null;
 
       if (isNav) {
@@ -312,6 +317,7 @@ const NetworkGraph: FC = () => {
         else if (gNode.type === 'document') router.push(`/documents/${id}?ref=explore`);
         else if (gNode.type === 'case') router.push(`/cases/${id}?ref=explore`);
         else if (gNode.type === 'organization' || gNode.type === 'project') router.push(`/programs/${id}?ref=explore`);
+        else if (gNode.type === 'contractor') router.push(`/contractors/${id}?ref=explore`);
         else if (DEEP_LINK_MAP[id]) router.push(`${DEEP_LINK_MAP[id]}?ref=explore`);
         return;
       }
@@ -343,6 +349,8 @@ const NetworkGraph: FC = () => {
       router.push(`/cases/${id}?ref=explore`);
     } else if ((clickedNode.type === 'organization' || clickedNode.type === 'project') && PROGRAM_IDS.has(id)) {
       router.push(`/programs/${id}?ref=explore`);
+    } else if (clickedNode.type === 'contractor' && CONTRACTOR_IDS.has(id)) {
+      router.push(`/contractors/${id}?ref=explore`);
     } else if (DEEP_LINK_MAP[id]) {
       router.push(`${DEEP_LINK_MAP[id]}?ref=explore`);
     }

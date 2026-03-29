@@ -1,7 +1,8 @@
 import type { GetServerSideProps } from 'next';
 import insiderIndex from '../data/key-figures/index.json';
 import casesData from '../data/cases.json';
-import { InsiderEntry, CaseEntry } from '../types/data';
+import contractorsData from '../data/contractors.json';
+import { InsiderEntry, CaseEntry, ContractorEntry } from '../types/data';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://decur.app';
 
@@ -37,7 +38,13 @@ function buildDynamicPages(): PageEntry[] {
     priority: '0.7',
   }));
 
-  return [...figurePages, ...casePages];
+  const contractorPages: PageEntry[] = (contractorsData as unknown as ContractorEntry[]).map(c => ({
+    url: `/contractors/${c.id}`,
+    changefreq: 'monthly' as const,
+    priority: '0.6',
+  }));
+
+  return [...figurePages, ...casePages, ...contractorPages];
 }
 
 function generateSitemap(): string {
