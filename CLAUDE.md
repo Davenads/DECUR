@@ -144,9 +144,33 @@ Most profiles. `GenericInsiderProfile.tsx` reads from `data/key-figures/[id].jso
 ### Tier 2 - Bespoke (custom TSX component)
 Only for profiles with fundamentally different tab structures (e.g., Dan Burisch, which has 10 specialized tabs). These require:
 - A dedicated component directory under `components/data/`
-- An `if` check in `InsidersList.tsx` to route to the bespoke component
+- An entry in `BESPOKE_REGISTRY` in `pages/figures/[id].tsx`
 
 **Default to Tier 1.** Only create a Tier 2 component if a figure's data cannot be reasonably expressed in the standard schema.
+
+**IMPORTANT - Before editing any key figure profile JSON:** Check `BESPOKE_REGISTRY` in `pages/figures/[id].tsx` to determine if the figure uses a bespoke component. If they do, the `GenericInsiderProfile.tsx` logic (auto-tabs for sources, disclosures, etc.) does NOT apply - you must inspect and potentially update the bespoke component directly.
+
+**Current Tier 2 bespoke profiles (as of 2026-03):**
+
+| Figure ID | Component file |
+|---|---|
+| `dan-burisch` | `components/data/InsiderProfile.tsx` (+ `key-figures/burisch/` dir) |
+| `bob-lazar` | `components/data/LazarProfile.tsx` |
+| `david-grusch` | `components/data/GruschProfile.tsx` |
+| `luis-elizondo` | `components/data/ElizondoProfile.tsx` |
+| `david-fravor` | `components/data/FravorProfile.tsx` |
+| `hal-puthoff` | `components/data/PuthoffProfile.tsx` |
+| `garry-nolan` | `components/data/NolanProfile.tsx` |
+| `karl-nell` | `components/data/NellProfile.tsx` |
+| `chris-mellon` | `components/data/MellonProfile.tsx` |
+| `eric-davis` | `components/data/DavisProfile.tsx` |
+| `robert-bigelow` | `components/data/BigelowProfile.tsx` |
+| `jacques-vallee` | `components/data/ValleeProfile.tsx` |
+| `nick-pope` | `components/data/PopeProfile.tsx` |
+| `jake-barber` | `components/data/BarberProfile.tsx` |
+| `tim-gallaudet` | `components/data/GallaudetProfile.tsx` |
+
+Update this table when adding new Tier 2 components.
 
 ---
 
