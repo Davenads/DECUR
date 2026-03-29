@@ -393,6 +393,26 @@ Each section uses `<SourceCard>` components. Find the relevant section comment i
 
 ---
 
+## SharedAssessmentTab Usage
+
+`SharedAssessmentTab` has two variants. **Always use the baseline variant** (the default) when wiring a new bespoke profile's Assessment tab.
+
+```tsx
+// Correct - baseline variant (CredibilityBalance bar + bordered green/red argument cards)
+<SharedAssessmentTab credibility={data.credibility} />
+
+// Wrong - compact variant renders a plain 2-column +/- list, no balance bar, no cards
+<SharedAssessmentTab credibility={data.credibility} variant="compact" />
+```
+
+The `compact` variant exists but is visually inconsistent with the rest of the platform. Do not use it in new profiles. If an existing profile is using `variant="compact"`, remove it so it falls back to `baseline`.
+
+**Optional props (baseline only):**
+- `methodologyNote` - amber box shown above the arguments (e.g. Elizondo, Mellon)
+- `sources` - source cards rendered below the arguments
+
+---
+
 ## Dynamic Architecture Conventions
 
 Several components derive display data dynamically from `data/key-figures/index.json` and the data JSON files. **Do not bypass these patterns by adding new hardcoded lookup tables.**

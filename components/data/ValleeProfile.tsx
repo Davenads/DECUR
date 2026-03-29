@@ -297,7 +297,7 @@ const SourcesTab: FC = () => (
 );
 
 const AssessmentTab: FC = () => (
-  <SharedAssessmentTab credibility={data.credibility} variant="compact" />
+  <SharedAssessmentTab credibility={data.credibility} />
 );
 
 /* ─── Main component ──────────────────────────────────────────── */
