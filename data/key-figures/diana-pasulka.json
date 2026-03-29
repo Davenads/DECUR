@@ -51,6 +51,14 @@
       {
         "year": "2023",
         "event": "Participated in SOL Foundation symposia alongside Garry Nolan, David Grusch, and other figures from the disclosure advocacy network; became a bridge between academic, religious, and intelligence community perspectives on UAP."
+      },
+      {
+        "year": "Nov 2023",
+        "event": "Appeared on That UFO Podcast (Encounters - Part Two) following her book release. Stated she believes David Grusch's claims about crash retrievals and biologics are true. Revealed she had written an essay documenting individuals studying biologics in 2016-2017 - before Grusch's public testimony made the topic mainstream."
+      },
+      {
+        "year": "Feb 2025",
+        "event": "Appeared twice on That UFO Podcast. Discussed programs using consciousness-based or psionic human-to-craft interface methods; reported that approximately 80% of contact experiencers describe feeling some form of interface with the craft. Announced a forthcoming book on AI and UAP. Noted that an 'Age of Disclosure' documentary in which she participated was premiering at SXSW. Stated she is 'in a position to know' whether Elon Musk's claim that there are no aliens is accurate, and that some individuals documented in American Cosmic worked with Musk."
       }
     ]
   },
@@ -79,6 +87,34 @@
       "id": "technology-consciousness-link",
       "claim": "Advanced UAP-related phenomena have catalyzed significant technological development through channels that are not publicly acknowledged, and tech industry insiders are aware of this.",
       "status": "unverified"
+    },
+    {
+      "id": "pre-grusch-biologics-documentation",
+      "claim": "Pasulka wrote an essay in 2016-2017 documenting individuals who were studying biological material associated with UAP programs - years before David Grusch's 2023 public testimony made the subject publicly known.",
+      "status": "unverified",
+      "basis": "Stated in her November 2023 That UFO Podcast appearance. The essay itself has not been publicly released; no independent source has confirmed the 2016-2017 biologics documentation.",
+      "notes": "If the documented timeline is accurate, it would represent pre-Grusch academic awareness of crash retrieval biological material study by credentialed researchers."
+    },
+    {
+      "id": "grusch-claims-belief",
+      "claim": "Pasulka stated she personally believes David Grusch's claims about crash retrievals and recovered non-human biologics are true, based on her own prior documentation of insider sources working in adjacent areas.",
+      "status": "unverified",
+      "basis": "Stated directly in her November 2023 That UFO Podcast appearance. This is a belief statement by an academic observer, not independent corroboration.",
+      "notes": "Her claim is notable because it represents a credentialed researcher asserting belief in crash retrieval programs based on her own prior fieldwork and insider access - not simply accepting Grusch's word."
+    },
+    {
+      "id": "consciousness-craft-interface",
+      "claim": "Programs exist that use consciousness-based or psionic human-to-craft interface methods, and approximately 80% of contact experiencers report feeling some form of direct interface or communication with craft.",
+      "status": "unverified",
+      "basis": "Stated in her February 2025 That UFO Podcast appearance. The 80% figure comes from Pasulka's own survey or synthesis of experiencer accounts. The claim about specific government programs using psionic interface is sourced from her anonymous insiders.",
+      "notes": "Connects to the broader remote viewing and human consciousness research lineage (SRI, STARGATE) and to claims made by other disclosure figures about craft requiring biological interaction."
+    },
+    {
+      "id": "american-cosmic-musk-connection",
+      "claim": "Some of the individuals documented in 'American Cosmic' have worked with Elon Musk, and Pasulka states she is in a position to evaluate the accuracy of Musk's February 2025 claim that 'there are no aliens.'",
+      "status": "unverified",
+      "basis": "Stated in her February 2025 That UFO Podcast appearances. The identities of American Cosmic's pseudonymous subjects remain protected, so the Musk connection cannot be independently verified.",
+      "notes": "Pasulka declined to say directly whether Musk was right or wrong, but her framing strongly implies she has information that would contradict his statement."
     }
   ],
   "credibility": {
@@ -121,6 +157,12 @@
       "name": "Dr. Colm Kelleher",
       "role": "Biochemist; NIDS deputy administrator; AAWSAP research manager",
       "relationship": "Researcher Pasulka intersected with through the same Bigelow and AAWSAP network of insiders that informs her documentation of the UAP research ecosystem."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NRO/UAPTF intelligence officer; UAP whistleblower",
+      "relationship": "Pasulka stated in November 2023 that she believes Grusch's claims about crash retrievals and biologics are true, citing her own prior documentation of insider sources working in adjacent areas as the basis for that assessment."
     }
   ],
   "career_connections": [
@@ -178,6 +220,27 @@
       "title": "Academic Lectures and Media Appearances (Google, Lex Fridman, and others)",
       "outlet": "Google Talks, Lex Fridman Podcast, and various academic venues",
       "notes": "Series of public appearances including a Google Talk on UAP as a transformative social phenomenon, podcast appearances with Lex Fridman, and academic conference presentations connecting UAP phenomena to religious studies frameworks."
+    },
+    {
+      "date": "Nov 2023",
+      "type": "podcast",
+      "title": "Diana W. Pasulka - Encounters - Part Two",
+      "outlet": "That UFO Podcast",
+      "notes": "Post-publication discussion of Encounters. Stated belief in Grusch's crash retrieval and biologics claims. Revealed pre-Grusch biologics essay (2016-2017). Discussed hitchhiker effect, physical effects from craft proximity, and Garry Nolan's health-effects research."
+    },
+    {
+      "date": "Feb 2025",
+      "type": "podcast",
+      "title": "Diana Pasulka - Beyond the Stars",
+      "outlet": "That UFO Podcast",
+      "notes": "Discussed psionic and consciousness-based craft interface programs; 80% of experiencers reporting interface. Announced AI/UAP book in progress. Age of Disclosure documentary at SXSW. Garry Nolan's photographs of physical injury from craft encounters. American Cosmic subjects' Musk connection."
+    },
+    {
+      "date": "Feb 2025",
+      "type": "podcast",
+      "title": "Diana Pasulka on Elon Musk - There Are No Aliens",
+      "outlet": "That UFO Podcast",
+      "notes": "Directly addressed Musk's February 2025 'no aliens' statement. Stated she is in a position to evaluate its accuracy and that some American Cosmic subjects worked with Musk. Declined to contradict him explicitly while strongly implying she has contrary information."
     }
   ],
   "sources": [
@@ -204,6 +267,24 @@
       "url": "https://lexfridman.com/diana-pasulka/",
       "type": "Podcast",
       "notes": "Notable long-form interview discussing American Cosmic, her insider access, the New Mexico site visit, and the relationship between UAP phenomena and religious transformation."
+    },
+    {
+      "title": "That UFO Podcast - Diana W. Pasulka: Encounters Part Two (Nov 2023)",
+      "url": "https://www.youtube.com/watch?v=c6CrH1MdyXQ",
+      "type": "Podcast",
+      "notes": "Post-Encounters publication discussion; pre-Grusch biologics essay reveal; belief in Grusch claims; hitchhiker effect and physical effects research"
+    },
+    {
+      "title": "That UFO Podcast - Diana Pasulka: Beyond the Stars (Feb 2025)",
+      "url": "https://www.youtube.com/watch?v=Mg0Jo_vYhK8",
+      "type": "Podcast",
+      "notes": "Psionic craft interface claim; 80% experiencer interface statistic; AI/UAP book announcement; SXSW documentary; Musk/American Cosmic connection"
+    },
+    {
+      "title": "That UFO Podcast - Diana Pasulka on Elon Musk (Feb 2025)",
+      "url": "https://www.youtube.com/watch?v=6C3o5M9M4bQ",
+      "type": "Podcast",
+      "notes": "Response to Musk's 'no aliens' statement; Pasulka's positioning as an informed observer; American Cosmic subjects and Musk connection"
     }
   ]
 }
