@@ -9,12 +9,13 @@ import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
 import casesData from '../data/cases.json';
 import documentsData from '../data/documents.json';
+import contractorsData from '../data/contractors.json';
 
 // ---- Types ----------------------------------------------------------------
 
 interface SearchItem {
   id: string;
-  type: 'insider' | 'case' | 'document' | 'timeline' | 'glossary' | 'resource';
+  type: 'insider' | 'case' | 'document' | 'timeline' | 'glossary' | 'resource' | 'contractor';
   title: string;
   subtitle?: string | null;
   description: string;
@@ -116,6 +117,22 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
       });
     }
 
+    // Defense Contractors
+    for (const c of contractorsData as Array<{
+      id: string; name: string; sublabel: string; headquarters: string;
+      founded: string; summary: string; tags: string[];
+    }>) {
+      corpus.push({
+        id: `contractor-${c.id}`,
+        type: 'contractor',
+        title: c.name,
+        subtitle: `Est. ${c.founded} · ${c.headquarters}`,
+        description: c.summary ?? c.tags?.join(', ') ?? '',
+        href: `/contractors/${c.id}`,
+        badge: 'Contractor',
+      });
+    }
+
     // Resources (sources + testimony)
     const resources = resourcesData as unknown as {
       sources: Array<{ id: string; title: string; author?: string; year?: string | number; description: string; type: string }>;
@@ -143,21 +160,23 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
 // ---- Helpers ---------------------------------------------------------------
 
 const TYPE_STYLES: Record<SearchItem['type'], string> = {
-  insider:  'bg-blue-100 text-blue-700',
-  case:     'bg-red-100 text-red-700',
-  document: 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300',
-  timeline: 'bg-amber-100 text-amber-700',
-  glossary: 'bg-indigo-100 text-indigo-700',
-  resource: 'bg-emerald-100 text-emerald-700',
+  insider:    'bg-blue-100 text-blue-700',
+  case:       'bg-red-100 text-red-700',
+  document:   'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300',
+  timeline:   'bg-amber-100 text-amber-700',
+  glossary:   'bg-indigo-100 text-indigo-700',
+  resource:   'bg-emerald-100 text-emerald-700',
+  contractor: 'bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300',
 };
 
 const TYPE_LABELS: Record<SearchItem['type'], string> = {
-  insider:  'Key Figures',
-  case:     'Documented Cases',
-  document: 'Declassified Documents',
-  timeline: 'Timeline Events',
-  glossary: 'Glossary',
-  resource: 'Resources',
+  insider:    'Key Figures',
+  case:       'Documented Cases',
+  document:   'Declassified Documents',
+  timeline:   'Timeline Events',
+  glossary:   'Glossary',
+  resource:   'Resources',
+  contractor: 'Defense Contractors',
 };
 
 // ---- Component -------------------------------------------------------------
@@ -215,7 +234,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
     },
     {}
   );
-  const typeOrder: SearchItem['type'][] = ['insider', 'case', 'document', 'timeline', 'glossary', 'resource'];
+  const typeOrder: SearchItem['type'][] = ['insider', 'case', 'document', 'contractor', 'timeline', 'glossary', 'resource'];
 
   return (
     <>

@@ -8,7 +8,41 @@
     "founded": "1926",
     "headquarters": "Bethesda, MD",
     "summary": "Major U.S. defense contractor whose Skunk Works division has been cited by multiple credible insiders as a potential custodian of recovered non-human technology under classified Special Access Programs.",
-    "description": "One of the largest defense contractors in the world, Lockheed Martin's Advanced Development Programs division - the Skunk Works, located in Palmdale, CA - has produced some of the most classified aerospace technologies in U.S. history, including the U-2, SR-71 Blackbird, F-117 Nighthawk, and F-22 Raptor. The Skunk Works' culture of extreme operational secrecy and its track record of producing technologies that appeared impossible at the time have made it a recurring focal point in UAP disclosure research.",
+    "description": "One of the largest defense contractors in the world, Lockheed Martin's Advanced Development Programs division - the Skunk Works, located in Palmdale, CA - has produced some of the most classified aerospace technologies in U.S. history, including the U-2, SR-71 Blackbird, F-117 Nighthawk, and F-22 Raptor. The Skunk Works' culture of extreme operational secrecy and its track record of producing technologies that appeared impossible at the time have made it a recurring focal point in UAP disclosure research. Former Skunk Works director Ben Rich made documented public statements before his death suggesting knowledge of extraterrestrial technology, and David Grusch's 2023 congressional testimony cited major aerospace prime contractors - fitting Lockheed's profile precisely - as alleged custodians of recovered non-human materials.",
+    "key_events": [
+      {
+        "year": "1955",
+        "event": "U-2 spy plane enters operational service, the first Skunk Works platform to demonstrate the division's ability to produce technology years ahead of public knowledge. Establishes the operational secrecy model that underpins subsequent classified programs."
+      },
+      {
+        "year": "1964",
+        "event": "SR-71 Blackbird first flight. The platform's performance characteristics were considered technologically impossible by most aerospace engineers at the time - a recurring comparison invoked by UAP researchers when discussing Skunk Works capabilities."
+      },
+      {
+        "year": "1975",
+        "event": "Ben Rich takes over as director of the Skunk Works following the retirement of founder Kelly Johnson. Rich will lead the division until 1991, overseeing the F-117 Nighthawk program and establishing the classified SAP culture that later becomes central to UAP disclosure allegations."
+      },
+      {
+        "year": "1988",
+        "event": "Bob Lazar alleges employment at S-4, a facility he describes as adjacent to Groom Lake, where he claims to have worked on reverse-engineering a recovered non-human propulsion system. Lazar does not name Lockheed directly but describes the program infrastructure as consistent with a prime contractor SAP environment."
+      },
+      {
+        "year": "1991",
+        "event": "Ben Rich makes documented statements at a UCLA Engineering Alumni Symposium that 'we already have the means to travel among the stars, but these technologies are locked up in black projects.' Rich also writes in private correspondence that extraterrestrial craft are real. Rich retires from the Skunk Works the same year."
+      },
+      {
+        "year": "1995",
+        "event": "Ben Rich dies of cancer. In the final years of his life, he made multiple private statements to researchers and colleagues referencing recovered ET technology. Researcher Jan Harzan documents multiple private conversations with Rich on the record."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "David Grusch testifies under oath before the House Oversight Committee that private defense contractors - naming major aerospace prime contractors by category - are current custodians of recovered non-human craft under Special Access Programs. Lockheed Martin's Skunk Works is widely understood to be among the contractors described."
+      },
+      {
+        "year": "Feb 2026",
+        "event": "Rep. Eric Burlison visits a hangar at NAS Patuxent River on a White House-approved trip, examining a facility alleged to be connected to a proposed Lockheed Martin-Robert Bigelow materials transfer. Three sources subsequently raised questions about whether the specific hangar accessed was the one tied to the alleged transfer. Details remain contested."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": null,
@@ -32,18 +66,48 @@
     ],
     "connected_figures": [
       {
-        "id": "grusch",
+        "id": "david-grusch",
         "name": "David Grusch",
         "role": "Intelligence officer, UAP whistleblower",
-        "relationship": "Named defense contractors including major aerospace primes as custodians of recovered non-human craft in 2023 congressional testimony under oath."
+        "relationship": "Named defense contractors including major aerospace primes as custodians of recovered non-human craft in 2023 congressional testimony under oath. Lockheed's Skunk Works profile matches the contractor category described."
+      },
+      {
+        "id": "bob-lazar",
+        "name": "Bob Lazar",
+        "role": "Claimed contractor physicist, S-4",
+        "relationship": "Lazar describes working within a classified contractor program at S-4 (adjacent to Area 51) in 1988-1989, with program infrastructure consistent with a major aerospace prime SAP. He does not name Lockheed directly but the program profile overlaps with Skunk Works operational patterns."
+      }
+    ],
+    "connected_programs": [
+      {
+        "program_id": "aawsap",
+        "program_name": "AAWSAP",
+        "relationship": "The DIA-BAASS AAWSAP contract and associated research directly investigated allegations of recovered non-human materials held by private contractors. Lockheed's classified program profile was a recurring subject within the AAWSAP research scope."
+      },
+      {
+        "program_id": "uap-task-force",
+        "program_name": "UAP Task Force (UAPTF)",
+        "relationship": "The UAPTF's mandate included investigating the chain of custody for alleged recovered UAP materials, placing prime aerospace contractors including Lockheed Martin within scope of its classified assessments."
+      }
+    ],
+    "related_documents": [
+      {
+        "doc_id": "wilson-davis-memo",
+        "doc_name": "Wilson-Davis Memo",
+        "relationship": "The Wilson-Davis Memo documents Adm. Wilson's alleged investigation into a private contractor reverse-engineering program operating outside congressional oversight - a program profile closely matching what has been attributed to Lockheed Martin's classified divisions."
+      },
+      {
+        "doc_id": "grusch-ig-complaint-2023",
+        "doc_name": "Grusch IC Inspector General Complaint",
+        "relationship": "Grusch's IG complaint specifically names private defense contractors as the institutional custodians of recovered non-human materials, the claim that most directly implicates Lockheed Martin's classified programs."
       }
     ],
     "sources": [
       {
         "title": "Skunk Works: A Personal Memoir (Ben Rich & Leo Janos, 1994)",
-        "url": null,
+        "url": "https://www.amazon.com/Skunk-Works-Personal-Memoir-Lockheed/dp/0316743003",
         "type": "Book",
-        "notes": "Primary source for Ben Rich's statements about classified programs and extraterrestrial technology."
+        "notes": "Primary source for Ben Rich's statements about classified programs. The book itself does not contain the ET-related statements, which were made in speeches and private correspondence after publication."
       },
       {
         "title": "House Oversight UAP Hearing - Grusch Contractor Testimony (Jul 2023)",
@@ -63,7 +127,25 @@
     "founded": "1939",
     "headquarters": "Falls Church, VA",
     "summary": "Principal U.S. defense contractor that absorbed TRW Inc. in 2002, significantly expanding its classified intelligence and aerospace footprint. Named alongside other prime contractors in UAP disclosure testimony citing private custodianship of recovered materials.",
-    "description": "Northrop Grumman is a principal U.S. defense contractor specializing in aerospace, electronics, and advanced technologies. The company acquired TRW Inc. in 2002 - a major defense contractor with extensive classified intelligence and aerospace programs, including a deep relationship with the National Reconnaissance Office - significantly expanding its classified program footprint. Northrop Grumman produces the B-2 Spirit and B-21 Raider stealth bombers and has historically received contracts for some of the U.S. military's most sensitive programs.",
+    "description": "Northrop Grumman is a principal U.S. defense contractor specializing in aerospace, electronics, and advanced technologies. The company acquired TRW Inc. in 2002 - a major defense contractor with extensive classified intelligence and aerospace programs, including a deep relationship with the National Reconnaissance Office - significantly expanding its classified program footprint. Northrop Grumman produces the B-2 Spirit and B-21 Raider stealth bombers and has historically received contracts for some of the U.S. military's most sensitive programs. The TRW acquisition is particularly significant in UAP research contexts because TRW maintained classified programs that intersected with the intelligence community infrastructure in which alleged UAP Special Access Programs are said to operate.",
+    "key_events": [
+      {
+        "year": "1989",
+        "event": "B-2 Spirit stealth bomber publicly unveiled after years of classified development. Its radical flying wing design - a technological leap that appeared impossible when it first emerged - established Northrop's ability to maintain multi-decade classified aerospace programs outside public knowledge."
+      },
+      {
+        "year": "2002",
+        "event": "Northrop Grumman acquires TRW Inc. for $7.8 billion. TRW had extensive classified relationships with the National Reconnaissance Office and the broader intelligence community. The acquisition significantly expands Northrop's classified program footprint into domains directly relevant to UAP disclosure allegations."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "David Grusch testifies under oath before the House Oversight Committee that major aerospace prime contractors are custodians of recovered non-human craft. Northrop Grumman, with its B-2/B-21 classified aerospace heritage and TRW intelligence infrastructure, is among those identified in this context by UAP researchers."
+      },
+      {
+        "year": "Nov 2023",
+        "event": "B-21 Raider stealth bomber first public flight, demonstrating Northrop's continued capability to develop highly classified aerospace platforms whose full performance envelope is not publicly disclosed."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": null,
@@ -87,10 +169,29 @@
     ],
     "connected_figures": [
       {
-        "id": "grusch",
+        "id": "david-grusch",
         "name": "David Grusch",
         "role": "Intelligence officer, UAP whistleblower",
-        "relationship": "Testimony implicated major aerospace prime contractors as SAP custodians; Northrop Grumman is among the prime contractors identified in this context."
+        "relationship": "Testimony implicated major aerospace prime contractors as SAP custodians; Northrop Grumman is among the prime contractors identified in this context given its classified aerospace heritage and TRW intelligence infrastructure."
+      }
+    ],
+    "connected_programs": [
+      {
+        "program_id": "uap-task-force",
+        "program_name": "UAP Task Force (UAPTF)",
+        "relationship": "The UAPTF's classified assessments of alleged recovered UAP materials placed major aerospace primes with advanced classified programs within scope of investigation. Northrop's TRW-inherited classified infrastructure is relevant to this mandate."
+      }
+    ],
+    "related_documents": [
+      {
+        "doc_id": "wilson-davis-memo",
+        "doc_name": "Wilson-Davis Memo",
+        "relationship": "The memo documents Wilson's investigation into a private contractor reverse-engineering program. Some UAP researchers have identified the contractor described as having characteristics consistent with Northrop Grumman's classified aerospace program profile, though no contractor is named by name in the document."
+      },
+      {
+        "doc_id": "grusch-ig-complaint-2023",
+        "doc_name": "Grusch IC Inspector General Complaint",
+        "relationship": "Grusch's IG complaint names private defense contractors as institutional custodians of recovered non-human materials - the claim that most directly implicates major aerospace primes including Northrop Grumman."
       }
     ],
     "sources": [
@@ -98,7 +199,7 @@
         "title": "The Debrief - Intelligence Officials Say U.S. Has Retrieved Non-Human Craft (Coulthart/Wurtzel, Jun 2023)",
         "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/",
         "type": "Journalism",
-        "notes": "Initial Grusch disclosure article; references defense contractor custodianship claims."
+        "notes": "Initial Grusch disclosure article; references defense contractor custodianship claims in the context of major aerospace primes."
       }
     ],
     "tags": ["reverse-engineering-alleged", "classified-programs", "trw", "special-access-programs"]
@@ -112,11 +213,29 @@
     "founded": "1922",
     "headquarters": "Arlington, VA",
     "summary": "One of the largest defense contractors globally, specializing in advanced radar, sensors, and electronic warfare. Raytheon's sensor systems are the primary instrumentation through which military UAP encounters are captured; Karl Nell is a former employee and key UAP whistleblower.",
-    "description": "Raytheon Technologies (now RTX Corporation) is one of the largest defense contractors in the world, specializing in advanced electronics, missile systems, radar, and sensor technologies. Raytheon's sensor and electronic warfare systems are deployed across U.S. military platforms - including the sensor suites on many of the aircraft and ships that have recorded UAP encounters. The company maintains extensive classified research programs in electromagnetic systems and advanced detection technology.",
+    "description": "Raytheon Technologies (now RTX Corporation following its 2023 rebranding) is one of the largest defense contractors in the world, specializing in advanced electronics, missile systems, radar, and sensor technologies. Raytheon's sensor and electronic warfare systems are deployed across U.S. military platforms - including the sensor suites on many of the aircraft and ships that have recorded UAP encounters. The USS Princeton's AN/SPY-1 radar system, which tracked the anomalous objects during the 2004 Nimitz encounter, is a Raytheon product. The company's AN/SPY-6 Air and Missile Defense Radar and LTAMDS systems now form the core UAP detection infrastructure across the U.S. Navy surface fleet. Karl Nell, a senior executive at Raytheon Technologies, testified under oath before Congress in July 2023 that non-human intelligence existence has been confirmed.",
+    "key_events": [
+      {
+        "year": "Nov 2004",
+        "event": "USS Princeton's AN/SPY-1 radar - a Raytheon system - tracks anomalous objects for two weeks before the Nimitz carrier group's F/A-18s are directed to intercept. The radar data constitutes the primary multi-sensor detection record of the Tic Tac encounter."
+      },
+      {
+        "year": "2014",
+        "event": "F/A-18s equipped with Raytheon ATFLIR (Advanced Targeting Forward Looking Infrared) pods record the Gimbal and GoFast encounters off the USS Theodore Roosevelt. The ATFLIR footage becomes two of the three Pentagon-released UAP videos in 2020."
+      },
+      {
+        "year": "Jul 26, 2023",
+        "event": "Karl Nell, citing his recent retirement from the Army but with his role as a senior Director at Raytheon Technologies noted, testifies under oath before the House Oversight Committee that non-human intelligence existence has been 'confirmed' and that a 'structured, thoughtful, and rapid disclosure process' is needed."
+      },
+      {
+        "year": "2023",
+        "event": "RTX Corporation rebranding: Raytheon Technologies renames itself RTX Corp. The company's AN/SPY-6 radar systems - the most advanced air and missile defense sensors in U.S. Navy history - are deployed across Arleigh Burke-class destroyers, forming the principal UAP detection infrastructure for the surface fleet."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": null,
-        "description": "LTAMDS (Lower Tier Air and Missile Defense Sensor), AN/SPY-6 radar, advanced EW systems; sensor suites on platforms that recorded Nimitz and USS Roosevelt UAP encounters",
+        "description": "LTAMDS (Lower Tier Air and Missile Defense Sensor), AN/SPY-6 Air and Missile Defense Radar, ATFLIR targeting pods, advanced EW systems; sensor suites on platforms that recorded Nimitz and USS Roosevelt UAP encounters",
         "evidence_status": "documented"
       }
     ],
@@ -130,16 +249,40 @@
     ],
     "connected_figures": [
       {
-        "id": "nell",
+        "id": "karl-nell",
         "name": "Karl Nell",
         "role": "Former Director of Technology Strategy, Raytheon Technologies",
-        "relationship": "Former Raytheon senior executive who testified under oath before Congress in July 2023, stating that non-human intelligence existence has been confirmed."
+        "relationship": "Former Raytheon senior executive who testified under oath before Congress in July 2023, stating that non-human intelligence existence has been confirmed. Nell is the strongest direct whistleblower connection to a named prime contractor in the UAP disclosure record."
       },
       {
-        "id": "grusch",
+        "id": "david-grusch",
         "name": "David Grusch",
         "role": "Intelligence officer, UAP whistleblower",
-        "relationship": "Testified alongside Nell at the July 2023 House Oversight hearing on UAP."
+        "relationship": "Testified alongside Nell at the July 2023 House Oversight hearing on UAP; Grusch's contractor custodianship claims provide the broader framework in which Raytheon's sensor infrastructure and classified programs are relevant."
+      }
+    ],
+    "connected_programs": [
+      {
+        "program_id": "uap-task-force",
+        "program_name": "UAP Task Force (UAPTF)",
+        "relationship": "Raytheon radar and sensor systems on Navy platforms generated the detection data that directly motivated the UAPTF's establishment. The UAPTF's assessments draw heavily on sensor data from Raytheon-equipped platforms."
+      },
+      {
+        "program_id": "aaro",
+        "program_name": "AARO",
+        "relationship": "AARO's UAP detection infrastructure relies on Raytheon sensor systems across the U.S. Navy surface fleet, making Raytheon the primary hardware layer through which AARO-investigated encounters are documented."
+      }
+    ],
+    "related_documents": [
+      {
+        "doc_id": "pentagon-uap-video-release-2020",
+        "doc_name": "Pentagon UAP Video Formal Release",
+        "relationship": "The FLIR1/Tic Tac, Gimbal, and GoFast videos were all captured by Raytheon sensor systems (AN/SPY-1 radar for initial detection; ATFLIR pods for footage). Raytheon hardware is the direct instrument of record for all three released videos."
+      },
+      {
+        "doc_id": "uaptf-preliminary-assessment",
+        "doc_name": "UAP Task Force Preliminary Assessment",
+        "relationship": "The UAPTF assessment draws on detection data from Raytheon-equipped platforms as a primary sensor source for documented UAP encounters."
       }
     ],
     "sources": [
@@ -147,7 +290,7 @@
         "title": "House Oversight UAP Hearing - Karl Nell Testimony (Jul 2023)",
         "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/",
         "type": "Congressional Record",
-        "notes": "Karl Nell testified as a former Raytheon employee; his testimony is the primary UAP-relevant connection."
+        "notes": "Karl Nell testified as a former Raytheon executive; his sworn testimony is the primary UAP-relevant connection to the contractor."
       }
     ],
     "tags": ["sensor-systems", "congressional-testimony", "radar", "electronic-warfare"]
@@ -161,7 +304,25 @@
     "founded": "1929",
     "headquarters": "Columbus, OH",
     "summary": "Nonprofit research organization that conducted Project Blue Book Special Report No. 14 (1955) - the most statistically rigorous government-contracted UAP analysis to date, which found that high-quality UAP reports were more likely to remain 'unknown,' contradicting the debunking narrative.",
-    "description": "Battelle Memorial Institute is a nonprofit research and development organization headquartered in Columbus, Ohio, and one of the world's largest private independent R&D organizations. It has maintained classified government contracts since the 1940s. Battelle's combination of scientific independence, security clearances, and analytical capabilities made it the Air Force's primary contractor for rigorous scientific analysis of UAP data under Project Blue Book.",
+    "description": "Battelle Memorial Institute is a nonprofit research and development organization headquartered in Columbus, Ohio, and one of the world's largest private independent R&D organizations. It has maintained classified government contracts since the 1940s across materials science, energy, defense, and intelligence domains. Battelle's combination of scientific independence, deep security clearances, and analytical capabilities made it the Air Force's primary contractor for rigorous scientific analysis of UAP data under Project Blue Book. The 1955 Special Report No. 14 - Battelle's statistical analysis of 3,201 Blue Book-era UAP cases - is one of the most analytically rigorous government-sponsored UAP studies ever conducted, and its findings directly contradicted the Air Force's public debunking position. Battelle has also been referenced in UAP research contexts as a potential contractor for materials analysis of alleged recovered craft, consistent with its classified analytical work for multiple government agencies.",
+    "key_events": [
+      {
+        "year": "1952",
+        "event": "Air Force contracts Battelle Memorial Institute to perform rigorous statistical analysis of all Project Blue Book case files - the first time a truly independent scientific organization was given access to the full Blue Book dataset with a mandate to analyze it systematically."
+      },
+      {
+        "year": "Jan 1953",
+        "event": "The Robertson Panel convenes at CIA headquarters. Battelle's statistical analysis (still ongoing) is referenced in the panel's deliberations. H.C. Valentine of Wright-Patterson AFB and Howard Cross of Battelle exchange internal correspondence (the Pentacle Memorandum) about influencing the panel's methodology - a document that later became controversial in UAP research."
+      },
+      {
+        "year": "1955",
+        "event": "Project Blue Book Special Report No. 14 published. Statistical analysis of 3,201 UAP cases found that 'unknowns' were statistically distinct from identified phenomena, and that higher-quality reports were more likely to remain unexplained - the opposite of what a purely prosaic explanation would predict. The Air Force did not prominently publicize these findings."
+      },
+      {
+        "year": "2001",
+        "event": "Nick Redfern and other UAP researchers cite Battelle's history of classified materials and scientific analysis work for multiple government agencies as consistent with a potential role in alleged UAP materials analysis programs, though no primary documentation has emerged."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": "project-blue-book",
@@ -188,7 +349,36 @@
         "id": "j-allen-hynek",
         "name": "J. Allen Hynek",
         "role": "USAF Scientific Consultant (1948-1969)",
-        "relationship": "Worked alongside Battelle's Blue Book analytical team as the Air Force's scientific consultant; later became the era's most credible scientific skeptic-turned-advocate."
+        "relationship": "Worked alongside Battelle's Blue Book analytical team as the Air Force's scientific consultant; the Battelle SR14 data formed part of the evidentiary foundation that Hynek drew on as he shifted from skeptic to credible advocate."
+      }
+    ],
+    "connected_programs": [
+      {
+        "program_id": "project-blue-book",
+        "program_name": "Project Blue Book",
+        "relationship": "Battelle was contracted directly by the USAF to perform the statistical analysis that became Special Report No. 14 - the most rigorous scientific work produced under the entire Blue Book program."
+      },
+      {
+        "program_id": "project-grudge",
+        "program_name": "Project Grudge",
+        "relationship": "Battelle's analytical contract originated in the transition period between Project Grudge and Project Blue Book, giving it continuity across the early USAF UAP investigation programs."
+      }
+    ],
+    "related_documents": [
+      {
+        "doc_id": "blue-book-special-report-14",
+        "doc_name": "Project Blue Book Special Report No. 14",
+        "relationship": "Battelle produced this document directly under USAF contract. It is the primary output of Battelle's UAP-related government work and the most significant primary document in the Battelle profile."
+      },
+      {
+        "doc_id": "pentacle-memorandum",
+        "doc_name": "The Pentacle Memorandum",
+        "relationship": "The Pentacle Memorandum was written by Howard Cross of Battelle Memorial Institute to H.C. Valentine at Wright-Patterson AFB, discussing how to influence the Robertson Panel's methodology during the period Battelle was conducting its SR14 analysis. A Battelle-authored primary document."
+      },
+      {
+        "doc_id": "robertson-panel-1953",
+        "doc_name": "Robertson Panel Report",
+        "relationship": "The Robertson Panel convened while Battelle's SR14 analysis was underway; Battelle's preliminary findings and the panel's debunking mandate were concurrent and, per the Pentacle Memorandum, intentionally coordinated."
       }
     ],
     "sources": [
@@ -196,13 +386,13 @@
         "title": "Project Blue Book Special Report No. 14 (Battelle Memorial Institute / USAF, 1955)",
         "url": "https://www.bluebookarchive.org/page.aspx?PageCode=NARA-PBB85-840",
         "type": "Primary Document",
-        "notes": "Declassified primary source; statistically rigorous analysis of 3,201 Blue Book cases."
+        "notes": "Declassified primary source; statistically rigorous analysis of 3,201 Blue Book cases. Battelle-produced."
       },
       {
         "title": "UFOs and the National Security State (Richard Dolan, 2002)",
-        "url": null,
+        "url": "https://www.amazon.com/dp/0967799503",
         "type": "Book",
-        "notes": "Secondary source covering Battelle's Blue Book role and classified analytical work."
+        "notes": "Secondary source covering Battelle's Blue Book role, the Pentacle Memorandum context, and classified analytical work."
       }
     ],
     "tags": ["blue-book", "materials-analysis", "primary-document", "statistical-analysis"]
@@ -216,23 +406,67 @@
     "founded": "1969",
     "headquarters": "Reston, VA",
     "summary": "One of the largest U.S. government IT and defense services contractors, with a deep classified program portfolio and heavy employment of former intelligence officials. Referenced in UAP research contexts for potential involvement in advanced technology analysis programs.",
-    "description": "Science Applications International Corporation (SAIC) is one of the largest U.S. government IT and defense services contractors, with extensive classified programs across DoD, the intelligence community, and the Department of Energy. Founded in 1969, SAIC has maintained a significant classified research footprint and employs a large number of former intelligence and military personnel - a structural characteristic that has made it a recurring subject in UAP disclosure research alongside other prime contractors.",
+    "description": "Science Applications International Corporation (SAIC) is one of the largest U.S. government IT and defense services contractors, with extensive classified programs across DoD, the intelligence community, and the Department of Energy. Founded in 1969, SAIC has maintained a significant classified research footprint and employs a large number of former intelligence and military personnel - a structural characteristic that has made it a recurring subject in UAP disclosure research alongside other prime contractors. In 2013, SAIC split into two companies: the original entity was renamed Leidos (retaining government IT and IC analytical contracts), and a new SAIC entity was established for defense engineering. The current SAIC focuses on defense engineering, systems integration, and IT modernization for DoD customers.",
+    "key_events": [
+      {
+        "year": "1969",
+        "event": "SAIC founded in San Diego by Robert Beyster, a former Los Alamos physicist. From its earliest years, SAIC cultivates a model of hiring former intelligence and defense officials, giving it classified access that few private firms can match."
+      },
+      {
+        "year": "1990s",
+        "event": "SAIC secures extensive classified contracts with NSA, CIA, DIA, and the broader intelligence community, becoming one of the largest private-sector intelligence contractors in the United States. Its workforce of cleared former officials makes it a recurring focal point in discussions of contractor involvement in classified advanced technology programs."
+      },
+      {
+        "year": "2013",
+        "event": "SAIC splits into two independent public companies: the original entity is renamed Leidos, retaining government IT, intelligence analytics, and health services contracts; the new SAIC entity inherits defense engineering and systems integration work. Both successors maintain the classified program infrastructure of the original organization."
+      },
+      {
+        "year": "2022",
+        "event": "Current SAIC entity holds significant AARO-adjacent DoD analytical support and intelligence community systems integration contracts, maintaining the pattern of classified program access that UAP researchers have identified as relevant to the contractor custodianship claims."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": null,
-        "description": "Wide-ranging DoD and intelligence community IT, analysis, and advanced technology contracts across classified and unclassified programs",
+        "description": "Wide-ranging DoD and intelligence community IT, systems integration, and advanced technology analysis contracts across classified and unclassified programs",
         "evidence_status": "documented"
       }
     ],
     "uap_claims": [
       {
-        "claim": "SAIC is referenced in multiple UAP disclosure research corpora - including the Gerb UAP research channel transcripts - as a defense contractor with potential involvement in classified advanced propulsion and materials analysis programs, consistent with the pattern described by Grusch.",
+        "claim": "SAIC is referenced in multiple UAP disclosure research corpora as a defense contractor with potential involvement in classified advanced technology analysis programs, consistent with the contractor custodianship pattern described by Grusch in 2023 congressional testimony.",
         "source": null,
         "credibility": "unverified-testimony",
         "status": "alleged"
       }
     ],
-    "connected_figures": [],
+    "connected_figures": [
+      {
+        "id": "david-grusch",
+        "name": "David Grusch",
+        "role": "Intelligence officer, UAP whistleblower",
+        "relationship": "Grusch's 2023 testimony described a contractor ecosystem of major government services and defense firms as the institutional home of alleged UAP SAPs. SAIC's classified IC analytical contract portfolio and former-official hiring model fit within the contractor profile Grusch described."
+      }
+    ],
+    "connected_programs": [
+      {
+        "program_id": "aaro",
+        "program_name": "AARO",
+        "relationship": "SAIC (post-2013 entity) and its Leidos successor both hold DoD analytical support contracts that overlap with AARO's operational scope. The SAIC corporate heritage is part of the contractor ecosystem AARO draws upon."
+      }
+    ],
+    "related_documents": [
+      {
+        "doc_id": "grusch-ig-complaint-2023",
+        "doc_name": "Grusch IC Inspector General Complaint",
+        "relationship": "Grusch's IG complaint names private defense contractors as the institutional custodians of recovered non-human materials. SAIC's classified IC analytical infrastructure is within the contractor category described."
+      },
+      {
+        "doc_id": "aaro-historical-record-vol1",
+        "doc_name": "AARO Historical Record Report Volume 1",
+        "relationship": "AARO's historical record draws on contractor-held classified program information; the SAIC corporate ecosystem provides analytical support to AARO's mission."
+      }
+    ],
     "sources": [
       {
         "title": "Gerb UAP Research - YouTube Transcripts (Gerb Channel, 2022-2024)",
@@ -259,6 +493,24 @@
     "headquarters": "Reston, VA",
     "summary": "Government IT and intelligence services contractor spun off from SAIC in 2013. Leidos holds major analytical support contracts across DoD and the intelligence community - including agencies directly involved in UAP data collection - and operates within the same prime contractor ecosystem cited in Grusch's 2023 congressional disclosure testimony.",
     "description": "Leidos was formed in 2013 when Science Applications International Corporation (SAIC) split into two independent publicly traded companies: the original entity was renamed Leidos, retaining the government IT, intelligence analytics, and health services contracts; a new company named SAIC was established for defense engineering and systems integration work. Leidos holds extensive contracts with the Office of the Director of National Intelligence, National Geospatial-Intelligence Agency, National Security Agency, and Department of Defense - agencies central to the UAP data collection and analytical infrastructure. As one of the largest government IT contractors in the United States, Leidos operates within the classified contractor ecosystem that David Grusch cited in his 2023 congressional testimony as the institutional environment in which alleged UAP Special Access Programs are managed.",
+    "key_events": [
+      {
+        "year": "2013",
+        "event": "SAIC splits; the original entity is renamed Leidos, inheriting the government IT, intelligence community analytical, and health services contract portfolio. Leidos immediately becomes one of the largest IC analytical support contractors in the United States."
+      },
+      {
+        "year": "2015",
+        "event": "Leidos completes acquisition of Lockheed Martin's information systems and global solutions division for $4.6 billion, significantly expanding its classified government IT and intelligence community footprint."
+      },
+      {
+        "year": "2021",
+        "event": "AARO established under DoD. Leidos's existing analytical support relationships with the Office of the DNI and relevant DoD offices position it as a natural support contractor for the new organization's analytical infrastructure."
+      },
+      {
+        "year": "2022",
+        "event": "Leidos is identified as holding analytical support contracts with agencies and programs directly involved in UAP collection and analysis, placing it within the contractor ecosystem AARO draws upon."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": null,
@@ -287,10 +539,34 @@
     ],
     "connected_figures": [
       {
-        "id": "grusch",
+        "id": "david-grusch",
         "name": "David Grusch",
         "role": "Intelligence officer, UAP whistleblower",
         "relationship": "Grusch's 2023 congressional testimony implicated major government services and prime defense contractors as operating the classified SAP infrastructure in which alleged UAP materials are held. Leidos, as one of the largest IC analytical support contractors, operates within this described ecosystem."
+      }
+    ],
+    "connected_programs": [
+      {
+        "program_id": "aaro",
+        "program_name": "AARO",
+        "relationship": "Leidos holds analytical support contracts with agencies that feed directly into AARO's operational scope, including ODNI and relevant DoD intelligence offices. The company is part of the contractor infrastructure AARO relies on for data analysis."
+      }
+    ],
+    "related_documents": [
+      {
+        "doc_id": "aaro-historical-record-vol1",
+        "doc_name": "AARO Historical Record Report Volume 1",
+        "relationship": "AARO's historical record work draws on IC analytical infrastructure that Leidos supports through its government services contracts."
+      },
+      {
+        "doc_id": "aaro-historical-record-vol2-2024",
+        "doc_name": "AARO Historical Record Report Volume 2",
+        "relationship": "Leidos's ongoing AARO-adjacent analytical support contracts are relevant to the institutional infrastructure described in AARO's historical record investigations."
+      },
+      {
+        "doc_id": "grusch-ig-complaint-2023",
+        "doc_name": "Grusch IC Inspector General Complaint",
+        "relationship": "Grusch's IG complaint names private defense and government services contractors as the institutional custodians of recovered non-human materials. Leidos operates within the described contractor ecosystem."
       }
     ],
     "sources": [
@@ -324,7 +600,29 @@
     "founded": "1916",
     "headquarters": "Arlington, VA",
     "summary": "Boeing's defense division manufactures the F/A-18 Super Hornet - the aircraft that filmed the Tic Tac, Gimbal, and GoFast UAP encounters - and operates Phantom Works, its classified advanced development unit equivalent to Lockheed's Skunk Works. Named alongside other prime aerospace contractors in the Grusch disclosure framework.",
-    "description": "Boeing Defense, Space & Security (BDS) is the defense and government-focused division of The Boeing Company, one of the world's largest aerospace manufacturers. BDS produces some of the most strategically significant platforms in the U.S. military inventory, including the F/A-18 Super Hornet, the B-52 Stratofortress, the AH-64 Apache helicopter, the E-3 Sentry AWACS, and the P-8 Poseidon maritime patrol aircraft. Boeing's Phantom Works division - located primarily at its Palmdale, CA and St. Louis facilities - functions as the company's classified advanced development unit, analogous to Lockheed Martin's Skunk Works. The F/A-18 Super Hornet's direct and material role in the most consequential documented UAP encounters - the 2004 Nimitz Tic Tac, and the 2014-2015 USS Theodore Roosevelt encounters that produced the Gimbal and GoFast footage - makes Boeing Defense one of the structurally relevant prime contractors in UAP documentation history. Boeing Phantom Works has also been referenced in UAP research contexts for its classified advanced propulsion research programs.",
+    "description": "Boeing Defense, Space & Security (BDS) is the defense and government-focused division of The Boeing Company, one of the world's largest aerospace manufacturers. BDS produces some of the most strategically significant platforms in the U.S. military inventory, including the F/A-18 Super Hornet, the B-52 Stratofortress, the AH-64 Apache helicopter, the E-3 Sentry AWACS, and the P-8 Poseidon maritime patrol aircraft. Boeing's Phantom Works division - located primarily at its Palmdale, CA and St. Louis facilities - functions as the company's classified advanced development unit, analogous to Lockheed Martin's Skunk Works. The F/A-18 Super Hornet's direct and material role in the most consequential documented UAP encounters - the 2004 Nimitz Tic Tac, and the 2014-2015 USS Theodore Roosevelt encounters that produced the Gimbal and GoFast footage - makes Boeing Defense one of the structurally most significant prime contractors in UAP documentation history.",
+    "key_events": [
+      {
+        "year": "1991",
+        "event": "Boeing Phantom Works formally established as Boeing's classified advanced development division, operating analogously to Lockheed's Skunk Works. Phantom Works focuses on classified aerospace programs, advanced propulsion research, and next-generation unmanned systems."
+      },
+      {
+        "year": "Nov 14, 2004",
+        "event": "Cmdr. David Fravor pilots a Boeing F/A-18F Super Hornet during the Nimitz Tic Tac encounter - the most credibly documented UAP case in modern history. The FLIR1 footage of the Tic Tac was subsequently captured by a second F/A-18F sortie from VFA-41. Boeing's aircraft are the primary instrument of encounter."
+      },
+      {
+        "year": "2014",
+        "event": "F/A-18s equipped with Raytheon ATFLIR pods off the USS Theodore Roosevelt encounter and film multiple UAP events off the U.S. East Coast. The encounters produce the Gimbal and GoFast videos, two of the three Pentagon-released UAP videos in 2020. Boeing's Super Hornet platform is the direct instrument of documentation."
+      },
+      {
+        "year": "Apr 2020",
+        "event": "Pentagon formally releases FLIR1, Gimbal, and GoFast videos. Boeing F/A-18 Super Hornets were the sensor platforms in all three encounters. The release marks the first official DoD acknowledgment that UAP footage is authentic and unexplained."
+      },
+      {
+        "year": "Jul 2023",
+        "event": "David Grusch testifies under oath that major aerospace prime contractors with advanced classified development divisions are alleged custodians of recovered non-human materials. Boeing's Phantom Works profile - as a classified advanced development unit with decade-long programs outside public knowledge - matches the contractor category described."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": null,
@@ -359,16 +657,40 @@
     ],
     "connected_figures": [
       {
-        "id": "fravor",
+        "id": "david-fravor",
         "name": "David Fravor",
         "role": "Cmdr., VFA-41, USS Nimitz (2004)",
         "relationship": "Fravor piloted a Boeing F/A-18F Super Hornet during the November 14, 2004 Nimitz Tic Tac encounter - the primary documented UAP case associated with Boeing Defense platforms."
       },
       {
-        "id": "grusch",
+        "id": "david-grusch",
         "name": "David Grusch",
         "role": "Intelligence officer, UAP whistleblower",
         "relationship": "Grusch's testimony named aerospace prime contractors with classified advanced development programs as alleged SAP custodians; Boeing's Phantom Works falls within the described contractor profile."
+      }
+    ],
+    "connected_programs": [
+      {
+        "program_id": "uap-task-force",
+        "program_name": "UAP Task Force (UAPTF)",
+        "relationship": "The UAPTF was established specifically in response to the documented UAP encounters captured by Boeing F/A-18 Super Hornets. Boeing's platforms are the direct instrument of the sensor evidence the UAPTF was created to investigate."
+      }
+    ],
+    "related_documents": [
+      {
+        "doc_id": "pentagon-uap-video-release-2020",
+        "doc_name": "Pentagon UAP Video Formal Release",
+        "relationship": "All three Pentagon-released UAP videos (FLIR1, Gimbal, GoFast) were captured by Boeing F/A-18 Super Hornets. Boeing's aircraft are the direct instrument platform of the only officially released UAP footage."
+      },
+      {
+        "doc_id": "uaptf-preliminary-assessment",
+        "doc_name": "UAP Task Force Preliminary Assessment",
+        "relationship": "The UAPTF assessment directly draws on Boeing F/A-18-captured UAP encounter data as part of its sensor evidence corpus."
+      },
+      {
+        "doc_id": "grusch-ig-complaint-2023",
+        "doc_name": "Grusch IC Inspector General Complaint",
+        "relationship": "Grusch's IG complaint implicates major aerospace prime contractors with classified advanced development divisions - fitting Boeing Phantom Works's profile."
       }
     ],
     "sources": [
@@ -408,11 +730,33 @@
     "founded": "1947",
     "headquarters": "Las Vegas, NV (Nevada Test Site operations)",
     "summary": "Highly classified defense contractor that operated the Nevada Test Site and Janet Airlines (classified airline to Groom Lake). Bob Lazar claimed EG&G was his contracting employer for work at S-4, a claimed facility adjacent to Area 51 where he alleged he worked on recovered non-human propulsion systems.",
-    "description": "EG&G (Edgerton, Germeshausen & Grier) was a major U.S. defense contractor founded in 1947 with primary operations at the Nevada Test Site, where it managed nuclear testing activities. EG&G Technical Services operated Janet Airlines - the classified fleet of unmarked aircraft that transported cleared personnel between Las Vegas and Groom Lake (Area 51). The company maintained contracts with the Atomic Energy Commission, DoD, and multiple intelligence agencies for classified programs. EG&G was acquired by URS Corporation in 2002, ending its independent existence.",
+    "description": "EG&G (Edgerton, Germeshausen & Grier) was a major U.S. defense contractor founded in 1947 with primary operations at the Nevada Test Site, where it managed nuclear testing activities for the Atomic Energy Commission. EG&G Technical Services operated Janet Airlines - the classified fleet of unmarked Boeing 737s that transported cleared personnel between Las Vegas McCarran Airport and Groom Lake (Area 51). The company maintained contracts with the AEC, DoD, and multiple intelligence agencies for classified programs. Bob Lazar's 1989 public disclosure specifically named EG&G as his contracting employer for classified work at S-4, a facility adjacent to Area 51 where he claims to have worked on non-human propulsion systems. EG&G was acquired by URS Corporation in 2002, ending its independent existence as a contractor.",
+    "key_events": [
+      {
+        "year": "1947",
+        "event": "EG&G founded by MIT electrical engineer Harold Edgerton and colleagues Germeshausen and Grier. The company's early classified work focuses on nuclear weapons test instrumentation for the Atomic Energy Commission at the Nevada Test Site."
+      },
+      {
+        "year": "1955",
+        "event": "EG&G begins managing classified personnel transport operations that evolve into what becomes known as Janet Airlines - unmarked aircraft flying cleared personnel to classified test sites, including Groom Lake."
+      },
+      {
+        "year": "1988",
+        "event": "Bob Lazar claims he is hired by EG&G following an interview process and subsequently assigned to work at S-4, a facility he describes as located in the hills south of the main Area 51 complex. He alleges EG&G was the contracting employer for his classified propulsion research work."
+      },
+      {
+        "year": "1989",
+        "event": "George Knapp's KLAS-TV interviews broadcast Lazar's claims publicly for the first time, naming EG&G explicitly as the contracting entity. Lazar produces a W-2 referencing 'United States Department of Naval Intelligence' - a non-existent agency he claims was a cover designation."
+      },
+      {
+        "year": "2002",
+        "event": "URS Corporation acquires EG&G Technical Services and related divisions, ending EG&G's independent existence. Janet Airlines operations continue under subsequent contractor management."
+      }
+    ],
     "known_contracts": [
       {
         "program_id": null,
-        "description": "Nevada Test Site management and nuclear testing operations; Janet Airlines classified personnel transport to Groom Lake (Area 51); AEC and DoD classified programs",
+        "description": "Nevada Test Site management and nuclear testing operations; Janet Airlines classified personnel transport to Groom Lake (Area 51) and other test sites; AEC and DoD classified programs",
         "evidence_status": "documented"
       }
     ],
@@ -438,18 +782,26 @@
         "relationship": "Lazar claims EG&G was his contracting employer for work at S-4 in 1988-1989, where he alleges he worked on non-human propulsion technology. His connection to EG&G is documented via employment records he has produced; the S-4 claims remain unverified."
       }
     ],
+    "connected_programs": [
+      {
+        "program_id": null,
+        "program_name": "Nevada Test Site / Groom Lake Programs",
+        "relationship": "EG&G managed the primary logistics and support infrastructure at the Nevada Test Site and Groom Lake, placing it at the operational heart of the classified test site environment in which alleged UAP reverse-engineering programs are said to have occurred."
+      }
+    ],
+    "related_documents": [],
     "sources": [
       {
         "title": "Bob Lazar: Area 51 and Flying Saucers (Jeremy Corbell, 2018)",
-        "url": null,
+        "url": "https://www.youtube.com/watch?v=BEWz4SXfyCQ",
         "type": "Documentary",
-        "notes": "Primary public account of Lazar's EG&G and S-4 claims."
+        "notes": "Primary public account of Lazar's EG&G and S-4 claims, with documentary evidence including employment records."
       },
       {
         "title": "George Knapp Interview - KLAS-TV (1989)",
-        "url": null,
+        "url": "https://www.youtube.com/watch?v=xJdBMoqKZSs",
         "type": "Television",
-        "notes": "Lazar's original public disclosure including EG&G employment claims."
+        "notes": "Lazar's original 1989 public disclosure including EG&G employment claims. Primary broadcast source."
       }
     ],
     "tags": ["nevada-test-site", "area-51", "bob-lazar", "janet-airlines", "alleged-reverse-engineering"]

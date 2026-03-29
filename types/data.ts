@@ -1152,6 +1152,23 @@ export interface ContractorSource {
   notes: string;
 }
 
+export interface ContractorKeyEvent {
+  year: string;
+  event: string;
+}
+
+export interface ContractorConnectedProgram {
+  program_id: string | null;
+  program_name: string;
+  relationship: string;
+}
+
+export interface ContractorRelatedDocument {
+  doc_id: string;
+  doc_name: string;
+  relationship: string;
+}
+
 export interface ContractorEntry {
   id: string;
   name: string;
@@ -1167,6 +1184,9 @@ export interface ContractorEntry {
   connected_figures: ContractorConnectedFigure[];
   sources: ContractorSource[];
   tags: string[];
+  key_events?: ContractorKeyEvent[];
+  connected_programs?: ContractorConnectedProgram[];
+  related_documents?: ContractorRelatedDocument[];
 }
 
 /* ─── Documents Types ──────────────────────────────────────────── */
