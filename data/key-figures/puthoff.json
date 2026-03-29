@@ -38,55 +38,55 @@
     ],
     "key_events": [
       {
-        "date": "1960",
+        "year": "1960",
         "event": "Joins NSA as employee in signals intelligence; begins career in classified government research"
       },
       {
-        "date": "1967",
+        "year": "1967",
         "event": "Completes Ph.D. at Stanford University in Electrical Engineering; joins Stanford Research Institute"
       },
       {
-        "date": "1972",
+        "year": "1972",
         "event": "Approaches CIA with proposal to scientifically investigate remote viewing following initial experiments with Ingo Swann; CIA funds the SCANATE program at SRI — the origin of STARGATE"
       },
       {
-        "date": "1972–1985",
+        "year": "1972–1985",
         "event": "Directs CIA/DIA-funded remote viewing research at SRI; works with Ingo Swann, Pat Price, Russell Targ; program successively known as GONDOLA WISH, GRILL FLAME, CENTER LANE, SUN STREAK, STAR GATE"
       },
       {
-        "date": "1975",
+        "year": "1975",
         "event": "Publishes 'Perception of Remote Events' in Nature with Russell Targ — peer-reviewed paper on remote viewing results; establishes scientific legitimacy of the research program"
       },
       {
-        "date": "1985",
+        "year": "1985",
         "event": "Transitions out of SRI; STARGATE program continues under other management until 1995 declassification"
       },
       {
-        "date": "1991",
+        "year": "1991",
         "event": "Founds EarthTech International in Austin, TX; establishes Institute for Advanced Studies at Austin (IASA) for exotic propulsion and vacuum energy research"
       },
       {
-        "date": "1995",
+        "year": "1995",
         "event": "CIA declassifies STARGATE program; 270+ pages of SRI reports become public; American Institutes for Research commissioned review concludes intelligence value was marginal but does not dispute anomalous results"
       },
       {
-        "date": "2008–2011",
+        "year": "2008–2011",
         "event": "Contracted by DIA to author technical papers for the AAWSAP program; produces at least 6 of 38 Defense Intelligence Reference Documents covering traversable wormholes, warp drives, and metric engineering"
       },
       {
-        "date": "October 2017",
+        "year": "Oct 2017",
         "event": "Co-founds To The Stars Academy of Arts and Science with Tom DeLonge, Luis Elizondo, Chris Mellon, Jim Semivan; provides theoretical physics framework for TTSA's research mission"
       },
       {
-        "date": "2018–2019",
+        "year": "2018–2019",
         "event": "Presents TTSA's UAP research program at multiple scientific and government venues; briefs congressional staffers on exotic propulsion theory"
       },
       {
-        "date": "2019",
+        "year": "2019",
         "event": "Several AAWSAP DIRDs authored by Puthoff released publicly via FOIA; confirm government-funded exotic propulsion research at the theoretical level"
       },
       {
-        "date": "2024",
+        "year": "2024",
         "event": "Appears in The Age of Disclosure documentary; among the most senior figures to go on record publicly regarding classified UAP research programs"
       }
     ]
@@ -301,14 +301,14 @@
     },
     {
       "date": "2010",
-      "type": "government-document",
+      "type": "academic-paper",
       "title": "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering",
       "outlet": "DIA / AAWSAP (DIRD)",
       "notes": "Puthoff-authored Defense Intelligence Reference Document on metric engineering propulsion; released via FOIA; confirms government funding of exotic propulsion research at the theoretical level"
     },
     {
-      "date": "October 2017",
-      "type": "press-release",
+      "date": "Oct 2017",
+      "type": "written",
       "title": "To The Stars Academy of Arts and Science Launch",
       "outlet": "To The Stars Academy",
       "notes": "Public launch of TTSA; Puthoff serves as VP of Science and Technology; explicitly connects his decades of government-adjacent research to the public UAP disclosure effort"
