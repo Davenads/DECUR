@@ -835,6 +835,7 @@ export interface ValleeData {
   associated_people: ProfilePerson[];
   disclosures: ValleeDisclosure[];
   career_connections?: ProfileCareerConnection[];
+  sources?: ProfileSource[];
 }
 
 /* ─── Pope Types ────────────────────────────────────────────── */
