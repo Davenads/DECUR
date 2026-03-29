@@ -638,6 +638,7 @@ export const graphData: GraphData = {
     { source: 'avi-loeb',            target: 'tim-gallaudet',             label: 'testified at same 2024 hearing' },
     { source: 'avi-loeb',            target: 'sol-foundation',            label: 'symposium participant' },
     { source: 'avi-loeb',            target: 'seti',                      label: 'challenged SETI framing' },
+    { source: 'avi-loeb',            target: 'david-grusch',              label: 'met privately; Lockheed official separately confirmed Grusch claims to Loeb as not wrong' },
 
     // Donald Keyhoe connections
     { source: 'donald-keyhoe',       target: 'nicap',                     label: 'co-founded and directed' },

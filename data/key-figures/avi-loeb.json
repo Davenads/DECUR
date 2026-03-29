@@ -54,7 +54,7 @@
       },
       {
         "year": "2023",
-        "event": "Led the Galileo Project's deep-sea expedition to recover metallic fragments from the site of the 2014 IM1 interstellar meteor impact off Papua New Guinea. Analysis suggested the material had anomalous properties - harder than any known iron meteorite."
+        "event": "Led the Galileo Project's deep-sea expedition to recover metallic fragments from the 2014 IM1 interstellar meteor impact site off Papua New Guinea. Recovered 850 metallic spherules; approximately 80 (10%) showed anomalous elemental ratios with barium, lanthanum, and uranium up to 1,000 times more abundant than solar system baselines - harder than any known iron meteorite."
       },
       {
         "year": "Nov 2024",
@@ -62,7 +62,11 @@
       },
       {
         "year": "2025",
-        "event": "Galileo Project announced plans for a $1 billion AI observatory network for systematic UAP detection, representing the largest proposed civilian scientific investment in UAP research in history."
+        "event": "Galileo Project announced plans for a $1 billion AI observatory network for systematic UAP detection. Three observatories operational in Massachusetts, Pennsylvania, and Nevada. Announced a $6.5 million ROV-based expedition to recover larger fragments from the IM1 impact site."
+      },
+      {
+        "year": "Jan 2026",
+        "event": "Published analysis of 3I/ATLAS - the third confirmed interstellar object to enter the solar system - identifying multiple anomalous properties: ecliptic proximity (0.2% natural probability), anti-tail jet extending toward the sun, and anomalous nickel-to-iron ratio. A CIA FOIA request for records on 3I/ATLAS received neither confirmation nor denial - a 'Glomar response' typically reserved for classified material."
       }
     ]
   },
@@ -78,6 +82,12 @@
       "name": "Dr. Timothy Gallaudet",
       "role": "Rear Admiral (Ret.), former NOAA Administrator",
       "relationship": "Both testified at the November 2024 congressional hearing. Gallaudet's institutional perspective on underwater UAP phenomena complements Loeb's focus on airborne and interstellar objects."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NRO/UAPTF intelligence officer; UAP whistleblower",
+      "relationship": "Loeb held an hour-long meeting with Grusch to discuss his crash retrieval testimony. A former high-level Lockheed Martin official separately confirmed to Loeb that Grusch's claims were 'not wrong.'"
     }
   ],
   "disclosures": [
@@ -96,12 +106,26 @@
       "notes": "Follow-up to Extraterrestrial, expanding the scientific framework for searching for technological extraterrestrial signatures and detailing the Galileo Project's methodology and early findings."
     },
     {
+      "date": "Jul 2024",
+      "type": "podcast",
+      "title": "Avi Loeb - Project Galileo and More",
+      "outlet": "That UFO Podcast",
+      "notes": "Detailed breakdown of the IM1 expedition: 850 spherules recovered, 80 with anomalous elemental composition. Described a meeting with Grusch and a Lockheed official's private corroboration. Discussed Galileo Project observatory expansion and AARO's 97% explained-UAP claim."
+    },
+    {
       "date": "Nov 2024",
       "type": "congressional-testimony",
       "title": "Exposing the Truth: UAP Declassification and the Public's Right to Know",
       "outlet": "U.S. House Subcommittee on National Security and Science",
       "interviewer": "Rep. Tim Burchett; Rep. Anna Paulina Luna",
       "notes": "Testified presenting the Galileo Project's scientific methodology as a model for rigorous transparent UAP investigation. Argued that the scientific community's reluctance to engage with the topic reflects bias rather than evidence-based skepticism."
+    },
+    {
+      "date": "Jan 2026",
+      "type": "podcast",
+      "title": "Why the CIA Refused to Confirm Records on 3I/ATLAS",
+      "outlet": "That UFO Podcast",
+      "notes": "Detailed analysis of 3I/ATLAS anomalies - ecliptic proximity probability, anti-tail jet, nickel-iron ratio, 7.1-hour rotation period. Discussed CIA Glomar response to FOIA request. Described Galileo Project classification scale (3I/ATLAS ranked 4 +/- 2). Noted Breakthrough Listen's 5-hour Green Bank Telescope observation as insufficient."
     }
   ],
   "sources": [
@@ -128,6 +152,48 @@
       "url": "https://en.wikipedia.org/wiki/Avi_Loeb",
       "type": "Reference",
       "notes": "Biographical overview, publication history, and Oumuamua controversy"
+    },
+    {
+      "title": "That UFO Podcast - Avi Loeb: Project Galileo and More (Jul 2024)",
+      "url": "https://www.youtube.com/watch?v=8Yy5UK0yIM0",
+      "type": "Podcast",
+      "notes": "IM1 spherule composition data; Grusch meeting; Lockheed official corroboration; Galileo Project observatory network"
+    },
+    {
+      "title": "That UFO Podcast - Why the CIA Refused to Confirm Records on 3I/ATLAS (Jan 2026)",
+      "url": "https://www.youtube.com/watch?v=Kush5hWEkoE",
+      "type": "Podcast",
+      "notes": "3I/ATLAS anomalous properties; CIA Glomar FOIA response; classification scale; Galileo Project observatories operational"
+    }
+  ],
+  "claims": [
+    {
+      "id": "im1-spherule-anomalous-composition",
+      "claim": "Approximately 10% (80 of 850) of spherules recovered from the IM1 interstellar meteor site contain elements with concentrations up to 1,000 times above solar system baselines - including barium, lanthanum, and uranium - in proportions inconsistent with any known natural meteoritic material.",
+      "status": "disputed",
+      "basis": "Galileo Project expedition analysis published in refereed preprint. Independent scientists have disputed the findings, attributing the elemental ratios to coal ash and industrial contamination from the deep-sea recovery zone.",
+      "notes": "The dispute hinges on whether the spherules are genuinely from the IM1 impact or represent background contamination from the heavily industrially polluted Pacific floor region."
+    },
+    {
+      "id": "lockheed-official-grusch-confirmation",
+      "claim": "A former high-level Lockheed Martin official visited Loeb's home and, when asked about David Grusch's claims regarding non-human craft in government possession, responded: 'that is not wrong.'",
+      "status": "unverified",
+      "basis": "Stated by Loeb in his July 2024 That UFO Podcast appearance. The official's identity has not been disclosed.",
+      "notes": "This is one of the few instances of a credentialed mainstream scientist reporting a firsthand corroborating contact from the defense-industry sector about crash retrieval claims."
+    },
+    {
+      "id": "3i-atlas-anomalous-properties",
+      "claim": "3I/ATLAS - the third interstellar object to enter the solar system - exhibits multiple statistically anomalous properties: a 0.2% probability ecliptic proximity, an anti-tail jet extending toward the sun (opposite to normal cometary behavior), anomalous nickel-to-iron ratios consistent with industrial production rather than natural formation, and a rotation period of approximately 7.1 hours.",
+      "status": "partially-verified",
+      "basis": "Ecliptic proximity and anti-tail jet observations are from published astronomical data. The nickel-iron ratio claim is Loeb's interpretation from spectroscopic analysis; independent assessment ongoing.",
+      "notes": "Loeb ranks 3I/ATLAS at 4 plus or minus 2 on his internal classification scale for potential technological objects."
+    },
+    {
+      "id": "3i-atlas-cia-glomar-response",
+      "claim": "A FOIA request to the CIA for records on 3I/ATLAS received a 'Glomar response' - neither confirming nor denying that records exist - rather than a simple statement of no records. Loeb interprets this as indicating the CIA holds classified records on the object.",
+      "status": "partially-verified",
+      "basis": "The FOIA response is a documented fact as reported by Loeb. The interpretation that a Glomar response implies classified records is Loeb's inference; it is a legally recognized pattern but not conclusive proof.",
+      "notes": "If accurate as interpreted, would be the first documented instance of a U.S. intelligence agency invoking a Glomar response to questions about an interstellar astronomical object."
     }
   ],
   "credibility": {
@@ -156,6 +222,14 @@
       "node_label": "Garry Nolan",
       "relationship": "Both advocate for rigorous peer-reviewed UAP research at major academic institutions; Nolan biological materials analysis complements Loeb astronomical and materials science approach",
       "connection_type": "collaboration"
+    },
+    {
+      "event_index": 3,
+      "node_type": "figure",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Held an hour-long meeting with Grusch; a Lockheed official separately confirmed to Loeb that Grusch's crash retrieval claims were 'not wrong'",
+      "connection_type": "professional"
     },
     {
       "event_index": 4,
