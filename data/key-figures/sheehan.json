@@ -17,6 +17,7 @@
       "Harvard Law School (graduate)",
       "Christic Institute",
       "Romero Institute",
+      "New Paradigm Institute",
       "Disclosure Project",
       "U.S. Jesuit Headquarters",
       "Steven Greer's Center for the Study of Extraterrestrial Intelligence (CSETI)"
@@ -47,7 +48,7 @@
         "event": "Founds the Christic Institute, which becomes central to the Iran-Contra legal investigation. Represents clients alleging a government-sanctioned drug trafficking network during the Central American conflicts."
       },
       {
-        "year": "2001-05-09",
+        "year": "May 2001",
         "event": "Serves as General Counsel for the Disclosure Project's landmark National Press Club event in Washington D.C., organized by Steven Greer. Twenty government, military, and intelligence witnesses provide testimony before the Washington press corps regarding UAP. The event generates global coverage."
       },
       {
@@ -61,6 +62,22 @@
       {
         "year": "2023",
         "event": "Active advocacy during the peak of congressional UAP engagement, providing legal analysis and historical context for the Schumer UAP Disclosure Act and AARO oversight debate."
+      },
+      {
+        "year": "Dec 2023",
+        "event": "Appeared on That UFO Podcast to analyze the Schumer Amendment's passage - 89-11 in the full Senate, 17-0 out of the Senate Intelligence Committee - and its subsequent gutting in the House. Named private aerospace industry representatives as primary opponents of full disclosure legislation."
+      },
+      {
+        "year": "Apr 2024",
+        "event": "Appeared on That UFO Podcast (Part 1) to detail the compromised UAP Disclosure Act: 24 of the original 64 pages enacted, with all enforcement provisions (subpoena power, deposition authority, field investigation, eminent domain) stripped by House opposition. Founded New Paradigm Institute to mobilize citizen advocacy across all 435 congressional districts."
+      },
+      {
+        "year": "Jul 2024",
+        "event": "Appeared on That UFO Podcast for Disclosure Act 2.0 update. Stated approximately 40 witnesses have testified under oath in depositions about UAP programs, and described CIA detection center codenamed 'Golden Domes' capable of tracking UAPs even when masked."
+      },
+      {
+        "year": "Feb 2026",
+        "event": "Appeared on That UFO Podcast to report approximately 1% compliance with Congressional orders to transfer UAP records to the National Archives by Oct 18, 2024. Identified Rep. Eric Burlison as drafting a standalone bill to place Congress directly in charge of UAP declassification. NPI disclosure citizen groups now organized in 35 states."
       }
     ]
   },
@@ -69,6 +86,31 @@
       "context": "Sheehan claims that in 1977, while researching extraterrestrial intelligence for a Congressional Research Service briefing for the Carter White House, he was given access to classified Air Force files at Wright-Patterson Air Force Base. He states he found photographs of a crashed disc-shaped craft in snow, with military personnel next to it for scale, and bodies of non-human beings. He states he sketched what he saw on a notepad cover he had smuggled into the secure area.",
       "status": "Unverified by independent documentary evidence. Sheehan's account is internally consistent and his other credentials are verifiable, but the specific classified file access has not been confirmed by any government document release.",
       "significance": "If accurate, represents one of the earliest claimed instances of a credentialed government-adjacent figure being shown crash retrieval evidence. The 1977 timing, the CRS/Carter administration context, and the Wright-Patterson location are all historically plausible."
+    },
+    "schumer_amendment_vote": {
+      "context": "Sheehan stated in his Dec 2023 That UFO Podcast appearance that the Schumer Amendment - the UAP Disclosure Act's core legislative vehicle - passed the full Senate 89-11 and was approved 17-0 out of the Senate Intelligence Committee, before being stripped of enforcement provisions by House opposition tied to private aerospace industry interests.",
+      "status": "The 89-11 Senate floor vote is a matter of public congressional record. The 17-0 Senate Intelligence Committee vote is as reported by Sheehan and consistent with the bipartisan committee composition at the time.",
+      "significance": "Demonstrates overwhelming bipartisan Senate support for mandatory UAP disclosure legislation. The contrast with subsequent House dilution illustrates the structural industry resistance Sheehan has consistently documented."
+    },
+    "disclosure_act_24_pages": {
+      "context": "Sheehan stated in April 2024 that only 24 of the original 64 pages of the UAP Disclosure Act were enacted into law. The enacted portion contains orders to all six military services, 18 intelligence agencies, 32 defense department agencies, and private aerospace corporations to gather UAP-related records in searchable digital format by October 18, 2024. All enforcement provisions including subpoena power, eminent domain authority, deposition power, and field investigation authority were stripped before passage.",
+      "status": "The NDAA FY2024 UAP records provisions are public law and confirm mandatory records-gathering orders. The specific page counts (24 of 64) and the stripped provisions are as reported by Sheehan, who was directly involved in drafting the original legislation.",
+      "significance": "Sheehan was one of the primary legal architects of the disclosure legislation. His account of the compromise provides insider context unavailable from the legislative text alone."
+    },
+    "whistleblower_count_40": {
+      "context": "Sheehan stated across multiple 2023-2024 podcast appearances that approximately 40 witnesses have provided sworn depositions to congressional investigators about UAP crash retrieval programs and aerospace back-engineering operations. He distinguished between witnesses with firsthand knowledge and those with secondhand access similar to Grusch.",
+      "status": "The number 40 is consistent across multiple Sheehan appearances and has been referenced by other disclosure advocates. The specific depositions have not been made public. No independent congressional source has confirmed this figure.",
+      "significance": "If accurate, represents a substantial body of under-oath testimony collected by congressional investigators that has not entered the public record - a legally significant corpus distinct from public whistleblower statements."
+    },
+    "golden_domes": {
+      "context": "In his July 2024 That UFO Podcast appearance, Sheehan claimed that the CIA maintains a secret detection center capable of detecting UAPs even when fully masked, using technology he referred to by the codename 'Golden Domes.'",
+      "status": "Unverified. No independent source has corroborated the 'Golden Domes' program name or the claimed detection capability. Sheehan did not disclose his source for this information.",
+      "significance": "Represents Sheehan's most specific technical intelligence claim from the 2024 period, going beyond legislative advocacy into claims about active intelligence capabilities."
+    },
+    "records_transfer_noncompliance": {
+      "context": "In his February 2026 That UFO Podcast appearance, Sheehan stated that only approximately 1% compliance had occurred with the Congressional legislative mandate requiring government agencies to transfer UAP-related records to the National Archives by October 18, 2024.",
+      "status": "No independent government audit of records transfer compliance has been publicly released. The 1% figure is Sheehan's characterization as of early 2026, based on his monitoring of the disclosure process through NPI.",
+      "significance": "If accurate, would represent near-total defiance of a congressional mandate by the national security apparatus - the exact structural pattern Sheehan has argued persists since the 1950s."
     }
   },
   "credibility": {
@@ -100,7 +142,13 @@
       "id": "george-knapp",
       "name": "George Knapp",
       "role": "Investigative journalist",
-      "relationship": "Both have been central figures in UAP disclosure for decades from different institutional vantages - Sheehan from law and advocacy, Knapp from journalism."
+      "relationship": "Both have been central figures in UAP disclosure for decades from different institutional vantages - Sheehan from law and advocacy, Knapp from investigative journalism."
+    },
+    {
+      "id": "eric-burlison",
+      "name": "Eric Burlison",
+      "role": "U.S. Representative (Missouri); UAP legislation sponsor",
+      "relationship": "Sheehan identified Burlison in a February 2026 podcast as drafting a standalone congressional bill to place Congress directly in charge of UAP declassification, independent of executive branch authorization."
     }
   ],
   "disclosures": [
@@ -117,8 +165,42 @@
       "type": "speech",
       "title": "UAP Disclosure Lectures - UC Santa Barbara",
       "outlet": "University of California, Santa Barbara",
-      "interviewer": "N/A",
       "notes": "Academic course and lecture series covering UAP history, law, and the 1977 classified file access claim. Represents Sheehan's most systematic public documentation of his experiences."
+    },
+    {
+      "date": "Dec 2023",
+      "type": "podcast",
+      "title": "Danny Sheehan - Schumer Amendment",
+      "outlet": "That UFO Podcast",
+      "notes": "Post-passage analysis of the Schumer Amendment (89-11 Senate, 17-0 Intel Committee). Named private aerospace industry as primary opposition to full enforcement provisions. Discussed approximately 40 sworn depositions collected by congressional investigators."
+    },
+    {
+      "date": "Apr 2024",
+      "type": "podcast",
+      "title": "Danny Sheehan - UAP Disclosure Act 2.0 - Part 1",
+      "outlet": "That UFO Podcast",
+      "notes": "Detailed breakdown of the compromise legislation: 24 of 64 pages enacted, all enforcement mechanisms stripped. Described NPI's mobilization campaign across all 435 congressional districts. Announced the 24-page records-gathering mandate with Oct 18, 2024 deadline."
+    },
+    {
+      "date": "Jul 2024",
+      "type": "podcast",
+      "title": "Daniel Sheehan - Disclosure Act 2.0 Update",
+      "outlet": "That UFO Podcast",
+      "notes": "Update on legislative progress. Introduced the 'Golden Domes' CIA detection center claim. Discussed Schumer's 7-year controlled disclosure vision and private aerospace patent motivations for opposing full disclosure."
+    },
+    {
+      "date": "Aug 2024",
+      "type": "podcast",
+      "title": "Danny Sheehan - Listener Q&A",
+      "outlet": "That UFO Podcast",
+      "notes": "Listener Q&A covering NPI's Citizens for Disclosure teams in 43 states, whistleblower protection legislation drafted at House request, and DoD pre-publication authorization of Elizondo and Grusch public statements."
+    },
+    {
+      "date": "Feb 2026",
+      "type": "podcast",
+      "title": "Danny Sheehan on Disclosure, Power, and a Deathbed Alien Encounter",
+      "outlet": "That UFO Podcast",
+      "notes": "Reported approximately 1% compliance with records transfer mandate. Identified Rep. Burlison as sponsoring standalone congressional declassification bill. Recounted secondhand account of military commander's reported contact at S4. NPI organized in 35 states."
     }
   ],
   "sources": [
@@ -139,6 +221,30 @@
       "url": "https://en.wikipedia.org/wiki/Daniel_Sheehan_(attorney)",
       "type": "reference",
       "notes": "Biographical reference; documents Pentagon Papers, Silkwood, Iran-Contra, and UAP work"
+    },
+    {
+      "title": "That UFO Podcast - Danny Sheehan: Schumer Amendment (Dec 2023)",
+      "url": "https://www.youtube.com/watch?v=_o-lkQ4-4oM",
+      "type": "podcast",
+      "notes": "Post-passage Schumer Amendment analysis; 89-11 Senate vote detail; 40 deponent count; aerospace industry opposition"
+    },
+    {
+      "title": "That UFO Podcast - UAP Disclosure Act 2.0 Part 1 (Apr 2024)",
+      "url": "https://www.youtube.com/watch?v=wHTxO1yUVqU",
+      "type": "podcast",
+      "notes": "24-of-64-pages enacted detail; stripped enforcement provisions; NPI 435-district mobilization"
+    },
+    {
+      "title": "That UFO Podcast - Disclosure Act 2.0 Update (Jul 2024)",
+      "url": "https://www.youtube.com/watch?v=epqSnya0LO0",
+      "type": "podcast",
+      "notes": "Golden Domes CIA detection center claim; 40 sworn depositions; Schumer 7-year disclosure timeline"
+    },
+    {
+      "title": "That UFO Podcast - Danny Sheehan on Disclosure, Power, and a Deathbed Alien Encounter (Feb 2026)",
+      "url": "https://www.youtube.com/watch?v=Sjib0fdVctM",
+      "type": "podcast",
+      "notes": "1% records transfer compliance; Burlison standalone bill; NPI 35-state organizing; S4 deathbed account"
     }
   ],
   "career_connections": [
@@ -157,6 +263,22 @@
       "node_label": "David Grusch",
       "relationship": "Sheehan served as a legal advisor and constitutional law advocate for whistleblowers including Grusch during the congressional disclosure period",
       "connection_type": "collaboration"
+    },
+    {
+      "event_index": 9,
+      "node_type": "program",
+      "node_id": "uap-disclosure-act",
+      "node_label": "UAP Disclosure Act",
+      "relationship": "Sheehan was a principal legal architect of the Schumer-Rounds UAP Disclosure Act and tracked its passage and compromise through 2023-2024",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 11,
+      "node_type": "figure",
+      "node_id": "eric-burlison",
+      "node_label": "Rep. Eric Burlison",
+      "relationship": "Sheehan identified Burlison as the primary congressional champion for a standalone UAP declassification bill in 2026",
+      "connection_type": "professional"
     }
   ]
 }
