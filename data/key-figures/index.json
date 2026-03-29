@@ -1610,5 +1610,19 @@
     "data_file": "john-lear.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "eric-burlison",
+    "name": "Rep. Eric Burlison",
+    "aliases": ["Eric Burlison", "Rep. Burlison"],
+    "role": "U.S. Representative (R-MO-7); Founding Member, House UAP Caucus",
+    "period": "2023-present",
+    "affiliation": "U.S. House of Representatives",
+    "summary": "Republican congressman from Missouri and founding member of the House UAP Caucus who serves on the House Oversight Committee. Notably the most skeptical member of the UAP Caucus on extraterrestrial explanations, yet among the most active legislators pursuing oversight - personally hiring David Grusch as a Special Advisor, attending SCIF briefings, introducing the UAP Disclosure Act of 2025, and publicly releasing new UAP footage at a 2025 Task Force hearing.",
+    "status": "detailed",
+    "tags": ["congress", "uap-caucus", "disclosure", "oversight", "ndaa"],
+    "data_file": "eric-burlison.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

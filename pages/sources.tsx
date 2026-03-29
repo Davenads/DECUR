@@ -720,6 +720,88 @@ const Sources: NextPage = () => {
             notes="Used for: John Lear."
           />
 
+          {/* Eric Burlison */}
+          <SourceCard
+            name="Rep. Eric Burlison - Official Congressional Biography"
+            url="https://burlison.house.gov/about"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official House biography with committee assignments, district information, and background. Primary source for all biographical data in the Burlison profile."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="Burlison Hires Grusch as Special Advisor - Official Press Release (Mar 27, 2025)"
+            url="https://burlison.house.gov/media/press-releases/rep-burlison-welcomes-former-us-air-force-officer-david-grusch-special-advisor"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official press release announcing David Grusch's four-month appointment as Special Advisor to Burlison's office for work on the Task Force on the Declassification of Federal Secrets. Primary source for Grusch advisory appointment details and clearance level."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="UAP Disclosure Act of 2025 - Official Press Release (Aug 29, 2025)"
+            url="https://burlison.house.gov/media/press-releases/rep-burlison-introduces-uap-disclosure-act-2025-amendment-ndaa"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official press release announcing the UAPDA 2025 as an FY2026 NDAA amendment, modeled on the JFK Records Act structure. Primary source for legislative details and framing."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="Missourinet: Burlison on UFOs - Either Angels or Man-Made (Aug 21, 2023)"
+            url="https://www.missourinet.com/2023/08/21/burlison-on-ufos-theyre-either-angels-or-man-made/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Post-hearing public statement establishing Burlison's skeptical position: 'I think it's either angels or it's manmade. I think the most likely explanation is that it's manmade.' Primary source for the stated-position claim and credibility framing."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="Springfield Daily Citizen: ET Is the Least Likely Scenario - Burlison Interview Transcript"
+            url="https://sgfcitizen.org/government/eric-burlison-interview-transcript-et-is-the-least-likely-scenario/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Full transcript of extended interview with Burlison articulating his skeptical reasoning on ET origin and his framework for thinking about UAP. Primary source for his stated position on human-technology explanations."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="The Hill: Classified UFO Briefing Leaves House Members With Mixed Feelings (Jan 2024)"
+            url="https://thehill.com/homenews/house/4406059-classified-ufo-briefing-house-members-mixed-feelings/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Reporting on the January 12, 2024 SCIF briefing provided by the ICIG, including Burlison's characterization of footage showing objects defying physics and intelligently controlled plasma orbs."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="That UFO Podcast: Rep. Eric Burlison - UAP, Grusch and More (Jan 16, 2024)"
+            url="https://www.youtube.com/watch?v=KCziN3OzwmQ"
+            type="Video Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Primary interview source for SCIF briefing details, Grusch clearance claims, the SCIF denial prior to the July 2023 hearing, and Burlison's legislative outlook. Interviewed by Andy McGrillen."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="That UFO Podcast: Rep. Eric Burlison - Trump Is the Disclosure President (Nov 25, 2025)"
+            url="https://www.youtube.com/watch?v=sKHZ8wA1__E"
+            type="Video Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Primary interview source for NDAA strategy, Grusch Top Secret briefing details, White House executive order push, and specific locations given to Burlison for investigation. Interviewed by Andy McGrillen."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
+          <SourceCard
+            name="Liberation Times: Rep. Burlison - White House-Approved Trip to NAS Patuxent River (2026)"
+            url="https://www.liberationtimes.com/home/white-house-approved-trip-allegedly-took-congressman-to-maryland-base-to-examine-suspected-ufo-facility"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Reports on Burlison's White House-approved visit to NAS Patuxent River to examine a hangar alleged to be connected to a proposed non-human materials transfer. Follow-up reporting raised questions from three sources about which specific hangar was accessed."
+            notes="Used for: Rep. Eric Burlison."
+          />
+
           <SourceCard
             name="Hunt for the Skinwalker: Science Confronts the Unexplained at a Remote Ranch in Utah - Kelleher & Knapp (2005)"
             url="https://www.amazon.com/Hunt-Skinwalker-Science-Confronts-Unexplained/dp/1416505210"

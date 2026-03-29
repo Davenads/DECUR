@@ -1196,5 +1196,13 @@ export const graphData: GraphData = {
     { source: 'vallee-davis-incommensurability-2003', target: 'nids',                        label: 'presented at NIDS conference' },
     { source: 'vallee-davis-incommensurability-2003', target: 'wilson-davis-memo',           label: 'Davis authored both in the same period; overlapping classified/open research context' },
     { source: 'vallee-davis-incommensurability-2003', target: 'sturrock-panel-report-1998',  label: 'built upon physical evidence framework established by' },
+
+    // Eric Burlison connections
+    { source: 'eric-burlison', target: 'tim-burchett',       label: 'co-founding member of House UAP Caucus launched by Burchett; sustained legislative partnership on UAP oversight through 118th and 119th Congresses' },
+    { source: 'eric-burlison', target: 'anna-paulina-luna',  label: 'fellow UAP Caucus founding member; both attended January 2024 SCIF briefing and were jointly briefed by Grusch at Top Secret level' },
+    { source: 'eric-burlison', target: 'david-grusch',       label: 'Grusch testified at July 2023 hearing where Burlison cross-examined him; Burlison hired Grusch as Special Advisor to his office in March 2025' },
+    { source: 'eric-burlison', target: 'chuck-schumer',      label: 'House counterpart to Schumer Senate UAPDA effort; Burlison introduced UAPDA 2025 in the House modeled on Schumer-Rounds structure' },
+    { source: 'eric-burlison', target: 'kirsten-gillibrand', label: 'coordinated with Gillibrand Senate-side office during 2023-2024 NDAA UAP Disclosure Act push' },
+    { source: 'eric-burlison', target: 'aaro',               label: 'Oversight Committee member who led bipartisan letter requesting a UAP Select Subcommittee; critical of AARO mandate and access limitations' },
   ],
 };
