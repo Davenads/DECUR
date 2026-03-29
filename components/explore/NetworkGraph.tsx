@@ -455,6 +455,7 @@ const NetworkGraph: FC = () => {
         (gNode.type === 'document' && DOCUMENT_IDS.has(id)) ||
         (gNode.type === 'case' && CASE_IDS.has(id)) ||
         ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(id)) ||
+        (gNode.type === 'contractor' && CONTRACTOR_IDS.has(id)) ||
         DEEP_LINK_MAP[id] != null;
       if (isNavigable) {
         ctx.beginPath();
@@ -515,6 +516,7 @@ const NetworkGraph: FC = () => {
     (clickedNode.type === 'document' && DOCUMENT_IDS.has(clickedNode.id)) ||
     (clickedNode.type === 'case' && CASE_IDS.has(clickedNode.id)) ||
     ((clickedNode.type === 'organization' || clickedNode.type === 'project') && PROGRAM_IDS.has(clickedNode.id)) ||
+    (clickedNode.type === 'contractor' && CONTRACTOR_IDS.has(clickedNode.id)) ||
     DEEP_LINK_MAP[clickedNode.id] != null
   );
 
@@ -716,6 +718,7 @@ const NetworkGraph: FC = () => {
                   {clickedNode?.type === 'document' ? 'View Document →'
                     : clickedNode?.type === 'case' ? 'View Case →'
                     : (clickedNode?.type === 'organization' || clickedNode?.type === 'project') ? 'View Program →'
+                    : clickedNode?.type === 'contractor' ? 'View Contractor →'
                     : 'View Profile →'}
                 </button>
               )}
