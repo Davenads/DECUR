@@ -47,16 +47,16 @@
         "event": "During the same week as Grusch's landmark House Oversight hearing, Kirkpatrick publicly contradicts Grusch's claims, stating AARO has found no verifiable evidence of non-human intelligence or UAP crash retrievals."
       },
       {
-        "year": "Mar 2024",
-        "event": "Oversees release of the AARO Historical Record Report Volume 1, which directly contradicts Grusch's congressional testimony and finds no evidence of government UAP crash retrieval programs."
-      },
-      {
         "year": "Dec 2023",
-        "event": "Resigns as AARO director, citing lack of institutional support and congressional interference with AARO's mission."
+        "event": "Resigns as AARO director after roughly 13 months, citing lack of institutional support and congressional interference with AARO's mission."
       },
       {
-        "year": "2024",
-        "event": "Publishes public commentary critical of congressional UAP advocacy and the broader disclosure movement, describing political pressure as undermining rigorous scientific investigation."
+        "year": "Mar 2024",
+        "event": "AARO releases the Historical Record Report Volume 1 under Kirkpatrick's successor, directly contradicting Grusch's congressional testimony and finding no evidence of government UAP crash retrieval programs. Kirkpatrick had initiated the report before his resignation."
+      },
+      {
+        "year": "Apr 2024",
+        "event": "Publishes a Scientific American op-ed arguing that congressional UAP advocacy and political pressure systematically undermined AARO's ability to conduct rigorous, unbiased scientific investigation."
       }
     ]
   },
@@ -72,6 +72,12 @@
       "name": "David Grusch",
       "role": "NRO whistleblower",
       "relationship": "Kirkpatrick publicly contradicted Grusch's congressional testimony, creating a central credibility conflict between AARO's official findings and Grusch's sworn claims about crash retrieval programs."
+    },
+    {
+      "id": "kirsten-gillibrand",
+      "name": "Sen. Kirsten Gillibrand",
+      "role": "Chair, Senate Armed Services Subcommittee on Emerging Threats",
+      "relationship": "Gillibrand publicly stated on record that she believed AARO lacked full access to the programs it was tasked to investigate - directly undercutting Kirkpatrick's claim to have conducted a comprehensive institutional review."
     }
   ],
   "disclosures": [
@@ -88,6 +94,13 @@
       "title": "AARO Status Briefing to Senate Armed Services Subcommittee",
       "outlet": "U.S. Senate Armed Services Subcommittee on Emerging Threats",
       "notes": "First public congressional testimony by an AARO director. Described AARO's organizational structure, case backlog, and investigation methodology. Did not confirm any extraordinary UAP findings."
+    },
+    {
+      "date": "Apr 2024",
+      "type": "article",
+      "title": "Here's What I Learned Leading the Government's UFO Investigation",
+      "outlet": "Scientific American",
+      "notes": "Post-resignation op-ed arguing that congressional political pressure and the broader disclosure movement systematically undermined AARO's capacity for rigorous, unbiased scientific investigation. The most detailed public account of Kirkpatrick's perspective on institutional failures at AARO."
     }
   ],
   "sources": [

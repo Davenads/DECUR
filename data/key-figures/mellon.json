@@ -35,60 +35,60 @@
     ],
     "key_events": [
       {
-        "date": "1982",
+        "year": "1982",
         "event": "Graduates Yale University; begins Washington career"
       },
       {
-        "date": "1988–1997",
-        "event": "Serves on Senate Select Committee on Intelligence in progressively senior staff roles, including minority staff director"
+        "year": "1988",
+        "event": "Joins Senate Select Committee on Intelligence in progressively senior staff roles, including minority staff director (1993-1997)"
       },
       {
-        "date": "1997",
+        "year": "1997",
         "event": "Appointed Deputy Assistant Secretary of Defense for Intelligence; oversees Defense intelligence agencies and black programs including DIA, Defense HUMINT Service, and Special Access Programs"
       },
       {
-        "date": "2002",
+        "year": "2002",
         "event": "Concludes DASD role; returns to Congressional intelligence work following 9/11 Commission era restructuring"
       },
       {
-        "date": "c. 2015",
+        "year": "c. 2015",
         "event": "Begins private engagement with military UAP evidence through contacts in the intelligence and defense communities; concludes the U.S. has non-human craft in its possession"
       },
       {
-        "date": "2017",
+        "year": "2017",
         "event": "Joins To The Stars Academy as Senior National Security Affairs Advisor alongside Luis Elizondo and Dr. Hal Puthoff; becomes the organization's primary Washington policy interface"
       },
       {
-        "date": "December 2017",
+        "year": "Dec 2017",
         "event": "New York Times 'Glowing Auras and Black Money' investigation published; Mellon credited with obtaining and facilitating release of Nimitz FLIR1, Gimbal, and GoFast videos to the Times and TTSA"
       },
       {
-        "date": "January 2018",
-        "event": "Writes Washington Post op-ed 'The Military Keeps Encountering UFOs — Why Won't the Pentagon Investigate?' calling for formal government investigation"
+        "year": "Jan 2018",
+        "event": "Writes Washington Post op-ed 'The Military Keeps Encountering UFOs - Why Won't the Pentagon Investigate?' calling for formal government investigation"
       },
       {
-        "date": "2019",
+        "year": "2019",
         "event": "Pentagon formally confirms Nimitz FLIR1, Gimbal, and GoFast videos are authentic Navy recordings; validates Mellon and Elizondo's public disclosure strategy"
       },
       {
-        "date": "2020–2021",
+        "year": "2020",
         "event": "Works with Senators Marco Rubio and Kirsten Gillibrand and House Intelligence Committee staff to embed UAP reporting requirements into NDAA legislation; UAP Task Force provision passes"
       },
       {
-        "date": "2022",
+        "year": "2022",
         "event": "Actively drafts legislative framework with Congressional staff that becomes the foundation of the UAP Disclosure Act; coordinates with David Grusch's attorney on whistleblower protection"
       },
       {
-        "date": "July 2023",
+        "year": "Jul 2023",
         "event": "Behind-the-scenes coordination for the House Oversight Committee UAP hearing featuring Grusch, Graves, Fravor, and Nell; provides Congressional member briefings"
       },
       {
-        "date": "December 2023",
+        "year": "Dec 2023",
         "event": "UAP Disclosure Act passes Senate NDAA authorization; subsequently stripped in House-Senate conference committee despite Mellon's advocacy"
       },
       {
-        "date": "2024",
-        "event": "Continues legislative advocacy; publishes analysis on Congressional website and Substack detailing specific UAP program budget line items and oversight failures"
+        "year": "2024",
+        "event": "Continues legislative advocacy; publishes analysis on Substack and ChrisMellon.net detailing specific suspected UAP program budget line items and oversight failures"
       }
     ]
   },
@@ -252,46 +252,53 @@
   ],
   "disclosures": [
     {
-      "date": "December 16, 2017",
-      "type": "Media",
+      "date": "Dec 2017",
+      "type": "television",
+      "title": "Glowing Auras and Black Money - Navy Video Release",
       "outlet": "New York Times / TTSA",
-      "description": "Facilitated release of FLIR1, Gimbal, and GoFast Navy UAP videos; simultaneously disclosed AATIP program through NYT investigation 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program'"
+      "notes": "Facilitated release of FLIR1, Gimbal, and GoFast Navy UAP videos; simultaneously disclosed AATIP program through NYT investigation 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program'"
     },
     {
-      "date": "January 9, 2018",
-      "type": "Op-Ed",
+      "date": "Jan 2018",
+      "type": "article",
+      "title": "The Military Keeps Encountering UFOs - Why Won't the Pentagon Investigate?",
       "outlet": "Washington Post",
-      "description": "'The Military Keeps Encountering UFOs — Why Won't the Pentagon Investigate?' — first major op-ed by a former senior DoD official calling for formal investigation"
+      "notes": "First major op-ed by a former senior DoD official calling for formal government investigation of UAP; preceded the Senate Intelligence Committee's push for the UAP Task Force by two years"
     },
     {
-      "date": "May 16, 2019",
-      "type": "Media",
+      "date": "May 2019",
+      "type": "interview",
+      "title": "UAP Prevalence Statements",
       "outlet": "Politico / NBC News",
-      "description": "Multiple articles publishing Mellon statements on UAP prevalence; directly contributed to Navy updating UAP reporting guidelines"
+      "notes": "Multiple published interviews on UAP prevalence and reporting; directly contributed to the Navy updating its UAP reporting guidelines in 2019"
     },
     {
       "date": "2020",
-      "type": "Legislative",
-      "outlet": "Senate NDAA",
-      "description": "UAP Task Force provision passes in FY2021 NDAA — direct result of Mellon and Rubio collaboration; first legally mandated UAP reporting structure in U.S. government"
+      "type": "speech",
+      "title": "FY2021 NDAA - UAP Task Force Advocacy",
+      "outlet": "U.S. Senate / Congressional Staff",
+      "notes": "UAP Task Force provision passes in FY2021 NDAA as a direct result of Mellon and Rubio collaboration; first legally mandated UAP reporting structure in U.S. government"
     },
     {
-      "date": "2021–2022",
-      "type": "Legislative",
-      "outlet": "Senate NDAA",
-      "description": "AARO legislation passes in FY2022 NDAA expanding UAP investigation to all domains; preliminary UAP assessment report publicly released"
+      "date": "2022",
+      "type": "speech",
+      "title": "FY2022 NDAA - AARO and UAP Disclosure Act Advocacy",
+      "outlet": "U.S. Senate / Congressional Staff",
+      "notes": "AARO legislation passes in FY2022 NDAA expanding UAP investigation to all domains; Mellon simultaneously coordinates with David Grusch's legal team on whistleblower protections"
     },
     {
       "date": "2023",
-      "type": "Legislative",
-      "outlet": "Senate NDAA",
-      "description": "UAP Disclosure Act of 2023 passes in Senate authorization; stripped in conference committee. Mellon publicly attributes obstruction to executive branch pressure."
+      "type": "speech",
+      "title": "UAP Disclosure Act of 2023 - Senate Advocacy",
+      "outlet": "U.S. Senate Armed Services Committee",
+      "notes": "UAP Disclosure Act of 2023 passes in Senate authorization; stripped in conference committee. Mellon publicly attributes the removal to organized executive branch obstruction."
     },
     {
       "date": "2024",
-      "type": "Public Analysis",
+      "type": "article",
+      "title": "UAP Program Budget Line Item Analysis",
       "outlet": "ChrisMellon.net / Substack",
-      "description": "Publishes detailed analysis identifying specific suspected UAP program budget line items within unclassified budget documents; outlines specific program names and funding vehicles to assist Congressional investigators"
+      "notes": "Publishes detailed analysis identifying specific suspected UAP program budget line items within unclassified budget documents; outlines specific program names and funding vehicles to assist Congressional investigators"
     }
   ],
   "career_connections": [
@@ -342,6 +349,38 @@
       "node_label": "Ryan Graves",
       "relationship": "Provided Congressional member briefings supporting the July 2023 House hearing featuring Graves, Grusch, and Fravor",
       "connection_type": "collaboration"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ChrisMellon.net - Official Website and Substack",
+      "url": "https://www.chrismellon.net",
+      "type": "Website",
+      "notes": "Primary public platform for Mellon's ongoing UAP analysis, legislative updates, and program budget line item research."
+    },
+    {
+      "title": "Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program - New York Times (Dec 2017)",
+      "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
+      "type": "Article",
+      "notes": "Landmark 2017 NYT investigation that Mellon facilitated; published FLIR1, Gimbal, and GoFast videos and exposed AATIP."
+    },
+    {
+      "title": "The Military Keeps Encountering UFOs - Why Won't the Pentagon Investigate? - Washington Post (Jan 2018)",
+      "url": "https://www.washingtonpost.com/outlook/the-military-keeps-encountering-ufos-why-wont-the-pentagon-investigate/2018/01/05/faeec5d0-edc8-11e7-b698-91d4e35920a3_story.html",
+      "type": "Article",
+      "notes": "First major UAP op-ed by a former senior DoD official; set the public advocacy template Mellon continued through 2024."
+    },
+    {
+      "title": "Senate NDAA FY2021 - UAP Task Force Provision (Congressional Record)",
+      "url": "https://www.congress.gov/bill/116th-congress/senate-bill/4049",
+      "type": "Congressional Record",
+      "notes": "Legislative record of the UAP Task Force provision Mellon helped draft in collaboration with Sen. Marco Rubio."
+    },
+    {
+      "title": "UAP Disclosure Act of 2023 - Senate Armed Services Committee",
+      "url": "https://www.armed-services.senate.gov/imo/media/doc/fy24_ndaa_summary.pdf",
+      "type": "Congressional Record",
+      "notes": "Senate authorization containing the UAP Disclosure Act Mellon helped draft; later stripped in House-Senate conference."
     }
   ]
 }
