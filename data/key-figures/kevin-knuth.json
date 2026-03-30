@@ -1,0 +1,241 @@
+{
+  "profile": {
+    "id": "kevin-knuth",
+    "name": "Dr. Kevin Knuth",
+    "aliases": ["Kevin Knuth", "K. Knuth"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Professor of Physics, University at Albany (SUNY)",
+      "Editor-in-Chief, Entropy (MDPI)",
+      "Lead Scientist, UAPx",
+      "Former Research Scientist, NASA Ames Research Center"
+    ],
+    "service_period": "1995-present",
+    "organizations": [
+      "University at Albany (SUNY)",
+      "UAPx",
+      "Scientific Coalition for UAP Studies (SCU)",
+      "Galileo Project",
+      "IFEX (Interdisciplinary Research Centre for Extraterrestrial Studies)",
+      "Sol Foundation"
+    ],
+    "clearance": null,
+    "summary": "Physicist and Bayesian inference specialist whose 2019 peer-reviewed paper in Entropy calculated flight characteristics of documented UAP cases, finding accelerations of 100 to 1,000+ g with no sonic booms or thermal signatures. Leads UAPx, which conducted the first academic instrumented field expedition for UAP detection, and is the lead author on the 2025 collaborative 'New Science of UAP' paper in Progress in Aerospace Sciences.",
+    "education": [
+      "PhD, Physics, University of Minnesota (1995)",
+      "MS, Physics, Montana State University (1990)",
+      "BS, Physics and Mathematics, University of Wisconsin-Oshkosh (1988)"
+    ],
+    "early_career": [
+      "Research scientist, NASA Ames Research Center (Intelligent Systems Division) - applied Bayesian analysis and machine learning to aerospace data",
+      "Developed information-theoretic methods for physical inference, published across physics and statistics journals"
+    ],
+    "key_events": [
+      {
+        "year": "1995",
+        "event": "Completed PhD at University of Minnesota. Joined NASA Ames Research Center as research scientist in the Intelligent Systems Division, applying Bayesian methods to aerospace data analysis."
+      },
+      {
+        "year": "2012",
+        "event": "Appointed Editor-in-Chief of MDPI's Entropy journal. Joined faculty at University at Albany (SUNY) as physics professor."
+      },
+      {
+        "year": "Oct 2019",
+        "event": "Published 'Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles' in Entropy (21:10, 939). The paper analyzed the Nimitz and other documented UAP encounters using physics, calculating accelerations of 100 to 1,000+ g with no sonic booms, thermal signatures, or air disturbance - concluding the observations represent technology far beyond known human capabilities."
+      },
+      {
+        "year": "2021",
+        "event": "Led the first academic instrumented field expedition for UAP detection through UAPx at Laguna Beach, California. The multi-sensor campaign collected environmental and electromagnetic data during the observation period."
+      },
+      {
+        "year": "Nov 2023",
+        "event": "Presented UAP physics research at the inaugural Sol Foundation Symposium at Stanford University, alongside Garry Nolan, Avi Loeb, Jacques Vallee, and other researchers."
+      },
+      {
+        "year": "2023",
+        "event": "Named as contributing affiliate to Avi Loeb's Galileo Project, co-authoring the scientific methodology paper for the project's multimodal ground-based observatory network."
+      },
+      {
+        "year": "2024",
+        "event": "Presented at the Sol Foundation 2024 Symposium in San Francisco. Affiliated with IFEX (Interdisciplinary Research Centre for Extraterrestrial Studies) at University of Wurzburg, connecting with Hakan Kayal's satellite-based anomaly detection program."
+      },
+      {
+        "year": "Jun 2025",
+        "event": "Published as lead author on 'The New Science of Unidentified Aerospace-Undersea Phenomena (UAP)' in Progress in Aerospace Sciences (arXiv:2502.06794), a flagship collaborative paper with 30+ co-authors including Matt Szydagis, Hakan Kayal, and Beatriz Villarroel, establishing a scientific framework for empirical UAP investigation."
+      },
+      {
+        "year": "2025",
+        "event": "Promoted to full professor at University at Albany. UAPx field expedition paper published as first author in Progress in Aerospace Sciences, representing the first peer-reviewed report of an academic instrumented UAP field campaign."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "beatriz-villarroel",
+      "name": "Dr. Beatriz Villarroel",
+      "role": "Astrophysicist, VASCO Principal Investigator",
+      "relationship": "Co-authors on the 2025 'New Science of UAP' paper in Progress in Aerospace Sciences. Both affiliated with IFEX and Sol Foundation; Villarroel's archival plate research and Knuth's field instrumentation represent complementary empirical approaches."
+    },
+    {
+      "id": "avi-loeb",
+      "name": "Prof. Avi Loeb",
+      "role": "Harvard astrophysicist, Galileo Project director",
+      "relationship": "Knuth is a Galileo Project affiliate and co-authored the project's multimodal observatory methodology paper. Both pursue rigorous instrumented empirical approaches to UAP detection."
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Immunologist, Sol Foundation founder",
+      "relationship": "Co-speakers at Sol Foundation inaugural symposium (November 2023) and 2024 symposium. Both are central to the Sol Foundation's scientific advisory network."
+    },
+    {
+      "id": "jacques-vallee",
+      "name": "Dr. Jacques Vallee",
+      "role": "Computer scientist and UAP researcher",
+      "relationship": "Co-speakers at Sol Foundation events. Both co-appear on the 2025 'New Science of UAP' arXiv paper framework."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Oct 2019",
+      "type": "academic-paper",
+      "title": "Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles",
+      "outlet": "Entropy, MDPI (21:10, article 939)",
+      "notes": "Peer-reviewed physics analysis of documented UAP cases including the Nimitz encounter. Calculated accelerations of 100 to 1,000+ g with no accompanying sonic booms, thermal signatures, or air disturbance. Co-authored with Robert M. Powell and Peter A. Reali (Scientific Coalition for UAP Studies). DOI: 10.3390/e21100939."
+    },
+    {
+      "date": "2023",
+      "type": "academic-paper",
+      "title": "Scientific Investigation of UAP Using Multimodal Ground-Based Observatories",
+      "outlet": "Journal of Astronomical Instrumentation (12:1, 2340006)",
+      "notes": "Galileo Project methodology paper co-authored with Loeb's team, describing the instrumented observatory network design for systematic UAP data collection. DOI: 10.1142/S2251171723400068."
+    },
+    {
+      "date": "Nov 2023",
+      "type": "symposium",
+      "title": "Sol Foundation Inaugural Symposium - UAP Physics and Field Research",
+      "outlet": "Sol Foundation, Stanford University",
+      "notes": "Presented UAP flight characteristic analysis and UAPx field methodology alongside Garry Nolan, Avi Loeb, Jacques Vallee, and Chris Mellon."
+    },
+    {
+      "date": "2024",
+      "type": "symposium",
+      "title": "Sol Foundation 2024 Symposium - Instrumented UAP Research",
+      "outlet": "Sol Foundation, San Francisco",
+      "notes": "Presented updated UAPx findings and the scientific case for empirical field-based UAP investigation."
+    },
+    {
+      "date": "Jun 2025",
+      "type": "academic-paper",
+      "title": "The New Science of Unidentified Aerospace-Undersea Phenomena (UAP)",
+      "outlet": "Progress in Aerospace Sciences (arXiv:2502.06794)",
+      "notes": "Lead author on the flagship collaborative paper with 30+ co-authors including Matt Szydagis, Hakan Kayal, Beatriz Villarroel, and Jacques Vallee. Establishes a scientific framework for empirical UAP investigation and consolidates peer-reviewed findings across multiple research programs."
+    },
+    {
+      "date": "2025",
+      "type": "academic-paper",
+      "title": "Initial Results from the First Field Expedition of UAPx",
+      "outlet": "Progress in Aerospace Sciences (156, 101099)",
+      "notes": "Co-authored with Matt Szydagis, Kugielsky, and Levy. First peer-reviewed report of an academic instrumented UAP field campaign, documenting methodology and sensor data from the 2021 Laguna Beach expedition."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Estimating Flight Characteristics of Anomalous UAVs - Entropy (2019)",
+      "url": "https://www.mdpi.com/1099-4300/21/10/939",
+      "type": "Academic Paper",
+      "notes": "Primary UAP physics analysis paper; full text also at PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC7514271/"
+    },
+    {
+      "title": "The New Science of UAP - arXiv:2502.06794 (2025)",
+      "url": "https://arxiv.org/abs/2502.06794",
+      "type": "Academic Paper",
+      "notes": "Flagship 2025 collaborative framework paper, lead author"
+    },
+    {
+      "title": "Initial Results UAPx Field Expedition - Progress in Aerospace Sciences (2025)",
+      "url": "https://www.semanticscholar.org/paper/Initial-results-from-the-first-field-expedition-of-Szydagis-Knuth/29ccad2a0081bf577c89210a3b327bae4c370f09",
+      "type": "Academic Paper",
+      "notes": "First peer-reviewed academic instrumented UAP field campaign report"
+    },
+    {
+      "title": "Scientific Investigation of UAP Using Multimodal Observatories - JAI (2023)",
+      "url": "https://www.worldscientific.com/doi/10.1142/S2251171723400068",
+      "type": "Academic Paper",
+      "notes": "Galileo Project observatory methodology paper"
+    },
+    {
+      "title": "Kevin Knuth - University at Albany Faculty Page",
+      "url": "https://www.albany.edu/physics/faculty/kevin-knuth",
+      "type": "Organization Profile",
+      "notes": "Institutional faculty biography and research overview"
+    },
+    {
+      "title": "Kevin Knuth - Sol Foundation Profile",
+      "url": "https://thesolfoundation.org/people/kevin-knuth-3/",
+      "type": "Organization Profile",
+      "notes": "Sol Foundation advisory member listing"
+    },
+    {
+      "title": "UAlbany Physicists Test Scientific Approach to UAP Research (2025)",
+      "url": "https://www.albany.edu/news-center/news/2025-ualbany-physicists-test-scientific-approach-uap-research",
+      "type": "Press Release",
+      "notes": "University press release on UAPx field research program"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Analysis of documented UAP cases including the Nimitz encounter shows accelerations of 100 to 1,000+ g with no sonic booms, thermal signatures, or air disturbance - consistent with technology far beyond known human capabilities or requiring fundamentally different physics.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Entropy 21(10):939 (2019)"
+    },
+    {
+      "claim": "The 2021 UAPx Laguna Beach field expedition collected multi-sensor environmental and electromagnetic data during UAP observation windows, establishing proof-of-concept for academic instrumented field UAP research.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Progress in Aerospace Sciences 156:101099 (2025)"
+    },
+    {
+      "claim": "A collaborative scientific framework spanning physics analysis, archival astronomy, field instrumentation, and satellite detection can constitute a rigorous empirical research program for UAP investigation.",
+      "category": "Physical Evidence",
+      "status": "unverified",
+      "source": "Progress in Aerospace Sciences arXiv:2502.06794 (2025)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "beatriz-villarroel",
+      "node_label": "Dr. Beatriz Villarroel",
+      "relationship": "Co-authors on 2025 New Science of UAP flagship paper; both affiliated with IFEX.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "avi-loeb",
+      "node_label": "Prof. Avi Loeb",
+      "relationship": "Galileo Project affiliate; co-authored observatory methodology paper.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "garry-nolan",
+      "node_label": "Dr. Garry Nolan",
+      "relationship": "Co-speakers at Sol Foundation inaugural and 2024 symposia.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 8,
+      "node_type": "program",
+      "node_id": "uapx",
+      "node_label": "UAPx",
+      "relationship": "Lead scientist of UAPx, conducting the first academic instrumented UAP field expeditions.",
+      "connection_type": "institutional"
+    }
+  ]
+}

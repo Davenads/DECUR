@@ -355,6 +355,24 @@ const Sources: NextPage = () => {
             notes="Used for: Dr. Beatriz Villarroel."
           />
 
+          {/* Kevin Knuth */}
+          <SourceCard
+            name="Estimating Flight Characteristics of Anomalous UAVs - Entropy (Knuth et al., 2019)"
+            url="https://www.mdpi.com/1099-4300/21/10/939"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Peer-reviewed physics analysis of documented UAP cases finding accelerations of 100 to 1,000+ g with no sonic booms or thermal signatures. The most-cited academic paper specifically calculating UAP flight performance."
+            notes="Used for: Dr. Kevin Knuth."
+          />
+          <SourceCard
+            name="The New Science of Unidentified Aerospace-Undersea Phenomena - Progress in Aerospace Sciences (2025)"
+            url="https://arxiv.org/abs/2502.06794"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Flagship 2025 collaborative framework paper with 30+ co-authors establishing empirical methods for UAP investigation. Knuth is lead author."
+            notes="Used for: Dr. Kevin Knuth."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

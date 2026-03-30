@@ -1681,5 +1681,19 @@
     "data_file": "beatriz-villarroel.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "kevin-knuth",
+    "name": "Dr. Kevin Knuth",
+    "aliases": ["Kevin Knuth"],
+    "role": "Professor of Physics, UAPx Lead Scientist",
+    "period": "1995-present",
+    "affiliation": "University at Albany (SUNY)",
+    "summary": "Physicist and Bayesian inference specialist whose 2019 Entropy paper is the most-cited peer-reviewed study calculating UAP flight physics from documented cases. Leads UAPx field expeditions and is lead author on the 2025 'New Science of UAP' collaborative paper. Affiliated with the Galileo Project and Sol Foundation.",
+    "status": "detailed",
+    "tags": ["scientist", "physics", "uapx", "bayesian", "field-research", "sol-foundation", "galileo-project"],
+    "data_file": "kevin-knuth.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

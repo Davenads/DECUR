@@ -1225,5 +1225,11 @@ export const graphData: GraphData = {
     { source: 'beatriz-villarroel', target: 'garry-nolan',   label: 'Sol Foundation Advisory Board; joint panel Sol 2024 Symposium' },
     { source: 'beatriz-villarroel', target: 'avi-loeb',       label: 'Sol Foundation colleagues; parallel empirical technosignature programs' },
     { source: 'beatriz-villarroel', target: 'jacques-vallee', label: 'co-authors on 2025 New Science of UAP paper; Sol Foundation symposia' },
+
+    // Kevin Knuth connections
+    { source: 'kevin-knuth', target: 'beatriz-villarroel', label: 'co-authors on 2025 New Science of UAP paper; IFEX affiliates' },
+    { source: 'kevin-knuth', target: 'avi-loeb',           label: 'Galileo Project affiliate; co-authored observatory methodology paper' },
+    { source: 'kevin-knuth', target: 'garry-nolan',        label: 'co-speakers at Sol Foundation inaugural and 2024 symposia' },
+    { source: 'kevin-knuth', target: 'jacques-vallee',     label: 'co-speakers at Sol Foundation; co-authors on 2025 New Science of UAP paper' },
   ],
 };
