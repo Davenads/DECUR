@@ -1207,7 +1207,12 @@ export const graphData: GraphData = {
     { source: 'eric-burlison', target: 'aaro',               label: 'Oversight Committee member who led bipartisan letter requesting a UAP Select Subcommittee; critical of AARO mandate and access limitations' },
 
     // Ingo Swann connections
-    { source: 'ingo-swann',    target: 'hal-puthoff',        label: 'co-developed CRV protocol; primary subject in SCANATE and Jupiter remote viewing experiment at SRI' },
-    { source: 'ingo-swann',    target: 'kit-green',          label: 'Green served as CIA case officer overseeing early SRI remote viewing program; shared intelligence-psi research network' },
+    { source: 'ingo-swann',      target: 'hal-puthoff',        label: 'co-developed CRV protocol; primary subject in SCANATE and Jupiter remote viewing experiment at SRI' },
+    { source: 'ingo-swann',      target: 'kit-green',          label: 'Green served as CIA case officer overseeing early SRI remote viewing program; shared intelligence-psi research network' },
+
+    // Joe McMoneagle connections
+    { source: 'joe-mcmoneagle',  target: 'hal-puthoff',        label: 'Remote Viewer #001 in GRILL FLAME / STAR GATE; Puthoff SRI research provided methodological foundation for McMoneagle recruitment' },
+    { source: 'joe-mcmoneagle',  target: 'ingo-swann',         label: 'Swann designed the CRV protocol McMoneagle used operationally; civilian protocol architect and military practitioner of the same program' },
+    { source: 'joe-mcmoneagle',  target: 'kit-green',          label: 'Green CIA oversight of early remote viewing program intersected with McMoneagle operational sessions' },
   ],
 };

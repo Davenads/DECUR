@@ -251,6 +251,24 @@ const Sources: NextPage = () => {
             </p>
           </div>
 
+          {/* Joe McMoneagle */}
+          <SourceCard
+            name="The Stargate Chronicles: Memoirs of a Psychic Spy - Joseph McMoneagle (2002)"
+            url="https://www.amazon.com/Stargate-Chronicles-Joseph-McMoneagle/dp/1571742255"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary source for McMoneagle's operational session accounts including the Typhoon submarine description, General Dozier location, and Skylab re-entry prediction. The most detailed first-person account of Army STAR GATE operations."
+            notes="Used for: Joseph McMoneagle."
+          />
+          <SourceCard
+            name="Joe McMoneagle - Psi Encyclopedia"
+            url="https://psi-encyclopedia.spr.ac.uk/articles/joe-mcmoneagle/"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Academic summary of McMoneagle's experimental record, Legion of Merit background, and published work. Used for biographical verification and credibility context."
+            notes="Used for: Joseph McMoneagle."
+          />
+
           {/* Ingo Swann */}
           <SourceCard
             name="Penetration: The Question of Extraterrestrial and Human Telepathy - Ingo Swann (1998)"

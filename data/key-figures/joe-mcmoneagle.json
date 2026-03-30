@@ -1,0 +1,209 @@
+{
+  "profile": {
+    "id": "joe-mcmoneagle",
+    "name": "Joseph McMoneagle",
+    "aliases": ["Joe McMoneagle", "Remote Viewer #001"],
+    "born": "January 10, 1946",
+    "died": null,
+    "roles": [
+      "Remote Viewer #001, U.S. Army STAR GATE Program",
+      "Retired Chief Warrant Officer, U.S. Army Intelligence",
+      "Author - The Stargate Chronicles (2002)"
+    ],
+    "service_period": "1964-1984 (U.S. Army); 1984-1995 (civilian consultant, STAR GATE)",
+    "organizations": [
+      "United States Army Intelligence",
+      "Project GRILL FLAME / CENTER LANE / SUN STREAK / STAR GATE",
+      "Stanford Research Institute (SRI International)",
+      "Monroe Institute",
+      "Intuitive Intelligence Applications, Inc."
+    ],
+    "clearance": "Top Secret / SCI (former; held throughout Army service and STAR GATE consulting period 1964-1995)",
+    "summary": "Joseph McMoneagle is a retired U.S. Army Chief Warrant Officer who served as Remote Viewer #001 — the first and most extensively tested operational viewer in the U.S. government's classified remote viewing programs. Recruited into Project GRILL FLAME in 1978, he participated in operational intelligence tasking for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service across the program's entire run. Upon his 1984 Army retirement he received the Legion of Merit, whose citation credited him with producing 'critical intelligence unavailable from any other source' — the only formal military decoration ever issued for remote viewing. He continued as a civilian consultant until STAR GATE's termination in 1995 and has since publicly demonstrated remote viewing on national television in six countries.",
+    "education": [
+      "U.S. Army Intelligence training and specialized programs (1960s-1970s)",
+      "Extensive post-military study in consciousness research and anomalous cognition"
+    ],
+    "early_career": [
+      "Enlisted in U.S. Army in 1964; served as an intelligence officer across multiple overseas postings",
+      "Stationed at downrange missile tracking site on Eleuthera Island, Bahamas, where a 1966 UAP encounter contributed to later recruitment for psychic research",
+      "Experienced near-death episode in 1970 while stationed in Europe; attributed subsequent increase in anomalous perceptual experiences to this event",
+      "Reached rank of Chief Warrant Officer; accumulated 20 years of Army intelligence experience before retirement"
+    ],
+    "key_events": [
+      {
+        "year": "1966",
+        "event": "While serving at a downrange missile tracking site on Eleuthera Island, Bahamas, McMoneagle witnesses an unidentified craft at approximately 12:30 AM. The sighting is among the factors cited when he is later recruited for the Army remote viewing program."
+      },
+      {
+        "year": "1970",
+        "event": "Experiences a near-death episode while stationed in Europe, which he describes as profoundly altering his perceptual experiences. He attributes subsequent spontaneous out-of-body episodes to this event."
+      },
+      {
+        "year": "1978",
+        "event": "Recruited into Project GRILL FLAME — the U.S. Army's first operational remote viewing program — and designated Remote Viewer #001. Begins conducting operational intelligence sessions targeting classified Soviet military and other intelligence subjects."
+      },
+      {
+        "year": "1979",
+        "event": "Conducts remote viewing session that he claims described the Typhoon-class submarine — then a classified Soviet development — before the vessel was publicly known. The Typhoon class was confirmed with the launch of the first boat in 1980."
+      },
+      {
+        "year": "1981",
+        "event": "Participates in remote viewing tasked to locate kidnapped U.S. Army Brigadier General James Dozier, held by the Italian Red Brigades. McMoneagle claims his session provided location data that contributed to the intelligence picture used in the January 1982 rescue."
+      },
+      {
+        "year": "1984",
+        "event": "Retires from the U.S. Army as a Chief Warrant Officer. Receives the Legion of Merit — citing 'critical intelligence unavailable from any other source' produced for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service. The most significant formal government validation of remote viewing ever issued."
+      },
+      {
+        "year": "1984-1995",
+        "event": "Continues as a civilian consultant to the government remote viewing program through its CENTER LANE, SUN STREAK, and STAR GATE iterations. STAR GATE officially terminated in 1995 after AIR evaluation concludes insufficient replicable operational value."
+      },
+      {
+        "year": "2002",
+        "event": "Publishes 'The Stargate Chronicles: Memoirs of a Psychic Spy' — the most detailed first-person operational account of the Army remote viewing program from a participant with both active-duty and consulting experience."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "legion-of-merit-operational-value",
+      "category": "government program",
+      "claim": "The formal Legion of Merit citation issued upon McMoneagle's 1984 Army retirement states he produced 'critical intelligence unavailable from any other source' for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service through a 'unique intelligence project revolutionizing the intelligence community.' This is the only military decoration ever formally issued for remote viewing performance.",
+      "status": "partially-verified",
+      "notes": "The Legion of Merit award is on military record and its existence is verifiable. The specific citation language is documented. However, 'critical intelligence' claims are not independently verified against specific session-to-outcome matches in declassified records. The 1995 AIR review that terminated STAR GATE directly contradicted this assessment, finding no operationally useful verified intelligence from the program."
+    },
+    {
+      "id": "typhoon-submarine-prediction",
+      "category": "anomalous perception",
+      "claim": "In 1979, McMoneagle conducted a remote viewing session that described a new class of Soviet submarine then under secret development. The described vessel matched the Typhoon-class ballistic missile submarine, whose first boat was publicly confirmed with its launch in 1980.",
+      "status": "partially-verified",
+      "notes": "The Typhoon class is an objective historical fact confirmed in 1980. McMoneagle's account of the session predating public knowledge is described in 'The Stargate Chronicles.' The classified session documents that would establish the pre-knowledge timeline are not publicly available in the declassified STAR GATE collection, making independent verification of the timing impossible."
+    },
+    {
+      "id": "general-dozier-location",
+      "category": "operational intelligence",
+      "claim": "McMoneagle's remote viewing session during the December 1981 Red Brigades kidnapping of U.S. Army General James Dozier provided location data that contributed to the intelligence leading to Dozier's successful rescue on January 28, 1982.",
+      "status": "partially-verified",
+      "notes": "Dozier's rescue is historical fact. McMoneagle's claim of contributing to the intelligence picture is described in his memoir. Italian law enforcement (NOCS unit) and a CIA human intelligence effort are most frequently credited with the rescue. No official U.S. government document in the public record specifically credits McMoneagle's session with actionable data."
+    },
+    {
+      "id": "1966-uap-sighting",
+      "category": "direct encounter",
+      "claim": "While stationed at a downrange missile tracking site on Eleuthera Island in the Bahamas in 1966, McMoneagle and a colleague witnessed an unidentified craft behave in ways inconsistent with any known aircraft. The sighting was one of the precipitating experiences that led to his recruitment into the Army remote viewing program.",
+      "status": "unverified",
+      "notes": "Described in McMoneagle's published memoir and interviews. No independent witness on record beyond his unnamed partner at the time. The account is internally consistent and his subsequent recruitment into the RV program is documented, but the sighting itself cannot be independently verified."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "The Legion of Merit is a formal military decoration with documented citation language crediting 'critical intelligence unavailable from any other source' — the most direct government validation ever given to any remote viewer",
+      "Remote Viewer #001 designation and 20 years of Army intelligence service as a CWO provide an institutional credibility that civilian research subjects like Ingo Swann do not share",
+      "The Typhoon-class submarine and General Dozier cases, if his accounts are accurate, represent specific, date-bounded operational predictions that can be checked against known historical events",
+      "He continued as a civilian consultant to STAR GATE for a full decade after Army retirement (1984-1995), implying ongoing institutional confidence in his value",
+      "Has publicly demonstrated remote viewing under conditions he did not fully control on national television across six countries including National Geographic, Discovery Channel, BBC, CBS, NBC, ABC, and Japanese networks",
+      "His published accounts across multiple books (The Stargate Chronicles, Mind Trek, Remote Viewing Secrets) are internally consistent over decades"
+    ],
+    "contradicting": [
+      "The 1995 AIR review that terminated STAR GATE directly contradicts the Legion of Merit citation — concluding there was no credible evidence of operationally useful intelligence from remote viewing",
+      "Ray Hyman's detailed methodological critique argues that even the laboratory-positive results from the program do not meet the standards for establishing a real anomalous effect",
+      "The specific classified session records that would verify the Typhoon and Dozier timing claims against ground truth have not been declassified",
+      "His 1984 retirement and the Legion of Merit coincided — the citation may reflect Army institutional commitment to the program rather than independently verified intelligence outcomes",
+      "A claimed 1980s remote viewing session described a large pyramid-like structure on Mars housing thousands of people; this claim is considered fringe even within the remote viewing community and has damaged his scientific credibility",
+      "No external intelligence official has publicly named McMoneagle's specific sessions as the source of actionable intelligence in any documented case"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold E. Puthoff",
+      "role": "Physicist, SRI International; GRILL FLAME / STAR GATE scientific advisor",
+      "relationship": "Puthoff's SRI research program provided the scientific framework and protocol that underpinned McMoneagle's operational training. Puthoff's SCANATE work with Ingo Swann directly preceded McMoneagle's recruitment into GRILL FLAME, and Puthoff served as a scientific advisor to the program throughout its run."
+    },
+    {
+      "id": "ingo-swann",
+      "name": "Ingo Swann",
+      "role": "Remote viewing pioneer; originator of CRV protocol; CIA SCANATE research subject",
+      "relationship": "Swann designed the Coordinate Remote Viewing protocol that McMoneagle used operationally. Where Swann was the civilian protocol architect working at SRI, McMoneagle was the first operational military practitioner applying that methodology in classified intelligence contexts."
+    },
+    {
+      "id": "kit-green",
+      "name": "Dr. Christopher 'Kit' Green",
+      "role": "CIA analyst; Aviary network member; AAWSAP researcher",
+      "relationship": "Green's CIA oversight role in the early remote viewing program intersected with McMoneagle's operational work. Both were part of the broader intelligence-community network that bridged psi research and UAP investigation across decades."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1993",
+      "type": "interview",
+      "title": "Remote Viewer 001 - Archived Stargate Interview (Monroe Institute)",
+      "outlet": "Monroe Institute",
+      "notes": "Early on-record interview describing his recruitment, operational sessions, and program experiences. Archived and re-released by the Monroe Institute."
+    },
+    {
+      "date": "2002",
+      "type": "written",
+      "title": "The Stargate Chronicles: Memoirs of a Psychic Spy",
+      "outlet": "Hampton Roads Publishing",
+      "notes": "Primary disclosure text. Most detailed first-person account of the Army remote viewing program from an active participant with both operational and consulting roles. Covers the Typhoon, Dozier, and Skylab cases."
+    },
+    {
+      "date": "2000",
+      "type": "written",
+      "title": "Remote Viewing Secrets: A Handbook",
+      "outlet": "Hampton Roads Publishing",
+      "notes": "Technical handbook on CRV methodology and remote viewing practice. Provides insight into the operational methodology used across STAR GATE."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Joseph McMoneagle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joseph_McMoneagle",
+      "type": "Reference",
+      "notes": "Primary biographical reference; career timeline, program affiliations, and Legion of Merit documentation"
+    },
+    {
+      "title": "The Stargate Chronicles: Memoirs of a Psychic Spy (Amazon)",
+      "url": "https://www.amazon.com/Stargate-Chronicles-Joseph-McMoneagle/dp/1571742255",
+      "type": "Published Book",
+      "notes": "Primary source for operational session accounts including Typhoon submarine, General Dozier, and Skylab cases"
+    },
+    {
+      "title": "CIA CREST Collection - STAR GATE Remote Viewing Program Documents",
+      "url": "https://www.cia.gov/readingroom/collection/stargate",
+      "type": "Government Archive",
+      "notes": "Declassified CIA Reading Room collection; background context for program structure and termination"
+    },
+    {
+      "title": "Joe McMoneagle - Psi Encyclopedia",
+      "url": "https://psi-encyclopedia.spr.ac.uk/articles/joe-mcmoneagle/",
+      "type": "Research Archive",
+      "notes": "Academic summary of McMoneagle's experimental record, Legion of Merit, and published work"
+    },
+    {
+      "title": "Remote Viewer 001 - Monroe Institute Archived Interview (1993)",
+      "url": "https://www.monroeinstitute.org/blogs/podcasts/remote-viewer-001-stargate-project-an-archived-conversation-with-joseph-mcmoneagle-originally-recorded-in-1993",
+      "type": "Interview",
+      "notes": "Early on-record interview with McMoneagle about STAR GATE experiences; archived by the Monroe Institute"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Puthoff's SRI remote viewing research provided the scientific and methodological foundation for McMoneagle's recruitment into GRILL FLAME as Remote Viewer #001.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "ingo-swann",
+      "node_label": "Ingo Swann",
+      "relationship": "Swann designed the Coordinate Remote Viewing protocol that McMoneagle used operationally; they represent the civilian architect and the military practitioner of the same methodology.",
+      "connection_type": "professional"
+    }
+  ]
+}

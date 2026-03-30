@@ -1639,5 +1639,19 @@
     "data_file": "ingo-swann.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "joe-mcmoneagle",
+    "name": "Joseph McMoneagle",
+    "aliases": ["Joe McMoneagle", "Remote Viewer #001", "J. McMoneagle"],
+    "role": "Remote Viewer #001, U.S. Army STAR GATE; Retired Chief Warrant Officer",
+    "period": "1978-1995",
+    "affiliation": "U.S. Army Intelligence / STAR GATE Program",
+    "summary": "Retired U.S. Army Chief Warrant Officer and Remote Viewer #001 in the classified STAR GATE program. The only person ever to receive a formal military decoration — the Legion of Merit — explicitly crediting remote viewing with producing 'critical intelligence unavailable from any other source' for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service. His claimed operational results include the pre-discovery description of the Soviet Typhoon-class submarine and contributing intelligence during the 1981 kidnapping of General James Dozier. Author of 'The Stargate Chronicles' (2002).",
+    "status": "detailed",
+    "tags": ["remote-viewing", "army", "stargate", "military-intelligence", "uap-sighting"],
+    "data_file": "joe-mcmoneagle.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
