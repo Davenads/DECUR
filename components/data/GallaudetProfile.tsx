@@ -91,7 +91,7 @@ const OverviewTab: FC = () => {
             <div key={i} className="relative">
               <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
               <div className="flex items-start gap-3">
-                <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.date}</span>
+                <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.year ?? ev.date}</span>
                 <span className={ps.body}>{ev.event}</span>
               </div>
             </div>

@@ -36,32 +36,32 @@
     ],
     "key_events": [
       {
-        "date": "1980s–2014",
+        "year": "1980s-2014",
         "event": "Active duty U.S. Navy career spanning 30+ years. Final rank: Rear Admiral (two-star). Specializes in oceanography, ocean surveillance, and environmental science operations."
       },
       {
-        "date": "2017–2019",
+        "year": "2017-2019",
         "event": "Appointed Acting Administrator of NOAA. Gains senior executive access to ocean monitoring systems, satellite data, and classified environmental intelligence relevant to USO phenomena."
       },
       {
-        "date": "2019",
+        "year": "2019",
         "event": "Departs NOAA. Begins transitioning toward public engagement with UAP research community, particularly regarding oceanic UAP and its scientific implications."
       },
       {
-        "date": "November 2023",
+        "year": "Nov 2023",
         "event": "Appears at The Sol Foundation inaugural conference. Interviewed by Ross Coulthart for Reality Check, NewsNation (aired June 2024). States his belief that 'we are in contact with non-human intelligence.'"
       },
       {
-        "date": "June 2024",
+        "year": "Jun 2024",
         "event": "Reality Check interview with Ross Coulthart airs on NewsNation. Gallaudet publicly endorses David Grusch's claims and calls for a science-based approach to UAP investigation."
       },
       {
-        "date": "November 2024",
+        "year": "Nov 2024",
         "event": "Submits written testimony to the House Oversight Committee. Describes Navy suppression of UAP data, submersible UAP incidents, and calls for mandatory reporting and scientific transparency."
       },
       {
-        "date": "December 6, 2024",
-        "event": "NewsNation airs 'Reality Check: Underwater UFOs' — dedicated special with Gallaudet on USOs, SOSUS tracking anomalies, and the submarine incident involving an object that tracked a nuclear submarine."
+        "year": "Dec 2024",
+        "event": "NewsNation airs 'Reality Check: Underwater UFOs' - dedicated special with Gallaudet on USOs, SOSUS tracking anomalies, and the submarine incident involving an object that tracked a nuclear submarine."
       }
     ]
   },
@@ -231,15 +231,15 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "figure",
+      "node_type": "person",
       "node_id": "ross-coulthart",
       "node_label": "Ross Coulthart",
       "relationship": "Gallaudet appeared in multiple NewsNation Reality Check interviews with Coulthart on USOs and the oceanic UAP domain",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 4,
-      "node_type": "figure",
+      "node_type": "person",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Gallaudet publicly endorsed Grusch's crash retrieval claims and called for science-based investigation of the UAP phenomenon",
