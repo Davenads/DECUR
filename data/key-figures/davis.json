@@ -35,47 +35,47 @@
     ],
     "key_events": [
       {
-        "date": "1991",
+        "year": "1991",
         "event": "Receives Ph.D. in Astrophysics from the University of Arizona"
       },
       {
-        "date": "1996",
+        "year": "1996",
         "event": "Begins affiliation with Robert Bigelow's National Institute for Discovery Science (NIDS) as visiting research scientist; works on paranormal and UAP phenomenon research alongside Las Vegas-based team"
       },
       {
-        "date": "1999",
+        "year": "1999",
         "event": "Joins EarthTech International as Senior Research Physicist; works with Hal Puthoff on metric engineering, zero-point energy, and advanced propulsion theory"
       },
       {
-        "date": "October 2002",
+        "year": "Oct 2002",
         "event": "Alleged meeting with Vice Admiral Thomas R. Wilson at a Las Vegas EG&G facility following a SAIC briefing — later documented in the Wilson-Davis memo. Wilson describes having been denied access to a private aerospace contractor managing an off-world vehicle program. Davis records the conversation in detailed notes."
       },
       {
-        "date": "2007–2010",
+        "year": "2007-2010",
         "event": "Authors and co-authors multiple classified Defense Intelligence Reference Documents (DIRDs) under the AAWSAP contract administered through Bigelow Aerospace Advanced Space Studies (BAASS); topics include traversable wormholes, stargates, warp drives, and antigravity applications"
       },
       {
-        "date": "2009",
+        "year": "2009",
         "event": "Co-authors DIRD: 'Traversable Wormholes, Stargates, and Negative Energy' — one of the core theoretical physics papers commissioned by the DIA and widely regarded as among the most technically substantive of the 38 documents"
       },
       {
-        "date": "2010",
+        "year": "2010",
         "event": "Co-authors DIRD with R. Obousy: 'Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions' — applies dark energy physics to Alcubierre warp drive conceptual framework"
       },
       {
-        "date": "April 2019",
+        "year": "Apr 2019",
         "event": "Briefs the Defense Department's Aerospace Science Board in closed session; also provides classified briefings to Senate Armed Services Committee members including staff — the first known classified UAP-related congressional briefing by a private researcher in the modern disclosure era"
       },
       {
-        "date": "June 2019",
+        "year": "Jun 2019",
         "event": "The Wilson-Davis memo is leaked publicly by anonymous sources and posted to the To The Stars Academy community platform; becomes one of the most debated UAP documents ever released"
       },
       {
-        "date": "October 2020",
+        "year": "Oct 2020",
         "event": "New York Times article 'No Longer in Shadows, Pentagon's U.F.O. Unit Will Make Some Findings Public' quotes Davis confirming he briefed a Defense Department agency and members of Congress about 'off-world vehicles not made on this earth' and stated the materials were not made on this earth by any means"
       },
       {
-        "date": "2021–present",
+        "year": "2021-present",
         "event": "Continues research at EarthTech International and Aerospace Corporation; remains one of the few named physicists to publicly state that crash-retrieved non-human materials have been scientifically studied under classified programs"
       }
     ]
@@ -230,34 +230,39 @@
   ],
   "disclosures": [
     {
-      "date": "2007–2010",
-      "type": "Classified Government",
+      "date": "2007-2010",
+      "type": "academic-paper",
+      "title": "AAWSAP Defense Intelligence Reference Documents (DIRDs)",
       "outlet": "Defense Intelligence Agency (AAWSAP)",
-      "description": "Authored and co-authored multiple Defense Intelligence Reference Documents (DIRDs) on traversable wormholes, warp drives, antigravity, and zero-point energy; delivered as classified research products to DIA under the BAASS/AAWSAP contract"
+      "notes": "Authored and co-authored multiple Defense Intelligence Reference Documents on traversable wormholes, warp drives, antigravity, and zero-point energy; delivered as classified research products to DIA under the BAASS/AAWSAP contract. Several released via FOIA."
     },
     {
-      "date": "April 2019",
-      "type": "Classified Briefing",
-      "outlet": "Defense Department / Senate Armed Services Committee",
-      "description": "Provided classified briefings to the Defense Department's Aerospace Science Board and to Senate Armed Services Committee members and staff on UAP crash retrieval programs and off-world vehicle evidence"
+      "date": "Apr 2019",
+      "type": "congressional-briefing",
+      "title": "Classified Briefing - UAP Off-World Vehicles",
+      "outlet": "Defense Department Aerospace Science Board; Senate Armed Services Committee",
+      "notes": "Provided classified briefings on UAP crash retrieval programs and off-world vehicle evidence to the Defense Department's Aerospace Science Board and to Senate Armed Services Committee members and staff."
     },
     {
-      "date": "June 2019",
-      "type": "Document Leak",
+      "date": "Jun 2019",
+      "type": "declassification",
+      "title": "Wilson-Davis Memo - Public Leak",
       "outlet": "TTSA community platform (anonymous leak)",
-      "description": "The Wilson-Davis memo — 15-page document recording a 2002 conversation between Davis and Vice Admiral Thomas R. Wilson about a denied-access crash retrieval program — leaked publicly; Davis neither confirmed nor denied authorship at time of leak"
+      "notes": "The Wilson-Davis memo - 15-page document recording a 2002 conversation with Vice Admiral Thomas R. Wilson about a denied-access crash retrieval program - leaked publicly to the TTSA platform. Davis neither confirmed nor denied authorship at the time."
     },
     {
-      "date": "October 26, 2020",
-      "type": "Media",
+      "date": "Oct 2020",
+      "type": "interview",
+      "title": "New York Times: Off-World Vehicles Not Made on This Earth",
       "outlet": "New York Times",
-      "description": "Quoted in 'No Longer in Shadows, Pentagon's U.F.O. Unit Will Make Some Findings Public': confirmed he briefed a Defense Department agency and members of Congress about 'off-world vehicles not made on this earth' and stated samples were not made on this earth by any means currently known"
+      "notes": "Quoted in 'No Longer in Shadows, Pentagon's U.F.O. Unit Will Make Some Findings Public': confirmed he briefed a Defense Department agency and members of Congress about 'off-world vehicles not made on this earth' and stated samples were not made on this earth by any means currently known."
     },
     {
       "date": "2021",
-      "type": "Media",
+      "type": "interview",
+      "title": "UAP Propulsion and Recovered Materials - Media Interviews",
       "outlet": "Multiple outlets",
-      "description": "Multiple extended interviews discussing the physics of UAP propulsion, the AAWSAP DIRDs, and his assessment of recovered materials; provided the most technically detailed public framework for understanding how UAP physics might work"
+      "notes": "Multiple extended interviews discussing the physics of UAP propulsion, the AAWSAP DIRDs, and his assessment of recovered materials; provided the most technically detailed public framework for understanding how UAP physics might work."
     }
   ],
   "career_connections": [
