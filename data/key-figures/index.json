@@ -509,7 +509,7 @@
   {
     "id": "ross-coulthart",
     "name": "Ross Coulthart",
-    "aliases": [],
+    "aliases": ["Coulthart"],
     "role": "Senior Investigative Journalist, NewsNation; Author - In Plain Sight",
     "period": "2020–present (UAP); 1980s–present (career)",
     "affiliation": "NewsNation, Nine Network Australia",
@@ -556,7 +556,8 @@
     "id": "richard-dolan",
     "name": "Richard Dolan",
     "aliases": [
-      "Richard M. Dolan"
+      "Richard M. Dolan",
+      "Rich Dolan"
     ],
     "role": "Historian; Author - UFOs and the National Security State",
     "period": "1995–present",
@@ -1082,7 +1083,7 @@
   {
     "id": "edward-ruppelt",
     "name": "Capt. Edward J. Ruppelt",
-    "aliases": ["Edward Ruppelt", "Captain Ruppelt"],
+    "aliases": ["Edward Ruppelt", "Captain Ruppelt", "Ed Ruppelt"],
     "role": "USAF Captain; Project Blue Book Chief (1951-1953)",
     "period": "1951-1953 (Blue Book)",
     "affiliation": "U.S. Air Force / Project Blue Book",
@@ -1096,7 +1097,7 @@
   {
     "id": "james-mcdonald",
     "name": "Dr. James E. McDonald",
-    "aliases": ["James McDonald", "Dr. McDonald"],
+    "aliases": ["James McDonald", "Dr. McDonald", "Jim McDonald"],
     "role": "Senior Physicist, Univ. of Arizona; UAP Scientific Investigator",
     "period": "1966-1971 (UAP research)",
     "affiliation": "University of Arizona / Institute of Atmospheric Physics",
@@ -1236,7 +1237,7 @@
   {
     "id": "james-fox",
     "name": "James Fox",
-    "aliases": ["James Fox"],
+    "aliases": [],
     "role": "Documentary Filmmaker; Producer, 'The Phenomenon' (2020)",
     "period": "2003-present",
     "affiliation": "Independent Filmmaker",

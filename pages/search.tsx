@@ -21,6 +21,7 @@ interface SearchItem {
   description: string;
   href: string;
   badge?: string;
+  aliases?: string[];
 }
 
 interface SearchPageProps {
@@ -45,7 +46,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
     // Insiders
     for (const ins of insidersData as Array<{
       id: string; name: string; role?: string; affiliation?: string;
-      summary?: string; tags?: string[];
+      summary?: string; tags?: string[]; aliases?: string[];
     }>) {
       corpus.push({
         id: `insider-${ins.id}`,
@@ -55,6 +56,7 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
         description: ins.summary ?? ins.tags?.join(', ') ?? '',
         href: `/figures/${ins.id}`,
         badge: 'Key Figure',
+        aliases: ins.aliases ?? [],
       });
     }
 
@@ -192,6 +194,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
       new Fuse(corpus, {
         keys: [
           { name: 'title',       weight: 0.5 },
+          { name: 'aliases',     weight: 0.4 },
           { name: 'subtitle',    weight: 0.2 },
           { name: 'description', weight: 0.2 },
           { name: 'badge',       weight: 0.1 },
