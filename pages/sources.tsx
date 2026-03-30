@@ -373,6 +373,16 @@ const Sources: NextPage = () => {
             notes="Used for: Dr. Kevin Knuth."
           />
 
+          {/* Matt Szydagis */}
+          <SourceCard
+            name="Initial Results from the First Field Expedition of UAPx - Progress in Aerospace Sciences (Szydagis et al., 2025)"
+            url="https://www.semanticscholar.org/paper/Initial-results-from-the-first-field-expedition-of-Szydagis-Knuth/29ccad2a0081bf577c89210a3b327bae4c370f09"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="First peer-reviewed report of an academic instrumented UAP field expedition. Documents the 2021 Laguna Beach multi-sensor campaign with electromagnetic, optical, and environmental detectors. Szydagis is first author."
+            notes="Used for: Dr. Matt Szydagis."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

@@ -1695,5 +1695,19 @@
     "data_file": "kevin-knuth.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "matt-szydagis",
+    "name": "Dr. Matt Szydagis",
+    "aliases": ["Matthew Szydagis"],
+    "role": "Assistant Professor of Physics, UAPx Field Research Leader",
+    "period": "2014-present",
+    "affiliation": "University at Albany (SUNY)",
+    "summary": "Experimental particle physicist whose work on LUX and LZ dark matter experiments and creator of widely-used NEST simulation software gives him exceptional detector instrumentation credentials. Pivoted to UAP research as first author of the first peer-reviewed academic instrumented UAP field expedition paper and co-lead of UAPx alongside Kevin Knuth.",
+    "status": "detailed",
+    "tags": ["scientist", "physics", "dark-matter", "uapx", "instrumentation", "field-research"],
+    "data_file": "matt-szydagis.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

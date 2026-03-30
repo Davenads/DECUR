@@ -1,0 +1,184 @@
+{
+  "profile": {
+    "id": "matt-szydagis",
+    "name": "Dr. Matt Szydagis",
+    "aliases": ["Matthew Szydagis", "M. Szydagis"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Assistant Professor of Physics, University at Albany (SUNY)",
+      "First Author, UAPx Field Expedition Paper",
+      "Creator, NEST (Noble Element Simulation Technique)",
+      "Former Postdoctoral Scholar, UC Davis"
+    ],
+    "service_period": "2014-present",
+    "organizations": [
+      "University at Albany (SUNY)",
+      "UAPx",
+      "Scientific Coalition for UAP Studies (SCU)",
+      "IFEX (Interdisciplinary Research Centre for Extraterrestrial Studies)"
+    ],
+    "clearance": null,
+    "summary": "Experimental particle physicist known for contributions to the LUX and LZ dark matter direct-detection experiments and creator of NEST (Noble Element Simulation Technique), widely used in particle astrophysics. Pivoted his instrumentation expertise toward UAP research as first author of the first peer-reviewed academic instrumented UAP field expedition paper, co-leading UAPx alongside Kevin Knuth.",
+    "education": [
+      "PhD, Physics, University of Chicago (2011)",
+      "MS, Physics, University of Chicago (2006)",
+      "BA, University of Chicago (2005)"
+    ],
+    "early_career": [
+      "Postdoctoral scholar, UC Davis (2010-2014) - contributed to LUX (Large Underground Xenon) dark matter direct-detection experiment",
+      "Created NEST (Noble Element Simulation Technique), open-source software for simulating noble element detector responses, now widely used across the particle physics community"
+    ],
+    "key_events": [
+      {
+        "year": "2011",
+        "event": "Completed PhD at University of Chicago. Joined UC Davis as postdoctoral researcher on the LUX dark matter experiment - one of the world's most sensitive direct-detection experiments using liquid xenon."
+      },
+      {
+        "year": "2014",
+        "event": "Joined University at Albany (SUNY) physics faculty. Continued contributions to LUX and began development of NEST (Noble Element Simulation Technique), open-source detector simulation software now adopted across the particle astrophysics community."
+      },
+      {
+        "year": "2017",
+        "event": "NEST software widely adopted by the LZ (LUX-ZEPLIN) experiment collaboration and multiple other liquid noble detector projects. Established Szydagis as a leading computational experimentalist in dark matter physics."
+      },
+      {
+        "year": "2021",
+        "event": "Led the first academic instrumented UAP field expedition through UAPx at Laguna Beach, California. The campaign deployed multi-sensor arrays including electromagnetic, optical, and environmental detectors during observation periods."
+      },
+      {
+        "year": "2023",
+        "event": "Affiliated with IFEX (Interdisciplinary Research Centre for Extraterrestrial Studies) at University of Wurzburg, connecting the UAPx program with Hakan Kayal's European satellite-based anomaly detection infrastructure."
+      },
+      {
+        "year": "2024",
+        "event": "Developed C-TAP (Custom Target Analysis Protocol), combining AI with human verification for pixel-level analysis of UAP camera footage. The tool applies detector physics principles to video anomaly detection."
+      },
+      {
+        "year": "Jun 2025",
+        "event": "Published as first author on 'Initial Results from the First Field Expedition of UAPx' in Progress in Aerospace Sciences (156:101099), the first peer-reviewed report of an academic instrumented UAP field campaign. Co-authored the flagship 'New Science of UAP' paper in the same journal alongside Kevin Knuth, Hakan Kayal, and Beatriz Villarroel."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "kevin-knuth",
+      "name": "Dr. Kevin Knuth",
+      "role": "Professor of Physics, UAPx Lead Scientist",
+      "relationship": "Institutional colleagues at University at Albany; co-leads UAPx field research program. Szydagis directs the field instrumentation and operational side of UAPx while Knuth leads theoretical physics analysis. Co-authors on both the 2025 field expedition paper and the New Science of UAP framework paper."
+    },
+    {
+      "id": "beatriz-villarroel",
+      "name": "Dr. Beatriz Villarroel",
+      "role": "Astrophysicist, VASCO Principal Investigator",
+      "relationship": "Co-authors on the 2025 'New Science of UAP' paper in Progress in Aerospace Sciences. Villarroel's archival plate transient research and Szydagis's field instrumentation represent complementary empirical approaches within the same collaborative network."
+    },
+    {
+      "id": "avi-loeb",
+      "name": "Prof. Avi Loeb",
+      "role": "Harvard astrophysicist, Galileo Project director",
+      "relationship": "Both pursue rigorous instrumented approaches to anomalous phenomena detection. UAPx and the Galileo Project represent parallel academic field-research programs; Szydagis is in the same collaborative orbit through IFEX and the 2025 flagship paper."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jun 2025",
+      "type": "academic-paper",
+      "title": "Initial Results from the First Field Expedition of UAPx",
+      "outlet": "Progress in Aerospace Sciences (156, 101099)",
+      "notes": "First author. First peer-reviewed report of an academic instrumented UAP field campaign. Documents the 2021 Laguna Beach multi-sensor expedition methodology, instrument suite, and initial data analysis. Co-authored with Knuth, Kugielsky, and Levy."
+    },
+    {
+      "date": "Jun 2025",
+      "type": "academic-paper",
+      "title": "The New Science of Unidentified Aerospace-Undersea Phenomena (UAP)",
+      "outlet": "Progress in Aerospace Sciences (arXiv:2502.06794)",
+      "notes": "Co-author on the flagship collaborative framework paper with 30+ contributors including Kevin Knuth (lead), Hakan Kayal, Beatriz Villarroel, and Jacques Vallee. Establishes a scientific framework for empirical UAP investigation."
+    },
+    {
+      "date": "2024",
+      "type": "conference",
+      "title": "Alternative Propulsion Engineering Conference (APEC) - UAP Instrumentation",
+      "outlet": "Alternative Propulsion Engineering Conference",
+      "notes": "Presented UAPx field methodology and C-TAP software approach to pixel-level UAP camera analysis."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Initial Results UAPx Field Expedition - Progress in Aerospace Sciences (2025)",
+      "url": "https://www.semanticscholar.org/paper/Initial-results-from-the-first-field-expedition-of-Szydagis-Knuth/29ccad2a0081bf577c89210a3b327bae4c370f09",
+      "type": "Academic Paper",
+      "notes": "First-authored UAP field expedition paper; primary source for field campaign data"
+    },
+    {
+      "title": "The New Science of UAP - arXiv:2502.06794 (2025)",
+      "url": "https://arxiv.org/abs/2502.06794",
+      "type": "Academic Paper",
+      "notes": "Co-authored flagship framework paper with Knuth, Kayal, Villarroel and others"
+    },
+    {
+      "title": "Matt Szydagis - University at Albany Faculty Page",
+      "url": "https://www.albany.edu/physics/faculty/matthew-szydagis",
+      "type": "Organization Profile",
+      "notes": "Institutional faculty biography and research overview"
+    },
+    {
+      "title": "Matt Szydagis - UAPx Bio",
+      "url": "https://www.uapexpedition.org/drmatthewszydagis",
+      "type": "Organization Profile",
+      "notes": "UAPx organization biography covering field research role and background"
+    },
+    {
+      "title": "UAlbany Physicists Test Scientific Approach to UAP Research (2025)",
+      "url": "https://www.albany.edu/news-center/news/2025-ualbany-physicists-test-scientific-approach-uap-research",
+      "type": "Press Release",
+      "notes": "University press release covering Szydagis and Knuth's UAPx program"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "A multi-sensor academic field expedition to Laguna Beach, California (2021) established proof-of-concept for instrumented UAP data collection using electromagnetic, optical, and environmental detector arrays during observation windows.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Progress in Aerospace Sciences 156:101099 (2025)"
+    },
+    {
+      "claim": "C-TAP (Custom Target Analysis Protocol), combining AI classification with human verification, can perform reliable pixel-level anomaly detection on UAP camera footage by applying detector physics calibration principles.",
+      "category": "Physical Evidence",
+      "status": "unverified",
+      "source": "UAPx technical documentation (2024)"
+    },
+    {
+      "claim": "Dark matter detector design principles - specifically sensitivity optimization and signal-to-noise characterization for rare-event physics - are directly transferable to the challenge of detecting anomalous UAP signatures in field instrumentation.",
+      "category": "Physical Evidence",
+      "status": "unverified",
+      "source": "Progress in Aerospace Sciences arXiv:2502.06794 (2025)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "kevin-knuth",
+      "node_label": "Dr. Kevin Knuth",
+      "relationship": "Co-leads UAPx; institutional colleagues at University at Albany. Co-authors on both 2025 UAP papers.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "beatriz-villarroel",
+      "node_label": "Dr. Beatriz Villarroel",
+      "relationship": "Co-authors on 2025 New Science of UAP flagship paper.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "program",
+      "node_id": "uapx",
+      "node_label": "UAPx",
+      "relationship": "First author of UAPx founding field expedition paper; operational leader of field instrumentation campaigns.",
+      "connection_type": "institutional"
+    }
+  ]
+}

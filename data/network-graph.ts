@@ -1231,5 +1231,10 @@ export const graphData: GraphData = {
     { source: 'kevin-knuth', target: 'avi-loeb',           label: 'Galileo Project affiliate; co-authored observatory methodology paper' },
     { source: 'kevin-knuth', target: 'garry-nolan',        label: 'co-speakers at Sol Foundation inaugural and 2024 symposia' },
     { source: 'kevin-knuth', target: 'jacques-vallee',     label: 'co-speakers at Sol Foundation; co-authors on 2025 New Science of UAP paper' },
+
+    // Matt Szydagis connections
+    { source: 'matt-szydagis', target: 'kevin-knuth',        label: 'co-leads UAPx; co-authors on 2025 UAP papers; University at Albany colleagues' },
+    { source: 'matt-szydagis', target: 'beatriz-villarroel', label: 'co-authors on 2025 New Science of UAP flagship paper' },
+    { source: 'matt-szydagis', target: 'avi-loeb',           label: 'parallel instrumented UAP field research programs; 2025 New Science of UAP co-authors' },
   ],
 };
