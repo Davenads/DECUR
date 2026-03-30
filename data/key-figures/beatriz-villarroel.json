@@ -1,0 +1,267 @@
+{
+  "profile": {
+    "id": "beatriz-villarroel",
+    "name": "Dr. Beatriz Villarroel",
+    "aliases": ["Beatriz Villarroel", "B. Villarroel"],
+    "born": "Spain",
+    "died": null,
+    "roles": [
+      "Astrophysicist, Nordita (KTH/Stockholm University)",
+      "Research Associate, Instituto de Astrofísica de Canarias (IAC)",
+      "Principal Investigator, VASCO Project",
+      "Advisory Board Member, Sol Foundation"
+    ],
+    "service_period": "2017-present (post-PhD research)",
+    "organizations": [
+      "Nordita",
+      "KTH Royal Institute of Technology",
+      "Stockholm University",
+      "Instituto de Astrofísica de Canarias",
+      "Sol Foundation"
+    ],
+    "clearance": null,
+    "summary": "Swedish-Spanish astrophysicist whose VASCO project identified thousands of anomalous transient flashes in pre-satellite-era photographic plates. Her peer-reviewed findings - including a 22-sigma statistical result suggesting reflective objects in high Earth orbit before satellites existed - represent among the most rigorously published astronomical data in UAP-adjacent science.",
+    "education": [
+      "PhD, Astronomy, Uppsala University (2017)",
+      "MSc, Physics, Uppsala University (2012)"
+    ],
+    "early_career": [
+      "Published AGN research in Nature Physics (2014) establishing mainstream astrophysics credentials",
+      "Developed statistical methods for large catalog cross-matching at Uppsala and IAC"
+    ],
+    "key_events": [
+      {
+        "year": "2017",
+        "event": "Completed PhD at Uppsala University on active galactic nuclei. Began developing the VASCO methodology at IAC."
+      },
+      {
+        "year": "2019",
+        "event": "Submitted VASCO Paper I (arXiv:1911.05068) documenting the Vanishing and Appearing Sources project methodology and first results comparing USNO-B1.0 against Pan-STARRS DR1."
+      },
+      {
+        "year": "Jan 2020",
+        "event": "VASCO Paper I published in The Astronomical Journal (159:8). Of 15,593+ manually reviewed plate pairs, 798 objects classified as genuinely vanished with no known explanation."
+      },
+      {
+        "year": "Sep 2020",
+        "event": "Launched VASCO Citizen Science Project, recruiting public volunteers for visual inspection of plate image pairs."
+      },
+      {
+        "year": "2021",
+        "event": "Awarded L'Oreal-UNESCO For Women in Science Prize (Sweden) for the VASCO project. Began analysis of short-duration transient events in the first Palomar Sky Survey plates."
+      },
+      {
+        "year": "2022",
+        "event": "Awarded L'Oreal-UNESCO International Rising Talents Prize for Europe. Expanded VASCO to use the 10.4-meter Gran Telescopio Canarias for deep follow-up imaging."
+      },
+      {
+        "year": "2023",
+        "event": "Presented VASCO and POSS transient findings at the inaugural Sol Foundation Symposium, connecting with Garry Nolan and Avi Loeb's empirical UAP research programs. Joined the Sol Foundation Advisory Board."
+      },
+      {
+        "year": "Jan 2024",
+        "event": "Published MNRAS paper documenting a bright triple transient - three co-located point sources vanishing within 50 minutes - on a July 19, 1952 Palomar plate coinciding exactly with the Washington D.C. UFO flap."
+      },
+      {
+        "year": "May 2024",
+        "event": "Presented findings at the French 3AF Paris UAP conference alongside scientists and government officials. Participated in joint panel with Garry Nolan and Avi Loeb at the Sol Foundation 2024 Symposium."
+      },
+      {
+        "year": "Oct 2025",
+        "event": "Published three concurrent papers: Scientific Reports study linking POSS-I transients to nuclear weapons tests and UAP reports (with Stephen Bruehl, Vanderbilt); PASP paper on aligned multiple-transient events; and ExoProbe proof-of-concept in MNRAS demonstrating real-time anomalous transient detection using Earth's shadow as a satellite filter."
+      },
+      {
+        "year": "2025",
+        "event": "Co-authored 'The New Science of Unidentified Aerospace-Undersea Phenomena (UAP)' (arXiv:2502.06794), a collaborative framework paper with researchers from multiple institutions."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Immunologist and Sol Foundation founder",
+      "relationship": "Joint Sol Foundation Advisory Board members; shared panel at Sol Foundation 2024 Symposium. Nolan has publicly described Villarroel's POSS transient findings as landmark evidence for pre-satellite anomalous objects."
+    },
+    {
+      "id": "avi-loeb",
+      "name": "Prof. Avi Loeb",
+      "role": "Harvard astrophysicist and Galileo Project director",
+      "relationship": "Sol Foundation colleagues and joint panel participants at the 2024 Symposium. Both pursue empirical technosignature searches - Loeb via ocean-floor spherules, Villarroel via archival photographic plates and real-time observatory networks."
+    },
+    {
+      "id": "jacques-vallee",
+      "name": "Dr. Jacques Vallee",
+      "role": "Computer scientist and UAP researcher",
+      "relationship": "Co-appear on the 2025 'New Science of Unidentified Aerospace-Undersea Phenomena' arXiv paper. Both participate in Sol Foundation symposia. Villarroel has publicly endorsed Vallee's energy-analysis approach to UAP evidence."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Jan 2020",
+      "type": "academic-paper",
+      "title": "VASCO Paper I: USNO Objects Missing in Modern Sky Surveys",
+      "outlet": "The Astronomical Journal (159:8)",
+      "notes": "Foundational paper establishing the VASCO methodology and presenting 798 genuinely vanished objects from 15,593+ reviewed plate pairs. arXiv:1911.05068."
+    },
+    {
+      "date": "Jan 2024",
+      "type": "academic-paper",
+      "title": "A bright triple transient that vanished within 50 min (MNRAS)",
+      "outlet": "Monthly Notices of the Royal Astronomical Society (527:3)",
+      "notes": "Documents a three-point-source transient on a July 19, 1952 Palomar plate coinciding with the Washington D.C. UFO flap. The 22-sigma shadow-avoidance result presented here implies reflective objects in high Earth orbit before Sputnik."
+    },
+    {
+      "date": "Oct 2025",
+      "type": "academic-paper",
+      "title": "Transients in the POSS-I may be associated with nuclear testing and UAP reports",
+      "outlet": "Scientific Reports (Nature Portfolio) 15:34125",
+      "notes": "Statistical analysis with Stephen Bruehl (Vanderbilt) finding POSS-I transient events 45% more likely within one day of above-ground nuclear weapons tests and correlating weakly with historical UAP report volumes."
+    },
+    {
+      "date": "Oct 2025",
+      "type": "academic-paper",
+      "title": "Aligned, Multiple-transient Events in the First Palomar Sky Survey",
+      "outlet": "Publications of the Astronomical Society of the Pacific",
+      "notes": "Documents spatially aligned multi-point transient events across POSS-I plates with no conventional astronomical explanation."
+    },
+    {
+      "date": "Oct 2025",
+      "type": "academic-paper",
+      "title": "ExoProbe: A Cost-Effective Search for Extraterrestrial Probes in the Solar System",
+      "outlet": "Monthly Notices of the Royal Astronomical Society (546:2)",
+      "notes": "Proof-of-concept for a real-time multi-telescope detection network using Earth's shadow to filter known satellites. Analyzed 200,000+ Zwicky Transient Facility images."
+    },
+    {
+      "date": "2025",
+      "type": "academic-paper",
+      "title": "The New Science of Unidentified Aerospace-Undersea Phenomena (UAP)",
+      "outlet": "arXiv:2502.06794",
+      "notes": "Collaborative framework paper with researchers from multiple institutions including Jacques Vallee and others, outlining empirical approaches to UAP science."
+    },
+    {
+      "date": "2024",
+      "type": "conference",
+      "title": "Sol Foundation 2024 Symposium - VASCO and POSS Findings",
+      "outlet": "Sol Foundation Annual Symposium",
+      "notes": "Joint panel with Garry Nolan and Avi Loeb presenting VASCO findings and the implications of pre-satellite photographic plate transients."
+    },
+    {
+      "date": "May 2024",
+      "type": "conference",
+      "title": "3AF Paris UAP Conference - Archival Astronomical Evidence",
+      "outlet": "3AF (Association Aeronautique et Astronautique de France), Paris",
+      "notes": "Presented POSS transient findings to an audience of scientists and government officials at the French aerospace association's UAP science conference."
+    }
+  ],
+  "sources": [
+    {
+      "title": "VASCO Paper I - The Astronomical Journal (2020)",
+      "url": "https://arxiv.org/abs/1911.05068",
+      "type": "Academic Paper",
+      "notes": "Foundational VASCO methodology and first results"
+    },
+    {
+      "title": "A bright triple transient that vanished within 50 min - MNRAS (2024)",
+      "url": "https://academic.oup.com/mnras/article/527/3/6312/7457759",
+      "type": "Academic Paper",
+      "notes": "1952 Washington D.C. plate coincidence and 22-sigma shadow-avoidance result"
+    },
+    {
+      "title": "Transients in the POSS-I associated with nuclear testing and UAP - Scientific Reports (2025)",
+      "url": "https://www.nature.com/articles/s41598-025-21620-3",
+      "type": "Academic Paper",
+      "notes": "Nuclear test correlation and UAP report frequency analysis"
+    },
+    {
+      "title": "ExoProbe: A Cost-Effective Search for Extraterrestrial Probes - MNRAS (2025)",
+      "url": "https://academic.oup.com/mnras/article/546/2/staf1158/8221885",
+      "type": "Academic Paper",
+      "notes": "Real-time detection network proof-of-concept"
+    },
+    {
+      "title": "Aligned Multiple-transient Events in POSS - PASP (2025)",
+      "url": "https://www.researchgate.net/publication/394040040_Aligned_multiple-transient_events_in_the_First_Palomar_Sky_Survey",
+      "type": "Academic Paper",
+      "notes": "Spatially correlated multi-point transient documentation"
+    },
+    {
+      "title": "Sol Foundation - Beatriz Villarroel Profile",
+      "url": "https://thesolfoundation.org/people/beatriz-villarroel-3/",
+      "type": "Organization Profile",
+      "notes": "Sol Foundation advisory board listing"
+    },
+    {
+      "title": "L'Oreal-UNESCO For Women in Science Prize - IAC Announcement (2021)",
+      "url": "https://www.iac.es/en/outreach/news/beatriz-villarroel-awarded-loreal-unesco-prize-women-science",
+      "type": "Press Release",
+      "notes": "Award citation and career context"
+    },
+    {
+      "title": "Did Astronomers Photograph UFOs Orbiting Earth in the 1950s? - Scientific American",
+      "url": "https://www.scientificamerican.com/article/did-astronomers-photograph-ufos-orbiting-earth-in-the-1950s/",
+      "type": "News Article",
+      "notes": "Overview of POSS findings and skeptical perspectives"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "A 22-sigma statistical result shows that approximately one-third of 106,000+ identified photographic plate transients avoid Earth's shadow, implying they are solar reflections from highly reflective objects in high Earth orbit before the Sputnik era.",
+      "category": "Physical Evidence",
+      "status": "peer-reviewed",
+      "source": "MNRAS 527(3):6312 (2024)"
+    },
+    {
+      "claim": "POSS-I transient events are 45% more likely to occur within one day of above-ground nuclear weapons tests, suggesting a correlation between nuclear detonations and anomalous aerial phenomena over the United States in the 1950s.",
+      "category": "Physical Evidence",
+      "status": "peer-reviewed",
+      "source": "Scientific Reports 15:34125 (2025)"
+    },
+    {
+      "claim": "A bright triple transient - three co-located point sources vanishing within 50 minutes - appears on a July 19, 1952 Palomar plate, the same night as the Washington D.C. UFO flap documented by civilian and military radar.",
+      "category": "Physical Evidence",
+      "status": "peer-reviewed",
+      "source": "MNRAS 527(3):6312 (2024)"
+    },
+    {
+      "claim": "Of 15,593+ manually reviewed Palomar plate pairs, 798 objects have been classified as genuinely vanished with no known natural or instrumental explanation.",
+      "category": "Physical Evidence",
+      "status": "peer-reviewed",
+      "source": "The Astronomical Journal 159:8 (2020)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "garry-nolan",
+      "node_label": "Dr. Garry Nolan",
+      "relationship": "Joint Sol Foundation Advisory Board members; Nolan publicly praised VASCO findings.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "avi-loeb",
+      "node_label": "Prof. Avi Loeb",
+      "relationship": "Sol Foundation colleagues pursuing parallel empirical technosignature programs.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 10,
+      "node_type": "person",
+      "node_id": "jacques-vallee",
+      "node_label": "Dr. Jacques Vallee",
+      "relationship": "Co-authors on 2025 New Science of UAP framework paper; shared Sol Foundation symposia.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "vasco-project",
+      "node_label": "VASCO Project",
+      "relationship": "Principal investigator of the Vanishing and Appearing Sources Century of Observations project.",
+      "connection_type": "institutional"
+    }
+  ]
+}

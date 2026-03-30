@@ -1220,5 +1220,10 @@ export const graphData: GraphData = {
     { source: 'robert-monroe',   target: 'hal-puthoff',        label: 'Skip Atwater 1977 visit bridged Monroe Institute OBE methods and Puthoff SRI remote viewing research into the Stargate training pipeline' },
     { source: 'robert-monroe',   target: 'ingo-swann',         label: 'Monroe Hemi-Sync methods informed the altered-state preparation dimension of Swann CRV protocol training framework' },
     { source: 'robert-monroe',   target: 'kit-green',          label: 'CIA-commissioned Gateway Process assessment connected Monroe methods to Green intelligence network overseeing psi research' },
+
+    // Beatriz Villarroel connections
+    { source: 'beatriz-villarroel', target: 'garry-nolan',   label: 'Sol Foundation Advisory Board; joint panel Sol 2024 Symposium' },
+    { source: 'beatriz-villarroel', target: 'avi-loeb',       label: 'Sol Foundation colleagues; parallel empirical technosignature programs' },
+    { source: 'beatriz-villarroel', target: 'jacques-vallee', label: 'co-authors on 2025 New Science of UAP paper; Sol Foundation symposia' },
   ],
 };

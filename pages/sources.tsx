@@ -321,6 +321,40 @@ const Sources: NextPage = () => {
             notes="Used for: Ingo Swann."
           />
 
+          {/* Beatriz Villarroel */}
+          <SourceCard
+            name="VASCO Paper I - The Astronomical Journal (Villarroel et al., 2020)"
+            url="https://arxiv.org/abs/1911.05068"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Foundational VASCO methodology paper comparing USNO-B1.0 against Pan-STARRS DR1. Documents 798 genuinely vanished objects from 15,593+ manually reviewed plate pairs."
+            notes="Used for: Dr. Beatriz Villarroel."
+          />
+          <SourceCard
+            name="A bright triple transient that vanished within 50 min - MNRAS (Villarroel et al., 2024)"
+            url="https://academic.oup.com/mnras/article/527/3/6312/7457759"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Documents the July 19, 1952 triple co-located transient coinciding with the Washington D.C. UFO flap and presents the 22-sigma shadow-avoidance statistical result."
+            notes="Used for: Dr. Beatriz Villarroel."
+          />
+          <SourceCard
+            name="Transients in the POSS-I associated with nuclear testing and UAP - Scientific Reports (2025)"
+            url="https://www.nature.com/articles/s41598-025-21620-3"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Statistical analysis finding POSS-I transients 45% more frequent within one day of above-ground nuclear tests and correlating with historical UAP report volumes."
+            notes="Used for: Dr. Beatriz Villarroel."
+          />
+          <SourceCard
+            name="ExoProbe: A Cost-Effective Search for Extraterrestrial Probes - MNRAS (2025)"
+            url="https://academic.oup.com/mnras/article/546/2/staf1158/8221885"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Real-time detection network proof-of-concept using Earth's shadow to filter satellites, analyzing 200,000+ Zwicky Transient Facility images."
+            notes="Used for: Dr. Beatriz Villarroel."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

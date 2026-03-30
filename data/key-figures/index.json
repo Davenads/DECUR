@@ -1667,5 +1667,19 @@
     "data_file": "robert-monroe.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "beatriz-villarroel",
+    "name": "Dr. Beatriz Villarroel",
+    "aliases": ["Beatriz Villarroel"],
+    "role": "Astrophysicist, VASCO Principal Investigator",
+    "period": "2017-present",
+    "affiliation": "Nordita / Instituto de Astrofísica de Canarias",
+    "summary": "Swedish-Spanish astrophysicist whose VASCO project identified hundreds of anomalous vanishing objects in pre-satellite photographic plates. Her peer-reviewed studies in MNRAS, Scientific Reports, and PASP document transient flashes correlating with nuclear tests and the 1952 Washington D.C. UFO flap, representing some of the most rigorously published astronomical data in UAP-adjacent science.",
+    "status": "detailed",
+    "tags": ["scientist", "astronomy", "vasco", "astrophysics", "sol-foundation"],
+    "data_file": "beatriz-villarroel.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]
