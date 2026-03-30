@@ -1205,5 +1205,9 @@ export const graphData: GraphData = {
     { source: 'eric-burlison', target: 'chuck-schumer',      label: 'House counterpart to Schumer Senate UAPDA effort; Burlison introduced UAPDA 2025 in the House modeled on Schumer-Rounds structure' },
     { source: 'eric-burlison', target: 'kirsten-gillibrand', label: 'coordinated with Gillibrand Senate-side office during 2023-2024 NDAA UAP Disclosure Act push' },
     { source: 'eric-burlison', target: 'aaro',               label: 'Oversight Committee member who led bipartisan letter requesting a UAP Select Subcommittee; critical of AARO mandate and access limitations' },
+
+    // Ingo Swann connections
+    { source: 'ingo-swann',    target: 'hal-puthoff',        label: 'co-developed CRV protocol; primary subject in SCANATE and Jupiter remote viewing experiment at SRI' },
+    { source: 'ingo-swann',    target: 'kit-green',          label: 'Green served as CIA case officer overseeing early SRI remote viewing program; shared intelligence-psi research network' },
   ],
 };

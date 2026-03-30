@@ -1,0 +1,204 @@
+{
+  "profile": {
+    "id": "ingo-swann",
+    "name": "Ingo Swann",
+    "aliases": ["Ingo Douglass Swann"],
+    "born": "September 14, 1933 - Telluride, Colorado",
+    "died": "January 31, 2013 - New York City, New York",
+    "roles": [
+      "Primary Research Subject, CIA SCANATE / SRI International",
+      "Originator, Coordinate Remote Viewing (CRV) Protocol",
+      "Author - Penetration (1998)"
+    ],
+    "service_period": "1972-1995 (government remote viewing programs); 1960s-2013 (career)",
+    "organizations": [
+      "CIA (SCANATE program)",
+      "Stanford Research Institute (SRI International)",
+      "GRILL FLAME / CENTER LANE / SUN STREAK / STAR GATE programs"
+    ],
+    "clearance": "Classified (held during government program participation, 1972-1995; specific level not publicly disclosed)",
+    "summary": "Ingo Swann was an American psychic, artist, and author who became the central research subject in the U.S. government's classified remote viewing programs from 1972 through 1995. Working with physicists Hal Puthoff and Russell Targ at Stanford Research Institute, Swann developed the Coordinate Remote Viewing (CRV) protocol - the structured methodology used to train CIA and DIA operatives across two decades of classified programs including SCANATE, GRILL FLAME, and STAR GATE. His 1973 description of ring-like structures around Jupiter, documented six years before Voyager 1's confirmation, remains one of the most discussed data points in the remote viewing literature. His 1998 book 'Penetration' added an explicit UAP dimension, describing a secret clandestine government agency with no paper trail tasked with monitoring ET activity.",
+    "education": [
+      "American University, Washington D.C. - B.Sc. in Biology with a minor in Art"
+    ],
+    "early_career": [
+      "Served as U.S. Army clerk in Korea and Japan in the 1950s",
+      "Worked at the United Nations Secretariat in New York for over a decade (late 1950s-1960s)",
+      "Established himself as a professional artist with work exhibited at New York galleries",
+      "Engaged in parapsychology research with the American Society for Psychical Research (ASPR) before CIA recruitment"
+    ],
+    "key_events": [
+      {
+        "year": "1972",
+        "event": "CIA-sponsored remote viewing tests begin at the American Society for Psychical Research (ASPR) in New York. Results are notable enough to prompt the agency to fund a formal scientific program at Stanford Research Institute."
+      },
+      {
+        "year": "1973",
+        "event": "CIA funds SCANATE program at Stanford Research Institute. Swann becomes the primary research subject, working with physicists Hal Puthoff and Russell Targ on coordinate-based remote viewing experiments."
+      },
+      {
+        "year": "Apr 1973",
+        "event": "Conducts landmark Jupiter remote viewing session at SRI. Describes a ring-like structure around the planet - a feature unknown to astronomy at the time. Voyager 1 confirms the existence of Jupiter's ring system in March 1979, six years after Swann's documented session."
+      },
+      {
+        "year": "1975",
+        "event": "Develops Coordinate Remote Viewing (CRV) - a structured, stage-based training protocol for remote viewing. The methodology becomes the foundation for military remote viewing programs and is still taught by former program participants decades later."
+      },
+      {
+        "year": "1978-1995",
+        "event": "Serves as trainer and protocol designer across successive government program iterations: GRILL FLAME (1978), CENTER LANE (1983), SUN STREAK (1987), and STAR GATE (1991). Trains military and intelligence personnel. STAR GATE officially terminated in 1995 after an American Institutes for Research (AIR) evaluation concludes insufficient replicable intelligence value."
+      },
+      {
+        "year": "1998",
+        "event": "Publishes 'Penetration: The Question of Extraterrestrial and Human Telepathy.' Describes a secret clandestine government agency with no paper trail that recruited him to remotely view ET/UAP targets - including a claimed ET base on the far side of the Moon - and recounts a witnessed UAP emergence from an Alaskan lake."
+      },
+      {
+        "year": "Jan 2013",
+        "event": "Dies in New York City at age 79. His CRV protocol documentation, SRI session transcripts, and online memoir remain primary sources for the remote viewing research and UAP communities."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "jupiter-rings-description",
+      "category": "anomalous perception",
+      "claim": "In April 1973, during a supervised session at SRI, Swann described ring-like structures around Jupiter before any such rings were known to science. Voyager 1 confirmed Jupiter's faint ring system in March 1979 - six years after Swann's documented session.",
+      "status": "partially-verified",
+      "notes": "The session transcript is dated and on record at SRI before the Voyager mission. Voyager 1's ring confirmation is an objective historical fact. Skeptics argue the description ('a kind of ring') was vague enough to reflect educated guessing from Saturn's known rings. Puthoff and Targ's 1974 Nature paper documents the experimental conditions. The pre-knowledge sequence is real; its interpretation remains contested."
+    },
+    {
+      "id": "crv-intelligence-value",
+      "category": "government program",
+      "claim": "The Coordinate Remote Viewing protocol Swann co-developed produced measurable, above-chance results in operational intelligence contexts across STAR GATE's two-decade run - sufficient to justify 22 years of CIA and DIA funding.",
+      "status": "partially-verified",
+      "notes": "The 1995 AIR review concluded laboratory studies showed statistically anomalous results but that operational sessions did not produce verifiable intelligence. Program advocates including Puthoff dispute the AIR methodology. Declassified program documents describe operational uses with reported results that cannot be independently verified against ground truth."
+    },
+    {
+      "id": "moon-et-base",
+      "category": "non-human intelligence",
+      "claim": "Swann claims a secret clandestine government agency with no paper trail hired him to remotely view ET-related targets, including an alleged ET base on the far side of the Moon with structured activity and what he interpreted as alien workers.",
+      "status": "unverified",
+      "notes": "Described in 'Penetration' (1998). The alleged agency is described as operating without written records, making independent verification structurally impossible. No former government official has corroborated the agency's existence. Swann states the verbal secrecy agreements had expired by the time of publication."
+    },
+    {
+      "id": "alaska-uap-encounter",
+      "category": "direct encounter",
+      "claim": "Swann describes being taken to a remote site near the Arctic Circle by the clandestine agency's operatives, where he witnessed a large craft emerge from beneath the surface of an Alaskan lake. The operatives who brought him appeared visibly frightened.",
+      "status": "unverified",
+      "notes": "Described in 'Penetration' (1998). No supporting witnesses have come forward. The account is notable for its specificity - remote location, craft behavior, and the handlers' fear response - but cannot be independently corroborated."
+    },
+    {
+      "id": "deep-black-uap-agency",
+      "category": "government cover-up",
+      "claim": "A clandestine government agency exists with no paper trail whose specific charter is monitoring UAP/ET activity and studying ET telepathic capabilities. The agency operates outside normal government oversight structures and recruits psychic assets directly.",
+      "status": "unverified",
+      "notes": "Swann's account predates and is independent of similar allegations by other DECUR figures. The description is consistent in broad strokes with allegations by David Grusch and others about off-books UAP programs, but Swann provides no documentary evidence. The 'no paper trail' design makes verification by definition unavailable through conventional means."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "The CIA and DIA funded government remote viewing programs for 22 years (1972-1995) - an institutional commitment of that duration implies the programs were producing results compelling enough to justify continued expenditure and classification",
+      "The 1973 Jupiter session transcript is dated and on record; the Voyager 1 ring confirmation in 1979 is an objective historical fact - the pre-knowledge sequence is real regardless of how one interprets the mechanism",
+      "Hal Puthoff and Russell Targ - both credentialed physicists with institutional affiliations - vouched for Swann's results and the experimental rigor of their SRI protocols throughout their careers",
+      "The 1974 Nature paper by Puthoff and Targ documenting SRI remote viewing experiments passed peer review at one of the world's most prestigious scientific journals",
+      "Multiple independent evaluators found statistically anomalous results in controlled laboratory remote viewing experiments - the debate is over operational replication, not whether above-chance laboratory results were observed",
+      "Swann received no public commercial benefit from his government program work, which was classified; his motive for fabricating results during the program period is not apparent"
+    ],
+    "contradicting": [
+      "The 1995 AIR review - the official government evaluation that terminated STAR GATE - concluded there was no credible evidence that remote viewing produced operationally useful intelligence",
+      "Psychologist Ray Hyman, co-author of the AIR review, published detailed methodological critiques arguing the SRI experiments were not properly controlled for sensory leakage and experimenter bias",
+      "The Jupiter ring description's vagueness ('a kind of ring') and the availability of Saturn as a mental template are cited by skeptics as sufficient to explain the result without invoking anomalous perception",
+      "Swann was a practicing Scientologist at OT Level VII during the peak of his government program work - critics argue this context undermines claims of objective experimental inquiry",
+      "The 'Penetration' claims about a secret ET-monitoring agency, moon base, and Alaskan encounter have no corroboration from any other source inside or outside government",
+      "No declassified STAR GATE operational session has been identified where a remote viewing result was subsequently verified against independent ground truth"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold E. Puthoff",
+      "role": "Physicist, SRI International; CIA SCANATE principal investigator",
+      "relationship": "Primary scientific collaborator. Puthoff recruited Swann for SCANATE in 1972, co-conducted the Jupiter experiment, and co-developed the CRV protocol. Their partnership at SRI was the foundation of the U.S. government's remote viewing program and produced the landmark 1974 Nature paper."
+    },
+    {
+      "id": "kit-green",
+      "name": "Dr. Christopher 'Kit' Green",
+      "role": "CIA analyst; Aviary network member; AAWSAP medical DIRD author",
+      "relationship": "Green was the CIA case officer who managed the agency's early investment in Swann's work at SRI. Both were part of the intelligence-community network bridging psi research and UAP investigation - a thread connecting SCANATE in the 1970s through to AAWSAP decades later."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1974",
+      "type": "academic-paper",
+      "title": "Information Transmission Under Conditions of Sensory Shielding (Nature, 1974)",
+      "outlet": "Nature (Vol. 251, pp. 602-607)",
+      "interviewer": "Puthoff, H.E. and Targ, R. (co-authors)",
+      "notes": "Landmark peer-reviewed paper documenting SRI remote viewing experiments including Swann's sessions. One of the few parapsychology studies published in a top-tier scientific journal. Includes the Jupiter experimental data and triggered significant academic controversy."
+    },
+    {
+      "date": "1996",
+      "type": "written",
+      "title": "Remote Viewing: The Real Story - Online Memoir",
+      "outlet": "Self-published (ingoswann.com)",
+      "notes": "Extended first-person memoir covering his full government program history. Provides the most detailed participant account of SCANATE and STAR GATE available in the public record."
+    },
+    {
+      "date": "1998",
+      "type": "written",
+      "title": "Penetration: The Question of Extraterrestrial and Human Telepathy",
+      "outlet": "Ingo Swann Books (self-published)",
+      "notes": "Primary UAP disclosure text. Describes the clandestine government UAP-monitoring agency, the moon base remote viewing session, the Alaskan lake encounter, and Swann's theory of ET telepathic influence on human affairs. States the verbal secrecy agreements from the 1970s had expired by time of publication."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ingo Swann - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ingo_Swann",
+      "type": "Reference",
+      "notes": "Primary biographical reference; career timeline, program affiliations, and death date"
+    },
+    {
+      "title": "Puthoff, H.E. and Targ, R. - Information Transmission Under Conditions of Sensory Shielding (Nature, 1974)",
+      "url": "https://www.nature.com/articles/251602a0",
+      "type": "Academic Paper",
+      "notes": "Original peer-reviewed paper documenting SRI remote viewing experiments including Swann's sessions"
+    },
+    {
+      "title": "Penetration: The Question of Extraterrestrial and Human Telepathy (Amazon)",
+      "url": "https://www.amazon.com/Penetration-Question-Extraterrestrial-Human-Telepathy/dp/0966767403",
+      "type": "Published Book",
+      "notes": "Primary source for UAP-specific claims - moon base, clandestine agency, Alaskan encounter"
+    },
+    {
+      "title": "CIA CREST Collection - STAR GATE Remote Viewing Program Documents",
+      "url": "https://www.cia.gov/readingroom/collection/stargate",
+      "type": "Government Archive",
+      "notes": "Declassified CIA Reading Room collection of STAR GATE program documents including session transcripts and program evaluations"
+    },
+    {
+      "title": "AIR Assessment of the Evidence for Psychic Functioning (1995)",
+      "url": "https://www.cia.gov/readingroom/document/cia-rdp96-00791r000200060001-5",
+      "type": "Government Report",
+      "notes": "Official AIR review that led to STAR GATE termination; essential counter-evidence context for the credibility assessment"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Puthoff was the SRI physicist who recruited Swann for SCANATE and co-conducted the 1973 Jupiter remote viewing experiment that preceded Voyager 1's ring confirmation by six years.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "kit-green",
+      "node_label": "Kit Green",
+      "relationship": "Green served as the CIA case officer overseeing early SRI remote viewing work, connecting Swann's program to the broader intelligence network that later intersected with UAP investigation through AAWSAP.",
+      "connection_type": "institutional"
+    }
+  ]
+}

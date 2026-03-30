@@ -1625,5 +1625,19 @@
     "data_file": "eric-burlison.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "ingo-swann",
+    "name": "Ingo Swann",
+    "aliases": ["Ingo Douglass Swann", "Swann"],
+    "role": "Remote Viewing Pioneer; Primary Subject, CIA SCANATE / STAR GATE",
+    "period": "1972-1995",
+    "affiliation": "Stanford Research Institute (SRI International) / CIA",
+    "summary": "American psychic and author who served as the central research subject in the U.S. government's classified remote viewing programs from 1972 through 1995. Working with Hal Puthoff and Russell Targ at SRI, Swann co-developed the Coordinate Remote Viewing (CRV) protocol used across SCANATE, GRILL FLAME, and STAR GATE. His 1973 description of ring-like structures around Jupiter - documented before Voyager 1's 1979 confirmation - remains the most debated data point in the remote viewing literature. His 1998 book 'Penetration' described a secret government UAP-monitoring agency and an alleged ET base on the far side of the Moon.",
+    "status": "detailed",
+    "tags": ["remote-viewing", "cia", "sri", "stargate", "psychic-research", "nhi"],
+    "data_file": "ingo-swann.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

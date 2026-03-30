@@ -251,6 +251,32 @@ const Sources: NextPage = () => {
             </p>
           </div>
 
+          {/* Ingo Swann */}
+          <SourceCard
+            name="Penetration: The Question of Extraterrestrial and Human Telepathy - Ingo Swann (1998)"
+            url="https://www.amazon.com/Penetration-Question-Extraterrestrial-Human-Telepathy/dp/0966767403"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary source for Swann's UAP-specific claims including the clandestine government agency, moon base remote viewing session, and Alaskan lake encounter. Swann states verbal secrecy agreements from the 1970s had expired by publication."
+            notes="Used for: Ingo Swann."
+          />
+          <SourceCard
+            name="CIA CREST Collection - STAR GATE Remote Viewing Program Documents"
+            url="https://www.cia.gov/readingroom/collection/stargate"
+            type="Government Archive"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Declassified CIA Reading Room collection of STAR GATE program documents including session transcripts, program evaluations, and the 1995 AIR review that led to termination."
+            notes="Used for: Ingo Swann."
+          />
+          <SourceCard
+            name="Puthoff and Targ - Information Transmission Under Conditions of Sensory Shielding (Nature, 1974)"
+            url="https://www.nature.com/articles/251602a0"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Landmark peer-reviewed Nature paper documenting SRI remote viewing experiments. Includes the Jupiter experimental data and is the foundational academic record of Swann's program participation."
+            notes="Used for: Ingo Swann."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"
