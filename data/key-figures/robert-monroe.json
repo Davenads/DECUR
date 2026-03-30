@@ -1,0 +1,206 @@
+{
+  "profile": {
+    "id": "robert-monroe",
+    "name": "Robert Monroe",
+    "aliases": ["Robert A. Monroe", "Bob Monroe"],
+    "born": "October 30, 1915 - Lexington, Kentucky",
+    "died": "March 17, 1995 - Nelson County, Virginia",
+    "roles": [
+      "Founder, The Monroe Institute",
+      "Inventor, Hemi-Sync Technology",
+      "Author - Journeys Out of the Body (1971)"
+    ],
+    "service_period": "1958-1995 (consciousness research); 1974-1995 (Monroe Institute director)",
+    "organizations": [
+      "The Monroe Institute",
+      "Monroe Industries (radio broadcasting)",
+      "CIA / U.S. Army (as civilian research subject, 1973-1983)"
+    ],
+    "clearance": "None (civilian researcher; government contracted assessment of his methods 1973-1983)",
+    "summary": "Robert Monroe was an American radio broadcasting executive who, beginning in 1958, began experiencing involuntary out-of-body episodes and spent the rest of his life documenting and systematizing them. His 1971 book 'Journeys Out of the Body' coined the modern term 'out-of-body experience' and his invention of Hemi-Sync - a patented binaural beat technology that induces altered states reproducibly - drew formal CIA and Army interest. The 1983 declassified 'Analysis and Assessment of Gateway Process' is a CIA document formally evaluating Monroe's methods for intelligence applications and concluding they are 'plausible in terms of physical science.' His institute became the primary training ground for government remote viewers, and his framework directly influenced the Stargate program that produced Remote Viewer #001 Joe McMoneagle. His later books describe contact with non-human intelligent entities encountered during OBE sessions.",
+    "education": [
+      "Ohio State University - B.A. (English and Dramatic Arts, 1937)"
+    ],
+    "early_career": [
+      "Worked as a writer and director for radio broadcasting in New York City in the late 1930s and 1940s",
+      "Founded Monroe Industries, a successful radio broadcasting and production company, eventually owning multiple stations",
+      "Began experiencing involuntary out-of-body episodes in 1958; documented them systematically over several years before publishing",
+      "Collaborated with researcher Dr. Charles Tart in the 1960s on early scientific attempts to verify OBE phenomena"
+    ],
+    "key_events": [
+      {
+        "year": "1958",
+        "event": "While experimenting with sleep learning techniques, Monroe begins experiencing involuntary out-of-body episodes. He documents them in detail over the following decade, developing a systematic framework for inducing and navigating altered states."
+      },
+      {
+        "year": "1971",
+        "event": "Publishes 'Journeys Out of the Body' - the book that coins the modern term 'out-of-body experience.' The book becomes a bestseller and establishes Monroe as the central figure in consciousness research outside academic institutions."
+      },
+      {
+        "year": "1974",
+        "event": "Founds The Monroe Institute in Faber, Virginia as a formal research and educational organization dedicated to exploring and developing human consciousness. The institute becomes the primary institutional home for his Hemi-Sync technology research."
+      },
+      {
+        "year": "1977",
+        "event": "Lt. Col. Frederick 'Skip' Atwater, officer responsible for the Army's remote viewing training program, visits the Monroe Institute and experiences his first OBE during a test session. Monroe's Hemi-Sync methods are subsequently incorporated into the government's remote viewing training pipeline."
+      },
+      {
+        "year": "1983",
+        "event": "The U.S. Army, at CIA direction, commissions a formal classified assessment of Monroe's Gateway Process. Lt. Col. Wayne McDonnell produces 'Analysis and Assessment of Gateway Process' - a 29-page document concluding Monroe's methods are 'plausible in terms of physical science' and recommending intelligence application research. The document is declassified in 2003 with page 25 permanently withheld."
+      },
+      {
+        "year": "1985",
+        "event": "Publishes 'Far Journeys.' Describes entities he encountered during OBE sessions that he called 'INSPEC' (Intelligent Species) - beings he interpreted as highly evolved intelligences operating outside conventional spacetime. The book represents his first explicit claim of contact with non-human intelligence."
+      },
+      {
+        "year": "1994",
+        "event": "Publishes 'Ultimate Journey,' his final book. Develops his metaphysical framework further and describes advanced NHI entity interactions. Establishes the Monroe Institute as an ongoing institution with a successor leadership structure."
+      },
+      {
+        "year": "Mar 1995",
+        "event": "Dies at his home in Nelson County, Virginia at age 79. The Monroe Institute continues under his successors. His three books, Hemi-Sync technology, and the declassified CIA Gateway document remain primary sources for consciousness and UAP researchers."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "hemi-sync-altered-states",
+      "category": "anomalous perception",
+      "claim": "Hemi-Sync - Monroe's patented binaural beat technology - can reliably induce altered states of consciousness including out-of-body experiences in subjects who undergo structured audio protocols. The brain's frequency-following response to offset binaural beats is the proposed physical mechanism.",
+      "status": "partially-verified",
+      "notes": "The underlying binaural beat frequency-following response is scientifically documented. That this mechanism can induce altered states is supported by some controlled studies. Whether the resulting states constitute genuine OBEs with anomalous information access - versus vivid internal experiences - remains scientifically contested. The CIA's 1983 Gateway Process assessment accepted the plausibility of the binaural beat mechanism."
+    },
+    {
+      "id": "cia-gateway-plausibility-finding",
+      "category": "government program",
+      "claim": "The CIA's own 1983 assessment of Monroe's Gateway Process concluded it is 'plausible in terms of physical science' and recommended further research into intelligence applications - specifically transcending spacetime to gather non-local information.",
+      "status": "partially-verified",
+      "notes": "The document exists and is declassified; its exact language is on the public record at the CIA Reading Room. The 'plausible' conclusion reflects assessment of the binaural beat mechanism, not verification of OBE intelligence value. The 1995 AIR review that terminated Stargate implicitly contradicts any optimism in the 1983 document about operational intelligence applications."
+    },
+    {
+      "id": "missing-page-25",
+      "category": "government cover-up",
+      "claim": "Page 25 of the CIA's 29-page Gateway Process assessment has been permanently withheld. The CIA states they never possessed it, which researchers find implausible given the sequential document structure. The missing page is widely theorized to contain the most operationally sensitive conclusions.",
+      "status": "unverified",
+      "notes": "The missing page is a documented fact - the declassified document visibly jumps from page 24 to page 26. The CIA's denial of its existence conflicts with basic document logic. What the page contains cannot be determined without its release. This is one of the few genuine unresolved suppressions in a declassified government consciousness research document."
+    },
+    {
+      "id": "inspec-nhi-contact",
+      "category": "non-human intelligence",
+      "claim": "During deep OBE sessions, Monroe made contact with intelligent non-human entities he termed 'INSPEC' (Intelligent Species). These beings communicated directly, appeared to operate outside conventional spacetime, and Monroe interpreted them as either highly evolved future humans or genuinely non-human intelligences.",
+      "status": "unverified",
+      "notes": "Described in 'Far Journeys' (1985) and 'Ultimate Journey' (1994). Monroe was scientifically careful and careful to distinguish his interpretations from his observations, acknowledging he could not determine whether INSPEC represented external entities or aspects of his own consciousness. No independent witness confirmed the contact. The accounts are internally consistent but structurally unverifiable."
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "The CIA commissioned a formal classified assessment of his methods - an extraordinary level of institutional interest that implies the government found his work worth taking seriously at the highest levels",
+      "Hemi-Sync technology is patented, commercially available, and still in use - the binaural beat mechanism has independent scientific validation outside Monroe's claims",
+      "Lt. Col. Skip Atwater's adoption of Monroe methods for the Army's remote viewing training program, and the subsequent 22-year Stargate program, represents sustained government confidence in his methodology's utility",
+      "Monroe was methodologically careful throughout his career, consistently distinguishing between observed phenomena and interpretation - more intellectually rigorous than most OBE researchers",
+      "Three published books over 23 years demonstrate a consistent, internally coherent framework rather than a one-time claim",
+      "He had no financial motive to fabricate his experiences: he was already a successful businessman when the OBEs began in 1958"
+    ],
+    "contradicting": [
+      "All OBE claims are subjective first-person experiences - no external observer has ever independently confirmed an OBE event or verified anomalous information gathered during one",
+      "The 1995 AIR review that terminated Stargate implicitly contradicts the 1983 CIA optimism about Monroe-derived remote viewing methods by finding insufficient operational intelligence value",
+      "Monroe's INSPEC entity claims are at the outer edge of verifiability even within the parapsychology research community - they require accepting not just OBEs but contact with intelligent non-human beings",
+      "The missing page 25 theory is speculative - it could equally contain mundane content that was withheld for unrelated administrative reasons",
+      "His credentials were in radio broadcasting, not science - the Gateway Process document's 'plausible' conclusion may reflect the writer's, not Monroe's, scientific framing",
+      "No controlled experiment has produced an OBE with independently verifiable anomalous information access that could not be explained by ordinary sensory or inferential means"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "joe-mcmoneagle",
+      "name": "Joseph McMoneagle",
+      "role": "Remote Viewer #001, U.S. Army STAR GATE",
+      "relationship": "McMoneagle trained with Monroe Institute methods and has been a long-term Monroe Institute associate and speaker. Monroe's Hemi-Sync framework and Gateway protocols were foundational to the training pipeline that produced McMoneagle as an operational viewer."
+    },
+    {
+      "id": "hal-puthoff",
+      "name": "Dr. Harold E. Puthoff",
+      "role": "Physicist, SRI International; SCANATE / STAR GATE scientific director",
+      "relationship": "Parallel figures in the government consciousness research pipeline. Puthoff's SRI work at the same period and Skip Atwater's 1977 crossover visit formalized the connection between Monroe's Institute and the SRI-based remote viewing methodology."
+    },
+    {
+      "id": "ingo-swann",
+      "name": "Ingo Swann",
+      "role": "Remote viewing pioneer; originator of CRV protocol",
+      "relationship": "Swann's CRV protocol and Monroe's Hemi-Sync methods fed into the same government training programs. Monroe Institute's altered-state induction methods informed the consciousness preparation dimension of the broader remote viewing framework."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1971",
+      "type": "written",
+      "title": "Journeys Out of the Body",
+      "outlet": "Doubleday (New York)",
+      "notes": "Landmark book that coined the term 'out-of-body experience.' Documents Monroe's decade of systematic OBE research and introduces Hemi-Sync. Established him as the central figure in consciousness research outside academia."
+    },
+    {
+      "date": "1985",
+      "type": "written",
+      "title": "Far Journeys",
+      "outlet": "Doubleday (New York)",
+      "notes": "Second book. Describes his INSPEC entity encounters and more advanced OBE explorations. Represents his first explicit claims of contact with non-human intelligences encountered in altered states."
+    },
+    {
+      "date": "1994",
+      "type": "written",
+      "title": "Ultimate Journey",
+      "outlet": "Doubleday (New York)",
+      "notes": "Final book, published the year before his death. Develops the metaphysical framework from Far Journeys and provides Monroe's most comprehensive account of his NHI contact framework."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Robert Monroe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_Monroe",
+      "type": "Reference",
+      "notes": "Primary biographical reference; career timeline, publications, and Monroe Institute founding"
+    },
+    {
+      "title": "CIA - Analysis and Assessment of Gateway Process (1983, declassified 2003)",
+      "url": "https://www.cia.gov/readingroom/document/cia-rdp96-00788r001700210016-5",
+      "type": "Government Document",
+      "notes": "Declassified 29-page CIA/Army assessment of Monroe's Gateway Process. The primary government document connecting Monroe to intelligence programs. Page 25 withheld."
+    },
+    {
+      "title": "Journeys Out of the Body - Robert Monroe (1971) (Amazon)",
+      "url": "https://www.amazon.com/Journeys-Out-Body-Robert-Monroe/dp/0385008619",
+      "type": "Published Book",
+      "notes": "Primary source for Monroe's foundational OBE research and the term coinage"
+    },
+    {
+      "title": "Far Journeys - Robert Monroe (1985) (Amazon)",
+      "url": "https://www.amazon.com/Far-Journeys-Robert-Monroe/dp/0385231822",
+      "type": "Published Book",
+      "notes": "Primary source for INSPEC entity contact claims and NHI encounter accounts"
+    },
+    {
+      "title": "Vice - How to Escape the Confines of Time and Space According to the CIA",
+      "url": "https://www.vice.com/en/article/how-to-escape-the-confines-of-time-and-space-according-to-the-cia/",
+      "type": "Journalism",
+      "notes": "Primary reporting on the CIA Gateway Process document content and missing page 25 story"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "joe-mcmoneagle",
+      "node_label": "Joe McMoneagle",
+      "relationship": "Monroe Institute's Hemi-Sync training framework became foundational to McMoneagle's preparation as Remote Viewer #001; McMoneagle has been a long-term Monroe Institute associate.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Skip Atwater's 1977 visit to Monroe's Institute bridged Monroe's OBE methodology and Puthoff's SRI remote viewing research, creating the combined pipeline that underpinned Stargate training.",
+      "connection_type": "institutional"
+    }
+  ]
+}

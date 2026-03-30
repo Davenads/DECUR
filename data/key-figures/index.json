@@ -1653,5 +1653,19 @@
     "data_file": "joe-mcmoneagle.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "robert-monroe",
+    "name": "Robert Monroe",
+    "aliases": ["Robert A. Monroe", "Bob Monroe"],
+    "role": "Founder, The Monroe Institute; Inventor, Hemi-Sync Technology",
+    "period": "1958-1995",
+    "affiliation": "The Monroe Institute",
+    "summary": "American radio broadcasting executive who began experiencing involuntary out-of-body episodes in 1958 and spent the rest of his life systematically documenting them. His 1971 book 'Journeys Out of the Body' coined the modern term OBE and his Hemi-Sync binaural beat technology drew formal CIA and Army interest. The 1983 declassified 'Analysis and Assessment of Gateway Process' is a CIA document evaluating his methods for intelligence applications and concluding they are plausible. His Institute became the training ground for government remote viewers including Joe McMoneagle, and his later books describe contact with non-human intelligent entities he called INSPEC.",
+    "status": "detailed",
+    "tags": ["remote-viewing", "consciousness", "obe", "cia", "monroe-institute", "hemi-sync", "nhi"],
+    "data_file": "robert-monroe.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

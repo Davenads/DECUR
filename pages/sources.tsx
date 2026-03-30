@@ -251,6 +251,32 @@ const Sources: NextPage = () => {
             </p>
           </div>
 
+          {/* Robert Monroe */}
+          <SourceCard
+            name="Journeys Out of the Body - Robert Monroe (1971)"
+            url="https://www.amazon.com/Journeys-Out-Body-Robert-Monroe/dp/0385008619"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Foundational text that coined the modern term 'out-of-body experience.' Documents Monroe's decade of systematic OBE research and introduces the Hemi-Sync methodology."
+            notes="Used for: Robert Monroe."
+          />
+          <SourceCard
+            name="CIA - Analysis and Assessment of Gateway Process (1983, declassified 2003)"
+            url="https://www.cia.gov/readingroom/document/cia-rdp96-00788r001700210016-5"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Declassified 29-page CIA/Army document formally evaluating Monroe's Gateway Process for intelligence applications. Concludes the methods are 'plausible in terms of physical science.' Page 25 permanently withheld."
+            notes="Used for: Robert Monroe."
+          />
+          <SourceCard
+            name="Far Journeys - Robert Monroe (1985)"
+            url="https://www.amazon.com/Far-Journeys-Robert-Monroe/dp/0385231822"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Monroe's second book describing INSPEC entity encounters during deep OBE sessions. Primary source for his NHI contact claims."
+            notes="Used for: Robert Monroe."
+          />
+
           {/* Joe McMoneagle */}
           <SourceCard
             name="The Stargate Chronicles: Memoirs of a Psychic Spy - Joseph McMoneagle (2002)"

@@ -1214,5 +1214,11 @@ export const graphData: GraphData = {
     { source: 'joe-mcmoneagle',  target: 'hal-puthoff',        label: 'Remote Viewer #001 in GRILL FLAME / STAR GATE; Puthoff SRI research provided methodological foundation for McMoneagle recruitment' },
     { source: 'joe-mcmoneagle',  target: 'ingo-swann',         label: 'Swann designed the CRV protocol McMoneagle used operationally; civilian protocol architect and military practitioner of the same program' },
     { source: 'joe-mcmoneagle',  target: 'kit-green',          label: 'Green CIA oversight of early remote viewing program intersected with McMoneagle operational sessions' },
+    { source: 'joe-mcmoneagle',  target: 'robert-monroe',      label: 'Monroe Institute Hemi-Sync methods were foundational to McMoneagle training; long-term Monroe Institute associate and speaker' },
+
+    // Robert Monroe connections
+    { source: 'robert-monroe',   target: 'hal-puthoff',        label: 'Skip Atwater 1977 visit bridged Monroe Institute OBE methods and Puthoff SRI remote viewing research into the Stargate training pipeline' },
+    { source: 'robert-monroe',   target: 'ingo-swann',         label: 'Monroe Hemi-Sync methods informed the altered-state preparation dimension of Swann CRV protocol training framework' },
+    { source: 'robert-monroe',   target: 'kit-green',          label: 'CIA-commissioned Gateway Process assessment connected Monroe methods to Green intelligence network overseeing psi research' },
   ],
 };
