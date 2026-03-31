@@ -419,6 +419,24 @@ const Sources: NextPage = () => {
             notes="Used for: Prof. Hakan Kayal."
           />
 
+          {/* Jeffrey Kripal */}
+          <SourceCard
+            name="How to Think Impossibly: About Souls, UFOs, Time, Belief, and Everything Else - Kripal (2024)"
+            url="https://press.uchicago.edu/ucp/books/book/chicago/H/bo216049049.html"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Kripal's most direct engagement with UAP as an epistemological challenge. Argues extraordinary phenomena require moving beyond both literal belief and dismissal - published by University of Chicago Press."
+            notes="Used for: Dr. Jeffrey Kripal."
+          />
+          <SourceCard
+            name="Archives of the Impossible - Rice University (Jeffrey Kripal profile)"
+            url="https://impossiblearchives.rice.edu/jeffrey-j-kripal"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Primary institutional biography and overview of the Archives of the Impossible at Rice University, one of the world's largest academic repositories of UAP and contact research materials."
+            notes="Used for: Dr. Jeffrey Kripal."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

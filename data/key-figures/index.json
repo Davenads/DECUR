@@ -1737,5 +1737,19 @@
     "data_file": "hakan-kayal.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "jeffrey-kripal",
+    "name": "Dr. Jeffrey Kripal",
+    "aliases": ["Jeffrey J. Kripal", "Jeff Kripal"],
+    "role": "J. Newton Rayzor Chair, Religion and Philosophy, Rice University",
+    "period": "2014-present",
+    "affiliation": "Rice University / Archives of the Impossible",
+    "summary": "Rice University comparative religion scholar who founded the Archives of the Impossible - one of the world's largest academic repositories of UAP and contact research materials, housing the archives of John Mack, Whitley Strieber, and CIA remote viewing director Ed May. His books argue that extraordinary contact experiences demand new epistemological tools beyond both materialist dismissal and literal belief.",
+    "status": "detailed",
+    "tags": ["scientist", "religion", "humanities", "archives", "consciousness", "sol-foundation"],
+    "data_file": "jeffrey-kripal.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

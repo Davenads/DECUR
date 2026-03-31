@@ -1246,5 +1246,11 @@ export const graphData: GraphData = {
     { source: 'hakan-kayal', target: 'kevin-knuth',        label: 'IFEX affiliates; co-authors on 2025 New Science of UAP paper' },
     { source: 'hakan-kayal', target: 'matt-szydagis',      label: 'IFEX affiliates; co-authors on 2025 New Science of UAP paper' },
     { source: 'hakan-kayal', target: 'beatriz-villarroel', label: 'co-authors on 2025 New Science of UAP flagship paper' },
+
+    // Jeffrey Kripal connections
+    { source: 'jeffrey-kripal', target: 'whitley-strieber', label: 'co-authored The Super Natural (2016); Strieber archive housed at Rice Archives of the Impossible' },
+    { source: 'jeffrey-kripal', target: 'john-mack',        label: 'Archives of the Impossible holds complete John Mack Archive' },
+    { source: 'jeffrey-kripal', target: 'garry-nolan',      label: 'Sol Foundation; presented at inaugural 2023 and 2024 symposia' },
+    { source: 'jeffrey-kripal', target: 'diana-pasulka',    label: 'colleagues in academic study of religion and extraordinary experience; shared Sol Foundation network' },
   ],
 };

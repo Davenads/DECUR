@@ -1,0 +1,238 @@
+{
+  "profile": {
+    "id": "jeffrey-kripal",
+    "name": "Dr. Jeffrey Kripal",
+    "aliases": ["Jeffrey J. Kripal", "Jeff Kripal"],
+    "born": "1962 - United States",
+    "died": null,
+    "roles": [
+      "J. Newton Rayzor Chair in Philosophy and Religious Thought, Rice University",
+      "Co-Director, Center for Theory and Research, Esalen Institute",
+      "Founder and Director, Archives of the Impossible, Rice University"
+    ],
+    "service_period": "1990s-present",
+    "organizations": [
+      "Rice University",
+      "Esalen Institute",
+      "Archives of the Impossible",
+      "Sol Foundation"
+    ],
+    "clearance": null,
+    "summary": "Comparative religion scholar at Rice University who founded the Archives of the Impossible - one of the world's largest academic repositories of UAP, paranormal, and contact research materials, including the archives of John Mack, Whitley Strieber, and CIA remote viewing director Ed May. His books and institutional work argue that extraordinary human experiences of contact and non-ordinary reality demand a new epistemology that neither dismisses nor literalizes them.",
+    "education": [
+      "PhD, History of Religions, University of Chicago",
+      "BA, Philosophy and Theology, Benedictine College"
+    ],
+    "early_career": [
+      "Taught at Harvard Divinity School and Westminster College (Oxford) before joining Rice University",
+      "Early scholarship focused on Hindu tantra and Ramakrishna, establishing credentials in comparative religion before pivoting toward the study of extraordinary human experience"
+    ],
+    "key_events": [
+      {
+        "year": "2010",
+        "event": "Published 'Authors of the Impossible: The Paranormal and the Sacred' (University of Chicago Press), tracing the scholarly lineage of paranormal research from 19th-century psychical research to modern UAP investigation. Established a new academic framework for treating these experiences as real but not literally interpretable."
+      },
+      {
+        "year": "2014",
+        "event": "Founded the Archives of the Impossible at Rice University, acquiring the research archives of John Mack, Whitley Strieber, and CIA remote viewing program director Ed May, among others. The archive became one of the world's largest academic repositories of UAP and extraordinary contact research materials."
+      },
+      {
+        "year": "2015",
+        "event": "Appointed J. Newton Rayzor Chair in Philosophy and Religious Thought at Rice University, cementing his position as the leading academic humanist working at the intersection of religion, consciousness, and extraordinary experience."
+      },
+      {
+        "year": "2016",
+        "event": "Co-authored 'The Super Natural: A New Vision of the Unexplained' with Whitley Strieber (Tarcher/Penguin). The book proposed a humanistic interpretation of extraordinary contact experiences that treats them as simultaneously real and symbolic - neither purely physical nor purely psychological."
+      },
+      {
+        "year": "2019",
+        "event": "Hosted the first Archives of the Impossible Conference at Rice University, bringing together academics, researchers, and experiencers across disciplines to examine UAP and contact phenomena using scholarly methods."
+      },
+      {
+        "year": "2022",
+        "event": "Hosted the second Archives of the Impossible Conference at Rice University. The conference included presentations on UAP physics, religious dimensions of contact experience, and the archival preservation of experiencer testimonies."
+      },
+      {
+        "year": "2023",
+        "event": "Hosted the third Archives of the Impossible Conference. Presented at the Sol Foundation inaugural symposium at Stanford, connecting his humanities scholarship to the emerging scientific UAP research community around Garry Nolan and Avi Loeb."
+      },
+      {
+        "year": "2024",
+        "event": "Published 'How to Think Impossibly: About Souls, UFOs, Time, Belief, and Everything Else' (University of Chicago Press). Presented at the Sol Foundation 2024 Symposium in San Francisco alongside scientists and policymakers. The book directly addresses UAP as a cultural and metaphysical challenge to materialist assumptions."
+      },
+      {
+        "year": "2025",
+        "event": "Hosted the fourth Archives of the Impossible Conference at Rice University. Continued to develop an interdisciplinary scholarly framework for extraordinary experience research, with the Archives holding materials from over 30 major researchers and experiencers."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "whitley-strieber",
+      "name": "Whitley Strieber",
+      "role": "Author and contact experiencer",
+      "relationship": "Co-authored 'The Super Natural' (2016). Strieber's personal archive is housed in the Archives of the Impossible at Rice. Kripal has been a sustained academic advocate for the intellectual seriousness of Strieber's work and the broader experiencer testimony tradition."
+    },
+    {
+      "id": "john-mack",
+      "name": "Dr. John Mack",
+      "role": "Harvard psychiatrist and abduction researcher",
+      "relationship": "The Archives of the Impossible holds the complete John Mack Archive, acquired from the John E. Mack Institute. Kripal has written extensively on Mack's work as a model for taking extraordinary contact claims seriously from within an elite institution."
+    },
+    {
+      "id": "diana-pasulka",
+      "name": "Dr. Diana Pasulka",
+      "role": "Religious studies professor, University of North Carolina Wilmington",
+      "relationship": "Colleagues in the academic study of religion and extraordinary experience; both participate in the Sol Foundation scholarly network and approach UAP from humanistic rather than purely scientific perspectives."
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Immunologist, Sol Foundation founder",
+      "relationship": "Shared Sol Foundation involvement; Kripal presented at the 2023 inaugural symposium and 2024 symposium. Nolan's scientific empiricism and Kripal's humanistic scholarship represent complementary approaches within the same institutional network."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2010",
+      "type": "written",
+      "title": "Authors of the Impossible: The Paranormal and the Sacred",
+      "outlet": "University of Chicago Press",
+      "notes": "Traces the scholarly history of paranormal investigation from 19th-century psychical research to modern UAP study. Establishes an academic framework treating extraordinary experiences as real phenomena requiring new epistemological tools."
+    },
+    {
+      "date": "2016",
+      "type": "written",
+      "title": "The Super Natural: A New Vision of the Unexplained",
+      "outlet": "Tarcher/Penguin (with Whitley Strieber)",
+      "notes": "Co-authored with Whitley Strieber. Proposes that extraordinary contact experiences are simultaneously real events and symbolic communications - requiring a framework that goes beyond both literal UAP believers and conventional scientific dismissal."
+    },
+    {
+      "date": "Nov 2023",
+      "type": "symposium",
+      "title": "Sol Foundation Inaugural Symposium - Humanities and the UAP Problem",
+      "outlet": "Sol Foundation, Stanford University",
+      "notes": "Presented a humanistic framework for UAP research at the inaugural Sol Foundation academic symposium alongside Garry Nolan, Avi Loeb, Jacques Vallee, and Kevin Knuth."
+    },
+    {
+      "date": "2024",
+      "type": "written",
+      "title": "How to Think Impossibly: About Souls, UFOs, Time, Belief, and Everything Else",
+      "outlet": "University of Chicago Press",
+      "notes": "Directly addresses UAP as a challenge to materialist epistemology. Argues that extraordinary phenomena require a 'flip' in how we understand consciousness, matter, and the relationship between observer and observed."
+    },
+    {
+      "date": "Nov 2024",
+      "type": "symposium",
+      "title": "Sol Foundation 2024 Symposium",
+      "outlet": "Sol Foundation, San Francisco",
+      "notes": "Presented at the annual Sol Foundation symposium alongside scientists, intelligence professionals, and policymakers working on UAP research and disclosure."
+    },
+    {
+      "date": "2019",
+      "type": "conference",
+      "title": "Archives of the Impossible Conference (inaugural)",
+      "outlet": "Rice University, Houston",
+      "notes": "First major interdisciplinary academic conference on UAP and extraordinary experience, hosted by Kripal. Brought together academics, researchers, and experiencers."
+    },
+    {
+      "date": "2022",
+      "type": "conference",
+      "title": "Archives of the Impossible Conference (second)",
+      "outlet": "Rice University, Houston",
+      "notes": "Second interdisciplinary academic conference, expanded to include UAP physics research alongside humanistic perspectives."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Archives of the Impossible - Rice University (Jeffrey Kripal profile)",
+      "url": "https://impossiblearchives.rice.edu/jeffrey-j-kripal",
+      "type": "Organization Profile",
+      "notes": "Primary institutional biography and research overview"
+    },
+    {
+      "title": "How to Think Impossibly - University of Chicago Press (2024)",
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/H/bo216049049.html",
+      "type": "Published Book",
+      "notes": "Most recent book directly addressing UAP and consciousness"
+    },
+    {
+      "title": "Jeffrey Kripal on how to think about the UFO phenomenon - Rice News",
+      "url": "https://news.rice.edu/news/2021/jeffrey-kripal-how-think-about-ufo-phenomenon",
+      "type": "News Article",
+      "notes": "2021 interview explaining his scholarly approach to UAP and extraordinary experience"
+    },
+    {
+      "title": "The Super Natural (with Whitley Strieber) - Tarcher/Penguin (2016)",
+      "url": "https://www.amazon.com/Super-Natural-Vision-Unexplained/dp/1101985429",
+      "type": "Published Book",
+      "notes": "Co-authored primary source with Whitley Strieber"
+    },
+    {
+      "title": "Authors of the Impossible - University of Chicago Press (2010)",
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/A/bo8212299.html",
+      "type": "Published Book",
+      "notes": "Foundational academic framework for paranormal and UAP scholarship"
+    },
+    {
+      "title": "Jeffrey Kripal - Sol Foundation Profile",
+      "url": "https://thesolfoundation.org/people/jeffrey-j-kripal-3/",
+      "type": "Organization Profile",
+      "notes": "Sol Foundation membership and symposium participation"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Extraordinary human experiences of contact with non-human intelligence - including UAP encounters, near-death experiences, and abduction reports - constitute a coherent class of phenomena that cannot be adequately explained by either conventional materialist science or traditional religious frameworks.",
+      "category": "Consciousness and Experience",
+      "status": "unverified",
+      "source": "Authors of the Impossible (University of Chicago, 2010); How to Think Impossibly (2024)"
+    },
+    {
+      "claim": "The academic and scientific communities' systematic dismissal of extraordinary experience testimony reflects a structural epistemological commitment to materialism rather than an evidence-based conclusion - meaning the dismissal itself requires examination.",
+      "category": "Institutional Behavior",
+      "status": "partially-verified",
+      "source": "Authors of the Impossible (2010); Rice News interview (2021)"
+    },
+    {
+      "claim": "Significant archival evidence of extraordinary contact experiences has been preserved at Rice University's Archives of the Impossible, including the research materials of John Mack, Whitley Strieber, and CIA remote viewing director Ed May - constituting a primary source record requiring scholarly analysis.",
+      "category": "Institutional Behavior",
+      "status": "verified",
+      "source": "Archives of the Impossible, Rice University (impossiblearchives.rice.edu)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "whitley-strieber",
+      "node_label": "Whitley Strieber",
+      "relationship": "Strieber archive housed at Rice; co-authored The Super Natural (2016).",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "john-mack",
+      "node_label": "Dr. John Mack",
+      "relationship": "Archives of the Impossible holds the complete John Mack Archive.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "garry-nolan",
+      "node_label": "Dr. Garry Nolan",
+      "relationship": "Shared Sol Foundation involvement; presented at inaugural 2023 and 2024 symposia.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "diana-pasulka",
+      "node_label": "Dr. Diana Pasulka",
+      "relationship": "Colleagues in academic study of religion and UAP; shared Sol Foundation network.",
+      "connection_type": "professional"
+    }
+  ]
+}
