@@ -7912,63 +7912,63 @@
     },
     "timeline": [
       {
-        "date": "March-September 1941",
+        "local": "March-September 1941",
         "event": "RAF personnel report lights following aircraft during operations. Early reports classified; attributed to secret German weapons. These precursor accounts are not formally investigated."
       },
       {
-        "date": "April 1944",
+        "local": "April 1944",
         "event": "RAF No. 178 Squadron (Italy-based) begins reporting luminous objects over Hungary and the Adriatic corridor. Reports escalate through summer 1944."
       },
       {
-        "date": "October 1944",
+        "local": "October 1944",
         "event": "First American reports: 422nd Night-Fighter Squadron in Belgium observes objects initially misidentified as Me 163 rocket interceptors."
       },
       {
-        "date": "November 23, 1944",
+        "local": "November 23, 1944",
         "event": "First formally documented American encounter: Lt. Edward Schlueter and crew of the 415th Night Fighter Squadron observe 8-10 red-orange lights north of Strasbourg. Capt. Ringwald begins formal documentation. Lt. Meiers coins the term 'foo fighters' at the debriefing."
       },
       {
-        "date": "November 27, 1944",
+        "local": "November 27, 1944",
         "event": "Lt. Henry Giblin and Lt. Walter Cleary encounter a huge orange light near Speyer on the Rhine. Object follows all evasive maneuvers before accelerating beyond their altitude ceiling. The crew does not file an official report for fear of ridicule."
       },
       {
-        "date": "December 13, 1944",
+        "local": "December 13, 1944",
         "event": "SHAEF issues a formal press release acknowledging the phenomenon as a possible new German weapon - official Allied public confirmation the reports are genuine and under investigation."
       },
       {
-        "date": "December 22-23, 1944",
+        "local": "December 22-23, 1944",
         "event": "Lt. David McFalls and Lt. Ned Baker observe two large orange globes climb from ground level to 10,000 feet over Hagenau, follow their aircraft for approximately two minutes under apparent perfect control, then peel off and extinguish. Documented in the 415th NFS War Diary archived at NARA."
       },
       {
-        "date": "January 2, 1945",
+        "local": "January 2, 1945",
         "event": "AP correspondent Robert C. Wilson publishes the first public report in the New York Times, making 'foo fighters' known to the general public."
       },
       {
-        "date": "January 30, 1945",
+        "local": "January 30, 1945",
         "event": "Capt. Ringwald submits his formal 14-incident report through XII TAC to SHAEF. SHAEF queries the British Air Ministry."
       },
       {
-        "date": "March 13, 1945",
+        "local": "March 13, 1945",
         "event": "British Air Ministry formally responds to SHAEF: acknowledges similar Bomber Command reports; suggests flak rockets as most probable explanation; concludes no definitive satisfactory explanation can be given."
       },
       {
-        "date": "April 15, 1945",
+        "local": "April 15, 1945",
         "event": "B-29 crews over Tokyo and Kawasaki engage luminous objects with .50 caliber guns during bombing raids. Tactical mission reports document that objects were hit and one broke apart. Physical material was never recovered."
       },
       {
-        "date": "May 1945",
+        "local": "May 1945",
         "event": "European Theater reports effectively cease with Germany's surrender. The correlation between the phenomenon and active combat operations becomes an analytical data point."
       },
       {
-        "date": "1945",
+        "local": "1945",
         "event": "Allied CIOS teams sweep captured German research facilities and interrogate engineers. No program capable of producing the observed objects is found. Postwar interrogation of German and Japanese pilots confirms Axis aircrews also reported the same phenomenon - eliminating the enemy-weapon hypothesis entirely."
       },
       {
-        "date": "1953",
+        "local": "1953",
         "event": "CIA Robertson Panel reviews wartime reports as part of its broader UFO assessment. Considers electrostatic and electromagnetic explanations. Reaches no official conclusion on the wartime phenomenon as a class."
       },
       {
-        "date": "2024",
+        "local": "2024",
         "event": "Harvard and Montana State University researchers propose antiaircraft flak plasma as a partial naturalistic explanation for a subset of European sightings. Researchers acknowledge the hypothesis does not account for all documented behavior, particularly sustained following behavior and extreme departure accelerations."
       }
     ],
