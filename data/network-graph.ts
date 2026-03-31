@@ -1331,8 +1331,8 @@ export const graphData: GraphData = {
     { source: 'charles-hall', target: 'donna-hare',     label: 'both emerged through the Paola Harris and Michael Salla exopolitics research network in 2003-2004 as new insider witnesses; both describe classified government awareness of non-human entities' },
 
     // Nick Cook connections
-    { source: 'nick-cook',    target: 'hal-puthoff',    label: "Cook's primary named expert source in The Hunt for Zero Point; Puthoff's zero-point energy theory provides the physics framework for Cook's classified antigravity program thesis" },
-    { source: 'nick-cook',    target: 'bob-lazar',      label: "Lazar's claims about element 115 and gravity wave propulsion at S-4 overlap directly with the classified antigravity program thesis Cook documents; Cook's Jane's credentials provided mainstream credibility to the wider technology suppression discourse" },
-    { source: 'nick-cook',    target: 'robert-bigelow', label: 'Bigelow awarded Cook a $20,000 prize in his consciousness research essay competition and subsequently invited Cook to become a director of the Bigelow Institute for Consciousness Studies' },
+    { source: 'nick-cook', target: 'hal-puthoff',       label: 'Puthoff served as Cook\'s primary physics expert for The Hunt for Zero Point, providing the zero-point energy theoretical framework for Cook\'s antigravity research thesis' },
+    { source: 'nick-cook', target: 'robert-bigelow',    label: 'Bigelow invited Cook to join the BICS board of directors after Cook won a $20,000 prize in the 2020-2021 BICS consciousness essay competition' },
+    { source: 'nick-cook', target: 'bob-lazar',         label: 'both represent the intersection of classified Nevada propulsion research claims - Cook through journalistic investigation of 1950s electrogravitics programs, Lazar through direct whistleblower testimony about S-4 gravity-wave propulsion' },
   ],
 };

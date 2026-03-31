@@ -1517,6 +1517,32 @@ const Sources: NextPage = () => {
             </p>
           </div>
 
+          {/* Foo Fighters WWII */}
+          <SourceCard
+            name="UFOs Before Roswell: European Foo-Fighters 1940-1945 - Graeme Rendall and Sean Cahill (2021)"
+            url="https://www.amazon.com/UFOs-Before-Roswell-Foo-Fighters-1940-1945/dp/B09DN3BV72"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Most comprehensive primary-record-based modern treatment of WWII foo fighter reports. Draws on military archives from multiple national repositories including NARA. Primary reference for unit-level incident documentation."
+            notes="Used for: Foo Fighters WWII."
+          />
+          <SourceCard
+            name="The Foo Fighter Mystery - Jo Chamberlin, American Legion Magazine (1945)"
+            url="https://www.project1947.com/articles/foochamberlin.htm"
+            type="Contemporary Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="First detailed magazine account of the phenomenon published while it was ongoing, based on direct interviews with 415th Night Fighter Squadron pilots including the McFalls/Baker Hagenau incident. Written contemporaneously, not retrospectively."
+            notes="Used for: Foo Fighters WWII."
+          />
+          <SourceCard
+            name="University of Wyoming Foo Fighter Files - American Heritage Center"
+            url="https://digitalcollections.uwyo.edu/ahcpublic/UFO/Foo%20Fighter%20Files_ah12722.pdf"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Compiled research catalog of unconventional aerial phenomena from WWII primary military records across multiple national archives. The most systematic archival aggregation of foo fighter primary sources."
+            notes="Used for: Foo Fighters WWII."
+          />
+
           <SourceCard
             name="National Archives - Project Blue Book Records"
             url="https://www.archives.gov/research/military/air-force/ufos"
