@@ -2679,5 +2679,28 @@
     "data_file": "dan-sherman.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "charles-hall",
+    "name": "Charles Hall",
+    "aliases": [
+      "Charles James Hall"
+    ],
+    "role": "USAF Weather Observer, Indian Springs Gunnery Ranges",
+    "period": "1964-1968",
+    "affiliation": "U.S. Air Force / Nellis AFB",
+    "summary": "U.S. Air Force weather observer with an M.A. in Applied Nuclear Physics who claims sustained encounters with tall, chalk-white humanoid beings he calls the 'Tall Whites' at the isolated Nellis gunnery ranges near Indian Springs, Nevada from 1965 to 1967. His six-volume Millennial Hospitality series (2002-2020) presents these events as fictionalized memoir. Verifiable USAF service record at the stated location; no physical evidence or independent corroboration exists. Died November 2021.",
+    "status": "detailed",
+    "tags": [
+      "usaf",
+      "contactee",
+      "nevada",
+      "nellis",
+      "tall-whites",
+      "insider"
+    ],
+    "data_file": "charles-hall.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

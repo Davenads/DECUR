@@ -737,6 +737,32 @@ const Sources: NextPage = () => {
             notes="Used for: Dan Sherman."
           />
 
+          {/* Charles Hall */}
+          <SourceCard
+            name="Millennial Hospitality Vol. I - Charles James Hall (2002)"
+            url="https://www.amazon.com/Millennial-Hospitality-Charles-James-Hall/dp/1403368740"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary source - first volume of Hall's six-book Millennial Hospitality series presenting his 1965-1967 Indian Springs/Nellis Tall White encounters as fictionalized memoir."
+            notes="Used for: Charles Hall."
+          />
+          <SourceCard
+            name="Paola Harris: Interview of the Month - Charles Hall and the Tall Whites (2003)"
+            url="https://paolaharris.com/paola-harris-interviews/interview-of-the-month-insider-charles-hall-and-the-tall-whites"
+            type="Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="First major investigative interview with Hall, conducted July 2003. Closest to a primary investigative source in the public record; Harris also commissioned the first artistic rendering of the Tall Whites."
+            notes="Used for: Charles Hall."
+          />
+          <SourceCard
+            name="Walking with the Tall Whites (2020) - Documentary Film"
+            url="https://www.amazon.com/Walking-Tall-Whites-Charles-Hall/dp/B084WSDBJK"
+            type="Documentary Film"
+            typeColor="bg-blue-100 text-blue-700"
+            description="82-minute documentary featuring Hall and Marie-Therese Hall. Released March 5, 2020. Reportedly reached approximately 750,000 streaming views."
+            notes="Used for: Charles Hall."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

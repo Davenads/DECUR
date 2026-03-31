@@ -1324,5 +1324,10 @@ export const graphData: GraphData = {
     { source: 'dan-sherman', target: 'gary-mckinnon',   label: 'both claimed evidence of classified ET-related programs within NSA/DoD infrastructure; Sherman from the inside as an alleged IC, McKinnon through external access' },
     { source: 'dan-sherman', target: 'david-grusch',    label: "Grusch's 2023 congressional claims about hidden non-human intelligence programs represent the institutional-era parallel to Sherman's 1990s individual account of tiered above-black programs" },
     { source: 'dan-sherman', target: 'clifford-stone',  label: 'both are USAF veterans claiming direct operational involvement in classified extraterrestrial-related programs that fall outside standard oversight; Stone on crash retrieval, Sherman on communications' },
+
+    // Charles Hall connections
+    { source: 'charles-hall', target: 'bob-lazar',      label: 'both describe firsthand claimed contact with classified ET-related activities in the Nevada desert - Lazar at S-4/Area 51, Hall at Indian Springs/Nellis ranges; both allege government-ET cooperation without physical corroboration' },
+    { source: 'charles-hall', target: 'charles-halt',   label: "Hall's Nellis encounters and Halt's Rendlesham Forest case are the two most-cited USAF-personnel ET encounter accounts - both have verifiable service records at the stated locations and both lack physical corroboration" },
+    { source: 'charles-hall', target: 'donna-hare',     label: 'both emerged through the Paola Harris and Michael Salla exopolitics research network in 2003-2004 as new insider witnesses; both describe classified government awareness of non-human entities' },
   ],
 };
