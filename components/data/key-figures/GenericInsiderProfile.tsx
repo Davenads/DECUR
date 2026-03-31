@@ -535,7 +535,6 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
         return (
           <SharedAssessmentTab
             credibility={credibility}
-            sources={sources}
             methodologyNote="This section presents documented arguments for and against this figure's credibility based on verifiable institutional responses, journalistic findings, and official positions. DECUR does not adjudicate these claims; they are presented for methodological transparency."
           />
         );
