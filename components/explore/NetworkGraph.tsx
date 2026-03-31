@@ -63,13 +63,14 @@ const DEEP_LINK_MAP: Record<string, string> = {
 
 // Derive person nodes from the insiders index, merging with manually-defined nodes
 const existingIds = new Set(graphData.nodes.map(n => n.id));
-const derivedPersonNodes: GraphNode[] = (insidersIndex as Array<{ id: string; name: string; includeInExplore?: boolean }>)
+const derivedPersonNodes: GraphNode[] = (insidersIndex as Array<{ id: string; name: string; aliases?: string[]; includeInExplore?: boolean }>)
   .filter(e => !existingIds.has(e.id))
   .map(e => ({
     id: e.id,
     name: e.name,
     type: 'person' as NodeType,
     val: VAL_OVERRIDES[e.id] ?? (e.includeInExplore ? 4 : 2),
+    aliases: e.aliases ?? [],
   }));
 
 const mergedGraphData = {
@@ -371,7 +372,10 @@ const NetworkGraph: FC = () => {
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
     const q = searchQuery.toLowerCase();
-    return filteredNodes.filter(n => n.name.toLowerCase().includes(q)).slice(0, 6);
+    return filteredNodes.filter(n =>
+      n.name.toLowerCase().includes(q) ||
+      (n.aliases?.some(a => a.toLowerCase().includes(q)) ?? false)
+    ).slice(0, 6);
   }, [searchQuery, filteredNodes]);
 
   // Search result focus: selects the node and zooms to it

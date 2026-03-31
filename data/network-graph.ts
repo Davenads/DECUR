@@ -18,6 +18,7 @@ export interface GraphNode {
   type: NodeType;
   group?: NodeGroup; // optional — auto-derived person nodes may omit this
   val?: number; // relative size weight
+  aliases?: string[]; // alternate names for search matching
   // injected at runtime by force-graph
   x?: number;
   y?: number;
