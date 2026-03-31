@@ -47,7 +47,8 @@ next-env.d.ts
 .cache
 nul
 
-#planning
+# Planning documents (local only, never committed)
+/.plans/
 RESTRUCTURING-PLAN.md
 deployment-plan.md
 scripts/sync/SYNC-PIPELINE.md
@@ -77,25 +78,11 @@ aod-audit-cheatsheet.txt
 # Script output artifacts (generated, not source)
 /scripts/output/
 
-# Local planning notes
-case-enrichment.md
-outreach-plan.md
-weekly-monitor-plan.md
-
 # Dev server log
 .dev-server.log
-restart-dev.js
-reddit-posting-schedule.md
-askreddit-karma-system.md
-outreach-channels.md
 
 # Sparks extraction intermediate output
 data/blue-book-index-enriched.json
-
-# Planning documents
-contractor-pages-plan.md
-alias-search-plan.md
-cases-modular-migration-plan.md
 
 # Root-level ad-hoc Playwright debug scripts
 pw-*.js
