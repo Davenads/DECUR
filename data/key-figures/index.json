@@ -2702,5 +2702,27 @@
     "data_file": "charles-hall.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "nick-cook",
+    "name": "Nick Cook",
+    "aliases": [
+      "Nicholas Cook"
+    ],
+    "role": "Aviation Editor, Jane's Defence Weekly",
+    "period": "1987-2001",
+    "affiliation": "Jane's Defence Weekly",
+    "summary": "British aviation journalist and four-time Royal Aeronautical Society award winner who served as Aviation Editor of Jane's Defence Weekly for nearly 15 years. His 2001 book 'The Hunt for Zero Point' documented a decade-long investigation into classified US antigravity research, electrogravitics, and the alleged absorption of Nazi advanced propulsion technology into post-war black programs. Later became a director of Robert Bigelow's Institute for Consciousness Studies.",
+    "status": "detailed",
+    "tags": [
+      "journalist",
+      "antigravity",
+      "aerospace",
+      "classified-programs",
+      "uk"
+    ],
+    "data_file": "nick-cook.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]

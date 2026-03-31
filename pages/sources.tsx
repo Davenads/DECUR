@@ -763,6 +763,24 @@ const Sources: NextPage = () => {
             notes="Used for: Charles Hall."
           />
 
+          {/* Nick Cook */}
+          <SourceCard
+            name="The Hunt for Zero Point - Nick Cook (Broadway Books, 2002)"
+            url="https://www.penguinrandomhouse.com/books/31177/the-hunt-for-zero-point-by-nick-cook/"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary source. Cook's decade-long investigation into classified US antigravity research programs, T. Townsend Brown's electrogravitics experiments, and the alleged absorption of Nazi advanced propulsion research into post-war black programs. US ISBN: 978-0-7679-0627-2."
+            notes="Used for: Nick Cook."
+          />
+          <SourceCard
+            name="Nick Cook - Author Site (nickcook.works)"
+            url="https://www.nickcook.works/about-nick-cook/"
+            type="Primary Source"
+            typeColor="bg-green-100 text-green-700"
+            description="Cook's own biographical account confirming career timeline at Jane's Defence Weekly, Dynamixx founding (2008), NickCook.Works launch (2019), Royal Aeronautical Society awards, and BICS directorship."
+            notes="Used for: Nick Cook."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

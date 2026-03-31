@@ -1329,5 +1329,10 @@ export const graphData: GraphData = {
     { source: 'charles-hall', target: 'bob-lazar',      label: 'both describe firsthand claimed contact with classified ET-related activities in the Nevada desert - Lazar at S-4/Area 51, Hall at Indian Springs/Nellis ranges; both allege government-ET cooperation without physical corroboration' },
     { source: 'charles-hall', target: 'charles-halt',   label: "Hall's Nellis encounters and Halt's Rendlesham Forest case are the two most-cited USAF-personnel ET encounter accounts - both have verifiable service records at the stated locations and both lack physical corroboration" },
     { source: 'charles-hall', target: 'donna-hare',     label: 'both emerged through the Paola Harris and Michael Salla exopolitics research network in 2003-2004 as new insider witnesses; both describe classified government awareness of non-human entities' },
+
+    // Nick Cook connections
+    { source: 'nick-cook',    target: 'hal-puthoff',    label: "Cook's primary named expert source in The Hunt for Zero Point; Puthoff's zero-point energy theory provides the physics framework for Cook's classified antigravity program thesis" },
+    { source: 'nick-cook',    target: 'bob-lazar',      label: "Lazar's claims about element 115 and gravity wave propulsion at S-4 overlap directly with the classified antigravity program thesis Cook documents; Cook's Jane's credentials provided mainstream credibility to the wider technology suppression discourse" },
+    { source: 'nick-cook',    target: 'robert-bigelow', label: 'Bigelow awarded Cook a $20,000 prize in his consciousness research essay competition and subsequently invited Cook to become a director of the Bigelow Institute for Consciousness Studies' },
   ],
 };
