@@ -1102,7 +1102,7 @@ export interface ProgramSource {
 export interface ProgramEntry {
   id: string;
   name: string;
-  type: 'project' | 'organization';
+  type: 'project' | 'organization' | 'study';
   status: 'active' | 'defunct' | 'classified' | 'unknown';
   active_period: string;
   parent_org: string;

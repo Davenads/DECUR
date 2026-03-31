@@ -16,6 +16,7 @@ const STATUS_CONFIG: Record<ProgramEntry['status'], { label: string; classes: st
 const TYPE_CONFIG: Record<ProgramEntry['type'], string> = {
   'project':      'Project',
   'organization': 'Organization',
+  'study':        'Study',
 };
 
 /* ─── Tabs ──────────────────────────────────────────────────────── */

@@ -5,7 +5,7 @@ import { ps } from './shared/profileStyles';
 
 type SortMode = 'alpha' | 'type';
 
-const TYPE_ORDER: ProgramEntry['type'][] = ['project', 'organization'];
+const TYPE_ORDER: ProgramEntry['type'][] = ['project', 'organization', 'study'];
 
 const STATUS_BADGE: Record<ProgramEntry['status'], string> = {
   'active':     'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300',
