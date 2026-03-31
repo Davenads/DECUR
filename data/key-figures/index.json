@@ -1765,5 +1765,19 @@
     "data_file": "robert-powell.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "alexander-wendt",
+    "name": "Dr. Alexander Wendt",
+    "aliases": ["Alexander E. Wendt", "Alex Wendt"],
+    "role": "Mershon Professor of International Security, Ohio State University",
+    "period": "2008-present (UAP engagement)",
+    "affiliation": "Ohio State University",
+    "summary": "The most influential International Relations scholar of the past 20 years (2017 TRIP survey), ranked by peers above Kissinger and Mearsheimer. Co-authored 'Sovereignty and the UFO' (Political Theory, 2008) - the first peer-reviewed political science article treating UAP as a governance problem - arguing the UFO taboo is structurally produced by anthropocentric sovereignty rather than evidence-based.",
+    "status": "detailed",
+    "tags": ["scientist", "political-science", "international-relations", "sovereignty", "sol-foundation"],
+    "data_file": "alexander-wendt.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

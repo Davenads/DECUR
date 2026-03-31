@@ -1,0 +1,176 @@
+{
+  "profile": {
+    "id": "alexander-wendt",
+    "name": "Dr. Alexander Wendt",
+    "aliases": ["Alexander E. Wendt", "Alex Wendt"],
+    "born": "1958 - Mainz, Germany",
+    "died": null,
+    "roles": [
+      "Ralph D. Mershon Professor of International Security, Ohio State University",
+      "Author - Sovereignty and the UFO (Political Theory, 2008)",
+      "Contributing Author - UFOs: Generals, Pilots, and Government Officials Go on the Record (2010)"
+    ],
+    "service_period": "1999-present",
+    "organizations": [
+      "Ohio State University",
+      "Sol Foundation"
+    ],
+    "clearance": null,
+    "summary": "The most influential International Relations scholar of the past 20 years (2017 TRIP survey of 1,400 IR scholars), with 50,000+ citations for constructivist IR theory. Co-authored the first peer-reviewed article in a major political science journal to treat UFOs as a governance problem, arguing the UFO taboo is structurally produced by anthropocentric sovereignty assumptions rather than evidence-based. Currently writing a book on UAP and human security.",
+    "education": [
+      "PhD, Political Science, University of Minnesota (1989)",
+      "BA, University of Antwerp, Belgium"
+    ],
+    "early_career": [
+      "Developed constructivist theory of international relations at Yale and Dartmouth before joining Ohio State",
+      "Published 'Social Theory of International Politics' (Cambridge University Press, 1999), which won the International Studies Association Book of the Decade award and became a foundational text in IR theory"
+    ],
+    "key_events": [
+      {
+        "year": "1999",
+        "event": "Published 'Social Theory of International Politics' (Cambridge University Press), establishing Wendt as a leading theorist of constructivist international relations. The book won the ISA Book of the Decade award and accumulated 50,000+ citations, making Wendt the most-cited IR theorist of his generation."
+      },
+      {
+        "year": "2008",
+        "event": "Co-authored 'Sovereignty and the UFO' in Political Theory (36:4, pp. 607-633) with Raymond Duvall (University of Minnesota). The article became the first peer-reviewed paper in a major political science journal to address UFOs as a governance problem. Its central argument: the UFO taboo is structurally produced by modern anthropocentric sovereignty, which cannot acknowledge the possibility of non-human political agency without destabilizing its own foundational claims."
+      },
+      {
+        "year": "2010",
+        "event": "Contributed a chapter to Leslie Kean's 'UFOs: Generals, Pilots, and Government Officials Go on the Record' (Harmony Books), providing the political theory framework for why government officials systematically fail to acknowledge well-documented UAP evidence."
+      },
+      {
+        "year": "2017",
+        "event": "Ranked the most influential International Relations scholar of the past 20 years in the Teaching, Research, and International Policy (TRIP) survey of 1,400 IR scholars. This recognition validated his standing as a mainstream academic of the highest tier despite his unconventional engagement with UAP."
+      },
+      {
+        "year": "2021",
+        "event": "Named Ralph D. Mershon Professor of International Security at Ohio State University. Began developing a book-length treatment of UAP and human security, expanding the 2008 sovereignty argument into a full theoretical framework."
+      },
+      {
+        "year": "Nov 2024",
+        "event": "Participated remotely in the Sol Foundation 2024 Symposium in San Francisco, presenting his political theory framework for understanding the structural dynamics of UAP non-disclosure to an audience of scientists, intelligence professionals, and policymakers."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist and UAP researcher",
+      "relationship": "Wendt contributed the political theory framework chapter to Kean's 'UFOs: Generals, Pilots, and Government Officials Go on the Record' (2010). Kean's evidentiary journalism and Wendt's structural political analysis represent complementary approaches to the same institutional silence problem."
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Immunologist, Sol Foundation founder",
+      "relationship": "Shared Sol Foundation involvement; Wendt presented at the 2024 symposium. Nolan's empirical biology-based approach and Wendt's political theory framework represent complementary disciplinary engagements with the UAP problem."
+    },
+    {
+      "id": "jeffrey-kripal",
+      "name": "Dr. Jeffrey Kripal",
+      "role": "Comparative religion scholar, Rice University",
+      "relationship": "Colleagues in the academic humanities engagement with UAP; both present at Sol Foundation events and both argue from within elite institutions that extraordinary phenomena require new conceptual frameworks rather than dismissal."
+    },
+    {
+      "id": "daniel-sheehan",
+      "name": "Daniel Sheehan",
+      "role": "Constitutional attorney, UAP disclosure advocate",
+      "relationship": "Both approach UAP disclosure as a structural political and legal problem rather than primarily a scientific one. Sheehan's legal framework and Wendt's sovereignty theory address the same question - why governments cannot acknowledge what they know - from complementary angles."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2008",
+      "type": "academic-paper",
+      "title": "Sovereignty and the UFO",
+      "outlet": "Political Theory (36:4, pp. 607-633)",
+      "notes": "Co-authored with Raymond Duvall. The first peer-reviewed article in a major political science journal to treat UFOs as a governance problem. Argues the UFO taboo is structurally produced by anthropocentric sovereignty assumptions - the state cannot acknowledge non-human political agency without undermining its own legitimacy claims. DOI: 10.1177/0090591708317902."
+    },
+    {
+      "date": "2010",
+      "type": "written",
+      "title": "Contributing chapter - UFOs: Generals, Pilots, and Government Officials Go on the Record",
+      "outlet": "Harmony Books (Leslie Kean)",
+      "notes": "Contributed political theory framework explaining why government officials systematically fail to acknowledge well-documented UAP evidence despite extensive firsthand testimony from credible witnesses."
+    },
+    {
+      "date": "Nov 2024",
+      "type": "symposium",
+      "title": "Sol Foundation 2024 Symposium - UAP and Political Sovereignty",
+      "outlet": "Sol Foundation, San Francisco (remote)",
+      "notes": "Presented political theory analysis of UAP non-disclosure dynamics to an audience of scientists, intelligence professionals, and policymakers. Argued that structural features of state sovereignty, not merely bureaucratic inertia, produce systematic UAP ignorance."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sovereignty and the UFO - Political Theory (2008)",
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/0090591708317902",
+      "type": "Academic Paper",
+      "notes": "Foundational peer-reviewed political science UAP analysis; co-authored with Raymond Duvall"
+    },
+    {
+      "title": "Alexander Wendt - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alexander_Wendt",
+      "type": "Reference",
+      "notes": "Career overview, TRIP survey ranking, and publication record"
+    },
+    {
+      "title": "Alexander Wendt - Ohio State Political Science",
+      "url": "https://polisci.osu.edu/people/wendt.23",
+      "type": "Organization Profile",
+      "notes": "Faculty biography and current research overview"
+    },
+    {
+      "title": "UFOs: Generals, Pilots, and Government Officials Go on the Record - Leslie Kean (2010)",
+      "url": "https://www.amazon.com/UFOs-Generals-Pilots-Government-Officials/dp/0307717089",
+      "type": "Published Book",
+      "notes": "Book containing Wendt's contributing chapter on political sovereignty and UAP non-disclosure"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The UFO taboo in modern governments is not an accidental epistemic failure but a structurally produced ignorance embedded in anthropocentric sovereignty - the state cannot acknowledge non-human political agency without destabilizing its monopoly on legitimate force and its claim to represent the highest form of rational authority.",
+      "category": "Institutional Behavior",
+      "status": "unverified",
+      "source": "Sovereignty and the UFO, Political Theory 36:4 (2008)"
+    },
+    {
+      "claim": "The absence of official UAP acknowledgment is itself significant data: it constitutes active political work to maintain a particular worldview, not a neutral scientific verdict - and political scientists are better positioned than scientists alone to explain this absence.",
+      "category": "Institutional Behavior",
+      "status": "partially-verified",
+      "source": "Sovereignty and the UFO (2008); Leslie Kean contributing chapter (2010)"
+    },
+    {
+      "claim": "UAP phenomena, if confirmed, would constitute a challenge to human security in the international relations sense - not primarily a military threat but a destabilization of the anthropocentric assumptions underlying all modern political institutions.",
+      "category": "Institutional Behavior",
+      "status": "unverified",
+      "source": "Sol Foundation 2024 Symposium; book in progress"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Contributed political theory chapter to Kean's 2010 book; complementary approaches to institutional UAP silence.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "garry-nolan",
+      "node_label": "Dr. Garry Nolan",
+      "relationship": "Shared Sol Foundation 2024 symposium; complementary scientific and political theory perspectives.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "jeffrey-kripal",
+      "node_label": "Dr. Jeffrey Kripal",
+      "relationship": "Colleagues in academic humanities engagement with UAP at Sol Foundation events.",
+      "connection_type": "professional"
+    }
+  ]
+}

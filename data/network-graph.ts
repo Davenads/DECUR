@@ -1257,5 +1257,11 @@ export const graphData: GraphData = {
     { source: 'robert-powell', target: 'kevin-knuth',   label: 'co-authors on 2019 Entropy UAP physics paper' },
     { source: 'robert-powell', target: 'ryan-graves',   label: 'both work at intersection of pilot testimony and technical UAP analysis' },
     { source: 'robert-powell', target: 'leslie-kean',   label: 'parallel serious-evidence UAP documentation efforts; co-authored UFOs and Government (2012)' },
+
+    // Alexander Wendt connections
+    { source: 'alexander-wendt', target: 'leslie-kean',    label: 'contributing chapter in UFOs: Generals, Pilots, and Government Officials (2010)' },
+    { source: 'alexander-wendt', target: 'garry-nolan',    label: 'Sol Foundation 2024 symposium; complementary scientific and political theory perspectives' },
+    { source: 'alexander-wendt', target: 'jeffrey-kripal', label: 'colleagues in academic humanities engagement with UAP; both at Sol Foundation' },
+    { source: 'alexander-wendt', target: 'daniel-sheehan', label: 'both analyze UAP disclosure as a structural political and legal problem' },
   ],
 };

@@ -455,6 +455,16 @@ const Sources: NextPage = () => {
             notes="Used for: Robert Powell."
           />
 
+          {/* Alexander Wendt */}
+          <SourceCard
+            name="Sovereignty and the UFO - Political Theory (Wendt & Duvall, 2008)"
+            url="https://journals.sagepub.com/doi/abs/10.1177/0090591708317902"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="The first peer-reviewed article in a major political science journal to treat UFOs as a governance problem. Argues the UFO taboo is structurally produced by anthropocentric sovereignty assumptions. Co-authored with Raymond Duvall."
+            notes="Used for: Dr. Alexander Wendt."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

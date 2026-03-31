@@ -110,6 +110,7 @@ import davidSpergelData from './david-spergel.json';
 import hakanKayalData from './hakan-kayal.json';
 import jeffreyKripalData from './jeffrey-kripal.json';
 import robertPowellData from './robert-powell.json';
+import alexanderWendtData from './alexander-wendt.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -211,4 +212,5 @@ export const insiderRegistry: Record<string, any> = {
   'hakan-kayal': hakanKayalData,
   'jeffrey-kripal': jeffreyKripalData,
   'robert-powell': robertPowellData,
+  'alexander-wendt': alexanderWendtData,
 };
