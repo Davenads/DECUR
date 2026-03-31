@@ -587,6 +587,24 @@ const Sources: NextPage = () => {
             notes="Used for: Oscar Santa Maria Huerta."
           />
 
+          {/* Parviz Jafari */}
+          <SourceCard
+            name="1976 Tehran UFO Incident - Wikipedia"
+            url="https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Comprehensive overview of the September 19, 1976 incident including the DIA cable details, Jafari's F-4 engagement, weapons failure, and the distribution of the report to the White House, Secretary of State, Joint Chiefs, NSA, and CIA."
+            notes="Used for: Parviz Jafari."
+          />
+          <SourceCard
+            name="The Vault Files: 1976 Iran Incident - The Black Vault"
+            url="https://www.theblackvault.com/casefiles/the-1976-iran-incident/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="FOIA-obtained DIA evaluation cable and supporting documentation. Primary government record confirming the incident and its 'outstanding' source rating."
+            notes="Used for: Parviz Jafari."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

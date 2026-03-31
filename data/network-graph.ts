@@ -1289,5 +1289,10 @@ export const graphData: GraphData = {
     { source: 'oscar-santa-maria-huerta', target: 'leslie-kean',   label: 'Kean published the benchmark English-language account of the 1980 La Joya engagement in UFOs: Generals, Pilots and Government Officials (2010)' },
     { source: 'oscar-santa-maria-huerta', target: 'ryan-graves',   label: 'both are military pilots with documented multi-witness UAP encounters; Graves has cited international cases like Huerta\'s' },
     { source: 'oscar-santa-maria-huerta', target: 'david-fravor',  label: 'parallel military pilot UAP engagement cases; both represent benchmark credible pilot testimony' },
+
+    // Parviz Jafari connections
+    { source: 'parviz-jafari', target: 'leslie-kean',              label: 'Kean organised the 2007 National Press Club event where Jafari testified; featured his case in UFOs: Generals, Pilots and Government Officials (2010)' },
+    { source: 'parviz-jafari', target: 'oscar-santa-maria-huerta', label: 'both represent benchmark international military pilot UAP cases with weapons system effects; both testified at major US disclosure events' },
+    { source: 'parviz-jafari', target: 'david-fravor',             label: 'Tehran 1976 and Nimitz 2004 are the two most-cited multi-sensor military UAP engagement cases; DIA and USN records both confirm respective incidents' },
   ],
 };

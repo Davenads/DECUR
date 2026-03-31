@@ -1,0 +1,178 @@
+{
+  "profile": {
+    "id": "parviz-jafari",
+    "name": "Parviz Jafari",
+    "aliases": ["General Parviz Jafari", "Brigadier General Parviz Jafari", "Major Parviz Jafari"],
+    "born": "circa 1940 - Iran",
+    "died": null,
+    "roles": [
+      "Brigadier General, Imperial Iranian Air Force (ret.)",
+      "Squadron Commander, F-4 Phantom II Intercept, September 1976"
+    ],
+    "service_period": "circa 1960s-1990s (Imperial Iranian Air Force)",
+    "organizations": ["Imperial Iranian Air Force (IIAF)"],
+    "clearance": null,
+    "summary": "Iranian Air Force Brigadier General (retired) who on September 19, 1976, as a squadron commander flying an F-4 Phantom II over Tehran, acquired radar lock on a UAP the size of a Boeing KC-135 tanker. When he attempted to fire an AIM-9 heat-seeking missile, all weapons control and communications failed. A US Defense Intelligence Agency cable documenting the incident was distributed to the White House, Secretary of State, Joint Chiefs of Staff, NSA, and CIA, and is one of the most officially corroborated military UAP encounters on record. The DIA paper rated the report as an 'outstanding' source of UAP-related data.",
+    "education": [
+      "Imperial Iranian Air Force Academy - pilot and tactical combat training",
+      "Qualified on F-4 Phantom II; rose to squadron commander rank"
+    ],
+    "early_career": [
+      "Commissioned into the Imperial Iranian Air Force and trained on the F-4 Phantom II, one of the most capable fighter aircraft of the era",
+      "Rose to the rank of squadron commander, indicating a distinguished operational and leadership record before the September 1976 incident"
+    ],
+    "key_events": [
+      {
+        "year": "Sep 1976",
+        "event": "September 19, 1976 (early morning) - Iranian Air Force scrambles a first F-4 from Shahrokhi Air Force Base after multiple civilian reports of a bright, manoeuvring object over Tehran. That aircraft loses all instruments and communications when approaching the object and is forced to turn back. Jafari, as squadron commander, is scrambled in a second F-4 with First Lieutenant Jalal Damirian as weapons officer."
+      },
+      {
+        "year": "Sep 1976",
+        "event": "Jafari acquires radar lock on the object at 27 nautical miles. The return is comparable in size to a Boeing KC-135 Stratotanker. As he closes, the object is described as 'flashing with intense red, green, orange and blue lights so bright that I was not able to see its body.' It paces his aircraft, apparently tracking his approach."
+      },
+      {
+        "year": "Sep 1976",
+        "event": "Jafari attempts to launch an AIM-9 heat-seeking missile. At the moment of weapons activation, all weapons control and communications systems aboard the F-4 shut down completely. When he breaks off his attack pass, the systems restore. He attempts a second attack and the systems again fail. A smaller bright object then detaches from the primary and flies directly toward his aircraft - Jafari dives to evade. The secondary object decelerates, reverses, and returns to the primary craft."
+      },
+      {
+        "year": "Sep 1976",
+        "event": "A third smaller object departs the primary and descends to the ground near Tehran, radiating intense light. It lands gently. Ground search teams dispatched to the landing site detect a heightened electromagnetic signal from a specific location but find no physical object. Jafari and Damirian return to base. Both pilots are interviewed the following day by the Iranian Air Force; US Military Assistance and Advisory Group (MAAG) officer Lt. Col. Olin Mooy sits in on Jafari's debriefing."
+      },
+      {
+        "year": "Sep 1976",
+        "event": "The US Defense Intelligence Agency produces a four-page evaluation cable distributed to the White House, Secretary of State, Joint Chiefs of Staff, NSA, and CIA. The cable rates the source and information at the highest quality level - described as 'an outstanding report' - and notes the incident meets the criteria for a genuine UAP sighting: multiple witnesses, instrumentation effects, radar confirmation, and the objects' ability to interfere with aircraft weapons systems."
+      },
+      {
+        "year": "Nov 2007",
+        "event": "Jafari testifies at a major international press conference at the National Press Club in Washington DC organised by investigative journalist Leslie Kean. Standing alongside former military and government officials from multiple nations, he presents the full account of the 1976 engagement to international media and urges governments to disclose what they know about UAP. His testimony remains one of the most detailed and credible first-person military UAP accounts in the public record."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "UAP investigative journalist and author",
+      "relationship": "Kean organised the November 2007 National Press Club event where Jafari testified publicly for the first time in Washington DC. She also featured the 1976 Tehran case prominently in her 2010 book 'UFOs: Generals, Pilots and Government Officials Go on the Record.'"
+    },
+    {
+      "id": "oscar-santa-maria-huerta",
+      "name": "Oscar Santa Maria Huerta",
+      "role": "Peruvian Air Force pilot, La Joya 1980 UAP engagement",
+      "relationship": "Both Jafari and Huerta represent benchmark international military pilot UAP cases where weapons systems were affected or rendered ineffective. Both testified at major US disclosure events alongside international military colleagues in the 2000s and 2010s."
+    },
+    {
+      "id": "david-fravor",
+      "name": "David Fravor",
+      "role": "US Navy Commander, 2004 Nimitz UAP encounter",
+      "relationship": "Fravor's 2004 Nimitz encounter shares key characteristics with Jafari's 1976 experience: a highly trained military pilot, documented radar track, and an object displaying flight characteristics inconsistent with known aircraft. The DIA and US Navy cases are frequently compared as the strongest multi-sensor military UAP records."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Sep 1976",
+      "type": "interview",
+      "title": "Iranian Air Force Debriefing - Post-Encounter",
+      "outlet": "Imperial Iranian Air Force / US MAAG (Lt. Col. Olin Mooy)",
+      "notes": "Primary debrief the day after the encounter. US MAAG observer's presence led directly to the DIA cable that made the incident part of the official US intelligence record."
+    },
+    {
+      "date": "Nov 2007",
+      "type": "speech",
+      "title": "International UAP Press Conference - National Press Club",
+      "outlet": "National Press Club, Washington DC (organised by Leslie Kean)",
+      "notes": "Jafari's first major public testimony in the United States. Presented the complete 1976 engagement account alongside former officials from multiple nations. His statement - that the craft was under intelligent control and far beyond human technology - was carried internationally."
+    },
+    {
+      "date": "2010",
+      "type": "written",
+      "title": "UFOs: Generals, Pilots and Government Officials Go on the Record - Chapter Contribution",
+      "outlet": "Harmony Books (Leslie Kean, ed.)",
+      "notes": "Written account of the 1976 Tehran incident published in Kean's landmark book, providing one of the most detailed and widely read English-language records of the engagement."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1976 Tehran UFO Incident - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident",
+      "type": "Research Archive",
+      "notes": "Comprehensive overview of the incident with DIA cable details and Jafari's role"
+    },
+    {
+      "title": "The Vault Files: 1976 Iran Incident - The Black Vault",
+      "url": "https://www.theblackvault.com/casefiles/the-1976-iran-incident/",
+      "type": "Government Document",
+      "notes": "FOIA-obtained DIA cable and supporting documentation"
+    },
+    {
+      "title": "1976 Tehran UFO Incident - The UFO Database",
+      "url": "https://theufodatabase.com/incidents/1976-tehran-ufo-incident",
+      "type": "Research Archive",
+      "notes": "Structured case record with radar, witness, and instrumentation data"
+    },
+    {
+      "title": "Parviz Jafari - The UFO Database",
+      "url": "https://theufodatabase.com/people/parviz-jafari",
+      "type": "Research Archive",
+      "notes": "Biographical profile and primary source index for Jafari"
+    },
+    {
+      "title": "Tehran Incident - Enigma Labs",
+      "url": "https://enigmalabs.io/library/931061e0-3eb3-497f-8535-a62aea968217",
+      "type": "Research Archive",
+      "notes": "Structured analytical record including DIA evaluation and sensor data summary"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Jafari acquired a confirmed radar lock on an object at 27 nautical miles with a return comparable in size to a Boeing KC-135 tanker. This is corroborated by the DIA cable and the Iranian Air Force's own radar records.",
+      "category": "Physical Evidence",
+      "status": "verified",
+      "source": "US Defense Intelligence Agency evaluation cable (September 1976), distributed to White House, Secretary of State, Joint Chiefs, NSA, and CIA"
+    },
+    {
+      "claim": "When Jafari attempted to fire an AIM-9 heat-seeking missile, all weapons control and communications systems shut down instantly. The systems restored when he broke off his attack. A second attempt produced identical results.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Jafari debriefing (September 1976); DIA cable notes the instrumentation failure; not independently corroborated beyond pilot testimony and the debrief record"
+    },
+    {
+      "claim": "A secondary object detached from the primary craft and flew directly toward Jafari's F-4 before reversing and returning. A third object descended and landed near Tehran, with an electromagnetic anomaly detected at the landing site.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Jafari debriefing and subsequent testimony; DIA cable references multiple objects; physical landing site evidence was not recovered"
+    },
+    {
+      "claim": "The craft was under intelligent control and represented technology far beyond anything available in 1976 or since. Jafari has stated publicly that he is certain the object was non-human in origin.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Jafari's National Press Club testimony (November 2007); Leslie Kean book (2010)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Kean organised the 2007 National Press Club event where Jafari gave his first major US public testimony and featured his account in her 2010 book.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "oscar-santa-maria-huerta",
+      "node_label": "Oscar Santa Maria Huerta",
+      "relationship": "Both represent benchmark international military pilot UAP cases with weapons system effects; both testified at major US disclosure events.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Government UAP Documentation",
+      "relationship": "The DIA cable on the Tehran incident is one of the most widely cited post-Blue-Book official US government UAP documents, distributed at the highest classification levels.",
+      "connection_type": "institutional"
+    }
+  ]
+}

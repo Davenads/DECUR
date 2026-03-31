@@ -2511,5 +2511,31 @@
     "data_file": "oscar-santa-maria-huerta.json",
     "type": "pilot",
     "includeInExplore": true
+  },
+  {
+    "id": "parviz-jafari",
+    "name": "Parviz Jafari",
+    "aliases": [
+      "General Parviz Jafari",
+      "Brigadier General Parviz Jafari",
+      "Major Parviz Jafari"
+    ],
+    "role": "Brigadier General, Imperial Iranian Air Force (ret.) - 1976 Tehran UAP Intercept",
+    "period": "September 19, 1976 (incident); 2007-present (public testimony)",
+    "affiliation": "Imperial Iranian Air Force (IIAF)",
+    "summary": "Iranian Air Force Brigadier General who on September 19, 1976, as a squadron commander in an F-4 Phantom II over Tehran, acquired radar lock on a UAP the size of a KC-135 tanker. When he attempted to fire an AIM-9 missile, all weapons control and communications failed. A DIA cable distributed to the White House, Secretary of State, Joint Chiefs, NSA, and CIA documented the incident and rated it an outstanding UAP report. He testified publicly at the National Press Club in 2007.",
+    "status": "detailed",
+    "tags": [
+      "pilot",
+      "iran",
+      "military",
+      "f-4-phantom",
+      "tehran-incident",
+      "dia-cable",
+      "weapons-failure"
+    ],
+    "data_file": "parviz-jafari.json",
+    "type": "pilot",
+    "includeInExplore": true
   }
 ]
