@@ -2631,5 +2631,29 @@
     "data_file": "donna-hare.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "salvatore-pais",
+    "name": "Dr. Salvatore Pais",
+    "aliases": [
+      "Salvatore Cezar Pais",
+      "S.C. Pais"
+    ],
+    "role": "Aerospace Engineer, NAWCAD / U.S. Navy",
+    "period": "~2000-present",
+    "affiliation": "Naval Air Warfare Center Aircraft Division (NAWCAD)",
+    "summary": "Romanian-born Navy aerospace engineer who filed a cluster of patents assigned to the Department of the Navy describing a hybrid aerospace-underwater craft, room-temperature superconductor, gravitational wave generator, and plasma fusion device. The Navy's own Chief Technology Officer made sworn declarations to the USPTO vouching for the patents' operability; three years of internal testing costing 08,000 concluded the 'Pais Effect' could not be proven. Now works for the U.S. Space Force.",
+    "status": "detailed",
+    "tags": [
+      "navy",
+      "patents",
+      "aerospace",
+      "propulsion",
+      "technology",
+      "dod"
+    ],
+    "data_file": "salvatore-pais.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

@@ -677,6 +677,40 @@ const Sources: NextPage = () => {
             notes="Used for: Donna Hare."
           />
 
+          {/* Salvatore Pais */}
+          <SourceCard
+            name="The War Zone: The Navy Finally Speaks Up About Its Bizarre UFO Patent Experiments"
+            url="https://www.twz.com/39012/the-navy-finally-speaks-up-about-its-bizarre-ufo-patent-experiments"
+            type="Investigative Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary source for NAWCAD testing outcomes and costs. Contains NAWCAD Communications Director Timothy Boulay's confirmed statements that three years of testing ($508,000) concluded 'the Pais Effect could not be proven.' War Zone FOIA series is the authoritative investigative record on the patents."
+            notes="Used for: Salvatore Pais."
+          />
+          <SourceCard
+            name="The War Zone: Navy's Advanced Aerospace Tech Boss Claims Key UFO Patent Is Operable"
+            url="https://www.twz.com/29232/navys-advanced-aerospace-tech-boss-claims-key-ufo-patent-is-operable"
+            type="Investigative Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Documents Navy CTO Dr. James Sheehy's sworn declarations to the USPTO asserting the patents' operability under penalty of law. Establishes the institutional chain of endorsement behind the Pais patent cluster."
+            notes="Used for: Salvatore Pais."
+          />
+          <SourceCard
+            name="US10144532B2 - Craft Using an Inertial Mass Reduction Device (Google Patents)"
+            url="https://patents.google.com/patent/US10144532B2/en"
+            type="Patent Filing"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Primary source - the Hybrid Aerospace Underwater Craft (HAUC) patent assigned to the U.S. Department of the Navy. Filed April 2016, granted December 2018."
+            notes="Used for: Salvatore Pais."
+          />
+          <SourceCard
+            name="Interesting Engineering: Creator of Groundbreaking UFO Patents Explains Inventions in Rare Interview"
+            url="https://interestingengineering.com/innovation/creator-of-groundbreaking-ufo-patents-explains-inventions-in-rare-interview"
+            type="Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Most extensive public statement by Pais himself. Confirms the patents are 'not a bluff,' describes his physics framework, and reports Chinese academic citations as evidence of legitimacy."
+            notes="Used for: Salvatore Pais."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

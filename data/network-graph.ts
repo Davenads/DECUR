@@ -1314,5 +1314,10 @@ export const graphData: GraphData = {
     { source: 'donna-hare', target: 'steven-greer',    label: 'Greer organised the 2001 Disclosure Project where Hare gave her only major public testimony on NASA photo airbrushing' },
     { source: 'donna-hare', target: 'edgar-mitchell',  label: 'both provide insider NASA perspectives on UAP: Mitchell as Apollo astronaut, Hare as Building 8 photo lab contractor' },
     { source: 'donna-hare', target: 'gary-mckinnon',   label: 'McKinnon independently claimed to see a UAP photograph on a NASA JSC Building 8 machine - the same building where Hare witnessed photo airbrushing decades earlier' },
+
+    // Salvatore Pais connections
+    { source: 'salvatore-pais', target: 'luis-elizondo', label: 'both were active DoD insiders whose claims about advanced aerospace technology emerged in the same 2017-2019 media cycle' },
+    { source: 'salvatore-pais', target: 'karl-nell',     label: 'both represent active-duty DoD personnel making extraordinary claims about advanced aerospace technology with institutional backing' },
+    { source: 'salvatore-pais', target: 'hal-puthoff',   label: "Puthoff's theoretical work on zero-point energy and inertial mass reduction directly parallels the physics concepts in Pais's Navy patents" },
   ],
 };
