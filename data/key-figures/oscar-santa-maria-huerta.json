@@ -1,0 +1,166 @@
+{
+  "profile": {
+    "id": "oscar-santa-maria-huerta",
+    "name": "Oscar Santa Maria Huerta",
+    "aliases": ["Col. Oscar Santa Maria Huerta", "Oscar Santa María Huerta"],
+    "born": "circa 1957 - Peru",
+    "died": null,
+    "roles": [
+      "Colonel, Peruvian Air Force (ret.)",
+      "Fighter Pilot, Fuerza Aérea del Peru"
+    ],
+    "service_period": "circa 1975-2000 (25-year Peruvian Air Force career)",
+    "organizations": ["Fuerza Aérea del Peru (Peruvian Air Force)"],
+    "clearance": null,
+    "summary": "Peruvian Air Force Colonel (retired) who on April 11, 1980, was ordered to intercept and shoot down an unidentified object hovering over La Joya Air Force Base in his Sukhoi Su-22. He fired 64 rounds of 30mm cannon directly at the craft with no effect; the object appeared to anticipate his targeting systems, moving out of range each time he locked on. The engagement was witnessed by approximately 1,800 military personnel and civilians on the ground. A US Department of Defense cable from June 1980 confirmed the incident and described the object as of unknown origin. It remains the only documented case where a military pilot fired upon a UAP with confirmed hits and no effect.",
+    "education": [
+      "Peruvian Air Force Academy - pilot and tactical training",
+      "Qualified on Soviet Sukhoi Su-22 supersonic fighter-bomber; selected as one of Peru's top aerial marksmen"
+    ],
+    "early_career": [
+      "Selected to test-fly Peru's newest supersonic Sukhoi aircraft and recognised as one of the Air Force's top aerial marksmen with exceptional air-to-air and air-to-ground targeting records",
+      "By April 1980 had eight years of flying experience including participation in combat missions, and held the rank of Lieutenant in the Peruvian Air Force"
+    ],
+    "key_events": [
+      {
+        "year": "Apr 1980",
+        "event": "April 11, 1980 - Lieutenant Huerta is ordered to scramble from La Joya Air Force Base in Arequipa, Peru, after an unidentified object is detected hovering at approximately 600 meters altitude above the base's restricted airspace. Approximately 1,800 military personnel and civilian staff are present on the ground as witnesses."
+      },
+      {
+        "year": "Apr 1980",
+        "event": "Approaching in his Sukhoi Su-22, Huerta observes a light-bulb shaped craft approximately 10 meters in diameter with a creamy white dome and a wider purple base. He fires a burst of 30mm cannon rounds - 64 shells in total - directly at the stationary object. The rounds appear to strike the craft but produce no effect. The object does not return fire, emit sound, or show any propulsion exhaust."
+      },
+      {
+        "year": "Apr 1980",
+        "event": "Each subsequent time Huerta acquires a weapons lock on the object, it moves precisely out of range at the moment of targeting - ascending or repositioning while he closes. He pursues the craft to altitudes exceeding 19,200 meters (63,000 ft), well above the Su-22's optimal operating ceiling. After approximately 22 minutes of engagement his fuel is critically low and he is ordered to return. The object then remains stationary over the base for a further two hours before departing."
+      },
+      {
+        "year": "Jun 1980",
+        "event": "The US Department of Defense issues a document titled 'UFO Sighting in Peru' describing the April 11 incident. The cable confirms the engagement occurred, notes the object was of unknown origin, and is later obtained by UAP researchers via FOIA. It is one of the few DoD documents to directly describe an active military engagement with a UAP."
+      },
+      {
+        "year": "2005",
+        "event": "Huerta begins giving public testimony about the 1980 incident at international forums, including UAP research conferences in Latin America and the United States. He states publicly: 'I know that flying saucers exist - I saw them with my own eyes.' His account has remained entirely consistent across 25+ years."
+      },
+      {
+        "year": "May 2013",
+        "event": "Testifies at the Citizen Hearing on Disclosure at the National Press Club in Washington DC, organised by Stephen Bassett. He is one of six Latin American military representatives. His detailed first-person account of the 1980 engagement - including the targeting system behaviour and altitude pursuit - is presented to former members of Congress serving as the panel."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "UAP investigative journalist and author",
+      "relationship": "Kean included Huerta's 1980 La Joya case in her 2010 book 'UFOs: Generals, Pilots and Government Officials Go on the Record,' providing one of the most widely circulated English-language accounts of the incident and establishing it as a benchmark military UAP case."
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "US Navy pilot and UAP advocate",
+      "relationship": "Both Huerta and Graves represent the global pattern of trained military pilots encountering UAP with documented instrumentation anomalies and consistent multi-witness corroboration. Graves has cited international pilot cases like Huerta's as essential context for understanding UAP as a global, not exclusively American, phenomenon."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2005",
+      "type": "interview",
+      "title": "Epoch Times - Peruvian Jet Pilot Tells of Tangle With UFO",
+      "outlet": "The Epoch Times",
+      "notes": "Early English-language account in which Huerta describes the April 1980 engagement in detail, including the light-bulb shaped craft, the 64 rounds fired, and the targeting anticipation behaviour."
+    },
+    {
+      "date": "May 2013",
+      "type": "congressional-testimony",
+      "title": "Citizen Hearing on Disclosure - National Press Club",
+      "outlet": "Citizen Hearing on Disclosure (organised by Stephen Bassett), National Press Club, Washington DC",
+      "notes": "Formal testimony before former members of US Congress. Huerta presents the complete account of the 1980 engagement, the US DoD cable, and his conclusion that the craft was of non-human origin."
+    },
+    {
+      "date": "2016",
+      "type": "interview",
+      "title": "La Joya AFB - The Perfect UFO Case",
+      "outlet": "Inexplicata / Journal of Hispanic Ufology",
+      "notes": "Detailed Spanish-language account covering the technical aspects of the engagement, the altitude pursuit, and the DoD cable confirmation."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peruvian Jet Pilot Tells of Tangle With UFO - The Epoch Times",
+      "url": "https://www.theepochtimes.com/peruvian-jet-pilot-tells-of-tangle-with-ufo_37316.html",
+      "type": "News Article",
+      "notes": "Primary English-language account of Huerta's testimony"
+    },
+    {
+      "title": "La Joya AFB - The Perfect UFO Case - Inexplicata (2016)",
+      "url": "https://inexplicata.blogspot.com/2016/11/peru-la-joya-afb-perfect-ufo-case-1980.html",
+      "type": "Research Archive",
+      "notes": "Detailed case analysis including technical flight data and DoD cable context"
+    },
+    {
+      "title": "Oscar Santa Maria Huerta - Infinity Explorers",
+      "url": "https://www.infinityexplorers.com/oscar-santa-maria-huerta/",
+      "type": "Research Archive",
+      "notes": "Biographical overview and incident summary"
+    },
+    {
+      "title": "La Joya Air Force Base Incident (April 11, 1980) - Enigma Labs",
+      "url": "https://enigmalabs.io/library/e6b60e28-a5f2-449e-8c4f-8f36132ea4f7",
+      "type": "Research Archive",
+      "notes": "Structured case record including US DoD cable reference"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "On April 11, 1980, Huerta fired 64 rounds of 30mm cannon from his Sukhoi Su-22 directly at a stationary unidentified craft over La Joya Air Force Base. The rounds struck the object with no visible effect - no debris, no damage, no response.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Huerta's consistent testimony (2005-2013); US DoD cable 'UFO Sighting in Peru' (June 1980) confirming incident occurred and object was of unknown origin"
+    },
+    {
+      "claim": "The craft appeared to anticipate his weapons targeting system - each time Huerta acquired a lock-on, the object moved precisely out of range before he could fire, suggesting either active electronic countermeasures or real-time awareness of his fire-control system.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Huerta testimony - Epoch Times (2005); Citizen Hearing on Disclosure (May 2013)"
+    },
+    {
+      "claim": "Approximately 1,800 military personnel and civilians stationed at La Joya Air Force Base witnessed the object hovering over the base for the duration of the engagement and for two additional hours after Huerta returned.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Peruvian Air Force base records; US DoD cable (June 1980) confirms incident and witnesses present"
+    },
+    {
+      "claim": "The craft was of non-human origin - it was not a balloon, conventional aircraft, or natural phenomenon, and its behaviour (absorbing cannon fire, anticipating targeting locks, operating at 63,000 ft without propulsion) is inconsistent with any human technology available in 1980.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Huerta public statements (2005-2013); no official government attribution has been made"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Kean's 2010 book provided the most widely read English-language account of the 1980 incident, establishing it as a benchmark military UAP case.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Government UAP Documentation",
+      "relationship": "The US DoD June 1980 cable documenting the engagement is one of the few official government records of an active military-UAP combat encounter.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "ryan-graves",
+      "node_label": "Ryan Graves",
+      "relationship": "Both represent trained military pilots with documented, multi-witness UAP encounters; Graves has cited international cases like Huerta's as evidence of a global phenomenon.",
+      "connection_type": "professional"
+    }
+  ]
+}

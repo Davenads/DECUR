@@ -1284,5 +1284,10 @@ export const graphData: GraphData = {
     { source: 'john-ramirez', target: 'david-grusch',    label: 'both describe the same UAP suppression architecture from different agency vantage points; accounts mutually reinforcing' },
     { source: 'john-ramirez', target: 'ross-coulthart',  label: 'Coulthart reported Ramirez\'s Air Force derived-technology claim to a broad audience' },
     { source: 'john-ramirez', target: 'luis-elizondo',   label: 'parallel institutional suppression accounts from CIA and AATIP sides' },
+
+    // Oscar Santa Maria Huerta connections
+    { source: 'oscar-santa-maria-huerta', target: 'leslie-kean',   label: 'Kean published the benchmark English-language account of the 1980 La Joya engagement in UFOs: Generals, Pilots and Government Officials (2010)' },
+    { source: 'oscar-santa-maria-huerta', target: 'ryan-graves',   label: 'both are military pilots with documented multi-witness UAP encounters; Graves has cited international cases like Huerta\'s' },
+    { source: 'oscar-santa-maria-huerta', target: 'david-fravor',  label: 'parallel military pilot UAP engagement cases; both represent benchmark credible pilot testimony' },
   ],
 };

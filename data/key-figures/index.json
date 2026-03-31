@@ -2487,5 +2487,29 @@
     "data_file": "john-ramirez.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "oscar-santa-maria-huerta",
+    "name": "Oscar Santa Maria Huerta",
+    "aliases": [
+      "Col. Oscar Santa Maria Huerta",
+      "Oscar Santa María Huerta"
+    ],
+    "role": "Colonel, Peruvian Air Force (ret.) - La Joya UAP Engagement Pilot",
+    "period": "April 11, 1980 (incident); 2005-present (public testimony)",
+    "affiliation": "Fuerza Aérea del Peru (Peruvian Air Force)",
+    "summary": "Peruvian Air Force Colonel who on April 11, 1980 fired 64 rounds of 30mm cannon at a UAP over La Joya Air Force Base with no effect. The craft anticipated his weapons lock each time, ascending to 63,000 ft during pursuit. Witnessed by approximately 1,800 personnel on the ground. A US DoD cable confirmed the incident and described the object as of unknown origin. The only documented case of a military pilot firing on a UAP with confirmed hits and no effect.",
+    "status": "detailed",
+    "tags": [
+      "pilot",
+      "peru",
+      "military",
+      "combat-engagement",
+      "la-joya",
+      "sukhoi-su22"
+    ],
+    "data_file": "oscar-santa-maria-huerta.json",
+    "type": "pilot",
+    "includeInExplore": true
   }
 ]

@@ -569,6 +569,24 @@ const Sources: NextPage = () => {
             notes="Used for: John Ramirez."
           />
 
+          {/* Oscar Santa Maria Huerta */}
+          <SourceCard
+            name="Peruvian Jet Pilot Tells of Tangle With UFO - The Epoch Times"
+            url="https://www.theepochtimes.com/peruvian-jet-pilot-tells-of-tangle-with-ufo_37316.html"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary English-language account of Huerta's 1980 La Joya engagement. Describes the light-bulb shaped craft, 64 rounds fired, and the targeting anticipation behaviour."
+            notes="Used for: Oscar Santa Maria Huerta."
+          />
+          <SourceCard
+            name="La Joya AFB - The Perfect UFO Case - Inexplicata (2016)"
+            url="https://inexplicata.blogspot.com/2016/11/peru-la-joya-afb-perfect-ufo-case-1980.html"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Detailed case analysis including technical flight data, altitude pursuit, and context for the US DoD June 1980 cable confirming the incident."
+            notes="Used for: Oscar Santa Maria Huerta."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"
