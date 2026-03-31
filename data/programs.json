@@ -1685,5 +1685,100 @@
       { "target": "uap-task-force", "type": "predecessor" }
     ],
     "includeInLineage": true
+  },
+  {
+    "id": "condon-committee",
+    "name": "Condon Committee (University of Colorado UFO Study)",
+    "type": "study",
+    "status": "defunct",
+    "active_period": "1966-1969",
+    "parent_org": "University of Colorado / United States Air Force",
+    "summary": "The University of Colorado UFO Project, commonly known as the Condon Committee after its director physicist Edward U. Condon, was an Air Force-funded scientific study of unidentified flying objects conducted from 1966 to 1969. Its final report - popularly called the Condon Report - concluded that further scientific study of UFOs was not warranted, providing the justification the Air Force used to terminate Project Blue Book in December 1969. The study remains deeply controversial: multiple team members accused Condon of predetermining the conclusions, and a leaked internal memo revealed the goal was to 'kill the subject' rather than investigate it honestly.",
+    "significance": "The Condon Report's recommendation to end UFO investigation effectively shut down official U.S. government study of the phenomenon for 50 years. Despite the report's dismissive conclusion, 30% of the 87 cases examined were left unresolved - a fact buried in its own body text. The National Academy of Sciences endorsed the report's conclusions without independently reviewing the case files. The 'trick memo' written by project coordinator Robert Low, which revealed institutional intent to deliver a negative result regardless of findings, became a central exhibit in arguments that the U.S. government has systematically suppressed UAP research.",
+    "key_personnel": [
+      {
+        "name": "Edward U. Condon",
+        "role": "Principal Investigator / Committee Director"
+      },
+      {
+        "name": "Robert Low",
+        "role": "Project Coordinator - authored the controversial 'trick memo'"
+      },
+      {
+        "name": "David Saunders",
+        "role": "Co-investigator - fired after leaking the Low memo to NICAP"
+      },
+      {
+        "name": "J. Allen Hynek",
+        "role": "External consultant and critic of the committee's methodology",
+        "figure_id": "j-allen-hynek"
+      },
+      {
+        "name": "Jacques Vallee",
+        "role": "Consultant who advised against the study's dismissive approach",
+        "figure_id": "jacques-vallee"
+      }
+    ],
+    "key_events": [
+      {
+        "year": "1966",
+        "event": "Air Force awards a $313,000 contract to the University of Colorado to conduct an independent scientific study of UFOs, following pressure from congressional hearings and a public controversy over the 1966 Michigan sightings."
+      },
+      {
+        "year": "1967",
+        "event": "Project coordinator Robert Low writes the internal 'trick memo' stating the study should be structured to appear objective while delivering a negative conclusion - 'the trick would be...to describe the project so that, to the public, it would appear a totally objective study.' The memo is dated August 9, 1966 but circulated into 1967."
+      },
+      {
+        "year": "1968",
+        "event": "David Saunders and Norman Levine are fired after leaking the Low memo to NICAP. James McDonald and Hynek publicly criticize the committee's methodology. Internal team dissension becomes public."
+      },
+      {
+        "year": "Jan 1969",
+        "event": "The final report - Scientific Study of Unidentified Flying Objects - is submitted to the Air Force. The summary conclusion by Condon dismisses further study; the case chapters themselves leave 30% of cases unexplained."
+      },
+      {
+        "year": "Dec 1969",
+        "event": "Using the Condon Report as justification, the Air Force terminates Project Blue Book. The report is endorsed by the National Academy of Sciences, which does not independently review the underlying case files."
+      }
+    ],
+    "connected_documents": [
+      "condon-report-1969"
+    ],
+    "connected_figures": [
+      "j-allen-hynek",
+      "jacques-vallee"
+    ],
+    "limitations": [
+      "The Low memo demonstrated institutional intent to deliver a predetermined negative conclusion, undermining the study's scientific credibility.",
+      "The report's dismissive executive summary contradicts its own body chapters, which leave roughly 30% of examined cases unresolved.",
+      "The National Academy of Sciences endorsement was based on the report's conclusions, not an independent review of the 87 case files.",
+      "Key critics - Hynek, McDonald, Vallee - were marginalized or excluded as the committee moved toward its final conclusion.",
+      "The Air Force funding arrangement created a conflict of interest: the contractor was paid to exonerate the client's policy decision to terminate Blue Book."
+    ],
+    "sources": [
+      {
+        "title": "Condon Report: Scientific Study of Unidentified Flying Objects (1969)",
+        "url": "https://files.ncas.org/condon/",
+        "type": "Primary Source"
+      },
+      {
+        "title": "The Low Memo (August 9, 1966) - NICAP Archive",
+        "url": "https://www.nicap.org/lowmemo.htm",
+        "type": "Primary Source"
+      },
+      {
+        "title": "UFOs and the National Security State Vol. 2 (Dolan, 2009)",
+        "type": "Book"
+      },
+      {
+        "title": "The UFO Experience: A Scientific Inquiry - J. Allen Hynek (1972)",
+        "type": "Book"
+      }
+    ],
+    "relationships": [
+      { "target": "project-blue-book", "type": "affiliated" },
+      { "target": "nicap", "type": "opposed" }
+    ],
+    "includeInLineage": false
   }
 ]
