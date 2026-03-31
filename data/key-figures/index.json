@@ -2655,5 +2655,29 @@
     "data_file": "salvatore-pais.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "dan-sherman",
+    "name": "Dan Sherman",
+    "aliases": [
+      "Staff Sergeant Dan Sherman",
+      "SSGT Dan Sherman"
+    ],
+    "role": "USAF ELINT Specialist / Alleged Intuitive Communicator",
+    "period": "1982-1995",
+    "affiliation": "U.S. Air Force / NSA",
+    "summary": "12-year USAF veteran and NSA-affiliated Electronic Intelligence specialist who claims he was recruited in 1992 at Fort Meade as an 'Intuitive Communicator' for Project Preserve Destiny - an alleged government program training genetically selected personnel to relay communications from extraterrestrial entities. His verifiable military background is credible; the IC claims are extraordinary and have no documentary corroboration. Renewed public interest following a 2025 Jesse Michels interview.",
+    "status": "detailed",
+    "tags": [
+      "nsa",
+      "usaf",
+      "elint",
+      "whistleblower",
+      "contactee",
+      "insider"
+    ],
+    "data_file": "dan-sherman.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

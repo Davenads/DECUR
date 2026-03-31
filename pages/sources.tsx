@@ -711,6 +711,32 @@ const Sources: NextPage = () => {
             notes="Used for: Salvatore Pais."
           />
 
+          {/* Dan Sherman */}
+          <SourceCard
+            name="Above Black: Project Preserve Destiny - Dan Sherman (1998)"
+            url="https://www.amazon.com/Above-Black-Preserve-Government-Cover-Up/dp/0966097807"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary source - Sherman's own account of his 12-year USAF career and the alleged Project Preserve Destiny Intuitive Communicator assignment. Self-published, 1998."
+            notes="Used for: Dan Sherman."
+          />
+          <SourceCard
+            name="Project Camelot: Dan Sherman 'Way Above Black' Interview Transcript (2007)"
+            url="https://projectcamelot.org/lang/en/dan_sherman_interview_transcript_en.html"
+            type="Interview Transcript"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Full transcript of the June 2007 extended interview by Bill Ryan and Kerry Cassidy. Primary source for biographical timeline, service history, and claims detail."
+            notes="Used for: Dan Sherman."
+          />
+          <SourceCard
+            name="FOIA to USAF on Project Preserve Destiny - Noah Hradek (Medium, 2023)"
+            url="https://medium.com/@noahhradek/my-foia-to-the-usaf-on-project-preserve-destiny-64e3cafeaa16"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Documents the 2023 FOIA request to the Air Force and the referral to NSA. Primary source for the government's formal non-response to PPD inquiries."
+            notes="Used for: Dan Sherman."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

@@ -1319,5 +1319,10 @@ export const graphData: GraphData = {
     { source: 'salvatore-pais', target: 'luis-elizondo', label: 'both were active DoD insiders whose claims about advanced aerospace technology emerged in the same 2017-2019 media cycle' },
     { source: 'salvatore-pais', target: 'karl-nell',     label: 'both represent active-duty DoD personnel making extraordinary claims about advanced aerospace technology with institutional backing' },
     { source: 'salvatore-pais', target: 'hal-puthoff',   label: "Puthoff's theoretical work on zero-point energy and inertial mass reduction directly parallels the physics concepts in Pais's Navy patents" },
+
+    // Dan Sherman connections
+    { source: 'dan-sherman', target: 'gary-mckinnon',   label: 'both claimed evidence of classified ET-related programs within NSA/DoD infrastructure; Sherman from the inside as an alleged IC, McKinnon through external access' },
+    { source: 'dan-sherman', target: 'david-grusch',    label: "Grusch's 2023 congressional claims about hidden non-human intelligence programs represent the institutional-era parallel to Sherman's 1990s individual account of tiered above-black programs" },
+    { source: 'dan-sherman', target: 'clifford-stone',  label: 'both are USAF veterans claiming direct operational involvement in classified extraterrestrial-related programs that fall outside standard oversight; Stone on crash retrieval, Sherman on communications' },
   ],
 };
