@@ -7790,7 +7790,23 @@
       "radar-invisible",
       "officially-acknowledged"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "nick-cook",
+        "role": "Aviation journalist who investigated Nazi advanced propulsion research in the same Rhine Valley geography as the foo fighter reports",
+        "note": "Cook's 'The Hunt for Zero Point' examined whether the Kammler/Die Glocke program explains the phenomenon; his research directly intersects the foo fighters evidence base."
+      },
+      {
+        "id": "jacques-vallee",
+        "role": "Astronomer and UAP researcher whose 'Wonders in the Sky' is one of the most rigorous scholarly catalogs of pre-1947 aerial anomalies",
+        "note": "Vallee treated WWII foo fighter reports as a key data class in establishing long-term historical continuity of the phenomenon."
+      },
+      {
+        "id": "robert-powell",
+        "role": "SCU research director and co-author of 'UFOs: A Scientist Explains What We Know' whose evidentiary standards framework applies directly to the foo fighters evidence tier assessment",
+        "note": "Powell's work on establishing reproducible evidentiary standards for UAP cases is the methodological basis for how this case is classified at Evidence Tier 2."
+      }
+    ],
     "overview": {
       "key_facts": [
         "First formally documented American encounters: November 23, 1944, 415th Night Fighter Squadron near Strasbourg, France",
