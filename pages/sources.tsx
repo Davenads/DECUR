@@ -551,6 +551,24 @@ const Sources: NextPage = () => {
             notes="Used for: Clifford Stone."
           />
 
+          {/* John Ramirez */}
+          <SourceCard
+            name="GS-15 CIA Officer John Ramirez - Sasquatch Chronicles (2021)"
+            url="https://sasquatchchronicles.com/gs-15-cia-officer-john-ramirez/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary reference for Ramirez's career summary and public profile. Cites a vetted DoD source confirming his CIA employment, establishing the credibility of his professional background."
+            notes="Used for: John Ramirez."
+          />
+          <SourceCard
+            name="Ross Coulthart - Air Force Derived Technology Statement (Twitter/X, Nov 2022)"
+            url="https://x.com/rosscoulthart/status/1595739137096974336"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Coulthart reports Ramirez's claim that the Air Force withholds UAP data to protect derived-technology programs - his most specific structural disclosure."
+            notes="Used for: John Ramirez."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

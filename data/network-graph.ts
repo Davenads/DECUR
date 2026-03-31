@@ -1279,5 +1279,10 @@ export const graphData: GraphData = {
     { source: 'clifford-stone', target: 'steven-greer',       label: 'principal witness at Greer\'s 2001 Disclosure Project press conference; 57 species testimony' },
     { source: 'clifford-stone', target: 'robert-salas',       label: 'co-testified at 2001 Disclosure Project; Salas co-authored Stone\'s Eyes Only book' },
     { source: 'clifford-stone', target: 'stanton-friedman',   label: 'both researched Roswell and US crash retrieval programs from New Mexico bases' },
+
+    // John Ramirez connections
+    { source: 'john-ramirez', target: 'david-grusch',    label: 'both describe the same UAP suppression architecture from different agency vantage points; accounts mutually reinforcing' },
+    { source: 'john-ramirez', target: 'ross-coulthart',  label: 'Coulthart reported Ramirez\'s Air Force derived-technology claim to a broad audience' },
+    { source: 'john-ramirez', target: 'luis-elizondo',   label: 'parallel institutional suppression accounts from CIA and AATIP sides' },
   ],
 };

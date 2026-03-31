@@ -2464,5 +2464,28 @@
     "data_file": "clifford-stone.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "john-ramirez",
+    "name": "John Ramirez",
+    "aliases": [
+      "John Ramirez CIA"
+    ],
+    "role": "GS-15 Intelligence Officer, CIA (ret.)",
+    "period": "1984-2009 (CIA)",
+    "affiliation": "Central Intelligence Agency",
+    "summary": "Former CIA GS-15 intelligence officer with a 25-year career across the Directorate of Science and Technology, Directorate of Intelligence, and ODNI National Counterproliferation Center. A specialist in ballistic missile defense and ELINT, he went public in October 2021 describing an institutional culture within the CIA that discourages analysts from engaging with UAP data, and asserting that the Air Force withholds UAP information because recovered technology has already been applied in classified programs.",
+    "status": "detailed",
+    "tags": [
+      "cia",
+      "intelligence",
+      "elint",
+      "whistleblower",
+      "kona-blue",
+      "derived-technology"
+    ],
+    "data_file": "john-ramirez.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

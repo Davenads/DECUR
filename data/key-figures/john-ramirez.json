@@ -1,0 +1,191 @@
+{
+  "profile": {
+    "id": "john-ramirez",
+    "name": "John Ramirez",
+    "aliases": ["John Ramirez CIA"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "GS-15 Intelligence Officer, CIA (ret.)",
+      "Chief of Base, Overseas Technical Collection Facility (CIA)",
+      "Chief, Electronic Intelligence Analysis Branch (CIA)"
+    ],
+    "service_period": "1984-2009 (CIA); 2021-present (public UAP advocacy)",
+    "organizations": [
+      "Central Intelligence Agency",
+      "Office of the Director of National Intelligence (ODNI)"
+    ],
+    "clearance": "TS/SCI (former)",
+    "summary": "Former CIA GS-15 intelligence officer with a 25-year career spanning the Directorate of Science and Technology, the Directorate of Intelligence, and the ODNI National Counterproliferation Center. A specialist in ballistic missile defense systems, signals analysis, and ELINT, he served as Chief of Base at an overseas technical collection facility. After retiring in 2009, he went public in October 2021 describing an institutional 'invisibility cloak' culture within the CIA that discouraged analysts from engaging with UAP data, and asserting that the Air Force withholds UAP information because recovered technology has already been applied in classified programs.",
+    "education": [
+      "Specialised technical training in ballistic missile defense systems, signals analysis, and electronic intelligence (ELINT) through CIA and ODNI programs"
+    ],
+    "early_career": [
+      "Joined the CIA in 1984; career spanned three major organizational units: the Directorate of Science and Technology, the Directorate of Intelligence, and the ODNI National Counterproliferation Center",
+      "Specialised in ballistic missile defense systems and the signals analysis of weapon system radars, eventually leading the Electronic Intelligence Analysis Branch",
+      "Served as Chief of Base at an overseas technical collection facility - a senior field role responsible for directing covert technical operations"
+    ],
+    "key_events": [
+      {
+        "year": "1984",
+        "event": "Joins the CIA and begins a 25-year career that will span the Directorate of Science and Technology, Directorate of Intelligence, and the ODNI's National Counterproliferation Center. Specialises in ballistic missile defense and electronic intelligence analysis."
+      },
+      {
+        "year": "2000",
+        "event": "Serves as Chief of the Electronic Intelligence (ELINT) Analysis Branch and as Chief of Base for an overseas technical collection facility. His GS-15 designation places him at the most senior non-executive career grade within the CIA structure."
+      },
+      {
+        "year": "2009",
+        "event": "Retires from the CIA after 25 years. His employment record is subsequently confirmed by a vetted DoD source with access to government records, establishing the credibility of his professional background prior to his public UAP statements."
+      },
+      {
+        "year": "Oct 2021",
+        "event": "Goes public on the Witness Citizen podcast with detailed claims about CIA internal culture regarding UAP. Describes what he calls an 'invisibility cloak' - an institutional norm discouraging analysts from pursuing or flagging UAP data for fear of career consequences. His appearance is one of the first by a senior intelligence officer outside the defense-military community to address UAP as an institutional problem."
+      },
+      {
+        "year": "Nov 2022",
+        "event": "Ross Coulthart reports via social media that Ramirez stated the US Air Force is reluctant to share UAP information it holds because 'there are programs they need to protect derived from that technology - if you talk about UAPs, it may lead to the revelation of this applied tech.' This directly connects UAP non-disclosure to classified derived-technology programs."
+      },
+      {
+        "year": "2022",
+        "event": "Appears in multiple podcast and interview contexts elaborating on KONA BLUE - a proposed Department of Homeland Security program designed to acquire and reverse-engineer recovered UAP - which was rejected by DHS as lacking merit. Ramirez provides context for why such programs are proposed and suppressed within competing bureaucratic jurisdictions."
+      },
+      {
+        "year": "2023",
+        "event": "Makes increasingly specific claims in interviews including attending a classified symposium where senior officials discussed the discovery of what was described as non-human DNA sequences in the human genome. This claim is his most contested and least corroborated. The congressional UAP disclosure hearings of 2023-2024 do not reference his specific claims directly, though they validate his broader structural observations about institutional UAP suppression."
+      },
+      {
+        "year": "2025",
+        "event": "Continues appearing on major UAP podcasts including UAP Files and Coast to Coast AM, maintaining a consistent narrative around CIA UAP culture, the significance of the 2027 timeframe mentioned in internal government UAP discussions, and the existence of a shadow UAP management structure outside normal oversight."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "ross-coulthart",
+      "name": "Ross Coulthart",
+      "role": "Investigative journalist",
+      "relationship": "Coulthart reported on Ramirez's claims about the Air Force withholding UAP data to protect derived-technology programs, amplifying his most significant structural disclosure to a broad public audience."
+    },
+    {
+      "id": "david-grusch",
+      "name": "David Grusch",
+      "role": "NGA intelligence officer and UAP whistleblower",
+      "relationship": "Ramirez and Grusch both describe the same institutional suppression architecture from different vantage points - Ramirez from the CIA analytical side, Grusch from the NGA and interagency coordination side. Their accounts are mutually reinforcing on the structural claim that UAP programs operate outside normal oversight."
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP director",
+      "relationship": "Both Elizondo and Ramirez describe parallel institutional cultures of non-engagement and career risk around UAP within their respective agencies, providing cross-agency corroboration for the systemic suppression claim."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Oct 2021",
+      "type": "interview",
+      "title": "Witness Citizen Podcast - John Ramirez CIA (Part 1)",
+      "outlet": "Witness Citizen",
+      "notes": "First major public disclosure. Describes 25-year CIA career, the 'invisibility cloak' culture around UAP within the CIA, and his view that UAP represents non-human intelligence. Confirmed by DoD source as authentic."
+    },
+    {
+      "date": "2021",
+      "type": "interview",
+      "title": "That UFO Podcast - Ex-CIA Parts 1 and 2",
+      "outlet": "That UFO Podcast with Andy McGrillen",
+      "notes": "Two-part interview elaborating on CIA analytical culture, the deliberate avoidance of UAP as a career-risk topic, and Ramirez's view of what the institutional suppression structure looks like from the inside."
+    },
+    {
+      "date": "Nov 2022",
+      "type": "interview",
+      "title": "Air Force Derived Technology Statement (via Coulthart)",
+      "outlet": "Ross Coulthart / Twitter (X) reporting",
+      "notes": "Ramirez states to Coulthart that the Air Force withholds UAP information because 'there are programs they need to protect derived from that technology.' This is his most specific structural disclosure."
+    },
+    {
+      "date": "2022",
+      "type": "podcast",
+      "title": "Podcast UFO - John Ramirez CIA Retired",
+      "outlet": "Podcast UFO",
+      "notes": "Detailed discussion of KONA BLUE, the DHS program proposal to reverse-engineer retrieved craft, and the broader bureaucratic landscape of competing UAP program jurisdictions."
+    }
+  ],
+  "sources": [
+    {
+      "title": "GS-15 CIA Officer John Ramirez - Sasquatch Chronicles",
+      "url": "https://sasquatchchronicles.com/gs-15-cia-officer-john-ramirez/",
+      "type": "News Article",
+      "notes": "Primary reference for Ramirez's career summary and public profile; cites DoD confirmation of employment"
+    },
+    {
+      "title": "Ross Coulthart on Air Force Derived Technology - Twitter/X (Nov 2022)",
+      "url": "https://x.com/rosscoulthart/status/1595739137096974336",
+      "type": "News Article",
+      "notes": "Primary source for Ramirez's claim about Air Force withholding UAP data to protect derived technology programs"
+    },
+    {
+      "title": "John Ramirez - Coast to Coast AM Profile",
+      "url": "https://www.coasttocoastam.com/guest/john-ramirez/",
+      "type": "News Article",
+      "notes": "Overview of Ramirez's public appearances and claims"
+    },
+    {
+      "title": "Podcast UFO - John Ramirez CIA Retired",
+      "url": "https://www.audible.com/pd/484-John-Ramirez-CIA-Retired-Podcast/B09NK6PJG1",
+      "type": "Video Interview",
+      "notes": "Extended discussion of KONA BLUE and CIA UAP suppression structure"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The CIA maintains an internal 'invisibility cloak' culture around UAP - an institutional norm where analysts who flag or pursue UAP data risk career consequences, creating systematic self-censorship across the analytical community.",
+      "category": "Testimony",
+      "status": "partially-verified",
+      "source": "Witness Citizen podcast (Oct 2021); That UFO Podcast (2021). Consistent with documented AATIP institutional resistance and Elizondo/Grusch accounts of parallel suppression in other agencies."
+    },
+    {
+      "claim": "The US Air Force withholds UAP information it holds from other agencies and congressional oversight because programs exist that have already applied technology derived from UAP encounters - disclosing UAP would risk revealing those classified derived-technology programs.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Reported by Ross Coulthart via Twitter/X (November 2022)"
+    },
+    {
+      "claim": "KONA BLUE was a proposed Department of Homeland Security special access program designed to acquire and reverse-engineer recovered UAP craft; it was ultimately rejected by DHS leadership as lacking sufficient merit.",
+      "category": "Testimony",
+      "status": "partially-verified",
+      "source": "Ramirez interviews (2022). DHS subsequently confirmed via FOIA that a program called KONA BLUE existed as a proposal but was never funded or operationalised."
+    },
+    {
+      "claim": "Ramirez states he attended a classified symposium where senior government officials discussed the discovery of what was described as non-human DNA sequences in the human genome, presented as evidence of past or ongoing biological contact.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "DEBRIEFED podcast with Chris Ramsay (2022-2023)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "david-grusch",
+      "node_label": "David Grusch",
+      "relationship": "Both describe the same UAP suppression architecture from different agency vantage points; accounts mutually reinforce the structural non-disclosure claim.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "ross-coulthart",
+      "node_label": "Ross Coulthart",
+      "relationship": "Coulthart reported Ramirez's most significant structural disclosure about Air Force derived-technology programs to a broad public audience.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "program",
+      "node_id": "aatip",
+      "node_label": "AATIP / UAP Programs",
+      "relationship": "Ramirez's claims about CIA-side UAP suppression directly parallel the AATIP institutional resistance documented by Elizondo.",
+      "connection_type": "institutional"
+    }
+  ]
+}
