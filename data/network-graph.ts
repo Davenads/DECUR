@@ -1236,5 +1236,10 @@ export const graphData: GraphData = {
     { source: 'matt-szydagis', target: 'kevin-knuth',        label: 'co-leads UAPx; co-authors on 2025 UAP papers; University at Albany colleagues' },
     { source: 'matt-szydagis', target: 'beatriz-villarroel', label: 'co-authors on 2025 New Science of UAP flagship paper' },
     { source: 'matt-szydagis', target: 'avi-loeb',           label: 'parallel instrumented UAP field research programs; 2025 New Science of UAP co-authors' },
+
+    // David Spergel connections
+    { source: 'david-spergel', target: 'sean-kirkpatrick',   label: 'both led major official UAP assessments in 2023 - Spergel NASA panel, Kirkpatrick AARO' },
+    { source: 'david-spergel', target: 'avi-loeb',           label: 'parallel elite astrophysicist engagement with UAP; government-mandated vs independent empirical approach' },
+    { source: 'david-spergel', target: 'garry-nolan',        label: 'both engaged UAP study publicly from elite scientific positions despite institutional risk' },
   ],
 };

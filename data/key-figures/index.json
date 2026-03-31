@@ -1709,5 +1709,19 @@
     "data_file": "matt-szydagis.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "david-spergel",
+    "name": "Dr. David Spergel",
+    "aliases": ["David N. Spergel"],
+    "role": "Chair, NASA UAP Independent Study Team; President, Simons Foundation",
+    "period": "2022-2023 (NASA UAP role)",
+    "affiliation": "Simons Foundation / Princeton University",
+    "summary": "MacArthur Fellow and Breakthrough Prize-winning astrophysicist who chaired NASA's UAP Independent Study Team (2022-2023). The panel's September 2023 report - finding no extraterrestrial evidence but identifying severe data quality gaps - represents the official NASA scientific posture on UAP and directly led to NASA appointing its first Director of UAP Research.",
+    "status": "detailed",
+    "tags": ["scientist", "official", "nasa", "cosmology", "princeton", "government-assessment"],
+    "data_file": "david-spergel.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

@@ -1,0 +1,194 @@
+{
+  "profile": {
+    "id": "david-spergel",
+    "name": "Dr. David Spergel",
+    "aliases": ["David N. Spergel", "D. Spergel"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "President, Simons Foundation",
+      "Emeritus Charles A. Young Professor of Astronomy, Princeton University",
+      "Chair, NASA UAP Independent Study Team (2022-2023)",
+      "Former Director, Center for Computational Astrophysics, Flatiron Institute"
+    ],
+    "service_period": "2022-2023 (NASA UAP role)",
+    "organizations": [
+      "Simons Foundation",
+      "Princeton University",
+      "NASA",
+      "National Academy of Sciences",
+      "Flatiron Institute"
+    ],
+    "clearance": null,
+    "summary": "One of the world's most cited astrophysicists, known principally for WMAP analysis that established the standard cosmological model. Named by NASA in 2022 to chair the agency's UAP Independent Study Team, whose September 2023 report represents the official NASA scientific posture on UAP: no evidence of extraterrestrial origin, but poor data quality is the primary obstacle to scientific analysis.",
+    "education": [
+      "PhD, Astrophysics, Harvard University",
+      "AM, Harvard University",
+      "AB, Princeton University (1982)"
+    ],
+    "early_career": [
+      "Joined Princeton faculty; became Charles A. Young Professor of Astronomy",
+      "Led analysis of WMAP (Wilkinson Microwave Anisotropy Probe) data, establishing precise values for dark matter, dark energy, and the age of the universe",
+      "Founded and directed the Center for Computational Astrophysics at the Flatiron Institute (2016-2021)"
+    ],
+    "key_events": [
+      {
+        "year": "1982",
+        "event": "Completed undergraduate degree at Princeton University. Went on to earn doctorate at Harvard before joining the Princeton faculty as an astrophysicist specializing in cosmology and theoretical astrophysics."
+      },
+      {
+        "year": "2001",
+        "event": "Awarded MacArthur Fellowship. WMAP cosmology work was defining the standard model of cosmology - dark matter at 27%, dark energy at 68%, flat universe geometry."
+      },
+      {
+        "year": "2008",
+        "event": "Elected to the National Academy of Sciences. By this period Spergel was among the most cited astrophysicists in the world, with over 100,000 total citations."
+      },
+      {
+        "year": "2018",
+        "event": "Awarded Breakthrough Prize in Fundamental Physics as a member of the WMAP team. Became President of the Simons Foundation (2021), one of the largest private science funding organizations in the world."
+      },
+      {
+        "year": "Jun 2022",
+        "event": "Named by NASA to chair the UAP Independent Study Team, a 16-member panel of scientists and former intelligence officials tasked with assessing the state of UAP data and recommending a scientific approach. Spergel agreed to lead the panel despite acknowledging the professional risk of associating his name with the topic."
+      },
+      {
+        "year": "Oct 2022",
+        "event": "NASA UAP Independent Study Team began formal work. The panel included retired NASA astronauts, AI specialists, oceanographers, astrobiologists, and policy experts. Panel meetings were largely public, a deliberate transparency measure."
+      },
+      {
+        "year": "Sep 2023",
+        "event": "NASA UAP Independent Study Team released its final report (September 14, 2023). Key findings: no evidence of extraterrestrial origin for UAP; the majority of reported UAP are likely misidentified conventional objects; a small residual cannot be immediately identified; poor data quality and sensor calibration gaps are the primary scientific obstacles. Key recommendations: NASA should leverage existing Earth-observing assets, establish a civilian UAP reporting portal, and destigmatize reporting in aviation."
+      },
+      {
+        "year": "Sep 2023",
+        "event": "NASA simultaneously announced the appointment of Mark McInerney as the agency's first Director of UAP Research, a direct result of the panel's recommendations."
+      },
+      {
+        "year": "2024",
+        "event": "Appeared on StarTalk Radio with Neil deGrasse Tyson to discuss the NASA UAP report findings and the scientific case for studying the unexplained residual. Continued to engage in public scientific communication about UAP data quality and the importance of rigorous investigation."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "sean-kirkpatrick",
+      "name": "Dr. Sean Kirkpatrick",
+      "role": "Former Director, All-domain Anomaly Resolution Office (AARO)",
+      "relationship": "Both led major official UAP assessments released within months of each other in 2023 - Spergel the NASA scientific panel, Kirkpatrick the DoD AARO program. Their conclusions were broadly aligned: no confirmed extraterrestrial evidence, poor data collection infrastructure. They represent the civilian science and defense intelligence arms of the 2023 government UAP assessment effort."
+    },
+    {
+      "id": "avi-loeb",
+      "name": "Prof. Avi Loeb",
+      "role": "Harvard astrophysicist, Galileo Project director",
+      "relationship": "Both are among the most credentialed astrophysicists to engage publicly with UAP. Loeb leads the privately-funded Galileo Project empirical search program while Spergel led the NASA government-mandated study. They represent complementary institutional approaches - independent academic and official government - to the same data quality problem."
+    },
+    {
+      "id": "garry-nolan",
+      "name": "Dr. Garry Nolan",
+      "role": "Immunologist, Sol Foundation founder",
+      "relationship": "Both are elite scientists who have publicly engaged with UAP despite institutional risk. Spergel's NASA panel and Nolan's Sol Foundation represent different institutional entry points into scientific UAP study - government-mandated assessment versus private foundation."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Sep 2023",
+      "type": "written",
+      "title": "NASA UAP Independent Study Team - Final Report",
+      "outlet": "NASA (nasa.gov)",
+      "notes": "Official final report of the 16-member panel chaired by Spergel. Concluded no evidence of extraterrestrial origin; identified data quality and sensor calibration as the primary barriers to scientific analysis; recommended NASA leverage existing Earth-observing assets and establish civilian UAP reporting infrastructure."
+    },
+    {
+      "date": "Sep 2023",
+      "type": "speech",
+      "title": "NASA UAP Report Public Briefing",
+      "outlet": "NASA Press Conference",
+      "notes": "Spergel presented the panel's findings at a public NASA press conference on September 14, 2023. Acknowledged the professional risk of associating his name with UAP study and argued this itself reflected the scientific community's unhealthy stigma around the topic."
+    },
+    {
+      "date": "2024",
+      "type": "interview",
+      "title": "StarTalk Radio - UAP Science and the NASA Report",
+      "outlet": "StarTalk Radio (Neil deGrasse Tyson)",
+      "notes": "Extended interview discussing the NASA UAP report findings, why the unexplained residual matters scientifically, and the importance of destigmatizing UAP research in the scientific community."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA UAP Independent Study Team - Final Report (September 2023)",
+      "url": "https://www.nasa.gov/news-release/update-nasa-shares-uap-independent-study-report-names-director/",
+      "type": "Government Report",
+      "notes": "Official NASA report page with full PDF download; primary source for all panel findings"
+    },
+    {
+      "title": "David Spergel Selected as NASA UAP Study Chair - Princeton University",
+      "url": "https://web.astro.princeton.edu/news/astrophysicist-david-spergel-selected-chair-nasa-team-studying-unidentified-aerial-phenomena",
+      "type": "Press Release",
+      "notes": "Princeton announcement of Spergel's appointment; includes career context"
+    },
+    {
+      "title": "NASA UAP Independent Study Team - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/NASA%27s_UAP_independent_study_team",
+      "type": "Reference",
+      "notes": "Panel composition, timeline, and findings overview"
+    },
+    {
+      "title": "David Spergel - Princeton Astrophysical Sciences Faculty Page",
+      "url": "https://web.astro.princeton.edu/people/david-spergel",
+      "type": "Organization Profile",
+      "notes": "Academic biography and publication record"
+    },
+    {
+      "title": "Simons Foundation - David Spergel President",
+      "url": "https://www.simonsfoundation.org/people/david-spergel/",
+      "type": "Organization Profile",
+      "notes": "Current institutional role and biography"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "The majority of reported UAP are likely misidentified conventional objects including commercial aircraft, drones, balloons, and weather phenomena, and do not represent extraterrestrial technology or unknown physics.",
+      "category": "Government Assessment",
+      "status": "partially-verified",
+      "source": "NASA UAP Independent Study Team Final Report (September 2023)"
+    },
+    {
+      "claim": "A small residual of UAP cases cannot be immediately identified with available data, and the primary obstacle to scientific analysis is poor data quality and sensor calibration gaps rather than inherent inexplicability of the phenomena.",
+      "category": "Government Assessment",
+      "status": "partially-verified",
+      "source": "NASA UAP Independent Study Team Final Report (September 2023)"
+    },
+    {
+      "claim": "The scientific community's stigma around UAP study is itself a scientific problem - it prevents rigorous data collection and reporting that would allow proper analysis of anomalous aerial observations.",
+      "category": "Government Assessment",
+      "status": "unverified",
+      "source": "NASA UAP Report press conference, September 2023"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "sean-kirkpatrick",
+      "node_label": "Dr. Sean Kirkpatrick",
+      "relationship": "Both led major official UAP assessments in 2023 - Spergel the NASA scientific panel, Kirkpatrick the DoD AARO program.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "avi-loeb",
+      "node_label": "Prof. Avi Loeb",
+      "relationship": "Both are elite astrophysicists who engaged with UAP despite institutional risk; parallel institutional approaches to the same data quality problem.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 6,
+      "node_type": "program",
+      "node_id": "nasa-uap-study",
+      "node_label": "NASA UAP Study",
+      "relationship": "Chair of the NASA UAP Independent Study Team; responsible for the September 2023 final report.",
+      "connection_type": "institutional"
+    }
+  ]
+}

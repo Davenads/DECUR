@@ -383,6 +383,24 @@ const Sources: NextPage = () => {
             notes="Used for: Dr. Matt Szydagis."
           />
 
+          {/* David Spergel */}
+          <SourceCard
+            name="NASA UAP Independent Study Team Final Report (September 2023)"
+            url="https://www.nasa.gov/news-release/update-nasa-shares-uap-independent-study-report-names-director/"
+            type="Government Report"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official report of the 16-member panel chaired by Spergel. Concluded no evidence of extraterrestrial origin; identified data quality and sensor calibration gaps as the primary scientific barriers; recommended NASA leverage existing assets and establish civilian UAP reporting infrastructure."
+            notes="Used for: Dr. David Spergel."
+          />
+          <SourceCard
+            name="David Spergel Selected as NASA UAP Study Chair - Princeton University"
+            url="https://web.astro.princeton.edu/news/astrophysicist-david-spergel-selected-chair-nasa-team-studying-unidentified-aerial-phenomena"
+            type="Press Release"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Princeton University announcement of Spergel's appointment to chair the NASA UAP panel, including career context and Spergel's own statement about the professional risk of the role."
+            notes="Used for: Dr. David Spergel."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"
