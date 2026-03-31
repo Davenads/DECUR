@@ -42,15 +42,15 @@ const SharedDisclosuresTab: FC<SharedDisclosuresTabProps> = ({
         {disclosures.map((d, i) => (
           <div key={i} className={ps.borderCard}>
             <div className="flex items-start gap-3">
-              <span className="font-mono text-xs text-gray-400 whitespace-nowrap mt-0.5">{d.date}</span>
+              <span className="font-mono text-xs text-gray-400 whitespace-nowrap mt-0.5 w-16 shrink-0">{d.date}</span>
               <div className="flex-1 min-w-0">
-                <div className="flex items-start justify-between gap-2 mb-1">
-                  {d.title && <p className="font-medium text-gray-900 dark:text-gray-100 text-sm">{d.title}</p>}
+                {d.title && <p className="font-medium text-gray-900 dark:text-gray-100 text-sm mb-1">{d.title}</p>}
+                <div className="flex items-center justify-between gap-2 mb-1">
+                  <p className="text-xs text-gray-500">{d.outlet}</p>
                   <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 whitespace-nowrap ${TYPE_COLORS[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
                     {d.type.replace(/-/g, ' ')}
                   </span>
                 </div>
-                <p className="text-xs text-gray-500 mb-1">{d.outlet}</p>
                 {d.interviewer && <p className="text-xs text-gray-500 mb-1">Interviewer: {d.interviewer}</p>}
                 {text(d) && <p className="text-xs text-gray-500 italic">{text(d)}</p>}
               </div>
