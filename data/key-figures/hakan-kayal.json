@@ -1,0 +1,205 @@
+{
+  "profile": {
+    "id": "hakan-kayal",
+    "name": "Prof. Hakan Kayal",
+    "aliases": ["Hakan Kayal", "H. Kayal"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Professor and Chair, Space Technology, University of Wurzburg (JMU)",
+      "Founder, IFEX (Interdisciplinary Research Centre for Extraterrestrial Studies)",
+      "Principal Investigator, SONATE-2 CubeSat Mission",
+      "Principal Investigator, SkyCAM UAP Ground Observatory"
+    ],
+    "service_period": "2022-present (UAP research); 2000s-present (space technology)",
+    "organizations": [
+      "Julius-Maximilians-Universitat Wurzburg (JMU)",
+      "IFEX",
+      "DLR (German Aerospace Center)",
+      "UAPx",
+      "Scientific Coalition for UAP Studies (SCU)"
+    ],
+    "clearance": null,
+    "summary": "German space technology professor who founded IFEX - the first European academic institution to formally incorporate UAP into its research mandate - and deployed SONATE-2, a 6U CubeSat currently in orbit carrying onboard AI specifically trained to detect and classify anomalous objects. His SkyCAM AI camera is operational at the University of Wurzburg campus and his team participates in the DLR-funded VaMEx Mars mission with a camera tasked to search for anomalous phenomena in the Martian atmosphere.",
+    "education": [
+      "Dr.-Ing. (Engineering Doctorate), Space Technology",
+      "Professor, Department of Computer Science, Julius-Maximilians-Universitat Wurzburg"
+    ],
+    "early_career": [
+      "Developed autonomous onboard processing and fault detection systems for spacecraft and nanosatellites",
+      "Established the Space Technology chair at JMU Wurzburg, building expertise in small satellite design, onboard AI, and anomaly detection for space systems"
+    ],
+    "key_events": [
+      {
+        "year": "2022",
+        "event": "Founded IFEX (Interdisciplinary Research Centre for Extraterrestrial Studies) at University of Wurzburg in January 2022. IFEX became the first academic institution in Germany and Europe to formally include UAP in its research agenda alongside astrobiology and SETI."
+      },
+      {
+        "year": "2022",
+        "event": "Deployed SkyCAM, an AI-powered ground-based camera system at the Hubland Campus of the University of Wurzburg, specifically designed to detect and analyze anomalous aerial phenomena using real-time machine learning classification."
+      },
+      {
+        "year": "2023",
+        "event": "IFEX expanded its affiliate network to include international researchers. Kevin Knuth (University at Albany) and Matt Szydagis joined as associate members, connecting IFEX to the UAPx field research program and establishing a transatlantic UAP research collaboration."
+      },
+      {
+        "year": "Mar 2024",
+        "event": "Launched SONATE-2, a 6U CubeSat, aboard a SpaceX Falcon 9 rocket. SONATE-2 carries multiple cameras and onboard AI trained to autonomously recognize and classify anomalous objects in Earth orbit. It is the first academic satellite with an explicit UAP anomaly detection mission currently in orbit."
+      },
+      {
+        "year": "2024",
+        "event": "Presented early SONATE-2 in-flight results at the 4S Symposium (Small Satellites, Systems and Services) in Palma de Mallorca. Published 'Early Results and In-Flight Experience of the 6U-Mission SONATE-2' reporting the satellite's autonomous anomaly classification performance."
+      },
+      {
+        "year": "2024",
+        "event": "Participated in the VaMEx (Valles Marineris Explorer) German Mars mission design, contributing a camera specifically tasked with searching for anomalous phenomena in the Martian atmosphere. This is the first DLR-funded research project to include an explicit UAP detection component on another planet."
+      },
+      {
+        "year": "Jun 2025",
+        "event": "Co-authored 'The New Science of Unidentified Aerospace-Undersea Phenomena (UAP)' in Progress in Aerospace Sciences (arXiv:2502.06794) with Kevin Knuth (lead), Matt Szydagis, Beatriz Villarroel, and 30+ other researchers. Published 'Novel onboard data processing strategies on nanosatellite SONATE-2' in SPIE Proceedings, reporting advanced onboard AI classification results."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "kevin-knuth",
+      "name": "Dr. Kevin Knuth",
+      "role": "Professor of Physics, UAPx Lead Scientist",
+      "relationship": "Co-authors on the 2025 'New Science of UAP' flagship paper. Knuth is an IFEX affiliate member, directly connecting the UAPx field research program to Kayal's satellite and ground-based detection infrastructure. Together they represent the hardware and theory pillars of the same collaborative UAP research network."
+    },
+    {
+      "id": "matt-szydagis",
+      "name": "Dr. Matt Szydagis",
+      "role": "Assistant Professor of Physics, UAPx Field Research Leader",
+      "relationship": "Co-authors on the 2025 'New Science of UAP' paper. Szydagis is an IFEX affiliate member. Both focus on instrumented detection - Szydagis on ground field expeditions, Kayal on orbital and ground-based observatories."
+    },
+    {
+      "id": "beatriz-villarroel",
+      "name": "Dr. Beatriz Villarroel",
+      "role": "Astrophysicist, VASCO Principal Investigator",
+      "relationship": "Co-authors on the 2025 'New Science of UAP' flagship paper. Villarroel's retrospective archival plate analysis and Kayal's real-time orbital detection represent complementary temporal approaches - historical photographic records versus live satellite monitoring."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2022",
+      "type": "speech",
+      "title": "IFEX Launch Announcement - First European Academic UAP Research Centre",
+      "outlet": "University of Wurzburg / German media",
+      "notes": "Public announcement of the founding of IFEX and its formal inclusion of UAP in academic research, marking the first European university to do so institutionally."
+    },
+    {
+      "date": "2024",
+      "type": "conference",
+      "title": "Early Results and In-Flight Experience of the 6U-Mission SONATE-2",
+      "outlet": "4S Symposium (Small Satellites, Systems and Services), Palma de Mallorca",
+      "notes": "Conference paper and presentation reporting SONATE-2 early flight results, onboard AI performance, and anomaly classification capabilities from orbit."
+    },
+    {
+      "date": "Jun 2025",
+      "type": "academic-paper",
+      "title": "The New Science of Unidentified Aerospace-Undersea Phenomena (UAP)",
+      "outlet": "Progress in Aerospace Sciences (arXiv:2502.06794)",
+      "notes": "Co-author on the flagship collaborative framework paper with Kevin Knuth (lead) and 30+ contributors. Establishes scientific framework for empirical UAP investigation across multiple detection modalities."
+    },
+    {
+      "date": "Mar 2025",
+      "type": "academic-paper",
+      "title": "Novel onboard data processing strategies on nanosatellite SONATE-2",
+      "outlet": "SPIE Proceedings (13546)",
+      "notes": "Peer-reviewed report on SONATE-2's onboard AI classification performance for anomalous object detection from orbit. DOI: 10.1117/12.3062655."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The New Science of UAP - arXiv:2502.06794 (2025)",
+      "url": "https://arxiv.org/abs/2502.06794",
+      "type": "Academic Paper",
+      "notes": "Co-authored flagship framework paper with Knuth, Szydagis, Villarroel and others"
+    },
+    {
+      "title": "Novel onboard data processing strategies on SONATE-2 - SPIE Proceedings (2025)",
+      "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13546/3062655/Novel-onboard-data-processing-strategies-on-nanosatellite-SONATE-2/10.1117/12.3062655.full",
+      "type": "Academic Paper",
+      "notes": "SONATE-2 onboard AI performance report"
+    },
+    {
+      "title": "Hakan Kayal - University of Wurzburg Space Technology Chair",
+      "url": "https://www.informatik.uni-wuerzburg.de/en/space-technology/team/kayal/",
+      "type": "Organization Profile",
+      "notes": "Institutional faculty biography and research overview"
+    },
+    {
+      "title": "UAP SkyCAM Searches the Sky - SpaceWar.com",
+      "url": "https://www.spacewar.com/reports/UAP_SkyCAM_Searches_the_Sky_999.html",
+      "type": "News Article",
+      "notes": "Coverage of the SkyCAM ground-based AI UAP detection system deployment at Wurzburg"
+    },
+    {
+      "title": "German University Center Includes UAP Study - Leonard David",
+      "url": "https://www.leonarddavid.com/german-university-center-includes-study-of-unidentified-aerial-phenomenon/",
+      "type": "News Article",
+      "notes": "Coverage of IFEX founding and its significance as the first European academic UAP research centre"
+    },
+    {
+      "title": "Hakan Kayal - Curious2024 Future Insight Conference",
+      "url": "https://www.curiousfutureinsight.org/_speakers/hakan-kayal/",
+      "type": "Organization Profile",
+      "notes": "Speaker biography for Curious2024 conference presentation"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "SONATE-2, a 6U CubeSat in low Earth orbit, can autonomously detect and classify anomalous objects using onboard AI trained on known satellite and debris signatures, providing a scalable model for academic orbital UAP monitoring.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "SPIE Proceedings 13546 (March 2025)"
+    },
+    {
+      "claim": "SkyCAM, an AI-powered ground observatory deployed at the University of Wurzburg, can systematically monitor the sky for anomalous aerial phenomena using machine learning classification without continuous human review.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "SpaceWar.com SkyCAM report (2022)"
+    },
+    {
+      "claim": "A camera deployed on the DLR-funded VaMEx Mars mission, explicitly tasked with anomalous phenomenon detection, represents the first government-funded extraterrestrial UAP search component.",
+      "category": "Physical Evidence",
+      "status": "unverified",
+      "source": "IFEX / JMU Wurzburg research documentation (2024)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "kevin-knuth",
+      "node_label": "Dr. Kevin Knuth",
+      "relationship": "Knuth is an IFEX affiliate member; co-authors on 2025 New Science of UAP paper.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "matt-szydagis",
+      "node_label": "Dr. Matt Szydagis",
+      "relationship": "Szydagis is an IFEX affiliate member; co-authors on 2025 New Science of UAP paper.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "beatriz-villarroel",
+      "node_label": "Dr. Beatriz Villarroel",
+      "relationship": "Co-authors on 2025 New Science of UAP flagship paper; complementary temporal detection approaches.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 0,
+      "node_type": "program",
+      "node_id": "ifex",
+      "node_label": "IFEX",
+      "relationship": "Founder and director of the Interdisciplinary Research Centre for Extraterrestrial Studies at JMU Wurzburg.",
+      "connection_type": "institutional"
+    }
+  ]
+}

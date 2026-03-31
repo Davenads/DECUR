@@ -401,6 +401,24 @@ const Sources: NextPage = () => {
             notes="Used for: Dr. David Spergel."
           />
 
+          {/* Hakan Kayal */}
+          <SourceCard
+            name="Novel onboard data processing strategies on nanosatellite SONATE-2 - SPIE Proceedings (Kayal et al., 2025)"
+            url="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13546/3062655/Novel-onboard-data-processing-strategies-on-nanosatellite-SONATE-2/10.1117/12.3062655.full"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Peer-reviewed report on SONATE-2's onboard AI performance for anomalous object detection from low Earth orbit. SONATE-2 is the first academic satellite with an explicit UAP anomaly detection mission."
+            notes="Used for: Prof. Hakan Kayal."
+          />
+          <SourceCard
+            name="German University Center Includes UAP Study - Leonard David"
+            url="https://www.leonarddavid.com/german-university-center-includes-study-of-unidentified-aerial-phenomenon/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Coverage of IFEX founding at the University of Wurzburg as the first European academic institution to formally incorporate UAP into its research mandate. Documents Kayal's rationale and research infrastructure."
+            notes="Used for: Prof. Hakan Kayal."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

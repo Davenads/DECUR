@@ -1723,5 +1723,19 @@
     "data_file": "david-spergel.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "hakan-kayal",
+    "name": "Prof. Hakan Kayal",
+    "aliases": ["Hakan Kayal"],
+    "role": "Professor of Space Technology; Founder, IFEX; SONATE-2 Principal Investigator",
+    "period": "2022-present",
+    "affiliation": "University of Wurzburg (JMU) / IFEX",
+    "summary": "German space technology professor who founded IFEX - the first European academic institution to formally incorporate UAP into its research mandate - and launched SONATE-2 (March 2024), a CubeSat in orbit with onboard AI for anomalous object detection. His SkyCAM AI observatory is operational at Wurzburg, and his team participates in a DLR-funded Mars mission with a UAP detection camera.",
+    "status": "detailed",
+    "tags": ["scientist", "space-technology", "satellite", "europe", "germany", "ifex", "sonate-2"],
+    "data_file": "hakan-kayal.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

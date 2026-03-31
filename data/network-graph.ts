@@ -1241,5 +1241,10 @@ export const graphData: GraphData = {
     { source: 'david-spergel', target: 'sean-kirkpatrick',   label: 'both led major official UAP assessments in 2023 - Spergel NASA panel, Kirkpatrick AARO' },
     { source: 'david-spergel', target: 'avi-loeb',           label: 'parallel elite astrophysicist engagement with UAP; government-mandated vs independent empirical approach' },
     { source: 'david-spergel', target: 'garry-nolan',        label: 'both engaged UAP study publicly from elite scientific positions despite institutional risk' },
+
+    // Hakan Kayal connections
+    { source: 'hakan-kayal', target: 'kevin-knuth',        label: 'IFEX affiliates; co-authors on 2025 New Science of UAP paper' },
+    { source: 'hakan-kayal', target: 'matt-szydagis',      label: 'IFEX affiliates; co-authors on 2025 New Science of UAP paper' },
+    { source: 'hakan-kayal', target: 'beatriz-villarroel', label: 'co-authors on 2025 New Science of UAP flagship paper' },
   ],
 };
