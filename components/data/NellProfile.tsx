@@ -23,7 +23,7 @@ const TABS = [
   { id: 'claims',          label: 'Claims' },
   { id: 'sol-foundation',  label: 'SOL Foundation' },
   { id: 'career-network',  label: 'Career Network' },
-  { id: 'network',         label: 'Network' },
+  { id: 'network',         label: 'People' },
   { id: 'assessment',      label: 'Assessment' },
 ] as const;
 
