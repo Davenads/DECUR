@@ -2586,5 +2586,29 @@
     "data_file": "bob-jacobs.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "jonathan-weygandt",
+    "name": "Jonathan Weygandt",
+    "aliases": [
+      "LCpl Jonathan Weygandt",
+      "Lance Corporal Weygandt"
+    ],
+    "role": "Lance Corporal, US Marine Corps (ret.) - Peru Crash Site Witness",
+    "period": "March/April 1997 (incident); 2001 and 2023 (public testimony)",
+    "affiliation": "United States Marine Corps",
+    "summary": "US Marine Corps Lance Corporal who in 1997, during Operation Laser Strike in Peru, was among the first responders to reach a crash site involving a large egg-shaped craft embedded in a cliff face. He describes the object as warm, self-repairing, and biologically textured, emitting purplish-green light. He was intercepted by unmarked personnel and a DoE MOPP team, then coercively interrogated. He testified at the 2001 Disclosure Project; James Fox called it the most outstanding testimony from that project. He did not speak publicly again until 2023.",
+    "status": "detailed",
+    "tags": [
+      "marine",
+      "crash-retrieval",
+      "peru",
+      "operation-laser-strike",
+      "disclosure-project",
+      "interrogation"
+    ],
+    "data_file": "jonathan-weygandt.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

@@ -641,6 +641,24 @@ const Sources: NextPage = () => {
             notes="Used for: Bob Jacobs."
           />
 
+          {/* Jonathan Weygandt */}
+          <SourceCard
+            name="UFO Crash in Peru - Jonathan Weygandt Disclosure Project Testimony - Medium (2024)"
+            url="https://medium.com/@levitatingmonkofshambhala/ufo-crash-in-peru-lance-corporal-jonathan-weygandts-witness-testimony-in-disclosure-project-960ec5f3c6cf"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Overview of Weygandt's Disclosure Project testimony and the 1997 Peru crash site account, including the MOPP team interception, the craft's surface properties, and the subsequent interrogation."
+            notes="Used for: Jonathan Weygandt."
+          />
+          <SourceCard
+            name="Former Marine Jonathan Weygandt UAP Crash Encounter in Peru - Podcast UFO (2023)"
+            url="https://podcastufo.com/press-release/former-marine-jonathan-weygandt-ufo-uap-crash-encounter-in-peru/"
+            type="Video Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Weygandt's 2023 return to public testimony after a 22-year gap. Account remains entirely consistent with the 2001 Disclosure Project disclosure."
+            notes="Used for: Jonathan Weygandt."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

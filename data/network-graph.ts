@@ -1304,5 +1304,10 @@ export const graphData: GraphData = {
     { source: 'bob-jacobs', target: 'robert-salas',    label: 'landmark UAP-nuclear weapons interface cases: Jacobs filmed UAP disabling missile 1964, Salas witnessed missile shutdown 1967' },
     { source: 'bob-jacobs', target: 'robert-hastings', label: 'Hastings featured the Big Sur case in UFOs and Nukes (2008) as a cornerstone nuclear-UAP example' },
     { source: 'bob-jacobs', target: 'steven-greer',    label: 'Greer recruited Jacobs as a 2001 Disclosure Project witness; Big Sur was among the most technically specific nuclear-UAP cases presented' },
+
+    // Jonathan Weygandt connections
+    { source: 'jonathan-weygandt', target: 'steven-greer',    label: 'Greer featured Weygandt as a principal 2001 Disclosure Project witness; Peru crash site was among the most visceral testimonies' },
+    { source: 'jonathan-weygandt', target: 'james-fox',       label: 'Fox conducted the original interview and called Weygandt\'s testimony the most outstanding from the entire Disclosure Project' },
+    { source: 'jonathan-weygandt', target: 'clifford-stone',  label: 'both describe crash retrieval scenes where unmarked government teams rapidly displaced regular military units' },
   ],
 };

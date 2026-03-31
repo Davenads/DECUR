@@ -1,0 +1,161 @@
+{
+  "profile": {
+    "id": "jonathan-weygandt",
+    "name": "Jonathan Weygandt",
+    "aliases": ["LCpl Jonathan Weygandt", "Lance Corporal Weygandt"],
+    "born": "circa 1978 - United States",
+    "died": null,
+    "roles": [
+      "Lance Corporal, US Marine Corps (ret.)",
+      "UAP Crash Site Witness - Peru (1997)"
+    ],
+    "service_period": "circa 1996-1999 (US Marine Corps)",
+    "organizations": ["United States Marine Corps"],
+    "clearance": null,
+    "summary": "US Marine Corps Lance Corporal who in March/April 1997, while deployed in Peru during USSOUTHCOM Operation Laser Strike, was among the first responders to reach a crash site involving a large egg-shaped craft lodged in a rocky cliff face. He described the object's surface as warm, self-repairing, and unlike any known material, emitting purplish-green light. He and his fellow Marines were intercepted at the site by men in unmarked black fatigues and a Department of Energy team in MOPP gear; Weygandt was separated, taken to an unknown location, and interrogated. He has testified only twice publicly: at the 2001 Disclosure Project, and again in 2023. Documentary filmmaker James Fox has stated he believes Weygandt's account '110%.'",
+    "education": [
+      "US Marine Corps training"
+    ],
+    "early_career": [
+      "Enlisted in the US Marine Corps and was deployed to Peru in 1997 as part of USSOUTHCOM Operation Laser Strike - an official US counter-narcotics and intelligence operation - providing the legitimate cover framework for US military presence in the region at the time of the incident"
+    ],
+    "key_events": [
+      {
+        "year": "Mar 1997",
+        "event": "While deployed in the Peruvian jungle near the Ecuador border as part of USSOUTHCOM Operation Laser Strike, Weygandt and fellow Marines are tasked to investigate reports of a downed aircraft in a remote mountainous area. They approach the site on foot through dense terrain."
+      },
+      {
+        "year": "Mar 1997",
+        "event": "Weygandt reaches the crash site and observes a large, egg-shaped craft embedded in a rocky cliff face. The object is enormous relative to the surrounding terrain. Its surface is described as warm to the touch, exhibiting a texture like 'warm butter with a knife' - appearing to self-repair, as if it were biological in nature. The craft emits a purplish-green light. He estimates he was within feet of the object."
+      },
+      {
+        "year": "Mar 1997",
+        "event": "Within a short time, the Marines are intercepted at the site by a team of men in unmarked black fatigues with no visible unit or country insignia. A second team arrives in Department of Energy Mission Oriented Protective Posture (MOPP) gear, suggesting awareness of a potential hazardous material or radiation scenario. Weygandt is separated from his fellow Marines."
+      },
+      {
+        "year": "Mar 1997",
+        "event": "Weygandt is taken to an undisclosed location and subjected to an intense interrogation. He states he was threatened and told in explicit terms that what he had witnessed did not happen and that he was not to discuss it. He is subsequently released to his unit. He describes the experience as one of the most frightening of his life - not the craft, but the interrogators."
+      },
+      {
+        "year": "2000",
+        "event": "Vetted by investigative journalist Leslie Kean and connected to Dr. Steven Greer's Disclosure Project research team. Kean subsequently confirms Weygandt's military service record. James Fox, the documentary filmmaker, conducts an interview with Weygandt as part of Disclosure Project preparation and later states that of all the testimonies gathered, Weygandt's was the most outstanding and that he believes it entirely."
+      },
+      {
+        "year": "May 2001",
+        "event": "Weygandt testifies at the Disclosure Project press conference at the National Press Club in Washington DC. His account of the 1997 Peru crash site - the craft's biological surface, the MOPP team, and the interrogation - is presented alongside testimony from other government and military insiders. He does not speak publicly again for over 20 years."
+      },
+      {
+        "year": "2023",
+        "event": "Returns to public testimony for the first time since 2001, giving interviews as UAP congressional disclosure hearings intensify in Washington DC. His account remains entirely consistent with the 2001 testimony across a 22-year gap."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "steven-greer",
+      "name": "Dr. Steven Greer",
+      "role": "Disclosure Project organiser",
+      "relationship": "Greer's team vetted and recruited Weygandt as a 2001 Disclosure Project witness. Weygandt's Peru crash site account was one of the most visceral and specific testimonies presented at the National Press Club event."
+    },
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "UAP investigative journalist",
+      "relationship": "Kean vetted Weygandt prior to the 2001 Disclosure Project, confirming his military service record and assessing the credibility of his account."
+    },
+    {
+      "id": "james-fox",
+      "name": "James Fox",
+      "role": "Documentary filmmaker",
+      "relationship": "Fox conducted one of the original interviews with Weygandt for the Disclosure Project and has publicly stated he believes Weygandt's account completely - calling it the most outstanding testimony from that entire project."
+    },
+    {
+      "id": "clifford-stone",
+      "name": "Clifford Stone",
+      "role": "Fellow crash retrieval witness",
+      "relationship": "Both Weygandt and Stone describe crash retrieval situations where unmarked or unidentified government personnel arrived rapidly and took control of the scene from regular military units. Their accounts describe the same operational suppression pattern from different decades and locations."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "May 2001",
+      "type": "congressional-briefing",
+      "title": "Disclosure Project Press Conference - Peru Crash Site Testimony",
+      "outlet": "National Press Club, Washington DC (Steven Greer / Disclosure Project)",
+      "notes": "Weygandt's first and for two decades only public testimony. Describes the 1997 crash site, the craft's surface properties, the MOPP team, and the subsequent interrogation. James Fox later stated it was the most compelling testimony from the entire project."
+    },
+    {
+      "date": "2023",
+      "type": "interview",
+      "title": "Exclusive Peru Encounter - Podcast UFO",
+      "outlet": "Podcast UFO",
+      "notes": "First public testimony since 2001. Account remains entirely consistent with the original 2001 disclosure across a 22-year gap, strengthening the credibility of the core claim."
+    }
+  ],
+  "sources": [
+    {
+      "title": "UFO Crash in Peru - Jonathan Weygandt Testimony - Medium / Sachin Chitre (2024)",
+      "url": "https://medium.com/@levitatingmonkofshambhala/ufo-crash-in-peru-lance-corporal-jonathan-weygandts-witness-testimony-in-disclosure-project-960ec5f3c6cf",
+      "type": "Research Archive",
+      "notes": "Overview of Weygandt's Disclosure Project testimony and the Peru crash site account"
+    },
+    {
+      "title": "Former Marine Jonathan Weygandt UAP Crash Encounter in Peru - Podcast UFO",
+      "url": "https://podcastufo.com/press-release/former-marine-jonathan-weygandt-ufo-uap-crash-encounter-in-peru/",
+      "type": "Video Interview",
+      "notes": "Primary source for Weygandt's 2023 return to public testimony"
+    },
+    {
+      "title": "1997 Peru UFO Crash Retrieval - The Story of Jonathan Weygandt - UAP Gerb",
+      "url": "https://open.spotify.com/episode/5J72e2EQl1lB5FLF6h5WkO",
+      "type": "Video Interview",
+      "notes": "UAP Gerb's dedicated episode covering Weygandt's account and the Operation Laser Strike context"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "In March/April 1997, Weygandt observed a large egg-shaped craft embedded in a Peruvian cliff face, with a surface that appeared warm, self-repairing, and biologically alive, emitting purplish-green light. He was within feet of the object.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Disclosure Project testimony (May 2001); Podcast UFO interview (2023). Account is consistent across 22+ years but no physical evidence is in the public domain."
+    },
+    {
+      "claim": "The crash site was rapidly secured by men in unmarked black fatigues and a Department of Energy team in MOPP hazmat gear, who intercepted Weygandt's Marine unit, separated him, and conducted a coercive interrogation at an undisclosed location.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Disclosure Project testimony (May 2001); 2023 interviews. Consistent with other crash retrieval accounts describing rapid arrival of unidentified government teams, but not independently corroborated."
+    },
+    {
+      "claim": "Operation Laser Strike provided the legitimate US military cover for the presence of Weygandt's Marine unit in Peru. The operation is confirmed as a real USSOUTHCOM counter-narcotics mission active in Peru in 1997.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "USSOUTHCOM records confirm Operation Laser Strike was active in Peru in 1997 as a counter-narcotics operation. Weygandt's deployment to Peru is consistent with this mission framework."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "james-fox",
+      "node_label": "James Fox",
+      "relationship": "Fox conducted the original Disclosure Project interview and has publicly vouched for Weygandt's credibility as the most outstanding testimony from that project.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "steven-greer",
+      "node_label": "Dr. Steven Greer",
+      "relationship": "Greer featured Weygandt as a principal 2001 Disclosure Project witness; the Peru crash site account was among the most specific and visceral testimonies presented.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "clifford-stone",
+      "node_label": "Clifford Stone",
+      "relationship": "Both describe crash retrieval scenes where unmarked government teams rapidly displaced regular military units - consistent suppression patterns across different decades.",
+      "connection_type": "investigative"
+    }
+  ]
+}
