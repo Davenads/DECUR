@@ -10,12 +10,13 @@ import resourcesData from '../data/resources.json';
 import casesData from '../data/cases.json';
 import documentsData from '../data/documents.json';
 import contractorsData from '../data/contractors.json';
+import programsData from '../data/programs.json';
 
 // ---- Types ----------------------------------------------------------------
 
 interface SearchItem {
   id: string;
-  type: 'insider' | 'case' | 'document' | 'timeline' | 'glossary' | 'resource' | 'contractor';
+  type: 'insider' | 'case' | 'document' | 'timeline' | 'glossary' | 'resource' | 'contractor' | 'program';
   title: string;
   subtitle?: string | null;
   description: string;
@@ -135,6 +136,22 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
       });
     }
 
+    // Government Programs
+    for (const p of programsData as Array<{
+      id: string; name: string; type: string; status: string;
+      active_period: string; parent_org: string; summary: string;
+    }>) {
+      corpus.push({
+        id: `program-${p.id}`,
+        type: 'program',
+        title: p.name,
+        subtitle: `${p.active_period} · ${p.parent_org}`,
+        description: p.summary,
+        href: `/programs/${p.id}`,
+        badge: p.type.charAt(0).toUpperCase() + p.type.slice(1),
+      });
+    }
+
     // Resources (sources + testimony)
     const resources = resourcesData as unknown as {
       sources: Array<{ id: string; title: string; author?: string; year?: string | number; description: string; type: string }>;
@@ -169,6 +186,7 @@ const TYPE_STYLES: Record<SearchItem['type'], string> = {
   glossary:   'bg-indigo-100 text-indigo-700',
   resource:   'bg-emerald-100 text-emerald-700',
   contractor: 'bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300',
+  program:    'bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300',
 };
 
 const TYPE_LABELS: Record<SearchItem['type'], string> = {
@@ -179,6 +197,7 @@ const TYPE_LABELS: Record<SearchItem['type'], string> = {
   glossary:   'Glossary',
   resource:   'Resources',
   contractor: 'Defense Contractors',
+  program:    'Government Programs',
 };
 
 // ---- Component -------------------------------------------------------------
@@ -237,7 +256,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
     },
     {}
   );
-  const typeOrder: SearchItem['type'][] = ['insider', 'case', 'document', 'contractor', 'timeline', 'glossary', 'resource'];
+  const typeOrder: SearchItem['type'][] = ['insider', 'case', 'document', 'program', 'contractor', 'timeline', 'glossary', 'resource'];
 
   return (
     <>
