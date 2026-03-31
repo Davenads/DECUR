@@ -1,0 +1,148 @@
+{
+  "profile": {
+    "id": "donna-hare",
+    "name": "Donna Hare",
+    "aliases": [],
+    "born": "circa 1945 - United States",
+    "died": null,
+    "roles": [
+      "NASA Contractor - Philco Ford / Photo Laboratory, Johnson Space Center",
+      "UAP Photo Suppression Whistleblower"
+    ],
+    "service_period": "circa 1970s (Johnson Space Center, Building 8)",
+    "organizations": ["Philco Ford (NASA contractor)", "Johnson Space Center"],
+    "clearance": "Secret (former, NASA contractor)",
+    "summary": "Former NASA contractor (Philco Ford) who worked in the photo laboratory at Johnson Space Center's Building 8 during the 1970s with a Secret clearance. She testified at the 2001 Disclosure Project that she witnessed a NASA photo technician in Building 8 manually airbrush a disc-shaped object from a lunar photograph before it was printed for public distribution. She also reported hearing from Johnson Space Center personnel that astronauts who wanted to speak publicly about UAP encounters had been threatened. Her account is one of the most specific claims of systematic NASA photo suppression in the public record.",
+    "education": [
+      "Technical background in photographic and drafting work; held a Secret clearance under NASA contract"
+    ],
+    "early_career": [
+      "Worked as a contractor for Philco Ford at Johnson Space Center in Houston, Texas, assigned to Building 8 - the photo laboratory responsible for processing and distributing NASA mission photography",
+      "Her role gave her regular access to mission photographs in various stages of processing, from raw development through to public-release prints"
+    ],
+    "key_events": [
+      {
+        "year": "1971",
+        "event": "While working in Johnson Space Center Building 8 under her NASA contractor role, Hare states she was shown a photograph by a colleague in the photo lab. The image showed a clearly defined disc-shaped white object above the Earth. The technician told her it was standard procedure to airbrush such objects from photographs before they were printed for public release."
+      },
+      {
+        "year": "1971",
+        "event": "Hare watches the technician demonstrate the process - manually removing the disc from the photograph using standard photo retouching techniques before the image goes to print. She describes the experience as deeply unsettling and states she was told not to speak about what she had seen."
+      },
+      {
+        "year": "1971",
+        "event": "Through conversations with other Johnson Space Center employees, Hare hears that some NASA astronauts had observed unidentified craft during missions and that those who wanted to speak publicly about it had been warned not to. She cannot name the astronauts involved but describes a culture of institutional suppression around UAP at the Center."
+      },
+      {
+        "year": "May 2001",
+        "event": "Testifies at Steven Greer's Disclosure Project press conference at the National Press Club in Washington DC. Describes the Building 8 airbrushing incident in detail and the broader NASA culture of UAP information suppression. Her account is one of the few to come from a NASA facility insider rather than from military or intelligence sources."
+      },
+      {
+        "year": "2010",
+        "event": "Her Disclosure Project testimony is archived and widely shared online as the congressional UAP disclosure movement gains momentum. The Building 8 claim is frequently cited alongside Gary McKinnon's independent claim to have seen a high-resolution UAP photograph on a NASA Johnson Space Center network machine - two independent sources pointing to the same building."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "steven-greer",
+      "name": "Dr. Steven Greer",
+      "role": "Disclosure Project organiser",
+      "relationship": "Greer recruited Hare as a 2001 Disclosure Project witness. Her NASA photo suppression account provided institutional corroboration from a civilian contractor for claims that NASA actively conceals UAP photographic evidence."
+    },
+    {
+      "id": "edgar-mitchell",
+      "name": "Dr. Edgar Mitchell",
+      "role": "Apollo 14 astronaut and UAP advocate",
+      "relationship": "Mitchell and Hare both provide insider NASA perspectives on UAP: Mitchell as an astronaut who publicly stated he was briefed on UAP by senior officials, Hare as a photo lab contractor who describes systematic photo airbrushing. Their accounts, from different vantage points, suggest institutional UAP management at multiple levels within NASA."
+    },
+    {
+      "id": "gary-mckinnon",
+      "name": "Gary McKinnon",
+      "role": "Hacker who claims to have seen a UAP photograph on a NASA JSC network machine",
+      "relationship": "McKinnon independently claimed to have seen a high-resolution UAP photograph on a computer at NASA's Johnson Space Center Building 8 - the same building where Hare worked in the photo lab. Two independent sources pointing to the same location constitute a notable convergence, though neither can independently verify the other's account."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "May 2001",
+      "type": "congressional-briefing",
+      "title": "Disclosure Project Press Conference - NASA Photo Airbrushing Testimony",
+      "outlet": "National Press Club, Washington DC (Steven Greer / Disclosure Project)",
+      "notes": "Hare's primary public disclosure. Describes witnessing a NASA photo technician manually remove a disc-shaped object from a lunar photograph before public distribution, and the broader NASA culture of UAP suppression she observed at Johnson Space Center."
+    },
+    {
+      "date": "2001",
+      "type": "interview",
+      "title": "The NASA Conspiracy: Donna Hare Witness Testimony",
+      "outlet": "Disclosure Project / Steven Greer (archived on Internet Archive)",
+      "notes": "Extended video interview providing more detail on the Building 8 airbrushing incident and the astronaut warning claims."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The NASA Conspiracy: Donna Hare Witness Testimony - Internet Archive",
+      "url": "https://archive.org/details/youtube-tEBLmWhx1K0",
+      "type": "Video Interview",
+      "notes": "Primary archived video of Hare's Disclosure Project testimony"
+    },
+    {
+      "title": "1970s era ex-NASA Photo-Technician Donna Hare - Medium / Richard Geldreich Jr.",
+      "url": "https://medium.com/@richgel99/1970s-era-ex-nasa-photo-technician-and-teacher-donna-hare-1b2c57d68575",
+      "type": "Research Archive",
+      "notes": "Biographical overview and analysis of Hare's claims and employment context"
+    },
+    {
+      "title": "NASA Whistleblowers - EverybodyWiki",
+      "url": "https://en.everybodywiki.com/Nasa_whistleblowers",
+      "type": "Research Archive",
+      "notes": "Overview of Hare's claims alongside other NASA contractor whistleblower accounts"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "While working in NASA's Johnson Space Center Building 8 photo lab in the early 1970s, Hare witnessed a technician manually airbrush a clearly defined disc-shaped object from a lunar photograph before it was printed for public distribution. The technician confirmed this was standard procedure for UAP-containing images.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Disclosure Project testimony (May 2001); Disclosure Project extended video interview (2001). No corroborating witness has come forward independently."
+    },
+    {
+      "claim": "Multiple Johnson Space Center employees told Hare that NASA astronauts had observed unidentified craft during missions, and that those who wanted to speak publicly about it had been warned not to.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Disclosure Project testimony (May 2001). Consistent with similar claims from other NASA insiders, but secondhand and without named witnesses."
+    },
+    {
+      "claim": "Gary McKinnon independently claimed to have viewed a UAP photograph on a NASA JSC computer in Building 8 - the same building where Hare worked in the photo lab. Two independent sources pointing to the same location represent a notable convergence.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "McKinnon's account corroborated by his admission of JSC system access; the Building 8 geographic overlap between Hare's claim and McKinnon's is independently established"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "steven-greer",
+      "node_label": "Dr. Steven Greer",
+      "relationship": "Greer organised the 2001 Disclosure Project where Hare gave her only major public testimony.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "gary-mckinnon",
+      "node_label": "Gary McKinnon",
+      "relationship": "McKinnon independently claimed to have seen a UAP photograph on a NASA JSC Building 8 machine - the same building where Hare witnessed the photo airbrushing - decades apart.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "edgar-mitchell",
+      "node_label": "Dr. Edgar Mitchell",
+      "relationship": "Both provide insider NASA perspectives on UAP from different vantage points: Mitchell as an Apollo astronaut, Hare as a photo lab contractor.",
+      "connection_type": "professional"
+    }
+  ]
+}

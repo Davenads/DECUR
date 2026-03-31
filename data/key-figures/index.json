@@ -2610,5 +2610,26 @@
     "data_file": "jonathan-weygandt.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "donna-hare",
+    "name": "Donna Hare",
+    "aliases": [],
+    "role": "NASA Contractor (Philco Ford) - Photo Lab Whistleblower",
+    "period": "circa 1970s (JSC); 2001 (public testimony)",
+    "affiliation": "Philco Ford (NASA contractor); Johnson Space Center",
+    "summary": "Former NASA contractor who worked in the photo laboratory at Johnson Space Center Building 8 during the 1970s with a Secret clearance. She testified at the 2001 Disclosure Project that she witnessed a photo technician manually airbrush a disc-shaped object from a lunar photograph before public distribution, and that NASA personnel suppressed astronaut UAP observations. Her Building 8 account overlaps independently with Gary McKinnon's claim to have seen a UAP photograph on a JSC network machine in the same building.",
+    "status": "detailed",
+    "tags": [
+      "nasa",
+      "photo-suppression",
+      "johnson-space-center",
+      "disclosure-project",
+      "contractor",
+      "building-8"
+    ],
+    "data_file": "donna-hare.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

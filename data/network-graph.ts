@@ -1309,5 +1309,10 @@ export const graphData: GraphData = {
     { source: 'jonathan-weygandt', target: 'steven-greer',    label: 'Greer featured Weygandt as a principal 2001 Disclosure Project witness; Peru crash site was among the most visceral testimonies' },
     { source: 'jonathan-weygandt', target: 'james-fox',       label: 'Fox conducted the original interview and called Weygandt\'s testimony the most outstanding from the entire Disclosure Project' },
     { source: 'jonathan-weygandt', target: 'clifford-stone',  label: 'both describe crash retrieval scenes where unmarked government teams rapidly displaced regular military units' },
+
+    // Donna Hare connections
+    { source: 'donna-hare', target: 'steven-greer',    label: 'Greer organised the 2001 Disclosure Project where Hare gave her only major public testimony on NASA photo airbrushing' },
+    { source: 'donna-hare', target: 'edgar-mitchell',  label: 'both provide insider NASA perspectives on UAP: Mitchell as Apollo astronaut, Hare as Building 8 photo lab contractor' },
+    { source: 'donna-hare', target: 'gary-mckinnon',   label: 'McKinnon independently claimed to see a UAP photograph on a NASA JSC Building 8 machine - the same building where Hare witnessed photo airbrushing decades earlier' },
   ],
 };

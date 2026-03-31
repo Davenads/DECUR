@@ -659,6 +659,24 @@ const Sources: NextPage = () => {
             notes="Used for: Jonathan Weygandt."
           />
 
+          {/* Donna Hare */}
+          <SourceCard
+            name="The NASA Conspiracy: Donna Hare Witness Testimony - Internet Archive"
+            url="https://archive.org/details/youtube-tEBLmWhx1K0"
+            type="Video Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Primary archived video of Hare's Disclosure Project testimony. Describes witnessing a NASA technician airbrush a disc-shaped object from a lunar photograph in Building 8, and the broader culture of UAP suppression she observed at Johnson Space Center."
+            notes="Used for: Donna Hare."
+          />
+          <SourceCard
+            name="1970s era ex-NASA Photo-Technician Donna Hare - Medium / Richard Geldreich Jr."
+            url="https://medium.com/@richgel99/1970s-era-ex-nasa-photo-technician-and-teacher-donna-hare-1b2c57d68575"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Biographical overview and contextual analysis of Hare's employment at JSC Building 8, her clearance level, and the plausibility of her airbrushing claims within NASA's 1970s photo processing workflow."
+            notes="Used for: Donna Hare."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"
