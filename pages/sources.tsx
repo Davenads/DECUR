@@ -499,6 +499,32 @@ const Sources: NextPage = () => {
             notes="Used for: Gary McKinnon."
           />
 
+          {/* Mathew Bevan */}
+          <SourceCard
+            name="Mathew Bevan - Wikipedia"
+            url="https://en.wikipedia.org/wiki/Mathew_Bevan"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Primary reference for Bevan's biographical details, arrest timeline, charges, and post-acquittal career in security consulting."
+            notes="Used for: Mathew Bevan."
+          />
+          <SourceCard
+            name="UK Hacker Says He Found Anti-Gravity Engine File At W/P AFB - Bibliotecapleyades"
+            url="https://www.bibliotecapleyades.net/ciencia/secret_projects/project159.htm"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary source for Bevan's anti-gravity engine claim and Hangar 18 interrogation account, describing a working prototype using a heavy element found in Wright-Patterson AFB systems."
+            notes="Used for: Mathew Bevan."
+          />
+          <SourceCard
+            name="Bevan Overview - UFO Hackers"
+            url="https://www.ufohackers.org/hackers/mathew-bevan/bevan-overview"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Dedicated case overview with details of Bevan's methods, charges, the Datastream Cowboy partnership, and post-acquittal career."
+            notes="Used for: Mathew Bevan."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

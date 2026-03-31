@@ -1,0 +1,185 @@
+{
+  "profile": {
+    "id": "mathew-bevan",
+    "name": "Mathew Bevan",
+    "aliases": ["Kuji", "Matthew Bevan"],
+    "born": "June 10, 1974 - Cardiff, Wales",
+    "died": null,
+    "roles": [
+      "Systems Administrator",
+      "UAP Evidence Claimant",
+      "Ethical Hacker and Security Consultant"
+    ],
+    "service_period": "1996 (unauthorised computer access period)",
+    "organizations": ["Kuji Media Corporation"],
+    "clearance": null,
+    "summary": "Welsh IT technician who in 1996 - five years before Gary McKinnon - accessed US military networks including Wright-Patterson AFB, Griffiss Air Force Base Research Laboratory, and NASA, specifically hunting for suppressed UFO and free-energy evidence. Operating under the handle 'Kuji' with a Commodore Amiga and a blueboxing program called Roxbox, he claims to have found documents describing a working anti-gravity prototype. The US government called him 'the single biggest threat to world peace since Adolf Hitler'; charges were dropped in November 1997 when the Crown offered no evidence and the US declined to cooperate with UK prosecution.",
+    "education": [
+      "Self-taught computer programming, systems administration, and network security"
+    ],
+    "early_career": [
+      "Struggled with school and turned to the online world as an escape; taught himself programming and network intrusion techniques as a teenager in Cardiff",
+      "Met hacker Richard Pryce ('Datastream Cowboy') online; the two coordinated intrusions into US government and military systems in 1994-1996",
+      "His stated sole motivation was to locate evidence of the Roswell UFO crash and suppressed anti-gravity technology he believed was stored at Wright-Patterson AFB"
+    ],
+    "key_events": [
+      {
+        "year": "1994",
+        "event": "Bevan and 16-year-old Richard Pryce ('Datastream Cowboy') begin coordinating intrusions into US government networks from the UK. Pryce is arrested separately by Scotland Yard in 1994 and later convicted in 1997. Bevan continues operating under the alias 'Kuji'."
+      },
+      {
+        "year": "1996",
+        "event": "Using a Commodore Amiga loaded with a blueboxing program called Roxbox, Bevan accesses the Griffiss Air Force Base Research Laboratory (New York), Wright-Patterson AFB (Ohio), and NASA systems. His stated target: classified UFO crash retrieval files and anti-gravity propulsion research he believed were stored at Wright-Patterson."
+      },
+      {
+        "year": "1996",
+        "event": "While navigating Wright-Patterson systems, Bevan claims to have accessed documents referencing a working prototype anti-gravity engine powered by a 'heavy element' - a compartmentalised craft with reactor below and crew compartment above, described as being in active use though the aircraft type was not identified."
+      },
+      {
+        "year": "Jun 1996",
+        "event": "Arrested by Scotland Yard on three counts of unauthorised access and modification of US Air Force files. A US Senate Permanent Subcommittee on Investigations statement described 'Kuji' as a 'foreign agent, possibly of Eastern European origin' - investigators initially did not know Bevan was British."
+      },
+      {
+        "year": "1996",
+        "event": "During police interviews, investigators ask Bevan about Hangar 18 at Wright-Patterson. Bevan describes it as the building where extraterrestrial aircraft are stored; the officer reportedly confirms that is 'the place he was thinking of.' Bevan states he had not accessed files directly linked to the hangar."
+      },
+      {
+        "year": "1997",
+        "event": "Richard Pryce is convicted in October 1997. US Air Force Deputy Director of Defense Information Systems Jim Christy describes Bevan and Pryce's joint intrusions as 'the single biggest threat to world peace since Adolf Hitler' - a characterisation widely reported and later cited as disproportionate."
+      },
+      {
+        "year": "Nov 1997",
+        "event": "At Woolwich Crown Court, charges against Bevan are formally dropped. The Crown offers no evidence, stating prosecution is 'no longer in the public interest' following a lengthy and costly pre-trial period. The US government declines to cooperate with UK prosecution, the same pattern that would later emerge in the Gary McKinnon case."
+      },
+      {
+        "year": "2002",
+        "event": "Bevan speaks publicly with Gary McKinnon shortly after McKinnon's arrest, becoming a recognised voice on the experience of UK citizens prosecuted for UAP-motivated computer intrusions. Both cases share near-identical legal trajectories: British citizen, UAP motivation, arrested by UK authorities, charges ultimately blocked."
+      },
+      {
+        "year": "2006",
+        "event": "Founds Kuji Media Corporation, a professional security consultancy and software development firm based on ethical hacking principles. Becomes a recognised figure in the UK cybersecurity and hacker community, speaking at security conferences."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "gary-mckinnon",
+      "name": "Gary McKinnon",
+      "role": "Fellow UK hacker arrested for UAP-motivated government intrusions",
+      "relationship": "Bevan's 1996 case is the direct historical predecessor to McKinnon's 2001-2002 intrusions. Both targeted the same institutions (Wright-Patterson, NASA) for the same reason (suppressed UFO evidence), both were British nationals arrested by UK police, and both had US extradition blocked - Bevan via the Crown offering no evidence in 1997, McKinnon via Theresa May in 2012. Bevan spoke with McKinnon publicly following McKinnon's 2002 arrest."
+    },
+    {
+      "id": "nick-pope",
+      "name": "Nick Pope",
+      "role": "Former UK MoD UFO desk officer",
+      "relationship": "Pope provided public commentary on both the Bevan and McKinnon cases, contextualising UAP-motivated hacking within the broader UK MoD and government UFO investigation history. Pope's own UAP documentation work at the MoD ran concurrently with Bevan's 1996 intrusions."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1998",
+      "type": "interview",
+      "title": "The Story of the UFO Superhackers - UFO Updates",
+      "outlet": "UFO Updates / Jerry Washington",
+      "notes": "Early post-acquittal account detailing Bevan's methodology, targets, and the specific anti-gravity engine claim found at Wright-Patterson. One of the most detailed primary accounts of what he claims to have accessed."
+    },
+    {
+      "date": "2000",
+      "type": "conference",
+      "title": "DEF CON 8 - UFO Hacking and the Kuji Case",
+      "outlet": "DEF CON, Las Vegas",
+      "notes": "Bevan presents at DEF CON 8, discussing the intrusions, the investigative process, and his claimed findings at Wright-Patterson to an audience of security researchers and hackers."
+    },
+    {
+      "date": "2005",
+      "type": "interview",
+      "title": "Anti-Gravity Engine File at Wright-Patterson - Bibliotecapleyades Account",
+      "outlet": "Bibliotecapleyades / UFO research press",
+      "notes": "Detailed published account in which Bevan describes the anti-gravity documents in specific terms: a working prototype using a heavy element, compartmentalised design, in active use but with aircraft type unspecified."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mathew Bevan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mathew_Bevan",
+      "type": "Reference",
+      "notes": "Primary reference for biographical details, arrest timeline, and charges"
+    },
+    {
+      "title": "UK Hacker Says He Found Anti-Gravity Engine File At W/P AFB - Bibliotecapleyades",
+      "url": "https://www.bibliotecapleyades.net/ciencia/secret_projects/project159.htm",
+      "type": "News Article",
+      "notes": "Primary source for anti-gravity engine claim details and Hangar 18 interrogation account"
+    },
+    {
+      "title": "Bevan Overview - UFO Hackers",
+      "url": "https://www.ufohackers.org/hackers/mathew-bevan/bevan-overview",
+      "type": "Research Archive",
+      "notes": "Dedicated case overview with details of Bevan's methods, charges, and post-acquittal career"
+    },
+    {
+      "title": "When Two Young Hackers Played War Games with the Pentagon - Black Hat Ethical Hacking",
+      "url": "https://www.blackhatethicalhacking.com/articles/when-two-young-hackers-played-war-games-with-pentagon/",
+      "type": "News Article",
+      "notes": "Account of the Bevan-Pryce partnership and coordinated intrusions from the UK"
+    },
+    {
+      "title": "Kuji Media Corporation",
+      "url": "https://www.kujimedia.com/",
+      "type": "Official Site",
+      "notes": "Bevan's current professional firm; confirms post-acquittal security consulting career"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "While accessing Wright-Patterson AFB systems in 1996, Bevan found documents describing a working prototype anti-gravity engine powered by a 'heavy element,' with a compartmentalised design featuring a reactor section below and crew compartment above, described as in active operational use.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Bibliotecapleyades / UFO Hackers account (1998-2005); Bevan interview statements"
+    },
+    {
+      "claim": "During police interrogation after his arrest, investigators asked Bevan specifically about Hangar 18 at Wright-Patterson and apparently confirmed it was a storage location for extraterrestrial craft when Bevan defined it that way - suggesting police had classified knowledge of the hangar's contents.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Bevan post-acquittal interviews (1997-1998)"
+    },
+    {
+      "claim": "Bevan accessed Griffiss AFRL, Wright-Patterson AFB, and NASA systems in 1996 using a Commodore Amiga and a blueboxing program called Roxbox. This access is confirmed by the criminal charges filed and his admission during proceedings.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "UK court records; Crown Prosecution Service (November 1997)"
+    },
+    {
+      "claim": "The US government's decision not to cooperate with UK prosecution (mirroring the later McKinnon case) was motivated by reluctance to expose what Bevan had accessed in open court, rather than lack of evidence against him.",
+      "category": "Testimony",
+      "status": "disputed",
+      "source": "Bevan and supporters' interpretation; US government has never confirmed a UAP-related reason"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "gary-mckinnon",
+      "node_label": "Gary McKinnon",
+      "relationship": "McKinnon's 2001 intrusions followed the same pattern as Bevan's 1996 case; both spoke publicly after McKinnon's 2002 arrest.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Government UAP Programs",
+      "relationship": "Bevan's intrusions targeted classified post-Blue-Book UAP research he believed was held at Wright-Patterson.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "nick-pope",
+      "node_label": "Nick Pope",
+      "relationship": "Pope commented publicly on Bevan's case as part of his UK MoD UAP documentation work during the same period.",
+      "connection_type": "professional"
+    }
+  ]
+}

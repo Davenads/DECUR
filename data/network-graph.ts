@@ -1269,5 +1269,10 @@ export const graphData: GraphData = {
     { source: 'gary-mckinnon', target: 'nick-pope',      label: 'Pope publicly discussed McKinnon\'s UAP evidence claims throughout the extradition battle' },
     { source: 'gary-mckinnon', target: 'steven-greer',   label: 'Disclosure Project 2001 press conference was McKinnon\'s stated inspiration for the intrusions' },
     { source: 'gary-mckinnon', target: 'ross-coulthart', label: 'Coulthart referenced McKinnon\'s case in UAP investigative reporting' },
+
+    // Mathew Bevan connections
+    { source: 'mathew-bevan', target: 'gary-mckinnon', label: 'direct historical predecessor; both UK hackers arrested for UAP-motivated US government intrusions; spoke publicly after McKinnon\'s 2002 arrest' },
+    { source: 'mathew-bevan', target: 'nick-pope',      label: 'Pope commented on Bevan\'s case as part of his concurrent UK MoD UAP documentation work' },
+    { source: 'mathew-bevan', target: 'steven-greer',   label: 'both represent the UAP evidence-hunting tradition Greer\'s Disclosure Project would later amplify' },
   ],
 };

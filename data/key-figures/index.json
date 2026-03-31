@@ -1793,5 +1793,19 @@
     "data_file": "gary-mckinnon.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "mathew-bevan",
+    "name": "Mathew Bevan",
+    "aliases": ["Kuji", "Matthew Bevan"],
+    "role": "IT Technician and UAP Evidence Claimant",
+    "period": "1996 (intrusion period)",
+    "affiliation": "Independent; Kuji Media Corporation",
+    "summary": "Welsh IT technician who in 1996 - five years before Gary McKinnon - accessed Wright-Patterson AFB, Griffiss Air Force Base Research Laboratory, and NASA systems using a Commodore Amiga, searching for suppressed UFO crash evidence. Claims to have found documents describing a working anti-gravity prototype. The US called him 'the single biggest threat to world peace since Adolf Hitler'; charges were dropped in 1997 when the US declined to cooperate with UK prosecution.",
+    "status": "detailed",
+    "tags": ["hacker", "uk", "wright-patterson", "anti-gravity", "disclosure"],
+    "data_file": "mathew-bevan.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]
