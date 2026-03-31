@@ -1687,6 +1687,78 @@
     "includeInLineage": true
   },
   {
+    "id": "project-preserve-destiny",
+    "name": "Project Preserve Destiny",
+    "type": "project",
+    "status": "unknown",
+    "active_period": "1960s-1990s (alleged)",
+    "parent_org": "NSA / United States Air Force (alleged)",
+    "summary": "Project Preserve Destiny is an alleged classified U.S. government program described by USAF ELINT specialist and NSA employee Dan Sherman in his 1997 book 'Above Black.' Sherman claims he was covertly trained within the NSA to serve as a telepathic communications relay - an 'intuitive communicator' - receiving transmissions from non-human intelligences. He alleges the program operated within the NSA under deep cover, with participants unaware of the program's true purpose until activated. Sherman's account is among the most specific firsthand descriptions of an alleged human-ET communication interface program.",
+    "significance": "Project Preserve Destiny is significant primarily as a specific, detailed firsthand claim from a credentialed intelligence professional. If accurate, it represents direct evidence of a classified human-NHI communication program operating inside the NSA. Sherman's ELINT background and honorable discharge lend surface credibility to his account. The program remains unconfirmed by any government source, but Sherman's testimony is frequently cited alongside other insider accounts (e.g., Clifford Stone, Steven Greer's witness network) as part of a broader pattern of alleged ET liaison programs running parallel to official UAP investigations.",
+    "key_personnel": [
+      {
+        "name": "Dan Sherman",
+        "role": "USAF ELINT Specialist / Alleged Intuitive Communicator",
+        "figure_id": "dan-sherman"
+      }
+    ],
+    "key_events": [
+      {
+        "year": "1960s",
+        "event": "Alleged program inception - Sherman claims participants were genetically selected and prepared in utero, with his mother allegedly part of an earlier experiment during her pregnancy."
+      },
+      {
+        "year": "1992",
+        "event": "Sherman is assigned to the NSA and claims to begin receiving covert training as an intuitive communicator, initially without understanding the purpose of the exercises."
+      },
+      {
+        "year": "1993",
+        "event": "Sherman alleges he begins actively receiving non-human transmissions, passing encoded data to an unidentified handler within the NSA chain of command."
+      },
+      {
+        "year": "1994",
+        "event": "Sherman claims the transmissions increase in frequency and that he requests clarification about the program's nature, which is denied. He begins experiencing moral conflict about participating without informed consent."
+      },
+      {
+        "year": "1995",
+        "event": "Sherman separates from the Air Force with an honorable discharge. He retains notes from his alleged communication sessions."
+      },
+      {
+        "year": "1997",
+        "event": "Sherman publishes 'Above Black: Project Preserve Destiny - Insider Account of Alien Contact and Government Coverup,' the primary public record of these claims."
+      }
+    ],
+    "connected_documents": [],
+    "connected_figures": [
+      "dan-sherman",
+      "clifford-stone",
+      "steven-greer"
+    ],
+    "limitations": [
+      "No independent corroboration of Project Preserve Destiny exists - all claims derive from Sherman's single account in 'Above Black.'",
+      "The alleged genetic selection/in-utero preparation component is extraordinary and has no supporting evidence outside Sherman's testimony.",
+      "Sherman acknowledges he never met other alleged program participants and cannot verify the identity or nature of his NSA handler.",
+      "The program's classification status makes official denial or confirmation equally meaningless as evidence.",
+      "Sherman's account has not been assessed under oath in any congressional or formal proceeding."
+    ],
+    "sources": [
+      {
+        "title": "Above Black: Project Preserve Destiny (Sherman, 1997)",
+        "url": "https://www.amazon.com/Above-Black-Project-Preserve-Destiny/dp/0966097807",
+        "type": "Primary Source"
+      },
+      {
+        "title": "Dan Sherman Interview - Phenomena Magazine",
+        "type": "Interview"
+      }
+    ],
+    "relationships": [
+      { "target": "aawsap", "type": "parallel" },
+      { "target": "project-blue-book", "type": "parallel" }
+    ],
+    "includeInLineage": false
+  },
+  {
     "id": "condon-committee",
     "name": "Condon Committee (University of Colorado UFO Study)",
     "type": "study",
