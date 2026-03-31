@@ -1252,5 +1252,10 @@ export const graphData: GraphData = {
     { source: 'jeffrey-kripal', target: 'john-mack',        label: 'Archives of the Impossible holds complete John Mack Archive' },
     { source: 'jeffrey-kripal', target: 'garry-nolan',      label: 'Sol Foundation; presented at inaugural 2023 and 2024 symposia' },
     { source: 'jeffrey-kripal', target: 'diana-pasulka',    label: 'colleagues in academic study of religion and extraordinary experience; shared Sol Foundation network' },
+
+    // Robert Powell connections
+    { source: 'robert-powell', target: 'kevin-knuth',   label: 'co-authors on 2019 Entropy UAP physics paper' },
+    { source: 'robert-powell', target: 'ryan-graves',   label: 'both work at intersection of pilot testimony and technical UAP analysis' },
+    { source: 'robert-powell', target: 'leslie-kean',   label: 'parallel serious-evidence UAP documentation efforts; co-authored UFOs and Government (2012)' },
   ],
 };

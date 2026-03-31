@@ -437,6 +437,24 @@ const Sources: NextPage = () => {
             notes="Used for: Dr. Jeffrey Kripal."
           />
 
+          {/* Robert Powell */}
+          <SourceCard
+            name="UFOs: A Scientist Explains What We Know (And Don't Know) - Powell (2024)"
+            url="https://www.amazon.com/UFOs-Scientist-Explains-What-Know/dp/1538173581"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Powell's comprehensive 2024 overview of UAP evidence, government programs, and scientific analysis. Covers radar data, sensor corroboration, and the history of official UAP investigation."
+            notes="Used for: Robert Powell."
+          />
+          <SourceCard
+            name="SCU Stephenville Lights Radar Analysis - Scientific Coalition for UAP Studies (2008)"
+            url="https://www.explorescu.org/post/stephenville-lights"
+            type="Research Report"
+            typeColor="bg-green-100 text-green-700"
+            description="Landmark FOIA radar analysis of the 2008 Stephenville, Texas UAP sightings, documenting an unidentified high-speed object with no flight plan or transponder. Primary source for Powell's analytical methodology."
+            notes="Used for: Robert Powell."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

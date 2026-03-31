@@ -1751,5 +1751,19 @@
     "data_file": "jeffrey-kripal.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "robert-powell",
+    "name": "Robert Powell",
+    "aliases": ["Robert M. Powell", "Bob Powell"],
+    "role": "Co-Founder, Scientific Coalition for UAP Studies (SCU)",
+    "period": "2007-present",
+    "affiliation": "Scientific Coalition for UAP Studies (SCU)",
+    "summary": "Semiconductor engineer (AMD, 4 nanotechnology patents) and UAP researcher who co-authored the 2019 Entropy paper with Kevin Knuth calculating UAP flight physics from documented cases. Co-founder of the Scientific Coalition for UAP Studies (SCU); his radar analyses of the 2008 Stephenville Lights and 2013 Aguadilla incident are landmark examples of rigorous multi-sensor UAP case investigation.",
+    "status": "detailed",
+    "tags": ["scientist", "researcher", "scu", "radar-analysis", "engineering"],
+    "data_file": "robert-powell.json",
+    "type": "scientist",
+    "includeInExplore": true
   }
 ]

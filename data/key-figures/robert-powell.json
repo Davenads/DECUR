@@ -1,0 +1,194 @@
+{
+  "profile": {
+    "id": "robert-powell",
+    "name": "Robert Powell",
+    "aliases": ["Robert M. Powell", "Bob Powell"],
+    "born": null,
+    "died": null,
+    "roles": [
+      "Co-Founder and Executive Board Member, Scientific Coalition for UAP Studies (SCU)",
+      "Former Director of Research, MUFON (2007-2017)",
+      "Semiconductor Engineer and Nanotechnology Patent Holder (retired, AMD)"
+    ],
+    "service_period": "2007-present (UAP research); 1990s-2022 (semiconductor engineering)",
+    "organizations": [
+      "Scientific Coalition for UAP Studies (SCU)",
+      "MUFON (former)",
+      "Advanced Micro Devices (retired)"
+    ],
+    "clearance": null,
+    "summary": "Engineer and UAP researcher with 28 years at Advanced Micro Devices (4 nanotechnology patents) who co-founded the Scientific Coalition for UAP Studies (SCU) and co-authored the 2019 peer-reviewed Entropy paper with Kevin Knuth calculating UAP flight characteristics. His analytical reports on the 2008 Stephenville Lights and 2013 Aguadilla cases remain among the most rigorous open-source UAP investigations using radar data and multi-sensor analysis.",
+    "education": [
+      "Engineering degree (semiconductor physics background)"
+    ],
+    "early_career": [
+      "28-year career at Advanced Micro Devices (AMD) in semiconductor engineering and nanotechnology; holds 4 nanotechnology patents",
+      "Director of Research at MUFON (2007-2017), overseeing systematic investigation methodology and case analysis"
+    ],
+    "key_events": [
+      {
+        "year": "2007",
+        "event": "Became Director of Research at MUFON, overseeing the organization's investigative methodology. Began applying engineering analytical standards to UAP case data."
+      },
+      {
+        "year": "2008",
+        "event": "Led the SCU analysis of the Stephenville, Texas UAP sightings. Obtained Federal Aviation Administration radar data through FOIA request and correlated it with witness reports, documenting an unidentified object flying at high speed with no flight plan or transponder near President George W. Bush's Crawford ranch. The report became a landmark example of rigorous civilian UAP radar analysis."
+      },
+      {
+        "year": "2012",
+        "event": "Co-authored 'UFOs and Government: A Historical Inquiry' (Anomalist Books, with Michael Swords, Richard Hall, Clas Svahn, and others), documenting the history of official government UAP programs using declassified documents."
+      },
+      {
+        "year": "2013",
+        "event": "Led the SCU analysis of the Aguadilla, Puerto Rico incident - a UAP captured on US Customs and Border Protection thermal infrared video appearing to enter the ocean and re-emerge. The SCU report applied photogrammetric analysis to the raw video, calculating object speed, altitude, and behavior inconsistent with any known aircraft or natural phenomenon."
+      },
+      {
+        "year": "2014",
+        "event": "Co-founded the Scientific Coalition for UAP Studies (SCU) with other engineers and scientists, establishing a research organization committed to peer-review standards, physics-based analysis, and transparency - distinct from advocacy organizations."
+      },
+      {
+        "year": "Oct 2019",
+        "event": "Co-authored 'Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles' in Entropy (21:10, 939) with Kevin Knuth and Peter Reali. The paper calculated accelerations of 100 to 1,000+ g with no sonic booms or thermal signatures from documented cases including the Nimitz encounter. It became the most-cited peer-reviewed academic paper specifically analyzing UAP flight physics."
+      },
+      {
+        "year": "2024",
+        "event": "Published 'UFOs: A Scientist Explains What We Know (And Don't Know)' (Rowman & Littlefield, 2024), the most comprehensive recent overview of UAP evidence, government programs, and scientific analysis aimed at a general educated audience."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "kevin-knuth",
+      "name": "Dr. Kevin Knuth",
+      "role": "Professor of Physics, UAPx Lead Scientist",
+      "relationship": "Co-authors on the 2019 Entropy paper 'Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles.' Powell brought the engineering analysis and case data; Knuth provided the physics framework. The paper is the most-cited peer-reviewed study of UAP flight performance."
+    },
+    {
+      "id": "ryan-graves",
+      "name": "Ryan Graves",
+      "role": "Former F-18 pilot; founder, Americans for Safe Aerospace",
+      "relationship": "Both work at the intersection of pilot testimony and scientific analysis. Powell's SCU reports provide the technical corroboration framework for cases like those Graves represents. Both participate in the serious-evidence UAP research community."
+    },
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist and UAP researcher",
+      "relationship": "Both contributed to the serious-evidence UAP documentation effort of the 2010s. Powell co-authored 'UFOs and Government' (2012) as a companion historical reference to the kind of government-document journalism Kean pursued in 'UFOs: Generals, Pilots, and Government Officials Go on the Record' (2010)."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2008",
+      "type": "written",
+      "title": "SCU Stephenville Lights Radar Analysis Report",
+      "outlet": "Scientific Coalition for UAP Studies (SCU)",
+      "notes": "Lead author. FOIA-obtained FAA radar data correlated with witness reports documenting an unidentified high-speed object with no flight plan or transponder near Crawford, Texas. Landmark example of rigorous civilian radar-based UAP investigation."
+    },
+    {
+      "date": "2013",
+      "type": "written",
+      "title": "SCU Aguadilla, Puerto Rico UAP Video Analysis",
+      "outlet": "Scientific Coalition for UAP Studies (SCU)",
+      "notes": "Lead author. Photogrammetric analysis of US Customs and Border Protection thermal infrared video of an unidentified object appearing to enter and re-emerge from the Atlantic Ocean, with calculated speed and behavior inconsistent with known aircraft."
+    },
+    {
+      "date": "2012",
+      "type": "written",
+      "title": "UFOs and Government: A Historical Inquiry",
+      "outlet": "Anomalist Books (with Michael Swords, Richard Hall, et al.)",
+      "notes": "Co-authored historical survey of official government UAP programs using declassified documents, spanning Blue Book through the post-Cold War era."
+    },
+    {
+      "date": "Oct 2019",
+      "type": "academic-paper",
+      "title": "Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles",
+      "outlet": "Entropy, MDPI (21:10, article 939)",
+      "notes": "Co-authored with Kevin Knuth and Peter Reali. Calculated accelerations of 100 to 1,000+ g from documented UAP cases including the Nimitz encounter, with no accompanying sonic booms or thermal signatures. Most-cited peer-reviewed UAP physics paper. DOI: 10.3390/e21100939."
+    },
+    {
+      "date": "2024",
+      "type": "written",
+      "title": "UFOs: A Scientist Explains What We Know (And Don't Know)",
+      "outlet": "Rowman & Littlefield",
+      "notes": "Comprehensive overview of UAP evidence, government programs, and scientific analysis for a general educated audience. Covers radar data, sensor corroboration, government history, and the current state of scientific UAP investigation."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Estimating Flight Characteristics of Anomalous UAVs - Entropy (2019)",
+      "url": "https://www.mdpi.com/1099-4300/21/10/939",
+      "type": "Academic Paper",
+      "notes": "Co-authored peer-reviewed UAP physics paper with Knuth and Reali"
+    },
+    {
+      "title": "Robert Powell - SCU Profile",
+      "url": "https://www.explorescu.org/robert-powell",
+      "type": "Organization Profile",
+      "notes": "SCU biography and research overview"
+    },
+    {
+      "title": "UFOs: A Scientist Explains What We Know - Rowman & Littlefield (2024)",
+      "url": "https://www.amazon.com/UFOs-Scientist-Explains-What-Know/dp/1538173581",
+      "type": "Published Book",
+      "notes": "Primary 2024 book; most comprehensive recent UAP evidence overview"
+    },
+    {
+      "title": "UFOs and Government: A Historical Inquiry - Anomalist Books (2012)",
+      "url": "https://www.amazon.com/UFOs-Government-Historical-Inquiry/dp/1933665580",
+      "type": "Published Book",
+      "notes": "Co-authored historical survey of official UAP programs using declassified documents"
+    },
+    {
+      "title": "SCU Stephenville Lights Analysis - Scientific Coalition for UAP Studies",
+      "url": "https://www.explorescu.org/post/stephenville-lights",
+      "type": "Research Report",
+      "notes": "FOIA radar analysis report of the 2008 Stephenville, Texas UAP sightings"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "FAA radar data from the 2008 Stephenville, Texas incident corroborates witness accounts of an unidentified high-speed object with no flight plan or transponder, moving at speeds and on a track inconsistent with any registered aircraft.",
+      "category": "Radar Evidence",
+      "status": "partially-verified",
+      "source": "SCU Stephenville Lights Report (2008)"
+    },
+    {
+      "claim": "The 2013 Aguadilla, Puerto Rico object captured on USCBP thermal infrared video exhibits flight characteristics - including apparent water entry and re-emergence - that are inconsistent with any known aircraft, drone, or natural phenomenon.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "SCU Aguadilla Report (2013)"
+    },
+    {
+      "claim": "Analysis of documented UAP cases including the Nimitz encounter shows accelerations of 100 to 1,000+ g with no sonic booms, thermal signatures, or air disturbance - consistent with technology far beyond known human capabilities.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Entropy 21(10):939 (2019)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "kevin-knuth",
+      "node_label": "Dr. Kevin Knuth",
+      "relationship": "Co-authors on 2019 Entropy paper - the most-cited peer-reviewed UAP physics analysis.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "program",
+      "node_id": "scu",
+      "node_label": "Scientific Coalition for UAP Studies",
+      "relationship": "Co-founder and Executive Board Member of SCU.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 0,
+      "node_type": "program",
+      "node_id": "mufon",
+      "node_label": "MUFON",
+      "relationship": "Director of Research at MUFON from 2007 to 2017.",
+      "connection_type": "institutional"
+    }
+  ]
+}
