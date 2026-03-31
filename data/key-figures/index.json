@@ -2561,5 +2561,30 @@
     "data_file": "mark-mccandlish.json",
     "type": "insider",
     "includeInExplore": true
+  },
+  {
+    "id": "bob-jacobs",
+    "name": "Bob Jacobs",
+    "aliases": [
+      "Dr. Bob Jacobs",
+      "Robert Jacobs",
+      "Robert M. Jacobs"
+    ],
+    "role": "First Lieutenant, US Air Force (ret.) - Big Sur UFO Film",
+    "period": "1963-1966 (USAF); 1982-present (public disclosure)",
+    "affiliation": "United States Air Force",
+    "summary": "US Air Force First Lieutenant who in September 1964 oversaw telescopic filming of Atlas missile tests near Big Sur, California. The film captured a disc-shaped object circling the missile re-entry vehicle and firing four pulses at it - the test failed. His superior Major Florenz Mansmann independently corroborated the account in a 1987 letter. Jacobs has maintained an entirely consistent account for over 40 years; the film was confiscated and has never been publicly released.",
+    "status": "detailed",
+    "tags": [
+      "air-force",
+      "nuclear",
+      "vandenberg",
+      "big-sur",
+      "film-evidence",
+      "disclosure-project"
+    ],
+    "data_file": "bob-jacobs.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

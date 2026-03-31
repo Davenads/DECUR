@@ -623,6 +623,24 @@ const Sources: NextPage = () => {
             notes="Used for: Mark McCandlish."
           />
 
+          {/* Bob Jacobs */}
+          <SourceCard
+            name="Big Sur UFO - Wikipedia"
+            url="https://en.wikipedia.org/wiki/Big_Sur_UFO"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Comprehensive overview of the 1964 incident, the Mansmann corroboration letter, the film confiscation, and the competing decoy-chaff alternative explanation."
+            notes="Used for: Bob Jacobs."
+          />
+          <SourceCard
+            name="Big Sur UFO - NICAP Case Report"
+            url="http://www.nicap.org/reports/bigsur1.htm"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="NICAP's structured case file including Mansmann's 1987 corroborating letter and the testimony timeline, establishing the two-witness basis of the Big Sur case."
+            notes="Used for: Bob Jacobs."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

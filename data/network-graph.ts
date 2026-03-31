@@ -1299,5 +1299,10 @@ export const graphData: GraphData = {
     { source: 'mark-mccandlish', target: 'steven-greer',   label: 'Greer recruited McCandlish as a 2001 Disclosure Project witness; Fluxliner presentation was among the most technically specific disclosures' },
     { source: 'mark-mccandlish', target: 'bob-lazar',       label: 'McCandlish noted convergence between Lazar\'s S-4 craft descriptions and the ARV architecture; used as corroboration of Fluxliner plausibility' },
     { source: 'mark-mccandlish', target: 'clifford-stone',  label: 'both testified at 2001 Disclosure Project; Stone on crash retrieval, McCandlish on operational reverse-engineered craft' },
+
+    // Bob Jacobs connections
+    { source: 'bob-jacobs', target: 'robert-salas',    label: 'landmark UAP-nuclear weapons interface cases: Jacobs filmed UAP disabling missile 1964, Salas witnessed missile shutdown 1967' },
+    { source: 'bob-jacobs', target: 'robert-hastings', label: 'Hastings featured the Big Sur case in UFOs and Nukes (2008) as a cornerstone nuclear-UAP example' },
+    { source: 'bob-jacobs', target: 'steven-greer',    label: 'Greer recruited Jacobs as a 2001 Disclosure Project witness; Big Sur was among the most technically specific nuclear-UAP cases presented' },
   ],
 };

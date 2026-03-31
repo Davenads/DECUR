@@ -1,0 +1,167 @@
+{
+  "profile": {
+    "id": "bob-jacobs",
+    "name": "Bob Jacobs",
+    "aliases": ["Dr. Bob Jacobs", "Robert Jacobs", "Robert M. Jacobs"],
+    "born": "circa 1941 - United States",
+    "died": null,
+    "roles": [
+      "First Lieutenant, US Air Force (ret.)",
+      "Officer in Charge of Photographic Instrumentation, Vandenberg AFB (1963-1966)",
+      "Professor and Filmmaker (post-service career)"
+    ],
+    "service_period": "1963-1966 (US Air Force, Vandenberg AFB)",
+    "organizations": ["United States Air Force"],
+    "clearance": "Secret (former)",
+    "summary": "US Air Force First Lieutenant who in September 1964 oversaw a telescopic camera crew filming Atlas missile tests from a mountaintop near Big Sur, California. The film reportedly captured a disc-shaped UAP circling the missile's re-entry vehicle and firing four pulses at it - after which the missile test failed. His superior, Major Florenz Mansmann, confirmed the account in a 1987 letter. Jacobs first broke his silence in 1982 and has maintained an entirely consistent account for over 40 years. The Big Sur film itself has never been publicly released and its current whereabouts are unknown.",
+    "education": [
+      "Post-service academic career; later worked as a professor and filmmaker"
+    ],
+    "early_career": [
+      "Commissioned into the US Air Force and assigned as Officer in Charge of Photographic Instrumentation at Vandenberg Air Force Base, California (1963-1966)",
+      "Oversaw a team operating a high-powered telescopic camera system positioned on a mountaintop near Big Sur to film missile re-entry vehicles during live Atlas and Nike test launches",
+      "His role required detailed knowledge of both film systems and ballistic missile operations; he held a standard Secret clearance but not the higher-level clearances held by senior officers involved in classified warhead programs"
+    ],
+    "key_events": [
+      {
+        "year": "Sep 1964",
+        "event": "Jacobs' telescopic camera team is deployed to a mountaintop near Big Sur, California, to film an Atlas F intercontinental ballistic missile test from Vandenberg AFB. The system's assignment is to track the re-entry vehicle through its terminal phase to evaluate performance. The test film captures an object in the frame that was not expected."
+      },
+      {
+        "year": "Sep 1964",
+        "event": "The day after the test, Major Florenz Mansmann calls Jacobs into his office and shows him the developed film. Jacobs watches footage of what he describes as a round, disc-shaped object flying in and around the re-entry vehicle, circling it, then firing four distinct pulses of light or energy at it from four different angles before departing. The missile test failed. Shortly afterward, a lieutenant colonel and two men in civilian clothes arrive, take the film, and tell Jacobs the incident never happened."
+      },
+      {
+        "year": "1982",
+        "event": "Jacobs publishes his first public account of the 1964 incident in the National Enquirer under the headline 'UFO Spied on Space Missile - and I Captured It on Film,' stating he felt the American public had a right to know. The mainstream press largely ignores it due to the tabloid venue; UFO researchers take note."
+      },
+      {
+        "year": "May 1987",
+        "event": "Major Florenz Mansmann, Jacobs' former supervisor, independently confirms Jacobs' account in a detailed written letter to UAP researcher Barry Greenwood. Mansmann describes viewing the same film, confirms a disc-shaped object circled the re-entry vehicle, and confirms the film was subsequently confiscated. This independent corroboration elevates the case significantly above single-witness status."
+      },
+      {
+        "year": "1993",
+        "event": "Jacobs and Mansmann are separately profiled in the Skeptical Inquirer by researcher Philip Klass, who argues the object was decoy chaff and re-entry hardware released as part of classified countermeasures. Kingston George, the project engineer, supports a similar explanation. Jacobs and Mansmann both reject this interpretation, noting the object's controlled manoeuvres and sustained targeting behaviour are inconsistent with passive hardware."
+      },
+      {
+        "year": "May 2001",
+        "event": "Jacobs testifies at Steven Greer's Disclosure Project press conference at the National Press Club in Washington DC alongside other military whistleblowers, presenting his account of the 1964 film to a national audience. His consistent two-witness account - maintained for nearly 20 years by this point - stands as one of the most credible UAP-nuclear interface cases in the public record."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "robert-salas",
+      "name": "Robert Salas",
+      "role": "Air Force Captain, Malmstrom AFB nuclear weapons UFO incident (1967)",
+      "relationship": "Jacobs and Salas are the two most-cited witnesses of the UAP-nuclear weapons interface pattern: Jacobs filmed a UAP apparently disabling an ICBM in flight in 1964; Salas witnessed 10 Minuteman missiles go offline while a UAP hovered over the launch facility in 1967. Both have testified publicly for decades with entirely consistent accounts."
+    },
+    {
+      "id": "robert-hastings",
+      "name": "Robert Hastings",
+      "role": "UAP-nuclear weapons researcher",
+      "relationship": "Hastings, author of 'UFOs and Nukes' (2008), has featured Jacobs' Big Sur case prominently as one of the cornerstone examples of UAP activity at nuclear weapons facilities. Hastings organised the 2010 National Press Club press conference on UAP and nuclear weapons at which Salas and others testified."
+    },
+    {
+      "id": "steven-greer",
+      "name": "Dr. Steven Greer",
+      "role": "Disclosure Project organiser",
+      "relationship": "Greer recruited Jacobs as a 2001 Disclosure Project witness. The Big Sur case was presented alongside military and intelligence witness accounts of UAP interference with nuclear systems."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "1982",
+      "type": "print",
+      "title": "UFO Spied on Space Missile - National Enquirer",
+      "outlet": "National Enquirer",
+      "notes": "First public disclosure of the 1964 film and the confiscation. Jacobs states he felt the public had a right to know. Despite the tabloid venue, the account is factually consistent with all subsequent tellings."
+    },
+    {
+      "date": "May 2001",
+      "type": "congressional-briefing",
+      "title": "Disclosure Project Press Conference - Big Sur Film Testimony",
+      "outlet": "National Press Club, Washington DC (Steven Greer / Disclosure Project)",
+      "notes": "Jacobs presents the complete 1964 account to a national audience. By this point Mansmann's 1987 corroborating letter has been in the public record for 14 years, making it a two-witness case."
+    },
+    {
+      "date": "2022",
+      "type": "interview",
+      "title": "The Day a UFO Disarmed a Nuclear Warhead - The Good Trouble Show",
+      "outlet": "The Good Trouble Show (Substack)",
+      "notes": "Modern interview in which Jacobs discusses the 40-year consistency of his account and responds to the decoy-chaff alternative explanation."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Big Sur UFO - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Big_Sur_UFO",
+      "type": "Research Archive",
+      "notes": "Comprehensive overview of the incident, the Mansmann corroboration, and the alternative decoy-hardware explanation"
+    },
+    {
+      "title": "Big Sur UFO - NICAP Case Report",
+      "url": "http://www.nicap.org/reports/bigsur1.htm",
+      "type": "Research Archive",
+      "notes": "NICAP's structured case file including the Mansmann letter and testimony timeline"
+    },
+    {
+      "title": "The Day a UFO Disarmed a Nuclear Warhead - The Good Trouble Show (2022)",
+      "url": "https://thegoodtroubleshow.substack.com/p/the-day-a-ufo-disarmed-a-nuclear",
+      "type": "Video Interview",
+      "notes": "Modern primary source interview with Jacobs confirming 40+ year account consistency"
+    },
+    {
+      "title": "Big Sur UFO Incident - UFO Casebook",
+      "url": "https://www.ufocasebook.com/bigsur.html",
+      "type": "Research Archive",
+      "notes": "Case overview including both Jacobs' and Mansmann's accounts and the film confiscation sequence"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "In September 1964, Jacobs' camera team at Big Sur filmed a disc-shaped object circling and flying through an Atlas missile's re-entry vehicle during a live test, firing four pulses at it from four different angles before departing. The missile test subsequently failed.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "Jacobs' first-hand account (1982-2001); independently corroborated by Major Florenz Mansmann's 1987 written letter to Barry Greenwood, confirming the same events and the film confiscation"
+    },
+    {
+      "claim": "Major Mansmann showed Jacobs the film the following morning, then a lieutenant colonel and two men in civilian clothes arrived, confiscated the film, and told Jacobs the incident 'never happened.' The film has never been publicly released.",
+      "category": "Testimony",
+      "status": "partially-verified",
+      "source": "Jacobs' testimony (1982-2001); Mansmann 1987 letter independently confirms the confiscation sequence"
+    },
+    {
+      "claim": "The object filmed was not decoy chaff or re-entry vehicle hardware, as proposed by Kingston George and Phillip Klass, because its behaviour - sustained controlled flight circling the RV, targeted firing from four distinct positions, then departure - is inconsistent with any passively deployed hardware system.",
+      "category": "Testimony",
+      "status": "disputed",
+      "source": "Jacobs and Mansmann maintain the UAP interpretation; Klass (Skeptical Inquirer, 1993) and George argue for the decoy-chaff explanation"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "robert-salas",
+      "node_label": "Robert Salas",
+      "relationship": "Salas' 1967 Malmstrom missile shutdown and Jacobs' 1964 Big Sur film are the two landmark UAP-nuclear weapons interface cases; both have testified for decades with consistent accounts.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "steven-greer",
+      "node_label": "Dr. Steven Greer",
+      "relationship": "Greer recruited Jacobs as a 2001 Disclosure Project witness; Big Sur was among the most technically specific nuclear-UAP cases presented.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "robert-hastings",
+      "node_label": "Robert Hastings",
+      "relationship": "Hastings featured the Big Sur case in 'UFOs and Nukes' (2008) as a cornerstone example of UAP activity at nuclear weapons facilities.",
+      "connection_type": "investigative"
+    }
+  ]
+}
