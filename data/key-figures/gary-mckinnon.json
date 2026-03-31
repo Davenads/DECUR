@@ -1,0 +1,207 @@
+{
+  "profile": {
+    "id": "gary-mckinnon",
+    "name": "Gary McKinnon",
+    "aliases": ["Gary McKinnon", "Solo"],
+    "born": "February 10, 1966 - Glasgow, Scotland",
+    "died": null,
+    "roles": [
+      "Systems Administrator",
+      "UAP Evidence Claimant"
+    ],
+    "service_period": "2001-2002 (unauthorised computer access period)",
+    "organizations": [],
+    "clearance": null,
+    "summary": "Scottish systems administrator who between 2001 and 2002 accessed 97 US government networks - including NASA, the Pentagon, and US Army systems - searching for suppressed UFO evidence. His claims to have discovered a 'Non-Terrestrial Officers' spreadsheet and a high-resolution UFO photograph at NASA sparked global media attention, while a decade-long US extradition fight ended in 2012 when Home Secretary Theresa May blocked it on human-rights grounds.",
+    "education": [
+      "Self-taught systems administration and network security"
+    ],
+    "early_career": [
+      "Worked as a hairdresser in London before transitioning to IT support and systems administration",
+      "Became interested in UFO research following the Disclosure Project press conference in May 2001"
+    ],
+    "key_events": [
+      {
+        "year": "2001",
+        "event": "Inspired by the Disclosure Project's May 2001 press conference, McKinnon began systematically accessing US military and government networks via unsecured systems, specifically searching for evidence of suppressed UFO and free-energy technology."
+      },
+      {
+        "year": "2001",
+        "event": "Claims to have accessed a NASA Johnson Space Center network folder on a machine in Building 8 and viewed a high-resolution image of a large, smooth, cigar-shaped craft against a black background, before his dial-up connection was cut."
+      },
+      {
+        "year": "2002",
+        "event": "Claims to have found a Microsoft Excel spreadsheet on a US Space Command machine listing 'Non-Terrestrial Officers' with ranks and names, and a second tab listing fleet-to-fleet transfers between ships not found in any public US Navy registry."
+      },
+      {
+        "year": "Mar 2002",
+        "event": "Arrested by the UK's National Hi-Tech Crime Unit at his girlfriend's home in London. US prosecutors simultaneously file charges in the Eastern District of Virginia. He acknowledges accessing the systems but contests the claimed $700,000 damage figure."
+      },
+      {
+        "year": "Nov 2002",
+        "event": "Formally indicted by the US Department of Justice on seven counts of computer fraud, with prosecutors seeking extradition to face trial in the United States."
+      },
+      {
+        "year": "2006",
+        "event": "Extradition approved by UK courts after a series of legal challenges. McKinnon's legal team begins a separate human-rights challenge, arguing extradition would violate his rights given a diagnosis of Asperger syndrome and severe depression."
+      },
+      {
+        "year": "2008",
+        "event": "Gives widely circulated interview to Project Camelot, detailing for the first time the specific content of the 'Non-Terrestrial Officers' spreadsheet claim, the NASA Building 8 photograph, and his methodology."
+      },
+      {
+        "year": "2009",
+        "event": "UK Supreme Court rejects his final judicial appeal, leaving his fate in the hands of the Home Secretary. Public campaign grows with support from politicians, journalists, and celebrities."
+      },
+      {
+        "year": "Oct 2012",
+        "event": "Home Secretary Theresa May announces she is blocking extradition to the United States, citing a real risk that McKinnon would be a suicide risk if sent to face trial abroad, citing the forum bar and his diagnosed Asperger syndrome. The Crown Prosecution Service subsequently declines to prosecute him in the UK, effectively ending all proceedings."
+      },
+      {
+        "year": "2023",
+        "event": "BBC announces a feature-length drama based on McKinnon's story, reflecting sustained public interest in the case as UAP disclosure debates intensify in the United States."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "nick-pope",
+      "name": "Nick Pope",
+      "role": "Former UK MoD UFO desk officer",
+      "relationship": "Pope publicly discussed McKinnon's claims in media interviews during the extradition battle, noting that if the 'Non-Terrestrial Officers' claim were true it would be significant evidence of a secret space program. Pope served as a key commentator contextualising McKinnon's findings within the wider UAP disclosure landscape."
+    },
+    {
+      "id": "steven-greer",
+      "name": "Dr. Steven Greer",
+      "role": "Disclosure Project founder",
+      "relationship": "McKinnon has stated publicly that the Disclosure Project's May 2001 press conference - organised by Greer - was the direct inspiration for his decision to search US government networks for suppressed UFO evidence. Greer's witnesses described free-energy and off-world vehicle programs that McKinnon was specifically attempting to locate."
+    },
+    {
+      "id": "ross-coulthart",
+      "name": "Ross Coulthart",
+      "role": "Investigative journalist",
+      "relationship": "Coulthart has referenced McKinnon's case in his UAP investigative reporting as an example of how individuals with no government access attempted to independently verify UAP evidence claims, and the legal consequences that followed."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Mar 2006",
+      "type": "interview",
+      "title": "The Hacker - Jon Ronson / The Guardian",
+      "outlet": "The Guardian",
+      "interviewer": "Jon Ronson",
+      "notes": "Early in-depth profile in which McKinnon describes his methodology, motivations, and what he claims to have found, including the NASA Building 8 photograph. One of the most widely cited primary accounts."
+    },
+    {
+      "date": "2006",
+      "type": "interview",
+      "title": "Project Camelot Interview - Gary McKinnon",
+      "outlet": "Project Camelot",
+      "notes": "Extended video interview in which McKinnon elaborates on the 'Non-Terrestrial Officers' spreadsheet, the Building 8 photograph, the unsecured systems he accessed, and his belief that free-energy and anti-gravity technology is being suppressed."
+    },
+    {
+      "date": "Oct 2012",
+      "type": "interview",
+      "title": "BBC News - McKinnon Extradition Blocked",
+      "outlet": "BBC News",
+      "notes": "Post-decision interview following Theresa May's extradition block. McKinnon discusses the decade-long legal ordeal and reiterates the claims he was seeking to investigate."
+    },
+    {
+      "date": "2015",
+      "type": "interview",
+      "title": "ESET WeLiveSecurity Interview - 13 Years Later",
+      "outlet": "ESET WeLiveSecurity",
+      "notes": "Retrospective interview in which McKinnon reflects on the technical methods used, the systems accessed, and confirms the specific claims about Non-Terrestrial Officers and the NASA photograph remained unchanged over thirteen years."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Hacker - Jon Ronson, The Guardian (2006)",
+      "url": "https://www.theguardian.com/technology/2005/jul/09/hacking.ufo",
+      "type": "News Article",
+      "notes": "Primary journalistic source for McKinnon's account of what he found and his motivations"
+    },
+    {
+      "title": "Project Camelot - Gary McKinnon Interview (2006)",
+      "url": "https://www.youtube.com/watch?v=OmXaGwmWADU",
+      "type": "Video Interview",
+      "notes": "Extended primary source interview detailing Non-Terrestrial Officers claim and NASA Building 8 photograph"
+    },
+    {
+      "title": "US Department of Justice - McKinnon Indictment (2002)",
+      "url": "https://www.justice.gov/archive/usao/vae/ArchivePress/NovemberPDFs/McKinnon-indictment.pdf",
+      "type": "Government Document",
+      "notes": "Primary legal record of charges; establishes 97 systems accessed and $700,000 damage claim"
+    },
+    {
+      "title": "Theresa May Statement - UK Parliament Hansard (Oct 2012)",
+      "url": "https://hansard.parliament.uk/commons/2012-10-16/debates/12101638000001/GaryMcKinnonExtradition",
+      "type": "Government Record",
+      "notes": "Official parliamentary record of the extradition block decision and reasoning"
+    },
+    {
+      "title": "ESET WeLiveSecurity - Gary McKinnon Interview 13 Years Later (2015)",
+      "url": "https://www.welivesecurity.com/2015/04/17/gary-mckinnon-interview/",
+      "type": "News Article",
+      "notes": "Retrospective technical and personal account confirming details of the 2001-2002 intrusions"
+    },
+    {
+      "title": "BBC News - Gary McKinnon Profile and Case Overview",
+      "url": "https://www.bbc.co.uk/news/uk-19957138",
+      "type": "News Article",
+      "notes": "Comprehensive BBC timeline of the legal case from arrest through extradition block"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "While accessing a US Space Command computer, McKinnon found a Microsoft Excel spreadsheet listing 'Non-Terrestrial Officers' with military ranks and names not present in any public US service roster, and a second tab showing fleet-to-fleet transfers between ships with no public registry entries.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Project Camelot Interview (2006); Guardian / Jon Ronson (2006)"
+    },
+    {
+      "claim": "While accessing a NASA Johnson Space Center network folder on a Building 8 machine, McKinnon viewed a high-resolution image of a large, smooth, cigar-shaped craft against a black background before his connection was terminated.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Project Camelot Interview (2006); ESET WeLiveSecurity (2015)"
+    },
+    {
+      "claim": "McKinnon accessed 97 US government computer systems across NASA, the Pentagon, US Army, US Navy, and DoD networks between 2001 and 2002, exploiting machines with blank administrator passwords.",
+      "category": "Physical Evidence",
+      "status": "partially-verified",
+      "source": "US Department of Justice Indictment (November 2002); McKinnon's own admissions"
+    },
+    {
+      "claim": "The US government's claimed $700,000 in damages from McKinnon's intrusions was contested by his defence, which argued no files were deleted and damage claims were inflated to meet extradition treaty thresholds.",
+      "category": "Testimony",
+      "status": "disputed",
+      "source": "UK extradition hearing records; McKinnon legal team statements (2006-2012)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "person",
+      "node_id": "steven-greer",
+      "node_label": "Dr. Steven Greer",
+      "relationship": "Disclosure Project 2001 press conference was McKinnon's stated direct inspiration for beginning the intrusions.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "nick-pope",
+      "node_label": "Nick Pope",
+      "relationship": "Pope provided public commentary on McKinnon's UAP evidence claims throughout the extradition battle.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Government UFO Programs",
+      "relationship": "McKinnon's intrusions targeted systems he believed held suppressed post-Blue-Book UAP data and free-energy research.",
+      "connection_type": "investigative"
+    }
+  ]
+}

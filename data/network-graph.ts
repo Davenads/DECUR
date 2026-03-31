@@ -1264,5 +1264,10 @@ export const graphData: GraphData = {
     { source: 'alexander-wendt', target: 'garry-nolan',    label: 'Sol Foundation 2024 symposium; complementary scientific and political theory perspectives' },
     { source: 'alexander-wendt', target: 'jeffrey-kripal', label: 'colleagues in academic humanities engagement with UAP; both at Sol Foundation' },
     { source: 'alexander-wendt', target: 'daniel-sheehan', label: 'both analyze UAP disclosure as a structural political and legal problem' },
+
+    // Gary McKinnon connections
+    { source: 'gary-mckinnon', target: 'nick-pope',      label: 'Pope publicly discussed McKinnon\'s UAP evidence claims throughout the extradition battle' },
+    { source: 'gary-mckinnon', target: 'steven-greer',   label: 'Disclosure Project 2001 press conference was McKinnon\'s stated inspiration for the intrusions' },
+    { source: 'gary-mckinnon', target: 'ross-coulthart', label: 'Coulthart referenced McKinnon\'s case in UAP investigative reporting' },
   ],
 };

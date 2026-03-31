@@ -1779,5 +1779,19 @@
     "data_file": "alexander-wendt.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "gary-mckinnon",
+    "name": "Gary McKinnon",
+    "aliases": ["Solo"],
+    "role": "Systems Administrator and UAP Evidence Claimant",
+    "period": "2001-2002 (intrusion period); 2002-2012 (legal battle)",
+    "affiliation": "Independent",
+    "summary": "Scottish IT administrator who accessed 97 US government networks between 2001 and 2002 searching for suppressed UFO evidence. Claims to have found a 'Non-Terrestrial Officers' spreadsheet and a high-resolution UFO photograph at NASA. A decade-long US extradition fight ended in 2012 when UK Home Secretary Theresa May blocked it on human-rights grounds; he was never charged in the UK.",
+    "status": "detailed",
+    "tags": ["hacker", "whistleblower", "uk", "nasa", "computer-fraud", "extradition"],
+    "data_file": "gary-mckinnon.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

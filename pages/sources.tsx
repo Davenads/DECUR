@@ -465,6 +465,40 @@ const Sources: NextPage = () => {
             notes="Used for: Dr. Alexander Wendt."
           />
 
+          {/* Gary McKinnon */}
+          <SourceCard
+            name="The Hacker - Jon Ronson, The Guardian (2006)"
+            url="https://www.theguardian.com/technology/2005/jul/09/hacking.ufo"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary journalistic account of McKinnon's motivations and claims, including the NASA Building 8 photograph and Non-Terrestrial Officers spreadsheet. One of the most widely cited primary accounts."
+            notes="Used for: Gary McKinnon."
+          />
+          <SourceCard
+            name="Project Camelot - Gary McKinnon Interview (2006)"
+            url="https://www.youtube.com/watch?v=OmXaGwmWADU"
+            type="Video Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Extended primary source interview in which McKinnon details the Non-Terrestrial Officers claim, the Building 8 photograph, and his intrusion methodology across 97 US government systems."
+            notes="Used for: Gary McKinnon."
+          />
+          <SourceCard
+            name="US Department of Justice - McKinnon Indictment (2002)"
+            url="https://www.justice.gov/archive/usao/vae/ArchivePress/NovemberPDFs/McKinnon-indictment.pdf"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Primary legal record of seven computer fraud charges filed in the Eastern District of Virginia. Establishes the 97 systems accessed and $700,000 damage figure central to the extradition case."
+            notes="Used for: Gary McKinnon."
+          />
+          <SourceCard
+            name="Theresa May Statement - UK Parliament Hansard (Oct 2012)"
+            url="https://hansard.parliament.uk/commons/2012-10-16/debates/12101638000001/GaryMcKinnonExtradition"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official parliamentary record of Home Secretary Theresa May's decision to block McKinnon's extradition to the United States, citing human-rights grounds and Asperger syndrome diagnosis."
+            notes="Used for: Gary McKinnon."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"
