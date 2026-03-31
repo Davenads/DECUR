@@ -1,0 +1,194 @@
+{
+  "profile": {
+    "id": "clifford-stone",
+    "name": "Clifford Stone",
+    "aliases": ["Sgt. Clifford Stone", "Clifford E. Stone"],
+    "born": "1949 - United States",
+    "died": "February 10, 2021 - Roswell, New Mexico",
+    "roles": [
+      "Sergeant First Class, US Army (ret.)",
+      "UAP Crash Retrieval Claimant",
+      "Author - Eyes Only: The Story of Clifford Stone and UFO Crash Retrievals (2012)"
+    ],
+    "service_period": "1969-1990 (US Army)",
+    "organizations": ["United States Army"],
+    "clearance": "Secret with nuclear surety (former)",
+    "summary": "US Army Sergeant First Class (retired 1990) who claimed covert assignment to UAP crash retrieval teams operating under two real Air Force programs - Project Moon Dust and Operation Blue Fly. In 1989-1992 he led the FOIA campaign that forced the US Air Force to admit those programs existed after initially denying them. He testified at Steven Greer's 2001 Disclosure Project press conference, claiming the US government had catalogued 57 distinct non-human species. He lived in Roswell, New Mexico until his death in February 2021.",
+    "education": [
+      "US Army training and nuclear surety certification during 22-year service career"
+    ],
+    "early_career": [
+      "Enlisted in the US Army in 1969 and served for 22 years, achieving the rank of Sergeant First Class",
+      "Claims to have experienced childhood encounters with non-human entities, which he says led to his selection as an 'interfacer' - a soldier able to communicate calmly with surviving occupants at crash sites",
+      "Stationed in New Mexico for much of his career, in proximity to Roswell AFB and the broader network of military installations associated with UAP retrieval claims"
+    ],
+    "key_events": [
+      {
+        "year": "1969",
+        "event": "Enlists in the US Army. Claims that shortly afterward he was identified by senior officers as a candidate for a covert crash retrieval team due to an ability to remain calm and communicate during encounters with non-human entities."
+      },
+      {
+        "year": "1969",
+        "event": "Claims first covert crash retrieval assignment, beginning a series of operations he says continued throughout his Army career under the classified umbrella of Project Moon Dust and Operation Blue Fly."
+      },
+      {
+        "year": "1989",
+        "event": "Retires from the US Army after 22 years and immediately begins a systematic Freedom of Information Act campaign, writing to 14 US intelligence agencies seeking records on Project Moon Dust and Operation Blue Fly - two Air Force programs he claims he operated under."
+      },
+      {
+        "year": "1990",
+        "event": "The US Air Force tells Stone in writing that 'we do not have any records responsive to your request' regarding Project Moon Dust and Operation Blue Fly, flatly denying the programs exist."
+      },
+      {
+        "year": "1992",
+        "event": "Stone enlists New Mexico Senators Jeff Bingaman and Pete Domenici to press the Air Force directly. Senator Bingaman's office receives a letter from the Air Force initially repeating the denial - then, when Bingaman responds with documents that contradict the denial, the Air Force issues an amended statement through Colonel George Mattingley Jr. formally acknowledging both programs existed and that 'Project MOON DUST and Operation BLUE FLY missions were similarly discontinued.' This is the first official US government admission that these crash retrieval-adjacent programs existed."
+      },
+      {
+        "year": "May 2001",
+        "event": "Testifies at Steven Greer's Disclosure Project press conference at the National Press Club in Washington DC alongside nineteen other government and military witnesses. Stone claims under oath that the US government has catalogued 57 distinct non-human species encountered through crash retrieval and contact operations, and that he personally participated in these operations."
+      },
+      {
+        "year": "2012",
+        "event": "Publishes 'Eyes Only: The Story of Clifford Stone and UFO Crash Retrievals' (co-authored with Paola Leopizzi Harris), providing the most detailed first-person account of his claimed crash retrieval career and the programs he says operated under."
+      },
+      {
+        "year": "Feb 2021",
+        "event": "Dies in Roswell, New Mexico on February 10, 2021, aged approximately 72. Kevin Randle, a credible and often-skeptical UAP researcher, published a memorial noting Stone's role in forcing official acknowledgment of Moon Dust and Blue Fly while maintaining reservations about his more extreme personal claims."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "steven-greer",
+      "name": "Dr. Steven Greer",
+      "role": "Disclosure Project organizer",
+      "relationship": "Greer recruited Stone as one of the principal witnesses at the May 2001 Disclosure Project press conference. Stone's crash retrieval testimony - particularly the 57 species claim - became one of the most cited and most controversial elements of Greer's overall disclosure effort."
+    },
+    {
+      "id": "robert-salas",
+      "name": "Robert Salas",
+      "role": "Fellow Disclosure Project witness; Air Force veteran",
+      "relationship": "Salas and Stone both testified at the 2001 Disclosure Project press conference as military veterans with direct UAP experience claims. Salas co-authored the Kindle edition of Stone's 'Eyes Only' book, indicating a close professional relationship within the military whistleblower community."
+    },
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton Friedman",
+      "role": "Nuclear physicist and UAP researcher",
+      "relationship": "Friedman and Stone both centered their research on Roswell and US government crash retrieval programs. As a New Mexico resident, Stone operated in the same geographic and research community that Friedman documented extensively over decades."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "May 2001",
+      "type": "congressional-briefing",
+      "title": "Disclosure Project Press Conference - National Press Club",
+      "outlet": "National Press Club, Washington DC (Steven Greer / Disclosure Project)",
+      "notes": "Stone's most widely cited public disclosure. Testifies to crash retrieval operations under Moon Dust and Blue Fly, the 57 species catalogue, and his role as a military 'interfacer' able to communicate with surviving non-human entities."
+    },
+    {
+      "date": "2009",
+      "type": "interview",
+      "title": "UFO Crash Retrievals and Technology - VERITAS Interview",
+      "outlet": "VERITAS with Mel Hostalrich",
+      "notes": "Extended interview detailing crash retrieval operations, the Moon Dust and Blue Fly program mechanics, and Stone's personal history with the Army teams. One of his most comprehensive post-Disclosure Project accounts."
+    },
+    {
+      "date": "2012",
+      "type": "written",
+      "title": "Eyes Only: The Story of Clifford Stone and UFO Crash Retrievals",
+      "outlet": "CreateSpace / Amazon (co-authored with Paola Leopizzi Harris)",
+      "notes": "Stone's primary written disclosure. Provides the most detailed first-person account of his claimed 22-year crash retrieval career, the FOIA battle over Moon Dust and Blue Fly, and his experiences with non-human entities."
+    },
+    {
+      "date": "2016",
+      "type": "interview",
+      "title": "Cosmic Disclosure - Empaths and Extraterrestrials",
+      "outlet": "Gaia / Cosmic Disclosure with David Wilcock",
+      "notes": "Stone discusses in detail his claimed role as an 'interfacer' and the process by which the military identified and trained personnel for contact situations with non-human entities at crash sites."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eyes Only: The Story of Clifford Stone and UFO Crash Retrievals (Stone, 2012)",
+      "url": "https://www.amazon.com/Eyes-Only-Story-Clifford-Retrievals/dp/1467958670",
+      "type": "Published Book",
+      "notes": "Primary source - Stone's own first-person account"
+    },
+    {
+      "title": "Project Moon Dust FOIA Documents - Kevin Randle / NICAP",
+      "url": "https://www.nicap.org/moondust.htm",
+      "type": "Research Archive",
+      "notes": "Documents the Stone-Bingaman FOIA sequence and the Air Force admission of Moon Dust and Blue Fly"
+    },
+    {
+      "title": "Cliff Stone Has Died - Kevin Randle (A Different Perspective)",
+      "url": "http://kevinrandle.blogspot.com/2021/02/cliff-stone-has-died.html",
+      "type": "News Article",
+      "notes": "Memorial post from credible skeptical researcher Kevin Randle; acknowledges Moon Dust/Blue Fly contribution while noting reservations about personal claims"
+    },
+    {
+      "title": "Disclosure Project Testimony - Clifford Stone (2001)",
+      "url": "https://www.youtube.com/watch?v=MoGBCDV8L3s",
+      "type": "Video Interview",
+      "notes": "Primary video record of Stone's 2001 National Press Club testimony"
+    },
+    {
+      "title": "FOIA Documents on Moon Dust and Blue Fly - University of Ottawa Archive",
+      "url": "https://arcs-atom.uottawa.ca/index.php/foia-documents-on-moon-dust-blue-fly",
+      "type": "Government Document",
+      "notes": "Archived FOIA documents confirming the existence of Moon Dust and Blue Fly programs"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Project Moon Dust and Operation Blue Fly existed as US Air Force programs for recovering objects of unknown origin, and the Air Force initially lied about their existence before being forced to admit them via Senator Bingaman's intervention in 1992.",
+      "category": "Physical Evidence",
+      "status": "verified",
+      "source": "Colonel George Mattingley Jr. letter to Senator Jeff Bingaman (1992); FOIA document archive; NICAP / Kevin Randle documentation"
+    },
+    {
+      "claim": "Stone was personally assigned to covert crash retrieval teams operating under Moon Dust and Blue Fly throughout his 1969-1990 Army career, participating in the recovery of crashed craft and non-human entities.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Eyes Only: The Story of Clifford Stone and UFO Crash Retrievals (2012); Disclosure Project testimony (May 2001)"
+    },
+    {
+      "claim": "The US government has catalogued at least 57 distinct non-human species encountered through crash retrieval and contact operations, and maintains a classified index of their physical characteristics.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Disclosure Project press conference testimony (May 2001); Eyes Only (2012)"
+    },
+    {
+      "claim": "Stone was selected by the Army as an 'interfacer' - personnel able to communicate calmly with surviving non-human entities at crash sites - due to childhood encounters that conditioned him to remain composed during contact.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "Cosmic Disclosure interview (2016); VERITAS interview (2009)"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "program",
+      "node_id": "project-blue-book",
+      "node_label": "Government UAP Programs",
+      "relationship": "Stone's FOIA campaign targeted the classified successor programs to Blue Book - Moon Dust and Blue Fly - that he claimed constituted the real crash retrieval infrastructure.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "steven-greer",
+      "node_label": "Dr. Steven Greer",
+      "relationship": "Greer recruited Stone as a principal Disclosure Project witness following Stone's successful FOIA battle over Moon Dust and Blue Fly.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "robert-salas",
+      "node_label": "Robert Salas",
+      "relationship": "Both testified at the 2001 Disclosure Project as military veterans with direct UAP experience claims; Salas co-authored Stone's 'Eyes Only' book.",
+      "connection_type": "professional"
+    }
+  ]
+}

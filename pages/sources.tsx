@@ -525,6 +525,32 @@ const Sources: NextPage = () => {
             notes="Used for: Mathew Bevan."
           />
 
+          {/* Clifford Stone */}
+          <SourceCard
+            name="Eyes Only: The Story of Clifford Stone and UFO Crash Retrievals (Stone, 2012)"
+            url="https://www.amazon.com/Eyes-Only-Story-Clifford-Retrievals/dp/1467958670"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Stone's primary written disclosure. First-person account of his claimed 22-year crash retrieval career under Project Moon Dust and Operation Blue Fly, co-authored with Paola Leopizzi Harris."
+            notes="Used for: Clifford Stone."
+          />
+          <SourceCard
+            name="Project Moon Dust FOIA Documents - Kevin Randle / NICAP"
+            url="https://www.nicap.org/moondust.htm"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Documents the Stone-Bingaman FOIA sequence and the Air Force's 1992 admission through Colonel Mattingley that Moon Dust and Blue Fly programs existed - the primary verified element of Stone's case."
+            notes="Used for: Clifford Stone."
+          />
+          <SourceCard
+            name="Cliff Stone Has Died - Kevin Randle (A Different Perspective, 2021)"
+            url="http://kevinrandle.blogspot.com/2021/02/cliff-stone-has-died.html"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Memorial post from credible skeptical UAP researcher Kevin Randle, acknowledging Stone's role in forcing the official Moon Dust and Blue Fly admission while noting his reservations about Stone's personal claims."
+            notes="Used for: Clifford Stone."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

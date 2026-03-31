@@ -509,7 +509,9 @@
   {
     "id": "ross-coulthart",
     "name": "Ross Coulthart",
-    "aliases": ["Coulthart"],
+    "aliases": [
+      "Coulthart"
+    ],
     "role": "Senior Investigative Journalist, NewsNation; Author - In Plain Sight",
     "period": "2020–present (UAP); 1980s–present (career)",
     "affiliation": "NewsNation, Nine Network Australia",
@@ -963,7 +965,9 @@
   {
     "id": "matthew-brown",
     "name": "Matthew Brown",
-    "aliases": ["The IMCON Whistleblower"],
+    "aliases": [
+      "The IMCON Whistleblower"
+    ],
     "role": "Policy/Technical Advisor, OSD and State Dept.; IMMACULATE CONSTELLATION Whistleblower",
     "period": "c. 2012-2024 (government)",
     "affiliation": "Office of the Secretary of Defense / U.S. Department of State",
@@ -985,13 +989,25 @@
   {
     "id": "kit-green",
     "name": "Dr. Christopher \"Kit\" Green",
-    "aliases": ["Kit Green", "Blue Jay", "Christopher Green"],
+    "aliases": [
+      "Kit Green",
+      "Blue Jay",
+      "Christopher Green"
+    ],
     "role": "CIA Senior Analyst (Weird Desk); AAWSAP DIRD Author; Forensic Neurologist",
     "period": "c. 1969-1985 (CIA); 2009 (AAWSAP); 2012-present (NHI medical research)",
     "affiliation": "CIA / General Motors / Wayne State University / BAASS research network",
     "summary": "Former CIA Senior Division Analyst who maintained custodianship of the agency's internal UAP files (the 'Weird Desk') for over a decade and briefed two CIA directors on UAP phenomena. A board-certified forensic neurologist, he authored a 2009 AAWSAP Defense Intelligence Reference Document on physiological injuries from UAP proximity, then co-investigated neurological anomalies in UAP-affected government personnel with Dr. Garry Nolan.",
     "status": "detailed",
-    "tags": ["cia", "aawsap", "medical-research", "aviary", "neurology", "dird", "intelligence-community"],
+    "tags": [
+      "cia",
+      "aawsap",
+      "medical-research",
+      "aviary",
+      "neurology",
+      "dird",
+      "intelligence-community"
+    ],
     "data_file": "kit-green.json",
     "type": "insider",
     "includeInExplore": true
@@ -999,13 +1015,24 @@
   {
     "id": "colm-kelleher",
     "name": "Dr. Colm A. Kelleher",
-    "aliases": ["Colm Kelleher", "Dr. Kelleher"],
+    "aliases": [
+      "Colm Kelleher",
+      "Dr. Kelleher"
+    ],
     "role": "Deputy Administrator, NIDS; Senior Researcher, BAASS/AAWSAP",
     "period": "1996-2004 (NIDS); 2008-2012 (AAWSAP)",
     "affiliation": "National Institute for Discovery Science / Bigelow Aerospace Advanced Space Studies",
     "summary": "Biochemist who led the seven-year NIDS scientific investigation of Skinwalker Ranch under Robert Bigelow, then served as a senior researcher at BAASS during the DIA's $22M AAWSAP program. Co-authored 'Hunt for the Skinwalker' (2005) with George Knapp and 'Skinwalkers at the Pentagon' (2021) with James Lacatski and Knapp - two of the most important primary source accounts of private and government UAP research.",
     "status": "detailed",
-    "tags": ["nids", "aawsap", "skinwalker-ranch", "baass", "biochemistry", "cattle-mutilation", "bigelow"],
+    "tags": [
+      "nids",
+      "aawsap",
+      "skinwalker-ranch",
+      "baass",
+      "biochemistry",
+      "cattle-mutilation",
+      "bigelow"
+    ],
     "data_file": "colm-kelleher.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1013,13 +1040,24 @@
   {
     "id": "annie-jacobsen",
     "name": "Annie Jacobsen",
-    "aliases": ["A. Jacobsen"],
+    "aliases": [
+      "A. Jacobsen"
+    ],
     "role": "National Security Journalist; Author - Area 51, Phenomena, UFO",
     "period": "2004-present",
     "affiliation": "Los Angeles Times / Little, Brown and Company",
     "summary": "Investigative journalist whose three UAP-adjacent books represent the most sourced mainstream journalism on U.S. government anomalous research programs. 'Area 51' (2011) drew on 74 firsthand sources. 'Phenomena' (2017) documented the CIA/DIA Star Gate remote viewing program through primary sources including Hal Puthoff. 'UFO' (2023) is the most sourced journalistic account of UAP program infrastructure, independently corroborating Grusch-era whistleblower disclosures from a completely different government source network.",
     "status": "detailed",
-    "tags": ["journalism", "area-51", "star-gate", "aawsap", "uap-programs", "mainstream-media", "princeton", "little-brown"],
+    "tags": [
+      "journalism",
+      "area-51",
+      "star-gate",
+      "aawsap",
+      "uap-programs",
+      "mainstream-media",
+      "princeton",
+      "little-brown"
+    ],
     "data_file": "annie-jacobsen.json",
     "type": "journalist",
     "includeInExplore": true
@@ -1027,13 +1065,23 @@
   {
     "id": "jim-semivan",
     "name": "Jim Semivan",
-    "aliases": ["James Semivan"],
+    "aliases": [
+      "James Semivan"
+    ],
     "role": "CIA Clandestine Services Officer (ret.); SOL Foundation Co-founder",
     "period": "1983-2007 (CIA); 2017-present",
     "affiliation": "Central Intelligence Agency / SOL Foundation",
     "summary": "Former CIA Clandestine Services officer with 25 years of operational experience who has publicly disclosed a personal UAP/NHI encounter he and his wife experienced in their home. Co-founded the SOL Foundation with Dr. Garry Nolan to bridge intelligence community awareness of the phenomenon with rigorous academic scientific inquiry. A founding advisory board member of To The Stars Academy, Semivan represents a rare intersection of career intelligence operations experience and public UAP disclosure advocacy.",
     "status": "detailed",
-    "tags": ["cia", "intelligence-community", "sol-foundation", "ttsa", "disclosure", "consciousness", "nhi"],
+    "tags": [
+      "cia",
+      "intelligence-community",
+      "sol-foundation",
+      "ttsa",
+      "disclosure",
+      "consciousness",
+      "nhi"
+    ],
     "data_file": "jim-semivan.json",
     "type": "insider",
     "includeInExplore": true
@@ -1041,13 +1089,24 @@
   {
     "id": "kirsten-gillibrand",
     "name": "Senator Kirsten Gillibrand",
-    "aliases": ["Kirsten Gillibrand", "Sen. Gillibrand"],
+    "aliases": [
+      "Kirsten Gillibrand",
+      "Sen. Gillibrand"
+    ],
     "role": "U.S. Senator (D-NY); UAP Disclosure Act Co-sponsor",
     "period": "2009-present",
     "affiliation": "U.S. Senate / Senate Armed Services Committee",
     "summary": "The most consequential legislative figure in UAP transparency of the 2021-2024 period. Established the Senate Armed Services Subcommittee on Emerging Threats and Capabilities with an explicit UAP oversight mandate, co-sponsored the UAP Disclosure Act with Chuck Schumer, and chaired the first dedicated Senate UAP hearing in June 2023. Her sustained multi-year campaign to compel executive branch transparency produced the most durable legislative infrastructure for UAP accountability in modern American history.",
     "status": "detailed",
-    "tags": ["senate", "legislation", "uap-disclosure-act", "aaro", "oversight", "ndaa", "congress"],
+    "tags": [
+      "senate",
+      "legislation",
+      "uap-disclosure-act",
+      "aaro",
+      "oversight",
+      "ndaa",
+      "congress"
+    ],
     "data_file": "kirsten-gillibrand.json",
     "type": "official",
     "includeInExplore": true
@@ -1055,13 +1114,24 @@
   {
     "id": "tim-burchett",
     "name": "Rep. Tim Burchett",
-    "aliases": ["Tim Burchett", "Timothy Burchett"],
+    "aliases": [
+      "Tim Burchett",
+      "Timothy Burchett"
+    ],
     "role": "U.S. Representative (R-TN); House Oversight UAP Hearing Co-chair",
     "period": "2019-present",
     "affiliation": "U.S. House of Representatives",
     "summary": "U.S. Representative from Tennessee and co-chair of the House UAP Caucus who co-led the landmark July 2023 House Oversight Committee hearing where David Grusch, Ryan Graves, and David Fravor testified under oath. One of the most outspoken congressional voices on UAP disclosure, Burchett has sustained a multi-year campaign for whistleblower protections and full government transparency on non-human intelligence.",
     "status": "detailed",
-    "tags": ["house", "congress", "uap-disclosure", "oversight", "whistleblower", "hearings", "legislation"],
+    "tags": [
+      "house",
+      "congress",
+      "uap-disclosure",
+      "oversight",
+      "whistleblower",
+      "hearings",
+      "legislation"
+    ],
     "data_file": "tim-burchett.json",
     "type": "official",
     "includeInExplore": true
@@ -1069,13 +1139,24 @@
   {
     "id": "john-burroughs",
     "name": "John Burroughs",
-    "aliases": ["SSgt. John Burroughs"],
+    "aliases": [
+      "SSgt. John Burroughs"
+    ],
     "role": "USAF Staff Sergeant (ret.); Rendlesham Forest Primary Witness",
     "period": "1979-1988 (USAF)",
     "affiliation": "U.S. Air Force / 81st Security Police Squadron",
     "summary": "Former U.S. Air Force Staff Sergeant and primary ground witness to the Rendlesham Forest incident (December 1980), one of the most documented UAP cases in history, in which USAF personnel at RAF Bentwaters/Woodbridge encountered an unidentified craft at close range over three consecutive nights. Burroughs later fought a years-long legal battle with the VA over cardiac health issues he attributes to radiation exposure, winning a 2015 landmark settlement that required Senate Armed Services Committee intervention to compel review of his classified medical records - an unprecedented outcome in any UAP-related health case.",
     "status": "detailed",
-    "tags": ["rendlesham-forest", "usaf", "witness", "health-effects", "uk", "raf-bentwaters", "va-benefits", "1980"],
+    "tags": [
+      "rendlesham-forest",
+      "usaf",
+      "witness",
+      "health-effects",
+      "uk",
+      "raf-bentwaters",
+      "va-benefits",
+      "1980"
+    ],
     "data_file": "john-burroughs.json",
     "type": "insider",
     "includeInExplore": true
@@ -1083,13 +1164,26 @@
   {
     "id": "edward-ruppelt",
     "name": "Capt. Edward J. Ruppelt",
-    "aliases": ["Edward Ruppelt", "Captain Ruppelt", "Ed Ruppelt"],
+    "aliases": [
+      "Edward Ruppelt",
+      "Captain Ruppelt",
+      "Ed Ruppelt"
+    ],
     "role": "USAF Captain; Project Blue Book Chief (1951-1953)",
     "period": "1951-1953 (Blue Book)",
     "affiliation": "U.S. Air Force / Project Blue Book",
     "summary": "U.S. Air Force Captain who served as chief of Project Blue Book during its most scientifically rigorous period, coined the term 'Unidentified Flying Object,' and after leaving the Air Force published the most candid insider account of official UAP investigation ever released. His 1956 book documented cases the Air Force could not explain and criticized the Robertson Panel's debunking mandate - a record that became foundational to serious UAP research in the decades that followed.",
     "status": "detailed",
-    "tags": ["project-blue-book", "usaf", "atic", "robertson-panel", "historical", "washington-flap", "1950s", "investigation"],
+    "tags": [
+      "project-blue-book",
+      "usaf",
+      "atic",
+      "robertson-panel",
+      "historical",
+      "washington-flap",
+      "1950s",
+      "investigation"
+    ],
     "data_file": "edward-ruppelt.json",
     "type": "insider",
     "includeInExplore": true
@@ -1097,13 +1191,26 @@
   {
     "id": "james-mcdonald",
     "name": "Dr. James E. McDonald",
-    "aliases": ["James McDonald", "Dr. McDonald", "Jim McDonald"],
+    "aliases": [
+      "James McDonald",
+      "Dr. McDonald",
+      "Jim McDonald"
+    ],
     "role": "Senior Physicist, Univ. of Arizona; UAP Scientific Investigator",
     "period": "1966-1971 (UAP research)",
     "affiliation": "University of Arizona / Institute of Atmospheric Physics",
     "summary": "Senior atmospheric physicist at the University of Arizona who became the most credentialed scientist to seriously investigate UAP cases during the Cold War era. His 1969 critique 'Science in Default' demonstrated that the Condon Report had systematically ignored the strongest cases in its own sample, and his 1968 congressional testimony was among the first by a credentialed scientist arguing UAP represented a genuine unsolved scientific problem.",
     "status": "detailed",
-    "tags": ["science", "atmospheric-physics", "project-blue-book", "condon-report", "congress", "historical", "1960s", "nicap"],
+    "tags": [
+      "science",
+      "atmospheric-physics",
+      "project-blue-book",
+      "condon-report",
+      "congress",
+      "historical",
+      "1960s",
+      "nicap"
+    ],
     "data_file": "james-mcdonald.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1111,13 +1218,25 @@
   {
     "id": "diana-pasulka",
     "name": "Prof. Diana Walsh Pasulka",
-    "aliases": ["Diana Pasulka", "Diana Walsh Pasulka"],
+    "aliases": [
+      "Diana Pasulka",
+      "Diana Walsh Pasulka"
+    ],
     "role": "Professor of Religious Studies, UNCW; American Cosmic author",
     "period": "2016-present (UAP research)",
     "affiliation": "University of North Carolina Wilmington",
     "summary": "Pasulka is the foremost academic researcher at the intersection of UAP phenomena and religious studies, gaining unprecedented access to anonymous government and technology industry insiders who allowed her to document their work firsthand. Her Oxford University Press book American Cosmic (2019) and follow-up Encounters (2023) argue that UAP experiences are reshaping belief systems in ways that parallel historical religious transformations.",
     "status": "detailed",
-    "tags": ["academic", "religious-studies", "american-cosmic", "encounters", "consciousness", "silicon-valley", "uncw", "humanities"],
+    "tags": [
+      "academic",
+      "religious-studies",
+      "american-cosmic",
+      "encounters",
+      "consciousness",
+      "silicon-valley",
+      "uncw",
+      "humanities"
+    ],
     "data_file": "diana-pasulka.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1125,13 +1244,25 @@
   {
     "id": "townsend-brown",
     "name": "Thomas Townsend Brown",
-    "aliases": ["T.T. Brown", "Townsend Brown"],
+    "aliases": [
+      "T.T. Brown",
+      "Townsend Brown"
+    ],
     "role": "U.S. Navy Scientist; Biefeld-Brown Effect discoverer",
     "period": "1930s-1985",
     "affiliation": "U.S. Navy / Townsend Brown Foundation",
     "summary": "Mid-century American physicist whose research into the relationship between electromagnetism and gravity produced the Biefeld-Brown effect and drew him into classified government aerospace programs. His 1953 Project Winterhaven proposal for a disc-shaped electrogravitic aircraft and alleged vacuum experiments confirming thrust independent of ionic wind place him at the center of ongoing debates about whether anti-gravity principles were absorbed into black aerospace programs. Cited by modern UAP researchers as historical context for reverse-engineering claims.",
     "status": "detailed",
-    "tags": ["electrogravitics", "biefeld-brown-effect", "project-winterhaven", "navy", "historical", "anti-gravity", "1950s", "classified-aerospace"],
+    "tags": [
+      "electrogravitics",
+      "biefeld-brown-effect",
+      "project-winterhaven",
+      "navy",
+      "historical",
+      "anti-gravity",
+      "1950s",
+      "classified-aerospace"
+    ],
     "data_file": "townsend-brown.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1139,13 +1270,23 @@
   {
     "id": "thomas-wilson",
     "name": "Adm. Thomas R. Wilson",
-    "aliases": ["Thomas Wilson", "Tom Wilson", "Vice Adm. Wilson"],
+    "aliases": [
+      "Thomas Wilson",
+      "Tom Wilson",
+      "Vice Adm. Wilson"
+    ],
     "role": "Director, Defense Intelligence Agency (1999-2002)",
     "period": "1999-2002",
     "affiliation": "Defense Intelligence Agency",
     "summary": "Retired Vice Admiral and former DIA Director who is the central figure in the Wilson-Davis Memo - a leaked document describing his alleged confirmation that a private contractor was reverse-engineering non-human technology under a classified SAP, and that he had been denied access despite his rank.",
     "status": "detailed",
-    "tags": ["intelligence", "dod", "wilson-davis-memo", "sap", "disclosure"],
+    "tags": [
+      "intelligence",
+      "dod",
+      "wilson-davis-memo",
+      "sap",
+      "disclosure"
+    ],
     "data_file": "thomas-wilson.json",
     "type": "official",
     "includeInExplore": true
@@ -1153,13 +1294,23 @@
   {
     "id": "charles-halt",
     "name": "Lt. Col. Charles Halt",
-    "aliases": ["Charles Halt", "Col. Halt", "Charles I. Halt"],
+    "aliases": [
+      "Charles Halt",
+      "Col. Halt",
+      "Charles I. Halt"
+    ],
     "role": "Deputy Base Commander, RAF Bentwaters/Woodbridge; Senior Rendlesham Witness",
     "period": "1966-1994",
     "affiliation": "U.S. Air Force",
     "summary": "Retired U.S. Air Force Lieutenant Colonel and Deputy Base Commander at RAF Bentwaters who was the senior military witness to the Rendlesham Forest incident (December 1980). Authored the official 'Halt Memo' to the UK Ministry of Defence and recorded a real-time audio log during the encounter. Has stated under oath that what he witnessed was non-human technology and that a government cover-up followed.",
     "status": "detailed",
-    "tags": ["military", "rendlesham", "uk", "air-force", "historical"],
+    "tags": [
+      "military",
+      "rendlesham",
+      "uk",
+      "air-force",
+      "historical"
+    ],
     "data_file": "charles-halt.json",
     "type": "insider",
     "includeInExplore": true
@@ -1167,13 +1318,22 @@
   {
     "id": "marco-rubio",
     "name": "Sen. Marco Rubio",
-    "aliases": ["Marco Rubio", "Senator Rubio"],
+    "aliases": [
+      "Marco Rubio",
+      "Senator Rubio"
+    ],
     "role": "U.S. Senator (FL); Chairman, Senate Intelligence Committee (2020-2021)",
     "period": "2011-present",
     "affiliation": "U.S. Senate",
     "summary": "U.S. Senator from Florida and former Chairman of the Senate Intelligence Committee who authored the 2020 UAP Task Force legislative mandate - the first official government UAP reporting body since Project Blue Book. Has consistently framed UAP as a national security concern and pushed for government transparency.",
     "status": "detailed",
-    "tags": ["congress", "senate", "legislation", "intelligence", "uaptf"],
+    "tags": [
+      "congress",
+      "senate",
+      "legislation",
+      "intelligence",
+      "uaptf"
+    ],
     "data_file": "marco-rubio.json",
     "type": "official",
     "includeInExplore": true
@@ -1181,13 +1341,23 @@
   {
     "id": "mike-gallagher",
     "name": "Rep. Mike Gallagher",
-    "aliases": ["Mike Gallagher", "Michael Gallagher", "Rep. Gallagher"],
+    "aliases": [
+      "Mike Gallagher",
+      "Michael Gallagher",
+      "Rep. Gallagher"
+    ],
     "role": "U.S. Representative (WI-R); House Armed Services & Intelligence Committees",
     "period": "2017-2024",
     "affiliation": "U.S. House of Representatives",
     "summary": "Former U.S. Representative and Marine Corps intelligence officer who co-chaired the landmark July 2023 House Oversight UAP hearing featuring David Grusch, Ryan Graves, and David Fravor, and co-authored the UAP Disclosure Act of 2023 with Sen. Chuck Schumer. His analytical, non-sensationalist approach gave the 2023 UAP hearings significant institutional credibility.",
     "status": "detailed",
-    "tags": ["congress", "house", "legislation", "intelligence", "marine-corps"],
+    "tags": [
+      "congress",
+      "house",
+      "legislation",
+      "intelligence",
+      "marine-corps"
+    ],
     "data_file": "mike-gallagher.json",
     "type": "official",
     "includeInExplore": true
@@ -1195,13 +1365,25 @@
   {
     "id": "peter-sturrock",
     "name": "Dr. Peter Sturrock",
-    "aliases": ["Peter Sturrock", "Peter A. Sturrock", "P.A. Sturrock"],
+    "aliases": [
+      "Peter Sturrock",
+      "Peter A. Sturrock",
+      "P.A. Sturrock"
+    ],
     "role": "Professor Emeritus of Applied Physics, Stanford University; Founder, Society for Scientific Exploration",
     "period": "1961-2014",
     "affiliation": "Stanford University",
     "summary": "Stanford Professor Emeritus of Applied Physics who organized the 1997 Sturrock Panel - a rigorous scientific review of physical UAP evidence by nine independent scientists - and founded the Society for Scientific Exploration, providing the first mainstream academic infrastructure for anomalous phenomena research. His peer-reviewed work concluded that physical UAP evidence warranted serious scientific investigation.",
     "status": "detailed",
-    "tags": ["scientist", "stanford", "physics", "sturrock-panel", "sse", "academic", "historical"],
+    "tags": [
+      "scientist",
+      "stanford",
+      "physics",
+      "sturrock-panel",
+      "sse",
+      "academic",
+      "historical"
+    ],
     "data_file": "peter-sturrock.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1209,13 +1391,24 @@
   {
     "id": "nathan-twining",
     "name": "Gen. Nathan Twining",
-    "aliases": ["Nathan Twining", "Nathan F. Twining", "General Twining"],
+    "aliases": [
+      "Nathan Twining",
+      "Nathan F. Twining",
+      "General Twining"
+    ],
     "role": "Chairman, Joint Chiefs of Staff (1957-1960); Chief of Staff, USAF (1953-1957)",
     "period": "1947-1960",
     "affiliation": "U.S. Air Force",
     "summary": "Four-star General and Chairman of the Joint Chiefs who authored the pivotal 1947 'Twining Memo' - an authenticated government document concluding that flying saucers are 'real and not visionary or fictitious' and recommending the classified study group that became Projects Sign, Grudge, and Blue Book. The Twining Memo is one of the most significant official UAP documents in existence.",
     "status": "detailed",
-    "tags": ["military", "air-force", "historical", "twining-memo", "project-blue-book", "jcs"],
+    "tags": [
+      "military",
+      "air-force",
+      "historical",
+      "twining-memo",
+      "project-blue-book",
+      "jcs"
+    ],
     "data_file": "nathan-twining.json",
     "type": "official",
     "includeInExplore": true
@@ -1223,13 +1416,23 @@
   {
     "id": "jesse-marcel",
     "name": "Maj. Jesse Marcel Sr.",
-    "aliases": ["Jesse Marcel", "Jesse A. Marcel", "Jesse Marcel Sr."],
+    "aliases": [
+      "Jesse Marcel",
+      "Jesse A. Marcel",
+      "Jesse Marcel Sr."
+    ],
     "role": "Base Intelligence Officer, 509th Bomb Group, Roswell Army Air Field (1947)",
     "period": "1942-1950",
     "affiliation": "U.S. Army Air Forces",
     "summary": "U.S. Army Air Forces intelligence officer who was the primary military figure to recover and examine the Roswell crash debris in July 1947. In a landmark 1978 interview with Stanton Friedman, Marcel became the first credible military whistleblower to publicly state that the weather balloon explanation was false and that the recovered material had anomalous properties unlike anything he had encountered.",
     "status": "detailed",
-    "tags": ["military", "roswell", "historical", "whistleblower", "army-air-forces"],
+    "tags": [
+      "military",
+      "roswell",
+      "historical",
+      "whistleblower",
+      "army-air-forces"
+    ],
     "data_file": "jesse-marcel.json",
     "type": "insider",
     "includeInExplore": true
@@ -1243,7 +1446,12 @@
     "affiliation": "Independent Filmmaker",
     "summary": "Documentary filmmaker and investigative journalist who produced 'The Phenomenon' (2020) - widely considered the most credible UAP documentary ever made, featuring on-record statements from multiple heads of state, senior military officials, and scientists including Jacques Vallee. His films contributed to the 2020-2021 disclosure wave and are distinguished by their insistence on institutional, on-the-record sources.",
     "status": "detailed",
-    "tags": ["journalist", "filmmaker", "documentary", "disclosure"],
+    "tags": [
+      "journalist",
+      "filmmaker",
+      "documentary",
+      "disclosure"
+    ],
     "data_file": "james-fox.json",
     "type": "journalist",
     "includeInExplore": true
@@ -1251,13 +1459,23 @@
   {
     "id": "fife-symington",
     "name": "Gov. Fife Symington",
-    "aliases": ["Fife Symington", "Fife Symington III", "Governor Symington"],
+    "aliases": [
+      "Fife Symington",
+      "Fife Symington III",
+      "Governor Symington"
+    ],
     "role": "Governor of Arizona (1991-1997); U.S. Air Force Captain",
     "period": "1991-1997",
     "affiliation": "State of Arizona",
     "summary": "Former Arizona Governor and Air Force veteran who initially mocked the March 1997 Phoenix Lights event with a staged alien costume press conference, then publicly recanted in 2007 - stating he personally witnessed a massive structured craft that night and that it was unlike any known aircraft. His reversal as a credentialed military officer and former governor is one of the most significant official UAP admissions on record.",
     "status": "detailed",
-    "tags": ["official", "governor", "phoenix-lights", "air-force", "arizona"],
+    "tags": [
+      "official",
+      "governor",
+      "phoenix-lights",
+      "air-force",
+      "arizona"
+    ],
     "data_file": "fife-symington.json",
     "type": "official",
     "includeInExplore": true
@@ -1265,13 +1483,22 @@
   {
     "id": "michael-herrera",
     "name": "Michael Herrera",
-    "aliases": ["Michael Herrera", "Cpl. Michael Herrera"],
+    "aliases": [
+      "Michael Herrera",
+      "Cpl. Michael Herrera"
+    ],
     "role": "U.S. Marine Corps Veteran; UAP Whistleblower",
     "period": "2009-present",
     "affiliation": "U.S. Marine Corps (former)",
     "summary": "U.S. Marine Corps veteran who testified at the July 2023 House Oversight UAP hearing and filed a sworn ICIG complaint claiming his six-man patrol encountered a massive octagonal craft in Sumatra in 2009, being loaded by personnel in unmarked uniforms who subsequently threatened his patrol to silence. His account implies direct human interaction with non-human technology through a classified Special Access Program.",
     "status": "detailed",
-    "tags": ["military", "marine-corps", "whistleblower", "hearing-2023", "sap"],
+    "tags": [
+      "military",
+      "marine-corps",
+      "whistleblower",
+      "hearing-2023",
+      "sap"
+    ],
     "data_file": "michael-herrera.json",
     "type": "insider",
     "includeInExplore": true
@@ -1279,13 +1506,24 @@
   {
     "id": "barry-goldwater",
     "name": "Sen. Barry Goldwater",
-    "aliases": ["Barry Morris Goldwater", "Mr. Conservative"],
+    "aliases": [
+      "Barry Morris Goldwater",
+      "Mr. Conservative"
+    ],
     "role": "U.S. Senator, Arizona; Chairman, Senate Armed Services Committee",
     "period": "1953-1987",
     "affiliation": "U.S. Senate; U.S. Air Force Reserve",
     "summary": "U.S. Senator from Arizona for over three decades, USAF Major General, and Senate Armed Services Committee Chairman who repeatedly and publicly stated that the U.S. government held classified UAP evidence and denied him personal access. His confrontation with General Curtis LeMay over the 'Blue Room' at Wright-Patterson AFB - documented in a 1975 letter now held by the National Archives - remains one of the most significant political admissions in UAP disclosure history.",
     "status": "detailed",
-    "tags": ["government", "senate", "usaf", "wright-patterson", "blue-room", "access-denial", "cover-up"],
+    "tags": [
+      "government",
+      "senate",
+      "usaf",
+      "wright-patterson",
+      "blue-room",
+      "access-denial",
+      "cover-up"
+    ],
     "data_file": "barry-goldwater.json",
     "type": "official",
     "includeInExplore": true
@@ -1293,13 +1531,24 @@
   {
     "id": "robert-salas",
     "name": "Capt. Robert Salas",
-    "aliases": ["Robert L. Salas", "Bob Salas"],
+    "aliases": [
+      "Robert L. Salas",
+      "Bob Salas"
+    ],
     "role": "USAF Minuteman ICBM Launch Control Officer, Malmstrom AFB",
     "period": "1964-1971",
     "affiliation": "U.S. Air Force, Strategic Air Command",
     "summary": "Retired USAF Captain and primary living witness to the March 16, 1967 Echo Flight incident at Malmstrom AFB, in which all ten nuclear-armed Minuteman ICBMs went offline simultaneously while surface security personnel reported a UAP hovering over the front gate. The missile shutdowns are documented in declassified USAF records. Salas co-organized the 2010 National Press Club 'UFOs and Nuclear Weapons' press conference alongside six other former USAF officers, presenting signed affidavits before national media.",
     "status": "detailed",
-    "tags": ["military", "usaf", "nuclear", "malmstrom", "icbm", "strategic-air-command", "national-press-club"],
+    "tags": [
+      "military",
+      "usaf",
+      "nuclear",
+      "malmstrom",
+      "icbm",
+      "strategic-air-command",
+      "national-press-club"
+    ],
     "data_file": "robert-salas.json",
     "type": "insider",
     "includeInExplore": true
@@ -1307,13 +1556,24 @@
   {
     "id": "edgar-mitchell",
     "name": "Dr. Edgar Mitchell",
-    "aliases": ["Edgar Dean Mitchell", "Ed Mitchell"],
+    "aliases": [
+      "Edgar Dean Mitchell",
+      "Ed Mitchell"
+    ],
     "role": "NASA Apollo 14 Lunar Module Pilot; Founder, Institute of Noetic Sciences",
     "period": "1966-1972 (NASA); 1973-2016 (IONS)",
     "affiliation": "NASA; U.S. Navy; Institute of Noetic Sciences",
     "summary": "Apollo 14 astronaut and the sixth human to walk on the Moon, holding an MIT doctorate in Aeronautics and Astronautics. Mitchell publicly maintained across four decades that extraterrestrial visitation was real and that the government had suppressed evidence of it. In 1973 he founded the Institute of Noetic Sciences (IONS), a credentialed consciousness research organization still active today. His 2015 WikiLeaks-published emails to presidential campaign chairman John Podesta, requesting urgent meetings on ETI disclosure and zero point energy, are a documented primary source connecting his convictions to the highest levels of American politics.",
     "status": "detailed",
-    "tags": ["nasa", "astronaut", "apollo", "consciousness", "ions", "disclosure", "podesta-emails"],
+    "tags": [
+      "nasa",
+      "astronaut",
+      "apollo",
+      "consciousness",
+      "ions",
+      "disclosure",
+      "podesta-emails"
+    ],
     "data_file": "edgar-mitchell.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1321,13 +1581,23 @@
   {
     "id": "tom-delonge",
     "name": "Tom DeLonge",
-    "aliases": ["Thomas Matthew DeLonge Jr."],
+    "aliases": [
+      "Thomas Matthew DeLonge Jr."
+    ],
     "role": "Founder, To The Stars Academy of Arts & Science (TTSA)",
     "period": "2017-2021",
     "affiliation": "To The Stars Academy; To The Stars Inc.",
     "summary": "Founder of To The Stars Academy and the private citizen most responsible for the modern UAP disclosure era. Despite no institutional credentials, DeLonge assembled an unprecedented civilian team of former senior government officials and coordinated the December 2017 New York Times disclosure that forced the Pentagon's first public acknowledgment of UAP program funding. His pre-TTSA WikiLeaks emails to John Podesta document verified meetings with active USAF generals and Lockheed Skunk Works executives.",
     "status": "detailed",
-    "tags": ["ttsa", "disclosure", "navy-videos", "blink-182", "podesta-emails", "nyt-2017", "crada"],
+    "tags": [
+      "ttsa",
+      "disclosure",
+      "navy-videos",
+      "blink-182",
+      "podesta-emails",
+      "nyt-2017",
+      "crada"
+    ],
     "data_file": "tom-delonge.json",
     "type": "executive",
     "includeInExplore": true
@@ -1335,13 +1605,25 @@
   {
     "id": "john-alexander",
     "name": "Col. John Alexander",
-    "aliases": ["John B. Alexander", "Dr. John Alexander"],
+    "aliases": [
+      "John B. Alexander",
+      "Dr. John Alexander"
+    ],
     "role": "U.S. Army Special Forces Colonel; Chief of Human Technology, INSCOM; Director, Non-Lethal Weapons, Los Alamos",
     "period": "1982-1988 (INSCOM/ATP); 1988-2000s (Los Alamos/NIDS)",
     "affiliation": "U.S. Army; INSCOM; Los Alamos National Laboratory; NIDS",
     "summary": "Retired U.S. Army Special Forces Colonel who convened the Advanced Theoretical Physics Conference (ATP, 1985-1988) - the most substantive classified interagency UAP investigation between Project Blue Book and AATIP. Held in a SCIF at BDM Corporation with TS-cleared participants from Army, Navy, Air Force, CIA, NSA, and DIA, the ATP's finding that no coordinated UAP program existed is itself a historically significant data point. Post-retirement, he directed non-lethal weapons research at Los Alamos and participated in Bigelow's NIDS Skinwalker Ranch investigations alongside Vallee and Kelleher.",
     "status": "detailed",
-    "tags": ["military", "inscom", "special-forces", "atp-conference", "los-alamos", "nids", "skinwalker", "remote-viewing"],
+    "tags": [
+      "military",
+      "inscom",
+      "special-forces",
+      "atp-conference",
+      "los-alamos",
+      "nids",
+      "skinwalker",
+      "remote-viewing"
+    ],
     "data_file": "john-alexander.json",
     "type": "insider",
     "includeInExplore": true
@@ -1349,13 +1631,22 @@
   {
     "id": "john-callahan",
     "name": "John Callahan",
-    "aliases": ["John J. Callahan"],
+    "aliases": [
+      "John J. Callahan"
+    ],
     "role": "Division Chief, Accidents and Investigations Branch, Federal Aviation Administration",
     "period": "circa 1965-1995",
     "affiliation": "Federal Aviation Administration (FAA)",
     "summary": "Former FAA Division Chief who compiled and briefed the complete evidentiary record for the November 1986 JAL Flight 1628 incident - one of the most corroborated aviation UAP cases in history. A Japan Air Lines Boeing 747 crew reported being followed for 50 minutes over Alaska by objects including one described as twice the size of an aircraft carrier, confirmed on FAA radar at multiple facilities. Callahan testified that CIA officers subsequently confiscated all materials and instructed attendees that 'this meeting never happened,' while claiming he retained personal copies.",
     "status": "detailed",
-    "tags": ["faa", "aviation", "jal-1628", "radar", "government", "disclosure-project"],
+    "tags": [
+      "faa",
+      "aviation",
+      "jal-1628",
+      "radar",
+      "government",
+      "disclosure-project"
+    ],
     "data_file": "john-callahan.json",
     "type": "official",
     "includeInExplore": true
@@ -1363,13 +1654,24 @@
   {
     "id": "richard-doty",
     "name": "Richard Doty",
-    "aliases": ["Richard C. Doty", "Falcon"],
+    "aliases": [
+      "Richard C. Doty",
+      "Falcon"
+    ],
     "role": "Special Agent, AFOSI, Kirtland AFB; Primary operative in the Bennewitz disinformation operation",
     "period": "Late 1960s-1988",
     "affiliation": "U.S. Air Force Office of Special Investigations (AFOSI)",
     "summary": "Retired AFOSI special agent and the most consequential documented government disinformation operative in UAP research history. Doty managed a deliberate psychological operation against defense contractor Paul Bennewitz (1980-1988), feeding fabricated UAP evidence that ultimately contributed to Bennewitz's mental breakdown. He also showed journalist Linda Moulton Howe a fabricated classified briefing document at Kirtland AFB in 1983. He has acknowledged these activities post-retirement. His significance is not as a reliable source but as documented proof that deliberate U.S. intelligence disinformation targeting UAP researchers is a historical fact.",
     "status": "detailed",
-    "tags": ["afosi", "disinformation", "bennewitz", "kirtland", "counterintelligence", "mj-12", "falcon"],
+    "tags": [
+      "afosi",
+      "disinformation",
+      "bennewitz",
+      "kirtland",
+      "counterintelligence",
+      "mj-12",
+      "falcon"
+    ],
     "data_file": "richard-doty.json",
     "type": "insider",
     "includeInExplore": true
@@ -1377,13 +1679,24 @@
   {
     "id": "linda-moulton-howe",
     "name": "Linda Moulton Howe",
-    "aliases": ["Linda Howe", "LMH"],
+    "aliases": [
+      "Linda Howe",
+      "LMH"
+    ],
     "role": "Investigative journalist; documentary filmmaker; founder, Earthfiles.com",
     "period": "1980-present",
     "affiliation": "KMGH-TV Denver (former); Earthfiles.com",
     "summary": "Stanford-credentialed documentary filmmaker and investigative journalist who pioneered the forensic documentation of cattle mutilations with her 1980 Regional Emmy-winning documentary 'A Strange Harvest.' A documented target of the AFOSI disinformation campaign managed by Richard Doty, who showed her a fabricated classified briefing document at Kirtland AFB in 1983. Founder of Earthfiles.com (1999), a 25-year platform of military and government source testimony on UAP and anomalous phenomena. Her career spans genuinely rigorous early journalism through increasingly controversial later claims.",
     "status": "detailed",
-    "tags": ["journalism", "cattle-mutilation", "earthfiles", "stanford", "kirtland", "emmy", "coast-to-coast"],
+    "tags": [
+      "journalism",
+      "cattle-mutilation",
+      "earthfiles",
+      "stanford",
+      "kirtland",
+      "emmy",
+      "coast-to-coast"
+    ],
     "data_file": "linda-moulton-howe.json",
     "type": "journalist",
     "includeInExplore": true
@@ -1391,13 +1704,23 @@
   {
     "id": "jeremy-corbell",
     "name": "Jeremy Corbell",
-    "aliases": ["Jeremy Kenyon Lockyer Corbell"],
+    "aliases": [
+      "Jeremy Kenyon Lockyer Corbell"
+    ],
     "role": "Documentary filmmaker; co-host, Weaponized podcast",
     "period": "2017-present",
     "affiliation": "Extraordinary Beliefs; Weaponized podcast",
     "summary": "Documentary filmmaker who forced multiple official Pentagon acknowledgments of UAP footage through strategic media releases. The USS Russell Pyramid footage, USS Omaha Metallic Orb, and Mosul Orb were all confirmed authentic by the Pentagon following his releases. Director of the definitive Bob Lazar documentary (Netflix, 2019). Co-hosts 'Weaponized' with George Knapp. His written testimony was entered into the Congressional Record during the August 2023 House UAP hearings.",
     "status": "detailed",
-    "tags": ["filmmaker", "journalist", "navy-footage", "bob-lazar", "weaponized", "pentagon-confirmed", "congressional-record"],
+    "tags": [
+      "filmmaker",
+      "journalist",
+      "navy-footage",
+      "bob-lazar",
+      "weaponized",
+      "pentagon-confirmed",
+      "congressional-record"
+    ],
     "data_file": "jeremy-corbell.json",
     "type": "journalist",
     "includeInExplore": true
@@ -1405,13 +1728,23 @@
   {
     "id": "whitley-strieber",
     "name": "Whitley Strieber",
-    "aliases": ["Louis Whitley Strieber"],
+    "aliases": [
+      "Louis Whitley Strieber"
+    ],
     "role": "Author - Communion (1987); host, Dreamland podcast",
     "period": "1987-present",
     "affiliation": "Unknown Country; Dreamland",
     "summary": "Author of 'Communion' (1987), the most widely read first-person account of a contact experience ever published, which became an international bestseller and gave millions of experiencers language and cultural permission to acknowledge their own encounters. Founder of the Dreamland platform hosting UAP researchers including Vallee, Puthoff, Pasulka, and Semivan. His personal archive is held at Rice University's Woodson Research Center.",
     "status": "detailed",
-    "tags": ["author", "experiencer", "communion", "contact", "abduction", "dreamland", "unknowncountry"],
+    "tags": [
+      "author",
+      "experiencer",
+      "communion",
+      "contact",
+      "abduction",
+      "dreamland",
+      "unknowncountry"
+    ],
     "data_file": "whitley-strieber.json",
     "type": "journalist",
     "includeInExplore": true
@@ -1419,13 +1752,23 @@
   {
     "id": "kenneth-arnold",
     "name": "Kenneth Arnold",
-    "aliases": ["Kenneth A. Arnold"],
+    "aliases": [
+      "Kenneth A. Arnold"
+    ],
     "role": "Private pilot; first widely-reported modern UAP witness (1947)",
     "period": "1947-1984",
     "affiliation": "Great Western Fire Control Supply; Idaho Search and Rescue",
     "summary": "Experienced Idaho businessman and private pilot whose June 24, 1947 sighting of nine high-speed objects near Mt. Rainier directly triggered the formation of Project Sign - the first official USAF UFO investigation. The term 'flying saucer' emerged from press misquotation of his description. Army Air Force investigators found him credible. His account remains internally consistent across 37 years and his sighting remains unexplained in the official record.",
     "status": "detailed",
-    "tags": ["pilot", "historical", "1947", "mount-rainier", "project-sign", "flying-saucer", "nicap"],
+    "tags": [
+      "pilot",
+      "historical",
+      "1947",
+      "mount-rainier",
+      "project-sign",
+      "flying-saucer",
+      "nicap"
+    ],
     "data_file": "kenneth-arnold.json",
     "type": "pilot",
     "includeInExplore": true
@@ -1433,13 +1776,26 @@
   {
     "id": "roscoe-hillenkoetter",
     "name": "Rear Adm. Roscoe H. Hillenkoetter",
-    "aliases": ["Roscoe Henry Hillenkoetter", "Admiral Hillenkoetter"],
+    "aliases": [
+      "Roscoe Henry Hillenkoetter",
+      "Admiral Hillenkoetter"
+    ],
     "role": "First CIA Director (1947-1950); NICAP Board of Governors",
     "period": "1947-1962",
     "affiliation": "Central Intelligence Agency; U.S. Navy; NICAP",
     "summary": "The first Director of the Central Intelligence Agency (1947-1950), serving during the formation of Project Sign and the earliest official UAP investigations. After retirement, joined NICAP's Board of Governors alongside Donald Keyhoe, becoming the highest-credentialed official to publicly associate with civilian UAP advocacy. His 1960 New York Times-reported congressional statement asserting that Air Force officers were 'soberly concerned' about UAPs remains the most significant public disclosure by any former senior official prior to the 2017 era.",
     "status": "detailed",
-    "tags": ["cia", "navy", "official", "nicap", "historical", "cold-war", "disclosure", "1947", "1960"],
+    "tags": [
+      "cia",
+      "navy",
+      "official",
+      "nicap",
+      "historical",
+      "cold-war",
+      "disclosure",
+      "1947",
+      "1960"
+    ],
     "data_file": "roscoe-hillenkoetter.json",
     "type": "official",
     "includeInExplore": true
@@ -1447,13 +1803,25 @@
   {
     "id": "bruce-maccabee",
     "name": "Dr. Bruce Maccabee",
-    "aliases": ["Bruce Maccabee", "B. Maccabee"],
+    "aliases": [
+      "Bruce Maccabee",
+      "B. Maccabee"
+    ],
     "role": "Optical Physicist, Naval Surface Warfare Center; UAP Photo Analyst",
     "period": "1970-2024",
     "affiliation": "Naval Surface Warfare Center; Fund for UFO Research; MUFON",
     "summary": "Navy optical physicist who conducted a parallel 36-year career analyzing UAP photographic and film evidence while employed at the Naval Surface Warfare Center. Applied professional optical instrumentation and photogrammetric methods to high-profile cases including the McMinnville photos, New Zealand Kaikoura film, and Gulf Breeze series. Co-founded the Fund for UFO Research in 1979 and remains one of the few credentialed government scientists to have dedicated a career-length effort to UAP evidence review.",
     "status": "detailed",
-    "tags": ["scientist", "physics", "photo-analysis", "navy", "mufon", "gulf-breeze", "mcminnville", "fund-for-ufo-research"],
+    "tags": [
+      "scientist",
+      "physics",
+      "photo-analysis",
+      "navy",
+      "mufon",
+      "gulf-breeze",
+      "mcminnville",
+      "fund-for-ufo-research"
+    ],
     "data_file": "bruce-maccabee.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1461,13 +1829,24 @@
   {
     "id": "jesse-marcel-jr",
     "name": "Col. Jesse Marcel Jr.",
-    "aliases": ["Jesse Marcel Jr.", "Jesse Marcel Junior"],
+    "aliases": [
+      "Jesse Marcel Jr.",
+      "Jesse Marcel Junior"
+    ],
     "role": "Otolaryngologist; Colonel, Montana Army National Guard; Roswell Witness",
     "period": "1947-2013",
     "affiliation": "Montana Army National Guard; private medical practice, Helena MT",
     "summary": "Physician and Montana Army National Guard Colonel who, as an 11-year-old in July 1947, handled debris his father Jesse Marcel Sr. brought home from the Foster Ranch crash site before reporting to RAAF base. Maintained a consistent firsthand account of anomalous material properties across 35 years of public testimony. Co-authored 'The Roswell Legacy' (2009) and gave congressional-style testimony at the Citizen Hearing on Disclosure weeks before his death in August 2013.",
     "status": "detailed",
-    "tags": ["roswell", "witness", "military", "physician", "historical", "1947", "disclosure"],
+    "tags": [
+      "roswell",
+      "witness",
+      "military",
+      "physician",
+      "historical",
+      "1947",
+      "disclosure"
+    ],
     "data_file": "jesse-marcel-jr.json",
     "type": "official",
     "includeInExplore": false
@@ -1475,13 +1854,26 @@
   {
     "id": "charles-mccullough",
     "name": "Charles J. McCullough III",
-    "aliases": ["Charles McCullough", "Chuck McCullough"],
+    "aliases": [
+      "Charles McCullough",
+      "Chuck McCullough"
+    ],
     "role": "Inspector General of the Intelligence Community (2011-2017); UAP Whistleblower Attorney",
     "period": "2011-present",
     "affiliation": "Office of the Director of National Intelligence; Compass Rose Legal Group",
     "summary": "Former Inspector General of the Intelligence Community (2011-2017) and legal representative for UAP whistleblower David Grusch. As the first Senate-confirmed IC IG, McCullough oversaw independent watchdog functions across all 17 U.S. intelligence agencies. His post-government validation of Grusch's whistleblower complaint - including public statements that Grusch 'is not alone' - carries unique institutional weight given his direct prior role over the office that received the complaint.",
     "status": "detailed",
-    "tags": ["legal", "intelligence", "whistleblower", "official", "grusch", "ic-ig", "odni", "disclosure", "2023"],
+    "tags": [
+      "legal",
+      "intelligence",
+      "whistleblower",
+      "official",
+      "grusch",
+      "ic-ig",
+      "odni",
+      "disclosure",
+      "2023"
+    ],
     "data_file": "charles-mccullough.json",
     "type": "official",
     "includeInExplore": false
@@ -1489,13 +1881,25 @@
   {
     "id": "wilbert-smith",
     "name": "Wilbert B. Smith",
-    "aliases": ["Wilbert Brockhouse Smith", "W.B. Smith"],
+    "aliases": [
+      "Wilbert Brockhouse Smith",
+      "W.B. Smith"
+    ],
     "role": "Superintendent of Radio Regulations Engineering, Canadian Dept. of Transport; Director, Project Magnet",
     "period": "1950-1962",
     "affiliation": "Canadian Department of Transport; Project Magnet",
     "summary": "Senior Canadian government radio engineer who authored the classified 1950 Smith Memorandum - documenting that U.S. officials privately told him flying saucers were classified above the H-bomb and that Vannevar Bush led a group analyzing recovered hardware. Founded and directed Project Magnet (1950-1954), Canada's official government UAP investigation. His memo was declassified in 1979 and partially corroborated in 1983 when Dr. Robert Sarbacher confirmed the substance of their 1950 conversation in writing.",
     "status": "detailed",
-    "tags": ["canada", "government", "historical", "project-magnet", "1950", "smith-memo", "radio-engineering", "official"],
+    "tags": [
+      "canada",
+      "government",
+      "historical",
+      "project-magnet",
+      "1950",
+      "smith-memo",
+      "radio-engineering",
+      "official"
+    ],
     "data_file": "wilbert-smith.json",
     "type": "official",
     "includeInExplore": true
@@ -1503,13 +1907,29 @@
   {
     "id": "anna-paulina-luna",
     "name": "Rep. Anna Paulina Luna",
-    "aliases": ["Anna Paulina Luna", "Rep. Luna", "A.P. Luna"],
+    "aliases": [
+      "Anna Paulina Luna",
+      "Rep. Luna",
+      "A.P. Luna"
+    ],
     "role": "U.S. Representative (R-FL-13); Chair, Task Force on the Declassification of Federal Secrets",
     "period": "2023-present",
     "affiliation": "U.S. House of Representatives; House UAP Caucus; Task Force on the Declassification of Federal Secrets",
     "summary": "U.S. Representative and Air Force veteran who co-organized the landmark July 2023 House Oversight UAP hearing and chairs the House Task Force on the Declassification of Federal Secrets. Holds the most institutionally powerful House position dedicated to UAP declassification as of 2025, with formal subpoena authority. Has personally accessed classified SCIF briefings and states she viewed photographs of craft not made by mankind.",
     "status": "detailed",
-    "tags": ["congress", "official", "house", "uap-caucus", "hearing", "2023", "task-force", "declassification", "air-force", "florida", "whistleblower-protection"],
+    "tags": [
+      "congress",
+      "official",
+      "house",
+      "uap-caucus",
+      "hearing",
+      "2023",
+      "task-force",
+      "declassification",
+      "air-force",
+      "florida",
+      "whistleblower-protection"
+    ],
     "data_file": "anna-paulina-luna.json",
     "type": "official",
     "includeInExplore": true
@@ -1517,13 +1937,24 @@
   {
     "id": "lynne-kitei",
     "name": "Dr. Lynne Kitei",
-    "aliases": ["Dr. Lynne", "Lynn Kitei"],
+    "aliases": [
+      "Dr. Lynne",
+      "Lynn Kitei"
+    ],
     "role": "Physician; Phoenix Lights Witness and Primary Researcher",
     "period": "1995-present",
     "affiliation": "Private medical practice, Phoenix, AZ",
     "summary": "Phoenix physician who began privately documenting unusual aerial phenomena from her home in 1995 - two years before the mass March 13, 1997 Phoenix Lights event. Her multi-year pre-event observation record distinguishes her from other Phoenix Lights witnesses. She concealed her identity for years to protect her medical reputation before going public with 'The Phoenix Lights' (2000) and the follow-up documentary (2008), becoming the primary investigative voice for the most widely witnessed UAP event in modern American history.",
     "status": "detailed",
-    "tags": ["witness", "phoenix-lights", "physician", "arizona", "1997", "documentary", "disclosure"],
+    "tags": [
+      "witness",
+      "phoenix-lights",
+      "physician",
+      "arizona",
+      "1997",
+      "documentary",
+      "disclosure"
+    ],
     "data_file": "lynne-kitei.json",
     "type": "scientist",
     "includeInExplore": false
@@ -1531,13 +1962,29 @@
   {
     "id": "neil-mccasland",
     "name": "Maj. Gen. Neil McCasland",
-    "aliases": ["William Neil McCasland", "W. Neil McCasland", "General McCasland"],
+    "aliases": [
+      "William Neil McCasland",
+      "W. Neil McCasland",
+      "General McCasland"
+    ],
     "role": "Commander, AFRL Wright-Patterson AFB; Director of Special Programs, OSD; SAPOC Executive Secretary",
     "period": "1979-2013 (USAF)",
     "affiliation": "U.S. Air Force; Air Force Research Laboratory; Office of the Under Secretary of Defense",
     "summary": "Retired U.S. Air Force Major General and MIT-trained aerospace engineer who commanded the Air Force Research Laboratory at Wright-Patterson AFB (2011-2013) and served as Executive Secretary of the Special Access Program Oversight Committee (SAPOC) - giving him formal oversight authority over all U.S. Special Access Programs. Named in Tom DeLonge's January 2016 WikiLeaks email to John Podesta as a primary military adviser who helped assemble the disclosure advisory team that became To The Stars Academy. Disappeared from his Albuquerque home on February 27, 2026; the FBI joined the search and Rep. Tim Burchett stated publicly that McCasland 'has a lot to say' about UAP.",
     "status": "detailed",
-    "tags": ["usaf", "afrl", "wright-patterson", "sapoc", "special-access-programs", "TTSA", "roswell", "DeLonge", "Podesta", "missing", "2026"],
+    "tags": [
+      "usaf",
+      "afrl",
+      "wright-patterson",
+      "sapoc",
+      "special-access-programs",
+      "TTSA",
+      "roswell",
+      "DeLonge",
+      "Podesta",
+      "missing",
+      "2026"
+    ],
     "data_file": "neil-mccasland.json",
     "type": "official",
     "includeInExplore": true
@@ -1545,13 +1992,23 @@
   {
     "id": "travis-walton",
     "name": "Travis Walton",
-    "aliases": ["Travis Rex Walton"],
+    "aliases": [
+      "Travis Rex Walton"
+    ],
     "role": "CE4 Experiencer; Author - Fire in the Sky (1993)",
     "period": "1975-present",
     "affiliation": "Independent; Disclosure Project",
     "summary": "Central figure in one of the most thoroughly witnessed CE4 cases on record. On November 5, 1975, Walton vanished in full view of six coworkers after approaching a hovering disc-shaped craft in the Apache-Sitgreaves National Forest near Snowflake, Arizona. He reappeared five days later with fragmented memories of being aboard a craft. Five of his six coworkers passed Arizona DPS polygraph examinations corroborating their account of the initial disappearance. His 1993 memoir Fire in the Sky and the Paramount film adaptation brought the case to mainstream awareness.",
     "status": "detailed",
-    "tags": ["CE4", "abduction", "missing time", "polygraph", "Arizona", "disclosure project", "Fire in the Sky"],
+    "tags": [
+      "CE4",
+      "abduction",
+      "missing time",
+      "polygraph",
+      "Arizona",
+      "disclosure project",
+      "Fire in the Sky"
+    ],
     "data_file": "travis-walton.json",
     "type": "insider",
     "includeInExplore": true
@@ -1559,13 +2016,23 @@
   {
     "id": "budd-hopkins",
     "name": "Budd Hopkins",
-    "aliases": ["Elliot Budd Hopkins"],
+    "aliases": [
+      "Elliot Budd Hopkins"
+    ],
     "role": "CE4 Researcher; Author; Founder - Intruders Foundation",
     "period": "1981-2011",
     "affiliation": "Intruders Foundation",
     "summary": "Abstract expressionist painter who became the foundational figure in CE4/abduction research. Hopkins coined the term 'missing time,' pioneered hypnotic regression as an investigative methodology, and documented thousands of cases over three decades. His 1981 book 'Missing Time' established the research framework that Dr. John Mack later validated through Harvard. He founded the Intruders Foundation in 1989 and his 1996 work 'Witnessed' remains the most detailed single CE4 case study in the published literature.",
     "status": "detailed",
-    "tags": ["CE4", "abduction", "missing time", "hypnotic regression", "intruders foundation", "abduction research", "Communion"],
+    "tags": [
+      "CE4",
+      "abduction",
+      "missing time",
+      "hypnotic regression",
+      "intruders foundation",
+      "abduction research",
+      "Communion"
+    ],
     "data_file": "budd-hopkins.json",
     "type": "scientist",
     "includeInExplore": false
@@ -1573,13 +2040,23 @@
   {
     "id": "roger-leir",
     "name": "Dr. Roger K. Leir",
-    "aliases": ["Roger Leir"],
+    "aliases": [
+      "Roger Leir"
+    ],
     "role": "Podiatric Surgeon; Alien Implant Researcher; Founder - A&S Research Inc.",
     "period": "1995-2014",
     "affiliation": "A&S Research Inc.; National Institute for Discovery Science (affiliated)",
     "summary": "Podiatric surgeon who performed 17 documented surgical procedures to remove objects from alleged CE4 abductees between 1995 and 2014. Specimens submitted to independent labs including Los Alamos National Laboratory and UC San Diego produced anomalous findings including unusual isotopic ratios and absence of inflammatory response. His 'The Aliens and the Scalpel' (1998, 2005) remains the primary reference work on alleged alien implants in the research literature.",
     "status": "detailed",
-    "tags": ["CE4", "implants", "materials analysis", "surgery", "physical evidence", "abduction", "isotopic ratios"],
+    "tags": [
+      "CE4",
+      "implants",
+      "materials analysis",
+      "surgery",
+      "physical evidence",
+      "abduction",
+      "isotopic ratios"
+    ],
     "data_file": "roger-leir.json",
     "type": "scientist",
     "includeInExplore": false
@@ -1587,13 +2064,26 @@
   {
     "id": "betty-barney-hill",
     "name": "Betty and Barney Hill",
-    "aliases": ["Betty Hill", "Barney Hill", "The Hills"],
+    "aliases": [
+      "Betty Hill",
+      "Barney Hill",
+      "The Hills"
+    ],
     "role": "CE4 Experiencers; Subjects of the First Widely Publicized U.S. Abduction Case",
     "period": "1961-2004",
     "affiliation": "NICAP (cooperating witnesses)",
     "summary": "Interracial couple from Portsmouth, New Hampshire, whose September 19-20, 1961 experience on U.S. Route 3 became the first widely publicized CE4 case in the United States. Under separate hypnotic regression with Boston psychiatrist Dr. Benjamin Simon, both independently described consistent accounts of being taken aboard a craft. Betty drew a star map later identified by astronomer Marjorie Fish as a possible Zeta Reticuli vantage point. The case was documented in John Fuller's 1966 bestseller 'The Interrupted Journey' and remains the foundational reference for the abduction research tradition.",
     "status": "detailed",
-    "tags": ["CE4", "abduction", "missing time", "star map", "Zeta Reticuli", "NICAP", "hypnotic regression", "1961"],
+    "tags": [
+      "CE4",
+      "abduction",
+      "missing time",
+      "star map",
+      "Zeta Reticuli",
+      "NICAP",
+      "hypnotic regression",
+      "1961"
+    ],
     "data_file": "betty-barney-hill.json",
     "type": "insider",
     "includeInExplore": false
@@ -1601,13 +2091,24 @@
   {
     "id": "john-lear",
     "name": "John Lear",
-    "aliases": ["John Otto Lear"],
+    "aliases": [
+      "John Otto Lear"
+    ],
     "role": "CIA Contract Pilot; Early UAP Disclosure Advocate; Author of 'The John Lear Statement' (1987)",
     "period": "1987-2022",
     "affiliation": "CIA (former contract); Disclosure Project",
     "summary": "Son of aviation pioneer William P. Lear and one of the most accomplished pilots in American aviation history, holding FAA certifications in over 100 aircraft types and setting 17 world speed records. From 1987 onward he became a central early figure in the UAP disclosure community through 'The John Lear Statement' - one of the first internet-distributed UAP disclosure documents - and through his direct role in facilitating Bob Lazar's emergence as a public figure via introduction to journalist George Knapp at KLAS-TV Las Vegas in 1989.",
     "status": "detailed",
-    "tags": ["S-4", "Area 51", "disclosure", "Bob Lazar", "CIA pilot", "KLAS-TV", "disinformation", "1987 statement"],
+    "tags": [
+      "S-4",
+      "Area 51",
+      "disclosure",
+      "Bob Lazar",
+      "CIA pilot",
+      "KLAS-TV",
+      "disinformation",
+      "1987 statement"
+    ],
     "data_file": "john-lear.json",
     "type": "insider",
     "includeInExplore": true
@@ -1615,13 +2116,22 @@
   {
     "id": "eric-burlison",
     "name": "Rep. Eric Burlison",
-    "aliases": ["Eric Burlison", "Rep. Burlison"],
+    "aliases": [
+      "Eric Burlison",
+      "Rep. Burlison"
+    ],
     "role": "U.S. Representative (R-MO-7); Founding Member, House UAP Caucus",
     "period": "2023-present",
     "affiliation": "U.S. House of Representatives",
     "summary": "Republican congressman from Missouri and founding member of the House UAP Caucus who serves on the House Oversight Committee. Notably the most skeptical member of the UAP Caucus on extraterrestrial explanations, yet among the most active legislators pursuing oversight - personally hiring David Grusch as a Special Advisor, attending SCIF briefings, introducing the UAP Disclosure Act of 2025, and publicly releasing new UAP footage at a 2025 Task Force hearing.",
     "status": "detailed",
-    "tags": ["congress", "uap-caucus", "disclosure", "oversight", "ndaa"],
+    "tags": [
+      "congress",
+      "uap-caucus",
+      "disclosure",
+      "oversight",
+      "ndaa"
+    ],
     "data_file": "eric-burlison.json",
     "type": "official",
     "includeInExplore": true
@@ -1629,13 +2139,23 @@
   {
     "id": "ingo-swann",
     "name": "Ingo Swann",
-    "aliases": ["Ingo Douglass Swann", "Swann"],
+    "aliases": [
+      "Ingo Douglass Swann",
+      "Swann"
+    ],
     "role": "Remote Viewing Pioneer; Primary Subject, CIA SCANATE / STAR GATE",
     "period": "1972-1995",
     "affiliation": "Stanford Research Institute (SRI International) / CIA",
     "summary": "American psychic and author who served as the central research subject in the U.S. government's classified remote viewing programs from 1972 through 1995. Working with Hal Puthoff and Russell Targ at SRI, Swann co-developed the Coordinate Remote Viewing (CRV) protocol used across SCANATE, GRILL FLAME, and STAR GATE. His 1973 description of ring-like structures around Jupiter - documented before Voyager 1's 1979 confirmation - remains the most debated data point in the remote viewing literature. His 1998 book 'Penetration' described a secret government UAP-monitoring agency and an alleged ET base on the far side of the Moon.",
     "status": "detailed",
-    "tags": ["remote-viewing", "cia", "sri", "stargate", "psychic-research", "nhi"],
+    "tags": [
+      "remote-viewing",
+      "cia",
+      "sri",
+      "stargate",
+      "psychic-research",
+      "nhi"
+    ],
     "data_file": "ingo-swann.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1643,13 +2163,23 @@
   {
     "id": "joe-mcmoneagle",
     "name": "Joseph McMoneagle",
-    "aliases": ["Joe McMoneagle", "Remote Viewer #001", "J. McMoneagle"],
+    "aliases": [
+      "Joe McMoneagle",
+      "Remote Viewer #001",
+      "J. McMoneagle"
+    ],
     "role": "Remote Viewer #001, U.S. Army STAR GATE; Retired Chief Warrant Officer",
     "period": "1978-1995",
     "affiliation": "U.S. Army Intelligence / STAR GATE Program",
     "summary": "Retired U.S. Army Chief Warrant Officer and Remote Viewer #001 in the classified STAR GATE program. The only person ever to receive a formal military decoration — the Legion of Merit — explicitly crediting remote viewing with producing 'critical intelligence unavailable from any other source' for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service. His claimed operational results include the pre-discovery description of the Soviet Typhoon-class submarine and contributing intelligence during the 1981 kidnapping of General James Dozier. Author of 'The Stargate Chronicles' (2002).",
     "status": "detailed",
-    "tags": ["remote-viewing", "army", "stargate", "military-intelligence", "uap-sighting"],
+    "tags": [
+      "remote-viewing",
+      "army",
+      "stargate",
+      "military-intelligence",
+      "uap-sighting"
+    ],
     "data_file": "joe-mcmoneagle.json",
     "type": "insider",
     "includeInExplore": true
@@ -1657,13 +2187,24 @@
   {
     "id": "robert-monroe",
     "name": "Robert Monroe",
-    "aliases": ["Robert A. Monroe", "Bob Monroe"],
+    "aliases": [
+      "Robert A. Monroe",
+      "Bob Monroe"
+    ],
     "role": "Founder, The Monroe Institute; Inventor, Hemi-Sync Technology",
     "period": "1958-1995",
     "affiliation": "The Monroe Institute",
     "summary": "American radio broadcasting executive who began experiencing involuntary out-of-body episodes in 1958 and spent the rest of his life systematically documenting them. His 1971 book 'Journeys Out of the Body' coined the modern term OBE and his Hemi-Sync binaural beat technology drew formal CIA and Army interest. The 1983 declassified 'Analysis and Assessment of Gateway Process' is a CIA document evaluating his methods for intelligence applications and concluding they are plausible. His Institute became the training ground for government remote viewers including Joe McMoneagle, and his later books describe contact with non-human intelligent entities he called INSPEC.",
     "status": "detailed",
-    "tags": ["remote-viewing", "consciousness", "obe", "cia", "monroe-institute", "hemi-sync", "nhi"],
+    "tags": [
+      "remote-viewing",
+      "consciousness",
+      "obe",
+      "cia",
+      "monroe-institute",
+      "hemi-sync",
+      "nhi"
+    ],
     "data_file": "robert-monroe.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1671,13 +2212,21 @@
   {
     "id": "beatriz-villarroel",
     "name": "Dr. Beatriz Villarroel",
-    "aliases": ["Beatriz Villarroel"],
+    "aliases": [
+      "Beatriz Villarroel"
+    ],
     "role": "Astrophysicist, VASCO Principal Investigator",
     "period": "2017-present",
     "affiliation": "Nordita / Instituto de Astrofísica de Canarias",
     "summary": "Swedish-Spanish astrophysicist whose VASCO project identified hundreds of anomalous vanishing objects in pre-satellite photographic plates. Her peer-reviewed studies in MNRAS, Scientific Reports, and PASP document transient flashes correlating with nuclear tests and the 1952 Washington D.C. UFO flap, representing some of the most rigorously published astronomical data in UAP-adjacent science.",
     "status": "detailed",
-    "tags": ["scientist", "astronomy", "vasco", "astrophysics", "sol-foundation"],
+    "tags": [
+      "scientist",
+      "astronomy",
+      "vasco",
+      "astrophysics",
+      "sol-foundation"
+    ],
     "data_file": "beatriz-villarroel.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1685,13 +2234,23 @@
   {
     "id": "kevin-knuth",
     "name": "Dr. Kevin Knuth",
-    "aliases": ["Kevin Knuth"],
+    "aliases": [
+      "Kevin Knuth"
+    ],
     "role": "Professor of Physics, UAPx Lead Scientist",
     "period": "1995-present",
     "affiliation": "University at Albany (SUNY)",
     "summary": "Physicist and Bayesian inference specialist whose 2019 Entropy paper is the most-cited peer-reviewed study calculating UAP flight physics from documented cases. Leads UAPx field expeditions and is lead author on the 2025 'New Science of UAP' collaborative paper. Affiliated with the Galileo Project and Sol Foundation.",
     "status": "detailed",
-    "tags": ["scientist", "physics", "uapx", "bayesian", "field-research", "sol-foundation", "galileo-project"],
+    "tags": [
+      "scientist",
+      "physics",
+      "uapx",
+      "bayesian",
+      "field-research",
+      "sol-foundation",
+      "galileo-project"
+    ],
     "data_file": "kevin-knuth.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1699,13 +2258,22 @@
   {
     "id": "matt-szydagis",
     "name": "Dr. Matt Szydagis",
-    "aliases": ["Matthew Szydagis"],
+    "aliases": [
+      "Matthew Szydagis"
+    ],
     "role": "Assistant Professor of Physics, UAPx Field Research Leader",
     "period": "2014-present",
     "affiliation": "University at Albany (SUNY)",
     "summary": "Experimental particle physicist whose work on LUX and LZ dark matter experiments and creator of widely-used NEST simulation software gives him exceptional detector instrumentation credentials. Pivoted to UAP research as first author of the first peer-reviewed academic instrumented UAP field expedition paper and co-lead of UAPx alongside Kevin Knuth.",
     "status": "detailed",
-    "tags": ["scientist", "physics", "dark-matter", "uapx", "instrumentation", "field-research"],
+    "tags": [
+      "scientist",
+      "physics",
+      "dark-matter",
+      "uapx",
+      "instrumentation",
+      "field-research"
+    ],
     "data_file": "matt-szydagis.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1713,13 +2281,22 @@
   {
     "id": "david-spergel",
     "name": "Dr. David Spergel",
-    "aliases": ["David N. Spergel"],
+    "aliases": [
+      "David N. Spergel"
+    ],
     "role": "Chair, NASA UAP Independent Study Team; President, Simons Foundation",
     "period": "2022-2023 (NASA UAP role)",
     "affiliation": "Simons Foundation / Princeton University",
     "summary": "MacArthur Fellow and Breakthrough Prize-winning astrophysicist who chaired NASA's UAP Independent Study Team (2022-2023). The panel's September 2023 report - finding no extraterrestrial evidence but identifying severe data quality gaps - represents the official NASA scientific posture on UAP and directly led to NASA appointing its first Director of UAP Research.",
     "status": "detailed",
-    "tags": ["scientist", "official", "nasa", "cosmology", "princeton", "government-assessment"],
+    "tags": [
+      "scientist",
+      "official",
+      "nasa",
+      "cosmology",
+      "princeton",
+      "government-assessment"
+    ],
     "data_file": "david-spergel.json",
     "type": "official",
     "includeInExplore": true
@@ -1727,13 +2304,23 @@
   {
     "id": "hakan-kayal",
     "name": "Prof. Hakan Kayal",
-    "aliases": ["Hakan Kayal"],
+    "aliases": [
+      "Hakan Kayal"
+    ],
     "role": "Professor of Space Technology; Founder, IFEX; SONATE-2 Principal Investigator",
     "period": "2022-present",
     "affiliation": "University of Wurzburg (JMU) / IFEX",
     "summary": "German space technology professor who founded IFEX - the first European academic institution to formally incorporate UAP into its research mandate - and launched SONATE-2 (March 2024), a CubeSat in orbit with onboard AI for anomalous object detection. His SkyCAM AI observatory is operational at Wurzburg, and his team participates in a DLR-funded Mars mission with a UAP detection camera.",
     "status": "detailed",
-    "tags": ["scientist", "space-technology", "satellite", "europe", "germany", "ifex", "sonate-2"],
+    "tags": [
+      "scientist",
+      "space-technology",
+      "satellite",
+      "europe",
+      "germany",
+      "ifex",
+      "sonate-2"
+    ],
     "data_file": "hakan-kayal.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1741,13 +2328,23 @@
   {
     "id": "jeffrey-kripal",
     "name": "Dr. Jeffrey Kripal",
-    "aliases": ["Jeffrey J. Kripal", "Jeff Kripal"],
+    "aliases": [
+      "Jeffrey J. Kripal",
+      "Jeff Kripal"
+    ],
     "role": "J. Newton Rayzor Chair, Religion and Philosophy, Rice University",
     "period": "2014-present",
     "affiliation": "Rice University / Archives of the Impossible",
     "summary": "Rice University comparative religion scholar who founded the Archives of the Impossible - one of the world's largest academic repositories of UAP and contact research materials, housing the archives of John Mack, Whitley Strieber, and CIA remote viewing director Ed May. His books argue that extraordinary contact experiences demand new epistemological tools beyond both materialist dismissal and literal belief.",
     "status": "detailed",
-    "tags": ["scientist", "religion", "humanities", "archives", "consciousness", "sol-foundation"],
+    "tags": [
+      "scientist",
+      "religion",
+      "humanities",
+      "archives",
+      "consciousness",
+      "sol-foundation"
+    ],
     "data_file": "jeffrey-kripal.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1755,13 +2352,22 @@
   {
     "id": "robert-powell",
     "name": "Robert Powell",
-    "aliases": ["Robert M. Powell", "Bob Powell"],
+    "aliases": [
+      "Robert M. Powell",
+      "Bob Powell"
+    ],
     "role": "Co-Founder, Scientific Coalition for UAP Studies (SCU)",
     "period": "2007-present",
     "affiliation": "Scientific Coalition for UAP Studies (SCU)",
     "summary": "Semiconductor engineer (AMD, 4 nanotechnology patents) and UAP researcher who co-authored the 2019 Entropy paper with Kevin Knuth calculating UAP flight physics from documented cases. Co-founder of the Scientific Coalition for UAP Studies (SCU); his radar analyses of the 2008 Stephenville Lights and 2013 Aguadilla incident are landmark examples of rigorous multi-sensor UAP case investigation.",
     "status": "detailed",
-    "tags": ["scientist", "researcher", "scu", "radar-analysis", "engineering"],
+    "tags": [
+      "scientist",
+      "researcher",
+      "scu",
+      "radar-analysis",
+      "engineering"
+    ],
     "data_file": "robert-powell.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1769,13 +2375,22 @@
   {
     "id": "alexander-wendt",
     "name": "Dr. Alexander Wendt",
-    "aliases": ["Alexander E. Wendt", "Alex Wendt"],
+    "aliases": [
+      "Alexander E. Wendt",
+      "Alex Wendt"
+    ],
     "role": "Mershon Professor of International Security, Ohio State University",
     "period": "2008-present (UAP engagement)",
     "affiliation": "Ohio State University",
     "summary": "The most influential International Relations scholar of the past 20 years (2017 TRIP survey), ranked by peers above Kissinger and Mearsheimer. Co-authored 'Sovereignty and the UFO' (Political Theory, 2008) - the first peer-reviewed political science article treating UAP as a governance problem - arguing the UFO taboo is structurally produced by anthropocentric sovereignty rather than evidence-based.",
     "status": "detailed",
-    "tags": ["scientist", "political-science", "international-relations", "sovereignty", "sol-foundation"],
+    "tags": [
+      "scientist",
+      "political-science",
+      "international-relations",
+      "sovereignty",
+      "sol-foundation"
+    ],
     "data_file": "alexander-wendt.json",
     "type": "scientist",
     "includeInExplore": true
@@ -1783,13 +2398,22 @@
   {
     "id": "gary-mckinnon",
     "name": "Gary McKinnon",
-    "aliases": ["Solo"],
+    "aliases": [
+      "Solo"
+    ],
     "role": "Systems Administrator and UAP Evidence Claimant",
     "period": "2001-2002 (intrusion period); 2002-2012 (legal battle)",
     "affiliation": "Independent",
     "summary": "Scottish IT administrator who accessed 97 US government networks between 2001 and 2002 searching for suppressed UFO evidence. Claims to have found a 'Non-Terrestrial Officers' spreadsheet and a high-resolution UFO photograph at NASA. A decade-long US extradition fight ended in 2012 when UK Home Secretary Theresa May blocked it on human-rights grounds; he was never charged in the UK.",
     "status": "detailed",
-    "tags": ["hacker", "whistleblower", "uk", "nasa", "computer-fraud", "extradition"],
+    "tags": [
+      "hacker",
+      "whistleblower",
+      "uk",
+      "nasa",
+      "computer-fraud",
+      "extradition"
+    ],
     "data_file": "gary-mckinnon.json",
     "type": "insider",
     "includeInExplore": true
@@ -1797,14 +2421,47 @@
   {
     "id": "mathew-bevan",
     "name": "Mathew Bevan",
-    "aliases": ["Kuji", "Matthew Bevan"],
+    "aliases": [
+      "Kuji",
+      "Matthew Bevan"
+    ],
     "role": "IT Technician and UAP Evidence Claimant",
     "period": "1996 (intrusion period)",
     "affiliation": "Independent; Kuji Media Corporation",
     "summary": "Welsh IT technician who in 1996 - five years before Gary McKinnon - accessed Wright-Patterson AFB, Griffiss Air Force Base Research Laboratory, and NASA systems using a Commodore Amiga, searching for suppressed UFO crash evidence. Claims to have found documents describing a working anti-gravity prototype. The US called him 'the single biggest threat to world peace since Adolf Hitler'; charges were dropped in 1997 when the US declined to cooperate with UK prosecution.",
     "status": "detailed",
-    "tags": ["hacker", "uk", "wright-patterson", "anti-gravity", "disclosure"],
+    "tags": [
+      "hacker",
+      "uk",
+      "wright-patterson",
+      "anti-gravity",
+      "disclosure"
+    ],
     "data_file": "mathew-bevan.json",
+    "type": "insider",
+    "includeInExplore": true
+  },
+  {
+    "id": "clifford-stone",
+    "name": "Clifford Stone",
+    "aliases": [
+      "Sgt. Clifford Stone",
+      "Clifford E. Stone"
+    ],
+    "role": "Sergeant First Class, US Army (ret.) and UAP Crash Retrieval Claimant",
+    "period": "1969-1990 (Army service); 1989-2021 (disclosure activities)",
+    "affiliation": "United States Army",
+    "summary": "US Army Sergeant First Class who claimed covert assignment to UAP crash retrieval teams under Project Moon Dust and Operation Blue Fly. Led the FOIA campaign that forced the Air Force to officially admit those programs existed in 1992. Testified at the 2001 Disclosure Project press conference claiming the US government had catalogued 57 distinct non-human species. He lived in Roswell, New Mexico and published Eyes Only in 2012 before his death in February 2021.",
+    "status": "detailed",
+    "tags": [
+      "army",
+      "crash-retrieval",
+      "moon-dust",
+      "blue-fly",
+      "disclosure-project",
+      "roswell"
+    ],
+    "data_file": "clifford-stone.json",
     "type": "insider",
     "includeInExplore": true
   }

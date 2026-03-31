@@ -1274,5 +1274,10 @@ export const graphData: GraphData = {
     { source: 'mathew-bevan', target: 'gary-mckinnon', label: 'direct historical predecessor; both UK hackers arrested for UAP-motivated US government intrusions; spoke publicly after McKinnon\'s 2002 arrest' },
     { source: 'mathew-bevan', target: 'nick-pope',      label: 'Pope commented on Bevan\'s case as part of his concurrent UK MoD UAP documentation work' },
     { source: 'mathew-bevan', target: 'steven-greer',   label: 'both represent the UAP evidence-hunting tradition Greer\'s Disclosure Project would later amplify' },
+
+    // Clifford Stone connections
+    { source: 'clifford-stone', target: 'steven-greer',       label: 'principal witness at Greer\'s 2001 Disclosure Project press conference; 57 species testimony' },
+    { source: 'clifford-stone', target: 'robert-salas',       label: 'co-testified at 2001 Disclosure Project; Salas co-authored Stone\'s Eyes Only book' },
+    { source: 'clifford-stone', target: 'stanton-friedman',   label: 'both researched Roswell and US crash retrieval programs from New Mexico bases' },
   ],
 };
