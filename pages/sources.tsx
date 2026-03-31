@@ -605,6 +605,24 @@ const Sources: NextPage = () => {
             notes="Used for: Parviz Jafari."
           />
 
+          {/* Mark McCandlish */}
+          <SourceCard
+            name="Mark McCandlish: Reverse-Engineering the Flux Liner ARV - APEC / Medium"
+            url="https://medium.com/predict/mark-mccandlish-reverse-engineering-the-flux-liner-arv-efa66c3adaf1"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Primary technical overview of McCandlish's ARV engineering analysis, the Norton AFB account from Brad Sorensen, and the proposed electromagnetic and zero-point energy propulsion system."
+            notes="Used for: Mark McCandlish."
+          />
+          <SourceCard
+            name="The Sad and Mysterious Death of Ufologist Mark McCandlish - Giza Death Star (2021)"
+            url="https://gizadeathstar.com/2021/05/the-sad-and-mysterious-death-of-ufologist-mark-mccandlish/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Post-death account covering the official coroner's ruling and the circumstances disputed by McCandlish's associates, including his reported plans to testify before the Senate Intelligence Committee."
+            notes="Used for: Mark McCandlish."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

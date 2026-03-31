@@ -2537,5 +2537,29 @@
     "data_file": "parviz-jafari.json",
     "type": "pilot",
     "includeInExplore": true
+  },
+  {
+    "id": "mark-mccandlish",
+    "name": "Mark McCandlish",
+    "aliases": [
+      "Mark C. McCandlish"
+    ],
+    "role": "Aerospace Illustrator and ARV Fluxliner Witness",
+    "period": "1980s-2021",
+    "affiliation": "Independent; Lockheed, Rockwell (contractor)",
+    "summary": "Aerospace illustrator for major defense contractors who in 1988 received a detailed account from colleague Brad Sorensen of three disc-shaped craft at a restricted Norton AFB hangar. McCandlish produced the iconic Fluxliner technical cutaway - one of the most reproduced UAP technology illustrations in the field. He testified at the 2001 Disclosure Project and was reportedly preparing Senate testimony when he died April 13, 2021; officially ruled a suicide, disputed by associates.",
+    "status": "detailed",
+    "tags": [
+      "insider",
+      "arv",
+      "fluxliner",
+      "reverse-engineering",
+      "norton-afb",
+      "disclosure-project",
+      "aerospace"
+    ],
+    "data_file": "mark-mccandlish.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

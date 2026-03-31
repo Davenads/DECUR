@@ -1,0 +1,173 @@
+{
+  "profile": {
+    "id": "mark-mccandlish",
+    "name": "Mark McCandlish",
+    "aliases": ["Mark C. McCandlish"],
+    "born": "1952 - United States",
+    "died": "April 13, 2021 - Redding, California",
+    "roles": [
+      "Aerospace Illustrator and Conceptual Artist",
+      "Defense Contractor Technical Illustrator (Lockheed, Rockwell)",
+      "ARV Fluxliner Witness and Disclosure Project Testifier"
+    ],
+    "service_period": "1980s-2021 (aerospace illustration career)",
+    "organizations": [],
+    "clearance": null,
+    "summary": "American aerospace illustrator who worked for major defense contractors including Lockheed and Rockwell, and who became the central figure in the Alien Reproduction Vehicle (ARV) disclosure claim. In 1988, his colleague Brad Sorensen described witnessing three disc-shaped craft at a classified air show at Norton AFB. McCandlish translated that account into a detailed technical cutaway illustration - the 'Fluxliner' - treating the ARV as an engineering problem with named components, proposed materials, and electromagnetic propulsion pathways. He testified at the 2001 Disclosure Project and had reportedly offered to testify before the Senate Intelligence Committee when he was found dead on April 13, 2021; his death was ruled a suicide but disputed by his associates.",
+    "education": [
+      "Background in aerospace illustration and technical conceptual art; worked for major US defense contractors across a multi-decade career"
+    ],
+    "early_career": [
+      "Established himself as a technical illustrator and conceptual artist for leading aerospace and defense contractors including Lockheed and Rockwell, specialising in accurate depictions of advanced aircraft and propulsion systems",
+      "His professional work gave him a deep working knowledge of aerospace engineering terminology, materials, and propulsion systems - which he later applied to his ARV technical analysis",
+      "Was scheduled to attend the November 1988 air show at Norton Air Force Base but accepted a well-paid illustration job at the last minute; colleague Brad Sorensen attended in his place"
+    ],
+    "key_events": [
+      {
+        "year": "Nov 1988",
+        "event": "Brad Sorensen - an aerospace designer and McCandlish's colleague - attends an air show at Norton Air Force Base, California. He is brought into a restricted hangar where three disc-shaped craft are on display: one hovering approximately a metre off the floor with no visible propulsion, one on the ground for examination, and one suspended from the ceiling. Sorensen reports that an official describes the craft as reverse-engineered from recovered non-human vehicles and states the US has had this technology since the 1950s."
+      },
+      {
+        "year": "1989",
+        "event": "Sorensen provides McCandlish with a detailed verbal and sketched description of what he observed. McCandlish, applying his aerospace illustration expertise, begins constructing a technical cutaway of what Sorensen described - naming components, proposing materials, and modelling an electromagnetic propulsion system based on zero-point energy principles. The resulting illustration becomes known as the 'Fluxliner' or ARV diagram."
+      },
+      {
+        "year": "1993",
+        "event": "The Fluxliner illustration is first circulated publicly. McCandlish notes that the ARV architecture described by Sorensen - a counter-rotating ring, central column, hemispherical crew compartment, and toroidal electromagnetic field for propulsion and lift - appears consistent with independent accounts from Bob Lazar and other sources who have described similar craft geometries."
+      },
+      {
+        "year": "May 2001",
+        "event": "Testifies at Steven Greer's Disclosure Project press conference at the National Press Club in Washington DC. Presents the Fluxliner illustration and the Sorensen account to a national audience alongside 19 other government and military whistleblowers. His testimony receives widespread coverage and the ARV diagram becomes one of the most reproduced UAP technical illustrations in the field."
+      },
+      {
+        "year": "2014",
+        "event": "Featured in the documentary 'Zero Point: The Story of Mark McCandlish and the Fluxliner,' which compiles his ARV testimony and technical analysis. The documentary circulates widely in UAP research communities and brings sustained new attention to the Fluxliner account."
+      },
+      {
+        "year": "Apr 2021",
+        "event": "Found dead at his home in Redding, California on April 13, 2021, from a shotgun wound to the head. The Shasta County Coroner officially rules the death a suicide. Associates dispute this, noting that McCandlish had recently offered to testify before the Senate Intelligence Committee on UAP and had been more publicly active than at any previous point. No independent investigation findings have contradicted the official ruling."
+      }
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "steven-greer",
+      "name": "Dr. Steven Greer",
+      "role": "Disclosure Project organiser",
+      "relationship": "Greer recruited McCandlish as one of the 2001 Disclosure Project witnesses. The Fluxliner presentation became one of the most technically specific and visually compelling disclosures at the press conference."
+    },
+    {
+      "id": "bob-lazar",
+      "name": "Bob Lazar",
+      "role": "S-4 facility reverse-engineering claimant",
+      "relationship": "McCandlish noted that Lazar's independent descriptions of the craft he worked on at S-4 - a disc with a central column, gravity wave generators positioned around the perimeter, and a reactor below the crew compartment - closely matched the ARV architecture Sorensen had described. McCandlish used this convergence as partial corroboration of the Fluxliner diagram's plausibility."
+    },
+    {
+      "id": "clifford-stone",
+      "name": "Clifford Stone",
+      "role": "Fellow Disclosure Project witness",
+      "relationship": "Both McCandlish and Stone testified at the 2001 Disclosure Project press conference providing complementary accounts: Stone from the crash retrieval and alien cataloguing side, McCandlish from the reverse-engineering and operational craft side."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "May 2001",
+      "type": "congressional-briefing",
+      "title": "Disclosure Project Press Conference - Fluxliner ARV Testimony",
+      "outlet": "National Press Club, Washington DC (Steven Greer / Disclosure Project)",
+      "notes": "McCandlish's most widely viewed public disclosure. Presents the Fluxliner cutaway illustration and the Brad Sorensen Norton AFB account to national media alongside 19 other whistleblowers."
+    },
+    {
+      "date": "2014",
+      "type": "documentary",
+      "title": "Zero Point: The Story of Mark McCandlish and the Fluxliner",
+      "outlet": "Independent documentary production",
+      "notes": "Primary long-form account of McCandlish's ARV testimony, technical analysis, and the engineering basis he proposed for the Fluxliner propulsion system. Circulated widely in UAP research communities."
+    },
+    {
+      "date": "2018",
+      "type": "conference",
+      "title": "Alternative Propulsion Engineering Conference - Reverse-Engineering the Flux Liner ARV",
+      "outlet": "Alternative Propulsion Engineering Conference (APEC)",
+      "notes": "Technical presentation in which McCandlish presents the ARV as an engineering problem, describing the electromagnetic and zero-point energy propulsion architecture in detail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mark McCandlish: Reverse-Engineering the Flux Liner ARV - APEC / Medium",
+      "url": "https://medium.com/predict/mark-mccandlish-reverse-engineering-the-flux-liner-arv-efa66c3adaf1",
+      "type": "Research Archive",
+      "notes": "Primary technical overview of McCandlish's ARV analysis and the Norton AFB account"
+    },
+    {
+      "title": "Mark McCandlish - Pioneering Minds",
+      "url": "https://www.pioneeringminds.com/mark-mccandlish/",
+      "type": "Research Archive",
+      "notes": "Biographical overview and career summary"
+    },
+    {
+      "title": "The Sad and Mysterious Death of Ufologist Mark McCandlish - Giza Death Star",
+      "url": "https://gizadeathstar.com/2021/05/the-sad-and-mysterious-death-of-ufologist-mark-mccandlish/",
+      "type": "News Article",
+      "notes": "Post-death account covering the official ruling and the circumstances disputed by his associates"
+    },
+    {
+      "title": "Mark McCandlish Obituary - Legacy.com / Redding Record Searchlight",
+      "url": "https://www.legacy.com/us/obituaries/redding/name/mark-mccandlish-obituary?id=55837309",
+      "type": "News Article",
+      "notes": "Official obituary record - Redding, California, April 13, 2021"
+    },
+    {
+      "title": "ARV (Alien Reproduction Vehicle) - UAPedia",
+      "url": "https://www.uapedia.ai/wiki/arv-alien-reproduction-vehicle-inside-the-fluxliner-and-secret-saucer-debate/",
+      "type": "Research Archive",
+      "notes": "Structured overview of the ARV/Fluxliner claim including corroboration and criticism"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "In November 1988, Brad Sorensen witnessed three disc-shaped Alien Reproduction Vehicles at a restricted hangar at Norton AFB, California - one hovering approximately one metre off the floor with no visible propulsion. An official present described them as reverse-engineered from recovered non-human vehicles with the technology operational since the 1950s.",
+      "category": "Testimony",
+      "status": "unverified",
+      "source": "McCandlish Disclosure Project testimony (May 2001); Zero Point documentary (2014). Brad Sorensen has not provided independent public corroboration."
+    },
+    {
+      "claim": "The Fluxliner ARV diagram - based on Sorensen's description - depicts an electromagnetic propulsion and levitation system using a counter-rotating ring, central column, and hemispherical crew compartment that McCandlish argues is consistent with zero-point energy principles and independently matches Bob Lazar's S-4 craft descriptions.",
+      "category": "Physical Evidence",
+      "status": "unverified",
+      "source": "Fluxliner technical illustration (1989-2001); APEC presentation (2018). No engineering verification of the proposed propulsion system has been published."
+    },
+    {
+      "claim": "McCandlish had offered to provide testimony before the Senate Intelligence Committee on UAP in the period shortly before his death, and his associates believe his death was connected to that planned testimony.",
+      "category": "Testimony",
+      "status": "disputed",
+      "source": "Project Camelot (May 2021); associates' statements. Official ruling: suicide. No independent investigation findings contradict the official conclusion."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "steven-greer",
+      "node_label": "Dr. Steven Greer",
+      "relationship": "Greer organised the 2001 Disclosure Project where McCandlish presented the Fluxliner diagram to a national audience.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "bob-lazar",
+      "node_label": "Bob Lazar",
+      "relationship": "McCandlish noted convergence between Lazar's S-4 craft descriptions and the ARV architecture Sorensen described; used as partial corroboration of the Fluxliner's plausibility.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "clifford-stone",
+      "node_label": "Clifford Stone",
+      "relationship": "Both testified at the 2001 Disclosure Project, providing complementary crash retrieval and operational reverse-engineering accounts.",
+      "connection_type": "professional"
+    }
+  ]
+}

@@ -1294,5 +1294,10 @@ export const graphData: GraphData = {
     { source: 'parviz-jafari', target: 'leslie-kean',              label: 'Kean organised the 2007 National Press Club event where Jafari testified; featured his case in UFOs: Generals, Pilots and Government Officials (2010)' },
     { source: 'parviz-jafari', target: 'oscar-santa-maria-huerta', label: 'both represent benchmark international military pilot UAP cases with weapons system effects; both testified at major US disclosure events' },
     { source: 'parviz-jafari', target: 'david-fravor',             label: 'Tehran 1976 and Nimitz 2004 are the two most-cited multi-sensor military UAP engagement cases; DIA and USN records both confirm respective incidents' },
+
+    // Mark McCandlish connections
+    { source: 'mark-mccandlish', target: 'steven-greer',   label: 'Greer recruited McCandlish as a 2001 Disclosure Project witness; Fluxliner presentation was among the most technically specific disclosures' },
+    { source: 'mark-mccandlish', target: 'bob-lazar',       label: 'McCandlish noted convergence between Lazar\'s S-4 craft descriptions and the ARV architecture; used as corroboration of Fluxliner plausibility' },
+    { source: 'mark-mccandlish', target: 'clifford-stone',  label: 'both testified at 2001 Disclosure Project; Stone on crash retrieval, McCandlish on operational reverse-engineered craft' },
   ],
 };
