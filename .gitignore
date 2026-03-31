@@ -95,3 +95,23 @@ data/blue-book-index-enriched.json
 # Planning documents
 contractor-pages-plan.md
 alias-search-plan.md
+cases-modular-migration-plan.md
+
+# Root-level ad-hoc Playwright debug scripts
+pw-*.js
+
+# Session-specific screenshot scripts (hardcoded paths / one-off)
+scripts/screenshot-batch*.cjs
+scripts/screenshot-final.cjs
+scripts/retake-network.js
+scripts/take-screenshots.js
+
+# One-off data debug / audit scripts (resolved)
+scripts/check-condon.js
+scripts/check-official-response.js
+scripts/list-missing-provenance.js
+scripts/test-search.js
+scripts/test-search-titles.js
+
+# Playwright test run artifacts
+/test-results/
