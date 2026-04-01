@@ -52,6 +52,13 @@ export const ps = {
   timelineLine:     'relative pl-6 border-l-2 border-gray-100 dark:border-gray-700',
   timelineDot:      'absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-900',
 
+  // --- Monospace / data readout values ---
+
+  /** Classification codes, clearance levels, tier IDs, dates, scores — font-mono tabular for instrument-readout feel */
+  monoValue:        'font-mono tabular-nums text-sm text-gray-800 dark:text-gray-200',
+  monoMuted:        'font-mono tabular-nums text-xs text-gray-500 dark:text-gray-400',
+  monoLabel:        'font-mono tabular-nums text-xs font-medium text-gray-400 uppercase tracking-wide',
+
   // --- Buttons (inactive filter pills) ---
 
   filterPill:       'text-xs px-2.5 py-1 rounded-full font-medium transition-colors duration-200 ease-in-out bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600',

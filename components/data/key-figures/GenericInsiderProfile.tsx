@@ -148,7 +148,7 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
       {profile.clearance && (
         <div className="flex gap-3">
           <span className="text-xs font-medium text-gray-400 w-24 shrink-0 pt-0.5">Clearance</span>
-          <span className={ps.body}>{profile.clearance}</span>
+          <span className={ps.monoValue}>{profile.clearance}</span>
         </div>
       )}
     </div>

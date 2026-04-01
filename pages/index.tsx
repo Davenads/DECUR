@@ -111,7 +111,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 <div className="mt-8 grid grid-cols-2 gap-3 md:hidden">
                   {ARCHIVE_STATS.map(({ count, label }) => (
                     <div key={label} className="border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-white dark:bg-gray-800">
-                      <p className="text-xl font-bold text-gray-900 dark:text-gray-100 tabular-nums">{count}</p>
+                      <p className="font-mono text-xl font-bold text-gray-900 dark:text-gray-100 tabular-nums">{count}</p>
                       <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{label}</p>
                     </div>
                   ))}
@@ -129,7 +129,7 @@ const Home: CustomNextPage<HomePageProps> = () => {
                   <div className="divide-y divide-gray-100 dark:divide-gray-700">
                     {ARCHIVE_STATS.map(({ count, label }) => (
                       <div key={label} className="flex items-baseline gap-3 px-5 py-3">
-                        <span className="text-xl font-bold text-gray-900 dark:text-gray-100 tabular-nums min-w-[3.5rem] shrink-0 text-right">
+                        <span className="font-mono text-xl font-bold text-gray-900 dark:text-gray-100 tabular-nums min-w-[3.5rem] shrink-0 text-right">
                           {count}
                         </span>
                         <span className="text-xs text-gray-500 dark:text-gray-400">{label}</span>

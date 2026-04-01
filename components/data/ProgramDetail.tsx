@@ -47,7 +47,7 @@ const OverviewTab: FC<{ p: ProgramEntry }> = ({ p }) => {
         </div>
         <div className={ps.infoCard}>
           <p className={ps.label}>Active Period</p>
-          <p className={ps.value}>{p.active_period}</p>
+          <p className={ps.monoValue}>{p.active_period}</p>
         </div>
         <div className={`${ps.infoCard} sm:col-span-1`}>
           <p className={ps.label}>Parent Organization</p>
@@ -129,7 +129,7 @@ const TimelineTab: FC<{ p: ProgramEntry }> = ({ p }) => (
       {p.key_events.map((ev, i) => (
         <div key={i} className="relative pl-6 pb-6 last:pb-0">
           <div className={`${ps.timelineDot} absolute -left-[5px] top-1`} />
-          <p className="text-xs font-bold text-primary mb-0.5">{ev.year}</p>
+          <p className="font-mono text-xs font-bold text-primary mb-0.5">{ev.year}</p>
           <p className={ps.body}>{ev.event}</p>
         </div>
       ))}
