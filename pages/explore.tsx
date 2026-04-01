@@ -197,7 +197,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         </div>
 
         {/* ── Sticky nav ─────────────────────────────────────────── */}
-        <nav className={`sticky top-0 z-40 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-2 transition-shadow duration-200 ${navScrolled ? 'shadow-md' : ''}`}>
+        <nav className={`sticky top-[64px] z-40 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 px-4 py-2 transition-shadow duration-200 ${navScrolled ? 'shadow-md' : ''}`}>
           <div className="max-w-5xl mx-auto flex items-center gap-1 overflow-x-auto">
 
             {/* Hero anchor */}
@@ -221,7 +221,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
         <div className="max-w-5xl mx-auto px-4 space-y-8 py-8 pb-16">
 
           {/* ── Hero: Network Graphs (Featured) ─────────────────── */}
-          <section ref={heroRef} id="hero-networks" className="scroll-mt-14">
+          <section ref={heroRef} id="hero-networks" className="scroll-mt-[108px]">
             <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
 
               {/* Hero toggle + badge */}
@@ -278,7 +278,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
           </section>
 
           {/* ── Secondary: Tabbed views ──────────────────────────── */}
-          <section ref={tabsRef} id="secondary-tabs" className="scroll-mt-14">
+          <section ref={tabsRef} id="secondary-tabs" className="scroll-mt-[108px]">
             <div className="bg-gray-50 dark:bg-gray-900/60 rounded-xl border border-gray-200 dark:border-gray-700/50 p-4 sm:p-6">
 
               {/* ── Timeline tab ─────────────────────────────────── */}
