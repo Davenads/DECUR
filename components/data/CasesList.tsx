@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import { CaseEntry, EvidenceTier } from '../../types/data';
 import { tierConfig } from './CaseDetail';
 import { ps } from './shared/profileStyles';
+import FadeInCard from './shared/FadeInCard';
 
 // SSR-safe: react-simple-maps uses browser APIs
 const CasesLocationMap = dynamic(() => import('./CasesLocationMap'), { ssr: false });
@@ -112,11 +113,11 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
       )}
 
       <div className="grid gap-4">
-        {sorted.map(c => {
+        {sorted.map((c, i) => {
           const tier = tierConfig[c.evidence_tier];
           return (
+            <FadeInCard key={c.id} delay={Math.min(i, 8) * 40}>
             <div
-              key={c.id}
               className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all group"
             >
               {/* Name row + button */}
@@ -155,6 +156,7 @@ const CasesList: FC<CasesListProps> = ({ cases }) => {
                 )}
               </div>
             </div>
+            </FadeInCard>
           );
         })}
       </div>

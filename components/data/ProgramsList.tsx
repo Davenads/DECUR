@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FC, useMemo, useState } from 'react';
 import { ProgramEntry } from '../../types/data';
 import { ps } from './shared/profileStyles';
+import FadeInCard from './shared/FadeInCard';
 
 type SortMode = 'alpha' | 'type';
 
@@ -56,8 +57,9 @@ const ProgramsList: FC<ProgramsListProps> = ({ programs }) => {
       </div>
 
       <div className="space-y-3">
-        {sorted.map(p => (
-          <Link key={p.id} href={`/programs/${p.id}`} className="block group">
+        {sorted.map((p, i) => (
+          <FadeInCard key={p.id} delay={Math.min(i, 8) * 40}>
+          <Link href={`/programs/${p.id}`} className="block group">
             <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary/50 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all">
               <div className="flex items-start justify-between gap-3 flex-wrap">
                 <div className="flex-1 min-w-0">
@@ -81,6 +83,7 @@ const ProgramsList: FC<ProgramsListProps> = ({ programs }) => {
               </div>
             </div>
           </Link>
+          </FadeInCard>
         ))}
       </div>
     </div>

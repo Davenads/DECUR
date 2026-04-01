@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FC, useMemo, useState } from 'react';
 import { InsiderEntry } from '../../types/data';
 import { ps } from './shared/profileStyles';
+import FadeInCard from './shared/FadeInCard';
 
 type SortMode = 'alpha' | 'type';
 
@@ -49,9 +50,9 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
       </div>
 
       <div className="grid gap-4">
-        {sorted.map(entry => (
+        {sorted.map((entry, i) => (
+          <FadeInCard key={entry.id} delay={Math.min(i, 8) * 40}>
           <div
-            key={entry.id}
             className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md hover:scale-[1.01] transition-all duration-200 ease-in-out group"
           >
             {/* Name row + button */}
@@ -102,6 +103,7 @@ const InsidersList: FC<InsidersListProps> = ({ entries }) => {
               ))}
             </div>
           </div>
+          </FadeInCard>
         ))}
       </div>
     </div>
