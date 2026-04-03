@@ -1,17 +1,29 @@
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
-
-// SubmissionWizard uses router.query which requires client-side access
-const SubmissionWizard = dynamic(() => import('../../components/contribute/SubmissionWizard'), {
-  ssr: false,
-  loading: () => (
-    <div className="max-w-2xl mx-auto">
-      <div className="h-96 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />
-    </div>
-  ),
-});
+import { useRouter } from 'next/router';
+import SubmissionWizard from '../../components/contribute/SubmissionWizard';
+import type { ContributionContentType } from '../../lib/validation/contributions';
 
 export default function SubmitPage() {
+  const router = useRouter();
+
+  // Gate on router.isReady so query params are fully populated before mounting
+  // the wizard. This prevents the router's isReady: false→true transition from
+  // causing a remount that resets wizard state on mobile.
+  if (!router.isReady) {
+    return (
+      <>
+        <Head><title>Submit Contribution - DECUR</title></Head>
+        <div className="container mx-auto px-4 py-10">
+          <div className="max-w-2xl mx-auto">
+            <div className="h-96 bg-gray-100 dark:bg-gray-800 rounded-xl animate-pulse" />
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  const initialType = router.query.type as ContributionContentType | undefined;
+
   return (
     <>
       <Head>
@@ -26,7 +38,8 @@ export default function SubmitPage() {
             All submissions are reviewed by the moderation team before publication.
           </p>
         </div>
-        <SubmissionWizard />
+        {/* Key forces a clean mount when type changes but keeps state stable otherwise */}
+        <SubmissionWizard key={initialType ?? 'no-type'} initialType={initialType} />
       </div>
     </>
   );

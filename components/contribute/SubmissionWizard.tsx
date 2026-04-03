@@ -26,19 +26,29 @@ interface WizardState {
   payload: Partial<FormPayload>;
 }
 
+interface Props {
+  /**
+   * Passed from the page component AFTER router.isReady is true.
+   * This keeps the wizard free of any useRouter() subscription so that
+   * iOS virtual keyboard events (which can trigger router re-renders) never
+   * cause the wizard to remount and lose form state.
+   */
+  initialType?: ContributionContentType;
+}
+
 const STEP_LABELS: Record<StepId, string> = {
   type:    '1. Type',
   details: '2. Details',
   review:  '3. Review',
 };
 
-const SubmissionWizard: FC = () => {
+const SubmissionWizard: FC<Props> = ({ initialType }) => {
+  // useRouter only for programmatic navigation (router.push), NOT for reading query.
   const router = useRouter();
-  const initialType = (router.query.type as ContributionContentType | undefined) ?? null;
 
   const [state, setState] = useState<WizardState>({
     step: initialType ? 'details' : 'type',
-    contentType: initialType,
+    contentType: initialType ?? null,
     payload: {},
   });
   const [submitting, setSubmitting] = useState(false);
