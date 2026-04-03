@@ -1,0 +1,102 @@
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import Head from 'next/head';
+import Link from 'next/link';
+import type { AuthChangeEvent, UserResponse } from '@supabase/supabase-js';
+import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
+
+/**
+ * OAuth + email-link callback handler.
+ * Supabase redirects here after email verification or OAuth login.
+ * The URL contains the token/code fragments which the SDK handles automatically.
+ */
+export default function VerifyPage() {
+  const router = useRouter();
+  const [status, setStatus] = useState<'loading' | 'success' | 'error'>('loading');
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    const supabase = getSupabaseBrowserClient();
+
+    // Listen for auth state - Supabase SDK automatically exchanges
+    // the token/code in the URL fragment on page load.
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent) => {
+      if (event === 'SIGNED_IN' || event === 'USER_UPDATED') {
+        setStatus('success');
+        const redirect =
+          typeof router.query.redirect === 'string' ? router.query.redirect : '/profile';
+        // Small delay so user sees success state briefly
+        setTimeout(() => router.push(redirect), 1200);
+      } else if (event === 'SIGNED_OUT') {
+        setStatus('error');
+        setMessage('Verification link may have expired. Please request a new one.');
+      }
+    });
+
+    // Also handle the case where we arrive with an existing session
+    supabase.auth.getUser().then(({ data, error }: UserResponse) => {
+      if (data.user && status === 'loading') {
+        setStatus('success');
+        const redirect =
+          typeof router.query.redirect === 'string' ? router.query.redirect : '/profile';
+        setTimeout(() => router.push(redirect), 1200);
+      } else if (error && status === 'loading') {
+        setStatus('error');
+        setMessage('Verification failed. The link may be expired or invalid.');
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return (
+    <>
+      <Head>
+        <title>Verifying - DECUR</title>
+      </Head>
+      <div className="min-h-screen flex items-center justify-center px-4 bg-gray-50 dark:bg-gray-950">
+        <div className="w-full max-w-sm text-center">
+          <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm p-8">
+            {status === 'loading' && (
+              <>
+                <div className="w-10 h-10 border-2 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+                <p className="text-sm text-gray-500 dark:text-gray-400">Verifying your account...</p>
+              </>
+            )}
+
+            {status === 'success' && (
+              <>
+                <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h2 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-1">Verified!</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Redirecting you now...</p>
+              </>
+            )}
+
+            {status === 'error' && (
+              <>
+                <div className="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+                <h2 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">Verification failed</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{message}</p>
+                <Link
+                  href="/auth/login"
+                  className="text-sm text-primary hover:underline dark:text-primary-light"
+                >
+                  Back to sign in
+                </Link>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

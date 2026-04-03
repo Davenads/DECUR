@@ -4,9 +4,13 @@ import { createServerClient } from '@supabase/ssr';
 /**
  * Middleware: session refresh + route protection.
  *
- * Phase 1: Session refresh only (keeps auth tokens alive on every request).
- * Phase 2+: Route guards for /admin/*, /profile/*, /contribute/submit are added here.
+ * - Refreshes Supabase auth tokens on every request (required for SSR auth).
+ * - Guards /profile/*, /contribute/submit, and /admin/* — redirects to login
+ *   with a `redirect` param so the user is returned after signing in.
  */
+
+const PROTECTED_PREFIXES = ['/profile', '/contribute/submit', '/admin'];
+
 export async function middleware(req: NextRequest) {
   let res = NextResponse.next({ request: req });
 
@@ -32,7 +36,22 @@ export async function middleware(req: NextRequest) {
   );
 
   // Refresh session — required to keep Supabase auth tokens from expiring
-  await supabase.auth.getUser();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  const { pathname } = req.nextUrl;
+
+  // Route guard: redirect unauthenticated users to login
+  const isProtected = PROTECTED_PREFIXES.some(prefix => pathname.startsWith(prefix));
+  if (isProtected && !user) {
+    const loginUrl = req.nextUrl.clone();
+    loginUrl.pathname = '/auth/login';
+    loginUrl.searchParams.set('redirect', pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
+  // Admin guard: reject non-admins attempting /admin/*
+  // Role check handled server-side in admin pages via service role client.
+  // Middleware only ensures the user is authenticated at minimum.
 
   return res;
 }
