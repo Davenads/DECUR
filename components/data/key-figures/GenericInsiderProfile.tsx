@@ -2,6 +2,7 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import ProfileShell from '../shared/ProfileShell';
+import BookmarkButton from '../../bookmarks/BookmarkButton';
 import PersonCard from '../shared/PersonCard';
 import ClaimsStatusBar from '../shared/ClaimsStatusBar';
 import { statusConfig } from '../shared/profileConstants';
@@ -552,6 +553,13 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
       onBack={onBack}
       backLabel={backLabel}
       networkNodeId={networkNodeId}
+      actions={
+        <BookmarkButton
+          contentType="figure"
+          contentId={id}
+          contentName={profile.name}
+        />
+      }
     >
       <div className="mt-4">
         {renderTab()}
