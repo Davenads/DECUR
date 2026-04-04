@@ -166,8 +166,11 @@ export default function AdminContributionDetailPage({ contribution, events }: Pr
         setSubmitting(false);
         return;
       }
-      // Reload page to reflect updated status
-      router.replace(router.asPath);
+      // Reload page to reflect updated status.
+      // window.location.reload() bypasses the Next.js router to avoid the
+      // "attempted to hard navigate to same URL" invariant thrown by
+      // router.replace(router.asPath) in newer Next.js versions.
+      window.location.reload();
     } catch {
       setSubmitError('An unexpected error occurred.');
       setSubmitting(false);
