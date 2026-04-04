@@ -13,7 +13,14 @@ import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
  */
 export default function ResetPasswordPage() {
   const router = useRouter();
-  const [step, setStep] = useState<'request' | 'set'>('request');
+  // Lazy initializer reads the hash synchronously during first render — before
+  // Supabase's createBrowserClient() can consume and strip the recovery hash.
+  const [step, setStep] = useState<'request' | 'set'>(() => {
+    if (typeof window !== 'undefined' && window.location.hash.includes('type=recovery')) {
+      return 'set';
+    }
+    return 'request';
+  });
   const [email, setEmail] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirm, setConfirm] = useState('');
