@@ -21,6 +21,22 @@ export default function ResetPasswordPage() {
     }
     return 'request';
   });
+
+  // Detect Supabase error redirects (e.g. expired/already-used reset link)
+  // and pre-populate the error state so the user sees a clear explanation.
+  const [linkError, setLinkError] = useState<string | null>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const errorCode = params.get('error_code');
+      if (errorCode === 'otp_expired') {
+        return 'This reset link has expired or was already used. Please request a new one below.';
+      }
+      if (params.get('error') === 'access_denied') {
+        return 'This reset link is invalid. Please request a new one below.';
+      }
+    }
+    return null;
+  });
   const [email, setEmail] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirm, setConfirm] = useState('');
@@ -103,6 +119,11 @@ export default function ResetPasswordPage() {
             {/* Step 1: Request reset email */}
             {step === 'request' && !success && (
               <form onSubmit={handleRequest} className="space-y-5">
+                {linkError && (
+                  <div className="p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-sm text-amber-700 dark:text-amber-400">
+                    {linkError}
+                  </div>
+                )}
                 {error && (
                   <div className="p-3 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-sm text-red-700 dark:text-red-400">
                     {error}
