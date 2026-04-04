@@ -18,7 +18,15 @@ export function getSupabaseBrowserClient() {
 
     client = createBrowserClient(
       supabaseUrl,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      {
+        // Fixed storage key ensures the browser and server always agree on the
+        // cookie name, regardless of which Supabase URL each side resolves to.
+        // @supabase/ssr derives the cookie name from the URL by default; since
+        // browser.ts uses window.location.origin while server clients use
+        // SUPABASE_INTERNAL_URL, they would hash to different names without this.
+        auth: { storageKey: 'decur-auth-v1' },
+      }
     );
   }
   return client;

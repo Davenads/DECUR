@@ -9,10 +9,17 @@ import type { NextApiRequest, NextApiResponse } from 'next';
  * Uses cookie-based session management compatible with @supabase/ssr.
  */
 export function getSupabaseServerClient(req: NextApiRequest, res: NextApiResponse) {
+  // Server-side: use SUPABASE_INTERNAL_URL (direct to 127.0.0.1:54321) so API
+  // routes bypass the browser proxy rewrite entirely. Fixed storageKey ensures
+  // the cookie name always matches what the browser client writes.
+  const supabaseUrl =
+    process.env.SUPABASE_INTERNAL_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL!;
+
   return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    supabaseUrl,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
+      auth: { storageKey: 'decur-auth-v1' },
       cookies: {
         getAll() {
           return Object.entries(req.cookies).map(([name, value]) => ({

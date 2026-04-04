@@ -14,10 +14,17 @@ const PROTECTED_PREFIXES = ['/profile', '/contribute/submit', '/admin'];
 export async function middleware(req: NextRequest) {
   let res = NextResponse.next({ request: req });
 
+  // Use SUPABASE_INTERNAL_URL so middleware bypasses the browser proxy and hits
+  // Supabase directly. Fixed storageKey must match browser.ts so the cookie
+  // the browser writes is the same cookie the middleware reads.
+  const supabaseUrl =
+    process.env.SUPABASE_INTERNAL_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL!;
+
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    supabaseUrl,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
+      auth: { storageKey: 'decur-auth-v1' },
       cookies: {
         getAll() {
           return req.cookies.getAll();
