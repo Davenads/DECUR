@@ -290,6 +290,30 @@ export default function AdminContributionDetailPage({ contribution, events }: Pr
           </div>
         )}
 
+        {/* Implementation brief download (approved contributions only) */}
+        {contribution.status === 'approved' && (
+          <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-700/50 rounded-xl p-5 mb-5">
+            <div className="flex items-start justify-between gap-4 flex-wrap">
+              <div>
+                <h2 className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">Ready for implementation</h2>
+                <p className="text-sm text-green-700 dark:text-green-400 max-w-prose">
+                  Download the implementation brief and paste it into Claude to generate the full data schema skeleton pre-filled from this submission.
+                </p>
+              </div>
+              <a
+                href={`/api/admin/contributions/${contribution.id}/brief`}
+                download
+                className="shrink-0 inline-flex items-center gap-2 px-4 py-2 bg-green-700 hover:bg-green-800 text-white text-sm font-medium rounded-lg transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download Brief (.md)
+              </a>
+            </div>
+          </div>
+        )}
+
         {/* Review action form */}
         {isReviewable(contribution.status) && (
           <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 p-5">

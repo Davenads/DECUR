@@ -1,7 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { Resend } from 'resend';
 import { getSupabaseServerClient } from '../../../../../lib/supabase/server';
 import { supabaseAdmin } from '../../../../../lib/supabase/admin';
 import { revalidateContentPaths } from '../../../../../lib/revalidate';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const VALID_ACTIONS = ['approve', 'reject', 'needs_revision', 'review_started'] as const;
 type Action = typeof VALID_ACTIONS[number];
@@ -103,6 +106,47 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         await supabaseAdmin.from('contributions').update({ revalidated: true }).eq('id', id);
       })
       .catch(err => console.warn('[revalidate] failed:', err));
+  }
+
+  // Approval notification email — lightweight, link only (non-blocking)
+  if (typedAction === 'approve') {
+    const devEmail = process.env.DECUR_DEV_EMAIL ?? 'decur-dave@proton.me';
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+    const briefUrl = `${siteUrl}/admin/contributions/${id}`;
+    const typeLabel = contribution.content_type.replace(/_/g, ' ');
+
+    resend.emails.send({
+      from: 'DECUR Admin <noreply@decur.org>',
+      to: [devEmail],
+      subject: `[DECUR] Approved contribution ready for implementation: ${contribution.content_type}`,
+      text: [
+        `A community contribution has been approved and is ready for implementation.`,
+        ``,
+        `Type: ${typeLabel}`,
+        `Contribution ID: ${id}`,
+        ``,
+        `Open the admin panel to download the implementation brief:`,
+        briefUrl,
+        ``,
+        `The brief includes the submitted data, a pre-filled JSON schema skeleton,`,
+        `and a research checklist. Paste it into Claude to implement the data point.`,
+      ].join('\n'),
+      html: `
+        <p>A community contribution has been approved and is ready for implementation.</p>
+        <table style="border-collapse:collapse;margin:12px 0">
+          <tr><td style="padding:2px 12px 2px 0;color:#6b7280;font-size:13px">Type</td><td style="font-size:13px">${typeLabel}</td></tr>
+          <tr><td style="padding:2px 12px 2px 0;color:#6b7280;font-size:13px">Contribution ID</td><td style="font-family:monospace;font-size:12px">${id}</td></tr>
+        </table>
+        <p style="margin:16px 0">
+          <a href="${briefUrl}" style="display:inline-block;padding:8px 16px;background:#4f46e5;color:#fff;text-decoration:none;border-radius:6px;font-size:13px;font-weight:500">
+            Open in Admin Panel
+          </a>
+        </p>
+        <p style="color:#6b7280;font-size:12px">
+          Download the implementation brief from the admin panel. Paste it into Claude to implement the data point.
+        </p>
+      `,
+    }).catch(err => console.warn('[review] approval email failed:', err));
   }
 
   return res.status(200).json({ ok: true, status: newStatus });
