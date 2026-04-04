@@ -9,6 +9,7 @@ import { InsiderProfileProps } from '../../types/components';
 import PersonCard from './shared/PersonCard';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import { ps } from './shared/profileStyles';
+import BookmarkButton from '../bookmarks/BookmarkButton';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -265,6 +266,7 @@ const GallaudetProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkN
       tabs={TABS}
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
+      actions={<BookmarkButton contentType="figure" contentId={data.profile.id} contentName={data.profile.name} />}
       onBack={onBack}
       backLabel={backLabel}
       networkNodeId={networkNodeId}
