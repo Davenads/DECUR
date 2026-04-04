@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 
 /**
- * Middleware: session refresh + route protection.
+ * Proxy (Next.js 16 equivalent of middleware): session refresh + route protection.
  *
  * - Refreshes Supabase auth tokens on every request (required for SSR auth).
  * - Guards /profile/*, /contribute/submit, and /admin/* — redirects to login
@@ -11,7 +11,7 @@ import { createServerClient } from '@supabase/ssr';
 
 const PROTECTED_PREFIXES = ['/profile', '/contribute/submit', '/admin'];
 
-export async function middleware(req: NextRequest) {
+export async function proxy(req: NextRequest) {
   let res = NextResponse.next({ request: req });
 
   // Use SUPABASE_INTERNAL_URL so middleware bypasses the browser proxy and hits

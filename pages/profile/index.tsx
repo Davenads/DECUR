@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useAuth } from '../_app';
 import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
-type Tab = 'saved' | 'collections';
+type Tab = 'saved' | 'collections' | 'submissions';
 
 interface Profile {
   display_name: string | null;
@@ -31,6 +31,36 @@ interface Collection {
   collection_items: [{ count: number }] | [];
 }
 
+interface Submission {
+  id: string;
+  content_type: string;
+  title: string;
+  status: string;
+  submitter_note: string | null;
+  reviewer_note: string | null;
+  created_at: string;
+  reviewed_at: string | null;
+}
+
+// Submission status badge colors
+const SUBMISSION_STATUS_BADGE: Record<string, string> = {
+  submitted:      'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+  under_review:   'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
+  approved:       'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  rejected:       'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+  needs_revision: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+  draft:          'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400',
+};
+
+// Submission content_type badge colors
+const SUBMISSION_TYPE_BADGE: Record<string, string> = {
+  figure:         'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+  case:           'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
+  timeline_event: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
+  correction:     'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
+  source:         'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+};
+
 // Map content_type → { label, color, href builder }
 const CONTENT_META: Record<string, { label: string; color: string; href: (id: string) => string }> = {
   figure:   { label: 'Key Figure',  color: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',    href: id => `/figures/${id}` },
@@ -54,6 +84,9 @@ export default function ProfilePage() {
   const [collections, setCollections]     = useState<Collection[]>([]);
   const [colLoading, setColLoading]       = useState(true);
 
+  const [submissions, setSubmissions]     = useState<Submission[]>([]);
+  const [subLoading, setSubLoading]       = useState(true);
+
   // New collection form state
   const [showNewCol, setShowNewCol]       = useState(false);
   const [newColTitle, setNewColTitle]     = useState('');
@@ -70,7 +103,7 @@ export default function ProfilePage() {
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '') as Tab;
-    if (hash === 'saved' || hash === 'collections') setActiveTab(hash);
+    if (hash === 'saved' || hash === 'collections' || hash === 'submissions') setActiveTab(hash);
   }, []);
 
   // Fetch profile row
@@ -110,6 +143,18 @@ export default function ProfilePage() {
         setColLoading(false);
       })
       .catch(() => setColLoading(false));
+  }, [user]);
+
+  // Fetch submissions
+  useEffect(() => {
+    if (!user) return;
+    fetch('/api/contributions/mine')
+      .then(r => r.json())
+      .then(({ submissions: data }: { submissions: Submission[] }) => {
+        setSubmissions(data ?? []);
+        setSubLoading(false);
+      })
+      .catch(() => setSubLoading(false));
   }, [user]);
 
   function handleTabChange(tab: Tab) {
@@ -201,21 +246,36 @@ export default function ProfilePage() {
         {/* Tabs */}
         <div className="border-b border-gray-200 dark:border-gray-700 mb-6">
           <nav className="-mb-px flex gap-6">
-            {(['saved', 'collections'] as Tab[]).map(tab => (
-              <button
-                key={tab}
-                onClick={() => handleTabChange(tab)}
-                className={`pb-3 text-sm font-medium transition-colors border-b-2 ${
-                  activeTab === tab
-                    ? 'border-primary text-primary dark:text-primary-light'
-                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-                }`}
-              >
-                {tab === 'saved'
-                  ? `Saved Items${!bmLoading && bookmarks.length > 0 ? ` (${bookmarks.length})` : ''}`
-                  : `Collections${!colLoading && collections.length > 0 ? ` (${collections.length})` : ''}`}
-              </button>
-            ))}
+            <button
+              onClick={() => handleTabChange('saved')}
+              className={`pb-3 text-sm font-medium transition-colors border-b-2 ${
+                activeTab === 'saved'
+                  ? 'border-primary text-primary dark:text-primary-light'
+                  : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+              }`}
+            >
+              {`Saved Items${!bmLoading && bookmarks.length > 0 ? ` (${bookmarks.length})` : ''}`}
+            </button>
+            <button
+              onClick={() => handleTabChange('collections')}
+              className={`pb-3 text-sm font-medium transition-colors border-b-2 ${
+                activeTab === 'collections'
+                  ? 'border-primary text-primary dark:text-primary-light'
+                  : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+              }`}
+            >
+              {`Collections${!colLoading && collections.length > 0 ? ` (${collections.length})` : ''}`}
+            </button>
+            <button
+              onClick={() => handleTabChange('submissions')}
+              className={`pb-3 text-sm font-medium transition-colors border-b-2 ${
+                activeTab === 'submissions'
+                  ? 'border-primary text-primary dark:text-primary-light'
+                  : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+              }`}
+            >
+              {`Submissions${!subLoading && submissions.length > 0 ? ` (${submissions.length})` : ''}`}
+            </button>
           </nav>
         </div>
 
@@ -265,6 +325,61 @@ export default function ProfilePage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
                       </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </>
+        )}
+
+        {/* Submissions tab */}
+        {activeTab === 'submissions' && (
+          <>
+            {subLoading ? (
+              <div className="space-y-3">
+                {[...Array(3)].map((_, i) => (
+                  <div key={i} className="h-16 bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />
+                ))}
+              </div>
+            ) : submissions.length === 0 ? (
+              <EmptyState
+                icon={
+                  <svg className="w-8 h-8 text-gray-300 dark:text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                }
+                title="No submissions yet"
+                description="Submit a contribution to help expand the DECUR database. You can track the review status of each submission here."
+              />
+            ) : (
+              <ul className="divide-y divide-gray-100 dark:divide-gray-800">
+                {submissions.map(sub => {
+                  const statusColor = SUBMISSION_STATUS_BADGE[sub.status] ?? SUBMISSION_STATUS_BADGE.draft;
+                  const typeColor = SUBMISSION_TYPE_BADGE[sub.content_type] ?? 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400';
+                  const isNegative = sub.status === 'rejected' || sub.status === 'needs_revision';
+                  return (
+                    <li key={sub.id} className="py-3 space-y-2">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className={`shrink-0 px-2 py-0.5 rounded text-xs font-medium ${typeColor}`}>
+                          {sub.content_type.replace(/_/g, ' ')}
+                        </span>
+                        <span className="flex-1 text-sm font-medium text-gray-800 dark:text-gray-200 truncate min-w-0">
+                          {sub.title}
+                        </span>
+                        <span className={`shrink-0 px-2 py-0.5 rounded text-xs font-medium ${statusColor}`}>
+                          {sub.status.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+                        </span>
+                        <span className="shrink-0 text-xs text-gray-400 dark:text-gray-500 hidden sm:block">
+                          {new Date(sub.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                        </span>
+                      </div>
+                      {sub.reviewer_note && isNegative && (
+                        <div className="ml-0 p-2.5 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50">
+                          <p className="text-xs font-medium text-amber-700 dark:text-amber-400 mb-0.5">Reviewer note</p>
+                          <p className="text-xs text-amber-900 dark:text-amber-200">{sub.reviewer_note}</p>
+                        </div>
+                      )}
                     </li>
                   );
                 })}

@@ -29,7 +29,7 @@ export default function RegisterPage() {
 
     setLoading(true);
     const supabase = getSupabaseBrowserClient();
-    const { error: authError } = await supabase.auth.signUp({
+    const { data, error: authError } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -41,6 +41,15 @@ export default function RegisterPage() {
     if (authError) {
       setError(authError.message);
       setLoading(false);
+      return;
+    }
+
+    // When email confirmations are disabled (local dev), Supabase returns a
+    // session immediately - redirect straight to profile.
+    // When confirmations are enabled (production), session is null and the user
+    // must click the verification link before they can sign in.
+    if (data.session) {
+      router.push('/profile');
       return;
     }
 
