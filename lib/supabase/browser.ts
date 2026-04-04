@@ -6,8 +6,18 @@ let client: ReturnType<typeof createBrowserClient> | null = null;
 
 export function getSupabaseBrowserClient() {
   if (!client) {
+    // In development, derive the Supabase URL from the current page's origin
+    // so the proxy route (/supabase-proxy/*) is always resolved relative to
+    // wherever the dev server is actually reachable (localhost, Tailscale IP, etc.).
+    // This prevents stale webpack-bundled URLs from breaking auth on remote devices.
+    // In production, NEXT_PUBLIC_SUPABASE_URL points directly to supabase.co.
+    const supabaseUrl =
+      process.env.NODE_ENV === 'development' && typeof window !== 'undefined'
+        ? `${window.location.origin}/supabase-proxy`
+        : process.env.NEXT_PUBLIC_SUPABASE_URL!;
+
     client = createBrowserClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      supabaseUrl,
       process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
     );
   }
