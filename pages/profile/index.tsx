@@ -503,9 +503,22 @@ export default function ProfilePage() {
                       {col.description && (
                         <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mb-2">{col.description}</p>
                       )}
-                      <p className="text-xs text-gray-400 dark:text-gray-500">
-                        {itemCount} item{itemCount !== 1 ? 's' : ''} - Updated {new Date(col.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                      </p>
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-xs text-gray-400 dark:text-gray-500">
+                          {itemCount} item{itemCount !== 1 ? 's' : ''} - Updated {new Date(col.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                        </p>
+                        {col.is_public && (
+                          <a
+                            href={`/collections/${col.id}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-primary hover:text-primary-dark dark:text-primary-light transition-colors shrink-0"
+                            onClick={e => e.stopPropagation()}
+                          >
+                            Share link
+                          </a>
+                        )}
+                      </div>
                     </div>
                   );
                 })}
