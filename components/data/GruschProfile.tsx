@@ -10,7 +10,6 @@ import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
 import TimelineList from './shared/TimelineList';
-import BookmarkButton from '../bookmarks/BookmarkButton';
 
 const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
   ssr: false,
@@ -254,7 +253,8 @@ const GruschProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNode
       tabs={TABS}
       activeTab={activeTab}
       onTabChange={(id) => setActiveTab(id as TabId)}
-      actions={<BookmarkButton contentType="figure" contentId={data.profile.id} contentName={data.profile.name} />}
+      contentId={data.profile.id}
+      contentName={data.profile.name}
       onBack={onBack}
       backLabel={backLabel}
       networkNodeId={networkNodeId}

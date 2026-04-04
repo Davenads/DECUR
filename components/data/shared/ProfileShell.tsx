@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react';
 import Link from 'next/link';
 import ProfileTabBar from './ProfileTabBar';
+import BookmarkButton from '../../bookmarks/BookmarkButton';
 
 interface ProfileShellProps {
   name: string;
@@ -9,8 +10,9 @@ interface ProfileShellProps {
   badge?: string;
   backLabel?: string;
   networkNodeId?: string;
-  /** Optional content rendered next to the badge (e.g. BookmarkButton) */
-  actions?: ReactNode;
+  /** ID and name used to render the BookmarkButton. Pass both to enable bookmarking. */
+  contentId?: string;
+  contentName?: string;
   tabs: ReadonlyArray<{ id: string; label: string }>;
   activeTab: string;
   onTabChange: (id: string) => void;
@@ -31,7 +33,8 @@ const ProfileShell: FC<ProfileShellProps> = ({
   badge = 'Case File',
   backLabel = 'Key Figures',
   networkNodeId,
-  actions,
+  contentId,
+  contentName,
   tabs,
   activeTab,
   onTabChange,
@@ -64,7 +67,9 @@ const ProfileShell: FC<ProfileShellProps> = ({
             <p className="text-sm text-gray-500 mt-0.5">{role}, {period}</p>
           </div>
           <div className="flex items-center gap-2 shrink-0">
-            {actions}
+            {contentId && contentName && (
+              <BookmarkButton contentType="figure" contentId={contentId} contentName={contentName} />
+            )}
             <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">
               {badge}
             </span>
