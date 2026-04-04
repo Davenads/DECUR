@@ -3,6 +3,7 @@ import { Resend } from 'resend';
 import { getSupabaseServerClient } from '../../../../../lib/supabase/server';
 import { supabaseAdmin } from '../../../../../lib/supabase/admin';
 import { revalidateContentPaths } from '../../../../../lib/revalidate';
+import { notifyContributionReviewed } from '../../../../../lib/discord';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -68,7 +69,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   // Fetch the contribution to get content_type for revalidation
   const { data: contribution, error: fetchError } = await supabaseAdmin
     .from('contributions')
-    .select('id, content_type, status')
+    .select('id, content_type, title, status')
     .eq('id', id)
     .single();
   if (fetchError || !contribution) return res.status(404).json({ error: 'Contribution not found.' });
@@ -106,6 +107,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         await supabaseAdmin.from('contributions').update({ revalidated: true }).eq('id', id);
       })
       .catch(err => console.warn('[revalidate] failed:', err));
+  }
+
+  // Discord notification on terminal review actions (non-blocking)
+  if (typedAction === 'approve' || typedAction === 'reject' || typedAction === 'needs_revision') {
+    notifyContributionReviewed(
+      contribution.title ?? id,
+      typedAction === 'approve' ? 'approved' : typedAction === 'reject' ? 'rejected' : 'needs_revision',
+      reviewer_note?.trim()
+    ).catch(err => console.warn('[discord] review notify failed:', err));
   }
 
   // Approval notification email — lightweight, link only (non-blocking)
