@@ -7,6 +7,7 @@ import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 const UserMenu: FC = () => {
   const { user, loading } = useAuth();
   const [open, setOpen] = useState(false);
+  const [role, setRole] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
@@ -25,6 +26,18 @@ const UserMenu: FC = () => {
   useEffect(() => {
     setOpen(false);
   }, [router.pathname]);
+
+  // Fetch profile role when user is known
+  useEffect(() => {
+    if (!user) { setRole(null); return; }
+    const supabase = getSupabaseBrowserClient();
+    supabase
+      .from('profiles')
+      .select('role')
+      .eq('id', user.id)
+      .single()
+      .then(({ data }: { data: { role: string } | null }) => setRole(data?.role ?? null));
+  }, [user]);
 
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
@@ -125,6 +138,21 @@ const UserMenu: FC = () => {
               Submit Contribution
             </Link>
           </div>
+
+          {/* Admin panel link (moderator/admin only) */}
+          {(role === 'admin' || role === 'moderator') && (
+            <div className="border-t border-gray-100 dark:border-gray-800 py-1">
+              <Link
+                href="/admin/contributions"
+                className="flex items-center gap-2.5 px-4 py-2 text-sm text-amber-700 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Admin Panel
+              </Link>
+            </div>
+          )}
 
           {/* Sign out */}
           <div className="border-t border-gray-100 dark:border-gray-800 py-1">
