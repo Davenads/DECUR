@@ -13,11 +13,14 @@ import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
  */
 export default function ResetPasswordPage() {
   const router = useRouter();
-  // Lazy initializer reads the hash synchronously during first render — before
-  // Supabase's createBrowserClient() can consume and strip the recovery hash.
+  // Check for ?mode=recovery query param (set by /auth/verify after it detects
+  // the PASSWORD_RECOVERY session). Query params survive navigation; the hash
+  // fragment does not — it is consumed by createBrowserClient() in _app before
+  // this component ever renders.
   const [step, setStep] = useState<'request' | 'set'>(() => {
-    if (typeof window !== 'undefined' && window.location.hash.includes('type=recovery')) {
-      return 'set';
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('mode') === 'recovery') return 'set';
     }
     return 'request';
   });
@@ -62,7 +65,10 @@ export default function ResetPasswordPage() {
 
     const supabase = getSupabaseBrowserClient();
     const { error: err } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/auth/reset-password`,
+      // Route through /auth/verify so the hash is consumed there.
+      // Verify detects the PASSWORD_RECOVERY session and redirects to
+      // /auth/reset-password?mode=recovery (a plain query param, not a hash).
+      redirectTo: `${window.location.origin}/auth/verify?type=recovery`,
     });
 
     if (err) {

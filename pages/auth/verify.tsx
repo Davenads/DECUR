@@ -18,28 +18,41 @@ export default function VerifyPage() {
   useEffect(() => {
     const supabase = getSupabaseBrowserClient();
 
+    // Detect if this is a password-recovery callback from the reset email.
+    // We use window.location.search directly (not router.query) because router
+    // may not be ready on the first render cycle.
+    const isRecovery =
+      typeof window !== 'undefined' &&
+      new URLSearchParams(window.location.search).get('type') === 'recovery';
+
+    const getRedirectTarget = () => {
+      if (isRecovery) return '/auth/reset-password?mode=recovery';
+      return typeof router.query.redirect === 'string' ? router.query.redirect : '/profile';
+    };
+
     // Listen for auth state - Supabase SDK automatically exchanges
     // the token/code in the URL fragment on page load.
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent) => {
-      if (event === 'SIGNED_IN' || event === 'USER_UPDATED') {
+      if (event === 'PASSWORD_RECOVERY') {
         setStatus('success');
-        const redirect =
-          typeof router.query.redirect === 'string' ? router.query.redirect : '/profile';
+        setTimeout(() => router.push('/auth/reset-password?mode=recovery'), 1200);
+      } else if (event === 'SIGNED_IN' || event === 'USER_UPDATED') {
+        setStatus('success');
         // Small delay so user sees success state briefly
-        setTimeout(() => router.push(redirect), 1200);
+        setTimeout(() => router.push(getRedirectTarget()), 1200);
       } else if (event === 'SIGNED_OUT') {
         setStatus('error');
         setMessage('Verification link may have expired. Please request a new one.');
       }
     });
 
-    // Also handle the case where we arrive with an existing session
+    // Fallback: if createBrowserClient already consumed the hash before our
+    // subscription registered (common race), getUser() will still return the
+    // established session. Use the isRecovery flag to route correctly.
     supabase.auth.getUser().then(({ data, error }: UserResponse) => {
       if (data.user && status === 'loading') {
         setStatus('success');
-        const redirect =
-          typeof router.query.redirect === 'string' ? router.query.redirect : '/profile';
-        setTimeout(() => router.push(redirect), 1200);
+        setTimeout(() => router.push(getRedirectTarget()), 1200);
       } else if (error && status === 'loading') {
         setStatus('error');
         setMessage('Verification failed. The link may be expired or invalid.');
