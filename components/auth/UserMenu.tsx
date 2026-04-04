@@ -42,7 +42,9 @@ const UserMenu: FC = () => {
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
     await supabase.auth.signOut();
-    router.push('/');
+    // Hard redirect so the browser clears cookies and reinitialises auth state
+    // before any page renders — client-side navigation races with cookie clearing.
+    window.location.href = '/';
   }
 
   // Don't render until auth state is known
