@@ -2,7 +2,7 @@ import { useState, FormEvent, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
-import type { AuthChangeEvent, Session } from '@supabase/supabase-js';
+import type { AuthChangeEvent } from '@supabase/supabase-js';
 import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
 /**
@@ -59,21 +59,6 @@ export default function ResetPasswordPage() {
     });
     return () => subscription.unsubscribe();
   }, []);
-
-  // Guard: if we're in 'set' mode but no session exists, the reset link was
-  // either never clicked properly or the session was lost (e.g. hard refresh).
-  // Detect this early so the user sees a clear message instead of a cryptic
-  // "Auth session missing!" after filling in their password.
-  useEffect(() => {
-    if (step !== 'set') return;
-    const supabase = getSupabaseBrowserClient();
-    supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
-      if (!session) {
-        setError('Your reset session has expired or is missing. Please request a new link.');
-        setStep('request');
-      }
-    });
-  }, [step]);
 
   async function handleRequest(e: FormEvent) {
     e.preventDefault();
