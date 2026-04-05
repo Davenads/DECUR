@@ -14,7 +14,6 @@ export default function VerifyPage() {
   const router = useRouter();
   const [status, setStatus] = useState<'loading' | 'success' | 'error'>('loading');
   const [message, setMessage] = useState('');
-  const [debugInfo, setDebugInfo] = useState<string>('');
 
   useEffect(() => {
     const supabase = getSupabaseBrowserClient();
@@ -75,10 +74,9 @@ export default function VerifyPage() {
     const code = params.get('code');
 
     if (code) {
-      // Collect debug info before exchange
-      const cookieKeys = document.cookie.split(';').map(c => c.trim().split('=')[0]).join(', ');
-      const lsKeys = Object.keys(localStorage).filter(k => k.includes('supabase') || k.includes('decur')).join(', ');
-
+      // For OAuth flows this path is no longer used — login.tsx now directs
+      // OAuth to /api/auth/callback for reliable server-side exchange.
+      // This branch remains as a fallback for any code-based email links.
       supabase.auth.exchangeCodeForSession(code).then(
         ({ data, error }: { data: { session: Session | null }; error: { message: string } | null }) => {
         if (!error) {
@@ -86,8 +84,6 @@ export default function VerifyPage() {
             if (!handled) handleSuccess(data.session);
           }, 500);
         } else {
-          // DEBUG: capture error details
-          setDebugInfo(`exchangeCodeForSession error: "${error.message}" | cookies: [${cookieKeys}] | ls: [${lsKeys}]`);
           supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
             if (session) {
               handleSuccess(session);
@@ -164,11 +160,6 @@ export default function VerifyPage() {
                 >
                   Back to sign in
                 </Link>
-                {debugInfo && (
-                  <p className="mt-3 text-xs text-left bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-700 rounded p-2 break-all text-yellow-800 dark:text-yellow-300">
-                    {debugInfo}
-                  </p>
-                )}
               </>
             )}
           </div>
