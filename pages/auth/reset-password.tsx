@@ -96,7 +96,28 @@ export default function ResetPasswordPage() {
 
     setLoading(true);
     const supabase = getSupabaseBrowserClient();
+
+    // The Supabase SSR client may lose the in-memory recovery session during
+    // navigation (e.g. getUser() server calls can clear it). Restore it from
+    // the tokens we stashed in sessionStorage when PASSWORD_RECOVERY fired.
+    const { data: { session: currentSession } } = await supabase.auth.getSession();
+    if (!currentSession) {
+      const stored = typeof window !== 'undefined'
+        ? sessionStorage.getItem('decur-recovery-tokens')
+        : null;
+      if (stored) {
+        try {
+          const { access_token, refresh_token } = JSON.parse(stored) as { access_token: string; refresh_token: string };
+          await supabase.auth.setSession({ access_token, refresh_token });
+        } catch {
+          // ignore parse/setSession errors — updateUser will fail below with a clear message
+        }
+      }
+    }
+
     const { error: err } = await supabase.auth.updateUser({ password: newPassword });
+    // Clean up stored tokens regardless of outcome
+    sessionStorage.removeItem('decur-recovery-tokens');
 
     if (err) {
       // Recovery session expired or was lost (e.g. hard-refresh after clicking link)

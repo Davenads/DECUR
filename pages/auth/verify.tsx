@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
-import type { AuthChangeEvent, UserResponse } from '@supabase/supabase-js';
+import type { AuthChangeEvent, Session } from '@supabase/supabase-js';
 import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
 /**
@@ -32,8 +32,18 @@ export default function VerifyPage() {
 
     // Listen for auth state - Supabase SDK automatically exchanges
     // the token/code in the URL fragment on page load.
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent, session: Session | null) => {
       if (event === 'PASSWORD_RECOVERY') {
+        // Persist the recovery tokens to sessionStorage so the reset-password page
+        // can restore the session if the browser client loses it during navigation.
+        // The SDK may not persist recovery sessions to localStorage in all cases,
+        // and getUser() server-side calls can clear the in-memory session.
+        if (session) {
+          sessionStorage.setItem('decur-recovery-tokens', JSON.stringify({
+            access_token: session.access_token,
+            refresh_token: session.refresh_token,
+          }));
+        }
         setStatus('success');
         setTimeout(() => router.push('/auth/reset-password?mode=recovery'), 1200);
       } else if (event === 'SIGNED_IN' || event === 'USER_UPDATED') {
@@ -47,14 +57,12 @@ export default function VerifyPage() {
     });
 
     // Fallback: if createBrowserClient already consumed the hash before our
-    // subscription registered (common race), getUser() will still return the
-    // established session. Use the isRecovery flag to route correctly.
-    // NOTE: Only handle the success case here. Do NOT set error on getUser()
-    // failure — getUser() can resolve before the SDK finishes exchanging the
-    // hash token, giving a false "no session" result. The SIGNED_OUT event
-    // from onAuthStateChange is the reliable signal for an actually expired link.
-    supabase.auth.getUser().then(({ data }: UserResponse) => {
-      if (data.user && status === 'loading') {
+    // subscription registered (common race), getSession() will return the
+    // already-established session from localStorage.
+    // Use getSession() (local read) rather than getUser() (server request) to
+    // avoid server-side JWT validation which can clear the recovery session.
+    supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
+      if (session && status === 'loading') {
         setStatus('success');
         setTimeout(() => router.push(getRedirectTarget()), 1200);
       }
