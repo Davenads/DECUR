@@ -117,6 +117,7 @@ export default function ResetPasswordPage() {
     const { data: { session: browserSession } } = await supabase.auth.getSession();
     const visibleCookies = typeof document !== 'undefined' ? document.cookie : '(server-side)';
     const storedTokensRaw = typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('decur-recovery-tokens') : null;
+    const storedTokens = storedTokensRaw ? JSON.parse(storedTokensRaw) as { access_token: string; refresh_token: string } : null;
 
     const preCallDebug = {
       browserSession: browserSession
@@ -124,13 +125,19 @@ export default function ResetPasswordPage() {
         : null,
       visibleCookieKeys: visibleCookies.split(';').map(c => c.trim().split('=')[0]).filter(Boolean),
       sessionStorageHasTokens: !!storedTokensRaw,
+      sendingStoredTokens: !!storedTokens,
     };
 
     // Route the password update through a server-side API endpoint.
+    // Include recovery tokens from sessionStorage so the server can restore the
+    // session even when the browser client's cookie/memory state is empty.
     const response = await fetch('/api/auth/update-password', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ password: newPassword }),
+      body: JSON.stringify({
+        password: newPassword,
+        ...(storedTokens ?? {}),
+      }),
     });
     // Clean up stored recovery tokens regardless of outcome
     if (typeof window !== 'undefined') sessionStorage.removeItem('decur-recovery-tokens');

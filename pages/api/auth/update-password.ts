@@ -16,7 +16,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { password } = req.body as { password?: string };
+  const { password, access_token, refresh_token } = req.body as {
+    password?: string;
+    access_token?: string;
+    refresh_token?: string;
+  };
+
   if (!password || typeof password !== 'string') {
     return res.status(400).json({ error: 'password is required' });
   }
@@ -24,31 +29,35 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).json({ error: 'Password must be at least 8 characters.' });
   }
 
-  // DEBUG: log all cookie keys seen by the server
-  const allCookieKeys = Object.keys(req.cookies);
-  const authCookieKeys = allCookieKeys.filter(k => k.includes('decur') || k.includes('auth') || k.includes('supabase') || k.includes('sb-'));
-  console.log('[update-password] all cookie keys:', allCookieKeys);
-  console.log('[update-password] auth-related cookies:', authCookieKeys);
-
   const supabase = getSupabaseServerClient(req, res);
 
-  // Validate the session via the cookies in the request
-  const { data: { user }, error: userError } = await supabase.auth.getUser();
+  // If the client sent recovery tokens (from sessionStorage), restore the session
+  // server-side first. This handles the case where @supabase/ssr's browser client
+  // loses its in-memory session during navigation and no auth cookies are present.
+  // The server client uses the internal Supabase URL directly, so setSession's
+  // internal getUser call succeeds reliably (unlike the browser proxy path).
+  if (access_token && refresh_token) {
+    console.log('[update-password] restoring session from provided tokens');
+    const { error: sessionError } = await supabase.auth.setSession({ access_token, refresh_token });
+    if (sessionError) {
+      console.log('[update-password] setSession error:', sessionError.message);
+      return res.status(401).json({
+        error: 'Recovery session is invalid or expired. Please request a new reset link.',
+      });
+    }
+  }
 
+  // Validate the session (either from cookies or from the tokens we just restored)
+  const { data: { user }, error: userError } = await supabase.auth.getUser();
   console.log('[update-password] getUser result:', { userId: user?.id ?? null, error: userError?.message ?? null });
 
   if (userError || !user) {
     return res.status(401).json({
       error: 'Auth session missing or expired. Please request a new reset link.',
-      _debug: {
-        userError: userError?.message ?? null,
-        cookieCount: allCookieKeys.length,
-        authCookieKeys,
-      },
     });
   }
 
-  // Update the password using the authenticated session
+  // Update the password using the validated session
   const { error: updateError } = await supabase.auth.updateUser({ password });
   if (updateError) {
     return res.status(400).json({ error: updateError.message });
