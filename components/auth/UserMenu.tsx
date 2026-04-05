@@ -2,7 +2,6 @@ import { useState, useRef, useEffect, FC } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useAuth } from '../../pages/_app';
-import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
 const UserMenu: FC = () => {
   const { user, loading } = useAuth();
@@ -27,23 +26,26 @@ const UserMenu: FC = () => {
     setOpen(false);
   }, [router.pathname]);
 
-  // Fetch profile role when user is known
+  // Fetch profile role when user is known.
+  // Uses /api/me/role (server-side) instead of a direct client-side Supabase
+  // query so the role check doesn't rely on the browser → /supabase-proxy hop,
+  // which can fail on remote devices (e.g. Tailscale) even when auth works.
   useEffect(() => {
     if (!user) { setRole(null); return; }
-    const supabase = getSupabaseBrowserClient();
-    supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', user.id)
-      .single()
-      .then(({ data }: { data: { role: string } | null }) => setRole(data?.role ?? null));
+    fetch('/api/me/role')
+      .then(r => r.json())
+      .then(({ role }: { role: string | null }) => setRole(role))
+      .catch(() => setRole(null));
   }, [user]);
 
   async function handleSignOut() {
-    const supabase = getSupabaseBrowserClient();
-    await supabase.auth.signOut();
-    // Hard redirect so the browser clears cookies and reinitialises auth state
-    // before any page renders — client-side navigation races with cookie clearing.
+    // Sign out via server-side API route (uses SUPABASE_INTERNAL_URL directly)
+    // rather than calling signOut() on the browser client, which routes through
+    // /supabase-proxy and can fail silently on remote devices (Tailscale).
+    // The server route clears auth cookies in its Set-Cookie response headers.
+    await fetch('/api/auth/signout', { method: 'POST' }).catch(() => {});
+    // Hard redirect so the browser applies the cleared cookies before any
+    // page renders — client-side navigation races with cookie clearing.
     window.location.href = '/';
   }
 

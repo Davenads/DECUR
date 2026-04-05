@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import type { GetServerSideProps } from 'next';
-import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
 // ── Types ─────────────────────────────────────────────────────────────────
 

@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useAuth } from '../_app';
-import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
 type Tab = 'saved' | 'collections' | 'submissions';
 
@@ -106,19 +105,17 @@ export default function ProfilePage() {
     if (hash === 'saved' || hash === 'collections' || hash === 'submissions') setActiveTab(hash);
   }, []);
 
-  // Fetch profile row
+  // Fetch profile row — uses /api/me/profile (server-side) to avoid the
+  // browser → /supabase-proxy hop failing on remote devices (e.g. Tailscale).
   useEffect(() => {
     if (!user) return;
-    const supabase = getSupabaseBrowserClient();
-    supabase
-      .from('profiles')
-      .select('display_name, bio, created_at')
-      .eq('id', user.id)
-      .single()
-      .then(({ data }: { data: Profile | null }) => {
+    fetch('/api/me/profile')
+      .then(r => r.json())
+      .then(({ profile: data }: { profile: Profile | null }) => {
         setProfile(data);
         setProfileLoading(false);
-      });
+      })
+      .catch(() => setProfileLoading(false));
   }, [user]);
 
   // Fetch bookmarks

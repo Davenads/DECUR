@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useAuth } from '../../_app';
-import { getSupabaseBrowserClient } from '../../../lib/supabase/browser';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -84,26 +83,24 @@ export default function AdminContributionsPage() {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  // Role guard
+  // Role guard — uses /api/me/role (server-side) to avoid the browser →
+  // /supabase-proxy hop failing on remote devices (e.g. Tailscale).
   useEffect(() => {
     if (authLoading) return;
     if (!user) {
       router.replace('/');
       return;
     }
-    const supabase = getSupabaseBrowserClient();
-    supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', user.id)
-      .single()
-      .then(({ data }: { data: { role: string } | null }) => {
-        if (!data || !['moderator', 'admin'].includes(data.role)) {
+    fetch('/api/me/role')
+      .then(r => r.json())
+      .then(({ role }: { role: string | null }) => {
+        if (!role || !['moderator', 'admin'].includes(role)) {
           router.replace('/');
         } else {
           setRoleChecked(true);
         }
-      });
+      })
+      .catch(() => router.replace('/'));
   }, [authLoading, user, router]);
 
   const fetchContributions = useCallback(async (filter: FilterTab, pg: number) => {
