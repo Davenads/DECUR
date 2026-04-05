@@ -24,12 +24,28 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(400).json({ error: 'Password must be at least 8 characters.' });
   }
 
+  // DEBUG: log all cookie keys seen by the server
+  const allCookieKeys = Object.keys(req.cookies);
+  const authCookieKeys = allCookieKeys.filter(k => k.includes('decur') || k.includes('auth') || k.includes('supabase') || k.includes('sb-'));
+  console.log('[update-password] all cookie keys:', allCookieKeys);
+  console.log('[update-password] auth-related cookies:', authCookieKeys);
+
   const supabase = getSupabaseServerClient(req, res);
 
   // Validate the session via the cookies in the request
   const { data: { user }, error: userError } = await supabase.auth.getUser();
+
+  console.log('[update-password] getUser result:', { userId: user?.id ?? null, error: userError?.message ?? null });
+
   if (userError || !user) {
-    return res.status(401).json({ error: 'Auth session missing or expired. Please request a new reset link.' });
+    return res.status(401).json({
+      error: 'Auth session missing or expired. Please request a new reset link.',
+      _debug: {
+        userError: userError?.message ?? null,
+        cookieCount: allCookieKeys.length,
+        authCookieKeys,
+      },
+    });
   }
 
   // Update the password using the authenticated session
