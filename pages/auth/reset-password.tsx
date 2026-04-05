@@ -120,13 +120,8 @@ export default function ResetPasswordPage() {
     sessionStorage.removeItem('decur-recovery-tokens');
 
     if (err) {
-      // Recovery session expired or was lost (e.g. hard-refresh after clicking link)
-      if (err.message.toLowerCase().includes('session') || err.message.toLowerCase().includes('missing')) {
-        setError('Your reset session has expired. Please request a new reset link.');
-        setStep('request');
-      } else {
-        setError(err.message);
-      }
+      // Show raw error for diagnostics — will be replaced with user-friendly message once root cause confirmed
+      setError(`[DEBUG] ${err.message} (name: ${err.name}, status: ${(err as unknown as { status?: number }).status ?? 'n/a'})`);
       setLoading(false);
       return;
     }

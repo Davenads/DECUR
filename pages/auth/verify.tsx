@@ -33,11 +33,12 @@ export default function VerifyPage() {
     // Listen for auth state - Supabase SDK automatically exchanges
     // the token/code in the URL fragment on page load.
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent, session: Session | null) => {
-      if (event === 'PASSWORD_RECOVERY') {
+      if (event === 'PASSWORD_RECOVERY' || (event === 'SIGNED_IN' && isRecovery)) {
         // Persist the recovery tokens to sessionStorage so the reset-password page
         // can restore the session if the browser client loses it during navigation.
-        // The SDK may not persist recovery sessions to localStorage in all cases,
-        // and getUser() server-side calls can clear the in-memory session.
+        // With @supabase/ssr PKCE flow, the SDK fires SIGNED_IN (not PASSWORD_RECOVERY)
+        // after exchanging the recovery code. We capture tokens on both events when
+        // it's a recovery flow so the sessionStorage restore path always has tokens.
         if (session) {
           sessionStorage.setItem('decur-recovery-tokens', JSON.stringify({
             access_token: session.access_token,
