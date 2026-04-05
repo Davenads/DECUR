@@ -2,7 +2,7 @@ import { useState, FormEvent, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
-import type { AuthChangeEvent } from '@supabase/supabase-js';
+import type { AuthChangeEvent, Session } from '@supabase/supabase-js';
 import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
 /**
@@ -13,17 +13,9 @@ import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
  */
 export default function ResetPasswordPage() {
   const router = useRouter();
-  // Check for ?mode=recovery query param (set by /auth/verify after it detects
-  // the PASSWORD_RECOVERY session). Query params survive navigation; the hash
-  // fragment does not — it is consumed by createBrowserClient() in _app before
-  // this component ever renders.
-  const [step, setStep] = useState<'request' | 'set'>(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('mode') === 'recovery') return 'set';
-    }
-    return 'request';
-  });
+  // Start with 'request' on both server and client to avoid hydration mismatch.
+  // useEffect reads the query param after mount and upgrades to 'set' if present.
+  const [step, setStep] = useState<'request' | 'set'>('request');
 
   // Detect Supabase error redirects (e.g. expired/already-used reset link)
   // and pre-populate the error state so the user sees a clear explanation.
@@ -47,6 +39,16 @@ export default function ResetPasswordPage() {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // After mount: check ?mode=recovery in the URL and switch to the set-password
+  // form. Doing this in useEffect (not a lazy useState initializer) ensures server
+  // and client render the same initial HTML, preventing hydration mismatch.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('mode') === 'recovery') {
+      setStep('set');
+    }
+  }, []);
+
   // Detect PASSWORD_RECOVERY event (user clicked the reset link)
   useEffect(() => {
     const supabase = getSupabaseBrowserClient();
@@ -57,6 +59,21 @@ export default function ResetPasswordPage() {
     });
     return () => subscription.unsubscribe();
   }, []);
+
+  // Guard: if we're in 'set' mode but no session exists, the reset link was
+  // either never clicked properly or the session was lost (e.g. hard refresh).
+  // Detect this early so the user sees a clear message instead of a cryptic
+  // "Auth session missing!" after filling in their password.
+  useEffect(() => {
+    if (step !== 'set') return;
+    const supabase = getSupabaseBrowserClient();
+    supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
+      if (!session) {
+        setError('Your reset session has expired or is missing. Please request a new link.');
+        setStep('request');
+      }
+    });
+  }, [step]);
 
   async function handleRequest(e: FormEvent) {
     e.preventDefault();
@@ -97,7 +114,13 @@ export default function ResetPasswordPage() {
     const { error: err } = await supabase.auth.updateUser({ password: newPassword });
 
     if (err) {
-      setError(err.message);
+      // Recovery session expired or was lost (e.g. hard-refresh after clicking link)
+      if (err.message.toLowerCase().includes('session') || err.message.toLowerCase().includes('missing')) {
+        setError('Your reset session has expired. Please request a new reset link.');
+        setStep('request');
+      } else {
+        setError(err.message);
+      }
       setLoading(false);
       return;
     }

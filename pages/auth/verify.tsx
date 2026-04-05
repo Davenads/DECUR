@@ -49,13 +49,14 @@ export default function VerifyPage() {
     // Fallback: if createBrowserClient already consumed the hash before our
     // subscription registered (common race), getUser() will still return the
     // established session. Use the isRecovery flag to route correctly.
-    supabase.auth.getUser().then(({ data, error }: UserResponse) => {
+    // NOTE: Only handle the success case here. Do NOT set error on getUser()
+    // failure — getUser() can resolve before the SDK finishes exchanging the
+    // hash token, giving a false "no session" result. The SIGNED_OUT event
+    // from onAuthStateChange is the reliable signal for an actually expired link.
+    supabase.auth.getUser().then(({ data }: UserResponse) => {
       if (data.user && status === 'loading') {
         setStatus('success');
         setTimeout(() => router.push(getRedirectTarget()), 1200);
-      } else if (error && status === 'loading') {
-        setStatus('error');
-        setMessage('Verification failed. The link may be expired or invalid.');
       }
     });
 
