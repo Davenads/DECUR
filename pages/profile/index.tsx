@@ -348,6 +348,17 @@ export default function ProfilePage() {
                 }
                 title="No submissions yet"
                 description="Submit a contribution to help expand the DECUR database. You can track the review status of each submission here."
+                action={
+                  <Link
+                    href="/contribute/submit"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-primary hover:bg-primary-dark text-white text-sm font-medium rounded-lg transition-colors"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                    Submit a contribution
+                  </Link>
+                }
               />
             ) : (
               <ul className="divide-y divide-gray-100 dark:divide-gray-800">
@@ -528,12 +539,18 @@ export default function ProfilePage() {
   );
 }
 
-function EmptyState({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
+function EmptyState({ icon, title, description, action }: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  action?: React.ReactNode;
+}) {
   return (
     <div className="flex flex-col items-center justify-center py-16 text-center">
       <div className="mb-4">{icon}</div>
       <h3 className="text-base font-medium text-gray-700 dark:text-gray-300 mb-1">{title}</h3>
       <p className="text-sm text-gray-400 dark:text-gray-500 max-w-sm">{description}</p>
+      {action && <div className="mt-5">{action}</div>}
     </div>
   );
 }
