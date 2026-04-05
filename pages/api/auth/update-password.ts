@@ -37,10 +37,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   // The server client uses the internal Supabase URL directly, so setSession's
   // internal getUser call succeeds reliably (unlike the browser proxy path).
   if (access_token && refresh_token) {
-    console.log('[update-password] restoring session from provided tokens');
     const { error: sessionError } = await supabase.auth.setSession({ access_token, refresh_token });
     if (sessionError) {
-      console.log('[update-password] setSession error:', sessionError.message);
       return res.status(401).json({
         error: 'Recovery session is invalid or expired. Please request a new reset link.',
       });
@@ -49,7 +47,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   // Validate the session (either from cookies or from the tokens we just restored)
   const { data: { user }, error: userError } = await supabase.auth.getUser();
-  console.log('[update-password] getUser result:', { userId: user?.id ?? null, error: userError?.message ?? null });
 
   if (userError || !user) {
     return res.status(401).json({

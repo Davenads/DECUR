@@ -2,7 +2,7 @@ import { useState, FormEvent, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
-import type { AuthChangeEvent, Session } from '@supabase/supabase-js';
+import type { AuthChangeEvent } from '@supabase/supabase-js';
 import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 
 /**
@@ -38,8 +38,6 @@ export default function ResetPasswordPage() {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
-  // DEBUG state - remove after diagnosing
-  const [debugInfo, setDebugInfo] = useState<Record<string, unknown> | null>(null);
 
   // After mount: check ?mode=recovery in the URL and switch to the set-password
   // form. Doing this in useEffect (not a lazy useState initializer) ensures server
@@ -54,27 +52,13 @@ export default function ResetPasswordPage() {
   // Detect PASSWORD_RECOVERY event (user clicked the reset link)
   useEffect(() => {
     const supabase = getSupabaseBrowserClient();
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent, session: Session | null) => {
-      console.log('[reset-password] auth event:', event, session ? `user=${session.user?.id}` : 'no session');
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent) => {
       if (event === 'PASSWORD_RECOVERY') {
         setStep('set');
       }
     });
     return () => subscription.unsubscribe();
   }, []);
-
-  // DEBUG: log browser session state when step switches to 'set'
-  useEffect(() => {
-    if (step !== 'set') return;
-    const supabase = getSupabaseBrowserClient();
-    supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
-      const visibleCookies = typeof document !== 'undefined' ? document.cookie : '';
-      const storedTokens = typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('decur-recovery-tokens') : null;
-      console.log('[reset-password:set] browser session:', session ? `user=${session.user?.id} exp=${session.expires_at}` : null);
-      console.log('[reset-password:set] document.cookie keys:', visibleCookies.split(';').map(c => c.trim().split('=')[0]).filter(Boolean));
-      console.log('[reset-password:set] sessionStorage tokens present:', !!storedTokens);
-    });
-  }, [step]);
 
   async function handleRequest(e: FormEvent) {
     e.preventDefault();
@@ -112,25 +96,17 @@ export default function ResetPasswordPage() {
 
     setLoading(true);
 
-    // DEBUG: snapshot browser-side state before the API call
-    const supabase = getSupabaseBrowserClient();
-    const { data: { session: browserSession } } = await supabase.auth.getSession();
-    const visibleCookies = typeof document !== 'undefined' ? document.cookie : '(server-side)';
-    const storedTokensRaw = typeof sessionStorage !== 'undefined' ? sessionStorage.getItem('decur-recovery-tokens') : null;
-    const storedTokens = storedTokensRaw ? JSON.parse(storedTokensRaw) as { access_token: string; refresh_token: string } : null;
+    // Read recovery tokens stored in sessionStorage by verify.tsx after the PKCE
+    // code exchange. @supabase/ssr's browser client loses its in-memory session
+    // during Next.js client-side navigation, so we pass the tokens explicitly to
+    // the server endpoint which calls setSession() before updateUser().
+    const storedTokensRaw = typeof sessionStorage !== 'undefined'
+      ? sessionStorage.getItem('decur-recovery-tokens')
+      : null;
+    const storedTokens = storedTokensRaw
+      ? JSON.parse(storedTokensRaw) as { access_token: string; refresh_token: string }
+      : null;
 
-    const preCallDebug = {
-      browserSession: browserSession
-        ? { userId: browserSession.user?.id, expiresAt: browserSession.expires_at }
-        : null,
-      visibleCookieKeys: visibleCookies.split(';').map(c => c.trim().split('=')[0]).filter(Boolean),
-      sessionStorageHasTokens: !!storedTokensRaw,
-      sendingStoredTokens: !!storedTokens,
-    };
-
-    // Route the password update through a server-side API endpoint.
-    // Include recovery tokens from sessionStorage so the server can restore the
-    // session even when the browser client's cookie/memory state is empty.
     const response = await fetch('/api/auth/update-password', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -139,20 +115,12 @@ export default function ResetPasswordPage() {
         ...(storedTokens ?? {}),
       }),
     });
+
     // Clean up stored recovery tokens regardless of outcome
     if (typeof window !== 'undefined') sessionStorage.removeItem('decur-recovery-tokens');
 
-    const body = await response.json().catch(() => ({ error: 'Unknown error' }));
-
-    // DEBUG: surface all diagnostic data in the UI
-    setDebugInfo({
-      status: response.status,
-      ok: response.ok,
-      responseBody: body,
-      ...preCallDebug,
-    });
-
     if (!response.ok) {
+      const body = await response.json().catch(() => ({ error: 'Unknown error' }));
       const msg: string = body?.error ?? 'Unknown error';
       if (msg.toLowerCase().includes('session') || msg.toLowerCase().includes('missing') || msg.toLowerCase().includes('expired')) {
         setError('Your reset session has expired. Please request a new reset link.');
@@ -257,14 +225,6 @@ export default function ResetPasswordPage() {
                 {error && (
                   <div className="p-3 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-sm text-red-700 dark:text-red-400">
                     {error}
-                  </div>
-                )}
-
-                {/* DEBUG PANEL - remove after diagnosing */}
-                {debugInfo && (
-                  <div className="p-3 rounded-lg bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-700 text-xs font-mono text-yellow-900 dark:text-yellow-200 overflow-auto max-h-64 whitespace-pre-wrap break-all">
-                    <strong className="block mb-1 text-yellow-700 dark:text-yellow-400">[DEBUG] API Response</strong>
-                    {JSON.stringify(debugInfo, null, 2)}
                   </div>
                 )}
 
