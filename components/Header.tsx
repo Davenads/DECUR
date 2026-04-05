@@ -7,6 +7,7 @@ import { useTheme } from 'next-themes';
 import SearchBar from './SearchBar';
 import NavDropdown from './navigation/NavDropdown';
 import MobileNavDropdown from './navigation/MobileNavDropdown';
+import UserMenu from './auth/UserMenu';
 import { NavItems, DropdownRefs } from '../types/navigation';
 
 const navItems: NavItems = {
@@ -161,6 +162,11 @@ const Header: FC = () => {
             <SearchBar onSearch={handleSearch} />
           </div>
 
+          {/* User Menu */}
+          <div className="hidden md:flex items-center">
+            <UserMenu />
+          </div>
+
           {/* Theme Toggle */}
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -258,6 +264,10 @@ const Header: FC = () => {
 
               <div className="pt-2">
                 <SearchBar onSearch={handleSearch} />
+              </div>
+
+              <div className="pt-2 border-t border-gray-100 dark:border-gray-800">
+                <UserMenu />
               </div>
             </div>
           </div>

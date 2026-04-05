@@ -27,6 +27,22 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  // In local dev, the browser cannot reach 127.0.0.1:54321 directly when
+  // accessing via Tailscale from a remote device. This rewrite proxies
+  // /supabase-proxy/* through the Next.js server (which CAN reach 127.0.0.1)
+  // so all Supabase API calls flow: browser → Next.js → local Supabase.
+  // In production NEXT_PUBLIC_SUPABASE_URL points directly to supabase.co,
+  // so this rewrite is never exercised after deployment.
+  async rewrites() {
+    const supabaseProxyEnabled = process.env.NEXT_PUBLIC_SUPABASE_URL?.includes('/supabase-proxy');
+    if (!supabaseProxyEnabled) return [];
+    return [
+      {
+        source: '/supabase-proxy/:path*',
+        destination: 'http://127.0.0.1:54321/:path*',
+      },
+    ];
+  },
   async headers() {
     return [
       // Security headers on all routes

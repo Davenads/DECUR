@@ -552,6 +552,8 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
       onBack={onBack}
       backLabel={backLabel}
       networkNodeId={networkNodeId}
+      contentId={id}
+      contentName={profile.name}
     >
       <div className="mt-4">
         {renderTab()}

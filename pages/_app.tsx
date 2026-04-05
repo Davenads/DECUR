@@ -6,9 +6,25 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from 'next-themes';
 import { inter, montserrat } from '../lib/fonts';
-import { useEffect } from 'react';
+import { useEffect, useState, createContext, useContext } from 'react';
 import { useRouter } from 'next/router';
 import NProgress from 'nprogress';
+import { getSupabaseBrowserClient } from '../lib/supabase/browser';
+import type { User, Session, AuthChangeEvent } from '@supabase/supabase-js';
+
+// ── Auth context ─────────────────────────────────────────────────────────────
+// Provides the current Supabase user throughout the app without prop drilling.
+
+interface AuthContextValue {
+  user: User | null;
+  loading: boolean;
+}
+
+export const AuthContext = createContext<AuthContextValue>({ user: null, loading: true });
+
+export function useAuth() {
+  return useContext(AuthContext);
+}
 
 // NProgress styles — thin primary-colored bar at top of page on route change
 const nprogressStyles = `
@@ -38,7 +54,10 @@ NProgress.configure({ showSpinner: false, minimum: 0.15, speed: 300 });
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
 
+  // ── NProgress route transitions ───────────────────────────
   useEffect(() => {
     const start = () => NProgress.start();
     const done  = () => NProgress.done();
@@ -52,10 +71,32 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router]);
 
+  // ── Supabase auth state ───────────────────────────────────
+  useEffect(() => {
+    const supabase = getSupabaseBrowserClient();
+
+    // Get current session on mount
+    supabase.auth.getUser().then(({ data }: { data: { user: User | null } }) => {
+      setUser(data.user ?? null);
+      setLoading(false);
+    });
+
+    // Subscribe to auth state changes (login, logout, token refresh)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (_event: AuthChangeEvent, session: Session | null) => {
+        setUser(session?.user ?? null);
+        setLoading(false);
+      }
+    );
+
+    return () => subscription.unsubscribe();
+  }, []);
+
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: `:root { --font-inter: ${inter.style.fontFamily}; --font-montserrat: ${montserrat.style.fontFamily}; }` }} />
       <style dangerouslySetInnerHTML={{ __html: nprogressStyles }} />
+      <AuthContext.Provider value={{ user, loading }}>
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <ErrorBoundary>
         <Layout>
@@ -64,7 +105,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Analytics />
         <SpeedInsights />
       </ErrorBoundary>
-    </ThemeProvider>
+      </ThemeProvider>
+      </AuthContext.Provider>
     </>
   );
 }

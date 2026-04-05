@@ -66,6 +66,8 @@ const InsiderProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNod
       onBack={onBack}
       backLabel={backLabel}
       networkNodeId={networkNodeId}
+      contentId={data.profile.id}
+      contentName={data.profile.name}
     >
       {renderTab()}
     </ProfileShell>
