@@ -95,33 +95,29 @@ export default function ResetPasswordPage() {
     }
 
     setLoading(true);
-    const supabase = getSupabaseBrowserClient();
 
-    // The Supabase SSR client may lose the in-memory recovery session during
-    // navigation (e.g. getUser() server calls can clear it). Restore it from
-    // the tokens we stashed in sessionStorage when PASSWORD_RECOVERY fired.
-    const { data: { session: currentSession } } = await supabase.auth.getSession();
-    if (!currentSession) {
-      const stored = typeof window !== 'undefined'
-        ? sessionStorage.getItem('decur-recovery-tokens')
-        : null;
-      if (stored) {
-        try {
-          const { access_token, refresh_token } = JSON.parse(stored) as { access_token: string; refresh_token: string };
-          await supabase.auth.setSession({ access_token, refresh_token });
-        } catch {
-          // ignore parse/setSession errors — updateUser will fail below with a clear message
-        }
+    // Route the password update through a server-side API endpoint.
+    // The browser client's session state is unreliable here because @supabase/ssr
+    // PKCE flow fires SIGNED_IN (not PASSWORD_RECOVERY) and the in-memory session
+    // can be lost during navigation. The server endpoint reads the session directly
+    // from the browser client's cookies (decur-auth-v1.*) in the HTTP request.
+    const response = await fetch('/api/auth/update-password', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: newPassword }),
+    });
+    // Clean up stored recovery tokens regardless of outcome
+    if (typeof window !== 'undefined') sessionStorage.removeItem('decur-recovery-tokens');
+
+    if (!response.ok) {
+      const body = await response.json().catch(() => ({ error: 'Unknown error' }));
+      const msg: string = body?.error ?? 'Unknown error';
+      if (msg.toLowerCase().includes('session') || msg.toLowerCase().includes('missing') || msg.toLowerCase().includes('expired')) {
+        setError('Your reset session has expired. Please request a new reset link.');
+        setStep('request');
+      } else {
+        setError(msg);
       }
-    }
-
-    const { error: err } = await supabase.auth.updateUser({ password: newPassword });
-    // Clean up stored tokens regardless of outcome
-    sessionStorage.removeItem('decur-recovery-tokens');
-
-    if (err) {
-      // Show raw error for diagnostics — will be replaced with user-friendly message once root cause confirmed
-      setError(`[DEBUG] ${err.message} (name: ${err.name}, status: ${(err as unknown as { status?: number }).status ?? 'n/a'})`);
       setLoading(false);
       return;
     }
