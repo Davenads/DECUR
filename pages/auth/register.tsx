@@ -18,7 +18,7 @@ export default function RegisterPage() {
     const supabase = getSupabaseBrowserClient();
     await supabase.auth.signInWithOAuth({
       provider,
-      options: { redirectTo: `${window.location.origin}/auth/verify` },
+      options: { redirectTo: `${window.location.origin}/api/auth/callback` },
     });
   }
 
