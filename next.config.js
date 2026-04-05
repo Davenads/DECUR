@@ -13,7 +13,7 @@ const securityHeaders = [
       "img-src 'self' data: blob:",
       "font-src 'self'",
       "frame-src https://challenges.cloudflare.com",
-      "connect-src 'self' https://challenges.cloudflare.com",
+      "connect-src 'self' https://challenges.cloudflare.com https://*.supabase.co wss://*.supabase.co",
     ].join('; '),
   },
 ];
