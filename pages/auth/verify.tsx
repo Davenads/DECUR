@@ -8,7 +8,7 @@ import { getSupabaseBrowserClient } from '../../lib/supabase/browser';
 /**
  * OAuth + email-link callback handler.
  * Supabase redirects here after email verification or OAuth login.
- * The URL contains the token/code fragments which the SDK handles automatically.
+ * Explicitly calls exchangeCodeForSession for reliable PKCE handling in production.
  */
 export default function VerifyPage() {
   const router = useRouter();
@@ -18,9 +18,6 @@ export default function VerifyPage() {
   useEffect(() => {
     const supabase = getSupabaseBrowserClient();
 
-    // Detect if this is a password-recovery callback from the reset email.
-    // We use window.location.search directly (not router.query) because router
-    // may not be ready on the first render cycle.
     const isRecovery =
       typeof window !== 'undefined' &&
       new URLSearchParams(window.location.search).get('type') === 'recovery';
@@ -30,46 +27,98 @@ export default function VerifyPage() {
       return typeof router.query.redirect === 'string' ? router.query.redirect : '/profile';
     };
 
-    // Listen for auth state - Supabase SDK automatically exchanges
-    // the token/code in the URL fragment on page load.
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event: AuthChangeEvent, session: Session | null) => {
-      if (event === 'PASSWORD_RECOVERY' || (event === 'SIGNED_IN' && isRecovery)) {
-        // Persist the recovery tokens to sessionStorage so the reset-password page
-        // can restore the session if the browser client loses it during navigation.
-        // With @supabase/ssr PKCE flow, the SDK fires SIGNED_IN (not PASSWORD_RECOVERY)
-        // after exchanging the recovery code. We capture tokens on both events when
-        // it's a recovery flow so the sessionStorage restore path always has tokens.
-        if (session) {
-          sessionStorage.setItem('decur-recovery-tokens', JSON.stringify({
+    // Guard against double-handling (SDK auto-exchange vs explicit call race)
+    let handled = false;
+
+    function handleSuccess(session: Session | null) {
+      if (handled) return;
+      handled = true;
+
+      if (isRecovery && session) {
+        sessionStorage.setItem(
+          'decur-recovery-tokens',
+          JSON.stringify({
             access_token: session.access_token,
             refresh_token: session.refresh_token,
-          }));
-        }
+          })
+        );
         setStatus('success');
         setTimeout(() => router.push('/auth/reset-password?mode=recovery'), 1200);
-      } else if (event === 'SIGNED_IN' || event === 'USER_UPDATED') {
+      } else {
         setStatus('success');
-        // Small delay so user sees success state briefly
         setTimeout(() => router.push(getRedirectTarget()), 1200);
-      } else if (event === 'SIGNED_OUT') {
+      }
+    }
+
+    function handleError(msg?: string) {
+      if (handled) return;
+      handled = true;
+      setStatus('error');
+      setMessage(msg ?? 'Verification failed. Please try signing in again.');
+    }
+
+    // Subscribe to auth state changes before triggering any exchange
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event: AuthChangeEvent, session: Session | null) => {
+        if (event === 'PASSWORD_RECOVERY' || (event === 'SIGNED_IN' && isRecovery)) {
+          handleSuccess(session);
+        } else if (event === 'SIGNED_IN' || event === 'USER_UPDATED') {
+          handleSuccess(session);
+        } else if (event === 'SIGNED_OUT') {
+          handleError('Verification link may have expired. Please request a new one.');
+        }
+      }
+    );
+
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+
+    if (code) {
+      // Explicitly exchange the PKCE code — required for reliable production behaviour.
+      // createBrowserClient may auto-exchange on init (race condition); if it beats us,
+      // exchangeCodeForSession returns an error and we fall back to getSession().
+      supabase.auth.exchangeCodeForSession(code).then(
+        ({ data, error }: { data: { session: Session | null }; error: { message: string } | null }) => {
+        if (!error) {
+          // SIGNED_IN will fire via onAuthStateChange; handle it there.
+          // Call handleSuccess here only if the event somehow didn't fire.
+          setTimeout(() => {
+            if (!handled) handleSuccess(data.session);
+          }, 500);
+        } else {
+          // Code was likely already exchanged by the SDK on initialization.
+          // Check for an existing session before surfacing an error.
+          supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
+            if (session) {
+              handleSuccess(session);
+            } else {
+              handleError('Verification failed. Please try signing in again.');
+            }
+          });
+        }
+      });
+    } else {
+      // No code param — check for an already-established session (hash-based flows)
+      supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
+        if (session) {
+          handleSuccess(session);
+        }
+      });
+    }
+
+    // Safety timeout: surface an error if nothing resolved in 10 seconds
+    const timeout = setTimeout(() => {
+      if (!handled) {
+        handled = true;
         setStatus('error');
-        setMessage('Verification link may have expired. Please request a new one.');
+        setMessage('Verification timed out. Please try signing in again.');
       }
-    });
+    }, 10000);
 
-    // Fallback: if createBrowserClient already consumed the hash before our
-    // subscription registered (common race), getSession() will return the
-    // already-established session from localStorage.
-    // Use getSession() (local read) rather than getUser() (server request) to
-    // avoid server-side JWT validation which can clear the recovery session.
-    supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
-      if (session && status === 'loading') {
-        setStatus('success');
-        setTimeout(() => router.push(getRedirectTarget()), 1200);
-      }
-    });
-
-    return () => subscription.unsubscribe();
+    return () => {
+      subscription.unsubscribe();
+      clearTimeout(timeout);
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
