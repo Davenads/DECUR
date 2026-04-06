@@ -38,7 +38,7 @@ The core of the platform. Accessed via the `Data` nav dropdown or directly at `/
 
 #### Key Figure Profiles
 
-Each figure has a dedicated multi-tab profile covering background, roles, key events timeline, credibility assessment, network connections, and public disclosures. The platform currently profiles 60+ figures across six categories: government insiders, scientists, pilots, journalists, officials, and executives.
+Each figure has a dedicated multi-tab profile covering background, roles, key events timeline, credibility assessment, network connections, and public disclosures. The platform currently profiles 111+ figures across six categories: government insiders, scientists, pilots, journalists, officials, and executives.
 
 Profiles cross-reference documented cases and link into the Explore timeline overlay where applicable.
 
@@ -93,25 +93,59 @@ Two force-directed graph views toggle in the hero section:
 
 #### Tabbed Secondary Visualizations
 
-**Event Frequency & Timeline Overlay** - Distribution of documented events by decade and historical era, plus a swimlane view of insider careers and key events plotted chronologically with per-source color coding.
+**Timeline** - Swimlane view of insider careers and key events plotted chronologically with per-source color coding, plus distribution of documented events by decade and historical era.
+
+**Programs tab** - Three sub-views toggled by pill buttons:
 
 **Program Lineage Flow**
 
 ![Explore - Program Lineage](public/screenshots/flow-lineage.png)
 
-Left-to-right directed graph showing chronological succession and influence between 20 UAP investigation programs - from Project Sign (1947) through AARO (2022-present). Data-driven from `programs.json`. Click any node for a detail panel with program summary, key personnel, and a link to the full program profile.
+Left-to-right directed graph showing chronological succession and influence between UAP investigation programs - from Project Sign (1947) through AARO (2022-present). Click any node for a detail panel with program summary, key personnel, and a link to the full program profile.
 
 **Organizational Oversight Hierarchy**
 
 ![Explore - Oversight Structure](public/screenshots/flow-oversight.png)
 
-Top-down authority hierarchy spanning the Executive Branch, DoD, CIA, Congressional committees, and 14 UAP programs - with private defense contractors shown as contractual leaf nodes. Five edge types visualize distinct relationship classes: authority (solid), oversight (dashed green), contractual (dotted purple), alleged (dashed red), and influenced (dashed amber). Click any non-branch node for a detail panel.
+Top-down authority hierarchy spanning the Executive Branch, DoD, CIA, Congressional committees, and UAP programs - with private defense contractors shown as contractual leaf nodes. Five edge types visualize distinct relationship classes: authority (solid), oversight (dashed green), contractual (dotted purple), alleged (dashed red), and influenced (dashed amber). Click any non-branch node for a detail panel.
+
+**Congressional Disclosure Timeline** - Chronological flow of key congressional disclosure milestones, hearings, and legislative actions. Click any node for event detail.
+
+**Cases tab**
 
 **Evidence Tier Swimlane**
 
 ![Explore - Evidence Tiers](public/screenshots/flow-evidence-tiers.png)
 
 Horizontal swimlane layout organizing all documented cases by evidence tier. Cases are sorted chronologically within each band and color-coded by incident category (military-aviation, military-ground, civilian, maritime, etc.). Click any case card for a summary panel and direct link to the full case profile.
+
+---
+
+### User Accounts
+
+Authenticated users get a personal workspace on top of the research archive.
+
+**Authentication**
+- Email + password sign-up with verified email flow (custom branded confirmation email via Resend)
+- One-click sign-in with Google or GitHub OAuth
+- Secure password reset and email change flows
+- Persistent sessions across tabs and devices
+
+**Profile (`/profile`)**
+
+Three-tab personal dashboard:
+
+- **Saved Items** - Bookmark any figure, case, document, program, or timeline event and view them in one place
+- **Collections** - Organize bookmarks into named collections; toggle public/private and share via link
+- **Submissions** - Track contribution submissions through the moderated review pipeline with live status updates and reviewer notes
+
+**Contribute (`/contribute`)**
+
+Authenticated users with verified email can submit new data for moderator review:
+- Key figure profiles, documented cases, timeline events, corrections, and source additions
+- Type-specific wizard with field validation
+- Moderator review queue with approve/reject/revision workflow
+- Submission audit trail and Discord notifications on new submissions
 
 ---
 
@@ -179,6 +213,8 @@ types/
 
 - **Framework**: Next.js (Pages Router) with TypeScript
 - **Styling**: Tailwind CSS
+- **Auth & Database**: Supabase (PostgreSQL, Row-Level Security, OAuth via Google/GitHub)
+- **Email**: Resend (transactional email from noreply@decur.org)
 - **Flow Visualizations**: @xyflow/react with @dagrejs/dagre layout engine
 - **Charts**: Recharts
 - **Network Graph**: react-force-graph-2d
