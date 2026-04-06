@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { BurischData } from '../../../../types/data';
 import burischData from '../../../../data/key-figures/burisch.json';
+import { ps } from '../../shared/profileStyles';
 
 const data = burischData as BurischData;
 
@@ -9,19 +10,19 @@ const FacilityTab: FC = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{facility.name}</h3>
-        <p className="text-xs text-gray-400 mb-1">
+        <h3 className={`${ps.h3} mb-1`}>{facility.name}</h3>
+        <p className={`${ps.muted} mb-1`}>
           {facility.aliases.join(' · ')}
         </p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">{facility.location}</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">{facility.construction}</p>
+        <p className={ps.bodyMuted}>{facility.location}</p>
+        <p className={ps.bodyMuted}>{facility.construction}</p>
       </div>
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-2">Security Protocols</h4>
+        <h4 className={`${ps.h4} mb-2`}>Security Protocols</h4>
         <ul className="space-y-1.5">
           {facility.security.map((s, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-red-400 mt-0.5 shrink-0">■</span>
               <span>{s}</span>
             </li>
@@ -32,16 +33,16 @@ const FacilityTab: FC = () => {
       {facility.notable_equipment.map((eq, i) => {
         const equipment = eq as Record<string, unknown>;
         return (
-          <div key={i} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+          <div key={i} className={ps.borderCardLg}>
             <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">{equipment.name as string}</h4>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">{equipment.description as string}</p>
+            <p className={`${ps.body} mb-3`}>{equipment.description as string}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {Object.entries(equipment)
                 .filter(([k]) => !['name', 'description'].includes(k))
                 .map(([key, val]) => (
                   <div key={key} className="bg-gray-50 dark:bg-gray-800 rounded p-2">
-                    <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">{key.replace(/_/g, ' ')}</p>
-                    <p className="text-sm text-gray-800 dark:text-gray-200">
+                    <p className={`${ps.label} mb-0.5`}>{key.replace(/_/g, ' ')}</p>
+                    <p className={ps.value}>
                       {Array.isArray(val) ? (val as string[]).join(', ') : String(val)}
                     </p>
                   </div>
@@ -52,10 +53,10 @@ const FacilityTab: FC = () => {
       })}
 
       <div>
-        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-2">Notable Visitors</h4>
+        <h4 className={`${ps.h4} mb-2`}>Notable Visitors</h4>
         <ul className="space-y-1.5">
           {facility.notable_visitors.map((v, i) => (
-            <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+            <li key={i} className={ps.listItem}>
               <span className="text-primary mt-0.5">›</span>
               <span>{v}</span>
             </li>

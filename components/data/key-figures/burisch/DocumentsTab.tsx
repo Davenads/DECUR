@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { BurischData, BurischDocument } from '../../../../types/data';
 import burischData from '../../../../data/key-figures/burisch.json';
+import { ps } from '../../shared/profileStyles';
 
 const data = burischData as BurischData;
 
@@ -10,7 +11,7 @@ const DocumentsTab: FC = () => {
     <div className="space-y-4">
       <p className="text-sm text-gray-500">Primary documents associated with Burisch's research and service record.</p>
       {documents.map((doc: BurischDocument) => (
-        <div key={doc.id} className="border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+        <div key={doc.id} className={ps.borderCardLg}>
           <div className="flex items-start justify-between gap-4">
             <div>
               <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-0.5">{doc.common_name}</h4>
@@ -19,7 +20,7 @@ const DocumentsTab: FC = () => {
               {doc.authors && (
                 <p className="text-xs text-gray-500 mb-2"><span className="font-medium">Authors:</span> {doc.authors.join(', ')}</p>
               )}
-              <p className="text-sm text-gray-700 dark:text-gray-300">{doc.significance}</p>
+              <p className={ps.body}>{doc.significance}</p>
               {doc.leak_history && (
                 <p className="text-xs text-gray-500 mt-2 italic">{doc.leak_history}</p>
               )}
@@ -36,7 +37,7 @@ const DocumentsTab: FC = () => {
             )}
           </div>
           {doc.status && (
-            <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
+            <div className={`mt-3 pt-3 ${ps.divider}`}>
               <span className="text-xs text-gray-400">Status: </span>
               <span className="text-xs text-gray-600 dark:text-gray-400">{doc.status}</span>
             </div>

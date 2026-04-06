@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { BurischData } from '../../../../types/data';
 import burischData from '../../../../data/key-figures/burisch.json';
+import { ps } from '../../shared/profileStyles';
 
 const data = burischData as BurischData;
 
@@ -25,9 +26,7 @@ const TimelineTab: FC = () => {
       <div className="flex flex-wrap gap-1.5">
         <button
           onClick={() => setFilter('all')}
-          className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors ${
-            filter === 'all' ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-          }`}
+          className={filter === 'all' ? ps.filterPillActive : ps.filterPill}
         >
           All
         </button>
@@ -35,23 +34,21 @@ const TimelineTab: FC = () => {
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`text-xs px-2.5 py-1 rounded-full font-medium capitalize transition-colors ${
-              filter === cat ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-            }`}
+            className={`${filter === cat ? ps.filterPillActive : ps.filterPill} capitalize`}
           >
             {cat.replace(/-/g, ' ')}
           </button>
         ))}
       </div>
 
-      <div className="relative pl-6 border-l-2 border-gray-100 dark:border-gray-700 space-y-4">
+      <div className={`${ps.timelineLine} space-y-4`}>
         {filtered.map((ev, i) => (
           <div key={i} className="relative">
-            <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
+            <div className={ps.timelineDot} />
             <div className="flex items-start gap-3">
               <span className="font-mono text-xs text-gray-400 whitespace-nowrap pt-0.5">{ev.date}</span>
               <div>
-                <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">{ev.event}</p>
+                <p className={`${ps.value} leading-relaxed`}>{ev.event}</p>
                 <span className={`text-xs px-1.5 py-0.5 rounded mt-1 inline-block font-medium ${categoryColors[ev.category] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'}`}>
                   {ev.category.replace(/-/g, ' ')}
                 </span>

@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { BurischData, BurischConcept } from '../../../../types/data';
 import burischData from '../../../../data/key-figures/burisch.json';
+import { ps } from '../../shared/profileStyles';
 
 const data = burischData as BurischData;
 
@@ -15,12 +16,12 @@ const ConceptsTab: FC = () => {
       {concepts.map((c: BurischConcept) => {
         const isOpen = expanded === c.id;
         return (
-          <div key={c.id} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+          <div key={c.id} className={ps.borderCardNoP}>
             <button
               onClick={() => setExpanded(isOpen ? null : c.id)}
               className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
             >
-              <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{c.name}</h4>
+              <h4 className={ps.h4Inline}>{c.name}</h4>
               <svg
                 className={`h-4 w-4 text-gray-400 transition-transform shrink-0 ${isOpen ? 'rotate-180' : ''}`}
                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -29,14 +30,14 @@ const ConceptsTab: FC = () => {
               </svg>
             </button>
             {isOpen && (
-              <div className="px-5 pb-5 border-t border-gray-100 dark:border-gray-700 space-y-3">
-                <p className="text-sm text-gray-700 dark:text-gray-300 pt-3">{c.summary}</p>
+              <div className={`px-5 pb-5 ${ps.divider} space-y-3`}>
+                <p className={`${ps.body} pt-3`}>{c.summary}</p>
                 {c.mechanics && (
                   <div>
-                    <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1.5">Mechanics</p>
+                    <p className={`${ps.label} mb-1.5`}>Mechanics</p>
                     <ul className="space-y-1">
                       {c.mechanics.map((m, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li key={i} className={ps.listItem}>
                           <span className="text-primary mt-0.5 shrink-0">›</span><span>{m}</span>
                         </li>
                       ))}
@@ -45,10 +46,10 @@ const ConceptsTab: FC = () => {
                 )}
                 {c.key_claims && (
                   <div>
-                    <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1.5">Key Claims</p>
+                    <p className={`${ps.label} mb-1.5`}>Key Claims</p>
                     <ul className="space-y-1">
                       {c.key_claims.map((kc, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li key={i} className={ps.listItem}>
                           <span className="text-primary mt-0.5 shrink-0">›</span><span>{kc}</span>
                         </li>
                       ))}
@@ -57,10 +58,10 @@ const ConceptsTab: FC = () => {
                 )}
                 {c.factions && (
                   <div>
-                    <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1.5">Factions</p>
+                    <p className={`${ps.label} mb-1.5`}>Factions</p>
                     <ul className="space-y-1">
                       {c.factions.map((f, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li key={i} className={ps.listItem}>
                           <span className="text-primary mt-0.5 shrink-0">›</span><span>{f}</span>
                         </li>
                       ))}
@@ -69,10 +70,10 @@ const ConceptsTab: FC = () => {
                 )}
                 {c.framework && (
                   <div>
-                    <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1.5">Framework</p>
+                    <p className={`${ps.label} mb-1.5`}>Framework</p>
                     <ul className="space-y-1">
                       {c.framework.map((f, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li key={i} className={ps.listItem}>
                           <span className="text-primary mt-0.5 shrink-0">›</span><span>{f}</span>
                         </li>
                       ))}
@@ -81,10 +82,10 @@ const ConceptsTab: FC = () => {
                 )}
                 {c.genetic_component && (
                   <div>
-                    <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1.5">Genetic Component</p>
+                    <p className={`${ps.label} mb-1.5`}>Genetic Component</p>
                     <ul className="space-y-1">
                       {c.genetic_component.map((g, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li key={i} className={ps.listItem}>
                           <span className="text-primary mt-0.5 shrink-0">›</span><span>{g}</span>
                         </li>
                       ))}
@@ -93,10 +94,10 @@ const ConceptsTab: FC = () => {
                 )}
                 {c.properties && (
                   <div>
-                    <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1.5">Properties</p>
+                    <p className={`${ps.label} mb-1.5`}>Properties</p>
                     <ul className="space-y-1">
                       {c.properties.map((p, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
+                        <li key={i} className={ps.listItem}>
                           <span className="text-primary mt-0.5 shrink-0">›</span><span>{p}</span>
                         </li>
                       ))}
@@ -106,13 +107,13 @@ const ConceptsTab: FC = () => {
                 {c.outcome && (
                   <div className="bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-800/30 rounded p-3">
                     <p className="text-xs font-medium text-green-700 dark:text-green-400 uppercase tracking-wide mb-1">Outcome</p>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">{c.outcome}</p>
+                    <p className={ps.body}>{c.outcome}</p>
                   </div>
                 )}
                 {c.implication && (
                   <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800/30 rounded p-3">
                     <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">Implication</p>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">{c.implication}</p>
+                    <p className={ps.body}>{c.implication}</p>
                   </div>
                 )}
                 {c.research_context && (

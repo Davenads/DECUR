@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { BurischData, BurischProject } from '../../../../types/data';
 import burischData from '../../../../data/key-figures/burisch.json';
+import { ps } from '../../shared/profileStyles';
 
 const data = burischData as BurischData;
 
@@ -14,23 +15,23 @@ const ProjectsTab: FC = () => {
   return (
     <div className="space-y-5">
       {umbrella && (
-        <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+        <div className={ps.accentBoxLg}>
           <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Umbrella Program</p>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{umbrella.name}</h3>
+          <h3 className={`${ps.h3} mb-1`}>{umbrella.name}</h3>
           {umbrella.established && (
-            <p className="text-xs text-gray-400 mb-2">Est. {umbrella.established} · {umbrella.classification}</p>
+            <p className={`${ps.muted} mb-2`}>Est. {umbrella.established} · {umbrella.classification}</p>
           )}
-          <p className="text-sm text-gray-700 dark:text-gray-300">{umbrella.purpose}</p>
+          <p className={ps.body}>{umbrella.purpose}</p>
           {umbrella.admin && <p className="text-xs text-gray-500 mt-2">{umbrella.admin}</p>}
         </div>
       )}
 
-      <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">Sub-Projects</h4>
+      <h4 className={ps.h4}>Sub-Projects</h4>
       <div className="space-y-2">
         {subProjects.map((proj: BurischProject) => {
           const isOpen = expanded === proj.id;
           return (
-            <div key={proj.id} className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+            <div key={proj.id} className={ps.borderCardNoP}>
               <button
                 onClick={() => setExpanded(isOpen ? null : proj.id)}
                 className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
@@ -49,8 +50,8 @@ const ProjectsTab: FC = () => {
                 </svg>
               </button>
               {isOpen && (
-                <div className="px-4 pb-4 space-y-2 border-t border-gray-100 dark:border-gray-700">
-                  <p className="text-sm text-gray-700 dark:text-gray-300 pt-3">{proj.purpose}</p>
+                <div className={`px-4 pb-4 space-y-2 ${ps.divider}`}>
+                  <p className={`${ps.body} pt-3`}>{proj.purpose}</p>
                   {proj.key_personnel && (
                     <p className="text-xs text-gray-500"><span className="font-medium">Key Personnel:</span> {proj.key_personnel.join(', ')}</p>
                   )}
