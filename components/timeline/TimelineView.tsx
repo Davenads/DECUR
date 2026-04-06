@@ -146,6 +146,7 @@ const TimelineView: FC<TimelineViewProps> = ({ entries }) => {
             value={yearMin}
             min={globalMin}
             max={yearMax}
+            onFocus={e => e.target.select()}
             onChange={e => setYearMin(Math.max(globalMin, parseInt(e.target.value) || globalMin))}
             className="w-24 px-2 py-1 border border-gray-300 dark:border-gray-600 rounded text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-1 focus:ring-primary"
           />
@@ -155,6 +156,7 @@ const TimelineView: FC<TimelineViewProps> = ({ entries }) => {
             value={yearMax}
             min={yearMin}
             max={globalMax}
+            onFocus={e => e.target.select()}
             onChange={e => setYearMax(Math.min(globalMax, parseInt(e.target.value) || globalMax))}
             className="w-24 px-2 py-1 border border-gray-300 dark:border-gray-600 rounded text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-1 focus:ring-primary"
           />
