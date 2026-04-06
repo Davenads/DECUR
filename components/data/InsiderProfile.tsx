@@ -31,7 +31,6 @@ const TABS = [
 type TabId = typeof TABS[number]['id'];
 
 interface InsiderProfileProps {
-  id: string;
   onBack: () => void;
   backLabel?: string;
   networkNodeId?: string;

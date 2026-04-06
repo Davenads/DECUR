@@ -26,6 +26,7 @@ interface BespokeProps { onBack: () => void; backLabel: string; networkNodeId?: 
 
 /** Registry of bespoke profile components. Add new entries here when creating a Tier 2 component. */
 const BESPOKE_REGISTRY: Record<string, React.ComponentType<BespokeProps>> = {
+  'dan-burisch':    InsiderProfile,
   'bob-lazar':      LazarProfile,
   'david-grusch':   GruschProfile,
   'luis-elizondo':  ElizondoProfile,
@@ -60,10 +61,6 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
 
   const renderProfile = () => {
     const nodeId = entry.id;
-    // InsiderProfile (Burisch) has a unique id prop requirement — keep explicit
-    if (entry.id === 'dan-burisch') {
-      return <InsiderProfile id={entry.id} onBack={onBack} backLabel={backLabel} networkNodeId={nodeId} />;
-    }
     const BespokeComponent = BESPOKE_REGISTRY[entry.id];
     if (BespokeComponent) {
       return <BespokeComponent onBack={onBack} backLabel={backLabel} networkNodeId={nodeId} />;
