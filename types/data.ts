@@ -980,6 +980,8 @@ export interface BurischData {
   testimonies: BurischTestimony[];
   arguments: { supporting: BurischArgument[]; against: BurischArgument[] };
   concepts: BurischConcept[];
+  associated_people: ProfilePerson[];
+  disclosures: ProfileDisclosure[];
 }
 /* ─── Cases Types ──────────────────────────────────────────────── */
 

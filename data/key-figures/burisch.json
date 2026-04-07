@@ -451,5 +451,135 @@
       ],
       "research_context": "Project Lotus (Starflower/Licorice); presented at Caltech 2008"
     }
+  ],
+
+  "associated_people": [
+    {
+      "id": "marcia-mcdowell",
+      "name": "Marcia McDowell",
+      "role": "Co-author, Eagles Disobey Research Consortium Chief",
+      "relationship": "Burisch's closest collaborator and partner throughout his public disclosure period. Co-authored Eagles Disobey: The Case for Inca City, Mars (1997-1998), appeared alongside him in the 2005 debriefing video, was inducted into Majestic-12 in 2003, and has co-presented with Burisch at conferences including the 2009 Zurich Conference."
+    },
+    {
+      "id": "bill-hamilton",
+      "name": "Bill Hamilton",
+      "role": "UFO researcher and Burisch's primary early interviewer",
+      "relationship": "Conducted Burisch's first recorded interview in 2002 alongside BJ Wolf, and a second extensive interview in 2004. Hamilton was among the first researchers to document and publicize Burisch's claims about Project Aquarius, J-Rod, and S-4. He also presented his Burisch research at UPARS LA in 2005 and was interviewed by Project Camelot in March 2006 about the case."
+    },
+    {
+      "id": "kerry-cassidy",
+      "name": "Kerry Cassidy",
+      "role": "Project Camelot founder and interviewer",
+      "relationship": "Conducted the landmark July 2006 interview 'Out from Under Majestic - Dan Burisch Uncensored' in Las Vegas, and co-conducted a follow-up Project Camelot interview in November 2007 alongside Bill Ryan. Cassidy's extended interview sessions were among the most widely circulated of Burisch's public disclosures."
+    },
+    {
+      "id": "bill-ryan",
+      "name": "Bill Ryan",
+      "role": "Project Camelot co-founder",
+      "relationship": "Co-conducted the November 2007 Project Camelot interview with Burisch covering Stargates, Looking Glass, and interdimensional treaties. In 2019, Ryan gave a private discussion in Laughlin, Nevada recounting his meetings with Burisch and detailing timeline research including T1v83 and the 2007 sequestration."
+    },
+    {
+      "id": "brian-jackson",
+      "name": "Brian Jackson",
+      "role": "Primary researcher and creator of Burisch Archive",
+      "relationship": "Spent 13 years investigating the Burisch case, collaborated with researchers and journalists who investigated Burisch's claims, and conducted a 90-minute phone call with Burisch in 2018 in which Burisch expressed hope to advance Lotus research toward peer review. Created burischarchive.com and delivered a public presentation summarizing his findings in San Francisco in early 2025."
+    },
+    {
+      "id": "tom-mack",
+      "name": "Tom Mack",
+      "role": "Retired Air Force intelligence officer",
+      "relationship": "Issued a 1999 letter confirming Burisch's alleged alien DNA sequencing work at the S-4 facility. The letter, referenced in Burisch's documentation record, is considered one of the few external written corroborations of his classified program involvement."
+    },
+    {
+      "id": "linda-moulton-howe",
+      "name": "Linda Moulton Howe",
+      "role": "Investigative journalist",
+      "relationship": "Introduced Kewper (the anonymous former Army/CIA analyst whose S-4 account partially corroborates Burisch's timeline) to the public in 1998, conducting a three-day recorded interview with him. Her independent investigative work brought several corroborating witnesses to light within the same research community."
+    },
+    {
+      "id": "roger-leir",
+      "name": "Dr. Roger Leir",
+      "role": "Alien implant researcher and physician",
+      "relationship": "Publicly endorsed Burisch after attending his Caltech Beckman Auditorium lecture on March 10, 2008, lending credibility from within the UFO research community to Burisch's Ganesh Particle and Lotus Project research."
+    }
+  ],
+
+  "disclosures": [
+    {
+      "date": "2002",
+      "type": "interview",
+      "title": "First Interview - Project Aquarius and J-Rod Contact",
+      "outlet": "Independent (Bill Hamilton / BJ Wolf)",
+      "interviewer": "Bill Hamilton, BJ Wolf",
+      "notes": "Burisch's first recorded public disclosure. Covered Project Aquarius, initial alien contact, and early accounts of S-4 work. Primary source for the earliest version of his testimony."
+    },
+    {
+      "date": "2004",
+      "type": "interview",
+      "title": "The Dan Burisch Interview",
+      "outlet": "Independent (Bill Hamilton)",
+      "interviewer": "Bill Hamilton",
+      "notes": "Extended follow-up interview covering Site 4, non-human intelligence, Project Looking Glass, and time manipulation. More detailed than the 2002 session."
+    },
+    {
+      "date": "2005",
+      "type": "interview",
+      "title": "The Dan Burisch Debriefing Video",
+      "outlet": "Independent",
+      "interviewer": "Marcia McDowell",
+      "notes": "Program overview debriefing conducted with McDowell covering the arc of Burisch's involvement with classified programs."
+    },
+    {
+      "date": "Jul 2006",
+      "type": "interview",
+      "title": "Out from Under Majestic - Dan Burisch Uncensored",
+      "outlet": "Project Camelot",
+      "interviewer": "Kerry Cassidy",
+      "notes": "Landmark long-form interview filmed in Las Vegas. Covered abduction experience, Majestic-12 operations, extraterrestrial beings, time travel, and Project Lotus. One of the most widely circulated Burisch disclosures."
+    },
+    {
+      "date": "Nov 2007",
+      "type": "interview",
+      "title": "Project Camelot Interviews Dan Burisch",
+      "outlet": "Project Camelot",
+      "interviewer": "Kerry Cassidy, Bill Ryan",
+      "notes": "Second Project Camelot interview. Topics included Stargates, interdimensional treaties, time travel technology, and planetary catastrophe prevention scenarios."
+    },
+    {
+      "date": "Feb 2008",
+      "type": "interview",
+      "title": "Dan and Marcia Discuss Canadian Court Case",
+      "outlet": "Independent",
+      "notes": "Public discussion between Burisch and McDowell about alleged Majestic surveillance and harassment connected to a Canadian asylum case."
+    },
+    {
+      "date": "2008",
+      "type": "radio",
+      "title": "Disclosure Dialogue",
+      "outlet": "Radio/Podcast (Rob Simone)",
+      "interviewer": "Rob Simone",
+      "notes": "Radio appearance covering Area 51, extraterrestrial beings, and the 1973 encounter narrative."
+    },
+    {
+      "date": "2008",
+      "type": "speech",
+      "title": "Silicate Associated Phenomenon - Lotus Project Lecture",
+      "outlet": "Caltech, Beckman Auditorium, Pasadena CA",
+      "notes": "Academic-format lecture presenting Burisch's Lotus Project / Ganesh Particle research on portal phenomena associated with quartz crystals, plasma, and RNA interference. Endorsed publicly by Dr. Roger Leir following the event."
+    },
+    {
+      "date": "Jul 2009",
+      "type": "conference",
+      "title": "Zurich Conference Workshop",
+      "outlet": "Zurich Conference (international scientific/whistleblower event)",
+      "notes": "Workshop co-presented with Marcia McDowell covering belief systems, scientific perspectives, and immune system topics. Also participated in panel discussions on mandatory vaccinations and personal sovereignty."
+    },
+    {
+      "date": "2013",
+      "type": "interview",
+      "title": "Dan Burisch Describes the S-4 Facility",
+      "outlet": "Independent",
+      "notes": "Recorded description of the Papoose Lake facility covering its layout, biological warfare research history, and back-engineering of extraterrestrial technology."
+    }
   ]
 }
