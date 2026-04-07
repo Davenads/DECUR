@@ -1,5 +1,4 @@
 import { FC, useState } from 'react';
-import dynamic from 'next/dynamic';
 import gruschData from '../../data/key-figures/grusch.json';
 import ProfileShell from './shared/ProfileShell';
 import { ps } from './shared/profileStyles';
@@ -9,12 +8,8 @@ import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import SharedCareerNetworkTab from './shared/tabs/SharedCareerNetworkTab';
 import TimelineList from './shared/TimelineList';
-
-const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
-  ssr: false,
-  loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
-});
 
 const data = gruschData as typeof gruschData;
 
@@ -226,20 +221,8 @@ const GruschProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNode
       case 'claims':      return <ClaimsTab />;
       case 'disclosures': return <DisclosuresTab />;
       case 'legislative': return <LegislativeTab />;
-      case 'career-network': {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const keyEvents = (data.profile.key_events ?? []).map((e: any) => ({ year: String(e.date ?? e.year ?? ''), event: e.event }));
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const careerConnections = (data as any).career_connections ?? [];
-        return (
-          <div className="space-y-4">
-            <p className={ps.bodyMuted}>
-              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
-            </p>
-            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
-          </div>
-        );
-      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      case 'career-network': return <SharedCareerNetworkTab profile={data.profile} career_connections={(data as any).career_connections} />;
       case 'network':     return <NetworkTab />;
       case 'assessment':  return <AssessmentTab />;
     }

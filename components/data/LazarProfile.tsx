@@ -1,5 +1,4 @@
 import { FC, useState } from 'react';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { LazarData } from '../../types/data';
 import lazarData from '../../data/key-figures/lazar.json';
@@ -10,12 +9,8 @@ import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import SharedCareerNetworkTab from './shared/tabs/SharedCareerNetworkTab';
 import { ps } from './shared/profileStyles';
-
-const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
-  ssr: false,
-  loading: () => <div className="h-[440px] bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />,
-});
 
 const data = lazarData as LazarData;
 
@@ -369,18 +364,8 @@ const LazarProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNodeI
   const renderTab = () => {
     switch (activeTab) {
       case 'overview':    return <OverviewTab />;
-      case 'career-network': {
-        const keyEvents = (data.profile.key_events ?? []).map((e: any) => ({ year: String(e.date ?? e.year ?? ''), event: e.event }));
-        const careerConnections = (data as any).career_connections ?? [];
-        return (
-          <div className="space-y-4">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
-            </p>
-            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
-          </div>
-        );
-      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      case 'career-network': return <SharedCareerNetworkTab profile={data.profile} career_connections={(data as any).career_connections} />;
       case 'facility':    return <FacilityTab />;
       case 'craft':       return <CraftTab />;
       case 'propulsion':  return <PropulsionTab />;

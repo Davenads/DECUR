@@ -1,20 +1,15 @@
 import { FC, useState } from 'react';
-import dynamic from 'next/dynamic';
 import bigelowData from '../../data/key-figures/bigelow.json';
 import type { BigelowData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
-import ClaimsStatusBar from './shared/ClaimsStatusBar';
-import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import SharedCareerNetworkTab from './shared/tabs/SharedCareerNetworkTab';
+import SharedOverviewTab from './shared/tabs/SharedOverviewTab';
+import SharedClaimsTab from './shared/tabs/SharedClaimsTab';
 import { ps } from './shared/profileStyles';
-
-const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
-  ssr: false,
-  loading: () => <div className="h-[440px] bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />,
-});
 
 const data = bigelowData as unknown as BigelowData;
 
@@ -33,78 +28,6 @@ const TABS = [
 type TabId = typeof TABS[number]['id'];
 
 /* ─── Tab components ──────────────────────────────────────────── */
-
-const OverviewTab: FC = () => {
-  const { profile } = data;
-  return (
-    <div className="space-y-6">
-      <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/30 rounded-lg p-4">
-        <p className="text-xs font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Research Patron</p>
-        <p className="text-sm text-blue-900 dark:text-blue-100 leading-relaxed">
-          Bigelow's profile differs from other DECUR insiders. He is not a government whistleblower
-          or direct UAP witness - he is the institutional patron whose funding and organizational
-          infrastructure made modern classified UAP research possible. His inclusion bridges the
-          1990s Las Vegas research network with the post-2007 AAWSAP disclosure era.
-        </p>
-      </div>
-
-      <div>
-        <h3 className={`${ps.h3} mb-2`}>Background</h3>
-        <p className={`${ps.body} leading-relaxed`}>{profile.summary}</p>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className={ps.infoCard}>
-          <p className={`${ps.label} mb-1`}>Research Period</p>
-          <p className={ps.value}>{profile.service_period}</p>
-        </div>
-        <div className={ps.infoCard}>
-          <p className={`${ps.label} mb-1`}>Clearance</p>
-          <p className={ps.value}>{profile.clearance}</p>
-        </div>
-        <div className={`${ps.infoCard} sm:col-span-2`}>
-          <p className={`${ps.label} mb-1`}>Organizations</p>
-          <p className={ps.value}>{profile.organizations.join(' · ')}</p>
-        </div>
-        <div className={`${ps.infoCard} sm:col-span-2`}>
-          <p className={`${ps.label} mb-1`}>Roles</p>
-          <div className="flex flex-wrap gap-1.5 mt-1">
-            {profile.roles.map(r => (
-              <span key={r} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">{r}</span>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h3 className={`${ps.h3} mb-3`}>Background</h3>
-        <ul className="space-y-1.5">
-          {profile.background.map((item, i) => (
-            <li key={i} className={ps.listItem}>
-              <span className="text-primary mt-0.5 shrink-0">›</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div>
-        <h3 className={`${ps.h3} mb-3`}>Key Events</h3>
-        <div className={`${ps.timelineLine} space-y-4`}>
-          {profile.key_events.map((ev, i) => (
-            <div key={i} className="relative">
-              <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
-              <div className="flex items-start gap-3">
-                <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">{ev.date}</span>
-                <span className={ps.body}>{ev.event}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const NidsTab: FC = () => {
   const { nids } = data;
@@ -282,32 +205,6 @@ const SkinwalkerTab: FC = () => {
   );
 };
 
-const ClaimsTab: FC = () => {
-  const { claims } = data;
-  return (
-    <div className="space-y-6">
-      <ClaimsStatusBar claims={claims} />
-      <div className="space-y-4">
-        {claims.map((c, i) => {
-          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
-          return (
-            <div key={i} className={`${ps.borderCard} space-y-2`}>
-              <div className="flex items-start justify-between gap-3">
-                <p className="text-sm font-medium text-gray-900 dark:text-gray-100 leading-snug">{c.claim}</p>
-                <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
-              </div>
-              <p className="text-xs text-gray-500 leading-relaxed">{c.basis}</p>
-              {c.notes && (
-                <p className={`${ps.muted} italic`}>{c.notes}</p>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
 const DisclosuresTab: FC = () => (
   <SharedDisclosuresTab disclosures={data.disclosures} />
 );
@@ -327,23 +224,30 @@ const BigelowProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNod
 
   const renderTab = () => {
     switch (activeTab) {
-      case 'overview':    return <OverviewTab />;
-      case 'career-network': {
-        const keyEvents = (data.profile.key_events ?? []).map((e: any) => ({ year: String(e.date ?? e.year ?? ''), event: e.event }));
-        const careerConnections = (data as any).career_connections ?? [];
-        return (
-          <div className="space-y-4">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
-            </p>
-            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
-          </div>
-        );
-      }
+      case 'overview':    return (
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        <SharedOverviewTab
+          profile={data.profile as any}
+          headerBanner={
+            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/30 rounded-lg p-4">
+              <p className="text-xs font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Research Patron</p>
+              <p className="text-sm text-blue-900 dark:text-blue-100 leading-relaxed">
+                Bigelow&apos;s profile differs from other DECUR insiders. He is not a government whistleblower
+                or direct UAP witness - he is the institutional patron whose funding and organizational
+                infrastructure made modern classified UAP research possible. His inclusion bridges the
+                1990s Las Vegas research network with the post-2007 AAWSAP disclosure era.
+              </p>
+            </div>
+          }
+        />
+      );
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      case 'career-network': return <SharedCareerNetworkTab profile={data.profile} career_connections={(data as any).career_connections} />;
       case 'nids':        return <NidsTab />;
       case 'baass':       return <BaassTab />;
       case 'skinwalker':  return <SkinwalkerTab />;
-      case 'claims':      return <ClaimsTab />;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      case 'claims':      return <SharedClaimsTab claims={data.claims as any} variant="basis" />;
       case 'disclosures': return <DisclosuresTab />;
       case 'network':     return <NetworkTab />;
       case 'assessment':  return <AssessmentTab />;

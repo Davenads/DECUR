@@ -1,20 +1,14 @@
 import { FC, useState } from 'react';
-import dynamic from 'next/dynamic';
 import valleeData from '../../data/key-figures/vallee.json';
 import type { ValleeData } from '../../types/data';
 import ProfileShell from './shared/ProfileShell';
-import ClaimsStatusBar from './shared/ClaimsStatusBar';
-import { statusConfig } from './shared/profileConstants';
 import { InsiderProfileProps } from '../../types/components';
 import SharedAssessmentTab from './shared/tabs/SharedAssessmentTab';
 import SharedDisclosuresTab from './shared/tabs/SharedDisclosuresTab';
 import SharedNetworkTab from './shared/tabs/SharedNetworkTab';
+import SharedCareerNetworkTab from './shared/tabs/SharedCareerNetworkTab';
+import SharedClaimsTab from './shared/tabs/SharedClaimsTab';
 import { ps } from './shared/profileStyles';
-
-const FigureCareerFlow = dynamic(() => import('./shared/FigureCareerFlow'), {
-  ssr: false,
-  loading: () => <div className="h-[440px] rounded-lg bg-gray-900 animate-pulse" />,
-});
 
 const data = valleeData as unknown as ValleeData;
 
@@ -239,32 +233,6 @@ const NidsTab: FC = () => {
   );
 };
 
-const ClaimsTab: FC = () => {
-  const { claims } = data;
-  return (
-    <div className="space-y-6">
-      <ClaimsStatusBar claims={claims} />
-      <div className="space-y-4">
-        {claims.map((c, i) => {
-          const cfg = statusConfig[c.status] ?? { label: c.status, classes: 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300' };
-          return (
-            <div key={i} className={`${ps.borderCard} space-y-2`}>
-              <div className="flex items-start justify-between gap-3">
-                <p className="text-sm font-medium text-gray-900 dark:text-gray-100 leading-snug">{c.claim}</p>
-                <span className={`text-xs px-2 py-0.5 rounded-full font-medium shrink-0 ${cfg.classes}`}>{cfg.label}</span>
-              </div>
-              <p className="text-xs text-gray-500 leading-relaxed">{c.basis}</p>
-              {c.notes && (
-                <p className={`${ps.muted} italic`}>{c.notes}</p>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
 const DisclosuresTab: FC = () => (
   <SharedDisclosuresTab disclosures={data.disclosures} variant="card" introText="Chronological record of Vallée's public disclosures and research publications." />
 );
@@ -311,22 +279,11 @@ const ValleeProfile: FC<InsiderProfileProps> = ({ onBack, backLabel, networkNode
       case 'forbidden-science': return <ForbiddenScienceTab />;
       case 'theory':            return <TheoryTab />;
       case 'nids':              return <NidsTab />;
-      case 'claims':            return <ClaimsTab />;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      case 'claims':            return <SharedClaimsTab claims={data.claims as any} variant="basis" />;
       case 'disclosures':       return <DisclosuresTab />;
-      case 'career-network': {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const keyEvents = (data.profile.key_events ?? []).map((e: any) => ({ year: String(e.date ?? e.year ?? ''), event: e.event }));
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const careerConnections = (data as any).career_connections ?? [];
-        return (
-          <div className="space-y-4">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              Career timeline with key connections. Dashed edges show cross-figure and program relationships. Scroll or pinch to zoom.
-            </p>
-            <FigureCareerFlow keyEvents={keyEvents} careerConnections={careerConnections} />
-          </div>
-        );
-      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      case 'career-network': return <SharedCareerNetworkTab profile={data.profile} career_connections={(data as any).career_connections} />;
       case 'network':           return <NetworkTab />;
       case 'sources':           return <SourcesTab />;
       case 'assessment':        return <AssessmentTab />;
