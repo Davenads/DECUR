@@ -110,13 +110,13 @@ const SharedDisclosuresTab: FC<SharedDisclosuresTabProps> = ({
             <div className="absolute -left-[1.65rem] top-1 w-3 h-3 rounded-full bg-primary border-2 border-white dark:border-gray-800" />
             <div className={ps.borderCard}>
               <div className="flex items-start justify-between gap-3 mb-1">
-                <div>
+                <div className="min-w-0">
                   {d.title && <h4 className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{d.title}</h4>}
                   <p className="text-xs text-gray-500 mt-0.5">{d.outlet}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1 shrink-0">
-                  <span className="font-mono text-xs text-gray-400">{d.date}</span>
-                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TYPE_COLORS[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
+                  <span className="font-mono text-xs text-gray-400 whitespace-nowrap">{d.date}</span>
+                  <span className={`text-xs px-2 py-0.5 rounded-full font-medium whitespace-nowrap ${TYPE_COLORS[d.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
                     {d.type.replace(/-/g, ' ')}
                   </span>
                 </div>
