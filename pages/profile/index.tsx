@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useAuth } from '../_app';
+import CollectionPicker from '../../components/bookmarks/CollectionPicker';
 
 type Tab = 'saved' | 'collections' | 'submissions';
 
@@ -85,6 +86,9 @@ export default function ProfilePage() {
 
   const [submissions, setSubmissions]     = useState<Submission[]>([]);
   const [subLoading, setSubLoading]       = useState(true);
+
+  // Which bookmark's CollectionPicker popover is currently open
+  const [openPickerId, setOpenPickerId]   = useState<string | null>(null);
 
   // New collection form state
   const [showNewCol, setShowNewCol]       = useState(false);
@@ -299,8 +303,9 @@ export default function ProfilePage() {
               <ul className="divide-y divide-gray-100 dark:divide-gray-800">
                 {bookmarks.map(bm => {
                   const meta = CONTENT_META[bm.content_type] ?? CONTENT_META.figure;
+                  const pickerOpen = openPickerId === bm.id;
                   return (
-                    <li key={bm.id} className="flex items-center gap-3 py-3 group">
+                    <li key={bm.id} className="relative flex items-center gap-3 py-3 group">
                       <span className={`shrink-0 px-2 py-0.5 rounded text-xs font-medium ${meta.color}`}>
                         {meta.label}
                       </span>
@@ -313,6 +318,21 @@ export default function ProfilePage() {
                       <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0 hidden sm:block">
                         {new Date(bm.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                       </span>
+                      {/* Add to collection */}
+                      <button
+                        onClick={() => setOpenPickerId(pickerOpen ? null : bm.id)}
+                        title="Add to collection"
+                        className={`shrink-0 p-1 rounded transition-all ${
+                          pickerOpen
+                            ? 'text-primary dark:text-primary-light'
+                            : 'text-gray-300 dark:text-gray-600 hover:text-primary dark:hover:text-primary-light opacity-0 group-hover:opacity-100'
+                        }`}
+                      >
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                      </button>
+                      {/* Remove bookmark */}
                       <button
                         onClick={() => handleRemoveBookmark(bm.id)}
                         title="Remove bookmark"
@@ -322,6 +342,21 @@ export default function ProfilePage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
                       </button>
+                      {/* CollectionPicker popover */}
+                      {pickerOpen && (
+                        <CollectionPicker
+                          bookmarkId={bm.id}
+                          onClose={() => setOpenPickerId(null)}
+                          onCollectionCreated={newCol => {
+                            // Append to collections list if not already present
+                            setCollections(prev =>
+                              prev.find(c => c.id === newCol.id)
+                                ? prev
+                                : [{ ...newCol, description: null, slug: '', is_public: false, updated_at: new Date().toISOString(), collection_items: [{ count: 1 }] }, ...prev]
+                            );
+                          }}
+                        />
+                      )}
                     </li>
                   );
                 })}
