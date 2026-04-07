@@ -214,7 +214,10 @@ const NetworkTab: FC = () => (
 );
 
 const AssessmentTab: FC = () => (
-  <SharedAssessmentTab credibility={data.credibility} variant="compact" />
+  <SharedAssessmentTab
+    credibility={data.credibility}
+    methodologyNote="This section presents documented arguments for and against Bigelow's credibility based on his institutional record, public statements, and independent scrutiny. DECUR does not adjudicate these claims; they are presented for methodological transparency."
+  />
 );
 
 /* ─── Main component ──────────────────────────────────────────── */
