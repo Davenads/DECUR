@@ -20,7 +20,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   // ── GET: list collections with item counts ──────────────────────
+  // Optional: ?include_bookmark=<bookmark_id> adds a `has_bookmark` boolean
+  // to each collection entry — used by CollectionPicker to show check states.
   if (req.method === 'GET') {
+    const includeBookmark = req.query.include_bookmark as string | undefined;
+
     const { data, error } = await supabase
       .from('collections')
       .select('id, title, description, slug, is_public, created_at, updated_at, collection_items(count)')
@@ -28,6 +32,21 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       .order('updated_at', { ascending: false });
 
     if (error) return res.status(500).json({ error: error.message });
+
+    // Annotate each collection with whether it already contains the given
+    // bookmark — used by CollectionPicker to render correct checkbox states.
+    if (includeBookmark && data && data.length > 0) {
+      const { data: membership } = await supabase
+        .from('collection_items')
+        .select('collection_id')
+        .in('collection_id', data.map(c => c.id))
+        .eq('bookmark_id', includeBookmark);
+
+      const memberSet = new Set((membership ?? []).map(m => m.collection_id));
+      const annotated = data.map(c => ({ ...c, has_bookmark: memberSet.has(c.id) }));
+      return res.status(200).json({ collections: annotated });
+    }
+
     return res.status(200).json({ collections: data });
   }
 
