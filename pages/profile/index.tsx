@@ -31,6 +31,19 @@ interface Collection {
   collection_items: [{ count: number }] | [];
 }
 
+interface CollectionItem {
+  id: string;
+  bookmark_id: string;
+  note: string | null;
+  position: number | null;
+  added_at: string;
+  bookmarks: {
+    content_type: string;
+    content_id: string;
+    content_name: string;
+  } | null;
+}
+
 interface Submission {
   id: string;
   content_type: string;
@@ -89,6 +102,19 @@ export default function ProfilePage() {
 
   // Which bookmark's CollectionPicker popover is currently open
   const [openPickerId, setOpenPickerId]   = useState<string | null>(null);
+
+  // Collection management state
+  const [editingColId, setEditingColId]   = useState<string | null>(null);
+  const [editTitle, setEditTitle]         = useState('');
+  const [editDesc, setEditDesc]           = useState('');
+  const [editPublic, setEditPublic]       = useState(false);
+  const [editSaving, setEditSaving]       = useState(false);
+  const [editError, setEditError]         = useState<string | null>(null);
+  const [deletingColId, setDeletingColId] = useState<string | null>(null);
+  const [deleteError, setDeleteError]     = useState<string | null>(null);
+  const [expandedColId, setExpandedColId] = useState<string | null>(null);
+  const [expandedItems, setExpandedItems] = useState<Record<string, CollectionItem[]>>({});
+  const [expandLoading, setExpandLoading] = useState<string | null>(null);
 
   // New collection form state
   const [showNewCol, setShowNewCol]       = useState(false);
@@ -196,6 +222,75 @@ export default function ProfilePage() {
     setNewColPublic(false);
     setShowNewCol(false);
     setNewColSaving(false);
+  }
+
+  function handleStartEdit(col: Collection) {
+    setEditingColId(col.id);
+    setEditTitle(col.title);
+    setEditDesc(col.description ?? '');
+    setEditPublic(col.is_public);
+    setEditError(null);
+    setDeletingColId(null);
+    setExpandedColId(null);
+  }
+
+  function handleCancelEdit() {
+    setEditingColId(null);
+    setEditError(null);
+  }
+
+  async function handleSaveEdit(colId: string) {
+    setEditSaving(true);
+    setEditError(null);
+    const res = await fetch(`/api/collections/${colId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title: editTitle, description: editDesc || null, is_public: editPublic }),
+    });
+    const json = await res.json() as { collection?: Collection; error?: string };
+    if (!res.ok || json.error) {
+      setEditError(json.error ?? 'Failed to save changes.');
+      setEditSaving(false);
+      return;
+    }
+    setCollections(prev => prev.map(c => c.id === colId ? { ...c, ...json.collection } : c));
+    setEditingColId(null);
+    setEditSaving(false);
+  }
+
+  async function handleDeleteCollection(colId: string) {
+    setDeleteError(null);
+    const res = await fetch(`/api/collections/${colId}`, { method: 'DELETE' });
+    if (!res.ok && res.status !== 204) {
+      const json = await res.json() as { error?: string };
+      setDeleteError(json.error ?? 'Failed to delete collection.');
+      return;
+    }
+    setCollections(prev => prev.filter(c => c.id !== colId));
+    setDeletingColId(null);
+    if (expandedColId === colId) setExpandedColId(null);
+  }
+
+  async function handleToggleExpand(colId: string) {
+    if (expandedColId === colId) {
+      setExpandedColId(null);
+      return;
+    }
+    setExpandedColId(colId);
+    setEditingColId(null);
+    setDeletingColId(null);
+    // Fetch items if not cached
+    if (!expandedItems[colId]) {
+      setExpandLoading(colId);
+      fetch(`/api/collections/${colId}`)
+        .then(r => r.json())
+        .then(({ collection }) => {
+          const items = (collection?.collection_items ?? []) as CollectionItem[];
+          setExpandedItems(prev => ({ ...prev, [colId]: items }));
+          setExpandLoading(null);
+        })
+        .catch(() => setExpandLoading(null));
+    }
   }
 
   const displayName =
@@ -525,43 +620,195 @@ export default function ProfilePage() {
                 description="Create a collection to organize your saved items. Collections can be kept private or shared publicly."
               />
             ) : (
-              <div className="grid sm:grid-cols-2 gap-3">
+              <div className="space-y-3">
                 {collections.map(col => {
                   const itemCount = Array.isArray(col.collection_items)
                     ? (col.collection_items[0] as { count: number } | undefined)?.count ?? 0
                     : 0;
+                  const isEditing   = editingColId === col.id;
+                  const isDeleting  = deletingColId === col.id;
+                  const isExpanded  = expandedColId === col.id;
+                  const isLoadingItems = expandLoading === col.id;
+
                   return (
                     <div
                       key={col.id}
-                      className="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 hover:border-primary/40 transition-colors"
+                      className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 overflow-hidden transition-colors"
                     >
-                      <div className="flex items-start justify-between gap-2 mb-1">
-                        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 truncate">{col.title}</h3>
-                        {col.is_public && (
-                          <span className="shrink-0 text-xs px-1.5 py-0.5 rounded bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
-                            Public
-                          </span>
+                      {/* Card header */}
+                      <div className="p-4">
+                        {isEditing ? (
+                          /* ── Edit form ── */
+                          <div className="space-y-3">
+                            {editError && <p className="text-xs text-red-500">{editError}</p>}
+                            <input
+                              type="text"
+                              value={editTitle}
+                              onChange={e => setEditTitle(e.target.value)}
+                              className="w-full px-3 py-1.5 text-sm rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                            />
+                            <textarea
+                              value={editDesc}
+                              onChange={e => setEditDesc(e.target.value)}
+                              rows={2}
+                              placeholder="Description (optional)"
+                              className="w-full px-3 py-1.5 text-sm rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary resize-none transition-colors"
+                            />
+                            <label className="flex items-center gap-2 cursor-pointer">
+                              <input
+                                type="checkbox"
+                                checked={editPublic}
+                                onChange={e => setEditPublic(e.target.checked)}
+                                className="rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary/50"
+                              />
+                              <span className="text-xs text-gray-600 dark:text-gray-400">Public collection</span>
+                            </label>
+                            <div className="flex gap-2">
+                              <button
+                                onClick={() => handleSaveEdit(col.id)}
+                                disabled={editSaving || !editTitle.trim()}
+                                className="px-3 py-1.5 bg-primary hover:bg-primary-dark text-white text-xs font-medium rounded-lg transition-colors disabled:opacity-60"
+                              >
+                                {editSaving ? 'Saving...' : 'Save'}
+                              </button>
+                              <button
+                                onClick={handleCancelEdit}
+                                className="px-3 py-1.5 text-xs text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          </div>
+                        ) : (
+                          /* ── Normal card view ── */
+                          <div>
+                            <div className="flex items-start justify-between gap-2 mb-1">
+                              <button
+                                onClick={() => handleToggleExpand(col.id)}
+                                className="flex-1 text-left min-w-0"
+                              >
+                                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 truncate hover:text-primary dark:hover:text-primary-light transition-colors">
+                                  {col.title}
+                                </h3>
+                              </button>
+                              <div className="flex items-center gap-1 shrink-0">
+                                {col.is_public && (
+                                  <span className="text-xs px-1.5 py-0.5 rounded bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                                    Public
+                                  </span>
+                                )}
+                                {/* Edit button */}
+                                <button
+                                  onClick={() => handleStartEdit(col)}
+                                  title="Edit collection"
+                                  className="p-1 rounded text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+                                >
+                                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                  </svg>
+                                </button>
+                                {/* Delete button */}
+                                <button
+                                  onClick={() => { setDeletingColId(col.id); setDeleteError(null); setEditingColId(null); }}
+                                  title="Delete collection"
+                                  className="p-1 rounded text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors"
+                                >
+                                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            {col.description && (
+                              <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mb-2">{col.description}</p>
+                            )}
+                            <div className="flex items-center justify-between gap-2">
+                              <button
+                                onClick={() => handleToggleExpand(col.id)}
+                                className="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                              >
+                                {itemCount} item{itemCount !== 1 ? 's' : ''} · Updated {new Date(col.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                                <span className="ml-1">{isExpanded ? '▲' : '▼'}</span>
+                              </button>
+                              {col.is_public && (
+                                <a
+                                  href={`/collections/${col.id}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-xs text-primary hover:text-primary-dark dark:text-primary-light transition-colors shrink-0"
+                                  onClick={e => e.stopPropagation()}
+                                >
+                                  Share link
+                                </a>
+                              )}
+                            </div>
+                          </div>
                         )}
                       </div>
-                      {col.description && (
-                        <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 mb-2">{col.description}</p>
+
+                      {/* Delete confirm */}
+                      {isDeleting && !isEditing && (
+                        <div className="px-4 pb-4 pt-0">
+                          <div className="p-3 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800/40 space-y-2">
+                            {deleteError && <p className="text-xs text-red-600 dark:text-red-400">{deleteError}</p>}
+                            <p className="text-xs text-red-700 dark:text-red-300">
+                              Delete &ldquo;{col.title}&rdquo;? This cannot be undone and will remove all {itemCount} item{itemCount !== 1 ? 's' : ''} from the collection.
+                            </p>
+                            <div className="flex gap-2">
+                              <button
+                                onClick={() => handleDeleteCollection(col.id)}
+                                className="px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-medium rounded-lg transition-colors"
+                              >
+                                Delete
+                              </button>
+                              <button
+                                onClick={() => setDeletingColId(null)}
+                                className="px-3 py-1.5 text-xs text-gray-500 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       )}
-                      <div className="flex items-center justify-between gap-2">
-                        <p className="text-xs text-gray-400 dark:text-gray-500">
-                          {itemCount} item{itemCount !== 1 ? 's' : ''} - Updated {new Date(col.updated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                        </p>
-                        {col.is_public && (
-                          <a
-                            href={`/collections/${col.id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs text-primary hover:text-primary-dark dark:text-primary-light transition-colors shrink-0"
-                            onClick={e => e.stopPropagation()}
-                          >
-                            Share link
-                          </a>
-                        )}
-                      </div>
+
+                      {/* Expanded items */}
+                      {isExpanded && !isEditing && !isDeleting && (
+                        <div className="border-t border-gray-100 dark:border-gray-800">
+                          {isLoadingItems ? (
+                            <div className="px-4 py-4 space-y-2">
+                              {[...Array(3)].map((_, i) => (
+                                <div key={i} className="h-5 bg-gray-100 dark:bg-gray-800 rounded animate-pulse" />
+                              ))}
+                            </div>
+                          ) : (expandedItems[col.id] ?? []).length === 0 ? (
+                            <p className="px-4 py-4 text-xs text-gray-400 dark:text-gray-500 text-center">
+                              No items in this collection yet. Add items from the Saved Items tab.
+                            </p>
+                          ) : (
+                            <ul className="divide-y divide-gray-100 dark:divide-gray-800">
+                              {(expandedItems[col.id] ?? []).map(item => {
+                                const bm = item.bookmarks;
+                                if (!bm) return null;
+                                const meta = CONTENT_META[bm.content_type] ?? CONTENT_META.figure;
+                                return (
+                                  <li key={item.id} className="flex items-center gap-2.5 px-4 py-2.5">
+                                    <span className={`shrink-0 px-1.5 py-0.5 rounded text-xs font-medium ${meta.color}`}>
+                                      {meta.label}
+                                    </span>
+                                    <Link
+                                      href={meta.href(bm.content_id)}
+                                      className="flex-1 text-xs font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light truncate transition-colors"
+                                    >
+                                      {bm.content_name}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+                        </div>
+                      )}
                     </div>
                   );
                 })}
