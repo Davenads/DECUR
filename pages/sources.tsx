@@ -1692,6 +1692,48 @@ const Sources: NextPage = () => {
             description="Includes detailed fieldwork analysis of the Trans-en-Provence case by researcher Jacques Vallee, including independent review of the GEPAN investigation methodology and physical evidence. Vallee concluded it is one of the most rigorously documented UAP physical effect cases in the global research literature."
             notes="Used for: Trans-en-Provence Landing 1981."
           />
+
+          {/* Varginha 1996 */}
+          <SourceCard
+            name="O Misterio de Varginha - Rede Globo Docu-Series (2026)"
+            url="https://www.youtube.com/watch?v=99hRVeBzTzE"
+            type="Television Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Three-part docu-series aired January 6-8, 2026 by Brazil's Rede Globo. Episode 3 is the critical primary source for the critical analysis of the case: Military #3 admits on camera that Vitorio Pacaccini promised R$5,000 to lie and interpret a rehearsed story; hotel owners witness coordinated payoffs; Military X's payment is confirmed by former soldier Ricardo de Melo; and Robson Luiz Oliveira's fabrication is on record. Pacaccini is visibly shaken under direct questioning."
+            notes="Used for: Varginha Incident 1996."
+          />
+          <SourceCard
+            name="Incidente em Varginha - Vitorio Pacaccini (1996)"
+            url="https://www.amazon.com/dp/6589988234"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="The primary published account by the lead investigator who built the military crash-recovery narrative. Used alongside the 2024 release of Robson Luiz's original audio tape to identify systematic discrepancies between Pacaccini's published narrative and the primary source testimony - cautious, indirect accounts were transformed into direct categorical assertions."
+            notes="Used for: Varginha Incident 1996."
+          />
+          <SourceCard
+            name="1997 Military Police Inquiry - IPM 18/1997 (Inquérito Policial Militar)"
+            url="https://reveil.blog/inside-brazils-ufo-files-what-declassified-military-documents-reveal-about"
+            type="Government Investigation"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Brazil's official 1997 military investigation into the Varginha incident, ordered by Brigadier General Sergio Pedro Coelho Lima and conducted by Lt. Col. Lucio Carlos Finholdt Pereira. Concluded the episode originated in a misidentification of Luiz Antonio de Paula (Mudinho), a known disabled neighbor. All named military personnel provided corroborated alibis. Documents Pacaccini offering R$10,000 for information and R$50,000 for video evidence, as testified by Sergeant Caubi Valerio."
+            notes="Used for: Varginha Incident 1996."
+          />
+          <SourceCard
+            name="Moment of Con: The Hoaxing of Contact - BoulderRivers Dossier (2026)"
+            url="https://docs.google.com/document/d/1eycFE5-KAWcWdY1hIsbNXbX7ejg-yXIhsoP0-wbMCPs/edit"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Rigorous chronological dossier compiled over three years by researcher BoulderRivers, citing primary sources including the 1997 IPM, hospital records, original audio recordings, and contemporaneous press. Maps the development of the Varginha narrative from 1996 through January 2026. Accompanied by a Google Sheet documenting Carlos de Souza's testimony across nine separate interviews (1996-2024), showing systematic embellishment across all versions. The most comprehensive critical analysis of the case's evidentiary record."
+            notes="Used for: Varginha Incident 1996."
+          />
+          <SourceCard
+            name="Manchete Magazine - Varginha Field Report (February 10, 1996)"
+            url="https://uapedia.ai/wiki/varginha-1996-brazils-incredible-uap-crash-and-nhi-case/"
+            type="Contemporary Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Contemporaneous field reporting from the week of the incident. Interviewed 15+ residents near the sighting location - none witnessed firefighters collecting any animal on January 20. Fire department personnel made humorous comments about the claims. Established that the 40 fire department deployments on January 21 were due to a violent hailstorm, not entity recovery operations. Critical for establishing the absence of neighborhood corroboration."
+            notes="Used for: Varginha Incident 1996."
+          />
         </section>
 
         {/* Primary documents sources */}
