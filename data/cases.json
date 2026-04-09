@@ -5496,7 +5496,18 @@
       "1996",
       "witness-death"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "james-fox",
+        "role": "Documentary filmmaker who produced 'Moment of Contact' (2022), the most prominent international investigation of the Varginha incident, featuring masked military witnesses and new medical testimony",
+        "note": "Fox's financial reward offers - 1 million Brazilian Reais (2022) and $200,000 USD for public witness testimony (May 2023) - are documented factors in the credibility assessment of post-2023 witnesses whose accounts shifted after the rewards were announced. Fox also organized the January 2026 National Press Club press conference on Varginha."
+      },
+      {
+        "id": "john-mack",
+        "role": "Harvard psychiatrist who personally traveled to Varginha in 1996 and conducted independent psychological assessments of all three primary witnesses alongside psychologist Gilda Moura",
+        "note": "Mack concluded the witnesses exhibited objective sincerity and no signs of psychopathology, fabrication, or financial motivation - his clinical finding is considered the strongest element of the case's credibility, distinct from the military recovery narrative built by Pacaccini."
+      }
+    ],
     "overview": {
       "key_facts": [
         "January 20, 1996: Three young women encounter a humanoid entity in a vacant lot in Varginha, Minas Gerais, Brazil",
