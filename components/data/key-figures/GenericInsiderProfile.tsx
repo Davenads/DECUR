@@ -7,6 +7,7 @@ import ClaimsStatusBar from '../shared/ClaimsStatusBar';
 import { statusConfig } from '../shared/profileConstants';
 import { insiderRegistry } from '../../../data/key-figures/registry';
 import casesData from '../../../data/cases.json';
+import documentsData from '../../../data/documents.json';
 import insidersIndex from '../../../data/key-figures/index.json';
 import { ps } from '../shared/profileStyles';
 import SharedDisclosuresTab from '../shared/tabs/SharedDisclosuresTab';
@@ -118,7 +119,22 @@ function detectFeatures(data: Record<string, any>): Array<{ key: string; label: 
 
 // --- Section renderers ---
 
-const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; name: string; date: string; location: string; evidence_tier: string }> }> = ({ profile, relatedCases }) => (
+const TIER_COLORS: Record<string, string> = {
+  'tier-1': '#10b981',
+  'tier-2': '#f59e0b',
+  'tier-3': '#94a3b8',
+};
+const TIER_LABELS: Record<string, string> = {
+  'tier-1': 'Tier 1',
+  'tier-2': 'Tier 2',
+  'tier-3': 'Tier 3',
+};
+
+const OverviewTab: FC<{
+  profile: ProfileData;
+  relatedCases: Array<{ id: string; name: string; date: string; location: string; evidence_tier: string }>;
+  relatedDocuments: Array<{ id: string; name: string; date: string; document_type: string }>;
+}> = ({ profile, relatedCases, relatedDocuments }) => (
   <div className="space-y-6">
     <div className={`${ps.infoCard} space-y-3`}>
       {profile.born && (
@@ -235,8 +251,41 @@ const OverviewTab: FC<{ profile: ProfileData; relatedCases: Array<{ id: string; 
               className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
             >
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors truncate">{c.name}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{c.date} · {c.location}</p>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors">{c.name}</p>
+                  {TIER_COLORS[c.evidence_tier] && (
+                    <span
+                      className="text-xs px-1.5 py-0.5 rounded font-medium"
+                      style={{ backgroundColor: `${TIER_COLORS[c.evidence_tier]}20`, color: TIER_COLORS[c.evidence_tier] }}
+                    >
+                      {TIER_LABELS[c.evidence_tier]}
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{c.date} · {c.location}</p>
+              </div>
+              <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {relatedDocuments.length > 0 && (
+      <div>
+        <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Related Primary Documents</h3>
+        <div className="space-y-2">
+          {relatedDocuments.map(d => (
+            <Link
+              key={d.id}
+              href={`/documents/${d.id}`}
+              className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+            >
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors truncate">{d.name}</p>
+                <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{d.date} · {d.document_type.replace(/-/g, ' ')}</p>
               </div>
               <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -473,8 +522,13 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
 
   const relatedCases = (casesData as Array<{
     id: string; name: string; date: string; location: string;
-    evidence_tier: string; insider_connections: string[];
-  }>).filter(c => c.insider_connections.includes(id));
+    evidence_tier: string; insider_connections: Array<{ id: string }>;
+  }>).filter(c => c.insider_connections.some(conn => conn.id === id));
+
+  const relatedDocuments = (documentsData as Array<{
+    id: string; name: string; date: string; document_type: string;
+    insider_connections: Array<{ id: string }>;
+  }>).filter(d => d.insider_connections.some(conn => conn.id === id));
 
   const includeInExplore = (insidersIndex as Array<{ id: string; includeInExplore?: boolean }>)
     .find(e => e.id === id)?.includeInExplore ?? false;
@@ -512,7 +566,7 @@ const GenericInsiderProfile: FC<GenericInsiderProfileProps> = ({ id, onBack, bac
 
     switch (activeTab) {
       case 'overview':
-        return <OverviewTab profile={profile} relatedCases={relatedCases} />;
+        return <OverviewTab profile={profile} relatedCases={relatedCases} relatedDocuments={relatedDocuments} />;
       case 'timeline':
         return <TimelineTab events={keyEvents} />;
       case 'career-flow':

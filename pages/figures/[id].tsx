@@ -1,10 +1,13 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import SeoHead from '../../components/SeoHead';
 import { InsiderEntry } from '../../types/data';
 import { resolveExploreRef } from '../../lib/exploreRef';
 import insiderIndex from '../../data/key-figures/index.json';
+import casesData from '../../data/cases.json';
+import documentsData from '../../data/documents.json';
 import GenericInsiderProfile from '../../components/data/key-figures/GenericInsiderProfile';
 import InsiderProfile from '../../components/data/InsiderProfile';
 import LazarProfile from '../../components/data/LazarProfile';
@@ -43,6 +46,75 @@ const BESPOKE_REGISTRY: Record<string, React.ComponentType<BespokeProps>> = {
   'tim-gallaudet':  GallaudetProfile,
 };
 
+interface RelatedCase { id: string; name: string; date: string; location: string; evidence_tier: string; }
+interface RelatedDocument { id: string; name: string; date: string; document_type: string; }
+
+const TIER_COLORS: Record<string, string> = {
+  'tier-1': '#10b981', 'tier-2': '#f59e0b', 'tier-3': '#94a3b8',
+};
+const TIER_LABELS: Record<string, string> = {
+  'tier-1': 'Tier 1', 'tier-2': 'Tier 2', 'tier-3': 'Tier 3',
+};
+
+const RelatedCrossLinksSection: React.FC<{ cases: RelatedCase[]; documents: RelatedDocument[] }> = ({ cases, documents }) => {
+  if (cases.length === 0 && documents.length === 0) return null;
+  return (
+    <div className="mt-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 space-y-5">
+      <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500">Cross-References</h2>
+      {cases.length > 0 && (
+        <div className="space-y-2">
+          <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Related Documented Cases</h3>
+          {cases.map(c => (
+            <Link
+              key={c.id}
+              href={`/cases/${c.id}`}
+              className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+            >
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors">{c.name}</p>
+                  {TIER_COLORS[c.evidence_tier] && (
+                    <span
+                      className="text-xs px-1.5 py-0.5 rounded font-medium"
+                      style={{ backgroundColor: `${TIER_COLORS[c.evidence_tier]}20`, color: TIER_COLORS[c.evidence_tier] }}
+                    >
+                      {TIER_LABELS[c.evidence_tier]}
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{c.date} · {c.location}</p>
+              </div>
+              <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          ))}
+        </div>
+      )}
+      {documents.length > 0 && (
+        <div className="space-y-2">
+          <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Related Primary Documents</h3>
+          {documents.map(d => (
+            <Link
+              key={d.id}
+              href={`/documents/${d.id}`}
+              className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
+            >
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary transition-colors truncate">{d.name}</p>
+                <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">{d.date} · {d.document_type.replace(/-/g, ' ')}</p>
+              </div>
+              <svg className="h-4 w-4 text-gray-300 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 interface Props {
   entry: InsiderEntry;
 }
@@ -58,6 +130,21 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
 
   const onBack = () => router.push(exploreBack ? exploreBack.href : '/data?category=key-figures');
   const backLabel = exploreBack ? exploreBack.label : 'Key Figures';
+
+  const isBespoke = !!BESPOKE_REGISTRY[entry.id];
+
+  // For bespoke profiles, derive cross-links here (GenericInsiderProfile handles its own internally).
+  const bespokeRelatedCases: RelatedCase[] = isBespoke
+    ? (casesData as Array<{ id: string; name: string; date: string; location: string; evidence_tier: string; insider_connections: Array<{ id: string }> }>)
+        .filter(c => c.insider_connections.some(conn => conn.id === entry.id))
+        .map(({ id, name, date, location, evidence_tier }) => ({ id, name, date, location, evidence_tier }))
+    : [];
+
+  const bespokeRelatedDocuments: RelatedDocument[] = isBespoke
+    ? (documentsData as Array<{ id: string; name: string; date: string; document_type: string; insider_connections: Array<{ id: string }> }>)
+        .filter(d => d.insider_connections.some(conn => conn.id === entry.id))
+        .map(({ id, name, date, document_type }) => ({ id, name, date, document_type }))
+    : [];
 
   const renderProfile = () => {
     const nodeId = entry.id;
@@ -105,6 +192,9 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
       />
       <div className="container mx-auto px-4 py-4">
         {renderProfile()}
+        {isBespoke && (
+          <RelatedCrossLinksSection cases={bespokeRelatedCases} documents={bespokeRelatedDocuments} />
+        )}
       </div>
     </>
   );
