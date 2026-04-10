@@ -224,7 +224,7 @@
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Grusch's whistleblower allegations directly informed the UAP Disclosure Act's legislative argument; his ICIG complaint was a primary reference in Gillibrand's subcommittee oversight work.",
-      "connection_type": "oversight"
+      "connection_type": "institutional"
     },
     {
       "event_index": 5,
@@ -232,7 +232,7 @@
       "node_id": "sean-kirkpatrick",
       "node_label": "Sean Kirkpatrick",
       "relationship": "AARO Director who testified before Gillibrand's subcommittee at the June 2023 hearing; primary executive branch official subject to her UAP oversight scrutiny.",
-      "connection_type": "oversight"
+      "connection_type": "institutional"
     },
     {
       "event_index": 6,

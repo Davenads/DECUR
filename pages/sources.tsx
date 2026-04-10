@@ -1467,6 +1467,66 @@ const Sources: NextPage = () => {
             notes="Used for: Dylan Borland."
           />
 
+          {/* Jay Stratton */}
+          <SourceCard
+            name="The Debrief - UAP Task Force Director Profile"
+            url="https://thedebrief.org/a-uap-primer/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Overview of UAPTF leadership and Jay Stratton's role as director of the DoD's primary UAP investigation body from 2020 to 2021, and his subsequent brief tenure as acting AARO director in 2022."
+            notes="Used for: Jay Stratton."
+          />
+
+          {/* Matthew Brown */}
+          <SourceCard
+            name="IMMACULATE CONSTELLATION - Congressional Record Document (HHRG-118-GO12-20241113-SD003)"
+            url="https://www.congress.gov/118/meeting/house/117721/documents/HHRG-118-GO12-20241113-SD003.pdf"
+            type="Government Report"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Matthew Brown's 11-page report submitted anonymously to the House Oversight Committee in November 2024 describing the alleged IMMACULATE CONSTELLATION USAP. Reviewed and cleared for public release by the U.S. Department of State. Accepted into the Congressional Record."
+            notes="Used for: Matthew Brown."
+          />
+
+          {/* Kit Green */}
+          <SourceCard
+            name="Skinwalkers at the Pentagon (Lacatski, Kelleher, Knapp - 2021)"
+            url="https://www.amazon.com/Skinwalkers-Pentagon-Inside-Secret-Government/dp/0578862115"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary source confirming Kit Green's AAWSAP DIRD contribution and role in the medical effects research network. Co-authored by AAWSAP's own director (Lacatski) and key researchers Kelleher and Knapp."
+            notes="Used for: Kit Green."
+          />
+
+          {/* Annie Jacobsen */}
+          <SourceCard
+            name="UFO: The Inside Story of the U.S. Government's Search for Alien Life (Jacobsen, 2023)"
+            url="https://www.amazon.com/UFO-Inside-Story-Governments-Search/dp/0316308862"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Annie Jacobsen's most thorough journalistic investigation of UAP program infrastructure, drawing on active and former government personnel across DIA, NRO, CIA, and DoD. Primary source for the Jacobsen profile's modern disclosure era coverage."
+            notes="Used for: Annie Jacobsen."
+          />
+
+          {/* Jim Semivan */}
+          <SourceCard
+            name="SOL Foundation - Official Website"
+            url="https://www.sol-foundation.org"
+            type="Online Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Primary source for SOL Foundation mission, founding team, and symposium proceedings. Documents Jim Semivan's role as co-founder alongside Dr. Garry Nolan and other former national security figures."
+            notes="Used for: Jim Semivan."
+          />
+
+          {/* Kirsten Gillibrand */}
+          <SourceCard
+            name="Senator Gillibrand - Official Senate Website"
+            url="https://www.gillibrand.senate.gov"
+            type="Government Report"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official Senate website documenting Gillibrand's UAP-related legislative record, press releases, and committee assignments. Primary source for her role in establishing the SASC Subcommittee on Emerging Threats with UAP oversight mandate and co-sponsoring the UAP Disclosure Act."
+            notes="Used for: Kirsten Gillibrand."
+          />
+
           {/* Travis Walton */}
           <SourceCard
             name="Fire in the Sky: The Walton Experience (Walton, 1993)"
