@@ -3,12 +3,12 @@
     "id": "wilson-davis-memo",
     "name": "Wilson-Davis Memo",
     "date": "October 16, 2002",
-    "issuing_authority": "Unknown — attributed to Dr. Eric W. Davis (EarthTech International)",
+    "issuing_authority": "Unknown - attributed to Dr. Eric W. Davis (EarthTech International)",
     "document_type": "intelligence-report",
     "authenticity_status": "leaked-disputed",
     "page_count": 15,
     "public_url": "Multiple hosting sites; no official government URL (leaked document)",
-    "summary": "A 15-page document attributed to physicist Eric Davis recording a 2002 meeting with Vice Admiral Thomas R. Wilson (former Director of DIA) in a Las Vegas parking lot. Per the document, Wilson described being denied access to a private aerospace contractor he believed was running a UAP crash retrieval and reverse engineering program. When Wilson attempted to exercise his oversight authority as a senior intelligence official, he was told by the contractor's legal team that he did not have a 'need to know.' The document is arguably the most significant leaked UAP record in existence — if authentic, it describes a private corporate program operating beyond congressional oversight.",
+    "summary": "A 15-page document attributed to physicist Eric Davis recording a 2002 meeting with Vice Admiral Thomas R. Wilson (former Director of DIA) in a Las Vegas parking lot. Per the document, Wilson described being denied access to a private aerospace contractor he believed was running a UAP crash retrieval and reverse engineering program. When Wilson attempted to exercise his oversight authority as a senior intelligence official, he was told by the contractor's legal team that he did not have a 'need to know.' The document is arguably the most significant leaked UAP record in existence - if authentic, it describes a private corporate program operating beyond congressional oversight.",
     "significance": "If authentic, the Wilson-Davis Memo describes the precise mechanism of UAP program concealment cited by David Grusch in his 2023 congressional testimony: private aerospace contractors operating reverse engineering programs with oversight exemptions that deny access even to senior intelligence officials. This would confirm Grusch's claim about the 'shell game' used to hide programs from congressional oversight. Davis has not explicitly denied the memo's accuracy in subsequent public statements.",
     "key_findings": [
       "Vice Admiral Thomas R. Wilson allegedly described being denied access to a private aerospace contractor program in approximately 1997",
@@ -16,9 +16,9 @@
       "The program allegedly involved crash retrieval of non-human technology",
       "Wilson reportedly identified the program through a classified intelligence program review but could not gain admission",
       "The contractor's security team allegedly cited specific program exemptions that override oversight authority",
-      "Wilson allegedly expressed frustration that even at his level — Director of DIA — he was excluded from the program",
+      "Wilson allegedly expressed frustration that even at his level - Director of DIA - he was excluded from the program",
       "Davis allegedly proposed conducting remote viewing to attempt to gather intelligence on the program",
-      "The meeting occurred in a Las Vegas parking lot — an unusual location suggesting concern about surveillance"
+      "The meeting occurred in a Las Vegas parking lot - an unusual location suggesting concern about surveillance"
     ],
     "provenance": "The document first appeared publicly in June 2019 when it was posted to the Steven Greer/Richard Doty/Keith Basterfield research network. Its origins are traced to the estate of the late Apollo astronaut Edgar Mitchell. Grant Cameron confirmed possession of a copy. The document's internal formatting, citations, and timeline are consistent with Eric Davis's documented activities. Davis has appeared in public forums where the document has been raised and has not issued an explicit denial. Former Senate Intelligence Committee staff member and TTSA co-founder Christopher Mellon has cited the memo in discussions of oversight failures. David Grusch's 2023 congressional testimony described the same oversight-denial mechanism detailed in the memo.",
     "insider_connections": [
@@ -92,19 +92,19 @@
     "document_type": "government-report",
     "authenticity_status": "confirmed-official",
     "page_count": 9,
-    "public_url": "dni.gov — ODNI official website (publicly available)",
-    "summary": "The first official US government assessment of UAP released to the public, mandated by the FY2021 Intelligence Authorization Act (Section 1603). The report covered 144 UAP incidents reported by US government sources between 2004 and 2021, of which 143 remained unidentified. It introduced five explanatory categories, assessed UAP as a potential threat to flight safety and national security, and explicitly acknowledged the need for a standardized reporting framework. The report is remarkable primarily for what it does not claim: it finds no evidence of US program origin for the observed phenomena, and does not conclude extraterrestrial origin — but does not rule it out.",
-    "significance": "The UAPTF Assessment is the formal legitimization of UAP as a serious national security matter by the intelligence community. Its requirement — mandated by Congress with strong support from senators including Mark Warner and Marco Rubio — represents the culmination of years of advocacy by Luis Elizondo, Chris Mellon, and others. The report's acknowledgment of 143 unexplained incidents out of 144 directly refutes the longstanding official position that UAP had no defense significance.",
+    "public_url": "dni.gov - ODNI official website (publicly available)",
+    "summary": "The first official US government assessment of UAP released to the public, mandated by the FY2021 Intelligence Authorization Act (Section 1603). The report covered 144 UAP incidents reported by US government sources between 2004 and 2021, of which 143 remained unidentified. It introduced five explanatory categories, assessed UAP as a potential threat to flight safety and national security, and explicitly acknowledged the need for a standardized reporting framework. The report is remarkable primarily for what it does not claim: it finds no evidence of US program origin for the observed phenomena, and does not conclude extraterrestrial origin - but does not rule it out.",
+    "significance": "The UAPTF Assessment is the formal legitimization of UAP as a serious national security matter by the intelligence community. Its requirement - mandated by Congress with strong support from senators including Mark Warner and Marco Rubio - represents the culmination of years of advocacy by Luis Elizondo, Chris Mellon, and others. The report's acknowledgment of 143 unexplained incidents out of 144 directly refutes the longstanding official position that UAP had no defense significance.",
     "key_findings": [
       "144 UAP reports from USG sources between November 2004 and March 2021; 143 remain unidentified",
       "Five explanatory categories established: airborne clutter, natural atmospheric phenomena, USG/industry developmental programs, foreign adversary systems, and 'other'",
       "The majority of reports describe objects that are 'white, oblong, metallic, or translucent' and airborne objects that are round or spherical in shape",
       "UAP observed in or near restricted or sensitive airspace at disproportionately high rates",
       "Reported 11 near-miss incidents with UAP requiring pilot evasive maneuvers",
-      "UAP may pose a challenge to US national security — both as potential adversary platforms and as airspace hazards",
+      "UAP may pose a challenge to US national security - both as potential adversary platforms and as airspace hazards",
       "A small number of cases involved UAP appearing to demonstrate 'unusual movement patterns or flight characteristics' including remaining stationary in winds aloft and moving against the wind",
       "Insufficient data to definitively attribute the phenomena to any single explanation",
-      "Recommended establishment of a standardized reporting framework — which led to the creation of AARO"
+      "Recommended establishment of a standardized reporting framework - which led to the creation of AARO"
     ],
     "provenance": "Mandated by the FY2021 Intelligence Authorization Act, Section 1603. Produced by the UAP Task Force under the Office of Naval Intelligence, coordinated across the intelligence community. Released publicly on June 25, 2021 simultaneously with a classified version provided to congressional intelligence and armed services committees. The public version is 9 pages; the classified annex has not been released but was reported to contain additional case details.",
     "insider_connections": [
@@ -125,10 +125,10 @@
       }
     ],
     "limitations": [
-      "The report covers only 144 cases — a fraction of UAP incidents that have been reported by US military and intelligence sources",
+      "The report covers only 144 cases - a fraction of UAP incidents that have been reported by US military and intelligence sources",
       "The 9-page unclassified version explicitly omits case details, methodologies, and the classified annex",
-      "Reporting was still stigmatized during the 2004-2021 window — the actual incidence rate is likely higher",
-      "'Unidentified' does not mean non-human or extraterrestrial — it means insufficient data to identify",
+      "Reporting was still stigmatized during the 2004-2021 window - the actual incidence rate is likely higher",
+      "'Unidentified' does not mean non-human or extraterrestrial - it means insufficient data to identify",
       "The 'USG/industry developmental programs' category creates an explanatory escape hatch for any case that might embarrass the government",
       "The report predates the 2023 Grusch testimony and AARO Historical Record Report, which add significant new contested claims"
     ],
@@ -171,9 +171,9 @@
     "document_type": "government-report",
     "authenticity_status": "confirmed-official",
     "page_count": 63,
-    "public_url": "media.defense.gov — DoD official website (publicly available)",
+    "public_url": "media.defense.gov - DoD official website (publicly available)",
     "summary": "A 63-page unclassified historical record report produced by AARO covering US government investigations of UAP from 1945 to 2023. The report finds no credible evidence that any US government investigation has confirmed extraterrestrial origin for UAP, no evidence of a cover-up of UAP crash retrieval programs, and no evidence that any government program has analyzed non-human technology. It directly addresses claims made in David Grusch's 2023 congressional testimony and assesses them as 'not substantiated by classified or unclassified information available to AARO.' Grusch, Karl Nell, and multiple congressional members disputed the report's methodology and conclusions.",
-    "significance": "The AARO Historical Record Report is the most comprehensive official government assessment of UAP program history ever publicly released — and simultaneously the most contested. Its direct contradiction of Grusch's sworn congressional testimony created a fundamental credibility conflict: either AARO failed to access the classified programs Grusch described, or Grusch's accounts are inaccurate. The report's critics argue that programs deliberately compartmentalized to deny oversight would by definition be inaccessible to AARO's investigation — the same oversight-denial mechanism described in the Wilson-Davis Memo.",
+    "significance": "The AARO Historical Record Report is the most comprehensive official government assessment of UAP program history ever publicly released - and simultaneously the most contested. Its direct contradiction of Grusch's sworn congressional testimony created a fundamental credibility conflict: either AARO failed to access the classified programs Grusch described, or Grusch's accounts are inaccurate. The report's critics argue that programs deliberately compartmentalized to deny oversight would by definition be inaccessible to AARO's investigation - the same oversight-denial mechanism described in the Wilson-Davis Memo.",
     "key_findings": [
       "No US government investigation or classified program has confirmed extraterrestrial origin for any UAP",
       "No credible evidence of US government possession of non-human technology or non-human biologics",
@@ -208,12 +208,12 @@
       }
     ],
     "limitations": [
-      "AARO director Sean Kirkpatrick acknowledged in public statements that AARO was unable to access all potentially relevant programs — the report's scope is limited by what AARO was permitted to review",
+      "AARO director Sean Kirkpatrick acknowledged in public statements that AARO was unable to access all potentially relevant programs - the report's scope is limited by what AARO was permitted to review",
       "David Grusch stated he was never contacted by AARO for the historical record investigation, raising questions about interview methodology",
       "The report's conclusion that whistleblower claims are unsubstantiated is epistemically circular if the relevant programs are the ones deliberately compartmentalized beyond AARO's access",
-      "Congressional critics noted the report relies heavily on self-reporting from agencies — agencies would not typically disclose programs to AARO that they have successfully hidden from oversight",
+      "Congressional critics noted the report relies heavily on self-reporting from agencies - agencies would not typically disclose programs to AARO that they have successfully hidden from oversight",
       "Volume 2 (covering 1945-2024 more broadly) was announced but had not been released as of this writing",
-      "The report is unclassified — its classified annex may contain significantly different conclusions"
+      "The report is unclassified - its classified annex may contain significantly different conclusions"
     ],
     "provenance_chain": [
       {
@@ -255,19 +255,19 @@
     "document_type": "academic-study",
     "authenticity_status": "confirmed-official",
     "page_count": 33,
-    "public_url": "science.nasa.gov — NASA official website (publicly available)",
-    "summary": "A 33-page report by a 16-member independent study team commissioned by NASA to assess the UAP phenomenon from a scientific methodology standpoint. The team — which included physicists, astronomers, data scientists, and former military officials — concluded that UAP is a serious scientific question with insufficient data to draw conclusions about its nature. The report calls for systematic data collection, standardized reporting, and the application of existing NASA data infrastructure to the UAP question. It finds no evidence of extraterrestrial origin but explicitly states the current data does not permit ruling it out.",
-    "significance": "The NASA study is the first time an institution of NASA's scientific credibility has formally engaged with UAP research methodology. It legitimizes the scientific question without overreaching on conclusions. The study's primary recommendation — treat UAP as a data problem and apply rigorous scientific methodology — aligns with the approach advocated by Garry Nolan and Jacques Vallée. Its release one week before the September 2023 congressional UAP hearing amplified the broader disclosure moment.",
+    "public_url": "science.nasa.gov - NASA official website (publicly available)",
+    "summary": "A 33-page report by a 16-member independent study team commissioned by NASA to assess the UAP phenomenon from a scientific methodology standpoint. The team - which included physicists, astronomers, data scientists, and former military officials - concluded that UAP is a serious scientific question with insufficient data to draw conclusions about its nature. The report calls for systematic data collection, standardized reporting, and the application of existing NASA data infrastructure to the UAP question. It finds no evidence of extraterrestrial origin but explicitly states the current data does not permit ruling it out.",
+    "significance": "The NASA study is the first time an institution of NASA's scientific credibility has formally engaged with UAP research methodology. It legitimizes the scientific question without overreaching on conclusions. The study's primary recommendation - treat UAP as a data problem and apply rigorous scientific methodology - aligns with the approach advocated by Garry Nolan and Jacques Vallée. Its release one week before the September 2023 congressional UAP hearing amplified the broader disclosure moment.",
     "key_findings": [
       "UAP is a serious scientific question that deserves rigorous investigation using scientific methodology",
       "Current data is insufficient to draw definitive conclusions about the nature or origin of UAP",
-      "No evidence of extraterrestrial origin — but current data cannot rule it out",
+      "No evidence of extraterrestrial origin - but current data cannot rule it out",
       "Stigma around UAP reporting in the scientific and military communities has created a systematic data gap",
       "NASA's existing Earth observation satellites, space weather instruments, and data infrastructure could contribute to UAP investigation if appropriately tasked",
-      "Standardized reporting protocols are urgently needed — current reports are inconsistent and often lack the data needed for scientific analysis",
+      "Standardized reporting protocols are urgently needed - current reports are inconsistent and often lack the data needed for scientific analysis",
       "AI and machine learning could help identify and classify UAP from existing datasets",
       "The field should move from anecdote to science: systematic data collection over time is the only path to resolution",
-      "Recommends NASA appoint a UAP research director — which it did (Mark McInerney appointed November 2023)"
+      "Recommends NASA appoint a UAP research director - which it did (Mark McInerney appointed November 2023)"
     ],
     "provenance": "NASA commissioned the independent study in October 2022. The 16-member team was chaired by David Spergel, a Princeton astrophysicist and former chair of NASA's Science Advisory Committee. Team members included Dr. Scott Kelly (astronaut), Daniel Evans (NASA Science Mission Directorate), and other credentialed scientists and former military officials. The study was explicitly independent of the UAPTF and AARO processes. Report released publicly September 14, 2023.",
     "insider_connections": [
@@ -283,10 +283,10 @@
       }
     ],
     "limitations": [
-      "The study team had no access to classified UAP data — their analysis was limited to unclassified reports and imagery",
+      "The study team had no access to classified UAP data - their analysis was limited to unclassified reports and imagery",
       "Team explicitly declined to assess individual claimed incidents or case files",
-      "The report is a methodology and framework document — it does not investigate specific cases or reach conclusions about any particular incident",
-      "Several team members reported receiving harassment and threats during the study — suggesting external pressure on the process",
+      "The report is a methodology and framework document - it does not investigate specific cases or reach conclusions about any particular incident",
+      "Several team members reported receiving harassment and threats during the study - suggesting external pressure on the process",
       "The report's recommendations require institutional buy-in that has not fully materialized in the two years since publication",
       "NASA's subsequent appointment of a UAP director (Mark McInerney) is a modest institutional step compared to the report's ambitions"
     ],
@@ -331,15 +331,15 @@
   },
   {
     "id": "halt-memo-1981",
-    "name": "Halt Memo — Unexplained Lights",
+    "name": "Halt Memo - Unexplained Lights",
     "date": "January 13, 1981",
     "issuing_authority": "Lt Col Charles I. Halt, USAF, RAF Bentwaters; addressed to UK Ministry of Defence",
     "document_type": "government-memo",
     "authenticity_status": "declassified-foia",
     "page_count": 1,
-    "public_url": "UK National Archives — released under FOIA (publicly available)",
+    "public_url": "UK National Archives - released under FOIA (publicly available)",
     "summary": "A one-page official US Air Force memo from Lt Col Charles Halt to the UK Ministry of Defence documenting the Rendlesham Forest UAP incidents of December 26-28, 1980. The memo describes three nights of encounters: a structured metallic triangular craft observed by multiple USAF security personnel, physical landing marks and radiation readings at the site, and aerial light phenomena. Halt's real-time audio tape recording of the second night's events is considered a companion document. The memo is the most concise and authoritative official military documentation of the Rendlesham Forest incident.",
-    "significance": "The Halt Memo is the archetypal example of a government official reporting an unexplained encounter to his superiors in writing. It is a primary source document — not an investigation of someone else's claims, but a commissioned officer's own direct account of witnessed events. Its FOIA release in 1983 was the first confirmation that Rendlesham Forest was documented at the official government level. Nick Pope's subsequent 1993 reinvestigation used this memo and the classified MoD file as his primary sources.",
+    "significance": "The Halt Memo is the archetypal example of a government official reporting an unexplained encounter to his superiors in writing. It is a primary source document - not an investigation of someone else's claims, but a commissioned officer's own direct account of witnessed events. Its FOIA release in 1983 was the first confirmation that Rendlesham Forest was documented at the official government level. Nick Pope's subsequent 1993 reinvestigation used this memo and the classified MoD file as his primary sources.",
     "key_findings": [
       "Three nights of encounters: December 26-27, 1980 and December 28, 1980",
       "First night: A structured metallic object triangular in shape was seen in Rendlesham Forest; it illuminated the forest and was maneuverable",
@@ -350,7 +350,7 @@
       "One object 'beamed down a stream of light' from the sky",
       "All observations were made by USAF military personnel, not civilians"
     ],
-    "provenance": "Written by Lt Col Charles Halt on January 13, 1981 — approximately two weeks after the incidents — and submitted to the UK Ministry of Defence as required for incidents near UK airspace. The MoD filed it and took no further action. The memo was released via FOIA request in 1983 and has been in the public domain since. The accompanying Halt audio tape — a 17-minute real-time recording of the second night — was released later and serves as an audio companion to the written memo. The document's authenticity has never been disputed; it is an official record.",
+    "provenance": "Written by Lt Col Charles Halt on January 13, 1981 - approximately two weeks after the incidents - and submitted to the UK Ministry of Defence as required for incidents near UK airspace. The MoD filed it and took no further action. The memo was released via FOIA request in 1983 and has been in the public domain since. The accompanying Halt audio tape - a 17-minute real-time recording of the second night - was released later and serves as an audio companion to the written memo. The document's authenticity has never been disputed; it is an official record.",
     "insider_connections": [
       {
         "id": "nick-pope",
@@ -359,11 +359,11 @@
       }
     ],
     "limitations": [
-      "The memo is one page written two weeks after the events — it is a summary, not a detailed investigation",
-      "The MoD's official response was 'no defense significance' — the document was filed and closed",
+      "The memo is one page written two weeks after the events - it is a summary, not a detailed investigation",
+      "The MoD's official response was 'no defense significance' - the document was filed and closed",
       "Physical evidence (landing marks, radiation readings) was not preserved or independently tested",
       "Halt's account has been elaborated significantly in subsequent decades compared to the original memo text",
-      "Jim Penniston's claims about touching the craft and transcribing symbols do not appear in the original memo — they emerged years later",
+      "Jim Penniston's claims about touching the craft and transcribing symbols do not appear in the original memo - they emerged years later",
       "The UK government never conducted a follow-up investigation commensurate with a deputy base commander's written report"
     ],
     "provenance_chain": [
@@ -414,25 +414,25 @@
     "page_count": 4,
     "public_url": "National Security Archive / CIA FOIA Reading Room (publicly available)",
     "summary": "A classified Defense Intelligence Agency report documenting the September 19, 1976 encounter between Imperial Iranian Air Force F-4 Phantom jets and an unidentified object over Tehran. The report is notable for its internal assessment, which explicitly states the incident 'is a classic which meets all the criteria necessary for a valid study of the UFO phenomenon.' Two F-4s experienced complete weapons systems and instrument failure at the moment of attempted intercept. The document includes Iranian Air Force witness accounts and DIA analytical commentary. It is one of the most explicitly analytical official UAP documents ever declassified.",
-    "significance": "The DIA document is significant not just for the incident it describes but for how the DIA chose to describe it. The language 'meets all criteria necessary for a valid study of the UFO phenomenon' is an intelligence officer's analytical conclusion — not a witness account. This means a US government agency formally assessed a specific incident as meeting their internal standard for genuine UAP evidence. That statement was classified, suggesting it reflects genuine institutional belief rather than public relations positioning.",
+    "significance": "The DIA document is significant not just for the incident it describes but for how the DIA chose to describe it. The language 'meets all criteria necessary for a valid study of the UFO phenomenon' is an intelligence officer's analytical conclusion - not a witness account. This means a US government agency formally assessed a specific incident as meeting their internal standard for genuine UAP evidence. That statement was classified, suggesting it reflects genuine institutional belief rather than public relations positioning.",
     "key_findings": [
       "The DIA analyst assessed: 'This case is a classic which meets all the criteria necessary for a valid study of the UFO phenomenon'",
       "Multiple witnesses including trained military pilots across two aircraft and ground radar operators",
-      "First F-4 experienced complete instrument and communications failure upon approach — restored immediately upon breaking off",
-      "Second F-4 achieved radar lock; attempted to fire AIM-9 missile — weapons systems and instruments failed at the moment of weapons selection",
+      "First F-4 experienced complete instrument and communications failure upon approach - restored immediately upon breaking off",
+      "Second F-4 achieved radar lock; attempted to fire AIM-9 missile - weapons systems and instruments failed at the moment of weapons selection",
       "When the second pilot broke off the attack, all systems immediately restored",
       "A small luminous object separated from the main object and appeared to approach the second F-4",
       "A second separation event occurred and the object appeared to impact the ground with a bright flash but no explosion",
       "The incident involved object behavior indicating apparent awareness of and response to human actions"
     ],
-    "provenance": "Classified as Secret at the time of production in 1976. Released through FOIA requests; the declassified version is available through the National Security Archive and the CIA FOIA Reading Room. The document was among a batch of UAP-related files released in the 1970s-1980s under FOIA pressure from civilian researchers including Barry Greenwood and Lawrence Fawcett. Its authenticity is not disputed — it is an official DIA document with standard classification markings, distribution list, and authorial attribution.",
+    "provenance": "Classified as Secret at the time of production in 1976. Released through FOIA requests; the declassified version is available through the National Security Archive and the CIA FOIA Reading Room. The document was among a batch of UAP-related files released in the 1970s-1980s under FOIA pressure from civilian researchers including Barry Greenwood and Lawrence Fawcett. Its authenticity is not disputed - it is an official DIA document with standard classification markings, distribution list, and authorial attribution.",
     "insider_connections": [],
     "limitations": [
-      "The document is based on reports from the Iranian Air Force — the original witnesses are Iranian military officers whose accounts could not be independently verified by US investigators",
-      "The Cold War context means both US and Soviet advanced aircraft were active in Iranian airspace — the report doesn't fully address this as an alternative explanation",
+      "The document is based on reports from the Iranian Air Force - the original witnesses are Iranian military officers whose accounts could not be independently verified by US investigators",
+      "The Cold War context means both US and Soviet advanced aircraft were active in Iranian airspace - the report doesn't fully address this as an alternative explanation",
       "Radar equipment of 1976 vintage had known limitations and potential for false locks",
       "Electronic interference with aircraft systems could theoretically be explained by high-powered electronic warfare jamming from an unknown source",
-      "The 'impact' event — a bright flash but no explosion — was never investigated; no ground team confirmed a landing or impact site",
+      "The 'impact' event - a bright flash but no explosion - was never investigated; no ground team confirmed a landing or impact site",
       "Iran's subsequent Islamic Revolution (1979) made further investigation and witness contact impossible"
     ],
     "provenance_chain": [
@@ -468,19 +468,19 @@
   },
   {
     "id": "ndaa-fy2023-uap-provisions",
-    "name": "National Defense Authorization Act FY2023 — UAP Provisions (Sections 1671-1683)",
+    "name": "National Defense Authorization Act FY2023 - UAP Provisions (Sections 1671-1683)",
     "date": "December 23, 2022",
     "issuing_authority": "US Congress; signed by President Biden",
     "document_type": "legislation",
     "authenticity_status": "confirmed-official",
     "page_count": 12,
-    "public_url": "congress.gov — US Congress official website (publicly available)",
+    "public_url": "congress.gov - US Congress official website (publicly available)",
     "summary": "The UAP-related provisions of the FY2023 National Defense Authorization Act represent the most significant legislative action on UAP in US history. Section 1683 established the All-domain Anomaly Resolution Office (AARO) with a formal mandate, budget authority, and reporting requirements. The provisions created new whistleblower protections for UAP witnesses, mandated a historical record review, established a central UAP reporting mechanism, and required the production of what became the AARO Historical Record Report. The legislation was shaped in significant part by Chris Mellon and operationalized Grusch's eventual protected disclosure.",
-    "significance": "The NDAA FY2023 UAP provisions transformed UAP from a peripheral intelligence topic into a formally institutionalized federal matter with statutory authority. AARO was created, defined, and funded by this legislation. The whistleblower protections in Section 1673 gave David Grusch the legal framework to make his 2023 protected disclosure to the ICIG without risking career consequences under the Espionage Act. Chris Mellon directly shaped the legislative language. The bill passed with bipartisan support — one of the very few bipartisan agreements in contemporary US Congress.",
+    "significance": "The NDAA FY2023 UAP provisions transformed UAP from a peripheral intelligence topic into a formally institutionalized federal matter with statutory authority. AARO was created, defined, and funded by this legislation. The whistleblower protections in Section 1673 gave David Grusch the legal framework to make his 2023 protected disclosure to the ICIG without risking career consequences under the Espionage Act. Chris Mellon directly shaped the legislative language. The bill passed with bipartisan support - one of the very few bipartisan agreements in contemporary US Congress.",
     "key_findings": [
       "Section 1683: Established AARO with formal mandate to detect, identify, and attribute UAP; required annual reporting to Congress",
       "Section 1673: Created new whistleblower protections allowing cleared personnel to report UAP-related information without career consequences",
-      "Section 1672: Required the Secretary of Defense and DNI to produce a comprehensive historical record of US government UAP investigations — resulting in the AARO Historical Record Report",
+      "Section 1672: Required the Secretary of Defense and DNI to produce a comprehensive historical record of US government UAP investigations - resulting in the AARO Historical Record Report",
       "Mandated AARO to produce an unclassified annual report to Congress on UAP",
       "Required all executive branch agencies to report UAP encounters to AARO within a defined timeframe",
       "Created a mechanism for cleared personnel to legally report UAP-related information to the appropriate congressional committees",
@@ -507,9 +507,9 @@
     ],
     "limitations": [
       "Legislation creates institutional frameworks but cannot compel genuine transparency if agencies choose non-compliance",
-      "AARO's budget and staffing remain small relative to the mandate — critics argue it is underfunded",
+      "AARO's budget and staffing remain small relative to the mandate - critics argue it is underfunded",
       "The whistleblower protections apply to current cleared personnel; they do not retroactively protect past disclosures",
-      "Congressional oversight of the classified annex to AARO reports is limited to intelligence committee members — the full Congress does not have access",
+      "Congressional oversight of the classified annex to AARO reports is limited to intelligence committee members - the full Congress does not have access",
       "The legislation's effectiveness depends entirely on the political will of the executive branch to enforce and comply with it",
       "Subsequent NDAA iterations (FY2024) have both expanded and constrained UAP provisions in ways that remain contested"
     ],
@@ -562,12 +562,12 @@
     "page_count": null,
     "public_url": "CIA FOIA Electronic Reading Room (cia.gov/readingroom); The Black Vault (documents.theblackvault.com/documents/ufos/robertsonpanelreport.pdf); NCAS full text via Condon Report Appendix U (files.ncas.org/condon/text/appndx-u.htm)",
     "summary": "A five-day CIA-convened scientific advisory panel that assessed the national security implications of the UFO phenomenon by reviewing 23 selected cases from 2,331 Air Force files and two filmed sightings. Its classified recommendations set US government UAP policy for four decades: strip UFOs of 'special status,' implement a public debunking campaign through mass media, and surveil civilian UFO research organizations. The Robertson Panel is the foundational document of the institutional suppression posture that Elizondo, Grusch, and Mellon have argued remains in effect.",
-    "significance": "The Robertson Panel formalized UAP suppression as deliberate policy rather than simple disinterest. Its debunking recommendation — stated explicitly in plain language — answers whether post-1953 official skepticism was sincere assessment or policy. The surveillance recommendation targeting civilian research groups demonstrates the CIA understood public UAP belief had political security implications. The panel reviewed only 23 of 2,331 cases across approximately 12 hours — a sample of roughly 1%.",
+    "significance": "The Robertson Panel formalized UAP suppression as deliberate policy rather than simple disinterest. Its debunking recommendation - stated explicitly in plain language - answers whether post-1953 official skepticism was sincere assessment or policy. The surveillance recommendation targeting civilian research groups demonstrates the CIA understood public UAP belief had political security implications. The panel reviewed only 23 of 2,331 cases across approximately 12 hours - a sample of roughly 1%.",
     "key_findings": [
       "Panel convened January 14-18, 1953; approximately 12 hours of total review time across five days",
       "Reviewed 23 selected cases from 2,331 Air Force reports on file; also reviewed two films: the Mariana (Great Falls, MT, August 1950) and Tremonton/Utah (Navy CWO Delbert Newhouse, 1952) sightings",
       "Panel members: H.P. Robertson (chair, CalTech/CIA); Luis W. Alvarez (UC Berkeley, future Nobel laureate); Samuel A. Goudsmit (Brookhaven National Laboratory); Thornton L. Page (Johns Hopkins Operations Research Office); Lloyd V. Berkner (Brookhaven, geophysics); J. Allen Hynek (astronomer, associate member only)",
-      "CIA convener: H. Marshall Chadwell (Assistant Director for Scientific Intelligence); Panel Secretary: Frederick C. Durant (CIA/OSI missile expert) — Durant's session notes form the companion 'Durant Report'",
+      "CIA convener: H. Marshall Chadwell (Assistant Director for Scientific Intelligence); Panel Secretary: Frederick C. Durant (CIA/OSI missile expert) - Durant's session notes form the companion 'Durant Report'",
       "On debunking: recommended 'the national security agencies take immediate steps to strip the Unidentified Flying Objects of the special status they have been given and the aura of mystery they have unfortunately acquired'",
       "Recommended a public education campaign through 'television, motion pictures, and popular articles... using actual case histories which had been puzzling at first but later explained'",
       "On civilian groups: recommended surveillance 'because of their potentially great influence on mass thinking... the apparent irresponsibility and possible use of such groups for subversive purposes should be kept in mind'",
@@ -593,7 +593,7 @@
       }
     ],
     "limitations": [
-      "The panel reviewed approximately 1% of the Air Force's UAP case file in roughly 12 hours — statistically inadequate for policy-level conclusions",
+      "The panel reviewed approximately 1% of the Air Force's UAP case file in roughly 12 hours - statistically inadequate for policy-level conclusions",
       "Panel members were CIA consultants with direct agency ties; independence from the sponsoring agency is limited",
       "J. Allen Hynek, listed only as 'associate member,' later publicly dissented from the panel's conclusions, calling the review inadequate",
       "The debunking and surveillance recommendations have never been formally rescinded or publicly reversed by any subsequent administration",
@@ -639,22 +639,22 @@
   },
   {
     "id": "blue-book-special-report-14",
-    "name": "Project Blue Book Special Report No. 14 — Analysis of Reports of Unidentified Aerial Objects",
+    "name": "Project Blue Book Special Report No. 14 - Analysis of Reports of Unidentified Aerial Objects",
     "date": "May 5, 1955",
     "issuing_authority": "Battelle Memorial Institute, Columbus, Ohio (under USAF contract); prepared for Air Technical Intelligence Center, USAF",
     "document_type": "government-report",
     "authenticity_status": "declassified-foia",
     "page_count": 315,
     "public_url": "Internet Archive (archive.org/details/ProjectBlueBookSpecialReport14); NARA Microfilm T1206 Roll 86 via Fold3 (fold3.com/title/461/project-blue-book-ufo-investigations); The Black Vault (theblackvault.com/documentarchive/project-blue-book-special-report-14-may-5-1955/)",
-    "summary": "The most rigorous statistical analysis ever conducted on the USAF's UAP case files, produced by Battelle Memorial Institute under Air Force contract, covering 3,201 sightings. Chi-square analysis of six characteristics comparing identified versus unidentified cases found the 22% classified as 'Unknown' were statistically distinct from identified cases — they could not be explained as inadequately observed conventional objects. Secretary of the Air Force Donald Quarles publicly mischaracterized the findings on October 25, 1955, falsely claiming fewer than 3% remained unknown. The report's actual conclusions were never publicly corrected.",
-    "significance": "Blue Book Special Report No. 14 is the only rigorous quantitative analysis of the early USAF UAP data. Its central finding — unknowns were statistically different from knowns, not simply poorly reported conventional objects — directly contradicts the 'all UAP are misidentifications' position. The deliberate public mischaracterization by Secretary Quarles (22% unknowns stated as 3%) is the most clearly documented instance of a US government official falsely describing classified UAP data to the public.",
+    "summary": "The most rigorous statistical analysis ever conducted on the USAF's UAP case files, produced by Battelle Memorial Institute under Air Force contract, covering 3,201 sightings. Chi-square analysis of six characteristics comparing identified versus unidentified cases found the 22% classified as 'Unknown' were statistically distinct from identified cases - they could not be explained as inadequately observed conventional objects. Secretary of the Air Force Donald Quarles publicly mischaracterized the findings on October 25, 1955, falsely claiming fewer than 3% remained unknown. The report's actual conclusions were never publicly corrected.",
+    "significance": "Blue Book Special Report No. 14 is the only rigorous quantitative analysis of the early USAF UAP data. Its central finding - unknowns were statistically different from knowns, not simply poorly reported conventional objects - directly contradicts the 'all UAP are misidentifications' position. The deliberate public mischaracterization by Secretary Quarles (22% unknowns stated as 3%) is the most clearly documented instance of a US government official falsely describing classified UAP data to the public.",
     "key_findings": [
       "Analyzed 3,201 USAF UFO sightings accumulated from 1947 through the early 1950s",
       "Classification results: 69% identified (Known), 22% Unknown, 9% Insufficient Information to classify",
       "Chi-square statistical analysis compared six characteristics between Known and Unknown cases: color, number of objects, duration, brightness, shape, and speed",
-      "Chi-square analysis demonstrated unknowns were statistically and qualitatively distinct from known cases — not simply misidentified conventional objects with incomplete data",
-      "Unknown cases had higher observation quality and more credible witnesses than Known cases — the opposite of what the mass-misidentification hypothesis would predict",
-      "The four Battelle analysts required unanimous agreement to classify a case as Unknown; only two needed to agree to classify as Known — making the 22% figure a conservative lower bound",
+      "Chi-square analysis demonstrated unknowns were statistically and qualitatively distinct from known cases - not simply misidentified conventional objects with incomplete data",
+      "Unknown cases had higher observation quality and more credible witnesses than Known cases - the opposite of what the mass-misidentification hypothesis would predict",
+      "The four Battelle analysts required unanimous agreement to classify a case as Unknown; only two needed to agree to classify as Known - making the 22% figure a conservative lower bound",
       "Secretary of the Air Force Donald A. Quarles, October 25, 1955: 'On the basis of this study we believe that no objects such as those popularly described as flying saucers have overflown the United States... even the unknown 3 percent could have been explained as conventional phenomena or illusions if more complete observational data had been available'",
       "The report's actual finding was 22% Unknown; Quarles's '3 percent' figure has no documented basis in the report",
       "Available on NARA Microfilm Publication T1206, Roll 86, images 538-847"
@@ -663,10 +663,10 @@
     "insider_connections": [],
     "limitations": [
       "Covers cases only through the early 1950s; does not reflect the higher-quality sensor data from subsequent decades",
-      "Case files were subject to Air Force selection bias at intake — cases judged trivial may have been excluded before reaching Battelle",
+      "Case files were subject to Air Force selection bias at intake - cases judged trivial may have been excluded before reaching Battelle",
       "Conservative Unknown classification criteria (unanimous agreement required) means the true unknown rate could be higher than 22%",
       "The report's findings were never formally addressed, corrected, or superseded by any subsequent government assessment",
-      "Quarles's false public characterization was never officially retracted — the fabricated '3 percent' figure entered public discourse and was cited for decades"
+      "Quarles's false public characterization was never officially retracted - the fabricated '3 percent' figure entered public discourse and was cited for decades"
     ],
     "provenance_chain": [
       {
@@ -723,19 +723,19 @@
     "authenticity_status": "confirmed-official",
     "page_count": 967,
     "public_url": "NCAS full text (files.ncas.org/condon/); Internet Archive (search: 'Condon Report UFO'); The Black Vault (theblackvault.com/documentarchive/the-full-condon-committee-report-on-ufos-1968/); Bantam Books paperback, 1969 (commercially published)",
-    "summary": "A two-year, approximately $500,000 USAF-commissioned study of UFOs conducted by the University of Colorado under Dr. Edward Condon, delivered November 1968 and publicly released January 9, 1969. Condon's summary concluded continued UFO investigation would not advance science. The report's own case analyses, conducted by the study team, showed approximately 30% of investigated cases remained unexplained — a finding Condon's summary did not address. An internal 1966 memo by project coordinator Robert Low, later leaked and published, described the study as a 'trick' to create the appearance of objectivity while ensuring a predetermined conclusion. Project Blue Book was closed December 17, 1969 citing the report. Official US government UAP investigation did not formally resume until approximately 2007.",
-    "significance": "The Condon Report ended official US government UAP investigation for nearly 40 years. Its internal contradictions — dismissive summary vs. body cases showing substantial unknowns — and the Low memo demonstrating a predetermined conclusion represent the clearest documented case of an official investigation designed to reach a pre-set finding. Elizondo, Grusch, and disclosure advocates cite the Condon era as the institutional closure event that buried UAP research and established the suppression culture they describe.",
+    "summary": "A two-year, approximately $500,000 USAF-commissioned study of UFOs conducted by the University of Colorado under Dr. Edward Condon, delivered November 1968 and publicly released January 9, 1969. Condon's summary concluded continued UFO investigation would not advance science. The report's own case analyses, conducted by the study team, showed approximately 30% of investigated cases remained unexplained - a finding Condon's summary did not address. An internal 1966 memo by project coordinator Robert Low, later leaked and published, described the study as a 'trick' to create the appearance of objectivity while ensuring a predetermined conclusion. Project Blue Book was closed December 17, 1969 citing the report. Official US government UAP investigation did not formally resume until approximately 2007.",
+    "significance": "The Condon Report ended official US government UAP investigation for nearly 40 years. Its internal contradictions - dismissive summary vs. body cases showing substantial unknowns - and the Low memo demonstrating a predetermined conclusion represent the clearest documented case of an official investigation designed to reach a pre-set finding. Elizondo, Grusch, and disclosure advocates cite the Condon era as the institutional closure event that buried UAP research and established the suppression culture they describe.",
     "key_findings": [
       "Delivered to the USAF November 1968; publicly released January 9, 1969",
       "USAF contract F44620-67-C-0035; total funding approximately $500,000",
       "Project Director: Dr. Edward U. Condon (physicist); Project Coordinator: Robert J. Low (administrative, not scientific); statistician: Dr. David R. Saunders (fired after leaking the Low memo, along with Norman Levine)",
       "Robert Low internal memo, August 9, 1966 (leaked 1968, published in Look magazine May 1968): 'The trick would be, I think, to describe the project so that, to the public, it would appear a totally objective study but, to the scientific community, would present the image of a group of nonbelievers trying their best to be objective but having an almost zero expectation of finding a saucer'",
       "Condon summary conclusion: 'further extensive study of UFOs probably cannot be justified in the expectation that science will be advanced thereby'",
-      "The report's own case analyses marked approximately 30% of investigated cases as unexplained — a finding Condon's foreword and summary conclusions did not acknowledge",
-      "The Lakenheath radar-visual case and Texas B-47 case — formally 'Unexplained' in the body — were cited by Dr. James McDonald as cases Condon's summary ignored",
+      "The report's own case analyses marked approximately 30% of investigated cases as unexplained - a finding Condon's foreword and summary conclusions did not acknowledge",
+      "The Lakenheath radar-visual case and Texas B-47 case - formally 'Unexplained' in the body - were cited by Dr. James McDonald as cases Condon's summary ignored",
       "Dr. James McDonald (University of Arizona atmospheric physicist) filed formal critique: 'its level of scientific argumentation is wholly unsatisfactory'",
       "Project Blue Book officially closed December 17, 1969 using the report as justification",
-      "The Low memo was published in Look magazine (May 1968, John G. Fuller) before the report was complete — the USAF did not treat it as disqualifying"
+      "The Low memo was published in Look magazine (May 1968, John G. Fuller) before the report was complete - the USAF did not treat it as disqualifying"
     ],
     "provenance": "The University of Colorado study was contracted October 1966 and ran through November 1968. The Low memo was discovered in Low's files by Saunders and Levine; NICAP director Donald Keyhoe circulated copies; John G. Fuller published an expose in Look magazine (May 1968). Saunders and Levine were fired by Condon following the leak. The final report was edited by Daniel S. Gillmor and published by E.P. Dutton and Bantam Books (1969). The National Academy of Sciences reviewed and endorsed the report's methodology without addressing the Low memo or the gap between case findings and Condon's summary.",
     "insider_connections": [
@@ -751,12 +751,12 @@
       }
     ],
     "limitations": [
-      "The Low memo — explicitly describing a predetermined conclusion as the study's design intent — was known before the report was complete and was not treated as disqualifying by the Air Force",
+      "The Low memo - explicitly describing a predetermined conclusion as the study's design intent - was known before the report was complete and was not treated as disqualifying by the Air Force",
       "The National Academy of Sciences endorsement addressed methodology but did not engage with the Low memo or the disconnect between case findings and summary conclusions",
-      "Condon's summary was written by Condon alone and was not subject to review by the project team — Saunders was fired before completion",
-      "The report studied only a subset of available UAP cases under time and resource constraints — it is not comprehensive",
+      "Condon's summary was written by Condon alone and was not subject to review by the project team - Saunders was fired before completion",
+      "The report studied only a subset of available UAP cases under time and resource constraints - it is not comprehensive",
       "McDonald's formal scientific critique received no institutional response and was not published in a peer-reviewed journal; McDonald died in 1971",
-      "Project Blue Book was closed based on Condon's summary conclusions, not on the body of the report's case findings — the agency used the predetermined conclusion"
+      "Project Blue Book was closed based on Condon's summary conclusions, not on the body of the report's case findings - the agency used the predetermined conclusion"
     ],
     "provenance_chain": [
       {
@@ -813,8 +813,8 @@
     "authenticity_status": "confirmed-official",
     "page_count": 1,
     "public_url": "Circulated publicly by Elizondo; related DoD FOIA release 18-F-0324 (The Black Vault: documents2.theblackvault.com/documents/osd/18-F-0324.pdf); referenced in New York Times investigation, December 16, 2017 (Helene Cooper, Ralph Blumenthal, Leslie Kean)",
-    "summary": "A one-page resignation letter submitted by Luis Elizondo to Secretary of Defense James Mattis on October 4, 2017, documenting his reasons for leaving the Pentagon after directing the classified Advanced Aerospace Threat Identification Program (AATIP). The letter describes 'bureaucratic challenges and inflexible mindsets,' references 'overwhelming evidence' of 'unusual aerial systems interfering with military weapon platforms and displaying beyond-next-generation capabilities,' and urges Mattis to 'ask the hard questions.' It does not name AATIP by program title. Elizondo made the letter public himself; it became the documentary anchor for the December 2017 New York Times investigation that first publicly confirmed AATIP's existence — the triggering event of the modern UAP disclosure movement.",
-    "significance": "The Elizondo resignation letter is the primary document from the triggering event of modern UAP disclosure. Its release alongside the December 16, 2017 NYT investigation and the first Pentagon-authenticated FLIR footage constitutes the moment that transformed UAP from a fringe topic to a mainstream national security question. Every subsequent development — Grusch's protected disclosure, the NDAA UAP provisions, AARO's creation, the congressional hearings — traces political context to the December 2017 moment this letter helped initiate.",
+    "summary": "A one-page resignation letter submitted by Luis Elizondo to Secretary of Defense James Mattis on October 4, 2017, documenting his reasons for leaving the Pentagon after directing the classified Advanced Aerospace Threat Identification Program (AATIP). The letter describes 'bureaucratic challenges and inflexible mindsets,' references 'overwhelming evidence' of 'unusual aerial systems interfering with military weapon platforms and displaying beyond-next-generation capabilities,' and urges Mattis to 'ask the hard questions.' It does not name AATIP by program title. Elizondo made the letter public himself; it became the documentary anchor for the December 2017 New York Times investigation that first publicly confirmed AATIP's existence - the triggering event of the modern UAP disclosure movement.",
+    "significance": "The Elizondo resignation letter is the primary document from the triggering event of modern UAP disclosure. Its release alongside the December 16, 2017 NYT investigation and the first Pentagon-authenticated FLIR footage constitutes the moment that transformed UAP from a fringe topic to a mainstream national security question. Every subsequent development - Grusch's protected disclosure, the NDAA UAP provisions, AARO's creation, the congressional hearings - traces political context to the December 2017 moment this letter helped initiate.",
     "key_findings": [
       "Dated October 4, 2017; addressed to Secretary of Defense James Mattis",
       "Submitted by Elizondo, who had directed AATIP within the Office of the Under Secretary of Defense for Intelligence",
@@ -822,7 +822,7 @@
       "References 'overwhelming evidence at both the classified and unclassified levels' of unidentified aerial phenomena",
       "Describes 'unusual aerial systems interfering with military weapon platforms and displaying beyond-next-generation capabilities'",
       "Urges Mattis to 'ask the hard questions' about the phenomena and who else might know about them",
-      "Does not name 'AATIP' explicitly — references Elizondo's work and the subject matter obliquely as 'anomalous aerospace threats'",
+      "Does not name 'AATIP' explicitly - references Elizondo's work and the subject matter obliquely as 'anomalous aerospace threats'",
       "Elizondo subsequently joined Tom DeLonge's To The Stars Academy of Arts and Science (TTSA)",
       "Made public by Elizondo himself; circulated in the context of the December 16, 2017 New York Times investigation"
     ],
@@ -840,10 +840,10 @@
       }
     ],
     "limitations": [
-      "The full verbatim text has not been released through an official FOIA channel — content characterizations derive from journalism, not a certified primary-source transcript",
+      "The full verbatim text has not been released through an official FOIA channel - content characterizations derive from journalism, not a certified primary-source transcript",
       "The letter does not name AATIP by program title; the AATIP connection is established through Elizondo's subsequent statements and the NYT investigation, not the letter itself",
-      "Pentagon officials subsequently disputed aspects of Elizondo's claimed authority and role within AATIP — documented in DoD FOIA release 18-F-0324",
-      "The letter was made public unilaterally by Elizondo — not through government declassification or FOIA",
+      "Pentagon officials subsequently disputed aspects of Elizondo's claimed authority and role within AATIP - documented in DoD FOIA release 18-F-0324",
+      "The letter was made public unilaterally by Elizondo - not through government declassification or FOIA",
       "The 'overwhelming evidence' claim is a personal characterization in a resignation letter, not an official intelligence community assessment",
       "Elizondo's advocacy posture after joining TTSA (a for-profit entity) means his public statements, including the letter's framing, exist within a commercial context"
     ],
@@ -1015,7 +1015,7 @@
   },
   {
     "id": "project-sign-estimate-1948",
-    "name": "Project SIGN — Estimate of the Situation",
+    "name": "Project SIGN - Estimate of the Situation",
     "date": "1948",
     "issuing_authority": "Air Technical Intelligence Center (ATIC), Project SIGN team",
     "document_type": "intelligence-assessment",
@@ -1630,7 +1630,7 @@
     "id": "socorro-blue-book-investigation-1964",
     "name": "Socorro / Zamora Blue Book Investigation Report",
     "date": "May 1964",
-    "issuing_authority": "U.S. Air Force, Project Blue Book — Lt. Col. Hector Quintanilla, Director; scientific consultant J. Allen Hynek",
+    "issuing_authority": "U.S. Air Force, Project Blue Book - Lt. Col. Hector Quintanilla, Director; scientific consultant J. Allen Hynek",
     "document_type": "investigation-report",
     "authenticity_status": "declassified-foia",
     "page_count": 76,
@@ -1723,7 +1723,7 @@
     "id": "baass-aawsap-contract-2008",
     "name": "DIA-BAASS AAWSAP Contract (HHM402-08-C-0072)",
     "date": "September 2008",
-    "issuing_authority": "Defense Intelligence Agency (DIA) — awarded to Bigelow Aerospace Advanced Space Studies LLC (BAASS)",
+    "issuing_authority": "Defense Intelligence Agency (DIA) - awarded to Bigelow Aerospace Advanced Space Studies LLC (BAASS)",
     "document_type": "government-contract",
     "authenticity_status": "confirmed-authentic",
     "page_count": 0,
@@ -1814,18 +1814,18 @@
     "id": "cometa-report-1999",
     "name": "COMETA Report: UFOs and Defense (1999)",
     "date": "July 1999",
-    "issuing_authority": "COMETA (Comite d'Etudes Approfondies) — France",
+    "issuing_authority": "COMETA (Comite d'Etudes Approfondies) - France",
     "document_type": "government-assessment",
     "authenticity_status": "confirmed-authentic",
     "page_count": 90,
     "public_url": "https://www.ufoevidence.org/documents/doc830.htm",
     "summary": "A comprehensive French study on UAP titled 'Les OVNIs et la Defense: A quoi doit-on se preparer?' (UFOs and Defense: What Should We Prepare For?), produced by approximately 13 senior retired French military officers, scientists, and intelligence officials. The report analyzed over 500 UAP cases drawn from French GEPAN/SEPRA records and international sources, concluding that a small but significant percentage remained genuinely unexplained and that the extraterrestrial hypothesis warranted serious scientific consideration.",
-    "significance": "One of the most substantive government-adjacent UAP assessments produced outside the United States. Its authorship — including generals, a former ambassador, senior DGA officials, and military doctors — gave it institutional credibility comparable to classified US studies. COMETA's willingness to directly recommend policy action and examine the extraterrestrial hypothesis distinguished it from contemporaneous Western government positions, and it remains the benchmark for European institutional UAP analysis.",
+    "significance": "One of the most substantive government-adjacent UAP assessments produced outside the United States. Its authorship - including generals, a former ambassador, senior DGA officials, and military doctors - gave it institutional credibility comparable to classified US studies. COMETA's willingness to directly recommend policy action and examine the extraterrestrial hypothesis distinguished it from contemporaneous Western government positions, and it remains the benchmark for European institutional UAP analysis.",
     "key_findings": [
       "Analyzed approximately 500 UAP cases from French GEPAN/SEPRA records and international databases, finding roughly 5% completely unexplained after rigorous investigation",
       "Concluded that a subset of well-documented cases involved structured craft exhibiting flight performance beyond any known human aerospace technology",
       "Formally recommended the French government designate UAP as a defense and scientific priority with dedicated institutional resources and parliamentary oversight",
-      "Proposed an international framework — particularly involving the United States — for sharing classified UAP data and coordinating investigation at the senior government level",
+      "Proposed an international framework - particularly involving the United States - for sharing classified UAP data and coordinating investigation at the senior government level",
       "Critically evaluated the extraterrestrial hypothesis and concluded it was the most scientifically coherent explanation for the irreducible core of unexplained cases",
       "Extensively cited GEPAN/SEPRA data accumulated over more than two decades of official French government investigation, validating France's systematic institutional approach",
       "Identified concrete national security implications including uncontrolled airspace incursions, potential adversary intelligence collection, and the absence of military engagement protocols for UAP",
@@ -1850,7 +1850,7 @@
       }
     ],
     "limitations": [
-      "Produced by retired officials without formal government commission — lacks the institutional mandate and classified access authority of an officially directed state report",
+      "Produced by retired officials without formal government commission - lacks the institutional mandate and classified access authority of an officially directed state report",
       "No classified appendices from the GEPAN/SEPRA archive have been publicly released; the full evidentiary basis cited in the report remains inaccessible to independent researchers",
       "Initial publication through VSD, a French popular weekly, affected its reception in official and scientific circles despite the authors' credentials",
       "The extraterrestrial hypothesis section, while seriously argued, remains scientifically unverifiable without physical evidence independent of the case record",
@@ -1892,7 +1892,7 @@
     "id": "crs-uap-report-2022",
     "name": "CRS Report: Unidentified Aerial Phenomena (2022)",
     "date": "2021-2022",
-    "issuing_authority": "Congressional Research Service — Kelley M. Sayler, Analyst in Advanced Technology and Global Security",
+    "issuing_authority": "Congressional Research Service - Kelley M. Sayler, Analyst in Advanced Technology and Global Security",
     "document_type": "government-report",
     "authenticity_status": "confirmed-authentic",
     "page_count": 26,
@@ -1918,7 +1918,7 @@
       },
       {
         "id": "sean-kirkpatrick",
-        "role": "First Director of AARO — the permanent UAP office whose creation was the primary legislative recommendation analyzed in this report",
+        "role": "First Director of AARO - the permanent UAP office whose creation was the primary legislative recommendation analyzed in this report",
         "note": "The report's core legislative recommendation for a permanent, cross-domain UAP office with reporting authority was realized with AARO's creation under NDAA FY2023; Kirkpatrick was AARO's founding director."
       },
       {
@@ -1945,7 +1945,7 @@
       {
         "id": "crs-legislative-updates",
         "label": "Updated Through Legislative Cycle",
-        "description": "Report updated multiple times through 2022 as NDAA UAP provisions were drafted, debated, and enacted — tracking the creation of AARO and new congressional reporting requirements.",
+        "description": "Report updated multiple times through 2022 as NDAA UAP provisions were drafted, debated, and enacted - tracking the creation of AARO and new congressional reporting requirements.",
         "date": "2021-2022",
         "type": "transfer"
       },
@@ -1962,12 +1962,12 @@
     "id": "rockefeller-briefing-document-1995",
     "name": "UFOs Briefing Document: The Best Available Evidence (1995)",
     "date": "December 1995",
-    "issuing_authority": "Laurance S. Rockefeller — Rockefeller UFO Disclosure Initiative",
+    "issuing_authority": "Laurance S. Rockefeller - Rockefeller UFO Disclosure Initiative",
     "document_type": "private-briefing",
     "authenticity_status": "confirmed-authentic",
     "page_count": 169,
     "public_url": "https://archive.org/details/UFOsBriefingDocumentTheBestAvailableEvidence",
-    "summary": "A privately commissioned briefing document prepared for philanthropist Laurance S. Rockefeller and presented to the Clinton White House through Science Advisor John H. Gibbons. Written by aviation journalist Don Berliner and researcher Marie Galbraith with scientific consultation from Stanton Friedman, the document presented seven high-quality UAP cases and argued for government disclosure of classified UAP records. It represented the culmination of the Rockefeller Initiative — a multi-year private effort to introduce the UAP disclosure issue into the Clinton administration.",
+    "summary": "A privately commissioned briefing document prepared for philanthropist Laurance S. Rockefeller and presented to the Clinton White House through Science Advisor John H. Gibbons. Written by aviation journalist Don Berliner and researcher Marie Galbraith with scientific consultation from Stanton Friedman, the document presented seven high-quality UAP cases and argued for government disclosure of classified UAP records. It represented the culmination of the Rockefeller Initiative - a multi-year private effort to introduce the UAP disclosure issue into the Clinton administration.",
     "significance": "The Rockefeller Briefing Document is the most serious private-sector attempt to bring UAP evidence to a sitting US president. Its delivery to the White House Science Advisor through the personal access of a Rockefeller family member demonstrates the breadth of serious interest in UAP among elite circles, and it established the disclosure-advocacy framing that later researchers and insiders would build upon. The document preceded the Clinton administration's limited FOIA-era UAP transparency efforts and informed public disclosure campaigns of the late 1990s and 2000s.",
     "key_findings": [
       "Presented seven high-quality UAP cases spanning 1947-1994, including the 1947 Roswell crash, the 1964 Socorro / Zamora landing, and multiple military aviation encounters with physical trace evidence",
@@ -1977,7 +1977,7 @@
       "Drew extensively on NICAP and MUFON case archives to establish evidentiary chains for each presented incident, citing decades of civilian UAP research infrastructure",
       "Reportedly prompted a private meeting between Laurance Rockefeller and President Clinton at Rockefeller's Jackson Hole ranch in August 1995; Science Advisor Gibbons confirmed receipt of the document",
       "Included technical review and scientific commentary by Stanton Friedman, the most prominent public advocate for the Roswell crash retrieval hypothesis at the time of publication",
-      "Represented the primary deliverable of the Rockefeller Initiative — a multi-year private campaign beginning in 1993 to brief senior Clinton administration officials on UAP evidence and advocate for disclosure"
+      "Represented the primary deliverable of the Rockefeller Initiative - a multi-year private campaign beginning in 1993 to brief senior Clinton administration officials on UAP evidence and advocate for disclosure"
     ],
     "provenance": "Commissioned in 1993-1994 by Laurance S. Rockefeller (1910-2004), a philanthropist and fifth-generation Rockefeller family member with direct personal access to the Clinton White House. Research and writing was conducted by aviation journalist Don Berliner and researcher Marie Galbraith, with scientific consultation from Stanton Friedman. The 169-page document was completed in late 1995 and formally presented to John H. Gibbons, Assistant to the President for Science and Technology, in December 1995. The Rockefeller Initiative operated from approximately 1993 to 1996, involving direct correspondence with President Clinton, a meeting with Clinton's Science Advisor, and distribution to multiple senior officials. The document was subsequently digitized and made available through UAP research archives.",
     "insider_connections": [
@@ -1998,7 +1998,7 @@
       }
     ],
     "limitations": [
-      "Privately commissioned advocacy document — its case selection and framing reflect the pro-disclosure goals of its funder rather than neutral scientific inquiry or official investigation",
+      "Privately commissioned advocacy document - its case selection and framing reflect the pro-disclosure goals of its funder rather than neutral scientific inquiry or official investigation",
       "No confirmed White House policy action, declassification order, or formal government response resulted from the document's delivery to the Clinton administration",
       "Stanton Friedman's role as scientific consultant introduces a perspective strongly predisposed toward the extraterrestrial hypothesis, particularly regarding the Roswell case section",
       "Several cases presented in the briefing rely on secondary or tertiary source accounts rather than primary investigation records or primary-source official documentation",

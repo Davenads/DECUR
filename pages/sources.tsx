@@ -2987,6 +2987,86 @@ const Sources: NextPage = () => {
             description="First book-length account of the Marcel family's direct Roswell experience, incorporating both Jesse Marcel Sr.'s intelligence record and Marcel Jr.'s first-person childhood testimony about handling anomalous debris from the Foster Ranch crash site in July 1947."
             notes="Used for: Col. Jesse Marcel Jr."
           />
+
+          {/* AARO Historical Record Report Volume 2 */}
+          <SourceCard
+            name="AARO Historical Record Report Volume 2 (2024)"
+            url="https://media.defense.gov/2024/Jul/31/2003513952/-1/-1/0/AARO-HISTORICAL-RECORD-REPORT-VOL-2.PDF"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="The second volume of AARO's mandated historical record report covering additional US government UAP program history. Produced by the All-domain Anomaly Resolution Office under the FY2023 NDAA mandate, released July 2024."
+            notes="Used for: AARO Historical Record Report Volume 2."
+          />
+
+          {/* Robertson Panel 1953 */}
+          <SourceCard
+            name="Robertson Panel Report: Scientific Advisory Panel on Unidentified Flying Objects (1953)"
+            url="https://www.cia.gov/readingroom/docs/DOC_0000015345.pdf"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Declassified CIA report of the January 1953 Robertson Panel, convened by the CIA's Office of Scientific Intelligence. Recommended debunking and public education to reduce UAP reporting, and monitoring of civilian UAP organizations. The most explicit official document linking government policy to active UAP suppression."
+            notes="Used for: Robertson Panel Report (1953)."
+          />
+
+          {/* Project Blue Book Special Report No. 14 */}
+          <SourceCard
+            name="Project Blue Book Special Report No. 14 - Analysis of Reports of Unidentified Aerial Objects (1955)"
+            url="https://www.theblackvault.com/documentarchive/project-blue-book-special-report-no-14/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="The Battelle Memorial Institute's comprehensive statistical analysis of 2,199 USAF UAP reports (1947-1952), conducted under Project Blue Book contract. Found 21.5% of high-quality cases remained Unknown and that unknowns were statistically distinct from knowns - results withheld from the public by Secretary of the Air Force Donald Quarles."
+            notes="Used for: Project Blue Book Special Report No. 14."
+          />
+
+          {/* Condon Report 1969 */}
+          <SourceCard
+            name="Condon Report: Scientific Study of Unidentified Flying Objects (1969)"
+            url="https://files.ncas.org/condon/text/contents.htm"
+            type="Academic Study"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="The full text of the 1969 University of Colorado UAP study commissioned by the USAF under Dr. Edward Condon. NCAS hosts the complete digitized report including individual case analyses where approximately 30% of investigated cases were marked unexplained - a finding contradicted by Condon's own summary conclusions."
+            notes="Used for: Condon Report (1969)."
+          />
+
+          {/* Elizondo Resignation Letter 2017 */}
+          <SourceCard
+            name="Luis Elizondo Resignation Letter to Secretary Mattis (October 4, 2017)"
+            url="https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="One-page letter submitted by Luis Elizondo to Secretary of Defense James Mattis on October 4, 2017, documenting his concerns about institutional resistance to UAP research and the reasons for his resignation as AATIP director. Content characterized in The Debrief, New York Times (Dec 16, 2017), and Elizondo's subsequent congressional testimony."
+            notes="Used for: Elizondo Resignation Letter (2017)."
+          />
+
+          {/* NDAA FY2023 UAP Provisions */}
+          <SourceCard
+            name="NDAA FY2023 - UAP Provisions (Sections 1671-1683)"
+            url="https://www.congress.gov/bill/117th-congress/house-bill/7776/text"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Full text of the National Defense Authorization Act for Fiscal Year 2023 as signed December 23, 2022. Contains UAP provisions including formal establishment of AARO (Section 1683), mandatory government-wide UAP reporting, whistleblower protections, and the historical record mandate that produced the AARO Historical Record Reports."
+            notes="Used for: NDAA FY2023 UAP Provisions."
+          />
+
+          {/* Schulgen Memo 1947 */}
+          <SourceCard
+            name="Schulgen Memo (October 28, 1947) - National Archives"
+            url="https://www.archives.gov/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Classified memo from Brig. Gen. George Schulgen to the FBI requesting assistance in collecting field reports on flying disc incidents. Held in National Archives Record Group 341. Demonstrates early military-FBI cooperation on UAP intelligence collection and establishes that senior Air Force officials were treating the phenomenon as a genuine intelligence matter within months of Kenneth Arnold's sighting."
+            notes="Used for: Schulgen Memo (1947)."
+          />
+
+          {/* Project SIGN Estimate of the Situation 1948 */}
+          <SourceCard
+            name="Project SIGN - Estimate of the Situation (1948)"
+            url="https://www.archives.gov/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Classified TOP SECRET assessment produced by Project SIGN analysts in late 1948, concluding that flying saucers were most likely of extraterrestrial origin. Gen. Hoyt Vandenberg, Air Force Chief of Staff, rejected and ordered the report destroyed; surviving copies were referenced by Project Blue Book's Capt. Edward Ruppelt in his 1956 memoir. The original document is presumed destroyed; its existence and contents are documented through secondhand accounts."
+            notes="Used for: Project SIGN - Estimate of the Situation (1948)."
+          />
         </section>
 
         {/* Private Defense Contractors */}
