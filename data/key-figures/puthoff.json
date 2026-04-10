@@ -331,7 +331,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "eric-davis",
       "node_label": "Eric Davis",
       "relationship": "Davis later joined EarthTech and co-authored AAWSAP DIRDs with Puthoff; the STARGATE-era theoretical framework directly informed their exotic propulsion research",
@@ -347,7 +347,7 @@
     },
     {
       "event_index": 8,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "robert-bigelow",
       "node_label": "Robert Bigelow",
       "relationship": "AAWSAP research was contracted through Bigelow BAASS; a long-term research relationship spanning NIDS and AAWSAP programs",
@@ -363,7 +363,7 @@
     },
     {
       "event_index": 9,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "luis-elizondo",
       "node_label": "Luis Elizondo",
       "relationship": "TTSA co-founder; Elizondo provided the operational UAP intelligence perspective while Puthoff provided the theoretical physics framework",
@@ -371,7 +371,7 @@
     },
     {
       "event_index": 9,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "garry-nolan",
       "node_label": "Garry Nolan",
       "relationship": "Puthoff is cited by Nolan as a key figure in the insider physics network; their biological and physics research approaches are mutually reinforcing",

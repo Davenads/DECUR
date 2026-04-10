@@ -270,7 +270,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Longtime media partner and NIDS collaborator; Knapp introduced Bigelow to Senator Reid, enabling the AAWSAP appropriation",
@@ -278,15 +278,15 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "jacques-vallee",
       "node_label": "Jacques Vallee",
       "relationship": "Vallee served as scientific advisor to NIDS; his rigorous research framework helped establish NIDS's scientific credibility",
-      "connection_type": "professional"
+      "connection_type": "collaboration"
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "harry-reid",
       "node_label": "Harry Reid",
       "relationship": "Reid directed the $22M AAWSAP contract to BAASS; the Reid-Bigelow relationship is the central axis of the modern government UAP research program",
@@ -294,7 +294,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Puthoff was a lead researcher for BAASS under the AAWSAP contract, bringing EarthTech's physics expertise to the program",
@@ -302,7 +302,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "eric-davis",
       "node_label": "Eric Davis",
       "relationship": "Davis conducted AAWSAP field investigations and produced classified DIRDs for BAASS on warp drives and exotic propulsion",

@@ -213,7 +213,7 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Connected with Grusch through the UAP research community in 2022; Grusch network brought Nell into the active disclosure circle",
@@ -221,7 +221,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "garry-nolan",
       "node_label": "Garry Nolan",
       "relationship": "Connected through UAP research community in 2022; later co-founded Sol Foundation with Nell at Stanford University",
@@ -229,7 +229,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-fravor",
       "node_label": "David Fravor",
       "relationship": "Co-testified at July 26, 2023 House hearing; Fravor encounter testimony provided operational grounding for Nell program corroborations",
@@ -237,7 +237,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ryan-graves",
       "node_label": "Ryan Graves",
       "relationship": "Co-testified at July 2023 hearing; both affiliated with the Sol Foundation UAP research and advocacy ecosystem",

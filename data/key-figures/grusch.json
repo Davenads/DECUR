@@ -271,7 +271,7 @@
     },
     {
       "id": "luis-elizondo",
-      "name": "Lue Elizondo",
+      "name": "Luis Elizondo",
       "role": "Former Director, Advanced Aerospace Threat Identification Program (AATIP), Pentagon",
       "relationship": "Part of the broader insider community Grusch is associated with; both independently allege DoD concealment of UAP programs; Elizondo's 2017 disclosures preceded and helped enable Grusch's own"
     }
@@ -398,7 +398,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "leslie-kean",
       "node_label": "Leslie Kean",
       "relationship": "Co-authored the June 5, 2023 Debrief article that first named Grusch publicly, lending immediate journalistic credibility",
@@ -414,7 +414,7 @@
     },
     {
       "event_index": 10,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ross-coulthart",
       "node_label": "Ross Coulthart",
       "relationship": "Conducted first televised interview on NewsNation in June 2023; longtime UAP investigative reporter who contextualized the disclosures",
@@ -422,7 +422,7 @@
     },
     {
       "event_index": 11,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "chuck-schumer",
       "node_label": "Chuck Schumer",
       "relationship": "Introduced the UAP Disclosure Act as NDAA amendment in July 2023 directly in response to the disclosures",
@@ -430,7 +430,7 @@
     },
     {
       "event_index": 12,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ryan-graves",
       "node_label": "Ryan Graves",
       "relationship": "Co-testified at July 26, 2023 House Oversight hearing; Graves encounter data grounded the broader program-level disclosures",
@@ -438,7 +438,7 @@
     },
     {
       "event_index": 12,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-fravor",
       "node_label": "David Fravor",
       "relationship": "Co-testified at July 26, 2023 hearing; Fravor Tic Tac account provided the direct experiential anchor for the session",
@@ -446,7 +446,7 @@
     },
     {
       "event_index": 12,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "karl-nell",
       "node_label": "Karl Nell",
       "relationship": "Nell corroborated existence of classified UAP programs at the same July 2023 hearing, lending institutional military weight",

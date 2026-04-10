@@ -58,15 +58,15 @@
         "event": "Co-authors paper in Progress in Aerospace Sciences: 'Improved Instrumental Methods for the Remote Detection and Measurement of Unidentified Aerial Phenomena' - the first peer-reviewed academic paper in a major aerospace journal to address UAP measurement methodology"
       },
       {
-        "year": "October 2023",
+        "year": "Oct 2023",
         "event": "Co-founds Sol Foundation with Karl Nell, David Grusch, and Dr. Peter Skafish"
       },
       {
-        "year": "November 2023",
+        "year": "Nov 2023",
         "event": "Sol Foundation inaugural symposium at Stanford University - first major academic conference on UAP, bringing together scientists, former intelligence officials, and academics"
       },
       {
-        "year": "February 2025",
+        "year": "Feb 2025",
         "event": "Posts arXiv preprint: 'The New Science of Unidentified Aerospace-Undersea Phenomena' - formal academic framework for UAP as a scientific research object"
       },
       {
@@ -282,7 +282,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Puthoff was part of the insider physics network that connected Nolan to CIA-adjacent UAP research; both are cited as core figures in the technical disclosure community",
@@ -290,7 +290,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "jacques-vallee",
       "node_label": "Jacques Vallee",
       "relationship": "Co-authored the 2022 Progress in Aerospace Sciences paper on UAP detection methodology - first peer-reviewed UAP methods paper in a major aerospace journal",
@@ -306,7 +306,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Co-founded Sol Foundation; Nolan Stanford affiliation and scientific credibility provide academic legitimacy to the organization Grusch helped launch",
@@ -314,7 +314,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "karl-nell",
       "node_label": "Karl Nell",
       "relationship": "Co-founded Sol Foundation together; Nell Army intelligence background and Nolan scientific credibility are complementary institutional anchors for the organization",

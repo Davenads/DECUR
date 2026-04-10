@@ -219,7 +219,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "alex-dietrich",
       "node_label": "Alex Dietrich",
       "relationship": "Dietrich piloted the second F/A-18 during the Tic Tac encounter; first public corroborating account on 60 Minutes in 2021",
@@ -235,7 +235,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "luis-elizondo",
       "node_label": "Luis Elizondo",
       "relationship": "Elizondo released the FLIR1 Tic Tac video through AATIP and TTSA in 2017; Fravor encounter was the primary AATIP case",
@@ -243,7 +243,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Co-testified at July 26, 2023 House hearing; Fravor direct encounter provided experiential grounding for Grusch program disclosures",
@@ -251,7 +251,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ryan-graves",
       "node_label": "Ryan Graves",
       "relationship": "Co-testified at July 2023 hearing; both military aviator witnesses whose combined accounts anchored the congressional session",
