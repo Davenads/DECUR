@@ -159,7 +159,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "gary-mckinnon",
       "node_label": "Gary McKinnon",
       "relationship": "McKinnon's 2001 intrusions followed the same pattern as Bevan's 1996 case; both spoke publicly after McKinnon's 2002 arrest.",
@@ -175,7 +175,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "nick-pope",
       "node_label": "Nick Pope",
       "relationship": "Pope commented publicly on Bevan's case as part of his UK MoD UAP documentation work during the same period.",

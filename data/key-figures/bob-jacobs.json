@@ -141,7 +141,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "robert-salas",
       "node_label": "Robert Salas",
       "relationship": "Salas' 1967 Malmstrom missile shutdown and Jacobs' 1964 Big Sur film are the two landmark UAP-nuclear weapons interface cases; both have testified for decades with consistent accounts.",
@@ -149,7 +149,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven Greer",
       "relationship": "Greer recruited Jacobs as a 2001 Disclosure Project witness; Big Sur was among the most technically specific nuclear-UAP cases presented.",
@@ -157,7 +157,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "robert-hastings",
       "node_label": "Robert Hastings",
       "relationship": "Hastings featured the Big Sur case in 'UFOs and Nukes' (2008) as a cornerstone example of UAP activity at nuclear weapons facilities.",

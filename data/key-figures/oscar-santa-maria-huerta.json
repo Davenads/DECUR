@@ -140,7 +140,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "leslie-kean",
       "node_label": "Leslie Kean",
       "relationship": "Kean's 2010 book provided the most widely read English-language account of the 1980 incident, establishing it as a benchmark military UAP case.",
@@ -156,7 +156,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ryan-graves",
       "node_label": "Ryan Graves",
       "relationship": "Both represent trained military pilots with documented, multi-witness UAP encounters; Graves has cited international cases like Huerta's as evidence of a global phenomenon.",

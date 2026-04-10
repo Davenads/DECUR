@@ -141,7 +141,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "donna-hare",
       "node_label": "Donna Hare",
       "relationship": "Hare and Sherman represent the same category of mid-level government insiders claiming compartmentalized UAP knowledge from the same era. Both published or testified in the late 1990s disclosure window and are frequently cited together in the context of institutional insider testimony.",
@@ -149,7 +149,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "clifford-stone",
       "node_label": "Clifford Stone",
       "relationship": "Stone's Army crash retrieval claims and Sherman's NSA communication program claims represent parallel compartmentalized program narratives from the same era. Both were US military enlisted personnel who claimed extraordinary UAP-adjacent assignments within the institutional structure.",
@@ -157,7 +157,7 @@
     },
     {
       "event_index": 8,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven M. Greer",
       "relationship": "Sherman's 1997 book circulated in the Disclosure Project community. Greer's framework of compartmentalized programs and insider testimony provided the institutional context in which Sherman's account was most widely received and cited.",

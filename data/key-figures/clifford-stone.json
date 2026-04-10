@@ -176,7 +176,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven Greer",
       "relationship": "Greer recruited Stone as a principal Disclosure Project witness following Stone's successful FOIA battle over Moon Dust and Blue Fly.",
@@ -184,7 +184,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "robert-salas",
       "node_label": "Robert Salas",
       "relationship": "Both testified at the 2001 Disclosure Project as military veterans with direct UAP experience claims; Salas co-authored Stone's 'Eyes Only' book.",

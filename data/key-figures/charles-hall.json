@@ -215,7 +215,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "bob-lazar",
       "node_label": "Bob Lazar",
       "relationship": "Both describe firsthand claimed contact with classified ET-related activities in the Nevada desert - Lazar at S-4 near Area 51, Hall at the Indian Springs/Nellis ranges. Both allege government-ET cooperation in remote Nevada desert facilities within the same broad complex of restricted military zones.",
@@ -223,7 +223,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "charles-halt",
       "node_label": "Lt. Col. Charles Halt",
       "relationship": "Halt's Rendlesham Forest encounter is the closest structural parallel - both are USAF personnel with documented service records who claim sustained firsthand encounters with anomalous phenomena on active military installations. Halt's case has physical corroboration; Hall's does not. Both were transferred after the events.",
@@ -231,7 +231,7 @@
     },
     {
       "event_index": 9,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven Greer",
       "relationship": "Hall's 2003 public emergence coincided with the post-Disclosure-Project wave of insider testimony. While Hall did not formally participate in the Disclosure Project, his case was absorbed into the same community. Greer's 2001 project created the institutional context and audience that made Hall's books viable.",
@@ -239,7 +239,7 @@
     },
     {
       "event_index": 10,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "donna-hare",
       "node_label": "Donna Hare",
       "relationship": "Both emerged through Michael Salla and Paola Harris's networks in 2003-2004 as 'new' insider witnesses. Both describe classified government awareness of non-human entities or craft, both lack physical corroboration, and both were introduced to the UAP research community through the same exopolitics researcher circuit.",

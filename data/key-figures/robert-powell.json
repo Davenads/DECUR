@@ -168,7 +168,7 @@
   "career_connections": [
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "kevin-knuth",
       "node_label": "Dr. Kevin Knuth",
       "relationship": "Co-authors on 2019 Entropy paper - the most-cited peer-reviewed UAP physics analysis.",

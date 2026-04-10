@@ -122,7 +122,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven Greer",
       "relationship": "Greer organised the 2001 Disclosure Project where Hare gave her only major public testimony.",
@@ -130,7 +130,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "gary-mckinnon",
       "node_label": "Gary McKinnon",
       "relationship": "McKinnon independently claimed to have seen a UAP photograph on a NASA JSC Building 8 machine - the same building where Hare witnessed the photo airbrushing - decades apart.",
@@ -138,7 +138,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "edgar-mitchell",
       "node_label": "Dr. Edgar Mitchell",
       "relationship": "Both provide insider NASA perspectives on UAP from different vantage points: Mitchell as an Apollo astronaut, Hare as a photo lab contractor.",

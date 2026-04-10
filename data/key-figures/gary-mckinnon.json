@@ -181,7 +181,7 @@
   "career_connections": [
     {
       "event_index": 0,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven Greer",
       "relationship": "Disclosure Project 2001 press conference was McKinnon's stated direct inspiration for beginning the intrusions.",
@@ -189,7 +189,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "nick-pope",
       "node_label": "Nick Pope",
       "relationship": "Pope provided public commentary on McKinnon's UAP evidence claims throughout the extradition battle.",

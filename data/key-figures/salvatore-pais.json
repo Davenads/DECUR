@@ -218,7 +218,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Dr. Hal Puthoff",
       "relationship": "Puthoff was simultaneously working for AATIP/AAWSAP during 2016-2019, developing theoretical frameworks for UAP propulsion physics and inertial mass reduction through electromagnetic fields - precisely the mechanism NAWCAD was testing under Pais. Both operated in overlapping DoD advanced physics circles during the same window.",
@@ -226,7 +226,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "luis-elizondo",
       "node_label": "Luis Elizondo",
       "relationship": "Elizondo resigned from AATIP in October 2017, two months after this event, and went public with the New York Times in December 2017. Both men represent DoD insiders whose extraordinary advanced-technology-related disclosures broke into public view in the same narrow 2017-2018 media cycle, and The War Zone covered both stories concurrently.",
@@ -234,7 +234,7 @@
     },
     {
       "event_index": 10,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "karl-nell",
       "node_label": "Col. Karl Nell",
       "relationship": "Nell is an active-duty Army Colonel who publicly endorsed UAP reality at roughly the same time Pais's testing was shut down and he was quietly transferred out of NAWCAD. Both figures embody the institutional pattern of DoD personnel with extraordinary technology-adjacent claims being moved around the bureaucracy - Nell went public while Pais went silent.",
@@ -242,7 +242,7 @@
     },
     {
       "event_index": 12,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "eric-davis",
       "node_label": "Dr. Eric Davis",
       "relationship": "Davis has publicly described briefing congressional staffers and DoD officials on recovered non-human technology and advanced propulsion physics. His reported involvement in classified advanced aerospace programs places him in the same institutional space Pais was moving into as he transitioned from Navy to Air Force and Space Force.",

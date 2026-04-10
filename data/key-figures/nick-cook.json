@@ -149,7 +149,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Dr. Hal Puthoff",
       "relationship": "Puthoff was Cook's primary physics source for The Hunt for Zero Point, providing the theoretical framework linking zero-point energy engineering to antigravity propulsion. Cook's investigative findings and Puthoff's theoretical work are deeply intertwined in the book's central argument.",
@@ -157,7 +157,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "bob-lazar",
       "node_label": "Bob Lazar",
       "relationship": "Lazar's claims about gravity-wave propulsion at S-4/Area 51 are part of the antigravity program landscape Cook investigates. Cook's research into 1950s electrogravitics contractor programs provides historical context for the theoretical physics Lazar describes.",
@@ -165,7 +165,7 @@
     },
     {
       "event_index": 10,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "robert-bigelow",
       "node_label": "Robert Bigelow",
       "relationship": "Bigelow invited Cook to join the BICS board of directors following his prize-winning essay in the 2020-2021 consciousness competition. This institutional connection links Cook to the primary private funder of UAP research in the modern era.",

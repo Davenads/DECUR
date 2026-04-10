@@ -147,7 +147,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven Greer",
       "relationship": "Greer organised the 2001 Disclosure Project where McCandlish presented the Fluxliner diagram to a national audience.",
@@ -155,7 +155,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "bob-lazar",
       "node_label": "Bob Lazar",
       "relationship": "McCandlish noted convergence between Lazar's S-4 craft descriptions and the ARV architecture Sorensen described; used as partial corroboration of the Fluxliner's plausibility.",
@@ -163,7 +163,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "clifford-stone",
       "node_label": "Clifford Stone",
       "relationship": "Both testified at the 2001 Disclosure Project, providing complementary crash retrieval and operational reverse-engineering accounts.",

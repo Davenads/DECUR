@@ -150,7 +150,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "leslie-kean",
       "node_label": "Leslie Kean",
       "relationship": "Contributed political theory chapter to Kean's 2010 book; complementary approaches to institutional UAP silence.",
@@ -158,7 +158,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "garry-nolan",
       "node_label": "Dr. Garry Nolan",
       "relationship": "Shared Sol Foundation 2024 symposium; complementary scientific and political theory perspectives.",
@@ -166,7 +166,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "jeffrey-kripal",
       "node_label": "Dr. Jeffrey Kripal",
       "relationship": "Colleagues in academic humanities engagement with UAP at Sol Foundation events.",

@@ -135,7 +135,7 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "james-fox",
       "node_label": "James Fox",
       "relationship": "Fox conducted the original Disclosure Project interview and has publicly vouched for Weygandt's credibility as the most outstanding testimony from that project.",
@@ -143,7 +143,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven Greer",
       "relationship": "Greer featured Weygandt as a principal 2001 Disclosure Project witness; the Peru crash site account was among the most specific and visceral testimonies presented.",
@@ -151,7 +151,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "clifford-stone",
       "node_label": "Clifford Stone",
       "relationship": "Both describe crash retrieval scenes where unmarked government teams rapidly displaced regular military units - consistent suppression patterns across different decades.",

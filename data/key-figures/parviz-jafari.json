@@ -152,7 +152,7 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "leslie-kean",
       "node_label": "Leslie Kean",
       "relationship": "Kean organised the 2007 National Press Club event where Jafari gave his first major US public testimony and featured his account in her 2010 book.",
@@ -160,7 +160,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "oscar-santa-maria-huerta",
       "node_label": "Oscar Santa Maria Huerta",
       "relationship": "Both represent benchmark international military pilot UAP cases with weapons system effects; both testified at major US disclosure events.",

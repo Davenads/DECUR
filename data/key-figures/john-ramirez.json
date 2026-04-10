@@ -165,7 +165,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Both describe the same UAP suppression architecture from different agency vantage points; accounts mutually reinforce the structural non-disclosure claim.",
@@ -173,7 +173,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ross-coulthart",
       "node_label": "Ross Coulthart",
       "relationship": "Coulthart reported Ramirez's most significant structural disclosure about Air Force derived-technology programs to a broad public audience.",
