@@ -325,7 +325,7 @@ export interface LazarData {
     clearance: string;
     summary: string;
     early_life: string[];
-    key_events: Array<{ date: string; event: string }>;
+    key_events: Array<{ year: string; event: string }>;
   };
   facility: {
     id: string;
@@ -426,7 +426,7 @@ export interface GruschData {
     summary: string;
     education: string[];
     early_career: string[];
-    key_events: Array<{ date: string; event: string }>;
+    key_events: Array<{ year: string; event: string }>;
   };
   claims: GruschClaim[];
   credibility: {

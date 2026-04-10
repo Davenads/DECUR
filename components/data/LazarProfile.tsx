@@ -91,7 +91,7 @@ const OverviewTab: FC = () => {
           {profile.key_events.map((ev, i) => (
             <div key={i} className="flex gap-3 text-sm">
               <span className="font-mono text-xs text-primary bg-primary/10 px-2 py-1 rounded shrink-0 h-fit whitespace-nowrap">
-                {ev.date}
+                {ev.year}
               </span>
               <span className="text-gray-700 dark:text-gray-300">{ev.event}</span>
             </div>
