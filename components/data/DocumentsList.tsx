@@ -59,13 +59,11 @@ const DocumentsList: FC<DocumentsListProps> = ({ documents }) => {
               key={d.id}
               className="border border-gray-200 dark:border-gray-700 rounded-lg p-5 hover:border-primary hover:shadow-md transition-all"
             >
-              <div className="flex items-start justify-between gap-3 mb-2">
-                <div className="flex items-start gap-2 flex-wrap">
-                  <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h3>
-                </div>
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3 mb-2">
+                <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h3>
                 <Link
                   href={`/documents/${d.id}`}
-                  className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap shrink-0"
+                  className="self-start px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors whitespace-nowrap shrink-0"
                 >
                   View Document
                 </Link>
