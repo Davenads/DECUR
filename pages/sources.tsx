@@ -2335,6 +2335,46 @@ const Sources: NextPage = () => {
             notes="Used for: Varginha Incident 1996."
           />
 
+          {/* Aguadilla Airport FLIR 2013 */}
+          <SourceCard
+            name="SCU Technical Report - Aguadilla Puerto Rico UAP (2015)"
+            url="https://www.explorescu.org"
+            type="Academic Study"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="Scientific Coalition for UAP Studies 47-page technical analysis of the April 25, 2013 Aguadilla FLIR footage captured by a CBP Predator B UAV. Authors include researchers with backgrounds in physics, engineering, and intelligence analysis. Concludes no conventional explanation accounts for the observed behavior. Primary analytical document for the case."
+            notes="Used for: Aguadilla Airport FLIR Incident 2013."
+          />
+
+          {/* Fukushima Daiichi UAP 2011 */}
+          <SourceCard
+            name="UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites - Robert Hastings (2008)"
+            url="https://www.ufohastings.com"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary reference for the nuclear site UAP correlation pattern within which the Fukushima 2011 reports are contextualized. Covers more than 150 documented cases from 1945 onward. The analytical framework is directly applicable to the aerial phenomena documented during the 2011 Fukushima Daiichi crisis."
+            notes="Used for: Fukushima Daiichi UAP Sightings 2011."
+          />
+
+          {/* Exeter, New Hampshire 1965 */}
+          <SourceCard
+            name="Incident at Exeter - John G. Fuller (1966)"
+            url="https://www.amazon.com/dp/0399105026"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Primary investigative account of the September 3, 1965 Exeter, New Hampshire incident; Fuller conducted on-the-ground investigation within weeks of the sighting, interviewing officers Bertrand and Hunt and witness Norman Muscarello (G.P. Putnam's Sons, 1966). The foundational reference for all case documentation."
+            notes="Used for: Exeter, New Hampshire Incident 1965."
+          />
+
+          {/* Loch Raven Dam 1958 */}
+          <SourceCard
+            name="Project Blue Book Case 6148 - Loch Raven Dam"
+            url="https://www.theprojectbluebookarchive.org/"
+            type="Government Report"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official USAF Project Blue Book investigation record for the October 26, 1958 Loch Raven Dam encounter near Baltimore, Maryland. Classified Unidentified. Includes signed witness statements from the two civilian engineer witnesses and USAF investigator notes. Primary source for the case entry."
+            notes="Used for: Loch Raven Dam Encounter 1958."
+          />
+
           {/* USS Theodore Roosevelt 2014-2015 */}
           <SourceCard
             name="DoD Press Release: Navy Videos of Unidentified Aerial Phenomena (April 27, 2020)"

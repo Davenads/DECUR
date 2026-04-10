@@ -5582,7 +5582,7 @@
         "name": "Ubiraja Rodrigues",
         "role": "UAP researcher; co-investigator with Vitorio Pacaccini (1996); revised his position substantially by 2023",
         "type": "civilian",
-        "testimony": "1996 position: We spoke with Fire Department personnel who confirmed involvement before they were told to retract. We have testimony from hospital staff and military contacts. The evidence points to a genuine crash-recovery event. — 2023 retraction (interview with Joao Marcelo, December 2023): We have no evidence that anything extraordinary happened, aside from the testimony of the three young women. All other accounts trickled down from them. The main military witnesses were low-ranking servicemen who would not have had access to information about any broad or secret military operation. I should not have accorded them the reliability I did in 1996."
+        "testimony": "1996 position: We spoke with Fire Department personnel who confirmed involvement before they were told to retract. We have testimony from hospital staff and military contacts. The evidence points to a genuine crash-recovery event. - 2023 retraction (interview with Joao Marcelo, December 2023): We have no evidence that anything extraordinary happened, aside from the testimony of the three young women. All other accounts trickled down from them. The main military witnesses were low-ranking servicemen who would not have had access to information about any broad or secret military operation. I should not have accorded them the reliability I did in 1996."
       }
     ],
     "official_response": {
@@ -6514,7 +6514,8 @@
     ],
     "insider_connections": [
       {
-        "id": "robert-hastings"
+        "id": "robert-hastings",
+        "role": "UAP researcher and author who obtained and published the FOIA documentation for the Minot AFB 1968 incident, including Project Blue Book Case 12548 and B-52 crew records."
       }
     ],
     "overview": {
@@ -6690,6 +6691,7 @@
     "insider_connections": [
       {
         "id": "j-allen-hynek",
+        "role": "Project Blue Book scientific consultant who investigated the Exeter case directly.",
         "note": "Project Blue Book scientific consultant - investigated this case directly and it contributed to the case file classified Unidentified."
       }
     ],
@@ -6857,6 +6859,7 @@
     "insider_connections": [
       {
         "id": "j-allen-hynek",
+        "role": "Project Blue Book scientific consultant who investigated the Loch Raven Dam case directly.",
         "note": "Project Blue Book scientific consultant - investigated this case directly and it contributed to the case file classified Unidentified."
       }
     ],
@@ -7016,6 +7019,7 @@
     "insider_connections": [
       {
         "id": "donald-keyhoe",
+        "role": "NICAP founder and author who extensively documented the Arnold sighting in his books and congressional advocacy.",
         "note": "NICAP founder who extensively documented the Arnold sighting in his books and congressional advocacy; used Arnold as a cornerstone case for the reality of structured unknown craft."
       }
     ],
@@ -7168,14 +7172,17 @@
     "insider_connections": [
       {
         "id": "stanton-friedman",
+        "role": "Nuclear physicist who became involved in the Hill case and co-authored Captured! (2007) with Kathleen Marden.",
         "note": "Nuclear physicist who became involved in the Hill case through Betty Hill correspondence; co-authored Captured! (2007) with Kathleen Marden."
       },
       {
         "id": "budd-hopkins",
+        "role": "Abduction researcher who cited the Hill case as foundational in his investigation methodology.",
         "note": "Abduction researcher whose own investigations were directly influenced by the Hill case framework; referenced the case as foundational in Missing Time (1981)."
       },
       {
         "id": "donald-keyhoe",
+        "role": "NICAP director who received and oversaw the initial NICAP investigation of the Hill report.",
         "note": "NICAP director who was among the first to receive and investigate the Hill report; NICAP conducted the initial investigation."
       }
     ],
@@ -7346,18 +7353,22 @@
     "insider_connections": [
       {
         "id": "travis-walton",
+        "role": "Primary witness and subject of the abduction; author of Fire in the Sky (1993).",
         "note": "Primary CE4 witness and subject of the abduction; wrote the definitive first-person account Fire in the Sky (1993) and has maintained consistent testimony for fifty years."
       },
       {
         "id": "budd-hopkins",
+        "role": "Abduction researcher who analyzed the Walton case as part of his broader CE4 investigation.",
         "note": "Abduction researcher who analyzed the Walton case as part of his broader investigation into CE4 encounters; referenced the case in his foundational texts."
       },
       {
         "id": "stanton-friedman",
+        "role": "Nuclear physicist who investigated the Walton case and analyzed crew polygraph results.",
         "note": "Investigated the Walton case and crew polygraph results; concluded the multi-witness corroboration makes this the most evidentially robust CE4 incident on record."
       },
       {
         "id": "john-mack",
+        "role": "Harvard psychiatrist who reviewed the Walton case as part of his CE4 abduction research.",
         "note": "Harvard psychiatrist who reviewed the Walton case as part of his CE4 research and noted its account was consistent in structure with other abduction narratives he had clinically documented."
       }
     ],
