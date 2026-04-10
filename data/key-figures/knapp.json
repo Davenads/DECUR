@@ -7,9 +7,9 @@
     ],
     "born": "c. 1952",
     "roles": [
-      "Chief Investigative Reporter — KLAS-TV (CBS Las Vegas)",
-      "Radio Host — Coast to Coast AM",
-      "Co-Host — Weaponized Podcast (with Jeremy Corbell)",
+      "Chief Investigative Reporter - KLAS-TV (CBS Las Vegas)",
+      "Radio Host - Coast to Coast AM",
+      "Co-Host - Weaponized Podcast (with Jeremy Corbell)",
       "Author and Documentary Producer"
     ],
     "service_period": "1987-present (UAP journalism)",
@@ -21,8 +21,8 @@
     ],
     "summary": "George Knapp is the most consequential UAP investigative journalist in American history. Working out of Las Vegas since the late 1980s, he has developed and maintained access to sources across government, military, and intelligence communities that no other journalist in the field has matched across a comparable timeframe. His 1989 interviews with Bob Lazar effectively created the modern public mythology around Area 51 and set the stage for every government secrecy debate that followed. His decades-long relationship with Senator Harry Reid and aerospace businessman Robert Bigelow placed him at the center of the informal network that produced AAWSAP, the first formally funded Pentagon UAP research program in decades. He testified before Congress in September 2025, presenting 38 years of documented evidence. His awards include regional and national Edward R. Murrow Awards and multiple Emmy Awards, earned across investigative stories that extend well beyond UAP, establishing that his methodology meets professional journalism standards.",
     "education": [
-      "B.A. — California State Polytechnic University, Pomona",
-      "M.A. Communications — Brigham Young University"
+      "B.A. - California State Polytechnic University, Pomona",
+      "M.A. Communications - Brigham Young University"
     ],
     "key_events": [
       {
@@ -30,8 +30,8 @@
         "event": "Begins investigative journalism career at KLAS-TV in Las Vegas; proximity to Nellis Air Force Base, Area 51, and the Nevada Test Site brings him into contact with government secrecy culture early in his career"
       },
       {
-        "year": "1989-05",
-        "event": "Broadcasts interview with a man identified only as 'Dennis' on KLAS-TV — later revealed as Bob Lazar — who claims to have worked at a classified facility called S-4 near Groom Lake, reverse-engineering extraterrestrial propulsion systems. The broadcast draws international media attention and effectively launches the modern Area 51 mythology."
+        "year": "May 1989",
+        "event": "Broadcasts interview with a man identified only as 'Dennis' on KLAS-TV - later revealed as Bob Lazar - who claims to have worked at a classified facility called S-4 near Groom Lake, reverse-engineering extraterrestrial propulsion systems. The broadcast draws international media attention and effectively launches the modern Area 51 mythology."
       },
       {
         "year": "1989",
@@ -47,18 +47,18 @@
       },
       {
         "year": "2007",
-        "event": "AAWSAP is secretly funded through Reid's Senate appropriation — an outcome Knapp's introductions and advocacy helped make politically possible."
+        "event": "AAWSAP is secretly funded through Reid's Senate appropriation - an outcome Knapp's introductions and advocacy helped make politically possible."
       },
       {
-        "year": "2017-12-16",
+        "year": "Dec 2017",
         "event": "The New York Times publishes the landmark AATIP investigation. Knapp's years of background reporting and source cultivation have helped shape the ecosystem that made the story possible; he is one of the few journalists who already knows the full context when it breaks."
       },
       {
         "year": "2021",
-        "event": "Co-authors 'Skinwalkers at the Pentagon' with James Lacatski and Colm Kelleher — the most detailed insider account of AAWSAP ever published, drawing on Lacatski's direct program management experience."
+        "event": "Co-authors 'Skinwalkers at the Pentagon' with James Lacatski and Colm Kelleher - the most detailed insider account of AAWSAP ever published, drawing on Lacatski's direct program management experience."
       },
       {
-        "year": "2021-05",
+        "year": "May 2021",
         "event": "Interviews former Senator Harry Reid for Mystery Wire; Reid states on record that he believes the U.S. government has recovered craft of non-human origin and that this is being concealed from Congress. One of Reid's most direct public statements before his death."
       },
       {
@@ -66,7 +66,7 @@
         "event": "Launches 'Weaponized' podcast with Jeremy Corbell; the show reports on leaked government documents, classified UAP video footage, and ongoing congressional disclosure battles"
       },
       {
-        "year": "2025-09-09",
+        "year": "Sep 2025",
         "event": "Testifies before the House Oversight and Government Reform Task Force on the Declassification of Federal Secrets. Presents 38 years of documented UAP evidence, discusses systematic retaliation against government witnesses and reporters, and makes the case for mandatory declassification."
       }
     ]
@@ -153,7 +153,7 @@
     {
       "date": "1989-05",
       "type": "television",
-      "title": "Bob Lazar / S-4 Facility — Initial Broadcast",
+      "title": "Bob Lazar / S-4 Facility - Initial Broadcast",
       "outlet": "KLAS-TV (CBS Las Vegas)",
       "interviewer": "George Knapp",
       "notes": "The original broadcast introducing Lazar (initially as 'Dennis') with face obscured; drew immediate international attention. Follow-up broadcasts with Lazar fully identified expanded the impact. The story is widely considered the foundational event of modern Area 51 culture."
@@ -201,31 +201,31 @@
   ],
   "sources": [
     {
-      "title": "Skinwalkers at the Pentagon (2021) — Lacatski, Kelleher, Knapp",
+      "title": "Skinwalkers at the Pentagon (2021) - Lacatski, Kelleher, Knapp",
       "url": "https://www.amazon.com/Skinwalkers-Pentagon-Insiders-Account-Government/dp/B09HR54GQF",
       "type": "book",
       "notes": "Primary source for AAWSAP history; co-authored by Knapp and DIA insider Lacatski"
     },
     {
-      "title": "Hunt for the Skinwalker (2005) — Kelleher and Knapp",
+      "title": "Hunt for the Skinwalker (2005) - Kelleher and Knapp",
       "url": "https://www.amazon.com/Hunt-Skinwalker-Science-Confronts-Unexplained/dp/1416505210",
       "type": "book",
       "notes": "First book-length account of Skinwalker Ranch phenomena; later cited in AAWSAP origin"
     },
     {
-      "title": "Mystery Wire — George Knapp's investigative archive",
+      "title": "Mystery Wire - George Knapp's investigative archive",
       "url": "https://www.mysterywire.com",
       "type": "primary-source",
       "notes": "Knapp's primary publishing outlet for ongoing UAP investigative reporting"
     },
     {
-      "title": "Wikipedia — George Knapp (journalist)",
+      "title": "Wikipedia - George Knapp (journalist)",
       "url": "https://en.wikipedia.org/wiki/George_Knapp_(television_journalist)",
       "type": "reference",
       "notes": "Career overview, award documentation, and factual background"
     },
     {
-      "title": "NewsNation — The UFO Reporter: Inside the files of George Knapp",
+      "title": "NewsNation - The UFO Reporter: Inside the files of George Knapp",
       "url": "https://www.newsnationnow.com/space/ufo/the-ufo-reporter-part-1-the-files-of-george-knapp/",
       "type": "article",
       "notes": "Detailed profile of Knapp's UAP journalism career and investigative methodology"
@@ -238,7 +238,7 @@
       "node_id": "bob-lazar",
       "node_label": "Bob Lazar",
       "relationship": "Broadcast Lazar's first S-4 interview on KLAS-TV, launching the modern Area 51 mythology",
-      "connection_type": "investigation"
+      "connection_type": "investigative"
     },
     {
       "event_index": 3,
@@ -270,7 +270,7 @@
       "node_id": "james-lacatski",
       "node_label": "Dr. James Lacatski",
       "relationship": "Co-authored \"Skinwalkers at the Pentagon\" (2021), drawing on Lacatski's DIA insider perspective",
-      "connection_type": "publication"
+      "connection_type": "professional"
     },
     {
       "event_index": 9,
@@ -278,7 +278,7 @@
       "node_id": "jeremy-corbell",
       "node_label": "Jeremy Corbell",
       "relationship": "Co-hosts Weaponized podcast; together published leaked UAP imagery and classified documents",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     }
   ]
 }

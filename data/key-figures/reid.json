@@ -21,11 +21,11 @@
       "Senate Appropriations Committee",
       "Advanced Aerospace Weapon System Applications Program (AAWSAP) - architect"
     ],
-    "clearance": "Senate Gang of Eight — access to the most sensitive U.S. intelligence programs by virtue of leadership position",
-    "summary": "Harry Reid served as a U.S. Senator from Nevada for 30 years and as Senate Majority Leader from 2007 to 2015, making him one of the most powerful politicians in American history. His lasting contribution to UAP research is the creation of the modern U.S. government UAP research infrastructure. In 2007, operating largely in secret, he secured a $22 million appropriation for the Advanced Aerospace Weapon System Applications Program (AAWSAP) at the Defense Intelligence Agency — the first formally funded Pentagon UAP research program in decades and the direct institutional predecessor to AATIP, the UAP Task Force, and AARO. Reid was motivated by a combination of national security concern, deep personal curiosity rooted in his Nevada background, and a relationship with aerospace businessman Robert Bigelow that dated back years. He died in December 2021 at age 82 from pancreatic cancer, but had grown increasingly vocal about UAP disclosure in his final years, expressing frustration that the government was withholding more than it should.",
+    "clearance": "Senate Gang of Eight - access to the most sensitive U.S. intelligence programs by virtue of leadership position",
+    "summary": "Harry Reid served as a U.S. Senator from Nevada for 30 years and as Senate Majority Leader from 2007 to 2015, making him one of the most powerful politicians in American history. His lasting contribution to UAP research is the creation of the modern U.S. government UAP research infrastructure. In 2007, operating largely in secret, he secured a $22 million appropriation for the Advanced Aerospace Weapon System Applications Program (AAWSAP) at the Defense Intelligence Agency - the first formally funded Pentagon UAP research program in decades and the direct institutional predecessor to AATIP, the UAP Task Force, and AARO. Reid was motivated by a combination of national security concern, deep personal curiosity rooted in his Nevada background, and a relationship with aerospace businessman Robert Bigelow that dated back years. He died in December 2021 at age 82 from pancreatic cancer, but had grown increasingly vocal about UAP disclosure in his final years, expressing frustration that the government was withholding more than it should.",
     "education": [
-      "B.S. Political Science — Utah State University (1961)",
-      "J.D. — George Washington University Law School (1964)"
+      "B.S. Political Science - Utah State University (1961)",
+      "J.D. - George Washington University Law School (1964)"
     ],
     "early_career": [
       "Practiced law in Henderson, Nevada following law school",
@@ -59,7 +59,7 @@
         "event": "AAWSAP official funding ends; a smaller successor program (AATIP) continues under Luis Elizondo within the Office of the Under Secretary of Defense for Intelligence"
       },
       {
-        "year": "2017-12-16",
+        "year": "Dec 2017",
         "event": "The New York Times publishes its landmark AATIP investigation, co-authored by Leslie Kean, Helene Cooper, and Ralph Blumenthal. Reid is named as the political architect of AATIP funding. He publicly confirms his role and expresses pride in establishing the program."
       },
       {
@@ -67,15 +67,15 @@
         "event": "Reid publishes an op-ed in the Nevada Independent calling for expanded, serious government investigation of UAP. States that 'the sightings were not made by some kook' and that the subject deserves scientific rigor."
       },
       {
-        "year": "2020-2021",
+        "year": "2020",
         "event": "In his final years, Reid grows increasingly vocal. States publicly that the government 'has not handled this well at all' and that there is 'more information out there' than has been released. Advocates for greater congressional oversight."
       },
       {
-        "year": "2021-05",
+        "year": "May 2021",
         "event": "In a May 2021 interview with George Knapp, Reid states he believes the U.S. government had recovered craft of non-human origin and that this was being concealed from Congress. One of his most direct public statements on the subject."
       },
       {
-        "year": "2021-12-28",
+        "year": "Dec 2021",
         "event": "Harry Reid dies at age 82 from pancreatic cancer. Multiple UAP figures including Elizondo, Mellon, and Knapp publicly credit him as the essential political figure behind modern UAP research."
       }
     ]
@@ -84,14 +84,14 @@
     "full_name": "Advanced Aerospace Weapon System Applications Program",
     "established": "2007",
     "funding_amount": "$22 million, secretly earmarked through the defense budget",
-    "funding_mechanism": "Senate Appropriations — obtained through Reid's leadership position and cooperation with Senators Ted Stevens (R-AK) and Daniel Inouye (D-HI)",
+    "funding_mechanism": "Senate Appropriations - obtained through Reid's leadership position and cooperation with Senators Ted Stevens (R-AK) and Daniel Inouye (D-HI)",
     "primary_contractor": "Bigelow Aerospace Advanced Space Studies (BAASS), Las Vegas, NV",
     "dod_program_manager": "Dr. James T. Lacatski, Defense Intelligence Agency Defense Warning Office",
     "classification": "Sensitive Compartmented Information",
     "official_period": "2008-2012",
     "scope": "Investigation of UAP reported by U.S. military personnel; assessment of potential foreign adversary or unknown technological origin; study of anomalous materials; 38 classified Defense Intelligence Reference Documents (DIRDs) on advanced aerospace science",
     "skinwalker_connection": "AAWSAP funded extensive investigation of Skinwalker Ranch in Utah, purchased by Bigelow for paranormal research. Lacatski reportedly witnessed an anomalous event at the ranch that galvanized his commitment to the program.",
-    "successor": "Advanced Aerospace Threat Identification Program (AATIP) — continued informally under Luis Elizondo after 2012; UAP Task Force (UAPTF) established 2020; All-domain Anomaly Resolution Office (AARO) established 2022",
+    "successor": "Advanced Aerospace Threat Identification Program (AATIP) - continued informally under Luis Elizondo after 2012; UAP Task Force (UAPTF) established 2020; All-domain Anomaly Resolution Office (AARO) established 2022",
     "reid_motivation": "Reid later stated that he pursued AAWSAP out of genuine concern that UAP represented an uncharacterized national security threat, combined with personal curiosity rooted in his Nevada roots. He credited George Knapp with convincing him the subject had sufficient credibility to warrant government investment."
   },
   "associated_people": [
@@ -120,13 +120,11 @@
       "relationship": "Reid publicly confirmed Elizondo's involvement in the program and expressed frustration with DoD's attempts to deny or minimize his role. When DoD publicly disputed Elizondo's AATIP director claim in 2017, Reid specifically vouched for Elizondo's credibility."
     },
     {
-      "id": "ted-stevens",
       "name": "Senator Ted Stevens (R-AK)",
       "role": "U.S. Senator, Alaska; Senate Appropriations Committee",
       "relationship": "One of two Senate co-conspirators in the secret AAWSAP earmark. Stevens was the senior Republican on the Appropriations Committee and his cooperation gave the earmark bipartisan cover."
     },
     {
-      "id": "daniel-inouye",
       "name": "Senator Daniel Inouye (D-HI)",
       "role": "U.S. Senator, Hawaii; Senate Appropriations Committee",
       "relationship": "The third senator involved in the AAWSAP appropriation. Inouye was himself a legendary Senate figure and his participation reflected the gravity with which these three senior members approached the decision to fund classified UAP research."
@@ -134,7 +132,7 @@
   ],
   "disclosures": [
     {
-      "date": "2017-12-16",
+      "date": "Dec 2017",
       "type": "article",
       "title": "Glowing Auras and 'Black Money': The Pentagon's Mysterious UFO Program",
       "outlet": "The New York Times",
@@ -150,7 +148,7 @@
       "notes": "Reid's clearest early-retirement statement on UAP, calling for rigorous scientific study and greater government transparency. Framed the issue explicitly as a national security concern, not a fringe topic."
     },
     {
-      "date": "2021-05",
+      "date": "May 2021",
       "type": "television",
       "title": "Interview with George Knapp on UAP",
       "outlet": "Mystery Wire / KLAS-TV",
@@ -160,7 +158,7 @@
     {
       "date": "2021",
       "type": "print",
-      "title": "The New Yorker — 'How the Pentagon Started Taking UFOs Seriously'",
+      "title": "The New Yorker - 'How the Pentagon Started Taking UFOs Seriously'",
       "outlet": "The New Yorker",
       "interviewer": "Gideon Lewis-Kraus",
       "notes": "Lengthy profile tracing AAWSAP's origin through Reid, Bigelow, and Knapp. Contains detailed account of Reid's role and motivations, including his statement that securing AAWSAP funding was 'one of the good things I did in my congressional service.'"
@@ -168,31 +166,31 @@
   ],
   "sources": [
     {
-      "title": "New York Times — 'Glowing Auras and Black Money: The Pentagon's Mysterious UFO Program' (2017)",
+      "title": "New York Times - 'Glowing Auras and Black Money: The Pentagon's Mysterious UFO Program' (2017)",
       "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html",
       "type": "article",
       "notes": "Foundational public disclosure naming Reid as AAWSAP architect"
     },
     {
-      "title": "The New Yorker — 'How the Pentagon Started Taking UFOs Seriously' (2021)",
+      "title": "The New Yorker - 'How the Pentagon Started Taking UFOs Seriously' (2021)",
       "url": "https://www.newyorker.com/magazine/2021/05/10/how-the-pentagon-started-taking-ufos-seriously",
       "type": "article",
       "notes": "Most detailed public account of Reid's role in AAWSAP creation; based on multiple interviews"
     },
     {
-      "title": "Skinwalkers at the Pentagon (2021) — Lacatski, Kelleher, Knapp",
+      "title": "Skinwalkers at the Pentagon (2021) - Lacatski, Kelleher, Knapp",
       "url": "https://www.amazon.com/Skinwalkers-Pentagon-Insiders-Account-Government/dp/B09HR54GQF",
       "type": "book",
       "notes": "DIA-insider account of AAWSAP; confirms Reid's political role from program management perspective"
     },
     {
-      "title": "Nevada Independent — Reid Op-Ed on UAP (2019)",
+      "title": "Nevada Independent - Reid Op-Ed on UAP (2019)",
       "url": "https://thenevadaindependent.com/article/harry-reid-what-we-need-to-learn-about-ufos",
       "type": "article",
       "notes": "Reid's own published statement on UAP and government disclosure"
     },
     {
-      "title": "Wikipedia — Harry Reid",
+      "title": "Wikipedia - Harry Reid",
       "url": "https://en.wikipedia.org/wiki/Harry_Reid",
       "type": "reference",
       "notes": "Biographical reference; includes documented career timeline and AATIP section"

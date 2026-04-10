@@ -45,7 +45,7 @@
         "event": "Publishes 'A.D. After Disclosure: When the Government Finally Reveals the Truth About Alien Contact' (with Bryce Zabel). The first serious attempt to model the social, political, and economic consequences of a formal government UAP disclosure."
       },
       {
-        "year": "2014-present",
+        "year": "2014",
         "event": "Launches the Richard Dolan Show, producing regular analysis of UAP developments from a historical and national security perspective. Becomes a primary media channel for historical context in UAP discussion."
       },
       {
@@ -53,7 +53,7 @@
         "event": "The December 2017 New York Times AATIP story validates key elements of Dolan's archival research on secret government UAP programs. His framing of government institutional deception is cited as foundational context by journalists and researchers covering the story."
       },
       {
-        "year": "2023-present",
+        "year": "2023",
         "event": "Active commentary and analysis of congressional UAP hearings, AARO activities, and the Schumer UAP Disclosure Act from a historical perspective. Frequently testifies at public forums and appears in documentary contexts as a primary historical source."
       }
     ]
@@ -172,7 +172,7 @@
       "node_id": "stanton-friedman",
       "node_label": "Stanton Friedman",
       "relationship": "Both produced rigorous document-based UAP histories; Friedman's nuclear physicist background complemented Dolan's Cold War historian approach",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 1,
@@ -180,7 +180,7 @@
       "node_id": "donald-keyhoe",
       "node_label": "Donald Keyhoe",
       "relationship": "Keyhoe's NICAP documentation of military cases provided foundational archival material that Dolan's research built upon",
-      "connection_type": "mentorship"
+      "connection_type": "professional"
     },
     {
       "event_index": 6,
@@ -188,7 +188,7 @@
       "node_id": "leslie-kean",
       "node_label": "Leslie Kean",
       "relationship": "Kean's journalism drew on Dolan's archival framework; both prioritized named sources and documentary evidence",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 2,
@@ -196,7 +196,7 @@
       "node_id": "jacques-vallee",
       "node_label": "Jacques Vallee",
       "relationship": "Both approached UAP with academic rigor; Dolan's institutional history complements Vallee's scientific investigation",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     }
   ]
 }

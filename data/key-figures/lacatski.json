@@ -33,8 +33,8 @@
         "event": "AAWSAP contract awarded to Bigelow Aerospace Advanced Space Studies (BAASS). Lacatski serves as the DIA program manager, overseeing the research scope which includes 38 Defense Intelligence Reference Documents (DIRDs) on advanced aerospace topics authored by Hal Puthoff, Eric Davis, and others."
       },
       {
-        "year": "2008-2012",
-        "event": "Manages AAWSAP through its official funding period. The program investigates UAP reported by U.S. military personnel, anomalous materials, and exotic physics. Lacatski reportedly visits Skinwalker Ranch during this period and witnesses an anomalous event that intensifies his personal commitment to the research."
+        "year": "2008",
+        "event": "Manages AAWSAP through its official funding period (2008-2012). The program investigates UAP reported by U.S. military personnel, anomalous materials, and exotic physics. Lacatski reportedly visits Skinwalker Ranch during this period and witnesses an anomalous event that intensifies his personal commitment to the research."
       },
       {
         "year": "2012",
@@ -171,7 +171,7 @@
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Puthoff authored multiple DIRDs on traversable wormholes and metric engineering that were commissioned under AAWSAP while Lacatski served as program manager",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -179,7 +179,7 @@
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Co-authored Skinwalkers at the Pentagon (2021) - the most detailed insider account of AAWSAP scope, findings, and institutional history",
-      "connection_type": "publication"
+      "connection_type": "professional"
     }
   ]
 }

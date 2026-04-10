@@ -251,6 +251,134 @@ const Sources: NextPage = () => {
             </p>
           </div>
 
+          {/* Harry Reid */}
+          <SourceCard
+            name="The New Yorker - How the Pentagon Started Taking UFOs Seriously (2021)"
+            url="https://www.newyorker.com/magazine/2021/05/10/how-the-pentagon-started-taking-ufos-seriously"
+            type="News/Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Most detailed published account of Harry Reid's role in creating AAWSAP, based on multiple interviews. Traces the Reid-Bigelow-Knapp triangle and the political mechanics of the $22M appropriation."
+            notes="Used for: Harry Reid."
+          />
+          <SourceCard
+            name="Skinwalkers at the Pentagon - James T. Lacatski, Colm Kelleher, George Knapp (2021)"
+            url="https://www.amazon.com/Skinwalkers-Pentagon-Insiders-Account-Government/dp/B09HR54GQF"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="DIA insider account of AAWSAP by its founding program manager. Confirms Reid's political role and Bigelow's contract from the government management perspective. Primary source for AAWSAP scope and findings."
+            notes="Used for: Harry Reid, James Lacatski."
+          />
+
+          {/* J. Allen Hynek */}
+          <SourceCard
+            name="The UFO Experience: A Scientific Study - J. Allen Hynek (1972)"
+            url="https://www.amazon.com/UFO-Experience-Scientific-Inquiry/dp/0809297965"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Hynek's definitive scientific statement on UAP, introducing the CE1/CE2/CE3 Close Encounter classification system. Primary source for his methodology, case analysis philosophy, and critique of Air Force debunking culture."
+            notes="Used for: J. Allen Hynek."
+          />
+          <SourceCard
+            name="Center for UFO Studies (CUFOS) - J. Allen Hynek Biography"
+            url="https://cufos.org/hynek-biography/j-allen-hynek-biography/"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="CUFOS maintains Hynek's archives and provides the most complete authorized biographical account of his career trajectory from Air Force consultant to scientific advocate."
+            notes="Used for: J. Allen Hynek."
+          />
+
+          {/* George Knapp */}
+          <SourceCard
+            name="Hunt for the Skinwalker - Colm Kelleher and George Knapp (2005)"
+            url="https://www.amazon.com/Hunt-Skinwalker-Science-Confronts-Unexplained/dp/1416505210"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Co-authored account of Bigelow's private Skinwalker Ranch investigation. Read by DIA scientist James Lacatski and cited as a motivating factor in AAWSAP's creation. Primary source for Knapp's research methodology and source network."
+            notes="Used for: George Knapp."
+          />
+          <SourceCard
+            name="Mystery Wire - George Knapp's investigative archive"
+            url="https://www.mysterywire.com"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Knapp's primary publishing outlet for UAP investigative reporting, including the 2021 Harry Reid interview and ongoing source-driven investigations. Comprehensive archive of 35+ years of UAP journalism."
+            notes="Used for: George Knapp."
+          />
+
+          {/* Leslie Kean */}
+          <SourceCard
+            name="UFOs: Generals, Pilots and Government Officials Go on the Record - Leslie Kean (2010)"
+            url="https://www.amazon.com/UFOs-Generals-Pilots-Government-Officials/dp/0307716848"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Kean's foundational book built entirely on named, credentialed sources from seven countries. New York Times bestseller that established her methodology and credibility for the 2017 AATIP investigation. Primary source for her pre-disclosure career and source network."
+            notes="Used for: Leslie Kean."
+          />
+
+          {/* Ryan Graves */}
+          <SourceCard
+            name="New York Times - Navy Pilots Report Encountering UFOs on an Almost Daily Basis (2019)"
+            url="https://www.nytimes.com/2019/05/26/us/politics/ufo-sightings-navy-pilots.html"
+            type="News/Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="First published account naming Graves as a source, documenting the VFA-11 East Coast UAP encounter series (2014-2015). Primary source for the frequency, duration, and observed characteristics of the squadron's encounters."
+            notes="Used for: Ryan Graves."
+          />
+          <SourceCard
+            name="House Oversight Subcommittee UAP Hearing - C-SPAN (July 26, 2023)"
+            url="https://www.c-span.org/video/?529620-1/unidentified-anomalous-phenomena-military-witnesses"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Full video and transcript of Graves's under-oath congressional testimony alongside Grusch and Fravor. Primary source for his description of the VFA-11 encounters and the systemic reporting failure argument."
+            notes="Used for: Ryan Graves."
+          />
+
+          {/* Ross Coulthart */}
+          <SourceCard
+            name="In Plain Sight - Ross Coulthart (2021)"
+            url="https://www.harpercollins.com.au/9781460760826/in-plain-sight/"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Coulthart's investigative account of UAP cover-up based on primary source interviews with intelligence community members, military officers, and government officials. HarperCollins Australia. Became a key reference prior to the 2023 congressional hearings."
+            notes="Used for: Ross Coulthart."
+          />
+          <SourceCard
+            name="NewsNation - David Grusch Exclusive Interview (June 5, 2023)"
+            url="https://www.newsnationnow.com/space/ufo/us-has-retrieved-non-human-craft-ufo-whistleblower-says/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Coulthart's exclusive interview with David Grusch - the first major televised whistleblower disclosure of crash retrieval program allegations. Triggered congressional response and the July 2023 House Oversight hearing."
+            notes="Used for: Ross Coulthart."
+          />
+
+          {/* Richard Dolan */}
+          <SourceCard
+            name="UFOs and the National Security State Vol. 1 - Richard Dolan (2002)"
+            url="https://www.amazon.com/UFOs-National-Security-State-Chronology/dp/1571743170"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Dolan's foundational archival history of U.S. government UAP policy from 1941-1973, extensively footnoted from declassified FOIA materials, CIA records, and government archives. Primary source for his methodology and historical framework."
+            notes="Used for: Richard Dolan."
+          />
+
+          {/* Chuck Schumer */}
+          <SourceCard
+            name="UAP Disclosure Act of 2023 - Senate Amendment Text"
+            url="https://www.congress.gov/bill/118th-congress/senate-bill/2918"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Full legislative text of the original Schumer-Rounds UAP Disclosure Act as introduced. Establishes the nine-member Presidential UAP Records Review Board framework and mandatory declassification provisions. Primary source for Schumer's legislative advocacy."
+            notes="Used for: Chuck Schumer."
+          />
+          <SourceCard
+            name="Schumer Senate Press Release - UAP Disclosure Act Introduction (2023)"
+            url="https://www.schumer.senate.gov/newsroom/press-releases/schumer-rounds-introduce-uap-disclosure-act"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official Senate press release announcing the bill's introduction with Schumer's floor statement. Documents his stated rationale and the bipartisan co-sponsorship with Sen. Mike Rounds (R-SD)."
+            notes="Used for: Chuck Schumer."
+          />
+
           {/* Robert Monroe */}
           <SourceCard
             name="Journeys Out of the Body - Robert Monroe (1971)"
@@ -1075,6 +1203,96 @@ const Sources: NextPage = () => {
             typeColor="bg-purple-100 text-purple-700"
             description="Friedman's comprehensive analysis of the MJ-12 briefing documents. Applied historical document methodology to the authenticity question. Primary source for the MJ-12 sections of his profile and for context on the document dispute."
             notes="Used for: Stanton Friedman."
+          />
+
+          {/* Harry Reid */}
+          <SourceCard
+            name="The New Yorker - How the Pentagon Started Taking UFOs Seriously (2021)"
+            url="https://www.newyorker.com/magazine/2021/05/10/how-the-pentagon-started-taking-ufos-seriously"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Detailed New Yorker profile tracing AAWSAP's origin through Reid, Bigelow, and Knapp. Contains the most thorough public account of Reid's role and motivations, including his statement that securing AAWSAP funding was one of the good things he did in his congressional service."
+            notes="Used for: Harry Reid."
+          />
+
+          {/* J. Allen Hynek */}
+          <SourceCard
+            name="Center for UFO Studies (CUFOS) - J. Allen Hynek Biography"
+            url="https://cufos.org/hynek-biography/j-allen-hynek-biography/"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="CUFOS maintains Hynek's archives and provides the most complete authorized biographical account of his Air Force career, CUFOS founding, and the development of the Close Encounter classification system."
+            notes="Used for: J. Allen Hynek."
+          />
+
+          {/* George Knapp */}
+          <SourceCard
+            name="Skinwalkers at the Pentagon - Lacatski, Kelleher, Knapp (2021)"
+            url="https://www.amazon.com/Skinwalkers-Pentagon-Insiders-Account-Government/dp/B09HR54GQF"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Co-authored by Knapp alongside DIA program manager James Lacatski and NIDS scientist Colm Kelleher. Primary source for Knapp's role in connecting Reid to Bigelow, AAWSAP's inception, and the Skinwalker Ranch investigations."
+            notes="Used for: George Knapp."
+          />
+
+          {/* Leslie Kean */}
+          <SourceCard
+            name="UFOs: Generals, Pilots and Government Officials Go on the Record - Leslie Kean (2010)"
+            url="https://www.amazon.com/UFOs-Generals-Pilots-Government-Officials/dp/0307716848"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Kean's foundational UAP book built entirely on named, credentialed sources. New York Times bestseller that established her methodology and credibility years before the 2017 AATIP disclosure. Primary source for her profile's sourcing standards and pre-2017 source network."
+            notes="Used for: Leslie Kean."
+          />
+
+          {/* Ryan Graves */}
+          <SourceCard
+            name="New York Times - Navy Pilots Report Encountering UFOs on an Almost Daily Basis (2019)"
+            url="https://www.nytimes.com/2019/05/26/us/politics/ufo-sightings-navy-pilots.html"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="First public disclosure in which Ryan Graves is named as a source, describing the VFA-11 East Coast UAP encounters of 2014-2015. Foundational source for the encounter series documentation and Graves's decision to come forward publicly."
+            notes="Used for: Ryan Graves."
+          />
+
+          {/* Ross Coulthart */}
+          <SourceCard
+            name="In Plain Sight: An Investigation into UFOs and Impossible Science - Coulthart (2021)"
+            url="https://www.harpercollins.com.au/9781460760826/in-plain-sight/"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Coulthart's investigative UAP book drawing on primary source interviews with intelligence community members, military officers, and government officials. Became a key reference text before the 2023 congressional hearings. Primary source for his profile and UAP investigative record."
+            notes="Used for: Ross Coulthart."
+          />
+
+          {/* James Lacatski */}
+          <SourceCard
+            name="Skinwalkers at the Pentagon - James T. Lacatski, Colm Kelleher, George Knapp (2021)"
+            url="https://www.amazon.com/Skinwalkers-Pentagon-Insiders-Account-Government/dp/B09HR54GQF"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Written by AAWSAP's founding DIA program manager James T. Lacatski alongside Colm Kelleher and George Knapp. The most detailed public account of AAWSAP's scope, the Skinwalker Ranch investigation, and the program's institutional history. Primary source for the Lacatski profile."
+            notes="Used for: James Lacatski."
+          />
+
+          {/* Richard Dolan */}
+          <SourceCard
+            name="UFOs and the National Security State Vol. 1 - Richard Dolan (2002)"
+            url="https://www.amazon.com/UFOs-National-Security-State-Chronology/dp/1571743170"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Dolan's foundational archival history of U.S. government UAP policy from 1941 to 1973, sourced from declassified FOIA materials and government archives. The most rigorous published account of institutional UAP suppression across administrations. Primary source for the Dolan profile."
+            notes="Used for: Richard Dolan."
+          />
+
+          {/* Chuck Schumer */}
+          <SourceCard
+            name="UAP Disclosure Act of 2023 - Senate Amendment Text"
+            url="https://www.congress.gov/bill/118th-congress/senate-bill/2918"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Full legislative text of the Schumer-Rounds UAP Disclosure Act as introduced, proposing a nine-member Presidential UAP Records Review Board modeled on the JFK Records Act board. Primary source for Schumer's UAP legislative record."
+            notes="Used for: Chuck Schumer."
           />
 
           <SourceCard

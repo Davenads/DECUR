@@ -30,11 +30,11 @@
         "event": "VFA-11 Red Rippers squadron upgrades to the AN/APG-79 AESA radar system, dramatically improving detection resolution. Within months, pilots begin tracking unidentified objects at high altitude over the U.S. East Coast operating area"
       },
       {
-        "year": "2014-2015",
-        "event": "Over a period of months, Graves and fellow VFA-11 pilots report near-daily encounters with UAP in the Navy's Virginia Beach-to-North Carolina operating area. Objects tracked at 30,000 ft, holding station in Category 4 hurricane-force winds, with no visible means of propulsion. One near-collision reported."
+        "year": "2014",
+        "event": "Over a period of months extending into 2015, Graves and fellow VFA-11 pilots report near-daily encounters with UAP in the Navy's Virginia Beach-to-North Carolina operating area. Objects tracked at 30,000 ft, holding station in Category 4 hurricane-force winds, with no visible means of propulsion. One near-collision reported."
       },
       {
-        "year": "2019-06",
+        "year": "Jun 2019",
         "event": "The New York Times publishes 'Navy pilots report encountering UFOs.' Graves is quoted as a named source - a rare step for active-duty military - describing the persistent nature of the encounters and the professional risk of reporting them"
       },
       {
@@ -42,11 +42,11 @@
         "event": "Founds Americans for Safe Aerospace (ASA), a nonprofit designed specifically to serve as a structured reporting and advocacy channel for military and commercial pilots experiencing UAP encounters, eliminating the career stigma that suppresses reporting"
       },
       {
-        "year": "2023-07-26",
+        "year": "Jul 2023",
         "event": "Testifies under oath before the House Oversight Committee subcommittee on UAP alongside David Grusch and David Fravor. Presents the VFA-11 encounters as evidence of a systemic reporting failure and a genuine aviation safety crisis. States he is aware of military pilots who continue to observe UAP regularly"
       },
       {
-        "year": "2023-11",
+        "year": "Nov 2023",
         "event": "Testifies before the Senate Armed Services Committee on UAP. ASA formally presents data showing significant underreporting of aviator UAP encounters due to professional stigma"
       },
       {
@@ -164,7 +164,7 @@
       "node_id": "luis-elizondo",
       "node_label": "Luis Elizondo",
       "relationship": "Elizondo identified military pilot stigma through AATIP; Graves June 2019 NY Times account directly validated this finding",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 4,
@@ -172,7 +172,7 @@
       "node_id": "chris-mellon",
       "node_label": "Christopher Mellon",
       "relationship": "Mellon provided behind-the-scenes Congressional coordination and briefings supporting Americans for Safe Aerospace",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -180,7 +180,7 @@
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Co-testified at July 26, 2023 House Oversight hearing; Graves encounter evidence grounded the program-level disclosures",
-      "connection_type": "testimony"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -188,7 +188,7 @@
       "node_id": "david-fravor",
       "node_label": "David Fravor",
       "relationship": "Co-testified with Fravor at July 2023 hearing; both represent the military aviator class of UAP witnesses",
-      "connection_type": "testimony"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -196,7 +196,7 @@
       "node_id": "karl-nell",
       "node_label": "Karl Nell",
       "relationship": "Nell testified alongside Graves and is affiliated with Sol Foundation, which overlaps with ASA advocacy work",
-      "connection_type": "testimony"
+      "connection_type": "professional"
     }
   ]
 }

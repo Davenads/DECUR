@@ -56,7 +56,7 @@
         "event": "Founds the Romero Institute, a public interest law and policy center named after Archbishop Oscar Romero. Continues UAP disclosure advocacy alongside environmental and social justice work."
       },
       {
-        "year": "2019-present",
+        "year": "2019",
         "event": "Teaches courses on UAP, law, and disclosure at the University of California, Santa Barbara. Publishes and lectures extensively on the legal frameworks needed for formal disclosure and on his 1977 classified file access claim."
       },
       {
@@ -254,7 +254,7 @@
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Both have been central UAP disclosure figures for decades - Sheehan from law and advocacy, Knapp from investigative journalism",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 7,
@@ -262,7 +262,7 @@
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Sheehan served as a legal advisor and constitutional law advocate for whistleblowers including Grusch during the congressional disclosure period",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 9,
