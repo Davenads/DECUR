@@ -20,7 +20,8 @@
     "insider_connections": [
       {
         "id": "david-fravor",
-        "note": "Primary witness - direct visual observation and congressional testimony. Fravor firsthand account is the primary record of the Nimitz encounter."
+        "note": "Primary witness - direct visual observation and congressional testimony. Fravor firsthand account is the primary record of the Nimitz encounter.",
+        "role": "Primary witness - commanding officer, VFA-41; visual and radio contact with the Tic Tac object"
       }
     ],
     "overview": {
@@ -39,9 +40,9 @@
     },
     "evidence": {
       "video_audio": [
-        "FLIR1 video — Pentagon-authenticated FLIR thermal footage captured by a second F/A-18 crew; released by DoD April 27, 2020",
-        "USS Princeton radar data — raw radar tracks showing objects descending from 80,000 ft with no transient phase",
-        "Multiple aviator testimony under oath — congressional hearing July 26, 2023"
+        "FLIR1 video - Pentagon-authenticated FLIR thermal footage captured by a second F/A-18 crew; released by DoD April 27, 2020",
+        "USS Princeton radar data - raw radar tracks showing objects descending from 80,000 ft with no transient phase",
+        "Multiple aviator testimony under oath - congressional hearing July 26, 2023"
       ],
       "documentation": [
         "Pentagon official statement (April 27, 2020) confirming video authenticity and 'unidentified' classification",
@@ -50,8 +51,8 @@
         "Multiple FOIA requests confirming existence of additional classified Nimitz-related documentation"
       ],
       "physical": [
-        "Churning white water at the surface below the hovering object — observed by Fravor but no sample recovered",
-        "No sonic boom recorded despite apparent supersonic acceleration — consistent with all five observable characteristics catalogued by AATIP"
+        "Churning white water at the surface below the hovering object - observed by Fravor but no sample recovered",
+        "No sonic boom recorded despite apparent supersonic acceleration - consistent with all five observable characteristics catalogued by AATIP"
       ]
     },
     "witnesses": [
@@ -114,7 +115,7 @@
         {
           "source": "House Oversight Committee",
           "date": "July 26, 2023",
-          "statement": "CDR David Fravor testified under oath alongside David Grusch and Ryan Graves — the first congressional UAP hearing to include direct witness testimony from a military aviator about a specific encounter."
+          "statement": "CDR David Fravor testified under oath alongside David Grusch and Ryan Graves - the first congressional UAP hearing to include direct witness testimony from a military aviator about a specific encounter."
         },
         {
           "source": "UAP Task Force Preliminary Assessment",
@@ -127,17 +128,17 @@
       "supporting": [
         "Pentagon-authenticated FLIR thermal video confirmed authentic by DoD in April 2020",
         "Multiple credentialed military witnesses from four different perspectives (two aircraft + ship radar)",
-        "USS Princeton radar tracked objects for two weeks before the intercept — systemic, not isolated observation",
-        "Fravor testified under oath before Congress — legal perjury standard",
+        "USS Princeton radar tracked objects for two weeks before the intercept - systemic, not isolated observation",
+        "Fravor testified under oath before Congress - legal perjury standard",
         "Objects exhibited all five Elizondo-formulated 'observables': sudden acceleration, hypersonic velocity without signature, low observability, trans-medium travel, positive lift",
         "No conventional explanation proposed by Pentagon, AARO, or UAP Task Force"
       ],
       "contradicting": [
-        "FLIR1 footage captured by a second crew, not Fravor's aircraft — chain of custody gap",
+        "FLIR1 footage captured by a second crew, not Fravor's aircraft - chain of custody gap",
         "Original FLIR video may have been compressed or degraded from classification/declassification process",
         "No physical evidence or material sample recovered from the churning water below the object",
-        "AARO declined to confirm extraterrestrial origin — 'unidentified' does not mean non-human",
-        "Duration of Fravor's direct visual observation was approximately 5 minutes — limited data window"
+        "AARO declined to confirm extraterrestrial origin - 'unidentified' does not mean non-human",
+        "Duration of Fravor's direct visual observation was approximately 5 minutes - limited data window"
       ]
     },
     "coordinates": {
@@ -341,12 +342,12 @@
     "id": "rendlesham-forest",
     "name": "Rendlesham Forest Incident",
     "date": "December 26-28, 1980",
-    "location": "Rendlesham Forest, Suffolk, UK — between RAF Woodbridge and RAF Bentwaters",
+    "location": "Rendlesham Forest, Suffolk, UK - between RAF Woodbridge and RAF Bentwaters",
     "country": "United Kingdom",
     "category": "military-ground",
     "evidence_tier": "tier-1",
     "classification_status": "unresolved",
-    "summary": "Over three consecutive nights, USAF personnel stationed at twin RAF bases encountered structured craft in Rendlesham Forest. TSgt Jim Penniston claims to have touched a craft and transcribed symbols from its surface. On the second night, Lt Col Charles Halt — the deputy base commander — led a patrol into the forest and created a 17-minute audio tape recording events in real time, noting radiation readings above background level at the landing site. The Halt memo to the MoD was declassified. Nick Pope's reinvestigation concluded the official MoD dismissal was inadequate. It remains the UK's most documented UAP incident.",
+    "summary": "Over three consecutive nights, USAF personnel stationed at twin RAF bases encountered structured craft in Rendlesham Forest. TSgt Jim Penniston claims to have touched a craft and transcribed symbols from its surface. On the second night, Lt Col Charles Halt - the deputy base commander - led a patrol into the forest and created a 17-minute audio tape recording events in real time, noting radiation readings above background level at the landing site. The Halt memo to the MoD was declassified. Nick Pope's reinvestigation concluded the official MoD dismissal was inadequate. It remains the UK's most documented UAP incident.",
     "tags": [
       "military",
       "physical-evidence",
@@ -359,7 +360,8 @@
     "insider_connections": [
       {
         "id": "nick-pope",
-        "note": "MoD investigator - reinvestigated Rendlesham from classified records in 1993. Concluded the official dismissal was inadequate."
+        "note": "MoD investigator - reinvestigated Rendlesham from classified records in 1993. Concluded the official dismissal was inadequate.",
+        "role": "UK MoD investigator - reinvestigated the incident from classified records in 1993"
       }
     ],
     "overview": {
@@ -369,26 +371,26 @@
         "Second night (December 27-28): Lt Col Charles Halt led a patrol and created a 17-minute audio tape recording events in real time",
         "Halt's tape documents radiation readings above background at the landing site and erratic light phenomena in the night sky",
         "Physical evidence: indentations in the ground at the landing site, radiation readings above background measured by Geiger counter, reported broken tree branches at precise height",
-        "The Halt Memo — Halt's written report to the UK MoD — was declassified and released in 1983",
+        "The Halt Memo - Halt's written report to the UK MoD - was declassified and released in 1983",
         "The UK MoD officially dismissed the incident as having 'no defense significance'",
         "Nick Pope's reinvestigation in 1993 concluded the dismissal was inadequate given the weight of evidence"
       ]
     },
     "evidence": {
       "video_audio": [
-        "Halt audio tape — 17-minute real-time audio recording by Lt Col Charles Halt documenting events as they unfolded; authenticated and publicly released",
+        "Halt audio tape - 17-minute real-time audio recording by Lt Col Charles Halt documenting events as they unfolded; authenticated and publicly released",
         "Multiple subsequent interviews with Penniston, Burroughs, and Halt on record from 1984 onward"
       ],
       "documentation": [
-        "Halt Memo (January 13, 1981) — Halt's official report to the UK Ministry of Defence; declassified under FOIA",
-        "UK MoD UFO files released 2009-2013 via National Archives — include Rendlesham-related correspondence",
+        "Halt Memo (January 13, 1981) - Halt's official report to the UK Ministry of Defence; declassified under FOIA",
+        "UK MoD UFO files released 2009-2013 via National Archives - include Rendlesham-related correspondence",
         "Radiation readings documented in Halt's tape and subsequent reports; reportedly measured at 25 times background at landing indentation",
-        "Penniston's notebook — contains hand-transcribed symbols he claims to have copied from the craft's surface"
+        "Penniston's notebook - contains hand-transcribed symbols he claims to have copied from the craft's surface"
       ],
       "physical": [
-        "Three landing indentations in the forest floor — measured and documented; plaster casts taken by USAF personnel",
+        "Three landing indentations in the forest floor - measured and documented; plaster casts taken by USAF personnel",
         "Broken tree branches at a consistent height ring around the site",
-        "Radiation readings above background measured with Geiger counter at landing site — documented on Halt tape"
+        "Radiation readings above background measured with Geiger counter at landing site - documented on Halt tape"
       ]
     },
     "witnesses": [
@@ -450,16 +452,16 @@
     "credibility": {
       "supporting": [
         "Lt Col Charles Halt's real-time audio tape is the only known instance of a senior military officer narrating a UAP encounter as it happens",
-        "The Halt Memo is an official government document — signed by a deputy base commander and sent to the MoD",
+        "The Halt Memo is an official government document - signed by a deputy base commander and sent to the MoD",
         "Physical evidence (indentations, radiation readings) documented by multiple witnesses with Geiger counter measurements on tape",
         "Witnesses include commissioned and non-commissioned officers across multiple ranks over three separate nights",
-        "John Burroughs later received classified VA medical treatment for radiation-related health effects — implying US government acknowledgment of the incident's physical impact",
+        "John Burroughs later received classified VA medical treatment for radiation-related health effects - implying US government acknowledgment of the incident's physical impact",
         "UK National Archives FOIA releases confirm ongoing MoD correspondence about the incident"
       ],
       "contradicting": [
-        "No physical evidence from the landing site was preserved or independently tested — indentations attributed to landing could have conventional explanations",
+        "No physical evidence from the landing site was preserved or independently tested - indentations attributed to landing could have conventional explanations",
         "MoD's official position was 'no defense significance' and this was never reversed by any subsequent declassification",
-        "Penniston's claims have become progressively more elaborate over decades — binary code story emerged years after the initial account",
+        "Penniston's claims have become progressively more elaborate over decades - binary code story emerged years after the initial account",
         "Radiation readings were above background but not at dangerous levels; the measurement methodology was not controlled",
         "No craft was photographed during any of the three nights"
       ]
@@ -627,12 +629,12 @@
     "id": "uss-theodore-roosevelt",
     "name": "USS Theodore Roosevelt Encounters",
     "date": "2014-2015",
-    "location": "US East Coast — Atlantic Ocean and airspace off Virginia/Florida",
+    "location": "US East Coast - Atlantic Ocean and airspace off Virginia/Florida",
     "country": "United States",
     "category": "military-aviation",
     "evidence_tier": "tier-1",
     "classification_status": "unresolved",
-    "summary": "Over a sustained period in 2014-2015, multiple F/A-18 pilots attached to the USS Theodore Roosevelt carrier strike group reported near-daily encounters with unidentified objects operating in restricted military airspace. The objects — described as sphere, acorn, or metallic blimp shapes — had no visible propulsion, flew at altitudes from sea level to 30,000 feet, and were tracked on radar. The DoD released three associated videos (Gimbal, GoFast, FLIR1) in 2020. Pilot Ryan Graves testified under oath before Congress in 2023. Elizondo and Mellon facilitated the video release.",
+    "summary": "Over a sustained period in 2014-2015, multiple F/A-18 pilots attached to the USS Theodore Roosevelt carrier strike group reported near-daily encounters with unidentified objects operating in restricted military airspace. The objects - described as sphere, acorn, or metallic blimp shapes - had no visible propulsion, flew at altitudes from sea level to 30,000 feet, and were tracked on radar. The DoD released three associated videos (Gimbal, GoFast, FLIR1) in 2020. Pilot Ryan Graves testified under oath before Congress in 2023. Elizondo and Mellon facilitated the video release.",
     "tags": [
       "military",
       "FLIR-video",
@@ -645,18 +647,20 @@
     "insider_connections": [
       {
         "id": "luis-elizondo",
-        "note": "AATIP director - assessed the sustained USS Roosevelt encounters on behalf of DoD. Identified national security implications."
+        "note": "AATIP director - assessed the sustained USS Roosevelt encounters on behalf of DoD. Identified national security implications.",
+        "role": "AATIP director - conducted national security assessment of the sustained USS Roosevelt encounters on behalf of DoD"
       },
       {
         "id": "chris-mellon",
-        "note": "DASD Intelligence - facilitated video release through TTSA and the New York Times, enabling public confirmation."
+        "note": "DASD Intelligence - facilitated video release through TTSA and the New York Times, enabling public confirmation.",
+        "role": "DASD Intelligence - facilitated authenticated video release through TTSA and the New York Times"
       }
     ],
     "overview": {
       "key_facts": [
-        "Encounters were near-daily and sustained over approximately one year — not isolated incidents",
+        "Encounters were near-daily and sustained over approximately one year - not isolated incidents",
         "Objects operated in restricted military airspace used for training, representing a potential safety and security concern",
-        "Object shapes described as sphere, acorn, or metallic blimp — consistent across multiple pilots",
+        "Object shapes described as sphere, acorn, or metallic blimp - consistent across multiple pilots",
         "No visible propulsion, no wings, no exhaust; appeared to operate in all weather conditions",
         "Altitude range: sea level to 30,000 feet with rapid transitions",
         "Gimbal video: shows rotation of a thermal object that pilots couldn't explain; released by DoD April 2020",
@@ -668,15 +672,15 @@
     },
     "evidence": {
       "video_audio": [
-        "Gimbal video — DoD-authenticated FLIR footage of rotating unidentified object; pilots heard on audio expressing surprise; released April 27, 2020",
-        "GoFast video — DoD-authenticated FLIR footage of fast-moving object near ocean surface; released April 27, 2020",
+        "Gimbal video - DoD-authenticated FLIR footage of rotating unidentified object; pilots heard on audio expressing surprise; released April 27, 2020",
+        "GoFast video - DoD-authenticated FLIR footage of fast-moving object near ocean surface; released April 27, 2020",
         "Multiple pilot audio recordings from cockpit communications during encounters"
       ],
       "documentation": [
         "Pentagon statement (April 27, 2020) authenticating all three released videos as unclassified Navy footage",
         "Ryan Graves written declaration and sworn testimony, House Oversight Committee, July 26, 2023",
         "AARO historical record referencing sustained 2014-2015 E-Coast incidents",
-        "New York Times investigation (December 16, 2017) based on TTSA-facilitated video release — first public reporting"
+        "New York Times investigation (December 16, 2017) based on TTSA-facilitated video release - first public reporting"
       ],
       "physical": [
         "No physical samples recovered; objects not intercepted",
@@ -688,7 +692,7 @@
         "name": "Lt CDR Ryan Graves",
         "role": "F/A-18F pilot, VFA-11 'Red Rippers'; primary public witness",
         "type": "military",
-        "testimony": "We were seeing these things every day. Every day. In restricted airspace. They weren't ours, they weren't theirs — there was no explanation. My concern was flight safety. These objects were operating in our airspace with no transponder, no visible propulsion, and no response to our radio calls. A near-miss event was reported."
+        "testimony": "We were seeing these things every day. Every day. In restricted airspace. They weren't ours, they weren't theirs - there was no explanation. My concern was flight safety. These objects were operating in our airspace with no transponder, no visible propulsion, and no response to our radio calls. A near-miss event was reported."
       },
       {
         "name": "Lt Danny Accoin",
@@ -730,19 +734,19 @@
     },
     "credibility": {
       "supporting": [
-        "Sustained, near-daily encounters over approximately one year — not a single misidentification event",
+        "Sustained, near-daily encounters over approximately one year - not a single misidentification event",
         "Multiple independent pilots and crews reporting consistent object descriptions",
         "Two DoD-authenticated FLIR videos (Gimbal, GoFast) confirmed released by Pentagon",
         "Gimbal video includes cockpit audio of pilots reacting in real time, expressing confusion",
-        "Ryan Graves testified under oath before Congress — legal perjury standard",
-        "Near-miss safety event reported — objects operating in active military training airspace"
+        "Ryan Graves testified under oath before Congress - legal perjury standard",
+        "Near-miss safety event reported - objects operating in active military training airspace"
       ],
       "contradicting": [
-        "AARO and independent analysts have proposed that some Gimbal footage may be explained by a thermal artifact of the camera's auto-rotation system — not a physical object",
+        "AARO and independent analysts have proposed that some Gimbal footage may be explained by a thermal artifact of the camera's auto-rotation system - not a physical object",
         "The exact chain of custody from classified recordings to TTSA to New York Times is not fully documented",
         "No physical samples, no intercept, no confirmed radar classification beyond 'unidentified'",
-        "Ryan Graves did not directly observe the objects himself during the most-cited incidents — relied on instrument data and peer accounts",
-        "Duration of sustained encounters creates ambiguity — some sightings may have conventional explanations even if others do not"
+        "Ryan Graves did not directly observe the objects himself during the most-cited incidents - relied on instrument data and peer accounts",
+        "Duration of sustained encounters creates ambiguity - some sightings may have conventional explanations even if others do not"
       ]
     },
     "coordinates": {
@@ -946,12 +950,12 @@
     "id": "belgian-ufo-wave",
     "name": "Belgian UFO Wave",
     "date": "November 1989 – April 1990",
-    "location": "Belgium — Eupen, Liège, and surrounding regions; F-16 intercept over Ardennes",
+    "location": "Belgium - Eupen, Liège, and surrounding regions; F-16 intercept over Ardennes",
     "country": "Belgium",
     "category": "military-aviation",
     "evidence_tier": "tier-1",
     "classification_status": "unresolved",
-    "summary": "Over five months, thousands of Belgian civilians and police officers reported large triangular objects with three white lights and a central red light flying silently over Belgium. The Belgian Air Force (BAF) scrambled F-16 fighter jets on March 30-31, 1990 and achieved radar lock on an object that demonstrated apparent accelerations exceeding 40G — beyond any human-survivable limit. General Wilfried De Brouwer subsequently held a press conference publicly acknowledging the objects and stating they could not be identified. The BAF investigation is the most transparent official military UAP investigation ever conducted by any government.",
+    "summary": "Over five months, thousands of Belgian civilians and police officers reported large triangular objects with three white lights and a central red light flying silently over Belgium. The Belgian Air Force (BAF) scrambled F-16 fighter jets on March 30-31, 1990 and achieved radar lock on an object that demonstrated apparent accelerations exceeding 40G - beyond any human-survivable limit. General Wilfried De Brouwer subsequently held a press conference publicly acknowledging the objects and stating they could not be identified. The BAF investigation is the most transparent official military UAP investigation ever conducted by any government.",
     "tags": [
       "military",
       "radar-confirmed",
@@ -963,7 +967,8 @@
     "insider_connections": [
       {
         "id": "jacques-vallee",
-        "note": "Investigated and documented this case as part of his broader European UAP research. Contributed data to international analysis."
+        "note": "Investigated and documented this case as part of his broader European UAP research. Contributed data to international analysis.",
+        "role": "Independent scientist - investigated and documented the Belgian wave as part of his European UAP research program"
       }
     ],
     "overview": {
@@ -974,20 +979,20 @@
         "Belgian gendarmerie officers were among the earliest witnesses, lending immediate credibility",
         "Belgian Air Force scrambled F-16s on March 30-31, 1990 in response to ground radar contacts",
         "F-16s achieved radar lock; the object's apparent behavior during the lock exceeded any known aircraft: speed change from 280 to 1,800 km/h in 2 seconds, drop from 3,000m to 1,700m in 1 second",
-        "Calculated G-force: approximately 40G — far beyond human physiological tolerance",
+        "Calculated G-force: approximately 40G - far beyond human physiological tolerance",
         "General Wilfried De Brouwer publicly presented the radar data at a press conference and stated the objects could not be identified",
-        "The BAF released its investigation report publicly — the most transparent official UAP military investigation in history"
+        "The BAF released its investigation report publicly - the most transparent official UAP military investigation in history"
       ]
     },
     "evidence": {
       "video_audio": [
-        "F-16 HUD (heads-up display) video from the March 30-31 intercept — released by Belgian Air Force",
+        "F-16 HUD (heads-up display) video from the March 30-31 intercept - released by Belgian Air Force",
         "Ground radar recordings from multiple Belgian radar sites tracking the object simultaneously"
       ],
       "documentation": [
-        "Belgian Air Force official investigation report — publicly released (unprecedented for a military UAP investigation)",
+        "Belgian Air Force official investigation report - publicly released (unprecedented for a military UAP investigation)",
         "General Wilfried De Brouwer press conference materials and statements (June 1990)",
-        "Belgian Society for the Study of Space Phenomena (SOBEPS) investigation report — co-produced with BAF",
+        "Belgian Society for the Study of Space Phenomena (SOBEPS) investigation report - co-produced with BAF",
         "Written testimony from 2,600 Belgian civilian witnesses on file with SOBEPS"
       ],
       "physical": [
@@ -1024,23 +1029,23 @@
         {
           "source": "Belgian Air Force Official Report",
           "date": "1991",
-          "statement": "After extensive investigation, the Belgian Air Force has not been able to identify the craft observed by numerous witnesses. The behavior of the object during the F-16 radar lock — including apparent acceleration exceeding 40G — is inconsistent with any known aircraft or natural phenomenon."
+          "statement": "After extensive investigation, the Belgian Air Force has not been able to identify the craft observed by numerous witnesses. The behavior of the object during the F-16 radar lock - including apparent acceleration exceeding 40G - is inconsistent with any known aircraft or natural phenomenon."
         }
       ]
     },
     "credibility": {
       "supporting": [
-        "Most transparently investigated UAP incident in history — Belgian Air Force released its full investigation report publicly",
+        "Most transparently investigated UAP incident in history - Belgian Air Force released its full investigation report publicly",
         "General-level military officer personally acknowledged the objects as unidentified in a public press conference",
         "13,500 witnesses including trained law enforcement and military personnel with consistent descriptions",
         "F-16 HUD video and ground radar data corroborate the airborne encounter",
         "Radar data from multiple independent systems showing simultaneous contacts eliminates single-system artifact",
-        "40G apparent acceleration during F-16 radar lock exceeds any human-survivable maneuver — no conventional aircraft explanation"
+        "40G apparent acceleration during F-16 radar lock exceeds any human-survivable maneuver - no conventional aircraft explanation"
       ],
       "contradicting": [
-        "Most photographs from civilian witnesses were subsequently assessed as misidentifications or fabrications — no confirmed authenticated civilian imagery",
-        "The F-16 HUD video is considered ambiguous by some analysts — the radar lock may have been on weather phenomena or ground clutter",
-        "The 40G calculation assumes the object was at the altitude the radar indicated — atmospheric ducting could explain anomalous radar behavior",
+        "Most photographs from civilian witnesses were subsequently assessed as misidentifications or fabrications - no confirmed authenticated civilian imagery",
+        "The F-16 HUD video is considered ambiguous by some analysts - the radar lock may have been on weather phenomena or ground clutter",
+        "The 40G calculation assumes the object was at the altitude the radar indicated - atmospheric ducting could explain anomalous radar behavior",
         "No physical material was recovered and no object was visually identified by F-16 pilots despite the radar lock",
         "The investigation was conducted in 1990 with less advanced analysis tools than are currently available"
       ]
@@ -1222,12 +1227,12 @@
     "id": "iranian-f4-incident",
     "name": "Iranian F-4 Incident",
     "date": "September 19, 1976",
-    "location": "Tehran, Iran — airspace over Tehran and surrounding regions",
+    "location": "Tehran, Iran - airspace over Tehran and surrounding regions",
     "country": "Iran",
     "category": "military-aviation",
     "evidence_tier": "tier-2",
     "classification_status": "unresolved",
-    "summary": "An Imperial Iranian Air Force F-4 Phantom scrambled to intercept a bright object over Tehran experienced complete electronic failure when approaching the target. A second F-4 also scrambled, achieved radar lock, and attempted to fire an AIM-9 missile — at which point all weapons systems and instrument panels went dark. When the pilot broke off the attack, systems resumed. A declassified Defense Intelligence Agency report documented the incident and assessed it as a genuine encounter with an unknown craft. The DIA document is one of the most specific and compelling official UAP records released by the US government.",
+    "summary": "An Imperial Iranian Air Force F-4 Phantom scrambled to intercept a bright object over Tehran experienced complete electronic failure when approaching the target. A second F-4 also scrambled, achieved radar lock, and attempted to fire an AIM-9 missile - at which point all weapons systems and instrument panels went dark. When the pilot broke off the attack, systems resumed. A declassified Defense Intelligence Agency report documented the incident and assessed it as a genuine encounter with an unknown craft. The DIA document is one of the most specific and compelling official UAP records released by the US government.",
     "tags": [
       "military",
       "DIA-declassified",
@@ -1241,29 +1246,29 @@
       "key_facts": [
         "Date: September 19, 1976, approximately 12:30 AM local time",
         "Initial reports came from civilian phone calls to Mehrabad Air Base reporting a bright object over Tehran",
-        "First F-4 scrambled; pilot reported loss of all instruments and communications when approaching — turned back and systems immediately restored",
+        "First F-4 scrambled; pilot reported loss of all instruments and communications when approaching - turned back and systems immediately restored",
         "Second F-4 scrambled by General Parviz Jafari; achieved radar lock on an object roughly the size of a 707 tanker",
         "A smaller object separated from the main object and approached the second F-4; Jafari attempted to fire an AIM-9 missile",
-        "At the moment of weapons selection, all systems failed — instruments, radio, weapons control all went dark",
+        "At the moment of weapons selection, all systems failed - instruments, radio, weapons control all went dark",
         "When Jafari broke off the attack and descended, all systems immediately restored",
         "A second smaller object separated from the main object and impacted the ground with a bright flash but no explosion",
         "The US Defense Intelligence Agency (DIA) produced a classified report assessing the incident",
-        "The DIA document was later declassified and released — it is considered one of the most specific official UAP documents in the public record"
+        "The DIA document was later declassified and released - it is considered one of the most specific official UAP documents in the public record"
       ]
     },
     "evidence": {
       "video_audio": [
-        "No video or audio recordings from the incident — pre-FLIR era"
+        "No video or audio recordings from the incident - pre-FLIR era"
       ],
       "documentation": [
-        "Defense Intelligence Agency classified report: 'Unidentified Flying Object Over Iran' — declassified; states the incident 'was a classic which meets all the criteria necessary for a valid study of the UFO phenomenon'",
+        "Defense Intelligence Agency classified report: 'Unidentified Flying Object Over Iran' - declassified; states the incident 'was a classic which meets all the criteria necessary for a valid study of the UFO phenomenon'",
         "Joint Chiefs of Staff and Secretary of State cables referencing the incident",
         "Iranian Air Force official report filed by General Jafari and the flight crews",
         "National Security Archive release of the DIA document (1978 declassification)"
       ],
       "physical": [
-        "Bright flash on impact at ground level near Shahabad Safid — reported by crews but site investigation inconclusive",
-        "Electronic interference with F-4 weapons and instrument systems — documented in DIA report"
+        "Bright flash on impact at ground level near Shahabad Safid - reported by crews but site investigation inconclusive",
+        "Electronic interference with F-4 weapons and instrument systems - documented in DIA report"
       ]
     },
     "witnesses": [
@@ -1271,7 +1276,7 @@
         "name": "General Parviz Jafari",
         "role": "IIAF Phantom pilot; primary witness on second intercept",
         "type": "military",
-        "testimony": "I acquired radar lock. The object was large — like a 707 tanker. A smaller object separated and came at me. I tried to fire an AIM-9. Nothing. Every system went dark. When I broke off, everything came back immediately. I have been flying for 30 years. I have never experienced anything like this."
+        "testimony": "I acquired radar lock. The object was large - like a 707 tanker. A smaller object separated and came at me. I tried to fire an AIM-9. Nothing. Every system went dark. When I broke off, everything came back immediately. I have been flying for 30 years. I have never experienced anything like this."
       },
       {
         "name": "First F-4 Pilot (unnamed)",
@@ -1302,18 +1307,18 @@
     "credibility": {
       "supporting": [
         "DIA classified document explicitly states the case 'meets all criteria for a valid study of the UFO phenomenon'",
-        "US government produced an official, classified analytical document about the event — not just a report of a report",
-        "Electronic interference affected two separate aircraft independently — hard to dismiss as instrument error",
+        "US government produced an official, classified analytical document about the event - not just a report of a report",
+        "Electronic interference affected two separate aircraft independently - hard to dismiss as instrument error",
         "Weapons systems failure at the moment of attack selection is a specific, technically verifiable event",
         "Multiple military witnesses across two aircraft and ground radar",
         "General Parviz Jafari subsequently gave consistent testimony over decades in interviews"
       ],
       "contradicting": [
-        "No physical evidence of the 'impact' site confirmed — ground teams found nothing conclusive",
-        "The incident occurred in 1976 with Cold War geopolitical context — both US and Soviet advanced aircraft were active in Iranian airspace",
+        "No physical evidence of the 'impact' site confirmed - ground teams found nothing conclusive",
+        "The incident occurred in 1976 with Cold War geopolitical context - both US and Soviet advanced aircraft were active in Iranian airspace",
         "Radar equipment of 1976 vintage had significant potential for false locks and ghost returns",
         "Electronic interference could be explained by high-powered electronic warfare jamming from a US or Soviet asset",
-        "Primary witnesses are Iranian military figures from a country that subsequently underwent revolution — independent corroboration is limited"
+        "Primary witnesses are Iranian military figures from a country that subsequently underwent revolution - independent corroboration is limited"
       ]
     },
     "coordinates": {
@@ -1476,7 +1481,7 @@
     "id": "jal-1628",
     "name": "JAL Flight 1628",
     "date": "November 17, 1986",
-    "location": "Alaskan airspace — Anchorage ARTCC coverage, near Ft. Yukon",
+    "location": "Alaskan airspace - Anchorage ARTCC coverage, near Ft. Yukon",
     "country": "United States (incident over Alaska)",
     "category": "commercial-aviation",
     "evidence_tier": "tier-2",
@@ -1493,7 +1498,8 @@
     "insider_connections": [
       {
         "id": "richard-dolan",
-        "note": "Researched and documented this incident extensively in his National Security State series."
+        "note": "Researched and documented this incident extensively in his National Security State series.",
+        "role": "Historian and author - documented this incident extensively in his National Security State series"
       }
     ],
     "overview": {
@@ -1507,7 +1513,7 @@
         "Alaska Air Defense Command NORAD radar also detected a return",
         "Military aircraft scrambled to investigate but found nothing",
         "FAA conducted an internal investigation; administrator John Callahan later stated the CIA attended the briefing and ordered participants to say nothing",
-        "Captain Terauchi was subsequently grounded — a career consequence that other aviation witnesses have also reported"
+        "Captain Terauchi was subsequently grounded - a career consequence that other aviation witnesses have also reported"
       ]
     },
     "evidence": {
@@ -1516,9 +1522,9 @@
         "FAA radio transmissions documenting real-time crew reports"
       ],
       "documentation": [
-        "FAA official investigation report — concluded radar returns were 'unidentified'",
-        "FAA Anchorage ARTCC radar data — confirmed corroborating radar return",
-        "NORAD Alaska Air Defense Command radar data — partial confirmation",
+        "FAA official investigation report - concluded radar returns were 'unidentified'",
+        "FAA Anchorage ARTCC radar data - confirmed corroborating radar return",
+        "NORAD Alaska Air Defense Command radar data - partial confirmation",
         "John Callahan's testimony and supporting documents released via Disclosure Project (2001)",
         "Japan Air Lines investigation report"
       ],
@@ -1764,7 +1770,7 @@
     "category": "crash-recovery",
     "evidence_tier": "tier-2",
     "classification_status": "officially-closed",
-    "summary": "In early July 1947, rancher Mac Brazel discovered a debris field on the Foster Ranch northwest of Roswell, NM. He reported it to Chaves County Sheriff George Wilcox, who contacted Roswell Army Air Field. Major Jesse Marcel, Intelligence Officer of the 509th Bomb Group, was dispatched to investigate. RAAF Public Information Officer Walter Haut issued a press release on July 8 announcing recovery of a 'flying disc' under orders from base commander Colonel William Blanchard. Hours later, Brigadier General Roger Ramey held a press conference in Fort Worth retracting the claim, identifying the debris as a weather balloon and radar reflector. The USAF issued two subsequent reports — in 1994 identifying the debris as likely from classified Project Mogul balloon arrays, and in 1997 attributing alleged 'body' accounts to anthropomorphic test dummies used in 1950s parachute experiments. A 1995 GAO investigation found that RAAF administrative records and outgoing messages from 1945–1949 had been destroyed under undocumented authority.",
+    "summary": "In early July 1947, rancher Mac Brazel discovered a debris field on the Foster Ranch northwest of Roswell, NM. He reported it to Chaves County Sheriff George Wilcox, who contacted Roswell Army Air Field. Major Jesse Marcel, Intelligence Officer of the 509th Bomb Group, was dispatched to investigate. RAAF Public Information Officer Walter Haut issued a press release on July 8 announcing recovery of a 'flying disc' under orders from base commander Colonel William Blanchard. Hours later, Brigadier General Roger Ramey held a press conference in Fort Worth retracting the claim, identifying the debris as a weather balloon and radar reflector. The USAF issued two subsequent reports - in 1994 identifying the debris as likely from classified Project Mogul balloon arrays, and in 1997 attributing alleged 'body' accounts to anthropomorphic test dummies used in 1950s parachute experiments. A 1995 GAO investigation found that RAAF administrative records and outgoing messages from 1945–1949 had been destroyed under undocumented authority.",
     "tags": [
       "crash-recovery",
       "military",
@@ -1777,7 +1783,8 @@
     "insider_connections": [
       {
         "id": "dan-burisch",
-        "note": "Claims direct involvement with entities connected to the 1947 Roswell retrieval program through Majestic-12."
+        "note": "Claims direct involvement with entities connected to the 1947 Roswell retrieval program through Majestic-12.",
+        "role": "Claimed insider - asserts direct involvement with entities connected to the 1947 retrieval program through Majestic-12"
       }
     ],
     "overview": {
@@ -1786,8 +1793,8 @@
         "July 7, 1947: Brazel reported the debris to Sheriff George Wilcox; RAAF dispatched Major Jesse Marcel and CIC officer Sheridan Cavitt to the site",
         "July 8, 1947 (morning): RAAF public information officer Walter Haut issued press release announcing recovery of a 'flying disc' under orders from Colonel William Blanchard",
         "July 8, 1947 (afternoon): Brigadier General Roger M. Ramey held a Fort Worth press conference; weather officer Irving Newton identified the debris as a standard weather balloon and radar reflector target",
-        "A photograph of Ramey holding a memo at the press conference was taken by a Fort Worth Star-Telegram photographer — the 'Ramey Memo' — the original document no longer exists",
-        "1994 USAF Report: debris most likely originated from Project Mogul — classified acoustic sensor balloon arrays used to detect Soviet nuclear tests",
+        "A photograph of Ramey holding a memo at the press conference was taken by a Fort Worth Star-Telegram photographer - the 'Ramey Memo' - the original document no longer exists",
+        "1994 USAF Report: debris most likely originated from Project Mogul - classified acoustic sensor balloon arrays used to detect Soviet nuclear tests",
         "1995 GAO investigation (NSIAD-95-187) found RAAF administrative records and outgoing messages from October 1946 through December 1949 had been destroyed under undocumented authority",
         "1997 USAF Report 'The Roswell Report: Case Closed': alleged body accounts attributed to anthropomorphic test dummies used in 1950s parachute experiments",
         "An FBI teletype dated July 8, 1947 records the military described the recovered object as resembling 'a high-altitude weather balloon with a radar reflector'"
@@ -1795,18 +1802,18 @@
     },
     "evidence": {
       "video_audio": [
-        "No video or audio recordings from the incident — pre-FLIR/recording era"
+        "No video or audio recordings from the incident - pre-FLIR/recording era"
       ],
       "documentation": [
-        "Walter Haut press release, July 8, 1947 — the only official US military press release ever announcing recovery of a 'flying disc'; original on file at Roswell International UFO Museum",
-        "FBI teletype, July 8, 1947 — records military identification of debris as 'weather balloon with radar reflector'; available via FBI Vault FOIA records",
-        "USAF Report: 'Report of Air Force Research Regarding the Roswell Incident' (Col. Richard L. Weaver, July 1994) — concluded debris was from Project Mogul; available via NSA.gov",
-        "GAO Report NSIAD-95-187 (July 1995) — confirmed destruction of RAAF administrative records from 1945-1949 under undocumented authority; available via GAO.gov",
-        "USAF Report: 'The Roswell Report: Case Closed' (Capt. James McAndrew, June 1997) — attributed body accounts to 1950s test dummies; available via media.defense.gov",
-        "Ramey Memo photograph — held at the University of Texas at Arlington; partial legibility only; no forensic consensus on text content"
+        "Walter Haut press release, July 8, 1947 - the only official US military press release ever announcing recovery of a 'flying disc'; original on file at Roswell International UFO Museum",
+        "FBI teletype, July 8, 1947 - records military identification of debris as 'weather balloon with radar reflector'; available via FBI Vault FOIA records",
+        "USAF Report: 'Report of Air Force Research Regarding the Roswell Incident' (Col. Richard L. Weaver, July 1994) - concluded debris was from Project Mogul; available via NSA.gov",
+        "GAO Report NSIAD-95-187 (July 1995) - confirmed destruction of RAAF administrative records from 1945-1949 under undocumented authority; available via GAO.gov",
+        "USAF Report: 'The Roswell Report: Case Closed' (Capt. James McAndrew, June 1997) - attributed body accounts to 1950s test dummies; available via media.defense.gov",
+        "Ramey Memo photograph - held at the University of Texas at Arlington; partial legibility only; no forensic consensus on text content"
       ],
       "physical": [
-        "Debris field: metallic foil, sticks, and rubber-like material recovered by Brazel and Marcel — identified as consistent with Project Mogul radar reflector by USAF 1994 investigation",
+        "Debris field: metallic foil, sticks, and rubber-like material recovered by Brazel and Marcel - identified as consistent with Project Mogul radar reflector by USAF 1994 investigation",
         "No physical material confirmed to survive in any verified collection; all alleged recovered material is disputed"
       ]
     },
@@ -1869,20 +1876,20 @@
     },
     "credibility": {
       "supporting": [
-        "Walter Haut's post-mortem sealed affidavit states he personally observed both debris and bodies — Haut was the original press release author and had direct access to RAAF facilities",
+        "Walter Haut's post-mortem sealed affidavit states he personally observed both debris and bodies - Haut was the original press release author and had direct access to RAAF facilities",
         "Jesse Marcel Sr. maintained until his death that the material was not of terrestrial origin and unlike anything he had encountered in his military career",
-        "The GAO confirmed that RAAF records from 1945-1949 were destroyed under undocumented authority — an unusual administrative gap for a routine weather balloon recovery",
+        "The GAO confirmed that RAAF records from 1945-1949 were destroyed under undocumented authority - an unusual administrative gap for a routine weather balloon recovery",
         "The FBI's July 8 teletype confirms the military itself was uncertain of the object's classification in real time",
-        "RAAF public affairs issued an extraordinary press release claiming a 'flying disc' under direct orders from the base commander — not a random misidentification",
+        "RAAF public affairs issued an extraordinary press release claiming a 'flying disc' under direct orders from the base commander - not a random misidentification",
         "Colonel Blanchard's order to issue the press release before the Fort Worth retraction implies a chain of command above Roswell was involved in controlling the narrative"
       ],
       "contradicting": [
-        "USAF 1994 investigation provides a specific classified program (Project Mogul) that explains the unusual material properties Marcel described — including the metallic foil and structural members",
+        "USAF 1994 investigation provides a specific classified program (Project Mogul) that explains the unusual material properties Marcel described - including the metallic foil and structural members",
         "Weather officer Irving Newton, present at the Fort Worth press conference, identified the debris as standard equipment he had handled many times before",
-        "Glenn Dennis's testimony — widely cited in early research — has been substantially impeached; he provided demonstrably false names for a key witness and changed his account multiple times",
+        "Glenn Dennis's testimony - widely cited in early research - has been substantially impeached; he provided demonstrably false names for a key witness and changed his account multiple times",
         "Walter Haut's sealed affidavit, released after his 2005 death, contradicts his own earlier public statements made under much less dramatic terms",
         "The 1997 USAF report identifies a plausible sequence of events explaining how 1950s parachute test dummies were conflated with 'alien bodies' decades later through memory distortion",
-        "No confirmed physical material from Roswell exists in any verified scientific collection — all alleged specimens rely on single-source testimony with no independent corroboration"
+        "No confirmed physical material from Roswell exists in any verified scientific collection - all alleged specimens rely on single-source testimony with no independent corroboration"
       ]
     },
     "coordinates": {
@@ -2081,10 +2088,10 @@
     "insider_connections": [],
     "overview": {
       "key_facts": [
-        "Echo Flight incident: March 16, 1967 at approximately 08:45 local time — all 10 Minuteman I ICBMs at Echo Flight went to 'No-Go' status",
-        "Echo Flight crew: Captain Eric Carlson (Commander) and 1st Lieutenant Walter Figel (Deputy) — both have denied UFO connection to the shutdown",
-        "Oscar Flight incident: March 24, 1967 — all 10 Minuteman I ICBMs at Oscar Flight went offline",
-        "Oscar Flight crew: 1st Lieutenant Robert Salas (Deputy Crew Commander, then aged 26) — has publicly stated a guard reported a glowing red UFO hovering over the gate shortly before the shutdown",
+        "Echo Flight incident: March 16, 1967 at approximately 08:45 local time - all 10 Minuteman I ICBMs at Echo Flight went to 'No-Go' status",
+        "Echo Flight crew: Captain Eric Carlson (Commander) and 1st Lieutenant Walter Figel (Deputy) - both have denied UFO connection to the shutdown",
+        "Oscar Flight incident: March 24, 1967 - all 10 Minuteman I ICBMs at Oscar Flight went offline",
+        "Oscar Flight crew: 1st Lieutenant Robert Salas (Deputy Crew Commander, then aged 26) - has publicly stated a guard reported a glowing red UFO hovering over the gate shortly before the shutdown",
         "USAF official investigation attributed Echo Flight shutdown to an electronic noise pulse entering the logic coupler in the Launch Control Center",
         "The declassified 341st Strategic Missile Wing Command History (1967) documents the Echo Flight shutdown but makes no mention of UFO reports",
         "FOIA requests filed in 1995 by researcher Jim Klotz on Salas's behalf produced the declassified unit history records",
@@ -2098,12 +2105,12 @@
         "No video or audio recordings from the incidents"
       ],
       "documentation": [
-        "341st Strategic Missile Wing Command History, 1967 (declassified) — documents the Echo Flight shutdown via FOIA release; available via CUFON.org and National Archives; makes no mention of UFO involvement",
-        "FOIA-released Malmstrom AFB message traffic regarding the Echo Flight shutdown — released 1995 following Jim Klotz's requests",
-        "Robert Salas's written statement and sworn testimony, 2010 National Press Club press conference — available via robertsalas.com",
-        "Robert Salas's testimony submission to AARO, February 2023 — referenced in public AARO reporting",
-        "Robert Salas and Robert Hastings, 'Faded Giant' (2005) — self-published account; primary source document for Salas's narrative",
-        "James Carlson's document 'Echo Flights of Fantasy' (2010) — available via Scribd; includes Walter Figel email denials"
+        "341st Strategic Missile Wing Command History, 1967 (declassified) - documents the Echo Flight shutdown via FOIA release; available via CUFON.org and National Archives; makes no mention of UFO involvement",
+        "FOIA-released Malmstrom AFB message traffic regarding the Echo Flight shutdown - released 1995 following Jim Klotz's requests",
+        "Robert Salas's written statement and sworn testimony, 2010 National Press Club press conference - available via robertsalas.com",
+        "Robert Salas's testimony submission to AARO, February 2023 - referenced in public AARO reporting",
+        "Robert Salas and Robert Hastings, 'Faded Giant' (2005) - self-published account; primary source document for Salas's narrative",
+        "James Carlson's document 'Echo Flights of Fantasy' (2010) - available via Scribd; includes Walter Figel email denials"
       ],
       "physical": [
         "No physical evidence recovered; the shutdown itself is confirmed by official unit history as a real event with an official mechanical explanation"
@@ -2120,7 +2127,7 @@
         "name": "1st Lt. Walter Figel",
         "role": "Deputy Crew Commander, Echo Flight; primary witness to the Echo Flight shutdown on March 16, 1967",
         "type": "military",
-        "testimony": "A maintenance technician on the topside mentioned something about a UFO during a call — I treated it as a joke. I don't believe UFOs were even remotely associated with the Echo Flight incident. The official explanation — the electronic noise pulse — is what I believe caused the shutdown. I was there."
+        "testimony": "A maintenance technician on the topside mentioned something about a UFO during a call - I treated it as a joke. I don't believe UFOs were even remotely associated with the Echo Flight incident. The official explanation - the electronic noise pulse - is what I believe caused the shutdown. I was there."
       },
       {
         "name": "Capt. Eric Carlson",
@@ -2150,19 +2157,19 @@
     },
     "credibility": {
       "supporting": [
-        "The ICBM shutdowns themselves are confirmed real events documented in declassified USAF unit history — the 10-missile simultaneous No-Go at Echo Flight is not in dispute",
+        "The ICBM shutdowns themselves are confirmed real events documented in declassified USAF unit history - the 10-missile simultaneous No-Go at Echo Flight is not in dispute",
         "Robert Salas's account has remained internally consistent across decades of public testimony and under formal settings including the National Press Club and AARO",
         "Multiple former USAF officers made similar claims at the 2010 National Press Club event, citing nuclear facility encounters at other bases",
-        "The simultaneous shutdown of 10 independent ICBMs is operationally extraordinary — the official 'noise pulse' explanation was never independently peer-reviewed",
+        "The simultaneous shutdown of 10 independent ICBMs is operationally extraordinary - the official 'noise pulse' explanation was never independently peer-reviewed",
         "Salas filed formal testimony with AARO in 2023, putting his account on federal record subject to the consequences of false statements"
       ],
       "contradicting": [
-        "Both Echo Flight crew commanders — Carlson and Figel — have directly denied any UFO connection to the shutdown they personally witnessed",
+        "Both Echo Flight crew commanders - Carlson and Figel - have directly denied any UFO connection to the shutdown they personally witnessed",
         "Figel, who was on the crew that actually experienced the Echo Flight shutdown, stated the UFO mention by a technician was a casual remark he treated as a joke",
-        "The official USAF investigation attributed Echo Flight's failure to an electronic noise pulse — a specific mechanical explanation with documented findings",
+        "The official USAF investigation attributed Echo Flight's failure to an electronic noise pulse - a specific mechanical explanation with documented findings",
         "The declassified 341st SMW Command History contains no mention of UFO reports in connection with either shutdown",
-        "Salas conflated Echo Flight (March 16, where he was not present) with Oscar Flight (March 24, where he was) in early public accounts — later corrected but noted as a credibility concern",
-        "James Carlson's documentation includes direct written denials from Figel himself — a primary Echo Flight witness contradicting the UFO narrative"
+        "Salas conflated Echo Flight (March 16, where he was not present) with Oscar Flight (March 24, where he was) in early public accounts - later corrected but noted as a credibility concern",
+        "James Carlson's documentation includes direct written denials from Figel himself - a primary Echo Flight witness contradicting the UFO narrative"
       ]
     },
     "coordinates": {
@@ -2330,7 +2337,8 @@
     ],
     "insider_connections": [
       {
-        "id": "leslie-kean"
+        "id": "leslie-kean",
+        "role": "Investigative journalist - filed Kean v. NASA FOIA lawsuit, forcing NASA to conduct a more thorough document search"
       }
     ],
     "overview": {
@@ -2338,28 +2346,28 @@
         "December 9, 1965, approximately 4:43 PM EST: a large fireball was observed across Ontario, Michigan, Ohio, Indiana, West Virginia, New York, and Pennsylvania",
         "The object was reported to have come down near Kecksburg, PA at approximately 4:45 PM EST",
         "Project Blue Book officially classified the event as a meteor bolide; a USAF major from the Pentagon contacted Air Force press offices the following day requesting talking points",
-        "Volunteer firefighter Jim Romansky reported approaching an acorn-shaped, bronze-gold metallic object — seamless construction with hieroglyphic-like markings on a rear 'bumper' band",
+        "Volunteer firefighter Jim Romansky reported approaching an acorn-shaped, bronze-gold metallic object - seamless construction with hieroglyphic-like markings on a rear 'bumper' band",
         "WHJB radio news director John Murphy arrived before military units and reportedly photographed and interviewed witnesses; his film and audio tapes were later confiscated by men identifying as government officials",
         "Murphy produced a sanitized radio documentary ('Object in the Woods') after government officials visited the station; the original version never aired. Murphy died in a hit-and-run in Ventura, California in 1969",
-        "NASA stated in 2005 that its experts had analyzed fragments from the area and concluded the object was a Soviet satellite — but that the analysis records from 1987 had been lost that same year",
+        "NASA stated in 2005 that its experts had analyzed fragments from the area and concluded the object was a Soviet satellite - but that the analysis records from 1987 had been lost that same year",
         "Federal FOIA lawsuit Kean v. NASA (480 F. Supp. 2d 150) filed 2003, settled October 2007: NASA required to produce hundreds of new documents and pay plaintiff's legal fees; no confirmed identification of the object emerged",
         "Jim Romansky maintained his account without substantive change until his death on August 18, 2021, in Derry, Pennsylvania"
       ]
     },
     "evidence": {
       "video_audio": [
-        "John Murphy's radio recordings and photographs — reportedly confiscated; only a sanitized version of the 'Object in the Woods' documentary survives",
+        "John Murphy's radio recordings and photographs - reportedly confiscated; only a sanitized version of the 'Object in the Woods' documentary survives",
         "Contemporaneous press coverage in Pittsburgh newspapers (Pittsburgh Press, Pittsburgh Post-Gazette), December 9-10, 1965"
       ],
       "documentation": [
-        "Project Blue Book files on the Kecksburg incident — classified as 'meteor'; available via National Archives (NARA) and The Black Vault FOIA archive",
-        "USAF Pentagon memo, December 10, 1965 — documents Major Howard contacting Air Force press offices requesting talking points about the fireball sighting",
-        "Kean v. NASA, 480 F. Supp. 2d 150 (D.D.C. 2007) — federal FOIA lawsuit filed by journalist Leslie Kean; CourtListener.com; resulted in production of hundreds of NASA documents",
-        "NASA's 2005 public statement attributing the object to a Soviet satellite — no surviving supporting records; acknowledged in Kean FOIA litigation",
-        "Stan Gordon research archive — decades of witness documentation; accessible via stangordon.info"
+        "Project Blue Book files on the Kecksburg incident - classified as 'meteor'; available via National Archives (NARA) and The Black Vault FOIA archive",
+        "USAF Pentagon memo, December 10, 1965 - documents Major Howard contacting Air Force press offices requesting talking points about the fireball sighting",
+        "Kean v. NASA, 480 F. Supp. 2d 150 (D.D.C. 2007) - federal FOIA lawsuit filed by journalist Leslie Kean; CourtListener.com; resulted in production of hundreds of NASA documents",
+        "NASA's 2005 public statement attributing the object to a Soviet satellite - no surviving supporting records; acknowledged in Kean FOIA litigation",
+        "Stan Gordon research archive - decades of witness documentation; accessible via stangordon.info"
       ],
       "physical": [
-        "Acorn-shaped object reported by Romansky in a wooded ravine — not preserved; reportedly removed under military escort on a flatbed truck",
+        "Acorn-shaped object reported by Romansky in a wooded ravine - not preserved; reportedly removed under military escort on a flatbed truck",
         "No confirmed physical material from Kecksburg exists in any verified collection"
       ]
     },
@@ -2368,13 +2376,13 @@
         "name": "James (Jim) Romansky",
         "role": "Volunteer firefighter, Kecksburg VFD; dispatched to investigate a reported downed aircraft",
         "type": "civilian",
-        "testimony": "I went into the woods with my fire company. There was an object in a ravine — acorn-shaped, bronze-gold colored, about the size of a Volkswagen Bug but bigger. No rivets, no seams. On the rear bumper there were markings — not writing I recognized, like Egyptian hieroglyphics. It was one piece of metal, poured into a mold. I have never changed my account. That is what I saw."
+        "testimony": "I went into the woods with my fire company. There was an object in a ravine - acorn-shaped, bronze-gold colored, about the size of a Volkswagen Bug but bigger. No rivets, no seams. On the rear bumper there were markings - not writing I recognized, like Egyptian hieroglyphics. It was one piece of metal, poured into a mold. I have never changed my account. That is what I saw."
       },
       {
         "name": "John Murphy",
         "role": "News director and reporter, WHJB radio, Greensburg PA; first journalist on scene",
         "type": "journalist",
-        "testimony": "I went out there. I saw something. I took photographs. Men came to the station — they identified themselves as government officials. They took my film. They took my audio tapes. I was told to change the documentary. I want to tell the truth about what happened out there. [Murphy died in 1969 before making a full public statement; this account is reconstructed from wife Bonnie Milslagle's testimony and WHJB employee Linda Foschia's recollections.]"
+        "testimony": "I went out there. I saw something. I took photographs. Men came to the station - they identified themselves as government officials. They took my film. They took my audio tapes. I was told to change the documentary. I want to tell the truth about what happened out there. [Murphy died in 1969 before making a full public statement; this account is reconstructed from wife Bonnie Milslagle's testimony and WHJB employee Linda Foschia's recollections.]"
       }
     ],
     "official_response": {
@@ -2404,18 +2412,18 @@
     "credibility": {
       "supporting": [
         "Jim Romansky, a machinist by trade, gave a technically specific description (seamless construction, acorn shape, non-alphabetic symbols) that did not significantly change over three decades of public testimony",
-        "John Murphy's behavior — producing a sanitized documentary after a government visit, and the confiscation of his film and tapes — is corroborated by two independent WHJB employees",
+        "John Murphy's behavior - producing a sanitized documentary after a government visit, and the confiscation of his film and tapes - is corroborated by two independent WHJB employees",
         "NASA's acknowledgment that it conducted analysis of Kecksburg fragments but lost all records is a documented admission in federal court proceedings",
-        "USAF press office was contacted the day after the incident requesting talking points — indicating institutional awareness and concern beyond a routine meteor classification",
-        "The fireball's trajectory was observed across six states and Canada — its final position over Kecksburg is established by multiple independent civilian reports",
-        "Federal FOIA court order (Kean v. NASA) required NASA to conduct a significantly more thorough document search than it had initially performed — implying initial response was inadequate"
+        "USAF press office was contacted the day after the incident requesting talking points - indicating institutional awareness and concern beyond a routine meteor classification",
+        "The fireball's trajectory was observed across six states and Canada - its final position over Kecksburg is established by multiple independent civilian reports",
+        "Federal FOIA court order (Kean v. NASA) required NASA to conduct a significantly more thorough document search than it had initially performed - implying initial response was inadequate"
       ],
       "contradicting": [
         "Project Blue Book's classification as a meteor bolide represents the only contemporaneous official scientific assessment of the event",
-        "No confirmed physical material from Kecksburg exists in any verified collection — Romansky's account is the sole close-up witness and cannot be independently corroborated",
-        "NASA's 'Soviet satellite' explanation, while never substantiated with surviving records, is a plausible scenario — Soviet GE Mark 2 re-entry vehicle comparisons have been made by researchers",
-        "Murphy's original photographs and recordings no longer exist — the confiscation claim rests entirely on the accounts of his former wife and a colleague",
-        "Stan Gordon, the primary long-term investigator, operates as a UFO researcher without institutional affiliation — his archive is the primary source for many witness accounts",
+        "No confirmed physical material from Kecksburg exists in any verified collection - Romansky's account is the sole close-up witness and cannot be independently corroborated",
+        "NASA's 'Soviet satellite' explanation, while never substantiated with surviving records, is a plausible scenario - Soviet GE Mark 2 re-entry vehicle comparisons have been made by researchers",
+        "Murphy's original photographs and recordings no longer exist - the confiscation claim rests entirely on the accounts of his former wife and a colleague",
+        "Stan Gordon, the primary long-term investigator, operates as a UFO researcher without institutional affiliation - his archive is the primary source for many witness accounts",
         "The military cordon and object removal reported by multiple Kecksburg witnesses conflicts with official accounts but cannot be verified through any surviving documentary evidence"
       ]
     },
@@ -2666,13 +2674,13 @@
         "name": "Dr. Lynne Kitei",
         "role": "Phoenix physician and researcher; documented lights phenomenon from her home",
         "type": "civilian",
-        "testimony": "I saw these amber orbs — three of them initially — totally silent, totally motionless. They were absolutely solid, structured lights. Over time that evening and on subsequent occasions I captured them on video. This was not flares. Flares don't hover for extended periods and then disappear simultaneously."
+        "testimony": "I saw these amber orbs - three of them initially - totally silent, totally motionless. They were absolutely solid, structured lights. Over time that evening and on subsequent occasions I captured them on video. This was not flares. Flares don't hover for extended periods and then disappear simultaneously."
       },
       {
         "name": "Bill Greiner",
         "role": "Truck driver; witnessed V formation near Luke AFB",
         "type": "civilian",
-        "testimony": "I'll never forget it. This thing was huge — like a city block going over us. Real slow. No noise at all. If Luke has something that big flying around, they're doing a hell of a good job keeping it secret."
+        "testimony": "I'll never forget it. This thing was huge - like a city block going over us. Real slow. No noise at all. If Luke has something that big flying around, they're doing a hell of a good job keeping it secret."
       }
     ],
     "official_response": {
@@ -3148,7 +3156,8 @@
     ],
     "insider_connections": [
       {
-        "id": "tim-gallaudet"
+        "id": "tim-gallaudet",
+        "role": "Rear Admiral (Ret.) - testified before Congress on the USS Omaha encounter and its national security implications"
       }
     ],
     "overview": {
@@ -3453,13 +3462,13 @@
         "name": "Steve Allen",
         "role": "Private pilot and local business owner",
         "type": "civilian",
-        "testimony": "It was very large and it was going fast. I'd guess it was a half mile to a mile across and it was going at least three times the speed of a jet. What's strange is that there was no sound. And it had these really bright lights — huge, white — then they'd go off and there'd be two red streaks."
+        "testimony": "It was very large and it was going fast. I'd guess it was a half mile to a mile across and it was going at least three times the speed of a jet. What's strange is that there was no sound. And it had these really bright lights - huge, white - then they'd go off and there'd be two red streaks."
       },
       {
         "name": "Constable Lee Roy Gaitan",
         "role": "Erath County Constable",
         "type": "law-enforcement",
-        "testimony": "I saw two lights chasing one another. Then there was a big white light — it lit up everything. It was so bright I had to shade my eyes. These weren't commercial aircraft, and they were not military jets. I've been watching aircraft for twenty years. This was something different."
+        "testimony": "I saw two lights chasing one another. Then there was a big white light - it lit up everything. It was so bright I had to shade my eyes. These weren't commercial aircraft, and they were not military jets. I've been watching aircraft for twenty years. This was something different."
       },
       {
         "name": "Ricky Sorrells",

@@ -2334,6 +2334,134 @@ const Sources: NextPage = () => {
             description="Contemporaneous field reporting from the week of the incident. Interviewed 15+ residents near the sighting location - none witnessed firefighters collecting any animal on January 20. Fire department personnel made humorous comments about the claims. Established that the 40 fire department deployments on January 21 were due to a violent hailstorm, not entity recovery operations. Critical for establishing the absence of neighborhood corroboration."
             notes="Used for: Varginha Incident 1996."
           />
+
+          {/* USS Theodore Roosevelt 2014-2015 */}
+          <SourceCard
+            name="DoD Press Release: Navy Videos of Unidentified Aerial Phenomena (April 27, 2020)"
+            url="https://www.defense.gov/News/Releases/Release/Article/2165713/"
+            type="Government Release"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official DoD press release authenticating the three F/A-18 FLIR videos (FLIR1, Gimbal, GoFast) associated with the USS Theodore Roosevelt carrier strike group encounters of 2014-2015. Confirms the footage was captured by Navy personnel and clears it for public release."
+            notes="Used for: USS Theodore Roosevelt 2014-2015."
+          />
+          <SourceCard
+            name="New York Times: Glowing Auras and Black Money - The Pentagon's Mysterious U.F.O. Program (2017)"
+            url="https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="The December 16, 2017 Times investigation by Helene Cooper, Ralph Blumenthal, and Leslie Kean that first disclosed AATIP and published the Gimbal video. The article established public awareness of the USS Theodore Roosevelt encounters and named Luis Elizondo as the program director who resigned."
+            notes="Used for: USS Theodore Roosevelt 2014-2015."
+          />
+
+          {/* Iranian F-4 Incident 1976 */}
+          <SourceCard
+            name="Lt. Parviz Jafari - National Press Club Testimony (2007)"
+            url="https://www.youtube.com/watch?v=3UGSVbmqAW4"
+            type="Testimony"
+            typeColor="bg-blue-100 text-blue-700"
+            description="First-person account by the Iranian Air Force pilot who flew the second F-4 and attempted to fire an AIM-9 missile before all weapons systems and instruments went dark. Delivered at the National Press Club as part of the Disclosure Project witness event. Primary firsthand record of the weapons system failure."
+            notes="Used for: Iranian F-4 Incident 1976."
+          />
+          <SourceCard
+            name="The Black Vault - Iranian F-4 Incident FOIA Archive"
+            url="https://www.theblackvault.com/documentarchive/iran-f-4-ufo-incident-september-1976/"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="John Greenewald Jr.'s compiled FOIA archive for the September 19, 1976 Iranian F-4 incident, including the declassified Defense Intelligence Agency intelligence report (DIA/ST-CS-01-776-76) which assessed the event as meeting all criteria for a valid UAP study."
+            notes="Used for: Iranian F-4 Incident 1976."
+          />
+
+          {/* Kecksburg 1965 */}
+          <SourceCard
+            name="Kean v. NASA, 480 F. Supp. 2d 150 (D.D.C. 2007)"
+            url="https://law.justia.com/cases/federal/district-courts/FSupp2/480/150/2321090/"
+            type="Court Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Federal FOIA lawsuit filed by journalist Leslie Kean against NASA over the Kecksburg 1965 case. The court ordered NASA to conduct a significantly more thorough document search than its initial response. NASA's 2005 claim of a Soviet satellite origin was made with no surviving supporting records, acknowledged during this litigation."
+            notes="Used for: Kecksburg Incident 1965."
+          />
+          <SourceCard
+            name="Stan Gordon Research Archive (stangordon.info)"
+            url="https://www.stangordon.info/"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="Decades-long witness documentation archive compiled by Stan Gordon, the primary long-term investigator of the December 9, 1965 Kecksburg incident. Includes accounts from volunteer firefighters, police officers, and civilians who reported the object and the military presence."
+            notes="Used for: Kecksburg Incident 1965."
+          />
+
+          {/* USS Omaha 2019 */}
+          <SourceCard
+            name="Jeremy Corbell - USS Omaha FLIR Footage Release (2021)"
+            url="https://www.extraordinarybeliefs.com/"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Jeremy Corbell's initial release of the USS Omaha 2019 FLIR footage showing a spherical object maneuvering near the vessel and apparently entering the water. The Pentagon subsequently confirmed the video was taken by Navy personnel and is under investigation."
+            notes="Used for: USS Omaha 2019."
+          />
+
+          {/* Shag Harbour 1967 */}
+          <SourceCard
+            name="Dark Object: The World's Only Government-Documented UFO Crash - Don Ledger and Chris Styles (2001)"
+            url="https://www.amazon.com/Dark-Object-Worlds-Government-Documented/dp/0440236894"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Comprehensive investigation of the October 4, 1967 Shag Harbour incident by Canadian researchers Don Ledger and Chris Styles. Incorporates RCMP investigation reports, Transport Canada files, and witness testimony. Documents the multi-vessel joint US-Canadian underwater search operation that followed the crash. Primary book-length source for the Shag Harbour case."
+            notes="Used for: Shag Harbour 1967."
+          />
+          <SourceCard
+            name="NICAP Documentation - Shag Harbour 1967"
+            url="https://www.nicap.org/671004shag_dir.htm"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="NICAP's compiled documentation of the October 4, 1967 Shag Harbour incident, including the RCMP report and corroborating witness statements from fishermen and coastal residents who observed the object enter the water."
+            notes="Used for: Shag Harbour 1967."
+          />
+
+          {/* Westall 1966 */}
+          <SourceCard
+            name="Westall '66: A Suburban UFO Mystery (Documentary, 2010)"
+            url="https://www.youtube.com/watch?v=HM4nLJxFXhc"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Documentary film directed by Rosie Jones featuring first-person accounts from former students and teachers at Westall State School who witnessed the April 6, 1966 landing event in Clayton South, Victoria. The primary aggregation of the original eyewitness testimony for the Westall case."
+            notes="Used for: Westall 1966."
+          />
+
+          {/* Ariel School 1994 */}
+          <SourceCard
+            name="Passport to the Cosmos - John E. Mack (1999)"
+            url="https://johnemackinstitute.org"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Harvard psychiatrist John Mack's second book-length study of encounter phenomenon, including detailed case documentation of the September 16, 1994 Ariel School incident in Ruwa, Zimbabwe. Mack personally interviewed 60 of the 62 child witnesses. Primary academic source for the case."
+            notes="Used for: Ariel School 1994."
+          />
+          <SourceCard
+            name="Ariel Phenomenon (Documentary, 2022)"
+            url="https://arielphenomenon.com"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Feature documentary by Randall Nickerson following up with the Ariel School witnesses 25 years later. Incorporates Mack's original 1994 on-site footage of his interviews with the children and documents the long-term psychological impact on multiple witnesses."
+            notes="Used for: Ariel School 1994."
+          />
+
+          {/* Washington D.C. 1952 */}
+          <SourceCard
+            name="Project Blue Book Case Files - Washington D.C. 1952"
+            url="https://www.fold3.com/page/273952990-project-blue-book"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official Project Blue Book records for the July 19-20 and July 26-27, 1952 Washington D.C. UAP flap, during which objects were tracked simultaneously on ARTC, ATSCC, and Andrews AFB radar. The CAA issued the largest public statement on UFOs in the Blue Book era. Cases classified Unknown."
+            notes="Used for: Washington D.C. 1952."
+          />
+          <SourceCard
+            name="NICAP Washington 1952 Documentation"
+            url="https://www.nicap.org/waves/1952dc.htm"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="NICAP's compiled documentation of the 1952 Washington D.C. radar-visual cases, including the July 26-27 F-94 intercept attempts, the ARTC radar returns, and contemporaneous press coverage of the Samford press conference."
+            notes="Used for: Washington D.C. 1952."
+          />
         </section>
 
         {/* Primary documents sources */}
