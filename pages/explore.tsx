@@ -13,24 +13,30 @@ import { insiderRegistry } from '../data/key-figures/registry';
 import casesData from '../data/cases.json';
 import timelineData from '../data/timeline.json';
 
+const FlowSkeleton = () => (
+  <div className="w-full h-[420px] rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 animate-pulse flex items-center justify-center">
+    <span className="text-xs text-gray-300 dark:text-gray-700">Loading diagram...</span>
+  </div>
+);
+
 const ProgramLineageFlow = dynamic(
   () => import('../components/explore/ProgramLineageFlow'),
-  { ssr: false }
+  { ssr: false, loading: () => <FlowSkeleton /> }
 );
 
 const CongressionalDisclosureFlow = dynamic(
   () => import('../components/explore/CongressionalDisclosureFlow'),
-  { ssr: false }
+  { ssr: false, loading: () => <FlowSkeleton /> }
 );
 
 const EvidenceTierFlow = dynamic(
   () => import('../components/explore/EvidenceTierFlow'),
-  { ssr: false }
+  { ssr: false, loading: () => <FlowSkeleton /> }
 );
 
 const OversightHierarchyFlow = dynamic(
   () => import('../components/explore/OversightHierarchyFlow'),
-  { ssr: false }
+  { ssr: false, loading: () => <FlowSkeleton /> }
 );
 
 const ClaimsCorroborationGraph = dynamic(
@@ -158,13 +164,18 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
   // Active nav pill: hero zone always highlights "networks"; tabs zone highlights the active tab
   const activeNavId: NavId = scrollZone === 'hero' ? 'networks' : activeTab;
 
+  // ── Scroll to timeline overlay when an era is selected ───────
+  // useEffect is more reliable than setTimeout: it fires after the
+  // state flush and commit, eliminating the race condition.
+  useEffect(() => {
+    if (!focusEra) return;
+    overlayRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [focusEra]);
+
   // ── Era selection (Timeline tab) ──────────────────────────────
   function handleSelectEra(start: number, end: number) {
     const label = start === end - 9 ? `${start}s` : `${start}-${end}`;
     setFocusEra({ start, end, label });
-    setTimeout(() => {
-      overlayRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 50);
   }
 
   // ── Pill class helper ─────────────────────────────────────────

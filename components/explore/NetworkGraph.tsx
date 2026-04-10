@@ -781,7 +781,7 @@ const NetworkGraph: FC = () => {
         ) : (
           /* Default hint */
           <p className="text-xs text-gray-400 dark:text-gray-500 min-h-[28px] flex items-center">
-            Click any node to select it - click again to navigate to its page
+            Click any node to select it - use the panel above to navigate or explore connections. Nodes with a dashed ring have a dedicated page.
           </p>
         )}
       </div>
