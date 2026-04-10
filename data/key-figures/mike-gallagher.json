@@ -144,7 +144,7 @@
   "career_connections": [
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Co-chaired the July 2023 House Oversight hearing where Grusch testified under oath about UAP reverse-engineering programs",
@@ -152,7 +152,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ryan-graves",
       "node_label": "Ryan Graves",
       "relationship": "Graves testified at the July 2023 hearing Gallagher co-chaired; Gallagher praised Graves' account as credible",
@@ -160,19 +160,19 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tim-burchett",
       "node_label": "Tim Burchett",
       "relationship": "House colleagues who co-led UAP hearing efforts; both signed the 2023 UAP hearing request letter",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "chuck-schumer",
       "node_label": "Chuck Schumer",
       "relationship": "Co-authored the UAP Disclosure Act of 2023 with Schumer; the bill passed the Senate before being weakened in the House",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     }
   ],
   "disclosures": [

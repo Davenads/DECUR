@@ -142,23 +142,23 @@
     },
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "harry-reid",
       "node_label": "Harry Reid",
       "relationship": "Reid pioneered Senate UAP advocacy; Rubio continued and formalized this work through the UAPTF provision in 2020",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "kirsten-gillibrand",
       "node_label": "Kirsten Gillibrand",
       "relationship": "Senate colleague who co-led follow-on UAP legislation including the UAP Disclosure Act of 2023; Rubio's UAPTF mandate was the institutional foundation for her oversight work",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Rubio publicly acknowledged Grusch's 2023 whistleblower allegations as credible and called for declassification and investigation",

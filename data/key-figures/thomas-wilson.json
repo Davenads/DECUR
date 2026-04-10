@@ -161,7 +161,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "eric-davis",
       "node_label": "Eric Davis",
       "relationship": "Co-subject of the Wilson-Davis Memo; Davis reportedly recorded their 2002 meeting in a 15-page handwritten document",
@@ -169,7 +169,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "edgar-mitchell",
       "node_label": "Edgar Mitchell",
       "relationship": "Mitchell reportedly present at 1997 Pentagon UAP briefing with Wilson; the Wilson-Davis Memo surfaced from Mitchell's estate in 2019",
@@ -177,7 +177,7 @@
     },
     {
       "event_index": 0,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Connected through the NIDS/AAWSAP network and Eric Davis collaboration; Puthoff is referenced in the context surrounding the Wilson-Davis Memo",

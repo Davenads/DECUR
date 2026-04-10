@@ -107,12 +107,6 @@
   ],
   "associated_people": [
     {
-      "id": "paul-schatzkin",
-      "name": "Paul Schatzkin",
-      "role": "Biographer of T.T. Brown",
-      "relationship": "Primary modern researcher of Brown's life; conducted original interviews with aged colleagues including Jacques Cornillon (age 98) to corroborate the vacuum experiments described in his 2023 biography 'The Man Who Mastered Gravity.'"
-    },
-    {
       "id": "bob-lazar",
       "name": "Bob Lazar",
       "role": "S-4 physicist, Area 51 whistleblower",
@@ -129,12 +123,6 @@
       "name": "Eric Davis",
       "role": "Theoretical physicist",
       "relationship": "Davis's work on spacetime metric engineering and unconventional propulsion connects to the same classified propulsion research tradition Brown's work is associated with."
-    },
-    {
-      "id": "agnew-bahnson",
-      "name": "Agnew Bahnson",
-      "role": "Industrialist, Institute of Field Physics founder, UNC Chapel Hill",
-      "relationship": "Bahnson funded Brown's research and organized the 1957 Chapel Hill Conference on gravity; allegedly had CIA connections and channeled academic gravity research."
     }
   ],
   "disclosures": [
@@ -189,7 +177,7 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "project",
+      "node_type": "program",
       "node_id": "project-blue-book",
       "node_label": "Project Blue Book",
       "relationship": "Project Winterhaven (1953) was submitted contemporaneously with the height of Blue Book activity; both represent mid-1950s U.S. government engagement with anomalous aerospace phenomena",
@@ -197,7 +185,7 @@
     },
     {
       "event_index": 1,
-      "node_type": "organization",
+      "node_type": "program",
       "node_id": "naval-intelligence",
       "node_label": "Naval Intelligence",
       "relationship": "FBI confirmed Brown as the U.S. Navy's top expert in radar detection in 1943, anchoring his classified research career within the Navy intelligence apparatus",
@@ -209,7 +197,7 @@
       "node_id": "bob-lazar",
       "node_label": "Bob Lazar",
       "relationship": "Brown's 1967 Guidance Technologies closure and Lazar's later S-4 claims about gravity wave propulsion represent parallel narratives of classified anti-gravity research absorbed into black programs",
-      "connection_type": "thematic"
+      "connection_type": "professional"
     },
     {
       "event_index": 4,
@@ -217,7 +205,7 @@
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Brown's Project Winterhaven electrogravitics proposal and Puthoff's later zero-point energy research both operate in the classified-adjacent advanced propulsion research tradition",
-      "connection_type": "thematic"
+      "connection_type": "professional"
     }
   ],
   "credibility": {

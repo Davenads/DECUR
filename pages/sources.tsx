@@ -1775,6 +1775,76 @@ const Sources: NextPage = () => {
             description="Academic ethnographic study by UNC Wilmington religious studies professor Diana Walsh Pasulka, examining UAP belief systems among credentialed insiders. Published by Oxford University Press. Based on access to the private scientist community including figures widely believed to include Garry Nolan and Jacques Vallee."
             notes="Used for: American Cosmic resource entry."
           />
+
+          {/* Tim Burchett */}
+          <SourceCard
+            name="Rep. Tim Burchett Official Website"
+            url="https://burchett.house.gov"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official site for Rep. Tim Burchett (R-TN-02), co-chair of the House UAP Caucus. Primary source for legislative record, press releases, and constituent communications on UAP oversight and whistleblower protection efforts."
+            notes="Used for: Rep. Tim Burchett."
+          />
+
+          {/* John Burroughs */}
+          <SourceCard
+            name="The Halt Memo (1981, declassified 1983) - UK National Archives"
+            url="https://www.nationalarchives.gov.uk/ufos/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Authenticated official memorandum from Lt. Col. Charles Halt to the UK Ministry of Defence documenting the Rendlesham Forest incident, corroborating John Burroughs' witness account and the radiation readings taken at the landing site."
+            notes="Used for: John Burroughs."
+          />
+
+          {/* James McDonald */}
+          <SourceCard
+            name="Science in Default - James E. McDonald (1969 AAAS Symposium)"
+            url="https://files.ncas.org/ufosymposium/mcdonald.html"
+            type="Academic Paper"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="McDonald's definitive published work presenting a case-by-case critique of the Condon Report, demonstrating that the committee ignored or mishandled the strongest UAP cases in its own sample. Delivered at the 1969 AAAS UFO Symposium."
+            notes="Used for: Dr. James E. McDonald."
+          />
+
+          {/* Thomas Wilson */}
+          <SourceCard
+            name="Wilson-Davis Memo - Via The Black Vault (leaked 2019)"
+            url="https://www.theblackvault.com/documentarchive/the-admiral-wilson-ufo-leak-document/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="15-page handwritten document attributed to physicist Eric Davis recording an alleged April 2002 meeting with Vice Adm. Thomas Wilson, in which Wilson described being denied access to a private contractor UAP reverse-engineering SAP. Surfaced publicly in 2019 via Edgar Mitchell's estate."
+            notes="Used for: Vice Adm. Thomas Wilson."
+          />
+
+          {/* Charles Halt */}
+          <SourceCard
+            name="The Halt Perspective - Charles Halt and John Hanson (2016)"
+            url="https://www.amazon.com/dp/0957494378"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Co-authored firsthand account of the Rendlesham Forest incident from the perspective of Lt. Col. Charles Halt, the senior military officer present. Covers all nights of the encounter and Halt's assessment of the official response. Published by Haunted Skies Publishing, 2016."
+            notes="Used for: Lt. Col. Charles Halt."
+          />
+
+          {/* Marco Rubio */}
+          <SourceCard
+            name="CBS News Interview - Marco Rubio on UAP (June 2020)"
+            url="https://www.cbsnews.com/news/ufo-military-intelligence-senate-intelligence-committee/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Sen. Marco Rubio's primary public disclosure on UAP, stating that military pilots are reporting real unexplained phenomena requiring serious investigation. Primary source for Rubio's national security framing and his role as architect of the 2020 UAP Task Force mandate."
+            notes="Used for: Sen. Marco Rubio."
+          />
+
+          {/* Mike Gallagher */}
+          <SourceCard
+            name="House Oversight UAP Hearing Transcript - July 26, 2023"
+            url="https://www.congress.gov/event/118th-congress/house-event/116282"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Full transcript of the landmark House Oversight Subcommittee UAP hearing co-chaired by Rep. Mike Gallagher, featuring testimony from David Grusch, Ryan Graves, and David Fravor. Primary source for Gallagher's opening statement, questioning, and stated belief that the government withheld UAP information from Congress."
+            notes="Used for: Rep. Mike Gallagher."
+          />
         </section>
 
         {/* Government programs sources */}

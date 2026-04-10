@@ -29,11 +29,11 @@
         "event": "Participated in initial ground investigation of anomalous lights near the East Gate of RAF Woodbridge; one of the first personnel to approach and observe an unidentified craft in Rendlesham Forest."
       },
       {
-        "year": "Dec 26, 1980",
+        "year": "Dec 1980",
         "event": "Participated in the second night of the Rendlesham Forest incident; witnessed craft at close range and experienced missing time with fellow airman Jim Penniston."
       },
       {
-        "year": "Dec 28, 1980",
+        "year": "Dec 1980",
         "event": "Accompanied Lt. Col. Charles Halt on the third night investigation; observed aerial phenomena and unexplained light beams over the forest."
       },
       {
@@ -159,7 +159,7 @@
       "node_id": "rendlesham-forest",
       "node_label": "Rendlesham Forest (1980)",
       "relationship": "Primary ground witness on the first night; one of the first personnel to approach and observe the unidentified craft near the East Gate of RAF Woodbridge.",
-      "connection_type": "witness"
+      "connection_type": "investigative"
     },
     {
       "event_index": 5,
@@ -167,7 +167,7 @@
       "node_id": "daniel-sheehan",
       "node_label": "Daniel Sheehan",
       "relationship": "Sheehan provided legal counsel during the landmark 2015 VA benefits case that forced review of Burroughs' classified medical records.",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 6,
@@ -175,7 +175,7 @@
       "node_id": "nick-pope",
       "node_label": "Nick Pope",
       "relationship": "Co-authored 'Encounter in Rendlesham Forest' (2016) with Pope and Jim Penniston; Pope provided the UK MOD institutional context for the published account.",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     }
   ],
   "sources": [

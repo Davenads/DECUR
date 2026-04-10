@@ -154,15 +154,15 @@
       "node_id": "project-blue-book",
       "node_label": "Project Blue Book",
       "relationship": "Served as chief investigator during the program's most active and scientifically rigorous period (1951-1953); overhauled methodology from systematic debunking toward genuine analytical inquiry.",
-      "connection_type": "leadership"
+      "connection_type": "institutional"
     },
     {
       "event_index": 3,
-      "node_type": "organization",
+      "node_type": "program",
       "node_id": "robertson-panel",
       "node_label": "Robertson Panel",
       "relationship": "Served as Blue Book's liaison to the 1953 CIA Robertson Panel; privately disagreed with its debunking recommendations and later described its institutional impact critically in his 1956 book.",
-      "connection_type": "participation"
+      "connection_type": "institutional"
     },
     {
       "event_index": 1,
@@ -170,7 +170,7 @@
       "node_id": "j-allen-hynek",
       "node_label": "Dr. J. Allen Hynek",
       "relationship": "Hynek served as Blue Book's scientific consultant under Ruppelt; their collaboration represented the most rigorous official analytical partnership in early UAP inquiry.",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -178,7 +178,7 @@
       "node_id": "donald-keyhoe",
       "node_label": "Donald Keyhoe",
       "relationship": "Ruppelt's insider book and Keyhoe's NICAP-backed civilian research were the two most influential credible accounts of official UAP investigation available to the public in the 1950s.",
-      "connection_type": "contemporary"
+      "connection_type": "professional"
     }
   ],
   "sources": [

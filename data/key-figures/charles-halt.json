@@ -132,18 +132,6 @@
       "name": "Nick Pope",
       "role": "Former UK MOD UFO desk officer; author",
       "relationship": "Investigated the Rendlesham Forest case during his tenure at the UK Ministry of Defence UFO desk (1991-1994) and has publicly corroborated the credibility of Halt's account and the significance of the Halt Memo as an official government document."
-    },
-    {
-      "id": "larry-warren",
-      "name": "Larry Warren",
-      "role": "U.S. Air Force airman; Rendlesham claimant",
-      "relationship": "U.S. airman who claimed to be a witness to the second night of the Rendlesham encounter. A controversial figure whose account sometimes conflicts with Halt's on specific details, though both describe extraordinary craft. Halt has distanced himself from Warren's more embellished claims."
-    },
-    {
-      "id": "jim-penniston",
-      "name": "Jim Penniston",
-      "role": "U.S. Air Force Staff Sergeant; first-night Rendlesham witness",
-      "relationship": "Staff Sergeant who was the primary witness on the first night of the Rendlesham incident and claims to have physically touched the landed craft. Collaborated with John Burroughs on public accounts. His narrative and Halt's account are largely complementary, covering different nights of the same event."
     }
   ],
   "disclosures": [
@@ -187,7 +175,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "john-burroughs",
       "node_label": "John Burroughs",
       "relationship": "Burroughs was a junior airman under Halt's command and a key witness during the Rendlesham incident; Halt later advocated for Burroughs' VA medical benefits case related to radiation exposure.",
@@ -195,7 +183,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "nick-pope",
       "node_label": "Nick Pope",
       "relationship": "Pope investigated the Rendlesham case for the UK Ministry of Defence UFO desk and has publicly corroborated the significance and authenticity of Halt's account and the Halt Memo.",

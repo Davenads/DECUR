@@ -172,7 +172,7 @@
       "node_id": "garry-nolan",
       "node_label": "Dr. Garry Nolan",
       "relationship": "Nolan is widely believed to be among the scientific figures who accompanied Pasulka on the 2016 New Mexico site visit documented in American Cosmic, though this identification is disputed.",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 1,
@@ -180,7 +180,7 @@
       "node_id": "hal-puthoff",
       "node_label": "Dr. Hal Puthoff",
       "relationship": "Puthoff is among the scientific insiders Pasulka interviewed and interacted with while writing American Cosmic, appearing as part of the insider network of scientists working on UAP materials analysis.",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -188,7 +188,7 @@
       "node_id": "garry-nolan",
       "node_label": "Dr. Garry Nolan",
       "relationship": "Both participated in SOL Foundation symposia; Nolan provides scientific grounding for Pasulka's humanities-based research and the two represent complementary academic approaches to UAP phenomena.",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
