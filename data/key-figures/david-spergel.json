@@ -168,7 +168,7 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "sean-kirkpatrick",
       "node_label": "Dr. Sean Kirkpatrick",
       "relationship": "Both led major official UAP assessments in 2023 - Spergel the NASA scientific panel, Kirkpatrick the DoD AARO program.",
@@ -176,7 +176,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "avi-loeb",
       "node_label": "Prof. Avi Loeb",
       "relationship": "Both are elite astrophysicists who engaged with UAP despite institutional risk; parallel institutional approaches to the same data quality problem.",

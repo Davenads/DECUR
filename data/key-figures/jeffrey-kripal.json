@@ -204,7 +204,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "whitley-strieber",
       "node_label": "Whitley Strieber",
       "relationship": "Strieber archive housed at Rice; co-authored The Super Natural (2016).",
@@ -212,7 +212,7 @@
     },
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "john-mack",
       "node_label": "Dr. John Mack",
       "relationship": "Archives of the Impossible holds the complete John Mack Archive.",
@@ -220,7 +220,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "garry-nolan",
       "node_label": "Dr. Garry Nolan",
       "relationship": "Shared Sol Foundation involvement; presented at inaugural 2023 and 2024 symposia.",
@@ -228,7 +228,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "diana-pasulka",
       "node_label": "Dr. Diana Pasulka",
       "relationship": "Colleagues in academic study of religion and UAP; shared Sol Foundation network.",

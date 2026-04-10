@@ -158,7 +158,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "kevin-knuth",
       "node_label": "Dr. Kevin Knuth",
       "relationship": "Co-leads UAPx; institutional colleagues at University at Albany. Co-authors on both 2025 UAP papers.",
@@ -166,7 +166,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "beatriz-villarroel",
       "node_label": "Dr. Beatriz Villarroel",
       "relationship": "Co-authors on 2025 New Science of UAP flagship paper.",

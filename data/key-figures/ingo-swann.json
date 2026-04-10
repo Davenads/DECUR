@@ -186,7 +186,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Puthoff was the SRI physicist who recruited Swann for SCANATE and co-conducted the 1973 Jupiter remote viewing experiment that preceded Voyager 1's ring confirmation by six years.",
@@ -194,7 +194,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "kit-green",
       "node_label": "Kit Green",
       "relationship": "Green served as the CIA case officer overseeing early SRI remote viewing work, connecting Swann's program to the broader intelligence network that later intersected with UAP investigation through AAWSAP.",

@@ -188,7 +188,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "joe-mcmoneagle",
       "node_label": "Joe McMoneagle",
       "relationship": "Monroe Institute's Hemi-Sync training framework became foundational to McMoneagle's preparation as Remote Viewer #001; McMoneagle has been a long-term Monroe Institute associate.",
@@ -196,7 +196,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Skip Atwater's 1977 visit to Monroe's Institute bridged Monroe's OBE methodology and Puthoff's SRI remote viewing research, creating the combined pipeline that underpinned Stargate training.",

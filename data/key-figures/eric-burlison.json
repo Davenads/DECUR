@@ -38,7 +38,7 @@
         "event": "Sworn in as U.S. Representative for Missouri's 7th Congressional District. Assigned to the House Oversight and Accountability Committee's National Security subpanel - the subcommittee that would hold the landmark July 2023 UAP hearing."
       },
       {
-        "year": "Jul 26, 2023",
+        "year": "Jul 2023",
         "event": "Participated in the landmark House Oversight Committee UAP hearing alongside Reps. Tim Burchett, Anna Paulina Luna, and Mike Gallagher, where David Grusch, Ryan Graves, and David Fravor testified under oath. Cross-examined Grusch from a skeptical angle, probing whether UAP activity could stem from domestic government programs rather than non-human intelligence."
       },
       {
@@ -46,35 +46,35 @@
         "event": "Stated publicly after the hearing: 'In my opinion I think it's either angels or it's manmade. I think the most likely explanation is that it's manmade.' Described as the most skeptical member of the UAP Caucus on extraterrestrial explanations."
       },
       {
-        "year": "Aug 22, 2023",
+        "year": "Aug 2023",
         "event": "Named a founding member of the House UAP Caucus, launched by Rep. Tim Burchett. Also signed the simultaneous letter to ICIG Thomas Monheim requesting action on classified UAP programs."
       },
       {
-        "year": "Jan 12, 2024",
+        "year": "Jan 2024",
         "event": "Attended a classified SCIF briefing provided by the ICIG, held in the Office of House Security. Described seeing UAP video footage depicting objects that 'defy physics' and 'intelligently controlled plasma orbs.' Despite the briefing, stated his worldviews had not fundamentally changed and he remained skeptical of non-human origin."
       },
       {
-        "year": "Jan 16, 2024",
+        "year": "Jan 2024",
         "event": "Appeared on That UFO Podcast, discussing his UAP involvement, the January SCIF briefing, his skeptical stance ('angels or manmade'), and legislative next steps including the UAP Disclosure Act push."
       },
       {
-        "year": "Mar 12, 2024",
+        "year": "Mar 2024",
         "event": "Led a bipartisan letter to Speaker Mike Johnson and Minority Leader Hakeem Jeffries requesting the creation of a formal UAP Select Subcommittee under House Oversight. Co-signed by Burchett, Moskowitz, Luna, Ogles, Mace, Nehls, and Gaetz."
       },
       {
-        "year": "Mar 27, 2025",
+        "year": "Mar 2025",
         "event": "Formally hired David Grusch as a Special Advisor to his congressional office for work on the House Oversight Task Force on the Declassification of Federal Secrets. The four-month appointment allowed Grusch to brief Burlison at the Top Secret level (not TS/SCI)."
       },
       {
-        "year": "Aug 29, 2025",
+        "year": "Aug 2025",
         "event": "Introduced the UAP Disclosure Act of 2025 as an amendment to the FY2026 NDAA, modeled structurally on the JFK Records Act and intended to mandate the release of classified UAP records within a defined timeframe."
       },
       {
-        "year": "Sep 9, 2025",
+        "year": "Sep 2025",
         "event": "Participated in the House Oversight Task Force on the Declassification of Federal Secrets' first UAP hearing ('Restoring Public Trust Through UAP Transparency and Whistleblower Protection'). Showed never-before-seen footage - a video appearing to depict a missile fired at an orb-like UAP near Yemen."
       },
       {
-        "year": "Nov 25, 2025",
+        "year": "Nov 2025",
         "event": "Returned to That UFO Podcast for an exclusive interview ('Trump Is the Disclosure President'), discussing the NDAA Disclosure Act push, Grusch's continuing advisory role, his communication with the White House on an executive order, and named specific locations he had been given to investigate."
       },
       {
@@ -305,7 +305,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Grusch testified under oath at the July 2023 hearing where Burlison cross-examined him; later hired by Burlison as a Special Advisor in March 2025.",
@@ -313,7 +313,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tim-burchett",
       "node_label": "Rep. Tim Burchett",
       "relationship": "Co-founding member of the House UAP Caucus launched by Burchett; sustained legislative partnership throughout 118th and 119th Congresses.",
@@ -321,7 +321,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "anna-paulina-luna",
       "node_label": "Rep. Anna Paulina Luna",
       "relationship": "Fellow founding UAP Caucus member; both attended the January 2024 SCIF briefing and were jointly briefed by Grusch at the Top Secret level.",
@@ -337,7 +337,7 @@
     },
     {
       "event_index": 8,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "chuck-schumer",
       "node_label": "Sen. Chuck Schumer",
       "relationship": "Burlison's House efforts to pass the UAP Disclosure Act of 2025 were designed to complement and advance Schumer's Senate-side UAPDA work from 2023.",

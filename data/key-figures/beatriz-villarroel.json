@@ -233,7 +233,7 @@
   "career_connections": [
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "garry-nolan",
       "node_label": "Dr. Garry Nolan",
       "relationship": "Joint Sol Foundation Advisory Board members; Nolan publicly praised VASCO findings.",
@@ -241,7 +241,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "avi-loeb",
       "node_label": "Prof. Avi Loeb",
       "relationship": "Sol Foundation colleagues pursuing parallel empirical technosignature programs.",
@@ -249,7 +249,7 @@
     },
     {
       "event_index": 10,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "jacques-vallee",
       "node_label": "Dr. Jacques Vallee",
       "relationship": "Co-authors on 2025 New Science of UAP framework paper; shared Sol Foundation symposia.",

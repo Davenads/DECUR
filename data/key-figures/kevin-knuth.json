@@ -207,7 +207,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "beatriz-villarroel",
       "node_label": "Dr. Beatriz Villarroel",
       "relationship": "Co-authors on 2025 New Science of UAP flagship paper; both affiliated with IFEX.",
@@ -215,7 +215,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "avi-loeb",
       "node_label": "Prof. Avi Loeb",
       "relationship": "Galileo Project affiliate; co-authored observatory methodology paper.",
@@ -223,7 +223,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "garry-nolan",
       "node_label": "Dr. Garry Nolan",
       "relationship": "Co-speakers at Sol Foundation inaugural and 2024 symposia.",

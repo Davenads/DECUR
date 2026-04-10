@@ -19,7 +19,7 @@
       "Intuitive Intelligence Applications, Inc."
     ],
     "clearance": "Top Secret / SCI (former; held throughout Army service and STAR GATE consulting period 1964-1995)",
-    "summary": "Joseph McMoneagle is a retired U.S. Army Chief Warrant Officer who served as Remote Viewer #001 — the first and most extensively tested operational viewer in the U.S. government's classified remote viewing programs. Recruited into Project GRILL FLAME in 1978, he participated in operational intelligence tasking for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service across the program's entire run. Upon his 1984 Army retirement he received the Legion of Merit, whose citation credited him with producing 'critical intelligence unavailable from any other source' — the only formal military decoration ever issued for remote viewing. He continued as a civilian consultant until STAR GATE's termination in 1995 and has since publicly demonstrated remote viewing on national television in six countries.",
+    "summary": "Joseph McMoneagle is a retired U.S. Army Chief Warrant Officer who served as Remote Viewer #001 - the first and most extensively tested operational viewer in the U.S. government's classified remote viewing programs. Recruited into Project GRILL FLAME in 1978, he participated in operational intelligence tasking for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service across the program's entire run. Upon his 1984 Army retirement he received the Legion of Merit, whose citation credited him with producing 'critical intelligence unavailable from any other source' - the only formal military decoration ever issued for remote viewing. He continued as a civilian consultant until STAR GATE's termination in 1995 and has since publicly demonstrated remote viewing on national television in six countries.",
     "education": [
       "U.S. Army Intelligence training and specialized programs (1960s-1970s)",
       "Extensive post-military study in consciousness research and anomalous cognition"
@@ -41,11 +41,11 @@
       },
       {
         "year": "1978",
-        "event": "Recruited into Project GRILL FLAME — the U.S. Army's first operational remote viewing program — and designated Remote Viewer #001. Begins conducting operational intelligence sessions targeting classified Soviet military and other intelligence subjects."
+        "event": "Recruited into Project GRILL FLAME - the U.S. Army's first operational remote viewing program - and designated Remote Viewer #001. Begins conducting operational intelligence sessions targeting classified Soviet military and other intelligence subjects."
       },
       {
         "year": "1979",
-        "event": "Conducts remote viewing session that he claims described the Typhoon-class submarine — then a classified Soviet development — before the vessel was publicly known. The Typhoon class was confirmed with the launch of the first boat in 1980."
+        "event": "Conducts remote viewing session that he claims described the Typhoon-class submarine - then a classified Soviet development - before the vessel was publicly known. The Typhoon class was confirmed with the launch of the first boat in 1980."
       },
       {
         "year": "1981",
@@ -53,7 +53,7 @@
       },
       {
         "year": "1984",
-        "event": "Retires from the U.S. Army as a Chief Warrant Officer. Receives the Legion of Merit — citing 'critical intelligence unavailable from any other source' produced for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service. The most significant formal government validation of remote viewing ever issued."
+        "event": "Retires from the U.S. Army as a Chief Warrant Officer. Receives the Legion of Merit - citing 'critical intelligence unavailable from any other source' produced for the Joint Chiefs of Staff, DIA, NSA, CIA, and Secret Service. The most significant formal government validation of remote viewing ever issued."
       },
       {
         "year": "1984-1995",
@@ -61,7 +61,7 @@
       },
       {
         "year": "2002",
-        "event": "Publishes 'The Stargate Chronicles: Memoirs of a Psychic Spy' — the most detailed first-person operational account of the Army remote viewing program from a participant with both active-duty and consulting experience."
+        "event": "Publishes 'The Stargate Chronicles: Memoirs of a Psychic Spy' - the most detailed first-person operational account of the Army remote viewing program from a participant with both active-duty and consulting experience."
       }
     ]
   },
@@ -97,7 +97,7 @@
   ],
   "credibility": {
     "supporting": [
-      "The Legion of Merit is a formal military decoration with documented citation language crediting 'critical intelligence unavailable from any other source' — the most direct government validation ever given to any remote viewer",
+      "The Legion of Merit is a formal military decoration with documented citation language crediting 'critical intelligence unavailable from any other source' - the most direct government validation ever given to any remote viewer",
       "Remote Viewer #001 designation and 20 years of Army intelligence service as a CWO provide an institutional credibility that civilian research subjects like Ingo Swann do not share",
       "The Typhoon-class submarine and General Dozier cases, if his accounts are accurate, represent specific, date-bounded operational predictions that can be checked against known historical events",
       "He continued as a civilian consultant to STAR GATE for a full decade after Army retirement (1984-1995), implying ongoing institutional confidence in his value",
@@ -105,10 +105,10 @@
       "His published accounts across multiple books (The Stargate Chronicles, Mind Trek, Remote Viewing Secrets) are internally consistent over decades"
     ],
     "contradicting": [
-      "The 1995 AIR review that terminated STAR GATE directly contradicts the Legion of Merit citation — concluding there was no credible evidence of operationally useful intelligence from remote viewing",
+      "The 1995 AIR review that terminated STAR GATE directly contradicts the Legion of Merit citation - concluding there was no credible evidence of operationally useful intelligence from remote viewing",
       "Ray Hyman's detailed methodological critique argues that even the laboratory-positive results from the program do not meet the standards for establishing a real anomalous effect",
       "The specific classified session records that would verify the Typhoon and Dozier timing claims against ground truth have not been declassified",
-      "His 1984 retirement and the Legion of Merit coincided — the citation may reflect Army institutional commitment to the program rather than independently verified intelligence outcomes",
+      "His 1984 retirement and the Legion of Merit coincided - the citation may reflect Army institutional commitment to the program rather than independently verified intelligence outcomes",
       "A claimed 1980s remote viewing session described a large pyramid-like structure on Mars housing thousands of people; this claim is considered fringe even within the remote viewing community and has damaged his scientific credibility",
       "No external intelligence official has publicly named McMoneagle's specific sessions as the source of actionable intelligence in any documented case"
     ]
@@ -191,7 +191,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Puthoff's SRI remote viewing research provided the scientific and methodological foundation for McMoneagle's recruitment into GRILL FLAME as Remote Viewer #001.",
@@ -199,7 +199,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ingo-swann",
       "node_label": "Ingo Swann",
       "relationship": "Swann designed the Coordinate Remote Viewing protocol that McMoneagle used operationally; they represent the civilian architect and the military practitioner of the same methodology.",

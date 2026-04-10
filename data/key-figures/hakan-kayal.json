@@ -171,7 +171,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "kevin-knuth",
       "node_label": "Dr. Kevin Knuth",
       "relationship": "Knuth is an IFEX affiliate member; co-authors on 2025 New Science of UAP paper.",
@@ -179,7 +179,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "matt-szydagis",
       "node_label": "Dr. Matt Szydagis",
       "relationship": "Szydagis is an IFEX affiliate member; co-authors on 2025 New Science of UAP paper.",
@@ -187,7 +187,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "beatriz-villarroel",
       "node_label": "Dr. Beatriz Villarroel",
       "relationship": "Co-authors on 2025 New Science of UAP flagship paper; complementary temporal detection approaches.",
