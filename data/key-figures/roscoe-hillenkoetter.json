@@ -135,7 +135,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "donald-keyhoe",
       "node_label": "Maj. Donald Keyhoe",
       "relationship": "Naval Academy classmates who became NICAP board colleagues. Keyhoe recruited Hillenkoetter to the board; their combined credentialing made NICAP significantly more difficult for the Air Force to dismiss.",
@@ -143,7 +143,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "kenneth-arnold",
       "node_label": "Kenneth Arnold",
       "relationship": "Arnold's 1947 sighting triggered the institutional response that Hillenkoetter presided over as CIA Director - Project Sign was established within months of the sighting.",

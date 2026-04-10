@@ -124,12 +124,6 @@
       "relationship": "Puthoff appeared on Dreamland and engaged with Strieber's contact framework from the perspective of his own physics-based investigations of anomalous phenomena. Both operate at the intersection of experiencer testimony and institutional scientific inquiry."
     },
     {
-      "id": "joe-semivan",
-      "name": "Joe Semivan",
-      "role": "Retired CIA Operations Officer; experiencer",
-      "relationship": "Semivan - a retired CIA case officer who has publicly described his own contact experiences - appeared on Dreamland and engaged with Strieber's account from the perspective of a cleared intelligence professional with parallel personal testimony. Their exchanges are among the more unusual convergences of intelligence community credentialing and experiencer testimony in the public record."
-    },
-    {
       "id": "george-knapp",
       "name": "George Knapp",
       "role": "Investigative journalist; KLAS-TV Las Vegas; Weaponized co-host",
@@ -183,7 +177,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "john-mack",
       "node_label": "Dr. John E. Mack",
       "relationship": "Mack included Strieber in his Harvard abduction research program and engaged seriously with his testimony, finding no evidence of fabrication or psychopathology.",
@@ -191,19 +185,11 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "diana-pasulka",
       "node_label": "Dr. Diana Pasulka",
       "relationship": "Pasulka treated 'Communion' and 'The Key' as central documents in the cultural and religious history of contact experiences in 'American Cosmic' and 'Encounters,' engaging with Strieber's archive as primary research material.",
       "connection_type": "investigative"
-    },
-    {
-      "event_index": 7,
-      "node_type": "person",
-      "node_id": "joe-semivan",
-      "node_label": "Joe Semivan",
-      "relationship": "Semivan - a retired CIA operations officer with his own contact experiences - appeared on Dreamland, creating an unusual convergence of intelligence community credentialing and experiencer testimony.",
-      "connection_type": "professional"
     }
   ],
   "sources": [

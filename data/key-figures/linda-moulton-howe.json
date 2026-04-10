@@ -139,7 +139,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "john-mack",
       "node_label": "Dr. John E. Mack",
       "relationship": "Parallel credentialed researchers who both brought academic or professional rigor to anomalous phenomena investigation across overlapping decades; Howe from broadcast journalism, Mack from Harvard psychiatry.",
@@ -147,7 +147,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "richard-doty",
       "node_label": "Richard Doty",
       "relationship": "Doty targeted Howe with a fabricated classified briefing document at Kirtland AFB in 1983; the encounter made her a documented victim of AFOSI's disinformation operation and is a key event in understanding how fabricated evidence entered credible UAP journalism.",
@@ -155,7 +155,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Long-term parallel investigative journalists covering UAP and anomalous phenomena across overlapping media environments including Coast to Coast AM and conference circuits spanning multiple decades.",

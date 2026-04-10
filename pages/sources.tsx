@@ -2615,6 +2615,106 @@ const Sources: NextPage = () => {
             description="Published WikiLeaks emails from Tom DeLonge to John Podesta documenting pre-TTSA meetings with active USAF general officers and senior Lockheed executives, and requesting UAP briefings for the incoming Clinton administration. Primary source evidence of the government network that enabled TTSA's 2017 NYT disclosure."
             notes="Used for: Tom DeLonge."
           />
+
+          {/* KF-8: John Alexander */}
+          <SourceCard
+            name="UFOs: Myths, Conspiracies, and Realities - John Alexander (2011)"
+            url="https://www.amazon.com/dp/125000201X"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Alexander's systematic assessment of the UAP evidence base and the primary public documentation of the Advanced Theoretical Physics Conference (ATP, 1985-1988) - the most formally structured cleared interagency UAP investigation between Project Blue Book and AATIP. Foreword by Burt Rutan; introduction by Jacques Vallee."
+            notes="Used for: Col. John Alexander."
+          />
+
+          {/* KF-8: John Callahan */}
+          <SourceCard
+            name="Disclosure Project Testimony - John Callahan (May 2001)"
+            url="https://www.disclosureproject.org/"
+            type="Online Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Callahan's primary public testimony on the JAL Flight 1628 incident and the alleged CIA confiscation of FAA evidentiary materials, presented at the National Press Club alongside 20+ former government witnesses at Steven Greer's Disclosure Project event."
+            notes="Used for: John Callahan."
+          />
+
+          {/* KF-8: Richard Doty */}
+          <SourceCard
+            name="Mirage Men - Mark Pilkington (2013 documentary)"
+            url="https://www.imdb.com/title/tt1728110/"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The definitive documentary examination of Richard Doty's disinformation activities and the Bennewitz affair. Doty participated in the film, partially acknowledging his role in the sustained AFOSI psychological operation against Paul Bennewitz. Primary source for the most complete public account of his operations."
+            notes="Used for: Richard Doty."
+          />
+
+          {/* KF-8: Linda Moulton Howe */}
+          <SourceCard
+            name="A Strange Harvest - Linda Moulton Howe (1980)"
+            url="https://www.earthfiles.com/"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Regional Emmy Award-winning documentary produced for KMGH-TV Denver; the foundational journalistic investigation of the cattle mutilation phenomenon applying systematic forensic analysis including veterinary examinations, law enforcement interviews, and pattern analysis across hundreds of cases."
+            notes="Used for: Linda Moulton Howe."
+          />
+
+          {/* KF-8: Jeremy Corbell */}
+          <SourceCard
+            name="Bob Lazar: Area 51 & Flying Saucers (2018/2019)"
+            url="https://www.netflix.com/title/80174972"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Corbell's defining documentary presenting the definitive contemporary account of Bob Lazar's claims about reverse-engineering alien craft at S-4. Netflix distribution reached tens of millions of viewers and drove the largest modern resurgence of public interest in the Lazar account."
+            notes="Used for: Jeremy Corbell."
+          />
+
+          {/* KF-8: Whitley Strieber */}
+          <SourceCard
+            name="Communion: A True Story - Whitley Strieber (1987)"
+            url="https://www.amazon.com/dp/0061474738"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Strieber's non-fiction account of his December 1985 encounter with non-human beings; international bestseller spending 28 weeks on the New York Times bestseller list. The most widely read first-person contact experience account ever published, providing the cultural vocabulary that millions of experiencers had lacked."
+            notes="Used for: Whitley Strieber."
+          />
+
+          {/* KF-8: Kenneth Arnold */}
+          <SourceCard
+            name="The Coming of the Saucers - Kenneth Arnold and Raymond Palmer (1952)"
+            url="https://www.amazon.com/Coming-Saucers-Documented-Unexplained/dp/B0007DQPF2"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Arnold's first-person account of the June 24, 1947 Mount Rainier sighting and subsequent investigation. Primary source for the incident that coined the term 'flying saucer,' triggered the formation of Project Sign, and launched the modern UAP era."
+            notes="Used for: Kenneth Arnold."
+          />
+
+          {/* KF-8: Roscoe Hillenkoetter */}
+          <SourceCard
+            name="New York Times - Hillenkoetter Congressional Statement (1960)"
+            url="https://www.nytimes.com/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary source for the 1960 public statement attributed to the first CIA Director asserting that high-ranking Air Force officers were 'soberly concerned' about UAPs but that official secrecy and ridicule were preventing honest public engagement - the most significant UAP disclosure statement by any former senior official prior to 2017."
+            notes="Used for: Rear Adm. Roscoe Hillenkoetter."
+          />
+
+          {/* KF-8: Bruce Maccabee */}
+          <SourceCard
+            name="UFO-FBI Connection - Bruce Maccabee (2000)"
+            url="https://www.amazon.com/UFO-FBI-Connection-Secret-History-Government/dp/1567183573"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Maccabee's book documenting the FBI's internal UAP investigative files obtained via FOIA, tracing bureau involvement from 1947 through the late 1950s. Primary published work from one of the few credentialed government physicists to apply professional optical instrumentation methods to UAP photographic evidence."
+            notes="Used for: Dr. Bruce Maccabee."
+          />
+
+          {/* KF-8: Jesse Marcel Jr. */}
+          <SourceCard
+            name="The Roswell Legacy - Jesse Marcel Jr. and Linda Marcel Zimmermann (2009)"
+            url="https://www.amazon.com/Roswell-Legacy-Untold-Military-Officer/dp/1601630204"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="First book-length account of the Marcel family's direct Roswell experience, incorporating both Jesse Marcel Sr.'s intelligence record and Marcel Jr.'s first-person childhood testimony about handling anomalous debris from the Foster Ranch crash site in July 1947."
+            notes="Used for: Col. Jesse Marcel Jr."
+          />
         </section>
 
         {/* Private Defense Contractors */}

@@ -126,7 +126,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "edward-ruppelt",
       "node_label": "Capt. Edward Ruppelt",
       "relationship": "Ruppelt reviewed the Arnold case as Blue Book director and discussed it as a foundational credible case in his 1956 book.",
@@ -134,7 +134,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "donald-keyhoe",
       "node_label": "Maj. Donald Keyhoe",
       "relationship": "Keyhoe made Arnold's sighting the cornerstone of his 1950 book and NICAP's public advocacy for congressional UAP investigation.",

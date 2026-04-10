@@ -148,7 +148,7 @@
   "career_connections": [
     {
       "event_index": 0,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "jesse-marcel",
       "node_label": "Maj. Jesse Marcel Sr.",
       "relationship": "Father brought debris home from the Foster Ranch crash site; Marcel Jr.'s entire Roswell testimony stems from this July 1947 encounter.",
@@ -164,7 +164,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "stanton-friedman",
       "node_label": "Stanton Friedman",
       "relationship": "Friedman's 1978 interview with Marcel Sr. brought Marcel Jr. into the public Roswell disclosure effort.",

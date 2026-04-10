@@ -123,7 +123,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "stanton-friedman",
       "node_label": "Stanton Friedman",
       "relationship": "Friedman spent years attempting to authenticate MJ-12 documents that were part of the disinformation ecosystem Doty helped create; his painstaking work was directly undermined by fabricated materials introduced into the evidentiary record through the Bennewitz operation.",
@@ -131,7 +131,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Knapp investigated and documented Doty's activities through decades of UAP journalism at KLAS-TV and has interviewed him on Weaponized, creating a complex relationship between an investigative journalist and a documented disinformation operative who presents as a source.",
@@ -139,7 +139,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "richard-dolan",
       "node_label": "Richard Dolan",
       "relationship": "Dolan documented the Bennewitz affair and Doty's operations in 'UFOs and the National Security State,' providing the most rigorous historical analysis of how AFOSI disinformation contaminated the UAP research record.",

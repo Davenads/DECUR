@@ -140,7 +140,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Primary mentor and long-term collaborator; Knapp's 30+ year UAP investigative journalism network and original Bob Lazar sourcing provided the institutional foundation that gave Corbell access and credibility he could not have built independently.",
@@ -148,7 +148,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tim-gallaudet",
       "node_label": "Adm. Tim Gallaudet",
       "relationship": "Gallaudet specifically cited Corbell's release of the USS Omaha footage as significant to naval UAP awareness efforts - the most direct institutional endorsement of his work from a credentialed senior military officer.",
@@ -156,7 +156,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tim-burchett",
       "node_label": "Rep. Tim Burchett",
       "relationship": "Burchett entered the Corbell-Knapp 'UAP Puzzle' document into the Congressional Record during the August 2023 House UAP hearing, formally placing Corbell's testimony in official congressional documentation.",

@@ -192,7 +192,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "stanton-friedman",
       "node_label": "Stanton Friedman",
       "relationship": "Co-founded Fund for UFO Research; 40-year collaboration as credentialed physicists in civilian UAP research.",
@@ -200,7 +200,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "robert-bigelow",
       "node_label": "Robert Bigelow",
       "relationship": "Bigelow's NIDS engaged Maccabee for photo and film analysis during the Gulf Breeze-era investigations.",
@@ -208,7 +208,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Dr. Hal Puthoff",
       "relationship": "Parallel physics-credentialed investigators sharing methodological approach across overlapping research networks.",
@@ -216,7 +216,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "colm-kelleher",
       "node_label": "Dr. Colm Kelleher",
       "relationship": "Kelleher's NIDS administration supported Maccabee's post-retirement analytical work under Bigelow funding.",
