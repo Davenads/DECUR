@@ -157,7 +157,7 @@ const MemoTab: FC = () => {
         </div>
         <div className={`${ps.infoCard} sm:col-span-2`}>
           <p className={`${ps.label} mb-1`}>Publicly Leaked</p>
-          <p className={ps.value}>{wilson_davis_memo.leak_date} — {wilson_davis_memo.leak_source}</p>
+          <p className={ps.value}>{wilson_davis_memo.leak_date} - {wilson_davis_memo.leak_source}</p>
         </div>
       </div>
 

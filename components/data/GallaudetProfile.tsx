@@ -29,8 +29,8 @@ const UsoTab: FC = () => (
       <p className="text-xs font-medium text-primary uppercase tracking-wide mb-1">Domain Expertise</p>
       <p className={`${ps.body} leading-relaxed`}>
         Gallaudet is the most credentialed UAP researcher in the oceanic domain. His 30-year Navy career in
-        oceanography and ocean surveillance — including experience with SOSUS (Sound Surveillance System) and
-        submarine acoustic tracking — gives him unique insight into Unidentified Submersible Objects (USOs).
+        oceanography and ocean surveillance - including experience with SOSUS (Sound Surveillance System) and
+        submarine acoustic tracking - gives him unique insight into Unidentified Submersible Objects (USOs).
         His time as Acting NOAA Administrator provided access to the broadest civilian ocean monitoring infrastructure
         in the world.
       </p>
@@ -40,7 +40,7 @@ const UsoTab: FC = () => (
       <h3 className={`${ps.h3} mb-3`}>The Submarine Incident</h3>
       <p className={`${ps.body} leading-relaxed mb-3`}>
         Gallaudet described an incident in which a U.S. nuclear submarine encountered an unidentified submersible
-        object. The object tracked the submarine, stopped it, and followed it from the stern — maneuvers inconsistent
+        object. The object tracked the submarine, stopped it, and followed it from the stern - maneuvers inconsistent
         with any known vessel. The crew initially assessed it as a Soviet (or Russian) attack submarine, a threat
         classification that itself indicates the object produced submarine-like acoustic signatures.
       </p>
@@ -69,7 +69,7 @@ const UsoTab: FC = () => (
       </div>
       <p className={`${ps.body} leading-relaxed`}>
         Gallaudet argues that the oceans represent the most plausible concealment environment for long-term NHI
-        presence — vast, largely unexplored, and historically monitored by surveillance systems (SOSUS, hydrophone
+        presence - vast, largely unexplored, and historically monitored by surveillance systems (SOSUS, hydrophone
         arrays) that are classified and unavailable to civilian researchers. His Sol Foundation white paper
         "Beneath the Surface" outlines the scientific case for prioritizing the oceanic domain in UAP investigation.
       </p>
@@ -78,8 +78,8 @@ const UsoTab: FC = () => (
     <div>
       <h3 className={`${ps.h3} mb-3`}>NOAA Data Suppression Allegation</h3>
       <p className={`${ps.body} leading-relaxed`}>
-        Gallaudet alleges that NOAA's ocean monitoring infrastructure — including hydrophone arrays, satellite
-        altimetry, and deep-sea sensor networks — has recorded anomalous data potentially attributable to USO
+        Gallaudet alleges that NOAA's ocean monitoring infrastructure - including hydrophone arrays, satellite
+        altimetry, and deep-sea sensor networks - has recorded anomalous data potentially attributable to USO
         activity that is not being analyzed through a UAP lens. As former Acting NOAA Administrator, he had
         direct knowledge of these systems. He has called for a dedicated analytical framework within NOAA for
         assessing oceanic anomalies against the UAP hypothesis.

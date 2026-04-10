@@ -35,7 +35,7 @@ const OverviewTab: FC = () => {
       <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/30 rounded-lg p-4">
         <p className="text-xs font-bold text-blue-700 dark:text-blue-400 uppercase tracking-wide mb-1">Government Investigator</p>
         <p className="text-sm text-blue-900 dark:text-blue-100 leading-relaxed">
-          Pope ran the UK Ministry of Defence&apos;s official UAP investigation desk — a documented government role with Top Secret access — making him the closest British equivalent to Luis Elizondo. He entered the role as a skeptic and left as a cautious believer in genuine unknowns.
+          Pope ran the UK Ministry of Defence&apos;s official UAP investigation desk - a documented government role with Top Secret access - making him the closest British equivalent to Luis Elizondo. He entered the role as a skeptic and left as a cautious believer in genuine unknowns.
         </p>
       </div>
 

@@ -949,7 +949,87 @@ const Sources: NextPage = () => {
             typeColor="bg-red-100 text-red-600"
             description="15-page document recording physicist Eric Davis's notes from an alleged 2002 meeting with Vice Admiral Thomas R. Wilson about a private aerospace contractor running a UAP crash retrieval program. Leaked to the TTSA community platform in June 2019; extensively analyzed by UAP researchers for authenticity. Wilson has denied the account."
             coverage="October 2002 (alleged); June 2019 (leaked)"
-            notes="Used for: Eric Davis. Document status: disputed — see Davis case file Wilson-Davis Memo tab."
+            notes="Used for: Eric Davis. Document status: disputed - see Davis case file Wilson-Davis Memo tab."
+          />
+
+          {/* Nick Pope */}
+          <SourceCard
+            name="Open Skies, Closed Minds - Nick Pope (1996)"
+            url="https://www.amazon.com/Open-Skies-Closed-Minds-Government/dp/0684815036"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Pope's firsthand account of running the UK Ministry of Defence's official UFO investigation desk 1991-1994, including methodology, classified access levels, specific cases including the Cosford Incident, and his evolution from skeptic to cautious believer. Primary source for all MoD role and investigation data."
+            notes="Used for: Nick Pope."
+          />
+          <SourceCard
+            name="Encounter in Rendlesham Forest - Nick Pope, John Burroughs, Jim Penniston (2014)"
+            url="https://www.amazon.com/Encounter-Rendlesham-Forest-Definitive-Investigation/dp/1250055415"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Comprehensive account of the 1980 Rendlesham Forest incident co-authored by Pope and the primary USAF witnesses. Incorporates classified MoD records obtained through FOIA. Primary source for the Rendlesham reinvestigation section of the Pope profile."
+            notes="Used for: Nick Pope."
+          />
+
+          {/* Jacques Vallee */}
+          <SourceCard
+            name="Passport to Magonia - Jacques Vallee (1969)"
+            url="https://www.amazon.com/Passport-Magonia-Folklore-Flying-Saucers/dp/0809690357"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Vallee's landmark 1969 work documenting parallels between modern UAP accounts and centuries of folklore, fairy mythology, and religious apparition reports. Primary source for the Theory section and ETH critique in the Vallee profile."
+            notes="Used for: Jacques Vallee."
+          />
+          <SourceCard
+            name="Forbidden Science Vol. 1-4 - Jacques Vallee (1992-2021)"
+            url="https://www.amazon.com/Forbidden-Science-Journals-1957-1969/dp/1938398947"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Four-volume contemporaneous diary series covering 1957-1999. Written as daily entries as events occurred, not reconstructed from memory. Primary source for key_events, the NIDS section, and all documented interactions with government officials and intelligence community contacts."
+            notes="Used for: Jacques Vallee."
+          />
+          <SourceCard
+            name="Jacques Vallee: Forbidden Science - That UFO Podcast (Feb 2025)"
+            url="https://www.youtube.com/watch?v=ZrbAGASyDVE"
+            type="Podcast Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Wide-ranging 2025 interview covering the 240,000-case NIDS database, Trinity crash details, Rice University archive transfer, university UAP research programs, and personal UAP experiences. Source for the most recent claims in the Vallee profile."
+            notes="Used for: Jacques Vallee."
+          />
+
+          {/* Jake Barber */}
+          <SourceCard
+            name="NewsNation - UAP Whistleblower Says UFO Retrieval Program Exists"
+            url="https://www.newsnationnow.com/space/ufo/uap-whistleblower-ufo-retrieval-program/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Primary NewsNation article and broadcast coverage of Jake Barber's January 18, 2025 disclosure. First public account by Barber of his participation in a covert UAP crash retrieval program, including on-camera corroboration from three additional military veterans."
+            notes="Used for: Jake Barber."
+          />
+          <SourceCard
+            name="NewsNation - Full Special: Whistleblower Reveals UAP Retrieval Program"
+            url="https://www.newsnationnow.com/space/ufo/hfr-uap-recovery-video-egg-shaped-object-exclusive/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Full NewsNation special broadcast including the egg-shaped object retrieval video footage presented by Barber. Primary source for the evidence and claims sections of the Barber profile."
+            notes="Used for: Jake Barber."
+          />
+
+          {/* Tim Gallaudet */}
+          <SourceCard
+            name="House Oversight Committee - Written Testimony of Dr. Tim Gallaudet (November 2024)"
+            url="https://oversight.house.gov/wp-content/uploads/2024/11/Updated-Testimony-Gallaudet.pdf"
+            type="Congressional Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Gallaudet's formal written testimony submitted under oath to the House Oversight Committee. Describes Navy suppression of UAP data, submersible UAP incidents, and calls for mandatory reporting. Most legally significant primary source for the Gallaudet profile."
+            notes="Used for: Tim Gallaudet."
+          />
+          <SourceCard
+            name="NewsNation Reality Check - Tim Gallaudet: 'We Are in Contact with NHI' (June 2024)"
+            url="https://www.newsnationnow.com/space/ufo/navy-officer-supports-ufo-claims/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="NewsNation Reality Check interview with Ross Coulthart in which Gallaudet publicly stated 'we are in contact with non-human intelligence.' Most widely viewed Gallaudet appearance; source for NHI contact claim and Grusch endorsement."
+            notes="Used for: Tim Gallaudet."
           />
 
           {/* Robert Bigelow */}

@@ -6,7 +6,7 @@
     "born": "Not publicly disclosed",
     "roles": [
       "U.S. Air Force Special Operations Veteran",
-      "Government Contractor — Covert UAP Retrieval Program",
+      "Government Contractor - Covert UAP Retrieval Program",
       "UAP Disclosure Whistleblower"
     ],
     "service_period": "c. 1990s–2010s (military); extended through contractor role",
@@ -15,9 +15,9 @@
       "Unidentified Private Defense Contractor (UAP Retrieval Program)"
     ],
     "clearance": "Top Secret / SCI (reported; exact compartments not publicly specified)",
-    "summary": "Jake Barber is a U.S. Air Force special operations veteran who came forward publicly in January 2025, in an exclusive interview with journalist Ross Coulthart for NewsNation, to disclose his firsthand participation in a covert government UAP crash retrieval program. Barber claims to have directly participated in multiple retrieval operations — including one involving an egg-shaped craft — and presented never-before-seen video footage of such an operation to NewsNation. Three additional high-level military veterans corroborated his account on camera. The Pentagon confirmed it was investigating his claims following broadcast. Barber is one of the first insiders to speak on the record with this level of operational specificity since David Grusch's 2023 congressional testimony.",
+    "summary": "Jake Barber is a U.S. Air Force special operations veteran who came forward publicly in January 2025, in an exclusive interview with journalist Ross Coulthart for NewsNation, to disclose his firsthand participation in a covert government UAP crash retrieval program. Barber claims to have directly participated in multiple retrieval operations - including one involving an egg-shaped craft - and presented never-before-seen video footage of such an operation to NewsNation. Three additional high-level military veterans corroborated his account on camera. The Pentagon confirmed it was investigating his claims following broadcast. Barber is one of the first insiders to speak on the record with this level of operational specificity since David Grusch's 2023 congressional testimony.",
     "education": [
-      "U.S. Air Force training — specific details not publicly disclosed"
+      "U.S. Air Force training - specific details not publicly disclosed"
     ],
     "early_career": [
       "Served in U.S. Air Force Special Operations Command",
@@ -26,23 +26,23 @@
     ],
     "key_events": [
       {
-        "date": "1990s–2000s",
+        "year": "1990s-2000s",
         "event": "Active duty U.S. Air Force, Special Operations. Specific units and roles not publicly disclosed."
       },
       {
-        "date": "Post-service",
-        "event": "Transitions to government contractor role; becomes involved with a compartmented UAP retrieval program — exact timeline not publicly specified."
+        "year": "Post-service",
+        "event": "Transitions to government contractor role; becomes involved with a compartmented UAP retrieval program - exact timeline not publicly specified."
       },
       {
-        "date": "c. 2022–2023",
+        "year": "c. 2022-2023",
         "event": "Barber contacts Ross Coulthart of NewsNation to share his account. Corroboration gathered from three additional named military veterans."
       },
       {
-        "date": "January 2025",
+        "year": "Jan 2025",
         "event": "Barber provides video footage and full on-camera account to NewsNation. The special 'Hunting UFOs: The Crash Retrieval Whistleblower' airs January 18, 2025 at 8 p.m. ET."
       },
       {
-        "date": "January 2025",
+        "year": "Jan 2025",
         "event": "Pentagon confirms it has opened an investigation into Barber's claims following the NewsNation broadcast."
       }
     ]
@@ -58,14 +58,14 @@
     {
       "id": "egg-shaped-object",
       "category": "craft description",
-      "claim": "During one retrieval operation, Barber's team recovered an egg-shaped, white craft of unknown origin. He describes the object as distinctly anomalous — not matching any known U.S. or foreign aerospace design.",
+      "claim": "During one retrieval operation, Barber's team recovered an egg-shaped, white craft of unknown origin. He describes the object as distinctly anomalous - not matching any known U.S. or foreign aerospace design.",
       "status": "unverified",
       "notes": "Barber described the object as 'a white egg.' Video footage of the retrieval operation, described as never-before-seen, was presented to NewsNation and aired during the January 18, 2025 special."
     },
     {
       "id": "video-evidence",
       "category": "physical evidence",
-      "claim": "Barber provided NewsNation with video footage of a UAP retrieval operation — described as the first time such operational footage has ever been publicly aired.",
+      "claim": "Barber provided NewsNation with video footage of a UAP retrieval operation - described as the first time such operational footage has ever been publicly aired.",
       "status": "partially-verified",
       "notes": "NewsNation broadcast the footage and reported it as genuine. Independent authentication of the footage's provenance and content has not been completed as of the broadcast date. The footage was edited/partially obscured to protect operational security and identities."
     },
@@ -93,10 +93,10 @@
   ],
   "credibility": {
     "supporting": [
-      "Three additional military veterans corroborated his account on camera — a higher level of contemporaneous on-record corroboration than most prior disclosures",
-      "Video footage of a retrieval operation was provided and broadcast — unprecedented in the modern UAP disclosure landscape",
+      "Three additional military veterans corroborated his account on camera - a higher level of contemporaneous on-record corroboration than most prior disclosures",
+      "Video footage of a retrieval operation was provided and broadcast - unprecedented in the modern UAP disclosure landscape",
       "Pentagon's confirmation of an investigation following broadcast suggests the claims were taken seriously at an institutional level",
-      "Ross Coulthart — the journalist who broke the story — is one of the most credentialed UAP investigative reporters in the field and spent considerable time vetting the account prior to broadcast",
+      "Ross Coulthart - the journalist who broke the story - is one of the most credentialed UAP investigative reporters in the field and spent considerable time vetting the account prior to broadcast",
       "NewsNation's editorial process and legal review would have required a high bar for airing such specific operational claims",
       "Barber's Air Force special operations background is consistent with the type of personnel who would be recruited for compartmented recovery operations",
       "Disclosure made voluntarily, with apparent personal risk, without financial incentive from the interview itself"
@@ -105,7 +105,7 @@
       "No government agency has confirmed the existence of the retrieval program Barber describes; the Pentagon's investigation is of his claims, not a confirmation",
       "The video footage aired by NewsNation has not been independently authenticated by a third party with verified chain of custody",
       "Barber's specific background, units served, and operational timeline are largely not publicly verifiable",
-      "Barber is less embedded in the established DC UAP disclosure community than figures like Grusch or Elizondo — raising questions about his institutional positioning",
+      "Barber is less embedded in the established DC UAP disclosure community than figures like Grusch or Elizondo - raising questions about his institutional positioning",
       "No formal ICIG complaint or legal whistleblower filing has been publicly confirmed, unlike Grusch's 2022 protected disclosure",
       "The specific corroborating witnesses were not all fully identified in the initial broadcast, limiting independent verification"
     ]
@@ -121,13 +121,7 @@
       "id": "david-grusch",
       "name": "David Grusch",
       "role": "Former NRO representative, DoD UAP Task Force",
-      "relationship": "Grusch's 2023 testimony — the first to describe crash retrieval programs at a congressional level — preceded and contextualized Barber's disclosure. Barber's claims are operationally complementary to Grusch's institutional account."
-    },
-    {
-      "id": "jake-barber-corroborators",
-      "name": "Three Military Veterans (unnamed as of broadcast)",
-      "role": "Additional military veterans with program knowledge",
-      "relationship": "Appeared on camera alongside Barber to corroborate the existence of the retrieval program and their own participation or knowledge of it."
+      "relationship": "Grusch's 2023 testimony - the first to describe crash retrieval programs at a congressional level - preceded and contextualized Barber's disclosure. Barber's claims are operationally complementary to Grusch's institutional account."
     }
   ],
   "disclosures": [
@@ -142,19 +136,19 @@
   ],
   "sources": [
     {
-      "title": "NewsNation — UAP Whistleblower Says UFO Retrieval Program Exists",
+      "title": "NewsNation - UAP Whistleblower Says UFO Retrieval Program Exists",
       "url": "https://www.newsnationnow.com/space/ufo/uap-whistleblower-ufo-retrieval-program/",
       "type": "television-interview",
       "notes": "Primary NewsNation article covering the Barber disclosure and the January 18, 2025 special"
     },
     {
-      "title": "NewsNation — Full Special: Whistleblower Reveals UAP Retrieval Program",
+      "title": "NewsNation - Full Special: Whistleblower Reveals UAP Retrieval Program",
       "url": "https://www.newsnationnow.com/space/ufo/hfr-uap-recovery-video-egg-shaped-object-exclusive/",
       "type": "primary-source",
       "notes": "Full special broadcast page including the egg-shaped object video"
     },
     {
-      "title": "Pentagon Investigates UFO Whistleblower Jake Barber's Claims — NewsNation",
+      "title": "Pentagon Investigates UFO Whistleblower Jake Barber's Claims - NewsNation",
       "url": "https://www.newsnationnow.com/space/ufo/pentagon-investigates-ufo-claims/",
       "type": "government-response",
       "notes": "NewsNation reporting on Pentagon's confirmation of investigation following broadcast"

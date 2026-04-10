@@ -32,7 +32,7 @@ const DisclosureTab: FC = () => {
         <p className={`${ps.body} leading-relaxed`}>
           Jake Barber's public disclosure was made through investigative journalist Ross Coulthart of NewsNation.
           Unlike institutional whistleblowers such as David Grusch who filed formal ICIG complaints, Barber chose
-          a direct media path — providing operational details, corroborating witnesses, and previously unseen video
+          a direct media path - providing operational details, corroborating witnesses, and previously unseen video
           footage of a retrieval operation in a single broadcast.
         </p>
       </div>
@@ -82,7 +82,7 @@ const EvidenceTab: FC = () => (
       <h3 className={`${ps.h3} mb-2`}>Retrieval Video Footage</h3>
       <p className={`${ps.body} leading-relaxed mb-3`}>
         Barber provided NewsNation with video footage of a UAP retrieval operation involving an egg-shaped white object.
-        The footage was described by NewsNation as never-before-seen operational footage — the first time video of an
+        The footage was described by NewsNation as never-before-seen operational footage - the first time video of an
         alleged crash/retrieval operation has been broadcast in the modern disclosure era. The footage was partially
         obscured to protect operational security and the identities of personnel.
       </p>
@@ -100,7 +100,7 @@ const EvidenceTab: FC = () => (
       <h3 className={`${ps.h3} mb-3`}>On-Camera Corroboration</h3>
       <p className={`${ps.body} leading-relaxed mb-3`}>
         Three additional high-level military veterans appeared on camera during the NewsNation special to corroborate
-        Barber's account. This is a qualitatively different form of corroboration than secondhand references — these
+        Barber's account. This is a qualitatively different form of corroboration than secondhand references - these
         individuals placed their identities and careers on the record in the same broadcast.
       </p>
       <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800/30 rounded-lg p-4">
@@ -116,7 +116,7 @@ const EvidenceTab: FC = () => (
       <h3 className={`${ps.h3} mb-2`}>Pentagon Investigation</h3>
       <p className={`${ps.body} leading-relaxed`}>
         Following the January 18 broadcast, the Pentagon confirmed it had opened a formal investigation into Barber's
-        claims. This institutional response — while not a confirmation of the program — is more direct than the
+        claims. This institutional response - while not a confirmation of the program - is more direct than the
         Pentagon's typical response to UAP whistleblower disclosures, which historically has been no comment or
         categorical denial.
       </p>
