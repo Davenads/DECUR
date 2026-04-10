@@ -65,8 +65,8 @@ interface CanvasProps {
   filteredCases: MapCase[];
   filteredEvents: MapEvent[];
   activeMarker: ActiveMarker;
-  onHoverCase: (c: MapCase | null) => void;
-  onHoverEvent: (e: MapEvent | null) => void;
+  onSelectCase: (c: MapCase | null) => void;
+  onSelectEvent: (e: MapEvent | null) => void;
   isDark: boolean;
   zoom: number;
   center: [number, number];
@@ -75,7 +75,7 @@ interface CanvasProps {
 
 const MapCanvas: FC<CanvasProps> = ({
   filteredCases, filteredEvents, activeMarker,
-  onHoverCase, onHoverEvent, isDark, zoom, center, onMoveEnd,
+  onSelectCase, onSelectEvent, isDark, zoom, center, onMoveEnd,
 }) => {
   const mapBg     = isDark ? '#111827' : '#e8f4fd';
   const geoBg     = isDark ? '#1f2937' : '#d1e8f5';
@@ -126,14 +126,12 @@ const MapCanvas: FC<CanvasProps> = ({
             const hitR = 24 / zoom;
             const handleSelect = (e: React.MouseEvent | React.TouchEvent) => {
               e.stopPropagation();
-              onHoverEvent(isHovered ? null : ev);
+              onSelectEvent(isHovered ? null : ev);
             };
             return (
               <Marker
                 key={`ev-${ev.id}`}
                 coordinates={[ev.lng, ev.lat]}
-                onMouseEnter={() => onHoverEvent(ev)}
-                onMouseLeave={() => onHoverEvent(null)}
               >
                 {/* Transparent hit area — also handles touch taps */}
                 <circle
@@ -165,14 +163,12 @@ const MapCanvas: FC<CanvasProps> = ({
             const hitR = 28 / zoom;
             const handleSelect = (e: React.MouseEvent | React.TouchEvent) => {
               e.stopPropagation();
-              onHoverCase(isHovered ? null : c);
+              onSelectCase(isHovered ? null : c);
             };
             return (
               <Marker
                 key={`case-${c.id}`}
                 coordinates={[c.coordinates.lng, c.coordinates.lat]}
-                onMouseEnter={() => onHoverCase(c)}
-                onMouseLeave={() => onHoverCase(null)}
               >
                 {/* Transparent hit area — also handles touch taps */}
                 <circle
@@ -296,8 +292,8 @@ const CaseMap: FC<Props> = ({ cases, events }) => {
           filteredCases={filteredCases}
           filteredEvents={filteredEvents}
           activeMarker={activeMarker}
-          onHoverCase={c => setActiveMarker(c ? { type: 'case', data: c } : null)}
-          onHoverEvent={e => setActiveMarker(e ? { type: 'event', data: e } : null)}
+          onSelectCase={c => setActiveMarker(c ? { type: 'case', data: c } : null)}
+          onSelectEvent={e => setActiveMarker(e ? { type: 'event', data: e } : null)}
           isDark={isDark}
           zoom={zoom}
           center={center}
@@ -381,7 +377,7 @@ const CaseMap: FC<Props> = ({ cases, events }) => {
           </div>
         ) : (
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            Hover or tap a marker to see incident details
+            Click a marker to see incident details. Click again to deselect.
           </p>
         )}
       </div>
