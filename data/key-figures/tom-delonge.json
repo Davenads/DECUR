@@ -150,7 +150,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "luis-elizondo",
       "node_label": "Luis Elizondo",
       "relationship": "The most central figure in DeLonge's UAP work; Elizondo joined TTSA upon resigning from the Pentagon in October 2017 and is the primary figure through whom TTSA obtained the Navy UAP videos and the AATIP narrative that drove the December 2017 NYT disclosure.",
@@ -158,7 +158,7 @@
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Dr. Hal Puthoff",
       "relationship": "Provided scientific and classified-program credibility as TTSA's Vice President of Science and Technology; his prior SRI and DIA contractor work gave TTSA institutional depth that DeLonge could not supply himself.",

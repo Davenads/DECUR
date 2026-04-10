@@ -2515,6 +2515,106 @@ const Sources: NextPage = () => {
             description="30-page theoretical paper presented at the 2003 NIDS conference by Jacques Vallee and Eric W. Davis. Proposes a 6-layer phenomenological model for UAP, arguing phenomena are incommensurable with conventional physics. Primary reference for the incommensurability framework cited in subsequent UAP research."
             notes="Used for: Vallee-Davis Incommensurability document entry."
           />
+
+          {/* KF-7: Peter Sturrock */}
+          <SourceCard
+            name="The UFO Enigma: A New Review of the Physical Evidence - Peter Sturrock (1999)"
+            url="https://www.amazon.com/UFO-Enigma-Review-Physical-Evidence/dp/0446675865"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Comprehensive scientific review of physical UAP evidence by Stanford Professor Emeritus Peter A. Sturrock, covering radiation effects, vehicle interference, physiological effects, and trace evidence. Companion volume to the 1997 Sturrock Panel and the most rigorous mainstream scientific treatment of physical UAP evidence published to that date."
+            notes="Used for: Peter Sturrock."
+          />
+
+          {/* KF-7: Nathan Twining */}
+          <SourceCard
+            name="The Twining Memo (September 23, 1947) - National Archives"
+            url="https://www.archives.gov/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Authenticated classified letter from Gen. Nathan Twining to Brig. Gen. George Schulgen formally concluding flying saucers are real and recommending a permanent classified study group. Held in National Archives Record Group 341, Entry 267. Declassified 1965; the foundational official UAP document and direct precursor to Projects Sign, Grudge, and Blue Book."
+            notes="Used for: Nathan Twining."
+          />
+
+          {/* KF-7: Jesse Marcel */}
+          <SourceCard
+            name="The Roswell Incident - Charles Berlitz and William Moore (1980)"
+            url="https://www.amazon.com/Roswell-Incident-Charles-Berlitz/dp/0448143038"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="First major book on Roswell built substantially on Jesse Marcel Sr.'s firsthand account of recovering the debris field. Berlitz and Moore conducted primary interviews with Marcel and other witnesses. Grosset and Dunlap, 1980."
+            notes="Used for: Jesse Marcel."
+          />
+
+          {/* KF-7: James Fox */}
+          <SourceCard
+            name="The Phenomenon (documentary, 2020) - James Fox"
+            url="https://www.amazon.com/Phenomenon-Nick-Pope/dp/B08KFKGX1L"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Widely considered the most credible UAP documentary ever produced; features on-record statements from former heads of state, senior military officers, and scientists including Jacques Vallee. Distributed by 1091 Pictures. Received mainstream coverage in The Guardian and Washington Post and contributed to the 2020-2021 UAP disclosure wave."
+            notes="Used for: James Fox."
+          />
+
+          {/* KF-7: Fife Symington */}
+          <SourceCard
+            name="I Know What I Saw (documentary, 2009) - James Fox"
+            url="https://www.imdb.com/title/tt1579482/"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="James Fox documentary aired on the History Channel featuring former Arizona Governor Fife Symington's on-camera account of personally witnessing the Phoenix Lights craft on March 13, 1997. Symington's extended recantation of his 1997 mockery of witnesses is the primary source for his profile."
+            notes="Used for: Fife Symington."
+          />
+
+          {/* KF-7: Michael Herrera */}
+          <SourceCard
+            name="House Oversight Subcommittee UAP Hearing - Herrera Testimony (Jul 2023)"
+            url="https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official transcript of the July 26, 2023 House Oversight Subcommittee hearing. Includes Michael Herrera's sworn opening statement describing the 2009 Sumatra octagonal craft encounter, the threatening personnel in unmarked uniforms, and the subsequent military suppression of his patrol."
+            notes="Used for: Michael Herrera."
+          />
+
+          {/* KF-7: Barry Goldwater */}
+          <SourceCard
+            name="Barry Goldwater UAP Correspondence (1970s-1990s) - National Archives"
+            url="https://catalog.archives.gov/id/596330"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="143 pages of Sen. Barry Goldwater's UAP-related correspondence released by the National Archives in 2012, spanning the 1970s through 1990s. Includes the landmark 1975 Arnon letter documenting Goldwater's attempt to access the 'Blue Room' at Wright-Patterson AFB and General LeMay's refusal. Primary source confirming decades of consistent statements about classified UAP holdings."
+            notes="Used for: Barry Goldwater."
+          />
+
+          {/* KF-7: Robert Salas */}
+          <SourceCard
+            name="Faded Giant - Robert Salas and James Klotz (2005)"
+            url="https://www.amazon.com/dp/1419620614"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="The first systematic, document-backed account of the March 1967 Malmstrom AFB Echo Flight incident co-authored by USAF Captain Robert Salas and researcher James Klotz. Incorporates declassified USAF investigation records, incident reports, and corroborating witness statements. BookSurge Publishing, 2005."
+            notes="Used for: Robert Salas."
+          />
+
+          {/* KF-7: Edgar Mitchell */}
+          <SourceCard
+            name="The Way of the Explorer - Edgar Mitchell (1996)"
+            url="https://www.amazon.com/dp/1564148718"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Apollo 14 astronaut Edgar Mitchell's memoir covering his lunar surface experience, the mystical episode during the return trip to Earth, his founding of the Institute of Noetic Sciences in 1973, and off-the-record briefings from retired officials about UAP suppression. Primary written source for Mitchell's UAP convictions and their origins. G.P. Putnam's Sons, 1996."
+            notes="Used for: Edgar Mitchell."
+          />
+
+          {/* KF-7: Tom DeLonge */}
+          <SourceCard
+            name="WikiLeaks Podesta Emails - Tom DeLonge (2015-2016)"
+            url="https://wikileaks.org/podesta-emails/emailid/39222"
+            type="Primary Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Published WikiLeaks emails from Tom DeLonge to John Podesta documenting pre-TTSA meetings with active USAF general officers and senior Lockheed executives, and requesting UAP briefings for the incoming Clinton administration. Primary source evidence of the government network that enabled TTSA's 2017 NYT disclosure."
+            notes="Used for: Tom DeLonge."
+          />
         </section>
 
         {/* Private Defense Contractors */}

@@ -121,7 +121,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "edward-ruppelt",
       "node_label": "Edward Ruppelt",
       "relationship": "Ruppelt led Project Blue Book, the program that grew directly from Twining's institutional recommendation",
@@ -129,7 +129,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "j-allen-hynek",
       "node_label": "J. Allen Hynek",
       "relationship": "Hynek served as scientific consultant to the Blue Book program created by Twining's recommendation",

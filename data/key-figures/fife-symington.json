@@ -126,11 +126,11 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "james-fox",
       "node_label": "James Fox",
       "relationship": "Fox provided the platform for Symington's 2007 public recantation through 'I Know What I Saw'; Symington is one of Fox's most prominent on-the-record official sources",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 2,

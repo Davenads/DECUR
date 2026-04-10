@@ -138,23 +138,23 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Both testified at the July 2023 House Oversight hearing; both filed whistleblower complaints with the ICIG regarding UAP programs",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ryan-graves",
       "node_label": "Ryan Graves",
       "relationship": "Co-testified at the July 2023 House Oversight hearing; both are military veterans and UAP witnesses from different service branches",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "mike-gallagher",
       "node_label": "Mike Gallagher",
       "relationship": "Gallagher co-chaired the July 2023 hearing where Herrera testified",
@@ -162,7 +162,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tim-burchett",
       "node_label": "Tim Burchett",
       "relationship": "Burchett co-organized the July 2023 hearing and publicly supported Herrera's testimony",

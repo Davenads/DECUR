@@ -129,35 +129,35 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "jacques-vallee",
       "node_label": "Jacques Vallee",
       "relationship": "Vallee appeared in 'The Phenomenon' and has been a key source and collaborator for Fox's documentary work",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "leslie-kean",
       "node_label": "Leslie Kean",
       "relationship": "Close collaborative relationship; both are credentialed journalists who have worked to legitimize UAP research",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "nick-pope",
       "node_label": "Nick Pope",
       "relationship": "Pope appeared in Fox's documentaries and has been a recurring on-the-record source for institutional UK perspective",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     },
     {
       "event_index": 0,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Fellow investigative journalist covering UAP; shared interview networks and collaborative relationship over decades",
-      "connection_type": "collaborative"
+      "connection_type": "professional"
     }
   ],
   "sources": [

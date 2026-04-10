@@ -159,7 +159,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "robert-hastings",
       "node_label": "Robert Hastings",
       "relationship": "Primary research collaborator who connected with Salas in the mid-1990s; Hastings had independently documented the Malmstrom incident through FOIA requests and together they developed the systematic documentary case for the nuclear-UAP nexus.",
@@ -167,7 +167,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "charles-halt",
       "node_label": "Lt. Col. Charles Halt",
       "relationship": "Fellow senior USAF officer and UAP witness who co-participated in nuclear and military UAP disclosure events; both submitted signed affidavits and have appeared together advocating for government transparency on UAP incidents at military installations.",

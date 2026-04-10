@@ -165,7 +165,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Dr. Hal Puthoff",
       "relationship": "Puthoff's remote viewing and consciousness research at Stanford Research Institute in the 1970s directly intersected with Mitchell's investigation of anomalous cognition following Apollo 14; both operated at the credentialed intersection of physics and consciousness research during overlapping periods.",
@@ -173,7 +173,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "john-mack",
       "node_label": "Dr. John E. Mack",
       "relationship": "Parallel credentialed academics who both pursued UAP-adjacent consciousness and anomalous phenomena research from within established institutions; Mitchell through IONS, Mack through Harvard's Department of Psychiatry.",
@@ -181,7 +181,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "steven-greer",
       "node_label": "Dr. Steven M. Greer",
       "relationship": "Mitchell participated in Greer's 2001 Disclosure Project NPC event before publicly distancing himself, stating Greer had mischaracterized him as a direct UAP witness; the collaboration and subsequent estrangement reflect Mitchell's careful distinction between secondhand conviction and firsthand evidence.",
