@@ -952,6 +952,24 @@ const Sources: NextPage = () => {
             notes="Used for: Eric Davis. Document status: disputed — see Davis case file Wilson-Davis Memo tab."
           />
 
+          {/* Robert Bigelow */}
+          <SourceCard
+            name="Skinwalkers at the Pentagon - James T. Lacatski, Colm Kelleher, George Knapp (2021)"
+            url="https://www.amazon.com/Skinwalkers-Pentagon-Insiders-Account-Government/dp/B09J3CQSLB"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="First-person DIA account of the AAWSAP program identifying BAASS as the primary contractor under Robert Bigelow. Primary source for the Bigelow-DIA contracting relationship, program scope, and the 38 Defense Intelligence Reference Documents."
+            notes="Used for: Robert Bigelow."
+          />
+          <SourceCard
+            name="CBS 60 Minutes - Bigelow Interview (May 28, 2017)"
+            url="https://www.cbsnews.com/news/ufo-sightings-60-minutes-2021-05-16/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Bigelow's on-record CBS 60 Minutes interview with Lara Logan in which he stated he is 'absolutely convinced' that extraterrestrials exist and have visited Earth. Primary source for his public disclosure and direct claim."
+            notes="Used for: Robert Bigelow."
+          />
+
           <SourceCard
             name="StantonFriedman.com - Official Website"
             url="http://www.stantonfriedman.com"

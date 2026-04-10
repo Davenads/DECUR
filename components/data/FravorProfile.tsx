@@ -100,20 +100,20 @@ const EvidenceTab: FC = () => {
       <div>
         <h3 className={`${ps.h3} mb-2`}>FLIR1 "Tic Tac" Video</h3>
         <p className={`${ps.body} leading-relaxed mb-3`}>
-          The FLIR1 video — commonly called the "Tic Tac video" — was captured on November 14, 2004 by Lt. Chad Underwood
+          The FLIR1 video - commonly called the "Tic Tac video" - was captured on November 14, 2004 by Lt. Chad Underwood
           aboard a separate F/A-18 on a different contact in the same exercise area. Fravor was not present for the filming.
           The Pentagon officially confirmed the footage as authentic Navy gun-camera footage of unidentified aerial phenomena in April 2019.
         </p>
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800/30 rounded-lg p-4">
           <p className="text-xs font-medium text-green-700 dark:text-green-400 uppercase tracking-wide mb-1">Pentagon Status</p>
-          <p className="text-sm text-green-900 dark:text-green-100">Officially authenticated as genuine U.S. Navy footage — April 2019</p>
+          <p className="text-sm text-green-900 dark:text-green-100">Officially authenticated as genuine U.S. Navy footage - April 2019</p>
         </div>
       </div>
 
       <div>
         <h3 className={`${ps.h3} mb-2`}>Radar Tracking</h3>
         <p className={`${ps.body} leading-relaxed mb-3`}>
-          USS Princeton's AN/SPY-1B Aegis Combat System — among the most advanced radar systems in the U.S. fleet —
+          USS Princeton's AN/SPY-1B Aegis Combat System - among the most advanced radar systems in the U.S. fleet -
           tracked unidentified objects for approximately two weeks before the November 14 visual intercept. The objects
           were observed descending from 80,000 feet to near sea-level and returning.
         </p>
@@ -121,7 +121,7 @@ const EvidenceTab: FC = () => {
           <p className="text-xs font-medium text-amber-700 dark:text-amber-400 uppercase tracking-wide mb-1">AARO Assessment</p>
           <p className="text-sm text-amber-900 dark:text-amber-100">
             AARO's 2024 report suggested some radar anomalies may have been attributable to a radar mode switching software
-            update — but did not account for the visual encounter or the object's behaviors observed by four aviators.
+            update - but did not account for the visual encounter or the object's behaviors observed by four aviators.
           </p>
         </div>
       </div>
@@ -143,7 +143,7 @@ const EvidenceTab: FC = () => {
           </div>
           <div className={ps.borderCard}>
             <h4 className={`${ps.h4Inline} mb-1`}>USS Princeton CIC Radar Operators</h4>
-            <p className={ps.body}>Tracked the anomalous contacts on the Aegis radar system. Reported the object's return to the CAP point within seconds of Fravor's intercept attempt — approximately 60 miles in under 2 seconds.</p>
+            <p className={ps.body}>Tracked the anomalous contacts on the Aegis radar system. Reported the object's return to the CAP point within seconds of Fravor's intercept attempt - approximately 60 miles in under 2 seconds.</p>
           </div>
         </div>
       </div>

@@ -68,7 +68,7 @@ const OverviewTab: FC = () => {
 
       <div>
         <h4 className={`${ps.h4} mb-3`}>Career Timeline</h4>
-        <TimelineList events={profile.key_events.map(e => ({ year: e.date, event: e.event }))} />
+        <TimelineList events={profile.key_events.map(e => ({ year: e.year, event: e.event }))} />
       </div>
     </div>
   );

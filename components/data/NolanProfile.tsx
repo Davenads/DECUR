@@ -38,7 +38,7 @@ const ResearchTab: FC = () => {
       <div>
         <div className="flex items-center gap-2 mb-3">
           <span className="w-1 h-5 bg-primary rounded-full" />
-          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">CIA Consultation — Brain Morphology Study</h3>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100">CIA Consultation - Brain Morphology Study</h3>
         </div>
         <div className={`${ps.borderCardLg} space-y-4`}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
