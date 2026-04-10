@@ -20,10 +20,15 @@ interface SearchItem {
   title: string;
   subtitle?: string | null;
   description: string;
+  /** Aggregated full-text content for deeper search (disclosures, key events, claims, findings). Lower weight in Fuse. */
+  fullText?: string;
   href: string;
   badge?: string;
   aliases?: string[];
 }
+
+const MAX_FULL_TEXT = 1500; // chars per item — keeps serialized page prop manageable
+const MAX_PER_TYPE  = 10;   // max results shown per type before "refine" nudge
 
 interface SearchPageProps {
   corpus: SearchItem[];
@@ -42,52 +47,87 @@ export const getStaticProps: GetStaticProps<SearchPageProps> = async () => {
       categories: string[];
     }> = require('../data/timeline.json');
 
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { insiderRegistry } = require('../data/key-figures/registry') as {
+      insiderRegistry: Record<string, Record<string, unknown>>;
+    };
+
     const corpus: SearchItem[] = [];
 
-    // Insiders
+    // Insiders — index.json metadata + deep profile content (disclosures, key_events, claims)
     for (const ins of insidersData as Array<{
       id: string; name: string; role?: string; affiliation?: string;
       summary?: string; tags?: string[]; aliases?: string[];
     }>) {
+      const profile = insiderRegistry[ins.id] as Record<string, unknown> | undefined;
+
+      const disclosureText = (profile?.disclosures as Array<{ title?: string; notes?: string }> ?? [])
+        .map(d => [d.title, d.notes].filter(Boolean).join(' '))
+        .join(' ');
+
+      const keyEventText = (
+        (profile?.profile as { key_events?: Array<{ event: string }> } | undefined)?.key_events ?? []
+      ).map(e => e.event).join(' ');
+
+      const claimsText = Array.isArray(profile?.claims)
+        ? (profile.claims as Array<{ claim: string }>).map(c => c.claim).join(' ')
+        : '';
+
+      const fullText = [disclosureText, keyEventText, claimsText]
+        .filter(Boolean).join(' ').slice(0, MAX_FULL_TEXT);
+
       corpus.push({
         id: `insider-${ins.id}`,
         type: 'insider',
         title: ins.name,
         subtitle: ins.role ?? ins.affiliation ?? null,
         description: ins.summary ?? ins.tags?.join(', ') ?? '',
+        fullText: fullText || undefined,
         href: `/figures/${ins.id}`,
         badge: 'Key Figure',
         aliases: ins.aliases ?? [],
       });
     }
 
-    // Documented Cases
+    // Documented Cases — summary + key facts + witness testimony
     for (const c of casesData as Array<{
       id: string; name: string; date: string; location: string;
       summary: string; tags: string[];
+      overview?: { key_facts?: string[] };
+      witnesses?: Array<{ testimony: string }>;
     }>) {
+      const keyFacts = (c.overview?.key_facts ?? []).join(' ');
+      const witnessText = (c.witnesses ?? []).map(w => w.testimony).join(' ');
+      const fullText = [keyFacts, witnessText].filter(Boolean).join(' ').slice(0, MAX_FULL_TEXT);
+
       corpus.push({
         id: `case-${c.id}`,
         type: 'case',
         title: c.name,
         subtitle: `${c.date} · ${c.location}`,
         description: c.summary,
+        fullText: fullText || undefined,
         href: `/cases/${c.id}`,
         badge: 'Documented Case',
       });
     }
 
-    // Declassified Documents
+    // Declassified Documents — summary + key findings + significance
     for (const doc of documentsData as Array<{
       id: string; name: string; date: string; issuing_authority: string;
       document_type: string; summary: string; significance: string;
+      key_findings?: string[];
     }>) {
+      const findingsText = (doc.key_findings ?? []).join(' ');
+      const fullText = [findingsText, doc.significance].filter(Boolean).join(' ').slice(0, MAX_FULL_TEXT);
+
       corpus.push({
         id: `document-${doc.id}`,
         type: 'document',
         title: doc.name,
         subtitle: `${doc.issuing_authority} · ${doc.date}`,
         description: doc.summary ?? doc.significance ?? '',
+        fullText: fullText || undefined,
         href: `/documents/${doc.id}`,
         badge: doc.document_type ?? 'Document',
       });
@@ -207,6 +247,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<FuseResult<SearchItem>[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
+  const [typeFilter, setTypeFilter] = useState<SearchItem['type'] | null>(null);
 
   const fuse = useCallback(
     () =>
@@ -217,8 +258,10 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
           { name: 'subtitle',    weight: 0.2 },
           { name: 'description', weight: 0.2 },
           { name: 'badge',       weight: 0.1 },
+          { name: 'fullText',    weight: 0.05 },
         ],
         threshold: 0.35,
+        ignoreLocation: true,   // match anywhere in the string, not just near start
         includeScore: true,
         minMatchCharLength: 2,
       }),
@@ -236,8 +279,9 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
   }, [router.query.q]);
 
   const runSearch = (q: string) => {
-    if (!q.trim()) { setResults([]); setHasSearched(false); return; }
+    if (!q.trim()) { setResults([]); setHasSearched(false); setTypeFilter(null); return; }
     setHasSearched(true);
+    setTypeFilter(null);
     setResults(fuse().search(q));
   };
 
@@ -247,7 +291,7 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
     runSearch(query);
   };
 
-  // Group results by type
+  // Group all results by type (unfiltered — used for filter pill counts)
   const grouped = results.reduce<Record<string, FuseResult<SearchItem>[]>>(
     (acc, r) => {
       const t = r.item.type;
@@ -257,6 +301,17 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
     {}
   );
   const typeOrder: SearchItem['type'][] = ['insider', 'case', 'document', 'program', 'contractor', 'timeline', 'glossary', 'resource'];
+
+  // Apply type filter for rendering
+  const displayResults = typeFilter ? results.filter(r => r.item.type === typeFilter) : results;
+  const displayGrouped = displayResults.reduce<Record<string, FuseResult<SearchItem>[]>>(
+    (acc, r) => {
+      const t = r.item.type;
+      (acc[t] = acc[t] ?? []).push(r);
+      return acc;
+    },
+    {}
+  );
 
   return (
     <>
@@ -297,18 +352,48 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
                 </p>
               ) : (
                 <>
-                  <p className="text-sm text-gray-400 dark:text-gray-500 mb-6">
-                    {results.length} result{results.length !== 1 ? 's' : ''} for{' '}
-                    <span className="font-medium text-gray-700 dark:text-gray-300">&ldquo;{query}&rdquo;</span>
-                  </p>
-                  <div className="space-y-10">
+                  <div className="flex items-center justify-between gap-3 mb-4 flex-wrap">
+                    <p className="text-sm text-gray-400 dark:text-gray-500">
+                      {results.length} result{results.length !== 1 ? 's' : ''} for{' '}
+                      <span className="font-medium text-gray-700 dark:text-gray-300">&ldquo;{query}&rdquo;</span>
+                    </p>
+                  </div>
+
+                  {/* Type filter pills */}
+                  <div className="flex gap-2 flex-wrap mb-6">
+                    <button
+                      onClick={() => setTypeFilter(null)}
+                      className={`text-xs px-3 py-1.5 rounded-full font-medium border transition-colors ${
+                        typeFilter === null
+                          ? 'bg-primary text-white border-transparent'
+                          : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-300'
+                      }`}
+                    >
+                      All ({results.length})
+                    </button>
                     {typeOrder.filter(t => grouped[t]).map(type => (
+                      <button
+                        key={type}
+                        onClick={() => setTypeFilter(type)}
+                        className={`text-xs px-3 py-1.5 rounded-full font-medium border transition-colors ${
+                          typeFilter === type
+                            ? 'bg-primary text-white border-transparent'
+                            : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-300'
+                        }`}
+                      >
+                        {TYPE_LABELS[type]} ({grouped[type].length})
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="space-y-10">
+                    {typeOrder.filter(t => displayGrouped[t]).map(type => (
                       <section key={type}>
                         <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-3">
-                          {TYPE_LABELS[type]} ({grouped[type].length})
+                          {TYPE_LABELS[type]} ({displayGrouped[type].length})
                         </h2>
                         <div className="space-y-2">
-                          {grouped[type].map(({ item }) => (
+                          {displayGrouped[type].slice(0, MAX_PER_TYPE).map(({ item }) => (
                             <Link
                               key={item.id}
                               href={item.href}
@@ -340,6 +425,11 @@ const SearchPage: FC<SearchPageProps> = ({ corpus }) => {
                             </Link>
                           ))}
                         </div>
+                        {displayGrouped[type].length > MAX_PER_TYPE && (
+                          <p className="text-xs text-gray-400 dark:text-gray-500 mt-3 pl-1">
+                            Showing {MAX_PER_TYPE} of {displayGrouped[type].length} - refine your search or use the type filter above for more specific results.
+                          </p>
+                        )}
                       </section>
                     ))}
                   </div>
