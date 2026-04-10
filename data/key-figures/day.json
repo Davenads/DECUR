@@ -24,15 +24,15 @@
         "event": "Enlists in the United States Navy; trains as an Operations Specialist with specialization in radar systems and combat information center operations"
       },
       {
-        "year": "2004-11-01",
+        "year": "Nov 2004",
         "event": "Begins tracking unidentified radar contacts aboard USS Princeton approximately two weeks before the intercept. Objects appearing on SPY-1B radar descending from above 80,000 ft to near sea level. Contacts are intermittent and do not conform to any known flight profile."
       },
       {
-        "year": "2004-11-14",
+        "year": "Nov 2004",
         "event": "The radar contacts converge with the operating area of VFA-41 pilots on a routine training exercise. Day coordinates the intercept, directing Fravor and Dietrich toward the object's position. Continues radar tracking as the visual encounter occurs."
       },
       {
-        "year": "2004-2009",
+        "year": "2007",
         "event": "Separated from the Navy after 20+ years of service. Has spoken about difficulty reintegrating following the encounter and its psychological aftermath."
       },
       {
@@ -95,7 +95,7 @@
       "node_id": "david-fravor",
       "node_label": "David Fravor",
       "relationship": "Day was the USS Princeton radar operator who detected the objects and directed Fravor toward them; their accounts are complementary records of the same event from sensor and visual perspectives",
-      "connection_type": "investigation"
+      "connection_type": "investigative"
     }
   ]
 }

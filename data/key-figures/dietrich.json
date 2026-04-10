@@ -25,15 +25,15 @@
         "event": "Commissioned as a Naval Aviator; assigned to VFA-41 Black Aces flying F/A-18F Super Hornets"
       },
       {
-        "year": "2004-11-14",
+        "year": "Nov 2004",
         "event": "Participates in the Nimitz UAP encounter off the coast of San Diego. Flying as the wingman to David Fravor's flight lead, observes the Tic Tac-shaped object while maintaining altitude as the designated observer. Sees the object accelerate away when Fravor closes on it. Describes a sense of 'eerie' discomfort and a feeling that she was being observed in return."
       },
       {
-        "year": "2004-2021",
+        "year": "2004",
         "event": "Keeps her account of the encounter private for approximately 17 years, consistent with an informal understanding among the pilots that discussing the encounter was professionally inadvisable"
       },
       {
-        "year": "2021-05-16",
+        "year": "May 2021",
         "event": "Goes public for the first time in a CBS 60 Minutes segment alongside David Fravor. Describes the encounter in detail, including her emotional response and the object's behavior. Her account matches Fravor's in all material details and adds the witness perspective of the maintaining-altitude observer."
       }
     ]
@@ -92,7 +92,7 @@
       "node_id": "david-fravor",
       "node_label": "David Fravor",
       "relationship": "Dietrich was Fravor's wingman during the Nimitz encounter; her account from the maintaining-altitude observer position is the primary corroboration of Fravor's engagement with the Tic Tac object",
-      "connection_type": "investigation"
+      "connection_type": "investigative"
     }
   ]
 }

@@ -155,22 +155,10 @@
       "relationship": "Hopkins introduced Mack to experiencer research around 1990; the two collaborated in the early 1990s before Mack established his own independent clinical methodology through PEER"
     },
     {
-      "id": "cynthia-hind",
-      "name": "Cynthia Hind",
-      "role": "MUFON Africa director and field coordinator",
-      "relationship": "MUFON Africa director who coordinated the initial response to the Ariel School incident and contacted Mack; she conducted the first interviews with the children before Mack's arrival in Zimbabwe"
-    },
-    {
       "id": "whitley-strieber",
       "name": "Whitley Strieber",
       "role": "Author and prominent experiencer",
       "relationship": "Author of 'Communion' (1987) and prominent experiencer; Strieber's account was one of the cultural touchstones that preceded Mack's clinical research and helped bring experiencer testimony to mainstream attention"
-    },
-    {
-      "id": "randall-nickerson",
-      "name": "Randall Nickerson",
-      "role": "Filmmaker and documentarian",
-      "relationship": "Filmmaker who accompanied Mack to Zimbabwe in 1994 and filmed the Ariel School child interviews; spent nearly three decades completing the documentary 'Ariel Phenomenon,' released in 2022, which incorporated the original 1994 footage"
     },
     {
       "id": "jacques-vallee",
@@ -189,7 +177,7 @@
     },
     {
       "date": "1994",
-      "type": "Field Investigation",
+      "type": "speech",
       "title": "Ariel School Investigation, Zimbabwe",
       "outlet": "Ariel School, Ruwa, Zimbabwe / John Mack Institute Archives",
       "notes": "Personal investigation of the Ariel School incident: flew to Zimbabwe to interview 62 children who reported seeing a craft and non-human beings during school recess on September 16, 1994. Interviews conducted on film by Randall Nickerson. Accounts showed high consistency across independent interviews. The footage was preserved and incorporated into the 2022 documentary 'Ariel Phenomenon.'"
@@ -261,7 +249,7 @@
       "node_id": "jacques-vallee",
       "node_label": "Jacques Vallee",
       "relationship": "Both approached UAP from consciousness and non-materialist frameworks that positioned the phenomenon as something beyond simple craft identification",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     }
   ]
 }

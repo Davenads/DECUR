@@ -221,7 +221,7 @@
       "node_id": "garry-nolan",
       "node_label": "Garry Nolan",
       "relationship": "Both advocate for rigorous peer-reviewed UAP research at major academic institutions; Nolan biological materials analysis complements Loeb astronomical and materials science approach",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 3,
@@ -237,7 +237,7 @@
       "node_id": "tim-gallaudet",
       "node_label": "Tim Gallaudet",
       "relationship": "Gallaudet oceanographic expertise aligns with the Galileo Project trans-medium and undersea UAP focus; both testified at the November 2024 House hearing",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -245,7 +245,7 @@
       "node_id": "jake-barber",
       "node_label": "Jake Barber",
       "relationship": "Co-testified at the November 13, 2024 Exposing the Truth joint House hearing on UAP alongside Barber and other witnesses",
-      "connection_type": "testimony"
+      "connection_type": "professional"
     }
   ]
 }

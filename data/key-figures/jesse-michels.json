@@ -337,7 +337,7 @@
       "node_id": "garry-nolan",
       "node_label": "Garry Nolan",
       "relationship": "Early interview on CIA engagement with UAP experiencers and anomalous isotope ratios; helped establish Nolan's public profile",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 2,
@@ -345,7 +345,7 @@
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Featured Puthoff in a landmark debate with Eric Weinstein on UAP physics and government secrecy",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 3,
@@ -353,7 +353,7 @@
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Conducted one of Grusch's earliest pre-testimony interviews; helped establish his public credibility before the July 2023 hearing",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 4,
@@ -361,7 +361,7 @@
       "node_id": "luis-elizondo",
       "node_label": "Luis Elizondo",
       "relationship": "Produced a documentary-length interview covering Elizondo's full AATIP and disclosure arc",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 5,
@@ -369,7 +369,7 @@
       "node_id": "eric-davis",
       "node_label": "Eric Davis",
       "relationship": "Multi-hour discussion on crash retrieval physics and program compartmentalization alongside Eric Weinstein",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     }
   ]
 }

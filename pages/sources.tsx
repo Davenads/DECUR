@@ -1295,6 +1295,56 @@ const Sources: NextPage = () => {
             notes="Used for: Chuck Schumer."
           />
 
+          {/* Alex Dietrich */}
+          <SourceCard
+            name="CBS 60 Minutes - UAP Segment (May 2021)"
+            url="https://www.cbsnews.com/news/ufo-military-60-minutes-2021-05-16/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Dietrich's first and most detailed public account of the November 2004 Nimitz UAP encounter, broadcast alongside David Fravor, Ryan Graves, and other witnesses. Primary source for her observer-position testimony and emotional account."
+            notes="Used for: Alex Dietrich."
+          />
+
+          {/* Kevin Day */}
+          <SourceCard
+            name="The Nimitz Encounters (2019) - Documentary"
+            url="https://www.youtube.com/watch?v=BHCoBZkHEuw"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Short documentary film featuring Kevin Day's first-person account of tracking the Nimitz UAP on the USS Princeton radar over two weeks in November 2004. Primary source for Day's radar contact timeline and his description of the objects' anomalous behavior."
+            notes="Used for: Kevin Day."
+          />
+
+          {/* John Mack */}
+          <SourceCard
+            name="Abduction: Human Encounters with Aliens - John E. Mack (1994)"
+            url="https://www.amazon.com/Abduction-Human-Encounters-Aliens-Mack/dp/0684827077"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Mack's landmark study of 13 abduction experiencers, applying rigorous clinical methodology. Published by Scribner and became a New York Times bestseller. Primary source for his research methodology, case documentation, and Harvard tenure controversy."
+            notes="Used for: John Mack."
+          />
+
+          {/* Jesse Michels */}
+          <SourceCard
+            name="American Alchemy - Jesse Michels (YouTube Channel)"
+            url="https://www.youtube.com/@AmericanAlchemy"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Michels's primary interview platform where he has conducted in-depth interviews with key figures including Harald Malmgren, Eric Davis, Karl Nell, and others. Primary source for his role as an emerging UAP media figure and his interview catalog."
+            notes="Used for: Jesse Michels."
+          />
+
+          {/* Harald Malmgren */}
+          <SourceCard
+            name="Jesse Michels Interview - Presidential Advisor: I Directly Handled UFO Material (Apr 2025)"
+            url="https://www.youtube.com/watch?v=GdW8gHRf2tI"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Malmgren's most detailed public disclosure, discussing his personal handling of non-human material and briefings to multiple U.S. presidents on UAP. Primary source for the claims documented in his profile."
+            notes="Used for: Harald Malmgren."
+          />
+
           <SourceCard
             name="Galileo Project - Harvard University"
             url="https://projects.iq.harvard.edu/galileo"

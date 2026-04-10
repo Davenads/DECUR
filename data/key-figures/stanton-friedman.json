@@ -147,7 +147,7 @@
       "node_id": "j-allen-hynek",
       "node_label": "J. Allen Hynek",
       "relationship": "Both were the foremost scientific researchers in the civilian UAP field; Friedman's FOIA document analysis complemented Hynek's scientific case classification work",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 2,
@@ -155,7 +155,7 @@
       "node_id": "leslie-kean",
       "node_label": "Leslie Kean",
       "relationship": "Kean's investigative methodology built on Friedman's archival precedent; both prioritized documentary evidence and named, credentialed sources",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     }
   ]
 }

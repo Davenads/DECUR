@@ -140,7 +140,7 @@
       "node_id": "j-allen-hynek",
       "node_label": "J. Allen Hynek",
       "relationship": "NICAP under Keyhoe and CUFOS under Hynek were the two primary civilian UAP oversight institutions; Keyhoe's military source network complemented Hynek's scientific credibility",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 0,
@@ -148,7 +148,7 @@
       "node_id": "richard-dolan",
       "node_label": "Richard Dolan",
       "relationship": "Dolan's \"UFOs and the National Security State\" archival work built directly on NICAP's Cold War documentation framework, which Keyhoe established",
-      "connection_type": "mentorship"
+      "connection_type": "professional"
     }
   ]
 }

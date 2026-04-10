@@ -49,8 +49,8 @@
         "event": "CIA Deputy Director of Plans Richard Bissell - the architect of Area 51 and the U-2 program - privately confirms to Malmgren the existence of a 1933 UFO crash in Magenta, Italy. Malmgren describes this as the most direct senior intelligence briefing he received on UAP recovery programs. Bissell died in 1994, making the account independently unverifiable."
       },
       {
-        "year": "1974-1975",
-        "event": "Serves as Deputy Special Representative for Trade Negotiations under Nixon and Ford. Concludes his official government service after 14 years spanning four administrations."
+        "year": "1974",
+        "event": "Serves as Deputy Special Representative for Trade Negotiations under Nixon and Ford (1974-1975). Concludes his official government service after 14 years spanning four administrations."
       },
       {
         "year": "2023",
@@ -133,7 +133,7 @@
       "node_id": "jesse-michels",
       "node_label": "Jesse Michels",
       "relationship": "Michels conducted Malmgren's first major on-camera interview in April 2025, providing the platform for his primary UAP disclosure",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 6,
@@ -141,7 +141,7 @@
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Malmgren's account of compartmentalized material handling independently corroborates Grusch's congressional testimony on the same architecture",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     },
     {
       "event_index": 6,
@@ -149,7 +149,7 @@
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Both independently point to Atomic Energy Commission classification infrastructure as the mechanism for UAP secrecy; mentioned together in the Michels interview",
-      "connection_type": "collaboration"
+      "connection_type": "professional"
     }
   ]
 }
