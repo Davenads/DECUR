@@ -166,7 +166,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "hal-puthoff",
       "node_label": "Hal Puthoff",
       "relationship": "Parallel figure in the DeLonge disclosure advisory network; both were key members of the pre-TTSA team DeLonge assembled during 2015-2016.",
@@ -182,7 +182,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tom-delonge",
       "node_label": "Tom DeLonge",
       "relationship": "DeLonge named McCasland in a January 2016 WikiLeaks email as a military adviser who helped assemble DeLonge's UAP disclosure advisory team over a four-month working relationship.",
@@ -190,7 +190,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tim-burchett",
       "node_label": "Rep. Tim Burchett",
       "relationship": "Burchett publicly identified McCasland following his 2026 disappearance as connected to the UAP topic and possessing significant undisclosed knowledge.",

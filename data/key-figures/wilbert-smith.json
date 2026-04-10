@@ -148,7 +148,7 @@
   "career_connections": [
     {
       "event_index": 1,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "stanton-friedman",
       "node_label": "Stanton Friedman",
       "relationship": "Friedman researched and publicized the Smith Memorandum after its 1979 declassification; the memo became central to Friedman's MJ-12 and government secrecy work.",
@@ -164,7 +164,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "donald-keyhoe",
       "node_label": "Donald Keyhoe",
       "relationship": "NICAP and Project Magnet were the two most institutionally credible parallel UAP investigations of the 1950s; Keyhoe and Smith operated in overlapping advocacy space.",

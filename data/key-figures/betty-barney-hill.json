@@ -144,7 +144,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "donald-keyhoe",
       "node_label": "Maj. Donald Keyhoe",
       "relationship": "Betty Hill contacted NICAP director Keyhoe within weeks of the encounter; NICAP conducted the first formal investigation under his direction.",
@@ -152,7 +152,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "budd-hopkins",
       "node_label": "Budd Hopkins",
       "relationship": "The Hill case directly established the missing time and CE4 research framework that Hopkins systematized beginning in 1981; Hopkins cited it as the foundational historical reference for the abduction research tradition.",
@@ -160,7 +160,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "stanton-friedman",
       "node_label": "Stanton Friedman",
       "relationship": "Friedman conducted the most comprehensive modern investigation and co-authored the definitive 2007 account 'Captured!' with Betty's niece Kathleen Marden.",

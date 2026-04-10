@@ -207,7 +207,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "tim-burchett",
       "node_label": "Rep. Tim Burchett",
       "relationship": "Formed the House UAP Caucus partnership upon taking office in January 2023; the most sustained bipartisan collaboration in congressional UAP oversight.",
@@ -215,7 +215,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Invited Grusch to testify at the July 2023 hearing under oath; his testimony on crash retrieval programs was the centerpiece of the hearing Luna co-organized.",
@@ -223,7 +223,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "ryan-graves",
       "node_label": "Ryan Graves",
       "relationship": "Testified at the July 2023 hearing on routine Navy pilot UAP encounters, providing operational corroboration alongside Grusch's program-level claims.",
@@ -239,7 +239,7 @@
     },
     {
       "event_index": 9,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Knapp testified at Luna's September 2025 Task Force hearing on UAP transparency and whistleblower protection.",

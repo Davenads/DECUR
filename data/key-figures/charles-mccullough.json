@@ -162,7 +162,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "david-grusch",
       "node_label": "David Grusch",
       "relationship": "Filed formal whistleblower complaint on Grusch's behalf; primary legal-institutional connection in the UAP disclosure effort.",
@@ -170,7 +170,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "luis-elizondo",
       "node_label": "Luis Elizondo",
       "relationship": "Overlapping UAP whistleblower legal advocacy; both operate within the same congressional disclosure framework.",

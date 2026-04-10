@@ -148,7 +148,7 @@
   "career_connections": [
     {
       "event_index": 2,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "stanton-friedman",
       "node_label": "Stanton Friedman",
       "relationship": "Friedman documented and investigated the Walton case extensively, citing it as one of the most credible multi-witness CE4 events in the research record.",
@@ -156,7 +156,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "whitley-strieber",
       "node_label": "Whitley Strieber",
       "relationship": "Fellow CE4 experiencer-author; both represent the most sustained first-person public accounts of non-human contact experiences in the research canon.",
@@ -164,7 +164,7 @@
     },
     {
       "event_index": 7,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "john-mack",
       "node_label": "Dr. John Mack",
       "relationship": "Mack's abduction research framework referenced the Walton case as a foundational multi-witness CE4 event; both appeared in the same Disclosure Project context.",

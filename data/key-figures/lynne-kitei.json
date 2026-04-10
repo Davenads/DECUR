@@ -154,7 +154,7 @@
     },
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "jacques-vallee",
       "node_label": "Dr. Jacques Vallee",
       "relationship": "Vallee has addressed the Phoenix Lights as an anomalous case warranting investigation; overlapping scientific investigation community.",
@@ -162,7 +162,7 @@
     },
     {
       "event_index": 5,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "linda-moulton-howe",
       "node_label": "Linda Moulton Howe",
       "relationship": "Both are women in the UAP research community who applied professional credentials to field investigation; Howe covered the Phoenix Lights phenomenon in her reporting.",

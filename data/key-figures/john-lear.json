@@ -143,7 +143,7 @@
   "career_connections": [
     {
       "event_index": 3,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "bob-lazar",
       "node_label": "Bob Lazar",
       "relationship": "Lear facilitated Lazar's introduction to George Knapp at KLAS-TV; the resulting 1989 broadcasts produced the most consequential UAP disclosure of the 1980s.",
@@ -151,7 +151,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "george-knapp",
       "node_label": "George Knapp",
       "relationship": "Long-term professional relationship; Lear introduced Lazar to Knapp and appeared in the original KLAS-TV broadcasts corroborating Lazar's S-4 claims.",
@@ -159,7 +159,7 @@
     },
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "richard-doty",
       "node_label": "Richard Doty",
       "relationship": "Overlapping networks in the late 1980s UAP disclosure community; Doty's documented disinformation operations raise questions about some information Lear received from alleged intelligence community contacts during the same period.",

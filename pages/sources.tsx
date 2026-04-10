@@ -1676,6 +1676,110 @@ const Sources: NextPage = () => {
             notes="Used for: John Lear."
           />
 
+          {/* Charles McCullough */}
+          <SourceCard
+            name="The Debrief - David Grusch UAP Whistleblower Report (June 2023)"
+            url="https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary report by Leslie Kean and Ralph Blumenthal introducing David Grusch and confirming McCullough's role as his legal counsel. McCullough's institutional background as former IC IG and his 'not alone' statement are documented in this and concurrent media coverage."
+            notes="Used for: Charles McCullough."
+          />
+
+          <SourceCard
+            name="NewsNation - Charles McCullough Interview (June 2023)"
+            url="https://www.newsnationnow.com/space/ufo/ex-intel-watchdog-ufo-whistleblower-not-alone/"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="McCullough's direct on-camera statement that Grusch 'is not alone' in his knowledge of UAP programs and confirmation that Grusch received whistleblower protection status. Primary source for McCullough's public statements."
+            notes="Used for: Charles McCullough."
+          />
+
+          <SourceCard
+            name="House UAP Subcommittee Hearing - Official Record (July 26, 2023)"
+            url="https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official congressional record for the hearing at which McCullough provided legal representation for Grusch's sworn testimony. Includes the full testimony transcript and committee documentation."
+            notes="Used for: Charles McCullough."
+          />
+
+          {/* Wilbert Smith */}
+          <SourceCard
+            name="The Wilbert Smith Memorandum (November 21, 1950)"
+            url="https://ufotimeline.com/1950/11/the-wilbert-smith-memorandum/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="The foundational classified 1950 memo authored by Smith requesting Canadian government sanction for UAP investigation. Declassified by the Canadian government in 1979. Documents conversations with Dr. Robert Sarbacher about UAP classification and recovered hardware."
+            notes="Used for: Wilbert Smith."
+          />
+
+          <SourceCard
+            name="Dr. Robert Sarbacher Letter to William Steinman (November 29, 1983)"
+            url="https://www.nicap.org/docs/sarbacher_1983.htm"
+            type="Primary Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Sarbacher's written corroboration confirming his 1950 statements to Smith about UAP classification and recovered hardware were accurate. Key independent verification of the Smith Memorandum's sourcing, hosted by NICAP."
+            notes="Used for: Wilbert Smith."
+          />
+
+          {/* Anna Paulina Luna */}
+          <SourceCard
+            name="House Oversight Committee UAP Hearing - July 26, 2023"
+            url="https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+            type="Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Official hearing record for the landmark UAP hearing Luna co-organized with Rep. Tim Burchett, featuring sworn testimony from David Grusch, Ryan Graves, and David Fravor. Primary source for Luna's organizational role in congressional UAP oversight."
+            notes="Used for: Rep. Anna Paulina Luna."
+          />
+
+          <SourceCard
+            name="Joe Rogan Experience #2365 - Anna Paulina Luna (August 13, 2025)"
+            url="https://www.youtube.com/watch?v=KmaHMqaO-gQ"
+            type="Online Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Luna's August 2025 appearance describing her Air Force airspace incident, her classified SCIF photograph claims, and her conviction that interdimensional beings exist. Primary source for her firsthand disclosure claims."
+            notes="Used for: Rep. Anna Paulina Luna."
+          />
+
+          {/* Lynne Kitei */}
+          <SourceCard
+            name="The Phoenix Lights: A Skeptic's Discovery that We Are Not Alone (Kitei, 2010)"
+            url="https://www.amazon.com/Phoenix-Lights-Skeptics-Discovery-Alone/dp/1571746382"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Kitei's updated 2010 edition documenting her multi-year pre-1997 sightings, the March 13, 1997 Phoenix Lights event, and subsequent investigation including Fife Symington's reversal. Primary source for all biographical data and event chronology in the Kitei profile."
+            notes="Used for: Dr. Lynne Kitei."
+          />
+
+          <SourceCard
+            name="The Phoenix Lights Documentary (2008)"
+            url="https://www.thephoenixlights.net"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Feature documentary produced and directed by Kitei including witness interviews, official statements from Fife Symington, and scientific consultants. Primary video record of the Phoenix Lights investigation."
+            notes="Used for: Dr. Lynne Kitei."
+          />
+
+          {/* Neil McCasland */}
+          <SourceCard
+            name="WikiLeaks - Podesta Email #3099 (DeLonge to Podesta, January 25, 2016)"
+            url="https://wikileaks.org/podesta-emails/emailid/3099"
+            type="Primary Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Tom DeLonge's email to John Podesta naming McCasland as a military adviser who helped assemble DeLonge's UAP disclosure advisory team and commanded AFRL Wright-Patterson. The primary documentary source linking McCasland to the pre-TTSA disclosure network."
+            notes="Used for: Maj. Gen. Neil McCasland."
+          />
+
+          <SourceCard
+            name="Missing US General 'has a lot of information' on UFOs: Congressman - Newsweek"
+            url="https://www.newsweek.com/missing-us-general-has-information-ufos-congressman-11684617"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Newsweek coverage of Rep. Tim Burchett's on-record statement identifying McCasland as connected to the UAP topic following his February 2026 disappearance. Primary source for the 2026 disappearance and congressional characterization sections of the McCasland profile."
+            notes="Used for: Maj. Gen. Neil McCasland."
+          />
+
           {/* Eric Burlison */}
           <SourceCard
             name="Rep. Eric Burlison - Official Congressional Biography"

@@ -128,7 +128,7 @@
   "career_connections": [
     {
       "event_index": 4,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "whitley-strieber",
       "node_label": "Whitley Strieber",
       "relationship": "Strieber came to Hopkins following his own 1985-86 experiences; Hopkins' investigation contributed to Strieber's landmark 1987 memoir 'Communion' and their collaboration defined public CE4 discourse in the late 1980s.",
@@ -136,7 +136,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "john-mack",
       "node_label": "Dr. John Mack",
       "relationship": "Hopkins introduced Mack to CE4 research in 1992; Mack's Harvard investigation using Hopkins' regression methodology produced the most academically credible validation the field received.",
@@ -144,7 +144,7 @@
     },
     {
       "event_index": 6,
-      "node_type": "person",
+      "node_type": "figure",
       "node_id": "colm-kelleher",
       "node_label": "Dr. Colm Kelleher",
       "relationship": "NIDS anomalous phenomena research overlapped substantially with Hopkins' CE4 documentation; both contributed to the same research conferences and literature.",
