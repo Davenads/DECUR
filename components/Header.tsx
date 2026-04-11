@@ -25,6 +25,7 @@ const navItems: NavItems = {
       { title: 'News', path: '/data?category=news' },
       { title: 'Collections', path: '/collections' },
       { title: "What's New", path: '/whats-new' },
+      { title: 'Compare Figures', path: '/compare' },
       { title: 'Search & Filter', path: '/search' },
     ],
   },
