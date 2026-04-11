@@ -2011,6 +2011,24 @@ const Sources: NextPage = () => {
           />
 
           <SourceCard
+            name="New York Times: Glowing Auras and Black Money (Cooper, Blumenthal, Kean - Dec 2017)"
+            url="https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"
+            type="Investigative Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="The December 2017 New York Times investigation that first publicly named AATIP, identified Luis Elizondo as its director, and released the Navy Tic-Tac FLIR video. The founding trigger event of the modern UAP disclosure era. Primary source for AATIP's public history, Elizondo's resignation, and Chris Mellon's facilitation role."
+            notes="Used for: AATIP."
+          />
+
+          <SourceCard
+            name="DoD Statement on AATIP and UAP Video Release (Aug 2020)"
+            url="https://www.defense.gov/News/Releases/Release/Article/2314278/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/"
+            type="Official Government"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Department of Defense official statement accompanying the declassification of the three Navy UAP videos (Tic Tac, Gimbal, GoFast). Officially acknowledges AATIP and confirms the videos were filmed by Navy personnel. Primary source for DoD's formal recognition of AATIP and the declassification of AATIP-linked footage."
+            notes="Used for: AATIP."
+          />
+
+          <SourceCard
             name="The Report on Unidentified Flying Objects (Ruppelt, 1956)"
             url="https://archive.org/details/reportonunidenti00rupp"
             type="Primary Memoir"
