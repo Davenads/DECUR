@@ -1960,7 +1960,7 @@
   },
   {
     "id": "rockefeller-briefing-document-1995",
-    "name": "UFOs Briefing Document: The Best Available Evidence (1995)",
+    "name": "Rockefeller UFO Briefing Document: The Best Available Evidence (1995)",
     "date": "December 1995",
     "issuing_authority": "Laurance S. Rockefeller - Rockefeller UFO Disclosure Initiative",
     "document_type": "private-briefing",
@@ -2150,14 +2150,17 @@
     "insider_connections": [
       {
         "id": "luis-elizondo",
+        "role": "Former AATIP director whose 2017 unauthorized release of the videos via TTSA was retroactively legitimized by this official DoD action",
         "note": "AATIP director whose 2017 unauthorized release via TTSA was retroactively legitimized by this official DoD action."
       },
       {
         "id": "david-fravor",
+        "role": "Primary Nimitz encounter pilot whose 2017 public testimony about FLIR1 was validated when DoD confirmed the footage's authenticity",
         "note": "Primary Nimitz encounter pilot; his 2017 public testimony about FLIR1 was validated when DoD confirmed the footage's authenticity."
       },
       {
         "id": "leslie-kean",
+        "role": "Investigative journalist who co-authored the 2017 New York Times article that first published the TTSA videos; this release confirmed the footage she reported on was genuine",
         "note": "Co-authored the 2017 New York Times article that first published the TTSA videos; this release confirmed the footage she reported on was genuine."
       }
     ],
@@ -2243,14 +2246,17 @@
     "insider_connections": [
       {
         "id": "david-grusch",
+        "role": "The complainant; NGA representative to the UAP Task Force whose allegations of a covert retrieval program were the subject of the ICIG determination",
         "note": "The complainant; NGA representative to the UAP Task Force whose allegations of a covert retrieval program were the subject of the ICIG determination."
       },
       {
         "id": "karl-nell",
+        "role": "Retired Army Colonel and UAPTF colleague who provided corroborating testimony to the ICIG investigation supporting the credibility of Grusch's claims",
         "note": "Retired Army Colonel and UAPTF colleague who provided corroborating testimony to the ICIG investigation supporting the credibility of Grusch's claims."
       },
       {
         "id": "luis-elizondo",
+        "role": "Former AATIP director whose prior disclosures about classified UAP programs provided institutional context for the ICIG's credibility assessment",
         "note": "Former AATIP director whose prior disclosures about classified UAP programs provided institutional context for the ICIG's credibility assessment."
       }
     ],
@@ -2322,14 +2328,17 @@
     "insider_connections": [
       {
         "id": "jacques-vallee",
+        "role": "French-American scientist who contributed analysis to the SOBEPS investigation and cited the Belgian wave extensively in his research on UAP patterns",
         "note": "French-American scientist who contributed analysis to the SOBEPS investigation and cited the Belgian wave extensively in his research on UAP patterns."
       },
       {
         "id": "leslie-kean",
+        "role": "Investigative journalist who featured General De Brouwer's account and the Belgian radar data prominently in 'UFOs: Generals, Pilots and Government Officials Go on the Record' (2010)",
         "note": "Journalist who featured General De Brouwer's account and the Belgian radar data prominently in 'UFOs: Generals, Pilots and Government Officials Go on the Record' (2010)."
       },
       {
         "id": "richard-dolan",
+        "role": "Historian who documented the SOBEPS investigation extensively in 'UFOs and the National Security State' as a landmark case of official military engagement",
         "note": "Historian who documented the SOBEPS investigation extensively in 'UFOs and the National Security State' as a landmark case of official military engagement."
       }
     ],
@@ -2416,14 +2425,17 @@
     "insider_connections": [
       {
         "id": "david-grusch",
+        "role": "Intelligence officer whose July 2023 congressional testimony was explicitly cited by Sen. Schumer as a motivating factor for the legislation; his allegations about contractor-held UAP materials directly shaped the (stripped) seizure provision",
         "note": "Grusch's July 2023 congressional testimony was explicitly cited by Sen. Schumer as a motivating factor for the legislation; his allegations about contractor-held UAP materials directly shaped the (stripped) seizure provision."
       },
       {
         "id": "karl-nell",
+        "role": "Retired Army Colonel and UAPTF member who provided classified congressional briefings cited alongside Grusch's testimony in Schumer's floor statements supporting the bill",
         "note": "Retired Army Colonel and UAPTF member who provided classified congressional briefings cited alongside Grusch's testimony in Schumer's floor statements supporting the bill."
       },
       {
         "id": "chris-mellon",
+        "role": "Former Deputy Assistant Secretary of Defense for Intelligence who lobbied extensively for UAP disclosure legislation and advised on the JFK Act model used in the bill's structure",
         "note": "Former Deputy Assistant Secretary of Defense for Intelligence who lobbied extensively for UAP disclosure legislation and advised on the JFK Act model used in the bill's structure."
       }
     ],
