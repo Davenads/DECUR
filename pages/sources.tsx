@@ -3235,6 +3235,84 @@ const Sources: NextPage = () => {
             notes="Used for: Leidos, Boeing Defense, Lockheed Martin, Northrop Grumman, SAIC."
           />
 
+          {/* Lockheed Martin */}
+          <SourceCard
+            name="Skunk Works: A Personal Memoir (Ben Rich & Leo Janos, 1994)"
+            url="https://www.amazon.com/Skunk-Works-Personal-Memoir-Lockheed/dp/0316743003"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="First-person account by Ben Rich, Skunk Works director 1975-1991, documenting the classified advanced development programs produced under his tenure. Rich's documented statements about extraterrestrial technology - made at the 1993 UCLA alumni event and in private correspondence - are the primary evidence basis for Lockheed Martin's UAP-claim entries."
+            notes="Used for: Lockheed Martin."
+          />
+
+          {/* Northrop Grumman */}
+          <SourceCard
+            name="The Debrief - Intelligence Officials Say U.S. Has Retrieved Non-Human Craft (Coulthart/Wurtzel, Jun 2023)"
+            url="https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/"
+            type="Investigative Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="The Debrief article that first publicly disclosed David Grusch's claims about the UAP retrieval program, naming major defense contractors as custodians. Primary source for Northrop Grumman's UAP-claim section and the TRW connection to classified aerospace programs."
+            notes="Used for: Northrop Grumman."
+          />
+
+          {/* Raytheon */}
+          <SourceCard
+            name="House Oversight UAP Hearing - Karl Nell Testimony (Jul 2023)"
+            url="https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/"
+            type="Congressional Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Karl Nell's sworn testimony before the House Oversight Committee, delivered while he was a senior Director at Raytheon Technologies. Nell stated that non-human intelligence has been confirmed interacting with humanity. Primary source for Raytheon's UAP-claim entries and Karl Nell's contractor affiliation."
+            notes="Used for: Raytheon."
+          />
+
+          {/* Battelle */}
+          <SourceCard
+            name="Project Blue Book Special Report No. 14 (Battelle Memorial Institute / USAF, 1955)"
+            url="https://www.bluebookarchive.org/page.aspx?PageCode=NARA-PBB85-840"
+            type="Government Report"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Battelle's statistical analysis of 3,201 USAF UAP case files (1947-1952) conducted under Air Force contract. Found that 21.5% of high-quality cases remained Unknowns and that unknowns were statistically distinct from knowns - results withheld from the public summary. Primary source for Battelle's UAP contract history."
+            notes="Used for: Battelle."
+          />
+
+          <SourceCard
+            name="UFOs and the National Security State, Vol. 1 (Richard Dolan, 2002)"
+            url="https://www.amazon.com/dp/0967799503"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Comprehensive history of UAP secrecy from 1941-1973, documenting Battelle's role in Project Blue Book and the Pentacle Memorandum, as well as the broader classified contractor research apparatus. Used for Battelle's program history and UAP connection context."
+            notes="Used for: Battelle."
+          />
+
+          {/* SAIC */}
+          <SourceCard
+            name="SAIC-Leidos Corporate Split (2013) - SEC Filing"
+            url="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001336920&type=&dateb=&owner=include&count=40"
+            type="Government Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="SEC filing documenting the 2013 SAIC corporate split into two independent public companies: the original entity renamed Leidos, and a new SAIC entity for defense engineering and systems integration. Primary source for both SAIC and Leidos corporate history and contract portfolio separation."
+            notes="Used for: SAIC, Leidos."
+          />
+
+          {/* EG&G */}
+          <SourceCard
+            name="Bob Lazar: Area 51 and Flying Saucers (Jeremy Corbell, 2018)"
+            url="https://www.youtube.com/watch?v=BEWz4SXfyCQ"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Corbell's documentary presenting Bob Lazar's claims about his employment by EG&G and subsequent assignment to work at S-4 near Groom Lake. Primary source for EG&G's UAP-claim entries and the Janet Airlines / Nevada Test Site operational connection."
+            notes="Used for: EG&G."
+          />
+
+          <SourceCard
+            name="George Knapp Interview - KLAS-TV (1989)"
+            url="https://www.youtube.com/watch?v=xJdBMoqKZSs"
+            type="Television Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="George Knapp's original KLAS-TV broadcast of Bob Lazar's claims, the first public appearance naming EG&G as the contracting employer for the S-4 reverse-engineering program. The foundational primary source for all EG&G UAP connection entries."
+            notes="Used for: EG&G."
+          />
+
           {/* Boeing Defense */}
           <SourceCard
             name="DoD Statement - Pentagon UAP Video Release (Apr 2020)"
