@@ -6,6 +6,7 @@ import insidersData from '../data/key-figures/index.json';
 import glossaryData from '../data/glossary.json';
 import resourcesData from '../data/resources.json';
 import timelineData from '../data/timeline.json';
+import changelogData from '../data/changelog.json';
 
 const CATEGORIES = [
   {
@@ -189,6 +190,60 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 or contradicting evidence.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Recently Added widget */}
+        <section className="max-w-5xl mx-auto px-4">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest">
+              Recently Added
+            </h2>
+            <Link
+              href="/whats-new"
+              className="text-xs text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary-light transition-colors"
+            >
+              View all updates →
+            </Link>
+          </div>
+          <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden bg-white dark:bg-gray-900 divide-y divide-gray-100 dark:divide-gray-800">
+            {(changelogData as Array<{ date: string; category: string; id: string; name: string; action: string; note: string }>)
+              .slice(0, 6)
+              .map((entry, i) => {
+                const CATEGORY_HREF: Record<string, (id: string) => string> = {
+                  figure:   (id) => `/figures/${id}`,
+                  case:     (id) => `/cases/${id}`,
+                  document: (id) => `/documents/${id}`,
+                  program:  (id) => `/programs/${id}`,
+                  timeline: () => '/timeline',
+                  quote:    () => '/data?category=quotes',
+                };
+                const CATEGORY_LABELS: Record<string, string> = {
+                  figure: 'Figure', case: 'Case', document: 'Document',
+                  program: 'Program', timeline: 'Timeline', quote: 'Quote',
+                };
+                const href = CATEGORY_HREF[entry.category]?.(entry.id) ?? '/whats-new';
+                return (
+                  <Link
+                    key={i}
+                    href={href}
+                    className="flex items-center gap-4 px-5 py-3 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
+                  >
+                    <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0 w-16 font-mono">
+                      {new Date(entry.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                    </span>
+                    <span className="text-[10px] font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 w-16 shrink-0">
+                      {CATEGORY_LABELS[entry.category] ?? entry.category}
+                    </span>
+                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary dark:group-hover:text-primary-light transition-colors flex-1 truncate">
+                      {entry.name}
+                    </span>
+                    <svg className="h-3.5 w-3.5 text-gray-300 dark:text-gray-600 group-hover:text-primary dark:group-hover:text-primary-light transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                );
+              })}
           </div>
         </section>
 

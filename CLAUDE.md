@@ -359,6 +359,29 @@ Every new key figure must have its primary research sources added to `pages/sour
 
 **Rule:** Add one `SourceCard` per distinct source used. If the same source was used for multiple figures, add it once with `notes="Used for: Figure A, Figure B."`.
 
+### 8. Update the What's New changelog (required)
+Add an entry to the **top** of `data/changelog.json`:
+
+```json
+{
+  "date": "YYYY-MM-DD",
+  "category": "figure",
+  "id": "jane-smith",
+  "name": "Dr. Jane Smith",
+  "action": "added",
+  "note": "One sentence describing what was added or what changed."
+}
+```
+
+**Field rules:**
+- `date` - today's date in `YYYY-MM-DD` format
+- `category` - one of: `figure`, `case`, `document`, `program`, `timeline`, `quote`
+- `id` - the registry slug (must match the profile/case/document/program ID exactly)
+- `action` - `"added"` for new entries, `"updated"` for significant updates to existing ones
+- `note` - one sentence; focus on what's distinctive about this person/event (not generic "profile added")
+
+This feeds the `/whats-new` full feed page and the "Recently Added" widget on the homepage. Skipping this step means returning users get no signal that new content exists.
+
 ### That's all
 No component file is needed. No `if` check in `InsidersList.tsx` is needed.
 
@@ -372,6 +395,7 @@ The sources page is the platform's research attribution record. It must be kept 
 - **Key figures** - Add to the `{/* Key Figure Profile Sources */}` section
 - **Cases** - Add to the `{/* Documented Cases */}` section
 - **Programs** - Add to the `{/* Government Programs */}` section
+- **Changelog** - Also add an entry to `data/changelog.json` (see "Adding a New Key Figure" Step 8 for schema)
 - **Documents** - Add to the `{/* Primary Documents */}` section
 - **Glossary** - Add to the `{/* Glossary Sources */}` section
 
