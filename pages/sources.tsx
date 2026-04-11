@@ -2212,6 +2212,34 @@ const Sources: NextPage = () => {
             description="Frank Drake's first-person account of the origins of SETI, Project Ozma, and the development of the Drake Equation. Primary source for SETI's founding history, early methodology, and the scientific context in which the modern search for extraterrestrial intelligence developed."
             notes="Used for: SETI."
           />
+
+          <SourceCard
+            name="Above Black: Project Preserve Destiny - Dan Sherman (1997)"
+            url="https://www.amazon.com/Above-Black-Project-Preserve-Destiny/dp/0966097807"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Dan Sherman's self-published memoir describing his alleged covert NSA assignment as an 'intuitive communicator' receiving non-human transmissions. The sole primary source for all claims about Project Preserve Destiny; no independent corroboration exists."
+            notes="Used for: Project Preserve Destiny."
+          />
+
+          <SourceCard
+            name="Condon Report: Scientific Study of Unidentified Flying Objects (1969)"
+            url="https://files.ncas.org/condon/text/contents.htm"
+            type="Official Government Study"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="The full text of the University of Colorado UFO Project final report commissioned by the USAF under Dr. Edward U. Condon. Primary source for the Condon Committee program entry, including the internal Low memo, case chapter findings, and the committee's disputed conclusions."
+            coverage="1966-1969"
+            notes="Used for: Condon Committee."
+          />
+
+          <SourceCard
+            name="The Low Memo (August 9, 1966) - NICAP Archive"
+            url="https://www.nicap.org/lowmemo.htm"
+            type="Primary Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="The internal University of Colorado project coordination memo by Robert Low revealing institutional intent to produce a predetermined negative conclusion. The central exhibit in critiques of the Condon Committee's scientific integrity."
+            notes="Used for: Condon Committee."
+          />
         </section>
 
         {/* Documented cases sources */}

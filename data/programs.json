@@ -1505,7 +1505,8 @@
     "key_personnel": [
       {
         "name": "Jay Stratton",
-        "role": "Director (appointed 2020)"
+        "role": "Director (appointed 2020)",
+        "figure_id": "jay-stratton"
       },
       {
         "name": "David Norquist",
@@ -1534,6 +1535,7 @@
       "uaptf-preliminary-assessment"
     ],
     "connected_figures": [
+      "jay-stratton",
       "luis-elizondo",
       "chris-mellon"
     ],
