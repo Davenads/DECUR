@@ -90,6 +90,9 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
   // Programs sub-view
   const [programView, setProgramView]     = useState<'lineage' | 'hierarchy' | 'disclosure'>('lineage');
 
+  // Pre-selected case on map (from ?case= deep link)
+  const [initialCaseId, setInitialCaseId] = useState<string | null>(null);
+
   // Timeline era focus
   const [focusEra, setFocusEra]           = useState<FocusEra | null>(null);
 
@@ -125,6 +128,9 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
       setActiveTab(tab);
       setMountedTabs(prev => new Set<TabView>(Array.from(prev).concat(tab)));
     }
+
+    const caseId = params.get('case');
+    if (caseId) setInitialCaseId(caseId);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -340,7 +346,7 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
                       Click any marker for location details and evidence summary.
                     </p>
                   </div>
-                  <CaseMap cases={mapCases} events={mapEvents} />
+                  <CaseMap cases={mapCases} events={mapEvents} initialSelectedId={initialCaseId ?? undefined} />
                 </div>
               )}
 

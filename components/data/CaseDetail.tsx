@@ -513,7 +513,7 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases', netwo
 
       {/* Explore callout */}
       <Link
-        href="/explore?tab=map#secondary-tabs"
+        href={`/explore?tab=map&case=${c.id}#secondary-tabs`}
         className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
       >
         <div>

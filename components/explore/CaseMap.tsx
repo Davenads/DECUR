@@ -215,9 +215,10 @@ const MapCanvasNoSSR = dynamic(() => Promise.resolve(MapCanvas), { ssr: false })
 interface Props {
   cases: MapCase[];
   events: MapEvent[];
+  initialSelectedId?: string;
 }
 
-const CaseMap: FC<Props> = ({ cases, events }) => {
+const CaseMap: FC<Props> = ({ cases, events, initialSelectedId }) => {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [activeMarker, setActiveMarker] = useState<ActiveMarker>(null);
@@ -226,6 +227,17 @@ const CaseMap: FC<Props> = ({ cases, events }) => {
   const [center, setCenter] = useState<[number, number]>([0, 20]);
 
   useEffect(() => { setMounted(true); }, []);
+
+  // Pre-select a case from a deep link (?case=id)
+  useEffect(() => {
+    if (!mounted || !initialSelectedId) return;
+    const match = cases.find(c => c.id === initialSelectedId);
+    if (match) {
+      setActiveMarker({ type: 'case', data: match });
+      setCenter([match.coordinates.lng, match.coordinates.lat]);
+      setZoom(4);
+    }
+  }, [mounted, initialSelectedId, cases]);
 
   const isDark = mounted && resolvedTheme === 'dark';
 
