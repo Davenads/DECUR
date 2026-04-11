@@ -2072,7 +2072,7 @@ const Sources: NextPage = () => {
             typeColor="bg-blue-100 text-blue-700"
             description="Official congressional record of David Grusch's sworn testimony identifying Immaculate Constellation by name as a UAP analysis program. The only on-record public reference to Immaculate Constellation that served as the primary source for that program entry."
             coverage="July 26, 2023"
-            notes="Used for: Immaculate Constellation, AARO, Kona Blue."
+            notes="Used for: Immaculate Constellation, AARO, Kona Blue, JSOC."
           />
 
           <SourceCard
@@ -2121,6 +2121,24 @@ const Sources: NextPage = () => {
             typeColor="bg-purple-100 text-purple-700"
             description="The foundational research publication establishing Project Moon Dust's existence through FOIA document analysis by Barry Greenwood and Lawrence Fawcett. Documents the scope of government UAP-related recovery programs through declassified records."
             notes="Used for: Project Moon Dust / Blue Fly."
+          />
+
+          <SourceCard
+            name="MUFON Case Management System"
+            url="https://www.mufoncms.com"
+            type="Database"
+            typeColor="bg-green-100 text-green-700"
+            description="The Mutual UFO Network's publicly searchable case database, launched in 2009. Contains over 130,000 reported cases with standardized investigator reports. Primary reference for MUFON organizational history, investigative methodology, and the BAASS data-sharing arrangement."
+            notes="Used for: MUFON."
+          />
+
+          <SourceCard
+            name="Relentless Strike: The Secret History of Joint Special Operations Command (Naylor, 2015)"
+            url="https://www.amazon.com/dp/1250061644"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="The most comprehensive public history of JSOC, tracing its founding after Operation Eagle Claw through the post-9/11 expansion under McChrystal. Primary reference for JSOC's organizational structure, operational mandate, and sensitive site exploitation mission."
+            notes="Used for: JSOC."
           />
         </section>
 
