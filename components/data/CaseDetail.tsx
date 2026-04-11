@@ -488,7 +488,7 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases', netwo
           >
             ← {backLabel}
           </button>
-          {networkNodeId && (
+          {networkNodeId && backLabel !== 'Relationship Network' && (
             <Link
               href={`/explore?node=${networkNodeId}#relationship-network`}
               className="text-xs text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors"
@@ -513,13 +513,13 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases', netwo
 
       {/* Explore callout */}
       <Link
-        href="/explore"
+        href="/explore?tab=map#secondary-tabs"
         className="flex items-center justify-between gap-3 border border-gray-200 dark:border-gray-700 rounded-lg px-4 py-3 hover:border-primary hover:shadow-sm transition-all group"
       >
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-0.5">Explore Visualizations</p>
           <p className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors">
-            View this incident on the interactive timeline and event frequency chart
+            View this incident on the interactive incident map and timeline
           </p>
         </div>
         <svg className="h-4 w-4 text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

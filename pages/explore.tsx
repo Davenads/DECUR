@@ -107,13 +107,23 @@ const Explore: NextPage<Props> = ({ entries, insiderEvents, caseEvents, mapCases
     if (heroView === 'claims' && !claimsEverShown) setClaimsEverShown(true);
   }, [heroView, claimsEverShown]);
 
-  // ── Restore ?programs query param deep link ───────────────────
+  // ── Restore ?programs / ?tab query param deep links ──────────
   useEffect(() => {
-    const programs = new URLSearchParams(window.location.search).get('programs');
+    const params = new URLSearchParams(window.location.search);
+
+    const programs = params.get('programs');
     if (programs === 'hierarchy' || programs === 'lineage' || programs === 'disclosure') {
       setProgramView(programs);
       setActiveTab('program-lineage');
       setMountedTabs(prev => new Set<TabView>(Array.from(prev).concat('program-lineage')));
+      return;
+    }
+
+    const tab = params.get('tab') as TabView | null;
+    const validTabs: TabView[] = ['timeline', 'map', 'program-lineage', 'evidence-tiers'];
+    if (tab && validTabs.includes(tab)) {
+      setActiveTab(tab);
+      setMountedTabs(prev => new Set<TabView>(Array.from(prev).concat(tab)));
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
