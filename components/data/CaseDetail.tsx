@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CaseEntry, EvidenceTier, HypothesisAssessment, CaseSourceType } from '../../types/data';
 import ProfileTabBar from './shared/ProfileTabBar';
 import CredibilityBalance from './shared/CredibilityBalance';
+import BookmarkButton from '../bookmarks/BookmarkButton';
 import insidersIndex from '../../data/key-figures/index.json';
 
 /* ─── Helpers ──────────────────────────────────────────────────── */
@@ -496,14 +497,17 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases', netwo
             </Link>
           )}
         </div>
-        <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100">{c.name}</h2>
-          <div className="flex items-center gap-2 mt-1 flex-wrap">
-            <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${tier.classes}`}>{tier.label}</span>
-            <span className="font-mono tabular-nums text-xs text-gray-400 dark:text-gray-500">{c.date}</span>
-            <span className="text-gray-300 dark:text-gray-600 text-xs">·</span>
-            <span className="font-mono tabular-nums text-xs text-gray-400 dark:text-gray-500">{c.location}</span>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100">{c.name}</h2>
+            <div className="flex items-center gap-2 mt-1 flex-wrap">
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${tier.classes}`}>{tier.label}</span>
+              <span className="font-mono tabular-nums text-xs text-gray-400 dark:text-gray-500">{c.date}</span>
+              <span className="text-gray-300 dark:text-gray-600 text-xs">·</span>
+              <span className="font-mono tabular-nums text-xs text-gray-400 dark:text-gray-500">{c.location}</span>
+            </div>
           </div>
+          <BookmarkButton contentType="case" contentId={c.id} contentName={c.name} />
         </div>
       </div>
 

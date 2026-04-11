@@ -2,6 +2,7 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import { ProgramEntry } from '../../types/data';
 import ProfileTabBar from './shared/ProfileTabBar';
+import BookmarkButton from '../bookmarks/BookmarkButton';
 import { ps } from './shared/profileStyles';
 
 /* ─── Status badge config ───────────────────────────────────────── */
@@ -245,15 +246,18 @@ const ProgramDetail: FC<ProgramDetailProps> = ({ p, onBack, backLabel = 'Program
             </Link>
           )}
         </div>
-        <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{p.name}</h2>
-          <div className="flex items-center gap-2 mt-1 flex-wrap">
-            <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${status.classes}`}>{status.label}</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
-              {TYPE_CONFIG[p.type]}
-            </span>
-            <span className="text-xs text-gray-400">{p.active_period}</span>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{p.name}</h2>
+            <div className="flex items-center gap-2 mt-1 flex-wrap">
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${status.classes}`}>{status.label}</span>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                {TYPE_CONFIG[p.type]}
+              </span>
+              <span className="text-xs text-gray-400">{p.active_period}</span>
+            </div>
           </div>
+          <BookmarkButton contentType="program" contentId={p.id} contentName={p.name} />
         </div>
       </div>
 

@@ -23,6 +23,7 @@ const navItems: NavItems = {
       { title: 'Documents', path: '/data?category=documents' },
       { title: 'Programs', path: '/data?category=programs' },
       { title: 'News', path: '/data?category=news' },
+      { title: 'Collections', path: '/collections' },
     ],
   },
   resources: {

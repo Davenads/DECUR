@@ -3,6 +3,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { DocumentEntry } from '../../../types/data';
 import ProfileTabBar from './ProfileTabBar';
+import BookmarkButton from '../../bookmarks/BookmarkButton';
 import insiderIndex from '../../../data/key-figures/index.json';
 
 const figureNameMap: Record<string, string> = Object.fromEntries(
@@ -233,13 +234,16 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Docum
             </Link>
           )}
         </div>
-        <div>
-          <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h2>
-          <div className="flex items-center gap-2 mt-1 flex-wrap">
-            <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${auth.classes}`}>{auth.label}</span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">{docTypeLabel[d.document_type]}</span>
-            <span className="text-xs text-gray-400">{d.date}</span>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h2 className="text-2xl font-bold font-heading text-gray-900 dark:text-gray-100 leading-snug">{d.name}</h2>
+            <div className="flex items-center gap-2 mt-1 flex-wrap">
+              <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${auth.classes}`}>{auth.label}</span>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">{docTypeLabel[d.document_type]}</span>
+              <span className="text-xs text-gray-400">{d.date}</span>
+            </div>
           </div>
+          <BookmarkButton contentType="document" contentId={d.id} contentName={d.name} />
         </div>
       </div>
 
