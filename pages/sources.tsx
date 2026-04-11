@@ -2140,6 +2140,78 @@ const Sources: NextPage = () => {
             description="The most comprehensive public history of JSOC, tracing its founding after Operation Eagle Claw through the post-9/11 expansion under McChrystal. Primary reference for JSOC's organizational structure, operational mandate, and sensitive site exploitation mission."
             notes="Used for: JSOC."
           />
+
+          <SourceCard
+            name="Mirage Men (Pilkington, 2010)"
+            url="https://www.amazon.com/dp/1602397317"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Mark Pilkington's investigation into the U.S. government's deliberate manipulation of UFO researchers, centered on AFOSI agent Richard Doty's disinformation campaign against Paul Bennewitz. The primary source for documenting AFOSI's institutional role in suppressing and manipulating UAP discourse."
+            notes="Used for: AFOSI."
+          />
+
+          <SourceCard
+            name="Mirage Men (documentary, 2013)"
+            url="https://www.imdb.com/title/tt2375543/"
+            type="Documentary"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Documentary adaptation of Pilkington's book featuring interviews with Richard Doty and other principals in the AFOSI disinformation operations. Provides on-camera accounts of the Bennewitz operation and the Kirtland AFB UAP incident."
+            notes="Used for: AFOSI."
+          />
+
+          <SourceCard
+            name="MJ-12 Documents - National Security Archive (GWU)"
+            url="https://nsarchive.gwu.edu/briefing-book/intelligence/2019-08-06/ufos-mj-12-government-really-hiding"
+            type="Primary Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="The National Security Archive's analysis and collection of the leaked Majestic-12 documents, which contain the primary reference to the alleged Interplanetary Phenomenon Unit (IPU). Contextualizes the documents' authenticity debates and their origins."
+            notes="Used for: IPU."
+          />
+
+          <SourceCard
+            name="The UFO Cover-Up: What the Government Won't Say (Fawcett and Greenwood, 1984)"
+            url="https://www.amazon.com/dp/0671552198"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Early investigative work by Barry Greenwood and Lawrence Fawcett drawing on FOIA-obtained documents to establish the scope of government UAP programs. Relevant to IPU research as context for the early classified program structure alleged in the MJ-12 documents."
+            notes="Used for: IPU."
+          />
+
+          <SourceCard
+            name="The Debrief - Grusch Disclosure Article (Coulthart and Wurtzel, June 2023)"
+            url="https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/"
+            type="Investigative Journalism"
+            typeColor="bg-orange-100 text-orange-700"
+            description="The June 2023 investigative piece that first publicly named David Grusch's claims about the Office of Global Access (OGA) as a CIA coordination mechanism for international UAP material recovery. Primary source for the OGA program entry."
+            notes="Used for: OGA."
+          />
+
+          <SourceCard
+            name="The Day After Roswell (Corso, 1997)"
+            url="https://www.amazon.com/dp/0671017616"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Lt. Col. Philip Corso's memoir claiming that recovered technology from the Roswell incident was seeded into SDI-era defense contractor research through his position in Army R&D. The primary source for the UAP-related narrative surrounding the Strategic Defense Initiative."
+            notes="Used for: SDI."
+          />
+
+          <SourceCard
+            name="SETI Institute Official Website"
+            url="https://www.seti.org"
+            type="Official Organization"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="The SETI Institute's official website documenting organizational history, research programs, personnel, and publications since its 1984 founding. Primary reference for the SETI program entry's institutional structure, funding history, and scientific methodology."
+            notes="Used for: SETI."
+          />
+
+          <SourceCard
+            name="Is Anyone Out There? (Drake and Sobel, 1992)"
+            url="https://www.amazon.com/dp/0385267207"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Frank Drake's first-person account of the origins of SETI, Project Ozma, and the development of the Drake Equation. Primary source for SETI's founding history, early methodology, and the scientific context in which the modern search for extraterrestrial intelligence developed."
+            notes="Used for: SETI."
+          />
         </section>
 
         {/* Documented cases sources */}

@@ -152,7 +152,10 @@
       }
     ],
     "relationships": [
-      { "target": "project-grudge", "type": "successor" }
+      {
+        "target": "project-grudge",
+        "type": "successor"
+      }
     ],
     "includeInLineage": true
   },
@@ -214,7 +217,10 @@
       }
     ],
     "relationships": [
-      { "target": "project-blue-book", "type": "successor" }
+      {
+        "target": "project-blue-book",
+        "type": "successor"
+      }
     ],
     "includeInLineage": true
   },
@@ -313,7 +319,10 @@
       }
     ],
     "relationships": [
-      { "target": "aatip", "type": "parent-program" }
+      {
+        "target": "aatip",
+        "type": "parent-program"
+      }
     ],
     "includeInLineage": true
   },
@@ -391,7 +400,10 @@
       }
     ],
     "relationships": [
-      { "target": "uap-task-force", "type": "predecessor" }
+      {
+        "target": "uap-task-force",
+        "type": "predecessor"
+      }
     ],
     "includeInLineage": true
   },
@@ -519,7 +531,10 @@
       }
     ],
     "relationships": [
-      { "target": "uap-task-force", "type": "related" }
+      {
+        "target": "uap-task-force",
+        "type": "related"
+      }
     ],
     "includeInLineage": true
   },
@@ -576,7 +591,10 @@
       }
     ],
     "relationships": [
-      { "target": "aaro", "type": "assessed-by" }
+      {
+        "target": "aaro",
+        "type": "assessed-by"
+      }
     ],
     "includeInLineage": true
   },
@@ -669,7 +687,10 @@
       }
     ],
     "relationships": [
-      { "target": "uap-task-force", "type": "triggered" }
+      {
+        "target": "uap-task-force",
+        "type": "triggered"
+      }
     ],
     "includeInLineage": true
   },
@@ -824,7 +845,10 @@
       }
     ],
     "relationships": [
-      { "target": "bigelow-aerospace", "type": "evolved-into" }
+      {
+        "target": "bigelow-aerospace",
+        "type": "evolved-into"
+      }
     ],
     "includeInLineage": true
   },
@@ -912,7 +936,10 @@
       }
     ],
     "relationships": [
-      { "target": "aawsap", "type": "contracted" }
+      {
+        "target": "aawsap",
+        "type": "contracted"
+      }
     ],
     "includeInLineage": true
   },
@@ -996,8 +1023,14 @@
       }
     ],
     "relationships": [
-      { "target": "mufon", "type": "influenced" },
-      { "target": "project-blue-book", "type": "investigated" }
+      {
+        "target": "mufon",
+        "type": "influenced"
+      },
+      {
+        "target": "project-blue-book",
+        "type": "investigated"
+      }
     ],
     "includeInLineage": true
   },
@@ -1260,7 +1293,10 @@
       }
     ],
     "relationships": [
-      { "target": "project-sign", "type": "successor" }
+      {
+        "target": "project-sign",
+        "type": "successor"
+      }
     ],
     "includeInLineage": true
   },
@@ -1349,7 +1385,9 @@
       }
     ],
     "connected_documents": [],
-    "connected_figures": [],
+    "connected_figures": [
+      "philip-corso"
+    ],
     "limitations": [
       "The UAP-related claims about SDI rest primarily on Philip Corso's account in The Day After Roswell, which has been widely disputed by other researchers and former colleagues.",
       "Corso's claimed role in seeding recovered technology into defense research cannot be independently verified, and many specific technical claims in his book have been challenged.",
@@ -1372,7 +1410,10 @@
       }
     ],
     "relationships": [
-      { "target": "aawsap", "type": "precedent" }
+      {
+        "target": "aawsap",
+        "type": "precedent"
+      }
     ],
     "includeInLineage": true
   },
@@ -1515,8 +1556,14 @@
       }
     ],
     "relationships": [
-      { "target": "aaro", "type": "predecessor" },
-      { "target": "galileo-project", "type": "inspired" }
+      {
+        "target": "aaro",
+        "type": "predecessor"
+      },
+      {
+        "target": "galileo-project",
+        "type": "inspired"
+      }
     ],
     "includeInLineage": true
   },
@@ -1598,7 +1645,10 @@
       }
     ],
     "relationships": [
-      { "target": "sol-foundation", "type": "led-to" }
+      {
+        "target": "sol-foundation",
+        "type": "led-to"
+      }
     ],
     "includeInLineage": true
   },
@@ -1677,7 +1727,10 @@
       }
     ],
     "relationships": [
-      { "target": "uap-task-force", "type": "predecessor" }
+      {
+        "target": "uap-task-force",
+        "type": "predecessor"
+      }
     ],
     "includeInLineage": true
   },
@@ -1748,8 +1801,14 @@
       }
     ],
     "relationships": [
-      { "target": "aawsap", "type": "parallel" },
-      { "target": "project-blue-book", "type": "parallel" }
+      {
+        "target": "aawsap",
+        "type": "parallel"
+      },
+      {
+        "target": "project-blue-book",
+        "type": "parallel"
+      }
     ],
     "includeInLineage": false
   },
@@ -1843,8 +1902,14 @@
       }
     ],
     "relationships": [
-      { "target": "project-blue-book", "type": "affiliated" },
-      { "target": "nicap", "type": "opposed" }
+      {
+        "target": "project-blue-book",
+        "type": "affiliated"
+      },
+      {
+        "target": "nicap",
+        "type": "opposed"
+      }
     ],
     "includeInLineage": false
   }
