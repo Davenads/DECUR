@@ -24,6 +24,7 @@ const navItems: NavItems = {
       { title: 'Programs', path: '/data?category=programs' },
       { title: 'News', path: '/data?category=news' },
       { title: 'Collections', path: '/collections' },
+      { title: 'Search & Filter', path: '/search' },
     ],
   },
   resources: {
