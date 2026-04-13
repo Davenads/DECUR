@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm your email - DECUR</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Helvetica,Arial,sans-serif;">
+
+  <!-- Preheader (hidden preview text) -->
+  <div style="display:none;max-height:0;overflow:hidden;color:#f3f4f6;">
+    Welcome to DECUR. Click the link below to activate your account.
+  </div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f3f4f6;padding:32px 16px;">
+    <tr>
+      <td align="center">
+
+        <!-- Card -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:580px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+
+          <!-- Header accent stripe -->
+          <tr>
+            <td style="background-color:#1e3f62;height:4px;font-size:0;line-height:0;">&nbsp;</td>
+          </tr>
+
+          <!-- Header -->
+          <tr>
+            <td align="center" style="background-color:#2e5c8a;padding:28px 40px;">
+              <span style="font-size:22px;font-weight:700;color:#ffffff;letter-spacing:0.04em;font-family:Arial,sans-serif;">DECUR</span>
+              <br />
+              <span style="font-size:12px;color:#a8c4e0;letter-spacing:0.06em;font-family:Arial,sans-serif;">decur.org</span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:40px 40px 32px;">
+
+              <h1 style="margin:0 0 16px;font-size:22px;font-weight:700;color:#111827;font-family:Arial,sans-serif;">
+                Welcome to DECUR
+              </h1>
+
+              <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#374151;font-family:Helvetica,Arial,sans-serif;">
+                You&apos;re one step away from exploring the platform. Click the button below to confirm your email address and activate your account.
+              </p>
+
+              <!-- CTA Button -->
+              <table cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr>
+                  <td align="center" style="background-color:#2e5c8a;border-radius:8px;">
+                    <a href="{{ .ConfirmationURL }}"
+                       style="display:inline-block;padding:14px 32px;font-size:15px;font-weight:600;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;letter-spacing:0.02em;">
+                      Confirm My Email
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:0 0 12px;font-size:13px;line-height:1.5;color:#6b7280;font-family:Helvetica,Arial,sans-serif;">
+                Or copy and paste this link into your browser:
+              </p>
+              <p style="margin:0 0 28px;font-size:12px;line-height:1.5;color:#2e5c8a;word-break:break-all;font-family:monospace;">
+                {{ .ConfirmationURL }}
+              </p>
+
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0 0 24px;" />
+
+              <p style="margin:0;font-size:13px;line-height:1.5;color:#9ca3af;font-family:Helvetica,Arial,sans-serif;">
+                If you didn&apos;t create a DECUR account, you can safely ignore this email.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f9fafb;padding:20px 40px;border-top:1px solid #e5e7eb;">
+              <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center;font-family:Helvetica,Arial,sans-serif;">
+                &copy; 2025 DECUR &middot; <a href="{{ .SiteURL }}" style="color:#6b7280;text-decoration:none;">decur.org</a>
+                <br />
+                You&apos;re receiving this because you created an account at decur.org.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /Card -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

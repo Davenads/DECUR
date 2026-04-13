@@ -81,6 +81,13 @@ aod-audit-cheatsheet.txt
 
 # Dev server log
 .dev-server.log
+dev-server.log
+
+# Claude local settings (per-machine permissions, not portable)
+.claude/settings.local.json
+
+# Root-level throwaway session scripts (hardcoded absolute paths)
+qa-parse.cjs
 
 # Sparks extraction intermediate output
 data/blue-book-index-enriched.json

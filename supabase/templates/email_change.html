@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm your new email - DECUR</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Helvetica,Arial,sans-serif;">
+
+  <!-- Preheader -->
+  <div style="display:none;max-height:0;overflow:hidden;color:#f3f4f6;">
+    Click the link below to confirm your new email address for your DECUR account.
+  </div>
+
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f3f4f6;padding:32px 16px;">
+    <tr>
+      <td align="center">
+
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:580px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
+
+          <!-- Accent stripe -->
+          <tr>
+            <td style="background-color:#1e3f62;height:4px;font-size:0;line-height:0;">&nbsp;</td>
+          </tr>
+
+          <!-- Header -->
+          <tr>
+            <td align="center" style="background-color:#2e5c8a;padding:28px 40px;">
+              <span style="font-size:22px;font-weight:700;color:#ffffff;letter-spacing:0.04em;font-family:Arial,sans-serif;">DECUR</span>
+              <br />
+              <span style="font-size:12px;color:#a8c4e0;letter-spacing:0.06em;font-family:Arial,sans-serif;">decur.org</span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:40px 40px 32px;">
+
+              <h1 style="margin:0 0 16px;font-size:22px;font-weight:700;color:#111827;font-family:Arial,sans-serif;">
+                Confirm Your New Email
+              </h1>
+
+              <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#374151;font-family:Helvetica,Arial,sans-serif;">
+                You requested a change to the email address on your DECUR account. Click the button below to confirm your new address and complete the update.
+              </p>
+
+              <!-- CTA Button -->
+              <table cellpadding="0" cellspacing="0" border="0" style="margin:28px 0;">
+                <tr>
+                  <td align="center" style="background-color:#2e5c8a;border-radius:8px;">
+                    <a href="{{ .ConfirmationURL }}"
+                       style="display:inline-block;padding:14px 32px;font-size:15px;font-weight:600;color:#ffffff;text-decoration:none;font-family:Arial,sans-serif;letter-spacing:0.02em;">
+                      Confirm New Email
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:0 0 12px;font-size:13px;line-height:1.5;color:#6b7280;font-family:Helvetica,Arial,sans-serif;">
+                Or copy and paste this link into your browser:
+              </p>
+              <p style="margin:0 0 28px;font-size:12px;line-height:1.5;color:#2e5c8a;word-break:break-all;font-family:monospace;">
+                {{ .ConfirmationURL }}
+              </p>
+
+              <hr style="border:none;border-top:1px solid #e5e7eb;margin:0 0 24px;" />
+
+              <!-- Security note -->
+              <table cellpadding="0" cellspacing="0" border="0" style="background-color:#fefce8;border-left:3px solid #f59e0b;border-radius:4px;width:100%;margin-bottom:0;">
+                <tr>
+                  <td style="padding:12px 16px;">
+                    <p style="margin:0;font-size:13px;line-height:1.5;color:#78350f;font-family:Helvetica,Arial,sans-serif;">
+                      If you didn&apos;t request an email change, please ignore this message &mdash; your current email address will remain unchanged.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#f9fafb;padding:20px 40px;border-top:1px solid #e5e7eb;">
+              <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center;font-family:Helvetica,Arial,sans-serif;">
+                &copy; 2025 DECUR &middot; <a href="{{ .SiteURL }}" style="color:#6b7280;text-decoration:none;">decur.org</a>
+                <br />
+                You&apos;re receiving this because an email change was requested for your account.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
