@@ -86,14 +86,13 @@ export default function SightingsMapInner() {
         });
         mapRef.current = map;
 
-        /* Dark tile layer */
+        /* Dark tile layer - Stadia Alidade Smooth Dark (no API key required) */
         L.tileLayer(
-          'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+          'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png',
           {
             attribution:
-              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: 'abcd',
-            maxZoom: 19,
+              '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            maxZoom: 20,
           }
         ).addTo(map);
 
@@ -114,10 +113,10 @@ export default function SightingsMapInner() {
           maxZoom: 5,
           max: 1.0,
           gradient: {
-            0.0: 'rgba(0,0,0,0)',          // fully transparent - basemap shows through
-            0.15: 'rgba(26,107,138,0.5)',
-            0.4: 'rgba(245,158,11,0.75)',
-            0.7: 'rgba(239,68,68,0.9)',
+            0.0: 'rgba(0,0,0,0)',        // transparent base - dark basemap shows through
+            0.1: 'rgba(26,107,138,0.55)',
+            0.35: 'rgba(245,158,11,0.8)',
+            0.65: 'rgba(239,68,68,0.92)',
             1.0: '#ffffff',
           },
           minOpacity: 0,
@@ -198,8 +197,8 @@ export default function SightingsMapInner() {
 
   return (
     <div className="relative rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-      {/* Map container */}
-      <div ref={containerRef} style={{ height: 480, width: '100%' }} />
+      {/* Map container - dark bg prevents white flash while tiles load */}
+      <div ref={containerRef} style={{ height: 480, width: '100%', background: '#0f172a' }} />
 
       {/* Loading overlay */}
       {loading && !error && (
