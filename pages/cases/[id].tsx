@@ -1,11 +1,10 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { readFileSync } from 'fs';
-import { join } from 'path';
 import SeoHead from '../../components/SeoHead';
 import { CaseEntry } from '../../types/data';
 import casesData from '../../data/cases.json';
+import ufosintNearbyIndex from '../../data/ufosint/nearby-index.json';
 import CaseDetail from '../../components/data/CaseDetail';
 import { resolveExploreRef } from '../../lib/exploreRef';
 import { graphData } from '../../data/network-graph';
@@ -83,15 +82,9 @@ export const getStaticProps: GetStaticProps<Props> = ({ params }) => {
   const caseEntry = (casesData as unknown as CaseEntry[]).find(c => c.id === id);
   if (!caseEntry) return { notFound: true };
 
-  // Load pre-generated UFOSINT nearby sighting count (null if not available)
-  let ufosintNearby: number | null = null;
-  try {
-    const raw = readFileSync(join(process.cwd(), 'data', 'ufosint', 'by-case', `${id}.json`), 'utf-8');
-    const parsed = JSON.parse(raw);
-    ufosintNearby = typeof parsed.total_nearby === 'number' ? parsed.total_nearby : null;
-  } catch {
-    // No pre-generated file for this case (no coordinates or not yet fetched)
-  }
+  // Load pre-generated UFOSINT nearby sighting count from static index (no fs needed)
+  const nearbyIndex = ufosintNearbyIndex as Record<string, number | null>;
+  const ufosintNearby: number | null = nearbyIndex[id] ?? null;
 
   return { props: { caseEntry, ufosintNearby }, revalidate: 3600 };
 };
