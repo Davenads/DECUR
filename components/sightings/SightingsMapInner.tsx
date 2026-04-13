@@ -114,13 +114,13 @@ export default function SightingsMapInner() {
           maxZoom: 5,
           max: 1.0,
           gradient: {
-            0.0: 'rgba(0,0,0,0)',        // transparent base - dark basemap shows through
-            0.1: 'rgba(26,107,138,0.55)',
-            0.35: 'rgba(245,158,11,0.8)',
-            0.65: 'rgba(239,68,68,0.92)',
-            1.0: '#ffffff',
+            0.0: 'rgba(0,0,0,0)',          // transparent — basemap shows through at zero
+            0.15: 'rgba(253,224,71,0.65)', // yellow — first visible on light bg
+            0.4: 'rgba(249,115,22,0.82)',  // orange
+            0.7: 'rgba(220,38,38,0.92)',   // red
+            1.0: '#7f1d1d',               // dark maroon for hottest clusters
           },
-          minOpacity: 0,
+          minOpacity: 0.0,
         });
         heat.addTo(map);
         heatRef.current = heat;
