@@ -1,0 +1,55 @@
+{
+  "by_collection": [
+    {
+      "count": 362646,
+      "name": "PUBLIUS"
+    },
+    {
+      "count": 197108,
+      "name": "UFOCAT"
+    },
+    {
+      "count": 54751,
+      "name": "GELDREICH"
+    }
+  ],
+  "by_source": [
+    {
+      "collection": "UFOCAT",
+      "count": 197108,
+      "name": "UFOCAT"
+    },
+    {
+      "collection": "PUBLIUS",
+      "count": 159320,
+      "name": "NUFORC"
+    },
+    {
+      "collection": "PUBLIUS",
+      "count": 138310,
+      "name": "MUFON"
+    },
+    {
+      "collection": "PUBLIUS",
+      "count": 65016,
+      "name": "UPDB"
+    },
+    {
+      "collection": "GELDREICH",
+      "count": 54751,
+      "name": "UFO-search"
+    }
+  ],
+  "date_range": {
+    "max": "2026-02-20",
+    "min": "0034-04-01"
+  },
+  "duplicate_candidates": 0,
+  "geocoded_geonames": 43994,
+  "geocoded_locations": 105854,
+  "geocoded_original": 61893,
+  "high_quality": 118320,
+  "mapped_sightings": 396158,
+  "total_sightings": 614505,
+  "with_movement": 249217
+}

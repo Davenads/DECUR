@@ -1,0 +1,62 @@
+{
+  "case_id": "stephenville-tx-2008",
+  "case_name": "Stephenville, Texas UAP Encounters",
+  "bbox": {
+    "lat": 32.22,
+    "lng": -98.2,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 2006,
+    "to": 2010
+  },
+  "total_nearby": 33780,
+  "sample": [
+    {
+      "id": 162663,
+      "date": "2010-06-09",
+      "shape": "Ball",
+      "source": "UFOCAT",
+      "city": "ROMA",
+      "state": "ITA",
+      "country": ""
+    },
+    {
+      "id": 151264,
+      "date": "2006-01-16T03:25",
+      "shape": "Disc",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 151448,
+      "date": "2006-05-16T00:30",
+      "shape": "Lights",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 151492,
+      "date": "2006-06-02T23:40",
+      "shape": "Fireball",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 151499,
+      "date": "2006-06-02T23:45",
+      "shape": "Oval",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:26.249Z"
+}

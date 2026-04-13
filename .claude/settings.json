@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ufosint": {
+      "url": "https://ufosint-explorer.azurewebsites.net/mcp",
+      "transport": "http"
+    }
+  }
+}

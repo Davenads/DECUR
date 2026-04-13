@@ -1,0 +1,62 @@
+{
+  "case_id": "uss-theodore-roosevelt",
+  "case_name": "USS Theodore Roosevelt Encounters",
+  "bbox": {
+    "lat": 35,
+    "lng": -75.5,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 2012,
+    "to": 2016
+  },
+  "total_nearby": 51084,
+  "sample": [
+    {
+      "id": 162715,
+      "date": "2012-03-29T10:55",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "ROMA",
+      "state": "ITA",
+      "country": ""
+    },
+    {
+      "id": 1635,
+      "date": "2012-01-16T23:00",
+      "shape": "Cigar",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 160017,
+      "date": "2012-09-13T22:00",
+      "shape": "Triangle",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 160125,
+      "date": "2014-11-07T23:30",
+      "shape": "Triangle",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 160166,
+      "date": "2013-04-03T20:45",
+      "shape": "Triangle",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:15.031Z"
+}

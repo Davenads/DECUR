@@ -1,0 +1,62 @@
+{
+  "case_id": "fukushima-2011",
+  "case_name": "Fukushima Daiichi UAP Sightings",
+  "bbox": {
+    "lat": 37.42,
+    "lng": 141.03,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 2009,
+    "to": 2013
+  },
+  "total_nearby": 45193,
+  "sample": [
+    {
+      "id": 162663,
+      "date": "2010-06-09",
+      "shape": "Ball",
+      "source": "UFOCAT",
+      "city": "ROMA",
+      "state": "ITA",
+      "country": ""
+    },
+    {
+      "id": 162715,
+      "date": "2012-03-29T10:55",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "ROMA",
+      "state": "ITA",
+      "country": ""
+    },
+    {
+      "id": 1635,
+      "date": "2012-01-16T23:00",
+      "shape": "Cigar",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 157861,
+      "date": "2011-01-09",
+      "shape": "Fireball",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 158361,
+      "date": "2011-08-07T13:00",
+      "shape": "Light",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:35.343Z"
+}

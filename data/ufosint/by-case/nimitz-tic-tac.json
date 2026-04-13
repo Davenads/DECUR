@@ -1,0 +1,62 @@
+{
+  "case_id": "nimitz-tic-tac",
+  "case_name": "USS Nimitz / Tic Tac Encounter",
+  "bbox": {
+    "lat": 32.5,
+    "lng": -117.5,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 2002,
+    "to": 2006
+  },
+  "total_nearby": 22390,
+  "sample": [
+    {
+      "id": 157140,
+      "date": "2004-06-07",
+      "shape": "Cigar",
+      "source": "UFOCAT",
+      "city": "BEJA",
+      "state": "POR",
+      "country": ""
+    },
+    {
+      "id": 163882,
+      "date": "2002-01-12",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "TURRAMURRA",
+      "state": "NSW",
+      "country": ""
+    },
+    {
+      "id": 144841,
+      "date": "2002-10-09T20:55",
+      "shape": "Light",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 144853,
+      "date": "2002-10-20T21:40",
+      "shape": "Fireball",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 145023,
+      "date": "2002-05-15T22:30",
+      "shape": "Lights",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:13.029Z"
+}

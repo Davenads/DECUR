@@ -1,0 +1,62 @@
+{
+  "case_id": "loch-raven-dam-1958",
+  "case_name": "Loch Raven Dam Encounter",
+  "bbox": {
+    "lat": 39.4668,
+    "lng": -76.5614,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 1956,
+    "to": 1960
+  },
+  "total_nearby": 20167,
+  "sample": [
+    {
+      "id": 17,
+      "date": "1957-07-25T23:30",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "NORTH HAVRE",
+      "state": "MT",
+      "country": ""
+    },
+    {
+      "id": 189792,
+      "date": "1957-07-25T23:30",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "NORTH HAVRE",
+      "state": "MT",
+      "country": ""
+    },
+    {
+      "id": 63699,
+      "date": "1960-07-01",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "SAPPORO",
+      "state": "JPN",
+      "country": ""
+    },
+    {
+      "id": 95551,
+      "date": "1958-04-01T23:30",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "BEJA",
+      "state": "POR",
+      "country": ""
+    },
+    {
+      "id": 27466,
+      "date": "1958-03-08",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "ROSARIO",
+      "state": "ARG",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:39.838Z"
+}

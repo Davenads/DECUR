@@ -1,0 +1,62 @@
+{
+  "case_id": "varginha-1996",
+  "case_name": "Varginha Incident",
+  "bbox": {
+    "lat": -21.55,
+    "lng": -45.43,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 1994,
+    "to": 1998
+  },
+  "total_nearby": 14618,
+  "sample": [
+    {
+      "id": 359792,
+      "date": "1994",
+      "shape": null,
+      "source": "MUFON",
+      "city": "seattle",
+      "state": "WA",
+      "country": "US"
+    },
+    {
+      "id": 380022,
+      "date": "1994",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Yucca Valley",
+      "state": "CA",
+      "country": "US"
+    },
+    {
+      "id": 358612,
+      "date": "1994-01",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Danbury",
+      "state": "NC",
+      "country": "US"
+    },
+    {
+      "id": 581,
+      "date": "1994-01-01",
+      "shape": "Disc",
+      "source": "UFOCAT",
+      "city": "NARYAN-MAR, NENETS AUTONOMOUS",
+      "state": "RUS",
+      "country": ""
+    },
+    {
+      "id": 582,
+      "date": "1994-01-01",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "MELBOURNE",
+      "state": "VIC",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:36.074Z"
+}
