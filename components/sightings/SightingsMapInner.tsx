@@ -86,13 +86,14 @@ export default function SightingsMapInner() {
         });
         mapRef.current = map;
 
-        /* ESRI World Dark Gray — public, no API key, no origin restrictions */
+        /* CartoDB Positron — light minimal tiles, public CDN, no API key */
         L.tileLayer(
-          'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+          'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
           {
             attribution:
-              'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-            maxZoom: 16,
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 19,
           }
         ).addTo(map);
 
@@ -197,8 +198,8 @@ export default function SightingsMapInner() {
 
   return (
     <div className="sightings-map relative rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-      {/* Map container - dark bg prevents white flash while tiles load */}
-      <div ref={containerRef} style={{ height: 480, width: '100%', background: '#0f172a' }} />
+      {/* Map container - light bg matches CartoDB Positron tiles */}
+      <div ref={containerRef} style={{ height: 480, width: '100%', background: '#f4f4f0' }} />
 
       {/* Loading overlay */}
       {loading && !error && (
