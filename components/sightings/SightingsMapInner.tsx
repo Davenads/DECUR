@@ -102,7 +102,10 @@ export default function SightingsMapInner() {
         if (destroyed) return;
 
         const maxCnt = Math.max(...cells.map((c) => c.cnt), 1);
-        const heatPoints = cells.map((c) => [c.lat, c.lng, c.cnt / maxCnt] as [number, number, number]);
+        // Sqrt transform: only truly high-density clusters glow hot; low-count cells fade out
+        const heatPoints = cells.map(
+          (c) => [c.lat, c.lng, Math.sqrt(c.cnt / maxCnt)] as [number, number, number]
+        );
 
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const heat = (L as any).heatLayer(heatPoints, {
@@ -111,12 +114,13 @@ export default function SightingsMapInner() {
           maxZoom: 5,
           max: 1.0,
           gradient: {
-            0.1: '#1a6b8a',
-            0.4: '#f59e0b',
-            0.7: '#ef4444',
+            0.0: 'rgba(0,0,0,0)',          // fully transparent - basemap shows through
+            0.15: 'rgba(26,107,138,0.5)',
+            0.4: 'rgba(245,158,11,0.75)',
+            0.7: 'rgba(239,68,68,0.9)',
             1.0: '#ffffff',
           },
-          minOpacity: 0.05,
+          minOpacity: 0,
         });
         heat.addTo(map);
         heatRef.current = heat;
@@ -171,7 +175,7 @@ export default function SightingsMapInner() {
             if (destroyed) return;
             const newMax = Math.max(...newCells.map((c) => c.cnt), 1);
             const newPoints = newCells.map(
-              (c) => [c.lat, c.lng, c.cnt / newMax] as [number, number, number]
+              (c) => [c.lat, c.lng, Math.sqrt(c.cnt / newMax)] as [number, number, number]
             );
             heatRef.current?.setLatLngs(newPoints);
           } catch {
