@@ -86,17 +86,15 @@ export default function SightingsMapInner() {
         });
         mapRef.current = map;
 
-        /* Dark tile layer via CSS invert on OSM tiles — works on any origin/network */
-        const styleEl = document.createElement('style');
-        styleEl.textContent =
-          '.sightings-map .leaflet-tile { filter: invert(100%) hue-rotate(180deg) brightness(85%) contrast(85%); }';
-        document.head.appendChild(styleEl);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 19,
-        }).addTo(map);
+        /* ESRI World Dark Gray — public, no API key, no origin restrictions */
+        L.tileLayer(
+          'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+          {
+            attribution:
+              'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+            maxZoom: 16,
+          }
+        ).addTo(map);
 
         /* Load initial hexbins and add heat layer */
         const cells = await fetchHexbins(3);
@@ -194,10 +192,6 @@ export default function SightingsMapInner() {
       map?.remove();
       mapRef.current = null;
       heatRef.current = null;
-      // Remove injected style tag
-      document.querySelectorAll('style').forEach((el) => {
-        if (el.textContent?.includes('sightings-map')) el.remove();
-      });
     };
   }, []);
 
