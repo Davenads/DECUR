@@ -86,6 +86,10 @@ export default function SightingsMapInner() {
         });
         mapRef.current = map;
 
+        /* Geography pane below overlayPane (400) so heatmap renders on top */
+        const geoPane = map.createPane('geoPane');
+        geoPane.style.zIndex = '350';
+
         /* Local geography layer — no external CDN, uses same world-110m.json as Explore map */
         const topoModule = await import('topojson-client');
         const topoRes = await fetch('/world-110m.json');
@@ -94,6 +98,7 @@ export default function SightingsMapInner() {
         const countries = topoModule.feature(topo, topo.objects.countries);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         L.geoJSON(countries as any, {
+          pane: 'geoPane',
           style: {
             fillColor: '#1e293b',
             fillOpacity: 1,
@@ -119,11 +124,11 @@ export default function SightingsMapInner() {
           maxZoom: 5,
           max: 1.0,
           gradient: {
-            0.0: 'rgba(0,0,0,0)',          // transparent — basemap shows through at zero
-            0.15: 'rgba(253,224,71,0.65)', // yellow — first visible on light bg
-            0.4: 'rgba(249,115,22,0.82)',  // orange
-            0.7: 'rgba(220,38,38,0.92)',   // red
-            1.0: '#7f1d1d',               // dark maroon for hottest clusters
+            0.0: 'rgba(0,0,0,0)',          // transparent — geography shows through at zero
+            0.15: 'rgba(253,224,71,0.75)', // yellow — pops on dark background
+            0.4: 'rgba(249,115,22,0.88)',  // orange
+            0.7: 'rgba(220,38,38,0.95)',   // red
+            1.0: '#ffffff',               // white hotspot for highest density
           },
           minOpacity: 0.0,
         });
