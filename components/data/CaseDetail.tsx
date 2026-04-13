@@ -449,9 +449,10 @@ export interface CaseDetailProps {
   onBack: () => void;
   backLabel?: string;
   networkNodeId?: string;
+  ufosintNearby?: number | null;
 }
 
-const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases', networkNodeId }) => {
+const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases', networkNodeId, ufosintNearby }) => {
   const [activeTab, setActiveTab] = useState<DetailTabId>('overview');
   const tier = tierConfig[c.evidence_tier];
 
@@ -505,6 +506,21 @@ const CaseDetail: FC<CaseDetailProps> = ({ c, onBack, backLabel = 'Cases', netwo
               <span className="font-mono tabular-nums text-xs text-gray-400 dark:text-gray-500">{c.date}</span>
               <span className="text-gray-300 dark:text-gray-600 text-xs">·</span>
               <span className="font-mono tabular-nums text-xs text-gray-400 dark:text-gray-500">{c.location}</span>
+              {typeof ufosintNearby === 'number' && ufosintNearby > 0 && (
+                <span
+                  title={`${ufosintNearby.toLocaleString()} UFOSINT sightings within ~150 mi / ±2 years of this incident. Source: ufosint.com (614k database).`}
+                  className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 border border-amber-200 dark:border-amber-800 cursor-default select-none"
+                >
+                  <svg className="w-2.5 h-2.5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z" />
+                    <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z" />
+                    <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z" />
+                  </svg>
+                  {ufosintNearby >= 1000
+                    ? `~${Math.round(ufosintNearby / 1000)}k nearby sightings`
+                    : `${ufosintNearby} nearby sightings`}
+                </span>
+              )}
             </div>
           </div>
           <BookmarkButton contentType="case" contentId={c.id} contentName={c.name} />
