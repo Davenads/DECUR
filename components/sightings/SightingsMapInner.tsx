@@ -86,9 +86,9 @@ export default function SightingsMapInner() {
         });
         mapRef.current = map;
 
-        /* CartoDB Voyager — distinct land/ocean contrast, public CDN, no API key */
+        /* CartoDB Dark Matter — dark charcoal basemap with white coastlines */
         L.tileLayer(
-          'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png',
+          'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
           {
             attribution:
               '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -198,8 +198,8 @@ export default function SightingsMapInner() {
 
   return (
     <div className="sightings-map relative rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-      {/* Map container - bg matches CartoDB Voyager ocean color */}
-      <div ref={containerRef} style={{ height: 480, width: '100%', background: '#d4e8f0' }} />
+      {/* Map container - dark bg matches CartoDB Dark Matter tiles */}
+      <div ref={containerRef} style={{ height: 480, width: '100%', background: '#1a1a2e' }} />
 
       {/* Loading overlay */}
       {loading && !error && (
