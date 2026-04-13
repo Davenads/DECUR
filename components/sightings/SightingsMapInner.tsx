@@ -78,7 +78,7 @@ export default function SightingsMapInner() {
 
         /* Create map */
         map = L.map(containerRef.current, {
-          center: [30, -20],
+          center: [38, -40],
           zoom: 3,
           minZoom: 2,
           maxZoom: 10,
@@ -106,18 +106,17 @@ export default function SightingsMapInner() {
 
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const heat = (L as any).heatLayer(heatPoints, {
-          radius: 28,
-          blur: 22,
+          radius: 18,
+          blur: 14,
           maxZoom: 5,
           max: 1.0,
           gradient: {
-            0.0: '#1e3a5f',
-            0.25: '#1a6b8a',
-            0.5: '#f59e0b',
-            0.75: '#ef4444',
+            0.1: '#1a6b8a',
+            0.4: '#f59e0b',
+            0.7: '#ef4444',
             1.0: '#ffffff',
           },
-          minOpacity: 0.35,
+          minOpacity: 0.05,
         });
         heat.addTo(map);
         heatRef.current = heat;
