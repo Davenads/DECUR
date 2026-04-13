@@ -42,6 +42,7 @@ const navItems: NavItems = {
 
 const exploreLink = { href: '/explore', label: 'Explore' };
 const timelineLink = { href: '/timeline', label: 'Timeline' };
+const sightingsLink = { href: '/sightings', label: 'Sightings' };
 const aboutLink = { href: '/about', label: 'About' };
 
 const Header: FC = () => {
@@ -137,6 +138,17 @@ const Header: FC = () => {
               }
             >
               {timelineLink.label}
+            </Link>
+
+            <Link
+              href={sightingsLink.href}
+              className={
+                isActive(sightingsLink.href)
+                  ? 'text-primary font-medium border-b-2 border-primary pb-1'
+                  : 'text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors'
+              }
+            >
+              {sightingsLink.label}
             </Link>
 
             <NavDropdown
@@ -247,6 +259,14 @@ const Header: FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {timelineLink.label}
+              </Link>
+
+              <Link
+                href={sightingsLink.href}
+                className={isActive(sightingsLink.href) ? 'text-primary font-medium' : 'text-gray-600 dark:text-gray-400'}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {sightingsLink.label}
               </Link>
 
               <MobileNavDropdown
