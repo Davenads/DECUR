@@ -57,6 +57,24 @@ Uncomment in `.env.local`:
 UFOSINT_USE_SUPABASE=true
 ```
 
+### CRITICAL - Never hardcode Supabase keys in scripts
+The `import-ufosint-to-supabase.mjs` and `backfill-ufosint-by-source.mjs` scripts read credentials from environment variables only. **Never paste a service role key directly into a script file** - GitHub secret scanning will detect it and the key will be publicly exposed.
+
+Always pass keys at runtime:
+```bash
+IMPORT_SUPABASE_URL=https://... IMPORT_SERVICE_KEY=sb_secret_... node scripts/import-ufosint-to-supabase.mjs
+```
+
+Or store in `.env.local` (which is gitignored) for repeated local use:
+```
+IMPORT_SERVICE_KEY=sb_secret_your_key_here
+```
+
+**Key locations:**
+- `decur-dev` secret key: Supabase dashboard → `bosszjlkhglatuashtbd` → Settings → API Keys → Secret keys
+- `prod` secret key: Supabase dashboard → `iyvngosoyzptliytlcov` → Settings → API Keys → Secret keys
+- If a key is ever accidentally committed: immediately generate a new secret key in the Supabase dashboard to invalidate the exposed one. The legacy JWT-format `service_role` key cannot be selectively revoked - use the newer `sb_secret_...` format keys instead.
+
 ## Data Audit Script
 **Before any gap analysis or "what do we have?" research, always run the audit script first** to get a deterministic, exact inventory. Never rely on agent summarization of large JSON files for counts - it will produce inaccurate numbers.
 
