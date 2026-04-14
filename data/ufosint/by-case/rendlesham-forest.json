@@ -1,0 +1,62 @@
+{
+  "case_id": "rendlesham-forest",
+  "case_name": "Rendlesham Forest Incident",
+  "bbox": {
+    "lat": 52.09,
+    "lng": 1.43,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 1978,
+    "to": 1982
+  },
+  "total_nearby": 11535,
+  "sample": [
+    {
+      "id": 358563,
+      "date": "1978",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Phoenix",
+      "state": "AZ",
+      "country": "US"
+    },
+    {
+      "id": 364661,
+      "date": "1978",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Trenton",
+      "state": "IL",
+      "country": "US"
+    },
+    {
+      "id": 484346,
+      "date": "1978",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Tulsa",
+      "state": "OK",
+      "country": "US"
+    },
+    {
+      "id": 357435,
+      "date": "1978-01",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Neath",
+      "state": "South Wales",
+      "country": ""
+    },
+    {
+      "id": 364663,
+      "date": "1978-01",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Henrietta",
+      "state": "TX",
+      "country": "US"
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:13.755Z"
+}

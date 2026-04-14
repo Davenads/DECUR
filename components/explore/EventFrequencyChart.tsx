@@ -2,9 +2,11 @@ import { FC, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
+  ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip,
+  ResponsiveContainer, Cell, Legend,
 } from 'recharts';
 import { TimelineEntry } from '../../lib/timelineData';
+import yearlyCounts from '../../data/ufosint/yearly-counts.json';
 
 interface Props {
   entries: TimelineEntry[];
@@ -27,9 +29,20 @@ const ERA_LABELS: Array<{ label: string; min: number; max: number }> = [
 interface ChartDatum {
   label: string;
   count: number;
-  yearStart: number; // era/decade start year
-  yearEnd: number;   // era/decade end year
-  notable?: boolean; // highlight bars for particularly significant periods
+  yearStart: number;
+  yearEnd: number;
+  notable?: boolean;
+  ufosintCount?: number; // summed UFOSINT sightings for this period
+}
+
+/** Sum UFOSINT yearly counts across a year range [from, to] inclusive */
+function sumUfosint(from: number, to: number): number {
+  const data = yearlyCounts as Record<string, number>;
+  let total = 0;
+  for (let y = from; y <= to; y++) {
+    total += data[String(y)] ?? 0;
+  }
+  return total;
 }
 
 function groupByDecade(entries: TimelineEntry[]): ChartDatum[] {
@@ -41,38 +54,57 @@ function groupByDecade(entries: TimelineEntry[]): ChartDatum[] {
   const NOTABLE = new Set([1940, 1950, 1960, 1970, 1980, 2010, 2020]);
   return Object.entries(counts)
     .sort(([a], [b]) => Number(a) - Number(b))
-    .map(([decade, count]) => ({
-      label: `${decade}s`,
-      count,
-      yearStart: Number(decade),
-      yearEnd: Number(decade) + 9,
-      notable: NOTABLE.has(Number(decade)),
-    }));
+    .map(([decade, count]) => {
+      const start = Number(decade);
+      const end = start + 9;
+      return {
+        label: `${decade}s`,
+        count,
+        yearStart: start,
+        yearEnd: end,
+        notable: NOTABLE.has(start),
+        ufosintCount: sumUfosint(start, end),
+      };
+    });
 }
 
 function groupByEra(entries: TimelineEntry[]): ChartDatum[] {
   const currentYear = new Date().getFullYear();
-  return ERA_LABELS.map(era => ({
-    label: era.label,
-    count: entries.filter(e => e.year >= era.min && e.year <= era.max).length,
-    yearStart: era.min === 0 ? 1561 : era.min,
-    yearEnd: era.max === 9999 ? currentYear : era.max,
-    notable: false,
-  }));
+  return ERA_LABELS.map(era => {
+    const from = era.min === 0 ? 1561 : era.min;
+    const to = era.max === 9999 ? currentYear : era.max;
+    return {
+      label: era.label,
+      count: entries.filter(e => e.year >= era.min && e.year <= era.max).length,
+      yearStart: from,
+      yearEnd: to,
+      notable: false,
+      ufosintCount: sumUfosint(Math.max(from, 1947), to), // UFOSINT data starts 1947
+    };
+  });
 }
 
 interface CustomTooltipProps {
   active?: boolean;
-  payload?: Array<{ value: number }>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  payload?: Array<{ value: number; dataKey: string; color: string; name: string }>;
   label?: string;
+  showUfosint: boolean;
 }
 
-const CustomTooltip: FC<CustomTooltipProps> = ({ active, payload, label }) => {
+const CustomTooltip: FC<CustomTooltipProps> = ({ active, payload, label, showUfosint }) => {
   if (!active || !payload?.length) return null;
+  const decurEntry = payload.find(p => p.dataKey === 'count');
+  const ufosintEntry = payload.find(p => p.dataKey === 'ufosintCount');
   return (
-    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg px-3 py-2">
+    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg px-3 py-2 space-y-1">
       <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">{label}</p>
-      <p className="text-sm font-bold text-primary">{payload[0].value} events</p>
+      {decurEntry && (
+        <p className="text-sm font-bold text-primary">{decurEntry.value.toLocaleString()} DECUR events</p>
+      )}
+      {showUfosint && ufosintEntry && ufosintEntry.value > 0 && (
+        <p className="text-sm font-bold text-amber-500">{ufosintEntry.value.toLocaleString()} UFOSINT sightings</p>
+      )}
       <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">Click to view on Timeline</p>
     </div>
   );
@@ -83,12 +115,13 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === 'dark';
   const [groupBy, setGroupBy] = useState<GroupBy>('decade');
+  const [showUfosint, setShowUfosint] = useState(false);
+
   const data = groupBy === 'decade' ? groupByDecade(entries) : groupByEra(entries);
   const maxCount = Math.max(...data.map(d => d.count));
 
   function handleBarClick(datum: ChartDatum) {
     if (onSelectEra) {
-      // Toggle: clicking the active bar clears it
       if (activeEraStart === datum.yearStart && onClearEra) {
         onClearEra();
       } else {
@@ -111,27 +144,45 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
               : 'Tap a bar to filter the timeline overlay below'}
           </p>
         </div>
-        <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1 shrink-0">
-          {(['decade', 'era'] as GroupBy[]).map(g => (
-            <button
-              key={g}
-              onClick={() => setGroupBy(g)}
-              className={`text-xs px-3 py-1 rounded-md font-medium transition-colors capitalize ${
-                groupBy === g
-                  ? 'bg-white dark:bg-gray-600 text-primary shadow-sm'
-                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
-              }`}
-            >
-              {g}
-            </button>
-          ))}
+
+        <div className="flex items-center gap-2 flex-wrap shrink-0">
+          {/* UFOSINT overlay toggle */}
+          <button
+            onClick={() => setShowUfosint(v => !v)}
+            title="Overlay 614k UFOSINT sightings (1947-present)"
+            className={`flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full font-medium border transition-colors ${
+              showUfosint
+                ? 'bg-amber-50 dark:bg-amber-900/30 border-amber-400 text-amber-600 dark:text-amber-400'
+                : 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:border-amber-300 hover:text-amber-500'
+            }`}
+          >
+            <span className={`w-2 h-2 rounded-full ${showUfosint ? 'bg-amber-400' : 'bg-gray-300 dark:bg-gray-500'}`} />
+            UFOSINT Sightings
+          </button>
+
+          {/* Decade / Era grouping */}
+          <div className="flex gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1">
+            {(['decade', 'era'] as GroupBy[]).map(g => (
+              <button
+                key={g}
+                onClick={() => setGroupBy(g)}
+                className={`text-xs px-3 py-1 rounded-md font-medium transition-colors capitalize ${
+                  groupBy === g
+                    ? 'bg-white dark:bg-gray-600 text-primary shadow-sm'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                }`}
+              >
+                {g}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Chart */}
       <div className="h-72">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} margin={{ top: 4, right: 4, left: -16, bottom: 0 }}>
+          <ComposedChart data={data} margin={{ top: 4, right: showUfosint ? 40 : 4, left: -16, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke={isDark ? '#374151' : '#f0f0f0'} vertical={false} />
             <XAxis
               dataKey="label"
@@ -140,13 +191,30 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
               tickLine={false}
               interval={groupBy === 'decade' ? 2 : 0}
             />
+            {/* Primary Y axis - DECUR event counts */}
             <YAxis
+              yAxisId="decur"
               tick={{ fontSize: 11, fill: '#9ca3af' }}
               axisLine={false}
               tickLine={false}
             />
-            <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(46,92,138,0.06)' }} />
+            {/* Secondary Y axis - UFOSINT sighting volume (only shown when overlay active) */}
+            {showUfosint && (
+              <YAxis
+                yAxisId="ufosint"
+                orientation="right"
+                tick={{ fontSize: 10, fill: '#f59e0b' }}
+                axisLine={false}
+                tickLine={false}
+                tickFormatter={(v: number) => v >= 1000 ? `${Math.round(v / 1000)}k` : String(v)}
+              />
+            )}
+            <Tooltip
+              content={<CustomTooltip showUfosint={showUfosint} />}
+              cursor={{ fill: 'rgba(46,92,138,0.06)' }}
+            />
             <Bar
+              yAxisId="decur"
               dataKey="count"
               radius={[4, 4, 0, 0]}
               maxBarSize={48}
@@ -168,11 +236,26 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
                 );
               })}
             </Bar>
-          </BarChart>
+
+            {/* UFOSINT overlay line - only rendered when toggle is active */}
+            {showUfosint && (
+              <Line
+                yAxisId="ufosint"
+                type="monotone"
+                dataKey="ufosintCount"
+                stroke="#f59e0b"
+                strokeWidth={2}
+                strokeDasharray="5 3"
+                dot={{ r: 3, fill: '#f59e0b', strokeWidth: 0 }}
+                activeDot={{ r: 5, fill: '#f59e0b', strokeWidth: 0 }}
+                name="UFOSINT Sightings"
+              />
+            )}
+          </ComposedChart>
         </ResponsiveContainer>
       </div>
 
-      {/* Legend note */}
+      {/* Legend */}
       <div className="flex gap-4 text-xs text-gray-400 dark:text-gray-500 flex-wrap">
         <span className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-sm bg-[#2e5c8a] inline-block" />
@@ -182,6 +265,12 @@ const EventFrequencyChart: FC<Props> = ({ entries, onSelectEra, onClearEra, acti
           <span className="w-2.5 h-2.5 rounded-sm bg-[#a8bfd4] inline-block" />
           Other periods
         </span>
+        {showUfosint && (
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block w-5 border-t-2 border-dashed border-amber-400" />
+            UFOSINT sightings (614k database, right axis)
+          </span>
+        )}
       </div>
     </div>
   );

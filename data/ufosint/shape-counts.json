@@ -1,0 +1,125 @@
+{
+  "field": "shape",
+  "rows": [
+    {
+      "value": "Light",
+      "count": 36950
+    },
+    {
+      "value": "Disc",
+      "count": 20607
+    },
+    {
+      "value": "Triangle",
+      "count": 17529
+    },
+    {
+      "value": "Circle",
+      "count": 15801
+    },
+    {
+      "value": "Fireball",
+      "count": 11948
+    },
+    {
+      "value": "Sphere",
+      "count": 10765
+    },
+    {
+      "value": "Unknown",
+      "count": 10708
+    },
+    {
+      "value": "Other",
+      "count": 10686
+    },
+    {
+      "value": "Disk",
+      "count": 9357
+    },
+    {
+      "value": "Oval",
+      "count": 9141
+    },
+    {
+      "value": "Cigar",
+      "count": 8508
+    },
+    {
+      "value": "Orb",
+      "count": 7782
+    },
+    {
+      "value": "Domedisc",
+      "count": 6938
+    },
+    {
+      "value": "Formation",
+      "count": 5135
+    },
+    {
+      "value": "Lights",
+      "count": 4764
+    },
+    {
+      "value": "Changing",
+      "count": 4556
+    },
+    {
+      "value": "Ball",
+      "count": 4466
+    },
+    {
+      "value": "Cylinder",
+      "count": 4226
+    },
+    {
+      "value": "Ovoid",
+      "count": 2944
+    },
+    {
+      "value": "Rectangle",
+      "count": 2890
+    },
+    {
+      "value": "Flash",
+      "count": 2717
+    },
+    {
+      "value": "Diamond",
+      "count": 2710
+    },
+    {
+      "value": "Round",
+      "count": 2173
+    },
+    {
+      "value": "Chevron",
+      "count": 1899
+    },
+    {
+      "value": "Cone",
+      "count": 1556
+    },
+    {
+      "value": "Teardrop",
+      "count": 1458
+    },
+    {
+      "value": "Egg",
+      "count": 1381
+    },
+    {
+      "value": "Rectangl",
+      "count": 1039
+    },
+    {
+      "value": "V-Shape",
+      "count": 967
+    },
+    {
+      "value": "Polymorf",
+      "count": 926
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "id": "aguadilla-2013",
+    "name": "Aguadilla Airport FLIR Incident",
+    "lat": 18.49,
+    "lng": -67.13,
+    "total": 51779
+  },
+  {
+    "id": "ariel-school-1994",
+    "name": "Ariel School UFO Encounter",
+    "lat": -17.87,
+    "lng": 31.1,
+    "total": 13345
+  },
+  {
+    "id": "belgian-ufo-wave",
+    "name": "Belgian UFO Wave",
+    "lat": 50.62,
+    "lng": 5.57,
+    "total": 8260
+  },
+  {
+    "id": "exeter-1965",
+    "name": "Exeter, New Hampshire Incident",
+    "lat": 42.9814,
+    "lng": -70.9478,
+    "total": 35481
+  },
+  {
+    "id": "falcon-lake-1967",
+    "name": "Falcon Lake Incident",
+    "lat": 49.75,
+    "lng": -95.15,
+    "total": 40835
+  },
+  {
+    "id": "foo-fighters-wwii",
+    "name": "Foo Fighters - WWII Aerial Phenomena (1944-1945)",
+    "lat": 48.5734,
+    "lng": 7.7521,
+    "total": 1587
+  },
+  {
+    "id": "fukushima-2011",
+    "name": "Fukushima Daiichi UAP Sightings",
+    "lat": 37.42,
+    "lng": 141.03,
+    "total": 45193
+  },
+  {
+    "id": "iranian-f4-incident",
+    "name": "Iranian F-4 Incident",
+    "lat": 35.69,
+    "lng": 51.39,
+    "total": 22527
+  },
+  {
+    "id": "jal-1628",
+    "name": "JAL Flight 1628",
+    "lat": 66.56,
+    "lng": -145.25,
+    "total": 5481
+  },
+  {
+    "id": "kecksburg-1965",
+    "name": "Kecksburg UFO Incident",
+    "lat": 40.18,
+    "lng": -79.46,
+    "total": 35481
+  },
+  {
+    "id": "loch-raven-dam-1958",
+    "name": "Loch Raven Dam Encounter",
+    "lat": 39.4668,
+    "lng": -76.5614,
+    "total": 20167
+  },
+  {
+    "id": "malmstrom-afb-1967",
+    "name": "Malmstrom AFB ICBM Shutdown Incidents",
+    "lat": 47.51,
+    "lng": -111.18,
+    "total": 40835
+  },
+  {
+    "id": "minot-afb-1968",
+    "name": "Minot AFB Incident",
+    "lat": 48.42,
+    "lng": -101.35,
+    "total": 37025
+  },
+  {
+    "id": "nimitz-tic-tac",
+    "name": "USS Nimitz / Tic Tac Encounter",
+    "lat": 32.5,
+    "lng": -117.5,
+    "total": 22390
+  },
+  {
+    "id": "ohare-airport-2006",
+    "name": "O'Hare Airport Incident",
+    "lat": 41.97,
+    "lng": -87.91,
+    "total": 28075
+  },
+  {
+    "id": "phoenix-lights-1997",
+    "name": "Phoenix Lights",
+    "lat": 33.45,
+    "lng": -112.07,
+    "total": 15609
+  },
+  {
+    "id": "rb47-1957",
+    "name": "RB-47 Incident",
+    "lat": 32.7,
+    "lng": -97.3,
+    "total": 20951
+  },
+  {
+    "id": "rendlesham-forest",
+    "name": "Rendlesham Forest Incident",
+    "lat": 52.09,
+    "lng": 1.43,
+    "total": 11535
+  },
+  {
+    "id": "roswell-1947",
+    "name": "Roswell Incident",
+    "lat": 33.67,
+    "lng": -104.53,
+    "total": 10361
+  },
+  {
+    "id": "shag-harbour-1967",
+    "name": "Shag Harbour Incident",
+    "lat": 43.47,
+    "lng": -65.75,
+    "total": 40835
+  },
+  {
+    "id": "socorro-1964",
+    "name": "Socorro / Lonnie Zamora Incident",
+    "lat": 34.05,
+    "lng": -106.91,
+    "total": 24308
+  },
+  {
+    "id": "stephenville-tx-2008",
+    "name": "Stephenville, Texas UAP Encounters",
+    "lat": 32.22,
+    "lng": -98.2,
+    "total": 33780
+  },
+  {
+    "id": "uss-omaha-2019",
+    "name": "USS Omaha USO Incident",
+    "lat": 32.8,
+    "lng": -117.8,
+    "total": 40134
+  },
+  {
+    "id": "uss-theodore-roosevelt",
+    "name": "USS Theodore Roosevelt Encounters",
+    "lat": 35,
+    "lng": -75.5,
+    "total": 51084
+  },
+  {
+    "id": "varginha-1996",
+    "name": "Varginha Incident",
+    "lat": -21.55,
+    "lng": -45.43,
+    "total": 14618
+  },
+  {
+    "id": "washington-dc-1952",
+    "name": "Washington D.C. UFO Flap",
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "total": 28557
+  },
+  {
+    "id": "westall-1966",
+    "name": "Westall School UFO Incident",
+    "lat": -37.9,
+    "lng": 145.13,
+    "total": 39537
+  }
+]

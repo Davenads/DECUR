@@ -1,0 +1,62 @@
+{
+  "case_id": "washington-dc-1952",
+  "case_name": "Washington D.C. UFO Flap",
+  "bbox": {
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 1950,
+    "to": 1954
+  },
+  "total_nearby": 28557,
+  "sample": [
+    {
+      "id": 18022,
+      "date": "1954-06-23T15:00",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "HUNTINGTON",
+      "state": "WV",
+      "country": ""
+    },
+    {
+      "id": 181786,
+      "date": "1952-08-16T21:00",
+      "shape": "Disc",
+      "source": "UFOCAT",
+      "city": "BOGOTÁ",
+      "state": "COL",
+      "country": ""
+    },
+    {
+      "id": 12740,
+      "date": "1950-02-14T00:30",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "ROSARIO",
+      "state": "ARG",
+      "country": ""
+    },
+    {
+      "id": 21646,
+      "date": "1954-11-19",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "ROSARIO",
+      "state": "ARG",
+      "country": ""
+    },
+    {
+      "id": 74856,
+      "date": "1950-02-14T00:30",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "ROSARIO",
+      "state": "ARG",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:30.884Z"
+}

@@ -1,0 +1,105 @@
+{
+  "field": "country",
+  "rows": [
+    {
+      "value": "US",
+      "count": 277994
+    },
+    {
+      "value": "CA",
+      "count": 16283
+    },
+    {
+      "value": "GB",
+      "count": 14170
+    },
+    {
+      "value": "AU",
+      "count": 4681
+    },
+    {
+      "value": "FR",
+      "count": 2974
+    },
+    {
+      "value": "BR",
+      "count": 2249
+    },
+    {
+      "value": "DE",
+      "count": 1433
+    },
+    {
+      "value": "IT",
+      "count": 1106
+    },
+    {
+      "value": "ES",
+      "count": 1049
+    },
+    {
+      "value": "AR",
+      "count": 1025
+    },
+    {
+      "value": "SE",
+      "count": 826
+    },
+    {
+      "value": "MX",
+      "count": 811
+    },
+    {
+      "value": "IN",
+      "count": 742
+    },
+    {
+      "value": "NZ",
+      "count": 595
+    },
+    {
+      "value": "India",
+      "count": 573
+    },
+    {
+      "value": "Mexico",
+      "count": 530
+    },
+    {
+      "value": "JP",
+      "count": 504
+    },
+    {
+      "value": "DK",
+      "count": 503
+    },
+    {
+      "value": "RU",
+      "count": 496
+    },
+    {
+      "value": "CN",
+      "count": 470
+    },
+    {
+      "value": "CH",
+      "count": 462
+    },
+    {
+      "value": "ZA",
+      "count": 451
+    },
+    {
+      "value": "CL",
+      "count": 408
+    },
+    {
+      "value": "BE",
+      "count": 383
+    },
+    {
+      "value": "Brazil",
+      "count": 375
+    }
+  ]
+}

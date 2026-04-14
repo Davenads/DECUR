@@ -1,0 +1,62 @@
+{
+  "case_id": "uss-omaha-2019",
+  "case_name": "USS Omaha USO Incident",
+  "bbox": {
+    "lat": 32.8,
+    "lng": -117.8,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 2017,
+    "to": 2021
+  },
+  "total_nearby": 40134,
+  "sample": [
+    {
+      "id": 169461,
+      "date": "2020-03-23T23:52",
+      "shape": "Light",
+      "source": "UFOCAT",
+      "city": "KEATS ISLAND",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 628,
+      "date": "2020-01-17T16:45",
+      "shape": "Light",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 646,
+      "date": "2020-01-29T13:30",
+      "shape": "Cluster",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 1282,
+      "date": "2019-01-20T20:40",
+      "shape": "V-Form",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    },
+    {
+      "id": 1425,
+      "date": "2019-03-05T21:00",
+      "shape": "Linear",
+      "source": "UFOCAT",
+      "city": "SURREY",
+      "state": "BC",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:24.987Z"
+}

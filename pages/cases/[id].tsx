@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import SeoHead from '../../components/SeoHead';
 import { CaseEntry } from '../../types/data';
 import casesData from '../../data/cases.json';
+import ufosintNearbyIndex from '../../data/ufosint/nearby-index.json';
 import CaseDetail from '../../components/data/CaseDetail';
 import { resolveExploreRef } from '../../lib/exploreRef';
 import { graphData } from '../../data/network-graph';
@@ -12,9 +13,10 @@ const NETWORK_CASE_IDS = new Set(graphData.nodes.filter(n => n.type === 'case').
 
 interface Props {
   caseEntry: CaseEntry;
+  ufosintNearby: number | null;
 }
 
-const CasePage: NextPage<Props> = ({ caseEntry }) => {
+const CasePage: NextPage<Props> = ({ caseEntry, ufosintNearby }) => {
   const router = useRouter();
   const [exploreBack, setExploreBack] = useState<{ label: string; href: string } | null>(null);
 
@@ -64,7 +66,7 @@ const CasePage: NextPage<Props> = ({ caseEntry }) => {
         jsonLd={[eventSchema, breadcrumbSchema]}
       />
       <div className="container mx-auto px-4 py-4">
-        <CaseDetail c={caseEntry} onBack={onBack} backLabel={backLabel} networkNodeId={NETWORK_CASE_IDS.has(caseEntry.id) ? caseEntry.id : undefined} />
+        <CaseDetail c={caseEntry} onBack={onBack} backLabel={backLabel} networkNodeId={NETWORK_CASE_IDS.has(caseEntry.id) ? caseEntry.id : undefined} ufosintNearby={ufosintNearby} />
       </div>
     </>
   );
@@ -79,7 +81,12 @@ export const getStaticProps: GetStaticProps<Props> = ({ params }) => {
   const id = params?.id as string;
   const caseEntry = (casesData as unknown as CaseEntry[]).find(c => c.id === id);
   if (!caseEntry) return { notFound: true };
-  return { props: { caseEntry }, revalidate: 3600 };
+
+  // Load pre-generated UFOSINT nearby sighting count from static index (no fs needed)
+  const nearbyIndex = ufosintNearbyIndex as Record<string, number | null>;
+  const ufosintNearby: number | null = nearbyIndex[id] ?? null;
+
+  return { props: { caseEntry, ufosintNearby }, revalidate: 3600 };
 };
 
 export default CasePage;

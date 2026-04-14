@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-04-13",
+    "category": "timeline",
+    "id": "sightings",
+    "name": "UAP Sightings Database",
+    "action": "added",
+    "note": "New /sightings page integrating 614,505 UFOSINT community reports with interactive heatmap, temporal chart, breakdown charts, and case cross-references."
+  },
+  {
     "date": "2026-04-11",
     "category": "figure",
     "id": "nick-cook",

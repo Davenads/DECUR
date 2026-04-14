@@ -1,0 +1,62 @@
+{
+  "case_id": "ohare-airport-2006",
+  "case_name": "O'Hare Airport Incident",
+  "bbox": {
+    "lat": 41.97,
+    "lng": -87.91,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 2004,
+    "to": 2008
+  },
+  "total_nearby": 28075,
+  "sample": [
+    {
+      "id": 157140,
+      "date": "2004-06-07",
+      "shape": "Cigar",
+      "source": "UFOCAT",
+      "city": "BEJA",
+      "state": "POR",
+      "country": ""
+    },
+    {
+      "id": 146276,
+      "date": "2004-01-20T17:00",
+      "shape": "Fireball",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 146305,
+      "date": "2004-02-06T20:40",
+      "shape": "Triangle",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 146389,
+      "date": "2004-03-24T06:00",
+      "shape": "Fireball",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    },
+    {
+      "id": 146404,
+      "date": "2004-03-28T21:45",
+      "shape": "Light",
+      "source": "UFOCAT",
+      "city": "WINNIPEG",
+      "state": "MB",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:23.749Z"
+}

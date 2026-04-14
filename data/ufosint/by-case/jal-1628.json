@@ -1,0 +1,62 @@
+{
+  "case_id": "jal-1628",
+  "case_name": "JAL Flight 1628",
+  "bbox": {
+    "lat": 66.56,
+    "lng": -145.25,
+    "delta": 1.5
+  },
+  "date_range": {
+    "from": 1984,
+    "to": 1988
+  },
+  "total_nearby": 5481,
+  "sample": [
+    {
+      "id": 367343,
+      "date": "1984",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Simi Valley",
+      "state": "CA",
+      "country": "US"
+    },
+    {
+      "id": 375086,
+      "date": "1984",
+      "shape": null,
+      "source": "MUFON",
+      "city": "Boston",
+      "state": "MA",
+      "country": "US"
+    },
+    {
+      "id": 162163,
+      "date": "1984-01-01",
+      "shape": "V-Shape",
+      "source": "UFOCAT",
+      "city": "SEDONA",
+      "state": "AZ",
+      "country": ""
+    },
+    {
+      "id": 169348,
+      "date": "1984-01-01",
+      "shape": "Triangle",
+      "source": "UFOCAT",
+      "city": "GUILFORD",
+      "state": "GBR",
+      "country": ""
+    },
+    {
+      "id": 181492,
+      "date": "1984-01-01",
+      "shape": null,
+      "source": "UFOCAT",
+      "city": "WILD ROSE",
+      "state": "AB",
+      "country": ""
+    }
+  ],
+  "fetched_at": "2026-04-13T18:22:17.804Z"
+}
