@@ -4,6 +4,7 @@ import SeoHead from '../components/SeoHead';
 import SightingsMap from '../components/sightings/SightingsMap';
 import SightingsTemporalChart from '../components/sightings/SightingsTemporalChart';
 import SightingsBreakdown from '../components/sightings/SightingsBreakdown';
+import SightingsSearch from '../components/sightings/SightingsSearch';
 import staticStats from '../data/ufosint/stats.json';
 
 /* ── Types ──────────────────────────────────────────────────────── */
@@ -174,6 +175,9 @@ const SightingsPage: NextPage = () => {
 
         {/* Database breakdown */}
         <SightingsBreakdown />
+
+        {/* Browse / search sightings */}
+        <SightingsSearch />
 
         {/* Methodology / attribution */}
         <details className="border border-gray-200 dark:border-gray-700 rounded-xl">
