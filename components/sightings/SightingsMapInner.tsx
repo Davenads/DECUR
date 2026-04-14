@@ -92,11 +92,13 @@ export default function SightingsMapInner() {
         const geoPane = map.createPane('geoPane');
         geoPane.style.zIndex = '350';
 
-        /* Local geography layer — no external CDN, uses same world-110m.json as Explore map */
+        /* Local geography — no external CDN, same world-110m.json as Explore map */
         const topoModule = await import('topojson-client');
         const topoRes = await fetch('/world-110m.json');
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const topo = await topoRes.json() as any;
+
+        // Layer 1: filled country polygons, NO stroke (stroke=none eliminates polar boundary streak)
         const countries = topoModule.feature(topo, topo.objects.countries);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         L.geoJSON(countries as any, {
@@ -104,8 +106,22 @@ export default function SightingsMapInner() {
           style: {
             fillColor: '#1e293b',
             fillOpacity: 1,
+            color: 'none',  // no outer boundary line — prevents antimeridian/polar streak
+            weight: 0,
+          },
+        }).addTo(map);
+
+        // Layer 2: interior country borders only (mesh filters exterior world edge out)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const borders = topoModule.mesh(topo, topo.objects.countries, (a: any, b: any) => a !== b);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        L.geoJSON(borders as any, {
+          pane: 'geoPane',
+          style: {
+            fill: false,
             color: '#475569',
             weight: 0.6,
+            opacity: 0.8,
           },
         }).addTo(map);
 
