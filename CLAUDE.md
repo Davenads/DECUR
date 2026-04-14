@@ -13,6 +13,50 @@ npm run typecheck  # Run TypeScript type checking
 npm run check      # Run both lint and typecheck
 ```
 
+## UFOSINT Phase 3 - Self-Hosting Checklist
+
+Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API into our own Supabase table (`ufosint_sightings`).
+
+**Status (as of 2026-04):** Tested on `decur-dev`. Not yet applied to production.
+
+### When merging Phase 3 to production, do the following:
+
+1. **Apply migrations to prod Supabase** (`iyvngosoyzptliytlcov`):
+   ```bash
+   npx supabase link --project-ref iyvngosoyzptliytlcov
+   echo "Y" | npx supabase db push
+   # Applies 004_ufosint_sightings.sql + 005_widen_sightings_state_country.sql
+   ```
+
+2. **Run the import against prod** (edit the two constants at the top of the script first):
+   ```js
+   // In scripts/import-ufosint-to-supabase.mjs, change:
+   const SUPABASE_URL = 'https://iyvngosoyzptliytlcov.supabase.co';
+   const SERVICE_KEY  = '<prod-service-role-key>';  // from Supabase dashboard → Settings → API
+   ```
+   Then run (deleting checkpoint first for a fresh import):
+   ```bash
+   rm data/ufosint/import-checkpoint.json
+   node scripts/import-ufosint-to-supabase.mjs
+   # Resume as needed: node scripts/import-ufosint-to-supabase.mjs --resume
+   ```
+
+3. **Activate in prod env** (Vercel dashboard → Environment Variables):
+   ```
+   UFOSINT_USE_SUPABASE=true
+   ```
+
+4. **Re-link CLI back to decur-dev after**:
+   ```bash
+   npx supabase link --project-ref bosszjlkhglatuashtbd
+   ```
+
+### To activate locally (after import completes on decur-dev):
+Uncomment in `.env.local`:
+```
+UFOSINT_USE_SUPABASE=true
+```
+
 ## Data Audit Script
 **Before any gap analysis or "what do we have?" research, always run the audit script first** to get a deterministic, exact inventory. Never rely on agent summarization of large JSON files for counts - it will produce inaccurate numbers.
 
