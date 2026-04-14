@@ -76,13 +76,15 @@ export default function SightingsMapInner() {
           shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
         });
 
-        /* Create map */
+        /* Create map — maxBounds prevents antimeridian seam artifact */
         map = L.map(containerRef.current, {
           center: [38, -40],
           zoom: 3,
           minZoom: 2,
           maxZoom: 10,
           zoomSnap: 0.5,
+          maxBounds: [[-85, -179.9], [85, 179.9]],
+          maxBoundsViscosity: 1.0,
         });
         mapRef.current = map;
 
@@ -207,13 +209,13 @@ export default function SightingsMapInner() {
   }, []);
 
   return (
-    <div className="sightings-map relative rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
+    <div className="sightings-map relative isolate rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
       {/* Map container - ocean color, land drawn via local GeoJSON */}
       <div ref={containerRef} style={{ height: 480, width: '100%', background: '#0f172a' }} />
 
       {/* Loading overlay */}
       {loading && !error && (
-        <div className="absolute inset-0 bg-gray-900/80 flex flex-col items-center justify-center gap-3 z-[1000]">
+        <div className="absolute inset-0 bg-gray-900/80 flex flex-col items-center justify-center gap-3 z-[400]">
           <svg
             className="w-6 h-6 animate-spin text-amber-400"
             fill="none"
@@ -239,14 +241,14 @@ export default function SightingsMapInner() {
 
       {/* Error state */}
       {error && (
-        <div className="absolute inset-0 bg-gray-900/90 flex items-center justify-center z-[1000]">
+        <div className="absolute inset-0 bg-gray-900/90 flex items-center justify-center z-[400]">
           <p className="text-sm text-gray-400">Map unavailable - check network connection</p>
         </div>
       )}
 
       {/* Legend */}
       {!loading && !error && (
-        <div className="absolute bottom-3 left-3 z-[1000] bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5">
+        <div className="absolute bottom-3 left-3 z-[400] bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5">
           <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide">Legend</p>
           <div className="flex items-center gap-2">
             <div
@@ -278,7 +280,7 @@ export default function SightingsMapInner() {
 
       {/* Zoom tier badge */}
       {!loading && !error && (
-        <div className="absolute top-3 right-3 z-[1000] bg-gray-900/75 backdrop-blur-sm border border-gray-700 rounded-md px-2 py-1">
+        <div className="absolute top-3 right-3 z-[400] bg-gray-900/75 backdrop-blur-sm border border-gray-700 rounded-md px-2 py-1">
           <span className="text-xs text-gray-400 font-mono">
             resolution: z{activeTier}
           </span>
