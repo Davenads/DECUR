@@ -52,10 +52,14 @@ Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API 
    ```
 
 ### To activate locally (after import completes on decur-dev):
-Uncomment in `.env.local`:
+Add/uncomment in `.env.local`:
 ```
 UFOSINT_USE_SUPABASE=true
+UFOSINT_SUPABASE_URL=https://bosszjlkhglatuashtbd.supabase.co
+UFOSINT_SERVICE_KEY=sb_secret_...  # decur-dev secret key from Settings → API Keys
 ```
+
+**Why separate env vars?** The main Supabase env vars (`SUPABASE_INTERNAL_URL`, `SUPABASE_SERVICE_ROLE_KEY`) point to the local Docker instance for the rest of the app. The sightings data lives in decur-dev (cloud), so `lib/supabase/sightings.ts` needs its own connection vars. When migrating to production, change `UFOSINT_SUPABASE_URL` to the prod project URL and `UFOSINT_SERVICE_KEY` to the prod secret key.
 
 ### CRITICAL - Never hardcode Supabase keys in scripts
 The `import-ufosint-to-supabase.mjs` and `backfill-ufosint-by-source.mjs` scripts read credentials from environment variables only. **Never paste a service role key directly into a script file** - GitHub secret scanning will detect it and the key will be publicly exposed.

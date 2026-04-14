@@ -7,12 +7,24 @@
 
 import { createClient } from '@supabase/supabase-js';
 
-// Use the internal URL for server-side (no proxy hop) with service role for RLS bypass
+// Uses dedicated env vars pointing to whichever Supabase project holds the
+// ufosint_sightings data. In local dev this is decur-dev (cloud); in production
+// it will be the prod Supabase project once the data is migrated there.
+//
+// Required env vars (add to .env.local for local dev):
+//   UFOSINT_SUPABASE_URL  — e.g. https://bosszjlkhglatuashtbd.supabase.co
+//   UFOSINT_SERVICE_KEY   — sb_secret_... key from that project's API Keys page
+//
+// Falls back to main Supabase env vars so existing behaviour is preserved if
+// the dedicated vars are absent.
 function getAdminClient() {
   const url =
+    process.env.UFOSINT_SUPABASE_URL ??
     process.env.SUPABASE_INTERNAL_URL ??
     process.env.NEXT_PUBLIC_SUPABASE_URL!;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+  const key =
+    process.env.UFOSINT_SERVICE_KEY ??
+    process.env.SUPABASE_SERVICE_ROLE_KEY!;
   return createClient(url, key, { auth: { persistSession: false } });
 }
 
