@@ -3343,6 +3343,24 @@ const Sources: NextPage = () => {
         </section>
 
         {/* Glossary sources */}
+        {/* External Data Sources */}
+        <section className="space-y-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">External Data Sources</h2>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+              Third-party databases integrated into DECUR for contextual cross-referencing.
+            </p>
+          </div>
+          <SourceCard
+            name="UFOSINT — UAP Sighting Reports Database"
+            url="https://ufosint.com"
+            type="Research Database"
+            typeColor="bg-green-100 text-green-700"
+            description="614,505 de-duplicated community sighting reports from NUFORC, MUFON, UFOCAT, Vallee UPDB, and UFO-search. Includes quality scoring, emotion analysis, and geocoding. Used for the /sightings page heatmap, temporal chart, case proximity counts, and EventFrequencyChart overlay."
+            notes="Used for: /sightings page, case nearby-sightings badges, Explore EventFrequencyChart UFOSINT overlay."
+          />
+        </section>
+
         <section className="space-y-4">
           <div>
             <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Glossary Sources</h2>
