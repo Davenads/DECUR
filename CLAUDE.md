@@ -28,18 +28,18 @@ Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API 
    # Applies 004_ufosint_sightings.sql + 005_widen_sightings_state_country.sql
    ```
 
-2. **Run the import against prod** (edit the two constants at the top of the script first):
-   ```js
-   // In scripts/import-ufosint-to-supabase.mjs, change:
-   const SUPABASE_URL = 'https://iyvngosoyzptliytlcov.supabase.co';
-   const SERVICE_KEY  = '<prod-service-role-key>';  // from Supabase dashboard → Settings → API
-   ```
-   Then run (deleting checkpoint first for a fresh import):
+2. **Run the import against prod** via env vars (never hardcode keys in the script):
    ```bash
    rm data/ufosint/import-checkpoint.json
+   IMPORT_SUPABASE_URL=https://iyvngosoyzptliytlcov.supabase.co \
+   IMPORT_SERVICE_KEY=<prod-service-role-key> \
    node scripts/import-ufosint-to-supabase.mjs
-   # Resume as needed: node scripts/import-ufosint-to-supabase.mjs --resume
+   # Resume as needed (same env vars):
+   IMPORT_SUPABASE_URL=https://iyvngosoyzptliytlcov.supabase.co \
+   IMPORT_SERVICE_KEY=<prod-service-role-key> \
+   node scripts/import-ufosint-to-supabase.mjs --resume
    ```
+   Get the prod service role key from: Supabase dashboard → `iyvngosoyzptliytlcov` → Settings → API
 
 3. **Activate in prod env** (Vercel dashboard → Environment Variables):
    ```

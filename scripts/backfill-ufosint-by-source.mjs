@@ -22,9 +22,13 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 // ── Config ─────────────────────────────────────────────────────────────────
+// Edit these two constants before running. Never commit real keys.
+// For decur-dev: https://bosszjlkhglatuashtbd.supabase.co
+// For prod:      https://iyvngosoyzptliytlcov.supabase.co
+// Get the service role key from: Supabase dashboard → Settings → API
 
-const SUPABASE_URL  = 'https://bosszjlkhglatuashtbd.supabase.co';
-const SERVICE_KEY   = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvc3N6amxraGdsYXR1YXNodGJkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE3MjUyNywiZXhwIjoyMDkwNzQ4NTI3fQ.sH7xGBaCzre0AIr1ZAb-M6BiK6hrGBQz3mTbPKrBpo8';
+const SUPABASE_URL  = process.env.IMPORT_SUPABASE_URL  ?? 'https://bosszjlkhglatuashtbd.supabase.co';
+const SERVICE_KEY   = process.env.IMPORT_SERVICE_KEY   ?? '';
 const MCP_URL       = 'https://ufosint-explorer.azurewebsites.net/mcp';
 const TABLE         = 'ufosint_sightings';
 
@@ -221,6 +225,11 @@ async function sweep(from, to, source, label, cp, buffer) {
 // ── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
+  if (!SERVICE_KEY && !DRY_RUN) {
+    console.error('❌  No service key. Set IMPORT_SERVICE_KEY env var or check CLAUDE.md for instructions.');
+    process.exit(1);
+  }
+
   console.log(`\n🔄 UFOSINT backfill by source${DRY_RUN ? ' [DRY RUN]' : ''}${RESUME ? ' [RESUME]' : ''}`);
   console.log(`   Target: ${SUPABASE_URL}`);
 
