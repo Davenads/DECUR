@@ -436,9 +436,26 @@ export default function SightingsMapInner() {
       {/* Map container - ocean color, land drawn via local GeoJSON */}
       <div ref={containerRef} style={{ height: 480, width: '100%', background: '#0f172a' }} />
 
+      {/* Gradient fades — ocean-color gradient over the top and bottom 40px of the map.
+          Hides heatmap gradient bleed and dense latitude band edges near the canvas boundary.
+          z-[401]: above heatmap overlayPane (z=400) and viewport pin canvas (also z=400),
+          below DECUR case pins in casePane (z=650) and below all UI overlays (z-[410]+). */}
+      {!loading && !error && (
+        <>
+          <div
+            className="absolute top-0 left-0 right-0 pointer-events-none z-[401]"
+            style={{ height: 40, background: 'linear-gradient(to bottom, #0f172a 0%, transparent 100%)' }}
+          />
+          <div
+            className="absolute bottom-0 left-0 right-0 pointer-events-none z-[401]"
+            style={{ height: 40, background: 'linear-gradient(to top, #0f172a 0%, transparent 100%)' }}
+          />
+        </>
+      )}
+
       {/* Loading overlay */}
       {loading && !error && (
-        <div className="absolute inset-0 bg-gray-900/80 flex flex-col items-center justify-center gap-3 z-[400]">
+        <div className="absolute inset-0 bg-gray-900/80 flex flex-col items-center justify-center gap-3 z-[420]">
           <svg
             className="w-6 h-6 animate-spin text-amber-400"
             fill="none"
@@ -464,14 +481,14 @@ export default function SightingsMapInner() {
 
       {/* Error state */}
       {error && (
-        <div className="absolute inset-0 bg-gray-900/90 flex items-center justify-center z-[400]">
+        <div className="absolute inset-0 bg-gray-900/90 flex items-center justify-center z-[420]">
           <p className="text-sm text-gray-400">Map unavailable - check network connection</p>
         </div>
       )}
 
       {/* Legend */}
       {!loading && !error && (
-        <div className="absolute bottom-3 left-3 z-[400] bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5">
+        <div className="absolute bottom-3 left-3 z-[410] bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5">
           <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide">Legend</p>
           {/* Heatmap gradient — visible at low zoom when heatmap is active */}
           {!pinMode && (
@@ -528,7 +545,7 @@ export default function SightingsMapInner() {
 
       {/* Zoom tier badge */}
       {!loading && !error && (
-        <div className="absolute top-3 right-3 z-[400] bg-gray-900/75 backdrop-blur-sm border border-gray-700 rounded-md px-2 py-1">
+        <div className="absolute top-3 right-3 z-[410] bg-gray-900/75 backdrop-blur-sm border border-gray-700 rounded-md px-2 py-1">
           <span className="text-xs text-gray-400 font-mono">
             resolution: z{activeTier}
           </span>
