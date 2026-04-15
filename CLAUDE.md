@@ -17,34 +17,39 @@ npm run check      # Run both lint and typecheck
 
 Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API into our own Supabase table (`ufosint_sightings`).
 
-**Status (as of 2026-04):** Tested on `decur-dev`. Not yet applied to production.
+**Status (as of 2026-04-15):** COMPLETE. All migrations applied to prod. 614,503 records imported from `ufo_public.db` (DuelingGroks export). Pending: set `UFOSINT_USE_SUPABASE=true` in Vercel to activate.
 
-### When merging Phase 3 to production, do the following:
+### Phase 3 is fully applied to production. Record of what was done:
 
-1. **Apply migrations to prod Supabase** (`iyvngosoyzptliytlcov`):
+1. **Migrations applied to prod Supabase** (`iyvngosoyzptliytlcov`):
+   - `004_ufosint_sightings.sql` - base table
+   - `005_widen_sightings_state_country.sql` - widen state/country columns
+   - `006_add_enriched_sightings_fields.sql` - hynek, vallee, quality_score, standardized_shape, vader_compound, has_media, etc.
+
+   To re-apply future migrations:
    ```bash
    npx supabase link --project-ref iyvngosoyzptliytlcov
    echo "Y" | npx supabase db push
-   # Applies 004_ufosint_sightings.sql + 005_widen_sightings_state_country.sql
    ```
 
-2. **Run the import against prod** via env vars (never hardcode keys in the script):
+2. **Import data from ufo_public.db** (614,503 records; DONE as of 2026-04-15):
    ```bash
-   rm data/ufosint/import-checkpoint.json
-   IMPORT_SUPABASE_URL=https://iyvngosoyzptliytlcov.supabase.co \
-   IMPORT_SERVICE_KEY=<prod-service-role-key> \
-   node scripts/import-ufosint-to-supabase.mjs
-   # Resume as needed (same env vars):
-   IMPORT_SUPABASE_URL=https://iyvngosoyzptliytlcov.supabase.co \
-   IMPORT_SERVICE_KEY=<prod-service-role-key> \
-   node scripts/import-ufosint-to-supabase.mjs --resume
+   # Requires ufo_public.db at .plans/ufo_public.db (from DuelingGroks export)
+   # Set IMPORT_SUPABASE_URL + IMPORT_SERVICE_KEY in .env.local, then:
+   node --env-file=.env.local scripts/import-from-sqlite.mjs
+   # Resume if interrupted:
+   node --env-file=.env.local scripts/import-from-sqlite.mjs --resume
+   # Retry a specific id range (for fixing transient errors):
+   node --env-file=.env.local scripts/import-from-sqlite.mjs --retry-range 1 430000
    ```
-   Get the prod service role key from: Supabase dashboard → `iyvngosoyzptliytlcov` → Settings → API
 
 3. **Activate in prod env** (Vercel dashboard → Environment Variables):
    ```
    UFOSINT_USE_SUPABASE=true
+   UFOSINT_SUPABASE_URL=https://iyvngosoyzptliytlcov.supabase.co
+   UFOSINT_SERVICE_KEY=<prod-sb_secret_key>
    ```
+   The prod service key is in Supabase dashboard → `iyvngosoyzptliytlcov` → Settings → API Keys.
 
 4. **Re-link CLI back to decur-dev after**:
    ```bash

@@ -17,6 +17,10 @@
 
 # misc
 .DS_Store
+
+# UFOSINT import checkpoints (local progress state, not needed in repo)
+data/ufosint/*-checkpoint.json
+.plans/
 *.pem
 .env
 .env.local
