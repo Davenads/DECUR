@@ -154,19 +154,12 @@ export default function SightingsMapInner() {
           },
         }).addTo(map);
 
-        // Layer 2: interior country borders only (mesh filters exterior world edge out)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const borders = topoModule.mesh(topo, topo.objects.countries, (a: any, b: any) => a !== b);
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        L.geoJSON(borders as any, {
-          pane: 'geoPane',
-          style: {
-            fill: false,
-            color: '#475569',
-            weight: 0.5,
-            opacity: 0.7,
-          },
-        }).addTo(map);
+        // Border mesh layer intentionally omitted.
+        // world-110m.json contains straight-line arcs at specific latitudes (49°N US-Canada
+        // border, Russia's northern bbox boundary, etc.) that the (a !== b) filter cannot
+        // exclude because they ARE shared between two country polygons. These render as
+        // visible horizontal hairlines across the map. The fill layer already provides
+        // clear landmass definition through color contrast — borders add minimal value.
 
         /* Load initial hexbins and add heat layer */
         const cells = await fetchHexbins(3);
