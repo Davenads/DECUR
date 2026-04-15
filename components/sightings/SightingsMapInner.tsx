@@ -140,12 +140,12 @@ export default function SightingsMapInner() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const topo = await topoRes.json() as any;
 
-        // Layer 1: filled country polygons.
-        // color/weight match fillColor — canvas renders each polygon independently and
-        // floating-point rounding leaves 1px "cracks" between adjacent fills (e.g. the
-        // straight US-Canada border at 49°N shows as a horizontal hairline). Stroking
-        // each polygon with the same fill color covers those cracks without adding any
-        // visible border line.
+        // Layer 1: filled country polygons, no stroke.
+        // Any sub-pixel cracks between adjacent country fills reveal the #0f172a ocean
+        // background — barely visible (2 tones of dark slate) and far less noticeable
+        // than the alternative: adding weight:1 stroke which creates 1px lines at the
+        // outer boundary of every northernmost/southernmost country, aligning with the
+        // container top/bottom at z≤2 and creating the "container-edge horizontal lines."
         const countries = topoModule.feature(topo, topo.objects.countries);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         L.geoJSON(countries as any, {
@@ -153,9 +153,8 @@ export default function SightingsMapInner() {
           style: {
             fillColor: '#1e293b',
             fillOpacity: 1,
-            color: '#1e293b',  // same as fill — eliminates inter-polygon canvas cracks
-            weight: 1,
-            opacity: 1,
+            color: 'none',
+            weight: 0,
           },
         }).addTo(map);
 
