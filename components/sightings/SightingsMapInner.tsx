@@ -152,7 +152,6 @@ export default function SightingsMapInner() {
             fillOpacity: 1,
             color: 'none',
             weight: 0,
-            smoothFactor: 0,
           },
         }).addTo(map);
 
@@ -168,7 +167,6 @@ export default function SightingsMapInner() {
             color: '#475569',
             weight: 0.5,
             opacity: 0.7,
-            smoothFactor: 0,  // disable simplification — prevents arc crossover hairlines
           },
         }).addTo(map);
 
