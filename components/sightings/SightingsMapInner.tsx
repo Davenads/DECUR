@@ -107,7 +107,11 @@ export default function SightingsMapInner() {
           shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
         });
 
-        /* Create map — maxBounds prevents antimeridian seam artifact */
+        /* Create map — maxBounds prevents antimeridian seam artifact.
+           renderer: L.canvas() is the map-level default for all vector layers
+           (GeoJSON fill/borders). Canvas avoids SVG arc-crossover hairlines that
+           appear as horizontal lines through country polygons. MapOptions.renderer
+           is fully typed so this avoids the TS error from per-layer renderer option. */
         map = L.map(containerRef.current, {
           center: [38, -40],
           zoom: 3,
@@ -116,6 +120,7 @@ export default function SightingsMapInner() {
           zoomSnap: 0.5,
           maxBounds: [[-85, -179.9], [85, 179.9]],
           maxBoundsViscosity: 1.0,
+          renderer: L.canvas({ padding: 0.5 }),
         });
         mapRef.current = map;
 
@@ -135,18 +140,12 @@ export default function SightingsMapInner() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const topo = await topoRes.json() as any;
 
-        // Canvas renderer for geography — eliminates SVG arc crossover artifacts
-        // that appear as horizontal hairlines through Canada/Alaska and South America.
-        // smoothFactor:0 disables Leaflet's vertex simplification which is the direct
-        // cause of the crossover; canvas avoids the SVG polyline rendering path entirely.
-        const geoRenderer = L.canvas({ padding: 0.5 });
-
         // Layer 1: filled country polygons, NO stroke
+        // Uses map-level canvas renderer (set in L.map options above)
         const countries = topoModule.feature(topo, topo.objects.countries);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         L.geoJSON(countries as any, {
           pane: 'geoPane',
-          renderer: geoRenderer,
           style: {
             fillColor: '#1e293b',
             fillOpacity: 1,
@@ -161,7 +160,6 @@ export default function SightingsMapInner() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         L.geoJSON(borders as any, {
           pane: 'geoPane',
-          renderer: geoRenderer,
           style: {
             fill: false,
             color: '#475569',
