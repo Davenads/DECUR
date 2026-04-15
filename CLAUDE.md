@@ -17,7 +17,9 @@ npm run check      # Run both lint and typecheck
 
 Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API into our own Supabase table (`ufosint_sightings`).
 
-**Status (as of 2026-04-15):** COMPLETE. All migrations applied to prod. 614,503 records imported from `ufo_public.db` (DuelingGroks export). Pending: set `UFOSINT_USE_SUPABASE=true` in Vercel to activate.
+**Status (as of 2026-04-15):** FULLY LIVE IN PRODUCTION. All migrations applied, 614,503 records imported from `ufo_public.db` (DuelingGroks export), `UFOSINT_USE_SUPABASE=true` active in Vercel. The `/sightings` page is deployed and publicly accessible.
+
+**Testing note:** Test `/sightings` against production (Vercel URL), NOT `localhost`. The local dev server does not have `UFOSINT_USE_SUPABASE=true` set in `.env.local` by default, so the viewport and hexbin APIs fall back to the legacy ufosint.com proxy (which 503s for viewport calls). All sightings map work should be verified on the deployed Vercel instance.
 
 ### Phase 3 is fully applied to production. Record of what was done:
 
@@ -56,15 +58,17 @@ Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API 
    npx supabase link --project-ref bosszjlkhglatuashtbd
    ```
 
-### To activate locally (after import completes on decur-dev):
-Add/uncomment in `.env.local`:
+### To activate locally (optional - prod is already live):
+Add to `.env.local` to test sightings APIs against the cloud decur-dev project:
 ```
 UFOSINT_USE_SUPABASE=true
 UFOSINT_SUPABASE_URL=https://bosszjlkhglatuashtbd.supabase.co
 UFOSINT_SERVICE_KEY=sb_secret_...  # decur-dev secret key from Settings → API Keys
 ```
 
-**Why separate env vars?** The main Supabase env vars (`SUPABASE_INTERNAL_URL`, `SUPABASE_SERVICE_ROLE_KEY`) point to the local Docker instance for the rest of the app. The sightings data lives in decur-dev (cloud), so `lib/supabase/sightings.ts` needs its own connection vars. When migrating to production, change `UFOSINT_SUPABASE_URL` to the prod project URL and `UFOSINT_SERVICE_KEY` to the prod secret key.
+**Without these vars set locally:** The `/sightings` page loads and the heatmap renders (hexbin JSON is served from static files), but the viewport pin API (`/api/sightings/viewport`) will 503 and no cyan sighting dots will appear. Use the production Vercel URL to verify full sightings map behavior.
+
+**Why separate env vars?** The main Supabase env vars (`SUPABASE_INTERNAL_URL`, `SUPABASE_SERVICE_ROLE_KEY`) point to the local Docker instance for the rest of the app. The sightings data lives in decur-dev (cloud), so `lib/supabase/sightings.ts` needs its own connection vars.
 
 ### CRITICAL - Never hardcode Supabase keys in scripts
 The `import-ufosint-to-supabase.mjs` and `backfill-ufosint-by-source.mjs` scripts read credentials from environment variables only. **Never paste a service role key directly into a script file** - GitHub secret scanning will detect it and the key will be publicly exposed.
