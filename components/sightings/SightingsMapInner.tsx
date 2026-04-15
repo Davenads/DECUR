@@ -79,6 +79,10 @@ export default function SightingsMapInner() {
   const viewportMarkersRef = useRef<any[]>([]);
   const viewportAbortRef = useRef<AbortController | null>(null);
   const lastViewportKeyRef = useRef<string>('');
+  // Stored hexbin cells + logMax for the active tier — used to re-filter on every
+  // zoom change so heatmap gradient never bleeds past the canvas top/bottom edge.
+  const heatCellsRef = useRef<HexCell[]>([]);
+  const heatLogMaxRef = useRef<number>(1);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -173,6 +177,9 @@ export default function SightingsMapInner() {
         // Log transform: spreads intensity evenly so low-density cells are visible too.
         // Sqrt compressed 90% of cells below the visible threshold; log makes all 671 cells show.
         const logMax = Math.log(maxCnt + 1);
+        // Store cells + logMax so renderViewport can re-filter on every zoom change
+        heatCellsRef.current = cells;
+        heatLogMaxRef.current = logMax;
         const heatPoints = cells.map(
           (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / logMax] as [number, number, number]
         );
@@ -276,13 +283,25 @@ export default function SightingsMapInner() {
                 const newCells = await fetchHexbins(tier);
                 if (destroyed) return;
                 const newMax = Math.max(...newCells.map((c) => c.cnt), 1);
-                const newLogMax = Math.log(newMax + 1);
-                const newPoints = newCells.map(
-                  (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / newLogMax] as [number, number, number]
-                );
-                heatRef.current?.setLatLngs(newPoints);
-              } catch { /* keep existing layer on fetch failure */ }
+                heatCellsRef.current = newCells;
+                heatLogMaxRef.current = Math.log(newMax + 1);
+              } catch { /* keep existing cells on fetch failure */ }
             }
+
+            // Always re-filter cells at the current zoom level to prevent heatmap
+            // gradient bleed at the canvas top/bottom edges. Any cell whose projected
+            // container-Y falls within `radius` px of the edge will have its heat
+            // gradient spill past the canvas boundary — manifesting as a persistent
+            // horizontal band across the map (most visible at z2 where the 78.75°N
+            // tier-3 bucket projects to container_y ≈ -9px and bleeds into y=0-11px).
+            const mapSize = map.getSize();
+            const filteredPoints = heatCellsRef.current
+              .filter(c => {
+                const pt = map.latLngToContainerPoint([c.lat, c.lng]);
+                return pt.y >= radius && pt.y <= mapSize.y - radius;
+              })
+              .map(c => [c.lat, c.lng, Math.log(c.cnt + 1) / heatLogMaxRef.current] as [number, number, number]);
+            heatRef.current?.setLatLngs(filteredPoints);
           }
 
           // ── Viewport pins: always fetch regardless of zoom ────────────
