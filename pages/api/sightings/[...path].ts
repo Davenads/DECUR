@@ -121,7 +121,7 @@ async function handleSupabase(
   // Dynamically import to avoid loading Supabase when flag is off
   const {
     getSightingStats, countByShape, countByCountry,
-    searchSightings,
+    searchSightings, getViewportSightings,
   } = await import('../../../lib/supabase/sightings');
 
   switch (apiPath) {
@@ -147,6 +147,18 @@ async function handleSupabase(
       res.setHeader('X-Data-Source', 'supabase');
       res.setHeader('Cache-Control', `s-maxage=${CACHE_TTL}, stale-while-revalidate=60`);
       res.status(200).json(data);
+      return true;
+    }
+    case 'viewport': {
+      const n = parseFloat(String(query.n ?? '90'));
+      const s = parseFloat(String(query.s ?? '-90'));
+      const e = parseFloat(String(query.e ?? '180'));
+      const w = parseFloat(String(query.w ?? '-180'));
+      const limit = parseInt(String(query.limit ?? '300'), 10);
+      const data = await getViewportSightings({ n, s, e, w, limit });
+      res.setHeader('X-Data-Source', 'supabase');
+      res.setHeader('Cache-Control', 'no-cache');
+      res.status(200).json({ sightings: data });
       return true;
     }
     case 'search': {

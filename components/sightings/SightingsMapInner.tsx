@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import casePins from '../../data/ufosint/case-pins.json';
 
+/* ── Constants ──────────────────────────────────────────────────────────── */
+
+// Zoom level at which the map switches from heatmap to individual sighting pins
+const PIN_MODE_ZOOM = 9;
+
 /* ── Types ──────────────────────────────────────────────────────────── */
 
 interface HexCell {
@@ -48,6 +53,13 @@ export default function SightingsMapInner() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [activeTier, setActiveTier] = useState<3 | 4 | 5>(3);
+  const [pinMode, setPinMode] = useState(false);
+  const [pinCount, setPinCount] = useState<number | null>(null);
+  const [pinLoading, setPinLoading] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const viewportMarkersRef = useRef<any[]>([]);
+  const viewportAbortRef = useRef<AbortController | null>(null);
+  const lastViewportKeyRef = useRef<string>('');
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -193,27 +205,132 @@ export default function SightingsMapInner() {
           marker.addTo(map);
         });
 
-        /* Zoom listener - swap hexbin tier */
-        map.on('zoomend', async () => {
-          const z = map.getZoom();
-          const tier = zoomTier(z);
-          if (tier === tierRef.current) return;
-          tierRef.current = tier;
-          setActiveTier(tier);
+        /* ── Viewport sighting pins (zoom >= PIN_MODE_ZOOM) ───────────── */
 
-          try {
-            const newCells = await fetchHexbins(tier);
-            if (destroyed) return;
-            const newMax = Math.max(...newCells.map((c) => c.cnt), 1);
-            const newLogMax = Math.log(newMax + 1);
-            const newPoints = newCells.map(
-              (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / newLogMax] as [number, number, number]
-            );
-            heatRef.current?.setLatLngs(newPoints);
-          } catch {
-            /* keep existing layer on fetch failure */
+        const renderViewport = async () => {
+          if (destroyed) return;
+          const z = map.getZoom();
+
+          if (z < PIN_MODE_ZOOM) {
+            // ── Heatmap mode ─────────────────────────────────────────────
+            if (heatRef.current && !map.hasLayer(heatRef.current)) {
+              heatRef.current.addTo(map);
+            }
+            // Clear any viewport markers
+            viewportMarkersRef.current.forEach(m => m.remove());
+            viewportMarkersRef.current = [];
+            lastViewportKeyRef.current = '';
+            setPinMode(false);
+            setPinCount(null);
+            // Update hexbin tier
+            const tier = zoomTier(z);
+            if (tier !== tierRef.current) {
+              tierRef.current = tier;
+              setActiveTier(tier);
+              try {
+                const newCells = await fetchHexbins(tier);
+                if (destroyed) return;
+                const newMax = Math.max(...newCells.map((c) => c.cnt), 1);
+                const newLogMax = Math.log(newMax + 1);
+                const newPoints = newCells.map(
+                  (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / newLogMax] as [number, number, number]
+                );
+                heatRef.current?.setLatLngs(newPoints);
+              } catch { /* keep existing layer on fetch failure */ }
+            }
+            return;
           }
-        });
+
+          // ── Pin mode (zoom >= PIN_MODE_ZOOM) ──────────────────────────
+          // Hide heatmap
+          if (heatRef.current && map.hasLayer(heatRef.current)) {
+            map.removeLayer(heatRef.current);
+          }
+          setPinMode(true);
+
+          const bounds = map.getBounds();
+          const n = bounds.getNorth();
+          const s = bounds.getSouth();
+          const e = bounds.getEast();
+          const w = bounds.getWest();
+          const viewKey = `${n.toFixed(3)},${s.toFixed(3)},${e.toFixed(3)},${w.toFixed(3)}`;
+          if (viewKey === lastViewportKeyRef.current) return; // viewport unchanged
+          lastViewportKeyRef.current = viewKey;
+
+          // Cancel in-flight request
+          viewportAbortRef.current?.abort();
+          viewportAbortRef.current = new AbortController();
+
+          setPinLoading(true);
+          try {
+            const res = await fetch(
+              `/api/sightings/viewport?n=${n}&s=${s}&e=${e}&w=${w}&limit=300`,
+              { signal: viewportAbortRef.current.signal }
+            );
+            if (!res.ok) throw new Error(`viewport ${res.status}`);
+            const { sightings } = await res.json() as { sightings: Array<{
+              id: number; date: string | null; shape: string | null;
+              standardized_shape: string | null; source: string;
+              city: string | null; state: string | null; country: string | null;
+              lat: number; lng: number; quality_score: number | null;
+              hynek: string | null; duration: string | null; witnesses: number | null;
+            }> };
+
+            if (destroyed) return;
+
+            // Remove old viewport markers
+            viewportMarkersRef.current.forEach(m => m.remove());
+            viewportMarkersRef.current = [];
+
+            // Cyan dot icon - visually distinct from amber DECUR case pins
+            const sightingIcon = L.divIcon({
+              className: '',
+              html: `<div style="
+                width:7px;height:7px;border-radius:50%;
+                background:#22d3ee;border:1px solid rgba(255,255,255,0.5);
+                box-shadow:0 0 4px rgba(34,211,238,0.5);
+              "></div>`,
+              iconSize: [7, 7],
+              iconAnchor: [3.5, 3.5],
+              popupAnchor: [0, -6],
+            });
+
+            for (const s of sightings) {
+              const shapeLabel = s.standardized_shape || s.shape || 'Unknown shape';
+              const location = [s.city, s.state, s.country].filter(Boolean).join(', ') || 'Unknown location';
+              const dateStr = s.date ? s.date.substring(0, 10) : 'Unknown date';
+              const marker = L.marker([s.lat, s.lng], { icon: sightingIcon });
+              marker.bindPopup(
+                `<div style="font-family:system-ui;min-width:160px;max-width:200px;">
+                  <div style="font-weight:700;font-size:13px;margin-bottom:2px;color:#111;">${shapeLabel}</div>
+                  <div style="font-size:11px;color:#555;">${location}</div>
+                  <div style="font-size:11px;color:#888;margin-top:2px;">${dateStr}</div>
+                  ${s.hynek ? `<div style="font-size:11px;margin-top:4px;color:#7c3aed;font-weight:600;">Hynek: ${s.hynek}</div>` : ''}
+                  ${s.duration ? `<div style="font-size:11px;color:#888;">Duration: ${s.duration}</div>` : ''}
+                  ${s.witnesses != null ? `<div style="font-size:11px;color:#888;">Witnesses: ${s.witnesses}</div>` : ''}
+                  <div style="margin-top:6px;padding-top:6px;border-top:1px solid #e5e7eb;font-size:10px;color:#aaa;">
+                    ${s.source}${s.quality_score != null ? ` · Q${s.quality_score}` : ''}
+                  </div>
+                </div>`,
+                { maxWidth: 210 }
+              );
+              marker.addTo(map);
+              viewportMarkersRef.current.push(marker);
+            }
+
+            setPinCount(sightings.length);
+          } catch (err) {
+            if ((err as Error).name !== 'AbortError') {
+              console.error('Viewport fetch error:', err);
+            }
+          } finally {
+            if (!destroyed) setPinLoading(false);
+          }
+        }
+
+        /* Zoom + pan listeners */
+        map.on('zoomend', renderViewport);
+        map.on('moveend', renderViewport);
       } catch (err) {
         console.error('SightingsMap init error:', err);
         if (!destroyed) setError(true);
@@ -222,6 +339,9 @@ export default function SightingsMapInner() {
 
     return () => {
       destroyed = true;
+      viewportAbortRef.current?.abort();
+      viewportMarkersRef.current.forEach(m => m.remove());
+      viewportMarkersRef.current = [];
       map?.remove();
       mapRef.current = null;
       heatRef.current = null;
@@ -270,17 +390,37 @@ export default function SightingsMapInner() {
       {!loading && !error && (
         <div className="absolute bottom-3 left-3 z-[400] bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5">
           <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide">Legend</p>
-          <div className="flex items-center gap-2">
-            <div
-              style={{
-                width: 40,
-                height: 8,
-                borderRadius: 4,
-                background: 'linear-gradient(to right, #1a6b8a, #f59e0b, #ef4444, #fff)',
-              }}
-            />
-            <span className="text-xs text-gray-400">Sighting density</span>
-          </div>
+          {!pinMode && (
+            <div className="flex items-center gap-2">
+              <div
+                style={{
+                  width: 40,
+                  height: 8,
+                  borderRadius: 4,
+                  background: 'linear-gradient(to right, rgba(253,224,71,0.3), #fde047, #f97316, #dc2626, #fff)',
+                }}
+              />
+              <span className="text-xs text-gray-400">Sighting density</span>
+            </div>
+          )}
+          {pinMode && (
+            <div className="flex items-center gap-2">
+              <div
+                style={{
+                  width: 9,
+                  height: 9,
+                  borderRadius: '50%',
+                  background: '#22d3ee',
+                  border: '1px solid rgba(255,255,255,0.5)',
+                  boxShadow: '0 0 4px rgba(34,211,238,0.5)',
+                  flexShrink: 0,
+                }}
+              />
+              <span className="text-xs text-gray-400">
+                {pinLoading ? 'Loading reports...' : `${pinCount ?? 0} reports in view`}
+              </span>
+            </div>
+          )}
           <div className="flex items-center gap-2">
             <div
               style={{
@@ -295,6 +435,11 @@ export default function SightingsMapInner() {
             />
             <span className="text-xs text-gray-400">DECUR documented case</span>
           </div>
+          {!pinMode && (
+            <p className="text-xs text-gray-500 border-t border-gray-700 pt-1.5">
+              Zoom in to see individual reports
+            </p>
+          )}
         </div>
       )}
 

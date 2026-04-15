@@ -208,6 +208,48 @@ export async function getHexbins(zoom: 3 | 4 | 5, qualityMin = 0): Promise<HexBi
   return { cells, count: cells.length, size: cellDeg };
 }
 
+/* ── Viewport sightings (individual pins at high zoom) ────────────────── */
+
+export interface ViewportSighting {
+  id: number;
+  date: string | null;
+  shape: string | null;
+  standardized_shape: string | null;
+  source: string;
+  city: string | null;
+  state: string | null;
+  country: string | null;
+  lat: number;
+  lng: number;
+  quality_score: number | null;
+  hynek: string | null;
+  duration: string | null;
+  witnesses: number | null;
+}
+
+export async function getViewportSightings(params: {
+  n: number; s: number; e: number; w: number;
+  limit?: number;
+}): Promise<ViewportSighting[]> {
+  const sb = getAdminClient();
+  const limit = Math.min(params.limit ?? 300, 500);
+
+  const { data, error } = await sb
+    .from('ufosint_sightings')
+    .select('id, date, shape, standardized_shape, source, city, state, country, lat, lng, quality_score, hynek, duration, witnesses')
+    .not('lat', 'is', null)
+    .not('lng', 'is', null)
+    .gte('lat', params.s)
+    .lte('lat', params.n)
+    .gte('lng', params.w)
+    .lte('lng', params.e)
+    .order('quality_score', { ascending: false, nullsFirst: false })
+    .limit(limit);
+
+  if (error) throw error;
+  return (data ?? []) as ViewportSighting[];
+}
+
 /* ── Search / browse ──────────────────────────────────────────────────── */
 
 export async function searchSightings(params: SearchParams): Promise<{
