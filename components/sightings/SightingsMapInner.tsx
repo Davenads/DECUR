@@ -205,6 +205,20 @@ export default function SightingsMapInner() {
         });
         heat.addTo(map);
         heatRef.current = heat;
+
+        // CSS mask: fade the heatmap canvas 40px at the top and bottom.
+        // This makes any heatmap gradient near the canvas boundary (whether from
+        // cells projecting off-canvas or from dense latitude bands landing close
+        // to the edge) fade to transparent, eliminating visible horizontal bands.
+        // The mask fires after addTo so heat._canvas is guaranteed to exist.
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const heatCanvas: HTMLCanvasElement | undefined = (heat as any)._canvas;
+        if (heatCanvas) {
+          const mask = 'linear-gradient(to bottom, transparent 0px, black 40px, black calc(100% - 40px), transparent 100%)';
+          heatCanvas.style.maskImage = mask;
+          heatCanvas.style.webkitMaskImage = mask;
+        }
+
         setLoading(false);
 
         /* DECUR case pins — larger and rendered in casePane (z=650) so they are
@@ -288,17 +302,29 @@ export default function SightingsMapInner() {
               } catch { /* keep existing cells on fetch failure */ }
             }
 
-            // Always re-filter cells at the current zoom level to prevent heatmap
-            // gradient bleed at the canvas top/bottom edges. Any cell whose projected
-            // container-Y falls within `radius` px of the edge will have its heat
-            // gradient spill past the canvas boundary — manifesting as a persistent
-            // horizontal band across the map (most visible at z2 where the 78.75°N
-            // tier-3 bucket projects to container_y ≈ -9px and bleeds into y=0-11px).
+            // Always re-filter cells at the current zoom level.
+            //
+            // Two problems this solves:
+            //
+            // 1. GRADIENT BLEED: cells projecting outside the canvas (negative or > height)
+            //    have their heat gradient clipped to the canvas edge, creating a bright
+            //    horizontal band at y=0 or y=height. The `radius * 1.5` margin safely
+            //    excludes these plus cells barely inside the edge whose gradients still
+            //    visibly concentrate near the boundary.
+            //
+            // 2. EDGE BAND from dense latitude rows: lat=60.62°N has 40 cells spanning
+            //    all longitudes; at z=3 they project to containerY≈38px. With radius=28
+            //    they form a continuous horizontal stripe near the canvas top.
+            //    `radius * 1.5` (= 42px at z=3) excludes this band.
+            //
+            // The CSS mask (40px fade zone applied to heat._canvas above) provides a
+            // visual fallback for any residual bleed not caught by this filter.
             const mapSize = map.getSize();
+            const edgeBuffer = radius * 1.5;
             const filteredPoints = heatCellsRef.current
               .filter(c => {
                 const pt = map.latLngToContainerPoint([c.lat, c.lng]);
-                return pt.y >= radius && pt.y <= mapSize.y - radius;
+                return pt.y >= edgeBuffer && pt.y <= mapSize.y - edgeBuffer;
               })
               .map(c => [c.lat, c.lng, Math.log(c.cnt + 1) / heatLogMaxRef.current] as [number, number, number]);
             heatRef.current?.setLatLngs(filteredPoints);
