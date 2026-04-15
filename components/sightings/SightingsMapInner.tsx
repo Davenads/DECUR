@@ -34,6 +34,25 @@ function zoomTier(z: number): 3 | 4 | 5 {
   return 5;
 }
 
+/**
+ * Compute heatmap radius + blur so adjacent hexbin cells always blend
+ * into a continuous surface regardless of zoom level.
+ *
+ * leaflet.heat uses fixed pixel radii, but hexbin cell spacing in pixels
+ * grows as 2^zoom. At z4+ a static radius=28 is far too small to bridge
+ * the pixel gap between cell centers, producing a visible grid of dots.
+ *
+ * Formula: radius = cellDegrees × (256 × 2^zoom / 360) × 0.65
+ *   → covers ~65% of the half-spacing, ensuring full overlap at all zooms.
+ */
+function calcHeatRadius(zoom: number, tier: 3 | 4 | 5): { radius: number; blur: number } {
+  const cellDeg = tier === 3 ? 7.5 : tier === 4 ? 3.5 : 1.5;
+  const pxPerDeg = (256 * Math.pow(2, zoom)) / 360;
+  const radius = Math.max(Math.ceil(cellDeg * pxPerDeg * 0.65), 20);
+  const blur   = Math.ceil(radius * 0.75);
+  return { radius, blur };
+}
+
 async function fetchHexbins(zoom: 3 | 4 | 5): Promise<HexCell[]> {
   const res = await fetch(`/api/sightings/hexbin?zoom=${zoom}`);
   if (!res.ok) throw new Error('hexbin fetch failed');
@@ -155,10 +174,13 @@ export default function SightingsMapInner() {
           (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / logMax] as [number, number, number]
         );
 
+        // Initial radius computed for z=3, tier=3 — updated dynamically on every zoom
+        const { radius: initRadius, blur: initBlur } = calcHeatRadius(3, 3);
+
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const heat = (L as any).heatLayer(heatPoints, {
-          radius: 28,  // larger radius blends adjacent hexbin cells into a smooth gradient
-          blur: 22,    // proportional blur eliminates visible seams between cells
+          radius: initRadius,
+          blur: initBlur,
           maxZoom: 5,
           max: 1.0,
           gradient: {
@@ -242,8 +264,16 @@ export default function SightingsMapInner() {
               heatRef.current.addTo(map);
             }
             setPinMode(false);
-            // Update hexbin tier as needed
+
             const tier = zoomTier(z);
+
+            // Always recompute radius/blur — cell spacing in pixels doubles each
+            // zoom step, so a fixed radius produces visible dot-grid artifacts at
+            // z4+. setOptions triggers an internal redraw in leaflet.heat.
+            const { radius, blur } = calcHeatRadius(z, tier);
+            heatRef.current?.setOptions({ radius, blur });
+
+            // Swap hexbin data when crossing a tier boundary
             if (tier !== tierRef.current) {
               tierRef.current = tier;
               setActiveTier(tier);
