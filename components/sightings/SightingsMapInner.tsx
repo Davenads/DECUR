@@ -135,16 +135,24 @@ export default function SightingsMapInner() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const topo = await topoRes.json() as any;
 
-        // Layer 1: filled country polygons, NO stroke (stroke=none eliminates polar boundary streak)
+        // Canvas renderer for geography — eliminates SVG arc crossover artifacts
+        // that appear as horizontal hairlines through Canada/Alaska and South America.
+        // smoothFactor:0 disables Leaflet's vertex simplification which is the direct
+        // cause of the crossover; canvas avoids the SVG polyline rendering path entirely.
+        const geoRenderer = L.canvas({ padding: 0.5 });
+
+        // Layer 1: filled country polygons, NO stroke
         const countries = topoModule.feature(topo, topo.objects.countries);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         L.geoJSON(countries as any, {
           pane: 'geoPane',
+          renderer: geoRenderer,
           style: {
             fillColor: '#1e293b',
             fillOpacity: 1,
-            color: 'none',  // no outer boundary line — prevents antimeridian/polar streak
+            color: 'none',
             weight: 0,
+            smoothFactor: 0,
           },
         }).addTo(map);
 
@@ -154,11 +162,13 @@ export default function SightingsMapInner() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         L.geoJSON(borders as any, {
           pane: 'geoPane',
+          renderer: geoRenderer,
           style: {
             fill: false,
             color: '#475569',
-            weight: 0.6,
-            opacity: 0.8,
+            weight: 0.5,
+            opacity: 0.7,
+            smoothFactor: 0,  // disable simplification — prevents arc crossover hairlines
           },
         }).addTo(map);
 
@@ -236,18 +246,10 @@ export default function SightingsMapInner() {
 
         /* ── Viewport sighting pins — always shown at every zoom level ── */
 
-        // Build the sighting icon once; reused across all viewport fetches
-        const sightingIcon = L.divIcon({
-          className: '',
-          html: `<div style="
-            width:7px;height:7px;border-radius:50%;
-            background:#22d3ee;border:1px solid rgba(255,255,255,0.5);
-            box-shadow:0 0 4px rgba(34,211,238,0.5);
-          "></div>`,
-          iconSize: [7, 7],
-          iconAnchor: [3.5, 3.5],
-          popupAnchor: [0, -6],
-        });
+        // Canvas renderer for sighting dots — all markers share one <canvas> element,
+        // zero DOM nodes created per marker. Handles 500+ pins without lag vs divIcon
+        // which creates one DOM element each (300 DOM elements = heavy; 500 = stutter).
+        const pinRenderer = L.canvas({ padding: 0.5 });
 
         const renderViewport = async () => {
           if (destroyed) return;
@@ -308,7 +310,7 @@ export default function SightingsMapInner() {
           setPinLoading(true);
           try {
             const res = await fetch(
-              `/api/sightings/viewport?n=${n}&s=${s}&e=${e}&w=${w}&limit=300`,
+              `/api/sightings/viewport?n=${n}&s=${s}&e=${e}&w=${w}&limit=500`,
               { signal: viewportAbortRef.current.signal }
             );
             if (!res.ok) throw new Error(`viewport ${res.status}`);
@@ -330,7 +332,16 @@ export default function SightingsMapInner() {
               const shapeLabel = sg.standardized_shape || sg.shape || 'Unknown shape';
               const location = [sg.city, sg.state, sg.country].filter(Boolean).join(', ') || 'Unknown location';
               const dateStr = sg.date ? sg.date.substring(0, 10) : 'Unknown date';
-              const marker = L.marker([sg.lat, sg.lng], { icon: sightingIcon });
+              // circleMarker renders onto the shared pinRenderer canvas — no DOM node created
+              const marker = L.circleMarker([sg.lat, sg.lng], {
+                renderer: pinRenderer,
+                radius: 4,
+                fillColor: '#22d3ee',
+                color: 'rgba(255,255,255,0.4)',
+                weight: 1,
+                fillOpacity: 0.9,
+                opacity: 0.7,
+              });
               marker.bindPopup(
                 `<div style="font-family:system-ui;min-width:160px;max-width:200px;">
                   <div style="font-weight:700;font-size:13px;margin-bottom:2px;color:#111;">${shapeLabel}</div>
