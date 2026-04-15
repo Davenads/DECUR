@@ -139,8 +139,8 @@ export default function SightingsMapInner() {
 
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const heat = (L as any).heatLayer(heatPoints, {
-          radius: 18,
-          blur: 14,
+          radius: 28,  // larger radius blends adjacent hexbin cells into a smooth gradient
+          blur: 22,    // proportional blur eliminates visible seams between cells
           maxZoom: 5,
           max: 1.0,
           gradient: {
