@@ -130,9 +130,11 @@ export default function SightingsMapInner() {
         if (destroyed) return;
 
         const maxCnt = Math.max(...cells.map((c) => c.cnt), 1);
-        // Sqrt transform: only truly high-density clusters glow hot; low-count cells fade out
+        // Log transform: spreads intensity evenly so low-density cells are visible too.
+        // Sqrt compressed 90% of cells below the visible threshold; log makes all 671 cells show.
+        const logMax = Math.log(maxCnt + 1);
         const heatPoints = cells.map(
-          (c) => [c.lat, c.lng, Math.sqrt(c.cnt / maxCnt)] as [number, number, number]
+          (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / logMax] as [number, number, number]
         );
 
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -142,11 +144,12 @@ export default function SightingsMapInner() {
           maxZoom: 5,
           max: 1.0,
           gradient: {
-            0.0: 'rgba(0,0,0,0)',          // transparent — geography shows through at zero
-            0.15: 'rgba(253,224,71,0.75)', // yellow — pops on dark background
-            0.4: 'rgba(249,115,22,0.88)',  // orange
-            0.7: 'rgba(220,38,38,0.95)',   // red
-            1.0: '#ffffff',               // white hotspot for highest density
+            0.0:  'rgba(0,0,0,0)',            // transparent below noise floor
+            0.05: 'rgba(253,224,71,0.25)',    // faint yellow — any activity present
+            0.2:  'rgba(253,224,71,0.85)',    // solid yellow
+            0.45: 'rgba(249,115,22,0.9)',     // orange
+            0.75: 'rgba(220,38,38,0.95)',     // red
+            1.0:  '#ffffff',                  // white hotspot (highest density)
           },
           minOpacity: 0.0,
         });
@@ -202,8 +205,9 @@ export default function SightingsMapInner() {
             const newCells = await fetchHexbins(tier);
             if (destroyed) return;
             const newMax = Math.max(...newCells.map((c) => c.cnt), 1);
+            const newLogMax = Math.log(newMax + 1);
             const newPoints = newCells.map(
-              (c) => [c.lat, c.lng, Math.sqrt(c.cnt / newMax)] as [number, number, number]
+              (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / newLogMax] as [number, number, number]
             );
             heatRef.current?.setLatLngs(newPoints);
           } catch {

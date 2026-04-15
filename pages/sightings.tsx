@@ -164,7 +164,7 @@ const SightingsPage: NextPage = () => {
               Geographic Distribution
             </h2>
             <span className="text-xs text-gray-400 dark:text-gray-500">
-              396,158 geocoded records
+              {stats.mapped_sightings.toLocaleString()} geocoded records
             </span>
           </div>
           <SightingsMap />
