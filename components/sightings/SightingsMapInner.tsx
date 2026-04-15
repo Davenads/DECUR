@@ -104,6 +104,12 @@ export default function SightingsMapInner() {
         const geoPane = map.createPane('geoPane');
         geoPane.style.zIndex = '350';
 
+        /* Case pane above heatmap (overlayPane=400) and above markerPane (600)
+           so DECUR pins are always visible regardless of zoom or layer state */
+        const casePane = map.createPane('casePane');
+        casePane.style.zIndex = '650';
+        casePane.style.pointerEvents = 'auto';
+
         /* Local geography — no external CDN, same world-110m.json as Explore map */
         const topoModule = await import('topojson-client');
         const topoRes = await fetch('/world-110m.json');
@@ -169,21 +175,22 @@ export default function SightingsMapInner() {
         heatRef.current = heat;
         setLoading(false);
 
-        /* DECUR case pins */
+        /* DECUR case pins — larger and rendered in casePane (z=650) so they are
+           always visible above the heatmap at any zoom level */
         const caseIcon = L.divIcon({
           className: '',
           html: `<div style="
-            width:10px;height:10px;border-radius:50%;
-            background:#f59e0b;border:2px solid #fff;
-            box-shadow:0 0 6px rgba(245,158,11,0.8);
+            width:14px;height:14px;border-radius:50%;
+            background:#f59e0b;border:2.5px solid #fff;
+            box-shadow:0 0 0 2px rgba(245,158,11,0.5),0 0 10px rgba(245,158,11,0.9);
           "></div>`,
-          iconSize: [10, 10],
-          iconAnchor: [5, 5],
-          popupAnchor: [0, -8],
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -10],
         });
 
         (casePins as CasePin[]).forEach((pin) => {
-          const marker = L.marker([pin.lat, pin.lng], { icon: caseIcon });
+          const marker = L.marker([pin.lat, pin.lng], { icon: caseIcon, pane: 'casePane' });
           const nearbyText =
             pin.total >= 1000
               ? `~${(pin.total / 1000).toFixed(1)}k`
@@ -205,24 +212,37 @@ export default function SightingsMapInner() {
           marker.addTo(map);
         });
 
-        /* ── Viewport sighting pins (zoom >= PIN_MODE_ZOOM) ───────────── */
+        /* ── Viewport sighting pins — always shown at every zoom level ── */
+
+        // Build the sighting icon once; reused across all viewport fetches
+        const sightingIcon = L.divIcon({
+          className: '',
+          html: `<div style="
+            width:7px;height:7px;border-radius:50%;
+            background:#22d3ee;border:1px solid rgba(255,255,255,0.5);
+            box-shadow:0 0 4px rgba(34,211,238,0.5);
+          "></div>`,
+          iconSize: [7, 7],
+          iconAnchor: [3.5, 3.5],
+          popupAnchor: [0, -6],
+        });
 
         const renderViewport = async () => {
           if (destroyed) return;
           const z = map.getZoom();
 
-          if (z < PIN_MODE_ZOOM) {
-            // ── Heatmap mode ─────────────────────────────────────────────
+          // ── Heatmap visibility: shown at low zoom, hidden when zoomed in ──
+          if (z >= PIN_MODE_ZOOM) {
+            if (heatRef.current && map.hasLayer(heatRef.current)) {
+              map.removeLayer(heatRef.current);
+            }
+            setPinMode(true);
+          } else {
             if (heatRef.current && !map.hasLayer(heatRef.current)) {
               heatRef.current.addTo(map);
             }
-            // Clear any viewport markers
-            viewportMarkersRef.current.forEach(m => m.remove());
-            viewportMarkersRef.current = [];
-            lastViewportKeyRef.current = '';
             setPinMode(false);
-            setPinCount(null);
-            // Update hexbin tier
+            // Update hexbin tier as needed
             const tier = zoomTier(z);
             if (tier !== tierRef.current) {
               tierRef.current = tier;
@@ -238,16 +258,11 @@ export default function SightingsMapInner() {
                 heatRef.current?.setLatLngs(newPoints);
               } catch { /* keep existing layer on fetch failure */ }
             }
-            return;
           }
 
-          // ── Pin mode (zoom >= PIN_MODE_ZOOM) ──────────────────────────
-          // Hide heatmap
-          if (heatRef.current && map.hasLayer(heatRef.current)) {
-            map.removeLayer(heatRef.current);
-          }
-          setPinMode(true);
-
+          // ── Viewport pins: always fetch regardless of zoom ────────────
+          // At world zoom the bbox covers ~the whole globe → returns top 300
+          // quality sightings globally. As you zoom in it fetches local area.
           const bounds = map.getBounds();
           const n = bounds.getNorth();
           const s = bounds.getSouth();
@@ -257,7 +272,6 @@ export default function SightingsMapInner() {
           if (viewKey === lastViewportKeyRef.current) return; // viewport unchanged
           lastViewportKeyRef.current = viewKey;
 
-          // Cancel in-flight request
           viewportAbortRef.current?.abort();
           viewportAbortRef.current = new AbortController();
 
@@ -278,38 +292,25 @@ export default function SightingsMapInner() {
 
             if (destroyed) return;
 
-            // Remove old viewport markers
+            // Replace old viewport markers with fresh set
             viewportMarkersRef.current.forEach(m => m.remove());
             viewportMarkersRef.current = [];
 
-            // Cyan dot icon - visually distinct from amber DECUR case pins
-            const sightingIcon = L.divIcon({
-              className: '',
-              html: `<div style="
-                width:7px;height:7px;border-radius:50%;
-                background:#22d3ee;border:1px solid rgba(255,255,255,0.5);
-                box-shadow:0 0 4px rgba(34,211,238,0.5);
-              "></div>`,
-              iconSize: [7, 7],
-              iconAnchor: [3.5, 3.5],
-              popupAnchor: [0, -6],
-            });
-
-            for (const s of sightings) {
-              const shapeLabel = s.standardized_shape || s.shape || 'Unknown shape';
-              const location = [s.city, s.state, s.country].filter(Boolean).join(', ') || 'Unknown location';
-              const dateStr = s.date ? s.date.substring(0, 10) : 'Unknown date';
-              const marker = L.marker([s.lat, s.lng], { icon: sightingIcon });
+            for (const sg of sightings) {
+              const shapeLabel = sg.standardized_shape || sg.shape || 'Unknown shape';
+              const location = [sg.city, sg.state, sg.country].filter(Boolean).join(', ') || 'Unknown location';
+              const dateStr = sg.date ? sg.date.substring(0, 10) : 'Unknown date';
+              const marker = L.marker([sg.lat, sg.lng], { icon: sightingIcon });
               marker.bindPopup(
                 `<div style="font-family:system-ui;min-width:160px;max-width:200px;">
                   <div style="font-weight:700;font-size:13px;margin-bottom:2px;color:#111;">${shapeLabel}</div>
                   <div style="font-size:11px;color:#555;">${location}</div>
                   <div style="font-size:11px;color:#888;margin-top:2px;">${dateStr}</div>
-                  ${s.hynek ? `<div style="font-size:11px;margin-top:4px;color:#7c3aed;font-weight:600;">Hynek: ${s.hynek}</div>` : ''}
-                  ${s.duration ? `<div style="font-size:11px;color:#888;">Duration: ${s.duration}</div>` : ''}
-                  ${s.witnesses != null ? `<div style="font-size:11px;color:#888;">Witnesses: ${s.witnesses}</div>` : ''}
+                  ${sg.hynek ? `<div style="font-size:11px;margin-top:4px;color:#7c3aed;font-weight:600;">Hynek: ${sg.hynek}</div>` : ''}
+                  ${sg.duration ? `<div style="font-size:11px;color:#888;">Duration: ${sg.duration}</div>` : ''}
+                  ${sg.witnesses != null ? `<div style="font-size:11px;color:#888;">Witnesses: ${sg.witnesses}</div>` : ''}
                   <div style="margin-top:6px;padding-top:6px;border-top:1px solid #e5e7eb;font-size:10px;color:#aaa;">
-                    ${s.source}${s.quality_score != null ? ` · Q${s.quality_score}` : ''}
+                    ${sg.source}${sg.quality_score != null ? ` · Q${sg.quality_score}` : ''}
                   </div>
                 </div>`,
                 { maxWidth: 210 }
@@ -326,11 +327,14 @@ export default function SightingsMapInner() {
           } finally {
             if (!destroyed) setPinLoading(false);
           }
-        }
+        };
 
         /* Zoom + pan listeners */
         map.on('zoomend', renderViewport);
         map.on('moveend', renderViewport);
+
+        /* Initial load — show pins immediately without waiting for user interaction */
+        renderViewport();
       } catch (err) {
         console.error('SightingsMap init error:', err);
         if (!destroyed) setError(true);
@@ -390,6 +394,7 @@ export default function SightingsMapInner() {
       {!loading && !error && (
         <div className="absolute bottom-3 left-3 z-[400] bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5">
           <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide">Legend</p>
+          {/* Heatmap gradient — visible at low zoom when heatmap is active */}
           {!pinMode && (
             <div className="flex items-center gap-2">
               <div
@@ -403,43 +408,42 @@ export default function SightingsMapInner() {
               <span className="text-xs text-gray-400">Sighting density</span>
             </div>
           )}
-          {pinMode && (
-            <div className="flex items-center gap-2">
-              <div
-                style={{
-                  width: 9,
-                  height: 9,
-                  borderRadius: '50%',
-                  background: '#22d3ee',
-                  border: '1px solid rgba(255,255,255,0.5)',
-                  boxShadow: '0 0 4px rgba(34,211,238,0.5)',
-                  flexShrink: 0,
-                }}
-              />
-              <span className="text-xs text-gray-400">
-                {pinLoading ? 'Loading reports...' : `${pinCount ?? 0} reports in view`}
-              </span>
-            </div>
-          )}
+          {/* Cyan sighting pins — always visible at every zoom level */}
           <div className="flex items-center gap-2">
             <div
               style={{
-                width: 10,
-                height: 10,
+                width: 9,
+                height: 9,
                 borderRadius: '50%',
-                background: '#f59e0b',
-                border: '2px solid #fff',
-                boxShadow: '0 0 4px rgba(245,158,11,0.8)',
+                background: '#22d3ee',
+                border: '1px solid rgba(255,255,255,0.5)',
+                boxShadow: '0 0 4px rgba(34,211,238,0.5)',
                 flexShrink: 0,
               }}
             />
-            <span className="text-xs text-gray-400">DECUR documented case</span>
+            <span className="text-xs text-gray-400">
+              {pinLoading
+                ? 'Loading reports...'
+                : pinCount != null
+                  ? `${pinCount} sightings in view`
+                  : 'Community sightings'}
+            </span>
           </div>
-          {!pinMode && (
-            <p className="text-xs text-gray-500 border-t border-gray-700 pt-1.5">
-              Zoom in to see individual reports
-            </p>
-          )}
+          {/* Amber DECUR case pins — always visible at every zoom level */}
+          <div className="flex items-center gap-2">
+            <div
+              style={{
+                width: 14,
+                height: 14,
+                borderRadius: '50%',
+                background: '#f59e0b',
+                border: '2.5px solid #fff',
+                boxShadow: '0 0 0 2px rgba(245,158,11,0.5),0 0 8px rgba(245,158,11,0.9)',
+                flexShrink: 0,
+              }}
+            />
+            <span className="text-xs text-gray-300 font-medium">DECUR documented case</span>
+          </div>
         </div>
       )}
 
