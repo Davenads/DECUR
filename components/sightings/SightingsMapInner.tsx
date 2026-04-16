@@ -18,7 +18,11 @@ import casePinsRaw from '../../data/ufosint/case-pins.json';
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
-const VIEWPORT_LIMIT = 10000;
+// At world-zoom (z=3) the entire globe fits in ~480px height. Dots at this
+// zoom are ~4px circles that heavily overlap — 2,000 is visually indistinguishable
+// from 10,000 and loads ~5x faster. The full 10k cap is still enforced server-side
+// for zoomed-in views where individual pins are meaningful.
+const VIEWPORT_LIMIT = 2000;
 
 // Inline MapLibre style pointing directly at CartoDB's 4-server tile CDN.
 // Using CartoDB directly (not proxied) avoids the Vercel serverless bottleneck:

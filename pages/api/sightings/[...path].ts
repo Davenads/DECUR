@@ -155,20 +155,35 @@ async function handleSupabase(
       const e = parseFloat(String(query.e ?? '180'));
       const w = parseFloat(String(query.w ?? '-180'));
       const limit = parseInt(String(query.limit ?? '300'), 10);
+
+      // Check in-process cache before hitting Supabase.
+      // handleSupabase writes directly to res, bypassing the outer memCache write,
+      // so we handle viewport caching here explicitly.
+      const vpCacheKey = `viewport?n=${n.toFixed(2)}&s=${s.toFixed(2)}&e=${e.toFixed(2)}&w=${w.toFixed(2)}&limit=${limit}`;
+      const cached = cacheGet(vpCacheKey);
+      if (cached) {
+        res.setHeader('X-Data-Source', 'mem-cache');
+        res.setHeader('Cache-Control', 'no-cache');
+        res.status(200).json(cached);
+        return true;
+      }
+
       const data = await getViewportSightings({ n, s, e, w, limit });
-      res.setHeader('X-Data-Source', 'supabase');
-      // At world-view zoom (z=3, full globe bounds) the top-10k quality sightings
-      // are essentially static. Cache for 30 minutes at the CDN edge so subsequent
-      // page loads skip the Supabase query entirely (cold start + 396k row scan).
-      // Zoomed-in views (smaller bbox) remain uncached for real-time accuracy.
+      const payload = { sightings: data };
+
+      // Cache in-process: global views for 5 min, zoomed-in views for 1 min.
       const isGlobalView = n > 75 && s < -60 && e > 150 && w < -150;
+      const vpTtl = isGlobalView ? 300_000 : 60_000;
+      memCache.set(vpCacheKey, { data: payload, expiresAt: Date.now() + vpTtl });
+
+      res.setHeader('X-Data-Source', 'supabase');
       res.setHeader(
         'Cache-Control',
         isGlobalView
           ? 's-maxage=1800, stale-while-revalidate=300'
           : 'no-cache'
       );
-      res.status(200).json({ sightings: data });
+      res.status(200).json(payload);
       return true;
     }
     case 'search': {

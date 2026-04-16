@@ -227,6 +227,13 @@ export interface ViewportSighting {
   witnesses: number | null;
 }
 
+// Minimum quality score for viewport pins.
+// Records below this threshold have unreliable metadata including geocoding —
+// the most common symptom is a city/state that doesn't match the lat/lng
+// (e.g. "ST CHARLES, MO" pinned in central Africa). Q20 is the practical
+// floor below which data quality drops off sharply.
+const VIEWPORT_QUALITY_MIN = 20;
+
 export async function getViewportSightings(params: {
   n: number; s: number; e: number; w: number;
   limit?: number;
@@ -239,6 +246,7 @@ export async function getViewportSightings(params: {
     .select('id, date, shape, standardized_shape, source, city, state, country, lat, lng, quality_score, hynek, duration, witnesses')
     .not('lat', 'is', null)
     .not('lng', 'is', null)
+    .gte('quality_score', VIEWPORT_QUALITY_MIN)
     .gte('lat', params.s)
     .lte('lat', params.n)
     .gte('lng', params.w)
