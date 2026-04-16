@@ -168,7 +168,7 @@ export default function SightingsTemporalChart() {
             <YAxis
               yAxisId="events"
               orientation="right"
-              tick={{ fontSize: 10, fill: '#818cf8' }}
+              tick={{ fontSize: 10, fill: '#f59e0b' }}
               axisLine={false}
               tickLine={false}
               width={28}
@@ -186,7 +186,7 @@ export default function SightingsTemporalChart() {
               yAxisId="sightings"
               dataKey="sightings"
               name="sightings"
-              fill="#f59e0b"
+              fill="#22d3ee"
               opacity={0.7}
               radius={[1, 1, 0, 0]}
               maxBarSize={12}
@@ -195,10 +195,10 @@ export default function SightingsTemporalChart() {
               yAxisId="events"
               dataKey="events"
               name="events"
-              stroke="#818cf8"
+              stroke="#f59e0b"
               strokeWidth={2}
               dot={false}
-              activeDot={{ r: 4, fill: '#818cf8' }}
+              activeDot={{ r: 4, fill: '#f59e0b' }}
             />
           </ComposedChart>
         </ResponsiveContainer>
