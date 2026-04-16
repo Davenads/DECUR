@@ -232,7 +232,7 @@ export async function getViewportSightings(params: {
   limit?: number;
 }): Promise<ViewportSighting[]> {
   const sb = getAdminClient();
-  const limit = Math.min(params.limit ?? 300, 500);
+  const limit = Math.min(params.limit ?? 300, 10000);
 
   const { data, error } = await sb
     .from('ufosint_sightings')

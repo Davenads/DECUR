@@ -4,7 +4,7 @@ import casePins from '../../data/ufosint/case-pins.json';
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
 // Viewport pin cap — returned by /api/sightings/viewport
-const VIEWPORT_LIMIT = 500;
+const VIEWPORT_LIMIT = 10000;
 
 /* ── Types ──────────────────────────────────────────────────────────── */
 
@@ -204,9 +204,8 @@ export default function SightingsMapInner() {
           pane: 'geoPane',
           renderer: svgRenderer,
           // smoothFactor: 0 prevents Leaflet from simplifying path vertices.
-          // Simplification of a perfectly-horizontal arc (like a bbox boundary at
-          // a round latitude) can reduce it to 2 points, creating a single straight
-          // SVG segment that anti-aliases differently than the un-simplified version.
+          // Simplification of a perfectly-horizontal arc can reduce it to 2 points,
+          // creating a single straight SVG segment that anti-aliases differently.
           smoothFactor: 0,
           style: {
             fillColor: '#1e293b',
@@ -215,11 +214,11 @@ export default function SightingsMapInner() {
             weight: 0,
           },
         }).addTo(map);
-
-        // Apply crispEdges to the SVG element so path edges snap to exact pixel
-        // boundaries. This eliminates any residual anti-aliasing bleed at the coastline.
-        const svgEl = geoPane.querySelector('svg') as SVGElement | null;
-        if (svgEl) svgEl.style.shapeRendering = 'crispEdges';
+        // NOTE: shape-rendering: crispEdges was tried and removed. On a complex merged
+        // polygon (topo.objects.land), crispEdges snaps every vertex to the pixel grid.
+        // Near-horizontal coastline segments then alternate inside/outside the SVG fill
+        // rule at different snapped y-values, producing inverted-color horizontal lines
+        // (land color shows where fill flips to "outside" and vice versa).
 
         setLoading(false);
 
