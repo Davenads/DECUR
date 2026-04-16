@@ -210,15 +210,15 @@ export default function SightingsMapInner() {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const heatCanvas: HTMLCanvasElement | undefined = (heat as any)._canvas;
         if (heatCanvas) {
-          const mask = 'linear-gradient(to bottom, transparent 0px, black 40px, black calc(100% - 40px), transparent 100%)';
+          // 80px fade zone: wide enough so that even after leaflet.heat's internal
+          // Gaussian blur (radius*2) spreads each cell's gradient, content near the
+          // edge fades cleanly to transparent before reaching the visible boundary.
+          // CSS filter:blur was removed — it interacts with mask-image by visually
+          // overflowing outside the element's CSS box where the mask cannot clip it,
+          // producing a bright horizontal band at the mask boundary.
+          const mask = 'linear-gradient(to bottom, transparent 0px, black 80px, black calc(100% - 80px), transparent 100%)';
           heatCanvas.style.maskImage = mask;
           heatCanvas.style.webkitMaskImage = mask;
-          // CSS blur applied on top of leaflet.heat's internal Gaussian blur.
-          // leaflet.heat blur=2x handles cell-to-cell blending; this second pass
-          // smooths the macro-level density boundary where US sightings (dense)
-          // drop off into Canada/Mexico (sparse), which otherwise appears as a
-          // sharp horizontal edge across the map at lat≈42°N and lat≈17°N.
-          heatCanvas.style.filter = 'blur(12px)';
         }
 
         setLoading(false);
@@ -317,12 +317,14 @@ export default function SightingsMapInner() {
             // 2. EDGE BAND from dense latitude rows: lat=60.62°N has 40 cells spanning
             //    all longitudes; at z=3 they project to containerY≈38px. With radius=28
             //    they form a continuous horizontal stripe near the canvas top.
-            //    `radius * 1.5` (= 42px at z=3) excludes this band.
+            //    `radius * 4` (= 112px at z=3) gives a wide exclusion zone so that
+            //    even the furthest blur spread (radius * 2 internal + 80px mask fade)
+            //    cannot reach the visible boundary.
             //
-            // The CSS mask (40px fade zone applied to heat._canvas above) provides a
+            // The CSS mask (80px fade zone applied to heat._canvas above) provides a
             // visual fallback for any residual bleed not caught by this filter.
             const mapSize = map.getSize();
-            const edgeBuffer = radius * 1.5;
+            const edgeBuffer = radius * 4;
             const filteredPoints = heatCellsRef.current
               .filter(c => {
                 const pt = map.latLngToContainerPoint([c.lat, c.lng]);
@@ -438,19 +440,19 @@ export default function SightingsMapInner() {
       {/* Map container - ocean color, land drawn via local GeoJSON */}
       <div ref={containerRef} style={{ height: 480, width: '100%', background: '#0f172a' }} />
 
-      {/* Gradient fades — ocean-color gradient over the top and bottom 40px of the map.
-          Hides heatmap gradient bleed and dense latitude band edges near the canvas boundary.
-          z-[401]: above heatmap overlayPane (z=400) and viewport pin canvas (also z=400),
-          below DECUR case pins in casePane (z=650) and below all UI overlays (z-[410]+). */}
+      {/* Gradient fades — ocean-color gradient over the top and bottom 80px of the map.
+          Hides heatmap gradient bleed at canvas edges. 80px matches the CSS mask fade
+          zone on the heatmap canvas so both layers agree on the fade boundary.
+          z-[401]: above heatmap overlayPane (z=400), below casePane (z=650). */}
       {!loading && !error && (
         <>
           <div
             className="absolute top-0 left-0 right-0 pointer-events-none z-[401]"
-            style={{ height: 40, background: 'linear-gradient(to bottom, #0f172a 0%, transparent 100%)' }}
+            style={{ height: 80, background: 'linear-gradient(to bottom, #0f172a 0%, transparent 100%)' }}
           />
           <div
             className="absolute bottom-0 left-0 right-0 pointer-events-none z-[401]"
-            style={{ height: 40, background: 'linear-gradient(to top, #0f172a 0%, transparent 100%)' }}
+            style={{ height: 80, background: 'linear-gradient(to top, #0f172a 0%, transparent 100%)' }}
           />
         </>
       )}
