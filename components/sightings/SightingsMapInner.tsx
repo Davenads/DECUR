@@ -3,20 +3,10 @@ import casePins from '../../data/ufosint/case-pins.json';
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
-// Zoom level at which the map switches from heatmap to individual sighting pins
-const PIN_MODE_ZOOM = 9;
+// Viewport pin cap — returned by /api/sightings/viewport
+const VIEWPORT_LIMIT = 500;
 
 /* ── Types ──────────────────────────────────────────────────────────── */
-
-interface HexCell {
-  lat: number;
-  lng: number;
-  cnt: number;
-}
-
-interface HexBinData {
-  cells: HexCell[];
-}
 
 interface CasePin {
   id: string;
@@ -26,66 +16,20 @@ interface CasePin {
   total: number;
 }
 
-/* ── Helpers ────────────────────────────────────────────────────────── */
-
-function zoomTier(z: number): 3 | 4 | 5 {
-  if (z < 5) return 3;
-  if (z < 7) return 4;
-  return 5;
-}
-
-/**
- * Compute heatmap radius + blur so adjacent hexbin cells always blend
- * into a continuous surface regardless of zoom level.
- *
- * leaflet.heat uses fixed pixel radii, but hexbin cell spacing in pixels
- * grows as 2^zoom. At z4+ a static radius=28 is far too small to bridge
- * the pixel gap between cell centers, producing a visible grid of dots.
- *
- * Formula: radius = cellDegrees × (256 × 2^zoom / 360) × 0.65
- *   → covers ~65% of the half-spacing, ensuring full overlap at all zooms.
- */
-function calcHeatRadius(zoom: number, tier: 3 | 4 | 5): { radius: number; blur: number } {
-  const cellDeg = tier === 3 ? 7.5 : tier === 4 ? 3.5 : 1.5;
-  const pxPerDeg = (256 * Math.pow(2, zoom)) / 360;
-  const radius = Math.max(Math.ceil(cellDeg * pxPerDeg * 0.65), 20);
-  // blur at 2× radius ensures the Gaussian post-pass spreads each cell's gradient far
-  // enough to fully bridge the inter-cell gap (42-51px at z=3, tier-3 cells). At 0.75×
-  // the blur was too tight — adjacent cells didn't blend and showed as a visible dot-grid.
-  const blur   = Math.ceil(radius * 2.0);
-  return { radius, blur };
-}
-
-async function fetchHexbins(zoom: 3 | 4 | 5): Promise<HexCell[]> {
-  const res = await fetch(`/api/sightings/hexbin?zoom=${zoom}`);
-  if (!res.ok) throw new Error('hexbin fetch failed');
-  const data: HexBinData = await res.json();
-  return data.cells ?? [];
-}
-
 /* ── Component ──────────────────────────────────────────────────────── */
 
 export default function SightingsMapInner() {
   const containerRef = useRef<HTMLDivElement>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mapRef = useRef<any>(null);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const heatRef = useRef<any>(null);
-  const tierRef = useRef<3 | 4 | 5>(3);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [activeTier, setActiveTier] = useState<3 | 4 | 5>(3);
-  const [pinMode, setPinMode] = useState(false);
   const [pinCount, setPinCount] = useState<number | null>(null);
   const [pinLoading, setPinLoading] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const viewportMarkersRef = useRef<any[]>([]);
   const viewportAbortRef = useRef<AbortController | null>(null);
   const lastViewportKeyRef = useRef<string>('');
-  // Stored hexbin cells + logMax for the active tier — used to re-filter on every
-  // zoom change so heatmap gradient never bleeds past the canvas top/bottom edge.
-  const heatCellsRef = useRef<HexCell[]>([]);
-  const heatLogMaxRef = useRef<number>(1);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -99,10 +43,6 @@ export default function SightingsMapInner() {
         const L = (await import('leaflet')).default;
         await import('leaflet/dist/leaflet.css');
 
-        /* leaflet.heat patches L onto window first */
-        (window as typeof window & { L: typeof L }).L = L;
-        await import('leaflet.heat');
-
         if (destroyed || !containerRef.current) return;
 
         /* Fix broken default icon paths (Next.js asset pipeline) */
@@ -114,8 +54,7 @@ export default function SightingsMapInner() {
           shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
         });
 
-        /* Create map — maxBounds prevents antimeridian seam artifact.
-           renderer: L.canvas() is the map-level default for all vector layers. */
+        /* Create map */
         map = L.map(containerRef.current, {
           center: [38, -40],
           zoom: 3,
@@ -128,25 +67,20 @@ export default function SightingsMapInner() {
         });
         mapRef.current = map;
 
-        /* Geography pane below overlayPane (400) so heatmap renders on top */
+        /* Geography pane — sits below overlayPane (z=400) */
         const geoPane = map.createPane('geoPane');
         geoPane.style.zIndex = '350';
 
-        /* Case pane above heatmap (overlayPane=400) and above markerPane (600)
-           so DECUR pins are always visible regardless of zoom or layer state */
+        /* Case pane — above markerPane (z=600) so DECUR pins are always visible */
         const casePane = map.createPane('casePane');
         casePane.style.zIndex = '650';
         casePane.style.pointerEvents = 'auto';
 
-        /* Geography — TopoJSON fills rendered via Leaflet SVG renderer.
-           Previous canvas approach left 1-2px sub-pixel gaps at shared polygon
-           boundaries (e.g. 49th parallel US-Canada border), revealing the ocean
-           background as visible horizontal hairlines. SVG paths fill to the exact
-           mathematical boundary — no pixel rounding gaps are possible.
-           The map-level renderer is still L.canvas() for heatmap + pins. */
-        // pane: 'geoPane' ensures the SVG element is inserted into geoPane (z=350)
-        // not the default overlayPane (z=400). Without this, L.svg() places its SVG
-        // element in overlayPane, rendering it on top of the heatmap canvas and hiding it.
+        /* Geography — TopoJSON fills via Leaflet SVG renderer.
+           SVG paths fill to exact mathematical boundaries with no sub-pixel gaps,
+           eliminating the horizontal hairlines that canvas rendering produced at
+           shared polygon boundaries (e.g. 49th parallel US-Canada border).
+           pane: 'geoPane' places the SVG element at z=350, below viewport pins. */
         const svgRenderer = L.svg({ pane: 'geoPane' });
         const topoModule = await import('topojson-client');
         const topoRes = await fetch('/world-110m.json');
@@ -165,66 +99,9 @@ export default function SightingsMapInner() {
           },
         }).addTo(map);
 
-        /* Load initial hexbins and add heat layer */
-        const cells = await fetchHexbins(3);
-        if (destroyed) return;
-
-        const maxCnt = Math.max(...cells.map((c) => c.cnt), 1);
-        // Log transform: spreads intensity evenly so low-density cells are visible too.
-        // Sqrt compressed 90% of cells below the visible threshold; log makes all 671 cells show.
-        const logMax = Math.log(maxCnt + 1);
-        // Store cells + logMax so renderViewport can re-filter on every zoom change
-        heatCellsRef.current = cells;
-        heatLogMaxRef.current = logMax;
-        const heatPoints = cells.map(
-          (c) => [c.lat, c.lng, Math.log(c.cnt + 1) / logMax] as [number, number, number]
-        );
-
-        // Initial radius computed for z=3, tier=3 — updated dynamically on every zoom
-        const { radius: initRadius, blur: initBlur } = calcHeatRadius(3, 3);
-
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const heat = (L as any).heatLayer(heatPoints, {
-          radius: initRadius,
-          blur: initBlur,
-          maxZoom: 5,
-          max: 1.0,
-          gradient: {
-            0.0:  'rgba(0,0,0,0)',            // transparent below noise floor
-            0.05: 'rgba(253,224,71,0.25)',    // faint yellow — any activity present
-            0.2:  'rgba(253,224,71,0.85)',    // solid yellow
-            0.45: 'rgba(249,115,22,0.9)',     // orange
-            0.75: 'rgba(220,38,38,0.95)',     // red
-            1.0:  '#ffffff',                  // white hotspot (highest density)
-          },
-          minOpacity: 0.0,
-        });
-        heat.addTo(map);
-        heatRef.current = heat;
-
-        // CSS mask: fade the heatmap canvas 40px at the top and bottom.
-        // This makes any heatmap gradient near the canvas boundary (whether from
-        // cells projecting off-canvas or from dense latitude bands landing close
-        // to the edge) fade to transparent, eliminating visible horizontal bands.
-        // The mask fires after addTo so heat._canvas is guaranteed to exist.
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const heatCanvas: HTMLCanvasElement | undefined = (heat as any)._canvas;
-        if (heatCanvas) {
-          // 80px fade zone: wide enough so that even after leaflet.heat's internal
-          // Gaussian blur (radius*2) spreads each cell's gradient, content near the
-          // edge fades cleanly to transparent before reaching the visible boundary.
-          // CSS filter:blur was removed — it interacts with mask-image by visually
-          // overflowing outside the element's CSS box where the mask cannot clip it,
-          // producing a bright horizontal band at the mask boundary.
-          const mask = 'linear-gradient(to bottom, transparent 0px, black 80px, black calc(100% - 80px), transparent 100%)';
-          heatCanvas.style.maskImage = mask;
-          heatCanvas.style.webkitMaskImage = mask;
-        }
-
         setLoading(false);
 
-        /* DECUR case pins — larger and rendered in casePane (z=650) so they are
-           always visible above the heatmap at any zoom level */
+        /* DECUR case pins — amber glow markers in casePane (z=650) */
         const caseIcon = L.divIcon({
           className: '',
           html: `<div style="
@@ -260,96 +137,21 @@ export default function SightingsMapInner() {
           marker.addTo(map);
         });
 
-        /* ── Viewport sighting pins — always shown at every zoom level ── */
+        /* ── Viewport sighting pins ──────────────────────────────────── */
 
-        // Canvas renderer for sighting dots — all markers share one <canvas> element,
-        // zero DOM nodes created per marker. Handles 500+ pins without lag vs divIcon
-        // which creates one DOM element each (300 DOM elements = heavy; 500 = stutter).
+        // Canvas renderer: all markers share one <canvas> — zero DOM nodes per marker.
         const pinRenderer = L.canvas({ padding: 0.5 });
 
         const renderViewport = async () => {
           if (destroyed) return;
-          const z = map.getZoom();
 
-          // ── Heatmap visibility: shown at low zoom, hidden when zoomed in ──
-          if (z >= PIN_MODE_ZOOM) {
-            if (heatRef.current && map.hasLayer(heatRef.current)) {
-              map.removeLayer(heatRef.current);
-            }
-            setPinMode(true);
-          } else {
-            if (heatRef.current && !map.hasLayer(heatRef.current)) {
-              heatRef.current.addTo(map);
-            }
-            setPinMode(false);
-
-            const tier = zoomTier(z);
-
-            // Always recompute radius/blur — cell spacing in pixels doubles each
-            // zoom step, so a fixed radius produces visible dot-grid artifacts at
-            // z4+. setOptions triggers an internal redraw in leaflet.heat.
-            const { radius, blur } = calcHeatRadius(z, tier);
-            heatRef.current?.setOptions({ radius, blur });
-
-            // Swap hexbin data when crossing a tier boundary
-            if (tier !== tierRef.current) {
-              tierRef.current = tier;
-              setActiveTier(tier);
-              try {
-                const newCells = await fetchHexbins(tier);
-                if (destroyed) return;
-                const newMax = Math.max(...newCells.map((c) => c.cnt), 1);
-                heatCellsRef.current = newCells;
-                heatLogMaxRef.current = Math.log(newMax + 1);
-              } catch { /* keep existing cells on fetch failure */ }
-            }
-
-            // Always re-filter cells at the current zoom level.
-            //
-            // TWO-STAGE FILTER — both must pass:
-            //
-            // Stage 1 — GEOGRAPHIC: hard-cap polar latitudes.
-            //   Cells above 62°N or below -50°S are excluded regardless of zoom.
-            //   At z=2 these cells project near the canvas boundary (lat=65°N → y≈54px,
-            //   lat=57°N → y≈94px). Their blur (radius×2) spreads to y≈14-54px where
-            //   the 80px CSS mask only partially attenuates them — the Gaussian tail is
-            //   long enough to remain visible even through the fade. Excluding them at
-            //   the geographic level eliminates the source entirely.
-            //   UAP sightings above 62°N / below -50°S are sparse and often impossible
-            //   coordinates (cells at lat=96.99, 90.93 in the raw hexbin data).
-            //
-            // Stage 2 — CANVAS-EDGE: exclude cells projecting within 5×radius of the
-            //   viewport boundary. At z=2 (radius=20) this is 100px; at z=3 (radius=28)
-            //   this is 140px. With the nearest included cell at y≥100px and blur=40px,
-            //   its Gaussian tail at y=60px is at 3σ → ~1% intensity × partial mask
-            //   attenuation → effectively invisible.
-            //
-            // The 80px CSS mask provides a final visual safety net for any residual
-            // blur spread that survives both filters.
-            const mapSize = map.getSize();
-            const edgeBuffer = radius * 5;
-            const filteredPoints = heatCellsRef.current
-              .filter(c => {
-                // Stage 1: geographic hard cap
-                if (c.lat > 62 || c.lat < -50) return false;
-                // Stage 2: canvas-edge pixel buffer
-                const pt = map.latLngToContainerPoint([c.lat, c.lng]);
-                return pt.y >= edgeBuffer && pt.y <= mapSize.y - edgeBuffer;
-              })
-              .map(c => [c.lat, c.lng, Math.log(c.cnt + 1) / heatLogMaxRef.current] as [number, number, number]);
-            heatRef.current?.setLatLngs(filteredPoints);
-          }
-
-          // ── Viewport pins: always fetch regardless of zoom ────────────
-          // At world zoom the bbox covers ~the whole globe → returns top 300
-          // quality sightings globally. As you zoom in it fetches local area.
           const bounds = map.getBounds();
           const n = bounds.getNorth();
           const s = bounds.getSouth();
           const e = bounds.getEast();
           const w = bounds.getWest();
           const viewKey = `${n.toFixed(3)},${s.toFixed(3)},${e.toFixed(3)},${w.toFixed(3)}`;
-          if (viewKey === lastViewportKeyRef.current) return; // viewport unchanged
+          if (viewKey === lastViewportKeyRef.current) return;
           lastViewportKeyRef.current = viewKey;
 
           viewportAbortRef.current?.abort();
@@ -358,7 +160,7 @@ export default function SightingsMapInner() {
           setPinLoading(true);
           try {
             const res = await fetch(
-              `/api/sightings/viewport?n=${n}&s=${s}&e=${e}&w=${w}&limit=500`,
+              `/api/sightings/viewport?n=${n}&s=${s}&e=${e}&w=${w}&limit=${VIEWPORT_LIMIT}`,
               { signal: viewportAbortRef.current.signal }
             );
             if (!res.ok) throw new Error(`viewport ${res.status}`);
@@ -372,7 +174,6 @@ export default function SightingsMapInner() {
 
             if (destroyed) return;
 
-            // Replace old viewport markers with fresh set
             viewportMarkersRef.current.forEach(m => m.remove());
             viewportMarkersRef.current = [];
 
@@ -380,7 +181,6 @@ export default function SightingsMapInner() {
               const shapeLabel = sg.standardized_shape || sg.shape || 'Unknown shape';
               const location = [sg.city, sg.state, sg.country].filter(Boolean).join(', ') || 'Unknown location';
               const dateStr = sg.date ? sg.date.substring(0, 10) : 'Unknown date';
-              // circleMarker renders onto the shared pinRenderer canvas — no DOM node created
               const marker = L.circleMarker([sg.lat, sg.lng], {
                 renderer: pinRenderer,
                 radius: 4,
@@ -418,11 +218,8 @@ export default function SightingsMapInner() {
           }
         };
 
-        /* Zoom + pan listeners */
         map.on('zoomend', renderViewport);
         map.on('moveend', renderViewport);
-
-        /* Initial load — show pins immediately without waiting for user interaction */
         renderViewport();
       } catch (err) {
         console.error('SightingsMap init error:', err);
@@ -437,28 +234,24 @@ export default function SightingsMapInner() {
       viewportMarkersRef.current = [];
       map?.remove();
       mapRef.current = null;
-      heatRef.current = null;
     };
   }, []);
 
   return (
     <div className="sightings-map relative isolate rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-      {/* Map container - ocean color, land drawn via local GeoJSON */}
+      {/* Map container — ocean color, land drawn via TopoJSON GeoJSON */}
       <div ref={containerRef} style={{ height: 480, width: '100%', background: '#0f172a' }} />
 
-      {/* Gradient fades — ocean-color gradient over the top and bottom 80px of the map.
-          Hides heatmap gradient bleed at canvas edges. 80px matches the CSS mask fade
-          zone on the heatmap canvas so both layers agree on the fade boundary.
-          z-[401]: above heatmap overlayPane (z=400), below casePane (z=650). */}
+      {/* Gradient fades — blend map edges into the page background */}
       {!loading && !error && (
         <>
           <div
             className="absolute top-0 left-0 right-0 pointer-events-none z-[401]"
-            style={{ height: 80, background: 'linear-gradient(to bottom, #0f172a 0%, transparent 100%)' }}
+            style={{ height: 60, background: 'linear-gradient(to bottom, #0f172a 0%, transparent 100%)' }}
           />
           <div
             className="absolute bottom-0 left-0 right-0 pointer-events-none z-[401]"
-            style={{ height: 80, background: 'linear-gradient(to top, #0f172a 0%, transparent 100%)' }}
+            style={{ height: 60, background: 'linear-gradient(to top, #0f172a 0%, transparent 100%)' }}
           />
         </>
       )}
@@ -500,21 +293,7 @@ export default function SightingsMapInner() {
       {!loading && !error && (
         <div className="absolute bottom-3 left-3 z-[410] bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5">
           <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide">Legend</p>
-          {/* Heatmap gradient — visible at low zoom when heatmap is active */}
-          {!pinMode && (
-            <div className="flex items-center gap-2">
-              <div
-                style={{
-                  width: 40,
-                  height: 8,
-                  borderRadius: 4,
-                  background: 'linear-gradient(to right, rgba(253,224,71,0.3), #fde047, #f97316, #dc2626, #fff)',
-                }}
-              />
-              <span className="text-xs text-gray-400">Sighting density</span>
-            </div>
-          )}
-          {/* Cyan sighting pins — always visible at every zoom level */}
+          {/* Cyan sighting pins */}
           <div className="flex items-center gap-2">
             <div
               style={{
@@ -535,7 +314,7 @@ export default function SightingsMapInner() {
                   : 'Community sightings'}
             </span>
           </div>
-          {/* Amber DECUR case pins — always visible at every zoom level */}
+          {/* Amber DECUR case pins */}
           <div className="flex items-center gap-2">
             <div
               style={{
@@ -550,15 +329,6 @@ export default function SightingsMapInner() {
             />
             <span className="text-xs text-gray-300 font-medium">DECUR documented case</span>
           </div>
-        </div>
-      )}
-
-      {/* Zoom tier badge */}
-      {!loading && !error && (
-        <div className="absolute top-3 right-3 z-[410] bg-gray-900/75 backdrop-blur-sm border border-gray-700 rounded-md px-2 py-1">
-          <span className="text-xs text-gray-400 font-mono">
-            resolution: z{activeTier}
-          </span>
         </div>
       )}
     </div>
