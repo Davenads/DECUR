@@ -144,7 +144,10 @@ export default function SightingsMapInner() {
            background as visible horizontal hairlines. SVG paths fill to the exact
            mathematical boundary — no pixel rounding gaps are possible.
            The map-level renderer is still L.canvas() for heatmap + pins. */
-        const svgRenderer = L.svg();
+        // pane: 'geoPane' ensures the SVG element is inserted into geoPane (z=350)
+        // not the default overlayPane (z=400). Without this, L.svg() places its SVG
+        // element in overlayPane, rendering it on top of the heatmap canvas and hiding it.
+        const svgRenderer = L.svg({ pane: 'geoPane' });
         const topoModule = await import('topojson-client');
         const topoRes = await fetch('/world-110m.json');
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
