@@ -1,7 +1,7 @@
 /**
  * /api/map-tiles/[z]/[x]/[y].png
  *
- * Tile proxy for CartoDB dark-matter-nolabels basemap.
+ * Tile proxy for CartoDB dark_nolabels basemap.
  * Proxying through our own domain means no external tile host needs to appear
  * in the Content-Security-Policy — tiles are fetched server-side, served as
  * image/png, and cached by Vercel's CDN for 24 hours.
@@ -13,7 +13,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 const CARTO_SERVERS = ['a', 'b', 'c', 'd'];
-const CARTO_STYLE = 'dark_matter_nolabels';
+const CARTO_STYLE = 'dark_nolabels';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'GET') {
