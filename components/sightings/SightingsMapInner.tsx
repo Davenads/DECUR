@@ -10,7 +10,7 @@
  * No SVG paths are authored; the artifact class is structurally impossible.
  */
 
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Map, { Source, Layer, Popup, NavigationControl } from 'react-map-gl/maplibre';
 import type { MapRef, MapLayerMouseEvent, LayerProps } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -127,14 +127,60 @@ export default function SightingsMapInner() {
   const mapRef = useRef<MapRef>(null);
   const abortRef = useRef<AbortController | null>(null);
   const lastViewKeyRef = useRef('');
+  // Holds a promise for the global-view prefetch started on mount.
+  // Consumed once by onLoad; if the map initializes before the fetch
+  // resolves, onLoad awaits it; if it resolves first, onLoad uses it instantly.
+  const prefetchRef = useRef<Promise<{ sightings: SightingRecord[] } | null> | null>(null);
 
   const [sightingsGeoJSON, setSightingsGeoJSON] = useState<SightingsGeoJSON>({
     type: 'FeatureCollection',
     features: [],
   });
   const [pinCount, setPinCount] = useState<number | null>(null);
-  const [pinLoading, setPinLoading] = useState(false);
+  const [pinLoading, setPinLoading] = useState(true); // true from the start — data is already in-flight
   const [popup, setPopup] = useState<PopupState | null>(null);
+
+  /* ── Prefetch global view on mount ──────────────────────────────── */
+  // Start the data request immediately when the component mounts so it
+  // runs in parallel with MapLibre's WebGL + tile initialization (~1-2s).
+  // By the time onLoad fires, the sightings data is often already available.
+  useEffect(() => {
+    const controller = new AbortController();
+    prefetchRef.current = fetch(
+      `/api/sightings/viewport?n=85&s=-85&e=180&w=-180&limit=${VIEWPORT_LIMIT}`,
+      { signal: controller.signal }
+    )
+      .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
+      .catch(() => null); // swallow — onLoad's fetchViewport fallback handles retry
+    return () => controller.abort();
+  }, []);
+
+  /* ── Shared data applier ─────────────────────────────────────────── */
+
+  const applyViewportData = useCallback((sightings: SightingRecord[]) => {
+    setSightingsGeoJSON({
+      type: 'FeatureCollection',
+      features: sightings.map(sg => ({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [sg.lng, sg.lat] },
+        properties: {
+          id: sg.id,
+          date: sg.date,
+          shape: sg.standardized_shape ?? sg.shape ?? 'Unknown shape',
+          source: sg.source,
+          city: sg.city,
+          state: sg.state,
+          country: sg.country,
+          quality_score: sg.quality_score,
+          hynek: sg.hynek,
+          duration: sg.duration,
+          witnesses: sg.witnesses,
+        },
+      })),
+    });
+    setPinCount(sightings.length);
+    setPinLoading(false);
+  }, []);
 
   /* ── Viewport fetch ─────────────────────────────────────────────── */
 
@@ -167,28 +213,7 @@ export default function SightingsMapInner() {
       );
       if (!res.ok) throw new Error(`viewport ${res.status}`);
       const { sightings } = await res.json() as { sightings: SightingRecord[] };
-
-      setSightingsGeoJSON({
-        type: 'FeatureCollection',
-        features: sightings.map(sg => ({
-          type: 'Feature',
-          geometry: { type: 'Point', coordinates: [sg.lng, sg.lat] },
-          properties: {
-            id: sg.id,
-            date: sg.date,
-            shape: sg.standardized_shape ?? sg.shape ?? 'Unknown shape',
-            source: sg.source,
-            city: sg.city,
-            state: sg.state,
-            country: sg.country,
-            quality_score: sg.quality_score,
-            hynek: sg.hynek,
-            duration: sg.duration,
-            witnesses: sg.witnesses,
-          },
-        })),
-      });
-      setPinCount(sightings.length);
+      applyViewportData(sightings);
     } catch (err) {
       if ((err as Error).name === 'AbortError') {
         // A newer fetch superseded this one. Reset the key so the next
@@ -197,17 +222,31 @@ export default function SightingsMapInner() {
       } else {
         console.error('Viewport fetch error:', err);
       }
-    } finally {
       setPinLoading(false);
     }
-  }, []);
+  }, [applyViewportData]);
 
   /* ── Map event handlers ─────────────────────────────────────────── */
 
-  const onLoad = useCallback(() => {
-    console.log('[SightingsMap] MapLibre loaded');
+  const onLoad = useCallback(async () => {
+    // Consume the prefetch started on mount. If it already resolved, the
+    // data is applied with zero additional latency. If still in-flight,
+    // we await it here rather than firing a second identical request.
+    const prefetch = prefetchRef.current;
+    prefetchRef.current = null;
+
+    if (prefetch) {
+      const data = await prefetch;
+      if (data?.sightings?.length) {
+        // Mark this viewKey as satisfied so onMoveEnd won't re-fetch unless the user pans.
+        lastViewKeyRef.current = '85.000,-85.000,180.000,-180.000';
+        applyViewportData(data.sightings);
+        return;
+      }
+    }
+    // Prefetch failed or returned nothing — fall back to a regular fetch.
     fetchViewport();
-  }, [fetchViewport]);
+  }, [fetchViewport, applyViewportData]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onError = useCallback((e: any) => {
@@ -347,6 +386,23 @@ export default function SightingsMapInner() {
         style={{ height: 60, background: 'linear-gradient(to top, #0f172a 0%, transparent 100%)', zIndex: 10 }}
       />
 
+      {/* Sightings loading indicator — visible pill at top-center while pins are in-flight */}
+      {pinLoading && (
+        <div
+          className="absolute top-3 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-gray-900/90 backdrop-blur-sm border border-cyan-800/60 rounded-full px-3 py-1.5 pointer-events-none"
+          style={{ zIndex: 20 }}
+        >
+          {/* Pulsing cyan dot */}
+          <span className="relative flex h-2 w-2 flex-shrink-0">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400" />
+          </span>
+          <span className="text-xs text-cyan-300 font-medium tracking-wide whitespace-nowrap">
+            Loading sightings...
+          </span>
+        </div>
+      )}
+
       {/* Legend */}
       <div
         className="absolute bottom-3 left-3 bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5"
@@ -361,7 +417,7 @@ export default function SightingsMapInner() {
           }} />
           <span className="text-xs text-gray-400">
             {pinLoading
-              ? 'Loading reports...'
+              ? 'Loading...'
               : pinCount != null
                 ? `${pinCount.toLocaleString()} sightings in view`
                 : 'Community sightings'}
