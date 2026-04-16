@@ -157,7 +157,17 @@ async function handleSupabase(
       const limit = parseInt(String(query.limit ?? '300'), 10);
       const data = await getViewportSightings({ n, s, e, w, limit });
       res.setHeader('X-Data-Source', 'supabase');
-      res.setHeader('Cache-Control', 'no-cache');
+      // At world-view zoom (z=3, full globe bounds) the top-500 quality sightings
+      // are essentially static. Cache for 10 minutes at the CDN edge so subsequent
+      // page loads skip the Supabase query entirely (cold start + 396k row scan).
+      // Zoomed-in views (smaller bbox) remain uncached for real-time accuracy.
+      const isGlobalView = n > 75 && s < -60 && e > 150 && w < -150;
+      res.setHeader(
+        'Cache-Control',
+        isGlobalView
+          ? 's-maxage=600, stale-while-revalidate=120'
+          : 'no-cache'
+      );
       res.status(200).json({ sightings: data });
       return true;
     }

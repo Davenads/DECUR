@@ -76,76 +76,6 @@ export default function SightingsMapInner() {
         casePane.style.zIndex = '650';
         casePane.style.pointerEvents = 'auto';
 
-        /* Geography — TopoJSON fills via Leaflet SVG renderer.
-           SVG paths fill to exact mathematical boundaries with no sub-pixel gaps,
-           eliminating the horizontal hairlines that canvas rendering produced at
-           shared polygon boundaries (e.g. 49th parallel US-Canada border).
-           pane: 'geoPane' places the SVG element at z=350, below viewport pins. */
-        const svgRenderer = L.svg({ pane: 'geoPane' });
-        const topoModule = await import('topojson-client');
-        const topoRes = await fetch('/world-110m.json');
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const topo = await topoRes.json() as any;
-        const countries = topoModule.feature(topo, topo.objects.countries);
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (L.geoJSON as any)(countries, {
-          pane: 'geoPane',
-          renderer: svgRenderer,
-          // smoothFactor: 0 disables vertex simplification — prevents Leaflet from
-          // removing intermediate points on horizontal arcs (e.g. 49th parallel),
-          // which would cause visible gaps between adjacent country fills.
-          smoothFactor: 0,
-          style: {
-            fillColor: '#1e293b',
-            fillOpacity: 1,
-            // Stroke in the same color as fill: invisible as a border, but the 1px
-            // overlap covers any sub-pixel fill gap between adjacent country polygons.
-            // A zero-weight approach leaves 1-2px canvas anti-aliasing cracks at
-            // shared boundaries (e.g. US-Canada 49th parallel) that read as horizontal
-            // lines. color: '#475569' (the previous value) drew visible political borders.
-            color: '#1e293b',
-            weight: 1,
-          },
-        }).addTo(map);
-
-        setLoading(false);
-
-        /* DECUR case pins — amber glow markers in casePane (z=650) */
-        const caseIcon = L.divIcon({
-          className: '',
-          html: `<div style="
-            width:14px;height:14px;border-radius:50%;
-            background:#f59e0b;border:2.5px solid #fff;
-            box-shadow:0 0 0 2px rgba(245,158,11,0.5),0 0 10px rgba(245,158,11,0.9);
-          "></div>`,
-          iconSize: [14, 14],
-          iconAnchor: [7, 7],
-          popupAnchor: [0, -10],
-        });
-
-        (casePins as CasePin[]).forEach((pin) => {
-          const marker = L.marker([pin.lat, pin.lng], { icon: caseIcon, pane: 'casePane' });
-          const nearbyText =
-            pin.total >= 1000
-              ? `~${(pin.total / 1000).toFixed(1)}k`
-              : pin.total.toLocaleString();
-          marker.bindPopup(
-            `<div style="font-family:system-ui;min-width:180px;">
-              <div style="font-weight:700;font-size:13px;margin-bottom:4px;color:#111;">${pin.name}</div>
-              <div style="font-size:12px;color:#666;">DECUR documented case</div>
-              <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;font-size:12px;">
-                <span style="color:#92400e;font-weight:600;">${nearbyText}</span>
-                <span style="color:#999;"> community reports nearby</span>
-              </div>
-              <a href="/cases/${pin.id}" style="display:inline-block;margin-top:6px;font-size:11px;color:#6366f1;text-decoration:none;">
-                View case &rarr;
-              </a>
-            </div>`,
-            { maxWidth: 220 }
-          );
-          marker.addTo(map);
-        });
-
         /* ── Viewport sighting pins ──────────────────────────────────── */
 
         // Canvas renderer: all markers share one <canvas> — zero DOM nodes per marker.
@@ -159,6 +89,8 @@ export default function SightingsMapInner() {
           const s = bounds.getSouth();
           const e = bounds.getEast();
           const w = bounds.getWest();
+          // Round to 3 decimal places (~110m resolution) — avoids re-fetching for
+          // tiny sub-pixel pans that produce no meaningful change in visible sightings.
           const viewKey = `${n.toFixed(3)},${s.toFixed(3)},${e.toFixed(3)},${w.toFixed(3)}`;
           if (viewKey === lastViewportKeyRef.current) return;
           lastViewportKeyRef.current = viewKey;
@@ -229,7 +161,104 @@ export default function SightingsMapInner() {
 
         map.on('zoomend', renderViewport);
         map.on('moveend', renderViewport);
+
+        // Kick off the viewport fetch IMMEDIATELY in parallel with the TopoJSON
+        // fetch below. The pins will appear as soon as the API responds, regardless
+        // of how long the geography fetch takes. At z=3 the API query is cached by
+        // the CDN so subsequent page loads return almost immediately.
         renderViewport();
+
+        /* ── Geography ───────────────────────────────────────────────── */
+        //
+        // We use topo.objects.land (the single merged landmass polygon) rather than
+        // topo.objects.countries (241 individual country polygons).
+        //
+        // WHY: when rendering 241 separate SVG <path> elements, each path has
+        // independent anti-aliasing at its edges. Two adjacent paths sharing an arc
+        // (e.g. US and Canada both reference the 49th-parallel arc) are rasterised
+        // independently, and the browser can leave a 1-2px gap between them that
+        // reveals the darker ocean background as a horizontal line.
+        //
+        // The merged land polygon has ONLY outer coastline edges — no internal country
+        // boundaries exist in the SVG path. Zero inner-boundary seam artifacts are
+        // possible by construction.
+        //
+        // shape-rendering: crispEdges (applied post-render to the SVG element)
+        // disables browser anti-aliasing on the SVG paths. This snaps every edge to
+        // the nearest pixel grid line, ensuring no sub-pixel bleed at any boundary.
+        // Combined with the single-polygon approach, this eliminates all artifact classes.
+        const svgRenderer = L.svg({ pane: 'geoPane' });
+        const topoModule = await import('topojson-client');
+        const topoRes = await fetch('/world-110m.json');
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const topo = await topoRes.json() as any;
+
+        if (destroyed) return;
+
+        // Use the merged land object — single polygon, no internal country boundaries
+        const landObj = topo.objects.land ?? topo.objects.countries;
+        const land = topoModule.feature(topo, landObj);
+
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (L.geoJSON as any)(land, {
+          pane: 'geoPane',
+          renderer: svgRenderer,
+          // smoothFactor: 0 prevents Leaflet from simplifying path vertices.
+          // Simplification of a perfectly-horizontal arc (like a bbox boundary at
+          // a round latitude) can reduce it to 2 points, creating a single straight
+          // SVG segment that anti-aliases differently than the un-simplified version.
+          smoothFactor: 0,
+          style: {
+            fillColor: '#1e293b',
+            fillOpacity: 1,
+            color: 'none',
+            weight: 0,
+          },
+        }).addTo(map);
+
+        // Apply crispEdges to the SVG element so path edges snap to exact pixel
+        // boundaries. This eliminates any residual anti-aliasing bleed at the coastline.
+        const svgEl = geoPane.querySelector('svg') as SVGElement | null;
+        if (svgEl) svgEl.style.shapeRendering = 'crispEdges';
+
+        setLoading(false);
+
+        /* DECUR case pins — amber glow markers in casePane (z=650) */
+        const caseIcon = L.divIcon({
+          className: '',
+          html: `<div style="
+            width:14px;height:14px;border-radius:50%;
+            background:#f59e0b;border:2.5px solid #fff;
+            box-shadow:0 0 0 2px rgba(245,158,11,0.5),0 0 10px rgba(245,158,11,0.9);
+          "></div>`,
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -10],
+        });
+
+        (casePins as CasePin[]).forEach((pin) => {
+          const marker = L.marker([pin.lat, pin.lng], { icon: caseIcon, pane: 'casePane' });
+          const nearbyText =
+            pin.total >= 1000
+              ? `~${(pin.total / 1000).toFixed(1)}k`
+              : pin.total.toLocaleString();
+          marker.bindPopup(
+            `<div style="font-family:system-ui;min-width:180px;">
+              <div style="font-weight:700;font-size:13px;margin-bottom:4px;color:#111;">${pin.name}</div>
+              <div style="font-size:12px;color:#666;">DECUR documented case</div>
+              <div style="margin-top:8px;padding-top:8px;border-top:1px solid #e5e7eb;font-size:12px;">
+                <span style="color:#92400e;font-weight:600;">${nearbyText}</span>
+                <span style="color:#999;"> community reports nearby</span>
+              </div>
+              <a href="/cases/${pin.id}" style="display:inline-block;margin-top:6px;font-size:11px;color:#6366f1;text-decoration:none;">
+                View case &rarr;
+              </a>
+            </div>`,
+            { maxWidth: 220 }
+          );
+          marker.addTo(map);
+        });
+
       } catch (err) {
         console.error('SightingsMap init error:', err);
         if (!destroyed) setError(true);
@@ -248,7 +277,7 @@ export default function SightingsMapInner() {
 
   return (
     <div className="sightings-map relative isolate rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-      {/* Map container — ocean color, land drawn via TopoJSON GeoJSON */}
+      {/* Map container — ocean color, land drawn via TopoJSON land polygon */}
       <div ref={containerRef} style={{ height: 480, width: '100%', background: '#0f172a' }} />
 
       {/* Gradient fades — blend map edges into the page background */}
@@ -287,7 +316,7 @@ export default function SightingsMapInner() {
               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
             />
           </svg>
-          <p className="text-sm text-gray-300">Loading 614k sighting records...</p>
+          <p className="text-sm text-gray-300">Loading sighting map...</p>
         </div>
       )}
 
