@@ -20,9 +20,31 @@ import casePinsRaw from '../../data/ufosint/case-pins.json';
 
 const VIEWPORT_LIMIT = 10000;
 
-// CartoDB dark-matter-nolabels: free vector tile style, no API key required.
-// GPU-rendered, dark ocean + darker land with clear contrast.
-const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json';
+// Inline MapLibre style — avoids fetching an external style JSON URL (which was
+// blocked by CSP connect-src). Raster tiles are loaded by MapLibre as images;
+// img-src https://*.cartocdn.com must be allowed in the CSP.
+const MAP_STYLE = {
+  version: 8 as const,
+  sources: {
+    'carto-tiles': {
+      type: 'raster' as const,
+      tiles: [
+        'https://a.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
+        'https://b.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
+        'https://c.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
+        'https://d.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
+      ],
+      tileSize: 256,
+      attribution: '&copy; <a href="https://openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
+    },
+  },
+  layers: [
+    // Ocean base color matching the site's dark slate background
+    { id: 'background', type: 'background' as const, paint: { 'background-color': '#0f172a' } },
+    // CartoDB dark-matter-nolabels: dark tiles with visible land/ocean contrast
+    { id: 'carto-tiles', type: 'raster' as const, source: 'carto-tiles' },
+  ],
+};
 
 /* ── Layer paint definitions ────────────────────────────────────────────── */
 
@@ -170,8 +192,14 @@ export default function SightingsMapInner() {
   /* ── Map event handlers ─────────────────────────────────────────── */
 
   const onLoad = useCallback(() => {
+    console.log('[SightingsMap] MapLibre loaded');
     fetchViewport();
   }, [fetchViewport]);
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const onError = useCallback((e: any) => {
+    console.error('[SightingsMap] MapLibre error:', e?.error ?? e);
+  }, []);
 
   const onMoveEnd = useCallback(() => {
     fetchViewport();
@@ -211,6 +239,7 @@ export default function SightingsMapInner() {
         onClick={onMapClick}
         onLoad={onLoad}
         onMoveEnd={onMoveEnd}
+        onError={onError}
       >
         <NavigationControl position="top-left" />
 

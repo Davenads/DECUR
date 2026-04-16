@@ -8,12 +8,17 @@ const securityHeaders = [
     key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com",
+      // blob: required for MapLibre GL web worker (loaded via URL.createObjectURL)
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://challenges.cloudflare.com",
+      // worker-src blob: required for MapLibre GL web worker
+      "worker-src blob: 'self'",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob:",
+      // blob: for canvas/worker data; *.cartocdn.com for map tile images
+      "img-src 'self' data: blob: https://*.cartocdn.com",
       "font-src 'self'",
       "frame-src https://challenges.cloudflare.com",
-      "connect-src 'self' https://challenges.cloudflare.com https://*.supabase.co wss://*.supabase.co",
+      // *.cartocdn.com for MapLibre tile fetches (vector tiles + style JSON)
+      "connect-src 'self' https://challenges.cloudflare.com https://*.supabase.co wss://*.supabase.co https://*.cartocdn.com https://basemaps.cartocdn.com",
     ].join('; '),
   },
 ];
