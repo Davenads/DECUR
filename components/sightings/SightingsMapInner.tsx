@@ -128,27 +128,39 @@ export default function SightingsMapInner() {
         });
         mapRef.current = map;
 
-        /* Tile basemap — CartoDB dark_nolabels.
-           Using tiles instead of TopoJSON polygon fills eliminates all canvas sub-pixel
-           seam artifacts. world-110m.json has perfectly straight horizontal arcs (49th
-           parallel US-Canada, Russia bbox boundaries, etc.) that create visible 1-2px
-           hairlines between adjacent polygon fills regardless of stroke settings.
-           CartoDB tiles render landmasses without any polygon boundary artifacts.
-           CORS-enabled, no API key required, reliable global CDN. */
-        L.tileLayer(
-          'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',
-          {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: 'abcd',
-            maxZoom: 20,
-          }
-        ).addTo(map);
+        /* Geography pane below overlayPane (400) so heatmap renders on top */
+        const geoPane = map.createPane('geoPane');
+        geoPane.style.zIndex = '350';
 
         /* Case pane above heatmap (overlayPane=400) and above markerPane (600)
            so DECUR pins are always visible regardless of zoom or layer state */
         const casePane = map.createPane('casePane');
         casePane.style.zIndex = '650';
         casePane.style.pointerEvents = 'auto';
+
+        /* Geography — TopoJSON fills rendered via Leaflet SVG renderer.
+           Previous canvas approach left 1-2px sub-pixel gaps at shared polygon
+           boundaries (e.g. 49th parallel US-Canada border), revealing the ocean
+           background as visible horizontal hairlines. SVG paths fill to the exact
+           mathematical boundary — no pixel rounding gaps are possible.
+           The map-level renderer is still L.canvas() for heatmap + pins. */
+        const svgRenderer = L.svg();
+        const topoModule = await import('topojson-client');
+        const topoRes = await fetch('/world-110m.json');
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const topo = await topoRes.json() as any;
+        const countries = topoModule.feature(topo, topo.objects.countries);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (L.geoJSON as any)(countries, {
+          pane: 'geoPane',
+          renderer: svgRenderer,
+          style: {
+            fillColor: '#1e293b',
+            fillOpacity: 1,
+            color: '#475569',
+            weight: 0.5,
+          },
+        }).addTo(map);
 
         /* Load initial hexbins and add heat layer */
         const cells = await fetchHexbins(3);
