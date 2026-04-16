@@ -20,15 +20,22 @@ import casePinsRaw from '../../data/ufosint/case-pins.json';
 
 const VIEWPORT_LIMIT = 10000;
 
-// Inline MapLibre style using our own tile proxy (/api/map-tiles/...).
-// Proxying through our domain means no external host needs to be in the CSP.
-// The proxy fetches from CartoDB dark-matter-nolabels and caches at the CDN edge.
+// Inline MapLibre style pointing directly at CartoDB's 4-server tile CDN.
+// Using CartoDB directly (not proxied) avoids the Vercel serverless bottleneck:
+// at z=3 the map requests ~64 tiles simultaneously; routing each through a
+// cold-starting serverless function causes the partial-block load pattern.
+// The CSP already allows connect-src *.cartocdn.com for MapLibre's WebWorker.
 const MAP_STYLE = {
   version: 8 as const,
   sources: {
     'carto-tiles': {
       type: 'raster' as const,
-      tiles: ['/api/map-tiles/{z}/{x}/{y}.png'],
+      tiles: [
+        'https://a.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png',
+        'https://b.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png',
+        'https://c.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png',
+        'https://d.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png',
+      ],
       tileSize: 256,
       attribution: '&copy; <a href="https://openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
     },
@@ -36,7 +43,7 @@ const MAP_STYLE = {
   layers: [
     // Fallback ocean color while tiles load
     { id: 'background', type: 'background' as const, paint: { 'background-color': '#0f172a' } },
-    // CartoDB dark-matter-nolabels proxied through our API
+    // CartoDB dark_nolabels — direct CDN, round-robined across a/b/c/d servers
     { id: 'carto-tiles', type: 'raster' as const, source: 'carto-tiles' },
   ],
 };
@@ -136,8 +143,11 @@ export default function SightingsMapInner() {
 
     const n = b.getNorth();
     const s = b.getSouth();
-    const e = b.getEast();
-    const w = b.getWest();
+    // Clamp to [-180, 180] — MapLibre can return values outside this range
+    // when the map is scrolled past the antimeridian (e.g. getEast() > 180).
+    // The Supabase BETWEEN query doesn't handle wrapped coordinates.
+    const e = Math.min(b.getEast(), 180);
+    const w = Math.max(b.getWest(), -180);
     const viewKey = `${n.toFixed(3)},${s.toFixed(3)},${e.toFixed(3)},${w.toFixed(3)}`;
     if (viewKey === lastViewKeyRef.current) return;
     lastViewKeyRef.current = viewKey;
@@ -176,7 +186,11 @@ export default function SightingsMapInner() {
       });
       setPinCount(sightings.length);
     } catch (err) {
-      if ((err as Error).name !== 'AbortError') {
+      if ((err as Error).name === 'AbortError') {
+        // A newer fetch superseded this one. Reset the key so the next
+        // onMoveEnd will trigger a fresh fetch for the settled position.
+        lastViewKeyRef.current = '';
+      } else {
         console.error('Viewport fetch error:', err);
       }
     } finally {
@@ -194,6 +208,13 @@ export default function SightingsMapInner() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onError = useCallback((e: any) => {
     console.error('[SightingsMap] MapLibre error:', e?.error ?? e);
+  }, []);
+
+  // Clear stale data immediately on pan/zoom so old sightings don't linger
+  // as a partial strip in the new viewport while the fresh fetch is in-flight.
+  const onMoveStart = useCallback(() => {
+    setSightingsGeoJSON({ type: 'FeatureCollection', features: [] });
+    lastViewKeyRef.current = '';
   }, []);
 
   const onMoveEnd = useCallback(() => {
@@ -233,6 +254,7 @@ export default function SightingsMapInner() {
         interactiveLayerIds={['sightings', 'case-pins']}
         onClick={onMapClick}
         onLoad={onLoad}
+        onMoveStart={onMoveStart}
         onMoveEnd={onMoveEnd}
         onError={onError}
       >
