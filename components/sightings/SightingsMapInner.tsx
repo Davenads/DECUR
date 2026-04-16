@@ -213,6 +213,12 @@ export default function SightingsMapInner() {
           const mask = 'linear-gradient(to bottom, transparent 0px, black 40px, black calc(100% - 40px), transparent 100%)';
           heatCanvas.style.maskImage = mask;
           heatCanvas.style.webkitMaskImage = mask;
+          // CSS blur applied on top of leaflet.heat's internal Gaussian blur.
+          // leaflet.heat blur=2x handles cell-to-cell blending; this second pass
+          // smooths the macro-level density boundary where US sightings (dense)
+          // drop off into Canada/Mexico (sparse), which otherwise appears as a
+          // sharp horizontal edge across the map at lat≈42°N and lat≈17°N.
+          heatCanvas.style.filter = 'blur(12px)';
         }
 
         setLoading(false);
