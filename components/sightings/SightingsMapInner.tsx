@@ -306,27 +306,33 @@ export default function SightingsMapInner() {
 
             // Always re-filter cells at the current zoom level.
             //
-            // Two problems this solves:
+            // TWO-STAGE FILTER — both must pass:
             //
-            // 1. GRADIENT BLEED: cells projecting outside the canvas (negative or > height)
-            //    have their heat gradient clipped to the canvas edge, creating a bright
-            //    horizontal band at y=0 or y=height. The `radius * 1.5` margin safely
-            //    excludes these plus cells barely inside the edge whose gradients still
-            //    visibly concentrate near the boundary.
+            // Stage 1 — GEOGRAPHIC: hard-cap polar latitudes.
+            //   Cells above 62°N or below -50°S are excluded regardless of zoom.
+            //   At z=2 these cells project near the canvas boundary (lat=65°N → y≈54px,
+            //   lat=57°N → y≈94px). Their blur (radius×2) spreads to y≈14-54px where
+            //   the 80px CSS mask only partially attenuates them — the Gaussian tail is
+            //   long enough to remain visible even through the fade. Excluding them at
+            //   the geographic level eliminates the source entirely.
+            //   UAP sightings above 62°N / below -50°S are sparse and often impossible
+            //   coordinates (cells at lat=96.99, 90.93 in the raw hexbin data).
             //
-            // 2. EDGE BAND from dense latitude rows: lat=60.62°N has 40 cells spanning
-            //    all longitudes; at z=3 they project to containerY≈38px. With radius=28
-            //    they form a continuous horizontal stripe near the canvas top.
-            //    `radius * 4` (= 112px at z=3) gives a wide exclusion zone so that
-            //    even the furthest blur spread (radius * 2 internal + 80px mask fade)
-            //    cannot reach the visible boundary.
+            // Stage 2 — CANVAS-EDGE: exclude cells projecting within 5×radius of the
+            //   viewport boundary. At z=2 (radius=20) this is 100px; at z=3 (radius=28)
+            //   this is 140px. With the nearest included cell at y≥100px and blur=40px,
+            //   its Gaussian tail at y=60px is at 3σ → ~1% intensity × partial mask
+            //   attenuation → effectively invisible.
             //
-            // The CSS mask (80px fade zone applied to heat._canvas above) provides a
-            // visual fallback for any residual bleed not caught by this filter.
+            // The 80px CSS mask provides a final visual safety net for any residual
+            // blur spread that survives both filters.
             const mapSize = map.getSize();
-            const edgeBuffer = radius * 4;
+            const edgeBuffer = radius * 5;
             const filteredPoints = heatCellsRef.current
               .filter(c => {
+                // Stage 1: geographic hard cap
+                if (c.lat > 62 || c.lat < -50) return false;
+                // Stage 2: canvas-edge pixel buffer
                 const pt = map.latLngToContainerPoint([c.lat, c.lng]);
                 return pt.y >= edgeBuffer && pt.y <= mapSize.y - edgeBuffer;
               })
