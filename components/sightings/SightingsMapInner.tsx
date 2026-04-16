@@ -91,11 +91,20 @@ export default function SightingsMapInner() {
         (L.geoJSON as any)(countries, {
           pane: 'geoPane',
           renderer: svgRenderer,
+          // smoothFactor: 0 disables vertex simplification — prevents Leaflet from
+          // removing intermediate points on horizontal arcs (e.g. 49th parallel),
+          // which would cause visible gaps between adjacent country fills.
+          smoothFactor: 0,
           style: {
             fillColor: '#1e293b',
             fillOpacity: 1,
-            color: '#475569',
-            weight: 0.5,
+            // Stroke in the same color as fill: invisible as a border, but the 1px
+            // overlap covers any sub-pixel fill gap between adjacent country polygons.
+            // A zero-weight approach leaves 1-2px canvas anti-aliasing cracks at
+            // shared boundaries (e.g. US-Canada 49th parallel) that read as horizontal
+            // lines. color: '#475569' (the previous value) drew visible political borders.
+            color: '#1e293b',
+            weight: 1,
           },
         }).addTo(map);
 
