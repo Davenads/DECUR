@@ -450,7 +450,7 @@ const ComparePage: FC = () => {
         </div>
 
         {/* Pickers row */}
-        <div className="flex items-end gap-3">
+        <div className="flex flex-col sm:flex-row sm:items-end gap-3">
           <FigurePicker label="Figure A" selectedId={idA} otherSelectedId={idB} onChange={setIdA} />
 
           {/* Swap button */}
@@ -458,9 +458,9 @@ const ComparePage: FC = () => {
             onClick={handleSwap}
             disabled={!idA || !idB}
             title="Swap figures"
-            className="mb-0.5 p-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-400 hover:text-primary dark:hover:text-primary-light hover:border-primary transition-colors disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
+            className="self-center sm:mb-0.5 p-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-400 hover:text-primary dark:hover:text-primary-light hover:border-primary transition-colors disabled:opacity-30 disabled:cursor-not-allowed shrink-0"
           >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="h-4 w-4 rotate-90 sm:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
             </svg>
           </button>
