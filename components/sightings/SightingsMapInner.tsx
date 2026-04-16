@@ -20,28 +20,23 @@ import casePinsRaw from '../../data/ufosint/case-pins.json';
 
 const VIEWPORT_LIMIT = 10000;
 
-// Inline MapLibre style — avoids fetching an external style JSON URL (which was
-// blocked by CSP connect-src). Raster tiles are loaded by MapLibre as images;
-// img-src https://*.cartocdn.com must be allowed in the CSP.
+// Inline MapLibre style using our own tile proxy (/api/map-tiles/...).
+// Proxying through our domain means no external host needs to be in the CSP.
+// The proxy fetches from CartoDB dark-matter-nolabels and caches at the CDN edge.
 const MAP_STYLE = {
   version: 8 as const,
   sources: {
     'carto-tiles': {
       type: 'raster' as const,
-      tiles: [
-        'https://a.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
-        'https://b.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
-        'https://c.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
-        'https://d.basemaps.cartocdn.com/dark_matter_nolabels/{z}/{x}/{y}@2x.png',
-      ],
+      tiles: ['/api/map-tiles/{z}/{x}/{y}.png'],
       tileSize: 256,
       attribution: '&copy; <a href="https://openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
     },
   },
   layers: [
-    // Ocean base color matching the site's dark slate background
+    // Fallback ocean color while tiles load
     { id: 'background', type: 'background' as const, paint: { 'background-color': '#0f172a' } },
-    // CartoDB dark-matter-nolabels: dark tiles with visible land/ocean contrast
+    // CartoDB dark-matter-nolabels proxied through our API
     { id: 'carto-tiles', type: 'raster' as const, source: 'carto-tiles' },
   ],
 };
