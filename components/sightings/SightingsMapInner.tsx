@@ -49,7 +49,10 @@ function calcHeatRadius(zoom: number, tier: 3 | 4 | 5): { radius: number; blur: 
   const cellDeg = tier === 3 ? 7.5 : tier === 4 ? 3.5 : 1.5;
   const pxPerDeg = (256 * Math.pow(2, zoom)) / 360;
   const radius = Math.max(Math.ceil(cellDeg * pxPerDeg * 0.65), 20);
-  const blur   = Math.ceil(radius * 0.75);
+  // blur at 2× radius ensures the Gaussian post-pass spreads each cell's gradient far
+  // enough to fully bridge the inter-cell gap (42-51px at z=3, tier-3 cells). At 0.75×
+  // the blur was too tight — adjacent cells didn't blend and showed as a visible dot-grid.
+  const blur   = Math.ceil(radius * 2.0);
   return { radius, blur };
 }
 
