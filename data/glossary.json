@@ -118,6 +118,12 @@
     "source": "gerb"
   },
   {
+    "term": "Alien Reproduction Vehicle",
+    "definition": "A term coined by aerospace illustrator Mark McCandlish to describe alleged human-built craft reverse-engineered from recovered non-human technology. McCandlish testified that in November 1988 at Norton Air Force Base, he was told by a contact that three craft of different sizes - all hovering using a repulsion field - were on display at an invitation-only USAF event. He produced highly detailed cutaway diagrams based on the contact's description. The ARV concept posits that the U.S. government has built operational craft based on recovered material, distinct from the original non-human craft. The term is widely used in crash retrieval and reverse-engineering research communities. Also abbreviated ARV.",
+    "source": "curated",
+    "related_figure_id": "mark-mccandlish"
+  },
+  {
     "term": "AMC",
     "definition": "Air Mobility Command - Air Force Major Command",
     "source": "gerb"
@@ -144,8 +150,8 @@
   },
   {
     "term": "ARV",
-    "definition": "Alien Reproduction Vehicle - Human-made craft reverse-engineered from extraterrestrial technology",
-    "source": "gerb"
+    "definition": "Alien Reproduction Vehicle - Alleged human-made craft reverse-engineered from recovered extraterrestrial technology. See: Alien Reproduction Vehicle.",
+    "source": "curated"
   },
   {
     "term": "ARVS",
@@ -293,11 +299,26 @@
     "definition": "A tiered classification system developed by astronomer and Project Blue Book scientific consultant J. Allen Hynek to categorize UAP sightings by proximity and type of interaction. CE1-CE3 are universally accepted in the research community; CE4 and CE5 are widely used but their epistemological status is debated.",
     "source": "curated",
     "structured_items": [
-      { "label": "CE1", "description": "Visual sighting of a UAP within approximately 500 feet; no physical effects on the environment." },
-      { "label": "CE2", "description": "UAP interaction leaves physical evidence - ground traces, electromagnetic effects on vehicles or aircraft, physiological effects on witnesses." },
-      { "label": "CE3", "description": "UAP with visible occupants or associated entities observed." },
-      { "label": "CE4", "description": "Witness is abducted or directly interacted with by occupants. Added by Hynek before his death (1986); formalized by researchers including Budd Hopkins and John Mack." },
-      { "label": "CE5", "description": "Human-initiated or bilateral contact with NHI. Associated with Steven Greer's CSETI methodology; category is contested in the research community." }
+      {
+        "label": "CE1",
+        "description": "Visual sighting of a UAP within approximately 500 feet; no physical effects on the environment."
+      },
+      {
+        "label": "CE2",
+        "description": "UAP interaction leaves physical evidence - ground traces, electromagnetic effects on vehicles or aircraft, physiological effects on witnesses."
+      },
+      {
+        "label": "CE3",
+        "description": "UAP with visible occupants or associated entities observed."
+      },
+      {
+        "label": "CE4",
+        "description": "Witness is abducted or directly interacted with by occupants. Added by Hynek before his death (1986); formalized by researchers including Budd Hopkins and John Mack."
+      },
+      {
+        "label": "CE5",
+        "description": "Human-initiated or bilateral contact with NHI. Associated with Steven Greer's CSETI methodology; category is contested in the research community."
+      }
     ]
   },
   {
@@ -541,14 +562,14 @@
     "source": "gerb"
   },
   {
-    "term": "Fastwalker",
-    "definition": "NORAD and Space Command operational designation for objects detected by satellite and ground-based sensors entering or exiting Earth's atmosphere at high velocity - typically faster than any known ballistic missile or orbital decay trajectory. Distinguished from 'slowwalkers,' which follow conventional orbital mechanics. Fastwalker events are logged routinely; the data is classified. The term appears in declassified NORAD documents and has been cited by researchers including Dr. Steven Greer and in discussions of potential non-terrestrial objects. Distinct from conventional UAP in that fastwalkers are detected at extreme altitude by space surveillance assets rather than by aircraft radar or pilot observation.",
-    "source": "curated"
-  },
-  {
     "term": "FAP",
     "definition": "Peruvian Air Force - Peru's military air force",
     "source": "gerb"
+  },
+  {
+    "term": "Fastwalker",
+    "definition": "NORAD and Space Command operational designation for objects detected by satellite and ground-based sensors entering or exiting Earth's atmosphere at high velocity - typically faster than any known ballistic missile or orbital decay trajectory. Distinguished from 'slowwalkers,' which follow conventional orbital mechanics. Fastwalker events are logged routinely; the data is classified. The term appears in declassified NORAD documents and has been cited by researchers including Dr. Steven Greer and in discussions of potential non-terrestrial objects. Distinct from conventional UAP in that fastwalkers are detected at extreme altitude by space surveillance assets rather than by aircraft radar or pilot observation.",
+    "source": "curated"
   },
   {
     "term": "FEMA",
@@ -789,11 +810,6 @@
     "source": "gerb"
   },
   {
-    "term": "Metamaterials",
-    "definition": "In materials science, engineered structures with electromagnetic or mechanical properties not found in naturally occurring materials - achieved through precise geometric patterning at scales smaller than the relevant wavelength rather than through chemical composition. In the UAP context, the term refers to alleged recovered materials exhibiting anomalous properties including isotopic ratios inconsistent with known terrestrial or natural processes, layered metallic structures of unknown fabrication method, and electromagnetic response characteristics outside the range of known materials. Luis Elizondo and Hal Puthoff have both referenced anomalous material samples in public forums; To The Stars Academy of Arts and Science (TTSA) claimed possession of samples described as metamaterials with unusual isotopic signatures. The Sturrock Panel (1998) addressed physical trace evidence including material samples. The two uses of the term - legitimate materials science and UAP crash retrieval claims - should not be conflated; the scientific validity of the UAP-specific claims has not been established through peer-reviewed publication.",
-    "source": "curated"
-  },
-  {
     "term": "MAW",
     "definition": "Marine Aircraft Wing - A major aviation unit of the United States Marine Corps",
     "source": "gerb"
@@ -807,6 +823,11 @@
     "term": "MERINT",
     "definition": "Maritime Intelligence - Maritime intelligence reporting system referenced in JANAP 146c for waterborne UFO reports",
     "source": "gerb"
+  },
+  {
+    "term": "Metamaterials",
+    "definition": "In materials science, engineered structures with electromagnetic or mechanical properties not found in naturally occurring materials - achieved through precise geometric patterning at scales smaller than the relevant wavelength rather than through chemical composition. In the UAP context, the term refers to alleged recovered materials exhibiting anomalous properties including isotopic ratios inconsistent with known terrestrial or natural processes, layered metallic structures of unknown fabrication method, and electromagnetic response characteristics outside the range of known materials. Luis Elizondo and Hal Puthoff have both referenced anomalous material samples in public forums; To The Stars Academy of Arts and Science (TTSA) claimed possession of samples described as metamaterials with unusual isotopic signatures. The Sturrock Panel (1998) addressed physical trace evidence including material samples. The two uses of the term - legitimate materials science and UAP crash retrieval claims - should not be conflated; the scientific validity of the UAP-specific claims has not been established through peer-reviewed publication.",
+    "source": "curated"
   },
   {
     "term": "MFD",
@@ -1405,14 +1426,14 @@
     "source": "gerb"
   },
   {
-    "term": "Transmedium",
-    "definition": "Describes objects or vehicles observed transitioning between multiple physical domains - air, water, and space - without the structural, propulsion, or operational limitations that confine conventional aircraft to a single medium. The term has been adopted by AARO, the U.S. Navy, and congressional UAP oversight language to describe a documented class of UAP behavior. The USS Omaha incident (2019) is the canonical documented transmedium event: a spherical object was tracked by ship radar and observed by crew transitioning from airborne flight directly into the ocean at approximately 46 mph with no splash consistent with conventional entry, then disappearing from sonar. Transmedium behavior is categorized by AARO as one of the defining characteristics requiring investigation under the 'anomalous' classification in contrast to UAP that remain in a single domain.",
-    "source": "curated"
-  },
-  {
     "term": "TR-3B",
     "definition": "Tactical Reconnaissance 3B - Codename for an alleged reverse-engineered triangular craft with anti-gravity capabilities",
     "source": "gerb"
+  },
+  {
+    "term": "Transmedium",
+    "definition": "Describes objects or vehicles observed transitioning between multiple physical domains - air, water, and space - without the structural, propulsion, or operational limitations that confine conventional aircraft to a single medium. The term has been adopted by AARO, the U.S. Navy, and congressional UAP oversight language to describe a documented class of UAP behavior. The USS Omaha incident (2019) is the canonical documented transmedium event: a spherical object was tracked by ship radar and observed by crew transitioning from airborne flight directly into the ocean at approximately 46 mph with no splash consistent with conventional entry, then disappearing from sonar. Transmedium behavior is categorized by AARO as one of the defining characteristics requiring investigation under the 'anomalous' classification in contrast to UAP that remain in a single domain.",
+    "source": "curated"
   },
   {
     "term": "TREAT",

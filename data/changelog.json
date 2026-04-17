@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-04-16",
+    "category": "quote",
+    "id": "alien-reproduction-vehicle",
+    "name": "Alien Reproduction Vehicle",
+    "action": "added",
+    "note": "New glossary entry for the ARV - Mark McCandlish's term for alleged human-built reverse-engineered craft, with updated ARV abbreviation entry cross-referencing the full term."
+  },
+  {
+    "date": "2026-04-16",
     "category": "case",
     "id": "lubbock-lights",
     "name": "Lubbock Lights",
