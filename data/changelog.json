@@ -2,6 +2,14 @@
   {
     "date": "2026-04-16",
     "category": "figure",
+    "id": "john-podesta",
+    "name": "John Podesta",
+    "action": "added",
+    "note": "Former White House Chief of Staff to Clinton and Counselor to Obama, notable for publicly stating his biggest failure of 2014 was not securing UAP file disclosure and for writing the foreword to Leslie Kean's landmark 2010 UAP book."
+  },
+  {
+    "date": "2026-04-16",
+    "category": "figure",
     "id": "leonard-stringfield",
     "name": "Leonard Stringfield",
     "action": "added",

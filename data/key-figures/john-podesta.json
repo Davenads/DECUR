@@ -1,0 +1,205 @@
+{
+  "profile": {
+    "id": "john-podesta",
+    "name": "John Podesta",
+    "aliases": ["John David Podesta"],
+    "born": "January 8, 1949 - Chicago, Illinois",
+    "died": null,
+    "roles": [
+      "Chief of Staff to President Bill Clinton (1998-2001)",
+      "Counselor to President Barack Obama (2014-2015)",
+      "Chairman, Hillary Clinton Presidential Campaign (2016)",
+      "Founder and Chairman, Center for American Progress (2003-present)",
+      "Special Presidential Envoy for Climate (2022-2024)"
+    ],
+    "service_period": "1988-present (federal government and advisory roles)",
+    "organizations": [
+      "White House (Clinton Administration)",
+      "White House (Obama Administration)",
+      "Center for American Progress",
+      "Hillary for America",
+      "Coalition for Freedom of Information"
+    ],
+    "clearance": "TS/SCI (former, White House Chief of Staff level)",
+    "summary": "John Podesta is one of Washington's most senior political operators - Clinton's Chief of Staff, Obama's counselor, and a two-time presidential campaign chairman - who has been a consistent and unusually prominent government advocate for UAP disclosure. His February 2015 tweet stating that his 'biggest failure of 2014' was not securing UAP file disclosure, written as he left the Obama White House, became one of the most widely cited mainstream political acknowledgments of the UAP issue. Podesta has written forewords, signed coalition letters, and maintained engagement with disclosure advocates across multiple administrations.",
+    "education": [
+      "B.S. Economics, Knox College, Galesburg, Illinois, 1971",
+      "J.D., Georgetown University Law Center, Washington, D.C., 1976"
+    ],
+    "early_career": [
+      "Worked as a trial attorney and Senate Judiciary Committee staffer in the late 1970s",
+      "Served as Chief Counsel to the Senate Agriculture Committee in the early 1980s",
+      "Co-founded the Podesta Group lobbying firm with his brother Tony Podesta in 1988",
+      "Served as Staff Secretary and Deputy Chief of Staff under President Clinton before becoming Chief of Staff in 1998"
+    ],
+    "key_events": [
+      {
+        "year": "1998",
+        "event": "Appointed Chief of Staff by President Bill Clinton, becoming one of the most powerful figures in the executive branch. During his tenure, he became aware of UAP-related classified programs and began advocating internally for declassification."
+      },
+      {
+        "year": "2001",
+        "event": "Left the Clinton White House and founded the Center for American Progress. Continued to engage with UAP researchers including Leslie Kean and signed coalition letters calling for government file disclosure."
+      },
+      {
+        "year": "2002",
+        "event": "Appeared at a National Press Club event on UAP disclosure alongside former military and government officials, publicly calling for the government to release classified UAP files and stating that 'the time to pull the curtain back on this subject is long overdue.'"
+      },
+      {
+        "year": "2010",
+        "event": "Wrote the foreword for Leslie Kean's book 'UFOs: Generals, Pilots, and Government Officials Go on the Record,' lending the disclosure effort the imprimatur of a former White House Chief of Staff."
+      },
+      {
+        "year": "Jan 2014",
+        "event": "Returned to the White House as Counselor to President Barack Obama, representing his second opportunity to advocate for UAP disclosure from within the executive branch."
+      },
+      {
+        "year": "Feb 2015",
+        "event": "Departed the Obama White House and posted on Twitter: 'Finally, my biggest failure of 2014: Once again not securing the disclosure of the UFO files. #thetruthisstilloutthere.' The tweet became one of the most-cited mainstream political acknowledgments of UAP secrecy."
+      },
+      {
+        "year": "2016",
+        "event": "Served as chairman of Hillary Clinton's presidential campaign. His campaign emails were hacked and released by WikiLeaks, revealing correspondence with Edgar Mitchell and others discussing UAP disclosure possibilities under a potential Clinton administration."
+      },
+      {
+        "year": "2023",
+        "event": "Publicly backed the UAP Disclosure Act and Congressional efforts to compel government declassification. Continued engagement with the disclosure community from his post-government advisory roles."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Stated publicly in February 2015 - upon leaving the Obama White House - that his 'biggest failure of 2014' was not securing the disclosure of UAP government files.",
+      "status": "verified",
+      "notes": "The tweet is a documented public statement. Podesta has confirmed its sincerity in subsequent interviews. The statement implies he made active efforts toward disclosure during his 2014-2015 White House tenure that were unsuccessful."
+    },
+    {
+      "claim": "Stated at the 2002 National Press Club event that the government should release classified UAP files and that 'the time to pull the curtain back on this subject is long overdue.'",
+      "status": "verified",
+      "notes": "The 2002 National Press Club event is documented on video and in press records. Podesta's participation and remarks are a matter of public record."
+    },
+    {
+      "claim": "Podesta's hacked 2016 campaign emails revealed correspondence with astronaut Edgar Mitchell discussing UAP disclosure, and with Tom DeLonge about briefing senior government officials on UAP programs.",
+      "status": "verified",
+      "notes": "The emails are part of the WikiLeaks Podesta email release and are publicly archived. The correspondence confirms Podesta's active engagement with disclosure advocates and willingness to broker conversations with government officials. Their authenticity has been confirmed by Podesta and campaign officials."
+    }
+  ],
+  "credibility": {
+    "score": 78,
+    "assessment": "Podesta's credibility on UAP matters is unusual: he is not a witness or researcher but a political operator whose insider access gives his advocacy extraordinary institutional weight. A former White House Chief of Staff who says he tried to get UAP files declassified and failed is qualitatively different from an outside researcher making the same claim. His public statements are consistent across decades and carry no apparent personal financial motive. The limitation is that Podesta has never disclosed the specific content of what he allegedly knows - his statements remain at the level of advocacy rather than testimony.",
+    "supporting": [
+      "Former White House Chief of Staff with TS/SCI-level access - his attempts to secure UAP declassification reflect genuine executive branch-level engagement with the issue",
+      "His 2015 departure tweet is a public primary source statement with no apparent personal benefit motivation",
+      "His engagement spans multiple decades and administrations - this is not a single late-career comment",
+      "His 2002 National Press Club appearance put his name on UAP disclosure advocacy years before it was politically fashionable",
+      "The hacked WikiLeaks correspondence confirms private advocacy consistent with his public statements, suggesting genuine personal conviction"
+    ],
+    "contradicting": [
+      "Podesta has never claimed firsthand knowledge of recovered craft or non-human intelligence - his statements are about secrecy and file disclosure, not direct testimony",
+      "As a political operative, Podesta's public statements on any topic must be evaluated in the context of political strategy and positioning",
+      "His involvement with Tom DeLonge and To The Stars Academy, which had its own institutional agenda, may have shaped the framing of his advocacy",
+      "The WikiLeaks emails were obtained through a hack attributed to Russian state actors - their release and framing were part of an adversarial intelligence operation, adding interpretive complexity"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "leslie-kean",
+      "name": "Leslie Kean",
+      "role": "Investigative journalist; UAP researcher",
+      "relationship": "Podesta wrote the foreword to Kean's 2010 book 'UFOs: Generals, Pilots, and Government Officials Go on the Record,' one of the most significant pre-2017 mainstream UAP research publications, lending it the credibility of a former White House Chief of Staff."
+    },
+    {
+      "id": "edgar-mitchell",
+      "name": "Dr. Edgar Mitchell",
+      "role": "NASA Apollo 14 astronaut; UAP disclosure advocate",
+      "relationship": "Mitchell corresponded with Podesta via the 2016 campaign email chain, urging Podesta to facilitate government briefings on UAP programs. The leaked emails document Mitchell's active effort to engage Podesta as a conduit to the Obama administration."
+    },
+    {
+      "id": "tom-delonge",
+      "name": "Tom DeLonge",
+      "role": "Musician; To The Stars Academy founder",
+      "relationship": "DeLonge corresponded with Podesta in 2015-2016 and arranged meetings between Podesta and former senior defense and intelligence officials to discuss UAP programs. The WikiLeaks emails document Podesta's participation in DeLonge's network-building efforts."
+    },
+    {
+      "id": "luis-elizondo",
+      "name": "Luis Elizondo",
+      "role": "Former AATIP director",
+      "relationship": "Elizondo and Podesta operated in adjacent disclosure networks. Elizondo's TTSA affiliation connected him to the same network of political advocates Podesta was embedded in through his DeLonge correspondence."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "2002",
+      "type": "speech",
+      "title": "National Press Club UAP Disclosure Event",
+      "outlet": "National Press Club, Washington, D.C.",
+      "notes": "Public appearance calling for government release of classified UAP files. One of the first instances of a former senior White House official publicly advocating for UAP disclosure in an on-record setting."
+    },
+    {
+      "date": "2010",
+      "type": "written",
+      "title": "Foreword - UFOs: Generals, Pilots, and Government Officials Go on the Record (Leslie Kean)",
+      "outlet": "Harmony Books (New York)",
+      "notes": "Podesta wrote the foreword to Kean's landmark book, publicly lending his name and former-Chief-of-Staff credibility to the disclosure cause."
+    },
+    {
+      "date": "Feb 2015",
+      "type": "written",
+      "title": "Twitter Post on UAP Disclosure Failure",
+      "outlet": "Twitter / X (@johnpodesta)",
+      "notes": "Upon departing the Obama White House, posted: 'Finally, my biggest failure of 2014: Once again not securing the disclosure of the UFO files. #thetruthisstilloutthere.' One of the most-cited mainstream political UAP statements of the modern era."
+    }
+  ],
+  "sources": [
+    {
+      "title": "John Podesta - Twitter/X (@johnpodesta) February 13, 2015",
+      "url": "https://x.com/johnpodesta/status/566201544148893696",
+      "type": "Primary Source",
+      "notes": "The primary source for the 2015 UAP disclosure failure statement"
+    },
+    {
+      "title": "UFOs: Generals, Pilots, and Government Officials Go on the Record - Leslie Kean (Harmony Books, 2010)",
+      "url": "https://www.amazon.com/UFOs-Generals-Pilots-Government-Officials/dp/0307717089",
+      "type": "Published Book",
+      "notes": "Contains Podesta's foreword; primary source for the 2010 disclosure advocacy"
+    },
+    {
+      "title": "WikiLeaks Podesta Email Archive (2016)",
+      "url": "https://wikileaks.org/podesta-emails/",
+      "type": "Document Archive",
+      "notes": "Contains the Mitchell and DeLonge correspondence; authenticated by Podesta campaign staff. Note: obtained via adversarial hack attributed to Russian state actors."
+    },
+    {
+      "title": "National Press Club UAP Event (May 2001) - Video Archive",
+      "url": "https://www.c-span.org/",
+      "type": "Video Archive",
+      "notes": "C-SPAN archive of the National Press Club event at which Podesta spoke publicly about UAP disclosure"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 2,
+      "node_type": "person",
+      "node_id": "leslie-kean",
+      "node_label": "Leslie Kean",
+      "relationship": "Podesta wrote the foreword to Kean's 2010 UAP book, and both participated in the 2002 National Press Club disclosure event.",
+      "connection_type": "professional"
+    },
+    {
+      "event_index": 5,
+      "node_type": "person",
+      "node_id": "edgar-mitchell",
+      "node_label": "Dr. Edgar Mitchell",
+      "relationship": "Mitchell corresponded with Podesta via the 2016 campaign emails urging him to facilitate government UAP briefings.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 7,
+      "node_type": "person",
+      "node_id": "tom-delonge",
+      "node_label": "Tom DeLonge",
+      "relationship": "DeLonge corresponded with Podesta in 2015-2016, arranging meetings with senior defense officials about UAP programs.",
+      "connection_type": "investigative"
+    }
+  ]
+}

@@ -2821,5 +2821,29 @@
     "data_file": "leonard-stringfield.json",
     "type": "researcher",
     "includeInExplore": true
+  },
+  {
+    "id": "john-podesta",
+    "name": "John Podesta",
+    "aliases": [
+      "John David Podesta"
+    ],
+    "role": "Chief of Staff to President Clinton; Counselor to President Obama; Founder, Center for American Progress",
+    "period": "1998-present",
+    "affiliation": "White House (Clinton and Obama administrations)",
+    "summary": "One of Washington's most senior political operators who has been a consistent public advocate for UAP disclosure across multiple administrations. Best known in UAP circles for tweeting upon leaving the Obama White House in 2015 that his biggest failure of 2014 was not securing the disclosure of UAP government files, and for writing the foreword to Leslie Kean's landmark 2010 UAP book.",
+    "status": "detailed",
+    "tags": [
+      "official",
+      "disclosure",
+      "clinton",
+      "obama",
+      "whitehouse",
+      "political",
+      "advocacy"
+    ],
+    "data_file": "john-podesta.json",
+    "type": "official",
+    "includeInExplore": true
   }
 ]

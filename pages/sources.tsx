@@ -989,6 +989,24 @@ const Sources: NextPage = () => {
             notes="Used for: Leonard Stringfield."
           />
 
+          {/* John Podesta */}
+          <SourceCard
+            name="John Podesta Twitter Post - February 13, 2015 (@johnpodesta)"
+            url="https://x.com/johnpodesta/status/566201544148893696"
+            type="Primary Source"
+            typeColor="bg-green-100 text-green-700"
+            description="Podesta's post upon departing the Obama White House: 'Finally, my biggest failure of 2014: Once again not securing the disclosure of the UFO files.' One of the most-cited mainstream political statements on UAP secrecy."
+            notes="Used for: John Podesta."
+          />
+          <SourceCard
+            name="UFOs: Generals, Pilots, and Government Officials Go on the Record - Leslie Kean (Harmony Books, 2010)"
+            url="https://www.amazon.com/UFOs-Generals-Pilots-Government-Officials/dp/0307717089"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Contains Podesta's foreword lending former-Chief-of-Staff credibility to the disclosure effort. Primary source for the Kean-Podesta relationship and Podesta's 2010 advocacy."
+            notes="Used for: John Podesta, Leslie Kean."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

@@ -1358,5 +1358,11 @@ export const graphData: GraphData = {
     { source: 'leonard-stringfield', target: 'donald-keyhoe',     label: 'Stringfield served on NICAP\'s board under Keyhoe\'s directorship, embedding his crash retrieval research within the most significant civilian UAP organization of the 1950s-60s' },
     { source: 'leonard-stringfield', target: 'richard-dolan',     label: 'Dolan\'s historical research on UAP secrecy drew extensively on Stringfield\'s Status Reports as foundational primary source material; Dolan has consistently cited Stringfield as the field\'s founding archivist' },
     { source: 'leonard-stringfield', target: 'philip-corso',      label: 'Corso\'s 1997 crash retrieval claims and Stringfield\'s 1978-1994 anonymous source testimony represent the two major lineages of alleged U.S. military recovery program documentation' },
+
+    // John Podesta connections
+    { source: 'john-podesta', target: 'leslie-kean',      label: 'Podesta wrote the foreword to Kean\'s landmark 2010 UAP book and shared the 2002 National Press Club stage with her; Kean was his primary UAP research collaborator' },
+    { source: 'john-podesta', target: 'edgar-mitchell',   label: 'Mitchell corresponded with Podesta in 2015-2016 via the later-hacked campaign emails, urging him to facilitate government UAP program briefings through his White House connections' },
+    { source: 'john-podesta', target: 'tom-delonge',      label: 'DeLonge corresponded with Podesta in 2015-2016 and arranged meetings between Podesta and former senior defense officials about UAP programs; documented in the WikiLeaks email release' },
+    { source: 'john-podesta', target: 'luis-elizondo',    label: 'Both operated in adjacent disclosure networks in 2017-2018; Elizondo\'s TTSA affiliation connected him to the same government-insider advocacy network Podesta was embedded in through the DeLonge correspondence' },
   ],
 };
