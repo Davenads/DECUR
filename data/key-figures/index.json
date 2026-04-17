@@ -2775,5 +2775,26 @@
     "data_file": "robert-sarbacher.json",
     "type": "scientist",
     "includeInExplore": true
+  },
+  {
+    "id": "ralph-blumenthal",
+    "name": "Ralph Blumenthal",
+    "aliases": [],
+    "role": "Investigative Reporter, New York Times; Author - The Believer (2021)",
+    "period": "1964-present",
+    "affiliation": "The New York Times",
+    "summary": "Veteran New York Times investigative reporter whose December 2017 co-byline on the landmark AATIP article with Helene Cooper and Leslie Kean broke the existence of the Pentagon UAP program to the public and triggered the modern disclosure era. With over 45 years at the Times, Blumenthal brought institutional credibility to UAP journalism and later authored a biography of Harvard psychiatrist John Mack.",
+    "status": "detailed",
+    "tags": [
+      "journalist",
+      "nyt",
+      "aatip",
+      "2017-disclosure",
+      "investigative",
+      "john-mack"
+    ],
+    "data_file": "ralph-blumenthal.json",
+    "type": "journalist",
+    "includeInExplore": true
   }
 ]

@@ -1346,5 +1346,11 @@ export const graphData: GraphData = {
     { source: 'robert-sarbacher', target: 'stanton-friedman',   label: 'Friedman corresponded with Sarbacher independently and used the Sarbacher-Smith documentation as a cornerstone of his crash retrieval and MJ-12 research' },
     { source: 'robert-sarbacher', target: 'philip-corso',       label: 'Corso\'s claims about recovered material dissemination through Army R&D channels in the early 1950s operate within the same classified scientific apparatus Sarbacher described to Smith' },
     { source: 'robert-sarbacher', target: 'roscoe-hillenkoetter', label: 'Both figures appear in the landscape of alleged early-1950s U.S. government crash recovery knowledge - Hillenkoetter as CIA director and alleged MJ-12 member, Sarbacher as R&D Board consultant who claimed awareness of the same programs' },
+
+    // Ralph Blumenthal connections
+    { source: 'ralph-blumenthal', target: 'leslie-kean',      label: 'Kean brought the AATIP story to Blumenthal and co-authored the December 2017 New York Times article that revealed AATIP and launched the modern UAP disclosure era' },
+    { source: 'ralph-blumenthal', target: 'luis-elizondo',    label: 'Elizondo was a central source for the 2017 article and provided the insider access that gave the story its institutional credibility; his resignation timing enabled the article\'s publication' },
+    { source: 'ralph-blumenthal', target: 'david-grusch',     label: 'Blumenthal appeared alongside Grusch at the June 2023 National Press Club event at which Grusch made his public allegations about illegal crash retrieval programs' },
+    { source: 'ralph-blumenthal', target: 'john-mack',        label: 'Blumenthal authored the 2021 biography of John Mack - The Believer - covering Mack\'s alien abduction research and the Harvard investigation into his work' },
   ],
 };

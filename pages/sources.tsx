@@ -953,6 +953,24 @@ const Sources: NextPage = () => {
             notes="Used for: Dr. Robert Sarbacher."
           />
 
+          {/* Ralph Blumenthal */}
+          <SourceCard
+            name="Glowing Auras and 'Black Money': The Pentagon's Mysterious U.F.O. Program - New York Times (December 16, 2017)"
+            url="https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"
+            type="News Article"
+            typeColor="bg-blue-100 text-blue-700"
+            description="The landmark article co-authored by Blumenthal, Helene Cooper, and Leslie Kean revealing AATIP's existence, Luis Elizondo's resignation, and the Nimitz Tic Tac footage. Widely credited with launching the modern UAP disclosure era."
+            notes="Used for: Ralph Blumenthal."
+          />
+          <SourceCard
+            name="The Believer: Alien Encounters, Hard Science, and the Passion of John Mack - Ralph Blumenthal (2021)"
+            url="https://www.amazon.com/Believer-Encounters-Hard-Science-Passion/dp/1953002196"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Blumenthal's biography of Harvard psychiatrist John Mack, covering his alien abduction research, the 1994 Harvard investigation, and the institutional response to anomalous experience research."
+            notes="Used for: Ralph Blumenthal."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"
