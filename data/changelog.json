@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-04-16",
+    "category": "figure",
+    "id": "boyd-bushman",
+    "name": "Boyd Bushman",
+    "action": "added",
+    "note": "Senior Research Scientist at Lockheed Martin whose 2014 deathbed interview claimed knowledge of alien beings at Area 51; notable for genuine aerospace credentials alongside the debunking of his alien photographs as commercially available toy figurines."
+  },
+  {
+    "date": "2026-04-16",
     "category": "quote",
     "id": "technology-of-unknown-origins",
     "name": "Technology of Unknown Origins",

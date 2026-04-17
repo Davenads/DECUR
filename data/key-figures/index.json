@@ -2845,5 +2845,29 @@
     "data_file": "john-podesta.json",
     "type": "official",
     "includeInExplore": true
+  },
+  {
+    "id": "boyd-bushman",
+    "name": "Boyd Bushman",
+    "aliases": [
+      "Boyd B. Bushman"
+    ],
+    "role": "Senior Research Scientist, Lockheed Martin (retired)",
+    "period": "1960s-2014",
+    "affiliation": "Lockheed Martin",
+    "summary": "Senior Research Scientist at Lockheed Martin with patents in electromagnetic and magnetic detection systems who gave a filmed deathbed interview in August 2014 claiming knowledge of alien beings at Area 51 and classified anti-gravity programs. His disclosure is notable for its institutional background but significantly undermined by the debunking of the alien photographs he presented, which were identified as commercially available toy figurines.",
+    "status": "detailed",
+    "tags": [
+      "lockheed",
+      "scientist",
+      "deathbed-disclosure",
+      "area-51",
+      "anti-gravity",
+      "debunked-evidence",
+      "aerospace"
+    ],
+    "data_file": "boyd-bushman.json",
+    "type": "insider",
+    "includeInExplore": true
   }
 ]

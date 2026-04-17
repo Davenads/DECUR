@@ -1007,6 +1007,24 @@ const Sources: NextPage = () => {
             notes="Used for: John Podesta, Leslie Kean."
           />
 
+          {/* Boyd Bushman */}
+          <SourceCard
+            name="Boyd Bushman Deathbed Interview (August 2014)"
+            url="https://www.youtube.com/watch?v=oiyBKxSP4rI"
+            type="Video Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Filmed deathbed interview in which Bushman claimed knowledge of alien beings at Area 51 and anti-gravity technology at Lockheed Martin. The alien photographs he presented were subsequently identified as commercially available toy figurines."
+            notes="Used for: Boyd Bushman."
+          />
+          <SourceCard
+            name="U.S. Patent 5,296,860 - Boyd Bushman (1994)"
+            url="https://patents.google.com/patent/US5296860"
+            type="Patent Record"
+            typeColor="bg-green-100 text-green-700"
+            description="Verified patent for magnetic anomaly detection apparatus; primary source for Bushman's legitimate engineering credentials and aerospace career."
+            notes="Used for: Boyd Bushman."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

@@ -1364,5 +1364,10 @@ export const graphData: GraphData = {
     { source: 'john-podesta', target: 'edgar-mitchell',   label: 'Mitchell corresponded with Podesta in 2015-2016 via the later-hacked campaign emails, urging him to facilitate government UAP program briefings through his White House connections' },
     { source: 'john-podesta', target: 'tom-delonge',      label: 'DeLonge corresponded with Podesta in 2015-2016 and arranged meetings between Podesta and former senior defense officials about UAP programs; documented in the WikiLeaks email release' },
     { source: 'john-podesta', target: 'luis-elizondo',    label: 'Both operated in adjacent disclosure networks in 2017-2018; Elizondo\'s TTSA affiliation connected him to the same government-insider advocacy network Podesta was embedded in through the DeLonge correspondence' },
+
+    // Boyd Bushman connections
+    { source: 'boyd-bushman', target: 'ben-rich',          label: 'Both were senior Lockheed figures who made UAP-adjacent statements near the end of their lives; Rich\'s claims carry more institutional weight but both implicate the same classified aerospace organizational structure' },
+    { source: 'boyd-bushman', target: 'mark-mccandlish',   label: 'McCandlish\'s ARV testimony and Bushman\'s anti-gravity claims both implicate classified Lockheed-adjacent reverse-engineering programs operating in overlapping eras' },
+    { source: 'boyd-bushman', target: 'bob-lazar',         label: 'Both made unverified claims about classified anti-gravity and recovered-technology programs and both face substantive credibility challenges - Lazar\'s through credential disputes, Bushman\'s through debunked photograph evidence' },
   ],
 };
