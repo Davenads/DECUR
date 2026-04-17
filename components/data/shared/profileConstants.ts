@@ -7,6 +7,7 @@ export const statusConfig: Record<string, { label: string; classes: string }> = 
   'contested':             { label: 'Contested',              classes: 'bg-orange-100 text-orange-700' },
   'partially-contradicted':{ label: 'Partially Contradicted', classes: 'bg-red-100 text-red-600' },
   'verified':              { label: 'Verified',               classes: 'bg-green-100 text-green-700' },
+  'debunked':              { label: 'Debunked',               classes: 'bg-red-100 text-red-700' },
 };
 
 export const statusBarConfig: Array<{ key: string; label: string; bar: string; dot: string }> = [
@@ -16,4 +17,5 @@ export const statusBarConfig: Array<{ key: string; label: string; bar: string; d
   { key: 'disputed',              label: 'Disputed',              bar: 'bg-amber-400',  dot: 'bg-amber-400'  },
   { key: 'contested',             label: 'Contested',             bar: 'bg-orange-400', dot: 'bg-orange-400' },
   { key: 'partially-contradicted',label: 'Partially Contradicted',bar: 'bg-red-400',    dot: 'bg-red-400'    },
+  { key: 'debunked',              label: 'Debunked',              bar: 'bg-red-600',    dot: 'bg-red-600'    },
 ];
