@@ -120,38 +120,40 @@ const WhatsNew: FC = () => {
                       <Link
                         key={i}
                         href={cat.href(entry.id)}
-                        className="flex items-start gap-4 px-5 py-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
+                        className="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-4 px-3 sm:px-5 py-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
                       >
-                        {/* Date */}
-                        <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0 w-16 pt-0.5 font-mono">
-                          {new Date(entry.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                        </span>
-
-                        {/* Badges */}
-                        <div className="flex gap-1.5 shrink-0 pt-0.5">
-                          <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded uppercase tracking-wide ${cat.color}`}>
-                            {cat.label}
+                        {/* Top meta row: date + badges (stacked on mobile, sidebar on sm+) */}
+                        <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+                          <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0 w-12 sm:w-16 font-mono">
+                            {new Date(entry.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                           </span>
-                          <span className={`text-[10px] font-semibold pt-0.5 ${action.color}`}>
-                            {action.label}
-                          </span>
+                          <div className="flex gap-1.5 shrink-0">
+                            <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded uppercase tracking-wide ${cat.color}`}>
+                              {cat.label}
+                            </span>
+                            <span className={`text-[10px] font-semibold pt-0.5 ${action.color}`}>
+                              {action.label}
+                            </span>
+                          </div>
                         </div>
 
-                        {/* Content */}
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-primary dark:group-hover:text-primary-light transition-colors mb-0.5">
-                            {entry.name}
-                          </p>
-                          <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-                            {entry.note}
-                          </p>
-                        </div>
+                        {/* Content + arrow row */}
+                        <div className="flex items-start gap-2 flex-1 min-w-0">
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm font-medium text-gray-900 dark:text-gray-100 group-hover:text-primary dark:group-hover:text-primary-light transition-colors mb-0.5">
+                              {entry.name}
+                            </p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+                              {entry.note}
+                            </p>
+                          </div>
 
-                        {/* Arrow */}
-                        <div className="shrink-0 text-gray-300 dark:text-gray-600 group-hover:text-primary dark:group-hover:text-primary-light transition-colors pt-0.5">
-                          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
+                          {/* Arrow */}
+                          <div className="shrink-0 text-gray-300 dark:text-gray-600 group-hover:text-primary dark:group-hover:text-primary-light transition-colors pt-0.5">
+                            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
                         </div>
                       </Link>
                     );
