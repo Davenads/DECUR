@@ -1426,6 +1426,11 @@
     "source": "gerb"
   },
   {
+    "term": "Technology of Unknown Origins",
+    "definition": "A term increasingly used in institutional and Congressional contexts to describe recovered or observed technology whose origin cannot be attributed to any known human program, nation, or natural phenomenon. Distinct from UAP in that TUO specifically refers to physical material or hardware rather than aerial phenomena - it implies something has been recovered or is in custody rather than merely observed. The term appears in classified and semi-classified DoD contexts and has been referenced in Congressional hearings, particularly in relation to David Grusch's 2023 testimony alleging the existence of a legacy U.S. crash retrieval program. TUO framing is preferred in some institutional settings over language like \"extraterrestrial\" or \"non-human\" because it describes the object's epistemic status (origin unknown) rather than asserting a specific origin hypothesis. Also abbreviated TUO.",
+    "source": "curated"
+  },
+  {
     "term": "TNO",
     "definition": "Temporary Non-attributed Objects - A class of objects that temporarily resist prosaic attribution by the initial observer due to environmental or system limitations but nevertheless have a known accepted human origin",
     "source": "gerb"
@@ -1478,8 +1483,8 @@
   },
   {
     "term": "TUO",
-    "definition": "Technology of Unknown Origin - Term for recovered non-human technologies",
-    "source": "gerb"
+    "definition": "Technology of Unknown Origin - See: Technology of Unknown Origins.",
+    "source": "curated"
   },
   {
     "term": "UA",

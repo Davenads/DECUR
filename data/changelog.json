@@ -2,6 +2,14 @@
   {
     "date": "2026-04-16",
     "category": "quote",
+    "id": "technology-of-unknown-origins",
+    "name": "Technology of Unknown Origins",
+    "action": "added",
+    "note": "New glossary entry for TUO - the institutional term for recovered hardware of unattributable origin, used in Congressional hearings and DoD contexts as an epistemically neutral alternative to extraterrestrial or non-human framing."
+  },
+  {
+    "date": "2026-04-16",
+    "category": "quote",
     "id": "die-glocke",
     "name": "Die Glocke",
     "action": "added",
