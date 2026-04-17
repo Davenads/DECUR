@@ -1340,5 +1340,11 @@ export const graphData: GraphData = {
     { source: 'ben-rich', target: 'john-alexander',    label: 'Rich reportedly corresponded with Alexander\'s UAP research network in the years before his death; Alexander\'s informal group included multiple Skunk Works-adjacent figures' },
     { source: 'ben-rich', target: 'nick-cook',         label: 'Cook\'s investigation into classified antigravity research examined the same Skunk Works-era black programs Rich directed; Cook interviewed multiple former Skunk Works personnel' },
     { source: 'ben-rich', target: 'bob-lazar',         label: 'Lazar claimed his S-4 assignment operated under Lockheed-adjacent contractor oversight; Rich\'s stewardship of Skunk Works places him at the apex of the classified infrastructure Lazar claimed exposure to' },
+
+    // Robert Sarbacher connections
+    { source: 'robert-sarbacher', target: 'wilbert-smith',      label: 'Smith\'s classified November 1950 memo documenting their Washington D.C. meeting is the primary documentary record of Sarbacher\'s alleged UAP confirmation; Sarbacher confirmed its substance 33 years later' },
+    { source: 'robert-sarbacher', target: 'stanton-friedman',   label: 'Friedman corresponded with Sarbacher independently and used the Sarbacher-Smith documentation as a cornerstone of his crash retrieval and MJ-12 research' },
+    { source: 'robert-sarbacher', target: 'philip-corso',       label: 'Corso\'s claims about recovered material dissemination through Army R&D channels in the early 1950s operate within the same classified scientific apparatus Sarbacher described to Smith' },
+    { source: 'robert-sarbacher', target: 'roscoe-hillenkoetter', label: 'Both figures appear in the landscape of alleged early-1950s U.S. government crash recovery knowledge - Hillenkoetter as CIA director and alleged MJ-12 member, Sarbacher as R&D Board consultant who claimed awareness of the same programs' },
   ],
 };

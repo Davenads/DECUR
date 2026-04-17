@@ -1,0 +1,177 @@
+{
+  "profile": {
+    "id": "robert-sarbacher",
+    "name": "Dr. Robert Sarbacher",
+    "aliases": ["Robert Irving Sarbacher", "R.I. Sarbacher"],
+    "born": "1907 - Chicago, Illinois",
+    "died": "July 28, 1986",
+    "roles": [
+      "President and Chairman, Washington Institute of Technology",
+      "Research Consultant, U.S. Research and Development Board (1950s)",
+      "Dean of Graduate Studies, Georgia Institute of Technology"
+    ],
+    "service_period": "1950-1986 (research and industry)",
+    "organizations": [
+      "U.S. Research and Development Board",
+      "Washington Institute of Technology",
+      "Georgia Institute of Technology"
+    ],
+    "clearance": "TS (former, Research and Development Board consultant)",
+    "summary": "Dr. Robert Sarbacher was a physicist and Research and Development Board consultant who, in a September 1950 meeting with Canadian scientist Wilbert Smith, allegedly confirmed that recovered flying saucers were real and classified above the hydrogen bomb. His claims went largely unnoticed for over 30 years until a 1983 letter to researcher William Steinman re-confirmed the substance of Smith's original meeting memo, making Sarbacher one of the few credentialed U.S. scientists to provide written corroboration of government crash recovery knowledge.",
+    "education": [
+      "Ph.D. Physics, Massachusetts Institute of Technology",
+      "Author of 'Encyclopaedic Dictionary of Electronics and Nuclear Engineering' (1959)"
+    ],
+    "early_career": [
+      "Conducted research in physics and electronics in the post-WWII era",
+      "Appointed as a research consultant to the U.S. Research and Development Board, a senior scientific advisory body to the Secretary of Defense",
+      "Served as Dean of Graduate Studies at Georgia Institute of Technology",
+      "Founded and led the Washington Institute of Technology"
+    ],
+    "key_events": [
+      {
+        "year": "Sep 1950",
+        "event": "Met with Canadian Department of Transport scientist Wilbert Smith in Washington, D.C. Smith's subsequent classified memo recorded Sarbacher as confirming: flying saucers exist, the subject is classified higher than the H-bomb, the U.S. government is working on it with a small group, and the materials involved are extremely light and hard."
+      },
+      {
+        "year": "Nov 1950",
+        "event": "Wilbert Smith filed a classified memo dated November 21, 1950 to the Canadian government documenting his September meeting with Sarbacher. Classified Top Secret, the Smith memo became the primary documentary record of the conversation. It was declassified in Canada in 1969."
+      },
+      {
+        "year": "1959",
+        "event": "Published 'Encyclopaedic Dictionary of Electronics and Nuclear Engineering,' establishing his credentials as a mainstream scientific authority in the post-war technical community."
+      },
+      {
+        "year": "Nov 1983",
+        "event": "Responded to a letter from researcher William Steinman, confirming the substance of the 1950 Smith meeting. Sarbacher stated: 'I can now confirm in writing what I said previously.' He named senior government scientists including Vannevar Bush as having been involved in classified crash recovery efforts and described the recovered materials as being of very high strength-to-weight ratio."
+      },
+      {
+        "year": "Jul 1986",
+        "event": "Died at age 78. His 1983 letter to Steinman was published in the UAP research community and became a foundational document in crash retrieval literature."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Confirmed to Canadian scientist Wilbert Smith in September 1950 that recovered flying saucers were real, classified higher than the hydrogen bomb, and being studied by a small group of U.S. scientists.",
+      "status": "unverified",
+      "notes": "The claim rests entirely on Smith's November 1950 memo, which was classified and is now declassified. Sarbacher did not publicly confirm these statements at the time. The memo is an authentic Canadian government document but represents Smith's characterization of the conversation, not a direct transcript."
+    },
+    {
+      "claim": "In a 1983 letter to researcher William Steinman, Sarbacher wrote that senior U.S. scientists including Vannevar Bush were involved in the study of recovered materials from non-human craft, and that the recovered materials were of extremely high strength-to-weight ratio - 'not metal as we know it.'",
+      "status": "unverified",
+      "notes": "The 1983 Steinman letter is a documented primary source. Sarbacher was then 75-76 years old and claimed memory limitations on specific names and dates. He stated clearly he was not in the 'inner circle' but had colleagues who were. The letter has been authenticated by researchers and appears genuine but cannot be verified against classified records."
+    },
+    {
+      "claim": "Stated that the bodies recovered from crash sites were 'like insects' in their construction - implying a biological structure fundamentally different from human anatomy.",
+      "status": "unverified",
+      "notes": "This claim appears in some researcher accounts of Sarbacher's statements but is not definitively present in the authenticated 1983 Steinman letter text. Its sourcing is less certain than the materials-related claims."
+    }
+  ],
+  "credibility": {
+    "score": 62,
+    "assessment": "Sarbacher occupies a unique position in UAP research: he is one of the very few credentialed establishment scientists who left a written record semi-confirming crash recovery programs. His Research and Development Board role gave him legitimate access to classified scientific programs in the early 1950s. The significant caveats are that his primary statements were made three decades after the fact, he acknowledged memory limitations, and he explicitly stated he was not in the inner circle of whatever program existed. The Smith memo remains secondhand at one remove, and the materials-related claims are extraordinary without physical corroboration.",
+    "supporting": [
+      "Held a genuine senior consulting position with the U.S. Research and Development Board - a body with access to the highest classified scientific programs of the era",
+      "Ph.D. in physics from MIT and mainstream scientific career give his statements more weight than non-credentialed witnesses",
+      "The 1983 Steinman letter is a documented written primary source in which he explicitly confirms the substance of Smith's 1950 memo",
+      "The Wilbert Smith memo is an authenticated Canadian government document, not a researcher claim - it is the contemporaneous record of a named conversation",
+      "Sarbacher had no apparent motive to fabricate in 1983 - he was an elderly scientist near the end of his career with no book, film, or financial project to promote"
+    ],
+    "contradicting": [
+      "His 1983 letter was written 33 years after the alleged 1950 conversation - Sarbacher himself acknowledged he could not recall specific names and details with certainty",
+      "He explicitly stated he was not part of the 'inner circle' working on recovered materials - making his claims secondhand within the alleged program itself",
+      "The Smith memo is Smith's characterization of a conversation, not a transcript - nuances, qualifications, or context may have been lost",
+      "No corroborating documentation from the U.S. side of the alleged 1950 meeting has been located in declassified records",
+      "Some names Sarbacher mentioned (including the alleged involvement of John von Neumann) are disputed by other researchers and unconfirmed"
+    ]
+  },
+  "associated_people": [
+    {
+      "id": "wilbert-smith",
+      "name": "Wilbert Smith",
+      "role": "Canadian Department of Transport scientist; Project Magnet director",
+      "relationship": "Smith met with Sarbacher in September 1950 and filed the classified memo that is the primary documentary record of Sarbacher's UAP-related statements. Smith went on to direct Canada's Project Magnet UAP investigation program."
+    },
+    {
+      "id": "stanton-friedman",
+      "name": "Stanton Friedman",
+      "role": "Nuclear physicist; UAP researcher",
+      "relationship": "Friedman conducted his own correspondence with Sarbacher and used the Sarbacher-Smith documentation as a cornerstone of his crash retrieval research, including his investigation of the Roswell incident and MJ-12 documents."
+    },
+    {
+      "id": "philip-corso",
+      "name": "Col. Philip Corso",
+      "role": "Army intelligence officer; author - The Day After Roswell",
+      "relationship": "Corso's claims about the dissemination of recovered craft materials through Army R&D channels operate in the same institutional space that Sarbacher described - the classified scientific apparatus surrounding recovery programs in the early 1950s."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Sep 1950",
+      "type": "interview",
+      "title": "Meeting with Wilbert Smith (September 1950)",
+      "outlet": "U.S. Research and Development Board offices, Washington, D.C.",
+      "notes": "Private meeting with Canadian scientist Wilbert Smith. Smith's classified memo dated November 21, 1950 documented Sarbacher's alleged confirmations about the UAP recovery program. The memo was classified Top Secret and declassified in Canada in 1969."
+    },
+    {
+      "date": "Nov 1983",
+      "type": "written",
+      "title": "Letter to William Steinman (November 1983)",
+      "outlet": "Private correspondence",
+      "notes": "Written response to researcher William Steinman re-confirming the substance of the 1950 Smith meeting, naming senior scientists allegedly involved, and describing the recovered materials as being of extremely high strength-to-weight ratio. Published in UAP research literature following Sarbacher's death in 1986."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wilbert Smith Memo - November 21, 1950 (declassified, Canadian National Archives)",
+      "url": "https://www.theblackvault.com/documentarchive/wilbert-smith-top-secret-memo/",
+      "type": "Declassified Government Document",
+      "notes": "The primary documentary record of the Sarbacher-Smith 1950 meeting. Canadian government document, declassified 1969."
+    },
+    {
+      "title": "Sarbacher Letter to William Steinman - November 29, 1983",
+      "url": "https://www.ufoevidence.org/documents/doc822.htm",
+      "type": "Primary Document",
+      "notes": "Sarbacher's written confirmation of the 1950 Smith conversation; primary source for the 1983 claims"
+    },
+    {
+      "title": "William Steinman and Wendelle Stevens - UFO Crash at Aztec (1986)",
+      "url": "https://www.amazon.com/UFO-Crash-Aztec-William-Steinman/dp/0962129518",
+      "type": "Published Book",
+      "notes": "Published the Sarbacher correspondence in full; primary context source"
+    },
+    {
+      "title": "Stanton Friedman - 'Robert Sarbacher and the Crashed Saucer Cover-Up' (MUFON Symposium Proceedings)",
+      "url": "https://www.stantonfriedman.com",
+      "type": "Academic Paper",
+      "notes": "Friedman's independent analysis of the Sarbacher documentation and its implications for crash retrieval research"
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "person",
+      "node_id": "wilbert-smith",
+      "node_label": "Wilbert Smith",
+      "relationship": "Smith's classified memo recording their September 1950 meeting became the primary documentary evidence for Sarbacher's UAP-related statements.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 3,
+      "node_type": "person",
+      "node_id": "stanton-friedman",
+      "node_label": "Stanton Friedman",
+      "relationship": "Friedman corresponded with Sarbacher and used the Sarbacher-Smith documentation as a cornerstone of his crash retrieval research.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "philip-corso",
+      "node_label": "Col. Philip Corso",
+      "relationship": "Corso's claims about recovered material dissemination operate in the same classified scientific apparatus Sarbacher described.",
+      "connection_type": "professional"
+    }
+  ]
+}

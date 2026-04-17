@@ -2,6 +2,14 @@
   {
     "date": "2026-04-16",
     "category": "figure",
+    "id": "robert-sarbacher",
+    "name": "Dr. Robert Sarbacher",
+    "action": "added",
+    "note": "MIT-trained physicist and R&D Board consultant whose 1950 meeting with Wilbert Smith and 1983 written letter to researcher William Steinman make him one of the few credentialed U.S. scientists to leave a documented record corroborating crash recovery program knowledge."
+  },
+  {
+    "date": "2026-04-16",
+    "category": "figure",
     "id": "ben-rich",
     "name": "Ben Rich",
     "action": "added",

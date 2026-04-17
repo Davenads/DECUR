@@ -2728,7 +2728,10 @@
   {
     "id": "ben-rich",
     "name": "Ben Rich",
-    "aliases": ["Benjamin Robert Rich", "Father of Stealth"],
+    "aliases": [
+      "Benjamin Robert Rich",
+      "Father of Stealth"
+    ],
     "role": "Director, Lockheed Skunk Works (1975-1991)",
     "period": "1950-1995",
     "affiliation": "Lockheed Skunk Works",
@@ -2746,6 +2749,31 @@
     ],
     "data_file": "ben-rich.json",
     "type": "executive",
+    "includeInExplore": true
+  },
+  {
+    "id": "robert-sarbacher",
+    "name": "Dr. Robert Sarbacher",
+    "aliases": [
+      "Robert Irving Sarbacher",
+      "R.I. Sarbacher"
+    ],
+    "role": "Research Consultant, U.S. Research and Development Board; President, Washington Institute of Technology",
+    "period": "1950-1986",
+    "affiliation": "U.S. Research and Development Board",
+    "summary": "Physicist and R&D Board consultant who allegedly confirmed to Canadian scientist Wilbert Smith in 1950 that recovered flying saucers were real and classified above the hydrogen bomb. His 1983 letter to researcher William Steinman re-confirmed Smith account, making Sarbacher one of the few credentialed U.S. scientists to leave a written record corroborating crash recovery program knowledge.",
+    "status": "detailed",
+    "tags": [
+      "crash-retrieval",
+      "mj-12",
+      "scientist",
+      "rdb",
+      "wilbert-smith",
+      "1950s",
+      "whistleblower"
+    ],
+    "data_file": "robert-sarbacher.json",
+    "type": "scientist",
     "includeInExplore": true
   }
 ]

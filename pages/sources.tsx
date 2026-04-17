@@ -935,6 +935,24 @@ const Sources: NextPage = () => {
             notes="Used for: Ben Rich."
           />
 
+          {/* Robert Sarbacher */}
+          <SourceCard
+            name="Wilbert Smith Memo - November 21, 1950 (Declassified, Canadian National Archives)"
+            url="https://www.theblackvault.com/documentarchive/wilbert-smith-top-secret-memo/"
+            type="Declassified Government Document"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Primary documentary record of Sarbacher's alleged September 1950 confirmation that recovered flying saucers were real and classified above the H-bomb. Canadian government document; classified Top Secret, declassified 1969."
+            notes="Used for: Dr. Robert Sarbacher."
+          />
+          <SourceCard
+            name="Sarbacher Letter to William Steinman - November 29, 1983"
+            url="https://www.ufoevidence.org/documents/doc822.htm"
+            type="Primary Document"
+            typeColor="bg-green-100 text-green-700"
+            description="Sarbacher's written 1983 re-confirmation of the 1950 Smith conversation, naming senior scientists allegedly involved in crash recovery knowledge and describing recovered materials as being of extremely high strength-to-weight ratio."
+            notes="Used for: Dr. Robert Sarbacher."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"
