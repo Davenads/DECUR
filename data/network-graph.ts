@@ -1334,5 +1334,11 @@ export const graphData: GraphData = {
     { source: 'nick-cook', target: 'hal-puthoff',       label: 'Puthoff served as Cook\'s primary physics expert for The Hunt for Zero Point, providing the zero-point energy theoretical framework for Cook\'s antigravity research thesis' },
     { source: 'nick-cook', target: 'robert-bigelow',    label: 'Bigelow invited Cook to join the BICS board of directors after Cook won a $20,000 prize in the 2020-2021 BICS consciousness essay competition' },
     { source: 'nick-cook', target: 'bob-lazar',         label: 'both represent the intersection of classified Nevada propulsion research claims - Cook through journalistic investigation of 1950s electrogravitics programs, Lazar through direct whistleblower testimony about S-4 gravity-wave propulsion' },
+
+    // Ben Rich connections
+    { source: 'ben-rich', target: 'mark-mccandlish',   label: 'McCandlish\'s 1988 Norton AFB testimony about three displayed craft directly implicates the Skunk Works black programs Rich directed for 16 years' },
+    { source: 'ben-rich', target: 'john-alexander',    label: 'Rich reportedly corresponded with Alexander\'s UAP research network in the years before his death; Alexander\'s informal group included multiple Skunk Works-adjacent figures' },
+    { source: 'ben-rich', target: 'nick-cook',         label: 'Cook\'s investigation into classified antigravity research examined the same Skunk Works-era black programs Rich directed; Cook interviewed multiple former Skunk Works personnel' },
+    { source: 'ben-rich', target: 'bob-lazar',         label: 'Lazar claimed his S-4 assignment operated under Lockheed-adjacent contractor oversight; Rich\'s stewardship of Skunk Works places him at the apex of the classified infrastructure Lazar claimed exposure to' },
   ],
 };

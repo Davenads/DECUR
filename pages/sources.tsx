@@ -909,6 +909,32 @@ const Sources: NextPage = () => {
             notes="Used for: Nick Cook."
           />
 
+          {/* Ben Rich */}
+          <SourceCard
+            name="Skunk Works: A Personal Memoir of My Years at Lockheed - Ben Rich and Leo Janos (1994)"
+            url="https://www.amazon.com/Skunk-Works-Personal-Memoir-Lockheed/dp/0316743003"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Rich's memoir co-authored with Leo Janos. Covers the full history of Lockheed Skunk Works from Kelly Johnson through the F-117 Nighthawk. Primary biographical and career source."
+            notes="Used for: Ben Rich."
+          />
+          <SourceCard
+            name="Ben Rich Letters - UFO Evidence Compilation"
+            url="http://www.ufoevidence.org/documents/doc1091.htm"
+            type="Document Compilation"
+            typeColor="bg-green-100 text-green-700"
+            description="Compilation of the known Ben Rich correspondence, including the 1986 letter to Jan Harzan referencing manmade and extraterrestrial UAP, and the John Andrews letters. Primary source for Rich's written UAP-related statements."
+            notes="Used for: Ben Rich."
+          />
+          <SourceCard
+            name="Jan Harzan Interview - MUFON (2014)"
+            url="https://www.youtube.com/watch?v=0cMweTlnlXY"
+            type="Video Interview"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Harzan's detailed firsthand account of the 1993 UCLA alumni dinner at which Rich allegedly stated classified technology existed for interstellar travel. Key primary source for the UCLA speech claims."
+            notes="Used for: Ben Rich."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

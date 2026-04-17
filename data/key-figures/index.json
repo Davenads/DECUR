@@ -2724,5 +2724,28 @@
     "data_file": "nick-cook.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "ben-rich",
+    "name": "Ben Rich",
+    "aliases": ["Benjamin Robert Rich", "Father of Stealth"],
+    "role": "Director, Lockheed Skunk Works (1975-1991)",
+    "period": "1950-1995",
+    "affiliation": "Lockheed Skunk Works",
+    "summary": "Second director of Lockheed's Skunk Works and principal engineer behind the F-117 Nighthawk stealth fighter. Near the end of his life Rich made a series of statements - including in a documented 1986 letter and at a 1993 UCLA alumni event - suggesting classified U.S. programs possessed propulsion technology capable of interstellar travel, making him one of the most credentialed figures ever associated with UAP-adjacent claims.",
+    "status": "detailed",
+    "tags": [
+      "skunk-works",
+      "lockheed",
+      "stealth",
+      "black-programs",
+      "aerospace",
+      "executive",
+      "f-117",
+      "sr-71"
+    ],
+    "data_file": "ben-rich.json",
+    "type": "executive",
+    "includeInExplore": true
   }
 ]
