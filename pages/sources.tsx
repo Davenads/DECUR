@@ -971,6 +971,24 @@ const Sources: NextPage = () => {
             notes="Used for: Ralph Blumenthal."
           />
 
+          {/* Leonard Stringfield */}
+          <SourceCard
+            name="UFO Crash/Retrievals Status Reports I-VII - Leonard Stringfield (1978-1994)"
+            url="https://www.amazon.com/s?k=leonard+stringfield+UFO+crash"
+            type="Research Series"
+            typeColor="bg-green-100 text-green-700"
+            description="Seven self-published Status Reports compiling testimony from over 100 anonymous military and medical sources claiming firsthand knowledge of recovered craft and biological entities. The foundational archive of crash retrieval research."
+            notes="Used for: Leonard Stringfield."
+          />
+          <SourceCard
+            name="Situation Red: The UFO Siege - Leonard Stringfield (Doubleday, 1977)"
+            url="https://www.amazon.com/Situation-Red-Ufo-Siege-Stringfield/dp/0385120095"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Stringfield's mainstream-published overview of UAP evidence; the book that preceded and set the stage for his crash retrieval Status Report series."
+            notes="Used for: Leonard Stringfield."
+          />
+
           {/* Burisch */}
           <SourceCard
             name="Burisch Archive"

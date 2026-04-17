@@ -2796,5 +2796,30 @@
     "data_file": "ralph-blumenthal.json",
     "type": "journalist",
     "includeInExplore": true
+  },
+  {
+    "id": "leonard-stringfield",
+    "name": "Leonard Stringfield",
+    "aliases": [
+      "Len Stringfield",
+      "Leonard H. Stringfield"
+    ],
+    "role": "Director, CRIFO; Author - UFO Crash/Retrievals Status Reports I-VII (1978-1994)",
+    "period": "1954-1994",
+    "affiliation": "Civilian Research, Interplanetary Flying Objects (CRIFO); NICAP",
+    "summary": "Pioneering UAP researcher who spent 16 years documenting alleged crash retrieval cases through seven self-published Status Reports (1978-1994), compiling testimony from over 100 anonymous sources including military and medical personnel claiming firsthand knowledge of recovered craft and bodies. Stanton Friedman called him the godfather of crash retrieval research.",
+    "status": "detailed",
+    "tags": [
+      "crash-retrieval",
+      "researcher",
+      "nicap",
+      "crifo",
+      "historical",
+      "author",
+      "cincinnati"
+    ],
+    "data_file": "leonard-stringfield.json",
+    "type": "researcher",
+    "includeInExplore": true
   }
 ]

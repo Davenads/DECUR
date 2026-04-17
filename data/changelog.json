@@ -2,6 +2,14 @@
   {
     "date": "2026-04-16",
     "category": "figure",
+    "id": "leonard-stringfield",
+    "name": "Leonard Stringfield",
+    "action": "added",
+    "note": "Pioneering crash retrieval researcher who compiled testimony from over 100 anonymous military and medical sources across seven Status Reports (1978-1994), establishing the foundational archive for all subsequent crash retrieval investigation."
+  },
+  {
+    "date": "2026-04-16",
+    "category": "figure",
     "id": "ralph-blumenthal",
     "name": "Ralph Blumenthal",
     "action": "added",

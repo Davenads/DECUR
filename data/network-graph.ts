@@ -1352,5 +1352,11 @@ export const graphData: GraphData = {
     { source: 'ralph-blumenthal', target: 'luis-elizondo',    label: 'Elizondo was a central source for the 2017 article and provided the insider access that gave the story its institutional credibility; his resignation timing enabled the article\'s publication' },
     { source: 'ralph-blumenthal', target: 'david-grusch',     label: 'Blumenthal appeared alongside Grusch at the June 2023 National Press Club event at which Grusch made his public allegations about illegal crash retrieval programs' },
     { source: 'ralph-blumenthal', target: 'john-mack',        label: 'Blumenthal authored the 2021 biography of John Mack - The Believer - covering Mack\'s alien abduction research and the Harvard investigation into his work' },
+
+    // Leonard Stringfield connections
+    { source: 'leonard-stringfield', target: 'stanton-friedman',  label: 'Friedman and Stringfield were the two central crash retrieval researchers of the 1978-1994 era, exchanging sources and corroborating findings; Friedman called him the godfather of crash retrieval research' },
+    { source: 'leonard-stringfield', target: 'donald-keyhoe',     label: 'Stringfield served on NICAP\'s board under Keyhoe\'s directorship, embedding his crash retrieval research within the most significant civilian UAP organization of the 1950s-60s' },
+    { source: 'leonard-stringfield', target: 'richard-dolan',     label: 'Dolan\'s historical research on UAP secrecy drew extensively on Stringfield\'s Status Reports as foundational primary source material; Dolan has consistently cited Stringfield as the field\'s founding archivist' },
+    { source: 'leonard-stringfield', target: 'philip-corso',      label: 'Corso\'s 1997 crash retrieval claims and Stringfield\'s 1978-1994 anonymous source testimony represent the two major lineages of alleged U.S. military recovery program documentation' },
   ],
 };
