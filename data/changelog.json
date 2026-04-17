@@ -2,6 +2,14 @@
   {
     "date": "2026-04-16",
     "category": "quote",
+    "id": "slowwalker",
+    "name": "Slowwalker",
+    "action": "added",
+    "note": "New glossary entry for Slowwalker - the NORAD counterpart to Fastwalker, designating anomalous objects moving too slowly at altitude to be explained by conventional orbital mechanics."
+  },
+  {
+    "date": "2026-04-16",
+    "category": "quote",
     "id": "alien-reproduction-vehicle",
     "name": "Alien Reproduction Vehicle",
     "action": "added",

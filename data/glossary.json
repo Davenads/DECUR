@@ -1371,6 +1371,11 @@
     "source": "gerb"
   },
   {
+    "term": "Slowwalker",
+    "definition": "NORAD and Space Command operational designation for anomalous objects that move through or near Earth's atmosphere or orbital environment at velocities significantly slower than expected given their altitude - i.e., too slow to maintain orbit through conventional aerodynamic or gravitational physics. Contrasted with Fastwalkers, which move unusually fast. A Slowwalker operating at orbital altitudes without propulsion would normally decay and re-enter; the anomalous designation implies the object is sustaining its position or trajectory through unknown means. The term appears in declassified NORAD-adjacent documentation and has been referenced by researchers examining the full spectrum of NORAD tracking anomalies. Less widely discussed than Fastwalkers but represents the same class of institutionally-tracked aerial anomaly from the opposite velocity extreme.",
+    "source": "curated"
+  },
+  {
     "term": "SOCOM",
     "definition": "Special Operations Command - Unified combatant command overseeing special operations forces",
     "source": "gerb"
