@@ -2,6 +2,14 @@
   {
     "date": "2026-04-16",
     "category": "quote",
+    "id": "die-glocke",
+    "name": "Die Glocke",
+    "action": "added",
+    "note": "New glossary entry for Die Glocke - the alleged Nazi Bell device described by Igor Witkowski and popularized by Nick Cook, frequently cited in UAP reverse-engineering literature as a potential precursor to post-war anti-gravity programs."
+  },
+  {
+    "date": "2026-04-16",
+    "category": "quote",
     "id": "slowwalker",
     "name": "Slowwalker",
     "action": "added",
