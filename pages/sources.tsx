@@ -2377,6 +2377,24 @@ const Sources: NextPage = () => {
             notes="Used for: Foo Fighters WWII."
           />
 
+          {/* Voronezh UFO Incident */}
+          <SourceCard
+            name="New York Times - 'U.F.O. Landing Is Fact, Not Fantasy, the Soviets Insist' (October 11, 1989)"
+            url="https://www.nytimes.com/1989/10/11/world/ufo-landing-is-fact-not-fantasy-the-soviets-insist.html"
+            type="News Article"
+            typeColor="bg-blue-100 text-blue-700"
+            description="Western coverage of the TASS state media report confirming Soviet scientific investigation of a UAP landing in Voronezh; includes key TASS translated statements. Primary accessible source for the official Soviet acknowledgment."
+            notes="Used for: Voronezh UFO Incident."
+          />
+          <SourceCard
+            name="NICAP Case File - Voronezh UFO Landing (September 27, 1989)"
+            url="http://www.nicap.org/reports/890927voronezh_dir.htm"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="NICAP case documentation compiling witness accounts, physical evidence summaries, and the Soviet militia investigation report for the Voronezh landing incident."
+            notes="Used for: Voronezh UFO Incident."
+          />
+
           <SourceCard
             name="National Archives - Project Blue Book Records"
             url="https://www.archives.gov/research/military/air-force/ufos"

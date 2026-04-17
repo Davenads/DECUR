@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-04-16",
+    "category": "case",
+    "id": "voronezh-ufo-incident",
+    "name": "Voronezh UFO Incident",
+    "action": "added",
+    "note": "September 1989 Soviet mass-witness landing case notable for being officially reported by TASS state news agency, with physical trace evidence documented by militia and scientists at Comintern Park in Voronezh."
+  },
+  {
+    "date": "2026-04-16",
     "category": "figure",
     "id": "john-podesta",
     "name": "John Podesta",
