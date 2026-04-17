@@ -2395,6 +2395,32 @@ const Sources: NextPage = () => {
             notes="Used for: Voronezh UFO Incident."
           />
 
+          {/* Lubbock Lights */}
+          <SourceCard
+            name="NICAP Case File - Lubbock Lights (August-September 1951)"
+            url="http://www.nicap.org/lubbock.htm"
+            type="Research Archive"
+            typeColor="bg-green-100 text-green-700"
+            description="NICAP's comprehensive documentation including Texas Tech professor testimony, Carl Hart Jr. photograph analysis, and Reese AFB radar corroboration. Primary case research source."
+            notes="Used for: Lubbock Lights."
+          />
+          <SourceCard
+            name="Edward Ruppelt - The Report on Unidentified Flying Objects (1956)"
+            url="https://www.amazon.com/Report-Unidentified-Flying-Objects/dp/1614271550"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Ruppelt was Blue Book's commander during the Lubbock investigation. His book provides a firsthand account of the investigative process and his own uncertainty about the plover explanation."
+            notes="Used for: Lubbock Lights."
+          />
+          <SourceCard
+            name="J. Allen Hynek - The UFO Experience: A Scientific Inquiry (1972)"
+            url="https://www.amazon.com/UFO-Experience-Scientific-Inquiry/dp/0345235967"
+            type="Published Book"
+            typeColor="bg-purple-100 text-purple-700"
+            description="Hynek discusses the Lubbock case and his dissatisfaction with the plover explanation; primary source for his on-record assessment of Blue Book's weakest official conclusions."
+            notes="Used for: Lubbock Lights."
+          />
+
           <SourceCard
             name="National Archives - Project Blue Book Records"
             url="https://www.archives.gov/research/military/air-force/ufos"

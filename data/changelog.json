@@ -2,6 +2,14 @@
   {
     "date": "2026-04-16",
     "category": "case",
+    "id": "lubbock-lights",
+    "name": "Lubbock Lights",
+    "action": "added",
+    "note": "August-September 1951 multi-witness case featuring authenticated photographs by Carl Hart Jr., corroborating radar evidence from Reese AFB, testimony from four Texas Tech professors, and an official Project Blue Book Unknown classification."
+  },
+  {
+    "date": "2026-04-16",
+    "category": "case",
     "id": "voronezh-ufo-incident",
     "name": "Voronezh UFO Incident",
     "action": "added",
