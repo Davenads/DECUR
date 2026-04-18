@@ -1365,6 +1365,12 @@ export const graphData: GraphData = {
     { source: 'john-podesta', target: 'tom-delonge',      label: 'DeLonge corresponded with Podesta in 2015-2016 and arranged meetings between Podesta and former senior defense officials about UAP programs; documented in the WikiLeaks email release' },
     { source: 'john-podesta', target: 'luis-elizondo',    label: 'Both operated in adjacent disclosure networks in 2017-2018; Elizondo\'s TTSA affiliation connected him to the same government-insider advocacy network Podesta was embedded in through the DeLonge correspondence' },
 
+    // Amy Eskridge connections
+    { source: 'amy-eskridge', target: 'neil-mccasland',  label: 'both named in congressional UAP context; both connected to advanced aerospace/propulsion research in the 2022-2026 missing scientists cluster' },
+    { source: 'amy-eskridge', target: 'townsend-brown',  label: 'Eskridge\'s anti-gravity research at Institute for Exotic Science follows in the lineage of Brown\'s foundational Biefeld-Brown electrogravitics work' },
+    { source: 'amy-eskridge', target: 'hal-puthoff',     label: 'both pursued gravity modification and metric engineering research; Puthoff through EarthTech International, Eskridge through Institute for Exotic Science' },
+    { source: 'amy-eskridge', target: 'mark-mccandlish', label: 'both made claims about classified anti-gravity and exotic propulsion programs at defense aerospace contractors' },
+
     // Boyd Bushman connections
     { source: 'boyd-bushman', target: 'ben-rich',          label: 'Both were senior Lockheed figures who made UAP-adjacent statements near the end of their lives; Rich\'s claims carry more institutional weight but both implicate the same classified aerospace organizational structure' },
     { source: 'boyd-bushman', target: 'mark-mccandlish',   label: 'McCandlish\'s ARV testimony and Bushman\'s anti-gravity claims both implicate classified Lockheed-adjacent reverse-engineering programs operating in overlapping eras' },

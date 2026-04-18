@@ -131,6 +131,7 @@ import ralphBlumenthalData from './ralph-blumenthal.json';
 import leonardStringfieldData from './leonard-stringfield.json';
 import johnPodestaData from './john-podesta.json';
 import boydBushmanData from './boyd-bushman.json';
+import amyEskridgeData from './amy-eskridge.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const insiderRegistry: Record<string, any> = {
@@ -253,4 +254,5 @@ export const insiderRegistry: Record<string, any> = {
   'leonard-stringfield': leonardStringfieldData,
   'john-podesta': johnPodestaData,
   'boyd-bushman': boydBushmanData,
+  'amy-eskridge': amyEskridgeData,
 };

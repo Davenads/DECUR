@@ -2847,6 +2847,31 @@
     "includeInExplore": true
   },
   {
+    "id": "amy-eskridge",
+    "name": "Amy Eskridge",
+    "aliases": ["Amy R. Eskridge"],
+    "role": "Co-founder, Institute for Exotic Science; Anti-gravity Researcher",
+    "period": "c. 2015-2022",
+    "affiliation": "Institute for Exotic Science; HoloChron Engineering",
+    "summary": "Huntsville, Alabama-based researcher who co-founded the Institute for Exotic Science with her retired NASA engineer father to pursue anti-gravity and gravity modification research. Died June 11, 2022 from a reported self-inflicted gunshot wound - no police or medical examiner report was ever publicly released. The only figure in the 2022-2026 missing scientists cluster named directly in congressional UAP testimony: journalist Michael Shellenberger testified she was 'murdered by a private aerospace company' because of her UAP-adjacent research.",
+    "status": "detailed",
+    "tags": [
+      "anti-gravity",
+      "exotic-propulsion",
+      "nasa",
+      "huntsville",
+      "congressional-testimony",
+      "missing-scientists-cluster",
+      "2022",
+      "shellenberger",
+      "directed-energy",
+      "whistleblower"
+    ],
+    "data_file": "amy-eskridge.json",
+    "type": "scientist",
+    "includeInExplore": true
+  },
+  {
     "id": "boyd-bushman",
     "name": "Boyd Bushman",
     "aliases": [

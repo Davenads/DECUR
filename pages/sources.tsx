@@ -1896,6 +1896,40 @@ const Sources: NextPage = () => {
             notes="Used for: Maj. Gen. Neil McCasland."
           />
 
+          {/* Amy Eskridge */}
+          <SourceCard
+            name="Who is Amy Eskridge? The Scientist Whose Death Is Being Queried - Newsweek"
+            url="https://www.newsweek.com/who-is-amy-eskridge-scientist-death-queried-us-expert-mysteries-11843659"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary news source covering Eskridge's anti-gravity research background, her pre-death threat claims, and the congressional context for the investigation into her June 2022 death."
+            notes="Used for: Amy Eskridge."
+          />
+          <SourceCard
+            name="11th Scientist Death Emerges in String of Missing or Dead Officials - Fox News (2026)"
+            url="https://www.foxnews.com/politics/11th-scientist-death-emerges-string-missing-dead-officials-access-us-secrets"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Fox News reporting adding Eskridge as the 11th case in the 2022-2026 missing/deceased scientists cluster; includes coverage of Michael Shellenberger's congressional testimony asserting she was murdered by a private aerospace company due to her UAP research."
+            notes="Used for: Amy Eskridge."
+          />
+          <SourceCard
+            name="Anti-Gravity Technology - Amy Eskridge / Institute for Exotic Science (HAL5, Dec 2018)"
+            url="https://www.hal5.org/PDF/HAL5-Dec2018-Talk-AntiGravity.pdf"
+            type="Conference Presentation"
+            typeColor="bg-indigo-100 text-indigo-700"
+            description="PDF of Eskridge's December 2018 public technical presentation to the Huntsville Alabama L5 Society. Primary source for the scope and technical content of her anti-gravity and gravity modification research."
+            notes="Used for: Amy Eskridge."
+          />
+          <SourceCard
+            name="Eleventh Unexplained Case: Scientist Warned of Danger Before Death - UNXNETWORK"
+            url="https://www.unxnetwork.com/post/eleventh-unexplained-case-scientist-researching-anti-gravity-technology-warned-of-danger-before-my"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Primary coverage of the podcast in which Eskridge described the escalating threat campaign she experienced before her death, including claims of a home search, sexual threats, and directed-energy weapon burns. Source for her direct statement: 'my life is in danger.'"
+            notes="Used for: Amy Eskridge."
+          />
+
           {/* Eric Burlison */}
           <SourceCard
             name="Rep. Eric Burlison - Official Congressional Biography"

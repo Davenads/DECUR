@@ -1,0 +1,171 @@
+{
+  "profile": {
+    "id": "amy-eskridge",
+    "name": "Amy Eskridge",
+    "aliases": ["Amy R. Eskridge"],
+    "born": "c. 1988 - Huntsville, Alabama",
+    "died": "June 11, 2022 - Huntsville, Alabama",
+    "roles": [
+      "Co-founder, Institute for Exotic Science",
+      "Co-founder, HoloChron Engineering"
+    ],
+    "service_period": "c. 2015-2022",
+    "organizations": [
+      "Institute for Exotic Science",
+      "HoloChron Engineering",
+      "Huntsville Alabama L5 Society (HAL5)"
+    ],
+    "clearance": null,
+    "summary": "Huntsville, Alabama-based researcher who co-founded the Institute for Exotic Science with her father Richard Eskridge - a retired NASA engineer - to pursue foundational research into anti-gravity and gravity modification technology. She publicly presented her research at the Huntsville Alabama L5 Society in December 2018 and stated in 2020 that she had developed new anti-gravity findings requiring NASA authorization before publication. In the years before her June 2022 death, she claimed on a podcast to have experienced years of escalating threats, a home search, and alleged directed-energy weapon attacks tied to her UAP-adjacent work. Her death was attributed to a self-inflicted gunshot wound to the head, but no police or medical examiner investigation report has ever been publicly released. She is the only figure in the 2022-2026 cluster of missing or deceased advanced-physics researchers to have been named directly in congressional UAP testimony: journalist Michael Shellenberger testified that she had been 'murdered by a private aerospace company in the U.S. because she was involved in the UAP conversation.'",
+    "education": [],
+    "early_career": [
+      "Raised in Huntsville, Alabama - a city centered on NASA's Marshall Space Flight Center and the broader aerospace defense industrial base",
+      "Father Richard Eskridge spent his career as a NASA engineer; his involvement shaped her early interest in propulsion physics and advanced energy systems",
+      "Co-founded the Institute for Exotic Science with Richard Eskridge to formalize research into gravity modification outside of traditional institutional channels"
+    ],
+    "key_events": [
+      {
+        "year": "c. 2015",
+        "event": "Co-founded the Institute for Exotic Science alongside her father Richard Eskridge, a retired NASA engineer, with a stated mission of pursuing foundational research into anti-gravity technology and gravity modification outside of traditional academic or government institutional structures."
+      },
+      {
+        "year": "Dec 2018",
+        "event": "Presented her anti-gravity research publicly at the Huntsville Alabama L5 Society (HAL5), a long-running local space advocacy organization with deep ties to Marshall Space Flight Center and the Huntsville aerospace engineering community. The talk was recorded and distributed as a PDF. It is her principal public technical disclosure."
+      },
+      {
+        "year": "2020",
+        "event": "Stated publicly that she had developed new foundational anti-gravity research findings but was required to obtain NASA authorization before publishing the results - indicating her research had crossed into a domain where the agency had review authority over publication."
+      },
+      {
+        "year": "c. 2017-2022",
+        "event": "Claimed on a podcast in the period leading up to her death that she had been subjected to a sustained campaign of escalating threats over four to five years. Specific claims included a home search, sexual threats, and alleged exposure to a directed-energy weapon that left visible burns on her body. She stated directly: 'my life is in danger.'"
+      },
+      {
+        "year": "Jun 2022",
+        "event": "Died in Huntsville, Alabama on June 11, 2022 from a reported self-inflicted gunshot wound to the head. No official police investigation report or medical examiner report has been publicly released. No official statement was issued by NASA, the Institute for Exotic Science, or any government agency. Her death was reported only through a brief obituary."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "directed-energy-attacks",
+      "category": "government program",
+      "claim": "Eskridge claimed in a podcast that over a four-to-five-year period she was subjected to escalating threats, a home search, sexual threats, and exposure to a directed-energy weapon that left burns on her body - all tied to her UAP-adjacent anti-gravity research.",
+      "status": "unverified",
+      "notes": "These claims were made verbally on a podcast and have not been independently corroborated by law enforcement, medical records, or third-party witnesses. The directed-energy weapon claim in particular has no documented independent evidence. The claims are reported here because they form part of the basis for Shellenberger's subsequent congressional testimony."
+    },
+    {
+      "id": "nasa-authorization-required",
+      "category": "government program",
+      "claim": "In 2020 Eskridge stated she had developed new foundational anti-gravity research but was required to obtain NASA authorization before the results could be published.",
+      "status": "unverified",
+      "notes": "If accurate, this implies NASA had either a funding relationship with her research or a publication-review authority over it - which would be unusual for a purely independent researcher. The basis for the authorization requirement and whether it was sought or granted is not publicly documented."
+    },
+    {
+      "id": "shellenberger-congressional-claim",
+      "category": "government program",
+      "claim": "Journalist Michael Shellenberger testified before a congressional UAP hearing that Amy Eskridge was 'murdered by a private aerospace company in the U.S. because she was involved in the UAP conversation.'",
+      "status": "unverified",
+      "notes": "Shellenberger's statement is in the official congressional record. It is not corroborated by any law enforcement investigation, indictment, or named source. Her death was ruled self-inflicted and no criminal investigation conclusion has been made public. Shellenberger did not name a specific company or provide documentary evidence in his public testimony."
+    }
+  ],
+  "associated_people": [
+    {
+      "id": "neil-mccasland",
+      "name": "Maj. Gen. Neil McCasland",
+      "role": "Commander, Air Force Research Laboratory, Wright-Patterson AFB (2011-2013)",
+      "relationship": "Both are among the most UAP-adjacent figures in the 2022-2026 cluster of missing or deceased researchers connected to advanced aerospace and defense programs. McCasland commanded the Air Force Research Laboratory which funded advanced propulsion materials research; Eskridge independently pursued anti-gravity research in the same Huntsville aerospace milieu in which NASA and its contractor base operate. Neither is documented to have interacted directly, but both are named in the same congressional disclosure context."
+    },
+    {
+      "id": "townsend-brown",
+      "name": "Townsend Brown",
+      "role": "U.S. Navy Scientist; Biefeld-Brown Effect discoverer",
+      "relationship": "Townsend Brown's 1920s-1950s electrogravitics research - demonstrating a measurable coupling between high-voltage electric fields and gravitational force - is the foundational lineage for the field Eskridge pursued at the Institute for Exotic Science. Brown's work was formally studied under Project Winterhaven and subsequently classified; Eskridge's research represents a later independent attempt to re-approach the same physics from outside the classified structure."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Dec 2018",
+      "type": "conference",
+      "title": "Anti-Gravity Technology - HAL5 Presentation",
+      "outlet": "Huntsville Alabama L5 Society (HAL5)",
+      "notes": "Public technical presentation of her anti-gravity research to the Huntsville Alabama L5 Society, one of the oldest and most active space advocacy chapters in the U.S., with deep ties to the Marshall Space Flight Center engineering community. Recorded and distributed as a PDF - her principal public technical disclosure."
+    },
+    {
+      "date": "c. 2020-2022",
+      "type": "podcast",
+      "title": "Threats, Directed-Energy Attacks, and UAP Research (UNXNETWORK podcast)",
+      "outlet": "UNXNETWORK",
+      "notes": "Podcast appearance in which Eskridge described four to five years of escalating threats she attributed to her UAP-adjacent anti-gravity research. Claims included a home search, sexual threats, and alleged directed-energy weapon burns on her body. She stated explicitly that her life was in danger. This is the primary source for her personal threat accounts and the basis for subsequent congressional characterization of her death."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Who is Amy Eskridge? The Scientist Whose Death Is Being Queried - Newsweek",
+      "url": "https://www.newsweek.com/who-is-amy-eskridge-scientist-death-queried-us-expert-mysteries-11843659",
+      "type": "News",
+      "notes": "Primary news source covering her background, research, and the congressional context for the investigation of her death."
+    },
+    {
+      "title": "11th Scientist Death Emerges in String of Missing or Dead Officials with Access to U.S. Secrets - Fox News",
+      "url": "https://www.foxnews.com/politics/11th-scientist-death-emerges-string-missing-dead-officials-access-us-secrets",
+      "type": "News",
+      "notes": "Fox News reporting adding Eskridge as the 11th case in the 2022-2026 cluster; includes Shellenberger's congressional testimony characterization."
+    },
+    {
+      "title": "Eleventh Unexplained Case: Scientist Researching Anti-Gravity Technology Warned of Danger Before Death - UNXNETWORK",
+      "url": "https://www.unxnetwork.com/post/eleventh-unexplained-case-scientist-researching-anti-gravity-technology-warned-of-danger-before-my",
+      "type": "News",
+      "notes": "Primary coverage of the podcast in which Eskridge described the escalating threat campaign she experienced in the years before her death, including the directed-energy weapon claim."
+    },
+    {
+      "title": "Anti-Gravity Technology - Amy Eskridge / Institute for Exotic Science (HAL5 Presentation, Dec 2018)",
+      "url": "https://www.hal5.org/PDF/HAL5-Dec2018-Talk-AntiGravity.pdf",
+      "type": "Conference Presentation",
+      "notes": "PDF of her December 2018 technical presentation to the Huntsville Alabama L5 Society. Primary source for the technical scope and content of her anti-gravity research."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 0,
+      "node_type": "person",
+      "node_id": "townsend-brown",
+      "node_label": "Townsend Brown",
+      "relationship": "Brown's Biefeld-Brown electrogravitics research is the foundational lineage for the gravity modification field Eskridge pursued at the Institute for Exotic Science.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "hal-puthoff",
+      "node_label": "Hal Puthoff",
+      "relationship": "Puthoff's EarthTech International conducted metric engineering and electrogravitics research aligned with the gravity modification goals of Eskridge's Institute for Exotic Science; both worked in the same sub-field from within and outside government-connected institutional structures.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "neil-mccasland",
+      "node_label": "Maj. Gen. Neil McCasland",
+      "relationship": "Both are among the most UAP-adjacent figures in the 2022-2026 cluster of missing or deceased researchers connected to advanced aerospace and propulsion programs; both named in the same congressional UAP disclosure context.",
+      "connection_type": "investigative"
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Shellenberger's assertion that Eskridge was murdered by a private aerospace company due to her UAP involvement is in the official congressional record - making it the most formally documented allegation in the 2022-2026 missing scientists cluster alongside McCasland.",
+      "Her HAL5 December 2018 presentation is a documented public technical disclosure of genuine anti-gravity research with a recorded PDF, establishing her as an active researcher in a field closely related to UAP propulsion hypotheses.",
+      "Her statement in 2020 that NASA authorization was required before publication implies some form of institutional review relationship with NASA, which is unusual for a nominally independent researcher and may indicate her work crossed into territory of interest to the agency.",
+      "The absence of any publicly released police or medical examiner investigation report is unusual for a death of this type and has been cited as a procedural irregularity by researchers examining the broader cluster of cases.",
+      "Huntsville, Alabama's identity as a NASA Marshall Space Flight Center city means even independent researchers in that community operate within proximity to the classified aerospace defense industrial base - giving her research a plausible institutional context.",
+      "Her father Richard Eskridge's NASA engineering background provides a credible lineage for her technical approach to anti-gravity research."
+    ],
+    "contradicting": [
+      "Eskridge's death was officially attributed to a self-inflicted gunshot wound. No law enforcement agency has publicly stated that the death was anything other than suicide, and no criminal investigation conclusion pointing to homicide has been publicly released.",
+      "Shellenberger's congressional testimony naming a 'private aerospace company' as responsible for her death is a serious allegation but was not accompanied by documentary evidence, a named company, or corroborating testimony in the public record.",
+      "Her threat claims - including directed-energy weapon burns - were made verbally on a podcast and have not been corroborated by medical records, photographs, law enforcement reports, or named witnesses.",
+      "The Institute for Exotic Science appears to have had no formal institutional affiliations, peer-reviewed publications, or external funding documentation in the public record - which limits independent verification of the scope or findings of her research.",
+      "The NASA authorization claim in 2020 has not been confirmed by NASA and may reflect a misunderstanding of publication norms for research conducted near federally funded facilities rather than a formal publication hold."
+    ]
+  }
+}
