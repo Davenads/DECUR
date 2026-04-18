@@ -457,6 +457,17 @@ Add an entry to the **top** of `data/changelog.json`:
 
 This feeds the `/whats-new` full feed page and the "Recently Added" widget on the homepage. Skipping this step means returning users get no signal that new content exists.
 
+### 9. Sync the Supabase search index (required)
+The global search (`/search`) runs against a Supabase `search_index` table — it does **NOT** auto-populate from the JSON files. After adding any new figure, case, document, or program, you **must** re-run the sync script or the new entry will not appear in search results:
+
+```bash
+node --env-file=.env.local scripts/populate-search-index.mjs
+```
+
+This script is idempotent (safe to re-run at any time). It upserts all categories in one pass. Required env vars are `IMPORT_SUPABASE_URL` and `IMPORT_SERVICE_KEY` (or the `UFOSINT_*` equivalents) — these should already be in `.env.local`.
+
+**Symptom if skipped:** The new figure's profile page loads correctly (JSON-driven), but searching by name on `/search` returns no results.
+
 ### That's all
 No component file is needed. No `if` check in `InsidersList.tsx` is needed.
 
