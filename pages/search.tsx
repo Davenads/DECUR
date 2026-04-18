@@ -425,7 +425,7 @@ const SearchPage: FC = () => {
                   {(['insider', 'case', 'document', 'program'] as SearchItem['type'][]).map(type => (
                     <Link
                       key={type}
-                      href={type === 'insider' ? '/data?category=figures' : type === 'case' ? '/data?category=cases' : type === 'document' ? '/data?category=documents' : '/data?category=programs'}
+                      href={type === 'insider' ? '/data?category=key-figures' : type === 'case' ? '/data?category=cases' : type === 'document' ? '/data?category=documents' : '/data?category=programs'}
                       className="text-xs px-3 py-1.5 rounded-full font-medium border bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-primary hover:text-primary transition-colors"
                     >
                       {TYPE_LABELS[type]}
