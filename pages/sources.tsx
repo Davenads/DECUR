@@ -1930,6 +1930,56 @@ const Sources: NextPage = () => {
             notes="Used for: Amy Eskridge."
           />
 
+          {/* Monica Jacinto Reza */}
+          <SourceCard
+            name="Monica Jacinto - Wikipedia"
+            url="https://en.wikipedia.org/wiki/Monica_Jacinto"
+            type="Reference"
+            typeColor="bg-green-100 text-green-700"
+            description="Primary biographical reference covering Reza's 35-year career from Rocketdyne through JPL, Mondaloy's development history, and her June 2025 disappearance."
+            notes="Used for: Monica Jacinto Reza."
+          />
+          <SourceCard
+            name="The Green Burial: Investigative Report - The Sentinel"
+            url="https://thesentinel.network/p/the-green-burial-she-was-declared"
+            type="Investigative Report"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Detailed investigative report covering SAR records, companion account inconsistencies, the anomalous Find a Grave memorial created before the search concluded, and the LASD Homicide Bureau case transfer. Primary source for disappearance circumstances."
+            notes="Used for: Monica Jacinto Reza."
+          />
+          <SourceCard
+            name="Rocket Scientist with Ties to Classified U.S. Propulsion Technology Remains Missing - Michael R. Cronin"
+            url="https://www.michaelrcronin.com/post/rocket-scientist-with-ties-to-classified-u-s-propulsion-technology-remains-missing-nearly-10-months"
+            type="Investigative Report"
+            typeColor="bg-orange-100 text-orange-700"
+            description="Independent investigative report documenting Reza's AFRL funding history, Mondaloy's classified propulsion ties, and the McCasland institutional connection. Source for the three-person knowledge chain characterization."
+            notes="Used for: Monica Jacinto Reza."
+          />
+          <SourceCard
+            name="The Mondaloy Mystery: Two Aerospace Experts with Ties to Special Projects Go Missing - WION News"
+            url="https://www.wionews.com/trending/the-mondaloy-mystery-two-aerospace-experts-with-ties-to-special-projects-go-missing-triggering-security-concerns-1774248547608"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="News coverage connecting Reza's disappearance to McCasland's through Mondaloy and AFRL; primary source for the parallel-disappearance framing."
+            notes="Used for: Monica Jacinto Reza."
+          />
+          <SourceCard
+            name="What Is Mondaloy and Why Should You Care? - SpaceNews (Dec 2017)"
+            url="https://spacenews.com/what-is-mondaloy-and-why-should-you-care/"
+            type="News Article"
+            typeColor="bg-orange-100 text-orange-700"
+            description="SpaceNews profile of Reza's work at the height of the AR1 engine program; primary public technical documentation of Mondaloy's engineering properties and applications."
+            notes="Used for: Monica Jacinto Reza."
+          />
+          <SourceCard
+            name="HENAAC Luminary Award - Boeing Press Release (2004)"
+            url="https://boeing.mediaroom.com/2004-10-11-Two-Boeing-Employees-Receive-National-Recognition"
+            type="Government/Institutional Record"
+            typeColor="bg-yellow-100 text-yellow-700"
+            description="Boeing press release confirming Reza as inaugural HENAAC Luminary Award recipient in 2004; source for career timeline and Associate Technical Fellow rank at Boeing."
+            notes="Used for: Monica Jacinto Reza."
+          />
+
           {/* Eric Burlison */}
           <SourceCard
             name="Rep. Eric Burlison - Official Congressional Biography"

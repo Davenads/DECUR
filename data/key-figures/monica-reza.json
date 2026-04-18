@@ -1,0 +1,195 @@
+{
+  "profile": {
+    "id": "monica-reza",
+    "name": "Monica Jacinto Reza",
+    "aliases": ["Monica Jacinto", "Monica Reza", "Monica Jacinto-Reza"],
+    "born": "December 30, 1964",
+    "died": null,
+    "roles": [
+      "Director of Materials Processing, NASA Jet Propulsion Laboratory (2023-2025)",
+      "Technical Fellow, Materials and Processes Engineering, Aerojet Rocketdyne",
+      "Co-inventor, Mondaloy Superalloy (Rockwell Science Center, mid-1990s)"
+    ],
+    "service_period": "1988-2025 (Rocketdyne / Boeing / Aerojet Rocketdyne / NASA JPL)",
+    "organizations": [
+      "NASA Jet Propulsion Laboratory (JPL)",
+      "Aerojet Rocketdyne",
+      "Boeing",
+      "Rockwell International / Rockwell Science Center",
+      "American Institute of Aeronautics and Astronautics (AIAA)",
+      "Hispanic Engineer National Achievement Awards Corporation (HENAAC)"
+    ],
+    "clearance": null,
+    "summary": "Materials scientist and aerospace metallurgist who spent more than 35 years at the center of American rocket engine propulsion research. Co-inventor of Mondaloy - a nickel-based superalloy engineered to operate in high-pressure, oxygen-rich environments without igniting - which became a critical component in the AR1 engine program designed to eliminate U.S. dependence on Russian RD-180 propulsion. Described by investigators as the only living person who knew the full Mondaloy manufacturing chain end to end. She disappeared without trace on June 22, 2025 while hiking the Mount Waterman Trail in Angeles National Forest, California, with companions from her yoga group. The investigation was subsequently transferred to the LASD Homicide Bureau Missing Persons Unit. Her disappearance became part of a broader pattern of missing or deceased researchers connected to advanced aerospace and propulsion programs that prompted a White House investigation in April 2026. Her professional connection to Maj. Gen. Neil McCasland - who commanded the Air Force Research Laboratory during the period when AFRL funded Mondaloy development, and who himself disappeared in February 2026 - is the primary link that has drawn attention to her case in UAP research contexts.",
+    "education": [
+      "B.S. / B.A., Metallurgical Engineering, Columbia University (c. mid-1980s)",
+      "M.S., Materials Science, University of California, Los Angeles (UCLA), 1997"
+    ],
+    "early_career": [
+      "Joined Rocketdyne (then a division of Rockwell International) in 1988 as a materials and metallurgical engineer shortly after graduating from Columbia University",
+      "Worked within the Rockwell Science Center research division in the early 1990s, focused on advanced alloy development for high-temperature, oxidizing environments in rocket engine preburners",
+      "Co-invented Mondaloy in the mid-1990s with Rockwell Science Center senior metallurgist Dallis Hardwick - the alloy's name is a portmanteau of both inventors' first names"
+    ],
+    "key_events": [
+      {
+        "year": "1988",
+        "event": "Joined Rocketdyne, a division of Rockwell International, in Canoga Park, California as a materials and metallurgical engineer. Began working in advanced alloy research for rocket propulsion systems under conditions of extreme heat and oxidizing pressure."
+      },
+      {
+        "year": "Mid-1990s",
+        "event": "Co-invented the Mondaloy nickel-based superalloy at the Rockwell Science Center with senior metallurgist Dallis Hardwick. The alloy was engineered to survive high-pressure, oxygen-rich gaseous environments in rocket engine preburners without igniting or requiring protective coatings - a problem that had caused failures in previous engine designs. The name Mondaloy combines the first names of both inventors: Monica and Dallis."
+      },
+      {
+        "year": "1997",
+        "event": "Earned an M.S. in Materials Science from UCLA while working full-time in the Rocketdyne / Boeing propulsion materials group."
+      },
+      {
+        "year": "1999",
+        "event": "First Air Force Research Laboratory (AFRL) cost-sharing contract began to scale Mondaloy production from laboratory quantities to manufacturable hardware. This initiated the long AFRL-funded production qualification program that would run through the following decade and a half, placing Reza and the AFRL Materials Directorate in an ongoing institutional relationship."
+      },
+      {
+        "year": "2004",
+        "event": "Named inaugural HENAAC Luminary Award recipient by the Hispanic Engineer National Achievement Awards Corporation while serving as an Associate Technical Fellow at Boeing (post-Rocketdyne acquisition). Recognized for engineering contributions and as an inspiration for Hispanic youth pursuing technical careers."
+      },
+      {
+        "year": "2004-2023",
+        "event": "Rose to Technical Fellow for Materials and Processes Engineering at Aerojet Rocketdyne - the highest technical individual-contributor rank at the company. Spent more than 25 years shepherding Mondaloy from initial laboratory composition through successive Air Force and NASA contracts to full flight qualification on the AR1 engine, which was developed to replace the Russian RD-180 rocket engine in ULA launch vehicles. Was described by investigators as the only living person who knew the full Mondaloy manufacturing chain end to end."
+      },
+      {
+        "year": "2023",
+        "event": "Joined NASA Jet Propulsion Laboratory (JPL) in Pasadena, California as Director of Materials Processing - a senior leadership role overseeing the materials science and manufacturing process engineering that underpins JPL spacecraft construction."
+      },
+      {
+        "year": "Jun 2025",
+        "event": "Disappeared on June 22, 2025 while hiking the Mount Waterman Trail in Angeles National Forest, California with companions from her yoga group. At approximately 9:10 a.m., she was last seen by the lead companion roughly 30 feet ahead on the trail - then vanished within a ten-minute window near an area visible and audible to nearby roads. An extensive multi-agency search including helicopters with FLIR thermal imaging, search dogs, and ground teams from at least seven county units found no physical trace. The case was transferred to the LASD Homicide Bureau Missing Persons Unit. No body was recovered as of April 2026."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "id": "only-living-knowledge-holder",
+      "category": "government program",
+      "claim": "Investigators and open-source researchers described Reza as the only living person who knew the full Mondaloy manufacturing chain from laboratory composition through Air Force and NASA flight qualification, following the 2014 death of co-inventor Dallis Hardwick.",
+      "status": "unverified",
+      "notes": "This characterization originates from investigative reporting by The Sentinel and open-source research. It has not been confirmed by Aerojet Rocketdyne, NASA JPL, or any government agency. If accurate, her disappearance would represent an irreplaceable loss of institutional manufacturing knowledge for a material qualifying for use in classified and sensitive propulsion programs."
+    },
+    {
+      "id": "mccasland-mondaloy-chain",
+      "category": "government program",
+      "claim": "Open-source investigators have identified a three-person institutional knowledge chain connecting Reza's Mondaloy research to Neil McCasland: (1) Dallis Hardwick, AFRL Materials Directorate co-inventor, died January 2014; (2) Monica Jacinto Reza, production and qualification lead, missing June 2025; (3) Maj. Gen. Neil McCasland, AFRL commander 2011-2013 who oversaw the Materials Directorate funding Mondaloy development, missing February 2026.",
+      "status": "unverified",
+      "notes": "The institutional overlap between McCasland's AFRL command period (2011-2013) and ongoing AFRL Mondaloy contracts is documented. The inference that this constitutes a deliberate targeting of institutional knowledge holders is speculative and unconfirmed by any law enforcement investigation."
+    },
+    {
+      "id": "companion-account-inconsistencies",
+      "category": "event",
+      "claim": "Investigative reporting identified inconsistencies in the account of the male companion (identified as 'Subject A') who was last with Reza before she disappeared, including shifting descriptions of distance, a reported pace described as unsuitable for the terrain, and directional discrepancies between his initial account and subsequent SAR guidance.",
+      "status": "unverified",
+      "notes": "Documented in The Sentinel's investigative report based on SAR records and photographic analysis. The LASD Homicide Bureau Missing Persons Unit is the active investigating authority. No arrest or charges have been filed and no suspect has been publicly named."
+    }
+  ],
+  "associated_people": [
+    {
+      "id": "neil-mccasland",
+      "name": "Maj. Gen. Neil McCasland",
+      "role": "Commander, Air Force Research Laboratory, Wright-Patterson AFB (2011-2013)",
+      "relationship": "McCasland commanded the Air Force Research Laboratory at Wright-Patterson from May 2011 through 2013, overseeing approximately $4.4 billion in science and technology programs including the Materials Directorate that funded and managed the AFRL cost-sharing contracts through which Reza's Mondaloy work at Rocketdyne and Aerojet Rocketdyne was funded and technically reviewed. Both disappeared under unexplained circumstances - Reza in June 2025, McCasland in February 2026 - and both are named in the White House investigation into the broader cluster of missing or deceased advanced aerospace researchers."
+    }
+  ],
+  "disclosures": [
+    {
+      "date": "Dec 2017",
+      "type": "print",
+      "title": "What Is Mondaloy and Why Should You Care? - SpaceNews",
+      "outlet": "SpaceNews",
+      "notes": "Profile of Reza and Mondaloy published by SpaceNews in December 2017 at the height of the AR1 engine development program. The article documented the alloy's origins, engineering properties, and Reza's role in bringing it from laboratory to operational manufacturing for the engine designed to replace the Russian RD-180. Primary public record of her technical work outside of patent filings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Monica Jacinto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Monica_Jacinto",
+      "type": "Reference",
+      "notes": "Primary biographical reference covering her career at Rocketdyne, Boeing, Aerojet Rocketdyne, and JPL, as well as Mondaloy's development and her June 2025 disappearance."
+    },
+    {
+      "title": "The Green Burial: Full Investigative Report - The Sentinel",
+      "url": "https://thesentinel.network/p/the-green-burial-she-was-declared",
+      "type": "Investigative Report",
+      "notes": "Detailed investigative report covering SAR records, companion account inconsistencies, the anomalous Find a Grave memorial created before the search concluded, and the LASD Homicide Bureau transfer. Primary source for disappearance circumstances."
+    },
+    {
+      "title": "Rocket Scientist with Ties to Classified U.S. Propulsion Technology Remains Missing - Michael R. Cronin",
+      "url": "https://www.michaelrcronin.com/post/rocket-scientist-with-ties-to-classified-u-s-propulsion-technology-remains-missing-nearly-10-months",
+      "type": "Investigative Report",
+      "notes": "Independent investigative report covering Reza's classified propulsion ties, Mondaloy's AFRL funding history, and the McCasland institutional connection."
+    },
+    {
+      "title": "The Mondaloy Mystery: Two Aerospace Experts with Ties to Special Projects Go Missing - WION News",
+      "url": "https://www.wionews.com/trending/the-mondaloy-mystery-two-aerospace-experts-with-ties-to-special-projects-go-missing-triggering-security-concerns-1774248547608",
+      "type": "News",
+      "notes": "News coverage drawing the Reza-McCasland connection through Mondaloy and AFRL; primary source for the three-person knowledge chain characterization."
+    },
+    {
+      "title": "Connect the Dots: New Details Emerge in Disappearance of JPL Rocket Scientist - Modernity News (Apr 2026)",
+      "url": "https://modernity.news/2026/04/17/connect-the-dots-new-details-emerge-in-disappearance-of-jpl-rocket-scientist/",
+      "type": "News",
+      "notes": "April 2026 reporting on new companion details and the broader White House investigation into the pattern of missing aerospace researchers."
+    },
+    {
+      "title": "What Is Mondaloy and Why Should You Care? - SpaceNews (Dec 2017)",
+      "url": "https://spacenews.com/what-is-mondaloy-and-why-should-you-care/",
+      "type": "News",
+      "notes": "SpaceNews profile of Reza's work; primary public technical documentation of Mondaloy's development, engineering properties, and applications in the AR1 engine."
+    },
+    {
+      "title": "HENAAC Luminary Award - Boeing (2004)",
+      "url": "https://boeing.mediaroom.com/2004-10-11-Two-Boeing-Employees-Receive-National-Recognition",
+      "type": "Institutional",
+      "notes": "Boeing press release confirming Reza as inaugural HENAAC Luminary Award recipient in 2004 while serving as Associate Technical Fellow."
+    }
+  ],
+  "career_connections": [
+    {
+      "event_index": 1,
+      "node_type": "person",
+      "node_id": "neil-mccasland",
+      "node_label": "Maj. Gen. Neil McCasland",
+      "relationship": "McCasland commanded the AFRL from 2011-2013, overseeing the Materials Directorate that funded and managed the Mondaloy qualification program Reza led at Aerojet Rocketdyne.",
+      "connection_type": "institutional"
+    },
+    {
+      "event_index": 4,
+      "node_type": "person",
+      "node_id": "amy-eskridge",
+      "node_label": "Amy Eskridge",
+      "relationship": "Both are advanced aerospace researchers who disappeared under unexplained circumstances and are named in the same White House-level investigation into the 2022-2026 cluster of missing or deceased scientists.",
+      "connection_type": "investigative"
+    },
+    {
+      "event_index": 6,
+      "node_type": "person",
+      "node_id": "neil-mccasland",
+      "node_label": "Maj. Gen. Neil McCasland",
+      "relationship": "Both Reza (missing June 2025) and McCasland (missing February 2026) disappeared within eight months; together with deceased Mondaloy co-inventor Dallis Hardwick they constitute the three-person institutional knowledge chain for Mondaloy.",
+      "connection_type": "investigative"
+    }
+  ],
+  "credibility": {
+    "supporting": [
+      "Reza's career is fully documented in public records: Columbia University graduate, 35-year career at Rocketdyne/Boeing/Aerojet Rocketdyne and finally JPL, co-inventor on US Patent 2010/0266442 A1, HENAAC Luminary Award winner, AIAA Associate Fellow.",
+      "Mondaloy's development through AFRL cost-sharing contracts is documented from 1999 through the AR1 qualification program, establishing a continuous institutional relationship between Reza's employer and the Air Force Research Laboratory.",
+      "McCasland's AFRL command from May 2011 through 2013 is confirmed public record. The AFRL Materials Directorate under his command funded Mondaloy development contracts - placing him and Reza in the same institutional hierarchy.",
+      "The LASD transfer of her case to the Homicide Bureau Missing Persons Unit is a notable procedural escalation beyond a typical missing persons investigation, suggesting law enforcement found elements warranting that unit's attention.",
+      "The anomalous Find a Grave memorial created June 26, 2025 - four days after disappearance and three days before the official search concluded - has not been publicly explained by any party.",
+      "The three-person Mondaloy knowledge chain (Hardwick deceased 2014, Reza missing 2025, McCasland missing 2026) has been independently documented across multiple investigative reports."
+    ],
+    "contradicting": [
+      "No law enforcement investigation has publicly connected Reza's disappearance to her classified propulsion work, McCasland, or any UAP-related program. The LASD investigation remains active but has not released findings.",
+      "Disappearances on steep mountain trails - while tragic - are not inherently suspicious, and Angeles National Forest has a documented history of fatal hiking accidents including experienced hikers.",
+      "The McCasland-Reza institutional connection is indirect: McCasland commanded AFRL; the Materials Directorate was one of approximately eleven directorates under his command; AFRL funded Mondaloy contracts at Reza's employer. There is no documentation of a direct personal or professional relationship between them.",
+      "The UAP relevance of Mondaloy is entirely inferential - derived from McCasland's separate UAP adjacency via the DeLonge-Podesta emails, not from any documented connection between Mondaloy itself and UAP research programs.",
+      "The companion account inconsistencies documented in The Sentinel's report are based on investigative journalism, not law enforcement findings, and have not resulted in any criminal charges or official statements."
+    ]
+  }
+}

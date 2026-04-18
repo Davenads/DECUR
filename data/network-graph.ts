@@ -1365,6 +1365,11 @@ export const graphData: GraphData = {
     { source: 'john-podesta', target: 'tom-delonge',      label: 'DeLonge corresponded with Podesta in 2015-2016 and arranged meetings between Podesta and former senior defense officials about UAP programs; documented in the WikiLeaks email release' },
     { source: 'john-podesta', target: 'luis-elizondo',    label: 'Both operated in adjacent disclosure networks in 2017-2018; Elizondo\'s TTSA affiliation connected him to the same government-insider advocacy network Podesta was embedded in through the DeLonge correspondence' },
 
+    // Monica Reza connections
+    { source: 'monica-reza', target: 'neil-mccasland', label: 'McCasland commanded AFRL (2011-2013) which funded Mondaloy development at Reza\'s employer; both disappeared within 8 months of each other in the 2025-2026 cluster' },
+    { source: 'monica-reza', target: 'amy-eskridge',   label: 'both advanced aerospace researchers who disappeared under unexplained circumstances; both named in White House investigation into the 2022-2026 missing scientists cluster' },
+    { source: 'monica-reza', target: 'tom-delonge',    label: 'indirect: McCasland - who was institutionally connected to Reza\'s Mondaloy program - was named by DeLonge in the 2016 Podesta email as a UAP disclosure adviser' },
+
     // Amy Eskridge connections
     { source: 'amy-eskridge', target: 'neil-mccasland',  label: 'both named in congressional UAP context; both connected to advanced aerospace/propulsion research in the 2022-2026 missing scientists cluster' },
     { source: 'amy-eskridge', target: 'townsend-brown',  label: 'Eskridge\'s anti-gravity research at Institute for Exotic Science follows in the lineage of Brown\'s foundational Biefeld-Brown electrogravitics work' },

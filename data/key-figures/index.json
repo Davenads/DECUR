@@ -2847,6 +2847,35 @@
     "includeInExplore": true
   },
   {
+    "id": "monica-reza",
+    "name": "Monica Jacinto Reza",
+    "aliases": ["Monica Jacinto", "Monica Reza", "Monica Jacinto-Reza"],
+    "role": "Director of Materials Processing, NASA JPL; Co-inventor, Mondaloy Superalloy",
+    "period": "1988-2025",
+    "affiliation": "NASA Jet Propulsion Laboratory; Aerojet Rocketdyne; Rockwell International",
+    "summary": "Aerospace materials scientist who co-invented Mondaloy - a nickel-based superalloy critical to American rocket engine independence from Russian propulsion - and spent 35 years shepherding it from lab to flight qualification. Described as the only living person who knew the full Mondaloy manufacturing chain end to end. Disappeared June 22, 2025 on a hiking trail in Angeles National Forest; case transferred to LASD Homicide Bureau. Her institutional connection to Maj. Gen. Neil McCasland - who commanded the Air Force Research Laboratory that funded Mondaloy development, and who himself disappeared in February 2026 - has drawn significant attention in advanced aerospace research contexts.",
+    "status": "detailed",
+    "tags": [
+      "materials-science",
+      "aerospace",
+      "mondaloy",
+      "rocketdyne",
+      "jpl",
+      "afrl",
+      "mccasland",
+      "missing",
+      "missing-scientists-cluster",
+      "2025",
+      "exotic-alloys",
+      "propulsion",
+      "columbia-university",
+      "henaac"
+    ],
+    "data_file": "monica-reza.json",
+    "type": "scientist",
+    "includeInExplore": true
+  },
+  {
     "id": "amy-eskridge",
     "name": "Amy Eskridge",
     "aliases": ["Amy R. Eskridge"],
