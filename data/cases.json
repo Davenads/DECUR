@@ -1241,7 +1241,13 @@
       "radar-confirmed",
       "electronics-failure"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "parviz-jafari",
+        "role": "Primary witness - Iranian Air Force F-4 interceptor pilot who engaged the object and experienced complete instrument failure during the encounter",
+        "note": "Jafari later gave public testimony about the incident and submitted an official report to Iranian Air Force command. His account is the primary firsthand record of the encounter."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: September 19, 1976, approximately 12:30 AM local time",
@@ -2085,7 +2091,18 @@
       "Montana",
       "USAF"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "robert-salas",
+        "role": "ICBM launch control officer who witnessed the shutdown of ten Minuteman missiles during the March 24, 1967 Echo Flight incident at Malmstrom",
+        "note": "Salas was on duty in the launch control capsule when an oval glowing object was reported by topside security guards immediately before all ten missiles went offline. He later filed formal testimony and published a book on the incident."
+      },
+      {
+        "id": "robert-hastings",
+        "role": "Primary researcher who conducted extensive interviews with Air Force veterans about the Malmstrom ICBM shutdown incidents and published the definitive account",
+        "note": "Hastings interviewed over 160 military personnel about UAP/nuclear facility incidents; the Malmstrom shutdowns are the centerpiece of his \"UFOs and Nukes\" research."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Echo Flight incident: March 16, 1967 at approximately 08:45 local time - all 10 Minuteman I ICBMs at Echo Flight went to 'No-Go' status",
@@ -2633,7 +2650,18 @@
       "multiple-videos",
       "Arizona"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "fife-symington",
+        "role": "Arizona Governor who publicly mocked the Phoenix Lights with a staged press conference but privately witnessed the craft and later publicly reversed his position",
+        "note": "Symington admitted in 2007 that he personally observed the triangular object over Phoenix on the night of March 13, 1997, and regrets having ridiculed witness reports at the time."
+      },
+      {
+        "id": "lynne-kitei",
+        "role": "Phoenix physician and researcher who documented the Phoenix Lights phenomenon over multiple years beginning in 1995 and produced the primary documentary record",
+        "note": "Kitei photographed and video-recorded the lights on multiple occasions prior to the mass sighting, and her documentation became the foundation for the 2005 documentary \"The Phoenix Lights.\""
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: March 13, 1997, beginning approximately 7:30 PM MST",
@@ -2904,7 +2932,13 @@
       "Chicago",
       "cloud-penetration"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "leslie-kean",
+        "role": "Investigative journalist who broke the O'Hare story publicly through a Chicago Tribune FOIA investigation and authored the definitive account of the incident",
+        "note": "Kean filed an FOIA request after receiving a tip and secured an FAA audio recording of the tower communication. Her Chicago Tribune article triggered a national news cycle and forced United Airlines to confirm the event."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: November 7, 2006, approximately 4:15-4:30 PM CST",
@@ -3429,7 +3463,13 @@
       "FOIA",
       "Texas"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "robert-powell",
+        "role": "MUFON Texas State Director who led the scientific analysis of FAA radar data and witness accounts for the Stephenville encounters",
+        "note": "Powell co-authored the MUFON Stephenville report which used FOIA-obtained FAA radar data to track the object's flight path, corroborating multiple civilian witnesses and contradicting military denials."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: January 8, 2008, approximately 6:15-7:00 PM CST",
@@ -3562,7 +3602,13 @@
       "Canada",
       "official-documentation"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "richard-dolan",
+        "role": "UFO historian who documented the Shag Harbour case in depth, including the classified Royal Canadian Navy response and undersea recovery operation",
+        "note": "Dolan's account in \"UFOs and the National Security State\" drew on RCMP records and witness interviews to establish Shag Harbour as one of the best-documented government UAP response events on record."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: October 4, 1967, approximately 11:20 PM local time",
@@ -3826,7 +3872,13 @@
       "RAAF",
       "1960s"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "james-mcdonald",
+        "role": "Atmospheric physicist who traveled to Australia in 1967 and conducted field interviews with Westall witnesses as part of his broader Australian UAP investigation",
+        "note": "McDonald's 1967 Australian fieldwork included contact with Westall witnesses. His notes and correspondence, archived at the University of Arizona, are among the earliest serious scientific documentation of the case."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: April 6, 1966, approximately 11:00 AM AEST",
@@ -4119,7 +4171,13 @@
       "landing",
       "1990s"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "john-mack",
+        "role": "Harvard psychiatrist who traveled to Zimbabwe in November 1994 and conducted direct interviews with the Ariel School children, producing the primary scientific documentation of the encounter",
+        "note": "Mack interviewed over sixty children individually and found their accounts consistent, detailed, and not explainable by conventional psychological mechanisms. His Zimbabwe research became a central chapter in \"Passport to the Cosmos\" (1999)."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: September 16, 1994, approximately 10:00 AM local time during the school morning break",
@@ -4412,7 +4470,18 @@
       "Washington-DC",
       "visual-confirmation"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "edward-ruppelt",
+        "role": "USAF Project Blue Book chief who coordinated the official investigation of the Washington flap and arranged the July 29 press conference - the largest Pentagon press gathering since WWII",
+        "note": "Ruppelt later wrote candidly about the Air Force's internal confusion during the flap in \"The Report on Unidentified Flying Objects\" (1956), noting that senior Air Force officials took the events very seriously despite the public dismissal."
+      },
+      {
+        "id": "donald-keyhoe",
+        "role": "USAF reserve officer and NICAP director who covered the Washington flap and challenged the Air Force's temperature inversion explanation as scientifically untenable",
+        "note": "Keyhoe obtained pilot and radar operator testimonies that contradicted the official explanation. He argued the Washington flap represented one of the strongest cases for the extraterrestrial hypothesis in his 1953 book \"Flying Saucers from Outer Space.\""
+      }
+    ],
     "overview": {
       "key_facts": [
         "July 19-20, 1952: First weekend of incidents; multiple unidentified radar returns tracked by Washington ARTCC and Andrews AFB",
@@ -4710,7 +4779,13 @@
       "New-Mexico",
       "1960s"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "j-allen-hynek",
+        "role": "USAF scientific consultant who conducted the primary field investigation of the Socorro case and classified it as unexplained - one of his most significant Blue Book investigations",
+        "note": "Hynek visited Socorro, interviewed Lonnie Zamora personally, and examined the physical trace evidence. He considered it one of the strongest cases in the Blue Book files and referenced it repeatedly in his later work advocating for serious scientific study of UAP."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: April 24, 1964, approximately 5:45 PM MST",
@@ -4998,7 +5073,13 @@
       "drone-footage",
       "2013"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "robert-powell",
+        "role": "Co-authored the comprehensive Scientific Coalition for UAP Studies (SCU) analysis report on the Aguadilla FLIR footage, examining the object's flight characteristics and hydrodynamic entry",
+        "note": "Powell and the SCU team produced a 161-page technical report analyzing every frame of the DHS FLIR video, concluding the object demonstrated performance characteristics inconsistent with any known conventional aircraft or natural phenomenon."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: April 25, 2013, approximately 9:20 PM AST",
@@ -5252,7 +5333,13 @@
       "2011",
       "tier-3"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "robert-hastings",
+        "role": "Author of \"UFOs and Nukes\" who has documented UAP phenomena at nuclear facilities worldwide; the Fukushima sightings fit the pattern of nuclear facility UAP activity central to his research",
+        "note": "Hastings has documented over 150 cases of UAP activity at nuclear installations across multiple countries. The Fukushima reactor sightings in March-April 2011 align with the recurring pattern he has identified of UAP presence during nuclear incidents and operations."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: Multiple dates in March 2011, beginning with the nuclear crisis on March 11, 2011",
@@ -5879,7 +5966,18 @@
       "Project-Blue-Book",
       "1957-flap"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "james-mcdonald",
+        "role": "Atmospheric physicist who conducted detailed follow-up field investigations of the Levelland witnesses, documenting the electromagnetic effects on vehicles and challenging the inadequate Air Force investigation",
+        "note": "McDonald's investigation identified at least nine independent vehicle-interference cases over a two-hour period that the Air Force attributed to ball lightning - an explanation McDonald systematically demolished on scientific grounds."
+      },
+      {
+        "id": "donald-keyhoe",
+        "role": "NICAP director who analyzed the Levelland case and publicly challenged the Air Force's inadequate one-day investigation by a single sergeant",
+        "note": "Keyhoe used Levelland as a primary example of Air Force suppression, noting that the investigator spent less than 24 hours on a case involving multiple independent witnesses reporting identical electromagnetic effects."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: Night of November 2-3, 1957 - multiple encounters between approximately 10:50 PM and 1:30 AM",
@@ -6021,7 +6119,13 @@
       "green-beam",
       "ground-corroboration"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "j-allen-hynek",
+        "role": "Investigated and authenticated the Coyne helicopter incident through CUFOS; documented it as one of the most credible CE-II cases on record given the military crew witnesses",
+        "note": "Hynek's Center for UFO Studies conducted a thorough analysis of the Coyne case. The five-person Army Reserve crew, including a senior pilot with 19 years of experience, described a metallic cigar-shaped object that caused the helicopter altimeter to show a climb while the collective was down."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: October 18, 1973, approximately 11:02 PM EDT",
@@ -6169,7 +6273,13 @@
       "Condon-unknown",
       "Air-Force"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "james-mcdonald",
+        "role": "Conducted the definitive scientific study of the RB-47 incident, documenting correlated radar trackings from ground stations and the aircraft, and published it in the 1969 Congressional UAP symposium",
+        "note": "McDonald's RB-47 analysis is considered a landmark in scientific UAP investigation. The case involved six crew members, three independent radar systems, and a ground radar station tracking the same object over four states for 1.5 hours - a dataset McDonald argued was impossible to explain conventionally."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: July 17, 1957, approximately 4:00 AM - 6:30 AM local time",
@@ -6338,7 +6448,13 @@
       "Canada",
       "close-encounter"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "jacques-vallee",
+        "role": "Documented and analyzed the Falcon Lake case as an exemplary physical trace CE-II case in his systematic cataloging of UAP physical evidence",
+        "note": "Vallee classified the Falcon Lake incident in his VALLEE classification system and referenced it in multiple publications as one of the most significant physical evidence cases in the North American record. The radiation burns and landing trace evidence were among the most thoroughly documented of any UAP encounter."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: May 20, 1967, approximately 12:15 PM local time",
@@ -7531,7 +7647,18 @@
       "Texas",
       "multi-witness"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "linda-moulton-howe",
+        "role": "Investigative journalist who interviewed Betty Cash and Vickie Landrum directly and produced extensive documentation of the medical injuries, hospitalizations, and government denials",
+        "note": "Howe's investigation documented the severe radiation burns, hair loss, and long-term health consequences suffered by Cash and Landrum. Her reporting was central to bringing the case to national attention and sustaining scrutiny of the government's denial of involvement."
+      },
+      {
+        "id": "john-alexander",
+        "role": "US Army Colonel (ret.) who investigated the Cash-Landrum case through official channels and documented the absence of accountability despite physical injuries consistent with military activity",
+        "note": "Alexander attempted to trace the origin of the CH-47 helicopters witnessed escorting the object. His inability to identify the helicopters through official military channels - despite their large number and distinctive formation - remains one of the most unresolved aspects of the case."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: December 29, 1980, approximately 9:00 PM CST",
@@ -7699,7 +7826,13 @@
       "plant-analysis",
       "government-investigation"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "jacques-vallee",
+        "role": "Co-authored the definitive scientific analysis of the Trans-en-Provence physical trace evidence with GEPAN researcher Jean-Jacques Velasco; considered it among the best-documented physical UAP cases",
+        "note": "Vallee and Velasco's analysis of soil samples and alfalfa plants from the landing site showed structural changes to chlorophyll content consistent with exposure to an intense electromagnetic or ionizing radiation source. Their findings were published in the Journal of Scientific Exploration and remain the most rigorous scientific study of a UAP physical trace case."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: January 8, 1981, approximately 5:00 PM",
@@ -8191,7 +8324,13 @@
       "1989",
       "civilian"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "richard-dolan",
+        "role": "UFO historian who documented the Voronezh incident in detail and analyzed the Soviet TASS wire service coverage in the context of glasnost-era disclosure",
+        "note": "Dolan's account in \"UFOs and the National Security State Vol. 2\" places the Voronezh incident within the broader pattern of Soviet UAP documentation, noting that TASS coverage - which reached global media - represented an unprecedented level of state acknowledgment of a UAP encounter."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: September 27, 1989, approximately 6:30 PM local time",
@@ -8425,7 +8564,13 @@
       "Cold-War",
       "Air-Force-investigated"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "edward-ruppelt",
+        "role": "USAF Project Blue Book chief who led the investigation of the Lubbock Lights and devoted a full chapter to the case in his memoir, calling it one of the most puzzling in Air Force files",
+        "note": "Ruppelt wrote that despite being considered one of the best-investigated cases in Blue Book history - involving Texas Tech faculty, professional photographers, and radar operators - the Lubbock Lights were never satisfactorily explained. He suspected the official \"moth\" explanation was incorrect."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date range: August 25 through at least early September 1951",
