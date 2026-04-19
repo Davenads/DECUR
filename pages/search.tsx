@@ -1,7 +1,12 @@
 import { FC, useState, useEffect, useCallback, useRef } from 'react';
+import { GetStaticProps } from 'next';
 import SeoHead from '../components/SeoHead';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import insidersIndex from '../data/key-figures/index.json';
+import timelineData from '../data/timeline.json';
+import glossaryData from '../data/glossary.json';
+import resourcesData from '../data/resources.json';
 
 // ---- Types ----------------------------------------------------------------
 
@@ -93,12 +98,23 @@ const PROGRAM_STATUS_OPTIONS = [
   { value: 'unknown',    label: 'Unknown'    },
 ];
 
+// ---- Types (page props) ----------------------------------------------------
+
+interface SearchPageProps {
+  counts: {
+    figures: number;
+    timeline: number;
+    glossary: number;
+    resources: number;
+  };
+}
+
 // ---- Component -------------------------------------------------------------
 
 const MAX_PER_TYPE = 10;
 const DEBOUNCE_MS  = 300;
 
-const SearchPage: FC = () => {
+const SearchPage: FC<SearchPageProps> = ({ counts }) => {
   const router = useRouter();
   const [query, setQuery]         = useState('');
   const [results, setResults]     = useState<SearchItem[]>([]);
@@ -416,7 +432,7 @@ const SearchPage: FC = () => {
             <div>
               <div className="text-center py-10 text-gray-400 dark:text-gray-500 text-sm">
                 <p className="mb-1 font-medium text-gray-500 dark:text-gray-400">Search across all DECUR data</p>
-                <p>Insiders &middot; 1,866 timeline events &middot; 319 glossary terms &middot; Resources</p>
+                <p>{counts.figures} key figures &middot; {counts.timeline.toLocaleString()} timeline events &middot; {counts.glossary} glossary terms &middot; {counts.resources} resources</p>
               </div>
               {/* Browse shortcuts */}
               <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
@@ -440,6 +456,20 @@ const SearchPage: FC = () => {
       </div>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps<SearchPageProps> = () => {
+  const res = resourcesData as { sources?: unknown[]; testimony?: unknown[] };
+  return {
+    props: {
+      counts: {
+        figures:   (insidersIndex as unknown[]).length,
+        timeline:  (timelineData as unknown[]).length,
+        glossary:  (glossaryData as unknown[]).length,
+        resources: (res.sources?.length ?? 0) + (res.testimony?.length ?? 0),
+      },
+    },
+  };
 };
 
 export default SearchPage;
