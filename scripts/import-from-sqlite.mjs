@@ -23,7 +23,7 @@ import Database from 'better-sqlite3';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { isCoordPlausible } from './coord-validation.mjs';
+import { isCoordPlausible, isStateCoordPlausible } from './coord-validation.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -157,6 +157,14 @@ function mapRow(r) {
   if (lat !== null && !isCoordPlausible(lat, lng, r.country)) {
     lat = null; lng = null;
     coordMismatchCount++;
+  }
+  // US state-level check — catches records where stated state and coords disagree
+  if (lat !== null && r.country) {
+    const cNorm = r.country.toLowerCase().trim().replace(/[^a-z]/g, '');
+    if (cNorm === 'us' && !isStateCoordPlausible(lat, lng, r.state)) {
+      lat = null; lng = null;
+      coordMismatchCount++;
+    }
   }
 
   return {

@@ -24,7 +24,7 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
-import { isCoordPlausible } from './coord-validation.mjs';
+import { isCoordPlausible, isStateCoordPlausible } from './coord-validation.mjs';
 
 // ── Config ────────────────────────────────────────────────────────────────────
 
@@ -70,15 +70,16 @@ async function main() {
   const startTime  = Date.now();
 
   // Track breakdown of why coords were nulled
-  let nulledOutOfRange   = 0;
-  let nulledNullIsland   = 0;
+  let nulledOutOfRange      = 0;
+  let nulledNullIsland      = 0;
   let nulledCountryMismatch = 0;
+  let nulledStateMismatch   = 0;
 
   while (true) {
     // Fetch next batch by ID cursor — no offset shifting
     const { data, error } = await supabase
       .from('ufosint_sightings')
-      .select('id, lat, lng, country')
+      .select('id, lat, lng, country, state')
       .gt('id', lastId)
       .order('id', { ascending: true })
       .limit(FETCH_BATCH);
@@ -100,6 +101,7 @@ async function main() {
     const outOfRange    = [];
     const nullIsland    = [];
     const countryBad    = [];
+    const stateBad      = [];
 
     for (const r of geocoded) {
       const lat = r.lat;
@@ -110,13 +112,20 @@ async function main() {
         nullIsland.push(r.id);
       } else if (!isCoordPlausible(lat, lng, r.country)) {
         countryBad.push(r.id);
+      } else {
+        // State-level check — only for US records with a state value
+        const countryNorm = r.country ? r.country.toLowerCase().trim().replace(/[^a-z]/g, '') : '';
+        if (countryNorm === 'us' && r.state && !isStateCoordPlausible(lat, lng, r.state)) {
+          stateBad.push(r.id);
+        }
       }
     }
 
-    const allBadIds = [...outOfRange, ...nullIsland, ...countryBad];
+    const allBadIds = [...outOfRange, ...nullIsland, ...countryBad, ...stateBad];
     nulledOutOfRange      += outOfRange.length;
     nulledNullIsland      += nullIsland.length;
     nulledCountryMismatch += countryBad.length;
+    nulledStateMismatch   += stateBad.length;
 
     // UPDATE in chunks to stay within PostgREST URL limits
     for (let i = 0; i < allBadIds.length; i += UPDATE_CHUNK) {
@@ -167,6 +176,7 @@ async function main() {
   console.log(`  Out-of-range:         ${nulledOutOfRange.toLocaleString()}`);
   console.log(`  Null Island (0,0):    ${nulledNullIsland.toLocaleString()}`);
   console.log(`  Country mismatch:     ${nulledCountryMismatch.toLocaleString()}`);
+  console.log(`  State mismatch (US):  ${nulledStateMismatch.toLocaleString()}`);
   console.log('═══════════════════════════════════════════');
 }
 

@@ -165,6 +165,67 @@ export const COUNTRY_BOUNDS = {
   'af': [29.4,  38.5,  60.5,   74.9],    // Afghanistan
 };
 
+// ── US state bounding boxes ───────────────────────────────────────────────────
+//
+// Only applied when country = 'us' AND a recognised 2-letter state code is
+// present.  Bounds are intentionally generous (+/- a degree where needed) to
+// avoid false rejections for coastal and border areas.
+// Format: [minLat, maxLat, minLng, maxLng]
+
+export const US_STATE_BOUNDS = {
+  'ak': [51.2,  71.4, -180.0, -130.0],  // Alaska
+  'al': [30.1,  35.1,  -88.5,  -84.9],  // Alabama
+  'ar': [33.0,  36.5,  -94.7,  -89.6],  // Arkansas
+  'az': [31.3,  37.0, -114.9, -109.0],  // Arizona
+  'ca': [32.5,  42.0, -124.5, -114.1],  // California
+  'co': [36.9,  41.1, -109.1, -102.0],  // Colorado
+  'ct': [40.9,  42.1,  -73.7,  -71.8],  // Connecticut
+  'dc': [38.8,  39.0,  -77.1,  -76.9],  // Washington D.C.
+  'de': [38.4,  39.9,  -75.8,  -75.0],  // Delaware
+  'fl': [24.4,  31.1,  -87.7,  -80.0],  // Florida
+  'ga': [30.4,  35.0,  -85.7,  -80.8],  // Georgia
+  'hi': [18.9,  22.3, -160.3, -154.8],  // Hawaii
+  'ia': [40.4,  43.5,  -96.6,  -90.1],  // Iowa
+  'id': [41.9,  49.1, -117.2, -111.0],  // Idaho
+  'il': [36.9,  42.5,  -91.5,  -87.5],  // Illinois
+  'in': [37.8,  41.8,  -88.1,  -84.8],  // Indiana
+  'ks': [37.0,  40.0, -102.1,  -94.6],  // Kansas
+  'ky': [36.5,  39.2,  -89.6,  -81.9],  // Kentucky
+  'la': [28.9,  33.1,  -94.2,  -88.8],  // Louisiana
+  'ma': [41.2,  42.9,  -73.5,  -69.9],  // Massachusetts
+  'md': [37.9,  39.8,  -79.5,  -75.0],  // Maryland
+  'me': [43.1,  47.5,  -71.1,  -66.9],  // Maine
+  'mi': [41.7,  48.3,  -90.4,  -82.4],  // Michigan (incl. Upper Peninsula)
+  'mn': [43.5,  49.4,  -97.2,  -89.5],  // Minnesota
+  'mo': [35.9,  40.6,  -95.8,  -89.1],  // Missouri
+  'ms': [30.2,  35.0,  -91.7,  -88.1],  // Mississippi
+  'mt': [44.4,  49.1, -116.1, -104.0],  // Montana
+  'nc': [33.8,  36.6,  -84.4,  -75.5],  // North Carolina
+  'nd': [45.9,  49.1, -104.1,  -96.6],  // North Dakota
+  'ne': [40.0,  43.0, -104.1,  -95.3],  // Nebraska
+  'nh': [42.7,  45.3,  -72.6,  -70.6],  // New Hampshire
+  'nj': [38.9,  41.4,  -75.6,  -74.0],  // New Jersey
+  'nm': [31.3,  37.0, -109.1, -103.0],  // New Mexico
+  'nv': [35.0,  42.1, -120.0, -114.0],  // Nevada
+  'ny': [40.5,  45.0,  -79.8,  -71.9],  // New York
+  'oh': [38.4,  42.3,  -84.8,  -80.5],  // Ohio
+  'ok': [33.6,  37.0, -103.0,  -94.4],  // Oklahoma
+  'or': [42.0,  46.2, -124.7, -116.5],  // Oregon
+  'pa': [39.7,  42.3,  -80.5,  -74.7],  // Pennsylvania
+  'ri': [41.1,  42.0,  -71.9,  -71.1],  // Rhode Island
+  'sc': [32.0,  35.2,  -83.4,  -78.5],  // South Carolina
+  'sd': [42.5,  45.9, -104.1,  -96.4],  // South Dakota
+  'tn': [34.9,  36.7,  -90.3,  -81.6],  // Tennessee
+  'tx': [25.8,  36.5, -106.7,  -93.5],  // Texas
+  'ut': [37.0,  42.0, -114.1, -109.0],  // Utah
+  'va': [36.5,  39.5,  -83.7,  -75.2],  // Virginia
+  'vt': [42.7,  45.0,  -73.4,  -71.5],  // Vermont
+  'wa': [45.5,  49.0, -124.8, -116.9],  // Washington
+  'wi': [42.5,  47.1,  -92.9,  -86.2],  // Wisconsin
+  'wv': [37.2,  40.6,  -82.6,  -77.7],  // West Virginia
+  'wy': [41.0,  45.0, -111.1, -104.1],  // Wyoming
+};
+
 // ── Validation functions ──────────────────────────────────────────────────────
 
 /**
@@ -190,6 +251,25 @@ export function isCoordPlausible(lat, lng, country) {
 }
 
 /**
+ * Returns false when lat/lng fall outside the stated US state's bounding box.
+ * Returns true when state code is unrecognised — safe default.
+ * Only meaningful when country = 'us'.
+ *
+ * @param {number} lat
+ * @param {number} lng
+ * @param {string|null} state  — raw state string (2-letter code, any case)
+ * @returns {boolean}
+ */
+export function isStateCoordPlausible(lat, lng, state) {
+  if (!state) return true;
+  const code = state.toLowerCase().trim();
+  const bounds = US_STATE_BOUNDS[code];
+  if (!bounds) return true; // unrecognised code — pass through
+  const [minLat, maxLat, minLng, maxLng] = bounds;
+  return lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng;
+}
+
+/**
  * Returns true when a coordinate pair should be nulled out.
  * Already-null coordinates return false (safe to call on any record).
  *
@@ -197,17 +277,22 @@ export function isCoordPlausible(lat, lng, country) {
  *   1. Out-of-range  — physically impossible values (corrupt source data)
  *   2. Null Island   — (0, 0) is a geocoding default, not a real location
  *   3. Country bbox  — coordinates fall outside the stated country's bounds
+ *   4. State bbox    — (US only) coordinates fall outside the stated state's bounds
  *
  * @param {number|null} lat
  * @param {number|null} lng
  * @param {string|null} country
+ * @param {string|null} [state]  — optional; only checked when country = 'us'
  * @returns {boolean}
  */
-export function isBadCoord(lat, lng, country) {
+export function isBadCoord(lat, lng, country, state = null) {
   if (lat === null || lng === null) return false;
   if (lat < -90 || lat > 90)   return true;
   if (lng < -180 || lng > 180) return true;
   if (lat === 0 && lng === 0)  return true;
   if (!isCoordPlausible(lat, lng, country)) return true;
+  // State-level check — only for US records where state is provided
+  const countryNorm = country ? country.toLowerCase().trim().replace(/[^a-z]/g, '') : '';
+  if (countryNorm === 'us' && state && !isStateCoordPlausible(lat, lng, state)) return true;
   return false;
 }
