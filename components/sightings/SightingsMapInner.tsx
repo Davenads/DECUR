@@ -24,6 +24,37 @@ import casePinsRaw from '../../data/ufosint/case-pins.json';
 // for zoomed-in views where individual pins are meaningful.
 const VIEWPORT_LIMIT = 3000;
 
+// Delay after onMoveEnd before fetching — collapses rapid sequential gestures
+// (scroll-zoom, pinch, keyboard nav) into a single request.
+const MOVE_END_DEBOUNCE_MS = 150;
+
+/* ── Viewport cache ─────────────────────────────────────────────────────── */
+
+// Module-level LRU cache so repeat pans return instantly without hitting the
+// API. Key uses 1-decimal-place bbox coords (≈11km resolution), which gives
+// good hit rates for small pans while still separating meaningfully different views.
+const CACHE_MAX = 25;
+// globalThis.Map avoids shadowing by the react-map-gl 'Map' component import.
+const _viewportCache = new globalThis.Map<string, SightingRecord[]>();
+
+function vcKey(n: number, s: number, e: number, w: number): string {
+  return `${n.toFixed(1)},${s.toFixed(1)},${e.toFixed(1)},${w.toFixed(1)}`;
+}
+function vcGet(key: string): SightingRecord[] | null {
+  const val = _viewportCache.get(key);
+  if (!val) return null;
+  // Refresh to end for LRU eviction ordering
+  _viewportCache.delete(key);
+  _viewportCache.set(key, val);
+  return val;
+}
+function vcSet(key: string, data: SightingRecord[]): void {
+  if (_viewportCache.size >= CACHE_MAX) {
+    _viewportCache.delete(_viewportCache.keys().next().value!);
+  }
+  _viewportCache.set(key, data);
+}
+
 // Inline MapLibre style pointing directly at CartoDB's 4-server tile CDN.
 // Using CartoDB directly (not proxied) avoids the Vercel serverless bottleneck:
 // at z=3 the map requests ~64 tiles simultaneously; routing each through a
@@ -127,6 +158,7 @@ export default function SightingsMapInner() {
   const mapRef = useRef<MapRef>(null);
   const abortRef = useRef<AbortController | null>(null);
   const lastViewKeyRef = useRef('');
+  const moveEndTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   // Holds a promise for the global-view prefetch started on mount.
   // Consumed once by onLoad; if the map initializes before the fetch
   // resolves, onLoad awaits it; if it resolves first, onLoad uses it instantly.
@@ -198,10 +230,20 @@ export default function SightingsMapInner() {
     // The Supabase BETWEEN query doesn't handle wrapped coordinates.
     const e = Math.min(b.getEast(), 180);
     const w = Math.max(b.getWest(), -180);
-    const viewKey = `${n.toFixed(3)},${s.toFixed(3)},${e.toFixed(3)},${w.toFixed(3)}`;
+
+    // 1dp key (≈11km resolution) — matches the module-level viewport cache granularity.
+    const viewKey = vcKey(n, s, e, w);
     if (viewKey === lastViewKeyRef.current) return;
     lastViewKeyRef.current = viewKey;
 
+    // Cache hit — instant render, no API call, no loading spinner.
+    const cached = vcGet(viewKey);
+    if (cached) {
+      applyViewportData(cached);
+      return;
+    }
+
+    // Cache miss — fetch from API.
     abortRef.current?.abort();
     abortRef.current = new AbortController();
     setPinLoading(true);
@@ -213,6 +255,7 @@ export default function SightingsMapInner() {
       );
       if (!res.ok) throw new Error(`viewport ${res.status}`);
       const { sightings } = await res.json() as { sightings: SightingRecord[] };
+      vcSet(viewKey, sightings);
       applyViewportData(sightings);
     } catch (err) {
       if ((err as Error).name === 'AbortError') {
@@ -238,8 +281,9 @@ export default function SightingsMapInner() {
     if (prefetch) {
       const data = await prefetch;
       if (data?.sightings?.length) {
-        // Mark this viewKey as satisfied so onMoveEnd won't re-fetch unless the user pans.
-        lastViewKeyRef.current = '85.000,-85.000,180.000,-180.000';
+        const globalKey = vcKey(85, -85, 180, -180);
+        vcSet(globalKey, data.sightings);
+        lastViewKeyRef.current = globalKey;
         applyViewportData(data.sightings);
         return;
       }
@@ -255,13 +299,24 @@ export default function SightingsMapInner() {
 
   // Clear stale data immediately on pan/zoom so old sightings don't linger
   // as a partial strip in the new viewport while the fresh fetch is in-flight.
+  // Also cancel any pending debounced fetch so we don't fire for an intermediate position.
   const onMoveStart = useCallback(() => {
+    if (moveEndTimerRef.current) {
+      clearTimeout(moveEndTimerRef.current);
+      moveEndTimerRef.current = null;
+    }
     setSightingsGeoJSON({ type: 'FeatureCollection', features: [] });
     lastViewKeyRef.current = '';
   }, []);
 
+  // Debounced — collapses rapid sequential gestures (scroll-zoom, pinch, arrow keys)
+  // into a single fetch for the settled position.
   const onMoveEnd = useCallback(() => {
-    fetchViewport();
+    if (moveEndTimerRef.current) clearTimeout(moveEndTimerRef.current);
+    moveEndTimerRef.current = setTimeout(() => {
+      moveEndTimerRef.current = null;
+      fetchViewport();
+    }, MOVE_END_DEBOUNCE_MS);
   }, [fetchViewport]);
 
   const onMapClick = useCallback((e: MapLayerMouseEvent) => {
