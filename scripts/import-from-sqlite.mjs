@@ -1,21 +1,23 @@
 /**
  * import-from-sqlite.mjs
  *
- * Reads all 614,505 records from ufo_public.db (DuelingGroks export) and
- * upserts them into the ufosint_sightings Supabase table.
+ * Reads all records from ufo_public_v2.db (DuelingGroks export) and upserts
+ * them into the ufosint_sightings Supabase table.
  *
- * - Inserts the ~94k records that were unreachable via the MCP API
- * - Updates all existing records with enriched fields (hynek, vallee, quality, etc.)
- * - Description field is intentionally skipped (db strips raw text; keep MCP values)
+ * v2 adds: description text, has_photo/has_video, LLM analysis fields,
+ * reddit attribution, and nuclear proximity for ~418k records.
+ *
+ * - Upserts by id — safe to re-run; existing records are updated with new fields
  * - Checkpoints by last processed id so the script is resumable
  *
  * Usage:
- *   node --env-file=.env.local scripts/import-from-sqlite.mjs [--resume]
+ *   SQLITE_DB_PATH=.plans/ufo_public_v2.db node --env-file=.env.local scripts/import-from-sqlite.mjs
+ *   node --env-file=.env.local scripts/import-from-sqlite.mjs --resume
  *
  * Required env vars:
  *   IMPORT_SUPABASE_URL   - Supabase project URL
  *   IMPORT_SERVICE_KEY    - Service role key (never anon key)
- *   SQLITE_DB_PATH        - (optional) path to ufo_public.db; defaults to .plans/ufo_public.db
+ *   SQLITE_DB_PATH        - (optional) defaults to .plans/ufo_public_v2.db
  */
 
 import { createClient } from '@supabase/supabase-js';
@@ -33,7 +35,7 @@ const ROOT = path.resolve(__dirname, '..');
 const SUPABASE_URL  = process.env.IMPORT_SUPABASE_URL;
 const SERVICE_KEY   = process.env.IMPORT_SERVICE_KEY;
 const DB_PATH       = process.env.SQLITE_DB_PATH
-  ?? path.join(ROOT, '.plans', 'ufo_public.db');
+  ?? path.join(ROOT, '.plans', 'ufo_public_v2.db');
 const CHECKPOINT    = path.join(ROOT, 'data', 'ufosint', 'sqlite-import-checkpoint.json');
 const BATCH_SIZE    = 100;
 const RESUME        = process.argv.includes('--resume');
@@ -86,33 +88,44 @@ function saveCheckpoint(cp) {
 const SELECT_QUERY = `
   SELECT
     s.id,
-    d.name                    AS source,
-    sc.name                   AS collection,
-    s.date_event              AS date,
+    d.name                                  AS source,
+    sc.name                                 AS collection,
+    s.date_event                            AS date,
     l.city,
     l.state,
     l.country,
-    l.latitude                AS lat,
-    l.longitude               AS lng,
+    l.latitude                              AS lat,
+    l.longitude                             AS lng,
     s.shape,
     s.standardized_shape,
     s.primary_color,
     s.duration,
     s.duration_bucket,
-    s.num_witnesses           AS witnesses,
+    s.num_witnesses                         AS witnesses,
     s.hynek,
     s.vallee,
     s.svp_rating,
     s.quality_score,
     s.richness_score,
     s.hoax_likelihood,
-    s.dominant_emotion        AS emotion_label,
+    s.dominant_emotion                      AS emotion_label,
     s.vader_compound,
     s.has_description,
     s.has_media,
+    s.has_photo,
+    s.has_video,
     s.direction,
     s.movement_type,
-    s.event_type
+    s.event_type,
+    s.description,
+    s.reddit_post_id,
+    s.reddit_url,
+    s.llm_strangeness_rating,
+    s.llm_anomaly_assessment,
+    s.llm_confidence,
+    s.llm_prosaic_candidate,
+    s.distance_to_nearest_nuclear_site_km,
+    s.nearest_nuclear_site_name
   FROM sighting s
   LEFT JOIN source_database   d  ON s.source_db_id  = d.id
   LEFT JOIN source_collection sc ON d.collection_id = sc.id
@@ -193,10 +206,21 @@ function mapRow(r) {
     vader_compound:    r.vader_compound    ?? null,
     has_description:   r.has_description === 1,
     has_media:         r.has_media === 1,
+    has_photo:         r.has_photo === 1,
+    has_video:         r.has_video === 1,
     direction:         r.direction         ? r.direction.substring(0, 60) : null,
     movement_type:     r.movement_type     ?? null,
     event_type:        r.event_type        ?? null,
-    // description is intentionally omitted - db strips raw text; preserve MCP values
+    // v2 fields
+    description:       r.description       ?? null,
+    reddit_post_id:    r.reddit_post_id    ? r.reddit_post_id.substring(0, 20) : null,
+    reddit_url:        r.reddit_url        ?? null,
+    llm_strangeness_rating:  r.llm_strangeness_rating  ?? null,
+    llm_anomaly_assessment:  r.llm_anomaly_assessment  ? r.llm_anomaly_assessment.substring(0, 30) : null,
+    llm_confidence:          r.llm_confidence          ? r.llm_confidence.substring(0, 20) : null,
+    llm_prosaic_candidate:   r.llm_prosaic_candidate   ?? null,
+    distance_to_nearest_nuclear_site_km: r.distance_to_nearest_nuclear_site_km ?? null,
+    nearest_nuclear_site_name:           r.nearest_nuclear_site_name ? r.nearest_nuclear_site_name.substring(0, 200) : null,
   };
 }
 
@@ -223,7 +247,10 @@ async function main() {
         l.latitude as lat, l.longitude as lng, s.shape, s.standardized_shape, s.primary_color, s.duration,
         s.duration_bucket, s.num_witnesses as witnesses, s.hynek, s.vallee, s.svp_rating, s.quality_score,
         s.richness_score, s.hoax_likelihood, s.dominant_emotion as emotion_label, s.vader_compound,
-        s.has_description, s.has_media, s.direction, s.movement_type, s.event_type
+        s.has_description, s.has_media, s.has_photo, s.has_video, s.direction, s.movement_type, s.event_type,
+        s.description, s.reddit_post_id, s.reddit_url,
+        s.llm_strangeness_rating, s.llm_anomaly_assessment, s.llm_confidence, s.llm_prosaic_candidate,
+        s.distance_to_nearest_nuclear_site_km, s.nearest_nuclear_site_name
       FROM sighting s
       LEFT JOIN source_database d ON s.source_db_id=d.id
       LEFT JOIN source_collection sc ON d.collection_id=sc.id
