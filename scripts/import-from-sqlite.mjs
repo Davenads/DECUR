@@ -195,7 +195,7 @@ function mapRow(r) {
     primary_color:     r.primary_color     ? r.primary_color.substring(0, 60) : null,
     duration:          r.duration          ? r.duration.substring(0, 120) : null,
     duration_bucket:   r.duration_bucket   ?? null,
-    witnesses:         r.witnesses         ?? null,
+    witnesses:         r.witnesses != null ? Math.min(r.witnesses, 32767) : null,
     hynek:             r.hynek             ? r.hynek.substring(0, 20) : null,
     vallee:            r.vallee            ? r.vallee.substring(0, 20) : null,
     svp_rating:        r.svp_rating        ? r.svp_rating.substring(0, 10) : null,
