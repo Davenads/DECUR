@@ -249,8 +249,10 @@ export default function SightingsMapInner() {
     setPinLoading(true);
 
     try {
+      // Round to 1dp — matches vcKey() resolution and the server-side memCache key,
+      // so client cache and server cache both hit for the same logical viewport.
       const res = await fetch(
-        `/api/sightings/viewport?n=${n}&s=${s}&e=${e}&w=${w}&limit=${VIEWPORT_LIMIT}`,
+        `/api/sightings/viewport?n=${n.toFixed(1)}&s=${s.toFixed(1)}&e=${e.toFixed(1)}&w=${w.toFixed(1)}&limit=${VIEWPORT_LIMIT}`,
         { signal: abortRef.current.signal }
       );
       if (!res.ok) throw new Error(`viewport ${res.status}`);
