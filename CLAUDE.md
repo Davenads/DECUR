@@ -537,6 +537,30 @@ Find the `{/* Documented Cases */}` section and add `<SourceCard>` entries for t
 
 ---
 
+## CRITICAL: Sync the Supabase Search Index After Any Content Addition
+
+**The global search (`/search`) queries a Supabase `search_index` table. It does NOT read JSON files directly.** Editing any of the data files below does NOT make new content searchable. You MUST run the sync script after adding or updating entries in any of these files:
+
+| Data file | Content type | Run sync after editing? |
+|---|---|---|
+| `data/key-figures/*.json` + `index.json` | Key figures / insiders | Yes |
+| `data/cases.json` | Documented cases | Yes |
+| `data/documents.json` | Primary documents | Yes |
+| `data/programs.json` (or equivalent) | Government programs | Yes |
+| `data/glossary.json` | Glossary terms | Yes (lower priority) |
+| `data/timeline.json` | Timeline events | Yes (usually bulk-imported) |
+
+**The sync command (idempotent - safe to run at any time):**
+```bash
+node --env-file=.env.local scripts/populate-search-index.mjs
+```
+
+**Symptom if skipped:** The detail page or listing loads correctly (JSON-driven), but searching by name on `/search` returns no results.
+
+This script upserts all categories in a single pass. Required env vars (`IMPORT_SUPABASE_URL` and `IMPORT_SERVICE_KEY`) should already be in `.env.local`.
+
+---
+
 ## Data Sources Page (`pages/sources.tsx`)
 
 The sources page is the platform's research attribution record. It must be kept current whenever new data is added to any category.
