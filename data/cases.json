@@ -11195,7 +11195,18 @@
       "Bolivia",
       "State-Department"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "clifford-stone",
+        "role": "U.S. Army Project Moon Dust operative and FOIA campaigner who forced official acknowledgment of the crash retrieval program used to respond to this case",
+        "note": "Stone claimed covert assignment to crash retrieval teams operating under the exact programs - Project Moon Dust and Operation Blue Fly - that dispatched Colonel Simmons and Major Heise to Tarija in May 1978. His 1989-1992 FOIA campaign also produced the declassified documents that confirmed Moon Dust's existence, providing the evidentiary backbone for the Tarija case's official record."
+      },
+      {
+        "id": "leonard-stringfield",
+        "role": "Foundational crash retrieval researcher who catalogued South American UAP events through his Status Reports series, active during the 1978 Tarija event",
+        "note": "Stringfield's Status Report I was published in 1978, the same year as Tarija. He was the primary archivist of international crash retrieval cases and was connected to APRO (Aerial Phenomena Research Organization), which had South American research operations during this period. His methodology of protecting source anonymity while documenting crash recovery testimony shaped how the Tarija case was investigated by civilian researchers."
+      }
+    ],
     "overview": {
       "key_facts": [
         "Date: May 6, 1978, approximately 4:15-4:30 p.m. local time",

@@ -473,6 +473,70 @@ No component file is needed. No `if` check in `InsidersList.tsx` is needed.
 
 ---
 
+## Adding a New Case
+
+Cases live in `data/cases.json` as entries in the top-level array. After adding a case, complete **all** of the following steps or the case will be invisible in search and missing from the changelog.
+
+### 1. Add the case entry to `data/cases.json`
+Follow the existing case schema. Required top-level fields:
+- `id` - kebab-case slug (e.g. `"1978-tarija-bolivia"`)
+- `name` - human-readable title
+- `date` - display date string (e.g. `"May 6, 1978"`)
+- `location` - full location description
+- `country` - primary country
+- `category` - one of: `crash-recovery`, `military-aviation`, `close-encounter`, `military-ground`, `mass-witness`, `mass-sighting`, `ground-visual`, `civilian-mass-sighting`, `aviation`, `transmedium`, `military-nuclear`, `military-maritime`, `military-aerial`, `ground-observation`, `government-nuclear`, `commercial-aviation`
+- `evidence_tier` - one of: `tier-1`, `tier-2`, `tier-3`
+- `classification_status` - typically `"unresolved"`, `"explained"`, or `"disputed"`
+- `summary` - 3-5 sentence overview shown in the listing card
+- `tags` - array of keyword strings
+- `insider_connections` - typed array (see `insider_connections schema` section below); use `[]` only if genuinely no connected figures exist - always cross-check the key figures registry first
+- `overview.key_facts` - bullet array of the most important facts
+- `evidence` - `video_audio`, `documentation`, `physical` sub-arrays
+- `witnesses` - array with `name`, `role`, `type`, `testimony` per witness
+- `official_response` - `agencies` array and `statements` array
+- `credibility` - `supporting` and `contradicting` arrays
+- `coordinates` - `{ "lat": float, "lng": float }` for map pin
+- `timeline` - chronological event array with `local` (date string) and `event` (description)
+- `competing_hypotheses` - array with `name`, `assessment` (`"possible"`, `"disputed"`, `"ruled-out"`), `summary`
+- `claims_taxonomy` - `verified`, `probable`, `disputed`, `speculative` sub-arrays
+- `sources` - array with `title`, `url`, `type`, `date`, `notes`
+
+### 2. Check insider_connections (required - do not skip)
+Before leaving `insider_connections` as `[]`, search the key figures registry for any figure whose documented work, programs, or testimony directly connects to the case. Common vectors:
+- Named figures who investigated or witnessed the case
+- Researchers whose published works cover the case
+- Officials whose programs (e.g. Moon Dust, AATIP) responded to the case
+- Congressional figures who cited or investigated the case
+
+Run: `grep -ri "[keyword]" data/key-figures/*.json` to check.
+
+### 3. Add a changelog entry (required)
+Add to the **top** of `data/changelog.json`:
+```json
+{
+  "date": "YYYY-MM-DD",
+  "category": "case",
+  "id": "your-case-id",
+  "name": "Case Display Name",
+  "action": "added",
+  "note": "One sentence describing what makes this case distinctive."
+}
+```
+
+### 4. Sync the Supabase search index (required - do not skip)
+**CRITICAL:** The global search runs against Supabase, NOT the JSON files. Adding a case to `cases.json` does NOT make it searchable. You MUST run:
+```bash
+node --env-file=.env.local scripts/populate-search-index.mjs
+```
+**Symptom if skipped:** The case detail page loads correctly, but searching by name on `/search` returns no results.
+
+This script is idempotent - safe to re-run at any time.
+
+### 5. Add sources to `pages/sources.tsx` (required)
+Find the `{/* Documented Cases */}` section and add `<SourceCard>` entries for the primary research sources used. See the Data Sources Page section below for the `<SourceCard>` interface.
+
+---
+
 ## Data Sources Page (`pages/sources.tsx`)
 
 The sources page is the platform's research attribution record. It must be kept current whenever new data is added to any category.
