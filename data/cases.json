@@ -10730,5 +10730,205 @@
         "notes": "Foundational documentation of the nuclear-UAP pattern; covers 160+ military personnel accounts at nuclear facilities. Does not specifically cover Bluegill Triple Prime (predates the 2025 Malmgren disclosure) but establishes the broader evidentiary context."
       }
     ]
+  },
+  {
+    "id": "edwards-afb-1971",
+    "name": "1971 UAP Crash North of Edwards AFB",
+    "date": "Summer 1971 (probable June 24, 1971)",
+    "location": "Mojave Desert, California City area (north of Edwards AFB)",
+    "country": "USA",
+    "category": "crash-recovery",
+    "evidence_tier": "tier-3",
+    "classification_status": "unresolved",
+    "summary": "An alleged UAP crash in the Mojave Desert approximately 20 miles north of Edwards Air Force Base in the summer of 1971. The case rests on two primary witness chains: civilian teenager Debbie Clayton, who observed a crash and military cordon, and Lorraine Dvorak Cordini, who claims she was aboard the craft as an abductee being returned from orbit. The 'acorn-shaped' craft descriptor, which gives the case its popular name, originates from a single anonymous source in researcher Leonard Stringfield's 1991 dictation notes - Clayton's original description was 'mushroom-shaped.' The most probable mundane explanation is the classified YF-12A crash of June 24, 1971, north of Edwards, a Lockheed Mach 3+ interceptor program that was still heavily classified at the time. Aviation historians Pete Merlin and Tony Moore independently identified this overlap. Kevin Randle, who included the case in his 1995 catalog, rated it 'Insufficient Data.'",
+    "tags": ["crash-recovery", "california", "edwards-afb", "mojave", "1970s", "stringfield", "yf-12a", "classified-aircraft"],
+    "insider_connections": [
+      {
+        "id": "richard-dolan",
+        "role": "UAP historian who documented the Edwards AFB incident cluster",
+        "note": "Dolan's 'UFOs and the National Security State' series covers the broader Edwards AFB UFO history (particularly the 1957 Cooper incident and 1965 multi-witness radar case). He has referenced the 1971 claim as part of that cluster but is not a primary investigator of this specific case."
+      }
+    ],
+    "overview": {
+      "key_facts": [
+        "Crash reportedly occurred in the California City area, approximately 20 miles north of Edwards AFB, in the high Mojave Desert",
+        "Primary civilian witness Debbie Clayton, then 14, reported hearing a roaring sound, observing a dust cloud, and seeing arriving military personnel cordon the site and confiscate at least one camera",
+        "Clayton's original description of the craft was 'mushroom-shaped' - the 'acorn' descriptor comes from a different, anonymous source",
+        "The 'acorn-shaped' descriptor appears in Leonard Stringfield's 1991 dictation notes citing an unnamed source who described 'an acorn-shaped, silver craft with no seams, doors, or windows'",
+        "Lorraine Dvorak Cordini ('Lori / The Watana') claims she was aboard the craft as a returning abductee and was found at the crash site with three gray entities; her detailed memories emerged 6-7 years later after she had already read secondary accounts online - methodologically inadmissible",
+        "On June 24, 1971, Lockheed YF-12A serial 60-6936 (a classified Mach 3+ interceptor derived from the A-12/SR-71 program) crashed just north of Edwards AFB due to an in-flight fuel line fire; crew Lt. Col. Ronald Layton and systems operator William Curtis ejected safely",
+        "The YF-12A program was still classified in 1971; the military response (armed cordon, confiscated cameras, no press access) is entirely consistent with black-program accident security",
+        "Aviation historians Pete Merlin and Tony Moore (The X-Hunters) identified the YF-12A crash as the most probable mundane explanation; this analysis has not been credibly rebutted",
+        "Kevin Randle included the case in 'A History of UFO Crashes' (1995) but classified it 'Insufficient Data' - notable given Randle accepts many contested cases",
+        "Project Blue Book closed in December 1969; this event postdates the program and has no applicable official UAP investigation record"
+      ]
+    },
+    "evidence": {
+      "video_audio": [],
+      "documentation": [
+        {
+          "title": "Stringfield 'UFO Crash Retrievals: Status Report' series (1978-1994)",
+          "description": "Leonard Stringfield's self-published status report series documenting crash retrieval claims from anonymous military and intelligence sources. The 1991 dictation notes contain the 'acorn-shaped' descriptor from an unidentified source. Stringfield was MUFON State Director for Ohio and a respected if methodologically limited researcher.",
+          "declassified": false
+        },
+        {
+          "title": "Kevin Randle - 'A History of UFO Crashes' (1995) - Case filed 'Insufficient Data'",
+          "description": "Randle included the 1971 Edwards account in his 1995 catalog (Avon Books) but rated it 'Insufficient Data,' indicating he did not consider it confirmed. This is a meaningful signal given Randle's general acceptance of contested cases.",
+          "declassified": false
+        },
+        {
+          "title": "YF-12A crash records - USAF accident report, June 24, 1971",
+          "description": "Official USAF accident records documenting the loss of YF-12A 60-6936 north of Edwards AFB on June 24, 1971. Aviation historians Merlin and Moore used these records to identify the probable mundane explanation for civilian observations. Aircraft data publicly available via SR-71 Online loss records.",
+          "declassified": true
+        }
+      ],
+      "physical": []
+    },
+    "witnesses": [
+      {
+        "name": "Debbie (Debralee H.) Clayton",
+        "role": "Civilian teenager, California City, CA",
+        "account": "Then 14 years old, living approximately 20 miles north of Edwards AFB. Reported hearing a loud roaring sound followed by a crash, observing a dust cloud, watching civilians gather, and seeing arriving military personnel armed with weapons cordon the area and confiscate at least one camera. Clayton's craft description was 'mushroom-shaped,' not 'acorn-shaped.' Her identity has been verified by researchers (not anonymous), which is a modest credibility indicator. No independent corroboration of her account has been produced.",
+        "credibility": "low-moderate"
+      },
+      {
+        "name": "Lorraine Dvorak Cordini (Lori Cordini / 'The Watana')",
+        "role": "Alleged abductee found at crash site",
+        "account": "Claims to have been aboard the crashed craft as a human abductee being returned from an orbital mothership. Reports being found at the site with three gray humanoid entities, one reportedly still alive. Her detailed memories of the incident emerged 6-7 years after the alleged event and only after she had read existing secondary crash accounts online in the mid-1990s. This explicit pre-exposure to secondary accounts before memory recovery makes her testimony methodologically inadmissible as independent corroboration.",
+        "credibility": "very-low"
+      }
+    ],
+    "official_response": {
+      "agencies": ["USAF", "Edwards AFB Command"],
+      "statements": [
+        "No USAF acknowledgment of any UAP event in 1971 near Edwards AFB has been located. The YF-12A crash of June 24, 1971, is documented in official accident records. Project Blue Book had closed in December 1969 and would not have covered a 1971 incident. No FOIA releases addressing a 1971 Edwards UAP recovery have been identified."
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Clayton is a named, verified civilian witness (not anonymous) whose observation of a crash and military cordon is internally consistent",
+        "The confiscation of cameras and armed military presence at the site is consistent with both a classified aircraft accident and a UAP recovery",
+        "Stringfield's research methodology, while reliant on anonymous sources, had a track record of preserving credible testimony from other cases",
+        "The 'acorn' shape descriptor is independently documented at Kecksburg 1965, suggesting possible terminological familiarity with such craft shapes among researchers"
+      ],
+      "contradicting": [
+        "The YF-12A crash of June 24, 1971 (classified Mach 3+ interceptor, north of Edwards) provides a complete mundane explanation for all civilian observations: crash, dust cloud, armed military cordon, confiscated cameras, no press access",
+        "The primary 'acorn' descriptor is from a single anonymous Stringfield source - not from the original civilian witness, who said 'mushroom-shaped'",
+        "Cordini's detailed abductee memories emerged after prior exposure to secondary accounts of the incident, making her testimony methodologically inadmissible",
+        "No physical evidence of any kind has been produced or documented",
+        "Kevin Randle, who accepts many contested cases, rated this 'Insufficient Data'",
+        "No corroborating witnesses beyond Clayton and Cordini have been named",
+        "The case lacks any FOIA documentation, Blue Book connection, or congressional reference"
+      ]
+    },
+    "coordinates": {
+      "lat": 35.13,
+      "lng": -117.99
+    },
+    "timeline": [
+      {
+        "date": "June 24, 1971",
+        "event": "YF-12A serial 60-6936 crashes north of Edwards AFB due to in-flight fuel fire; crew ejects safely. Program is still classified; media coverage minimal and no site photographs published."
+      },
+      {
+        "date": "Summer 1971",
+        "event": "Debbie Clayton (age 14), living in California City CA, reports observing a crash, dust cloud, military cordon, and camera confiscation. Describes the craft as 'mushroom-shaped.'"
+      },
+      {
+        "date": "c. 1977-1978",
+        "event": "Lorraine Dvorak Cordini claims to begin recovering memories of being aboard the crashed craft as a returning abductee, 6-7 years after the alleged event."
+      },
+      {
+        "date": "March 24, 1991",
+        "event": "Leonard Stringfield dictates notes from an anonymous source describing an 'acorn-shaped, silver craft with no seams, doors, or windows' at an unnamed 1971 crash site - later attributed to the Edwards area. This is the only source for the 'acorn' descriptor."
+      },
+      {
+        "date": "c. mid-1990s",
+        "event": "Cordini locates existing crash reports online and subsequently expands her recovered memory account. This sequence - reading secondary accounts before full memory recovery - renders her testimony methodologically inadmissible as independent corroboration."
+      },
+      {
+        "date": "1995",
+        "event": "Kevin Randle includes the Edwards 1971 case in 'A History of UFO Crashes' (Avon Books) but classifies it 'Insufficient Data.' This is a meaningful signal of evidential weakness from an author who accepts many contested cases."
+      },
+      {
+        "date": "c. 2010s",
+        "event": "Aviation historians Pete Merlin and Tony Moore (The X-Hunters) identify the YF-12A crash of June 24, 1971 as the probable mundane explanation for civilian observations. Analysis has not been credibly rebutted."
+      }
+    ],
+    "competing_hypotheses": [
+      {
+        "hypothesis": "YF-12A classified aircraft crash misidentified as UAP",
+        "assessment": "most-probable",
+        "notes": "A verified classified military aircraft accident (Lockheed YF-12A, June 24, 1971) occurred in exactly this location. The military response - armed personnel, cordon, confiscated cameras, no press access - is entirely consistent with black-program accident security. Aviation historians Pete Merlin and Tony Moore independently identified this overlap. This hypothesis accounts for all civilian observations without requiring extraordinary claims."
+      },
+      {
+        "hypothesis": "Genuine UAP crash with military recovery operation",
+        "assessment": "disputed",
+        "notes": "Clayton's observation of a crash, military cordon, and camera confiscation is consistent with recovery operations. Stringfield's source described craft characteristics (no seams, doors, or windows) inconsistent with 1971 aircraft technology. However, the anonymous sourcing, shape descriptor inconsistency, contaminated abductee testimony, and complete absence of physical evidence significantly undermine this hypothesis."
+      },
+      {
+        "hypothesis": "Composite case - real civilian observations around a classified aircraft loss, with subsequent elaboration",
+        "assessment": "possible",
+        "notes": "Clayton's contemporaneous observation of a crash and military cordon may be genuine (consistent with the YF-12A loss), while the 'acorn' descriptor and abductee narrative represent subsequent elaboration by separate, less reliable sources. This would explain why the core civilian observation is consistent while the UFO-specific details are inconsistent and unverified."
+      }
+    ],
+    "claims_taxonomy": {
+      "verified": [
+        "A classified military aircraft (YF-12A) crashed north of Edwards AFB on June 24, 1971",
+        "Military personnel cordoned the crash area and restricted media access (consistent with classified program security)"
+      ],
+      "probable": [
+        "Debbie Clayton observed a crash event and military response in the California City area in 1971",
+        "Cameras were confiscated and the area was secured by armed military personnel"
+      ],
+      "disputed": [
+        "The crashed object was non-human in origin",
+        "The craft was 'acorn-shaped' (Stringfield's anonymous source; inconsistent with Clayton's 'mushroom-shaped' description)",
+        "Gray humanoid entities were recovered at the crash site"
+      ],
+      "speculative": [
+        "Lorraine Dvorak Cordini was aboard the craft as a human abductee being returned from orbit",
+        "One non-human entity survived the crash",
+        "Materials from the crash were transferred to a classified storage facility"
+      ]
+    },
+    "sources": [
+      {
+        "title": "Leonard Stringfield - UFO Crash Retrievals: Status Reports I-VII (1978-1994)",
+        "url": "https://archive.org/details/ufo-crash-retrievals-status-reports-1-vii",
+        "type": "research",
+        "notes": "Primary UAP source. Stringfield's 1991 dictation notes contain the only 'acorn-shaped' descriptor for this case, attributed to an anonymous source. Complete status report series archived at Internet Archive."
+      },
+      {
+        "title": "Kevin Randle - A History of UFO Crashes (Avon Books, 1995)",
+        "url": "https://archive.org/details/historyofufocras0000rand",
+        "type": "book",
+        "notes": "Secondary UAP source. Randle compiled the Edwards 1971 account but rated it 'Insufficient Data,' a meaningful signal of evidentiary weakness. ISBN 0-380-77666-9."
+      },
+      {
+        "title": "Pete Merlin and Tony Moore - The X-Hunters: YF-12A Crash Documentation",
+        "url": "https://thexhunters.com/xpeditions/yf-12a_hunt.html",
+        "type": "analysis",
+        "notes": "Primary skeptical analysis. Aviation historians Merlin and Moore documented the YF-12A crash of June 24, 1971 north of Edwards AFB and identified it as the probable mundane explanation for civilian UAP observations. Essential counterpoint to crash retrieval claims."
+      },
+      {
+        "title": "SR-71 Online - Blackbird Loss Records (YF-12A 60-6936)",
+        "url": "https://www.sr-71.org/blackbird/losses.php",
+        "type": "reference",
+        "notes": "Aviation archive documenting all A-12/YF-12/SR-71 losses including YF-12A 60-6936 on June 24, 1971. Establishes the verified historical context of the classified aircraft crash that coincides with UAP reports."
+      },
+      {
+        "title": "UFO Casebook - 1971 Abductee Involved in UFO Crash Near Edwards AFB",
+        "url": "https://www.ufocasebook.com/abducteecrashedwardsafb.html",
+        "type": "reference",
+        "notes": "Aggregated case documentation including both the Clayton civilian witness account and the Cordini abductee narrative. Useful for primary account comparison."
+      },
+      {
+        "title": "Richard Geldreich Jr. - Lori Cordini: The Only (Human) Survivor found at a 1971 Crash Retrieval (Medium)",
+        "url": "https://medium.com/@richgel99/lori-cordini-the-only-human-survivor-found-at-a-1971-crash-retrieval-68f781c77faf",
+        "type": "analysis",
+        "notes": "Contemporary researcher aggregation of the Cordini case materials. Not an independent source, but useful for timeline of when her memories emerged relative to exposure to secondary accounts."
+      }
+    ]
   }
 ]
