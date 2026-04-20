@@ -2,6 +2,14 @@
   {
     "date": "2026-04-19",
     "category": "case",
+    "id": "san-agustin-1947",
+    "name": "Plains of San Agustin Incident",
+    "action": "added",
+    "note": "The 1947 Plains of San Agustin claim - a heavily investigated and largely discredited crash-recovery narrative; documents the secondhand Barnett account, Gerald Anderson's proven fabrications, and Kevin Randle's systematic investigation concluding the event did not occur."
+  },
+  {
+    "date": "2026-04-19",
+    "category": "case",
     "id": "magenta-1933",
     "name": "Magenta UFO Crash - Italy 1933",
     "action": "added",
