@@ -10937,5 +10937,243 @@
         "notes": "Contemporary researcher aggregation of the Cordini case materials. Not an independent source, but useful for timeline of when her memories emerged relative to exposure to secondary accounts."
       }
     ]
+  },
+  {
+    "id": "coyame-1974",
+    "name": "Coyame UFO Crash / Chihuahua Disk",
+    "date": "August 25-26, 1974",
+    "location": "Near Coyame del Sotol, Chihuahua, Mexico",
+    "country": "Mexico",
+    "category": "crash-recovery",
+    "evidence_tier": "tier-3",
+    "classification_status": "unresolved",
+    "summary": "An alleged mid-air collision between a UAP and a Cessna light aircraft over northern Mexico's Chihuahuan Desert on August 25, 1974, followed by a clandestine Mexican military recovery operation and an alleged unauthorized U.S. cross-border retrieval from Fort Bliss. The entire case rests on a single anonymous 1992 document - the 'Deneb Report' (signed only 'J.S.') - which was mailed simultaneously to multiple UFO researchers and first published by Leonard Stringfield in his 1994 Status Report VII. Stringfield himself published it with the caveat: 'Despite the risk of publishing a bunch of baloney, the full text of the report is reproduced herewith, hoping the incident can be verified or exposed as mis-or-disinformation.' Critical evidentiary gaps include: zero FAA or NTSB records of any downed Cessna in the area; no Mexican military records from SEDENA; no radar logs from NORAD or FAA centers covering that airspace; and no named witnesses from either country's military. The document has no classification markings, agency headers, or document-control numbers. The most thorough field investigators (Torres and Uriarte, 2007/2013) concluded 'the evidence is definitely thin.' Often called 'Mexico's Roswell.'",
+    "tags": ["crash-recovery", "mexico", "chihuahua", "anonymous-document", "deneb-report", "biological-hazard-claimed", "cross-border-operation-alleged", "1970s", "stringfield"],
+    "insider_connections": [
+      {
+        "id": "leonard-stringfield",
+        "role": "Primary documentarian - first published the Deneb Report",
+        "note": "Stringfield published the Coyame 'Deneb Report' in full in his February 1994 *Status Report VII*, the first verifiable public appearance of the document. His own published assessment was explicitly cautionary: he hoped the publication would prompt verification or expose it as disinformation. He died December 1994 without ever verifying the account. His name is frequently cited in support of the case without quoting his actual skeptical framing."
+      },
+      {
+        "id": "richard-dolan",
+        "role": "UAP historian who catalogued Coyame as a historically notable retrieval claim",
+        "note": "Dolan referenced the Coyame incident in his *UFOs and the National Security State* survey as an uncorroborated but historically significant claim in the broader crash retrieval literature. He did not conduct independent field investigation and is not a primary source for the case."
+      }
+    ],
+    "overview": {
+      "key_facts": [
+        "August 25, 1974, 22:07: U.S. Air Defense radar allegedly tracked an unidentified object entering North American airspace from the Gulf of Mexico at approximately 2,200 knots (~2,530 mph) at high altitude, decelerating and descending in 'level steps, not a smooth curve' before disappearing near Coyame, Chihuahua",
+        "52 minutes after radar loss, civilian radio reports surfaced of a small aircraft from El Paso International having gone down in the same area",
+        "August 26: Mexican civilian and military aircraft spotted wreckage at two sites - one containing a light plane, the second 'a circular shaped object, apparently in one piece, although damaged' approximately 16 feet, 5 inches in diameter, ~5 feet thick, silver-polished, with no visible doors, windows, or markings",
+        "Mexican military imposed radio silence on all search efforts after the discovery",
+        "U.S. reconnaissance reportedly showed both the disk and aircraft wreckage loaded onto a Mexican military convoy moving northward; a U.S. recovery team from Fort Bliss allegedly staged three UH-1 Hueys and one CH-53 Sea Stallion to intercept",
+        "Upon reaching the halted convoy, U.S. recovery team reportedly found all Mexican military personnel dead 'most within the trucks,' cause unknown; document speculates chemical or microbiological release from the disk's 12-inch rupture",
+        "The disk was allegedly airlifted to the U.S. border; remaining Mexican vehicles, personnel remains, and Cessna wreckage were reportedly destroyed with high explosives before departure",
+        "The 'Deneb Report' does NOT explicitly claim alien bodies were recovered - a notable restraint cited by Stringfield as atypical of crude fabrications",
+        "No FAA or NTSB records of any downed Cessna in the Coyame area on or around August 25-26, 1974 have ever been found - this is the single largest evidentiary gap, since an El Paso departure would have required a flight plan and generated multiple records",
+        "No U.S. military records, NORAD radar logs, FAA radar data, or Mexican government records corroborating any element of the account have been produced or obtained via FOIA"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "UFO Files 'Mexico's Roswell' (History Channel, Season 2 Episode 8, 2005) - first major television documentary on the case; uses Torres/Uriarte fieldwork as primary source",
+        "UFO Hunters 'Crash and Retrieval' (History Channel, Season 1 Episode 4, 2008, IMDB tt1192545) - expanded coverage of the Coyame claim alongside other alleged retrievals"
+      ],
+      "documentation": [
+        "The 'Deneb Report' (1992, anonymous) - 'Research Findings on the Chihuahua Disk Crash,' signed 'J.S.' / addressed 'To All Deneb Team Members'; anonymous typescript mailed simultaneously to multiple researchers in 1992; first published in Stringfield's Status Report VII (February 1994). No classification markings, agency headers, or document-control numbers. Cannot be authenticated as a government document.",
+        "Stringfield Status Report VII (February 1994) - Leonard Stringfield, 'UFO Crash Retrievals: Search for Proof in a Hall of Mirrors'; first publication of the Deneb document with explicit disclaimers; archived at Internet Archive",
+        "Torres and Uriarte field investigation notes and SEDENA/FAA inquiry results (2007-2013) - fieldwork revealed no FAA records of downed Cessna, conflicting local witness accounts; published conclusion: 'The evidence is definitely thin'"
+      ],
+      "physical": [
+        "Trace material samples collected by Torres and Uriarte during site visits to the Coyame area; independent laboratory analysis returned inconclusive results showing some unidentified elements - noted by Randle as insufficient basis for anomalous conclusions"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Anonymous 'J.S.' (Deneb Report author)",
+        "role": "Claimed government/intelligence insider; author of the primary source document",
+        "type": "government",
+        "testimony": "The entire case account derives from a 1992 anonymous typescript signed only 'J.S.' and addressed to 'All Deneb Team Members.' The author has never been identified. No credentials, clearances, or institutional affiliation have been established. The document uses correct military terminology and distinguishes between confirmed facts and speculation in a manner Stringfield noted as atypical of crude fabrications, but this is insufficient to authenticate the account."
+      },
+      {
+        "name": "Elaine Douglass",
+        "role": "Operation Right to Know, Washington D.C. - document conduit",
+        "type": "civilian",
+        "testimony": "MIT-educated UAP activist who received the anonymous Deneb document by mail at Operation Right to Know and forwarded it to Leonard Stringfield. She did not independently investigate the underlying events and her own assessment of the document's authenticity is not well-documented. Her role was as conduit between the anonymous author and the research community."
+      },
+      {
+        "name": "Local Coyame area residents (unnamed, via Torres/Uriarte)",
+        "role": "Chihuahuan Desert area civilian witnesses interviewed by field investigators",
+        "type": "civilian",
+        "testimony": "Torres and Uriarte's 2007-2013 fieldwork in the Coyame area produced interviews with local residents who recalled something falling in the area in 1974. Accounts were inconsistent and could equally describe the Cessna crash itself. No military personnel from either country have come forward as named witnesses in any form."
+      }
+    ],
+    "official_response": {
+      "agencies": ["U.S. Air Force", "FAA", "NTSB", "SEDENA (Mexican Secretariat of National Defense)", "NORAD / Air Defense Command"],
+      "statements": [
+        {
+          "source": "FAA / NTSB",
+          "date": "Ongoing (FOIA inquiries 2007-2013)",
+          "statement": "No FAA or NTSB records exist for a downed Cessna 182 in the Coyame, Chihuahua area on or around August 25-26, 1974. An El Paso International departure to Mexico City would have required a filed flight plan, generated a missing aircraft report, and triggered search-and-rescue procedures. The absence of these records is the single most significant evidentiary gap in the case."
+        },
+        {
+          "source": "U.S. Air Force / NORAD",
+          "date": "No response",
+          "statement": "No U.S. Air Force or NORAD acknowledgment of any cross-border retrieval operation from Fort Bliss in August 1974 has been identified. No FOIA requests have returned radar logs from NORAD, FAA Air Route Traffic Control Centers (Albuquerque or Dallas-Fort Worth, which covered the relevant airspace), or Air Defense Command facilities for August 25, 1974."
+        },
+        {
+          "source": "SEDENA (Mexican Secretariat of National Defense)",
+          "date": "No response",
+          "statement": "No records from the Mexican military confirming a recovery operation near Coyame in August 1974 have been produced. Torres and Uriarte's inquiries to Mexican aviation and defense authorities returned no relevant records. Mexican military radio silence during the alleged recovery operation (as claimed in the Deneb document) has no independent corroboration."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "The document's notable restraint in not claiming alien bodies were recovered is atypical of crude fabrications, which typically include maximum dramatic detail",
+        "Stringfield observed the document uses correct military terminology and distinguishes between confirmed facts and speculation",
+        "Simultaneous mailing to multiple researchers in 1992 (before widespread internet) represents real effort and deliberate targeting",
+        "The northern Chihuahua region is geographically plausible for U.S. radar detection and cross-border interest given proximity to Fort Bliss",
+        "The claimed craft dimensions (16'5\" diameter, ~5 feet thick, ~1,500 lbs) are oddly specific and internally consistent with an unusual material density"
+      ],
+      "contradicting": [
+        "The entire case rests on a single anonymous document with no classification markings, no agency headers, and no document-control numbers - none of the authenticating features present in genuine government documents",
+        "No FAA or NTSB records exist for any downed Cessna in the area - the most damaging single gap, as a filed flight plan and search-and-rescue would have generated extensive paper records",
+        "No radar logs from NORAD, Air Defense Command, or FAA centers for August 25, 1974 have been produced",
+        "Zero U.S. military records, operational orders, or Fort Bliss departure records supporting the alleged cross-border mission",
+        "No Mexican government records from SEDENA or any other agency",
+        "No named military witnesses from either country have come forward in over 50 years",
+        "Progressive embellishment across secondary sources (e.g., '23 deaths' figure appearing online has no basis in the primary document)",
+        "Kevin Randle noted the trace material analysis results are 'insufficient basis for anomalous conclusions'",
+        "Drug trafficking alternative: a Cessna without a flight plan (common in drug operations) crashing in northern Chihuahua in 1974, with subsequent Mexican military drug-interdiction recovery and radio silence, explains all civilian observations without UAP involvement"
+      ]
+    },
+    "coordinates": {
+      "lat": 29.461,
+      "lng": -105.093
+    },
+    "timeline": [
+      {
+        "local": "August 25, 1974 - 22:07",
+        "event": "U.S. Air Defense radar tracks an unidentified object entering airspace from the Gulf of Mexico at ~2,200 knots. Object decelerates, alters course to heading 290 degrees, and descends in 'level steps' rather than a smooth curve before disappearing from radar near Coyame, Chihuahua."
+      },
+      {
+        "local": "August 25, 1974 - ~22:59",
+        "event": "52 minutes after radar disappearance, civilian radio reports surface of a small aircraft from El Paso International, bound for Mexico City, having gone down in the same general area."
+      },
+      {
+        "local": "August 26, 1974 - ~10:35",
+        "event": "Mexican civilian and military aircraft spot wreckage at two sites. Site 1: light plane wreckage. Site 2: 'a circular shaped object, apparently in one piece, although damaged' - described as silver-polished, ~16.5 feet diameter, ~5 feet thick, no visible doors or windows. Mexican military imposes radio silence."
+      },
+      {
+        "local": "August 26, 1974 - afternoon",
+        "event": "U.S. reconnaissance shows both sites recovered and loaded on Mexican military flatbed trucks in a convoy moving northward. A U.S. recovery team allegedly assembles at Fort Bliss, Texas - three UH-1 Hueys and one CH-53 Sea Stallion, all unmarked sand-color."
+      },
+      {
+        "local": "August 26, 1974 - ~16:53",
+        "event": "U.S. helicopters reach the convoy location. All Mexican convoy personnel found dead 'most within the trucks.' Cause of death not determined. Recovery team wears bioprotection suits. The disk is airlifted by the Sea Stallion at 17:14. Remaining vehicles, personnel, and Cessna wreckage allegedly destroyed with high explosives."
+      },
+      {
+        "local": "February 1992",
+        "event": "Anonymous 'Deneb Report' mailed simultaneously to multiple UFO researchers in the U.S. and Europe. Signed only 'J.S.' and addressed to 'All Deneb Team Members.' Author and origin remain unidentified."
+      },
+      {
+        "local": "February 1994",
+        "event": "Leonard Stringfield publishes the full Deneb document text in Status Report VII with explicit disclaimers: 'Despite the risk of publishing a bunch of baloney... hoping the incident can be verified or exposed as mis-or-disinformation.' The case enters the mainstream UAP research literature."
+      },
+      {
+        "local": "December 1994",
+        "event": "Leonard Stringfield dies. He never verified the Coyame account."
+      },
+      {
+        "local": "2005",
+        "event": "History Channel UFO Files 'Mexico's Roswell' episode brings the case to a wide television audience. Torres and Uriarte's field investigation serves as the primary source."
+      },
+      {
+        "local": "2007-2013",
+        "event": "Noe Torres and Ruben Uriarte conduct the most thorough field investigation to date - site visits to Coyame, local witness interviews, FAA/SEDENA inquiries. Conclusion: 'The evidence is definitely thin... it's an amazing story but one that cries out for more data.' FAA inquiry returns no records of a downed Cessna."
+      }
+    ],
+    "competing_hypotheses": [
+      {
+        "name": "Genuine UAP mid-air collision and clandestine cross-border retrieval",
+        "assessment": "disputed",
+        "summary": "The Deneb document's account - a non-human craft colliding with a Cessna, Mexican military recovery, cross-border U.S. retrieval from Fort Bliss - is consistent with other alleged crash retrieval patterns. The document's unusual restraint (no alien body claims) and use of correct military terminology are atypical of crude fabrications. However, the complete absence of any corroborating records from FAA, NTSB, NORAD, or Mexican authorities makes independent confirmation impossible."
+      },
+      {
+        "name": "Drug trafficking Cessna crash misidentified or mythologized",
+        "assessment": "possible",
+        "summary": "Northern Chihuahua in 1974 was a major narcotics trafficking corridor. A Cessna without a filed flight plan (standard in drug operations) crashing in the area would explain the absence of FAA records. A subsequent Mexican military drug-interdiction or evidence-removal operation with radio silence explains the military response. The UAP narrative may have been grafted onto a genuine but mundane military-controlled crash site by a creative or disinforming 'J.S.' writing 18 years after the fact."
+      },
+      {
+        "name": "Fabricated document / deliberate disinformation",
+        "assessment": "possible",
+        "summary": "The document's complete absence of authenticating government markers (classification stamps, agency headers, document-control numbers), its anonymous authorship, the progressive embellishment of secondary accounts, and zero corroborating records all point toward a fabricated or disinformation document. The simultaneous multi-recipient 1992 mailing suggests deliberate intent, which is consistent with both hoaxing and active disinformation by intelligence actors seeking to muddy UAP research waters."
+      }
+    ],
+    "claims_taxonomy": {
+      "verified": [
+        "The Deneb Report document exists and was published by Leonard Stringfield in Status Report VII (February 1994)",
+        "No FAA or NTSB records exist for a downed Cessna in the Coyame area on or around August 25-26, 1974",
+        "Torres and Uriarte conducted field investigation and their inquiry to Mexican and U.S. aviation authorities returned no corroborating records"
+      ],
+      "probable": [],
+      "disputed": [
+        "A UAP entered North American airspace at ~2,200 knots and collided with a Cessna over northern Chihuahua on August 25, 1974",
+        "A 16-foot silver disk with no visible doors or windows was recovered by Mexican military and subsequently transferred to U.S. forces",
+        "All Mexican military convoy personnel died from an unknown agent (chemical or microbiological) released from the craft",
+        "A U.S. recovery team from Fort Bliss conducted an unauthorized cross-border retrieval operation and destroyed the Mexican military convoy before departing"
+      ],
+      "speculative": [
+        "The recovered craft was transported to Atlanta, Georgia (per the document) and subsequently to Wright-Patterson AFB (per later secondary accounts)",
+        "The 'Deneb Team' referenced in the document's header is a real classified intelligence program",
+        "U.S. bioprotection suits successfully protected the recovery team from whatever killed the Mexican convoy personnel"
+      ]
+    },
+    "sources": [
+      {
+        "title": "Leonard Stringfield - UFO Crash Retrievals: Status Report VII (February 1994)",
+        "url": "https://archive.org/details/ufo-crash-retrievals-status-reports-1-vii",
+        "type": "book",
+        "date": "1994",
+        "notes": "First publication of the 'Deneb Report' document text. Stringfield published it with explicit reservations: 'Despite the risk of publishing a bunch of baloney...' Essential for understanding the document's actual evidentiary status as assessed by its first serious researcher."
+      },
+      {
+        "title": "Torres, Noe and Uriarte, Ruben - Mexico's Roswell: The Chihuahua UFO Crash (2007)",
+        "url": "https://www.amazon.com/Mexicos-Roswell-Noe-Torres/dp/1602640130",
+        "type": "book",
+        "date": "2007",
+        "notes": "Most thorough field investigation of the case. Torres (journalist) and Uriarte (MUFON Northern California State Director) conducted site visits and government inquiries. Their own conclusion: 'The evidence is definitely thin.' Primary source for the FAA records gap finding."
+      },
+      {
+        "title": "Torres, Noe; Uriarte, Ruben; et al. - The Coyame Incident: UFO Crash Near Presidio, Texas (2013)",
+        "url": "https://archive.org/details/coyameincidentuf0000torr",
+        "type": "book",
+        "date": "2013",
+        "notes": "Follow-up expanded investigation. Archived at Internet Archive. Provides the most detailed account of SEDENA and FAA inquiry responses and local witness interviews."
+      },
+      {
+        "title": "Kevin Randle - 'The Coyame UFO Crash' (2013)",
+        "url": "http://kevinrandle.blogspot.com/2013/11/the-coyame-ufo-crash.html",
+        "type": "media",
+        "date": "November 2013",
+        "notes": "Rigorous skeptical analysis by retired U.S. Army Reserve Lt. Col. and UAP researcher. Core critique: no FAA records for the alleged Cessna crash; single anonymous source with no authentication markers; trace material analysis returns inconclusive results insufficient for anomalous conclusions."
+      },
+      {
+        "title": "UFO Files - 'Mexico's Roswell' (History Channel, Season 2 Episode 8, 2005)",
+        "url": "https://www.youtube.com/watch?v=SeQGpjQ7N90",
+        "type": "media",
+        "date": "2005",
+        "notes": "First major television documentary treatment of the Coyame case. Uses Torres/Uriarte fieldwork as primary source. Wide audience exposure that popularized 'Mexico's Roswell' as the case's common name."
+      },
+      {
+        "title": "UFO Hunters - 'Crash and Retrieval' (History Channel, Season 1 Episode 4, 2008)",
+        "url": "https://www.imdb.com/title/tt1192545/",
+        "type": "media",
+        "date": "2008",
+        "notes": "Extended coverage of the Coyame case alongside other alleged crash retrievals. Secondary source drawing on Stringfield and Torres/Uriarte."
+      }
+    ]
   }
 ]
