@@ -10744,9 +10744,24 @@
     "tags": ["crash-recovery", "california", "edwards-afb", "mojave", "1970s", "stringfield", "yf-12a", "classified-aircraft"],
     "insider_connections": [
       {
+        "id": "leonard-stringfield",
+        "role": "Primary documentarian - sole source for the 'acorn-shaped' craft descriptor",
+        "note": "Stringfield's March 1991 dictation notes contain the only 'acorn-shaped' descriptor for this case, cited from an anonymous source. As Director of CRIFO and author of the UFO Crash Retrievals Status Reports I-VII, he is the direct chain of custody for the case's defining detail. Without his documentation the 1971 Edwards case has no distinguishing craft description at all."
+      },
+      {
+        "id": "ben-rich",
+        "role": "Lockheed Skunk Works engineer (later Director) during the YF-12A era",
+        "note": "The YF-12A that crashed north of Edwards on June 24, 1971 was a Lockheed Skunk Works aircraft - the program Rich was deeply embedded in (he became Skunk Works Director in 1975, was a senior engineer in 1971). His famous end-of-life statements ('We now have the technology to take ET home'; 'these technologies are locked up in black projects') have led researchers to argue Skunk Works held recovered non-human craft. If UAP activity accompanied the YF-12A loss, Rich's organizational position makes him the most plausible insider-knowledge node."
+      },
+      {
+        "id": "mark-mccandlish",
+        "role": "ARV/fluxliner witness whose testimony specifically names Edwards AFB as a back-engineering facility",
+        "note": "McCandlish testified in Greer's Disclosure Project and to Congressional staff that reverse-engineered alien reproduction vehicles (ARVs) were housed and demonstrated at Edwards AFB. While his primary claim involves a 1988 Norton AFB demonstration, he consistently names Edwards as part of the broader recovered craft study program. His testimony provides the most direct link between an established DECUR figure and Edwards as a crash retrieval/back-engineering site."
+      },
+      {
         "id": "richard-dolan",
         "role": "UAP historian who documented the Edwards AFB incident cluster",
-        "note": "Dolan's 'UFOs and the National Security State' series covers the broader Edwards AFB UFO history (particularly the 1957 Cooper incident and 1965 multi-witness radar case). He has referenced the 1971 claim as part of that cluster but is not a primary investigator of this specific case."
+        "note": "Dolan's 'UFOs and the National Security State' series covers the broader Edwards AFB UAP history (the 1957 Cooper film, the 1965 multi-witness radar case). He has referenced the 1971 crash claim as part of that cluster but is not a primary investigator of this specific incident."
       }
     ],
     "overview": {
