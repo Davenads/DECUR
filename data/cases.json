@@ -8831,7 +8831,18 @@
       "cemetery",
       "Texas"
     ],
-    "insider_connections": [],
+    "insider_connections": [
+      {
+        "id": "vallee",
+        "role": "Historical researcher - documented the 1897 Great Airship Wave in 'Passport to Magonia' (1969), using Aurora and similar cases to argue for a persistent cross-cultural pattern in UAP encounter reports",
+        "note": "Vallée's 'Passport to Magonia' is the foundational academic work covering the 1896-1897 airship wave. He catalogued the Aurora case alongside hundreds of historical parallels to argue that UAP phenomena predate modern aviation and follow consistent archetypes across centuries - directly challenging the purely extraterrestrial hypothesis."
+      },
+      {
+        "id": "leonard-stringfield",
+        "role": "Crash retrieval archivist - his Status Reports series (1978-1994) catalogued Aurora 1897 as historical context for the earliest alleged North American crash retrieval claim",
+        "note": "Stringfield's seven-volume Crash/Retrievals Status Reports series documented alleged crash retrievals across eras. Aurora 1897, as the earliest claimed crash retrieval on American soil, served as historical baseline context in the broader crash retrieval literature Stringfield was compiling and systematizing."
+      }
+    ],
     "overview": {
       "key_facts": [
         "April 17, 1897 (alleged): An airship reportedly crashed into Judge J.S. Proctor's windmill on his property in Aurora, Wise County, Texas, at approximately 6:00 AM",
