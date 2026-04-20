@@ -501,6 +501,19 @@ Follow the existing case schema. Required top-level fields:
 - `claims_taxonomy` - `verified`, `probable`, `disputed`, `speculative` sub-arrays
 - `sources` - array with `title`, `url`, `type`, `date`, `notes`
 
+**CRITICAL - `sources[].type` must be one of these exact values** (any other value renders a typeless pill with no background color):
+
+| `type` value | Badge color | Use for |
+|---|---|---|
+| `official` | Green | Formal government/military briefings, sworn testimony documents, congressional records |
+| `foia` | Teal | Documents released via FOIA requests, CIA/State Dept. reading room releases |
+| `media` | Blue | News articles, blogs, podcasts, YouTube interviews, databases, research websites |
+| `testimony` | Purple | Firsthand witness statements, affidavits (when the source IS the testimony) |
+| `academic` | Amber | Peer-reviewed papers, university publications, scholarly journals |
+| `book` | Gray | Published books |
+
+**Do not use:** `"government"`, `"research"`, `"interview"`, or any other value - these are not in the `CaseSourceType` union and will render without a pill badge.
+
 ### 2. Check insider_connections (required - do not skip)
 Before leaving `insider_connections` as `[]`, search the key figures registry for any figure whose documented work, programs, or testimony directly connects to the case. Common vectors:
 - Named figures who investigated or witnessed the case

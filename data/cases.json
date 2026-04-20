@@ -9282,7 +9282,7 @@
     },
     "coordinates": {
       "lat": 45.464,
-      "lng": 8.880
+      "lng": 8.88
     },
     "timeline": [
       {
@@ -10741,7 +10741,16 @@
     "evidence_tier": "tier-3",
     "classification_status": "unresolved",
     "summary": "An alleged UAP crash in the Mojave Desert approximately 20 miles north of Edwards Air Force Base in the summer of 1971. The case rests on two primary witness chains: civilian teenager Debbie Clayton, who observed a crash and military cordon, and Lorraine Dvorak Cordini, who claims she was aboard the craft as an abductee being returned from orbit. The 'acorn-shaped' craft descriptor, which gives the case its popular name, originates from a single anonymous source in researcher Leonard Stringfield's 1991 dictation notes - Clayton's original description was 'mushroom-shaped.' The most probable mundane explanation is the classified YF-12A crash of June 24, 1971, north of Edwards, a Lockheed Mach 3+ interceptor program that was still heavily classified at the time. Aviation historians Pete Merlin and Tony Moore independently identified this overlap. Kevin Randle, who included the case in his 1995 catalog, rated it 'Insufficient Data.'",
-    "tags": ["crash-recovery", "california", "edwards-afb", "mojave", "1970s", "stringfield", "yf-12a", "classified-aircraft"],
+    "tags": [
+      "crash-recovery",
+      "california",
+      "edwards-afb",
+      "mojave",
+      "1970s",
+      "stringfield",
+      "yf-12a",
+      "classified-aircraft"
+    ],
     "insider_connections": [
       {
         "id": "leonard-stringfield",
@@ -10802,7 +10811,10 @@
       }
     ],
     "official_response": {
-      "agencies": ["USAF", "Edwards AFB Command"],
+      "agencies": [
+        "USAF",
+        "Edwards AFB Command"
+      ],
       "statements": [
         {
           "source": "USAF / Edwards AFB Command",
@@ -10948,7 +10960,17 @@
     "evidence_tier": "tier-3",
     "classification_status": "unresolved",
     "summary": "An alleged mid-air collision between a UAP and a Cessna light aircraft over northern Mexico's Chihuahuan Desert on August 25, 1974, followed by a clandestine Mexican military recovery operation and an alleged unauthorized U.S. cross-border retrieval from Fort Bliss. The entire case rests on a single anonymous 1992 document - the 'Deneb Report' (signed only 'J.S.') - which was mailed simultaneously to multiple UFO researchers and first published by Leonard Stringfield in his 1994 Status Report VII. Stringfield himself published it with the caveat: 'Despite the risk of publishing a bunch of baloney, the full text of the report is reproduced herewith, hoping the incident can be verified or exposed as mis-or-disinformation.' Critical evidentiary gaps include: zero FAA or NTSB records of any downed Cessna in the area; no Mexican military records from SEDENA; no radar logs from NORAD or FAA centers covering that airspace; and no named witnesses from either country's military. The document has no classification markings, agency headers, or document-control numbers. The most thorough field investigators (Torres and Uriarte, 2007/2013) concluded 'the evidence is definitely thin.' Often called 'Mexico's Roswell.'",
-    "tags": ["crash-recovery", "mexico", "chihuahua", "anonymous-document", "deneb-report", "biological-hazard-claimed", "cross-border-operation-alleged", "1970s", "stringfield"],
+    "tags": [
+      "crash-recovery",
+      "mexico",
+      "chihuahua",
+      "anonymous-document",
+      "deneb-report",
+      "biological-hazard-claimed",
+      "cross-border-operation-alleged",
+      "1970s",
+      "stringfield"
+    ],
     "insider_connections": [
       {
         "id": "leonard-stringfield",
@@ -11010,7 +11032,13 @@
       }
     ],
     "official_response": {
-      "agencies": ["U.S. Air Force", "FAA", "NTSB", "SEDENA (Mexican Secretariat of National Defense)", "NORAD / Air Defense Command"],
+      "agencies": [
+        "U.S. Air Force",
+        "FAA",
+        "NTSB",
+        "SEDENA (Mexican Secretariat of National Defense)",
+        "NORAD / Air Defense Command"
+      ],
       "statements": [
         {
           "source": "FAA / NTSB",
@@ -11411,28 +11439,28 @@
       {
         "title": "CIA FOIA: Bolivia Reports Conflict On Details Of Fallen Object",
         "url": "https://www.cia.gov/readingroom/document/0005515665",
-        "type": "government",
+        "type": "foia",
         "date": "1978",
         "notes": "Declassified CIA document reflecting internal U.S. intelligence community interest in conflicting Bolivian accounts. Available in the CIA FOIA Reading Room. One of the primary official documents for this case."
       },
       {
         "title": "Inexplicata - Bolivia: Remembering the Tarija UFO Crash (May 6, 1978)",
         "url": "https://inexplicata.blogspot.com/2016/05/bolivia-remembering-tarija-ufo-crash-6.html",
-        "type": "research",
+        "type": "media",
         "date": "2016",
         "notes": "Comprehensive case overview from Inexplicata, the journal of Hispanic Ufology. Provides witness statements, official response details, and Moon Dust documentation summary. One of the more thorough English-language research write-ups of the case."
       },
       {
         "title": "UFO Evidence - 1978 Bolivia UFO Crash (Case 635)",
         "url": "http://www.ufoevidence.org/cases/case635.htm",
-        "type": "research",
+        "type": "media",
         "date": "2004",
         "notes": "Detailed case file from UFO Evidence database including witness names, event timeline, and official response summary. Primary research aggregator for the case."
       },
       {
         "title": "UFO Insight - The Tarija Case: UFO Crash in Bolivia",
         "url": "https://www.ufoinsight.com/ufos/cover-ups/the-tarija-case-ufo-crash-bolivia",
-        "type": "research",
+        "type": "media",
         "date": "2018",
         "notes": "Modern research overview of the case covering the Moon Dust documents, Vance telex, and competing hypotheses."
       }
@@ -11678,14 +11706,14 @@
       {
         "title": "Enigma Labs - La Joya UFO Engagement Case Entry",
         "url": "https://enigmalabs.io/library/e6b60e28-a5f2-449e-8c4f-8f36132ea4f7",
-        "type": "research",
+        "type": "media",
         "date": "2023",
         "notes": "Structured case entry with source citations, witness data, and hypothesis assessment. Useful for cross-referencing source provenance."
       },
       {
         "title": "Disclosure Project Briefing Document - Oscar Santa Maria Huerta Affidavit",
         "url": "https://archive.org/stream/DisclosureProjectBriefingDocument/DisclosureProjectBriefingDocument_djvu.txt",
-        "type": "government",
+        "type": "testimony",
         "date": "2001",
         "notes": "Huerta's signed affidavit submitted to Dr. Steven Greer's Disclosure Project and entered into the Disclosure Project Briefing Document presented at the May 9, 2001 National Press Club briefing."
       }
@@ -11903,28 +11931,28 @@
       {
         "title": "Disclosure Project Briefing Document - Jonathan Weygandt Testimony",
         "url": "https://archive.org/details/youtube-ZWSbcEFdZOU",
-        "type": "government",
+        "type": "testimony",
         "date": "2001",
         "notes": "Weygandt's original 2000 audio testimony as included in the Disclosure Project Briefing Document. The foundational primary source for the case. Notably does not include the four-fingered arm detail that appeared in 2023. Available at Internet Archive."
       },
       {
         "title": "UAP Gerb - 1997 Peru UFO Crash Retrieval: The Story of Jonathan Weygandt",
         "url": "https://www.scribd.com/document/876130065/UAP-Gerb-1997-Peru-UFO-Crash-Retrieval-The-Story-of-Jonathan-Weygandt",
-        "type": "research",
+        "type": "media",
         "date": "2023",
         "notes": "Independent investigative report by UAP Gerb researchers who attempted to contact and interview the fellow marines named by Weygandt. The most thorough external corroboration attempt to date. Documents the mixed results - one marine denied the account, one confirmed Peru deployment but described a different incident."
       },
       {
         "title": "Political Saucer - The Marine Who Saw a Crash Site (Skeptical Analysis)",
         "url": "https://politicalsaucer.substack.com/p/the-marine-who-saw-a-crash-site-mapping",
-        "type": "research",
+        "type": "media",
         "date": "2023",
         "notes": "Rigorous skeptical analysis of the Weygandt case identifying the geographic disconnect between Pucallpa's location and typical U.S. Marine air defense deployment patterns, and documenting the contradictions from named marines. Essential counterbalance to credulous treatments of the case."
       },
       {
         "title": "Unidentified Phenomena Archive - Peru UFO Crash 1997",
         "url": "https://unidentifiedphenomena.com/crash/peru-ufo-crash-1997/",
-        "type": "research",
+        "type": "media",
         "date": "2023",
         "notes": "Overview case entry with timeline, witness details, and source citations. Useful for cross-referencing the public record of the Weygandt account."
       }
