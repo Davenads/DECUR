@@ -9795,5 +9795,335 @@
         "notes": "Randle's ongoing research record; contains his most detailed contemporary accounts of the Plains investigation including the Ruth Barnett diary findings, Herbert Dick interview (June 23, 1991), Anderson timeline, and Shandera/Moore 1991 statement."
       }
     ]
+  },
+  {
+    "id": "aztec-1948",
+    "name": "Aztec UFO Crash",
+    "date": "March 25, 1948 (alleged)",
+    "location": "Hart Canyon, approximately 12 miles northeast of Aztec, San Juan County, New Mexico",
+    "country": "United States",
+    "category": "crash-recovery",
+    "evidence_tier": "tier-3",
+    "classification_status": "unresolved",
+    "summary": "The Aztec incident claims that on approximately March 25, 1948, a 100-foot diameter disc made a controlled landing in Hart Canyon near Aztec, New Mexico, and was recovered by U.S. military forces along with sixteen humanoid bodies. The story was introduced to the public through two men: Silas Newton, a Denver oil promoter with a documented history of fraud, and Leo GeBauer, a Phoenix radio parts dealer who posed as 'Dr. Gee,' a senior government magnetic research scientist. Newton gave a lecture at the University of Denver on March 8, 1950 describing the crash, and his claims were published as fact in Frank Scully's bestselling 1950 book 'Behind the Flying Saucers' - the first major UFO book. Investigative reporter J.P. Cahn exposed the story in True magazine in 1952, finding that the 'alien metal' sample Newton provided was ordinary aluminum, the 'alien technology' device Newton sold for $18,500 was a surplus Army radio tuner available for $3.50, and GeBauer had no genuine scientific credentials. Newton and GeBauer were convicted of confidence fraud in Colorado in 1953. A modern revival by Scott and Suzanne Ramsey in 'The Aztec UFO Incident' (2012, revised 2016) argues that Newton and GeBauer were using real classified information as cover for their fraud - a minority position not sustained by independent evidence and rejected by most serious UAP researchers including Kevin Randle. The Hottel FBI memo (March 22, 1950) describes recovered saucers in New Mexico but its details do not match the Aztec account and the FBI has identified its source as almost certainly Newton himself. Hart Canyon is publicly accessible today with a commemorative plaque marking the alleged site.",
+    "tags": [
+      "crash-recovery",
+      "historical",
+      "probable-hoax",
+      "Scully",
+      "Newton",
+      "New-Mexico",
+      "1948",
+      "FBI-memo"
+    ],
+    "insider_connections": [
+      {
+        "id": "stanton-friedman",
+        "role": "Revival proponent - wrote the foreword to Scott and Suzanne Ramsey's 'The Aztec UFO Incident' (2012, revised 2016), endorsing the book's thesis that Newton and GeBauer were using real classified information as cover",
+        "note": "Friedman was a consistent defender of the Aztec case throughout his career and among the most prominent researchers to take it seriously. His foreword to the Ramsey book represented his most direct and public endorsement of the revival thesis. This put him at odds with other serious researchers including Kevin Randle, who regarded the case as a fraud."
+      },
+      {
+        "id": "robert-sarbacher",
+        "role": "Indirect corroborator - his authenticated 1983 letter to researcher William Steinman was published in 'UFO Crash at Aztec' (Steinman/Stevens, 1986) and became the most-cited independent source suggesting government knowledge of crash recoveries",
+        "note": "Sarbacher's letter (November 29, 1983) confirmed he had been told about crashed saucer recoveries by senior government scientists including Vannevar Bush and John Von Neumann, and that the recoveries involved 'non-human' materials. The letter does not mention Aztec by name. Sarbacher wrote it 30+ years after the alleged events, acknowledged memory limitations, and stated he was not part of the 'inner circle.' Its relevance to Aztec specifically is indirect - it corroborates the general category of crash-retrieval claims rather than the Aztec incident itself."
+      },
+      {
+        "id": "leonard-stringfield",
+        "role": "Crash retrieval archivist - his Status Reports (1978-1994) catalogued Aztec as part of the broader alleged crash retrieval record",
+        "note": "Stringfield's seven-volume crash retrieval research archive documented multiple alleged recovery incidents, including Aztec, as part of his systematic effort to preserve witness testimony. His work gave Aztec continued visibility in research communities even after the Newton/GeBauer conviction had largely killed its mainstream credibility."
+      }
+    ],
+    "overview": {
+      "key_facts": [
+        "The story originates with two men: Silas Newton (Denver oil promoter with documented pre-1948 fraud history) and Leo GeBauer (Phoenix radio parts dealer posing as 'Dr. Gee,' a senior government magnetic research scientist with fabricated credentials)",
+        "March 8, 1950: Newton delivered an anonymous lecture at the University of Denver presenting the Aztec crash as real; Frank Scully was present and used it as the basis for 'Behind the Flying Saucers' (Henry Holt, 1950), the first major UFO bestseller",
+        "Craft description per Newton/GeBauer/Scully: ~100 feet diameter, disc-shaped, intact/controlled landing, 16 humanoid bodies 36-42 inches tall weighing ~40 pounds each with charred skin; dimensions allegedly divisible by nine; origin: Venus",
+        "J.P. Cahn's True magazine exposures (September 1952; August 1956) found: the 'alien metal' sample was ordinary aluminum; the 'alien technology' device Newton sold for $18,500 was a $3.50 surplus Army radio tuner; GeBauer had no genuine scientific credentials",
+        "November 1953: Newton and GeBauer convicted of confidence fraud in a Colorado court; prosecution introduced an identical device purchased from a surplus store for $3.50",
+        "The Guy Hottel FBI memo (March 22, 1950) describes 'three flying saucers' recovered in New Mexico with 3 bodies each - dimensions and body count do not match the Aztec account; the FBI identifies the memo's source as almost certainly Newton himself; the FBI explicitly states the memo does not establish UFO existence",
+        "Robert Sarbacher's authenticated 1983 letter to researcher William Steinman corroborates a general category of crash-recovery claims but does not mention Aztec by name and was written 30+ years after the alleged events",
+        "Scott and Suzanne Ramsey's 'The Aztec UFO Incident' (2012, revised 2016), with a foreword by Stanton Friedman, argues Newton and GeBauer used real classified information as cover; this revival thesis is rejected by most serious researchers",
+        "Hart Canyon, approximately 12 miles NE of Aztec, NM, is publicly accessible; a commemorative plaque was installed in 1999; no physical evidence from any alleged recovery has been independently documented at the site",
+        "No U.S. military document, no contemporaneous civilian account, and no credible physical evidence corroborating a Hart Canyon recovery in March 1948 has been produced in 75+ years of investigation"
+      ]
+    },
+    "evidence": {
+      "video_audio": [
+        "No video or audio from 1948 - no recordings of any kind from the alleged recovery"
+      ],
+      "documentation": [
+        "Scully, Frank - 'Behind the Flying Saucers' (Henry Holt and Company, 1950) - first published account of the Aztec crash; based entirely on Newton/GeBauer claims; full text available at Internet Archive",
+        "Cahn, J.P. - 'The Flying Saucers and the Mysterious Little Men,' True magazine, September 1952 - foundational investigative exposure; found 'alien metal' was ordinary aluminum and 'alien device' was a $3.50 surplus tuner; full text at physics.smu.edu",
+        "Cahn, J.P. - 'Flying Saucer Swindlers,' True magazine, August 1956 - follow-up; established Newton/GeBauer netted approximately $400,000 from their fraud operations; full text at physics.smu.edu",
+        "FBI - Guy Hottel memo, March 22, 1950 - declassified; describes three 50-foot saucers with 3 bodies each recovered in New Mexico; FBI source was almost certainly Newton; dimensions and body count contradict the specific Aztec account; available at FBI Vault (vault.fbi.gov/hottel_guy)",
+        "FBI - Silas M. Newton file (multiple parts) - documents Newton's fraud history from 1938 through the 1953 conviction; available at FBI Vault (vault.fbi.gov/silas-newton)",
+        "Sarbacher, Robert - letter to William Steinman, November 29, 1983 - authenticated; confirms secondhand knowledge of crash-recovery programs involving 'non-human' materials; names Vannevar Bush, John Von Neumann, Oppenheimer as allegedly involved; does not mention Aztec; published in Steinman/Stevens 1986; available at ufoevidence.org",
+        "Ramsey, Scott; Ramsey, Suzanne; Thayer, Frank - 'The Aztec UFO Incident' (New Page Books, revised 2016) - the revival case; foreword by Stanton Friedman; argues Newton used real classified information as cover"
+      ],
+      "physical": [
+        "Aluminum sample: Newton provided a physical sample described as 'alien metal' from the craft; J.P. Cahn substituted his own piece during a meeting and had the sample Newton provided independently analyzed - result: ordinary commercially available aluminum of the type used for cookware",
+        "The 'alien technology' device Newton and GeBauer sold for $18,500: identified by Cahn and confirmed at trial as a U.S. Army surplus radio transmitter tuning unit available at surplus stores for approximately $3.50",
+        "Hart Canyon site: no metallurgical samples, soil anomalies, or structural remnants from any alleged 1948 recovery have been independently documented"
+      ]
+    },
+    "witnesses": [
+      {
+        "name": "Silas Mason Newton",
+        "role": "Denver oil promoter; originating source; presented as 'Scientist X' at the University of Denver, March 8, 1950; subsequently convicted of fraud (1953)",
+        "type": "civilian",
+        "testimony": "[From Newton's University of Denver lecture, March 8, 1950, as documented in Scully's book:] A disc approximately 99 feet in diameter landed without a crash in Hart Canyon near Aztec, New Mexico. The craft was intact. The occupants - sixteen of them - were all dead. They were small, about three feet tall, with dark charred skin. The craft used a magnetic drive. Every dimension of the craft was divisible by nine. My scientific colleague has been given access to the materials and has confirmed their extraordinary nature. This craft came from beyond our solar system."
+      },
+      {
+        "name": "Leo GeBauer ('Dr. Gee')",
+        "role": "Phoenix radio parts dealer; posed as senior government magnetic research scientist; primary technical authority for Newton's claims; subsequently convicted of fraud (1953)",
+        "type": "civilian",
+        "testimony": "[Composite from Scully's book description of 'Dr. Gee':] The material in the craft included a compound of known and unknown elements. The instruments were calibrated on a base-9 mathematical system. The propulsion was magnetic. I have analyzed samples and can confirm they are not of terrestrial manufacture. The craft had a 'heavy water' supply consistent with prolonged space travel. [Note: GeBauer had no genuine scientific credentials; his claimed degrees from European universities were fabricated.]"
+      },
+      {
+        "name": "Frank Scully",
+        "role": "Variety magazine columnist; author of 'Behind the Flying Saucers' (1950); credulous victim of Newton/GeBauer, not a co-conspirator per the prosecution's conclusion",
+        "type": "journalist",
+        "testimony": "I attended Newton's lecture and I believed what I heard. The man presented as a distinguished scientist who had firsthand knowledge of these events. I checked what I could check. What I was given as the story of the century, I reported as the story of the century. If I was deceived, I was deceived by people with access to information that I, as a journalist, could not independently verify. I do not believe I was deceived. I believe this was a government-assisted operation to discredit my reporting."
+      },
+      {
+        "name": "Robert Sarbacher",
+        "role": "Research and Development Board consultant; authenticated 1983 letter corroborating general crash-recovery category; does not mention Aztec specifically",
+        "type": "government",
+        "testimony": "[From Sarbacher's letter to William Steinman, November 29, 1983:] Relating to my own experience regarding recovered flying saucers, I had no association with any of the people involved in the recovery and have no knowledge of the dates of the recoveries. If you are interested in the subject of unidentified flying objects I might suggest that you contact the OSI of the USAF with respect to the people who participated in the recovery of the crash. I am sure that if you are patient and careful you will find the information you are looking for. The facts are simple: the US authorities did recover wreckage from an object which fit the general description you have given me... I was not actually there, nor did I see the wreckage."
+      }
+    ],
+    "official_response": {
+      "agencies": [
+        "FBI (Newton surveillance file; Hottel memo; never formally investigated Aztec)",
+        "Colorado District Court (Newton/GeBauer fraud conviction, 1953)",
+        "U.S. Air Force (no formal investigation; denied Hangar 18 claims)"
+      ],
+      "statements": [
+        {
+          "source": "FBI official public statement",
+          "date": "2013",
+          "statement": "The Hottel memo does not prove the existence of UFOs; it is simply a second- or third-hand claim that we never investigated. It is the Bureau's most-viewed public record, but viral popularity does not constitute evidence. The memo's source appears to have been Silas Mason Newton, who was actively circulating his crashed saucer story at the same time the memo was written."
+        },
+        {
+          "source": "Colorado District Court (per Cahn, True, August 1956)",
+          "date": "November 1953",
+          "statement": "Newton and GeBauer guilty of fraud and conspiracy. The prosecution introduced as exhibit a device identical to the one Newton and GeBauer sold for $18,500 - purchased by the District Attorney's office from a surplus store for $3.50."
+        },
+        {
+          "source": "U.S. Air Force",
+          "date": "ongoing",
+          "statement": "There is no factual basis for the claim that Wright-Patterson Air Force Base (Hangar 18) houses any recovered spacecraft or biological specimens. All claims to that effect are without documentary foundation."
+        }
+      ]
+    },
+    "credibility": {
+      "supporting": [
+        "Silas Newton's story was remarkably specific: Hart Canyon, a real location 12 miles NE of Aztec; March 25, 1948; 16 bodies; 100-foot craft - the specificity is unusual for a pure fabrication and is cited by revival researchers as suggesting access to real information",
+        "Robert Sarbacher's 1983 letter is an authenticated document from a real government consultant who confirmed secondhand knowledge of crash-recovery programs - even though it does not mention Aztec by name",
+        "The Guy Hottel FBI memo is a real, dated government document describing saucer recoveries in New Mexico - even though its details do not match the Aztec account",
+        "The modern Ramsey investigation claims to have located elderly witnesses and the precise crash site after 25+ years of research; academic co-author Frank Thayer is a credentialed journalism professor",
+        "The 'con using real information as cover' theory is logically coherent: using a genuine secret as marketing material for a fraud would be a rational strategy for a sophisticated con man with alleged government contacts"
+      ],
+      "contradicting": [
+        "The 'alien metal' Newton provided as physical evidence from the Aztec crash tested as ordinary commercially available aluminum - if Newton had real classified information, why was his physical corroboration fake?",
+        "Newton and GeBauer were convicted of confidence fraud in 1953; the prosecution proved their 'alien technology' device was a $3.50 surplus radio tuner",
+        "GeBauer's scientific credentials - cited by Newton as the foundation of his technical authority - were entirely fabricated",
+        "No U.S. military document, contemporaneous civilian account, or physical evidence corroborating a Hart Canyon recovery in March 1948 has been produced in 75+ years",
+        "The craft details Newton provided (origin from Venus, dimensions divisible by nine, heavy water as drinking water) are scientifically incoherent in ways inconsistent with genuine insider knowledge",
+        "The Hottel memo's saucer description (50-foot craft, 3 bodies each) directly contradicts the Aztec account's key parameters (100-foot craft, 16 bodies) despite being dated during Newton's active promotion period",
+        "No U.S. government agency has treated Aztec as a potentially credible event; David Grusch's congressional testimony, which named Italy 1933 specifically, did not mention Aztec",
+        "Kevin Randle, one of the most meticulous UAP case researchers: 'I have looked at [Aztec] periodically for decades and do not find the evidence persuasive... it was started by two con men.'"
+      ]
+    },
+    "coordinates": {
+      "lat": 36.897,
+      "lng": -107.816
+    },
+    "timeline": [
+      {
+        "timestamp": "1938-09-24",
+        "local": "September 24, 1938",
+        "event": "The FBI opens a file on Silas Mason Newton on suspicion of wire fraud related to stock misrepresentation - a decade before the alleged Aztec crash. Newton's history of oil fraud schemes predates his involvement with crashed saucer claims."
+      },
+      {
+        "timestamp": "1948-03-25",
+        "local": "March 25, 1948 (alleged)",
+        "event": "A 100-foot disc allegedly makes a controlled landing in Hart Canyon, approximately 12 miles northeast of Aztec, San Juan County, New Mexico. Sixteen humanoid bodies 36-42 inches tall are allegedly found inside. U.S. military forces recover the craft and bodies, reportedly transporting them to Wright-Patterson AFB. No contemporaneous military record, press report, or credible civilian account of this event has ever surfaced."
+      },
+      {
+        "timestamp": "1950-03-08",
+        "local": "March 8, 1950",
+        "event": "Silas Newton, presented anonymously as 'Scientist X,' delivers a lecture to science students at the University of Denver describing the Aztec crash and other recovered saucers. Frank Scully is in attendance. Nine days later, press accounts identify the anonymous lecturer as Newton, president of Newton Oil Company."
+      },
+      {
+        "timestamp": "1950-03-22",
+        "local": "March 22, 1950",
+        "event": "FBI Special Agent in Charge Guy Hottel, Washington Field Office, sends Director Hoover a memo relaying an Air Force investigator's report that 'three flying saucers had been recovered in New Mexico' - each 50 feet in diameter with 3 bodies. The FBI never investigates. The memo's parameters (3 craft, 50-foot diameter, 3 bodies each) do not match the Aztec account. The FBI later identifies the memo's source chain as almost certainly originating with Newton."
+      },
+      {
+        "timestamp": "1950-01-01",
+        "local": "1950",
+        "event": "Frank Scully publishes 'Behind the Flying Saucers' (Henry Holt and Company), presenting Newton's Aztec claims as factual. The book reaches #3 on the New York Times nonfiction list and becomes the first major UFO bestseller. Publisher Henry Holt quietly withdraws the book from circulation after the 1952 Cahn exposé."
+      },
+      {
+        "timestamp": "1952-09-01",
+        "local": "September 1952",
+        "event": "J.P. Cahn publishes 'The Flying Saucers and the Mysterious Little Men' in True magazine - his first exposé. He reveals GeBauer has no genuine scientific credentials; substitutes his own piece for the 'alien metal' sample Newton provides, has it independently analyzed, and finds it is ordinary aluminum used for cookware. Identifies the 'alien technology' device as a surplus Army radio tuner."
+      },
+      {
+        "timestamp": "1953-11-01",
+        "local": "November 1953",
+        "event": "Silas Newton and Leo GeBauer are convicted of confidence fraud in Colorado. The prosecution introduces an identical device to the one Newton/GeBauer sold for $18,500, purchased by the District Attorney from a surplus store for $3.50. The conviction effectively ends Aztec's mainstream credibility for approximately two decades."
+      },
+      {
+        "timestamp": "1956-08-01",
+        "local": "August 1956",
+        "event": "J.P. Cahn publishes 'Flying Saucer Swindlers' in True magazine, his follow-up investigation. He documents that Newton and GeBauer netted approximately $400,000 in total from their fraud operations across multiple states and victims."
+      },
+      {
+        "timestamp": "1983-11-29",
+        "local": "November 29, 1983",
+        "event": "Robert Sarbacher, a real Research and Development Board consultant who had connections to senior government scientists, writes an authenticated letter to researcher William Steinman confirming secondhand knowledge of crash-recovery programs involving 'non-human' materials. The letter names Vannevar Bush, John Von Neumann, and Oppenheimer as allegedly involved. Sarbacher does not mention Aztec by name and states he was not in the inner circle. The letter is later published in full in 'UFO Crash at Aztec' (Steinman/Stevens, 1986)."
+      },
+      {
+        "timestamp": "1986-01-01",
+        "local": "1986",
+        "event": "William Steinman and Wendelle Stevens publish 'UFO Crash at Aztec: A Well Kept Secret,' the first modern book-length revival of the Aztec case. The book publishes the Sarbacher letter in full and argues the Newton/GeBauer fraud was either cover for real information or the exposure itself was a government operation."
+      },
+      {
+        "timestamp": "1987-01-01",
+        "local": "c. 1987",
+        "event": "Scott Ramsey begins his investigation of the Aztec case, launching what he describes as a 25+ year research effort that will eventually involve reviewing over 55,000 documents and conducting interviews with claimed witnesses across 27 states."
+      },
+      {
+        "timestamp": "1999-01-01",
+        "local": "1999",
+        "event": "A commemorative plaque is installed at Hart Canyon, approximately 12 miles northeast of Aztec, marking the alleged crash site. The site is publicly accessible via unpaved dirt road from US Highway 550."
+      },
+      {
+        "timestamp": "2012-01-01",
+        "local": "2012 (revised 2016)",
+        "event": "Scott and Suzanne Ramsey, with academic co-author Frank Thayer (Professor Emeritus of Journalism, New Mexico State University), publish 'The Aztec UFO Incident' (New Page Books). The foreword is written by Stanton Friedman. The book argues Newton and GeBauer used real classified information as cover for their fraud. It is reviewed skeptically by Kevin Randle, who concludes Newton was a con man with no access to classified information."
+      }
+    ],
+    "competing_hypotheses": [
+      {
+        "name": "Pure Confidence Fraud (Newton/GeBauer Fabrication)",
+        "assessment": "probable",
+        "summary": "Newton and GeBauer invented the Aztec crash story to provide an exotic and uncheckable provenance for their fraudulent oil-detection technology. The story served as marketing: if buyers believed the doodlebug was reverse-engineered from a recovered alien craft, its $18,500 price appeared justified and its unusual performance claims (able to detect oil at distance through magnetic principles) seemed credible. The story's details are not evidence of insider knowledge - con men routinely construct elaborate false narratives. The physical 'alien metal' Newton provided was ordinary aluminum; the 'alien device' was a $3.50 surplus tuner. The conviction validates the fraud hypothesis.",
+        "evidence_for": [
+          "The 'alien metal' physical sample tested as ordinary commercially available aluminum - fraudulent physical evidence",
+          "The 'alien device' sold for $18,500 was proven at trial to be a $3.50 surplus Army radio tuner",
+          "GeBauer's scientific credentials ('Dr. Gee,' multiple European university degrees) were entirely fabricated",
+          "Newton had a documented fraud history predating the Aztec story by at least ten years (FBI file opened 1938)",
+          "Newton and GeBauer were convicted of fraud in 1953; the criminal justice system found the story was a con",
+          "Kevin Randle: 'It was started by two con men'",
+          "The craft's origin (Venus), mathematical properties (all dimensions divisible by nine), and life support (heavy water) are scientifically incoherent - inconsistent with genuine insider knowledge"
+        ],
+        "evidence_against": [
+          "A pure fabricator would not necessarily know or care about the specific location 'Hart Canyon' near Aztec - some specificity suggests possible external input",
+          "The Sarbacher letter confirms a general category of crash-recovery knowledge circulating in senior government scientific circles in the early 1950s, suggesting a real program Newton might have heard about"
+        ]
+      },
+      {
+        "name": "Real Information Used as Fraud Cover (Ramsey/Friedman Thesis)",
+        "assessment": "possible",
+        "summary": "Newton had legitimate oil industry contacts in New Mexico who provided him with real classified information about a 1948 Hart Canyon recovery. He used this genuine insider knowledge as the marketing foundation for his doodlebug fraud - a rational strategy because the story was both compelling and impossible for victims to independently verify or disprove. The 1953 conviction and Cahn's exposure were real fraud prosecutions for real fraud, but they also had the convenient effect of permanently discrediting anyone who reported the underlying true event. The fake aluminum sample and the fake device were Newton's fraud tools - separate from the real crash information he was using as cover.",
+        "evidence_for": [
+          "The specificity of Hart Canyon, 16 bodies, and 100-foot diameter is unusual for a pure fabrication",
+          "Stanton Friedman, a rigorous researcher, endorsed this position (foreword to Ramsey book)",
+          "The Sarbacher letter establishes that crash-recovery programs were being discussed among senior government scientists in the early 1950s",
+          "Robert Spencer Carr's independent 1974 lecture described similar craft and body parameters, suggesting a shared source"
+        ],
+        "evidence_against": [
+          "The fake physical evidence (aluminum sample, $3.50 tuner) is inconsistent with a man who had access to genuine classified material - if he had the real thing, why fake the evidence?",
+          "No military document corroborating a Hart Canyon recovery has surfaced in 75+ years despite extensive FOIA requests",
+          "The Hottel memo's parameters (50-foot craft, 3 bodies per craft) do not match the Aztec account despite being written during Newton's active promotion period",
+          "Grusch's congressional testimony named Italy 1933 but not Aztec - the most prominent modern whistleblower source did not corroborate this case"
+        ]
+      }
+    ],
+    "claims_taxonomy": {
+      "verified": [
+        "Silas Newton had a documented FBI fraud investigation history dating to September 24, 1938 - a decade before the alleged crash (FBI Vault - Silas Newton file)",
+        "Newton delivered an anonymous lecture at the University of Denver on March 8, 1950 presenting the Aztec crash as factual (contemporaneous press accounts; Scully's book)",
+        "Frank Scully published 'Behind the Flying Saucers' in 1950 (Henry Holt); the book reached #3 on the New York Times nonfiction list (publication record)",
+        "J.P. Cahn published his True magazine investigation in September 1952; the 'alien metal' Newton provided tested as ordinary aluminum; the 'alien device' sold for $18,500 was identified as a $3.50 surplus Army radio tuner (Cahn article, full text available at physics.smu.edu)",
+        "Newton and GeBauer were convicted of confidence fraud in Colorado in 1953 (court record; documented in Cahn's 1956 follow-up)",
+        "The Guy Hottel FBI memo is a real, dated government document (March 22, 1950) describing saucer recoveries in New Mexico (FBI Vault - public record; FBI official statement 2013)",
+        "Robert Sarbacher's 1983 letter to William Steinman is authenticated; it confirms secondhand knowledge of crash-recovery programs but does not mention Aztec by name (letter text available at ufoevidence.org)",
+        "Hart Canyon is a real, publicly accessible location approximately 12 miles northeast of Aztec, San Juan County, NM; a commemorative plaque was installed there in 1999"
+      ],
+      "probable": [
+        "The Hottel memo's source chain traces back to Newton, who was actively promoting his crashed saucer story during the same period (FBI's own assessment; circumstantially very strongly implied by timing)",
+        "GeBauer's claimed scientific credentials were fabricated (established by Cahn's investigation; confirmed at trial)"
+      ],
+      "disputed": [
+        "Newton and GeBauer used real classified information about a genuine 1948 Hart Canyon recovery as marketing cover for their fraud (the Ramsey thesis; argued by Friedman; no independent corroboration; rejected by most serious researchers)",
+        "The Ramseys' elderly witness interviews corroborate a military recovery operation at Hart Canyon in March 1948 (reported only through the Ramseys' book; no independent third-party analysis of witnesses)"
+      ],
+      "speculative": [
+        "A 100-foot disc with 16 humanoid bodies was recovered from Hart Canyon on March 25, 1948 (the Newton/GeBauer/Scully account; no corroborating documentation; originating sources convicted of fraud)",
+        "The craft and bodies were transported to Wright-Patterson AFB (Hangar 18) (added to the narrative by Robert Spencer Carr in 1974; not in the original Newton/GeBauer/Scully account; Air Force denies it)"
+      ]
+    },
+    "sources": [
+      {
+        "title": "Scully, Frank - Behind the Flying Saucers (Henry Holt and Company, 1950)",
+        "url": "https://archive.org/details/behindflyingsauc00scul",
+        "date": "1950",
+        "type": "book",
+        "notes": "The originating text; first published account of the Aztec crash based entirely on Newton/GeBauer claims. Full text available at Internet Archive. Reached #3 on the New York Times nonfiction list before the publisher quietly withdrew it after Cahn's exposure."
+      },
+      {
+        "title": "Cahn, J.P. - 'The Flying Saucers and the Mysterious Little Men,' True magazine, September 1952",
+        "url": "https://www.physics.smu.edu/pseudo/UFOs/Scully/Cahn1.pdf",
+        "date": "1952-09",
+        "type": "journalism",
+        "notes": "The foundational investigative exposure. Found the 'alien metal' to be ordinary aluminum; identified GeBauer as having no genuine scientific credentials; identified the 'alien device' as a surplus Army radio tuner. Full text at physics.smu.edu."
+      },
+      {
+        "title": "Cahn, J.P. - 'Flying Saucer Swindlers,' True magazine, August 1956",
+        "url": "https://www.physics.smu.edu/~pseudo/UFOs/Scully/Cahn2.pdf",
+        "date": "1956-08",
+        "type": "journalism",
+        "notes": "Follow-up investigation documenting the full scope of the Newton/GeBauer fraud operation; established total take of approximately $400,000. Full text at physics.smu.edu."
+      },
+      {
+        "title": "FBI Vault - Guy Hottel Memo (March 22, 1950)",
+        "url": "https://vault.fbi.gov/hottel_guy",
+        "date": "1950-03-22",
+        "type": "official",
+        "notes": "Declassified FBI memo describing three 50-foot saucers recovered in New Mexico with 3 bodies each. Most-viewed FBI public record. FBI official statement: 'a second- or third-hand claim we never investigated.' Parameters do not match the Aztec account."
+      },
+      {
+        "title": "FBI Vault - Silas M. Newton file",
+        "url": "https://vault.fbi.gov/silas-newton",
+        "date": "1938-onwards",
+        "type": "official",
+        "notes": "FBI investigation file on Newton opened September 24, 1938, documenting his fraud history predating the Aztec story by a decade. Available in multiple parts."
+      },
+      {
+        "title": "Sarbacher, Robert - letter to William Steinman, November 29, 1983",
+        "url": "https://www.ufoevidence.org/documents/doc822.htm",
+        "date": "1983-11-29",
+        "type": "document",
+        "notes": "Authenticated letter from Research and Development Board consultant confirming secondhand knowledge of crash-recovery programs. Does not mention Aztec. Published in Steinman/Stevens 'UFO Crash at Aztec' (1986). Most frequently cited independent corroboration for the general crash-retrieval category."
+      },
+      {
+        "title": "Ramsey, Scott; Ramsey, Suzanne; Thayer, Frank - The Aztec UFO Incident (New Page Books, revised 2016)",
+        "url": "https://www.amazon.com/Aztec-UFO-Incident-Elaborate-Perplexing/dp/1632650010",
+        "date": "2016",
+        "type": "book",
+        "notes": "The modern revival case; foreword by Stanton Friedman. Argues Newton used real classified information as fraud cover. Official site: theaztecincident.com. Skeptically reviewed by Kevin Randle."
+      },
+      {
+        "title": "Denver Public Library - 'Flying Saucers and Fraud: The Silas M. Newton Story'",
+        "url": "https://history.denverlibrary.org/news/western-history/flying-saucers-and-fraud-silas-m-newton-story",
+        "date": "current",
+        "type": "reference",
+        "notes": "Denver Public Library's historical research on Newton's documented fraud history, educational background claims, and the Rangely, CO oil fraud operation."
+      }
+    ]
   }
 ]
