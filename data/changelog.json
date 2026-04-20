@@ -2,6 +2,14 @@
   {
     "date": "2026-04-20",
     "category": "case",
+    "id": "kingman-1953",
+    "name": "Kingman UFO Crash",
+    "action": "added",
+    "note": "The 1953 Kingman, Arizona crash - based on the signed affidavit of verified AMC engineer Arthur Stansel ('Fritz Werner'); includes Stringfield's independent anonymous corroboration, the 2024 Christopher Mellon Signal text development, and Operation Upshot-Knothole context."
+  },
+  {
+    "date": "2026-04-20",
+    "category": "case",
     "id": "aztec-1948",
     "name": "Aztec UFO Crash",
     "action": "added",
