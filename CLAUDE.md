@@ -557,7 +557,27 @@ node --env-file=.env.local scripts/populate-search-index.mjs
 
 This script is idempotent - safe to re-run at any time.
 
-### 5. Add sources to `pages/sources.tsx` (required)
+### 5. Add a map pin to `data/ufosint/case-pins.json` (required)
+Every case must have an entry in `data/ufosint/case-pins.json` to appear as an amber pin on the `/sightings` map. Without this entry the case is invisible on the map regardless of whether `coordinates` is set in `cases.json`.
+
+```json
+{
+  "id": "your-case-id",
+  "name": "Case Display Name",
+  "lat": 34.05,
+  "lng": -106.91,
+  "total": 18000
+}
+```
+
+- `id` must match the case `id` in `cases.json` exactly
+- `lat`/`lng` must match the `coordinates` in `cases.json`
+- `total` is the approximate number of UFOSINT community sightings in the geographic area around the case location. Use a regional estimate based on nearby existing pins as a reference - this is a display-only count, not an exact figure. US domestic cases typically range 10,000-40,000; international cases range 1,000-15,000; remote ocean/polar areas range 500-2,000.
+- Keep the array sorted alphabetically by `id` after inserting
+
+**The `coordinates` field in `cases.json` and the pin entry in `case-pins.json` are not linked automatically** - both must be set manually. If a case location is known but coordinates were not initially included, infer them from the documented location (city, landmark, or region centroid).
+
+### 6. Add sources to `pages/sources.tsx` (required)
 Find the `{/* Documented Cases */}` section and add `<SourceCard>` entries for the primary research sources used. See the Data Sources Page section below for the `<SourceCard>` interface.
 
 ---

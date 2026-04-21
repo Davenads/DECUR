@@ -1,5 +1,26 @@
 [
   {
+    "id": "1978-tarija-bolivia",
+    "name": "1978 Tarija UFO Crash",
+    "lat": -22.1,
+    "lng": -64.4,
+    "total": 1200
+  },
+  {
+    "id": "1980-la-joya-peru",
+    "name": "1980 La Joya UFO Engagement - Oscar Santa Maria Huerta",
+    "lat": -16.9,
+    "lng": -71.9,
+    "total": 1800
+  },
+  {
+    "id": "1997-pucallpa-peru",
+    "name": "1997 Pucallpa UFO Crash - Jonathan Weygandt",
+    "lat": -8.4,
+    "lng": -74.6,
+    "total": 1100
+  },
+  {
     "id": "aguadilla-2013",
     "name": "Aguadilla Airport FLIR Incident",
     "lat": 18.49,
@@ -14,11 +35,67 @@
     "total": 13345
   },
   {
+    "id": "aurora-1897",
+    "name": "Aurora Airship Crash",
+    "lat": 33.055,
+    "lng": -97.509,
+    "total": 21000
+  },
+  {
+    "id": "aztec-1948",
+    "name": "Aztec UFO Crash",
+    "lat": 36.897,
+    "lng": -107.816,
+    "total": 16500
+  },
+  {
     "id": "belgian-ufo-wave",
     "name": "Belgian UFO Wave",
     "lat": 50.62,
     "lng": 5.57,
     "total": 8260
+  },
+  {
+    "id": "betty-barney-hill-1961",
+    "name": "Betty and Barney Hill Abduction",
+    "lat": 44.06,
+    "lng": -71.67,
+    "total": 22000
+  },
+  {
+    "id": "bluegill-triple-prime-1962",
+    "name": "Bluegill Triple Prime UAP Recovery",
+    "lat": 16.73,
+    "lng": -169.52,
+    "total": 800
+  },
+  {
+    "id": "cash-landrum-1980",
+    "name": "Cash-Landrum Incident",
+    "lat": 29.99,
+    "lng": -95.07,
+    "total": 31000
+  },
+  {
+    "id": "coyame-1974",
+    "name": "Coyame UFO Crash / Chihuahua Disk",
+    "lat": 29.461,
+    "lng": -105.093,
+    "total": 3500
+  },
+  {
+    "id": "coyne-helicopter-1973",
+    "name": "Coyne Helicopter Incident",
+    "lat": 40.76,
+    "lng": -82.52,
+    "total": 19000
+  },
+  {
+    "id": "edwards-afb-1971",
+    "name": "1971 UAP Crash North of Edwards AFB",
+    "lat": 35.13,
+    "lng": -117.99,
+    "total": 29000
   },
   {
     "id": "exeter-1965",
@@ -70,11 +147,46 @@
     "total": 35481
   },
   {
+    "id": "kenneth-arnold-1947",
+    "name": "Kenneth Arnold Sighting",
+    "lat": 46.85,
+    "lng": -121.73,
+    "total": 24000
+  },
+  {
+    "id": "kingman-1953",
+    "name": "Kingman UFO Crash",
+    "lat": 35.128,
+    "lng": -113.975,
+    "total": 12000
+  },
+  {
+    "id": "levelland-1957",
+    "name": "Levelland, Texas Encounter",
+    "lat": 33.59,
+    "lng": -102.37,
+    "total": 28000
+  },
+  {
     "id": "loch-raven-dam-1958",
     "name": "Loch Raven Dam Encounter",
     "lat": 39.4668,
     "lng": -76.5614,
     "total": 20167
+  },
+  {
+    "id": "lubbock-lights",
+    "name": "Lubbock Lights",
+    "lat": 33.5779,
+    "lng": -101.8552,
+    "total": 27000
+  },
+  {
+    "id": "magenta-1933",
+    "name": "Magenta UFO Crash - Italy 1933",
+    "lat": 45.464,
+    "lng": 8.88,
+    "total": 6100
   },
   {
     "id": "malmstrom-afb-1967",
@@ -133,6 +245,13 @@
     "total": 10361
   },
   {
+    "id": "san-agustin-1947",
+    "name": "Plains of San Agustin Incident",
+    "lat": 34.07,
+    "lng": -107.62,
+    "total": 18000
+  },
+  {
     "id": "shag-harbour-1967",
     "name": "Shag Harbour Incident",
     "lat": 43.47,
@@ -154,6 +273,13 @@
     "total": 33780
   },
   {
+    "id": "trans-en-provence-1981",
+    "name": "Trans-en-Provence Landing",
+    "lat": 43.527,
+    "lng": 6.48,
+    "total": 7500
+  },
+  {
     "id": "uss-omaha-2019",
     "name": "USS Omaha USO Incident",
     "lat": 32.8,
@@ -173,6 +299,20 @@
     "lat": -21.55,
     "lng": -45.43,
     "total": 14618
+  },
+  {
+    "id": "voronezh-ufo-incident",
+    "name": "Voronezh UFO Incident",
+    "lat": 51.6596,
+    "lng": 39.2006,
+    "total": 5200
+  },
+  {
+    "id": "walton-abduction-1975",
+    "name": "Travis Walton Abduction",
+    "lat": 34.51,
+    "lng": -110.08,
+    "total": 14000
   },
   {
     "id": "washington-dc-1952",
