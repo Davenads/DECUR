@@ -3,103 +3,203 @@
   "rows": [
     {
       "value": "US",
-      "count": 277994
+      "count": 242399
     },
     {
       "value": "CA",
-      "count": 16283
+      "count": 14571
     },
     {
       "value": "GB",
-      "count": 14170
+      "count": 12997
     },
     {
       "value": "AU",
-      "count": 4681
+      "count": 4377
     },
     {
       "value": "FR",
-      "count": 2974
+      "count": 2753
     },
     {
       "value": "BR",
-      "count": 2249
+      "count": 2132
     },
     {
       "value": "DE",
-      "count": 1433
+      "count": 1262
     },
     {
       "value": "IT",
-      "count": 1106
+      "count": 1022
     },
     {
       "value": "ES",
-      "count": 1049
+      "count": 990
     },
     {
       "value": "AR",
-      "count": 1025
-    },
-    {
-      "value": "SE",
-      "count": 826
+      "count": 975
     },
     {
       "value": "MX",
-      "count": 811
+      "count": 775
     },
     {
       "value": "IN",
-      "count": 742
+      "count": 710
+    },
+    {
+      "value": "SE",
+      "count": 622
     },
     {
       "value": "NZ",
-      "count": 595
-    },
-    {
-      "value": "India",
-      "count": 573
-    },
-    {
-      "value": "Mexico",
-      "count": 530
-    },
-    {
-      "value": "JP",
-      "count": 504
+      "count": 569
     },
     {
       "value": "DK",
-      "count": 503
+      "count": 474
+    },
+    {
+      "value": "India",
+      "count": 467
     },
     {
       "value": "RU",
-      "count": 496
+      "count": 454
+    },
+    {
+      "value": "Mexico",
+      "count": 447
     },
     {
       "value": "CN",
-      "count": 470
+      "count": 447
     },
     {
       "value": "CH",
-      "count": 462
+      "count": 432
     },
     {
       "value": "ZA",
-      "count": 451
+      "count": 428
+    },
+    {
+      "value": "JP",
+      "count": 426
     },
     {
       "value": "CL",
-      "count": 408
+      "count": 385
     },
     {
       "value": "BE",
-      "count": 383
+      "count": 341
+    },
+    {
+      "value": "PT",
+      "count": 330
+    },
+    {
+      "value": "IE",
+      "count": 310
     },
     {
       "value": "Brazil",
-      "count": 375
+      "count": 302
+    },
+    {
+      "value": "NO",
+      "count": 299
+    },
+    {
+      "value": "CO",
+      "count": 293
+    },
+    {
+      "value": "RO",
+      "count": 270
+    },
+    {
+      "value": "PR",
+      "count": 252
+    },
+    {
+      "value": "NL",
+      "count": 234
+    },
+    {
+      "value": "AT",
+      "count": 230
+    },
+    {
+      "value": "PL",
+      "count": 217
+    },
+    {
+      "value": "VE",
+      "count": 216
+    },
+    {
+      "value": "IR",
+      "count": 213
+    },
+    {
+      "value": "Ireland",
+      "count": 206
+    },
+    {
+      "value": "Germany",
+      "count": 205
+    },
+    {
+      "value": "South Africa",
+      "count": 197
+    },
+    {
+      "value": "AS",
+      "count": 196
+    },
+    {
+      "value": "New Zealand",
+      "count": 190
+    },
+    {
+      "value": "PE",
+      "count": 190
+    },
+    {
+      "value": "MY",
+      "count": 187
+    },
+    {
+      "value": "IL",
+      "count": 183
+    },
+    {
+      "value": "TR",
+      "count": 178
+    },
+    {
+      "value": "FI",
+      "count": 175
+    },
+    {
+      "value": "KR",
+      "count": 174
+    },
+    {
+      "value": "UY",
+      "count": 162
+    },
+    {
+      "value": "Netherlands",
+      "count": 150
+    },
+    {
+      "value": "Spain",
+      "count": 148
     }
   ]
 }
