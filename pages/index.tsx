@@ -15,6 +15,7 @@ const CATEGORIES = [
     description:
       'Firsthand accounts from military personnel, intelligence officers, government officials, journalists, and scientists who have disclosed involvement in UAP research.',
     detail: `Dan Burisch · David Grusch · Luis Elizondo · Ryan Graves · ${(insidersData as unknown[]).length} profiles`,
+    badge: null,
   },
   {
     label: 'Documented Cases',
@@ -22,6 +23,7 @@ const CATEGORIES = [
     description:
       'The strongest credible UAP incidents in the public record, assessed by evidence quality, witness credentials, and official documentation.',
     detail: 'USS Nimitz · Rendlesham Forest · USS Roosevelt · 9 cases assessed',
+    badge: null,
   },
   {
     label: 'Government Programs',
@@ -29,6 +31,7 @@ const CATEGORIES = [
     description:
       'Official and private programs involved in UAP investigation, research, and disclosure - from Cold War-era Air Force projects to modern congressional oversight initiatives.',
     detail: 'Project Blue Book · AATIP · AAWSAP · AARO · 23 programs catalogued',
+    badge: null,
   },
   {
     label: 'Declassified Documents',
@@ -36,6 +39,7 @@ const CATEGORIES = [
     description:
       'Primary source government records including intelligence assessments, program reports, and declassified memos directly relevant to UAP research.',
     detail: 'Wilson-Davis Memo · UAPTF Assessment · AARO Historical Record',
+    badge: null,
   },
   {
     label: 'Historical Timeline',
@@ -43,6 +47,15 @@ const CATEGORIES = [
     description:
       'An interactive chronology of UAP events spanning eight decades, cross-referenced with key figure disclosures, program histories, and congressional actions.',
     detail: 'Nimitz incident · AATIP / AAWSAP · Grusch testimony · 2023 hearings',
+    badge: null,
+  },
+  {
+    label: 'UAP Sightings Database',
+    href: '/sightings',
+    description:
+      '618,000+ community-submitted sighting reports from five major databases - NUFORC, MUFON, UFOCAT, the Vallee UPDB, and the Geldreich archive - mapped geographically and cross-referenced with DECUR\'s documented cases.',
+    detail: 'Not editorially reviewed · NUFORC · MUFON · UFOCAT · Vallee UPDB · Geldreich',
+    badge: 'Community data',
   },
 ];
 
@@ -157,9 +170,16 @@ const Home: CustomNextPage<HomePageProps> = () => {
                 className="group flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8 py-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 -mx-3 px-3 rounded-lg transition-colors"
               >
                 <div className="sm:w-44 shrink-0">
-                  <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary dark:group-hover:text-primary-light transition-colors text-sm">
-                    {cat.label}
-                  </span>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary dark:group-hover:text-primary-light transition-colors text-sm">
+                      {cat.label}
+                    </span>
+                    {cat.badge && (
+                      <span className="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border border-gray-200 dark:border-gray-700 font-normal leading-none">
+                        {cat.badge}
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-1">{cat.description}</p>
