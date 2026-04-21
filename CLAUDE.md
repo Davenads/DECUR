@@ -17,7 +17,7 @@ npm run check      # Run both lint and typecheck
 
 Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API into our own Supabase table (`ufosint_sightings`).
 
-**Status (as of 2026-04-15):** FULLY LIVE IN PRODUCTION. All migrations applied, 614,503 records imported from `ufo_public.db` (DuelingGroks export), `UFOSINT_USE_SUPABASE=true` active in Vercel. The `/sightings` page is deployed and publicly accessible.
+**Status (as of 2026-04-20):** FULLY LIVE IN PRODUCTION. All migrations applied, ~618,000+ records imported from `ufo_public_v2.db` (DuelingGroks export - v2 supersedes the original `ufo_public.db`), `UFOSINT_USE_SUPABASE=true` active in Vercel. The `/sightings` page is deployed and publicly accessible.
 
 **Testing note:** Test `/sightings` against production (Vercel URL), NOT `localhost`. The local dev server does not have `UFOSINT_USE_SUPABASE=true` set in `.env.local` by default, so the viewport and hexbin APIs fall back to the legacy ufosint.com proxy (which 503s for viewport calls). All sightings map work should be verified on the deployed Vercel instance.
 
@@ -34,9 +34,10 @@ Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API 
    echo "Y" | npx supabase db push
    ```
 
-2. **Import data from ufo_public.db** (614,503 records; DONE as of 2026-04-15):
+2. **Import data from ufo_public_v2.db** (~618,000+ records; DONE as of 2026-04-20):
    ```bash
-   # Requires ufo_public.db at .plans/ufo_public.db (from DuelingGroks export)
+   # Requires ufo_public_v2.db at .plans/ufo_public_v2.db (from DuelingGroks export)
+   # NOTE: ufo_public_v2.db supersedes the original ufo_public.db - always use v2.
    # Set IMPORT_SUPABASE_URL + IMPORT_SERVICE_KEY in .env.local, then:
    node --env-file=.env.local scripts/import-from-sqlite.mjs
    # Resume if interrupted:
@@ -44,6 +45,17 @@ Phase 3 moves the UFOSINT sightings database off the external `ufosint.com` API 
    # Retry a specific id range (for fixing transient errors):
    node --env-file=.env.local scripts/import-from-sqlite.mjs --retry-range 1 430000
    ```
+
+   **After any import or re-import, refresh the static chart JSON files** (shape/country/yearly distributions used by the sightings charts):
+   ```bash
+   # Run against the prod Supabase (decur project: iyvngosoyzptliytlcov)
+   UFOSINT_SUPABASE_URL=https://iyvngosoyzptliytlcov.supabase.co \
+   UFOSINT_SERVICE_KEY=sb_secret_<prod_key> \
+   node scripts/refresh-ufosint-static.mjs
+   # Then commit and redeploy:
+   git add data/ufosint/*.json && git commit -m "Refresh ufosint static chart data"
+   ```
+   No automated cron job is needed - the sightings data changes only when a new DuelingGroks export is imported. Run this script manually each time that happens.
 
 3. **Activate in prod env** (Vercel dashboard → Environment Variables):
    ```
