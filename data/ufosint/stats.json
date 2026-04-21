@@ -1,7 +1,7 @@
 {
   "by_collection": [
     {
-      "count": 362646,
+      "count": 366455,
       "name": "PUBLIUS"
     },
     {
@@ -9,8 +9,12 @@
       "name": "UFOCAT"
     },
     {
-      "count": 54751,
+      "count": 54749,
       "name": "GELDREICH"
+    },
+    {
+      "count": 1,
+      "name": "null"
     }
   ],
   "by_source": [
@@ -36,12 +40,22 @@
     },
     {
       "collection": "GELDREICH",
-      "count": 54751,
+      "count": 54749,
+      "name": "UFO-search"
+    },
+    {
+      "collection": "PUBLIUS",
+      "count": 3809,
+      "name": "r/UFOs"
+    },
+    {
+      "collection": "",
+      "count": 1,
       "name": "UFO-search"
     }
   ],
   "date_range": {
-    "max": "2028-01-01",
+    "max": "2028-03-17",
     "min": "1800-01-01"
   },
   "duplicate_candidates": 0,
@@ -49,7 +63,7 @@
   "geocoded_locations": 105854,
   "geocoded_original": 61893,
   "high_quality": 160726,
-  "mapped_sightings": 385885,
+  "mapped_sightings": 385718,
   "total_sightings": 618313,
   "with_movement": 249217
 }

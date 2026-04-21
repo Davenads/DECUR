@@ -3,203 +3,115 @@
   "rows": [
     {
       "value": "Light",
-      "count": 29580
+      "count": 56522
     },
     {
       "value": "Disc",
-      "count": 14951
-    },
-    {
-      "value": "Triangle",
-      "count": 14580
-    },
-    {
-      "value": "Circle",
-      "count": 12419
-    },
-    {
-      "value": "Fireball",
-      "count": 8976
-    },
-    {
-      "value": "Other",
-      "count": 8660
-    },
-    {
-      "value": "Unknown",
-      "count": 8633
+      "count": 49392
     },
     {
       "value": "Sphere",
-      "count": 8552
+      "count": 40986
     },
     {
-      "value": "Disk",
-      "count": 7874
+      "value": "Triangle",
+      "count": 29756
+    },
+    {
+      "value": "Circle",
+      "count": 25898
     },
     {
       "value": "Oval",
-      "count": 7354
+      "count": 20634
     },
     {
       "value": "Cigar",
-      "count": 6575
+      "count": 15308
     },
     {
-      "value": "Orb",
-      "count": 5875
+      "value": "Other",
+      "count": 15138
     },
     {
-      "value": "Domedisc",
-      "count": 4955
+      "value": "Fireball",
+      "count": 14669
     },
     {
-      "value": "Lights",
-      "count": 4033
-    },
-    {
-      "value": "Formation",
-      "count": 3942
-    },
-    {
-      "value": "Changing",
-      "count": 3734
-    },
-    {
-      "value": "Ball",
-      "count": 3482
+      "value": "Unknown",
+      "count": 10717
     },
     {
       "value": "Cylinder",
-      "count": 3376
+      "count": 8143
     },
     {
       "value": "Rectangle",
-      "count": 2374
+      "count": 7955
     },
     {
-      "value": "Diamond",
-      "count": 2226
+      "value": "Formation",
+      "count": 7304
     },
     {
-      "value": "Flash",
-      "count": 2178
-    },
-    {
-      "value": "Ovoid",
-      "count": 1883
-    },
-    {
-      "value": "Round",
-      "count": 1575
+      "value": "Changing",
+      "count": 5557
     },
     {
       "value": "Chevron",
-      "count": 1557
+      "count": 4953
     },
     {
-      "value": "Teardrop",
-      "count": 1191
+      "value": "Saucer",
+      "count": 4881
+    },
+    {
+      "value": "Diamond",
+      "count": 4373
+    },
+    {
+      "value": "Flash",
+      "count": 3563
     },
     {
       "value": "Cone",
-      "count": 1174
-    },
-    {
-      "value": "Egg",
-      "count": 1135
-    },
-    {
-      "value": "Rectangl",
-      "count": 893
-    },
-    {
-      "value": "V-Shape",
-      "count": 860
-    },
-    {
-      "value": "Polymorf",
-      "count": 727
-    },
-    {
-      "value": "Irregulr",
-      "count": 712
-    },
-    {
-      "value": "Circular",
-      "count": 667
-    },
-    {
-      "value": "Cross",
-      "count": 494
-    },
-    {
-      "value": "Dome",
-      "count": 442
-    },
-    {
-      "value": "Formatn",
-      "count": 441
-    },
-    {
-      "value": "Delta",
-      "count": 420
-    },
-    {
-      "value": "Ellipse",
-      "count": 404
+      "count": 3020
     },
     {
       "value": "Star",
-      "count": 384
+      "count": 2924
     },
     {
-      "value": "Saturn",
-      "count": 368
+      "value": "Dome",
+      "count": 2457
     },
     {
-      "value": "Domeoval",
-      "count": 321
+      "value": "Egg",
+      "count": 2343
     },
     {
-      "value": "Crescent",
-      "count": 316
+      "value": "Teardrop",
+      "count": 2143
     },
     {
-      "value": "Elliptic",
-      "count": 300
-    },
-    {
-      "value": "Beam",
-      "count": 293
-    },
-    {
-      "value": "Football",
-      "count": 275
-    },
-    {
-      "value": "Top",
-      "count": 267
+      "value": "Boomerang",
+      "count": 1321
     },
     {
       "value": "Cloud",
-      "count": 247
+      "count": 1081
     },
     {
-      "value": "Oblong",
-      "count": 246
+      "value": "Crescent",
+      "count": 1071
     },
     {
-      "value": "Ring",
-      "count": 225
+      "value": "Cross",
+      "count": 981
     },
     {
-      "value": "Polygon",
-      "count": 216
-    },
-    {
-      "value": "Copter",
-      "count": 216
+      "value": "Cube",
+      "count": 509
     }
   ]
 }
