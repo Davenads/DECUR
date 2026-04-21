@@ -127,20 +127,53 @@ const SourceChips: React.FC = () => (
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
+const STATS_CACHE_KEY = 'ufosint_stats_cache';
+const STATS_CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
+
+interface StatsCacheEntry {
+  data: UfosintStats;
+  fetchedAt: number;
+}
+
 const SightingsPage: NextPage = () => {
   const [stats, setStats] = useState<UfosintStats | null>(null);
   const [isLive, setIsLive] = useState(false);
 
-  // Show skeleton until live stats load; fall back to static JSON only on error
+  // Cache strategy: show cached stats immediately (no skeleton) on repeat visits,
+  // then fetch fresh data in background and update silently if it differs.
+  // Falls back to static JSON only if both cache and live fetch are unavailable.
   useEffect(() => {
+    // Check localStorage cache first
+    try {
+      const raw = localStorage.getItem(STATS_CACHE_KEY);
+      if (raw) {
+        const entry: StatsCacheEntry = JSON.parse(raw);
+        const age = Date.now() - entry.fetchedAt;
+        if (age < STATS_CACHE_TTL_MS) {
+          setStats(entry.data);
+          setIsLive(true);
+        }
+      }
+    } catch {
+      // localStorage unavailable or corrupt — proceed to live fetch
+    }
+
+    // Always fetch live data in background to keep cache fresh
     fetch('/api/sightings/stats')
       .then(r => r.json())
       .then((data: UfosintStats) => {
         setStats(data);
         setIsLive(true);
+        try {
+          const entry: StatsCacheEntry = { data, fetchedAt: Date.now() };
+          localStorage.setItem(STATS_CACHE_KEY, JSON.stringify(entry));
+        } catch {
+          // localStorage write failed (private browsing quota) — non-fatal
+        }
       })
       .catch(() => {
-        setStats(staticStats as UfosintStats);
+        // Live fetch failed — keep cached data if already showing, else fall back
+        setStats(prev => prev ?? (staticStats as UfosintStats));
         setIsLive(false);
       });
   }, []);
