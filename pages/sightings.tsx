@@ -17,6 +17,26 @@ interface UfosintStats {
   date_range: { min: string; max: string };
 }
 
+/* ── Stats skeleton ─────────────────────────────────────────────── */
+
+const StatsBarSkeleton: React.FC = () => (
+  <div className="bg-gray-50 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 rounded-xl px-6 py-4">
+    <div className="flex items-center gap-2 mb-3">
+      <span className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500">
+        Database Overview
+      </span>
+    </div>
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      {[...Array(5)].map((_, i) => (
+        <div key={i} className="text-center space-y-2">
+          <div className="h-7 w-24 mx-auto rounded bg-gray-200 dark:bg-gray-700 animate-pulse" />
+          <div className="h-3 w-16 mx-auto rounded bg-gray-100 dark:bg-gray-700/60 animate-pulse" />
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
 /* ── Source chip config ─────────────────────────────────────────── */
 
 const SOURCE_CHIPS = [
@@ -45,11 +65,13 @@ const SOURCE_CHIPS = [
 /* ── Stats Bar ──────────────────────────────────────────────────── */
 
 interface StatsBarProps {
-  stats: UfosintStats;
+  stats: UfosintStats | null;
   isLive: boolean;
 }
 
 const StatsBar: React.FC<StatsBarProps> = ({ stats, isLive }) => {
+  if (!stats) return <StatsBarSkeleton />;
+
   const minYear = stats.date_range.min?.match(/(\d{4})/)?.[1] ?? '1900';
   const maxYear = stats.date_range.max?.match(/(\d{4})/)?.[1] ?? '2026';
 
@@ -106,10 +128,10 @@ const SourceChips: React.FC = () => (
 /* ── Page ───────────────────────────────────────────────────────── */
 
 const SightingsPage: NextPage = () => {
-  const [stats, setStats] = useState<UfosintStats>(staticStats as UfosintStats);
+  const [stats, setStats] = useState<UfosintStats | null>(null);
   const [isLive, setIsLive] = useState(false);
 
-  // Hydrate with live stats after mount (no loading flicker - static data is initial state)
+  // Show skeleton until live stats load; fall back to static JSON only on error
   useEffect(() => {
     fetch('/api/sightings/stats')
       .then(r => r.json())
@@ -118,7 +140,8 @@ const SightingsPage: NextPage = () => {
         setIsLive(true);
       })
       .catch(() => {
-        // Static fallback already in state - no action needed
+        setStats(staticStats as UfosintStats);
+        setIsLive(false);
       });
   }, []);
 
@@ -126,7 +149,7 @@ const SightingsPage: NextPage = () => {
     <>
       <SeoHead
         title="UAP Sighting Reports Database"
-        description="614,505 community-submitted UAP sighting reports from five major databases. Browse geographic and temporal patterns, cross-referenced with DECUR's 34 documented cases."
+        description="Over 600,000 community-submitted UAP sighting reports from five major databases. Browse geographic and temporal patterns, cross-referenced with DECUR's documented cases."
         path="/sightings"
       />
 
@@ -144,8 +167,10 @@ const SightingsPage: NextPage = () => {
           </div>
 
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
-            614,505 community-submitted sighting reports from five major databases provide
-            statistical context for DECUR&apos;s 34 documented cases. High-confidence records
+            {stats
+              ? `${stats.total_sightings.toLocaleString()} community-submitted sighting reports from five major databases provide`
+              : 'Community-submitted sighting reports from five major databases provide'}{' '}
+            statistical context for DECUR&apos;s documented cases. High-confidence records
             (quality score &ge;60) are shown by default. DECUR case locations are overlaid on
             the map - hover any pin to cross-reference the community reporting record for that
             incident.
@@ -164,7 +189,7 @@ const SightingsPage: NextPage = () => {
               Geographic Distribution
             </h2>
             <span className="text-xs text-gray-400 dark:text-gray-500">
-              {stats.mapped_sightings.toLocaleString()} geocoded records
+              {stats?.mapped_sightings.toLocaleString() ?? '—'} geocoded records
             </span>
           </div>
           <SightingsMap />

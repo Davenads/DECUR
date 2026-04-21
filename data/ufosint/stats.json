@@ -41,15 +41,15 @@
     }
   ],
   "date_range": {
-    "max": "2026-02-20",
-    "min": "0034-04-01"
+    "max": "2028-01-01",
+    "min": "1800-01-01"
   },
   "duplicate_candidates": 0,
   "geocoded_geonames": 43994,
   "geocoded_locations": 105854,
   "geocoded_original": 61893,
-  "high_quality": 118320,
-  "mapped_sightings": 396158,
-  "total_sightings": 614505,
+  "high_quality": 160726,
+  "mapped_sightings": 385885,
+  "total_sightings": 618313,
   "with_movement": 249217
 }
