@@ -16,6 +16,7 @@ import type { MapRef, MapLayerMouseEvent, LayerProps } from 'react-map-gl/maplib
 import 'maplibre-gl/dist/maplibre-gl.css';
 import casePinsRaw from '../../data/ufosint/case-pins.json';
 import facilityPinsRaw from '../../data/ufosint/facility-pins.json';
+import timelineRaw from '../../data/timeline.json';
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
@@ -125,6 +126,19 @@ const facilityPinsLayer: LayerProps = {
   },
 };
 
+const timelineEventsLayer: LayerProps = {
+  id: 'timeline-events',
+  type: 'circle',
+  paint: {
+    'circle-radius': 6,
+    'circle-color': '#fb923c',
+    'circle-stroke-width': 1.5,
+    'circle-stroke-color': '#ffffff',
+    'circle-opacity': 0.9,
+    'circle-stroke-opacity': 0.9,
+  },
+};
+
 /* ── Static data ────────────────────────────────────────────────────────── */
 
 interface CasePin { id: string; name: string; lat: number; lng: number; total: number }
@@ -152,6 +166,33 @@ const facilityPinsGeoJSON = {
       active_period: p.active_period,
     },
   })),
+};
+
+interface TimelineEntry {
+  id: number; year: number; title: string; excerpt?: string;
+  categories: string[]; source?: string; lat?: number; lng?: number;
+}
+
+// Filter to geolocated events with meaningful categories (excludes 'x' and uncategorised)
+const SKIP_CATEGORIES = new Set(['x']);
+const timelineEventsGeoJSON = {
+  type: 'FeatureCollection' as const,
+  features: (timelineRaw as TimelineEntry[])
+    .filter(e =>
+      e.lat != null && e.lng != null &&
+      e.categories?.some(c => !SKIP_CATEGORIES.has(c))
+    )
+    .map(e => ({
+      type: 'Feature' as const,
+      geometry: { type: 'Point' as const, coordinates: [e.lng!, e.lat!] as [number, number] },
+      properties: {
+        id: e.id,
+        title: e.title,
+        year: e.year,
+        excerpt: e.excerpt ?? null,
+        source: e.source ?? null,
+      },
+    })),
 };
 
 /* ── Types ──────────────────────────────────────────────────────────── */
@@ -202,6 +243,7 @@ export default function SightingsMapInner() {
   const [pinLoading, setPinLoading] = useState(true); // true from the start — data is already in-flight
   const [popup, setPopup] = useState<PopupState | null>(null);
   const [showFacilities, setShowFacilities] = useState(false);
+  const [showTimeline, setShowTimeline] = useState(false);
 
   /* ── Prefetch global view on mount ──────────────────────────────── */
   // Start the data request immediately when the component mounts so it
@@ -382,7 +424,11 @@ export default function SightingsMapInner() {
         maxZoom={10}
         maxBounds={[[-179.9, -85], [179.9, 85]]}
         style={{ width: '100%', height: '100%' }}
-        interactiveLayerIds={showFacilities ? ['sightings', 'case-pins', 'facility-pins'] : ['sightings', 'case-pins']}
+        interactiveLayerIds={[
+          'sightings', 'case-pins',
+          ...(showFacilities ? ['facility-pins'] : []),
+          ...(showTimeline ? ['timeline-events'] : []),
+        ]}
         onClick={onMapClick}
         onLoad={onLoad}
         onMoveStart={onMoveStart}
@@ -405,6 +451,13 @@ export default function SightingsMapInner() {
         {showFacilities && (
           <Source id="facility-pins" type="geojson" data={facilityPinsGeoJSON}>
             <Layer {...facilityPinsLayer} />
+          </Source>
+        )}
+
+        {/* Geolocated DECUR timeline events — orange, opt-in toggle */}
+        {showTimeline && (
+          <Source id="timeline-events" type="geojson" data={timelineEventsGeoJSON}>
+            <Layer {...timelineEventsLayer} />
           </Source>
         )}
 
@@ -444,6 +497,27 @@ export default function SightingsMapInner() {
                   {popup.properties.source}
                   {popup.properties.quality_score != null ? ` · Q${popup.properties.quality_score}` : ''}
                 </div>
+              </div>
+            ) : popup.layerId === 'timeline-events' ? (
+              <div style={{ fontFamily: 'system-ui', minWidth: 190, maxWidth: 240 }}>
+                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
+                  {popup.properties.title}
+                </div>
+                <div style={{ fontSize: 10, color: '#fb923c', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Historical Event &middot; {popup.properties.year}
+                </div>
+                {popup.properties.excerpt && (
+                  <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5, marginBottom: 4 }}>
+                    {popup.properties.excerpt.length > 140
+                      ? popup.properties.excerpt.substring(0, 140) + '…'
+                      : popup.properties.excerpt}
+                  </div>
+                )}
+                {popup.properties.source && (
+                  <div style={{ fontSize: 10, color: '#999', paddingTop: 4, borderTop: '1px solid #e5e7eb' }}>
+                    {popup.properties.source}
+                  </div>
+                )}
               </div>
             ) : popup.layerId === 'facility-pins' ? (
               <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
@@ -584,7 +658,39 @@ export default function SightingsMapInner() {
           </div>
         </button>
 
-        {/* Future toggleable layers slot in here as additional <button> rows */}
+        {/* Toggleable: Historical Events */}
+        <button
+          onClick={() => setShowTimeline(s => !s)}
+          className="flex items-center gap-2 py-0.5 w-full text-left group"
+          title={showTimeline ? 'Hide historical timeline events' : 'Show geolocated DECUR historical events'}
+        >
+          <div style={{
+            width: 11, height: 11, borderRadius: '50%', flexShrink: 0,
+            background: showTimeline ? '#fb923c' : '#4b5563',
+            border: '2px solid #fff',
+            boxShadow: showTimeline
+              ? '0 0 0 1.5px rgba(251,146,60,0.5),0 0 6px rgba(251,146,60,0.8)'
+              : 'none',
+            transition: 'all 0.15s ease',
+          }} />
+          <span className={`text-xs flex-1 transition-colors ${showTimeline ? 'text-orange-300' : 'text-gray-500 group-hover:text-gray-400'}`}>
+            Historical events
+          </span>
+          {/* Toggle pill */}
+          <div style={{
+            width: 28, height: 16, borderRadius: 8, flexShrink: 0,
+            background: showTimeline ? '#fb923c' : '#374151',
+            border: '1px solid rgba(255,255,255,0.1)',
+            position: 'relative', transition: 'background 0.15s ease',
+          }}>
+            <div style={{
+              position: 'absolute', top: 2, width: 10, height: 10, borderRadius: '50%',
+              background: '#fff',
+              left: showTimeline ? 16 : 2,
+              transition: 'left 0.15s ease',
+            }} />
+          </div>
+        </button>
       </div>
     </div>
   );
