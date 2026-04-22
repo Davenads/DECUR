@@ -16,6 +16,7 @@ import type { MapRef, MapLayerMouseEvent, LayerProps } from 'react-map-gl/maplib
 import 'maplibre-gl/dist/maplibre-gl.css';
 import casePinsRaw from '../../data/ufosint/case-pins.json';
 import facilityPinsRaw from '../../data/ufosint/facility-pins.json';
+import nuclearPinsRaw from '../../data/ufosint/nuclear-pins.json';
 import timelineRaw from '../../data/timeline.json';
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
@@ -139,12 +140,29 @@ const timelineEventsLayer: LayerProps = {
   },
 };
 
+const nuclearPinsLayer: LayerProps = {
+  id: 'nuclear-pins',
+  type: 'circle',
+  paint: {
+    'circle-radius': 8,
+    'circle-color': '#ef4444',
+    'circle-stroke-width': 2,
+    'circle-stroke-color': '#ffffff',
+    'circle-opacity': 1,
+    'circle-stroke-opacity': 1,
+  },
+};
+
 /* ── Static data ────────────────────────────────────────────────────────── */
 
 interface CasePin { id: string; name: string; lat: number; lng: number; total: number }
 interface FacilityPin {
   id: string; name: string; description: string;
   programs: string[]; active_period: string; lat: number; lng: number;
+}
+interface NuclearPin {
+  id: string; name: string; description: string;
+  figures: string[]; lat: number; lng: number;
 }
 
 const casePinsGeoJSON = {
@@ -165,6 +183,15 @@ const facilityPinsGeoJSON = {
       id: p.id, name: p.name, description: p.description,
       active_period: p.active_period,
     },
+  })),
+};
+
+const nuclearPinsGeoJSON = {
+  type: 'FeatureCollection' as const,
+  features: (nuclearPinsRaw as NuclearPin[]).map(p => ({
+    type: 'Feature' as const,
+    geometry: { type: 'Point' as const, coordinates: [p.lng, p.lat] as [number, number] },
+    properties: { id: p.id, name: p.name, description: p.description },
   })),
 };
 
@@ -244,6 +271,7 @@ export default function SightingsMapInner() {
   const [popup, setPopup] = useState<PopupState | null>(null);
   const [showFacilities, setShowFacilities] = useState(false);
   const [showTimeline, setShowTimeline] = useState(false);
+  const [showNuclear, setShowNuclear] = useState(false);
 
   /* ── Prefetch global view on mount ──────────────────────────────── */
   // Start the data request immediately when the component mounts so it
@@ -428,6 +456,7 @@ export default function SightingsMapInner() {
           'sightings', 'case-pins',
           ...(showFacilities ? ['facility-pins'] : []),
           ...(showTimeline ? ['timeline-events'] : []),
+          ...(showNuclear ? ['nuclear-pins'] : []),
         ]}
         onClick={onMapClick}
         onLoad={onLoad}
@@ -458,6 +487,13 @@ export default function SightingsMapInner() {
         {showTimeline && (
           <Source id="timeline-events" type="geojson" data={timelineEventsGeoJSON}>
             <Layer {...timelineEventsLayer} />
+          </Source>
+        )}
+
+        {/* Nuclear facility UAP incident sites — red, opt-in toggle */}
+        {showNuclear && (
+          <Source id="nuclear-pins" type="geojson" data={nuclearPinsGeoJSON}>
+            <Layer {...nuclearPinsLayer} />
           </Source>
         )}
 
@@ -518,6 +554,18 @@ export default function SightingsMapInner() {
                     {popup.properties.source}
                   </div>
                 )}
+              </div>
+            ) : popup.layerId === 'nuclear-pins' ? (
+              <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
+                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
+                  {popup.properties.name}
+                </div>
+                <div style={{ fontSize: 10, color: '#ef4444', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Nuclear Incident
+                </div>
+                <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5 }}>
+                  {popup.properties.description}
+                </div>
               </div>
             ) : popup.layerId === 'facility-pins' ? (
               <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
@@ -687,6 +735,40 @@ export default function SightingsMapInner() {
               position: 'absolute', top: 2, width: 10, height: 10, borderRadius: '50%',
               background: '#fff',
               left: showTimeline ? 16 : 2,
+              transition: 'left 0.15s ease',
+            }} />
+          </div>
+        </button>
+
+        {/* Toggleable: Nuclear Incidents */}
+        <button
+          onClick={() => setShowNuclear(s => !s)}
+          className="flex items-center gap-2 py-0.5 w-full text-left group"
+          title={showNuclear ? 'Hide nuclear facility UAP incidents' : 'Show nuclear facility UAP incident sites'}
+        >
+          <div style={{
+            width: 11, height: 11, borderRadius: '50%', flexShrink: 0,
+            background: showNuclear ? '#ef4444' : '#4b5563',
+            border: '2px solid #fff',
+            boxShadow: showNuclear
+              ? '0 0 0 1.5px rgba(239,68,68,0.5),0 0 6px rgba(239,68,68,0.8)'
+              : 'none',
+            transition: 'all 0.15s ease',
+          }} />
+          <span className={`text-xs flex-1 transition-colors ${showNuclear ? 'text-red-300' : 'text-gray-500 group-hover:text-gray-400'}`}>
+            Nuclear incidents
+          </span>
+          {/* Toggle pill */}
+          <div style={{
+            width: 28, height: 16, borderRadius: 8, flexShrink: 0,
+            background: showNuclear ? '#ef4444' : '#374151',
+            border: '1px solid rgba(255,255,255,0.1)',
+            position: 'relative', transition: 'background 0.15s ease',
+          }}>
+            <div style={{
+              position: 'absolute', top: 2, width: 10, height: 10, borderRadius: '50%',
+              background: '#fff',
+              left: showNuclear ? 16 : 2,
               transition: 'left 0.15s ease',
             }} />
           </div>

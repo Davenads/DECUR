@@ -1,0 +1,58 @@
+[
+  {
+    "id": "malmstrom-afb-1967",
+    "name": "Malmstrom AFB - Echo Flight (1967)",
+    "description": "On March 16, 1967, 10 Minuteman ICBMs went offline simultaneously. Captain Robert Salas reported a glowing red object hovering over the flight security controller while the shutdowns occurred. Corroborated by multiple officers.",
+    "lat": 47.508,
+    "lng": -111.183,
+    "figures": ["robert-salas"]
+  },
+  {
+    "id": "minot-afb-1968",
+    "name": "Minot AFB - B-52 Incident (1968)",
+    "description": "October 1968. A UFO tracked by ground radar was observed near B-52 bomber and ICBM launch facilities. Crew reported the object on multiple instruments. One of the most thoroughly documented military cases.",
+    "lat": 48.416,
+    "lng": -101.358,
+    "figures": []
+  },
+  {
+    "id": "loring-afb-1975",
+    "name": "Loring AFB (1975)",
+    "description": "October-November 1975. Unidentified helicopter-like craft overflew the nuclear weapons storage area on multiple nights. Military police and base commanders filed reports. Part of the 1975 northern tier intrusion series.",
+    "lat": 46.951,
+    "lng": -67.887,
+    "figures": []
+  },
+  {
+    "id": "wurtsmith-afb-1975",
+    "name": "Wurtsmith AFB (1975)",
+    "description": "October 1975. Part of the same northern tier intrusion series as Loring and Minot. Unidentified aerial objects tracked near nuclear storage. NORAD alerted multiple times.",
+    "lat": 44.452,
+    "lng": -83.744,
+    "figures": []
+  },
+  {
+    "id": "warren-afb-1980",
+    "name": "F.E. Warren AFB (1980)",
+    "description": "August 1980. Security personnel in ICBM maintenance tunnels reported large glowing objects hovering over the facility. Filed official incident reports. Adjacent to Cheyenne, WY.",
+    "lat": 41.145,
+    "lng": -104.867,
+    "figures": []
+  },
+  {
+    "id": "hanford-site-1945",
+    "name": "Hanford Site (1945-1950s)",
+    "description": "Multiple UAP reports over Hanford plutonium production reactors beginning in 1945. FBI and AEC documents released via FOIA detail recurring unidentified objects over restricted airspace. Among the earliest post-war nuclear UAP reports.",
+    "lat": 46.551,
+    "lng": -119.489,
+    "figures": []
+  },
+  {
+    "id": "indian-point-1984",
+    "name": "Indian Point Nuclear Plant (1984)",
+    "description": "July 24, 1984. A large V-shaped or boomerang craft reported by multiple security personnel and civilians hovering directly over the Indian Point nuclear reactor in New York. Security attempted to intercept. FAA filed reports.",
+    "lat": 41.270,
+    "lng": -73.952,
+    "figures": []
+  }
+]
