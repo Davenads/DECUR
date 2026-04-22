@@ -486,26 +486,6 @@ export default function SightingsMapInner() {
         )}
       </Map>
 
-      {/* Investigation Sites toggle — top right */}
-      <button
-        onClick={() => setShowFacilities(s => !s)}
-        className="absolute top-3 right-3 flex items-center gap-1.5 bg-gray-900/85 backdrop-blur-sm border rounded-full px-3 py-1.5 text-xs font-medium transition-colors"
-        style={{
-          zIndex: 10,
-          borderColor: showFacilities ? 'rgba(168,85,247,0.7)' : 'rgba(75,85,99,0.7)',
-          color: showFacilities ? '#c084fc' : '#9ca3af',
-        }}
-        title={showFacilities ? 'Hide investigation facility locations' : 'Show government investigation facility locations'}
-      >
-        <span style={{
-          display: 'inline-block', width: 8, height: 8, borderRadius: '50%',
-          background: showFacilities ? '#a855f7' : '#4b5563',
-          boxShadow: showFacilities ? '0 0 6px rgba(168,85,247,0.8)' : 'none',
-          flexShrink: 0,
-        }} />
-        Investigation Sites
-      </button>
-
       {/* Gradient fades — blend map edges into the page background */}
       <div
         className="absolute top-0 left-0 right-0 pointer-events-none"
@@ -533,19 +513,22 @@ export default function SightingsMapInner() {
         </div>
       )}
 
-      {/* Legend */}
+      {/* Layers panel — consolidated legend + toggle controls */}
       <div
-        className="absolute bottom-3 left-3 bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 space-y-1.5"
-        style={{ zIndex: 10 }}
+        className="absolute bottom-3 left-3 bg-gray-900/85 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2"
+        style={{ zIndex: 10, minWidth: 196 }}
       >
-        <p className="text-xs font-semibold text-gray-300 uppercase tracking-wide">Legend</p>
-        <div className="flex items-center gap-2">
+        {/* Header */}
+        <p className="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-2">Layers</p>
+
+        {/* Always-on: Community sightings */}
+        <div className="flex items-center gap-2 py-0.5">
           <div style={{
-            width: 9, height: 9, borderRadius: '50%',
+            width: 9, height: 9, borderRadius: '50%', flexShrink: 0,
             background: '#22d3ee', border: '1px solid rgba(255,255,255,0.5)',
-            boxShadow: '0 0 4px rgba(34,211,238,0.5)', flexShrink: 0,
+            boxShadow: '0 0 4px rgba(34,211,238,0.5)',
           }} />
-          <span className="text-xs text-gray-400">
+          <span className="text-xs text-gray-400 flex-1">
             {pinLoading
               ? 'Loading...'
               : pinCount != null
@@ -553,24 +536,55 @@ export default function SightingsMapInner() {
                 : 'Community sightings'}
           </span>
         </div>
-        <div className="flex items-center gap-2">
+
+        {/* Always-on: Documented cases */}
+        <div className="flex items-center gap-2 py-0.5">
           <div style={{
-            width: 14, height: 14, borderRadius: '50%',
-            background: '#f59e0b', border: '2.5px solid #fff',
-            boxShadow: '0 0 0 2px rgba(245,158,11,0.5),0 0 8px rgba(245,158,11,0.9)', flexShrink: 0,
+            width: 11, height: 11, borderRadius: '50%', flexShrink: 0,
+            background: '#f59e0b', border: '2px solid #fff',
+            boxShadow: '0 0 0 1.5px rgba(245,158,11,0.5),0 0 6px rgba(245,158,11,0.8)',
           }} />
-          <span className="text-xs text-gray-300 font-medium">DECUR documented case</span>
+          <span className="text-xs text-gray-300 flex-1">Documented cases</span>
         </div>
-        {showFacilities && (
-          <div className="flex items-center gap-2">
+
+        {/* Divider before toggleable layers */}
+        <div className="border-t border-gray-700/60 my-1.5" />
+
+        {/* Toggleable: Investigation Sites */}
+        <button
+          onClick={() => setShowFacilities(s => !s)}
+          className="flex items-center gap-2 py-0.5 w-full text-left group"
+          title={showFacilities ? 'Hide investigation facility locations' : 'Show government investigation facility locations'}
+        >
+          <div style={{
+            width: 11, height: 11, borderRadius: '50%', flexShrink: 0,
+            background: showFacilities ? '#a855f7' : '#4b5563',
+            border: '2px solid #fff',
+            boxShadow: showFacilities
+              ? '0 0 0 1.5px rgba(168,85,247,0.5),0 0 6px rgba(168,85,247,0.8)'
+              : 'none',
+            transition: 'all 0.15s ease',
+          }} />
+          <span className={`text-xs flex-1 transition-colors ${showFacilities ? 'text-purple-300' : 'text-gray-500 group-hover:text-gray-400'}`}>
+            Investigation sites
+          </span>
+          {/* Toggle pill */}
+          <div style={{
+            width: 28, height: 16, borderRadius: 8, flexShrink: 0,
+            background: showFacilities ? '#a855f7' : '#374151',
+            border: '1px solid rgba(255,255,255,0.1)',
+            position: 'relative', transition: 'background 0.15s ease',
+          }}>
             <div style={{
-              width: 14, height: 14, borderRadius: '50%',
-              background: '#a855f7', border: '2.5px solid #fff',
-              boxShadow: '0 0 0 2px rgba(168,85,247,0.5),0 0 8px rgba(168,85,247,0.9)', flexShrink: 0,
+              position: 'absolute', top: 2, width: 10, height: 10, borderRadius: '50%',
+              background: '#fff',
+              left: showFacilities ? 16 : 2,
+              transition: 'left 0.15s ease',
             }} />
-            <span className="text-xs text-purple-300 font-medium">Investigation facility</span>
           </div>
-        )}
+        </button>
+
+        {/* Future toggleable layers slot in here as additional <button> rows */}
       </div>
     </div>
   );
