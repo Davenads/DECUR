@@ -145,7 +145,7 @@ const nuclearPinsLayer: LayerProps = {
   type: 'circle',
   paint: {
     'circle-radius': 8,
-    'circle-color': '#ef4444',
+    'circle-color': '#84cc16',
     'circle-stroke-width': 2,
     'circle-stroke-color': '#ffffff',
     'circle-opacity': 1,
@@ -490,7 +490,7 @@ export default function SightingsMapInner() {
           </Source>
         )}
 
-        {/* Nuclear facility UAP incident sites — red, opt-in toggle */}
+        {/* Nuclear facility UAP incident sites — lime, opt-in toggle */}
         {showNuclear && (
           <Source id="nuclear-pins" type="geojson" data={nuclearPinsGeoJSON}>
             <Layer {...nuclearPinsLayer} />
@@ -560,7 +560,7 @@ export default function SightingsMapInner() {
                 <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
                   {popup.properties.name}
                 </div>
-                <div style={{ fontSize: 10, color: '#ef4444', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                <div style={{ fontSize: 10, color: '#84cc16', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   Nuclear Incident
                 </div>
                 <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5 }}>
@@ -748,20 +748,20 @@ export default function SightingsMapInner() {
         >
           <div style={{
             width: 11, height: 11, borderRadius: '50%', flexShrink: 0,
-            background: showNuclear ? '#ef4444' : '#4b5563',
+            background: showNuclear ? '#84cc16' : '#4b5563',
             border: '2px solid #fff',
             boxShadow: showNuclear
-              ? '0 0 0 1.5px rgba(239,68,68,0.5),0 0 6px rgba(239,68,68,0.8)'
+              ? '0 0 0 1.5px rgba(132,204,22,0.5),0 0 6px rgba(132,204,22,0.8)'
               : 'none',
             transition: 'all 0.15s ease',
           }} />
-          <span className={`text-xs flex-1 transition-colors ${showNuclear ? 'text-red-300' : 'text-gray-500 group-hover:text-gray-400'}`}>
+          <span className={`text-xs flex-1 transition-colors ${showNuclear ? 'text-lime-300' : 'text-gray-500 group-hover:text-gray-400'}`}>
             Nuclear incidents
           </span>
           {/* Toggle pill */}
           <div style={{
             width: 28, height: 16, borderRadius: 8, flexShrink: 0,
-            background: showNuclear ? '#ef4444' : '#374151',
+            background: showNuclear ? '#84cc16' : '#374151',
             border: '1px solid rgba(255,255,255,0.1)',
             position: 'relative', transition: 'background 0.15s ease',
           }}>
