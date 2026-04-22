@@ -15,6 +15,7 @@ import Map, { Source, Layer, Popup, NavigationControl } from 'react-map-gl/mapli
 import type { MapRef, MapLayerMouseEvent, LayerProps } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import casePinsRaw from '../../data/ufosint/case-pins.json';
+import facilityPinsRaw from '../../data/ufosint/facility-pins.json';
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
@@ -111,9 +112,26 @@ const casePinsLayer: LayerProps = {
   },
 };
 
+const facilityPinsLayer: LayerProps = {
+  id: 'facility-pins',
+  type: 'circle',
+  paint: {
+    'circle-radius': 9,
+    'circle-color': '#a855f7',
+    'circle-stroke-width': 2.5,
+    'circle-stroke-color': '#ffffff',
+    'circle-opacity': 1,
+    'circle-stroke-opacity': 1,
+  },
+};
+
 /* ── Static data ────────────────────────────────────────────────────────── */
 
 interface CasePin { id: string; name: string; lat: number; lng: number; total: number }
+interface FacilityPin {
+  id: string; name: string; description: string;
+  programs: string[]; active_period: string; lat: number; lng: number;
+}
 
 const casePinsGeoJSON = {
   type: 'FeatureCollection' as const,
@@ -121,6 +139,18 @@ const casePinsGeoJSON = {
     type: 'Feature' as const,
     geometry: { type: 'Point' as const, coordinates: [p.lng, p.lat] as [number, number] },
     properties: { id: p.id, name: p.name, total: p.total },
+  })),
+};
+
+const facilityPinsGeoJSON = {
+  type: 'FeatureCollection' as const,
+  features: (facilityPinsRaw as FacilityPin[]).map(p => ({
+    type: 'Feature' as const,
+    geometry: { type: 'Point' as const, coordinates: [p.lng, p.lat] as [number, number] },
+    properties: {
+      id: p.id, name: p.name, description: p.description,
+      active_period: p.active_period,
+    },
   })),
 };
 
@@ -171,6 +201,7 @@ export default function SightingsMapInner() {
   const [pinCount, setPinCount] = useState<number | null>(null);
   const [pinLoading, setPinLoading] = useState(true); // true from the start — data is already in-flight
   const [popup, setPopup] = useState<PopupState | null>(null);
+  const [showFacilities, setShowFacilities] = useState(false);
 
   /* ── Prefetch global view on mount ──────────────────────────────── */
   // Start the data request immediately when the component mounts so it
@@ -351,7 +382,7 @@ export default function SightingsMapInner() {
         maxZoom={10}
         maxBounds={[[-179.9, -85], [179.9, 85]]}
         style={{ width: '100%', height: '100%' }}
-        interactiveLayerIds={['sightings', 'case-pins']}
+        interactiveLayerIds={showFacilities ? ['sightings', 'case-pins', 'facility-pins'] : ['sightings', 'case-pins']}
         onClick={onMapClick}
         onLoad={onLoad}
         onMoveStart={onMoveStart}
@@ -369,6 +400,13 @@ export default function SightingsMapInner() {
         <Source id="case-pins" type="geojson" data={casePinsGeoJSON}>
           <Layer {...casePinsLayer} />
         </Source>
+
+        {/* Government investigation facility pins — purple, opt-in toggle */}
+        {showFacilities && (
+          <Source id="facility-pins" type="geojson" data={facilityPinsGeoJSON}>
+            <Layer {...facilityPinsLayer} />
+          </Source>
+        )}
 
         {/* Click popup */}
         {popup && (
@@ -407,6 +445,21 @@ export default function SightingsMapInner() {
                   {popup.properties.quality_score != null ? ` · Q${popup.properties.quality_score}` : ''}
                 </div>
               </div>
+            ) : popup.layerId === 'facility-pins' ? (
+              <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
+                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
+                  {popup.properties.name}
+                </div>
+                <div style={{ fontSize: 10, color: '#a855f7', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Investigation Facility
+                </div>
+                <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5 }}>
+                  {popup.properties.description}
+                </div>
+                <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid #e5e7eb', fontSize: 10, color: '#888' }}>
+                  Active: {popup.properties.active_period}
+                </div>
+              </div>
             ) : (
               <div style={{ fontFamily: 'system-ui', minWidth: 180 }}>
                 <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 4, color: '#111' }}>
@@ -432,6 +485,26 @@ export default function SightingsMapInner() {
           </Popup>
         )}
       </Map>
+
+      {/* Investigation Sites toggle — top right */}
+      <button
+        onClick={() => setShowFacilities(s => !s)}
+        className="absolute top-3 right-3 flex items-center gap-1.5 bg-gray-900/85 backdrop-blur-sm border rounded-full px-3 py-1.5 text-xs font-medium transition-colors"
+        style={{
+          zIndex: 10,
+          borderColor: showFacilities ? 'rgba(168,85,247,0.7)' : 'rgba(75,85,99,0.7)',
+          color: showFacilities ? '#c084fc' : '#9ca3af',
+        }}
+        title={showFacilities ? 'Hide investigation facility locations' : 'Show government investigation facility locations'}
+      >
+        <span style={{
+          display: 'inline-block', width: 8, height: 8, borderRadius: '50%',
+          background: showFacilities ? '#a855f7' : '#4b5563',
+          boxShadow: showFacilities ? '0 0 6px rgba(168,85,247,0.8)' : 'none',
+          flexShrink: 0,
+        }} />
+        Investigation Sites
+      </button>
 
       {/* Gradient fades — blend map edges into the page background */}
       <div
@@ -488,6 +561,16 @@ export default function SightingsMapInner() {
           }} />
           <span className="text-xs text-gray-300 font-medium">DECUR documented case</span>
         </div>
+        {showFacilities && (
+          <div className="flex items-center gap-2">
+            <div style={{
+              width: 14, height: 14, borderRadius: '50%',
+              background: '#a855f7', border: '2.5px solid #fff',
+              boxShadow: '0 0 0 2px rgba(168,85,247,0.5),0 0 8px rgba(168,85,247,0.9)', flexShrink: 0,
+            }} />
+            <span className="text-xs text-purple-300 font-medium">Investigation facility</span>
+          </div>
+        )}
       </div>
     </div>
   );

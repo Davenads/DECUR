@@ -1,0 +1,65 @@
+[
+  {
+    "id": "wright-patterson-afb",
+    "name": "Wright-Patterson AFB",
+    "description": "Home of Air Materiel Command; headquarters of Project Sign (1947), Project Grudge (1949), and Project Blue Book (1952-1969). Nearly all Blue Book case files were processed and stored here.",
+    "programs": ["project-sign", "project-grudge", "project-blue-book"],
+    "active_period": "1947-1969",
+    "lat": 39.826,
+    "lng": -84.048
+  },
+  {
+    "id": "pentagon",
+    "name": "Pentagon",
+    "description": "DoD headquarters. Site of AATIP operations (2007-2012) and subsequent UAPTF and AARO offices. Luis Elizondo directed AATIP from here before resigning in 2017.",
+    "programs": ["aatip", "uaptf", "aaro"],
+    "active_period": "2007-present",
+    "lat": 38.871,
+    "lng": -77.056
+  },
+  {
+    "id": "kirtland-afb",
+    "name": "Kirtland AFB",
+    "description": "Key AFOSI counterintelligence hub. Site of documented 1980 UAP incidents investigated by Richard Doty. Sandia National Laboratories co-located; adjacent to Manzano weapons storage area linked to multiple AFOSI reports.",
+    "programs": ["afosi"],
+    "active_period": "1980s-present",
+    "lat": 35.040,
+    "lng": -106.544
+  },
+  {
+    "id": "area-51",
+    "name": "Area 51 / Groom Lake",
+    "description": "Classified Nevada Test and Training Range facility. Alleged site of multiple USAP programs. Linked to UAP retrieval claims by multiple whistleblowers including Bob Lazar, who described S-4 operations south of the main facility.",
+    "programs": [],
+    "active_period": "1955-present",
+    "lat": 37.235,
+    "lng": -115.811
+  },
+  {
+    "id": "skinwalker-ranch",
+    "name": "Skinwalker Ranch",
+    "description": "Utah property purchased by Robert Bigelow in 1996. Operated as the primary NIDS field research site and subsequently the anchor location for the AAWSAP contract. Multi-year on-site investigation by Bigelow Aerospace and DIA-contracted personnel.",
+    "programs": ["aawsap"],
+    "active_period": "1996-2016",
+    "lat": 40.257,
+    "lng": -109.891
+  },
+  {
+    "id": "dugway-proving-ground",
+    "name": "Dugway Proving Ground",
+    "description": "DoD test range in the Utah desert. Associated with classified aerospace programs and multiple UAP sighting reports from military and civilian sources in the surrounding region.",
+    "programs": [],
+    "active_period": "1942-present",
+    "lat": 40.194,
+    "lng": -112.930
+  },
+  {
+    "id": "holloman-afb",
+    "name": "Holloman AFB",
+    "description": "New Mexico air base adjacent to White Sands Missile Range. Appeared in multiple Project Blue Book reports. Associated with alleged 1954 contact claims and several AFOSI investigations.",
+    "programs": ["project-blue-book", "afosi"],
+    "active_period": "1947-present",
+    "lat": 32.853,
+    "lng": -106.101
+  }
+]

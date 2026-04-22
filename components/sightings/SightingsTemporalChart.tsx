@@ -9,6 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
   Legend,
+  ReferenceLine,
 } from 'recharts';
 import { useTheme } from 'next-themes';
 import yearlyCounts from '../../data/ufosint/yearly-counts.json';
@@ -200,6 +201,27 @@ export default function SightingsTemporalChart() {
               dot={false}
               activeDot={{ r: 4, fill: '#f59e0b' }}
             />
+            {/* Program reference lines — only meaningful in the full 1947-2025 view */}
+            {range === 'all' && (
+              <>
+                <ReferenceLine
+                  x={1952}
+                  yAxisId="sightings"
+                  stroke="#a855f7"
+                  strokeDasharray="4 3"
+                  strokeOpacity={0.7}
+                  label={{ value: 'Blue Book', position: 'insideTopRight', fontSize: 9, fill: '#c084fc', dy: 2 }}
+                />
+                <ReferenceLine
+                  x={1969}
+                  yAxisId="sightings"
+                  stroke="#a855f7"
+                  strokeDasharray="4 3"
+                  strokeOpacity={0.7}
+                  label={{ value: 'Blue Book ends', position: 'insideTopRight', fontSize: 9, fill: '#c084fc', dy: 2 }}
+                />
+              </>
+            )}
           </ComposedChart>
         </ResponsiveContainer>
       </div>
