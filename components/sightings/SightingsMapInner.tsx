@@ -131,7 +131,7 @@ const timelineEventsLayer: LayerProps = {
   type: 'circle',
   paint: {
     'circle-radius': 6,
-    'circle-color': '#fb923c',
+    'circle-color': '#f43f5e',
     'circle-stroke-width': 1.5,
     'circle-stroke-color': '#ffffff',
     'circle-opacity': 0.9,
@@ -454,7 +454,7 @@ export default function SightingsMapInner() {
           </Source>
         )}
 
-        {/* Geolocated DECUR timeline events — orange, opt-in toggle */}
+        {/* Geolocated DECUR timeline events — rose, opt-in toggle */}
         {showTimeline && (
           <Source id="timeline-events" type="geojson" data={timelineEventsGeoJSON}>
             <Layer {...timelineEventsLayer} />
@@ -503,7 +503,7 @@ export default function SightingsMapInner() {
                 <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
                   {popup.properties.title}
                 </div>
-                <div style={{ fontSize: 10, color: '#fb923c', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                <div style={{ fontSize: 10, color: '#f43f5e', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                   Historical Event &middot; {popup.properties.year}
                 </div>
                 {popup.properties.excerpt && (
@@ -666,20 +666,20 @@ export default function SightingsMapInner() {
         >
           <div style={{
             width: 11, height: 11, borderRadius: '50%', flexShrink: 0,
-            background: showTimeline ? '#fb923c' : '#4b5563',
+            background: showTimeline ? '#f43f5e' : '#4b5563',
             border: '2px solid #fff',
             boxShadow: showTimeline
-              ? '0 0 0 1.5px rgba(251,146,60,0.5),0 0 6px rgba(251,146,60,0.8)'
+              ? '0 0 0 1.5px rgba(244,63,94,0.5),0 0 6px rgba(244,63,94,0.8)'
               : 'none',
             transition: 'all 0.15s ease',
           }} />
-          <span className={`text-xs flex-1 transition-colors ${showTimeline ? 'text-orange-300' : 'text-gray-500 group-hover:text-gray-400'}`}>
+          <span className={`text-xs flex-1 transition-colors ${showTimeline ? 'text-rose-300' : 'text-gray-500 group-hover:text-gray-400'}`}>
             Historical events
           </span>
           {/* Toggle pill */}
           <div style={{
             width: 28, height: 16, borderRadius: 8, flexShrink: 0,
-            background: showTimeline ? '#fb923c' : '#374151',
+            background: showTimeline ? '#f43f5e' : '#374151',
             border: '1px solid rgba(255,255,255,0.1)',
             position: 'relative', transition: 'background 0.15s ease',
           }}>
