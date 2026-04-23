@@ -11330,6 +11330,18 @@
         "role": "Civilian mass witnesses, Aguas Blancas, Argentina",
         "type": "civilian",
         "testimony": "An estimated 500 or more attendees at a local soccer match in Aguas Blancas observed the object simultaneously with the border police officers. Additional thousands of witnesses were reported across the broader Tarija region."
+      },
+      {
+        "name": "Bob Pratt",
+        "role": "National Enquirer journalist and field investigator; conducted the most thorough civilian on-site investigation",
+        "type": "civilian",
+        "testimony": "Pratt visited the Tarija area and conducted field investigation whose conclusions appeared in a 1984 letter. Key findings: (1) significant misinformation had been published about the incident; (2) the military did NOT cordon off the area; (3) no confirmed evidence of NASA or any agency physically recovering an object; (4) no Hercules C-130 recovery confirmed; (5) he believed something crashed and was likely buried under the resulting landslide; (6) six people who actually reached the site found no debris. His cautionary conclusions are an important check on more dramatic recovery claims."
+      },
+      {
+        "name": "Nicholas Ojedo",
+        "role": "Argentine UAP investigator; correspondent to Leonard Stringfield",
+        "type": "civilian",
+        "testimony": "In June 1979, Ojedo contacted Leonard Stringfield with claims gathered about the Tarija incident: (1) investigators had vanished mysteriously near the crash area; (2) a U.S. cargo plane had carried something from the area. Stringfield published these claims in his Status Reports. None have been independently corroborated."
       }
     ],
     "official_response": {
@@ -11410,6 +11422,10 @@
         "event": "The CIA produces a classified document titled 'Bolivia Reports Conflict On Details Of Fallen Object,' later partially declassified and catalogued in the CIA FOIA Reading Room. The document reflects internal U.S. intelligence community interest in conflicting Bolivian accounts of the crash."
       },
       {
+        "local": "June 1979",
+        "event": "Argentine investigator Nicholas Ojedo contacts Leonard Stringfield with intelligence about the Tarija aftermath: claims that a group of investigators vanished near the crash area, that 'something big' had occurred, and that a U.S. cargo plane 'carried something from the area.' Stringfield published these claims in his Status Reports; none were independently corroborated."
+      },
+      {
         "local": "1978-1980s",
         "event": "The Smithsonian Scientific Event Alert Network confirms no meteorite fall on record for the Bolivia-Argentina border in May 1978. The case is catalogued by APRO (Aerial Phenomena Research Organization), then one of the largest civilian UAP research organizations in the United States."
       },
@@ -11421,7 +11437,7 @@
     "competing_hypotheses": [
       {
         "name": "Meteorite impact",
-        "assessment": "ruled-out",
+        "assessment": "debunked",
         "summary": "Formally ruled out by the Smithsonian Scientific Event Alert Network, which found no meteorite fall on record for the Bolivia-Argentina border in May 1978. The object's described appearance (metallic, oval, trailing smoke) is also inconsistent with typical meteorite fall characteristics."
       },
       {
@@ -11470,6 +11486,20 @@
         "type": "foia",
         "date": "1978",
         "notes": "Declassified CIA document reflecting internal U.S. intelligence community interest in conflicting Bolivian accounts. Available in the CIA FOIA Reading Room. One of the primary official documents for this case."
+      },
+      {
+        "title": "U.S. State Department FOIA - Project Moon Dust / Tarija documents (five declassified cables, 1978)",
+        "url": "https://www.theblackvault.com/documentarchive/project-moon-dust/",
+        "type": "foia",
+        "date": "1978",
+        "notes": "Five declassified State Department cables including the Vance telex (May 18, 1978), Ambassador Boeker cables, and Moon Dust operational communications. Obtained via FOIA campaigns including Clifford Stone's 1989-1992 efforts. Primary official documentation of the U.S. government response. The Black Vault maintains an accessible archive."
+      },
+      {
+        "title": "Bob Pratt - 1984 field investigation letter and conclusions (via UFO Evidence/FUFOR archive)",
+        "url": "http://www.ufoevidence.org/cases/case635.htm",
+        "type": "media",
+        "date": "1984",
+        "notes": "Pratt's on-site investigation with Charles Tucker found significant misinformation had been published, no military cordon, no confirmed recovery, and no Hercules C-130 extraction. Key skeptical check on sensationalized accounts. Referenced in UFO Evidence case file."
       },
       {
         "title": "Inexplicata - Bolivia: Remembering the Tarija UFO Crash (May 6, 1978)",
