@@ -154,7 +154,18 @@ export default function SightingsTemporalChart({ selectedYear, onYearSelect }: P
       {/* Chart */}
       <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-4">
         <ResponsiveContainer width="100%" height={320}>
-          <ComposedChart data={data} margin={{ top: 8, right: 40, bottom: 8, left: 8 }}>
+          <ComposedChart
+            data={data}
+            margin={{ top: 8, right: 40, bottom: 8, left: 8 }}
+            style={onYearSelect ? { cursor: 'pointer' } : undefined}
+            // Chart-level click fires on both mouse and touch — more reliable than Bar.onClick on mobile
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            onClick={onYearSelect ? (chartData: any) => {
+              // activeLabel is the x-axis value (year) of the tapped/clicked position
+              const year = chartData?.activeLabel ?? chartData?.activePayload?.[0]?.payload?.year;
+              if (year != null) onYearSelect(Number(year));
+            } : undefined}
+          >
             <CartesianGrid strokeDasharray="3 3" stroke={gridColor} />
             <XAxis
               dataKey="year"
@@ -200,9 +211,6 @@ export default function SightingsTemporalChart({ selectedYear, onYearSelect }: P
               name="sightings"
               radius={[1, 1, 0, 0]}
               maxBarSize={12}
-              style={onYearSelect ? { cursor: 'pointer' } : undefined}
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              onClick={onYearSelect ? (barData: any) => onYearSelect((barData as ChartDatum).year) : undefined}
             >
               {data.map((entry) => (
                 <Cell
