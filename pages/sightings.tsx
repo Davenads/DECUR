@@ -72,15 +72,30 @@ interface StatsBarProps {
 const StatsBar: React.FC<StatsBarProps> = ({ stats, isLive }) => {
   if (!stats) return <StatsBarSkeleton />;
 
-  const minYear = stats.date_range.min?.match(/(\d{4})/)?.[1] ?? '1900';
-  const maxYear = stats.date_range.max?.match(/(\d{4})/)?.[1] ?? '2026';
+  // Clamp displayed date range to the modern sighting era — raw DB min/max
+  // include data-entry outliers (e.g. "1800-01-01", "2028-03-17") that
+  // survived the coordinate-nulling pass and would mislead readers.
+  const EARLIEST_CREDIBLE = 1947; // Kenneth Arnold / modern era start
+  const CURRENT_YEAR = new Date().getFullYear();
+  const rawMin = parseInt(stats.date_range.min?.match(/(\d{4})/)?.[1] ?? '1947', 10);
+  const rawMax = parseInt(stats.date_range.max?.match(/(\d{4})/)?.[1] ?? String(CURRENT_YEAR), 10);
+  const minYear = Math.max(EARLIEST_CREDIBLE, rawMin).toString();
+  const maxYear = Math.min(CURRENT_YEAR, rawMax).toString();
 
   const items = [
-    { value: stats.total_sightings.toLocaleString(), label: 'total reports' },
-    { value: stats.mapped_sightings.toLocaleString(), label: 'geocoded' },
-    { value: '5', label: 'source databases' },
-    { value: `${minYear}-${maxYear}`, label: 'date range' },
-    { value: stats.high_quality.toLocaleString(), label: 'high-confidence (≥60)' },
+    { value: stats.total_sightings.toLocaleString(), label: 'total reports', title: undefined },
+    {
+      value: stats.mapped_sightings.toLocaleString(),
+      label: 'geocoded',
+      title: 'Records with valid latitude/longitude coordinates — usable as map pins',
+    },
+    { value: '5', label: 'source databases', title: undefined },
+    { value: `${minYear}-${maxYear}`, label: 'date range', title: 'Date range of credible records (1947-present); outlier-dated records exist in the source data but are excluded from this display' },
+    {
+      value: stats.high_quality.toLocaleString(),
+      label: 'high-confidence (≥60)',
+      title: 'Records scoring ≥60/100 on a quality index measuring description depth, geocoding confidence, structured fields, and cross-source corroboration',
+    },
   ];
 
   return (
@@ -97,11 +112,13 @@ const StatsBar: React.FC<StatsBarProps> = ({ stats, isLive }) => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
         {items.map((item) => (
-          <div key={item.label} className="text-center">
+          <div key={item.label} className="text-center" title={item.title}>
             <p className="text-xl font-bold font-mono text-gray-900 dark:text-gray-100 tabular-nums">
               {item.value}
             </p>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{item.label}</p>
+            <p className={`text-xs mt-0.5 ${item.title ? 'text-gray-500 dark:text-gray-400 underline decoration-dotted cursor-help' : 'text-gray-500 dark:text-gray-400'}`}>
+              {item.label}
+            </p>
           </div>
         ))}
       </div>
