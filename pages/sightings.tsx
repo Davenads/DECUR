@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import SeoHead from '../components/SeoHead';
 import SightingsMap from '../components/sightings/SightingsMap';
 import SightingsTemporalChart from '../components/sightings/SightingsTemporalChart';
@@ -155,6 +155,16 @@ interface StatsCacheEntry {
 const SightingsPage: NextPage = () => {
   const [stats, setStats] = useState<UfosintStats | null>(null);
   const [isLive, setIsLive] = useState(false);
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const searchRef = useRef<HTMLDivElement>(null);
+
+  const handleYearSelect = (year: number) => {
+    setSelectedYear(year);
+    // Scroll to search section after a short delay so state has propagated
+    setTimeout(() => {
+      searchRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+  };
 
   // Cache strategy: show cached stats immediately (no skeleton) on repeat visits,
   // then fetch fresh data in background and update silently if it differs.
@@ -246,13 +256,21 @@ const SightingsPage: NextPage = () => {
         </div>
 
         {/* Temporal correlation chart */}
-        <SightingsTemporalChart />
+        <SightingsTemporalChart
+          selectedYear={selectedYear}
+          onYearSelect={handleYearSelect}
+        />
 
         {/* Database breakdown */}
         <SightingsBreakdown />
 
         {/* Browse / search sightings */}
-        <SightingsSearch />
+        <div ref={searchRef}>
+          <SightingsSearch
+            externalYear={selectedYear}
+            onClearYear={() => setSelectedYear(null)}
+          />
+        </div>
 
         {/* Methodology / attribution */}
         <details className="border border-gray-200 dark:border-gray-700 rounded-xl">

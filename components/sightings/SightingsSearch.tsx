@@ -99,7 +99,12 @@ const SightingCard: React.FC<CardProps> = ({ sighting }) => {
 
 /* ── Main component ─────────────────────────────────────────────────── */
 
-export default function SightingsSearch() {
+interface SightingsSearchProps {
+  externalYear?: number | null;
+  onClearYear?: () => void;
+}
+
+export default function SightingsSearch({ externalYear, onClearYear }: SightingsSearchProps = {}) {
   const [query, setQuery]           = useState('');
   const [shapeFilter, setShapeFilter] = useState('All');
   const [sourceFilter, setSourceFilter] = useState('All');
@@ -118,6 +123,7 @@ export default function SightingsSearch() {
     source: string,
     off: number,
     append: boolean,
+    year?: number | null,
   ) => {
     setLoading(true);
     try {
@@ -125,6 +131,7 @@ export default function SightingsSearch() {
       if (q.trim())         params.set('q', q.trim());
       if (shape !== 'All')  params.set('shape', shape);
       if (source !== 'All') params.set('source', source);
+      if (year)             { params.set('date_from', `${year}-01-01`); params.set('date_to', `${year}-12-31`); }
 
       const res = await fetch(`/api/sightings/search?${params.toString()}`);
       if (!res.ok) throw new Error('Search failed');
@@ -147,16 +154,16 @@ export default function SightingsSearch() {
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
       setOffset(0);
-      fetchResults(query, shapeFilter, sourceFilter, 0, false);
+      fetchResults(query, shapeFilter, sourceFilter, 0, false, externalYear);
     }, 300);
     return () => { if (debounceRef.current) clearTimeout(debounceRef.current); };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, shapeFilter, sourceFilter]);
+  }, [query, shapeFilter, sourceFilter, externalYear]);
 
   /* ── Load more ──────────────────────────────────────────────────── */
 
   const loadMore = () => {
-    fetchResults(query, shapeFilter, sourceFilter, offset, true);
+    fetchResults(query, shapeFilter, sourceFilter, offset, true, externalYear);
   };
 
   /* ── Reset filter helper ─────────────────────────────────────────── */
@@ -202,6 +209,25 @@ export default function SightingsSearch() {
           </button>
         )}
       </div>
+
+      {/* Active year filter badge */}
+      {externalYear && (
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-gray-500 dark:text-gray-400">Active filter:</span>
+          <span className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full border border-cyan-400 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 font-medium">
+            Year: {externalYear}
+            <button
+              onClick={() => onClearYear?.()}
+              className="ml-0.5 text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300"
+              title="Clear year filter"
+            >
+              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </span>
+        </div>
+      )}
 
       {/* Filter pills */}
       <div className="flex flex-wrap gap-2">

@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import {
   ComposedChart,
   Bar,
+  Cell,
   Line,
   XAxis,
   YAxis,
@@ -96,7 +97,12 @@ function decadeTick(year: number): string {
 
 type Range = 'all' | 'modern';
 
-export default function SightingsTemporalChart() {
+interface Props {
+  selectedYear?: number | null;
+  onYearSelect?: (year: number) => void;
+}
+
+export default function SightingsTemporalChart({ selectedYear, onYearSelect }: Props) {
   const { resolvedTheme } = useTheme();
   const dark = resolvedTheme !== 'light';
   const [range, setRange] = useState<Range>('all');
@@ -121,6 +127,11 @@ export default function SightingsTemporalChart() {
           </h2>
           <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
             UFOSINT community reports per year (bars) vs. DECUR documented events (line)
+            {onYearSelect && (
+              <span className="ml-1 text-cyan-500 dark:text-cyan-400">
+                — click a bar to filter search
+              </span>
+            )}
           </p>
         </div>
         <div className="flex items-center gap-1">
@@ -187,11 +198,20 @@ export default function SightingsTemporalChart() {
               yAxisId="sightings"
               dataKey="sightings"
               name="sightings"
-              fill="#22d3ee"
-              opacity={0.7}
               radius={[1, 1, 0, 0]}
               maxBarSize={12}
-            />
+              style={onYearSelect ? { cursor: 'pointer' } : undefined}
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              onClick={onYearSelect ? (barData: any) => onYearSelect((barData as ChartDatum).year) : undefined}
+            >
+              {data.map((entry) => (
+                <Cell
+                  key={entry.year}
+                  fill="#22d3ee"
+                  opacity={selectedYear && selectedYear !== entry.year ? 0.3 : 0.7}
+                />
+              ))}
+            </Bar>
             <Line
               yAxisId="events"
               dataKey="events"
