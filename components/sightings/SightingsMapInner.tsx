@@ -158,11 +158,16 @@ const nuclearPinsLayer: LayerProps = {
 interface CasePin { id: string; name: string; lat: number; lng: number; total: number }
 interface FacilityPin {
   id: string; name: string; description: string;
-  programs: string[]; active_period: string; lat: number; lng: number;
+  programs: string[]; figures: string[]; active_period: string; lat: number; lng: number;
 }
 interface NuclearPin {
   id: string; name: string; description: string;
   figures: string[]; lat: number; lng: number;
+}
+
+// Convert a kebab-case figure id to a display name ("bob-lazar" → "Bob Lazar")
+function figureLabel(id: string): string {
+  return id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
 const casePinsGeoJSON = {
@@ -182,6 +187,7 @@ const facilityPinsGeoJSON = {
     properties: {
       id: p.id, name: p.name, description: p.description,
       active_period: p.active_period,
+      figures: JSON.stringify(p.figures ?? []),
     },
   })),
 };
@@ -191,7 +197,7 @@ const nuclearPinsGeoJSON = {
   features: (nuclearPinsRaw as NuclearPin[]).map(p => ({
     type: 'Feature' as const,
     geometry: { type: 'Point' as const, coordinates: [p.lng, p.lat] as [number, number] },
-    properties: { id: p.id, name: p.name, description: p.description },
+    properties: { id: p.id, name: p.name, description: p.description, figures: JSON.stringify(p.figures ?? []) },
   })),
 };
 
@@ -555,34 +561,76 @@ export default function SightingsMapInner() {
                   </div>
                 )}
               </div>
-            ) : popup.layerId === 'nuclear-pins' ? (
-              <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
-                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
-                  {popup.properties.name}
+            ) : popup.layerId === 'nuclear-pins' ? (() => {
+              const nuclearFigures: string[] = JSON.parse(popup.properties.figures || '[]');
+              return (
+                <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
+                  <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
+                    {popup.properties.name}
+                  </div>
+                  <div style={{ fontSize: 10, color: '#84cc16', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    Nuclear Incident
+                  </div>
+                  <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5 }}>
+                    {popup.properties.description}
+                  </div>
+                  {nuclearFigures.length > 0 && (
+                    <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid #e5e7eb' }}>
+                      <div style={{ fontSize: 9, color: '#aaa', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 4 }}>
+                        Connected figures
+                      </div>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                        {nuclearFigures.map((figId: string) => (
+                          <a
+                            key={figId}
+                            href={`/figures/${figId}`}
+                            style={{ fontSize: 11, color: '#6366f1', textDecoration: 'none', background: '#eef2ff', borderRadius: 4, padding: '1px 6px' }}
+                          >
+                            {figureLabel(figId)}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <div style={{ fontSize: 10, color: '#84cc16', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                  Nuclear Incident
+              );
+            })() : popup.layerId === 'facility-pins' ? (() => {
+              const facilityFigures: string[] = JSON.parse(popup.properties.figures || '[]');
+              return (
+                <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
+                  <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
+                    {popup.properties.name}
+                  </div>
+                  <div style={{ fontSize: 10, color: '#a855f7', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    Investigation Facility
+                  </div>
+                  <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5 }}>
+                    {popup.properties.description}
+                  </div>
+                  <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid #e5e7eb', fontSize: 10, color: '#888' }}>
+                    Active: {popup.properties.active_period}
+                  </div>
+                  {facilityFigures.length > 0 && (
+                    <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid #e5e7eb' }}>
+                      <div style={{ fontSize: 9, color: '#aaa', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 4 }}>
+                        Connected figures
+                      </div>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                        {facilityFigures.map((figId: string) => (
+                          <a
+                            key={figId}
+                            href={`/figures/${figId}`}
+                            style={{ fontSize: 11, color: '#6366f1', textDecoration: 'none', background: '#eef2ff', borderRadius: 4, padding: '1px 6px' }}
+                          >
+                            {figureLabel(figId)}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5 }}>
-                  {popup.properties.description}
-                </div>
-              </div>
-            ) : popup.layerId === 'facility-pins' ? (
-              <div style={{ fontFamily: 'system-ui', minWidth: 200, maxWidth: 240 }}>
-                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
-                  {popup.properties.name}
-                </div>
-                <div style={{ fontSize: 10, color: '#a855f7', fontWeight: 600, marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                  Investigation Facility
-                </div>
-                <div style={{ fontSize: 11, color: '#444', lineHeight: 1.5 }}>
-                  {popup.properties.description}
-                </div>
-                <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid #e5e7eb', fontSize: 10, color: '#888' }}>
-                  Active: {popup.properties.active_period}
-                </div>
-              </div>
-            ) : (
+              );
+            })() : (
               <div style={{ fontFamily: 'system-ui', minWidth: 180 }}>
                 <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 4, color: '#111' }}>
                   {popup.properties.name}
