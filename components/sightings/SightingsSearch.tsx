@@ -40,6 +40,10 @@ const SOURCE_COLORS: Record<string, string> = {
 
 const PAGE_SIZE = 25;
 
+// Year range for the date filter dropdowns (modern sighting era)
+const CURRENT_YEAR = new Date().getFullYear();
+const YEAR_OPTIONS = Array.from({ length: CURRENT_YEAR - 1946 }, (_, i) => 1947 + i);
+
 /* ── Location formatter ─────────────────────────────────────────────── */
 
 function formatLocation(s: Sighting): string {
@@ -108,12 +112,24 @@ export default function SightingsSearch({ externalYear, onClearYear }: Sightings
   const [query, setQuery]           = useState('');
   const [shapeFilter, setShapeFilter] = useState('All');
   const [sourceFilter, setSourceFilter] = useState('All');
+  // Year range — empty string means "any". Unified source for chart-click and native dropdowns.
+  const [yearFrom, setYearFrom]     = useState('');
+  const [yearTo, setYearTo]         = useState('');
   const [results, setResults]       = useState<Sighting[]>([]);
   const [total, setTotal]           = useState<number | null>(null);
   const [loading, setLoading]       = useState(false);
   const [offset, setOffset]         = useState(0);
   const [hasMore, setHasMore]       = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  /* ── Sync chart-click year into internal state ───────────────────── */
+
+  useEffect(() => {
+    if (externalYear != null) {
+      setYearFrom(String(externalYear));
+      setYearTo(String(externalYear));
+    }
+  }, [externalYear]);
 
   /* ── Fetch ──────────────────────────────────────────────────────── */
 
@@ -123,7 +139,8 @@ export default function SightingsSearch({ externalYear, onClearYear }: Sightings
     source: string,
     off: number,
     append: boolean,
-    year?: number | null,
+    yFrom: string,
+    yTo: string,
   ) => {
     setLoading(true);
     try {
@@ -131,7 +148,8 @@ export default function SightingsSearch({ externalYear, onClearYear }: Sightings
       if (q.trim())         params.set('q', q.trim());
       if (shape !== 'All')  params.set('shape', shape);
       if (source !== 'All') params.set('source', source);
-      if (year)             { params.set('date_from', `${year}-01-01`); params.set('date_to', `${year}-12-31`); }
+      if (yFrom)            params.set('date_from', `${yFrom}-01-01`);
+      if (yTo)              params.set('date_to',   `${yTo}-12-31`);
 
       const res = await fetch(`/api/sightings/search?${params.toString()}`);
       if (!res.ok) throw new Error('Search failed');
@@ -154,17 +172,36 @@ export default function SightingsSearch({ externalYear, onClearYear }: Sightings
     if (debounceRef.current) clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
       setOffset(0);
-      fetchResults(query, shapeFilter, sourceFilter, 0, false, externalYear);
+      fetchResults(query, shapeFilter, sourceFilter, 0, false, yearFrom, yearTo);
     }, 300);
     return () => { if (debounceRef.current) clearTimeout(debounceRef.current); };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [query, shapeFilter, sourceFilter, externalYear]);
+  }, [query, shapeFilter, sourceFilter, yearFrom, yearTo]);
 
   /* ── Load more ──────────────────────────────────────────────────── */
 
   const loadMore = () => {
-    fetchResults(query, shapeFilter, sourceFilter, offset, true, externalYear);
+    fetchResults(query, shapeFilter, sourceFilter, offset, true, yearFrom, yearTo);
   };
+
+  /* ── Year filter helpers ─────────────────────────────────────────── */
+
+  // Clears both year dropdowns + notifies parent to deselect chart bar
+  const clearYearFilter = () => {
+    setYearFrom('');
+    setYearTo('');
+    onClearYear?.();
+    setOffset(0);
+    setResults([]);
+  };
+
+  // Label shown in the active badge
+  const yearBadgeLabel = (() => {
+    if (yearFrom && yearTo) return yearFrom === yearTo ? `Year: ${yearFrom}` : `${yearFrom} – ${yearTo}`;
+    if (yearFrom) return `From ${yearFrom}`;
+    if (yearTo)   return `Through ${yearTo}`;
+    return null;
+  })();
 
   /* ── Reset filter helper ─────────────────────────────────────────── */
 
@@ -210,14 +247,32 @@ export default function SightingsSearch({ externalYear, onClearYear }: Sightings
         )}
       </div>
 
-      {/* Active year filter badge */}
-      {externalYear && (
-        <div className="flex items-center gap-2">
-          <span className="text-xs text-gray-500 dark:text-gray-400">Active filter:</span>
+      {/* Year range filter */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="text-xs font-medium text-gray-500 dark:text-gray-400 shrink-0">Year:</span>
+        <select
+          value={yearFrom}
+          onChange={(e) => { setYearFrom(e.target.value); onClearYear?.(); setOffset(0); setResults([]); }}
+          className="text-xs py-1 pl-2 pr-6 rounded-md border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-1 focus:ring-primary/40 focus:border-primary transition-colors cursor-pointer"
+        >
+          <option value="">Any</option>
+          {YEAR_OPTIONS.map(y => <option key={y} value={String(y)}>{y}</option>)}
+        </select>
+        <span className="text-xs text-gray-400 dark:text-gray-500">to</span>
+        <select
+          value={yearTo}
+          onChange={(e) => { setYearTo(e.target.value); onClearYear?.(); setOffset(0); setResults([]); }}
+          className="text-xs py-1 pl-2 pr-6 rounded-md border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-1 focus:ring-primary/40 focus:border-primary transition-colors cursor-pointer"
+        >
+          <option value="">Any</option>
+          {YEAR_OPTIONS.map(y => <option key={y} value={String(y)}>{y}</option>)}
+        </select>
+        {/* Active year badge — shows when any year filter is active */}
+        {yearBadgeLabel && (
           <span className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full border border-cyan-400 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 font-medium">
-            Year: {externalYear}
+            {yearBadgeLabel}
             <button
-              onClick={() => onClearYear?.()}
+              onClick={clearYearFilter}
               className="ml-0.5 text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300"
               title="Clear year filter"
             >
@@ -226,8 +281,8 @@ export default function SightingsSearch({ externalYear, onClearYear }: Sightings
               </svg>
             </button>
           </span>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Filter pills */}
       <div className="flex flex-wrap gap-2">
