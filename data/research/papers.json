@@ -2,7 +2,11 @@
   {
     "id": "knuth-2019-flight-characteristics",
     "title": "Estimating Flight Characteristics of Anomalous Unidentified Aerial Vehicles",
-    "authors": ["Kevin H. Knuth", "Robert M. Powell", "Peter A. Reali"],
+    "authors": [
+      "Kevin H. Knuth",
+      "Robert M. Powell",
+      "Peter A. Reali"
+    ],
     "author_ids": [],
     "year": 2019,
     "journal": "Entropy",
@@ -12,9 +16,16 @@
     "url": "https://www.mdpi.com/1099-4300/21/10/939",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["radar-analysis", "propulsion-physics"],
-    "case_ids": ["2004-nimitz-tic-tac"],
-    "organization_ids": ["scientific-coalition-for-uap-studies"],
+    "tags": [
+      "radar-analysis",
+      "propulsion-physics"
+    ],
+    "case_ids": [
+      "2004-nimitz-tic-tac"
+    ],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
     "summary": "Applies physics and information theory to the 2004 Nimitz Tic Tac incident. Estimates accelerations of 40-80g and power outputs exceeding any known propulsion system. Published in a peer-reviewed MDPI journal with full methodology disclosure.",
     "abstract": "We attempt to estimate the possible flight characteristics of an anomalous aerial vehicle based on available data. We examine the well-known 2004 USS Nimitz incident, the now-famous 'Tic Tac' UAP, using all currently available sensor data. We estimate the kinematics of the UAP based on published reports of the USS Princeton radar contact and the reports of the Navy pilots who observed and recorded the UAP."
   },
@@ -22,8 +33,14 @@
     "id": "vallee-davis-2003-paradigms",
     "decur_url": "/documents/vallee-davis-incommensurability-2003",
     "title": "Incommensurability, Orthodoxy and the Physics of High Strangeness: A 6-layer Model for Anomalous Phenomena",
-    "authors": ["Jacques F. Vallee", "Eric W. Davis"],
-    "author_ids": ["jacques-vallee", "eric-davis"],
+    "authors": [
+      "Jacques F. Vallee",
+      "Eric W. Davis"
+    ],
+    "author_ids": [
+      "jacques-vallee",
+      "eric-davis"
+    ],
     "year": 2003,
     "journal": "Journal of Scientific Exploration",
     "volume": null,
@@ -32,7 +49,11 @@
     "url": "https://www.scientificexploration.org/docs/17/jse_17_4_vallee.pdf",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["methodology", "consciousness-contact", "propulsion-physics"],
+    "tags": [
+      "methodology",
+      "consciousness-contact",
+      "propulsion-physics"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Proposes a 6-layer analytical framework for UAP phenomena, arguing that conventional physical models are insufficient and that the phenomenon may involve non-physical dimensions including psychic and cultural layers. Foundational theoretical paper co-authored by Vallee and Davis.",
@@ -42,7 +63,9 @@
     "id": "uaptf-2021-preliminary-assessment",
     "decur_url": "/documents/uaptf-preliminary-assessment",
     "title": "Preliminary Assessment: Unidentified Aerial Phenomena",
-    "authors": ["Office of the Director of National Intelligence"],
+    "authors": [
+      "Office of the Director of National Intelligence"
+    ],
     "author_ids": [],
     "year": 2021,
     "journal": null,
@@ -52,8 +75,16 @@
     "url": "https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf",
     "open_access": true,
     "source_type": "government-report",
-    "tags": ["government-disclosure", "radar-analysis", "signal-intelligence"],
-    "case_ids": ["2004-nimitz-tic-tac", "2015-gimbal-uap", "2015-go-fast-uap"],
+    "tags": [
+      "government-disclosure",
+      "radar-analysis",
+      "signal-intelligence"
+    ],
+    "case_ids": [
+      "2004-nimitz-tic-tac",
+      "2015-gimbal-uap",
+      "2015-go-fast-uap"
+    ],
     "organization_ids": [],
     "summary": "The first official unclassified U.S. government assessment of UAP, mandated by the FY2021 Intelligence Authorization Act. Covers 144 incidents from 2004-2021, categorizes UAP into 5 possible explanatory categories, and acknowledges 18 incidents with unusual flight characteristics. Triggered the AARO establishment.",
     "abstract": "The Office of the Director of National Intelligence (ODNI) has released this preliminary assessment of unidentified aerial phenomena (UAP) in accordance with the provision in the Intelligence Authorization Act for Fiscal Year 2021. The report examines 144 reports of UAP from military sources."
@@ -62,7 +93,9 @@
     "id": "nasa-uap-ist-2023",
     "decur_url": "/documents/nasa-uap-study-2023",
     "title": "NASA UAP Independent Study Team Report",
-    "authors": ["NASA UAP Independent Study Team"],
+    "authors": [
+      "NASA UAP Independent Study Team"
+    ],
     "author_ids": [],
     "year": 2023,
     "journal": null,
@@ -72,9 +105,15 @@
     "url": "https://smd-cms.nasa.gov/wp-content/uploads/2023/09/uap-independent-study-team-final-report.pdf",
     "open_access": true,
     "source_type": "government-report",
-    "tags": ["government-disclosure", "methodology", "signal-intelligence"],
+    "tags": [
+      "government-disclosure",
+      "methodology",
+      "signal-intelligence"
+    ],
     "case_ids": [],
-    "organization_ids": ["nasa"],
+    "organization_ids": [
+      "nasa"
+    ],
     "summary": "NASA's first formal UAP study, conducted by a 16-member independent team of scientists. Recommends NASA take a central role in UAP data collection, calls for standardized reporting protocols, and acknowledges that the stigma around UAP reporting impedes scientific study. Appointed a Director of UAP Research.",
     "abstract": "An independent study team commissioned by NASA examined the state of the science around unidentified anomalous phenomena. The report provides recommendations for how NASA can contribute to the study of UAP from a scientific perspective, emphasizing the need for rigorous data collection."
   },
@@ -82,7 +121,9 @@
     "id": "aaro-historical-record-2024-vol1",
     "decur_url": "/documents/aaro-historical-record-vol1",
     "title": "AARO Historical Record Report: Volume 1",
-    "authors": ["All-domain Anomaly Resolution Office"],
+    "authors": [
+      "All-domain Anomaly Resolution Office"
+    ],
     "author_ids": [],
     "year": 2024,
     "journal": null,
@@ -92,17 +133,29 @@
     "url": "https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-CLEARED-508-COMPLIANT-HRRV1-08-MAR-2024-FINAL.PDF",
     "open_access": true,
     "source_type": "government-report",
-    "tags": ["government-disclosure", "historical-survey"],
+    "tags": [
+      "government-disclosure",
+      "historical-survey"
+    ],
     "case_ids": [],
-    "organization_ids": ["all-domain-anomaly-resolution-office"],
+    "organization_ids": [
+      "all-domain-anomaly-resolution-office"
+    ],
     "summary": "AARO's congressionally-mandated historical review of U.S. government UAP programs from 1945 to 2023. Reviews programs including SIGN, GRUDGE, Blue Book, and AATIP. Finds no credible evidence of non-human intelligence programs but acknowledges significant information fragmentation across agencies.",
     "abstract": "Congress directed the Department of Defense to produce a historical record of UAP investigations by the U.S. government. Volume 1 covers the period from 1945 through October 2023, examining programs, investigations, and findings across multiple agencies."
   },
   {
     "id": "powell-2019-tic-tac-forensic",
     "title": "UAP: A Forensic Analysis of the USS Nimitz Incident",
-    "authors": ["Robert M. Powell", "Tim Gallaudet", "Peter Reali", "Colm Kelleher"],
-    "author_ids": ["tim-gallaudet"],
+    "authors": [
+      "Robert M. Powell",
+      "Tim Gallaudet",
+      "Peter Reali",
+      "Colm Kelleher"
+    ],
+    "author_ids": [
+      "tim-gallaudet"
+    ],
     "year": 2019,
     "journal": null,
     "volume": null,
@@ -111,17 +164,31 @@
     "url": "https://www.explorescu.org/post/the-uss-nimitz-tic-tac-ufo-unclassified-analysis",
     "open_access": true,
     "source_type": "institute-report",
-    "tags": ["radar-analysis", "signal-intelligence", "witness-testimony"],
-    "case_ids": ["2004-nimitz-tic-tac"],
-    "organization_ids": ["scientific-coalition-for-uap-studies"],
+    "tags": [
+      "radar-analysis",
+      "signal-intelligence",
+      "witness-testimony"
+    ],
+    "case_ids": [
+      "2004-nimitz-tic-tac"
+    ],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
     "summary": "A 270-page technical analysis of the 2004 Nimitz incident using declassified radar data, pilot accounts, and FLIR footage. The most comprehensive open-source forensic reconstruction of the event. Cross-references multiple sensor modalities.",
     "abstract": "A detailed forensic analysis of the 2004 USS Nimitz Carrier Strike Group UAP encounter, examining radar data from the USS Princeton, testimony from multiple Navy pilots, FLIR pod footage, and related electronic intelligence records."
   },
   {
     "id": "nolan-2023-materials-analysis",
     "title": "Anomalous Materials Analysis: Isotopic Anomalies in Alleged UAP-Associated Samples",
-    "authors": ["Garry P. Nolan", "Jacques F. Vallee"],
-    "author_ids": ["garry-nolan", "jacques-vallee"],
+    "authors": [
+      "Garry P. Nolan",
+      "Jacques F. Vallee"
+    ],
+    "author_ids": [
+      "garry-nolan",
+      "jacques-vallee"
+    ],
     "year": 2023,
     "journal": "Progress in Aerospace Sciences",
     "volume": null,
@@ -130,7 +197,9 @@
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042122000816",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["materials-analysis"],
+    "tags": [
+      "materials-analysis"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Nolan and Vallee analyze physical materials allegedly retrieved from UAP encounters using mass spectrometry and electron microscopy. Documents anomalous isotopic ratios inconsistent with known natural or industrial processes. One of the few peer-reviewed materials analysis papers in the field.",
@@ -140,7 +209,9 @@
     "id": "sturrock-1998-physical-evidence",
     "decur_url": "/documents/sturrock-panel-report-1998",
     "title": "Physical Evidence Related to UFO Reports: The Proceedings of a Workshop",
-    "authors": ["Peter A. Sturrock"],
+    "authors": [
+      "Peter A. Sturrock"
+    ],
     "author_ids": [],
     "year": 1998,
     "journal": "Journal of Scientific Exploration",
@@ -150,7 +221,12 @@
     "url": "https://www.scientificexploration.org/docs/12/jse_12_2_sturrock.pdf",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["materials-analysis", "radar-analysis", "witness-testimony", "methodology"],
+    "tags": [
+      "materials-analysis",
+      "radar-analysis",
+      "witness-testimony",
+      "methodology"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Report from the 1997 Sturrock Panel - a workshop of nine physical scientists who evaluated physical evidence associated with UFO reports. The panel concluded that physical evidence deserved scientific study and that some cases contained genuine anomalies beyond conventional explanation.",
@@ -159,7 +235,9 @@
   {
     "id": "mcdonald-1968-science-default",
     "title": "Science in Default: Twenty-Two Years of Inadequate UFO Investigations",
-    "authors": ["James E. McDonald"],
+    "authors": [
+      "James E. McDonald"
+    ],
     "author_ids": [],
     "year": 1969,
     "journal": "American Association for the Advancement of Science Symposium",
@@ -169,7 +247,11 @@
     "url": "https://archive.org/details/scienceindefault",
     "open_access": true,
     "source_type": "conference-proceedings",
-    "tags": ["government-disclosure", "historical-survey", "methodology"],
+    "tags": [
+      "government-disclosure",
+      "historical-survey",
+      "methodology"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "McDonald's landmark 1969 AAAS presentation cataloging the systematic failure of U.S. science to investigate UFO reports. Presents 41 cases he personally investigated from the Blue Book files that could not be explained as misidentifications. One of the most rigorous critiques of Project Blue Book ever published.",
@@ -178,7 +260,9 @@
   {
     "id": "hynek-1972-ufo-experience",
     "title": "The UFO Experience: A Scientific Inquiry",
-    "authors": ["J. Allen Hynek"],
+    "authors": [
+      "J. Allen Hynek"
+    ],
     "author_ids": [],
     "year": 1972,
     "journal": null,
@@ -188,9 +272,15 @@
     "url": "https://archive.org/details/ufoexperiencesci00hyne",
     "open_access": true,
     "source_type": "book",
-    "tags": ["methodology", "historical-survey", "witness-testimony"],
+    "tags": [
+      "methodology",
+      "historical-survey",
+      "witness-testimony"
+    ],
     "case_ids": [],
-    "organization_ids": ["center-for-ufo-studies"],
+    "organization_ids": [
+      "center-for-ufo-studies"
+    ],
     "summary": "Hynek's foundational classification system - Close Encounter of the First, Second, and Third Kind - introduced here for the first time. Written after his years as Blue Book's official scientific consultant, this book represents his break from the debunking consensus toward a serious scientific position.",
     "abstract": "Hynek presents his systematic classification of UAP encounters, arguing that a significant residue of unexplained reports exists that cannot be dismissed. Introduces the CE-1, CE-2, CE-3 taxonomy that has become standard in UAP research worldwide."
   },
@@ -198,7 +288,10 @@
     "id": "condon-report-1968",
     "decur_url": "/documents/condon-report-1969",
     "title": "Scientific Study of Unidentified Flying Objects (Condon Report)",
-    "authors": ["Edward U. Condon", "Daniel S. Gillmor"],
+    "authors": [
+      "Edward U. Condon",
+      "Daniel S. Gillmor"
+    ],
     "author_ids": [],
     "year": 1968,
     "journal": null,
@@ -208,7 +301,11 @@
     "url": "https://files.ncas.org/condon/",
     "open_access": true,
     "source_type": "government-report",
-    "tags": ["government-disclosure", "historical-survey", "methodology"],
+    "tags": [
+      "government-disclosure",
+      "historical-survey",
+      "methodology"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "The University of Colorado study commissioned by the Air Force that led directly to Project Blue Book's closure in 1969. Condon's conclusion that no UFO reports warranted further scientific study has been heavily criticized by researchers who note that the body of the report contains numerous unexplained cases that contradict its own conclusions.",
@@ -217,7 +314,9 @@
   {
     "id": "knuth-2021-bayes-uap",
     "title": "The Extraterrestrial Hypothesis for UAP: A Bayesian Analysis",
-    "authors": ["Kevin H. Knuth"],
+    "authors": [
+      "Kevin H. Knuth"
+    ],
     "author_ids": [],
     "year": 2021,
     "journal": "Entropy",
@@ -227,16 +326,25 @@
     "url": "https://www.mdpi.com/1099-4300/23/1/2",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["methodology", "propulsion-physics"],
+    "tags": [
+      "methodology",
+      "propulsion-physics"
+    ],
     "case_ids": [],
-    "organization_ids": ["scientific-coalition-for-uap-studies"],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
     "summary": "Knuth applies Bayesian probabilistic analysis to assess the credibility of the extraterrestrial hypothesis for observed UAP. Accounts for the Drake equation, Fermi paradox, and observed flight characteristics to produce a formal probability estimate. Notable for applying rigorous statistical methodology to a question typically approached anecdotally.",
     "abstract": "We apply Bayesian analysis to estimate the probability that observed anomalous aerial phenomena represent non-human technological artifacts. We incorporate information about stellar populations, the Drake equation, and physical flight characteristics into a probabilistic framework."
   },
   {
     "id": "villarroel-2021-vasco",
     "title": "Disappeared Stars and Galaxies in Photographic Sky Survey Data",
-    "authors": ["Beatriz Villarroel", "Enrique Solano", "Lars Mattsson"],
+    "authors": [
+      "Beatriz Villarroel",
+      "Enrique Solano",
+      "Lars Mattsson"
+    ],
     "author_ids": [],
     "year": 2021,
     "journal": "Acta Astronautica",
@@ -246,7 +354,10 @@
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0094576521004744",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["astrobiology", "methodology"],
+    "tags": [
+      "astrobiology",
+      "methodology"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "The VASCO (Vanishing and Appearing Sources during a Century of Observations) project documents stars and galaxies that appear in historical photographic plates but cannot be located in modern surveys. Identifies 100 multi-transient events as high-priority candidates for follow-up, potentially including technosignature sources.",
@@ -255,7 +366,9 @@
   {
     "id": "loeb-2022-galileo-project",
     "title": "Extraterrestrial: The First Sign of Intelligent Life Beyond Earth",
-    "authors": ["Avi Loeb"],
+    "authors": [
+      "Avi Loeb"
+    ],
     "author_ids": [],
     "year": 2021,
     "journal": null,
@@ -265,16 +378,25 @@
     "url": "https://www.houghtonmifflinharcourt.com/titles/avi-loeb/extraterrestrial/9780358278146/",
     "open_access": false,
     "source_type": "book",
-    "tags": ["astrobiology", "methodology"],
+    "tags": [
+      "astrobiology",
+      "methodology"
+    ],
     "case_ids": [],
-    "organization_ids": ["galileo-project"],
+    "organization_ids": [
+      "galileo-project"
+    ],
     "summary": "Loeb's argument that Oumuamua - the first detected interstellar object - shows characteristics inconsistent with natural origin, including anomalous acceleration and unusual flat geometry. Also establishes the intellectual case for the Galileo Project's observational approach to technosignature detection.",
     "abstract": "Avi Loeb presents the scientific case that the interstellar object 1I/2017 U1 ('Oumuamua) may be an artifact of extraterrestrial technology, and proposes a new observational program to search for similar objects with rigorous scientific methodology."
   },
   {
     "id": "scu-2018-jal-1628",
     "title": "JAL Flight 1628: A Critical Analysis of the 1986 Alaska UFO Incident",
-    "authors": ["Robert M. Powell", "Glen Schulze", "Peter Reali"],
+    "authors": [
+      "Robert M. Powell",
+      "Glen Schulze",
+      "Peter Reali"
+    ],
     "author_ids": [],
     "year": 2018,
     "journal": null,
@@ -284,16 +406,23 @@
     "url": "https://www.explorescu.org/post/jal-1628-analysis",
     "open_access": true,
     "source_type": "institute-report",
-    "tags": ["radar-analysis", "witness-testimony"],
+    "tags": [
+      "radar-analysis",
+      "witness-testimony"
+    ],
     "case_ids": [],
-    "organization_ids": ["scientific-coalition-for-uap-studies"],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
     "summary": "Technical analysis of the November 1986 Japan Air Lines cargo flight encounter over Alaska. Reconstructs the radar tracks, crew testimony, and FAA/NORAD records. One of SCU's methodological templates for radar-corroborated aviation UAP cases.",
     "abstract": "A forensic reconstruction of the JAL Flight 1628 encounter using FAA radar data, crew testimony, and official agency records. The analysis examines the nature of the radar returns and their correlation with visual observations."
   },
   {
     "id": "kellerhals-2022-gimbal",
     "title": "Analysis of the GIMBAL UAP Video",
-    "authors": ["Scientific Coalition for UAP Studies"],
+    "authors": [
+      "Scientific Coalition for UAP Studies"
+    ],
     "author_ids": [],
     "year": 2022,
     "journal": null,
@@ -303,16 +432,26 @@
     "url": "https://www.explorescu.org/post/the-2015-nimitz-encounters",
     "open_access": true,
     "source_type": "institute-report",
-    "tags": ["signal-intelligence", "radar-analysis"],
-    "case_ids": ["2015-gimbal-uap"],
-    "organization_ids": ["scientific-coalition-for-uap-studies"],
+    "tags": [
+      "signal-intelligence",
+      "radar-analysis"
+    ],
+    "case_ids": [
+      "2015-gimbal-uap"
+    ],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
     "summary": "Detailed frame-by-frame analysis of the GIMBAL FLIR footage released by the Pentagon in 2017. Examines the rotation of the object relative to the pod's gimbal mechanism, arguing that the rotation cannot be explained by camera optics alone.",
     "abstract": "A technical analysis of the GIMBAL video declassified by the U.S. Department of Defense, examining the flight characteristics and apparent rotation of the object recorded by an F/A-18 ATFLIR pod."
   },
   {
     "id": "kopparapu-2021-technosignatures",
     "title": "Characterizing Artifacts of Technological Civilizations",
-    "authors": ["Ravi Kopparapu", "Jacob Haqq-Misra"],
+    "authors": [
+      "Ravi Kopparapu",
+      "Jacob Haqq-Misra"
+    ],
     "author_ids": [],
     "year": 2021,
     "journal": "International Journal of Astrobiology",
@@ -322,16 +461,23 @@
     "url": "https://www.cambridge.org/core/journals/international-journal-of-astrobiology/article/abs/",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["astrobiology", "methodology"],
+    "tags": [
+      "astrobiology",
+      "methodology"
+    ],
     "case_ids": [],
-    "organization_ids": ["nasa"],
+    "organization_ids": [
+      "nasa"
+    ],
     "summary": "NASA astrobiologist Kopparapu and Haqq-Misra propose a framework for identifying and characterizing artifacts produced by technological civilizations, providing the theoretical underpinning for UAP-as-technosignature searches.",
     "abstract": "We develop a framework for the systematic search for artifacts of technological origin in the solar neighborhood, including anomalous objects, megastructures, and atmospheric biosignatures of technological production."
   },
   {
     "id": "french-2012-abduction-psychology",
     "title": "Anomalous experiences and paranormal beliefs: Psychological mechanisms",
-    "authors": ["Christopher C. French"],
+    "authors": [
+      "Christopher C. French"
+    ],
     "author_ids": [],
     "year": 2012,
     "journal": "Frontiers in Psychology",
@@ -341,7 +487,10 @@
     "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2012.00457/full",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["sociology-psychology", "witness-testimony"],
+    "tags": [
+      "sociology-psychology",
+      "witness-testimony"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Examines psychological mechanisms behind anomalous experience reports including sleep paralysis, temporal lobe sensitivity, and fantasy-proneness. Important counterpoint for methodology - understanding which witnesses may be more prone to misperception vs. those with strong corroboration.",
@@ -350,8 +499,12 @@
   {
     "id": "puthoff-1996-pia",
     "title": "CIA-Initiated Remote Viewing Program at Stanford Research Institute",
-    "authors": ["Harold E. Puthoff"],
-    "author_ids": ["hal-puthoff"],
+    "authors": [
+      "Harold E. Puthoff"
+    ],
+    "author_ids": [
+      "hal-puthoff"
+    ],
     "year": 1996,
     "journal": "Journal of Scientific Exploration",
     "volume": "10",
@@ -360,7 +513,10 @@
     "url": "https://www.scientificexploration.org/docs/10/jse_10_1_puthoff.pdf",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["government-disclosure", "consciousness-contact"],
+    "tags": [
+      "government-disclosure",
+      "consciousness-contact"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Puthoff's account of the CIA-sponsored STARGATE remote viewing program at Stanford Research Institute (SRI), which ran from 1972-1995. Documents the program's structure, methodology, and results. Relevant to DECUR because the personnel overlap with AATIP and AAWSAP is substantial.",
@@ -369,8 +525,13 @@
   {
     "id": "davis-2009-warp-metrics",
     "title": "Frontiers of Propulsion Science",
-    "authors": ["Marc G. Millis", "Eric W. Davis"],
-    "author_ids": ["eric-davis"],
+    "authors": [
+      "Marc G. Millis",
+      "Eric W. Davis"
+    ],
+    "author_ids": [
+      "eric-davis"
+    ],
     "year": 2009,
     "journal": null,
     "volume": null,
@@ -379,7 +540,9 @@
     "url": "https://arc.aiaa.org/doi/book/10.2514/4.479953",
     "open_access": false,
     "source_type": "book",
-    "tags": ["propulsion-physics"],
+    "tags": [
+      "propulsion-physics"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "AIAA-published academic review of advanced and speculative propulsion concepts including warp drives, space drives, and gravity control. Davis's contribution addresses theoretical frameworks for propellantless propulsion, relevant to observed UAP flight characteristics. One of the most credentialed publications in the space.",
@@ -388,7 +551,9 @@
   {
     "id": "dolan-2000-ufos-national-security",
     "title": "UFOs and the National Security State: An Unclassified History",
-    "authors": ["Richard M. Dolan"],
+    "authors": [
+      "Richard M. Dolan"
+    ],
     "author_ids": [],
     "year": 2000,
     "journal": null,
@@ -398,7 +563,10 @@
     "url": "https://www.amazon.com/UFOs-National-Security-State-1941-1973/dp/1571743170",
     "open_access": false,
     "source_type": "book",
-    "tags": ["historical-survey", "government-disclosure"],
+    "tags": [
+      "historical-survey",
+      "government-disclosure"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Comprehensive historical analysis of U.S. government UAP involvement from 1941 to 1973 using declassified documents, FOIA releases, and archival research. Volume 1 of a multi-part series. One of the most rigorously sourced historical treatments of the topic.",
@@ -407,7 +575,9 @@
   {
     "id": "knuth-2022-uap-senate-submission",
     "title": "The Case for UAP Studies: A Submission to the U.S. Senate",
-    "authors": ["Kevin H. Knuth"],
+    "authors": [
+      "Kevin H. Knuth"
+    ],
     "author_ids": [],
     "year": 2022,
     "journal": null,
@@ -417,9 +587,14 @@
     "url": "https://www.explorescu.org/post/the-case-for-uap-studies",
     "open_access": true,
     "source_type": "institute-report",
-    "tags": ["government-disclosure", "methodology"],
+    "tags": [
+      "government-disclosure",
+      "methodology"
+    ],
     "case_ids": [],
-    "organization_ids": ["scientific-coalition-for-uap-studies"],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
     "summary": "Knuth's formal submission to the U.S. Senate Intelligence Committee making the scientific case for government-funded UAP research. Outlines sensor requirements, data collection standards, and research program structure. Influential in shaping the AARO mandate.",
     "abstract": "A formal submission to the U.S. Senate outlining the scientific case for structured UAP research programs, including recommended sensor deployment, data sharing protocols, and research priorities."
   },
@@ -427,7 +602,9 @@
     "id": "geipan-2007-cometa",
     "decur_url": "/documents/cometa-report-1999",
     "title": "COMETA Report: UFOs and Defense - What Should We Prepare For?",
-    "authors": ["COMETA Panel"],
+    "authors": [
+      "COMETA Panel"
+    ],
     "author_ids": [],
     "year": 1999,
     "journal": null,
@@ -437,17 +614,26 @@
     "url": "https://www.ufoevidence.org/documents/doc1345.htm",
     "open_access": true,
     "source_type": "government-report",
-    "tags": ["government-disclosure", "historical-survey"],
+    "tags": [
+      "government-disclosure",
+      "historical-survey"
+    ],
     "case_ids": [],
-    "organization_ids": ["geipan"],
+    "organization_ids": [
+      "geipan"
+    ],
     "summary": "The COMETA report, produced by a group of French defense and intelligence officials, is the most significant official non-U.S. government UAP assessment. Concludes that extraterrestrial hypothesis is the most credible explanation for a subset of cases and recommends international diplomatic engagement.",
     "abstract": "A French government-affiliated study group of senior defense and intelligence officials concludes that a significant number of UAP reports represent genuine unknowns, with the extraterrestrial hypothesis ranked among the most credible explanations."
   },
   {
     "id": "sol-foundation-proceedings-2023",
     "title": "SOL Foundation Annual Symposium Proceedings 2023",
-    "authors": ["SOL Foundation"],
-    "author_ids": ["garry-nolan"],
+    "authors": [
+      "SOL Foundation"
+    ],
+    "author_ids": [
+      "garry-nolan"
+    ],
     "year": 2023,
     "journal": null,
     "volume": null,
@@ -456,16 +642,24 @@
     "url": "https://www.sol-foundation.org/symposium-2023",
     "open_access": true,
     "source_type": "conference-proceedings",
-    "tags": ["government-disclosure", "materials-analysis", "consciousness-contact"],
+    "tags": [
+      "government-disclosure",
+      "materials-analysis",
+      "consciousness-contact"
+    ],
     "case_ids": [],
-    "organization_ids": ["sol-foundation"],
+    "organization_ids": [
+      "sol-foundation"
+    ],
     "summary": "Proceedings from the 2023 SOL Foundation symposium at Stanford. Features presentations by Garry Nolan, Peter Skafish, and others. Covers materials analysis, consciousness research, and policy implications of UAP. One of the highest-credentialed recent academic symposia dedicated to UAP.",
     "abstract": "Annual proceedings from the SOL Foundation symposium covering materials analysis, consciousness research, policy frameworks, and phenomenology of UAP encounters. Held at Stanford University with presentations by scientists and policy professionals."
   },
   {
     "id": "hastings-2008-ufos-nukes",
     "title": "UFOs and Nukes: Extraordinary Encounters at Nuclear Weapons Sites",
-    "authors": ["Robert Hastings"],
+    "authors": [
+      "Robert Hastings"
+    ],
     "author_ids": [],
     "year": 2008,
     "journal": null,
@@ -475,7 +669,11 @@
     "url": "https://www.amazon.com/UFOs-Nukes-Extraordinary-Encounters-Nuclear/dp/1434309886",
     "open_access": false,
     "source_type": "book",
-    "tags": ["historical-survey", "witness-testimony", "government-disclosure"],
+    "tags": [
+      "historical-survey",
+      "witness-testimony",
+      "government-disclosure"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Hastings' comprehensive documentation of UAP incidents at U.S. nuclear weapons facilities, based on interviews with over 150 former military personnel. Covers Malmstrom, Minot, Loring, Wurtsmith, and other sites. The most thoroughly sourced account of the nuclear-UAP connection.",
@@ -484,8 +682,14 @@
   {
     "id": "elizondo-mellon-2020-invisible-danger",
     "title": "The Invisible Danger: Why UAP Are a National Security Priority",
-    "authors": ["Luis Elizondo", "Christopher Mellon"],
-    "author_ids": ["luis-elizondo", "chris-mellon"],
+    "authors": [
+      "Luis Elizondo",
+      "Christopher Mellon"
+    ],
+    "author_ids": [
+      "luis-elizondo",
+      "chris-mellon"
+    ],
     "year": 2020,
     "journal": "The Hill",
     "volume": null,
@@ -494,7 +698,9 @@
     "url": "https://thehill.com/opinion/national-security/",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["government-disclosure"],
+    "tags": [
+      "government-disclosure"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Elizondo and Mellon's joint op-ed making the national security case for UAP transparency. Published in The Hill. Part of the coordinated TTSA disclosure effort that led directly to the UAPTF establishment.",
@@ -503,8 +709,13 @@
   {
     "id": "wendt-duvall-2008-sovereignty",
     "title": "Sovereignty and the UFO",
-    "authors": ["Alexander Wendt", "Raymond Duvall"],
-    "author_ids": ["alexander-wendt"],
+    "authors": [
+      "Alexander Wendt",
+      "Raymond Duvall"
+    ],
+    "author_ids": [
+      "alexander-wendt"
+    ],
     "year": 2008,
     "journal": "Political Theory",
     "volume": "36",
@@ -513,7 +724,13 @@
     "url": "https://journals.sagepub.com/doi/epdf/10.1177/0090591708317902",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["political-theory", "sovereignty", "taboo", "social-science", "disclosure"],
+    "tags": [
+      "political-theory",
+      "sovereignty",
+      "taboo",
+      "social-science",
+      "disclosure"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Landmark political theory paper arguing UAP represents a fundamental challenge to anthropocentric state sovereignty. Explains the institutional taboo around UAP through structural political analysis - states cannot acknowledge what they cannot explain without undermining their claim to rational authority - rather than through conspiracy. The most-cited social science paper on UAP and a foundational reference for understanding why governments resist disclosure.",
@@ -522,7 +739,9 @@
   {
     "id": "lomas-2023-eth-openness",
     "title": "The Extraterrestrial Hypothesis: A Case for Scientific Openness",
-    "authors": ["Tim Lomas"],
+    "authors": [
+      "Tim Lomas"
+    ],
     "author_ids": [],
     "year": 2023,
     "journal": "Philosophy & Cosmology",
@@ -532,7 +751,13 @@
     "url": "https://ispcjournal.org/journals/2024/32/PhC_vol_32_Lomas.pdf",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["eth", "philosophy-of-science", "epistemology", "uap", "taboo"],
+    "tags": [
+      "eth",
+      "philosophy-of-science",
+      "epistemology",
+      "uap",
+      "taboo"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Philosophical case for treating the extraterrestrial hypothesis as scientifically legitimate. Surveys the evidentiary landscape, argues for removing the academic taboo that prevents serious scholarly investigation of ETH as a hypothesis, and proposes a framework for applying scientific openness to UAP research. Pairs naturally with the Wendt/Duvall political theory analysis of why the taboo exists and the Krame et al. securitization paper.",
@@ -541,7 +766,11 @@
   {
     "id": "lomas-case-masters-2024-cryptoterrestrial",
     "title": "The Cryptoterrestrial Hypothesis: A Case for Scientific Openness to an Unconventional Hypothesis",
-    "authors": ["Tim Lomas", "Brenden Case", "Michael P. Masters"],
+    "authors": [
+      "Tim Lomas",
+      "Brenden Case",
+      "Michael P. Masters"
+    ],
     "author_ids": [],
     "year": 2024,
     "journal": "Philosophy & Cosmology",
@@ -551,7 +780,13 @@
     "url": "https://ispcjournal.org/journals/2024/33/Philosophy&Cosmology_vol_33_LomasCaseMasters.pdf",
     "open_access": true,
     "source_type": "peer-reviewed",
-    "tags": ["cryptoterrestrial", "hypothesis", "philosophy-of-science", "uap", "nhi"],
+    "tags": [
+      "cryptoterrestrial",
+      "hypothesis",
+      "philosophy-of-science",
+      "uap",
+      "nhi"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Companion to the ETH openness paper, laying out the cryptoterrestrial hypothesis - the possibility that UAP/NHI originate from hidden earthly intelligences (ultraterrestrials, evolved hominids, or entities from a parallel dimension or future) - as a scientifically legitimate alternative requiring investigation. Received significant academic and media coverage as one of the few peer-reviewed papers to take the hypothesis seriously. Received significant media coverage at the time of publication.",
@@ -560,8 +795,14 @@
   {
     "id": "bruehl-little-powell-2025-cluster",
     "title": "Cluster Analysis of UAP Features from 216 Historical Reports",
-    "authors": ["Stephen Bruehl", "Sarah Little", "Robert M. Powell"],
-    "author_ids": ["robert-powell"],
+    "authors": [
+      "Stephen Bruehl",
+      "Sarah Little",
+      "Robert M. Powell"
+    ],
+    "author_ids": [
+      "robert-powell"
+    ],
     "year": 2025,
     "journal": "Limina: Journal of UAP Studies",
     "volume": null,
@@ -570,17 +811,29 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/02604027.2025.2561724",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["data-analysis", "uap-reports", "pattern-recognition", "empirical", "statistics"],
+    "tags": [
+      "data-analysis",
+      "uap-reports",
+      "pattern-recognition",
+      "empirical",
+      "statistics"
+    ],
     "case_ids": [],
-    "organization_ids": ["society-for-uap-studies"],
+    "organization_ids": [
+      "society-for-uap-studies"
+    ],
     "summary": "Quantitative cluster analysis of 216 UAP reports drawn from historical databases spanning 1947-2016. Uses statistical clustering to identify groups of reports sharing common feature profiles - shape, behavior, observed effects - and finds statistically significant patterns that resist conventional explanations. One of the more methodologically rigorous empirical UAP studies published to date. Robert Powell is a key DECUR figure through his SCU work.",
     "abstract": "We apply cluster analysis to a dataset of 216 high-quality UAP reports from 1947 to 2016. Reports are characterized by features including object shape, flight behavior, observed physical effects, and witness characteristics. Statistical clustering reveals multiple distinct feature groupings, providing quantitative structure to the historically qualitative UAP report literature."
   },
   {
     "id": "powell-2025-seti-paradigms",
     "title": "Evolving Paradigms in the Search for Advanced Extraterrestrial Intelligence: A Case for Reconsidering the UAP Hypothesis",
-    "authors": ["Robert M. Powell"],
-    "author_ids": ["robert-powell"],
+    "authors": [
+      "Robert M. Powell"
+    ],
+    "author_ids": [
+      "robert-powell"
+    ],
     "year": 2025,
     "journal": "Limina: Journal of UAP Studies",
     "volume": null,
@@ -589,16 +842,29 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/02604027.2025.2518485",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["seti", "eth", "paradigm-shift", "uap", "astrobiology"],
+    "tags": [
+      "seti",
+      "eth",
+      "paradigm-shift",
+      "uap",
+      "astrobiology"
+    ],
     "case_ids": [],
-    "organization_ids": ["scientific-coalition-for-uap-studies", "society-for-uap-studies"],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies",
+      "society-for-uap-studies"
+    ],
     "summary": "Reviews how the SETI paradigm has evolved over seven decades and argues for its integration with UAP research. Makes the case that UAP evidence - particularly cases with physical effects and government acknowledgment - should inform how scientists approach the search for advanced extraterrestrial intelligence. Proposes a unified methodological framework bridging both fields.",
     "abstract": "This paper reviews the historical evolution of the search for extraterrestrial intelligence (SETI) from the early radio signal paradigm to current multi-modal approaches. The author argues that the growing body of credible UAP evidence represents a paradigm challenge that SETI researchers have not adequately addressed, and proposes a framework for integrating UAP investigation with established SETI methodology."
   },
   {
     "id": "krame-2024-securitization",
     "title": "Casting Ambiguity: The Securitization of Unidentified Anomalous Phenomena in the United States",
-    "authors": ["Ghaleb Krame", "Vlado Vivoda", "Tamir Bar-On"],
+    "authors": [
+      "Ghaleb Krame",
+      "Vlado Vivoda",
+      "Tamir Bar-On"
+    ],
     "author_ids": [],
     "year": 2024,
     "journal": "Australian Journal of International Affairs",
@@ -608,7 +874,13 @@
     "url": "https://journals.sagepub.com/doi/10.1177/03043754241256845",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["securitization", "national-security", "political-science", "usa", "disclosure"],
+    "tags": [
+      "securitization",
+      "national-security",
+      "political-science",
+      "usa",
+      "disclosure"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Applies securitization theory - the political process by which a topic is framed as a national security threat - to UAP in the United States. Analyzes how the framing of UAP as a security concern from the late 2010s onward has reshaped the political dynamics of disclosure, creating both new pressures for transparency and new justifications for secrecy. Methodologically rigorous political science companion to Wendt/Duvall.",
@@ -617,7 +889,9 @@
   {
     "id": "bohlander-2025-epistemological",
     "title": "From Description to Meaning: Epistemological Problems of UAP Research",
-    "authors": ["Michael Bohlander"],
+    "authors": [
+      "Michael Bohlander"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": "Limina: Journal of UAP Studies",
@@ -627,7 +901,13 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/02604027.2025.2592181",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["epistemology", "philosophy-of-science", "contact-ethics", "uap", "methodology"],
+    "tags": [
+      "epistemology",
+      "philosophy-of-science",
+      "contact-ethics",
+      "uap",
+      "methodology"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Examines the epistemological challenges inherent in scientific UAP research, exploring the gap between descriptive data collection and interpretive meaning-making. Addresses the ethics and philosophical frameworks required for potential contact scenarios. Contributes methodological clarity to a field prone to conflating observation with interpretation.",
@@ -636,7 +916,9 @@
   {
     "id": "ouellet-2025-parapsychology-uap",
     "title": "Parapsychology and Researching the UAP Experience",
-    "authors": ["Eric Ouellet"],
+    "authors": [
+      "Eric Ouellet"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": "Limina: Journal of UAP Studies",
@@ -646,16 +928,26 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/02604027.2025.2592182",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["parapsychology", "uap-experience", "methodology", "consciousness", "psi"],
+    "tags": [
+      "parapsychology",
+      "uap-experience",
+      "methodology",
+      "consciousness",
+      "psi"
+    ],
     "case_ids": [],
-    "organization_ids": ["parapsychological-association"],
+    "organization_ids": [
+      "parapsychological-association"
+    ],
     "summary": "Argues that parapsychological methods, frameworks, and empirical findings should be formally integrated into UAP research. Reviews the theoretical overlap between psi phenomena and UAP experiencer accounts, and proposes methodological bridges between the two research traditions. A significant call for cross-disciplinary synthesis directly relevant to DECUR's parapsychology coverage.",
     "abstract": null
   },
   {
     "id": "denzler-2025-disclosure",
     "title": "What Do You Mean by Disclosure?",
-    "authors": ["Brenda Denzler"],
+    "authors": [
+      "Brenda Denzler"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": "Limina: Journal of UAP Studies",
@@ -665,7 +957,13 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/02604027.2025.2572036",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["disclosure", "epistemology", "uap-policy", "social-science", "language"],
+    "tags": [
+      "disclosure",
+      "epistemology",
+      "uap-policy",
+      "social-science",
+      "language"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Deconstructs the term 'disclosure' as deployed in UAP advocacy and political contexts, examining its multiple and sometimes contradictory meanings. Analyzes how ambiguity in the concept shapes and constrains public debate, policy formation, and expectations about government transparency. Conceptually important for a platform framed around disclosure themes.",
@@ -674,7 +972,10 @@
   {
     "id": "bastos-duarte-2025-reddit",
     "title": "Between Disclosure and Conspiracy: r/UFO and r/UAP Subreddits",
-    "authors": ["Marco Bastos", "Marisa Duarte"],
+    "authors": [
+      "Marco Bastos",
+      "Marisa Duarte"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": "Information, Communication and Society",
@@ -684,7 +985,13 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/1369118X.2026.2645882",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["social-media", "discourse-analysis", "online-communities", "transparency", "uap"],
+    "tags": [
+      "social-media",
+      "discourse-analysis",
+      "online-communities",
+      "transparency",
+      "uap"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Quantitative analysis of how transparency and disclosure events reshape framing within the r/UFO and r/UAP Reddit communities. Examines the tension between disclosure-oriented and conspiracy-oriented discursive frames, and how official UAP acknowledgments shift community dynamics. Methodologically rigorous social science paper relevant to understanding DECUR's audience.",
@@ -693,7 +1000,9 @@
   {
     "id": "bower-2025-seti-engagement",
     "title": "Bridging Incommensurability: UAP as Planetary-Scale SETI Engagement",
-    "authors": ["Courtney Bower"],
+    "authors": [
+      "Courtney Bower"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": "Limina: Journal of UAP Studies",
@@ -703,7 +1012,13 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/02604027.2025.2569011",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["seti", "uap", "planetary-scale", "framework", "incommensurability"],
+    "tags": [
+      "seti",
+      "uap",
+      "planetary-scale",
+      "framework",
+      "incommensurability"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Proposes a unified theoretical framework treating UAP phenomena as potential planetary-scale SETI engagement, building on the incommensurability framework developed by Vallee and Davis. Argues that the SETI paradigm and the UAP research paradigm are not incompatible but require a bridging framework to integrate their evidence bases. Natural companion to the Vallee/Davis paper already in DECUR.",
@@ -712,7 +1027,10 @@
   {
     "id": "cirkovic-katic-2022-moral-standing",
     "title": "Extraterrestrial Intelligence and Moral Standing",
-    "authors": ["Milan M. Cirkovic", "Ana Katic"],
+    "authors": [
+      "Milan M. Cirkovic",
+      "Ana Katic"
+    ],
     "author_ids": [],
     "year": 2022,
     "journal": "International Journal of Astrobiology",
@@ -722,7 +1040,13 @@
     "url": "https://www.cambridge.org/core/journals/international-journal-of-astrobiology/article/extraterrestrial-intelligence-and-moral-standing/3ED1AD7D0346F178A694798634F4839A",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["ethics", "eti", "moral-philosophy", "astrobiology", "contact-ethics"],
+    "tags": [
+      "ethics",
+      "eti",
+      "moral-philosophy",
+      "astrobiology",
+      "contact-ethics"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Philosophical analysis of whether extraterrestrial intelligences would qualify for moral consideration under standard ethical frameworks. Examines multiple ethical traditions and their implications for contact scenarios, first contact protocols, and the ethical obligations of humanity toward NHI if confirmed. Foundational contact-ethics paper.",
@@ -731,7 +1055,10 @@
   {
     "id": "smith-johnathan-2023-hume-ufo",
     "title": "Hume on Miracles and UFOs",
-    "authors": ["Tiddy Smith", "Samuel Vincenzo Johnathan"],
+    "authors": [
+      "Tiddy Smith",
+      "Samuel Vincenzo Johnathan"
+    ],
     "author_ids": [],
     "year": 2023,
     "journal": null,
@@ -741,16 +1068,24 @@
     "url": "https://philpapers.org/archive/SMIHOM-2.pdf",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["philosophy", "epistemology", "testimony", "credibility", "hume"],
+    "tags": [
+      "philosophy",
+      "epistemology",
+      "testimony",
+      "credibility",
+      "hume"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Applies Hume's doctrine of miracles to the epistemological status of UFO testimonial evidence. Systematically works through the Humean argument that testimony for extraordinary events should be discounted against base rates, and evaluates both sides: the case against testimony-based UAP belief and the counterarguments available to UAP researchers. Philosophically rigorous treatment of a recurring epistemic challenge in the field.",
-    "abstract": null
+    "abstract": "A miracle is defined as a violation of or intercession in the laws of nature. Some recent reports of UFO phenomena are such that UFOs may satisfy that definition. In this paper, we ask how Hume's famous argument in \"Of Miracles\" relates to UFOs. We argue that his critique fails and that some well corroborated UFO reports are such that they justify a belief in miracles (qua violations of laws of nature)."
   },
   {
     "id": "lane-craig-2025-eth",
     "title": "The Extraterrestrial Hypothesis: An Epistemological Case for Removing the Taboo",
-    "authors": ["William Lane Craig"],
+    "authors": [
+      "William Lane Craig"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": null,
@@ -760,7 +1095,13 @@
     "url": "https://philpapers.org/rec/LANTEH",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["eth", "epistemology", "philosophy", "taboo", "uap"],
+    "tags": [
+      "eth",
+      "epistemology",
+      "philosophy",
+      "taboo",
+      "uap"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Philosophical case for treating the extraterrestrial hypothesis as scientifically legitimate and removing the academic taboo on serious ETH investigation. Notable as a contribution from William Lane Craig, primarily known as a Christian apologetics philosopher - his engagement with UAP epistemology from a rigorous analytic tradition adds an unexpected but credentialed perspective to the taboo-removal argument.",
@@ -769,7 +1110,10 @@
   {
     "id": "engels-hauser-epistemic-injustice",
     "title": "Epistemic Injustice and Contact Experiencers",
-    "authors": ["Kimberly S. Engels", "Elliott Hauser"],
+    "authors": [
+      "Kimberly S. Engels",
+      "Elliott Hauser"
+    ],
     "author_ids": [],
     "year": null,
     "journal": null,
@@ -779,16 +1123,24 @@
     "url": "https://philpapers.org/archive/ENGEIA-5.pdf",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["epistemology", "experiencer", "epistemic-injustice", "philosophy", "testimony"],
+    "tags": [
+      "epistemology",
+      "experiencer",
+      "epistemic-injustice",
+      "philosophy",
+      "testimony"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Applies Miranda Fricker's epistemic injustice framework to UAP contact experiencers, arguing they face systematic testimonial injustice - a specific form of epistemic harm in which a speaker's credibility is deflated due to identity prejudice. Provides a philosophical grounding for the ethical treatment of experiencer testimony, directly relevant to DECUR's coverage of experiencer organizations and research.",
-    "abstract": null
+    "abstract": "This paper argues that contact experiencers, or those who report experiences with advanced intelligences they suspect or believe are non-human, should be taken seriously as victims of epistemic injustice. Through comparison with other groups of knowers who report a constitutive experience, we surface situations in which speakers are doubted on the grounds that the constitutive experience is argued not to be possible, in part because it poses an ontological threat to hearers' conceptions of identity or reality. Experiences may threaten hearers' existing ontological categories, introduce ontological ambiguity, or suggest a need for new ontological categories. We show that contact experiencer claims represent threats in all three of these ways, as well as threats to anthropocentric norms and the perceived human knowability of the world. To begin to redress these harms, we suggest a radical phenomenology coupled with ontological openness as a starting point for restorative hearing."
   },
   {
     "id": "sheikh-2025-aliens-of-gaps",
     "title": "Aliens of the Gaps?",
-    "authors": ["Hayyan Sheikh"],
+    "authors": [
+      "Hayyan Sheikh"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": null,
@@ -798,16 +1150,24 @@
     "url": "https://philpapers.org/archive/SHEAOT-14.pdf",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["eth", "philosophy", "epistemology", "god-of-gaps-analogy", "critique"],
+    "tags": [
+      "eth",
+      "philosophy",
+      "epistemology",
+      "god-of-gaps-analogy",
+      "critique"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Philosophical critique of extraterrestrial hypothesis reasoning, drawing an analogy to 'God of the gaps' arguments. Argues that invoking ETH to explain anomalous phenomena exhibits the same structural flaw as invoking the divine to explain natural gaps in scientific knowledge. Useful as a counterpoint paper representing the critical philosophy-of-science perspective on ETH advocacy.",
-    "abstract": null
+    "abstract": "In this paper, I test the alien hypothesis for theoretical virtues. Simply put, I highlight the merits and demerits of appealing to aliens, i.e. technologically advanced intelligent extraterrestrials, to explain certain phenomena or observations. I shall compare the alien hypothesis to rival hypotheses and also argue that the jinn hypothesis is more preferable. The paper tests the alien hypothesis against criteria of theoretical virtue including simplicity, explanatory breadth, and predictive power, finding that alternative hypotheses including natural explanations and the jinn hypothesis fare comparably or better on these criteria."
   },
   {
     "id": "ruhmkorff-2019-copernican",
     "title": "The Copernican Principle, Intelligent Extraterrestrials, and Arguments from Evil",
-    "authors": ["Samuel Ruhmkorff"],
+    "authors": [
+      "Samuel Ruhmkorff"
+    ],
     "author_ids": [],
     "year": 2019,
     "journal": null,
@@ -817,16 +1177,25 @@
     "url": "https://philpapers.org/archive/RUHTCP.pdf",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["philosophy", "ethics", "eti", "cosmology", "copernican-principle"],
+    "tags": [
+      "philosophy",
+      "ethics",
+      "eti",
+      "cosmology",
+      "copernican-principle"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Explores the implications of the Copernican principle - the assumption that Earth and humanity are not cosmically privileged - for the question of intelligent extraterrestrial life and for classical theological arguments from evil. Bridges philosophy of religion and astrobiology in examining what a universe teeming with intelligent life would mean for ethical and theological frameworks.",
-    "abstract": null
+    "abstract": "The physicist Richard Gott defends the Copernican principle, which claims that when we have no information about our position along a given dimension among a group of observers, we should consider ourselves to be randomly located among those observers in respect to that dimension. First, I apply Copernican reasoning to the distribution of evil in the universe. I then contend that evidence for intelligent extraterrestrial life strengthens four important versions of the argument from evil. I remain neutral regarding whether this result is a reductio of these arguments from evil or the statement of a genuine evidential relationship."
   },
   {
     "id": "rakic-katic-2025-cognition",
     "title": "Extraterrestrial and Other Unobservable Forms of Cognition",
-    "authors": ["Vojin Rakic", "Ana Katic"],
+    "authors": [
+      "Vojin Rakic",
+      "Ana Katic"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": null,
@@ -836,16 +1205,24 @@
     "url": "https://philpapers.org/archive/RAKEAO.pdf",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["ethics", "eti", "cognition", "x-risk", "philosophy-of-mind"],
+    "tags": [
+      "ethics",
+      "eti",
+      "cognition",
+      "x-risk",
+      "philosophy-of-mind"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Philosophical examination of extraterrestrial and other unobservable forms of cognition, exploring the ethical and existential implications of non-human intelligences that may operate outside human perceptual or scientific access. Addresses x-risk dimensions and the limits of anthropocentric cognitive frameworks in confronting possible NHI.",
-    "abstract": null
+    "abstract": "This paper explores whether extraterrestrial or other forms of cognition and morality that are unobservable and incomprehensible to humans constitute an existential risk (X-risk) or an existential opportunity (X-opportunity) for humanity. It is argued that the human epistemological apparatus is fundamentally limited, rendering certain forms of life - both extraterrestrial and potentially terrestrial - imperceptible and incomprehensible (which is also a novel solution to the Fermi paradox that we propose). By integrating philosophical reasoning with empirical insights from (astro)biology, the paper examines the potential implications of interacting with such entities. It will be concluded that extra-terrestrial or other sentient forms of cognition and morality could represent both a risk and an opportunity, with the likelihood of a favorable outcome increasing in correlation with scientific progress and cognitive and moral enhancement of humanity."
   },
   {
     "id": "agrama-2021-synchronicity",
     "title": "Secularity, Synchronicity, and Uncanny Science",
-    "authors": ["Hussein Ali Agrama"],
+    "authors": [
+      "Hussein Ali Agrama"
+    ],
     "author_ids": [],
     "year": 2021,
     "journal": "Zygon: Journal of Religion and Science",
@@ -855,7 +1232,13 @@
     "url": "https://www.zygonjournal.org/article/id/14727/",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["synchronicity", "consciousness", "philosophy-of-science", "religion-science", "anomalous"],
+    "tags": [
+      "synchronicity",
+      "consciousness",
+      "philosophy-of-science",
+      "religion-science",
+      "anomalous"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Examines the concept of synchronicity and its relationship to secular scientific epistemology, exploring how uncanny or anomalous events - those that resist naturalistic explanation - challenge the boundaries of modern science. Published in Zygon, the leading religion-science interdisciplinary journal, the paper provides a framework for thinking about anomalous phenomena within a secular academic context.",
@@ -864,7 +1247,9 @@
   {
     "id": "peter-2024-physics-nhi",
     "title": "The Physics of NHI UAP",
-    "authors": ["Maximillian Peter"],
+    "authors": [
+      "Maximillian Peter"
+    ],
     "author_ids": [],
     "year": 2024,
     "journal": null,
@@ -874,7 +1259,14 @@
     "url": "https://zenodo.org/records/11637004",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["physics", "propulsion", "consciousness", "nhi", "theoretical", "speculative"],
+    "tags": [
+      "physics",
+      "propulsion",
+      "consciousness",
+      "nhi",
+      "theoretical",
+      "speculative"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "A hypothetical theoretical framework covering energy, propulsion, spacetime travel, and consciousness in the context of non-human intelligence UAP. Deposited as a Zenodo preprint and not peer-reviewed. Listed as a speculative theoretical contribution to the propulsion and NHI physics thread in UAP research; should not be treated as validated science pending independent review.",
@@ -883,7 +1275,9 @@
   {
     "id": "meyler-2026-warp-drive",
     "title": "The Meyler-Fuchs Hybrid Warp Drive",
-    "authors": ["Nicholas Meyler"],
+    "authors": [
+      "Nicholas Meyler"
+    ],
     "author_ids": [],
     "year": 2026,
     "journal": null,
@@ -893,16 +1287,24 @@
     "url": "https://philpapers.org/rec/MEYTMH-2",
     "open_access": true,
     "source_type": "preprint",
-    "tags": ["warp-drive", "propulsion", "physics", "theoretical", "uap"],
+    "tags": [
+      "warp-drive",
+      "propulsion",
+      "physics",
+      "theoretical",
+      "uap"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "A March 2026 preprint proposing a hybrid warp drive theoretical framework drawing on Alcubierre and Fuchs-Jacobson approaches. Very recent and not peer-reviewed; speculative by nature. Listed as a theoretical physics contribution to the exotic propulsion thread relevant to UAP research contexts, pending independent review.",
-    "abstract": null
+    "abstract": "The Meyler-Fuchs Hybrid Warp Drive (MFHD) and its extensions - H-MFHD and the Recursive Double Mobius Warp Drive (RDMWD) - introduce a non-orientable Mobius-parity ansatz into toroidal positive-energy warp metrics, producing a topological torsion-lowering mechanism that fundamentally changes the energy scaling of spacetime engineering. Combined with hyperbolic shift reformulation and orthogonal transport splitting, this yields quadratic (or better) reductions in field energy requirements compared to every prior positive-energy warp proposal. Whereas Fuchs et al., Lentz, and Bobrick and Martire require planetary-to-stellar mass-energy equivalents for meaningful warp velocities, MFHD satisfies all classical energy conditions (NEC, WEC, DEC, SEC), eliminates horizons and closed timelike curves by construction, and brings required field energies down to approximately 10^8-10^11 J for v = 0.5c. The two-axis orthogonal shift splitting is identified as the decisive innovation: for curvature exponents p >= 4, energy is halved relative to all single-axis designs. The paper also examines the persistent cultural motif of spinning and rim-rotating disc-shaped craft across seven decades of UAP reports, argues that institutional skepticism toward these reports suppressed a legitimate physics investigation for decades, and shows that the same topological principles now formalized in MFHD may explain the observed rotation signature. Neil deGrasse Tyson angular-momentum objection is addressed and shown to apply only to naive rigid-body rotation, not to the gauge-invariant topological torsion employed here."
   },
   {
     "id": "kelly-2025-i-want-to-believe",
     "title": "I Want to Believe",
-    "authors": ["Sean Kelly"],
+    "authors": [
+      "Sean Kelly"
+    ],
     "author_ids": [],
     "year": 2025,
     "journal": "Limina: Journal of UAP Studies",
@@ -912,7 +1314,13 @@
     "url": "https://www.tandfonline.com/doi/full/10.1080/02604027.2025.2592269",
     "open_access": false,
     "source_type": "peer-reviewed",
-    "tags": ["philosophy", "belief", "epistemology", "uap", "phenomenology"],
+    "tags": [
+      "philosophy",
+      "belief",
+      "epistemology",
+      "uap",
+      "phenomenology"
+    ],
     "case_ids": [],
     "organization_ids": [],
     "summary": "Philosophical examination of belief formation around UAP phenomena, with the title deliberately referencing the X-Files iconography to engage with the cultural dimensions of UAP belief. Explores what it means to believe in UAP, what the structure of that belief looks like epistemically, and how cultural priming shapes testimony reception. Combines analytic epistemology with phenomenological attention to the desire to believe.",
