@@ -1481,5 +1481,35 @@
     ],
     "summary": "The foundational peer-reviewed remote viewing paper from Stanford Research Institute (SRI), published in Nature. Targ and Puthoff describe experiments testing whether subjects — including Ingo Swann and Pat Price — could accurately describe geographically remote locations while physically isolated in a shielded environment. Results showed statistically significant accuracy above chance under double-blind judging. Publication in Nature, the highest-prestige science journal, gave the SRI remote viewing program its main claim to mainstream scientific legitimacy and directly preceded the CIA's expansion of the program.",
     "abstract": "Published in Nature as a short article (Letters format; no formal separate abstract). Describes experiments at Stanford Research Institute testing the ability of subjects to transmit information about remote locations under conditions of sensory shielding. Subjects including Ingo Swann and Pat Price were isolated in electromagnetically shielded rooms while an experimenter traveled to randomly selected target locations. Subjects' verbal and sketch descriptions of the target locations were evaluated under double-blind conditions by independent judges. Results showed statistically significant correspondence between target locations and subject descriptions, above what could be attributed to chance or sensory leakage. The authors conclude that the experimental results constitute prima facie evidence for a perceptual channel capable of acquiring information at a distance. The paper prompted significant scientific debate and led directly to expanded CIA and DIA funding of the SRI remote viewing program."
+  },
+  {
+    "id": "chalmers-1995-hard-problem",
+    "title": "Facing Up to the Problem of Consciousness",
+    "authors": [
+      "David J. Chalmers"
+    ],
+    "author_ids": [],
+    "year": 1995,
+    "journal": "Journal of Consciousness Studies",
+    "volume": "2",
+    "issue": "3",
+    "doi": null,
+    "url": "http://consc.net/papers/facing.html",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "consciousness",
+      "hard-problem",
+      "philosophy-of-mind",
+      "qualia",
+      "post-materialism",
+      "explanatory-gap"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "center-for-consciousness-studies"
+    ],
+    "summary": "The paper that coined 'the hard problem of consciousness.' Chalmers distinguishes between the easy problems of consciousness — explaining cognitive functions like attention, memory, and behavioral control — and the hard problem: why physical processes give rise to subjective experience at all. Argues that standard reductive and functionalist approaches cannot solve the hard problem, and that a new theoretical framework treating experience as fundamental is required. The most-cited single paper in philosophy of mind and the foundational reference for DECUR's consciousness science thread.",
+    "abstract": "Consciousness poses the most baffling problems in the science of the mind. There is nothing that we know more intimately than conscious experience, but there is nothing that is harder to explain. This paper distinguishes between the easy problems of consciousness — explaining cognitive functions such as the ability to discriminate stimuli, integrate information, report mental states, and focus attention — and the hard problem: explaining why these functions are accompanied by experience. The easy problems are tractable by standard methods of cognitive science and neuroscience, reducing them to mechanisms and functions. The hard problem is not tractable by these methods. Even a complete functional account of the brain would not tell us why there is something it is like to be a conscious organism. Reductive explanation fails because phenomenal properties cannot be derived from functional properties alone. This paper argues that we must approach consciousness as a fundamental feature of the world, irreducible to anything more basic, and proposes principles for a nonreductive theory of consciousness including the principle of structural coherence and the double-aspect theory of information."
   }
 ]

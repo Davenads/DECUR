@@ -2,6 +2,14 @@
   {
     "date": "2026-04-25",
     "category": "figure",
+    "id": "chalmers-1995-hard-problem",
+    "name": "Chalmers 1995 — Facing Up to the Problem of Consciousness",
+    "action": "added",
+    "note": "The paper that coined 'the hard problem of consciousness' — foundational reference for the platform's entire consciousness science thread."
+  },
+  {
+    "date": "2026-04-25",
+    "category": "figure",
     "id": "targ-puthoff-1974-remote-viewing",
     "name": "Targ & Puthoff 1974 — Information Transmission Under Conditions of Sensory Shielding",
     "action": "added",
