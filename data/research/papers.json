@@ -1511,5 +1511,37 @@
     ],
     "summary": "The paper that coined 'the hard problem of consciousness.' Chalmers distinguishes between the easy problems of consciousness — explaining cognitive functions like attention, memory, and behavioral control — and the hard problem: why physical processes give rise to subjective experience at all. Argues that standard reductive and functionalist approaches cannot solve the hard problem, and that a new theoretical framework treating experience as fundamental is required. The most-cited single paper in philosophy of mind and the foundational reference for DECUR's consciousness science thread.",
     "abstract": "Consciousness poses the most baffling problems in the science of the mind. There is nothing that we know more intimately than conscious experience, but there is nothing that is harder to explain. This paper distinguishes between the easy problems of consciousness — explaining cognitive functions such as the ability to discriminate stimuli, integrate information, report mental states, and focus attention — and the hard problem: explaining why these functions are accompanied by experience. The easy problems are tractable by standard methods of cognitive science and neuroscience, reducing them to mechanisms and functions. The hard problem is not tractable by these methods. Even a complete functional account of the brain would not tell us why there is something it is like to be a conscious organism. Reductive explanation fails because phenomenal properties cannot be derived from functional properties alone. This paper argues that we must approach consciousness as a fundamental feature of the world, irreducible to anything more basic, and proposes principles for a nonreductive theory of consciousness including the principle of structural coherence and the double-aspect theory of information."
+  },
+  {
+    "id": "kastrup-2017-analytic-idealism",
+    "title": "An Ontological Solution to the Mind-Body Problem",
+    "authors": [
+      "Bernardo Kastrup"
+    ],
+    "author_ids": [],
+    "year": 2017,
+    "journal": "Philosophies",
+    "volume": "2",
+    "issue": "2",
+    "doi": "10.3390/philosophies2020010",
+    "url": "https://www.mdpi.com/2409-9287/2/2/10",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "consciousness",
+      "idealism",
+      "post-materialism",
+      "philosophy-of-mind",
+      "ontology",
+      "analytic-idealism",
+      "hard-problem"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "essentia-foundation",
+      "galileo-commission"
+    ],
+    "summary": "Kastrup's core peer-reviewed statement of analytic idealism — arguing that spatially unbound consciousness is nature's sole ontological primitive and that all observable reality is its extrinsic manifestation. Humans and other organisms are dissociated alterations of this universal consciousness. The framework avoids both the hard problem of consciousness (which afflicts physicalism) and the subject combination problem (which afflicts panpsychism). Kastrup is the most prominent contemporary philosopher of idealism and is cross-referenced in multiple existing DECUR catalog papers.",
+    "abstract": "I argue for an idealist ontology consistent with empirical observations, which seeks to explain the facts of nature more parsimoniously than physicalism and bottom-up panpsychism. This ontology also attempts to offer more explanatory power than both physicalism and panpsychism, in that it does not fall prey to either the 'hard problem of consciousness' or the 'subject combination problem,' respectively. It can be summarized as follows: spatially unbound consciousness is posited as nature's sole ontological primitive. We, as well as all other living organisms, are dissociated alters of this unbound consciousness. The universe we see around us is the extrinsic appearance of phenomenality surrounding — but dissociated from — our alter. Other organisms we share the world with are appearances of other alters. As such, the challenge to artificially create individualized consciousness becomes synonymous with the challenge to induce abiogenesis."
   }
 ]
