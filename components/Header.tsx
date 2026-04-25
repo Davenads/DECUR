@@ -53,6 +53,7 @@ const researchNavItems = {
       { title: 'Papers & Reports', path: '/research?tab=papers' },
       { title: 'Organizations',    path: '/research?tab=organizations' },
       { title: 'Events',           path: '/research?tab=events' },
+      { title: 'Opportunities',    path: '/research?tab=opportunities' },
     ],
   },
 };

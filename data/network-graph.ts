@@ -245,6 +245,15 @@ export const graphData: GraphData = {
     { id: 'saic',              name: 'SAIC',                         type: 'contractor', val: 2 },
     { id: 'leidos',            name: 'Leidos',                       type: 'contractor', val: 3 },
     { id: 'boeing-defense',    name: 'Boeing Defense',               type: 'contractor', val: 4 },
+
+    // Research Hub organizations (sourced from data/research/organizations.json)
+    { id: 'scientific-coalition-for-uap-studies', name: 'SCU',                                    type: 'organization', group: 'shared', val: 3 },
+    { id: 'bigelow-institute-for-consciousness-studies', name: 'Bigelow Institute (BICS)',         type: 'organization', group: 'bigelow', val: 3 },
+    { id: 'narcap',                               name: 'NARCAP',                                  type: 'organization', group: 'shared', val: 2 },
+    { id: 'uapx',                                 name: 'UAPx',                                    type: 'organization', group: 'shared', val: 2 },
+    { id: 'center-for-ufo-studies',               name: 'CUFOS (J. Allen Hynek Center)',           type: 'organization', group: 'shared', val: 3 },
+    { id: 'uap-disclosure-fund',                  name: 'UAP Disclosure Fund',                     type: 'organization', group: 'shared', val: 3 },
+    { id: 'black-vault',                          name: 'The Black Vault',                         type: 'organization', group: 'shared', val: 2 },
   ],
 
   links: [
@@ -1380,5 +1389,18 @@ export const graphData: GraphData = {
     { source: 'boyd-bushman', target: 'ben-rich',          label: 'Both were senior Lockheed figures who made UAP-adjacent statements near the end of their lives; Rich\'s claims carry more institutional weight but both implicate the same classified aerospace organizational structure' },
     { source: 'boyd-bushman', target: 'mark-mccandlish',   label: 'McCandlish\'s ARV testimony and Bushman\'s anti-gravity claims both implicate classified Lockheed-adjacent reverse-engineering programs operating in overlapping eras' },
     { source: 'boyd-bushman', target: 'bob-lazar',         label: 'Both made unverified claims about classified anti-gravity and recovered-technology programs and both face substantive credibility challenges - Lazar\'s through credential disputes, Bushman\'s through debunked photograph evidence' },
+
+    // Research Hub organization connections
+    { source: 'tim-gallaudet',    target: 'uapx',                                    label: 'co-leads field research program' },
+    { source: 'robert-bigelow',   target: 'bigelow-institute-for-consciousness-studies', label: 'founded' },
+    { source: 'garry-nolan',      target: 'scientific-coalition-for-uap-studies',    label: 'research collaborator' },
+    { source: 'garry-nolan',      target: 'uap-disclosure-fund',                     label: 'board member' },
+    { source: 'luis-elizondo',    target: 'uap-disclosure-fund',                     label: 'board member' },
+    { source: 'david-grusch',     target: 'uap-disclosure-fund',                     label: 'whistleblower supported by' },
+    { source: 'hal-puthoff',      target: 'scientific-coalition-for-uap-studies',    label: 'research collaborator' },
+    { source: 'eric-davis',       target: 'scientific-coalition-for-uap-studies',    label: 'research collaborator' },
+    { source: 'jacques-vallee',   target: 'center-for-ufo-studies',                  label: 'contributed research to' },
+    { source: 'bigelow-aerospace', target: 'bigelow-institute-for-consciousness-studies', label: 'preceded; Bigelow pivoted from aerospace to consciousness research' },
+    { source: 'sol-foundation',   target: 'scientific-coalition-for-uap-studies',    label: 'parallel research organizations, complementary methodologies' },
   ],
 };
