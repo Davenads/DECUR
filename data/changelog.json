@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-04-24",
+    "category": "figure",
+    "id": "research-hub",
+    "name": "Research Hub",
+    "action": "added",
+    "note": "New Research Hub section launches with 25 indexed papers and reports, 15 research organizations, and 10 events - a centralized academic infrastructure layer connecting papers, organizations, and events across the UAP research field."
+  },
+  {
     "date": "2026-04-20",
     "category": "case",
     "id": "1997-pucallpa-peru",

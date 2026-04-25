@@ -45,6 +45,18 @@ const timelineLink = { href: '/timeline', label: 'Timeline' };
 const sightingsLink = { href: '/sightings', label: 'Sightings' };
 const aboutLink = { href: '/about', label: 'About' };
 
+const researchNavItems = {
+  research: {
+    title: 'Research',
+    path: '/research',
+    items: [
+      { title: 'Papers & Reports', path: '/research?tab=papers' },
+      { title: 'Organizations',    path: '/research?tab=organizations' },
+      { title: 'Events',           path: '/research?tab=events' },
+    ],
+  },
+};
+
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -150,6 +162,16 @@ const Header: FC = () => {
             >
               {sightingsLink.label}
             </Link>
+
+            <NavDropdown
+              id="research"
+              title="Research"
+              items={researchNavItems.research.items}
+              isActive={isActive('/research')}
+              isOpen={activeDropdown === 'research'}
+              onToggle={() => toggleDropdown('research')}
+              dropdownRef={el => { dropdownRefs.current['research'] = el; }}
+            />
 
             <NavDropdown
               id="resources"
@@ -268,6 +290,15 @@ const Header: FC = () => {
               >
                 {sightingsLink.label}
               </Link>
+
+              <MobileNavDropdown
+                title="Research"
+                items={researchNavItems.research.items}
+                isActive={isActive('/research')}
+                isOpen={activeDropdown === 'mobile-research'}
+                onToggle={() => toggleDropdown('mobile-research')}
+                onItemClick={() => setIsMenuOpen(false)}
+              />
 
               <MobileNavDropdown
                 title="Resources"
