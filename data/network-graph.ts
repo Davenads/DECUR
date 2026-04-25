@@ -134,6 +134,24 @@ export const graphData: GraphData = {
     { id: 'enigma-labs',                          name: 'Enigma Labs',                     type: 'organization', group: 'shared', val: 2 },
     { id: 'euroufo',                              name: 'EuroUFO',                         type: 'organization', group: 'shared', val: 2 },
     { id: 'scientific-and-medical-network',       name: 'Scientific and Medical Network',  type: 'organization', group: 'shared', val: 2 },
+    // Phase 3 new orgs
+    { id: 'bial-foundation',                      name: 'Bial Foundation',                 type: 'organization', group: 'shared', val: 2 },
+    { id: 'academy-post-materialist-sciences',    name: 'AAPS',                            type: 'organization', group: 'shared', val: 2 },
+    { id: 'center-for-consciousness-studies',     name: 'Center for Consciousness Studies', type: 'organization', group: 'shared', val: 2 },
+    { id: 'galileo-commission',                   name: 'Galileo Commission',               type: 'organization', group: 'shared', val: 2 },
+    { id: 'institute-advanced-consciousness-studies', name: 'IACS',                         type: 'organization', group: 'shared', val: 2 },
+    { id: 'nderf',                                name: 'NDERF',                            type: 'organization', group: 'shared', val: 2 },
+    { id: 'the-experiencer-group',                name: 'The Experiencer Group',            type: 'organization', group: 'shared', val: 2 },
+    { id: 'the-experiencer-support-association',  name: 'TESA',                             type: 'organization', group: 'shared', val: 2 },
+    { id: 'opus-network',                         name: 'OPUS Network',                     type: 'organization', group: 'shared', val: 2 },
+    { id: 'koestler-parapsychology-unit',         name: 'Koestler Unit (Edinburgh)',        type: 'organization', group: 'shared', val: 2 },
+    { id: 'aipr',                                 name: 'AIPR',                             type: 'organization', group: 'shared', val: 2 },
+    { id: 'assap',                                name: 'ASSAP',                            type: 'organization', group: 'shared', val: 2 },
+    { id: 'gesellschaft-fur-anomalistik',         name: 'Gesellschaft fur Anomalistik',     type: 'organization', group: 'shared', val: 2 },
+    { id: 'quantum-gravity-research',             name: 'Quantum Gravity Research',         type: 'organization', group: 'shared', val: 2 },
+    { id: 'farsight-institute',                   name: 'Farsight Institute',               type: 'organization', group: 'shared', val: 2 },
+    { id: 'canadians-for-disclosure',             name: 'Canadians for Disclosure',         type: 'organization', group: 'shared', val: 2 },
+    { id: 'psi-games-international',              name: 'Psi Games International',          type: 'organization', group: 'shared', val: 2 },
 
     // Concepts
     { id: 'five-observables',    name: '5 Observables',        type: 'concept',      group: 'elizondo', val: 3 },
@@ -1508,5 +1526,72 @@ export const graphData: GraphData = {
     // SMN connections
     { source: 'scientific-and-medical-network',    target: 'society-for-scientific-exploration', label: 'allied institutions; overlapping post-materialist and anomalistics research communities' },
     { source: 'scientific-and-medical-network',    target: 'essentia-foundation',              label: 'related post-materialist science initiatives; SMN hosted Galileo Commission' },
+
+    // Bial Foundation connections
+    { source: 'bial-foundation',                   target: 'parapsychological-association',   label: 'primary European funder of PA-affiliated psi research programs' },
+    { source: 'bial-foundation',                   target: 'society-for-psychical-research',  label: 'funds SPR-adjacent parapsychology and consciousness research in Europe' },
+
+    // AAPS connections
+    { source: 'academy-post-materialist-sciences', target: 'scientific-and-medical-network',  label: 'closely allied post-materialist science initiatives; shared academic signatories' },
+    { source: 'academy-post-materialist-sciences', target: 'galileo-commission',              label: 'parallel post-materialist manifestos; overlapping institutional membership' },
+
+    // Center for Consciousness Studies connections
+    { source: 'center-for-consciousness-studies',  target: 'society-for-scientific-exploration', label: 'parallel academic consciousness research organizations' },
+    { source: 'center-for-consciousness-studies',  target: 'division-of-perceptual-studies',  label: 'complementary academic consciousness research programs' },
+
+    // Galileo Commission connections
+    { source: 'galileo-commission',                target: 'scientific-and-medical-network',  label: 'Galileo Commission is an initiative hosted and published by SMN' },
+    { source: 'galileo-commission',                target: 'academy-post-materialist-sciences', label: 'parallel post-materialist science advocacy programs' },
+
+    // IACS connections
+    { source: 'institute-advanced-consciousness-studies', target: 'center-for-consciousness-studies', label: 'parallel consciousness research organizations' },
+    { source: 'institute-advanced-consciousness-studies', target: 'academy-post-materialist-sciences', label: 'shared post-materialist research framework and community' },
+
+    // NDERF connections
+    { source: 'nderf',                             target: 'iands',                           label: 'parallel NDE organizations; IANDS publishes research, NDERF maintains case archive' },
+    { source: 'nderf',                             target: 'division-of-perceptual-studies',  label: 'DOPS researchers draw on NDERF case database in clinical NDE studies' },
+
+    // The Experiencer Group connections
+    { source: 'the-experiencer-group',             target: 'free-foundation',                 label: 'parallel experiencer research and community organizations' },
+    { source: 'the-experiencer-group',             target: 'the-experiencer-support-association', label: 'allied experiencer organizations; TEG community-focused, TESA clinically-focused' },
+
+    // TESA connections
+    { source: 'the-experiencer-support-association', target: 'free-foundation',               label: 'parallel experiencer support functions; TESA clinical, FREE survey research' },
+    { source: 'the-experiencer-support-association', target: 'iands',                         label: 'shared experiencer support with NDE and UAP contact overlap' },
+
+    // OPUS connections
+    { source: 'opus-network',                      target: 'free-foundation',                 label: 'overlapping experiencer research and paranormal experience support functions' },
+    { source: 'opus-network',                      target: 'iands',                           label: 'shared experiencer focus; paranormal experience and NDE communities overlap' },
+
+    // Koestler Parapsychology Unit connections
+    { source: 'koestler-parapsychology-unit',      target: 'society-for-psychical-research',  label: 'institutionally aligned; KPU is the University of Edinburgh endowed psi research unit' },
+    { source: 'koestler-parapsychology-unit',      target: 'parapsychological-association',   label: 'academic psi research; KPU researchers publish in PA-affiliated journals' },
+
+    // AIPR connections
+    { source: 'aipr',                              target: 'parapsychological-association',   label: 'regional parapsychology affiliate; Australian counterpart to PA network' },
+    { source: 'aipr',                              target: 'society-for-psychical-research',  label: 'parallel national parapsychology research organizations' },
+
+    // ASSAP connections
+    { source: 'assap',                             target: 'society-for-psychical-research',  label: 'UK peer institutions; ASSAP field investigation, SPR academic research' },
+    { source: 'assap',                             target: 'bufora',                          label: 'UK peer organizations; parallel civilian investigation of anomalous phenomena' },
+
+    // Gesellschaft fur Anomalistik connections
+    { source: 'gesellschaft-fur-anomalistik',      target: 'society-for-scientific-exploration', label: 'European peer institution for anomalistics; parallel journal publishing programs' },
+    { source: 'gesellschaft-fur-anomalistik',      target: 'assap',                           label: 'European and UK peer anomalistics research organizations' },
+
+    // Quantum Gravity Research connections
+    { source: 'quantum-gravity-research',          target: 'society-for-scientific-exploration', label: 'theoretical physics adjacency; SSE publishes on consciousness-physics intersection' },
+
+    // Farsight Institute connections
+    { source: 'farsight-institute',                target: 'irva',                            label: 'parallel remote viewing organizations; Farsight applies CRV without IRVA experimental controls' },
+    { source: 'farsight-institute',                target: 'monroe-institute',                label: 'shared remote viewing and consciousness research lineage from SRI program' },
+
+    // Canadians for Disclosure connections
+    { source: 'canadians-for-disclosure',          target: 'declassify-uap',                  label: 'parallel national UAP disclosure advocacy organizations' },
+    { source: 'canadians-for-disclosure',          target: 'americans-for-safe-aerospace',    label: 'allied North American UAP transparency advocacy organizations' },
+
+    // Psi Games International connections
+    { source: 'psi-games-international',           target: 'parapsychological-association',   label: 'citizen-science psi data collection; PA provides academic framework for psi testing' },
+    { source: 'psi-games-international',           target: 'rhine-research-center',           label: 'gamified analog to Rhine-style psi testing; crowdsourced data at scale' },
   ],
 };
