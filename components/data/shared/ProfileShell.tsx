@@ -58,7 +58,7 @@ const ProfileShell: FC<ProfileShellProps> = ({
             <BackIcon />
             {backLabel}
           </button>
-          {networkNodeId && (
+          {networkNodeId && backLabel !== 'Relationship Network' && (
             <Link
               href={`/explore?node=${networkNodeId}#relationship-network`}
               className="text-xs text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors"
