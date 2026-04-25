@@ -254,6 +254,11 @@ export const graphData: GraphData = {
     { id: 'center-for-ufo-studies',               name: 'CUFOS (J. Allen Hynek Center)',           type: 'organization', group: 'shared', val: 3 },
     { id: 'uap-disclosure-fund',                  name: 'UAP Disclosure Fund',                     type: 'organization', group: 'shared', val: 3 },
     { id: 'black-vault',                          name: 'The Black Vault',                         type: 'organization', group: 'shared', val: 2 },
+    { id: 'division-of-perceptual-studies',       name: 'DOPS (UVA)',                               type: 'organization', group: 'shared', val: 3 },
+    { id: 'parnia-labs-nyu',                      name: 'Parnia Lab (NYU)',                          type: 'organization', group: 'shared', val: 2 },
+    { id: 'monroe-institute',                     name: 'Monroe Institute',                          type: 'organization', group: 'shared', val: 3 },
+    { id: 'essentia-foundation',                  name: 'Essentia Foundation',                       type: 'organization', group: 'shared', val: 2 },
+    { id: 'society-for-uap-studies',              name: 'Society for UAP Studies',                   type: 'organization', group: 'shared', val: 3 },
   ],
 
   links: [
@@ -1402,5 +1407,19 @@ export const graphData: GraphData = {
     { source: 'jacques-vallee',   target: 'center-for-ufo-studies',                  label: 'contributed research to' },
     { source: 'bigelow-aerospace', target: 'bigelow-institute-for-consciousness-studies', label: 'preceded; Bigelow pivoted from aerospace to consciousness research' },
     { source: 'sol-foundation',   target: 'scientific-coalition-for-uap-studies',    label: 'parallel research organizations, complementary methodologies' },
+
+    // Monroe Institute connections
+    { source: 'robert-monroe',              target: 'monroe-institute',                           label: 'founded' },
+    { source: 'monroe-institute',           target: 'hal-puthoff',                                label: 'Gateway Process CIA program bridged Monroe OBE methods and SRI remote viewing research pipeline' },
+    { source: 'monroe-institute',           target: 'joe-mcmoneagle',                             label: 'training and long-term institutional affiliation' },
+
+    // DOPS / consciousness research connections
+    { source: 'division-of-perceptual-studies', target: 'bigelow-institute-for-consciousness-studies', label: 'parallel institutions in post-mortem consciousness survival research' },
+    { source: 'parnia-labs-nyu',            target: 'division-of-perceptual-studies',             label: 'parallel NDE research programs; complementary clinical and case-study methods' },
+    { source: 'essentia-foundation',        target: 'bigelow-institute-for-consciousness-studies', label: 'parallel non-materialist consciousness research organizations' },
+
+    // Society for UAP Studies connections
+    { source: 'society-for-uap-studies',    target: 'scientific-coalition-for-uap-studies',       label: 'SCU focuses on technical case analysis; SUAPS on academic discipline-building and peer-review infrastructure' },
+    { source: 'society-for-uap-studies',    target: 'sol-foundation',                             label: 'parallel academic UAP research initiatives; complementary Stanford-affiliated and independent tracks' },
   ],
 };
