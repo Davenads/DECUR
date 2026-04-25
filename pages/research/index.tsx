@@ -481,7 +481,7 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
           </div>
 
           {/* Tab nav */}
-          <div className="flex border-b border-gray-200 dark:border-gray-700 mb-8 overflow-x-auto">
+          <div className="flex border-b border-gray-200 dark:border-gray-700 mb-8 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {tabs.map(tab => (
               <button
                 key={tab.id}
