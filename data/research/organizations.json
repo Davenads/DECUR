@@ -15,6 +15,7 @@
   },
   {
     "id": "sol-foundation",
+    "decur_url": "/programs/sol-foundation",
     "name": "SOL Foundation",
     "abbreviation": null,
     "type": "research-institute",
@@ -29,6 +30,7 @@
   },
   {
     "id": "galileo-project",
+    "decur_url": "/programs/galileo-project",
     "name": "Galileo Project",
     "abbreviation": null,
     "type": "research-institute",
@@ -85,6 +87,7 @@
   },
   {
     "id": "mufon",
+    "decur_url": "/programs/mufon",
     "name": "Mutual UFO Network",
     "abbreviation": "MUFON",
     "type": "research-institute",
@@ -99,6 +102,7 @@
   },
   {
     "id": "to-the-stars-academy",
+    "decur_url": "/programs/ttsa",
     "name": "To The Stars Academy of Arts and Science",
     "abbreviation": "TTSA",
     "type": "research-institute",
@@ -155,6 +159,7 @@
   },
   {
     "id": "all-domain-anomaly-resolution-office",
+    "decur_url": "/programs/aaro",
     "name": "All-domain Anomaly Resolution Office",
     "abbreviation": "AARO",
     "type": "government-body",
@@ -253,6 +258,7 @@
   },
   {
     "id": "seti-institute",
+    "decur_url": "/programs/seti",
     "name": "SETI Institute",
     "abbreviation": "SETI",
     "type": "research-institute",

@@ -10,6 +10,7 @@ import figuresIndex from '../../../data/key-figures/index.json';
 
 interface Organization {
   id: string;
+  decur_url?: string;
   name: string;
   abbreviation: string | null;
   type: string;
@@ -335,7 +336,7 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
 export const getStaticPaths: GetStaticPaths = async () => {
   const orgs = orgsData as Organization[];
   return {
-    paths: orgs.map(o => ({ params: { id: o.id } })),
+    paths: orgs.filter(o => !o.decur_url).map(o => ({ params: { id: o.id } })),
     fallback: false,
   };
 };

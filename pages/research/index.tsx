@@ -29,6 +29,7 @@ interface Paper {
 
 interface Organization {
   id: string;
+  decur_url?: string;
   name: string;
   abbreviation: string | null;
   type: string;
@@ -276,7 +277,7 @@ function OrgCard({ org }: { org: Organization }) {
       )}
 
       <div className="flex items-center gap-3">
-        <Link href={`/research/organizations/${org.id}`} className="text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
+        <Link href={org.decur_url ?? `/research/organizations/${org.id}`} className="text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
           Details
         </Link>
         <a

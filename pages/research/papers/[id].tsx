@@ -29,6 +29,7 @@ interface Paper {
 
 interface Organization {
   id: string;
+  decur_url?: string;
   name: string;
   abbreviation: string | null;
 }
@@ -255,7 +256,7 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
                     {relatedOrgs.map(org => (
                       <Link
                         key={org.id}
-                        href={`/research/organizations/${org.id}`}
+                        href={org.decur_url ?? `/research/organizations/${org.id}`}
                         className="flex items-center gap-2 text-xs hover:text-primary transition-colors group"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-600 shrink-0" />
