@@ -1609,5 +1609,38 @@
     "organization_ids": [],
     "summary": "Comprehensive review of near-death experience epidemiology and the neurophysiological mechanisms of consciousness in the dying brain. Mashour, Chair of Anesthesiology at the University of Michigan, synthesizes clinical NDE incidence data (10-20% after in-hospital cardiac arrest) with laboratory evidence for gamma oscillation surges following cardiac and respiratory arrest. Contextualizes the Xu et al. 2023 PNAS findings within the broader NDE and dying-brain literature, representing the leading institutional voice on this topic.",
     "abstract": "The near-death experience has been reported since antiquity and is often characterized by the perception of light, interactions with other entities, and life recall. Near-death experiences can occur in a variety of situations, but they have been studied systematically after in-hospital cardiac arrest, with an incidence of 10 to 20%. Long attributed to metaphysical or supernatural causes, there have been recent advances in understanding the neurophysiologic basis of this unique category of conscious experience. This article reviews the epidemiology and neurobiology of near-death experiences, with a focus on clinical and laboratory evidence for a surge of neurophysiologic gamma oscillations and cortical connectivity after cardiac and respiratory arrest. The near-death experience has been reported since antiquity, with an incidence of more than 10% after in-hospital cardiac arrest. The authors review the evidence for neurophysiologic mechanisms of consciousness in the dying brain."
+  },
+  {
+    "id": "hameroff-penrose-2014-orch-or",
+    "title": "Consciousness in the Universe: A Review of the 'Orch OR' Theory",
+    "authors": [
+      "Stuart Hameroff",
+      "Roger Penrose"
+    ],
+    "author_ids": [],
+    "year": 2014,
+    "journal": "Physics of Life Reviews",
+    "volume": "11",
+    "issue": "1",
+    "pages": "39-78",
+    "doi": "10.1016/j.plrev.2013.08.002",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1571064513001188",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "consciousness",
+      "quantum-consciousness",
+      "orch-or",
+      "neuroscience",
+      "physics",
+      "microtubules",
+      "spacetime"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "center-for-consciousness-studies"
+    ],
+    "summary": "Definitive review of Orchestrated Objective Reduction (Orch OR), the most-cited consciousness theory in physics venues. Hameroff and Penrose propose that consciousness arises from biologically orchestrated quantum processes in neuronal microtubules, terminating via the Diosi-Penrose objective reduction scheme and connecting brain biomolecular processes to the fundamental structure of spacetime. The 2014 update incorporates developments in quantum biology and introduces beat-frequency microtubule vibrations as a candidate source of EEG correlates of consciousness, while affirming that consciousness plays an intrinsic role in the universe.",
+    "abstract": "The nature of consciousness, the mechanism by which it occurs in the brain, and its ultimate place in the universe are unknown. We proposed in the mid 1990's that consciousness depends on biologically 'orchestrated' coherent quantum processes in collections of microtubules within brain neurons, that these quantum processes correlate with, and regulate, neuronal synaptic and membrane activity, and that the continuous Schrodinger evolution of each such process terminates in accordance with the specific Diosi-Penrose (DP) scheme of 'objective reduction' ('OR') of the quantum state. This orchestrated OR activity ('Orch OR') is taken to result in moments of conscious awareness and/or choice. The DP form of OR is related to the fundamentals of quantum mechanics and space-time geometry, so Orch OR suggests that there is a connection between the brain's biomolecular processes and the basic structure of the universe. Here we review Orch OR in light of criticisms and developments in quantum biology, neuroscience, physics and cosmology. We also introduce a novel suggestion of 'beat frequencies' of faster microtubule vibrations as a possible source of the observed electro-encephalographic ('EEG') correlates of consciousness. We conclude that consciousness plays an intrinsic role in the universe."
   }
 ]
