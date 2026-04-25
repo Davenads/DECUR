@@ -240,7 +240,7 @@
     "description": "Led by Dr. Sam Parnia at NYU Langone, the Parnia Lab runs the largest prospective studies of near-death experiences during cardiac arrest, including the landmark AWARE (AWAreness during REsuscitation) studies. The lab uses calibrated visual targets positioned above resuscitation tables to test out-of-body perception claims under controlled hospital conditions. Parnia's research represents the most methodologically rigorous attempt to empirically test consciousness survival hypotheses in a clinical setting.",
     "focus_areas": ["near-death experiences", "cardiac arrest research", "out-of-body perception", "resuscitation science"],
     "key_member_ids": [],
-    "notable_paper_ids": []
+    "notable_paper_ids": ["parnia-2014-aware"]
   },
   {
     "id": "monroe-institute",
