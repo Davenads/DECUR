@@ -7,6 +7,7 @@ import papersData from '../../data/research/papers.json';
 import orgsData from '../../data/research/organizations.json';
 import eventsData from '../../data/research/events.json';
 import opportunitiesData from '../../data/research/opportunities.json';
+import journalsData from '../../data/research/journals.json';
 
 /* ── Types ──────────────────────────────────────────────────────── */
 
@@ -72,14 +73,34 @@ interface Opportunity {
   status: string;
 }
 
+interface Journal {
+  id: string;
+  name: string;
+  abbreviation: string | null;
+  publisher: string;
+  organization_id: string | null;
+  url: string;
+  open_access: boolean;
+  description: string;
+  focus_areas: string[];
+  priority: 'high' | 'medium' | 'low';
+}
+
 interface ResearchProps {
   papers: Paper[];
   organizations: Organization[];
   events: ResearchEvent[];
   opportunities: Opportunity[];
+  journals: Journal[];
 }
 
-type TabType = 'papers' | 'organizations' | 'events' | 'opportunities';
+type TabType = 'papers' | 'organizations' | 'events' | 'opportunities' | 'journals';
+
+const JOURNAL_PRIORITY_COLORS: Record<string, string> = {
+  'high':   'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
+  'medium': 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300',
+  'low':    'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400',
+};
 
 /* ── Constants ──────────────────────────────────────────────────── */
 
@@ -405,18 +426,67 @@ function OpportunityCard({ opp }: { opp: Opportunity }) {
   );
 }
 
+function JournalCard({ journal }: { journal: Journal }) {
+  const priorityColor = JOURNAL_PRIORITY_COLORS[journal.priority] ?? JOURNAL_PRIORITY_COLORS['low'];
+  const priorityLabel = journal.priority.charAt(0).toUpperCase() + journal.priority.slice(1) + ' relevance';
+
+  return (
+    <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-gray-300 dark:hover:border-gray-600 transition-colors bg-white dark:bg-gray-800/50">
+      <div className="flex flex-wrap items-start gap-2 mb-3">
+        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${priorityColor}`}>{priorityLabel}</span>
+        {journal.open_access && (
+          <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300">
+            Open Access
+          </span>
+        )}
+      </div>
+
+      <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-1 leading-snug">
+        {journal.abbreviation ? `${journal.abbreviation} - ${journal.name}` : journal.name}
+      </h3>
+
+      <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">{journal.publisher}</p>
+
+      <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed mb-4 line-clamp-4">{journal.description}</p>
+
+      {journal.focus_areas.length > 0 && (
+        <div className="flex flex-wrap gap-1 mb-4">
+          {journal.focus_areas.slice(0, 4).map(area => (
+            <span key={area} className="text-xs px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
+              {area.replace(/-/g, ' ')}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <a
+        href={journal.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-xs font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+      >
+        Visit journal
+        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+  );
+}
+
 /* ── Page ───────────────────────────────────────────────────────── */
 
-const Research: NextPage<ResearchProps> = ({ papers, organizations, events, opportunities }) => {
+const Research: NextPage<ResearchProps> = ({ papers, organizations, events, opportunities, journals }) => {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<TabType>('papers');
   const [paperQuery, setPaperQuery] = useState('');
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [activeSourceType, setActiveSourceType] = useState<string | null>(null);
+  const [journalPriority, setJournalPriority] = useState<string | null>(null);
 
   useEffect(() => {
     const { tab } = router.query;
-    if (tab === 'papers' || tab === 'organizations' || tab === 'events' || tab === 'opportunities') {
+    if (tab === 'papers' || tab === 'organizations' || tab === 'events' || tab === 'opportunities' || tab === 'journals') {
       setActiveTab(tab);
     }
   }, [router.query]);
@@ -442,11 +512,17 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
     return result.sort((a, b) => b.year - a.year);
   }, [papers, paperQuery, activeTag, activeSourceType]);
 
+  const filteredJournals = useMemo(() => {
+    if (!journalPriority) return journals;
+    return journals.filter(j => j.priority === journalPriority);
+  }, [journals, journalPriority]);
+
   const tabs: { id: TabType; label: string; count: number }[] = [
     { id: 'papers',        label: 'Papers & Reports', count: papers.length },
     { id: 'organizations', label: 'Organizations',     count: organizations.length },
     { id: 'events',        label: 'Events',            count: events.length },
     { id: 'opportunities', label: 'Opportunities',     count: activeOpportunities.length },
+    { id: 'journals',      label: 'Journals',          count: journals.length },
   ];
 
   return (
@@ -625,6 +701,34 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
             </div>
           )}
 
+          {/* Journals */}
+          {activeTab === 'journals' && (
+            <div>
+              <div className="flex flex-wrap items-center gap-3 mb-6">
+                <p className="text-xs text-gray-400 dark:text-gray-500 mr-auto">
+                  {filteredJournals.length} {filteredJournals.length === 1 ? 'journal' : 'journals'}
+                  {journalPriority ? ` — ${journalPriority} relevance` : ''}
+                </p>
+                {(['all', 'high', 'medium', 'low'] as const).map(p => (
+                  <button
+                    key={p}
+                    onClick={() => setJournalPriority(p === 'all' ? null : p)}
+                    className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors ${
+                      (p === 'all' && !journalPriority) || journalPriority === p
+                        ? 'bg-primary text-white'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    }`}
+                  >
+                    {p === 'all' ? 'All' : p.charAt(0).toUpperCase() + p.slice(1) + ' relevance'}
+                  </button>
+                ))}
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {filteredJournals.map(journal => <JournalCard key={journal.id} journal={journal} />)}
+              </div>
+            </div>
+          )}
+
           <div className="mt-12 border-t border-gray-100 dark:border-gray-800 pt-6">
             <p className="text-xs text-gray-400 dark:text-gray-500 text-center max-w-xl mx-auto">
               This index is editorially curated. Papers require a verifiable DOI, conference proceedings, or official government publication. To suggest additions, use the{' '}
@@ -645,6 +749,7 @@ export const getStaticProps: GetStaticProps<ResearchProps> = async () => {
       organizations: orgsData as Organization[],
       events:        eventsData as ResearchEvent[],
       opportunities: opportunitiesData as Opportunity[],
+      journals:      journalsData as Journal[],
     },
     revalidate: 3600,
   };
