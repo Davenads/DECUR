@@ -41,7 +41,7 @@
     "description": "Established by Harvard astrophysicist Avi Loeb following his Oumuamua hypothesis. Operates a multi-sensor observatory in the Harvard Yard to detect and characterize anomalous aerial objects in real-time. Uses a telescope array, infrared cameras, radio receivers, and audio sensors. Takes a purely empirical observational approach distinct from report-analysis models.",
     "focus_areas": ["real-time sky observation", "technosignature detection", "anomalous object characterization", "instrumented data collection"],
     "key_member_ids": [],
-    "notable_paper_ids": ["loeb-2022-galileo-project"]
+    "notable_paper_ids": ["loeb-2022-galileo-project", "loeb-2023-im1-spherules"]
   },
   {
     "id": "bigelow-institute-for-consciousness-studies",

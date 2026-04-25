@@ -2,6 +2,14 @@
   {
     "date": "2026-04-25",
     "category": "figure",
+    "id": "loeb-2023-im1-spherules",
+    "name": "Loeb et al. 2023 — IM1 Spherules: Extrasolar Composition",
+    "action": "added",
+    "note": "Galileo Project ocean-floor expedition recovered ~700 spherules from the IM1 bolide site with anomalous BeLaU elemental signatures inconsistent with any known terrestrial or meteoric material."
+  },
+  {
+    "date": "2026-04-25",
+    "category": "figure",
     "id": "hameroff-penrose-2014-orch-or",
     "name": "Hameroff & Penrose 2014 — Consciousness in the Universe: Orch OR",
     "action": "added",

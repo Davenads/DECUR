@@ -1642,5 +1642,38 @@
     ],
     "summary": "Definitive review of Orchestrated Objective Reduction (Orch OR), the most-cited consciousness theory in physics venues. Hameroff and Penrose propose that consciousness arises from biologically orchestrated quantum processes in neuronal microtubules, terminating via the Diosi-Penrose objective reduction scheme and connecting brain biomolecular processes to the fundamental structure of spacetime. The 2014 update incorporates developments in quantum biology and introduces beat-frequency microtubule vibrations as a candidate source of EEG correlates of consciousness, while affirming that consciousness plays an intrinsic role in the universe.",
     "abstract": "The nature of consciousness, the mechanism by which it occurs in the brain, and its ultimate place in the universe are unknown. We proposed in the mid 1990's that consciousness depends on biologically 'orchestrated' coherent quantum processes in collections of microtubules within brain neurons, that these quantum processes correlate with, and regulate, neuronal synaptic and membrane activity, and that the continuous Schrodinger evolution of each such process terminates in accordance with the specific Diosi-Penrose (DP) scheme of 'objective reduction' ('OR') of the quantum state. This orchestrated OR activity ('Orch OR') is taken to result in moments of conscious awareness and/or choice. The DP form of OR is related to the fundamentals of quantum mechanics and space-time geometry, so Orch OR suggests that there is a connection between the brain's biomolecular processes and the basic structure of the universe. Here we review Orch OR in light of criticisms and developments in quantum biology, neuroscience, physics and cosmology. We also introduce a novel suggestion of 'beat frequencies' of faster microtubule vibrations as a possible source of the observed electro-encephalographic ('EEG') correlates of consciousness. We conclude that consciousness plays an intrinsic role in the universe."
+  },
+  {
+    "id": "loeb-2023-im1-spherules",
+    "title": "Discovery of Spherules of Likely Extrasolar Composition in the Pacific Ocean Site of the CNEOS 2014-01-08 (IM1) Bolide",
+    "authors": [
+      "Abraham Loeb",
+      "Amir Siraj",
+      "Dimitar Sasselov",
+      "et al."
+    ],
+    "author_ids": [],
+    "year": 2023,
+    "journal": null,
+    "arxiv": "2308.15623",
+    "doi": "10.48550/arXiv.2308.15623",
+    "url": "https://arxiv.org/abs/2308.15623",
+    "open_access": true,
+    "source_type": "preprint",
+    "tags": [
+      "interstellar",
+      "physical-evidence",
+      "galileo-project",
+      "spherules",
+      "materials-analysis",
+      "im1-bolide",
+      "extrasolar"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "galileo-project"
+    ],
+    "summary": "The Galileo Project's June 2023 ocean-floor expedition near Manus Island, Papua New Guinea recovered approximately 700 spherules along the IM1 bolide's expected impact corridor. Mass spectrometry of 47 spherules revealed anomalous beryllium, lanthanum, and uranium concentrations - the 'BeLaU' signature - exceeding standard chondrite abundances by orders of magnitude, with depleted refractory siderophiles and iron isotope fractionation consistent with atmospheric evaporation. The composition does not match any known terrestrial alloy or meteorite class, supporting an extrasolar origin for IM1's parent material. The most significant UAP-adjacent empirical physical-evidence study published in recent years.",
+    "abstract": "A magnetic survey conducted in June 2023 near Manus Island, Papua New Guinea recovered approximately 700 spherical particles along the expected impact corridor of the IM1 bolide. Mass spectrometry analysis of 47 spherules revealed an unusual elemental composition distinct from typical solar system materials. The particles displayed dramatically elevated concentrations of beryllium, lanthanum, and uranium - exceeding standard chondrite abundances by orders of magnitude. These 'BeLaU'-type spherules also demonstrated depleted refractory siderophile elements and volatile compounds consistent with atmospheric evaporation. Iron isotope measurements indicated fractionation patterns matching evaporative processes during atmospheric transit. The composition patterns do not correspond to known terrestrial alloys or conventional meteorites, suggesting an origin from an interstellar source or highly differentiated exoplanet, thus supporting independent evidence for IM1's extrasolarly derived material."
   }
 ]
