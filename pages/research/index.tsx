@@ -223,7 +223,12 @@ function PaperCard({ paper }: { paper: Paper }) {
   const typeColor = SOURCE_TYPE_COLORS[paper.source_type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300';
 
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-gray-300 dark:hover:border-gray-600 transition-colors bg-white dark:bg-gray-800/50">
+    <div className="relative border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-primary/40 dark:hover:border-primary/40 hover:shadow-sm transition-all bg-white dark:bg-gray-800/50 cursor-pointer">
+      <Link
+        href={paper.decur_url ?? `/research/papers/${paper.id}`}
+        className="absolute inset-0 rounded-xl"
+        aria-label={`View details for ${paper.title}`}
+      />
       <div className="flex flex-wrap items-start gap-2 mb-3">
         <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${typeColor}`}>{typeLabel}</span>
         {paper.open_access && (
@@ -251,22 +256,18 @@ function PaperCard({ paper }: { paper: Paper }) {
             </span>
           ))}
         </div>
-        <div className="flex items-center gap-3">
-          <Link href={paper.decur_url ?? `/research/papers/${paper.id}`} className="text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
-            Details
-          </Link>
-          <a
-            href={paper.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
-          >
-            {paper.doi ? 'View paper' : 'View source'}
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-        </div>
+        <a
+          href={paper.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative z-10 text-xs font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+          onClick={e => e.stopPropagation()}
+        >
+          {paper.doi ? 'View paper' : 'View source'}
+          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
       </div>
     </div>
   );
