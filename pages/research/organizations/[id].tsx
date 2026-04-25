@@ -41,6 +41,7 @@ interface ResearchEvent {
   type: string;
   status: string;
   date_start: string;
+  date_end: string;
   location: string;
   url: string;
   organizer_id: string | null;
@@ -95,7 +96,18 @@ const SOURCE_TYPE_LABELS: Record<string, string> = {
 const EVENT_STATUS_COLORS: Record<string, string> = {
   'upcoming': 'bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300',
   'past':     'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400',
+  'ongoing':  'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
 };
+
+function deriveEventStatus(event: ResearchEvent): string {
+  if (event.status === 'cancelled' || event.status === 'postponed') return event.status;
+  const now   = new Date();
+  const start = new Date(event.date_start + 'T00:00:00');
+  const end   = new Date(event.date_end   + 'T23:59:59');
+  if (end < now)   return 'past';
+  if (start > now) return 'upcoming';
+  return 'ongoing';
+}
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
@@ -104,8 +116,8 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
   const statusColor = ORG_STATUS_COLORS[org.status] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400';
   const statusLabel = org.status === 'reduced-activity' ? 'Reduced Activity' : org.status.charAt(0).toUpperCase() + org.status.slice(1);
 
-  const upcomingEvents = orgEvents.filter(e => e.status === 'upcoming');
-  const pastEvents = orgEvents.filter(e => e.status === 'past').sort((a, b) => b.date_start.localeCompare(a.date_start));
+  const upcomingEvents = orgEvents.filter(e => deriveEventStatus(e) === 'upcoming');
+  const pastEvents = orgEvents.filter(e => deriveEventStatus(e) === 'past').sort((a, b) => b.date_start.localeCompare(a.date_start));
 
   return (
     <>
@@ -211,8 +223,8 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
                         className="block border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-gray-300 dark:hover:border-gray-600 transition-colors"
                       >
                         <div className="flex items-center gap-2 mb-1">
-                          <span className={`text-xs font-medium px-1.5 py-0.5 rounded-full ${EVENT_STATUS_COLORS[event.status] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'}`}>
-                            {event.status.charAt(0).toUpperCase() + event.status.slice(1)}
+                          <span className={`text-xs font-medium px-1.5 py-0.5 rounded-full ${EVENT_STATUS_COLORS[deriveEventStatus(event)] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'}`}>
+                            {deriveEventStatus(event).charAt(0).toUpperCase() + deriveEventStatus(event).slice(1)}
                           </span>
                           <span className="text-xs text-gray-400 dark:text-gray-500">
                             {new Date(event.date_start + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}

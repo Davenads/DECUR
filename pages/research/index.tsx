@@ -142,6 +142,24 @@ const OPP_TYPE_LABELS: Record<string, string> = {
   'collaboration-request':   'Collaboration Request',
 };
 
+/* ── Event status derivation ────────────────────────────────────── */
+
+/**
+ * Derive the display status of an event from its dates rather than the JSON
+ * `status` field. The JSON field acts as a manual override only for edge cases
+ * like "cancelled" or "postponed" that cannot be inferred from dates alone.
+ * This prevents events from being stuck as "upcoming" after their date passes.
+ */
+function deriveEventStatus(event: ResearchEvent): string {
+  if (event.status === 'cancelled' || event.status === 'postponed') return event.status;
+  const now = new Date();
+  const start = new Date(event.date_start + 'T00:00:00');
+  const end   = new Date(event.date_end   + 'T23:59:59');
+  if (end < now)   return 'past';
+  if (start > now) return 'upcoming';
+  return 'ongoing';
+}
+
 /* ── ICS generator ──────────────────────────────────────────────── */
 
 function downloadICS(event: ResearchEvent): void {
@@ -278,7 +296,8 @@ function OrgCard({ org }: { org: Organization }) {
 }
 
 function EventCard({ event }: { event: ResearchEvent }) {
-  const statusColor = EVENT_STATUS_COLORS[event.status] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400';
+  const derivedStatus = deriveEventStatus(event);
+  const statusColor = EVENT_STATUS_COLORS[derivedStatus] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400';
   const typeLabel = EVENT_TYPE_LABELS[event.type] ?? event.type;
   const dateDisplay = event.date_start === event.date_end
     ? new Date(event.date_start + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
@@ -288,7 +307,7 @@ function EventCard({ event }: { event: ResearchEvent }) {
     <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-gray-300 dark:hover:border-gray-600 transition-colors bg-white dark:bg-gray-800/50">
       <div className="flex flex-wrap items-center gap-2 mb-3">
         <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${statusColor}`}>
-          {event.status.charAt(0).toUpperCase() + event.status.slice(1)}
+          {derivedStatus.charAt(0).toUpperCase() + derivedStatus.slice(1)}
         </span>
         <span className="text-xs text-gray-400 dark:text-gray-500">{typeLabel}</span>
         {event.format === 'virtual' && <span className="text-xs text-gray-400 dark:text-gray-500">Online</span>}
@@ -316,7 +335,7 @@ function EventCard({ event }: { event: ResearchEvent }) {
             </svg>
           </a>
         )}
-        {event.status === 'upcoming' && (
+        {derivedStatus === 'upcoming' && (
           <button
             onClick={() => downloadICS(event)}
             className="text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors flex items-center gap-1"
@@ -395,8 +414,8 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
     }
   }, [router.query]);
 
-  const upcomingEvents = events.filter(e => e.status === 'upcoming');
-  const pastEvents = events.filter(e => e.status === 'past').sort((a, b) => b.date_start.localeCompare(a.date_start));
+  const upcomingEvents = events.filter(e => deriveEventStatus(e) === 'upcoming');
+  const pastEvents = events.filter(e => deriveEventStatus(e) === 'past').sort((a, b) => b.date_start.localeCompare(a.date_start));
   const activeOpportunities = opportunities.filter(o => o.status === 'active');
   const expiredOpportunities = opportunities.filter(o => o.status === 'expired');
 
