@@ -89,6 +89,7 @@ const SOURCE_TYPE_LABELS: Record<string, string> = {
   'institute-report':       'Institute Report',
   'conference-proceedings': 'Conference Proceedings',
   'book':                   'Book',
+  'preprint':               'Preprint',
 };
 
 const SOURCE_TYPE_COLORS: Record<string, string> = {
@@ -97,6 +98,7 @@ const SOURCE_TYPE_COLORS: Record<string, string> = {
   'institute-report':       'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300',
   'conference-proceedings': 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300',
   'book':                   'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300',
+  'preprint':               'bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300',
 };
 
 const ORG_TYPE_LABELS: Record<string, string> = {
@@ -104,6 +106,9 @@ const ORG_TYPE_LABELS: Record<string, string> = {
   'government-body':    'Government Body',
   'advocacy':           'Advocacy',
   'archive':            'Archive',
+  'citizen-science':    'Citizen Science',
+  'media':              'Media & Archive',
+  'funding':            'Funding Body',
 };
 
 const ORG_STATUS_COLORS: Record<string, string> = {
