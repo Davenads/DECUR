@@ -12,7 +12,7 @@ import resourcesData from '../data/resources.json';
 
 interface SearchItem {
   id: string;
-  type: 'insider' | 'case' | 'document' | 'timeline' | 'glossary' | 'resource' | 'contractor' | 'program';
+  type: 'insider' | 'case' | 'document' | 'timeline' | 'glossary' | 'resource' | 'contractor' | 'program' | 'research-org' | 'research-paper';
   title: string;
   subtitle?: string | null;
   description: string;
@@ -39,28 +39,32 @@ const EMPTY_FILTERS: MetaFilters = { figureType: null, tier: null, docType: null
 // ---- Helpers ---------------------------------------------------------------
 
 const TYPE_STYLES: Record<SearchItem['type'], string> = {
-  insider:    'bg-blue-100 text-blue-700',
-  case:       'bg-red-100 text-red-700',
-  document:   'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300',
-  timeline:   'bg-amber-100 text-amber-700',
-  glossary:   'bg-indigo-100 text-indigo-700',
-  resource:   'bg-emerald-100 text-emerald-700',
-  contractor: 'bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300',
-  program:    'bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300',
+  insider:        'bg-blue-100 text-blue-700',
+  case:           'bg-red-100 text-red-700',
+  document:       'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300',
+  timeline:       'bg-amber-100 text-amber-700',
+  glossary:       'bg-indigo-100 text-indigo-700',
+  resource:       'bg-emerald-100 text-emerald-700',
+  contractor:     'bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300',
+  program:        'bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300',
+  'research-org': 'bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300',
+  'research-paper': 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300',
 };
 
 const TYPE_LABELS: Record<SearchItem['type'], string> = {
-  insider:    'Key Figures',
-  case:       'Documented Cases',
-  document:   'Declassified Documents',
-  timeline:   'Timeline Events',
-  glossary:   'Glossary',
-  resource:   'Resources',
-  contractor: 'Defense Contractors',
-  program:    'Government Programs',
+  insider:          'Key Figures',
+  case:             'Documented Cases',
+  document:         'Declassified Documents',
+  timeline:         'Timeline Events',
+  glossary:         'Glossary',
+  resource:         'Resources',
+  contractor:       'Defense Contractors',
+  program:          'Government Programs',
+  'research-org':   'Research Organizations',
+  'research-paper': 'Research Papers',
 };
 
-const TYPE_ORDER: SearchItem['type'][] = ['insider', 'case', 'document', 'program', 'contractor', 'timeline', 'glossary', 'resource'];
+const TYPE_ORDER: SearchItem['type'][] = ['insider', 'case', 'document', 'program', 'contractor', 'research-org', 'research-paper', 'timeline', 'glossary', 'resource'];
 
 // ---- Filter config ---------------------------------------------------------
 

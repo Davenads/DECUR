@@ -228,6 +228,44 @@ function buildResources() {
   }));
 }
 
+function buildResearchOrgs() {
+  const data = readJson('data/research/organizations.json');
+  return data.map(org => ({
+    id: `research-org-${org.id}`,
+    type: 'research-org',
+    title: org.name,
+    subtitle: [org.abbreviation, org.type, org.founded ? `Est. ${org.founded}` : null]
+      .filter(Boolean).join(' · ') || null,
+    description: org.description ?? org.focus_areas?.join(', ') ?? '',
+    full_text: truncate(org.description ?? '', MAX_FULL_TEXT),
+    href: org.decur_url ?? `/research/organizations/${org.id}`,
+    badge: 'Research Org',
+    aliases: org.abbreviation ? [org.abbreviation] : [],
+    meta: null,
+  }));
+}
+
+function buildResearchPapers() {
+  const data = readJson('data/research/papers.json');
+  return data.map(paper => {
+    const authorStr = Array.isArray(paper.authors) ? paper.authors.join(', ') : '';
+    const subtitle = [authorStr, paper.year ? String(paper.year) : null, paper.journal]
+      .filter(Boolean).join(' · ');
+    return {
+      id: `research-paper-${paper.id}`,
+      type: 'research-paper',
+      title: paper.title,
+      subtitle: subtitle || null,
+      description: paper.summary ?? paper.tags?.join(', ') ?? '',
+      full_text: truncate([paper.summary, paper.tags?.join(' ')].filter(Boolean).join(' '), MAX_FULL_TEXT),
+      href: paper.decur_url ?? `/research/papers/${paper.id}`,
+      badge: paper.source_type === 'peer-reviewed' ? 'Peer-Reviewed' : paper.source_type === 'preprint' ? 'Preprint' : 'Paper',
+      aliases: [],
+      meta: null,
+    };
+  });
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 
 async function upsertBatch(items, batchSize = 200) {
@@ -251,14 +289,16 @@ async function main() {
   console.log('Populating search_index...\n');
 
   const builders = [
-    ['Insiders',    buildInsiders],
-    ['Cases',       buildCases],
-    ['Documents',   buildDocuments],
-    ['Timeline',    buildTimeline],
-    ['Glossary',    buildGlossary],
-    ['Contractors', buildContractors],
-    ['Programs',    buildPrograms],
-    ['Resources',   buildResources],
+    ['Insiders',        buildInsiders],
+    ['Cases',           buildCases],
+    ['Documents',       buildDocuments],
+    ['Timeline',        buildTimeline],
+    ['Glossary',        buildGlossary],
+    ['Contractors',     buildContractors],
+    ['Programs',        buildPrograms],
+    ['Resources',       buildResources],
+    ['Research Orgs',   buildResearchOrgs],
+    ['Research Papers', buildResearchPapers],
   ];
 
   let total = 0;

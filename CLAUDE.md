@@ -582,6 +582,52 @@ Find the `{/* Documented Cases */}` section and add `<SourceCard>` entries for t
 
 ---
 
+## Adding a New Research Organization
+
+Research organizations live in `data/research/organizations.json`. After adding an org, complete **all** of the following steps or it will be invisible in search and disconnected from the network graph.
+
+### 1. Add the org entry to `data/research/organizations.json`
+Required fields:
+- `id` - kebab-case slug (e.g. `"society-for-scientific-exploration"`)
+- `name` - full human-readable name
+- `abbreviation` - common abbreviation or `null`
+- `type` - one of: `research-institute`, `advocacy`, `archive`, `citizen-science`, `media`, `funding`, `government-body`
+- `status` - `"active"` or `"inactive"`
+- `founded` - four-digit year string (e.g. `"1982"`) or `null`
+- `location` - city/country or distributed note
+- `website` - canonical URL
+- `description` - 2-4 sentence description. Include what the org does, why it is relevant to DECUR's scope, and any notable figure connections.
+- `focus_areas` - array of keyword strings
+- `key_member_ids` - array of DECUR key figure IDs (must match `data/key-figures/index.json` slugs exactly); use `[]` if none
+- `notable_paper_ids` - array of paper IDs from `data/research/papers.json`; use `[]` initially
+- `decur_url` - optional; set only if the org has a dedicated DECUR program page (e.g. MUFON → `/programs/mufon`); otherwise omit
+
+### 2. Add network graph node and edges (required)
+Add the org as a node in `data/network-graph.ts` (in the Organizations section) and add at least 2-3 edges to existing nodes.
+
+```ts
+{ id: 'your-org-id', name: 'Display Name', type: 'organization', group: 'shared', val: 2 },
+```
+
+Then add edges:
+```ts
+{ source: 'your-org-id', target: 'hal-puthoff', label: 'SSE fellow' },
+```
+
+### 3. Sync the Supabase search index (required - do not skip)
+```bash
+node --env-file=.env.local scripts/populate-search-index.mjs
+```
+**Symptom if skipped:** The org's detail page loads correctly, but searching by name on `/search` returns no results.
+
+### 4. Add events and opportunities (if applicable)
+If the org runs a recurring annual conference or offers grants/fellowships, add entries to `data/research/events.json` and `data/research/opportunities.json`.
+
+### That's all for orgs
+No component file is needed. The `/research/organizations/[id]` page is generic and renders from the JSON automatically.
+
+---
+
 ## CRITICAL: Sync the Supabase Search Index After Any Content Addition
 
 **The global search (`/search`) queries a Supabase `search_index` table. It does NOT read JSON files directly.** Editing any of the data files below does NOT make new content searchable. You MUST run the sync script after adding or updating entries in any of these files:
@@ -594,6 +640,8 @@ Find the `{/* Documented Cases */}` section and add `<SourceCard>` entries for t
 | `data/programs.json` (or equivalent) | Government programs | Yes |
 | `data/glossary.json` | Glossary terms | Yes (lower priority) |
 | `data/timeline.json` | Timeline events | Yes (usually bulk-imported) |
+| `data/research/organizations.json` | Research organizations | Yes |
+| `data/research/papers.json` | Research papers | Yes |
 
 **The sync command (idempotent - safe to run at any time):**
 ```bash
