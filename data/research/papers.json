@@ -1543,5 +1543,42 @@
     ],
     "summary": "Kastrup's core peer-reviewed statement of analytic idealism — arguing that spatially unbound consciousness is nature's sole ontological primitive and that all observable reality is its extrinsic manifestation. Humans and other organisms are dissociated alterations of this universal consciousness. The framework avoids both the hard problem of consciousness (which afflicts physicalism) and the subject combination problem (which afflicts panpsychism). Kastrup is the most prominent contemporary philosopher of idealism and is cross-referenced in multiple existing DECUR catalog papers.",
     "abstract": "I argue for an idealist ontology consistent with empirical observations, which seeks to explain the facts of nature more parsimoniously than physicalism and bottom-up panpsychism. This ontology also attempts to offer more explanatory power than both physicalism and panpsychism, in that it does not fall prey to either the 'hard problem of consciousness' or the 'subject combination problem,' respectively. It can be summarized as follows: spatially unbound consciousness is posited as nature's sole ontological primitive. We, as well as all other living organisms, are dissociated alters of this unbound consciousness. The universe we see around us is the extrinsic appearance of phenomenality surrounding — but dissociated from — our alter. Other organisms we share the world with are appearances of other alters. As such, the challenge to artificially create individualized consciousness becomes synonymous with the challenge to induce abiogenesis."
+  },
+  {
+    "id": "xu-2023-gamma-dying-brain",
+    "title": "Surge of neurophysiological coupling and connectivity of gamma oscillations in the dying human brain",
+    "authors": [
+      "Gang Xu",
+      "Temenuzhka Mihaylova",
+      "Duan Li",
+      "Fangyun Tian",
+      "Peter Tran Nguyen",
+      "Rosemary Berens Netzband",
+      "Mohamad Ziyad Al-Fahhad",
+      "Tayyab Tariq",
+      "Jimo Borjigin"
+    ],
+    "author_ids": [],
+    "year": 2023,
+    "journal": "Proceedings of the National Academy of Sciences",
+    "volume": "120",
+    "issue": "19",
+    "doi": "10.1073/pnas.2216268120",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2216268120",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "nde",
+      "gamma-oscillations",
+      "dying-brain",
+      "neuroscience",
+      "consciousness",
+      "cardiac-arrest",
+      "eeg"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "EEG analysis of four comatose dying patients following withdrawal of ventilatory support found that two exhibited a marked surge in gamma oscillation power and interhemispheric connectivity at the moment of cardiac death. The surge was concentrated in the posterior cortical 'hot zone' - the region most associated with conscious processing - and in temporo-parieto-occipital junctions. The findings parallel animal studies of cardiac arrest and suggest the dying brain may generate conditions associated with heightened consciousness, offering a neural correlate candidate for near-death experiences.",
+    "abstract": "The brain is assumed to be hypoactive during cardiac arrest. However, animal models of cardiac and respiratory arrest demonstrate a surge of gamma oscillations and functional connectivity. To investigate whether these preclinical findings translate to humans, we analyzed electroencephalogram and electrocardiogram signals in four comatose dying patients before and after the withdrawal of ventilatory support. Two of the four patients exhibited a rapid and marked surge in gamma power, cross-frequency coupling of gamma waves with slower oscillations, and increased interhemispheric functional directed connectivity in gamma bands. High-frequency oscillations paralleled the activation of beta/gamma cross-frequency coupling within the somatosensory cortices. Importantly, both patients displayed surges of directed connectivity at multiple frequency bands within the posterior cortical 'hot zone,' a region postulated to be critical for conscious processing. This gamma activity was stimulated by global hypoxia and surged further as cardiac conditions deteriorated in dying patients. These data demonstrate that the surge in power and connectivity of gamma oscillations observed can select and process information in dying patients."
   }
 ]

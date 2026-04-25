@@ -2,6 +2,14 @@
   {
     "date": "2026-04-25",
     "category": "figure",
+    "id": "xu-2023-gamma-dying-brain",
+    "name": "Xu et al. 2023 — Gamma Surge in the Dying Human Brain",
+    "action": "added",
+    "note": "PNAS study documenting a surge of gamma oscillations in the posterior cortical 'hot zone' of dying patients at cardiac death — a neural correlate candidate for near-death experiences."
+  },
+  {
+    "date": "2026-04-25",
+    "category": "figure",
     "id": "kastrup-2017-analytic-idealism",
     "name": "Kastrup 2017 — An Ontological Solution to the Mind-Body Problem",
     "action": "added",
