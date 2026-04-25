@@ -1580,5 +1580,34 @@
     "organization_ids": [],
     "summary": "EEG analysis of four comatose dying patients following withdrawal of ventilatory support found that two exhibited a marked surge in gamma oscillation power and interhemispheric connectivity at the moment of cardiac death. The surge was concentrated in the posterior cortical 'hot zone' - the region most associated with conscious processing - and in temporo-parieto-occipital junctions. The findings parallel animal studies of cardiac arrest and suggest the dying brain may generate conditions associated with heightened consciousness, offering a neural correlate candidate for near-death experiences.",
     "abstract": "The brain is assumed to be hypoactive during cardiac arrest. However, animal models of cardiac and respiratory arrest demonstrate a surge of gamma oscillations and functional connectivity. To investigate whether these preclinical findings translate to humans, we analyzed electroencephalogram and electrocardiogram signals in four comatose dying patients before and after the withdrawal of ventilatory support. Two of the four patients exhibited a rapid and marked surge in gamma power, cross-frequency coupling of gamma waves with slower oscillations, and increased interhemispheric functional directed connectivity in gamma bands. High-frequency oscillations paralleled the activation of beta/gamma cross-frequency coupling within the somatosensory cortices. Importantly, both patients displayed surges of directed connectivity at multiple frequency bands within the posterior cortical 'hot zone,' a region postulated to be critical for conscious processing. This gamma activity was stimulated by global hypoxia and surged further as cardiac conditions deteriorated in dying patients. These data demonstrate that the surge in power and connectivity of gamma oscillations observed can select and process information in dying patients."
+  },
+  {
+    "id": "mashour-2024-consciousness-dying",
+    "title": "Consciousness and the Dying Brain",
+    "authors": [
+      "George A. Mashour"
+    ],
+    "author_ids": [],
+    "year": 2024,
+    "journal": "Anesthesiology",
+    "volume": "140",
+    "pages": "1221-1231",
+    "doi": "10.1097/ALN.0000000000004970",
+    "url": "https://pubs.asahq.org/anesthesiology/article/doi/10.1097/ALN.0000000000004970/139399",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "nde",
+      "gamma-oscillations",
+      "dying-brain",
+      "neuroscience",
+      "consciousness",
+      "final-lucidity",
+      "cardiac-arrest"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Comprehensive review of near-death experience epidemiology and the neurophysiological mechanisms of consciousness in the dying brain. Mashour, Chair of Anesthesiology at the University of Michigan, synthesizes clinical NDE incidence data (10-20% after in-hospital cardiac arrest) with laboratory evidence for gamma oscillation surges following cardiac and respiratory arrest. Contextualizes the Xu et al. 2023 PNAS findings within the broader NDE and dying-brain literature, representing the leading institutional voice on this topic.",
+    "abstract": "The near-death experience has been reported since antiquity and is often characterized by the perception of light, interactions with other entities, and life recall. Near-death experiences can occur in a variety of situations, but they have been studied systematically after in-hospital cardiac arrest, with an incidence of 10 to 20%. Long attributed to metaphysical or supernatural causes, there have been recent advances in understanding the neurophysiologic basis of this unique category of conscious experience. This article reviews the epidemiology and neurobiology of near-death experiences, with a focus on clinical and laboratory evidence for a surge of neurophysiologic gamma oscillations and cortical connectivity after cardiac and respiratory arrest. The near-death experience has been reported since antiquity, with an incidence of more than 10% after in-hospital cardiac arrest. The authors review the evidence for neurophysiologic mechanisms of consciousness in the dying brain."
   }
 ]

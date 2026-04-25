@@ -2,6 +2,14 @@
   {
     "date": "2026-04-25",
     "category": "figure",
+    "id": "mashour-2024-consciousness-dying",
+    "name": "Mashour 2024 — Consciousness and the Dying Brain",
+    "action": "added",
+    "note": "Comprehensive review by University of Michigan's Chair of Anesthesiology synthesizing NDE epidemiology and the neurophysiology of gamma oscillation surges at cardiac death."
+  },
+  {
+    "date": "2026-04-25",
+    "category": "figure",
     "id": "xu-2023-gamma-dying-brain",
     "name": "Xu et al. 2023 — Gamma Surge in the Dying Human Brain",
     "action": "added",
