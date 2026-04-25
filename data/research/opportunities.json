@@ -70,5 +70,65 @@
     "description": "2024 cycle of the Bigelow Institute annual essay competition. Topic: best evidence for survival of human consciousness after permanent bodily death.",
     "eligibility": "Open to all researchers worldwide.",
     "status": "expired"
+  },
+  {
+    "id": "pa-research-grants-2026",
+    "type": "grant",
+    "title": "Parapsychological Association Research Grants",
+    "organization": "Parapsychological Association",
+    "deadline": null,
+    "amount": "Varies by cycle (typically $1,000-$5,000)",
+    "url": "https://parapsychological.org/grants",
+    "description": "The Parapsychological Association awards research grants to support empirical investigation of psi phenomena including ESP, psychokinesis, anomalous cognition, and related topics. Grants are intended to support early-career researchers and seed projects that can lead to peer-reviewed publication. Preference given to methodologically rigorous designs with pre-registration.",
+    "eligibility": "Open to researchers at any career stage. No institutional affiliation required, though affiliation strengthens applications.",
+    "status": "active"
+  },
+  {
+    "id": "sse-cfp-ongoing",
+    "type": "call-for-papers",
+    "title": "Journal of Scientific Exploration - Ongoing Submissions",
+    "organization": "Society for Scientific Exploration",
+    "deadline": null,
+    "amount": null,
+    "url": "https://journalofscientificexploration.org/index.php/jse/about/submissions",
+    "description": "The Journal of Scientific Exploration accepts ongoing manuscript submissions on anomalous phenomena including UAP, parapsychology, consciousness research, and anomalistics. One of the few peer-reviewed journals with an explicit mandate to consider empirically rigorous UAP research. Submissions are evaluated through double-blind peer review by domain experts.",
+    "eligibility": "Open to researchers worldwide. Manuscripts must meet peer-review standards and include reproducible methodology.",
+    "status": "active"
+  },
+  {
+    "id": "free-experiencer-survey",
+    "type": "participant-recruitment",
+    "title": "FREE Experiencer Survey - Ongoing Participation",
+    "organization": "Foundation for Research into Extraterrestrial and Extraordinary Experiences",
+    "deadline": null,
+    "amount": null,
+    "url": "https://ccri2019.wixsite.com/free/survey",
+    "description": "FREE's ongoing survey research collecting data from individuals who have had UAP contact, anomalous, or extraordinary experiences. The survey covers a comprehensive range of experiencer phenomena and has accumulated over 4,000 respondents since 2012. Data contributes to the largest academic dataset on contact phenomenology. Anonymous participation.",
+    "eligibility": "Open to any individual who has had a UAP contact or extraordinary experience. Anonymous; no personal identification required.",
+    "status": "active"
+  },
+  {
+    "id": "irva-rv-research-participation",
+    "type": "participant-recruitment",
+    "title": "IRVA Remote Viewing Research Studies",
+    "organization": "International Remote Viewing Association",
+    "deadline": null,
+    "amount": null,
+    "url": "https://www.irva.org/research",
+    "description": "IRVA-affiliated researchers periodically recruit participants for controlled remote viewing experiments. Studies test anomalous information transfer under double-blind conditions following the protocols developed at SRI International. Participants with and without prior remote viewing training are sought.",
+    "eligibility": "Open to adults worldwide. No prior remote viewing training required; both naive and trained participants are valuable for controlled studies.",
+    "status": "active"
+  },
+  {
+    "id": "limina-cfp-ongoing",
+    "type": "call-for-papers",
+    "title": "Limina: Journal of UAP Studies - Ongoing Submissions",
+    "organization": "Society for UAP Studies",
+    "deadline": null,
+    "amount": null,
+    "url": "https://limina.scholasticahq.com/for-authors",
+    "description": "Limina: The Journal of UAP Studies accepts ongoing manuscript submissions on UAP phenomena across all disciplines - physics, social science, philosophy, history, policy, and psychology. The only peer-reviewed academic journal exclusively dedicated to UAP research. Published through Taylor & Francis with open-access options.",
+    "eligibility": "Open to researchers worldwide across all disciplines. Manuscripts must meet peer-review standards. Interdisciplinary submissions particularly encouraged.",
+    "status": "active"
   }
 ]

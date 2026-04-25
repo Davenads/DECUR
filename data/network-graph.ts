@@ -112,6 +112,29 @@ export const graphData: GraphData = {
     { id: 'sdi',                 name: 'SDI',                          type: 'project',      group: 'shared', val: 3 },
     { id: 'seti',                name: 'SETI',                         type: 'organization', group: 'shared', val: 3 },
 
+    // Research hub orgs (from organizations.json)
+    { id: 'scientific-coalition-for-uap-studies', name: 'SCU',                             type: 'organization', group: 'shared', val: 3 },
+    { id: 'division-of-perceptual-studies',       name: 'DOPS (UVA)',                      type: 'organization', group: 'shared', val: 2 },
+    { id: 'parnia-labs-nyu',                      name: 'Parnia Lab (NYU)',                type: 'organization', group: 'shared', val: 2 },
+    { id: 'monroe-institute',                     name: 'Monroe Institute',                type: 'organization', group: 'shared', val: 2 },
+    { id: 'geipan',                               name: 'GEIPAN',                          type: 'organization', group: 'shared', val: 2 },
+    // Phase 1 new orgs
+    { id: 'americans-for-safe-aerospace',         name: 'Americans for Safe Aerospace',    type: 'organization', group: 'shared', val: 3 },
+    { id: 'society-for-scientific-exploration',   name: 'SSE',                             type: 'organization', group: 'shared', val: 3 },
+    { id: 'parapsychological-association',        name: 'Parapsychological Association',   type: 'organization', group: 'shared', val: 3 },
+    { id: 'society-for-psychical-research',       name: 'Society for Psychical Research',  type: 'organization', group: 'shared', val: 3 },
+    { id: 'rhine-research-center',                name: 'Rhine Research Center',           type: 'organization', group: 'shared', val: 2 },
+    { id: 'iands',                                name: 'IANDS',                           type: 'organization', group: 'shared', val: 2 },
+    { id: 'irva',                                 name: 'IRVA',                            type: 'organization', group: 'shared', val: 3 },
+    { id: 'project-hessdalen',                    name: 'Project Hessdalen',               type: 'organization', group: 'shared', val: 2 },
+    { id: 'free-foundation',                      name: 'FREE Foundation',                 type: 'organization', group: 'shared', val: 2 },
+    { id: 'declassify-uap',                       name: 'Declassify UAP',                  type: 'organization', group: 'shared', val: 2 },
+    { id: 'bufora',                               name: 'BUFORA',                          type: 'organization', group: 'shared', val: 2 },
+    { id: 'archives-for-the-unexplained',         name: 'AFU',                             type: 'organization', group: 'shared', val: 2 },
+    { id: 'enigma-labs',                          name: 'Enigma Labs',                     type: 'organization', group: 'shared', val: 2 },
+    { id: 'euroufo',                              name: 'EuroUFO',                         type: 'organization', group: 'shared', val: 2 },
+    { id: 'scientific-and-medical-network',       name: 'Scientific and Medical Network',  type: 'organization', group: 'shared', val: 2 },
+
     // Concepts
     { id: 'five-observables',    name: '5 Observables',        type: 'concept',      group: 'elizondo', val: 3 },
     { id: 'looking-glass',       name: 'Looking Glass',        type: 'concept',      group: 'burisch',  val: 3 },
@@ -1421,5 +1444,69 @@ export const graphData: GraphData = {
     // Society for UAP Studies connections
     { source: 'society-for-uap-studies',    target: 'scientific-coalition-for-uap-studies',       label: 'SCU focuses on technical case analysis; SUAPS on academic discipline-building and peer-review infrastructure' },
     { source: 'society-for-uap-studies',    target: 'sol-foundation',                             label: 'parallel academic UAP research initiatives; complementary Stanford-affiliated and independent tracks' },
+
+    // Phase 1 research hub org connections (Kali sources)
+    // SSE connections
+    { source: 'society-for-scientific-exploration', target: 'hal-puthoff',                      label: 'SSE fellow; long-term contributor to anomalistics research' },
+    { source: 'society-for-scientific-exploration', target: 'jacques-vallee',                   label: 'SSE fellow; contributed to anomalistics and UAP methodology' },
+    { source: 'society-for-scientific-exploration', target: 'project-hessdalen',                label: 'affiliated field research project' },
+    { source: 'society-for-scientific-exploration', target: 'parapsychological-association',    label: 'peer institutions; overlapping conference and journal networks' },
+
+    // Parapsychological Association connections
+    { source: 'parapsychological-association',      target: 'division-of-perceptual-studies',   label: 'affiliated research unit; complementary empirical psi programs' },
+    { source: 'parapsychological-association',      target: 'rhine-research-center',            label: 'institutional peer; Rhine is the oldest US psi research center' },
+    { source: 'parapsychological-association',      target: 'society-for-psychical-research',   label: 'institutional peer; SPR is the oldest global psychical research organization' },
+    { source: 'parapsychological-association',      target: 'hal-puthoff',                      label: 'PA research lineage overlap with SRI remote viewing program' },
+
+    // SPR connections
+    { source: 'society-for-psychical-research',    target: 'rhine-research-center',            label: 'institutional peers; parallel UK and US psi research traditions' },
+    { source: 'society-for-psychical-research',    target: 'division-of-perceptual-studies',   label: 'complementary methodologies; SPR historical cases, DOPS clinical research' },
+
+    // Rhine Research Center connections
+    { source: 'rhine-research-center',             target: 'division-of-perceptual-studies',   label: 'parallel US parapsychology institutions; Rhine founded 1935, DOPS 1967' },
+
+    // IANDS connections
+    { source: 'iands',                             target: 'parnia-labs-nyu',                  label: 'affiliated clinical NDE research program' },
+    { source: 'iands',                             target: 'division-of-perceptual-studies',   label: 'parallel NDE and consciousness survival research' },
+    { source: 'iands',                             target: 'free-foundation',                  label: 'shared experiencer research focus; NDE and UAP contact phenomenology' },
+    { source: 'iands',                             target: 'monroe-institute',                 label: 'consciousness research overlap; NDE and OBE phenomena' },
+
+    // IRVA connections
+    { source: 'irva',                              target: 'monroe-institute',                 label: 'shared remote viewing research lineage; Monroe methods in RV training' },
+    { source: 'irva',                              target: 'hal-puthoff',                      label: 'SRI remote viewing program; Puthoff was program director at SRI' },
+    { source: 'irva',                              target: 'ingo-swann',                       label: 'Swann co-developed the CRV protocol IRVA maintains and advances' },
+
+    // Project Hessdalen connections
+    { source: 'project-hessdalen',                 target: 'geipan',                           label: 'shared instrumented field research methodology; European collaboration' },
+    { source: 'project-hessdalen',                 target: 'scientific-coalition-for-uap-studies', label: 'parallel instrumentally-grounded UAP field research programs' },
+
+    // FREE connections
+    { source: 'free-foundation',                   target: 'monroe-institute',                 label: 'shared consciousness and anomalous experience research' },
+    { source: 'free-foundation',                   target: 'edgar-mitchell',                   label: 'co-founded by Mitchell; NASA Apollo 14 astronaut turned consciousness researcher' },
+
+    // Americans for Safe Aerospace connections
+    { source: 'americans-for-safe-aerospace',      target: 'scientific-coalition-for-uap-studies', label: 'partner organizations; pilot testimony and technical analysis' },
+    { source: 'americans-for-safe-aerospace',      target: 'narcap',                           label: 'parallel aviation-focused UAP reporting organizations' },
+
+    // BUFORA connections
+    { source: 'bufora',                            target: 'nick-pope',                        label: 'adjacent figure; Pope ran UK MoD UFO desk in parallel with BUFORA investigations' },
+    { source: 'bufora',                            target: 'euroufo',                          label: 'member organization of EuroUFO pan-European coordination network' },
+    { source: 'bufora',                            target: 'geipan',                           label: 'European UAP research partnership' },
+
+    // AFU connections
+    { source: 'archives-for-the-unexplained',      target: 'bufora',                           label: 'archival partner; AFU digitizes BUFORA historical records' },
+    { source: 'archives-for-the-unexplained',      target: 'black-vault',                      label: 'parallel archival functions; AFU covers European records, Black Vault covers US FOIA' },
+
+    // Enigma Labs connections
+    { source: 'enigma-labs',                       target: 'mufon',                            label: 'parallel civilian sighting databases; Enigma uses AI/ML, MUFON uses field investigators' },
+    { source: 'enigma-labs',                       target: 'scientific-coalition-for-uap-studies', label: 'data collection feeds technical analysis; complementary functions' },
+
+    // EuroUFO connections
+    { source: 'euroufo',                           target: 'geipan',                           label: 'pan-European coordination; GEIPAN is the official French government member' },
+    { source: 'euroufo',                           target: 'bufora',                           label: 'pan-European coordination; BUFORA is the UK member organization' },
+
+    // SMN connections
+    { source: 'scientific-and-medical-network',    target: 'society-for-scientific-exploration', label: 'allied institutions; overlapping post-materialist and anomalistics research communities' },
+    { source: 'scientific-and-medical-network',    target: 'essentia-foundation',              label: 'related post-materialist science initiatives; SMN hosted Galileo Commission' },
   ],
 };
