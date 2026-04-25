@@ -214,7 +214,7 @@ const InsiderLinksTab: FC<{ c: CaseEntry }> = ({ c }) => {
         return (
           <Link
             key={conn.id}
-            href={`/figures/${conn.id}?ref=case`}
+            href={`/figures/${conn.id}?backHref=${encodeURIComponent(`/cases/${c.id}`)}&backLabel=${encodeURIComponent(c.name)}`}
             className="flex gap-3 border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary hover:shadow-sm transition-all group"
           >
             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">

@@ -147,7 +147,7 @@ const ConnectionsTab: FC<{ p: ProgramEntry }> = ({ p }) => (
           {p.connected_figures.map((figId, i) => (
             <Link
               key={i}
-              href={`/figures/${figId}?ref=program`}
+              href={`/figures/${figId}?backHref=${encodeURIComponent(`/programs/${p.id}`)}&backLabel=${encodeURIComponent(p.name)}`}
               className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors"
             >
               {figId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}

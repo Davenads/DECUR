@@ -167,7 +167,7 @@ const InsiderLinksTab: FC<{ d: DocumentEntry }> = ({ d }) => {
               <span className="text-xs font-bold text-primary">{name.charAt(0)}</span>
             </div>
             <div>
-              <Link href={`/figures/${conn.id}?ref=document`} className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-primary transition-colors">{name}</Link>
+              <Link href={`/figures/${conn.id}?backHref=${encodeURIComponent(`/documents/${d.id}`)}&backLabel=${encodeURIComponent(d.name)}`} className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-primary transition-colors">{name}</Link>
               {conn.role && <p className="text-xs text-primary leading-snug">{conn.role}</p>}
               {conn.note && <p className="text-xs text-gray-400 mt-1 leading-snug">{conn.note}</p>}
             </div>

@@ -124,8 +124,14 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
   const [exploreBack, setExploreBack] = useState<{ label: string; href: string } | null>(null);
 
   useEffect(() => {
-    const ref = new URLSearchParams(window.location.search).get('ref');
-    setExploreBack(resolveExploreRef(ref));
+    const params = new URLSearchParams(window.location.search);
+    const backHref  = params.get('backHref');
+    const backLabel = params.get('backLabel');
+    if (backHref && backLabel) {
+      setExploreBack({ label: backLabel, href: backHref });
+    } else {
+      setExploreBack(resolveExploreRef(params.get('ref')));
+    }
   }, []);
 
   const onBack = () => router.push(exploreBack ? exploreBack.href : '/data?category=key-figures');
