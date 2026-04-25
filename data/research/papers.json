@@ -1448,5 +1448,38 @@
     ],
     "summary": "The most-discussed experimental parapsychology paper of the past 20 years. Cornell social psychologist Daryl Bem ran 9 experiments with over 1,000 participants testing for anomalous retroactive influences on cognition and affect — effectively time-reversing standard psychological paradigms so that responses preceded the stimuli. Mean effect size d=0.22 across all experiments. Published in the Journal of Personality and Social Psychology, one of the highest-impact psychology journals, it catalyzed the replication crisis debate and forced mainstream psychology to examine its own methodological standards.",
     "abstract": "The term psi denotes anomalous processes of information or energy transfer that are currently unexplained in terms of known physical or biological mechanisms. Two variants of psi are precognition (conscious cognitive awareness) and premonition (affective apprehension) of a future event that could not otherwise be anticipated through any known inferential process. Precognition and premonition are themselves special cases of a more general phenomenon: the anomalous retroactive influence of some future event on an individual's current responses, whether those responses are conscious or nonconscious, cognitive or affective. This article reports 9 experiments, involving more than 1,000 participants, that test for retroactive influence by time-reversing well-established psychological effects so that the individual's responses are obtained before the putatively causal stimulus events occur. Data are presented for 4 time-reversed effects: precognitive approach to erotic stimuli and precognitive avoidance of negative stimuli; retroactive priming; retroactive habituation; and retroactive facilitation of recall. The mean effect size (d) in psi performance across all 9 experiments was 0.22, and all but one of the experiments yielded statistically significant results. The individual-difference variable of stimulus seeking, a component of extraversion, was significantly correlated with psi performance in 5 of the experiments, with participants who scored above the midpoint on a scale of stimulus seeking achieving a mean effect size of 0.43. Skepticism about psi, issues of replication, and theories of psi are also discussed."
+  },
+  {
+    "id": "targ-puthoff-1974-remote-viewing",
+    "title": "Information Transmission Under Conditions of Sensory Shielding",
+    "authors": [
+      "Russell Targ",
+      "Harold E. Puthoff"
+    ],
+    "author_ids": [
+      "hal-puthoff"
+    ],
+    "year": 1974,
+    "journal": "Nature",
+    "volume": "251",
+    "issue": "5476",
+    "doi": "10.1038/251602a0",
+    "url": "https://www.nature.com/articles/251602a0",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "remote-viewing",
+      "parapsychology",
+      "SRI",
+      "experimental",
+      "psi",
+      "sensory-shielding"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "irva"
+    ],
+    "summary": "The foundational peer-reviewed remote viewing paper from Stanford Research Institute (SRI), published in Nature. Targ and Puthoff describe experiments testing whether subjects — including Ingo Swann and Pat Price — could accurately describe geographically remote locations while physically isolated in a shielded environment. Results showed statistically significant accuracy above chance under double-blind judging. Publication in Nature, the highest-prestige science journal, gave the SRI remote viewing program its main claim to mainstream scientific legitimacy and directly preceded the CIA's expansion of the program.",
+    "abstract": "Published in Nature as a short article (Letters format; no formal separate abstract). Describes experiments at Stanford Research Institute testing the ability of subjects to transmit information about remote locations under conditions of sensory shielding. Subjects including Ingo Swann and Pat Price were isolated in electromagnetically shielded rooms while an experimenter traveled to randomly selected target locations. Subjects' verbal and sketch descriptions of the target locations were evaluated under double-blind conditions by independent judges. Results showed statistically significant correspondence between target locations and subject descriptions, above what could be attributed to chance or sensory leakage. The authors conclude that the experimental results constitute prima facie evidence for a perceptual channel capable of acquiring information at a distance. The paper prompted significant scientific debate and led directly to expanded CIA and DIA funding of the SRI remote viewing program."
   }
 ]

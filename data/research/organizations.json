@@ -395,7 +395,7 @@
     "description": "The professional organization for remote viewing research, training, and application, founded to preserve and advance the methodology developed at SRI International under CIA funding in the 1970s-90s. The SRI remote viewing program, run in part by Hal Puthoff and involving figures including Ingo Swann and Pat Price, is one of the most extensively documented government-funded psi research programs in history. IRVA publishes Aperture magazine, hosts an annual conference, and maintains standards for controlled remote viewing methodology. The connection between remote viewing research and UAP investigation - involving anomalous perception, consciousness, and intelligence community interest - is a significant thread in DECUR's coverage.",
     "focus_areas": ["remote viewing", "controlled methodology", "SRI program lineage", "psi research"],
     "key_member_ids": ["hal-puthoff"],
-    "notable_paper_ids": []
+    "notable_paper_ids": ["targ-puthoff-1974-remote-viewing", "puthoff-1996-pia"]
   },
   {
     "id": "project-hessdalen",
