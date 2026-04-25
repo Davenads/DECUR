@@ -1325,5 +1325,38 @@
     "organization_ids": [],
     "summary": "Philosophical examination of belief formation around UAP phenomena, with the title deliberately referencing the X-Files iconography to engage with the cultural dimensions of UAP belief. Explores what it means to believe in UAP, what the structure of that belief looks like epistemically, and how cultural priming shapes testimony reception. Combines analytic epistemology with phenomenological attention to the desire to believe.",
     "abstract": null
+  },
+  {
+    "id": "van-lommel-2001-nde-lancet",
+    "title": "Near-death experience in survivors of cardiac arrest: a prospective study in the Netherlands",
+    "authors": [
+      "Pim van Lommel",
+      "Ruud van Wees",
+      "Vincent Meyers",
+      "Ingrid Elfferich"
+    ],
+    "author_ids": [],
+    "year": 2001,
+    "journal": "The Lancet",
+    "volume": "358",
+    "issue": "9298",
+    "doi": "10.1016/S0140-6736(01)07100-8",
+    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(01)07100-8/fulltext",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "nde",
+      "cardiac-arrest",
+      "prospective-study",
+      "clinical-research",
+      "consciousness",
+      "survival"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "iands"
+    ],
+    "summary": "The most-cited clinical NDE study. 344 consecutive cardiac arrest survivors across 10 Dutch hospitals; 18% reported an NDE, 12% described a core experience. NDE occurrence was not associated with duration of cardiac arrest, medication, or fear of death — ruling out the standard physiological confounds. Landmark study in The Lancet establishing NDE as a reproducible phenomenon requiring explanation beyond cerebral anoxia alone.",
+    "abstract": "Some people report a near-death experience (NDE) after a life-threatening crisis. We aimed to establish the cause of this experience and assess factors that affected its frequency, depth, and content. In a prospective study, we included 344 consecutive cardiac patients successfully resuscitated after cardiac arrest in ten Dutch hospitals. We compared demographic, medical, pharmacological, and psychological data between patients who reported NDE and patients who did not (controls) after resuscitation. 62 patients (18%) reported NDE, of whom 41 (12%) described a core experience. Occurrence of the experience was not associated with duration of cardiac arrest or unconsciousness, medication, or fear of death before cardiac arrest. Frequency of NDE was affected by how we defined NDE, sex, surviving resuscitation more than once, and positive change was recorded. Depth of NDE was affected by age. Significantly more patients who had an NDE, especially a deep experience, died within 30 days of CPR (p<0.0001). With a purely physiological explanation such as cerebral anoxia for the experience, most patients who have been clinically dead should report one."
   }
 ]
