@@ -325,7 +325,7 @@
     "description": "An international scientific organization of researchers and academics dedicated to rigorous study of anomalous phenomena at the frontiers of science. The SSE publishes the Journal of Scientific Exploration (JSE), one of the few peer-reviewed journals that accepts UAP, parapsychology, and consciousness research. Members include fellows Hal Puthoff and Jacques Vallee. Holds an annual conference that bridges anomalistics, parapsychology, and UAP research in an academic setting. The SSE's peer-review infrastructure has been a critical credibility anchor for the broader anomalistics field.",
     "focus_areas": ["anomalistics", "peer-reviewed publication", "consciousness research", "UAP methodology"],
     "key_member_ids": ["hal-puthoff", "jacques-vallee"],
-    "notable_paper_ids": []
+    "notable_paper_ids": ["lomas-2024-jse-uap-history"]
   },
   {
     "id": "parapsychological-association",
