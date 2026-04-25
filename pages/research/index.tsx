@@ -12,6 +12,7 @@ import opportunitiesData from '../../data/research/opportunities.json';
 
 interface Paper {
   id: string;
+  decur_url?: string;
   title: string;
   authors: string[];
   author_ids: string[];
@@ -225,7 +226,7 @@ function PaperCard({ paper }: { paper: Paper }) {
           ))}
         </div>
         <div className="flex items-center gap-3">
-          <Link href={`/research/papers/${paper.id}`} className="text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
+          <Link href={paper.decur_url ?? `/research/papers/${paper.id}`} className="text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
             Details
           </Link>
           <a

@@ -9,6 +9,7 @@ import figuresIndex from '../../../data/key-figures/index.json';
 
 interface Paper {
   id: string;
+  decur_url?: string;
   title: string;
   authors: string[];
   author_ids: string[];
@@ -293,7 +294,7 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
 export const getStaticPaths: GetStaticPaths = async () => {
   const papers = papersData as Paper[];
   return {
-    paths: papers.map(p => ({ params: { id: p.id } })),
+    paths: papers.filter(p => !p.decur_url).map(p => ({ params: { id: p.id } })),
     fallback: false,
   };
 };

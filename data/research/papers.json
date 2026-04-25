@@ -20,6 +20,7 @@
   },
   {
     "id": "vallee-davis-2003-paradigms",
+    "decur_url": "/documents/vallee-davis-incommensurability-2003",
     "title": "Incommensurability, Orthodoxy and the Physics of High Strangeness: A 6-layer Model for Anomalous Phenomena",
     "authors": ["Jacques F. Vallee", "Eric W. Davis"],
     "author_ids": ["jacques-vallee", "eric-davis"],
@@ -39,6 +40,7 @@
   },
   {
     "id": "uaptf-2021-preliminary-assessment",
+    "decur_url": "/documents/uaptf-preliminary-assessment",
     "title": "Preliminary Assessment: Unidentified Aerial Phenomena",
     "authors": ["Office of the Director of National Intelligence"],
     "author_ids": [],
@@ -58,6 +60,7 @@
   },
   {
     "id": "nasa-uap-ist-2023",
+    "decur_url": "/documents/nasa-uap-study-2023",
     "title": "NASA UAP Independent Study Team Report",
     "authors": ["NASA UAP Independent Study Team"],
     "author_ids": [],
@@ -77,6 +80,7 @@
   },
   {
     "id": "aaro-historical-record-2024-vol1",
+    "decur_url": "/documents/aaro-historical-record-vol1",
     "title": "AARO Historical Record Report: Volume 1",
     "authors": ["All-domain Anomaly Resolution Office"],
     "author_ids": [],
@@ -134,6 +138,7 @@
   },
   {
     "id": "sturrock-1998-physical-evidence",
+    "decur_url": "/documents/sturrock-panel-report-1998",
     "title": "Physical Evidence Related to UFO Reports: The Proceedings of a Workshop",
     "authors": ["Peter A. Sturrock"],
     "author_ids": [],
@@ -191,6 +196,7 @@
   },
   {
     "id": "condon-report-1968",
+    "decur_url": "/documents/condon-report-1969",
     "title": "Scientific Study of Unidentified Flying Objects (Condon Report)",
     "authors": ["Edward U. Condon", "Daniel S. Gillmor"],
     "author_ids": [],
@@ -419,6 +425,7 @@
   },
   {
     "id": "geipan-2007-cometa",
+    "decur_url": "/documents/cometa-report-1999",
     "title": "COMETA Report: UFOs and Defense - What Should We Prepare For?",
     "authors": ["COMETA Panel"],
     "author_ids": [],
