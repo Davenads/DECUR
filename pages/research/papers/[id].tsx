@@ -1,4 +1,6 @@
 import type { NextPage, GetStaticProps, GetStaticPaths } from 'next';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import SeoHead from '../../../components/SeoHead';
 import papersData from '../../../data/research/papers.json';
@@ -69,6 +71,27 @@ const SOURCE_TYPE_COLORS: Record<string, string> = {
 /* ── Page ───────────────────────────────────────────────────────── */
 
 const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, relatedOrgs, linkedFigures }) => {
+  const router = useRouter();
+  const [backState, setBackState] = useState<{ label: string; href: string | null }>({
+    label: 'Papers',
+    href: '/research?tab=papers',
+  });
+
+  useEffect(() => {
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    if (ref === 'search') {
+      setBackState({ label: 'Search Results', href: null });
+    }
+  }, []);
+
+  const handleBack = () => {
+    if (backState.href) {
+      router.push(backState.href);
+    } else {
+      router.back();
+    }
+  };
+
   const typeLabel = SOURCE_TYPE_LABELS[paper.source_type] ?? paper.source_type;
   const typeColor = SOURCE_TYPE_COLORS[paper.source_type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300';
 
@@ -90,6 +113,17 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
       />
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
+
+          {/* Back button */}
+          <button
+            onClick={handleBack}
+            className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors mb-4 group"
+          >
+            <svg className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to {backState.label}
+          </button>
 
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500 mb-6">

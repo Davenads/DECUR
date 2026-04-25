@@ -1,4 +1,6 @@
 import type { NextPage, GetStaticProps, GetStaticPaths } from 'next';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import SeoHead from '../../../components/SeoHead';
 import orgsData from '../../../data/research/organizations.json';
@@ -113,6 +115,27 @@ function deriveEventStatus(event: ResearchEvent): string {
 /* ── Page ───────────────────────────────────────────────────────── */
 
 const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, keyMembers, relatedPapers }) => {
+  const router = useRouter();
+  const [backState, setBackState] = useState<{ label: string; href: string | null }>({
+    label: 'Organizations',
+    href: '/research?tab=organizations',
+  });
+
+  useEffect(() => {
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    if (ref === 'search') {
+      setBackState({ label: 'Search Results', href: null });
+    }
+  }, []);
+
+  const handleBack = () => {
+    if (backState.href) {
+      router.push(backState.href);
+    } else {
+      router.back();
+    }
+  };
+
   const typeLabel = ORG_TYPE_LABELS[org.type] ?? org.type;
   const statusColor = ORG_STATUS_COLORS[org.status] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400';
   const statusLabel = org.status === 'reduced-activity' ? 'Reduced Activity' : org.status.charAt(0).toUpperCase() + org.status.slice(1);
@@ -129,6 +152,17 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
       />
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
+
+          {/* Back button */}
+          <button
+            onClick={handleBack}
+            className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors mb-4 group"
+          >
+            <svg className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to {backState.label}
+          </button>
 
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500 mb-6">

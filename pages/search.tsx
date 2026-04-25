@@ -228,7 +228,7 @@ const SearchPage: FC<SearchPageProps> = ({ counts }) => {
 
   const ResultCard = ({ item }: { item: SearchItem }) => (
     <Link
-      href={item.type === 'insider' ? `${item.href}?ref=search` : item.href}
+      href={['insider', 'case', 'research-paper', 'research-org'].includes(item.type) ? `${item.href}?ref=search` : item.href}
       className="block bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 px-4 py-3 hover:border-primary hover:shadow-sm transition-all"
     >
       <div className="flex items-start gap-3">
