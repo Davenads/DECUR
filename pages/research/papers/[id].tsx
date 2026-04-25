@@ -121,7 +121,7 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
                 ? paper.authors.map((author, i) => {
                     const fig = linkedFigures.find(f => paper.author_ids.some(aid => aid === f.id && paper.authors[i]?.includes(f.name.split(' ').pop() ?? '')));
                     return fig
-                      ? <Link key={i} href={`/figures/${fig.id}`} className="text-primary hover:text-primary/80 transition-colors">{author}</Link>
+                      ? <Link key={i} href={`/figures/${fig.id}?ref=research`} className="text-primary hover:text-primary/80 transition-colors">{author}</Link>
                       : <span key={i}>{author}</span>;
                   }).reduce((prev: React.ReactNode, curr, i) => i === 0 ? [curr] : [...(prev as React.ReactNode[]), ', ', curr], [] as React.ReactNode[])
                 : paper.authors.join(', ')
@@ -235,7 +235,7 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
                     {linkedFigures.map(fig => (
                       <Link
                         key={fig.id}
-                        href={`/figures/${fig.id}`}
+                        href={`/figures/${fig.id}?ref=research`}
                         className="flex items-center gap-2 text-xs hover:text-primary transition-colors group"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />

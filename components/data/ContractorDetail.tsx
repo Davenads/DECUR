@@ -234,7 +234,7 @@ const ContractorDetail: FC<ContractorDetailProps> = ({
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <Link
-                      href={`/figures/${fig.id}`}
+                      href={`/figures/${fig.id}?ref=program`}
                       className="text-sm font-medium text-primary hover:underline"
                     >
                       {fig.name}

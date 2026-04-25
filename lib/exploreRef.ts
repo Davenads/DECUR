@@ -13,7 +13,12 @@ export type ExploreRef =
   | 'explore-disclosure'   // Congressional Disclosure - figures/[id]
   | 'explore-cases'        // Evidence Tiers - cases/[id]
   | 'oversight-hierarchy'  // Oversight Hierarchy - programs/[id]
-  | 'program-lineage';     // Program Lineage - programs/[id]
+  | 'program-lineage'      // Program Lineage - programs/[id]
+  | 'search'               // Global search results
+  | 'case'                 // Case detail insider connections
+  | 'document'             // Document detail insider links
+  | 'program'              // Program detail insider links
+  | 'research';            // Research Hub paper/org author links
 
 interface BackConfig {
   label: string;
@@ -31,6 +36,11 @@ export const EXPLORE_BACK_CONFIGS: Record<ExploreRef, BackConfig> = {
   'explore-cases':        { label: 'Evidence Tiers',          href: '/explore#evidence-tiers' },
   'oversight-hierarchy':  { label: 'Oversight Hierarchy',     href: OVERSIGHT_HREF },
   'program-lineage':      { label: 'Program Lineage',         href: LINEAGE_HREF },
+  'search':               { label: 'Search Results',          href: '/search' },
+  'case':                 { label: 'Case Details',            href: '/data?category=cases' },
+  'document':             { label: 'Document',                href: '/data?category=documents' },
+  'program':              { label: 'Program',                 href: '/data?category=programs' },
+  'research':             { label: 'Research Hub',            href: '/research' },
 };
 
 /**

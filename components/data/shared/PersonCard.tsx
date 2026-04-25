@@ -11,6 +11,7 @@ interface Person {
 
 interface PersonCardProps {
   person: Person;
+  refParam?: string;
 }
 
 // Derived once at module load - IDs that have a /figures/[id] profile page
@@ -20,8 +21,9 @@ const PROFILE_IDS = new Set(
     .map(e => e.id)
 );
 
-const PersonCard: FC<PersonCardProps> = ({ person }) => {
+const PersonCard: FC<PersonCardProps> = ({ person, refParam }) => {
   const hasProfile = PROFILE_IDS.has(person.id);
+  const profileHref = `/figures/${person.id}${refParam ? `?ref=${refParam}` : ''}`;
 
   const content = (
     <>
@@ -44,7 +46,7 @@ const PersonCard: FC<PersonCardProps> = ({ person }) => {
   if (hasProfile) {
     return (
       <Link
-        href={`/figures/${person.id}`}
+        href={profileHref}
         className="block border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary dark:hover:border-primary transition-colors cursor-pointer"
       >
         {content}
