@@ -2,6 +2,14 @@
   {
     "date": "2026-04-25",
     "category": "figure",
+    "id": "bem-2011-feeling-future",
+    "name": "Bem 2011 — Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences",
+    "action": "added",
+    "note": "Landmark JPSP paper: 9 experiments, 1000+ participants, d=0.22 for precognition effects — the paper that ignited the replication crisis debate in psychology."
+  },
+  {
+    "date": "2026-04-25",
+    "category": "figure",
     "id": "parnia-2014-aware",
     "name": "Parnia et al. 2014 — AWARE: AWAreness during REsuscitation",
     "action": "added",
