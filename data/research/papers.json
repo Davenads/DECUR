@@ -2015,5 +2015,32 @@
     ],
     "summary": "The Princeton Engineering Anomalies Research laboratory's flagship theoretical and empirical paper, presenting a quantum mechanical framework for consciousness-matter interaction and summarizing a decade of experimental data. Jahn (Dean of Engineering, Princeton) and Dunne report statistically significant operator influence on random event generators across 2.5 million trials - effect sizes small but cumulative p-values highly significant. Proposes that consciousness functions as a quantum observer capable of influencing probabilistic physical systems at the margin. The most rigorous institutional treatment of mind-matter interaction in the peer-reviewed literature.",
     "abstract": "A theoretical framework is proposed in which consciousness is treated as a quantum mechanical system capable of interacting with physical processes at the level of probabilistic events. Drawing on the formalism of quantum mechanics - particularly the role of the observer in wave function collapse - the paper develops a model in which conscious intention may bias the output of inherently random physical systems. Experimental data from a decade of Princeton Engineering Anomalies Research (PEAR) laboratory studies are presented, encompassing approximately 2.5 million trials with random event generators operated by human participants. Results demonstrate small but statistically highly significant correlations between operator intention and device output, consistent with a direct mind-matter interaction effect. The paper examines the implications of these findings for the interpretation of quantum mechanics, the nature of consciousness, and the epistemological boundaries of conventional science, and proposes a proto-model for understanding how consciousness may participate in physical reality."
+  },
+  {
+    "id": "schulze-makuch-2025-uap-rating",
+    "title": "Toward a Reliability Scale for Assessing Reports of Unidentified Anomalous Phenomena (UAP)",
+    "authors": [
+      "Dirk Schulze-Makuch",
+      "Tony Reichhardt"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Universe",
+    "doi": "10.3390/universe11100326",
+    "url": "https://www.mdpi.com/2218-1997/11/10/326",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "uap-methodology",
+      "rating-scale",
+      "scientific-investigation",
+      "astrobiology",
+      "evaluation-framework",
+      "evidence-quality"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Astrobiologist Dirk Schulze-Makuch (TU Berlin) and science journalist Tony Reichhardt propose a systematic reliability scale for evaluating UAP sighting reports, enabling researchers and the public to distinguish credible signals from noise. The framework categorizes reports by evidence quality factors: observer count, corroborating evidence quantity, whether witnesses attempted conventional explanations first, and whether the evidence has undergone expert analysis. Published in Universe (MDPI) in 2025 - a very recent methodology contribution pairing naturally with Ammon 2024 on UAP research standards.",
+    "abstract": "Unidentified Anomalous Phenomena observations have been documented throughout history, yet their underlying nature remains unclear. The authors propose a rating scale to differentiate between credible signals and unreliable noise when evaluating UAP sighting reports. This tool aims to assist both professionals and the general public in identifying cases deserving further study versus easily explainable occurrences. The framework categorizes reports based on evidence quality factors including observer count, supporting evidence quantity, and whether witnesses attempted conventional explanations for their observations before reporting them. The categorization emphasizes cases where evidence has undergone expert analysis. The scale is intended as a practical instrument for triage in UAP research, enabling systematic comparison across reports and supporting more rigorous scientific engagement with the phenomenon."
   }
 ]
