@@ -1903,5 +1903,31 @@
     "organization_ids": [],
     "summary": "Second Limina paper by Engels (first being the Engels & Hauser epistemic injustice paper already in the catalog). Argues that phenomenology - the systematic examination of first-person lived experience - is an essential methodological supplement to empirical UAP research. Key contributions include restoring the lived world as an epistemic foundation, enabling investigation beyond the extraterrestrial hypothesis, distinguishing ordinary from non-ordinary perception, and enabling intersubjective analysis of experiencer accounts. Ties directly to DECUR's experiencer research thread.",
     "abstract": "Phenomenology as a research method involves careful examination of first-person experiences to identify what is essential to how objects appear. This approach offers important strengths for UAP research. Key advantages include restoring the lived world as a foundation for knowledge, moving beyond extraterrestrial hypotheses, exploring what is absent from discourse, and distinguishing between ordinary sensory perception and non-ordinary perception. Additionally, phenomenology enables investigation of UAP through intersubjective experiences while drawing parallels with other anomalous phenomena, making it a critical supplementary method alongside more empirical approaches."
+  },
+  {
+    "id": "ailleris-2024-instrumented-uap",
+    "title": "Exploring Unidentified Aerospace Phenomena Through Instrumented Field Studies: Historical Insights, Current Challenges, and Future Directions",
+    "authors": [
+      "Philippe Ailleris"
+    ],
+    "author_ids": [],
+    "year": 2024,
+    "journal": "Limina: The Journal of UAP Studies",
+    "doi": "10.59661/001c.92682",
+    "url": "https://limina.scholasticahq.com/article/92682",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "instrumented-investigation",
+      "field-studies",
+      "uap-methodology",
+      "sensor-arrays",
+      "citizen-science",
+      "ai-analysis"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "ESA-affiliated engineer Philippe Ailleris surveys the history of instrumented UAP field investigations from 1950 to 2023, covering both military and civilian programs, and outlines a framework for rigorous future field studies. Covers multi-wavelength and multi-mode sensor requirements (optical, radar, infrared), addresses common methodological shortcomings, and examines how modern technologies - digital cameras, AI analytics, satellite imagery - make comprehensive instrumented UAP research increasingly feasible. Emphasizes collaboration, transparency, and data standardization as prerequisites for credible results.",
+    "abstract": "The investigation of Unidentified Aerospace Phenomena necessitates transitioning away from historical narrative-based inquiry toward rigorous scientific methodology. Reliable data collection through instrumented observations using multi-wavelength and multi-mode sensors - including optical, radar, and infrared technologies - is essential for supporting credible explanations or establishing the existence of unknown phenomena. This overview examines the strategic and tactical considerations inherent in field studies, addressing common limitations and shortcomings. Past and present military and civilian initiatives spanning 1950-2023 are analyzed, incorporating contributions from both citizen science and professional researchers. Modern technological advances - including digital cameras, sophisticated instruments, computational analytics, artificial intelligence, and satellite imagery - are becoming increasingly accessible and cost-effective, expanding research possibilities. The paper demonstrates how contemporary field experiments might advance, requiring disciplined scientific approaches, innovative methodologies, and collaboration, transparency, and standardization in data analysis."
   }
 ]

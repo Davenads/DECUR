@@ -2,6 +2,14 @@
   {
     "date": "2026-04-26",
     "category": "figure",
+    "id": "ailleris-2024-instrumented-uap",
+    "name": "Ailleris 2024 — Instrumented Field Studies for UAP Investigation",
+    "action": "added",
+    "note": "ESA-affiliated engineer surveys 1950-2023 instrumented UAP investigations and outlines a rigorous multi-sensor field study framework leveraging modern AI analytics and satellite imagery."
+  },
+  {
+    "date": "2026-04-26",
+    "category": "figure",
     "id": "engels-2025-phenomenology-uap",
     "name": "Engels 2025 — The Importance of Phenomenology for UAP Studies",
     "action": "added",
