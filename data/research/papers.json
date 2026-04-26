@@ -1706,5 +1706,42 @@
     ],
     "summary": "Systematic historical review of scientific approaches to UAP from 1947 to present, tracing how the subject moved from relative openness in the 1950s-60s to dismissal as paranormal following the Condon Report, and arguing it now warrants serious re-engagement by the academic community. Lomas contends that UAP constitutes a legitimate empirical phenomenon that has been improperly excluded from scientific inquiry - not because evidence is absent but because of sociological and institutional stigma. Published in JSE, the primary peer-reviewed venue for anomalistics research.",
     "abstract": "The subject of Unidentified Anomalous Phenomena (UAP) has long faced scientific skepticism and institutional dismissal. Following a period of relative openness during the 1950s and 1960s - including Project Blue Book and the early USAF investigations - the topic was effectively classified as paranormal and excluded from serious academic inquiry, a status reinforced by the Condon Report (1969) and subsequent decades of stigma. This paper traces that history of scientific engagement and disengagement, examining the organizational, sociological, and epistemological factors that led to UAP's marginalization. Given recent developments - including congressional hearings, the NASA UAP study group, and renewed institutional interest - the author argues that the scientific community has improperly avoided what constitutes a potentially important phenomenon meriting genuine empirical scrutiny. The paper calls for the rehabilitation of UAP as a legitimate subject of academic research and proposes criteria for rigorous, stigma-free scientific engagement."
+  },
+  {
+    "id": "radin-2012-double-slit",
+    "title": "Consciousness and the double-slit interference pattern: Six experiments",
+    "authors": [
+      "Dean Radin",
+      "Leena Michel",
+      "Karla Galdamez",
+      "Paul Wendland",
+      "Robert Rickenbach",
+      "Arnaud Delorme"
+    ],
+    "author_ids": [],
+    "year": 2012,
+    "journal": "Physics Essays",
+    "volume": "25",
+    "issue": "2",
+    "pages": "157-171",
+    "doi": "10.4006/0836-1398-25.2.157",
+    "url": "https://www.deanradin.com/evidence/Radin2012DBslit.pdf",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "parapsychology",
+      "quantum-mechanics",
+      "consciousness",
+      "double-slit",
+      "observer-effect",
+      "psi",
+      "experimental"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "parapsychological-association"
+    ],
+    "summary": "Six controlled experiments tested whether directed mental attention from a distance can alter the interference pattern produced by a double-slit optical system. Participants focused their attention toward the apparatus from a shielded location while EEG was recorded. Results showed a cumulative reduction in double-slit interference consistent with a physical observer effect, with a combined z-score of 4.37 (p<0.0001). Control conditions showed no comparable effect. The paper proposes consciousness may function as a quantum observer, directly bridging parapsychological research with quantum mechanics.",
+    "abstract": "A double-slit optical system was used to test the hypothesis that unobserved quanta are affected by mental intention. In six experiments involving over 250 participants, individuals were asked to direct their attention toward a double-slit apparatus from a distant, shielded location. The intensity of the double-slit interference pattern was continuously monitored. Results showed that when participants focused attention on the apparatus with the intention of 'which-path' observation, the double-slit interference pattern decreased in a manner consistent with increased which-path information. Control periods without mental focus showed no such effect. Cumulative analysis across six experiments yielded z = 4.37 (p < 0.0001), with effect sizes remaining consistent across replications. Electroencephalographic measures of participants' attentional states correlated with the observed physical effects. The results are consistent with the hypothesis that consciousness plays a role analogous to measurement in quantum mechanical systems, and suggest that directed mental intention can influence quantum-level physical processes from a distance."
   }
 ]

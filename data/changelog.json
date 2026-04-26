@@ -2,6 +2,14 @@
   {
     "date": "2026-04-25",
     "category": "figure",
+    "id": "radin-2012-double-slit",
+    "name": "Radin et al. 2012 — Consciousness and the Double-Slit Interference Pattern",
+    "action": "added",
+    "note": "Six experiments with 250+ participants found directed mental attention reduces double-slit interference (z=4.37, p<0.0001), proposing consciousness acts as a quantum observer."
+  },
+  {
+    "date": "2026-04-25",
+    "category": "figure",
     "id": "lomas-2024-jse-uap-history",
     "name": "Lomas 2024 — History of Scientific Approaches to UAP (JSE)",
     "action": "added",
