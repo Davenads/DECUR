@@ -1929,5 +1929,31 @@
     "organization_ids": [],
     "summary": "ESA-affiliated engineer Philippe Ailleris surveys the history of instrumented UAP field investigations from 1950 to 2023, covering both military and civilian programs, and outlines a framework for rigorous future field studies. Covers multi-wavelength and multi-mode sensor requirements (optical, radar, infrared), addresses common methodological shortcomings, and examines how modern technologies - digital cameras, AI analytics, satellite imagery - make comprehensive instrumented UAP research increasingly feasible. Emphasizes collaboration, transparency, and data standardization as prerequisites for credible results.",
     "abstract": "The investigation of Unidentified Aerospace Phenomena necessitates transitioning away from historical narrative-based inquiry toward rigorous scientific methodology. Reliable data collection through instrumented observations using multi-wavelength and multi-mode sensors - including optical, radar, and infrared technologies - is essential for supporting credible explanations or establishing the existence of unknown phenomena. This overview examines the strategic and tactical considerations inherent in field studies, addressing common limitations and shortcomings. Past and present military and civilian initiatives spanning 1950-2023 are analyzed, incorporating contributions from both citizen science and professional researchers. Modern technological advances - including digital cameras, sophisticated instruments, computational analytics, artificial intelligence, and satellite imagery - are becoming increasingly accessible and cost-effective, expanding research possibilities. The paper demonstrates how contemporary field experiments might advance, requiring disciplined scientific approaches, innovative methodologies, and collaboration, transparency, and standardization in data analysis."
+  },
+  {
+    "id": "szydagis-2025-disclosure-timeline",
+    "title": "How Much Time Do We Have Before Catastrophic Disclosure Occurs?",
+    "authors": [
+      "Matthew Szydagis"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Limina: The Journal of UAP Studies",
+    "doi": "10.59661/001c.131700",
+    "url": "https://limina.scholasticahq.com/article/131700",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "disclosure",
+      "uap-policy",
+      "physics",
+      "catastrophic-disclosure",
+      "timeline",
+      "statistical-modeling"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Particle physicist Matthew Szydagis (SUNY Albany) applies statistical modeling to estimate the timeline before 'catastrophic disclosure' - defined as accidental public revelation of conclusive non-human intelligence evidence outside institutional control. Using smartphone ownership rates and human population distribution, the model simulates scenarios involving a UAP incident in a densely populated area. Results project a mean disclosure timeline of approximately 2040 plus or minus 20 years under default assumptions. An unusual combination of hard science credentials with UAP disclosure policy analysis in a peer-reviewed venue.",
+    "abstract": "Claims about recovered crashed craft from non-human intelligences pervade popular culture and media. This article employs such claims to estimate the timeframe before 'catastrophic disclosure' - defined as accidental revelation of conclusive evidence of non-human intelligence existence outside human institutional control. The analysis examines a hypothetical scenario where an extraterrestrial spacecraft crashes in a major metropolitan area, considering Earth's human population distribution and smartphone ownership rates as statistical factors. Using a skeptical yet analytical approach, the author applies standard statistical distributions to quantify when smartphone imagery or video proof might become irrevocably public online. The simulations model various scenarios with different assumptions about likelihood. Results indicate that if non-human intelligence exists and possesses fallible technology, accidental catastrophic disclosure could occur relatively soon, with mean projections suggesting 2040 plus or minus 20 years under default assumptions."
   }
 ]
