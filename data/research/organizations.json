@@ -409,7 +409,7 @@
     "description": "A long-running scientific monitoring project studying recurring unexplained light phenomena in the Hessdalen Valley of Norway. Since the early 1980s, local residents and researchers have documented anomalous luminous objects of varying sizes, shapes, and behaviors that cannot be attributed to known natural or artificial sources. Established by physicist Erling Strand, the project has involved collaboration with Norwegian universities, the Italian CNR, and international researchers. It maintains a permanent automated monitoring station with magnetometers, spectral analyzers, and cameras. Hessdalen is among the most rigorously instrumented long-term UAP-adjacent field studies in existence, with over four decades of continuous data.",
     "focus_areas": ["light phenomena monitoring", "geophysical anomalies", "instrumented field research", "long-term data collection"],
     "key_member_ids": [],
-    "notable_paper_ids": []
+    "notable_paper_ids": ["teodorani-2024-astronomical-uap"]
   },
   {
     "id": "free-foundation",
