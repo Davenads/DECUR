@@ -152,6 +152,14 @@ export const graphData: GraphData = {
     { id: 'farsight-institute',                   name: 'Farsight Institute',               type: 'organization', group: 'shared', val: 2 },
     { id: 'canadians-for-disclosure',             name: 'Canadians for Disclosure',         type: 'organization', group: 'shared', val: 2 },
     { id: 'psi-games-international',              name: 'Psi Games International',          type: 'organization', group: 'shared', val: 2 },
+    // Kali appendix orgs
+    { id: 'nuforc',                               name: 'NUFORC',                            type: 'organization', group: 'shared', val: 3 },
+    { id: 'esalen-institute',                     name: 'Esalen Institute',                  type: 'organization', group: 'shared', val: 2 },
+    { id: 'new-thinking-allowed-foundation',      name: 'New Thinking Allowed',              type: 'organization', group: 'shared', val: 2 },
+    { id: 'center-for-process-studies',           name: 'Center for Process Studies',        type: 'organization', group: 'shared', val: 2 },
+    { id: 'society-for-mind-matter-research',     name: 'Society for Mind-Matter Research',  type: 'organization', group: 'shared', val: 2 },
+    { id: 'world-institute-scientific-exploration', name: 'WISE',                            type: 'organization', group: 'shared', val: 2 },
+    { id: 'ubiquity-university',                  name: 'Ubiquity University',               type: 'organization', group: 'shared', val: 2 },
 
     // Concepts
     { id: 'five-observables',    name: '5 Observables',        type: 'concept',      group: 'elizondo', val: 3 },
@@ -1593,5 +1601,36 @@ export const graphData: GraphData = {
     // Psi Games International connections
     { source: 'psi-games-international',           target: 'parapsychological-association',   label: 'citizen-science psi data collection; PA provides academic framework for psi testing' },
     { source: 'psi-games-international',           target: 'rhine-research-center',           label: 'gamified analog to Rhine-style psi testing; crowdsourced data at scale' },
+
+    // NUFORC connections
+    { source: 'nuforc',                            target: 'mufon',                           label: 'parallel civilian UAP sighting databases; MUFON adds field investigation to NUFORC intake model' },
+    { source: 'nuforc',                            target: 'nicap',                           label: 'NUFORC built on the civilian reporting infrastructure pioneered by NICAP in the 1950s-60s' },
+    { source: 'nuforc',                            target: 'enigma-labs',                     label: 'NUFORC and Enigma Labs are parallel civilian sighting databases; Enigma applies data-science methodology to the same intake function' },
+
+    // Esalen Institute connections
+    { source: 'esalen-institute',                  target: 'center-for-consciousness-studies', label: 'parallel centers for consciousness research; Esalen hosted early transpersonal and altered-states work that preceded CCS' },
+    { source: 'esalen-institute',                  target: 'monroe-institute',                label: 'both focused on altered states and non-ordinary consciousness research; overlapping research communities' },
+    { source: 'esalen-institute',                  target: 'hal-puthoff',                     label: 'Puthoff participated in Esalen-hosted meetings bridging intelligence community and consciousness research' },
+
+    // New Thinking Allowed Foundation connections
+    { source: 'new-thinking-allowed-foundation',   target: 'parapsychological-association',   label: 'primary video archive for PA research community; Jeffrey Mishlove holds the only parapsychology doctorate from a major U.S. university' },
+    { source: 'new-thinking-allowed-foundation',   target: 'society-for-psychical-research',  label: 'extensive interview archive of SPR-affiliated researchers including Rupert Sheldrake and Stephan Schwartz' },
+    { source: 'new-thinking-allowed-foundation',   target: 'irva',                            label: 'remote viewing researchers including Ingo Swann collaborators are extensively documented in the archive' },
+
+    // Center for Process Studies connections
+    { source: 'center-for-process-studies',        target: 'center-for-consciousness-studies', label: 'Whiteheadian process philosophy is a foundational influence on non-reductive theories of consciousness developed at CCS' },
+    { source: 'center-for-process-studies',        target: 'galileo-commission',              label: 'process philosophy provides metaphysical grounding for the Galileo Commission post-materialist science framework' },
+
+    // Society for Mind-Matter Research connections
+    { source: 'society-for-mind-matter-research',  target: 'parapsychological-association',   label: 'mind-matter interaction research directly parallels PA psi research program; overlapping researcher communities' },
+    { source: 'society-for-mind-matter-research',  target: 'koestler-parapsychology-unit',    label: 'European parapsychology research institutions with shared mind-matter interaction research agenda' },
+
+    // WISE connections
+    { source: 'world-institute-scientific-exploration', target: 'society-for-scientific-exploration', label: 'parallel anomalistics umbrella organizations; SSE publishes JSE while WISE provides institutional home for anomalistics researchers' },
+    { source: 'world-institute-scientific-exploration', target: 'parapsychological-association',       label: 'anomalistics institutional infrastructure overlapping with PA research community' },
+
+    // Ubiquity University connections
+    { source: 'ubiquity-university',               target: 'center-for-consciousness-studies', label: 'graduate programs in consciousness studies draw on CCS researchers and post-materialist science frameworks' },
+    { source: 'ubiquity-university',               target: 'galileo-commission',              label: 'post-materialist science education aligned with Galileo Commission academic reform agenda' },
   ],
 };
