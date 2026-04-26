@@ -1982,5 +1982,38 @@
     "organization_ids": [],
     "summary": "Academic philosopher Travis Dumsday (Concordia University of Edmonton) surveys the animism or nature-spirits hypothesis as an ontological framework for UAP phenomena - the idea that UAP may involve non-material or paraphysical entities consistent with animist traditions across world religions. Positioned against the dominant extraterrestrial hypothesis, this represents a non-naturalist alternative grounded in analytic metaphysics and comparative religion. The paper maps the hypothesis within a broader taxonomy of UAP explanations and argues it warrants serious philosophical consideration.",
     "abstract": "The UAP literature confronts a fundamental question: assuming these phenomena represent something objectively real rather than delusion or misperception, what are we encountering? A taxonomy of explanations divides into naturalist theories - compatible with metaphysical naturalism - and non-naturalist alternatives. While naturalist approaches, particularly the extraterrestrial hypothesis, dominated early ufology, non-naturalist perspectives have grown increasingly influential since the late 1960s. Contemporary non-naturalist theories draw from world religions, philosophy, history, and analytic metaphysics. This paper surveys one significant non-naturalist theory: the nature-spirits or animism hypothesis regarding UAP ontology, examining its historical antecedents, philosophical coherence, and relationship to other paraphysical and cryptoterrestrial frameworks in the literature."
+  },
+  {
+    "id": "jahn-dunne-1986-pear",
+    "title": "On the Quantum Mechanics of Consciousness, with Application to Anomalous Phenomena",
+    "authors": [
+      "Robert G. Jahn",
+      "Brenda J. Dunne"
+    ],
+    "author_ids": [],
+    "year": 1986,
+    "journal": "Foundations of Physics",
+    "volume": "16",
+    "issue": "8",
+    "pages": "721-772",
+    "doi": "10.1007/BF00735378",
+    "url": "https://link.springer.com/article/10.1007/BF00735378",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "parapsychology",
+      "pear-lab",
+      "quantum-consciousness",
+      "mind-matter",
+      "anomalous-cognition",
+      "princeton",
+      "random-event-generator"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "parapsychological-association"
+    ],
+    "summary": "The Princeton Engineering Anomalies Research laboratory's flagship theoretical and empirical paper, presenting a quantum mechanical framework for consciousness-matter interaction and summarizing a decade of experimental data. Jahn (Dean of Engineering, Princeton) and Dunne report statistically significant operator influence on random event generators across 2.5 million trials - effect sizes small but cumulative p-values highly significant. Proposes that consciousness functions as a quantum observer capable of influencing probabilistic physical systems at the margin. The most rigorous institutional treatment of mind-matter interaction in the peer-reviewed literature.",
+    "abstract": "A theoretical framework is proposed in which consciousness is treated as a quantum mechanical system capable of interacting with physical processes at the level of probabilistic events. Drawing on the formalism of quantum mechanics - particularly the role of the observer in wave function collapse - the paper develops a model in which conscious intention may bias the output of inherently random physical systems. Experimental data from a decade of Princeton Engineering Anomalies Research (PEAR) laboratory studies are presented, encompassing approximately 2.5 million trials with random event generators operated by human participants. Results demonstrate small but statistically highly significant correlations between operator intention and device output, consistent with a direct mind-matter interaction effect. The paper examines the implications of these findings for the interpretation of quantum mechanics, the nature of consciousness, and the epistemological boundaries of conventional science, and proposes a proto-model for understanding how consciousness may participate in physical reality."
   }
 ]
