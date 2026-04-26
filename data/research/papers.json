@@ -1852,5 +1852,31 @@
     "organization_ids": [],
     "summary": "Presents a framework of good scientific practice standards developed specifically for UAP research, drawing on professional scientific norms and adapting them for the citizen-science and lay-investigator community that conducts most UAP fieldwork. Ammon traces predecessors of these principles, describes a multi-stage review process used in their development by German researchers, and discusses their ongoing revision. Addresses the methodological gap between credentialed science and volunteer UAP investigation - filling a critical need identified by multiple other catalog papers.",
     "abstract": "Research on unidentified anomalous phenomena is largely undertaken by citizen scientists and lay investigators worldwide. The article emphasizes the necessity for responsible and methodically justified research to establish verifiable and comparable findings while maintaining ethical interactions with other researchers and witnesses. The author presents good scientific practice principles developed in Germany, some derived from existing professional standards but further tailored specifically for UAP investigations. The work traces predecessors of these principles, describes their development through multiple review stages, and discusses how they apply and evolve. The paper concludes that establishing such standards can enhance research quality and generate superior data through participation by both volunteer individuals and nonprofit organizations in UAP studies."
+  },
+  {
+    "id": "peters-2025-ufology-astrobiology",
+    "title": "One science for both UFOlogists and Astrobiologists?",
+    "authors": [
+      "Ted Peters"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Limina: The Journal of UAP Studies",
+    "doi": "10.59661/001c.131694",
+    "url": "https://limina.scholasticahq.com/article/131694",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "astrobiology",
+      "uap",
+      "interdisciplinary",
+      "epistemology",
+      "seti",
+      "science-religion"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Philosopher of science Ted Peters (CTNS/GTU) examines why astrobiologists and UFOlogists have been unable to share methodological space despite both communities operating with scientific frameworks and both taking the extraterrestrial intelligence hypothesis seriously. Astrobiologists study life on exoplanets but reject claims of current visitation; UFOlogists apply ETI as a primary explanatory framework for reported encounters. Peters identifies the 'ETI myth' as a shared conceptual substrate, explores the sociological and epistemological barriers between the fields, and asks whether a unified scientific approach to both questions is possible.",
+    "abstract": "Increasingly, scientists among UAP investigators outside the mainstream seek to explain unidentified aerial phenomena with the extraterrestrial hypothesis. Within the safe boundaries of mainstream science, astrobiologists believe life exists on exoplanets but deny that alien intelligences are visiting Earth. Both communities operate with scientific mindsets and both engage with what the author terms the 'ETI myth.' Yet astrobiologists actively shun ufologists. This paper examines the epistemological and sociological barriers separating these two communities, analyzes the shared conceptual ground - particularly the extraterrestrial intelligence hypothesis - and asks whether a common scientific framework can accommodate both the search for extraterrestrial life in the cosmos and the investigation of UAP reports as potential evidence of non-human intelligence in our atmosphere. The author argues that methodological convergence is not only possible but scientifically warranted, and explores what a shared scientific space for both disciplines might look like."
   }
 ]
