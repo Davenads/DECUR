@@ -1743,5 +1743,35 @@
     ],
     "summary": "Six controlled experiments tested whether directed mental attention from a distance can alter the interference pattern produced by a double-slit optical system. Participants focused their attention toward the apparatus from a shielded location while EEG was recorded. Results showed a cumulative reduction in double-slit interference consistent with a physical observer effect, with a combined z-score of 4.37 (p<0.0001). Control conditions showed no comparable effect. The paper proposes consciousness may function as a quantum observer, directly bridging parapsychological research with quantum mechanics.",
     "abstract": "A double-slit optical system was used to test the hypothesis that unobserved quanta are affected by mental intention. In six experiments involving over 250 participants, individuals were asked to direct their attention toward a double-slit apparatus from a distant, shielded location. The intensity of the double-slit interference pattern was continuously monitored. Results showed that when participants focused attention on the apparatus with the intention of 'which-path' observation, the double-slit interference pattern decreased in a manner consistent with increased which-path information. Control periods without mental focus showed no such effect. Cumulative analysis across six experiments yielded z = 4.37 (p < 0.0001), with effect sizes remaining consistent across replications. Electroencephalographic measures of participants' attentional states correlated with the observed physical effects. The results are consistent with the hypothesis that consciousness plays a role analogous to measurement in quantum mechanical systems, and suggest that directed mental intention can influence quantum-level physical processes from a distance."
+  },
+  {
+    "id": "grosvenor-2025-nuclear-uap",
+    "title": "UAP Indications Analysis 1945-1975: United States Atomic Warfare Complex",
+    "authors": [
+      "Sean Grosvenor",
+      "Larry Hancock",
+      "Ian Porritt"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Limina: The Journal of UAP Studies",
+    "doi": "10.59661/001c.131854",
+    "url": "https://limina.scholasticahq.com/article/131854",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "nuclear",
+      "uap-patterns",
+      "historical-analysis",
+      "atomic-weapons",
+      "scu-methodology",
+      "1947-1975"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
+    "summary": "Quantitative analysis of 874 UAP incidents documented near U.S. military atomic facilities between 1945 and 1975, using Project Blue Book and related archival sources. Incidents were categorized across five nuclear site types: materials production, weapons assembly, stockpiles, deployment, and missile testing. The study found statistically elevated UAP activity at atomic facilities compared to conventional military installations, with pattern analysis suggesting possible intelligence gathering, operational obstruction, or deterrence behaviors. The most probable scenario assessed was an 'Atomic Weapons Survey' - deliberate external interest in U.S. nuclear capabilities. The most systematic quantitative treatment of the nuclear-UAP correlation in the published literature.",
+    "abstract": "This paper examines unidentified anomalous phenomena reports near U.S. military atomic facilities from 1945 to 1975. Researchers analyzed 590 documented incidents from Project Blue Book and related sources, focusing on five categories of nuclear sites: materials production, weapons assembly, stockpiles, deployment, and missile testing. The study found that intelligent and focused activity was associated with atomic facilities to a greater degree than conventional non-atomic military facilities. Analyzing an additional 284 incidents brought the total to 874 cases. The findings suggest activity patterns indicating possible information collection, obstruction of operations, or aggressive engagement. Four assessment scenarios were evaluated, with an Atomic Weapons Survey emerging as the most probable explanation, followed by general military surveys and aggression prevention scenarios."
   }
 ]
