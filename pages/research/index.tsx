@@ -278,7 +278,12 @@ function OrgCard({ org }: { org: Organization }) {
   const typeLabel = ORG_TYPE_LABELS[org.type] ?? org.type;
 
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-gray-300 dark:hover:border-gray-600 transition-colors bg-white dark:bg-gray-800/50">
+    <div className="relative border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-primary/40 dark:hover:border-primary/40 hover:shadow-sm transition-all bg-white dark:bg-gray-800/50 cursor-pointer">
+      <Link
+        href={org.decur_url ?? `/research/organizations/${org.id}`}
+        className="absolute inset-0 rounded-xl"
+        aria-label={`View details for ${org.name}`}
+      />
       <div className="flex items-start justify-between gap-2 mb-3">
         <div>
           <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug">
@@ -304,15 +309,13 @@ function OrgCard({ org }: { org: Organization }) {
         </div>
       )}
 
-      <div className="flex items-center gap-3">
-        <Link href={org.decur_url ?? `/research/organizations/${org.id}`} className="text-xs font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors">
-          Details
-        </Link>
+      <div className="flex items-center">
         <a
           href={org.website}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+          className="relative z-10 text-xs font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-1"
+          onClick={e => e.stopPropagation()}
         >
           Visit website
           <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
