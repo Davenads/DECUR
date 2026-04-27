@@ -542,7 +542,6 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
       result = result.filter(o =>
         o.name.toLowerCase().includes(q) ||
         (o.abbreviation ?? '').toLowerCase().includes(q) ||
-        o.description.toLowerCase().includes(q) ||
         o.focus_areas.some(f => f.toLowerCase().includes(q))
       );
     }
