@@ -751,7 +751,7 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
 
           <div className="mt-12 border-t border-gray-100 dark:border-gray-800 pt-6">
             <p className="text-xs text-gray-400 dark:text-gray-500 text-center max-w-xl mx-auto">
-              This index is editorially curated. Papers require a verifiable DOI, conference proceedings, or official government publication. To suggest additions, use the{' '}
+              This index is editorially curated. Entries require a verifiable scholarly, governmental, or institutional origin - peer-reviewed journals, preprints, government reports, books, and proceedings all qualify. To suggest additions, use the{' '}
               <Link href="/about" className="text-primary hover:text-primary/80 transition-colors">contact form</Link>.
             </p>
           </div>
