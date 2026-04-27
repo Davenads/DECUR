@@ -503,6 +503,8 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [activeSourceType, setActiveSourceType] = useState<string | null>(null);
   const [journalPriority, setJournalPriority] = useState<string | null>(null);
+  const [orgQuery, setOrgQuery] = useState('');
+  const [activeOrgType, setActiveOrgType] = useState<string | null>(null);
 
   useEffect(() => {
     const { tab } = router.query;
@@ -531,6 +533,21 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
     }
     return result.sort((a, b) => b.year - a.year);
   }, [papers, paperQuery, activeTag, activeSourceType]);
+
+  const filteredOrgs = useMemo(() => {
+    let result = organizations;
+    if (activeOrgType) result = result.filter(o => o.type === activeOrgType);
+    if (orgQuery.trim()) {
+      const q = orgQuery.toLowerCase();
+      result = result.filter(o =>
+        o.name.toLowerCase().includes(q) ||
+        (o.abbreviation ?? '').toLowerCase().includes(q) ||
+        o.description.toLowerCase().includes(q) ||
+        o.focus_areas.some(f => f.toLowerCase().includes(q))
+      );
+    }
+    return result;
+  }, [organizations, orgQuery, activeOrgType]);
 
   const filteredJournals = useMemo(() => {
     if (!journalPriority) return journals;
@@ -670,8 +687,53 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
 
           {/* Organizations */}
           {activeTab === 'organizations' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {organizations.map(org => <OrgCard key={org.id} org={org} />)}
+            <div>
+              <div className="flex flex-col sm:flex-row gap-3 mb-5">
+                <div className="relative flex-1">
+                  <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  <input
+                    type="text"
+                    value={orgQuery}
+                    onChange={e => setOrgQuery(e.target.value)}
+                    placeholder="Search by name, abbreviation, or focus area..."
+                    className="w-full pl-9 pr-4 py-2.5 text-sm border border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50"
+                  />
+                </div>
+                <select
+                  value={activeOrgType ?? ''}
+                  onChange={e => setActiveOrgType(e.target.value || null)}
+                  className="text-sm border border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary/30"
+                >
+                  <option value="">All types</option>
+                  {Object.entries(ORG_TYPE_LABELS).map(([val, label]) => (
+                    <option key={val} value={val}>{label}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="flex items-center justify-between mb-4">
+                <p className="text-xs text-gray-400 dark:text-gray-500">
+                  {filteredOrgs.length} {filteredOrgs.length === 1 ? 'result' : 'results'}
+                  {(orgQuery || activeOrgType) && ' matching filters'}
+                </p>
+                {(orgQuery || activeOrgType) && (
+                  <button onClick={() => { setOrgQuery(''); setActiveOrgType(null); }} className="text-xs text-primary hover:text-primary/80 transition-colors">
+                    Clear filters
+                  </button>
+                )}
+              </div>
+
+              {filteredOrgs.length === 0 ? (
+                <div className="text-center py-16 text-gray-400 dark:text-gray-500">
+                  <p className="text-sm">No organizations match your search.</p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {filteredOrgs.map(org => <OrgCard key={org.id} org={org} />)}
+                </div>
+              )}
             </div>
           )}
 
