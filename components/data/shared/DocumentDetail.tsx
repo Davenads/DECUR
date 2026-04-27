@@ -102,9 +102,13 @@ const OverviewTab: FC<{ d: DocumentEntry }> = ({ d }) => {
       {d.public_url && (
         <div className="text-xs text-gray-400">
           <span className="font-medium">Source: </span>
-          <a href={d.public_url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors break-all">
-            {d.public_url}
-          </a>
+          {(d.public_url.startsWith('https://') || d.public_url.startsWith('http://')) ? (
+            <a href={d.public_url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors break-all">
+              {d.public_url}
+            </a>
+          ) : (
+            <span className="break-all">{d.public_url}</span>
+          )}
         </div>
       )}
     </div>
@@ -247,7 +251,7 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Docum
               <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">{docTypeLabel[d.document_type]}</span>
               <span className="text-xs text-gray-400">{d.date}</span>
             </div>
-            {d.public_url && (
+            {d.public_url && (d.public_url.startsWith('https://') || d.public_url.startsWith('http://')) && (
               <a
                 href={d.public_url}
                 target="_blank"
