@@ -16,13 +16,20 @@ interface Props {
 const DocumentPage: NextPage<Props> = ({ document }) => {
   const router = useRouter();
   const [fromExplore, setFromExplore] = useState(false);
+  const [fromResearch, setFromResearch] = useState(false);
 
   useEffect(() => {
-    setFromExplore(new URLSearchParams(window.location.search).get('ref') === 'explore');
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    setFromExplore(ref === 'explore');
+    setFromResearch(ref === 'research');
   }, []);
 
-  const onBack = () => router.push(fromExplore ? '/explore#relationship-network' : '/data?category=documents');
-  const backLabel = fromExplore ? 'Relationship Network' : 'Documents';
+  const onBack = () => {
+    if (fromExplore) return router.push('/explore#relationship-network');
+    if (fromResearch) return router.push('/research');
+    return router.push('/data?category=documents');
+  };
+  const backLabel = fromExplore ? 'Relationship Network' : fromResearch ? 'Research' : 'Documents';
 
   return (
     <>

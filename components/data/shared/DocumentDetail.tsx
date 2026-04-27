@@ -99,9 +99,14 @@ const OverviewTab: FC<{ d: DocumentEntry }> = ({ d }) => {
         <p className="text-sm text-blue-900 dark:text-blue-100 leading-relaxed">{d.significance}</p>
       </div>
 
-      <div className="text-xs text-gray-400">
-        <span className="font-medium">Source: </span>{d.public_url}
-      </div>
+      {d.public_url && (
+        <div className="text-xs text-gray-400">
+          <span className="font-medium">Source: </span>
+          <a href={d.public_url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors break-all">
+            {d.public_url}
+          </a>
+        </div>
+      )}
     </div>
   );
 };
@@ -242,6 +247,19 @@ const DocumentDetail: FC<DocumentDetailProps> = ({ d, onBack, backLabel = 'Docum
               <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">{docTypeLabel[d.document_type]}</span>
               <span className="text-xs text-gray-400">{d.date}</span>
             </div>
+            {d.public_url && (
+              <a
+                href={d.public_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors mt-2"
+              >
+                View Document
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            )}
           </div>
           <BookmarkButton contentType="document" contentId={d.id} contentName={d.name} />
         </div>

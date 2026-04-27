@@ -237,11 +237,15 @@ function downloadICS(event: ResearchEvent): void {
 function PaperCard({ paper }: { paper: Paper }) {
   const typeLabel = SOURCE_TYPE_LABELS[paper.source_type] ?? paper.source_type;
   const typeColor = SOURCE_TYPE_COLORS[paper.source_type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300';
+  // Append ?ref=research so document detail pages know to route back here
+  const detailHref = paper.decur_url
+    ? `${paper.decur_url}?ref=research`
+    : `/research/papers/${paper.id}`;
 
   return (
     <div className="relative border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-primary/40 dark:hover:border-primary/40 hover:shadow-sm transition-all bg-white dark:bg-gray-800/50 cursor-pointer">
       <Link
-        href={paper.decur_url ?? `/research/papers/${paper.id}`}
+        href={detailHref}
         className="absolute inset-0 rounded-xl"
         aria-label={`View details for ${paper.title}`}
       />
