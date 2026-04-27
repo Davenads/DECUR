@@ -633,7 +633,7 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
                 <button onClick={() => setActiveTag(null)} className={`text-xs px-2.5 py-1 rounded-full font-medium transition-colors ${!activeTag ? 'bg-primary text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'}`}>
                   All topics
                 </button>
-                {['radar-analysis', 'propulsion-physics', 'materials-analysis', 'government-disclosure', 'historical-survey', 'methodology', 'astrobiology', 'witness-testimony', 'consciousness-contact'].map(tag => (
+                {['methodology', 'government-disclosure', 'consciousness', 'uap', 'epistemology', 'historical-survey', 'astrobiology', 'philosophy', 'radar-analysis', 'parapsychology', 'witness-testimony'].map(tag => (
                   <button
                     key={tag}
                     onClick={() => setActiveTag(activeTag === tag ? null : tag)}
