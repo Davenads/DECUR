@@ -511,9 +511,12 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
   const [activeOrgType, setActiveOrgType] = useState<string | null>(null);
 
   useEffect(() => {
-    const { tab } = router.query;
+    const { tab, tag } = router.query;
     if (tab === 'papers' || tab === 'organizations' || tab === 'events' || tab === 'opportunities' || tab === 'journals') {
       setActiveTab(tab);
+    }
+    if (typeof tag === 'string' && tag) {
+      setActiveTag(tag);
     }
   }, [router.query]);
 

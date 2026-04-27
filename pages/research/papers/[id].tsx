@@ -252,7 +252,7 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
                   {paper.tags.map(tag => (
                     <Link
                       key={tag}
-                      href={`/research?tab=papers`}
+                      href={`/research?tab=papers&tag=${encodeURIComponent(tag)}`}
                       className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-primary/10 hover:text-primary transition-colors"
                     >
                       {tag.replace(/-/g, ' ')}
