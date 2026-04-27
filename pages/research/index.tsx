@@ -598,7 +598,8 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
           </div>
 
           {/* Tab nav */}
-          <div className="flex border-b border-gray-200 dark:border-gray-700 mb-8 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+          <div className="relative mb-8">
+            <div className="flex border-b border-gray-200 dark:border-gray-700 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {tabs.map(tab => (
               <button
                 key={tab.id}
@@ -615,6 +616,9 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
                 </span>
               </button>
             ))}
+            </div>
+            {/* Right-edge fade — visible on mobile only, hidden once all tabs fit */}
+            <div className="sm:hidden absolute right-0 top-0 bottom-0 w-12 pointer-events-none bg-gradient-to-l from-white dark:from-gray-900 to-transparent" />
           </div>
 
           {/* Papers */}
