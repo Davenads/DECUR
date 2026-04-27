@@ -188,6 +188,22 @@ function deriveEventStatus(event: ResearchEvent): string {
   return 'ongoing';
 }
 
+/**
+ * Derive the effective status of an opportunity from its deadline date.
+ * If a deadline exists and has passed, treat the opportunity as expired
+ * regardless of the JSON `status` field. This prevents stale CFPs and
+ * grants from appearing as "Open Now" after their submission window closes.
+ * Manual `status: "expired"` in the JSON is still respected as an override.
+ */
+function deriveOpportunityStatus(opp: Opportunity): string {
+  if (opp.status === 'expired') return 'expired';
+  if (opp.deadline) {
+    const deadline = new Date(opp.deadline + 'T23:59:59');
+    if (deadline < new Date()) return 'expired';
+  }
+  return opp.status;
+}
+
 /* ── ICS generator ──────────────────────────────────────────────── */
 
 function downloadICS(event: ResearchEvent): void {
@@ -386,7 +402,7 @@ function EventCard({ event }: { event: ResearchEvent }) {
 function OpportunityCard({ opp }: { opp: Opportunity }) {
   const typeLabel = OPP_TYPE_LABELS[opp.type] ?? opp.type;
   const typeColor = OPP_TYPE_COLORS[opp.type] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300';
-  const isExpired = opp.status === 'expired';
+  const isExpired = deriveOpportunityStatus(opp) === 'expired';
   const deadlineDate = opp.deadline ? new Date(opp.deadline + 'T12:00:00') : null;
   const daysRemaining = deadlineDate ? Math.ceil((deadlineDate.getTime() - Date.now()) / 86400000) : null;
 
@@ -497,8 +513,8 @@ const Research: NextPage<ResearchProps> = ({ papers, organizations, events, oppo
 
   const upcomingEvents = events.filter(e => deriveEventStatus(e) === 'upcoming');
   const pastEvents = events.filter(e => deriveEventStatus(e) === 'past').sort((a, b) => b.date_start.localeCompare(a.date_start));
-  const activeOpportunities = opportunities.filter(o => o.status === 'active');
-  const expiredOpportunities = opportunities.filter(o => o.status === 'expired');
+  const activeOpportunities = opportunities.filter(o => deriveOpportunityStatus(o) === 'active');
+  const expiredOpportunities = opportunities.filter(o => deriveOpportunityStatus(o) === 'expired');
 
   const filteredPapers = useMemo(() => {
     let result = papers;
