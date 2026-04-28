@@ -582,6 +582,67 @@ Find the `{/* Documented Cases */}` section and add `<SourceCard>` entries for t
 
 ---
 
+## Adding a New Research Paper
+
+Papers live in `data/research/papers.json`. After adding a paper, complete **all** of the following steps.
+
+### 1. Add the paper entry to `data/research/papers.json`
+Required fields:
+- `id` - kebab-case slug, typically `[first-author-lastname]-[year]` or `[first-author]-[coauthor]-[year]`
+- `title` - full paper title
+- `authors` - display name array (e.g. `["J. Vallée", "G. Nolan"]`)
+- `author_ids` - DECUR key figure slugs for any registered figures; `[]` if none
+- `year` - four-digit integer
+- `journal` - journal/book name or `null`
+- `volume` / `issue` - string or `null`
+- `doi` - DOI string without `https://doi.org/` prefix, or `null`
+- `url` - canonical link (DOI resolver, PubMed, arXiv, publisher page)
+- `open_access` - `true` if freely available, `false` otherwise
+- `source_type` - one of: `peer-reviewed`, `preprint`, `book-chapter`, `report`, `conference`, `government-report`, `thesis`
+- `tags` - keyword array (reuse existing tags from other papers where applicable for cross-linking)
+- `case_ids` - array of DECUR case slugs directly discussed; `[]` if none
+- `organization_ids` - array of DECUR org slugs from `data/research/organizations.json`; `[]` if none
+- `summary` - 2-4 sentence plain-language DECUR-context summary
+- `abstract` - verbatim abstract text (or `""` if not available)
+
+### 2. Update linked organization `notable_paper_ids` (required)
+For every org listed in the paper's `organization_ids`, open `data/research/organizations.json` and add the paper's `id` to that org's `notable_paper_ids` array.
+
+### 3. Add a changelog entry (required)
+Add to the **top** of `data/changelog.json`:
+```json
+{
+  "date": "YYYY-MM-DD",
+  "category": "paper",
+  "id": "your-paper-id",
+  "name": "Paper Title",
+  "action": "added",
+  "note": "One sentence describing what makes this paper distinctive."
+}
+```
+
+### 4. Sync the Supabase search index (required)
+```bash
+node --env-file=.env.local scripts/populate-search-index.mjs
+```
+
+### 5. Back-navigation pattern for Related Papers links (required - do not break)
+`pages/research/papers/[id].tsx` uses a `backState` system so the back button reflects the actual navigation context. The Related Papers `<Link>` **must** include `?ref=paper&paperId=${paper.id}` so the destination paper's back button reads "← Back to [source paper title]" instead of the generic "← Back to Papers".
+
+**This is already implemented in the component.** Do not remove or simplify the `href` on Related Papers links. The pattern is:
+```tsx
+href={`/research/papers/${rp.id}?ref=paper&paperId=${paper.id}`}
+```
+
+The `useEffect` in the page handles three `ref` values:
+- `ref=search` → "← Back to Search Results" (uses `router.back()`)
+- `ref=org&orgId=X` → "← Back to [Org name]" (links to org page)
+- `ref=paper&paperId=X` → "← Back to [Paper title]" (links back to source paper)
+
+Both the top back button and the footer back button use `backState` dynamically - never hardcode `href="/research?tab=papers"` on either.
+
+---
+
 ## Adding a New Research Organization
 
 Research organizations live in `data/research/organizations.json`. After adding an org, complete **all** of the following steps or it will be invisible in search and disconnected from the network graph.

@@ -64,6 +64,7 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
     const params = new URLSearchParams(window.location.search);
     const ref = params.get('ref');
     const orgId = params.get('orgId');
+    const paperId = params.get('paperId');
     if (ref === 'search') {
       setBackState({ label: 'Search Results', href: null });
     } else if (ref === 'org' && orgId) {
@@ -73,6 +74,15 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
         setBackState({
           label: org.abbreviation ?? org.name,
           href: `/research/organizations/${orgId}`,
+        });
+      }
+    } else if (ref === 'paper' && paperId) {
+      const sourcePaper = (papersData as Array<{ id: string; title: string }>)
+        .find(p => p.id === paperId);
+      if (sourcePaper) {
+        setBackState({
+          label: sourcePaper.title,
+          href: `/research/papers/${paperId}`,
         });
       }
     }
@@ -205,7 +215,7 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
                     {relatedPapers.map(rp => (
                       <Link
                         key={rp.id}
-                        href={`/research/papers/${rp.id}`}
+                        href={`/research/papers/${rp.id}?ref=paper&paperId=${paper.id}`}
                         className="block border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary/50 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
                       >
                         <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-1">{rp.title}</p>
@@ -303,12 +313,15 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
 
           {/* Footer nav */}
           <div className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-800">
-            <Link href="/research?tab=papers" className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors flex items-center gap-1">
+            <button
+              onClick={handleBack}
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors flex items-center gap-1"
+            >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to Papers
-            </Link>
+              Back to {backState.label}
+            </button>
           </div>
 
         </div>
