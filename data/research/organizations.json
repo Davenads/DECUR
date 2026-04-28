@@ -756,6 +756,7 @@
     "founded": "1956",
     "location": "Washington D.C.",
     "website": "https://www.nicap.org",
+    "decur_url": "/programs/nicap",
     "description": "The most significant civilian UAP investigation organization of the Cold War era, founded in 1956 and directed for most of its lifespan by Major Donald Keyhoe. NICAP pursued a dual strategy of rigorous case documentation and congressional advocacy, lobbying directly for formal government hearings on UAP. Its case archive became the foundational database for serious UAP research, informing Project Blue Book critics, the Condon Report controversy, and generations of subsequent investigators. NICAP maintained direct lines to military insiders and congressional allies, and its credentialed membership - which included CIA Director Roscoe Hillenkoetter on its board - gave it unusual institutional standing. The organization dissolved around 1980 but its digital archives remain one of the most comprehensive historical UAP case repositories available.",
     "focus_areas": ["case investigation", "congressional advocacy", "sightings documentation", "military UAP incidents"],
     "key_member_ids": ["donald-keyhoe"],
