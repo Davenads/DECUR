@@ -300,7 +300,7 @@ function OrgCard({ org }: { org: Organization }) {
   return (
     <div className="relative border border-gray-200 dark:border-gray-700 rounded-xl p-5 hover:border-primary/40 dark:hover:border-primary/40 hover:shadow-sm transition-all bg-white dark:bg-gray-800/50 cursor-pointer">
       <Link
-        href={org.decur_url ?? `/research/organizations/${org.id}`}
+        href={org.decur_url ? `${org.decur_url}?ref=research` : `/research/organizations/${org.id}`}
         className="absolute inset-0 rounded-xl"
         aria-label={`View details for ${org.name}`}
       />
