@@ -7,6 +7,14 @@ import orgsData from '../../../data/research/organizations.json';
 import papersData from '../../../data/research/papers.json';
 import eventsData from '../../../data/research/events.json';
 import figuresIndex from '../../../data/key-figures/index.json';
+import {
+  SOURCE_TYPE_LABELS, SOURCE_TYPE_COLORS,
+  ORG_TYPE_LABELS, ORG_STATUS_COLORS,
+  EVENT_STATUS_COLORS,
+  deriveEventStatus,
+  capitalize,
+  type ResearchEvent,
+} from '../../../lib/research/constants';
 
 /* ── Types ──────────────────────────────────────────────────────── */
 
@@ -38,18 +46,6 @@ interface Paper {
   tags: string[];
 }
 
-interface ResearchEvent {
-  id: string;
-  name: string;
-  type: string;
-  status: string;
-  date_start: string;
-  date_end: string;
-  location: string;
-  url: string;
-  organizer_id: string | null;
-  recording_url: string | null;
-}
 
 interface FigureEntry {
   id: string;
@@ -63,53 +59,6 @@ interface OrgDetailProps {
   orgEvents: ResearchEvent[];
   keyMembers: FigureEntry[];
   relatedPapers: Paper[];
-}
-
-/* ── Constants ──────────────────────────────────────────────────── */
-
-const ORG_TYPE_LABELS: Record<string, string> = {
-  'research-institute': 'Research Institute',
-  'government-body':    'Government Body',
-  'advocacy':           'Advocacy',
-  'archive':            'Archive',
-};
-
-const ORG_STATUS_COLORS: Record<string, string> = {
-  'active':           'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-  'reduced-activity': 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300',
-  'inactive':         'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400',
-};
-
-const SOURCE_TYPE_COLORS: Record<string, string> = {
-  'peer-reviewed':          'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-  'government-report':      'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300',
-  'institute-report':       'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300',
-  'conference-proceedings': 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300',
-  'book':                   'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300',
-};
-
-const SOURCE_TYPE_LABELS: Record<string, string> = {
-  'peer-reviewed':          'Peer-Reviewed',
-  'government-report':      'Government Report',
-  'institute-report':       'Institute Report',
-  'conference-proceedings': 'Conference Proceedings',
-  'book':                   'Book',
-};
-
-const EVENT_STATUS_COLORS: Record<string, string> = {
-  'upcoming': 'bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300',
-  'past':     'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400',
-  'ongoing':  'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-};
-
-function deriveEventStatus(event: ResearchEvent): string {
-  if (event.status === 'cancelled' || event.status === 'postponed') return event.status;
-  const now   = new Date();
-  const start = new Date(event.date_start + 'T00:00:00');
-  const end   = new Date(event.date_end   + 'T23:59:59');
-  if (end < now)   return 'past';
-  if (start > now) return 'upcoming';
-  return 'ongoing';
 }
 
 /* ── Page ───────────────────────────────────────────────────────── */
@@ -140,7 +89,7 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
 
   const typeLabel = ORG_TYPE_LABELS[org.type] ?? org.type;
   const statusColor = ORG_STATUS_COLORS[org.status] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400';
-  const statusLabel = org.status === 'reduced-activity' ? 'Reduced Activity' : org.status.charAt(0).toUpperCase() + org.status.slice(1);
+  const statusLabel = org.status === 'reduced-activity' ? 'Reduced Activity' : capitalize(org.status);
 
   const upcomingEvents = orgEvents.filter(e => deriveEventStatus(e) === 'upcoming');
   const pastEvents = orgEvents.filter(e => deriveEventStatus(e) === 'past').sort((a, b) => b.date_start.localeCompare(a.date_start));
@@ -251,7 +200,9 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
                 <div>
                   <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-4">Events</h2>
                   <div className="space-y-3">
-                    {[...upcomingEvents, ...pastEvents].map(event => (
+                    {[...upcomingEvents, ...pastEvents].map(event => {
+                      const eventStatus = deriveEventStatus(event);
+                      return (
                       <a
                         key={event.id}
                         href={event.url}
@@ -260,8 +211,8 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
                         className="block border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-gray-300 dark:hover:border-gray-600 transition-colors"
                       >
                         <div className="flex items-center gap-2 mb-1">
-                          <span className={`text-xs font-medium px-1.5 py-0.5 rounded-full ${EVENT_STATUS_COLORS[deriveEventStatus(event)] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'}`}>
-                            {deriveEventStatus(event).charAt(0).toUpperCase() + deriveEventStatus(event).slice(1)}
+                          <span className={`text-xs font-medium px-1.5 py-0.5 rounded-full ${EVENT_STATUS_COLORS[eventStatus] ?? 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400'}`}>
+                            {capitalize(eventStatus)}
                           </span>
                           <span className="text-xs text-gray-400 dark:text-gray-500">
                             {new Date(event.date_start + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
@@ -270,7 +221,8 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
                         <p className="text-sm font-medium text-gray-900 dark:text-gray-100">{event.name}</p>
                         <p className="text-xs text-gray-500 dark:text-gray-400">{event.location}</p>
                       </a>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               )}

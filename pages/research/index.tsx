@@ -8,6 +8,15 @@ import orgsData from '../../data/research/organizations.json';
 import eventsData from '../../data/research/events.json';
 import opportunitiesData from '../../data/research/opportunities.json';
 import journalsData from '../../data/research/journals.json';
+import {
+  SOURCE_TYPE_LABELS, SOURCE_TYPE_COLORS,
+  ORG_TYPE_LABELS, ORG_STATUS_COLORS,
+  EVENT_TYPE_LABELS, EVENT_STATUS_COLORS,
+  OPP_TYPE_COLORS, OPP_TYPE_LABELS,
+  deriveEventStatus, deriveOpportunityStatus,
+  capitalize, formatTag,
+  type ResearchEvent, type Opportunity,
+} from '../../lib/research/constants';
 
 /* ── Types ──────────────────────────────────────────────────────── */
 
@@ -45,33 +54,6 @@ interface Organization {
   notable_paper_ids: string[];
 }
 
-interface ResearchEvent {
-  id: string;
-  name: string;
-  type: string;
-  status: string;
-  date_start: string;
-  date_end: string;
-  location: string;
-  format: string;
-  url: string;
-  organizer_name: string;
-  description: string;
-  recording_url: string | null;
-}
-
-interface Opportunity {
-  id: string;
-  type: string;
-  title: string;
-  organization: string;
-  deadline: string | null;
-  amount: string | null;
-  url: string;
-  description: string;
-  eligibility: string | null;
-  status: string;
-}
 
 interface Journal {
   id: string;
@@ -101,108 +83,6 @@ const JOURNAL_PRIORITY_COLORS: Record<string, string> = {
   'medium': 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300',
   'low':    'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400',
 };
-
-/* ── Constants ──────────────────────────────────────────────────── */
-
-const SOURCE_TYPE_LABELS: Record<string, string> = {
-  'peer-reviewed':          'Peer-Reviewed',
-  'government-report':      'Government Report',
-  'institute-report':       'Institute Report',
-  'conference-proceedings': 'Conference Proceedings',
-  'book':                   'Book',
-  'preprint':               'Preprint',
-};
-
-const SOURCE_TYPE_COLORS: Record<string, string> = {
-  'peer-reviewed':          'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-  'government-report':      'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300',
-  'institute-report':       'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300',
-  'conference-proceedings': 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300',
-  'book':                   'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300',
-  'preprint':               'bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300',
-};
-
-const ORG_TYPE_LABELS: Record<string, string> = {
-  'research-institute': 'Research Institute',
-  'government-body':    'Government Body',
-  'advocacy':           'Advocacy',
-  'archive':            'Archive',
-  'citizen-science':    'Citizen Science',
-  'media':              'Media & Archive',
-  'funding':            'Funding Body',
-};
-
-const ORG_STATUS_COLORS: Record<string, string> = {
-  'active':           'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-  'reduced-activity': 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300',
-  'inactive':         'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400',
-};
-
-const EVENT_TYPE_LABELS: Record<string, string> = {
-  'symposium':             'Symposium',
-  'conference':            'Conference',
-  'congressional-hearing': 'Congressional Hearing',
-  'webinar':               'Webinar',
-  'workshop':              'Workshop',
-};
-
-const EVENT_STATUS_COLORS: Record<string, string> = {
-  'upcoming': 'bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300',
-  'past':     'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400',
-  'ongoing':  'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-};
-
-const OPP_TYPE_COLORS: Record<string, string> = {
-  'call-for-papers':         'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300',
-  'grant':                   'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300',
-  'fellowship':              'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300',
-  'job-posting':             'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-  'participant-recruitment': 'bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300',
-  'collaboration-request':   'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300',
-};
-
-const OPP_TYPE_LABELS: Record<string, string> = {
-  'call-for-papers':         'Call for Papers',
-  'grant':                   'Grant',
-  'fellowship':              'Fellowship',
-  'job-posting':             'Job Posting',
-  'participant-recruitment': 'Participant Recruitment',
-  'collaboration-request':   'Collaboration Request',
-};
-
-/* ── Event status derivation ────────────────────────────────────── */
-
-/**
- * Derive the display status of an event from its dates rather than the JSON
- * `status` field. The JSON field acts as a manual override only for edge cases
- * like "cancelled" or "postponed" that cannot be inferred from dates alone.
- * This prevents events from being stuck as "upcoming" after their date passes.
- */
-function deriveEventStatus(event: ResearchEvent): string {
-  if (event.status === 'cancelled' || event.status === 'postponed') return event.status;
-  const now = new Date();
-  const start = new Date(event.date_start + 'T00:00:00');
-  const end   = new Date(event.date_end   + 'T23:59:59');
-  if (end < now)   return 'past';
-  if (start > now) return 'upcoming';
-  return 'ongoing';
-}
-
-/**
- * Derive the effective status of an opportunity from its deadline date.
- * If a deadline exists and has passed, treat the opportunity as expired
- * regardless of the JSON `status` field. This prevents stale CFPs and
- * grants from appearing as "Open Now" after their submission window closes.
- * Manual `status: "expired"` in the JSON is still respected as an override.
- */
-function deriveOpportunityStatus(opp: Opportunity): string {
-  if (opp.status === 'expired') return 'expired';
-  if (opp.deadline) {
-    const deadline = new Date(opp.deadline + 'T23:59:59');
-    if (deadline < new Date()) return 'expired';
-  }
-  return opp.status;
-}
 
 /* ── ICS generator ──────────────────────────────────────────────── */
 

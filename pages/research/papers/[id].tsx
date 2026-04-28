@@ -6,6 +6,7 @@ import SeoHead from '../../../components/SeoHead';
 import papersData from '../../../data/research/papers.json';
 import orgsData from '../../../data/research/organizations.json';
 import figuresIndex from '../../../data/key-figures/index.json';
+import { SOURCE_TYPE_LABELS, SOURCE_TYPE_COLORS } from '../../../lib/research/constants';
 
 /* ── Types ──────────────────────────────────────────────────────── */
 
@@ -49,24 +50,6 @@ interface PaperDetailProps {
   relatedOrgs: Organization[];
   linkedFigures: FigureEntry[];
 }
-
-/* ── Constants ──────────────────────────────────────────────────── */
-
-const SOURCE_TYPE_LABELS: Record<string, string> = {
-  'peer-reviewed':          'Peer-Reviewed',
-  'government-report':      'Government Report',
-  'institute-report':       'Institute Report',
-  'conference-proceedings': 'Conference Proceedings',
-  'book':                   'Book',
-};
-
-const SOURCE_TYPE_COLORS: Record<string, string> = {
-  'peer-reviewed':          'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-  'government-report':      'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300',
-  'institute-report':       'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300',
-  'conference-proceedings': 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300',
-  'book':                   'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300',
-};
 
 /* ── Page ───────────────────────────────────────────────────────── */
 
