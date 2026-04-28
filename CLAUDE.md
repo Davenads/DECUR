@@ -641,6 +641,8 @@ The `useEffect` in the page handles three `ref` values:
 
 Both the top back button and the footer back button use `backState` dynamically - never hardcode `href="/research?tab=papers"` on either.
 
+**IMPORTANT — use `router.query`, not `window.location.search`:** The `useEffect` reads params via `router.query` with `[router.isReady, router.query]` as dependencies. Do NOT revert to `window.location.search` — when navigating between two instances of the same dynamic page component (paper A → paper B), Next.js may reuse the component without a full unmount, so `useEffect([])` won't re-run. `router.query` in the dependency array ensures the effect re-runs on every route change and reads the correct params after hydration.
+
 ---
 
 ## Adding a New Research Organization

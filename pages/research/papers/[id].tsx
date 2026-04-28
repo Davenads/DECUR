@@ -61,10 +61,8 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
   });
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const ref = params.get('ref');
-    const orgId = params.get('orgId');
-    const paperId = params.get('paperId');
+    if (!router.isReady) return;
+    const { ref, orgId, paperId } = router.query as Record<string, string | undefined>;
     if (ref === 'search') {
       setBackState({ label: 'Search Results', href: null });
     } else if (ref === 'org' && orgId) {
@@ -85,8 +83,10 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
           href: `/research/papers/${paperId}`,
         });
       }
+    } else {
+      setBackState({ label: 'Papers', href: '/research?tab=papers' });
     }
-  }, []);
+  }, [router.isReady, router.query]);
 
   const handleBack = () => {
     if (backState.href) {
