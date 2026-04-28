@@ -125,6 +125,8 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
     const ref = new URLSearchParams(window.location.search).get('ref');
     if (ref === 'search') {
       setBackState({ label: 'Search Results', href: null });
+    } else if (ref === 'explore') {
+      setBackState({ label: 'Relationship Network', href: '/explore#relationship-network' });
     }
   }, []);
 

@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import { graphData, NODE_COLORS, NodeType, GraphNode, GraphLink } from '../../data/network-graph';
 import insidersIndex from '../../data/key-figures/index.json';
 import contractorsData from '../../data/contractors.json';
+import researchOrgsData from '../../data/research/organizations.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FGRef = any;
@@ -30,7 +31,16 @@ const PROGRAM_IDS = new Set([
   'aawsap', 'aaro', 'uap-task-force', 'immaculate-constellation', 'kona-blue',
   'ttsa', 'sol-foundation', 'nids', 'bigelow-aerospace',
   'nicap', 'mufon', 'jsoc', 'afosi', 'ipu', 'oga', 'sdi', 'seti',
+  'galileo-project',
 ]);
+
+// Research organization IDs that have dedicated /research/organizations/[id] pages.
+// PROGRAM_IDS takes precedence — orgs in both sets route to /programs/[id].
+const RESEARCH_ORG_IDS = new Set(
+  (researchOrgsData as Array<{ id: string }>)
+    .filter(o => !PROGRAM_IDS.has(o.id))
+    .map(o => o.id)
+);
 
 // Deep links for concept/technology/facility nodes that are best explained
 // within a specific profile's feature tab rather than a standalone page.
@@ -310,6 +320,7 @@ const NetworkGraph: FC = () => {
         (gNode.type === 'document' && DOCUMENT_IDS.has(id)) ||
         (gNode.type === 'case' && CASE_IDS.has(id)) ||
         ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(id)) ||
+        (gNode.type === 'organization' && RESEARCH_ORG_IDS.has(id)) ||
         (gNode.type === 'contractor' && CONTRACTOR_IDS.has(id)) ||
         DEEP_LINK_MAP[id] != null;
 
@@ -317,7 +328,8 @@ const NetworkGraph: FC = () => {
         if (gNode.type === 'person') router.push(`/figures/${id}?ref=explore`);
         else if (gNode.type === 'document') router.push(`/documents/${id}?ref=explore`);
         else if (gNode.type === 'case') router.push(`/cases/${id}?ref=explore`);
-        else if (gNode.type === 'organization' || gNode.type === 'project') router.push(`/programs/${id}?ref=explore`);
+        else if ((gNode.type === 'organization' || gNode.type === 'project') && PROGRAM_IDS.has(id)) router.push(`/programs/${id}?ref=explore`);
+        else if (gNode.type === 'organization' && RESEARCH_ORG_IDS.has(id)) router.push(`/research/organizations/${id}?ref=explore`);
         else if (gNode.type === 'contractor') router.push(`/contractors/${id}?ref=explore`);
         else if (DEEP_LINK_MAP[id]) router.push(`${DEEP_LINK_MAP[id]}?ref=explore`);
         return;
@@ -350,6 +362,8 @@ const NetworkGraph: FC = () => {
       router.push(`/cases/${id}?ref=explore`);
     } else if ((clickedNode.type === 'organization' || clickedNode.type === 'project') && PROGRAM_IDS.has(id)) {
       router.push(`/programs/${id}?ref=explore`);
+    } else if (clickedNode.type === 'organization' && RESEARCH_ORG_IDS.has(id)) {
+      router.push(`/research/organizations/${id}?ref=explore`);
     } else if (clickedNode.type === 'contractor' && CONTRACTOR_IDS.has(id)) {
       router.push(`/contractors/${id}?ref=explore`);
     } else if (DEEP_LINK_MAP[id]) {
@@ -520,6 +534,7 @@ const NetworkGraph: FC = () => {
     (clickedNode.type === 'document' && DOCUMENT_IDS.has(clickedNode.id)) ||
     (clickedNode.type === 'case' && CASE_IDS.has(clickedNode.id)) ||
     ((clickedNode.type === 'organization' || clickedNode.type === 'project') && PROGRAM_IDS.has(clickedNode.id)) ||
+    (clickedNode.type === 'organization' && RESEARCH_ORG_IDS.has(clickedNode.id)) ||
     (clickedNode.type === 'contractor' && CONTRACTOR_IDS.has(clickedNode.id)) ||
     DEEP_LINK_MAP[clickedNode.id] != null
   );
@@ -721,7 +736,8 @@ const NetworkGraph: FC = () => {
                 >
                   {clickedNode?.type === 'document' ? 'View Document →'
                     : clickedNode?.type === 'case' ? 'View Case →'
-                    : (clickedNode?.type === 'organization' || clickedNode?.type === 'project') ? 'View Program →'
+                    : (clickedNode?.type === 'organization' || clickedNode?.type === 'project') && PROGRAM_IDS.has(clickedNode.id) ? 'View Program →'
+                    : clickedNode?.type === 'organization' && RESEARCH_ORG_IDS.has(clickedNode.id) ? 'View Organization →'
                     : clickedNode?.type === 'contractor' ? 'View Contractor →'
                     : 'View Profile →'}
                 </button>
