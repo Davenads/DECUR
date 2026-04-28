@@ -563,7 +563,7 @@
     "description": "An academic initiative hosted by the Scientific and Medical Network that calls for a significant expansion of science beyond the materialist paradigm. The Galileo Commission published its flagship 2019 report - signed by over 90 academics and researchers - arguing that the current scientific framework excludes phenomena that cannot be adequately explained by purely physical processes, and proposing a broader, evidence-inclusive methodology. The Commission is explicitly distinct from the Galileo Project (Avi Loeb's Harvard observational program) and should not be conflated with it. Its academic signatories and institutional SMN affiliation provide substantial legitimacy within the post-materialist science movement.",
     "focus_areas": ["philosophy of science", "post-materialism", "science reform", "consciousness"],
     "key_member_ids": [],
-    "notable_paper_ids": []
+    "notable_paper_ids": ["kastrup-2017-analytic-idealism", "chalmers-1995-hard-problem"]
   },
   {
     "id": "institute-advanced-consciousness-studies",
