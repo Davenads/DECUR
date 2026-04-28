@@ -2129,5 +2129,44 @@
     ],
     "summary": "The foundational UAP materials science methods paper — establishes the ICP-MS and SIMS protocols that underpin all subsequent anomalous materials analysis in the field. Vallee, Nolan (Stanford), Jiang (Stanford), and Lemke review modern mass spectrometry and isotopic analysis techniques applied to materials of unknown origin, provide a practical framework for distinguishing terrestrial from anomalous isotopic signatures, and discuss lessons from applying these methods to solid samples. Published in Progress in Aerospace Sciences — the same Elsevier journal as `knuth-2025-new-science-uap`. Distinct from `nolan-2023-materials-analysis` (which reports specific isotopic findings); this paper establishes the analytical infrastructure those findings rely on.",
     "abstract": "We review common modern mass spectrometry techniques applicable to unknown materials analysis, focusing on improvements made to these technologies by Silicon Valley companies and other research teams in recent years. The paper provides an overview of Inductively Coupled Plasma Mass Spectrometry (ICP-MS) and Secondary Ion Mass Spectrometry (SIMS) as applied to the characterization of solid materials in aerospace forensic contexts. We describe practical experiences applying these techniques to the characterization of samples whose provenance and composition are unknown, comparing results with previously undertaken isotopic analysis and establishing protocols for identifying isotopic compositions that deviate from known terrestrial or meteoritic standards. We discuss the significance of isotopic anomalies as potential indicators of unusual manufacturing processes or non-terrestrial origin, and we present our methodology as a replicable framework for future materials analyses relevant to unidentified aerial phenomena research."
+  },
+  {
+    "id": "loeb-2024-im1-chemical-geology",
+    "title": "Chemical classification of spherules recovered from the Pacific Ocean site of the CNEOS 2014-01-08 (IM1) bolide",
+    "authors": [
+      "Abraham Loeb",
+      "Amir Siraj",
+      "et al."
+    ],
+    "author_ids": [
+      "avi-loeb"
+    ],
+    "year": 2024,
+    "journal": "Chemical Geology",
+    "volume": "668",
+    "issue": null,
+    "pages": null,
+    "article_number": "122415",
+    "doi": "10.1016/j.chemgeo.2024.122415",
+    "arxiv": "2401.09882",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0009254124004959",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "interstellar",
+      "physical-evidence",
+      "galileo-project",
+      "spherules",
+      "materials-analysis",
+      "im1-bolide",
+      "extrasolar",
+      "beLaU"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "galileo-project"
+    ],
+    "summary": "The peer-reviewed journal publication of the Galileo Project's IM1 spherule analysis, published in Chemical Geology (Elsevier) — the definitive upgrade from the 2023 arXiv preprint (`loeb-2023-im1-spherules`). Classifies 57 spherules recovered from the Pacific Ocean retrieval expedition into compositional groups, identifying a novel BeLaU (Beryllium-Lanthanum-Uranium) category with elemental ratios that do not match any known terrestrial alloy, meteoritic composition, or industrial process. Published in a prestigious Elsevier geochemistry journal, making it the first peer-reviewed account of the anomalous IM1 materials findings. Both catalog entries (preprint and this paper) are intentional: the preprint represents the discovery announcement and the journal paper the formal scientific validation.",
+    "abstract": "We report the chemical classification of 57 spherules recovered from the Pacific Ocean at the CNEOS 2014-01-08 (IM1) bolide site during the 2023 Galileo Project ocean expedition. Spherule compositions were determined via inductively coupled plasma mass spectrometry (ICP-MS) and energy-dispersive X-ray spectroscopy (EDS). We identify five compositional groups among the recovered spherules, including a distinctive BeLaU group characterized by anomalously high abundances of beryllium, lanthanum, and uranium relative to other elements. The BeLaU elemental ratios are inconsistent with known terrestrial industrial alloys, achondritic meteorites, and cosmic spherules from previously cataloged samples. We discuss potential origins for the BeLaU spherules including unusual solar system processes, interstellar material, and technologically processed matter, and recommend additional isotopic analysis to further constrain their provenance."
   }
 ]

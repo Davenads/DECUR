@@ -1,6 +1,14 @@
 [
   {
     "date": "2026-04-28",
+    "category": "paper",
+    "id": "loeb-2024-im1-chemical-geology",
+    "name": "Loeb et al. 2024 — IM1 Spherule Chemical Classification (Chemical Geology)",
+    "action": "added",
+    "note": "Peer-reviewed journal publication of the Galileo Project IM1 spherule analysis in Chemical Geology, identifying the anomalous BeLaU compositional group with no match in known terrestrial, meteoritic, or industrial alloy databases."
+  },
+  {
+    "date": "2026-04-28",
     "category": "figure",
     "id": "vallee-nolan-jiang-lemke-2022",
     "name": "Vallee, Nolan, Jiang & Lemke 2022 — UAP Materials Characterization Methods",
