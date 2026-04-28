@@ -23,9 +23,9 @@ import timelineRaw from '../../data/timeline.json';
 
 // At world-zoom (z=3) the entire globe fits in ~480px height. Dots at this
 // zoom are ~4px circles that heavily overlap — 2,000 is visually indistinguishable
-// from 10,000 and loads ~5x faster. The full 10k cap is still enforced server-side
-// for zoomed-in views where individual pins are meaningful.
-const VIEWPORT_LIMIT = 3000;
+// from 10,000 and loads ~5x faster. 10k matches the original server-side design
+// intent and meaningfully improves density at intermediate zoom levels (region view).
+const VIEWPORT_LIMIT = 10000;
 
 // Delay after onMoveEnd before fetching — collapses rapid sequential gestures
 // (scroll-zoom, pinch, keyboard nav) into a single request.
