@@ -9,9 +9,21 @@
     "location": "United States (distributed)",
     "website": "https://www.explorescu.org",
     "description": "A volunteer organization of scientists, engineers, and academics who apply rigorous scientific methodology to the analysis of UAP reports. Best known for the 270-page forensic analysis of the 2004 Nimitz incident and the peer-reviewed Entropy paper on Tic Tac flight characteristics by Kevin Knuth. Publishes technical reports and hosts an annual conference.",
-    "focus_areas": ["radar analysis", "physics of UAP flight", "peer-reviewed publication", "case forensics"],
+    "focus_areas": [
+      "radar analysis",
+      "physics of UAP flight",
+      "peer-reviewed publication",
+      "case forensics"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["knuth-2019-flight-characteristics", "powell-2019-tic-tac-forensic", "scu-2018-jal-1628", "kellerhals-2022-gimbal", "grosvenor-2025-nuclear-uap"]
+    "notable_paper_ids": [
+      "knuth-2019-flight-characteristics",
+      "powell-2019-tic-tac-forensic",
+      "scu-2018-jal-1628",
+      "kellerhals-2022-gimbal",
+      "grosvenor-2025-nuclear-uap",
+      "knuth-2025-new-science-uap"
+    ]
   },
   {
     "id": "sol-foundation",
@@ -24,9 +36,18 @@
     "location": "Stanford, California",
     "website": "https://www.sol-foundation.org",
     "description": "A research institute founded to support rigorous scientific and policy investigation of UAP, led by Garry Nolan and Peter Skafish. Hosts an annual symposium at Stanford University featuring scientists, policy professionals, and researchers. Distinguished by its institutional affiliation with Stanford and its emphasis on consciousness research alongside physical analysis.",
-    "focus_areas": ["academic symposia", "consciousness research", "materials analysis", "UAP policy"],
-    "key_member_ids": ["garry-nolan"],
-    "notable_paper_ids": ["sol-foundation-proceedings-2023"]
+    "focus_areas": [
+      "academic symposia",
+      "consciousness research",
+      "materials analysis",
+      "UAP policy"
+    ],
+    "key_member_ids": [
+      "garry-nolan"
+    ],
+    "notable_paper_ids": [
+      "sol-foundation-proceedings-2023"
+    ]
   },
   {
     "id": "galileo-project",
@@ -39,9 +60,17 @@
     "location": "Harvard University, Cambridge, Massachusetts",
     "website": "https://projects.iq.harvard.edu/galileo",
     "description": "Established by Harvard astrophysicist Avi Loeb following his Oumuamua hypothesis. Operates a multi-sensor observatory in the Harvard Yard to detect and characterize anomalous aerial objects in real-time. Uses a telescope array, infrared cameras, radio receivers, and audio sensors. Takes a purely empirical observational approach distinct from report-analysis models.",
-    "focus_areas": ["real-time sky observation", "technosignature detection", "anomalous object characterization", "instrumented data collection"],
+    "focus_areas": [
+      "real-time sky observation",
+      "technosignature detection",
+      "anomalous object characterization",
+      "instrumented data collection"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["loeb-2022-galileo-project", "loeb-2023-im1-spherules"]
+    "notable_paper_ids": [
+      "loeb-2022-galileo-project",
+      "loeb-2023-im1-spherules"
+    ]
   },
   {
     "id": "bigelow-institute-for-consciousness-studies",
@@ -53,8 +82,15 @@
     "location": "Las Vegas, Nevada",
     "website": "https://www.bigelowinstitute.org",
     "description": "Founded by Robert Bigelow following his sale of Bigelow Aerospace. BICS funds research into consciousness survival after death and anomalous cognition, areas with significant overlap with UAP contact phenomenology. Known for hosting essay competitions with $1M+ in prizes and funding independent researchers globally.",
-    "focus_areas": ["consciousness research", "post-mortem survival", "anomalous cognition", "grant funding"],
-    "key_member_ids": ["robert-bigelow"],
+    "focus_areas": [
+      "consciousness research",
+      "post-mortem survival",
+      "anomalous cognition",
+      "grant funding"
+    ],
+    "key_member_ids": [
+      "robert-bigelow"
+    ],
     "notable_paper_ids": []
   },
   {
@@ -67,9 +103,16 @@
     "location": "Chicago, Illinois",
     "website": "https://www.cufos.org",
     "description": "Founded by J. Allen Hynek after his break with Project Blue Book. Maintains the UFOCAT cross-referenced database (one of the five sources in DECUR's sightings integration) and publishes the International UFO Reporter. The oldest continuously operating scientific UAP research organization in the United States.",
-    "focus_areas": ["historical case archive", "UFOCAT database", "peer-reviewed journal", "case investigation methodology"],
+    "focus_areas": [
+      "historical case archive",
+      "UFOCAT database",
+      "peer-reviewed journal",
+      "case investigation methodology"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["hynek-1972-ufo-experience"]
+    "notable_paper_ids": [
+      "hynek-1972-ufo-experience"
+    ]
   },
   {
     "id": "narcap",
@@ -81,7 +124,12 @@
     "location": "United States",
     "website": "https://www.narcap.org",
     "description": "A research organization focused specifically on UAP encounters in commercial and military aviation. Collects reports from pilots and air traffic controllers who cannot file formal reports without career risk. Maintains a database of aviation-specific UAP encounters with safety implications. Works with ICAO on reporting protocol development.",
-    "focus_areas": ["aviation safety", "pilot testimony", "air traffic control records", "international reporting standards"],
+    "focus_areas": [
+      "aviation safety",
+      "pilot testimony",
+      "air traffic control records",
+      "international reporting standards"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -96,7 +144,12 @@
     "location": "United States",
     "website": "https://www.mufon.com",
     "description": "The largest civilian UAP investigation organization in the world. Operates a network of trained field investigators who respond to reports, conduct witness interviews, and file structured investigation reports. MUFON reports form one of the five source databases in DECUR's sightings integration. Has investigated hundreds of thousands of cases since 1969.",
-    "focus_areas": ["field investigation", "witness interviewing", "case database", "investigator training"],
+    "focus_areas": [
+      "field investigation",
+      "witness interviewing",
+      "case database",
+      "investigator training"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -111,8 +164,17 @@
     "location": "Encinitas, California",
     "website": "https://tothestars.media",
     "description": "Founded by Tom DeLonge with a board including Luis Elizondo, Hal Puthoff, and Chris Mellon. Responsible for the declassification and release of the Nimitz, Gimbal, and Go Fast videos in 2017-2018. Also produced the History Channel series 'Unidentified.' Effectively catalyzed the current era of government UAP disclosure through strategic media engagement.",
-    "focus_areas": ["government disclosure", "media production", "materials research", "aerospace engineering"],
-    "key_member_ids": ["luis-elizondo", "hal-puthoff", "chris-mellon"],
+    "focus_areas": [
+      "government disclosure",
+      "media production",
+      "materials research",
+      "aerospace engineering"
+    ],
+    "key_member_ids": [
+      "luis-elizondo",
+      "hal-puthoff",
+      "chris-mellon"
+    ],
     "notable_paper_ids": []
   },
   {
@@ -125,8 +187,15 @@
     "location": "United States",
     "website": "https://www.uapx.net",
     "description": "An instrumentally-focused research organization that deploys multi-sensor arrays to field locations with high UAP activity, including the ocean near Puerto Rico. Led in part by Tim Gallaudet. Uses calibrated, timestamped sensor data to capture and characterize anomalous events rather than relying on single-sensor or eyewitness testimony alone.",
-    "focus_areas": ["instrumented field research", "sensor array deployment", "ocean surface observation", "data calibration"],
-    "key_member_ids": ["tim-gallaudet"],
+    "focus_areas": [
+      "instrumented field research",
+      "sensor array deployment",
+      "ocean surface observation",
+      "data calibration"
+    ],
+    "key_member_ids": [
+      "tim-gallaudet"
+    ],
     "notable_paper_ids": []
   },
   {
@@ -139,9 +208,16 @@
     "location": "Toulouse, France",
     "website": "https://www.cnes.fr/en/web/CNES-en/6851-geipan.php",
     "description": "The official French government UAP investigation unit, operated under CNES (the French space agency). One of the oldest continuously operating official UAP investigation programs in the world. Publishes its case database publicly. Categorizes reports into four types (A through D) based on explanatory confidence. Highly regarded for transparency and methodological rigor.",
-    "focus_areas": ["official case investigation", "public database", "case classification methodology", "international cooperation"],
+    "focus_areas": [
+      "official case investigation",
+      "public database",
+      "case classification methodology",
+      "international cooperation"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["geipan-2007-cometa"]
+    "notable_paper_ids": [
+      "geipan-2007-cometa"
+    ]
   },
   {
     "id": "cefaa",
@@ -153,7 +229,12 @@
     "location": "Santiago, Chile",
     "website": "https://www.dgac.gob.cl",
     "description": "Chile's official UAP investigation committee, operating under the Directorate General of Civil Aeronautics. Investigates reports from pilots, air traffic controllers, and military personnel. Released the El Bosque Air Base video in 2014 after a 2-year forensic analysis - one of the most transparent official UAP case releases by any government.",
-    "focus_areas": ["aviation UAP cases", "military investigations", "official video analysis", "Latin American cases"],
+    "focus_areas": [
+      "aviation UAP cases",
+      "military investigations",
+      "official video analysis",
+      "Latin American cases"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -168,9 +249,16 @@
     "location": "Pentagon, Arlington, Virginia",
     "website": "https://www.aaro.mil",
     "description": "The U.S. Department of Defense's official UAP investigation office, established by the National Defense Authorization Act for FY2022. Succeeded the UAP Task Force. Responsible for detecting, identifying, and attributing UAP encounters across all domains - air, space, sea, and subsurface. Maintains a secure reporting mechanism for military and intelligence personnel.",
-    "focus_areas": ["all-domain surveillance", "inter-agency coordination", "secure reporting", "congressional reporting"],
+    "focus_areas": [
+      "all-domain surveillance",
+      "inter-agency coordination",
+      "secure reporting",
+      "congressional reporting"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["aaro-historical-record-2024-vol1"]
+    "notable_paper_ids": [
+      "aaro-historical-record-2024-vol1"
+    ]
   },
   {
     "id": "nasa",
@@ -182,9 +270,16 @@
     "location": "Washington D.C.",
     "website": "https://www.nasa.gov/uap",
     "description": "NASA established a UAP research function in 2023 following the UAP Independent Study Team report. Appointed Mark McInerney as Director of UAP Research. Focused on applying NASA's existing sensor assets and data science capabilities to UAP detection and characterization. Represents the first time NASA has formally engaged with the UAP topic institutionally.",
-    "focus_areas": ["satellite sensor data", "atmospheric analysis", "data science", "technosignature research"],
+    "focus_areas": [
+      "satellite sensor data",
+      "atmospheric analysis",
+      "data science",
+      "technosignature research"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["nasa-uap-ist-2023"]
+    "notable_paper_ids": [
+      "nasa-uap-ist-2023"
+    ]
   },
   {
     "id": "uap-disclosure-fund",
@@ -196,7 +291,12 @@
     "location": "Washington D.C.",
     "website": "https://www.uapdisclosurefund.org",
     "description": "A non-profit advocacy organization that funds legal representation for whistleblowers and lobbies Congress for stronger UAP transparency legislation. Supported the legal proceedings around David Grusch's whistleblower case. Works with the attorneys involved in the National Security Act whistleblower protections that enabled congressional UAP testimony.",
-    "focus_areas": ["whistleblower support", "congressional advocacy", "legal protection", "disclosure legislation"],
+    "focus_areas": [
+      "whistleblower support",
+      "congressional advocacy",
+      "legal protection",
+      "disclosure legislation"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -210,7 +310,12 @@
     "location": "United States",
     "website": "https://www.theblackvault.com",
     "description": "The largest online FOIA document archive, operated by John Greenewald Jr. since 1996. Has filed over 10,000 FOIA requests and hosts hundreds of thousands of declassified government documents. An essential primary source repository for UAP researchers working with declassified materials. Responsible for obtaining the full AATIP program documents and other key releases.",
-    "focus_areas": ["FOIA archive", "declassified document hosting", "government transparency", "historical records"],
+    "focus_areas": [
+      "FOIA archive",
+      "declassified document hosting",
+      "government transparency",
+      "historical records"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -224,7 +329,12 @@
     "location": "University of Virginia, Charlottesville, Virginia",
     "website": "https://med.virginia.edu/perceptual-studies/",
     "description": "The most academically credentialed consciousness research unit in the world, housed within the University of Virginia School of Medicine. Founded by Ian Stevenson, whose 40-year investigation of children's past-life memories produced over 3,000 documented cases. Current leadership under Jim Tucker (reincarnation cases) and Bruce Greyson (near-death experiences) continues peer-reviewed publication in mainstream medical journals. DOPS's methodology - rigorous case collection, blind follow-up, prospective criteria - sets the evidentiary standard for post-mortem consciousness research globally.",
-    "focus_areas": ["reincarnation case studies", "near-death experiences", "out-of-body experiences", "consciousness survival research"],
+    "focus_areas": [
+      "reincarnation case studies",
+      "near-death experiences",
+      "out-of-body experiences",
+      "consciousness survival research"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -238,9 +348,16 @@
     "location": "NYU Langone Health, New York City, New York",
     "website": "https://med.nyu.edu/departments-institutes/surgery/research/parnia-lab",
     "description": "Led by Dr. Sam Parnia at NYU Langone, the Parnia Lab runs the largest prospective studies of near-death experiences during cardiac arrest, including the landmark AWARE (AWAreness during REsuscitation) studies. The lab uses calibrated visual targets positioned above resuscitation tables to test out-of-body perception claims under controlled hospital conditions. Parnia's research represents the most methodologically rigorous attempt to empirically test consciousness survival hypotheses in a clinical setting.",
-    "focus_areas": ["near-death experiences", "cardiac arrest research", "out-of-body perception", "resuscitation science"],
+    "focus_areas": [
+      "near-death experiences",
+      "cardiac arrest research",
+      "out-of-body perception",
+      "resuscitation science"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["parnia-2014-aware"]
+    "notable_paper_ids": [
+      "parnia-2014-aware"
+    ]
   },
   {
     "id": "monroe-institute",
@@ -252,7 +369,12 @@
     "location": "Faber, Virginia",
     "website": "https://www.monroeinstitute.org",
     "description": "Founded by Robert Monroe, whose 1971 book Journeys Out of the Body documented his systematic out-of-body experiences. The Institute developed Hemi-Sync binaural beat audio technology to induce altered states reproducibly. Gained national security relevance through the CIA's Gateway Process program (declassified 1983), which used Monroe's techniques for remote viewing training. Several AATIP-adjacent figures including Hal Puthoff have professional overlap with Monroe's research lineage via SRI's consciousness studies. The Institute continues residential training programs and research into binaural audio effects on consciousness.",
-    "focus_areas": ["out-of-body experiences", "altered states research", "Hemi-Sync binaural technology", "remote viewing lineage"],
+    "focus_areas": [
+      "out-of-body experiences",
+      "altered states research",
+      "Hemi-Sync binaural technology",
+      "remote viewing lineage"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -267,7 +389,13 @@
     "location": "Mountain View, California",
     "website": "https://www.seti.org",
     "description": "The leading scientific institution for the Search for Extraterrestrial Intelligence. Operates the Allen Telescope Array and conducts radio and optical SETI surveys across the electromagnetic spectrum. Since 2021, the Institute has increasingly engaged with UAP as a complementary technosignature research domain, arguing that UAP and SETI represent two ends of the same empirical question. SETI researchers Nathalie Cabrol and others have published on the intersection of astrobiology, technosignature detection, and UAP methodology. The Institute receives funding from NASA and private donors including Paul Allen.",
-    "focus_areas": ["radio SETI", "optical SETI", "technosignature detection", "astrobiology", "Allen Telescope Array"],
+    "focus_areas": [
+      "radio SETI",
+      "optical SETI",
+      "technosignature detection",
+      "astrobiology",
+      "Allen Telescope Array"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -281,9 +409,16 @@
     "location": "Netherlands",
     "website": "https://www.essentiafoundation.org",
     "description": "A non-profit foundation established by philosopher and computer scientist Bernardo Kastrup to promote non-materialist interpretations of science and consciousness. Publishes essays, interviews, and original research arguing that consciousness is ontologically fundamental rather than a product of brain chemistry - a framework Kastrup calls 'analytic idealism.' Relevant to UAP research as consciousness-first ontologies are increasingly invoked to account for contact phenomenology, NDE data, and the observer-dependent properties reported in close encounters. Kastrup engages directly with UAP phenomenology in several publications.",
-    "focus_areas": ["analytic idealism", "non-materialist science", "consciousness ontology", "philosophy of mind"],
+    "focus_areas": [
+      "analytic idealism",
+      "non-materialist science",
+      "consciousness ontology",
+      "philosophy of mind"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["kastrup-2017-analytic-idealism"]
+    "notable_paper_ids": [
+      "kastrup-2017-analytic-idealism"
+    ]
   },
   {
     "id": "society-for-uap-studies",
@@ -295,7 +430,12 @@
     "location": "United States (distributed)",
     "website": "https://www.societyforuapstudies.org",
     "description": "A 501(c)(3) nonprofit founded by philosopher Michael Cifone (CUNY) to establish UAP Studies as a recognized academic discipline. Publishes Limina: The Journal of UAP Studies, the first peer-reviewed academic journal dedicated exclusively to UAP research. Organizes interdisciplinary working groups spanning physics, philosophy, psychology, and policy. Distinct from case-investigation organizations - SUAPS focuses on discipline-building: developing shared methodological standards, peer-review infrastructure, and academic legitimacy for UAP research.",
-    "focus_areas": ["academic discipline-building", "peer-reviewed publication", "interdisciplinary working groups", "UAP methodology"],
+    "focus_areas": [
+      "academic discipline-building",
+      "peer-reviewed publication",
+      "interdisciplinary working groups",
+      "UAP methodology"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -309,7 +449,12 @@
     "location": "Washington D.C.",
     "website": "https://www.safeaerospace.org",
     "description": "Founded by former U.S. Navy F/A-18 pilot Ryan Graves, ASA advocates for pilot safety and transparent UAP reporting infrastructure in commercial and military aviation. Graves founded the organization following his congressional testimony about persistent UAP encounters by Navy pilots who faced career risk for filing formal reports. ASA works with Congress to establish formal, non-stigmatizing reporting channels and has testified before multiple congressional committees on UAP aviation safety. One of the most credible post-2023 UAP advocacy organizations.",
-    "focus_areas": ["pilot safety", "UAP reporting infrastructure", "congressional advocacy", "aviation policy"],
+    "focus_areas": [
+      "pilot safety",
+      "UAP reporting infrastructure",
+      "congressional advocacy",
+      "aviation policy"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -323,9 +468,19 @@
     "location": "United States (distributed)",
     "website": "https://www.scientificexploration.org",
     "description": "An international scientific organization of researchers and academics dedicated to rigorous study of anomalous phenomena at the frontiers of science. The SSE publishes the Journal of Scientific Exploration (JSE), one of the few peer-reviewed journals that accepts UAP, parapsychology, and consciousness research. Members include fellows Hal Puthoff and Jacques Vallee. Holds an annual conference that bridges anomalistics, parapsychology, and UAP research in an academic setting. The SSE's peer-review infrastructure has been a critical credibility anchor for the broader anomalistics field.",
-    "focus_areas": ["anomalistics", "peer-reviewed publication", "consciousness research", "UAP methodology"],
-    "key_member_ids": ["hal-puthoff", "jacques-vallee"],
-    "notable_paper_ids": ["lomas-2024-jse-uap-history"]
+    "focus_areas": [
+      "anomalistics",
+      "peer-reviewed publication",
+      "consciousness research",
+      "UAP methodology"
+    ],
+    "key_member_ids": [
+      "hal-puthoff",
+      "jacques-vallee"
+    ],
+    "notable_paper_ids": [
+      "lomas-2024-jse-uap-history"
+    ]
   },
   {
     "id": "parapsychological-association",
@@ -337,9 +492,18 @@
     "location": "United States (distributed)",
     "website": "https://parapsychological.org",
     "description": "The international professional organization of scientists and scholars engaged in the study of psi phenomena - anomalous processes of information and energy transfer not explicable within the current scientific consensus. Founded in 1957, the PA was elected an affiliate of the American Association for the Advancement of Science (AAAS) in 1969, giving it unusual institutional standing for a parapsychology body. Members publish in peer-reviewed journals, the PA hosts an annual international conference, and it awards research grants to early-career investigators. Hal Puthoff is among the figures associated with the PA's research lineage.",
-    "focus_areas": ["parapsychology", "psi research", "peer-reviewed publication", "consciousness"],
+    "focus_areas": [
+      "parapsychology",
+      "psi research",
+      "peer-reviewed publication",
+      "consciousness"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["bem-2011-feeling-future", "radin-2012-double-slit", "jahn-dunne-1986-pear"]
+    "notable_paper_ids": [
+      "bem-2011-feeling-future",
+      "radin-2012-double-slit",
+      "jahn-dunne-1986-pear"
+    ]
   },
   {
     "id": "society-for-psychical-research",
@@ -351,7 +515,12 @@
     "location": "London, United Kingdom",
     "website": "https://www.spr.ac.uk",
     "description": "The oldest scientific organization dedicated to the investigation of psychic phenomena, founded by Cambridge University scholars in 1882. The SPR has produced rigorous investigations of telepathy, apparitions, near-death experiences, and anomalous cognition throughout its history. Publishes the Journal of the Society for Psychical Research and maintains the free Psi Encyclopedia as an online reference resource. Its membership has included Nobel laureates and professors of psychology and philosophy. The SPR's methodological standards were foundational to modern parapsychology and remain among the most rigorous in the field.",
-    "focus_areas": ["psychical research", "historical cases", "peer-reviewed publication", "psi methodology"],
+    "focus_areas": [
+      "psychical research",
+      "historical cases",
+      "peer-reviewed publication",
+      "psi methodology"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -365,7 +534,12 @@
     "location": "Durham, North Carolina",
     "website": "https://www.rhineonline.org",
     "description": "The oldest continuously operating parapsychology research institution in the United States, tracing its origin to J.B. Rhine's foundational ESP experiments at Duke University in 1935. Rhine's statistical card-guessing experiments established the modern scientific methodology for psi research and coined the term 'extrasensory perception.' The Center continues experimental research on ESP, psychokinesis, and anomalous cognition, and publishes the Journal of Parapsychology. An essential historical and ongoing institutional anchor of the parapsychology field.",
-    "focus_areas": ["ESP research", "psychokinesis", "anomalous cognition", "historical parapsychology"],
+    "focus_areas": [
+      "ESP research",
+      "psychokinesis",
+      "anomalous cognition",
+      "historical parapsychology"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -379,9 +553,17 @@
     "location": "Durham, North Carolina",
     "website": "https://iands.org",
     "description": "The leading international organization for near-death experience research and experiencer support, founded by researcher Kenneth Ring and physician Michael Sabom. IANDS publishes the Journal of Near-Death Studies - the only peer-reviewed academic journal dedicated to NDE research - and hosts an annual conference. The organization maintains strong connections with the Division of Perceptual Studies at UVA and the Parnia Lab at NYU, which conduct the most rigorous clinical NDE research. Experiencer testimony from NDE cases has growing methodological and phenomenological overlap with UAP contact research.",
-    "focus_areas": ["near-death experiences", "consciousness survival research", "peer-reviewed publication", "experiencer support"],
+    "focus_areas": [
+      "near-death experiences",
+      "consciousness survival research",
+      "peer-reviewed publication",
+      "experiencer support"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["van-lommel-2001-nde-lancet", "parnia-2014-aware"]
+    "notable_paper_ids": [
+      "van-lommel-2001-nde-lancet",
+      "parnia-2014-aware"
+    ]
   },
   {
     "id": "irva",
@@ -393,9 +575,19 @@
     "location": "United States (distributed)",
     "website": "https://www.irva.org",
     "description": "The professional organization for remote viewing research, training, and application, founded to preserve and advance the methodology developed at SRI International under CIA funding in the 1970s-90s. The SRI remote viewing program, run in part by Hal Puthoff and involving figures including Ingo Swann and Pat Price, is one of the most extensively documented government-funded psi research programs in history. IRVA publishes Aperture magazine, hosts an annual conference, and maintains standards for controlled remote viewing methodology. The connection between remote viewing research and UAP investigation - involving anomalous perception, consciousness, and intelligence community interest - is a significant thread in DECUR's coverage.",
-    "focus_areas": ["remote viewing", "controlled methodology", "SRI program lineage", "psi research"],
-    "key_member_ids": ["hal-puthoff"],
-    "notable_paper_ids": ["targ-puthoff-1974-remote-viewing", "puthoff-1996-pia"]
+    "focus_areas": [
+      "remote viewing",
+      "controlled methodology",
+      "SRI program lineage",
+      "psi research"
+    ],
+    "key_member_ids": [
+      "hal-puthoff"
+    ],
+    "notable_paper_ids": [
+      "targ-puthoff-1974-remote-viewing",
+      "puthoff-1996-pia"
+    ]
   },
   {
     "id": "project-hessdalen",
@@ -407,9 +599,17 @@
     "location": "Hessdalen Valley, Norway",
     "website": "https://www.hessdalen.org",
     "description": "A long-running scientific monitoring project studying recurring unexplained light phenomena in the Hessdalen Valley of Norway. Since the early 1980s, local residents and researchers have documented anomalous luminous objects of varying sizes, shapes, and behaviors that cannot be attributed to known natural or artificial sources. Established by physicist Erling Strand, the project has involved collaboration with Norwegian universities, the Italian CNR, and international researchers. It maintains a permanent automated monitoring station with magnetometers, spectral analyzers, and cameras. Hessdalen is among the most rigorously instrumented long-term UAP-adjacent field studies in existence, with over four decades of continuous data.",
-    "focus_areas": ["light phenomena monitoring", "geophysical anomalies", "instrumented field research", "long-term data collection"],
+    "focus_areas": [
+      "light phenomena monitoring",
+      "geophysical anomalies",
+      "instrumented field research",
+      "long-term data collection"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["teodorani-2024-astronomical-uap"]
+    "notable_paper_ids": [
+      "teodorani-2024-astronomical-uap",
+      "knuth-2025-new-science-uap"
+    ]
   },
   {
     "id": "free-foundation",
@@ -421,7 +621,12 @@
     "location": "United States (distributed)",
     "website": "https://ccri2019.wixsite.com/free",
     "description": "A non-profit research organization founded by astronaut Edgar Mitchell and astrophysicist Rudy Schild to conduct systematic academic research on UAP contact and extraordinary experiencer phenomena. FREE's multi-phase survey collected data from over 4,000 respondents who reported UAP contact or other anomalous experiences, producing the most comprehensive dataset on experiencer phenomenology yet published. The survey results challenge conventional assumptions about contact experiences and have been cited in academic literature on consciousness and UAP research. FREE collaborates with researchers at the intersection of UAP, consciousness, and anomalous experience.",
-    "focus_areas": ["experiencer research", "contact phenomenology", "survey methodology", "consciousness"],
+    "focus_areas": [
+      "experiencer research",
+      "contact phenomenology",
+      "survey methodology",
+      "consciousness"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -435,7 +640,12 @@
     "location": "United States",
     "website": "https://declassifyuap.org",
     "description": "A U.S.-based advocacy organization focused on legislative and regulatory reform to require disclosure of government-held UAP information. Works to build public and congressional support for stronger transparency requirements in the UAP domain, with particular focus on NDAA UAP provisions and their implementation by AARO and the intelligence community. Operates in a complementary space to the UAP Disclosure Fund, which focuses on whistleblower legal support, while Declassify UAP concentrates on legislative access and public education.",
-    "focus_areas": ["disclosure advocacy", "congressional outreach", "legislative transparency", "policy reform"],
+    "focus_areas": [
+      "disclosure advocacy",
+      "congressional outreach",
+      "legislative transparency",
+      "policy reform"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -449,8 +659,15 @@
     "location": "United Kingdom",
     "website": "https://www.bufora.org.uk",
     "description": "The oldest civilian UFO investigation organization in the United Kingdom, founded in 1962 through the merger of several regional groups. BUFORA trains field investigators, maintains a substantial case database, and has built an archive of UK UAP reports spanning six decades. The organization takes an academically oriented approach with methodological guidelines informed by scientific research. Nick Pope, who ran the UK Ministry of Defence's UFO Desk (1991-1994), is an adjacent figure in the broader BUFORA network. BUFORA adds significant geographic and historical diversity to UAP research coverage.",
-    "focus_areas": ["civilian investigation", "UK case database", "historical archive", "investigator training"],
-    "key_member_ids": ["nick-pope"],
+    "focus_areas": [
+      "civilian investigation",
+      "UK case database",
+      "historical archive",
+      "investigator training"
+    ],
+    "key_member_ids": [
+      "nick-pope"
+    ],
     "notable_paper_ids": []
   },
   {
@@ -463,7 +680,12 @@
     "location": "Norrkoping, Sweden",
     "website": "https://www.afu.se",
     "description": "The world's largest archive dedicated to UFO/UAP and anomalous phenomena documentation, housed in Norrkoping, Sweden. Founded in 1973, AFU maintains over 50,000 items including books, journals, newspapers, correspondence, audio recordings, and video, with an ongoing digitization program making holdings internationally accessible. The archive spans the complete history of UFO research from the 1940s to the present, including rare European periodicals, investigation reports from national research groups, and personal collections of prominent researchers. AFU is an essential primary source repository complementing the Black Vault's U.S.-centric FOIA collection with European and global historical documentation.",
-    "focus_areas": ["historical archive", "digitization", "European UAP research", "primary source preservation"],
+    "focus_areas": [
+      "historical archive",
+      "digitization",
+      "European UAP research",
+      "primary source preservation"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -477,7 +699,12 @@
     "location": "New York, New York",
     "website": "https://enigmalabs.io",
     "description": "A technology company building a crowdsourced UAP sighting data platform that applies machine learning and structured data collection to civilian reports. Founded in 2022 with venture capital backing, Enigma Labs approaches UAP data collection using modern data science practices: standardized report schemas, AI-assisted quality filtering, and systematic deduplication. The platform's emphasis on structured, analyzable data distinguishes it from earlier generation databases. Its sighting data collection function is analogous to NUFORC and MUFON but with a data-science-first methodology, and has direct relevance to DECUR's /sightings integration.",
-    "focus_areas": ["sighting data collection", "machine learning", "structured reporting", "data science"],
+    "focus_areas": [
+      "sighting data collection",
+      "machine learning",
+      "structured reporting",
+      "data science"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -491,7 +718,12 @@
     "location": "Europe (distributed)",
     "website": "https://www.euroufo.net",
     "description": "A pan-European network coordinating national UAP research groups and sharing case data across borders. EuroUFO serves as a coordination layer connecting organizations including BUFORA (UK), GEIPAN (France), and national research groups across continental Europe to enable cross-border investigation of multi-national cases and to harmonize investigation standards. European UAP case coverage is significantly underrepresented in U.S.-centric research; EuroUFO represents the primary infrastructure for pan-European coordination.",
-    "focus_areas": ["European UAP coordination", "cross-border investigation", "case sharing", "network coordination"],
+    "focus_areas": [
+      "European UAP coordination",
+      "cross-border investigation",
+      "case sharing",
+      "network coordination"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -505,9 +737,16 @@
     "location": "United Kingdom",
     "website": "https://scientificandmedical.net",
     "description": "An international network of scientists, physicians, and researchers promoting dialogue at the frontiers of science and consciousness. Founded in 1973 in the UK, SMN supports post-materialist research and hosted the Galileo Commission initiative, which produced a landmark 2019 report signed by over 90 academics calling for expansion of science beyond the materialist paradigm. Several researchers in DECUR's network have addressed SMN events, including those at the intersection of consciousness studies and UAP phenomenology. SMN publications and dialogues frequently bridge parapsychology, neuroscience, and philosophy of mind.",
-    "focus_areas": ["post-materialist science", "consciousness research", "interdisciplinary dialogue", "philosophy of mind"],
+    "focus_areas": [
+      "post-materialist science",
+      "consciousness research",
+      "interdisciplinary dialogue",
+      "philosophy of mind"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["van-lommel-2001-nde-lancet"]
+    "notable_paper_ids": [
+      "van-lommel-2001-nde-lancet"
+    ]
   },
   {
     "id": "bial-foundation",
@@ -519,7 +758,12 @@
     "location": "Braga, Portugal",
     "website": "https://www.fundacaobial.com",
     "description": "A Portuguese medical and scientific foundation that funds research at the frontiers of neuroscience, psychology, and consciousness, with particular emphasis on parapsychology and the scientific study of anomalous cognition. Since 1994, the Bial Foundation has awarded biennial grants supporting psi research across European universities and research centers, making it the primary institutional funder of parapsychology in continental Europe. Its funding program operates through a transparent competitive grant process reviewed by an international scientific committee, providing significant credibility to the research it supports. The Foundation also hosts biennial international meetings on consciousness and parapsychology that convene leading researchers across disciplines.",
-    "focus_areas": ["parapsychology funding", "consciousness research", "neuroscience", "anomalous cognition"],
+    "focus_areas": [
+      "parapsychology funding",
+      "consciousness research",
+      "neuroscience",
+      "anomalous cognition"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -533,7 +777,12 @@
     "location": "United States / International (distributed)",
     "website": "https://www.aapsglobal.com",
     "description": "An international scientific organization dedicated to promoting post-materialist science - the view that consciousness is not reducible to brain processes and that mind plays a fundamental role in nature. AAPS was established following a Manifesto for a Post-Materialist Science signed by approximately 300 scientists, physicians, and researchers. The Academy supports peer-reviewed research challenging strict physicalist assumptions, organizes symposia, and functions as an umbrella body connecting consciousness researchers across disciplines. Its network overlaps substantially with the Scientific and Medical Network, the Galileo Commission, and Essentia Foundation.",
-    "focus_areas": ["post-materialist science", "consciousness", "mind-body research", "interdisciplinary"],
+    "focus_areas": [
+      "post-materialist science",
+      "consciousness",
+      "mind-body research",
+      "interdisciplinary"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -547,9 +796,17 @@
     "location": "University of Arizona, Tucson, Arizona",
     "website": "https://consciousnesscenter.arizona.edu",
     "description": "A leading academic research center at the University of Arizona dedicated to scientific and philosophical investigation of consciousness. Best known for hosting the annual Toward a Science of Consciousness conference, the largest interdisciplinary consciousness research conference in the world, which convenes neuroscientists, physicists, philosophers, and clinicians. The Center is home to Stuart Hameroff, co-developer with Roger Penrose of the Orchestrated Objective Reduction (Orch-OR) theory of consciousness. Mainstream institutional credibility distinguishes this center from advocacy organizations, and its work is increasingly cited in contexts where UAP phenomena intersect with consciousness science.",
-    "focus_areas": ["consciousness science", "neuroscience", "philosophy of mind", "quantum consciousness"],
+    "focus_areas": [
+      "consciousness science",
+      "neuroscience",
+      "philosophy of mind",
+      "quantum consciousness"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["chalmers-1995-hard-problem", "hameroff-penrose-2014-orch-or"]
+    "notable_paper_ids": [
+      "chalmers-1995-hard-problem",
+      "hameroff-penrose-2014-orch-or"
+    ]
   },
   {
     "id": "galileo-commission",
@@ -561,9 +818,17 @@
     "location": "United Kingdom",
     "website": "https://galileocommission.org",
     "description": "An academic initiative hosted by the Scientific and Medical Network that calls for a significant expansion of science beyond the materialist paradigm. The Galileo Commission published its flagship 2019 report - signed by over 90 academics and researchers - arguing that the current scientific framework excludes phenomena that cannot be adequately explained by purely physical processes, and proposing a broader, evidence-inclusive methodology. The Commission is explicitly distinct from the Galileo Project (Avi Loeb's Harvard observational program) and should not be conflated with it. Its academic signatories and institutional SMN affiliation provide substantial legitimacy within the post-materialist science movement.",
-    "focus_areas": ["philosophy of science", "post-materialism", "science reform", "consciousness"],
+    "focus_areas": [
+      "philosophy of science",
+      "post-materialism",
+      "science reform",
+      "consciousness"
+    ],
     "key_member_ids": [],
-    "notable_paper_ids": ["kastrup-2017-analytic-idealism", "chalmers-1995-hard-problem"]
+    "notable_paper_ids": [
+      "kastrup-2017-analytic-idealism",
+      "chalmers-1995-hard-problem"
+    ]
   },
   {
     "id": "institute-advanced-consciousness-studies",
@@ -575,7 +840,12 @@
     "location": "United States",
     "website": "https://advancedconsciousness.org",
     "description": "A research and public engagement organization focused on consciousness from a post-materialist perspective. IACS supports scientific investigation into the nature of mind, anomalous experiences, and the relationship between consciousness and physical reality. The Institute facilitates research bridging mainstream neuroscience, parapsychology, and the broader post-materialist science community, and engages the public through lectures, workshops, and educational resources. Its work complements the AAPS, Center for Consciousness Studies, and Scientific and Medical Network in building an interdisciplinary research infrastructure for consciousness science.",
-    "focus_areas": ["consciousness research", "post-materialism", "anomalous experience", "public education"],
+    "focus_areas": [
+      "consciousness research",
+      "post-materialism",
+      "anomalous experience",
+      "public education"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -589,7 +859,12 @@
     "location": "United States (online)",
     "website": "https://nderf.org",
     "description": "The world's largest online database of near-death experience accounts, founded by physician Jeffrey Long. NDERF has collected over 5,000 detailed NDE narratives in multiple languages, making it the primary case archive for quantitative and qualitative NDE research. Jeffrey Long's analysis of this dataset, published in the peer-reviewed Journal of Near-Death Studies and the book Evidence of the Afterlife, applies epidemiological methods to assess NDE patterns across age, culture, and medical circumstance. NDERF functions as a companion resource to IANDS and the clinical research programs at Parnia Labs and DOPS, providing the raw case data that academic institutions analyze.",
-    "focus_areas": ["NDE case archive", "cross-cultural NDE research", "experiencer accounts", "database"],
+    "focus_areas": [
+      "NDE case archive",
+      "cross-cultural NDE research",
+      "experiencer accounts",
+      "database"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -603,7 +878,12 @@
     "location": "United States",
     "website": "https://www.tegmembers.com",
     "description": "A peer research and support network for individuals who have had contact experiences with non-human intelligences, UAP, or related anomalous phenomena. TEG combines community support with structured data collection, gathering experiencer accounts in a format suitable for academic analysis. The organization operates at the intersection of experiencer advocacy and citizen-science research, complementing the FREE Foundation's survey approach and TESA's clinical support model. TEG's focus on the human dimension of UAP contact phenomena - rather than the craft or physics - addresses an underrepresented area of the broader UAP research ecosystem.",
-    "focus_areas": ["experiencer community", "contact research", "UAP witness support", "data collection"],
+    "focus_areas": [
+      "experiencer community",
+      "contact research",
+      "UAP witness support",
+      "data collection"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -617,7 +897,12 @@
     "location": "United States",
     "website": "https://www.experiencersupport.org",
     "description": "An organization providing clinical and peer support for individuals who have had UAP contact or other anomalous experiences, including abduction experiences, UAP encounters, and consciousness-related phenomena. TESA connects experiencers with mental health professionals trained to handle anomalous experience disclosures without pathologizing the accounts, filling a critical gap between the experiencer community and the mental health system. The organization works alongside FREE Foundation and The Experiencer Group to form a support and research cluster addressing the psychosocial dimensions of UAP contact. TESA's clinical approach complements IANDS' support infrastructure for NDE experiencers.",
-    "focus_areas": ["experiencer support", "clinical counseling", "mental health", "UAP witness welfare"],
+    "focus_areas": [
+      "experiencer support",
+      "clinical counseling",
+      "mental health",
+      "UAP witness welfare"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -631,7 +916,12 @@
     "location": "United States",
     "website": "https://www.opusnetwork.org",
     "description": "A research and support organization focused on anomalous experiences including contact with non-human intelligences, out-of-body experiences, NDEs, and other paranormal phenomena. OPUS approaches anomalous experience through both supportive community networks and structured research, maintaining a database of experiencer accounts and providing resources for individuals navigating the aftermath of unusual encounters. The organization operates in the same space as FREE, TESA, and IANDS, with a broader scope that encompasses the full range of paranormal experience types rather than specializing in a single category.",
-    "focus_areas": ["paranormal experience support", "experiencer research", "anomalous contact", "OBE/NDE overlap"],
+    "focus_areas": [
+      "paranormal experience support",
+      "experiencer research",
+      "anomalous contact",
+      "OBE/NDE overlap"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -645,7 +935,12 @@
     "location": "University of Edinburgh, Scotland",
     "website": "https://koestlerunit.wordpress.com",
     "description": "The only endowed parapsychology research unit within a UK university, established at the University of Edinburgh following a bequest from author Arthur Koestler. The KPU conducts academic research on anomalous cognition including ESP, psychokinesis, and anomalous experiences, publishing in peer-reviewed journals and contributing to the international parapsychology literature. Its university affiliation provides institutional credibility rarely available to parapsychology programs and ensures a research standard governed by academic norms. The KPU maintains close ties with the Society for Psychical Research and is a key node in the UK academic parapsychology network.",
-    "focus_areas": ["parapsychology", "anomalous cognition", "psi research", "academic"],
+    "focus_areas": [
+      "parapsychology",
+      "anomalous cognition",
+      "psi research",
+      "academic"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -659,7 +954,12 @@
     "location": "Sydney, New South Wales, Australia",
     "website": "https://www.aiprinc.org",
     "description": "Australia's primary academic organization for parapsychology research, founded in 1977. AIPR publishes the Australian Journal of Parapsychology, conducts and supports empirical research into psi phenomena, and maintains connections with international parapsychology organizations. As the leading body for anomalous cognition research in the Asia-Pacific region, AIPR extends geographic coverage of the parapsychology research network beyond the US and UK institutional centers. Its journal provides a peer-reviewed publication venue for researchers in the southern hemisphere and contributes to the global empirical database on psi phenomena.",
-    "focus_areas": ["parapsychology", "psi research", "Australia/Asia-Pacific", "peer-reviewed publication"],
+    "focus_areas": [
+      "parapsychology",
+      "psi research",
+      "Australia/Asia-Pacific",
+      "peer-reviewed publication"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -673,7 +973,12 @@
     "location": "United Kingdom",
     "website": "https://www.assap.ac.uk",
     "description": "A UK-based organization dedicated to the scientific investigation of anomalous phenomena including UAP, apparitions, poltergeists, and related experiences. Founded in 1981, ASSAP trains field investigators using rigorous methodological standards and publishes investigation reports in Anomaly, its peer-reviewed journal. Unlike advocacy organizations, ASSAP focuses on methodological rigor in field investigation and explicitly accounts for mundane explanations before attributing anomalous status to phenomena. It is a peer institution to BUFORA in the UK civilian investigation space, with a broader scope that encompasses the full spectrum of anomalous phenomena rather than specializing in UAP.",
-    "focus_areas": ["field investigation", "anomalous phenomena", "UK case database", "investigator training"],
+    "focus_areas": [
+      "field investigation",
+      "anomalous phenomena",
+      "UK case database",
+      "investigator training"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -687,7 +992,12 @@
     "location": "Germany",
     "website": "https://www.anomalistik.de/en/",
     "description": "The leading German-language academic society for anomalistics research, founded in 1994. The Gesellschaft fur Anomalistik (Society for Anomalistics) publishes the peer-reviewed Journal of Anomalistics (Zeitschrift fur Anomalistik), conducts research on the full range of anomalous phenomena, and organizes annual conferences drawing researchers from across Europe. The organization applies scientific skepticism combined with genuine empirical openness - examining both the phenomena themselves and the psychological and social factors that shape anomalous belief. Its academic orientation and peer-reviewed journal make it a significant node in the European anomalistics research network alongside ASSAP, BUFORA, and EuroUFO.",
-    "focus_areas": ["anomalistics", "peer-reviewed research", "German-language scholarship", "European coverage"],
+    "focus_areas": [
+      "anomalistics",
+      "peer-reviewed research",
+      "German-language scholarship",
+      "European coverage"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -701,7 +1011,12 @@
     "location": "Los Angeles, California",
     "website": "https://quantumgravityresearch.org",
     "description": "A theoretical physics research organization led by Klee Irwin investigating quantum gravity, emergence theory, and quasicrystal mathematics as potential frameworks for a unified theory of physics. QGR's research program focuses on the geometry of spacetime at the Planck scale and proposes that reality may emerge from a fundamental informational substrate. While not a UAP investigation organization, QGR's theoretical work on spacetime geometry, dimensionality, and consciousness-physics interactions appears in UAP-adjacent research contexts relating to propulsion and non-ordinary spacetime behavior. Listed here for its theoretical physics contributions that intersect with discussions in the broader UAP research community; its specific UAP-adjacent claims are speculative and have not been independently validated.",
-    "focus_areas": ["quantum gravity", "emergence theory", "quasicrystals", "theoretical physics"],
+    "focus_areas": [
+      "quantum gravity",
+      "emergence theory",
+      "quasicrystals",
+      "theoretical physics"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -715,7 +1030,12 @@
     "location": "Atlanta, Georgia",
     "website": "https://farsight.org",
     "description": "A remote viewing research and media production organization led by Courtney Brown, operating within the lineage of the SRI remote viewing program developed by Hal Puthoff and Ingo Swann. Farsight applies Coordinate Remote Viewing (CRV) protocols derived from the CIA-funded STARGATE program to targets including historical events, extraterrestrial contact, and UAP-related subjects. It is listed here for its connection to the legitimate SRI-era remote viewing research thread documented elsewhere in DECUR. However, Farsight's sessions operate without the controlled experimental conditions and independent replication standards that characterized the SRI program. Claims derived from its uncontrolled sessions - including remote viewing of historical events and NHI contact - have no independent validation. Users should distinguish between the academically grounded SRI remote viewing research (covered via Puthoff, Monroe Institute, and IRVA) and Farsight's uncontrolled application of those methods.",
-    "focus_areas": ["remote viewing", "CRV protocol", "consciousness", "UAP-adjacent research"],
+    "focus_areas": [
+      "remote viewing",
+      "CRV protocol",
+      "consciousness",
+      "UAP-adjacent research"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -729,7 +1049,12 @@
     "location": "Canada",
     "website": "https://www.canadiansfordisclosure.org",
     "description": "A Canadian advocacy organization pushing for transparency around government-held UAP information in Canada and internationally. Canada has significant UAP history including the Wilbert Smith government research program of the 1950s, the Shirley Bay geomagnetic anomaly studies, and documented RCMP and transport authority case files. Canadians for Disclosure works to surface this history and advocate for legislative mechanisms requiring Canadian government disclosure of UAP records, complementing U.S.-focused organizations such as Declassify UAP and Americans for Safe Aerospace with a distinctly Canadian institutional and political perspective.",
-    "focus_areas": ["disclosure advocacy", "Canadian UAP history", "government transparency", "legislative reform"],
+    "focus_areas": [
+      "disclosure advocacy",
+      "Canadian UAP history",
+      "government transparency",
+      "legislative reform"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -743,7 +1068,13 @@
     "location": "International (online)",
     "website": "https://psigamesinternational.com",
     "description": "A citizen-science data collection platform that uses game mechanics to gather large-scale public data on psi phenomena including telepathy, remote viewing, and precognition. By embedding psi testing protocols within interactive games, Psi Games International collects statistically analyzable data from a global participant pool at a scale inaccessible to traditional laboratory parapsychology. This gamified approach is conceptually analogous to Enigma Labs' use of technology to aggregate UAP sighting data and NUFORC's crowdsourced reporting model - both of which DECUR lists. The platform should be understood as a citizen-science data infrastructure rather than a peer-review body; its value lies in dataset scale and public engagement rather than experimental controls.",
-    "focus_areas": ["citizen-science", "psi data collection", "gamification", "remote viewing", "telepathy"],
+    "focus_areas": [
+      "citizen-science",
+      "psi data collection",
+      "gamification",
+      "remote viewing",
+      "telepathy"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -758,8 +1089,15 @@
     "website": "https://www.nicap.org",
     "decur_url": "/programs/nicap",
     "description": "The most significant civilian UAP investigation organization of the Cold War era, founded in 1956 and directed for most of its lifespan by Major Donald Keyhoe. NICAP pursued a dual strategy of rigorous case documentation and congressional advocacy, lobbying directly for formal government hearings on UAP. Its case archive became the foundational database for serious UAP research, informing Project Blue Book critics, the Condon Report controversy, and generations of subsequent investigators. NICAP maintained direct lines to military insiders and congressional allies, and its credentialed membership - which included CIA Director Roscoe Hillenkoetter on its board - gave it unusual institutional standing. The organization dissolved around 1980 but its digital archives remain one of the most comprehensive historical UAP case repositories available.",
-    "focus_areas": ["case investigation", "congressional advocacy", "sightings documentation", "military UAP incidents"],
-    "key_member_ids": ["donald-keyhoe"],
+    "focus_areas": [
+      "case investigation",
+      "congressional advocacy",
+      "sightings documentation",
+      "military UAP incidents"
+    ],
+    "key_member_ids": [
+      "donald-keyhoe"
+    ],
     "notable_paper_ids": []
   },
   {
@@ -772,7 +1110,12 @@
     "location": "Davenport, Washington",
     "website": "https://nuforc.org",
     "description": "One of the primary civilian UAP sighting databases in the United States and a direct source for DECUR's /sightings integration. NUFORC maintains a 24-hour telephone hotline and online reporting system accepting civilian sighting reports, with over 170,000 documented reports in its database spanning decades. Founded in 1974 and operated since 1994 by Peter Davenport, NUFORC emphasizes rapid intake and public accessibility over investigative depth. Its database is widely used as a baseline reference for statistical analysis of sighting patterns, including geographic clustering, temporal trends, and shape frequency distributions. NUFORC's data is incorporated alongside MUFON and other civilian databases in DECUR's sightings heatmap.",
-    "focus_areas": ["sighting report intake", "civilian database", "hotline", "statistical baseline"],
+    "focus_areas": [
+      "sighting report intake",
+      "civilian database",
+      "hotline",
+      "statistical baseline"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -786,8 +1129,15 @@
     "location": "Big Sur, California",
     "website": "https://www.esalen.org",
     "description": "A center for human potential research founded in 1962 at Big Sur, California, that played a significant role in legitimizing consciousness research, parapsychology, and non-ordinary states of awareness within academic discourse. Esalen hosted early private meetings that bridged government intelligence figures, parapsychologists, and UAP researchers - including gatherings where remote viewing pioneers from SRI and figures associated with AAWSAP-adjacent research participated. Its residential seminar model brought together scientists, philosophers, and practitioners in settings that allowed unconventional cross-disciplinary exchange. Esalen's influence on the institutionalization of consciousness science and its indirect connections to the intelligence community's interest in anomalous cognition make it a relevant node in DECUR's research map.",
-    "focus_areas": ["consciousness research", "human potential", "transpersonal psychology", "altered states"],
-    "key_member_ids": ["hal-puthoff"],
+    "focus_areas": [
+      "consciousness research",
+      "human potential",
+      "transpersonal psychology",
+      "altered states"
+    ],
+    "key_member_ids": [
+      "hal-puthoff"
+    ],
     "notable_paper_ids": []
   },
   {
@@ -800,7 +1150,12 @@
     "location": "United States (online)",
     "website": "https://newthinkingallowed.org",
     "description": "A nonprofit foundation operating a video interview archive of over 1,000 conversations with researchers in parapsychology, consciousness science, transpersonal psychology, and UAP studies. Founded and hosted by Jeffrey Mishlove, who holds the only doctoral degree in parapsychology awarded by a major U.S. university (UC Berkeley, 1980). The archive represents one of the most comprehensive accessible collections of expert testimony on psi, anomalous cognition, survival research, and related topics. Guests have included researchers from the Parapsychological Association, SPR, Rhine Research Center, DOPS, and IRVA, making it a significant secondary source for DECUR's research threads.",
-    "focus_areas": ["parapsychology interviews", "consciousness science", "psi research archive", "transpersonal psychology"],
+    "focus_areas": [
+      "parapsychology interviews",
+      "consciousness science",
+      "psi research archive",
+      "transpersonal psychology"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -814,7 +1169,12 @@
     "location": "Claremont, California",
     "website": "https://ctr4process.org",
     "description": "An academic research center at Claremont School of Theology dedicated to Whiteheadian process philosophy and its applications across science, theology, and social thought. Process philosophy treats experience and creativity as fundamental to all reality - a framework that aligns with panpsychist and post-materialist approaches to consciousness. The Center's work on mind-matter relationality and the nature of experience provides philosophical grounding for several threads within DECUR's research scope, particularly the consciousness-as-fundamental positions articulated by Kastrup, Chalmers, and the Galileo Commission. Its academic institutional base distinguishes it from advocacy organizations in this space.",
-    "focus_areas": ["process philosophy", "panpsychism", "philosophy of mind", "science and theology"],
+    "focus_areas": [
+      "process philosophy",
+      "panpsychism",
+      "philosophy of mind",
+      "science and theology"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -828,7 +1188,12 @@
     "location": "Germany (international)",
     "website": "https://www.mindmatter.de",
     "description": "A German-based international scientific society dedicated to the empirical and theoretical investigation of mind-matter interaction - the study of how mental processes may influence and be influenced by physical systems beyond conventional neurobiological pathways. The Society publishes the journal Mind and Matter, hosts conferences, and connects researchers working on consciousness, psi phenomena, and quantum biology across European and international academic institutions. Its work sits at the intersection of parapsychology, consciousness science, and quantum physics, complementing DECUR's coverage of PEAR, IRVA, and related research lineages.",
-    "focus_areas": ["mind-matter interaction", "psi research", "quantum biology", "consciousness science"],
+    "focus_areas": [
+      "mind-matter interaction",
+      "psi research",
+      "quantum biology",
+      "consciousness science"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -842,7 +1207,12 @@
     "location": "United States",
     "website": "https://instituteforscientificexploration.org",
     "description": "An umbrella research institute dedicated to scientific investigation of anomalous phenomena that fall outside mainstream disciplinary boundaries. WISE functions as an institutional home for anomalistics - the systematic study of anomalies including UAP, parapsychological phenomena, and related frontier-science topics. It maintains affiliations with researchers across parapsychology, physics, and UAP studies, and provides academic infrastructure (peer review support, conference organization, institutional affiliation) for investigators whose work resists placement in conventional disciplinary journals. Conceptually similar to the Society for Scientific Exploration, though with a narrower academic profile.",
-    "focus_areas": ["anomalistics", "frontier science", "interdisciplinary research", "uap investigation"],
+    "focus_areas": [
+      "anomalistics",
+      "frontier science",
+      "interdisciplinary research",
+      "uap investigation"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   },
@@ -856,7 +1226,12 @@
     "location": "International (online)",
     "website": "https://www.ubiquityuniversity.org",
     "description": "An accredited online university offering graduate programs in consciousness studies, integral theory, sustainability, and contemplative practice. Ubiquity operates at the intersection of academic inquiry and transformative learning, drawing on integral philosophy (Ken Wilber), process theology, and post-materialist science. Several of its faculty and curricula connect directly to researchers and frameworks relevant to DECUR's consciousness science thread, including work by figures associated with the Galileo Commission and post-materialist science movements. Its accreditation distinguishes it from non-institutional consciousness education platforms.",
-    "focus_areas": ["consciousness studies", "integral theory", "post-materialist science", "contemplative education"],
+    "focus_areas": [
+      "consciousness studies",
+      "integral theory",
+      "post-materialist science",
+      "contemplative education"
+    ],
     "key_member_ids": [],
     "notable_paper_ids": []
   }
