@@ -3455,7 +3455,7 @@ const Sources: NextPage = () => {
             <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Private Defense Contractors</h2>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
               Sources for the private defense and government services contractor profiles in the{' '}
-              <Link href="\data?category=contractors" className="text-primary hover:underline">Contractors</Link>{' '}
+              <Link href="/data?category=contractors" className="text-primary hover:underline">Contractors</Link>{' '}
               section.
             </p>
           </div>

@@ -6,7 +6,7 @@ import changelogData from '../data/changelog.json';
 
 interface ChangelogEntry {
   date: string;
-  category: 'figure' | 'case' | 'document' | 'program' | 'timeline' | 'quote';
+  category: 'figure' | 'case' | 'document' | 'program' | 'timeline' | 'quote' | 'paper';
   id: string;
   name: string;
   action: 'added' | 'updated';
@@ -22,6 +22,7 @@ const CATEGORY_CONFIG: Record<ChangelogEntry['category'], { label: string; color
   program:  { label: 'Program',     color: 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300', href: (id) => `/programs/${id}` },
   timeline: { label: 'Timeline',    color: 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300',         href: () => '/timeline' },
   quote:    { label: 'Quote',       color: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300',      href: () => '/data?category=quotes' },
+  paper:    { label: 'Research',    color: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300', href: (id) => `/research/papers/${id}` },
 };
 
 const ACTION_CONFIG: Record<ChangelogEntry['action'], { label: string; color: string }> = {
@@ -37,6 +38,7 @@ const FILTER_OPTIONS: Array<{ value: ChangelogEntry['category'] | 'all'; label: 
   { value: 'program',  label: 'Programs' },
   { value: 'timeline', label: 'Timeline' },
   { value: 'quote',    label: 'Quotes' },
+  { value: 'paper',    label: 'Research' },
 ];
 
 function groupByMonth(items: ChangelogEntry[]): Array<{ label: string; entries: ChangelogEntry[] }> {
