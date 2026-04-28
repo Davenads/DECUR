@@ -8,6 +8,13 @@
  *
  * MapLibre renders geography from CartoDB vector tiles on the GPU.
  * No SVG paths are authored; the artifact class is structurally impossible.
+ *
+ * Sightings data is loaded once from a static compact JSON file
+ * (/data/ufosint/sightings-pts.json) served by Vercel CDN with Brotli
+ * compression. No per-viewport API calls — MapLibre tiles client-side via
+ * its built-in geojson-vt. Pan/zoom is instant with zero server round-trips.
+ * Popup details are fetched on-click from /api/sightings/record?id=X
+ * (single Supabase PK lookup, CDN-cached 24hrs).
  */
 
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -18,45 +25,6 @@ import casePinsRaw from '../../data/ufosint/case-pins.json';
 import facilityPinsRaw from '../../data/ufosint/facility-pins.json';
 import nuclearPinsRaw from '../../data/ufosint/nuclear-pins.json';
 import timelineRaw from '../../data/timeline.json';
-
-/* ── Constants ──────────────────────────────────────────────────────────── */
-
-// At world-zoom (z=3) the entire globe fits in ~480px height. Dots at this
-// zoom are ~4px circles that heavily overlap — 2,000 is visually indistinguishable
-// from 10,000 and loads ~5x faster. 10k matches the original server-side design
-// intent and meaningfully improves density at intermediate zoom levels (region view).
-const VIEWPORT_LIMIT = 10000;
-
-// Delay after onMoveEnd before fetching — collapses rapid sequential gestures
-// (scroll-zoom, pinch, keyboard nav) into a single request.
-const MOVE_END_DEBOUNCE_MS = 150;
-
-/* ── Viewport cache ─────────────────────────────────────────────────────── */
-
-// Module-level LRU cache so repeat pans return instantly without hitting the
-// API. Key uses 1-decimal-place bbox coords (≈11km resolution), which gives
-// good hit rates for small pans while still separating meaningfully different views.
-const CACHE_MAX = 25;
-// globalThis.Map avoids shadowing by the react-map-gl 'Map' component import.
-const _viewportCache = new globalThis.Map<string, SightingRecord[]>();
-
-function vcKey(n: number, s: number, e: number, w: number): string {
-  return `${n.toFixed(1)},${s.toFixed(1)},${e.toFixed(1)},${w.toFixed(1)}`;
-}
-function vcGet(key: string): SightingRecord[] | null {
-  const val = _viewportCache.get(key);
-  if (!val) return null;
-  // Refresh to end for LRU eviction ordering
-  _viewportCache.delete(key);
-  _viewportCache.set(key, val);
-  return val;
-}
-function vcSet(key: string, data: SightingRecord[]): void {
-  if (_viewportCache.size >= CACHE_MAX) {
-    _viewportCache.delete(_viewportCache.keys().next().value!);
-  }
-  _viewportCache.set(key, data);
-}
 
 // Inline MapLibre style pointing directly at CartoDB's 4-server tile CDN.
 // Using CartoDB directly (not proxied) avoids the Vercel serverless bottleneck:
@@ -230,12 +198,11 @@ const timelineEventsGeoJSON = {
 
 /* ── Types ──────────────────────────────────────────────────────────── */
 
-interface SightingRecord {
-  id: number; date: string | null; shape: string | null;
-  standardized_shape: string | null; source: string;
-  city: string | null; state: string | null; country: string | null;
-  lat: number; lng: number; quality_score: number | null;
-  hynek: string | null; duration: string | null; witnesses: number | null;
+interface SightingsPts {
+  v: number;
+  n: number;
+  // [lng, lat, quality_score, id]
+  pts: [number, number, number, number][];
 }
 
 interface SightingsGeoJSON {
@@ -260,187 +227,83 @@ interface PopupState {
 
 export default function SightingsMapInner() {
   const mapRef = useRef<MapRef>(null);
-  const abortRef = useRef<AbortController | null>(null);
-  const lastViewKeyRef = useRef('');
-  const moveEndTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  // Holds a promise for the global-view prefetch started on mount.
-  // Consumed once by onLoad; if the map initializes before the fetch
-  // resolves, onLoad awaits it; if it resolves first, onLoad uses it instantly.
-  const prefetchRef = useRef<Promise<{ sightings: SightingRecord[] } | null> | null>(null);
+  // Aborts in-flight on-click detail fetch when user clicks elsewhere
+  const detailAbortRef = useRef<AbortController | null>(null);
 
   const [sightingsGeoJSON, setSightingsGeoJSON] = useState<SightingsGeoJSON>({
     type: 'FeatureCollection',
     features: [],
   });
   const [pinCount, setPinCount] = useState<number | null>(null);
-  const [pinLoading, setPinLoading] = useState(true); // true from the start — data is already in-flight
+  const [pinLoading, setPinLoading] = useState(true); // true from the start — data is in-flight
   const [popup, setPopup] = useState<PopupState | null>(null);
+  // '_loading' | '_error' | detail object | null
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [popupDetail, setPopupDetail] = useState<Record<string, any> | '_loading' | '_error' | null>(null);
   const [showFacilities, setShowFacilities] = useState(false);
   const [showTimeline, setShowTimeline] = useState(false);
   const [showNuclear, setShowNuclear] = useState(false);
 
-  /* ── Prefetch global view on mount ──────────────────────────────── */
-  // Start the data request immediately when the component mounts so it
-  // runs in parallel with MapLibre's WebGL + tile initialization (~1-2s).
-  // By the time onLoad fires, the sightings data is often already available.
+  /* ── Load static sightings-pts.json on mount ─────────────────────── */
+  // Fetch the compact static file once. Vercel CDN serves it with Brotli
+  // compression (~2.5MB from ~11MB raw). After this resolves, all pan/zoom
+  // is instant — MapLibre tiles the GeoJSON source internally via geojson-vt.
   useEffect(() => {
-    const controller = new AbortController();
-    prefetchRef.current = fetch(
-      `/api/sightings/viewport?n=85&s=-85&e=180&w=-180&limit=${VIEWPORT_LIMIT}`,
-      { signal: controller.signal }
-    )
-      .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
-      .catch(() => null); // swallow — onLoad's fetchViewport fallback handles retry
-    return () => controller.abort();
+    fetch('/data/ufosint/sightings-pts.json')
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .then((data: SightingsPts) => {
+        setSightingsGeoJSON({
+          type: 'FeatureCollection',
+          features: data.pts.map(([lng, lat, quality, id]) => ({
+            type: 'Feature',
+            geometry: { type: 'Point', coordinates: [lng, lat] },
+            properties: { id, quality_score: quality },
+          })),
+        });
+        setPinCount(data.n);
+        setPinLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load sightings-pts.json:', err);
+        setPinLoading(false);
+      });
   }, []);
-
-  /* ── Shared data applier ─────────────────────────────────────────── */
-
-  const applyViewportData = useCallback((sightings: SightingRecord[]) => {
-    setSightingsGeoJSON({
-      type: 'FeatureCollection',
-      features: sightings.map(sg => ({
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [sg.lng, sg.lat] },
-        properties: {
-          id: sg.id,
-          date: sg.date,
-          shape: sg.standardized_shape ?? sg.shape ?? 'Unknown shape',
-          source: sg.source,
-          city: sg.city,
-          state: sg.state,
-          country: sg.country,
-          quality_score: sg.quality_score,
-          hynek: sg.hynek,
-          duration: sg.duration,
-          witnesses: sg.witnesses,
-        },
-      })),
-    });
-    setPinCount(sightings.length);
-    setPinLoading(false);
-  }, []);
-
-  /* ── Viewport fetch ─────────────────────────────────────────────── */
-
-  const fetchViewport = useCallback(async () => {
-    const map = mapRef.current?.getMap();
-    if (!map) return;
-
-    const b = map.getBounds();
-    if (!b) return;
-
-    const n = b.getNorth();
-    const s = b.getSouth();
-    // Clamp to [-180, 180] — MapLibre can return values outside this range
-    // when the map is scrolled past the antimeridian (e.g. getEast() > 180).
-    // The Supabase BETWEEN query doesn't handle wrapped coordinates.
-    const e = Math.min(b.getEast(), 180);
-    const w = Math.max(b.getWest(), -180);
-
-    // 1dp key (≈11km resolution) — matches the module-level viewport cache granularity.
-    const viewKey = vcKey(n, s, e, w);
-    if (viewKey === lastViewKeyRef.current) return;
-    lastViewKeyRef.current = viewKey;
-
-    // Cache hit — instant render, no API call, no loading spinner.
-    const cached = vcGet(viewKey);
-    if (cached) {
-      applyViewportData(cached);
-      return;
-    }
-
-    // Cache miss — fetch from API.
-    abortRef.current?.abort();
-    abortRef.current = new AbortController();
-    setPinLoading(true);
-
-    try {
-      // Round to 1dp — matches vcKey() resolution and the server-side memCache key,
-      // so client cache and server cache both hit for the same logical viewport.
-      const res = await fetch(
-        `/api/sightings/viewport?n=${n.toFixed(1)}&s=${s.toFixed(1)}&e=${e.toFixed(1)}&w=${w.toFixed(1)}&limit=${VIEWPORT_LIMIT}`,
-        { signal: abortRef.current.signal }
-      );
-      if (!res.ok) throw new Error(`viewport ${res.status}`);
-      const { sightings } = await res.json() as { sightings: SightingRecord[] };
-      vcSet(viewKey, sightings);
-      applyViewportData(sightings);
-    } catch (err) {
-      if ((err as Error).name === 'AbortError') {
-        // A newer fetch superseded this one. Reset the key so the next
-        // onMoveEnd will trigger a fresh fetch for the settled position.
-        lastViewKeyRef.current = '';
-      } else {
-        console.error('Viewport fetch error:', err);
-      }
-      setPinLoading(false);
-    }
-  }, [applyViewportData]);
 
   /* ── Map event handlers ─────────────────────────────────────────── */
-
-  const onLoad = useCallback(async () => {
-    // Consume the prefetch started on mount. If it already resolved, the
-    // data is applied with zero additional latency. If still in-flight,
-    // we await it here rather than firing a second identical request.
-    const prefetch = prefetchRef.current;
-    prefetchRef.current = null;
-
-    if (prefetch) {
-      const data = await prefetch;
-      if (data?.sightings?.length) {
-        const globalKey = vcKey(85, -85, 180, -180);
-        vcSet(globalKey, data.sightings);
-        lastViewKeyRef.current = globalKey;
-        applyViewportData(data.sightings);
-        return;
-      }
-    }
-    // Prefetch failed or returned nothing — fall back to a regular fetch.
-    fetchViewport();
-  }, [fetchViewport, applyViewportData]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onError = useCallback((e: any) => {
     console.error('[SightingsMap] MapLibre error:', e?.error ?? e);
   }, []);
 
-  // Clear stale data immediately on pan/zoom so old sightings don't linger
-  // as a partial strip in the new viewport while the fresh fetch is in-flight.
-  // Also cancel any pending debounced fetch so we don't fire for an intermediate position.
-  const onMoveStart = useCallback(() => {
-    if (moveEndTimerRef.current) {
-      clearTimeout(moveEndTimerRef.current);
-      moveEndTimerRef.current = null;
-    }
-    setSightingsGeoJSON({ type: 'FeatureCollection', features: [] });
-    lastViewKeyRef.current = '';
-  }, []);
-
-  // Debounced — collapses rapid sequential gestures (scroll-zoom, pinch, arrow keys)
-  // into a single fetch for the settled position.
-  const onMoveEnd = useCallback(() => {
-    if (moveEndTimerRef.current) clearTimeout(moveEndTimerRef.current);
-    moveEndTimerRef.current = setTimeout(() => {
-      moveEndTimerRef.current = null;
-      fetchViewport();
-    }, MOVE_END_DEBOUNCE_MS);
-  }, [fetchViewport]);
-
   const onMapClick = useCallback((e: MapLayerMouseEvent) => {
     const features = e.features;
     if (!features?.length) {
       setPopup(null);
+      setPopupDetail(null);
+      detailAbortRef.current?.abort();
       return;
     }
     const f = features[0];
-    setPopup({
-      lng: e.lngLat.lng,
-      lat: e.lngLat.lat,
-      layerId: f.layer.id,
-      properties: f.properties ?? {},
-    });
+    const props = f.properties ?? {};
+
+    if (f.layer.id === 'sightings') {
+      // Show loading popup immediately, then fetch full details by id
+      setPopup({ lng: e.lngLat.lng, lat: e.lngLat.lat, layerId: f.layer.id, properties: props });
+      setPopupDetail('_loading');
+      detailAbortRef.current?.abort();
+      detailAbortRef.current = new AbortController();
+      fetch(`/api/sightings/record?id=${props.id}`, { signal: detailAbortRef.current.signal })
+        .then(r => r.ok ? r.json() : Promise.reject(r.status))
+        .then(detail => setPopupDetail(detail))
+        .catch(err => {
+          if ((err as Error)?.name !== 'AbortError') setPopupDetail('_error');
+        });
+    } else {
+      detailAbortRef.current?.abort();
+      setPopupDetail(null);
+      setPopup({ lng: e.lngLat.lng, lat: e.lngLat.lat, layerId: f.layer.id, properties: props });
+    }
   }, []);
 
   /* ── Render ─────────────────────────────────────────────────────── */
@@ -465,14 +328,11 @@ export default function SightingsMapInner() {
           ...(showNuclear ? ['nuclear-pins'] : []),
         ]}
         onClick={onMapClick}
-        onLoad={onLoad}
-        onMoveStart={onMoveStart}
-        onMoveEnd={onMoveEnd}
         onError={onError}
       >
         <NavigationControl position="top-left" />
 
-        {/* Community sighting pins — cyan, 10k cap ordered by quality_score */}
+        {/* Community sighting pins — cyan, all geocoded records from static file */}
         <Source id="sightings" type="geojson" data={sightingsGeoJSON}>
           <Layer {...sightingsLayer} />
         </Source>
@@ -509,36 +369,44 @@ export default function SightingsMapInner() {
             longitude={popup.lng}
             latitude={popup.lat}
             anchor="bottom"
-            onClose={() => setPopup(null)}
+            onClose={() => { setPopup(null); setPopupDetail(null); detailAbortRef.current?.abort(); }}
             maxWidth="220px"
           >
             {popup.layerId === 'sightings' ? (
               <div style={{ fontFamily: 'system-ui', minWidth: 160, maxWidth: 200 }}>
-                <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
-                  {popup.properties.shape}
-                </div>
-                <div style={{ fontSize: 11, color: '#555' }}>
-                  {[popup.properties.city, popup.properties.state, popup.properties.country]
-                    .filter(Boolean).join(', ') || 'Unknown location'}
-                </div>
-                <div style={{ fontSize: 11, color: '#888', marginTop: 2 }}>
-                  {popup.properties.date ? popup.properties.date.substring(0, 10) : 'Unknown date'}
-                </div>
-                {popup.properties.hynek && (
-                  <div style={{ fontSize: 11, marginTop: 4, color: '#7c3aed', fontWeight: 600 }}>
-                    Hynek: {popup.properties.hynek}
-                  </div>
-                )}
-                {popup.properties.duration && (
-                  <div style={{ fontSize: 11, color: '#888' }}>Duration: {popup.properties.duration}</div>
-                )}
-                {popup.properties.witnesses != null && (
-                  <div style={{ fontSize: 11, color: '#888' }}>Witnesses: {popup.properties.witnesses}</div>
-                )}
-                <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid #e5e7eb', fontSize: 10, color: '#aaa' }}>
-                  {popup.properties.source}
-                  {popup.properties.quality_score != null ? ` · Q${popup.properties.quality_score}` : ''}
-                </div>
+                {popupDetail === '_loading' ? (
+                  <div style={{ fontSize: 12, color: '#888', padding: '6px 0' }}>Loading...</div>
+                ) : popupDetail === '_error' ? (
+                  <div style={{ fontSize: 12, color: '#f43f5e', padding: '4px 0' }}>Failed to load details.</div>
+                ) : popupDetail != null ? (
+                  <>
+                    <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2, color: '#111' }}>
+                      {popupDetail.standardized_shape ?? popupDetail.shape ?? 'Unknown shape'}
+                    </div>
+                    <div style={{ fontSize: 11, color: '#555' }}>
+                      {[popupDetail.city, popupDetail.state, popupDetail.country]
+                        .filter(Boolean).join(', ') || 'Unknown location'}
+                    </div>
+                    <div style={{ fontSize: 11, color: '#888', marginTop: 2 }}>
+                      {popupDetail.date ? String(popupDetail.date).substring(0, 10) : 'Unknown date'}
+                    </div>
+                    {popupDetail.hynek && (
+                      <div style={{ fontSize: 11, marginTop: 4, color: '#7c3aed', fontWeight: 600 }}>
+                        Hynek: {popupDetail.hynek}
+                      </div>
+                    )}
+                    {popupDetail.duration && (
+                      <div style={{ fontSize: 11, color: '#888' }}>Duration: {popupDetail.duration}</div>
+                    )}
+                    {popupDetail.witnesses != null && (
+                      <div style={{ fontSize: 11, color: '#888' }}>Witnesses: {popupDetail.witnesses}</div>
+                    )}
+                    <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid #e5e7eb', fontSize: 10, color: '#aaa' }}>
+                      {popupDetail.source}
+                      {popupDetail.quality_score != null ? ` · Q${popupDetail.quality_score}` : ''}
+                    </div>
+                  </>
+                ) : null}
               </div>
             ) : popup.layerId === 'timeline-events' ? (
               <div style={{ fontFamily: 'system-ui', minWidth: 190, maxWidth: 240 }}>
@@ -666,7 +534,7 @@ export default function SightingsMapInner() {
         style={{ height: 60, background: 'linear-gradient(to top, #0f172a 0%, transparent 100%)', zIndex: 10 }}
       />
 
-      {/* Sightings loading indicator — visible pill at top-center while pins are in-flight */}
+      {/* Sightings loading indicator — visible pill at top-center while data is in-flight */}
       {pinLoading && (
         <div
           className="absolute top-3 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-gray-900/90 backdrop-blur-sm border border-cyan-800/60 rounded-full px-3 py-1.5 pointer-events-none"
@@ -702,7 +570,7 @@ export default function SightingsMapInner() {
             {pinLoading
               ? 'Loading...'
               : pinCount != null
-                ? `${pinCount.toLocaleString()} sightings in view`
+                ? `${pinCount.toLocaleString()} sightings`
                 : 'Community sightings'}
           </span>
         </div>

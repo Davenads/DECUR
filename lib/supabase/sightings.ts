@@ -289,3 +289,34 @@ export async function searchSightings(params: SearchParams): Promise<{
 
   return { total: count ?? 0, results: (data ?? []) as SightingRecord[] };
 }
+
+/* ── Single record lookup ─────────────────────────────────────────────── */
+
+export interface SightingDetail {
+  id: number;
+  date: string | null;
+  shape: string | null;
+  standardized_shape: string | null;
+  source: string;
+  city: string | null;
+  state: string | null;
+  country: string | null;
+  lat: number;
+  lng: number;
+  quality_score: number | null;
+  hynek: string | null;
+  duration: string | null;
+  witnesses: number | null;
+  description: string | null;
+}
+
+export async function getSightingById(id: number): Promise<SightingDetail | null> {
+  const sb = getAdminClient();
+  const { data, error } = await sb
+    .from('ufosint_sightings')
+    .select('id, date, shape, standardized_shape, source, city, state, country, lat, lng, quality_score, hynek, duration, witnesses, description')
+    .eq('id', id)
+    .single();
+  if (error) return null;
+  return data as SightingDetail;
+}

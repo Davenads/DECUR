@@ -121,7 +121,7 @@ async function handleSupabase(
   // Dynamically import to avoid loading Supabase when flag is off
   const {
     getSightingStats, countByShape, countByCountry,
-    searchSightings, getViewportSightings,
+    searchSightings, getViewportSightings, getSightingById,
   } = await import('../../../lib/supabase/sightings');
 
   switch (apiPath) {
@@ -204,6 +204,23 @@ async function handleSupabase(
       res.status(200).json(results);
       return true;
     }
+    case 'record': {
+      const id = parseInt(String(query.id ?? ''), 10);
+      if (isNaN(id) || id <= 0) {
+        res.status(400).json({ error: 'Missing or invalid id' });
+        return true;
+      }
+      const record = await getSightingById(id);
+      if (!record) {
+        res.status(404).json({ error: 'Not found' });
+        return true;
+      }
+      res.setHeader('X-Data-Source', 'supabase');
+      // Records are immutable once imported — cache aggressively at the CDN.
+      res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate=3600');
+      res.status(200).json(record);
+      return true;
+    }
     default:
       return false;
   }
@@ -220,8 +237,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const pathSegments = Array.isArray(req.query.path) ? req.query.path : [req.query.path ?? ''];
   const apiPath = pathSegments.join('/');
 
-  // Search results are always dynamic — skip cache entirely
-  const isCacheable = apiPath !== 'search';
+  // Search and record results skip the in-process cache:
+  // search is always dynamic; record has its own per-id CDN cache header.
+  const isCacheable = apiPath !== 'search' && apiPath !== 'record';
   const ck = isCacheable ? cacheKey(apiPath, req.query) : '';
 
   // ── In-process cache hit ───────────────────────────────────────────────
