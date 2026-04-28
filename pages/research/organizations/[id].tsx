@@ -207,7 +207,7 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
                     {notablePapers.map(paper => (
                       <Link
                         key={paper.id}
-                        href={`/research/papers/${paper.id}`}
+                        href={`/research/papers/${paper.id}?ref=org&orgId=${org.id}`}
                         className="block border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary/50 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
                       >
                         <div className="flex items-start gap-2 mb-2">
@@ -235,7 +235,7 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
                     {relatedPapers.map(paper => (
                       <Link
                         key={paper.id}
-                        href={`/research/papers/${paper.id}`}
+                        href={`/research/papers/${paper.id}?ref=org&orgId=${org.id}`}
                         className="block border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-primary/50 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
                       >
                         <p className="text-sm font-medium text-gray-900 dark:text-gray-100 mb-1 leading-snug">{paper.title}</p>

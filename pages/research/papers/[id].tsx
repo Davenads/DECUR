@@ -78,9 +78,20 @@ const PaperDetail: NextPage<PaperDetailProps> = ({ paper, relatedPapers, related
   });
 
   useEffect(() => {
-    const ref = new URLSearchParams(window.location.search).get('ref');
+    const params = new URLSearchParams(window.location.search);
+    const ref = params.get('ref');
+    const orgId = params.get('orgId');
     if (ref === 'search') {
       setBackState({ label: 'Search Results', href: null });
+    } else if (ref === 'org' && orgId) {
+      const org = (orgsData as Array<{ id: string; name: string; abbreviation: string | null }>)
+        .find(o => o.id === orgId);
+      if (org) {
+        setBackState({
+          label: org.abbreviation ?? org.name,
+          href: `/research/organizations/${orgId}`,
+        });
+      }
     }
   }, []);
 
