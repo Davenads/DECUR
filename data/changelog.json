@@ -2,6 +2,14 @@
   {
     "date": "2026-04-28",
     "category": "figure",
+    "id": "vallee-nolan-jiang-lemke-2022",
+    "name": "Vallee, Nolan, Jiang & Lemke 2022 — UAP Materials Characterization Methods",
+    "action": "added",
+    "note": "Foundational ICP-MS/SIMS methods paper for UAP materials analysis, published in Progress in Aerospace Sciences — the analytical infrastructure underpinning all subsequent anomalous materials studies."
+  },
+  {
+    "date": "2026-04-28",
+    "category": "figure",
     "id": "knuth-2025-new-science-uap",
     "name": "Knuth et al. 2025 — The New Science of Unidentified Aerospace-Undersea Phenomena",
     "action": "added",

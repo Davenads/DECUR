@@ -2089,5 +2089,45 @@
     "organization_ids": [],
     "summary": "Astrobiologist Dirk Schulze-Makuch (TU Berlin) and science journalist Tony Reichhardt propose a systematic reliability scale for evaluating UAP sighting reports, enabling researchers and the public to distinguish credible signals from noise. The framework categorizes reports by evidence quality factors: observer count, corroborating evidence quantity, whether witnesses attempted conventional explanations first, and whether the evidence has undergone expert analysis. Published in Universe (MDPI) in 2025 - a very recent methodology contribution pairing naturally with Ammon 2024 on UAP research standards.",
     "abstract": "Unidentified Anomalous Phenomena observations have been documented throughout history, yet their underlying nature remains unclear. The authors propose a rating scale to differentiate between credible signals and unreliable noise when evaluating UAP sighting reports. This tool aims to assist both professionals and the general public in identifying cases deserving further study versus easily explainable occurrences. The framework categorizes reports based on evidence quality factors including observer count, supporting evidence quantity, and whether witnesses attempted conventional explanations for their observations before reporting them. The categorization emphasizes cases where evidence has undergone expert analysis. The scale is intended as a practical instrument for triage in UAP research, enabling systematic comparison across reports and supporting more rigorous scientific engagement with the phenomenon."
+  },
+  {
+    "id": "vallee-nolan-jiang-lemke-2022",
+    "title": "Improved instrumental techniques, including isotopic analysis, applicable to the characterization of unusual materials with potential relevance to aerospace forensics",
+    "authors": [
+      "Jacques F. Vallee",
+      "Garry P. Nolan",
+      "Sizun Jiang",
+      "Larry G. Lemke"
+    ],
+    "author_ids": [
+      "garry-nolan",
+      "jacques-vallee"
+    ],
+    "year": 2022,
+    "journal": "Progress in Aerospace Sciences",
+    "volume": "128",
+    "issue": null,
+    "pages": null,
+    "article_number": "100788",
+    "doi": "10.1016/j.paerosci.2021.100788",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042121000907",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "materials-analysis",
+      "isotopic-analysis",
+      "mass-spectrometry",
+      "aerospace-forensics",
+      "methodology",
+      "uap-materials",
+      "icp-ms",
+      "sims"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "scientific-coalition-for-uap-studies"
+    ],
+    "summary": "The foundational UAP materials science methods paper — establishes the ICP-MS and SIMS protocols that underpin all subsequent anomalous materials analysis in the field. Vallee, Nolan (Stanford), Jiang (Stanford), and Lemke review modern mass spectrometry and isotopic analysis techniques applied to materials of unknown origin, provide a practical framework for distinguishing terrestrial from anomalous isotopic signatures, and discuss lessons from applying these methods to solid samples. Published in Progress in Aerospace Sciences — the same Elsevier journal as `knuth-2025-new-science-uap`. Distinct from `nolan-2023-materials-analysis` (which reports specific isotopic findings); this paper establishes the analytical infrastructure those findings rely on.",
+    "abstract": "We review common modern mass spectrometry techniques applicable to unknown materials analysis, focusing on improvements made to these technologies by Silicon Valley companies and other research teams in recent years. The paper provides an overview of Inductively Coupled Plasma Mass Spectrometry (ICP-MS) and Secondary Ion Mass Spectrometry (SIMS) as applied to the characterization of solid materials in aerospace forensic contexts. We describe practical experiences applying these techniques to the characterization of samples whose provenance and composition are unknown, comparing results with previously undertaken isotopic analysis and establishing protocols for identifying isotopic compositions that deviate from known terrestrial or meteoritic standards. We discuss the significance of isotopic anomalies as potential indicators of unusual manufacturing processes or non-terrestrial origin, and we present our methodology as a replicable framework for future materials analyses relevant to unidentified aerial phenomena research."
   }
 ]
