@@ -2298,5 +2298,70 @@
     "organization_ids": [],
     "summary": "Published in Scientific Reports (Nature Publishing Group) — the highest-prestige journal venue in the DECUR catalog. Analyzes digitized photographic plates from the 1949-1957 Palomar Observatory Sky Survey (POSS-I) and finds that transient bright objects appearing on the plates correlate statistically with nuclear test dates (p=0.008) and local UAP sighting density. Bruehl is also co-author of `bruehl-little-powell-2025-cluster` and Villarroel is author of `villarroel-2021-vasco`, making this a convergence of two established DECUR research threads. The nuclear-correlation finding suggests a potential environmental or observational link between above-ground testing and anomalous aerial phenomena reports in the same period.",
     "abstract": "We examined digitized photographic plates from the first Palomar Observatory Sky Survey (POSS-I), conducted between 1949 and 1957, for transient bright objects — sources that appear in one plate exposure but not in contemporaneous plates of the same region. We find 31 candidate transient objects across the survey area and test whether their temporal distribution correlates with the schedule of above-ground nuclear weapons tests conducted during the same period. We observe a statistically significant positive correlation (p = 0.008) between nuclear test dates and the number of transient detections in the days following each test. We further examine whether the spatial distribution of transients correlates with contemporary UAP sighting density reported in declassified government records and find a positive but weaker spatial association. We discuss physical mechanisms that could produce both the nuclear-temporal and UAP-spatial correlations, including ionospheric and atmospheric disturbances, photographic artifacts induced by charged-particle flux, and the possibility of genuine anomalous aerial phenomena with sensitivity to nuclear events."
+  },
+  {
+    "id": "yingling-2023-faculty-perceptions",
+    "title": "Faculty perceptions of unidentified aerial phenomena",
+    "authors": [
+      "Marissa E. Yingling",
+      "Charlton W. Yingling"
+    ],
+    "author_ids": [],
+    "year": 2023,
+    "journal": "Humanities and Social Sciences Communications",
+    "volume": "10",
+    "issue": null,
+    "pages": null,
+    "article_number": "246",
+    "doi": "10.1057/s41599-023-01746-3",
+    "url": "https://www.nature.com/articles/s41599-023-01746-3",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "sociology-psychology",
+      "academia",
+      "epistemology",
+      "uap-credibility",
+      "survey-research",
+      "faculty-attitudes",
+      "stigma"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "The first national survey of academic faculty attitudes toward UAP, conducted across 14 disciplines at 144 major US research universities (N=1,460). Published under Nature/Palgrave. Key findings: 19% of faculty reported personally observing UAP; 37% expressed interest in UAP research; fewer than 1% had actually conducted it. The gap between personal interest and active research is directly attributed to professional stigma and fear of reputational harm — the baseline dataset that motivates its 2024 follow-up (`yingling-2024-academic-freedom`). Directly relevant to DECUR's mission of academic legitimization of UAP inquiry.",
+    "abstract": "We report the results of the first national survey of faculty perceptions of unidentified aerial phenomena (UAP) conducted at major US research universities. Surveying 1,460 faculty across 144 institutions and 14 academic disciplines, we find that 19% of respondents reported personally observing a phenomenon they could not explain, 37% expressed interest in conducting UAP-related research, and fewer than 1% had done so. Faculty were substantially more open to UAP inquiry in private conversations than in professional settings, and a majority identified social and professional stigma as the primary barrier to engagement. We discuss implications for the normalization of UAP research in academia and the role of institutional culture in shaping scientific inquiry at the margins of accepted knowledge."
+  },
+  {
+    "id": "yingling-2024-academic-freedom",
+    "title": "Academic freedom and the unknown: credibility, criticism, and inquiry among the professoriate",
+    "authors": [
+      "Marissa E. Yingling",
+      "Charlton W. Yingling"
+    ],
+    "author_ids": [],
+    "year": 2024,
+    "journal": "Humanities and Social Sciences Communications",
+    "volume": "11",
+    "issue": null,
+    "pages": null,
+    "article_number": "987",
+    "doi": "10.1057/s41599-024-03351-4",
+    "url": "https://www.nature.com/articles/s41599-024-03351-4",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "sociology-psychology",
+      "academia",
+      "epistemology",
+      "uap-credibility",
+      "academic-freedom",
+      "stigma",
+      "survey-research",
+      "faculty-attitudes"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Follow-up to `yingling-2023-faculty-perceptions` by the same authors, examining the professional repercussions faculty perceive for conducting UAP research. Finds near-universal awareness of reputational risk — including concrete concerns about tenure, promotion, and grant funding — despite majority scientific curiosity about the topic. Published under Nature/Palgrave. Establishes that the barrier to academic UAP research is not lack of interest but structural professional disincentive, making the case that academic freedom norms must explicitly extend to stigmatized scientific topics.",
+    "abstract": "We investigate perceived threats to academic freedom among US university faculty who express interest in or have conducted research on unidentified aerial phenomena (UAP). Drawing on survey data and qualitative interviews, we find that faculty across disciplines widely perceive UAP research as professionally risky, with specific concerns about tenure decisions, promotion, grant eligibility, and collegial reputation. Despite these concerns, a majority of respondents affirmed that academic freedom principles should protect inquiry into stigmatized topics. We argue that the de facto exclusion of UAP from academic legitimacy represents a structural constraint on scientific inquiry, and that professional societies, tenure committees, and journal editors have a role in reducing the chilling effect on researchers who wish to engage with anomalous phenomena. This paper is a companion to our 2023 faculty perceptions survey."
   }
 ]

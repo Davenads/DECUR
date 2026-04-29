@@ -2,6 +2,22 @@
   {
     "date": "2026-04-29",
     "category": "paper",
+    "id": "yingling-2024-academic-freedom",
+    "name": "Yingling & Yingling 2024 — Academic Freedom and UAP Research (Nature/Palgrave)",
+    "action": "added",
+    "note": "Follow-up survey documenting near-universal awareness of professional repercussions for faculty who conduct UAP research, including tenure and promotion risks."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
+    "id": "yingling-2023-faculty-perceptions",
+    "name": "Yingling & Yingling 2023 — Faculty Perceptions of UAP (Nature/Palgrave)",
+    "action": "added",
+    "note": "First national survey of academic faculty UAP attitudes across 144 US universities (N=1,460): 19% personally observed UAP, 37% interested in researching it, fewer than 1% had done so."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
     "id": "bruehl-villarroel-2025-poss",
     "name": "Bruehl & Villarroel 2025 — POSS-I Transients / Nuclear Correlation (Scientific Reports)",
     "action": "added",
