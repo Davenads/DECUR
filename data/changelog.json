@@ -2,6 +2,14 @@
   {
     "date": "2026-04-29",
     "category": "paper",
+    "id": "lomas-2025-uap-assessment-matrix",
+    "name": "Lomas et al. 2025 — UAP Assessment Matrix (Acta Astronautica)",
+    "action": "added",
+    "note": "Proposes a 2D evidence-quality vs. understanding matrix for UAP evaluation, published in Acta Astronautica (IAA flagship, CiteScore 7.3) — Tim Lomas's third paper in the DECUR catalog."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
     "id": "yingling-2024-academic-freedom",
     "name": "Yingling & Yingling 2024 — Academic Freedom and UAP Research (Nature/Palgrave)",
     "action": "added",

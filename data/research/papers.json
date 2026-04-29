@@ -2363,5 +2363,38 @@
     "organization_ids": [],
     "summary": "Follow-up to `yingling-2023-faculty-perceptions` by the same authors, examining the professional repercussions faculty perceive for conducting UAP research. Finds near-universal awareness of reputational risk — including concrete concerns about tenure, promotion, and grant funding — despite majority scientific curiosity about the topic. Published under Nature/Palgrave. Establishes that the barrier to academic UAP research is not lack of interest but structural professional disincentive, making the case that academic freedom norms must explicitly extend to stigmatized scientific topics.",
     "abstract": "We investigate perceived threats to academic freedom among US university faculty who express interest in or have conducted research on unidentified aerial phenomena (UAP). Drawing on survey data and qualitative interviews, we find that faculty across disciplines widely perceive UAP research as professionally risky, with specific concerns about tenure decisions, promotion, grant eligibility, and collegial reputation. Despite these concerns, a majority of respondents affirmed that academic freedom principles should protect inquiry into stigmatized topics. We argue that the de facto exclusion of UAP from academic legitimacy represents a structural constraint on scientific inquiry, and that professional societies, tenure committees, and journal editors have a role in reducing the chilling effect on researchers who wish to engage with anomalous phenomena. This paper is a companion to our 2023 faculty perceptions survey."
+  },
+  {
+    "id": "lomas-2025-uap-assessment-matrix",
+    "title": "The UAP assessment matrix: a framework for evaluating evidence and understanding regarding Unidentified Anomalous Phenomena",
+    "authors": [
+      "Tim Lomas",
+      "Andrew O'Malley",
+      "Michael Paul Masters",
+      "Rony Vernet"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Acta Astronautica",
+    "volume": "234",
+    "issue": null,
+    "pages": "491-503",
+    "article_number": null,
+    "doi": "10.1016/j.actaastro.2025.04.012",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0094576525002127",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "uap-methodology",
+      "evidence-framework",
+      "assessment-matrix",
+      "epistemology",
+      "scientific-standards",
+      "uap-credibility"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Published in Acta Astronautica (IAA flagship journal, CiteScore 7.3) — the second-highest institutional prestige venue in the catalog after Scientific Reports. Tim Lomas (Harvard) is now the author of three papers in the DECUR catalog (`lomas-2023-eth-openness`, `lomas-case-masters-2024-cryptoterrestrial`, this paper). Proposes a two-dimensional UAP Assessment Matrix: evidence quality scored 0-10 on the horizontal axis, and degree of understanding scored -5 to +5 on the vertical axis. Validated against a 1953 UAP case study. The matrix provides a structured, communicable tool for distinguishing between well-evidenced-but-unexplained cases and poorly-evidenced speculative claims — directly applicable to DECUR's evidence tier system.",
+    "abstract": "We propose the UAP Assessment Matrix, a structured two-dimensional framework for evaluating claims and evidence relating to Unidentified Anomalous Phenomena. The matrix scores cases on two axes: evidence quality (0-10, assessing observational rigor, corroboration, and documentation) and degree of understanding (-5 to +5, ranging from firmly explained by conventional phenomena to strongly indicative of genuinely anomalous physics). We describe scoring criteria for each axis, illustrate the matrix with application to a 1953 UAP case study, and discuss how the framework enables systematic comparison across cases, supports transparent communication between researchers, and provides a common vocabulary for interdisciplinary engagement with the UAP phenomenon. We situate the matrix within the broader landscape of UAP evidence evaluation tools and argue that standardized frameworks are a prerequisite for scientific progress in the field."
   }
 ]
