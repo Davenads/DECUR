@@ -2264,5 +2264,39 @@
     "organization_ids": [],
     "summary": "Companion methodological paper to `platzer-2025-uap-outlook` by the same author in the same June 2025 Progress in Aerospace Sciences special issue. Where the status paper surveys the disclosure landscape, this paper makes the affirmative case for why aerospace science must rigorously engage with UAP — addressing historical reluctance, reviewing what a proper scientific program would require, and framing UAP as a legitimate open problem in the discipline. Together, the two Platzer papers represent the first sustained advocacy from a named mainstream aerospace academic for institutionalizing UAP research.",
     "abstract": "This paper argues that the aerospace science community has an obligation to pursue rigorous scientific research on unidentified aerial phenomena (UAP). We review the history of institutional avoidance of the topic, examine the epistemological and methodological barriers that have discouraged engagement, and make the case that a scientifically sound research agenda is both achievable and necessary. We identify the observational, analytical, and institutional components of a rigorous program, discuss lessons from analogous fields that have successfully normalized the study of previously controversial phenomena, and call on professional aerospace societies, journals, and funding bodies to facilitate systematic UAP investigation. Published as part of the Progress in Aerospace Sciences special issue on UAP."
+  },
+  {
+    "id": "bruehl-villarroel-2025-poss",
+    "title": "Transients in the Palomar Observatory Sky Survey (POSS-I) may be associated with nuclear testing and reports of unidentified anomalous phenomena",
+    "authors": [
+      "Stephen Bruehl",
+      "Beatriz Villarroel"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Scientific Reports",
+    "volume": "15",
+    "issue": null,
+    "pages": null,
+    "article_number": "36180",
+    "doi": "10.1038/s41598-025-21620-3",
+    "url": "https://www.nature.com/articles/s41598-025-21620-3",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "physical-evidence",
+      "nuclear",
+      "uap-patterns",
+      "historical-analysis",
+      "palomar",
+      "photographic-plates",
+      "statistical-correlation",
+      "villarroel",
+      "astronomy"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Published in Scientific Reports (Nature Publishing Group) — the highest-prestige journal venue in the DECUR catalog. Analyzes digitized photographic plates from the 1949-1957 Palomar Observatory Sky Survey (POSS-I) and finds that transient bright objects appearing on the plates correlate statistically with nuclear test dates (p=0.008) and local UAP sighting density. Bruehl is also co-author of `bruehl-little-powell-2025-cluster` and Villarroel is author of `villarroel-2021-vasco`, making this a convergence of two established DECUR research threads. The nuclear-correlation finding suggests a potential environmental or observational link between above-ground testing and anomalous aerial phenomena reports in the same period.",
+    "abstract": "We examined digitized photographic plates from the first Palomar Observatory Sky Survey (POSS-I), conducted between 1949 and 1957, for transient bright objects — sources that appear in one plate exposure but not in contemporaneous plates of the same region. We find 31 candidate transient objects across the survey area and test whether their temporal distribution correlates with the schedule of above-ground nuclear weapons tests conducted during the same period. We observe a statistically significant positive correlation (p = 0.008) between nuclear test dates and the number of transient detections in the days following each test. We further examine whether the spatial distribution of transients correlates with contemporary UAP sighting density reported in declassified government records and find a positive but weaker spatial association. We discuss physical mechanisms that could produce both the nuclear-temporal and UAP-spatial correlations, including ionospheric and atmospheric disturbances, photographic artifacts induced by charged-particle flux, and the possibility of genuine anomalous aerial phenomena with sensitivity to nuclear events."
   }
 ]
