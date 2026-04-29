@@ -2168,5 +2168,41 @@
     ],
     "summary": "The peer-reviewed journal publication of the Galileo Project's IM1 spherule analysis, published in Chemical Geology (Elsevier) — the definitive upgrade from the 2023 arXiv preprint (`loeb-2023-im1-spherules`). Classifies 57 spherules recovered from the Pacific Ocean retrieval expedition into compositional groups, identifying a novel BeLaU (Beryllium-Lanthanum-Uranium) category with elemental ratios that do not match any known terrestrial alloy, meteoritic composition, or industrial process. Published in a prestigious Elsevier geochemistry journal, making it the first peer-reviewed account of the anomalous IM1 materials findings. Both catalog entries (preprint and this paper) are intentional: the preprint represents the discovery announcement and the journal paper the formal scientific validation.",
     "abstract": "We report the chemical classification of 57 spherules recovered from the Pacific Ocean at the CNEOS 2014-01-08 (IM1) bolide site during the 2023 Galileo Project ocean expedition. Spherule compositions were determined via inductively coupled plasma mass spectrometry (ICP-MS) and energy-dispersive X-ray spectroscopy (EDS). We identify five compositional groups among the recovered spherules, including a distinctive BeLaU group characterized by anomalously high abundances of beryllium, lanthanum, and uranium relative to other elements. The BeLaU elemental ratios are inconsistent with known terrestrial industrial alloys, achondritic meteorites, and cosmic spherules from previously cataloged samples. We discuss potential origins for the BeLaU spherules including unusual solar system processes, interstellar material, and technologically processed matter, and recommend additional isotopic analysis to further constrain their provenance."
+  },
+  {
+    "id": "vallee-dini-2025-radiative-energy",
+    "title": "Estimates of radiative energy values in ground-level observations of an unidentified aerial phenomenon: New physical data",
+    "authors": [
+      "Jacques F. Vallee",
+      "Luc Dini",
+      "Geoffrey Mestchersky"
+    ],
+    "author_ids": [
+      "jacques-vallee"
+    ],
+    "year": 2025,
+    "journal": "Progress in Aerospace Sciences",
+    "volume": "156",
+    "issue": null,
+    "pages": null,
+    "article_number": "101098",
+    "doi": "10.1016/j.paerosci.2025.101098",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042125000247",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "physical-evidence",
+      "radiative-energy",
+      "uap-case-analysis",
+      "project-blue-book",
+      "physics",
+      "haynesville-1966",
+      "ground-observation",
+      "aerospace"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "The first paper in Progress in Aerospace Sciences to analyze a specific documented UAP case — the December 30, 1966 Haynesville, Louisiana incident (Condon Study Case 2). Vallee, Dini, and Mestchersky apply optical physics to eyewitness accounts and photographic records, estimating 500-900 MW of radiative energy output from the observed object — comparable to a small nuclear power plant. Published in the same June 2025 PrAeS special issue as `knuth-2025-new-science-uap` and `vallee-nolan-jiang-lemke-2022`. This paper is historically significant: a flagship mainstream aerospace journal applying rigorous physical measurement to a specific, named UAP case marks a watershed in the field's academic acceptance.",
+    "abstract": "We report new physical data from a detailed re-analysis of optical and photographic records from the December 30, 1966 Haynesville, Louisiana UAP incident (designated Case 2 in the Condon Scientific Study of Unidentified Flying Objects). Applying standard optical physics methods to witness-described apparent angular diameters and brightness estimates, we derive a range of radiative energy values emitted by the observed phenomenon. Our analysis yields a radiative power estimate of 500 to 900 megawatts at the source, assuming a range of plausible distances consistent with the physical evidence. This output level is comparable to that of a small nuclear power plant and is inconsistent with conventional aircraft, natural atmospheric phenomena, or known terrestrial light sources of the era. We discuss the measurement methodology, sources of uncertainty, and the significance of this result for the physical characterization of UAP."
   }
 ]
