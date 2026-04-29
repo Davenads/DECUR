@@ -2613,5 +2613,40 @@
     ],
     "summary": "The foundational paper establishing the Greyson NDE Scale — the 16-item measurement instrument across four dimensions (affective, cognitive, paranormal, transcendent) that has served as the standard NDE research tool since 1983. Cited in all subsequent clinical NDE research including `van-lommel-2001-nde-lancet` and `parnia-2014-aware`. This paper provides the methodological anchor for the entire NDE science thread in the catalog: those two papers exist in context of the validated instrument this paper defines. Published in the Journal of Nervous and Mental Disease, the oldest continuously published psychiatry journal in the Americas.",
     "abstract": "The near-death experience (NDE) is a profound psychological event that may occur to a person close to death or in a situation of intense physical or emotional danger. The purpose of this study was to construct a reliable, valid scale for grading the depth of such experiences. Items were generated from a content analysis of 67 NDE accounts; the resulting 80-item scale was then administered to 74 NDEers and 200 controls. Factor analysis yielded four components: cognitive (alterations in thought processes), affective (changes in emotional state), paranormal (extrasensory perception and precognition), and transcendental (encounters with deceased persons and mystical environments). A 16-item scale derived from the best items in each component showed high internal consistency (alpha = 0.88), test-retest reliability, and construct validity."
+  },
+  {
+    "id": "moscote-salazar-2025-uap-neurological",
+    "title": "Neurological Effects of Encounters with Unidentified Aerial Phenomena",
+    "authors": [
+      "Luis Rafael Moscote-Salazar",
+      "Tariq Janjua",
+      "Nasly Zabaleta-Churio",
+      "William Andres Florez-Perdomo",
+      "Srinivas Kosgi",
+      "Amit Agrawal"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Matrix Science Medica",
+    "volume": "9",
+    "issue": null,
+    "pages": "63-66",
+    "article_number": null,
+    "doi": null,
+    "url": "https://journals.lww.com/mtsm/fulltext/2025/07000/neurological_effects_of_encounters_with.1.aspx",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "biological-effects",
+      "neurology",
+      "uap-experience",
+      "close-encounter",
+      "medical",
+      "nhi-contact"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "The first peer-reviewed neurology journal paper to systematically document neurological sequelae of UAP close encounters. Reviews documented biological effects reported by witnesses: erythema, ocular effects, transient neurological symptoms, and physiological anomalies. Published in Matrix Science Medica (Wolters Kluwer/Medknow), a peer-reviewed medical journal, this paper is historically notable for treating UAP biological effects as a legitimate clinical topic within mainstream medical literature rather than as fringe speculation.",
+    "abstract": ""
   }
 ]
