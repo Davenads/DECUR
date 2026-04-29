@@ -71,13 +71,21 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
   });
 
   useEffect(() => {
-    const ref = new URLSearchParams(window.location.search).get('ref');
-    if (ref === 'search') {
+    if (!router.isReady) return;
+    const { ref, paperId } = router.query as Record<string, string | undefined>;
+    if (ref === 'paper' && paperId) {
+      const sourcePaper = (papersData as Array<{ id: string; title: string }>).find(p => p.id === paperId);
+      if (sourcePaper) {
+        setBackState({ label: sourcePaper.title, href: `/research/papers/${paperId}` });
+      }
+    } else if (ref === 'search') {
       setBackState({ label: 'Search Results', href: null });
     } else if (ref === 'explore') {
       setBackState({ label: 'Relationship Network', href: '/explore#relationship-network' });
+    } else {
+      setBackState({ label: 'Organizations', href: '/research?tab=organizations' });
     }
-  }, []);
+  }, [router.isReady, router.query]);
 
   const handleBack = () => {
     if (backState.href) {
@@ -286,7 +294,7 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
                     {keyMembers.map(fig => (
                       <Link
                         key={fig.id}
-                        href={`/figures/${fig.id}`}
+                        href={`/figures/${fig.id}?backLabel=${encodeURIComponent(org.abbreviation ?? org.name)}&backHref=${encodeURIComponent(`/research/organizations/${org.id}`)}`}
                         className="flex items-start gap-2 text-xs hover:text-primary transition-colors group"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1 shrink-0" />
@@ -305,12 +313,15 @@ const OrgDetail: NextPage<OrgDetailProps> = ({ org, notablePapers, orgEvents, ke
 
           {/* Footer nav */}
           <div className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-800">
-            <Link href="/research?tab=organizations" className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors flex items-center gap-1">
+            <button
+              onClick={handleBack}
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary transition-colors flex items-center gap-1"
+            >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to Organizations
-            </Link>
+              Back to {backState.label}
+            </button>
           </div>
 
         </div>
