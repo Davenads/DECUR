@@ -2714,5 +2714,39 @@
     "organization_ids": [],
     "summary": "Survey of 245 participants (93 direct UAP witnesses) across multiple countries examining the psychological dimensions of UAP witness experiences. Identifies what the author terms a 'UAP deep psychological engagement triad': daily cognitive presence of the topic, strong self-recognized interest, and a compulsion to discuss the experience. Published in the International Journal of Astrobiology (Cambridge University Press), giving the psychological study of UAP witness testimony a mainstream academic venue. Complements the Hernandez et al. 2018 FREE study and French 2012 abduction psychology paper already in the catalog.",
     "abstract": "In this study, we surveyed a total of 245 people about unidentified anomalous phenomena (UAP), 93 who directly witnessed UAP. Paying special attention to the psychological impact of UAP, our study survey covered different aspects, including opinions on official UAP releases, the scientific approach to the phenomena and the search for extra-terrestrial intelligence. This study found that UAP had a clear psychological impact on witnesses, with a transformative effect, and a benign form of a non-pathological obsessive-like interest in the topic we defined as the UAP deep psychological engagement triad. This deep psychological engagement triad is characterized by UAP topic being present in a witness's mind daily, with a self-recognized interest and appreciation for the topic and a need to talk about UAP topic, not necessarily the event they experienced. UAP appear to have a very specific impact focused on extra-terrestrial aspects and the phenomena itself, which is experienced as a life-changing event by direct witnesses. These psychological aspects are quantitatively and qualitatively objectifiable, and further research is needed in this direction since all research efforts appear currently focused on the physical aspects of these phenomena."
+  },
+  {
+    "id": "teodorani-2004-hessdalen",
+    "title": "A Long-Term Scientific Survey of the Hessdalen Phenomenon",
+    "authors": [
+      "Massimo Teodorani"
+    ],
+    "author_ids": [],
+    "year": 2004,
+    "journal": "Journal of Scientific Exploration",
+    "volume": "18",
+    "issue": "2",
+    "pages": "217-251",
+    "article_number": null,
+    "doi": null,
+    "url": "https://www.researchgate.net/publication/228609015_A_long-term_scientific_survey_of_the_Hessdalen_phenomenon",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "hessdalen",
+      "instrumented-investigation",
+      "spectroscopy",
+      "photometry",
+      "atmospheric-phenomena",
+      "anomalous-luminescence",
+      "norway",
+      "long-term-study"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "project-hessdalen"
+    ],
+    "summary": "The foundational scientific paper on the Hessdalen valley light phenomena in Norway. Covers the long-term instrument-based field investigation from the 1984 fieldwork through 2001 automatic station data, employing spectroscopy, photometry, radar, and magnetometer measurements. Documents anomalous luminous phenomena that resist conventional atmospheric explanation. This paper is the scientific antecedent to Teodorani's 2024 paper in the catalog — adding both gives full historical depth to the Hessdalen thread, showing continuity from early fieldwork to modern astronomical analysis. Published in the Journal of Scientific Exploration.",
+    "abstract": ""
   }
 ]
