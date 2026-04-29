@@ -2,6 +2,22 @@
   {
     "date": "2026-04-29",
     "category": "paper",
+    "id": "watters-loeb-2023-multimodal",
+    "name": "Watters, Loeb et al. 2023 — Multimodal UAP Observatories (JAI)",
+    "action": "added",
+    "note": "Galileo Project technical blueprint for integrated multimodal UAP observatories with machine learning classification, from the Journal of Astronomical Instrumentation special issue."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
+    "id": "loeb-laukien-2023-galileo-overview",
+    "name": "Loeb & Laukien 2023 — Overview of the Galileo Project (JAI)",
+    "action": "added",
+    "note": "First peer-reviewed journal paper formally establishing the Galileo Project's scientific program — distinct from Loeb's 2021 book entry in the catalog."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
     "id": "lomas-2025-uap-assessment-matrix",
     "name": "Lomas et al. 2025 — UAP Assessment Matrix (Acta Astronautica)",
     "action": "added",

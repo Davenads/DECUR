@@ -2396,5 +2396,79 @@
     "organization_ids": [],
     "summary": "Published in Acta Astronautica (IAA flagship journal, CiteScore 7.3) — the second-highest institutional prestige venue in the catalog after Scientific Reports. Tim Lomas (Harvard) is now the author of three papers in the DECUR catalog (`lomas-2023-eth-openness`, `lomas-case-masters-2024-cryptoterrestrial`, this paper). Proposes a two-dimensional UAP Assessment Matrix: evidence quality scored 0-10 on the horizontal axis, and degree of understanding scored -5 to +5 on the vertical axis. Validated against a 1953 UAP case study. The matrix provides a structured, communicable tool for distinguishing between well-evidenced-but-unexplained cases and poorly-evidenced speculative claims — directly applicable to DECUR's evidence tier system.",
     "abstract": "We propose the UAP Assessment Matrix, a structured two-dimensional framework for evaluating claims and evidence relating to Unidentified Anomalous Phenomena. The matrix scores cases on two axes: evidence quality (0-10, assessing observational rigor, corroboration, and documentation) and degree of understanding (-5 to +5, ranging from firmly explained by conventional phenomena to strongly indicative of genuinely anomalous physics). We describe scoring criteria for each axis, illustrate the matrix with application to a 1953 UAP case study, and discuss how the framework enables systematic comparison across cases, supports transparent communication between researchers, and provides a common vocabulary for interdisciplinary engagement with the UAP phenomenon. We situate the matrix within the broader landscape of UAP evidence evaluation tools and argue that standardized frameworks are a prerequisite for scientific progress in the field."
+  },
+  {
+    "id": "loeb-laukien-2023-galileo-overview",
+    "title": "Overview of the Galileo Project",
+    "authors": [
+      "Abraham (Avi) Loeb",
+      "Frank H. Laukien"
+    ],
+    "author_ids": [
+      "avi-loeb"
+    ],
+    "year": 2023,
+    "journal": "Journal of Astronomical Instrumentation",
+    "volume": "12",
+    "issue": "1",
+    "pages": null,
+    "article_number": "2340003",
+    "doi": "10.1142/S2251171723400032",
+    "url": "https://www.worldscientific.com/doi/10.1142/S2251171723400032",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "galileo-project",
+      "astrobiology",
+      "methodology",
+      "technosignature",
+      "uap",
+      "observatory",
+      "instrumented-investigation"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "galileo-project"
+    ],
+    "summary": "The official peer-reviewed journal paper establishing the Galileo Project's scientific program, published in the Journal of Astronomical Instrumentation's 2023 Galileo Project special issue. Co-authored by Avi Loeb (Harvard) and Frank Laukien (Bruker Corporation founder and funder). Distinct from `loeb-2022-galileo-project` in the catalog (which is Loeb's 2021 book 'Extraterrestrial') — this is the first formal peer-reviewed scientific publication of the project's goals, methodology, and instrumentation strategy. Companion to `watters-loeb-2023-multimodal`, which describes the technical observatory design.",
+    "abstract": "We describe the Galileo Project, a systematic scientific search for physical evidence of extraterrestrial technological civilizations (ETCs) in the vicinity of Earth. The project operates three parallel research tracks: a search for interstellar objects that may be technological in origin (motivated by the detection of 'Oumuamua), a search for anomalous objects near Earth that may constitute ETCs or their artifacts, and analysis of existing UAP data from government and civilian sources. We describe the scientific rationale, instrumentation strategy, and data analysis pipeline for the project. The Galileo Project represents the first large-scale, systematic scientific effort to search for physical evidence of non-terrestrial technology using the scientific method."
+  },
+  {
+    "id": "watters-loeb-2023-multimodal",
+    "title": "The Scientific Investigation of Unidentified Aerial Phenomena (UAP) Using Multimodal Ground-Based Observatories",
+    "authors": [
+      "Wesley A. Watters",
+      "Abraham Loeb",
+      "Frank Laukien",
+      "et al."
+    ],
+    "author_ids": [
+      "avi-loeb"
+    ],
+    "year": 2023,
+    "journal": "Journal of Astronomical Instrumentation",
+    "volume": "12",
+    "issue": "1",
+    "pages": null,
+    "article_number": "2340006",
+    "doi": "10.1142/S2251171723400068",
+    "url": "https://www.worldscientific.com/doi/10.1142/S2251171723400068",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "galileo-project",
+      "methodology",
+      "instrumented-investigation",
+      "uap",
+      "multimodal",
+      "observatory",
+      "machine-learning"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "galileo-project"
+    ],
+    "summary": "The Galileo Project's technical paper describing the integrated sensor system for systematic UAP observation, published alongside `loeb-laukien-2023-galileo-overview` in the Journal of Astronomical Instrumentation's 2023 special issue. Authored by Wesley Watters (Wellesley College), Loeb, Laukien, and 20+ collaborators. Addresses classical objections to UAP research, presents the scientific motivation, and details the multimodal hardware and software architecture — cameras, microphones, radar, magnetometers, and machine learning classifiers — designed to capture, characterize, and reject conventional explanations for aerial observations. The methodological blueprint for the project's observatory network.",
+    "abstract": "We describe a multimodal ground-based observatory designed for the systematic scientific investigation of unidentified aerial phenomena (UAP). The observatory integrates optical cameras, infrared sensors, radar, audio recording, magnetometers, and gravitational sensors in a synchronized array capable of obtaining simultaneous, co-registered data streams from any aerial object in the field of view. We address the epistemological and methodological challenges of UAP research, including the problem of rare and unrepeatable events, the need for calibrated physical measurements, and the importance of automated anomaly detection to overcome human observational biases. We describe the machine learning pipeline for classification and anomaly scoring, the data storage and analysis infrastructure, and the scientific criteria that distinguish genuinely anomalous objects from conventional aircraft, natural phenomena, and sensor artifacts. This observatory architecture is being deployed as part of the Galileo Project's systematic UAP investigation."
   }
 ]
