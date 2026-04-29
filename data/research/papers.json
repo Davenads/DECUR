@@ -2580,5 +2580,38 @@
     ],
     "summary": "Eight senior scientists — including Rupert Sheldrake and Charles Tart — call for a paradigm expansion beyond scientific materialism, produced from the 2014 Canyon Ranch Summit on Post-Materialist Science. This is the primary citable document for the post-materialist science movement: the foundational text on which `kastrup-2017-analytic-idealism` and the broader consciousness research thread in the catalog build. Published in EXPLORE, a peer-reviewed Elsevier journal at the intersection of science and integrative medicine. Adds `beauregard-2014-post-materialist` as the first notable paper for the Galileo Commission and a third paper for the Center for Consciousness Studies.",
     "abstract": "The purpose of this Manifesto is to outline a post-materialist paradigm for science and the academy. We believe that the sciences and the academic disciplines would benefit greatly from adopting a post-materialist framework and that such a framework is necessary for a proper understanding of the nature of mind and its relationship to matter. We also believe that a post-materialist framework has far-reaching implications for the ways in which we structure our society, and that a failure to move beyond a defunct materialism will prevent us from reaching our highest potential as individual persons and as a civilization."
+  },
+  {
+    "id": "greyson-1983-nde-scale",
+    "title": "The Near-Death Experience Scale: Construction, Reliability, and Validity",
+    "authors": [
+      "Bruce Greyson"
+    ],
+    "author_ids": [],
+    "year": 1983,
+    "journal": "Journal of Nervous and Mental Disease",
+    "volume": "171",
+    "issue": "6",
+    "pages": "369-375",
+    "article_number": null,
+    "doi": "10.1097/00005053-198306000-00007",
+    "url": "https://journals.lww.com/jonmd/Abstract/1983/06000/The_Near_Death_Experience_Scale__Construction,.7.aspx",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "nde",
+      "measurement-scale",
+      "psychometrics",
+      "consciousness",
+      "cardiac-arrest",
+      "standardization",
+      "greyson"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "iands"
+    ],
+    "summary": "The foundational paper establishing the Greyson NDE Scale — the 16-item measurement instrument across four dimensions (affective, cognitive, paranormal, transcendent) that has served as the standard NDE research tool since 1983. Cited in all subsequent clinical NDE research including `van-lommel-2001-nde-lancet` and `parnia-2014-aware`. This paper provides the methodological anchor for the entire NDE science thread in the catalog: those two papers exist in context of the validated instrument this paper defines. Published in the Journal of Nervous and Mental Disease, the oldest continuously published psychiatry journal in the Americas.",
+    "abstract": "The near-death experience (NDE) is a profound psychological event that may occur to a person close to death or in a situation of intense physical or emotional danger. The purpose of this study was to construct a reliable, valid scale for grading the depth of such experiences. Items were generated from a content analysis of 67 NDE accounts; the resulting 80-item scale was then administered to 74 NDEers and 200 controls. Factor analysis yielded four components: cognitive (alterations in thought processes), affective (changes in emotional state), paranormal (extrasensory perception and precognition), and transcendental (encounters with deceased persons and mystical environments). A 16-item scale derived from the best items in each component showed high internal consistency (alpha = 0.88), test-retest reliability, and construct validity."
   }
 ]
