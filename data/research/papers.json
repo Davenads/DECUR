@@ -2540,5 +2540,45 @@
     "organization_ids": [],
     "summary": "Solo follow-up to `puthoff-little-ibison-2002-zpf` by the same lead author, developing the theoretical framework for spacetime metric engineering as a propulsion mechanism. Published in JBIS eight years after the foundational co-authored paper. This paper is directly cited in AAWSAP DIRD reports as part of the classified propulsion physics research program, making it one of the few papers in the catalog with a confirmed government program connection. Together with the 2002 paper, this forms the complete Puthoff metric engineering pair that undergirds the AAWSAP/TTSA advanced propulsion thread alongside `davis-2009-warp-metrics`.",
     "abstract": "We review the theoretical basis for advanced space propulsion concepts grounded in the engineering of spacetime metric properties, with particular focus on the polarizable vacuum (PV) model of gravitation and the prospects for vacuum energy extraction. We develop the PV framework as an engineering-friendly alternative to standard general relativity, showing how local manipulation of the effective dielectric properties of the vacuum could in principle enable significant alteration of effective inertial and gravitational mass, light speed, and the geometry of local spacetime. We discuss how these modifications could be exploited for propulsion, analyze the scaling relationships between vacuum engineering parameters and achievable velocity effects, and compare the PV approach with Alcubierre-type warp metrics. We address the energy budget for such propulsion and argue that breakthrough propulsion physics may be achievable through advances in our understanding of quantum vacuum structure."
+  },
+  {
+    "id": "beauregard-2014-post-materialist",
+    "title": "Manifesto for a Post-Materialist Science",
+    "authors": [
+      "Mario Beauregard",
+      "Gary E. Schwartz",
+      "Lisa Miller",
+      "Larry Dossey",
+      "Alexander Moreira-Almeida",
+      "Marilyn Schlitz",
+      "Rupert Sheldrake",
+      "Charles Tart"
+    ],
+    "author_ids": [],
+    "year": 2014,
+    "journal": "EXPLORE: The Journal of Science and Healing",
+    "volume": "10",
+    "issue": "5",
+    "pages": "272-274",
+    "article_number": null,
+    "doi": "10.1016/j.explore.2014.06.008",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1550830714001603",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "post-materialism",
+      "consciousness",
+      "philosophy-of-science",
+      "paradigm-shift",
+      "science-reform",
+      "manifesto"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "galileo-commission",
+      "center-for-consciousness-studies"
+    ],
+    "summary": "Eight senior scientists — including Rupert Sheldrake and Charles Tart — call for a paradigm expansion beyond scientific materialism, produced from the 2014 Canyon Ranch Summit on Post-Materialist Science. This is the primary citable document for the post-materialist science movement: the foundational text on which `kastrup-2017-analytic-idealism` and the broader consciousness research thread in the catalog build. Published in EXPLORE, a peer-reviewed Elsevier journal at the intersection of science and integrative medicine. Adds `beauregard-2014-post-materialist` as the first notable paper for the Galileo Commission and a third paper for the Center for Consciousness Studies.",
+    "abstract": "The purpose of this Manifesto is to outline a post-materialist paradigm for science and the academy. We believe that the sciences and the academic disciplines would benefit greatly from adopting a post-materialist framework and that such a framework is necessary for a proper understanding of the nature of mind and its relationship to matter. We also believe that a post-materialist framework has far-reaching implications for the ways in which we structure our society, and that a failure to move beyond a defunct materialism will prevent us from reaching our highest potential as individual persons and as a civilization."
   }
 ]
