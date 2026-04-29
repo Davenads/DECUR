@@ -2,6 +2,14 @@
   {
     "date": "2026-04-29",
     "category": "paper",
+    "id": "platzer-2025-uap-outlook",
+    "name": "Platzer 2025 — UAP Status and Outlook (PrAeS)",
+    "action": "added",
+    "note": "Overview paper by Naval Postgraduate School emeritus professor situating UAP investigation within mainstream aerospace science, part of the landmark June 2025 Progress in Aerospace Sciences special issue."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
     "id": "vallee-dini-2025-radiative-energy",
     "name": "Vallee, Dini & Mestchersky 2025 — UAP Radiative Energy Analysis (PrAeS)",
     "action": "added",

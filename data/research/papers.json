@@ -2204,5 +2204,35 @@
     "organization_ids": [],
     "summary": "The first paper in Progress in Aerospace Sciences to analyze a specific documented UAP case — the December 30, 1966 Haynesville, Louisiana incident (Condon Study Case 2). Vallee, Dini, and Mestchersky apply optical physics to eyewitness accounts and photographic records, estimating 500-900 MW of radiative energy output from the observed object — comparable to a small nuclear power plant. Published in the same June 2025 PrAeS special issue as `knuth-2025-new-science-uap` and `vallee-nolan-jiang-lemke-2022`. This paper is historically significant: a flagship mainstream aerospace journal applying rigorous physical measurement to a specific, named UAP case marks a watershed in the field's academic acceptance.",
     "abstract": "We report new physical data from a detailed re-analysis of optical and photographic records from the December 30, 1966 Haynesville, Louisiana UAP incident (designated Case 2 in the Condon Scientific Study of Unidentified Flying Objects). Applying standard optical physics methods to witness-described apparent angular diameters and brightness estimates, we derive a range of radiative energy values emitted by the observed phenomenon. Our analysis yields a radiative power estimate of 500 to 900 megawatts at the source, assuming a range of plausible distances consistent with the physical evidence. This output level is comparable to that of a small nuclear power plant and is inconsistent with conventional aircraft, natural atmospheric phenomena, or known terrestrial light sources of the era. We discuss the measurement methodology, sources of uncertainty, and the significance of this result for the physical characterization of UAP."
+  },
+  {
+    "id": "platzer-2025-uap-outlook",
+    "title": "Unidentified aerospace-undersea phenomena (UAP) status and outlook",
+    "authors": [
+      "Max F. Platzer"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Progress in Aerospace Sciences",
+    "volume": "156",
+    "issue": null,
+    "pages": null,
+    "article_number": "101095",
+    "doi": "10.1016/j.paerosci.2025.101095",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042125000211",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "uap-methodology",
+      "scientific-review",
+      "government-disclosure",
+      "aerospace",
+      "status-report",
+      "uap"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "An overview and situational assessment of UAP research by Max F. Platzer, emeritus professor of aeronautics at the Naval Postgraduate School. Surveys the current state of government disclosure, scientific engagement, and outstanding technical questions, situating UAP investigation within the mainstream aerospace science tradition. Published in the landmark June 2025 Progress in Aerospace Sciences special issue alongside `knuth-2025-new-science-uap` and `vallee-dini-2025-radiative-energy`. Part of a paired contribution with `platzer-2025-rigorous-research` — this paper provides the status overview while the companion makes the methodological argument for why the field must engage.",
+    "abstract": "This paper provides an overview of the current status of research on unidentified aerospace-undersea phenomena (UAP) and an outlook for future scientific work. We survey the trajectory of government UAP disclosure efforts from the 2017 release of Navy sensor footage through the 2024 congressional hearings, situate ongoing UAP reports within the history of aerospace science, and identify the key open technical questions that remain unresolved. We argue that mainstream aerospace science can no longer defer engagement with the UAP question and outline the categories of measurement, analysis, and institutional response that would constitute a rigorous scientific program. Published as part of the Progress in Aerospace Sciences special issue on UAP."
   }
 ]
