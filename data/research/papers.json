@@ -2506,5 +2506,39 @@
     "organization_ids": [],
     "summary": "Puthoff's foundational 'metric engineering' propulsion paper, co-authored with S.R. Little and M. Ibison (EarthTech International), published in the Journal of the British Interplanetary Society. Proposes engineering of the quantum vacuum and a polarizable vacuum (PV) model for propellantless interstellar propulsion — manipulating the local index of refraction of the vacuum to achieve effective warp-drive-like motion without violating conservation laws. This paper is the direct antecedent to `davis-2009-warp-metrics` and the AAWSAP/TTSA propulsion physics research thread. Hal Puthoff is a DECUR-registered key figure whose influence on government UAP science programs spans four decades.",
     "abstract": "We examine two approaches to the issue of propulsion of vehicles through interstellar space, the engineering of the zero-point field (ZPF) and the polarizable vacuum (PV) model of general relativity. In the first approach, we review the prospects for extracting energy and momentum from the quantum vacuum and discuss the conditions under which inertia, gravity, and the speed of light might become engineerable quantities. In the second approach, we develop the PV model of gravitation as an alternative to curved-space general relativity, in which the vacuum is treated as a polarizable medium whose properties (dielectric constant) vary with gravitational potential. We show how manipulation of vacuum polarizability could in principle enable velocities exceeding the free-space speed of light and discuss the energy requirements and feasibility challenges. We argue that these approaches, while speculative, are grounded in established physics and warrant serious consideration for interstellar flight."
+  },
+  {
+    "id": "puthoff-2010-metric-engineering",
+    "title": "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering",
+    "authors": [
+      "Harold E. Puthoff"
+    ],
+    "author_ids": [
+      "hal-puthoff"
+    ],
+    "year": 2010,
+    "journal": "Journal of the British Interplanetary Society",
+    "volume": "63",
+    "issue": null,
+    "pages": "82-89",
+    "article_number": null,
+    "doi": null,
+    "arxiv": "1204.2184",
+    "url": "https://arxiv.org/abs/1204.2184",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "propulsion-physics",
+      "zero-point-energy",
+      "metric-engineering",
+      "spacetime",
+      "warp-drive",
+      "vacuum-engineering",
+      "puthoff"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Solo follow-up to `puthoff-little-ibison-2002-zpf` by the same lead author, developing the theoretical framework for spacetime metric engineering as a propulsion mechanism. Published in JBIS eight years after the foundational co-authored paper. This paper is directly cited in AAWSAP DIRD reports as part of the classified propulsion physics research program, making it one of the few papers in the catalog with a confirmed government program connection. Together with the 2002 paper, this forms the complete Puthoff metric engineering pair that undergirds the AAWSAP/TTSA advanced propulsion thread alongside `davis-2009-warp-metrics`.",
+    "abstract": "We review the theoretical basis for advanced space propulsion concepts grounded in the engineering of spacetime metric properties, with particular focus on the polarizable vacuum (PV) model of gravitation and the prospects for vacuum energy extraction. We develop the PV framework as an engineering-friendly alternative to standard general relativity, showing how local manipulation of the effective dielectric properties of the vacuum could in principle enable significant alteration of effective inertial and gravitational mass, light speed, and the geometry of local spacetime. We discuss how these modifications could be exploited for propulsion, analyze the scaling relationships between vacuum engineering parameters and achievable velocity effects, and compare the PV approach with Alcubierre-type warp metrics. We address the energy budget for such propulsion and argue that breakthrough propulsion physics may be achievable through advances in our understanding of quantum vacuum structure."
   }
 ]

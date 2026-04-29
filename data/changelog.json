@@ -2,6 +2,14 @@
   {
     "date": "2026-04-29",
     "category": "paper",
+    "id": "puthoff-2010-metric-engineering",
+    "name": "Puthoff 2010 — Spacetime Metric Engineering for Advanced Propulsion (JBIS)",
+    "action": "added",
+    "note": "Solo follow-up to the 2002 ZPF paper, directly cited in AAWSAP DIRD reports — one of the few catalog papers with a confirmed classified government program connection."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
     "id": "puthoff-little-ibison-2002-zpf",
     "name": "Puthoff, Little & Ibison 2002 — Zero-Point Field Propulsion (JBIS)",
     "action": "added",
