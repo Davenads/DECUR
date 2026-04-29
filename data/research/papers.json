@@ -2234,5 +2234,35 @@
     "organization_ids": [],
     "summary": "An overview and situational assessment of UAP research by Max F. Platzer, emeritus professor of aeronautics at the Naval Postgraduate School. Surveys the current state of government disclosure, scientific engagement, and outstanding technical questions, situating UAP investigation within the mainstream aerospace science tradition. Published in the landmark June 2025 Progress in Aerospace Sciences special issue alongside `knuth-2025-new-science-uap` and `vallee-dini-2025-radiative-energy`. Part of a paired contribution with `platzer-2025-rigorous-research` — this paper provides the status overview while the companion makes the methodological argument for why the field must engage.",
     "abstract": "This paper provides an overview of the current status of research on unidentified aerospace-undersea phenomena (UAP) and an outlook for future scientific work. We survey the trajectory of government UAP disclosure efforts from the 2017 release of Navy sensor footage through the 2024 congressional hearings, situate ongoing UAP reports within the history of aerospace science, and identify the key open technical questions that remain unresolved. We argue that mainstream aerospace science can no longer defer engagement with the UAP question and outline the categories of measurement, analysis, and institutional response that would constitute a rigorous scientific program. Published as part of the Progress in Aerospace Sciences special issue on UAP."
+  },
+  {
+    "id": "platzer-2025-rigorous-research",
+    "title": "On the need for rigorous scientific research on unidentified aerial phenomena (UAP)",
+    "authors": [
+      "Max F. Platzer"
+    ],
+    "author_ids": [],
+    "year": 2025,
+    "journal": "Progress in Aerospace Sciences",
+    "volume": "156",
+    "issue": null,
+    "pages": null,
+    "article_number": "101096",
+    "doi": "10.1016/j.paerosci.2025.101096",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042125000223",
+    "open_access": false,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "uap-methodology",
+      "scientific-standards",
+      "aerospace",
+      "research-agenda",
+      "uap",
+      "scientific-review"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Companion methodological paper to `platzer-2025-uap-outlook` by the same author in the same June 2025 Progress in Aerospace Sciences special issue. Where the status paper surveys the disclosure landscape, this paper makes the affirmative case for why aerospace science must rigorously engage with UAP — addressing historical reluctance, reviewing what a proper scientific program would require, and framing UAP as a legitimate open problem in the discipline. Together, the two Platzer papers represent the first sustained advocacy from a named mainstream aerospace academic for institutionalizing UAP research.",
+    "abstract": "This paper argues that the aerospace science community has an obligation to pursue rigorous scientific research on unidentified aerial phenomena (UAP). We review the history of institutional avoidance of the topic, examine the epistemological and methodological barriers that have discouraged engagement, and make the case that a scientifically sound research agenda is both achievable and necessary. We identify the observational, analytical, and institutional components of a rigorous program, discuss lessons from analogous fields that have successfully normalized the study of previously controversial phenomena, and call on professional aerospace societies, journals, and funding bodies to facilitate systematic UAP investigation. Published as part of the Progress in Aerospace Sciences special issue on UAP."
   }
 ]

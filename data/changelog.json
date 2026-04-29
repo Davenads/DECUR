@@ -2,6 +2,14 @@
   {
     "date": "2026-04-29",
     "category": "paper",
+    "id": "platzer-2025-rigorous-research",
+    "name": "Platzer 2025 — On the Need for Rigorous UAP Research (PrAeS)",
+    "action": "added",
+    "note": "Companion to platzer-2025-uap-outlook; makes the affirmative case for why aerospace science must institutionalize UAP research, published in the landmark June 2025 Progress in Aerospace Sciences special issue."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
     "id": "platzer-2025-uap-outlook",
     "name": "Platzer 2025 — UAP Status and Outlook (PrAeS)",
     "action": "added",
