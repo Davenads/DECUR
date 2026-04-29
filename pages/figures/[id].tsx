@@ -150,15 +150,20 @@ const FigurePage: NextPage<Props> = ({ entry }) => {
   const [exploreBack, setExploreBack] = useState<{ label: string; href: string } | null>(null);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const backHref  = params.get('backHref');
-    const backLabel = params.get('backLabel');
+    if (!router.isReady) return;
+    const { ref, backHref, backLabel, paperId } = router.query as Record<string, string | undefined>;
     if (backHref && backLabel) {
       setExploreBack({ label: backLabel, href: backHref });
+    } else if (ref === 'paper' && paperId) {
+      const sourcePaper = (papersData as Array<{ id: string; title: string }>)
+        .find(p => p.id === paperId);
+      if (sourcePaper) {
+        setExploreBack({ label: sourcePaper.title, href: `/research/papers/${paperId}` });
+      }
     } else {
-      setExploreBack(resolveExploreRef(params.get('ref')));
+      setExploreBack(resolveExploreRef(ref ?? null));
     }
-  }, []);
+  }, [router.isReady, router.query]);
 
   const onBack = () => router.push(exploreBack ? exploreBack.href : '/data?category=key-figures');
   const backLabel = exploreBack ? exploreBack.label : 'Key Figures';
