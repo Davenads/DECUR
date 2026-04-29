@@ -2648,5 +2648,41 @@
     "organization_ids": [],
     "summary": "The first peer-reviewed neurology journal paper to systematically document neurological sequelae of UAP close encounters. Reviews documented biological effects reported by witnesses: erythema, ocular effects, transient neurological symptoms, and physiological anomalies. Published in Matrix Science Medica (Wolters Kluwer/Medknow), a peer-reviewed medical journal, this paper is historically notable for treating UAP biological effects as a legitimate clinical topic within mainstream medical literature rather than as fringe speculation.",
     "abstract": ""
+  },
+  {
+    "id": "hernandez-2018-contact-nhi",
+    "title": "A Study on Reported Contact with Non-Human Intelligence Associated with Unidentified Aerial Phenomena",
+    "authors": [
+      "Reinerio Hernandez",
+      "Robert Davis",
+      "Russell Scalpone",
+      "Rudy Schild"
+    ],
+    "author_ids": [],
+    "year": 2018,
+    "journal": "Journal of Scientific Exploration",
+    "volume": "32",
+    "issue": "2",
+    "pages": "298-348",
+    "article_number": null,
+    "doi": "10.31275/2018.1282",
+    "url": "https://journalofscientificexploration.org/index.php/jse/article/view/1282",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "experiencer-research",
+      "nhi-contact",
+      "survey-research",
+      "consciousness-contact",
+      "uap-experience",
+      "free-foundation",
+      "close-encounter"
+    ],
+    "case_ids": [],
+    "organization_ids": [
+      "society-for-scientific-exploration"
+    ],
+    "summary": "The FREE (Dr. Edgar Mitchell Foundation for Research into Extraterrestrial and Extraordinary Experiences) survey — the largest structured experiencer study ever conducted, with N=3,256 respondents. Documents the phenomenology of reported NHI contact: encounters described as primarily non-physical (telepathy, out-of-body states, matrix-like environments), predominantly positive psychological impact, and frequently transformative life effects. Published in the Journal of Scientific Exploration, this represents the most statistically robust study of UAP-associated contact experiences in peer-reviewed literature and is directly relevant to the consciousness-contact thread.",
+    "abstract": ""
   }
 ]
