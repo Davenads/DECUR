@@ -2,6 +2,14 @@
   {
     "date": "2026-04-29",
     "category": "paper",
+    "id": "puthoff-little-ibison-2002-zpf",
+    "name": "Puthoff, Little & Ibison 2002 — Zero-Point Field Propulsion (JBIS)",
+    "action": "added",
+    "note": "Foundational metric engineering propulsion paper proposing quantum vacuum manipulation for interstellar flight — direct antecedent to the AAWSAP propulsion physics program and davis-2009-warp-metrics."
+  },
+  {
+    "date": "2026-04-29",
+    "category": "paper",
     "id": "watters-loeb-2023-multimodal",
     "name": "Watters, Loeb et al. 2023 — Multimodal UAP Observatories (JAI)",
     "action": "added",

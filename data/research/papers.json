@@ -2470,5 +2470,41 @@
     ],
     "summary": "The Galileo Project's technical paper describing the integrated sensor system for systematic UAP observation, published alongside `loeb-laukien-2023-galileo-overview` in the Journal of Astronomical Instrumentation's 2023 special issue. Authored by Wesley Watters (Wellesley College), Loeb, Laukien, and 20+ collaborators. Addresses classical objections to UAP research, presents the scientific motivation, and details the multimodal hardware and software architecture — cameras, microphones, radar, magnetometers, and machine learning classifiers — designed to capture, characterize, and reject conventional explanations for aerial observations. The methodological blueprint for the project's observatory network.",
     "abstract": "We describe a multimodal ground-based observatory designed for the systematic scientific investigation of unidentified aerial phenomena (UAP). The observatory integrates optical cameras, infrared sensors, radar, audio recording, magnetometers, and gravitational sensors in a synchronized array capable of obtaining simultaneous, co-registered data streams from any aerial object in the field of view. We address the epistemological and methodological challenges of UAP research, including the problem of rare and unrepeatable events, the need for calibrated physical measurements, and the importance of automated anomaly detection to overcome human observational biases. We describe the machine learning pipeline for classification and anomaly scoring, the data storage and analysis infrastructure, and the scientific criteria that distinguish genuinely anomalous objects from conventional aircraft, natural phenomena, and sensor artifacts. This observatory architecture is being deployed as part of the Galileo Project's systematic UAP investigation."
+  },
+  {
+    "id": "puthoff-little-ibison-2002-zpf",
+    "title": "Engineering the Zero-Point Field and Polarizable Vacuum for Interstellar Flight",
+    "authors": [
+      "Harold E. Puthoff",
+      "S.R. Little",
+      "M. Ibison"
+    ],
+    "author_ids": [
+      "hal-puthoff"
+    ],
+    "year": 2002,
+    "journal": "Journal of the British Interplanetary Society",
+    "volume": "55",
+    "issue": null,
+    "pages": "137-144",
+    "article_number": null,
+    "doi": null,
+    "arxiv": "1012.5264",
+    "url": "https://arxiv.org/abs/1012.5264",
+    "open_access": true,
+    "source_type": "peer-reviewed",
+    "tags": [
+      "propulsion-physics",
+      "zero-point-energy",
+      "metric-engineering",
+      "interstellar",
+      "warp-drive",
+      "vacuum-engineering",
+      "puthoff"
+    ],
+    "case_ids": [],
+    "organization_ids": [],
+    "summary": "Puthoff's foundational 'metric engineering' propulsion paper, co-authored with S.R. Little and M. Ibison (EarthTech International), published in the Journal of the British Interplanetary Society. Proposes engineering of the quantum vacuum and a polarizable vacuum (PV) model for propellantless interstellar propulsion — manipulating the local index of refraction of the vacuum to achieve effective warp-drive-like motion without violating conservation laws. This paper is the direct antecedent to `davis-2009-warp-metrics` and the AAWSAP/TTSA propulsion physics research thread. Hal Puthoff is a DECUR-registered key figure whose influence on government UAP science programs spans four decades.",
+    "abstract": "We examine two approaches to the issue of propulsion of vehicles through interstellar space, the engineering of the zero-point field (ZPF) and the polarizable vacuum (PV) model of general relativity. In the first approach, we review the prospects for extracting energy and momentum from the quantum vacuum and discuss the conditions under which inertia, gravity, and the speed of light might become engineerable quantities. In the second approach, we develop the PV model of gravitation as an alternative to curved-space general relativity, in which the vacuum is treated as a polarizable medium whose properties (dielectric constant) vary with gravitational potential. We show how manipulation of vacuum polarizability could in principle enable velocities exceeding the free-space speed of light and discuss the energy requirements and feasibility challenges. We argue that these approaches, while speculative, are grounded in established physics and warrant serious consideration for interstellar flight."
   }
 ]
