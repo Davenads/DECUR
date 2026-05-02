@@ -131,9 +131,13 @@ function PaperCard({ paper }: { paper: Paper }) {
       />
       <div className="flex flex-wrap items-start gap-2 mb-3">
         <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${typeColor}`}>{typeLabel}</span>
-        {paper.open_access && (
+        {paper.open_access ? (
           <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300">
             Open Access
+          </span>
+        ) : (
+          <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
+            Paywalled
           </span>
         )}
         <span className="text-xs text-gray-400 dark:text-gray-500 ml-auto">{paper.year}</span>
