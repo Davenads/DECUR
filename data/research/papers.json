@@ -352,7 +352,7 @@
     "issue": null,
     "doi": "10.1016/j.actaastro.2021.09.003",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0094576521004744",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "astrobiology",
@@ -375,7 +375,7 @@
     "volume": null,
     "issue": null,
     "doi": null,
-    "url": "https://www.amazon.com/dp/0063002175",
+    "url": "https://en.wikipedia.org/wiki/Extraterrestrial:_The_First_Sign_of_Intelligent_Life_Beyond_Earth",
     "open_access": false,
     "source_type": "book",
     "tags": [
@@ -458,8 +458,8 @@
     "volume": null,
     "issue": null,
     "doi": "10.1017/S1473550421000197",
-    "url": "https://www.cambridge.org/core/journals/international-journal-of-astrobiology/article/abs/",
-    "open_access": false,
+    "url": "https://arxiv.org/pdf/1111.1212",
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "astrobiology",
@@ -666,7 +666,7 @@
     "volume": null,
     "issue": null,
     "doi": null,
-    "url": "https://www.amazon.com/UFOs-Nukes-Extraordinary-Encounters-Nuclear/dp/1434309886",
+    "url": "https://www.amazon.com/UFOs-Nukes-Extraordinary-Encounters-Nuclear/dp/1544822197",
     "open_access": false,
     "source_type": "book",
     "tags": [
@@ -872,7 +872,7 @@
     "issue": null,
     "doi": "10.1177/03043754241256845",
     "url": "https://journals.sagepub.com/doi/10.1177/03043754241256845",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "securitization",
@@ -983,7 +983,7 @@
     "issue": null,
     "doi": "10.1080/1369118X.2026.2645882",
     "url": "https://www.tandfonline.com/doi/full/10.1080/1369118X.2026.2645882",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "social-media",
@@ -1038,7 +1038,7 @@
     "issue": null,
     "doi": "10.1017/S1473550421000380",
     "url": "https://www.cambridge.org/core/journals/international-journal-of-astrobiology/article/extraterrestrial-intelligence-and-moral-standing/3ED1AD7D0346F178A694798634F4839A",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "ethics",
@@ -1593,8 +1593,8 @@
     "volume": "140",
     "pages": "1221-1231",
     "doi": "10.1097/ALN.0000000000004970",
-    "url": "https://doi.org/10.1097/ALN.0000000000004970",
-    "open_access": false,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11096058/",
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "nde",
@@ -1625,7 +1625,7 @@
     "pages": "39-78",
     "doi": "10.1016/j.plrev.2013.08.002",
     "url": "https://www.sciencedirect.com/science/article/pii/S1571064513001188",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "consciousness",
@@ -2043,7 +2043,7 @@
     "doi": "10.1016/j.paerosci.2025.101097",
     "arxiv": "2502.06794",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042125000235",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "uap-methodology",
@@ -2111,7 +2111,7 @@
     "article_number": "100788",
     "doi": "10.1016/j.paerosci.2021.100788",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042121000907",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "materials-analysis",
@@ -2150,7 +2150,7 @@
     "doi": "10.1016/j.chemgeo.2024.122415",
     "arxiv": "2401.09882",
     "url": "https://www.sciencedirect.com/science/article/pii/S0009254124004959",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "interstellar",
@@ -2188,7 +2188,7 @@
     "article_number": "101098",
     "doi": "10.1016/j.paerosci.2025.101098",
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376042125000247",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "physical-evidence",
@@ -2562,8 +2562,8 @@
     "pages": "272-274",
     "article_number": null,
     "doi": "10.1016/j.explore.2014.06.008",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1550830714001603",
-    "open_access": false,
+    "url": "https://www.aapsglobal.com/wp-content/uploads/2018/04/Manifesto-for-a-Post-Materialist-Science.pdf",
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "post-materialism",
@@ -2596,7 +2596,7 @@
     "article_number": null,
     "doi": "10.1097/00005053-198306000-00007",
     "url": "https://journals.lww.com/jonmd/Abstract/1983/06000/The_Near_Death_Experience_Scale__Construction,.7.aspx",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "nde",
@@ -2700,7 +2700,7 @@
     "article_number": "e4",
     "doi": "10.1017/S1473550423000289",
     "url": "https://www.cambridge.org/core/journals/international-journal-of-astrobiology/article/psychological-aspects-in-unidentified-anomalous-phenomena-uap-witnesses/7D23058E10309384DDAA8E15607485CC",
-    "open_access": false,
+    "open_access": true,
     "source_type": "peer-reviewed",
     "tags": [
       "sociology-psychology",
